@@ -1,0 +1,100 @@
+---
+title: スプーフィングを防止するために Office 365 で SPF を設定する
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 2/19/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
+description: 概要:この記事では、Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。SPF を使うと、カスタム ドメインから送信される送信電子メールを検証できます。
+ms.openlocfilehash: 1670e646d4eb847c72159e0b8b730ae08ea285a8
+ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "22026364"
+---
+# <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>スプーフィングを防止するために Office 365 で SPF を設定する
+
+ **概要:** この記事では、Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。SPF を使うと、カスタム ドメインから送信される送信電子メールを検証できます。 
+  
+カスタム ドメインを使用するには、Office 365 では、Sender Policy Framework (SPF) TXT レコードを DNS レコードに追加してスプーフィングを防止する必要があります。SPF は、ユーザーに代わってメールを送信できるメール サーバーを識別します。基本的には、SPF を DKIM、DMARC、その他の Office 365 でサポートされているテクノロジと併用することによって、スプーフィングとフィッシング詐欺を防止できます。SPF は TXT レコードとして追加され、DNS はこのレコードを使って、カスタム ドメインの代わりにメールを送信できるメール サーバーを識別します。受信側のメール システムは、この SPF TXT レコードを参照して、カスタム ドメインからのメッセージが、承認されたメッセージング サーバーからのものであるかどうかを判別します。
+  
+たとえば、カスタム ドメイン contoso.com が Office 365 を使用しているとします。ユーザーのドメインの正当なメール サーバーとして Office 365 メッセージング サーバーを一覧表示する SPF TXT レコードを追加します。受信メッセージング サーバーが joe@contoso.com からのメッセージを取得すると、サーバーによって contoso.com の SPF TXT レコードが検索され、適切なメッセージであるかどうかが検出されます。受信サーバーで、SPF レコードに一覧表示されている Office 365 メッセージング サーバー以外のサーバーからメッセージを取得していることが検出された場合、受信メール サーバーはそのメッセージを迷惑メールとして拒否できます。
+  
+また、カスタム ドメインに SPF TXT レコードが含まれていないと、一部の受信サーバーはメッセージを完全に拒否することがあります。これは、受信サーバーが、承認されたメッセージング サーバーからのメッセージであることを検証できないためです。
+  
+既に Office 365 のメールを設定している場合、SPF TXT レコードとして Microsoft のメッセージング サーバーが DNS に含まれています。ただし、場合によっては DNS で SPF TXT レコードを更新する必要があります。たとえば、次のような場合です。
+  
+- 以前は、SharePoint Online を使用している場合、カスタム ドメインに別の SPF TXT レコードを追加する必要がありました。この作業を行う必要はなくなりました。この変更により、SharePoint Online の通知メッセージが [迷惑メール] フォルダーに振り分けられるリスクが軽減されます。参照の制限数である 10 に達し、"参照制限を超えました"、"ホップが多すぎます" などのメッセージを示すエラーが表示される場合は、SPF TXT レコードを更新します。
+    
+- Office 365 とオンプレミスの Exchange を使用したハイブリッド環境の場合。
+    
+- DKIM と DMARC をセットアップする場合 (推奨)。
+    
+## <a name="updating-your-spf-txt-record-for-office-365"></a>Office 365 の SPF TXT レコードを更新する
+<a name="sectionSection0"> </a>
+
+DNS で TXT レコードを更新する前に、情報を収集し、レコード形式を判別する必要があります。これによって、DNS エラーの発生を防止できます。サポートされている SPF 構文の高度な例や詳細については、「[Office 365 において SPF がスプーフィングとフィッシングを防ぐしくみ](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)」をご覧ください。
+  
+次の情報を収集します。
+  
+- カスタム ドメインの現在の SPF TXT レコード。手順に関しては、「[Office 365 の DNS レコードの作成に必要な情報を収集する](https://support.office.microsoft.com/en-us/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67)」をご覧ください。
+    
+- すべてのオンプレミス メッセージ サーバーの IP アドレス。たとえば、 **192.168.0.1** などです。
+    
+- SPF TXT レコードに含める必要があるサードパーティ製のすべてのドメインに使用するドメイン名。一部のバルク メール プロバイダーは、顧客用のサブドメインを設定しています。たとえば、会社 MailChimp に **servers.mcsv.net** を設定するなどです。
+    
+- SPF TXT レコードで使う強制ルールを決定します。 **-all** をお勧めします。その他の構文オプションについて詳しくは、「 [Office 365 用の SPF TXT レコードの構文](how-office-365-uses-spf-to-prevent-spoofing.md#SPFSyntaxO365)」をご覧ください。
+    
+### <a name="to-add-or-update-your-spf-txt-record"></a>SPF TXT レコードを追加または更新するには
+
+1. まだ行っていなければ、次の表の構文を使って、SPF TXT レコードを形成します。
+    
+||**使用対象**|**Office 365 ユーザーとの共通性**|**追加対象**|
+|:-----|:-----|:-----|:-----|
+|1  <br/> |いずれかの電子メール システム (必須)  <br/> |共通。この値で始まるすべての SPF レコード  <br/> |v=spf1  <br/> |
+|2  <br/> |Exchange Online  <br/> |共通  <br/> |include:spf.protection.outlook.com  <br/> |
+|3  <br/> |Exchange Online 専用のみ  <br/> |共通ではない  <br/> |ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com  <br/> |
+|4  <br/> |Office 365 Germany、Microsoft Cloud Germany のみ  <br/> |共通ではない  <br/> |include:spf.protection.outlook.de  <br/> |
+|5  <br/> |サード パーティ製の電子メール システム  <br/> |共通ではない  <br/> |include:\<domain name\>  <br/> domain name は、サード パーティ製の電子メール システムのドメイン名です。  <br/> |
+|6  <br/> |オンプレミスの電子メール システム。たとえば、Exchange Online Protection と別のメール システム  <br/> |共通ではない  <br/> | 各追加メール システムで次のいずれかを使用します。  <br/>  ip4:\<  _IP address_\>  <br/>  ip6:\<  _IP address_\>  <br/>  include:\<  _domain name_\>  <br/>  \<  _IP address_\> の値は他のメール システムの IP アドレスで、\< _domain name_\> はユーザーのドメインのためにメールを送信する他のメール システムのドメイン名です。  <br/> |
+|7   <br/> |いずれかの電子メール システム (必須)  <br/> |共通。この値で終わるすべての SPF レコード  <br/> |\< _enforcement rule_\>  <br/> 可能な値はいくつかあります。 **-all** を使用することをお勧めします。  <br/> |
+   
+1.1 などの Office 365 で完全にホストする場合があるなし、オンプレミスのメール サーバー、SPF の TXT レコードが 1、2、および 7 の行が含まれ、次のようになります。
+    
+  ```
+   v=spf1 include:spf.protection.outlook.com -all
+  ```
+
+1.2 これは、最も一般的な Office 365 の SPF TXT レコードです。このレコードは、人であるかにかかわらず、Office 365 のデータ センターにあるアメリカ合衆国 (ドイツ)、ヨーロッパでまたは別の場所に動作します。
+    
+ただし、1.3 Office 365 のドイツ、マイクロソフトのクラウドのドイツの部品を購入している場合は、2 行目ではなく 4 行目からの include ステートメントを使用してください。たとえば、Office 365 のドイツでは完全にホストする場合は、あるないオンプレミス メール サーバーでは、SPF の TXT レコードが 1、4、および 7 の行が含まれ、次のようになります。
+    
+  ```
+   v=spf1 include:spf.protection.outlook.de -all
+  ```
+
+1.4 Office 365 で既に展開されて、カスタム ドメインの SPF TXT レコードを設定して、Office 365 のドイツに移行する場合、SPF TXT レコードを更新します。これを行うには、 **include:spf.protection.outlook.com**を**include.spf.protection.outlook.de**に変更します。
+    
+2. SPF TXT レコードを構成した後、DNS でレコードを更新する必要があります。1 つのドメインに配置できる SPF TXT レコードは 1 つのみです。SPF TXT レコードが存在する場合は、新しいレコードを追加するのではなく、既存のレコードを更新する必要があります。「[自分で DNS レコードを管理するときに Office 365 の DNS レコードを作成する](https://support.office.microsoft.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23)」にアクセスし、DNS ホストのリンクをクリックします (お使いの DNS ホストのリンクがこのページにない場合、[一般的な手順に従って](https://support.office.microsoft.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166)、レコードを追加したり、DNS ホストに関するサポートを利用したりできます)。 
+    
+3. SPF TXT レコードをテストします。
+    
+## <a name="more-information-about-spf"></a>SPF の詳細情報
+<a name="sectionSection1"> </a>
+
+サポートされている SPF 構文、スプーフィング、トラブルシューティング、Office 365 が SPF をサポートする方法の高度な例や詳細については、「[Office 365 において SPF がスプーフィングとフィッシングを防ぐしくみ](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)」をご覧ください。
+  
+## <a name="next-steps-after-you-set-up-spf-for-office-365"></a>次の手順：Office 365 の SPF のセットアップ後
+<a name="sectionSection2"> </a>
+
+SPF TXT レコードで問題が発生している場合「[トラブルシューティング:Office 365 における SPF のベスト プラクティス](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)」をお読みください。
+  
+ SPF はスプーフィングを防止するために設計されていますが、SPF で防御できないスプーフィングの手法があります。これらから保護するために、SPF をセットアップすると、Office 365 用に DKIM と DMARC も構成する必要があります。始めるには「[DKIM を使用して、Office 365 のカスタム ドメインから送信される送信電子メールを検証する](use-dkim-to-validate-outbound-email.md)」をご覧ください。次は、「[DMARC を使用して Office 365 でメールを検証する](use-dmarc-to-validate-email.md)」を参照してください。
+  
+

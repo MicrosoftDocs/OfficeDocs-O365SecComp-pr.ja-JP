@@ -1,0 +1,53 @@
+---
+title: リストから除外のポータルを使って、Office 365 の受信拒否リストから自分自身を削除する
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 4/18/2016
+ms.audience: ITPro
+ms.topic: troubleshooting
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
+description: Office 365 にメール アドレスがある受信者にメールを送信しようとするときに、エラー メッセージが返される場合があります。エラー メッセージを受信しないようにするには、リストから除外のポータルを使って、Office 365 の受信拒否リストから自分自身を削除します。
+ms.openlocfilehash: 127b305cdb27cffadc7ad6a43a5d2db2440365ca
+ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "22026234"
+---
+# <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>リストから除外のポータルを使って、Office 365 の受信拒否リストから自分自身を削除する
+
+Office 365 にメール アドレスがある受信者にメールを送信しようとするときに、エラー メッセージが返される場合があります。エラー メッセージを受信しないようにするには、リストから除外のポータルを使って、Office 365 の受信拒否リストから自分自身を削除します。
+  
+## <a name="what-is-the-office-365-blocked-senders-list"></a>Office 365 の 受信拒否リストとは何か
+
+Microsoft は、受信拒否リストを使って、スパム、スプーフィング、フィッシング攻撃からお客様を保護しています。お客様のメール サーバーの IP アドレス、つまりお客様のメール サーバーがインターネット上でそれ自身を識別するために使うアドレスが、さまざまな理由によって Office 365 への潜在的な脅威としてタグ付けされる場合があります。Office 365 がその IP アドレスを受信拒否リストに追加すると、それ以降、データセンターを介してその IP アドレスと他のユーザーはまったく通信できなくなります。
+  
+メール メッセージに対して、次のようなエラーが含まれた応答を受信する場合、お客様は受信拒否リストに追加されています。
+  
+550 5.7.606-649 のアクセスが拒否されると、[ _IP アドレス_] の IP の送信を禁止されています。要求をこのリストからの削除を参照してくださいhttps://sender.office.com/し、指示に従います。詳細については、 [Office 365 の電子メールの配信不能レポート](http://go.microsoft.com/fwlink/?LinkID=526653)を参照してください。
+  
+ここで、 _IP address_ は、メール サーバーを稼働しているコンピューターの IP アドレスです。 
+  
+### <a name="to-use-the-office-365-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Office 365 のリストから除外のポータルを使って、受信拒否リストから自分自身を除外するには
+
+1. Web ブラウザーで、[https://sender.office.com](https://sender.office.com) に移動します。
+    
+2. ページ上の指示に従います。エラー メッセージを受信したメール アドレス、エラー メッセージで特定されている IP アドレスを使っていることを確認してください。1 回のアクセスにつき、1 つのメール アドレス、1 つの IP アドレスのみ入力できます。
+    
+3. [ **保存**] をクリックします。
+    
+    ポータルでは、指定した電子メール アドレスに電子メールを送信します。電子メールは次のようになります: ![delist ポータルを通じて要求を送信するときに受信した電子メールのスクリーン ショット](media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+  
+4. リストから除外のポータルから受信したメールの中にある確認のリンクをクリックします。
+    
+    これで、リストから除外のポータルに戻ります。
+    
+5. リストから除外のポータルで **[IP をリストから除外]** をクリックします。
+    
+    IP アドレスが受信拒否リストから削除されると、その IP アドレスからのメール メッセージが、Office 365 を使用する受信者に配信されるようになります。その IP アドレスから送信されるメールに不正や悪意のある内容が含まれていないことを確認してください。そのような内容が含まれていると、IP アドレスが再びブロックされる可能性があります。
+    
+
