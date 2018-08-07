@@ -1,0 +1,54 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.svg",
+          "**/*.pdf"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "breadcrumb_path": "/Office365/SecurityCompliance/breadcrumb/toc.json",
+      "searchScope": ["O365 Security Compliance"],
+      "extendBreadcrumb": true,
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/OfficeDocs-O365SecComp",
+      "feedback_product_url": "https://office365.uservoice.com/forums/289138-office-365-security-compliance",
+      "bilingual_type": "hover over"
+    },
+    "fileMetadata": {},
+    "template": [],
+    "dest": "OfficeDocs-O365SecurityCompliance",
+    "markdownEngineName": "markdig"
+  }
+}
