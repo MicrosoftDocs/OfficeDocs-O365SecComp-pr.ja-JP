@@ -3,7 +3,6 @@ title: メール フロー ルールを使用して、ユーザーが Microsoft 
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 8/23/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,19 +10,18 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 description: ユーザー分析のためのマイクロソフトに電子メール メッセージを送信するを防止し、独自のセキュリティ プロセスで使用する Exchange のトランスポート ルールを作成することができます。
-ms.openlocfilehash: f2376668e2a1a16eba9913178a100fc31763b227
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 6c6af23e6a5f345e26c7dc09c898f2978ea51a5f
+ms.sourcegitcommit: df1e9590a9fa152fa776f16d9b25c180ba7198f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026774"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "22122587"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>メール フロー ルールを使用して、ユーザーが Microsoft に報告する内容を確認する
 
 正と負の値の false メッセージを Microsoft に送信するには分析のための複数の方法があります。管理者は、どのようなユーザーは、マイクロソフトに報告する迷惑メール、スパム以外の場合、フィッシング詐欺とを参照してくださいにメール フロー ルールを使用できます。詳細については、[迷惑メールの送信、スパム以外の場合、および分析のためのマイクロソフトのフィッシング詐欺メッセージ](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)を参照してください。逆に、ユーザー分析のためのマイクロソフトに電子メール メッセージを送信するを防止し、独自のセキュリティ プロセスで使用する Exchange トランスポート ルールを作成できます。
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
-<a name="sectionSection0"> </a>
 
 予想所要時間 : 5 分
   
@@ -32,7 +30,6 @@ ms.locfileid: "22026774"
 このトピックの手順で使用可能なキーボード ショートカットについては、「 **Keyboard shortcuts in Exchange 2013**」を参照してください。
   
 ## <a name="use-the-eac-to-create-a-mail-flow-rule-to-view-users-manual-junk-phishing-and-not-junk-reports"></a>EAC を使用して、ユーザーの手動による迷惑メール レポート、フィッシング レポート、非迷惑メール レポートを表示するメール フロー ルールを作成する
-<a name="sectionSection1"> </a>
 
 1. EAC で、 **[メール フロー]** \> **[ルール]** に移動します。
     
@@ -43,14 +40,14 @@ ms.locfileid: "22026774"
 4. **[このルールを適用する条件]** の下で **[受信者]** を選択してから、 **[アドレスに次のいずれかの単語が含まれる]** を選択します。
     
 5. **[単語または語句の指定]** ボックスで、次の操作を行います。 
-    - **abuse@messaging.microsoft.com** と入力してから ![[追加] アイコン](media/ITPro-EAC-AddIcon.png) をクリックし、次に **junk@office365.microsoft.com** と入力してから ![[追加] アイコン](media/ITPro-EAC-AddIcon.png) をクリックします。これらの電子メール アドレスは、偽陰性のメッセージをマイクロソフトに送信するために使用されます。
-    - **phish@office365.microsoft.com** と入力し、次に ![[追加] アイコン](media/ITPro-EAC-AddIcon.png) をクリックします。この電子メール アドレスは、フィッシングとして処理されなかったフィッシング メッセージを Microsoft に送信するために使用されます。
-    - **false_positive@messaging.microsoft.com** と入力してから ![[追加] アイコン](media/ITPro-EAC-AddIcon.png) をクリックし、次に **not_junk@office365.microsoft.com** と入力してから ![[追加] アイコン](media/ITPro-EAC-AddIcon.png) をクリックします。これらの電子メール アドレスは、偽陽性のメッセージをマイクロソフトに送信するために使用されます。
+    - 型`abuse@messaging.microsoft.com`] をクリックし、![アイコンの追加](media/ITPro-EAC-AddIcon.png)と入力し、 `junk@office365.microsoft.com` ] をクリックし、![アイコンの追加](media/ITPro-EAC-AddIcon.png)。これらの電子メール アドレスを使用して、マイクロソフトに負の値は false のメッセージを送信します。
+    - 型`phish@office365.microsoft.com`] をクリックし、![アイコンの追加](media/ITPro-EAC-AddIcon.png)。この電子メール アドレスを使用して、マイクロソフトのフィッシング詐欺の不在メッセージを送信します。
+    - 型`false_positive@messaging.microsoft.com`] をクリックし、![アイコンの追加](media/ITPro-EAC-AddIcon.png)と入力し、 `not_junk@office365.microsoft.com` ] をクリックし、![アイコンの追加](media/ITPro-EAC-AddIcon.png)。これらの電子メール アドレスを使用して、マイクロソフトに正偽のメッセージを送信します。
     - **[OK]** をクリックします。
     
 6. **[次の操作を行います]** で、 **[メッセージを BCC で次へ送信する...]** を選択し、次にメッセージを受信するメールボックスを選択します。 
     
-7. これ以外にも、ルールを監査する、ルールをテストする、一定期間だけルールをアクティブにするといった選択肢もあります。ルールを施行する前に一定期間ルールをテストすることをお勧めします。[Manage Transport Rules](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx) にこれらの選択肢に関する詳細が記載されています。 
+7. 希望する場合は、監査規則、ルールをテスト、特定の期間中にルールをアクティブにするための選択および他の選択を行うことができます。それを実施する前に一定のルールをテストすることをお勧めします。[メール フロー ルールの手順](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures)を参照してください。 
     
 8. **[保存]** ボタンをクリックしてルールを保存します。保存されたルールはルールの一覧に表示されます。 
     
