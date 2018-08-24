@@ -410,6 +410,5 @@
 ### [Office 365 へのメール送信](sending-mail-to-office-365.md)
 ### [ユーザー以外に対するサービス](services-for-non-customers.md)
 
-# 
-  [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
+# [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
 # [企業向け office 365](https://support.office.com/office365admin)
