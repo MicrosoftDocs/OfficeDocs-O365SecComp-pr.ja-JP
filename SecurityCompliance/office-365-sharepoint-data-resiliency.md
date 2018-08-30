@@ -1,0 +1,31 @@
+---
+title: Office 365 の SharePoint データの復元
+ms.author: robmazz
+author: robmazz
+manager: laurawi
+ms.date: 8/21/2018
+audience: ITPro
+ms.topic: article
+ms.service: Office 365 Administration
+localization_priority: None
+search.appverid:
+- MET150
+ms.collection: Strat_O365_Enterprise
+description: Office 365 で SharePoint のオンラインでのデータの復元の概要について説明します。
+ms.openlocfilehash: ba6259e8e582a4abcf0f184b162177119a57718f
+ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "22532150"
+---
+# <a name="sharepoint-online-data-resiliency"></a><span data-ttu-id="a128e-103">SharePoint のオンライン ・ データのリカバリ性</span><span class="sxs-lookup"><span data-stu-id="a128e-103">SharePoint Online Data Resiliency</span></span>
+<span data-ttu-id="a128e-p101">SharePoint Online の重要な原則は、どの部分のデータの単一のコピーをしないことです。SharePoint Online を使用して SQL Server レプリケーションでは、コピーと、1 つのデータベースからのデータおよびデータベース オブジェクトを配布すると一貫性を維持するためにデータベース間で同期化し、テクノロジのセットであります。</span><span class="sxs-lookup"><span data-stu-id="a128e-p101">A key principle for SharePoint Online is to never have a single copy of any piece of data. SharePoint Online uses SQL Server replication, which is a set of technologies for copying and distributing data and database objects from one database to another, and then synchronizing between databases to maintain consistency.</span></span> 
+
+<span data-ttu-id="a128e-p102">たとえば、ユーザーは、SharePoint Online でファイルを保存、ファイルはチャンク、暗号化され、Azure のブロブ ストレージに格納されています。Azure Blob サービスでは、両方のアプリケーション層とトランスポート層でのデータ整合性を確認するメカニズムを提供します。この投稿は、サービスとクライアントの観点からこれらのメカニズムの詳細に説明します。PUT と GET の両方の操作のオプションは、MD5 をチェックただし、HTTP を使用する場合、ネットワーク経由でデータの整合性を確保するのには便利な機能が提供します。さらに、HTTPS トランスポート層セキュリティの詳細を提供するため MD5 のチェックは必要ありません冗長であるように、HTTPS 経由で接続中にします。Azure Blob サービスでは、永続的なストレージ メディアを提供し、独自の整合性が保存されているデータのチェックを使用します。MD5 のアプリケーションとやり取りするときに使用されているは、HTTP 経由でのアプリケーションとサービスの間でデータを転送するとき、データの整合性をチェックするために提供されます。</span><span class="sxs-lookup"><span data-stu-id="a128e-p102">For example, when a user saves a file in SharePoint Online, the file is chunked, encrypted, and stored within Azure Blob storage. Azure Blob service provides mechanisms to ensure data integrity both at the application and transport layers. This post will detail these mechanisms from the service and client perspective. MD5 checking is optional on both PUT and GET operations; however, it does provide a convenience facility to ensure data integrity across the network when using HTTP. Additionally, since HTTPS provides transport layer security additional MD5 checking is not needed while connecting over HTTPS as it would be redundant. Azure Blob service provides a durable storage medium, and uses its own integrity checking for stored data. The MD5's that are used when interacting with an application are provided for checking the integrity of the data when transferring that data between the application and service via HTTP.</span></span> 
+
+<span data-ttu-id="a128e-p103">Azure Blob データの整合性を確保するのには、サービスは、いくつかの異なる方法でデータの MD5 ハッシュを使用します。これらの値は計算、送信、保存、および方法適切に利用するデータの整合性を提供するため、アプリケーションを設計するのには最終的に適用されるを理解する重要です。詳細については、 [Windows Azure Blob の MD5 の概要](http://blogs.msdn.com/b/windowsazurestorage/archive/2011/02/18/windows-azure-blob-md5-overview.aspx)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a128e-p103">To ensure data integrity the Azure Blob service uses MD5 hashes of the data in a couple different manners. It is important to understand how these values are calculated, transmitted, stored, and eventually enforced to appropriately design your application to utilize them to provide data integrity. For more information, see [Windows Azure Blob MD5 Overview](http://blogs.msdn.com/b/windowsazurestorage/archive/2011/02/18/windows-azure-blob-md5-overview.aspx).</span></span> 
+
+<span data-ttu-id="a128e-p104">メタデータとファイルへのポインターは、SQL Server データベース (コンテンツのデータベース) に格納されます。-ファイル、ファイル、および更新のデルタの-すべてのチャンクは、複数の Azure ストレージ アカウントにランダムに分散された Azure ストレージの blob として保存されます。SQL データベースは、同じデータ センター内の別のラック内の別の RAID 10 ストレージ ・ アレイにミラーリングは同期的に RAID 10 ストレージ ・ アレイ上でホストされています。非同期のログ配布を使用して、2 番目のデータ センター内の別の RAID 10 ストレージ ・ アレイにデータをレプリケートします。RAID 10 と同期および非同期のレプリケーションを使用してデータを保護するだけでなく 2 番目のデータ センターにも非同期でレプリケートするスケジュールされたデータのバックアップを実行します。</span><span class="sxs-lookup"><span data-stu-id="a128e-p104">Metadata and pointers to the file are stored in a SQL Server database (the content database). All the chunks – files, pieces of files, and update deltas – are stored as blobs in Azure storage that are randomly distributed across multiple Azure storage accounts. The SQL database is hosted on a RAID 10 storage array which is synchronously mirrored to another RAID 10 storage array in a separate rack within the same datacenter. Asynchronous log shipping is then used to replicate the data to another RAID 10 storage array in a second datacenter. In addition to protecting data with RAID 10 and synchronous and asynchronous replication, scheduled data backups are taken which are also asynchronously replicated to the second datacenter.</span></span> 
+
+<span data-ttu-id="a128e-p105">SharePoint online では、データのバックアップは 12 時間ごとを実行し、14 日間保持されます。SharePoint Online もシステムを使用してホット スタンバイ領域内にある同じ顧客データの場所 (たとえば、シカゴとサンアントニオはアメリカ合衆国では、テナントが準備されているお客様の) のペアの別の地理的にデータ センターを含むアクティブ/アクティブとして構成されます。などは、プライマリ データ センターとフェールオーバー データ センター、として San Antonio とシカゴとをプライマリ データ センターと、フェールオーバー データ センターとシカゴとサンアントニオを持つユーザーを live ライブのユーザーがあります。</span><span class="sxs-lookup"><span data-stu-id="a128e-p105">In SharePoint Online, data backups are performed every 12 hours and retained for 14 days. SharePoint Online also uses a hot standby system that includes paired geographically-separate datacenters within the same customer data location region (for example, Chicago and San Antonio for customers who have provisioned their tenant in the United States) configured as active/active. For example, there are live users that have Chicago as their primary datacenter and San Antonio as a failover datacenter, and live users that have San Antonio as their primary datacenter and Chicago as their failover datacenter.</span></span> 

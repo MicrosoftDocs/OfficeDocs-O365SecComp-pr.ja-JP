@@ -1,0 +1,31 @@
+---
+title: Office 365 のデータ破壊
+ms.author: robmazz
+author: robmazz
+manager: laurawi
+ms.date: 8/21/2018
+audience: ITPro
+ms.topic: article
+ms.service: Office 365 Administration
+localization_priority: None
+search.appverid:
+- MET150
+ms.collection: Strat_O365_Enterprise
+description: リサイクル、廃棄、または Office 365 のデータ センターのディスク ドライブとサーバーの破壊に関する Microsoft のポリシーの概要について説明します。
+ms.openlocfilehash: c9950be4919520f2f46badaa4a7d4cfce5c55b45
+ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "22531891"
+---
+# <a name="office-365-data-destruction"></a><span data-ttu-id="19b1f-103">Office 365 のデータ破壊</span><span class="sxs-lookup"><span data-stu-id="19b1f-103">Office 365 Data Destruction</span></span>
+<span data-ttu-id="19b1f-p101">マイクロソフトでは、ごみとディスク ・ ドライブとサーバーの障害が発生したか、中止の処分に対応するデータ処理標準のポリシーがあります。米国標準と技術の特別な文書 800-88 ([メディアの消去の NIST SP 800-88 のガイドライン](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf)と一貫性のある物理的な校正プロセスを実行している Microsoft Office 365 のすべてのディスク ・ ドライブで再使用する前に).Office 365 内のすべてのディスク ドライブは、BitLocker のボリューム レベルの暗号化を使用して暗号化されますので、実際には、NIST SP 800-88 準拠のデータ消去必要はありません。それにもかかわらず、マイクロソフトでは、実行されます。</span><span class="sxs-lookup"><span data-stu-id="19b1f-p101">Microsoft has Data Handling Standard policies that addresses recycle and disposal of disk drives and failed or retiring servers. Before re-using any disk drives within Office 365, Microsoft performs a physical sanitization process that is consistent with National Institute of Standards and Technology Special Publication 800-88 ([NIST SP 800-88 Guidelines for Media Sanitization](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf)). All disk drives in Office 365 are encrypted using BitLocker volume level encryption, so in practice, NIST SP 800-88-compliant erasure is not necessary. Nonetheless, it is still performed by Microsoft.</span></span>
+
+<span data-ttu-id="19b1f-p102">データ センターに物理的に破棄され、ISO プロセスを監査対象の Office 365 内で使用されているディスクに失敗しました。適切な廃棄方法は、資産のタイプによって決定されます。マイクロソフトでは、メディアを破壊する破壊プロセス用のハード ドライブを消去することはできません (たとえば、disintegrates、pulverizes、またはを焼き尽くします) レンダリング情報のリカバリが不可能になるとします。マイクロソフトでは、オブジェクトの破壊のすべてのレコードも保持します。マイクロソフトは、Office 365 内で再利用されているサーバー上のような校正プロセスを実行します。これらのガイドラインには、電子記録、物理的の両方の校正が含まれます。</span><span class="sxs-lookup"><span data-stu-id="19b1f-p102">Failed disks used within Office 365 datacenters are physically destroyed and audited through the ISO process. The appropriate means of disposal is determined by the asset type. For hard drives that can't be wiped, Microsoft uses a destruction process that destroys the media (e.g., disintegrates, pulverizes, or incinerates) and renders the recovery of information impossible. Microsoft also retains all records of the destruction. Microsoft performs a similar sanitization process on servers that are being re-used within Office 365. These guidelines encompass both electronic and physical sanitization.</span></span>
+
+<span data-ttu-id="19b1f-p103">オンサイトに破棄されているディスクを含むデータ センター内で実行される物理的な破壊処理を使用するディスク ・ ドライブを再利用することはできませんが破棄されます。廃棄用に指定されたストレージ ・ メディアは、データ センターの各領域内にあるセキュリティで保護されたビンに配置されます。各セキュリティで保護された箱ステーションは、ビデオ監視システムによって監視されます。廃棄箱には、約 50% の容量に達すると、サイトのサービス ・ チームは、削除を調整するための物理的なセキュリティ チームを接続します。サイトのサービス ・ スタッフでは、データの破壊を待機するのにはセキュリティで保護された記憶領域に配置されますまで護衛して、セキュリティ責任者の下で廃棄箱を削除します。ポリシーとデータの処理中にデバイスをベアリングの処理を制御する手順は、定期的にテスト機械の廃棄の承認の状態を確認する手順を含みます。</span><span class="sxs-lookup"><span data-stu-id="19b1f-p103">Disk drives that cannot be re-used are disposed of using a physical destruction process that is performed on-site within the datacenter containing the disks being destroyed. Storage media designated for disposal are placed in secure bins located in each area of the datacenter. Each secure bin station is monitored by video surveillance. Once a disposal bin reaches approximately 50% capacity, the Site Services team contacts the Physical Security team to coordinate its removal. Site Services personnel then remove the disposal bin under escort by a Security Officer until it is placed in a secured storage area to await data destruction. Policies and procedures governing the handling of data bearing devices during disposal are routinely tested including procedures to ensure the condition of machinery approved for destruction.</span></span>
+
+<span data-ttu-id="19b1f-p104">プロセスでは、データ破壊、NIST 800-88 (可能であれば) に準拠する形で、ディスクを消去して最初と、工業用シュレッダーに配置し、物理的に demolished。マイクロソフトでは、NIST SP 800-88 一貫性のある浄化/パージ、資産の破壊、暗号化、正確なインベントリを作成する、トラッキング、および転送中の過程の保護を使用してデータ センターに残す資産の説明責任を保持します。有線テレビを使用してこのプロセスを監視し、完了時に発行される証明書の破棄します。</span><span class="sxs-lookup"><span data-stu-id="19b1f-p104">In the data destruction process, the disk is first erased in a manner that is compliant with NIST 800-88 (if possible), and then it is placed into an industrial shredder and physically demolished. Microsoft maintains accountability for assets leaving the datacenter using NIST SP 800-88 consistent cleansing/purging, asset destruction, encryption, accurate inventorying, tracking, and protection of chain of custody during transport. This process is monitored via closed-circuit television and a Certificate of Destruction is issued upon completion.</span></span>
+
+<span data-ttu-id="19b1f-p105">マイクロソフトでは、[極端なプロトコル ソリューション](http://www.enterprisedataerasure.com/)(EPS) からのデータ消去サービス単位を使用します。EPS ソフトウェア要件をサポートする NIST SP 800-88 のクリーンアップと削除セキュア消去します。浄化、破壊する前に、Microsoft の資産マネージャー インベントリを作成します。消滅させるために使用する仕入先、仕入先は資産マネージャーにより検証されている破棄されると、各資産の破壊の証明書を提供します。</span><span class="sxs-lookup"><span data-stu-id="19b1f-p105">Microsoft uses data erasure units from [Extreme Protocol Solutions](http://www.enterprisedataerasure.com/) (EPS). EPS software supports NIST SP 800-88 requirements for cleansing and purging/secure erasure. Prior to cleansing or destruction, an inventory is created by the Microsoft asset manager. If a vendor is used for destruction, the vendor provides a certificate of destruction for each asset destroyed, which is validated by the asset manager.</span></span>
