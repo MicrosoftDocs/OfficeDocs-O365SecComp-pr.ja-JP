@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 description: このトピックでは、エンドユーザーと管理者向けのトラブルシューティング手順と、支援を得るためのテクニカル サポートへの問合わせ方法について説明します。
-ms.openlocfilehash: d6168be0580175b172616b3274f2a13f36de5d57
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 249f6fabf0ae7037ef905c455cfb45582be0e40b
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027634"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003126"
 ---
 # <a name="troubleshooting-and-support-information"></a>トラブルシューティングとサポート情報
 
@@ -87,7 +89,7 @@ ms.locfileid: "22027634"
   
 ## <a name="for-more-information"></a>詳細情報
 
-[レポート メッセージを追加で有効にします。](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
+[レポート メッセージ アドインを有効にする](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
   
 [迷惑メール メッセージを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)
   

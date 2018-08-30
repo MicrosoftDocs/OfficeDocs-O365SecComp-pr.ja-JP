@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 description: 高度な迷惑メール フィルターのオプションは、メッセージのさまざまなコンテンツの属性を検査する機能を管理者に提供します。メッセージでこれらの属性が存在することは (ため、スパムとして識別することの危険性が向上)、メッセージのスパム スコアを増加するか、またはメッセージをスパムとしてマークを付けます。ASF オプションには、スパム メッセージで一般的に見られる HTML タグや URL のリダイレクトなどの特定のメッセージ プロパティが対象します。
-ms.openlocfilehash: 4b67c3a9a79c4a51bdebed5ca1a6415cc7bd13ae
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 9a372d002717eacf9470b11b65c4b8f268f48e5a
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026574"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003066"
 ---
 # <a name="advanced-spam-filtering--options"></a>高度な迷惑メールのフィルタ リングのオプション
 

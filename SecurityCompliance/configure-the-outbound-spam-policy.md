@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 description: 送信スパム フィルターは常に有効場合は、送信する電子メールを送るためにサービスを使用すると、サービスは、それぞれの受信者を使用して組織を保護します。
-ms.openlocfilehash: 3a3e07731e16da148131ceb6f555e84ed94f7ae5
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: b6185cfded28613cb5a512882aefb1a99db158db
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026304"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002418"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>送信スパム ポリシーを構成する
 

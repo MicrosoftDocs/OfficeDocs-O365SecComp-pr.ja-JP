@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 description: 'メールボックスを訴訟ホールドの対象にすると、削除済みアイテムと変更されたアイテムの元のバージョンを含む、すべてのメールボックスのコンテンツが保持されます。 '
-ms.openlocfilehash: 8f440f5fc0bc7dafd639bdf8136808aa2f3bd35f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 9c2d5c77a604e4dbe6e1f1db75142d3bf5790618
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026444"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002846"
 ---
 # <a name="place-a-mailbox-on-litigation-hold"></a>メールボックスを訴訟ホールドの対象にする
  
@@ -51,7 +53,7 @@ ms.locfileid: "22026444"
 
 1. **[受信者]** \> **[メールボックス]** に移動します。
     
-2. ユーザーのメールボックスのリストで、訴訟ホールドの対象とするメールボックスを選択し、 **[編集]**![編集アイコン](media/ITPro-EAC-EditIcon.png) をクリックします。
+2. 、ユーザーのメールボックスの一覧で、証拠保全、上に配置するメールボックスをクリックし、し、[**編集**] をクリックして![[編集] アイコン](media/ITPro-EAC-EditIcon.gif)。
     
 3. [メールボックスのプロパティ] ページをクリックして **[メールボックスの機能です**。
     
@@ -124,7 +126,7 @@ P
     
 1. **[受信者]** \> **[メールボックス]** に移動します。
     
-2. ユーザーのメールボックスのリストで、訴訟ホールドの設定を確認するメールボックスをクリックし、 **[編集]**![編集アイコン](media/ITPro-EAC-EditIcon.png) をクリックします。
+2. 、ユーザーのメールボックスの一覧で、証拠保全の設定を確認するメールボックスをクリックし、[**編集**] をクリックして![[編集] アイコン](media/ITPro-EAC-EditIcon.gif)。
     
 3. [メールボックスのプロパティ] ページをクリックして **[メールボックスの機能です**。
     

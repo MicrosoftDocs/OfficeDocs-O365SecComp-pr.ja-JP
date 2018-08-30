@@ -8,15 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.custom: TN2DMC
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 description: 'Domain-based Message Authentication, Reporting, and Conformance (DMARC) は、Sender Policy Framework (SPF) および DomainKeys Identified Mail (DKIM) と併用することで、メールの送信者を認証できるようになり、送信先の電子メール システムはドメインから送信されたメッセージを信頼するようになります。 '
-ms.openlocfilehash: a95e41011e802a583ddd053d2ae4699ff46112b9
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 199ab67d17152fc0c4ed6b9f87cde66beaf913d5
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026824"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003226"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>DMARC を使用して Office 365 でメールを検証する
 
@@ -223,7 +225,8 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 ```
 
-すべて、またはほとんどのメールは、最初にプライマリ MX である mail.contoso.com にルーティングされてから、EOP にルーティングされます。場合によっては、MX レコードとして EOP をリストすることさえなく、単にメールをルーティングするようにコネクタを接続していることもあります。DMARC の失敗がドメインに強制されるようするには、ドメインの MX レコードで最初のエントリを EOP にする必要があります。
+すべてまたはほとんどの場合、電子メールは、[プライマリ MX では、EOP にメールが送られますしに最初 mail.contoso.com にルーティングされます。いくつかの場合であっても EOP に MX レコードに一覧表示し、単にあなたの電子メールをルーティングするコネクタをフック可能性があります。EOP は DMARC 検証を実行するための最初のエントリではありません。確認できませんでの設置型と非-O365 のすべてのサーバーが DMARC のチェックを行うことにだけ、検証を保証します。 DMARC はお客様のドメイン (サーバーではなく) に適用する条件を満たすとき、DMARC の TXT レコードを設定するが、実際に強制を行うには、受信側のサーバーにします。 EOP と受信側のサーバーをセットアップする場合は、EOP は DMARC 実施とします。
+
   
 ## <a name="for-more-information"></a>詳細情報
 <a name="sectionSection8"> </a>

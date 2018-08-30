@@ -1,5 +1,5 @@
 ---
-title: 'オンライン保護を Exchange で Exchange 管理センター '
+title: 'Exchange Online Protection の Exchange 管理センター '
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -9,22 +9,24 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 description: Exchange 管理センター (EAC) は、Microsoft Exchange Online Protection (EOP) 向けの Web ベース管理コンソールです。
-ms.openlocfilehash: 99640e561b41e47a74e7c22f0bbdcacd0dd80bd7
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 144907110af9fcbec1c6399e0695abb705bef409
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026314"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002946"
 ---
-# <a name="exchange-admin-center-in-exchange-online-protection"></a>オンライン保護を Exchange で Exchange 管理センター 
+# <a name="exchange-admin-center-in-exchange-online-protection"></a>Exchange Online Protection の Exchange 管理センター 
 
 Exchange 管理センター (EAC) は、Microsoft Exchange Online Protection (EOP) 向けの Web ベース管理コンソールです。 
   
 このトピックの Exchange 2013 バージョンについては、「[Exchange admin center in Exchange 2013](http://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx)」を参照してください。
   
-このトピックの Exchange Online バージョンについては、「[Exchange admin center in Exchange Online](http://technet.microsoft.com/library/ace44f6b-4084-4f9c-89b3-e0317962472b.aspx)」を参照してください。
+このトピックの Exchange Online バージョンについては、「[Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)」を参照してください。
   
 ## <a name="accessing-the-eac"></a>EACへのアクセスについて
 
@@ -33,7 +35,6 @@ Exchange 管理センター (EAC) は、Microsoft Exchange Online Protection (EO
 EAC のサインイン ページを次の URL から直接アクセスすることもできます: https://admin.protection.outlook.com/ecp/\<companydomain\>。たとえば、 https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com。ユーザーの資格情報を指定した後は、するは、EAC に直接取得されます。
   
 ## <a name="common-user-interface-elements-in-the-eac"></a>EAC で共通のユーザー インターフェイス要素
-<a name="BKMK_CommonUserInterfaceElements"> </a>
 
 ここでは、EAC のユーザー インターフェイス要素について説明します。
   
@@ -63,14 +64,14 @@ EAC で実行する多くのタスクで、これがナビゲーションの第 
   
 |**アイコン**|**名前**|**Action**|
 |:-----|:-----|:-----|
-|![[追加] アイコン](media/ITPro-EAC-AddIcon.png)           <br/> |追加、新規  <br/> |このアイコンを使用して、新しいオブジェクトを作成します。これらの一部のアイコンには下方向キーが関連付けられており、これをクリックして、作成可能な追加のオブジェクトを表示できます。  <br/> |
-|![編集アイコン](media/ITPro-EAC-EditIcon.png)           <br/> |編集  <br/> |このアイコンを使用してオブジェクトを編集します。  <br/> |
-|![[削除] アイコン](media/ITPro-EAC-DeleteIcon.png)           <br/> |削除  <br/> |このアイコンを使用してオブジェクトを削除します。一部の削除アイコンには下方向キーがあり、これをクリックして追加オプションを表示できます。  <br/> |
-|![[検索] アイコン](media/ITPro-EAC-.png)           <br/> |検索  <br/> |このアイコンを使用して、検索するオブジェクトの検索文字列を入力できる検索ボックスを開きます。  <br/> |
-|![[最新の情報に更新] アイコン](media/ITPro-EAC-RefreshIcon.png)           <br/> |最新の情報に更新  <br/> |このアイコンを使用してリスト ビューを更新します。  <br/> |
-|![[その他のオプション] アイコン](media/ITPro-EAC-MoreOptionsIcon.png)           <br/> |その他のオプション  <br/> |このアイコンを使用して、そのタブのオブジェクトに対して実行できる他のアクションを表示します。たとえば、 **受信者 \> ユーザー**のアイコンをクリックすると、 **詳細検索**のオプションが表示されます。  <br/> |
-|![上矢印アイコン](media/ITPro-EAC-UpArrowIcon.png)![下矢印アイコン](media/ITPro-EAC-DownArrowIcon.png)           <br/> |上方向キーと下方向キー  <br/> |これらのアイコンを使用して、オブジェクトの優先度を上下に移動します。  <br/> |
-|![[削除] アイコン](media/ITPro-EAC-RemoveIcon.png)           <br/> |削除  <br/> |このアイコンを使用して、一覧からオブジェクトを削除します。  <br/> |
+|![[追加] アイコン](media/ITPro-EAC-AddIcon.gif)           <br/> |追加、新規  <br/> |このアイコンを使用して、新しいオブジェクトを作成します。これらの一部のアイコンには下方向キーが関連付けられており、これをクリックして、作成可能な追加のオブジェクトを表示できます。  <br/> |
+|![編集アイコン](media/ITPro-EAC-EditIcon.gif)           <br/> |編集  <br/> |このアイコンを使用してオブジェクトを編集します。  <br/> |
+|![[削除] アイコン](media/ITPro-EAC-DeleteIcon.gif)           <br/> |削除  <br/> |このアイコンを使用してオブジェクトを削除します。一部の削除アイコンには下方向キーがあり、これをクリックして追加オプションを表示できます。  <br/> |
+|![[検索] アイコン](media/ITPro-EAC-.gif)           <br/> |検索  <br/> |このアイコンを使用して、検索するオブジェクトの検索文字列を入力できる検索ボックスを開きます。  <br/> |
+|![[最新の情報に更新] アイコン](media/ITPro-EAC-RefreshIcon.gif)           <br/> |最新の情報に更新  <br/> |このアイコンを使用してリスト ビューを更新します。  <br/> |
+|![[その他のオプション] アイコン](media/ITPro-EAC-MoreOptionsIcon.gif)           <br/> |その他のオプション  <br/> |このアイコンを使用して、そのタブのオブジェクトに対して実行できる他のアクションを表示します。たとえば、 **受信者 \> ユーザー**のアイコンをクリックすると、 **詳細検索**のオプションが表示されます。  <br/> |
+|![上矢印アイコン](media/ITPro-EAC-UpArrowIcon.gif)![下矢印アイコン](media/ITPro-EAC-DownArrowIcon.gif)           <br/> |上方向キーと下方向キー  <br/> |これらのアイコンを使用して、オブジェクトの優先度を上下に移動します。  <br/> |
+|![[削除] アイコン](media/ITPro-EAC-RemoveIcon.gif)           <br/> |削除  <br/> |このアイコンを使用して、一覧からオブジェクトを削除します。  <br/> |
    
 ### <a name="list-view"></a>リスト ビュー
 
@@ -82,9 +83,9 @@ EAC で実行する多くのタスクで、これがナビゲーションの第 
   
 ### <a name="me-tile-and-help"></a>[自分] タイルとヘルプ
 
-**[自分]** タイルでは、EAC からのサインアウトおよび他のユーザーとしてサインインが行えます。 **[ヘルプ]**![ヘルプ アイコン](media/ITPro-EAC-HelpIcon.png) ドロップ ダウン メニューから次のアクションを行えます。 
+**[自分]** タイルでは、EAC からのサインアウトおよび他のユーザーとしてサインインが行えます。 **[ヘルプ]**![ヘルプ アイコン](media/ITPro-EAC-HelpIcon.gif) ドロップ ダウン メニューから次のアクションを行えます。 
   
-1. **ヘルプ**![ヘルプ アイコン](media/ITPro-EAC-HelpIcon.png) をクリックして、オンライン ヘルプ コンテンツを表示します。 
+1. **ヘルプ**![ヘルプ アイコン](media/ITPro-EAC-HelpIcon.gif) をクリックして、オンライン ヘルプ コンテンツを表示します。 
     
 2. **ヘルプ バブルを無効にする** ヘルプ バブルは、オブジェクトを作成または編集する際に、フィールドのコンテキスト ヘルプを表示します。ヘルプ バブルをオフにしたり、無効になっている場合はオンにすることができます。 
     
@@ -93,12 +94,10 @@ EAC で実行する多くのタスクで、これがナビゲーションの第 
 4. **プライバシー** ここをクリックして、Exchange Online Protection に関するプライバシー ポリシーを確認します。 
     
 ## <a name="supported-browsers"></a>サポートされているブラウザー
-<a name="BKMK_SupportedBrowsers"> </a>
 
 EAC を最大限に活用できるように、常に最新のブラウザー、Office クライアント、アプリを使用することをお勧めします。また、ソフトウェア更新プログラムも、利用可能になり次第インストールすることをお勧めします。サービスでサポートされるブラウザー要件とシステム要件の詳細については、「[Office 365 のシステム要件](https://go.microsoft.com/fwlink/p/?LinkID=402699)」を参照してください。 
   
 ## <a name="supported-languages-in-eop"></a>EOP でサポートされている言語
-<a name="BKMK_SupportedLanguages"> </a>
 
 Exchange Online Protection でサポートされ、利用可能な言語は、以下のとおりです。
   

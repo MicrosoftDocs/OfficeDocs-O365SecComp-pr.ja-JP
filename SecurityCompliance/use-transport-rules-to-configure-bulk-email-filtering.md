@@ -1,5 +1,5 @@
 ---
-title: トランスポート ルールを使用して、一括メールのフィルタ リングを構成するのには
+title: トランスポート ルールを使用してバルク メールのフィルター処理を構成する
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -9,16 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 description: 既定のスパム コンテンツ フィルター ポリシーを使用して、スパムやバルク メールに対して会社全体のコンテンツ フィルターを設定することができます。コンテンツ フィルター ポリシーを設定する方法については、「スパム フィルター ポリシーの構成」と「Set-HostedContentFilterPolicy」を確認してください。
-ms.openlocfilehash: f72fa5cc50ab6aa5447e3af9fabc365457c82973
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 8fa4ba619b55ae12207f36b7625acfaa9838e696
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027684"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002482"
 ---
-# <a name="use-transport-rules-to-configure-bulk-email-filtering"></a>トランスポート ルールを使用して、一括メールのフィルタ リングを構成するのには
+# <a name="use-transport-rules-to-configure-bulk-email-filtering"></a>トランスポート ルールを使用してバルク メールのフィルター処理を構成する
 
 既定のスパム コンテンツ フィルター ポリシーを使用して、スパムやバルク メールに対して会社全体のコンテンツ フィルターを設定することができます。コンテンツ フィルター ポリシーを設定する方法については、「[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」と「[Set-HostedContentFilterPolicy](http://technet.microsoft.com/library/f597aa65-baa7-49d0-8832-2a300073f211.aspx)」を確認してください。 
   
@@ -34,7 +36,7 @@ ms.locfileid: "22027684"
 
 1. Exchange 管理センター (EAC) で、 **[メール フロー]** \> **[ルール]** に移動します。
     
-2. **[追加]**![[追加] アイコン](media/ITPro-EAC-AddIcon.png) をクリックしてから、 **[新しいルールの作成]** を選択します。
+2. **[追加]**![[追加] アイコン](media/ITPro-EAC-AddIcon.gif) をクリックしてから、 **[新しいルールの作成]** を選択します。
     
 3. ルールの名前を指定します。
     
@@ -89,7 +91,7 @@ ms.locfileid: "22027684"
 
 1. EAC で、 **[メール フロー]** \> **[ルール]** に移動します。
     
-2. **[追加]**![[追加] アイコン](media/ITPro-EAC-AddIcon.png) をクリックしてから、 **[新しいルールの作成]** を選択します。
+2. **[追加]**![[追加] アイコン](media/ITPro-EAC-AddIcon.gif) をクリックしてから、 **[新しいルールの作成]** を選択します。
     
 3. ルールの名前を指定します。
     

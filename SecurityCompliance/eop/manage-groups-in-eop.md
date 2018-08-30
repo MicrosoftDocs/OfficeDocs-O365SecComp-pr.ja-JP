@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 description: Exchange オンライン保護 (EOP) を使用すると、Exchange 組織用のメールが有効なグループを作成します。メンバーシップ、電子メール アドレス、およびグループの他の側面を指定するグループのプロパティを定義または EOP を使用することもできます。
-ms.openlocfilehash: 744a28d2003496650e7350108797cc5cc4eaad4f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 1af39e3a55864a9a87f90e0a00957ebf1631bb45
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026344"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003176"
 ---
 # <a name="manage-groups-in-eop"></a>EOP でグループを管理する
 
@@ -41,7 +41,7 @@ Exchange 組織では、2 種類のグループを作成できます。
     
 - このコマンドレットはバッチ処理方法を使用しており、コマンドレットの結果が表示されるまで数分の送信遅延が生じます。
     
-- Windows PowerShell を使用して Exchange Online Protection に接続する方法については、「[リモート PowerShell を使用して Exchange Online Protection に接続する](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx)」を参照してください。
+- Windows PowerShell を使用して Exchange Online Protection に接続する方法については、「[リモート PowerShell を使用して Exchange Online Protection に接続する](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps)」を参照してください。
     
 - このトピックの手順で使用可能なキーボード ショートカットについては、「 **Keyboard shortcuts in Exchange 2013**」を参照してください。
     
@@ -52,7 +52,7 @@ Exchange 組織では、2 種類のグループを作成できます。
 
 1. Exchange 管理センター (EAC) で、 **[受信者]** \> **[グループ]** に移動します。
     
-2. **[新規]**![[追加] アイコン](../media/ITPro-EAC-AddIcon.png) をクリックしてから、必要に応じて、 **[配布グループ]** または **[セキュリティ グループ]** をクリックします。違いについては、「 [メールが有効なグループの種類](manage-groups-in-eop.md)」を参照してください。 
+2. **[新規]**![[追加] アイコン](../media/ITPro-EAC-AddIcon.gif) をクリックしてから、必要に応じて、 **[配布グループ]** または **[セキュリティ グループ]** をクリックします。違いについては、「 [メールが有効なグループの種類](manage-groups-in-eop.md)」を参照してください。 
     
 3. **[配布グループの新規作成]** ページまたは **[新しいセキュリティ グループ]** ページで、次のフィールドにデータを入力します。 
     
@@ -62,12 +62,12 @@ Exchange 組織では、2 種類のグループを作成できます。
     
   - **[説明]** グループの目的がわかるようにグループの説明を入力します。 
     
-  - **[所有者]** 既定では、グループを作成したユーザーがその所有者です。所有者を追加するには、 **[追加]**![[追加] アイコン](../media/ITPro-EAC-AddIcon.png) を選択します。グループには、最低 1 人の所有者が必要です。
+  - **[所有者]** 既定では、グループを作成したユーザーがその所有者です。所有者を追加するには、 **[追加]**![[追加] アイコン](../media/ITPro-EAC-AddIcon.gif) を選択します。グループには、最低 1 人の所有者が必要です。
     
     > [!NOTE]
     > 所有者はグループのメンバーである必要はありません。 
   
-  - **[メンバー]** このセクションは、グループ メンバーを追加したり、ユーザーがグループに参加または脱退するときに承認が必要かどうかを指定したりするために使用します。グループにメンバーを追加するには、 **[追加]**![[追加] アイコン](../media/ITPro-EAC-AddIcon.png) をクリックします。
+  - **[メンバー]** このセクションは、グループ メンバーを追加したり、ユーザーがグループに参加または脱退するときに承認が必要かどうかを指定したりするために使用します。グループにメンバーを追加するには、 **[追加]**![[追加] アイコン](../media/ITPro-EAC-AddIcon.gif) をクリックします。
     
 4. **[OK]** をクリックして元のページに戻ります。 
     
@@ -79,9 +79,9 @@ Exchange 組織では、2 種類のグループを作成できます。
     
 2. 次のいずれかを実行します。
     
-  - グループを編集するには、次の手順を実行します。グループの一覧で、表示または変更する配布グループまたはセキュリティ グループをクリックしてから、 **[編集]**![編集アイコン](../media/ITPro-EAC-EditIcon.png) をクリックします。必要に応じて、全般設定を更新したり、グループ所有者を追加または削除したり、グループ メンバーを追加または削除したりします。
+  - グループを編集するのには: グループの一覧でをクリックし、[配布またはセキュリティ グループを表示または変更する] をクリックし、[**編集**] をクリックして![[編集] アイコン](../media/ITPro-EAC-EditIcon.gif)。全般的な設定を更新、追加またはグループの所有者を削除して追加したり、必要に応じて、グループのメンバーを削除できます。
     
-  - グループを削除するには、次の手順を実行します。グループを選択して、 **[削除]**![[削除] アイコン](../media/ITPro-EAC-RemoveIcon.png) をクリックします。
+  - グループを削除するには、次の手順を実行します。グループを選択して、 **[削除]**![[削除] アイコン](../media/ITPro-EAC-RemoveIcon.gif) をクリックします。
     
 3. 変更が完了したら、 **[保存]** をクリックします。
     

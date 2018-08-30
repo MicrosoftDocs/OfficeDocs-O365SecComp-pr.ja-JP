@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Microsoft Exchange Online Protection (EOP) では、Exchange 管理センター (EAC) を使用して、特定の管理タスクを実行するアクセス許可を割り当てるために、ユーザーを役割グループのメンバーにすることができます。また、EAC を使用して、ユーザーを役割グループから削除することもできます。
-ms.openlocfilehash: 5d50c77c97f2c345aa3994e7fa3ecd2eea93a13a
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: b773b541b85288b4cb4deaa075cc0346d6bcc646
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026664"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002976"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>EOP で管理役割グループのアクセス許可を管理する
   
@@ -39,9 +39,9 @@ Microsoft Exchange Online Protection (EOP) では、Exchange 管理センター 
 
 ### <a name="use-the-eac-to-assign-members-to-admin-role-groups"></a>EAC を使用してメンバーを管理役割グループに割り当てる
 
-1. EAC で、 **[アクセス許可]** \> **[管理役割]** の順に移動し、ユーザー (複数可) を追加する役割グループを選択して **[編集]**![編集アイコン](../media/ITPro-EAC-EditIcon.png) をクリックします。
+1. EAC では、[**アクセス許可**] に移動\>**管理者の役割**、役割グループ、ユーザーを追加する] をクリックし、し、[**編集**] をクリックして![[編集] アイコン](../media/ITPro-EAC-EditIcon.gif)。
     
-2. [メンバー] の **[追加]**![[追加] アイコン](../media/ITPro-EAC-AddIcon.png) をクリックします。[メンバーの選択] ウィンドウが表示されます。
+2. [メンバー] の **[追加]**![[追加] アイコン](../media/ITPro-EAC-AddIcon.gif) をクリックします。[メンバーの選択] ウィンドウが表示されます。
     
 3. 追加するユーザーを検索するか、または一覧からユーザーを選択します。
     
@@ -54,9 +54,9 @@ Microsoft Exchange Online Protection (EOP) では、Exchange 管理センター 
   
 ### <a name="use-the-eac-to-remove-members-from-admin-role-groups"></a>EAC を使用して管理役割グループからメンバーを削除する
 
-1. EAC で、 **[アクセス許可]** \> **[管理役割]** の順に移動し、ユーザー (複数可) を削除する役割グループを選択して **[編集]**![編集アイコン](../media/ITPro-EAC-EditIcon.png) をクリックします。
+1. EAC では、[**アクセス許可**] に移動\>**管理者の役割**、ユーザーまたはユーザーが、削除するロール グループをクリックし、し、[**編集**] をクリックして![[編集] アイコン](../media/ITPro-EAC-EditIcon.gif)。
     
-2. [メンバー] で削除するユーザーを選択し、 **[削除]**![[削除] アイコン](../media/ITPro-EAC-RemoveIcon.png) をクリックします。
+2. [メンバー] で削除するユーザーを選択し、 **[削除]**![[削除] アイコン](../media/ITPro-EAC-RemoveIcon.gif) をクリックします。
     
 3. **[保存]** をクリックして役割グループに対する変更内容を保存し、 **[管理役割]** ページに戻ります。ユーザーが管理者役割グループから正常に削除されているかは、選択した役割グループの詳細ウィンドウの [メンバー] に、該当するメンバーが表示されていないことで確認します。 
     

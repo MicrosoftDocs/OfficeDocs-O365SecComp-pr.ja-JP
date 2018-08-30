@@ -9,20 +9,22 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 description: このトピックでは、Exchange Online and Exchange Online Protection (EOP) の管理者が、Exchange 管理センター (EAC) の検疫済みメッセージに入っているメッセージの検索、解放、報告を行う方法について説明します。
-ms.openlocfilehash: 5ebe65bf703087e8ad4bace827d84833eddb038f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: a8c450471d2fe627346b5bea8db50b91d67ffd3f
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027484"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003276"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>管理者として検疫済みメッセージを検索して解放する
 
 このトピックでは、Exchange Online and Exchange Online Protection (EOP) の管理者が、Exchange 管理センター (EAC) の検疫済みメッセージに入っているメッセージの検索、解放、報告を行う方法について説明します。Office 365 は、スパムとして特定されたか、トランスポート ルールに一致したかのどちらかでメッセージを検疫のために送信します。 
   
-セキュリティを使用して、 &amp; 、EAC これらのタスクと同様にビューのいずれかを実行し、マルウェアが含まれているために、検疫に送信されたメッセージを処理するのではなくコンプライアンス センターです。詳細については、 [Office 365 で電子メール メッセージの検疫](https://support.office.com/en-US/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)を参照してください。
+セキュリティを使用して、 &amp; 、EAC これらのタスクと同様にビューのいずれかを実行し、マルウェアが含まれているために、検疫に送信されたメッセージを処理するのではなくコンプライアンス センターです。詳細については、 [Office 365 で電子メール メッセージの検疫](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)を参照してください。
   
 検疫済みメッセージは EAC の **[検疫]** ページに一覧表示されます。既定では、メッセージは **[受信]** フィールドの降順で並べ替えられます。 **[送信者]**、 **[件名]**、および **[有効期限]** の値もメッセージごとに表示されます。フィールドは、ヘッダーをクリックして並べ替えることができます。見出しをもう一度クリックすると、逆の順序で並べ替えられます。 **[検疫]** ページには最大で 500 個のメッセージを表示できます。 
   
@@ -158,7 +160,7 @@ Exchange 管理センター (EAC) では、高度な検索を使用してさま�
     
 4. **[解放]** をクリックします。 
     
-**[最新の情報に更新]**![[最新の情報に更新] アイコン](media/ITPro-EAC-RefreshIcon.png) アイコンをクリックしてデータを更新してから、メッセージをダブルクリックすると、それが目的の受信者に解放されていることが示されます。 
+**[最新の情報に更新]**![[最新の情報に更新] アイコン](media/ITPro-EAC-RefreshIcon.gif) アイコンをクリックしてデータを更新してから、メッセージをダブルクリックすると、それが目的の受信者に解放されていることが示されます。 
   
 ### <a name="release-one-or-more-quarantined-messages-to-all-recipients"></a>1 つ以上の検疫済みメッセージをすべての受信者に解放する
 <a name="Releaseoneormorequarantinedmessagestoallrecipients"> </a>
@@ -187,7 +189,7 @@ Exchange 管理センター (EAC) では、高度な検索を使用してさま�
 > [!TIP]
 > 「[メッセージがスパムとしてマークされないようにする方法](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md)」の手順に従って、メッセージがスパムとしてマークされないようにします。 
   
-**[最新の情報に更新]**![[最新の情報に更新] アイコン](media/ITPro-EAC-RefreshIcon.png) アイコンをクリックしてデータを更新してから、メッセージをダブルクリックすると、それが目的の受信者に解放されていることが示されます。 
+**[最新の情報に更新]**![[最新の情報に更新] アイコン](media/ITPro-EAC-RefreshIcon.gif) アイコンをクリックしてデータを更新してから、メッセージをダブルクリックすると、それが目的の受信者に解放されていることが示されます。 
   
 ## <a name="for-more-information"></a>詳細情報
 <a name="sectionSection4"> </a>

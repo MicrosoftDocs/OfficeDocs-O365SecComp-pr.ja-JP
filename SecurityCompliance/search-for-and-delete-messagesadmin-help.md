@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: 管理者は Search-Mailbox コマンドレットを使って、ユーザーのメールボックスを検索し、メールボックスからメッセージを削除できます。
-ms.openlocfilehash: ed110c4a3e36a93970af99e9548aa293d94307fd
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: c5f727d7772e23cc8723eee6a45e51e3ac074648
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026584"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002826"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>メッセージを検索して削除する - 管理者向けヘルプ
   
@@ -26,8 +28,7 @@ ms.locfileid: "22026584"
   
 追加の予防手段として、 _TargetMailbox_ および  _TargetFolder_ パラメーターを使用して、最初にメッセージを別のメールボックスにコピーすることができます。これにより、削除されたメッセージに再度アクセスすることが必要になる場合のために、削除されたメッセージのコピーを保持できます。 
   
-## <a name="what-do-i-need-to-know-before-i-begin"></a>始める前に把握しておくべき情報
-<a name="sectionSection0"> </a>
+## <a name="before-you-begin"></a>はじめに
 
 - 予想所要時間 : 10 分。実際の時間は、メールボックスのサイズと検索クエリによって異なる場合があります。
     
@@ -35,9 +36,9 @@ ms.locfileid: "22026584"
     
 - ユーザーのメールボックスにあるメッセージを検索し、削除するためには、次の両方の管理役割を割り当てられる必要があります。
     
-  - **メールボックスの検索**このロールを使用すると、組織内の複数のメールボックス間でメッセージを検索できます。管理者は、既定でこの役割を割り当てられない。メールボックスを検索することができるように、自分にこのロールを割り当てる、検出の管理役割グループのメンバーとして自分自身を追加します。[探索管理役割グループにユーザーを追加する](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx)を参照してください。
+  - **メールボックスの検索**- このロールを使用すると、組織内の複数のメールボックス間でメッセージを検索できます。管理者は、既定でこの役割を割り当てられない。メールボックスを検索することができるように、自分にこのロールを割り当てる、検出の管理役割グループのメンバーとして自分自身を追加します。[探索管理役割グループにユーザーを追加する](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx)を参照してください。
     
-  - **メールボックスのインポート エクスポート**このロールを使用すると、ユーザーのメールボックスからメッセージを削除できます。既定では、このロールはない任意の役割グループに割り当てられます。ユーザーのメールボックスからメッセージを削除するのには、組織の管理役割グループにメールボックスのインポート エクスポートの役割を追加できます。詳細については、[役割グループの管理](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx)の「ロール グループにロールを追加する」セクションを参照してください。 
+  - **メールボックスのインポートのエクスポート**- このロールを使用すると、ユーザーのメールボックスからメッセージを削除します。既定では、このロールはない任意の役割グループに割り当てられます。ユーザーのメールボックスからメッセージを削除するのには、組織の管理役割グループにメールボックスのインポート エクスポートの役割を追加できます。詳細については、[役割グループの管理](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx)の「ロール グループにロールを追加する」セクションを参照してください。 
     
 - メッセージの削除を行うメールボックスで単一アイテムの回復が有効になっている場合は、最初にその機能を無効にする必要があります。詳細については、「[メールボックスの単一アイテムの回復を有効または無効にする](http://technet.microsoft.com/library/2e7f1bcd-8395-45ad-86ce-22868bd46af0.aspx)」を参照してください。
     
@@ -50,7 +51,6 @@ ms.locfileid: "22026584"
 - **検索用メールボックス**のコマンドレットを実行すると、ユーザーのアーカイブ メールボックスも検索されます。同様に、 _DeleteContent_スイッチを使用して**検索メールボックス**コマンドレットを使用するときにプライマリのアーカイブ メールボックス内のアイテムが削除されます。これを防止するには、 *DoNotIncludeArchive*スイッチを含めることができます。また、使用することは_DeleteContent_スイッチ Exchange でメッセージを削除するのにはオンライン自動拡張は、予期しないデータ損失が発生する可能性がありますので、有効に・ アーカイブがあるメールボックスをお勧めします。 
     
 ## <a name="search-messages-and-log-the-search-results"></a>メッセージを検索し、検索結果をログに記録する
-<a name="sectionSection1"> </a>
 
 この例は、April Stewart のメールボックスに対し、件名フィールドに「Your bank statement」という語句が含まれるメッセージを検索し、その結果を、管理者のメールボックスの SearchAndDeleteLog フォルダーに記録します。メッセージは、対象のメールボックスにコピーまたは対象のメールボックスから削除されません。
   
@@ -66,10 +66,8 @@ Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery attachment:troja
 
 構文およびパラメーターの詳細については、「[Search-Mailbox](http://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx)」を参照してください。
   
-[ページのトップへ](search-for-and-delete-messagesadmin-help.md#top)
-  
+ 
 ## <a name="search-and-delete-messages"></a>メッセージを検索して削除する
-<a name="sectionSection2"> </a>
 
 この例は、April Stewart のメールボックスに対し、件名フィールドに「Your bank statement」という語句が含まれるメッセージを検索し、検索結果を別のフォルダーにコピーせずに、そのメッセージをソース メールボックスから削除します。前述のように、ユーザーのメールボックスからメッセージを削除するためには、"Mailbox Import Export" 役割を割り当てられている必要があります。
   
@@ -93,12 +91,7 @@ Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery 'Subject:"Downlo
 ```
 
 構文およびパラメーターの詳細については、「[Search-Mailbox](http://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx)」を参照してください。
-  
-[ページのトップへ](search-for-and-delete-messagesadmin-help.md#top)
-  
+
 ## <a name="using-the--loglevel-full-parameter"></a>-LogLevel Full パラメーターを使用する
-<a name="sectionSection3"> </a>
 
 前のいくつかの例では、 _Search-Mailbox_ コマンドレットによって返された結果に関する詳細情報をログ記録するため、  `Full` 値を指定した  **LogLevel** パラメーターを使用しています。 このパラメーターを含めると、メール メッセージが作成され、  _TargetMailbox_ パラメーターによって指定されたメールボックスに送信されます。ログ ファイル (Search Results.csv という名前の CSV 形式のファイル) はこのメール メッセージに添付され、  _TargetFolder_ パラメーターによって指定されたフォルダーに配置されます。ログ ファイルには、 **Search-Mailbox** コマンドレットを実行すると、検索結果に含まれる各メッセージの行が含まれています。 
-  
-

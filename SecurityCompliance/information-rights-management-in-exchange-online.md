@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 description: 電子メールは、財務データ、法的契約、社外秘の製品情報、売上レポートや売上見込み、患者の医療情報、顧客や従業員の情報などの機密性の高い情報を交換するためによく使われています。その結果、メールボックスが機密性の高い大量の情報のリポジトリとして使用され、組織にとって情報漏洩が深刻な脅威となる可能性があります。
-ms.openlocfilehash: de3bc22075a4a0f5e81fddece4c7ff3a54b22382
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 5036fe359215de1c2674d7efabbb283c78418a19
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027234"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002572"
 ---
 # <a name="information-rights-management-in-exchange-online"></a>Exchange Online での Information Rights Management
 

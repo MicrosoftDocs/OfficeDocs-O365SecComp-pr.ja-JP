@@ -9,14 +9,16 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 description: このトピックでは、ホストされた検疫についてのよく寄せられる質問 (FAQ) とその回答を紹介します。
-ms.openlocfilehash: 6aebeadc5155cbdb8cbeeb73e29c8b8cb0d53767
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: cc8a05b575e17dbc71d4b9e214cb29a4cafe8b6b
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027084"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003196"
 ---
 # <a name="quarantine-faq"></a>検疫に関する FAQ
 
@@ -24,7 +26,7 @@ ms.locfileid: "22027084"
   
  **検査中のマルウェア検疫されたメッセージの管理 (質問)**
   
-セキュリティを使用する必要があります&amp;マルウェアが含まれているために、検疫に送信されたメッセージを表示したり操作するためにコンプライアンス センターです。詳細については、 [Office 365 で電子メール メッセージの検疫](https://support.office.com/en-US/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)を参照してください。
+セキュリティを使用する必要があります&amp;マルウェアが含まれているために、検疫に送信されたメッセージを表示したり操作するためにコンプライアンス センターです。詳細については、 [Office 365 で電子メール メッセージの検疫](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)を参照してください。
   
  **Q. スパム検疫済みメッセージを検疫に送るには、どのようにサービスを構成しますか?**
   

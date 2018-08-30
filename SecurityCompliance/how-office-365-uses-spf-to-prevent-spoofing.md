@@ -9,14 +9,16 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 description: '概要: この記事では、Office 365 において、Sender Policy Framework (SPF) TXT レコードを DNS で使用して、カスタム ドメインから送信されたメッセージを送信先のメール システムが信頼するようにする方法を説明します。これは、Office 365 から送信された送信メールに適用されます。Office 365 から Office 365 内の受信者に送信されたメッセージは、常に SPF チェックに合格します。'
-ms.openlocfilehash: aea7f740a67ce282424efc409d25f3f135546ada
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: b42c2528f7a6a272e11d2434cce1e1735649962a
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026464"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003286"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Office 365 において Sender Policy Framework (SPF) を使用して、スプーフィングを防止する方法
 
@@ -124,7 +126,7 @@ v=spf1 include:spf.protection.outlook.com -all
 
 この記事に記載されている構文の情報を使って、カスタム ドメイン用の SPF TXT レコードを形成します。ここに記載されていない他の構文オプションもありますが、これらが最もよく使うオプションです。レコードを形成した後は、ドメイン レジストラーでレコードを更新する必要があります。
   
-Office 365 用に含める必要のあるドメインの詳細については、「[SPF に必要な外部 DNS レコード](https://support.office.com/en-us/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US)」を参照してください。ドメイン レジストラーの SPF (TXT) レコードを更新するには、「[詳細な手順](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404)」を参照してください。レジストラーが一覧にない場合、それぞれに個別に連絡して、レコードを更新する方法を確認する必要があります。 
+Office 365 用に含める必要のあるドメインの詳細については、「[SPF に必要な外部 DNS レコード](https://support.office.com/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US)」を参照してください。ドメイン レジストラーの SPF (TXT) レコードを更新するには、「[詳細な手順](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404)」を参照してください。レジストラーが一覧にない場合、それぞれに個別に連絡して、レコードを更新する方法を確認する必要があります。 
   
 ### <a name="spf-txt-record-syntax-for-office-365"></a>Office 365 用の SPF TXT レコードの構文
 <a name="SPFSyntaxO365"> </a>
@@ -149,7 +151,7 @@ v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 include:spf.protection.outlook.com -all
     
 -  _IP address_ は、SPF TXT レコードに追加する IP アドレスです。通常、これは組織の送信メール サーバーの IP アドレスです。複数の送信メール サーバーを一覧表示できます。詳細については、「 [例: 複数のオンプレミスの送信メール サーバーと Office 365 のための SPF TXT レコード](how-office-365-uses-spf-to-prevent-spoofing.md#ExampleSPFMultipleMailServerO365)」をご覧ください。
     
--  _domain name_ は、正当な送信者として追加するドメインです。Office 365 用に含める必要のあるドメイン名の一覧については、「 [SPF に必要な外部 DNS レコード](https://support.office.com/en-us/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US)」を参照してください。
+-  _domain name_ は、正当な送信者として追加するドメインです。Office 365 用に含める必要のあるドメイン名の一覧については、「 [SPF に必要な外部 DNS レコード](https://support.office.com/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US)」を参照してください。
     
 - 通常、強制ルールは次のいずれかです。
     

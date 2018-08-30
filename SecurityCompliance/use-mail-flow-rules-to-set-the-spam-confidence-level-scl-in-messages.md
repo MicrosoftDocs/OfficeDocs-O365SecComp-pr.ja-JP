@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 description: トランスポート ルールを作成して、電子メール メッセージの Spam Confidence Level (SCL) を設定できます。SCL は、メッセージがスパムである可能性がどの程度かを測定します。スパムとは、迷惑な (通常は不要な) 電子メール メッセージです。メッセージに対するアクションは、メッセージの SCL 評価によって異なります。たとえば、同僚からのメッセージはスパムでないと信頼できるため、社内ユーザーからのメッセージの場合はスパム コンテンツ フィルターをバイパスできます。トランスポート ルールを使用して電子メール メッセージの SCL 値を設定すると、スパムの制御を強化できます。
-ms.openlocfilehash: ad89230dac9de668488b40090d70d2b697a86edd
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 7abd0d1881374b1f2a4bd32ee480445f7683d1b3
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026734"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002896"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>メール フロー ルールを使用して、メッセージの Spam Confidence Level (SCL) を設定する
 
@@ -34,7 +36,7 @@ ms.locfileid: "22026734"
 
 1. Exchange 管理センター (EAC) で、 **[メール フロー]** \> **[ルール]** を選択します。
     
-2. **[新規作成]**![[追加] アイコン](media/ITPro-EAC-AddIcon.png) を選択し、 **[新しいルールの作成]** を選択します。
+2. **[新規作成]**![[追加] アイコン](media/ITPro-EAC-AddIcon.gif) を選択し、 **[新しいルールの作成]** を選択します。
     
 3. ルールの名前を指定します。
     

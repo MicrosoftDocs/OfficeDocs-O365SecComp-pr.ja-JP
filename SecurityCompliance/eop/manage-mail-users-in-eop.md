@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: メール ユーザーの定義は、Exchange Online Protection (EOP) サービスを管理する上で重要な部分です。
-ms.openlocfilehash: e985adf5659b50cf567ea798a092f809d77ca470
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 46bc63232be3ece8b9e5c6fce6bbea18dcfdf2b4
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027394"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003046"
 ---
 # <a name="manage-mail-users-in-eop"></a>EOP でメール ユーザーを管理する
 
@@ -101,7 +101,7 @@ ms.locfileid: "22027394"
     
 ### <a name="to-edit-or-remove-a-mail-user-in-the-eac"></a>EAC でメール ユーザーを編集または削除するには
 
-- EAC で、 **[受信者]** \> **[連絡先]** に移動します。ユーザーの一覧で、表示または変更対象のユーザーをクリックしてから **[編集]**![編集アイコン](../media/ITPro-EAC-EditIcon.png) を選択し、必要に応じてユーザー設定を更新します。ユーザーの名前、エイリアス、連絡先情報を変更できます。また、組織内でのユーザーの役割に関する詳細情報を記録できます。ユーザーを削除するには、ユーザーを選択してから **[削除]**![[削除] アイコン](../media/ITPro-EAC-RemoveIcon.png) をクリックします。 
+- **受信者**には、EAC で\>**の連絡先**です。ユーザーの一覧でを表示または変更するユーザー] をクリックし、**編集**を選択し、![の編集アイコン](../media/ITPro-EAC-EditIcon.gif)必要に応じて、ユーザー設定を更新します。ユーザーの名前、エイリアス、または連絡先の情報を変更することができ、組織内ユーザーの役割に関する詳細情報を記録できます。ユーザーを選択し、し、[**削除**] を選択することができます![削除アイコン](../media/ITPro-EAC-RemoveIcon.gif)を削除します。 
     
 ## <a name="use-remote-windows-powershell-to-manage-mail-users"></a>リモートの Windows PowerShell を使用してメール ユーザーを管理するには
 

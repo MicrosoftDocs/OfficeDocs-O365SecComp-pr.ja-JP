@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 description: バルク メール業者によって、送信パターン、コンテンツ作成、およびリスト取得方法が異なります。中には、関連コンテンツを含む、必要なメッセージをサブスクライバーに送信する優良なバルク メール業者もいます。このようなメッセージが受信者の苦情につながることはあまりありません。他のバルク メール業者は、スパムによく似た未承諾のメッセージを送りつけ、多くの受信者の苦情を生んでいます。これらのバルク メール業者の種類を区別するために、バルク メール業者からのメッセージにバルク苦情レベル (BCL) 格付けが割り当てられます。バルク メール業者のレベルに応じた 1 ～ 9 の BCL 格付け範囲が苦情を生み出す程度を表します。BCL が 9 の送信者は受信者からの苦情が多い可能性があるのに対して、BCL が 3 の送信者は受信者からの苦情が少ない可能性があります。Microsoft では、内部ソースとサード パーティ ソースの両方を使用して、バルク メールを識別し、適切な BCL を決定します。この格付けは、すべてのメッセージの X-Microsoft-Antispam ヘッダーで公開されます。このメッセージ ヘッダーの詳細については、「 スパム対策メッセージ ヘッダー」を参照してください。
-ms.openlocfilehash: adf179ba4a309f2ed22275179013b576888960c6
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: c4100b0d289398d9333369071c9886309f2abcb4
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026264"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003056"
 ---
 # <a name="bulk-complaint-level-values"></a>バルク苦情レベルの値
 

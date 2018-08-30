@@ -9,14 +9,16 @@ ms.topic: troubleshooting
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 description: Office 365 にメール アドレスがある受信者にメールを送信しようとするときに、エラー メッセージが返される場合があります。エラー メッセージを受信しないようにするには、リストから除外のポータルを使って、Office 365 の受信拒否リストから自分自身を削除します。
-ms.openlocfilehash: 127b305cdb27cffadc7ad6a43a5d2db2440365ca
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 4964429f4d3aa1a585b1b543929f83c2cebfb9a4
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026234"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003256"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>リストから除外のポータルを使って、Office 365 の受信拒否リストから自分自身を削除する
 
@@ -28,7 +30,7 @@ Microsoft は、受信拒否リストを使って、スパム、スプーフィ�
   
 メール メッセージに対して、次のようなエラーが含まれた応答を受信する場合、お客様は受信拒否リストに追加されています。
   
-550 5.7.606-649 のアクセスが拒否されると、[ _IP アドレス_] の IP の送信を禁止されています。要求をこのリストからの削除を参照してくださいhttps://sender.office.com/し、指示に従います。詳細については、 [Office 365 の電子メールの配信不能レポート](http://go.microsoft.com/fwlink/?LinkID=526653)を参照してください。
+550 5.7.606-649 のアクセスが拒否されると、[_IP アドレス_] の IP の送信を禁止されています。要求をこのリストからの削除を参照してくださいhttps://sender.office.com/し、指示に従います。詳細については、 [Office 365 の電子メールの配信不能レポート](http://go.microsoft.com/fwlink/?LinkID=526653)を参照してください。
   
 ここで、 _IP address_ は、メール サーバーを稼働しているコンピューターの IP アドレスです。 
   

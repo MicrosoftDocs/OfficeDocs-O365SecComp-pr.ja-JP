@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
 description: Exchange Online Protection (EOP) と Exchange Online は、Domain Keys Identified Mail (DKIM) メッセージの受信検証をサポートしています。DKIM は、メッセージが記載されている配信元のドメインから送信され、第三者によって偽造されていないことを検証するための手段です。これにより、電子メール メッセージがその送信を担当する組織に対応付けられます。DKIM 検証は IPv6 通信経由で送信されるすべてのメッセージに自動的に使用されます (IPv6 サポートの詳細については、「IPv6 経由の匿名受信電子メール メッセージのサポート」を参照してください)。
-ms.openlocfilehash: 0fafc5a4754309f8f467a712f934fea3067b660d
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: d2fab69847732bb7ed54f943d2c7845e06084936
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026154"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002268"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>DKIM 署名付きメッセージの検証をサポートする
 

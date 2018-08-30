@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 description: ここでは、スパム対策保護に関するよく寄せられる質問と回答について説明します。 回答は、Microsoft Exchange Online と Exchange Online Protection (EOP) のお客様に当てはまります。
-ms.openlocfilehash: 21c399ed0ccf0f7a03c5396d8a594fccb0f133b8
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 77b3dc26d55f75e7476a3b52a550174a3876c56f
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026434"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003076"
 ---
 # <a name="anti-spam-protection-faq"></a>スパム対策保護 FAQ
 

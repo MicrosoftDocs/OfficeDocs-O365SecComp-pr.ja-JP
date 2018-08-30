@@ -1,7 +1,7 @@
 ---
 title: Office 365 で組織全体の信頼できる差出人またはブロックする差出人の一覧を作成する
 ms.author: stephow
-author: stephow-msft
+author: stephow-MSFT
 manager: laurawi
 ms.date: 8/8/2015
 ms.audience: ITPro
@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 調整でき、自分のメッセージを信頼するために、特定の送信者からのメールを受信したことを確認する場合、Exchange 管理センターでの迷惑メール フィルター ポリシーのリストを許可します。
-ms.openlocfilehash: 1086a4a710432eb412ae9f08f204beda52aa5390
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: a90679fc900ca5695904898af3627fc1900a8545
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027544"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003166"
 ---
 # <a name="create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365"></a>Office 365 で組織全体の信頼できる差出人またはブロックする差出人の一覧を作成する
   
@@ -30,7 +32,6 @@ ms.locfileid: "22027544"
 トランスポート ルールに関連する追加の管理タスクについては、「[Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)」を参照してください。
   
 ## <a name="use-the-eac-to-customize-a-block-or-allow-list-to-prevent-or-receive-email-from-a-domain-or-user"></a>EAC で禁止または許可リストをカスタマイズして、ドメインまたはユーザーからの電子メールを拒否または受信する
-<a name="sectionSection0"> </a>
 
 1. EAC の **[保護]** \> **[スパム フィルター]** に移動します。 
     
@@ -51,17 +52,14 @@ ms.locfileid: "22027544"
   
 4. [ **受信拒否一覧**] ページで、送信者やドメインなどのエントリを指定すると、それらのエントリからのメールが常にスパムとしてマークされます。サービスにより、これらのエントリに一致する電子メールに対して、構成された精度の高いスパム処理が適用されます。 
     
-  - 不要な送信者を [受信拒否送信者一覧] に追加します。[ **追加**] ![[追加] アイコン](media/ITPro-EAC-AddIcon.png) をクリックし、選択ダイアログ ボックスで、禁止する送信者のアドレスを追加します。複数のエントリを区切るには、セミコロンまたは改行を使用します。[ **OK**] をクリックして [ **受信拒否一覧**] ページに戻ります。 
+  - 不要な送信者を [受信拒否送信者一覧] に追加します。[ **追加**] ![[追加] アイコン](media/ITPro-EAC-AddIcon.gif) をクリックし、選択ダイアログ ボックスで、禁止する送信者のアドレスを追加します。複数のエントリを区切るには、セミコロンまたは改行を使用します。[ **OK**] をクリックして [ **受信拒否一覧**] ページに戻ります。 
     
-  - 不要なドメインを [受信拒否ドメイン一覧] に追加します。[ **追加**] ![[追加] アイコン](media/ITPro-EAC-AddIcon.png) をクリックし、選択ダイアログ ボックスで、禁止するドメインを追加します。複数のエントリを区切るには、セミコロンまたは改行を使用します。[ **OK**] をクリックして [ **受信拒否一覧**] ページに戻ります。 
+  - 不要なドメインを [受信拒否ドメイン一覧] に追加します。[ **追加**] ![[追加] アイコン](media/ITPro-EAC-AddIcon.gif) をクリックし、選択ダイアログ ボックスで、禁止するドメインを追加します。複数のエントリを区切るには、セミコロンまたは改行を使用します。[ **OK**] をクリックして [ **受信拒否一覧**] ページに戻ります。 
     
     > [!CAUTION]
     > トップレベル ドメインを禁止した場合、必要なメールが迷惑メールとしてマークされる可能性が高くなります。 
   
 ## <a name="what-do-you-need-to-know-before-you-begin-creating-a-transport-rule"></a>トランスポート ルールの作成を始める前に把握しておくべき情報
-<a name="sectionSection1"> </a>
-
-- 予想所要時間 : 15 分
     
 - スパム フィルタリングをバイパスするか、送信者またはドメインによって電子メールをスパムとしてマークするようなトランスポート ルールを作成する必要はありません。単に特定の送信者またはドメインを禁止または許可し、特別な条件を付加しない場合は、トランスポート ルールではなく、スパム ポリシーの Exchange Online Protection 禁止リストおよび許可リストを使用します。この内容の詳細については、「[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
     
@@ -70,16 +68,15 @@ ms.locfileid: "22027544"
 - このトピックの手順で使用可能なキーボード ショートカットについては、「**Exchange 管理センターのキーボード ショートカット**」を参照してください。
     
 > [!TIP]
-> 問題がある場合は、Exchange のフォーラムで質問してください。 次のフォーラムにアクセスしてください。[Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612)、[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)、 または [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)。 
+> 問題が発生しますか。Exchange フォーラムでヘルプを表示するとします。[Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612)、 [Exchange のオンライン](https://go.microsoft.com/fwlink/p/?linkId=267542)、または[Exchange のオンライン保護](https://go.microsoft.com/fwlink/p/?linkId=285351)フォーラムを参照してください。 
   
 ## <a name="use-the-eac-to-create-a-transport-rule-to-bypass-spam-filtering-for-a-domain-or-user"></a>EAC でトランスポート ルールを作成し、ドメインまたはユーザーのスパム フィルタリングをバイパスする
-<a name="sectionSection2"> </a>
 
-1. EAC で、 **[メール フロー]** \> **[ルール]** の順に移動します。 **[追加]**![[追加] アイコン](media/ITPro-EAC-AddIcon.png)、 **[スパム フィルターをバイパスする]** の順に選択します。
+1. EAC で**メールの流れ**に移動\>**ルール**です。**追加**」を選択![アイコンの追加](media/ITPro-EAC-AddIcon.gif)し、**スパムのフィルタ リングを使用しない**を選択します。
     
 2. ルールに名前を付けます。 **[このルールを適用します]** で、 **[送信者]** を選択してから、以下の条件のいずれかを選択します。 
     
-  - ドメインを指定する場合は、 **[ドメインが次の値である]** を選択します。 **[ドメインの指定]** ダイアログ ボックスに、安全であると指定する差出人のドメインを入力します (例: contoso.com)。 **[追加]**![[追加] アイコン](media/ITPro-EAC-AddIcon.png) をクリックして、そのドメインを語句の一覧に移動します。ドメインを更に追加する場合は、この手順を繰りかえします。終了したら、 **[OK]** をクリックします。 
+  - ドメインを指定する場合は、**ドメイン**を選択します。**ドメインの指定**] ダイアログ ボックスで、contoso.com などの安全であると指定し送信者のドメインを入力します。**追加**![アイコンの追加](media/ITPro-EAC-AddIcon.gif)句の一覧に移動します。追加のドメインの追加が完了したら、 **[ok]** をクリックする場合は、この手順を繰り返します。 
     
   - ユーザーを指定する場合は、 **[この人物である]** を選択します。 **[メンバーの選択]** ダイアログ ボックスで、リストからユーザーを追加するか、あるいはユーザーを入力し、 **[名前の確認]** をクリックします。ユーザーをさらに追加する場合は、この手順を繰り返します。終了したら、 **[OK]** をクリックします。 
     
@@ -94,15 +91,14 @@ ms.locfileid: "22027544"
 ルールを作成して適用すると、指定したドメインまたはユーザーはスパム フィルターをバイパスします。
   
 ## <a name="use-the-eac-to-create-a-transport-rule-that-blocks-messages-sent-from-a-domain-or-user"></a>ドメインまたはユーザーからの送信メッセージをブロックするトランスポート ルールを EAC で作成する
-<a name="sectionSection3"> </a>
 
-1. EAC で、 **[メール フロー]** \> **[ルール]** の順に移動します。 **[追加]**![[追加] アイコン](media/ITPro-EAC-AddIcon.png) を選択してから、 **[新しいルールの作成]** を選択します。
+1. EAC で**メールの流れ**に移動\>**ルール**です。**追加**![アイコンの追加](media/ITPro-EAC-AddIcon.gif)し、**新しいルールの作成**を選択します。
     
 2. ルールに名前を付けてから、 **[その他のオプション]** をクリックします。 
     
 3. **[このルールを適用します]** で、 **[送信者]** を選択してから、以下の条件のいずれかを選択します。 
     
-  - ドメインを指定する場合は、 **[ドメインが次の値である]** を選択します。[ドメインの指定] ダイアログ ボックスに、メッセージをブロックする差出し元の差出人ドメイン (contoso.com など) を入力します。 **[追加]**![[追加] アイコン](media/ITPro-EAC-AddIcon.png)をクリックして、そのドメインを語句の一覧に移動します。ドメインを更に追加する場合は、この手順を繰り返します。終了したら、 **[OK]** をクリックします。 
+  - ドメインを指定する場合は、**ドメイン**を選択します。ドメインを指定するダイアログ ボックスで、contoso.com などのメッセージをブロックする送信者のドメインを入力します。[**追加**] をクリックして![アイコンの追加](media/ITPro-EAC-AddIcon.gif)語句のリストに移動します。追加のドメインの追加が完了したら、 **[ok]** をクリックする場合は、この手順を繰り返します。 
     
   - ユーザーを指定する場合は、 **[この人物である]** を選択します。 **[メンバーの選択]** ダイアログ ボックスで、リストからユーザーを追加するか、あるいはユーザーを入力し、 **[名前の確認]** をクリックします。ユーザーをさらに追加する場合は、この手順を繰り返します。終了したら、 **[OK]** をクリックします。 
     
@@ -117,9 +113,8 @@ ms.locfileid: "22027544"
 ルールを作成して適用すると、指定したドメインまたはユーザーから送信されたすべてのメッセージがブロックされるようになります。
   
 ## <a name="see-also"></a>See also
-<a name="sectionSection3"> </a>
 
 [スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)
   
-[トランスポート ルールを使用して、一括メールのフィルタ リングを構成するのには](use-transport-rules-to-configure-bulk-email-filtering.md)
+[トランスポート ルールを使用してバルク メールのフィルター処理を構成する](use-transport-rules-to-configure-bulk-email-filtering.md)
 

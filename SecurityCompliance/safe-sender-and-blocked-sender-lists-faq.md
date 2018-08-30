@@ -9,14 +9,16 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 description: Exchange Online または Exchange Online Protection (EOP) の管理者は、サービスを通過する電子メール メッセージがスパムとしてマークされないようにできます。そのための方法の 1 つに、組織内のユーザーの中で、信頼できる差出人とブロックする差出人のリストを作成する、というものがあります。
-ms.openlocfilehash: fcb43f990750782788dc6f459dd5c7d296146a38
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: cbf886bdcc40044a31b285b6806aecbc95f0f97c
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22028084"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003106"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Exchange Online の差出人セーフ リストと受信拒否リスト
 
@@ -38,7 +40,7 @@ Exchange Online での信頼できる差出人とブロックする差出人の�
   
 KB 2590466 (「Outlook Web App for Exchange Server 2010 で「迷惑メールの検証エラー」を受信する」) で説明するエラーが発生することがあります。この問題を解決するには、「自分の連絡先からのメールを信頼する」チェック ボックスをオフにします。あるいは、既定の連絡先フォルダーに含まれている電子メール アドレスの数を、Exchange Online の制限である 1,024 以下に減らします。この制限は 「MaxSafeSenders」属性で設定されています。この属性と Set-Mailbox コマンドレットの詳細については、次のトピックを参照してください。
   
-[Set-Mailbox](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/Set-Mailbox?view=exchange-ps)
+[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox?view=exchange-ps)
   
 ## <a name="see-also"></a>See also
 

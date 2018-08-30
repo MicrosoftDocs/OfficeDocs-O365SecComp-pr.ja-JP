@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 description: このトピックでは、AD RMS サーバーを使用するように IRM を構成する方法を示します。
-ms.openlocfilehash: 198d7b86b39318361a174395bc460b4a4bd35847
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 82eed73797cfb4ade04bfeed9118d8466c5c5480
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027374"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002791"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>オンプレミスの AD RMS サーバーを使用するように IRM を構成する
   
@@ -163,6 +165,6 @@ TPD が正常にインポートされ、IRM が有効になったことを確認
   
 - IRM の機能をテストするには、 **Test-IRMConfiguration** コマンドレットを使用します。詳細については、「 [Test-IRMConfiguration](http://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx)」の「例 1」を参照してください。
     
-- Outlook Web App で新しいメッセージを作成し、拡張メニュー (****[その他のオプション] アイコン![) で ](media/ITPro-EAC-MoreOptionsIcon.png) オプションを選択して、そのメッセージを IRM で保護します。
+- Outlook Web App で新しいメッセージを作成し、拡張メニュー (****[その他のオプション] アイコン![) で ](media/ITPro-EAC-MoreOptionsIcon.gif) オプションを選択して、そのメッセージを IRM で保護します。
     
 

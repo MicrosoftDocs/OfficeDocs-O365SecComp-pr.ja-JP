@@ -9,14 +9,16 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 description: これらの記事は、外部の送信者が自身の評価や Office 365 のユーザーにメールを送信する能力を高めるために役立ちます。また、Office 365 ユーザーでない場合であっても、迷惑メールとフィッシング行為を報告する方法に関する情報も提供します。
-ms.openlocfilehash: 551faf356678e0adecab784b1a473cfaa7e7e088
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 21784ecfd9a4ffe1e70268de6cc1146167d566fe
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22028124"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002540"
 ---
 # <a name="sending-mail-to-office-365"></a>Office 365 へのメール送信
 
