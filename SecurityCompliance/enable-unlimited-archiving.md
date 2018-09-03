@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: '管理者: アーカイブを無制限のストレージとオンラインの Exchange メールボックスのユーザーを提供する、Office 365 で自動拡張を有効にする方法について説明します。組織全体または特定のユーザーのためだけにアーカイブを自動拡張を有効にできます。'
-ms.openlocfilehash: 823e4ed0049e7a28a6c97c4045fb75987f43db5f
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: ede3e75a021d750160268ccf06ac4fe1637d219a
+ms.sourcegitcommit: 81c2fd5cd940c51bc43ac7858c7bdfa207ce401a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782154"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "23809702"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Office 365 の管理者のヘルプで無制限のアーカイブを有効にします。
 
@@ -54,7 +54,7 @@ Office 365 で自動展開する Exchange のオンライン アーカイブ機�
 
 組織内のすべてのユーザーのアーカイブを自動拡張を有効にするのではなくできるだけ有効にする特定のユーザーに対して。一部のユーザーだけでは非常に大規模なアーカイブ ・ ストレージが必要である可能性がありますのででこれを行う場合があります。
   
-自動拡張の特定のユーザーのアーカイブを有効にすると、以下 2 つの構成も変更されます。
+自動拡張の特定のユーザーのアーカイブを有効にする上でユーザーのメールボックスを保持するか、Office 365 のリテンション ・ ポリシーに割り当てられて、次の 2 つの構成の変更が行われたとき。
   
 - (110 GB に 100 GB) から 10 GB では、ユーザーのアーカイブをプライマリ メールボックスの記憶域のクォータが増加します。アーカイブ警告クォータ (90 GB から 100 GB から 10 GB でも増加します。
     

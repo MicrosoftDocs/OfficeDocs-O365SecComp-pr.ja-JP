@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 管理者は、Office 365 の組織内のメールボックスに、ソーシャル メディアのプラットフォーム、インスタント メッセージング ・ プラットフォーム、およびドキュメントのコラボレーション プラットフォームからサード ・ パーティ製のデータをインポートできます。Facebook、Twitter やデータ ソースから Office 365 のデータをアーカイブできます。サード ・ パーティ製のデータを appply Office 365 のコンプライアンス機能 (法的保存要件、コンテンツの検索、保存ポリシーなど) ができます。
-ms.openlocfilehash: 3d51d9f5cb546b33fa636fab0ca319e4d24b1ad4
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: f5590d170986b8ae69458e69cedeb8a0ef137ef4
+ms.sourcegitcommit: 81c2fd5cd940c51bc43ac7858c7bdfa207ce401a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23230039"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "23809712"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>Office 365 でサードパーティのデータをアーカイブする
 
@@ -46,6 +46,8 @@ Office 365 では、管理者がインポートし、インスタント メッ�
 [手順 3: サード パーティのデータに対してユーザーのメールボックスを構成する](#step-3-configure-user-mailboxes-for-third-party-data)
 
 [手順 4: パートナーに情報を提供する](#step-4-provide-your-partner-with-information)
+
+[手順 5: サード ・ パーティ製データ コネクタを Azure Active Directory に登録します。](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
 
 ## <a name="how-the-third-party-data-import-process-works"></a>動作するサードパーティ製のデータがプロセスをインポートする方法 >
 
@@ -623,8 +625,28 @@ Microsoft Lync (2010、2013)
     ```
 
 - 資格情報 (Office 365 のユーザー ID とパスワード) 手順 2 で作成したサード ・ パーティ製データ メールボックス内の標識です。パートナーのコネクタにアクセスし、サード ・ パーティ製データ メールボックスにユーザーのメールボックスにアイテムをインポートするため、これらの資格情報が必要です。
-    
+ 
+## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>手順 5: サード ・ パーティ製データ コネクタを Azure Active Directory に登録します。
 
+認証を使用して新しい Exchange オンライン データをインポートするのには、Office 365 の組織に接続しようとするサード ・ パーティ製データ コネクタを認証するために開始 2018 年 9 月 30日 Office 365 で Azure サービスが開始されます。この変更の理由は、Azure のサービスに接続する前に説明したエンドポイントを使用する whitelisting サードパーティ製のコネクタを基盤とする現在の方法よりも高いセキュリティを提供する最新の認証をします。
+
+新しい近代的な認証方法を使用して Office 365 に接続するためのサード ・ パーティ製データ コネクタを有効にするには、組織の Office 365 の管理者する必要があります Azure Active Directory の信頼されたサービス アプリケーションとして、コネクタを登録するのには同意するものです。これは、は、Azure Active Directory 内の組織のデータにアクセスするためのコネクタを許可するアクセス許可の要求を受け入れることによって行われます。この依頼を承諾した後は、サード ・ パーティ製データ コネクタが Azure Active directory のエンタープライズ ・ アプリケーションとして追加され、サービス主体として表されます。承認プロセスの詳細は、[テナント管理者の承認](https://docs.microsoft.com/en-us/skype-sdk/trusted-application-api/docs/tenantadminconsent)を参照してください。
+
+アクセスし、コネクタを登録するのには依頼を承諾する手順を以下に示します。
+
+1. [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動し、Office 365 のグローバル管理者の資格情報を使用してサインインします。<br/><br/>次のダイアログ ボックスが表示されます。コネクタに割り当てられるアクセス許可を確認するのには、カレットを開くことができます。<br/><br/>![アクセス許可の要求] ダイアログが表示されます。](media/O365_ThirdPartyDataConnector_OptIn1.png)
+2. **受け付ける**] をクリックします。
+
+依頼を承諾すると、 [Azure ポータルのダッシュ ボード](https://portal.azure.com)が表示されます。**Azure Active Directory**をクリックして、組織のアプリケーションの一覧を表示するのには > **エンタープライズ ・ アプリケーション**です。**エンタープライズ ・ アプリケーション**のブレードでは、Office 365 のサード ・ パーティ製データ コネクタが表示されます。
+
+> [!IMPORTANT]
+> 後 2018 年 9 月 30日サード ・ パーティ製が不要になったにデータをインポート、組織内のメールボックス Azure Active Directory でサード ・ パーティ製データ コネクタを登録していない場合。ノートの既存のサード ・ パーティ製データ コネクタ (2018 年 9 月 30日前に作成されたもの) は、手順 5 の手順に従って、Azure Active Directory にも登録してください。
+
+### <a name="revoking-consent-for-a-third-party-data-connector"></a>サード ・ パーティ製データ コネクタの同意を取り消す
+
+Azure Active Directory のサード ・ パーティ製データ コネクタを登録するのにはアクセス許可の要求に同意の上、組織後、組織は、いつでもその承諾を取り消すことができます。ただし、コネクタの同意を取り消すと、サードパーティのデータ ソースからデータが不要になった Office 365 にインポートします。
+
+サード ・ パーティ製データ コネクタの同意を取り消すにはすることができますからアプリケーションを削除 (対応するサービス ・ プリンシパルを削除する) を Azure Active Directory の**エンタープライズ ・ アプリケーション**のブレードを使用して、Azure のポータルでは、または、[を使用して、削除 MsolServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/msonline/remove-msolserviceprincipal) Office 365 の PowerShell にします。Azure Active Directory PowerShell の[削除 AzureADServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadserviceprincipal)コマンドレットを使用することもできます。
   
 ## <a name="more-information"></a>詳細情報
 
