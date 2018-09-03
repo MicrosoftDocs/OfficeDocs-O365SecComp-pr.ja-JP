@@ -3,7 +3,6 @@ title: Office 365 の高度な脅威保護のためのレポートを表示し�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 08/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: 検索し、Office 365 高度な脅威保護、セキュリティでのレポートを使用する方法を説明&amp;コンプライアンス センターです。
-ms.openlocfilehash: bd02989711629cc67f7a7d5e061862a1146ff21b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 13b2a4c142a223a8a912c9017b6033b0b5a1548b
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531981"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782114"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 の高度な脅威保護のためのレポートを表示します。
 
@@ -26,7 +25,7 @@ ms.locfileid: "22531981"
   
 ![セキュリティ&amp;コンプライアンス センターのダッシュ ボードを使用して、脅威の高度な保護が作業しているを確認できます](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-ATP のレポートには、[脅威保護のステータス レポート](view-reports-for-atp.md#advancedthreats)は、[分析ツールのファイルの種類のレポート](view-reports-for-atp.md#atpfiletypes)、および[ATP メッセージ破棄レポート](view-reports-for-atp.md#atpmessagedisp)が含まれます。この資料では、ATP のレポートについて説明し、[表示するのにはその他のレポート](view-reports-for-atp.md#addl)へのリンクが含まれています。
+ATP のレポートには、脅威の保護ステータス レポート、分析ツールのファイルの種類のレポート、および ATP メッセージ破棄レポートが含まれます。この資料では、ATP のレポートについて説明し、表示するのにはその他のレポートへのリンクが含まれています。
   
 ## <a name="threat-protection-status-report"></a>脅威保護のステータス レポート
 

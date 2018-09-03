@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Exchange Online メールボックスおよび SharePoint と OneDrive を検索するには Office 365 のセキュリティ コンテンツの検索ツールを使用してビジネス サイトの電子メールとファイルのプロパティの詳細については&amp;コンプライアンス センターです。  '
-ms.openlocfilehash: c043b6667e6847ff944b05e6bbe91df8ed2f600c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8501743d38425cb980088d65e1dd6bd0bd45cc08
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532307"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782104"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>コンテンツ検索のキーワード クエリと検索条件
 
@@ -134,7 +134,7 @@ Exchange のオンライン ドキュメントを SharePoint に保存されて�
 |**演算子**|**用途**|**説明**|
 |:-----|:-----|:-----|
 |AND  <br/> |keyword1 AND keyword2  <br/> |指定されたキーワードがすべて含まれている項目を取得または`property:value`式です。たとえば、 `from:"Ann Beebe" AND subject:northwind` 、件名の行に word の northwind が含まれている Ann Beebe によって送信されたすべてのメッセージを返します。<sup>2</sup> <br/> |
-|+  <br/> |keyword1 [概要] タブ+ keyword2。+ keyword3  <br/> |*いずれか*を含むアイテムを返します。`keyword2`または`keyword3`*と*も含まれている`keyword1`。したがって、次の使用例は、クエリと同じ`(keyword2 OR keyword3) AND keyword1`。  <br/> 注意してクエリ`keyword1 + keyword2`(の後ろのスペースに、**+** シンボル) を使用することとは異なり、* * と * * 演算子です。このクエリと同じことに`"keyword1 + keyword2"`、正確なフェーズでの返品と`"keyword1 + keyword2"`。<br/> |
+|+  <br/> |keyword1 + keyword2 keyword3  <br/> |*いずれか*を含むアイテムを返します。`keyword2`または`keyword3`*と*も含まれている`keyword1`。したがって、次の使用例は、クエリと同じ`(keyword2 OR keyword3) AND keyword1`。  <br/> 注意してクエリ`keyword1 + keyword2`(の後ろのスペースに、**+** シンボル) を使用することとは異なり、* * と * * 演算子です。このクエリと同じことに`"keyword1 + keyword2"`、正確なフェーズでの返品と`"keyword1 + keyword2"`。<br/> |
 |OR  <br/> |keyword1 OR keyword2  <br/> |指定されたキーワードのいずれかを含むアイテムを取得または`property:value`式です。<sup>2</sup> <br/> |
 |NOT  <br/> |keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> しない種類: im  <br/> |キーワードで指定された項目を除外する、または`property:value`式です。2 番目の例は、Ann Beebe によって送信されたメッセージを除外します。3 番目の例では、Skype の会話の履歴メールボックス フォルダーに保存されているビジネス会話など、インスタント メッセージングの会話を除外します。<sup>2</sup> <br/> |
 |-  <br/> |keyword1 -keyword2  <br/> |**NOT**演算子と同じです。このクエリが含まれる項目が返され、`keyword1`を含むアイテムを除外すると、 `keyword2`。<br/> |
@@ -152,7 +152,7 @@ Exchange のオンライン ドキュメントを SharePoint に保存されて�
 |(  )  <br/> | (fair OR free) AND (from:contoso.com)  <br/> (IPO OR initial) AND (stock OR shares)  <br/> (quarterly financials)  <br/> |括弧は、ブール演算子の文字列、 `property:value` アイテム、およびキーワードをグループにまとめます。たとえば、  `(quarterly financials)` は quarterly および financials の語を含むアイテムを返します。  <br/> |
    
 > [!NOTE]
-> <sup>1</sup>??????Use の日付または数値の値を持つプロパティは、この演算子です。> <sup>2</sup>??????Boolean の検索演算子は、大文字と小文字である必要がありますなど**と**します。など**と**、小文字、演算子を使用する場合は、検索クエリのキーワードとして扱われます。 
+> <sup>1</sup>は、日付または数値の値を持つプロパティに対して、この演算子を使用します。<br/> <sup>2</sup>ブール検索演算子は、大文字と小文字である必要があります。など**と**します。など**と**、小文字、演算子を使用する場合は、検索クエリのキーワードとして扱われます。 
   
 ## <a name="search-conditions"></a>検索条件
 
