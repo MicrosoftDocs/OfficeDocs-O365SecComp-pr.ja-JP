@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: 管理者は、Office 365 の組織内のメールボックスに、ソーシャル メディアのプラットフォーム、インスタント メッセージング ・ プラットフォーム、およびドキュメントのコラボレーション プラットフォームからサード ・ パーティ製のデータをインポートできます。Facebook、Twitter やデータ ソースから Office 365 のデータをアーカイブできます。サード ・ パーティ製のデータを appply Office 365 のコンプライアンス機能 (法的保存要件、コンテンツの検索、保存ポリシーなど) ができます。
-ms.openlocfilehash: f5590d170986b8ae69458e69cedeb8a0ef137ef4
-ms.sourcegitcommit: 81c2fd5cd940c51bc43ac7858c7bdfa207ce401a
+ms.openlocfilehash: 7af88338333e90bd208d693fbfd5bb691d44b538
+ms.sourcegitcommit: 4c6c937ec51e8b754332e4c1c8d286e73e197e2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "23809712"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "23827091"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>Office 365 でサードパーティのデータをアーカイブする
 
@@ -637,7 +637,7 @@ Microsoft Lync (2010、2013)
 1. [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動し、Office 365 のグローバル管理者の資格情報を使用してサインインします。<br/><br/>次のダイアログ ボックスが表示されます。コネクタに割り当てられるアクセス許可を確認するのには、カレットを開くことができます。<br/><br/>![アクセス許可の要求] ダイアログが表示されます。](media/O365_ThirdPartyDataConnector_OptIn1.png)
 2. **受け付ける**] をクリックします。
 
-依頼を承諾すると、 [Azure ポータルのダッシュ ボード](https://portal.azure.com)が表示されます。**Azure Active Directory**をクリックして、組織のアプリケーションの一覧を表示するのには > **エンタープライズ ・ アプリケーション**です。**エンタープライズ ・ アプリケーション**のブレードでは、Office 365 のサード ・ パーティ製データ コネクタが表示されます。
+依頼を承諾すると、 [Azure ポータル](https://portal.azure.com)が表示されます。**Azure Active Directory**をクリックして、組織のアプリケーションの一覧を表示するのには > **エンタープライズ ・ アプリケーション**です。**エンタープライズ ・ アプリケーション**のブレードでは、Office 365 のサード ・ パーティ製データ コネクタが表示されます。
 
 > [!IMPORTANT]
 > 後 2018 年 9 月 30日サード ・ パーティ製が不要になったにデータをインポート、組織内のメールボックス Azure Active Directory でサード ・ パーティ製データ コネクタを登録していない場合。ノートの既存のサード ・ パーティ製データ コネクタ (2018 年 9 月 30日前に作成されたもの) は、手順 5 の手順に従って、Azure Active Directory にも登録してください。
