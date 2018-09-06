@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Word、Excel、PowerPoint、および Visio のファイルおよび電子メール メッセージ内の悪意のあるリンクから組織を保護するために、安全なリンクのポリシーを設定します。
-ms.openlocfilehash: a0c88a81503555417c16501ec9283cf2316c6d09
-ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
+ms.openlocfilehash: 01ba394053e2da137d5adafa4799040507ab4270
+ms.sourcegitcommit: f8cc2c7bad31d04c99a8eca5e0f8fad72494087a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839977"
+ms.locfileid: "23848087"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Office 365 の ATP の安全なリンクのポリシーを設定します
 
@@ -49,9 +49,11 @@ ms.locfileid: "23839977"
 
 - 組織が[Office 365 の高度な脅威保護](office-365-atp.md)を持っていることを確認します。
     
-- 必要があるかどうかを確認[Office 365 のセキュリティに割り当てられたアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。
+- ATP のポリシーを編集または定義するために必要な権限があることを確認します。参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。
     
 - [ATP の安全なリンク ポリシーのオプションについて理解します。](#learn-about-atp-safe-links-policy-options)(この記事で)。 
+
+- [現代の認証](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)を使用する Office のクライアントが構成されていることを確認します。
     
 - 最大 30 分間のすべての Office 365 のデータ センターに展開するのには、新規または更新されたポリシーを使用できます。
     
