@@ -3,7 +3,7 @@ title: ユーザー、ドメイン、または IP アドレスをスパム電子
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/20/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: 'スパムとして分類されている Office 365 からメール メッセージをユーザーが送り続ける場合、メッセージを送信しないようブロックされます。 '
-ms.openlocfilehash: 87b7083fe1345a15ea582f12a5b0d417bbe6b568
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 3f3130bec3cde4cdc1343a0140a9013deacfc519
+ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002603"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839111"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>ユーザー、ドメイン、または IP アドレスをスパム電子メール送信後のブロック一覧から削除する
 
@@ -35,27 +35,19 @@ ms.locfileid: "23002603"
   
 ## <a name="unblock-a-blocked-office-365-email-account"></a>ブロックされている Office 365 メール アカウントのブロックを解除する
 
-Exchange 管理センター (EAC) では、このタスクを完了するとします。EAC の詳細については、 [Exchange 管理センターでは、Exchange オンライン保護](exchange-admin-center-in-exchange-online-protection-eop.md)を確認します。 
-  
-> [!NOTE]
-> Exchange Online の EAC 以外では、アクション センターは表示されません。 
-  
-1. EAC で**の保護**に移動\>**アクション センター**です。
+Office 365 のセキュリティとコンプライアンス センター (SCC) では、このタスクを完了するとします。SCC の詳細については、 [Office 365 のセキュリティとコンプライアンスの中心に移動](go-to-the-securitycompliance-center.md)をします。
+
+1. 職場または学校を Office 365 のセキュリティやコンプライアンス センターにサインインし、**脅威の管理**を展開し、左側のボックスの一覧で、**レビュー**をクリックし選択**制限付きの Office 365 グローバル管理者特権を持つアカウントを使用してください。ユーザー**。
     
-    ![Exchange 管理センターのアクション センターに移動します。](media/9bbf0844-7b34-4a86-a2b7-8c7e9c8519a3.png)
-  
-2. **[検索]** アイコンを選択し、ブロックされているユーザーの SMTP アドレスを入力します。 
-    
-    ![アクション センターでブロックされているユーザーを検索する](media/f931b5a0-7115-4d95-9f6f-b403436031ba.png)
-  
-3. 説明ウィンドウの **[アカウントのブロック解除]** をクリックします。 
-    
-    ![アクション センターでユーザーのブロックを解除する](media/c5d5b1b9-8416-45aa-9631-881e94d1d056.png)
-  
-4. **[はい]** をクリックして変更を確定します。 
+    > [!TIP]
+    > セキュリティで**制限されたユーザー**のページに直接移動するのには&amp;コンプライアンス センターでは、この URL を使用します >。[https://protection.office.com/?hash=/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
+
+2. このページから別の組織にメールを送信するブロックされているユーザーの一覧が含まれます。 制限を解除し、たい] をクリックし、**ブロックを解除する**ので、ユーザーを検索します。
+
+3. **[はい]** をクリックして変更を確定します。 
     
 > [!NOTE]
-> テナント管理者がアカウントのブロックを解除できる回数には制限があります。ユーザーに関して制限を超えると、エラー メッセージが表示されます。ユーザーのブロックを解除するには、サポートにお問い合わせください。 
+> テナント管理者がアカウントのブロックを解除できる回数に制限があります。ユーザーの制限を超えた場合は、エラー メッセージが表示されます。ユーザーのブロックを解除するためのサポートに連絡する必要があります。 
   
 ## <a name="third-party-block-lists"></a>サード パーティのブロック リスト
 

@@ -3,7 +3,7 @@ title: Office 365 の管理者として検疫されたメッセージやファ�
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 5/19/2018
+ms.date: 09/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: '管理者として表示、離すと、して Office 365 の正偽の検疫済みメッセージを報告できます。Office 365 は、メッセージをフィルター処理し、いくつかの理由を検査するそれらを送信するようポリシーを設定することができます: 迷惑メール、一括、フィッシング、マルウェアと、認識されたため、またはメール フロー ルールに一致するためです。 '
-ms.openlocfilehash: f30604da185b3455d89ae7c1206bda2149ef7778
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: be6384d8937e25aec55d82d8212c49d25b64b9a1
+ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532200"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839101"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Office 365 の管理者として検疫されたメッセージやファイルを管理します。
 
@@ -34,7 +34,7 @@ ms.locfileid: "22532200"
   
 ## <a name="view-your-organizations-quarantined-messages"></a>組織の検疫済みのメッセージを表示します。
 
-1. グローバル管理者権限を持つ、Office 365organization で、職場、学校のアカウントを使用すると、Office 365[のセキュリティとコンプライアンスの中央に移動](go-to-the-securitycompliance-center.md)してサインインします。
+1. グローバル管理者権限を持つ、Office 365 の組織で、職場、学校のアカウントを使用するは、Office 365 と[、セキュリティとコンプライアンス センター](go-to-the-securitycompliance-center.md)に署名します。
     
 2. 左側のボックスの一覧で**脅威の管理**] を展開、**レビュー**を選択し、**検査**します。
     

@@ -3,7 +3,7 @@ title: ダッシュ ボードのセキュリティの概要
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/1/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 description: Office 365 の脅威保護の状態を確認し、表示、およびセキュリティの警告の動作には、新しいセキュリティ ダッシュ ボードを使用します。
-ms.openlocfilehash: e6b8aaf23f4af707c1af3ad9b479a9ce119f4752
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 9f301bb819ec9c5c072cacee9060ff0e9672f039
+ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531616"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839081"
 ---
 # <a name="security-dashboard-overview"></a>ダッシュ ボードのセキュリティの概要
 
@@ -32,7 +32,7 @@ ms.locfileid: "22531616"
   
 - [脅威保護の状態](#threat-protection-status)
     
-- [洞察力](#insights)
+- [インサイト](#insights)
     
 - [脅威インテリジェンス](#threat-intelligence)
     
@@ -51,7 +51,7 @@ ms.locfileid: "22531616"
   
 さらに、マルウェアのレポートは、組織を対象とする悪意のあるコンテンツの最新の動向を追跡するために使用できます。レポートの詳細を表示するタイルをクリックします。
   
-## <a name="insights"></a>洞察力
+## <a name="insights"></a>インサイト
 
 洞察を確認する必要がある重要な問題を表面だけでなく、考慮すべき推奨事項と操作も含まれます。たとえば、一部のユーザーは、迷惑メールのオプションを無効にしているためにフィッシング詐欺の電子メール メッセージが配信されているを参照してください可能性があります。見識のしくみに関する詳細についてを参照してください[のレポートと Office 365 のセキュリティ情報&amp;コンプライアンス センター](reports-and-insights-in-security-and-compliance.md)です。
   
