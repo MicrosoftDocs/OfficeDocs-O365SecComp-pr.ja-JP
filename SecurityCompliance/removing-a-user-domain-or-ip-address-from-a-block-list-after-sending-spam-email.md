@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: 'スパムとして分類されている Office 365 からメール メッセージをユーザーが送り続ける場合、メッセージを送信しないようブロックされます。 '
-ms.openlocfilehash: 3f3130bec3cde4cdc1343a0140a9013deacfc519
-ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
+ms.openlocfilehash: ff5bb010f45b0c89e08239f0e37885bd7ae5c7cd
+ms.sourcegitcommit: 234a22c61859133ed5e7988a9551a569781518a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839111"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23875789"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>ユーザー、ドメイン、または IP アドレスをスパム電子メール送信後のブロック一覧から削除する
 
@@ -42,7 +42,7 @@ Office 365 のセキュリティとコンプライアンス センター (SCC) �
     > [!TIP]
     > セキュリティで**制限されたユーザー**のページに直接移動するのには&amp;コンプライアンス センターでは、この URL を使用します >。[https://protection.office.com/?hash=/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
 
-2. このページから別の組織にメールを送信するブロックされているユーザーの一覧が含まれます。 制限を解除し、たい] をクリックし、**ブロックを解除する**ので、ユーザーを検索します。
+2. このページから別の組織にメールを送信するブロックされているユーザーの一覧が含まれます。 上の制限を削除し、たいをクリックし、**ブロックを解除する**にユーザーを検索するには。
 
 3. **[はい]** をクリックして変更を確定します。 
     

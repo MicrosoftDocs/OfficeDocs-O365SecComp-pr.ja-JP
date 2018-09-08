@@ -3,7 +3,6 @@ title: Exchange Online エンドユーザースパム通知の構成
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 description: エンド ユーザー向けスパム通知は、既定の会社全体のコンテンツ フィルター ポリシーに対して、またはドメインに適用されるカスタム コンテンツ フィルター ポリシーに対して構成できます。
-ms.openlocfilehash: da370497f78d7f253276c908061a9a80e2f74938
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: e29cc850b7f91ed4ec963a8e52e40a0044fa7f6c
+ms.sourcegitcommit: 234a22c61859133ed5e7988a9551a569781518a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002749"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23875809"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Exchange Online エンドユーザースパム通知の構成
 
@@ -29,7 +28,19 @@ ms.locfileid: "23002749"
   
 エンド ユーザー向けスパム通知は、構成した期間 (1 ～ 15 日の間で指定可能) に、エンド ユーザーが受信したすべてのスパム検疫済みメッセージのリストを含みます。通知メッセージを記述する言語を構成することもできます。
   
-通知メッセージを受け取ると、エンド ・ ユーザーが自分の受信トレイにスパム メールを移動する] をクリックしてまたは、迷惑メールを電子メールで送信されない迷惑メールとしてである場合、レポートは、マイクロソフトのスパム分析チームに送信されます。 
+通知メッセージを受信した後は、エンド ・ ユーザーは、次のオプションから選択できます。
+
+**プレビュー**メッセージのコンテンツや操作を実行する前にヘッダーをプレビューしたい場合。
+
+**ダウンロード**確認メッセージと添付ファイル (存在する場合) アクションを実行する前にデバイスにしたい場合、メッセージをします。
+
+**リリース**スパムとするメッセージがない場合は、自分のメールボックスにメッセージを送信するのには Office 365 をします。
+
+**リリースと許可する送信者**とスパム メッセージがない場合は、将来の e メールの受信者リスト、差出人セーフ リストに送信者を追加するのには Office 365 をします。[差出人セーフ リスト] ボックスの一覧をオーバーライドする他の組織全体の許可/ブロック構成、管理者であることに留意してください。
+
+**リリース & レポート**、スパムとするメッセージがない場合は、自分のメールボックスにメッセージを送信し、分析のためのマイクロソフトに報告します。
+
+**ブロック**する場合は、受信拒否リストに送信者を追加するのには Office 365 です。
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
