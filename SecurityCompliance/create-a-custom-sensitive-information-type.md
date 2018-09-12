@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
 description: 組織に固有の形式を使用する従業員 ID など、さまざまな種類の機密情報を特定して保護する必要がある場合は、カスタムの機密情報の種類を作成することができます。機密情報の種類は、ルール パッケージと呼ばれる XML ファイルで定義されます。このトピックでは、独自のカスタムの機密情報の種類を定義する XML ファイルを作成する方法を示します。正規表現の作成方法を理解している必要があります。
-ms.openlocfilehash: 65e55832a88ec7b31dba55930cc90960aa33a20d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 56683dd8ceac286f79084d2c2f19f48f5849a02f
+ms.sourcegitcommit: 4be502d1fc6cbaef4c72d599758d51efe3a173c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531700"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23849430"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>カスタムの機密情報の種類を作成する
 
@@ -30,6 +30,12 @@ Office 365 のデータ損失防止 (DLP) には、[機密情報の種類](what-
 このトピックでは、独自のカスタムの機密情報の種類を定義した XML ファイルを作成する方法を示します。正規表現の作成方法を理解している必要があります。たとえば、このトピックでは、従業員 ID を特定するカスタムの機密情報の種類を作成します。この XML 例を基に、独自の XML ファイルを作成できます。
   
 整形式の XML ファイルを作成したら、PowerShell を使用して Office 365 にアップロードできます。これで DLP ポリシーでカスタムの機密情報の種類を使用する準備ができたので、意図したとおりに機密情報が検出されることをテストします。
+
+## <a name="important-disclaimer"></a>重要な免責事項
+
+顧客の環境やコンテンツ マッチの要件はさまざまに異なるため、Microsoft サポートは、カスタム分類や正規表現パターン (RegEx) を定義するなど、カスタムのコンテンツ マッチング定義を提供することの支援は行えません。カスタムのコンテンツ マッチングの開発、テスト、デバッグについては、Office 365 のお客様は、内部の IT リソースを利用するか、Microsoft コンサルティング サービス (MCS) などの外部のコンサルティング リソースを利用する必要があります。サポート エンジニアは、機能の制限付きサポートを提供することはできますが、カスタムのコンテンツ マッチング開発が顧客の要件や義務を満たすことの保証はできません。提供できるサポートの種類の例として、テスト目的の正規表現パターンのサンプルが挙げられます。また、サポートは、特定の単一コンテンツにおいて期待通りに動作していない既存の RegEx パターンのトラブルシューティングを支援できます。
+
+ テキストの処理に使用される .NET RegEx エンジンの詳細については、「[.NET の正規表現](https://docs.microsoft.com/ja-JP/dotnet/standard/base-types/regular-expressions)」のドキュメントを参照してください。
     
 ## <a name="sample-xml-of-a-rule-package"></a>ルール パッケージのサンプル XML
 

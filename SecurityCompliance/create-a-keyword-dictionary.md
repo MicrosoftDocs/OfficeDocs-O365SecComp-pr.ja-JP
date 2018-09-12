@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: c8a95d1b-c3b6-4613-98ab-0331d1872cf3
 description: 機密情報を識別する際、特に汎用コンテンツ (医療関連のコミュニケーションなど) や不適切または露骨な言語を識別するのに、キーワードの検索が必要になることがあります。機密情報の種類でもキーワード リストを作成できますが、キーワード リストにはサイズ制限があり、作成や編集のためには XML を変更する必要があります。キーワード ディクショナリでは、よりシンプルかつより大規模にキーワードを管理することができます。ディクショナリあたり最大 100,000 語をサポートします。
-ms.openlocfilehash: 3a6557e14a3dd8bdc9e803915ea460c1fbda704b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 5dd0459c801b433b8f0a477aeb2ab4192236bd28
+ms.sourcegitcommit: 4be502d1fc6cbaef4c72d599758d51efe3a173c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013991"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23849400"
 ---
 # <a name="create-a-keyword-dictionary"></a>キーワード ディクショナリを作成する
 
@@ -29,7 +29,7 @@ Office 365 のデータ損失防止 (DLP) では、ユーザーの機密情報�
 
 ディクショナリのキーワードは、最も一般的なものではファイル (.csv や .txt リストなど) から、コマンドレットに直接入力したリストから、または既存のディクショナリからなど、さまざまなソースからのものがあります。キーワード ディクショナリを作成するときは、同じ基本手順を実行します。
   
-1. **セキュリティ &amp; コンプライアンス センター PowerShell に接続する** - [次のトピック](https://go.microsoft.com/fwlink/p/?linkid=799771)を参照してください。
+1. **セキュリティ &amp; コンプライアンス センター PowerShell に接続する** - [次のトピック](https://docs.microsoft.com/ja-JP/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)を参照してください。
     
 2. **対象となるソースからキーワードを定義する、または読み込む** - キーワード ディクショナリを作成するコマンドレットは、コンマ区切りのキーワード リストを指定できるので、この手順はキーワードがどこから来ているかによって多少異なります。 
     
@@ -39,7 +39,7 @@ Office 365 のデータ損失防止 (DLP) では、ユーザーの機密情報�
     
 ## <a name="create-a-keyword-dictionary-from-a-file"></a>ファイルからキーワード ディクショナリを作成する
 
-大きなディクショナリを作成する必要がある場合はたいてい、ファイルからのキーワードや、その他のソースからエクスポートしたリストを使うことになります。その場合、外部電子メールでスクリーニングを行うための不適切な言語のリストを含むキーワード ディクショナリを作成します。まず[セキュリティ &amp; コンプライアンス センター PowerShell に接続する](https://go.microsoft.com/fwlink/p/?linkid=799771)必要があります。
+大きなディクショナリを作成する必要がある場合はたいてい、ファイルからのキーワードや、その他のソースからエクスポートしたリストを使うことになります。その場合、外部電子メールでスクリーニングを行うための不適切な言葉のリストを含むキーワード ディクショナリを作成します。まず[Office 365 セキュリティ/ コンプライアンス センターの PowerShell に接続する](https://docs.microsoft.com/ja-JP/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)必要があります。
   
 1. キーワードをテキスト ファイルにコピーし、各キーワードが別個の行にあるかどうかを確認します。
     
