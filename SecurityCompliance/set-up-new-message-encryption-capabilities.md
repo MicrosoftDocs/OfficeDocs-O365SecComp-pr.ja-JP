@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 description: Azure の情報保護、組織の上に組み込まれている機能が使用できる新しい Office 365 メッセージ暗号化では、電子メール、組織内外のユーザーとの通信が保護されています。ホームの新機能は、他の Office 365 の組織、Outlook.com、Gmail、その他の電子メール サービスと動作します。
-ms.openlocfilehash: e59368f5854c86c04f4f0bdf376537d3f6b02d33
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c24b2f9b612b863217df8afd951424d1a89295c9
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532728"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955419"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>新しい Office 365 Message Encryption 機能を設定する
 
@@ -25,7 +25,7 @@ Azure の情報保護の保護機能を活用するには、新しい Office 365
   
 ## <a name="get-started-with-ome-by-activating-azure-rights-management-part-of-azure-information-protection"></a>Azure の著作権管理、情報保護の Azure の一部をアクティブ化してホームを開始します。
 
-ホームの新機能を開始する簡単です。2018 年 2 月時点で Office 365 では、当社のデータ センター内で対象となる組織の新しいホーム機能が自動的に有効にします。組織は、新しい Office 365 テナント組織は、適切なサブスクリプションを持つ場合に対象となります。* * 場合は * * * * Azure アクセス権管理 (Azure RMS)、Azure の情報の保護の一部を有効にしているしするために自動的に Office 365 のメッセージの暗号化を有効にします。* * ホームを有効にするのには何の操作を行いますする必要はありません。Azure アクセス権の管理を有効にするのには、 [Azure アクセス権の管理をアクティブにする](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service)を参照してください。サブスクリプションについては、どのようなサブスクリプションが必要新しいホームの capabilities? を使用する" [Office 365 のメッセージの暗号化の FAQ](ome-faq.md)を参照してください。Azure の情報保護へのサブスクリプションの購入方法の詳細については、 [Azure の情報の保護](https://azure.microsoft.com/services/information-protection/)を参照してください。
+ホームの新機能を開始する簡単です。2018 年 2 月時点で Office 365 では、当社のデータ センター内で対象となる組織の新しいホーム機能が自動的に有効にします。組織は、新しい Office 365 テナント組織は、適切なサブスクリプションを持つ場合に対象となります。**Azure アクセス権管理 (Azure RMS)、Azure の情報の保護の一部を有効にした場合に自動的に Office 365 のメッセージの暗号化を有効にします**。ホームを有効にするのには何も行う必要はありません。Azure アクセス権の管理を有効にするのには、 [Azure アクセス権の管理をアクティブにする](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service)を参照してください。サブスクリプションについては、どのようなサブスクリプションが必要新しいホームの capabilities? を使用する" [Office 365 のメッセージの暗号化の FAQ](ome-faq.md)を参照してください。Azure の情報保護へのサブスクリプションの購入方法の詳細については、 [Azure の情報の保護](https://azure.microsoft.com/services/information-protection/)を参照してください。
   
 使用する場合 Exchange Online では、Active Directory の権限管理サービス (AD RMS)、これらの新機能を直ちに有効にできません。代わりに、Azure の情報保護をまず AD RMS から移行する必要があります。移行が終了したら、次の手順を正常に完了できます。
   
@@ -62,22 +62,18 @@ Azure の情報保護の保護機能を活用するには、新しい Office 365
     
 2. 次の構文を使用してテスト IRMConfiguration コマンドレットを実行します。
     
-  ```
-  Test-IRMConfiguration [-Sender <email address >]
-  ```
+    ```Test-IRMConfiguration [-Sender <email address >]```  
 
-    次に例を示します。
+   次に例を示します。
     
-  ```
-  Test-IRMConfiguration -Sender securityadmin@contoso.com
-  ```
+    ```Test-IRMConfiguration -Sender securityadmin@contoso.com```
 
     電子メール アドレスの Office 365 の組織内のユーザーの電子メール アドレスです。オプションであり、提供するときに、送信者の電子メール アドレスは追加チェックを実行するシステムを強制します。
     
     結果は、次のようになります。
     
-  ```
-  Results : Acquiring RMS Templates ...
+    ```
+    Results : Acquiring RMS Templates ...
                 - PASS: RMS Templates acquired.  Templates available: Contoso  - Confidential View Only, Contoso  - Confidential, Do Not 
             Forward.
             Verifying encryption ...
@@ -88,7 +84,7 @@ Azure の情報保護の保護機能を活用するには、新しい Office 365
                 - PASS: IRM verified successfully.
             
             OVERALL RESULT: PASS
-  ```
+    ```
 
     *Contoso 社*では、Office 365 の組織の名前に置き換えられます。 
     
@@ -98,9 +94,7 @@ Azure の情報保護の保護機能を活用するには、新しい Office 365
     
 3. 権限管理サービスから切断するのには削除 PSSession コマンドレットを実行するには。
     
-  ```
-  Remove-PSSession $session
-  ```
+    ```Remove-PSSession $session```
 
 ## <a name="next-steps-define-new-mail-flow-rules-that-use-the-new-ome-capabilities"></a>次の手順: ホームの新機能を使用して、新規のメール フロー ルールを定義します。
 <a name="Rules_1"> </a>

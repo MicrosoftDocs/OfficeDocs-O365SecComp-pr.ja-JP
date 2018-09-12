@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 description: 'フィッシング詐欺を防ぐためには、Office 365 と Outlook.com が必要になりました RFC に準拠するための: アドレスです。'
-ms.openlocfilehash: 562e08aa54cb6544beccb6f0e8760735f67b834b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8425d4ef7635c2beddcd7915daf73736432d4ca9
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531589"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955429"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Office 365 がフィッシング詐欺を防ぐために送信者のアドレスを検証する方法
 
@@ -35,8 +35,6 @@ Office 365 と Outlook.com の電子メール アカウントは、ますます�
 
 使用を強制する方法を変更している office 365: 向上するために受信メッセージのアドレスがフィッシング攻撃から保護します。この資料では。
   
-- [有効なすべてのメッセージがあります: アドレス](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
-    
 - [有効なすべてのメッセージがあります: アドレス](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
     
 - [元の書式設定: 表示名が含まれていない場合の対処](how-office-365-validates-the-from-address.md#FormatNoDisplayName)

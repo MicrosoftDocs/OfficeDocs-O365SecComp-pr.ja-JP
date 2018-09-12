@@ -10,13 +10,11 @@
 ## [無料の Azure Active Directory サブスクリプションを使用する](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Office 365 でセキュリティとコンプライアンスを計画する](plan-for-security-and-compliance.md)
 ## [セキュリティ/コンプライアンス センターでエクスプローラーを使用する](use-explorer-in-security-and-compliance.md)
-
 # データやサービスへのアクセスを保護する
 ## [Office 365 でデータやサービスへのアクセスを保護する](protect-access-to-data-and-services.md)
 ## [MDM または Intune を選択する](choose-between-mdm-and-intune.md)
-
 # [データ損失を防止する (DLP)](data-loss-prevention-policies.md)
-## [DLP の概要の詳しい説明を見る](https://go.microsoft.com/fwlink/?linkid=852300)
+## [DLP の概要の詳しい説明を見る](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## DLP を設定する
 ### [DLP の推奨ポリシーの概要](get-started-with-dlp-policy-recommendations.md)
 ### [DLP の既定ポリシーの概要](get-started-with-the-default-dlp-policy.md)
@@ -34,7 +32,7 @@
 ### [組み込みの機密情報の種類をカスタマイズする](customize-a-built-in-sensitive-information-type.md)
 ### [カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)
 ### [キーワード ディクショナリを作成する](create-a-keyword-dictionary.md)
-
+### [ドキュメント フィンガープリンティング](document-fingerprinting.md) 
 # データ ガバナンスを管理する        
 ## [データをインポートする](importing-pst-files-to-office-365.md)
 ### [ネットワーク アップロードを使用して PST ファイルをインポートする](use-network-upload-to-import-pst-files.md)
@@ -68,7 +66,6 @@
 ### [監督レポート](supervision-reports.md)
 ## データ ガバナンスの詳細情報
 ### [Microsoft のデータ ガバナンス チームによるビデオを見る](https://go.microsoft.com/fwlink/?linkid=867039)
-
 # [脅威からの保護](protect-against-threats.md)
 ## [スパム対策とマルウェア対策の保護](anti-spam-and-anti-malware-protection.md)
 ### [Office 365 でのフィッシング対策保護](anti-phishing-protection.md)
@@ -142,12 +139,11 @@
 ### [ユーザーが検閲済みメッセージを検出して解放する](find-and-release-quarantined-messages-as-a-user.md)
 ### [Office 365 の検疫に関する FAQ](quarantine-faq.md)
 ### [Office 365 でエンド ユーザーのスパム通知を使って検疫済みメッセージを解放して報告する](use-spam-notifications-to-release-and-report-quarantined-messages.md)
-
-# コンテンツを検索する
+# [コンテンツを検索する](search-for-content.md)
 ## [コンテンツ検索を使う](content-search.md)
 ### [コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)
 ### [コンテンツ検索の結果のキーワード統計を表示する](view-keyword-statistics-for-content-search.md)
-### [コンテンツ検索の結果をエクスポートする](content-search.md#export-search-results)
+### [コンテンツ検索の結果をエクスポートする](export-search-results.md)
 ### [コンテンツ検索のレポートをエクスポートする](export-a-content-search-report.md)
 ### [メール メッセージを検索して削除する](search-for-and-delete-messagesadmin-help.md)
 ### [Office 365 のオンプレミス ユーザーのクラウド ベースのメールボックスを検索する](search-cloud-based-mailboxes-for-on-premises-users.md)
@@ -169,11 +165,10 @@
 ### [コンテンツ検索の結果をエクスポートするときにレポートを無効にする](disable-reports-when-you-export-content-search-results.md)
 ## コンテンツ検索 で PowerShell スクリプトを使用する
 ### [コンテンツ検索を使用して対象コレクションを検索する](use-content-search-for-targeted-collections.md)
-### [コンテンツ検索を使用してメールボックスと OneDrive for Business サイトでユーザーの一覧を探す](https://support.office.com/article/5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0)
+### [コンテンツ検索を使用してメールボックスと OneDrive for Business サイトでユーザーの一覧を探す](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)
 ### [複数のコンテンツ検索を作成、報告、削除する](create-report-on-and-delete-multiple-content-searches.md)
 ### [コンテンツ検索を複製する](clone-a-content-search.md)
-
-# 法的調査を管理する
+# [法的調査を管理する](manage-legal-investigations.md)
 ## [ 電子情報開示のケースの作成と管理を行う](ediscovery-cases.md)
 ## [電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)
 ## [Office 365 での電子情報開示調査のためにコンプライアンスの境界を設定する](set-up-compliance-boundaries.md)
@@ -183,6 +178,7 @@
 ## [スクリプトを使用して電子情報開示ケースの保留リストにユーザーを追加する](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
 ## [電子情報開示ケースの保留リストのレポートを作成する](create-a-report-on-holds-in-ediscovery-cases.md)
 ## 保留リストを管理する
+### [電子情報開示保持を作成する](ediscovery-cases.md#step-4-place-content-locations-on-hold)
 ### [訴訟ホールドを作成する](create-a-litigation-hold.md)
 ### [保留中のクラウド ベースのメールボックスの [回復可能なアイテム] フォルダーのアイテムを削除する](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
 ### [保留中のメールボックスの [回復可能なアイテム] のクォータを増やす](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
@@ -222,15 +218,13 @@
 ### [Office 365 Advanced eDiscovery の分析で詳細オプションを設定する](set-analyze-options-in-advanced-ediscovery.md)
 ### [Office 365 Advanced eDiscovery の評価と関連性について理解する](assessment-in-relevance-in-advanced-ediscovery.md)
 ### [タグ付けと検索](search-and-tagging.md)
-
 # [監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)
 ## [監査ログ検索を有効または無効にする](turn-audit-log-search-on-or-off.md)
 ## [メールボックスの監査を有効にする](enable-mailbox-auditing.md)
 ## [監査ログの詳細なプロパティ](detailed-properties-in-the-office-365-audit-log.md)
 ## [監査ログで共有監査を使用する](use-sharing-auditing.md)
 ## [監査ログで電子情報開示アクティビティを検索する](search-for-ediscovery-activities-in-the-audit-log.md)
-
-# セキュリティとコンプライアンスを監視する
+# [セキュリティとコンプライアンスを監視する](monitor-security-and-compliance.md)
 ## [通知ポリシー](alert-policies.md)
 ### [アクティビティ警告を作成する](create-activity-alerts.md)
 ## [セキュリティ/コンプライアンス センターのスマート レポートとインサイト](reports-and-insights-in-security-and-compliance.md)
@@ -244,7 +238,6 @@
 #### [既存のレポートをダウンロードする](download-existing-reports.md)
 ## [Office 365 で安全性のヒントを有効または無効にする](enable-or-disable-safety-tips.md)
 ## [レポート メッセージ アドインを有効にする](enable-the-report-message-add-in.md)
-
 # セキュリティ ソリューション
 ## [選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](https://docs.microsoft.com/Office365/Enterprise/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o)
 ### [選挙運動の開発/テスト環境用にグループとユーザーを構成する](https://docs.microsoft.com/Office365/Enterprise/configure-groups-and-users-for-a-political-campaign-dev-test-environment)
@@ -263,27 +256,26 @@
 # コンプライアンス ソリューション
 ## [Microsoft クラウド サービスの利用時に、コンプライアンス マネージャーを使用してデータ保護と規制の要件を満たす](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [DSR ケース ツールを使用して GDPR のデータ主体要求を管理する](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
-## [GDPR のための Office 365 での情報保護](https://docs.microsoft.com/Office365/Enterprise/office-365-information-protection-for-gdpr)
-### [概要: GDPR のための Office 365 での保護](https://docs.microsoft.com/Office365/Enterprise/office-365-info-protection-for-gdpr-overview)
-### [個人データを検索する](https://docs.microsoft.com/Office365/Enterprise/search-for-and-find-personal-data)
-### [GDPR の機密情報の種類をカスタマイズまたは新規作成する](https://docs.microsoft.com/Office365/Enterprise/customize-or-create-a-new-sensitive-information-type)
-### [個人計画の分類スキーマを設計する](https://docs.microsoft.com/Office365/Enterprise/architect-a-classification-schema-for-personal-data)
-### [Office 365 の個人データにラベルを適用する](https://docs.microsoft.com/Office365/Enterprise/apply-labels-to-personal-data-in-office-365)
-### [Office 365 の個人データに保護を適用する](https://docs.microsoft.com/Office365/Enterprise/apply-protection-to-personal-data-in-office-365)
-### [個人情報の漏えいを監視する](https://docs.microsoft.com/Office365/Enterprise/monitor-for-leaks-of-personal-data)
-### [Office 365 の GDPR 開発/テスト環境](https://docs.microsoft.com/Office365/Enterprise/gdpr-discovery-protection-reporting-in-office365-dev-test-environment)
-## オンプレミスの Office サーバーにおける GDPR への対応
-### [SharePoint Server における GDPR への対応](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-sharepoint-server)
-### [Exchange Server における GDPR への対応](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-exchange-server)
-### [Skype for Business Server および Lync Server における GDPR への対応](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-skype-for-business-server)
-### [Project Server における GDPR への対応](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-project-server)
-### [Office Web Apps Server および Office Online Server における GDPR への対応](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-office-online-server)
-### [オンプレミスの Windows Server ファイル共有における GDPR への対応](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-on-premises-file-shares)
+## [GDPR のための Office 365 の情報保護](office-365-information-protection-for-gdpr.md)
+### [概要: GDPR のための Office 365 での保護](office-365-info-protection-for-gdpr-overview.md)
+### [個人データの検索](search-for-and-find-personal-data.md)
+### [GDPR の機密情報の種類をカスタマイズまたは新規作成する](customize-or-create-a-new-sensitive-information-type.md)
+### [個人計画の分類スキーマを設計する](architect-a-classification-schema-for-personal-data.md)
+### [Office 365 の個人データにラベルを適用する](apply-labels-to-personal-data-in-office-365.md)
+### [Office 365 の個人データに保護を適用する](apply-protection-to-personal-data-in-office-365.md)
+### [個人情報の漏えいを監視する](monitor-for-leaks-of-personal-data.md)
+### [Office 365 の GDPR 開発/テスト環境](gdpr-discovery-protection-reporting-in-office365-dev-test-environment.md)
+## [オンプレミスの Office サーバーの GDPR](gdpr-for-office-servers.md)
+### [SharePoint Server での GDPR への対応](gdpr-for-sharepoint-server.md)
+### [Exchange Server の GDPR](gdpr-for-exchange-server.md)
+### [Skype for Business Server および Lync Server における GDPR への対応](gdpr-for-skype-for-business-server.md)
+### [Project Server の GDPR](gdpr-for-project-server.md)
+### [Office Web Apps Server および Office Online Server の GDPR](gdpr-for-office-online-server.md)
+### [オンプレミスの Windows Server ファイル共有における GDPR への対応](gdpr-for-on-premises-file-shares.md)
 # セキュリティ インシデントの管理
-## [Office 365 でのセキュリティ インシデントへの対応](https://docs.microsoft.com/Office365/Enterprise/office365-security-incident-response-overview)
-## [Microsoft Office 365 での不正な同意付与の検出と修復](https://docs.microsoft.com/Office365/Enterprise/detect-and-remediate-illicit-consent-grants)
-## [Office 365 で Outlook のルールと ユーザー設定フォーム インジェクション攻撃の検出と修復を行う](https://docs.microsoft.com/Office365/Enterprise/detect-and-remediate-outlook-rules-forms-attack)
-
+## [Office 365 セキュリティ インシデント対応](office365-security-incident-response-overview.md)
+## [Microsoft Office 365 での不正な同意付与の検出と修復](detect-and-remediate-illicit-consent-grants.md)
+## [Office 365 で Outlook のルールと ユーザー設定フォーム インジェクション攻撃の検出と修復を行う](detect-and-remediate-outlook-rules-forms-attack.md)
 # サービス アシュアランス
 ## [Office 365 セキュリティ/コンプライアンス センターのサービス アシュアランス](service-assurance.md)
 ## [Office 365 でのテナントの分離](office-365-tenant-isolation-overview.md)
@@ -330,7 +322,6 @@
 ### [Office 365 のエンジニアリングのための内部ログ記録](office-365-internal-logging.md)
 ### [Office 365 のメールボックスの移行](office-365-mailbox-migrations.md)
 ### [Office 365 マネージメント アクティビティ API](office-365-management-activity-api.md)
-
 # [Exchange Online Protection](eop/exchange-online-protection-overview.md)
 ## [EOP の機能](eop/eop-features.md)
 ## [EOP の機能アクセス許可](eop/feature-permissions-in-eop.md)
@@ -409,6 +400,5 @@
 ### [障碍がある方のためのユーザー補助機能](eop/accessibility-for-people-with-disabilities.md)
 ### [Office 365 へのメール送信](sending-mail-to-office-365.md)
 ### [ユーザー以外に対するサービス](services-for-non-customers.md)
-
 # [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 for Business](https://support.office.com/office365admin)
