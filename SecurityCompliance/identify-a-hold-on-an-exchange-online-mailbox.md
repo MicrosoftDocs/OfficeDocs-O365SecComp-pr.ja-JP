@@ -11,18 +11,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
-ms.openlocfilehash: d24e51bca0e3d290f110b1ab40f3ee9ae7993678
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Office 365 のメールボックスに配置できる保留中のさまざまな種類を識別する方法を説明します。保留のこれらの種類には、証拠保全、電子的証拠開示の保留、および Office 365 のリテンション ・ ポリシーが含まれます。ユーザーが組織全体の保持ポリシーから除外されているかどうかを確認することも
+ms.openlocfilehash: 375bd86df370fe34fbe59f6581836da7e9d06515
+ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532415"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965264"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Exchange Online メールボックスに適用されている保留の種類を特定する方法
 
 この資料では、Office 365 のオンラインの Exchange メールボックスに配置する保留リストを識別する方法について説明します。
 
-Office 365 には、いくつかの組織が完全に削除されるからメールボックスの内容を妨げる可能性が方法が用意されています。これにより、コンプライアンスの常連を満たすためにコンテンツを保持する組織、法的または他の種類の調査の間。Office 365 の保存機能 (も呼び出された保留リスト) のリストを以下に示します。
+Office 365 には、いくつかの組織が完全に削除されるからメールボックスの内容を妨げる可能性が方法が用意されています。これにより、コンプライアンスの常連を満たすためにコンテンツを保持する組織、法的または他の種類の調査の間。Office 365 の保存機能 (も呼び出されたを*保持している*) の一覧を以下に示します。
 
 - **証拠保全**の Exchange Online のユーザーのメールボックスに適用されているを保持します。
 
@@ -34,9 +35,11 @@ Office 365 には、いくつかの組織が完全に削除されるからメー
 
   メールボックスに割り当てることができる Office 365 の保持ポリシーの 2 種類があります。
 
-    - **保存ポリシーの特定の場所**- これらは、特定のユーザーのコンテンツの場所に割り当てられているポリシーです。Exchange オンライン PowerShell で特定のメールボックスに割り当てられているリテンション ・ ポリシーに関する情報を取得するのに Get メールボックス コマンドレットを使用するとします。
+    - **保存ポリシーの特定の場所**- これらは、特定のユーザーのコンテンツの場所に割り当てられているポリシーです。Exchange オンライン PowerShell で特定のメールボックスに割り当てられているリテンション ・ ポリシーに関する情報を取得するのに**Get メールボックス**コマンドレットを使用するとします。
 
-    - **組織全体の保存ポリシー** - これらは、組織内のすべてのコンテンツの場所に割り当てられているポリシーです。Exchange オンライン PowerShell で組織全体の保存ポリシーに関する情報を取得するのに Get OrganizationConfig コマンドレットを使用するとします。詳細については、Office 365 の概要の保存ポリシーで「組織全体または特定の場所に保持ポリシーを適用する」セクションを参照してください。
+    - **組織全体の保存ポリシー** - これらは、組織内のすべてのコンテンツの場所に割り当てられているポリシーです。Exchange オンライン PowerShell で組織全体の保存ポリシーに関する情報を取得するのに**Get OrganizationConfig**コマンドレットを使用するとします。詳細については、 [Office 365 の概要の保存ポリシー](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)で「組織全体または特定の場所に保持ポリシーを適用する」セクションを参照してください。
+
+- 訴訟で、メールボックスが置かれた場合と同様のメールボックスの**office 365 のラベル**をユーザーが*任意*のフォルダーまたは自分のメールボックスでは、保留リストにアイテムを (1 つのコンテンツを保持または保持し、コンテンツを削除し、構成されている)、Office 365 のラベルを適用する場合が配置されます。Office 365 のリテンション ・ ポリシーに割り当てられているか。詳細については、この資料の[特定のメールボックス フォルダーまたはアイテムにラベルが適用されているためにの保持](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item)」を参照してください。
 
 保留中のメールボックスを管理するには、保留中の変更、一時的または恒久的に、保留リストを削除するまたは Office 365 のリテンション ・ ポリシーからメールボックスを除外するなどのタスクを実行できるように、メールボックスに配置されている保留リストの種類を識別する必要があります。これらの場合、最初に、メールボックスに配置する保留リストの種類を識別します。複数の保留などさまざまな種類の保留の 1 つのメールボックスを配置するためすべての保留が削除または変更するそれらを保持する場合、メールボックスの配置を特定する必要があります。
 
@@ -150,6 +153,48 @@ Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name,SourceMailboxes
 ```
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
 ```
+
+## <a name="identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item"></a>上のメールボックスを識別するラベルは、フォルダーまたはアイテムに適用されていますのでを保持します。
+
+ユーザーが構成されているコンテンツを保持または保持し、任意のフォルダーまたはメールボックス内のアイテムにコンテンツを削除するラベルを適用するたびに、 *ComplianceTagHoldApplied*のメールボックスのプロパティが**True**に設定します。このような場合、メールボックスは、保留中の場合と同様に証拠保全がまたは Office 365 のリテンション ・ ポリシーに割り当てられていると見なされます。*ComplianceTagHoldApplied*プロパティを**True**に設定すると、次の項目が表示される場合があります。
+
+- メールボックスまたはユーザーの Office 365 のユーザー アカウントを削除すると、メールボックス、[メールボックスを非アクティブ](inactive-mailboxes-in-office-365.md)になります。
+- (プライマリ メールボックスまたはアーカイブ メールボックスを有効になっている場合) のメールボックスを無効にすることはできません。
+- メールボックス内のアイテムは、予想以上に長く保持することがあります。これは、保留中のメールボックスがあり、したがってアイテムを削除しないため (パージ) します。
+
+*ComplianceTagHoldApplied*プロパティの値を表示するには、Exchange オンライン PowerShell で次のコマンドを実行します。
+
+```
+Get-Mailbox <username> |FL ComplianceTagHoldApplied
+```
+
+ラベルの詳細については、 [Office 365 の概要のラベル](labels.md)を参照してください。
+
+## <a name="managing-mailboxes-on-delay-hold"></a>遅延を管理するメールボックスを保持します。
+
+保留中の任意の種類がメールボックスから削除されると、 *DelayHoldApplied*のメールボックスのプロパティの値が**True**に設定します。これは、*遅延の保持*と呼ばれ、データが完全に削除されることを防止するのには 30 日間、保留中の実際の削除を延期することを意味メールボックスからには、(削除) します。これは、管理者を検索したり、保留リストが実際に削除された後にパージされるメールボックス アイテムをリカバリできます。遅延ホールドがメールボックスに配置されると、メールボックスと見なされます上にある、無制限の期間の保持と証拠保全上にメールボックスがあったかどうか。30 日間、遅延の保持期限が切れる、および Office 365 は、( *DelayHoldApplied*プロパティを**False**に設定) によって遅延保持を削除するのには自動的に試みます保留リストが実際に削除されるようにします。*DelayHoldApplied*プロパティを**False**には後の削除のマークされているアイテムが削除されます、メールボックスの管理フォルダー アシスタントによって処理される次の時間。
+
+メールボックスの*DelayHoldApplied*プロパティの値を表示するには、Exchange オンライン PowerShell で次のコマンドを実行します。
+
+```
+Get-Mailbox <username> | FL DelayHoldApplied
+```
+
+期限が切れる前に、遅延の保留リストを削除するには、Exchange オンライン PowerShell で次のコマンドを実行できます。 
+ 
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+する必要があります法的保持義務の役割を割り当てる Exchange オンライン、 *RemoveDelayHoldApplied*パラメーターを使用するに注意してください。 
+
+遅延の保持を非アクティブなメールボックスを削除するには、Exchange オンライン PowerShell で次のコマンドを実行します。
+
+```
+Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
+```
+
+> [!TIP]
+> 前のコマンドで、アクティブでないメールボックスを指定する最良の方法では、その識別名、または Exchange の GUID 値を使用します。これらの値のいずれかの方法とは、誤って正しくないメールボックスを指定することを防止できます。 
 
 ## <a name="next-steps"></a>次の手順
 

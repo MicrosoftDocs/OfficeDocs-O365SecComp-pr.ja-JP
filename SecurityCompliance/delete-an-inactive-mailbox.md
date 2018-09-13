@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: Office 365 の非アクティブなメールボックスの内容を保持するために不要になった場合は、保留リストを削除することによって、非アクティブなメールボックスを完全に削除できます。保留リストを削除した後には、非アクティブなメールボックスは削除用にマークされてし、それが処理された後は完全に削除します。
-ms.openlocfilehash: 91b73fff6ca319735289abe7ea9351b5fba931a0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a7284be650d7ec6c89a6fdc43d8614603d6f1e19
+ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531621"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965254"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>Office 365 で、非アクティブなメールボックスを削除します。
 
@@ -104,11 +104,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 2. **コンプライアンス管理**には、EAC で\>**インプレース電子情報開示&amp;を保持**。
     
-<<<<<<< 見出し
 3. 埋め込みの保留を削除する] を選択し、[**編集**] をクリックして![[編集] アイコン](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)。
-=======
-3. 埋め込みの保留を削除する] を選択し、[**編集**] をクリックして![アイコンを編集](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)します。
->>>>>>> markjjo 変換
     
 4. **、インプレース電子情報開示&amp;を保持**プロパティ ページで、**場所に保持**] をクリックして**で選択したメールボックスの検索クエリに一致する場所のコンテンツを保持する**] ボックスをオフにし、[**保存**] をクリックします。
     

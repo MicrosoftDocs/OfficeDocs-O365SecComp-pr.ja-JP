@@ -3,7 +3,6 @@ title: 動的な配信および Office 365 ATP の安全な添付ファイルを
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/28/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: ATP の安全な添付ファイル ポリシーを設定するときに、メッセージの遅延を回避し、スキャンされている添付ファイルをプレビューするのにはユーザーを有効にする動的な配信を選択します。
-ms.openlocfilehash: 23017f4f995dfe6a90479d83af9522531d7bf96b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 23ef316ed35b89ef1fad5e9639dd10e76036a4f3
+ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531554"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965244"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>動的な配信および Office 365 ATP の安全な添付ファイルをプレビューします。
 
@@ -65,6 +64,8 @@ ms.locfileid: "22531554"
 - エラー状態では、ユーザーのメールボックスの検索フォルダー
     
 - Exclaimer Exchange Online 管理者が有効にする環境。( [ATP の動的な配信および Exclaimer を使用すると、添付ファイル付きのメッセージが配信されない](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)を参照してください)
+
+- /Multipurpose をセキュリティで保護されたインターネット メール拡張 ([S/MIME](s-mime-for-message-signing-and-encryption.md)) で暗号化されたメッセージ
     
 ## <a name="related-topics"></a>関連項目
 
