@@ -3,7 +3,6 @@ title: Office 365 に送信スパムの制御
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 09/13/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 description: 組織では、スパムとしてマークされている迷惑メールの多くを送信する場合は Office 365 で電子メールを送信することから禁止を取得でした。このような理由と何ができるかについての詳細については、この資料を参照してください。
-ms.openlocfilehash: 1e416ded5a7d91376a75075e5de1de60bc8a205b
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: 916a062d08e01954e7736b6f22d297aea04baf28
+ms.sourcegitcommit: 17dda7ece5c9e884944a92ac0f842cf1e62ec506
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23968266"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23977582"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>Office 365 に送信スパムの制御
 
