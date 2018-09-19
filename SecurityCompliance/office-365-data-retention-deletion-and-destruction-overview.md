@@ -3,7 +3,6 @@ title: Office 365 でのデータの保持、削除、および破棄
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -12,12 +11,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: Office 365 データの保存、削除、および破棄に関するマイクロソフトのポリシーの概要について説明します。
-ms.openlocfilehash: 4d952058df8d0efb664f23e5495796fdb9e006f2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bb038f8bd8e3f0286ea7d673e5e286bdc4a9677d
+ms.sourcegitcommit: 1bccdaacf358505604c9cf422cb1e272aefae19d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531908"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "23999148"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Office 365 でのデータの保持、削除、および破棄
 
@@ -33,10 +32,10 @@ ms.locfileid: "22531908"
 | データのカテゴリ | 以上を保持します。 | 最大を保持します。 |
 |---------------------------------------|:-----------------:|:-----------------:|:----------------------------------:|:-------------------------------:|
 | コントロールのデータへのアクセス | 該当なし | 該当なし |
-| お客様のコンテンツ | 7 日 | 30 日 |
-| エンドユーザーを特定できる情報 | 90 日 | 180 日 |
+| お客様のコンテンツ | 7 日 | 30 日間 |
+| エンドユーザーを特定できる情報 | 90 日間 | 180 日 |
 | アカウント データ | 1 年 | 3 年間 |
-| 組織を特定できる情報 | 90 日 | 180 日 |
+| 組織を特定できる情報 | 90 日間 | 180 日 |
 | システムのメタデータ | セキュリティ ログを参照してください。 | セキュリティ ログを参照してください。 |
 | セキュリティ ログ | 最小 1 年間 | 最大 1 年間 |
 | Exchange Online Archiving のログ | 3 年間の最小値 | 最大 3 年間 |
@@ -47,9 +46,9 @@ ms.locfileid: "22531908"
 |---------------------------------------|:-----------------:|:-----------------:|:----------------------------------:|:-------------------------------:|
 | コントロールのデータへのアクセス | (コンテンツ ・ リカバリ) の 90 日間 | (コンテンツ ・ リカバリ) の 180 日間 |
 | お客様のコンテンツ | 90 日間 (機能制限付きアカウント) | 180 日 |
-| エンドユーザーを特定できる情報 | 90 日 | 180 日 |
+| エンドユーザーを特定できる情報 | 90 日間 | 180 日 |
 | アカウント データ | 1 年 | 3 年間 |
-| 組織を特定できる情報 | 90 日 | 180 日 |
+| 組織を特定できる情報 | 90 日間 | 180 日 |
 | システムのメタデータ | セキュリティ ログを参照してください。 | セキュリティ ログを参照してください。 |
 | セキュリティ ログ | 最小 1 年間 | 最大 1 年間 |
 | Exchange Online Archiving のログ | 3 年間の最小値 | 最大 3 年間 |
@@ -68,8 +67,8 @@ ms.locfileid: "22531908"
 サブスクリプションの期間中に常に、サブスクライバーはマイクロソフトのサポート、および要求を促進するサブスクリプションのプロビジョニング解除を連絡できます。このプロセスでは、SharePoint online 日、Exchange Online で可能性のあるデータを含む、すべてのユーザー データを保持または削除済みの 3 日間、管理者が Microsoft が提供するロックアウト コードを入力した後では、非アクティブなメールボックスに格納されています。迅速なプロビジョニング解除の詳細については、 [Office 365 のキャンセル](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a)を参照してください。
 
 ## <a name="related-links"></a>関連リンク
-- [Exchange Online でのデータ削除](/office365/enterprise/office-365-exchange-online-data-deletion)
-- [SharePoint Online でのデータ削除](/office365/enterprise/office-365-sharepoint-online-data-deletion)
-- [Skype for Business でのデータ削除](/office365/enterprise/office-365-skype-data-deletion)
-- [Office 365 での不変性](/office365/enterprise/office-365-data-immutability)
-- [データの破棄](/office365/enterprise/office-365-data-destruction)
+- [Exchange Online でのデータ削除](office-365-exchange-online-data-deletion.md)
+- [SharePoint Online でのデータ削除](office-365-sharepoint-online-data-deletion.md)
+- [Skype for Business でのデータ削除](office-365-skype-data-deletion.md)
+- [Office 365 での不変性](office-365-data-immutability.md)
+- [データの破棄](office-365-data-destruction.md)
