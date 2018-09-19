@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: O365 データおよびサービスへのアクセスを保護するためのランディング ・ ページ
-ms.openlocfilehash: 6ea617b1a7a7a34492689908d4816a851d58e776
-ms.sourcegitcommit: 0ce722533d72fa8dcc1d8a58d3c649cb345b938d
+ms.openlocfilehash: 652a14c5f1f29187aeac51355e7a924c9378806f
+ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/19/2018
-ms.locfileid: "24009103"
+ms.locfileid: "24011279"
 ---
 # <a name="protect-access-to-data-and-services-in-office-365"></a>Office 365 でデータやサービスへのアクセスを保護する
 
@@ -58,7 +58,7 @@ Azure AD の MFA を使用する場合は、Office 365 と、環境内の他の 
 
 管理者アクセス権を Office 365 の管理により、きめ細かなアクセス特権の管理タスクを制御します。 機密性の高いデータへのアクセスを位置または重要な構成設定へのアクセス権を持つ既存の権限を持つ管理者アカウントを使用するための侵害から組織を保護するために役立ちます。
 
-- [特権の概要アクセス管理](privileged-access-managment-overview.md)
+- [特権の概要アクセス管理](privileged-access-management-overview.md)
 - [アクセス権限の管理を構成します。](privileged-access-management-configuration.md)
 
 ## <a name="step-5-configure-sharepoint-device-access-policies"></a>手順 5: SharePoint のデバイスのアクセス ポリシーを構成します。

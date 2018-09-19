@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: Office 365 エンタープライズ保護する方法と、さまざまな脅威、なりすまし、マルウェア、スパム、フィッシング詐欺、およびデータへの不正アクセスを含む、組織について説明します。
-ms.openlocfilehash: ac4ac5d9800402c587ed52cc03905414a60471f6
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4534e12280b5e627c2594c0365262a5c7c14a8c4
+ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532019"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24011269"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Office 365 での脅威からの保護
 
@@ -88,6 +88,14 @@ Office 365 のスパム対策の評価、接続フィルター、およびマル
     
 - [Office 365 脅威インテリジェンスの概要](get-started-with-ti.md)
     
+## <a name="privileged-access-management"></a>特権アクセスの管理
+
+機密性の高いデータへのアクセスを位置または重要な構成設定へのアクセス権を持つ既存の権限を持つ管理者アカウントを使用することがあります侵害から組織を保護します。アクセス権限の管理を有効にすると、ユーザーは、承認のワークフローは、高度なスコープ設定と期限付きでの管理者特権、特権のあるタスクを完了する、ジャスト ・ イン ・ タイムのアクセス権を要求する必要があります。
+  
+- [権限の概要を取得するアクセス管理](privileged-access-management-overview.md)
+    
+- [特権を使い始めるアクセス管理](privileged-access-management-configuration.md)
+
 ## <a name="additional-options"></a>追加のオプション
 
 関連するマイクロソフトのテクノロジと脅威に対して、セキュリティで保護された Office 365 のヘルプのプロセスの詳細を取得します。
