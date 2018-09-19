@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: O365 データおよびサービスへのアクセスを保護するためのランディング ・ ページ
-ms.openlocfilehash: e6e2d8d3ba6482d4b80593bd9e09d49d6120af80
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6ea617b1a7a7a34492689908d4816a851d58e776
+ms.sourcegitcommit: 0ce722533d72fa8dcc1d8a58d3c649cb345b938d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532409"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24009103"
 ---
 # <a name="protect-access-to-data-and-services-in-office-365"></a>Office 365 でデータやサービスへのアクセスを保護する
 
@@ -54,13 +54,20 @@ Azure AD の MFA を使用する場合は、Office 365 と、環境内の他の 
   
 - [Azure Active Directory 内の条件付きアクセス](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
     
-## <a name="step-4-configure-sharepoint-device-access-policies"></a>ステップ 4: SharePoint のデバイスのアクセス ポリシーを構成します。
+## <a name="step-4-configure-privileged-access-management"></a>手順 4: アクセス権限の管理を構成します。
+
+管理者アクセス権を Office 365 の管理により、きめ細かなアクセス特権の管理タスクを制御します。 機密性の高いデータへのアクセスを位置または重要な構成設定へのアクセス権を持つ既存の権限を持つ管理者アカウントを使用するための侵害から組織を保護するために役立ちます。
+
+- [特権の概要アクセス管理](privileged-access-managment-overview.md)
+- [アクセス権限の管理を構成します。](privileged-access-management-configuration.md)
+
+## <a name="step-5-configure-sharepoint-device-access-policies"></a>手順 5: SharePoint のデバイスのアクセス ポリシーを構成します。
 
 SharePoint Online およびビジネスのための OneDrive のデバイスのアクセス ポリシーは、機密性の高い、分類、および規制対象のデータの保護に適しています。準備中は、デバイスのアクセス ポリシーを個々 のチーム サイトに適用する機能です。
   
 - [非管理対象デバイスからのアクセスを制御する](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&amp;rs=en-US&amp;ad=US)
     
-## <a name="step-5-configure-app-and-data-protection-for-devices"></a>手順 5: デバイス用のアプリケーションとデータの保護を構成します。
+## <a name="step-6-configure-app-and-data-protection-for-devices"></a>手順 6: デバイス用のアプリケーションとデータの保護を構成します。
 
 モバイル デバイス管理のためのデバイスを登録するかどうかに関係なく、モバイル デバイス上のアプリケーションを管理することができます。これは、メールやファイルなど、Office 365 内のデータの偶発的な漏えいから保護します。
   
@@ -72,13 +79,13 @@ Windows 10、偶発的なデータ漏洩を防ぐために Windows の情報の�
     
 - 管理されていないデバイスの:[作成 Intune の Windows 情報保護 (WIP) アプリケーションの保護ポリシーを展開し、](https://docs.microsoft.com/intune/windows-information-protection-policy-create)
     
-## <a name="step-6-manage-devices-with-intune"></a>Intune でデバイスを管理する手順 6。
+## <a name="step-7-manage-devices-with-intune"></a>Intune でデバイスを管理する手順 7。
 
 デバイスを管理することは正常な準拠、環境内のリソースへのアクセスを許可する前にことを確認できます。デバイス ベースの条件付きのアクセス ルールにより、攻撃者にアクセスできません、リソース管理されていないデバイスからことを確認します。
   
 - [Intune で管理するためのデバイスを登録します。](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
     
-## <a name="step-7-configure-additional-intune-policies-and-conditional-access-rules-for-your-environment"></a>Intune ポリシーを追加し、環境の条件付きのアクセス ルールを構成する手順 7。
+## <a name="step-8-configure-additional-intune-policies-and-conditional-access-rules-for-your-environment"></a>Intune ポリシーを追加し、環境の条件付きのアクセス ルールを構成する手順 8。
 
 推奨される構成が企業規模や高度なアクセス セキュリティのシナリオの開始点としてこれらを使用します。
   
