@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 権限に関する詳細については、このトピックを使用して Office 365 の管理のアクセス
-ms.openlocfilehash: 979587e68ea0cbcf255e087eaaeb38dca4fc7ca1
-ms.sourcegitcommit: 0ce722533d72fa8dcc1d8a58d3c649cb345b938d
+ms.openlocfilehash: 063d291005ec40c21e55188e4ee7c6c8ed6594e8
+ms.sourcegitcommit: d31904e81f81d0fba75309a2bc8bbfb05565a0b4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24016137"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "24055262"
 ---
 # <a name="privileged-access-management-in-office-365"></a>特権にアクセス、Office 365 の管理
 
@@ -57,7 +57,7 @@ Office 365 管理センターまたは Exchange 管理 PowerShell を使用す�
 
 ### <a name="step-3-access-approval"></a>手順 3: アクセスの承認
 
-承認要求が生成され、承認グループに保留中の要求の電子メールで通知されます。承認が付与される場合は、承認とアクセス権限要求を処理し、タスクを完了する準備ができました。要求が拒否された場合、タスクは、ブロックと、reqeustor へのアクセスは許可されません。
+承認要求が生成され、承認グループに保留中の要求の電子メールで通知されます。承認が付与される場合は、承認とアクセス権限要求を処理し、タスクを完了する準備ができました。要求が拒否された場合、タスクは、ブロックと、reqeustor へのアクセスは許可されません。要求者の要求の承認または拒否メッセージを電子メール経由で通知されます。
 
 ![ステップ 3 - アクセスの承認](media/pam-step3-access-approval.jpg)
 

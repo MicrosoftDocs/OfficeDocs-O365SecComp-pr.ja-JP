@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: このトピックを使用して、Office 365 にアクセス権限の管理を構成する方法の詳細については、
-ms.openlocfilehash: b2b6ab18687617c0da3425f4ee60cf81074f6f69
-ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
+ms.openlocfilehash: 6494505554a02f005df8f45839c9575094acbf1a
+ms.sourcegitcommit: d31904e81f81d0fba75309a2bc8bbfb05565a0b4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24021405"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "24055252"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Office 365 にアクセス権限の管理を構成します。
 
@@ -201,7 +201,7 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 ```
 
 ### <a name="approving-an-elevation-authorization-request"></a>昇格の承認要求を承認します。
-承認要求が作成されると、関連する承認者グループのメンバーは電子メール通知が表示され、要求 ID に関連付けられている要求を承認することができます。
+承認要求が作成されると、関連する承認者グループのメンバーは電子メール通知が表示され、要求 ID に関連付けられている要求を承認することができます。要求者の要求の承認または拒否メッセージを電子メール経由で通知されます。
 
 #### <a name="using-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターを使用してください。
 
