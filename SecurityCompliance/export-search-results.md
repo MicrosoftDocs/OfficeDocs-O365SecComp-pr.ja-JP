@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Office 365 のセキュリティ コンテンツの検索から検索結果をエクスポートする&amp;コンプライアンス センターをローカル コンピューターにします。Emaill メールの結果は、PST ファイルとしてエクスポートされます。ビジネス サイトは、ネイティブの Office ドキュメントとしてエクスポートするには、SharePoint と OneDrive のコンテンツです。 '
-ms.openlocfilehash: a1ea1daef438225b5e65d835efbcdecdb2178da8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 9b6db129371b234713b5504f5763ee1dc3d7d638
+ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532624"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "24962963"
 ---
 # <a name="export-content-search-results-from-the-office-365-security-amp-compliance-center"></a>Office 365 のセキュリティ コンテンツの検索結果をエクスポートする&amp;コンプライアンス センター
 
@@ -83,7 +83,7 @@ ms.locfileid: "22532624"
 
 エクスポートするための検索結果を準備するのには、まずです。結果を準備するときは、マイクロソフトのクラウドでは、Azure ストレージの場所にアップロードされます。メールボックスとサイトからコンテンツことに注意は、1 時間あたり最大 2 GB の速度でアップロードされます。
   
-1. [https://protection.office.com](https://protection.office.com)。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
 2. 職場、学校のアカウントを使用して Office 365 にサインインします。
     
@@ -182,7 +182,7 @@ ms.locfileid: "22532624"
   
 [レポートをエクスポート](export-search-results.md#export-reports)
   
-[インデックス未作成のアイテムをエクスポートする](export-search-results.md#exporting-unindexed-items)
+[部分的にインデックス付きのアイテムをエクスポートします。](#exporting-partially-indexed-items)
   
 [個々 のメッセージまたは PST ファイルをエクスポートします。](export-search-results.md#Exporting-individual-messages-or-PST-files)
   
@@ -279,6 +279,8 @@ ms.locfileid: "22532624"
     C のサイトに検索条件に一致する項目が含まれているかどうかに関係なく、検索のすべてのサイトから部分的にインデックス付けされたすべてのアイテムがエクスポートされます。
     
     部分的にインデックス付きのアイテムをエクスポートする場合は、部分的にインデックス付けされたメールボックス アイテムは、[**としてエクスポートする Exchange のコンテンツ**を選択するオプションにかかわらず、別の PST ファイルにエクスポートされます。
+
+- 部分的にインデックス付きのアイテムが検索で返された場合の結果 (部分的にインデックス付きのアイテムの他のプロパティには、検索条件が一致する) ため、部分的にインデックスは、通常の検索結果を使用してエクスポートし、します。では、(オプションを選択して、**認識できない形式があるものなど、すべてのアイテムが暗号化されているか他の理由によりインデックスが作成されなかった**エクスポート)、インデックス付きの項目と部分的にインデックス付けされたアイテムの両方をエクスポートする場合は、部分的にインデックス付きの項目をエクスポート正規の reslts では、Results.csv のレポートに表示されます。それらはインデックスを持たない items.csv レポートに表示されません。
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>個々 のメッセージまたは PST ファイルをエクスポートします。
   

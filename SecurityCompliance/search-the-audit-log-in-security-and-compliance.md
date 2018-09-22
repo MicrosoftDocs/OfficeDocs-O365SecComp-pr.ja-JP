@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Office 365 のセキュリティを使用して、 &amp; 、Office 365 の組織のユーザーと管理者のアクティビティを表示するのには統一された監査ログを検索するのにはコンプライアンス センターです。 '
-ms.openlocfilehash: 3fe8b4ade1b82cc76fcc300284127693b7e5fc07
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: dc673b8f52bacccfa746ad258ea91d8dd2074eeb
+ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531799"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "24962973"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>&amp;
 
@@ -122,7 +122,7 @@ Office 365 の検索を開始する前に次の項目の監査ログを読み取
   
 ### <a name="step-1-run-an-audit-log-search"></a>手順 1: 監査ログ検索を実行します。
 
-1. [https://protection.office.com](https://protection.office.com)。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
     > [!TIP]
     > プライベート ブラウズ セッション (通常のセッションではありません) を使用して Office 365 のセキュリティのアクセス&amp;コンプライアンス ・ センターのため、これは、現在ログオンに使用したを使用するための資格情報を防ぐことができます。Internet Explorer または Microsoft のエッジでは、InPrivate ブラウズ セッションを開くには、ctrl キーと SHIFT キーを押しながら P キーを押します。(Incognito の] ウィンドウと呼ばれます)、Google Chrome でプライベート ブラウズ ・ セッションを開き、CTRL + SHIFT + N を押します。 
@@ -647,3 +647,60 @@ Exchange 管理者の監査ログ内のアクティビティを検索するた�
     
 - Exchange 管理センターを使用して Exchange 管理者の監査ログにイベントを表示することもできます。手順については、[管理者の監査ログの表示](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx)を参照してください。
   
+## <a name="frequently-asked-questions"></a>よく寄せられる質問
+
+**Office 365 の監査サービスによって提供される機能についてどこで入手できますか。**
+
+Office 365 で利用可能な監査とレポート作成機能の詳細については、[監査と Office 365 のレポート](office-365-auditing-and-reporting-overview.md)を参照してください。 
+
+**監査は現在別の Office 365 サービスを挙げてください。**
+
+最も使用されている Office 365 のサービスなどの Exchange のオンライン、SharePoint、OneDrive、Azure Active Directory、マイクロソフトのチーム、CRM、高度な脅威保護、およびデータ損失の防止を監査します。完全な一覧については、この資料では、"[概要](#search-the-audit-log-in-the-office-365-security-amp-compliance-center)"を参照してください。
+
+**Office 365 のサービスを監査することによって監査される活動ですか。**
+
+Office 365 で監査する活動の説明の一覧とは、この資料では、 [Audited の活動](#audited-activities)を参照してください。
+
+**イベントが発生した後に、使用する監査レコードの時間がかかりますか。**
+
+30 分以内でほとんどの監査データがあるが、対応する監査ログ エントリの検索結果に表示されるイベントが発生すた後ことで、最大 24 時間がかかる場合があります。この資料を使用する別の Office 365 サービスのイベントにかかる時間を表示する[を開始する前に](#before-you-begin)」の表を参照してください。
+
+**監査レコードの保持は、どのくらいの時間のですか。**
+
+現在監査ログ レコードは、90 日間保持されます。マイクロソフトがこの制限値を大きくための計画に積極的に取り組んでいます。 
+
+**プログラムを使用して監査のデータにアクセスできますか。**
+
+うん。Office 365 の管理アクティビティの API を使用して、プログラムを使用して監査ログを取得します。 開始するには、 [Office 365 の管理 Api を使用](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)を参照してください。
+
+**Office 365 のセキュリティとコンプライアンスの中心または Office 365 の管理アクティビティの API を suing 以外のログの監査を取得する別の方法はありますか。**
+
+違います。これらは、Office 365 の監査サービスからデータを取得するのには 2 つの方法です。 
+
+**個別の監査ログをキャプチャする各サービスの監査を有効にする必要がありますか。**
+
+ほとんどの Office 365 サービスで監査を有効に既定では (セクションの説明に従って、[開始する前に](#before-you-begin)この資料に記載されて)、Office 365 の組織の監査を有効にすた後最初にします。ただし、監査、監査する各メールボックスを Exchange オンラインのメールボックスを有効にする必要があります。  私たちは、既定で Office 365 組織内のすべてのメールボックスに対してメールボックスの監査を有効にするで作業しています。詳細については、「Exchange メールボックスの監査は有効にする既定で」[マイクロソフトのセキュリティ、プライバシー、およびコンプライアンスのブログ](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Exchange-Mailbox-Auditing-will-be-enabled-by-default/ba-p/215171)で参照してください。
+
+**Office 365 の監査サービスのサポートによる重複レコードのでしょうか。**
+
+違います。監査サービスのパイプラインは、リアルタイムに近いし、の重複除外をサポートできません。
+ 
+**Office 365 の監査データは、地理的に離れた流れでしょうか。**
+
+違います。現在ある NA (北アメリカ)、EMEA (ヨーロッパ、中東およびアフリカ)、および APAC (アジア太平洋地域) の領域でのパイプラインの展開を監査します。ただし、負荷分散のため、ライブ サイトに関する問題の中にのみ、これらの領域にわたってデータをフローは可能性があります。これらのアクティビティを実行しているときは、転送中のデータが暗号化されます。   
+ 
+**監査データの暗号化とは**
+
+データの監査は、監査のパイプラインが展開されている同じ地域の (データ休息) の Exchange メールボックスに格納されます。このデータは暗号化されません。ただし、転送中のデータは常に暗号化します。 
+
+
+
+
+
+
+
+
+
+
+
+
