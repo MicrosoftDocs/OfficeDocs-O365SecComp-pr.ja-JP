@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: SIEM サーバーは、Office 365 のクラウド アプリケーションのセキュリティと統合できます。仕組みと、それを設定する方法の概要を取得するには、この資料を参照してください。
-ms.openlocfilehash: 6b9d51d91d4b1ae55dd0dd16a92872daa4ecef90
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a2bd75e73ddccef9359ace304faa3c8b1dd4a728
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23043265"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972329"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>SIEM サーバーと Office 365 Cloud App Security を統合する
   
@@ -71,25 +71,25 @@ SIEM エージェントでは、Office 365 のクラウド アプリケーショ
     
 2. **アラート**を参照して\>**詳細なアラートを管理**します。
     
-3. **Office 365 のクラウド アプリケーションのセキュリティ**を選択します。</br>
+3. **Office 365 のクラウド アプリケーションのセキュリティ**を選択します。<br/>
     ![セキュリティ&amp;コンプライアンス センターでは、Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
   
-4. [**設定**] をクリックして\>**セキュリティ拡張機能**です。</br>
+4. [**設定**] をクリックして\>**セキュリティ拡張機能**です。<br/>
 ![設定 > セキュリティ拡張機能](media/Settings-SecurityExtensions.png)
 
-5. **SIEM の追加のエージェント**を選択します。</br>![SIEM の追加のエージェントを選択します。](media/SIEMAgents.png)
+5. **SIEM の追加のエージェント**を選択します。<br/>![SIEM の追加のエージェントを選択します。](media/SIEMAgents.png)
     
-6. **ウィザードの開始**」を選択します。</br>![ヘルプを表示するか、ウィザードの開始](media/HelpOrWizard.png) 
+6. **ウィザードの開始**」を選択します。<br/>![ヘルプを表示するか、ウィザードの開始](media/HelpOrWizard.png) 
     
-7. **全般**の手順では、名、および **、SIEM の形式を選択して**指定しの**詳細設定**は、その形式に関連するを設定します。**次へ**を選択します。</br>![名前と種類を指定します。](media/ChooseAgentTypeAndName.png)
+7. **全般**の手順では、名、および **、SIEM の形式を選択して**指定しの**詳細設定**は、その形式に関連するを設定します。**次へ**を選択します。<br/>![名前と種類を指定します。](media/ChooseAgentTypeAndName.png)
     
-8. **リモートの Syslog**の手順で、IP アドレスまたは**リモートの syslog ホスト**と**ポート番号の Syslog**のホスト名を指定します。リモートの Syslog プロトコルとして TCP または UDP を選択します。(使用することがない場合、これらの詳細を取得するには、ネットワーク管理者またはセキュリティ管理者です。)**次へ**を選択します。</br>![リモートの Syslog の詳細を指定します。](media/ArcSightS1Syslog.png)
+8. **リモートの Syslog**の手順で、IP アドレスまたは**リモートの syslog ホスト**と**ポート番号の Syslog**のホスト名を指定します。リモートの Syslog プロトコルとして TCP または UDP を選択します。(使用することがない場合、これらの詳細を取得するには、ネットワーク管理者またはセキュリティ管理者です。)**次へ**を選択します。<br/>![リモートの Syslog の詳細を指定します。](media/ArcSightS1Syslog.png)
   
 9. ステップでは、**データ型**、次のいずれかを実行し、[**次へ**] をクリックします。
-    - **すべてのアラート**の既定の設定をしてください。</br>OR
-    - **すべてのアラート**をクリックし、[**特定のフィルター**を選択します。SIEM サーバーに送信するアラートの種類を選択するためのフィルターを定義します。</br>![ウィザードのデータの種類の手順](media/ArcSightS1ExportOptions.png)
+    - **すべてのアラート**の既定の設定をしてください。<br/>OR
+    - **すべてのアラート**をクリックし、[**特定のフィルター**を選択します。SIEM サーバーに送信するアラートの種類を選択するためのフィルターを定義します。<br/>![ウィザードのデータの種類の手順](media/ArcSightS1ExportOptions.png)
   
-10. [おめでとうございます] 画面で、トークンをコピーし、後にします。</br>![SIEM のエージェントの作成] 画面](media/SIEMAgentFinished.png) 
+10. [おめでとうございます] 画面で、トークンをコピーし、後にします。<br/>![SIEM のエージェントの作成] 画面](media/SIEMAgentFinished.png) 
 
 > [!IMPORTANT]
 > この時点で、Office 365 クラウド アプリケーションのセキュリティで、SIEM のエージェントを設定しているが、SIEM のサーバの統合がまだ完了していません。SIEM のサーバの統合を続行するのには次の手順に進みます。
@@ -104,7 +104,7 @@ SIEM エージェントでは、Office 365 のクラウド アプリケーショ
     
 2. .Jar ファイルを zip 形式のフォルダーから抽出し、サーバー上で実行します。
     
-3. ファイルを実行すると、次の実行: コマンド。</br>
+3. ファイルを実行すると、次の実行: コマンド。<br/>
   ```
   java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
   ```
@@ -115,7 +115,7 @@ SIEM エージェントでは、Office 365 のクラウド アプリケーショ
 - サーバーのセットアップ中に、サーバー上で、JAR の塗りつぶしを実行することをお勧めします。
     - **Windows**:**ユーザーがログオンしているかどうかどうかを実行**するタスクを設定し**より長い場合にタスクを停止する**オプションをオフにすることを確認、スケジュールされたタスクとして実行します。
 
-    - **Linux**: を指定して実行コマンドを追加、**&** に、`rc.local`ファイルです。 </br>例:</br> 
+    - **Linux**: を指定して実行コマンドを追加、**&** に、`rc.local`ファイルです。 <br/>例:<br/> 
     ```
     java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &
     ```
@@ -128,7 +128,7 @@ SIEM エージェントでは、Office 365 のクラウド アプリケーショ
   
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>手順 3: SIEM エージェントが動作していることを検証します。
 
-1. **接続エラー**と Office 365 のクラウド アプリケーションのセキュリティ関連ポータルの SIEM のエージェントの状態が設定されていないエージェントの通知がない**切断**していることを確認してください。</br>たとえば、ご覧の SIEM サーバーが接続されています。</br>![SIEM サーバーが接続されています。](media/siem-connected.png)</br>ご覧の SIEM サーバー接続を切断します。</br>![SIEM サーバーが接続されていません](media/siem-not-connected.png) 
+1. **接続エラー**と Office 365 のクラウド アプリケーションのセキュリティ関連ポータルの SIEM のエージェントの状態が設定されていないエージェントの通知がない**切断**していることを確認してください。<br/>たとえば、ご覧の SIEM サーバーが接続されています。<br/>![SIEM サーバーが接続されています。](media/siem-connected.png)<br/>ご覧の SIEM サーバー接続を切断します。<br/>![SIEM サーバーが接続されていません](media/siem-not-connected.png) 
   
 2. /SIEM の Syslog サーバーに Office 365 のクラウド アプリケーションのセキュリティの警告が届きましたと表示になっていることを確認します。
   

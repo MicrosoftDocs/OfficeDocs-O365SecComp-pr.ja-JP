@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 description: トランスポート ルールを作成して、電子メール メッセージの Spam Confidence Level (SCL) を設定できます。SCL は、メッセージがスパムである可能性がどの程度かを測定します。スパムとは、迷惑な (通常は不要な) 電子メール メッセージです。メッセージに対するアクションは、メッセージの SCL 評価によって異なります。たとえば、同僚からのメッセージはスパムでないと信頼できるため、社内ユーザーからのメッセージの場合はスパム コンテンツ フィルターをバイパスできます。トランスポート ルールを使用して電子メール メッセージの SCL 値を設定すると、スパムの制御を強化できます。
-ms.openlocfilehash: 7abd0d1881374b1f2a4bd32ee480445f7683d1b3
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 97b9a62e76efea134af5bb1bb7bd25a98bb466d2
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002896"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972279"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>メール フロー ルールを使用して、メッセージの Spam Confidence Level (SCL) を設定する
 
@@ -42,7 +42,7 @@ ms.locfileid: "23002896"
     
 4. **[その他のオプション]** を選択し、 **[このルールを適用する条件]** で、このルールに設定するアクション (つまり、SCL 値の設定) をトリガーする条件を指定します。
     
-    たとえば、 **[送信者]** \> **[外部/内部である]** を設定し、 **[送信者の場所の選択]** ダイアログ ボックスで **[組織内]**、 **[OK]** の順に選択します。</br>
+    たとえば、 **[送信者]** \> **[外部/内部である]** を設定し、 **[送信者の場所の選択]** ダイアログ ボックスで **[組織内]**、 **[OK]** の順に選択します。<br/>
     ![送信者の場所の選択](media/EOP-ETR-SetSCL-1.jpg)
   
 5. **[実行する処理]** で、 **[メッセージのプロパティを変更する]** \> **[SCL (Spam Confidence Level) の設定]** の順に選択します。

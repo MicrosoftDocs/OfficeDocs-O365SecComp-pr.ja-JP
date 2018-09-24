@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: Strat_O365_IP
 ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
 description: Office 365 のセキュリティでは、データ損失防止 (DLP)&amp;準拠のセンターには、DLP ポリシーを使用する準備ができている 80 の機密性の高い情報の種類が含まれています。このトピックでは、機密性の高い情報の種類のすべてを一覧表示しを示しています DLP ポリシーそれぞれの種類を検出したとき。
-ms.openlocfilehash: 064606085363ba9de972511642993277451c8ce3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 2e59b322730ca7fa828a685ed3a80c48ebdbbfd8
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532523"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972359"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>機密情報の種類の検索基準：
 
@@ -3226,7 +3226,7 @@ Passeportn °
 ### <a name="pattern"></a>パターン
 
 次のいずれかのパターンに一致する:
-- 13 桁の数字が 2 桁の後にスペースの後に</br>
+- 13 桁の数字が 2 桁の後にスペースの後に<br/>
 または
 - 15 桁の連続する数字
 
@@ -4019,7 +4019,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
       </Entity>
 ```
 
-Keywords
+キーワード
 
 Dictionary_icd_10_cm キーワード辞書からすべての用語をに基づいて[病気の分類を国際、10 分のリビジョン、臨床変更 (ICD 10 CM)](https://go.microsoft.com/fwlink/?linkid=852604)。このタイプは、用語、保険のコードではないのだけを検索します。
 
@@ -4051,7 +4051,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 Dictionary_icd_9_cm キーワード辞書からすべての用語をに基づいて[病気の分類を国際、9 番目のリビジョン、臨床変更 (ICD 9 CM)](https://go.microsoft.com/fwlink/?linkid=852605)。このタイプは、用語、保険のコードではないのだけを検索します。
    

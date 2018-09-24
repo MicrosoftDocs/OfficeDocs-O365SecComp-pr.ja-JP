@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 description: Office 365 では、残りの部分と、最も強力な暗号化、プロトコル、および利用可能なテクノロジを使用して、移動中のコンテンツが暗号化されます。Office 365 の暗号化の概要を取得します。
-ms.openlocfilehash: e5c21cf456f9ccca2393b8985dd47e34745902cf
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a9f37fddf28461ee4912e0b8a1f5b922c59c009f
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532158"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972289"
 ---
 # <a name="encryption-in-office-365"></a>Office 365 での暗号化
 
@@ -70,7 +70,7 @@ ms.locfileid: "22532158"
 |組織内での暗号化を設定します。  <br/> |[Office 365 Enterprise で暗号化を設定する](set-up-encryption.md) <br/> |
 |Office 365 の証明書、技術、および TLS 暗号スイートの詳細を表示します。  <br/> |[Office 365 での暗号化に関する技術的な詳細](technical-reference-details-about-encryption.md) <br/> |
 |モバイル デバイス上で暗号化されたメッセージを操作します。  <br/> |[Android デバイスで暗号化されたメッセージを表示します。](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [IPhone または iPad で暗号化されたメッセージを表示します。](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
-|パスワード保護を使用してドキュメントを暗号化します。  <br/></br>  現時点では、パスワードによる保護では、Office Online でサポートされていません。パスワード保護のためには、デスクトップ バージョンの Word、Excel、および PowerPoint を使用します。           |[ドキュメント、ブック、またはプレゼンテーションの保護を追加または削除します。](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826)(**追加の保護**] セクションを選択して**暗号化パスワードを使用して**参照してください)  <br/> |
+|パスワード保護を使用してドキュメントを暗号化します。  <br/><br/>  現時点では、パスワードによる保護では、Office Online でサポートされていません。パスワード保護のためには、デスクトップ バージョンの Word、Excel、および PowerPoint を使用します。           |[ドキュメント、ブック、またはプレゼンテーションの保護を追加または削除します。](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826)(**追加の保護**] セクションを選択して**暗号化パスワードを使用して**参照してください)  <br/> |
 |ドキュメントの暗号化を解除します。  <br/> |[ドキュメント、ブック、またはプレゼンテーションの保護を追加または削除します。](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826)(**保護を解除する**セクションを選択し、し、[**パスワードの暗号化を解除**を参照してください)  <br/> |
    
 ## <a name="related-topics"></a>関連項目

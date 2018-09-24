@@ -19,12 +19,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 安全なリンク機能は、Office ドキュメントや電子メール メッセージのハイパーリンクのクリックの検証を提供します。フィッシング詐欺やその他の攻撃から組織を保護するために安全なリンクを使用します。
-ms.openlocfilehash: b2aa83d7958e030170bcbdc4bfb5e27578bf8b81
-ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
+ms.openlocfilehash: 35975ee58763578586b78d7d1f281fde81e1139b
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23955459"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972349"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 の ATP の安全なリンク機能
 
@@ -60,9 +60,9 @@ Office 365 ATP 安全なリンク (ATP の安全なリンク) ( [Office 365 ATP 
     
 ## <a name="how-atp-safe-links-works-with-office-documents"></a>Office ドキュメントに対する ATP の安全なリンクがどのように機能するか
 
-高レベルでは、ここでは ATP の安全なリンク保護のしくみの url (現在のバージョンの OneNote、Word、Excel、および PowerPoint では、Windows や Mac、iOS または Android デバイス、ウィンドウ、および Office オンライン上の Visio での Office アプリケーション) の Office 365 用リソースのアプリケーションで。
+高レベルでは、ここでは Url の Office 365 用リソースのアプリケーション (Word、Excel、および PowerPoint では、Windows や Mac、iOS または Android デバイス、Windows、OneNote オンライン、および Office オンライン上の Visio での Office アプリケーションの現在のバージョン) で ATP の安全なリンクの保護の動作します。
   
-1. ユーザーは、コンピューター、スマート フォンやタブレットに Office 365 用リソース インストールされています。
+1. ユーザーは、コンピューター、スマート フォンやタブレットに Office 365 用リソース インストールされています。(または、使用している Office オンラインのブラウザーで)。
     
 2. ユーザーは、Word、Excel、PowerPoint、または Visio を開くし、Office 365 の企業、職場、学校のアカウントを使用してにサインインします。ドキュメントには、Url が含まれています。
     

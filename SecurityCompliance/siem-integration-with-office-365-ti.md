@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb56b69b-3170-4086-82cf-ba40a530fa1b
 description: Office 365 の脅威インテリジェンスと Office 365 の活動の管理 API を使用しての脅威保護の高度な組織の SIEM のサーバーを統合します。
-ms.openlocfilehash: 40c84b9d7b7ec4c9b15383e3ffbbabf839294def
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 057d8ac101b96f37846ac751645934279d45dc88
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782144"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972259"
 ---
 # <a name="siem-integration-with-office-365-threat-intelligence-and-advanced-threat-protection"></a>Office 365 の脅威インテリジェンスと脅威の高度な保護と SIEM の統合
 
@@ -28,7 +28,7 @@ Office 365 の活動の管理 API は、組織の Office 365 と Azure Active Di
 SIEM サーバーまたは他の同様のシステムは必要があります**audit.general**ワークロードへのアクセスの検出イベントをポーリングします。詳細を参照してください[Office 365 の管理 Api を使用](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)します。 
 
 > [!IMPORTANT]
-> Office 365 のグローバル管理者であるか、SIEM の統合 Office 365 の脅威インテリジェンスと脅威の高度な保護を設定するのには、セキュリティとコンプライアンスの中心に割り当てられているセキュリティ管理者の役割を持っている必要があります。</br>Office 365 環境の監査ログをオンにする必要があります。ヘルプを表示するには、[オンまたはオフ、Office 365 を有効にする監査ログの検索](turn-audit-log-search-on-or-off.md)を参照してください。
+> Office 365 のグローバル管理者であるか、SIEM の統合 Office 365 の脅威インテリジェンスと脅威の高度な保護を設定するのには、セキュリティとコンプライアンスの中心に割り当てられているセキュリティ管理者の役割を持っている必要があります。<br/>Office 365 環境の監査ログをオンにする必要があります。ヘルプを表示するには、[オンまたはオフ、Office 365 を有効にする監査ログの検索](turn-audit-log-search-on-or-off.md)を参照してください。
 
 ## <a name="related-topics"></a>関連項目
 
