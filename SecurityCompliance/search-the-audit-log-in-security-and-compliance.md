@@ -3,7 +3,7 @@ title: '&amp;'
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Office 365 のセキュリティを使用して、 &amp; 、Office 365 の組織のユーザーと管理者のアクティビティを表示するのには統一された監査ログを検索するのにはコンプライアンス センターです。 '
-ms.openlocfilehash: dc673b8f52bacccfa746ad258ea91d8dd2074eeb
-ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
+ms.openlocfilehash: 4c56f6f0c5f5a1ace7b94fab63d839760045c66f
+ms.sourcegitcommit: 6562a0d171dacdcdb945d192f45ea1a4c0c1c0c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "24962973"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24974687"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>&amp;
 
@@ -47,7 +47,11 @@ ms.locfileid: "24962973"
 - Office 365 の電源の BI のユーザーと管理者の活動
     
 - マイクロソフトのチームでのユーザーと管理者の活動
+
+- Dynamics 365 のユーザーと管理者の活動
     
+- マイクロソフトのフローでのユーザーと管理者の活動
+
 - Yammer のユーザーと管理者の活動
     
 - Microsoft ストリーム内のユーザーと管理者の活動
@@ -57,7 +61,7 @@ ms.locfileid: "24962973"
 
 Office 365 の検索を開始する前に次の項目の監査ログを読み取ることを確認します。
   
-- (または別の管理者) する必要がありますを入れた Office 365 の監査ログの検索を開始する前に監査ログを記録します。オンにすることをクリックして * * ユーザーと管理者のアクティビティの記録を開始 * * セキュリティの**監査ログの検索**ページに&amp;コンプライアンス センターです。(このリンクが表示されない場合は、監査が既に有効になって、組織の。)有効にすると、監査ログが準備中し、準備が完了した後の時間のいくつかの検索を実行するにはことを示すメッセージが表示されます。これを行う 1 回だけがあります。 
+- (または別の管理者) する必要がありますを入れた Office 365 の監査ログの検索を開始する前に監査ログを記録します。を有効にすることにだけ**ユーザーと管理者のアクティビティの記録を開始**] をクリックして、セキュリティの**監査ログの検索**ページ&amp;コンプライアンス センターです。(このリンクが表示されない場合は、監査が既に有効になって、組織の。)有効にすると、監査ログが準備中し、準備が完了した後の時間のいくつかの検索を実行するにはことを示すメッセージが表示されます。これを行う 1 回だけがあります。 
     
     > [!NOTE]
     > 既定で監査を有効にしています。それまでを有効にできます、前述したように。 
@@ -91,11 +95,20 @@ Office 365 の検索を開始する前に次の項目の監査ログを読み取
     
 |**Office 365 サービス**|**30 分**|**24 時間**|
 |:-----|:-----|:-----|
-|Azure Active Directory (管理イベント)  <br/> ||![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|保護の高度な脅威と脅威インテリジェンス  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
 |Azure Active Directory (ユーザーのログイン イベント)  <br/> ||![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Azure Active Directory (管理イベント)  <br/> ||![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
+|Azure Active Directory (ユーザーのログイン イベント)  <br/> ||![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|データ損失防止  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Dynamics 365 CRM <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|電子情報開示  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Exchange Online  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+|Microsoft Flow  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Forms  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Project  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Stream  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Microsoft Teams  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Power BI  <br/> ||![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Power BI  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |セキュリティ&amp;コンプライアンス センター  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Sharepoint Online と OneDrive for Business  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Sway  <br/> ||![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
