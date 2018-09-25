@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 権限に関する詳細については、このトピックを使用して Office 365 の管理のアクセス
-ms.openlocfilehash: 063d291005ec40c21e55188e4ee7c6c8ed6594e8
-ms.sourcegitcommit: d31904e81f81d0fba75309a2bc8bbfb05565a0b4
+ms.openlocfilehash: 07e1f9090418e4261fef188ceb109c1b8083d34c
+ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24055262"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25011863"
 ---
 # <a name="privileged-access-management-in-office-365"></a>特権にアクセス、Office 365 の管理
 
@@ -70,10 +70,14 @@ Office 365 管理センターまたは Exchange 管理 PowerShell を使用す�
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 ### <a name="what-skus-do-i-need-to-use-privileged-access-in-office-365"></a>Office 365 にアクセス権限を使用する必要があるどのような Sku をしますか。
-管理者アクセス権を Office 365 の管理は、現在のみ E5 と高度なコンプライアンスの Sku をご利用できます。
+管理者アクセス権管理は、現在のみ向け Office 365 の E5 と高度なコンプライアンスの Sku を使用します。
 
 ### <a name="when-will-privileged-access-be-available-for-office-365-workloads-beyond-exchange"></a>特権を持つアクセス可能になります Exchange 以外の Office 365 の作業負荷でしょうか。
 その他の Office 365 のワークロードでは、この機能をすぐに提供する予定です。タイムラインを共有する準備ができました、Office 365 のロードマップを使用可能ながあります。
+
+### <a name="my-organization-needs-more-than-30-privileged-access-polices-will-this-limit-be-increased"></a>ポリシーを自分の組織のニーズが 30 のアクセス権限よりも、この制限値は増加するでしょうか。
+
+すぐに Office 365 の組織ごとの 30 のアクセス権限ポリシーの現在の制限値を大きくには計画されています。
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>Office 365 の管理者のアクセスを管理するためのグローバル管理者である必要がありますか。
 Office 365 の管理者のアクセスを管理することができるグローバル管理者特権が必要です。承認者のグループに含まれるユーザーに確認および承認の要求をグローバル管理者である必要はありません。 

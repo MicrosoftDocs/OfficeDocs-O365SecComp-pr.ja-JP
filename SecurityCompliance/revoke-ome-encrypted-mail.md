@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Office 365 管理者は、Office 365 のメッセージの暗号化で暗号化された電子メールの一部を取り消すことができます。
-ms.openlocfilehash: b2fd3e07bec6dfedd783a8a68169fc5f990a80d3
-ms.sourcegitcommit: 2150f49cf4305b75591a238ff649c57684c7632f
+ms.openlocfilehash: 19eb874fa15a21c29a9eb2823829e81ff244a555
+ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "25004250"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25011823"
 ---
 # <a name="office-365-message-encryption-email-revocation"></a>Office 365 のメッセージの暗号化メールの取り消し
 
@@ -62,7 +62,7 @@ ms.locfileid: "25004250"
 
 無効に電子メールのメッセージ ID がわかったら、セット OMEMessageRevocation コマンドレットを使用して電子メールを取り消すことができます。 
 
-1. [オンライン リモート PowerShell を使用して Exchange に接続](http://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx)します。
+1. [オンライン リモート PowerShell を使用して Exchange に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
     
 2. とおりセット OMEMessageRevocation コマンドレットを実行します。
     

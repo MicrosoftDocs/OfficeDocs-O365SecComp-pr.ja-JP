@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: このトピックを使用して、Office 365 にアクセス権限の管理を構成する方法の詳細については、
-ms.openlocfilehash: 6494505554a02f005df8f45839c9575094acbf1a
-ms.sourcegitcommit: d31904e81f81d0fba75309a2bc8bbfb05565a0b4
+ms.openlocfilehash: 47cae93a41b0fd60645021f6f299645777a9a2e1
+ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24055252"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25011843"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Office 365 にアクセス権限の管理を構成します。
 
@@ -102,6 +102,8 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 ## <a name="step-3---create-an-access-policy"></a>手順 3 - アクセス ポリシーを作成します。
 
+作成し、Office 365 の組織に最大 30 個までの特権のアクセス ポリシーを構成できます。
+
 ### <a name="using-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターを使用してください。
 
 1. 組織の管理者アカウントの資格情報を使用して[Microsoft 365 管理センター](https://portal.office.com)にサインインします。
@@ -144,6 +146,8 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 ### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a>特権付きタスクを実行する昇格の承認を要求します。
 
+アクセス権限の要求は、要求の送信後 24 時間まで有効です。要求の有効期限が切れる場合はありませんが承認または拒否、およびアクセスが承認されていません。
+
 #### <a name="using-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターを使用してください。
 
 1. ユーザーの資格情報を使用して[Microsoft 365 管理センター](https://portal.office.com)にサインインします。
@@ -160,7 +164,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
     **要求**: 使用可能なポリシーから選択
 
-    **期間 (時間)**: 要求されたアクセスの時間数
+    **期間 (時間)**: 要求されたアクセスの時間数。要求できる時間数に制限はありません。
 
     **コメント**: コメントのテキスト フィールドは、アクセス権の要求に関連します。
 
@@ -235,6 +239,31 @@ Deny-ElevatedAccessRequest -RequestId <request id> -Comment '<denial comment>'
 例:
 ```
 Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<denial comment>'
+```
+
+## <a name="delete-a-privileged-access-policy-in-office-365"></a>Office 365 の管理者のアクセス ポリシーを削除します。
+アクセス権限ポリシーを削除するには、それが組織で不要になった場合。
+
+### <a name="using-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターを使用してください。
+
+1. 組織の管理者アカウントの資格情報を使用して[Microsoft 365 管理センター](https://portal.office.com)にサインインします。
+
+2. **設定**に移動し、管理センターで、 > **のセキュリティとプライバシー** > **のアクセス権限**。
+
+3. **アクセス ポリシーを管理し要求**を選択します。
+
+4. **ポリシーを構成する**を選択します。
+
+5. 削除するポリシーを選択し、**削除するポリシー**を選択します。
+
+6. **閉じる**を選択します。
+
+### <a name="using-exchange-management-powershell"></a>Exchange 管理 PowerShell を使用します。
+
+次のコマンドを実行 Exchange オンライン アクセス権限ポリシーを削除する Powershell:
+
+```
+Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you want to delete>
 ```
 
 ## <a name="disable-privileged-access-in-office-365"></a>Office 365 の管理者のアクセスを無効にします。
