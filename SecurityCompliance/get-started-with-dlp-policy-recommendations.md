@@ -8,17 +8,14 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
 ms.assetid: 2ea4459b-cb13-4ce2-b9d1-0619316df88c
 description: この見解を優先する推奨設定を使用すると保存されているし、通知することにより可能なギャップがない場合、Office 365 の共有は、機密性の高いコンテンツを安全に保つ、DLP ポリシーの適用範囲。セキュリティのホーム ページにこの推奨事項が表示されます&amp;コンプライアンス センター、ドキュメントのトップ 5 の最も一般的な種類の機密情報が含まれている DLP ポリシーで保護されていない場合。
-ms.openlocfilehash: 842387397b9b95d236660c5809174c2b356cf14a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fcd3a5a3a12932b22c310938c12f71fb01019411
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532694"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002630"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>DLP の推奨ポリシーの概要
 

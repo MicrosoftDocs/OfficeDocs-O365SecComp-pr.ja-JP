@@ -6,16 +6,17 @@ manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
+search.appverid: MET150
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 1e0c579c-26e0-462a-a1b0-d7506dfe05fa
 description: 組織内のインフォメーション ワーカーは、さまざまな種類の典型的な 1 日の中に機密情報を処理します。文書 Fingerprinting では、組織全体で使用される標準のフォームを識別することによってこの情報を保護することが容易になります。このトピックでは、ドキュメントのフィンガー プリントと PowerShell を使用して作成する方法の概念について説明します。
-ms.openlocfilehash: d73b769e7a014f2642a0fcd66cc6a500c68c46c3
-ms.sourcegitcommit: 4be502d1fc6cbaef4c72d599758d51efe3a173c9
+ms.openlocfilehash: c33d7412fe4774b74efcd0928df4c99c7bcbb626
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23867501"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002650"
 ---
 # <a name="document-fingerprinting"></a>ドキュメント フィンガープリンティング
 

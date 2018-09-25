@@ -9,16 +9,15 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
-- MET150
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: 組織は、法律、コンプライアンスのための時間の期間のドキュメントまたはその他のビジネス要件を維持する必要があります。ただし場合は、組織では、ドキュメントが必要な複数を繰り返し、不要な法的リスクを作成します。ドキュメント削除のポリシーを使用して減らすことができます積極的にリスク特定の期間の後、サイト内のドキュメントを削除することによって、ビジネス ドキュメントが作成された後、5 年間のサイトのユーザーの OneDrive 内のドキュメントを削除するなどです。
-ms.openlocfilehash: 495dd781c56e25e884d47f72a7e48410ea340208
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 7af818dd7d9dd87eb671bdd86ef03e0b5dead1e2
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013661"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002670"
 ---
 # <a name="overview-of-document-deletion-policies"></a>ドキュメント削除ポリシーの概要
 

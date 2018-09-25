@@ -9,16 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
-- MET150
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: 組織は多くの場合、コンプライアンス、法律、その他の規制により、ドキュメントを一定期間保持する必要があります。しかし、必要以上にドキュメントを長く保持すると、組織が法的なリスクにさらされる場合があります。
-ms.openlocfilehash: 115e4d7df93d81e7ee5a860f20a00d9cb175f927
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6bf4c0604708608ad7af064f4b32b57d33208a39
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23014001"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002660"
 ---
 # <a name="create-a-document-deletion-policy"></a>ドキュメント削除ポリシーを作成する
 
