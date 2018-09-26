@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: '管理者として表示、離すと、して Office 365 の正偽の検疫済みメッセージを報告できます。Office 365 は、メッセージをフィルター処理し、いくつかの理由を検査するそれらを送信するようポリシーを設定することができます: 迷惑メール、一括、フィッシング、マルウェアと、認識されたため、またはメール フロー ルールに一致するためです。 '
-ms.openlocfilehash: be6384d8937e25aec55d82d8212c49d25b64b9a1
-ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
+ms.openlocfilehash: 67fb4ac8e3a5fd443efb04d4f74e9844d2fa8c86
+ms.sourcegitcommit: f7fff49ae0b1c3056faa58d73c1070cb4e638fbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839101"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25018881"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Office 365 の管理者として検疫されたメッセージやファイルを管理します。
 
@@ -59,7 +59,7 @@ ms.locfileid: "23839101"
   
 特定のメッセージを検索する検索結果を抽出することもできます。ヒントについては、この資料の[結果をフィルター処理し、検疫済みのメッセージとファイルを検索して](manage-quarantined-messages-and-files.md#BKMK_AdvSearch)参照してください。 
   
-特定の検疫済みのメッセージを確認した後、詳細を表示するメッセージをクリックし、他のユーザーの受信トレイにメッセージを解放するように、アクションを実行します。
+特定の検疫済みのメッセージを確認した後、詳細を表示するメッセージをクリックし、他のユーザーのメールボックスにメッセージを解放するように、アクションを実行します。
   
 ## <a name="view-your-organizations-quarantined-files"></a>組織の検疫済みファイルを表示します。
 
