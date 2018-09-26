@@ -10,17 +10,14 @@ f1_keywords:
 - ms.o365.cc.ComplianceSearch
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: 'コンテンツの検索を使用して、Office 365 のセキュリティで&amp;のビジネス ・ サイトのメールボックス、SharePoint Online サイト、および OneDrive を検索するコンプライアンス センターです。 '
-ms.openlocfilehash: 61c6c3933a75567acb04f793cb6815322fb3fada
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: d480579db1c39d51d4fa8b0931106f135c5339d2
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531992"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038320"
 ---
 # <a name="run-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Office 365 のセキュリティ コンテンツの検索を実行する&amp;コンプライアンス センター
 
@@ -77,7 +74,7 @@ Office 365 のセキュリティで電子的証拠開示されているコンテ
 ## <a name="create-a-search"></a>検索を作成します。
 <a name="create"> </a>
 
-1. [https://protection.office.com](https://protection.office.com)。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
 2. 職場、学校のアカウントを使用して Office 365 にサインインします。
     
@@ -360,11 +357,11 @@ Office 365 のセキュリティで電子的証拠開示されているコンテ
     
   - 必要がある**キーワードの一覧を表示**] チェック ボックスを選択し、検索クエリを作成するのには別々 の行にそれぞれのキーワードを入力し、 **OR**演算子で、(キーワードまたはキーフレーズ) でそれぞれの行が接続されています。キーワード ボックスにキーワードのリストを貼り付けまたはキーワードを入力した後**Enter**キーを押すだけは、 **OR**演算子で接続しません。誤った方法と正しいキーワードのリストを追加する例を次に示します。 
     
-    **間違い**
+    **正しくありません。**
     
     ![(に貼り付けることによって、一覧の [キーワード] ボックス)、[キーワード] ボックスの一覧の書式を設定するのには不適切な方法](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
-    **正しい**
+    **そうです**
     
     ![(チェック ボックスをオンし、[貼り付けのリストを選択する) で、[キーワード] ボックスの一覧の書式を設定する正しい方法](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   

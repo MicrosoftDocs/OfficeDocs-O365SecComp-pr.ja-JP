@@ -10,17 +10,14 @@ f1_keywords:
 - ms.o365.cc.AuditingHelp
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- SPO160
-- MOE150
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: 'Office 365 のセキュリティを使用して、 &amp; 、SharePoint Online および Exchange オンライン組織のさまざまなレポートを取得するのにはコンプライアンスの中心と Azure Active Directory を報告します。  '
-ms.openlocfilehash: 0b633583e14a18c7cf579d10462cf41714397812
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 019ccc49352db1aaf392287f62fa63f66913e293
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531629"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038340"
 ---
 # <a name="reports-in-the-office-365-security-amp-compliance-center"></a>Office 365 のセキュリティ レポート&amp;コンプライアンス センター
 
@@ -41,7 +38,7 @@ Office 365 のセキュリティ**レポートを表示する**ページを使�
   
  **セキュリティ レポート] ページでビューを開くに&amp;コンプライアンス センター。**
   
-1. [https://protection.office.com/#/viewreports](https://protection.office.com/#/viewreports)。
+1. [https://protection.office.com/#/viewreports](https://protection.office.com/#/viewreports) に移動します。
     
 2. Office 365 組織内のユーザー アカウントの資格情報を使用して Office 365 にサインインします。
     

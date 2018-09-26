@@ -9,17 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: '対象のメールボックスに実際にインポートを取得するアイテムをフィルターするのには Office 365 のインポート サービスの新しいインテリジェントなインポート機能を使用します。インテリジェント ・ インポートでは、事前にインポートし、何を残すには、どのようなデータを決定することができます。インテリジェント ・ インポートでは、Office 365 にインポートするデータの情報も提供します。 '
-ms.openlocfilehash: 723a2e05a1f5d256e99bcf8497643435d0c98a23
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c90d9df62c7d8c411196b283acec37959fc95e57
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531560"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038200"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>Office 365 に PST ファイルをインポートするときにデータをフィルター処理します。
 

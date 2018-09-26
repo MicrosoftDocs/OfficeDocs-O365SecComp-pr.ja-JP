@@ -9,17 +9,15 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: 場合でも、別のメールボックスに同じメッセージの複数のインスタンスが検出された可能性がありますが、電子メール メッセージのコピーを 1 つだけをエクスポートするためにエクスポートされる電子的証拠開示検索結果の重複を除外するオプションがあります。
-ms.openlocfilehash: 02a4f9f6db0fb8831d5e5cc13adaffbd0c4dcecc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 5e54f0e5841fdbd29d1ab8b6b9509ff06e827920
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532691"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038010"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>電子情報開示検索結果での重複除去
 

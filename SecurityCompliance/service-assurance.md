@@ -9,17 +9,16 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
-- MET150
 - MOE150
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: サードパーティの監査をダウンロード、どの Microsoft 顧客データを保護しとすることができます遵守方法 ISO、HIPAA、FINRA、FedRAMP と Office 365 を使用する場合を把握します。
-ms.openlocfilehash: eeb1ac1c22bfdd0063c5e1dda3515e52c1bc8d80
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 77fdc042639fb30d2c222148f3eea9f0e6470856
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532061"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038150"
 ---
 # <a name="service-assurance-in-the-office-365-security-amp-compliance-center"></a>サービスの Office 365 のセキュリティの保証&amp;コンプライアンス センター
 
@@ -54,7 +53,7 @@ Office 365 がお客様の業種については、次のように標準、法律
   
 セキュリティを使用してアクセス可能なサービスの保証は、&amp;コンプライアンス センターです。ここでは、そこに取得する方法です。
   
-1. [https://protection.office.com](https://protection.office.com)。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
 2. 職場、学校のアカウントを使用して Office 365 にサインインします。 
     

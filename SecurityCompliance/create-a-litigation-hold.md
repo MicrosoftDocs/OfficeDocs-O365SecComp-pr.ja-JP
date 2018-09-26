@@ -8,15 +8,14 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: 18b3b3a42e5671b1507522c89faaa4ae34198831
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: aa78d12046108aa1f1b974f01c02ff923b99b97b
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532546"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25037960"
 ---
 # <a name="create-a-litigation-hold-in-office-365"></a>証拠保全を Office 365 で作成します。
 

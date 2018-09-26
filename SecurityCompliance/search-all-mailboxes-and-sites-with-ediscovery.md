@@ -8,16 +8,14 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MET150
 ms.assetid: 56e2978f-71b6-4141-b769-ad856d31bbec
 description: Office 365 の電子情報開示センターの 1 つの電子的証拠開示検索を行うビジネス サイトのすべての Exchange Online のメールボックス、SharePoint Online サイト、および OneDrive を検索できます。組織内すべてのコンテンツ ソースを検索するのには、電子的証拠開示マネージャー割り当てる必要がありますコンテンツ ソースごとに電子情報開示の適切なアクセス許可です。
-ms.openlocfilehash: b3508d5929ca2b5b7a937eb2dccf677a2968cbbc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 5612faf6113ceef292f90b49ec70ad7b30905646
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531990"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038100"
 ---
 # <a name="search-all-mailboxes-and-sites-using-the-ediscovery-center"></a>電子情報開示センターを使用したすべてのメールボックスとサイトの検索
 

@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: エラーや入力ミス、サポートされていない文字などのコンテンツの検索、キーワード クエリを確認し、小文字のブール演算子は、検索を実行する前にします。、エラーが見つかった場合、修正済みのクエリをお勧めします。
-ms.openlocfilehash: 0d2119ceef4ce3777d3967a56357551e235e426c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6ae14edc29bb7f8bab5dd2306282a69443872633
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532139"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038290"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>コンテンツ検索のクエリでエラーを確認する
 

@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: Office 365 のセキュリティ コンテンツの検索結果をエクスポートするときにレポートを無効にするローカル コンピューターの Windows レジストリを編集する&amp;Comliance センター。これらのレポートを無効にすると、ダウンロード時間を短縮し、ディスク領域を節約できます。
-ms.openlocfilehash: 3c09e0563ddd4469f21950dc3a698ce08b0014df
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 62782c472adca892e1dcf239a45fe80f0fa7251b
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532675"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25037980"
 ---
 # <a name="disable-reports-when-you-export-content-search-results-in-the-office-365-security-amp-compliance-center"></a>Office 365 のセキュリティ コンテンツの検索結果をエクスポートするときに、レポートを無効にする&amp;コンプライアンス センター
 

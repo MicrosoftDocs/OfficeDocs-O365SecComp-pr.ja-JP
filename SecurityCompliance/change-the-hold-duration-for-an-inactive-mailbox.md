@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Office 365 のメールボックスを無効になりましたが後、は、保留中または非アクティブなメールボックスに割り当てられている Office 365 の保持ポリシーの期間を変更できます。保留期間は、[回復可能なアイテムのフォルダーが保持されているどのくらいの時間の項目を定義します。
-ms.openlocfilehash: 22bd9f9294b625a38d243f6235097d1aee437121
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e3d1d6c7ec0311813dfa1144cc960d2fed9e160d
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532185"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038060"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Office 365 での非アクティブなメールボックスの保持期間を変更します。
 
@@ -35,7 +33,7 @@ ms.locfileid: "22532185"
     
   - [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
-  - [Office 365 のセキュリティへの接続&amp;コンプライアンス センター PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
+  - [Office 365 セキュリティ&amp;コンプライアンス センター PowerShell への接続](https://go.microsoft.com/fwlink/?linkid=799771)
     
 - 電子情報開示ケースに関連付けられているホールドは無限ホールド、つまり変更できるホールド期間がない点にご注意ください。アイテムは、ホールドが削除されて非アクティブなメールボックスが削除されるまで無限に保持されます。
     

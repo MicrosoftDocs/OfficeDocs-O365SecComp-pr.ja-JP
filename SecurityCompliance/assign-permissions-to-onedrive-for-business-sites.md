@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
-- MET150
 ms.assetid: 422858ff-917b-46d4-9e5b-3397f60eee4d
 description: SharePoint Online の電子情報開示センターを使用するには、特定のキーワード、機密情報、およびその他の検索条件を組織内のビジネス サイトのすべての OneDrive を検索します。組織内の各ユーザーのそれぞれの OneDrive という名前のサイト コレクション内にある、ビジネス サイトの所有者ではhttps://domain-my.sharepoint.comです。既定では、Office 365 のグローバル管理者またはコンプライアンス マネージャーはビジネス サイトの任意の OneDrive を検索するのには SharePoint Online での電子情報開示センターを使用できません。検索するには、ビジネス サイトの管理者またはコンプライアンス担当マネージャー、OneDrive はビジネス サイトには、その OneDrive のサイト コレクションの管理者である必要があります。
-ms.openlocfilehash: 48f84dfe21f0f99913ba2c27123d6c0e1f8bc03f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 61f068a03bcce599d9f1b7eb62d7b317b7feab68
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532171"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038090"
 ---
 # <a name="assign-ediscovery-permissions-to-onedrive-for-business-sites"></a>OneDrive for Business サイトに対する電子情報開示のアクセス許可を割り当てる
 

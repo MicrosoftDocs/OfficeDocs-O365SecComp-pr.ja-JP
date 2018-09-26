@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
-- MET150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: この資料で Windows PowerShell スクリプトを使用して、簡単に既存のコンテンツ検索、セキュリティのクローンを作成する&amp;Compliane センターを検索します。検索を複製する際に、元の検索と同じプロパティが含まれています (新しい名前) を持つ新しい検索が作成されます。できます (変更することによって、キーワード クエリまたは日付の範囲)、新しい検索を編集し、それを実行します。
-ms.openlocfilehash: a4f801e3de281e8caf8aeb7d1c2bd48f0facb77c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fd2ea0d8fa812d23e7479b664b13c786a62d5a38
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532021"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038050"
 ---
 # <a name="clone-a-content-search-in-the-office-365-security-amp-compliance-center"></a>クローンのコンテンツの検索では、Office 365 のセキュリティ&amp;コンプライアンス センター
 

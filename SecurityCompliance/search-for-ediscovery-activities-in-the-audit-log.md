@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: コンプライアンスの管理者は、セキュリティでコンテンツの検索および電子的証拠開示のケースのタスクを実行するときに記録されるイベントの Office 365 の監査ログを検索する方法について&amp;コンプライアンス センターです。
-ms.openlocfilehash: 24bd629f5576fe042e59d5cbbdecf01b3fd59cf0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a4cc3a6b5030a6412d739236e4c534f36948d57f
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532253"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038350"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Office 365 の監査ログに電子的証拠開示活動を検索します。
 
@@ -43,7 +41,7 @@ Office 365 の監査ログの検索の詳細については、アクセス許可
 
 現時点では、Office 365 の監査ログに電子的証拠開示の活動を表示するのには、いくつかの特定の操作を実行する必要があります。ここではどのようにします。
   
-1. [https://protection.office.com](https://protection.office.com)。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
 2. 職場、学校のアカウントを使用して Office 365 にサインインします。
     

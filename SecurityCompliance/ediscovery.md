@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
-- MET150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Office 365 には、を検索し、Exchange メールボックスなど、SharePoint とビジネス サイト、Office 365 のグループ、および Skype の OneDrive のビジネス会話の別の場所にコンテンツを保持するに使用できるさまざまな電子的証拠開示ツールが用意されています。
-ms.openlocfilehash: 0e458e5b2ba83861e7b715ec66a30695045b2e57
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f137454291bcdcdae6f0c61e2639b223a3e310a8
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532550"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038240"
 ---
 # <a name="ediscovery-in-office-365"></a>Office 365 の電子情報開示
 
@@ -77,7 +76,7 @@ Office 365 には、次のような電子的証拠開示ツールが用意され
    
 [Return to top](ediscovery.md#top)
   
-## <a name="office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery
+## <a name="office-365-advanced-ediscovery"></a>Office 365 の詳細な電子情報開示
 <a name="advancedediscovery"> </a>
 
 次の表には、について学習し、Office 365 の高度な電子的証拠開示ツールを使用する場合に役立つトピックへのリンクが含まれています。

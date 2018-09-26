@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: 電子的証拠開示のサポート案件を使用して、Office 365 のセキュリティで&amp;、組織の法的調査を管理するためのコンプライアンス センターです。E5 サブスクリプションがある場合は、テキスト分析、機械学習、および高度な電子的証拠開示の予測のコーディング機能を使用して、さらに大文字のデータを分析できます。
-ms.openlocfilehash: ef8ff9347f7c1d604a01b70f54a1998fde91ace8
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 7d00268a94613dfc0a1bef6314b5f917de5b9954
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23230029"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038270"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Office 365 の法的調査を管理します。
 

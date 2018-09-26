@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: コンテンツの検索を使用して、Office 365 のセキュリティで&amp;コンプライアンス センターを対象となるコレクションを実行します。対象となるコレクションでは、サポート案件への応答のアイテム、または特権を持つアイテムが特定のメールボックスまたはサイトのフォルダー内にあることを確信していることを意味します。この資料のスクリプトを使用すると、フォルダーの ID を検索する特定のメールボックスまたはサイト フォルダーのパスを取得します。
-ms.openlocfilehash: 3ff0ca00915bce53e9e932316c5ab47884f346b2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bb808e38f24ebf09a975b3082ef1dc61bc6344c4
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531672"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038300"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Office 365 でのコンテンツの検索を使用して、コレクションの対象となります。
 
@@ -210,7 +208,7 @@ ms.locfileid: "22531672"
 > [!NOTE]
 > 使用して、 `path` OneDrive の場所を検索するプロパティが検索結果に、.png、.tiff、または .wav ファイルなどのメディア ファイルを返しません。 
   
-1. [https://protection.office.com](https://protection.office.com)。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
 2. アカウントとステップ 1 でスクリプトを実行するために使用する資格情報を使用して Office 365 にサインインします。
     

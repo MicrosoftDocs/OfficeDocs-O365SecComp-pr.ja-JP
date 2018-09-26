@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: 一部の項目をインデックス (インデックス付けされない呼び出しの項目も) は、Exchange メールボックスのアイテムと SharePoint のドキュメントと OneDrive のサイトが何らかの理由がコンテンツの検索用にインデックス完全にいなかったのです。この記事で項目が検索用インデックスを作成することはできず、部分的にインデックス付きの項目として返される理由を説明、部分的にインデックス付きのアイテムの検索エラーを識別して PowerShell スクリプトを使用して、部分的にインデックス付きの電子メールを組織のリスクを判断するのにはアイテムです。
-ms.openlocfilehash: 4e8e8c31e6c5450a9b84a1240c2ae8d891c1bd6f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 98f794e80ea8a6016887ff139bc5b546c438f093
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532696"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038080"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Office 365 の電子情報開示で部分的にインデックスが作成されたアイテムを調査する
 

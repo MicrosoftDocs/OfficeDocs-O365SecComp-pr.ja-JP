@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: この資料のスクリプトを使用して、Office 365 のセキュリティで電子的証拠開示のサポート案件に関連付けられているすべての保留に関する情報を含むレポートを生成します&amp;コンプライアンス センターです。
-ms.openlocfilehash: 8bc1285f776e2b1aa0c0330c06ccffff8ce4585c
-ms.sourcegitcommit: c166964fe14eec69139a2d3d9c10d2c40ab33f91
+ms.openlocfilehash: b6cef2824002d7e45e4f500bc6c1e9bc880cbd41
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23258645"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038210"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Office 365 での電子的証拠開示のケース内の保留に関するレポートを作成します。
   
@@ -32,7 +30,7 @@ ms.locfileid: "23258645"
     
 - この資料のスクリプトには、最低限のエラー処理があります。主な目的は、組織で電子的証拠開示のサポート案件に関連付けられている保留リストに関するレポートをすばやく作成するのには。
     
-- このトピックで提供されるサンプル スクリプトは、Microsoft の標準サポート プログラムまたはサービスでサポートされていません。サンプル スクリプトは、どのような種類の保証もなく、IS として提供されます。さらに、Microsoft はいかなる黙示の保証を含む、いずれかのもので、商品性または特定目的に対する適合性の。サンプル スクリプトおよびドキュメントのパフォーマンスまたは使用から生じるすべてのリスク負担しなければなりません。いかなる場合においてマイクロソフト、著者、または、作成、生産、またはスクリプトの配信に参加するすべてのユーザーを負いませんいかなる損害に対して損害を含め、制限、ビジネス利益、業務の中断、損失の損失の損害ビジネス情報、またはその他の金銭の損失) マイクロソフトが損害の可能性について知らされていた場合でもに、サンプル スクリプトまたはドキュメントを使用すること、または使用から生じる。
+- このトピックで提供されているサンプル スクリプトは、いかなる Microsoft 標準サポート プログラムまたはサービスでもサポートされていません。サンプル スクリプトは、いかなる保証もありません。これらのサンプルに対しては、Microsoft 社は商品またはその他の何らかの目的を持つものに付随すると考えられている暗黙の責任も一切認めません。これらのサンプルは、完全にユーザーの責任において使用してください。いかなる場合でも、Microsoft 社および販売店は、これらのサンプルを使用した結果発生した損害およびこれらのサンプルを使用できなかったことによる損害に対して、商業的損失、業務の中断、企業情報の喪失、およびその他の金銭的損失等を含め、何ら制限も設けることなく一切の責任を認めません。これは、たとえ Microsoft 社がそのような損害の可能性について通知を受けていた場合でも同じです。
     
 ## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a>手順 1: セキュリティを保護する接続を使用する&amp;リモート PowerShell を使用してコンプライアンス センター
 

@@ -8,18 +8,15 @@ ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: コンテンツの検索ツールに電子的証拠開示を使用して、Office 365 のセキュリティで&amp;の SharePoint サイトおよび OneDrive の場所、およびインスタント メッセージのビジネス用の Skype での会話でドキュメントを Exchange のメールボックスに電子メールをすばやく検索するコンプライアンス センターです。
-ms.openlocfilehash: b9595f66633cca762ea74eaa9402f50ec08c2d7c
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: d7ccdd8e501e38b67cc00ec457622080d6c58001
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23229979"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038230"
 ---
 # <a name="search-for-content-in-office-365"></a>Office 365 でコンテンツを検索します。
 

@@ -3,7 +3,6 @@ title: Office 365 の Office 365 のエンジニア リング内部のログを�
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/18/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -12,15 +11,15 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: Office 365 のエンジニア リング チームは、どのように内部のログの詳細については。
-ms.openlocfilehash: 1a613584b6b815524435acb20db7a8022d95e3bc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4cade759fb4c095565b4e1f85ce15ed546177082
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531857"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038190"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Office 365 のエンジニアリングのための内部ログ記録
-に加えて、イベントやログのデータが提供されていますが、Office 365 のエンジニアに提供される内部のログのデータ収集システムもあります。さまざまな種類のログ データは、Office 365 のサーバーから、大規模な内部データの世界と呼ばれるサービスをコンピューターにアップロードされます。各サービス ・ チームは、集計と分析のための世界のデータベースに、それぞれのサーバーの監査ログをアップロードします。このデータ転送は、具体的には承認済みのポートとプロトコルの Office データ ローダー (ODL) と呼ばれる独自の自動化ツールを使用して上の FIPS 140-2 検証 TLS 接続を介して行われます。
+に加えて、イベントやログのデータが提供されていますが、Office 365 のエンジニアに提供される内部のログのデータ収集システムもあります。さまざまな種類のログ データは、Office 365 のサーバーから、大規模な内部データの世界と呼ばれるサービスをコンピューターにアップロードされます。各サービス ・ チームは、集計と分析のための世界のデータベースに、それぞれのサーバーの監査ログをアップロードします。このデータ転送は、具体的には承認済みのポートとプロトコルの Office データ ローダー (ODL) と呼ばれる独自の自動化ツールを使用して上の FIPS 140-2 検証 TLS 接続を介して行われます。ツールを収集するために Office 365 の使用プロセスの監査レコードを永続的にすることはできないし、元に戻す変更の監査レコードの内容や時間の順番です。
 
 サービス チームは、システムと運用のパフォーマンスを測定してのに異常との問題やセキュリティ上の問題がある可能性のあるパターンを検索するのにアプリケーションの使用状況の分析を実施するのには、一元的なリポジトリとして世界を使用します。各サービス ・ チームは、基準を含む多くの場合によっては目的の情報を分析するために世界では、ログのアップロードします。
 - イベント ログ
