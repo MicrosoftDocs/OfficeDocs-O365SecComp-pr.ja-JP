@@ -15,12 +15,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: 認識し、Office 365 で電子メールのセキュリティを侵害されたアカウントに対応する方法を学習します。
-ms.openlocfilehash: bf3350da88804639356100fb5be2403c76cbcec6
-ms.sourcegitcommit: 17dda7ece5c9e884944a92ac0f842cf1e62ec506
+ms.openlocfilehash: b10bf58aaebc46938e3962494ff30dfb1e226130
+ms.sourcegitcommit: 411713004251ee62d29b550eabea04c08a87e41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23977592"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25341422"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>侵害された Office 365 電子メール アカウントへの対応
 

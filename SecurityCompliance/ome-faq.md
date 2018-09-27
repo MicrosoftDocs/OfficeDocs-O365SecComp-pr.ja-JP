@@ -3,7 +3,7 @@ title: Office 365 Message Encryption に関する FAQ
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 8/28/2018
+ms.date: 09/27/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Office 365 で新しいメッセージの保護機能のしくみについて質問があるでしょうか。ここで回答を確認します。
-ms.openlocfilehash: 8fc3fa2378dfc8dba6ed17c042269f726235bc58
-ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
+ms.openlocfilehash: c580ef701f6ee98ea2fc71df792256b1792c73cd
+ms.sourcegitcommit: 411713004251ee62d29b550eabea04c08a87e41f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839957"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25341432"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 Message Encryption に関する FAQ
 
@@ -121,6 +121,10 @@ Word、Excel、または PowerPoint ファイルなど、ファイル形式が�
 
 現在のみ設定できますメール フロー ルールを Exchange オンライン。暗号化は現在サポートされていません、セキュリティによる DLP の&amp;コンプライアンス センターです。
   
+## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>共有メールボックスに送信された暗号化メッセージを開くことができますか。
+
+現在の暗号化されたメッセージは、共有メールボックスではサポートされていません。
+
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>暗号化されたメッセージを自分の会社ブランド設定をカスタマイズできますか。
 
 うん！電子メール メッセージおよびホーム ポータルをカスタマイズする方法の詳細についてを参照してください暗号化されたメッセージに、組織のブランドを追加します。参照してください[、暗号化されたメッセージを組織のブランドを追加します](add-your-organization-brand-to-encrypted-messages.md)。
