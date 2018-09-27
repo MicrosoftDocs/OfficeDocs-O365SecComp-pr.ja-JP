@@ -12,28 +12,18 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Word、Excel、PowerPoint、および Visio のファイルおよび電子メール メッセージ内の悪意のあるリンクから組織を保護するために、安全なリンクのポリシーを設定します。
-ms.openlocfilehash: f1b5ca193043c5fffdcf5e2dee21a08f388fdcdf
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 94ad3a5d497a5fe97144e3aad29ba25d2073cde1
+ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972309"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25092953"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Office 365 の ATP の安全なリンクのポリシーを設定します
 
 [ATP の安全なリンク](atp-safe-links.md)、 [Office 365 の高度な脅威保護](office-365-atp.md)(ATP) の機能は、フィッシングやその他の攻撃で使用される、悪意のあるリンクから組織を保護するために役立ちます。必要がある場合[Office 365 のセキュリティに割り当てられたアクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)ATP の安全なリンク ポリシーをセットアップするには、web アドレス (Url) をクリックすることを確認のために、組織を保護します。メール内の Url、および Office ドキュメント内の Url をスキャンするのには、ATP の安全なリンク ポリシーを構成できます。
   
-新機能は、ATP の安全なリンクに追加されている継続的にします。
-  
-- 遅延の年 2017年 10 月で ATP の安全なリンクの保護は、Word、Excel、PowerPoint ウィンドウ、iOS および Android デバイスは、Windows 上の Visio ファイルなど、Office 365 用リソースのドキュメントの Url と、電子メール内の Url に適用する拡張されます。
-    
-- 2018年 3 月で以降では、ATP の安全なリンクの保護は、組織内のユーザー間で送信される電子メールに適用する拡張されます。
-    
-- 遅延 2018年 3 月で以降では、(オンラインの Word、Excel のオンライン、PowerPoint オンラインでは、および OneNote オンライン) オンライン Office および Office 365 用リソースを Mac OS での Url に適用する分析ツールの安全なリンクの保護が拡張されます。
-    
-- 月 2018年で以降では、新しい配色パターン、詳細については、特定の推奨事項があってもサイトを継続する機能と[警告のページ](atp-safe-links-warning-pages.md)が更新されます。 
-
-新機能が追加されるは、既存の分析ツールの安全なリンク ポリシーを調整する必要があります。
+[ATP の安全なリンクに新しい機能が随時追加](atp-safe-links.md#new-features-added-to-atp-safe-links)されます。新機能が追加されるは、既存の分析ツールの安全なリンク ポリシーを調整する必要があります。
 
 ## <a name="what-to-do"></a>行うこと 
   
@@ -41,11 +31,11 @@ ms.locfileid: "24972309"
     
 2. [レビューしすべてのユーザーに適用される分析ツールの安全なリンクの既定のポリシーを編集](#define-an-atp-safe-links-policy-that-applies-to-everyone)します。たとえば、 [ATP の安全なリンクのカスタム ブロックされた Url リストを設定](set-up-a-custom-blocked-urls-list-wtih-atp.md)できます。
     
-3. [特定の電子メールの受信者ポリシーを追加](#add-a-policy-for-specific-email-recipients)などの[ATP の安全なリンクのカスタム」を書き換えない"Url リストを設定](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)します。
+3. [特定の電子メールの受信者ポリシーを追加または編集](#add-a-policy-for-specific-email-recipients)を含む[ATP の安全なリンクのカスタム」を書き換えない"Url リストを設定](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)します。
     
 4. [ATP の安全なリンク ポリシーのオプションについて理解します。](#learn-about-atp-safe-links-policy-options)(ここでは)、最近の変更の設定を含む
     
-## <a name="review-the-prerequisites"></a>前提条件を確認します。
+## <a name="step-1-review-the-prerequisites"></a>手順 1: 前提条件を確認します。
 
 - 組織が[Office 365 の高度な脅威保護](office-365-atp.md)を持っていることを確認します。
     
@@ -57,9 +47,12 @@ ms.locfileid: "24972309"
     
 - 最大 30 分間のすべての Office 365 のデータ センターに展開するのには、新規または更新されたポリシーを使用できます。
     
-## <a name="define-an-atp-safe-links-policy-that-applies-to-everyone"></a>ATP の安全なリンクすべてのユーザーに適用されるポリシーを定義します。
+## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>手順 2: 定義 (または確認) すべてのユーザーに適用される分析ツールの安全なリンク ポリシー
 
-脅威保護の高度な Office 365 の企業である場合は、組織内の全員に適用される既定の ATP の安全なリンク ポリシーするがあります。セキュリティのいずれかのポリシーを編集することができます&amp;コンプライアンス センターまたは、Exchange 管理センターです。**セキュリティを使用することをお勧めします。&amp;コンプライアンス センターを表示または編集するポリシーとデータ分析ツールのいずれかに**。
+脅威保護の高度な Office 365 の企業である場合は、組織内の全員に適用される既定の ATP の安全なリンク ポリシーするがあります。 
+
+> [!TIP]
+> セキュリティのいずれかのポリシーを編集することができます&amp;コンプライアンス センターまたは、Exchange 管理センターです。**セキュリティを使用することをお勧めします。&amp;コンプライアンス センターを表示または編集するポリシーとデータ分析ツールのいずれかに**。
   
 1. [https://protection.office.com](https://protection.office.com)と、職場、学校のアカウントでサインインします。 
     
@@ -75,9 +68,12 @@ ms.locfileid: "24972309"
     
 6. [ **保存**] を選択します。
     
-## <a name="add-a-policy-for-specific-email-recipients"></a>特定の電子メールの受信者にポリシーを追加します。
+## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>手順 3: 追加 (または編集) 特定の電子メールの受信者に適用される ATP の安全なリンク ポリシー
 
-すべてのユーザーに対してポリシーを確認した後は、電子メールの受信者の特定のグループの追加のポリシーを定義することを検討します。これにより、既定のポリシーに対する例外を指定することができます。いずれかのセキュリティを使用してポリシーを追加することができます&amp;コンプライアンス センター (推奨) または、Exchange 管理センターです。**セキュリティを使用することをお勧めします。&amp;コンプライアンス センターを表示または編集するポリシーとデータ分析ツールのいずれかに**。
+ATP の安全なリンクのポリシーのすべてのユーザーを確認した後は、電子メールの受信者の特定のグループの追加のポリシーを定義することを検討します。これにより、既定のポリシーに対する例外を指定することができます。 
+
+> [!TIP]
+> いずれかのセキュリティを使用してポリシーを追加することができます&amp;コンプライアンス センター (推奨) または、Exchange 管理センターです。**セキュリティを使用することをお勧めします。&amp;コンプライアンス センターを表示または編集するポリシーとデータ分析ツールのいずれかに**。
   
 1. [https://protection.office.com](https://protection.office.com)と、職場、学校のアカウントでサインインします。 
     
@@ -111,9 +107,12 @@ ms.locfileid: "24972309"
     
 6. [ **保存**] を選択します。
     
-## <a name="learn-about-atp-safe-links-policy-options"></a>ATP の安全なリンク ポリシーのオプションについてください。
+## <a name="step-5-learn-about-atp-safe-links-policy-options"></a>ATP の安全なリンク ポリシーのオプションについて、手順 5。
 
-設定または ATP の安全なリンクのポリシーを編集すると、利用可能ないくつかのオプションが表示されます。参考までにこれらのオプションとは、次の表は各 1 つとその影響について説明します。定義または編集するポリシーの 2 つの主な種類があることに注意してください: すべてのユーザーに適用される既定のポリシーおよび特定の受信者に対して定義されているポリシーを追加します。
+設定する、ATP の安全なリンク ポリシーを編集するか、利用可能ないくつかのオプションが表示されます。参考までにこれらのオプションとは、次の表は各 1 つとその影響について説明します。 
+
+> [!NOTE]
+> 定義または編集するポリシーの 2 つのメイン種類があります: すべてのユーザーに適用される既定のポリシーおよび特定の受信者に対して定義されているポリシーを追加します。ものについては、次の表に"このポリシーの列で区別されます。
   
 |**このポリシーの**|**このオプション**|**機能**|
 |:-----|:-----|:-----|
