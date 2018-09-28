@@ -19,6 +19,51 @@
 
         "redirect_document_id": true
 
+      },
+      {
+
+        "source_path": "securitycompliance/manage-data-governance.md",
+
+        "redirect_url": "securitycompliance/index.md",
+
+        "redirect_document_id": false
+
+      },
+      {
+
+        "source_path": "securitycompliance/monitor-security-and-compliance.md",
+
+        "redirect_url": "securitycompliance/index.md",
+
+        "redirect_document_id": false
+
+      },
+      {
+
+        "source_path": "securitycompliance/preservation-policies.md",
+
+        "redirect_url": "securitycompliance/retention-policies.md",
+
+        "redirect_document_id": true
+
+      },
+      {
+
+        "source_path": "securitycompliance/prevent-data-loss.md",
+
+        "redirect_url": "securitycompliance/data-loss-prevention-policies.md",
+
+        "redirect_document_id": true
+
+      },
+      {
+
+        "source_path": "securitycompliance/security-and-compliance.md",
+
+        "redirect_url": "securitycompliance/index.md",
+
+        "redirect_document_id": false
+
       }
 
   ]
