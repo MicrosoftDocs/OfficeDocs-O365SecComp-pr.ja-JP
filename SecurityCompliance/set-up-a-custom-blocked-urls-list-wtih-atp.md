@@ -3,7 +3,6 @@ title: Office 365 の ATP の安全なリンクを使用してカスタムのブ
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/30/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: Office 365 の高度な脅威保護を使用して、組織のブロックされた Url の一覧を設定する方法の詳細については、この資料を参照してください。ブロックされた Url は、電子メール メッセージと、ATP の安全なリンク ポリシーに基づき、Office ドキュメントに適用されます。
-ms.openlocfilehash: cd1e7858c8929bf468b2a4d5e09ccde9d5adc7b1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 36d295e6924d2e9972c185657885fa25bd96bf08
+ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532193"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "25353253"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Office 365 の ATP の安全なリンクを使用してカスタムのブロックされた Url リストを設定します。
 
@@ -56,9 +55,9 @@ ms.locfileid: "22532193"
     
 |**エントリの例**|**何します。**|
 |:-----|:-----|
-|`contoso.com`または`\*contoso.com\*`  <br/> |ドメイン、サブドメイン、およびパスを次のようにブロック`https://www.contoso.com`、`http://sub.contoso.com`と`http://contoso.com/abc`  <br/> |
+|`contoso.com`または`*contoso.com*`  <br/> |ドメイン、サブドメイン、およびパスを次のようにブロック`https://www.contoso.com`、`http://sub.contoso.com`と`http://contoso.com/abc`  <br/> |
 |`http://contoso.com/a`  <br/> |サイトをブロックする`http://contoso.com/a`いない追加のサブパスのような`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a\*`  <br/> |サイトをブロックする`http://contoso.com/a`などの他のサブパスを含めると`http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a*`  <br/> |サイトをブロックする`http://contoso.com/a`などの他のサブパスを含めると`http://contoso.com/a/b`  <br/> |
    
 5. 画面の右下隅で、Url の追加が完了したら、**保存**を選択します。
     
