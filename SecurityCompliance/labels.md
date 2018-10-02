@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Office 365 のラベルは、適切なコンテンツで適切な操作を実行するのに役立ちます。ラベルを使用すると、ガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制できます。また、Office 365 全体のレコード管理の実装にラベルを使用することもできます。
-ms.openlocfilehash: 6c47f48a773b3b3078a5d4c83b01b5300ce82eda
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+ms.openlocfilehash: 3a99a3e563913a11da2d9f4a2eb745cb8fa80dd2
+ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002680"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25342815"
 ---
 # <a name="overview-of-labels"></a>ラベルの概要
 
@@ -267,22 +267,28 @@ Office 365 グループにラベルを発行すると、ラベルは Outlook on 
     
 ![機密情報の種類を識別するためのオプション](media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
-### <a name="auto-apply-labels-to-content-with-specific-keywords-or-searchable-properties"></a>特定のキーワードまたは検索可能なプロパティによるコンテンツへの自動適用ラベル
+### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>キーワードまたは検索可能なプロパティによるコンテンツへの自動適用ラベル
 
-特定の条件を満たすコンテンツにラベルを自動的に適用できます。現在利用可能な条件では、特定の単語、フレーズ、または検索可能なプロパティを含むコンテンツへのラベルの適用がサポートされています。AND、OR、NOT などの検索演算子を使用してクエリを絞り込むことができます。オペランドおよびクエリ構文の詳細については、次を参照してください。
+特定の条件を満たすコンテンツにラベルを自動的に適用できます。現在利用可能な条件では、特定の単語、フレーズ、または検索可能なプロパティの値を含むコンテンツへのラベルの適用がサポートされています。AND、OR、NOT などの検索演算子を使用してクエリを絞り込むことができます。 
+
+クエリ構文の詳細については、次を参照してください。
+
+- [キーワード クエリ言語 (KQL) 構文のリファレンス](https://docs.microsoft.com/ja-JP/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+
+クエリ ベースのラベルは検索インデックスを使用してコンテンツを特定します。有効な検索可能なプロパティの詳細については、以下を参照してください。
 
 - [コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)
-- [キーワード クエリ言語 (KQL) 構文のリファレンス](https://docs.microsoft.com/ja-JP/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [クロールされたプロパティと管理プロパティの概要 (SharePoint Server)](https://docs.microsoft.com/ja-JP/SharePoint/technical-reference/crawled-and-managed-properties-overview)
   
 クエリの例:
 
 - Exchange
     - subject:"Quarterly Financials"
+    - recipients:garthf<!--nolink-->@contoso.com
+
 - SharePoint および OneDrive for Business
     - contenttype:contract
-    - site:`https://contoso.sharepoint.com/sites/teams/procurement` AND contenttype:contract
-  
-クエリベースのラベルでは、検索インデックスを使用してコンテンツを識別します。
+    - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
   
 ![クエリ エディター](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
   
