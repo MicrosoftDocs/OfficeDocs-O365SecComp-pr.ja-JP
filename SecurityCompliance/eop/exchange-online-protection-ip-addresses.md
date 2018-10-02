@@ -3,7 +3,7 @@ title: Exchange Online Protection の IP アドレス
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/2/2018
+ms.date: 10/2/2018
 ms.audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -11,19 +11,19 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: eb14f38b-7b55-4a47-84a0-4a56a59e4111
 description: メールの送受信、または Exchange Online Protection ポータルと管理サービスには、次の Microsoft データ センター IP アドレスが Microsoft Exchange Online Protection (EOP) によって使用されます。EOP からのメッセージを送受信するため、または管理サービスを使用するために、ネットワークでこれらの IP アドレスからの接続が許可されていることを確認してください。
-ms.openlocfilehash: 853b64410969fcc2f3c9ef238d2e9f4a4bb36e7b
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 5742c19f98f8515670150f69c421c19ffecc7668
+ms.sourcegitcommit: b6473cd6ba3f9ac79dc6a2040fc148020dfbe464
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23230009"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "25358366"
 ---
 # <a name="exchange-online-protection-ip-addresses"></a>Exchange Online Protection の IP アドレス
 
 メールの送受信、または Exchange Online Protection ポータルと管理サービスには、次の Microsoft データ センター IP アドレスが Microsoft Exchange Online Protection (EOP) によって使用されます。EOP からのメッセージを送受信するため、または管理サービスを使用するために、ネットワークでこれらの IP アドレスからの接続が許可されていることを確認してください。
  
 > [!NOTE]
-> Microsoft では、このページの IP アドレスと FQDN エントリのための REST ベースの Web サービスを開発しています。この新しいサービスは、ファイアウォールやプロキシ サーバーなどのネットワーク境界デバイスの構成と更新に役立ちます。エンドポイントのリスト、リストの現在のバージョン、または特定の変更をダウンロードすることができます。このサービスは、最終的にこのページの XML ドキュメント、RSS フィード、および IP アドレス、FQDN エントリを置き換えます。この新しいサービスを試すには、「[Web サービス](https://support.office.com/article/managing-office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a#webservice)」にアクセスします。 
+> マイクロソフトでは、IP アドレスと FQDN エントリをこのページでの REST ベースの web サービスを開発しました。この新しいサービスを構成し、ファイアウォールやプロキシ サーバーなどのネットワーク境界デバイスを更新できます。エンドポイント、リスト、または特定の変更の現在のバージョンの一覧をダウンロードすることができます。このサービスは、XML ドキュメント、RSS フィード、および IP アドレスと FQDN エントリをこのページに置き換えられます。この新しいサービスを試して、 [Web サービス](https://support.office.com/article/managing-office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a#webservice)に移動します。 
  
 ## <a name="eop-ip-address-ranges"></a>EOP IP アドレスの範囲
 
@@ -57,36 +57,4 @@ ms.locfileid: "23230009"
 > ここで提供されている IP アドレスの範囲は、お客様のコネクタを使用して中継ののみ使用されます。IP アドレスのリストへの変更はことはまれですと事前に通知されます。ビジネス パートナー、スマート ホスト、またはサービスの公開済み IP アドレスの範囲をオンプレミス環境のルートに送信するメッセージを構成すること必要がありますそれぞれの宛先にルーティングするための正しいコネクターにことを確認します。コネクタの詳細については、[使用するコネクタの決定](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)を参照してください。 ここでは IP アドレスが時間の経過とともに変更できます。IP のすべてのレコードに追加されているアドレスを変更、または、過去 1 年で廃止、 [EOP の IP アドレスの変更通知](change-notification-for-eop-ip-addresses.md)を参照してください。 
  
 Microsoft Office 365 が使用する IP アドレスについて詳しくは、「[Office 365 の URL および IP アドレス範囲](https://go.microsoft.com/fwlink/p/?LinkId=324165)」を参照してください。
- 
-## <a name="ip-ranges-by-region"></a>地域ごとの IP の範囲
-
-Exchange Online Protection は、お客様に対する契約上の義務を遵守しながら、最も効率のよい方法でメールをルーティングします。これを踏まえ、以下の EOP エンドポイントは、地域ごとの IPv4 範囲の現在の一覧です。ただし、これらの IP アドレスは、容量と効率をサポートするために事前通知なしに EOP 内の別の機能に再プロビジョニングされる可能性があります。そのような変更があっても、メールは引き続き、契約上の義務に基づいて送信されます。変更が行われた場合は、できる限り早くこのエンドポイントの一覧を更新するようにいたします。現時点で、Office 365 の他の部分に対する地域ごとのエンドポイントの一覧はありません。
- 
-||||
-|:-----|:-----|:-----|
-|**南北アメリカ** <br/> |**EMEA** <br/> |**APAC** <br/> |
-| 23.103.132.0/22 | 23.103.132.0/22 |23.103.136.0/21 |
-| 23.103.136.0/21 | 23.103.144.0/22 |23.103.152.0/22 |
-| 23.103.148.0/22 | 40.92.0.0/18 |40.92.128.0/17 |
-| 23.103.152.0/21 | 40.93.0.0/18 |40.93.128.0/17 |
-| 23.103.156.0/22 | 40.94.0.0/18 |40.94.128.0/17 |
-| 23.103.198.0/24 | 40.95.0.0/18 |40.95.128.0/17 |
-| 23.103.200.0/22 | 40.107.0.0/18 |52.100.128.0/17 |
-| 40.92.64.0/18 | 52.100.0.0/18 |52.101.128.0/17 |
-| 40.93.64.0/18 | 52.101.0.0/18 |52.102.128.0/17 |
-| 40.94.64.0/18 | 52.102.0.0/18 |52.103.128.0/17 |
-| 40.95.64.0/18 | 52.103.0.0/18 |65.55.88.0/24 |
-| 40.107.64.0/18 | 94.245.120.64/27 |104.47.64.0/18 |
-| 52.100.64.0/18 | 104.47.0.0/19 |2a01:111:f400:7 c 00::/54 |
-| 52.101.64.0/18 | 157.55.234.0/24 |  |
-| 52.102.64.0/18 | 157.56.112.0/24 | |
-| 52.103.64.0/18 | 213.199.154.0/24 | |
-| 65.55.169.0/24 | 213.199.180.128/26 | |
-| 104.47.32.0/19 | 2a01:111:f400:7e00::/56 | |
-| 157.56.110.0/23 | 2a01:111:f400:fe00::/56 | |
-| 207.46.100.0/24 |  | |
-| 207.46.163.0/24 |  | |
-| 216.32.180.0/23 |  | |
-| 2a01:111:f400:7 c 00::/54 |  | |
-||||
 
