@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Office 365 のセキュリティを使用して、 &amp; 、Office 365 の組織のユーザーと管理者のアクティビティを表示するのには統一された監査ログを検索するのにはコンプライアンス センターです。 '
-ms.openlocfilehash: 4c56f6f0c5f5a1ace7b94fab63d839760045c66f
-ms.sourcegitcommit: 6562a0d171dacdcdb945d192f45ea1a4c0c1c0c3
+ms.openlocfilehash: 79aa544d7243a4f3a81aebea3ffce92e2ad057f8
+ms.sourcegitcommit: 09d34bf058c0afce2c3800f207d64020ca984d57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24974687"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25363150"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>&amp;
 
@@ -50,9 +50,9 @@ ms.locfileid: "24974687"
 
 - Dynamics 365 のユーザーと管理者の活動
     
-- マイクロソフトのフローでのユーザーと管理者の活動
-
 - Yammer のユーザーと管理者の活動
+ 
+- マイクロソフトのフローでのユーザーと管理者の活動
     
 - Microsoft ストリーム内のユーザーと管理者の活動
     
@@ -71,6 +71,15 @@ Office 365 の検索を開始する前に次の項目の監査ログを読み取
     > [!IMPORTANT]
     > **アクセス許可**] ページで、セキュリティ監査ログの参照、または監査ログのロールをユーザーに割り当てる場合は、&amp;コンプライアンスの中心になる Office 365 の監査ログを検索することです。Exchange のオンラインでのアクセス許可を割り当てることがあります。これは、監査ログを検索するために使用する基になるコマンドレットが Exchange Online のコマンドレットであるためです。 
   
+- ユーザーまたは管理者が監査対象のアクティビティが実行されると、監査レコードが生成され、組織の Office 365 の監査ログに格納されています。監査レコードが保持されている (監査ログで検索可能な) 時間の長さは、Office 365 サブスクリプションに依存します。
+
+     - **Office 365 の E3**の監査の記録は 90 日間保持されます。つまり、過去 90 日以内に実行されたアクティビティの監査ログを検索することができます。
+
+     - **Office 365 の E5**の監査の 365 日 (1 年) のレコードが保持されます。つまり、最後の年の内で実行されたアクティビティの監査ログを検索することができます。1 年間の監査記録の保管も、E3 サブスクリプションと、Office 365 の高度なコンプライアンスのアドオンのサブスクリプションを持つ組織で使用できます。
+
+        > [!NOTE]
+        > 期間の 1 年間監査レコードは現在利用可能な Office 365 プレビューの一部としてプログラムし、E5 サブスクリプションのプレビュー プログラムに登録されている組織にのみ使用します。また、2018年 10 月はも保持されている 90 日間のみの前に実行されたアクティビティの記録を監査します。2018 の 10 月以降、新しい監査レコード用に保持されます、E5 のサブスクリプションを持つ企業に 1 年間または、E3 サブスクリプションと、高度なコンプライアンスのアドオンのサブスクリプションがあります。
+
 - 組織の Office 365 での監査ログの検索を無効にする場合は、オンラインの Exchange 組織に接続されているリモートの PowerShell で次のコマンドを実行できます。
     
   ```
@@ -88,8 +97,6 @@ Office 365 の検索を開始する前に次の項目の監査ログを読み取
 - 前述したように、監査ログを検索するために使用する基になるコマンドレットは、Exchange オンライン コマンドレットでは、**検索 UnifiedAuditLog**。このコマンドレットを使用するには、セキュリティの**監査ログの検索**ページを使用する代わりに Office 365 の監査ログを検索することを意味する&amp;コンプライアンス センターです。オンラインの Exchange 組織に接続されているリモートの PowerShell でこのコマンドレットを実行する必要があります。詳細については、[検索 UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776)を参照してください。
     
 - プログラムを使用して Office 365 の監査ログからデータをダウンロードする場合は、PowerShell スクリプトを使用する代わりに、Office 365 の管理アクティビティの API を使用することをお勧めします。Office 365 の管理アクティビティの API は、操作、セキュリティ、および、組織のコンプライアンスの監視ソリューションを開発するのに使用できる他の web サービスです。詳細については、 [Office 365 の管理アクティビティの API リファレンス](https://go.microsoft.com/fwlink/?linkid=852309)を参照してください。
-    
-- 過去 90 日以内に実行されたアクティビティの Office 365 の監査ログを検索することができます。
     
 - 最大 30 分かかることがまたはをイベントの後の 24 時間に発生する、対応する監査ログ エントリの検索結果に表示します。次の表は、Office 365 のサービスは別にかかる時間を示します。
     
@@ -110,7 +117,7 @@ Office 365 の検索を開始する前に次の項目の監査ログを読み取
 |Microsoft Teams  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Power BI  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |セキュリティ&amp;コンプライアンス センター  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Sharepoint Online と OneDrive for Business  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+|SharePoint Online と OneDrive for Business  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Sway  <br/> ||![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
 |Yammer  <br/> ||![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
@@ -287,7 +294,8 @@ Office 365 の検索を開始する前に次の項目の監査ログを読み取
 |[活動をかきたてる](#sway-activities) <br/> |[ユーザー管理の活動](#user-administration-activities) <br/> |[Azure AD グループ管理の活動](#azure-ad-group-administration-activities) <br/> |
 |[アプリケーション管理業務](#application-administration-activities) <br/> |[ロール管理の活動](#role-administration-activities) <br/> |[ディレクトリ管理の活動](#directory-administration-activities) <br/> |
 |[電子的証拠開示の活動](#ediscovery-activities) <br/> |[電源 BI 活動](#power-bi-activities) <br/> |[マイクロソフト チームの活動](#microsoft-teams-activities) <br/> |
-|[Yammer のアクティビティ](#yammer-activities) <br/> |[Microsoft Stream](#microsoft-stream) <br/> |[Exchange 管理者の監査ログ](#exchange-admin-audit-log) <br/> |
+|[Yammer のアクティビティ](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft Stream](#microsoft-stream) <br/>|
+|[Exchange 管理者の監査ログ](#exchange-admin-audit-log) <br/> |
    
   
 ### <a name="file-and-page-activities"></a>ファイルとページの活動
@@ -640,6 +648,11 @@ Azure AD の一覧を次の表のディレクトリとドメイン管理者が O
 |更新されたファイル名  <br/> |FileUpdateName  <br/> |ユーザーは、ファイルの名前を変更します。  <br/> |
 |表示されているファイル  <br/> |FileVisited  <br/> |ユーザーは、ファイルを表示します。  <br/> |
    
+### <a name="microsoft-flow"></a>Microsoft Flow
+
+マイクロソフトのフローでは、アクティビティの監査ログを検索できます。これらのアクティビティには、作成、編集し削除フロー、およびフローのアクセス許可を変更することがあります。フローのアクティビティの監査については、 [Office 365 のセキュリティとコンプライアンスの中心で今すぐ利用可能なイベントを監査するマイクロソフトの流れ](https://flow.microsoft.com/blog/security-and-compliance-center)のブログを参照してください。
+
+
 ### <a name="microsoft-stream"></a>Microsoft Stream
   
 Microsoft ストリームでは、アクティビティの監査ログを検索できます。これらのアクティビティには、ユーザー、グループのチャネルの活動、およびユーザーを管理する組織の設定の管理、レポートのエクスポートなどの管理アクティビティによって実行されるビデオのアクティビティが含まれます。これらのアクティビティについては、 [Microsoft ストリームで監査](https://docs.microsoft.com/stream/audit-logs)ログに記録」の活動がマイクロソフトのストリームの記録」のセクションを参照してください。
@@ -678,9 +691,16 @@ Office 365 で監査する活動の説明の一覧とは、この資料では、
 
 30 分以内でほとんどの監査データがあるが、対応する監査ログ エントリの検索結果に表示されるイベントが発生すた後ことで、最大 24 時間がかかる場合があります。この資料を使用する別の Office 365 サービスのイベントにかかる時間を表示する[を開始する前に](#before-you-begin)」の表を参照してください。
 
-**監査レコードの保持は、どのくらいの時間のですか。**
+**監査レコードを保持する期間のでしょうか。**
 
-現在監査ログ レコードは、90 日間保持されます。マイクロソフトがこの制限値を大きくための計画に積極的に取り組んでいます。 
+説明したようは、監査レコードの保存期間は、組織の Office 365 サブスクリプションに依存します。  
+
+- **Office 365 の E3**の監査の記録は 90 日間保持されます。
+
+- **Office 365 の E5**の監査の 365 日 (1 年) のレコードが保持されます。1 年間の監査記録の保管も、E3 サブスクリプションと、Office 365 の高度なコンプライアンスのアドオンのサブスクリプションを持つ組織で使用できます。
+
+     > [!NOTE]
+     > 監査レコードの 1 年間保存期間は、Office 365 プレビュー プログラムに登録されている組織にのみ現在利用できません。
 
 **プログラムを使用して監査のデータにアクセスできますか。**
 
