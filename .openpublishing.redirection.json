@@ -1,71 +1,44 @@
-{
-
-  "redirections": [
-
-      {
-
+{ 
+  "redirections": [ 
+    {
+       "source_path": "securitycompliance/recover-deleted-items-from-retention.md",
+       "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/retention-policies",
+       "redirect_document_id": true
+    }, 
+    { 
         "source_path": "securitycompliance/office-365-certificate-chains.md",
-
-        "redirect_url": "https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb",
-
+        "redirect_url": "https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb", 
         "redirect_document_id": false
-
-      },
-      {
-
+    }, 
+    { 
         "source_path": "securitycompliance/siem-integration-with-office-365-atp.md",
-
-        "redirect_url": "securitycompliance/siem-integration-with-office-365-ti.md",
-
+        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/siem-integration-with-office-365-ti", 
         "redirect_document_id": true
-
-      },
-      {
-
+    }, 
+    { 
         "source_path": "securitycompliance/manage-data-governance.md",
-
-        "redirect_url": "securitycompliance/index.md",
-
+        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/index", 
         "redirect_document_id": true
-
-      },
-      {
-
+    }, 
+    { 
         "source_path": "securitycompliance/monitor-security-and-compliance.md",
-
-        "redirect_url": "securitycompliance/index.md",
-
+        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/index", 
         "redirect_document_id": false
-
-      },
-      {
-
+    }, 
+    { 
         "source_path": "securitycompliance/preservation-policies.md",
-
-        "redirect_url": "securitycompliance/retention-policies.md",
-
-        "redirect_document_id": true
-
-      },
-      {
-
-        "source_path": "securitycompliance/prevent-data-loss.md",
-
-        "redirect_url": "securitycompliance/data-loss-prevention-policies.md",
-
-        "redirect_document_id": true
-
-      },
-      {
-
-        "source_path": "securitycompliance/security-and-compliance.md",
-
-        "redirect_url": "securitycompliance/index.md",
-
+        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/retention-policies", 
         "redirect_document_id": false
-
-      }
-
-  ]
-
+    }, 
+    { 
+        "source_path": "securitycompliance/prevent-data-loss.md",
+        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies", 
+        "redirect_document_id": true
+    }, 
+    { 
+        "source_path": "securitycompliance/security-and-compliance.md",
+        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/index", 
+        "redirect_document_id": false
+    }                    
+  ] 
 }
