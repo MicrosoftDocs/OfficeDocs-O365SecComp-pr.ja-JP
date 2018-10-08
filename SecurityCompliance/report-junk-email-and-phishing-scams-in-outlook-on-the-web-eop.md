@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 description: Web ユーザーに Microsoft Outlook では、組み込みの電子メール レポートのオプションを使用して迷惑メール (スパム) およびフィッシング詐欺を報告できます。マイクロソフトのかどうか、メールが正しく識別されない迷惑メール (スパム) として認識することもできます。
-ms.openlocfilehash: 4dab3013f2ca9918dc8529cb67113469ea945015
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: d495f5648d4e4ac7ee7335d58a4268bdfecb6109
+ms.sourcegitcommit: 4a7d7717f0da05cf5a3c506df2989a9d02f33dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972299"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "25450072"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Web 上の Outlook で、迷惑メールおよびフィッシング詐欺を報告します。 
 
@@ -59,6 +59,8 @@ Office 365 によってメッセージが迷惑メールとして誤って識別
 ## <a name="for-more-information"></a>詳細情報
 
 [迷惑メールやフィッシング詐欺について](https://go.microsoft.com/fwlink/p/?LinkId=270068)
+
+[Microsoft Outlook 用迷惑メール報告アドイン](https://docs.microsoft.com/en-us/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
   
   
 
