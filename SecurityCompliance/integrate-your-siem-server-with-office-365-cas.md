@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: SIEM サーバーは、Office 365 のクラウド アプリケーションのセキュリティと統合できます。仕組みと、それを設定する方法の概要を取得するには、この資料を参照してください。
-ms.openlocfilehash: a2bd75e73ddccef9359ace304faa3c8b1dd4a728
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: d8603d53e156e89c53f13153cd90d400b1312538
+ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972329"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25450762"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>SIEM サーバーと Office 365 Cloud App Security を統合する
   
@@ -25,11 +25,13 @@ ms.locfileid: "24972329"
 |:-----|:-----|:-----|:-----|
 |[評価を開始します。](office-365-cas-overview.md) <br/> |[計画の開始します。](get-ready-for-office-365-cas.md) <br/> |コースです!  <br/> [次の手順](utilization-activities-for-ocas.md) <br/> |[使用します。](utilization-activities-for-ocas.md) <br/> |
    
+## <a name="overview-and-prerequisites"></a>概要と前提条件
+
 警告の集中型の監視を有効にするセキュリティ情報およびイベント管理 (SIEM) サーバーを使用して[Office 365 のクラウド アプリケーションのセキュリティ](get-ready-for-office-365-cas.md)を統合できます。これは、クラウド サービスを使用している組織で特に効果的とオンプレミスのサーバー アプリケーションです。SIEM サーバーとの統合により、セキュリティ チームは、特定のセキュリティ保護手順を自動化し、クラウド ・ ベースの間に相関関連づけることによって、セキュリティの一般的なワークフローを維持しながら、Office 365 アプリケーションの保護を強化して、設置型のイベントです。  
   
 とき、最初に、Office 365 のクラウド アプリケーションのセキュリティと、SIEM のサーバーを統合すると、最後の 2 日間からの通知から転送されます SIEM サーバーとすべてのアラートに後で (選択したフィルターに基づいて)。さらに、長期間、有効にすると、再度、この機能を無効にした場合、過去 2 日間の通知とし、すべてのアラートの後に転送します。
- 
-## <a name="siem-integration-architecture"></a>SIEM の統合アーキテクチャ
+
+### <a name="siem-integration-architecture"></a>SIEM の統合アーキテクチャ
 
 SIEM のエージェントは、組織のネットワークに設定されます。SIEM エージェントが構成されているデータ型を取得を展開し、構成すると Office 365 クラウド アプリケーション セキュリティ RESTful Api を使用するように (警告)。トラフィックは、ポート 443 の HTTPS の暗号化されたチャネル経由で送信されます。
   
@@ -37,13 +39,13 @@ SIEM エージェントでは、Office 365 のクラウド アプリケーショ
 
 ![SIEM およびクラウド アプリケーションのセキュリティのアーキテクチャ](media/siem-architecture.png)
 
-## <a name="supported-siem-servers"></a>SIEM サーバーがサポートされています。
+### <a name="supported-siem-servers"></a>SIEM サーバーがサポートされています。
 
 現在、office 365 のクラウド アプリケーションのセキュリティには、次の SIEM サーバーがサポートされています。
 - Arcsight 社のマイクロ フォーカス
 - 汎用 CEF
 
-## <a name="prerequisites"></a>前提条件
+### <a name="prerequisites"></a>前提条件
 
 - この資料で説明するタスクを実行するには、グローバル管理者またはセキュリティ管理者である必要があります。参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)
 
@@ -63,9 +65,7 @@ SIEM エージェントでは、Office 365 のクラウド アプリケーショ
 
 - [JAR ファイル](https://go.microsoft.com/fwlink/?linkid=838596)、SIEM のサーバーを統合する必要がありますをダウンロードするのには、[ソフトウェア ライセンス条項](https://go.microsoft.com/fwlink/?linkid=862491)に同意する必要があります。
  
-## <a name="integrate-office-365-cloud-app-security"></a>Office 365 のクラウド アプリケーションのセキュリティを統合します。
-    
-### <a name="step-1-set-it-up-in-the-office-365-cloud-app-security-portal"></a>手順 1: 設定 Office 365 のクラウド アプリケーションのセキュリティ関連ポータルに
+## <a name="step-1-set-it-up-a-siem-agent-in-office-365-cloud-app-security"></a>手順 1: Office 365 のクラウド アプリケーションのセキュリティの SIEM エージェントを設定します。
 
 1. [https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用して Office 365 にサインインします。(これで、セキュリティには、&amp;コンプライアンス センター)。 
     
@@ -98,21 +98,22 @@ SIEM エージェントでは、Office 365 のクラウド アプリケーショ
 
 ![SIEM エージェントの作成](media/SIEMAgentCreated.png)
     
-### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>手順 2: の JAR ファイルをダウンロードし、サーバーで実行します。
+## <a name="step-2-download-a-jar-file-and-run-it-on-your-siem-server"></a>手順 2: JAR ファイルをダウンロードし、SIEM サーバーで実行します。
 
 1. [マイクロソフト クラウド アプリケーションのセキュリティの SIEM エージェント](https://go.microsoft.com/fwlink/?linkid=838596)をダウンロードして、フォルダーに解凍します。[(する必要がありますソフトウェア ライセンス条項](https://go.microsoft.com/fwlink/?linkid=862491)に同意先に進む。) 
     
-2. .Jar ファイルを zip 形式のフォルダーから抽出し、サーバー上で実行します。
+2. .Jar ファイルを zip 形式のフォルダーから抽出し、SIEM のサーバー上で実行します。
     
 3. ファイルを実行すると、次の実行: コマンド。<br/>
   ```
   java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
   ```
-#### <a name="important-notes"></a>重要事項
+### <a name="important-notes"></a>重要事項
 
 - SIEM エージェントのバージョンによってファイル名が異なる場合があります。 
 
-- サーバーのセットアップ中に、サーバー上で、JAR の塗りつぶしを実行することをお勧めします。
+- SIEM サーバー上の JAR ファイルは、サーバーのセットアップ中に実行することをお勧めします。
+
     - **Windows**:**ユーザーがログオンしているかどうかどうかを実行**するタスクを設定し**より長い場合にタスクを停止する**オプションをオフにすることを確認、スケジュールされたタスクとして実行します。
 
     - **Linux**: を指定して実行コマンドを追加、**&** に、`rc.local`ファイルです。 <br/>例:<br/> 
@@ -126,31 +127,13 @@ SIEM エージェントでは、Office 365 のクラウド アプリケーショ
     - **トークン**は、最初の手順でコピーした SIEM エージェントのトークンです。
     - ヘルプを表示するには、次のように入力します。 `-h`。 
   
-### <a name="step-3-validate-that-the-siem-agent-is-working"></a>手順 3: SIEM エージェントが動作していることを検証します。
+## <a name="step-3-validate-that-the-siem-agent-is-working"></a>手順 3: SIEM エージェントが動作していることを検証します。
 
 1. **接続エラー**と Office 365 のクラウド アプリケーションのセキュリティ関連ポータルの SIEM のエージェントの状態が設定されていないエージェントの通知がない**切断**していることを確認してください。<br/>たとえば、ご覧の SIEM サーバーが接続されています。<br/>![SIEM サーバーが接続されています。](media/siem-connected.png)<br/>ご覧の SIEM サーバー接続を切断します。<br/>![SIEM サーバーが接続されていません](media/siem-not-connected.png) 
   
 2. /SIEM の Syslog サーバーに Office 365 のクラウド アプリケーションのセキュリティの警告が届きましたと表示になっていることを確認します。
   
-## <a name="regenerating-your-token"></a>ユーザーのトークンを再生成します。
-
-ユーザーのトークンを紛失した場合常に再生できます。テーブルでは、SIEM エージェントの行を探します。、省略記号をクリックし、**トークンを再生成**します。
-
-![SIEM エージェントの省略記号ボタンをクリックすると、トークンを再生成します。](media/04de368a-b88e-4a9c-a830-58025cb98db6.png)
-  
-## <a name="editing-your-siem-agent"></a>SIEM エージェントを編集します。
-
-SIEM を編集するのには、エージェントのテーブルの SIEM エージェントの行を探します。、省略記号をクリックし、し、[**編集**] をクリックします。SIEM エージェントを編集する場合は、.jar ファイルを再実行する必要はありません。自動的に更新します。
-
-![SIEM エージェントを編集するのには、2 つの楕円を選択し、[編集します。](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
-  
-## <a name="deleting-your-siem-agent"></a>SIEM のエージェントを削除します。
-
-テーブルで、SIEM エージェントを削除するには、SIEM エージェントの行を探します。、省略記号をクリックし、[**削除**] をクリックします。
-
-![SIEM エージェントを削除するのには、2 つの楕円を選択し、削除」を選択し、します。](media/540b5bdf-5574-4ecc-a7b0-92a499a387d7.png)
-
-## <a name="sample-logfiles"></a>サンプル ログ ファイル
+## <a name="what-the-logfiles-look-like"></a>ログ ファイルがどのように
 
 SIEM のサーバーに送信される可能性があります警告ログ ファイルの例を以下に示します。
 
@@ -168,7 +151,7 @@ SIEM のサーバーに送信される可能性があります警告ログ フ�
 2017-07-16T09:41:04.369Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy2|3|externalId=596b34b10c204203a33a5240 start=1500198064369 end=1500198064369 msg=Activity policy ''test-activity-policy2'' was triggered by ''user2@test15-adallom.com'' suser=user2@test15-adallom.com destinationServiceName=Google cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b34b10c204203a33a5240 cs2Label=uniqueServiceAppIds cs2=APPID_33626 cs3Label=relatedAudits cs3=1500197996117_fd71f265-1e46-4f04-b372-2e32ec874cd3 cs4Label=policyIDs cs4=
 ```
 
-CEF の形式の例は、
+別のサンプルでは、CEF の形式では、この時間を次のとおりです。
 
 
 |CEF のフィールド名  | 説明  |
@@ -181,6 +164,37 @@ CEF の形式の例は、
 |destinationServiceName     | 元のアプリケーションでは、Office 365、SharePoint、または OneDrive などの警告        |
 |csLabel     | 異なります (ラベルでは、さまざまな意味を持っています)。通常、ラベルは、自明ですが、targetObjects のようにします。        |
 |cs     | ラベル (ラベルの例に従って、アラートの対象ユーザー) などに対応する情報        |
+
+## <a name="additional-tasks-as-needed"></a>(必要に応じて) その他のタスク
+
+SIEM サーバーを構成し、Office 365 のクラウド アプリケーションのセキュリティと統合して、トークンを再生成し、SIEM のエージェントを編集または、SIEM のエージェントを削除する必要があります。次のセクションでは、これらのタスクを実行する方法について説明します。
+
+### <a name="regenerate-a-token"></a>トークンを再生成します。
+
+ユーザーのトークンを紛失した場合に、1 つが再生成できます。 
+
+1. Office 365 のクラウド アプリケーションのセキュリティ ・ ポータル内**の設定**を選択します > **セキュリティ拡張機能**です。
+
+2. テーブルでは、SIEM エージェントの行を探します。 
+
+3. 、省略記号をクリックし、**トークンを再生成**します。<br/>![SIEM エージェントの省略記号ボタンをクリックすると、トークンを再生成します。](media/04de368a-b88e-4a9c-a830-58025cb98db6.png)
+  
+### <a name="edit-a-siem-agent"></a>SIEM エージェントを編集します。
+
+1. Office 365 のクラウド アプリケーションのセキュリティ ・ ポータル内**の設定**を選択します > **セキュリティ拡張機能**です。
+
+2. SIEM エージェントの行を探します。 
+
+3. 、省略記号をクリックし、し、[**編集**] をクリックします。(SIEM エージェントを編集する場合は、.jar ファイルを再実行する必要はありません; 自動的に更新)。<br/>![SIEM エージェントを編集するのには、2 つの楕円を選択し、[編集します。](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
+  
+### <a name="delete-a-siem-agent"></a>SIEM エージェントを削除します。
+
+1. Office 365 のクラウド アプリケーションのセキュリティ ・ ポータル内**の設定**を選択します > **セキュリティ拡張機能**です。
+
+2. SIEM エージェントの行を探します。 
+
+3. 、省略記号をクリックし、[**削除**] をクリックします。<br/>![SIEM エージェントを削除するのには、2 つの楕円を選択し、削除」を選択し、します。](media/540b5bdf-5574-4ecc-a7b0-92a499a387d7.png)
+
   
 ## <a name="next-steps"></a>次の手順
 

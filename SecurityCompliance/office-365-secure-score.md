@@ -1,7 +1,7 @@
 ---
 title: Office 365 セキュリティ スコア の紹介
-ms.author: brendonb
-author: brendonb
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/23/2018
 ms.audience: Admin
@@ -13,34 +13,22 @@ search.appverid:
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: どのようにセキュリティで保護された Office 365 の組織では本当を知りたいですか。参考までに停止する - Office 365 のセキュリティで保護されたスコアがお手伝いします。セキュリティで保護されたスコアは、通常の動作とセキュリティの設定に基づいて、Office 365 の組織のセキュリティを分析し、スコアが割り当てられます。セキュリティのための信用度と考えてください。
-ms.openlocfilehash: 02f958ec4b9b9287f5db8ddbb5cd83f3cef68007
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 958744696e0d9d8c7e8f29b9bdc460c5aa05eb3a
+ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531631"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25450752"
 ---
 # <a name="introducing-the-office-365-secure-score"></a>Office 365 セキュリティ スコア の紹介
 
 どのようにセキュリティで保護された Office 365 の組織では本当を知りたいですか。参考までに停止する - Office 365 のセキュリティで保護されたスコアがお手伝いします。セキュリティで保護されたスコアは、通常の動作とセキュリティの設定に基づいて、Office 365 の組織のセキュリティを分析し、スコアが割り当てられます。セキュリティのための信用度と考えてください。
   
-## <a name="in-this-article"></a>この記事の内容
-
-[どうすればスコアをセキュリティで保護するか。](office-365-secure-score.md#howtoaccess)
-  
-[その仕組みは?](office-365-secure-score.md#HowWorks)
-  
-[方法に役立つと思うでしょうか。](office-365-secure-score.md#HowHelps)
-  
-[FAQ](office-365-secure-score.md#FAQ)
-  
 ## <a name="how-do-i-get-to-secure-score"></a>どうすればスコアをセキュリティで保護するか。
-<a name="howtoaccess"> </a>
 
 ユーザーにセキュリティで保護されたスコアが、Office 365 のビジネス プレミアムまたはエンタープライズ サブスクリプションにアクセスできるは、(グローバル管理者、またはカスタムの管理役割) の管理者のアクセス許可を持っている[https://securescore.office.com](https://securescore.office.com)。管理者の役割が割り当てられていないユーザーをセキュリティで保護されたスコアにアクセスすることができません。ただし、管理者は、組織内の他のユーザーとその結果を共有するのにツールを使用することができます。
   
 ## <a name="how-does-it-work"></a>どのように動作するか。
-<a name="HowWorks"> </a>
 
 スコアの図では、設定と活動し、マイクロソフトによって確立されたベースラインを比較する (OneDrive、SharePoint では、Exchange など) を使用している Office 365 サービスをセキュリティ保護します。調整方法に問題が、セキュリティのベスト プラクティスに基づくスコアが表示されます。
   
@@ -63,7 +51,6 @@ ms.locfileid: "22531631"
 ![[スコアの分析] タブの選択されているデータ ポイントを示すグラフします。](media/b8427837-2ed9-4319-ba71-7d03bd99129c.png)
   
 ## <a name="how-will-it-help-me"></a>方法に役立つと思うでしょうか。
-<a name="HowHelps"> </a>
 
 セキュリティで保護されたスコアを使用するとは、(うちの多くを既に購入したを認識できない場合があります)、Office 365 の組み込みのセキュリティ機能を使用することを促進することによって、組織のセキュリティを向上できます。詳細をこれらの機能のツールを使用すると、使用すれば、脅威から組織を保護するために適切な方法を行って安心です。
   
@@ -75,7 +62,6 @@ ms.locfileid: "22531631"
 > セキュリティで保護されたスコアは絶対的な測定値を表現していない可能性ユーザーが侵害される可能性を取得します。これは、侵害されるリスクを相殺することがあるコントロールを採用したエクステントを表現します。サービスはありませんするは侵害しない、およびセキュリティで保護されたスコアを何らかの方法で保証されたものとして解釈されない必要があります。 
   
 ## <a name="faqs"></a>FAQ
-<a name="FAQ"> </a>
 
 ### <a name="who-can-use-secure-score"></a>セキュリティで保護されたスコアを使用してユーザーでしょうか。
 
@@ -118,5 +104,9 @@ ms.locfileid: "22531631"
 ### <a name="my-organization-only-has-certain-security-features-does-this-affect-my-score"></a>自分の所属組織では、セキュリティの特定の機能のみがします。スコアに影響はこれですか。
 
 セキュリティで保護されたスコアは、購入したサービスに基づいて、得点を計算します。たとえば、購入した場合のみ、Exchange のオンラインの計画は、オンラインの SharePoint のセキュリティ機能のするスコアはありません。スコアの分母は、購入した製品に適用されるコントロールのすべてのベースラインの合計です。分子は、すべてのコントロールを完了すると、または部分的に完了したら、そのコントロールを実行するために操作の合計です。
+
+## <a name="related-topics"></a>関連項目
+
+[ダッシュ ボードのセキュリティの概要](security-dashboard.md)
   
 
