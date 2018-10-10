@@ -12,20 +12,20 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: 検索し、Office 365 高度な脅威保護、セキュリティでのレポートを使用する方法を説明&amp;コンプライアンス センターです。
-ms.openlocfilehash: 13b2a4c142a223a8a912c9017b6033b0b5a1548b
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 4a76c6a5b888142dc4c35af432fa61916145d648
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782114"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454304"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 の高度な脅威保護のためのレポートを表示します。
 
-セキュリティ分析ツールのいくつかのレポートを使用するには組織に[Office 365 の高度な脅威保護](office-365-atp.md)(ATP) があり、ユーザーが必要なアクセス許可を持っている場合は場合、&amp;コンプライアンス センターです。(**レポート**には、 \> **ダッシュ ボード**です)。
+セキュリティ分析ツールのいくつかのレポートを使用するには、組織が[Office 365 の高度な脅威保護](office-365-atp.md)(ATP) には、[必要なアクセス許可](#what-permissions-are-needed-to-view-these-reports)がある場合、&amp;コンプライアンス センターです。(**レポート**には、 \> **ダッシュ ボード**です)。
   
 ![セキュリティ&amp;コンプライアンス センターのダッシュ ボードを使用して、脅威の高度な保護が作業しているを確認できます](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-ATP のレポートには、脅威の保護ステータス レポート、分析ツールのファイルの種類のレポート、および ATP メッセージ破棄レポートが含まれます。この資料では、ATP のレポートについて説明し、表示するのにはその他のレポートへのリンクが含まれています。
+ATP のレポートには、[脅威保護のステータス レポート](#threat-protection-status-report)は、[分析ツールのファイルの種類のレポート](#atp-file-types-report)、および[ATP メッセージ破棄レポート](#atp-message-disposition-report)が含まれます。この資料では、ATP のレポートについて説明し、[表示するのにはその他のレポート](#additional-reports-to-view)へのリンクが含まれています。
   
 ## <a name="threat-protection-status-report"></a>脅威保護のステータス レポート
 
@@ -77,9 +77,9 @@ ATP のレポートには、脅威の保護ステータス レポート、分析
   
 組織が[Office 365 の脅威インテリジェンス](office-365-ti.md)の場合することもでき、 [、セキュリティでエクスプ ローラーを使用して&amp;コンプライアンス センター](use-explorer-in-security-and-compliance.md)。
   
-## <a name="what-permissions-are-needed-to-view-these-reports"></a>これらのレポートを表示するのにはどのようなアクセス許可が必要か。
+## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>ATP のレポートを表示するのにはどのようなアクセス許可が必要か。
 
-表示し、この資料に記載されている電子メールのセキュリティ レポートを使用して、セキュリティの割り当て、適切なロールが必要&amp;コンプライアンス センターと、Exchange 管理センターで。
+表示し、この資料に記載されているレポートを使用して、セキュリティの割り当て、適切なロールが必要&amp;コンプライアンス センターと、Exchange 管理センターで。
   
 |**役割グループ**|**割り当てられている場合**|**詳細情報**|
 |:-----|:-----|:-----|

@@ -3,7 +3,6 @@ title: Office 365 の ATP の安全な添付ファイル
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 08/03/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,20 +13,22 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: 安全な添付ファイル機能は、電子メールの添付ファイルのクリックの検証を提供します。ファイルを悪意のあるユーザーから組織を保護するために使用の安全な添付ファイルで送信または受信電子メールです。
-ms.openlocfilehash: 0a28923bff8aa2cd987159edd3cad77ed42f80f4
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 44a7aa56db6b19ac948184988c930841fc7ffb89
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532148"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454314"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 の ATP の安全な添付ファイル
 
+## <a name="overview-of-office-365-atp-safe-attachments"></a>Office 365 の ATP の安全な添付ファイルの概要
+
 分析ツール ( [ATP の安全なリンク](atp-safe-links.md)) との安全な添付ファイルは、 [Office 365 の高度な脅威保護](office-365-atp.md)(ATP) の一部です。ATP の安全な添付ファイル機能では、電子メールの添付ファイルは、悪意のあるかどうかを確認し、組織を保護するために操作を行います。ATP の安全な添付ファイル機能は、Office 365 のグローバルまたはセキュリティ管理者によって設定されている[安全な添付ファイルの分析ツールのポリシー](set-up-atp-safe-attachments-policies.md)に従って、組織を保護します。 
   
-遅延 2018年 3 月で、次の数週間を開始するには、ATP の保護が拡張されて、SharePoint Online の OneDrive 内のファイルにビジネス、およびマイクロソフトのチームの。詳細については、 [Office 365 高度な脅威保護](atp-for-spo-odb-and-teams.md)を参照してください。
+最近では、ATP の保護が、SharePoint Online の OneDrive 内のファイルにビジネス、およびマイクロソフトのチームに拡張されました。詳細については、 [Office 365 高度な脅威保護](atp-for-spo-odb-and-teams.md)を参照してください。
        
-## <a name="how-it-works"></a>しくみ
+### <a name="how-it-works"></a>しくみ
 
 ATP の安全な添付ファイル機能は、組織内のユーザーの電子メールの添付ファイルをチェックします。ATP の安全な添付ファイル ポリシーが適用されて、他の対象となるポリシーが Office 365 に自分の電子メールを表示する、その電子メールの添付ファイルがチェックされ、ATP の安全な添付ファイル ポリシーに基づいて、適切な動作が実行します。ポリシーの定義方法によって、人は悪意のあるファイルを送信した順序を今まで知らなくても作業を続行できます。
   
@@ -41,7 +42,7 @@ ATP の安全な添付ファイルのポリシーは、特定の人または組�
   
 ## <a name="how-to-get-atp-safe-attachments"></a>ATP の安全な添付ファイルを取得する方法
 
-ATP の安全な添付ファイル機能は、高度な脅威保護の Office 365 エンタープライズ E5 に含まれている部分です。組織は、別の Office 365 エンタープライズ サブスクリプションで使用されている場合は、アドオンとして脅威の高度な保護を購入できます。(グローバル管理者は、Office 365 管理センターを選択して**請求** \> **サブスクリプションを追加**します)。詳細についてを参照してください[Office 365 のプラットフォーム サービスの説明: Office 365 のセキュリティ&amp;コンプライアンス センター](https://technet.microsoft.com/en-us/library/dn933793.aspx) [購入またはビジネスのための Office 365 のアドオンを編集](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)するとします。
+ATP の安全な添付ファイル機能は、高度な脅威保護の Microsoft 365 エンタープライズ、Office 365 のエンタープライズ E5、および Microsoft 365 業務に含まれている部分です。組織は、別の Office 365 エンタープライズ サブスクリプションで使用されている場合は、アドオンとして脅威の高度な保護を購入できます。(グローバル管理者は、Office 365 管理センターを選択して**請求** \> **サブスクリプションを追加**します)。詳細についてを参照してください[Office 365 のプラットフォーム サービスの説明: Office 365 のセキュリティ&amp;コンプライアンス センター](https://technet.microsoft.com/en-us/library/dn933793.aspx) [購入またはビジネスのための Office 365 のアドオンを編集](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)するとします。
   
 場合、安全な添付ファイルの分析ツールの機能に適用されます。
   
@@ -49,7 +50,7 @@ ATP の安全な添付ファイル機能は、高度な脅威保護の Office 36
     
 - 職場、学校のアカウントを使用して Office 365 にユーザーに署名します。(詳しくは、 [Office または Office 365 にサインイン](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)を参照してください)。
     
-## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>ATP の安全な添付ファイルの保護を確認する方法
+### <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>ATP の安全な添付ファイルの保護を確認する方法
 
  ATP の安全な添付ファイルの保護を配置するためには、 [ATP の安全な添付ファイル ポリシー](set-up-atp-safe-attachments-policies.md)を定義しなければなりません。 
   
@@ -67,7 +68,9 @@ ATP の安全な添付ファイル機能は、高度な脅威保護の Office 36
    
 ## <a name="submitting-files-for-malware-analysis"></a>マルウェアの分析のためのファイルを送信します。
 
-分析するためのマイクロソフトを要求するファイルを受信する場合は、[マルウェアの解析用のファイルの送信](https://aka.ms/wdsi/submit)を参照してください。
+- 分析するためのマイクロソフトを要求するファイルを受信する場合は、[マルウェアの解析用のファイルの送信](https://aka.ms/wdsi/submit)を参照してください。
+
+- 分析のためにマイクロソフトに送信する電子メール メッセージ (添付ファイルの有無にかかわらず) を受信する場合、[レポート メッセージのアドインを](enable-the-report-message-add-in.md)使用します。
   
 ## <a name="related-topics"></a>関連項目
 

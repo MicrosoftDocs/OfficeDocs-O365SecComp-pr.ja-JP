@@ -3,7 +3,6 @@ title: セキュリティで電子メールのセキュリティ レポートを
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 08/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,16 +12,16 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: 検索し、Office 365 の企業で、組織の電子メール セキュリティのレポートを使用する方法について説明します。電子メール セキュリティのレポートは、セキュリティで利用可能な&amp;コンプライアンス センターです。
-ms.openlocfilehash: 81716a3ecc506d36c786d53068f7d2cce8a44a9a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0dd0c2ee7090e488d8619e71c6e4931f1934e9b0
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532820"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454344"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>セキュリティで電子メールのセキュリティ レポートを表示する&amp;コンプライアンス センター
 
-電子メール セキュリティのさまざまなレポートをセキュリティで利用可能な&amp;Office 365 のスパム対策およびマルウェア対策の機能が、組織を保護する方法を表示するためのコンプライアンス センターです。セキュリティのこれらのレポートを表示するには必要な権限があれば、 &amp; **のレポート**に移動してコンプライアンス センター \> **ダッシュ ボード**です。
+電子メール セキュリティのさまざまなレポートをセキュリティで利用可能な&amp;Office 365 のスパム対策およびマルウェア対策の機能が、組織を保護する方法を表示するためのコンプライアンス センターです。セキュリティのこれらのレポートを表示するには[必要なアクセス許可](#what-permissions-are-needed-to-view-these-reports)がある場合は、 &amp; **のレポート**に移動してコンプライアンス センター \> **ダッシュ ボード**。
   
 ![セキュリティ&amp;コンプライアンス センターのダッシュ ボードを使用して、脅威の高度な保護が作業しているを確認できます](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   

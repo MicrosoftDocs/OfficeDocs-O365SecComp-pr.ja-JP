@@ -3,7 +3,6 @@ title: Office 365 ATP の安全な添付ファイル ポリシーを設定しま
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/8/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: 電子メールに悪意のあるファイルから組織を保護するために安全な添付ファイル ポリシーを定義します。
-ms.openlocfilehash: bc52522a45071776835efe20f57cf37c415d2436
-ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
+ms.openlocfilehash: c57f9320c7cd2b8b75bc2dc58d1f72ce136acbb6
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25092943"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454284"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Office 365 ATP の安全な添付ファイル ポリシーを設定します
 
@@ -43,9 +42,6 @@ ms.locfileid: "25092943"
 - 最大 30 分間のすべての Office 365 のデータ センターに展開するのには、新規または更新されたポリシーを使用できます。
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>ATP の安全な添付ファイル ポリシーを手順 2: を設定する (または編集)
-
-> [!TIP]
-> Office 365 のセキュリティいずれかの方法を使用して、ATP の安全な添付ファイル ポリシーを設定できます&amp;コンプライアンス センターまたは Exchange 管理センター (EAC)。**Office 365 のセキュリティを使用することをお勧めします。&amp;コンプライアンス センター**です。 
   
 1. グローバル管理者またはセキュリティ管理者には、[https://protection.office.com](https://protection.office.com)と、職場、学校のアカウントでサインインします。 
     
