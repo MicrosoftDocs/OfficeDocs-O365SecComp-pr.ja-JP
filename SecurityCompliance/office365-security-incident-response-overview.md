@@ -1,5 +1,5 @@
 ---
-title: Office 365 でのセキュリティ インシデントへの対応
+title: Office 365 セキュリティ インシデント対応
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -16,14 +16,14 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: このソリューションは、Office 365 とそれに応答する方法で攻撃する、最も一般的なサイバー ・ セキュリティのようになります
-ms.openlocfilehash: 3b72b9bf8c68df2fcc1233b56ee33eaf45695bfe
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: d2caea8cc7ceecb18cd477b8a1ff12352d83c3df
+ms.sourcegitcommit: 87a3ca55b6e9cf7e9ccf73e64013dc78dd7660f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532565"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "25494078"
 ---
-# <a name="office-365-security-incident-response"></a>Office 365 でのセキュリティ インシデントへの対応
+# <a name="office-365-security-incident-response"></a>Office 365 セキュリティ インシデント対応
 
  **の概要:** このソリューションでは、Office 365 の最も一般的なサイバー セキュリティ攻撃の状況説明マークとは、特定の攻撃を確実に確認する方法、それに応答する方法を示します。
   
@@ -41,9 +41,14 @@ ms.locfileid: "22532565"
 チェックして毎月のように他の資料は、時間の経過と共に追加されます。
 
 ## <a name="detect-and-remediate-articles"></a>検出し、記事の修正
+
 - [Microsoft Office 365 での不正な同意付与の検出と修復](detect-and-remediate-illicit-consent-grants.md)
 - [Office 365 で Outlook のルールと ユーザー設定フォーム インジェクション攻撃の検出と修復を行う](detect-and-remediate-outlook-rules-forms-attack.md)
  
+## <a name="incident-response-articles"></a>インシデント レスポンスの記事
+
+- [侵害された Office 365 電子メール アカウントへの対応](responding-to-a-compromised-email-account.md)
+
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Pro の cybersecurity のように Office 365 をセキュリティで保護します。
 Office 365 サブスクリプションのデータとユーザーを保護するために使用できるセキュリティ機能の強力なセットが付属します。 使用、 [Office 365 のセキュリティ ロードマップ: 最初の 30 日、90 日間での内外の優先順位のトップ](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)マイクロソフトが推奨する、Office 365 テナントのセキュリティに関するベスト プラクティスを実装します。
 - 最初の 30 日以内に実行するタスクです。 即座に影響があり、影響の少ないのはこれらのユーザーにします。
