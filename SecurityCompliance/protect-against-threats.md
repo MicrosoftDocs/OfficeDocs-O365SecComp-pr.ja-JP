@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: Office 365 エンタープライズ保護する方法と、さまざまな脅威、なりすまし、マルウェア、スパム、フィッシング詐欺、およびデータへの不正アクセスを含む、組織について説明します。
-ms.openlocfilehash: 4534e12280b5e627c2594c0365262a5c7c14a8c4
-ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
+ms.openlocfilehash: 18e91b3a27ff9722a285a4c84f810876e1cab462
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24011269"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496851"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Office 365 での脅威からの保護
 
@@ -54,7 +54,7 @@ Office 365 のスパム対策の評価、接続フィルター、およびマル
     
 - [なりすましインテリジェンスについてください。](learn-about-spoof-intelligence.md)
     
-- [ATP のフィッシング詐欺対策のポリシーを設定します](set-up-atp-anti-phishing-policies.md)
+- [フィッシング詐欺対策のポリシーを設定します](set-up-anti-phishing-policies.md)
     
 - [ATP の安全なリンク機能のポリシーを設定する](set-up-atp-safe-links-policies.md)
     

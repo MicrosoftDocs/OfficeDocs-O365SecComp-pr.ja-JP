@@ -3,7 +3,7 @@ title: Office 365 でのスプーフィング対策保護
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 10/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: この資料では、どのように Office 365 を軽減するフィッシング攻撃使用が送信者ドメインがスプーフィングされているドメインは、偽造されたことを説明します。メッセージを分析してこれを達成して、標準的な電子メールの認証方法やその他の送信者評価の手法を使用して、neithe を認証することができるものをブロックします。Office 365 の組織に公開するフィッシング攻撃の数を減らすためにこの変更が実装されています。
-ms.openlocfilehash: bbcfbcdf32c87e070f10c9478a7c5978e909f009
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 37eddfcad9bc5e412f62dd857178eafa8cac9355
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22559222"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496901"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 でのスプーフィング対策保護
 
@@ -25,7 +25,7 @@ ms.locfileid: "22559222"
   
 説明なぜこの変更、この変更の顧客をどのように準備することができます、影響を受けるメッセージを表示するのには、メッセージを報告する方法、誤を軽減する方法と、これはマイクロソフトに送信者をどのように準備する必要があります。変更します。
   
-マイクロソフトのスプーフィング対策技術は、Office 365 高度な脅威保護 (ATP) と E5 のお客様に最初に展開しました。ただし、互いから学ぶすべてのフィルターのため、分析ツールではないお客様、Outlook.com のユーザーも影響します。
+マイクロソフトのスプーフィング対策テクノロジは、Office 365 エンタープライズ E5 サブスクリプションまたはサブスクリプションの Office 365 高度な脅威保護 (ATP) のアドオンを購入する必要があるが、組織に最初に配置されました。10 月、2018 年にも Exchange オンライン保護 (EOP) が存在する組織に保護が拡張します。さらに、互いから学ぶすべての当社のフィルターにより、Outlook.com のユーザーもがあります。
   
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>フィッシング攻撃の偽装の使用方法
 
@@ -174,7 +174,7 @@ Authentication-Results: spf=none (sender IP is 1.2.3.4)
 From: sender @ example.com
 To: receiver @ contoso.com
 ```
-スプーフィング対策後、脅威保護の高度なまたは E5 製品を使用している場合、compauth 値がスタンプ (分析ツールではないと E5 で以外のお客様は影響を受けません)。
+スプーフィング対策後があれば Office 365 エンタープライズ E5、EOP、ATP、compauth 値がスタンプします。
   
 ```
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
@@ -408,27 +408,27 @@ Bing.com から認証されていない電子メールを送信するように�
   
 ### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>についてどのように迷惑メール、フィッシング詐欺、および高度なフィッシング詐欺の検出を組み合わせる
 
-Exchange のオンライン ・ カスタマー ・分析ツールと分析ツールではないのは、サービスは、マルウェア、スパム、精度の高いスパム、フィッシング、および一括としてメッセージを識別するときに実行されるアクションを指定できます。ただし、ATP のお客様向けの新しいフィッシング詐欺対策ポリシーとメッセージが複数の検出の種類 (マルウェア、フィッシング、およびユーザーの偽装など) をヒット可能性がありますという事実の導入により、可能性があります混乱を招くとすると、ポリシーが適用されます。 
+ATP の有無にかかわらず、Exchange Online を使用する組織は、このサービスでは、マルウェア、スパム、精度の高いスパム、フィッシング、および一括としてメッセージを確認するときに実行する操作を指定できます。ATP お客様は、ATP のフィッシング対策ポリシーと EOP のお客様にとって、フィッシング詐欺対策ポリシーとメッセージが複数の検出の種類 (たとえば、マルウェア、フィッシング詐欺、およびユーザーの偽装) をヒット可能性がありますという事実、ある可能性がありますか、混乱を招くポリシーが適用されます。 
   
 一般に、メッセージに適用されるポリシーは、CAT (カテゴリ) のプロパティに X Forefront スパム対策レポート ヘッダーで識別されます。 
   
 |**Priority**|**ポリシー**|**カテゴリ**|**場所、管理しますか。**|**適用対象**|
 |:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |マルウェア  <br/> |MALW  <br/> |[マルウェアのポリシー](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |すべてのお客様  <br/> |
-|2  <br/> |フィッシング  <br/> |PHSH  <br/> |[ホストされるコンテンツ フィルター ポリシー](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |すべてのお客様  <br/> |
-|3  <br/> |信頼度の高いスパム  <br/> |HSPM  <br/> |[ホストされるコンテンツ フィルター ポリシー](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |すべてのお客様  <br/> |
-|4  <br/> |なりすまし  <br/> |なりすまし  <br/> |[フィッシング詐欺対策ポリシー](https://go.microsoft.com/fwlink/?linkid=864553)[なりすましのインテリジェンス](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |ATP のみ  <br/> |
-|5  <br/> |スパム  <br/> |SPM  <br/> |[ホストされるコンテンツ フィルター ポリシー](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |すべてのお客様  <br/> |
-|6  <br/> |一括  <br/> |一括  <br/> |[ホストされるコンテンツ フィルター ポリシー](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |すべてのお客様  <br/> |
-|7   <br/> |ドメインの偽装  <br/> |DIMP  <br/> |[フィッシング詐欺対策ポリシー](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |ATP のみ  <br/> |
-|8  <br/> |ユーザーの偽装  <br/> |UIMP  <br/> |[フィッシング詐欺対策ポリシー](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |ATP のみ  <br/> |
+|1   <br/> |マルウェア  <br/> |MALW  <br/> |[マルウェアのポリシー](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |すべての組織  <br/> |
+|2   <br/> |フィッシング  <br/> |PHSH  <br/> |[ホストされるコンテンツ フィルター ポリシー](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |すべての組織  <br/> |
+|3   <br/> |信頼度の高いスパム  <br/> |HSPM  <br/> |[ホストされるコンテンツ フィルター ポリシー](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |すべての組織  <br/> |
+|4   <br/> |なりすまし  <br/> |なりすまし  <br/> |[フィッシング詐欺対策ポリシー](https://go.microsoft.com/fwlink/?linkid=864553)[なりすましのインテリジェンス](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |すべての組織  <br/> |
+|5   <br/> |スパム  <br/> |SPM  <br/> |[ホストされるコンテンツ フィルター ポリシー](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |すべての組織  <br/> |
+|6   <br/> |一括  <br/> |一括  <br/> |[ホストされるコンテンツ フィルター ポリシー](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |すべての組織  <br/> |
+|7   <br/> |ドメインの偽装  <br/> |DIMP  <br/> |[フィッシング詐欺対策ポリシー](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |ATP の組織のみ  <br/> |
+|8   <br/> |ユーザーの偽装  <br/> |UIMP  <br/> |[フィッシング詐欺対策ポリシー](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |ATP の組織のみ <br/> |
    
 別のフィッシング詐欺対策ポリシーが複数ある場合は、最高の優先順位で適用されます。たとえば、2 つのポリシーがあるとします。
   
 |**ポリシー**|**Priority**|**ユーザー/ドメインの偽装**|**スプーフィング対策**|
 |:-----|:-----|:-----|:-----|
-|A  <br/> |1  <br/> |On  <br/> |Off  <br/> |
-|B  <br/> |2  <br/> |Off  <br/> |オン  <br/> |
+|A  <br/> |1   <br/> |On  <br/> |Off  <br/> |
+|B  <br/> |2   <br/> |Off  <br/> |オン  <br/> |
    
 メッセージは、スプーフィングおよびユーザーの偽装とは、識別しユーザーの同じセットのスコープは、ポリシー A と B のポリシー、し、メッセージは、スプーフィングとして扱われますと以降のアクションは適用されませんスプーフィング対策がになっています。、なりすましは、ユーザーの偽装 (8) よりも高い優先順位 (4) で実行されるとします。
   
@@ -683,7 +683,7 @@ example.com の TXT」v = spf1 include:spf.example.com? すべて"
   
 ### <a name="will-microsoft-bring-this-feature-to-outlookcom-and-non-advanced-threat-protection-customers-of-office-365"></a>マイクロソフトは、Office 365 の Outlook.com と非-高度な脅威保護のお客様にこの機能を表示します。
 
-スプーフィング対策の保護では、最初に展開するか、ATP と E5 の顧客とその他のユーザーに、将来的に解放する可能性があります。ただし場合は、レポート作成などに適用されていないいくつかの機能がある可能性があり、ユーザー設定よりも優先します。
+マイクロソフトのスプーフィング対策テクノロジは、Office 365 エンタープライズ E5 サブスクリプションまたはサブスクリプションの Office 365 高度な脅威保護 (ATP) のアドオンを購入する必要があるが、組織に最初に配置されました。10 月、2018 年にも Exchange オンライン保護 (EOP) が存在する組織に保護が拡張します。今後、Outlook.com の解放ことがあります。場合は、レポート作成などに適用されていないいくつかの機能がある可能性があり、ユーザー設定を上書きします。
   
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>方法ことができますか迷惑メールまたはスパムでないメッセージをマイクロソフトに報告しますか。
 

@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 ms.assetid: 5076d0f6-7a59-4d6c-bd07-ba95033f0682
 description: ATP フィッシング詐欺対策が Office 365 の高度な脅威保護の一部として提供されます。ATP フィッシング詐欺対策には、商品とスピアー フィッシング攻撃に対する保護を提供する受信したメッセージに偽装検出アルゴリズムとコンピューターの学習モデルのセットが適用されます。すべてのメッセージは予告なしに広範囲にわたる機械学習モデルのさまざまなユーザーおよびドメインの偽装攻撃から保護するために使用する高度なアルゴリズムのセットと、フィッシング詐欺メッセージを検出するためにトレーニングをされることがあります。ATP フィッシング詐欺対策は、設定に基づいて、組織を保護する、Office 365 のグローバルまたはセキュリティ管理者によって設定され、ポリシーにします。
-ms.openlocfilehash: cff25316f9a03bdfafd195eb408584ab8bca6343
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e7bb4c4a28109c40bf745a25c9c8366558cf2ac7
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531989"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496891"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Office 365 の ATP のフィッシング詐欺対策機能
 
 ATP フィッシング詐欺対策が[Office 365 の高度な脅威保護](https://technet.microsoft.com/en-us/library/exchange-online-advanced-threat-protection-service-description.aspx)の一部として提供されます。ATP フィッシング詐欺対策には、商品とスピアー フィッシング攻撃に対する保護を提供する受信したメッセージに偽装検出アルゴリズムとコンピューターの学習モデルのセットが適用されます。すべてのメッセージは予告なしに広範囲にわたる機械学習モデルのさまざまなユーザーおよびドメインの偽装攻撃から保護するために使用する高度なアルゴリズムのセットと、フィッシング詐欺メッセージを検出するためにトレーニングをされることがあります。ATP フィッシング詐欺対策は、設定に基づいて、組織を保護する、Office 365 のグローバルまたはセキュリティ管理者によって設定され、ポリシーにします。
   
-詳細については、 [Office 365 の ATP のフィッシング詐欺対策ポリシーの設定](set-up-atp-anti-phishing-policies.md)を参照してください。
+詳細については、 [Office 365 でのフィッシング詐欺対策ポリシーの設定](set-up-anti-phishing-policies.md)を参照してください。
   
 > [!NOTE]
 > ATP フィッシング詐欺対策には、高度な脅威保護、Office 365 エンタープライズ E5 で使用可能にできるだけです。組織は、別の Office 365 エンタープライズ サブスクリプションで使用されている場合は、アドオンとして脅威の高度な保護を購入できます。(グローバル管理者の場合は、Office 365 管理センターで、選択**請求** \> **サブスクリプションを追加**します)。プランのオプションの詳細については、[ビジネス プランのすべての Office 365 の比較](https://go.microsoft.com/fwlink/?linkid=844053)を参照してください。 
@@ -35,14 +35,14 @@ ATP フィッシング詐欺対策は、メッセージはフィッシング詐�
   
 ATP フィッシング詐欺対策には、ユーザーまたはドメインのいずれかの偽装は、フィッシング攻撃に対する保護を提供するポリシーを定義するには、Office 365 のグローバル管理者またはセキュリティ管理者ができます。(またはその両方) します。Office 365 のグローバル管理者またはセキュリティ管理者は、固定リストのユーザーまたはドメインまたはメールボックスのインテリジェンスを使用していずれかの方法を使用して偽装攻撃からは、どのユーザーやドメインを保護する必要がありますポリシー内で定義します。メールボックスの情報は、ユーザーの電子メールの習慣や個人の連絡先の詳細に理解することです。分析ツールは、個々 のユーザーの組織の内外の他のユーザーと通信してこれらの関係の地図を作成して学習します。このマップは、右のメッセージが偽装として識別されることを確認する方法の詳細を理解する分析ツールを使用します。
   
-ATP フィッシング詐欺対策ポリシーをユーザーまたはグループ、組織内の特定のセットに、またはドメイン全体またはすべてのカスタム ドメインに適用することができます。詳細については、 [Office 365 の ATP のフィッシング詐欺対策ポリシーの設定](set-up-atp-anti-phishing-policies.md)を参照してください。
+ATP フィッシング詐欺対策ポリシーをユーザーまたはグループ、組織内の特定のセットに、またはドメイン全体またはすべてのカスタム ドメインに適用することができます。詳細については、 [Office 365 でのフィッシング詐欺対策ポリシーの設定](set-up-anti-phishing-policies.md)を参照してください。
   
 ## <a name="how-to-get-atp-anti-phishing"></a>フィッシング詐欺対策の ATP を取得する方法
 <a name="Howtogetantiphish"> </a>
 
 ATP フィッシング詐欺対策は、高度な脅威保護の Office 365 エンタープライズ E5 に含まれている部分です。Office 365 エンタープライズ E1 または Office 365 エンタープライズ E3 へのアドオンとして高度な脅威保護を購入することもできます。プランのオプションの詳細については、[ビジネス プランのすべての Office 365 の比較](https://go.microsoft.com/fwlink/?linkid=844053)を参照してください。
   
-フィッシング詐欺対策ポリシーでは、ATP のフィッシング対策が適用される、偽装・ ベースのポリシーの設定などです。( [Office 365 の ATP のフィッシング詐欺対策ポリシーの設定](set-up-atp-anti-phishing-policies.md)を参照してください)。
+フィッシング詐欺対策ポリシーでは、ATP のフィッシング対策が適用される、偽装・ ベースのポリシーの設定などです。( [Office 365 でのフィッシング詐欺対策ポリシーの設定](set-up-anti-phishing-policies.md)を参照してください)。
   
 ## <a name="how-to-know-if-atp-anti-phishing-is-in-place"></a>ATP フィッシングの場所で確認する方法
 <a name="IsantiphishOn"> </a>
@@ -62,7 +62,7 @@ ATP のフィッシング詐欺対策のポリシーは、保護をアクティ�
   
 [Office 365 でのフィッシング対策保護](anti-phishing-protection.md)
   
-[Office 365 の ATP のフィッシング詐欺対策ポリシーを設定します](set-up-atp-anti-phishing-policies.md)
+[Office 365 でのフィッシング詐欺対策ポリシーを設定します](set-up-anti-phishing-policies.md)
   
 [Office 365 の ATP の安全なリンク](atp-safe-links.md)
   

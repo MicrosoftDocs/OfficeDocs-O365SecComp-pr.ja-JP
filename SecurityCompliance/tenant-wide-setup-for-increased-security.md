@@ -3,7 +3,7 @@ title: セキュリティ強化のために、Office 365 テナントを構成�
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
-ms.date: 6/27/2018
+ms.date: 10/11/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: テナント全体の設定を Office 365 環境内のセキュリティに影響を与えるための推奨される構成について説明します。セキュリティ ニーズは、セキュリティまたは短い必要があります。これらの推奨事項は、開始点として使用します。
-ms.openlocfilehash: e81c3e18bccc9ccaab7c6f018c6f40b5ea796e14
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: de3a1d19e09144105f9576b3a4eb8ed76eb08585
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013871"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496871"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>セキュリティ強化のために、Office 365 テナントを構成する
 
@@ -32,7 +32,7 @@ Office 365 のセキュリティ&amp;コンプライアンス センターには
   
 |領域。|既定のポリシー。|推奨。|
 |:-----|:-----|:-----|
-|**ATP フィッシング詐欺対策** <br/> |いいえ  <br/> | カスタム ドメインがある場合、最高経営責任者など、最も価値のあるユーザーの電子メール アカウントを保護して、ドメインを保護するためには、フィッシング詐欺対策ポリシーを作成します。[ATP のフィッシング詐欺対策ポリシーの設定](set-up-atp-anti-phishing-policies.md)を確認し、ガイドとしてこの例を使用してポリシーを作成する:」の使用例: ユーザーとドメインを保護するためにフィッシング詐欺対策ポリシー」。|
+|**フィッシング詐欺対策** <br/> |はい  <br/> | カスタム ドメインがある場合、最高経営責任者など、最も価値のあるユーザーの電子メール アカウントを保護して、ドメインを保護するためには、フィッシング詐欺対策ポリシーを作成します。[フィッシング詐欺対策ポリシーを設定する](set-up-anti-phishing-policies.md)かを確認し、ガイドとしてこの例を使用してポリシーを作成する:」の使用例: ドメインとユーザーを保護するためにフィッシング詐欺対策ポリシー」。|
 |**マルウェア対策エンジン** <br/> |はい  <br/> | 既定のポリシーを編集します。  <br/> • 一般的な添付ファイル フィルターの種類などを選択  <br/><br>  カスタムのマルウェア フィルター ポリシーを作成し、組織内の指定したユーザー、グループ、またはドメインに適用できます。  <br/> <br> 詳しくは、以下の資料を参照してください。  <br/> •[マルウェア対策保護](https://technet.microsoft.com/en-us/library/jj200669%28v=exchg.150%29.aspx) <br/> •[マルウェア対策ポリシーを構成します。](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |
 |**ATP の安全な添付ファイル機能** <br/> |いいえ  <br/> | 安全な添付ファイルのメイン ページで、SharePoint、OneDrive、およびマイクロソフトのチーム内のファイルを保護このチェック ボックス。  <br/>  • および有効にする分析ツールで SharePoint、OneDrive、マイクロソフトのチーム  <br/> <br> これらの設定では、新しい安全な添付ファイル ポリシーを追加します。  <br/>  • ブロック-現在および将来の e メールおよび検出されたマルウェアの添付ファイルをブロックする (このオプションを選択します)  <br/>  • 有効にする」にリダイレクト: (チェック ボックスをオンし、管理や検査など、電子メール アドレスを入力してください)  <br/>  • は、マルウェアの添付ファイルのスキャンがタイムアウトになるか、エラーが発生した場合に上記の選択を適用します (チェック ボックスをオン)  <br/>  • に適用される、受信者のドメインにドメインを (選択)  <br/>  <br>詳細: [Office 365 の ATP の安全な添付ファイル ポリシーを設定します](set-up-atp-safe-attachments-policies.md) <br/> |
 |**ATP の安全なリンク** <br/> |はい  <br/> | この設定を組織全体の既定のポリシーに追加します。  <br/> • 内の安全なリンクを使用します。 Office 365 用リソース、オフィスの iOS と Android (このオプションを選択します)。  <br/> <br>特定の受信者に対するポリシーを推奨。  <br/>  • Url 書き換えし、するユーザーがリンクをクリックすると、既知の悪意のあるリンクの一覧に照らし合わせて確認 (このオプションを選択します)。  <br/>  • ダウンロード可能なコンテンツをスキャンするのには安全な添付ファイルを使用して (チェック ボックスをオン)。  <br/>  • に適用される、受信者のドメインにドメインを (選択) します。  <br/> <br> 詳細: [Office 365 の ATP の安全なリンク](atp-safe-links.md)です。  <br/> |
@@ -114,7 +114,7 @@ SharePoint 管理者センターとビジネス管理センターの OneDrive �
     
 ![Cloud App Security ダッシュボード](media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
   
-## <a name="additional-resources"></a>その他の技術情報
+## <a name="additional-resources"></a>その他のリソース
 
 これらの記事とガイドは、Office 365 環境内のセキュリティ保護に関する規範的な追加の情報を提供します。
   

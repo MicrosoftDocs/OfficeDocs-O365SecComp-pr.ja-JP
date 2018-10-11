@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 description: 高度な脅威保護 office 365 にはには、なりすましのインテリジェンス、安全なリンク、安全な添付ファイル、および高度なフィッシング対策機能が含まれています。脅威の高度な保護も拡張されている SharePoint のオンライン、OneDrive 内のファイルにビジネス、およびマイクロソフトのチームです。
-ms.openlocfilehash: fed816ec8cd0e3e7a6b5118fde35d81647b94f02
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: e3b282118b5fde0374bb9f052e7efe8a13e2fd70
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454354"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496861"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -51,7 +51,7 @@ ATP を作成したら、次に、セキュリティ チーム用にポリシー
   
 ## <a name="define-policies-for-atp"></a>ATP のポリシーを定義します。
 
-- 信頼されたユーザーまたはドメインからのように見える**[Office 365 の ATP のフィッシング詐欺対策ポリシーを設定します](set-up-atp-anti-phishing-policies.md)** 偽装ベースの攻撃を含む電子メール メッセージを送信する攻撃者から保護するため 
+- 信頼されたユーザーまたはドメインからのように見える**[Office 365 の ATP のフィッシング詐欺対策ポリシーを設定します](set-up-anti-phishing-policies.md)** 偽装ベースの攻撃を含む電子メール メッセージを送信する攻撃者から保護するため 
 
 - **[Office 365 の ATP の安全なリンクのポリシーを設定](set-up-atp-safe-links-policies.md)** 組織の[ユーザー設定のブロックされた Url のリスト](set-up-a-custom-blocked-urls-list-wtih-atp.md)と[カスタム」を書き換えない」の Url] ボックスの一覧](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)を含む
     
@@ -69,7 +69,7 @@ ATP のポリシーがあると後、は、サービスの操作方法を表示�
     
 3. 必要な場合、セキュリティ ポリシーを調整します。次のリソースを参照してください。
 
-  - [Office 365 の ATP のフィッシング詐欺対策ポリシー](set-up-atp-anti-phishing-policies.md)
+  - [Office 365 の ATP のフィッシング詐欺対策ポリシー](set-up-anti-phishing-policies.md)
     
   - [Office 365 の ATP の安全なリンクのポリシー](set-up-atp-safe-links-policies.md)
     
