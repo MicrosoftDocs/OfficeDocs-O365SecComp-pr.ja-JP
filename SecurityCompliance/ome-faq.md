@@ -3,7 +3,7 @@ title: Office 365 Message Encryption に関する FAQ
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 09/27/2018
+ms.date: 10/9/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Office 365 で新しいメッセージの保護機能のしくみについて質問があるでしょうか。ここで回答を確認します。
-ms.openlocfilehash: c580ef701f6ee98ea2fc71df792256b1792c73cd
-ms.sourcegitcommit: 411713004251ee62d29b550eabea04c08a87e41f
+ms.openlocfilehash: 63bea478e144f42cabc67f7075cd52199d954d9c
+ms.sourcegitcommit: d3f3e2eb9ef05ebef85d83935a2cb0f7690ee6fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25341432"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25495521"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 Message Encryption に関する FAQ
 
@@ -89,7 +89,7 @@ Office 365 のメッセージの暗号化のための新しい機能は、既存
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>自組織は、Exchange ハイブリッド展開をします。この機能を使用することができますか。
 
-オンプレミス ユーザーがオンラインの Exchange のメール フロー ルールを使用して、暗号化されたメールを送信できます。これを行うには、Exchange のオンラインを介して電子メールをルーティングする必要があります。
+オンプレミス ユーザーがオンラインの Exchange のメール フロー ルールを使用して、暗号化されたメールを送信できます。これを行うには、Exchange のオンラインを介して電子メールをルーティングする必要があります。詳細についてを参照してください[第 2 部: メールをメール サーバーから Office 365 へのフローを構成する](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)です。
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>ホームの暗号化されたメッセージを作成するために使用する必要があるどのような電子メール クライアントをしますか。保護されたメッセージを送信するためにどのようなアプリケーションがサポートされてでしょうか。
 
@@ -119,7 +119,7 @@ Word、Excel、または PowerPoint ファイルなど、ファイル形式が�
   
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>自動的に暗号化メッセージでデータ損失防止 (DLP)、セキュリティ ・ ポリシーを設定することによって&amp;コンプライアンス センターでしょうか。
 
-現在のみ設定できますメール フロー ルールを Exchange オンライン。暗号化は現在サポートされていません、セキュリティによる DLP の&amp;コンプライアンス センターです。
+うん！DLP を使用して、セキュリティで、Exchange のオンラインでのメール フロー ルールを設定することができます&amp;コンプライアンス センターです。
   
 ## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>共有メールボックスに送信された暗号化メッセージを開くことができますか。
 
