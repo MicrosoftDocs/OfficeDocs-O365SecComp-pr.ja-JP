@@ -5,17 +5,17 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.date: 9/5/2018
+ms.date: 10/11/2018
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: ATP フィッシング防止対策、Office 365 高度な脅威保護の一部は、偽装ベースの悪意のあるフィッシング攻撃やその他のフィッシング攻撃から組織を保護するために役立ちます。Office 365 のエンタープライズ グローバルまたはセキュリティ管理者の場合、ATP のフィッシング詐欺対策のポリシーを設定できます。フィッシング攻撃に由来するさまざまなフォームで商品ベースの攻撃対象となるスピアー フィッシング詐欺を whaling。、複雑さは、これらの高度な攻撃のいくつかを識別するのには熟練したもは困難です。幸いなことに、Office 365 の高度な脅威保護に役立ちます。ATP のフィッシング詐欺対策ポリシーを設定するには、組織がこのような攻撃から保護されていることを確保します。
-ms.openlocfilehash: 9ceef88a2d60a10a8911e7559e10850858015977
-ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
+ms.openlocfilehash: 37a38863296ab87feaade93b7939029b9306ec30
+ms.sourcegitcommit: 176ce86e2b440c079414fe99d4b0b9e89ccebb40
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23955449"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496568"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-policies"></a>Office 365 の ATP のフィッシング詐欺対策ポリシーを設定する
 
