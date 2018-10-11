@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
 description: これらの推奨されるベスト プラクティスに従って、データ漏洩やセキュリティを侵害されたアカウントの可能性を最小限に抑えます。
-ms.openlocfilehash: 245302af0b08a4ee8183345fc386fe47985c93dd
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 63bda11afdd1e02e9e12e8c505aca7100c4deade
+ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532711"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498093"
 ---
 # <a name="security-best-practices-for-office-365"></a>Office 365 のセキュリティのベスト プラクティス
 
@@ -46,7 +46,7 @@ MFA では、電話、テキスト メッセージ、または自分のパスワ
   
 - [Office 365 の展開の多要素認証の計画](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
     
-- [Office 365 のユーザーに対して多要素認証を設定します](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+- [Office 365 の多要素認証を設定する](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
     
 ## <a name="use-office-365-cloud-app-security"></a>Office 365 のクラウド アプリケーションのセキュリティを使用します。
 
@@ -70,9 +70,9 @@ MFA では、電話、テキスト メッセージ、または自分のパスワ
     
 - Office 365 の組織のカスタム ドメインを使用する場合は、組織から送信されたメールを検証し、なりすましを防ぐには SPF、DKIM、および DMARC を設定します。
     
-  - [スプーフィングを防止するために Office 365 の SPF を設定](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx)します。
+  - [スプーフィングを防止するために Office 365 の SPF を設定](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)します。
     
-  - [カスタム ドメインを Office 365 から送信された送信の電子メールを検証するために DKIM を使用](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx)します。
+  - [カスタム ドメインを Office 365 から送信された送信の電子メールを検証するために DKIM を使用](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)します。
     
   - [Office 365 で電子メールを検証するために DMARC を使用](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx)します。
     

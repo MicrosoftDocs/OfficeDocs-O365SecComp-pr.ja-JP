@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: テナント全体の設定を Office 365 環境内のセキュリティに影響を与えるための推奨される構成について説明します。セキュリティ ニーズは、セキュリティまたは短い必要があります。これらの推奨事項は、開始点として使用します。
-ms.openlocfilehash: de3a1d19e09144105f9576b3a4eb8ed76eb08585
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: 5c989b5a8abace686df50b6847a0a182393927d5
+ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496871"
+ms.locfileid: "25498103"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>セキュリティ強化のために、Office 365 テナントを構成する
 
@@ -37,7 +37,7 @@ Office 365 のセキュリティ&amp;コンプライアンス センターには
 |**ATP の安全な添付ファイル機能** <br/> |いいえ  <br/> | 安全な添付ファイルのメイン ページで、SharePoint、OneDrive、およびマイクロソフトのチーム内のファイルを保護このチェック ボックス。  <br/>  • および有効にする分析ツールで SharePoint、OneDrive、マイクロソフトのチーム  <br/> <br> これらの設定では、新しい安全な添付ファイル ポリシーを追加します。  <br/>  • ブロック-現在および将来の e メールおよび検出されたマルウェアの添付ファイルをブロックする (このオプションを選択します)  <br/>  • 有効にする」にリダイレクト: (チェック ボックスをオンし、管理や検査など、電子メール アドレスを入力してください)  <br/>  • は、マルウェアの添付ファイルのスキャンがタイムアウトになるか、エラーが発生した場合に上記の選択を適用します (チェック ボックスをオン)  <br/>  • に適用される、受信者のドメインにドメインを (選択)  <br/>  <br>詳細: [Office 365 の ATP の安全な添付ファイル ポリシーを設定します](set-up-atp-safe-attachments-policies.md) <br/> |
 |**ATP の安全なリンク** <br/> |はい  <br/> | この設定を組織全体の既定のポリシーに追加します。  <br/> • 内の安全なリンクを使用します。 Office 365 用リソース、オフィスの iOS と Android (このオプションを選択します)。  <br/> <br>特定の受信者に対するポリシーを推奨。  <br/>  • Url 書き換えし、するユーザーがリンクをクリックすると、既知の悪意のあるリンクの一覧に照らし合わせて確認 (このオプションを選択します)。  <br/>  • ダウンロード可能なコンテンツをスキャンするのには安全な添付ファイルを使用して (チェック ボックスをオン)。  <br/>  • に適用される、受信者のドメインにドメインを (選択) します。  <br/> <br> 詳細: [Office 365 の ATP の安全なリンク](atp-safe-links.md)です。  <br/> |
 |**スパム対策 (メール フィルター)** <br/> |はい  <br/> | 何を監視するには。  <br/>  • はスパムが多すぎる、カスタム設定を選択し、迷惑メール フィルターの既定のポリシーを編集します。  <br/>  • なりすましインテリジェンス-自分のドメインのスプーフィングは、送信者を確認します。ブロックまたは、これらの送信者を許可します。<br/>  <br>詳細: [Office 365 の電子メール スパム対策の保護](anti-spam-protection.md)。  <br/> |
-|**DKIM (DomainKeys は、メールを識別)** <br/> |はい  <br/> |DKIM 認証プロセスを保護する送信者と受信者の両方を偽造 (偽) では、フィッシング詐欺メールです。テナントには、ドメインの既定の署名が含まれています。テナントにカスタム ドメインを追加する場合は、追加の DKIM 署名を作成します。<br/> <br>詳細:[カスタム ドメインを Office 365 から送信された送信の電子メールを検証するために DKIM を使用](https://technet.microsoft.com/en-us/library/mt695945%28v=exchg.150%29.aspx) <br/> |
+|**DKIM (DomainKeys は、メールを識別)** <br/> |はい  <br/> |DKIM 認証プロセスを保護する送信者と受信者の両方を偽造 (偽) では、フィッシング詐欺メールです。テナントには、ドメインの既定の署名が含まれています。テナントにカスタム ドメインを追加する場合は、追加の DKIM 署名を作成します。<br/> <br>詳細:[カスタム ドメインを Office 365 から送信された送信の電子メールを検証するために DKIM を使用](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email) <br/> |
    
 ## <a name="view-dashboards-and-reports-in-the-security-amp-compliance-center"></a>セキュリティ ダッシュ ボードおよびレポートを表示する&amp;コンプライアンス センター
 

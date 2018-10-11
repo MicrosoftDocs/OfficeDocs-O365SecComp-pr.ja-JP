@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: この資料では、どのように Office 365 を軽減するフィッシング攻撃使用が送信者ドメインがスプーフィングされているドメインは、偽造されたことを説明します。メッセージを分析してこれを達成して、標準的な電子メールの認証方法やその他の送信者評価の手法を使用して、neithe を認証することができるものをブロックします。Office 365 の組織に公開するフィッシング攻撃の数を減らすためにこの変更が実装されています。
-ms.openlocfilehash: 37eddfcad9bc5e412f62dd857178eafa8cac9355
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: 231f66b094a98363375a68fbddc8b71077b7baa4
+ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496901"
+ms.locfileid: "25498113"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 でのスプーフィング対策保護
 
@@ -55,7 +55,7 @@ ms.locfileid: "25496901"
   
 上記のメッセージは、マイクロソフトから来たが、同時に、ユーザーがフィッシング詐欺メッセージを取得することがユーザーをだましてリンクをクリックすると、自分の資格情報を提供し、マルウェアをダウンロード、または機密性の高いコンテンツを含むメッセージに返信します。実際のパスワードのリセットとフェイクの 1 つの違いを見分けるには難しいので、多くのユーザーがこれらのメッセージを無視する、スパムとして報告または不必要にメッセージをマイクロソフトに報告失敗したフィッシング詐欺として。
     
-偽装を停止するには、業界をフィルタ リングする電子メールは、 [SPF](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx)、 [DKIM](https://technet.microsoft.com/en-us/library/mt695945%28v=exchg.150%29.aspx)、 [DMARC](https://technet.microsoft.com/en-us/library/mt734386%28v=exchg.150%29.aspx)など、電子メール認証プロトコルを開発しました。DMARC は、メッセージの送信者の電子メール クライアントでユーザーに表示される 1 つを調べることをスプーフィングを防ぐことが (上記の例では、これは、service.outlook.com、outlook.com、および accountprotection.microsoft.com) のドメインが SPF や DKIM を渡されるとします。ユーザーに表示されるドメインでは、認証されているし、スプーフィングされていないためです。詳細についてを参照してください"*なぜ電子メールの認証は常に偽装を停止するのには十分理解する"* このドキュメントで後で。 
+偽装を停止するには、業界をフィルタ リングする電子メールは、 [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)、 [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)、 [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email)など、電子メール認証プロトコルを開発しました。DMARC は、メッセージの送信者の電子メール クライアントでユーザーに表示される 1 つを調べることをスプーフィングを防ぐことが (上記の例では、これは、service.outlook.com、outlook.com、および accountprotection.microsoft.com) のドメインが SPF や DKIM を渡されるとします。ユーザーに表示されるドメインでは、認証されているし、スプーフィングされていないためです。詳細についてを参照してください"*なぜ電子メールの認証は常に偽装を停止するのには十分理解する"* このドキュメントで後で。 
   
 ただし、問題は、電子メール認証レコードはオプションですが、必須ではありません。したがって、強力な認証ポリシーを使用してドメインのように、microsoft.com および skype.com はなりすまし、ドメインのスプーフィングされる対象は、セキュリティ強度の低い認証ポリシー、またはポリシーがないのすべての発行をから保護されます。2018 年 3 月の時点では、Fortune 500 の企業のドメインの 9% だけは、強力な電子メール認証ポリシーを公開します。残りの 91% は、フィッシャー、によってスプーフィングされる可能性があり、別のポリシーを使用してエンドユーザーに配信することがあり、それらを欺く電子メール フィルターを検出した場合を除き、します。
   
@@ -619,11 +619,11 @@ Birdwatchers ディスカッションのリストにこのメッセージが送�
 
 Office 365 をご送信の電子メールを送信するのには Office 365 を使用する場合。
   
-- [スプーフィングを防止するために Office 365 の SPF を設定](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx)ドメインの
+- [スプーフィングを防止するために Office 365 の SPF を設定](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)ドメインの
     
-- [カスタム ドメインを Office 365 から送信された送信の電子メールを検証するために DKIM を使用して](https://technet.microsoft.com/en-us/library/mt695945%28v=exchg.150%29.aspx)、プライマリ ドメインの
+- [カスタム ドメインを Office 365 から送信された送信の電子メールを検証するために DKIM を使用して](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)、プライマリ ドメインの
     
-- 正当な送信者は、ユーザーを決定するのに、ドメインの[DMARC レコードの設定](https://technet.microsoft.com/en-us/library/mt734386%28v=exchg.150%29.aspx)を 
+- 正当な送信者は、ユーザーを決定するのに、ドメインの[DMARC レコードの設定](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email)を 
     
 マイクロソフトでは、SPF、DKIM、DMARC のそれぞれの実装の詳細なガイドラインを提供していません。ただし、多くの情報をオンラインで公開があります。サード パーティの企業電子メール認証レコードを設定する組織を支援します。
   
