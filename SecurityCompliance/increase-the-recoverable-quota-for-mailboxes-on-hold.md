@@ -3,7 +3,7 @@ title: 保持中のメールボックスの [回復可能なアイテム] のク
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 8/22/2017
+ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'アーカイブ先のメールボックスを有効にして、Office 365 のメールボックスの回復可能なアイテム] フォルダーのサイズを大きくにはアーカイブの自動拡張を有効にします。 '
-ms.openlocfilehash: cd2d07e6ef1637343798ccb71870c8d436f10574
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: a347155645d7c058080b1db7fd47f7ea16249724
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782094"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522278"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>保持中のメールボックスの [回復可能なアイテム] のクォータを拡大する
 
@@ -35,7 +35,7 @@ ms.locfileid: "23782094"
 |**[回復可能なアイテム] フォルダーの記憶域クォータの合計** <br/> |無制限  <br/> |無制限  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>アーカイブ先のメールボックスの最初の記憶域のクォータでは、100 GB を Exchange Online (プラン 2) のライセンスを持つユーザーです。ただしとアーカイブの自動拡張有効になって保留中のメールボックス、記憶域のクォータの両方に対して、アーカイブ先のメールボックスと、回復可能なアイテム] フォルダーが 110 GB に増加します。追加のアーカイブ ・ ストレージ ・ スペースが必要な場合に準備されますされ、アーカイブ ・ ストレージの無制限の量です。自動拡張の詳細については、 [Office 365 で無制限のアーカイブの概要](unlimited-archiving.md)を参照してください。 
+> <sup>\*</sup>アーカイブ先のメールボックスの最初の記憶域のクォータでは、100 GB を Exchange Online (プラン 2) のライセンスを持つユーザーです。ただし、アーカイブの自動拡張がオンの保留中のメールボックス、アーカイブ メールボックスと、回復可能なアイテム] フォルダーの両方の記憶域のクォータは 110 GB に増加します。追加のアーカイブ ・ ストレージ ・ スペースが必要な場合に準備されますされ、アーカイブ ・ ストレージの無制限の量です。自動拡張の詳細については、 [Office 365 で無制限のアーカイブの概要](unlimited-archiving.md)を参照してください。 
   
 保持中のメールボックスのプライマリ メールボックスに含まれる [回復可能なアイテム] フォルダーの記憶域クォータが上限に近づいたら、次の対策を講じることができます。
   

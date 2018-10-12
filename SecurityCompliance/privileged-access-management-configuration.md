@@ -13,19 +13,19 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: このトピックを使用して、Office 365 にアクセス権限の管理を構成する方法の詳細については、
-ms.openlocfilehash: 47cae93a41b0fd60645021f6f299645777a9a2e1
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: 13d278c8e8555aa069035c2f03b23db69a475b43
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25011843"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522259"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Office 365 にアクセス権限の管理を構成します。
 
 > [!IMPORTANT]
 > このトピックでは、Office 365 の E5 と高度なコンプライアンスの Sku でのみ現在利用できる機能の展開と構成のガイダンスについて説明します。
 
-このトピックでは有効にし、Office 365 の組織内のアクセス権限の管理について説明します。いずれかの方法を使用することができます、管理者アクセス権を管理および使用するには、365 の管理窓口または Exchange 管理 PowerShell。 
+このトピックでは有効にし、Office 365 の組織内のアクセス権限の管理について説明します。365 管理窓口または Exchange 管理 PowerShell を使用するには、管理およびアクセス権限を使用します。 
 
 ## <a name="enable-and-configure-privileged-access-management"></a>有効にして、アクセス権限の管理を構成します。
 

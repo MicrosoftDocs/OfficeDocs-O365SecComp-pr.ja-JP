@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: アーカイブを作成し、Office 365 の削除ポリシーがユーザーのアーカイブ メールボックスにアイテムを自動的に移動します。
-ms.openlocfilehash: 807488f9ec7088adccdf1fc111d67b9dab8e0a38
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 740164ee840a32aff20f5c2dc1b1ae433d95cfe5
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532226"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522298"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Office 365 組織内のメールボックスのアーカイブと削除ポリシーを設定します。
 
@@ -60,7 +60,7 @@ ms.locfileid: "22532226"
 > [!NOTE]
 > だけである限り、プロセスを完了する前にいくつかの時点では有効にしているは、アーカイブ メールボックスの過程でいつでもを有効にできます。アーカイブ先のメールボックスが有効でない場合、アーカイブ ポリシーが割り当てられているすべてのアイテムに何は実行されません。 
   
-1. [https://protection.office.com](https://protection.office.com)。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
 2. グローバル管理者アカウントを使用して Office 365 にサインインします。
     
@@ -238,7 +238,7 @@ ms.locfileid: "22532226"
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>(省略可能)手順 5: 実行する管理フォルダー アシスタントを新しい設定を適用するには
 <a name="step3"> </a>
 
-手順 4 でのメールボックスに新しい保存ポリシーを適用すると、かかることが最大 7 日間 Exchange オンライン、新しい保存期間の設定、メールボックスに適用するのです。これは、プロセスがプロセスの管理フォルダー アシスタントのメールボックスを 7 日間に 1 回呼び出されるためにです。管理フォルダー アシスタントを実行するを待つ代わりに強制的にこれを実行することによって、Exchange のオンライン PowerShell で**開始 ManagedFolderAssistant**コマンドレットです。 
+手順 4 でのメールボックスに新しい保存ポリシーを適用すると、かかることが最大 7 日間 Exchange オンライン、新しい保存期間の設定、メールボックスに適用するのです。これは、プロセスがプロセスの管理フォルダー アシスタントのメールボックスを 7 日間に 1 回呼び出されるためにです。管理フォルダー アシスタントを実行するを待つ代わりに、このコマンドレットを実行して**開始 ManagedFolderAssistant** Exchange オンライン PowerShell ようを強制できます。 
   
  **管理フォルダー アシスタントを実行するときの動作ですか?** メールボックス内のアイテムを検査し、保存の対象となるかどうかを判断するでは、リテンション ・ ポリシーの設定が適用されます。適切な保持タグの保存期間が適用されるアイテムをスタンプし、その保有期間を過ぎたアイテムの指定された保存操作を実行します。 
   
@@ -292,7 +292,7 @@ Exchange オンラインの PowerShell に接続し、組織内のすべての�
     
 - 次の表は、このトピックの手順を実行して作成されたカスタムのリテンション ・ ポリシーに追加される各保持タグの詳細を提供します。
     
-    |**保持タグ**|**このタグはどのような**|**組み込みまたはユーザー設定を設定しますか。**|**種類**|
+    |**保持タグ**|**このタグはどのような**|**組み込みまたはユーザー設定を設定しますか。**|**型**|
     |:-----|:-----|:-----|:-----|
     |高山の家 3 年間を移動して、アーカイブ  <br/> |1095 日 (3 年) アーカイブ メールボックスにアイテムを移動します。  <br/> |カスタム (を参照してください[手順 2: アーカイブと削除のポリシーの新しい保持タグを作成する](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3))  <br/> |既定ポリシー タグ (アーカイブ)。このタグは、メールボックス全体に適用します。  <br/> |
     |アルペン ハウス 7 年間を完全に削除  <br/> |7 歳がプライマリ メールボックスまたはアーカイブ メールボックス内のアイテムを完全に削除します。  <br/> |カスタム (を参照してください[手順 2: アーカイブと削除のポリシーの新しい保持タグを作成する](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3))  <br/> |既定ポリシー タグ (削除) します。このタグは、メールボックス全体に適用します。  <br/> |
