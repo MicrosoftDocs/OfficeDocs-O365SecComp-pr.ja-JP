@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Office 365 のセキュリティでデータ損失防止 (DLP) ポリシーを使用して&amp;コンプライアンス センターでは、識別、監視、および Office 365 の間で自動的に機密情報を保護することができます。
-ms.openlocfilehash: e9d033bc54aae6bc1c8089793dbc618f11bef273
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c33fe53797f86208e7cd033029949737a5c84d2f
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013741"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540423"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>データ損失防止ポリシーの概要
 
@@ -304,7 +304,7 @@ E メール通知とポリシーのヒントは、コンテンツが DLP ポリ�
     
 - 中間の信頼レベルは、通常より高い信頼レベルの下だけに下限の信頼レベルのすぐ上から範囲です。
     
-## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>DLP ポリシーの条件としてラベルを使用します。
+## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>DLP ポリシーにおける条件としてのラベルの使用
 
 ラベルを作成することができ、。
   
@@ -312,7 +312,7 @@ E メール通知とポリシーのヒントは、コンテンツが DLP ポリ�
     
 - 選択した条件に一致するコンテンツは、**自動適用**します。 
     
-ラベルの詳細については、[ラベルの概要](labels.md)を参照してください。
+ラベルの詳細については、「[ラベルの概要](labels.md)」を参照してください。
   
 ラベルを作成した後は、DLP ポリシーにそのラベルを条件として、使用できます。などのためにこれを実行します。
   
@@ -332,7 +332,7 @@ E メール通知とポリシーのヒントは、コンテンツが DLP ポリ�
 
 いくつかの機能は、機密情報を含むコンテンツに適用できます。
   
-- [ラベルが条件に基づく自動的に適用して](labels.md#applying-a-label-automatically-based-on-conditions)、[リテンション ・ ポリシー](retention-policies.md)両方このコンテンツの**保存**の操作を適用できます。 
+- [条件に基づいて自動的にラベルを適用する][保存期間のラベル](labels.md#applying-a-retention-label-automatically-based-on-conditions)と[リテンション ・ ポリシー](retention-policies.md)両方このコンテンツの**保存**の操作を適用できます。 
     
 - DLP ポリシーは、このコンテンツの**保護**操作を適用できます。これらのアクションを適用する前に、DLP ポリシーがその他の条件を満たす必要があるだけでなく、ラベルが含まれているコンテンツを要求できます。 
     
@@ -478,7 +478,7 @@ DLP ポリシーを作成して適用するときにのみ、これらのアク�
 
 セキュリティのほとんどのコマンドレットを使用する&amp;コンプライアンス センターでは、する必要があります。
   
-1. [Office 365 のセキュリティへの接続&amp;リモート PowerShell を使用してコンプライアンス センター](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [リモート PowerShell を使用して Office 365 セキュリティ/コンプライアンス センターに接続する](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. 次のいずれかを使用して、 [Office 365 のセキュリティ&amp;コマンドレットのコンプライアンス センター](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
