@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: 検索し、Office 365 高度な脅威保護、セキュリティでのレポートを使用する方法を説明&amp;コンプライアンス センターです。
-ms.openlocfilehash: 4a76c6a5b888142dc4c35af432fa61916145d648
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 1a0ecb9a6722deb50a491a15f720481a5bb7b0a4
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454304"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552335"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 の高度な脅威保護のためのレポートを表示します。
 
@@ -25,13 +25,16 @@ ms.locfileid: "25454304"
   
 ![セキュリティ&amp;コンプライアンス センターのダッシュ ボードを使用して、脅威の高度な保護が作業しているを確認できます](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-ATP のレポートには、[脅威保護のステータス レポート](#threat-protection-status-report)は、[分析ツールのファイルの種類のレポート](#atp-file-types-report)、および[ATP メッセージ破棄レポート](#atp-message-disposition-report)が含まれます。この資料では、ATP のレポートについて説明し、[表示するのにはその他のレポート](#additional-reports-to-view)へのリンクが含まれています。
+ATP のレポートには、[脅威保護の状態のレポート](#threat-protection-status-report)は、[分析ツールのファイルの種類のレポート](#atp-file-types-report)、および[ATP メッセージ破棄レポート](#atp-message-disposition-report)が含まれます。この資料では、ATP のレポートについて説明し、[表示するのにはその他のレポート](#additional-reports-to-view)へのリンクが含まれています。
   
-## <a name="threat-protection-status-report"></a>脅威保護のステータス レポート
+## <a name="threat-protection-status-report"></a>脅威保護の状態のレポート
 
-**脅威保護の状態**レポートは、悪意のあるコンテンツや悪意のある電子メールと Exchange のオンラインの脅威保護の高度なによって検出されブロックに関する情報をまとめて 1 つのビューです。レポートには、コンテンツを含む悪意のあるファイル (Url)、マルウェア対策エンジン、 [0 時間の自動 (ZAP) の削除](zero-hour-auto-purge.md)を[ATP の安全なリンク](atp-safe-links.md)、 [ATP などの高度な脅威保護機能によってブロックされている一意の電子メール メッセージの集計の数が用意されています。安全な添付ファイル](atp-safe-attachments.md)、および[Office 365 の ATP のフィッシング詐欺対策機能](atp-anti-phishing.md)です。
+**脅威保護の状態**レポートは、悪意のあるコンテンツや悪意のある電子メールによって、 [Exchange のオンライン保護](eop/exchange-online-protection-overview.md)(EOP) と[Office 365 の ATP](office-365-atp.md)検出されブロックに関する情報をまとめて 1 つのビューです。レポートには、悪意のあるコンテンツ (ファイルまたは web サイト アドレス (Url))、マルウェア対策エンジン、 [0 時間の自動 (ZAP) を削除する](zero-hour-auto-purge.md)、 [ATP の安全なリンク](atp-safe-links.md)、 [ATP の安全などの分析ツールの機能によってブロックされている一意の電子メール メッセージの集計の数が用意されています。添付ファイル](atp-safe-attachments.md)、および[分析ツール、フィッシング対策機能](atp-anti-phishing.md)です。
+
+> [!NOTE]
+> 脅威保護の状態レポートは、 [Office 365 の ATP](office-365-atp.md)または[Exchange のオンライン保護](eop/exchange-online-protection-eop.md)(EOP) は使用しているお客様に利用可能ですただし、ATP のお客様の脅威保護の状態レポートに表示される情報 EOP の顧客が表示とは異なるデータが含まれる予定です。たとえば、ATP のお客様の脅威保護の状態レポート[SharePoint のオンライン、OneDrive、またはマイクロソフトのチームで悪意のあるファイルの検出](atp-for-spo-odb-and-teams.md)に関する情報が含まれます。このような情報は ATP、EOP は分析ツールではない使用しているお客様の脅威保護のステータス レポートの詳細は表示されませんので。
   
-セキュリティの脅威保護のステータス レポートを表示するのには&amp;コンプライアンス センターでは、**レポート**に移動\>**ダッシュ ボード** \> **脅威保護の状態**です。
+セキュリティの脅威保護の状態レポートを表示するのには&amp;コンプライアンス センターでは、**レポート**に移動\>**ダッシュ ボード** \> **脅威保護の状態**です。
   
 ![ATP の脅威保護の状態のレポート](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
@@ -39,7 +42,7 @@ ATP のレポートには、[脅威保護のステータス レポート](#threa
   
 ![1 日の ATP の脅威保護の状態データ](media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
   
-既定では、脅威保護のステータス レポートは、過去 7 日間のデータを示します。ただし、**フィルター**を選択し、最大 90 日間のデータを表示する日付範囲を変更できます。 
+既定では、脅威保護の状態レポートは、過去 7 日間のデータを示します。ただし、**フィルター**を選択し、最大 90 日間のデータを表示する日付範囲を変更できます。 
   
 ![ATP の脅威保護の状態のフィルター](media/4f703369-642b-402b-9758-b9c828283410.png)
   
@@ -73,9 +76,16 @@ ATP のレポートには、[脅威保護のステータス レポート](#threa
   
 ## <a name="additional-reports-to-view"></a>追加のレポートを表示するには
 
-だけでなく、この資料に記載されている ATP のレポートは[電子メール セキュリティのレポート](view-email-security-reports.md)は、セキュリティで利用可能な&amp;コンプライアンス センターです。電子メール セキュリティのレポート[上位の送信者と受信者のレポート](view-email-security-reports.md#top-senders-and-recipients-report)、[なりすましメールのレポート](view-email-security-reports.md#spoof-mail-report)は、[スパム検出レポート](view-email-security-reports.md#spam-detections-report)などが含まれます。
-  
-組織が[Office 365 の脅威インテリジェンス](office-365-ti.md)の場合することもでき、 [、セキュリティでエクスプ ローラーを使用して&amp;コンプライアンス センター](use-explorer-in-security-and-compliance.md)。
+ATP レポートは、この資料に記載されている、だけでなく他のいくつかのレポートがある、次の表に示すよう。
+
+
+|レポートの種類  |詳細情報  |
+|---------|---------|
+|**電子メール セキュリティのレポート**上位の送信者と受信者のレポート、なりすましメール レポート、スパム検出レポートなどです。 | [セキュリティで電子メールのセキュリティ レポートを表示する&amp;コンプライアンス センター](view-email-security-reports.md)        |
+|**エクスプ ローラー**(脅威のエクスプ ローラーとも呼ばれ、これに含まれる[Office 365 の脅威インテリジェンス](office-365-ti.md))     | [エクスプ ローラーを使用して、セキュリティで&amp;コンプライアンス センター](use-explorer-in-security-and-compliance.md)        |
+|**EOP と分析ツールの結果**これは、PowerShell を使用して生成するカスタムのレポート)。このレポートには、ドメイン、日付、イベントの種類、方向、操作、およびメッセージの数などの情報が含まれています。  | [Get MailTrafficATPReport コマンドレットのリファレンス](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport?view=exchange-ps) |
+|**EOP と ATP の検出**これは、PowerShell を使用して生成するカスタムのレポート)。このレポートには、悪意のあるファイルまたは Url、フィッシング詐欺、偽装、および電子メールやファイルでの他の潜在的な脅威に関する詳細情報が含まれています。   | [Get MailDetailATPReport コマンドレットのリファレンス](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport?view=exchange-ps)        |
+
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>ATP のレポートを表示するのにはどのようなアクセス許可が必要か。
 
@@ -83,12 +93,12 @@ ATP のレポートには、[脅威保護のステータス レポート](#threa
   
 |**役割グループ**|**割り当てられている場合**|**詳細情報**|
 |:-----|:-----|:-----|
-| 以下のいずれか:  <br/>  組織の管理  <br/>  セキュリティ管理者  <br/>  セキュリティ リーダー  <br/> |セキュリティ&amp;コンプライアンス センター  <br/> |[Office 365 のセキュリティのアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md) <br/> |
-| 以下のいずれか:  <br/>  組織の管理  <br/>  表示限定の組織管理  <br/>  "View-Only Recipients/表示専用受信者" 役割  <br/>  Compliance Management  <br/> |Exchange 管理センター  <br/> |[Exchange Online の機能アクセス許可](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+| 以下のいずれか:  <br/><br/>-組織の管理  <br/>-セキュリティ管理者  <br/>--セキュリティ リーダー  <br/> |セキュリティ&amp;コンプライアンス センター  <br/> |[Office 365 のセキュリティのアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md) <br/> |
+| 以下のいずれか:  <br/><br/>-組織の管理  <br/>--表示専用組織の管理  <br/>--参照受信者の役割  <br/>-コンプライアンス管理  <br/> |Exchange 管理センター  <br/> |[Exchange Online の機能アクセス許可](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>場合、レポート データが表示されていないでしょうか。
 
-レポートにデータを表示されない場合、ポリシーが正しく設定されているを再確認してください。組織には、 [ATP の安全なリンクのポリシー](set-up-atp-safe-links-policies.md)および[分析ツールの安全な添付ファイル ポリシー](set-up-atp-safe-attachments-policies.md)の ATP の保護のための順序で定義されている場所が必要です。[Office 365 のスパム対策およびマルウェア対策の保護](anti-spam-and-anti-malware-protection.md)を参照してください。
+ATP レポートにデータを表示されない場合、ポリシーが正しく設定されているを再確認してください。組織には、 [ATP の安全なリンクのポリシー](set-up-atp-safe-links-policies.md)および[分析ツールの安全な添付ファイル ポリシー](set-up-atp-safe-attachments-policies.md)の ATP の保護のための順序で定義されている場所が必要です。[Office 365 のスパム対策およびマルウェア対策の保護](anti-spam-and-anti-malware-protection.md)を参照してください。
   
 ## <a name="related-topics"></a>関連項目
 

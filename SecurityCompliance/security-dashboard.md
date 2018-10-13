@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 description: Office 365 の脅威保護の状態を確認し、表示、およびセキュリティの警告の動作には、新しいセキュリティ ダッシュ ボードを使用します。
-ms.openlocfilehash: 9f301bb819ec9c5c072cacee9060ff0e9672f039
-ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
+ms.openlocfilehash: d124ce07fbd3eba633e8c1e844ef3f83fc8fd04f
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839081"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552365"
 ---
 # <a name="security-dashboard-overview"></a>ダッシュ ボードのセキュリティの概要
 
@@ -32,7 +32,7 @@ ms.locfileid: "23839081"
   
 - [脅威保護の状態](#threat-protection-status)
     
-- [インサイト](#insights)
+- [Insights](#insights)
     
 - [脅威インテリジェンス](#threat-intelligence)
     
@@ -45,13 +45,13 @@ ms.locfileid: "23839081"
   
 ## <a name="threat-protection-status"></a>脅威保護の状態
 
-セキュリティ ダッシュ ボードの左上隅の脅威保護の有効性を示す脅威保護状態のウィジェットがあります。このウィジェットがわかります一目でどのように多くの脅威は、過去 7 日以内に[Office 365 の Exchange のオンライン保護](anti-spam-protection.md)と[Office 365 の高度な脅威保護](office-365-atp.md)(構成されている) 場合によってブロックされました。このウィジェットでは、[レポート メッセージのアドインの使用](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)を使用して、misclassified と報告されていると検出された電子メール メッセージの数も表示されます。スパム対策、マルウェア対策とフィッシング詐欺対策ポリシーの構成を改善するを確認します。
+セキュリティ ダッシュ ボードの左上隅の脅威保護の有効性を示す脅威保護の状態のウィジェットがあります。このウィジェットがわかります一目でどのように多くの脅威は、過去 7 日以内に[Office 365 の Exchange のオンライン保護](anti-spam-protection.md)と[Office 365 の高度な脅威保護](office-365-atp.md)(構成されている) 場合によってブロックされました。このウィジェットでは、[レポート メッセージのアドインの使用](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)を使用して、misclassified と報告されていると検出された電子メール メッセージの数も表示されます。スパム対策、マルウェア対策とフィッシング詐欺対策ポリシーの構成を改善するを確認します。
   
 ![セキュリティ ダッシュ ボードの上部に脅威保護のウィジェット](media/5c7c644e-6b01-4bf8-b991-f6ba0fdc5717.png)
   
 さらに、マルウェアのレポートは、組織を対象とする悪意のあるコンテンツの最新の動向を追跡するために使用できます。レポートの詳細を表示するタイルをクリックします。
   
-## <a name="insights"></a>インサイト
+## <a name="insights"></a>洞察力
 
 洞察を確認する必要がある重要な問題を表面だけでなく、考慮すべき推奨事項と操作も含まれます。たとえば、一部のユーザーは、迷惑メールのオプションを無効にしているためにフィッシング詐欺の電子メール メッセージが配信されているを参照してください可能性があります。見識のしくみに関する詳細についてを参照してください[のレポートと Office 365 のセキュリティ情報&amp;コンプライアンス センター](reports-and-insights-in-security-and-compliance.md)です。
   

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 description: 学習の方法は、セキュリティの推奨される操作を把握する詳細なレポートから移動することができます&amp;コンプライアンス センターです。
-ms.openlocfilehash: c89026284b2351b1beae4fa087db81c2763ae241
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: be2af8916f70f9cf9fbacfcad8d26819c5001014
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531845"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552375"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>チュートリアル - 詳細レポートからインサイトへの移動
 
@@ -36,7 +36,7 @@ ms.locfileid: "22531845"
   
 2. 詳細なビューを取得するレポートを選択します。(**脅威保護のステータス**レポートなど、レポートを選択します)。 
     
-    ![脅威保護ステータスのレポート情報を表示](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
+    ![脅威保護の状態のレポート情報を表示](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   
 3. グラフとレポートの下の洞察インジケーターがわかります。見識のマーカーにマウス ポインターを移動、追加の詳細情報を示します。(追加の詳細を表示する情報のマーカーの上を移動します。)
     

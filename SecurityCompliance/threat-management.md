@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a73d5fa-b2c8-43e7-9ed4-61f0552b1c98
 description: 脅威の管理を使用して、コントロールのヘルプしモバイル デバイスが組織のデータへのアクセスを管理、データの損失から組織を保護するために、悪意のあるソフトウェアおよび迷惑メールからの受信メッセージと送信メッセージを保護するためです。ドメインからアカウントを管理ドメインの評判を保護するために、送信者がスプーフィング悪意を持っているかどうかを判断するのには脅威を使用します。
-ms.openlocfilehash: 88b2727b76fad1e8d700f15717a8aeedea934093
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: df843ab95920d24af778a9edf31626f4d6b08cff
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25011833"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552405"
 ---
 # <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>脅威の Office 365 のセキュリティの管理&amp;コンプライアンス センター
 
@@ -62,6 +62,6 @@ EAC とセキュリティとの間のわずかな違いがあるいくつかの�
 |**添付ファイル保護** <br/> |[安全な添付ファイル](atp-safe-attachments.md)は、高度な脅威保護の一環です。有効にすると、受信者の受信トレイに送信される前に Office 365 から独立した特別な隔離された環境で電子メールの添付ファイルが開かれます。安全な添付ファイルは、ウイルス対策署名を利用する前に、悪意のある添付ファイルを検出するよう設計されています。詳細については、 [Office 365 で安全な添付ファイル](atp-safe-attachments.md)を参照してください。<br/> |
 |**リンク保護** <br/> |[安全なリンク](atp-safe-links.md)は、高度な脅威保護の一部です。安全なリンクは、電子メールや悪意あるコードとして認識されている web サイトを参照する Office ドキュメント内の次の Url からユーザーを防止します。詳細については、 [Office 365 での安全なリンク](atp-safe-links.md)を参照してください。<br/> |
 |**検疫** <br/> |Office 365 で、スパムとしてフィルター処理されているメッセージを一括、フィッシング、電子メール メッセージを受信の[検疫](http://go.microsoft.com/fwlink/p/?LinkID=809005)を設定し、[後で確認できるマルウェアのメールを保持することができます。両方のユーザーと管理者は、検疫されたメッセージを処理できます。ユーザーは、検疫で独自のフィルター処理されたメッセージだけを処理できます。管理者は、検索し、すべてのユーザー用に検疫済みのメッセージを管理します。<br/> |
-|**高度な脅威** <br/> |検出し、Exchange のオンライン保護と高度な脅威保護によってブロックされている悪意のあるコンテンツに関する情報を表示する[脅威保護のステータス レポート](https://support.office.com/article/View-the-reports-for-Advanced-Threat-Protection-E47E838C-D99E-4C0B-B9AA-E66C4FAE902F#advancedthreats)を表示します。  <br/> |
+|**高度な脅威** <br/> |検出し、Exchange のオンライン保護と高度な脅威保護によってブロックされている悪意のあるコンテンツに関する情報を表示する[脅威保護の状態レポート](https://support.office.com/article/View-the-reports-for-Advanced-Threat-Protection-E47E838C-D99E-4C0B-B9AA-E66C4FAE902F#advancedthreats)を表示します。  <br/> |
    
 

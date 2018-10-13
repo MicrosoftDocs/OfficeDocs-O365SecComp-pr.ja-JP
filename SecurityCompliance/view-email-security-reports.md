@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: 検索し、Office 365 の企業で、組織の電子メール セキュリティのレポートを使用する方法について説明します。電子メール セキュリティのレポートは、セキュリティで利用可能な&amp;コンプライアンス センターです。
-ms.openlocfilehash: 0dd0c2ee7090e488d8619e71c6e4931f1934e9b0
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: ea5d60393809ef924d51435b695062fe51e772bd
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454344"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552395"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>セキュリティで電子メールのセキュリティ レポートを表示する&amp;コンプライアンス センター
 
@@ -27,7 +27,7 @@ ms.locfileid: "25454344"
   
 電子メール セキュリティ レポートを以下に示します。
   
-- [脅威保護のステータス レポート](view-email-security-reports.md#tps)(new!) 
+- [脅威保護の状態のレポート](view-email-security-reports.md#tps)(new!) 
     
 - [マルウェア検出レポート](view-email-security-reports.md#maldet)
     
@@ -43,15 +43,18 @@ ms.locfileid: "25454344"
     
 - [メッセージのユーザーから報告されたレポート](view-email-security-reports.md#userreported)(new!) 
     
-## <a name="threat-protection-status-report-new"></a>脅威保護ステータス レポート (new!)
+## <a name="threat-protection-status-report-new"></a>脅威の保護の状態のレポート (new!)
 
 新しい**脅威保護の状態**レポートは、悪意のある電子メールが検出され、Exchange のオンライン保護によってブロックされていることを示すスマート レポートです。このレポートには、マルウェアやフィッシング詐欺として識別された電子メールに関する情報が表示されます。 
+
+> [!NOTE]
+> 脅威保護の状態レポートは、 [Office 365 の ATP](office-365-atp.md)または[Exchange のオンライン保護](eop/exchange-online-protection-eop.md)(EOP) は使用しているお客様に利用可能ですただし、ATP のお客様の脅威保護の状態レポートに表示される情報 EOP の顧客が表示とは異なるデータが含まれる予定です。たとえば、EOP の顧客はで電子メールがない[悪意のあるファイルは、SharePoint のオンライン、OneDrive、またはマイクロソフトのチームで検出](atp-for-spo-odb-and-teams.md)に関する情報、分析ツールに固有の機能で検出されたマルウェアに関する情報を表示できます。([ATP のレポートについての詳細](view-reports-for-atp.md))
   
 セキュリティで、このレポートを表示するのには&amp;コンプライアンス センターでは、**レポート**に移動\>**ダッシュ ボード** \> **脅威保護の状態**です。
   
 ![脅威保護の状態のレポート](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
-最初に脅威保護のステータス レポートを開くと、レポート データが表示過去 7 日間の既定ではただし、[**フィルター** ] をクリックし、詳細の最大 90 日間の日付の範囲を変更できます。このレポートは、有効性と、組織の Exchange のオンライン保護機能の影響を表示し、長期的な傾向を見るために便利です。 
+最初に脅威保護の状態レポートを開くと、レポート データが表示過去 7 日間の既定ではただし、[**フィルター** ] をクリックし、詳細の最大 90 日間の日付の範囲を変更できます。このレポートは、有効性と、組織の Exchange のオンライン保護機能の影響を表示し、長期的な傾向を見るために便利です。 
   
 ![脅威保護の状態レポートのフィルター](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
   
@@ -67,7 +70,7 @@ ms.locfileid: "25454344"
   
 ![マルウェア検出レポートの例](media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
   
-脅威保護のステータス レポートと同様に、他のレポートのようなレポート データを表示過去 7 日間の既定です。ただし、日付の範囲を変更するのには**フィルター**を選択できます。 
+脅威保護のステータス レポートと同様に、他のレポートのようなレポート データを表示過去 7 日間の既定では。ただし、日付の範囲を変更するのには**フィルター**を選択できます。 
   
 ## <a name="top-malware-report"></a>上のマルウェア レポート
 
@@ -176,8 +179,8 @@ ms.locfileid: "25454344"
   
 |**役割グループ**|**割り当てられている場合**|**詳細情報**|
 |:-----|:-----|:-----|
-| 以下のいずれか:  <br/>  組織の管理  <br/>  セキュリティ管理者  <br/>  セキュリティ リーダー  <br/> |セキュリティ&amp;コンプライアンス センター  <br/> |[Office 365 のセキュリティのアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md) <br/> |
-| 以下のいずれか:  <br/>  組織の管理  <br/>  表示限定の組織管理  <br/>  "View-Only Recipients/表示専用受信者" 役割  <br/>  Compliance Management  <br/> |Exchange 管理センター  <br/> |[Exchange Online の機能アクセス許可](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+| 以下のいずれか:  <br/><br/>-組織の管理  <br/>-セキュリティ管理者  <br/>--セキュリティ リーダー  <br/> |セキュリティ&amp;コンプライアンス センター  <br/> |[Office 365 のセキュリティのアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md) <br/> |
+| 以下のいずれか:  <br/><br/>-組織の管理  <br/>--表示専用組織の管理  <br/>--参照受信者の役割  <br/>-コンプライアンス管理  <br/> |Exchange 管理センター  <br/> |[Exchange Online の機能アクセス許可](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>場合、レポート データが表示されていないでしょうか。
 
