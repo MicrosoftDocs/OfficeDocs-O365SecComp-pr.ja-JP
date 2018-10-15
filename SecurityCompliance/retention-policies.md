@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: アイテム保持ポリシーでは、コンテンツを保持するか、コンテンツを削除するか、またはコンテンツを保持して後に削除するかを事前に決定できます。さらに、1 つのポリシーを組織全体に適用するか、特定の場所やユーザーにのみ適用するか、すべてのコンテンツにポリシーを適用するか、特定の条件を満たしているコンテンツのみにポリシーを適用するかも事前に決定できます。
-ms.openlocfilehash: 82def4182607e6dde4f9d6612cdb93f6f8564f2a
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 5b02d57931a47ca86f4da884463cfc0e52476d3c
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23230019"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540403"
 ---
 # <a name="overview-of-retention-policies"></a>アイテム保持ポリシーの概要
 
@@ -259,7 +259,7 @@ Teams に適用するアイテム保持ポリシーには、[保持ロック](re
 ## <a name="excluding-specific-types-of-exchange-items-from-a-retention-policy"></a>アイテム保持ポリシーから特定の種類の Exchange アイテムを除外する
 PowerShell を使用すると、アイテム保持ポリシーから特定の種類の Exchange アイテムを除外できます。たとえば、メールボックス内のボイスメール メッセージや IM 会話などの Skype for Business Online のコンテンツを除外できます。さらに、予定表、メモ、タスク アイテムを除外することもできます。この機能は、PowerShell を使用してのみ利用できます。アイテム保持ポリシーを作成するときの UI では、この機能を利用できません。
   
-この操作を行うには、`New-RetentionComplianceRule` および `Set-RetentionComplianceRule` コマンドレットの `ExcludedItemClasses` パラメーターを使用します。PowerShell の詳細については、後述のセクション「[アイテム保持ポリシーの PowerShell コマンドレットを検索する](retention-policies.md#powershell)」を参照してください。
+この操作を行うには、`New-RetentionComplianceRule` および `Set-RetentionComplianceRule` コマンドレットの `ExcludedItemClasses` パラメーターを使用します。PowerShell の詳細については、後述のセクション「[アイテム保持ポリシーの PowerShell コマンドレットを検索する](#find-the-powershell-cmdlets-for-retention-policies)」を参照してください。
   
 ## <a name="locking-a-retention-policy"></a>アイテム保持ポリシーをロックする
 一部の組織は、米国証券取引委員会 (SEC) 規則 17a-4 のような規制機関によって定義された規則に準拠する必要があります。その規則には、アイテム保持ポリシーをオンにした後で、そのポリシーをオフにすることや、制限を緩和したりすることが禁止されています。保持ロックを使用すると、管理者を含めて誰もポリシーをオフにしたり、制限を緩和したりできなくなるようにポリシーをロックできます。
@@ -268,7 +268,7 @@ PowerShell を使用すると、アイテム保持ポリシーから特定の種
   
 そのため、アイテム保持ポリシーをロックする前に、組織のコンプライアンス要件を理解しておくことと、ポリシーのロックが必要であると確信するまでは**ポリシーをロックしない**ことが**非常に重要**になります。
   
-アイテム保持ポリシーのロックには、PowerShell を使用する必要があります。`New-RetentionCompliancePolicy` または `Set-RetentionCompliancePolicy` コマンドレットの `RestrictiveRetention` パラメーターを使用します。PowerShell の詳細については、後述のセクション「[アイテム保持ポリシーの PowerShell コマンドレットを検索する](retention-policies.md#powershell)」を参照してください。
+アイテム保持ポリシーのロックには、PowerShell を使用する必要があります。`New-RetentionCompliancePolicy` または `Set-RetentionCompliancePolicy` コマンドレットの `RestrictiveRetention` パラメーターを使用します。PowerShell の詳細については、後述のセクション「[アイテム保持ポリシーの PowerShell コマンドレットを検索する](#find-the-powershell-cmdlets-for-retention-policies)」を参照してください。
   
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>アイテム保持の原則 (優先順位) について
 
