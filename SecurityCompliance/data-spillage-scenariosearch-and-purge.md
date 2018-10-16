@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 管理し、組織内のデータこぼしたインシデントに対応するには、Office 365 の電子的証拠開示と検索ツールを使用します。
-ms.openlocfilehash: 2bf17923408bd5cf8325d27a38595331d169906f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4da8efdb6f5d129e08d85f9b6c94726a7d099cb3
+ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531657"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "25566878"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>電子的証拠開示ソリューション シリーズ: データこぼしたシナリオの検索と削除
 
@@ -159,6 +159,8 @@ Contoso の潜在顧客の情報セキュリティ責任者がいます。従業
 - 参照してください"ステップ 2: メールボックスを準備する」で[クラウド ベースのメールボックスのフォルダーを保持する回復可能な項目で項目を削除](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox)を 1 つのアイテムの復元を無効にする方法について。 
     
 - 参照してください"ステップ 3: メールボックスからすべての保留を削除」で[クラウド ベースのメールボックスのフォルダーを保持する回復可能な項目で項目を削除](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox)を保持または保持ポリシーをメールボックスから削除する方法について。 
+
+- 参照してください"ステップ 4: 遅延時間は、メールボックスから保持を削除」で[クラウド ベースのメールボックスのフォルダーを保持する回復可能な項目で項目の削除](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-4-remove-the-delay-hold-from-the-mailbox)を保留中の任意の種類を削除した後に、メールボックスに配置されている遅延保持を削除する方法について。
     
  **重要な:** 保持または保持ポリシーを削除する前に、レコード管理または法務部門に確認してください。組織にメールボックスを保持するかどうかを定義するポリシーがありますか、データのこぼしたインシデントの優先します。 
   
@@ -168,7 +170,7 @@ Contoso の潜在顧客の情報セキュリティ責任者がいます。従業
 
 収集され、ステップ 6 で作成され、こぼれたデータを含む電子メール メッセージを検索する手順 3 で改良された検索クエリを準備するメールボックスの場所を使用すると、これで完全にデータを削除できます、こぼれた。説明したようには、メールボックスのインポート エクスポートの役割を割り当てる Exchange オンライン、次の手順を使用してメッセージを削除するのにする必要があります。
   
-1. [オンライン PowerShell を Exchange に接続](https://go.microsoft.com/fwlink/?linkid=396554)します。
+1. [Exchange Online PowerShell に接続します](https://go.microsoft.com/fwlink/?linkid=396554)。
     
 2. 次のコマンドを実行します。
     
@@ -198,7 +200,7 @@ Contoso の潜在顧客の情報セキュリティ責任者がいます。従業
   
 ### <a name="reverting-the-mailboxes-to-their-previous-state"></a>メールボックスが元の状態を元に戻す
 
-こぼれたデータが削除される前に、メールボックスを準備するのには手順 6 で、メールボックスの構成を変更した場合は、以前の状態に戻したりする必要があります。参照してください"手順 5: 以前の状態のためのメールボックスを元に戻す」で[クラウド ベースのメールボックスのフォルダーを保持する回復可能な項目で項目を削除](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-5-revert-the-mailbox-to-its-previous-state)します。
+こぼれたデータが削除される前に、メールボックスを準備するのには手順 6 で、メールボックスの構成を変更した場合は、以前の状態に戻したりする必要があります。参照してください"手順 6: 以前の状態のためのメールボックスを元に戻す」で[クラウド ベースのメールボックスのフォルダーを保持する回復可能な項目で項目を削除](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-6-revert-the-mailbox-to-its-previous-state)します。
   
 ### <a name="deleting-the-search-query"></a>検索クエリの削除
 
