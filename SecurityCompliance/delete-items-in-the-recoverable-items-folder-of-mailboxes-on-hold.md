@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: '管理者: 法的保存要件にそのメールボックスが配置された場合でも、Exchange Online のメールボックスに対するユーザーの回復可能なアイテム] フォルダー内の項目を削除します。これは、データが誤ってこぼした Office 365 にするを削除するのには効果的な方法です。'
-ms.openlocfilehash: 9174e953ebdd7f0032f411b99a814aeacd880a1e
-ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
+ms.openlocfilehash: a10965ad088da98b4e4d84d823c124e5b192d505
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "25566888"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577086"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>管理者ヘルプの保留中のクラウド ベースのメールボックスの回復可能なアイテム] フォルダー内の項目を削除します。
 
@@ -245,22 +245,22 @@ $CaseHold.Name
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>ステップ 4: メールボックスからの遅延の保留中を削除します。
 
-保留中の任意の種類がメールボックスから削除されると、 *DelayHoldApplied*のメールボックスのプロパティの値が**True**に設定します。これは、*遅延の保持*と呼ばれ、データが完全に削除されることを防止するのには 30 日間、保留中の実際の削除を延期することを意味メールボックスからには、(削除) します。  遅延ホールドがメールボックスに配置されると、メールボックスと見なされます上にある、無制限の期間の保持と証拠保全上にメールボックスがあったかどうか。(遅延保持の目的を検索するか、保留が削除された後にパージされるメールボックス アイテムを回復する機会を管理者に提供するが)。後 30 日間の遅延が含まれている Noe の期限が切れるし、Office 365 は、( *DelayHoldApplied*プロパティを**False**に設定) によって遅延保持を削除するのには自動的に試みます保留リストが実際に削除されるようにします。 
+保留中の任意の種類がメールボックスから削除されると、 *DelayHoldApplied*のメールボックスのプロパティの値が**True**に設定します。次に管理フォルダー アシスタントのメールボックスを処理し、保留リストが削除されたことを検出したとき発生します。これし、呼ばれ*遅延を保持*するデータがメールボックスから完全に削除されることを防止するのには 30 日間、保留中の実際の削除が遅れることを意味します。(遅延保持の目的を検索するか、保留が削除された後にパージされるメールボックス アイテムを回復する機会を管理者に提供するが)。 遅延ホールドがメールボックスに配置されると、メールボックスと見なされます上にある、無制限の期間の保持と証拠保全上にメールボックスがあったかどうか。30 日間、遅延の保持期限が切れる、および Office 365 は、( *DelayHoldApplied*プロパティを**False**に設定) によって遅延保持を削除するのには自動的に試みます保留リストが実際に削除されるようにします。 
 
-手順 5 でアイテムを削除するには、メールボックスから遅延保持を削除する必要があります。次のコマンドを実行 Exchange オンライン PowerShell 遅延保持を削除するのには。 
- 
-```
-Set-Mailbox <username> -RemoveDelayHoldApplied
-```
-する必要があります法的保持義務の役割を割り当てる Exchange オンライン*RemoveDelayHoldApplied*パラメーターを使用するのには注意してください。
-
-遅延の保留が削除されたことを確認するには、次のコマンドを実行します。
+手順 5 でアイテムを削除するには、メールボックスから遅延保持を削除する必要があります。最初に、Exchange オンライン PowerShell で次のコマンドを実行して、メールボックスに遅延保留が適用されるかどうかを決定します。
 
 ```
 Get-Mailbox <username> | FL DelayHoldApplied
 ```
 
-*DelayHoldApplied*プロパティの値が**False**のでは、遅延時間が削除されたことを示します。
+場合は**false を指定**する*DelayHoldApplied*プロパティの値を設定すると、遅延の保留リストが配置メールボックスにされていません。手順 5 に移動し、回復可能なアイテム] フォルダー内の項目を削除できます。
+
+*DelayHoldApplied*プロパティの値は、 **True**に設定されている場合は、遅延の保留を解除するのには次のコマンドを実行します。
+
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+する必要があります法的保持義務の役割を割り当てる Exchange オンライン*RemoveDelayHoldApplied*パラメーターを使用するのには注意してください。
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>手順 5: 回復可能なアイテム] フォルダー内のアイテムを削除します。
 
