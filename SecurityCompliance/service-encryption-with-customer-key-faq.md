@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: だけでなく、ベースラインでは、BitLocker と分散キー マネージャー (DKM) の使用を有効にするボリューム ・ レベルの暗号化は、Office 365 は、Exchange のデータを含む、Office 365 でお客様のコンテンツをアプリケーション レベルでの暗号化の層を追加を提供しています。オンラインで Skype のビジネス、オンラインでの SharePoint およびビジネスのための OneDrive です。これは、サービスの暗号化と呼ばれます。
-ms.openlocfilehash: 38731d22b78274e42b0886c41884a0395d8df69f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ceba35233872bb65b7706ed4e11a263057adc6c1
+ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22559242"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575331"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Office 365 のよく寄せられる質問のための、顧客キーによるサービスの暗号化
 
@@ -29,8 +29,8 @@ ms.locfileid: "22559242"
   
 ## <a name="what-is-service-encryption-with-customer-key"></a>顧客キーを使用してサービスの暗号化とは何ですか。
 
-顧客キーは、プロビジョニングし、Office 365 の残りの部分でデータを暗号化に使用するキーの管理ができるようにする機能です。機能は、Office 365 の Exchange と SharePoint で実行される暗号化では、サービスの暗号化を利用しています。サービスの暗号化では、BitLocker ことができますが提供するもので、攻撃を防御の大きい外の利点を提供します。サービスの暗号化は、攻撃者が顧客データにアクセスするためのすべての要求を処理するために使用される Office 365 のアクセス コントロール システムをバイパスしようとすると、強力な対策をします。サービスの暗号化はサーバーの管理者にコントロールがないか、暗号化にもアクセスを選択し、キーを無効にできません、暗号化とは異なり BitLocker でためにです。したがって、サービスの暗号化を使用して暗号化された顧客データをホストするサーバーに対する管理アクセス権を持つ攻撃者が顧客データを読み込むことはできませんし、役に立たないまま場合でも、サーバーの電源を暗号化されたデータがコピーされます。 
-  
+顧客キーには、クラウド サービス プロバイダーとキーの配置を指定するためのコンプライアンス要件に対応する組織の機能が強化されます。顧客のキーを使用して提供して、Office 365 で保存データ、アプリケーション レベルの暗号化キーを制御します。その結果、コントロールを練習して、組織のキーを無効するには、サービスを終了する必要があります。キーを取り消すと、データはサービスに読み取り可能ではありません。キーの失効は、データ削除の方向にパス上の最初のステップです。
+
 ## <a name="what-office-365-data-at-rest-is-covered-by-customer-key"></a>残りの部分にどのような Office 365 のデータは、お客様のキーで覆われていますか。
 <a name="WhatDataIsCoveredbyCustomerKey"> </a>
 
@@ -222,7 +222,7 @@ Exchange online では、ユーザーのメールボックスおよびメール 
 
 顧客キーに必要なライセンス、だけでなく顧客キー ヴォールトを使用するためのコストが発生します。[Azure キー ヴォールトの価格の詳細](https://azure.microsoft.com/en-us/pricing/details/key-vault/)は、コスト ・ モデルを説明し、見積もりをお手伝い。使用パターンが異なるため、お客様にかかる原価を正確に予測する方法はありません。経験によれば、コストが非常に低くなり、範囲の 0.002 ドルに $0.005 1 ユーザーあたり月額とキーの HSM ・ バックアップのコスト内で一般的になったことです。コストは、顧客と Azure キー ヴォールト ・ ログに使用される Azure のストレージの容量によって選択されたログの構成によって異なります。 
   
-## <a name="for-more-information"></a>詳細情報
+## <a name="for-more-information"></a>関連情報
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
 顧客キーを使用して開始するには、[お客様のキーを使用して Office 365 のデータを制御する](controlling-your-data-using-customer-key.md)を参照してください。

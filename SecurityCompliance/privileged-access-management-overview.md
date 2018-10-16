@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 権限に関する詳細については、このトピックを使用して Office 365 の管理のアクセス
-ms.openlocfilehash: 07e1f9090418e4261fef188ceb109c1b8083d34c
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: e92bbecd5957261c1eaf3088d872ae6572b7f235
+ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25011863"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575341"
 ---
 # <a name="privileged-access-management-in-office-365"></a>特権にアクセス、Office 365 の管理
 
@@ -31,7 +31,7 @@ ms.locfileid: "25011863"
 
 管理者アクセス権の管理は、Office 365 のセキュリティ ・ アーキテクチャ内で他のデータとアクセスの機能保護を補完するものです。セキュリティに統合されたアプローチの一部としてのアクセス権限の管理を有効にすると、組織を保護、機密性の高い情報と Office 365 の構成設定の保護を最大化する階層型のセキュリティ モデルを使用できます。特権を有効にする、次の図に示すように Office 365 のデータのネイティブの暗号化と Office 365 サービスの役割に基づいたアクセス制御のセキュリティ モデルで提供される保護のアクセス管理の支援を構築します。[Azure AD 管理者の Id 管理](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)と連携して使用する場合、これら 2 つの機能は、さまざまなスコープでジャスト ・ イン ・ タイムのアクセスとアクセス制御を提供します。
 
-![Office 365 の階層型の保護](media/pam-layered-protection.jpg)
+![Office 365 の階層型の保護](media/pam-layered-protection.png)
 
 管理者アクセス権を Office 365 の管理を定義し、Azure AD 管理者の Id 管理が複数のタスクを実行する機能を持つ**ロール**レベルでの保護を適用中に、**タスク**レベルのスコープです。 Azure AD 特権 Id 管理主に AD の役割と役割グループのアクセスを管理する、タスク レベルでのみ Office 365 の管理が適用される権限にアクセスできます。
 

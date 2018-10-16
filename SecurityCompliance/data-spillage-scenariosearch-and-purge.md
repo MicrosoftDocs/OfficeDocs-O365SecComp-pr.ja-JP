@@ -3,7 +3,7 @@ title: 電子的証拠開示ソリューション シリーズ データこぼ�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 管理し、組織内のデータこぼしたインシデントに対応するには、Office 365 の電子的証拠開示と検索ツールを使用します。
-ms.openlocfilehash: 4da8efdb6f5d129e08d85f9b6c94726a7d099cb3
-ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
+ms.openlocfilehash: d2c5a0a6efcc75a38df97c7c597503e5642f83eb
+ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "25566878"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575351"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>電子的証拠開示ソリューション シリーズ: データこぼしたシナリオの検索と削除
 
