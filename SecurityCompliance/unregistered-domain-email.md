@@ -3,7 +3,7 @@ title: 登録されていないドメインの電子メール
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 09/17/2018
+ms.date: 10/17/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 大量のドメインが登録されていない電子メールを送信する場合は、ブロックを取得する電子メールのリスクを実行します。詳細については、この資料を参照してください。
-ms.openlocfilehash: f2b60f492197bf0dadb702a1c3f184c2d7e56bf1
-ms.sourcegitcommit: 7b85c22fc85ec19e4b44a07e91bfa9ade768185a
+ms.openlocfilehash: 30d7887be0429195380f2c4ae1a328904dffd69c
+ms.sourcegitcommit: 6d72cdb882b93edf6dfddb5ff2e6d8a16e2fa0bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "23998601"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25596730"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>登録されていないドメインのメール: に必要なものを知る
 
@@ -37,18 +37,23 @@ Office 365 は、Exchange オンライン保護 (EOP) では、いくつかの�
 
 1. すべてのドメインを Office 365 の管理センターで登録することを確認します。詳細についてを参照して[ここで](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 
-2. オンプレミスのサーバーをロックダウンし、侵害がないことを確認します。多くの要因関係するここでは、これらは、サード パーティのサーバーがそのサーバーをそのまますべてのメールが正当なことを確認できるようにする必要が場合に特に。
+2. 特殊なコネクタを探します。出演者の悪意のある多くの場合迷惑メールを送信するのには、Office 365 のテナントで新しい受信コネクタが作成されます。詳細については、コネクタを確認する方法を参照して[ここで](https://docs.microsoft.com/en-us/powershell/module/exchange/mail-flow/get-inboundconnector?view=exchange-ps)。 
 
-終わったら、マイクロソフト サポートに連絡し、登録されていないドメインから再送信をブロック解除、テナントを取得するよう要求する必要があります。 エラー コードを提供することをお勧め、ですが、お客様の環境がセキュリティで保護されていると、迷惑メールは再送信されないことを証明する必要があります。詳細についてを参照して[ここで](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online)。
+3. オンプレミスのサーバーをロックダウンし、侵害がないことを確認します。
+
+> [!TIP]
+> 多くの要因関係するここでは、これらは、サード パーティのサーバーの場合は特に。関係なく、する必要があるには、サーバーをそのまますべてのメールが正当であることを確認します。
+
+4. 終わったら、マイクロソフト サポートに連絡し、登録されていないドメインから再送信をブロック解除、テナントを取得するよう要求する必要があります。 エラー コードを提供することをお勧め、ですが、お客様の環境がセキュリティで保護されていると、迷惑メールは再送信されないことを証明する必要があります。サポート案件を開く方法の詳細についてを参照して[ここで](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online)。
   
-## <a name="for-more-information"></a>詳細情報
+## <a name="for-more-information"></a>関連情報
 
 [Office 365 の電子メールのスパム対策保護](anti-spam-protection.md)
 
-[Office 365 の電子メールの配信不能レポート](https://support.office.com/article/email-non-delivery-reports-in-office-365-51daa6b9-2e35-49c4-a0c9-df85bf8533c3)
+[Office 365 でのメール配信不能レポート](https://support.office.com/article/email-non-delivery-reports-in-office-365-51daa6b9-2e35-49c4-a0c9-df85bf8533c3)
 
 [メールボックスへの電子メールの転送を構成する](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)
 
-[Office 365 を使用してメールを送信するように多機能デバイスまたはアプリケーションをセット アップする方法](https://support.office.com/en-us/article/How-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
+[How to set up a multifunction device or application to send email using Office 365 (Office 365 を使って、多機能デバイスやアプリケーションがメールを送信するように設定する方法)](https://support.office.com/en-us/article/How-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
 
 [管理許可ドメイン Exchange オンライン](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
