@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: af341600-5f68-40b3-a73e-73562715acd1
 description: Office 365 セキュリティ&amp;コンプライアンス センターのラベル アクティビティ エクスプローラーを使用すると、過去 30 日間の SharePoint および OneDrive for Business のすべてコンテンツのラベル アクティビティをすばやく検索して表示することができます。リアルタイム データが表示され、テナントで生じている事柄を明確に把握できます。
-ms.openlocfilehash: b40d1f9bdad4d0fcb3647f0c79c265bfe0713cd1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 69e99ea7af683d7850cd56f356ad0ac99f8c084e
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013961"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540393"
 ---
 # <a name="view-label-activity-for-documents"></a>ドキュメントのラベル アクティビティを表示する
 
@@ -46,7 +46,7 @@ ms.locfileid: "23013961"
 
 ラベル アクティビティ エクスプローラーの上部で、ファイルまたはフォルダーのアクティビティを表示するかどうかを選択できます。フォルダーのアクティビティではフォルダーのみが表示されます。フォルダー内のファイルは表示されません。
   
-フォルダーにラベルを付けると、そのフォルダー内のすべてのファイルもそのラベルを取得するため (明示的に適用されているラベルがあるファイルを除く)、フォルダーのラベル アクティビティを表示したい場合があります。したがって、フォルダーにラベルを付けると、多数のファイルに影響を及ぼす可能性があります。詳細については、「[SharePoint ライブラリ、フォルダー、またはドキュメント セット内のすべてのコンテンツへの既定のラベルの適用](labels.md#applying-a-default-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)」を参照してください。
+フォルダーにラベルを付けると、そのフォルダー内のすべてのファイルもそのラベルを取得するため (明示的に適用されているラベルがあるファイルを除く)、フォルダーのラベル アクティビティを表示したい場合があります。したがって、フォルダーにラベルを付けると、多数のファイルに影響を及ぼす可能性があります。詳細については、「[SharePoint ライブラリ、フォルダー、またはドキュメント セット内のすべてのコンテンツへの既定の保持ラベルの適用](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)」を参照してください。
   
 ![ファイルとフォルダーのラベル アクティビティを表示するドロップダウン メニュー](media/11030584-f52d-49eb-86f3-7ead16a3b704.png)
   

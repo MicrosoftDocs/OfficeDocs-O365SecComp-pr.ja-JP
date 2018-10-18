@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: dd851332-747b-45b9-82de-e3cd7d01c8a7
 description: Office 365 のラベルを使用すると、特定のイベントが発生したときの保存期間の基準を設定することができます。発生したイベントによって保存期間の開始がトリガーされ、そのイベントの種類のラベルが適用されたすべてのコンテンツによって、コンテンツに適用済みのラベルの保持操作が行われます。イベント ベースの保持は通常、レコード管理プロセスの一環として使用します。
-ms.openlocfilehash: 7a360ec665843db2e7fb3ec5dc11e286a99b3f12
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fca335d8218c2c22335592fd71bffd00a805f6fb
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013711"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540413"
 ---
 # <a name="overview-of-event-driven-retention"></a>イベント ベースの保持の概要
 
@@ -35,7 +35,7 @@ ms.locfileid: "23013711"
     
 イベント ベースの保持は通常、レコード管理プロセスの一環として使用します。これは以下のことを意味します:
   
-- イベント ベースのラベルも通常、コンテンツをレコードとして分類します。詳細については、「[コンテンツ検索を使用した特定のラベルが適用されたすべてのコンテンツの検索](labels.md#using-content-search-to-find-all-content-with-a-specific-label-applied-to-it)」を参照してください。
+- イベント ベースのラベルも通常、コンテンツをレコードとして分類します。詳細については、「[コンテンツ検索を使用した特定の保持ラベルが適用されたすべてのコンテンツの検索](labels.md#using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it)」を参照してください。
     
 - レコードとして宣言されているもののイベント トリガーがまだ発生していない文書は、イベントがそのドキュメントの保存期間をトリガーするまで無期限に保持されます (レコードを完全に削除することはできません)。
     
