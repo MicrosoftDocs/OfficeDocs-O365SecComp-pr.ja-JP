@@ -1,5 +1,5 @@
 ---
-title: Office 365 組織 PST ファイルのインポートの概要
+title: Overview of importing your organization PST files to Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ ms.collection: Strat_O365_IP
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: '管理者: インポート サービスを使用して Office 365 のセキュリティについて&amp;Exchange Online でユーザーのメールボックスに電子メール (PST ファイル) のデータを一括インポートするコンプライアンス センターです。このトピックでは、Faq を提供し、PST のインポート プロセスのしくみについて説明します。'
-ms.openlocfilehash: 2bd58b879d9d4d1ff9d3d2c6c8680a0171d42689
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 3a6c3db966513be5c63588dac75643ffc1962323
+ms.sourcegitcommit: 8294182d4dd124f035a221de0b90159ef7eec4ae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038020"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "25639676"
 ---
-# <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Office 365 組織 PST ファイルのインポートの概要
+# <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Overview of importing your organization PST files to Office 365
 
 > [!NOTE]
 > この資料では、管理者用です。自分のメールボックスを PST ファイルをインポートしようとしていますか。[インポート電子メール、連絡先、および Outlook の .pst ファイルから予定表](https://go.microsoft.com/fwlink/p/?LinkID=785075)を参照してください。
@@ -100,7 +100,15 @@ Office 365 の組織の PST ファイルを一括インポートの手順につ�
     
 ## <a name="importing-sharepoint-data-to-office-365"></a>SharePoint データを Office 365 にインポートします。
 
-SharePoint サイトおよび OneDrive のアカウントに、Office 365 の組織で、ファイルやドキュメントをインポートすることも。詳細については、 [SharePoint Online の PowerShell コマンドレットを使用する設置型のコンテンツをアップロード](https://docs.microsoft.com/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)を参照してください。
+SharePoint サイトおよび OneDrive のアカウントに、Office 365 の組織で、ファイルやドキュメントをインポートすることも。詳細については、以下の資料を参照してください。
+
+- [SharePoint Online に移行する](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)
+
+- [SharePoint 移行ツールの概要](https://docs.microsoft.com/sharepointmigration/introducing-the-sharepoint-migration-tool)
+
+- [PowerShell を使用して SharePoint Onine に移行する](https://docs.microsoft.com/sharepointmigration/overview-spmt-ps-cmdlets)
+
+- [Azure データ] ボックスを使用して SharePoint Online に、ファイル共有のコンテンツを移行します。](https://docs.microsoft.com/sharepointmigration/how-to-migrate-file-share-content-to-spo-using-azuredatabox)
 
 
 ## <a name="frequently-asked-questions-about-importing-pst-files-to-office-365"></a>Office 365 に PST ファイルのインポートについてのよく寄せられる質問
