@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Office 365 の機密ラベルを使用すると、機密コンテンツの分類が可能になり、機密コンテンツの保護に役立てることができます。このラベルの使用によって、共同作業の生産性や機能性が低下することはありません。機密ラベルは、ラベル付けされたコンテンツの暗号化や透かしなどの保護設定を強制適用するために使用できます。
-ms.openlocfilehash: fae238e4c8409288175a3de305d12c76efcec5c2
-ms.sourcegitcommit: 13f40ff7c1799152bf45af2d8110f4f3235b770a
+ms.openlocfilehash: 736975d10084cb6672ae21b1716cd92d0956c6c6
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25549759"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577096"
 ---
 # <a name="overview-of-sensitivity-labels"></a>機密ラベルの概要
 
@@ -37,13 +37,11 @@ Office 365 の機密ラベルを使用すると、機密コンテンツの分類
     
 - **Windows を実行するデバイスでは、機密コンテンツの組織外への流出を防止します。** これには、Microsoft Intune の Endpoint Protection を使用します。Windows デバイスに存在するコンテンツに機密ラベルが適用されていると、Endpoint Protection により、そのコンテンツがサード パーティ製アプリ (Twitter や Gmail など)、またはリムーバブル記憶域 (USB ドライブなど) にコピーされることを防止できます。
 
-- **サード パーティ製アプリおよびサービスのコンテンツを保護します。** これには、Cloud App Security (CAS) を使用します。CAS を使用すると、サード パーティ製アプリおよびサービス (SalesForce、Box、Dropbox など) のコンテンツを検出、分類、ラベル適用、および保護できます (サード パーティ製のアプリやサービスが機密ラベルを認識しない場合やサポートしない場合でも可能です)。    
-
 - **サード パーティ製アプリおよびサービスに機密ラベルを拡張します。** Microsoft Information Protection SDK を使用すると、Windows、Mac、および Linux 上のサード パーティ製アプリは、機密ラベルを認識して、保護設定を適用できるようになります。近日中には、iOS および Android もサポートされます。
 
-- **保護設定を使用することなくコンテンツを分類します。** コンテンツに分類のみを (ステッカーのように) 割り当てることもできます。この分類は、コンテンツの使用時や共有時にコンテンツに永続してローミングされます。この分類を使用することで、機密コンテンツの使用レポートを生成して、アクティビティ データを確認できます。この情報に基づいて、いつでもドキュメントの分類に応じて適用可能な保護設定を後から構成できます。
+- **保護設定を使用することなくコンテンツを分類します。** コンテンツに分類のみを (ステッカーのように) 割り当てることもできます。この分類は、コンテンツの使用時や共有時にコンテンツに永続してローミングされます。この分類を使用することで、機密コンテンツの使用レポートを生成して、アクティビティ データを確認できます。この情報に基づいて、後からいつでも保護設定を適用することができます。
     
-いずれの場合も、Office 365 の機密ラベルは、そのコンテンツに相応しい措置を講じる際に役立ちます。ラベルを使用すると、組織全体のデータを分類して、その分類に応じた保護設定を強制適用できます。
+いずれの場合も、Office 365 の機密ラベルは、そのコンテンツに相応しい措置を講じる際に役立ちます。機密ラベルを使用すると、組織全体のデータを分類して、その分類に応じた保護設定を強制適用できます。
   
 機密ラベルは、Office 365 セキュリティ/コンプライアンス センターで作成します。Azure Information Protection および Office 365 全体の機密ラベルの構成は、セキュリティ/コンプライアンス センターで一元的に構成できるようになりました。こうした機密ラベルは、Azure Information Protection、Office アプリ、および Office 365 サービスで使用できます。
 
@@ -73,7 +71,7 @@ Office アプリでは、機密ラベルは単に電子メールやドキュメ�
 
 - 電子メールとドキュメントのどちらかまたは両方を**暗号化**します。どのユーザーまたはグループに、どれだけの期間、どのアクションを実行するためのアクセス許可を付与するかを選択できます。たとえば、組織外の特定のドメイン内のユーザーに、コンテンツにラベルを付けてから 7 日間のみコンテンツをレビューするためのアクセス許可を付与することができます。
 
-- ラベルが適用されている電子メールやドキュメントにカスタムの透かし、ヘッダー、またはフッターを追加することで、**コンテンツにマークを付けます** (透かしはドキュメントにのみ適用され、電子メールには適用されません)。
+- ラベルが適用された電子メールまたはドキュメントに、ユーザー設定の透かし、ヘッダー、またはフッターを追加して、**コンテンツにマークを付けます**。(透かしを適用できるのはドキュメントのみで、電子メールには使用できません。透かしで使用できる文字数は、255 文字までです。また、ヘッダーとフッターは 1024 文字まで使用できますが、Excel で使用できるのは 253 文字までとなります。)
 
     ![ドキュメントに適用されたヘッダーと透かし](media/Sensitivity_label_watermark_header.png)
 
@@ -141,7 +139,7 @@ Office アプリでは、機密ラベルは単に電子メールやドキュメ�
 
 ## <a name="where-sensitivity-labels-can-appear"></a>機密ラベルを表示できる場所
 
-機密ラベルは、Office アプリの UI に表示されます。現時点で利用可能な具体的なアプリとプラットフォームを確認するには、「[現在、機能はどこで入手できますか?](https://support.office.com/ja-JP/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable)」を参照してください。
+機密ラベルは、Office アプリの UI に表示されます。現時点で利用可能な具体的なアプリとプラットフォームを確認するには、「**[現在、機能はどこで入手できますか?](https://support.office.com/ja-JP/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable)**」を参照してください。
 
 ### <a name="office-apps-on-windows"></a>Windows 上の Office アプリ
 
@@ -207,22 +205,9 @@ Azure Information Protection ラベルを使用している場合、今のとこ
 
 - Windows 10 バージョン 1809 以降を実行していることを確認する。
 - [Windows Defender Advanced Threat Protection (WDATP) をセットアップする。](https://docs.microsoft.com/ja-JP/windows/security/threat-protection/windows-defender-atp/get-started)これにより、ラベルについてコンテンツがスキャンされ、それに対応する WIP 保護が適用されます。ATP は、いくつかのアクション (異常の報告など) を WIP とは無関係に実行します。
-- エンドポイント デバイスに適用する Windows 情報保護 (WIP) ポリシーを作成する。
+- エンドポイント デバイスに適用する Windows 情報保護 (WIP) ポリシーを作成する。次のいずれかの方法で作成することができます。
     - [Microsoft Intune の Azure portal を使用して MDM で Windows 情報保護 (WIP) ポリシーを作成する](https://docs.microsoft.com/ja-JP/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
     - [System Center Configuration Manager を使用した Windows 情報保護 (WIP) ポリシーの作成と展開](https://docs.microsoft.com/ja-JP/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
-
-## <a name="protect-content-in-third-party-apps-and-services-by-using-microsoft-cloud-app-security"></a>Microsoft Cloud App Security を使用してサード パーティ製アプリおよびサービスのコンテンツを保護する
-
-Cloud App Security (CAS) を使用して、サード パーティ製アプリおよびサービスのコンテンツを保護します。CAS を使用すると、サード パーティ製アプリおよびサービス (SalesForce、Box、Dropbox など) のコンテンツを検出、分類、ラベル適用、および保護できます。たとえば、Dropbox は機密ラベルを解釈できませんが、CAS は、その場所にあるラベル付きコンテンツに範囲を広げて保護します。 
-
-詳細については、「[Azure Information Protection 分類ラベルを自動的に適用する](https://docs.microsoft.com/ja-JP/cloud-app-security/use-case-information-protection)」を参照してください。
-
-### <a name="important-prerequisites"></a>重要な前提条件
-
-機密ラベルで CAS を使用できるようにするには、まず、「[Azure Information Protection 分類ラベルを自動的に適用する](https://docs.microsoft.com/ja-JP/cloud-app-security/use-case-information-protection)」で説明する前提条件を満たしておく必要があります。このトピックには、次の前提条件についての説明があります。
-
-- テナントに対する [Cloud App Security と Azure Information Protection を有効にする](https://docs.microsoft.com/ja-JP/cloud-app-security/azip-integration)。
-- Cloud App Security に[アプリを接続する](https://docs.microsoft.com/ja-JP/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps)。
 
 ## <a name="extend-sensitivity-labels-to-third-party-apps-and-services-by-using-the-microsoft-information-protection-sdk"></a>Microsoft Information Protection SDK を使用して機密ラベルをサード パーティ製アプリおよびサービスに拡張する
 

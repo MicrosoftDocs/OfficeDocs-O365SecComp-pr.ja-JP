@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Office 365 で、メールが迷惑メールにならないようにし、迷惑メールとしてマークされるのを防ぐ方法について説明します。
-ms.openlocfilehash: 05fb9858adb279d74368fc979db44cfd84b7f71e
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+ms.openlocfilehash: f7ba560b4eb30abcda4c97617ead883659558bd8
+ms.sourcegitcommit: 6d72cdb882b93edf6dfddb5ff2e6d8a16e2fa0bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002640"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25596720"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Office 365 でメールが迷惑メールとしてマークされるのを防ぐ方法
 
@@ -59,7 +59,7 @@ Exchange Online Protection (EOP) が効率的に機能するためには、い�
     
 - **Outlook の SmartScreen フィルターを無効にする** ユーザーが Outlook デスクトップ クライアントを使用している場合、ユーザーは中断されている SmartScreen フィルター機能を無効にする必要があります。有効にしておくと、誤検知の原因になることがあります。これは、更新されたデスクトップ Outlook クライアントを実行している場合は必須ではありません。 
     
-- **ユーザーのメッセージ報告アドインをオンにする** [ユーザーのメッセージ報告アドインを有効にする](enable-the-report-message-add-in.md)ことを強くお勧めします。管理者は、ユーザーが送信しているフィードバックを調べ、何らかのパターンを使用して、問題の原因となっている可能性がある設定を調整することもできます。
+- **ユーザーのメッセージ報告アドインをオンにする** [ユーザーのメッセージ報告アドインを有効にする](enable-the-report-message-add-in.md)ことを強くお勧めします。管理者は、ユーザーが送信しているフィードバックを調べ、あらゆるパターンを使用して、問題の原因と思われる設定を調整することもできます。
     
 - **すぐに送信元を許可する** すぐに送信元を許可する必要がある場合は、**特定の送信元の IP アドレスのみ許可する**ことを強くお勧めします。あるいは、送信元を許可したうえで、送信元が SPF や DKIM のような認証検査に合格したことを確認する (送信元ドメインと成功した Authentication-Results ヘッダーの**両方**を求めるトランスポート ルールを作成する) こともできます。 
     
