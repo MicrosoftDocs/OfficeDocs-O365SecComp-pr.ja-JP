@@ -1,5 +1,5 @@
 ---
-title: ラベルの概要
+title: 保持ラベルの概要
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Office 365 の保持ラベルは、適切なコンテンツで適切な操作を実行するために役立ちます。保持ラベルを使用すると、ガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制できます。保持ラベルは、Office 365 全体のレコード管理の実装に使用することもできます。
-ms.openlocfilehash: 7892cb54bff510cd4868b05385fd25fc440d9c49
-ms.sourcegitcommit: 49b565f6a57febe53f331b2605d6a06d11e2d0be
+ms.openlocfilehash: 6d2d42d9cb13490073c1313561d611f0a32bfb55
+ms.sourcegitcommit: e9c3befa019463aedce681607fd23786786f76aa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "25638021"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "25678116"
 ---
 # <a name="overview-of-retention-labels"></a>保持ラベルの概要
 
