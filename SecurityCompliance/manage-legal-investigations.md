@@ -3,7 +3,7 @@ title: Office 365 の法的調査を管理します。
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 5/18/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: 電子的証拠開示のサポート案件を使用して、Office 365 のセキュリティで&amp;、組織の法的調査を管理するためのコンプライアンス センターです。E5 サブスクリプションがある場合は、テキスト分析、機械学習、および高度な電子的証拠開示の予測のコーディング機能を使用して、さらに大文字のデータを分析できます。
-ms.openlocfilehash: 7d00268a94613dfc0a1bef6314b5f917de5b9954
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 4e7b9117b3f0cb2fd6d4e70a7767f3cbe7b79724
+ms.sourcegitcommit: 01813cb9bbc2400d21bc99144745af953f9356e8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038270"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25719051"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Office 365 の法的調査を管理します。
 
@@ -32,7 +32,7 @@ ms.locfileid: "25038270"
    
 ## <a name="manage-legal-investigations-with-ediscovery-cases"></a>電子的証拠開示の場合に法的な調査を管理します。
 
-電子的証拠開示の場合制御に関する設定をユーザーの作成、アクセス、および組織内の電子的証拠開示のサポート案件を管理できます。メンバーおよびサポート ・ リクエストへの応答があるコンテンツの操作を実行、保留コンテンツの場所に、訴訟事件に関連するしたりすることで、場所を検索するコンテンツの検索ツールを使用しての種類を保持するコントロールを追加する場合を使用します。エクスポートし、外部の校閲者による詳細な調査の結果をダウンロードします。場合は、Office 365 の組織があり、E5 サブスクリプションの場合、準備することも検索結果分析のために高度な電子的証拠開示します。
+電子的証拠開示の場合制御に関する設定をユーザーの作成、アクセス、および組織内の電子的証拠開示のサポート案件を管理できます。メンバーおよびサポート ・ リクエストへの応答があるコンテンツの操作を実行、保留コンテンツの場所に、訴訟事件に関連するしたりすることで、場所を検索するコンテンツの検索ツールを使用しての種類を保持するコントロールを追加する場合を使用します。エクスポートし、外部の校閲者による詳細な調査の結果をダウンロードします。Office 365 の組織に、E5 のサブスクリプションがある場合は、分析のために高度な電子的証拠開示検索結果を準備することもできます。
   
 - 作成し、すべての法的調査のための電子的証拠開示の場合を使用して[、電子的証拠開示ワークフローの管理](ediscovery-cases.md)に着手するときにあなたの組織があります。 
     
