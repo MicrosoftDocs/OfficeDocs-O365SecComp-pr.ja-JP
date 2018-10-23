@@ -12,7 +12,9 @@
 # データやサービスへのアクセスを保護する
 ## [Office 365 でデータやサービスへのアクセスを保護する](protect-access-to-data-and-services.md)
 ## [MDM または Intune を選択する](choose-between-mdm-and-intune.md)
-# [データ損失を防止する (DLP)](data-loss-prevention-policies.md)
+# 情報を保護する
+## [秘密度ラベル](sensitivity-labels.md)
+## [データ損失を防止する (DLP)](data-loss-prevention-policies.md)
 ## [DLP の概要の詳しい説明を見る](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## DLP を設定する
 ### [DLP の推奨ポリシーの概要](get-started-with-dlp-policy-recommendations.md)
@@ -47,11 +49,11 @@
 ### [無制限アーカイブを有効化する](enable-unlimited-archiving.md)
 ### [メールボックスのアーカイブと削除ポリシーを設定する](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
 ## データを保持する
-### [アイテム保持ポリシーの概要](retention-policies.md)
-### [ラベルの概要](labels.md)
-### [廃棄レビューの概要](disposition-reviews.md)
-### [イベント ベースの保持の概要](event-driven-retention.md)
-### [ファイル計画マネージャーの概要](file-plan-manager.md)
+### [保持ポリシー](retention-policies.md)
+### [保持ラベル](labels.md)
+### [廃棄レビュー](disposition-reviews.md)
+### [イベント ベースの保持](event-driven-retention.md)
+### [ファイル計画マネージャー](file-plan-manager.md)
 ## [非アクティブなメールボックスを管理する](inactive-mailboxes-in-office-365.md)
 ### [非アクティブなメールボックスを作成および管理する](create-and-manage-inactive-mailboxes.md)
 ### [非アクティブなメールボックスの保持期間を変更する](change-the-hold-duration-for-an-inactive-mailbox.md)
@@ -70,7 +72,7 @@
 ## [スパム対策とマルウェア対策の保護](anti-spam-and-anti-malware-protection.md)
 ### [Office 365 でのフィッシング対策保護](anti-phishing-protection.md)
 #### [Office 365 の ATP のフィッシング詐欺対策機能](atp-anti-phishing.md)
-#### [Office 365 の ATP のフィッシング詐欺対策ポリシーを設定する](set-up-atp-anti-phishing-policies.md)
+#### [フィッシング詐欺対策および ATP フィッシング詐欺対策ポリシーをセットアップする](set-up-anti-phishing-policies.md)
 #### [Office 365 がフィッシング詐欺を防ぐために差出人アドレスを検証する方法](how-office-365-validates-the-from-address.md)
 ### [Office 365 でのスプーフィング対策保護](anti-spoofing-protection.md)
 #### [スプーフィング インテリジェンスの詳細情報](learn-about-spoof-intelligence.md)
