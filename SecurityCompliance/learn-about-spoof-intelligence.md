@@ -3,7 +3,7 @@ title: スプーフィング インテリジェンスの詳細情報
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/11/2018
+ms.date: 10/22/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 description: スプーフィングのインテリジェンスを使用して、セキュリティで&amp;、スパム対策の設定] ページで、組織の一部であるいずれかのドメインのスプーフィングまたは外部ドメインのスプーフィングは、すべての送信者を確認するためのコンプライアンス センターです。なりすましインテリジェンス、Office 365 エンタープライズ E5 の一部としてまたは別々 の脅威保護の詳細および Exchange のオンライン保護の一部として使用可能です。
-ms.openlocfilehash: 74fc1b3dd6fddd91a27785adcab111a02d8ba088
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: df5dedb6a9bdf9c25f570f960b9004524999bfdd
+ms.sourcegitcommit: f49ab866e21da83a0be6cb23ab7b6b4366a6a7ee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496841"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25715913"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>スプーフィング インテリジェンスの詳細情報
 
@@ -102,7 +102,7 @@ Office 365 エンタープライズ E5 サブスクリプションがあるか�
 ## <a name="configuring-the-anti-spoofing-policy"></a>スプーフィング対策ポリシーを構成します。
 <a name="Managespooflist"> </a>
 
-に加えて、特定の送信者から組織に偽装された電子メールを送信をブロックするか、構成することも厳密な方法、フィルターを使用すること、スプーフィングに関するメッセージが見つかったときに実行するアクションおよびそのための安全性のヒントを有効にするかどうかスプーフィング対策です。
+に加えて、特定の送信者から組織に偽装された電子メールを送信をブロックするか、どの程度厳密には、フィルターとするスプーフィングに関するメッセージが見つかったときに実行するアクションを構成することも。
   
 スプーフィング対策の保護は、Office 365 の組織の外部のドメインからの送信者からの電子メールに適用されます。受信者のメールボックスが、10 月の時点で、Office 365 のエンタープライズ E5、脅威の高度な保護を許可されて 2018 EOP のお客様も同様にポリシーを適用することができます。スプーフィング対策ポリシーと、他のフィッシング詐欺対策の設定を管理します。フィッシング詐欺対策の設定の詳細については、 [Office 365 のフィッシング詐欺対策ポリシーの設定](https://support.office.com/article/set-up-office-365-atp-anti-phishing-policies-5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578?ui=en-US&amp;rs=en-US&amp;ad=US#phishpolicyoptions)を参照してください。
   
@@ -126,11 +126,7 @@ Office 365 には、常に実行されている既定スプーフィング対策
   
     ![スプーフィング対策ポリシーを示すスクリーン ショットのオプションを編集します。](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
   
-7. 有効にするか、スプーフィング対策の安全性のヒントを無効にするかどうかを選択します。Office 365 は、送信者の身元を確認できませんでしたと対話するときにユーザーに警告するために**認証が失敗した場合**の安全性のヒントを有効にすることをお勧めします。Office 365 も推奨のユーザーの小さなグループの**認証用のソフト ・ パス**の安全性のヒントを有効にするユーザーは、多くの正当なが、認証されていないソースからの電子メールを受信する場合、この安全性のヒントの多くの警告が生成するためです。  
-  
-    ![スプーフィング対策の安全性のヒントのオプションを表示するスクリーン ショット](media/1ed675c0-48c2-4587-a957-60eb68dc9628.jpg)
-
-8. 選択し、**保存**します。 
+7. 選択し、**保存**します。 
     
 ## <a name="other-ways-to-manage-spoofing-and-phishing-with-office-365"></a>スプーフィングおよびフィッシングと Office 365 を管理するには、他の方法
 <a name="Managespooflist"> </a>
@@ -140,6 +136,7 @@ Office 365 には、常に実行されている既定スプーフィング対策
 - あなたのルーチンの一部として Exchange のオンライン保護なりすましメール レポートを確認してください。表示し、偽装された送信者の管理を支援する多くの場合、このレポートを使用できます。については、[マルウェア、スパム、およびルールの検出に関するデータを表示するのには Office 365 のメールの保護のレポートを使用して](https://technet.microsoft.com/library/dn500744%28v=exchg.150%29.aspx)で**なりすましメールのレポート**を参照してください。
     
 高度な Office 365 管理者では、これらのチェックを完了することも。
+    
     
 - 送信者ポリシー フレームワーク (SPF) の構成を確認します。SPF を迅速に構成するための簡単な説明、[スプーフィングを防止するために Office 365 の SPF を設定](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx)を参照してください。Office 365 の SPF、使用方法について詳細に説明またはハイブリッド展開などのトラブルシューティング、または標準の導入では、[どの Office 365 を使用して送信者ポリシー フレームワーク (SPF) のスプーフィングを防ぐために](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx)始まります。
     

@@ -3,7 +3,7 @@ title: EOP サービスを設定する
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/9/2016
+ms.date: 10/23/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: このトピックでは、Microsoft Exchange Online Protection (EOP) のセットアップ方法について説明します。Office 365 ドメイン ウィザードからここに移動してきた場合、Exchange Online Protection を使用する必要がなければ Office 365 ドメイン ウィザードに戻ってください。コネクタの構成方法の詳細については、「Configure mail flow using connectors in Office 365」をご覧ください。
-ms.openlocfilehash: f1c65164adcaa17c58ae9c4b4b957c477b9e02f3
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 6c9e3becf0f86deeee92ec7cf336bdbd950ac5e2
+ms.sourcegitcommit: f49ab866e21da83a0be6cb23ab7b6b4366a6a7ee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027114"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25715903"
 ---
 # <a name="set-up-your-eop-service"></a>EOP サービスを設定する
 
@@ -49,7 +49,7 @@ ms.locfileid: "22027114"
 2. ドメインの所有権を確認するため、以下の手順に従って、適用可能な DNS レコードを DNS ホスティング プロバイダーに追加します。
     
 > [!TIP]
-> サービスへのドメインの追加と DNS の構成に役立つ情報については、「[Office 365 にドメインを追加する](https://go.microsoft.com/fwlink/p/?LinkId=282303)」と「[Office 365 の DNS レコードを作成する](https://go.microsoft.com/fwlink/p/?LinkId=304219)」を参照してください。 
+> サービスへのドメインの追加と DNS の構成に役立つ情報については、「[Office 365 にドメインを追加する](https://support.office.com/en-us/article/add-a-domain-to-office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611)」と「[Office 365 の DNS レコードを作成する](https://support.office.com/en-us/article/create-dns-records-at-any-dns-hosting-provider-for-office-365-7b7b075d-79f9-4e37-8a9e-fb60c1d95166)」を参照してください。 
   
 ### <a name="step-2-add-recipients-and-optionally-enable-dbeb"></a>手順 2:受信者を追加し、オプションとして DBEB を有効化する
 
