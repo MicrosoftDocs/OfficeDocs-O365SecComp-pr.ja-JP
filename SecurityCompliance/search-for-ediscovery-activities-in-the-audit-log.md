@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: コンプライアンスの管理者は、セキュリティでコンテンツの検索および電子的証拠開示のケースのタスクを実行するときに記録されるイベントの Office 365 の監査ログを検索する方法について&amp;コンプライアンス センターです。
-ms.openlocfilehash: a4cc3a6b5030a6412d739236e4c534f36948d57f
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: f3d8e49da32de85c127d6bbf28d0b53bd6974c09
+ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038350"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "25698033"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Office 365 の監査ログに電子的証拠開示活動を検索します。
 
@@ -43,7 +43,7 @@ Office 365 の監査ログの検索の詳細については、アクセス許可
   
 1. [https://protection.office.com](https://protection.office.com) に移動します。
     
-2. 職場、学校のアカウントを使用して Office 365 にサインインします。
+2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
     
 3. 左側のウィンドウでをクリックして**検索&amp;調査**、**監査ログの検索**] をクリックします。
     
@@ -94,7 +94,7 @@ Office 365 の監査ログの検索の詳細については、アクセス許可
 |削除した電子的証拠開示の場合  <br/> |CaseRemoved  <br/> |削除 ComplianceCase  <br/> |電子的証拠開示のサポート案件が削除されました。サポート案件に関連付けられている保留状態には、大文字と小文字を削除する前に削除することに注意します。  <br/> |
 |削除された検索のアクセス許可のフィルター  <br/> |SearchPermissionRemoved  <br/> |削除 ComplianceSecurityFilter  <br/> |検索のアクセス許可のフィルターが削除されました。  <br/> |
 |電子的証拠開示サポート ・ リクエストの保留中の削除された検索クエリ  <br/> |HoldRemoved  <br/> |削除 CaseHoldRule  <br/> |電子的証拠開示のサポート案件に関連付けられているクエリ ベースの保留が削除されました。保留リストからクエリを削除することは、多くの場合、保留リストを削除する結果です。保留や保留中のクエリが削除されると、保留にされたコンテンツの場所が解放されます。  <br/> |
-|コンテンツの検索、ダウンロードしたエクスポート  <br/> |SearchResultDownloaded  <br/> |該当なし  <br/> |ユーザーは、コンテンツの検索の結果を自分のローカル コンピューターにダウンロードされます。検索結果をダウンロードする前に開始される**コンテンツの検索の開始がエクスポート**の活動を持っていることを注意してください。<br/> |
+|コンテンツの検索、ダウンロードしたエクスポート  <br/> |SearchExportDownloaded  <br/> |該当なし  <br/> |ユーザーは、コンテンツの検索の結果を自分のローカル コンピューターにダウンロードされます。検索結果をダウンロードする前に開始される**コンテンツの検索の開始がエクスポート**の活動を持っていることを注意してください。<br/> |
 |カレントアクティビティのコンテンツの検索結果  <br/> |SearchPreviewed  <br/> |該当なし  <br/> |ユーザーは、コンテンツの検索結果をプレビュー表示されます。  <br/> |
 |パージされたコンテンツの検索結果  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |ユーザーが実行することによってコンテンツの検索結果を削除、 **New ComplianceSearchAction-削除**コマンドです。  <br/> |
 |コンテンツの検索の削除の分析  <br/> |RemovedSearchResultsSentToZoom  <br/> |削除 ComplianceSearchAction  <br/> |コンテンツの検索に検索結果を Office 365 の高度な電子的証拠の開示に備える) のアクションの準備が削除されました。準備操作が 2 週間未満の場合は、高度な電子的証拠開示用に準備された検索結果は、Microsoft Azure ストレージ領域から削除されました。準備操作が 2 週間以上経過する場合、し、このイベントを示します対応する準備の操作だけが削除されたことです。  <br/> |
