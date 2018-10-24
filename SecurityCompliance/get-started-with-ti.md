@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 description: Office 365 の脅威インテリジェンスおよび開始する方法について説明します。
-ms.openlocfilehash: 59da671b4d9b7b697ad4caf3573f954f2a446d24
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: b30543c7338bcd581bd0596f1c71d42c48559a59
+ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532414"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "25769896"
 ---
 # <a name="get-started-with-office-365-threat-intelligence"></a>Office 365 脅威インテリジェンスの概要
 
@@ -92,7 +92,7 @@ Office 365 の脅威インテリジェンス ソリューションの一部と�
 |脅威のダッシュ ボード (または[セキュリティ ダッシュ ボード](security-dashboard.md)) を使用します。  <br/> 最新のまたは現在の脅威に関する情報を表示  <br/> |Office 365 のグローバル管理者  <br/> セキュリティ管理者 (セキュリティに割り当てられている&amp;コンプライアンス センター)  <br/> セキュリティ リーダー (セキュリティに割り当てられている&amp;コンプライアンス センター)  <br/> |
 |(エクスプ ローラーとも呼ばれます) の脅威のエクスプ ローラーを使用します。  <br/> 脅威を分析します。  <br/> |Office 365 のグローバル管理者  <br/> セキュリティ管理者 (セキュリティに割り当てられている&amp;コンプライアンス センター)  <br/> セキュリティ リーダー (セキュリティに割り当てられている&amp;コンプライアンス センター)  <br/> |
 |インシデントの表示  <br/> インシデントに電子メール メッセージを追加します。  <br/> |Office 365 のグローバル管理者  <br/> セキュリティ管理者 (セキュリティに割り当てられている&amp;コンプライアンス センター)  <br/> セキュリティ リーダー (セキュリティに割り当てられている&amp;コンプライアンス センター)  <br/> |
-|インシデントの電子メール アクションをトリガー  <br/> 検索し、不審な電子メール メッセージを削除  <br/> |Office 365 のグローバル管理者  <br/> 検索し、削除 (セキュリティに割り当てられている&amp;コンプライアンス センター)  <br/> |
+|インシデントの電子メール アクションをトリガー  <br/> 検索し、不審な電子メール メッセージを削除  <br/> |Office 365 グローバル アドミニストレーターまたはセキュリティ管理者  <br/> 検索し、削除 (セキュリティに割り当てられている&amp;コンプライアンス センター)  <br/> |
 |Windows Defender Advanced Threat Protection と Office 365 脅威インテリジェンスを統合する  <br/> SIEM サーバーと Office 365 の脅威インテリジェンスを統合します。  <br/> |Office 365 のグローバル管理者  <br/> セキュリティ管理者 (セキュリティに割り当てられている&amp;コンプライアンス センター)  <br/> 適切なロールがその他のアプリケーション (Windows Defender の高度な脅威保護のポータル、SIEM サーバーなど) に割り当てられています。  <br/> |
    
 役割、役割グループ、およびアクセス許可の詳細についてを参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。
