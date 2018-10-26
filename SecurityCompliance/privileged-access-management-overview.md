@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 権限に関する詳細については、このトピックを使用して Office 365 の管理のアクセス
-ms.openlocfilehash: e92bbecd5957261c1eaf3088d872ae6572b7f235
-ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
+ms.openlocfilehash: 5056c19acb03b2486cc84fe085ffd6c2814007dc
+ms.sourcegitcommit: a07b91723bae9ecee2cb092bfbc5b208b30b11a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575341"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "25793552"
 ---
 # <a name="privileged-access-management-in-office-365"></a>特権にアクセス、Office 365 の管理
 
@@ -80,7 +80,7 @@ Office 365 管理センターまたは Exchange 管理 PowerShell を使用す�
 すぐに Office 365 の組織ごとの 30 のアクセス権限ポリシーの現在の制限値を大きくには計画されています。
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>Office 365 の管理者のアクセスを管理するためのグローバル管理者である必要がありますか。
-Office 365 の管理者のアクセスを管理することができるグローバル管理者特権が必要です。承認者のグループに含まれるユーザーに確認および承認の要求をグローバル管理者である必要はありません。 
+残念ですが、Office 365 の管理者のアクセスを管理するアカウントに割り当てられている Exchange の役割の管理役割を持っている必要があります。ただし、グローバル管理者ロールは既定でこのロールが含まれていて、スタンドアロンのアカウントのアクセス許可と役割の管理役割を構成したくない場合は、アクセス権限を管理するために使用することができます。承認者のグループに含まれるユーザーをグローバル管理者であるかを確認し、要求の承認に割り当てられている役割の管理役割を持っている必要はありません。 
 
 ### <a name="how-is-privileged-access-management-in-office-365-related-to-customer-lockbox"></a>ロック ボックスの顧客に関連する Office 365 にアクセス権限の管理ですか。
 [お客様のロック ボックス](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2)は、組織では、サービス プロバイダー、つまり Microsoft によってデータにアクセスするためのアクセス制御のレベルを使用できます。管理者アクセス権をすべての Office 365 の管理者権限を持って作業を組織内で、きめ細かなアクセス制御により、Office 365 の管理。
