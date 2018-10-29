@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Office 365 の機密ラベルを使用すると、機密コンテンツの分類が可能になり、機密コンテンツの保護に役立てることができます。このラベルの使用によって、共同作業の生産性や機能性が低下することはありません。機密ラベルは、ラベル付けされたコンテンツの暗号化や透かしなどの保護設定を強制適用するために使用できます。
-ms.openlocfilehash: 9d3082d7bd5ce2b090c8e03605c2a8825a5acce3
-ms.sourcegitcommit: e9c3befa019463aedce681607fd23786786f76aa
+ms.openlocfilehash: d08f0e630aeec185ac36998e611fa11ba5c5e007
+ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "25678126"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "25769906"
 ---
 # <a name="overview-of-sensitivity-labels"></a>機密ラベルの概要
 
