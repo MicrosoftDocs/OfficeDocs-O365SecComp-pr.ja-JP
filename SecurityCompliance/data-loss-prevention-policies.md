@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Office 365 のセキュリティでデータ損失防止 (DLP) ポリシーを使用して&amp;コンプライアンス センターでは、識別、監視、および Office 365 の間で自動的に機密情報を保護することができます。
-ms.openlocfilehash: c33fe53797f86208e7cd033029949737a5c84d2f
-ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
+ms.openlocfilehash: b342686f38d734a0eff0df896204d7a2f4bfde6a
+ms.sourcegitcommit: 81e06e09bf5ca8e3f51b164d6251b1c35b3285cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25540423"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "25829198"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>データ損失防止ポリシーの概要
 
@@ -312,7 +312,7 @@ E メール通知とポリシーのヒントは、コンテンツが DLP ポリ�
     
 - 選択した条件に一致するコンテンツは、**自動適用**します。 
     
-ラベルの詳細については、「[ラベルの概要](labels.md)」を参照してください。
+ラベルの詳細については、[ラベルの保存管理機能の概要](labels.md)を参照してください。
   
 ラベルを作成した後は、DLP ポリシーにそのラベルを条件として、使用できます。などのためにこれを実行します。
   
@@ -327,12 +327,16 @@ E メール通知とポリシーのヒントは、コンテンツが DLP ポリ�
 ラベルを使用して、DLP ルールの条件として、ことがでくを選択して適用内容、場所、またはユーザーの特定のセットの操作を保護します。
   
 ![ラベルを条件として](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+
+### <a name="support-for-sensitivity-labels-is-coming"></a>機密ラベルのサポートを受信します。
+
+現在条件として、[機密ラベル](sensitivity-labels.md)ではなく保存ラベルのみを使用することができることに注意してください。現在この条件で機密ラベルを使用するためのサポートを作成しています。
   
 ### <a name="how-this-feature-relates-to-other-features"></a>この機能をその他の機能に関連する方法
 
 いくつかの機能は、機密情報を含むコンテンツに適用できます。
   
-- [条件に基づいて自動的にラベルを適用する][保存期間のラベル](labels.md#applying-a-retention-label-automatically-based-on-conditions)と[リテンション ・ ポリシー](retention-policies.md)両方このコンテンツの**保存**の操作を適用できます。 
+- [リテンション ・ ポリシー](retention-policies.md)および[保持のラベル](labels.md#applying-a-retention-label-automatically-based-on-conditions)両方このコンテンツの**保存**の操作を適用できます。 
     
 - DLP ポリシーは、このコンテンツの**保護**操作を適用できます。これらのアクションを適用する前に、DLP ポリシーがその他の条件を満たす必要があるだけでなく、ラベルが含まれているコンテンツを要求できます。 
     
@@ -484,7 +488,7 @@ DLP ポリシーを作成して適用するときにのみ、これらのアク�
     
 ただし、DLP のレポートでは、Exchange Online を含め、Office 365 の間でからデータをプルする必要があります。DLP レポートの場合、コマンドレットは、セキュリティではなく--Exchange オンライン Powershell で使用可能なため、&amp;コンプライアンス センター Powershell。したがって、コマンドレットを使用して、DLP のレポートをする必要があります。
   
-1. [Connect to Exchange Online using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [リモート PowerShell による Exchange Online への接続](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     
 2. DLP のレポートには、これらのコマンドレットのいずれかを使用します。
     

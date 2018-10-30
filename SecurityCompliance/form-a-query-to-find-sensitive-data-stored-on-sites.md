@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 3019fbc5-7f15-4972-8d0e-dc182dc7f836
 description: SharePoint Online のデータ損失防止 (DLP) と、テナント内の機密データを含むドキュメントを検出できます。ドキュメントを検出した後には、データを保護するドキュメントの所有者に使用できます。このトピックでは、機密性の高いデータを検索するクエリを作成できます。
-ms.openlocfilehash: 13954a856dd265e3b735d940c7d334d922713637
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c30cb2e4b93e1a7db90f3e3f922f406285c6f692
+ms.sourcegitcommit: 81e06e09bf5ca8e3f51b164d6251b1c35b3285cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013861"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "25829188"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>サイトに保存された機密データを検索するクエリの形成
 
@@ -84,9 +84,7 @@ DLP 固有のプロパティをクエリを作成するだけでなく、標準�
    
 ## <a name="for-more-information"></a>詳細情報
 
-[SharePoint Online サイトに格納されている機密性の高いデータを検索します。](https://support.office.com/article/ef788d8f-9748-4025-bfe4-40541ca4cfb2)
-  
-[機密情報の種類のインベントリ](https://go.microsoft.com/fwlink/?LinkID=509999)
+[機密情報の種類の検索基準](what-the-sensitive-information-types-look-for.md)
   
 [Office 365 のセキュリティ コンテンツの検索を実行する&amp;コンプライアンス センター](run-a-content-search-in-the-security-and-compliance-center.md)
   
