@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: Outlook と Outlook は、個々 のユーザーまたは組織全体のメッセージのレポート アドインを有効にする方法を説明します。
-ms.openlocfilehash: ad07d594a78b8134984b48f08898ad1ba697e03a
-ms.sourcegitcommit: 49b565f6a57febe53f331b2605d6a06d11e2d0be
+ms.openlocfilehash: 8c9853c78a42d6eecd0989475ef8f0a44345f812
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "25638011"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857265"
 ---
 # <a name="enable-the-report-message-add-in"></a>レポート メッセージ アドインを有効にする
 
@@ -41,7 +41,7 @@ ms.locfileid: "25638011"
     
 ## <a name="get-the-report-message-add-in-for-yourself"></a>自分用の追加のレポート メッセージを取得します。
 
-1. [Office を格納](https://appsource.microsoft.com/product/office/WA104381180?src=office)する、追加のレポート メッセージを取得します。
+1. [マイクロソフトの AppSource](https://appsource.microsoft.com/marketplace/apps)、検索[レポート メッセージを追加で](https://appsource.microsoft.com/product/office/wa104381180)します。
     
 2. 選択**を取得ここでの IT**です。<br/>![メッセージを報告する-今すぐ](media/ReportMessageGETITNOW.png)<br/> 
     
@@ -149,7 +149,7 @@ ms.locfileid: "25638011"
 
 [レポート メッセージの追加の使用](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)を参照してください。
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [迷惑メール報告アドインを使用する](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
   

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: ゼロの自動パージ (ZAP) は既にユーザーの受信トレイに配信されたメッセージをスパムやマルウェアを検出する電子メールの保護機能で、害のない、悪意のあるコンテンツをレンダリングZAP はこれは、検出された、悪意のあるコンテンツの種類によって異なります。
-ms.openlocfilehash: dc8901dc7c1db5b323ccbeee610647b8a302fcb3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: dabe4caf8916d3f0de7a70cb3d056dd9a7fdcc3f
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531753"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857245"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>ゼロアワー自動消去 - 迷惑メールやマルウェアからの保護
 
@@ -74,7 +74,7 @@ ZAP が既定でオンですが、いくつかの条件が満たされている�
     
     この時点で [**保存**」を選択する場合、Office 365 テナントにポリシーを適用します。 
     
-    ![迷惑メールを設定し、[迷惑メール フォルダーにメッセージを Mpve するアクションを一括](media/4332cfb3-89e1-48ba-8da8-9286f2fa1089.PNG)
+    ![迷惑メールを設定し、[迷惑メール フォルダーにメッセージを移動するアクションを一括](media/4332cfb3-89e1-48ba-8da8-9286f2fa1089.PNG)
   
 4. **受信者**、**ドメイン**、または**グループのメンバーシップ**を**適用する**ポリシーのフィルター] ウィンドウで、メニュー コントロールでスクロールを選択して、新しいポリシーを作成する、一連のユーザーにポリシーを適用する場合は、します。ポリシーを適用するとしてください。追加の条件と例外を設定することもできます。 
     
