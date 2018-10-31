@@ -3,7 +3,7 @@ title: Office 365 で電子メール メッセージを暗号化するために�
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 10/30/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,21 +13,26 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: Office 365 グローバル管理者は、メールに Office 365 メッセージの暗号化 (ホーム) を有効にするのには、フロー ルールを作成できます。送信電子メール メッセージを暗号化し、内部のメッセージから、または組織から送信される、暗号化されたメッセージへの返信を暗号化を解除できます。
-ms.openlocfilehash: 06668f29e69c885adb8c67d723efe42b4a4aa166
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e9c6874ce304d1af9da093c02cbc954c54dae8cc
+ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531812"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25853092"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Office 365 で電子メール メッセージを暗号化するためにメール フローの規則を定義します。
 
-Office 365 グローバル管理者は、メール フロー ルール、送受信する電子メールのメッセージを保護するために、トランスポート ルールとも呼ばれますを作成します。送信電子メール メッセージを暗号化および暗号化されたメッセージを組織内から、または組織から送信される、暗号化されたメッセージへの返信から暗号化を削除するルールを設定することができます。これらのルールを作成するのには、Exchange 管理センター (EAC) または Exchange のオンラインの Windows PowerShell コマンドレットを使用できます。だけでなく全体の暗号化の規則を有効にするか、エンド ・ ユーザーの個々 のメッセージの暗号化オプションを無効にすることもできます。
+Office 365 グローバル管理者は、メール フロー ルール、送受信する電子メールのメッセージを保護するために、トランスポート ルールとも呼ばれますを作成します。送信電子メール メッセージを暗号化および暗号化されたメッセージを組織内から、または組織から送信される、暗号化されたメッセージへの返信から暗号化を削除するルールを設定することができます。これらのルールを作成するのには、Exchange 管理センター (EAC) または Exchange のオンラインの Windows PowerShell コマンドレットを使用できます。 だけでなく全体の暗号化の規則を有効にするか、エンド ・ ユーザーの個々 のメッセージの暗号化オプションを無効にすることもできます。
   
 最近に移行する AD RMS から Azure 情報の保護、新しい環境で作業を続けられるようにするのには、既存のメール フロー ルールを確認する必要があります。さらに、新しい Office 365 メッセージの暗号化 (ホーム) 機能を使用するを通じて利用 Azure 情報保護する場合は、既存のメール フロー ルールを更新する必要があります。それ以外の場合、ユーザーは引き続き、シームレスな新しいホームの経験ではなく HTML 添付ファイルの以前の形式を使用する暗号化されたメールを受信します。ホームをまだ設定していない場合は、情報の[情報の保護を Azure 上に構築された、新しい Office 365 のメッセージの暗号化機能を設定](set-up-new-message-encryption-capabilities.md)を参照してください。 
   
 メール フロー ルール、およびメール フローによる作業時間の規則を構成するコンポーネントについては、 [Exchange Online でメールの流れのルール (トランスポート ルール)](https://technet.microsoft.com/library/jj919238%28v=exchg.150%29.aspx)を参照してください。Azure の情報保護とメール フロー ルールの動作に関する詳細については、 [Azure の情報保護のラベルのメール フロー ルールを構成する Exchange のオンライン](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules)を参照してください。
   
+## <a name="hybrid-exchange-environments-do-this-first"></a>ハイブリッド Exchange 環境: この最初の操作を行います
+オンプレミス Exchange Online でメールをルーティングする場合は、ホームを使用して、暗号化されたメールを送信できます。これを行うには、メール フローをフロー、電子メール サーバーから Office 365 に構成する必要があります。Office 365 を通過するメールを構成した後は、この資料を使用してホームのメール フロー ルールを作成できます。
+
+手順については、 [Office 365 と、独自のメール ・ サーバ間でメールをルーティングするコネクタのセットアップ](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)を参照してください。具体的には、手順に"第 2 部: メールをメール サーバーから Office 365 へのフローを構成する」です。
+
 ## <a name="create-a-mail-flow-rule-to-encrypt-email-messages-with-the-new-ome-capabilities"></a>新しいホーム機能を持つ電子メール メッセージを暗号化するためにメール フロー ルールを作成します。
 
 EAC を使用して新しいホーム機能でメッセージの暗号化をトリガーするためのメール フロー ルールを定義することができます。
@@ -84,7 +89,7 @@ EAC を使用して新しいホーム機能でメッセージの暗号化をト�
     
 7. **次の操作**] ボックスの一覧から、**メッセージ セキュリティの変更**] に割り当てられているすべてのアクションを削除します\>**ホームの以前のバージョンを適用**します。
     
-8. [ **保存**] を選択します。
+8. [ **保存**] を選びます。
     
 ## <a name="creating-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>Office 365 のメッセージの暗号化のルールを作成する新しい機能がないです。
 
@@ -165,7 +170,7 @@ EAC を使用して新しいホーム機能でメッセージの暗号化をト�
     
 7. **次の操作**をには、**メッセージ セキュリティの変更**] を選択\>**ホームの以前のバージョンを削除**します。
     
-8. **[保存]** を選択します。
+8. [ **保存**] をクリックします。
     
 #### <a name="to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities-by-using-windows-powershell-for-exchange-online"></a>Exchange オンラインの Windows PowerShell を使用して新しいホーム機能なしで暗号化電子メールの返信を暗号化を解除する規則を作成するには
 <a name="DecryptrulePShellNoNewOME"> </a>

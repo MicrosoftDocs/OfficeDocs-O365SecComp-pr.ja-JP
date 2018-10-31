@@ -3,7 +3,7 @@ title: Office 365 Message Encryption 用に Azure Rights Management を設定す
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/3/2017
+ms.date: 10/30/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,19 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
-description: 'Office 365 のメッセージの暗号化は、Microsoft Azure アクセス権の管理 (以前は Windows Azure Active Directory の権限の管理と呼ばれます) によって異なります。 '
-ms.openlocfilehash: 99c8de49330cf99545d28d81e0c99c2138797356
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 以前のバージョンの Office 365 のメッセージの暗号化は、Microsoft Azure アクセス権の管理 (以前は Windows Azure Active Directory の権限の管理と呼ばれます) によって異なります。
+ms.openlocfilehash: f8759da8628d4c78fe5409f5c47e3fc2b3e9484e
+ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532199"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25853072"
 ---
-# <a name="set-up-azure-rights-management-for-office-365-message-encryption"></a>Office 365 Message Encryption 用に Azure Rights Management を設定する
+# <a name="this-article-applies-to-the-previous-version-of-ome"></a>この資料では、ホームの以前のバージョンに適用されます。
+ホームを既に展開しているホームの新機能を組織の Office 365 にまだ移動していない場合は、この資料の情報は、組織に適用されます。ホームの新機能、組織の適切なことがすぐに移動するための計画を作成することをお勧めします。手順については、[新しい Office 365 のメッセージの暗号化機能の設定](set-up-new-message-encryption-capabilities.md)を参照してください。最初の新機能の動作についての詳細を確認する場合は、 [Office 365 のメッセージの暗号化](ome.md)を参照してください。この資料の残りの部分は、ホームの新機能のリリースの前にホームの動作を意味します。
+
+# <a name="set-up-azure-rights-management-for-the-previous-version-of-office-365-message-encryption"></a>以前のバージョンの Office 365 のメッセージの暗号化の Azure アクセス権の管理を設定します。
 
 アクティブにしを Azure の権限の管理 (RMS)、Office 365 メッセージの暗号化 (ホーム) を使用して、Azure の情報保護の部分を設定するために以下の必要な手順について説明します。
   
-## <a name="prerequisites-for-using-office-365-message-encryption"></a>Office 365 Message Encryption を使用するための前提条件
+## <a name="prerequisites-for-using-the-previous-version-of-office-365-message-encryption"></a>以前のバージョンの Office 365 のメッセージの暗号化を使用するための前提条件
 <a name="warmprereqs"> </a>
 
 Office 365 メッセージの暗号化 (ホーム)、IRM を含むは、Azure アクセス権管理 (Azure RMS) によって異なります。Azure の RMS は、情報保護の Azure で使用される保護技術です。ホームを使用するには、Office 365 の組織は、著作権管理の Azure サブスクリプションが含まれますが、オンライン Exchange または Exchange のオンライン保護のサブスクリプションを含める必要があります。
@@ -39,12 +42,12 @@ Office 365 メッセージの暗号化 (ホーム)、IRM を含むは、Azure �
     
 - 既に設定したホームで使用する Azure アクセス権管理オンライン Exchange または Exchange のオンライン保護を設定する方法によって場合は、ホームおよびその新機能をすぐに使用を開始する準備が完了する必要があります。この資料では、かどうかしたホームを正しくセットアップすることを確認する方法、設定を変更する必要がある場合の対処方法と、設定を変更しないように選択する場合の対処について説明します。などの新機能を使用するためには、ホームで Azure RMS を使用する必要があります。オンプレミス Active ディレクトリ RMS では、新しい機能を使用できません。
     
-## <a name="activate-azure-rights-management-for-ome-in-office-365"></a>Office 365 でホームの Azure の著作権管理を有効化します。
+## <a name="activate-azure-rights-management-for--the-previous-version-of-ome-in-office-365"></a>以前のバージョンの Office 365 のホームで Azure アクセス権の管理を有効化します。
 <a name="activatewarm"> </a>
 
 Azure アクセス権の管理を有効に、組織内のユーザーがメッセージを送信すると、情報の保護を適用し、メッセージと Azure の権利管理サービスによって保護されているファイルを開くようにする必要があります。手順については、 [Azure アクセス権の管理をアクティブにする](https://go.microsoft.com/fwlink/p/?LinkId=525775)を参照してください。ライセンス認証の手続きが完了したら、ここを返し、この資料内のタスクを続行します。
   
-## <a name="set-up-ome-to-use-azure-rms-by-importing-trusted-publishing-domains-tpds"></a>信頼された発行ドメイン (TPDs) をインポートすると、Azure の RMS を使用するホームを設定します。
+## <a name="set-up-the-previous-version-of-ome-to-use-azure-rms-by-importing-trusted-publishing-domains-tpds"></a>信頼された発行ドメイン (TPDs) をインポートすると、Azure の RMS を使用するホームの以前のバージョンを設定します。
 <a name="importTPDs"> </a>
 
 TPD は、組織の権限の管理の設定に関する情報を含む XML ファイルです。など、TPD には、署名と証明書とライセンスの暗号化に使用されるサーバー ライセンサー証明書 (SLC) に関する情報が含まれている、Url のライセンスおよび発行を使用しています。Office 365 の組織に、TPD をインポートするには、Windows PowerShell を使用します。
@@ -108,7 +111,7 @@ TPD は、組織の権限の管理の設定に関する情報を含む XML フ�
 
 8. 正常に、TPD をインポートしている Azure アクセス権の管理を有効になっていることを確認するには、Azure の著作権管理の機能をテストするのには、テスト IRMConfiguration コマンドレットを使用します。詳細については、[テスト ・ IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx)の「例 1」を参照してください。
     
-## <a name="i-have-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>ホームが Active Directory の権限管理 Azure の情報保護しないと設定があると、行うことは何ですか?
+## <a name="i-have-the-previous-version-of-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>以前のバージョンの Active Directory の権限管理 Azure 情報保護ではないを使用して設定のホームがある、行うことは何ですか?
 <a name="importTPDs"> </a>
 
 Active Directory の権限管理で、既存の Office 365 のメッセージの暗号化メール フロー ルールを使用する続行することができますが、構成またはホームの新機能を使用することはできません。代わりに、情報の保護を Azure に移行する必要があります。移行し、これにより、組織の詳細については、 [Azure の情報保護に AD RMS からの移行](https://docs.microsoft.com/information-protection/deploy-use/prepare-environment-adrms)を参照してください。
