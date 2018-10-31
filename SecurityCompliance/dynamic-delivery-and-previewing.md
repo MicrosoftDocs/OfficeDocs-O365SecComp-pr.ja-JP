@@ -3,6 +3,7 @@ title: 動的な配信および Office 365 ATP の安全な添付ファイルを
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 10/30/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -12,26 +13,30 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: ATP の安全な添付ファイル ポリシーを設定するときに、メッセージの遅延を回避し、スキャンされている添付ファイルをプレビューするのにはユーザーを有効にする動的な配信を選択します。
-ms.openlocfilehash: 23ef316ed35b89ef1fad5e9639dd10e76036a4f3
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: b7b5f05170e6f27cbec9e0d5a121b2f71f16f41a
+ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965244"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25850821"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>動的な配信および Office 365 ATP の安全な添付ファイルをプレビューします。
 
-動的な配信を選択できるオプションです。動的な配信および[Office 365 の ATP の安全な添付ファイル](atp-safe-attachments.md)の添付ファイルのプレビュー機能の詳細については、この資料を参照してください。
+**概要**: 動的な配信は、 [ATP の安全な添付ファイル](atp-safe-attachments.md)を選択できるオプションです。動的な配信および[Office 365 の ATP の安全な添付ファイル](atp-safe-attachments.md)の添付ファイルのプレビュー機能の詳細については、この資料を参照してください。
   
 ## <a name="how-dynamic-delivery-works"></a>動的配信のしくみ
 
-[Office 365 の ATP の安全な添付ファイル ポリシーを設定](set-up-atp-safe-attachments-policies.md)すると、選択できます**ブロック**、**交換**をには、**動的な配信**など、いくつかのオプションから。ポリシーの構成方法によって、添付ファイルをスキャン中に、電子メールの受信者によって電子メールの配信に小さな遅延が発生することができます。メッセージの遅延を避けるためには、**動的な配信**を選択します。
+[ATP の安全な添付ファイル ポリシーの設定](set-up-atp-safe-attachments-policies.md)組織には電子メールの添付ファイルを処理する方法のいくつかのオプションがあります。**ブロック**、**交換**、および**動的な配信**が含まれます。ATP の安全な添付ファイル ポリシーの構成方法によって、添付ファイルをスキャン中に、電子メールの受信者によってマイナー電子メールの配信に遅延が発生することができます。メッセージの遅延を避けるためには、**動的な配信**を選択します。
   
-動的な配信オプションは、各電子メールの添付ファイルのプレース ホルダーを使用した電子メール メッセージの本文を送信することによりメールの遅延を排除します。プレース ホルダーは、添付ファイルが[Office 365 の ATP の安全な添付ファイル](atp-safe-attachments.md)がスキャンされるまで残ります。電子メールの受信者は、読み取りおよび応答の電子メール メッセージをすぐにその添付ファイルを分析していることを知ることです。
-  
-ほとんどの Pdf や Office が進行中で ATP のスキャン中に、セーフ モードでドキュメントをプレビューできます。添付ファイルに動的な配信プレビュー用のプログラムと互換性がない場合電子メールの受信者は、ATP の安全な添付ファイルのスキャンが完了するまでに、添付ファイルのプレース ホルダーが参照してください。
-  
-各添付ファイルがオフになって、元の電子メール メッセージに自動的に再アタッチします。悪意のある添付ファイルが確認された場合、検疫に送信されます、 [Office 365 で検疫されたメッセージを管理する](manage-quarantined-messages-and-files.md)ことができます (Office 365 のグローバル管理者またはセキュリティ管理者の場合) などの組織のセキュリティ チームの他の場所。
+動的配信では、各電子メールの添付ファイルのプレース ホルダーを持つ受信者に、電子メール メッセージの本文を送信することによりメールの遅延を排除します。プレース ホルダーは、添付ファイルのコピーがスキャンされ、 [ATP の安全な添付ファイル](atp-safe-attachments.md)が安全であると判断されるまで残ります。ほとんどの Pdf や Office が進行中で ATP のスキャン中に、セーフ モードでドキュメントをプレビューできます。添付ファイルに動的な配信プレビュー用のプログラムと互換性がない場合電子メールの受信者は、ATP の安全な添付ファイルのスキャンが完了するまでに、添付ファイルのプレース ホルダーが参照してください。
+
+- 各添付ファイルをオフにすると、開くか、ダウンロードに使用可能です。 
+
+- 悪意のある添付ファイルが確認された場合、検疫に送信されます、 [Office 365 で検疫されたメッセージを管理する](manage-quarantined-messages-and-files.md)ことができます (Office 365 のグローバル管理者またはセキュリティ管理者の場合) などの組織のセキュリティ チームの他の場所。
+
+動的な配信は、電子メールの受信者は、読み取りおよび応答の電子メール メッセージをすぐにその添付ファイルを分析していることを知ることです。 
+
+スキャンでは、ATP 安全な添付ファイルを Office 365 のデータが格納されている同じ地域に配置します。データ センターの地理的条件の詳細についてを参照してください[にあるデータがあるか?](https://products.office.com/where-is-your-data-located?geo=All) 
   
 ## <a name="what-happens-when-someone-forwards-an-email-that-contains-an-attachment"></a>添付ファイルを含む電子メールを転送他のときの動作ですか。
 

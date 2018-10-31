@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 description: 高度な脅威保護 office 365 にはには、なりすましのインテリジェンス、安全なリンク、安全な添付ファイル、および高度なフィッシング対策機能が含まれています。脅威の高度な保護も拡張されている SharePoint のオンライン、OneDrive 内のファイルにビジネス、およびマイクロソフトのチームです。
-ms.openlocfilehash: e3b282118b5fde0374bb9f052e7efe8a13e2fd70
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: def22368f8bc219ebceda797dd04b234bc3c4435
+ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496861"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25850831"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -55,7 +55,7 @@ ATP を作成したら、次に、セキュリティ チーム用にポリシー
 
 - **[Office 365 の ATP の安全なリンクのポリシーを設定](set-up-atp-safe-links-policies.md)** 組織の[ユーザー設定のブロックされた Url のリスト](set-up-a-custom-blocked-urls-list-wtih-atp.md)と[カスタム」を書き換えない」の Url] ボックスの一覧](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)を含む
     
-- **[ATP の安全な添付ファイルを Office 365 のポリシーを設定](set-up-atp-safe-attachments-policies.md)** する[動的な配信およびプレビュー](dynamic-delivery-and-previewing.md)を含めることができます。
+- **[Office 365 の ATP の安全な添付ファイル ポリシーを設定](set-up-atp-safe-attachments-policies.md)** する[動的な配信およびプレビュー](dynamic-delivery-and-previewing.md)を含めることができます。
   
 ## <a name="see-how-atp-is-working-by-viewing-reports"></a>レポートを表示する分析ツールを使用する方法を参照してください。
 
@@ -86,6 +86,6 @@ ATP のポリシーがあると後、は、サービスの操作方法を表示�
 
 [脅威の高度な保護のためのレポートを表示します。](view-reports-for-atp.md)
   
-[脅威の Office 365 のセキュリティの管理&amp;コンプライアンス センター](threat-management.md)
+[Threat management in the Office 365 Security &amp; Compliance Center](threat-management.md)
   
 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: 電子メールに悪意のあるファイルから組織を保護するために安全な添付ファイル ポリシーを定義します。
-ms.openlocfilehash: c57f9320c7cd2b8b75bc2dc58d1f72ce136acbb6
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 1fd831adf5166223ba5df159a131c71e3b467233
+ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454284"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25850841"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Office 365 ATP の安全な添付ファイル ポリシーを設定します
 
@@ -59,13 +59,13 @@ ms.locfileid: "25454284"
     
       - **[説明**] ボックスで、配信メッセージをすぐに再接続されると添付ファイルなどをスキャンした後の説明を入力します。
     
-      - [応答] セクションでは、**動的な配信**オプションを選択します。([動的な配信および ATP の安全な添付ファイルのプレビューについての詳細を表示](dynamic-delivery-and-previewing.md)) します。
+      - [応答] セクションでは、**動的な配信**オプションを選択します。([動的な配信および ATP の安全な添付ファイルのプレビューについての詳細](dynamic-delivery-and-previewing.md))
     
       - **添付ファイルのリダイレクト**] で、リダイレクトを有効にして、Office 365 グローバル管理者、セキュリティ管理者は、悪意のある添付ファイルを調べて、セキュリティ アナリストのメール アドレスを入力するためのオプションを選択します。 
     
       - [**適用先**] セクションでは、**受信者のドメインと**を選択し、自分のドメインを選択します。**追加**を選択し、[ **ok]** をクリックします。
     
-6. [ **保存**] を選択します。
+6. [ **保存**] を選びます。
     
 組織の複数の分析ツールの安全な添付ファイル ポリシーの設定を検討してください。**ATP の安全な添付ファイル**のページに記載されている順序でこれらのポリシーが適用されます。ポリシーを定義または編集すると、少なくとも 30 分を許可する、マイクロソフトのデータ センター全体で有効にするポリシーです。 
   
