@@ -3,7 +3,7 @@ title: Office 365 で電子メール メッセージを暗号化するために�
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/30/2018
+ms.date: 10/31/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: Office 365 グローバル管理者は、メールに Office 365 メッセージの暗号化 (ホーム) を有効にするのには、フロー ルールを作成できます。送信電子メール メッセージを暗号化し、内部のメッセージから、または組織から送信される、暗号化されたメッセージへの返信を暗号化を解除できます。
-ms.openlocfilehash: e9c6874ce304d1af9da093c02cbc954c54dae8cc
-ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
+ms.openlocfilehash: bd94d36543653d5767fe27aee0f859fe9e374b2f
+ms.sourcegitcommit: c0f5c92664b3fbed7b3c2f8232bb4046fc19d1b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25853092"
+ms.locfileid: "25890035"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Office 365 で電子メール メッセージを暗号化するためにメール フローの規則を定義します。
 
@@ -29,7 +29,7 @@ Office 365 グローバル管理者は、メール フロー ルール、送受�
 メール フロー ルール、およびメール フローによる作業時間の規則を構成するコンポーネントについては、 [Exchange Online でメールの流れのルール (トランスポート ルール)](https://technet.microsoft.com/library/jj919238%28v=exchg.150%29.aspx)を参照してください。Azure の情報保護とメール フロー ルールの動作に関する詳細については、 [Azure の情報保護のラベルのメール フロー ルールを構成する Exchange のオンライン](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules)を参照してください。
   
 ## <a name="hybrid-exchange-environments-do-this-first"></a>ハイブリッド Exchange 環境: この最初の操作を行います
-オンプレミス Exchange Online でメールをルーティングする場合は、ホームを使用して、暗号化されたメールを送信できます。これを行うには、メール フローをフロー、電子メール サーバーから Office 365 に構成する必要があります。Office 365 を通過するメールを構成した後は、この資料を使用してホームのメール フロー ルールを作成できます。
+オンプレミス Exchange Online でメールをルーティングする場合は、ホームを使用して、暗号化されたメールを送信できます。これを行うには、メール、電子メール サーバーから Office 365 へのフローを構成する必要があります。1 回に設定されている、Office 365 を通過するメールし、この資料を使用してホームのメール フロー ルールを行うことができます。
 
 手順については、 [Office 365 と、独自のメール ・ サーバ間でメールをルーティングするコネクタのセットアップ](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)を参照してください。具体的には、手順に"第 2 部: メールをメール サーバーから Office 365 へのフローを構成する」です。
 
