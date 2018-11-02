@@ -3,7 +3,7 @@ title: ユーザー、ドメイン、または IP アドレスをスパム電子
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/16/2018
+ms.date: 11/01/2018
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: 'スパムとして分類されている Office 365 からメール メッセージをユーザーが送り続ける場合、メッセージを送信しないようブロックされます。 '
-ms.openlocfilehash: 295d92fc6a1cd26783b18304a2d119d2ea0d7f1f
-ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
+ms.openlocfilehash: 0f58f9f2270c8be38b3ea2ea81f04656eb10e7fb
+ms.sourcegitcommit: 83406a3258e722020e46a82bbf4bc9d5d8a326ca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25577066"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25899658"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>ユーザー、ドメイン、または IP アドレスをスパム電子メール送信後のブロック一覧から削除する
 
@@ -44,7 +44,7 @@ Office 365 のセキュリティとコンプライアンス センター (SCC) �
 3. **[はい]** をクリックして変更を確定します。 
     
 > [!NOTE]
-> テナント管理者がアカウントのブロックを解除できる回数に制限があります。ユーザーの制限を超えた場合は、エラー メッセージが表示されます。ユーザーのブロックを解除するためのサポートに連絡する必要があります。
+> テナント管理者がアカウントのブロックを解除できる回数に制限があります。ユーザーの制限を超えた場合は、エラー メッセージが表示されます。ユーザーのブロックを解除するためのサポートに連絡する必要があります。</br></br> ユーザーがブロックされる前に、最大 1 時間かかる場合があります。
   
 ## <a name="third-party-block-lists"></a>サード パーティのブロック リスト
 
