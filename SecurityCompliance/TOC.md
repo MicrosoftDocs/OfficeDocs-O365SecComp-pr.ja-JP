@@ -13,8 +13,9 @@
 ## [Office 365 でデータやサービスへのアクセスを保護する](protect-access-to-data-and-services.md)
 ## [MDM または Intune を選択する](choose-between-mdm-and-intune.md)
 # 情報を保護する
-## [秘密度ラベル](sensitivity-labels.md)
-## [データ損失を防止する (DLP)](data-loss-prevention-policies.md)
+## [機密ラベル](sensitivity-labels.md)
+## [機密ラベルでの暗号化を使用してコンテンツへのアクセスを制限する](encryption-sensitivity-labels.md)
+## [データ損失の防止 (DLP)](data-loss-prevention-policies.md)
 ## [DLP の概要の詳しい説明を見る](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## DLP を設定する
 ### [DLP の推奨ポリシーの概要](get-started-with-dlp-policy-recommendations.md)
@@ -149,7 +150,7 @@
 ## [コンテンツ検索を使う](content-search.md)
 ### [コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)
 ### [コンテンツ検索の結果のキーワード統計を表示する](view-keyword-statistics-for-content-search.md)
-### [コンテンツ検索の結果をエクスポートする](export-search-results.md)
+### [コンテンツ検索の結果をエクスポートする ](export-search-results.md)
 ### [コンテンツ検索のレポートをエクスポートする](export-a-content-search-report.md)
 ### [メール メッセージを検索して削除する](search-for-and-delete-messagesadmin-help.md)
 ### [Office 365 のオンプレミス ユーザーのクラウド ベースのメールボックスを検索する](search-cloud-based-mailboxes-for-on-premises-users.md)
@@ -257,7 +258,8 @@
 ### [分離した SharePoint Online チーム サイトの設計](design-an-isolated-sharepoint-online-team-site.md)
 ### [分離した SharePoint Online チーム サイトの展開](deploy-an-isolated-sharepoint-online-team-site.md)
 ### [分離した SharePoint Online チーム サイトの管理](manage-an-isolated-sharepoint-online-team-site.md)
-### [Office 365 開発/テスト環境での分離した SharePoint Online チーム サイト](isolated-sharepoint-online-team-site-dev-test-environment.md)
+### [開発/テスト環境での分離した SharePoint Online チーム サイト](isolated-sharepoint-online-team-site-dev-test-environment.md)
+## [SIEM サーバー統合](siem-server-integration.md)
 
 # コンプライアンス ソリューション
 ## [Microsoft クラウド サービスの利用時に、コンプライアンス マネージャーを使用してデータ保護と規制の要件を満たす](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
