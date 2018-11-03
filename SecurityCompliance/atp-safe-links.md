@@ -4,6 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
+ms.date: 11/02/2018
 ms.topic: overview
 f1_keywords:
 - "197503"
@@ -19,12 +20,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 安全なリンク機能は、Office ドキュメントや電子メール メッセージのハイパーリンクのクリックの検証を提供します。フィッシング詐欺やその他の攻撃から組織を保護するために安全なリンクを使用します。
-ms.openlocfilehash: 75703cbe6b6a5a5d102570288bb20e6814d095fc
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: fcb8fb5862a1b9b574008e91f8745e93b6d1a939
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454374"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935564"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 の ATP の安全なリンク機能
 
@@ -88,7 +89,7 @@ ATP の安全なリンク機能は、次のような場合アクティブです�
   
 - **ATP の安全なリンク ポリシーが設定されて**メールや Word、Excel、PowerPoint、および Visio のドキュメントです。( [Office 365 の ATP の安全なリンク ポリシーの設定](set-up-atp-safe-links-policies.md)を参照してください)。
 
-- **現代の認証を使用する office 365 クライアント アプリケーションを構成**します。( [2016 の Office の最新の認証](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)を参照してください)。 
+- **現代の認証を使用する office 365 クライアント アプリケーションが構成されています。**(これは、Office ドキュメント内の ATP の安全なリンクの保護のため)。( [2016 の Office の最新の認証](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)を参照してください)。 
     
 - **ユーザーが Office 365 にサインインして**、職場、学校のアカウントを使用しています。(詳しくは、 [Office または Office 365 にサインイン](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)を参照してください)。
     

@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 11/02/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Word、Excel、PowerPoint、および Visio のファイルおよび電子メール メッセージ内の悪意のあるリンクから組織を保護するために、安全なリンクのポリシーを設定します。
-ms.openlocfilehash: 6c4e208e9f944d9c38d43b5669167e0cf425ec39
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 823dc6073dfa6302f19154a86bafa7f19d5affdc
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552345"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935554"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Office 365 の ATP の安全なリンクのポリシーを設定します
 
@@ -40,11 +41,11 @@ ms.locfileid: "25552345"
 - 組織が[Office 365 の高度な脅威保護](office-365-atp.md)を持っていることを確認します。
     
 - ATP のポリシーを編集または定義するために必要な権限があることを確認します。参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。
+
+- (これは、Office ドキュメント内の ATP の安全なリンクの保護のため)[現代の認証](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)を使用する Office のクライアントが構成されていることを確認します。
     
 - [ATP の安全なリンク ポリシーのオプションについて理解します。](#learn-about-atp-safe-links-policy-options)(この記事で)。 
 
-- [現代の認証](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)を使用する Office のクライアントが構成されていることを確認します。
-    
 - 最大 30 分間のすべての Office 365 のデータ センターに展開するのには、新規または更新されたポリシーを使用できます。
     
 ## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>手順 2: 定義 (または確認) すべてのユーザーに適用される分析ツールの安全なリンク ポリシー
@@ -63,7 +64,7 @@ ms.locfileid: "25552345"
     
 5. **電子メール以外のコンテンツに適用される設定**をオンまたはオフ) に使用するオプションです。(お勧めのすべてのオプションを選択します。 
     
-6. [ **保存**] を選択します。
+6. [ **保存**] を選びます。
     
 ## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>手順 3: 追加 (または編集) 特定の電子メールの受信者に適用される ATP の安全なリンク ポリシー
 
@@ -95,7 +96,7 @@ ms.locfileid: "25552345"
     
   - [**適用先**] セクションでは、**受信者のメンバーである**を選択し、ポリシーに追加するグループを選択し、します。**追加**を選択し、[ **ok]** をクリックします。
     
-6. [ **保存**] を選択します。
+6. [ **保存**] を選びます。
     
 ## <a name="step-5-learn-about-atp-safe-links-policy-options"></a>ATP の安全なリンク ポリシーのオプションについて、手順 5。
 

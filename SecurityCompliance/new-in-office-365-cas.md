@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: reference
+ms.date: 10/31/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: Office 365 のクラウド アプリケーションのセキュリティの新機能を参照してください。
-ms.openlocfilehash: a8bca8cb62681491fb5a6964104b1aa1c626784d
-ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
+ms.openlocfilehash: f661d0d541e84db89b7abd99fd77ef9a767a4cd0
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "23796873"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935574"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>Office 365 のクラウド アプリケーションのセキュリティの新機能
 
@@ -27,11 +28,11 @@ Office 365 クラウド アプリケーションのセキュリティ (旧称 Of
   
 ## <a name="office-365-cloud-app-security-release-130"></a>Office 365 のクラウド アプリケーションのセキュリティ情報公開 130
 
-*リリース 2018 年 9 月 5日*
+*2018 年 9 月 5日をリリースしました。*
 
 **[マイクロソフト クラウド アプリケーションのセキュリティは、130 をリリース](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-130)することで解放します**。
 
-- **新しいメニュー バー**365 の Microsoft 製品では、全体でより一貫した管理機能を提供し、使用すると、マイクロソフトのセキュリティ ・ ソリューションの間でより簡単にピボットは、クラウド アプリケーションのセキュリティのポータルのメニュー バーを画面の左側に移動します。この一貫性のあるナビゲーションには、1 つのマイクロソフト セキュリティ ポータルから移動するときに自分で回転することが発生します。
+- **新しいメニュー バー**365 の Microsoft 製品では、全体でより一貫した管理機能を提供し、使用すると、マイクロソフトのセキュリティ ・ ソリューションの間でより簡単にピボットは、クラウド アプリケーションのセキュリティのポータルのメニュー バーを画面の左側に移動します。この一貫性のあるナビゲーションには、1 つのマイクロソフト セキュリティ ポータルから移動するときに自分で回転することが発生します。<br/>![クラウド アプリケーションのセキュリティを Office のメニュー バー](media/OCAS-MenuBar.png)<br/>
 
 - **影響 OAuth アプリのスコア**今すぐご連絡くださいかどうかは、悪意のあると思われる組織で発見された OAuth アプリケーションをクラウド アプリケーションのセキュリティ チームからのフィードバックを送信できます。この新しい機能を使用すると、セキュリティ コミュニティの一部にして、OAuth アプリケーション リスク ・ スコアと分析を強化できます。詳細については、[アプリケーションのアクセス権の管理](manage-app-permissions-in-ocas.md)を参照してください。
 
