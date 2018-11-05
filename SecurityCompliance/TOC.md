@@ -33,7 +33,8 @@
 ### [DLP のカスタマイズの概要の詳しい説明を見る](https://go.microsoft.com/fwlink/?linkid=852306)
 ### [組み込みの機密情報の種類をカスタマイズする](customize-a-built-in-sensitive-information-type.md)
 ### [カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)
-### [キーワード ディクショナリを作成する](create-a-keyword-dictionary.md)
+### [Office 365 セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+### [キーワード辞書を作成する](create-a-keyword-dictionary.md)
 ### [ドキュメント フィンガープリンティング](document-fingerprinting.md) 
 # データ ガバナンスを管理する        
 ## [データをインポートする](importing-pst-files-to-office-365.md)
@@ -233,7 +234,7 @@
 ## [監査ログで電子情報開示アクティビティを検索する](search-for-ediscovery-activities-in-the-audit-log.md)
 # [セキュリティとコンプライアンスを監視する]()
 ## [通知ポリシー](alert-policies.md)
-### [アクティビティ警告を作成する](create-activity-alerts.md)
+## [アクティビティ警告](create-activity-alerts.md)
 ## [セキュリティ/コンプライアンス センターのスマート レポートとインサイト](reports-and-insights-in-security-and-compliance.md)
 ### [セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する](view-email-security-reports.md)
 #### [チュートリアル - 詳細レポートからインサイトへの移動](from-a-detailed-report-to-an-insight.md)
