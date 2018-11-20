@@ -12,12 +12,12 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
-ms.openlocfilehash: af40426f626920ccd2c247a671a57958044d0388
-ms.sourcegitcommit: 791d23e1c2dea622b6ef77a6e2bde32e1d31a41b
+ms.openlocfilehash: ed61d7995ab4b684f775b58f9fb4cd830222117a
+ms.sourcegitcommit: e5da81dd4c6ca7caa0f884fffff3876e87e2b217
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25999976"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26254554"
 ---
 # <a name="office-365-security-and-compliance"></a>Office 365 のセキュリティとコンプライアンス
 
@@ -133,6 +133,7 @@ ms.locfileid: "25999976"
                     </div>
                     <div class="cardText">
                         <h3>最新情報</h3>
+                        <p><a href="https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library" target="_blank">Office 365 サービスの説明</a></p>
                         <p><a href="https://blogs.technet.microsoft.com/office365security" target="_blank">Office 365 のセキュリティ チームのブログ</a></p>
                         <p><a href="https://www.microsoft.com/msrc" target="_blank">マイクロソフト セキュリティ レスポンス センター</a></p>
                     </div>
