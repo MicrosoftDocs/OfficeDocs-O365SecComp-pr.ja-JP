@@ -3,7 +3,6 @@ title: Office 365 での電子情報開示調査のためにコンプライア�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/6/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: コンプライアンスの境界を使用して、Office 365 組織内で、電子的証拠開示マネージャーが検索できるユーザー コンテンツの場所を制御する論理的な境界を作成します。コンプライアンスの境界を使用して、検索のアクセス許可がどのようなメールボックス、SharePoint サイトを制御する (も呼び出されたコンプライアンス セキュリティ フィルター) をフィルタ リングし、OneDrive アカウントは、特定のユーザーによって検索できます。
-ms.openlocfilehash: 822d228d64d2fd5432db327db98e8d7329c7d939
-ms.sourcegitcommit: c166964fe14eec69139a2d3d9c10d2c40ab33f91
+ms.openlocfilehash: 2bebd29fa7701ba07aae7170142263aeaec5569e
+ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23258635"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26299241"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Office 365 での電子情報開示調査のためにコンプライアンスの境界を設定する
 
@@ -179,9 +178,9 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
     
 - Exchange パブリック フォルダーへのアクセス許可の検索フィルターが適用されません。
 
-## <a name="searching-and-exporting-sharepoint-content-in-multi-geo-environments"></a>検索や、複数地域の環境での SharePoint コンテンツをエクスポートします。
+## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>検索や、複数地域の環境でのコンテンツをエクスポートします。
 
-検索のアクセス許可のフィルターでは、場所にエクスポートするコンテンツのルーティングし、 [SharePoint の複数の地域の環境](https://go.microsoft.com/fwlink/?linkid=860840)での SharePoint サイトおよび OneDrive のアカウントを検索するデータ センターは、制御することもできます。
+検索のアクセス許可のフィルターでは、エクスポート用のコンテンツがルーティングされ、 [SharePoint の複数の地域の環境](https://go.microsoft.com/fwlink/?linkid=860840)での SharePoint サイトおよび OneDrive のアカウントを検索する場合、どのデータ ・ センターを検索できるを制御することもできます。
   
 - 特定のデータ ・ センターから検索結果をエクスポートします。つまり、データ ・ センターの場所から結果をエクスポートする検索を指定することができます。
     
@@ -211,7 +210,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 |IND  <br/> |アジア太平洋地域  <br/> |
 |LAM  <br/> |US  <br/> |
    
- **注:** 検索のアクセス許可のフィルターの領域のパラメーターを指定しない場合は、検索結果を最も近いデータ ・ センターからエクスポートされます。 
+ **注:** 検索のアクセス許可のフィルターの領域のパラメーターを指定しない場合の組織の既定の SharePoint 地域が検索されますし、検索結果は、最も近いデータ ・ センターにエクスポートします。 
   
 使用例をここでは、 **-地域**境界を遵守するための検索許可フィルターを作成するときのパラメーターです。これは、Fourth Coffee の関連会社が北アメリカであることと、Coho Winery が、ヨーロッパにあると仮定します。 
   
@@ -223,7 +222,7 @@ New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users 
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_Department -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL -Region EUR
 ```
    
-検索と SharePoint と OneDrive をエクスポートするときに次のような複数地域の環境でコンテンツを保持します。
+複数地域の環境でコンテンツを検索するときの注意、およびエクスポートするのには、次のことを維持します。
   
 - **領域**パラメーターは、Exchange メールボックスの検索を制御しません。メールボックスを検索すると、すべてのデータ ・ センターが検索されます。どの Exchange のメールボックスを検索できる検索範囲を限定するには、**フィルター**パラメーターを作成または検索のアクセス許可のフィルターを変更するときに使用します。 
     

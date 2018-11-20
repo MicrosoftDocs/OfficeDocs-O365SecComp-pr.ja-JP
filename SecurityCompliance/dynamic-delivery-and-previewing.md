@@ -3,7 +3,7 @@ title: 動的な配信および Office 365 ATP の安全な添付ファイルを
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 10/30/2018
+ms.date: 11/08/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: ATP の安全な添付ファイル ポリシーを設定するときに、メッセージの遅延を回避し、スキャンされている添付ファイルをプレビューするのにはユーザーを有効にする動的な配信を選択します。
-ms.openlocfilehash: b7b5f05170e6f27cbec9e0d5a121b2f71f16f41a
-ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
+ms.openlocfilehash: a272253594dda7ea720bb1e8b59e38e870f2f036
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25850821"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238429"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>動的な配信および Office 365 ATP の安全な添付ファイルをプレビューします。
 
@@ -72,16 +72,3 @@ ms.locfileid: "25850821"
 
 - /Multipurpose をセキュリティで保護されたインターネット メール拡張 ([S/MIME](s-mime-for-message-signing-and-encryption.md)) で暗号化されたメッセージ
     
-## <a name="related-topics"></a>関連項目
-
-[Office 365 Advanced Threat Protection](office-365-atp.md)
-  
-[ATP の安全な添付ファイルを Office 365 で](atp-safe-attachments.md)
-  
-[Office 365 の ATP の安全な添付ファイル ポリシーを設定します](set-up-atp-safe-attachments-policies.md)
-  
-[Office 365 で ATP の安全なリンク](atp-safe-links.md)
-
-[Office 365 のセキュリティのアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)
-  
-

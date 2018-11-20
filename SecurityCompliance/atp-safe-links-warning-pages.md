@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 description: 作業が Office 365 の高度な脅威保護の場合を参照する可能性があります警告ページの概要を取得します。
-ms.openlocfilehash: eae893da6bb2692ae4fb9f934bc892d2058beecd
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: ac7fdcd17ad449afd9107ce67ecc89a107eb152b
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782134"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238269"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 の ATP の安全なリンク警告ページ
 
@@ -107,14 +107,3 @@ URL は、悪意あるコードとして認定されているサイトを指し�
 
 ![エラーが発生しました](media/2f7465a4-1cf4-4c1c-b7d4-3c07e4b795b4.png)
    
-## <a name="related-topics"></a>関連項目
-
-[Office により、フィッシング詐欺から保護する方法](https://support.office.com/article/be0de46a-29cd-4c59-aaaf-136cf177d593)
-  
-[Office 365 の ATP の安全なリンク](atp-safe-links.md)
-  
-[Office 365 ATP の安全な添付ファイル](atp-safe-attachments.md)
-  
-[Office 365 のスパム対策とマルウェア対策の保護](anti-spam-and-anti-malware-protection.md)
-  
-

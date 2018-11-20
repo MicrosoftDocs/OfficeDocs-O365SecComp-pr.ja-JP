@@ -11,12 +11,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: コンテンツの検索ツールに電子的証拠開示を使用して、Office 365 のセキュリティで&amp;の SharePoint サイトおよび OneDrive の場所、およびインスタント メッセージのビジネス用の Skype での会話でドキュメントを Exchange のメールボックスに電子メールをすばやく検索するコンプライアンス センターです。
-ms.openlocfilehash: d7ccdd8e501e38b67cc00ec457622080d6c58001
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 96a30bfe7b7cc5a1398cafa66577f0b7dc681d23
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038230"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238399"
 ---
 # <a name="search-for-content-in-office-365"></a>Office 365 でコンテンツを検索します。
 
@@ -42,6 +42,8 @@ ms.locfileid: "25038230"
     
 - クエリ[を一括編集](bulk-edit-content-searches.md)し、複数の検索用のコンテンツの場所 
     
+- [保持の Bcc 受信者](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members)に検索できるように 
+
 ## <a name="perform-actions-on-content-you-find"></a>検索するコンテンツに対してアクションを実行します。
 
 検索を実行し、必要に応じてそれを改良すると、次のステップ、何か、検索によって返される結果とします。エクスポートし、ローカル コンピューターまたは組織の電子メールの攻撃の場合は、結果をダウンロードできますが、ユーザーのメールボックスからの検索結果を削除することができます。

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: Office 365 の高度な脅威保護を使用して、組織のブロックされた Url の一覧を設定する方法の詳細については、この資料を参照してください。ブロックされた Url は、電子メール メッセージと、ATP の安全なリンク ポリシーに基づき、Office ドキュメントに適用されます。
-ms.openlocfilehash: 0429546e521bf3f6b7144342ab0997e924c2f616
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 1f7a991b9ab8f3a9f16616379cfb6c4c3c546260
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454364"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238369"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Office 365 の ATP の安全なリンクを使用してカスタムのブロックされた Url リストを設定します。
 
@@ -64,17 +64,5 @@ ms.locfileid: "25454364"
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>組織で特定のユーザーに対して例外を定義する方法
 
 特定のグループが他のユーザーがブロックされている Url を表示できるようにする場合は、特定の受信者に適用される分析ツールの安全なリンクのポリシーを指定できます。[ATP の安全なリンクを使用してカスタム」を書き換えない"Url リストを設定](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)を参照してください。
-  
-## <a name="related-topics"></a>関連項目
-
-[Office 365 Advanced Threat Protection](office-365-atp.md)
-  
-[Office 365 で ATP の安全なリンク](atp-safe-links.md)
-  
-[Office 365 の ATP の安全なリンクのポリシーを設定します](set-up-atp-safe-links-policies.md)
-  
-[ATP の安全な添付ファイルを Office 365 で](atp-safe-attachments.md)
-
-[Office 365 のセキュリティのアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)
   
 

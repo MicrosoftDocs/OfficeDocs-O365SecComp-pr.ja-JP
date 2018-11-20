@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Office 365 では、暗号化に関する技術的な詳細を表示します。
-ms.openlocfilehash: d86692119f7558d74e2083165b4eb6ab4a07da70
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 69365b66479ab89a9c036fe489b4087d327460eb
+ms.sourcegitcommit: e4ebef6aaf756eefb86c9f3a602cf75f5d344271
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532552"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026524"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>Office 365 の暗号化についてのテクニカル リファレンスの詳細
 
@@ -52,7 +52,11 @@ Microsoft は独自の証明書を使用するため、お客様が Office 365 �
 ## <a name="deprecating-support-for-tls-10-and-11-and-what-this-means-for-you"></a>TLS 1.0 および 1.1 であり、これが意味するのためのサポートを非推奨
 <a name="TLS11and12deprecation"> </a>
 
-重要な変更は、Office 365 のサポートされている暗号化オプションに聞こえます。2018 年 10 月 31日現在 Office 365 サポートしなくなります TLS 1.0 または 1.1 を使用して Office 365 への通信です。Office 365 では、これらのプロトコルのサポートを deprecates、Office 365 のサーバーとの間のすべての通信は、TLS 1.2 を使用する必要があります。この影響する方法については、 [Office 365 の TLS 1.2 の使用義務の準備](https://support.microsoft.com/en-us/help/4057306/preparing-for-tls-1-2-in-office-365)を参照してください。サーバーおよび O365 との通信は、この日付以降後のクライアントは、TLS 1.2 をサポートしなければなりません。
+現在 2018 年 10 月 31日 TLS 1.0 および 1.1 Office 365 はサポートしません。これは、Microsoft クライアント、デバイス、または TLS 1.0 および 1.1 を使用して Office 365 に接続するサービスである、新たな問題は解決しないことを意味します。
+
+Office 365 は、TLS 1.0 と 1.1 の接続をブロックはこれといって注意してください。無効にするか、お客様の接続に TLS サービスで TLS 1.0 および 1.1 を削除するための正式な日付がありません。最終的な廃止日は、お客様の遠隔測定によって決定され、未知です。意思決定が行われると、あるお知らせ 6 か月前に既知の侵害の認識となることがない限りは、機能、サービスを使用しているお客様を保護するために 6 ヶ月以内に必要な場合。
+
+すべてのクライアントとサーバーとブラウザーとサーバーの組み合わせが Office 365 サービスに、接続を維持するために TLS 1.2 (またはそれ以降のバージョン) を使用することを確認する必要があります。特定のクライアントとサーバーとブラウザーとサーバーの組み合わせを更新する必要があります。この影響する方法については、 [Office 365 の TLS 1.2 の使用義務の準備](https://support.microsoft.com/en-us/help/4057306/preparing-for-tls-1-2-in-office-365)を参照してください。
   
 ## <a name="deprecating-support-for-3des"></a>3 des のサポートを非推奨
 <a name="TLS11and12deprecation"> </a>

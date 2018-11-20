@@ -1,9 +1,10 @@
 ---
-title: SharePoint、OneDrive、Microsoft Teams 用の Microsoft Office 365 ATP
+title: SharePoint、OneDrive、Microsoft Teams 用の Office 365 ATP
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
+ms.date: 11/08/2018
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,20 +13,20 @@ search.appverid:
 - MOE150
 ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 description: SharePoint Online で、組織の安全なコラボレーションを有効にするには、ビジネス、およびマイクロソフトのチームの OneDrive 内のファイルには、Office 365 の高度な脅威保護を拡張します。
-ms.openlocfilehash: ff07d88a150d3f059681556feec9a5e89b5875a8
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 6891184b49aa4ea03d5c13672ac9b95fc9e6d162
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454324"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238449"
 ---
-# <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の Microsoft Office 365 ATP
+# <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の Office 365 ATP
 
 ## <a name="overview-of-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、およびマイクロソフトのチームの分析ツールを Office 365 の概要
 
 人が定期的にファイルを共有し、SharePoint、OneDrive、およびマイクロソフトのチームを使用して共同作業を行います。[Office 365 の高度な脅威保護](office-365-atp.md)(ATP) のより安全な方法で共同作業を行う組織です。分析ツールは、検出し、チーム サイトおよびドキュメント ライブラリで悪意あるコードとして指定されているファイルをブロックすることができます。  
   
-### <a name="how-it-works"></a>しくみ
+## <a name="how-it-works"></a>しくみ
 
 SharePoint Online でのファイル、ビジネス、およびマイクロソフトのチームの OneDrive 確認された、悪意のある、分析ツールは、そのファイルをロックするのにはファイル ストアに直接統合されます。次の図は、ライブラリで検出された悪意のあるファイルの例を示します。
   
@@ -41,7 +42,7 @@ Office 365 の構成方法によってユーザーには、ブロックされた
   
 詳細については、 [SharePoint、OneDrive、およびマイクロソフトのチームの Office 365 の分析ツールを有効にする](turn-on-atp-for-spo-odb-and-teams.md)を参照してください。
   
-### <a name="keep-the-following-points-in-mind"></a>次の点に留意します。
+## <a name="keep-these-points-in-mind"></a>これらの点に留意してください。
 
 - 分析ツールでは、ビジネス、またはマイクロソフトのチームの SharePoint のオンライン、OneDrive では、すべてのファイルはスキャンしません。これは仕様です。スマート ヒューリスティックおよび脅威の信号と共有し、ゲストのアクティビティのイベントを使用して、悪意のあるファイルを特定するプロセスを非同期的にファイルがスキャンされます。
 
@@ -69,16 +70,7 @@ SharePoint Online でのファイル、ビジネス、またはマイクロソ�
     
 ## <a name="next-steps"></a>次の手順
 
-- [SharePoint、OneDrive、およびマイクロソフトのチームに対して Office 365 の分析ツールを有効に](turn-on-atp-for-spo-odb-and-teams.md)
+1. [SharePoint、OneDrive、およびマイクロソフトのチームに対して Office 365 の分析ツールを有効に](turn-on-atp-for-spo-odb-and-teams.md)
     
-- [SharePoint、OneDrive、またはマイクロソフトのチームで検出された、悪意のあるファイルに関する情報を表示](malicious-files-detected-in-spo-odb-or-teams.md)
+2. [SharePoint、OneDrive、またはマイクロソフトのチームで検出された、悪意のあるファイルに関する情報を表示](malicious-files-detected-in-spo-odb-or-teams.md)
     
-## <a name="related-topics"></a>関連項目
-
-[Office 365 Advanced Threat Protection](office-365-atp.md)
-  
-[Office 365 の高度な脅威保護のレポートを表示します。](view-reports-for-atp.md)
-  
-[Office 365 のセキュリティのアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)
-  
-

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: 電子メールに悪意のあるファイルから組織を保護するために安全な添付ファイル ポリシーを定義します。
-ms.openlocfilehash: 1fd831adf5166223ba5df159a131c71e3b467233
-ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
+ms.openlocfilehash: 84625cc688be4b6aa98674563b5c6c30b1b35598
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25850841"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238409"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Office 365 ATP の安全な添付ファイル ポリシーを設定します
 
@@ -82,18 +82,9 @@ ATP の安全な添付ファイル ポリシーを設定する場合とは、モ
 |**動的な配信** <br/> |すぐにメッセージを配信します。  <br/> スキャンが完了し、添付ファイルがマルウェアが検出されない場合に再接続されるまで、プレース ホルダー ファイルで添付ファイルを置き換えます  <br/> ほとんどの Pdf や Office の機能をプレビューする添付ファイルを含むファイルをスキャン中に  <br/> 検疫は、セキュリティ管理者またはアナリストことができますを確認し、リリース (または削除) これらのメッセージに検出されたマルウェアにメッセージを送信します。  <br/> [動的な配信および ATP の安全な添付ファイルのプレビューについてください。](dynamic-delivery-and-previewing.md) <br/> |メッセージの遅延を避けるため、悪意のあるファイルから受信者を保護しながら  <br/> スキャンの実行中に、セーフ モードで添付ファイルをプレビューするのには受信者を有効にします。  <br/> |
 |**リダイレクトを有効にします。** <br/> |モニター、ブロック、または置換オプションを選択した場合に適用されます。  <br/> 指定された電子メール アドレスに添付ファイルの送信、セキュリティ管理者またはアナリストを調べることができます。  <br/> |不審な添付ファイルを調査するには、セキュリティ管理者やアナリストを有効にします。  <br/> |
    
-## <a name="related-topics"></a>関連項目
+## <a name="next-steps"></a>次の手順
 
-[Office 365 Advanced Threat Protection](office-365-atp.md)
-  
-[ATP の安全な添付ファイルを Office 365 で](atp-safe-attachments.md)
-  
-[Office 365 で ATP の安全なリンク](atp-safe-links.md)
-  
-[Office 365 の ATP の安全なリンクのポリシーを設定します](set-up-atp-safe-links-policies.md)
-  
-[脅威の高度な保護のためのレポートを表示します。](view-reports-for-atp.md)
-
-[Office 365 のセキュリティのアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)
-  
-
+ATP の安全な添付ファイル ポリシーがあると、レポートを表示することによって、組織の分析ツールが動作して方法を確認できます。詳細については、次のリソースを参照してください。
+- [Office 365 の高度な脅威保護のためのレポートを表示します。](view-reports-for-atp.md)
+- [エクスプ ローラーを使用して、セキュリティで&amp;コンプライアンス センター](use-explorer-in-security-and-compliance.md)
+ 

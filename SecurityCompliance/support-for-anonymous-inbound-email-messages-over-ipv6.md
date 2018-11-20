@@ -3,7 +3,7 @@ title: IPv6 経由の匿名受信電子メール メッセージのサポート
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/4/2017
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,17 +12,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
-description: Exchange オンライン保護 (EOP) および Exchange Online は、トランスポート層セキュリティ (TLS) 経由でメッセージを送信しないユーザーの送信者からの IPv6 通信経由の匿名の受信電子メール メッセージの受信をサポートします。ことができますオプトイン UNRESOLVED_TOKEN_VAL(exMCSS) から Office 365 の管理センターを開くことでこの機能を要求することによって、IPv6 経由でメッセージを受信するhttps://portal.office.com/adminportal/home、サポートをクリックし、新しいサービス要求) します。しないに IPv6 の場合、IPv4 経由でメッセージを受信する続行するでしょう。
-ms.openlocfilehash: 93575c57bb6eac5e0f92066dab3e6ed8b5f4b215
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+description: IPv6 のソースからの匿名のメッセージを Exchange のオンライン保護と Exchange のオンラインのサポートを構成する方法について説明します。
+ms.openlocfilehash: 0d324ce6e0ff0ff9104ef597176b09a5a319abc7
+ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003016"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "26255812"
 ---
 # <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>IPv6 経由の匿名受信電子メール メッセージのサポート
 
-Exchange Online Protection (EOP) および Exchange Online は、トランスポート層セキュリティ (TLS) 経由でメッセージを送信しない送信者からの IPv6 通信経由の匿名受信電子メール メッセージの受信をサポートしています。UNRESOLVED_TOKEN_VAL(exMCSS) にこの機能を要求する ([https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home) の Office 365 管理センター を開き、 **[サポート]** をクリックし、 **[新しいサービス リクエスト]** をクリックする) ことによって、IPv6 経由でメッセージを受信するためにオプトインすることができます。IPv6 にオプトインしない場合は、引き続き、IPv4 経由でメッセージを受信することになります。
+Exchange オンライン保護 (EOP) および Exchange Online は、トランスポート層セキュリティ (TLS) 経由でメッセージを送信しないユーザーの送信者からの IPv6 通信経由の匿名の受信電子メール メッセージの受信をサポートします。ことができますオプトイン IPv6 経由でマイクロソフトのサポートから Office 365 の管理センターを開くことでこの機能を要求することによってメッセージを受信する[https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home)、**サポート**をクリックし、**新しいサービス要求**) します。しないに IPv6 の場合、IPv4 経由でメッセージを受信する続行するでしょう。
   
 IPv6 経由でメッセージをサービスに送信する送信者は、次の 2 つの要件を満たす必要があります。
   

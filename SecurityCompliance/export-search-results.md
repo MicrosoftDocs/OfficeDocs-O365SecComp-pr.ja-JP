@@ -1,9 +1,9 @@
 ---
-title: Office 365 のセキュリティ コンテンツの検索結果をエクスポートする&amp;コンプライアンス センター
+title: Office 365 のセキュリティとコンプライアンスのセンターからのコンテンツの検索結果をエクスポートします。
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Office 365 のセキュリティ コンテンツの検索から検索結果をエクスポートする&amp;コンプライアンス センターをローカル コンピューターにします。Emaill メールの結果は、PST ファイルとしてエクスポートされます。ビジネス サイトは、ネイティブの Office ドキュメントとしてエクスポートするには、SharePoint と OneDrive のコンテンツです。 '
-ms.openlocfilehash: 739d2c162dac938d593e0b65ebca3bf2101ec469
-ms.sourcegitcommit: 87a3ca55b6e9cf7e9ccf73e64013dc78dd7660f5
+ms.openlocfilehash: 35fb0aa8a037fc77020269d1b42d738dd801ea0a
+ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "25494068"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26539119"
 ---
-# <a name="export-content-search-results-from-the-office-365-security-amp-compliance-center"></a>Office 365 のセキュリティ コンテンツの検索結果をエクスポートする&amp;コンプライアンス センター
+# <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Office 365 のセキュリティとコンプライアンスのセンターからのコンテンツの検索結果をエクスポートします。
 
 コンテンツの検索が正常に実行すると、検索結果をローカル コンピューターにエクスポートできます。メールの結果をエクスポートする場合は、PST ファイルとしてコンピューターにダウンロードしています。SharePoint および OneDrive からビジネス サイトのコンテンツをエクスポートする場合は、ネイティブの Office ドキュメントのコピーがエクスポートされます。追加のドキュメントおよびエクスポートした検索結果に含まれているレポートがあります。
   
@@ -46,7 +46,7 @@ ms.locfileid: "25494068"
     
      - Microsoft Edge
     
-        OR
+        または
     
      - Microsoft インターネット エクスプ ローラー 10 およびそれ以降のバージョン
     
@@ -85,7 +85,7 @@ ms.locfileid: "25494068"
   
 1. [https://protection.office.com](https://protection.office.com) に移動します。
     
-2. 職場、学校のアカウントを使用して Office 365 にサインインします。
+2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
     
 3. セキュリティ/コンプライアンス センターの左側のウィンドウで、**[検索と調査]** \> **[コンテンツ検索]** の順にクリックします。
     
@@ -174,23 +174,22 @@ ms.locfileid: "25494068"
 
   
 ## <a name="more-information"></a>詳細情報
-<a name="moreinfo"> </a>
 
 検索結果のエクスポートの詳細については、ここで。
   
-[エクスポートの制限](export-search-results.md#export-limits)
+[エクスポートの制限](#export-limits)
   
-[レポートをエクスポート](export-search-results.md#export-reports)
+[レポートをエクスポート](#export-reports)
   
 [部分的にインデックス付きのアイテムをエクスポートします。](#exporting-partially-indexed-items)
+
+[個々 のメッセージまたは PST ファイルをエクスポートします。](#exporting-individual-messages-or-pst-files)
   
-[個々 のメッセージまたは PST ファイルをエクスポートします。](export-search-results.md#Exporting-individual-messages-or-PST-files)
+[RMS で暗号化されたメッセージを復号化](#decrypting-rms-encrypted-messages)
+
+[エクスポートされたアイテムのファイル名](#filenames-of-exported-items)  
   
-[RMS で暗号化されたメッセージを復号化](export-search-results.md#Decrypting-RMS-encrypted-messages)
-  
-[エクスポートされたアイテムのファイル名](export-search-results.md#Filenames-of-exported-items)
-  
-[その他](export-search-results.md#miscellaneous)
+[その他](#miscellaneous)
   
  ### <a name="export-limits"></a>エクスポートの制限
   
@@ -206,7 +205,7 @@ ms.locfileid: "25494068"
     
   - コンテンツの検索レポートをエクスポートするエクスポートの制限のいずれかに対しては入りません。 
     
-- 述べたように、メールボックス、およびサイトからの検索結果は、Azure ストレージの場所にアップロードされます (で説明するよう[手順 1: 準備の検索結果のエクスポート](export-search-results.md#step1)) 1 時間あたり最大 2 GB の速度で。
+- 述べたように、メールボックス、およびサイトからの検索結果は、Azure ストレージの場所にアップロードされます (で説明するよう[手順 1: 準備の検索結果のエクスポート](#step-1-prepare-search-results-for-export)) 1 時間あたり最大 2 GB の速度で。
     
 - エクスポート可能な PST ファイルの最大サイズは、既定で 10 GB です。メールボックスの検索結果を 2 つ (以上) の別の PST ファイルにエクスポートするユーザーのメールボックスの検索結果が 10 GB より大きい場合は、ことを意味します。さらに、1 つの PST ファイル内のすべての検索結果をエクスポートする場合は、PST ファイルがあります spilt 追加の PST ファイルに検索結果の合計サイズが 10 GB より大きい場合。この既定のサイズを変更する場合は、検索結果のエクスポートに使用するコンピューターの Windows レジストリを編集できます。[電子的証拠開示検索結果をエクスポートするときに、PST ファイルのサイズを変更](change-the-size-of-pst-files-when-exporting-results.md)を参照してください。
     

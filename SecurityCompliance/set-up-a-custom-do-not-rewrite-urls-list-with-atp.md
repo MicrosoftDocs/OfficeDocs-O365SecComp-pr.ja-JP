@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: ATP の安全なリンク ・ ポリシーを設定するときは、do not 書き換えを含めることができます ' 人、組織内のリストに含まれるサイトへのアクセスを有効にする Url の一覧です。
-ms.openlocfilehash: 3ce783a3f783889bdc59ad8d412c80a79e7dd914
-ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
+ms.openlocfilehash: c954c12785659f9c025046bf3773cfec2d5dd5f9
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "25353263"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238389"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Office 365 の ATP の安全なリンクを使用してユーザー設定の再書き込みしない操作を行います Url のリストを設定します
 
@@ -66,20 +66,4 @@ ATP の安全なリンクの保護は、組織のブロックされた Url] ボ�
 |`http://contoso.com/a`  <br/> |ようなサイトにアクセスするのには特定の受信者では、 `http://contoso.com/a`、サブパスではないようですが、`http://contoso.com/a/b`  <br/> |
 |`http://contoso.com/a*`  <br/> |ようなサイトにアクセスするのには特定の受信者では、`http://contoso.com/a`のサブパスを含めると`http://contoso.com/a/b`  <br/> |
    
-  
-
-## <a name="related-topics"></a>関連項目
-
-[Office 365 Advanced Threat Protection](office-365-atp.md)
-  
-[Office 365 で ATP の安全なリンク](atp-safe-links.md)
-  
-[Office 365 の ATP の安全なリンクのポリシーを設定します](set-up-atp-safe-links-policies.md)
-  
-[ATP の安全なリンクを使用してカスタムのブロックされた Url リストを設定します。](set-up-a-custom-blocked-urls-list-wtih-atp.md)
-
-[Office 365 の高度な脅威保護のためのレポートを表示します。](view-reports-for-atp.md)
-
-[Office 365 のセキュリティのアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)
-  
-
+ 

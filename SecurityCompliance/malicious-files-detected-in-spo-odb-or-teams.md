@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 description: SharePoint、OneDrive、またはチームで検出された、悪意のあるファイルに関する情報を表示する場所とそれらのファイルに対してアクションを実行する方法について説明します。
-ms.openlocfilehash: 37cd721c9ec2608ddcd74f9ae1ed6991b5f0cea7
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: ba1dc3551e66800213a9cb988ebe9fc5e03e31f2
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552385"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238509"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>SharePoint、OneDrive、またはマイクロソフトのチームで検出された、悪意のあるファイルに関する情報を表示
 
@@ -59,14 +59,5 @@ ms.locfileid: "25552385"
     
 5. 選択したアイテムの詳細を閉じるに**閉じる**を選択します。 
   
-## <a name="related-topics"></a>関連項目
-
-[Office 365 Advanced Threat Protection](office-365-atp.md)
-  
-[Office 365 の高度な脅威保護のレポートを表示します。](view-reports-for-atp.md)
-  
-[Office 365 のセキュリティのアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)
-
-[Office 365 の管理者として検疫されたメッセージやファイルを管理します。](manage-quarantined-messages-and-files.md)
   
 

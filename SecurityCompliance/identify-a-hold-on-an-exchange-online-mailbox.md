@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Office 365 のメールボックスに配置できる保留中のさまざまな種類を識別する方法を説明します。保留のこれらの種類には、証拠保全、電子的証拠開示の保留、および Office 365 のリテンション ・ ポリシーが含まれます。ユーザーが組織全体の保持ポリシーから除外されているかどうかを確認することも
-ms.openlocfilehash: 821ec2a8be9ecd89a13ad9ad0378bc6e24fcee1e
-ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
+ms.openlocfilehash: 1572b34d3f9abef2fb922fc9b01d1f5a27fcdf7b
+ms.sourcegitcommit: e4ebef6aaf756eefb86c9f3a602cf75f5d344271
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25577076"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026514"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Exchange Online メールボックスに適用されている保留の種類を特定する方法
 
@@ -39,7 +39,7 @@ Office 365 には、いくつかの組織が完全に削除されるからメー
 
     - **組織全体の保存ポリシー** - これらは、組織内のすべてのコンテンツの場所に割り当てられているポリシーです。Exchange オンライン PowerShell で組織全体の保存ポリシーに関する情報を取得するのに**Get OrganizationConfig**コマンドレットを使用するとします。詳細については、 [Office 365 の概要の保存ポリシー](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)で「組織全体または特定の場所に保持ポリシーを適用する」セクションを参照してください。
 
-- 訴訟で、メールボックスが置かれた場合と同様のメールボックスの**office 365 のラベル**をユーザーが*任意*のフォルダーまたは自分のメールボックスでは、保留リストにアイテムを (1 つのコンテンツを保持または保持し、コンテンツを削除し、構成されている)、Office 365 のラベルを適用する場合が配置されます。Office 365 のリテンション ・ ポリシーに割り当てられているか。詳細については、この資料の[特定のメールボックス フォルダーまたはアイテムにラベルが適用されているためにの保持](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item)」を参照してください。
+- **保存期間のラベルを office 365**のユーザーは、フォルダー *、* または自分のメールボックスでは、保留リストにアイテムを (1 つのコンテンツを保持または保持し、コンテンツを削除し、構成されている)、Office 365 の保存のラベルを適用する場合は、場合と同様、メールボックスがメールボックスに配置されます。証拠保全に配置または Office 365 のリテンション ・ ポリシーに割り当てられています。詳細については、この資料の[特定のメールボックス フォルダーまたはアイテムに保存期間のラベルが適用されているためにの保持](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item)」を参照してください。
 
 保留中のメールボックスを管理するには、保留中の変更、一時的または恒久的に、保留リストを削除するまたは Office 365 のリテンション ・ ポリシーからメールボックスを除外するなどのタスクを実行できるように、メールボックスに配置されている保留リストの種類を識別する必要があります。これらの場合、最初に、メールボックスに配置する保留リストの種類を識別します。複数の保留などさまざまな種類の保留の 1 つのメールボックスを配置するためすべての保留が削除または変更するそれらを保持する場合、メールボックスの配置を特定する必要があります。
 
@@ -154,9 +154,9 @@ Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name,SourceMailboxes
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
 ```
 
-## <a name="identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item"></a>上のメールボックスを識別するラベルは、フォルダーまたはアイテムに適用されていますのでを保持します。
+## <a name="identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item"></a>上の特定のメールボックス フォルダーまたはアイテムに保存期間のラベルが適用されているためにの保持します。
 
-ユーザーが構成されているコンテンツを保持または保持し、任意のフォルダーまたはメールボックス内のアイテムにコンテンツを削除するラベルを適用するたびに、 *ComplianceTagHoldApplied*のメールボックスのプロパティが**True**に設定します。このような場合、メールボックスは、保留中の場合と同様に証拠保全がまたは Office 365 のリテンション ・ ポリシーに割り当てられていると見なされます。*ComplianceTagHoldApplied*プロパティを**True**に設定すると、次の項目が表示される場合があります。
+ユーザーがコンテンツを保持または保持のフォルダーまたはメールボックス内のアイテムのコンテンツを削除し、構成されている保存期間のラベルを適用するたびに、 *ComplianceTagHoldApplied*のメールボックスのプロパティが**True**に設定します。このような場合、メールボックスは、保留中の場合と同様に証拠保全がまたは Office 365 のリテンション ・ ポリシーに割り当てられていると見なされます。*ComplianceTagHoldApplied*プロパティを**True**に設定すると、次の項目が表示される場合があります。
 
 - メールボックスまたはユーザーの Office 365 のユーザー アカウントを削除すると、メールボックス、[メールボックスを非アクティブ](inactive-mailboxes-in-office-365.md)になります。
 - (プライマリ メールボックスまたはアーカイブ メールボックスを有効になっている場合) のメールボックスを無効にすることはできません。
@@ -168,7 +168,7 @@ Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -Distribution
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-ラベルの詳細については、 [Office 365 の概要のラベル](labels.md)を参照してください。
+保存ラベルの詳細については、 [Office 365 の概要の保存期間のラベル](labels.md)を参照してください。
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>遅延を管理するメールボックスを保持します。
 
@@ -196,7 +196,7 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 > [!TIP]
 > 前のコマンドで、アクティブでないメールボックスを指定する最良の方法では、その識別名、または Exchange の GUID 値を使用します。これらの値のいずれかの方法とは、誤って正しくないメールボックスを指定することを防止できます。 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 メールボックスに適用される保留リストを識別した後、非アクティブなメールボックスのポリシーから除外、一時的に、保留リストの期間の変更など、保留リストを完全に削除、または Office 365 のリテンション ・ ポリシーの場合にタスクを実行できます。保留リストに関連するタスクを実行する方法の詳細については、次のトピックのいずれかを参照してください。
 

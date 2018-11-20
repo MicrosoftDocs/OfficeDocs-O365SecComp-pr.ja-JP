@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: ユーザーが Office 365 のセキュリティのアクセス許可を割り当てる必要があります&amp;コンプライアンス ・ センターのセキュリティやコンプライアンスの機能のいずれかを管理することができます。
-ms.openlocfilehash: e0c8b655b1b3300e4ffa9aba1d94e65a9ef26121
-ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
+ms.openlocfilehash: 976c4e21351e352672f3075d0f713e63a634ce42
+ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25450742"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26539109"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>ユーザーに Office 365 のセキュリティのアクセス権を与える&amp;コンプライアンス センター
 
@@ -29,7 +29,7 @@ ms.locfileid: "25450742"
   
 セキュリティでユーザーに与えることができます別のアクセス許可の詳細については&amp;コンプライアンス センターでは、チェック アウト[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)。
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - Office 365 のグローバル管理者、またはセキュリティの OrganizationManagement の役割グループのメンバーである必要があります&amp;コンプライアンス センターは、この資料の手順を完了します。
     
@@ -63,7 +63,7 @@ ms.locfileid: "25450742"
     
 ## <a name="use-powershell-to-give-another-user-access-to-the-security-amp-compliance-center"></a>PowerShell を使用してセキュリティを保護する別のユーザーのアクセス権を与える&amp;コンプライアンス センター
 
-1. [Office 365 のセキュリティへの接続&amp;リモート PowerShell を使用してコンプライアンス センター](https://go.microsoft.com/fwlink/p/?LinkID=627084)です。
+1. [Office 365 のセキュリティとコンプライアンス センター PowerShell に接続](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)します。
     
 2. 次の例で示すように、**Add-RoleGroupMember** コマンドを使用して、ユーザーを Organization Management の役割に追加できます。 
     

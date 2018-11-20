@@ -3,7 +3,7 @@ title: Office 365 Advanced Threat Protection
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 10/09/2018
+ms.date: 11/08/2018
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,14 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 description: 高度な脅威保護 office 365 にはには、なりすましのインテリジェンス、安全なリンク、安全な添付ファイル、および高度なフィッシング対策機能が含まれています。脅威の高度な保護も拡張されている SharePoint のオンライン、OneDrive 内のファイルにビジネス、およびマイクロソフトのチームです。
-ms.openlocfilehash: def22368f8bc219ebceda797dd04b234bc3c4435
-ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
+ms.openlocfilehash: 1e6a2dc16bf5fb8dbf1b242a3495d8fb87cfda1c
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25850831"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238479"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
+
+## <a name="overview"></a>概要
 
 Office 365 の高度な脅威保護 (ATP) は、悪意のある攻撃から組織を保護するために役立ちます。
   
@@ -35,11 +37,28 @@ Office 365 の高度な脅威保護 (ATP) は、悪意のある攻撃から組�
 - 他のユーザーと[Office 365 の ATP のフィッシング対策機能](atp-anti-phishing.md)を持つ、組織のカスタム ドメインを偽装しようとするときを検出します。
     
 **Office 365 の ATP による保護は、安全なリンク、安全な添付ファイル、およびフィッシング詐欺対策のため、組織のセキュリティ チームを定義するポリシーによって決定されます**。定期的に確認し、最新の状態にし、サービスに追加される新しい機能の利点を利用規約を修正するに重要です。[レポートは、使用](view-reports-for-atp.md)は、組織の分析ツールを使用する方法を表示します。これらのレポートも表示できます領域を確認し、ポリシーを更新する必要があります。.、マルウェアをすべき、またはファイルかを確認するのにはマイクロソフトとマークされているファイルがあれば、[分析のためのマイクロソフトにファイルを送信](#submit-a-suspicious-file-to-microsoft-for-analysis)することができます。
+
+## <a name="new-features-are-continually-being-added-to-atp"></a>ATP に新機能が追加されているが継続的に
+
+Office 365 に新しい機能を追加するのには継続していて、分析ツールが含まれています。ATP のポリシーを確認および更新するための呼び出しのいくつかの新機能の一覧を次に示します。ATP (または一般的な Microsoft 365) に導入された新機能に関する詳細については、[マイクロソフトの 365 のロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)を参照してください。
+  
+- 遅延 2017年 10 月以降では、ATP の安全なリンクの保護に適用する Url の Url と同様に電子メールで Word、Excel、PowerPoint、および Visio など、Office 365 用リソースのドキュメントのウィンドウ、および Office に iOS および Android デバイス上のアプリ拡張されます。( [Office の最新の認証](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)を使用することを確認してください。)
+    
+- 2018年 3 月で以降では、ATP の安全なリンクの保護は、組織内のユーザー間で送信される電子メールに適用する拡張されます。(を必ず[確認](set-up-atp-safe-links-policies.md)し、ATP の安全なリンク ポリシーを編集します。
+
+- 遅延月 2018、セキュリティの[検査](quarantine-email-messages.md)機能に&amp;コンプライアンス センターは、 [SharePoint Online をビジネス、およびマイクロソフトのチームの OneDrive の分析ツール](atp-for-spo-odb-and-teams.md)を拡張します。
+ 
+- 2018 の後半以降では、ATP の安全なリンクの保護を拡張 (オンラインの Word、Excel のオンライン、PowerPoint オンラインでは、および OneNote オンライン) オンライン Office および Office 365 用リソース mac 上での Url に適用するには(を必ず[確認](set-up-atp-safe-links-policies.md)し、ATP の安全なリンク ポリシーを編集します。
+
+- 先頭 2018年 9 月で、[警告のページを Office 365 の分析ツール](atp-safe-links-warning-pages.md)の機能、新しい配色パターン、詳細についてとにもかかわらず、サイトを続行することには、警告と推奨事項が与えられます。 
+ 
+- 2018年 10 月年と、今後数か月にロールアウト、Outlook Web アプリケーション (OWA) を使用している人または、次の ATP の安全なリンク元の Url が表示されない場合は、Url を書き換えます。(このネイティブのリンクの表示/非表示を呼び出して) します。
+
       
 ## <a name="get-office-365-atp"></a>Office 365 の ATP を取得します。
 
 > [!IMPORTANT]
-> Office 365 の分析ツールは、Microsoft 365 エンタープライズ、Office 365 エンタープライズ E5、Office 365 の教育 A5、および[Microsoft 365 ビジネス](https://support.office.com/article/c123694a-1efb-459e-a8d5-2187975373dc)など、サブスクリプションに含まれます。組織が Office 365 の分析ツールが含まれていない Office 365 のサブスクリプションの場合は、アドオンとして可能性のある ATP を購入できます。詳細については、 [Office 365 高度な脅威保護サービスの説明](https://technet.microsoft.com/library/exchange-online-advanced-threat-protection-service-description.aspx)を参照してください。 
+> Office 365 の分析ツールは、Microsoft 365 エンタープライズ、Office 365 エンタープライズ E5、Office 365 の教育 A5、および[Microsoft 365 ビジネス](https://docs.microsoft.com/en-us/microsoft-365/business/security-features)など、サブスクリプションに含まれます。組織が Office 365 の分析ツールが含まれていない Office 365 のサブスクリプションの場合は、アドオンとして可能性のある ATP を購入できます。詳細については、 [Office 365 高度な脅威保護サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)を参照してください。 
 
 1. グローバルまたはセキュリティ管理者には、[https://portal.office.com](https://portal.office.com)と Office 365 は、職場または学校のアカウントでサインインします。 
     
@@ -81,11 +100,5 @@ ATP のポリシーがあると後、は、サービスの操作方法を表示�
 - マルウェアである可能性があります疑いがあるファイルを取得する場合は、分析のためにマイクロソフトは、そのファイルを送信できます。[Windows Defender のセキュリティ情報発信のポータル](https://go.microsoft.com/fwlink/?linkid=857185)にアクセスしてください。
 
 - 分析のためにマイクロソフトに送信する電子メール メッセージ (添付ファイルの有無にかかわらず) を取得する場合[レポート メッセージのアドインを](enable-the-report-message-add-in.md)使用します。 
-  
-## <a name="related-topics"></a>関連項目
-
-[脅威の高度な保護のためのレポートを表示します。](view-reports-for-atp.md)
-  
-[Threat management in the Office 365 Security &amp; Compliance Center](threat-management.md)
   
 
