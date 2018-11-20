@@ -21,6 +21,7 @@
 ### [DLP の推奨ポリシーの概要](get-started-with-dlp-policy-recommendations.md)
 ### [DLP の既定ポリシーの概要](get-started-with-the-default-dlp-policy.md)
 ### [テンプレートから DLP ポリシーを作成する](create-a-dlp-policy-from-a-template.md)
+### [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 ### [DLP ポリシーで通知とポリシー ヒントを使用する](use-notifications-and-policy-tips.md)
 ### [DLP ポリシー テンプレートに含まれるもの](what-the-dlp-policy-templates-include.md)
 ### [FCI または他のプロパティが使用されているドキュメントを保護する DLP ポリシーを作成する](protect-documents-that-have-fci-or-other-properties.md)
