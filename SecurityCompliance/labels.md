@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Office 365 の保持ラベルは、適切なコンテンツで適切な操作を実行するために役立ちます。保持ラベルを使用すると、ガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制できます。保持ラベルは、Office 365 全体のレコード管理の実装に使用することもできます。
-ms.openlocfilehash: f172a723dad3cd555dd910458d27ec1bf7926d0f
-ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
+ms.openlocfilehash: d957fc251aa4591d273a65d0a85ecde0df0845c9
+ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "25698043"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26299251"
 ---
 # <a name="overview-of-retention-labels"></a>保持ラベルの概要
 
@@ -52,9 +52,10 @@ ms.locfileid: "25698043"
   - ユーザーへの依存は、一部のコンテンツを正しく分類するためにのみ必要。
     
   - ユーザーはデータ ガバナンス ポリシーについて把握する必要がなくなり、仕事に集中できる。
-    
-    自動適用ラベルには、Office 365 Enterprise E5 サブスクリプションが必要です。
-    
+
+  > [!NOTE]
+  > ラベルを自動的に適用する機能では、サイトまたはメールボックスで自動的にラベルが付けられたコンテンツを編集するアクセス許可を持つユーザーごとに Office 365 Enterprise E5 ライセンスが必要になります。読み取り専用アクセス許可だけを持つユーザーにはライセンスは不要です。
+      
 - SharePoint と Office 365 グループのサイトの **ドキュメント ライブラリに既定の保持ラベルを適用**することにより、それらのライブラリ内のすべてのドキュメントに既定の保持ラベルを適用できるようになります。 
     
 - メールとドキュメントの両方を含む、**Office 365 全体でレコード管理を実装**できます。保持ラベルを使用して、コンテンツをレコードとして分類できます。この場合、ラベルの変更と削除、およびコンテンツの編集と削除はできません。 
