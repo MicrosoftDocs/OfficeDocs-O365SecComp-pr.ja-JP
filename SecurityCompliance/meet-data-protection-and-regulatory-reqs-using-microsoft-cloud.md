@@ -3,7 +3,7 @@ title: Microsoft クラウド サービスの利用時に、コンプライア�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/26/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Microsoft Service Trust Portal のコンプライアンス マネージャーでは、コントロールの追跡、実装、管理を行えるツールが用意されています。それらのツールは、Office 365 や Microsoft Azure などの Microsoft クラウド サービスを扱う際に、組織がセキュリティおよびデータ保護に関する業界標準 (GDPR、ISO 27001 および 27018、HIPAA など) に準拠するのに役立ちます。コンプライアンス マネージャーは、組織のデータ保護とプライバシー対策を講じる担当者が、コンプライアンスとリスク評価のプロセスを管理するのに役立ちます。
-ms.openlocfilehash: b8493775210be14a44c6d8185c56371b55634329
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a8d26db2a28d5b022f20408caf418b23edd98167
+ms.sourcegitcommit: 6669b7aae26965145e85d9613d3091bf389f000b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532325"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "26618933"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Microsoft クラウド サービスの利用時に、コンプライアンス マネージャーを使用してデータ保護と規制の要件を満たす
 
  *コンプライアンス マネージャーは、21Vianet が運用している Office 365、Office 365 Germany、Office 365 U.S. Government Community High (GCC High)、Office 365 Department of Defense では使用できません。* 
   
-コンプライアンス マネージャーは、当社の「[Microsoft Service Trust Portal の使用を開始する](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662)」に記載されているワークフローベースのリスク評価ツールです。コンプライアンス マネージャーを使用すると、Microsoft Office 365、Microsoft Dynamics 365、Microsoft Azure などの Microsoft プロフェッショナル サービスや Microsoft クラウド サービスに関連する組織のコンプライアンス活動の追跡、割り当て、検証を行うことができます。コンプライアンス マネージャーには、次のような機能があります。
+コンプライアンス マネージャーは、当社の [Microsoft Service Trust Portal](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662) に記載されているワークフローベースのリスク評価ツールです。コンプライアンス マネージャーを使用すると、Microsoft Office 365、Microsoft Dynamics 365、Microsoft Azure などの Microsoft プロフェッショナル サービスや Microsoft クラウド サービスに関連する組織の規制遵守活動の追跡、割り当て、検証を行うことができます。コンプライアンス マネージャーには、次のような機能があります。
   
 - ISO 27001、ISO 27018、NIST などの各種の標準に対する、サード パーティからの Microsoft クラウド サービスのさまざまな監査の一環として、マイクロソフトが監査担当者および規制機関に提供する詳細情報と、マイクロソフトが HIPAA や EU の一般データ保護規制 (GDPR) などの規制遵守のために内部で編集する情報を組み合わせます。内部で編集する情報には、組織が標準と規制に遵守しているかどうかについてのユーザーの自己評価も含めます。
     
@@ -831,8 +831,8 @@ Assessment が完了し、コンプライアンスに使用する必要がない
    
 ## <a name="see-also"></a>関連項目
 
-- [コンプライアンス マネージャーの一般提供の発表](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922)
-    
-- [Microsoft 365 は GDPR 対応を進めるために情報保護戦略を提供](https://blogs.office.com/ja-JP/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)
-    
+- [コンプライアンス マネージャーの対話型ガイド](https://content.cloudguides.com/guides/Compliance%20Manager)
 
+- [コンプライアンス マネージャーの一般提供の発表](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922)
+
+- [Microsoft 365 は GDPR 対応を進めるために情報保護戦略を提供](https://blogs.office.com/ja-JP/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)
