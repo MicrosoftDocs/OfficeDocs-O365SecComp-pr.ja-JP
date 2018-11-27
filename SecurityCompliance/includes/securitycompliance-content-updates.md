@@ -3,10 +3,10 @@
 
 
 
-## <a name="week-of-october-8-2018"></a>、2018 年 10 月 8 日の週
+## <a name="week-of-october-8-2018"></a>2018 年 10 月 8 日の週
 
 
-| 上で公開 |トピックのタイトル | 変更 |
+| 発行日 |トピックのタイトル | 変更 |
 |------|------------|--------|
 | 2018/10/8 | [Web 上の Outlook で、迷惑メールおよびフィッシング詐欺を報告します。](/Office365/SecurityCompliance/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop) | 変更 |
 | 2018/10/8 | [Office 365 のセキュリティ ロードマップの最初の 30 日、90 日間での内外の最優先事項](/Office365/SecurityCompliance/security-roadmap) | 変更 |
@@ -67,10 +67,10 @@
 | 2018/10/13 | [Office 365 の ATP の安全なリンクのポリシーを設定します](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | 変更 |
 
 
-## <a name="week-of-october-15-2018"></a>、2018 年 10 月 15 日の週
+## <a name="week-of-october-15-2018"></a>2018 年 10 月 15 日の週
 
 
-| 上で公開 |トピックのタイトル | 変更 |
+| 発行日 |トピックのタイトル | 変更 |
 |------|------------|--------|
 | 2018/10/15 | [電子的証拠開示ソリューション シリーズ データこぼしたシナリオの検索と削除](/Office365/SecurityCompliance/data-spillage-scenariosearch-and-purge) | 変更 |
 | 2018/10/15 | [管理者ヘルプの保留中のクラウド ベースのメールボックスの回復可能なアイテム] フォルダー内の項目を削除します。](/Office365/SecurityCompliance/delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold) | 変更 |
@@ -96,11 +96,11 @@
 ## <a name="week-of-october-22-2018"></a>、2018 年 10 月 22 日の週
 
 
-| 上で公開 |トピックのタイトル | 変更 |
+| 発行日 |トピックのタイトル | 変更 |
 |------|------------|--------|
 | 2018/10/23 | [EOP サービスを設定する](/Office365/SecurityCompliance/eop/set-up-your-eop-service) | 変更 |
 | 2018/10/23 | [スプーフィング インテリジェンスの詳細情報](/Office365/SecurityCompliance/learn-about-spoof-intelligence) | 変更 |
-| 2018/10/23 | [Office 365 の法的調査を管理します。](/Office365/SecurityCompliance/manage-legal-investigations) | 変更 |
+| 2018/10/23 | [Office 365 で法的調査を管理する](/Office365/SecurityCompliance/manage-legal-investigations) | 変更 |
 | 2018/10/24 | [Office 365 脅威インテリジェンスの概要](/Office365/SecurityCompliance/get-started-with-ti) | 変更 |
 | 2018/10/24 | [機密ラベルの概要](/Office365/SecurityCompliance/sensitivity-labels) | 変更 |
 | 2018/10/24 | [電子メール通知を送信し、DLP ポリシーのポリシーのヒントを表示します。](/Office365/SecurityCompliance/use-notifications-and-policy-tips) | 変更 |
@@ -114,10 +114,10 @@
 | 2018/10/26 | [サイトに保存された機密データを検索するクエリの形成](/Office365/SecurityCompliance/form-a-query-to-find-sensitive-data-stored-on-sites) | 変更 |
 
 
-## <a name="week-of-october-29-2018"></a>、2018 年 10 月 29 日の週
+## <a name="week-of-october-29-2018"></a>2018 年 10 月 29 日の週
 
 
-| 上で公開 |トピックのタイトル | 変更 |
+| 発行日 |トピックのタイトル | 変更 |
 |------|------------|--------|
 | 2018/10/29 | [EU パスポート番号](/Office365/SecurityCompliance/eu-passport-number) | 変更 |
 | 2018/10/29 | [Office 365 のセキュリティ、電子的証拠開示のアクセス許可を割り当てる&amp;コンプライアンス センター](/Office365/SecurityCompliance/assign-ediscovery-permissions) | 変更 |
@@ -128,12 +128,12 @@
 | 2018/10/29 | [機密ラベルの概要](/Office365/SecurityCompliance/sensitivity-labels) | 変更 |
 | 2018/10/29 | [機密ラベルでの暗号化を使用してコンテンツへのアクセスを制限する](/Office365/SecurityCompliance/encryption-sensitivity-labels) | 変更 |
 | 2018/10/29 | [SIEM Microsoft 365 とサーバーの統合](/Office365/SecurityCompliance/siem-server-integration) | 変更 |
-| 2018/10/30 | [動的な配信および Office 365 ATP の安全な添付ファイルをプレビューします。](/Office365/SecurityCompliance/dynamic-delivery-and-previewing) | 変更 |
-| 2018/10/30 | [Office 365 Advanced Threat Protection](/Office365/SecurityCompliance/office-365-atp) | 変更 |
-| 2018/10/30 | [Office 365 ATP の安全な添付ファイル ポリシーを設定します](/Office365/SecurityCompliance/set-up-atp-safe-attachments-policies) | 変更 |
-| 2018/10/30 | [Office 365 で電子メール メッセージを暗号化するためにメール フローの規則を定義します。](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | 変更 |
-| 2018/10/30 | [Office 365 での電子メールの暗号化](/Office365/SecurityCompliance/email-encryption) | 変更 |
-| 2018/10/30 | [Office 365 Message Encryption 用に Azure Rights Management を設定する](/Office365/SecurityCompliance/set-up-azure-rm-for-message-encryption) | 変更 |
+| 10/30/2018 | [動的な配信および Office 365 ATP の安全な添付ファイルをプレビューします。](/Office365/SecurityCompliance/dynamic-delivery-and-previewing) | 変更 |
+| 10/30/2018 | [Office 365 Advanced Threat Protection](/Office365/SecurityCompliance/office-365-atp) | 変更 |
+| 10/30/2018 | [Office 365 ATP の安全な添付ファイル ポリシーを設定します](/Office365/SecurityCompliance/set-up-atp-safe-attachments-policies) | 変更 |
+| 10/30/2018 | [Office 365 で電子メール メッセージを暗号化するためにメール フローの規則を定義します。](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | 変更 |
+| 10/30/2018 | [Office 365 での電子メールの暗号化](/Office365/SecurityCompliance/email-encryption) | 変更 |
+| 10/30/2018 | [Office 365 Message Encryption 用に Azure Rights Management を設定する](/Office365/SecurityCompliance/set-up-azure-rm-for-message-encryption) | 変更 |
 | 2018/10/31 | [Office 365 セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type-in-scc-powershell) | 追加 |
 | 2018/10/31 | [カスタムの機密情報の種類を作成する](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type) | 変更 |
 | 2018/10/31 | [キーワード辞書を作成する](/Office365/SecurityCompliance/create-a-keyword-dictionary) | 変更 |
@@ -142,28 +142,28 @@
 | 2018/10/31 | [ゼロアワー自動消去 - 迷惑メールやマルウェアからの保護](/Office365/SecurityCompliance/zero-hour-auto-purge) | 変更 |
 | 2018/10/31 | [レポート メッセージ アドインを有効にする](/Office365/SecurityCompliance/enable-the-report-message-add-in) | 変更 |
 | 2018/10/31 | [Office 365 で電子メール メッセージを暗号化するためにメール フローの規則を定義します。](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | 変更 |
-| 2018/11/1 | [Office 365 セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type-in-scc-powershell) | 変更 |
-| 2018/11/1 | [カスタムの機密情報の種類を作成する](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type) | 変更 |
-| 2018/11/1 | [PowerShell を使用して保持ラベルを一括で作成および発行する](/Office365/SecurityCompliance/bulk-create-publish-labels-using-powershell) | 変更 |
-| 2018/11/1 | [ユーザー、ドメイン、または IP アドレスをスパム電子メール送信後のブロック一覧から削除する](/Office365/SecurityCompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email) | 変更 |
+| 11/1/2018 | [Office 365 セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type-in-scc-powershell) | 変更 |
+| 11/1/2018 | [カスタムの機密情報の種類を作成する](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type) | 変更 |
+| 11/1/2018 | [PowerShell を使用して保持ラベルを一括で作成および発行する](/Office365/SecurityCompliance/bulk-create-publish-labels-using-powershell) | 変更 |
+| 11/1/2018 | [ユーザー、ドメイン、または IP アドレスをスパム電子メール送信後のブロック一覧から削除する](/Office365/SecurityCompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email) | 変更 |
 | 2018/11/2 | &amp; | 変更 |
 | 2018/11/2 | [Office 365 の ATP の安全なリンク機能](/Office365/SecurityCompliance/atp-safe-links) | 変更 |
 | 2018/11/2 | [Office 365 のクラウド アプリケーションのセキュリティの新機能](/Office365/SecurityCompliance/new-in-office-365-cas) | 変更 |
 | 2018/11/2 | [Office 365 の ATP の安全なリンクのポリシーを設定します](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | 変更 |
 
 
-## <a name="week-of-november-05-2018"></a>、2018 年 11 月 5 日の週
+## <a name="week-of-november-05-2018"></a>2018 年 11 月 5 日の週
 
 
-| 上で公開 |トピックのタイトル | 変更 |
+| 発行日 |トピックのタイトル | 変更 |
 |------|------------|--------|
-| 2018/11/5 | [Office 365 のセキュリティとコンプライアンス](/Office365/SecurityCompliance/index) | 変更 |
-| 2018/11/5 | [Office 365 セキュリティ スコア](/Office365/SecurityCompliance/office-365-secure-score) | 変更 |
-| 2018/11/5 | [ゼロアワー自動消去 - 迷惑メールやマルウェアからの保護](/Office365/SecurityCompliance/zero-hour-auto-purge) | 変更 |
+| 11/5/2018 | [Office 365 のセキュリティとコンプライアンス](/Office365/SecurityCompliance/index) | 変更 |
+| 11/5/2018 | [Office 365 セキュリティ スコア](/Office365/SecurityCompliance/office-365-secure-score) | 変更 |
+| 11/5/2018 | [ゼロアワー自動消去 - 迷惑メールやマルウェアからの保護](/Office365/SecurityCompliance/zero-hour-auto-purge) | 変更 |
 | 2018/11/6 | [Exchange Online メールボックスに適用されている保留の種類を特定する方法](/Office365/SecurityCompliance/identify-a-hold-on-an-exchange-online-mailbox) | 変更 |
 | 2018/11/6 | [Office 365 の暗号化についてのテクニカル リファレンスの詳細](/Office365/SecurityCompliance/technical-reference-details-about-encryption) | 変更 |
 | 2018/11/8 | [Office 365 で電子メール メッセージを暗号化するためにメール フローの規則を定義します。](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | 変更 |
-| 2018/11/8 | [Office 365 でコンテンツを検索します。](/Office365/SecurityCompliance/search-for-content) | 変更 |
+| 2018/11/8 | [Office 365 のコンテンツを検索](/Office365/SecurityCompliance/search-for-content) | 変更 |
 | 2018/11/8 | [SharePoint、OneDrive、Microsoft Teams 用の Office 365 ATP](/Office365/SecurityCompliance/atp-for-spo-odb-and-teams) | 変更 |
 | 2018/11/8 | [Office 365 の ATP の安全な添付ファイル](/Office365/SecurityCompliance/atp-safe-attachments) | 変更 |
 | 2018/11/8 | [Office 365 の ATP の安全なリンク警告ページ](/Office365/SecurityCompliance/atp-safe-links-warning-pages) | 変更 |
@@ -196,14 +196,14 @@
 ## <a name="week-of-november-12-2018"></a>、2018 年 11 月 12 日の週
 
 
-| 上で公開 |トピックのタイトル | 変更 |
+| 発行日 |トピックのタイトル | 変更 |
 |------|------------|--------|
 | 2018 年 11 月 12 日 | [Office 365 のセキュリティでのアクティビティの通知を作成&amp;コンプライアンス センター](/Office365/SecurityCompliance/create-activity-alerts) | 変更 |
 | 2018/11/13 | [Office 365 での電子情報開示調査のためにコンプライアンスの境界を設定する](/Office365/SecurityCompliance/set-up-compliance-boundaries) | 変更 |
-| 2018/11/13 | [作成、テスト、および DLP ポリシーを調整します。](/Office365/SecurityCompliance/create-test-tune-dlp-policy) | 追加 |
+| 2018/11/13 | [DLP ポリシーの作成、テスト、調整](/Office365/SecurityCompliance/create-test-tune-dlp-policy) | 追加 |
 | 2018/11/13 | [保持ラベルの概要](/Office365/SecurityCompliance/labels) | 変更 |
-| 2018/11/13 | [作成、テスト、および DLP ポリシーを調整します。](/Office365/SecurityCompliance/create-test-tune-dlp-policy) | 変更 |
-| 2018/11/14 | [作成、テスト、および DLP ポリシーを調整します。](/Office365/SecurityCompliance/create-test-tune-dlp-policy) | 変更 |
+| 2018/11/13 | [DLP ポリシーの作成、テスト、調整](/Office365/SecurityCompliance/create-test-tune-dlp-policy) | 変更 |
+| 2018/11/14 | [DLP ポリシーの作成、テスト、調整](/Office365/SecurityCompliance/create-test-tune-dlp-policy) | 変更 |
 | 2018/11/14 | &amp; | 変更 |
 | 2018/11/14 | [カスタムの機密情報の種類を作成する](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type) | 変更 |
 | 2018/11/15 | [Office 365 のセキュリティとコンプライアンスのセンターからのコンテンツの検索結果をエクスポートします。](/Office365/SecurityCompliance/export-search-results) | 変更 |
@@ -215,3 +215,13 @@
 | 2018/11/16 | [アイテム保持ポリシーの概要](/Office365/SecurityCompliance/retention-policies) | 変更 |
 | 2018/11/16 | [機密ラベルの概要](/Office365/SecurityCompliance/sensitivity-labels) | 変更 |
 | 2018/11/16 | [エクスプ ローラーを使用して、セキュリティで&amp;コンプライアンス センター](/Office365/SecurityCompliance/use-explorer-in-security-and-compliance) | 変更 |
+
+
+## <a name="week-of-november-19-2018"></a>、2018 年 11 月 19 日の週
+
+
+| 発行日 |トピックのタイトル | 変更 |
+|------|------------|--------|
+| 2018/11/19 | [Microsoft クラウド サービスの利用時に、コンプライアンス マネージャーを使用してデータ保護と規制の要件を満たす](/Office365/SecurityCompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud) | 変更 |
+| 2018/11/19 | [レポート メッセージ アドインを有効にする](/Office365/SecurityCompliance/enable-the-report-message-add-in) | 変更 |
+| 2018/11/20 | &amp; | 変更 |

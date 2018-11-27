@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 description: SharePoint、OneDrive、および検出されたファイルについての警告を設定する方法など、チーム分析ツールを有効にする方法を説明します。
-ms.openlocfilehash: d70c574f002ca7e70ab6f9a4abad3ea5ef21a20f
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: e413f0b57186dc1364b63e14985ef0f54ca7e442
+ms.sourcegitcommit: 0cc6083bd8cb2f7bbf18847149c6d5239f2a6403
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238419"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26699940"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、およびマイクロソフトのチームに対して Office 365 の分析ツールを有効に
 
@@ -40,14 +40,16 @@ ms.locfileid: "26238419"
 5. 確認 (および、必要に応じて編集)、組織の[安全な添付ファイル ポリシー](set-up-atp-safe-attachments-policies.md)と[ポリシーの安全なリンク](set-up-atp-safe-links-policies.md)です。
     
 6. (推奨)グローバル管理者または SharePoint Online 管理者は、 **DisallowInfectedFileDownload**パラメーターが*true*に設定を使用して**[セット SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** コマンドレットを実行します。 <br/>
-  - *真*のブロックのパラメーター (削除) を除くすべてのアクションを設定すると、ファイルが検出されました。人ことはできませんを開く、移動、コピー、または検出されたファイルを共有します。
-  - パラメーターを*false*に設定すると、削除し、ダウンロードを除くすべてのアクションがブロックされます。リスクを受け入れるし、検出されたファイルをダウンロードするユーザーを選択できます。  
+      - *真*のブロックのパラメーター (削除) を除くすべてのアクションを設定すると、ファイルが検出されました。人ことはできませんを開く、移動、コピー、または検出されたファイルを共有します。
+      - パラメーターを*false*に設定すると、削除し、ダウンロードを除くすべてのアクションがブロックされます。リスクを受け入れるし、検出されたファイルをダウンロードするユーザーを選択できます。  
    
 7. 最大 30 分間のすべての Office 365 のデータ センターに展開するのには、変更を許可します。
     
 8. (推奨)によって検出されたファイルの通知の設定に進みます。
     
-Office 365 で、PowerShell を使用する方法の詳細については、 [PowerShell での Office 365 の管理](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)を参照してください。> として、悪意のあるファイルが検出されたときのユーザー エクスペリエンスの詳細についてを参照してください[SharePoint のオンライン、OneDrive、またはマイクロソフトのチームで悪意のあるファイルが見つかった場合の対処方法](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)です。 
+Office 365 で、PowerShell を使用する方法の詳細については、 [PowerShell での Office 365 の管理](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)を参照してください。 
+
+として悪意のあるファイルが検出されたときのユーザー エクスペリエンスの詳細については、 [SharePoint のオンライン、OneDrive、またはマイクロソフトのチームで悪意のあるファイルが見つかった場合の対処方法](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)を参照してください。 
   
 ## <a name="set-up-alerts-for-detected-files"></a>によって検出されたファイルの通知を設定します。
 
@@ -63,9 +65,9 @@ Office 365 で、PowerShell を使用する方法の詳細については、 [Po
     
 5. **. のときは、このアラートを送信**] セクションでは、次の操作を行います。 
     
-  - **活動**] ボックスの一覧で、**ファイルにマルウェアを検出しました**を選択します。
+    a. [**活動**] ボックスの一覧で、**ファイルにマルウェアを検出しました**を選択します。
     
-  - **ユーザー**のフィールドは空のままにします。 
+    b. は、空の**ユーザー**フィールドをままにします。 
     
 6. **. このアラートを送信**] セクションで、グローバル管理者、セキュリティ管理者、または悪意のあるファイルが検出されたときに通知を受信する必要がありますセキュリティの読者の 1 つまたは複数を選択します。 
     
