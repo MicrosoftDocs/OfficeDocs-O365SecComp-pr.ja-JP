@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 description: Windows Defender 高度な脅威保護の脅威の管理の詳細を表示するには、Office 365 の高度な脅威保護を統合します。
-ms.openlocfilehash: 574594d5881853b268713e0bb74444ae80ffcf46
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1198f53c47811d69b93106c413e3d3a09d83e736
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531858"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706141"
 ---
 # <a name="integrate-office-365-threat-intelligence-with-windows-defender-advanced-threat-protection"></a>Windows Defender Advanced Threat Protection と Office 365 脅威インテリジェンスを統合する
 
@@ -34,7 +34,7 @@ ms.locfileid: "22531858"
 
 - 組織には、Office 365 の脅威インテリジェンスと Windows Defender の分析ツールが必要です。
     
-- Office 365 のグローバル管理者であるか、セキュリティに割り当てられているセキュリティ管理者の役割を持っている必要があります&amp;コンプライアンス センターです。(を参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md))
+- Office 365 のグローバル管理者であるかに割り当てられているセキュリティ管理者の役割を持っている必要があります、[セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)です。(を参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md))
     
 - Office 365 の脅威インテリジェンスと、Windows Defender の ATP ポータルの両方へのアクセスが必要です。
     
@@ -42,7 +42,7 @@ ms.locfileid: "22531858"
 
 Windows Defender の分析ツールと Office 365 の脅威インテリジェンスを統合することは、Office 365 と、Windows Defender の ATP ポータルの両方を設定します。
   
-1. 移動すると、Office 365 のグローバル セキュリティ管理者は、[https://portal.office.com](https://portal.office.com)と Office 365 は、職場または学校のアカウントでサインインします。 
+1. 移動すると、Office 365 のグローバル セキュリティ管理者は、[https://security.microsoft.com](https://security.microsoft.com)と Office 365 は、職場または学校のアカウントでサインインします。 
     
 2. **脅威の管理**を選択して\>**脅威のエクスプ ローラー**です。
     

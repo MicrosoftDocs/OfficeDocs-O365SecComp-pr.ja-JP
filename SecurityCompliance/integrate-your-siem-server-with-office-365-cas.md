@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: SIEM サーバーは、Office 365 のクラウド アプリケーションのセキュリティと統合できます。仕組みと、それを設定する方法の概要を取得するには、この資料を参照してください。
-ms.openlocfilehash: d8603d53e156e89c53f13153cd90d400b1312538
-ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
+ms.openlocfilehash: f0965f822b50a0f06dfb69620a9d64c6ca509864
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25450762"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706411"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>SIEM サーバーと Office 365 Cloud App Security を統合する
   
@@ -67,7 +67,7 @@ SIEM エージェントでは、Office 365 のクラウド アプリケーショ
  
 ## <a name="step-1-set-it-up-a-siem-agent-in-office-365-cloud-app-security"></a>手順 1: Office 365 のクラウド アプリケーションのセキュリティの SIEM エージェントを設定します。
 
-1. [https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用して Office 365 にサインインします。(これで、セキュリティには、&amp;コンプライアンス センター)。 
+1. [https://security.microsoft.com](https://security.microsoft.com)し、職場、学校のアカウントを使用して Office 365 にサインインします。(これで、セキュリティには、&amp;コンプライアンス センター)。 
     
 2. **アラート**を参照して\>**詳細なアラートを管理**します。
     
@@ -86,7 +86,7 @@ SIEM エージェントでは、Office 365 のクラウド アプリケーショ
 8. **リモートの Syslog**の手順で、IP アドレスまたは**リモートの syslog ホスト**と**ポート番号の Syslog**のホスト名を指定します。リモートの Syslog プロトコルとして TCP または UDP を選択します。(使用することがない場合、これらの詳細を取得するには、ネットワーク管理者またはセキュリティ管理者です。)**次へ**を選択します。<br/>![リモートの Syslog の詳細を指定します。](media/ArcSightS1Syslog.png)
   
 9. ステップでは、**データ型**、次のいずれかを実行し、[**次へ**] をクリックします。
-    - **すべてのアラート**の既定の設定をしてください。<br/>OR
+    - **すべてのアラート**の既定の設定をしてください。<br/>または
     - **すべてのアラート**をクリックし、[**特定のフィルター**を選択します。SIEM サーバーに送信するアラートの種類を選択するためのフィルターを定義します。<br/>![ウィザードのデータの種類の手順](media/ArcSightS1ExportOptions.png)
   
 10. [おめでとうございます] 画面で、トークンをコピーし、後にします。<br/>![SIEM のエージェントの作成] 画面](media/SIEMAgentFinished.png) 
@@ -122,9 +122,13 @@ SIEM エージェントでは、Office 365 のクラウド アプリケーショ
     ```
 
 - 括弧内のパラメーターはオプションであり、該当する場合にのみ使用する必要があります。次の変数を使用します。
+
     - **DIRNAME**は、デバッグ ログのローカル エージェントを使用するディレクトリへのパスです。
+
     - **アドレス [: ポート]** は、プロキシ サーバーのアドレスと、インターネットに接続するサーバーを使用するポートです。
+
     - **トークン**は、最初の手順でコピーした SIEM エージェントのトークンです。
+
     - ヘルプを表示するには、次のように入力します。 `-h`。 
   
 ## <a name="step-3-validate-that-the-siem-agent-is-working"></a>手順 3: SIEM エージェントが動作していることを検証します。

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 description: 学習の方法は、セキュリティで推奨される操作を把握するダッシュ ボードから移動することができます&amp;コンプライアンス センターです。
-ms.openlocfilehash: 9245d26a98bac34836772cb1d895c638ed5e5564
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 933bf6e86bc1ddce9259d071b69654f68e4dd370
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532537"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706151"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>チュートリアル - ダッシュボードからインサイトへの移動
 
@@ -30,7 +30,7 @@ ms.locfileid: "22532537"
 
 いきますフロー ダッシュ ボードからレポートを把握し、操作するにします。(これは、[なりすましのインテリジェンス](learn-about-spoof-intelligence.md)を簡単な例です)。 
   
-1. セキュリティ ダッシュ ボードが、セキュリティではまず&amp;コンプライアンス センターです。(**脅威の管理**に移動します\>**ダッシュ ボード**です)。
+1. セキュリティ ダッシュ ボードでまず、[セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)です。(**脅威の管理**に移動します\>**ダッシュ ボード**です)。
     
     ![セキュリティ&amp;コンプライアンス センターでは、脅威の管理を選択して\>ダッシュ ボード](media/05a38660-eb13-4960-a266-11809c453d95.png)
   

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 description: Office 365 グローバル管理者は、組織内で現実的な攻撃のシナリオを実行するのに攻撃のシミュレータを使用できます。これを識別し、実際の攻撃では、お客様のビジネスをヒットする前に、脆弱性のあるユーザーを検索することができます。
-ms.openlocfilehash: ccef127c4ce4d806ef9af04673b8c68d82ce9ec6
-ms.sourcegitcommit: 7c55721b51b2f321537a0cdad6644abf91996710
+ms.openlocfilehash: 9a7e1fd5327b4a764356df110c46ee7a9f496b53
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26256442"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706441"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 の攻撃シミュレータ
 
@@ -26,7 +26,7 @@ ms.locfileid: "26256442"
   
 ## <a name="the-attacks"></a>攻撃
 
-現時点では、攻撃のシミュレーションの 3 種類があります。
+3 種類の攻撃のシミュレーションは、現在使用できます。
   
 - [スピアー フィッシング攻撃の名前を表示します。](attack-simulator.md#spearphish)
     
@@ -66,7 +66,7 @@ ms.locfileid: "26256442"
   
 **電子メールの本文**のフィールド自体に直接リッチ HTML エディターを作成するか、HTML ソースを操作できます。HTML に含めることの 2 つの重要なフィールドです。 
   
-1. セキュリティで&amp;コンプライアンス センターでは、**脅威の管理**を選択して\>**攻撃のシミュレータ**です。
+1. [セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)、**脅威の管理**を選択して\>**攻撃のシミュレータ**です。
     
 2. 攻撃のキャンペーンのわかりやすい名前を指定するか、テンプレートを選択します。 <br/>![フィッシング スタート ページ](media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
   
@@ -96,7 +96,7 @@ ms.locfileid: "26256442"
   
 ### <a name="to-simulate-a-password-spray-attack"></a>パスワード スプレー攻撃をシミュレートするには
 
-1. セキュリティで&amp;コンプライアンス センターでは、**脅威の管理**を選択して\>**攻撃のシミュレータ**です。
+1. [セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)、**脅威の管理**を選択して\>**攻撃のシミュレータ**です。
     
 2. 攻撃のキャンペーンのわかりやすい名前を指定します。
     
@@ -112,7 +112,7 @@ ms.locfileid: "26256442"
   
 ### <a name="to-simulate-a-brute-force-password-attack"></a>ブルート フォース パスワード攻撃をシミュレートするには
 
-1. セキュリティで&amp;コンプライアンス センターでは、**脅威の管理**を選択して\>**攻撃のシミュレータ**です。
+1. [セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)、**脅威の管理**を選択して\>**攻撃のシミュレータ**です。
     
 2. 攻撃のキャンペーンのわかりやすい名前を指定します。
     

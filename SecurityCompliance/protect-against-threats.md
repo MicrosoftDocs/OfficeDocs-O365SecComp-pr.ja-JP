@@ -1,9 +1,8 @@
 ---
-title: Office 365 での脅威からの保護
+title: Office 365 で脅威から保護する
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/30/2018
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: Office 365 エンタープライズ保護する方法と、さまざまな脅威、なりすまし、マルウェア、スパム、フィッシング詐欺、およびデータへの不正アクセスを含む、組織について説明します。
-ms.openlocfilehash: 18e91b3a27ff9722a285a4c84f810876e1cab462
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: e5e14e66617af6a513979d93aa4764c8843b975f
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496851"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706061"
 ---
-# <a name="protect-against-threats-in-office-365"></a>Office 365 での脅威からの保護
+# <a name="protect-against-threats-in-office-365"></a>Office 365 で脅威から保護する
 
 Office 365 エンタープライズでは、さまざまな脅威、なりすまし、マルウェア、スパム、フィッシング詐欺、およびデータへの不正アクセスを含むと、組織を保護できます。このページのリソースを使用して、脅威の保護と実行できる操作について説明します。
   
@@ -28,11 +27,11 @@ Office 365 エンタープライズでは、さまざまな脅威、なりすま
 
 Office 365 でカスタム ドメインを使用する場合、組織内の送信者の不正行為を停止する、電子メールのセキュリティを向上させるし、ドメインの評判を保護するために役立ちます。
   
-- [SPF のスプーフィングを防止します。](https://go.microsoft.com/fwlink/?linkid=851943)
+- [SPF のスプーフィングを防止します。]([Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md))
     
-- [DKIM で送信電子メールを検証します。](https://go.microsoft.com/fwlink/?linkid=851944)
+- [DKIM で送信電子メールを検証します。]([Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md))
     
-- [DMARC で電子メールを検証します。](https://go.microsoft.com/fwlink/?linkid=832951)
+- [DMARC で電子メールを検証します。]([Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md))
     
 ## <a name="anti-spam-amp-anti-malware"></a>スパム対策&amp;- マルウェア対策
 
@@ -40,11 +39,11 @@ Office 365 のスパム対策の評価、接続フィルター、およびマル
   
 - [スパム対策&amp;のマルウェア対策保護](anti-spam-and-anti-malware-protection.md)
     
-- [電子メールのログを有効にします。](https://technet.microsoft.com/en-us/library/dn879651.aspx)
+- [電子メールのログを有効にします。]([Enable mailbox auditing in Office 365](enable-mailbox-auditing.md))
     
 - [Office 365 でメール メッセージを検疫する](quarantine-email-messages.md)
     
-- [マイクロソフトに不審なコンテンツを送信します。](https://technet.microsoft.com/en-us/library/dn762129%28v=exchg.150%29.aspx)
+- [マイクロソフトに不審なコンテンツを送信します。]([Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md))
     
 ## <a name="advanced-threat-protection"></a>Advanced Threat Protection
 

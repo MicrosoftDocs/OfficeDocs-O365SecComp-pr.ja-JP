@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: '異常検出ポリシーを Office 365 のクラウド アプリケーションのセキュリティでは、潜在的な問題を明らかに、組み込みアルゴリズムを使用します。(作成) 時を調整するにはフィルターを使用して、1 つ以上の異常検出ポリシーが必要です。 '
-ms.openlocfilehash: 80f576d7c1c42ab60c1b031dcd33591f8e1ce4b8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8babe86dd5adb6c25a069096157cac121ad66ab1
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532731"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706341"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security の異常検出ポリシー
 
@@ -51,7 +51,7 @@ ms.locfileid: "22532731"
     
 ## <a name="view-your-anomaly-detection-policies"></a>異常検出ポリシーを表示します。
 
-1. グローバル管理者またはセキュリティ管理者に移動します。[https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用してサインインします。 
+1. グローバル管理者またはセキュリティ管理者に移動します。[https://security.microsoft.com](https://security.microsoft.com)し、職場、学校のアカウントを使用してサインインします。 
     
 2. セキュリティで&amp;コンプライアンス センターでは、**アラート**を選択して\>**管理警告の詳細**です。
     
@@ -67,7 +67,7 @@ ms.locfileid: "22532731"
   
 5. 確認または設定を編集するポリシーを選択します。
     
-6. 変更を保存する**更新プログラム**を選択します。 
+6. [ **Update**] を選んで、変更を保存します。 
     
 ## <a name="learn-more-about-anomaly-detection-policies"></a>異常検出のポリシーの詳細を表示します
 
@@ -93,7 +93,7 @@ ms.locfileid: "22532731"
 
 アラートが発生、それらのアラートをすばやく優先順位を決定し、どれを最初に処理を決定できます。アラートのコンテキストを使用すると、拡大画像の表示し、実際に発生している悪意のあるものかどうかを決定します。アラートの調査を開始するには、次の手順を使用します。
   
-1. グローバル管理者またはセキュリティ管理者に移動します。[https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用してサインインします。 
+1. グローバル管理者またはセキュリティ管理者に移動します。[https://security.microsoft.com](https://security.microsoft.com)し、職場、学校のアカウントを使用してサインインします。 
     
 2. セキュリティで&amp;コンプライアンス センターでは、**アラート**を選択して\>**管理警告の詳細**です。
     
@@ -118,7 +118,6 @@ ms.locfileid: "22532731"
 複数のログインの失敗に関するアラートは、不審な本当の意味で可能性があり、ブルート フォース攻撃の可能性を示すことができます。ただし、このような警告には、アプリケーションの構成の誤り、害のない正の場合は true を指定するアラート発生ことができます。他の不審な動作を持つ複数失敗したログインのアラートが表示された場合は、アカウントが侵害されている可能性が高くします。たとえば、ある複数失敗したログインのアラートが続く活動で、TOR の IP アドレスと不可能な旅行アクティビティでは、両方の強力なインジケーターが侵害されるとします。同じユーザーが攻撃者のデータの exfiltration を実行することを示すインジケーターは、多くの場合、大容量のダウンロードのアクティビティを実行する可能性がありますも参照してください。表示し、アラートの優先順位を決定して処理する Office 365 のクラウド アプリケーションのセキュリティを表示することがあるような作業の必要な場所です。
   
 ## <a name="next-steps"></a>次の手順
-<a name="nextsteps"> </a>
 
 - [SIEM サーバーを統合します。](integrate-your-siem-server-with-office-365-cas.md)
     

@@ -3,7 +3,6 @@ title: Office 365 のクラウド アプリケーションのセキュリティ�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/16/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,19 +12,17 @@ search.appverid:
 - MOE150
 ms.assetid: ade98409-a15e-4de3-8c06-8e748f5b7e96
 description: Office 365 のクラウド アプリケーションのセキュリティと呼ばれるようになりました、Office 365 で、高度なセキュリティ管理のヘルプ コンテンツを検索します。
-ms.openlocfilehash: 06d134e1db8a8693a509fb6273042ca6ff1e6812
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: d38b12afe50ac56b3047b24d68c9c00d3bcbf602
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532007"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706271"
 ---
 # <a name="office-365-cloud-app-security-help-and-how-to"></a>Office 365 のクラウド アプリケーションのセキュリティのヘルプと使い方
-
- **Office の 365 今すぐ使用するクラウド アプリケーション セキュリティは office 365 の高度なセキュリティ管理**します。 
   
 > [!NOTE]
-> Office 365 のクラウド アプリケーションのセキュリティでは、Office 365 エンタープライズ E5 や Office 365 に、アドオンのサブスクリプションがあります。組織は、別の Office 365 エンタープライズ サブスクリプションで使用されている場合、Office 365 のクラウド アプリケーションのセキュリティがアドオンとして購入できます。(グローバル管理者は、Office 365 管理センターを選択して**請求** \> **サブスクリプションを追加**します)。プランのオプションの詳細については、[ビジネス プランのすべての Office 365 の比較](https://go.microsoft.com/fwlink/?linkid=844053)を参照してください。 
+> Office 365 クラウド アプリケーションのセキュリティ (Office 365 の高度なセキュリティ管理と呼ばれていました) では、Office 365 エンタープライズ E5 や Office 365 に、アドオンのサブスクリプションがあります。組織は、別の Office 365 エンタープライズ サブスクリプションで使用されている場合、Office 365 のクラウド アプリケーションのセキュリティがアドオンとして購入できます。(グローバル管理者は、Office 365 管理センターを選択して**請求** \> **サブスクリプションを追加**します)。プランのオプションの詳細については、[ビジネス プランのすべての Office 365 の比較](https://go.microsoft.com/fwlink/?linkid=844053)を参照してください。 
   
 Office 365 のクラウド アプリケーションのセキュリティ、グローバル管理者、セキュリティ管理者、およびセキュリティのリーダーは不審な表示またはを通じて高度な脅威の検出、異常な活動情報にアクセスするのには、組織内のユーザーを使用するアプリケーションを決定します。Office 365 および Office 365 とその他のクラウド サービスの間で、組織のクラウドの使用状況のスナップショットを取得します。すべてこのことにより、ユーザーとデータを保護して、エンドポイントのすべてのエージェントをインストールする必要がありません。
   

@@ -3,7 +3,7 @@ title: ダッシュ ボードのセキュリティの概要
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 description: Office 365 の脅威保護の状態を確認し、表示、およびセキュリティの警告の動作には、新しいセキュリティ ダッシュ ボードを使用します。
-ms.openlocfilehash: d124ce07fbd3eba633e8c1e844ef3f83fc8fd04f
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: d4dd20d5ce456bfca391925786a5cc02787dee54
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552365"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706281"
 ---
 # <a name="security-dashboard-overview"></a>ダッシュ ボードのセキュリティの概要
 
-セキュリティ&amp;コンプライアンス センターは、データ保護とコンプライアンスを管理する組織を有効にします。2018 年 3 月の始めであり、セキュリティ&amp;コンプライアンス センター機能を新しいセキュリティ ダッシュ ボードの脅威保護の状態を確認し、表示およびセキュリティの警告の動作を使用することができます。 
+[セキュリティ&amp;コンプライアンス センター](go-to-the-securitycompliance-center.md)データの保護とコンプライアンスを管理する組織を有効にします。2018 年 3 月の始めであり、セキュリティ&amp;コンプライアンス センター機能を新しいセキュリティ ダッシュ ボードの脅威保護の状態を確認し、表示およびセキュリティの警告の動作を使用することができます。 
   
 、概要を説明するビデオを見るし、詳細については、この資料を読みます。
   
@@ -41,7 +41,7 @@ ms.locfileid: "25552365"
 セキュリティ ダッシュ ボードを表示するのには、 [Office 365 のセキュリティ&amp;コンプライアンス センター](go-to-the-securitycompliance-center.md)**脅威の管理**には、 \> **ダッシュ ボード**です。
   
 > [!NOTE]
-> Office 365 グローバル管理者、セキュリティ管理者、またはセキュリティ リーダー セキュリティ ダッシュ ボードを表示するのにする必要があります。参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。 
+> セキュリティ ダッシュ ボードを表示するのには Office 365 のグローバル管理者、セキュリティ管理者は、またはセキュリティのリーダーである必要があります。参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。 
   
 ## <a name="threat-protection-status"></a>脅威保護の状態
 
@@ -51,7 +51,7 @@ ms.locfileid: "25552365"
   
 さらに、マルウェアのレポートは、組織を対象とする悪意のあるコンテンツの最新の動向を追跡するために使用できます。レポートの詳細を表示するタイルをクリックします。
   
-## <a name="insights"></a>洞察力
+## <a name="insights"></a>インサイト
 
 洞察を確認する必要がある重要な問題を表面だけでなく、考慮すべき推奨事項と操作も含まれます。たとえば、一部のユーザーは、迷惑メールのオプションを無効にしているためにフィッシング詐欺の電子メール メッセージが配信されているを参照してください可能性があります。見識のしくみに関する詳細についてを参照してください[のレポートと Office 365 のセキュリティ情報&amp;コンプライアンス センター](reports-and-insights-in-security-and-compliance.md)です。
   

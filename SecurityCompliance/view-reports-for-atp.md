@@ -3,6 +3,7 @@ title: Office 365 の高度な脅威保護のためのレポートを表示し�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: 検索し、Office 365 高度な脅威保護、セキュリティでのレポートを使用する方法を説明&amp;コンプライアンス センターです。
-ms.openlocfilehash: 1a0ecb9a6722deb50a491a15f720481a5bb7b0a4
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: e9d3088f81d1020e70de4c2260fba81cd469715d
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552335"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706321"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 の高度な脅威保護のためのレポートを表示します。
 
@@ -34,7 +35,7 @@ ATP のレポートには、[脅威保護の状態のレポート](#threat-prote
 > [!NOTE]
 > 脅威保護の状態レポートは、 [Office 365 の ATP](office-365-atp.md)または[Exchange のオンライン保護](eop/exchange-online-protection-eop.md)(EOP) は使用しているお客様に利用可能ですただし、ATP のお客様の脅威保護の状態レポートに表示される情報 EOP の顧客が表示とは異なるデータが含まれる予定です。たとえば、ATP のお客様の脅威保護の状態レポート[SharePoint のオンライン、OneDrive、またはマイクロソフトのチームで悪意のあるファイルの検出](atp-for-spo-odb-and-teams.md)に関する情報が含まれます。このような情報は ATP、EOP は分析ツールではない使用しているお客様の脅威保護のステータス レポートの詳細は表示されませんので。
   
-セキュリティの脅威保護の状態レポートを表示するのには&amp;コンプライアンス センターでは、**レポート**に移動\>**ダッシュ ボード** \> **脅威保護の状態**です。
+脅威保護の状態レポートを表示するのには、[セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)**のレポート**には、 \> **ダッシュ ボード** \> **脅威保護の状態**です。
   
 ![ATP の脅威保護の状態のレポート](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
@@ -54,7 +55,7 @@ ATP のレポートには、[脅威保護の状態のレポート](#threat-prote
 
 **分析ツール ファイルの種類**のレポートでは、 [ATP の安全な添付ファイル](atp-safe-attachments.md)が悪意のあるものとして検出されたファイルの種類を示します。
   
-セキュリティで、このレポートを表示するのには&amp;コンプライアンス センターでは、**レポート**に移動\>**ダッシュ ボード** \> **分析ツール ファイルの種類**です。
+このレポートを表示するのには、[セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)**のレポート**には、 \> **ダッシュ ボード** \> **分析ツール ファイルの種類**です。
   
 ![分析ツール ファイルの種類のレポート](media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
@@ -66,7 +67,7 @@ ATP のレポートには、[脅威保護の状態のレポート](#threat-prote
 
 **ATP メッセージ破棄**レポートでは、悪意のあるコンテンツを持つものとして検出された電子メール メッセージのアクションを示します。 
   
-セキュリティで、このレポートを表示するのには&amp;コンプライアンス センターでは、**レポート**に移動\>**ダッシュ ボード** \> **ATP メッセージ廃棄**します。
+このレポートを表示するのには、[セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)**のレポート**には、 \> **ダッシュ ボード** \> **ATP メッセージ廃棄**します。
   
 ![ATP メッセージ破棄レポート](media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
   
@@ -89,12 +90,24 @@ ATP レポートは、この資料に記載されている、だけでなく他�
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>ATP のレポートを表示するのにはどのようなアクセス許可が必要か。
 
-表示し、この資料に記載されているレポートを使用して、セキュリティの割り当て、適切なロールが必要&amp;コンプライアンス センターと、Exchange 管理センターで。
-  
-|**役割グループ**|**割り当てられている場合**|**詳細情報**|
-|:-----|:-----|:-----|
-| 以下のいずれか:  <br/><br/>-組織の管理  <br/>-セキュリティ管理者  <br/>--セキュリティ リーダー  <br/> |セキュリティ&amp;コンプライアンス センター  <br/> |[Office 365 のセキュリティのアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md) <br/> |
-| 以下のいずれか:  <br/><br/>-組織の管理  <br/>--表示専用組織の管理  <br/>--参照受信者の役割  <br/>-コンプライアンス管理  <br/> |Exchange 管理センター  <br/> |[Exchange Online の機能アクセス許可](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+表示し、この資料に記載されているレポートを使用して、適切なセキュリティの両方に割り当てられているロールがある必要があります&amp;コンプライアンス センターと、Exchange 管理センターです。
+
+- セキュリティの&amp;コンプライアンス センターでは、する必要があります次に割り当てられている役割の 1 つ。
+    - 組織の管理
+    - セキュリティ管理者
+    - セキュリティ リーダー
+
+- Exchange Online では、する必要があります次に割り当てられている役割の 1 つ。
+    - 組織の管理
+    - 表示限定の組織管理
+    - "View-Only Recipients/表示専用受信者" 役割
+    - コンプライアンス管理
+
+詳細については、次のリソースを参照してください。
+
+- [Office 365 のセキュリティのアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)
+
+- [Exchange Online の機能アクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>場合、レポート データが表示されていないでしょうか。
 

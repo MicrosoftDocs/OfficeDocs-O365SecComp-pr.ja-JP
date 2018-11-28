@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: 電子メールに悪意のあるファイルから組織を保護するために安全な添付ファイル ポリシーを定義します。
-ms.openlocfilehash: 84625cc688be4b6aa98674563b5c6c30b1b35598
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 7c2bcfd1d9faad48cb8852b066f544abd1fb6ace
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238409"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706071"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Office 365 ATP の安全な添付ファイル ポリシーを設定します
 
@@ -35,7 +35,7 @@ ms.locfileid: "26238409"
 
 - 組織が[Office 365 の高度な脅威保護](office-365-atp.md)を持っていることを確認します。
     
-- 必要があるかどうかを確認[Office 365 のセキュリティに割り当てられたアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。
+- 必要があるかどうかを確認[Office 365 のセキュリティのアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。
     
 - [ATP の安全な添付ファイル ポリシーのオプションについて理解します。](#learn-about-atp-safe-attachments-policy-options)(この記事で)。モニター] または [置換のオプションなど、いくつかのオプションが遅延が生じますマイナー電子メールの添付ファイルをスキャン中にします。メッセージの遅延を避けるためには、[動的な配信およびプレビュー](dynamic-delivery-and-previewing.md)を使用して検討してください。
     
@@ -43,7 +43,7 @@ ms.locfileid: "26238409"
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>ATP の安全な添付ファイル ポリシーを手順 2: を設定する (または編集)
   
-1. グローバル管理者またはセキュリティ管理者には、[https://protection.office.com](https://protection.office.com)と、職場、学校のアカウントでサインインします。 
+1. グローバル管理者またはセキュリティ管理者には、[https://security.microsoft.com](https://security.microsoft.com)と、職場、学校のアカウントでサインインします。 
     
 2. Office 365 のセキュリティで&amp;コンプライアンス センターでは、**脅威の管理**の下で、左側のナビゲーション ペインで**ポリシー**を選択する\>**安全な添付ファイル**です。
     
@@ -51,9 +51,7 @@ ms.locfileid: "26238409"
     
 4. **新規**を選択 ([新規] ボタンのようなプラス記号 ( **+**))、ポリシーの作成を開始します。
     
-5. 名前、説明、およびポリシーの設定を指定します。
-    
-    **の使用例:**「待ち時間なし」と呼ばれる全員のメッセージをすぐに提供しそれらをスキャンしている後に添付ファイルを再接続されるポリシーを設定するには、次の設定を指定する可能性があります。 
+5. 名前、説明、およびポリシーの設定を指定します。<br/><br/>**の使用例:**「待ち時間なし」と呼ばれる全員のメッセージをすぐに提供しそれらをスキャンしている後に添付ファイルを再接続されるポリシーを設定するには、次の設定を指定する可能性があります。 
     
       - [**名**] ボックスで、入力ない遅延が発生します。
     

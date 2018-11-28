@@ -1,5 +1,5 @@
 ---
-title: 脅威の Office 365 のセキュリティの管理&amp;コンプライアンス センター
+title: Threat management in the Office 365 Security &amp; Compliance Center
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 0a73d5fa-b2c8-43e7-9ed4-61f0552b1c98
 description: 脅威の管理を使用して、コントロールのヘルプしモバイル デバイスが組織のデータへのアクセスを管理、データの損失から組織を保護するために、悪意のあるソフトウェアおよび迷惑メールからの受信メッセージと送信メッセージを保護するためです。ドメインからアカウントを管理ドメインの評判を保護するために、送信者がスプーフィング悪意を持っているかどうかを判断するのには脅威を使用します。
-ms.openlocfilehash: df843ab95920d24af778a9edf31626f4d6b08cff
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 6aac4e7c3af0f1d2b7adc767f696653252674e6a
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552405"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706431"
 ---
-# <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>脅威の Office 365 のセキュリティの管理&amp;コンプライアンス センター
+# <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>Threat management in the Office 365 Security &amp; Compliance Center
 
 脅威の管理を使用して、コントロールのヘルプしモバイル デバイスが組織のデータへのアクセスを管理、データの損失から組織を保護するために、悪意のあるソフトウェアおよび迷惑メールからの受信メッセージと送信メッセージを保護するためです。ドメインからアカウントを管理ドメインの評判を保護するために、送信者がスプーフィング悪意を持っているかどうかを判断するのには脅威を使用します。
   
@@ -31,7 +31,7 @@ Office 365 のセキュリティを使用して、 &amp; 、組織内の脅威�
   
 1. [https://protection.office.com](https://protection.office.com) に移動します。
     
-2. 職場、学校のアカウントを使用して Office 365 にサインインします。
+2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
     
 3. 左側のウィンドウでは、**脅威の管理**を選択します。
     
@@ -39,7 +39,7 @@ Office 365 のセキュリティを使用して、 &amp; 、組織内の脅威�
   
  **セキュリティに移動する&amp;Office 365 アプリケーション起動ツールを使用してコンプライアンス センター。**
   
-1. 職場、学校のアカウントを使用して Office 365 にサインインします。
+1. 職場または学校のアカウントを使用して、Office 365 にサインインします。
     
 2. アプリケーション起動ツールを選択して![Office 365 のアプリケーション ランチャー アイコン](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)左上のコーナー、し、選択、**セキュリティ&amp;コンプライアンス**を並べて表示します。 
     

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 15fa4545-28b4-4dd4-bf85-88e0926bd5fc
 description: 'Office 365 のクラウド アプリケーションのセキュリティ、経由での検索について調査中の活動とアカウントで Office 365 環境内で起こってを確認できます。 '
-ms.openlocfilehash: 03db572ebddbdf27371f8e6fd2f0cdd91c14a12f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6b5aca33a73fbfaecf8133368a33956ddc92da7a
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531739"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706461"
 ---
 # <a name="investigate-an-activity-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security のアクティビティの調査
   
@@ -30,17 +30,13 @@ Office 365 クラウド アプリケーションのセキュリティは、 [Off
   
 ## <a name="how-to-get-to-the-activity-log-page"></a>アクティビティ ログのページを表示する方法
 
-1. グローバル管理者またはセキュリティ管理者に移動します。[https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用してサインインします。(を参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md).)
+1. グローバル管理者またはセキュリティ管理者に移動します。[https://security.microsoft.com](https://security.microsoft.com)し、職場、学校のアカウントを使用してサインインします。(を参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md).)
     
 2. セキュリティで&amp;コンプライアンス センターでは、**アラート**を選択して\>**管理警告の詳細**です。
     
-3. **Office 365 のクラウド アプリケーションのセキュリティ**を選択します。
-    
-    ![セキュリティ&amp;コンプライアンス センターでは、Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+3. **Office 365 のクラウド アプリケーションのセキュリティ**を選択します。<br/>![セキュリティ&amp;コンプライアンス センターでは、Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
   
-4. **調査**を選択して、画面の上部にナビゲーション ・ バーで\>**のアクティビティのログ**です。
-    
-    ![O365 CA ポータルでは、調査を選択します。](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
+4. **調査**を選択して、画面の上部にナビゲーション ・ バーで\>**のアクティビティのログ**です。<br/>![O365 CA ポータルでは、調査を選択します。](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
 ## <a name="review-and-investigate-activities"></a>確認し、活動の調査
 

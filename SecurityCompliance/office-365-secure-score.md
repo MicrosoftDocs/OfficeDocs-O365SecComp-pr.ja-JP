@@ -3,7 +3,7 @@ title: Office 365 セキュリティ スコア
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/05/2018
+ms.date: 11/27/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: どのようにセキュリティで保護された組織実際には、Office 365 を知りたいですか。セキュリティで保護されたスコアがお手伝いします。セキュリティで保護されたスコアは、通常の活動と、Offic 365 のセキュリティ設定に基づいて、組織のセキュリティを分析し、スコアが割り当てられます。
-ms.openlocfilehash: 0be9b68653ccdf17afedf7e22e1af5577f8a2caf
-ms.sourcegitcommit: 791d23e1c2dea622b6ef77a6e2bde32e1d31a41b
+ms.openlocfilehash: 0d19cd9512838bf2d8b0bff615ccaa1eea21266a
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25999991"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706181"
 ---
 # <a name="office-365-secure-score"></a>Office 365 セキュリティ スコア
 
@@ -28,7 +28,7 @@ ms.locfileid: "25999991"
 
 訪問によって、組織のセキュリティで保護されたスコアを表示するには場合は、組織が[Office 365 の企業](https://docs.microsoft.com/office365/enterprise/)、[マイクロソフトの 365 のビジネス](https://docs.microsoft.com/microsoft-365/business/)、または Office 365 のビジネス プレミアムを含むサブスクリプションを保持し、必要な権限がある場合、 [https://securescore.office.com](https://securescore.office.com)。 
 
-または、お客様がアクセスできるセキュリティとコンプライアンス センター ([https://protection.office.com](https://protection.office.com))、現在のスコアを提供するセキュリティで保護されたスコアのウィジェットを見つけるでしょう。
+または、お客様がアクセスできるセキュリティとコンプライアンス センター ([https://security.microsoft.com](https://security.microsoft.com))、現在のスコアを提供するセキュリティで保護されたスコアのウィジェットを見つけるでしょう。
 
 ![スコアのウィジェットをセキュリティで保護します。](media/SecureScoreWidget-o365.png)
 
@@ -39,7 +39,7 @@ ms.locfileid: "25999991"
 > [!NOTE]
 > スコアをセキュリティで保護されたにアクセスするのには、Office 365 管理者は、グローバル管理者またはセキュリティ管理者などをする必要があります。
   
-## <a name="how-it-works"></a>メカニズム
+## <a name="how-it-works"></a>しくみ
 
 (OneDrive、SharePoint では、Exchange など) し、使用している Office 365 サービスでの設定とアクティビティの検索を通知し、マイクロソフトによって確立された基準計画にそれらを比較してスコアの数値をセキュリティで保護します。調整方法に問題が、セキュリティのベスト プラクティスに基づくスコアが表示されます。
   
@@ -65,8 +65,6 @@ ms.locfileid: "25999991"
   
 持てないだけので、それにします。セキュリティで保護されたスコアを使用しているユーザーは、そのスコアを 5 つの時間よりもそれを使用していないお客様の増加を見てきました。(そのスコアの増加は、組織で使用されているセキュリティ機能と対応しています。)
   
-詳細については、[ブログの投稿](https://go.microsoft.com/fwlink/?linkid=836898)を確認します。 
-  
 > [!NOTE]
 > セキュリティで保護されたスコアは絶対的な測定値を表現していない可能性ユーザーが侵害される可能性を取得します。これは、侵害されるリスクを相殺することがあるコントロールを採用したエクステントを表現します。サービスはありませんは侵害しない、そのスコアをセキュリティで保護された何らかの方法で保証されたものとして解釈する必要があります。 
   
@@ -74,7 +72,7 @@ ms.locfileid: "25999991"
 
 ### <a name="who-can-use-secure-score"></a>セキュリティで保護されたスコアを使用してユーザーでしょうか。
 
-スコアをセキュリティで保護されたが、Office 365 の企業、マイクロソフト 365 のビジネス、または Office 365 のビジネス プレミアム サブスクリプションにアクセスできるは、(グローバル管理者、またはカスタムの管理役割) の管理者のアクセス許可を持っている人[https://securescore.office.com](https://securescore.office.com)。管理者の役割が割り当てられていないユーザーをセキュリティで保護されたスコアにアクセスすることができません。ただし、管理者は、組織内の他のユーザーとその結果を共有するのにツールを使用することができます。見ていくなど、他の管理者以外の役割のアクセス許可] ボックスの一覧で、将来的にします。特定の役割を検討することをしたい場合は、お知らせを投稿して、 [Office のセキュリティ、プライバシー&amp;準拠のコミュニティ](https://go.microsoft.com/fwlink/?linkid=836898)。
+スコアをセキュリティで保護されたが、Office 365 の企業、マイクロソフト 365 のビジネス、または Office 365 のビジネス プレミアム サブスクリプションにアクセスできるは、(グローバル管理者、またはカスタムの管理役割) の管理者のアクセス許可を持っている人[https://securescore.office.com](https://securescore.office.com)。管理者の役割が割り当てられていないユーザーをセキュリティで保護されたスコアにアクセスすることができません。ただし、管理者は、組織内の他のユーザーとその結果を共有するのにツールを使用することができます。見ていくなど、他の管理者以外の役割のアクセス許可] ボックスの一覧で、将来的にします。特定の役割を検討することをしたい場合は、お知らせの投稿、 [Office のセキュリティ、プライバシー&amp;準拠のコミュニティ](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy)。
   
 ### <a name="what-does-not-scored-mean"></a>[スコアではありません] は、どのような意味でしょうか。
 
@@ -108,7 +106,7 @@ ms.locfileid: "25999991"
   
 ### <a name="something-isnt-working-right-who-should-i-contact"></a>何かが正しく機能しません。誰に連絡すればよいでしょうか。
 
-問題があれば、お知らせを投稿して、 [Office のセキュリティ、プライバシー&amp;準拠のコミュニティ](https://go.microsoft.com/fwlink/?linkid=836898)。おコミュニティを監視しているし、ヘルプを提供します。
+問題があれば、お知らせの投稿、 [Office のセキュリティ、プライバシー&amp;準拠のコミュニティ](hhttps://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy)。おコミュニティを監視しているし、ヘルプを提供します。
   
 ### <a name="my-organization-only-has-certain-security-features-does-this-affect-my-score"></a>自分の所属組織では、セキュリティの特定の機能のみがします。スコアに影響はこれですか。
 

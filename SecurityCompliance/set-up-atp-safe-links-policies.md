@@ -5,7 +5,6 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.date: 11/02/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -13,16 +12,16 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Word、Excel、PowerPoint、および Visio のファイルおよび電子メール メッセージ内の悪意のあるリンクから組織を保護するために、安全なリンクのポリシーを設定します。
-ms.openlocfilehash: 2fce043aaf6e5e844415bd0caaaded8d30c18291
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: fb2af8e29bfe2de027a2d0e88cf9bcc07299fba9
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238459"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706091"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Office 365 の ATP の安全なリンクのポリシーを設定します
 
-[ATP の安全なリンク](atp-safe-links.md)、 [Office 365 の高度な脅威保護](office-365-atp.md)(ATP) の機能は、フィッシングやその他の攻撃で使用される、悪意のあるリンクから組織を保護するために役立ちます。必要がある場合[Office 365 のセキュリティに割り当てられたアクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)ATP の安全なリンク ポリシーをセットアップするには、web アドレス (Url) をクリックすることを確認のために、組織を保護します。メール内の Url、および Office ドキュメント内の Url をスキャンするのには、ATP の安全なリンク ポリシーを構成できます。
+[ATP の安全なリンク](atp-safe-links.md)、 [Office 365 の高度な脅威保護](office-365-atp.md)(ATP) の機能は、フィッシングやその他の攻撃で使用される、悪意のあるリンクから組織を保護するために役立ちます。必要がある場合[Office 365 のセキュリティのアクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)ATP の安全なリンク ポリシーをセットアップするには、web アドレス (Url) をクリックすることを確認のために、組織を保護します。メール内の Url、および Office ドキュメント内の Url をスキャンするのには、ATP の安全なリンク ポリシーを構成できます。
   
 [ATP ように継続的に新しい機能が追加されて](office-365-atp.md#new-features-are-continually-being-added-to-atp)います。新機能が追加されるは、既存の分析ツールの安全なリンク ポリシーを調整する必要があります。
 
@@ -52,13 +51,11 @@ ms.locfileid: "26238459"
 
 [Office 365 の高度な脅威保護](office-365-atp.md)がある場合は、組織内の全員に適用される既定の ATP の安全なリンク ポリシーするがあります。確認して、ことを確認し、必要な場合は、既定のポリシーを編集します。
   
-1. [https://protection.office.com](https://protection.office.com)と、職場、学校のアカウントでサインインします。 
+1. [https://security.microsoft.com](https://security.microsoft.com)と、職場、学校のアカウントでサインインします。 
     
 2. **脅威の管理**の下で、左側のナビゲーションでは、選択**ポリシー \> ** **安全なリンク**です。
     
-3. **組織全体に適用されるポリシー** ] セクションで **[既定**] を選択しの**編集**([編集] ボタンのような鉛筆) します。 
-    
-    ![安全なリンクの保護のため、既定のポリシーを編集するのにはの編集] をクリックします。](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
+3. **組織全体に適用されるポリシー** ] セクションで **[既定**] を選択しの**編集**([編集] ボタンのような鉛筆) します。<br/>![安全なリンクの保護のため、既定のポリシーを編集するのにはの編集] をクリックします。](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
   
 4. **次の Url をブロックする**] セクションでは、訪問から、組織内のユーザーを禁止する 1 つまたは複数の Url を指定します。( [ATP の安全なリンクを使用してカスタムのブロックされた Url リストを設定する](set-up-a-custom-blocked-urls-list-wtih-atp.md)を参照してください)。
     
@@ -70,7 +67,7 @@ ms.locfileid: "26238459"
 
 レビュー (または編集した) すべてのユーザーに適用される既定の ATP の安全なリンク ポリシー、次の手順、特定の受信者に適用する追加のポリシーを定義します。たとえば、追加のポリシーを定義することにより、既定のポリシーに例外を指定できます。 
   
-1. [https://protection.office.com](https://protection.office.com)と、職場、学校のアカウントでサインインします。 
+1. [https://security.microsoft.com](https://security.microsoft.com)と、職場、学校のアカウントでサインインします。 
     
 2. **脅威の管理**の下で、左側のナビゲーションでは、**ポリシー**を選択します。
     

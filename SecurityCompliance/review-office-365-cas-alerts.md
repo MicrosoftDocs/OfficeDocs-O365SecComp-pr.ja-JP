@@ -3,7 +3,6 @@ title: Office 365 Cloud App Security の警告の確認と処理
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: Office 365 のクラウド アプリケーションのセキュリティに潜在的な懸案事項を表示し、アクションを実行するのには [通知] ページを使用します。閉じるし、アラートを解決するまたは必要に応じて、ユーザー アカウントを一時停止できます。
-ms.openlocfilehash: 62431adc73354e573978781f120a11746aef08d9
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 16d24ef7075a2db1dab86ee322b14f886c48b98b
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531537"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706121"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security の警告の確認と処理
   
@@ -33,17 +32,13 @@ Office 365 のクラウド アプリケーションのセキュリティで [通
   
 ## <a name="how-to-get-to-the-alerts-page"></a>[通知] ページを表示する方法
 
-1. グローバル管理者またはセキュリティ管理者に移動します。[https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用してサインインします。 
+1. グローバル管理者またはセキュリティ管理者に移動します。[https://security.microsoft.com](https://security.microsoft.com)し、職場、学校のアカウントを使用してサインインします。 
     
 2. セキュリティで&amp;コンプライアンス センターでは、**アラート**を選択して\>**管理警告の詳細**です。
     
-3. **Office 365 のクラウド アプリケーションのセキュリティ**を選択します。
-    
-    ![セキュリティ&amp;コンプライアンス センターでは、Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+3. **Office 365 のクラウド アプリケーションのセキュリティ**を選択します。<br/>![セキュリティ&amp;コンプライアンス センターでは、Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
   
-4. 画面の上部にナビゲーション ・ バーの**アラート**を選択します。
-    
-    ![[アラート] ページで、トリガーされたアラートと行った操作を確認できます。](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
+4. 画面の上部にナビゲーション ・ バーの**アラート**を選択します。<br/>![[アラート] ページで、トリガーされたアラートと行った操作を確認できます。](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
   
 ## <a name="review-and-handle-alerts"></a>アラートの確認とハンドル
 

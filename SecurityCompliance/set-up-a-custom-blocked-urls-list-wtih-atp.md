@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: Office 365 の高度な脅威保護を使用して、組織のブロックされた Url の一覧を設定する方法の詳細については、この資料を参照してください。ブロックされた Url は、電子メール メッセージと、ATP の安全なリンク ポリシーに基づき、Office ドキュメントに適用されます。
-ms.openlocfilehash: 1f7a991b9ab8f3a9f16616379cfb6c4c3c546260
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: cd17fe61b7ecd5becd0918323952f304a73a4ce0
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238369"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706211"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Office 365 の ATP の安全なリンクを使用してカスタムのブロックされた Url リストを設定します。
 
@@ -33,17 +33,11 @@ ms.locfileid: "26238369"
 
 [Office 365 の ATP の安全なリンク](atp-safe-links.md)では、組織のカスタム ブロックされた Url の一覧を含む、いくつかのリストを使用します。必要な権限があれば、組織のユーザー設定リストを設定できます。組織の安全なリンクの既定のポリシーを編集することによってこれを行います。
   
-1. [https://protection.office.com](https://protection.office.com)と、職場、学校のアカウントでサインインします。 
+1. [https://security.microsoft.com](https://security.microsoft.com)と、職場、学校のアカウントでサインインします。 
     
 2. **脅威の管理**の下で、左側のナビゲーションで [**ポリシー** ] を選択します\>**安全なリンク**です。
     
-3. **組織全体に適用されるポリシー** ] セクションで **[既定**] を選択しの**編集**([編集] ボタンのような鉛筆) します。 
-    
-    ![安全なリンクの保護のため、既定のポリシーを編集するのにはの編集] をクリックします。](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
-  
-    これでは、ブロックされた Url の一覧を表示します。最初にあることに注意して、すべての Url を一覧表示する必要はありません。
-    
-    ![Url のブロック リストは、組織全体に適用される安全なリンク ポリシー、既定では。](media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
+3. **組織全体に適用されるポリシー** ] セクションで **[既定**] を選択しの**編集**([編集] ボタンのような鉛筆) します。<br/>![安全なリンクの保護のため、既定のポリシーを編集するのにはの編集] をクリックします。](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>これでは、ブロックされた Url の一覧を表示します。最初にあることに注意して、すべての Url を一覧表示する必要はありません。<br/>![Url のブロック リストは、組織全体に適用される安全なリンク ポリシー、既定では。](media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
   
 4. **有効な URL を入力**] ボックスを選択し、URL を入力し、プラス記号 (+) を選択し。留意する点を以下に示します。 
     
