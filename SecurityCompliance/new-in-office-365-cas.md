@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: reference
-ms.date: 10/31/2018
+ms.date: 11/28/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -13,24 +13,63 @@ search.appverid:
 - MOE150
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: Office 365 のクラウド アプリケーションのセキュリティの新機能を参照してください。
-ms.openlocfilehash: f661d0d541e84db89b7abd99fd77ef9a767a4cd0
-ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
+ms.openlocfilehash: a3ca4504d80cbb39b51ecbcf3a5165bc5139e07c
+ms.sourcegitcommit: bf628da123a89d9422e8cff02165b1e2d35dfe12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25935574"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26872015"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>Office 365 のクラウド アプリケーションのセキュリティの新機能
 
-Office 365 クラウド アプリケーションのセキュリティ (旧称 Office 365 の高度なセキュリティ管理)、[マイクロソフトのクラウド アプリケーションのセキュリティ](https://aka.ms/whatiscas)での電源がオンのアップデートおよび新機能の概要を取得するには、この資料を参照してください。
+**概要**Office 365 クラウド アプリケーションのセキュリティ (旧称 Office 365 の高度なセキュリティ管理)、[マイクロソフトのクラウド アプリケーションのセキュリティ](https://aka.ms/whatiscas)での電源がオンのアップデートおよび新機能の概要を取得するには、この資料を参照してください。
   
 機能が追加または強化、この資料は頻繁に更新されます。約 2 週間後、マイクロソフトのクラウド アプリケーションのセキュリティ更新プログラム、office 365 のクラウド アプリケーションのセキュリティ更新プログラムがリリースされ、すべてのマイクロソフトのクラウド アプリケーションのセキュリティ更新プログラムが Office 365 のクラウド アプリケーションのセキュリティを適用します。さらに、新しい機能は、Office 365 のクラウド アプリケーションのセキュリティ環境で表示するには、そのリリース日の後 1 週間以上かかる場合があります。
+
+## <a name="office-365-cloud-app-security-release-136"></a>Office 365 のクラウド アプリケーションのセキュリティ情報公開 136
+
+*2018 年 11 月 25日をリリースしました。*
+
+の**次の[マイクロソフトのクラウド アプリケーションのセキュリティは、136 を解放](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-136)** します。
+
+- **クラウドの検出の更新**追加をサポートするカスタム ログ パーサーが強化されより複雑な web トラフィックをログに記録形式です。これらのユーザーが拡張機能の一部では、headerless の CSV ログ ファイル用のカスタム ヘッダーを入力できるようになりました、特殊な区切り記号を使用して、キーと値のファイルを Syslog ファイルの形式を処理します。
+
+- **新しい異常検出ポリシー: 受信トレイの不審な操作の規則**このポリシーは、ユーザーの受信トレイで削除するか、メッセージまたはフォルダーを移動する不審なルールが設定されている場合、お客様の環境およびアラートのトリガーをプロファイルします。あるユーザーのアカウントが侵害されたことメッセージが意図的に非表示、およびメールボックスがスパムやマルウェア、組織内の配布に使用されている可能性があります。
+
+- **アプリケーションのアクセス許可ポリシーのグループのサポート**クラウド アプリケーションのセキュリティになりましたより細かく、アプリケーションのアクセス許可ポリシーを定義する機能、アプリケーションを承認するユーザーのグループ メンバーシップに基づきます。などのアクセス許可を承認したユーザーが管理者グループのメンバーである場合にのみ、高いアクセス許可の要求という場合は、一般的でないアプリケーションを無効にするポリシーを設定するのには管理者が決定できます。
+
+
+## <a name="office-365-cloud-app-security-releases-133-134-and-135"></a>133、134、135 の office 365 のクラウド アプリケーションのセキュリティ リリース
+
+*2018 年 10 月 11 月にリリースされました。*
+
+の**次の[マイクロソフトのクラウド アプリケーションのセキュリティは、133、134、135 を解放](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-133-134-135)** します。
+
+- **新しい異常検出のポリシー**のロールアウトを段階的にします。
+    
+    - 新しい**承認されていないアプリケーションにデータ exfiltration**ポリシーはユーザーまたは IP アドレスは、組織内の exfiltrate 情報への試みのような活動を実行する制裁措置されていないアプリケーションを使用する場合に警告するために自動的に有効になります。
+    
+    - 新しい**削除して複数の VM 活動**ポリシーでは、プロファイル、環境と、ユーザーが組織のベースラインを基準として、1 つのセッションで複数の Vm を削除するときにアラートをトリガーします。
+
+- **I フィルターのクラウドの検出をサポート**今すぐクラウド アプリケーションのセキュリティのクラウドの検出機能は、i フィルターの syslog パーサーのサポートを拡張しています。
+
+
+## <a name="office-365-cloud-app-security-release-131"></a>Office 365 のクラウド アプリケーションのセキュリティ情報公開 131
+
+*、2018 年 9 月 16 日を公開しました。*
+
+の**次の[マイクロソフトのクラウド アプリケーションのセキュリティは、131 を解放](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-131)** します。
+
+- **危険な OAuth のアプリケーションに対するアクセス許可を自動的に無効**どの OAuth アプリケーションを制御できるよう、ユーザーは Office の OAuth のアプリケーションのアプリケーションのアクセス許可を取り消すと、それらにアクセスします。アプリケーションのアクセス許可ポリシーを作成するには、アプリケーションのアクセス許可を失効するポリシーを設定できます。
+
+- **クラウドの検出の追加組み込みパーサーがサポートされています。** クラウドの検出は、Forcepoint Web セキュリティのクラウドのログ形式をサポートしています。
+
   
 ## <a name="office-365-cloud-app-security-release-130"></a>Office 365 のクラウド アプリケーションのセキュリティ情報公開 130
 
 *2018 年 9 月 5日をリリースしました。*
 
-**[マイクロソフト クラウド アプリケーションのセキュリティは、130 をリリース](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-130)することで解放します**。
+の**次の[マイクロソフトのクラウド アプリケーションのセキュリティは、130 を解放](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-130)** します。
 
 - **新しいメニュー バー**365 の Microsoft 製品では、全体でより一貫した管理機能を提供し、使用すると、マイクロソフトのセキュリティ ・ ソリューションの間でより簡単にピボットは、クラウド アプリケーションのセキュリティのポータルのメニュー バーを画面の左側に移動します。この一貫性のあるナビゲーションには、1 つのマイクロソフト セキュリティ ポータルから移動するときに自分で回転することが発生します。<br/>![クラウド アプリケーションのセキュリティを Office のメニュー バー](media/OCAS-MenuBar.png)<br/>
 
@@ -43,7 +82,7 @@ Office 365 クラウド アプリケーションのセキュリティ (旧称 Of
 
 *、2018 年 8 月 5日を公開しました。* 
   
-**[マイクロソフト クラウド アプリケーションのセキュリティは、128 をリリース](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-128)を解放します**。 
+の**次の[マイクロソフトのクラウド アプリケーションのセキュリティは、128 を解放](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-128)** します。 
   
 - **複数のアプリケーション間でのアプリケーションのアクセス許可**アプリケーションのアクセス許可が付与されているアプリケーションでは、今すぐアクセスを禁止したり、1 つのアクションで複数のアプリケーションを承認できます。など、組織内のユーザーからアクセス許可が与えられている、アクセスを禁止するすべてのアプリケーションを選択し、禁止ユーザーのアプリケーションを許可するすべての同意を取り消すにはすべてのアプリケーションを確認することができ、ユーザーがアプリケーションにアクセス許可を付与すると、不要になった。 
     
@@ -53,7 +92,7 @@ Office 365 クラウド アプリケーションのセキュリティ (旧称 Of
 
 *2018 年 7 月 7日をリリースしました。* 
   
-**[マイクロソフト クラウド アプリケーションのセキュリティは、126 をリリース](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-126)にリリースされました**。 
+の**次の[マイクロソフトのクラウド アプリケーションのセキュリティは、126 を解放](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-126)** します。 
   
 - **不審なアクティビティの自動修復**異常検出のポリシーによって発生した、不審なセッションの自動修復アクションを設定できます。この拡張機能を使用すると、侵害が発生したときに通知を受け取るとガバナンスのアクションを自動的に適用、次のようにユーザーを中断できます。詳細については、 [Office 365 のクラウド アプリケーションのセキュリティでの異常検出ポリシー](anomaly-detection-policies-in-ocas.md)を参照してください。
     
@@ -65,7 +104,7 @@ Office 365 クラウド アプリケーションのセキュリティ (旧称 Of
 
 *2018 年 6 月 10日をリリースしました。* 
   
-**[マイクロソフト クラウド アプリケーションのセキュリティは、124 をリリース](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-124)にリリースされました**。 
+の**次の[マイクロソフトのクラウド アプリケーションのセキュリティは、124 を解放](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-124)** します。 
   
 - **スコープ ベースの展開**企業は、グループ メンバーシップに基づいて、ユーザーを監視し、保護するために細かく確認できます。この機能を使用すると、すべての活動が表示されません、保護されたアプリケーションのいずれかのユーザーを選択できます。スコープ指定された監視では、コンプライアンス、およびライセンスに特に便利です。一部のコンプライアンス要件では、ローカルの規制により、特定の国からのユーザーを監視しないことが必要となります。より少ないユーザーは、Office 365 のクラウド アプリケーションのセキュリティのライセンスの制限の範囲内を監視することができます。 
     
@@ -75,7 +114,7 @@ Office 365 クラウド アプリケーションのセキュリティ (旧称 Of
 
 *、2018 年 5 月月 6 日を公開しました。* 
   
-**[マイクロソフト クラウド アプリケーションのセキュリティは、121 をリリース](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-121)にリリースされました**。 
+の**次の[マイクロソフトのクラウド アプリケーションのセキュリティは、121 を解放](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-121)** します。 
   
 - **異常検出ポリシーの改善**。ロールアウトを段階的に脅威の検出の 2 つの新しいタイプを含めるには、office 365 のクラウド アプリケーション セキュリティの異常検出ポリシーが強化されました。 
     
@@ -89,7 +128,7 @@ Office 365 クラウド アプリケーションのセキュリティ (旧称 Of
 
 *、2018 年 4 月 22日を公開しました。* 
   
-**[マイクロソフト クラウド アプリケーションのセキュリティは、120 をリリース](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-120)にリリースされました**。 
+の**次の[マイクロソフトのクラウド アプリケーションのセキュリティは、120 を解放](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-120)** します。 
   
 - **ユーザーの活動として、社内のアプリケーション**です。Office 365 と Azure Active Directory (AD の Azure) は、ここで徐々 に進行として Office 365 と AD の Azure アプリケーション (内部および外部の両方) によって実行されるユーザー ・ アカウント ・ アクティビティの内部アプリケーションを検出する機能をします。これにより、アプリケーションが予期しないと、許可されていないアクティビティを実行する場合に警告するためポリシーを作成することができます。 
     
@@ -99,7 +138,7 @@ Office 365 クラウド アプリケーションのセキュリティ (旧称 Of
 
 *、2018 年 4 月 1 日を公開しました。* 
   
-**[マイクロソフト クラウド アプリケーションのセキュリティのリリース番号は 119](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-119)でリリースされました**。 
+の**次の[マイクロソフトのクラウド アプリケーションのセキュリティは、119 を解放](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-119)** します。 
   
 - **クラウドの検出を改善**します。クラウドの検出では、Office 365 の使用方法の詳細を表示し、他のアプリケーションを容易にすること上のユーザーと IP アドレスの詳細についてを提供します。詳細については、 [Office 365 のクラウド アプリケーションのセキュリティでアプリケーションの検出調査結果のレビュー](review-app-discovery-findings-in-ocas.md)を参照してください。
     
@@ -109,7 +148,7 @@ Office 365 クラウド アプリケーションのセキュリティ (旧称 Of
 
 *、2018 年 3 月 18日を公開しました。* 
   
-** [118 を解放するマイクロソフトのクラウド アプリケーションのセキュリティ](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-118)にリリースされました**。 
+の**次の[マイクロソフトのクラウド アプリケーションのセキュリティは、118 を解放](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-118)** します。 
   
 - **Barracuda をサポート**しています。クラウドの探索は、Barracuda F シリーズのファイアウォールおよび Barracuda F シリーズ ファイアウォールの web ログのストリーミングをサポートします。 
     
@@ -117,7 +156,7 @@ Office 365 クラウド アプリケーションのセキュリティ (旧称 Of
 
 *、2018 年 3 月 6日を公開しました。* 
   
-**[マイクロソフト クラウド アプリケーションのセキュリティは、117 をリリース](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-117)にリリースされました**。 
+の**次の[マイクロソフトのクラウド アプリケーションのセキュリティは、117 を解放](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-117)** します。 
   
 - **i フィルターをサポート**しています。クラウドの探索は、i フィルターをサポートしています。 
     
@@ -125,7 +164,7 @@ Office 365 クラウド アプリケーションのセキュリティ (旧称 Of
 
 *2018 年 2 月 18日をリリースしました。* 
   
-**[マイクロソフト クラウド アプリケーションのセキュリティは、116 をリリース](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-116)にリリースされました**。 
+の**次の[マイクロソフトのクラウド アプリケーションのセキュリティは、116 を解放](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-116)** します。 
   
 - **異常検出ポリシーの拡張機能**です。異常検出のポリシーで不可能な旅行、不審な IP アドレスからの活動を含む新規のシナリオに基づく検出と Office 365 のクラウド アプリケーションのセキュリティが強化され、複数の失敗したログイン試行します。ボックスの脅威の検出を提供する、クラウド環境全体にわたって、新しいポリシーが自動的に有効。 にします。さらに、新しいポリシーは、調査のプロセスを高速化し、継続的な脅威が含まれていることができます、Office 365 のクラウド アプリケーションのセキュリティ検出エンジンからより多くのデータを公開します。詳細については、[瞬間的な動作分析と異常検出](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy)、マイクロソフトのクラウド アプリケーションのセキュリティの記事を参照してください。
     
@@ -135,7 +174,7 @@ Office 365 クラウド アプリケーションのセキュリティ (旧称 Of
 
 *、2018 年 1 月 21 日を公開しました。* 
   
-**[マイクロソフト クラウド アプリケーションのセキュリティは、114 をリリース](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-114)にリリースされました**。 
+の**次の[マイクロソフトのクラウド アプリケーションのセキュリティは、114 を解放](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-114)** します。 
   
 - **サービスの状態**です。**ヘルプ**に移動して Office 365 のクラウド アプリケーションのセキュリティ サービスの現在の状態を確認できる\>**システムの状態**です。 
     
@@ -147,7 +186,7 @@ Office 365 クラウド アプリケーションのセキュリティ (旧称 Of
 
 *、2018 年 1 月 8日をリリースしました。* 
   
-**[マイクロソフト クラウド アプリケーションのセキュリティは、113 をリリース](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-113)にリリースされました**。 
+の**次の[マイクロソフトのクラウド アプリケーションのセキュリティは、113 を解放](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-113)** します。 
   
 - **汎用的な形式では、ログ パーサー サポート**します。クラウド検出ログ パーサーをサポートして、次の一般的な形式: LEEF、CEF、および W3C。 
     
@@ -155,7 +194,7 @@ Office 365 クラウド アプリケーションのセキュリティ (旧称 Of
 
 *2017 年 12 月 24日をリリースしました。* 
   
-**[マイクロソフト クラウド アプリケーションのセキュリティは、112 をリリース](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-112)にリリースされました**。 
+の**次の[マイクロソフトのクラウド アプリケーションのセキュリティは、112 を解放](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-112)** します。 
   
 - **関連情報の引き出し**です。アクティビティ ・ ログにユーザー名または IP アドレスをクリックして関連する情報の引き出しをアクセスできます。 
     
@@ -171,7 +210,7 @@ Office 365 クラウド アプリケーションのセキュリティ (旧称 Of
 
 *2017 年 12 月 10日をリリースしました。* 
   
-**[マイクロソフト クラウド アプリケーションのセキュリティは、111 をリリース](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-111)にリリースされました**。 
+の**次の[マイクロソフトのクラウド アプリケーションのセキュリティは、111 を解放](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-111)** します。 
   
 - **時間フィルターの機能強化**します。時間フィルターは、使いやすくなりました。ビューでは、アクティビティ ・ ログ、ポリシー、詳細の表示を使用して、アラートなどの時間フィルターにアクセスするには、フィルターの一覧で**日付**を選択します。オプションを選択などの前に、後、または間に時間フィルターを適用します。 
     
@@ -181,7 +220,7 @@ Office 365 クラウド アプリケーションのセキュリティ (旧称 Of
 
 *2017 年 11 月 26日をリリースしました。* 
   
-**[マイクロソフト クラウド アプリケーションのセキュリティは、110 をリリース](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-110)とリリースされました**。 
+の**次の[マイクロソフトのクラウド アプリケーションのセキュリティは、110 を解放](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-110)** します。 
   
 - **SIEM サーバの統合が一般に利用可能なようになりました**。Office 365 のクラウド アプリケーションのセキュリティ、SIEM のサーバーに接続します。今すぐ送信できます警告および活動に自動的に SIEM 任意のサーバーに SIEM のエージェントを構成することによって。[統合 SIEM サーバーに Office 365 のクラウド アプリケーションのセキュリティ](integrate-your-siem-server-with-office-365-cas.md)を参照してください。
     
@@ -193,7 +232,7 @@ Office 365 クラウド アプリケーションのセキュリティ (旧称 Of
 
 *2017 年 8 月 13日をリリースしました。* 
   
-**[マイクロソフト クラウド アプリケーションのセキュリティは、102 をリリース](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-102)にリリースされました**。 
+の**次の[マイクロソフトのクラウド アプリケーションのセキュリティは、102 を解放](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-102)** します。 
   
 - **新しいユーザー調査の操作**は、ドリル ダウンのレベルを追加を有効にするユーザーの調査をします。[調査] ページでは、アクティビティ、ユーザ、またはアカウントをポイントして、フィルターとして適用して、そこから関連の活動やイベントを表示することができます。 
     
@@ -201,7 +240,7 @@ Office 365 クラウド アプリケーションのセキュリティ (旧称 Of
 
 *、2017 年 7 月 17日を公開しました。* 
   
-**[マイクロソフト クラウド アプリケーションのセキュリティは、100 をリリース](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-100)にリリースされました**。 
+の**次の[マイクロソフトのクラウド アプリケーションのセキュリティは、100 をリリース](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-100)** します。 
   
 - **セキュリティ拡張機能**は、一元的に管理できる、すべてのセキュリティ拡張機能 API トークンと SIEM のエージェントを含む、Office 365 クラウド アプリケーション セキュリティの新しいダッシュ ボードです。セキュリティ拡張機能のダッシュ ボードを表示するには、次の手順を実行します。 
     
