@@ -265,6 +265,7 @@
 ## [SIEM サーバー統合](siem-server-integration.md)
 
 # コンプライアンス ソリューション
+## [Microsoft Service Trust Portal を始める。](get-started-with-service-trust-portal.md)
 ## [Microsoft クラウド サービスの利用時に、コンプライアンス マネージャーを使用してデータ保護と規制の要件を満たす](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [DSR ケース ツールを使用して GDPR のデータ主体要求を管理する](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [GDPR のための Office 365 の情報保護](office-365-information-protection-for-gdpr.md)
