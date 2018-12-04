@@ -233,6 +233,7 @@
 ## [監査ログ検索を有効または無効にする](turn-audit-log-search-on-or-off.md)
 ## [メールボックスの監査を有効にする](enable-mailbox-auditing.md)
 ## [監査ログの詳細なプロパティ](detailed-properties-in-the-office-365-audit-log.md)
+## [監査ログを使用して一般的なシナリオのトラブルシューティングを行う](auditing-troubleshooting-scenarios.md)
 ## [監査ログで共有監査を使用する](use-sharing-auditing.md)
 ## [監査ログで電子情報開示アクティビティを検索する](search-for-ediscovery-activities-in-the-audit-log.md)
 # [セキュリティとコンプライアンスを監視する]()
