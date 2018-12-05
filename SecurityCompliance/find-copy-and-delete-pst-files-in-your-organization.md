@@ -3,7 +3,7 @@ title: PST コレクション ツールを使用して、検索、コピー、�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/18/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,14 +12,17 @@ ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Microsoft PST コレクション ツールを使用して、組織全体にわたって散在している PST ファイルのインベントリを取得するのには、組織のネットワークを検索します。PST ファイルを検索した後は、Office 365 にインポートするために中央の場所にコピーするのに PST コレクション ツールを使用することができます。
-ms.openlocfilehash: 0537a65a32fa25704045bd587cb20f9eee13f628
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 34395eee7776d8bff1ddccb7fed5b683e97c02c7
+ms.sourcegitcommit: c59a082dca6593d0e35e58124ee6ba240547bfa5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038130"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27154213"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>PST コレクション ツールを使用して、検索、コピー、および組織内の PST ファイルを削除するには
+
+> [!IMPORTANT]
+> この資料に記載されている PST の回収ツールは、Microsoft の標準サポート プログラムまたはサービスでサポートされていません。ツールは、どのような種類の保証もなく、IS として提供されます。さらに、Microsoft はいかなる黙示の保証を含む、いずれかのもので、商品性または特定目的に対する適合性の。ツールおよびドキュメントのパフォーマンスまたは使用から生じるすべてのリスク負担しなければなりません。いかなる場合においてマイクロソフト、著者、または、作成、生産、またはツールの配信に参加するすべてのユーザーを負いませんいかなる損害に対して損害を含め、制限、ビジネス利益、業務の中断、損失の損失の損害ビジネス情報、またはその他の金銭の損失) マイクロソフトが損害の可能性について知らされていた場合でも、ツールやドキュメントを使用すること、または使用起因します。
 
 PST ファイルは、組織のネットワークを検索するのには Microsoft PST コレクション ツールを使用できます。ツールを使用して、組織全体にわたって散在している PST ファイルのインベントリを取得できます。PST ファイルを検索した後は、中央の場所にコピーするのに PST コレクション ツールを使用できます。Pst ファイルを 1 か所でもし、Office 365 のコンプライアンス機能の豊富なセットを適用できる Exchange Online のメールボックス (または 1 つの Exchange Online メールボックス) をインポートすることを許可します。これは pst ファイルにインポートするユーザーのアーカイブが電子的証拠開示を使用してメッセージを保持する電子的証拠開示検索ツールを使用してインポートする PST ファイル内の特定のメッセージを検索して、メールボックスを保持して、Office 365 の保存ポリシーとライフ サイクルの管理も含まれます。サイクルは、メッセージングを使用してこれらのメッセージのレコード管理機能では、Exchange オンライン。収集した PST ファイルが Office 365 に正常にインポートされたことが確実に把握して後、は、ネットワーク上の元の場所から削除するのにはツールを使用することができます。 
   
