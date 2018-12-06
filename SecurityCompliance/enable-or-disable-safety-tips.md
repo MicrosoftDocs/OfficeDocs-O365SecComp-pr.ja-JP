@@ -3,7 +3,7 @@ title: Office 365 で安全性のヒントを有効または無効にする
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/6/2017
+ms.date: 12/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 description: Office 365 および EOP の管理者に電子メール メッセージで安全性のヒントを無効にする方法を指示します。
-ms.openlocfilehash: 3a8257f9d34ec5def54e2b9c9e919172366d023f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8e5d8bf1d2f831b5d74ca3accd8b434519bfeaab
+ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532251"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27180857"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Office 365 で安全性のヒントを有効または無効にする
 
@@ -36,9 +36,9 @@ Office 365 は、既定では、組織の安全性のヒントを有効にし、
 ## <a name="to-enable-or-disable-safety-tips-by-using-the-office-365-security-amp-compliance-center"></a>有効にするか、Office 365 のセキュリティを使用して安全性のヒントを無効にする&amp;コンプライアンス センター
 <a name="SandCCsafetytip"> </a>
 
-1. [https://protection.office.com](https://protection.office.com)。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
-2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
+2. 職場または学校アカウントで Office 365 にサインインします。
     
 3. **脅威の管理**を選択して\>**ポリシー**です。 
     
@@ -60,7 +60,7 @@ Office 365 は、既定では、組織の安全性のヒントを有効にし、
     
 9. **安全性のヒント**は、下の安全性に関するヒントを有効にするには、チェック ボックス**に**します。安全性のヒントを無効にするには、 **[** 保存] チェック ボックスをオフにします。 
     
-10. [ **保存**] を選択します。
+10. [ **保存**] を選びます。
     
 ## <a name="to-enable-or-disable-safety-tips-by-using-powershell"></a>有効にするまたは PowerShell を使用して安全性のヒントを無効にするには
 <a name="pshellsafetytip"> </a>
@@ -75,7 +75,7 @@ Office 365 は、既定では、組織の安全性のヒントを有効にし、
   Set-HostedContentFilterPolicy -Identity "policy name " -InlineSafetyTipsEnabled <$true|$false>
   ```
 
-    詳細は次のとおりです。
+詳細は次のとおりです。
     
   -  *ポリシー名*はなどの**既定値**を変更するポリシーの名前です。
     
@@ -89,9 +89,9 @@ Office 365 は、既定では、組織の安全性のヒントを有効にし、
   PS C:\> Set-HostedContentFilterPolicy -Identity "default" -InlineSafetyTipsEnabled $false
   ```
 
-    このコマンドレットの詳細については、[一連の HostedContentFilterPolicy](https://technet.microsoft.com/library/jj200781.aspx)を参照してください。
+このコマンドレットの詳細については、[一連の HostedContentFilterPolicy](https://technet.microsoft.com/library/jj200781.aspx)を参照してください。
     
-## <a name="still-need-help"></a>ヘルプが必要ですか。
+## <a name="still-need-help"></a>さらにサポートが必要な場合
 <a name="pshellsafetytip"> </a>
 
 安全性のヒントを無効には、電子メール メッセージに表示する場合は、これらのことを確認します。
