@@ -3,7 +3,7 @@ title: Office 365 でのスプーフィング対策保護
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/11/2018
+ms.date: 12/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: この資料では、どのように Office 365 を軽減するフィッシング攻撃使用が送信者ドメインがスプーフィングされているドメインは、偽造されたことを説明します。メッセージを分析してこれを達成して、標準的な電子メールの認証方法やその他の送信者評価の手法を使用して、neithe を認証することができるものをブロックします。Office 365 の組織に公開するフィッシング攻撃の数を減らすためにこの変更が実装されています。
-ms.openlocfilehash: 231f66b094a98363375a68fbddc8b71077b7baa4
-ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
+ms.openlocfilehash: 95f4995b6447870700bc483f205ca3ff831045f5
+ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498113"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27194718"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 でのスプーフィング対策保護
 
@@ -250,7 +250,7 @@ To: someone@example.com
   
 (この資料の前半[のなりすましのさまざまな種類の間の Differentiating](#differentiating-between-different-types-of-spoofing)を参照してください) メッセージを偽装することが複数の異なる方法がありますが、2018年 3 月年 Office 365 は、これらのメッセージを処理する方法がないまだ統合します。次の表は、クロス ドメインのなりすまし保護が新しい動作を実行すると、簡単な概要です。 
   
-|**スプーフィングの種類**|**カテゴリ**|**追加の安全性のヒントですか。**|**適用対象**|
+|**スプーフィングの種類**|**分類**|**追加の安全性のヒントですか。**|**適用対象**|
 |:-----|:-----|:-----|:-----|
 |DMARC の失敗 (検疫または拒否)  <br/> |HSPM (既定値) は、SPM または PHSH 場合もあります。  <br/> |いいえ (まだ)  <br/> |すべての Office 365 のお客様、Outlook.com  <br/> |
 |自己自身  <br/> |SPM  <br/> |はい  <br/> |すべての Office 365 組織では、Outlook.com  <br/> |
@@ -302,17 +302,17 @@ Set-AntiphishPolicy -Identity $name <fill in rest of parameters>
   
 ![フィッシング対策の既定ポリシーの詳細](media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
   
-以降の 2018、PowerShell を使用して、既定の保護を設定します。
+PowerShell を使用して、既定の保護レベルを設定します。
   
 ```
-$defaultAntiphishPolicy = Get-AntiphishingPolicy -IsDefault $true
+$defaultAntiphishPolicy = Get-AntiphishPolicy | ? {$_.IsDefault -eq $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement <$true|$false>
 ```
 
 のみを無効にしてスプーフィング対策の保護別のメール サーバーまたは Office 365 の前にサーバーがある場合 (詳細についてはアンチのなりすましを無効にする正当なシナリオを参照してください)。 
   
 ```
-$defaultAntiphishPolicy = Get-AntiphishingPolicy -IsDefault $true
+$defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement $false 
 
 ```
@@ -412,7 +412,7 @@ ATP の有無にかかわらず、Exchange Online を使用する組織は、こ
   
 一般に、メッセージに適用されるポリシーは、CAT (カテゴリ) のプロパティに X Forefront スパム対策レポート ヘッダーで識別されます。 
   
-|**Priority**|**ポリシー**|**カテゴリ**|**場所、管理しますか。**|**適用対象**|
+|**Priority**|**ポリシー**|**分類**|**場所、管理しますか。**|**適用対象**|
 |:-----|:-----|:-----|:-----|:-----|
 |1   <br/> |マルウェア  <br/> |MALW  <br/> |[マルウェアのポリシー](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |すべての組織  <br/> |
 |2   <br/> |フィッシング  <br/> |PHSH  <br/> |[ホストされるコンテンツ フィルター ポリシー](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |すべての組織  <br/> |

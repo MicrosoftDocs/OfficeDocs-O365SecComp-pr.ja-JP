@@ -14,14 +14,14 @@ localization_priority: Normal
 ms.collection: Strat_O365_IP
 ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
 description: Office 365 のセキュリティでは、データ損失防止 (DLP)&amp;準拠のセンターには、DLP ポリシーを使用する準備ができている 80 の機密性の高い情報の種類が含まれています。このトピックでは、機密性の高い情報の種類のすべてを一覧表示しを示しています DLP ポリシーそれぞれの種類を検出したとき。
-ms.openlocfilehash: 5097227d8efa833f255631febde50b937add48ef
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+ms.openlocfilehash: 4b083f80e02c80053b63ee897b2515a4505c16d9
+ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002690"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27194738"
 ---
-# <a name="what-the-sensitive-information-types-look-for"></a>機密情報の種類の検索基準：
+# <a name="what-the-sensitive-information-types-look-for"></a>機密情報の種類の検索基準
 
 Office 365 のセキュリティでは、データ損失防止 (DLP)&amp;コンプライアンス センターには、DLP ポリシーに使用する準備ができている多くの機密性の高い情報の種類が含まれています。このトピックでは、機密性の高い情報の種類のすべてを一覧表示しを示しています DLP ポリシーそれぞれの種類を検出したとき。機密性の高い情報の種類は、正規表現、または関数を識別可能なパターンによって定義されます。さらに、機密性の高い情報の種類を識別するキーワードやチェックサムなどの corroborative の証拠を使用できます。信頼レベルと近接は、評価プロセスで使用されます。
   
@@ -285,8 +285,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - international driving permits
 - 
 australian automobile association
-- 
-sydney nsw
 - 
 international driving permit
 - DriverLicence
@@ -2214,13 +2212,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="format"></a>形式
 
-10 桁の数字
+11 桁の数字
 
 ### <a name="pattern"></a>パターン
 
-10 桁の数字:
-- DDMMYY の形式で生年月日を表す 6 桁の数字  
-- 4 桁の数字 (最後の桁はチェック ディジット)
+11 桁の数字:
+- 10 桁の数字 
+- 11 桁の数字の前の国際的なデータ交換のためにチェック桁の最後の桁には、人事部の文字が追加されます。
 
 ### <a name="checksum"></a>チェックサム
 
@@ -2261,18 +2259,31 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
  
 
    
-## <a name="czech-national-identity-card-number"></a>チェコの国民身分証明書番号
+## <a name="czech-personal-identity-number"></a>チェコ語の個人識別番号
 
 ### <a name="format"></a>形式
 
-スラッシュを 1 つ含む 10 桁の数字
+オプションで 9 桁の数字はスラッシュ (古い形式) と省略可能な 10 桁の数字はスラッシュ (新しい形式)
 
 ### <a name="pattern"></a>パターン
 
-10 桁の数字:
-- 生年月日を表す 6 桁の数字  
+9 桁 (古い形式)。
+- 9 桁の数字
+
+または
+
+- 生年月日を表す 6 桁の数字
+- スラッシュ 1 つ 
+- 3 桁の数字
+
+10 桁 (新しい形式)。
+- 10 桁の数字
+
+または
+
+- 生年月日を表す 6 桁の数字
 - スラッシュ 1 つ  
-- 4 桁の数字 (最後の桁はチェック ディジット)
+- 最後の桁がチェック ディジットを 4 桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
@@ -2283,21 +2294,18 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 DLP ポリシーとは、85% をこの種類の機密情報を検出したことを確信、近くにある 300 文字以内の場合: Func_czech_id_card 関数は、パターンに一致するコンテンツを検索します。。Keyword_czech_id_card からキーワードを検出するとします。チェックサムが渡されます。
 
 ```
-<!-- Czech National Identity Card Number -->
-<Entity id="60c0725a-4eb6-455b-9dda-05d8a7396497" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_czech_id_card"/>
-     <Match idRef="Keyword_czech_id_card"/>
-  </Pattern>
+<!-- Czech Personal Identity Number -->
+<Entity id="60c0725a-4eb6-455b-9dda-05d8a7396497"      patternsProximity="300" recommendedConfidence="85">
+   <Pattern confidenceLevel="85">
+      <IdMatch idRef="Func_czech_id_card" />
+      <Match idRef="Keyword_czech_id_card" />
+   </Pattern>
 </Entity>
 ```
-
-
 ### <a name="keywords"></a>キーワード
 
-- Keyword_czech_id_card
-- Czech national identity card
-- Občanský průka
+- チェコ語の個人識別番号
+- Rodné číslo
    
 ## <a name="denmark-personal-identification-number"></a>デンマークの個人識別番号
 
@@ -3745,13 +3753,47 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordhongkongidcard"></a>Keyword_hong_kong_id_card
 
-- Hong Kong Identity Card
-- HKID
-- ID card
+- 香港の id カード
+- HKIDC
+- id カード
+- Identity card
+- 香港の id カード
+- 香港 id
 - 香港身份證
- 
+
 - 香港永久性居民身份證
- 
+
+- 身份證
+
+- 身份証
+- 身分證 
+- 身分証
+- 香港身份証
+- 香港身分證
+- 香港身分証
+- 香港身份證
+
+- 香港居民身份證
+- 香港居民身份証
+- 香港居民身分證
+- 香港居民身分証
+- 香港永久性居民身份証
+- 香港永久性居民身分證
+- 香港永久性居民身分証
+- 香港永久性居民身份證
+
+- 香港非永久性居民身份證
+- 香港非永久性居民身份証
+- 香港非永久性居民身分證
+- 香港非永久性居民身分証
+- 香港特別行政區永久性居民身份證
+- 香港特別行政區永久性居民身份証
+- 香港特別行政區永久性居民身分證
+- 香港特別行政區永久性居民身分証
+- 香港特別行政區非永久性居民身份證
+- 香港特別行政區非永久性居民身份証
+- 香港特別行政區非永久性居民身分證
+- 香港特別行政區非永久性居民身分証
    
 ## <a name="india-permanent-account-number-pan"></a>インドの永久口座番号 (PAN)
 
@@ -4663,6 +4705,48 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
  
 - 社会保険番号
  
+
+## <a name="japanese-residence-card-number"></a>居住地の日本語のカード番号
+
+### <a name="format"></a>形式
+
+12 の文字と数字
+
+### <a name="pattern"></a>パターン
+
+12 の文字と数字の場合。
+- 2 桁の文字 (大文字小文字の区別なし) 
+- 8 桁の数字 
+- 2 桁の文字 (大文字小文字の区別なし) 
+
+### <a name="checksum"></a>チェックサム
+
+なし
+
+### <a name="definition"></a>定義
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
+- Regex_jp_residence_card_number の正規表現パターンに一致するコンテンツを検索します。
+- Keyword_jp_residence_card_number からキーワードを検出するとします。
+
+```
+<!--Japan Residence Card Number-->
+-<Entity id="ac36fef2-a289-4e2c-bb48-b02366e89fc0" recommendedConfidence="75" patternsProximity="300">
+   -<Pattern confidenceLevel="75">
+      <IdMatch idRef="Regex_jp_residence_card_number"/>
+      <Match idRef="Keyword_jp_residence_card_number"/>
+   </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>キーワード
+
+#### <a name="keywordjpresidencecardnumber"></a>Keyword_jp_residence_card_number
+
+- 居住カードの数
+- 住居なしをカードします。
+- 居住地のカード番号
+- 在留カード番号
    
 ## <a name="malaysia-id-card-number"></a>マレーシアの ID カード番号
 
@@ -4705,16 +4789,30 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 #### <a name="keywordmalaysiaidcardnumber"></a>Keyword_malaysia_id_card_number
 
-- MyKad 
-- Identity Card 
-- ID カード 
-- Id カード 
-- Digital Application Card
- 
-- Kad Akuan Diri
- 
-- Kad Aplikasi Digital
- 
+- アプリケーションのデジタル カード
+- i/c
+- i/c なし
+- ic
+- ic なし
+- id カード
+- id カード
+- Identity card
+- k と p
+- k と p なし
+- kad akuan diri
+- kad aplikasi のデジタル
+- kad pengenalan マレーシア
+- kp
+- kp なし
+- mykad
+- mykas
+- mykid
+- mypr
+- mytentera
+- マレーシアの id カード
+- マレーシアの id カード
+- nric
+- 個人の id カード
    
 ## <a name="netherlands-citizens-service-bsn-number"></a>オランダの市民サービス (BSN) 番号
 
@@ -4947,12 +5045,16 @@ DLP ポリシーとは、75% がこの種の機密情報を検出したことを
 
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
+- Dowód osobisty
+- 数値 dowodu osobistego
+- Nazwa 私の数値 dowodu osobistego
+- Nazwa に nr dowodu osobistego
 - Nazwa i nr dowodu tożsamości
- 
+
 - Dowód Tożsamości
- 
+
 - dow. os.
- 
+
 
    
 ## <a name="poland-national-id-pesel"></a>ポーランドの国民 ID (PESEL)
@@ -5030,12 +5132,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
-- Nazwa i nr dowodu tożsamości
- 
-- Dowód Tożsamości
- 
-- dow. os.
- 
+- 数値 paszportu
+- Paszportu nr。
+- Paszport
 
    
 ## <a name="portugal-citizen-card-number"></a>ポルトガルの市民カード番号
@@ -5723,7 +5822,101 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
  
 - 台灣地區居留證
  
-   
+
+## <a name="thai-population-identification-code"></a>タイの人口の識別コード
+
+### <a name="format"></a>形式
+
+13 桁の数字
+
+### <a name="pattern"></a>パターン
+
+13 桁の数字:
+- 最初の桁は 0 または 9 ではありません。 
+- 12 桁の数字
+
+### <a name="checksum"></a>チェックサム
+
+はい
+
+### <a name="definition"></a>定義
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 関数 Func_Thai_Citizen_Id では、パターンに一致するコンテンツを検索します。
+- Keyword_Thai_Citizen_Id からキーワードを検出するとします。
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 関数 Func_Thai_Citizen_Id では、パターンに一致するコンテンツを検索します。
+
+```
+<!-- Thai Citizen ID -->
+-<Entity id="44ca9e86-ead7-4c5d-884a-e2eaa401515e" recommendedConfidence="75" patternsProximity="300">
+   -<Pattern confidenceLevel="85">
+      <IdMatch idRef="Func_Thai_Citizen_Id"/>
+      <Match idRef="Keyword_Thai_Citizen_Id"/>
+   </Pattern>
+   -<Pattern confidenceLevel="75">
+      <IdMatch idRef="Func_Thai_Citizen_Id"/>
+   </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>キーワード
+
+#### <a name="keywordthaicitizenid"></a>Keyword_Thai_Citizen_Id
+
+- ID Number
+- 識別番号
+- บัตรประชาชน
+- รหัสบัตรประชาชน
+- บัตรประชาชน
+- รหัสบัตรประชาชน
+  
+## <a name="turkish-national-identification-number"></a>トルコ語の国際識別番号
+
+### <a name="format"></a>形式
+
+11 桁の数字
+
+### <a name="pattern"></a>パターン
+
+11 桁の数字
+
+### <a name="checksum"></a>チェックサム
+
+はい
+
+### <a name="definition"></a>定義
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 関数 Func_Turkish_National_Id では、パターンに一致するコンテンツを検索します。
+- Keyword_Turkish_National_Id からキーワードを検出するとします。
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 関数 Func_Turkish_National_Id では、パターンに一致するコンテンツを検索します。
+
+```
+<!-- Turkish National Identity -->
+-<Entity id="fb621f20-3876-4cfc-acec-8c8e73ca32c7" recommendedConfidence="75" patternsProximity="300">
+   -<Pattern confidenceLevel="85">
+      <IdMatch idRef="Func_Turkish_National_Id"/>
+      <Match idRef="Keyword_Turkish_National_Id"/>
+   </Pattern>
+   -<Pattern confidenceLevel="75">
+      <IdMatch idRef="Func_Turkish_National_Id"/>
+   </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>キーワード
+
+#### <a name="keywordturkishnationalid"></a>Keyword_Turkish_National_Id
+
+- TC Kimlik なし
+- TC Kimlik numarası
+- Vatandaşlık numarası
+- Vatandaşlık なし
+
 ## <a name="uk-drivers-license-number"></a>英国の運転免許証番号
 
 ### <a name="format"></a>形式
@@ -5932,7 +6125,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 6 桁の数字
 - どちらか '、' 'B'、'C'、または必要がある ' (などの接頭辞、のみ特定の文字が許可、サフィックスのない大文字小文字を区別)
 
-OR
+または
 
 - 2 つの文字
 - スペースまたはダッシュ
