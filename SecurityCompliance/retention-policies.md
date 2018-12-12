@@ -3,7 +3,7 @@ title: アイテム保持ポリシーの概要
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 11/16/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: アイテム保持ポリシーでは、コンテンツを保持するか、コンテンツを削除するか、またはコンテンツを保持して後に削除するかを事前に決定できます。さらに、1 つのポリシーを組織全体に適用するか、特定の場所やユーザーにのみ適用するか、すべてのコンテンツにポリシーを適用するか、特定の条件を満たしているコンテンツのみにポリシーを適用するかも事前に決定できます。
-ms.openlocfilehash: 5b02d57931a47ca86f4da884463cfc0e52476d3c
-ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
+ms.openlocfilehash: 57f782046fcac2bd28830a0204e0b663d69de842
+ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25540403"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27194708"
 ---
 # <a name="overview-of-retention-policies"></a>アイテム保持ポリシーの概要
 
@@ -110,7 +110,7 @@ OneDrive アカウントまたは SharePoint サイトにアイテム保持ポ�
     
 ## <a name="how-a-retention-policy-works-with-document-versions-in-a-site"></a>アイテム保持ポリシーはサイトのドキュメントのバージョンにどのように作用するか
 
-バージョン管理は、SharePoint Online と OneDrive for Business のすべてのドキュメント ライブラリの機能です。既定では、少なくとも 100 件のメジャー バージョンが保持されます (この制限は増やすことができます)。詳細については、「[リストまたはライブラリのバージョン管理を有効にして構成する](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37)」を参照してください。
+バージョン管理は、SharePoint Online と OneDrive for Business のすべてのドキュメント ライブラリの機能です。既定では、少なくとも 500 件のメジャー バージョンが保持されます (この制限は増やすことができます)。詳細については、「[リストまたはライブラリのバージョン管理を有効にして構成する](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37)」を参照してください。
   
 アイテム保持ポリシーにより、SharePoint サイトまたは OneDrive アカウントのドキュメントのすべてのバージョンが保持されます。アイテム保持ポリシーの対象になっているドキュメントが編集または削除されるたびに、アイテム保管ライブラリにバージョンがコピーされます。アイテム保管ライブラリ内のドキュメントの各バージョンは、独自の保持期間が設定された個別のアイテムとして存在します。
   
@@ -197,17 +197,13 @@ OneDrive アカウントまたは SharePoint サイトにアイテム保持ポ�
 - ポリシーに含めることができるメールボックスまたはサイトの数に制限はありません。
     
 - Exchange の場合、ポリシーの適用後に作成された新しいメールボックスには、そのポリシーが自動的に継承されます。
-    
-ただし、組織全体のポリシーと場所全体のポリシーの組み合わせについては、テナントあたり 10 個までの制限があります (次のセクションを参照)。
   
 ### <a name="a-policy-that-applies-to-entire-locations"></a>場所全体に適用されるポリシー
 
 場所を選択するときには、Exchange 電子メールや OneDrive アカウントなどの場所全体を簡単に含めたり除外したりできます。この操作は、該当する場所の **[状態]** をオンまたはオフに切り替えるだけです。 
   
 組織全体のポリシーと同様に、場所全体の任意の組み合わせにポリシーを適用する場合は、ポリシーに含めることができるメールボックスまたはサイトの数に制限はありません。たとえば、ポリシーにすべての Exchange 電子メールとすべての SharePoint サイトを含めると、数に関係なくすべてのサイトとメールボックスが含まれるようになります。また、Exchange の場合、ポリシーの適用後に作成された新しいメールボックスには、そのポリシーが自動的に継承されます。
-  
-ただし、組織全体のポリシーと場所全体のポリシーの組み合わせについては、テナントあたり 10 個までの制限があります。
-  
+ 
 ![[場所の選択] ページ](media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
   
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>特定の追加または除外を含むポリシー
