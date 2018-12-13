@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 description: この資料では、Office 365 の受信トレイに電子メールを送信するときに生じる問題に関して送信者が参照できるトラブルシューティング情報と、Office 365 顧客に対するバルク メールのベスト プラクティスについて取り上げます。
-ms.openlocfilehash: 3d8c0a05d096da87b9f686222055d76a6ae96ff2
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 3d90da9ac239971fd888ed3b8637ba9941628fc2
+ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003206"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27240560"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Office 365 に送信されるメールのトラブルシューティング
 
@@ -115,7 +115,7 @@ IP アドレスが EOP によって調整されたことを示す NDR を EOP �
 ### <a name="i-cant-receive-email-from-senders-in-office-365"></a>Office 365 で送信者からの電子メールを受信できない
 <a name="AllowEOPIPs"> </a>
 
- ユーザーからメッセージを受信するのには、ネットワークでは、EOP を当社のデータ センターで使用する IP アドレスからの接続になっていることを確認します。詳細については、 [Exchange のオンライン保護の IP アドレス](eop/exchange-online-protection-ip-addresses.md)を参照してください。IP のすべてのレコードに追加されているアドレスを変更、または、過去 1 年で廃止、 [EOP の IP アドレスの変更通知](eop/change-notification-for-eop-ip-addresses.md)を参照してください。
+ ユーザーからメッセージを受信するのには、ネットワークでは、EOP を当社のデータ センターで使用する IP アドレスからの接続になっていることを確認します。詳細については、 [Exchange のオンライン保護の IP アドレス](eop/exchange-online-protection-ip-addresses.md)を参照してください。 
   
 ## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>Office 365 ユーザーへのバルク メールのベスト プラクティス
 <a name="BulkMailer"> </a>
