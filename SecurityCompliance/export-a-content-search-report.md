@@ -3,7 +3,7 @@ title: コンテンツ検索のレポートをエクスポートする
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/25/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: コンテンツの検索では、Office 365 のセキュリティの実際の結果をエクスポートするのではなく&amp;コンプライアンス センターでは、検索結果のレポートだけエクスポートできます。レポートには、検索結果とは、エクスポートされる各項目に関する詳細情報を含むドキュメントの概要が含まれています。
-ms.openlocfilehash: 45415f25754b4549a919e4ce56853a6ae09a9bdc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e15c6550d58701abe9b268455deca0aef60265fb
+ms.sourcegitcommit: 1bc36cd57ab1604f057e2b5d336cf1893ba00125
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531556"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283143"
 ---
 # <a name="export-a-content-search-report"></a>コンテンツ検索のレポートをエクスポートする
 
@@ -52,7 +52,9 @@ Office 365 のセキュリティ コンテンツの検索結果の検索の完�
     - Microsoft インターネット エクスプ ローラー 10 およびそれ以降のバージョン
     
     **注:** マイクロソフトではサードパーティ製の拡張機能またはアドオンの ClickOnce アプリケーションを製造します。アドオンまたはサードパーティ製の拡張機能でサポートされていないブラウザーを使用して検索結果のエクスポートはサポートされていません。 
-    
+
+- コンテンツの検索によって返される結果の推定合計サイズが 20 を超える場合&nbsp;TB、レポートのエクスポートは失敗します。レポートを正常にエクスポートするには、範囲を限定し、結果の推定サイズが 20 未満であるために、検索を再実行してみてください&nbsp;TB です。
+
 ## <a name="generate-and-download-a-content-search-report"></a>生成し、コンテンツの検索レポートをダウンロード
 
 生成し、コンテンツの検索レポートをダウンロードする手順は、実際に検索結果をエクスポートするのには非常に似ています。
@@ -61,9 +63,9 @@ Office 365 のセキュリティ コンテンツの検索結果の検索の完�
 
 最初に、レポートをエクスポートする、コンピューターにダウンロードする準備をします。クラウド、レポート、レポートでは、Microsoft Azure ストレージ領域にドキュメントをアップロードするときです。
   
-1. [https://protection.office.com](https://protection.office.com)。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
-2. 職場、学校のアカウントを使用して Office 365 にサインインします。
+2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
     
 3. セキュリティ/コンプライアンス センターの左側のウィンドウで、**[検索と調査]** \> **[コンテンツ検索]** の順にクリックします。
     
