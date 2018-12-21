@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: アイテム保持ポリシーでは、コンテンツを保持するか、コンテンツを削除するか、またはコンテンツを保持して後に削除するかを事前に決定できます。さらに、1 つのポリシーを組織全体に適用するか、特定の場所やユーザーにのみ適用するか、すべてのコンテンツにポリシーを適用するか、特定の条件を満たしているコンテンツのみにポリシーを適用するかも事前に決定できます。
-ms.openlocfilehash: 57f782046fcac2bd28830a0204e0b663d69de842
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: a6d185484f83ca93c99153d584af6841397dbc2f
+ms.sourcegitcommit: ec465771a846de103a365fcb36cb7a7c0a5744c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194708"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380617"
 ---
 # <a name="overview-of-retention-policies"></a>アイテム保持ポリシーの概要
 
@@ -214,7 +214,7 @@ OneDrive アカウントまたは SharePoint サイトにアイテム保持ポ�
   
 - これに該当する保持ポリシーに含めることができるメールボックスは 1,000 個以下、サイトは 100 個以下です。
     
-- 1 つのテナントに含めることができる、これに該当するアイテム保持ポリシーは 1,000 個以下です。
+- 1 つのテナントに含めることができる、アイテム保持ポリシーは 10,000 個以下です。
     
 こうした制限はありますが、組織全体のポリシーまたは場所全体に適用されるポリシーを適用することで、この制限を取り除くことができます。
   
