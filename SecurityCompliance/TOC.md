@@ -186,7 +186,6 @@
 ## [Office 365 での電子情報開示調査のためにコンプライアンスの境界を設定する](set-up-compliance-boundaries.md)
 ## [電子情報開示ソリューション シリーズ - データー流出のシナリオ - 検索と消去](data-spillage-scenariosearch-and-purge.md)
 ## [Advanced eDiscovery 用に検索結果を準備する](prepare-search-results-for-advanced-ediscovery.md)
-## [OneDrive for Business サイトに対する電子情報開示のアクセス許可を割り当てる](assign-permissions-to-onedrive-for-business-sites.md)
 ## [スクリプトを使用して電子情報開示ケースの保留リストにユーザーを追加する](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
 ## [電子情報開示ケースの保留リストのレポートを作成する](create-a-report-on-holds-in-ediscovery-cases.md)
 ## 保留リストを管理する
