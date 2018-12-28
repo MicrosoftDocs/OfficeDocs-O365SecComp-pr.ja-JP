@@ -126,7 +126,7 @@
 ### [Office 365 脅威インテリジェンスを使用して Office 365 ユーザーの安全を守る](keep-users-safe-with-office-365-ti.md)
 ### [脅威トラッカー - 新機能とNoteworthy 機能 ](threat-trackers.md)
 ### [セキュリティ/コンプライアンス センターでエクスプローラーを使用する](use-explorer-in-security-and-compliance.md)
-## [Office 365 Cloud App Security の概要](office-365-cas-overview.md)
+## [Office 365 Cloud App Security](office-365-cas-overview.md)
 ### [Office 365 Cloud App Security の新機能](new-in-office-365-cas.md)
 #### [2017 年の更新プログラム](new-in-office-365-cas-2017.md)
 ### [Office 365 Cloud App Security の使用準備](get-ready-for-office-365-cas.md)
