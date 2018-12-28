@@ -5,19 +5,18 @@ services: office-365-security-compliance
 author: robmazz
 manager: laurawi
 layout: LandingPage
-ms.assetid: ''
 ms.service: office-365
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
-ms.date: 8/21/2018
+ms.date: 12/27/2018
 ms.author: robmazz
-ms.openlocfilehash: ed61d7995ab4b684f775b58f9fb4cd830222117a
-ms.sourcegitcommit: e5da81dd4c6ca7caa0f884fffff3876e87e2b217
+ms.openlocfilehash: 255bde226f5a284f2ac20d65124d4722e2357385
+ms.sourcegitcommit: 55762890e5129a5240054990ce64e93007ed7a32
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26254554"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "27449881"
 ---
 # <a name="office-365-security-and-compliance"></a>Office 365 のセキュリティとコンプライアンス
 
@@ -52,7 +51,7 @@ ms.locfileid: "26254554"
                     </div>
                     <div class="cardText">
                         <h3>90 日以内の次のステップ</h3>
-                        <p>これらのタスクでは、計画し実装しますが、セキュリティの状態が大幅に増加する少し時間がかかります。 <br> - <a href="attack-simulator.md">攻撃のシミュレーションを実施します。</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">コンプライアンス マネージャーのレビュー</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Azure の特権 Id 管理を構成します。</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">多要素認証を有効にします。</a> <br> - <a href="protect-against-threats.md">保護ポリシーの表示と更新</a> </p>
+                        <p>これらのタスクでは、計画し実装しますが、セキュリティの状態が大幅に増加する少し時間がかかります。 <br> - <a href="attack-simulator.md">攻撃のシミュレーションを実施します。</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">コンプライアンス マネージャーのレビュー</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Azure の特権 Id 管理を構成します。</a> <br> - <a href="privileged-access-management-configuration.md">アクセス権限の管理を構成します。</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">多要素認証を有効にします。</a> <br> - <a href="protect-against-threats.md">保護ポリシーの表示と更新</a> </p>
                     </div>
                 </div>
             </div>
@@ -70,7 +69,7 @@ ms.locfileid: "26254554"
                     <div class="cardText">
                         <h3>90 日以降</h3>
                         <p>前の作業を構築する重要なセキュリティ対策があります。<br>
-                        - <a href="https://securescore.office.com" target="_blank">セキュリティで保護されたスコアを確認します。</a><br>
+                        - <a href="office-365-secure-score.md" target="_blank">セキュリティで保護されたスコアを確認します。</a><br>
                         - <a href="https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access">実装は、アクセス権限をセキュリティで保護します。</a><br>
                         - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection">Azure AD Id 保護を使用します。</a><br>
                         - <a href="protect-against-threats.md">保護ポリシーを調整します。</a><br></p>
@@ -97,8 +96,8 @@ ms.locfileid: "26254554"
                     <div class="cardText">
                         <h3>安全性を確保します。</h3>
                         <p><a href="security-roadmap.md">Office 365 のセキュリティ ロードマップ</a></p>
-                        <p><a href="https://securescore.microsoft.com" target="_blank">マイクロソフトのセキュリティで保護されたスコア</a></p>
-                        <p><a href="https://protection.office.com" target="_blank">Office 365 のセキュリティとコンプライアンス センター</a></p>
+                        <p><a href="office-365-secure-score.md" target="_blank">マイクロソフトのセキュリティで保護されたスコア</a></p>
+                        <p><a href="https://protection.office.com" target="_blank">Office 365 セキュリティ/コンプライアンス センター</a></p>
                     </div>
                 </div>
             </div>
