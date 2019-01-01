@@ -92,7 +92,7 @@
 ### [Office 365 での電子メールの暗号化](email-encryption.md)
 ### [Office 365 Message Encryption (OME)](ome.md)
 #### [新しい Office 365 Message Encryption 機能を設定する](set-up-new-message-encryption-capabilities.md)
-#### [Office 365 でメールを暗号化するためにメール フロー ルールを定義する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/define-mail-flow-rules-to-encrypt-mail.md)
+#### [Office 365 でメールを暗号化するためにメール フロー ルールを定義する](define-mail-flow-rules-to-encrypt-email.md)
 #### [Office 365 Message Encryption を管理する](manage-office-365-message-encryption.md)
 #### [Office 365 Message Encryption に関する FAQ](ome-faq.md)
 #### [Office 365 Message Encryption によって暗号化された電子メールを取り消す](revoke-ome-encrypted-mail.md)
