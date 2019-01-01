@@ -1,9 +1,8 @@
 ---
-title: Office 365 で電子メール メッセージを暗号化するためにメール フローの規則を定義します。
+title: Office 365 でメールを暗号化するためにメール フロー ルールを定義する
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,14 +12,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: 管理者は、メールを暗号化し、Office 365 メッセージの暗号化 (ホーム) を使用してメッセージを復号化のフロー ルール (トランスポート ルールでとも呼ばれます) を作成するに学習できます。
-ms.openlocfilehash: 35867d45bb8ad5cb8de2fa1aa0c870ee9a66fe5d
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: 6633958478c947d765251145ecd6d45e34dea2ab
+ms.sourcegitcommit: 31098b35607d0fd949fd357f783d1e9ed2444deb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194678"
+ms.lasthandoff: 12/31/2018
+ms.locfileid: "27466926"
 ---
-# <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Office 365 で電子メール メッセージを暗号化するためにメール フローの規則を定義します。
+# <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Office 365 でメールを暗号化するためにメール フロー ルールを定義する
 
 Office 365 グローバル管理者は、ルールを作成できますメール フロー (トランスポートの規則とも呼ばれます) は、電子メール メッセージの送受信を保護するためです。送信電子メール メッセージを暗号化および暗号化されたメッセージを組織内から、または組織から送信される、暗号化されたメッセージへの返信から暗号化を削除するルールを設定することができます。これらのルールを作成するのには、Exchange 管理センター (EAC) または Exchange のオンライン PowerShell を使用できます。だけでなく全体の暗号化の規則を有効にするか、エンド ・ ユーザーの個々 のメッセージの暗号化オプションを無効にすることもできます。
 
