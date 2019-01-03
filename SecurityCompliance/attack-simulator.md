@@ -3,7 +3,7 @@ title: Office 365 の攻撃シミュレータ
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/09/2018
+ms.date: 01/02/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 description: Office 365 グローバル管理者は、組織内で現実的な攻撃のシナリオを実行するのに攻撃のシミュレータを使用できます。これを識別し、実際の攻撃では、お客様のビジネスをヒットする前に、脆弱性のあるユーザーを検索することができます。
-ms.openlocfilehash: 9a7e1fd5327b4a764356df110c46ee7a9f496b53
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 1a1d22b0b36ce8b6a2086296be8f8b5d47d79280
+ms.sourcegitcommit: d512c1df01377e305e8d5c0170c822cf78f09565
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706441"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "27472000"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 の攻撃シミュレータ
 
@@ -49,7 +49,7 @@ ms.locfileid: "26706441"
     
 - Office 365 グローバル管理者であります。
     
-- 組織が[Office 365 のユーザーに対して多要素認証](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication&view=o365-worldwide)を使用します。
+- 組織が[Office 365 のユーザーに対して多要素認証](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)を使用します。
  
 - 組織が[Office 365 の脅威インテリジェンス](office-365-ti.md)セキュリティに表示されている攻撃のシミュレータでは、&amp;コンプライアンス センター (**脅威の管理**に移動\>**攻撃シミュレータ**)<br/>![シミュレータの攻撃の脅威の管理](media/ThreatMgmt-AttackSimulator.png)
 
@@ -64,7 +64,7 @@ ms.locfileid: "26706441"
 
 ![電子メールの本文を作成します。](media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
   
-**電子メールの本文**のフィールド自体に直接リッチ HTML エディターを作成するか、HTML ソースを操作できます。HTML に含めることの 2 つの重要なフィールドです。 
+**電子メールの本文**のフィールド自体に直接リッチ HTML エディターを作成するか、HTML ソースを操作できます。
   
 1. [セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)、**脅威の管理**を選択して\>**攻撃のシミュレータ**です。
     
@@ -118,7 +118,7 @@ ms.locfileid: "26706441"
     
 3. ターゲット受信者を指定します。対象となる受信者は、Exchange オンライン メールボックスが成功するため、攻撃するために必要があります。
     
-4. 一連の攻撃に使用するパスワードを指定します。パスワードの一覧をテキスト (.txt) ファイルを使用できます。テキスト ファイルは、ファイル サイズが 10 MB を超えることはできません。1 行に 1 つのパスワードを使用し、最後のパスワードを一覧にした後、ハード リターンを含めることを確認します。
+4. 一連の攻撃に使用するパスワードを指定します。これを行うには、パスワードの一覧をテキスト (.txt) ファイルを使用できます。テキスト ファイルは、ファイル サイズが 10 MB を超えることはできません。1 行に 1 つのパスワードを使用し、最後のパスワードを一覧にした後、ハード リターンを含めることを確認します。
     
 5. **完了**を攻撃を開始する] を選択します。 
     
