@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 description: 顧客 askwhat の迷惑メールと大量の電子メール メッセージの違いのことがありますか。このトピックの目的は、違いを説明し、オンラインの Exchange および Exchange オンライン保護 (EOP) の両方で利用可能なさまざまなオプションに関する情報を提供します。
-ms.openlocfilehash: 87f946c7309589595efd3e11e998e0a9f503b651
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: ea3f27bdd9ec2aa586dd55139825fc90390ca736
+ms.sourcegitcommit: b4e69c54c7bf405d37dfeadc5611803bea9554e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003156"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27733303"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>迷惑メールとバルク メールの違い
 
@@ -41,6 +41,6 @@ ms.locfileid: "23003156"
   
 ### <a name="enable-bulk-mail-sensitivity-control-in-the-content-filter-policy"></a>コンテンツ フィルター ポリシーのバルク メールの秘密度の制御を有効にします。
 
-バルク メール メッセージに関する会社のポリシーに従って、管理者はバルク メールを割り当てるしきい値を選択できます。設定は、EAC のコンテンツ フィルター ポリシーを介して構成できます。手順については、「[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。1 ～ 9 のしきい値の設定を選択できます。この場合、1 はほとんどのバルク メールをスパムとしてマークし、9 はほとんどのバルク メールの配信を許可します。その後、メッセージを受信者の迷惑メール フォルダーに送信するなどの構成されたアクションをサービスが実行します。 
+大量の電子メール メッセージで、会社のポリシーによって管理者は、一括メールを割り当てるためのしきい値を選択できます。設定値が、EAC でコンテンツ フィルター ポリシーを使用して構成できます。手順については、[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)を確認してください。しきい値の設定を選択するには 1 から 9、1 のほとんどの一括メール、迷惑メールとしてマークを付けます、9 では、ほとんどの一括メールを配信する場所です。サービスは、受信者の迷惑メール フォルダーにメッセージを送信するなど、設定済みのアクションを実行します。 
   
 
