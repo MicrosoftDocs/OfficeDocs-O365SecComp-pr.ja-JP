@@ -3,7 +3,7 @@ title: セキュリティで電子メールのセキュリティ レポートを
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/27/2018
+ms.date: 01/07/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: 検索し、Office 365 の企業で、組織の電子メール セキュリティのレポートを使用する方法について説明します。電子メール セキュリティのレポートは、セキュリティで利用可能な&amp;コンプライアンス センターです。
-ms.openlocfilehash: 72039afd52cd6e9da7dfd05bb67aac2c7e7db001
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 670317707c5695161f23615fb87fe93258e8d95b
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706421"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749331"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>セキュリティで電子メールのセキュリティ レポートを表示する&amp;コンプライアンス センター
 
@@ -28,7 +28,7 @@ ms.locfileid: "26706421"
   
 電子メール セキュリティ レポートを以下に示します。
   
-- [脅威保護の状態のレポート](view-email-security-reports.md#tps)(new!) 
+- [脅威保護の状態のレポート](view-email-security-reports.md#tps) 
     
 - [マルウェア検出レポート](view-email-security-reports.md#maldet)
     
@@ -44,7 +44,7 @@ ms.locfileid: "26706421"
     
 - [メッセージのユーザーから報告されたレポート](view-email-security-reports.md#userreported)(new!) 
     
-## <a name="threat-protection-status-report-new"></a>脅威の保護の状態のレポート (new!)
+## <a name="threat-protection-status-report"></a>脅威保護の状態のレポート
 
 新しい**脅威保護の状態**レポートは、悪意のある電子メールが検出され、Exchange のオンライン保護によってブロックされていることを示すスマート レポートです。このレポートには、マルウェアやフィッシング詐欺として識別された電子メールに関する情報が表示されます。 
 
@@ -176,7 +176,7 @@ ms.locfileid: "26706421"
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>これらのレポートを表示するのにはどのようなアクセス許可が必要か。
 
-表示し、この資料に記載されているレポートを使用して、適切なセキュリティの両方に割り当てられているロールがある必要があります&amp;コンプライアンス センターと、Exchange 管理センターです。
+表示し、この資料に記載されているレポートを使用するために**セキュリティの両方に割り当てられている適切なロールを持つ必要があります&amp;コンプライアンス センターと、Exchange 管理センター**です。
 
 - セキュリティの&amp;コンプライアンス センターでは、する必要があります次に割り当てられている役割の 1 つ。
     - 組織の管理

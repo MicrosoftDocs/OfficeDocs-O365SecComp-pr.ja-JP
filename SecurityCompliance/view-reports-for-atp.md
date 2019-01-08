@@ -3,7 +3,7 @@ title: Office 365 の高度な脅威保護のためのレポートを表示し�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/27/2018
+ms.date: 01/07/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: 検索し、Office 365 高度な脅威保護、セキュリティでのレポートを使用する方法を説明&amp;コンプライアンス センターです。
-ms.openlocfilehash: e9d3088f81d1020e70de4c2260fba81cd469715d
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: d387e020e5834d4961e7bda50b418ea11b9f0f4d
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706321"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749351"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 の高度な脅威保護のためのレポートを表示します。
 
@@ -90,7 +90,7 @@ ATP レポートは、この資料に記載されている、だけでなく他�
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>ATP のレポートを表示するのにはどのようなアクセス許可が必要か。
 
-表示し、この資料に記載されているレポートを使用して、適切なセキュリティの両方に割り当てられているロールがある必要があります&amp;コンプライアンス センターと、Exchange 管理センターです。
+表示し、この資料に記載されているレポートを使用するために**セキュリティの両方に割り当てられている適切なロールを持つ必要があります&amp;コンプライアンス センターと、Exchange 管理センター**です。
 
 - セキュリティの&amp;コンプライアンス センターでは、する必要があります次に割り当てられている役割の 1 つ。
     - 組織の管理

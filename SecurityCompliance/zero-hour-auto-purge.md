@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: ゼロの自動パージ (ZAP) は既にユーザーの受信トレイに配信されたメッセージをスパムやマルウェアを検出する電子メールの保護機能で、害のない、悪意のあるコンテンツをレンダリングZAP はこれは、検出された、悪意のあるコンテンツの種類によって異なります。
-ms.openlocfilehash: 1cf14051e91801a74a0d739c69900bb3f825b318
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+ms.openlocfilehash: 1e90e69018b7640bb36011287abd5bcd77d43358
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180847"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749321"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>ゼロアワー自動消去 - 迷惑メールやマルウェアからの保護
 
@@ -30,7 +30,7 @@ ms.locfileid: "27180847"
   
 ZAP は、既定の Exchange Online のメールボックスを含むすべての Office 365 サブスクリプションに含まれている Exchange のオンライン保護に使用できます。
 
-ZAP が既定でオンですが、以下の条件を満たす必要があります。
+ZAP が既定でオンですが、次の条件を満たす必要があります。
   
 - **スパム アクション**は、 **[迷惑メール フォルダーにメッセージを移動**するのには設定されています。 <br/>すべてのメールボックスを ZAP でスクリーニングする必要がある場合に、一連のユーザーにのみ適用する新しい迷惑メール フィルター ポリシーを作成することもできます。
 
@@ -62,7 +62,7 @@ ZAP アクションが、メールボックスのユーザーのシームレス�
     
 ## <a name="to-see-if-zap-moved-your-message"></a>ZAP がメッセージを移動するかどうかを参照してください。
 
-ZAP がメッセージを移動するかどうかを参照してくださいしたい場合、またはいずれかの[脅威保護の状態のレポート](view-email-security-reports.md#threat-protection-status-report-new)([脅威のエクスプ ローラー](use-explorer-in-security-and-compliance.md)) を使用できます。
+ZAP がメッセージを移動するかどうかを参照してくださいしたい場合、またはいずれかの[脅威保護の状態のレポート](view-email-security-reports.md#threat-protection-status-report)([脅威のエクスプ ローラー](use-explorer-in-security-and-compliance.md)) を使用できます。
     
 ## <a name="to-disable-zap"></a>ZAP を無効にするには
   

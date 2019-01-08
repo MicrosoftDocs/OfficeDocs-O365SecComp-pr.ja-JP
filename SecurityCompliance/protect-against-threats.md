@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: Office 365 エンタープライズ保護する方法と、さまざまな脅威、なりすまし、マルウェア、スパム、フィッシング詐欺、およびデータへの不正アクセスを含む、組織について説明します。
-ms.openlocfilehash: e5e14e66617af6a513979d93aa4764c8843b975f
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 38fc2590b8693989befcf399e32ef378ab89495d
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706061"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749311"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Office 365 で脅威から保護する
 
@@ -27,11 +27,11 @@ Office 365 エンタープライズでは、さまざまな脅威、なりすま
 
 Office 365 でカスタム ドメインを使用する場合、組織内の送信者の不正行為を停止する、電子メールのセキュリティを向上させるし、ドメインの評判を保護するために役立ちます。
   
-- [SPF のスプーフィングを防止します。]([Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md))
+- [スプーフィングを防止するために Office 365 で SPF を設定する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
-- [DKIM で送信電子メールを検証します。]([Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md))
+- [DKIM を使用して、Office 365 のカスタム ドメインから送信される送信電子メールを検証する](use-dkim-to-validate-outbound-email.md)
     
-- [DMARC で電子メールを検証します。]([Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md))
+- [DMARC を使用して Office 365 でメールを検証する](use-dmarc-to-validate-email.md)
     
 ## <a name="anti-spam-amp-anti-malware"></a>スパム対策&amp;- マルウェア対策
 
@@ -39,11 +39,11 @@ Office 365 のスパム対策の評価、接続フィルター、およびマル
   
 - [スパム対策&amp;のマルウェア対策保護](anti-spam-and-anti-malware-protection.md)
     
-- [電子メールのログを有効にします。]([Enable mailbox auditing in Office 365](enable-mailbox-auditing.md))
+- [Office 365 でメールボックスの監査を有効にする](enable-mailbox-auditing.md)
     
 - [Office 365 でメール メッセージを検疫する](quarantine-email-messages.md)
     
-- [マイクロソフトに不審なコンテンツを送信します。]([Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md))
+- [マルウェアおよびマルウェアでないファイルを分析のために Microsoft に提出する](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
     
 ## <a name="advanced-threat-protection"></a>Advanced Threat Protection
 

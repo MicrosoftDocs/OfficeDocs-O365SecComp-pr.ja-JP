@@ -11,16 +11,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: 一部の項目をインデックス (インデックス付けされない呼び出しの項目も) は、Exchange メールボックスのアイテムと SharePoint のドキュメントと OneDrive のサイトが何らかの理由がコンテンツの検索用にインデックス完全にいなかったのです。この記事で項目が検索用インデックスを作成することはできず、部分的にインデックス付きの項目として返される理由を説明、部分的にインデックス付きのアイテムの検索エラーを識別して PowerShell スクリプトを使用して、部分的にインデックス付きの電子メールを組織のリスクを判断するのにはアイテムです。
-ms.openlocfilehash: 98f794e80ea8a6016887ff139bc5b546c438f093
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: c1003f9907fffa37042ba62d01e4d938250cf570
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038080"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749341"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Office 365 の電子情報開示で部分的にインデックスが作成されたアイテムを調査する
 
-Office 365 のセキュリティを実行するコンテンツの検索&amp;コンプライアンス センターが検索を実行すると、予定の検索結果に部分的にインデックス付きのアイテムが自動的に含まれます。部分的にインデックス付きのアイテムは、Exchange メールボックスのアイテムを何らかの理由により検索用インデックスが作成されなかった完全にビジネス サイトの SharePoint と OneDrive のドキュメントです。[電子メール メッセージのインデックス作成の制限](limits-for-content-search.md#indexinglimits)内に収まっているために、ほとんどの電子メール メッセージおよびサイトのドキュメントが正常にインデックスします。ただし、いくつかの項目は、これらのインデックスの制限を超える可能性がありますが部分的にインデックスを作成します。アイテムの検索用インデックスを作成できない理由とは、コンテンツの検索を実行すると、部分的にインデックス付きの項目として返されます、その他の理由を以下に示します。
+Office 365 のセキュリティを実行するコンテンツの検索&amp;コンプライアンス センターが検索を実行すると、予定の検索結果に部分的にインデックス付きのアイテムが自動的に含まれます。部分的にインデックス付きのアイテムは、Exchange メールボックスのアイテムを何らかの理由により検索用インデックスが作成されなかった完全にビジネス サイトの SharePoint と OneDrive のドキュメントです。[電子メール メッセージのインデックス作成の制限](limits-for-content-search.md#indexing-limits-for-email-messages)内に収まっているために、ほとんどの電子メール メッセージおよびサイトのドキュメントが正常にインデックスします。ただし、いくつかの項目は、これらのインデックスの制限を超える可能性がありますが部分的にインデックスを作成します。アイテムの検索用インデックスを作成できない理由とは、コンテンツの検索を実行すると、部分的にインデックス付きの項目として返されます、その他の理由を以下に示します。
   
 - 電子メール メッセージがある添付ファイルの種類のファイルのインデックスを作成することはできません。ほとんどの場合、ファイルの種類は[認識されない、またはインデックス作成でサポートされていません](partially-indexed-items-in-content-search.md#file-types-not-indexed-for-search)
     
