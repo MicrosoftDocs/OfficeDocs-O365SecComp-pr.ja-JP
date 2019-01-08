@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 description: Azure の情報保護、組織の上に組み込まれている機能が使用できる新しい Office 365 メッセージ暗号化では、電子メール、組織内外のユーザーとの通信が保護されています。ホームの新機能は、他の Office 365 の組織、Outlook.com、Gmail、その他の電子メール サービスと動作します。
-ms.openlocfilehash: c24b2f9b612b863217df8afd951424d1a89295c9
-ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
+ms.openlocfilehash: 0f601b425da294fbb2ddbfe1d7497c0d582e3238
+ms.sourcegitcommit: bd1762ccf63c7d2ad8b49a936115171c72fb2c0f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23955419"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27750036"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>新しい Office 365 Message Encryption 機能を設定する
 
@@ -43,34 +43,33 @@ Azure の情報保護の保護機能を活用するには、新しい Office 365
   
 ### <a name="to-manually-set-up-the-new-capabilities-for-ome"></a>ホームに、新しい機能を手動で設定するには
 
-1. 組織のサブスクリプションがあることを確認します。サブスクリプションについてを参照してください「どのようなサブスクリプションが必要、新しいホーム capabilities? を使用する」で、 [Office 365 のメッセージの暗号化に関する FAQ です](ome-faq.md)。Azure の情報保護へのサブスクリプションの購入方法の詳細については、 [Azure の情報の保護](https://azure.microsoft.com/services/information-protection/)を参照してください。
-    
+1. 組織のサブスクリプションがあることを確認します。サブスクリプションについてを参照してください「どのようなサブスクリプションが必要、新しいホーム capabilities? を使用する」で、 [Office 365 のメッセージの暗号化に関する FAQ です。](ome-faq.md)です。Azure の情報保護へのサブスクリプションの購入方法の詳細については、 [Azure の情報の保護](https://azure.microsoft.com/services/information-protection/)を参照してください。
+
 2. Microsoft Azure 情報の保護 (既定値) のルート キーを管理するかを生成し (独自のキー、または BYOK と呼ばれる) 手動でこのキーを管理するかどうかを決定します。生成し、このキーを手動で管理する場合は、ホームの新機能を設定する前にいくつかの手順を完了する必要があります。詳細については、[計画と Azure の情報保護のテナントのキーを実装する](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key)を参照してください。ホームを設定する前に次の手順を完了することをお勧めします。
-    
+
 3. Azure アクセス権の管理を実行することによって、ホームの新しい機能を有効にします。手順については、 [Azure アクセス権の管理をアクティブにする](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service)を参照してください。これを行うと、Office 365 は自動的にするためホームの新機能を使用できます。
-    
+
     > [!TIP]
-    > Web 上で outlook は、ホームのこのクライアントを使用して電子メール メッセージに新しい機能を適用する前に 1 日を待機することをお勧めするための UI をキャッシュします。UI は、新しい構成を反映するように更新をする前に、ホームの新しい機能は使用できません。UI を更新した後、ユーザーは、ホームの新しい機能を使用して電子メール メッセージを保護できます。 
+    > Web 上で outlook は、ホームのこのクライアントを使用して電子メール メッセージに新しい機能を適用する前に 1 日を待機することをお勧めするための UI をキャッシュします。UI は、新しい構成を反映するように更新をする前に、ホームの新しい機能は使用できません。UI を更新した後、ユーザーは、ホームの新しい機能を使用して電子メール メッセージを保護できます。
   
 4. (省略可能)新しいメール フロー ルールを設定または組織から送信されたメッセージを暗号化するために Office 365 をする時期と方法を定義する既存のメール フロー ルールを更新します。
-    
+
 ## <a name="verify-that-the-new-capabilities-for-ome-are-configured-properly-by-using-windows-powershell"></a>Windows PowerShell を使用してホームの新機能が正しく構成されていることを確認します。
 
 この手順では、Exchange オンライン PowerShell からホームの新機能を使用するのには、テナントが正しく構成されていることを確認します。
   
-1. 大域管理者アクセス許可を持つ、Office 365 の組織で、職場、学校のアカウントを使用すると、Windows PowerShell セッションを開始し、Exchange Online に接続します。手順については、 [Exchange オンライン PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)を参照してください。
-    
+1. 大域管理者アクセス許可を持つ、Office 365 の組織で、職場、学校のアカウントを使用すると、Windows PowerShell セッションを開始し、Exchange Online に接続します。手順については、 [Exchange オンライン PowerShell への接続](https://aka.ms/exopowershell)を参照してください。
+
 2. 次の構文を使用してテスト IRMConfiguration コマンドレットを実行します。
-    
+
     ```Test-IRMConfiguration [-Sender <email address >]```  
 
    次に例を示します。
-    
+
     ```Test-IRMConfiguration -Sender securityadmin@contoso.com```
 
-    電子メール アドレスの Office 365 の組織内のユーザーの電子メール アドレスです。オプションであり、提供するときに、送信者の電子メール アドレスは追加チェックを実行するシステムを強制します。
-    
-    結果は、次のようになります。
+    電子メール アドレスの Office 365 の組織内のユーザーの電子メール アドレスです。オプションであり、提供するときに、送信者の電子メール アドレスは追加チェックを実行するシステムを強制します。結果は、次のようになります。
+
     
     ```
     Results : Acquiring RMS Templates ...
@@ -87,11 +86,11 @@ Azure の情報保護の保護機能を活用するには、新しい Office 365
     ```
 
     *Contoso 社*では、Office 365 の組織の名前に置き換えられます。 
-    
+
     結果で返される既定のテンプレートの名前は、上記の結果に表示されるものとは異なる可能性があります。
-    
+
     テンプレートと既定のテンプレートについての情報の概要については、[構成して Azure の情報保護のためのテンプレートを管理する](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)を参照してください。転送の実行方法について] して、[暗号化専用のオプションを作成する既存のテンプレートに追加のテンプレート、またはどのような権限を確認は含まれている、方法は、 [Azure の権利管理の使用権限を設定する](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights)を参照してください。
-    
+
 3. 権限管理サービスから切断するのには削除 PSSession コマンドレットを実行するには。
     
     ```Remove-PSSession $session```
@@ -106,7 +105,6 @@ Azure の情報保護の保護機能を活用するには、新しい Office 365
 メール フロー ルールの詳細については、 [Office 365 で電子メール メッセージを暗号化するためにメール フロー ルールの定義](define-mail-flow-rules-to-encrypt-email.md)を参照してください。
   
 ## <a name="related-topics"></a>関連項目
-<a name="Rules_1"> </a>
 
 [送信、表示、および Outlook で暗号化されたメッセージに返信します。](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)
   
@@ -114,6 +112,4 @@ Azure の情報保護の保護機能を活用するには、新しい Office 365
   
 [Exchange Online PowerShell への接続](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx)
   
-[Office 365 で電子メール メッセージを暗号化するためにメール フローの規則を定義します。](define-mail-flow-rules-to-encrypt-email.md)
-  
-
+[Office 365 でメールを暗号化するためにメール フロー ルールを定義する](define-mail-flow-rules-to-encrypt-email.md)

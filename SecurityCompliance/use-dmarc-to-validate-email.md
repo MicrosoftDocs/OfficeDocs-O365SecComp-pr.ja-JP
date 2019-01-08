@@ -13,12 +13,12 @@ search.appverid:
 ms.custom: TN2DMC
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 description: Office 365 の組織から送信されたメッセージを検証するために、ドメイン ベースのメッセージ認証、レポート、および準拠 (DMARC) を構成する方法について説明します。
-ms.openlocfilehash: f8c310e5efb6859bff392a89a3ad325400aa369f
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+ms.openlocfilehash: 2f8e712028b5b5ee8950b48780083a20c7dce6ab
+ms.sourcegitcommit: bd1762ccf63c7d2ad8b49a936115171c72fb2c0f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255872"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27750046"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>DMARC を使用して Office 365 でメールを検証する
 
@@ -136,16 +136,16 @@ SPF のセットアップ後には、DKIM をセットアップする必要が�
 ここでは、Office 365 で最もよく使用される構文オプションを示します。ただし、ここに記載されていない別の構文のオプションもあります。ドメイン用の DMARC TXT レコードは、次に示す形式で作成します。
   
 ```
-_dmarc.domainTTL IN TXT "v=DMARC1; pct=100; p=policy
+_dmarc.domain  TTL  IN  TXT  "v=DMARC1; pct=100; p=policy"
 ```
 
 各部分の意味は次のとおりです。
   
 - *ドメイン*は、ドメインを保護したいです。既定では、レコードは、ドメインとすべてのサブドメインからメールを保護します。指定する場合など\_dmarc.contoso.com、DMARC は、housewares.contoso.com や plumbing.contoso.com など、すべてのサブドメインとドメインからメールを保護します。 
     
-- *TTL* は、常に 1 時間に相当する必要があります。TTL に使用される単位は、ドメインのレジストラーに応じて hours (1 時間)、minutes (60 分)、または seconds (3,600 秒) のいずれかになります。 
+- *TTL*は 1 時間に相当します。TTL のいずれかの時間 (1 時間) で使用される単位は分 (60 分)、または秒 (3600 秒) では、ドメインのレジストラーによって異なります。 
     
-- pct=100 は、このルールがメールの 100% に使用される必要があることを示します。
+- *pct = 100*電子メールの 100% のこの規則を使用することを示します。
     
 - *ポリシー*では、DMARC の障害が発生した場合は、次に受信側のサーバーをするどのようなポリシーを指定します。[なし] に、検疫は、ポリシーを設定または拒否することができます。 
     
