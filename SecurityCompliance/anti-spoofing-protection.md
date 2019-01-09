@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: この資料では、どのように Office 365 を軽減するフィッシング攻撃使用が送信者ドメインがスプーフィングされているドメインは、偽造されたことを説明します。メッセージを分析してこれを達成して、標準的な電子メールの認証方法やその他の送信者評価の手法を使用して、neithe を認証することができるものをブロックします。Office 365 の組織に公開するフィッシング攻撃の数を減らすためにこの変更が実装されています。
-ms.openlocfilehash: 95f4995b6447870700bc483f205ca3ff831045f5
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: 19e7ea957592a486a559dac222a51139bf79b574
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194718"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769861"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 でのスプーフィング対策保護
 
@@ -414,21 +414,21 @@ ATP の有無にかかわらず、Exchange Online を使用する組織は、こ
   
 |**Priority**|**ポリシー**|**分類**|**場所、管理しますか。**|**適用対象**|
 |:-----|:-----|:-----|:-----|:-----|
-|1   <br/> |マルウェア  <br/> |MALW  <br/> |[マルウェアのポリシー](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |すべての組織  <br/> |
-|2   <br/> |フィッシング  <br/> |PHSH  <br/> |[ホストされるコンテンツ フィルター ポリシー](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |すべての組織  <br/> |
-|3   <br/> |信頼度の高いスパム  <br/> |HSPM  <br/> |[ホストされるコンテンツ フィルター ポリシー](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |すべての組織  <br/> |
-|4   <br/> |なりすまし  <br/> |なりすまし  <br/> |[フィッシング詐欺対策ポリシー](https://go.microsoft.com/fwlink/?linkid=864553)[なりすましのインテリジェンス](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |すべての組織  <br/> |
-|5   <br/> |スパム  <br/> |SPM  <br/> |[ホストされるコンテンツ フィルター ポリシー](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |すべての組織  <br/> |
-|6   <br/> |一括  <br/> |一括  <br/> |[ホストされるコンテンツ フィルター ポリシー](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |すべての組織  <br/> |
-|7   <br/> |ドメインの偽装  <br/> |DIMP  <br/> |[フィッシング詐欺対策ポリシー](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |ATP の組織のみ  <br/> |
-|8   <br/> |ユーザーの偽装  <br/> |UIMP  <br/> |[フィッシング詐欺対策ポリシー](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |ATP の組織のみ <br/> |
+|1  <br/> |マルウェア  <br/> |MALW  <br/> |[マルウェアのポリシー](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |すべての組織  <br/> |
+|2  <br/> |フィッシング  <br/> |PHSH  <br/> |[ホストされるコンテンツ フィルター ポリシー](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |すべての組織  <br/> |
+|3  <br/> |信頼度の高いスパム  <br/> |HSPM  <br/> |[ホストされるコンテンツ フィルター ポリシー](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |すべての組織  <br/> |
+|4  <br/> |なりすまし  <br/> |なりすまし  <br/> |[フィッシング詐欺対策ポリシー](https://go.microsoft.com/fwlink/?linkid=864553)[なりすましのインテリジェンス](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |すべての組織  <br/> |
+|5  <br/> |スパム  <br/> |SPM  <br/> |[ホストされるコンテンツ フィルター ポリシー](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |すべての組織  <br/> |
+|6  <br/> |一括  <br/> |一括  <br/> |[ホストされるコンテンツ フィルター ポリシー](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |すべての組織  <br/> |
+|7  <br/> |ドメインの偽装  <br/> |DIMP  <br/> |[フィッシング詐欺対策ポリシー](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |ATP の組織のみ  <br/> |
+|8  <br/> |ユーザーの偽装  <br/> |UIMP  <br/> |[フィッシング詐欺対策ポリシー](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |ATP の組織のみ <br/> |
    
 別のフィッシング詐欺対策ポリシーが複数ある場合は、最高の優先順位で適用されます。たとえば、2 つのポリシーがあるとします。
   
 |**ポリシー**|**Priority**|**ユーザー/ドメインの偽装**|**スプーフィング対策**|
 |:-----|:-----|:-----|:-----|
-|A  <br/> |1   <br/> |On  <br/> |Off  <br/> |
-|B  <br/> |2   <br/> |Off  <br/> |オン  <br/> |
+|A  <br/> |1  <br/> |On  <br/> |Off  <br/> |
+|B  <br/> |2  <br/> |Off  <br/> |オン  <br/> |
    
 メッセージは、スプーフィングおよびユーザーの偽装とは、識別しユーザーの同じセットのスコープは、ポリシー A と B のポリシー、し、メッセージは、スプーフィングとして扱われますと以降のアクションは適用されませんスプーフィング対策がになっています。、なりすましは、ユーザーの偽装 (8) よりも高い優先順位 (4) で実行されるとします。
   
@@ -444,7 +444,7 @@ ATP の有無にかかわらず、Exchange Online を使用する組織は、こ
   
 ![顧客の MX レコードが Office 365 をポイントしていません。](media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
   
-Exchange のオンプレミスのメール サーバー、Ironport などのデバイスをフィルタ リングするメールを他のサーバーがありますか、他のクラウド サービスをホストします。
+交換設置、Ironport などのデバイスをフィルタ リングするメールのメール サーバーまたは別のクラウド サービスをホストする他のサーバーがあります。
   
 場合は受信者のドメインの MX レコードが Office 365 に、Office 365 は、受信側ドメインの MX レコードを検索し、別のサービスを指す場合は、スプーフィング対策を抑制するため、スプーフィング対策を無効にする必要がありません。かどうか、ドメインには、別のサーバー前面にない場合は、MX レコードを検索するのには、MX のツールボックスのような web サイトを使用できます。次のようなと言えます。
   
@@ -635,7 +635,7 @@ Office 365 をご送信の電子メールを送信するのには Office 365 を
     
 - 一括送信者に代わってメールを送信した場合は、必要がありますを使用する方法で電子メールを送信するようするようから送信側のドメイン: SPF または DMARC を通過するドメインとアドレス (該当する場合に属する) に揃えて配置します。
     
-- オンプレミス メール サーバー、または、サービスとしてのソフトウェアのプロバイダー、または、Microsoft Azure、GoDaddy、ラック、Amazon Web サービスのようなクラウド ・ ホスティング サービスから送信またはと同様に、するようにする場合は、SPF レコードに追加されます。
+- オンプレミス メール サーバー、または、サービスとしてのソフトウェア ・ プロバイダーとは、Microsoft Azure、GoDaddy、ラック、Amazon Web サービスのようなクラウド ・ ホスティング サービスからの送信がある場合と同様に、行う必要があります、SPF レコードに追加される場合。
     
 - ISP によってホストされている小規模なドメインの場合は、ISP が提供するの SPF レコードの説明書に従って設定してください。ほとんどの Isp では、命令のこれらの種類を提供し、会社のサポート ページにあります。
     

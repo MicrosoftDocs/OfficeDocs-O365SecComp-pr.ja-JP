@@ -1,5 +1,5 @@
 ---
-title: Office 365 に送信スパムの制御
+title: Office 365 で送信スパムを制御する
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 description: 組織では、スパムとしてマークされている迷惑メールの多くを送信する場合は Office 365 で電子メールを送信することから禁止を取得でした。このような理由と何ができるかについての詳細については、この資料を参照してください。
-ms.openlocfilehash: 916a062d08e01954e7736b6f22d297aea04baf28
-ms.sourcegitcommit: 17dda7ece5c9e884944a92ac0f842cf1e62ec506
+ms.openlocfilehash: a18e584a260218a53494ef49dd2d7380a0a9a3f1
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23977582"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769788"
 ---
-# <a name="controlling-outbound-spam-in-office-365"></a>Office 365 に送信スパムの制御
+# <a name="controlling-outbound-spam-in-office-365"></a>Office 365 で送信スパムを制御する
 
 共有サービスは、私たちのために深刻な迷惑メールの送信を管理するを取得します。 1 人の顧客は、迷惑メールの送信を送信する場合送信 IP 評価サービスの低下し、他のお客様の e メールの成功の提に影響を与える、リソースの共有プールの背後にある多くのお客様があります。顧客 B の spams し、さまざまなサード パーティ製 IP ブロック リスト既にを使用している IP アドレスを一覧表示する場合は、顧客 A に公平ではありません。
 
@@ -50,7 +50,7 @@ ms.locfileid: "23977582"
 
 大量のアカウントが危険にさらされたと低下] ボックスの一覧の取得・ プラクティスを発進からサービスを保護すると電子メールの送信を希望お客様の間でバランスをとることは困難です。もう一度、サード パーティのブロック リストに着陸、発信 IP のコストは、送信電子メールを送信することから顧客のブロックよりも高いです。[Exchange のオンライン サービスの説明](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx#Receiving and sending limits)で説明したとおり、EOP を使用して、一括メールではありませんを送信する、サポートされているサービスの使用し、「ベスト ・ エフォート」単位でのみ許可されていますいます。一括メール送信を希望お客様には、次のお勧めします。
 
-a. は**独自のオンプレミスのメール サーバーで一括メールを送信**します。これは、お客様がこの電子メールの種類の独自の電子メール インフラストラクチャを維持する必要ことを意味します。
+a. は**独自の社内設置型から一括メールを送信するには、メール ・ サーバ**です。これは、お客様がこの電子メールの種類の独自の電子メール インフラストラクチャを維持する必要ことを意味します。
 
 b.**大量の通信を送信する使用のサード パーティ一括クラリス メール**です。いくつかサード パーティ製発進一括メールを送信することが唯一のビジネスがあります。お客様はきちんとメールがあることを強制するのには専用のリソースがあることを確認して、操作できます。 
 
