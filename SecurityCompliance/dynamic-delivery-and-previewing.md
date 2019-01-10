@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: ATP の安全な添付ファイル ポリシーを設定するときに、メッセージの遅延を回避し、スキャンされている添付ファイルをプレビューするのにはユーザーを有効にする動的な配信を選択します。
-ms.openlocfilehash: 95c270e871c3febb13eef8c4374d996fc763315b
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+ms.openlocfilehash: fe1b8fd2e26c683735f64de6b5b195e3bc351c8e
+ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769831"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27789465"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>動的な配信および Office 365 ATP の安全な添付ファイルをプレビューします。
 
@@ -35,6 +35,9 @@ ms.locfileid: "27769831"
 - 悪意のある添付ファイルが確認された場合、検疫に送信されます、 [Office 365 で検疫されたメッセージを管理する](manage-quarantined-messages-and-files.md)ことができます (Office 365 のグローバル管理者またはセキュリティ管理者の場合) などの組織のセキュリティ チームの他の場所。
 
 ほとんどの Pdf や Office が進行中で ATP のスキャン中に、セーフ モードでドキュメントをプレビューできます。添付ファイルに動的な配信プレビュー用のプログラムと互換性がない場合電子メールの受信者は、ATP の安全な添付ファイルのスキャンが完了するまでに、添付ファイルのプレース ホルダーが参照してください。
+
+> [!TIP]
+> モバイル デバイスを使用している場合は、最初の動的な配信プレビューアーで Pdf が動作しない、モバイル ブラウザーを使用して Office 365 にサインインしてみてください。
 
 動的配信では、読み取り、および、添付ファイルを分析しているときに、電子メール メッセージにすぐに応答します。 
 
@@ -73,4 +76,4 @@ ms.locfileid: "27769831"
 - Exclaimer Exchange Online 管理者が有効にする環境。この問題を解決するには、 [ATP の動的な配信および Exclaimer を使用すると、添付ファイル付きのメッセージが配信されない](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)を参照してください.
 
 - [/Multipurpose をセキュリティで保護されたインターネット メール拡張 (S/MIME)](s-mime-for-message-signing-and-encryption.md)で暗号化されたメッセージ)
-    
+

@@ -3,7 +3,7 @@ title: 機密情報の新しい Office 365 のメッセージの暗号化のポ�
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/7/2019
+ms.date: 1/9/2019
 ROBOTS: NOINDEX, NOFOLLOW
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: '概要: は、すべてのテナントにロールアウトの機密情報の種類の Office 365 のメッセージの暗号化ポリシーを自動的に適用します。'
-ms.openlocfilehash: f5996707d1cafe8dc1bf90856878de0a4fb7b77b
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: a8cd132af2b1429698ea92779a3c54559e2b13e2
+ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27752090"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27789455"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>機密情報を office 365 のメッセージの暗号化ポリシー
 
@@ -30,7 +30,7 @@ ms.locfileid: "27752090"
 
 ## <a name="sensitive-information-type-policy-details"></a>機密性の高い情報の種類のポリシーの詳細
 
-使用して組織外の電子メールを自動的に暗号化される組織で Exchange メール フロー ルールを作成するは、*暗号化専用*ポリシーは次の種類機密情報にはが含まれている場合。
+使用して組織外の電子メールを自動的に暗号化される組織で Exchange メール フロー ルールを作成するは、*暗号化専用*ポリシーは、電子メールまたは添付ファイルに次の種類の機密情報が含まれている場合。
 
 - ABA ルーティング番号
 - クレジット カード番号
@@ -70,6 +70,6 @@ ms.locfileid: "27752090"
    Set-IRMConfiguration -AutomaticServiceUpdateEnabled $false
    ```
 
-## <a name="how-do-i-disable-the-automatic-policy"></a>自動ポリシーを無効にする方法は?
+## <a name="how-do-i-disable-or-customize-the-automatic-policy"></a>方法を無効にする、または自動のポリシーをカスタマイズしますか。
 
-でしたを無効にこの変更は、Exchange のメール ルールは既に作成されている場合することができます[、ルールを無効にするの](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)には、**メールの流れ** > Exchange 管理ツールでは、**ルール**のセンター (EAC) と「*送信暗号化ルール無効にします。(ルール) から機密性の高い電子メール*」です。
+でしたを無効にこの変更は、Exchange のメール フロー ルールは既に作成されている場合することができます[を無効にするかルールを編集して](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)**メールの流れ**に移動して > Exchange 管理ツールでは、**ルール**(EAC) を中心し、"*暗号化の規則を無効にします。(ルール) から機密性の高い電子メールを送信*」です。
