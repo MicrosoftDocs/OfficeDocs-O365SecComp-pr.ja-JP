@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 description: 迷惑メールをブロックし、検出漏れのメッセージを防止するための Office 365 スパム フィルターの設定に関するヒント。管理者は、Office 365 のスパム対策フィルターを使用して、迷惑メールがユーザーの受信トレイに送信されないようにします。
-ms.openlocfilehash: 3502215dba4097d0643501dd089ec3fe94575c87
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: d96dfa0cad4ef8c27303c9f77d259d4c8b2b04c9
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532041"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769871"
 ---
 # <a name="block-email-spam-with-the-office-365-spam-filter-to-prevent-false-negative-issues"></a>検出漏れの問題を防止するために Office 365 のスパム フィルターを使用して迷惑メールをブロックする
 
@@ -97,7 +97,6 @@ EOP サービスは、情報がサービスと共有されている場合、ユ�
 > メール フロー ルールを使用して SCL 値を 0 (または -1 以外の値) に変更すると、すべての Outlook の迷惑メール オプションがメッセージに適用されます。これは、ブロック リストおよびセーフ リストが尊重されるようになることを意味しますが、ブロック リストやセーフ リストにアドレスが記載されていないメッセージは、クライアント側の迷惑メール フィルター処理によって迷惑メールとしてマークされる可能性があるということも意味します。Outlook にブロック リストとセーフ リストを処理させる必要があるものの、クライアント側の迷惑メール フィルターは使用したくない場合は、Outlook の迷惑メール オプションでオプションを「自動フィルター処理なし」に設定する必要があります。最新バージョンの Outlook では、「自動フィルター処理なし」が既定のオプションですが、クライアント側の迷惑メール フィルターがメッセージに適用されないようにするために、この設定になっていることを確認する必要があります。管理者は、「[Outlook: 迷惑メールの UI とフィルター処理機構を無効にするポリシー設定](https://support.microsoft.com/ja-JP/kb/2180568)」の手順に従って、Outlook の迷惑メール フィルター処理を無効にすることができます。
   
 ## <a name="see-also"></a>関連項目
-<a name="BKMK_please_comment"> </a>
 
 [Office 365 の電子メールのスパム対策保護](anti-spam-protection.md)
   
