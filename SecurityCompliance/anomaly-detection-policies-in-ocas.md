@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: '異常検出ポリシーを Office 365 のクラウド アプリケーションのセキュリティでは、潜在的な問題を明らかに、組み込みアルゴリズムを使用します。(作成) 時を調整するにはフィルターを使用して、1 つ以上の異常検出ポリシーが必要です。 '
-ms.openlocfilehash: 8babe86dd5adb6c25a069096157cac121ad66ab1
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 62e2db3ba46f41bce5c5c4fab9e6c685838d68e8
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706341"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015079"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security の異常検出ポリシー
 
@@ -51,7 +51,7 @@ ms.locfileid: "26706341"
     
 ## <a name="view-your-anomaly-detection-policies"></a>異常検出ポリシーを表示します。
 
-1. グローバル管理者またはセキュリティ管理者に移動します。[https://security.microsoft.com](https://security.microsoft.com)し、職場、学校のアカウントを使用してサインインします。 
+1. グローバル管理者またはセキュリティ管理者に移動します。[https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用してサインインします。 
     
 2. セキュリティで&amp;コンプライアンス センターでは、**アラート**を選択して\>**管理警告の詳細**です。
     
@@ -89,11 +89,10 @@ ms.locfileid: "26706341"
 |複数ログイン試行の失敗  <br/> |1 つのセッションで複数のログイン試行が失敗したユーザーを識別する、学習した基準計画に関連する可能性があります違反の試行で。  <br/> |
    
 ## <a name="triage-anomaly-detection-alerts"></a>トリアージの異常検出の警告
-<a name="triage"> </a>
 
 アラートが発生、それらのアラートをすばやく優先順位を決定し、どれを最初に処理を決定できます。アラートのコンテキストを使用すると、拡大画像の表示し、実際に発生している悪意のあるものかどうかを決定します。アラートの調査を開始するには、次の手順を使用します。
   
-1. グローバル管理者またはセキュリティ管理者に移動します。[https://security.microsoft.com](https://security.microsoft.com)し、職場、学校のアカウントを使用してサインインします。 
+1. グローバル管理者またはセキュリティ管理者に移動します。[https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用してサインインします。 
     
 2. セキュリティで&amp;コンプライアンス センターでは、**アラート**を選択して\>**管理警告の詳細**です。
     

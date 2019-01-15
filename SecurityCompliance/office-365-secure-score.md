@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: どのようにセキュリティで保護された組織実際には、Office 365 を知りたいですか。セキュリティで保護されたスコアがお手伝いします。セキュリティで保護されたスコアは、通常の活動と、Offic 365 のセキュリティ設定に基づいて、組織のセキュリティを分析し、スコアが割り当てられます。
-ms.openlocfilehash: 0d19cd9512838bf2d8b0bff615ccaa1eea21266a
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 08d452f2b297948c13243a5eb36ae6e22839e545
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706181"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015070"
 ---
 # <a name="office-365-secure-score"></a>Office 365 セキュリティ スコア
 
@@ -28,7 +28,7 @@ ms.locfileid: "26706181"
 
 訪問によって、組織のセキュリティで保護されたスコアを表示するには場合は、組織が[Office 365 の企業](https://docs.microsoft.com/office365/enterprise/)、[マイクロソフトの 365 のビジネス](https://docs.microsoft.com/microsoft-365/business/)、または Office 365 のビジネス プレミアムを含むサブスクリプションを保持し、必要な権限がある場合、 [https://securescore.office.com](https://securescore.office.com)。 
 
-または、お客様がアクセスできるセキュリティとコンプライアンス センター ([https://security.microsoft.com](https://security.microsoft.com))、現在のスコアを提供するセキュリティで保護されたスコアのウィジェットを見つけるでしょう。
+または、お客様がアクセスできるセキュリティとコンプライアンス センター ([https://protection.office.com](https://protection.office.com))、現在のスコアを提供するセキュリティで保護されたスコアのウィジェットを見つけるでしょう。
 
 ![スコアのウィジェットをセキュリティで保護します。](media/SecureScoreWidget-o365.png)
 
@@ -55,7 +55,7 @@ ms.locfileid: "26706181"
   
 ![スコアのスコアをセキュリティで保護された Office 365 ツールの [アナライザー] タブ](media/SecureScore-ScoreAnalyzer-7days.png)
   
-、グラフの下部にカテゴリで、lsit のスコアとアクションが表示されます。
+、グラフの下のカテゴリでのスコアおよびアクションの一覧が表示されます。
   
 ![[スコアの分析] タブの選択されているデータ ポイントを示すグラフします。](media/SecureScore-Analyzer-breakdownbelowchart.png)
   

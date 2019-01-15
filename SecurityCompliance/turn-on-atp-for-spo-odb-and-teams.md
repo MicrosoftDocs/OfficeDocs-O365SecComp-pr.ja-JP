@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 description: SharePoint、OneDrive、および検出されたファイルについての警告を設定する方法など、チーム分析ツールを有効にする方法を説明します。
-ms.openlocfilehash: e9df56da5d5f1a087d4e75e0122b51933ae7b315
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 770af7078166857bcb9784112710262b7de788bb
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706451"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014889"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、およびマイクロソフトのチームに対して Office 365 の分析ツールを有効に
 
@@ -29,7 +29,7 @@ ms.locfileid: "26706451"
 
  **この手順を開始する前に、監査ログが有効になって、Office 365 環境の確認**をします。これは通常、Exchange のオンラインを割り当てられている監査ログのロールを持つユーザーによって行います。詳細については、[オンまたはオフ、Office 365 を有効にする監査ログの検索](turn-audit-log-search-on-or-off.md)を参照してください。
   
-1. グローバル管理者またはセキュリティ管理者には、 [https://security.microsoft.com](https://security.microsoft.com)、および、職場、学校のアカウントでサインインします。
+1. グローバル管理者またはセキュリティ管理者には、 [https://protection.office.com](https://protection.office.com)、および、職場、学校のアカウントでサインインします。
     
 2. Office 365 のセキュリティで&amp;コンプライアンス センターでは、**脅威の管理**の下で、左側のナビゲーション ペインで**ポリシー**を選択する\>**安全な添付ファイル**です。 <br/>![セキュリティ&amp;コンプライアンス センターでは、脅威の管理を選択して\>ポリシー](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   
@@ -55,7 +55,7 @@ Office 365 で、PowerShell を使用する方法の詳細については、 [Po
 
 ビジネス、またはマイクロソフトのチームの SharePoint のオンライン、OneDrive のファイルが悪意のあるものとして確認されたときに通知を受信するには、アラートを設定できます。
   
-1. [Office 365 のセキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)、**アラート**を選択して\>**通知の管理**。
+1. [Office 365 のセキュリティ&amp;コンプライアンス センター](https://protection.office.com)、**アラート**を選択して\>**通知の管理**。
     
 2. **新しいアラート ・ ポリシー**を選択します。
     

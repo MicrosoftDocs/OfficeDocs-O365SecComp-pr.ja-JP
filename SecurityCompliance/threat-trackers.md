@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 description: 脅威のトラッカーの組織のセキュリティ上の問題の詳細に把握するための新しい注目に値するトラッカーを含むについて説明します。
-ms.openlocfilehash: e9dfdde563260ff7969f4749357c130ab98ce386
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 7729a78d0b18df7d73751f4480ef095bedc5965b
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706381"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014999"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>脅威トラッカー - 新機能とNoteworthy 機能 
 
@@ -35,7 +35,7 @@ ms.locfileid: "26706381"
   
 トラッカーは、 [Office 365 の脅威のインテリジェンス](office-365-ti.md)を備えた多くの優れた機能のほんの一部です。使用可能な場合、新しい脅威のトラッカーは、[トラッカーの特筆すべき](threat-trackers.md#notey)、 [Trending トラッカー](threat-trackers.md#trending)、[履歴のクエリ](threat-trackers.md#trackedq)、および[保存されたクエリ](threat-trackers.md#savedq)に含まれます。
   
-セキュリティには表示し、脅威のトラッカーを使用して、組織の利用可能な&amp;コンプライアンス センター ([https://security.microsoft.com](https://security.microsoft.com))**脅威の管理**」を選択し、 \> **脅威の追跡ツール**です。
+セキュリティには表示し、脅威のトラッカーを使用して、組織の利用可能な&amp;コンプライアンス センター ([https://protection.office.com](https://protection.office.com))**脅威の管理**」を選択し、 \> **脅威の追跡ツール**です。
   
 > [!NOTE]
 > 脅威のトラッカーを使用するには、Office 365 のグローバル管理者、セキュリティ管理者、またはセキュリティのリーダーが必要です。参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。 

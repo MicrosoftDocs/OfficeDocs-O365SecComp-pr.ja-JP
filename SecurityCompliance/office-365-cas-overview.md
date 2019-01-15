@@ -3,6 +3,7 @@ title: Office 365 Cloud App Security の概要
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 12/03/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Office 365 のクラウド アプリケーションのセキュリティを使用する可能性のある問題があると、必要な場合は、セキュリティ問題に対処するアクションを実行するような状況を調査することができますので、Office 365 で不審な動作を把握できます。 '
-ms.openlocfilehash: 722c305288798b38ac125a693d9d150446458324
-ms.sourcegitcommit: cd452513d8761b2e50b4f9b6cf29422d146307ec
+ms.openlocfilehash: 62b1dc1d9285e60f30c1d5e541973640bb47ae35
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26864558"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014929"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Office 365 Cloud App Security の概要
   
@@ -39,7 +40,7 @@ Office 365 のクラウド アプリケーションのセキュリティを使�
   
 Office 365 のセキュリティを通じて Office 365 のクラウド アプリケーションのセキュリティのポータルを表示する&amp;コンプライアンス センターです。これを行う方法の 1 つを以下に示します。
   
-1. [https://security.microsoft.com](https://security.microsoft.com)し、職場、学校のアカウントを使用して Office 365 にサインインします。(これで、セキュリティには、&amp;コンプライアンス センター)。 
+1. [https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用して Office 365 にサインインします。(これで、セキュリティには、&amp;コンプライアンス センター)。 
     
 2. セキュリティで&amp;コンプライアンス センターでは、**アラート**を選択して\>**管理警告の詳細**です。 <br/>![セキュリティ&amp;コンプライアンス センターでは、Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>(Office 365 のクラウド アプリケーションのセキュリティはまだ有効でない、グローバル管理者は、 [Office 365 のクラウド アプリケーションのセキュリティを有効にする](turn-on-office-365-cas.md)) 場合
     
@@ -91,17 +92,17 @@ Office 365 のクラウド アプリケーションのセキュリティで、�
   
 [Office 365 のクラウド アプリケーションのセキュリティは、web トラフィックのログとデータ ソースについてください。](web-traffic-logs-and-data-sources-for-ocas.md)
   
-## <a name="app-permissions"></a>アプリケーションのアクセス許可
+## <a name="oauth-apps"></a>OAuth のアプリケーション
 
 Office 365 のクラウド アプリケーションのセキュリティ、許可したり、Office 365 のデータにアクセスするサードパーティ製アプリケーションを使用する組織内のユーザーを禁止できます。
   
-![O365 の CA では、[調査] メニューの [アプリケーション アクセス許可の管理] ページを表示できます。](media/78272cda-986f-4b3b-bbbe-8c236c74f5d3.png)
+![O365 の CA では、[調査] メニューの [OAuth の管理の [アプリ] ページを表示できます。](media/78272cda-986f-4b3b-bbbe-8c236c74f5d3.png)
   
-**調査**にこのページを表示して、 \> **アプリケーションのアクセスを許可**します。 
+**調査**にこのページを表示して、 \> **OAuth のアプリケーション**です。 
   
 ![O365 CA ポータルでは、調査を選択します。](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
-[Office 365 Cloud App Security を使用してアプリのアクセス許可を管理する](manage-app-permissions-in-ocas.md)
+[Office 365 Cloud App Security を使用して OAuth アプリを管理する](manage-app-permissions-in-ocas.md)
   
 ## <a name="cloud-discovery-dashboard"></a>クラウド探索のダッシュ ボード
 

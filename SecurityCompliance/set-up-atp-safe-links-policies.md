@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Word、Excel、PowerPoint、および Visio のファイルおよび電子メール メッセージ内の悪意のあるリンクから組織を保護するために、安全なリンクのポリシーを設定します。
-ms.openlocfilehash: fb2af8e29bfe2de027a2d0e88cf9bcc07299fba9
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 145e8998637756d204171f64021d6ad783b367f3
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706091"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015059"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Office 365 の ATP の安全なリンクのポリシーを設定します
 
@@ -51,7 +51,7 @@ ms.locfileid: "26706091"
 
 [Office 365 の高度な脅威保護](office-365-atp.md)がある場合は、組織内の全員に適用される既定の ATP の安全なリンク ポリシーするがあります。確認して、ことを確認し、必要な場合は、既定のポリシーを編集します。
   
-1. [https://security.microsoft.com](https://security.microsoft.com)と、職場、学校のアカウントでサインインします。 
+1. [https://protection.office.com](https://protection.office.com)と、職場、学校のアカウントでサインインします。 
     
 2. **脅威の管理**の下で、左側のナビゲーションでは、選択**ポリシー \> ** **安全なリンク**です。
     
@@ -67,7 +67,7 @@ ms.locfileid: "26706091"
 
 レビュー (または編集した) すべてのユーザーに適用される既定の ATP の安全なリンク ポリシー、次の手順、特定の受信者に適用する追加のポリシーを定義します。たとえば、追加のポリシーを定義することにより、既定のポリシーに例外を指定できます。 
   
-1. [https://security.microsoft.com](https://security.microsoft.com)と、職場、学校のアカウントでサインインします。 
+1. [https://protection.office.com](https://protection.office.com)と、職場、学校のアカウントでサインインします。 
     
 2. **脅威の管理**の下で、左側のナビゲーションでは、**ポリシー**を選択します。
     

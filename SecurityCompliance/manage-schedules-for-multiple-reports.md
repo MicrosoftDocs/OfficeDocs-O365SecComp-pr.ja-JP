@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: 表示、編集、およびセキュリティのレポートのスケジュールを管理する方法を説明&amp;コンプライアンス センターです。
-ms.openlocfilehash: 3dfe7c2f596078112150b944d45b43de8508cdca
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e1b27b5c9797f7c8eae9ad22d251998f894565b4
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531873"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014909"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>セキュリティで複数のレポートのスケジュールを管理する&amp;コンプライアンス センター
 
@@ -30,14 +30,16 @@ ms.locfileid: "22531873"
 > 必要があるかどうかを確認[Office 365 のセキュリティに割り当てられたアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。一般に、Office 365 のグローバル管理者、セキュリティ管理者、およびセキュリティのリーダーのセキュリティ レポートにアクセスできます&amp;コンプライアンス センターです。 
   
 ![セキュリティ&amp;コンプライアンス センターでは、レポートを選択して\>スケジュールの管理](media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
-  
-1. セキュリティ&amp;コンプライアンス センターでは、**レポート**に移動\>**スケジュールの管理**。
+
+1. [https://protection.office.com](https://protection.office.com)し、サインインします。セキュリティとコンプライアンスの中心に移動します。
+
+2. セキュリティ&amp;コンプライアンス センターでは、**レポート**に移動\>**スケジュールの管理**。
     
-2. 一覧で項目を選択します。
+3. 一覧で項目を選択します。
     
-3. レポートのスケジュールの情報を確認します。
+4. レポートのスケジュールの情報を確認します。
     
-4. 必要に応じて、編集や、スケジュールを削除し、[**閉じる**] をクリックします。
+5. 必要に応じて、編集や、スケジュールを削除し、[**閉じる**] をクリックします。
     
 ## <a name="related-topics"></a>関連項目
 

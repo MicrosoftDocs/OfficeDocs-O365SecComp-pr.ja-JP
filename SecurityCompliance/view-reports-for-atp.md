@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: 検索し、Office 365 高度な脅威保護、セキュリティでのレポートを使用する方法を説明&amp;コンプライアンス センターです。
-ms.openlocfilehash: d387e020e5834d4961e7bda50b418ea11b9f0f4d
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: a17f182f5c8d79e7863b26324a3c073ef18f14c9
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27749351"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014949"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 の高度な脅威保護のためのレポートを表示します。
 
@@ -35,7 +35,7 @@ ATP のレポートには、[脅威保護の状態のレポート](#threat-prote
 > [!NOTE]
 > 脅威保護の状態レポートは、 [Office 365 の ATP](office-365-atp.md)または[Exchange のオンライン保護](eop/exchange-online-protection-eop.md)(EOP) は使用しているお客様に利用可能ですただし、ATP のお客様の脅威保護の状態レポートに表示される情報 EOP の顧客が表示とは異なるデータが含まれる予定です。たとえば、ATP のお客様の脅威保護の状態レポート[SharePoint のオンライン、OneDrive、またはマイクロソフトのチームで悪意のあるファイルの検出](atp-for-spo-odb-and-teams.md)に関する情報が含まれます。このような情報は ATP、EOP は分析ツールではない使用しているお客様の脅威保護のステータス レポートの詳細は表示されませんので。
   
-脅威保護の状態レポートを表示するのには、[セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)**のレポート**には、 \> **ダッシュ ボード** \> **脅威保護の状態**です。
+脅威保護の状態レポートを表示するのには、[セキュリティ&amp;コンプライアンス センター](https://protection.office.com)**のレポート**には、 \> **ダッシュ ボード** \> **脅威保護の状態**です。
   
 ![ATP の脅威保護の状態のレポート](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
@@ -55,7 +55,7 @@ ATP のレポートには、[脅威保護の状態のレポート](#threat-prote
 
 **分析ツール ファイルの種類**のレポートでは、 [ATP の安全な添付ファイル](atp-safe-attachments.md)が悪意のあるものとして検出されたファイルの種類を示します。
   
-このレポートを表示するのには、[セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)**のレポート**には、 \> **ダッシュ ボード** \> **分析ツール ファイルの種類**です。
+このレポートを表示するのには、[セキュリティ&amp;コンプライアンス センター](https://protection.office.com)**のレポート**には、 \> **ダッシュ ボード** \> **分析ツール ファイルの種類**です。
   
 ![分析ツール ファイルの種類のレポート](media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
@@ -67,7 +67,7 @@ ATP のレポートには、[脅威保護の状態のレポート](#threat-prote
 
 **ATP メッセージ破棄**レポートでは、悪意のあるコンテンツを持つものとして検出された電子メール メッセージのアクションを示します。 
   
-このレポートを表示するのには、[セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)**のレポート**には、 \> **ダッシュ ボード** \> **ATP メッセージ廃棄**します。
+このレポートを表示するのには、[セキュリティ&amp;コンプライアンス センター](https://protection.office.com)**のレポート**には、 \> **ダッシュ ボード** \> **ATP メッセージ廃棄**します。
   
 ![ATP メッセージ破棄レポート](media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
   

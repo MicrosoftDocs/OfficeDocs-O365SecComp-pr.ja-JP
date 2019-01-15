@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 367f25d3-10a0-4a91-bdae-70ebb7a79c98
 description: アクティビティの特定の活動の発生または発生する頻度が高すぎる場合に発生する警告を設定するのには Office 365 のクラウド アプリケーションのセキュリティとポリシーを定義します。ポリシーを設定すると、警告をトリガーするでは、に関する通知を受け取ることができ、特定の活動を監視します。
-ms.openlocfilehash: ff1f0acd3c622f20bff26f6a77cc686193cf76fc
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: a239e2bf453a01bf852a702a66cb2f09c02b8c96
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706471"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014939"
 ---
 # <a name="activity-policies-and-alerts-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security のアクティビティ ポリシーと警告
 
@@ -47,7 +47,7 @@ Office 365 のクラウド アプリケーションのセキュリティ、頻�
     
 ## <a name="create-a-new-activity-policy"></a>新しい活動ポリシーを作成します。
 
-1. グローバル管理者またはセキュリティ管理者に移動します。[https://security.microsoft.com](https://security.microsoft.com)し、職場、学校のアカウントを使用してサインインします。 
+1. グローバル管理者またはセキュリティ管理者に移動します。[https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用してサインインします。 
     
 2. セキュリティで&amp;コンプライアンス センターでは、**アラート**を選択して\>**管理警告の詳細**です。
     

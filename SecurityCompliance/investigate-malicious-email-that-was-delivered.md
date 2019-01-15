@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 description: 脅威インテリジェンスを使用して検出し、悪意のある電子メールを調査する方法について説明します。
-ms.openlocfilehash: 4440b4d1503b9a13977ef773b95fa64873662b85
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: b6d4f8a5d1fcfce4461b91796b1264f94d1eb4d1
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706041"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014919"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>検索し、(Office 365 の脅威インテリジェンス) に配信された悪意のある電子メールを調査
 
@@ -48,7 +48,7 @@ ms.locfileid: "26706041"
 > [!TIP]
 > [脅威のエクスプ ローラー](get-started-with-ti.md#threat-explorer)(エクスプ ローラーとも呼ばれる) は、強力なレポートを検索する、メッセージを削除して、悪意のある電子メールの送信者の IP アドレスを識別する、またはサポート案件の詳細な調査を開始するなど、複数の目的に使用できます。次の手順では、エクスプ ローラーを使用して検索して、悪意のある電子メールを受信者のメールボックスから削除するに焦点を当てています。 
   
-1. [https://security.microsoft.com](https://security.microsoft.com)し、職場、学校のアカウントを使用して Office 365 にサインインします。これで、セキュリティには、&amp;コンプライアンス センターです。 
+1. [https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用して Office 365 にサインインします。これで、セキュリティには、&amp;コンプライアンス センターです。 
     
 2. 左側のナビゲーションでは、**脅威の管理**を選択します。 \> **エクスプ ローラー**です。
     

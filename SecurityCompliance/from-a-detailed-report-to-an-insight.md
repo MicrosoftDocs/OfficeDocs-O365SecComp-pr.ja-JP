@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 description: 学習の方法は、セキュリティの推奨される操作を把握する詳細なレポートから移動することができます&amp;コンプライアンス センターです。
-ms.openlocfilehash: 8048e9aac9191bd89028ac3e4f5fdde577ad7226
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 48c7283723a75685e16e1f7ddbe34bc3779819cf
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706251"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014979"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>チュートリアル - 詳細レポートからインサイトへの移動
 
@@ -30,7 +30,7 @@ ms.locfileid: "26706251"
 
 見てみましょうフロー詳細なレポートからを把握し、操作します。(これ[スパム対策およびマルウェア対策](anti-spam-and-anti-malware-protection.md)の簡単な例です)。 
   
-1. 処理を開始[セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)のレポートです。(**レポート**には、 \> **ダッシュ ボード**です)。<br/>![セキュリティ&amp;コンプライアンス センターでは、レポートに移動\>ダッシュ ボード](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. 処理を開始[セキュリティ&amp;コンプライアンス センター](https://protection.office.com)のレポートです。(**レポート**には、 \> **ダッシュ ボード**です)。<br/>![セキュリティ&amp;コンプライアンス センターでは、レポートに移動\>ダッシュ ボード](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
 2. 詳細なビューを取得するレポートを選択します。(**脅威保護のステータス**レポートなど、レポートを選択します)。<br/>![脅威保護の状態のレポート情報を表示](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 description: Office 365 グローバル管理者は、組織内で現実的な攻撃のシナリオを実行するのに攻撃のシミュレータを使用できます。これを識別し、実際の攻撃では、お客様のビジネスをヒットする前に、脆弱性のあるユーザーを検索することができます。
-ms.openlocfilehash: 1a1d22b0b36ce8b6a2086296be8f8b5d47d79280
-ms.sourcegitcommit: d512c1df01377e305e8d5c0170c822cf78f09565
+ms.openlocfilehash: 3449e29197aa5a7a0b63a805ad8cc429f8f8f81b
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "27472000"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015039"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 の攻撃シミュレータ
 
@@ -66,7 +66,7 @@ ms.locfileid: "27472000"
   
 **電子メールの本文**のフィールド自体に直接リッチ HTML エディターを作成するか、HTML ソースを操作できます。
   
-1. [セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)、**脅威の管理**を選択して\>**攻撃のシミュレータ**です。
+1. [セキュリティ&amp;コンプライアンス センター](https://protection.office.com)、**脅威の管理**を選択して\>**攻撃のシミュレータ**です。
     
 2. 攻撃のキャンペーンのわかりやすい名前を指定するか、テンプレートを選択します。 <br/>![フィッシング スタート ページ](media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
   
@@ -96,7 +96,7 @@ ms.locfileid: "27472000"
   
 ### <a name="to-simulate-a-password-spray-attack"></a>パスワード スプレー攻撃をシミュレートするには
 
-1. [セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)、**脅威の管理**を選択して\>**攻撃のシミュレータ**です。
+1. [セキュリティ&amp;コンプライアンス センター](https://protection.office.com)、**脅威の管理**を選択して\>**攻撃のシミュレータ**です。
     
 2. 攻撃のキャンペーンのわかりやすい名前を指定します。
     
@@ -112,7 +112,7 @@ ms.locfileid: "27472000"
   
 ### <a name="to-simulate-a-brute-force-password-attack"></a>ブルート フォース パスワード攻撃をシミュレートするには
 
-1. [セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)、**脅威の管理**を選択して\>**攻撃のシミュレータ**です。
+1. [セキュリティ&amp;コンプライアンス センター](https://protection.office.com)、**脅威の管理**を選択して\>**攻撃のシミュレータ**です。
     
 2. 攻撃のキャンペーンのわかりやすい名前を指定します。
     
