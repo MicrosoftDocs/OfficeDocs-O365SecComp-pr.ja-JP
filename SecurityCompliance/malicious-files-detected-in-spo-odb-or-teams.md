@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 description: SharePoint、OneDrive、またはチームで検出された、悪意のあるファイルに関する情報を表示する場所とそれらのファイルに対してアクションを実行する方法について説明します。
-ms.openlocfilehash: c22e57e34cccafa3dd30a77a5a6011f2999f708c
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 435e1f449003f670f698c4e6813e18f5e83c498d
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706201"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014799"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>SharePoint、OneDrive、またはマイクロソフトのチームで検出された、悪意のあるファイルに関する情報を表示
 
@@ -29,7 +29,7 @@ ms.locfileid: "26706201"
 
 状態と Office 365 の分析ツールによって検出されたファイルに関する詳細情報を表示するには、脅威の保護の状態レポートを使用できます。
   
-1. [Office 365 のセキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)で**レポート**を選択\>**ダッシュ ボード** \> **脅威保護の状態**です。
+1. [Office 365 のセキュリティ&amp;コンプライアンス センター](https://protection.office.com)で**レポート**を選択\>**ダッシュ ボード** \> **脅威保護の状態**です。
     
 2. レポートの右上隅の**ビューの詳細テーブル**を選択します。
     

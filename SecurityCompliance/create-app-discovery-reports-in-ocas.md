@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3e68e691-1fc4-4d3e-a2c0-d3134eb64055
 description: Office 365 クラウド アプリケーションのセキュリティを使用すると、Office 365 とその他のアプリケーションに、組織内のユーザーを使用する方法を理解するには、レポートを作成します。
-ms.openlocfilehash: f801c70e839a62b5bbb5423ff5e7c513dd1f09b4
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 6842912f42072e21608955bde5250f0774c7bba4
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706301"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014870"
 ---
 # <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>Office 365 Cloud App Security を使用して app discovery レポートを作成する
 
@@ -44,7 +44,7 @@ Office 365 のクラウド アプリケーションのセキュリティは、�
   
 1. お客様の[web トラフィックのログ、および Office 365 のクラウド アプリケーションのセキュリティのデータ ソース](web-traffic-logs-and-data-sources-for-ocas.md)を収集します。
     
-2. [https://security.microsoft.com](https://security.microsoft.com)し、職場、学校のアカウントを使用してサインインします。 
+2. [https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用してサインインします。 
     
 3. セキュリティで&amp;コンプライアンス センターでは、**アラート**を選択して\>**管理警告の詳細**です。
     

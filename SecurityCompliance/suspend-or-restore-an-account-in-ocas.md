@@ -3,7 +3,7 @@ title: Office 365 Cloud App Security でユーザー アカウントを停止ま
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 12/03/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: 'Office 365 のクラウド アプリケーションのセキュリティ、実行できる管理操作を一時停止またはユーザー アカウントの一時中断を解除するのには。 '
-ms.openlocfilehash: a5c75edefc6ddb87b5676c4253aafe04817f6a1d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 09d6ae870aa1a6b0a619ccf20f8cc19b392e23a8
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531742"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014849"
 ---
 # <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security でユーザー アカウントを停止または復元する
 
@@ -44,9 +44,7 @@ Office 365 の組織のユーザー アカウントのいずれかが侵害さ�
     
 2. セキュリティで&amp;コンプライアンス センターでは、**アラート**を選択して\>**管理警告の詳細**です。
     
-3. **Office 365 のクラウド アプリケーションのセキュリティ**を選択します。
-    
-    ![セキュリティ&amp;コンプライアンス センターでは、Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+3. **Office 365 のクラウド アプリケーションのセキュリティ**を選択します。<br>![セキュリティ&amp;コンプライアンス センターでは、Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>
   
 4. 画面の上部にナビゲーション ・ バーの**アラート**を選択します。
     
@@ -62,7 +60,7 @@ Office 365 の組織のユーザー アカウントのいずれかが侵害さ�
 
 - [Office 365 Cloud App Security の警告の確認と処理](review-office-365-cas-alerts.md)
     
-- [Office 365 Cloud App Security を使用してアプリのアクセス許可を管理する](manage-app-permissions-in-ocas.md)
+- [Office 365 Cloud App Security を使用して OAuth アプリを管理する](manage-app-permissions-in-ocas.md)
     
 - [Office 365 のクラウド アプリケーションのセキュリティの使用率のアクティビティ](utilization-activities-for-ocas.md)を確認します。
     

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: Office 365 高度なセキュリティの管理] で、Microsoft Azure クラウド アプリケーションのセキュリティでの電源をオンにする方法については、この資料を参照してください。
-ms.openlocfilehash: 586ebc5f496652e05b4ab6d2421fa9bc42603895
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 8964a0b413b0350188c7f61638d04032534e5374
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706291"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014789"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>Office 365 Cloud App Security を有効にする
   
@@ -30,7 +30,7 @@ ms.locfileid: "26706291"
 > [!IMPORTANT]
 > 次のタスクを実行するには、グローバル ・ アドミニストレーターまたはセキュリティ管理者である必要があります。詳細についてを参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。Office 365 のクラウド アプリケーション セキュリティを使用するために修正、**監査ログを有効にする必要があります**が、Office 365 環境にします。詳細については、[オンまたはオフ、Office 365 を有効にする監査ログの検索](turn-audit-log-search-on-or-off.md)を参照してください。 
   
-1. グローバル管理者またはセキュリティ管理者には、[https://security.microsoft.com](https://security.microsoft.com)し、職場、学校のアカウントを使用して Office 365 にサインインします。(これで、セキュリティには、&amp;コンプライアンス センター)。 
+1. グローバル管理者またはセキュリティ管理者には、[https://protection.office.com](https://security.microsoft.com)し、職場、学校のアカウントを使用して Office 365 にサインインします。(これで、セキュリティには、&amp;コンプライアンス センター)。 
     
 2. **アラート**を参照して\>**詳細なアラートを管理**します。
     

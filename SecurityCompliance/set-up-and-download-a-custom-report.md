@@ -12,23 +12,23 @@ search.appverid:
 - MOE150
 ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 description: 設定し、カスタムの日付範囲と、セキュリティ フィルターを使用してレポートをダウンロードする方法を説明&amp;コンプライアンス センターです。
-ms.openlocfilehash: 4bfd2b0cc9d0076085e312c7478a0f356b4f39d5
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 313caf1e6d7a4cdca74979c3a5ccdbc413c6c7db
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706031"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014749"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>設定し、セキュリティでのカスタム レポートをダウンロード&amp;コンプライアンス センター
 
-[セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)、いくつかの[レポートと情報](reports-and-insights-in-security-and-compliance.md)が利用できる、組織のセキュリティ チームが軽減し、組織に対する脅威に対処します。組織のセキュリティ チームのメンバーにする場合は、ユーザー設定の日付範囲とフィルター、レポートを構成して、カスタム レポートをダウンロードしてできます。 
+[セキュリティ&amp;コンプライアンス センター](https://protection.office.com)、いくつかの[レポートと情報](reports-and-insights-in-security-and-compliance.md)が利用できる、組織のセキュリティ チームが軽減し、組織に対する脅威に対処します。組織のセキュリティ チームのメンバーにする場合は、ユーザー設定の日付範囲とフィルター、レポートを構成して、カスタム レポートをダウンロードしてできます。 
   
 ## <a name="download-a-custom-report"></a>カスタム レポートをダウンロードします。
 
 > [!IMPORTANT]
 > 必要があるかどうかを確認[Office 365 のセキュリティのアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。一般に、Office 365 のグローバル管理者、セキュリティ管理者、およびセキュリティのリーダーのセキュリティ レポートにアクセスできます&amp;コンプライアンス センターです。 
   
-1. [セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)**のレポート**には、 \> **ダッシュ ボード**です。
+1. [セキュリティ&amp;コンプライアンス センター](https://protection.office.com)**のレポート**には、 \> **ダッシュ ボード**です。
     
 2. レポートを選択します。(この例で使用しますメッセージ破棄レポート。)<br/>![レポートをダウンロードする要求のレポートを選択します。](media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
   

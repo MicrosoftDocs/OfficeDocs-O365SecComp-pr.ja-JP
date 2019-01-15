@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: セキュリティ レポートのスケジュールを設定する方法を説明&amp;コンプライアンス センターです。
-ms.openlocfilehash: 4251296c75629062ca5cba2e6c2e1cb3972b3f8a
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: b1c253f1af6369fc17f5f620c464bf1ed231cbde
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706021"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014779"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>セキュリティ レポートのスケジュールを作成する&amp;コンプライアンス センター
 
@@ -29,7 +29,7 @@ ms.locfileid: "26706021"
 > [!IMPORTANT]
 > このタスクを実行するために必要な権限があることを確認します。一般に、Office 365 のグローバル管理者、セキュリティ管理者、およびセキュリティのリーダーのセキュリティ レポートにアクセスできます&amp;コンプライアンス センターです。アクセス許可の詳細についてを参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。
   
-1. [セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)**のレポート**には、 \> **ダッシュ ボード**です。
+1. [セキュリティ&amp;コンプライアンス センター](https://protection.office.com)**のレポート**には、 \> **ダッシュ ボード**です。
     
 2. レポートを選択します。この例では、脅威の保護の状態のレポートを選択します。
     

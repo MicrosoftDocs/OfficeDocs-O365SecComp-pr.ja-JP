@@ -13,24 +13,24 @@ search.appverid:
 - MOE150
 ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
 description: セキュリティの詳細なレポートを把握から移動する方法を参照してください&amp;コンプライアンス センターをデータ損失の防止策の例を使用します。
-ms.openlocfilehash: 82689b7f58dfc729fa78912f41ed89a3a2933bfb
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: d8ef40b000f9e5fcf7ee1826b020efc95776709c
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706111"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014859"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>チュートリアル - インサイトから詳細レポートへの移動
 
 経験がない場合に[レポートと Office 365 のセキュリティ情報&amp;コンプライアンス センター](reports-and-insights-in-security-and-compliance.md)、移動する方法が簡単に把握から詳細なレポートを表示することをお勧めします。 
   
-いくつかのチュートリアルのこの問題は、[セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)です。その他のチュートリアルを表示するには、 ["関連項目"](#related-topics)を参照してください。 
+いくつかのチュートリアルのこの問題は、[セキュリティ&amp;コンプライアンス センター](https://protection.office.com)です。その他のチュートリアルを表示するには、 ["関連項目"](#related-topics)を参照してください。 
   
 ## <a name="from-an-insight-to-a-detailed-report"></a>詳細なレポートを調べる
 
 見てみましょう、フローのダッシュ ボードからデータを検索の詳細なレポートを把握します。(これは、[データ損失の防止](data-loss-prevention-policies.md)の簡単な例です)。 
   
-1. ダッシュ ボードを開始、[セキュリティ&amp;コンプライアンス センター](https://security.microsoft.com)です。(**レポート**には、 \> **ダッシュ ボード**です)。<br/>![セキュリティ&amp;コンプライアンス センターでは、レポートを選択して\>ダッシュ ボード](media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+1. ダッシュ ボードを開始、[セキュリティ&amp;コンプライアンス センター](https://protection.office.com)です。(**レポート**には、 \> **ダッシュ ボード**です)。<br/>![セキュリティ&amp;コンプライアンス センターでは、レポートを選択して\>ダッシュ ボード](media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
 2. 上で、ダッシュ ボードの上を横に左**洞察をトップ&amp;の推奨事項**、リンクがあります。(**すべてのビュー**] をクリック) します。<br/>![セキュリティ&amp;コンプライアンス センターでは、レポートを選択して\>、上の情報を表示するダッシュ ボード](media/9bb64e11-494f-40a4-ab3d-8d3c7789f300.png)<br/>ここでは、組織の情報の一覧です。<br/>![セキュリティ&amp;コンプライアンス センターでは、リストのすべての情報を表示できます](media/1289af77-bf5a-444a-97a1-03d8a83f75a9.png)
   
