@@ -44,6 +44,41 @@
         "source_path": "securitycompliance/set-up-atp-anti-phishing-policies.md",
         "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/set-up-anti-phishing-policies", 
         "redirect_document_id": true
-    }                    
+    },                    
+    { 
+        "source_path": "securitycompliance/turn-off-mdm.md",
+        "redirect_url": "https://support.office.com/article/2709cafb-0a8b-44bc-8494-7e2fccfa2b19", 
+        "redirect_document_id": false
+    },                    
+    { 
+        "source_path": "securitycompliance/wipe-a-mobile-device.md",
+        "redirect_url": "https://support.office.com/article/9d727c7d-8b47-4499-bf24-d046b449214c", 
+        "redirect_document_id": false
+    },                    
+    { 
+        "source_path": "securitycompliance/set-up-mobile-device-management.md",
+        "redirect_url": "https://support.office.com/article/dd892318-bc44-4eb1-af00-9db5430be3cd ", 
+        "redirect_document_id": false
+    },                    
+    { 
+        "source_path": "securitycompliance/create-device-security-policies.md",
+        "redirect_url": "https://support.office.com/article/d310f556-8bfb-497b-9bd7-fe3c36ea2fd6", 
+        "redirect_document_id": false
+    },                    
+    { 
+        "source_path": "securitycompliance/capabilities-of-mobile-device-management.md",
+        "redirect_url": "https://support.office.com/article/a1da44e5-7475-4992-be91-9ccec25905b0", 
+        "redirect_document_id": false
+    },                    
+    { 
+        "source_path": "securitycompliance/manage-device-access-settings.md",
+        "redirect_url": "https://support.office.com/article/170d44dd-0c61-472f-b9bb-3242eb8bd5c3", 
+        "redirect_document_id": false
+    },                    
+    { 
+        "source_path": "securitycompliance/frequently-asked-questions-about-mdm.md",
+        "redirect_url": "https://support.office.com/article/3871f99c-c9db-4a23-86f9-902c1b02f58d", 
+        "redirect_document_id": false
+    }                                                                     
   ] 
 }
