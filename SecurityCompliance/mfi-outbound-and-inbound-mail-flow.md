@@ -1,0 +1,50 @@
+---
+title: 送信および受信メール フロー
+ms.author: chrisda
+author: chrisda
+manager: serdars
+ms.date: 8/7/2018
+ms.audience: ITPro
+ms.topic: article
+ms.prod: office-online-server
+localization_priority: Normal
+ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
+description: 管理者は、送信し、Office 365 のセキュリティ & コンプライアンス センターでメール フローのダッシュ ボードの [受信メール フローのウィジェットについて学習できます。
+ms.openlocfilehash: 57792c0347490b40f97a8b92945a9c809484ba4f
+ms.sourcegitcommit: 25fb33a1f8b2844fde15f6c03db2936c610824e0
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28685538"
+---
+# <a name="outbound-and-inbound-mail-flow"></a><span data-ttu-id="1a8aa-103">送信および受信メール フロー</span><span class="sxs-lookup"><span data-stu-id="1a8aa-103">Outbound and inbound mail flow</span></span>
+
+<span data-ttu-id="1a8aa-104">**送信および受信メール フロー**のウィジェットは、**コネクタのレポート**と 1 つの場所で以前の**TLS の概要のレポート**からの情報を組み合わせたものです。</span><span class="sxs-lookup"><span data-stu-id="1a8aa-104">The **Outbound and inbound mail flow** widget combines the information from the **Connector Report** and the former **TLS Overview Report** in one place.</span></span>
+
+![Office 365 のセキュリティ & コンプライアンス センターでメール フローのダッシュ ボードに送信および受信メール フロー レポート](media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
+
+<span data-ttu-id="1a8aa-p101">ウィジェット内の情報はコネクタと Office 365 の TLS メッセージの保護に関連しています。詳細については、これらのトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="1a8aa-p101">The information in the widget is related to connectors and TLS message protection in Office 365. For more information, see these topics:</span></span>
+
+- [<span data-ttu-id="1a8aa-108">Configure mail flow using connectors in Office 365</span><span class="sxs-lookup"><span data-stu-id="1a8aa-108">Configure mail flow using connectors in Office 365</span></span>](https://technet.microsoft.com/library/ms.exch.eac.connectorselection.aspx)
+
+- [<span data-ttu-id="1a8aa-109">Exchange Online で電子メール接続をセキュリティで保護するために Office 365 で TLS を使用する方法</span><span class="sxs-lookup"><span data-stu-id="1a8aa-109">How Exchange Online uses TLS to secure email connections in Office 365</span></span>](https://support.office.com/article/4CDE0CDA-3430-4DC0-B489-F2C0736C929F)
+
+## <a name="message-protected-in-transit-by-tls"></a><span data-ttu-id="1a8aa-110">(TLS) で送信中に保護されたメッセージ</span><span class="sxs-lookup"><span data-stu-id="1a8aa-110">Message protected in transit (by TLS)</span></span>
+
+<span data-ttu-id="1a8aa-p102">**送信および受信メール フロー**のウィジェットでは、Office 365 の組織との間にメッセージが配信されるときに、接続に使用する TLS 暗号化を表示します。他の電子メール サービスを使用して確立されている接続は、両方の側で TLS を提供する、TLS によって暗号化されます。ウィジェットでは、メールの流れの最後の週のスナップショットを提供します。**詳細を表示する**] をクリックすると **(TLS) で送信中にメッセージが保護された**フライアウトに、TLS メッセージの保護組織を出入りするが表示されます。</span><span class="sxs-lookup"><span data-stu-id="1a8aa-p102">The **Outbound and inbound mail flow** widget displays the TLS encryption that's used for the connection when messages are delivered to and from your Office 365 organization. The connections that are established with other email services are encrypted by TLS when TLS is offered by both sides. The widget offers a snapshot of the last week of mail flow. When you click **View Details**, the **Message protected in transit (by TLS)** flyout shows you the TLS protection for messages entering and leaving your organization.</span></span>
+
+![Office 365 のセキュリティ & コンプライアンス センター内 (TLS) で送信中のフライアウトで保護されたメッセージ](media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
+
+<span data-ttu-id="1a8aa-p103">現時点では、TLS 1.2 は、Office 365 が提供する TLS の最も安全なバージョンです。多くの場合、コンプライアンスの監査に使用されている TLS 暗号化を理解する必要があります。(所有していないと Microsoft は、どちらも) 送信元と送信先の電子メール サーバーの大部分と直接関係がない可能性がありますので、それらのサーバーで使用されている TLS 暗号化を向上させるために多くのオプションがないです。</span><span class="sxs-lookup"><span data-stu-id="1a8aa-p103">Currently, TLS 1.2 is the most secure version of TLS that's offered by Office 365. Often, you'll need to know the TLS encryption that's being used for compliance audits. You probably don't have a direct relationship with most of the source and destination email servers (you don't own them, and neither does Microsoft), so you don't have many options to improve the TLS encryption that's used by those servers.</span></span>
+
+<span data-ttu-id="1a8aa-p104">ですが、[コネクタ](https://technet.microsoft.com/library/ms.exch.eac.connectorselection.aspx)を使用するには、電子メール サーバーと Office 365 の間で送信されるメッセージの最適な利用可能な TLS 保護を実現します。Office 365 と、独自の電子メール サーバーまたはパートナーに属しているサーバー間でメールの流れ方が重要であり、それらのメッセージに余分なセキュリティと注意を払いを適用するための通常のメッセージよりも重要です。アップグレードするか、使用されている、または同じパートナーに TLS 暗号化を向上させるために独自のメール サーバーを修正できます。**コネクタのレポート**には、メール フローのボリュームと、Office 365 のコネクタを使用したメッセージに対する TLS 暗号化の両方が表示されます。</span><span class="sxs-lookup"><span data-stu-id="1a8aa-p104">But, you can use [connectors](https://technet.microsoft.com/library/ms.exch.eac.connectorselection.aspx) to ensure the best available TLS protection for messages that are sent between your email servers and Office 365. Mail flow between Office 365 and your own email servers or servers that belong to your partners is often more important and sensitive than regular messages, so you'll want to apply extra security and vigilance to those messages. You can upgrade or fix your own email servers to improve the TLS encryption that's being used, or reach out to your partners to do the same. The **Connector Report** displays both mail flow volume and TLS encryption for messages that use your Office 365 connectors.</span></span>
+
+## <a name="connector-report"></a><span data-ttu-id="1a8aa-123">コネクタ レポート</span><span class="sxs-lookup"><span data-stu-id="1a8aa-123">Connector report</span></span>
+
+<span data-ttu-id="1a8aa-p105">**(TLS) で送信中にメッセージが保護された**フライアウトから**コネクタのレポート**のリンクをクリックすると、レポートには、コネクタを使用して、Office 365 の組織との間に配信されるメッセージに関する情報が表示されます。独自のメール サーバーと Office 365 またはパートナーのサーバーと Office 365 の間でコネクタを使用するとします。各コネクタのメッセージのボリュームとの接続で TLS 暗号化があります。さらに、送信されたコネクタを使用せずに Office 365 で受信されるメッセージのデータを表示することもできます。</span><span class="sxs-lookup"><span data-stu-id="1a8aa-p105">When you click on the **Connector Report** link from the **Message protected in transit (by TLS)** flyout, the report displays information about messages that are delivered to and from your Office 365 organization using connectors. You use connectors between your own email servers and Office 365 or your partner's servers and Office 365. The message volume for each connector and the TLS encryption for the connection is available. In addition, you can also view data for messages that were sent or received in Office 365 without using a connector.</span></span>
+
+<span data-ttu-id="1a8aa-p106">**メール フロー**ビューでは、過去 1 週間のコネクタ経由でメッセージの量を示しています。日付範囲を変更するには、**フィルター**を 30 日間の最大範囲を増やすことができます] を選択します。**すべてのメール フロー**ビューは、すべてのメールのすべてのコネクタを Office 365 の組織との間のフローを示します。ドロップ ダウン メニューでの名前で特定のコネクタを選択します。</span><span class="sxs-lookup"><span data-stu-id="1a8aa-p106">The **Mail Flow** view shows the volume of messages through the connector for the past week. You can change the date range by selecting **Filter** where you can increase the range to a maximum of 30 days. The **All Mail Flow** view shows all mail flow to and from your Office 365 organization through all connectors. You can select a specific connector by name in the drop down menu.</span></span>
+
+<span data-ttu-id="1a8aa-p107">コネクタ経由のメッセージを TLS の保護の詳細を参照に、ドロップダウン リストからは、 **TLS の配分状況**ビューを選択できます。として**TLS の概要**のレポートでこのビューの割合を示します TLS のバージョンが異なる。TLS 1.0 の接続、メール ・ サーバを取得する必要が本当にまたは相手のサーバーのアップグレードまたは TLS 1.0 のサポートが Office 365 で最終的に非推奨と、すべての問題を避けるために固定します。詳細については、 [Office 365 での暗号化に関するテクニカル リファレンスの詳細](https://support.office.com/article/862cbe93-4268-4ef9-ba79-277545ecf221)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1a8aa-p107">You can select the **TLS usage** view from the drop down to see the breakdown of TLS protection for messages through the connector. As with the **TLS Overview Report** report, this view shows the percentage of the different TLS versions. For TLS 1.0 connections, you really need to get your email server or your partner's server upgraded or fixed to avoid any issues when TLS 1.0 support is eventually deprecated in Office 365. For more information, see [Technical reference details about encryption in Office 365](https://support.office.com/article/862cbe93-4268-4ef9-ba79-277545ecf221).</span></span>
+
+<span data-ttu-id="1a8aa-p108">洞察は、注意を要する可能性のあるコネクタの TLS 暗号化の問題を支援するためのコネクタをポイントします。詳細情報は、:**いいえ TLS は 25% 以上**または**TLS 1.0 は 50% を超える**。知見が表示された場合は、コネクタに関連付けられているか、パートナー組織にする電子メール サーバーを調査する必要があります。</span><span class="sxs-lookup"><span data-stu-id="1a8aa-p108">Insights point to connectors to help draw your attention to potential TLS encryption problems for the connector. The insights are: **No TLS is over 25%** or **TLS 1.0 is above 50%**. If you see these insights, you need to investigate your email servers that are associated with the connector, or reach out to your partner organization.</span></span>
