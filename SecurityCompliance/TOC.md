@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: bc1508c3d07e62864ffb156d6e311ace421bc8bc
+ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28328133"
+---
 # [概要]()
 ## [Office 365 のセキュリティ ロードマップ](security-roadmap.md)
 ## [セキュリティ強化のために、Office 365 テナントを構成する](tenant-wide-setup-for-increased-security.md)
@@ -156,7 +164,7 @@
 ### [コンテンツ検索の結果のキーワード統計を表示する](view-keyword-statistics-for-content-search.md)
 ### [コンテンツ検索の結果をエクスポートする ](export-search-results.md)
 ### [コンテンツ検索のレポートをエクスポートする](export-a-content-search-report.md)
-### [メール メッセージを検索して削除する](search-for-and-delete-messagesadmin-help.md)
+### [メール メッセージを検索して削除する](search-for-and-delete-messages-in-your-organization.md)
 ### [Office 365 のオンプレミス ユーザーのクラウド ベースのメールボックスを検索する](search-cloud-based-mailboxes-for-on-premises-users.md)
 ### [複数のコンテンツ検索を一括編集する](bulk-edit-content-searches.md)
 ### [ID リスト のコンテンツ検索用の CSV ファイルを準備する](csv-file-for-an-id-list-content-search.md)
@@ -238,8 +246,8 @@
 ## [監査ログで電子情報開示アクティビティを検索する](search-for-ediscovery-activities-in-the-audit-log.md)
 # [セキュリティとコンプライアンスを監視する]()
 ## [通知ポリシー](alert-policies.md)
-## [セキュリティ/コンプライアンス センターのスマート レポートとインサイト](reports-and-insights-in-security-and-compliance.md)
-### [セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する](view-email-security-reports.md)
+## [セキュリティとコンプライアンス センターのスマート レポートと分析情報](reports-and-insights-in-security-and-compliance.md)
+### [セキュリティとコンプライアンス センターで電子メールのセキュリティ レポートを表示する](view-email-security-reports.md)
 #### [チュートリアル - 詳細レポートからインサイトへの移動](from-a-detailed-report-to-an-insight.md)
 #### [チュートリアル - インサイトから詳細レポートへの移動](from-an-insight-to-a-detailed-report.md)
 #### [チュートリアル - ダッシュボードからインサイトへの移動](from-a-dashboard-to-an-insight.md)
@@ -249,12 +257,21 @@
 #### [既存のレポートをダウンロードする](download-existing-reports.md)
 ## [Office 365 で安全性のヒントを有効または無効にする](enable-or-disable-safety-tips.md)
 ## [レポート メッセージ アドインを有効にする](enable-the-report-message-add-in.md)
+# メール フロー
+## [セキュリティとコンプライアンス センターのメッセージ追跡](message-trace-scc.md)
+## [セキュリティとコンプライアンス センターのメッセージ追跡の分析情報](mail-flow-insights.md)
+### [自動転送済みメッセージレポート](mfi-auto-forwarded-messages-report.md)
+### [メールループの分析情報](mfi-mail-loop-insight.md)
+### [送信と受信のメール フロー](mfi-outbound-and-inbound-mail-flow.md)
+### [キューのアラートとキュー](mfi-queue-alerts-and-queues.md)
+### [低速メール フローのルールの分析情報](mfi-slow-mail-flow-rules-insight.md)
 # セキュリティ ソリューション
 ## [選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
 ### [選挙運動の開発/テスト環境用にグループとユーザーを構成する](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
 ### [選挙運動用の開発/テスト環境でチーム サイトを作成する](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 ## [SharePoint Online サイトとファイルをセキュリティで保護する](secure-sharepoint-online-sites-and-files.md)
 ### [3 層の保護用に SharePoint Online サイトを展開する](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)
+### [Office 365 ラベルと DLP による SharePoint ファイルの保護](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
 ### [Azure Information Protection を使用して SharePoint Online ファイルを保護する](protect-sharepoint-online-files-with-azure-information-protection.md)
 ## [分離した SharePoint Online チーム サイト](isolated-sharepoint-online-team-sites.md)
 ### [分離した SharePoint Online チーム サイトの設計](design-an-isolated-sharepoint-online-team-site.md)
@@ -262,11 +279,10 @@
 ### [分離した SharePoint Online チーム サイトの管理](manage-an-isolated-sharepoint-online-team-site.md)
 ### [開発/テスト環境での分離した SharePoint Online チーム サイト](isolated-sharepoint-online-team-site-dev-test-environment.md)
 ## [SIEM サーバー統合](siem-server-integration.md)
-
 # コンプライアンス ソリューション
-## [Microsoft Service Trust Portal を始める。](get-started-with-service-trust-portal.md)
-## [Microsoft クラウド サービスの利用時に、コンプライアンス マネージャーを使用してデータ保護と規制の要件を満たす](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-## [DSR ケース ツールを使用して GDPR のデータ主体要求を管理する](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
+## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
+## [コンプライアンス マネージャー](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+## [GDPR データ主体の要求ツール](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [GDPR のための Office 365 の情報保護](office-365-information-protection-for-gdpr.md)
 ### [概要: GDPR のための Office 365 での保護](office-365-info-protection-for-gdpr-overview.md)
 ### [個人データの検索](search-for-and-find-personal-data.md)
