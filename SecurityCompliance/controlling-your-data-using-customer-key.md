@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 description: ビジネス、SharePoint Online では、およびビジネスのための OneDrive の Exchange Online、Skype の Office 365 用の顧客のキーを設定する方法について説明します。顧客のキーを使用して、組織の暗号キーを制御し、マイクロソフトのデータ センターの残りの部分でデータの暗号化を使用する Office 365 を構成し、します。
-ms.openlocfilehash: 3eeccd03b89aa5a79ceba536d3f13c7a881b6ca7
-ms.sourcegitcommit: ef0bb05a0cf7974ae5083c7551ce3fe4ab7a9544
+ms.openlocfilehash: c4a59af49efad3bb8539b6c83b9ad9fd1c2d1f43
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965611"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723254"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>顧客キーを使用して Office 365 でデータを制御する
 
@@ -54,7 +54,7 @@ Azure PowerShell にリモートで接続することによって、これらの
     
 - [Office 365 の顧客のキーをアクティブ化する要求を送信します。](controlling-your-data-using-customer-key.md#FastTrack)
     
-    2 つの新しい Azure サブスクリプションを作成した後は、適切な顧客キーの提供要求を送信するには、Microsoft FastTrack ポータルでホストされている web フォームに入力する必要があります。Fasttrack というチームは、顧客のキーを使用して、アシスタンスを提供していません。Office は、単を使用すると、フォームを送信してのに、顧客キーに関連するサービスを追跡するために FastTrack ポータルを使用します。
+    2 つの新しい Azure サブスクリプションを作成した後は、適切な顧客キーの提供要求を送信するには、Microsoft FastTrack ポータルでホストされている web フォームに入力する必要があります。**、Fasttrack というチームは、お客様のキーを使用して支援を提供していません。Office だけを使用して、FastTrack ポータルを使用すると、フォームを送信して、顧客キーに関連するサービスを追跡するために**。
   
 顧客キーの提供を送信すると、Microsoft は、要求をレビューし、セットアップ タスクの残りの部分を行うときに通知します。最大 5 営業日をかかることができます。
     
@@ -74,7 +74,7 @@ Azure PowerShell にリモートで接続することによって、これらの
     
 - [各 Azure キー ヴォールト ・ キーの URI を取得します。](controlling-your-data-using-customer-key.md#GetKeyURI)
     
-**Office 365。**
+**Office 365:**
   
 Exchange のオンライン ビジネスの Skype.
   
