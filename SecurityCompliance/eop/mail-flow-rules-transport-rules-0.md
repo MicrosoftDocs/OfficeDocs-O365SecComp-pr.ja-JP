@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: メール フロー ルール (別名トランスポート ルール) は、Office 365 組織を通過するメッセージを識別し、アクションを実行するために使用できます。
-ms.openlocfilehash: 841a88f7074ce469643630cf29e0674db8fb88b6
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: b6bd5f0510c8a9e5f5cc4679dce669b6da50f5e8
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026614"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723244"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection のメール フロー ルール (トランスポート ルール)
 
@@ -32,7 +32,7 @@ ms.locfileid: "22026614"
   
 - [Office 365 で、メール フロー ルールを使用してメッセージの添付ファイルを検査する](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
     
-- [Office 365 のエンタープライズでの暗号化を設定します。](https://support.office.com/article/e86fc991-0161-4f01-9c1c-d25e87733d06)
+- [Office 365 Enterprise で暗号化を設定する](https://support.office.com/article/e86fc991-0161-4f01-9c1c-d25e87733d06)
     
 - [Organization-wide message disclaimers, signatures, footers, or headers in Office 365](http://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx)
     
@@ -54,7 +54,7 @@ ms.locfileid: "22026614"
   
 - **[条件]** アクションを適用するメッセージを特定します。一部の条件は、メッセージ ヘッダー フィールド (例、宛先、差出人、または CC フィールド) を確認します。その他の条件はメッセージ プロパティ (例、メッセージの件名、本文、添付ファイル、メッセージ サイズ、またはメッセージ分類) を確認します。ほとんどの条件は、比較演算子 (例、次と一致する、次と一致しない、または次が含まれる) と一致する値を指定する必要があります。条件または例外が 1 つもない場合、ルールはすべてのメッセージに適用されます。 
     
-    詳細については、メール フロー ルールの条件では、Exchange オンライン保護、[メール フロー ルールの条件および例外 (述語) Exchange オンライン保護](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx)を参照してください。
+    オンライン保護を Exchange のメール フロー ルールの条件の詳細についてを参照してください[Exchange Online でメールの流れのルールの条件および例外 (述語) です。](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)です。
     
 - **[例外]** アクションが適用されないメッセージを任意で特定します。条件で使用可能なメッセージ識別子と同じものが、例外でも使用可能です。例外は条件より優先され、メッセージが構成されているすべての条件に一致していても、そのメッセージにルール アクションが適用されないようにします。 
     

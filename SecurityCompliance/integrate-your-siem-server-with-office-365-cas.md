@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: SIEM サーバーは、Office 365 のクラウド アプリケーションのセキュリティと統合できます。仕組みと、それを設定する方法の概要を取得するには、この資料を参照してください。
-ms.openlocfilehash: 0e185dec44bed7657bed126f70dfc64ffc135611
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 3cdae0389065b18da090139528eceefb007363fa
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015029"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723264"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>SIEM サーバーと Office 365 Cloud App Security を統合する
   
@@ -74,8 +74,8 @@ SIEM エージェントでは、Office 365 のクラウド アプリケーショ
 3. **Office 365 のクラウド アプリケーションのセキュリティ**を選択します。<br/>
     ![セキュリティ&amp;コンプライアンス センターでは、Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
   
-4. [**設定**] をクリックして\>**セキュリティ拡張機能**です。<br/>
-![設定 > セキュリティ拡張機能](media/Settings-SecurityExtensions.png)
+4. **設定**] をクリックして\>**セキュリティ拡張機能**、し、SIEM のエージェントを選択します。<br/>
+![設定 _gt セキュリティ拡張機能を選択します。](media/Settings-SecurityExtensions.png)
 
 5. **SIEM の追加のエージェント**を選択します。<br/>![SIEM の追加のエージェントを選択します。](media/SIEMAgents.png)
     
