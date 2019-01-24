@@ -3,18 +3,18 @@ title: 365 のマイクロソフトのセキュリティとコンプライアン
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/22/2019
+ms.date: 01/23/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 description: コンプライアンス センター、まったく新しい Microsoft 365 セキュリティ センターの準備します。
-ms.openlocfilehash: 3bd0dd1d47df252dfdb024e0f90f3437604d8e07
-ms.sourcegitcommit: 5764af937f40731e29f855c568d7a3365a12c913
+ms.openlocfilehash: 35f7e04ca2d51efe69c0f6d4842fe25856b1b3f9
+ms.sourcegitcommit: 0ac3e50150b48b5c633fb3bfc989d5047c160739
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2019
-ms.locfileid: "29383575"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29436163"
 ---
 # <a name="get-ready-for-the-new-microsoft-365-security-center-and-microsoft-365-compliance-center"></a>新しい Microsoft 365 セキュリティ センターと Microsoft 365 コンプライアンス センターの準備します。
 
@@ -48,7 +48,7 @@ ms.locfileid: "29383575"
 
 ## <a name="what-to-expect"></a>予想される結果
 
-### <a name="coming-soon"></a>もうすぐです！
+### <a name="coming-soon"></a>近日公開
 
 新しい Microsoft 365 セキュリティ センターと新しい Microsoft 365 コンプライアンス センターは、アウトの開始遅延の 1 月と年 2019年 3 月をローリングします。新しい Microsoft 365 セキュリティ センターおよびこの期間内の Microsoft 365 コンプライアンス センターへのアクセスが必要です。
 
@@ -70,7 +70,7 @@ ms.locfileid: "29383575"
 
 ## <a name="required-licenses-and-permissions"></a>必要なライセンスと権限
 
-組織は、新しい Microsoft 365 セキュリティ センターと Microsoft 365 コンプライアンス センターを取得するには、Microsoft 365 エンタープライズ E3 または E5 が必要です。
+新しい Microsoft 365 セキュリティ センターと Microsoft 365 コンプライアンス センターを取得するには、組織に Microsoft 365 E3、E5、または、ボリューム ライセンスと同じ (Office 365 のエンタープライズ E3 または E5、エンタープライズ モビリティとセキュリティで構成されるサブスクリプションを必要があります。E3 E5 や 10 の Windows エンタープライズ E3/E5)。
 
 ユーザーには、新しい Microsoft 365 セキュリティ センターまたはマイクロソフト 365 コンプライアンス センターにアクセスするのには、Azure Active Directory のグローバル管理者、コンプライアンス管理者、セキュリティ管理者、またはセキュリティのリーダーの役割を割り当てる必要があります。
 
@@ -88,18 +88,18 @@ Azure、Office 365 では、Windows の間でさまざまなポータルにア�
 |Portal  |Global<br/>管理者  |セキュリティ <br/>管理者<br>または<br>セキュリティ<br>閲覧者 |コンプライアンス<br/>管理者  |
 |---------|---------|---------|---------|
 |[Office 365 セキュリティ/コンプライアンス センター](https://protection.office.com) |はい |はい  |はい |
-|[Microsoft 365 セキュリティ センター](https://security.microsoft.com) |はい  | はい  | いいえ        |
+|[Microsoft 365 セキュリティ センター](https://security.microsoft.com) |はい  | Yes  | いいえ        |
 |[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com) | はい | いいえ | はい |
 |[コンプライアンス マネージャー](https://aka.ms/compliancemanager) |はい | はい |はい  |
-|[Azure Information Protection](https://docs.microsoft.com/azure/information-protection) |はい |はい |いいえ |
-|[Azure Security Center](https://docs.microsoft.com/azure/security-center/)  |はい |はい |いいえ |
-|[Azure の高度な脅威保護](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |はい |はい |いいえ |
-|[Windows Defender の ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp)および[エンドポイントの検出および応答](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)     |はい |はい |いいえ |
-|[アイデンティティ保護](https://docs.microsoft.com/azure/active-directory/identity-protection)     |はい |はい |いいえ |
-|[特権 Id 管理](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |はい |はい |いいえ |
+|[Azure Information Protection](https://docs.microsoft.com/azure/information-protection) |はい |Yes |いいえ |
+|Azure Security Center  |はい |Yes |いいえ |
+|[Azure の高度な脅威保護](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |はい |Yes |いいえ |
+|[Windows Defender の ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp)および[エンドポイントの検出および応答](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)     |はい |Yes |いいえ |
+|ID 保護     |はい |Yes |いいえ |
+|Privileged Identity Management     |はい |Yes |いいえ |
 |[Intune](https://docs.microsoft.com/intune)     |はい |はい |はい |
 |[Cloud App Security](https://docs.microsoft.com/cloud-app-security/)     |はい |はい |はい |
-|[セキュリティで保護されたスコア](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)     |はい |はい |いいえ |
+|[セキュリティで保護されたスコア](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)     |はい |Yes |いいえ |
 |[Exchange](https://docs.microsoft.com/exchange/)     |はい |はい |はい |
 
 ## <a name="additional-resources"></a>その他のリソース
