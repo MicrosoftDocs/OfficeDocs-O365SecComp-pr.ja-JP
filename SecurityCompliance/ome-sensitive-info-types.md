@@ -3,7 +3,7 @@ title: 機密情報の新しい Office 365 のメッセージの暗号化のポ�
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/9/2019
+ms.date: 1/16/2019
 ROBOTS: NOINDEX, NOFOLLOW
 audience: ITPro
 ms.topic: article
@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: '概要: は、すべてのテナントにロールアウトの機密情報の種類の Office 365 のメッセージの暗号化ポリシーを自動的に適用します。'
-ms.openlocfilehash: a8cd132af2b1429698ea92779a3c54559e2b13e2
-ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
+ms.openlocfilehash: f83bf0fe572586b3becf2dd53395e611bdaaea24
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "27789455"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614381"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>機密情報を office 365 のメッセージの暗号化ポリシー
 
-機密情報が含まれていると、組織外に送信されているすべての電子メールを Office 365 のメッセージの暗号化を適用する Office 365 テナントに新しい自動ポリシーを作成しています。この新規の Exchange メール フロー ルールは自動的に作成、Office 365 テナントに組織は、既定で保護されるようにします。
+グループ、組織の規模と複雑さ、メールの流れに基づき、テナントの機密性の高い特定の種類を含む電子メールを Office 365 のメッセージの暗号化を適用する Office 365 テナントに新しい自動ポリシーの低速ロール アウトを行って、情報です。テナントの小規模なグループではテストされます。このポリシーはありませんにロールアウトされるすべての組織と組織のサイズに関する考慮事項と、メールの流れの複雑さを使用して、このロールアウトのための適格性を決定します。このロールアウトのため、組織が選択されている場合、ことを通知する日付をこの自動ポリシーを作成するには、少なくとも 30 日間の通知とを無効にするオプションが与えられます Office 365 のメッセージ センターに通知を受け取ります。マイクロソフトがこのポリシーを作成するを待つ必要があるようにしたい場合、自分自身で作成できるポリシーを作成するこの自動 Exchange メール フローの規則を使用しています。
 
 ## <a name="when-to-expect-the-update-for-your-tenant"></a>テナント用の更新プログラムが予想される時期
 
@@ -52,7 +52,7 @@ ms.locfileid: "27789455"
 
 ## <a name="how-will-this-change-be-represented-in-the-audit-log"></a>この変更表されるか、監査ログにしますか。
 
-このアクティビティでは、監査され、お客様が利用します。 操作は、' 新しい TransportRule' は、監査ログの検索でセキュリティとコンプライアンスの中心から監査エントリの例のスニペットの下にある.
+このアクティビティでは、監査され、お客様が利用します。 操作は、' 新しい TransportRule' と & コンプライアンス センターのセキュリティの監査ログの検索から監査エントリの例のスニペットの下にあります。
 
 |     |
 | --- |
