@@ -74,7 +74,12 @@
         "source_path": "securitycompliance/manage-device-access-settings.md",
         "redirect_url": "https://support.office.com/article/170d44dd-0c61-472f-b9bb-3242eb8bd5c3", 
         "redirect_document_id": false
-    },                    
+    },
+    { 
+        "source_path": "securitycompliance/new-ome-encryption-policy.md",
+        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/ome-sensitive-info-types", 
+        "redirect_document_id": true
+    },                     
     { 
         "source_path": "securitycompliance/frequently-asked-questions-about-mdm.md",
         "redirect_url": "https://support.office.com/article/3871f99c-c9db-4a23-86f9-902c1b02f58d", 
