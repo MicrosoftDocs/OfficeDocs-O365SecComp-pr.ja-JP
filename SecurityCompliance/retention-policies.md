@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: アイテム保持ポリシーでは、コンテンツを保持するか、コンテンツを削除するか、またはコンテンツを保持して後に削除するかを事前に決定できます。さらに、1 つのポリシーを組織全体に適用するか、特定の場所やユーザーにのみ適用するか、すべてのコンテンツにポリシーを適用するか、特定の条件を満たしているコンテンツのみにポリシーを適用するかも事前に決定できます。
-ms.openlocfilehash: a6d185484f83ca93c99153d584af6841397dbc2f
-ms.sourcegitcommit: ec465771a846de103a365fcb36cb7a7c0a5744c1
+ms.openlocfilehash: 46b7cd133551d8a0756361fd209e93ab9e721678
+ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380617"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29607169"
 ---
 # <a name="overview-of-retention-policies"></a>アイテム保持ポリシーの概要
 
@@ -263,10 +263,34 @@ PowerShell を使用すると、アイテム保持ポリシーから特定の種
 ポリシーがロックされると、そのポリシーは誰もオフにしたり、無効にしたりできなくなります。また、ポリシーが適用されているコンテンツを保持期間中に変更したり削除したりすることもできません。ポリシーがロックされると、アイテム保持ポリシーには、場所を追加する変更または保持期間を延長する変更のみが可能になります。ロックされたポリシーは増強することができますが、縮小したりオフにしたりすることはできません。
   
 そのため、アイテム保持ポリシーをロックする前に、組織のコンプライアンス要件を理解しておくことと、ポリシーのロックが必要であると確信するまでは**ポリシーをロックしない**ことが**非常に重要**になります。
+
+### <a name="lock-a-retention-policy-by-using-powershell"></a>PowerShell を使用してアイテム保持ポリシーをロックする
   
-アイテム保持ポリシーのロックには、PowerShell を使用する必要があります。`New-RetentionCompliancePolicy` または `Set-RetentionCompliancePolicy` コマンドレットの `RestrictiveRetention` パラメーターを使用します。PowerShell の詳細については、後述のセクション「[アイテム保持ポリシーの PowerShell コマンドレットを検索する](#find-the-powershell-cmdlets-for-retention-policies)」を参照してください。
+アイテム保持ポリシーは、PowerShell を使用してのみロックできます。
+
+まず、[Office 365 セキュリティ/コンプライアンス センター PowerShell へ接続します](http://go.microsoft.com/fwlink/p/?LinkID=799771)。
+
+次に、アイテム保持ポリシーの一覧を表示し、ロックするポリシーの名前を検索し、`Get-RetentionCompliancePolicy` を実行します。
+
+![PowerShell のアイテム保持ポリシーの一覧](media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+
+3 番目に、アイテム保持ポリシーの保持ロックを配置するために、`Set-RetentionCompliancePolicy` を実行し、`RestrictiveRetention` パラメーターを true に設定します。たとえば、
+
+`Set-RetentionCompliancePolicy -Identity “<Name of Policy>” – RestrictiveRetention $true`
+
+![PowerShell の RestrictiveRetention パラメーター](media/retention-policy-preservation-lock-restrictiveretention.PNG)
+
+そのコマンドレットを実行すると、確認メッセージが表示されます。**[すべてにはい]** を選択します。
+
+![PowerShell のアイテム保持ポリシーをロックするかを確認するダイアログ](media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+
+アイテム保持ポリシーの保持ロックをが配置されました。`Get-RetentionCompliancePolicy` を実行すると、`RestrictiveRetention` パラメーターは true に設定されます。たとえば、
+
+`Get-RetentionCompliancePolicy -Identity “<Name of Policy>” |Fl`
+
+![PowerShell に表示されるすべてのパラメーターでロックされたポリシー](media/retention-policy-preservation-lock-locked-policy.PNG)
   
-## <a name="the-principles-of-retention-or-what-takes-precedence"></a>アイテム保持の原則 (優先順位) について
+## <a name="the-principles-of-retention-or-what-takes-precedence"></a>保持の原則、すなわち優先順位について
 
 コンテンツには複数のアイテム保持ポリシーが適用され、各ポリシーに異なるアクション (保持または削除、あるいはその両方) と保持期間が設定されている場合が多くあります。どれが優先されるのでしょうか? 概ね、あるポリシーで保持されているコンテンツを別のポリシーで完全に削除することはできないので、ご安心ください。
   

@@ -1,4 +1,4 @@
-# はじめに
+# [はじめに]
 ## [Office 365 のセキュリティ ロードマップ](security-roadmap.md)
 ## [セキュリティ強化のために、Office 365 テナントを構成する](tenant-wide-setup-for-increased-security.md)
 ## [Office 365 セキュリティ/コンプライアンス センターに移動する](go-to-the-securitycompliance-center.md)
@@ -7,7 +7,6 @@
 ## [セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)
 ## [ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する](grant-access-to-the-security-and-compliance-center.md)
 ## [セキュリティ ダッシュボードの概要](security-dashboard.md)
-## [Outlook デスクトップ用の監督アドインをインストールする](install-the-supervision-add-in-for-outlook-desktop.md)
 ## [無料の Azure Active Directory サブスクリプションを使用する](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Office 365 でセキュリティとコンプライアンスを計画する](plan-for-security-and-compliance.md)
 # データやサービスへのアクセスを保護する
@@ -59,6 +58,8 @@
 ### [廃棄レビュー](disposition-reviews.md)
 ### [イベント ベースの保持](event-driven-retention.md)
 ### [ファイル計画マネージャー](file-plan-manager.md)
+## [通信を監督する](supervision-policies.md)
+### [組織用に監督ポリシーを構成する](configure-supervision-policies.md)
 ## [非アクティブなメールボックスを管理する](inactive-mailboxes-in-office-365.md)
 ### [非アクティブなメールボックスを作成および管理する](create-and-manage-inactive-mailboxes.md)
 ### [非アクティブなメールボックスの保持期間を変更する](change-the-hold-duration-for-an-inactive-mailbox.md)
@@ -68,9 +69,6 @@
 ## データ ガバナンスをモニターする
 ### [データ ガバナンスのレポートを表示する](view-the-data-governance-reports.md)
 ### [ドキュメントのラベルのアクティビティを表示する](view-label-activity-for-documents.md)
-### [組織用に監督ポリシーを構成する](configure-supervision-policies.md)
-### [Outlook デスクトップ用の監督アドインをインストールする](install-the-supervision-add-in-for-outlook-desktop.md)
-### [監督レポート](supervision-reports.md)
 ## データ ガバナンスの詳細情報
 ### [Microsoft のデータ ガバナンス チームによるビデオを見る](https://go.microsoft.com/fwlink/?linkid=867039)
 # [脅威からの保護](protect-against-threats.md)
@@ -196,6 +194,67 @@
 ### [保留中のクラウド ベースのメールボックスの [回復可能なアイテム] フォルダーのアイテムを削除する](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
 ### [保留中のメールボックスの [回復可能なアイテム] のクォータを増やす](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
 ### [Exchange Online メールボックスに適用されている保留の種類を特定する方法](identify-a-hold-on-an-exchange-online-mailbox.md)
+
+## [Microsoft 365 の Advanced eDiscovery (プレビュー)](compliance20/overview-ediscovery-20.md)
+### [リリース ノート](compliance20/release-notes-ediscovery20.md)
+### [新しいケースの作成](compliance20/create-new-ediscovery-case.md)
+
+### [カストディアンと共同作業](compliance20/managing-custodians.md)
+#### [ケースにカストディアンを追加する](compliance20/add-custodians-to-case.md)
+#### [カストディアンを管理する](compliance20/manage-new-custodians.md)
+#### [カストディアンのアクティビティを表示する](compliance20/view-custodian-activity.md)
+
+### [通信の操作](compliance20/managing-custodian-communications.md)
+#### [保留通知を作成する](compliance20/create-hold-notification.md)
+#### [通信エディターを使用する](compliance20/using-communications-editor.md)
+#### [保留通知を管理する](compliance20/manage-hold-notification.md)
+#### [保留通知を編集する](compliance20/edit-hold-notification.md)
+#### [保留通知を確認する](compliance20/acknowledge-hold-notification.md)
+
+### [保留を管理する](compliance20/managing-holds.md)
+
+### [処理中のエラーを修正する](compliance20/processing-data-for-case.md)
+#### [カストディアン データの詳細なインデックス処理](compliance20/indexing-custodian-data.md)
+#### [データ処理中のエラー修復](compliance20/error-remediation.md)
+
+### [ケースのデータの収集](compliance20/collecting-data-for-ediscovery.md)
+#### [検索を作成してデータを収集する](compliance20/create-search-to-collect-data.md)
+#### [検索クエリのビルド](compliance20/building-search-queries.md)
+#### [検索の統計](compliance20/search-statistics.md)
+#### [検索結果をワーキング セットに追加する](compliance20/add-data-to-working-set.md)
+
+### [ケース データの確認](compliance20/reviewing-data-in-working-set.md)
+#### [ワーキング セットの管理](compliance20/managing-working-sets.md)
+#### [読み込みセットを管理する](compliance20/manage-load-sets.md)
+#### [ワーキング セットに Office 365 以外のデータを読み込む](compliance20/load-non-office365-data.md)
+#### [ワーキング セット内のデータのクエリ](compliance20/working-set-search.md)
+#### [ワーキング セット内のドキュメントを表示する](compliance20/annotating-and-redacting-documents.md)
+#### [ワーキング セット内のドキュメントにタグ付けする](compliance20/tagging-documents.md)
+
+### [ケース データの分析](compliance20/analyzing-data-in-working-set.md)
+#### [準重複の検出](compliance20/near-duplicates.md)
+#### [電子メールのスレッド化](compliance20/email-threading.md)
+#### [テーマ](compliance20/themes.md)
+#### [関連度モジュールを使用したデータ分析](compliance20/using-relevance.md)
+
+### [ケース データのエクスポート](compliance20/exporting-data-ediscover20.md)
+#### [ワーキング セットからドキュメントをエクスポートする](compliance20/export-documents-from-working-set.md)
+#### [エクスポート ジョブのダウンロード](compliance20/download-export-jobs.md)
+
+### [ジョブの管理](compliance20/managing-jobs-ediscovery20.md)
+
+### [ケース設定の構成](compliance20/configuring-case-settings-ediscovery20.md)
+#### [ケースを閉じるか、削除する](compliance20/close-or-delete-case.md)
+#### [ケースでメンバーを追加または削除する](compliance20/add-remove-members.md)
+#### [検索と分析の設定を構成する](compliance20/configure-search-analytics-settings.md)
+
+### Advanced eDiscovery (プレビュー) のレファレンス
+#### [検索の制限](compliance20/search-limits-ediscovery20.md)
+#### [インデックス作成の制限](compliance20/indexing-limits-ediscovery20.md)
+#### [エクスポートの制限](compliance20/export-limits-ediscovery20.md)
+#### [ダウンロードの制限](compliance20/download-limits-ediscovery20.md)
+#### [サポートされているファイルの種類](compliance20/supported-filetypes-ediscovery20.md)
+#### [ドキュメントのメタデータ フィールド](compliance20/document-metadata-fields.md)
 
 ## [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
 ### [Advanced eDiscovery の概要](quick-setup-for-advanced-ediscovery.md)
