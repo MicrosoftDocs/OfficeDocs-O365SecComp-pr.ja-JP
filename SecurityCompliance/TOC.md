@@ -1,4 +1,4 @@
-# [はじめに]
+# はじめに
 ## [Office 365 のセキュリティ ロードマップ](security-roadmap.md)
 ## [セキュリティ強化のために、Office 365 テナントを構成する](tenant-wide-setup-for-increased-security.md)
 ## [Office 365 セキュリティ/コンプライアンス センターに移動する](go-to-the-securitycompliance-center.md)
@@ -15,6 +15,7 @@
 # 情報を保護する
 ## [機密ラベル](sensitivity-labels.md)
 ### [機密ラベルでの暗号化を使用してコンテンツへのアクセスを制限する](encryption-sensitivity-labels.md)
+### [機密ラベルをコンテンツに自動的に適用する](apply_sensitivity_label_automatically.md)
 ## [データ損失の防止 (DLP)](data-loss-prevention-policies.md)
 ### [DLP の概要の詳しい説明を見る](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## DLP を設定する
@@ -37,6 +38,15 @@
 ### [Office 365 セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [キーワード辞書を作成する](create-a-keyword-dictionary.md)
 ### [ドキュメント フィンガープリンティング](document-fingerprinting.md) 
+# レコード管理
+## [保持ポリシー](retention-policies.md)
+## [保持ラベル](labels.md)
+## [Exchange Online および セキュリティ/コンプライアンス センターを使用して SEC Rule 17a-4 に準拠する](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+## [廃棄確認](disposition-reviews.md)
+## [イベント ドリブンの保持](event-driven-retention.md)
+## [イベント ベースの保持を自動化する](automate-event-driven-retention.md)
+## [ファイル計画マネージャー](file-plan-manager.md)
+## [PowerShell を使用して保持ラベルを一括で作成および発行する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 # データ ガバナンスを管理する        
 ## [データをインポートする](importing-pst-files-to-office-365.md)
 ### [ネットワーク アップロードを使用して PST ファイルをインポートする](use-network-upload-to-import-pst-files.md)
@@ -54,10 +64,12 @@
 ## データを保持する
 ### [保持ポリシー](retention-policies.md)
 ### [保持ラベル](labels.md)
-### [PowerShell を使用して保持ラベルを一括で作成および発行する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-### [廃棄レビュー](disposition-reviews.md)
-### [イベント ベースの保持](event-driven-retention.md)
+### [Exchange Online および セキュリティ/コンプライアンス センターを使用して SEC Rule 17a-4 に準拠する](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+### [廃棄確認](disposition-reviews.md)
+### [イベント ドリブンの保持](event-driven-retention.md)
+### [イベント ベースの保持を自動化する](automate-event-driven-retention.md)
 ### [ファイル計画マネージャー](file-plan-manager.md)
+### [PowerShell を使用して保持ラベルを一括で作成および発行する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ## [通信を監督する](supervision-policies.md)
 ### [組織用に監督ポリシーを構成する](configure-supervision-policies.md)
 ## [非アクティブなメールボックスを管理する](inactive-mailboxes-in-office-365.md)
