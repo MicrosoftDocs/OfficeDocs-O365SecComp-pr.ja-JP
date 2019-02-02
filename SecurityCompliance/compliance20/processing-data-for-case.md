@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 457ee5ae019091275621cd29d66313852dff5425
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 65dce586f95d04294f51f16d361bfc659d6ab23b
+ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608057"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29694813"
 ---
-# <a name="fixing-processing-errors-in-advanced-ediscovery-preview"></a>高度な電子的証拠開示 (プレビュー) での処理エラーを修正します。
+# <a name="fix-processing-errors-in-advanced-ediscovery-preview"></a>高度な電子的証拠開示 (プレビュー) での処理エラーを修正します。
 
 処理は、ファイルの識別情報の処理を埋め込まれたドキュメントと添付ファイルの拡張であり、テキストの抽出、イメージ ファイルとそのコンテンツのインデックス作成の OCR (光学式文字認識) です。 保留中に、管理者を配置すると、完全に検索できるようにするのには Office 365 から部分的にインデックス付けされたすべての項目が処理されます。 同様に、Office 365 のデータ ソースまたは Office 365 以外のデータ ソースからのワーキング セットにコンテンツを追加すると、コンテンツも処理されます。
 
@@ -29,5 +29,5 @@ ms.locfileid: "29608057"
 
 詳細については以下の資料を参照してください。
 
-- [保管担当者データのインデックス作成の詳細](indexing-custodian-data.md)
-- [データの処理中にエラーの修復](error-remediation.md)
+- [カストディアン データの詳細なインデックス処理](indexing-custodian-data.md)
+- [データ処理中のエラー修復](error-remediation.md)
