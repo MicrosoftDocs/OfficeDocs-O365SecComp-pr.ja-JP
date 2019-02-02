@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Office 365 で、メールが迷惑メールにならないようにし、迷惑メールとしてマークされるのを防ぐ方法について説明します。
-ms.openlocfilehash: f7ba560b4eb30abcda4c97617ead883659558bd8
-ms.sourcegitcommit: 6d72cdb882b93edf6dfddb5ff2e6d8a16e2fa0bc
+ms.openlocfilehash: 4da27aea157d3d816f8ce9a9631dd608dd5cd164
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25596720"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614431"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Office 365 でメールが迷惑メールとしてマークされるのを防ぐ方法
 
@@ -29,11 +29,13 @@ Exchange Online Protection (EOP) は、迷惑メールをフィルターで除�
   
 ## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>メッセージが迷惑メールとしてマークされた理由を判断する
 
-Office 365 での迷惑メールに関する多くの問題は、[メールのメッセージ ヘッダーを調べ](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)、そうなった理由を判断することによって解決できます。文字列 SFV:NSPM を含む X-Forefront-Antispam-Report というメッセージ ヘッダーがある場合、Exchange Online Protection (EOP) はメッセージをスキャンしてそれを迷惑メールと見なしたことを意味します。この場合は、[メッセージ報告アドインを使用](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)してフィルターが改善されるようにすることを強くお勧めします。この値がヘッダーにない場合は、メールが迷惑メール スキャンをパススルーしなかったか、構成の問題があったためにメッセージが迷惑メールとして誤って分類されたことが考えられます。[迷惑メール対策メッセージ ヘッダーに関する詳しい説明](https://technet.microsoft.com/library/dn205071%28v=exchg.150%29.aspx)をご覧ください。
+Office 365 での迷惑メールに関する多くの問題は、[電子メール メッセージ ヘッダーの表示](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)によって解決し、何が原因か特定することができます。X-Forefront-Antispam-Report という名前のヘッダーを検索する必要があります。詳細については、「[スパム対策メッセージ ヘッダー](https://technet.microsoft.com/library/dn205071%28v=exchg.150%29.aspx)」を参照してください。
   
 ヘッダーで、次の見出しと値を探します。
   
 ### <a name="x-forefront-antispam-report"></a>X-Forefront-Antispam-Report
+
+- **SFV:SPM** EOP のスパム対策フィルターにより、メッセージが迷惑メールとしてマークされたことを示します。 
 
 - **SFV:BLK** 送信元アドレスが受信者の受信拒否リストにあるためにメッセージが迷惑メールとしてマークされたことを示します。 
     
@@ -41,7 +43,7 @@ Office 365 での迷惑メールに関する多くの問題は、[メールの�
     
 - **SFV:SKB** メッセージは迷惑メール フィルター ポリシーの拒否リストと一致したために迷惑メールとしてマークされたことを示します。 
     
-- **SFV:BULK** x-microsoft-antispam ヘッダーにある Bulk Complaint Level (BCL) 値が、コンテンツ フィルターに設定されているバルクしきい値を超えていることを示します。バルク メールとは、ユーザーはサインアップした可能性があるとしても望ましくないと思われるメールのことです。メッセージ ヘッダーで、X-Microsoft-Antispam ヘッダーの中の BCL (Bulk Confidence Level) プロパティを見つけます。迷惑メール フィルターに設定されたしきい値よりも BCL 値の方が小さければ、これらのタイプのバルク メッセージを迷惑メールとしてマークするようにしきい値を調整することが必要になる場合があります。[バルク メールの処理](https://blogs.msdn.microsoft.com/tzink/2014/08/25/different-levels-of-bulk-mail-filtering-in-office-365/)に関する許容度とユーザー設定はユーザーによって異なります。ユーザー設定ごとに異なるポリシーやルールを作成できます。
+- **SFV:BULK** x-microsoft-antispam ヘッダーにある Bulk Complaint Level (BCL) 値が、コンテンツ フィルターに設定されているバルクしきい値を超えていることを示します。バルク メールとは、ユーザーはサインアップした可能性があるとしても望ましくないと思われるメールのことです。メッセージ ヘッダーで、X-Microsoft-Antispam ヘッダーの中の BCL (Bulk Confidence Level) プロパティを見つけます。迷惑メール フィルターに設定されたしきい値よりも BCL 値の方が小さければ、これらのタイプのバルク メッセージを迷惑メールとしてマークするようにしきい値を調整することが必要になる場合があります。[バルク メールの処理](https://docs.microsoft.com/ja-JP/office365/SecurityCompliance/bulk-complaint-level-values)に関する許容度とユーザー設定はユーザーによって異なります。ユーザー設定ごとに異なるポリシーやルールを作成できます。
     
 - **CAT:SPOOF** または **CAT:PHISH** メッセージはなりすましと思われることを示します。つまり、メッセージ ソースは検証できないため、疑わしい可能性があるということです。有効であるなら、送信元は SPF と DKIM が適切に構成されていることを確認する必要があります。詳細については、Authentication-Results ヘッダーを確認してください。すべての送信元に適切なメール認証方法を使用させるのは難しいかもしれませんが、こうした確認を省略することは極めて危険であり、侵害の一番の原因です。 
     
@@ -67,8 +69,6 @@ Exchange Online Protection (EOP) が効率的に機能するためには、い�
 
 - **Microsoft に迷惑メールを報告する** [メッセージ報告アドインを使用する](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) を使用して、Microsoft に迷惑メール メッセージを報告します。また、junk@office365.microsoft.com にメッセージを送信し、1 つ以上のメッセージをレポートに添付することができます。
     
-    **重要** メッセージを添付ファイルとして転送しなければ、[ヘッダーがないために Office 365 の迷惑メール フィルターの改善ができなくなります](https://blogs.msdn.microsoft.com/tzink/2017/11/30/when-creating-support-tickets-about-spam-be-sure-to-include-message-headers/)。 
+    **重要** メッセージを添付ファイルとして転送しなければ、ヘッダーがないために Office 365 の迷惑メール フィルターの改善ができなくなります。 
     
 - **許可リストに送信元を追加する (ただし慎重に使用する)** 最後の手段として、[ブロックまたは許可 (迷惑メール設定)](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46) を行えます。その場合は、対象となるフィッシング試行が受信トレイに入れられるようになる可能性があることに注意する必要があります。
-    
-
