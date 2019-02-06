@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 02/05/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: 電子メールに悪意のあるファイルから組織を保護するために安全な添付ファイル ポリシーを定義します。
-ms.openlocfilehash: c5c18e3e8300a5cb8eabb8a099d6757a09170ff7
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 229f5eb4ec1af4302f724151f599bd33b15055e1
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014879"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741120"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Office 365 ATP の安全な添付ファイル ポリシーを設定します
 
@@ -35,7 +36,13 @@ ms.locfileid: "28014879"
 
 - 組織が[Office 365 の高度な脅威保護](office-365-atp.md)を持っていることを確認します。
     
-- 必要があるかどうかを確認[Office 365 のセキュリティのアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。
+- 必要な権限があることを確認します。ATP のポリシーを定義 (または編集) を割り当てる必要があります、次の表に記載されている役割のいずれか。 <br>
+
+    |役割  |場所と方法が割り当てられています。  |
+    |---------|---------|
+    |Office 365 のグローバル管理者 |Office 365 を購入するのに署名した人は、既定でグローバル管理者です。( [Office 365 の管理者の役割](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)の詳細についてを参照してください)。         |
+    |Office 365 のセキュリティ管理者 |管理者センター ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+    |Exchange オンライン組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (を参照してください[Exchange オンライン PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
 - [ATP の安全な添付ファイル ポリシーのオプションについて理解します。](#learn-about-atp-safe-attachments-policy-options)(この記事で)。モニター] または [置換のオプションなど、いくつかのオプションが遅延が生じますマイナー電子メールの添付ファイルをスキャン中にします。メッセージの遅延を避けるためには、[動的な配信およびプレビュー](dynamic-delivery-and-previewing.md)を使用して検討してください。
     
@@ -43,7 +50,7 @@ ms.locfileid: "28014879"
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>ATP の安全な添付ファイル ポリシーを手順 2: を設定する (または編集)
   
-1. グローバル管理者またはセキュリティ管理者には、[https://protection.office.com](https://protection.office.com)と、職場、学校のアカウントでサインインします。 
+1. [https://protection.office.com](https://protection.office.com)と、職場、学校のアカウントでサインインします。 
     
 2. Office 365 のセキュリティで&amp;コンプライアンス センターでは、**脅威の管理**の下で、左側のナビゲーション ペインで**ポリシー**を選択する\>**安全な添付ファイル**です。
     
@@ -63,7 +70,7 @@ ms.locfileid: "28014879"
     
       - [**適用先**] セクションでは、**受信者のドメインと**を選択し、自分のドメインを選択します。**追加**を選択し、[ **ok]** をクリックします。
     
-6. [ **保存**] を選びます。
+6. [**保存**] を選択します。
     
 組織の複数の分析ツールの安全な添付ファイル ポリシーの設定を検討してください。**ATP の安全な添付ファイル**のページに記載されている順序でこれらのポリシーが適用されます。ポリシーを定義または編集すると、少なくとも 30 分を許可する、マイクロソフトのデータ センター全体で有効にするポリシーです。 
   
@@ -80,9 +87,11 @@ ATP の安全な添付ファイル ポリシーを設定する場合とは、モ
 |**動的な配信** <br/> |すぐにメッセージを配信します。  <br/> スキャンが完了し、添付ファイルがマルウェアが検出されない場合に再接続されるまで、プレース ホルダー ファイルで添付ファイルを置き換えます  <br/> ほとんどの Pdf や Office の機能をプレビューする添付ファイルを含むファイルをスキャン中に  <br/> 検疫は、セキュリティ管理者またはアナリストことができますを確認し、リリース (または削除) これらのメッセージに検出されたマルウェアにメッセージを送信します。  <br/> [動的な配信および ATP の安全な添付ファイルのプレビューについてください。](dynamic-delivery-and-previewing.md) <br/> |メッセージの遅延を避けるため、悪意のあるファイルから受信者を保護しながら  <br/> スキャンの実行中に、セーフ モードで添付ファイルをプレビューするのには受信者を有効にします。  <br/> |
 |**リダイレクトを有効にします。** <br/> |モニター、ブロック、または置換オプションを選択した場合に適用されます。  <br/> 指定された電子メール アドレスに添付ファイルの送信、セキュリティ管理者またはアナリストを調べることができます。  <br/> |不審な添付ファイルを調査するには、セキュリティ管理者やアナリストを有効にします。  <br/> |
    
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ATP の安全な添付ファイル ポリシーがあると、レポートを表示することによって、組織の分析ツールが動作して方法を確認できます。詳細については、次のリソースを参照してください。
 - [Office 365 の高度な脅威保護のためのレポートを表示します。](view-reports-for-atp.md)
 - [エクスプ ローラーを使用して、セキュリティで&amp;コンプライアンス センター](use-explorer-in-security-and-compliance.md)
+
+ATP に導入された新機能の詳細に把握します。[Microsoft 365 のロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)を参照してくださいし、[分析ツールに追加されている、新機能](office-365-atp.md#new-features-are-continually-being-added-to-atp)について説明します。
  

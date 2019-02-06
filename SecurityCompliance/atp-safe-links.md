@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 11/08/2018
+ms.date: 02/05/2019
 ms.topic: overview
 f1_keywords:
 - "197503"
@@ -20,22 +20,25 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 安全なリンク機能は、Office ドキュメントや電子メール メッセージのハイパーリンクのクリックの検証を提供します。フィッシング詐欺やその他の攻撃から組織を保護するために安全なリンクを使用します。
-ms.openlocfilehash: bb9996f5761817fa80f0dd3dfd56e42c015bd751
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 7e610d23534dcd4c9ea20608bab6fca536f877cb
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238499"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741110"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 の ATP の安全なリンク機能
 
 ## <a name="overview-of-office-365-atp-safe-links"></a>ATP の安全なリンクを Office 365 の概要
 
-Office 365 ATP 安全なリンク (ATP の安全なリンク) ( [Office 365 ATP の安全な添付ファイル](atp-safe-attachments.md)) とは、企業向けの[Office 365 の高度な脅威保護](office-365-atp.md)の一部として提供されるセキュリティ機能のセットです。ATP の安全なリンクは、[電子メール メッセージ](#how-atp-safe-links-works-with-email)および[Office ドキュメント](#how-atp-safe-links-works-with-office-documents)内の web アドレス (Url) のクリックの検証を提供することにより、組織を保護するために役立ちます。保護は、Office 365 のセキュリティ チームが設定されている[ATP の安全なリンクのポリシー](set-up-atp-safe-links-policies.md)によって定義されています。 
+> [!IMPORTANT]
+> この資料は、ビジネスのお客様向けです。ホーム ユーザーが Outlook での安全なリンクに関する情報を検索する場合は、 [Outlook.com の高度なセキュリティ](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)を参照してください。
+
+Office 365 ATP の安全なリンク ([高度な脅威保護](office-365-atp.md)の一部) は、[電子メール メッセージ](#how-atp-safe-links-works-with-email)および[Office ドキュメント](#how-atp-safe-links-works-with-office-documents)内の web アドレス (Url) のクリックの検証を提供することにより、組織を保護するために役立ちます。保護は、Office 365 のセキュリティ チームが設定されている[ATP の安全なリンクのポリシー](set-up-atp-safe-links-policies.md)によって定義されています。 
   
 場所、ATP の安全なリンク ポリシーが表示されたら、Office 365 のグローバル管理者、セキュリティ管理者、およびセキュリティのリーダーことができます[脅威保護の詳細に関するレポートを表示](view-reports-for-atp.md)します。それらのレポート内の情報は、セキュリティ チームは、組織を保護するか、セキュリティ インシデントを調査するそれ以上の手順を実行できます。
 
-として[分析ツールに新機能が追加されます](office-365-atp.md#new-features-are-continually-being-added-to-atp)が、Office 365 のセキュリティ チームを追加したり、組織の安全なリンクの ATP のポリシーを編集します。さらに、変更し、新しく変更された[ページの警告](atp-safe-links-warning-pages.md)などの改善がわかります可能性があります。
+として[分析ツールに新機能が追加されます](office-365-atp.md#new-features-are-continually-being-added-to-atp)が、Office 365 のセキュリティ チームを追加したり、組織の安全なリンクの ATP のポリシーを編集します。さらに、変更し、新しく変更された[ページの警告](atp-safe-links-warning-pages.md)とネイティブのリンクを Outlook でのレンダリングなどの機能強化がわかります可能性があります。
          
 ## <a name="how-atp-safe-links-works-with-urls-in-email"></a>Url を電子メールで ATP の安全なリンクの動作
 
@@ -85,9 +88,9 @@ Office 365 ATP 安全なリンク (ATP の安全なリンク) ( [Office 365 ATP 
 
 ## <a name="how-to-get-atp-safe-links-protection"></a>ATP の安全なリンクを保護する方法
 
-ATP の安全なリンク機能は、[脅威の高度な保護](office-365-atp.md)、Office 365 エンタープライズ E5、Microsoft 365 ビジネス、および Microsoft 365 エンタープライズに含まれているの一部です。 
+最初に、お申し込みの[脅威保護の高度な](office-365-atp.md)内容を確認します。ATP は、 [365 企業の Microsoft](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 ビジネス](https://www.microsoft.com/microsoft-365/business)、Office 365 エンタープライズ E5、Office 365 の教育 A5 など、サブスクリプションに含まれます。組織が Office 365 の分析ツールが含まれていない Office 365 のサブスクリプションの場合は、アドオンとして可能性のある ATP を購入できます。詳細については、 [Office 365 高度な脅威保護サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)を参照してください。 
   
-ATP の安全なリンク機能は、次のような場合アクティブです。
+次に、ATP の安全なリンク ポリシーが定義されているを確認します。( [Office 365 の ATP の安全なリンクのポリシーの設定](set-up-atp-safe-links-policies.md)を参照してください)。ATP の安全なリンク機能は、次のような場合アクティブです。
   
 - **ATP の安全なリンク ポリシーが設定されて**メールや Word、Excel、PowerPoint、および Visio のドキュメントです。( [Office 365 の ATP の安全なリンク ポリシーの設定](set-up-atp-safe-links-policies.md)を参照してください)。
 
@@ -95,13 +98,23 @@ ATP の安全なリンク機能は、次のような場合アクティブです�
     
 - **ユーザーが Office 365 にサインインして**、職場、学校のアカウントを使用しています。(詳しくは、 [Office または Office 365 にサインイン](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)を参照してください)。
     
-- **組織の電子メールが Office 365 でホストされている**、オンプレミスのサーバーではなく。 
+- **組織の電子メールが Office 365 でホストされている**。 
+
+ATP のポリシーを定義 (または編集) を割り当てる必要があります、次の表に記載されている役割のいずれか。
+
+|役割  |場所と方法が割り当てられています。  |
+|---------|---------|
+|Office 365 のグローバル管理者 |Office 365 を購入するのに署名した人は、既定でグローバル管理者です。( [Office 365 の管理者の役割](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)の詳細についてを参照してください)。         |
+|Office 365 のセキュリティ管理者 |管理者センター ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|Exchange オンライン組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (を参照してください[Exchange オンライン PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
 ## <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>配置では、ATP の安全なリンクのことを確認して保護する方法です。
 
-[脅威の高度な保護のためのレポートを表示する](view-reports-for-atp.md)ことでは、組織の安全なリンクの ATP の保護を使用する方法を表示する方法の 1 つ。さらに、グローバル ・ アドミニストレーターまたはセキュリティ管理者として、 [ATP の安全なリンク ポリシー](set-up-atp-safe-links-policies.md)を再確認することを確認します。ATP の安全なリンク ポリシーは、保護に適用するか電子メール メッセージ内のハイパーリンクまたは Url にのみ、Office ドキュメントも同様を決定します。
+グローバル管理者またはセキュリティ管理者は、必ず、 [ATP の安全なリンクのポリシー](set-up-atp-safe-links-policies.md)を確認してください。ATP の安全なリンク ポリシーは、保護に適用するか電子メール メッセージ内のハイパーリンクまたは Url にのみ、Office ドキュメントも同様を決定します。
 
-## <a name="example-scenarios-where-atp-safe-links-protection-might-or-might-not-be-in-place"></a>ATP の安全なリンクの保護の可能性があります、または配置できない場合がありますシナリオの例
+ATP の安全なリンクのポリシーがあると、組織のセキュリティ チームを確認できます ATP の安全なリンクの保護が動作している組織は[高度な脅威保護のためのレポートの表示](view-reports-for-atp.md)の方法を参照してください。 
+
+## <a name="example-scenarios"></a>シナリオ例
   
 次の表では、ATP の安全なリンクの保護の可能性があります、または配置できない場合がありますいくつかのサンプル シナリオについて説明します。(すべてのこれらの場合にと仮定した組織には、Office 365 エンタープライズ E5。)
   

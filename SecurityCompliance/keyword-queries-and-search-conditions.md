@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Exchange Online メールボックスおよび SharePoint と OneDrive を検索するには Office 365 のセキュリティ コンテンツの検索ツールを使用してビジネス サイトの電子メールとファイルのプロパティの詳細については&amp;コンプライアンス センターです。  '
-ms.openlocfilehash: c1b5c3721a892929535a7e699201d0bcfc39937b
-ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
+ms.openlocfilehash: 865affa06e32b440a71721487153044e036cc487
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328163"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741170"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>コンテンツ検索のキーワード クエリと検索条件
 
@@ -206,8 +206,8 @@ Exchange のオンライン ドキュメントを SharePoint に保存されて�
 |:-----|:-----|
 |作成者  <br/> |作成者フィールド Office ドキュメントからドキュメントをコピーする場合が引き続き発生します。などのユーザー ドキュメントと電子メールを作成する場合は、SharePoint のドキュメントをアップロードし、他の人にもが保持されます元の作成者です。  <br/> |
 |役職  <br/> |ドキュメントのタイトルです。Title プロパティは、Office ドキュメントで指定されているメタデータです。ドキュメントのファイル名とは異なるが。  <br/> |
-|Created  <br/> |ドキュメントが作成された日付。  <br/> |
-|最終更新日  <br/> |ドキュメントが最後に変更された日付。  <br/> |
+|作成済み  <br/> |ドキュメントが作成された日付。  <br/> |
+|最終更新日時  <br/> |ドキュメントが最後に変更された日付。  <br/> |
 |ファイルの種類  <br/> |ファイルの拡張子たとえば、docx、1 つ、pptx、または xlsx です。これは、プロパティ、FileExtension サイトのプロパティと同じです。  <br/> |
   
 ### <a name="operators-used-with-conditions"></a>条件で使用する演算子
@@ -401,4 +401,5 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 - プロパティを検索する場合は、二重引用符を使用して ("") 場合は、検索する値は、複数の単語で構成されています。たとえば`subject:budget Q1`で**予算**を含むメッセージを返すを [件名] 行に含まれている**第 1 四半期**任意の場所、メッセージまたはメッセージのプロパティのいずれかで。使用して`subject:"budget Q1"`、件名の行で任意の場所の**第 1 四半期の予算**が含まれているすべてのメッセージを返します。 
     
 - 検索結果から特定のプロパティ値でマークされているコンテンツを除外するには、プロパティの名前の前にマイナス記号 (-) を配置します。たとえば、`-from:"Sara Davis"`佐々木 Davis によって送信されたメッセージが除外されます。
-- 項目の種類に基づいてアイテムをエクスポートできます。など Skype IM メッセージの recived のユーザーをエクスポートするには、' の種類: IM' の構文を使用します。この検索では、すべての IM メッセージ returen を照会します。 
+
+- メッセージの種類に基づいてアイテムをエクスポートすることができます。たとえば、Skype の会話およびマイクロソフトのチームでチャットをエクスポートするには、構文を使用、 `kind:im`。使用する電子メール メッセージだけを返すには、 `kind:email`。マイクロソフトのチームで、チャット、会議、および呼び出しを返すを使用して、 `kind:microsoftteams`。
