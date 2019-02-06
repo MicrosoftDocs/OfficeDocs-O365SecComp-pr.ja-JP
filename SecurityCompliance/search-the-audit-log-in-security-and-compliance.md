@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Office 365 セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: 95516cd88677955137e51401113844375cb1e082
-ms.sourcegitcommit: c34f1a0d560117153fc9a7b8da8994bc6fc53791
+ms.openlocfilehash: 848dbbdeb8b7cd9abd664b5ac401f6afde31c1e1
+ms.sourcegitcommit: c40eee4ef3890056da58649e4617283b0b9d1673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27118143"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735469"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Office 365 セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -172,6 +172,9 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
     d. **ファイル、フォルダー、サイトなど**。指定したキーワードを含むファイルまたはフォルダーに対するアクティビティを検索するには、ファイルまたはフォルダー名の一部またはすべてを入力します。ファイルまたはフォルダーの URL を指定することもできます。URL を使用する場合、必ず全ての URL パスを入力してください。URL の一部だけを入力する場合は、特殊文字またはスペースを含めることはできません。 
     
     組織内のすべてのファイルおよびフォルダーのエントリを返すには、このボックスを空白のままにします。
+    
+    > [!TIP]
+    > ある**サイト**に関するすべてのアクティビティを検索する場合、URL の後ろにワイルドカード文字 (\*) を追加して、そのサイトのすべてのエントリが返されるようにします。例: **"https://contoso-my.sharepoint.com/personal/*"**
     
 5. [**検索**] をクリックして、設定した検索条件で検索を実行します。 
     
@@ -400,7 +403,8 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |**フレンドリ名**|**操作名**|**説明**|
 |:-----|:-----|:-----|
 |適用除外ユーザー エージェントの追加  <br/> |ExemptUserAgentSet  <br/> |SharePoint 管理者または全体管理者が、SharePoint 管理センターで適用除外ユーザー エージェントの一覧にユーザー エージェントを追加しました。  <br/> |
-|サイト コレクション管理者の追加  <br/> |SiteCollectionAdminAdded  <br/> |サイト コレクション管理者または所有者がサイトのサイト コレクション管理者として、ユーザーを追加しました。サイト コレクション管理者には、サイト コレクションとすべてのサブサイトに対してフル コントロール権限があります。  <br/> |
+|サイト コレクション管理者の追加  <br/> |SiteCollectionAdminAdded  <br/> |サイト コレクションの管理者または所有者が、サイトのサイト コレクション管理者としてユーザーを追加しました。サイト コレクションの管理者は、サイト コレクションとすべてのサブサイトに対するフル コントロール権限を持ちます。このアクティビティは、管理者が、ユーザーの OneDrive アカウントへのアクセス権限を (SharePoint 管理センターでユーザー プロファイルを編集、または [Office 365 管理センターを使用することによって](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)) 自分自身に付与する際にも記録されます。<br/> |
+|(なし)  <br/> |SiteCollectionAdminRemoved <br/> |サイト コレクションの管理者または所有者が、サイトのサイト コレクション管理者としてのユーザーを削除しました。このアクティビティは、管理者が、ユーザーの OneDrive アカウントのサイト コレクション管理者リストから (SharePoint 管理センターでユーザー プロファイルを編集することによって) 自分自身を削除する際にも記録されます。 このアクティビティを監査ログの検索結果で返すには、すべてのアクティビティを検索する必要があることに注意してください。 <br/> |
 |SharePoint グループへのユーザーまたはグループの追加  <br/> |AddedToGroup  <br/> |ユーザーが SharePoint グループにメンバーまたはゲストを追加しました。これは、意図したアクション、または別のアクティビティ (共有イベントなど) の結果の可能性があります。  <br/> |
 |ユーザーに対するグループ作成の許可  <br/> |AllowGroupCreationSet  <br/> |サイトの管理者または所有者がアクセス許可レベルをサイトに追加しました。そのアクセス許可が割り当てられているユーザーは、そのサイトのグループを作成することが許可されます。  <br/> |
 |サイトの地域の移動の取り消し  <br/> |SiteGeoMoveCancelled  <br/> |SharePoint 管理者または全体管理者が、SharePoint サイトまたは OneDrive サイトの地域の移動を正常に取り消しました。Multi-Geo Capabilities を使用すると、Office 365 組織は複数の Office 365 データセンター地域 (geo と呼ばれる) にまたがることができます。詳細については、「[Office 365 の OneDrive および SharePoint Online での Multi-Geo Capabilities](https://go.microsoft.com/fwlink/?linkid=860840)」を参照してください。<br/> |
