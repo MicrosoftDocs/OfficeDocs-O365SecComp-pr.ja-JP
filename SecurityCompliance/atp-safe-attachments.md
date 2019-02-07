@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: 安全な添付ファイル機能は、電子メールの添付ファイルのクリックの検証を提供します。ファイルを悪意のあるユーザーから組織を保護するために使用の安全な添付ファイルで送信または受信電子メールです。
-ms.openlocfilehash: 3717c0d278aaba4fce25cb196ebef9e277921408
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.openlocfilehash: 936d24e3782e1018e77e24373756e378472f7e7c
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741130"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755278"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 の ATP の安全な添付ファイル
 
@@ -58,7 +58,7 @@ ATP のポリシーを定義 (または編集) を割り当てる必要があり
 |役割  |場所と方法が割り当てられています。  |
 |---------|---------|
 |Office 365 のグローバル管理者 |Office 365 を購入するのに署名した人は、既定でグローバル管理者です。( [Office 365 の管理者の役割](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)の詳細についてを参照してください)。         |
-|Office 365 のセキュリティ管理者 |管理者センター ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|セキュリティ管理者 |Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange オンライン組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (を参照してください[Exchange オンライン PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
 ## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>ATP の安全な添付ファイルの保護を確認する方法

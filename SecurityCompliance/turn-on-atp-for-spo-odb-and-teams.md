@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.date: 02/05/2019
+ms.date: 02/06/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 description: SharePoint、OneDrive、および検出されたファイルについての警告を設定する方法など、チーム分析ツールを有効にする方法を説明します。
-ms.openlocfilehash: 23eaa4def0fafdcd0df0ae30f8358104c0f877b6
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.openlocfilehash: 9745d45428035cc52346d19aa42e5e134123d016
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741030"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755298"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、およびマイクロソフトのチームに対して Office 365 の分析ツールを有効に
 
@@ -29,7 +29,7 @@ ATP のポリシーを定義 (または編集) を割り当てる必要があり
 |役割  |場所と方法が割り当てられています。  |
 |---------|---------|
 |Office 365 のグローバル管理者 |Office 365 を購入するのに署名した人は、既定でグローバル管理者です。( [Office 365 の管理者の役割](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)の詳細についてを参照してください)。         |
-|Office 365 のセキュリティ管理者 |管理者センター ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|セキュリティ管理者 |Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange オンライン組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (を参照してください[Exchange オンライン PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
   
 ## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする

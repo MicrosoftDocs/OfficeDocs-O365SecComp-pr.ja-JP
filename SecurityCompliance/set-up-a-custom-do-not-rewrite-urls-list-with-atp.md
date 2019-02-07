@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.date: 02/05/2019
+ms.date: 02/06/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: ATP の安全なリンク ・ ポリシーを設定するときは、do not 書き換えを含めることができます ' 人、組織内のリストに含まれるサイトへのアクセスを有効にする Url の一覧です。
-ms.openlocfilehash: f97abdb0f4e20ed968b4f71761a60cda79658d18
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.openlocfilehash: 5eb2d09f1d1d77fa9d6ffdb9f14ba9e7522da287
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741070"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755288"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Office 365 の ATP の安全なリンクを使用してユーザー設定の再書き込みしない操作を行います Url のリストを設定します
 
@@ -35,8 +35,13 @@ ATP のポリシーを編集 (または定義) を割り当てる必要があり
 |役割  |場所と方法が割り当てられています。  |
 |---------|---------|
 |Office 365 のグローバル管理者 |Office 365 を購入するのに署名した人は、既定でグローバル管理者です。( [Office 365 の管理者の役割](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)の詳細についてを参照してください)。         |
-|Office 365 のセキュリティ管理者 |管理者センター ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|セキュリティ管理者 |Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange オンライン組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (を参照してください[Exchange オンライン PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+
+> [!TIP]
+> ロールとアクセス許可の詳細についてを参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。
+
+### <a name="to-view-or-edit-a-custom-do-not-rewrite-urls-list"></a>表示またはカスタム」を書き換えない"Url リストを編集するには
   
 1. [https://protection.office.com](https://protection.office.com)と、職場、学校のアカウントでサインインします。 
     

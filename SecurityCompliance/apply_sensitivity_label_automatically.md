@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを作成する場合、ドキュメントまたは電子メールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 8464847704b5e724b97b4af9b51397f2985311a8
-ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
+ms.openlocfilehash: 5165e9c7bd674046f6a3f3a9d1f1eeedc35f931e
+ms.sourcegitcommit: 44cea06d4b007988cadc1e9de2d5ef601f1b3863
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29610584"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760768"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>機密ラベルをコンテンツに自動的に適用する
 
@@ -36,7 +36,7 @@ ms.locfileid: "29610584"
 
 ![機密ラベルの自動ラベル付けオプション](media/Sensitivity_labels_Auto_labeling_options.png)
 
-# <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>条件に基づいた機密ラベルの自動適用
+## <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>条件に基づいた機密ラベルの自動適用
 
 機密ラベルの最も強力な機能の 1 つは、特定の条件に一致したコンテンツにラベルを自動的に適用する機能です。この場合、機密ラベルは Office 365 によって適用されるため、組織内のユーザーがラベルを適用する必要はありません。
    
@@ -52,7 +52,7 @@ ms.locfileid: "29610584"
 
 ![ドキュメントにラベルが自動適用されたという通知](media/sensitivity_labels_msg_doc_was_auto_labeled.PNG)
 
-# <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>ユーザーが機密ラベルを適用することを推奨
+## <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>ユーザーが機密ラベルを適用することを推奨
 
 状況に応じて、機密ラベルをコンテンツに自動的に適用する代わりに、ユーザーがラベルを適用することを推奨できます。このオプションでは、分類および関連する保護を受け入れるか、またはラベルがドキュメントや電子メールに適していない場合、推奨事項を無視するかをユーザーが柔軟に選択できます。
 
@@ -64,7 +64,7 @@ ms.locfileid: "29610584"
 
 ![推奨ラベルを適用するためのプロンプト](media/Sensitivity_label_Prompt_for_required_label.png)
 
-# <a name="how-automatic-or-recommended-labels-are-applied"></a>自動ラベルと推奨ラベルが適用されるしくみ
+## <a name="how-automatic-or-recommended-labels-are-applied"></a>自動ラベルと推奨ラベルが適用されるしくみ
 
 - 自動ラベル付けは、Word、Excel、PowerPoint でドキュメントが保存されるときと、Outlook で電子メールが送信されるときに適用されます。これらの条件により、ドキュメントや電子メール内の本文、およびヘッダーとフッターに含まれる機密情報が検出されますが、件名や電子メールの添付ファイルのものは検知されません。
 
@@ -74,6 +74,6 @@ ms.locfileid: "29610584"
 
 - 以前に上位の分類でラベルが付けられているドキュメントには推奨分類を使用できません。この場合、コンテンツにすでに上位の分類でラベルが付けられていると、推奨事項とポリシー ヒントに関するプロンプトは、ユーザーに表示されません。
 
-# <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>複数のラベルに適用するときの複数の条件の評価方法
+## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>複数のラベルに適用するときの複数の条件の評価方法
 
 ラベルは、ポリシー内で指定した位置に従って評価の順序を決められます。先頭に配置したラベルが最下位 (機密性が最も低い) になり、最後に配置したラベルが最上位 (機密性が最も高い) になります。優先度に関する詳細については、「[ラベルの優先度 (順序の問題)](sensitivity-labels.md#label-priority-order-matters)」を参照してください。

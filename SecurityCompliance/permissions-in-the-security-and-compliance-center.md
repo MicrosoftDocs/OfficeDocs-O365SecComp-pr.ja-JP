@@ -20,7 +20,7 @@ ms.openlocfilehash: ef281ca7cda706ff78fbf1a5584674cdf41e9025
 ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2019
+ms.lasthandoff: 02/06/2019
 ms.locfileid: "29741060"
 ---
 # <a name="permissions-in-the-office-365-security-amp-compliance-center"></a>Office 365 のセキュリティのアクセス権&amp;コンプライアンス センター

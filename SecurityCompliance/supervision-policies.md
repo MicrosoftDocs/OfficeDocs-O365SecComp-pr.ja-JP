@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Office 365 の監督のポリシーを理解します。
-ms.openlocfilehash: 0c76ba5b17277d8bd441810415e7e9acd1adbf36
-ms.sourcegitcommit: 3cb775e60b3806b66568ed2f9664c17ef96ca8de
+ms.openlocfilehash: c66ded719791c4a5ecaaa459f81d0a0d4a3db924
+ms.sourcegitcommit: e4d56cab6bbb77404457d506d17f6a7577f302be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "29603527"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29760079"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 の監督のポリシー
 
@@ -69,12 +69,7 @@ Office 365 の監督ポリシーを使用すると、指定した校閲者によ
 
 監督ポリシーを使用する通信プラットフォームを次のいずれかのメッセージを監視できます。
 
-- **電子メールの交換:** Office 365 サブスクリプションの一部として、Exchange のオンラインでホストされているメールボックスは、すべて、メッセージの監視の対象となります。電子メールおよび添付ファイルの監視ポリシーの条件に一致するが即座に監視と監督レポートです。サポートされている添付ファイルの種類は次のとおりです。
-
-    - Microsoft Word (.docx)
-    - Microsoft Excel (.xlsx)
-    - Microsoft PowerPoint (.pptx)
-
+- **電子メールの交換:** Office 365 サブスクリプションの一部として、Exchange のオンラインでホストされているメールボックスは、すべて、メッセージの監視の対象となります。電子メールおよび添付ファイルの監視ポリシーの条件に一致するが即座に監視と監督レポートです。監督のサポートされている添付ファイルの種類は、 [Exchange メール フロー ・ ルール ・ コンテンツの検査用にサポートされているファイルの種類](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)と同じです。
 - **マイクロソフト チーム:** チャットの通信、パブリックとプライベートのマイクロソフト チーム チャンネルと個々 のチャットの両方に関連付けられている添付ファイルを管理できます。監督のポリシーの条件に一致するチーム チャットでは、24 時間に 1 回の処理や、[監視および監督のレポートでは。
 - **サード パーティのソース:** 組織で Office 365 のメールボックスにこのデータをインポートした場合は、サード パーティのソース (Facebook のドロップ ボックスのような) からの通信を監督できます。[Office 365 にサード パーティ製のデータをインポートする方法について説明](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data)します。
 

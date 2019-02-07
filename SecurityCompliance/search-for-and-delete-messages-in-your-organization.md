@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 検索を使用し、Office 365 のセキュリティの機能を削除&amp;コンプライアンス ・ センターを検索し、組織内のすべてのメールボックスから電子メール メッセージを削除します。
-ms.openlocfilehash: 82ba38ef2c3c8c6b78743a4b2263dde0ef3a5b48
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: be83b2e3e765980ae401356b924c26c53386a2b3
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015019"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755258"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>検索し、Office 365 の組織の管理のヘルプで電子メール メッセージを削除
 
@@ -36,11 +36,11 @@ Office 365 のコンテンツの検索機能を使用するにを検索し、組
 > [!CAUTION]
 > 検索と削除は、強力な機能により、すべてのユーザーを組織内のメールボックスから電子メール メッセージを削除するのには必要なアクセス許可が割り当てられているです。 
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
-- 作成し、コンテンツの検索を実行するには、**電子的証拠開示マネージャー**の役割グループのメンバーであるか、**コンプライアンス検索**の管理役割を割り当てる必要があります。メッセージを削除するには、**組織の管理**役割グループのメンバーであるか、**検索および削除**の管理役割を割り当てる必要があります。ユーザーを役割グループに追加する方法の詳細についてを参照してください[Office 365 のセキュリティにアクセスできるように&amp;コンプライアンス センター](grant-access-to-the-security-and-compliance-center.md)です。
+- 作成し、コンテンツの検索を実行するには、**電子的証拠開示マネージャー**の役割グループのメンバーであるか、**コンプライアンス検索**の管理役割を割り当てる必要があります。メッセージを削除するには、**組織の管理**役割グループのメンバーであるか、**検索および削除**の管理役割を割り当てる必要があります。ユーザーを役割グループに追加する方法の詳細については、 [Office 365 のセキュリティ & コンプライアンス センターへのユーザー アクセス許可](grant-access-to-the-security-and-compliance-center.md)を参照してください。
     
-- セキュリティを使用する必要が&amp;メッセージを削除するのにはセンター PowerShell を遵守します。接続する方法について、[手順 2](#step-2-connect-to-security-amp-compliance-center-powershell)を参照してください。
+- メッセージを削除するセキュリティ & コンプライアンス センター PowerShell を使用する必要があります。接続する方法について、[手順 2](#step-2-connect-to-security-amp-compliance-center-powershell)を参照してください。
     
 - メールボックスあたり 10 個のアイテムの最大値を同時に削除できます。検索してメッセージを削除する機能は、インシデント対応ツールになるようとしているためこの制限により、メールボックスからメッセージが削除されます簡単にできます。この機能は、ユーザーのメールボックスをクリーンアップするのにはありません。10 個を超えるアイテムを削除するには、Exchange オンライン PowerShell で**検索メールボックス DeleteContent**コマンドを使用できます。[検索して削除するメッセージの管理のヘルプ](search-for-and-delete-messagesadmin-help.md)を参照してください。
     
@@ -50,7 +50,7 @@ Office 365 のコンテンツの検索機能を使用するにを検索し、組
     
 ## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>手順 1: コンテンツ検索を作成して、削除するメッセージを探す
 
-作成し、組織内のメールボックスから削除するメッセージを検索するコンテンツの検索を実行するのには、まず。セキュリティを使用して検索を作成することができます&amp;コンプライアンス センターか**新規 ComplianceSearch**および**開始 ComplianceSearch**コマンドレットを実行しています。この検索のクエリに一致するメッセージは、[手順 3](#step-3-delete-the-message)で**新規 ComplianceSearchAction**コマンドレットを実行することによって削除されます。コンテンツの検索を作成して、検索クエリを構成する方法については、次のトピックを参照してください。 
+作成し、組織内のメールボックスから削除するメッセージを検索するコンテンツの検索を実行するのには、まず。セキュリティを使用して検索を作成することができます&amp;コンプライアンス センターか**新規 ComplianceSearch**および**開始 ComplianceSearch**コマンドレットを実行しています。この検索を実行することによって削除されます、クエリに一致するメッセージ、**新規 ComplianceSearchAction-削除**[手順 3](#step-3-delete-the-message)のコマンドです。コンテンツの検索を作成して、検索クエリを構成する方法については、次のトピックを参照してください。 
   
 - [Office 365 でのコンテンツの検索](content-search.md)
     
@@ -91,11 +91,11 @@ Office 365 のコンテンツの検索機能を使用するにを検索し、組
     (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
     ```
 
-## <a name="step-2-connect-to-security-amp-compliance-center-powershell"></a>ステップ 2: 接続セキュリティ&amp;コンプライアンス センター PowerShell
+## <a name="step-2-connect-to-security--compliance-center-powershell"></a>ステップ 2: 接続セキュリティ & コンプライアンス センター PowerShell
 
-セキュリティへの接続を次の手順は、 &amp; 、組織のコンプライアンス センターの PowerShell。手順についてを参照してください[Office 365 のセキュリティへの接続&amp;コンプライアンス センター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+次の手順は、組織のセキュリティ & コンプライアンス センター PowerShell への接続には。手順についてを参照してください[Office 365 のセキュリティへの接続&amp;コンプライアンス センター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
   
-Office 365 アカウントでは、多要素認証 (MFA) またはフェデレーション認証を使用する場合セキュリティへの接続の前のトピックでの手順を使うことはできません&amp;コンプライアンス センター PowerShell。代わりに、トピックの指示を参照してください[Office 365 のセキュリティへの接続&amp;コンプライアンス センター PowerShell の多要素認証を使用して](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell)。
+Office 365 アカウントは、多要素認証 (MFA) を使用してまたはフェデレーション認証、セキュリティ & コンプライアンス センター PowerShell への接続の前のトピックで手順を使用できません。代わりに、 [Office 365 のセキュリティ & コンプライアンス センター PowerShell への接続は、複数要素の認証を使用して](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell)トピックの指示を参照してください。
   
 ## <a name="step-3-delete-the-message"></a>ステップ 3: メッセージを削除します。
 
@@ -106,22 +106,16 @@ Office 365 アカウントでは、多要素認証 (MFA) またはフェデレ�
 ```
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
-次の例では、コマンドは「フィッシング詐欺メッセージを削除」という名前コンテンツの検索によって返される検索結果のハード削除されます。 
-
-```
-New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
-```
-
-*SearchName*パラメーターで指定された検索では、手順 1 で作成したコンテンツの検索がされます。 
 
 ハード削除「フィッシング詐欺メッセージを削除する」のコンテンツの検索によって返されるアイテムの場合、は、このコマンドを実行します。
 
 ```
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
 ```
+
+ソフト、またはハード ・ メッセージを削除する前のコマンドを実行すると、 *SearchName*パラメーターで指定された検索が手順 1 で作成したコンテンツの検索に注意してください。 
   
 詳細については、[新規 ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction)を参照してください。
-  
 
 ## <a name="more-information"></a>詳細情報
 
@@ -147,6 +141,6 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 
     メッセージをパージし、削除フォルダーに移動すると、メッセージは、保留期間が経過するまで保持されます。保留期間が制限されている場合は、保留リストを削除または保持期間を変更するまで、アイテムは保持されます。
     
-- **理由検索とは別のセキュリティとコンプライアンスのセンターの役割グループに分割されているワークフローを削除するか。**
+- **理由検索とは異なるセキュリティ & コンプライアンス センターの役割のグループに分割されているワークフローを削除するか。**
 
     説明したように電子的証拠開示マネージャーの役割グループのメンバーであるか、メールボックスを検索するのには、コンプライアンス検索管理の役割を割り当てられる人があります。人にメッセージを削除するには、組織の管理役割グループのメンバーであるか、検索および削除の管理役割を割り当てるには。これにより、管理する組織内のメールボックスを検索することができ、メッセージを削除することができます。 

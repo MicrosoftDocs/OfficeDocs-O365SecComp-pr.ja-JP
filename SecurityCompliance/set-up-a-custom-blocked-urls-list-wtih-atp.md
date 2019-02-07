@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.date: 02/05/2019
+ms.date: 02/06/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: Office 365 の高度な脅威保護を使用して、組織のブロックされた Url の一覧を設定する方法について説明します。ブロックされた Url は、電子メール メッセージと、ATP の安全なリンク ポリシーに基づき、Office ドキュメントに適用されます。
-ms.openlocfilehash: 4146424056c9a5b30f51a58fd020df912fa048ef
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.openlocfilehash: 4d8c9c669310137d3f491f5a79c93f4d6af71ac5
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741020"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755318"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Office 365 の ATP の安全なリンクを使用してカスタムのブロックされた Url リストを設定します。
 
@@ -39,8 +39,13 @@ ATP のポリシーを編集 (または定義) を割り当てる必要があり
 |役割  |場所と方法が割り当てられています。  |
 |---------|---------|
 |Office 365 のグローバル管理者 |Office 365 を購入するのに署名した人は、既定でグローバル管理者です。( [Office 365 の管理者の役割](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)の詳細についてを参照してください)。         |
-|Office 365 のセキュリティ管理者 |管理者センター ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|セキュリティ管理者 |Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange オンライン組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (を参照してください[Exchange オンライン PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+
+> [!TIP]
+> ロールとアクセス許可の詳細についてを参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。
+
+### <a name="to-view-or-edit-a-custom-blocked-urls-list"></a>表示またはブロックされた Url のユーザー設定リストを編集するには
   
 1. [https://protection.office.com](https://protection.office.com)と、職場、学校のアカウントでサインインします。 
     

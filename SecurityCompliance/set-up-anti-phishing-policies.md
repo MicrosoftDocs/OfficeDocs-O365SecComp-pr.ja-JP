@@ -5,17 +5,17 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.date: 02/04/2019
+ms.date: 02/06/2019
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: 偽装ベースの悪意のあるフィッシング攻撃から組織を保護するために Office 365 の高度な脅威保護し、Office 365 Exchange のオンライン保護、基本的な保護機能の一部として包括的な保護、フィッシング防止対策ができます。およびその他のフィッシング攻撃します。
-ms.openlocfilehash: 1ef1dc0781cc28e660cbebf8cde59f97d3e65000
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.openlocfilehash: 1ecc76f674b1d64b59b5dec0f92cd06bbe8b55e8
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741150"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755268"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Office 365 の ATP のフィッシング詐欺対策とフィッシング詐欺対策のポリシーを設定します
 
@@ -43,9 +43,11 @@ ms.locfileid: "29741150"
     |役割  |場所と方法が割り当てられています。  |
     |---------|---------|
     |Office 365 のグローバル管理者 |Office 365 を購入するのに署名した人は、既定でグローバル管理者です。( [Office 365 の管理者の役割](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)の詳細についてを参照してください)。         |
-    |Office 365 のセキュリティ管理者 |管理者センター ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+    |セキュリティ管理者 |Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
     |Exchange オンライン組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (を参照してください[Exchange オンライン PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
+    ロールとアクセス許可の詳細についてを参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。
+
 - 組織に、複数のフィッシング詐欺対策のポリシーを設定するが可能性があります。Office 365 には、セキュリティの**フィッシング ページ**と**ATP フィッシング詐欺対策**のページに記載されている順序でこれらのポリシーが適用される&amp;コンプライアンス センターです。[ポリシーのオプション](#learn-about-atp-anti-phishing-policy-options)を確認して、1 回ごとにする必要がありますポリシーの数と優先順位を決定するのには時間がかかります。 
     
 - 最初、フィッシング詐欺対策ポリシーを設定するのには約 5 ~ 15 分を費やすしようとしてください。

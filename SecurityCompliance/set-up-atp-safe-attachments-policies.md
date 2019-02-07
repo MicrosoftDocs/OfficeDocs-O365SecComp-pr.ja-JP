@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.date: 02/05/2019
+ms.date: 02/06/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: 電子メールに悪意のあるファイルから組織を保護するために安全な添付ファイル ポリシーを定義します。
-ms.openlocfilehash: 229f5eb4ec1af4302f724151f599bd33b15055e1
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.openlocfilehash: 2f33114d46778f2f01f5a263a05c320f75fad49e
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741120"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755218"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Office 365 ATP の安全な添付ファイル ポリシーを設定します
 
@@ -41,9 +41,11 @@ ms.locfileid: "29741120"
     |役割  |場所と方法が割り当てられています。  |
     |---------|---------|
     |Office 365 のグローバル管理者 |Office 365 を購入するのに署名した人は、既定でグローバル管理者です。( [Office 365 の管理者の役割](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)の詳細についてを参照してください)。         |
-    |Office 365 のセキュリティ管理者 |管理者センター ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+    |セキュリティ管理者 |Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
     |Exchange オンライン組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (を参照してください[Exchange オンライン PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
+    ロールとアクセス許可の詳細についてを参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。
+
 - [ATP の安全な添付ファイル ポリシーのオプションについて理解します。](#learn-about-atp-safe-attachments-policy-options)(この記事で)。モニター] または [置換のオプションなど、いくつかのオプションが遅延が生じますマイナー電子メールの添付ファイルをスキャン中にします。メッセージの遅延を避けるためには、[動的な配信およびプレビュー](dynamic-delivery-and-previewing.md)を使用して検討してください。
     
 - 最大 30 分間のすべての Office 365 のデータ センターに展開するのには、新規または更新されたポリシーを使用できます。

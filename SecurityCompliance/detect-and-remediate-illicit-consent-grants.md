@@ -16,12 +16,12 @@ ms.assetid: ''
 search.appverid:
 - MET150
 description: 認識し、Office 365 の不法な同意の補助金攻撃に対処する方法を説明します。
-ms.openlocfilehash: 412b601af30ce87332225d271ec1a9e622012405
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 457279e6d9498ac132ed3fb77b7c0fef68a293fa
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532805"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755238"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Microsoft Office 365 での不正な同意付与の検出と修復
 
@@ -34,7 +34,7 @@ ms.locfileid: "22532805"
 Office 365 の**ログを監査**インジケーターの危険にさらされる (IOC) のこのような攻撃とも呼ばれる記号を検索する検索する必要があります。Azure に登録されている多くのアプリケーションおよび大規模なユーザー ベースを持つ組織では、週単位で、組織の同意の許可を確認するが得策。
 ### <a name="steps-for-finding-signs-of-this-attack"></a>この攻撃の兆候を検索する手順を実行します。
 1. Office 365 テナント内の**セキュリティとコンプライアンスのセンター**を開きます。
-2. **検索と調査**] ノードに移動し、**監査ログ**の検索を選択します。
+2. **_AMP_ 調査の検索**] ノードに移動し、**監査ログ**の検索を選択します。
 3. 検索 (すべての活動およびすべてのユーザー) を作成し、同意をアプリケーションに結果をフィルター処理し、OAuth2PermissionGrant を追加します。
 4. IsAdminContent が True に設定を表示するには、拡張プロパティとチェックを確認します。
 
@@ -55,7 +55,7 @@ Azure Active ディレクトリのポータルまたは PowerShell のいずれ�
 個々 のユーザー権限を与えた[Azure Active Directory のポータル](https://portal.azure.com/)を使用してアプリケーションを検索できます。 
 1. 管理者権限を使用して、Azure ポータルにサインインします。
 2. Azure Active Directory のブレードを選択します。
-3. **ユーザー**を選択します。
+3. [ **ユーザー**] を選びます。
 4. 確認するユーザーを選択します。
 5. **アプリケーション**を選択します。
 
@@ -65,7 +65,7 @@ Azure Active ディレクトリのポータルまたは PowerShell のいずれ�
 移動ユーザーが、https://myapps.microsoft.comし、独自アプリケーションへのアクセスがあります。アクセス権を持つすべてのアプリケーションを参照してください (アクセスのスコープを含む) に関する詳細を表示することし、不審なまたは不正なアプリケーションに権限を取り消すことができる必要があります。
 
 ### <a name="steps-for-doing-this-with-powershell"></a>PowerShell でこれを行う手順を実行します。
-同意の許可を不正な攻撃を確認する最も簡単な方法では、 [Get AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)、ダンプすべての OAuth 同意の補助金およびすべてのユーザー用のアプリケーションのアクセス許可、テナントの 1 つの .csv ファイルにするを実行します。 
+同意の許可を不正な攻撃を確認する最も簡単な方法では、 [Get AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)、ダンプ OAuth 同意の補助金とすべてのユーザー用の OAuth のアプリケーションをすべてのテナントの 1 つの .csv ファイルにするを実行します。 
 
 #### <a name="pre-requisites"></a>前提条件
 - Azure AD PowerShell ライブラリがインストールされています。
@@ -79,7 +79,7 @@ Azure Active ディレクトリのポータルまたは PowerShell のいずれ�
 2. ダウンロードまたは GitHub から[Get AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)スクリプトを scruipt を実行するフォルダーにコピーします。 出力の"permissions.csv"ファイルの書き込み先の同じフォルダーになります。
 3. 管理者として PowerShell のインスタンスを開き、スクリプトを保存するフォルダーを開きます。
 4. [接続 AzureAD](https://docs.microsoft.com/powershell/module/azuread/connect-azuread?view=azureadps-2.0)コマンドレットを使用して、ディレクトリに接続します。
-5. この PowerShell コマンド ・ ラインを次のように実行します。`.Get-AzureASPSPermissions.ps1 | Export-csv -path "Permissions.csv" -NoTypeInformation`
+5. この PowerShell コマンド ・ ラインを次のように実行します。`Get-AzureADPSPermissions.ps1 | Export-csv -path "Permissions.csv" -NoTypeInformation`
 
 スクリプトには、Permissions.csv という名前の 1 つのファイルが生成されます。不正なアプリケーションのアクセス許可の付与を検索する手順に従います。 
 1. [ConsentType] 列 (列 G) には、"AllPrinciples"の値を検索します。AllPrincipals 許可では、借用地のすべてのユーザーのコンテンツにアクセスするクライアント アプリケーションを使用します。ネイティブの Office 365 アプリケーションでは、このアクセス許可を正常に動作する必要があります。すべて Microsoft 以外のアプリケーションにこのアクセス許可を慎重に検討する必要があります。
@@ -105,13 +105,13 @@ Azure Active ディレクトリのポータルまたは PowerShell のいずれ�
 - サインイン用にそのアカウントのデータへのアクセスをアプリケーションが無効になりますが、影響を受けるアカウント全体を無効にできます。もちろん、これは、エンド ・ ユーザーの生産性に最適ですへの影響を簡単に制限する場合は、実行可能な短期的な改善となります。
 - テナントの統合されたアプリケーションを無効にできます。これは、テナント単位での承認を付与するエンド ・ ユーザー向けの機能を無効にする非常に重大なステップです。これは、ユーザーが誤って悪意のあるアプリケーションへのアクセス権を付与することを防ぎます。サード パーティ製アプリケーションと生産性を向上する、ユーザーの機能が損なわれ深刻なように強くお勧めしません。 [オンまたはオフは、[統合されたアプリケーションにすること](https://support.office.com/article/Turning-Integrated-Apps-on-or-off-7e453a40-66df-44ab-92a1-96786cb7fb34)で手順を実行して、これを行うことができます。
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Pro の cybersecurity のように Office 365 をセキュリティで保護します。
-Office 365 サブスクリプションのデータとユーザーを保護するために使用できるセキュリティ機能の強力なセットが付属します。 使用、 [Office 365 のセキュリティ ロードマップ: 最初の 30 日、90 日間での内外の優先順位のトップ](https://support.office.com/article/office-365-security-roadmap-top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)マイクロソフトが推奨する、Office 365 テナントのセキュリティに関するベスト プラクティスを実装します。
-- 最初の 30 日以内に実行するタスクです。 即座に影響があり、影響の少ないのはこれらのユーザーにします。
-- 90 日以内に実行するタスクです。これらにより、計画し実装しますが、セキュリティ体制を大幅に改善するに少し時間がかかります。
-- 90 日が経過します。これらの拡張機能は、最初の 90 日間の作業でビルドします。
+## <a name="secure-office-365-like-a-cybersecurity-pro"></a>cybersecurity pro などの Office 365 の保護
+Office 365 サブスクリプションには、データとユーザーを保護するために使用可能な強力なセキュリティ機能のセットが付属しています。「[Office 365 のセキュリティ ロードマップ: 最初の 30 日間、90 日間、およびそれ以後の優先事項](https://support.office.com/article/office-365-security-roadmap-top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)」を使用して、Office 365 テナントをセキュリティで保護するためのマイクロソフト推奨ベスト プラクティスを実践します。
+- 最初の 30 日間で完了すべき作業。すぐにユーザーに影響しますが、それほど大きな影響ではありません。
+- 最初の 90 日間で完了すべき作業。作業の計画と実装に少し時間がかかりますが、セキュリティ体制は大幅に向上します。
+- 90 日以降。最初の 90 日間の作業で保護が強化されます。
 
-## <a name="see-also"></a>参照してください。
+## <a name="see-also"></a>関連項目:
 - [[アプリケーション] リストで予期しないアプリケーション](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application)が示す手順に従ってさまざまなアクションの後は、データへのアクセス権を持つ予期しないアプリケーションを実現することがあります。
 - [Azure Active Directory と統合するアプリケーション] (https://docs.microsoft.com/azure/active-directory/active-directory-apps-permissions-consent)は、承認とアクセス許可の概要を説明します。 [承認フレームワークの概要](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#overview-of-the-consent-framework)のセクションに特に注意してください。
 - [問題が自分のアプリケーションを開発](https://docs.microsoft.com/azure/active-directory/active-directory-application-dev-development-content-map)すると、各種へのリンク関連の記事に同意するものが用意されています。
