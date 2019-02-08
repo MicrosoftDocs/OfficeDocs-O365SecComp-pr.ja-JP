@@ -1,8 +1,7 @@
 # はじめに
 ## [Office 365 のセキュリティ ロードマップ](security-roadmap.md)
 ## [セキュリティ強化のために、Office 365 テナントを構成する](tenant-wide-setup-for-increased-security.md)
-## [Office 365 セキュリティ/コンプライアンス センターに移動する](go-to-the-securitycompliance-center.md)
-## [新しい Microsoft 365 セキュリティ センターと Microsoft 365 コンプライアンス センターの準備を行う](microsoft-security-and-compliance.md)
+## [セキュリティ/コンプライアンス センターに移動する](go-to-the-securitycompliance-center.md)
 ## [Office 365 セキュリティ スコア](office-365-secure-score.md)
 ## [セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)
 ## [ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する](grant-access-to-the-security-and-compliance-center.md)
