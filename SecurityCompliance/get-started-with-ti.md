@@ -3,7 +3,7 @@ title: Office 365 脅威インテリジェンスの概要
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/22/2019
+ms.date: 02/07/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,18 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 description: Office 365 の脅威インテリジェンスおよび開始する方法について説明します。
-ms.openlocfilehash: d2b3d245a0d3d26e26052468313da8db7df5ea9b
-ms.sourcegitcommit: a1d8174240eb88b51af3a1ba26d715292fe08c53
+ms.openlocfilehash: 141bc0d2ffc2084f56f50333c756507d04a37d44
+ms.sourcegitcommit: c2ec9a4b0279a248b85c2e4a4e91458214b5b31c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29426042"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "29770792"
 ---
 # <a name="get-started-with-office-365-threat-intelligence"></a>Office 365 脅威インテリジェンスの概要
 
 組織のセキュリティ チームの一部の場合は、攻撃からユーザーを保護するために Office 365 の脅威のインテリジェンスを使用できます。Office 365 脅威インテリジェンスにより、セキュリティ アナリストおよび管理者のユーザーの安全を守る洞察をバブルでとで起こっているかに基づいてどのようなアクションを識別するは、Office 365 環境です。これらの情報は、脅威インテリジェンス データとシステムの動作や不審な動作を攻撃に対応するスポット カラーのパターンを包括的なリポジトリに基づいています。
-  
-![脅威インテリジェンスでは、組織を対象とした攻撃を理解できます。](media/6ce67cf2-3bbb-4008-9c55-1b4c7af0471f.png)
   
 Office 365 の脅威インテリジェンスが含まれていて、開始する方法の詳細については、この資料を参照してください。
   
@@ -99,7 +97,7 @@ Office 365 の脅威インテリジェンス ソリューションの一部と�
    
 役割、役割グループ、およびアクセス許可の詳細についてを参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。
     
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [脅威のトラッカーが、注目すべき新しいについてください。](threat-trackers.md)
     
