@@ -3,7 +3,7 @@ title: Office 365 Advanced Threat Protection
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/04/2019
+ms.date: 02/08/2019
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
-description: 高度な脅威保護 office 365 にはには、なりすましのインテリジェンス、安全なリンク、安全な添付ファイル、および高度なフィッシング対策機能が含まれています。脅威の高度な保護も拡張されている SharePoint のオンライン、OneDrive 内のファイルにビジネス、およびマイクロソフトのチームです。
-ms.openlocfilehash: b483ceb0da53b2f1c216f60d5271781072ebcf17
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+description: 高度な脅威保護 office 365 にはには、なりすましのインテリジェンス、安全なリンク、安全な添付ファイル、高度なフィッシング対策機能、および脅威インテリジェンスが含まれています。
+ms.openlocfilehash: 213b262b0ecc821b8f139b1b63568b2b03e635c5
+ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755228"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792252"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -47,16 +47,19 @@ Office 365 に新しい機能を追加するのには継続していて、分析
 
 |機能の更新  |アクション アイテム  |
 |---------|---------|
+|2019 の 2 月に開始し、今後数か月にロールアウト、ATP ように脅威インテリジェンス機能が追加されています。さらに、組織が現在 ATP を持たない場合がありますこれを考慮すると、新しいオプション計画 1 の ATP ATP 計画 2 など。詳細については、 [Office 365 の高度な脅威保護の計画と価格設定](https://products.office.com/exchange/advance-threat-protection)と[Office 365 高度な脅威保護サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)を参照してください。 |組織のサブスクリプションを確認し、[購入またはアドオンの編集](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on)が必要な場合です。  |
 |2018年 10 月年と、今後数か月にロールアウト、ユーザーが Outlook を使用しているまたは Outlook Web アプリケーション (OWA)、ATP の安全なリンク元の Url が表示されない場合は、Url を書き換えます。(このリンクはネイティブのレンダリングを呼び出して) します。<br>ネイティブのリンクのレンダリングが、組織の利用可能な 365 (クイック実行) の Outlook と OWA の機能します。|なし         |
 |先頭 2018年 9 月で、[警告のページを Office 365 の分析ツール](atp-safe-links-warning-pages.md)の機能、新しい配色パターン、詳細についてとにもかかわらず、サイトを続行することには、警告と推奨事項が与えられます。 |なし         |
 |2018 の後半以降では、ATP の安全なリンクの保護を拡張 (オンラインの Word、Excel のオンライン、PowerPoint オンラインでは、および OneNote オンライン) オンライン Office および Office 365 用リソース mac 上での Url に適用するには   |[確認し、ATP の安全なリンク ポリシーの編集](set-up-atp-safe-links-policies.md)  |
 |遅延月 2018、セキュリティの[検査](quarantine-email-messages.md)機能に&amp;コンプライアンス センターは、 [SharePoint Online をビジネス、およびマイクロソフトのチームの OneDrive の分析ツール](atp-for-spo-odb-and-teams.md)を拡張します。 |[確認し、ATP の安全な添付ファイル ポリシーの編集](set-up-atp-safe-attachments-policies.md) |
 |2018年 3 月で以降では、ATP の安全なリンクの保護は、組織内のユーザー間で送信される電子メールに適用する拡張されます。 |[確認し、ATP の安全なリンク ポリシーの編集](set-up-atp-safe-links-policies.md) |
 |遅延 2017年 10 月以降では、ATP の安全なリンクの保護に適用する Url の Url と同様に電子メールで Word、Excel、PowerPoint、および Visio など、Office 365 用リソースのドキュメントのウィンドウ、および Office に iOS および Android デバイス上のアプリ拡張されます。  |[Office の最新の認証](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)を使用するかどうかを確認します。 |
-  
+
+
+      
 ## <a name="get-office-365-atp"></a>Office 365 の ATP を取得します。
 
-[ [365 企業の Microsoft](https://www.microsoft.com/microsoft-365/enterprise/home)、Microsoft 365 ビジネス](https://www.microsoft.com/microsoft-365/business)、Office 365 のエンタープライズ E5、および Office 365 の教育 A5 などのサブスクリプションでは、office 365 の ATP が含まれます。組織が Office 365 の分析ツールが含まれていない Office 365 のサブスクリプションの場合は、アドオンとして可能性のある ATP を購入できます。詳細については、 [Office 365 高度な脅威保護サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)を参照してください。 
+[ [365 企業の Microsoft](https://www.microsoft.com/microsoft-365/enterprise/home)、Microsoft 365 ビジネス](https://www.microsoft.com/microsoft-365/business)、Office 365 のエンタープライズ E5、および Office 365 の教育 A5 などのサブスクリプションでは、office 365 の ATP が含まれます。組織が Office 365 の分析ツールが含まれていない Office 365 のサブスクリプションの場合は、アドオンとして可能性のある ATP を購入できます。詳細については、 [Office 365 の高度な脅威保護の計画と価格設定](https://products.office.com/exchange/advance-threat-protection)と[Office 365 高度な脅威保護サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)を参照してください。 
 
 ## <a name="define-policies-for-atp"></a>ATP のポリシーを定義します。
 
@@ -85,7 +88,7 @@ ATP のポリシーがあると後、は、サービスの操作方法を表示�
 
 [![セキュリティ&amp;コンプライアンス センターのダッシュ ボードを使用して、脅威の高度な保護が作業しているを確認できます](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)](view-reports-for-atp.md)
   
-1. 移動すると、Office 365 のグローバル管理者、セキュリティ管理者、またはセキュリティのリーダー、[https://protection.office.com](https://protection.office.com)し、サインインします。
+1. 移動すると、Office 365 のグローバル管理者、セキュリティ管理者、またはセキュリティ リーダー、[https://protection.office.com](https://protection.office.com)し、サインインします。
     
 2. **レポート**に > **のダッシュ ボード**です。(これらのレポートのヘルプを表示するには、[高度な脅威保護のためのレポートを表示する](view-reports-for-atp.md)を参照してください)。
     

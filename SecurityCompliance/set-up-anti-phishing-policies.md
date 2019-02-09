@@ -10,12 +10,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: 偽装ベースの悪意のあるフィッシング攻撃から組織を保護するために Office 365 の高度な脅威保護し、Office 365 Exchange のオンライン保護、基本的な保護機能の一部として包括的な保護、フィッシング防止対策ができます。およびその他のフィッシング攻撃します。
-ms.openlocfilehash: 1ecc76f674b1d64b59b5dec0f92cd06bbe8b55e8
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 333176ebef8d6367f5090730386fc820927cf3af
+ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755268"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792282"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Office 365 の ATP のフィッシング詐欺対策とフィッシング詐欺対策のポリシーを設定します
 
@@ -24,7 +24,7 @@ ms.locfileid: "29755268"
 フィッシング攻撃に由来するさまざまなフォームで商品ベースの攻撃対象となるスピアー フィッシング詐欺を whaling。、複雑さは、これらの高度な攻撃のいくつかを識別するのには熟練したもは困難です。幸いなことに、Office 365 の高度な脅威保護に役立ちます。ATP のフィッシング詐欺対策ポリシーを設定するには、組織がこのような攻撃から保護されていることを確保します。
   
 > [!NOTE]
-> ATP フィッシング詐欺対策は、高度な脅威保護 (ATP) で使用可能なのみです。ATP は、 [365 企業の Microsoft](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 ビジネス](https://www.microsoft.com/microsoft-365/business)、Office 365 エンタープライズ E5、Office 365 の教育 A5 など、サブスクリプションに含まれます。組織が Office 365 の分析ツールが含まれていない Office 365 のサブスクリプションの場合は、アドオンとして可能性のある ATP を購入できます。詳細については、 [Office 365 高度な脅威保護サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)を参照してください。組織を使用して Office 365 用リソースの最新版 Windows 上での ATP のフィッシング詐欺対策の保護を最大限に活用することを確認します。 
+> ATP フィッシング詐欺対策は、高度な脅威保護 (ATP) で使用可能なのみです。ATP は、 [365 企業の Microsoft](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 ビジネス](https://www.microsoft.com/microsoft-365/business)、Office 365 エンタープライズ E5、Office 365 の教育 A5 など、サブスクリプションに含まれます。組織が Office 365 の分析ツールが含まれていない Office 365 のサブスクリプションの場合は、アドオンとして可能性のある ATP を購入できます。詳細については、 [Office 365 の高度な脅威保護の計画と価格設定](https://products.office.com/exchange/advance-threat-protection)と[Office 365 高度な脅威保護サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)を参照してください。組織を使用して Office 365 用リソースの最新版 Windows 上での ATP のフィッシング詐欺対策の保護を最大限に活用することを確認します。 
 
 フィッシング詐欺対策ポリシーも認証および詐欺メール ベースの攻撃から保護するためのものでは、スプーフィング対策の保護の制限のセットを使用して Office 365 Exchange のオンライン保護を使用できます。
   

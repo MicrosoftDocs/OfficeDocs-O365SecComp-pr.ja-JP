@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 02/05/2019
+ms.date: 02/08/2019
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: 安全な添付ファイル機能は、電子メールの添付ファイルのクリックの検証を提供します。ファイルを悪意のあるユーザーから組織を保護するために使用の安全な添付ファイルで送信または受信電子メールです。
-ms.openlocfilehash: 936d24e3782e1018e77e24373756e378472f7e7c
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 45cd3b74b67d7ff8735da7a703ff14c4c517341f
+ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755278"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792232"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 の ATP の安全な添付ファイル
 
@@ -45,7 +45,7 @@ ATP の安全な添付ファイルのポリシーは、特定の人または組�
   
 ## <a name="how-to-get-atp-safe-attachments"></a>ATP の安全な添付ファイルを取得する方法
 
-最初に、お申し込みの[脅威保護の高度な](office-365-atp.md)内容を確認します。ATP は、 [365 企業の Microsoft](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 ビジネス](https://www.microsoft.com/microsoft-365/business)、Office 365 エンタープライズ E5、Office 365 の教育 A5 など、サブスクリプションに含まれます。組織が Office 365 の分析ツールが含まれていない Office 365 のサブスクリプションの場合は、アドオンとして可能性のある ATP を購入できます。詳細については、 [Office 365 高度な脅威保護サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)を参照してください。 
+最初に、お申し込みの[脅威保護の高度な](office-365-atp.md)内容を確認します。ATP は、 [365 企業の Microsoft](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 ビジネス](https://www.microsoft.com/microsoft-365/business)、Office 365 エンタープライズ E5、Office 365 の教育 A5 など、サブスクリプションに含まれます。組織が Office 365 の分析ツールが含まれていない Office 365 のサブスクリプションの場合は、アドオンとして可能性のある ATP を購入できます。詳細については、 [Office 365 の高度な脅威保護の計画と価格設定](https://products.office.com/exchange/advance-threat-protection)と[Office 365 高度な脅威保護サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)を参照してください。 
 
 次に、ATP の安全な添付ファイル ポリシーが定義されているを確認します。( [Office 365 ATP の安全な添付ファイルのポリシー設定](set-up-atp-safe-attachments-policies.md)を参照してください)ATP の安全な添付ファイル機能は、次のような場合アクティブです。
   
