@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: '管理者として表示、離すと、して Office 365 の正偽の検疫済みメッセージを報告できます。Office 365 は、メッセージをフィルター処理し、いくつかの理由を検査するそれらを送信するようポリシーを設定することができます: 迷惑メール、一括、フィッシング、マルウェアと、認識されたため、またはメール フロー ルールに一致するためです。 '
-ms.openlocfilehash: 1a0aa0b3f08b18d81b6e1e025e5672ab8fcfafa4
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+ms.openlocfilehash: ed78fcd2652a723e97c288f6f8aa43d11d41f0dd
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180887"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792508"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Office 365 の管理者として検疫されたメッセージやファイルを管理します。
 
@@ -27,10 +27,10 @@ ms.locfileid: "27180887"
   
 既定では、Office 365 は、フィッシング詐欺メールとマルウェアを含むメッセージを検疫に直接送信します。その他のフィルター処理されたメッセージは、検疫に送信するポリシーを設定する場合を除き、ユーザーの迷惑メール フォルダーに送信されます。
   
-他のユーザーに送信された検疫済みのメッセージを処理して、検疫済みのファイルを操作するのには、Office 365 の管理者のアクセス許可が必要です。
+Office 365 の他のユーザーに送信された検疫済みのメッセージを処理して、検疫済みのファイルを操作するには、グローバル管理者 (GA) のアクセス許可が必要です。
   
 > [!IMPORTANT]
-> 既定では、迷惑メール、一括、マルウェア、フィッシング、およびメール フロー ルールに一致するために検疫されたメッセージは検疫で 30 日間保存します。スパム対策の設定、セキュリティでの検査時間をカスタマイズすることができます&amp;コンプライアンス センターです。Office 365 は、検疫からのメッセージを削除と、することはできませんを元に戻します。必要な場合は、スパム対策フィルター ポリシーに、検疫されたメッセージの保存期間を変更できます。詳細については、この資料で[検疫保存期間を設定する](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime)を参照してください。 
+>既定では、迷惑メール、一括してフィッシング詐欺のメッセージは検疫で 30 日間保存します。メール フロー ルールに一致するために隔離されているメッセージは、7 日間の検疫に保持されます。マルウェアのメッセージは、15 日間の検疫に保持されます。セキュリティでスパム対策の設定でスパム検疫の時間をカスタマイズすることができます&amp;コンプライアンス センターです。Office 365 は、検疫からのメッセージを削除と、することはできませんを元に戻します。必要な場合は、スパム対策フィルター ポリシーに、検疫されたメッセージの保存期間を変更できます。詳細については、この資料で[検疫保存期間を設定する](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime)を参照してください。 
   
 ## <a name="view-your-organizations-quarantined-messages"></a>組織の検疫済みのメッセージを表示します。
 
@@ -39,7 +39,7 @@ ms.locfileid: "27180887"
 2. 左側のボックスの一覧で**脅威の管理**] を展開、**レビュー**を選択し、**検査**します。
     
     > [!TIP]
-    > セキュリティ**検査**のページに直接移動するのには&amp;コンプライアンス センターでは、この URL を使用して: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > セキュリティ**検査**のページに直接移動するのには&amp;コンプライアンス センターでは、この URL を使用して: _gt[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
   
     既定では、セキュリティ&amp;コンプライアンス センターでは、スパムとして検疫されたすべての電子メール メッセージが表示されます。メッセージに基づいて並べ替えられます。 から順にメッセージが受信された**日付**。各メッセージの**送信者**、**件名**、および有効期限の日付 ([**期限切れ日時**) が表示されますも。フィールドを対応する列ヘッダーをクリックして並べ替えることができます。並べ替え順序を逆にするには列ヘッダーをもう一度をクリックします。 
     
@@ -67,7 +67,7 @@ ms.locfileid: "27180887"
     
 2. 、左側の**脅威の管理**] を展開、**レビュー**、を選択し、**検査**します。 <br/>
     > [!TIP]
-    > セキュリティ**検査**のページに直接移動するのには&amp;コンプライアンス センターでは、この URL を使用して: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > セキュリティ**検査**のページに直接移動するのには&amp;コンプライアンス センターでは、この URL を使用して: _gt[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
   
 3. 既定では、ページには、検疫済みの電子メール メッセージが表示されます。検疫済みファイルを表示するには、**ファイル**を**マルウェア**によって検疫を表示するページの上部にあるフィルターを設定します。検疫済みのファイルを操作するのには Office 365 の管理者のアクセス許可が必要です。 
     
@@ -190,7 +190,7 @@ ms.locfileid: "27180887"
     
 2. 、左側の**脅威の管理**を展開し、**ポリシー**を選択し、**スパム対策**します。 <br/>
     > [!TIP]
-    > セキュリティで**スパム対策**のページに直接移動するのには&amp;コンプライアンス センターでは、この URL を使用して: >[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
+    > セキュリティで**スパム対策**のページに直接移動するのには&amp;コンプライアンス センターでは、この URL を使用して: _gt[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
   
 3. [**カスタム設定**] タブを表示する**ユーザー設定**を選択します。 
     
@@ -202,6 +202,6 @@ ms.locfileid: "27180887"
     
 7. **検疫**、下の **(日) の迷惑メールを保持する**テキスト ボックスで、検査中のメッセージやファイルを保持するのには Office 365 を時間を入力します。既定では 30 日間です。最大値です。 
     
-8. [ **保存**] を選びます。
+8. **[保存]** を選択します。
     
 

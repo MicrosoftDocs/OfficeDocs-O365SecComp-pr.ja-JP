@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 description: このトピックでは、ホストされた検疫についてのよく寄せられる質問 (FAQ) とその回答を紹介します。
-ms.openlocfilehash: cc8a05b575e17dbc71d4b9e214cb29a4cafe8b6b
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 1473e682faab0471f5a6356e8d54a65a9baf291a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003196"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792498"
 ---
 # <a name="quarantine-faq"></a>検疫に関する FAQ
 
@@ -50,7 +50,7 @@ A. のため、エンド ・ ユーザーのスパム検疫にアクセスする
   
  **Q. メッセージが検疫内に保存される期間はどのくらいですか。**
   
-A. 既定では、スパム検疫メッセージは 15 日間検疫に保存されますが、トランスポート ルールと一致した検疫メッセージは 7 日間検疫に保存されます。この期間が経過したら、メッセージは削除され、取得不能になります。トランスポート ルールと一致した検疫メッセージの保持期間は構成できません。ただし、スパム検疫メッセージの保持期間は、コンテンツ フィルター ポリシーの **[次の期間スパムを保持する (日)]** の設定によって短縮できます。詳細については、「 [スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
+A. 既定では、メッセージをスパム検疫は、検疫で 30 日間保存、トランスポート ルールに一致した検疫済みのメッセージ、検疫で 7 日間保存中に。この期間の後、メッセージは削除され、取得することはできません。トランスポート ルールに一致した検疫済みのメッセージの保存期間が設定可能ではありません。ただし、スパム検疫されたメッセージの保存期間は、 **(日単位) を保持するスパム**の設定、コンテンツ フィルター ポリシーを使用して低下することができます。詳細については、[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)を参照してください。
   
  **Q. 一度に複数の検疫メッセージを解放または報告できますか。**
   
