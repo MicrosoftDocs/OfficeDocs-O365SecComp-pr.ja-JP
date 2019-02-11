@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: アイテム保持ポリシーでは、コンテンツを保持するか、コンテンツを削除するか、またはコンテンツを保持して後に削除するかを事前に決定できます。さらに、1 つのポリシーを組織全体に適用するか、特定の場所やユーザーにのみ適用するか、すべてのコンテンツにポリシーを適用するか、特定の条件を満たしているコンテンツのみにポリシーを適用するかも事前に決定できます。
-ms.openlocfilehash: 61d5a79d46a35cf4a58fb3def8ae124f7025fd6d
-ms.sourcegitcommit: 71922c3e427008d904e5eb6c1a6dc7330e666c8c
+ms.openlocfilehash: 328d63265fdaa311b94c25902e7f380c9b0be89c
+ms.sourcegitcommit: c2ec9a4b0279a248b85c2e4a4e91458214b5b31c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690418"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "29770822"
 ---
 # <a name="overview-of-retention-policies"></a>アイテム保持ポリシーの概要
 
@@ -53,8 +53,6 @@ Office 365 のアイテム保持ポリシーは、これらすべての目標を
   
 ![セキュリティ/コンプライアンス センターの [保持] ページ](media/107fc33a-6a29-44d1-85e4-0efef0544147.png)
   
-> [!NOTE]
-> Exchange Online メールボックスをアイテム保持ポリシーに含めるには、そのメールボックスに Exchange Online プラン 2 ライセンスが割り当てられている必要があります。メールボックスに Exchange Online プラン 1 ライセンスが割り当てられている場合、そのメールボックスをアイテム保持ポリシーに含めるには、別の Exchange Online Archiving ライセンスを割り当てる必要があります。 
   
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>アイテム保持ポリシーは所定の場所にあるコンテンツに対してどのように作用するか
 
