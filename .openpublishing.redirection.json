@@ -84,6 +84,11 @@
         "source_path": "securitycompliance/frequently-asked-questions-about-mdm.md",
         "redirect_url": "https://support.office.com/article/3871f99c-c9db-4a23-86f9-902c1b02f58d", 
         "redirect_document_id": false
-    }                                                                     
+    },                     
+    { 
+        "source_path": "securitycompliance/choose-between-mdm-and-intune.md",
+        "redirect_url": "https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22", 
+        "redirect_document_id": false
+    }                                                                                    
   ] 
 }
