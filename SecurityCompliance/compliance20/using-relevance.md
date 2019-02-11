@@ -1,5 +1,5 @@
 ---
-title: 関連モジュールを使用して高度な電子的証拠開示 (プレビュー) でデータを分析するには
+title: 関連モジュールを使用して、高度な電子的証拠開示 (プレビュー) でデータを分析するには
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5e30a7f6919f50d2d73606fae3b53f21ef33e223
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 56e83a1f8a951fd6e14172122a5e86447c6f2ccf
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607999"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695173"
 ---
-# <a name="using-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>関連モジュールを使用して高度な電子的証拠開示 (プレビュー) でデータを分析するには
+# <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>関連モジュールを使用して、高度な電子的証拠開示 (プレビュー) でデータを分析するには
 
 高度な電子的証拠開示 (プレビュー)、関連性の高いモジュールには、関連性の高いトレーニングとサポート案件に関連するファイルの確認が含まれています。関連性の高いワークフローが表示され、次のように記載されています。
   

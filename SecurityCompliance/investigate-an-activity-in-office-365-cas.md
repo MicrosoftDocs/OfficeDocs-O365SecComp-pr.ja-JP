@@ -3,7 +3,7 @@ title: Office 365 Cloud App Security のアクティビティの調査
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 1/28/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 15fa4545-28b4-4dd4-bf85-88e0926bd5fc
 description: 'Office 365 のクラウド アプリケーションのセキュリティ、経由での検索について調査中の活動とアカウントで Office 365 環境内で起こってを確認できます。 '
-ms.openlocfilehash: d988a86c5ceaa2ec46bc27f1aaff540fa3e0b3b4
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: e463323cf28738e1d54fcdb65ed0d15290c79994
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014899"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603658"
 ---
 # <a name="investigate-an-activity-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security のアクティビティの調査
   
@@ -30,13 +30,9 @@ Office 365 クラウド アプリケーションのセキュリティは、 [Off
   
 ## <a name="how-to-get-to-the-activity-log-page"></a>アクティビティ ログのページを表示する方法
 
-1. グローバル管理者またはセキュリティ管理者に移動します。[https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用してサインインします。(を参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md).)
-    
-2. セキュリティで&amp;コンプライアンス センターでは、**アラート**を選択して\>**管理警告の詳細**です。
-    
-3. **Office 365 のクラウド アプリケーションのセキュリティ**を選択します。<br/>![セキュリティ&amp;コンプライアンス センターでは、Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+1. クラウド アプリケーションのセキュリティ関連ポータルに移動 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) し、サインインします。
   
-4. **調査**を選択して、画面の上部にナビゲーション ・ バーで\>**のアクティビティのログ**です。<br/>![O365 CA ポータルでは、調査を選択します。](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
+2. **調査**を選択して、画面の上部にナビゲーション ・ バーで\>**のアクティビティのログ**です。<br/>![O365 CA ポータルでは、調査を選択します。](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
 ## <a name="review-and-investigate-activities"></a>確認し、活動の調査
 
@@ -60,7 +56,7 @@ Office 365 クラウド アプリケーションのセキュリティは、 [Off
     
 途中と、Office 365 の組織内のユーザーの使用方法を習得するアクティビティのログ ページを発行する使用が発生する可能性があります。
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Office 365 Cloud App Security の警告の確認と処理](review-office-365-cas-alerts.md)
     

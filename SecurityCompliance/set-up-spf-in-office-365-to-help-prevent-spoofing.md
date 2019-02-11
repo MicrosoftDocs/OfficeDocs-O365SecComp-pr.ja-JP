@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 description: 概要:この記事では、Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。SPF を使うと、カスタム ドメインから送信される送信電子メールを検証できます。
-ms.openlocfilehash: 9c03f69cfd0c962214a3adc722690a4288940541
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 09adea835b793c638f50421a8f3970faefc5307e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002886"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "28326413"
 ---
 # <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>スプーフィングを防止するために Office 365 で SPF を設定する
 
@@ -39,7 +39,6 @@ ms.locfileid: "23002886"
 - DKIM と DMARC をセットアップする場合 (推奨)。
     
 ## <a name="updating-your-spf-txt-record-for-office-365"></a>Office 365 の SPF TXT レコードを更新する
-<a name="sectionSection0"> </a>
 
 DNS で TXT レコードを更新する前に、情報を収集し、レコード形式を判別する必要があります。これによって、DNS エラーの発生を防止できます。サポートされている SPF 構文の高度な例や詳細については、「[Office 365 において SPF がスプーフィングとフィッシングを防ぐしくみ](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)」をご覧ください。
   
@@ -81,19 +80,17 @@ DNS で TXT レコードを更新する前に、情報を収集し、レコー�
    v=spf1 include:spf.protection.outlook.de -all
   ```
 
-1.4 Office 365 で既に展開されて、カスタム ドメインの SPF TXT レコードを設定して、Office 365 のドイツに移行する場合、SPF TXT レコードを更新します。これを行うには、 **include:spf.protection.outlook.com**を**include.spf.protection.outlook.de**に変更します。
+1.4 Office 365 で既に展開されて、カスタム ドメインの SPF TXT レコードを設定して、Office 365 のドイツに移行する場合、SPF TXT レコードを更新します。これを行うには、 **include:spf.protection.outlook.com**を**include:spf.protection.outlook.de**に変更します。
     
-2. SPF TXT レコードを構成した後、DNS でレコードを更新する必要があります。1 つのドメインに配置できる SPF TXT レコードは 1 つのみです。SPF TXT レコードが存在する場合は、新しいレコードを追加するのではなく、既存のレコードを更新する必要があります。「[自分で DNS レコードを管理するときに Office 365 の DNS レコードを作成する](https://support.office.microsoft.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23)」にアクセスし、DNS ホストのリンクをクリックします (お使いの DNS ホストのリンクがこのページにない場合、[一般的な手順に従って](https://support.office.microsoft.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166)、レコードを追加したり、DNS ホストに関するサポートを利用したりできます)。 
+2. SPF TXT レコードが形成されて後、は、DNS 内のレコードを更新する必要があります。ドメインの SPF TXT レコードを 1 つだけ配置できます。SPF TXT レコードが存在する場合に、新しいレコードを追加する代わりに、既存のレコードを更新する必要があります。[Office 365 に作成する DNS レコード](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide)に移動し、DNS ホストのリンクをクリックしています。 
     
 3. SPF TXT レコードをテストします。
     
 ## <a name="more-information-about-spf"></a>SPF の詳細情報
-<a name="sectionSection1"> </a>
 
 サポートされている SPF 構文、スプーフィング、トラブルシューティング、Office 365 が SPF をサポートする方法の高度な例や詳細については、「[Office 365 において SPF がスプーフィングとフィッシングを防ぐしくみ](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)」をご覧ください。
   
 ## <a name="next-steps-after-you-set-up-spf-for-office-365"></a>次の手順：Office 365 の SPF のセットアップ後
-<a name="sectionSection2"> </a>
 
 SPF TXT レコードで問題が発生している場合「[トラブルシューティング:Office 365 における SPF のベスト プラクティス](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)」をお読みください。
   

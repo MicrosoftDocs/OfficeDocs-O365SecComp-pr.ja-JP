@@ -3,7 +3,7 @@ title: Office 365 Cloud App Security の概要
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 12/03/2018
+ms.date: 01/22/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Office 365 のクラウド アプリケーションのセキュリティを使用する可能性のある問題があると、必要な場合は、セキュリティ問題に対処するアクションを実行するような状況を調査することができますので、Office 365 で不審な動作を把握できます。 '
-ms.openlocfilehash: 62b1dc1d9285e60f30c1d5e541973640bb47ae35
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: edce16edca822bed30c78f34cf141b23f2b2fb8c
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014929"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29382550"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Office 365 Cloud App Security の概要
   
@@ -28,7 +28,7 @@ ms.locfileid: "28014929"
 |コースです!  <br/> [次の手順](get-ready-for-office-365-cas.md) <br/> |[計画の開始します。](get-ready-for-office-365-cas.md) <br/> |[展開を開始します。](turn-on-office-365-cas.md) <br/> |[使用します。](utilization-activities-for-ocas.md) <br/> |
    
 > [!NOTE]
-> Office 365 のクラウド アプリケーションのセキュリティは、Office 365 エンタープライズ E5 に使用できます。組織は、別の Office 365 エンタープライズ サブスクリプションで使用されている場合、Office 365 のクラウド アプリケーションのセキュリティがアドオンとして購入できます。(グローバル管理者は、Office 365 管理センターを選択して**請求** \> **サブスクリプションを追加**します)。詳細についてを参照してください[Office 365 のプラットフォーム サービスの説明: Office 365 のセキュリティ&amp;コンプライアンス センター](https://technet.microsoft.com/en-us/library/dn933793.aspx) [購入またはビジネスのための Office 365 のアドオンを編集](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)するとします。 
+> Office 365 のクラウド アプリケーションのセキュリティは、Office 365 エンタープライズ E5 に使用できます。組織は、別の Office 365 エンタープライズ サブスクリプションで使用されている場合、Office 365 のクラウド アプリケーションのセキュリティがアドオンとして購入できます。(グローバル管理者は、Office 365 管理センターを選択して**請求** \> **サブスクリプションを追加**します)。詳細についてを参照してください[Office 365 のプラットフォーム サービスの説明: Office 365 のセキュリティ&amp;コンプライアンス センター](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) [購入またはビジネスのための Office 365 のアドオンを編集](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on)するとします。 
   
 Office 365 のクラウド アプリケーションのセキュリティを使用する可能性のある問題があると、必要な場合は、セキュリティ問題に対処するアクションを実行するような状況を調査することができますので、Office 365 で不審な動作を把握できます。Office 365 のクラウド アプリケーションのセキュリティ、例外、または不審な活動に対してトリガーされたアラートの通知を受け取る、Office 365 の組織のデータがアクセス方法と使用方法、ユーザー アカウントが、不審なアクティビティが発生することを中断し、必要とするを参照してください。アラートがトリガーされた後、Office 365 アプリケーションに再度ログインするユーザーです。Office 365 のクラウド アプリケーションのセキュリティ機能と機能の概要を取得するには、この資料を参照してください。
   
@@ -36,13 +36,15 @@ Office 365 のクラウド アプリケーションのセキュリティを使�
 ## <a name="how-to-find-the-office-365-cloud-app-security-portal"></a>Office 365 のクラウド アプリケーションのセキュリティ関連ポータルを検索する方法
 
 > [!NOTE]
-> Office 365 のクラウド アプリケーションのセキュリティ関連ポータルにアクセスするには、グローバル管理者、セキュリティ管理者、またはセキュリティのリーダーが必要です。詳細についてを参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。 
+> Office 365 のクラウド アプリケーションのセキュリティ関連ポータルにアクセスするには、Office 365 のグローバル管理者、セキュリティ管理者、またはセキュリティのリーダーが必要です。詳細についてを参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。 
   
-Office 365 のセキュリティを通じて Office 365 のクラウド アプリケーションのセキュリティのポータルを表示する&amp;コンプライアンス センターです。これを行う方法の 1 つを以下に示します。
+Office 365 のクラウド アプリケーションのセキュリティ関連ポータルにアクセスできます[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)署名します。 
+
+取得することもありますから、Office 365 のセキュリティ&amp;コンプライアンス センターです。これを行う方法の 1 つを以下に示します。
   
-1. [https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用して Office 365 にサインインします。(これで、セキュリティには、&amp;コンプライアンス センター)。 
+1. [https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用して Office 365 にサインインします。(これで、セキュリティには、&amp;コンプライアンス センター)。
     
-2. セキュリティで&amp;コンプライアンス センターでは、**アラート**を選択して\>**管理警告の詳細**です。 <br/>![セキュリティ&amp;コンプライアンス センターでは、Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>(Office 365 のクラウド アプリケーションのセキュリティはまだ有効でない、グローバル管理者は、 [Office 365 のクラウド アプリケーションのセキュリティを有効にする](turn-on-office-365-cas.md)) 場合
+2. セキュリティで&amp;コンプライアンス センターでは、**アラート**を選択して\>**管理警告の詳細**です。 <br/>![Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>(Office 365 のクラウド アプリケーションのセキュリティはまだ有効でない、グローバル管理者は、 [Office 365 のクラウド アプリケーションのセキュリティを有効にする](turn-on-office-365-cas.md)) 場合
     
 3. **Office 365 のクラウド アプリケーションのセキュリティ**を選択します。 
     
@@ -116,7 +118,7 @@ Office 365 のクラウド アプリケーションのセキュリティ、許�
   
 [Office 365 Cloud App Security でアプリ検出結果を確認する](review-app-discovery-findings-in-ocas.md)
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Office 365 クラウド アプリケーション セキュリティの使用例と使用に関するガイド](https://aka.ms/O365CASGuide)
     

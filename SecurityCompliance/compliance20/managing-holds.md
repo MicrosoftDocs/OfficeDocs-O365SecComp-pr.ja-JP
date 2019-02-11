@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 861b8fb8c0595f4ede0327d7426650d21046eba3
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 476ea80e61b5354c53368613e29a79c55a50276f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608045"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695183"
 ---
-# <a name="managing-holds-in-advanced-ediscovery-preview"></a>高度な電子的証拠開示 (プレビュー) での保留リストを管理します。
+# <a name="manage-holds-in-advanced-ediscovery-preview"></a>高度な電子的証拠開示 (プレビュー) での保留リストを管理します。
 
 サポート ・ リクエストに関連する可能性のあるコンテンツを保持するために保留リストを作成するのには、高度な電子的証拠開示 (プレビュー) 大文字と小文字を使用できます。保持機能の高度な電子的証拠開示 (プレビュー) を使用して、保留リストを配置することが通告され、そのデータ ソースにします。さらに、ビジネス サイトのメールボックスや OneDrive で非信託保留リストに配置できます。Office 365 のグループのグループのメールボックス、SharePoint サイト、および OneDrive のビジネス サイトの保留を配置することもできます。同様に、メールボックスとマイクロソフトのチームに関連付けられているサイトで保留リストに配置できます。保留中のコンテンツの場所を配置すると、コンテンツは、書を解放または、特定のデータの場所を削除する保持ポリシーを完全に削除を実行するまで保持されます。
 

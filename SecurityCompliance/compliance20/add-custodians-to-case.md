@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d9a7dc6b1c2eeffdcd49be64d1d09d4a2bda782b
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 88d2e64f4e1fb519955d8970b34e9670fb18d3f8
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608033"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706108"
 ---
-# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>高度な電子情報開示 (プレビュー) に通告を追加する場合
+# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>通告を高度な電子的証拠開示 (プレビュー) の場合に追加します。
 
 高度な電子的証拠開示 (プレビュー) を使用すると、通告を管理すると、ケース内の関連する、信託のデータ ソースを識別する、ワークフローを調整するための組み込みの管理者の管理ツールを活用できます。保管担当者を追加して、システムが自動的に識別できる、ビジネス サイトのプライマリ Exchange メールボックスと OneDrive の場所が保持しています。探索を実行しながら、明らかと追加のメールボックスまたは、管理者アクセスを過去のチームに、管理者は、今日のメンバーであるサイト マップも可能性があります。
 

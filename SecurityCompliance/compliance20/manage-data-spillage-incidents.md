@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: データこぼしたのインシデントを管理するために Office 365 のセキュリティ & コンプライアンス センター内の新しいデータ調査 (プレビュー) ツールを使用してこの資料で説明します。
-ms.openlocfilehash: d863d87cc667b9695f9bf619c35575715dfa144e
-ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
+ms.openlocfilehash: d7adc17d01a0ae2ad6b7bfb7052862a5a6419882
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29636630"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706178"
 ---
-# <a name="managing-a-data-spillage-incident-in-microsoft-365"></a>Microsoft 365 のデータのこぼしたインシデントを管理します。 
+# <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Microsoft 365 のデータのこぼしたインシデントを管理します。 
 
 こぼしたのデータは、機密性の高いドキュメントが信頼されていない環境にリリースされたときです。データこぼしたのインシデントが検出されると、することが重要、こぼしたの場所とサイズを迅速に評価、囲み、ユーザー アクティビティを確認してシステムからこぼれたデータを完全に削除します。
 
@@ -51,7 +51,7 @@ ms.locfileid: "29636630"
 5.  閉じるか、調査を削除します。
 
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - Office 365 のセキュリティ & コンプライアンス センターで作成調査、こぼれたデータを検索し、レビュー、分析するデータの調査 (プレビュー) ツールを使用します。Office 365 からこぼれたデータを完全に削除するのにセキュリティ & コンプライアンス センター PowerShell を使用します。 
 
@@ -111,8 +111,8 @@ ms.locfileid: "29636630"
 
 ドキュメントをグループ化し、確認のための複数の支援を受け、**インシデントの管理**] をクリックします。**分析**] タイルで [**分析**を] をクリックします。重複データ検出、電子メールのスレッド、およびテーマの分析などの高度な分析が実行されます。詳細についてを参照してください。
 
-- [重複データ検出の近く](near-duplicates.md)
-- [電子メールのスレッド](email-threading.md)
+- [準重複の検出](near-duplicates.md)
+- [電子メールのスレッド化](email-threading.md)
 - [テーマ](themes.md)
 
 データこぼしたに関連するユーザーを確認するのには、事故で新しいクエリを作成し、送信者または作成者と受信者の条件を使用してできます。これにより、すべての送信者、受信者、およびインシデントに追加されたデータの収集については、著者のリストが作成されます。必ず一覧に外部ユーザーがあるかどうかを判断するのには一覧を確認してください。詳細については、[検索条件](../keyword-queries-and-search-conditions.md#search-conditions)を参照してください。
@@ -130,7 +130,7 @@ ms.locfileid: "29636630"
 
 ### <a name="deleting-site-items"></a>サイトのアイテムを削除します。
 
-ビジネス アカウントの OneDrive または SharePoint サイトからドキュメントを完全に削除、それを削除する必要しする必要があるサイトから削除し、サイト コレクションのごみ箱から削除します。手順については、 [SharePoint と OneDrive を削除するドキュメント](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#deleting-documents-in-sharepoint-online-and-onedrive-for-business)を参照してください。
+ビジネス アカウントの OneDrive または SharePoint サイトからドキュメントを完全に削除、それを削除する必要しする必要があるサイトから削除し、サイト コレクションのごみ箱から削除します。手順については、 [SharePoint と OneDrive のドキュメントを削除する](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#deleting-documents-in-sharepoint-online-and-onedrive-for-business)を参照してください。
 
 また、こぼれたデータが含まれている可能性がありますが、全体のサイト コレクションを削除できます。手順については、[サイト コレクションを削除する](https://docs.microsoft.com/sharepoint/delete-site-collection)を参照してください。
 
@@ -141,6 +141,7 @@ ms.locfileid: "29636630"
 調査を削除します。
 
 1. [**設定**] タブには、**調査情報**をクリックします。
+
 2. **サポート案件を削除**] をクリックします。 
 
 調査を削除する必要はありませんを調査中に収集した情報を保存する場合や、**ケースのクローズ**をクリックすることができます。後で、開くことができます再調査を終了します。

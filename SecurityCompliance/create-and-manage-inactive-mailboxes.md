@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: 保留または Office 365 のリテンション ・ ポリシーをメールボックスに適用して、対応する Office 365 ユーザー アカウントを削除し、Office 365 で、非アクティブなメールボックスを作成できます。適用されて非アクティブにされる前に、保留中または保存ポリシーの期間中、非アクティブなメールボックス内のアイテムが保持されます。非アクティブなメールボックスを完全に削除するには、だけで、保留中または保持ポリシーを削除します。
-ms.openlocfilehash: ed0af9077222d9151dc41010bca10590769118b1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: de67068ded30f63e46a8a94c1030d45a12b56a2e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531923"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29740839"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>作成し、Office 365 の非アクティブなメールボックスの管理
 
@@ -28,7 +28,7 @@ Office 365 では、削除済みメールボックスの内容を保持できま
 > [!NOTE]
 > 2017 年 7 月 1 日に終了する予定だった、メールボックスを非アクティブにするために新しいインプレース ホールドを作成できる期間を延長しました。しかし、今年の終わりごろまたは来年の初めごろには、新しいインプレース ホールドを Exchange Online 内で作成することはできなくなります。その時点で、非アクティブのメールボックスを作成するために使用できるのは、訴訟ホールドと Office 365 アイテム保持ポリシーだけになります。ただし、インプレース ホールドにある既存の非アクティブなメールボックスは引き続きサポートされます。また、引き続き非アクティブなメールボックスのインプレース ホールドを管理することができます。これには、インプレース ホールドの期間を変更すること、およびそのインプレース ホールドを削除することによって非アクティブなメールボックスを完全に削除することが含まれます。 
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - メールボックスを非アクティブにするに割り当てる必要があります Exchange オンライン計画 2 ライセンス、証拠保全、または Office 365 のリテンション ・ ポリシーに適用する、メールボックスが削除される前にできるようにします。Exchange オンライン計画 2 ライセンスは、Office 365 エンタープライズ E3、E5 のサブスクリプションの一部です。メールボックスが、Exchange のオンライン計画 1 ライセンス (Office 365 のエンタープライズ E1 サブスクリプションの一部である) を割り当てられている場合は、割り当てる Exchange Online Archiving の個別のライセンスが削除される前に、メールボックスに保留を適用できるようにする必要があります。詳細については、 [Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153)を参照してください。
     
@@ -122,8 +122,6 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
 ## <a name="recover-an-inactive-mailbox"></a>非アクティブなメールボックスを回復する
 
 組織では、元従業員が返された場合、またはゲーム終了者の従業員の業務上の責任で実行する新しい従業員が採用された場合は、非アクティブなメールボックスの内容を回復できます。アクティブでないメールボックスをリカバリする場合は、メールボックスを新しいメールボックスに変換され、内容と非アクティブなメールボックスのフォルダー構造は保持されますが、メールボックスを新しいユーザー アカウントにリンクします。を修復した後、非アクティブなメールボックスは存在しません。詳細な手順と詳細については、非アクティブなメールボックスを回復するときの動作、 [Office 365 で、非アクティブなメールボックスのリカバリ](recover-an-inactive-mailbox.md)を参照してください。
-  
-[非アクティブなメールボックスを管理する](create-and-manage-inactive-mailboxes.md#manageinactivemailboxes)
   
 ## <a name="restore-the-contents-of-an-inactive-mailbox-to-another-mailbox"></a>非アクティブなメールボックスのコンテンツを別のメールボックスに復元する
 

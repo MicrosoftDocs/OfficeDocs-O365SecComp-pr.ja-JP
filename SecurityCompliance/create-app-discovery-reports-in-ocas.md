@@ -3,7 +3,7 @@ title: Office 365 Cloud App Security を使用して app discovery レポート�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 1/28/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3e68e691-1fc4-4d3e-a2c0-d3134eb64055
 description: Office 365 クラウド アプリケーションのセキュリティを使用すると、Office 365 とその他のアプリケーションに、組織内のユーザーを使用する方法を理解するには、レポートを作成します。
-ms.openlocfilehash: 6842912f42072e21608955bde5250f0774c7bba4
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 543a194ec9d441a4feea97b8ad49022094565d7a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014870"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603718"
 ---
 # <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>Office 365 Cloud App Security を使用して app discovery レポートを作成する
 
@@ -44,30 +44,19 @@ Office 365 のクラウド アプリケーションのセキュリティは、�
   
 1. お客様の[web トラフィックのログ、および Office 365 のクラウド アプリケーションのセキュリティのデータ ソース](web-traffic-logs-and-data-sources-for-ocas.md)を収集します。
     
-2. [https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用してサインインします。 
-    
-3. セキュリティで&amp;コンプライアンス センターでは、**アラート**を選択して\>**管理警告の詳細**です。
-    
-4. **Office 365 のクラウド アプリケーションのセキュリティ**を選択します。
-    
-5. **検出**を選択して\>**新しいレポートを作成**します。
-    
-    ![Office 365 CA ポータルでは、検出を選択します](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)
+2. クラウド アプリケーションのセキュリティ関連ポータルに移動 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) し、サインインします。 
+       
+3. **検出**を選択して\>**新しいレポートを作成**します。 <br>![Office 365 CA ポータルでは、検出を選択します](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)<br>
   
-6. 名と、レポートの説明を指定し、[**データ ソース**] ボックスの一覧で、web トラフィックのログのデータ ソースを選択します。 
-    
-    ![O365 の CA で、検出を選択します\>新しいレポートを作成します。](media/22e660f0-5eb2-49fa-9fea-f88a5809a07b.png)
+4. 名と、レポートの説明を指定し、[**データ ソース**] ボックスの一覧で、web トラフィックのログのデータ ソースを選択します。 <br>![O365 の CA で、検出を選択します\>新しいレポートを作成します。](media/22e660f0-5eb2-49fa-9fea-f88a5809a07b.png)<br>使用するにはデータ ソースが一覧にない場合は、追加することを要求できます。[**その他**の**データ ソース**、およびアップロードしようとしているデータ ソースの名前を入力します。ログを確認、それを生成するデータ ソースのサポートを追加したことを確認でき、します。 
   
-    > [!NOTE]
-    > 使用するにはデータ ソースが一覧にない場合は、追加することを要求できます。[**その他**の**データ ソース**、およびアップロードしようとしているデータ ソースの名前を入力します。ログを確認、それを生成するデータ ソースのサポートを追加したことを確認でき、します。 
-  
-7. 収集したログ ファイルの場所を参照し、ファイルを選択します。ログ ファイルは、レポート用に選択したデータ ソースで生成されている必要があります。
+5. 収集したログ ファイルの場所を参照し、ファイルを選択します。ログ ファイルは、レポート用に選択したデータ ソースで生成されている必要があります。
     
-8. レポート作成プロセスを開始する**を作成する**] をクリックします。 
+6. レポート作成プロセスを開始する**を作成する**] をクリックします。 
     
-9. レポートのステータスを表示するには、**レポートのスナップショットの管理**をクリックします。レポートの準備ができたら、[**レポートの表示**] オプションが表示されます。 
+7. レポートのステータスを表示するには、**レポートのスナップショットの管理**をクリックします。レポートの準備ができたら、[**レポートの表示**] オプションが表示されます。 
     
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [確認し、アラート アクションを実行](review-office-365-cas-alerts.md)
     

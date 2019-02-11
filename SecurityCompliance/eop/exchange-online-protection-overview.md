@@ -1,9 +1,9 @@
 ---
 title: Exchange Online Protection の概要
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyp
 manager: laurawi
-ms.date: 12/9/2016
+ms.date: 01/31/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: マイクロソフト Exchange Online Protection (EOP) は、クラウドベースの電子メール フィルタリング サービスであり、スパムやマルウェアから組織を保護するのに役立ち、メッセージング ポリシー違反から組織を保護する機能が含まれています。
-ms.openlocfilehash: 89852c7ba211ccb266c8b231b00d3d83987a5f20
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 16f2f423b6e517cf204e4b4f6a2949baebfd6223
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026694"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686366"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection の概要
 
@@ -44,11 +44,16 @@ EOP は、最良の可用性を提供するために設計された複数のデ�
   
 EOP はデータセンター間の負荷分散を実行しますが、1 つの地域内でのみ行います。1 つの地域でサービスが提供されている場合は、すべてのメッセージがその地域のメール ルーティングを使用して処理されます。EOP データセンターの地域メール ルーティングの動作を以下に示します。
   
-- アメリカでのすべて Exchange Online のメールボックス内にある南アメリカ以外の米国のデータ センターでブラジルとチリのデータ センターが使用されているとカナダではカナダのデータ センターが使用されています。EOP フィルタ リングの米国のデータ センター経由で、南アメリカとカナダでは、お客様のメッセージを含むすべての電子メール メッセージただし、テナントが格納されているデータ センターで quaratined の電子メールが格納されている.
     
 - ヨーロッパ、中東、およびアフリカ (EMEA) では、すべての Exchange Online メールボックスが EMEA データセンターに配置され、すべてのメッセージが EOP フィルター処理のために EMEA データセンター経由でルーティングされます。
     
-- アジア太平洋 (APAC) では、すべての Exchange Online メールボックスが APAC データセンターに配置されていますが、現在のところ、メッセージは EOP フィルター処理のために EMEA データセンター経由でルーティングされています。ただし、2014 年第 4 四半期に、EOP フィルター処理のために APAC データセンター経由でメッセージがルーティングされるように変更される予定です。
+- アジア太平洋地域 (APAC) では、APAC のデータ センターにあるすべての Exchange Online のメールボックスが、EOP のフィルタ リングの APAC のデータ センターを通じてメッセージがルーティングされる現在。
+=======
+- 南北アメリカでは、Exchange Online のすべてのメールボックスは南米のブラジルとチリでのデータ センターが使用されている場合を除き、カナダではカナダのデータ センターが使用されている米国のデータ センターに配置されます。EOP フィルタ リング用のローカル データ センター経由で、南アメリカとカナダでは、お客様のメッセージを含むすべての電子メール メッセージquaratined メールは、テナントが格納されているデータ センターに格納されます。
+    
+- ヨーロッパ、中東、およびアフリカ (EMEA) では、すべての Exchange Online メールボックスが EMEA データセンターに配置され、すべてのメッセージが EOP フィルター処理のために EMEA データセンター経由でルーティングされます。
+    
+- アジア太平洋地域 (APAC)、APAC のデータ センターにあるすべての Exchange Online のメールボックスおよびメッセージ現在経由 EOP のフィルタ リングの APAC のデータ センターです。
     
 - Government Community Cloud (GCC) では、すべての Exchange Online メールボックスが米国データセンターに配置され、すべてのメッセージが EOP フィルター処理のために米国データセンター経由でルーティングされます。
     

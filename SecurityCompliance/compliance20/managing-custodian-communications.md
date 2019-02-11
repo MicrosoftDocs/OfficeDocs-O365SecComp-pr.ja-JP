@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b27d6cca0382b18123cae4106f77ce0dcdf5e525
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 962bd13f66ec8fe4f3385656f1241dd5fb5c4dcf
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608067"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695043"
 ---
-# <a name="working-with-communications-in-advanced-ediscovery-preview"></a>通信の高度な電子的証拠開示 (プレビュー) を使用します。
+# <a name="work-with-communications-in-advanced-ediscovery-preview"></a>通信の高度な電子的証拠開示 (プレビュー) を使用します。
 
 高度な電子的証拠開示 (プレビュー) には、追跡し、法的保持義務通告の配布のプロセスを簡略化するのには法務部門が使用できます。保管担当者の通信機能では、法律の部門を管理し、通知、アラーム、およびエスカレーション - すべて 1 つの場所にから--の全体の法的保持義務プロセスを自動化するを使用できます。
 

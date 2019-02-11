@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 description: Exchange Online Protection では、受信電子メール メッセージをスキャンするときに、 **X-Forefront-Antispam-Report** ヘッダーをそれぞれのメッセージに挿入します。
-ms.openlocfilehash: d887fea94bac6177dde69fac9586d7d562ef50de
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+ms.openlocfilehash: 5632aa28a0d23186e6a36fdf63f7968322c93e39
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614461"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686447"
 ---
 # <a name="anti-spam-message-headers"></a>スパム対策メッセージ ヘッダー
 
@@ -38,7 +38,7 @@ Exchange Online Protection では、受信電子メール メッセージをス�
 |CTRY|サービスに接続されたメッセージの発信国。これは、接続先 IP アドレスから特定されます。そのため、発信元の送信先 IP アドレスとは異なる可能性があります。|
 |LANG|メッセージが作成された言語であり、国番号 (たとえば、ロシア語は ru_RU) で指定されます。|
 |SCL|メッセージの Spam Confidence Level (SCL) 値。これらの値の解釈方法については、「[Spam Confidence Level](spam-confidence-levels.md)」を参照してください。  |
-|PCL|メッセージの Phishing Confidence Level (PCL) 値。PCL 値の詳細については、「[PCL](anti-spam-message-headers.md#PCL)」を参照してください。  |
+|PCL|メッセージの Phishing Confidence Level (PCL) 値。 |
 |SRV:BULK|メッセージが一括電子メール メッセージとして識別されました。 **[バルクメール メッセージをすべてブロックする]** 詳細スパム フィルター オプションが有効になっている場合、このメッセージがスパムとしてマークされます。このオプションが有効になっていない場合は、残りのフィルター処理ルールでそのメッセージがスパンであると判断された場合にのみスパムとしてマークされます。  |
 |SFV:SFE|メッセージが個人の差出人セーフ リスト上のアドレスから送信されているため、フィルター処理が省略され、メッセージはそのまま配信されました。|
 |SFV:BLK|メッセージが個人の受信拒否リスト上のアドレスから送信されているため、フィルター処理が省略され、メッセージはブロックされました。  <br/> **ヒント**: エンド ・ ユーザーが安全でブロックされている送信者リストを作成する方法の詳細についてを参照してください[ブロック (迷惑メールの設定) を許可する、または](https://go.microsoft.com/fwlink/p/?LinkId=294862)(Outlook web 上) と[迷惑メール フィルターの概要](https://go.microsoft.com/fwlink/p/?LinkId=270065)(Outlook)。|

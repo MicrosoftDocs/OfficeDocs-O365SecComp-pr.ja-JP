@@ -1,5 +1,5 @@
 ---
-title: 通信を管理します。
+title: 保留通知を管理する
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7189680f1ec022ae76e8003c7e6660a8da7c5906
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 38db73000e84db0bbdcac7710ef71431666a5494
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608089"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706048"
 ---
-# <a name="manage-communications"></a>通信を管理します。
+# <a name="manage-hold-notifications"></a>保留通知を管理する
 
 起動した後は、法的通知ワークフローを保持する、高度な電子的証拠開示、通信の状態を追跡するには、(プレビュー) を活用することができます。[通信] タブでは、すべての保留通知、高度な電子的証拠開示 (プレビュー) ケース内で示しています。ここでは、割り当てられているか、確認したことを認識する通告の数などの詳細を表示できます。
 
@@ -71,6 +71,8 @@ ms.locfileid: "29608089"
 
 ## <a name="related-information"></a>関連情報 
 
-    - [保留中の法的な通知を作成する](~ SecurityCompliance\compliance20\create-hold-notification.md)
-    - [保留中の法的な通知を承認する](~/acknowledge-hold-notification.md)
-    - [サポート案件に通告を追加する]
+- [法的保持義務通告を作成します。](create-hold-notification.md)
+    
+- [保留通知を確認する](acknowledge-hold-notification.md)
+    
+- [ケースにカストディアンを追加する](add-custodians-to-case.md)

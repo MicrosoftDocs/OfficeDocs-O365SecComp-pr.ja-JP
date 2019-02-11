@@ -3,6 +3,7 @@ title: Office 365 のクラウド アプリケーションのセキュリティ�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 12/03/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ade98409-a15e-4de3-8c06-8e748f5b7e96
 description: Office 365 のクラウド アプリケーションのセキュリティと呼ばれるようになりました、Office 365 で、高度なセキュリティ管理のヘルプ コンテンツを検索します。
-ms.openlocfilehash: d38b12afe50ac56b3047b24d68c9c00d3bcbf602
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 45f45812251d17a7a58d8c5f6cbd23d27407daf1
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706271"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27131837"
 ---
 # <a name="office-365-cloud-app-security-help-and-how-to"></a>Office 365 のクラウド アプリケーションのセキュリティのヘルプと使い方
   
@@ -35,11 +36,11 @@ Office 365 のクラウド アプリケーションのセキュリティ、グ�
 |ポリシーおよび組織のアラートを設定します。  <br/> |[Office 365 Cloud App Security のアクティビティ ポリシーと警告](activity-policies-and-alerts.md) <br/> [Office 365 のクラウド アプリケーションのセキュリティでの異常検出のポリシー](anomaly-detection-policies-in-ocas.md)(新しく更新!)  <br/> [Office 365 のクラウド アプリケーションのセキュリティと SIEM の統合](integrate-your-siem-server-with-office-365-cas.md) <br/> [Office 365 のクラウド アプリケーションのセキュリティのセキュリティ ポリシーの参照情報](security-policy-reference-information-for-ocas.md) <br/> |
 |Office 365 のクラウド アプリケーションのセキュリティの設定を微調整します。  <br/> |[IP アドレスをグループ化して Office 365 Cloud App Security の管理を簡素化する](group-your-ip-addresses-in-ocas.md) <br/> [Office 365 Cloud App Security 展開後の利用に関する作業](utilization-activities-for-ocas.md) <br/> |
 |活動を調査し、アクションを実行  <br/> |[Office 365 のクラウド アプリケーションのセキュリティの警告を確認して処理](review-office-365-cas-alerts.md) <br/> [Office 365 Cloud App Security のアクティビティの調査](investigate-an-activity-in-office-365-cas.md) <br/> [Office 365 Cloud App Security でユーザー アカウントを停止または復元する](suspend-or-restore-an-account-in-ocas.md) <br/> |
-|Office 365 のサード ・ パーティ製のアプリケーションを管理します。  <br/> |[Office 365 Cloud App Security を使用してアプリのアクセス許可を管理する](manage-app-permissions-in-ocas.md) <br/> |
+|Office 365 のサード ・ パーティ製のアプリケーションを管理します。  <br/> |[Office 365 Cloud App Security を使用して OAuth アプリを管理する](manage-app-permissions-in-ocas.md) <br/> |
 |作成し、アプリケーションの検出レポートの表示  <br/> |[Office 365 Cloud App Security の Web トラフィック ログとデータ ソース](web-traffic-logs-and-data-sources-for-ocas.md) <br/> [Office 365 のクラウド アプリケーションのセキュリティでのアプリケーション検出レポートを作成します。](create-app-discovery-reports-in-ocas.md) <br/> [Office 365 のクラウド アプリケーションのセキュリティでアプリケーションの検出調査結果のレビュー](review-app-discovery-findings-in-ocas.md)(新しく更新!)  <br/> |
 |Office 365 のクラウド アプリケーションのセキュリティの新機能で、ループ内に  <br/> |[Office 365 Cloud App Security の新機能](new-in-office-365-cas.md) <br/> |
    
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Office 365 Cloud App Security の概要](office-365-cas-overview.md)
     

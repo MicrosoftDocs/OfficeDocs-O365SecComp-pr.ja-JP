@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 概要:この記事では、Office 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージを送信先のメール システムが信頼するようにする方法を説明します。
-ms.openlocfilehash: b5b28bef60148749e3ea6ac2619358fbc425e36c
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+ms.openlocfilehash: 080d873c91c2dfb5910588113f2a6709b3ee9ab4
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614451"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696334"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>DKIM を使用して、Office 365 のカスタム ドメインから送信される送信電子メールを検証する
 
@@ -88,9 +88,7 @@ DNS の DKIM 署名を追加する各ドメインに対して、2 つの CNAME �
 CNAME レコードの次の形式を使用します。
 
 > [!IMPORTANT]
-> GCC の高いお客様のいずれかの場合は、計算_domainGuid_とは異なる。_DomainGuid_を計算するのには、 _initialDomain_の MX レコードを検索すると、代わりに代わりに自動的に計算される、カスタマイズされたドメインから直接。たとえば、カスタマイズされたドメインは、"contoso.com という"、domainGuid"contoso com"になります、任意の期間は、ダッシュに置き換えられます。
-
-したがって、どのような MX レコードとは無関係に、initialDomain のポイントには、常を使用します上記の方法で CNAME レコードを使用するのに domainGuid を計算します。
+> GCC の高いお客様のいずれかの場合は、計算_domainGuid_とは異なる。_DomainGuid_を計算するのには、 _initialDomain_の MX レコードを検索すると、代わりに代わりに自動的に計算される、カスタマイズされたドメインから直接。たとえば、カスタマイズされたドメインは、"contoso.com という"、domainGuid"contoso com"になります、任意の期間は、ダッシュに置き換えられます。したがって、どのような MX レコードとは無関係に、initialDomain のポイントには、常を使用します上記の方法で CNAME レコードを使用するのに domainGuid を計算します。
 
   
 ```

@@ -13,17 +13,15 @@ ms.service: o365-solutions
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.custom: ''
-ms.assetid: ''
 description: 認識し、Office 365 のインジェクション攻撃をカスタム フォームと Outlook の仕訳ルールを修正する方法を学習します。
-ms.openlocfilehash: 893ade67976d7e6d1442a23f1f61948cea591dad
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1067d7c791217c146fedea839754e45f76ef5d8e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531825"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603758"
 ---
-# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Office 365 で Outlook のルールと ユーザー設定フォーム インジェクション攻撃の検出と修復を行う
+# <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Office 365 で Outlook のルールとカスタム フォーム インジェクション攻撃の検出と修復を行う
 
 **概要**認識し、Outlook の仕訳ルールと Office 365 のユーザー設定のフォーム インジェクション攻撃に対処する方法を説明します。
 
@@ -175,13 +173,13 @@ EnableUnsafeClientMailRules のキーを探します。1 に設定されて場�
 
 オンプレミスの Exchange のインストールでは、パッチが利用可能ではありませんが、Outlook の古いバージョンのブロックを検討してください。このプロセスの詳細については、[ブロックを構成する Outlook クライアント](https://technet.microsoft.com/en-us/library/dd335207(v=exchg.150).aspx)の資料にはあります。
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Pro の cybersecurity のように Office 365 をセキュリティで保護します。
-Office 365 サブスクリプションのデータとユーザーを保護するために使用できるセキュリティ機能の強力なセットが付属します。 使用、 [Office 365 のセキュリティ ロードマップ: 最初の 30 日、90 日間での内外の優先順位のトップ](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)マイクロソフトが推奨する、Office 365 テナントのセキュリティに関するベスト プラクティスを実装します。
-- 最初の 30 日以内に実行するタスクです。 即座に影響があり、影響の少ないのはこれらのユーザーにします。
-- 90 日以内に実行するタスクです。これらにより、計画し実装しますが、セキュリティ体制を大幅に改善するに少し時間がかかります。
-- 90 日が経過します。これらの拡張機能は、最初の 90 日間の作業でビルドします。
+## <a name="secure-office-365-like-a-cybersecurity-pro"></a>cybersecurity pro などの Office 365 の保護
+Office 365 サブスクリプションには、データとユーザーを保護するために使用可能な強力なセキュリティ機能のセットが付属しています。「[Office 365 のセキュリティ ロードマップ: 最初の 30 日間、90 日間、およびそれ以後の優先事項](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)」を使用して、Office 365 テナントをセキュリティで保護するためのマイクロソフト推奨ベスト プラクティスを実践します。
+- 最初の 30 日間で完了すべき作業。すぐにユーザーに影響しますが、それほど大きな影響ではありません。
+- 最初の 90 日間で完了すべき作業。作業の計画と実装に少し時間がかかりますが、セキュリティ体制は大幅に向上します。
+- 90 日以降。最初の 90 日間の作業で保護が強化されます。
 
-## <a name="see-also"></a>参照してください。
+## <a name="see-also"></a>関連項目:
 - SilentBreak セキュリティの投稿ルールのベクトルは、 [Outlook の仕訳ルールを悪意のある](https://silentbreaksecurity.com/malicious-outlook-rules/)方法の詳細なレビューを提供する Outlook の仕訳ルールです。 
 - Mailrule Pwnage の Sensepost のブログ上の[MAPI over HTTP や Mailrule の Pwnage](https://sensepost.com/blog/2016/mapi-over-http-and-mailrule-pwnage/)は、メールボックスを Outlook の仕訳ルールを悪用できるルーラーと呼ばれるツールについて説明します。
 - [Outlook のフォーム、およびシェル](https://sensepost.com/blog/2017/outlook-forms-and-shells/)フォーム脅威のベクトルに関する Sensepost のブログです。 

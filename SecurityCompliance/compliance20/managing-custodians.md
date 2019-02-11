@@ -1,5 +1,5 @@
 ---
-title: 通告で高度な電子的証拠開示 (プレビュー) を使用します。
+title: 高度な電子的証拠開示 (プレビュー) の通告を使用します。
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5f29ef72ed885ab268292667e6e5fd2f53c4d15a
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 4dd2c44b40b5d458f9b200c249fe2f9bb16f83e0
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608046"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706018"
 ---
-# <a name="working-with-custodians-in-advanced-ediscovery-preview"></a>通告で高度な電子的証拠開示 (プレビュー) を使用します。
+# <a name="work-with-custodians-in-advanced-ediscovery-preview"></a>高度な電子的証拠開示 (プレビュー) の通告を使用します。
 
 多くの場合、組織は、法的調査に対応して、収集、保存、識別するが、該当するコンテンツの周囲のワークフローは、組織内のユーザーまたはデータの通告を基づいています。電子的証拠開示、個人データの通告といいます」担当者がドキュメントまたは電子ファイルの管理制御を持つ"として定義されます。たとえば、電子メールのデータ管理者には、関連するメッセージが含まれているメールボックスの所有者ができます。  
 
@@ -31,11 +31,11 @@ ms.locfileid: "29608046"
 
 通告の操作に関する詳細については、以下の資料を参照してください。 
 
-- [通告をケースに追加します。](add-custodians-to-case.md)
+- [ケースにカストディアンを追加する](add-custodians-to-case.md)
 
 - [場合に通告を管理します。](manage-new-custodians.md)
 
-- [管理者アクティビティを表示します。](view-custodian-activity.md)
+- [カストディアンのアクティビティを表示する](view-custodian-activity.md)
 
 ## <a name="roles-and-permissions"></a>ロールと権限
 

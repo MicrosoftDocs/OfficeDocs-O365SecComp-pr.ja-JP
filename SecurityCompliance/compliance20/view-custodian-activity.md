@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8219ae8a061f6d08dd37da5b7f2974dd86c68f04
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 34e3fe207cf440c5992cdba7186e919a3968db22
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608002"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706148"
 ---
-# <a name="viewing-custodian-audit-activity"></a>管理者の監査活動を表示します。
+# <a name="view-custodian-audit-activity"></a>管理者監査活動状況の表示
 
 ユーザーが特定のドキュメントを表示またはユーザーのメールボックスからアイテムを削除するかどうかを検索する必要がありますか。セキュリティ & コンプライアンス センターの既存の監査ログ検索ツールとは、高度な電子的証拠開示 (プレビュー) が統合されています。この埋め込まれた経験を使用すると、高度な電子的証拠開示 (プレビュー) の管理者の管理ツールを使用して、簡単にアクセスして通告、ケース内のアクティビティを検索して、調査を容易にします。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 監査ログの参照、または監査ログの役割を割り当てる Exchange オンライン Office 365 の監査ログを検索する必要があります。既定では、これらの役割は、コンプライアンスの管理と Exchange 管理センターで [アクセス許可] ページで、組織の管理役割グループに割り当てられます。ユーザーに提供するには、高度な電子的証拠開示 (プレビュー) 監査ログは、最小レベルの権限を検索する機能を Exchange オンラインでカスタムの役割グループを作成、監査ログの参照、または監査ログの役割を追加して新しい役割の gr のメンバーとしてユーザーを追加oup。詳細については、Exchange Online のロール グループの管理を参照してください。
 
@@ -101,8 +101,4 @@ ms.locfileid: "29608002"
 
 3. エクスポート オプションを選択すると、CSV ファイルを開く、フォルダーに保存して、ダウンロード、または特定のフォルダーに保存するように要求するウィンドウの下部にあるメッセージが表示されます。
 
-[!NOTE] 
- 表示、フィルター処理、または監査ログの検索結果のエクスポートの詳細についてを参照してください。
-   - 監査対象のアクティビティの一覧を表示 
-   - 統一された監査ログを開始する前に:
- 
+表示の詳細については、フィルタ リング、または監査ログの検索結果をエクスポートするには[Office 365 のセキュリティ & コンプライアンス センターでの監査ログの検索](../search-the-audit-log-in-security-and-compliance.md)を参照してください。

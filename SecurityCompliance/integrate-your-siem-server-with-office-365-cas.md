@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: SIEM サーバーは、Office 365 のクラウド アプリケーションのセキュリティと統合できます。仕組みと、それを設定する方法の概要を取得するには、この資料を参照してください。
-ms.openlocfilehash: 3cdae0389065b18da090139528eceefb007363fa
-ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
+ms.openlocfilehash: 8d231a16db1ef75993ffa484f3ac8717187fdef6
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723264"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603768"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>SIEM サーバーと Office 365 Cloud App Security を統合する
   
@@ -67,29 +67,24 @@ SIEM エージェントでは、Office 365 のクラウド アプリケーショ
  
 ## <a name="step-1-set-it-up-a-siem-agent-in-office-365-cloud-app-security"></a>手順 1: Office 365 のクラウド アプリケーションのセキュリティの SIEM エージェントを設定します。
 
-1. [https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用して Office 365 にサインインします。(これで、セキュリティには、&amp;コンプライアンス センター)。 
-    
-2. **アラート**を参照して\>**詳細なアラートを管理**します。
-    
-3. **Office 365 のクラウド アプリケーションのセキュリティ**を選択します。<br/>
-    ![セキュリティ&amp;コンプライアンス センターでは、Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+1. クラウド アプリケーションのセキュリティ関連ポータルに移動 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) し、サインインします。
   
-4. **設定**] をクリックして\>**セキュリティ拡張機能**、し、SIEM のエージェントを選択します。<br/>
+2. **設定**] をクリックして\>**セキュリティ拡張機能**、し、SIEM のエージェントを選択します。<br/>
 ![設定 _gt セキュリティ拡張機能を選択します。](media/Settings-SecurityExtensions.png)
 
-5. **SIEM の追加のエージェント**を選択します。<br/>![SIEM の追加のエージェントを選択します。](media/SIEMAgents.png)
+3. **SIEM の追加のエージェント**を選択します。<br/>![SIEM の追加のエージェントを選択します。](media/SIEMAgents.png)
     
-6. **ウィザードの開始**」を選択します。<br/>![ヘルプを表示するか、ウィザードの開始](media/HelpOrWizard.png) 
+4. **ウィザードの開始**」を選択します。<br/>![ヘルプを表示するか、ウィザードの開始](media/HelpOrWizard.png) 
     
-7. **全般**の手順では、名、および **、SIEM の形式を選択して**指定しの**詳細設定**は、その形式に関連するを設定します。**次へ**を選択します。<br/>![名前と種類を指定します。](media/ChooseAgentTypeAndName.png)
+5. **全般**の手順では、名、および **、SIEM の形式を選択して**指定しの**詳細設定**は、その形式に関連するを設定します。**次へ**を選択します。<br/>![名前と種類を指定します。](media/ChooseAgentTypeAndName.png)
     
-8. **リモートの Syslog**の手順で、IP アドレスまたは**リモートの syslog ホスト**と**ポート番号の Syslog**のホスト名を指定します。リモートの Syslog プロトコルとして TCP または UDP を選択します。(使用することがない場合、これらの詳細を取得するには、ネットワーク管理者またはセキュリティ管理者です。)**次へ**を選択します。<br/>![リモートの Syslog の詳細を指定します。](media/ArcSightS1Syslog.png)
+6. **リモートの Syslog**の手順で、IP アドレスまたは**リモートの syslog ホスト**と**ポート番号の Syslog**のホスト名を指定します。リモートの Syslog プロトコルとして TCP または UDP を選択します。(使用することがない場合、これらの詳細を取得するには、ネットワーク管理者またはセキュリティ管理者です。)**次へ**を選択します。<br/>![リモートの Syslog の詳細を指定します。](media/ArcSightS1Syslog.png)
   
-9. ステップでは、**データ型**、次のいずれかを実行し、[**次へ**] をクリックします。
+7. ステップでは、**データ型**、次のいずれかを実行し、[**次へ**] をクリックします。
     - **すべてのアラート**の既定の設定をしてください。<br/>または
     - **すべてのアラート**をクリックし、[**特定のフィルター**を選択します。SIEM サーバーに送信するアラートの種類を選択するためのフィルターを定義します。<br/>![ウィザードのデータの種類の手順](media/ArcSightS1ExportOptions.png)
   
-10. [おめでとうございます] 画面で、トークンをコピーし、後にします。<br/>![SIEM のエージェントの作成] 画面](media/SIEMAgentFinished.png) 
+8. [おめでとうございます] 画面で、トークンをコピーし、後にします。<br/>![SIEM のエージェントの作成] 画面](media/SIEMAgentFinished.png) 
 
 > [!IMPORTANT]
 > この時点で、Office 365 クラウド アプリケーションのセキュリティで、SIEM のエージェントを設定しているが、SIEM のサーバの統合がまだ完了していません。SIEM のサーバの統合を続行するのには次の手順に進みます。
@@ -177,7 +172,7 @@ SIEM サーバーを構成し、Office 365 のクラウド アプリケーショ
 
 ユーザーのトークンを紛失した場合に、1 つが再生成できます。 
 
-1. Office 365 のクラウド アプリケーションのセキュリティ ・ ポータル内**の設定**を選択します > **セキュリティ拡張機能**です。
+1. Office 365 のクラウド アプリケーションのセキュリティ関連ポータルに ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com))、**設定**を選択して > **セキュリティ拡張機能**です。
 
 2. テーブルでは、SIEM エージェントの行を探します。 
 
@@ -185,7 +180,7 @@ SIEM サーバーを構成し、Office 365 のクラウド アプリケーショ
   
 ### <a name="edit-a-siem-agent"></a>SIEM エージェントを編集します。
 
-1. Office 365 のクラウド アプリケーションのセキュリティ ・ ポータル内**の設定**を選択します > **セキュリティ拡張機能**です。
+1. Office 365 のクラウド アプリケーションのセキュリティ関連ポータルに ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com))、**設定**を選択して > **セキュリティ拡張機能**です。
 
 2. SIEM エージェントの行を探します。 
 
@@ -193,14 +188,14 @@ SIEM サーバーを構成し、Office 365 のクラウド アプリケーショ
   
 ### <a name="delete-a-siem-agent"></a>SIEM エージェントを削除します。
 
-1. Office 365 のクラウド アプリケーションのセキュリティ ・ ポータル内**の設定**を選択します > **セキュリティ拡張機能**です。
+1. Office 365 のクラウド アプリケーションのセキュリティ関連ポータルに ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com))、**設定**を選択して > **セキュリティ拡張機能**です。
 
 2. SIEM エージェントの行を探します。 
 
 3. 、省略記号をクリックし、[**削除**] をクリックします。<br/>![SIEM エージェントを削除するのには、2 つの楕円を選択し、削除」を選択し、します。](media/540b5bdf-5574-4ecc-a7b0-92a499a387d7.png)
 
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Office 365 Cloud App Security 展開後の利用に関する作業](utilization-activities-for-ocas.md)
     

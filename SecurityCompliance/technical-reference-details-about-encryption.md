@@ -3,7 +3,7 @@ title: Office 365 の暗号化についてのテクニカル リファレンス�
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/12/2018
+ms.date: 1/15/2019
 ms.audience: ITPro
 ms.topic: reference
 ms.service: o365-administration
@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Office 365 では、暗号化に関する技術的な詳細を表示します。
-ms.openlocfilehash: 69365b66479ab89a9c036fe489b4087d327460eb
-ms.sourcegitcommit: e4ebef6aaf756eefb86c9f3a602cf75f5d344271
+ms.openlocfilehash: bb4629d89d2ed625cc1b817c53d2355484bfdf6c
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026524"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "28326938"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>Office 365 の暗号化についてのテクニカル リファレンスの詳細
 
 についての証明書、技術、および TLS 暗号スイートを[Office 365 での暗号化](encryption.md)に使用するには、この資料を参照してください。この資料では、計画的な deprecations の詳細も提供します。
   
 - 概要情報を探している場合は、 [Office 365 での暗号化](encryption.md)を参照してください。
-    
 - セットアップ情報を探している場合は、 [Office 365 のエンタープライズでの暗号化の設定](set-up-encryption.md)を参照してください。
+- 特定のバージョンの Windows でサポートされている暗号については、 [TLS と SSL (Schannel SSP) での暗号化方式群](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel)を参照してください。
     
 ## <a name="microsoft-office-365-certificate-ownership-and-management"></a>Microsoft Office 365 証明書の所有権と管理
 
@@ -35,7 +35,10 @@ Microsoft は独自の証明書を使用するため、お客様が Office 365 �
   
 ## <a name="current-encryption-standards-and-planned-deprecations"></a>現在の暗号化の標準、計画的な deprecations
 
-続行すると、Office 365 のクラス最高レベルの暗号化を提供する、するためにマイクロソフトは定期的にサポートされている暗号化の規格を確認します。場合によっては、最新のそのため安全性が低くなると、古い基準を廃止する必要があります。ここでは、計画的な deprecations は現在サポートされている暗号およびその他の標準と同様に詳細を説明します。
+続行すると、Office 365 のクラス最高レベルの暗号化を提供する、するためにマイクロソフトは定期的にサポートされている暗号化の規格を確認します。場合によっては、最新のそのため安全性が低くなると、古い基準を廃止する必要があります。ここでは、計画的な deprecations は現在サポートされている暗号およびその他の標準と同様に詳細を説明します。 
+
+## <a name="fips-compliance-for-office-365"></a>Office 365 の FIPS 準拠
+Office 365 によってサポートされているすべての暗号は、FIPS 140-2 の下で許容可能なアルゴリズムを使用します。Office 365 では、(Schannel) 使用して、Windows の FIPS 検証を継承します。Schannel の詳細については、 [TLS と SSL (Schannel SSP) での暗号化方式群](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel)を参照してください。
   
 ## <a name="versions-of-tls-supported-by-office-365"></a>Office 365 でサポートされる TLS のバージョン
 
@@ -89,6 +92,8 @@ Office 365 は、TLS 1.0 と 1.1 の接続をブロックはこれといって�
   
 |**プロトコル**|**暗号スイート名**|**鍵交換アルゴリズム/強度**|**PFS (Perfect Forward Secrecy) サポート**|**認証アルゴリズム/強度**|**暗号/強度**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> |ECDH/192  <br/> |はい  <br/> |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> |ECDH/128  <br/> |はい  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384  <br/> |ECDH/192  <br/> |はい  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256  <br/> |ECDH/128  <br/> |はい  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384  <br/> |ECDH/192  <br/> |はい  <br/> |RSA/112  <br/> |AES/256  <br/> |
@@ -97,10 +102,9 @@ Office 365 は、TLS 1.0 と 1.1 の接続をブロックはこれといって�
 |TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |いいえ  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |いいえ  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |いいえ  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_3DES_EDE_CBC_SHA  <br/> |RSA/112  <br/> |いいえ  <br/> |RSA/112  <br/> |3DES/192  <br/> |
    
 ## <a name="related-topics"></a>関連項目
-<a name="TLSCipherSuites"> </a>
+[Windows 10 v1607 で TLS 暗号スイート](https://docs.microsoft.com/windows/desktop/SecAuthN/tls-cipher-suites-in-windows-10-v1607)
 
 [Office 365 での暗号化](encryption.md)
   

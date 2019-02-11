@@ -3,7 +3,6 @@ title: Office 365 Message Encryption によって暗号化された電子メー�
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/29/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -11,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Office 365 管理者は、Office 365 のメッセージの暗号化で暗号化された電子メールの一部を取り消すことができます。
-ms.openlocfilehash: a3f5c08d2c8660e56c378fc5fa7a850ff2c12eb5
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+ms.openlocfilehash: 018f12105e19382372a8a4b3a91248bb60b228be
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614391"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696241"
 ---
 # <a name="office-365-message-encryption-email-revocation"></a>Office 365 のメッセージの暗号化メールの取り消し
 
@@ -59,22 +58,41 @@ ms.locfileid: "29614391"
 2. **詳細を表示する**テーブルを選択し、無効にするメッセージを識別します。
 3. メッセージ ID を含む詳細を表示するメッセージをダブルクリックしてください。
 
-### <a name="step-2-revoke-the-mail"></a>手順 2 です。メールを取り消す  
+### <a name="step-2-verify-that-the-mail-is-revocable"></a>手順 2 です。メールが取消可能なことを確認します。
 
-無効に電子メールのメッセージ ID がわかったら、セット OMEMessageRevocation コマンドレットを使用して電子メールを取り消すことができます。
+特定の電子メール メッセージを取り消すことができるかどうかを確認するには、次の手順を完了します。
 
-1. [オンライン リモート PowerShell を使用して Exchange に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
+1. 大域管理者アクセス許可を持つ、Office 365 の組織で、職場、学校のアカウントを使用すると、Windows PowerShell セッションを開始し、Exchange Online に接続します。手順については、 [Exchange オンライン PowerShell への接続](https://aka.ms/exopowershell)を参照してください。
+
+2. とおりセット OMEMessageStatus コマンドレットを実行します。
+     ```powershell
+     Get-OMEMessageStatus -MessageId "<messagieid>" | ft -a  Subject, IsRevocable
+     ```
+
+   これは、件名のメッセージと、メッセージが取消可能なかどうかを返します。例えば
+
+     ```text
+     Subject IsRevocable
+     ------- -----------
+     “Test message”  True
+     ```
+
+### <a name="step-3-revoke-the-mail"></a>ステップ 3 です。メールを取り消す  
+
+一度解除すると、電子メールのメッセージ ID を認識して、メッセージの取り消しは、セット OMEMessageRevocation コマンドレットを使用して電子メールを取り消すことができることを確認しました。
+
+1. [Exchange Online PowerShell に接続します](https://aka.ms/exopowershell)。
 
 2. とおりセット OMEMessageRevocation コマンドレットを実行します。
 
     ```powershell
     Set-OMEMessageRevocation -Revoke $true -MessageId "<messageId>"
-    ```  
+    ```
 
 3. 電子メールが無効になっているかどうかを確認するには、次のように Get OMEMessageStatus コマンドレットを実行します。
 
     ```powershell
-    Get-OMEMessageStatus -MessageId "<messageId>" | fl Revoked
+    Get-OMEMessageStatus -MessageId "<messageId>" | ft -a  Subject, Revoked
     ```  
     取り消しが成功した場合、コマンドレットは、次の結果を返します。  
 

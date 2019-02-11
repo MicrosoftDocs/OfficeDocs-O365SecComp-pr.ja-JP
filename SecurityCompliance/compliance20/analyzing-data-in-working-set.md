@@ -1,5 +1,5 @@
 ---
-title: 高度な電子的証拠開示 (プレビュー) での作業セット内のデータの分析
+title: 高度な電子的証拠開示 (プレビュー) での作業セット内のデータを分析します。
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a6284204fd709bcf936688f36f38f6b3283b1f98
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 68a8b7586700a9bffe78f2b3a4ff419a1f85ba8a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607993"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695143"
 ---
-# <a name="analyzing-data-in-a-working-set-in-advanced-ediscovery-preview"></a>高度な電子的証拠開示 (プレビュー) での作業セット内のデータの分析
+# <a name="analyze-data-in-a-working-set-in-advanced-ediscovery-preview"></a>高度な電子的証拠開示 (プレビュー) での作業セット内のデータを分析します。
 
 収集したドキュメントの数が大きい場合は、それらすべてを確認するのには非常に困難ができます。高度な電子的証拠開示 (プレビュー) には、さまざまな情報を損なうことがなく情報を確認して、一貫した方法でドキュメントを整理するために、ドキュメントの量を減らすためにドキュメントを分析するツールが用意されています。これらの機能に関する詳細についてを参照してください。
 
-- [重複データ検出の近く](near-duplicates.md)
-- [電子メールのスレッド](email-threading.md)
+- [準重複の検出](near-duplicates.md)
+- [電子メールのスレッド化](email-threading.md)
 - [テーマ](themes.md)
 
 ワーキング セット内のデータを分析するには。

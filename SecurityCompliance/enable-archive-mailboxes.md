@@ -3,7 +3,7 @@ title: Office 365 のセキュリティ、アーカイブ メールボックス�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Office 365 のセキュリティを使用して、&amp;コンプライアンス ・ センター要件をサポートして、組織のメッセージの保存、電子的証拠開示、アーカイブ メールボックスを有効にします。
-ms.openlocfilehash: 5ba578ba611f619194ac4f475121bd485b75f9e0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1c290cf19b396221dac702efd1395911e8a51631
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532240"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "28327099"
 ---
 # <a name="enable-archive-mailboxes-in-the-office-365-security-amp-compliance-center"></a>Office 365 のセキュリティ、アーカイブ メールボックスを有効にする&amp;コンプライアンス センター
   
@@ -30,17 +30,17 @@ ms.locfileid: "22532240"
 > [!TIP]
 > Office 365 は、無制限の量の拡大の自動アーカイブ機能により、アーカイブ ・ ストレージを提供します。アーカイブの自動拡張がオンにし、ユーザーのアーカイブ メールボックス内の最初の記憶域のクォータに達すると、Office 365 は自動的に追加の記憶域を追加します。つまりユーザーは、メールボックスのストレージ容量が不足実行しないし、最初に管理した後は何もする必要はありませんが、アーカイブ メールボックスを有効にして、組織のアーカイブの自動拡張を有効にします。詳細については、 [Office 365 で無制限のアーカイブの概要](unlimited-archiving.md)を参照してください。 
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 メール受信者の役割を割り当てる Exchange オンラインを有効にするか、アーカイブ メールボックスを無効にする必要があります。既定では、この役割は Exchange 管理センターで [**アクセス許可**] ページで、受信者の管理と組織管理の役割グループに割り当てられます。セキュリティの**アーカイブ**ページが表示されないかどうかは&amp;コンプライアンスを中央揃え、必要なアクセス許可を割り当てるには、管理者に依頼します。 
   
 ## <a name="enable-an-archive-mailbox"></a>アーカイブ メールボックスの有効化
   
-1. [https://protection.office.com](https://protection.office.com)。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
-2. 職場、学校のアカウントを使用して Office 365 にサインインします。
+2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
     
-3. セキュリティの左側のウィンドウで&amp;コンプライアンス センターでは、**データの管理**をクリックして\>**アーカイブ**します。
+3. セキュリティ/コンプライアンス センターの左のウィンドウで、[**データ ガバナンス**]、[**アーカイブ**] の順にクリックします。
     
     **[アーカイブ]** ページが表示されます。**[アーカイブ メールボックス]** 列は、各ユーザーに対してアーカイブ メールボックスが有効か無効かを示します。 
     
@@ -67,11 +67,11 @@ ms.locfileid: "22532240"
   
 アーカイブ メールボックスを無効にするには。
   
-1. [https://protection.office.com](https://protection.office.com)。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
-2. 職場、学校のアカウントを使用して Office 365 にサインインします。
+2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
     
-3. セキュリティの左側のウィンドウで&amp;コンプライアンス センターでは、**データの管理**をクリックして\>**アーカイブ**します。
+3. セキュリティ/コンプライアンス センターの左のウィンドウで、[**データ ガバナンス**]、[**アーカイブ**] の順にクリックします。
     
     **[アーカイブ]** ページが表示されます。**[アーカイブ メールボックス]** 列は、各ユーザーに対してアーカイブ メールボックスが有効か無効かを示します。 
     
@@ -88,6 +88,42 @@ ms.locfileid: "22532240"
 > [!TIP]
 > Shift キーまたは Ctrl キーを使用して、アーカイブ メールボックスが有効になっている複数のユーザーを選択して、アーカイブ メールボックスを一括して無効にすることもできます。複数のメールボックスを選択した後に、詳細ウィンドウで **[無効にする]** をクリックします。 
   
+## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>Exchange オンライン PowerShell を使用して有効にするか、アーカイブ メールボックスを無効にします。
+
+アーカイブ メールボックスを有効にするのに Exchange オンライン PowerShell を使用することもできます。PowerShell を使用する主な理由は、できることを迅速にすべてのユーザーのアーカイブ メールボックスの組織です。
+
+最初のステップは、オンラインの PowerShell を Exchange に接続するためです。手順については、 [Exchange オンライン PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)を参照してください。
+
+Exchange Online に接続して後、を有効にするか、アーカイブ メールボックスを無効にするのには、次のセクションでコマンドを実行することができます。
+
+### <a name="enable-archive-mailboxes"></a>アーカイブ メールボックスの有効化
+
+1 人のユーザーのアーカイブ メールボックスを有効にするのには、次のコマンドを実行します。
+    
+  ```
+  Enable-Mailbox -Identity <username> -Archive
+  ```
+
+(アーカイブ メールボックスは、現在有効になっていない)、組織内のすべてのユーザーのアーカイブ メールボックスを有効にするのには、次のコマンドを実行します。
+    
+  ```
+  Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
+  ```
+  
+### <a name="disable-archive-mailboxes"></a>アーカイブ メールボックスの無効化
+
+1 人のユーザーのアーカイブ メールボックスを無効にするのには、次のコマンドを実行します。
+    
+  ```
+  Disable-Mailbox -Identity <username> -Archive
+  ```
+
+(アーカイブ メールボックスを持つが現在有効になっている)、組織内のすべてのユーザーのアーカイブ メールボックスを無効にするのには、次のコマンドを実行します。
+    
+  ```
+  Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "UserMailbox"} | Disable-Mailbox -Archive
+  ```
+
 ## <a name="more-information"></a>詳細情報
   
 - アーカイブ メールボックスでは、および、ユーザー、組織の保存、電子的証拠開示を満たすために、要件を待機します。たとえば、メールボックスの内容をユーザーのアーカイブ メールボックスに移動するのには、組織の Exchange の保持ポリシーを使用できます。セキュリティでのコンテンツの検索ツールを使用すると&amp;の特定のコンテンツ、ユーザーのアーカイブ メールボックスのユーザーのメールボックスを検索するコンプライアンス センターも検索されます。アーカイブ メールボックス内のアイテムが保持されるも、証拠保全を配置した場合、またはユーザーのメールボックスを Office 365 のリテンション ・ ポリシーを適用するとします。
@@ -102,7 +138,6 @@ ms.locfileid: "22532240"
     
 - アーカイブ メールボックスと Exchange のリテンション ・ ポリシーの詳細についてを参照してください。
   
-  - [Exchange Online のアーカイブ メールボックス](https://go.microsoft.com/fwlink/?LinkId=404421)
     
   - [保持タグおよびアイテム保持ポリシー](https://go.microsoft.com/fwlink/?LinkId=404424)
     

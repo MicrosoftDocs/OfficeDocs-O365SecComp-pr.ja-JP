@@ -15,10 +15,10 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: セキュリティを使用して、電子的証拠開示に関連するタスクを実行するために必要なアクセス許可を割り当てる&amp;コンプライアンス センターです。
 ms.openlocfilehash: 95f0ed171c37ec84ca8bb8f00e69ab0318cd31cd
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2019
+ms.lasthandoff: 02/11/2019
 ms.locfileid: "29741160"
 ---
 # <a name="assign-ediscovery-permissions-in-the-office-365-security-amp-compliance-center"></a>Office 365 のセキュリティ、電子的証拠開示のアクセス許可を割り当てる&amp;コンプライアンス センター
@@ -42,7 +42,7 @@ Office 365 のセキュリティで電子的証拠開示に関連するツール
 > [!NOTE]
 > 高度な電子的証拠開示を使用してユーザーのデータを分析するには、ユーザー (データの保管担当者) 割り当てる必要があります、Office 365 の E5 のライセンスです。または、Office 365 の E1 または E3 のライセンスを持つユーザーが高度な電子的証拠開示のスタンドアロン ライセンスを割り当てることができます。管理者およびコンプライアンス担当者の場合に割り当てられ、データを分析する高度な電子的証拠開示を使用している E5 のライセンスは不要です。  
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - 組織の管理役割グループのメンバーである (または、役割の管理役割を割り当てられる) する必要がある電子的証拠開示、セキュリティ アクセス許可を割り当てるには&amp;コンプライアンス センターです。
     

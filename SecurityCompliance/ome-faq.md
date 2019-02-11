@@ -12,16 +12,21 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Office 365 で新しいメッセージの保護機能のしくみについて質問があるでしょうか。ここで回答を確認します。
-ms.openlocfilehash: 63bea478e144f42cabc67f7075cd52199d954d9c
-ms.sourcegitcommit: d3f3e2eb9ef05ebef85d83935a2cb0f7690ee6fe
+ms.openlocfilehash: e35495106b44ccb566f4da743264def8c7d4f96f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25495521"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696271"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 Message Encryption に関する FAQ
 
-Office 365 で新しいメッセージの保護機能のしくみについて質問があるでしょうか。ここで回答を確認します。またを見て[Azure の情報保護のデータの保護についてご質問がよく寄せられる](https://docs.microsoft.com/information-protection/get-started/faqs-rms)Azure の著作権管理、データ保護サービスに関する質問への回答の Azure の情報保護の。 
+Office 365 で新しいメッセージの保護機能のしくみについて質問があるでしょうか。ここで回答を確認します。またを見て[Azure の情報保護のデータの保護についてご質問がよく寄せられる](https://docs.microsoft.com/information-protection/get-started/faqs-rms)Azure の著作権管理、データ保護サービスに関する質問への回答の Azure の情報保護の。
+
+||
+|:-----|
+|この資料は、Office 365 のメッセージの暗号化についての記事の大規模な一連の一部です。この資料は、管理者および ITPros。だけを行う場合、暗号化されたメッセージを送受信する情報は[Office 365 メッセージの暗号化 (ホーム)](ome.md)内のアーティクルの一覧を参照してくださいし、お客様のニーズに最も適した記事を検索します。 |
+||
   
 ## <a name="what-is-office-365-message-encryption-ome"></a>Office 365 メッセージの暗号化 (ホーム) とは何ですか。
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 9949fcc5876e1d0fa2f877333c5a9e5abae8c2a7
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 8db5a21f60a1d73c11e28bc2765a95c23646115d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608083"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706078"
 ---
 # <a name="create-a-legal-hold-notice"></a>法的保持義務通告を作成します。
 
@@ -78,7 +78,7 @@ ms.locfileid: "29608083"
    
 4. 内容 (必須) の管理者に提供するには追加の説明を指定します。発行通知のためには、手順 2 で定義したポータルのコンテンツが追加されたことに注意してください。 
    
-5. **[保存]** をクリックします。 
+5. **[保存]** をクリックします 
 
 ### <a name="re-issuance-notification"></a>再発行通知 
 
@@ -94,7 +94,7 @@ ms.locfileid: "29608083"
    
 4. 内容 (必須) の管理者に提供するには追加の説明を指定します。再発行通知のためには、手順 2 で定義したポータルのコンテンツが追加されたことに注意してください。
    
-5. **[保存]** をクリックします。
+5. [**保存**] をクリックします。
 
 >[!Note]
 >保留中の通知が変更された場合、通知に割り当てられているすべての通告を再発行の通知を自動的に送信されます。通知が送信されると、通告は、保留中の通知を再度確認するのには求められます。アラームまたはエスカレーション ワークフローを設定すると、これらも再開始されます。 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: Office 365 高度なセキュリティの管理] で、Microsoft Azure クラウド アプリケーションのセキュリティでの電源をオンにする方法については、この資料を参照してください。
-ms.openlocfilehash: 8964a0b413b0350188c7f61638d04032534e5374
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 057a7b3311384901b4c3683c350d1f26c91bf60d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014789"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603778"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>Office 365 Cloud App Security を有効にする
   
@@ -37,11 +37,13 @@ ms.locfileid: "28014789"
 3. **Office 365 のクラウド アプリケーションのセキュリティを有効にする**を選択します。
     
 4. **Office 365 のクラウド アプリケーションのセキュリティ**を選択します。<br/>![セキュリティ&amp;コンプライアンス センターでは、Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>Office 365 のクラウド アプリケーションのセキュリティのポータル、レポートを表示および作成またはポリシーの編集をするに移動します。
+
+訪問でクラウド アプリケーションのセキュリティ関連ポータルに移動することができます Office 365 のクラウド アプリケーションのセキュリティをオンにした後、[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)署名します。
     
 > [!NOTE]
 > Office 365 のクラウド アプリケーションのセキュリティを有効にすると、Office 365 ユーザー アカウントおよびユーザー ・ アクティビティの監査については、[マイクロソフトのクラウド アプリケーションのセキュリティ](https://aka.ms/whatiscas)に転送されます。これにより、情報を取得し、不審なアクティビティのアクションを実行することができますので、高度なアラート、フィルター、およびその他の機能を提供する Office 365 です。 
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [活動ポリシー](activity-policies-and-alerts.md)
     

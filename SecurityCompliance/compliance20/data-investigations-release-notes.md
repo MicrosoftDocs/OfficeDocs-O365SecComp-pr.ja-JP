@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この資料では、高度な電子的証拠開示 (プレビュー) Microsoft 365 での新しいバージョンについて説明します。
-ms.openlocfilehash: bcf10f5154723709b1cde761b0e8d02540341a26
-ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
+ms.openlocfilehash: 90bcbd4cae1e410e1544352a776ba4cbbedfa429
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29636629"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695063"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 のデータ調査 (プレビュー) のリリース ノート
 
-新しいデータ調査 (プレビュー) ツールを使用することで優先順位を決定、調査、およびデータを修正する Microsoft 365 で関連する問題により、データのこぼした事故や内部調査など。パブリック プレビューのデータの調査は、今後の機能と更新プログラムの早期アクセスを提供します。最新機能への初期のアクセスを取得するには、Office 365 のセキュリティ & コンプライアンス センターでデータ調査 (プレビュー) で新しい調査を作成します。学習する方法については、[マイクロソフトの 365 のデータのこぼしたインシデントを管理する](manage-data-spillage-incidents.md)を参照してください。
+新しいデータ調査 (プレビュー) ツールを使用することで優先順位を決定、調査、およびデータを修正する Microsoft 365 で関連する問題により、データのこぼした事故や内部調査など。パブリック プレビューのデータの調査は、今後の機能と更新プログラムの早期アクセスを提供します。最新機能への初期のアクセスを取得するには、Office 365 のセキュリティ & コンプライアンス センターでデータ調査 (プレビュー) で新しい調査を作成します。学習する方法については、[マイクロソフトの 365 のデータのこぼしたインシデントの管理](manage-data-spillage-incidents.md)を参照してください。
 
 ## <a name="whats-new"></a>新機能 
 

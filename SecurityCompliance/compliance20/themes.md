@@ -14,14 +14,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b0d1bcd8ddb1e29853a633a386becfd1688b9cd1
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: d4f6b457880a4c4029e331e5488ea31a61781765
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607987"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706128"
 ---
 # <a name="themes"></a>テーマ
+
 ドキュメントを作成し他のユーザーとそれらを選択しない単語ランダムにします。いくつかのアイデアや概念を伝達しようとして、単語は、それに応じて選択します。テーマ モジュールには、校閲者が効率よくドキュメントを通過できるようにするため、同様の題材を説明するドキュメントがクラスターです。
 
 ## <a name="how-does-themes-work"></a>テーマのしくみ

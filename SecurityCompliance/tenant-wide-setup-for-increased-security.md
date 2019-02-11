@@ -1,6 +1,6 @@
 ---
 title: セキュリティ強化のために、Office 365 テナントを構成する
-ms.author: bcarter
+ms.author: tracyp
 author: BrendaCarter
 manager: laurawi
 ms.date: 10/11/2018
@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: テナント全体の設定を Office 365 環境内のセキュリティに影響を与えるための推奨される構成について説明します。セキュリティ ニーズは、セキュリティまたは短い必要があります。これらの推奨事項は、開始点として使用します。
-ms.openlocfilehash: af34d4b70c5cc1122dab840f9b4af8e2fe3c3a30
-ms.sourcegitcommit: c34f1a0d560117153fc9a7b8da8994bc6fc53791
+ms.openlocfilehash: fa5e5980fd28a360a1469ca65d6598e708ad44f6
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27118113"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29786334"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>セキュリティ強化のために、Office 365 テナントを構成する
 
@@ -33,12 +33,16 @@ Office 365 のセキュリティ&amp;コンプライアンス センターには
 |領域。|既定のポリシー。|推奨。|
 |:-----|:-----|:-----|
 |**フィッシング詐欺対策** <br/> |はい  <br/> | カスタム ドメインがある場合、最高経営責任者など、最も価値のあるユーザーの電子メール アカウントを保護して、ドメインを保護するためには、フィッシング詐欺対策ポリシーを作成します。[フィッシング詐欺対策ポリシーを設定する](set-up-anti-phishing-policies.md)かを確認し、ガイドとしてこの例を使用してポリシーを作成する:」の使用例: ドメインとユーザーを保護するためにフィッシング詐欺対策ポリシー」。|
-|**マルウェア対策エンジン** <br/> |はい  <br/> | 既定のポリシーを編集します。  <br/> • 一般的な添付ファイル フィルターの種類などを選択  <br/><br>  カスタムのマルウェア フィルター ポリシーを作成し、組織内の指定したユーザー、グループ、またはドメインに適用できます。  <br/> <br> 詳しくは、以下の資料を参照してください。  <br/> •[マルウェア対策保護](https://technet.microsoft.com/en-us/library/jj200669%28v=exchg.150%29.aspx) <br/> •[マルウェア対策ポリシーを構成します。](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |
-|**ATP の安全な添付ファイル機能** <br/> |いいえ  <br/> | 安全な添付ファイルのメイン ページで、SharePoint、OneDrive、およびマイクロソフトのチーム内のファイルを保護このチェック ボックス。  <br/>  • および有効にする分析ツールで SharePoint、OneDrive、マイクロソフトのチーム  <br/> <br> これらの設定では、新しい安全な添付ファイル ポリシーを追加します。  <br/>  • ブロック-現在および将来の e メールおよび検出されたマルウェアの添付ファイルをブロックする (このオプションを選択します)  <br/>  • 有効にする」にリダイレクト: (チェック ボックスをオンし、管理や検査など、電子メール アドレスを入力してください)  <br/>  • は、マルウェアの添付ファイルのスキャンがタイムアウトになるか、エラーが発生した場合に上記の選択を適用します (チェック ボックスをオン)  <br/>  • に適用される、受信者のドメインにドメインを (選択)  <br/>  <br>詳細: [Office 365 の ATP の安全な添付ファイル ポリシーを設定します](set-up-atp-safe-attachments-policies.md) <br/> |
-|**ATP の安全なリンク** <br/> |はい  <br/> | この設定を組織全体の既定のポリシーに追加します。  <br/> • 内の安全なリンクを使用します。 Office 365 用リソース、オフィスの iOS と Android (このオプションを選択します)。  <br/> <br>特定の受信者に対するポリシーを推奨。  <br/>  • Url 書き換えし、するユーザーがリンクをクリックすると、既知の悪意のあるリンクの一覧に照らし合わせて確認 (このオプションを選択します)。  <br/>  • ダウンロード可能なコンテンツをスキャンするのには安全な添付ファイルを使用して (チェック ボックスをオン)。  <br/>  • に適用される、受信者のドメインにドメインを (選択) します。  <br/> <br> 詳細: [Office 365 の ATP の安全なリンク](atp-safe-links.md)です。  <br/> |
-|**スパム対策 (メール フィルター)** <br/> |はい  <br/> | 何を監視するには。  <br/>  • はスパムが多すぎる、カスタム設定を選択し、迷惑メール フィルターの既定のポリシーを編集します。  <br/>  • なりすましインテリジェンス-自分のドメインのスプーフィングは、送信者を確認します。ブロックまたは、これらの送信者を許可します。<br/>  <br>詳細: [Office 365 の電子メール スパム対策の保護](anti-spam-protection.md)。  <br/> |
-|**DKIM (DomainKeys は、メールを識別)** <br/> |はい  <br/> |DKIM 認証プロセスを保護する送信者と受信者の両方を偽造 (偽) では、フィッシング詐欺メールです。テナントには、ドメインの既定の署名が含まれています。テナントにカスタム ドメインを追加する場合は、追加の DKIM 署名を作成します。<br/> <br>CNAME、SPF、DMARC のレコードを含む、新しい DKIM 署名を構成するのには、この資料の手順を使用:[カスタム ドメインを Office 365 から送信された送信の電子メールを検証するために DKIM を使用](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)します。  <br/> |
-   
+|**マルウェア対策エンジン** <br/> |はい  <br/> | 既定のポリシーを編集します。  <br/> &ensp;&ensp;• 一般的な添付ファイル フィルターの種類などを選択  <br/><br>  カスタムのマルウェア フィルター ポリシーを作成し、組織内の指定したユーザー、グループ、またはドメインに適用できます。  <br/> <br> 詳しくは、以下の資料を参照してください。  <br/> &ensp;&ensp;•[マルウェア対策保護](https://technet.microsoft.com/en-us/library/jj200669%28v=exchg.150%29.aspx) <br/> &ensp;&ensp;•[マルウェア対策ポリシーを構成します。](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |
+|**ATP の安全な添付ファイル機能** <br/> |不要  <br/> | 安全な添付ファイルのメイン ページで、SharePoint、OneDrive、およびマイクロソフトのチーム内のファイルを保護このチェック ボックス。  <br/>  &ensp;&ensp;• および有効にする分析ツールで SharePoint、OneDrive、マイクロソフトのチーム  <br/> <br> これらの設定では、新しい安全な添付ファイル ポリシーを追加します。  <br/>  &ensp;&ensp;• ブロック-現在および将来の e メールおよび検出されたマルウェアの添付ファイルをブロックする (このオプションを選択します)  <br/>  &ensp;&ensp;• 有効にする」にリダイレクト: (チェック ボックスをオンし、管理や検査など、電子メール アドレスを入力してください)  <br/>  &ensp;&ensp;• は、マルウェアの添付ファイルのスキャンがタイムアウトになるか、エラーが発生した場合に上記の選択を適用します (チェック ボックスをオン)  <br/>  &ensp;&ensp;• に適用される、受信者のドメインにドメインを (選択)  <br/>  <br>詳細: [Office 365 の ATP の安全な添付ファイル ポリシーを設定します](set-up-atp-safe-attachments-policies.md) <br/> |
+|**ATP の安全なリンク** <br/> |はい  <br/> | この設定を組織全体の既定のポリシーに追加します。  <br/> &ensp;&ensp;• 内の安全なリンクを使用します。 Office 365 用リソース、オフィスの iOS と Android (このオプションを選択します)。  <br/> <br>特定の受信者に対するポリシーを推奨。  <br/>  &ensp;&ensp;• Url 書き換えし、するユーザーがリンクをクリックすると、既知の悪意のあるリンクの一覧に照らし合わせて確認 (このオプションを選択します)。  <br/>  &ensp;&ensp;• ダウンロード可能なコンテンツをスキャンするのには安全な添付ファイルを使用して (チェック ボックスをオン)。  <br/>  &ensp;&ensp;• に適用される、受信者のドメインにドメインを (選択) します。  <br/> <br> 詳細: [Office 365 の ATP の安全なリンク](atp-safe-links.md)です。  <br/> |
+|**スパム対策 (メール フィルター)** <br/> |はい  <br/> | 何を監視するには。  <br/>  &ensp;&ensp;• はスパムが多すぎる、カスタム設定を選択し、迷惑メール フィルターの既定のポリシーを編集します。  <br/>  &ensp;&ensp;• なりすましインテリジェンス-自分のドメインのスプーフィングは、送信者を確認します。ブロックまたは、これらの送信者を許可します。<br/>  <br>詳細: [Office 365 の電子メール スパム対策の保護](anti-spam-protection.md)。  <br/> |
+|***電子メールの認証*** <br/> |はい  <br/> |電子メールの認証は、電子メールの送信者の電子メール メッセージを検証可能な情報を追加するのにはドメイン ネーム システム (DNS) を使用します。Office 365 は、既定のドメイン (onmicrosoft.com)、電子メールの認証を設定しますが、Office 365 の管理者がカスタム ドメインの電子メールの認証も使用できます。3 つの認証方法が使用されます。<br/> <br> &ensp;&ensp;• 送信者ポリシー フレームワーク (SPF) ができます。セットアップでは、[スプーフィングを防止するために Office 365 の SPF を設定](set-up-spf-in-office-365-to-help-prevent-spoofing.md)を参照してください。<br/> &ensp;&ensp;• DomainKeys は、メール (DKIM) を識別します。DKIM を使用するには、[カスタム ドメインを Office 365 から送信された送信の電子メールを検証するために DKIM を使用して、](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)参照してください。<br>&ensp;&ensp;&ensp;&ensp;&ensp;-DKIM を構成した後を有効にできます、セキュリティでは、組織の&amp;コンプライアンス センターです。<br/> &ensp;&ensp;• ドメイン ベースのメッセージ認証では、レポート、および準拠 (DMARC)。DMARC を設定するには、 [Office 365 で電子メールを検証するために使用して DMARC](use-dmarc-to-validate-email.md)を参照してください。<br/>  <br/>
+|
+
+> [!NOTE]
+> SPF の非標準の展開、ハイブリッド展開では、およびトラブルシューティング:[送信者ポリシー フレームワーク (SPF) の悪用を防止するのにを使用して Office 365 ではどのように](how-office-365-uses-spf-to-prevent-spoofing.md)します。
+
 ## <a name="view-dashboards-and-reports-in-the-security-amp-compliance-center"></a>セキュリティ ダッシュ ボードおよびレポートを表示する&amp;コンプライアンス センター
 
 これらのレポートとダッシュ ボードをお客様の環境の稼働状態の詳細についてを参照してください。これらのレポート内のデータは豊富なは、組織が Office 365 サービスを使用しているようになります。ここでは、何を監視してアクションを実行を理解します。詳細についてを参照してください:[では、Office 365 のセキュリティ レポート&amp;コンプライアンス センター](reports-in-security-and-compliance.md)です。
@@ -57,8 +61,8 @@ Office 365 のセキュリティ&amp;コンプライアンス センターには
   
 |領域。|既定のポリシー。|推奨。|
 |:-----|:-----|:-----|
-|**メールの流れ**(トランスポート ルール)  <br/> |いいえ  <br/> | Ransomware から保護するためにメール フロー ルールを追加します。このブログ記事の「Exchange のトランスポート ルールを使用して追跡または ransomware によって使用されるファイル拡張子を持つ電子メールをブロックする方法」を参照してください: [ransomware を処理する方法](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/)です。<br><br/> 外部ドメインへのメールの自動転送を防止するトランスポート ルールを作成します。詳細については、[問題を緩和するクライアント外部転送規則セキュリティで保護されたスコア](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)を参照してください。<br/> <br>詳細:[メール フロー ルール (トランスポート ルール) では、Exchange オンライン](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx) <br/> |
-|**現代の認証を有効にします。** <br/> |いいえ  <br/> | Office 365 の最新の認証とは、多要素認証 (MFA) を使用するための前提条件です。メールを含む、クラウド リソースへのアクセスをセキュリティで保護するのには、MFA をお勧めします。<br/>  <br>これらのトピックを参照してください。  <br/> •[を有効または無効にする最新の認証では、Exchange オンライン](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) <br/> •[ビジネス オンラインの Skype: 最新の認証のため、テナントを有効にする](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/>  <br>Office 2016 クライアント、SharePoint Online では、およびビジネスのための OneDrive の最新の認証がデフォルトで有効です。  <br/>  <br>詳細: [Office クライアントと Office 365 を使用して最新の認証](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a) <br/> |
+|**メールの流れ**(トランスポート ルール)  <br/> |不要  <br/> | Ransomware から保護するためにメール フロー ルールを追加します。このブログ記事の「Exchange のトランスポート ルールを使用して追跡または ransomware によって使用されるファイル拡張子を持つ電子メールをブロックする方法」を参照してください: [ransomware を処理する方法](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/)です。<br><br/> 外部ドメインへのメールの自動転送を防止するトランスポート ルールを作成します。詳細については、[問題を緩和するクライアント外部転送規則セキュリティで保護されたスコア](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)を参照してください。<br/> <br>詳細:[メール フロー ルール (トランスポート ルール) では、Exchange オンライン](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx) <br/> |
+|**現代の認証を有効にします。** <br/> |不要  <br/> | Office 365 の最新の認証とは、多要素認証 (MFA) を使用するための前提条件です。メールを含む、クラウド リソースへのアクセスをセキュリティで保護するのには、MFA をお勧めします。<br/>  <br>これらのトピックを参照してください。  <br/> •[を有効または無効にする最新の認証では、Exchange オンライン](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) <br/> •[ビジネス オンラインの Skype: 最新の認証のため、テナントを有効にする](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/>  <br>Office 2016 クライアント、SharePoint Online では、およびビジネスのための OneDrive の最新の認証がデフォルトで有効です。  <br/>  <br>詳細: [Office クライアントと Office 365 を使用して最新の認証](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a) <br/> |
    
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>SharePoint 管理センターのテナントの共有ポリシーを構成します。
 

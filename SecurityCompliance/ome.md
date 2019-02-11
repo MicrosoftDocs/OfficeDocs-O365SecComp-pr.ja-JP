@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Office 365 のメッセージの暗号化と、組織はことができます、組織内外のユーザーとの間で暗号化された電子メール メッセージを送受信します。電子メール メッセージの暗号化の実現を促進するだけの目的の受信者は、メッセージの内容を表示できます。
-ms.openlocfilehash: ae66ca79b2b0464e11d27fef553faccfd4787d75
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 57b1d34902bb1522a7974e97f8cd90e9f19b76f5
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532048"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696261"
 ---
 # <a name="office-365-message-encryption"></a>Office 365 Message Encryption
 
@@ -35,14 +35,17 @@ Office 365 のメッセージの暗号化と、組織はことができます、
 |[Android デバイスで暗号化されたメッセージを表示します。](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> |暗号化されたメッセージを Office 365 のメッセージの暗号化、Android のデバイスに与えられたユーザー、エンド ・ ユーザーで使用、メッセージを表示し、暗号化された応答を送信する無料のホーム ビューアー アプリケーションを使用できます。この資料で説明する方法です。  <br/> |
 |[IPhone または iPad で暗号化されたメッセージを表示します。](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |暗号化されたメッセージでは、Office 365 のメッセージの暗号化、iPhone や iPad では、受信したエンドユーザー、メッセージを表示し、暗号化された応答を送信する無料のホーム ビューアー アプリケーションを使用できます。この資料で説明する方法です。  <br/> |
 |Office 365 メッセージの暗号化 (ホーム) (この記事)  <br/> |についてはその他のリソースを見つけることができますしようとしている Exchange のオンライン保護] または [Office 365 管理者です。  <br/> |
+|[OME のバージョンを比較する](ome-version-comparison.md)  <br/> |レガシ Office 365 のメッセージの暗号化と同様の新しいホーム機能の違いを一緒に動作するようにする方法について学習する必要がある Exchange のオンライン保護] または [Office 365 管理者です。  <br/> |
 |[Office 365 Message Encryption に関する FAQ](ome-faq.md) <br/> |ライセンスと新機能と従来のホームとの間の比較を含む質問への回答をよくしたい Exchange のオンライン保護] または [Office 365 の管理者です。  <br/> |
 |[新しい Office 365 Message Encryption 機能を設定する](set-up-new-message-encryption-capabilities.md) <br/> |Office 365 または Exchange のオンライン保護管理者が Office 365 の組織の新しい Office 365 のメッセージの暗号化機能を設定する方法について説明します。  <br/> |
-|[Office 365 で電子メール メッセージを暗号化するためにメール フローの規則を定義します。](define-mail-flow-rules-to-encrypt-email.md) <br/> |Exchange のオンライン保護] または [Office 365 管理者が既に設定され、Office 365 のメッセージの暗号化では、組織から送信される電子メール メッセージを自動的に暗号化するためにメール フローの規則を定義する準備が整いました。  <br/> |
+|[Office 365 でメールを暗号化するためにメール フロー ルールを定義する](define-mail-flow-rules-to-encrypt-email.md) <br/> |Exchange のオンライン保護] または [Office 365 管理者が既に設定され、Office 365 のメッセージの暗号化では、組織から送信される電子メール メッセージを自動的に暗号化するためにメール フローの規則を定義する準備が整いました。  <br/> |
 |[Office 365 Message Encryption を管理する](manage-office-365-message-encryption.md) <br/> |Exchange のオンライン保護] または [Office 365 管理者が既に Office 365 のメッセージの暗号化を設定し、ホームのオプションの設定を構成しようとしています。  <br/> |
 |[組織のブランドを暗号化されたメッセージに追加する](add-your-organization-brand-to-encrypted-messages.md) <br/> |Exchange のオンライン保護] または [Office 365 管理者が、会社の組織の Office 365 のメッセージの暗号化電子メール メッセージの外観とホーム ポータルのコンテンツをカスタマイズするのにはブランド化を適用します。  <br/> |
+|[Office 365 のメッセージの暗号化メールの取り消し](revoke-ome-encrypted-mail.md) <br/> |Exchange のオンライン保護] または [Office 365 管理者が Office 365 のメッセージの暗号化を使用して暗号化された電子メールを無効にします。  <br/> |
 |Office 365 メッセージの暗号化[メッセージのポリシーおよびコンプライアンスのサービスの説明](https://technet.microsoft.com/en-us/library/5c43c8eb-f8f7-4b5a-a743-b1dab7dc2fc8#bkmk_O365_MessageEncryption) <br/> |Office 365 のメッセージの暗号化機能の詳細な説明を探しては Sku では、Office 365 から利用可能なサポートを含みます。  <br/> |
 |[Office 365 Message Encryption の旧来の情報](legacy-information-for-message-encryption.md) <br/> |Exchange のオンライン保護] または [Office 365 管理者が既に設定され、Office 365 のメッセージの暗号化には、新機能のリリースの前にホームの作業についての情報が必要です。新しい機能がないホームを使用して新しい展開を設定することはできません、中に、マイクロソフトは、既存の展開をサポートするために続けます。  <br/> |
-   
+||
+
 この資料の残りの部分は、ホームの新しい機能に適用されます。
   
 ## <a name="how-office-365-message-encryption-works"></a>Office 365 のメッセージの暗号化のしくみ
@@ -58,7 +61,6 @@ Outlook.com、Gmail、yahoo アカウントに送信された暗号化、また�
 メッセージおよび添付ファイルを暗号化するには Office 365 のメッセージの暗号化を使用してのサイズの制限が大きくなることです。制限の詳細についてを参照してください[Exchange オンライン制限します](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx)。
   
 ## <a name="defining-rules-for-office-365-message-encryption"></a>Office 365 Message Encryption のルールの定義
-<a name="Rules"> </a>
 
 メール フロー ルールを定義するのには、オンラインの Exchange および Exchange のオンライン保護の管理者が、Office 365 のメッセージの暗号化の新しい機能を有効にする方法の 1 つです。これらのルールは、どのような条件の e メールでメッセージを暗号化するかを決定します。暗号化アクションをルールに設定すると、ルールの条件に一致するすべてのメッセージは、送信することをする前に暗号化されます。
   
@@ -67,7 +69,6 @@ Outlook.com、Gmail、yahoo アカウントに送信された暗号化、また�
 メール ホームの新機能を利用するのには、フロー ルールを作成する方法の詳細については、 [Office 365 のメッセージの暗号化のための規則の定義](define-mail-flow-rules-to-encrypt-email.md)を参照してください。
   
 ## <a name="sending-viewing-and-replying-to-encrypted-email-messages"></a>暗号化された電子メール メッセージの送信、表示、および返信
-<a name="SendRecip"> </a>
 
 Office 365 のメッセージの暗号化、暗号化された電子メールは Outlook と web 上の Outlook から送信できます。さらに、管理者は、自動的にキーワードの一致する、またはその他の条件に基づいて電子メールを暗号化するために、Office 365 のメール フローの規則を設定できます。
   
@@ -76,12 +77,9 @@ Office 365 の組織では、暗号化されたメッセージの受信者は PC
 送信および暗号化されたメッセージを表示する方法についての詳細については、これらの資料を見て、実行します。
   
 - [保護されたメッセージを開く方法ですか。](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx)
-    
+
 - [送信、表示、および Outlook で暗号化されたメッセージに返信します。](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)
-    
+
 ## <a name="get-started-with-the-new-ome-capabilities"></a>ホームの新機能を使い始める
-<a name="SendRecip"> </a>
 
 組織内で新しいホーム機能の使用を開始する準備ができた場合は、[新しい Office 365 のメッセージの暗号化機能の設定](set-up-new-message-encryption-capabilities.md)を参照してください。
-  
-

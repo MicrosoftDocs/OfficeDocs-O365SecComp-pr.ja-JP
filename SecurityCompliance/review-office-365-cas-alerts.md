@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: Office 365 のクラウド アプリケーションのセキュリティに潜在的な懸案事項を表示し、アクションを実行するのには [通知] ページを使用します。閉じるし、アラートを解決するまたは必要に応じて、ユーザー アカウントを一時停止できます。
-ms.openlocfilehash: 2665f4ebc9c5c24b95da64954a606dfc0df99082
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: ff20b913553414d796f9653108ac9b8a3d84cb74
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014829"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603678"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security の警告の確認と処理
   
@@ -32,13 +32,9 @@ Office 365 のクラウド アプリケーションのセキュリティで [通
   
 ## <a name="how-to-get-to-the-alerts-page"></a>[通知] ページを表示する方法
 
-1. グローバル管理者またはセキュリティ管理者に移動します。[https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用してサインインします。 
-    
-2. セキュリティで&amp;コンプライアンス センターでは、**アラート**を選択して\>**管理警告の詳細**です。
-    
-3. **Office 365 のクラウド アプリケーションのセキュリティ**を選択します。<br/>![セキュリティ&amp;コンプライアンス センターでは、Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+1. クラウド アプリケーションのセキュリティ関連ポータルに移動 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) し、サインインします。
   
-4. 画面の上部にナビゲーション ・ バーの**アラート**を選択します。<br/>![[アラート] ページで、トリガーされたアラートと行った操作を確認できます。](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
+2. 画面の上部にナビゲーション ・ バーの**アラート**を選択します。<br/>![[アラート] ページで、トリガーされたアラートと行った操作を確認できます。](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
   
 ## <a name="review-and-handle-alerts"></a>アラートの確認とハンドル
 
@@ -55,7 +51,7 @@ Office 365 のクラウド アプリケーションのセキュリティで [通
     
 - **中断**その人がわかっている場合、他の国から署名などの他のユーザー アカウントをローカル オフィスでは物理的に、許可されていない記号が疑われる場合することができます[、アカウントを一時停止](suspend-or-restore-an-account-in-ocas.md)の処理状況を調査するときにします。 
     
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [アクティビティを調査します。](investigate-an-activity-in-office-365-cas.md)
     

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: コンプライアンスの境界を使用して、Office 365 組織内で、電子的証拠開示マネージャーが検索できるユーザー コンテンツの場所を制御する論理的な境界を作成します。コンプライアンスの境界を使用して、検索のアクセス許可がどのようなメールボックス、SharePoint サイトを制御する (も呼び出されたコンプライアンス セキュリティ フィルター) をフィルタ リングし、OneDrive アカウントは、特定のユーザーによって検索できます。
-ms.openlocfilehash: 2bebd29fa7701ba07aae7170142263aeaec5569e
-ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
+ms.openlocfilehash: 23594673e70be4b960c463ae2344c2f4b0fd0cbe
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "26299241"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29768018"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Office 365 での電子情報開示調査のためにコンプライアンスの境界を設定する
 
@@ -55,8 +55,6 @@ ms.locfileid: "26299241"
 境界を遵守するために使用できる Azure Active Directory ユーザー属性の一覧を以下に示します。
   
 - Company
-    
-- CountryCode
     
 - CustomAttribute1 - CustomAttribute15
     
@@ -123,7 +121,7 @@ New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -
     
   -  `Site`-の役割グループが定義されている OneDrive のアカウントを指定する、`Users`のパラメーターを検索できます。OneDrive フィルターは、実際の文字列を使用して、 `ComplianceAttribute`。手順 1 で特定した、手順 2 で送信したサポート ・ リクエストの結果として OneDrive のアカウントに同期するのと同じ属性にマッピングします。 *AttributeValue*は、機関を指定します。このフィルターは特定の政府機関でのみ OneDrive のアカウントを検索するロール グループのメンバーを許可します。たとえば、 `"Site_ComplianceAttribute -eq 'FourthCoffee'"`。
     
-  -  `Site_Path`-の役割グループが定義されている SharePoint サイトを指定する、`Users`のパラメーターを検索できます。*SharePointURL*では、サイトを指定の機関の役割グループのメンバーを検索できます。例えば`Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
+  -  `Site_Path`-の役割グループが定義されている SharePoint サイトを指定する、`Users`のパラメーターを検索できます。*SharePointURL*では、サイトを指定の機関の役割グループのメンバーを検索できます。例えば`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
     
 -  `Action`-フィルターを適用するコンプライアンスの検索動作の種類を指定します。たとえば、`-Action Search`だけに適用、フィルターの役割グループのメンバーが定義されている場合、`Users`パラメーターは、コンテンツの検索を実行します。この例では、検索結果をエクスポートするときは、フィルターを適用しません。コンプライアンスの境界を使用して`-Action All`ため、すべてのアクションを検索するフィルターが適用されます。 
     

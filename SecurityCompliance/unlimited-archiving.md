@@ -3,7 +3,7 @@ title: Office 365 の無制限のアーカイブの概要
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 自動拡張の詳細については Exchange Online のメールボックスの制限なしのアーカイブ ・ ストレージを提供するアーカイブを Office 365 で、です。
-ms.openlocfilehash: a762a0fb8295a645957404c1c88881f40329f7a1
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 83eb49b3f2a7da418b61e509f44023809ed396c3
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782124"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29740819"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Office 365 の無制限のアーカイブの概要
 
@@ -69,11 +69,11 @@ ms.locfileid: "23782124"
 
 自動展開されたアーカイブに保存されているメッセージにアクセスするには、ユーザーが Outlook クライアントを次のいずれかを使用する必要が。
   
-- Windows 版 Outlook 2016
+- Outlook 2016 または Windows 用の Outlook 2019
     
-- Web 上の Outlook 
+- Outlook on the web 
     
-- Outlook 2016 for Mac 
+- Outlook 2016 または for Mac Outlook 2019 
     
 > [!NOTE]
 > Outlook 2013 のユーザーは、アーカイブ メールボックスに最初に格納されている項目にのみアクセスできます。追加のアーカイブ ・ ストレージに移動された項目にアクセスすることはできません。 
@@ -96,7 +96,7 @@ Outlook または自動展開されたアーカイブに格納されているメ
   
 - **電子的証拠開示**のコンテンツの検索、またはインプレース電子証拠開示、自動展開されたアーカイブに追加のストレージ領域など、Office 365 の電子的証拠開示ツールを使用する場合でも検索されます。
     
-- **保存**- 保留中の Exchange Online の証拠保全などのツールを使用してメールボックスを配置するか、電子的証拠開示のケースを保持すると、リテンション ・ ポリシーで Office 365 のセキュリティ&amp;コンプライアンス センター、自動展開されたアーカイブ内にあるコンテンツも保留リストに配置されます。
+- **保存**- 上のメールボックスを配置するとは、オンラインまたは電子的証拠開示のケースを保持して、自動展開されたアーカイブ内にある Office 365 のセキュリティ & コンプライアンス センター、コンテンツの保存ポリシーも Exchange 証拠保全などのツールを使用して保持します。保留リストに配置されます。
     
 - **メッセージング レコードの管理 (MRM)** のメールボックスの有効期限が切れたアイテム、自動展開されたアーカイブ内にある期限切れのアイテムを削除するのには、Exchange Online の MRM 削除ポリシーを使用する場合も削除されます。
     

@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 742f6bc35b67071fba528e6a0ce543ecc6915762
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: cce823924502fa2617d7819dc0967733fbc072e0
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608059"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706098"
 ---
-# <a name="managing-custodians-in-an-advanced-ediscovery-preview-case"></a>高度な電子的証拠開示 (プレビュー) 場合は、通告を管理します。
+# <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>高度な電子的証拠開示 (プレビュー) 場合は、通告を管理します。
 
 通告] タブには、大文字と小文字のすべての通告の並べ替え可能な一覧が含まれています。通告をケースに追加すると後の詳細については、各管理者は Azure Active Directory から自動的に収集されます。
 
@@ -70,7 +70,7 @@ ms.locfileid: "29608059"
   
 4. **データ ソースの選択**] をクリックして、Exchange と OneDrive の場所の選択を更新します。
   
-5. 追加または削除、チーム、SharePoint、または Exchange メールボックスは、**他のデータ ソースを選択**する] をクリックしてユーザーをマップします。保管担当者にソース データをマップする方法の詳細についてを参照してください[、高度な電子的証拠開示 (プレビュー) に通告を追加する場合](add-custodians-to-case.md)。
+5. 追加または削除、チーム、SharePoint、または Exchange メールボックスは、**他のデータ ソースを選択**する] をクリックしてユーザーをマップします。保管担当者にソース データをマップする方法の詳細については、[サポート案件に追加の通告](add-custodians-to-case.md)を参照してください。
   
 6. 管理者の保留中の状態を更新するに**信託の場所を保持する**が、をクリックしを有効または通告の保持を無効にします。
 
@@ -95,7 +95,7 @@ ms.locfileid: "29608059"
 
 5. **ジョブ**] タブの再インデックス処理のステータスを追跡することもできます。
 
-部分的にインデックス付きのアイテムを再インデックス作成と修正の詳細については、[高度な電子的証拠開示 (プレビュー) で発生したエラーの処理の修正](processing-data-for-case.md)を参照してください。
+部分的にインデックス付きのアイテムを再インデックス作成と修正の詳細については、[処理エラーを修正する](processing-data-for-case.md)を参照してください。
 
 ## <a name="releasing-a-custodian-from-a-case"></a>サポート案件からの保管担当者を解放します。
 
@@ -118,6 +118,5 @@ ms.locfileid: "29608059"
 
 ## <a name="related-information"></a>関連情報
 
- - Active Directory のユーザー属性 
- - [データの処理中にエラーの修復](error-remediation.md) 
- - [通信を使用します。](managing-custodian-communications.md)
+ - [データ処理中のエラー修復](error-remediation.md) 
+- [通信の操作](managing-custodian-communications.md)

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
 description: セキュリティ管理の高度なアプリケーションの検出のレポートを確認することにより、組織内のユーザーがクラウドのアプリケーションを使用する方法の詳細については。ファイアウォールやプロキシのログ ファイルを使用してアプリケーションの検出のレポートを作成した後は、アプリケーションの検出のダッシュ ボードで、結果を確認します。
-ms.openlocfilehash: ddf3826f5aac9d3c837cf66f1b97b4650df70f32
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 6195c9aae7ae5e398ac555cc820de04dee05d4fd
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706261"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603748"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security でアプリ検出結果を確認する
   
@@ -27,19 +27,15 @@ ms.locfileid: "26706261"
    
 クラウドの探索のダッシュ ボードは、クラウド アプリケーションの使用状況に関する詳細な情報を提供する組織の web トラフィックのログを使用して動作します。グローバル管理者、セキュリティ管理者、またはセキュリティのリーダーをしている、組織[で Office 365 のクラウド アプリケーションのセキュリティ アプリケーションの探索レポートを作成](create-app-discovery-reports-in-ocas.md)洞察を得るためにクラウド探索のダッシュ ボードを使用する場合は、どのように人で、組織は、Office 365 とその他のクラウド アプリケーションに使用しています。(クラウドの探索のダッシュ ボードとも呼ばれます生産性アプリケーション検出します。)
   
- **2018 年 3 月時点でクラウドの探索のダッシュ ボードには新機能**、組織内のユーザーの Office 365 とその他のアプリケーションの使用方法に関する詳細情報を表示するのにはより簡単にします。 
+ クラウド探索のダッシュ ボードでは、組織内のユーザーの Office 365 とその他のアプリケーションの使用方法に関する詳細情報を表示を行うことができます。 
   
 ![クラウドの探索のダッシュ ボードが更新されました](media/12712681-c0b3-4cb3-b7fd-2cf2ad4e825f.png)
      
 ## <a name="go-to-the-cloud-discovery-dashboard"></a>クラウドの探索のダッシュ ボードに移動します。
 
-1. [https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用して Office 365 にサインインします。(これで、セキュリティには、&amp;コンプライアンス センター)。 
+1. クラウド アプリケーションのセキュリティ関連ポータルに移動 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) し、サインインします。
     
-2. セキュリティで&amp;コンプライアンス センターでは、**アラート**を選択して\>**管理警告の詳細**です。<br/>(Office 365 のクラウド アプリケーションのセキュリティはまだ有効でない、グローバル管理者は、 [Office 365 のクラウド アプリケーションのセキュリティを有効にする](turn-on-office-365-cas.md)) 場合
-    
-3. **Office 365 のクラウド アプリケーションのセキュリティ**を選択します。
-    
-4. **検出**に\>**クラウド探索のダッシュ ボード**です。
+2. **検出**に\>**クラウド探索のダッシュ ボード**です。
     
 ## <a name="see-your-top-users-ip-addresses-apps-and-risk-levels"></a>最上位ユーザー、IP アドレス、アプリケーション、およびリスクのレベルを参照してください。
 
@@ -87,7 +83,7 @@ ms.locfileid: "26706261"
     
 5. [ **追加** ] を選択します。
     
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [確認し、アラート アクションを実行](review-office-365-cas-alerts.md)
     

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: d9ee4d67-f2b3-42b4-9c9e-c4529904990a
 description: Office 365 のクラウド アプリケーションのセキュリティの使用を開始します。
-ms.openlocfilehash: 906570c6607c70b63fa9d2059d56b50f7807124a
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 1d1ae464278a5d9aafa5a176298f03174b6a37dc
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23229989"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603698"
 ---
 # <a name="get-ready-for-office-365-cloud-app-security"></a>Office 365 Cloud App Security の使用準備
   
@@ -41,17 +41,15 @@ ms.locfileid: "23229989"
   
 ## <a name="step-3-go-to-the-office-365-cloud-app-security-portal"></a>Office 365 のクラウド アプリケーションのセキュリティ関連ポータルには、手順 3。
 
-1. [https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用して Office 365 にサインインします。(これで、セキュリティには、&amp;コンプライアンス センター)。 
+Office 365 のクラウド アプリケーションのセキュリティ関連ポータルにアクセスできます[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)署名します。 
+
+取得することもありますから、Office 365 のセキュリティ&amp;コンプライアンス センターです。これを行う方法の 1 つを以下に示します。
+
+1. [https://protection.office.com](https://protection.office.com)と符号インチ (これで、セキュリティには、&amp;コンプライアンス センター)。
     
 2. **アラート**を参照して\>**詳細なアラートを管理**します。
     
-3. Office 365 のクラウド アプリケーションのセキュリティ関連ポータルに移動する**には、Office 365 のクラウド アプリケーションのセキュリティ**を選択してください。 
-    
-    ![セキュリティ&amp;コンプライアンス センターでは、Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
-  
-    Office 365 のクラウド アプリケーションのセキュリティ関連ポータルに移動すると、最初のページが表示は、[ポリシー] ページで次の図のようなです。
-    
-    ![ポリシー] ページで開始する場合、Office 365 のクラウド アプリケーションのセキュリティ関連ポータルに移動すると、](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
+3. Office 365 のクラウド アプリケーションのセキュリティ関連ポータルに移動する**には、Office 365 のクラウド アプリケーションのセキュリティ**を選択してください。<br> ![Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>Office 365 のクラウド アプリケーションのセキュリティ関連ポータルに移動すると、最初のページが表示は、[ポリシー] ページで次の図のようなです。<br>![ポリシー] ページで開始する場合、Office 365 のクラウド アプリケーションのセキュリティ関連ポータルに移動すると、](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)<br>
   
 ## <a name="step-4-define-policies-and-set-up-alerts-amp-actions"></a>ステップ 4: ポリシーを定義し、アラートを設定します&amp;アクション
 
@@ -85,13 +83,13 @@ Office 365 のクラウド アプリケーションのセキュリティの警�
     
 ## <a name="step-6-manage-apps-that-your-organization-is-using-to-access-office-365"></a>手順 6: 組織が Office 365 のアクセスに使用しているアプリケーションを管理します。
 
-グローバル管理者またはセキュリティ管理者は、カスタム アプリケーションを Office 365 で、組織内のユーザーを使用しているサード ・ パーティ製のアプリケーションなどのアプリケーションを管理できます。たとえば、Office 365 を使用するカスタムのアプリケーションのダウンロードが他のこととします。ユーザーが使用してアプリケーションを確認する、信頼されていないアプリケーションは、アクセスを禁止したり、アプリケーションを追跡のための承認済みとしてマークできます。[Office 365 のクラウド アプリケーションのセキュリティを使用してアプリケーションのアクセス許可を管理](manage-app-permissions-in-ocas.md)します。
+グローバル管理者またはセキュリティ管理者は、カスタム アプリケーションを Office 365 で、組織内のユーザーを使用しているサード ・ パーティ製のアプリケーションなどのアプリケーションを管理できます。たとえば、Office 365 を使用するカスタムのアプリケーションのダウンロードが他のこととします。ユーザーが使用してアプリケーションを確認する、信頼されていないアプリケーションは、アクセスを禁止したり、アプリケーションを追跡のための承認済みとしてマークできます。[OAuth の管理アプリケーションが Office 365 のクラウド アプリケーションのセキュリティを使用](manage-app-permissions-in-ocas.md)します。
   
 ## <a name="step-7-use-your-siem-server-with-office-365-cloud-app-security"></a>手順 7: Office 365 のクラウド アプリケーションのセキュリティと SIEM サーバーを使用します。
 
 セキュリティ情報およびイベント管理 (SIEM) サーバーを使用する組織ですか。Office 365 クラウド アプリケーションのセキュリティにアラートの一元的な監視を有効にするのには、SIEM のサーバーに統合できます。SIEM サービスと統合すること、セキュリティの一般的なワークフローを維持する、セキュリティ手順を自動化すること、およびクラウド ベースの間に相関関連づけることの中に、クラウド アプリケーションの保護を強化することができ、設置型のイベント。SIEM エージェントは、サーバー上で実行し、Office 365 のクラウド アプリケーションのセキュリティからのアラートを取得、SIEM サーバーにそれらのアラートをストリームします。[SIEM の統合 Office 365 のクラウド アプリケーションのセキュリティ](integrate-your-siem-server-with-office-365-cas.md)を参照してください。
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Office 365 Cloud App Security を有効にする](turn-on-office-365-cas.md)
     

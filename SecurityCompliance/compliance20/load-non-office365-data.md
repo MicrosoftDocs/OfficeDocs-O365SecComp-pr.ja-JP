@@ -1,5 +1,5 @@
 ---
-title: ワーキング セットにない-Office 365 のデータを読み込む
+title: ワーキング セットに Office 365 以外のデータを読み込む
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,30 +14,37 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 427b4c8c9dfffe351827a6869ae26a5356d646d8
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 1dad52075303450673e7f48b87e2952e35629a5e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608030"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706088"
 ---
-# <a name="load-non-office-365-data-into-a-working-set"></a>ワーキング セットにない-Office 365 のデータを読み込む
+# <a name="load-non-office-365-data-into-a-working-set"></a>ワーキング セットに Office 365 以外のデータを読み込む
 
 電子的証拠開示の Office 365 の詳細を分析する必要がありますすべてのドキュメントは、Office 365 で生活しています。非 Office 365 のコンテンツを持つだ Office 365 のワーキング セットには、高度な電子的証拠開示を分析するためのドキュメントをアップロードするときに高度な電子的証拠開示の機能をインポートします。この手順では、分析のために高度な電子的証拠開示に、Office 365 以外のドキュメントを表示する方法を示します。
 
 >[!Note]
 >Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、Office 365 Enterprise E5 の試用版にサインアップしてください。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 この手順で説明したように非 Office 365 のアップロード機能を使用するがあることが必要です。
-* コンプライアンスの高度なアドオンと E5 のサブスクリプションの Office 365 E3
-* Office 365 以外のコンテンツがアップロードされるすべての通告は、コンプライアンスの高度なアドオンと E5 のライセンス E3 を持つ必要があります。
-* 既存の電子的証拠開示ケース
-* 保管担当者ごとの 1 つのフォルダーは、この形式の*alias@domainname*では、フォルダーの名前のフォルダーにアップロードするすべてのファイルが収集されます。*Alias@domainname*は、Office 365 のユーザーのエイリアスとドメインである必要があります。*Alias@domainname*のすべてのフォルダーは、ルート フォルダーに収集できます。ルート フォルダーは、 *alias@domainname*フォルダーを含めることができますのみ、必要があります圧縮しないファイルのルート フォルダー
-* 電子的証拠開示マネージャーか、電子的証拠開示管理者 Microsoft Azure ストレージ ツールを Office 365 以外のコンテンツ フォルダーの構造体へのアクセスを持つコンピューターにインストールされているアカウントです。
-* インストールの AzCopy、ここから実行することができます。https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+
+- Office 365 E3 準拠の高度なアドオンや E5 サブスクリプションにします。
+
+- Office 365 以外のコンテンツがアップロードされるすべての通告は、準拠の高度なアドオンや E5 のライセンスを持つ E3 が必要です。
+
+- 既存の電子的証拠開示ケースです。
+
+- 保管担当者ごとの 1 つのフォルダーは、この形式の*alias@domainname*では、フォルダーの名前のフォルダーにアップロードするすべてのファイルが収集されます。*Alias@domainname*は、Office 365 のユーザーのエイリアスとドメインである必要があります。*Alias@domainname*のすべてのフォルダーは、ルート フォルダーに収集できます。ルート フォルダーは、 *alias@domainname*フォルダーを含めることができますのみ、必要があります圧縮しないファイルのルート フォルダーです。
+
+- 電子的証拠開示マネージャーか、電子的証拠開示管理者 Microsoft Azure ストレージ ツールを Office 365 以外のコンテンツ フォルダーの構造体へのアクセスを持つコンピューターにインストールされているアカウントです。
+
+- ここから行うことができる AzCopy をインストールします。https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>高度な電子的証拠開示に Office 365 以外のコンテンツをアップロードします。
+
 1. 電子的証拠開示マネージャーまたは管理者の電子的証拠開示では、高度な電子的証拠開示は、[Office 365 以外のデータをアップロードする場合に開きます。 **ワーキング セット**] タブをクリックし、ワーキング セットにない Office 365 のデータをロードするを選択します。 ワーキング セットをまだ作成していない場合これを行うようになりました。 最後に、[**管理の動作を設定**し、非 Office 365 のデータ セクションに**ビューのアップロード**] をクリックします。
 
 2. 非 Office 365 のデータのインポート ウィザードを起動するのには [**ファイルをアップロード**] ボタンをクリックします。

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2062c312-b1e4-4ce7-8cb2-ea39bc0dfdad
 description: OAuth のアプリケーションで Office 365 のクラウド アプリケーションのセキュリティでは、ユーザーが Office 365 のデータを使用するためにダウンロードするアプリケーションを管理できます。
-ms.openlocfilehash: 2e3c6d9d42b22aa8bb666211431197744471e84f
-ms.sourcegitcommit: 25f72d20e76463c2f0a075dfc0116f00c934bd77
+ms.openlocfilehash: ae32e3c6b15f4ad4794a3dd08c3992adaeba655c
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "27447045"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603688"
 ---
 # <a name="manage-oauth-apps-using-office-365-cloud-app-security"></a>Office 365 Cloud App Security を使用して OAuth アプリを管理する
 
@@ -35,13 +35,9 @@ ms.locfileid: "27447045"
 > [!NOTE]
 > OAuth のアプリケーションは、Office 365 のクラウド アプリケーションのセキュリティ関連ポータルで管理されます。次のタスクを実行するには、グローバル ・ アドミニストレーターまたはセキュリティ管理者である必要があります。については多くを参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。 
   
-1. [https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用して Office 365 にサインインします。(これで、セキュリティには、&amp;コンプライアンス センター)。 
-    
-2. **アラート**を参照して\>**詳細なアラートを管理**します。
-    
-3. をクリックして (またはタップ) **Office 365 のクラウド アプリケーションのセキュリティに移動**します。<br/>![セキュリティ&amp;コンプライアンス センターでは、Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>**注**: Office 365 のクラウド アプリケーションのセキュリティがまだオンにしない場合は、行うことができますこのページにします。[Office 365 のクラウド アプリケーションのセキュリティの準備](get-ready-for-office-365-cas.md)を参照してください。 
+1. クラウド アプリケーションのセキュリティ関連ポータルに移動 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) し、サインインします。
   
-4. **調査**を選択して\> **OAuth のアプリケーション**です。<br/>![O365 CA ポータルでは、調査を選択します。](media/OCAS-OAuthApps.png)<br/>
+2. **調査**を選択して\> **OAuth のアプリケーション**です。<br/>![O365 CA ポータルでは、調査を選択します。](media/OCAS-OAuthApps.png)<br/>
   
 ## <a name="what-youll-see-on-the-manage-oauth-apps-page"></a>OAuth の管理の [アプリ] ページに表示されます。
 
@@ -90,7 +86,7 @@ ms.locfileid: "27447045"
 
 4. (推奨)オプションを選択すると、ユーザーへの連絡をしてくださいと記載されている電子メール アドレスを確認 (または編集) します。
 
-5. [ **Submit**] を選びます。 
+5. [**送信**] を選択します。 
     
 ## <a name="create-an-app-query"></a>アプリケーション クエリを作成します。
 
@@ -119,7 +115,7 @@ ms.locfileid: "27447045"
     
 フィルターが自動的に適用し、アプリ一覧がそれに応じて更新します。
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [確認し、アラート アクションを実行](review-office-365-cas-alerts.md)
     

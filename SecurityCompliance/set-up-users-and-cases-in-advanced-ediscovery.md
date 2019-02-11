@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: 'ユーザー ロールを構成し、場合を作成し、Office 365 の高度な電子的証拠の開示の場合にユーザーを割り当てる方法について説明します。  '
-ms.openlocfilehash: 49f76b415d86035cecafc19c23b36c413f7576e5
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4c0043b7651cc82272492e19faf01041c6f67932
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532406"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29559060"
 ---
 # <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery でユーザーと とケースを設定する
 
 このトピックでは、ユーザーと Office 365 の高度な証拠開示のためのケースを設定する方法について説明します。
   
 > [!NOTE]
-> 高度な電子的証拠開示では、組織のコンプライアンスを高度なアドオンや、E5 のサブスクリプションの Office 365 E3 が必要です。その計画して高度な電子的証拠開示を実行する、 [Office 365 エンタープライズ E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)することができます。 
+> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
   
 ## <a name="prerequisites"></a>前提条件
 
@@ -61,7 +61,5 @@ ms.locfileid: "22532406"
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[データの準備をしています。](prepare-data-for-advanced-ediscovery.md)
-  
-[ユーザー ロールとアクセス](user-roles-and-access-in-advanced-ediscovery.md)
-
+[データの準備](prepare-data-for-advanced-ediscovery.md)
+ 

@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 6964cc00d7ae78078aa0729bd5408abd5ed9542a
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 11e2c336512c91d65bd046c3022d5375ebecde4a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608036"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695053"
 ---
-# <a name="collecting-data-for-a-case-in-advanced-ediscovery-preview"></a>高度な電子的証拠開示 (プレビュー) では大文字と小文字のデータを収集します。
+# <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>高度な電子的証拠開示 (プレビュー) では大文字と小文字のデータを収集します。
 
 通告し、大文字と小文字の興味のあるデータ ソースを識別した後にドキュメントのセットを識別する時間です。高度な電子的証拠開示 (プレビュー) での検索ツールを使用するには Office 365 の信託および非信託の場所からこれらを識別します。
 

@@ -3,7 +3,6 @@ title: 新しい Office 365 Message Encryption 機能を設定する
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 5/19/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,17 +11,22 @@ search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 description: Azure の情報保護、組織の上に組み込まれている機能が使用できる新しい Office 365 メッセージ暗号化では、電子メール、組織内外のユーザーとの通信が保護されています。ホームの新機能は、他の Office 365 の組織、Outlook.com、Gmail、その他の電子メール サービスと動作します。
-ms.openlocfilehash: 0f601b425da294fbb2ddbfe1d7497c0d582e3238
-ms.sourcegitcommit: bd1762ccf63c7d2ad8b49a936115171c72fb2c0f
+ms.openlocfilehash: a30054bf7b03a3e4fadf9a0e34537c682c10e217
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27750036"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696251"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>新しい Office 365 Message Encryption 機能を設定する
 
 Azure の情報保護の保護機能を活用するには、新しい Office 365 メッセージの暗号化 (ホーム) 機能を備えた組織は、任意のデバイス上の他のユーザーと保護された電子メールを簡単に共有できます。ユーザーは、他の Office 365 の組織と同様に Outlook.com、Gmail、その他の電子メール サービスを使用して Office 365 以外のお客様で保護されたメッセージを送受信することができます。
-  
+
+||
+|:-----|
+|この資料は、Office 365 のメッセージの暗号化についての記事の大規模な一連の一部です。この資料は、管理者および ITPros。だけを行う場合、暗号化されたメッセージを送受信する情報は[Office 365 メッセージの暗号化 (ホーム)](ome.md)内のアーティクルの一覧を参照してくださいし、お客様のニーズに最も適した記事を検索します。 |
+||
+
 ## <a name="get-started-with-ome-by-activating-azure-rights-management-part-of-azure-information-protection"></a>Azure の著作権管理、情報保護の Azure の一部をアクティブ化してホームを開始します。
 
 ホームの新機能を開始する簡単です。2018 年 2 月時点で Office 365 では、当社のデータ センター内で対象となる組織の新しいホーム機能が自動的に有効にします。組織は、新しい Office 365 テナント組織は、適切なサブスクリプションを持つ場合に対象となります。**Azure アクセス権管理 (Azure RMS)、Azure の情報の保護の一部を有効にした場合に自動的に Office 365 のメッセージの暗号化を有効にします**。ホームを有効にするのには何も行う必要はありません。Azure アクセス権の管理を有効にするのには、 [Azure アクセス権の管理をアクティブにする](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service)を参照してください。サブスクリプションについては、どのようなサブスクリプションが必要新しいホームの capabilities? を使用する" [Office 365 のメッセージの暗号化の FAQ](ome-faq.md)を参照してください。Azure の情報保護へのサブスクリプションの購入方法の詳細については、 [Azure の情報の保護](https://azure.microsoft.com/services/information-protection/)を参照してください。
@@ -36,10 +40,12 @@ Azure の情報保護の保護機能を活用するには、新しい Office 365
 新しい Office 365 のメッセージの暗号化機能では、Azure の情報保護と Azure アクセス権管理 (Azure RMS) とも呼ばれます、保護機能を使用します。これには、電子メールをセキュリティで保護する暗号化、id、および承認のポリシーが含まれます。権利テンプレートの管理、[転送不可] オプション](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)では、[暗号化専用のオプション](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)を使用してメッセージを暗号化できます。ユーザーは、これらのオプションを使用して、電子メール メッセージ、およびさまざまな Office 365 の添付ファイルを暗号化できます。サポートされている添付ファイルの種類の完全なリストでは[「ファイルの種類に覆われてメッセージに接続されたときに IRM ポリシー」で電子メール メッセージの IRM の概要](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)」を参照してください。管理者は、この保護を適用するメールの流れの規則を定義することもできます。たとえば、ルール、特定の受信者にアドレス指定するか、件名に特定の文字が含まれているすべての保護されていないメッセージは、不正なアクセスから保護されていると、受信者は、コピーまたはメッセージの内容を印刷することはできませんを定義できます。
   
 ホームの以前のバージョンとは異なり、組織内、または Office 365 の外部の受信者にメールを送信するかどうか、これらの新機能は送信者の統合されたエクスペリエンスを提供します。さらに、2016 の Outlook または Outlook web 上の Office 365 アカウントに送信される保護された電子メール メッセージを受信する受信者のメッセージを表示する追加アクションを実行する必要はありません。シームレスに動作します。その他の電子メール クライアントと電子メール サービス プロバイダーを使用して受信者には、改善された経験があります。については、 [Office 365 で保護されたメッセージを表示](https://support.office.com/article/Learn-about-protected-messages-in-Office-365-2baf3ac7-12db-40a4-8af7-1852204b4b67)し、[保護されたメッセージを開く方法](https://support.office.com/article/How-do-I-open-a-protected-message-1157a286-8ecc-4b1e-ac43-2a608fbf3098)を参照してください。
+
+ホームの以前のバージョンと新しいホーム機能の違いの詳細については、[ホームのバージョンの比較](ome-version-comparison.md)を参照してください。
   
 ## <a name="steps-to-manually-set-up-the-new-capabilities-for-ome"></a>ホームに、新しい機能を手動で設定する手順を実行します。
 
-組織に自動的に有効にすると、ホームがあるない場合、またはホームの電源をオンにした場合は、手順はホーム用の新しい機能を手動で設定します。
+ホームの新機能はほとんどの組織で Office 365 に自動的に有効です。組織に自動的に有効にすると、ホームがあるない場合、または、新しいホームの機能をオフにしている場合は、手順はホーム用の新しい機能を手動で設定します。
   
 ### <a name="to-manually-set-up-the-new-capabilities-for-ome"></a>ホームに、新しい機能を手動で設定するには
 
@@ -62,16 +68,19 @@ Azure の情報保護の保護機能を活用するには、新しい Office 365
 
 2. 次の構文を使用してテスト IRMConfiguration コマンドレットを実行します。
 
-    ```Test-IRMConfiguration [-Sender <email address >]```  
+     ```powershell
+     Test-IRMConfiguration [-Sender <email address >]
+     ```  
 
    次に例を示します。
 
-    ```Test-IRMConfiguration -Sender securityadmin@contoso.com```
+     ```powershell
+     Test-IRMConfiguration -Sender securityadmin@contoso.com
+     ```
 
     電子メール アドレスの Office 365 の組織内のユーザーの電子メール アドレスです。オプションであり、提供するときに、送信者の電子メール アドレスは追加チェックを実行するシステムを強制します。結果は、次のようになります。
 
-    
-    ```
+     ```text
     Results : Acquiring RMS Templates ...
                 - PASS: RMS Templates acquired.  Templates available: Contoso  - Confidential View Only, Contoso  - Confidential, Do Not 
             Forward.
@@ -81,11 +90,11 @@ Azure の情報保護の保護機能を活用するには、新しい Office 365
                 - PASS: Decryption verified successfully.
             Verifying IRM is enabled ...
                 - PASS: IRM verified successfully.
-            
+
             OVERALL RESULT: PASS
     ```
 
-    *Contoso 社*では、Office 365 の組織の名前に置き換えられます。 
+    *Contoso 社*では、Office 365 の組織の名前に置き換えられます。
 
     結果で返される既定のテンプレートの名前は、上記の結果に表示されるものとは異なる可能性があります。
 
@@ -93,10 +102,11 @@ Azure の情報保護の保護機能を活用するには、新しい Office 365
 
 3. 権限管理サービスから切断するのには削除 PSSession コマンドレットを実行するには。
     
-    ```Remove-PSSession $session```
+     ```powershell
+     Remove-PSSession $session
+     ```
 
 ## <a name="next-steps-define-new-mail-flow-rules-that-use-the-new-ome-capabilities"></a>次の手順: ホームの新機能を使用して、新規のメール フロー ルールを定義します。
-<a name="Rules_1"> </a>
 
 この手順では、ホームの新規導入では省略可能、ただし、この手順は、既にメール フロー ルール設定の送信メールを暗号化されている既存のホームの展開に必要です。ホームの新機能を利用する場合、既存のメール フロー ルールを更新する必要があります。それ以外の場合、ユーザーは引き続き、シームレスな新しいホームの経験ではなく HTML 添付ファイルの以前の形式を使用する暗号化されたメールを受信します。
   
