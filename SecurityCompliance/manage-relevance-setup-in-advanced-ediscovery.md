@@ -12,13 +12,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
-description: 'ファイルをそれぞれの関連度でスコアリングして分析結果を生成するには、Office 365 Advanced eDiscovery で関連度トレーニングを設定するための推奨事項を参照してください。  '
-ms.openlocfilehash: b2f1f848d14bdf77444c2026cbc675042c792542
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: ファイルをそれぞれの関連度でスコアリングして分析結果を生成するには、Office 365 Advanced eDiscovery で関連度トレーニングを設定するための推奨事項を参照してください。
+ms.openlocfilehash: 189c81bd415f94d4ded06fd13eaf5aea861b283d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531740"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27446348"
 ---
 # <a name="manage-relevance-setup-in-office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery で関連度の設定を管理する
 
