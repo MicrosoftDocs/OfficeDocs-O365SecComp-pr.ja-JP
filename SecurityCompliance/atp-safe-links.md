@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 02/05/2019
+ms.date: 02/11/2019
 ms.topic: overview
 f1_keywords:
 - "197503"
@@ -20,12 +20,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 安全なリンク機能は、Office ドキュメントや電子メール メッセージのハイパーリンクのクリックの検証を提供します。フィッシング詐欺やその他の攻撃から組織を保護するために安全なリンクを使用します。
-ms.openlocfilehash: 8c63de9e62e33dbca6dde5a5bb45a7f7875ab71f
-ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
+ms.openlocfilehash: 4d83aa65af47ea6723d6e2042c230fb2b07c174c
+ms.sourcegitcommit: 065f5e72676511b5ecf7f10a17685999780e92d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792242"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29888033"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 の ATP の安全なリンク機能
 
@@ -98,7 +98,7 @@ Office 365 ATP の安全なリンク ([高度な脅威保護](office-365-atp.md)
     
 - **ユーザーが Office 365 にサインインして**、職場、学校のアカウントを使用しています。(詳しくは、 [Office または Office 365 にサインイン](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)を参照してください)。
     
-- **組織の電子メールが Office 365 でホストされている**。 
+- **組織の電子メールが Exchange のオンライン保護を通過**。  
 
 ATP のポリシーを定義 (または編集) を割り当てる必要があります、次の表に記載されている役割のいずれか。
 

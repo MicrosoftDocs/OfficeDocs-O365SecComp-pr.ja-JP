@@ -3,7 +3,7 @@ title: Office 365 Message Encryption に関する FAQ
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/9/2018
+ms.date: 02/11/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Office 365 で新しいメッセージの保護機能のしくみについて質問があるでしょうか。ここで回答を確認します。
-ms.openlocfilehash: e35495106b44ccb566f4da743264def8c7d4f96f
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 8774d5e11bbd5b240cb1984e6d8b67b98bfa856e
+ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/11/2019
-ms.locfileid: "29696271"
+ms.locfileid: "29890038"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 Message Encryption に関する FAQ
 
@@ -48,7 +48,7 @@ Office 365 で新しいメッセージの保護機能のしくみについて質
 
 ホームの新機能を使用するには、次のプランのいずれかが必要です。
   
-- Office 365 Office 365 の E3 と E5、マイクロソフト E3 と E5、Office 365 の A1、A3、A5、および Office 365 の第 3 世代との G5 の一部としてメッセージの暗号化が提供されます。お客様では、Azure 情報保護により、新しい保護機能を表示するのには追加のライセンスは必要ありません。 
+- Office 365 の Office 365 エンタープライズ E3 と E5、Microsoft エンタープライズ E3 と E5、Microsoft 365 のビジネス、Office 365 の A1、A3、および A5、および Office 365 の政府第 3 世代と G5 の一部としてメッセージの暗号化が提供されます。お客様では、Azure 情報保護により、新しい保護機能を表示するのには追加のライセンスは必要ありません。 
     
 - Azure 情報保護計画する場合は 1 次が新しい Office 365 のメッセージの暗号化機能を受信する計画を追加することも: Exchange オンライン計画 1、Exchange オンライン計画 2、Office 365 の F1、Office 365 の業務に関する重要事項、Office 365 のビジネス プレミアム、またはOffice 365 エンタープライズ E1。
     
