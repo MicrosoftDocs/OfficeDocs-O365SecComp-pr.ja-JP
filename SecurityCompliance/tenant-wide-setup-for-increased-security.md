@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: テナント全体の設定を Office 365 環境内のセキュリティに影響を与えるための推奨される構成について説明します。セキュリティ ニーズは、セキュリティまたは短い必要があります。これらの推奨事項は、開始点として使用します。
-ms.openlocfilehash: fa5e5980fd28a360a1469ca65d6598e708ad44f6
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 0ec9d739f1347eee55c4c49df2abfcb7178b6d05
+ms.sourcegitcommit: 6bdba12c13c02f7d9a7297d3042933b100c4e481
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29786334"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29966201"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>セキュリティ強化のために、Office 365 テナントを構成する
 
@@ -37,7 +37,7 @@ Office 365 のセキュリティ&amp;コンプライアンス センターには
 |**ATP の安全な添付ファイル機能** <br/> |不要  <br/> | 安全な添付ファイルのメイン ページで、SharePoint、OneDrive、およびマイクロソフトのチーム内のファイルを保護このチェック ボックス。  <br/>  &ensp;&ensp;• および有効にする分析ツールで SharePoint、OneDrive、マイクロソフトのチーム  <br/> <br> これらの設定では、新しい安全な添付ファイル ポリシーを追加します。  <br/>  &ensp;&ensp;• ブロック-現在および将来の e メールおよび検出されたマルウェアの添付ファイルをブロックする (このオプションを選択します)  <br/>  &ensp;&ensp;• 有効にする」にリダイレクト: (チェック ボックスをオンし、管理や検査など、電子メール アドレスを入力してください)  <br/>  &ensp;&ensp;• は、マルウェアの添付ファイルのスキャンがタイムアウトになるか、エラーが発生した場合に上記の選択を適用します (チェック ボックスをオン)  <br/>  &ensp;&ensp;• に適用される、受信者のドメインにドメインを (選択)  <br/>  <br>詳細: [Office 365 の ATP の安全な添付ファイル ポリシーを設定します](set-up-atp-safe-attachments-policies.md) <br/> |
 |**ATP の安全なリンク** <br/> |はい  <br/> | この設定を組織全体の既定のポリシーに追加します。  <br/> &ensp;&ensp;• 内の安全なリンクを使用します。 Office 365 用リソース、オフィスの iOS と Android (このオプションを選択します)。  <br/> <br>特定の受信者に対するポリシーを推奨。  <br/>  &ensp;&ensp;• Url 書き換えし、するユーザーがリンクをクリックすると、既知の悪意のあるリンクの一覧に照らし合わせて確認 (このオプションを選択します)。  <br/>  &ensp;&ensp;• ダウンロード可能なコンテンツをスキャンするのには安全な添付ファイルを使用して (チェック ボックスをオン)。  <br/>  &ensp;&ensp;• に適用される、受信者のドメインにドメインを (選択) します。  <br/> <br> 詳細: [Office 365 の ATP の安全なリンク](atp-safe-links.md)です。  <br/> |
 |**スパム対策 (メール フィルター)** <br/> |はい  <br/> | 何を監視するには。  <br/>  &ensp;&ensp;• はスパムが多すぎる、カスタム設定を選択し、迷惑メール フィルターの既定のポリシーを編集します。  <br/>  &ensp;&ensp;• なりすましインテリジェンス-自分のドメインのスプーフィングは、送信者を確認します。ブロックまたは、これらの送信者を許可します。<br/>  <br>詳細: [Office 365 の電子メール スパム対策の保護](anti-spam-protection.md)。  <br/> |
-|***電子メールの認証*** <br/> |はい  <br/> |電子メールの認証は、電子メールの送信者の電子メール メッセージを検証可能な情報を追加するのにはドメイン ネーム システム (DNS) を使用します。Office 365 は、既定のドメイン (onmicrosoft.com)、電子メールの認証を設定しますが、Office 365 の管理者がカスタム ドメインの電子メールの認証も使用できます。3 つの認証方法が使用されます。<br/> <br> &ensp;&ensp;• 送信者ポリシー フレームワーク (SPF) ができます。セットアップでは、[スプーフィングを防止するために Office 365 の SPF を設定](set-up-spf-in-office-365-to-help-prevent-spoofing.md)を参照してください。<br/> &ensp;&ensp;• DomainKeys は、メール (DKIM) を識別します。DKIM を使用するには、[カスタム ドメインを Office 365 から送信された送信の電子メールを検証するために DKIM を使用して、](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)参照してください。<br>&ensp;&ensp;&ensp;&ensp;&ensp;-DKIM を構成した後を有効にできます、セキュリティでは、組織の&amp;コンプライアンス センターです。<br/> &ensp;&ensp;• ドメイン ベースのメッセージ認証では、レポート、および準拠 (DMARC)。DMARC を設定するには、 [Office 365 で電子メールを検証するために使用して DMARC](use-dmarc-to-validate-email.md)を参照してください。<br/>  <br/>
+|***電子メールの認証*** <br/> |はい  <br/> |電子メールの認証は、電子メールの送信者の電子メール メッセージを検証可能な情報を追加するのにはドメイン ネーム システム (DNS) を使用します。Office 365 は、既定のドメイン (onmicrosoft.com)、電子メールの認証を設定しますが、Office 365 の管理者がカスタム ドメインの電子メールの認証も使用できます。3 つの認証方法が使用されます。<br/> <br> &ensp;&ensp;• 送信者ポリシー フレームワーク (SPF) ができます。<br/>&ensp;&ensp;&ensp;&ensp;-セットアップの[スプーフィングを防止するために Office 365 の SPF の設定](set-up-spf-in-office-365-to-help-prevent-spoofing.md)を参照してください。 <br/> &ensp;&ensp;• DomainKeys は、メール (DKIM) を識別します。 <br/> &ensp;&ensp;&ensp;&ensp;-[カスタム ドメインを Office 365 で電子メールを使用して DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)を参照してください。 <br>&ensp;&ensp;&ensp;&ensp;-DKIM を構成した後で有効にするセキュリティ&amp;コンプライアンス センターです。<br/> &ensp;&ensp;• ドメイン ベースのメッセージ認証では、レポート、および準拠 (DMARC)。 </br> &ensp;&ensp;&ensp;&ensp;-DMARC を[Office 365 で電子メールを検証するために使用して DMARC](use-dmarc-to-validate-email.md)を設定します。<br/>  <br/>
 |
 
 > [!NOTE]

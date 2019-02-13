@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Office 365 では、暗号化に関する技術的な詳細を表示します。
-ms.openlocfilehash: bb4629d89d2ed625cc1b817c53d2355484bfdf6c
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: c11f152b18a15886fc8a5108e6df66dafe53a758
+ms.sourcegitcommit: 6bdba12c13c02f7d9a7297d3042933b100c4e481
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "28326938"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29966191"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>Office 365 の暗号化についてのテクニカル リファレンスの詳細
 
@@ -89,6 +89,9 @@ Office 365 は、TLS 1.0 と 1.1 の接続をブロックはこれといって�
 <a name="TLSCipherSuites"> </a>
 
 暗号スイートは、TLS がセキュリティで保護された接続を確立するために使用する暗号アルゴリズムのコレクションです。Office 365 でサポートされている暗号スイートを以下の表にまとめます。強度の高い暗号スイートから順に示しています。Office 365 が接続要求を受信すると、まず Office 365 は最初に挙げられている暗号スイートを使用して接続を試行します。接続できないと、一覧の 2 番目以降の暗号スイートを順に試行します。Office 365 が別のサーバーまたはクライアントに接続要求を送信する場合、受信側のサーバーまたはクライアントが、暗号スイートを選択するか、TLS を使用するかどうかを選択します。
+
+> [!IMPORTANT]
+> 対応する TLS のバージョンを廃止し、バージョン*は推奨されていない*新しいバージョンが利用を推奨します。つまり、1.1 および 1.2 ではサポートされて、その TLS 1.0 にリストには任意の場所 (TLS 1.2) の*最新*のバージョンを選択します。
   
 |**プロトコル**|**暗号スイート名**|**鍵交換アルゴリズム/強度**|**PFS (Perfect Forward Secrecy) サポート**|**認証アルゴリズム/強度**|**暗号/強度**|
 |:-----|:-----|:-----|:-----|:-----|:-----|

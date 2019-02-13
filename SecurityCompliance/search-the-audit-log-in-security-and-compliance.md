@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Office 365 セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: 848dbbdeb8b7cd9abd664b5ac401f6afde31c1e1
-ms.sourcegitcommit: c40eee4ef3890056da58649e4617283b0b9d1673
+ms.openlocfilehash: 41f6f2c90a0171b52807cbf46f15eebb1f16cc9a
+ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735469"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29890058"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Office 365 セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -281,7 +281,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 
 ## <a name="audited-activities"></a>監査されるアクティビティ
 
-このセクションの表では、Office 365 で監査されるアクティビティについて説明します。セキュリティ/コンプライアンス センターで監査ログを検索することで、これらのイベントを検索できます。ステップバイステップの手順については、[**監査ログの検索**] タブをクリックしてください。 
+このセクションの表では、Office 365 で監査されるアクティビティについて説明します。セキュリティ/コンプライアンス センターで監査ログを検索することで、これらのイベントを検索できます。
   
 これらの表では、関連するアクティビティまたは特定の Office 365 サービスのアクティビティがグループ分けされています。表には、[**アクティビティ**] ドロップダウン リストに表示されるフレンドリ名、および監査レコードの詳細情報と検索結果がエクスポートされた CSV ファイルに表示される、対応する操作名が含まれます。詳細情報については、「[Office 365 監査ログの詳細なプロパティ](detailed-properties-in-the-office-365-audit-log.md)」を参照してください。
   
@@ -293,9 +293,10 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |[同期アクティビティ](#synchronization-activities)<br/> |[サイト管理アクティビティ](#site-administration-activities)<br/> |[Exchange メールボックス アクティビティ](#exchange-mailbox-activities)<br/> |
 |[Sway アクティビティ](#sway-activities) <br/> |[ユーザー管理アクティビティ](#user-administration-activities) <br/> |[Azure AD グループ管理アクティビティ](#azure-ad-group-administration-activities) <br/> |
 |[アプリケーション管理アクティビティ](#application-administration-activities) <br/> |[役割管理アクティビティ](#role-administration-activities) <br/> |[ディレクトリ管理アクティビティ](#directory-administration-activities) <br/> |
-|[電子情報開示アクティビティ](#ediscovery-activities) <br/> |[Power BI アクティビティ](#power-bi-activities) <br/> |[Microsoft Teams アクティビティ](#microsoft-teams-activities) <br/> |
-|[Yammer アクティビティ](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft Stream](#microsoft-stream) <br/>|
-|[Exchange 管理者監査ログ](#exchange-admin-audit-log) <br/> |
+|[電子情報開示アクティビティ](#ediscovery-activities) <br/> |[Power BI アクティビティ](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|
+[Microsoft Teams アクティビティ](#microsoft-teams-activities) <br/> |[Yammer アクティビティ](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> 
+|[Microsoft Stream](#microsoft-stream) <br/>|[Exchange 管理アクティビティ](#exchange-admin-audit-log)<br/>
+||||
    
   
 ### <a name="file-and-page-activities"></a>ファイル アクティビティとページ アクティビティ
@@ -326,6 +327,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |ファイルのアップロード  <br/> |FileUploaded  <br/> |ユーザーがサイトのフォルダーにドキュメントをアップロードしました。  <br/> |
 |ページの表示  <br/> |PageViewed  <br/> |ユーザーがサイトのページを表示します。これには、Web ブラウザー使用してドキュメント ライブラリ内にあるファイルを表示する操作は含まれません。  <br/> |
 |(なし)  <br/> |PageViewedExtended  <br/> |これは、「ページが表示されました」 (PageViewed) アクティビティに関連します。PageViewedExtended イベントは、同一人物が長時間 (最長 3 時間) 継続して Web ページを表示した場合に記録されます。PageViewedExtended イベントを記録する目的は、ページが継続的に表示されたときに記録される PageViewed イベントの件数を削減することです。これは、基本的に同一のユーザー アクティビティに関する複数の余分な PageViewed レコードを削減して、最初の (より重要な) PageViewed イベントに集中するのに役立ちます。  <br/> |
+||||
   
 ### <a name="folder-activities"></a>フォルダー アクティビティ
   
@@ -342,6 +344,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |フォルダーの移動  <br/> |FolderMoved  <br/> |ユーザーがフォルダーをサイトの別の場所に移動しました。  <br/> |
 |フォルダーの名前変更  <br/> |FolderRenamed  <br/> |ユーザーがサイトのフォルダーの名前を変更しました。  <br/> |
 |フォルダーの復元  <br/> |FolderRestored  <br/> |ユーザーがサイトのごみ箱から削除されたフォルダーを復元しました。  <br/> |
+||||
   
 ### <a name="sharing-and-access-request-activities"></a>共有アクティビティとアクセス要求アクティビティ
   
@@ -382,6 +385,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |セキュリティで保護されたリンクへのユーザーの追加  <br/> |AddedToSecureLink  <br/> |ユーザーが、セキュリティで保護された共有リンクを使用できるエンティティの一覧に追加されました。  <br/> |
 |セキュリティで保護されたリンクからのユーザーの削除  <br/> |RemovedFromSecureLink  <br/> |ユーザーが、セキュリティで保護された共有リンクを使用できるエンティティの一覧から削除されました。  <br/> |
 |共有への招待の取り消し  <br/> |SharingInvitationRevoked  <br/> |ユーザーが、リソースの共有への招待を取り消しました。  <br/> |
+||||
   
 ### <a name="synchronization-activities"></a>同期アクティビティ
   
@@ -395,6 +399,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |コンピューターへのファイル変更のダウンロード  <br/> |FileSyncDownloadedPartial  <br/> |ユーザーがファイルに対する変更をドキュメント ライブラリから正常にダウンロードしました。このアクティビティは、ドキュメント ライブラリ内のファイルに加えられた変更がユーザーのコンピューターにダウンロードされたことを示します。ドキュメント ライブラリは、(**コンピューターへのファイルのダウンロード** アクティビティで示されているように) 以前にユーザーによってダウンロードされているため、変更のみがダウンロードされました。<br/> |
 |ドキュメント ライブラリへのファイルのアップロード  <br/> |FileSyncUploadedFull  <br/> |ユーザーが同期関係を確立して、コンピューターからドキュメント ライブラリに初めてファイルを正常にアップロードしました。  <br/> |
 |ドキュメント ライブラリへのファイル変更のアップロード  <br/> |FileSyncUploadedPartial  <br/> |ユーザーがドキュメント ライブラリのファイルに変更を正常にアップロードしました。このイベントは、ドキュメント ライブラリのファイルのローカル バージョンに加えた変更が、ドキュメント ライブラリに正常にアップロードされたことを示します。それらのファイルは、(**ドキュメント ライブラリへのファイルのアップロード** アクティビティで示されているように) 以前にユーザーによってアップロードされているため、変更のみがアップロードされます。  <br/> |
+||||
   
 ### <a name="site-administration-activities"></a>サイト管理アクティビティ
   
@@ -432,6 +437,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |サイトの地域の移動のスケジュール設定  <br/> |SiteGeoMoveScheduled  <br/> |SharePoint 管理者または全体管理者が、SharePoint サイトまたは OneDrive サイトの地域の移動のスケジュールを正常に設定しました。Multi-Geo Capabilities を使用すると、Office 365 組織は複数の Office 365 データセンター地域 (geo と呼ばれる) にまたがることができます。詳細については、「[Office 365 の OneDrive および SharePoint Online での Multi-Geo Capabilities](https://go.microsoft.com/fwlink/?linkid=860840)」を参照してください。<br/> |
 |ホスト サイトの設定  <br/> |HostSiteSet  <br/> |SharePoint 管理者または全体管理者が、個人用サイトまたは OneDrive for Business サイトをホストするために指定されたサイトを変更しました。  <br/> |
 |グループの更新  <br/> |GroupUpdated  <br/> |サイトの管理者または所有者がサイトのグループの設定を変更しました。これには、グループ名の変更、グループのメンバーシップを表示または変更できるユーザーの変更、メンバーシップ要求の処理方法の変更などがあります。  <br/> |
+||||
   
 ### <a name="exchange-mailbox-activities"></a>Exchange メールボックス アクティビティ
   
@@ -454,6 +460,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |メッセージの更新  <br/> |Update  <br/> |メッセージまたはそのプロパティが変更されました。  <br/> |
 |メールボックスへのユーザーのサインイン  <br/> |MailboxLogin  <br/> |ユーザーが自分のメールボックスにサインインしました。  <br/> |
 |(なし)  <br/> |UpdateInboxRules  <br/> |受信トレイ ルールが、追加、削除、または変更されました。受信トレイ ルールを使用して、指定された条件に基づいて受信ボックス内のメッセージを処理し、ルールの条件と一致した場合は、指定されたフォルダーへのメッセージの移動やメッセージの削除などのアクションを実行します。<br/> 受信トレイ ルール アクティビティのエントリを返すには、[**アクティビティ**] の一覧で [**すべてのアクティビティの結果を表示**] を選択する必要があります。検索結果を絞り込むには、日付範囲ボックスと [**ユーザー**] の一覧を使用します。<br/> |
+||||
   
 ### <a name="sway-activities"></a>Sway アクティビティ
   
@@ -475,6 +482,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |Sway のサービスの無効化  <br/> |SwayServiceOff  <br/> |管理者が、Office 365 管理センターを使用して、組織全体に対し、Sway を無効にしました。  <br/> |
 |Sway のサービスの有効化  <br/> |SwayServiceOn  <br/> |管理者が、Office 365 管理センターを使用して、組織全体に対し、Sway を有効にしました (Sway サービスは、既定で有効になります)。  <br/> |
 |Sway の表示  <br/> |SwayView  <br/> |ユーザーが Sway を表示しました。  <br/> |
+||||
 
   
 ### <a name="user-administration-activities"></a>ユーザー管理アクティビティ
@@ -491,6 +499,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |ユーザーへパスワードの変更を強制するプロパティの設定  <br/> |Set force change user password  <br/> |管理者が、ユーザーが次に Office 365 にサインインしたときにパスワードを強制的に変更させるプロパティを設定しました。  <br/> |
 |ライセンス プロパティの設定  <br/> |Set license properties  <br/> |管理者が、ユーザーに割り当てられたライセンスのプロパティを変更しました。  <br/> |
 |ユーザーの更新  <br/> |Update user  <br/> |管理者がユーザー アカウントの 1 つ以上のプロパティを変更しました。更新可能なユーザー プロパティの一覧については、「[Azure Active Directory 監査レポート イベント](https://go.microsoft.com/fwlink/p/?LinkID=616549)」の「ユーザー属性の更新」セクションを参照してください。<br/> |
+||||
   
 ### <a name="azure-ad-group-administration-activities"></a>Azure AD グループ管理アクティビティ
   
@@ -503,6 +512,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |グループの削除  <br/> |Delete group  <br/> |グループが削除されました。  <br/> |
 |グループからのメンバーの削除  <br/> |Remove member from group  <br/> |メンバーがグループから削除されました。  <br/> |
 |グループの更新  <br/> |Update group  <br/> |グループのプロパティが変更されました。  <br/> |
+||||
    
 ### <a name="application-administration-activities"></a>アプリケーション管理アクティビティ
   
@@ -517,6 +527,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |ディレクトリからのサービス プリンシパルの削除  <br/> |Remove service principal  <br/> |Azure AD からアプリケーションが削除/登録解除されました。Azure AD では、アプリケーションはサービス プリンシパルで表されます。  <br/> |
 |サービス プリンシパルからの資格情報の削除  <br/> |Remove service principal credentials  <br/> |Azure AD 内のサービス プリンシパルから資格情報が削除されました。Azure AD では、サービス プリンシパルはアプリケーションを表します。  <br/> |
 |委任エントリの設定  <br/> |Set delegation entry  <br/> |Azure AD 内のアプリケーションの認証アクセス許可が更新されました。  <br/> |
+||||
 
 ### <a name="role-administration-activities"></a>役割管理アクティビティ
   
@@ -527,6 +538,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |役割へのメンバーの追加  <br/> |Add role member to role  <br/> |Office 365 の管理者の役割にユーザーが追加されました。  <br/> |
 |ディレクトリ ロールからのユーザーの削除  <br/> |Remove role member from role  <br/> |Office 365 の管理者の役割からユーザーが削除されました。  <br/> |
 |会社の連絡先情報の設定  <br/> |Set company contact information  <br/> |Office 365 組織の会社レベルの連絡先設定が更新されました。これには、Office 365 によって送信されるサブスクリプション関連のメールのメール アドレスに加えて、Office 365 サービスに関する技術情報の通知も含まれます。  <br/> |
+||||
    
 ### <a name="directory-administration-activities"></a>ディレクトリ管理アクティビティ
   
@@ -546,6 +558,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |ドメインの更新  <br/> |Update domain  <br/> |Office 365 組織内のドメインの設定が更新されました。  <br/> |
 |ドメインの検証  <br/> |Verify domain  <br/> |組織がドメインの所有者であるかどうかが検証されました。  <br/> |
 |メールで確認済みのドメインの検証  <br/> |Verify email verified domain  <br/> |メールによる確認を使用して、組織がドメインの所有者であるかどうかが検証されました。  <br/> |
+||||
    
 ### <a name="ediscovery-activities"></a>電子情報開示アクティビティ
   
@@ -572,6 +585,24 @@ Office 365 監査ログでは、Office 365 セキュリティ/コンプライア
   
 Power BI の監査ログは、既定で有効にはならないことに注意してください。Office 365 監査ログで Power BI アクティビティを検索するには、Power BI 管理ポータルで監査を有効にする必要があります。手順については、[Power BI 管理ポータル](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs)の [監査ログ] セクションを参照してください。
   
+### <a name="microsoft-workplace-analytics-activities"></a>Microsoft Workplace Analytics アクティビティ
+
+次の表に、Office 365 監査ログに記録される Microsoft Workplace Analytics での管理者とアナリストのアクティビティを一覧表示しています。Workplace Analytics は、Office 365 組織全体でグループが共同作業を行う方法を説明します。詳細については、「[Workplace Analytics](https://docs.microsoft.com/ja-JP/workplace-analytics/index-orig)」を参照してください。
+
+|**フレンドリ名**|**操作名**|**説明**|
+|:-----|:-----|:-----|
+|OData リンクのアクセス <br/> |AccessedOdataLink <br/> |アナリストはクエリの OData リンクにアクセスしました。|
+|クエリのキャンセル <br/> |CanceledQuery <br/> |アナリストはクエリの実行をキャンセルしました。|
+|会議の除外の作成 <br/> |MeetingExclusionCreated <br/> |アナリストは新しい会議の除外ルールを作成しました。|
+|結果の削除 <br/> |DeletedResult <br/> |アナリストはクエリ結果を削除しました。|
+|レポートのダウンロード <br/> |DownloadedReport <br/> |アナリストはクエリ結果のファイルをダウンロードしました。|
+|クエリの実行 <br/> |ExecutedQuery <br/> |アナリストはクエリを実行しました。|
+|データ アクセス設定の更新 <br/> |UpdatedDataAccessSetting <br/> |管理者はデータ アクセス設定を更新しました。|
+|プライバシー設定の更新 <br/> |UpdatedPrivacySetting <br/> |管理者は、プライバシーの設定 (最小グループ サイズなど) を更新しました。|
+|組織データのアップロード <br/> |UploadedOrgData <br/> |管理者は組織データのファイルをアップロードしました。|
+|参照の表示 <br/> |ViewedExplore <br/> |アナリストは、1 つまたは複数の参照ページ タブで視覚エフェクトを表示しました。|
+||||
+
 ### <a name="microsoft-teams-activities"></a>Microsoft Teams アクティビティ
   
 次の表では、Office 365 監査ログに記録される Microsoft Teams のユーザー アクティビティと管理者アクティビティを一覧表示します。Microsoft Teams は、Office 365 のチャット中心のワークスペースで、チームの会話、会議、ファイル、メモを 1 か所にまとめることができます。詳細およびヘルプ トピックへのリンクについては、次の Web ページを参照してください。
@@ -601,6 +632,7 @@ Power BI の監査ログは、既定で有効にはならないことに注意�
 |コネクタの更新  <br/> |ConnectorUpdated  <br/> |ユーザーがチャネルのコネクタを変更しました。  <br/> |
 |タブの更新  <br/> |TabUpdated  <br/> |ユーザーがチャネルのタブを変更しました。  <br/> |
 |Teams へのユーザーのサインイン  <br/> |TeamsSessionStarted  <br/> |ユーザーが Microsoft Teams クライアントにサインインしました。  <br/> |
+||||
 
 ### <a name="yammer-activities"></a>Yammer アクティビティ
   
@@ -625,6 +657,7 @@ Power BI の監査ログは、既定で有効にはならないことに注意�
 |ファイルの説明の更新  <br/> |FileUpdateDescription  <br/> |ユーザーがファイルの説明を変更しました。  <br/> |
 |ファイル名の更新  <br/> |FileUpdateName  <br/> |ユーザーがファイルの名前を変更しました。  <br/> |
 |ファイルの表示  <br/> |FileVisited  <br/> |ユーザーがファイルを表示しました。  <br/> |
+||||
    
 ### <a name="microsoft-flow"></a>Microsoft Flow
 
