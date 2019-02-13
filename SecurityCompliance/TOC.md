@@ -10,7 +10,6 @@
 ## [Office 365 でセキュリティとコンプライアンスを計画する](plan-for-security-and-compliance.md)
 # データやサービスへのアクセスを保護する
 ## [Office 365 でデータやサービスへのアクセスを保護する](protect-access-to-data-and-services.md)
-## [MDM または Intune を選択する](choose-between-mdm-and-intune.md)
 
 # 情報を保護する
 ## [機密ラベル](sensitivity-labels.md)
