@@ -3,7 +3,7 @@ title: エクスプ ローラーを使用して、セキュリティで&amp;コ�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/26/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
+ms.collection: M365-security-compliance
 description: (脅威のエクスプ ローラーとも呼ばれます) エクスプ ローラーについては、セキュリティで&amp;コンプライアンス センターです。
-ms.openlocfilehash: c5b6273120c605cb4233f62b5c52c6a794e554eb
-ms.sourcegitcommit: 0cc6083bd8cb2f7bbf18847149c6d5239f2a6403
+ms.openlocfilehash: 16f5b15c6993301f4f324f4b84c3b6e61f255e0f
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26699930"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995118"
 ---
 # <a name="use-explorer-in-the-security-amp-compliance-center"></a>エクスプ ローラーを使用して、セキュリティで&amp;コンプライアンス センター
 
@@ -27,6 +28,9 @@ ms.locfileid: "26699930"
 ![脅威の管理に移動\>エクスプ ローラー](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
 セキュリティでエクスプ ローラーを使用する&amp;コンプライアンス センターでは、**脅威の管理**に移動\>**エクスプ ローラー**です。
+
+> [!IMPORTANT]
+> 2019 の 2 月に開始し、今後数か月にロールアウト、Office 365 の脅威インテリジェンスは Office 365 高度な脅威保護計画 2、あらたな脅威保護機能となりつつあります。詳細については、 [Office 365 の高度な脅威保護の計画と価格設定](https://products.office.com/exchange/advance-threat-protection)と[Office 365 高度な脅威保護サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)を参照してください。
       
 ## <a name="explorer-overview"></a>エクスプ ローラーの概要
 

@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
+ms.collection: M365-security-compliance
 description: 検索し、Office 365 の企業で、組織の電子メール セキュリティのレポートを使用する方法について説明します。電子メール セキュリティのレポートは、セキュリティで利用可能な&amp;コンプライアンス センターです。
-ms.openlocfilehash: 3fc6d3dd8468bc060efcaa7eadec2ff9257fe583
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 0c9b4c4c75f1e2996217bea600b9d36145b30339
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014989"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995298"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>セキュリティで電子メールのセキュリティ レポートを表示する&amp;コンプライアンス センター
 
@@ -176,14 +177,14 @@ ms.locfileid: "28014989"
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>これらのレポートを表示するのにはどのようなアクセス許可が必要か。
 
-表示し、この資料に記載されているレポートを使用するために**セキュリティの両方に割り当てられている適切なロールを持つ必要があります&amp;コンプライアンス センターと、Exchange 管理センター**です。
+表示し、この資料に記載されているレポートを使用するために **、両方のセキュリティの割り当て、適切な役割をする必要があります&amp;コンプライアンス センターと、Exchange 管理センター**です。
 
 - セキュリティの&amp;コンプライアンス センターでは、する必要があります次に割り当てられている役割の 1 つ。
     - 組織の管理
-    - セキュリティ管理者
+    - セキュリティ管理者 (これは、Azure Active Directory 管理センターに割り当てることができる ([https://aad.portal.azure.com](https://aad.portal.azure.com))
     - セキュリティ リーダー
 
-- Exchange Online では、する必要があります次に割り当てられている役割の 1 つ。
+- Exchange online では、次の Exchange 管理センターに割り当てられているロールのいずれかが必要 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) または PowerShell コマンドレット ( [Exchange のオンライン PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)を参照してください)。
     - 組織の管理
     - 表示限定の組織管理
     - "View-Only Recipients/表示専用受信者" 役割

@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Office 365 環境を保護するセキュリティ機能を実装するためのマイクロソフトの cybersecurity のチームからの推奨事項です。 '
-ms.openlocfilehash: 58767ea9a2b825d1583d9135f9d8edcb0d20d7c2
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: ce7b4371a284763c506ea4e1a06a63dbf2968ae5
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "25450082"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995288"
 ---
 # <a name="office-365-security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Office 365 のセキュリティ ロードマップの最初の 30 日、90 日間での内外の最優先事項
 
@@ -57,7 +58,7 @@ ms.locfileid: "25450082"
   
 |||
 |:-----|:-----|
-|項目  <br/> |タスク  <br/> |
+|項目  <br/> |Tasks  <br/> |
 |セキュリティ管理  <br/> |• は、セキュリティで保護されたスコアを確認し、注意してください、現在のスコアの ( [https://securescore.office.com](https://securescore.office.com))。  <br/>  • は、Office 365 の監査ログを有効にします。参照してください[では、Office 365 のセキュリティ監査ログを検索する&amp;コンプライアンス センター](search-the-audit-log-in-security-and-compliance.md)です。<br/> •[セキュリティ強化のため、Office 365 のテナントを構成](tenant-wide-setup-for-increased-security.md)します。  <br/>  • は、ダッシュ ボードおよびレポートでは、Office 365 のセキュリティとコンプライアンス センターおよびクラウド アプリケーションのセキュリティを定期的に確認します。  <br/> |
 |脅威保護  <br/> |脅威の検出の既定のポリシーを使用して、異常な動作の監視を開始するのには[マイクロソフトのクラウド アプリケーションのセキュリティに Office 365 を接続](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)をします。異常検出の基準計画を作成するのには 7 日間がかかります。<br><br/>  管理者アカウントの保護を実装します。  <br/> • 専用の使用の管理では、管理アクティビティが占めています。  <br/>  • は、管理者アカウント用の多要素認証 (MFA) を適用します。  <br/>  [安全性の高い Windows 10 デバイス](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-highly-secure)を使用して管理活動の •。  <br/> |
 |ID およびアクセス管理  <br/> |• は[Azure Active Directory Id の保護を有効に](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable)します。  <br/> • フェデレートされた識別情報の環境では、アカウントのセキュリティ (パスワードの長さ、年齢、複雑さなど) を適用します。  <br/> |

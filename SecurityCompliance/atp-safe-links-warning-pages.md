@@ -11,13 +11,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
+ms.collection:
+- M365-security-compliance
 description: 作業が Office 365 の高度な脅威保護の場合を参照する可能性があります警告ページの概要を取得します。
-ms.openlocfilehash: 422bdabf0593dd154461f973f86a4c1ca94e8651
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: ac8de545fd5e54d66168c83671cbe262665bb135
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29686356"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995268"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 の ATP の安全なリンク警告ページ
 

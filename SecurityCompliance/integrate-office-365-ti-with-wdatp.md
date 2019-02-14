@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
+ms.collection: M365-security-compliance
 description: Windows Defender 高度な脅威保護の脅威の管理の詳細を表示するには、Office 365 の高度な脅威保護を統合します。
-ms.openlocfilehash: e5070e003972ae5308415dcdcca85b069d1163ac
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: f8f5f50af10fb668aa67b68604e95e8dd19c9e69
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29382540"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995208"
 ---
 # <a name="integrate-office-365-threat-intelligence-with-windows-defender-advanced-threat-protection"></a>Windows Defender Advanced Threat Protection と Office 365 脅威インテリジェンスを統合する
 

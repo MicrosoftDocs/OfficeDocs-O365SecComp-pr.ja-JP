@@ -11,17 +11,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
+ms.collection: M365-security-compliance
 description: 脅威のトラッカーの組織のセキュリティ上の問題の詳細に把握するための新しい注目に値するトラッカーを含むについて説明します。
-ms.openlocfilehash: 7729a78d0b18df7d73751f4480ef095bedc5965b
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 06fdd24e545a3ee04bccf177d777efea31fbe137
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014999"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995308"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>脅威トラッカー - 新機能とNoteworthy 機能 
 
 [Office 365 の脅威インテリジェンス](office-365-ti.md)は、組織のセキュリティ チームを検出し、cybersecurity の脅威に対処するを有効にします。遅延 2018年 3 月で、次の数週間を開始するには、Office 365 の脅威インテリジェンスでは注目に値するトラッカーを含む、脅威の追跡ツールの新機能が含まれます。これらの新機能と次の手順の概要を取得するには、この資料を参照してください。 
+
+> [!IMPORTANT]
+> 2019 の 2 月に開始し、今後数か月にロールアウト、Office 365 の脅威インテリジェンスは Office 365 高度な脅威保護計画 2、あらたな脅威保護機能となりつつあります。詳細については、 [Office 365 の高度な脅威保護の計画と価格設定](https://products.office.com/exchange/advance-threat-protection)と[Office 365 高度な脅威保護サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)を参照してください。
   
 ## <a name="what-are-threat-trackers"></a>トラッカーの脅威を挙げてください。
 

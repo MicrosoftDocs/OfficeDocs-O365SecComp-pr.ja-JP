@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
+ms.collection: M365-security-compliance
 description: 電子メールに悪意のあるファイルから組織を保護するために安全な添付ファイル ポリシーを定義します。
-ms.openlocfilehash: 2f33114d46778f2f01f5a263a05c320f75fad49e
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: c089d46da2070f32f2452bab1fd2f7c15a39861c
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755218"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995388"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Office 365 ATP の安全な添付ファイル ポリシーを設定します
 
@@ -89,7 +90,7 @@ ATP の安全な添付ファイル ポリシーを設定する場合とは、モ
 |**動的な配信** <br/> |すぐにメッセージを配信します。  <br/> スキャンが完了し、添付ファイルがマルウェアが検出されない場合に再接続されるまで、プレース ホルダー ファイルで添付ファイルを置き換えます  <br/> ほとんどの Pdf や Office の機能をプレビューする添付ファイルを含むファイルをスキャン中に  <br/> 検疫は、セキュリティ管理者またはアナリストことができますを確認し、リリース (または削除) これらのメッセージに検出されたマルウェアにメッセージを送信します。  <br/> [動的な配信および ATP の安全な添付ファイルのプレビューについてください。](dynamic-delivery-and-previewing.md) <br/> |メッセージの遅延を避けるため、悪意のあるファイルから受信者を保護しながら  <br/> スキャンの実行中に、セーフ モードで添付ファイルをプレビューするのには受信者を有効にします。  <br/> |
 |**リダイレクトを有効にします。** <br/> |モニター、ブロック、または置換オプションを選択した場合に適用されます。  <br/> 指定された電子メール アドレスに添付ファイルの送信、セキュリティ管理者またはアナリストを調べることができます。  <br/> |不審な添付ファイルを調査するには、セキュリティ管理者やアナリストを有効にします。  <br/> |
    
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 ATP の安全な添付ファイル ポリシーがあると、レポートを表示することによって、組織の分析ツールが動作して方法を確認できます。詳細については、次のリソースを参照してください。
 - [Office 365 の高度な脅威保護のためのレポートを表示します。](view-reports-for-atp.md)

@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
+ms.collection: M365-security-compliance
 description: 脅威のインテリジェンス機能の高度な脅威保護行う方法、組織に対する脅威を調査、マルウェア、フィッシング、および Office 365 がお客様に代わって、検出されたその他の攻撃への対応、および脅威の評価指標の検索を確認します。
-ms.openlocfilehash: 5dfd0377c4cafe89c5f69ea080f07d04d892329e
-ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
+ms.openlocfilehash: 632a2387e7cb5a30745459383e670d08c9b84aff
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792262"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995098"
 ---
 # <a name="office-365-threat-intelligence"></a>Office 365 脅威インテリジェンス
 

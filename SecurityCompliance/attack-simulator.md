@@ -3,7 +3,7 @@ title: Office 365 の攻撃シミュレータ
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/02/2019
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,17 +12,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
+ms.collection:
+- M365-security-compliance
 description: Office 365 グローバル管理者は、組織内で現実的な攻撃のシナリオを実行するのに攻撃のシミュレータを使用できます。これを識別し、実際の攻撃では、お客様のビジネスをヒットする前に、脆弱性のあるユーザーを検索することができます。
-ms.openlocfilehash: 3449e29197aa5a7a0b63a805ad8cc429f8f8f81b
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 77de6af6546ae584e3bd25c0d1a59d9f26928f33
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015039"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995168"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 の攻撃シミュレータ
 
 **概要**Office 365 のグローバル管理者、組織が[Office 365 の脅威のインテリジェンス](office-365-ti.md)を持つ場合は、組織内で現実的な攻撃のシナリオを実行する攻撃のシミュレータを使用できます。これを識別し、実際の攻撃で、一番下の行に影響を与える前に脆弱性のあるユーザーを検索することができます。詳細については、この資料を参照してください。
+
+> [!IMPORTANT]
+> 2019 の 2 月に開始し、今後数か月にロールアウト、Office 365 の脅威インテリジェンスは Office 365 高度な脅威保護計画 2、あらたな脅威保護機能となりつつあります。詳細については、 [Office 365 の高度な脅威保護の計画と価格設定](https://products.office.com/exchange/advance-threat-protection)と[Office 365 高度な脅威保護サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)を参照してください。
   
 ## <a name="the-attacks"></a>攻撃
 

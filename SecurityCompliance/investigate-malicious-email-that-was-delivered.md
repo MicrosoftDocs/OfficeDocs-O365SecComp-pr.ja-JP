@@ -3,7 +3,7 @@ title: 検索し、(Office 365 の脅威インテリジェンス) に配信さ�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/6/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,20 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
+ms.collection: M365-security-compliance
 description: 脅威インテリジェンスを使用して検出し、悪意のある電子メールを調査する方法について説明します。
-ms.openlocfilehash: b6d4f8a5d1fcfce4461b91796b1264f94d1eb4d1
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: c7492ccf2a7fa5d67b256264c6ed6fbdb06bcbc8
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014919"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995188"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>検索し、(Office 365 の脅威インテリジェンス) に配信された悪意のある電子メールを調査
 
 [Office 365 の脅威インテリジェンス](office-365-ti.md)を使用すると、ユーザーを危険にさらされ、組織を保護するためにアクションを実行するアクティビティを調べることができます。などの組織のセキュリティ チームの一部の場合は、検索して、ユーザーに配信された不審な電子メール メッセージを調査します。[脅威のエクスプ ローラー](get-started-with-ti.md#threat-explorer)を使用してこれを行うことができます。
   
-> [!NOTE]
-> 脅威インテリジェンスを office 365 は、Office 365 エンタープライズ E5 に使用できます。組織は、別の Office 365 エンタープライズ サブスクリプションで使用されている場合、Office 365 の脅威インテリジェンスはアドオンとして購入できます。(グローバル管理者は、Office 365 管理センターを選択して**請求** \> **サブスクリプションを追加**します)。詳細についてを参照してください[Office 365 のプラットフォーム サービスの説明: Office 365 のセキュリティ&amp;コンプライアンス センター](https://technet.microsoft.com/en-us/library/dn933793.aspx) [購入またはビジネスのための Office 365 のアドオンを編集](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)するとします。 
+> [!IMPORTANT]
+> 2019 の 2 月に開始し、今後数か月にロールアウト、Office 365 の脅威インテリジェンスは Office 365 高度な脅威保護計画 2、あらたな脅威保護機能となりつつあります。詳細については、 [Office 365 の高度な脅威保護の計画と価格設定](https://products.office.com/exchange/advance-threat-protection)と[Office 365 高度な脅威保護サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)を参照してください。
   
 ## <a name="before-you-begin"></a>始める前にしています.
 

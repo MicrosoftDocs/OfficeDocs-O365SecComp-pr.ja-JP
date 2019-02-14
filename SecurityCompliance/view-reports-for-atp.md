@@ -3,7 +3,7 @@ title: Office 365 の高度な脅威保護のためのレポートを表示し�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/07/2019
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
+ms.collection: M365-security-compliance
 description: 検索し、Office 365 高度な脅威保護、セキュリティでのレポートを使用する方法を説明&amp;コンプライアンス センターです。
-ms.openlocfilehash: a17f182f5c8d79e7863b26324a3c073ef18f14c9
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: a27fdf6c7d04a2526873047d4e2a33bb283878b3
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014949"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995228"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 の高度な脅威保護のためのレポートを表示します。
 
@@ -79,7 +80,6 @@ ATP のレポートには、[脅威保護の状態のレポート](#threat-prote
 
 ATP レポートは、この資料に記載されている、だけでなく他のいくつかのレポートがある、次の表に示すよう。
 
-
 |レポートの種類  |詳細情報  |
 |---------|---------|
 |**電子メール セキュリティのレポート**上位の送信者と受信者のレポート、なりすましメール レポート、スパム検出レポートなどです。 | [セキュリティで電子メールのセキュリティ レポートを表示する&amp;コンプライアンス センター](view-email-security-reports.md)        |
@@ -90,14 +90,14 @@ ATP レポートは、この資料に記載されている、だけでなく他�
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>ATP のレポートを表示するのにはどのようなアクセス許可が必要か。
 
-表示し、この資料に記載されているレポートを使用するために**セキュリティの両方に割り当てられている適切なロールを持つ必要があります&amp;コンプライアンス センターと、Exchange 管理センター**です。
+表示し、この資料に記載されているレポートを使用するために **、両方のセキュリティの割り当て、適切な役割をする必要があります&amp;コンプライアンス センターと、Exchange 管理センター**です。
 
 - セキュリティの&amp;コンプライアンス センターでは、する必要があります次に割り当てられている役割の 1 つ。
     - 組織の管理
-    - セキュリティ管理者
+    - セキュリティ管理者 (これは、Azure Active Directory 管理センターに割り当てることができる ([https://aad.portal.azure.com](https://aad.portal.azure.com))
     - セキュリティ リーダー
 
-- Exchange Online では、する必要があります次に割り当てられている役割の 1 つ。
+- Exchange online では、次の Exchange 管理センターに割り当てられているロールのいずれかが必要 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) または PowerShell コマンドレット ( [Exchange のオンライン PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)を参照してください)。
     - 組織の管理
     - 表示限定の組織管理
     - "View-Only Recipients/表示専用受信者" 役割

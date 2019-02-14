@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 description: Office 365 では、残りの部分と、最も強力な暗号化、プロトコル、および利用可能なテクノロジを使用して、移動中のコンテンツが暗号化されます。Office 365 の暗号化の概要を取得します。
-ms.openlocfilehash: a9f37fddf28461ee4912e0b8a1f5b922c59c009f
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 5f64d6e758818d410f54370adee549f565d4f042
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972289"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995108"
 ---
 # <a name="encryption-in-office-365"></a>Office 365 での暗号化
 
@@ -61,7 +61,7 @@ ms.locfileid: "24972289"
     
 - [Office 365 管理センターで Rights Management をアクティブにする](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
     
-- [SharePoint 管理センターでの情報権利管理 (IRM) を設定します。](set-up-irm-in-sp-admin-center.md)
+- [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
     
 ## <a name="how-do-i"></a>操作方法.
 

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
 description: Office 365 の Office のメッセージの暗号化 (ホーム)、S/MIME、情報権利管理 (IRM) などの暗号化のオプションを比較し、トランスポート層セキュリティ (TLS) の詳細を説明します。
-ms.openlocfilehash: c9c83283cab09ac81ab2856aec53fe8682ec45b8
-ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
+ms.openlocfilehash: a6db6c9cf6af180fe84e955613fb6b1175ee0747
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25853082"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995358"
 ---
 # <a name="email-encryption-in-office-365"></a>Office 365 での電子メールの暗号化
 

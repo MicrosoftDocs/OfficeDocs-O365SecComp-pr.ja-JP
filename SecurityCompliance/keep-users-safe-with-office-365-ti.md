@@ -3,7 +3,7 @@ title: Office 365 脅威インテリジェンスを使用して Office 365 ユ�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/12/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
+ms.collection: M365-security-compliance
 description: Office 365 の脅威インテリジェンスが組織侵入の脅威を検出し、すばやくを軽減し、脅威から回復を支援する方法について説明します。
-ms.openlocfilehash: ffcbf6cc179ec8a7e8887402e139d2a0cc716eef
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: c049e6f811eec8a30eb2b94361f8cdcbdaa8ac49
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706101"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995368"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-intelligence"></a>Office 365 脅威インテリジェンスを使用して Office 365 ユーザーの安全を守る
 
@@ -27,6 +28,9 @@ ms.locfileid: "26706101"
 Office 365 ユーザーの攻撃を受けているか、さらに危険にさらされたについて知っていますか軽減し、ユーザーを対象とする攻撃から回復する方法をご存知ですか。Office 365 で使用されているセキュリティ機能でこれを正確に行うことができますをご存知でしたか。 
   
 [Office 365 の脅威インテリジェンス](office-365-ti.md)は、Office 365 の E5 サブスクリプションに含まれている機能のスイートです。Office 365 脅威インテリジェンスでは、平均時間ソーシャル エンジニア リングの問題の解決方法を 80%、およびスループットを向上させるケースが 37% 削減 1 か月の前の 2 四半期と比較して、Microsoft IT ができました! 
+
+> [!IMPORTANT]
+> 2019 の 2 月に開始し、今後数か月にロールアウト、Office 365 の脅威インテリジェンスは Office 365 高度な脅威保護計画 2、あらたな脅威保護機能となりつつあります。詳細については、 [Office 365 の高度な脅威保護の計画と価格設定](https://products.office.com/exchange/advance-threat-protection)と[Office 365 高度な脅威保護サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)を参照してください。
   
 新規の機能を検出し、脅威から回復する方法を向上させるために最近追加しました!ここではあるから更新された脅威インテリジェンス サービス作成方法より効率的なのです。
   

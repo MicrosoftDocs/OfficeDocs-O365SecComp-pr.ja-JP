@@ -12,13 +12,14 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Solutions
 - SIEM
+- M365-security-compliance
 description: '概要: は、SIEM Microsoft 365 とサーバーの統合の概要を取得するには、この記事を読みます。'
-ms.openlocfilehash: bd512ca6d75928712e3444581a78610a0869123d
-ms.sourcegitcommit: 63ed467fc3e1ab1ab9ee122df97c64737169834e
+ms.openlocfilehash: a6e139d14a7ea3625b2d2fffec5ad5d913ea9184
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25842685"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995198"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM Microsoft 365 のサービスおよびアプリケーションとサーバの統合
 
@@ -44,7 +45,7 @@ SIEM サーバーは、さまざまな Microsoft 365 サービスとアプリケ
 
 SIEM サーバー統合を構成する前に監査ログを有効にすることを確認します。 
 
-- SharePoint、オンライン ビジネス、および、Azure Active Directory の[セキュリティとコンプライアンス ・ センターの監査ログを有効に](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off)するための OneDrive です。
+- SharePoint、オンライン ビジネス、および、Azure Active Directory の[セキュリティ & コンプライアンス センターの監査ログを有効に](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off)するための OneDrive です。
 
 - Exchange オンラインで[Windows PowerShell で監査ログを有効に](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing)します。
  
