@@ -14,99 +14,99 @@ search.appverid:
 ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
-description: Office 365 の脅威インテリジェンスおよび開始する方法について説明します。
-ms.openlocfilehash: f4480e6cdf5a845f591ad118858703dee4d4e631
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Office 365 の脅威インテリジェンスと開始する方法について説明します。
+ms.openlocfilehash: 6412f575bbe581aa469c7ad615213564b728d0aa
+ms.sourcegitcommit: 2af6c3e8a74995294a67429530af8f085e6ca136
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995238"
+ms.locfileid: "30051168"
 ---
-# <a name="get-started-with-office-365-advanced-threat-protection-plan-2-formerly-office-365-threat-intelligence"></a>Office 365 高度な脅威保護計画 2 (以前、Office 365 の脅威インテリジェンス) を開始します。
+# <a name="get-started-with-threat-intelligence"></a>脅威インテリジェンスの概要
 
-組織のセキュリティ チームの一部の場合は、攻撃からユーザーを保護するために脅威のインテリジェンス機能を使用できます。Office 365 高度な脅威保護計画 2 (以前、Office 365 の脅威インテリジェンス) では、セキュリティ アナリストおよび管理者の意見をバブルでユーザーを安全に保つことし、で起こっているかに基づいてどのようなアクションを識別するは、Office 365 環境です。これらの情報は、脅威インテリジェンス データとシステムの動作や不審な動作を攻撃に対応するスポット カラーのパターンを包括的なリポジトリに基づいています。
+組織のセキュリティチームに参加している場合は、脅威インテリジェンス機能を使用してユーザーを攻撃から保護することができます。office 365 Advanced Threat Protection プラン 2 (旧称 Office 365 Threat 知能) は、組織の Office の365環境で何が起こっているかに基づいて、洞察を調べて、操作を識別することによって、セキュリティアナリストや管理者がユーザーを安全に保つことができます。これらの洞察は、脅威インテリジェンスのデータとシステムの包括的なリポジトリに基づいています。これは、攻撃の動作や不審な動作に対応するパターンを見つけるためのものです。
   
-脅威インテリジェンスおよび開始する方法の詳細については、この資料を参照してください。
+脅威インテリジェンスおよび開始方法の詳細については、この記事をお読みください。
   
-## <a name="what-is-threat-intelligence"></a>脅威インテリジェンスとは何ですか。
+## <a name="what-is-threat-intelligence"></a>脅威インテリジェンスとは
+
+脅威インテリジェンスとは、Office 365 セキュリティ&amp;コンプライアンスセンターで利用可能な洞察と情報の集合です。これらの洞察は、組織のセキュリティチームが攻撃から Office 365 ユーザーを保護するのに役立ちます。脅威インテリジェンスは、ユーザーアクティビティ、認証、電子メール、侵害された pc、セキュリティインシデントなど、複数のソースからの信号を監視し、データを収集します。ビジネス意思決定者および office 365 の全体管理者、セキュリティ管理者、およびセキュリティアナリストは、office の365脅威インテリジェンスが提供する情報を使用して、office 365 ユーザーおよび知的に対する脅威を理解し、対応することができます。プロパティ.
 
 > [!IMPORTANT]
-> 2019 の 2 月に開始し、今後数か月にロールアウト、Office 365 の脅威インテリジェンスは Office 365 高度な脅威保護計画 2、あらたな脅威保護機能となりつつあります。詳細については、 [Office 365 の高度な脅威保護の計画と価格設定](https://products.office.com/exchange/advance-threat-protection)と[Office 365 高度な脅威保護サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)を参照してください。
+> 2019年2月から、次の数か月間に展開されています。 office 365 の脅威インテリジェンスは、追加の脅威保護機能を備えた office 365 Advanced threat protection プラン2になりつつあります。詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
+  
+## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>脅威ダッシュボード、エクスプローラー、インシデントについて理解する
 
-脅威インテリジェンスの見識や Office 365 のセキュリティで使用できる情報のコレクションでは&amp;コンプライアンス センターです。これらの処理により、組織のセキュリティ チームが Office 365 のユーザーを攻撃から保護するのに役立ちます。脅威インテリジェンスは、信号を監視し、ユーザーの利用状況、認証、電子メール、セキュリティを侵害されたコンピューターは、セキュリティ問題など、複数のソースからデータを収集します。理解し、Office 365 のユーザーと知的に対する脅威に対応するビジネスの意思決定者と Office 365 のグローバル管理者、セキュリティ管理者、およびセキュリティ アナリストすべて情報を使用して Office 365 の脅威インテリジェンスを提供します。プロパティです。
+脅威[ダッシュボード](get-started-with-ti.md#dashboard)、[脅威エクスプローラー](get-started-with-ti.md#explorer)、 &amp;および[インシデント](get-started-with-ti.md#incidents)を含む、ツールとレポートのセットとしての、セキュリティコンプライアンスセンターの脅威インテリジェンスの面。
   
-## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>脅威のダッシュ ボード、エクスプ ローラー、およびインシデントに慣れる
+### <a name="threat-dashboard"></a>脅威ダッシュボード
 
-セキュリティ インテリジェンスのサーフェスの脅威&amp;ツール、レポート、[ダッシュ ボードの脅威](get-started-with-ti.md#dashboard)、[脅威のエクスプ ローラー](get-started-with-ti.md#explorer)、[インシデント](get-started-with-ti.md#incidents)などのセットとして、コンプライアンスの中心です。
+脅威ダッシュボード ([セキュリティダッシュボード](security-dashboard.md)とも呼ばれます) を使用して、どのような脅威が解決されたかをすばやく確認し、ビジネス意思決定者に対して Office 365 サービスがビジネスをどのようにセキュリティで保護しているかを視覚的に報告することができます。
   
-### <a name="threat-dashboard"></a>脅威のダッシュ ボード
+![脅威インテリジェンスダッシュボード](media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
+  
+このダッシュボードを表示して使用するには&amp; 、セキュリティ/コンプライアンスセンターで、[**脅威管理** \> ]**ダッシュボード**に移動します。
+  
+### <a name="threat-explorer"></a>脅威エクスプローラー
 
-どのような脅威の対処をすばやく表示する (これも呼びます[セキュリティ ダッシュ ボード](security-dashboard.md)) 脅威ダッシュ ボードを使用し、ビジネスの意思決定者にレポートを視覚的にどのように Office 365 サービスはセキュリティで保護するお客様のビジネスです。
+脅威エクスプローラー (エクスプローラーとも呼ばれます) を使用して、脅威を分析し、時間をかけて攻撃の量を確認し、脅威ファミリ、攻撃インフラストラクチャなどによるデータの分析を行います。脅威エクスプローラーは、セキュリティアナリストの調査ワークフローの出発点となります。
   
-![脅威インテリジェンスのダッシュ ボード](media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
+![脅威エクスプローラー](media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
-表示、セキュリティで、デジタル ダッシュ ボードを使用して&amp;コンプライアンス センターでは、**脅威の管理**に移動\>**ダッシュ ボード**です。
+このレポートを表示して使用するには&amp; 、セキュリティ/コンプライアンスセンターで、[**脅威管理** \> **エクスプローラー**] に移動します。
   
-### <a name="threat-explorer"></a>脅威のエクスプ ローラー
+ ### <a name="incidents"></a>事件
 
-脅威を分析し、時間の経過と共に攻撃のボリュームを参照してください、脅威の種類、攻撃者のインフラストラクチャ、データの分析にも (エクスプ ローラー) の脅威のエクスプ ローラーを使用します。脅威のエクスプ ローラーは、任意のセキュリティ ・ アナリストの調査のワークフローの開始場所です。
+インシデントリスト (調査とも呼ばれます) を使用して、フライトセキュリティインシデントの一覧を表示します。インシデントは、不審な電子メールメッセージなどの脅威を追跡し、さらに調査と修復を行うために使用されます。
   
-![脅威のエクスプ ローラー](media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
+![Office 365 の脅威インテリジェンスの現在のインシデントの一覧](media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
   
-表示、セキュリティで、このレポートを使用して&amp;コンプライアンス センターでは、**脅威の管理**に移動\>**エクスプ ローラー**です。
+組織の現在のインシデントの一覧を表示するには、セキュリティ&amp; /コンプライアンスセンターで、[**脅威管理** \>の**レビュー** \> **インシデント**] に移動します。
   
- ### <a name="incidents"></a>インシデント
+![セキュリティ&amp; /コンプライアンスセンターで、[脅威管理\>のレビュー] を選択します。](media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
+  
+## <a name="learn-more-about-malware-amp-threats"></a>マルウェア&amp;の脅威の詳細情報
 
-(調査) インシデントの一覧を使用して、セキュリティ インシデントのフライトでの一覧を参照してください。インシデントは、不審な電子メール メッセージなどの脅威を追跡し、さらに調査し、改善策の実施に使用されます。
+Office 365 Advanced threat Protection プラン2のサービスの一部として、セキュリティアナリストは既知の脅威に関する詳細を確認できます。これは、ユーザーを安全に保つために実行できる追加の予防策/手順があるかどうかを判断するのに役立ちます。
   
-![Office 365 の脅威インテリジェンスの現在の問題の一覧](media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
+![最近の脅威に関する情報を示すセキュリティ傾向](media/11e7d40d-139b-4c56-8d52-c091c8654151.png) 
   
-セキュリティで、組織の現在の問題の一覧を表示するのには&amp;コンプライアンス センターでは、**脅威の管理**に移動\>**レビュー** \> **インシデント**です。
-  
-![セキュリティで&amp;コンプライアンス センターでは、脅威の管理を選択して\>のレビュー](media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
-  
-## <a name="learn-more-about-malware-amp-threats"></a>マルウェアの詳細については&amp;の脅威
+## <a name="how-do-we-get-threat-intelligence"></a>脅威インテリジェンスを取得する方法
 
-Office 365 高度な脅威保護計画 2 ソリューションの一部として、セキュリティ アナリストは、既知の脅威に関する詳細情報を確認できます。追加予防対策と手順のユーザーを安全に保つことを実行することができますがあるかどうかを判断するのには便利です。
+**脅威インテリジェンスが Office 365 Advanced Threat Protection プラン2に**含まれるようになりました。これは、 [microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)、 [microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)、office 365 Enterprise E5、office 365 など、特定のサブスクリプションに含まれています。教育用 A5、その他Office 365 atp を含まないサブスクリプションが組織にある場合は、atp をアドオンとして購入する可能性があります。詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)」を参照してください。
   
-![セキュリティ トレンドの最新の脅威に関する情報を表示](media/11e7d40d-139b-4c56-8d52-c091c8654151.png) 
-  
-## <a name="how-do-we-get-threat-intelligence"></a>脅威インテリジェンスはどうすれば?
-
-**脅威インテリジェンスは 2 では Office 365 高度な脅威保護計画の一部をここ**に含まれるで[365 企業の Microsoft](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 ビジネス](https://www.microsoft.com/microsoft-365/business)、Office 365 のエンタープライズ E5 などの特定のサブスクリプションでは、Office 365教育 A5 などです。組織が Office 365 の分析ツールが含まれていないサブスクリプションの場合は、アドオンとして可能性のある ATP を購入できます。詳細については、 [Office 365 の高度な脅威保護の計画と価格設定](https://products.office.com/exchange/advance-threat-protection)と[Office 365 高度な脅威保護サービスの説明](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)を参照してください。
-  
-1. Office 365 グローバル管理者に移動します。[https://portal.office.com](https://portal.office.com)し、職場、学校のアカウントを使用して Office 365 にサインインします。 
+1. office 365 の全体管理者として[https://portal.office.com](https://portal.office.com) 、に移動して、office 365 の職場または学校のアカウントを使用してサインインします。 
     
-2. **Admin**を選択して\>**請求**をして、現在のサブスクリプションが含まれています。 
+2. [**管理者** \> **課金**] を選択して、現在のサブスクリプションに含まれる内容を確認します。 
 
-    - **Office 365 エンタープライズ E5**が表示された場合、組織が Office 365 高度な脅威保護計画 2、脅威のインテリジェンスが含まれていますと。 
-    - **Office 365 エンタープライズ E3**や**Office 365 エンタープライズ E1**など、別のサブスクリプションを参照してください場合は、脅威の保護計画の 2 の詳細を追加することを検討します。(そのために、選択 **+ 追加のサブスクリプション**)。
+    - **office 365 Enterprise E5**が表示されている場合、組織には、脅威インテリジェンスを含む office 365 Advanced Threat Protection プラン2があります。 
+    - **office 365 enterprise E3**または**office 365 enterprise E1**などの別のサブスクリプションが表示される場合は、Advanced Threat Protection プラン2を追加することを検討してください。(これを行うには、[**サブスクリプションの追加**] を選択します。)
     
-3. Office 365 管理センターで、[**ユーザ**] を選択します\>**アクティブなユーザー**です。
+3. Office 365 管理センターで、[**ユーザー** \> ] [**アクティブなユーザー**] を選択します。
     
-5. すべてのアクティブなユーザーに Office 365 の高度な脅威保護のライセンスを割り当てます。(脅威インテリジェンス機能のライセンスを持つユーザーのみが表示レポートには、エクスプ ローラーなど)。
+5. Office 365 Advanced Threat Protection ライセンスをすべてのアクティブユーザーに割り当てます。(脅威インテリジェンス機能のライセンスを持つユーザーのみが、エクスプローラなどのレポートに表示されます)。
     
-6. Office 365 の脅威の高度な保護を担当する組織内のユーザーにロールを割り当てます。参照してください[Office 365 のセキュリティにアクセスできるように&amp;コンプライアンス センター](grant-access-to-the-security-and-compliance-center.md)、次の表を参照してください。
+6. Office 365 Advanced Threat Protection を使用する組織内のユーザーに役割を割り当てます。「[ユーザーに Office 365 セキュリティ&amp;コンプライアンスセンターへのアクセス権を付与する](grant-access-to-the-security-and-compliance-center.md)」を参照し、次の表を参照してください。
     
 |||
 |:-----|:-----|
-|**このアクティビティを実行する.** <br/> |**これらの役割のいずれかする必要があります。** <br/> |
-|脅威のダッシュ ボード (または[セキュリティ ダッシュ ボード](security-dashboard.md)) を使用します。  <br/> 最新のまたは現在の脅威に関する情報を表示  <br/> |Office 365 のグローバル管理者  <br/> (Azure Active Directory 管理センターに割り当てられている) セキュリティ管理者  <br/> (Azure Active Directory 管理センターに割り当てられている) セキュリティ リーダー  <br/> |
-|脅威のエクスプ ローラー (エクスプ ローラーとも呼ばれます) を使用します。  <br/> 脅威を分析します。  <br/> |Office 365 のグローバル管理者  <br/> セキュリティ管理者 (セキュリティに割り当てられている&amp;コンプライアンス センター)  <br/> セキュリティ リーダー (セキュリティに割り当てられている&amp;コンプライアンス センター)  <br/> |
-|ビューのインシデント (調査とも呼ばれます) <br/> インシデントに電子メール メッセージを追加します。  <br/> |Office 365 のグローバル管理者  <br/> セキュリティ管理者 (セキュリティに割り当てられている&amp;コンプライアンス センター)  <br/> セキュリティ リーダー (セキュリティに割り当てられている&amp;コンプライアンス センター)  <br/> |
-|インシデントの電子メール アクションをトリガー  <br/> 検索し、不審な電子メール メッセージを削除  <br/> |Office 365 グローバル アドミニストレーターまたはセキュリティ管理者  <br/> 上の役割と検索と削除のいずれか (セキュリティに割り当てられている&amp;コンプライアンス センター)  <br/> |
-|Windows Defender Advanced Threat Protection と Office 365 脅威インテリジェンスを統合する  <br/> SIEM サーバーと Office 365 の脅威インテリジェンスを統合します。  <br/> |Office 365 のグローバル管理者  <br/> セキュリティ管理者 (セキュリティに割り当てられている&amp;コンプライアンス センター)  <br/> 適切なロールがその他のアプリケーション (Windows Defender の高度な脅威保護のポータル、SIEM サーバーなど) に割り当てられています。  <br/> |
+|**実行する処理...** <br/> |**これらの役割の1つが必要です** <br/> |
+|脅威ダッシュボード (または新しい[セキュリティダッシュボード](security-dashboard.md)) を使用する  <br/> 最近の脅威または現在の脅威に関する情報を表示する  <br/> |Office 365 グローバル管理者  <br/> セキュリティ管理者 (Azure Active Directory 管理センターで割り当てられている)  <br/> セキュリティリーダ (Azure Active Directory 管理センターで割り当てられたもの)  <br/> |
+|脅威エクスプローラー (エクスプローラーとも呼ばれます) を使用する  <br/> 脅威を分析する  <br/> |Office 365 グローバル管理者  <br/> セキュリティ管理者 (セキュリティ&amp;コンプライアンスセンターで割り当てられている)  <br/> セキュリティリーダ (セキュリティ&amp;センターコンプライアンスセンターで割り当てられたもの)  <br/> |
+|インシデント (調査とも呼ばれる) を表示する <br/> インシデントに電子メールメッセージを追加する  <br/> |Office 365 グローバル管理者  <br/> セキュリティ管理者 (セキュリティ&amp;コンプライアンスセンターで割り当てられている)  <br/> セキュリティリーダ (セキュリティ&amp;センターコンプライアンスセンターで割り当てられたもの)  <br/> |
+|インシデントで電子メールアクションをトリガーする  <br/> 疑わしい電子メールメッセージの検索と削除  <br/> |Office 365 の全体管理者またはセキュリティ管理者  <br/> 上記の役割の1つと検索と削除 (セキュリティ&amp;コンプライアンスセンターで割り当てられたもの)  <br/> |
+|Windows Defender Advanced Threat Protection と Office 365 脅威インテリジェンスを統合する  <br/> Office 365 脅威インテリジェンスを SIEM サーバーに統合する  <br/> |Office 365 グローバル管理者  <br/> セキュリティ管理者 (セキュリティ&amp;コンプライアンスセンターで割り当てられている)  <br/> 追加のアプリケーション (Windows Defender Advanced Threat Protection ポータルまたは SIEM サーバーなど) で割り当てられている適切な役割  <br/> |
    
-役割、役割グループ、およびアクセス許可の詳細についてを参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。
+役割、役割グループ、およびアクセス許可の詳細については、「 [Office 365 &amp;セキュリティコンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
     
 ## <a name="next-steps"></a>次の手順
 
-- [脅威のトラッカーが、注目すべき新しいについてください。](threat-trackers.md)
+- [脅威のトラッカーについて-新知識と注目](threat-trackers.md)
     
-- [検索し、(Office 365 の脅威インテリジェンス) に配信された悪意のある電子メールを調査](investigate-malicious-email-that-was-delivered.md)
+- [配信された悪意のある電子メールを検索して調査する (Office 365 の脅威インテリジェンス)](investigate-malicious-email-that-was-delivered.md)
     
 - [Windows Defender Advanced Threat Protection と Office 365 脅威インテリジェンスを統合する](integrate-office-365-ti-with-wdatp.md)
     
-- [攻撃シミュレータについてください。](attack-simulator.md)
+- [アタックシミュレータについて](attack-simulator.md)
   
 

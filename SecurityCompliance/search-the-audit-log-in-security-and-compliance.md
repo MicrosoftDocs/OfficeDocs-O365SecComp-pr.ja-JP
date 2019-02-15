@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Office 365 セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: 41f6f2c90a0171b52807cbf46f15eebb1f16cc9a
-ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
+ms.openlocfilehash: 55d45d55bb515307ed94853878b6e9ae1cef4ad8
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29890058"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995408"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Office 365 セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -53,6 +53,8 @@ ms.locfileid: "29890058"
 - Microsoft Flow 内のユーザーおよび管理者のアクティビティ
     
 - Microsoft Stream 内のユーザーおよび管理者のアクティビティ
+
+- Microsoft Workplace Analytics でのアナリストと管理者のアクティビティ
     
    
 ## <a name="before-you-begin"></a>始める前に
@@ -562,7 +564,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
    
 ### <a name="ediscovery-activities"></a>電子情報開示アクティビティ
   
-Office 365 監査ログでは、Office 365 セキュリティ/コンプライアンス センターで実行された、または対応する Windows PowerShell コマンドレットを使用して実行されたコンテンツ検索アクティビティと電子情報開示アクティビティが記録されます。これには、次のようなアクティビティが含まれます。
+Office 365 監査ログでは、Office 365 セキュリティ/コンプライアンス センターで実行された、または対応する Windows PowerShell コマンドレットを使用して実行された、コンテンツ検索アクティビティと電子情報開示アクティビティが記録されます。これには、次のようなアクティビティが含まれます。
   
 - 電子情報開示ケースの作成と管理
     
@@ -587,7 +589,7 @@ Power BI の監査ログは、既定で有効にはならないことに注意�
   
 ### <a name="microsoft-workplace-analytics-activities"></a>Microsoft Workplace Analytics アクティビティ
 
-次の表に、Office 365 監査ログに記録される Microsoft Workplace Analytics での管理者とアナリストのアクティビティを一覧表示しています。Workplace Analytics は、Office 365 組織全体でグループが共同作業を行う方法を説明します。詳細については、「[Workplace Analytics](https://docs.microsoft.com/ja-JP/workplace-analytics/index-orig)」を参照してください。
+Workplace Analytics では、Office 365 組織において各グループが共同作業を行う方法に関する洞察が得られます。次の表に、Microsoft Workplace Analytics での管理者役割とアナリスト役割を割り当てられたユーザーによって実行されるアクティビティを一覧表示しています。アナリスト役割を割り当てられたユーザーはすべてのサービス機能への完全なアクセス権を持ち、この製品を使用して分析を行うことができます。管理者役割を割り当てられたユーザーはプライバシーの設定とシステムの既定値を構成し、Workplace Analytics で組織データを準備、アップロード、検証することができます。詳しくは、「[Workplace Analytics](https://docs.microsoft.com/ja-JP/workplace-analytics/index-orig)」をご覧ください。
 
 |**フレンドリ名**|**操作名**|**説明**|
 |:-----|:-----|:-----|
