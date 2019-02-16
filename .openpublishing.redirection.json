@@ -89,6 +89,11 @@
         "source_path": "securitycompliance/choose-between-mdm-and-intune.md",
         "redirect_url": "https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22", 
         "redirect_document_id": false
+    },                     
+    { 
+        "source_path": "securitycompliance/prevent-email-from-being-marked-as-spam-0.md",
+        "redirect_url": "https://docs.microsoft.com/office365/SecurityCompliance/prevent-email-from-being-marked-as-spam", 
+        "redirect_document_id": true
     }                                                                                    
   ] 
 }
