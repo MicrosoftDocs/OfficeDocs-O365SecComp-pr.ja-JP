@@ -1,9 +1,8 @@
 ---
 title: Office 365 でのサービスの暗号化
-ms.author: robmazz
-author: robmazz
+ms.author: krowley
+author: kccross
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -11,27 +10,27 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: '概要: は、Microsoft Office 365 のデータのリカバリ性を理解します。'
-ms.openlocfilehash: 1273cd5556bf51dcdac9bbde1b3e8003ab818811
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: '概要: Microsoft Office 365 のデータ復元性について理解します。'
+ms.openlocfilehash: 09ba8408176627c3aa9833bb59dde8be86aefd51
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532152"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "29664083"
 ---
 # <a name="office-365-service-encryption"></a>Office 365 でのサービスの暗号化
 
-ビジネスのボリューム レベルの暗号化、Exchange Online では、Skype のビジネス、SharePoint Online では、および OneDrive を使用する以外には、お客様のデータを暗号化するためにサービスの暗号化を使用します。サービスの暗号化は、キー管理の 2 つのオプションのことができます。
-- マイクロソフトでは、すべての暗号化キーを管理します。(このオプションは、SharePoint のオンライン ビジネス、OneDrive、ビジネスの Skype では、現在利用可能なです。現在 Exchange Online のロードマップに掲載)。
-- お客様がサービスの暗号化に使用されるルート キーを提供し、お客様が Azure キー ヴォールトを使用してこれらのキーを管理します。マイクロソフトでは、他のすべてのキーを管理します。このオプションは、お客様のキーと呼ばれ、Exchange のオンライン、SharePoint Online では、ビジネスのための OneDrive の現在使用可能になります。(以前 BYOK での高度な暗号化と呼ばれます。[Enhancing の透明度と Office 365 のお客様用のコントロール](http://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/)の「元のお知らせ)
+ボリュームレベルの暗号化に加えて、Exchange online、Skype for business、SharePoint Online、および OneDrive for business では、顧客データを暗号化するためにサービス暗号化も使用されます。サービス暗号化では、2つの主要な管理オプションを使用できます。
+- Microsoft は、すべての暗号化キーを管理します。(このオプションは現在、SharePoint Online、OneDrive for business、Skype for business で利用できます。現在、Exchange Online のロードマップになっています。)
+- お客様は、サービスの暗号化に使用されるルートキーを提供し、お客様は Azure Key Vault を使用してこれらのキーを管理します。Microsoft は、その他のすべてのキーを管理します。このオプションは顧客キーと呼ばれ、現在、Exchange online、SharePoint Online、OneDrive for business で使用できます。(以前は byok で高度な暗号化と呼ばれています)。元のアナウンスについては、「 [Office 365 のお客様の透明性と統制の強化](http://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/)」を参照してください)。
 
-サービスの暗号化では、複数のメリットを提供します。などのこと。
-- 権限の強力な暗号化保護に保護および管理の機能を提供します。
-- テナントごとにキー管理を実現するマルチ テナント型のサービスを有効にする顧客キー オプションが含まれています。
-- アクセスから顧客データが格納されているか、オペレーティング システムで処理する Windows オペレーティング システムの管理者の分離を提供します。
-- 暗号化に関するコンプライアンス要件を持つお客様のニーズを満たす Office 365 の機能を強化します。
+サービス暗号化には複数の利点があります。たとえば、次のようになります。
+- 強力な暗号化保護の上に、権限の保護と管理の機能を提供します。
+- マルチテナントのキー管理をマルチテナントサービスが提供できるようにする顧客キーオプションが含まれています。
+- Windows オペレーティングシステム管理者と、オペレーティングシステムによって保存または処理される顧客データへのアクセスを分離します。
+- 暗号化に関するコンプライアンス要件を持つお客様の要求を満たす Office 365 の能力を向上させます。
 
 ## <a name="customer-key"></a>顧客キー
-顧客キーを使用すると、設置型の HSM またはキーの Azure のボルトを使用して、独自の暗号化キーを生成できます。キーの生成方法に関係なくお客様は制御し、Office 365 で使用される暗号化キーを管理する Azure キー ヴォールトを使用します。Azure キーの保管場所に、キーが保存されると、これらは、Exchange Online と SharePoint Online などのワークロードに割り当てられているし、メールボックスのデータとファイルの暗号化に使用するキーチェーンのルートとして使用できます。顧客キーを使用する他の利点の 1 つは、マイクロソフトの顧客データを処理する機能を制御します。この機能が存在するため、顧客と顧客は、マイクロソフトのサービスを終了またはクラウドに格納されたデータの一部を削除する) などの Office 365 からデータを削除する必要があることが、技術的な制御として顧客のキーを使用できないようにします。、マイクロソフトを含むアクセスしたり、データを処理します。これは、マイクロソフトのスタッフによるお客様のデータへのアクセスを制御するために使用できるユーザーのロック ボックスの機能を追加 (および補完) でします。
+Customer キーを使用すると、社内 HSM または Azure キーコンテナーを使用して独自の暗号化キーを生成できます。キーの生成方法に関係なく、お客様は、Office 365 で使用される暗号化キーを制御および管理するために、Azure key Vault を使用します。キーを Azure Key Vault に格納したら、Exchange online や SharePoint online などのワークロードにキーを割り当てて、メールボックスのデータとファイルの暗号化に使用されるキーチェーンのルートとして使用することができます。顧客キーを使用する他の利点の1つは、Microsoft が顧客データを処理する機能を制御することです。この機能は、Office 365 からデータを削除するお客様 (たとえば、お客様が Microsoft とのサービスを終了したり、クラウドに保存されているデータの一部を削除したりする場合など) に対応できるようになります。(Microsoft を含む) は、データにアクセスしたり、処理したりできます。これは、Microsoft の担当者による顧客データへのアクセスを制御するために使用できる、お客様のロックボックス機能への追加 (および補数) です。
 
-ビジネス、SharePoint Online では、およびビジネスのための OneDrive の Exchange Online、Skype の Office 365 用の顧客のキーを設定する方法については、[お客様のキーを使用して Office 365 のデータを制御する](https://support.office.com/article/Controlling-your-data-in-Office-365-using-Customer-Key-f2cd475a-e592-46cf-80a3-1bfb0fa17697)を参照してください。詳細については、 [Office 365 のよく寄せられる質問の顧客のキー](https://support.office.com/article/Customer-Key-for-Office-365-FAQ-41ae293a-bd5c-4083-acd8-e1a2b4329da6)、および[顧客のキーを使用してコンプライアンスを満たすために、データが必要な管理と制御](https://techcommunity.microsoft.com/t5/Microsoft-Ignite-Content-2017/Manage-and-control-your-data-to-help-meet-compliance-needs-with/td-p/117580)を参照してください。
+office 365 for Exchange Online、Skype for business、SharePoint Online、および OneDrive for business の顧客キーを設定する方法については、「 [office でのデータの管理」と「顧客キーを使用](https://support.office.com/article/Controlling-your-data-in-Office-365-using-Customer-Key-f2cd475a-e592-46cf-80a3-1bfb0fa17697)したデータの管理」を参照してください。詳細については、「 [Office 365 のお客様キー](https://support.office.com/article/Customer-Key-for-Office-365-FAQ-41ae293a-bd5c-4083-acd8-e1a2b4329da6)」の FAQ を参照してください。また、[顧客キーによる法令遵守のニーズを満たすために役立つデータを管理および制御](https://techcommunity.microsoft.com/t5/Microsoft-Ignite-Content-2017/Manage-and-control-your-data-to-help-meet-compliance-needs-with/td-p/117580)します。

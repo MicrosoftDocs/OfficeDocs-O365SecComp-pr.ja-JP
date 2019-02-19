@@ -1,9 +1,8 @@
 ---
 title: Office 365 の暗号化のリスクと保護
-ms.author: robmazz
-author: robmazz
+ms.author: krowley
+author: kccross
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -11,89 +10,79 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: '概要: は、Microsoft Office 365 のデータのリカバリ性を理解します。'
-ms.openlocfilehash: 69956c5f32f74a93b2101d2651ef7de03ad1094f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: '概要: Microsoft Office 365 のデータ復元性について理解します。'
+ms.openlocfilehash: 78bf820c00de7781b62dc7c458f16811c184de0c
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532755"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "29664163"
 ---
 # <a name="encryption-risks-and-protections"></a>暗号化のリスクと保護
 
-マイクロソフトに依存して制御とコンプライアンスのフレームワークで、Office 365 サービスに、顧客データへのリスクに焦点を当てています。マイクロソフトでは、これらのリスクを軽減するために大規模な一連のテクノロジーとプロセスを使用する方法 (コントロールと呼ばれる) を実装します。識別、評価、およびコントロールを使用してリスクの軽減は、継続的なプロセスです。クラウド サービス設備、ネットワーク、サーバ、アプリケーション、マイクロソフト管理者) などのユーザーおよびデータなどのさまざまな階層内のコントロールの実装では、多層防御戦略を形成します。多くのさまざまなコントロールが、同じまたは類似のリスクのシナリオから保護するためのさまざまな層で実装されているがこの戦略に重要です。この多階層アプローチは、コントロールが何らかの理由により障害が発生した場合に備えて、緊急時の保護を提供します。リスクのいくつかのシナリオとそれらを軽減する現在利用可能な暗号化テクノロジを次に示します。これらのシナリオでは、多くの場合も、Office 365 に実装されている他のコントロールすることで軽減します。
+Microsoft は、Office 365 サービスおよび顧客データに対するリスクに重点を置いた制御およびコンプライアンスフレームワークに従います。Microsoft は、これらのリスクを軽減するために、多数のテクノロジとプロセスベースの方法 (コントロールと呼ばれる) を実装しています。コントロールを介したリスクの識別、評価、および軽減は、継続的なプロセスです。 
 
-| 暗号化テクノロジー | サービス | キーの管理 | リスクのシナリオ | 値 |
+施設、ネットワーク、サーバー、アプリケーション、ユーザー (Microsoft 管理者など)、データなど、クラウドサービスのさまざまな層内におけるコントロールの実装は、多層防御戦略を形成します。この戦略で重要なのは、さまざまなコントロールが異なる層に実装されており、同じまたは類似のリスクシナリオに対して保護されることです。この複数層のアプローチは、何らかの理由でコントロールに障害が発生した場合に備えて、フェイルセーフ保護を提供します。
+
+リスクのシナリオと、それらを軽減する現在利用可能な暗号化テクノロジを次に示します。これらのシナリオは、多くの場合、Office 365 で実装されている他のコントロールを使用して軽減されます。
+
+| 暗号化テクノロジ | サービス | キーの管理 | リスクシナリオ | 値 |
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| BitLocker | Exchange オンライン、オンラインでの SharePoint およびビジネス用の Skype | Microsoft | ディスクまたはサーバーに Office 365 を盗まれたり、不適切な再利用します。 | BitLocker では、盗難、または不適切な再利用のハードウェア (サーバーまたはディスク) によるデータの損失から保護するための緊急時のアプローチを提供します。 |
-| サービスの暗号化 | SharePoint オンラインで Skype のビジネス、およびビジネスのための OneDriveExchange オンライン (ロードマップ) | Microsoft | 内部または外部のハッカーは、blob として個々 のファイルとデータにアクセスしようとします。 | キーにアクセスすることがなく暗号化されたデータを解読できません。データにアクセスするハッカーのリスクを軽減するのに役立ちます。 |
-| 顧客キー | SharePoint で、オンライン ビジネス、オンラインでの Exchange およびビジネス用の Skype の OneDrive | 顧客 | (この機能は設計されています;、コンプライアンス機能として、リスクの軽減策としてではなく。) 該当なし | 内部規制の遵守義務、および Office 365 サービスのままにし、マイクロソフトのデータ アクセスを無効にできる対応を支援します。 |
-| Office 365 とクライアントとの間の TLS | SharePoint のオンライン ビジネスの OneDrive、ビジネス、チーム、および Yammer の Skype をオンラインで交換します。 | マイクロソフトでは、顧客 | 中間でまたはインターネット経由で Office 365 とクライアント コンピューター間のデータ フローをタップするには、他の攻撃です。 | この実装では、マイクロソフトとお客様の両方に値を提供して、Office 365 とクライアントの間でフローとデータの整合性を保証します。 |
-| マイクロソフトのデータ センター間の TLS | SharePoint オンラインでのビジネス、OneDrive、ビジネスの Skype をオンラインで交換します。 | Microsoft | 仲介でまたは他の攻撃の別の Microsoft のデータ センター内にある Office 365 のサーバー間で顧客データの流れをタップします。 | この実装は、Microsoft のデータ センター間での攻撃からデータを保護するために別の方法です。 |
-| Azure の著作権管理 (Azure の情報の保護] または [Office 365 に含まれています) | Exchange オンライン、オンラインでの SharePoint およびビジネスの OneDrive | 顧客 | データは、データへのアクセス権のない人の手になります。 | Azure の情報保護では、Azure の RMS 値を複数のデバイス間で電子メールをセキュリティで保護されたファイルを支援する暗号化、id、および承認ポリシーを使用してお客様に提供するを使用します。Azure の RMS では、場所 (つまり、すべてに e メール アドレス) は、特定の条件に一致する、Office 365 から送信されたすべてのメールに自動的に暗号化できる別の受信者に送信する前にお客様に値を提供します。 |
-| S/MIME | Exchange Online | 顧客 | 電子メールは、目的の受信者でない人の手になります。 | 秒/MIME では、S/MIME で暗号化された電子メールは、直接、電子メールの受信者によってのみ解読できますを保証することでお客様に値を提供します。 |
-| Office 365 Message Encryption | Exchange オンラインで、SharePoint のオンライン | 顧客 | 保護された添付ファイルを含む、電子メールは、電子メールの宛先の受信者ではない人内、または Office 365 の外側の手であります。 | ホームの価値を別の内部に送信する前に (つまり、すべてに e メール アドレス) は、特定の条件に一致する、Office 365 から送信されたすべての電子メールが暗号化自動的に顧客に提供するか、外部の受信者です。 |
-| パートナーの組織を使用した SMTP TLS | Exchange Online | 顧客 | パートナーの組織の他に、Office 365 テナントからの転送中に、中間、またはその他の攻撃を使用して電子メールが傍受されたとします。 | このシナリオは、送信/受信できる、Office 365 テナントと SMTP の暗号化されたチャネル内のパートナーの電子メール組織との間のすべての電子メールを顧客に値を提供します。 |
+| BitLocker | Exchange online、SharePoint online、Skype for business | Microsoft | Office 365 のディスクまたはサーバーは、盗難または不適切なリサイクルがあります。 | BitLocker は、盗難または不適切にリサイクルされたハードウェア (サーバー/ディスク) によるデータの損失を防止するための緊急時のアプローチを提供します。 |
+| サービス暗号化 | SharePoint Online、Skype for business、および OneDrive for businessExchange Online (ロードマップ) | Microsoft | 内部または外部のハッカーは、個々のファイル/データに blob としてアクセスしようとします。 | 暗号化されたデータをキーにアクセスせずに復号化することはできません。ハッカーがデータにアクセスするリスクを軽減するのに役に立ちます。 |
+| 顧客キー | SharePoint Online、OneDrive for business、Exchange Online、Skype for business | 顧客 | N/A (この機能はコンプライアンス機能として設計されています。リスクに対する対策としてのものではありません)。 | お客様が内部の規制と法令遵守の義務を満たし、Office 365 サービスを終了して Microsoft のデータへのアクセスを取り消すことができるように支援します。 |
+| Office 365 とクライアント間の TLS | Exchange online、SharePoint Online、OneDrive for business、Skype for business、Teams、Yammer | Microsoft、お客様 | man-in-the-middle またはその他の攻撃。 Office 365 とクライアントコンピューター間のデータフローをインターネット経由でタップします。 | この実装により、Microsoft とお客様の両方に価値が提供され、Office 365 とクライアント間でのデータの整合性が保証されます。 |
+| Microsoft データセンター間の TLS | Exchange online、SharePoint online、OneDrive for business、Skype for business | Microsoft | 他の Microsoft データセンターにある Office 365 サーバー間で顧客データフローをタップする man-in-the-middle またはその他の攻撃。 | この実装は、Microsoft データセンター間の攻撃からデータを保護するもう1つの方法です。 |
+| azure Rights Management (Office 365 または azure Information Protection に含まれています) | Exchange online、SharePoint online、OneDrive for business | 顧客 | データは、データへのアクセス権を持たないユーザーの手に入ります。 | azure Information Protection では、azure RMS を使用して、複数のデバイス間でのファイルと電子メールのセキュリティ保護に役立つ暗号化、id、および承認ポリシーを使用して、顧客に価値を提供します。Azure RMS は、特定の条件に一致する Office 365 からのすべての電子メールを、別の受信者に送信する前に自動的に暗号化することができるお客様に価値を提供します。 |
+| S/MIME | Exchange Online | 顧客 | 電子メールは、目的の受信者ではない人物の手に入ります。 | s/mime では、s/mime で暗号化された電子メールが電子メールの直接の受信者によって復号化されることを保証することで、お客様に価値が提供されます。 |
+| Office 365 Message Encryption | Exchange online、SharePoint online | 顧客 | 保護された添付ファイルを含む電子メールは、電子メールの意図した受信者ではない Office 365 内部または外部のどちらかのユーザーの手に入ります。 | OME は、特定の条件に一致する (すべての電子メールが特定のアドレス宛てにある) Office 365 からのすべての電子メールが自動的に暗号化され、他の内部または外部の受信者に送信されるようになるお客様に価値を提供します。 |
+| パートナー組織との SMTP TLS | Exchange Online | 顧客 | メールは、Office 365 テナントから別のパートナー組織への移行中に、man-in-the-middle またはその他の攻撃によって傍受されます。 | このシナリオでは、お客様に、Office 365 テナントとパートナーの電子メール組織間で暗号化された SMTP チャネル内のすべての電子メールを送受信できるような値を提供します。 |
 
-次の表は、Office 365 のマルチ テナント型とクラウド コミュニティの政府の環境で使用可能な暗号化テクノロジを要約します。
+## <a name="encryption-technologies-available-in-office-365-multi-tenant-environments"></a>Office 365 マルチテナント環境で使用可能な暗号化テクノロジ
 
-| 暗号化テクノロジー | によって実装されています。 | キー交換アルゴリズムと強度 | キー管理 * | FIPS 140-2 検証 |
+| 暗号化テクノロジ | で実装されている | キー交換のアルゴリズムと強さ | キー管理 * | FIPS 140-2 の検証 |
 |----------------------------------------------------------------------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| BitLocker | Exchange Online | AES 128-ビット + | AES の外部キーは、秘密の安全および Exchange サーバーのレジストリに格納されます。シークレット セーフは、高レベルの上昇およびアクセスするために承認を必要とするセキュリティで保護されたリポジトリです。アクセスを要求して、ロック ボックスと呼ばれる内部ツールを使用してのみを承認します。AES の外部キーは、トラステッド プラットフォーム モジュールでは、サーバーにも格納されます。48 桁の数字のパスワードは Active Directory に格納し、ロック ボックスで保護されています。 | AES の 256 を使用するサーバーの [はい] をビット * * |
-|  | SharePoint Online | AES 256 ビット | AES の外部キーは、秘密の安全に格納されます。シークレット セーフは、高レベルの上昇およびアクセスするために承認を必要とするセキュリティで保護されたリポジトリです。アクセスを要求して、ロック ボックスと呼ばれる内部ツールを使用してのみを承認します。AES の外部キーは、トラステッド プラットフォーム モジュールでは、サーバーにも格納されます。48 桁の数字のパスワードは Active Directory に格納し、ロック ボックスで保護されています。 | はい |
-|  | Skype for Business | AES 256 ビット | AES の外部キーは、秘密の安全に格納されます。シークレット セーフは、高レベルの上昇およびアクセスするために承認を必要とするセキュリティで保護されたリポジトリです。アクセスを要求して、ロック ボックスと呼ばれる内部ツールを使用してのみを承認します。AES の外部キーは、トラステッド プラットフォーム モジュールでは、サーバーにも格納されます。48 桁の数字のパスワードは Active Directory に格納し、ロック ボックスで保護されています。 | はい |
-| サービスの暗号化 | SharePoint Online | AES 256 ビット | Blob の暗号化に使用するキーは、オンライン コンテンツの SharePoint データベースに格納されます。SharePoint のオンライン コンテンツ データベースは、データベース アクセスの制御と残りの部分での暗号化によって保護されています。Azure の SQL データベースで TDE を使用して暗号化が実行されます。これらの機密情報は、SharePoint online テナントのレベルではなくサービス ・ レベルでは。(マスター_キーとも呼ばれる) これらの機密情報は、キー ストアと呼ばれる別のセキュリティで保護されたリポジトリに格納されます。TDE は、アクティブなデータベースとデータベースのバックアップとトランザクション ・ ログの両方のためにセキュリティを提供します。お客様は、オプションのキーを提供して Azure キーの保管場所に顧客のキーが格納されているサービスは、ファイル レベルのキーの暗号化に使用し、サイトのキーの暗号化に使用される、テナントのキーを暗号化するキーを使用します。基本的には、お客様がキーを提供するときに新しいキーの階層構造が導入されています。 | はい |
-|  | Skype for Business | AES 256 ビット | 個々 のデータは、別のランダムに生成された 256 ビット キーを使用して暗号化されます。暗号化キーは、会議ごとのマスター_キーで暗号化されても、対応するメタデータ XML ファイルに格納されます。マスター_キーは、会議ごと 1 回もランダムに生成されます。 | はい |
-|  | Exchange Online | AES 256 ビット | (ロードマップ) に、またはお客様が管理されている (顧客キーを使用) する場合、暗号化キーを使用するデータの暗号化ポリシーを使用して、各メールボックスが暗号化されます。 | はい |
-| Office 365 とのクライアントやパートナーとの間の TLS | Exchange Online | [便宜的の TLS 暗号スイートを複数のサポート](https://technet.microsoft.com/en-us/library/mt163898.aspx) | Exchange Online (outlook.office.com) 用の TLS 証明書は、ボルチモア CyberTrust ルートによって発行された 2048 ビット SHA256RSA の証明書です。 | [はい]、256 ビットの暗号強度で TLS 1.2 を使用する場合 |
-|  |  |  | Exchange Online の TLS のルート証明書は、ボルチモア CyberTrust ルートによって発行された 2048 ビット SHA1RSA 証明書です。 |  |
-|  | SharePoint Online | AES の 256 の TLS 1.2 | SharePoint Online の TLS 証明書 (*. sharepoint.com) は、ボルチモア CyberTrust ルートによって発行された 2048 ビット SHA256RSA 証明書。 | はい |
-|  |  | [OneDrive for Business および SharePoint Online におけるデータ暗号化](https://technet.microsoft.com/en-us/library/dn905447.aspx) | SharePoint Online の TLS のルート証明書は、ボルチモア CyberTrust ルートによって発行された 2048 ビット SHA1RSA 証明書です。 |  |
-|  | Skype for Business | [SIP 通信と PSOM データ共有セッション用の TLS](https://support.office.com/article/Set-up-your-network-for-Skype-for-Business-Online-d21f89b0-3afc-432e-b735-036b2432fdbf) | ビジネス用の Skype の TLS 証明書 (* します。 lync.com) ボルチモア CyberTrust ルートによって発行された 2048 ビット SHA256RSA 証明書は、です。 | はい |
-|  |  |  | ビジネス用の Skype の TLS のルート証明書は、ボルチモア CyberTrust ルートによって発行された 2048 ビット SHA256RSA の証明書です。 |  |
-|  | Microsoft Teams | AES の 256 の TLS 1.2 | (Teams.microsoft.com、edge.skype.com)、マイクロソフトのチーム用の TLS 証明書は、ボルチモア CyberTrust ルートによって発行された 2048 ビット SHA256RSA の証明書です。 | はい |
-|  |  | [に関してよく寄せられる質問: マイクロソフトのチーム管理のヘルプ](https://docs.microsoft.com/MicrosoftTeams/teams-overview) | マイクロソフト チームの TLS のルート証明書は、ボルチモア CyberTrust ルートによって発行された 2048 ビット SHA256RSA の証明書です。 |  |
-| マイクロソフトのデータ センター間の TLS | すべての Office 365 サービス | AES の 256 の TLS 1.2 | マイクロソフトは、マイクロソフトのデータ センター間でサーバーからサーバーへの通信のため、内部でマネージ コードと、展開済みの証明機関を使用します。 | はい |
-|  |  | リアルタイム転送プロトコル (SRTP) をセキュリティで保護します。 |  |  |
-| Azure の著作権管理 (Azure の情報の保護] または [Office 365 に含まれています) | Exchange Online | [暗号化モード 2](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))、更新および強化された RMS 暗号化実装をサポートしています。署名のハッシュの署名と暗号化、および sha-256 の RSA 2048 をサポートします。 | [Microsoft によって管理](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)されます。 | はい |
-|  | SharePoint Online | [暗号化モード 2](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))、更新および強化された RMS 暗号化実装をサポートしています。署名の署名と暗号化、および sha-256 の RSA 2048 をサポートします。 | [Microsoft によって管理されている](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)既定の設定であります。または | はい |
-|  |  |  | Microsoft 管理キーの代わりには、お客様が管理します。IT 管理の Azure サブスクリプションを持つ組織では、BYOK を使用でき、追加料金なしで、その使用状況をログに記録することができます。詳細については、[独自のキーを表示する実装](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)を参照してください。この構成では、Thales の Hsm は、キーを保護するために使用されます。詳細については、 [Thales の Hsm と Azure の RMS](http://www.thales-esecurity.com/msrms/cloud)を参照してください。 |  |
-| S/MIME | Exchange Online | 暗号化メッセージ構文標準 (PKCS #7) を 1.5 | 顧客に管理された公開キー基盤を展開によって異なります。キー管理は、お客様と Microsoft が署名および暗号化解除に使用される秘密キーへのアクセス。 | 3 des または AES256 を送信するメッセージを暗号化するために構成されている場合ははい。 |
-| Office 365 Message Encryption | Exchange Online | Azure RMS ([暗号化モード 2](https://technet.microsoft.com/en-us/library/dn569290.aspx) - の署名と暗号化、RSA 2048 と署名に sha-256) と同じ | 暗号化インフラストラクチャとして Azure の情報保護を使用します。使用する暗号化方法は、暗号化し、メッセージを復号化に使用する RMS キーを取得する場所によって異なります。 | はい |
-| パートナーの組織を使用した SMTP TLS | Exchange Online | AES の 256 の TLS 1.2 | Exchange Online (outlook.office.com) 用の TLS 証明書は、ボルチモア CyberTrust ルートによって発行された 2048 ビット SHA256RSA の証明書です。 | [はい]、256 ビットの暗号強度で TLS 1.2 を使用する場合 |
-|  |  |  | Exchange Online の TLS のルート証明書は、ボルチモア CyberTrust ルートによって発行された 2048 ビット SHA1RSA 証明書です。 |  |
+| BitLocker | Exchange Online | AES 128 ビット + | AES 外部キーは、シークレットセーフと Exchange サーバーのレジストリに格納されます。シークレットセーフは、高度な昇格とアクセス許可を必要とするセキュリティで保護されたリポジトリです。アクセス許可の要求と承認は、ロックボックスと呼ばれる内部ツールを使用してのみ行うことができます。AES 外部キーは、サーバーのトラステッドプラットフォームモジュールにも保存されます。48桁の数値パスワードは Active Directory に格納され、ロックボックスによって保護されます。 | はい。 AES 256 ビットを使用するサーバーの場合は、* * |
+|  | SharePoint Online | AES 256 ビット | AES 外部キーは、シークレットセーフに格納されます。シークレットセーフは、高度な昇格とアクセス許可を必要とするセキュリティで保護されたリポジトリです。アクセス許可の要求と承認は、ロックボックスと呼ばれる内部ツールを使用してのみ行うことができます。AES 外部キーは、サーバーのトラステッドプラットフォームモジュールにも保存されます。48桁の数値パスワードは Active Directory に格納され、ロックボックスによって保護されます。 | はい |
+|  | Skype for Business | AES 256 ビット | AES 外部キーは、シークレットセーフに格納されます。シークレットセーフは、高度な昇格とアクセス許可を必要とするセキュリティで保護されたリポジトリです。アクセス許可の要求と承認は、ロックボックスと呼ばれる内部ツールを使用してのみ行うことができます。AES 外部キーは、サーバーのトラステッドプラットフォームモジュールにも保存されます。48桁の数値パスワードは Active Directory に格納され、ロックボックスによって保護されます。 | はい |
+| サービス暗号化 | SharePoint Online | AES 256 ビット | blob の暗号化に使用されるキーは、SharePoint Online コンテンツデータベースに格納されます。SharePoint Online のコンテンツデータベースは、データベースのアクセス制御と、保存時の暗号化によって保護されています。暗号化は tde in Azure SQL Database を使用して実行されます。これらの機密情報は、テナントレベルではなく、SharePoint Online のサービスレベルで行われます。これらの機密情報 (マスターキーと呼ばれることもあります) は、キーストアと呼ばれる別の安全なリポジトリに格納されます。tde は、アクティブデータベースとデータベースのバックアップとトランザクションログの両方に対して、セキュリティで保護を提供します。顧客がオプションのキーを指定すると、顧客キーが Azure key Vault に格納され、サービスはキーを使用してテナントキーを暗号化します。これは、サイトキーを暗号化するために使用されます。これは、ファイルレベルのキーを暗号化するために使用されます。基本的に、顧客がキーを提供すると、新しいキー階層が導入されます。 | はい |
+|  | Skype for Business | AES 256 ビット | 各データは、ランダムに生成された異なる256ビットキーを使用して暗号化されます。暗号化キーは、対応するメタデータ XML ファイルに格納されます。これは、会議マスターキーごとにも暗号化されています。マスターキーも、電話会議ごとに1回ランダムに生成されます。 | はい |
+|  | Exchange Online | AES 256 ビット | 各メールボックスは、Microsoft によって制御される暗号化キー (ロードマップ) または顧客 (顧客キーが使用されている場合) を使用するデータ暗号化ポリシーを使用して暗号化されます。 | はい |
+| Office 365 とクライアント/パートナー間の TLS | Exchange Online | [複数の暗号スイートをサポートする便宜的な方法](https://technet.microsoft.com/en-us/library/mt163898.aspx) | Exchange Online 用の TLS 証明書 (outlook.office.com) は、ボルチモア CyberTrust Root によって発行される2048ビットの SHA256RSA 証明書です。 <br> <br> Exchange Online の TLS ルート証明書は、ボルチモア CyberTrust root によって発行される2048ビットの SHA1RSA 証明書です。 | はい、TLS 1.2 を256ビットの暗号強度で使用します。 |
+|  | SharePoint Online | AES 256 を使用した TLS 1.2 <br> <br> [OneDrive for Business および SharePoint Online におけるデータ暗号化](https://technet.microsoft.com/en-us/library/dn905447.aspx) | SharePoint Online の TLS 証明書 (* sharepoint.com) は、ボルチモア CyberTrust Root によって発行される2048ビットの SHA256RSA 証明書です。 <br> <br> SharePoint Online の TLS ルート証明書は、ボルチモア CyberTrust root によって発行される2048ビットの SHA1RSA 証明書です。 | はい |
+|  | Skype for Business | [SIP 通信および psom データ共有セッションの TLS](https://support.office.com/article/Set-up-your-network-for-Skype-for-Business-Online-d21f89b0-3afc-432e-b735-036b2432fdbf) | Skype for business の TLS 証明書 (* lync.com) は、ボルチモア CyberTrust Root によって発行される2048ビットの SHA256RSA 証明書です。 <br> <br> Skype for business の TLS ルート証明書は、ボルチモア CyberTrust root によって発行される2048ビットの SHA256RSA 証明書です。 | はい |
+|  | Microsoft Teams | AES 256 を使用した TLS 1.2 <br> <br> [Microsoft Teams についてよく寄せられる質問-管理者向けヘルプ](https://docs.microsoft.com/MicrosoftTeams/teams-overview) | Microsoft Teams 用の TLS 証明書 (teams.microsoft.com, edge.skype.com) は、ボルチモア CyberTrust Root によって発行される2048ビットの SHA256RSA 証明書です。 <br> <br> Microsoft Teams の TLS ルート証明書は、ボルチモア CyberTrust root によって発行される2048ビットの SHA256RSA 証明書です。 | はい |
+| Microsoft データセンター間の TLS | すべての Office 365 サービス | AES 256 を使用した TLS 1.2 <br> <br> セキュリティで保護されたリアルタイム転送プロトコル (srtp) | microsoft では、microsoft データセンター間のサーバー間通信に、社内で管理および展開された証明機関を使用しています。 | はい |
+| azure Rights Management (Office 365 または azure Information Protection に含まれています) | Exchange Online | は、更新され拡張された RMS 暗号化実装である[暗号化モード 2](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))をサポートします。このメソッドは、署名と暗号化に RSA 2048 をサポートし、署名におけるハッシュの sha-1-256 をサポートします。 | [Microsoft によって管理](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)されます。 | ○ |
+|  | SharePoint Online | は、更新され拡張された RMS 暗号化実装である[暗号化モード 2](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))をサポートします。このメソッドは、署名と暗号化に RSA 2048 をサポートし、署名には sha-1-256 をサポートします。 | [Microsoft によって管理](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)されます。これは既定の設定です。や <br> <br> お客様による管理。 Microsoft が管理するキーに代わるものです。IT 管理された Azure サブスクリプションを所有している組織は、byok を使用して、その使用を無償でログに記録できます。詳細については、「[独自のキーを実装する](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)」を参照してください。この構成では、Thales hsm を使用してキーを保護します。詳細については、「 [Thales hsm and Azure RMS](http://www.thales-esecurity.com/msrms/cloud)」を参照してください。 | はい |
+| S/MIME | Exchange Online | 暗号化メッセージ構文 Standard 1.5 (PKCS #7) | お客様が管理する公開キー基盤が展開されているかどうかによって決まります。キーの管理は顧客によって実行され、Microsoft は署名と復号化に使用される秘密キーにアクセスできません。 | ○ (3des または AES256 を使用して送信メッセージを暗号化するように構成されている場合) |
+| Office 365 Message Encryption | Exchange Online | Azure RMS と同じ ([暗号化モード 2](https://technet.microsoft.com/en-us/library/dn569290.aspx) -署名と暗号化用の RSA 2048、および署名用の SHA-256) | Azure Information Protection を暗号化インフラストラクチャとして使用します。使用される暗号化方法は、メッセージの暗号化と復号化に使用される RMS キーを取得する場所によって異なります。 | はい |
+| パートナー組織との SMTP TLS | Exchange Online | AES 256 を使用した TLS 1.2 | Exchange Online 用の TLS 証明書 (outlook.office.com) は、ボルチモア CyberTrust Root によって発行される2048ビットの SHA256RSA 証明書です。 <br> <br> Exchange Online の TLS ルート証明書は、ボルチモア CyberTrust root によって発行される2048ビットの SHA1RSA 証明書です。 | はい、TLS 1.2 を256ビットの暗号強度で使用します。 |
 
-**TLS 証明書がこのテーブルで参照されている、米国のデータ センターです。(米国) 以外のデータ センターでは、2048 ビットの SHA256RSA の証明書も使用します。*
+**この表で参照されている TLS 証明書は、US データセンター用です。US 以外のデータセンターも2048ビットの SHA256RSA 証明書を使用します。*
 
-***BitLocker の AES の 256 ビットの暗号化と Exchange オンラインのマルチ テナント環境でのほとんどのサーバーされてきました。AES 128 ビットを使用しているサーバーは、段階的に廃止。*
+***Exchange Online マルチテナント環境のほとんどのサーバーは、BitLocker の AES 256 ビット暗号化を使用して展開されています。AES 128 ビットを使用しているサーバーは、段階的に廃止されています。*
 
-| 暗号化テクノロジー | によって実装されています。 | キー交換アルゴリズムと強度 | キー管理 * | FIPS 140-2 検証 |
+## <a name="encryption-technologies-available-in-government-cloud-community-environments"></a>Government cloud community 環境で利用可能な暗号化テクノロジ
+
+| 暗号化テクノロジ | で実装されている | キー交換のアルゴリズムと強さ | キー管理 * | FIPS 140-2 の検証 |
 |---------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| BitLocker | Exchange Online | AES 256 ビット | AES の外部キーは、秘密の安全および Exchange サーバーのレジストリに格納されます。シークレット セーフは、高レベルの上昇およびアクセスするために承認を必要とするセキュリティで保護されたリポジトリです。アクセスを要求して、ロック ボックスと呼ばれる内部ツールを使用してのみを承認します。AES の外部キーは、トラステッド プラットフォーム モジュールでは、サーバーにも格納されます。48 桁の数字のパスワードは Active Directory に格納し、ロック ボックスで保護されています。 | はい |
-|  | SharePoint Online | AES 256 ビット | AES の外部キーは、秘密の安全に格納されます。シークレット セーフは、高レベルの上昇およびアクセスするために承認を必要とするセキュリティで保護されたリポジトリです。アクセスを要求して、ロック ボックスと呼ばれる内部ツールを使用してのみを承認します。AES の外部キーは、トラステッド プラットフォーム モジュールでは、サーバーにも格納されます。48 桁の数字のパスワードは Active Directory に格納し、ロック ボックスで保護されています。 | はい |
-|  | Skype for Business | AES 256 ビット | AES の外部キーは、秘密の安全に格納されます。シークレット セーフは、高レベルの上昇およびアクセスするために承認を必要とするセキュリティで保護されたリポジトリです。アクセスを要求して、ロック ボックスと呼ばれる内部ツールを使用してのみを承認します。AES の外部キーは、トラステッド プラットフォーム モジュールでは、サーバーにも格納されます。48 桁の数字のパスワードは Active Directory に格納し、ロック ボックスで保護されています。 | はい |
-| サービスの暗号化 | SharePoint Online | AES 256 ビット | Blob の暗号化に使用するキーは、オンライン コンテンツの SharePoint データベースに格納されます。SharePoint のオンライン コンテンツ データベースは、データベース アクセスの制御と残りの部分での暗号化によって保護されています。Azure の SQL データベースで TDE を使用して暗号化が実行されます。これらの機密情報は、SharePoint online テナントのレベルではなくサービス ・ レベルでは。(マスター_キーとも呼ばれる) これらの機密情報は、キー ストアと呼ばれる別のセキュリティで保護されたリポジトリに格納されます。TDE は、アクティブなデータベースとデータベースのバックアップとトランザクション ・ ログの両方のためにセキュリティを提供します。お客様は、オプションのキーを提供して Azure キーの保管場所に顧客のキーが格納されているサービスは、ファイル レベルのキーの暗号化に使用し、サイトのキーの暗号化に使用される、テナントのキーを暗号化するキーを使用します。基本的には、お客様がキーを提供するときに新しいキーの階層構造が導入されています。 | はい |
-|  | Skype for Business | AES 256 ビット | 個々 のデータは、別のランダムに生成された 256 ビット キーを使用して暗号化されます。暗号化キーは、会議ごとのマスター_キーで暗号化されても、対応するメタデータ XML ファイルに格納されます。マスター_キーは、会議ごと 1 回もランダムに生成されます。 | はい |
-|  | Exchange Online | AES 256 ビット | 各メールボックスは、(顧客キーを使用) する場合、Microsoft またはお客様を制御する暗号化キーを使用するデータの暗号化ポリシーを使用して暗号化されています。 | はい |
-| Office 365 とのクライアントやパートナーとの間の TLS | Exchange Online | [便宜的の TLS 暗号スイートを複数のサポート](https://technet.microsoft.com/en-us/library/mt163898.aspx) | Exchange Online (outlook.office.com) 用の TLS 証明書は、ボルチモア CyberTrust ルートによって発行された 2048 ビット SHA256RSA の証明書です。 | [はい]、256 ビットの暗号強度で TLS 1.2 を使用する場合 |
-|  |  |  | Exchange Online の TLS のルート証明書は、ボルチモア CyberTrust ルートによって発行された 2048 ビット SHA1RSA 証明書です。 |  |
-|  | SharePoint Online | AES の 256 の TLS 1.2 | SharePoint Online の TLS 証明書 (*. sharepoint.com) は、ボルチモア CyberTrust ルートによって発行された 2048 ビット SHA256RSA 証明書。 | はい |
-|  |  |  | SharePoint Online の TLS のルート証明書は、ボルチモア CyberTrust ルートによって発行された 2048 ビット SHA1RSA 証明書です。 |  |
-|  | Skype for Business | SIP 通信と PSOM データ共有セッション用の TLS | ビジネス用の Skype の TLS 証明書 (* します。 lync.com) ボルチモア CyberTrust ルートによって発行された 2048 ビット SHA256RSA 証明書は、です。 | はい |
-|  |  |  | ビジネス用の Skype の TLS のルート証明書は、ボルチモア CyberTrust ルートによって発行された 2048 ビット SHA256RSA の証明書です。 |  |
-|  | Microsoft Teams | [に関してよく寄せられる質問: マイクロソフトのチーム管理のヘルプ](https://docs.microsoft.com/MicrosoftTeams/teams-overview) | (Teams.microsoft.com; edge.skype.com)、マイクロソフトのチーム用の TLS 証明書は、ボルチモア CyberTrust ルートによって発行された 2048 ビット SHA256RSA の証明書です。 | はい |
-|  |  |  | マイクロソフト チームの TLS のルート証明書は、ボルチモア CyberTrust ルートによって発行された 2048 ビット SHA256RSA の証明書です。 |  |
-| マイクロソフトのデータ センター間の TLS | SharePoint オンラインでビジネス用の Skype をオンラインで交換します。 | AES の 256 の TLS 1.2 | マイクロソフトは、マイクロソフトのデータ センター間でサーバーからサーバーへの通信のため、内部でマネージ コードと、展開済みの証明機関を使用します。 | はい |
-|  |  | リアルタイム転送プロトコル (SRTP) をセキュリティで保護します。 |  |  |
-| Azure の権限の管理サービス | Exchange Online | [暗号化モード 2](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))、更新および強化された RMS 暗号化実装をサポートしています。署名のハッシュの署名と暗号化、および sha-256 の RSA 2048 をサポートします。 | [Microsoft によって管理](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)されます。 | はい |
-|  | SharePoint Online | [暗号化モード 2](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))、更新および強化された RMS 暗号化実装をサポートしています。署名のハッシュの署名と暗号化、および sha-256 の RSA 2048 をサポートします。 | [Microsoft によって管理されている](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)既定の設定であります。または | はい |
-|  |  |  | お客様が管理する (別名 BYOK) の代わりに Microsoft で管理されるキーであります。IT 管理の Azure サブスクリプションを持つ組織では、BYOK を使用でき、追加料金なしで、その使用状況をログに記録することができます。詳細については、[独自のキーを表示する実装](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)を参照してください。 |  |
-|  |  |  | Thales の Hsm は、BYOK では、キーを保護するために使用されます。詳細については、 [Thales の Hsm と Azure の RMS](http://www.thales-esecurity.com/msrms/cloud)を参照してください。 |  |
-| S/MIME | Exchange Online | 暗号化メッセージ構文標準 (PKCS #7) を 1.5 | 展開公開キーのインフラストラクチャに依存します。 | 3 des または AES の 256 の送信メッセージを暗号化するために構成されている場合ははい。 |
-| Office 365 Message Encryption | Exchange Online | Azure RMS ([暗号化モード 2](https://technet.microsoft.com/en-us/library/dn569290.aspx) - の署名と暗号化、RSA 2048 と sha-256 ハッシュ、署名のため) と同じ | 暗号化インフラストラクチャとして Azure の RMS を使用します。使用する暗号化方法は、暗号化し、メッセージを復号化に使用する RMS キーを取得する場所によって異なります。 | はい |
-|  |  |  | Microsoft Azure の RMS を使用するにはキーを取得するのには、モード 2 の暗号化が使用されます。キーを取得するのには Active Directory (AD) RMS を使用する暗号モード 1 または暗号化のモード 2 が使用されます。使用方法は、設置型とは異なります AD RMS の展開です。暗号化モード 1 は、元の AD RMS 暗号化の実装です。署名と暗号化のための RSA 1024 をサポートし、署名の sha-1 をサポートしています。RMS は、Hsm を使用している BYOK の構成以外のすべての現在のバージョンでサポートするは、このモードが継続します。 |  |
-| パートナーの組織を使用した SMTP TLS | Exchange Online | AES の 256 の TLS 1.2 | Exchange Online (outlook.office.com) 用の TLS 証明書は、ボルチモア CyberTrust ルートによって発行された 2048 ビット SHA256RSA の証明書です。 | はい |
-|  |  |  | Exchange Online の TLS のルート証明書は、ボルチモア CyberTrust ルートによって発行された sha1RSA の 2048 ビットの証明書です。 |  |
-|  |  |  | *なるセキュリティ上の理由から、当社の証明書は変更に注意します。* |  |
+| BitLocker | Exchange Online | AES 256 ビット | AES 外部キーは、シークレットセーフと Exchange サーバーのレジストリに格納されます。シークレットセーフは、高度な昇格とアクセス許可を必要とするセキュリティで保護されたリポジトリです。アクセス許可の要求と承認は、ロックボックスと呼ばれる内部ツールを使用してのみ行うことができます。AES 外部キーは、サーバーのトラステッドプラットフォームモジュールにも保存されます。48桁の数値パスワードは Active Directory に格納され、ロックボックスによって保護されます。 | ○ |
+|  | SharePoint Online | AES 256 ビット | AES 外部キーは、シークレットセーフに格納されます。シークレットセーフは、高度な昇格とアクセス許可を必要とするセキュリティで保護されたリポジトリです。アクセス許可の要求と承認は、ロックボックスと呼ばれる内部ツールを使用してのみ行うことができます。AES 外部キーは、サーバーのトラステッドプラットフォームモジュールにも保存されます。48桁の数値パスワードは Active Directory に格納され、ロックボックスによって保護されます。 | はい |
+|  | Skype for Business | AES 256 ビット | AES 外部キーは、シークレットセーフに格納されます。シークレットセーフは、高度な昇格とアクセス許可を必要とするセキュリティで保護されたリポジトリです。アクセス許可の要求と承認は、ロックボックスと呼ばれる内部ツールを使用してのみ行うことができます。AES 外部キーは、サーバーのトラステッドプラットフォームモジュールにも保存されます。48桁の数値パスワードは Active Directory に格納され、ロックボックスによって保護されます。 | はい |
+| サービス暗号化 | SharePoint Online | AES 256 ビット | blob の暗号化に使用されるキーは、SharePoint Online コンテンツデータベースに格納されます。SharePoint Online のコンテンツデータベースは、データベースのアクセス制御と、保存時の暗号化によって保護されています。暗号化は tde in Azure SQL Database を使用して実行されます。これらの機密情報は、テナントレベルではなく、SharePoint Online のサービスレベルで行われます。これらの機密情報 (マスターキーと呼ばれることもあります) は、キーストアと呼ばれる別の安全なリポジトリに格納されます。tde は、アクティブデータベースとデータベースのバックアップとトランザクションログの両方に対して、セキュリティで保護を提供します。顧客がオプションのキーを指定すると、顧客キーが Azure key Vault に格納され、サービスはキーを使用してテナントキーを暗号化します。これは、サイトキーを暗号化するために使用されます。これは、ファイルレベルのキーを暗号化するために使用されます。基本的に、顧客がキーを提供すると、新しいキー階層が導入されます。 | はい |
+|  | Skype for Business | AES 256 ビット | 各データは、ランダムに生成された異なる256ビットキーを使用して暗号化されます。暗号化キーは、対応するメタデータ XML ファイルに格納されます。これは、会議マスターキーごとにも暗号化されています。マスターキーも、電話会議ごとに1回ランダムに生成されます。 | はい |
+|  | Exchange Online | AES 256 ビット | 各メールボックスは、Microsoft またはお客様が管理する暗号化キーを使用するデータ暗号化ポリシーを使用して暗号化されます (顧客キーが使用されている場合)。 | はい |
+| Office 365 とクライアント/パートナー間の TLS | Exchange Online | [複数の暗号スイートをサポートする便宜的な方法](https://technet.microsoft.com/en-us/library/mt163898.aspx) | Exchange Online 用の TLS 証明書 (outlook.office.com) は、ボルチモア CyberTrust Root によって発行される2048ビットの SHA256RSA 証明書です。 <br> <br> Exchange Online の TLS ルート証明書は、ボルチモア CyberTrust root によって発行される2048ビットの SHA1RSA 証明書です。 | はい、TLS 1.2 を256ビットの暗号強度で使用します。 |
+|  | SharePoint Online | AES 256 を使用した TLS 1.2 | SharePoint Online の TLS 証明書 (* sharepoint.com) は、ボルチモア CyberTrust Root によって発行される2048ビットの SHA256RSA 証明書です。 <br> <br> SharePoint Online の TLS ルート証明書は、ボルチモア CyberTrust root によって発行される2048ビットの SHA1RSA 証明書です。 | はい |
+|  | Skype for Business | SIP 通信および psom データ共有セッションの TLS | Skype for business の TLS 証明書 (* lync.com) は、ボルチモア CyberTrust Root によって発行される2048ビットの SHA256RSA 証明書です。 <br> <br> Skype for business の TLS ルート証明書は、ボルチモア CyberTrust root によって発行される2048ビットの SHA256RSA 証明書です。 | はい |
+|  | Microsoft Teams | [Microsoft Teams についてよく寄せられる質問-管理者向けヘルプ](https://docs.microsoft.com/MicrosoftTeams/teams-overview) | Microsoft Teams の TLS 証明書 (teams.microsoft.com; edge.skype.com) は、ボルチモア CyberTrust Root によって発行される2048ビットの SHA256RSA 証明書です。 <br> <br> Microsoft Teams の TLS ルート証明書は、ボルチモア CyberTrust root によって発行される2048ビットの SHA256RSA 証明書です。 | はい |
+| Microsoft データセンター間の TLS | Exchange online、SharePoint online、Skype for business | AES 256 を使用した TLS 1.2 | microsoft では、microsoft データセンター間のサーバー間通信に、社内で管理および展開された証明機関を使用しています。 | はい |
+|  |  | セキュリティで保護されたリアルタイム転送プロトコル (srtp) |  |  |
+| Azure Rights Management サービス | Exchange Online | は、更新され拡張された RMS 暗号化実装である[暗号化モード 2](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))をサポートします。このメソッドは、署名と暗号化に RSA 2048 をサポートし、署名におけるハッシュの sha-1-256 をサポートします。 | [Microsoft によって管理](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)されます。 | はい |
+|  | SharePoint Online | は、更新され拡張された RMS 暗号化実装である[暗号化モード 2](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))をサポートします。このメソッドは、署名と暗号化に RSA 2048 をサポートし、署名におけるハッシュの sha-1-256 をサポートします。 | [Microsoft によって管理](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)されます。これは既定の設定です。や <br> <br> お客様が管理する (別名: ok)。これは、Microsoft が管理するキーに代わるものです。IT 管理された Azure サブスクリプションを所有している組織は、byok を使用して、その使用を無償でログに記録できます。詳細については、「[独自のキーを実装する](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)」を参照してください。<br> <br> byok シナリオでは、Thales hsm を使用してキーを保護します。詳細については、「 [Thales hsm and Azure RMS](http://www.thales-esecurity.com/msrms/cloud)」を参照してください。 | はい |
+| S/MIME | Exchange Online | 暗号化メッセージ構文 Standard 1.5 (PKCS #7) | 公開キー基盤が展開されていることに依存します。 | はい。3des または AES-256 を使用して送信メッセージを暗号化するように構成されている場合。 |
+| Office 365 Message Encryption | Exchange Online | Azure RMS と同じ ([暗号化モード 2](https://technet.microsoft.com/en-us/library/dn569290.aspx) -署名と暗号化用の RSA 2048、および署名におけるハッシュの sha-1-256) | Azure RMS を暗号化インフラストラクチャとして使用します。使用される暗号化方法は、メッセージの暗号化と復号化に使用される RMS キーを取得する場所によって異なります。 <br> <br> Microsoft Azure RMS を使用してキーを取得する場合、暗号化モード2が使用されます。Active Directory (AD) RMS を使用してキーを取得する場合は、暗号化モード1または暗号化モード2のどちらかを使用します。使用される方法は、オンプレミスの AD RMS 展開によって異なります。暗号化モード1は、元の AD RMS 暗号化実装です。署名と暗号化に RSA 1024 をサポートし、署名に sha-1 をサポートしています。このモードは、hsm のすべての最新バージョンで引き続きサポートされています。ただし、hsm を使用する byok 構成は除きます。 | はい |
+| パートナー組織との SMTP TLS | Exchange Online | AES 256 を使用した TLS 1.2 | Exchange Online 用の TLS 証明書 (outlook.office.com) は、ボルチモア CyberTrust Root によって発行される2048ビットの SHA256RSA 証明書です。 <br> <br> Exchange Online の TLS ルート証明書は、ボルチモア CyberTrust root によって発行される2048ビットの sha1RSA 証明書です。 <br> <br> セキュリティ上の理由から、証明書は随時変更されることに注意してください。 | はい |
 
-**TLS 証明書がこのテーブルで参照されている、米国のデータ センターです。(米国) 以外のデータ センターでは、2048 ビットの SHA256RSA の証明書も使用します。*
+**この表で参照されている TLS 証明書は、US データセンター用です。US 以外のデータセンターも2048ビットの SHA256RSA 証明書を使用します。*
