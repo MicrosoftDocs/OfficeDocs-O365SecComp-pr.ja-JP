@@ -91,9 +91,14 @@
         "redirect_document_id": false
     },                     
     { 
+        "source_path": "securitycompliance/office-365-cas-help.md",
+        "redirect_url": "https://docs.microsoft.com/Office365/SecurityCompliance/office-365-cas-overview", 
+        "redirect_document_id": true
+    },
+    {
         "source_path": "securitycompliance/prevent-email-from-being-marked-as-spam-0.md",
         "redirect_url": "https://docs.microsoft.com/office365/SecurityCompliance/prevent-email-from-being-marked-as-spam", 
         "redirect_document_id": true
-    }                                                                                    
+    }                                                                                   
   ] 
 }
