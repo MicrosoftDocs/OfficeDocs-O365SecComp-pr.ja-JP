@@ -9,14 +9,16 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 description: Office 365 datacenter ディスクドライブおよびサーバーのリサイクル、廃棄、または破壊に関する Microsoft のポリシーの概要。
-ms.openlocfilehash: d273640dc12370386f08d16fe3f254800ede47b3
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: 638f1964be0573f5f053a95b1dfa475776dd7b25
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29696324"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091089"
 ---
 # <a name="office-365-data-destruction"></a>Office 365 データ破壊
 

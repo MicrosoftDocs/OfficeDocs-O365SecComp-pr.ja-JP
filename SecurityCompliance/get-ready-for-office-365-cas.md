@@ -5,94 +5,110 @@ author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: overview
+ms.date: 02/15/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d9ee4d67-f2b3-42b4-9c9e-c4529904990a
-description: Office 365 のクラウド アプリケーションのセキュリティの使用を開始します。
-ms.openlocfilehash: 1d1ae464278a5d9aafa5a176298f03174b6a37dc
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Office 365 Cloud App Security の使用を開始する
+ms.openlocfilehash: eef1a4f0465b583bb0f0589d213f61c9a15fd152
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603698"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087436"
 ---
 # <a name="get-ready-for-office-365-cloud-app-security"></a>Office 365 Cloud App Security の使用準備
   
-|評価 * *\>**|計画 * *\>**|配置 * *\>**|使用率。|
+|評価 * *\>**|計画 * *\>**|展開 * *\>**|使用率 * * * *|
 |:-----|:-----|:-----|:-----|
-|[評価を開始します。](office-365-cas-overview.md) <br/> |コースです!  <br/> [次の手順](turn-on-office-365-cas.md) <br/> |[展開を開始します。](turn-on-office-365-cas.md) <br/> |[使用します。](utilization-activities-for-ocas.md) <br/> |
+|[評価の開始](office-365-cas-overview.md) <br/> |ここでは、  <br/> [次の手順](turn-on-office-365-cas.md) <br/> |[展開を開始する](turn-on-office-365-cas.md) <br/> |[利用を開始する](utilization-activities-for-ocas.md) <br/> |
    
-オンにし、組織の Office 365 のクラウド アプリケーション セキュリティ (高度なセキュリティ管理と呼ばれていました) の実装を準備するには考慮する点があります。ガイドとしてこの資料を使用して、Office 365 のクラウド アプリケーションのセキュリティを計画します。
+Office 365 Cloud App Security を組織に対して有効にして実装する準備ができたら、いくつかの点を考慮する必要があります。この記事は、Office 365 Cloud App Security を計画する際のガイドとしてご利用ください。
     
-## <a name="step-1-identify-and-protect-your-global-and-security-administrator-accounts"></a>識別し、グローバル アカウントおよびセキュリティ管理者アカウントを保護する手順 1。
+## <a name="step-1-identify-and-protect-your-global-and-security-administrator-accounts"></a>手順 1: グローバルおよびセキュリティ管理者アカウントを識別して保護する
 
-グローバル管理者、セキュリティ管理者、およびセキュリティのリーダーは、Office 365 のクラウド アプリケーションのセキュリティ ポリシーを表示、確認通知、およびレポートを使用してポータルにアクセスできます。グローバル管理者およびセキュリティ管理者は、ポリシーを定義し、組織を保護するために他のアクションを実行します。(詳細についてを参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md).)アクセス許可を高めた予防策として、組織のユーザー アカウントを確認します。 
+グローバル管理者、セキュリティ管理者、およびセキュリティ閲覧者は、Office 365 Cloud App security ポータルにアクセスして、ポリシーの表示、通知の確認、およびレポートの使用を行うことができます。グローバル管理者とセキュリティ管理者は、ポリシーを定義し、組織を保護するためのその他のアクションを実行できます。(詳細については、「 [Office 365 セキュリティ&amp;センターコンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください)。安全性の高い権限を持つ組織のユーザーアカウントを確認します。 
   
- **[グローバル管理者アカウントを保護する、Office 365](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)**。 
+ **[Office 365 のグローバル管理者アカウントを保護](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)** します。 
   
-## <a name="step-2-turn-on-audit-logging-for-your-organization"></a>手順 2: は、監査、組織のログを有効にします。
+## <a name="step-2-turn-on-audit-logging-for-your-organization"></a>手順 2: 組織の監査ログを有効にする
 
-正しく動作する Office 365 のクラウド アプリケーションのセキュリティのためには、監査ログを有効にする必要があります。これは通常、Exchange Online 管理者またはグローバル ・ アドミニストレーターが行います。
+Office 365 Cloud App Security を正しく動作させるには、監査ログを有効にする必要があります。これは、通常、Exchange Online 管理者または全体管理者によって行われます。
   
- **[オンまたはオフ、Office 365 を有効にする監査ログの検索](turn-audit-log-search-on-or-off.md)** をします。 
+ **[Office 365 監査ログの検索をオンまたはオフに](turn-audit-log-search-on-or-off.md)** します。 
   
-## <a name="step-3-go-to-the-office-365-cloud-app-security-portal"></a>Office 365 のクラウド アプリケーションのセキュリティ関連ポータルには、手順 3。
+## <a name="step-3-go-to-the-office-365-cloud-app-security-portal"></a>手順 3: Office 365 Cloud App Security ポータルに移動する
 
-Office 365 のクラウド アプリケーションのセキュリティ関連ポータルにアクセスできます[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)署名します。 
+Office 365 Cloud App Security ポータルにアクセスするには、に[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)移動してサインインします。 
 
-取得することもありますから、Office 365 のセキュリティ&amp;コンプライアンス センターです。これを行う方法の 1 つを以下に示します。
+Office 365 セキュリティ&amp;コンプライアンスセンターから入手することもできます。そのためには、次のいずれかの方法をお勧めします。
 
-1. [https://protection.office.com](https://protection.office.com)と符号インチ (これで、セキュリティには、&amp;コンプライアンス センター)。
+1. に[https://protection.office.com](https://protection.office.com)移動し、サインインします (これにより、セキュリティ&amp;コンプライアンスセンターにアクセスできます)。
     
-2. **アラート**を参照して\>**詳細なアラートを管理**します。
+2. [**アラート** \> ] **[advanced alerts の管理**] に移動します。
     
-3. Office 365 のクラウド アプリケーションのセキュリティ関連ポータルに移動する**には、Office 365 のクラウド アプリケーションのセキュリティ**を選択してください。<br> ![Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>Office 365 のクラウド アプリケーションのセキュリティ関連ポータルに移動すると、最初のページが表示は、[ポリシー] ページで次の図のようなです。<br>![ポリシー] ページで開始する場合、Office 365 のクラウド アプリケーションのセキュリティ関連ポータルに移動すると、](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)<br>
+3. [ **office 365 cloud app security に移動**] を選択して、office 365 Cloud app security ポータルに移動します。<br> ![Office 365 Cloud App Security に移動するには、[高度な通知の管理] を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>Office 365 Cloud App Security ポータルに移動すると、最初に表示されるページは [ポリシー] ページになります。これは次の画像のようになります。<br>![Office 365 Cloud App Security ポータルに移動するときに、[ポリシー] ページから始めます。](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)<br>
   
-## <a name="step-4-define-policies-and-set-up-alerts-amp-actions"></a>ステップ 4: ポリシーを定義し、アラートを設定します&amp;アクション
+## <a name="step-4-define-policies-and-set-up-alerts-amp-actions"></a>手順 4: ポリシーを定義し、通知&amp;アクションをセットアップする
 
-グローバル管理者およびセキュリティ管理者は、Office 365 のクラウド アプリケーションのセキュリティのポリシーを定義します。ポリシーを定義する過程で、アラートとアクションも設定されています。アラートは、ビューに表示されますまたは電子メール経由で送信される条件に基づく通知です。 
+グローバル管理者とセキュリティ管理者は、Office 365 Cloud App security でポリシーを定義します。ポリシーの定義プロセスでは、アラートとアクションも設定されます。通知は、ビューに表示される、または電子メール経由で送信される基準に基づく通知です。 
   
-Office 365 のクラウド アプリケーションのセキュリティの警告の 2 種類があります: 不審な活動を検出する異常検知して警告し、アクティビティのアラートは、組織の典型的な可能性のあるアクティビティに定義されています。アラートでは、グローバル管理者およびセキュリティ管理者、組織にとっても、通常の Office 365 環境内のアクティビティがある場合に通知します。
+Office 365 Cloud App Security には2種類の通知があります。不審なアクティビティを検出する異常検出アラートと、組織にとって例外的なアクティビティに対して定義されたアクティビティアラートがあります。通知は、組織にとって一般的でない Office 365 環境にアクティビティがある場合に、グローバル管理者とセキュリティ管理者に通知します。
   
-詳細については、次のリソースを参照してください。
+詳細については、以下のリソースを参照してください。
   
 - [Office 365 Cloud App Security のアクティビティ ポリシーと警告](activity-policies-and-alerts.md)
     
 - [Office 365 Cloud App Security の異常検出ポリシー](anomaly-detection-policies-in-ocas.md)
     
-- [Office 365 のクラウド アプリケーションのセキュリティの警告を確認して処理](review-office-365-cas-alerts.md)
+- [Office 365 Cloud App Security alerts を確認してアクションを実行する](review-office-365-cas-alerts.md)
     
-## <a name="step-5-learn-about-your-organizations-cloud-usage"></a>組織のクラウドの使用方法について、手順 5。
 
-グローバル管理者、セキュリティ管理者、またはセキュリティのリーダーとして、レポートとクラウドの探索のダッシュ ボード (生産性アプリケーションの検出とも呼ばれます) を通じて、組織のクラウドの使用方法について学習できます。このダッシュ ボードには、ユーザー、アプリケーション、web トラフィック、およびリスクのレベルについての情報が表示されます。
+## <a name="step-5-set-up-conditional-access-app-control"></a>手順 5: 条件付きアクセスアプリコントロールを設定する
+
+ユーザーがどのアプリを使用できるかなど、特定の条件に基づいて、組織のアプリでコントロールを設定して適用します。機密性の高いドキュメントをダウンロードおよび暗号化できるかどうかを決定し、特定のアプリへのアクセスをブロックし、特定のアプリに対して読み取り専用モードを設定し、企業以外のネットワークからのユーザーセッションを制限します。
+
+詳細については、以下のリソースを参照してください。
+
+- [Office 365 Cloud App Security Conditional Access App Control を使用したアプリの保護](ocas-conditional-access-app-control.md)
+
+- [Office 365 アプリ用の条件付きアクセスアプリコントロールの展開](ocas-deploy-conditional-access-app-control.md)
+
+## <a name="step-6-learn-about-your-organizations-cloud-usage"></a>手順 6: 組織のクラウド使用状況について学びます。
+
+グローバル管理者、セキュリティ管理者、またはセキュリティ閲覧者は、レポートとクラウド検出ダッシュボード (生産性アプリの検出とも呼ばれます) を使用して、組織のクラウド使用状況について理解することができます。このダッシュボードには、ユーザー、アプリ、web トラフィック、およびリスクレベルに関する情報が表示されます。
   
-![検出を選択して、Office 365 の CA のポータルでは、\>クラウド探索のダッシュ ボード](media/61269290-fd82-4d4b-8045-aea1ebc82287.png)
+![Office 365 CAS ポータルで、[クラウド検出\>ダッシュボードの検出] を選択します。](media/61269290-fd82-4d4b-8045-aea1ebc82287.png)
   
-生産性アプリケーションの検出のダッシュ ボード、Office 365 のクラウド アプリケーションのセキュリティ ・ ポータル内に移動するのには、**検出**を選択します\>**クラウド探索のダッシュ ボード**です。
+プロダクティビティアプリの探索ダッシュボードに移動するには、Office 365 cloud App Security ポータルで、[**クラウド検出ダッシュボード**の**検出** \> ] を選択します。
   
-![Office 365 CA ポータルでは、検出を選択します](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)
+![Office 365 CAS ポータルで、[検出] を選択します。](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)
   
-必要な情報を含むレポートを作成するには、組織のファイアウォールやプロキシのログ ファイルをアップロードします。詳細については、次のリソースを参照してください。
+レポートに必要な情報を設定するには、組織のファイアウォールとプロキシからログファイルをアップロードします。詳細については、以下のリソースを参照してください。
   
-- [Office 365 のクラウド アプリケーションのセキュリティでのアプリケーション検出レポートを作成します。](create-app-discovery-reports-in-ocas.md)
+- [Office 365 Cloud app Security でアプリ検出レポートを作成する](create-app-discovery-reports-in-ocas.md)
     
 - [Office 365 Cloud App Security でアプリ検出結果を確認する](review-app-discovery-findings-in-ocas.md)
     
-## <a name="step-6-manage-apps-that-your-organization-is-using-to-access-office-365"></a>手順 6: 組織が Office 365 のアクセスに使用しているアプリケーションを管理します。
+## <a name="step-7-manage-apps-that-your-organization-is-using-to-access-office-365"></a>手順 7: 組織が Office 365 へのアクセスに使用しているアプリを管理する
 
-グローバル管理者またはセキュリティ管理者は、カスタム アプリケーションを Office 365 で、組織内のユーザーを使用しているサード ・ パーティ製のアプリケーションなどのアプリケーションを管理できます。たとえば、Office 365 を使用するカスタムのアプリケーションのダウンロードが他のこととします。ユーザーが使用してアプリケーションを確認する、信頼されていないアプリケーションは、アクセスを禁止したり、アプリケーションを追跡のための承認済みとしてマークできます。[OAuth の管理アプリケーションが Office 365 のクラウド アプリケーションのセキュリティを使用](manage-app-permissions-in-ocas.md)します。
+グローバル管理者またはセキュリティ管理者として、組織内のユーザーが Office 365 を使用してデバイス上で使用している、カスタムアプリやサードパーティアプリなどのアプリを管理できます。たとえば、ユーザーが Office 365 で使用するカスタムアプリをダウンロードしたとします。ユーザーが使用しているアプリを確認したり、信頼されていないアプリを禁止したり、追跡の目的でアプリを承認済みとしてマークしたりすることができます。[Office 365 Cloud App Security を使用して OAuth アプリを管理](manage-app-permissions-in-ocas.md)します。
   
-## <a name="step-7-use-your-siem-server-with-office-365-cloud-app-security"></a>手順 7: Office 365 のクラウド アプリケーションのセキュリティと SIEM サーバーを使用します。
+## <a name="step-8-create-a-maintenance-plan"></a>手順 8: メンテナンス計画を作成する
 
-セキュリティ情報およびイベント管理 (SIEM) サーバーを使用する組織ですか。Office 365 クラウド アプリケーションのセキュリティにアラートの一元的な監視を有効にするのには、SIEM のサーバーに統合できます。SIEM サービスと統合すること、セキュリティの一般的なワークフローを維持する、セキュリティ手順を自動化すること、およびクラウド ベースの間に相関関連づけることの中に、クラウド アプリケーションの保護を強化することができ、設置型のイベント。SIEM エージェントは、サーバー上で実行し、Office 365 のクラウド アプリケーションのセキュリティからのアラートを取得、SIEM サーバーにそれらのアラートをストリームします。[SIEM の統合 Office 365 のクラウド アプリケーションのセキュリティ](integrate-your-siem-server-with-office-365-cas.md)を参照してください。
+office 365 Cloud App security をセットアップして構成した後、組織のために office 365 の全体管理者またはセキュリティ管理者として、特定の使用状況タスクを実行する必要があります。これらのタスクを実行することにより、office 365 Cloud App Security が適切に構成され、ポリシーが最新のものであり、組織が office 365 の価値を実感していることを確認できます。この記事を参考にして、これらのタスクを計画してください。[Office 365 Cloud App Security をロールアウトした後の使用](utilization-activities-for-ocas.md)状況のアクティビティを参照してください。
+
+## <a name="optional-step-9-use-your-siem-server-with-office-365-cloud-app-security"></a>オプション手順 9: SIEM サーバーを Office 365 Cloud App Security で使用する
+
+組織はセキュリティ情報およびイベント管理 (SIEM) サーバーを使用していますか。Office 365 Cloud App Security を SIEM サーバーと統合して、アラートの集中監視を有効にすることができるようになりました。SIEM サービスとの統合により、通常のセキュリティワークフローを維持しながら、セキュリティ手順を自動化し、クラウドベースのイベントとオンプレミスのイベントとを関連付けることで、クラウドアプリケーションをより適切に保護することができます。SIEM エージェントは、サーバー上で実行され、Office 365 Cloud App Security から通知を取得し、それらのアラートを SIEM サーバーに転送します。「 [SIEM integration with Office 365 Cloud App Security」を](integrate-your-siem-server-with-office-365-cas.md)参照してください。
   
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [Office 365 Cloud App Security を有効にする](turn-on-office-365-cas.md)
     
-- [テスト ラボ ガイド](https://docs.microsoft.com/office365/enterprise/cloud-app-security-for-your-office-365-dev-test-environment)を実際に体験した Office 365 のクラウド アプリケーションのセキュリティの強力な機能を紹介し、概念実証を作成してください。 
+- Office 365 Cloud App Security の強力な機能をデモンストレーションし、概念実証を作成するための実践的な操作については、[テストラボガイド](https://docs.microsoft.com/office365/enterprise/cloud-app-security-for-your-office-365-dev-test-environment)をご利用ください。 
     
 

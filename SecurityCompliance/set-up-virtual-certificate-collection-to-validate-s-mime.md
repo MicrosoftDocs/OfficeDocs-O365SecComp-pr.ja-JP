@@ -12,13 +12,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
-description: s テナント管理者は、S/MIME 証明書を検証するために使用される仮想の証明書のコレクションを構成する必要があります。
-ms.openlocfilehash: 88d12b3c1d5f36c58f278cf304237a569a8b92c4
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+description: s テナント管理者は、s/MIME 証明書の検証に使用する仮想証明書コレクションを構成する必要があります。
+ms.openlocfilehash: 0e8226ca35e872cd8c7da16ba353bf8b99a6954d
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003036"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091059"
 ---
 # <a name="set-up-virtual-certificate-collection-to-validate-smime"></a>S/MIME を検証するための仮想証明書コレクションをセットアップする
 
@@ -29,7 +29,7 @@ ms.locfileid: "23003036"
 
 この手順を実行するには、シェルを使用する必要があります。 オンプレミスの Exchange 組織で Exchange 管理シェル を開く方法については、「 **Open the Shell**」を参照してください。 Windows PowerShell を使って Exchange Online に接続する方法については、「[Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=396554)」を参照してください。
   
-管理者は、 `Export-Certificate` コマンドレットを使用して信頼できるコンピューターから証明書をエクスポートし、その種類を SST に設定することによって、この SST ファイルを作成できます。  `Export-Certificate` コマンドレットの詳細については、「 [Export-Certificate](https://technet.microsoft.com/en-us/library/hh848628.aspx)」を参照してください。 
+管理者は、 `Export-Certificate` コマンドレットを使用して信頼できるコンピューターから証明書をエクスポートし、その種類を SST に設定することによって、この SST ファイルを作成できます。  `Export-Certificate` コマンドレットの詳細については、「 [Export-Certificate](https://docs.microsoft.com/en-us/powershell/module/pkiclient/export-certificate?view=win10-ps)」を参照してください。 
   
 SST ファイルが生成されたら、 `Set-Smimeconfig` コマンドレットと  _-SMIMECertificateIssuingCA_ パラメーターを使用して、そのファイルを仮想証明書ストアに保存します。例:  `Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content filename.sst -Encoding Byte)`
   
@@ -43,6 +43,6 @@ Exchange 2013 SP1 は、まず、SST ファイルをチェックして、証明�
 
 [S/MIME によるメッセージの署名と暗号化](s-mime-for-message-signing-and-encryption.md)
   
-[Get SmimeConfig](http://technet.microsoft.com/library/4b29fa89-0840-4fe9-8885-019fcef2e02b.aspx)
+[Get-smimeconfig](http://technet.microsoft.com/library/4b29fa89-0840-4fe9-8885-019fcef2e02b.aspx)
   
 

@@ -10,51 +10,53 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: '概要: Office 365 の管理者のアクセス制御とデータの分類の概要です。'
-ms.openlocfilehash: afa15d37aa8542985c59dbd9e3d82368421530e8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: '概要: Office 365 の管理アクセス制御とデータ分類の概要について説明します。'
+ms.openlocfilehash: f5cac8b6161ea7eab6ea390e32caec1c5ddb9bac
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532156"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091029"
 ---
 # <a name="administrative-access-controls-in-office-365"></a>Office 365 での管理アクセス制御 
 
 ## <a name="introduction"></a>概要
-マイクロソフトに投資を行って大きくし、それに応じてシステムと Office 365 のほとんどの操作を自動化するとともに、お客様のコンテンツへのアクセスを意図的に制限することをコントロールします。人間は、サービスを管理し、ソフトウェア、サービスの動作します。これにより、マイクロソフト、マイクロソフトのエンジニア リングなどのためのスピアー フィッシング詐欺など悪意のあるアクターは、顧客コンテンツへの内部の脅威のリスクを管理するだけでなく、規模で Office 365 を管理します。
+microsoft は、お客様のコンテンツへの microsoft のアクセスを意図的に制限する一方で、ほとんどの Office 365 操作を自動化するシステムと制御に、多くの投資を行ってきました。人間がサービスを制御し、ソフトウェアがサービスを運用します。これにより、microsoft は Office 365 をスケールで管理できるようになり、悪意のある俳優、Microsoft のエンジニアのスピアーフィッシングなど、お客様のコンテンツに対する内部の脅威のリスクを管理することもできます。
 
-既定では、マイクロソフトのエンジニアは Office 365 のゼロ位置の管理者特権とお客様のコンテンツへのアクセスをゼロ位置をあります。マイクロソフトのエンジニアの制限、監査し、時間、限られた量のコンテンツが、サービス業務に必要な場合にのみ、マイクロソフトの経営陣の (および、お客様のメンバーが承認された場合にのみ、お客様へのアクセスをセキュリティで保護できますライセンス顧客ロック ボックス機能は、顧客)。
+既定では、Microsoft のエンジニアは、Office 365 ではゼロの管理者権限と、お客様のコンテンツへの継続的なアクセス権を持ちます。microsoft のエンジニアは、限られた期間、お客様のコンテンツへのアクセスを制限、監査、およびセキュリティで保護することができます。ただし、サービスの運用に必要な場合のみで、また、microsoft シニアマネージメントのメンバーによって承認された場合にのみ、お客様のロックボックス機能のライセンスが供与されます。
 
-マイクロソフトでは、クラウド配信の複数のフォームを使用して、Office 365 をなどのオンライン サービスを提供します。
+Microsoft では、複数の形式のクラウド配信を使用して、Office 365 を含むオンラインサービスを提供しています。
 
-- **パブリック クラウド**- には、マルチ テナント型のバージョン Office 365、Azure および北アメリカ、南アメリカ、ヨーロッパ、アジア、オーストラリアなどでホストされている他のサービスにはが含まれています。
-- **国内雲の中**に (21Vianet が運用している)、中国では、Office 365 とドイツでは、Office 365 などその上で説明した)、米国以外のすべての君主およびサード ・ パーティ ・運用クラウドが含まれます (マイクロソフトが運用しているが、モデルでのドイツ語のデータ、トラスティ、Deutsche telekom 社が制御し、顧客データや顧客データが含まれているシステムにマイクロソフトのアクセスを監視する)。
-- **政府雲**- には、アメリカ合衆国政府の顧客に利用可能な Office 365 と Azure のサービスが含まれています。
+- **パブリッククラウド**-北米、南米、ヨーロッパ、アジア、オーストラリアなどでホストされている Office 365、Azure、その他のサービスのマルチテナントバージョンが含まれています。
+- **国内の雲**-米国以外のすべての独立およびサードパーティ製のクラウド (中国で運用されているものを除く)、ドイツでの office 365 (これは Microsoft が運用していますが、office 365ドイツの受付 kom がドイツのデータを含むモデルでは、顧客データを含む Microsoft の顧客データやシステムへのアクセスを制御し、監視します。
+- **行政機関**-米国政府機関のお客様が利用できる Office 365 および Azure サービスが含まれています。
 
-この資料の目的は、Office 365 サービスには、 [Exchange のオンライン](https://docs.microsoft.com/Exchange/exchange-online) [Exchange のオンライン保護](https://docs.microsoft.com/Office365/SecurityCompliance/eop/exchange-online-protection-overview)、 [SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online) ([ビジネスの OneDrive](https://docs.microsoft.com/OneDrive/onedrive)を含む)、[ビジネスの Skype](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)では、追加情報を[Yammer のエンタープライズ](https://support.office.com/article/yammer-–-admin-help-e1464355-1f97-49ac-b2aa-dd320b179dbe?ui=en-US&rs=en-US&ad=US)のアクセス制御はいくつか。その他の Office 365 サービスでは、この資料の対象外です。
+この記事の目的として、Office 365 サービスには、 [exchange online](https://docs.microsoft.com/Exchange/exchange-online)、 [exchange online Protection](https://docs.microsoft.com/Office365/SecurityCompliance/eop/exchange-online-protection-overview)、 [SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online) ( [OneDrive for](https://docs.microsoft.com/OneDrive/onedrive)business を含む)、 [Skype for business](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)などの追加情報が含まれています。[Yammer エンタープライズ](https://support.office.com/article/yammer-–-admin-help-e1464355-1f97-49ac-b2aa-dd320b179dbe?ui=en-US&rs=en-US&ad=US)アクセスコントロールの一部についてその他の Office 365 サービスは、この記事の対象外です。
 
 ## <a name="office-365-access-controls"></a>Office 365 のアクセス制御
-アクセス制御のため、Office 365 のデータは、お客様のデータまたはその他の種類のデータのいずれかとして分類されます。顧客データ、または Office 365 などのサービス、お客様のコンテンツ (コンテンツを直接作成または Office 365 を含むユーザーが SharePoint Online コンテンツ、電子メール、インスタント メッセージによってアップロードされたお客様の使用することで顧客のために提供されるすべてのデータでは予定表のアイテム、ドキュメント、および Office 365 に格納されている連絡先) とエンド ・ ユーザーを特定できる情報 (EUII) (データは、ユーザーに固有であるかを個々 のユーザーにリンク可能なですが、お客様のコンテンツは含まれません)。 
+アクセス制御の目的で、Office 365 データは、顧客データまたは他の種類のデータとして分類されます。顧客データとは、お客様が office 365 サービスを使用することによって提供される、またはお客様が office サービスを使用することによって提供されるすべてのデータ (電子メール、SharePoint Online コンテンツ、インスタントメッセージなど、office 365 ユーザーによって直接作成またはアップロードされたコンテンツ)。Office 365 に格納されている予定表アイテム、ドキュメント、および連絡先、およびエンドユーザー識別情報 (euii) (ユーザーに固有のデータ、または個人ユーザーに対して linkable されているが、顧客コンテンツは含まれません)。 
 
-その他の種類のデータを含めアカウント (管理用のデータには、サインアップ、または購買サービスと支払データは、クレジットなど、支払機関に関する情報は、カードの詳細情報とは、管理者によって提供される情報が含まれています)組織的に特定できる情報 (はテナントの識別に使用できるデータや利用状況のデータは個々 のユーザーにリンク可能なことではなく、お客様のコンテンツは含まれません)、およびシステムのメタデータ (構成設定を含むサービスのログが含まれていますシステムのステータス、Microsoft IP アドレス、およびサブスクリプションと、テナントに関する技術情報)。
+その他の種類のデータには、アカウントデータ (管理者がサインアップまたはサービスを購入するときに管理者が提供する情報)、支払いデータ (クレジットカードの詳細などの支払い手段に関する情報) などが含まれます。組織的に識別できる情報 (テナントを識別するために使用できるデータ、または個人のユーザーには linkable されず、お客様のコンテンツは含まれません)、およびシステムメタデータ (構成設定を含むサービスログを含む)、システムの状態、Microsoft IP アドレス、およびサブスクリプションとテナントに関する技術情報)。
 
-マイクロソフトは誰を持っていることを確認するのにはアクセス制御のメカニズムを確立顧客データやアクセス コントロールのデータへのアクセスを許可されていない (他の種類のデータや環境では、お客様のコンテンツまたは EUII; へのアクセスを含む関数へのアクセスを管理するために使用します。Microsoft のパスワード、セキュリティ証明書、およびその他の認証に関連するデータが含まれています)、または Office 365 の実稼働環境への未承認の物理、論理、またはリモート アクセスします。
+Microsoft は、お客様のデータまたはアクセスコントロールのデータへのアクセスを許可しない (お客様のコンテンツや euii へのアクセスなど、環境内の他の種類のデータや機能へのアクセスを管理するために使用されるアクセス制御メカニズムを確立しています。Microsoft パスワード、セキュリティ証明書、およびその他の認証関連データが含まれます。または、Office 365 運用環境への承認されていない物理、論理、またはリモートアクセスがあります。
 
-Office 365 を操作するためにマイクロソフトによって使用されるアクセス制御は、次の 3 つのカテゴリに分類できます。
+Microsoft が運用している Office 365 で使用するアクセス制御は、次の3つのカテゴリにグループ化できます。
 - 分離コントロール
-- スタッフのコントロール
-- テクノロジ制御
+- 人事管理
+- テクノロジコントロール
 
-組み合わせることで、これらのコントロールを防止し、Office 365 での悪意のある行為の検出を支援します。分離、スタッフ、および Microsoft で使用されるテクノロジのコントロールで、他は、コントロールの 4 番目のカテゴリ: お客様が実装されているものです。
+これらのコントロールを組み合わせると、Office 365 の悪意のあるアクションを防ぎ、検出することができます。Microsoft によって使用される分離、人物、およびテクノロジの各コントロールに加えて、ユーザーによって実装されるコントロールには、次の4つのカテゴリがあります。
 
-Office 365 を使用すると、オンプレミス環境で管理する同じ方法データの多くのデータを管理できます。Office 365 の組織を自動的に署名した人は、グローバル ・ アドミニストレーター (管理者) になります。グローバル管理者 (管理者・ センターやリモート PowerShell など) は、管理ポータルのすべての機能へのアクセス権を持つとを作成またはユーザーの編集、他のユーザーに管理者の役割を割り当てる、ユーザーのパスワードをリセット、ユーザー ライセンスの管理、ドメインを管理および承認できます顧客ロック ボックスその他のものの中に要求します。各組織に少なくとも 2 つの管理者アカウントを指定して、組織のサイズによって異なる機能を提供するいくつかの管理者を指定するのにはすることがあることをお勧めします。管理者の役割およびアクセス許可の割り当てについては、 [Office 365 の管理者の役割を割り当てる](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504)と、 [Office 365 の管理者の役割](https://support.office.com/article/Permissions-in-Office-365-DA585EEA-F576-4F55-A1E0-87090B6AAA9D)を参照してください。
+Office 365 では、オンプレミス環境でのデータ管理と同じ方法でデータを管理できます。Office 365 の組織をサインアップするユーザーは、自動的にグローバル管理者 (管理者) になります。グローバル管理者は、管理ポータルのすべての機能 (管理センターやリモート PowerShell) にアクセスでき、ユーザーの作成または編集、ユーザーのパスワードの再設定、ユーザーのパスワードの再設定、ユーザーのパスワードの管理、ドメインの管理、顧客ロックボックスの承認を行うことができます。他にも要求。各組織で少なくとも2人の管理者アカウントを指定し、組織の規模に応じて、さまざまな機能を提供する複数の管理者を指定することをお勧めします。管理者の役割とアクセス許可の割り当てについては、「 [office 365 での管理者ロールの割り当て](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504)」および「 [office 365 管理者ロールについ](https://support.office.com/article/Permissions-in-Office-365-DA585EEA-F576-4F55-A1E0-87090B6AAA9D)て」を参照してください。
 
 
 ## <a name="related-links"></a>関連リンク
 
 - [分離コントロール](office-365-isolation-controls.md)
-- [スタッフのコントロール](office-365-personnel-controls.md)
-- [テクノロジ制御](office-365-technology-controls.md)
+- [人事管理](office-365-personnel-controls.md)
+- [テクノロジコントロール](office-365-technology-controls.md)
 - [アクセス制御の監視と監査](office-365-monitoring-and-auditing-access-controls.md)
 - [Yammer Enterprise でのアクセス制御](office-365-yammer-enterprise-access-controls.md)

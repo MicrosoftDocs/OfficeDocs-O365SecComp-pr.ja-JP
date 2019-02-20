@@ -12,49 +12,47 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
-description: 'Office 365 のクラウド アプリケーションのセキュリティ、実行できる管理操作を一時停止またはユーザー アカウントの一時中断を解除するのには。 '
-ms.openlocfilehash: 09d6ae870aa1a6b0a619ccf20f8cc19b392e23a8
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: 'Office 365 Cloud App Security では、ユーザーアカウントの中断または停止解除を行うことができるガバナンスアクションがあります。 '
+ms.openlocfilehash: 6c34c04b6a1e389809b611db0ca2f30ecd8c0ada
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014849"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087396"
 ---
 # <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security でユーザー アカウントを停止または復元する
 
-セキュリティ管理の高度な office 365 は、Office 365 のクラウド アプリケーションのセキュリティをされます。
-  
-|評価 * *\>**|計画 * *\>**|配置 * *\>**|使用率。|
+|評価 * *\>**|計画 * *\>**|展開 * *\>**|使用率 * * * *|
 |:-----|:-----|:-----|:-----|
-|[評価を開始します。](office-365-cas-overview.md) <br/> |[計画の開始します。](get-ready-for-office-365-cas.md) <br/> |[展開を開始します。](turn-on-office-365-cas.md) <br/> |コースです!  <br/> [次の手順](suspend-or-restore-an-account-in-ocas.md#nextsteps) <br/> |
+|[評価の開始](office-365-cas-overview.md) <br/> |[計画を開始する](get-ready-for-office-365-cas.md) <br/> |[展開を開始する](turn-on-office-365-cas.md) <br/> |ここでは、  <br/> [次の手順](suspend-or-restore-an-account-in-ocas.md#nextsteps) <br/> |
    
-Office 365 の組織のユーザー アカウントのいずれかが侵害されている警告が表示されると仮定します。または、ユーザー アカウントに問題があることを示すアラートを受信したと仮定します。Office 365 のクラウド アプリケーションのセキュリティ、ユーザー アカウントを中断でき、後で受信するアラートを調査した後に復元できます。
+Office 365 用の組織のユーザーアカウントのいずれかが侵害されたという警告が表示されたとします。または、ユーザーアカウントで問題が発生したことを示す通知を受信したとします。Office 365 Cloud App Security では、受信した通知を調査した後、ユーザーアカウントを中断してから復元することができます。
   
 > [!NOTE]
-> Office 365 のクラウド アプリケーションのセキュリティは、Office 365 エンタープライズ E5 に使用できます。組織は、別の Office 365 エンタープライズ サブスクリプションで使用されている場合、Office 365 のクラウド アプリケーションのセキュリティがアドオンとして購入できます。(グローバル管理者は、Office 365 管理センターを選択して**請求** \> **サブスクリプションを追加**します)。詳細についてを参照してください[Office 365 のプラットフォーム サービスの説明: Office 365 のセキュリティ&amp;コンプライアンス センター](https://technet.microsoft.com/en-us/library/dn933793.aspx) [購入またはビジネスのための Office 365 のアドオンを編集](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)するとします。 
+> office 365 Cloud App Security は office 365 Enterprise E5 で利用できます。組織で別の office 365 Enterprise サブスクリプションを使用している場合、office 365 Cloud App Security をアドオンとして購入することができます。(全体管理者として、Office 365 管理センターで、[**課金** \>の**サブスクリプションの追加**] を選択します。)詳細については、「office 365 プラットフォームサービスの説明」を参照してください[。 office 365 セキュリティ&amp;コンプライアンスセンター](https://technet.microsoft.com/en-us/library/dn933793.aspx)で、 [office 365 for business のアドオンを購入または編集](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)します。 
   
-## <a name="to-suspend-a-user-account-in-office-365-cloud-app-security"></a>Office 365 のクラウド アプリケーションのセキュリティでユーザー アカウントを中断するのには
+## <a name="to-suspend-a-user-account-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security でユーザーアカウントを中断するには
 
-ユーザー アカウントを一時停止するとから、もう一度サインイン ユーザーを防止します。直接**では、署名ブロック**にサインインしている状態を設定するのには Office 365 でユーザー アカウントを編集と同じです。
+ユーザーアカウントを中断すると、ユーザーが再度サインインするのを防ぐことができます。Office 365 で直接ユーザーアカウントを編集して、サインインが**ブロック**されるようにサインイン状態を設定するのと同じです。
   
 > [!NOTE]
-> ユーザーがそれらを中断するか、サインイン状態を編集することによって、Office 365 にサインインをブロックする場合は、かかる場合が 1 時間、またはすべてのユーザーのデバイスとクライアント ([編集または Office 365 のユーザーを変更する](https://support.office.com/article/42BB3F17-8F9D-4182-B434-5F1C8024E614#SingleUserPreview)) を有効にするために注意します。場合は、ユーザーは、Office 365 にサインインしている、Office 365 でもう一度サインインするのには必要なときに、ブロックが反映されます。 
+> ユーザーが office 365 にサインインすることを禁止している場合、中止することによって、またはサインイン状態を編集することによって、ユーザーのすべてのデバイスとクライアント ([Office 365 でユーザーを編集または変更](https://support.office.com/article/42BB3F17-8F9D-4182-B434-5F1C8024E614#SingleUserPreview)する) が有効になるまでに時間がかかる場合があることに注意してください。ユーザーが office 365 にサインインしている場合、office 365 が再度サインインする必要がある場合は常にブロックが有効になります。 
   
-1. [グローバル アドミニストレーターまたはセキュリティ管理者](permissions-in-the-security-and-compliance-center.md)に移動します。[https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用してサインインします。(これで、セキュリティには、&amp;コンプライアンス センター)。 
+1. [全体管理者またはセキュリティ管理者](permissions-in-the-security-and-compliance-center.md)とし[https://protection.office.com](https://protection.office.com)て、に移動し、職場または学校のアカウントを使用してサインインします。(これにより、セキュリティ&amp;コンプライアンスセンターに移動できます。) 
     
-2. セキュリティで&amp;コンプライアンス センターでは、**アラート**を選択して\>**管理警告の詳細**です。
+2. セキュリティ&amp; /コンプライアンスセンターで、[**警告** \>の**管理] [詳細通知の管理**] を選択します。
     
-3. **Office 365 のクラウド アプリケーションのセキュリティ**を選択します。<br>![セキュリティ&amp;コンプライアンス センターでは、Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>
+3. [ **Office 365 Cloud App Security に移動**] を選択します。<br>![セキュリティ&amp; /コンプライアンスセンターで、[高度な通知の管理] を選択して Office 365 Cloud App Security に移動します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>
   
-4. 画面の上部にナビゲーション ・ バーの**アラート**を選択します。
+4. 画面上部のナビゲーションバーで、[**通知**] を選択します。
     
-5. [**アラート**] 列で、特定のユーザー アカウントに関連する警告をダブルクリックします。 
+5. [**警告**] 列で、特定のユーザーアカウントに関連する警告をダブルクリックします。 
     
-6. [**アカウント**] で、[**状態**] 列の設定を選択![の設定アイコン](media/e01b75cc-b28f-4b83-8f86-b1b13dc27ab2.png) \> **ユーザーの一時停止**します。
+6. [**アカウント**] の [**状態**] 列で、 ![[設定](media/e01b75cc-b28f-4b83-8f86-b1b13dc27ab2.png) \>の設定] アイコン [**中断ユーザー**] を選択します。
     
-## <a name="to-restore-a-user-account"></a>ユーザー アカウントを復元するには
+## <a name="to-restore-a-user-account"></a>ユーザーアカウントを復元するには
 
-[Office 365 のユーザーを復元する](https://support.office.com/article/2c261e42-5dd1-48b0-845f-2a016d29cfc1)を参照してください。
+「 [Office のユーザーの復元 365](https://support.office.com/article/2c261e42-5dd1-48b0-845f-2a016d29cfc1) 」を参照してください。
   
 ## <a name="next-steps"></a>次の手順
 
@@ -62,6 +60,6 @@ Office 365 の組織のユーザー アカウントのいずれかが侵害さ�
     
 - [Office 365 Cloud App Security を使用して OAuth アプリを管理する](manage-app-permissions-in-ocas.md)
     
-- [Office 365 のクラウド アプリケーションのセキュリティの使用率のアクティビティ](utilization-activities-for-ocas.md)を確認します。
+- [Office 365 Cloud App Security の使用率のアクティビティを](utilization-activities-for-ocas.md)確認する
     
 

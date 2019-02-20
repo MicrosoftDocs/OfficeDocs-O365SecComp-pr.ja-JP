@@ -1,5 +1,5 @@
 ---
-title: Office 365 のテナントの分離
+title: Office 365 でのテナントの分離
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,32 +10,34 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: マイクロソフトが Office 365 のテナントの分離を強制する方法の概要です。
-ms.openlocfilehash: fcf66ee65c2a4cfdf73ae0eac77f54bd555d059d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: Microsoft が Office 365 のテナント分離を強制する方法の概要。
+ms.openlocfilehash: c0b58f149ace1e6b1ecf179534bdd75d15840a7f
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532212"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090989"
 ---
-# <a name="tenant-isolation-in-office-365"></a>Office 365 のテナントの分離
+# <a name="tenant-isolation-in-office-365"></a>Office 365 でのテナントの分離
 
-クラウド コンピューティングの多くのお客様の間で共有、共通のインフラストラクチャの概念を同時には、規模の経済をリードする主な利点の 1 つです。この概念には、*マルチ テナント機能*をが呼び出されます。マイクロソフトは、クラウド サービスのマルチ テナント型アーキテクチャがエンタープライズ レベルのセキュリティ、機密性、プライバシー、整合性、および可用性の標準をサポートしていることを確認するのには継続的に動作します。
+クラウドコンピューティングの主な利点の1つは、同時に多数のお客様に共通する共有インフラストラクチャの概念で、スケールの経済につながることです。この概念を*マルチテナント*と呼びます。Microsoft は、クラウドサービスのマルチテナントアーキテクチャがエンタープライズレベルのセキュリティ、機密性、プライバシー、整合性、および可用性の標準をサポートするように継続的に取り組みます。
 
-マイクロソフトのクラウド サービスは、多大な投資と[信頼できるコンピューティング](https://www.microsoft.com/en-us/twc/default.aspx)の[セキュリティ開発ライフ サイクル](http://www.microsoft.com/security/sdl/default.aspx)から蓄積した経験に基づいて、すべてのテナントがすべてに悪意のある可能性があることを前提に設計されました。、他のテナントとは、セキュリティや、他のテナントのサービスに影響を与えたり、他のテナントのコンテンツにアクセスするから 1 つのテナントのアクションを禁止するセキュリティ対策を実装しています。
+[信頼できるコンピューティング](https://www.microsoft.com/en-us/twc/default.aspx)および[セキュリティ開発ライフサイクル](http://www.microsoft.com/security/sdl/default.aspx)から得られる重要な投資と実績に基づいて、Microsoft cloud services はすべてのテナントがすべてに悪影響を与える可能性があるという前提で設計されていました。その他のテナント。また、1つのテナントのアクションが別のテナントのセキュリティまたはサービスに影響を与えたり、別のテナントのコンテンツにアクセスしたりしないようにセキュリティ対策を実装しています。
 
-マルチ テナント環境でのテナントの分離を維持するための 2 つの主な目標は次のとおりです。
-1.  テナントの間で、お客様のコンテンツへの漏洩や不正アクセスを防止します。そして
-2.  悪影響を別のテナントのサービスから 1 つのテナントの操作を防止します。
+マルチテナント環境でテナントの分離を維持するための主な目標は次の2つです。
+1.  テナント間での顧客コンテンツの漏洩、または不正アクセスを防止する。そして
+2.  あるテナントのアクションが別のテナントのサービスに悪影響を及ぼすことを防ぐ
 
-保護の複数のフォームは、妥協することの Office 365 サービスまたはアプリケーション、またはその他のテナントを含め、Office 365 システム自体の情報への無許可アクセスを獲得から顧客を防ぐために Office 365 で実装されています。
-- Office 365 サービスの各テナント内の顧客のコンテンツの論理的分離は、Azure Active Directory 承認およびロールベースのアクセス制御を実現します。
-- SharePoint Online には、ストレージ ・ レベルでのデータの分離のメカニズムが用意されています。
-- マイクロソフトでは、お客様のコンテンツの完全性と機密性を保護するために厳密な物理的なセキュリティ、経歴審査、および複数層の暗号化戦略を使用します。すべての Office 365 のデータ センター生体測定式アクセスを持つコントロールを物理的にアクセスするのにはパーム プリントを最も必要とします。さらに、すべての米国ベースの Microsoft の従業員は、人材採用プロセスの一部として標準的なバック グラウンド チェックが正常に完了する必要があります。Office 365 の管理者のアクセスに使用されるコントロールの詳細については、 [Office 365 の管理者アクセスの制御](office-365-administrative-access-controls-overview.md)を参照してください。
-- Office 365 は、残りの部分で、BitLocker は、ファイルごとの暗号化を含む、移動中のお客様のコンテンツを暗号化するサービス側の技術を使用してトランスポート層セキュリティ (TLS) とインターネット プロトコル セキュリティ (IPsec)。特定の詳細については、Office 365 での暗号化では、 [Office 365 のデータの暗号化テクノロジ](office-365-encryption-in-the-microsoft-cloud-overview.md)を参照してください。
+office 365 には複数の形式の保護が実装されており、お客様が office 365 のサービスまたはアプリケーションを侵害したり、他のテナントまたは office 365 システム自体の情報に無許可でアクセスしたりすることを防ぐことができます。
+- Office 365 サービス用の各テナント内の顧客コンテンツの論理的分離は、Azure Active Directory の承認と役割ベースのアクセス制御によって実現されます。
+- SharePoint Online は、データ分離メカニズムをストレージレベルで提供します。
+- Microsoft は、厳密な物理的なセキュリティ、背景審査、および複数層の暗号化戦略を使用して、顧客のコンテンツの機密性と整合性を保護しています。すべての Office 365 データセンターには、バイオメトリクスアクセスコントロールがあり、ほとんどの場合、物理的なアクセスを得るために palm 印刷が要求されています。また、米国のすべての Microsoft の従業員は、雇用プロセスの一環として、標準のバックグラウンドチェックを正常に完了する必要があります。office 365 の管理アクセスに使用されるコントロールの詳細については、「 [office 365 管理アクセス制御](office-365-administrative-access-controls-overview.md)」を参照してください。
+- Office 365 は、BitLocker、ファイル暗号化、トランスポート層セキュリティ (TLS)、インターネットプロトコルセキュリティ (IPsec) など、お客様のコンテンツを保存し、送信中で暗号化するサービス側のテクノロジを使用しています。office 365 での暗号化の詳細については、「 [office 365 のデータ暗号化テクノロジ](office-365-encryption-in-the-microsoft-cloud-overview.md)」を参照してください。
 
-同時に、上記の保護は、保護の脅威および軽減だけでは物理的な分離によって提供されるのと同じを提供する論理的分離の堅牢なコントロールを提供します。
+これらの保護によって、物理的な分離だけで提供される脅威の保護と軽減対策を提供する、堅牢な論理的分離コントロールが提供されます。
 
 ## <a name="related-links"></a>関連リンク
 - [Azure Active Directory での分離とアクセス制御](office-365-isolation-in-azure-active-directory.md)

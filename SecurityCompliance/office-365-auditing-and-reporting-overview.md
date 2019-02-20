@@ -10,14 +10,17 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+- M365-analytics
 description: Office 365 内の監査およびレポート機能の概要と、サービス保証について説明します。
-ms.openlocfilehash: 54cc4d353545396084c0206abe1bbb1035b3a78f
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: 0167239e854d9b96d9505f4264ada225804eef96
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "27131887"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091039"
 ---
 # <a name="auditing-and-reporting-in-office-365"></a>Office 365 での監査とレポート
 
@@ -28,7 +31,7 @@ Microsoft クラウドサービスには、Exchange online および SharePoint 
 [office 365 Security & コンプライアンスセンター](https://support.office.com/article/Go-to-the-Office-365-Security-Compliance-Center-7e696a40-b86b-4a20-afcc-559218b7b1b8)は、office 365 のデータを保護するためのワンストップポータルで、多くの監査およびレポート機能を備えています。これは、Office 365 コンプライアンスセンターを発展させたものです。セキュリティ & コンプライアンスセンターは、データ保護または法令遵守のニーズ、あるいはユーザーおよび管理者のアクティビティを監査する必要がある組織向けに設計されています。セキュリティ & コンプライアンスセンターを使用して、組織のすべての Office 365 データのコンプライアンスを管理することができます。Office 365 管理者アカウントを使用して[http://protection.office.com](http://protection.office.com/) 、セキュリティ & コンプライアンスセンターにアクセスできます。
 
 セキュリティ & コンプライアンスセンターには、いくつかの機能へのアクセスを提供するナビゲーションウィンドウが含まれています。
-- **通知**-[高度なセキュリティ管理](https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475)を使用して、アラートの管理、セキュリティ関連の警告の表示、高度な通知の管理を行うことができます。 
+- **通知**- [Office 365 Cloud App security](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/office-365-cas-overview)を使用して、アラートの管理、セキュリティ関連の警告の表示、高度な通知の管理を行うことができます。 
 - **アクセス許可**-コンプライアンス管理者、電子情報開示マネージャー、その他の[アクセス許可](https://support.office.com/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76)を組織内のユーザーに割り当てることができるようにします。これにより、セキュリティ & コンプライアンスセンターでタスクを実行できるようになります。セキュリティ & コンプライアンスセンターでは、ほとんどの機能に対するアクセス許可を割り当てることができますが、その他のアクセス許可は Exchange 管理センターおよび SharePoint 管理センターを使用して構成する必要があります。
 - **脅威管理**- [Office 365 モバイルデバイス管理](https://support.office.com/article/Overview-of-Mobile-Device-Management-for-Office-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a)を使用してデバイス管理ポリシーを作成および適用し、組織の[データ損失防止](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)(DLP) ポリシーを設定し、電子メールフィルターを構成することができます。マルウェア対策、domainkeys で特定されたメール (dkim)、安全な添付ファイル、安全なリンク、および OAuth アプリ。
 - **データガバナンス**-[他のシステムから Office 365 に電子メールまたは SharePoint データをインポート](https://support.office.com/article/Import-PST-files-or-SharePoint-data-to-Office-365-ba688e0a-0fcb-4bd7-8e57-2b669564ea84)して、[アーカイブメールボックスを構成](https://support.office.com/article/Enable-archive-mailboxes-in-the-Office-365-Security-Compliance-Center-268a109e-7843-405b-bb3d-b9393b2342ce)し、組織内の電子メールおよびその他のコンテンツの[保持ポリシー](https://support.office.com/article/Retention-in-the-Office-365-Security-Compliance-Center-2a0fc432-f18c-45aa-a539-30ab035c608c)を設定できます。
