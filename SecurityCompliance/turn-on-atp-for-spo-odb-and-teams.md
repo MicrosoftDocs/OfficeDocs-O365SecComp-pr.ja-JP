@@ -1,5 +1,5 @@
 ---
-title: SharePoint、OneDrive、およびマイクロソフトのチームに対して Office 365 の分析ツールを有効に
+title: SharePoint、OneDrive、Microsoft Teams の Office 365 ATP を有効にする
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,81 +13,81 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 ms.collection: M365-security-compliance
-description: SharePoint、OneDrive、および検出されたファイルについての警告を設定する方法など、チーム分析ツールを有効にする方法を説明します。
-ms.openlocfilehash: 8c63110baf391fd727e296f34361047b4b67b0cb
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: 検出されたファイルに対して通知を設定する方法など、SharePoint、OneDrive、Teams の ATP を有効にする方法について説明します。
+ms.openlocfilehash: 8ba82a812881b53636f2fbc941ee04bc5dacdac1
+ms.sourcegitcommit: 32cb896aef370764ec6e8f8278ebaf16f1c5ff37
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995338"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30123898"
 ---
-# <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、およびマイクロソフトのチームに対して Office 365 の分析ツールを有効に
+# <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams の Office 365 ATP を有効にする
 
-[SharePoint、OneDrive、およびマイクロソフトのチームの office 365 の分析ツール](atp-for-spo-odb-and-teams.md)は、悪意のあるファイルを誤って共有から組織を保護します。悪意のあるファイルが検出されると、そのファイルを開く、コピー、移動、またはそれ以降の操作は、組織のセキュリティ チームによって実行されるまで、共有できる誰にするためにブロックされます。SharePoint の分析ツールを有効にするには、この資料を参照するには、OneDrive、チーム、検出されたファイルを通知する警告を設定し、次の手順を実行します。 
+[Office 365 ATP for SharePoint、OneDrive、Microsoft Teams では](atp-for-spo-odb-and-teams.md)、組織が悪意のあるファイルを誤って共有することを防止します。悪意のあるファイルが検出されると、そのファイルはブロックされるようになり、組織のセキュリティチームによって追加の操作が行われるまで、そのファイルを開いたり、コピー、移動、または共有することができなくなります。この記事では、SharePoint、OneDrive、Teams の ATP を有効にし、検出されたファイルについて通知する通知を設定し、次の手順を実行します。 
   
-ATP のポリシーを定義 (または編集) を割り当てる必要があります、次の表に記載されている役割のいずれか。
+ATP ポリシーを定義 (または編集) するには、適切な役割が割り当てられている必要があります。次の表では、いくつかの例について説明します。
 
-|役割  |場所と方法が割り当てられています。  |
+|役割  |場所/割り当て方法  |
 |---------|---------|
-|Office 365 のグローバル管理者 |Office 365 を購入するのに署名した人は、既定でグローバル管理者です。( [Office 365 の管理者の役割](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)の詳細についてを参照してください)。         |
+|Office 365 グローバル管理者 |Office 365 の購入にサインアップするユーザーは、既定ではグローバル管理者です。(詳細については、「 [Office 365 管理者の役割につい](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)て」を参照してください)。         |
 |セキュリティ管理者 |Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange オンライン組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (を参照してください[Exchange オンライン PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+|Exchange Online 組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  powershell コマンドレット (「 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)」を参照) |
   
 ## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする
 
-**この手順を開始する前に、監査ログが有効になって、Office 365 環境の確認**をします。これは通常、Exchange のオンラインを割り当てられている監査ログのロールを持つユーザーによって行います。詳細については、[オンまたはオフ、Office 365 を有効にする監査ログの検索](turn-audit-log-search-on-or-off.md)を参照してください。
+**この手順を開始する前に、Office 365 環境の監査ログが既に有効になっていることを確認して**ください。これは、通常、Exchange Online で監査ログの役割が割り当てられているユーザーによって行われます。詳細については、「 [Office 365 監査ログ検索をオンまたはオフにする](turn-audit-log-search-on-or-off.md)」を参照してください。
   
-1. [https://protection.office.com](https://protection.office.com)、および、職場、学校のアカウントでサインインします。
+1. に[https://protection.office.com](https://protection.office.com)移動し、職場または学校のアカウントでサインインします。
     
-2. Office 365 のセキュリティで&amp;コンプライアンス センターでは、**脅威の管理**の下で、左側のナビゲーション ペインで**ポリシー**を選択する\>**安全な添付ファイル**です。 <br/>![セキュリティ&amp;コンプライアンス センターでは、脅威の管理を選択して\>ポリシー](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+2. Office 365 &amp;セキュリティ/コンプライアンスセンターの左側のナビゲーションウィンドウで、[**脅威の管理**] の下にある [**ポリシー** \>の**安全な添付ファイル**] を選択します。 <br/>![セキュリティ&amp; /コンプライアンスセンターで、[脅威管理\>ポリシー] を選択します。](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   
-3. **SharePoint、OneDrive、およびマイクロソフトのチームの分析ツールを有効にする**を選択します。<br/>![オンライン、ビジネス、およびマイクロソフトのチームの OneDrive の SharePoint の高度な脅威保護を有効に](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
+3. [ **SharePoint、OneDrive、Microsoft Teams に対して ATP を有効にする**] を選択します。<br/>![SharePoint Online、OneDrive for business、Microsoft Teams の Advanced Threat Protection を有効にします。](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
   
-4. [**保存**] をクリックします。
+4. **[保存]** をクリックします。
     
-5. 確認 (および、必要に応じて編集)、組織の[安全な添付ファイル ポリシー](set-up-atp-safe-attachments-policies.md)と[ポリシーの安全なリンク](set-up-atp-safe-links-policies.md)です。
+5. 組織の[安全な添付ファイルポリシー](set-up-atp-safe-attachments-policies.md)と[安全なリンクのポリシー](set-up-atp-safe-links-policies.md)を確認し、必要に応じて編集します。
     
-6. (推奨)グローバル管理者または SharePoint Online 管理者は、 **DisallowInfectedFileDownload**パラメーターが*true*に設定を使用して**[セット SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** コマンドレットを実行します。 <br/>
-      - *真*のブロックのパラメーター (削除) を除くすべてのアクションを設定すると、ファイルが検出されました。人ことはできませんを開く、移動、コピー、または検出されたファイルを共有します。
-      - パラメーターを*false*に設定すると、削除し、ダウンロードを除くすべてのアクションがブロックされます。リスクを受け入れるし、検出されたファイルをダウンロードするユーザーを選択できます。  
+6. 勧めグローバル管理者または SharePoint Online 管理者として、 **DisallowInfectedFileDownload**パラメーターを*true*に設定して**[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** コマンドレットを実行します。 <br/>
+      - このパラメーターを*true*に設定すると、検出されたファイルのすべてのアクション (削除を除く) がブロックされます。ユーザーは、検出されたファイルを開いたり、移動、コピー、または共有したりできません。
+      - パラメーターを*false*に設定すると、削除とダウンロード以外のすべてのアクションがブロックされます。ユーザーは、リスクを容認し、検出されたファイルをダウンロードすることを選択できます。  
    
-7. 最大 30 分間のすべての Office 365 のデータ センターに展開するのには、変更を許可します。
+7. 変更がすべての Office 365 データセンターに蔓延するまで最大30分かかります。
     
-8. (推奨)によって検出されたファイルの通知の設定に進みます。
+8. 勧め検出されたファイルの通知の設定に進みます。
     
-Office 365 で、PowerShell を使用する方法の詳細については、 [PowerShell での Office 365 の管理](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)を参照してください。 
+office 365 での powershell の使用の詳細については、「 [Manage office 365 with powershell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)」を参照してください。 
 
-として悪意のあるファイルが検出されたときのユーザー エクスペリエンスの詳細については、 [SharePoint のオンライン、OneDrive、またはマイクロソフトのチームで悪意のあるファイルが見つかった場合の対処方法](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)を参照してください。 
+ファイルが悪意のあるものとして検出された場合のユーザーの操作の詳細については、「 [SharePoint Online、OneDrive、または Microsoft Teams で悪意のあるファイルが検出された場合の対処](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)方法」を参照してください。 
   
-## <a name="set-up-alerts-for-detected-files"></a>によって検出されたファイルの通知を設定します。
+## <a name="set-up-alerts-for-detected-files"></a>検出されたファイルの通知を設定する
 
-ビジネス、またはマイクロソフトのチームの SharePoint のオンライン、OneDrive のファイルが悪意のあるものとして確認されたときに通知を受信するには、アラートを設定できます。
+SharePoint Online、OneDrive for business、または Microsoft Teams のファイルが悪意のあるものとして識別された場合に通知を受け取るには、警告を設定します。
   
-1. [Office 365 のセキュリティ&amp;コンプライアンス センター](https://protection.office.com)、**アラート**を選択して\>**通知の管理**。
+1. [Office 365 セキュリティ&amp; /コンプライアンスセンター](https://protection.office.com)で、[ **** \>警告の**管理**] を選択します。
     
-2. **新しいアラート ・ ポリシー**を選択します。
+2. [**新しい通知ポリシー**] を選択します。
     
-3. 警告の名前を指定します。たとえば、ライブラリで悪意のあるファイルを入力します。
+3. 通知の名前を指定します。たとえば、ライブラリに悪意のあるファイルを入力することができます。
     
-4. アラートの説明を入力します。たとえば、SharePoint のオンライン、OneDrive、またはマイクロソフトのチームで悪意のあるファイルが検出された場合は通知の管理者を入力します。
+4. 通知の説明を入力します。たとえば、SharePoint Online、OneDrive、Microsoft Teams で悪意のあるファイルが検出されたときに管理者に通知を入力できます。
     
-5. **. のときは、このアラートを送信**] セクションでは、次の操作を行います。 
+5. [**この通知を送信するタイミング**] セクションで、次の操作を行います。 
     
-    a. [**活動**] ボックスの一覧で、**ファイルにマルウェアを検出しました**を選択します。
+    [**アクティビティ**] リストで、[**検出されたマルウェア (ファイル**)] を選択します。
     
-    b. は、空の**ユーザー**フィールドをままにします。 
+    b. [**ユーザー** ] フィールドを空のままにします。 
     
-6. **. このアラートを送信**] セクションで、グローバル管理者、セキュリティ管理者、または悪意のあるファイルが検出されたときに通知を受信する必要がありますセキュリティの読者の 1 つまたは複数を選択します。 
+6. [**この通知を送信する**ユーザー...] セクションで、悪意のあるファイルが検出されたときに通知を受信する必要がある1つ以上のグローバル管理者、セキュリティ管理者、またはセキュリティ閲覧者を選択します。 
     
-7. [**保存**] をクリックします。
+7. **[保存]** をクリックします。
     
-警告に関する詳細についてを参照してください[では、Office 365 のセキュリティ アクティビティのアラートを作成&amp;コンプライアンス センター](create-activity-alerts.md)です。 
+通知の詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターでアクティビティ通知を作成](create-activity-alerts.md)する」を参照してください。 
   
 ## <a name="next-steps"></a>次の手順
 
-1. [SharePoint、OneDrive、またはマイクロソフトのチームで検出された、悪意のあるファイルに関する情報を表示](malicious-files-detected-in-spo-odb-or-teams.md)
+1. [SharePoint、OneDrive、Microsoft Teams で検出された悪意のあるファイルに関する情報を表示する](malicious-files-detected-in-spo-odb-or-teams.md)
     
-2. [Office 365 の管理者として検疫されたメッセージやファイルを管理します。](manage-quarantined-messages-and-files.md)
+2. [Office 365 の管理者として検疫済みメッセージおよびファイルを管理する](manage-quarantined-messages-and-files.md)
     
 
   

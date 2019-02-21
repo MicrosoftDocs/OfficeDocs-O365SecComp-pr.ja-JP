@@ -1,9 +1,8 @@
 ---
-title: メール フロー ルールを使用して一括メールが Exchange のオンライン保護でフィルタ リングを構成するには
+title: メールフロールールを使用して Exchange Online Protection で一括メールフィルターを構成する
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,31 +11,28 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
-description: 管理者には、Exchange のオンライン保護でバルク メールのフィルターのメール フロー ルールを使用する方法を学習できます。
-ms.openlocfilehash: ce95872d3d80436dce4c62037caea9a5f735726d
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: 管理者は、Exchange Online Protection でのメールフロールールをバルクメールフィルターに使用する方法について説明します。
+ms.openlocfilehash: d308439b5c26569f85eb62ddee6f01786d2998b9
+ms.sourcegitcommit: 32cb896aef370764ec6e8f8278ebaf16f1c5ff37
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "27382808"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30123918"
 ---
-# <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>メール フロー ルールを使用して一括メールが Exchange のオンライン保護でフィルタ リングを構成するには
+# <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>メールフロールールを使用して Exchange Online Protection で一括メールフィルターを構成する
 
-既定のスパム コンテンツ フィルター ポリシーを使用して、スパムやバルク メールに対して会社全体のコンテンツ フィルターを設定することができます。コンテンツ フィルター ポリシーを設定する方法については、「[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」と「[Set-HostedContentFilterPolicy](http://technet.microsoft.com/library/f597aa65-baa7-49d0-8832-2a300073f211.aspx)」を確認してください。 
+既定のスパム コンテンツ フィルター ポリシーを使用して、スパムやバルク メールに対して会社全体のコンテンツ フィルターを設定することができます。コンテンツ フィルター ポリシーを設定する方法については、「[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」と「[Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy?view=exchange-ps)」を確認してください。 
   
-他のオプションを大量のメッセージをフィルター処理する場合は、テキストのパターンまたは一括メールで頻繁に見られる語句を検索するのにはメール フロー ルール (トランスポート ルールでとも呼ばれます) を作成できます。これらの特性が含まれているすべてのメッセージは、スパムとしてマークされます。これらの規則を使用すると、組織を受信する不要な一括メールの量を削減できます。
-  
-**注**:
+バルクメッセージをフィルター処理するためのその他のオプションが必要な場合は、メールフロールール (トランスポートルールとも呼ばれます) を作成して、バルクメールでよく見られるテキストパターンや語句を検索することができます。これらの特性を含むメッセージは、スパムとしてマークされます。これらのルールを使用すると、組織が受信する不要なバルクメールの量を減らすことができます。
 
-- メール フロー ルールを作成するには、このトピックが記載されて、前に、目を通すことが勧め[迷惑メール、一括メールの違いは何ですか?](what-s-the-difference-between-junk-email-and-bulk-email.md)と[一括苦情レベルの値](bulk-complaint-level-values.md)です。 
+> [!IMPORTANT]
+> このトピックに記載されているメールフロールールを作成する前に、「[迷惑メールとバルクメールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md)」および「[バルク苦情レベルの値](bulk-complaint-level-values.md)」を参照することをお勧めします。<br>以下の手順は、特定のメッセージを組織全体でスパムとしてマークします。ただし、別の条件を追加すれば、これらのルールを組織内の特定の受信者にだけ適用することができます。このように、積極的なバルク メール フィルター処理設定を注目すべき少数のユーザーにだけ適用することによって、他のユーザー (受信するもののほとんどが登録したバルク メール) には影響を与えないようにすることができます。 
   
-- 以下の手順は、特定のメッセージを組織全体でスパムとしてマークします。ただし、別の条件を追加すれば、これらのルールを組織内の特定の受信者にだけ適用することができます。このように、積極的なバルク メール フィルター処理設定を注目すべき少数のユーザーにだけ適用することによって、他のユーザー (受信するもののほとんどが登録したバルク メール) には影響を与えないようにすることができます。 
-  
-### <a name="create-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a>一括電子メール メッセージのテキストのパターンに基づいてフィルターを適用するのには、メール フロー ルールを作成します。
+## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a>テキストパターンに基づいてバルクメールメッセージをフィルター処理するメールフロールールを作成する
 
 1. Exchange 管理センター (EAC) で、 **[メール フロー]** \> **[ルール]** に移動します。
     
-2. **[追加]**![[追加] アイコン](media/ITPro-EAC-AddIcon.gif) をクリックしてから、 **[新しいルールの作成]** を選択します。
+2. [追加] アイコン](media/ITPro-EAC-AddIcon.gif)をクリックし、[**新しいルールの作成**] を選択します。 **** ![
     
 3. ルールの名前を指定します。
     
@@ -44,35 +40,31 @@ ms.locfileid: "27382808"
     
 5. **[単語または文字列の指定]** ダイアログ ボックスで、バルク メールでよく見られる以下の正規表現を一度に 1 つずつ追加して、終わったら **[OK]** をクリックします。 
     
-   - このメールの内容を表示することがないかどうかは\,してください
+   - `If you are unable to view the content of this email\, please`
     
-   - \\>(安全な)?登録取り消し( はここから)?\\</a\\>
+   - `\>(safe )?unsubscribe( here)?\</a\>`
     
-   - 次のようにそれ以上の通信を受信したくない場合は\,してください
+   - `If you do not wish to receive further communications like this\, please`
     
-   - \\<img height\="?1"? width\="?1"? src\=.?http\://
+   - `\<img height\="?1"? width\="?1"? sr\c=.?http\://`
     
-   - これらの電子メールの受信を停止する\:http\://
+   - `To stop receiving these+emails\:http\://`
     
-   - \w+ (e\-?レター|e?-?メール|ニュースレター) の登録を取り消すには
+   - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
     
-   - 今後\w+電子メールの(送信|受信)を(希望)?しない場合
+   - `no longer (wish )?(to )?(be sent|receive) w+ email`
     
-   - このメールの内容を表示することがないかどうかは\,は、ここをクリックしてください
+   - `If you are unable to view the content of this email\, please click here`
     
-   - 受信することを確認する (毎日商談 | 当社の e-?mails)\,を追加
+   - `To ensure you receive (your daily deals|our e-?mails)\, add`
     
-   - これらの電子メールを今後受信したくない場合は、
+   - `If you no longer wish to receive these emails`
     
-   - (登録設定変更|設定変更または登録解除)は
+   - `to change your (subscription preferences|preferences or unsubscribe)`
     
-   - 登録解除(するにはここ|アイコン)をクリックしてください
+   - `click (here to|the) unsubscribe`
     
-   **注**:
-
-   - 上記の一覧については、一括メールの場合は、正規表現のすべてを網羅した、セットのないです。複数のことができますを追加または削除、必要に応じてします。ただし、それはの開始点です。
-    
-   - 単語または件名にテキスト パターンやその他のメッセージのヘッダ ・ フィールドの検索では、ASCII テキストで SMTP サーバーの間でバイナリ メッセージを送信するために使用されたエンコードの MIME コンテンツ転送からデコードされた*後*メッセージを発生します。生を検索する条件および例外条件を使用することはできません (通常は、base 64)、件名またはメッセージの場合は、他のヘッダー フィールドの値をエンコードします。 
+   上記のリストは、バルクメールで検出された正規表現の完全なセットではありません。必要に応じて、追加または削除することができます。ただし、開始点として適しています。<br>メッセージ内の件名フィールドまたは他のヘッダーフィールドに含まれる単語またはテキストパターンを検索すると、メッセージが ASCII テキスト形式の SMTP サーバー間でバイナリメッセージを送信するために使用された MIME コンテンツ転送エンコード方式からデコードされ*た後*に発生します。条件または例外を使用して、メッセージ内の subject またはその他のヘッダーフィールドの生 (通常は Base64) でエンコードされた値を検索することはできません。 
     
 6. **[実行する処理]** で、 **[メッセージのプロパティを変更する]** \> **[SCL (Spam Confidence Level) の設定]** の順に選択します。
     
@@ -80,18 +72,17 @@ ms.locfileid: "27382808"
     
    コンテンツ フィルター ポリシーの設定に従って、SCL を 5 または 6 に設定した場合は **スパム**のアクションを行い、SCL を 9 に設定した場合は **信頼度の高いスパム**のアクションを行います。サービスは、コンテンツ フィルター ポリシーで設定されたアクションを実行します。既定のアクションでは、メッセージを受信者の迷惑メール フォルダーに配信しますが、「[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」に説明するとおり、異なるアクションを設定することができます。
     
-   > [!NOTE]
-   > 設定済みのアクションは、受信者の迷惑メール フォルダーに送信するのではなく、メッセージを検疫する場合とメール フロー ルールの一致、およびその使用可能なエンド ・ ユーザーのスパム検疫やエンド ・ ユーザー、管理者の検疫にメッセージを送信します。迷惑メールで通知 
+   メッセージを受信者の迷惑メールフォルダーに送信するのではなく、メッセージを検疫するように構成されている場合は、メッセージはメールフロールールの一致として管理者検疫に送信されますが、エンドユーザーのスパム検疫時またはエンドユーザー経由で使用することはできません。スパム通知。 
   
    サービスの SCL 値の詳細については、「[Spam Confidence Level](spam-confidence-levels.md)」を参照してください。
     
 8. ルールを保存します。
     
-### <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-phrases"></a>語句に基づいて大量の電子メール メッセージにフィルターを適用するのには、メール フロー ルールを作成します。
+## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-phrases"></a>メールフロールールを作成して、語句に基づいてバルクメールメッセージをフィルター処理する
 
 1. EAC で、 **[メール フロー]** \> **[ルール]** に移動します。
     
-2. **[追加]**![[追加] アイコン](media/ITPro-EAC-AddIcon.gif) をクリックしてから、 **[新しいルールの作成]** を選択します。
+2. [追加] アイコン](media/ITPro-EAC-AddIcon.gif)をクリックし、[**新しいルールの作成**] を選択します。 **** ![
     
 3. ルールの名前を指定します。
     
@@ -99,33 +90,33 @@ ms.locfileid: "27382808"
     
 5. **[単語または文字列の指定]** ダイアログ ボックスで、バルク メールでよく見られる以下の語句を一度に 1 つずつ追加して、終わったら **[OK]** をクリックします。 
     
-   - 設定を変更または購読登録を解除するには
+   - `to change your preferences or unsubscribe`
     
-   - 電子メールの設定の変更または購読登録の解除
+   - `Modify email preferences or unsubscribe`
     
-   - これは広告メールです
+   - `This is a promotional email`
     
-   - このメールは、購読を希望されたお客様に送信しています
+   - `You are receiving this email because you requested a subscription`
     
-   - 購読を停止するには、ここをクリックしてください
+   - `click here to unsubscribe`
     
-   - このメールは、購読登録されているお客様にお送りしました
+   - `You have received this email because you are subscribed`
     
-   - 今後弊社の電子メール　ニュースレターをお受け取りになりたくない場合は
+   - `If you no longer wish to receive our email newsletter`
     
-   - このニュースレターの購読登録を解除してください
+   - `to unsubscribe from this newsletter`
     
-   - このメールが正しく表示されない場合は
+   - `If you have trouble viewing this email`
     
-   - これは広告です
+   - `This is an advertisement`
     
-   - 購読登録解除または設定変更を希望
+   - `you would like to unsubscribe or change your`
     
-   - このメールを Web ページとして表示
+   - `view this email as a webpage`
     
-   - このメールは、購読登録されているお客様に送信しています
+   - `You are receiving this email because you are subscribed`
     
-   **注**: もう一度、このリストはありません、一括電子メール; であるフレーズのセットですべてを網羅しました。複数のことができますを追加または削除、必要に応じてします。ただし、それはの開始点です。
+   このリストは、バルクメールで検出された一連の語句を網羅したものではありません。必要に応じて、追加または削除することができます。ただし、開始点として適しています。
     
 6. **[実行する処理]** で、 **[メッセージのプロパティを変更する]** \> **[SCL (Spam Confidence Level) の設定]** の順に選択します。
     
@@ -133,8 +124,7 @@ ms.locfileid: "27382808"
     
    コンテンツ フィルター ポリシーの設定に従って、SCL を 5 または 6 に設定した場合は **スパム**のアクションを行い、SCL を 9 に設定した場合は **信頼度の高いスパム**のアクションを行います。サービスは、コンテンツ フィルター ポリシーで設定されたアクションを実行します。既定のアクションでは、メッセージを受信者の迷惑メール フォルダーに配信しますが、「[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」に説明するとおり、異なるアクションを設定することができます。
     
-   > [!NOTE]
-   > 設定済みのアクションは、受信者の迷惑メール フォルダーに送信するのではなく、メッセージを検疫する場合とメール フロー ルールの一致、およびその使用可能なエンド ・ ユーザーのスパム検疫やエンド ・ ユーザー、管理者の検疫にメッセージを送信します。迷惑メールで通知 
+   メッセージを受信者の迷惑メールフォルダーに送信するのではなく、メッセージを検疫するように構成されている場合は、メッセージはメールフロールールの一致として管理者検疫に送信されますが、エンドユーザーのスパム検疫時またはエンドユーザー経由で使用することはできません。スパム通知。 
   
    サービスの SCL 値の詳細については、「[Spam Confidence Level](spam-confidence-levels.md)」を参照してください。
 
@@ -148,4 +138,4 @@ ms.locfileid: "27382808"
 
 [スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)
 
-[高度な迷惑メールのフィルタ リングのオプション](advanced-spam-filtering-asf-options.md)
+[高度なスパム対策フィルターオプション](advanced-spam-filtering-asf-options.md)
