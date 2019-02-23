@@ -1,27 +1,20 @@
 ---
 title: Office 365 のセキュリティとコンプライアンス
-description: 場合は、組織では、データを保護するか、法律または規制上の標準に準拠する必要がある、あなたは適切な場所にします。ここのについては、セキュリティとコンプライアンスを Office 365 で
+description: お客様の組織がデータを保護する必要がある場合、または法律または規制標準に準拠している場合は、適切な場所に配置されます。Office 365 のセキュリティとコンプライアンスの詳細については、こちらを参照してください。
 services: office-365-security-compliance
 author: robmazz
 manager: laurawi
 layout: LandingPage
-ms.service: office-365
-ms.collection: M365-security-compliance
+ms.service: O365-seccomp
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 ms.date: 12/27/2018
 ms.author: robmazz
-ms.openlocfilehash: aa6224754830e99f43deb8da5326622a46ccad51
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995178"
 ---
 # <a name="office-365-security-and-compliance"></a>Office 365 のセキュリティとコンプライアンス
 
-場合は、組織では、データを保護するか、法律または規制上の標準に準拠する必要がある、あなたは適切な場所にします。下の領域は、セキュリティおよび Office 365 のコンプライアンスについて学習するため、最初の位置です。
+お客様の組織がデータを保護する必要がある場合、または法律または規制標準に準拠している場合は、適切な場所に配置されます。以下の領域は、Office 365 のセキュリティとコンプライアンスについて学習するための最初の停止です。
 
 <ul class="cardsF panelContent">
     <li>
@@ -34,8 +27,8 @@ ms.locfileid: "29995178"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>はじめに-最初の 30 日間</h3>
-                <p>これらの基本的なセキュリティとコンプライアンスのタスクは、迅速に行うことができ、ユーザーにあまり影響を与えません。 <br> - <a href="office-365-secure-score.md" target="_blank">セキュリティで保護されたスコアを確認します。</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">監査ログを有効にします。</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">テナントのセキュリティを構成します。</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">クラウド アプリケーションのセキュリティを接続します。</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">Azure AD Id 保護を有効にします。</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">SharePoint サイトやファイルをセキュリティで保護します。</a> <br> - <a href="configure-supervision-policies.md">データ ・ ガバナンス ・ ポリシーを有効にします。</a> </p>
+                        <h3>最初の30日間を開始する</h3>
+                <p>これらの基本的なセキュリティおよびコンプライアンスタスクを迅速に実行して、ユーザーに与える影響を小さくすることができます。 <br> - <a href="office-365-secure-score.md" target="_blank">セキュリティで保護されたスコアの確認</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">監査ログを有効にする</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">テナントのセキュリティを構成する</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">Cloud App Security の接続</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">Azure AD id 保護を有効にする</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">SharePoint サイトとファイルをセキュリティで保護する</a> <br> - <a href="configure-supervision-policies.md">データガバナンスポリシーを有効にする</a> </p>
                     </div>
                 </div>
             </div>
@@ -51,8 +44,8 @@ ms.locfileid: "29995178"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>90 日以内の次のステップ</h3>
-                        <p>これらのタスクでは、計画し実装しますが、セキュリティの状態が大幅に増加する少し時間がかかります。 <br> - <a href="attack-simulator.md">攻撃のシミュレーションを実施します。</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">コンプライアンス マネージャーのレビュー</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Azure の特権 Id 管理を構成します。</a> <br> - <a href="privileged-access-management-configuration.md">アクセス権限の管理を構成します。</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">多要素認証を有効にします。</a> <br> - <a href="protect-against-threats.md">_AMP_ 更新プログラムの保護ポリシーを確認します。</a> </p>
+                        <h3>90日以内の次のステップ</h3>
+                        <p>これらのタスクは、計画と実装に少し時間がかかりますが、セキュリティに関する姿勢が大幅に向上します。 <br> - <a href="attack-simulator.md">攻撃のシミュレーションを行う</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">コンプライアンスマネージャーのレビュー</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Azure の特権 id 管理を構成する</a> <br> - <a href="privileged-access-management-configuration.md">特権アクセス管理を構成する</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">多要素認証を有効にする</a> <br> - <a href="protect-against-threats.md">& の更新保護ポリシーを確認する</a> </p>
                     </div>
                 </div>
             </div>
@@ -69,11 +62,11 @@ ms.locfileid: "29995178"
                     </div>
                     <div class="cardText">
                         <h3>90 日以降</h3>
-                        <p>前の作業を構築する重要なセキュリティ対策があります。<br>
-                        - <a href="office-365-secure-score.md" target="_blank">セキュリティで保護されたスコアを確認します。</a><br>
-                        - <a href="https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access">実装は、アクセス権限をセキュリティで保護します。</a><br>
-                        - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection">Azure AD Id 保護を使用します。</a><br>
-                        - <a href="protect-against-threats.md">保護ポリシーを調整します。</a><br></p>
+                        <p>これらは、前の作業で構築された重要なセキュリティ対策です。<br>
+                        - <a href="office-365-secure-score.md" target="_blank">セキュリティで保護されたスコアを確認する</a><br>
+                        - <a href="https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access">安全な特権アクセスを実装する</a><br>
+                        - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection">Azure AD id 保護を使用する</a><br>
+                        - <a href="protect-against-threats.md">保護ポリシーを調整する</a><br></p>
                     </div>
                 </div>
             </div>
@@ -82,7 +75,7 @@ ms.locfileid: "29995178"
 </ul>
 
 <hr>
-<h2>セキュリティおよびコンプライアンス リソース</h2>
+<h2>セキュリティとコンプライアンスのリソース</h2>
 
 <ul class="panelContent cardsF">
     <li>
@@ -95,9 +88,9 @@ ms.locfileid: "29995178"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>安全性を確保します。</h3>
-                        <p><a href="security-roadmap.md">Office 365 のセキュリティ ロードマップ</a></p>
-                        <p><a href="office-365-secure-score.md" target="_blank">マイクロソフトのセキュリティで保護されたスコア</a></p>
+                        <h3>安全維持</h3>
+                        <p><a href="security-roadmap.md">Office 365 のセキュリティロードマップ</a></p>
+                        <p><a href="office-365-secure-score.md" target="_blank">Microsoft セキュリティスコア</a></p>
                         <p><a href="https://protection.office.com" target="_blank">Office 365 セキュリティ/コンプライアンス センター</a></p>
                     </div>
                 </div>
@@ -114,7 +107,7 @@ ms.locfileid: "29995178"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>常にコンプライアンス</h3>
+                        <h3>準拠を維持する</h3>
                         <p><a href="https://www.microsoft.com/trustcenter" target="_blank">Microsoft Trust Center</a></p>
                         <p><a href="https://servicetrust.microsoft.com" target="_blank">Microsoft Service Trust Portal</a></p>
                     </div>
@@ -132,10 +125,10 @@ ms.locfileid: "29995178"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>最新情報</h3>
+                        <h3>最新の状態を維持する</h3>
                         <p><a href="https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library" target="_blank">Office 365 サービスの説明</a></p>
-                        <p><a href="https://blogs.technet.microsoft.com/office365security" target="_blank">Office 365 のセキュリティ チームのブログ</a></p>
-                        <p><a href="https://www.microsoft.com/msrc" target="_blank">マイクロソフト セキュリティ レスポンス センター</a></p>
+                        <p><a href="https://blogs.technet.microsoft.com/office365security" target="_blank">Office 365 セキュリティチームブログ</a></p>
+                        <p><a href="https://www.microsoft.com/msrc" target="_blank">Microsoft セキュリティ応答センター</a></p>
                     </div>
                 </div>
             </div>

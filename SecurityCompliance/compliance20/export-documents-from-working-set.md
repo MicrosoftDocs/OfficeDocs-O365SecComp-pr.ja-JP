@@ -1,12 +1,12 @@
 ---
-title: ワーキング セットからドキュメントをエクスポートします。
+title: ワーキング セットからドキュメントをエクスポートする
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c33d4ca6104cdcddf7c8dfaf0bedabb565f986cb
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: d578dcd3d2c8c2eca6f39a9e36912d2f202ded8c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608053"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217597"
 ---
-# <a name="export-documents-from-a-working-set"></a><span data-ttu-id="ac821-102">ワーキング セットからドキュメントをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="ac821-102">Export documents from a working set</span></span>
+# <a name="export-documents-from-a-working-set"></a><span data-ttu-id="cda0f-102">ワーキング セットからドキュメントをエクスポートする</span><span class="sxs-lookup"><span data-stu-id="cda0f-102">Export documents from a working set</span></span>
 
-<span data-ttu-id="ac821-103">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="ac821-103">Content coming soon.</span></span>
+<span data-ttu-id="cda0f-103">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="cda0f-103">Content coming soon.</span></span>

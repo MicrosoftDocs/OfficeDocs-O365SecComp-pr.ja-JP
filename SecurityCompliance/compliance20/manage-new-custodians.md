@@ -1,12 +1,12 @@
 ---
-title: 高度な電子的証拠開示 (プレビュー) 場合は、通告を管理します。
+title: Advanced eDiscovery (プレビュー) ケースで保管担当者を管理する
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,109 +14,109 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: cce823924502fa2617d7819dc0967733fbc072e0
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 0c33335ecc103a97090dacaa769315ad9413b3c6
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706098"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214977"
 ---
-# <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a><span data-ttu-id="d9d3d-102">高度な電子的証拠開示 (プレビュー) 場合は、通告を管理します。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-102">Manage custodians in an Advanced eDiscovery (Preview) case</span></span>
+# <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a><span data-ttu-id="a7323-102">Advanced eDiscovery (プレビュー) ケースで保管担当者を管理する</span><span class="sxs-lookup"><span data-stu-id="a7323-102">Manage custodians in an Advanced eDiscovery (Preview) case</span></span>
 
-<span data-ttu-id="d9d3d-p101">通告] タブには、大文字と小文字のすべての通告の並べ替え可能な一覧が含まれています。通告をケースに追加すると後の詳細については、各管理者は Azure Active Directory から自動的に収集されます。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-p101">The Custodians tab contains a sortable list of all the custodians in the case. After you add custodians to a case, details about each custodian will automatically be collected from Azure Active Directory.</span></span>
+<span data-ttu-id="a7323-p101">[保管担当者] タブには、ケース内のすべての保管担当者の並べ替え可能なリストが含まれています。保管担当者をケースに追加すると、各保管担当者の詳細が Azure Active Directory から自動的に収集されます。</span><span class="sxs-lookup"><span data-stu-id="a7323-p101">The Custodians tab contains a sortable list of all the custodians in the case. After you add custodians to a case, details about each custodian will automatically be collected from Azure Active Directory.</span></span>
 
-## <a name="viewing-custodian-details"></a><span data-ttu-id="d9d3d-105">管理者の詳細を表示します。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-105">Viewing custodian details</span></span>
+## <a name="viewing-custodian-details"></a><span data-ttu-id="a7323-105">保管担当者の詳細の表示</span><span class="sxs-lookup"><span data-stu-id="a7323-105">Viewing custodian details</span></span>
 
-<span data-ttu-id="d9d3d-p102">**通告**タブの一覧から選択して場合に、管理者を追加する管理者の詳細を含むフライアウトのページが表示されます。ここでは、その管理者に関連するすべての詳細を表示できます。フライアウトのページには、次のフィールドが含まれています。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-p102">The flyout page that contains custodian details appears after you add a custodian to a case and select them from the list on the **Custodians** tab. From here, you can view all the details related to that custodian. The flyout page contains the following fields:</span></span>
+<span data-ttu-id="a7323-p102">保管担当者の詳細を含むフライアウトページは、保管担当者をケースに追加して [**保管担当者**] タブのリストから選択すると表示されます。ここから、その保管担当者に関連するすべての詳細を表示できます。フライアウトページには、次のフィールドが含まれています。</span><span class="sxs-lookup"><span data-stu-id="a7323-p102">The flyout page that contains custodian details appears after you add a custodian to a case and select them from the list on the **Custodians** tab. From here, you can view all the details related to that custodian. The flyout page contains the following fields:</span></span>
 
-- <span data-ttu-id="d9d3d-108">連絡先情報</span><span class="sxs-lookup"><span data-stu-id="d9d3d-108">Contact information</span></span>
+- <span data-ttu-id="a7323-108">連絡先情報</span><span class="sxs-lookup"><span data-stu-id="a7323-108">Contact information</span></span>
 
-  - <span data-ttu-id="d9d3d-p103">**表示名**: 名前、管理者のアドレス帳に表示されます。これは、通常、保管担当者の姓、ミドル ネームの頭文字とラスト ネームの組み合わせです。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-p103">**Display Name**: The name displayed in the address book for the custodian. This is usually the combination of the custodian’s first name, middle initial and last name.</span></span>
-  - <span data-ttu-id="d9d3d-111">**メールと SMTP**: 保管担当者、jeff@contoso.onmicrosoft.com などの SMTP アドレスです。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-111">**Mail/SMTP**: The SMTP address for the custodian, for example, jeff@contoso.onmicrosoft.com.</span></span>  
-  - <span data-ttu-id="d9d3d-112">**タイトル**: 保管担当者の役職名です。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-112">**Title**: The custodian’s job title.</span></span>
-  - <span data-ttu-id="d9d3d-113">**部門**: 書が使用される部門の名前です。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-113">**Department**: The name for the department in which the custodian works.</span></span>
-  - <span data-ttu-id="d9d3d-p104">**マネージャー**: 管理者のマネージャーです。この保管担当者にエスカレーションした通信は、指定したマネージャーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-p104">**Manager**: The custodian’s manager. The designated manager will receive any Escalation communications for this custodian.</span></span>
+  - <span data-ttu-id="a7323-p103">[**表示名**: 保管担当者のアドレス帳に表示される名前。これは通常、保管担当者の名、ミドルネーム、姓の組み合わせになります。</span><span class="sxs-lookup"><span data-stu-id="a7323-p103">**Display Name**: The name displayed in the address book for the custodian. This is usually the combination of the custodian’s first name, middle initial and last name.</span></span>
+  - <span data-ttu-id="a7323-111">[**メール/SMTP**]: 保管担当者の SMTP アドレスです。たとえば、jeff@contoso.onmicrosoft.com のようになります。</span><span class="sxs-lookup"><span data-stu-id="a7323-111">**Mail/SMTP**: The SMTP address for the custodian, for example, jeff@contoso.onmicrosoft.com.</span></span>  
+  - <span data-ttu-id="a7323-112">**title**: 保管担当者の役職。</span><span class="sxs-lookup"><span data-stu-id="a7323-112">**Title**: The custodian’s job title.</span></span>
+  - <span data-ttu-id="a7323-113">**department**: 保管担当者が機能する部署の名前。</span><span class="sxs-lookup"><span data-stu-id="a7323-113">**Department**: The name for the department in which the custodian works.</span></span>
+  - <span data-ttu-id="a7323-p104">**マネージャー**: 保管担当者の上司。指定した上司は、この保管担当者のエスカレーション情報を受け取ります。</span><span class="sxs-lookup"><span data-stu-id="a7323-p104">**Manager**: The custodian’s manager. The designated manager will receive any Escalation communications for this custodian.</span></span>
   
-- <span data-ttu-id="d9d3d-116">場所情報</span><span class="sxs-lookup"><span data-stu-id="d9d3d-116">Location information</span></span>
+- <span data-ttu-id="a7323-116">場所情報</span><span class="sxs-lookup"><span data-stu-id="a7323-116">Location information</span></span>
 
-  - <span data-ttu-id="d9d3d-117">**都市**: 書が含まれている都市です。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-117">**City**: The city in which the custodian is located.</span></span>
-  - <span data-ttu-id="d9d3d-118">**状態**: 保管担当者の住所の都道府県です。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-118">**State**: The state or province in the custodian’s address.</span></span>
-  - <span data-ttu-id="d9d3d-119">**国/地域**: 国/地域の保管担当者のされています。たとえば、「米国」または「大阪府」です。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-119">**Country/Region**: The country/region in which the custodian’s is located; for example, “US” or “UK”.</span></span>
-  - <span data-ttu-id="d9d3d-120">**Office**: ビジネス書の場所にオフィスの場所。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-120">**Office**: The office location in the custodian’s place of business.</span></span>
+  - <span data-ttu-id="a7323-117">**city**: 保管担当者が配置されている市区町村。</span><span class="sxs-lookup"><span data-stu-id="a7323-117">**City**: The city in which the custodian is located.</span></span>
+  - <span data-ttu-id="a7323-118">**state**: 保管担当者の住所の都道府県。</span><span class="sxs-lookup"><span data-stu-id="a7323-118">**State**: The state or province in the custodian’s address.</span></span>
+  - <span data-ttu-id="a7323-119">**国/地域**: 保管担当者が配置されている国/地域。たとえば、"US" や "UK" などです。</span><span class="sxs-lookup"><span data-stu-id="a7323-119">**Country/Region**: The country/region in which the custodian’s is located; for example, “US” or “UK”.</span></span>
+  - <span data-ttu-id="a7323-120">**office**: 保管担当者の事業所にあるオフィスの場所。</span><span class="sxs-lookup"><span data-stu-id="a7323-120">**Office**: The office location in the custodian’s place of business.</span></span>
 
-- <span data-ttu-id="d9d3d-121">ケース情報</span><span class="sxs-lookup"><span data-stu-id="d9d3d-121">Case information</span></span>
+- <span data-ttu-id="a7323-121">ケース情報</span><span class="sxs-lookup"><span data-stu-id="a7323-121">Case information</span></span>
 
-  - <span data-ttu-id="d9d3d-122">**保留状態**: 保留中の書が配置されているかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-122">**Hold status**: Indicates if the custodian has been placed on hold.</span></span> 
-  - <span data-ttu-id="d9d3d-p105">**通信状態**: 保留中の通知書が発行されているかどうかを示します。通知書が発行されている場合、このとしてマークされます*公開*します。書に、通知が発行されていないかどうかは、この状態になります*が発行されていません*。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-p105">**Communication status**: Indicates if the custodian has been issued a hold notice. If the custodian has been issued a notice, then this will be marked as *Published*. If the custodian has not been issued a notice, then this status will be *Un-Published*.</span></span> 
-  - <span data-ttu-id="d9d3d-p106">**状態**: ケース内での保管担当者の状態。書が保留中の場合でもある場合は*アクティブ*になります。サポート案件から、管理者が削除されると、*リリース済み*のステータスが変更されます。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-p106">**Status**: The status of the custodian within the case. This will be *Active* if the custodian is still on hold for the case. If a custodian is removed from a case, their status will change to *Released*.</span></span> 
+  - <span data-ttu-id="a7323-122">**ホールド状態**: 保管担当者が保留中であるかどうかを示します。</span><span class="sxs-lookup"><span data-stu-id="a7323-122">**Hold status**: Indicates if the custodian has been placed on hold.</span></span> 
+  - <span data-ttu-id="a7323-p105">**通信の状態**: 保管担当者に保留通知が発行されているかどうかを示します。保管担当者に通知が発行されている場合、これは*公開済み*としてマークされます。保管担当者に通知が発行されていない場合、この状態は\*\* 未発行になります。</span><span class="sxs-lookup"><span data-stu-id="a7323-p105">**Communication status**: Indicates if the custodian has been issued a hold notice. If the custodian has been issued a notice, then this will be marked as *Published*. If the custodian has not been issued a notice, then this status will be *Un-Published*.</span></span> 
+  - <span data-ttu-id="a7323-p106">**状態**: ケース内での保管担当者の状態。保管担当者がケースに対して保留中の場合、これは*アクティブ*になります。保管担当者がケースから削除されると、その状態は「*リリース*済み」に変わります。</span><span class="sxs-lookup"><span data-stu-id="a7323-p106">**Status**: The status of the custodian within the case. This will be *Active* if the custodian is still on hold for the case. If a custodian is removed from a case, their status will change to *Released*.</span></span> 
 
-- <span data-ttu-id="d9d3d-129">処理ステータス</span><span class="sxs-lookup"><span data-stu-id="d9d3d-129">Processing status</span></span>
+- <span data-ttu-id="a7323-129">処理状態</span><span class="sxs-lookup"><span data-stu-id="a7323-129">Processing status</span></span>
 
-  - <span data-ttu-id="d9d3d-130">**インデックスの作成状況**: 高度なインデックス作成ジョブのステータスを示します。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-130">**Indexing status**: Indicates the status of the deep indexing job.</span></span>  
-  - <span data-ttu-id="d9d3d-131">**最終更新時刻のインデックスの作成**: 高度なインデックス作成ジョブが最後に呼び出されたときの日付スタンプを示します。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-131">**Indexing Last Updated Time**: Indicates the datestamp of when the deep indexing job was last triggered.</span></span>
-  - <span data-ttu-id="d9d3d-132">**データ ソース**: メールボックス、サイト、および書の選択されているチームの数を示しています。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-132">**Data sources**: Shows the count of mailboxes, sites, and Teams that have been selected for the custodian.</span></span>
+  - <span data-ttu-id="a7323-130">**インデックス作成の状態**: deep indexing ジョブの状態を示します。</span><span class="sxs-lookup"><span data-stu-id="a7323-130">**Indexing status**: Indicates the status of the deep indexing job.</span></span>  
+  - <span data-ttu-id="a7323-131">**インデックス作成の最終更新日時**: ディープインデックス作成ジョブが最後にトリガーされたときの datestamp を示します。</span><span class="sxs-lookup"><span data-stu-id="a7323-131">**Indexing Last Updated Time**: Indicates the datestamp of when the deep indexing job was last triggered.</span></span>
+  - <span data-ttu-id="a7323-132">**データソース**: 保管担当者に対して選択されたメールボックス、サイト、およびチームの数を示します。</span><span class="sxs-lookup"><span data-stu-id="a7323-132">**Data sources**: Shows the count of mailboxes, sites, and Teams that have been selected for the custodian.</span></span>
 
-## <a name="updating-a-custodian"></a><span data-ttu-id="d9d3d-133">保管担当者を更新</span><span class="sxs-lookup"><span data-stu-id="d9d3d-133">Updating a custodian</span></span>
+## <a name="updating-a-custodian"></a><span data-ttu-id="a7323-133">保管担当者の更新</span><span class="sxs-lookup"><span data-stu-id="a7323-133">Updating a custodian</span></span>
 
-<span data-ttu-id="d9d3d-p107">ケースの進行に伴って、あることを他のデータ ソースの特定の管理者の & に関連する、大文字と小文字を検出する可能性があります。他のシナリオでは、レビューおよび関係のないと見なされる場合がある特定のデータ ソースを削除する場合があります。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-p107">As your case progresses, you may discover that there may be additional data sources relevant to a specific custodian & your case. In other scenarios, you may want to remove certain data sources that have been reviewed and deemed as not relevant.</span></span>
+<span data-ttu-id="a7323-p107">ケースの進行に応じて、特定の保管担当者 & に関連する追加のデータソースが存在する場合があります。その他のシナリオでは、確認され、関連性がないと見なされた特定のデータソースを削除することが必要な場合があります。</span><span class="sxs-lookup"><span data-stu-id="a7323-p107">As your case progresses, you may discover that there may be additional data sources relevant to a specific custodian & your case. In other scenarios, you may want to remove certain data sources that have been reviewed and deemed as not relevant.</span></span>
 
-<span data-ttu-id="d9d3d-136">管理者と、選択したデータ ソースを更新します。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-136">To update a custodian and the selected data sources:</span></span>
+<span data-ttu-id="a7323-136">保管担当者および選択したデータソースを更新するには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="a7323-136">To update a custodian and the selected data sources:</span></span>
 
-1. <span data-ttu-id="d9d3d-137">**電子的証拠開示 _gt 高度な電子情報開示 (プレビュー)** には、既存のケースを選択します。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-137">Select an existing case from the **eDiscovery > Advanced eDiscovery (Preview)**.</span></span>
+1. <span data-ttu-id="a7323-137">**電子情報開示 > Advanced ediscovery (プレビュー)** から既存のケースを選択します。</span><span class="sxs-lookup"><span data-stu-id="a7323-137">Select an existing case from the **eDiscovery > Advanced eDiscovery (Preview)**.</span></span>
   
-2. <span data-ttu-id="d9d3d-138">場合、**通告**] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-138">In the case, click the **Custodians** tab.</span></span>
+2. <span data-ttu-id="a7323-138">その場合は、[**保管担当者**] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="a7323-138">In the case, click the **Custodians** tab.</span></span>
   
-3. <span data-ttu-id="d9d3d-139">一覧から、custodian(s) を選択し、**ソースの編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-139">Select the custodian(s) from the list and click **Edit sources**.</span></span>
+3. <span data-ttu-id="a7323-139">リストから保管担当者を選択し、[**ソースの編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a7323-139">Select the custodian(s) from the list and click **Edit sources**.</span></span>
   
-4. <span data-ttu-id="d9d3d-140">**データ ソースの選択**] をクリックして、Exchange と OneDrive の場所の選択を更新します。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-140">Update selections for Exchange and OneDrive locations by clicking **Choose data sources**.</span></span>
+4. <span data-ttu-id="a7323-140">**[データソースの選択]** をクリックして、Exchange および OneDrive の場所の選択を更新します。</span><span class="sxs-lookup"><span data-stu-id="a7323-140">Update selections for Exchange and OneDrive locations by clicking **Choose data sources**.</span></span>
   
-5. <span data-ttu-id="d9d3d-p108">追加または削除、チーム、SharePoint、または Exchange メールボックスは、**他のデータ ソースを選択**する] をクリックしてユーザーをマップします。保管担当者にソース データをマップする方法の詳細については、[サポート案件に追加の通告](add-custodians-to-case.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-p108">Add or remove Teams, SharePoint, or Exchange mailboxes mapped the user by clicking to **Select additional data sources**. For more information about how you to map data sources to a custodian, see [Add custodians to a case](add-custodians-to-case.md).</span></span>
+5. <span data-ttu-id="a7323-p108">ユーザーに割り当てられている Teams、SharePoint、または Exchange のメールボックスを追加または削除するには、[**追加のデータソース]** をクリックして選択します。データソースを保管担当者にマップする方法の詳細については、「 [Add 保管担当者 to a case](add-custodians-to-case.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a7323-p108">Add or remove Teams, SharePoint, or Exchange mailboxes mapped the user by clicking to **Select additional data sources**. For more information about how you to map data sources to a custodian, see [Add custodians to a case](add-custodians-to-case.md).</span></span>
   
-6. <span data-ttu-id="d9d3d-143">管理者の保留中の状態を更新するに**信託の場所を保持する**が、をクリックしを有効または通告の保持を無効にします。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-143">To update the custodian hold status, click **Place custodial holds**, and enable or disable the hold for custodians.</span></span>
+6. <span data-ttu-id="a7323-143">保管担当者 hold の状態を更新するには、[ **custodial**hold を配置する] をクリックし、保管担当者のホールドを有効または無効にします。</span><span class="sxs-lookup"><span data-stu-id="a7323-143">To update the custodian hold status, click **Place custodial holds**, and enable or disable the hold for custodians.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="d9d3d-144">通告のセットを編集するインデックスの再作成、解放、またはのように、一括操作を実行する複数の通告を選択することができます。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-144">You can select multiple custodians to perform bulk actions, like re-indexing, releasing, or editing a set of custodians.</span></span>
+> <span data-ttu-id="a7323-144">複数の保管担当者を選択して、保管担当者の再インデックス、リリース、編集などの一括操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="a7323-144">You can select multiple custodians to perform bulk actions, like re-indexing, releasing, or editing a set of custodians.</span></span>
 
-## <a name="resolving-custodian-processing-errors"></a><span data-ttu-id="d9d3d-145">保管担当者の処理エラーの解決</span><span class="sxs-lookup"><span data-stu-id="d9d3d-145">Resolving custodian processing errors</span></span>
+## <a name="resolving-custodian-processing-errors"></a><span data-ttu-id="a7323-145">保管担当者処理エラーを解決する</span><span class="sxs-lookup"><span data-stu-id="a7323-145">Resolving custodian processing errors</span></span>
 
-<span data-ttu-id="d9d3d-p109">ほとんどの有効なワークフローで通告を特定の調査を追加した後、ユーザーのデータのサブセットが検索されます。サイズの大きなファイルや破損している可能性、通告のデータ ソース内のいくつかの項目が部分的にインデックスを作成します。高度なインデックス作成の高度な電子的証拠開示 (プレビュー) 機能を使用すると、部分的にインデックス付けされたアイテムが自動的に改善する再クロールし、必要に応じてこれらの項目のインデックスを再作成します。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-p109">In most Legal workflows, after custodians are added for a specific investigation, a subset of the users’ data will be searched. Due to large file sizes or possible corruption, some items within the custodians’ data sources may be partially indexed. Using the Advanced eDiscovery (Preview) deep indexing capability, these partially indexed items can be automatically remediated by re-crawling and re-indexing these items on demand.</span></span> 
+<span data-ttu-id="a7323-p109">ほとんどの法律ワークフローでは、特定の調査のために保管担当者を追加した後、ユーザーのデータのサブセットが検索されます。大きなファイルサイズまたは破損の可能性があるため、保管担当者のデータソース内の一部の項目は、部分的にインデックス処理される場合があります。Advanced eDiscovery (プレビュー) ディープインデックス作成機能を使用すると、これらのアイテムを再クロールし、必要に応じてインデックスを再作成することで、これらの部分的なインデックスが作成されたアイテムを自動的に修復できます。</span><span class="sxs-lookup"><span data-stu-id="a7323-p109">In most Legal workflows, after custodians are added for a specific investigation, a subset of the users’ data will be searched. Due to large file sizes or possible corruption, some items within the custodians’ data sources may be partially indexed. Using the Advanced eDiscovery (Preview) deep indexing capability, these partially indexed items can be automatically remediated by re-crawling and re-indexing these items on demand.</span></span> 
 
-<span data-ttu-id="d9d3d-p110">場合に、管理者を追加するのデータは自動的に「深いインデックス」と、アイテムをダウンロード、修正、および Office 365 以外での検索を再実行することではなく部分的にこれらのままにするユーザーを許可するインデックスが作成されます。サポート案件のライフ サイクルは、ユーザーが項目を修正するか、指定された管理者の新しいデータ ソースを追加します。保管担当者のインデックスを更新するこの必要があります。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-p110">When a custodian is added to a case, their data will automatically be "deep indexed”, allowing users to leave these partially indexed items in place instead of having to download, remediate and re-run searches outside of Office 365. During the lifecycle of a case, a user may remediate items or add new data sources for a given custodian. This may require the Custodian Index to be updated.</span></span> 
+<span data-ttu-id="a7323-p110">保管担当者がケースに追加されると、そのデータは自動的に "ディープインデックス" になり、ユーザーは Office 365 の外部で検索をダウンロード、修復、および再実行する必要がなく、これらの部分的なインデックスが作成されたアイテムをそのまま残しておくことができます。ケースのライフサイクル中に、ユーザーは特定の保管担当者のアイテムを修復したり、新しいデータソースを追加したりすることができます。これには、保管担当者インデックスを更新する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a7323-p110">When a custodian is added to a case, their data will automatically be "deep indexed”, allowing users to leave these partially indexed items in place instead of having to download, remediate and re-run searches outside of Office 365. During the lifecycle of a case, a user may remediate items or add new data sources for a given custodian. This may require the Custodian Index to be updated.</span></span> 
 
-<span data-ttu-id="d9d3d-152">部分的にアドレスの再インデックス作成のプロセスをトリガーするには、インデックスの項目を実行します。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-152">To trigger a re-indexing process to address partially indexed items:</span></span>
+<span data-ttu-id="a7323-152">部分的なインデックスが作成されたアイテムを処理するために、再インデックス処理をトリガーするには</span><span class="sxs-lookup"><span data-stu-id="a7323-152">To trigger a re-indexing process to address partially indexed items:</span></span>
 
-1. <span data-ttu-id="d9d3d-153">**電子的証拠開示 _gt 高度な電子情報開示 (プレビュー)** に移動し、既存のケースを選択します。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-153">Go to **eDiscovery > Advanced eDiscovery (Preview)** and select an existing case.</span></span>
+1. <span data-ttu-id="a7323-153">**電子情報開示 > Advanced ediscovery (プレビュー)** に移動し、既存のケースを選択します。</span><span class="sxs-lookup"><span data-stu-id="a7323-153">Go to **eDiscovery > Advanced eDiscovery (Preview)** and select an existing case.</span></span>
 
-2. <span data-ttu-id="d9d3d-154">場合、**通告**] タブをクリックします。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-154">In the case, click to **Custodians tab**.</span></span> 
+2. <span data-ttu-id="a7323-154">ケースでは、[**保管担当者] タブ**をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a7323-154">In the case, click to **Custodians tab**.</span></span> 
 
-3. <span data-ttu-id="d9d3d-155">再インデックス付けする必要がある custodian(s) を選択し、ポップアップ ページの**索引の更新**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-155">Select the custodian(s) that needs to be re-indexed, and then click **Update index** on the flyout page.</span></span>
+3. <span data-ttu-id="a7323-155">再インデックス化する必要がある保管担当者を選択し、フライアウトページの [**インデックスの更新**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a7323-155">Select the custodian(s) that needs to be re-indexed, and then click **Update index** on the flyout page.</span></span>
 
-4. <span data-ttu-id="d9d3d-156">**通告**] タブで [**インデックス作成ジョブの状態**] 列にあるリンクをクリックすると、管理者のインデックスのステータスを確認してください。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-156">Check the status of the custodian index by clicking the link in the **Indexing job Status** column on the **Custodians** tab.</span></span>  
+4. <span data-ttu-id="a7323-156">保管担当者インデックスの状態を確認するために、[**保管担当者**] タブの [**インデックス作成ジョブの状態**] 列のリンクをクリックします。</span><span class="sxs-lookup"><span data-stu-id="a7323-156">Check the status of the custodian index by clicking the link in the **Indexing job Status** column on the **Custodians** tab.</span></span>  
 
-5. <span data-ttu-id="d9d3d-157">**ジョブ**] タブの再インデックス処理のステータスを追跡することもできます。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-157">The status for the re-indexing process can also be tracked on the **Jobs** tab.</span></span>
+5. <span data-ttu-id="a7323-157">再インデックス処理の状態は、[**ジョブ**] タブで追跡することもできます。</span><span class="sxs-lookup"><span data-stu-id="a7323-157">The status for the re-indexing process can also be tracked on the **Jobs** tab.</span></span>
 
-<span data-ttu-id="d9d3d-158">部分的にインデックス付きのアイテムを再インデックス作成と修正の詳細については、[処理エラーを修正する](processing-data-for-case.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-158">For more information about re-indexing and remediating partially indexed items, see [Fix processing errors](processing-data-for-case.md).</span></span>
+<span data-ttu-id="a7323-158">インデックスが作成されたアイテムのインデックスの再作成と修復の詳細については、「[処理エラーを修正](processing-data-for-case.md)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a7323-158">For more information about re-indexing and remediating partially indexed items, see [Fix processing errors](processing-data-for-case.md).</span></span>
 
-## <a name="releasing-a-custodian-from-a-case"></a><span data-ttu-id="d9d3d-159">サポート案件からの保管担当者を解放します。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-159">Releasing a custodian from a case</span></span>
+## <a name="releasing-a-custodian-from-a-case"></a><span data-ttu-id="a7323-159">ケースからの保管担当者の解放</span><span class="sxs-lookup"><span data-stu-id="a7323-159">Releasing a custodian from a case</span></span>
 
-<span data-ttu-id="d9d3d-160">状況で、管理者がリリースされた場合は、ケースを終了、管理者の場合は、コンテンツを保持する義務がない、または特定に関連している、保管担当者と判断した場合になった。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-160">A custodian is released in situations where a case is closed, a custodian is no longer under obligation to preserve content for a case, or when a custodian is deemed to no longer be relevant to a particular case.</span></span> 
+<span data-ttu-id="a7323-160">保管担当者は、ケースがクローズされた場合や、ケースのコンテンツを保持する義務が保管担当者ではなくなった場合、または保管担当者が特定のケースに関連していないと判断された場合にリリースされます。</span><span class="sxs-lookup"><span data-stu-id="a7323-160">A custodian is released in situations where a case is closed, a custodian is no longer under obligation to preserve content for a case, or when a custodian is deemed to no longer be relevant to a particular case.</span></span> 
 
-<span data-ttu-id="d9d3d-p111">保留中の通知が発行された後に、管理者をリリースする場合のリリースの通知書に送信されます。さらに、リリースされた通告に属する信託、保留リストも削除されます。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-p111">If you release a custodian after a hold notice was published, a release notice will be sent to the custodian. In addition, any custodial holds attributed to the released custodians will also be removed.</span></span>
+<span data-ttu-id="a7323-p111">保留通知が公開された後に保管担当者をリリースした場合は、リリース通知が保管担当者に送信されます。さらに、リリースされた保管担当者に属性付きのすべての custodial 保持も削除されます。</span><span class="sxs-lookup"><span data-stu-id="a7323-p111">If you release a custodian after a hold notice was published, a release notice will be sent to the custodian. In addition, any custodial holds attributed to the released custodians will also be removed.</span></span>
 
-<span data-ttu-id="d9d3d-163">書が追加された場合、サイレントの保留リストにない発行したすべての法的保持義務通告、リリースされた通告に属する信託、保留リストが削除されます。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-163">If the custodian was placed on a silent hold, where they were not issued any legal hold notifications, then any custodial holds attributed to the released custodians will be removed.</span></span>  
+<span data-ttu-id="a7323-163">保管担当者が、法的情報保留通知が発行されていないサイレントホールドに設定されている場合は、リリースされた保管担当者に分類されたすべての custodial 保持が削除されます。</span><span class="sxs-lookup"><span data-stu-id="a7323-163">If the custodian was placed on a silent hold, where they were not issued any legal hold notifications, then any custodial holds attributed to the released custodians will be removed.</span></span>  
 
-<span data-ttu-id="d9d3d-164">管理者を解放します。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-164">To release a custodian:</span></span> 
+<span data-ttu-id="a7323-164">保管担当者をリリースするには、次のようにします。</span><span class="sxs-lookup"><span data-stu-id="a7323-164">To release a custodian:</span></span> 
 
-1.  <span data-ttu-id="d9d3d-165">**通告**] タブに移動します。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-165">Go to the **Custodians** tab.</span></span>
+1.  <span data-ttu-id="a7323-165">[**保管担当者**] タブに移動します。</span><span class="sxs-lookup"><span data-stu-id="a7323-165">Go to the **Custodians** tab.</span></span>
 
-2.  <span data-ttu-id="d9d3d-166">書を一覧から選択、ポップアップ ページの**リリースの通告**をクリックします.</span><span class="sxs-lookup"><span data-stu-id="d9d3d-166">Select the custodian from the list and click **Release custodians** on the flyout page.</span></span>
+2.  <span data-ttu-id="a7323-166">リストから保管担当者を選択し、フライアウトページの [ **Release 保管担当者**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="a7323-166">Select the custodian from the list and click **Release custodians** on the flyout page.</span></span>
 
-    <span data-ttu-id="d9d3d-167">**通告**] タブの [管理者の状態は、**リリース済み**に設定されてし、**保留状態**のフライアウトのページが**非アクティブ**に変更されました。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-167">The status of the custodian on the **Custodians** tab is set to **Released** and the **Hold status** on the flyout page is changed to **Inactive**.</span></span> 
+    <span data-ttu-id="a7323-167">**保管担当者**タブの保管担当者の状態は [**解放**済み] に設定されており、フライアウトページの**保持状態**が**非アクティブ**に変更されます。</span><span class="sxs-lookup"><span data-stu-id="a7323-167">The status of the custodian on the **Custodians** tab is set to **Released** and the **Hold status** on the flyout page is changed to **Inactive**.</span></span> 
 
 > [!TIP]
-> <span data-ttu-id="d9d3d-p112">保管担当者、同時にあります法的保存要件のいくつかの問題に関係します。サポート案件から、管理者が解放されると、保留リストおよびその他の事柄の間での通知は影響されません。</span><span class="sxs-lookup"><span data-stu-id="d9d3d-p112">A custodian might be simultaneously be involved in several legal hold matters. When a custodian is released from a case, the holds and notifications across other matters will not be impacted.</span></span>
+> <span data-ttu-id="a7323-p112">保管担当者は、いくつかの法的情報保持事項に同時に関与する場合があります。保管担当者がケースからリリースされた場合、他の事項における保留と通知は影響を受けません。</span><span class="sxs-lookup"><span data-stu-id="a7323-p112">A custodian might be simultaneously be involved in several legal hold matters. When a custodian is released from a case, the holds and notifications across other matters will not be impacted.</span></span>
 
-## <a name="related-information"></a><span data-ttu-id="d9d3d-170">関連情報</span><span class="sxs-lookup"><span data-stu-id="d9d3d-170">Related information</span></span>
+## <a name="related-information"></a><span data-ttu-id="a7323-170">関連情報</span><span class="sxs-lookup"><span data-stu-id="a7323-170">Related information</span></span>
 
- - [<span data-ttu-id="d9d3d-171">データ処理中のエラー修復</span><span class="sxs-lookup"><span data-stu-id="d9d3d-171">Error remediation when processing data</span></span>](error-remediation.md) 
-- [<span data-ttu-id="d9d3d-172">通信の操作</span><span class="sxs-lookup"><span data-stu-id="d9d3d-172">Work with communications</span></span>](managing-custodian-communications.md)
+ - [<span data-ttu-id="a7323-171">データ処理中のエラー修復</span><span class="sxs-lookup"><span data-stu-id="a7323-171">Error remediation when processing data</span></span>](error-remediation.md) 
+- [<span data-ttu-id="a7323-172">通信の操作</span><span class="sxs-lookup"><span data-stu-id="a7323-172">Work with communications</span></span>](managing-custodian-communications.md)
