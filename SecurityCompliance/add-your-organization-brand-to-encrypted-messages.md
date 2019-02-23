@@ -1,123 +1,127 @@
 ---
-title: 暗号化されたメッセージに、組織のブランドを追加します。
+title: 暗号化されたメッセージに組織ブランドを追加する
 ms.author: krowley
 author: kccross
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7a29260d-2959-42aa-8916-feceff6ee51d
-description: Exchange 管理者は、組織のブランドの組織の暗号化された電子メール メッセージや暗号化のポータルのコンテンツに適用できます。
-ms.openlocfilehash: 4b22b72a8b77c2978a7cf25166978759119c272c
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.collection:
+- M365-security-compliance
+description: Exchange 管理者は、組織の暗号化された電子メールメッセージと暗号化ポータルの内容に組織のブランド化を適用することができます。
+ms.openlocfilehash: 237824890d2b519e36cf5205a1f5c3dcc0fe830a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29696221"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213337"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>組織のブランドを暗号化されたメッセージに追加する
 
-オンライン Exchange または Exchange のオンライン保護管理者は、会社、組織の Office 365 のメッセージの暗号化電子メール メッセージの外観および暗号化のポータルのコンテンツをカスタマイズするのにはブランド化を適用できます。Get OMEConfiguration とセット OMEConfiguration Windows PowerShell コマンドレットを使用すると、暗号化された電子メール メッセージの受信者の表示操作の次の側面をカスタマイズできます。
+exchange online または exchange online Protection 管理者は、企業ブランドを適用して、組織の Office 365 メッセージ暗号化の電子メールメッセージと暗号化ポータルの内容の外観をカスタマイズできます。取得した、暗号化された電子メールメッセージの受信者については、次のように、Windows PowerShell コマンドレットを使用して、以下の点をカスタマイズできます。
   
 - 暗号化メッセージを含む電子メールの導入部のテキスト
 - 暗号化メッセージを含む電子メールの免責事項のテキスト
-- ホーム ポータルに表示されるテキスト
-- ホーム ポータル、電子メール メッセージに表示されるロゴ
-- ホーム ポータル、電子メール メッセージの背景色
+- OME ポータルに表示されるテキスト
+- 電子メールメッセージと OME ポータルに表示されるロゴ
+- 電子メールメッセージと OME ポータルの背景色
 
 いつでも既定のルック アンド フィールに戻すこともできます。
 
-詳細に制御する場合は、組織から発信される、暗号化された電子メールを複数のテンプレートを作成できます。これらのテンプレートを使用すると、制御、電子メール メッセージの外観と動作だけでなくは、エンドユーザーの操作性の部分を制御できます。たとえば、このテンプレートの適用を持ち、Google や Yahoo、Microsoft アカウントを使用しているメールの宛先が Office 365 のメッセージの暗号化のポータルにサインインするのにはこれらのアカウントを使用できるかどうかを指定できます。次のようにいくつかのユース ケースを実行するためにテンプレートを使用する場合があります。
+より詳細な制御を希望する場合は、組織から送信される暗号化メール用に複数のテンプレートを作成することができます。これらのテンプレートを使用すると、電子メールメッセージの外観だけでなく、エンドユーザーの操作性の部分を制御することもできます。たとえば、このテンプレートが適用されたメールの受信者と、Google、Yahoo、および Microsoft アカウントを使用して、Office 365 メッセージ暗号化ポータルにサインインできるようにするユーザーを指定することができます。テンプレートを使用して、次のようないくつかのユースケースを満たすことができます。
 
-- 財務や営業など、各部門用のテンプレートです。
-- 別の製品用のテンプレート
-- 異なる地域や国のためのテンプレート
+- 各部門のテンプレート (Finance、Sales など)
+- さまざまな製品のテンプレート
+- さまざまな地域または国のテンプレート
 
-テンプレートを作成した後は Exchange メール フローの規則を使用して暗号化された電子メールに適用にできます。これらのテンプレートを使用して、ブランドは、すべてのメールを失効させることができます。
+テンプレートを作成したら、Exchange メールフロールールを使用して暗号化された電子メールにそれらを適用することができます。これらのテンプレートを使用してブランド化されたすべてのメールを取り消すことができます。
   
 ||
 |:-----|
-|この資料は、Office 365 のメッセージの暗号化についての記事の大規模な一連の一部です。この資料は、管理者および ITPros。だけを行う場合、暗号化されたメッセージを送受信する情報は[Office 365 メッセージの暗号化 (ホーム)](ome.md)内のアーティクルの一覧を参照してくださいし、お客様のニーズに最も適した記事を検索します。 |
+|この記事は、Office 365 メッセージの暗号化についてのより大きな一連の記事の一部です。この記事は、管理者および it 担当者を対象としています。暗号化されたメッセージの送信または受信に関する情報をお探しの場合は、「 [Office 365 message Encryption (OME)](ome.md) 」の記事の一覧を参照し、ニーズに最も適した記事を見つけてください。|
 ||
 
-## <a name="create-branding-templates"></a>ブランド化のテンプレートを作成します。
+## <a name="create-branding-templates"></a>ブランド設定テンプレートを作成する
 
-新規 OMEConfiguration コマンドレットを Windows PowerShell で組織のブランド化のテンプレートを作成するとします。テンプレートを作成した後は、セット OMEConfiguration コマンドレットを使用して、テンプレートの構成要素を定義します。複数のテンプレートを作成することができます。
+Windows PowerShell で組織のブランド化テンプレートを作成するには、新しい/omeconfiguration コマンドレットを使用します。テンプレートを作成したら、そのテンプレートの部分を定義します。このためには、コマンドレットを使用します。複数のテンプレートを作成できます。
 
-![電子メールのカスタマイズ可能なパーツ](media/ome-template-breakout.png)
+![カスタマイズ可能な電子メールパーツ](media/ome-template-breakout.png)
   
-1. 大域管理者アクセス許可を持つ、Office 365 の組織で、職場、学校のアカウントを使用すると、Windows PowerShell セッションを開始し、Exchange Online に接続します。手順については、 [Exchange オンライン PowerShell への接続](https://aka.ms/exopowershell)を参照してください。
+1. Office 365 組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online に接続します。手順については、「 [Exchange Online PowerShell への接続](https://aka.ms/exopowershell)」を参照してください。
 
-2. 新しいテンプレートを作成するのにには、新規 OMEConfiguration コマンドレットを使用します。
-     ```powershell
-     New-OMEConfiguration -Identity <OMEConfigurationIdParameter>
-     ```
-     たとえば、次のように使用します。
-     ```powershell
-     New-OMEConfiguration -Identity <Branding template 1>
-     ```
-3. [セット OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration)で説明したように、セット OMEConfiguration コマンドレットを使用して定義したテンプレートのカスタマイズを定義またはガイダンスについては、次の表を使用します。
+2. 新しいテンプレートを作成するには、新しい-omeconfiguration コマンドレットを使用します。
 
-|**カスタマイズする暗号化エクスペリエンスの特性**|**これらのコマンドを使用します。**|
+   ```powershell
+   New-OMEConfiguration -Identity <OMEConfigurationIdParameter>
+   ```
+   たとえば、次のように使用します。
+
+   ```powershell
+   New-OMEConfiguration -Identity <Branding template 1>
+   ```
+3. 定義したテンプレートのカスタマイズを定義するには、「omeconfiguration 設定」で説明さ[](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration)れているように、このコマンドレットを使用するか、または次の表を参考にしてください。
+
+|**カスタマイズする暗号化エクスペリエンスの特性**|**使用するコマンド**|
 |:-----|:-----|
-|背景色  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor "<Hexadecimal color code>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"` <br/> |
-|ロゴ  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> サポートされているファイル形式: .png、.jpg、.bmp、.tiff  <br/> ロゴ ファイルの最適なサイズ:40 KB 未満  <br/> 最適なロゴ画像のサイズ:170x70 ピクセル  <br/> |
-|送信者の名前と電子メール アドレスの横にあるテキスト| `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -IntroductionText "<String up to 1024 characters>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
-|"メッセージの読み取り] ボタンに表示されるテキスト| `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -ReadButtonText "<String up to 1024 characters>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
-|上"のメッセージを開封] ボタンの下に表示されるテキスト| `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<String up to 1024 characters>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
-|暗号化メッセージを含む電子メールの免責文  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
-|暗号化メールの表示ポータルの最上部に表示されるテキスト<br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<Text for your portal. String of up to 128 characters.>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."` <br/> |
-|有効にするか、このユーザー設定のテンプレートの 1 回限りのパスコードを使用して認証を無効にするには| `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -OTPEnabled <$true|$false>` <br/> **例:** <br/>このカスタム テンプレートのワンタイム ・ パスワードを有効にするには <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> このカスタム テンプレートのワンタイム ・ パスワードを無効にするには <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
-|有効にするか、このカスタム テンプレートのマイクロソフトや Google、yahoo の id を使用して認証を無効にするには| `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -SocialIdSignIn <$true|$false>` <br/> **例:** <br/>このカスタム テンプレートのソーシャル Id を有効にするには <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <br/> このカスタム テンプレートのソーシャル Id を無効にするには <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
+|背景色|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor "<Hexadecimal color code>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"`|
+|ロゴ|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> サポートされているファイル形式: .png、.jpg、.bmp、.tiff  <br/> ロゴ ファイルの最適なサイズ:40 KB 未満  <br/> 最適なロゴ画像のサイズ:170x70 ピクセル|
+|送信者の名前と電子メールアドレスの横のテキスト|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -IntroductionText "<String up to 1024 characters>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
+|[メッセージの読み取り] ボタンに表示されるテキスト|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -ReadButtonText "<String up to 1024 characters>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
+|[メッセージの読み取り] ボタンの下に表示されるテキスト|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<String up to 1024 characters>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
+|暗号化メッセージを含む電子メールの免責文|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
+|暗号化メールの表示ポータルの最上部に表示されるテキスト|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<Text for your portal. String of up to 128 characters.>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
+|このカスタムテンプレートのワンタイムパスコードで認証を有効または無効にするには|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -OTPEnabled <$true|$false>` <br/> **例:** <br/>このカスタムテンプレートで1回限りのパスコードを有効にするには <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> このカスタムテンプレートで1回限りのパスコードを無効にするには <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
+|このカスタムテンプレートの Microsoft、Google、または Yahoo の id による認証を有効または無効にするには|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -SocialIdSignIn <$true|$false>` <br/> **例:** <br/>このカスタムテンプレートのソーシャル id を有効にするには <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <br/> このカスタムテンプレートのソーシャル id を無効にするには <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
 
-## <a name="to-remove-brand-customizations-from-the-ome-portal-and-email-messages-encrypted-by-ome"></a>ホームで暗号化されたホーム ポータル、電子メール メッセージから、ブランドのカスタマイズを削除するのには
+## <a name="to-remove-brand-customizations-from-the-ome-portal-and-email-messages-encrypted-by-ome"></a>OME ポータルおよび OME で暗号化された電子メールメッセージからブランド化のカスタマイズを削除するには
   
 1. [Exchange Online PowerShell に接続します](https://aka.ms/exopowershell)。
 
-2. [セット OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration)で説明したように、セット OMEConfiguration コマンドレットを使用します。組織を削除するのには、DisclaimerText、EmailText からのカスタマイズをブランドし、PortalText の値を空の文字列値を設定する`""`。すべてのイメージ、ロゴなどの値の値を設定、 `"$null"`。
+2. set- **** omeconfiguration コマンドレットを使用します[](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration)。組織のブランド化されたカスタマイズを DisclaimerText、emailtext、および PortalText の値から削除するには、値を`""`空の文字列に設定します。ロゴなどのすべてのイメージ値について、値を`"$null"`に設定します。
 
 **暗号化のカスタマイズ オプション**
 
-**この暗号化の機能を既定のテキストと画像に戻すには**|**これらのコマンドを使用します。**|
+**この暗号化の機能を既定のテキストと画像に戻すには**|**使用するコマンド**|
 |:-----|:-----|
-|暗号化された電子メール メッセージに付けられる既定のテキスト  <br/> 暗号化メッセージの表示手順の上に表示される既定のテキスト| `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
-|暗号化メッセージを含む電子メールの免責文| `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
-|暗号化メールの表示ポータルの最上部に表示されるテキスト| `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **既定値に戻すの背面を例:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
-|ロゴ| `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **既定値に戻すの背面を例:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
-|背景色| `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor <"$null">` <br/> **既定値に戻すの背面を例:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
+|暗号化された電子メール メッセージに付けられる既定のテキスト  <br/> 暗号化メッセージの表示手順の上に表示される既定のテキスト|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
+|暗号化メッセージを含む電子メールの免責文|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
+|暗号化メールの表示ポータルの最上部に表示されるテキスト|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **既定値に戻す例:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
+|ロゴ|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **既定値に戻す例:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
+|背景色|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor <"$null">` <br/> **既定値に戻す例:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
 
-## <a name="create-an-exchange-mail-flow-rule-that-applies-custom-branding-to-encrypted-emails"></a>Exchange メール フロー ルールが適用されるカスタム ブランドを暗号化された電子メールを作成します。
+## <a name="create-an-exchange-mail-flow-rule-that-applies-custom-branding-to-encrypted-emails"></a>暗号化された電子メールにカスタムブランド化を適用する Exchange メールフロールールを作成する
 
-ブランド化のテンプレートを作成した後、特定の条件に基づいて、そのカスタム ブランド化を適用する Exchange のメール フロー ルールを作成できます。カスタム ブランドの次のシナリオでこのようなルールが適用されます。
+ブランド設定テンプレートを作成したら、Exchange メールフロールールを作成して、特定の条件に基づいてそのカスタムブランド化を適用できます。このようなルールは、次のシナリオでカスタムブランド化を適用します。
 
-- 電子メールが Outlook または OWA クライアントからエンドユーザーが手動で暗号化されたかどうか
-- 電子メールが Exchange のメール フローの規則またはポリシーを Office 365 のデータ損失の防止によって自動的に暗号化
+- 電子メールが、outlook または web 上の outlook (旧称 outlook web App) クライアントからエンドユーザーによって手動で暗号化されている場合
+- 電子メールが Exchange メールフロールールまたは Office 365 データ損失防止ポリシーによって自動的に暗号化された場合
 
-暗号化を適用する Exchange メール フローの規則を作成する方法については、 [Office 365 で電子メール メッセージを暗号化するためにメール フロー ルールの定義](define-mail-flow-rules-to-encrypt-email.md)を参照してください。
+暗号化を適用する Exchange メールフロールールを作成する方法については、「 [Office 365 で電子メールメッセージを暗号化するためのメールフロールールの定義](define-mail-flow-rules-to-encrypt-email.md)」を参照してください。
 
-1. Web ブラウザーで[Office 365 にサインイン](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)、グローバル管理者のアクセス許可が与えられている、職場、学校のアカウントを使用します。
+1. web ブラウザーで、グローバル管理者のアクセス許可が付与されている職場または学校のアカウントを使用して、 [Office 365 にサインイン](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)します。
 
-2. **管理者**のタイルを選択します。
+2. [**管理**] タイルを選択します。
 
 3. Office 365 管理センター で、 **[管理センター]** \> **[Exchange]** を選びます。
 
-4. **メール フロー**には、EAC で\>**の規則**と**新規**作成]![新しいアイコン](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **新しい規則を作成します**。詳細については、EAC を使用して、 [Exchange のオンラインでの Exchange 管理センター](https://docs.microsoft.com/exchange/exchange-admin-center)を参照してください。
+4. EAC で、[**メールフロー** \> ] [**ルール**] に**** ![移動し、](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> [新しい新規作成] アイコンを選択して**新しいルールを作成**します。EAC の使用方法の詳細については、「exchange [Online の exchange 管理センター](https://docs.microsoft.com/exchange/exchange-admin-center)」を参照してください。
 
-5. **名**、販売部門のブランドなど、ルールの名前を入力します。
+5. [**名前**] に、[営業部門のブランド化] など、ルールの名前を入力します。
 
-6. **場合にこのルールを適用する**条件を選択、使用可能な条件の一覧から必要なその他の条件と同様に **、送信者が組織内にある**条件を選択します。などの特定のブランドにテンプレートを適用します。
+6. [条件を選択する**場合、このルールを適用**する] で、**送信者が組織内に配置さ**れている条件と、使用可能な条件の一覧からその他の条件を選択します。たとえば、特定のブランド化テンプレートを次のように適用することができます。
 
-     - 財務部門のメンバーから送信される e メールはすべて暗号化
-     - 「外部」または「パートナー」などの特定のキーワードを使用して送信される暗号化された e メール
-     - 暗号化された電子メールを特定のドメインに送信されます。
+     - 財務部門のメンバーから送信されるすべての暗号化された電子メール
+     - 「外部」や「パートナー」などの特定のキーワードで暗号化された電子メール
+     - 特定のドメインに送信される暗号化された電子メール
 
-7. **次の操作**をには、**メッセージ セキュリティの変更**] を選択 > **ブランド ホームのメッセージを指定して適用**します。次に、ドロップダウン リストからは、ブランド化のテンプレートから作成したものを選択します。
-8. (省略可能)メール フロー ルールもだけでなく、カスタムの暗号化を適用する場合から **、次の操作**をには、ブランド、**メッセージ セキュリティの変更**] を選択し、**適用 Office 365 のメッセージの暗号化と権限保護**します。RMS テンプレートを一覧から選択、**保存**を選択し、[ **ok]** します。
+7. [**実行する処理] 次**に、[**メッセージセキュリティ** > を変更します] を選択して、**OME メッセージにカスタムブランドを適用**します。次に、ドロップダウンから、作成したブランド化テンプレートを選択します。
+8. オプションカスタムブランド化に加えて、メールフロールールが暗号化も適用するようにするには、**次の操作を行い**ます。次に、[**メッセージのセキュリティを変更**する] を選択し、[ **Office 365 メッセージの暗号化と権限保護を適用**する] を選択します。一覧から RMS テンプレートを選択し、[**保存**] を選択して、[ **OK]** を選択します。
   
-     テンプレートの一覧には、すべての既定のテンプレートが含まれていて、オプションと同様に作成したカスタム テンプレートを Office 365 で使用します。リストが空の場合は、設定することが Office 365 のメッセージの暗号化を新しい機能を備えた[新しい Office 365 のメッセージの暗号化機能の設定](set-up-new-message-encryption-capabilities.md)の説明に従ってを確認します。既定のテンプレートの詳細については、[構成して Azure の情報保護のためのテンプレートを管理する](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)を参照してください。[**転送不可**] オプションの詳細については、[電子メールの転送不可] オプション](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)を参照してください。**のみ暗号化**オプションの詳細については、[電子メールの暗号化のみ] オプション](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)を参照してください。
+     テンプレートの一覧には、既定のテンプレートとオプションのすべてに加えて、Office 365 で使用するために作成したカスタムテンプレートがすべて含まれています。リストが空の場合は、「office の[新しいメッセージの暗号化機能をセットアップ](set-up-new-message-encryption-capabilities.md)する」の説明に従って、office 365 メッセージの暗号化を新しい機能で設定していることを確認してください。既定のテンプレートの詳細については、「 [Azure information Protection 用のテンプレートを構成および管理](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)する」を参照してください。[**転送**しない] オプションの詳細については、「[メールの転送オプション](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)を送信しない」を参照してください。[**暗号化のみ**] オプションの詳細については、「[電子メールの暗号化のみオプション](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)」を参照してください。
 
-     別のアクションを指定する場合は、**アクションを追加する**選択できます。
+     別のアクションを指定する場合は、[**アクションの追加**] を選択できます。

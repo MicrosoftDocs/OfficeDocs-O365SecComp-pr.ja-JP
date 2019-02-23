@@ -10,13 +10,13 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
-description: 注意すべきの EOP で作業を開始する前に、いくつかの点を次に示します。
-ms.openlocfilehash: 21d1bfe34485e97b35755bc2f88f3ba13066a616
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+description: EOP の操作を開始する前に知っておく必要があるいくつかの点を以下に示します。
+ms.openlocfilehash: 2535a796a0ac1548160545226586233af7b50080
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026384"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206560"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -42,7 +42,7 @@ EOP 管理者向けのヘルプ コンテンツは、次の最上位カテゴリ
     
 - [EOP サービスを設定する](set-up-your-eop-service.md) EOP サービスを設定するための手順と、追加情報へのリンクを提供します。 
     
-- [Google Postini、Barracuda のスパムおよびウイルス ファイアウォール、または Cisco IronPort の EOP に切り替える](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md)EOP に別の電子メールの保護製品からの切り替えのプロセスについて説明します。 
+- [EOP から Google postini、Barracuda スパムおよびウイルスファイアウォール、または Cisco IronPort に切り替えます](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md)。別の電子メール保護製品から EOP に切り替えるためのプロセスについて説明します。 
     
 - [EOP で受信者と管理役割グループを管理する](manage-recipients-and-admin-role-groups-in-eop.md) 受信者を管理する方法とユーザーを管理役割グループに割り当てる方法について説明します。 
     
@@ -56,7 +56,7 @@ EOP 管理者向けのヘルプ コンテンツは、次の最上位カテゴリ
     
 - 「[Exchange Online Protection でのレポート作成とメッセージ追跡](reporting-and-message-trace-in-exchange-online-protection.md)」 使用可能なレポートとトラブルシューティング ツールについて説明しています。 
     
-- [Exchange 管理センターでは、Exchange オンライン保護](../exchange-admin-center-in-exchange-online-protection-eop.md)EOP サービスを管理するために、Exchange 管理センター (EAC) 管理用インタ フェースをナビゲートする方法について説明します。 
+- exchange [Online Protection の exchange 管理センター](../exchange-admin-center-in-exchange-online-protection-eop.md)EOP サービスを管理するために、Exchange 管理センター (EAC) 管理インターフェイスを使用してアクセスおよび移動を行う方法について説明します。 
     
 - [Exchange Online Protection の PowerShell](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) リモート PowerShell に関する情報を提供します。このシェルでは、EOP サービスをコマンド ラインから管理できます。 
     
@@ -69,11 +69,11 @@ EOP エンド ユーザーによるスパム管理を支援するためのヘル
   
 - [Find and Release Quarantined Messages as an End User](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) エンド ユーザーが、スパム検疫ユーザー インターフェイスで独自のスパム検疫済みメッセージを検出して解放し、オプションで、それらのメッセージを迷惑メールではないとして Microsoft に報告する方法について説明します。 
         
-- [送信スパム、スパム以外の場合、および分析のためのマイクロソフトのフィッシング詐欺メッセージ](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)エンド ・ ユーザーは、スパム (迷惑メール) およびマイクロソフトの非スパム (迷惑メール) メッセージを送信できます、さまざまな方法について説明します。このトピックには、Microsoft Outlook と OWA で利用可能なレポート作成ツールへのリンクが含まれます。 
+- [スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)エンドユーザーがスパム (迷惑メール) メッセージと非スパム (迷惑メールではない) メッセージを Microsoft に送信するさまざまな方法について説明します。このトピックには、Microsoft outlook および web 上の outlook (旧称 Outlook web App) で使用可能なレポートツールへのリンクが含まれています。 
     
 - [Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md) エンド ユーザーがフィルターを通過したマルウェアやマルウェアとして誤判定されたと思われるファイルを報告する方法について説明します。 
     
-- エンド ・ ユーザーを追加できます特定のユーザーまたはドメインを [差出人セーフ リスト] ボックスの一覧またはブロックされる送信者の一覧に Microsoft OWA または Outlook の迷惑メール設定を構成することによって。禁止された送信者から送信されるメッセージがスパムとして拒否しない、迷惑メール フォルダーまたは検査に応じて、管理者が構成されている迷惑メールを送信するサービスです。) から取得することを意味するマークされたことに注意してください。詳細については、[レポート メッセージの追加の使用](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)を参照してください。
+- エンドユーザーは、outlook または web 上の outlook で迷惑メール設定を構成することで、特定のユーザーまたはドメインを安全な送信者リストまたは受信拒否リストに追加できます。禁止された送信者から送信されたメッセージは拒否されず、スパムとしてマークされ、迷惑メールフォルダーまたは検疫から取得できることに注意してください (管理者がスパムを送信するように構成されている場所によって異なります)。詳細については、「[レポートメッセージアドインを使用する](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)」を参照してください。
     
 - 「[EOP のヘルプとサポート](help-and-support-for-eop.md)」 ヘルプおよびテクニカル サポートの入手方法について説明しています。 
     

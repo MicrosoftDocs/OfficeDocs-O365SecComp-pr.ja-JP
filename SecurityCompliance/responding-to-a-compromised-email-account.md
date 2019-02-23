@@ -8,19 +8,19 @@ ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - Strat_O365_IP
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.custom: ''
 ms.assetid: ''
 description: 侵害された Office 365 電子メール アカウントを認識して対処する方法について説明します
-ms.openlocfilehash: b10bf58aaebc46938e3962494ff30dfb1e226130
-ms.sourcegitcommit: 411713004251ee62d29b550eabea04c08a87e41f
-ms.translationtype: HT
+ms.openlocfilehash: 8d2e7f501b6e3ee73a14d4d7b3edb4c49f99d051
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25341422"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213217"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>侵害された Office 365 電子メール アカウントへの対応
 
@@ -36,7 +36,7 @@ Office 365 のメールボックス、データ、およびその他のサービ
 - 意図したユーザーまたは管理者が作成していない受信トレイ ルールの存在。このようなルールによって、自動的に不明なアドレスに電子メールが転送されたり、**メモ** フォルダー、**迷惑メール** フォルダー、または **RSS 購読**フォルダーに移動されたりする場合があります。
 - グローバル アドレス一覧内のユーザーの表示名が変更される。
 - ユーザーのメールボックスが電子メールの送信をブロックされる。
-- Microsoft Outlook または Microsoft Outlook Web App の送信済みアイテム フォルダーまたは削除済みアイテム フォルダーに "I'm stuck in London, send money" などのハッキングされたアカウント メッセージが格納される。
+- Microsoft outlook または web 上の outlook (旧称 outlook web App) の送信済みアイテムフォルダーまたは削除済みアイテムフォルダーに、"London にスタックされました。送信金額があります" などの一般的な、ハッキングされたアカウントのメッセージが含まれています。
 - 名前、電話番号、郵便番号などのめったに変更されないプロフィールが更新される。
 - 複数のパスワードの変更など、異常な資格情報の変更が要求される。
 - メールの転送が最近追加された。
@@ -49,8 +49,6 @@ Office 365 のメールボックス、データ、およびその他のサービ
     - サインインの場所
     - サインインの時刻
     - サインインの成功/失敗
-
-
 
 ## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-office-365-account-and-mailbox"></a>電子メール機能をセキュリティで保護し、侵害が疑われる Office 365 アカウントとメールボックスを復元する方法
 
@@ -72,7 +70,7 @@ Office 365 のメールボックス、データ、およびその他のサービ
 - オンプレミス ID が Office 365 とフェデレーションされている場合は、パスワードをオンプレミスで変更してから、侵害を管理者に報告する必要があります。
 
 > [!TIP]
-> 特に、管理者特権を持っているアカウントの侵害を避けるために、多要素認証 (MFA) を有効にすることを強くお勧めします。詳細については、[ここ](https://support.office.com/ja-JP/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)で確認できます。
+> 特に、管理者特権を持っているアカウントの侵害を避けるために、多要素認証 (MFA) を有効にすることを強くお勧めします。詳細については、[ここ](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)で確認できます。
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>ステップ 2 不審な電子メール転送アドレスを削除する
 1. **[Office 365 管理センター] > [アクティブなユーザー]** を開きます。
@@ -81,7 +79,7 @@ Office 365 のメールボックス、データ、およびその他のサービ
 4. 不審な転送アドレスを削除します。
 
 ### <a name="step-3-disable-any-suspicious-inbox-rules"></a>ステップ 3 不審な受信トレイ ルールを無効にする
-1. Outlook Web App (OWA) を使用して、ユーザーのメールボックスにサインインします。
+1. web 上の Outlook を使用して、ユーザーのメールボックスにサインインします。
 2. 歯車アイコンをクリックして、**[メール]** をクリックします。
 3. **[受信トレイと一括処理ルール (Inbox and sweep rules)]** をクリックして、ルールを確認します。
 4. 不審なルールを無効にするか、削除します。

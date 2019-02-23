@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 01/18/2019
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,140 +14,140 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
-description: Outlook と Outlook は、個々 のユーザーまたは組織全体のメッセージのレポート アドインを有効にする方法を説明します。
-ms.openlocfilehash: 8c061d14d11aa868567487186c5dcca534b86215
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: 個々のユーザーまたは組織全体で、outlook および outlook on the web 用のレポートメッセージアドインを有効にする方法について説明します。
+ms.openlocfilehash: 48bd8937622588bbf5a1e07b9d4341e937c5cf7f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995158"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217387"
 ---
 # <a name="enable-the-report-message-add-in"></a>レポート メッセージ アドインを有効にする
 
 ## <a name="overview"></a>概要
 
-レポート メッセージを追加で、Outlook と Outlook web 上で簡単に報告する misclassified メールは、安全なまたは悪意のあるかどうかマイクロソフトおよびその関連会社の分析のためにユーザーを使用できます。マイクロソフトでは、電子メール保護テクノロジの有効性を向上させるためにこれらの送信を使用します。さらに、 [Office 365 の高度な脅威保護](office-365-atp.md)または[Office 365 の脅威インテリジェンス](office-365-ti.md)組織を使用している場合、レポート メッセージを追加では、についての情報を確認および更新に使用できる、組織のセキュリティ チームセキュリティ ポリシーです。 
+outlook 用のレポートメッセージアドインと web 上の outlook を使用すると、ユーザーは、安全であるか悪意のある電子メールであっても、分析のために Microsoft と関連会社に対して、誤った分類されたメールを簡単に報告できます。Microsoft では、これらの送信を使用して、電子メール保護テクノロジの有効性を向上させています。さらに、組織が[office 365 Advanced Threat Protection](office-365-atp.md)または[office 365 の脅威インテリジェンス](office-365-ti.md)を使用している場合、レポートメッセージアドインにより、組織のセキュリティチームに対して、確認と更新に使用できる有用な情報が提供されます。セキュリティポリシー。 
 
-たとえば、ユーザーがフィッシング メッセージの多くを報告するいるとします。この情報には、[ダッシュ ボードのセキュリティ](security-dashboard.md)およびその他のレポート内のサーフェスが。組織のセキュリティ チームは、フィッシング詐欺対策のポリシーを更新する必要がありますを示す値として、この情報を使用できます。または、ユーザーには、多くのメッセージのレポート アドインを使用して、迷惑メールと迷惑メールとしてフラグ付けされたメッセージが報告される場合、組織のセキュリティ チームが[迷惑メール対策ポリシー](configure-the-anti-spam-policies.md)を調整する必要があります。 
+たとえば、ユーザーが大量のメッセージをフィッシングとして報告しているとします。この情報は、[セキュリティダッシュボード](security-dashboard.md)やその他のレポートに表示されます。組織のセキュリティチームは、この情報を、フィッシング対策ポリシーの更新が必要になる可能性があることを示すものとして使用できます。または、レポートメッセージアドインを使用して迷惑メールではないというフラグが付いたメッセージを多数報告している場合は、組織のセキュリティチームが[スパム対策ポリシー](configure-the-anti-spam-policies.md)を調整する必要があります。 
 
-レポート メッセージを追加では、Office 365 サブスクリプションと次の製品で動作します。
+レポートメッセージアドインは、Office 365 サブスクリプションと、次の製品で機能します。
  - Outlook on the web
  - Outlook 2013 SP1
  - Outlook 2016
  - Outlook 2016 for Mac
- - Outlook を Office 365 用リソースに含まれています。
+ - Office 365 ProPlus に含まれている Outlook
 
 > [!NOTE]
-> レポート メッセージ用のアドインの Outlook と web 上で Outlook は[Outlook 迷惑メール フィルター](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)と同じ迷惑メール、迷惑メールまたはフィッシング詐欺メールを開封するのには使用できますが、両方。レポート メッセージ用のアドインの Outlook と Outlook web Outlook 迷惑メール フィルターがユーザーのメールボックスに電子メール メッセージを整理するに対して、misclassified の電子メールについてマイクロソフトに通知します。 
+> outlook および outlook on the web 用のレポートメッセージアドインは、 [outlook 迷惑メールフィルター](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)とまったく同じではありませんが、両方を使用して、電子メールを迷惑メール、迷惑メールではないメールとしてマークしたり、フィッシングを試行したりすることができます。outlook 用のレポートメッセージアドインと web 上の outlook は、分類された電子メールの誤通知を Microsoft に通知しますが、outlook の迷惑メールフィルターを使用して、ユーザーのメールボックス内の電子メールメッセージを整理します。 
   
-個々 のユーザーの場合、[自分のメッセージのレポート アドインを有効に](#get-the-report-message-add-in-for-yourself)することができます。 
+個人ユーザーの場合は、[レポートメッセージアドインを自分自身に対して有効に](#get-the-report-message-add-in-for-yourself)することができます。 
   
-Office 365 のグローバル管理者または Exchange Online 管理者は、OAuth 認証を使用する Exchange が構成されている場合は[、レポート メッセージ用のアドインの組織を有効に](#get-and-enable-the-report-message-add-in-for-your-organization)することができます。レポート メッセージ アドインが[一元的な展開](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)で利用できるようになりました。
+Office 365 の全体管理者または exchange Online 管理者であり、exchange が OAuth 認証を使用するように構成されている場合は、[組織に対してレポートメッセージアドインを有効](#get-and-enable-the-report-message-add-in-for-your-organization)にすることができます。これで、レポートメッセージアドインが[一元展開](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)によって利用可能になりました。
     
-## <a name="get-the-report-message-add-in-for-yourself"></a>自分用の追加のレポート メッセージを取得します。
+## <a name="get-the-report-message-add-in-for-yourself"></a>自分用のレポートメッセージアドインを取得する
 
-1. [マイクロソフトの AppSource](https://appsource.microsoft.com/marketplace/apps)、検索[レポート メッセージを追加で](https://appsource.microsoft.com/product/office/wa104381180)します。
+1. [Microsoft appsource](https://appsource.microsoft.com/marketplace/apps)で、[レポートメッセージアドイン](https://appsource.microsoft.com/product/office/wa104381180)を検索します。
     
-2. 選択**を取得ここでの IT**です。<br/>![メッセージを報告する-今すぐ](media/ReportMessageGETITNOW.png)<br/> 
+2. [**今すぐ取得**] を選択します。<br/>![レポートメッセージ-今すぐ取得](media/ReportMessageGETITNOW.png)<br/> 
     
-3. 使用およびプライバシー ポリシーの条件を確認します。**続行**を選択します。 
+3. 使用条件とプライバシーポリシーを確認します。[**続行**] を選択します。 
     
-4. 作業または学校アカウント (業務用) または Microsoft アカウント (個人向け) を使用して Office 365 にサインインします。
+4. 職場または学校アカウントを使用して Office 365 にサインインします (一般法人向け)。または Microsoft アカウント (個人使用)。
     
-アドインがインストールされており後、は、次のアイコンが表示されます。 
+アドインがインストールされて有効になると、次のアイコンが表示されます。 
 
-- Outlook では、次のようなアイコンが表示されます。 <br/> ![Outlook のアイコンを追加でメッセージを報告します。](media/OutlookReportMessageIcon.png)<br/>
-- Outlook Web App (または、web 上で Outlook) では、次のように、アイコンが表示されます。<br/>![Outlook web レポート メッセージの追加のアイコンを](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
+- Outlook のアイコンは、次のように表示されます。 <br/> ![Outlook のレポートメッセージアドインアイコン](media/OutlookReportMessageIcon.png)<br/>
+- web 上の outlook (旧称 outlook web App) では、アイコンは次のようになります。<br/>![Outlook on the web レポートメッセージアドインアイコン](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
 
 > [!TIP]
-> については、次のステップとして[、レポート メッセージのアドインを使用](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)する方法です。
+> 次の手順として、[レポートメッセージアドインの使用](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)方法について説明します。
   
-## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>取得し、レポート メッセージ用のアドインの組織を有効にします。
+## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>組織のレポートメッセージアドインを取得して有効にする
 
 > [!IMPORTANT]
-> このタスクを完了するには、Office 365 のグローバル管理者またはオンラインの Exchange 管理者である必要があります。さらに、 [Exchange 要件 (アドインの展開を一元的な)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements)を参照してください詳細については OAuth 認証を使用する Exchange を構成する必要があります。 
+> このタスクを完了するには、Office 365 の全体管理者または Exchange Online 管理者である必要があります。また、詳細については、OAuth 認証を使用するように exchange を構成する必要があります。詳細については、「 [exchange の要件 (アドインの一元展開)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements)」を参照してください。 
 
-1. Microsoft 365 管理センターの[サービスの & のアドインのページ](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)に移動します。<br/>![新しい 365 管理センターでのサービスとアドインのページ](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
+1. Microsoft 365 管理センターの [[サービス & アドイン] ページ](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)に移動します。<br/>![新しい Microsoft 365 管理センターの [サービスとアドイン] ページ](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
     
-2. **アドインを配置 +** を選択します。<br/>![選択アドインを配置](media/ServicesAddIns-ChooseDeployAddIn.png)<br/> 
+2. [ **+ アドインの展開**] を選択します。<br/>![[アドインの展開] を選択する](media/ServicesAddIns-ChooseDeployAddIn.png)<br/> 
     
-3. **新しいアドイン**] 画面で情報を確認してとし、[**次**] を選択します。<br/>![新しいアドインの詳細情報](media/NewAddInScreen1.png)<br/>
+3. [**新しいアドイン**] 画面で情報を確認し、[**次へ**] を選択します。<br/>![新しいアドインの詳細](media/NewAddInScreen1.png)<br/>
     
-4. **Office ストアからアドインを追加する**にはを選択し、し、[**次**] を選択します。<br/>![新しいアドインを追加します。](media/NewAddInScreen2.png)<br/> 
+4. [ **Office ストアからアドインを追加**する] を選択し、[**次へ**] を選択します。<br/>![新しいアドインを追加する](media/NewAddInScreen2.png)<br/> 
     
-5. **レポート メッセージ**、および**レポート メッセージのアドイン**の横に、結果の一覧でを検索する場合、**追加**を選択します。<br/>![レポート メッセージを検索し、[追加](media/NewAddInScreen3.png)<br/>
+5. **レポートメッセージ**を検索し、結果の一覧で、[**レポートメッセージアドイン**] の横にある [**追加**] を選択します。<br/>![レポートメッセージを検索し、[追加] を選択します。](media/NewAddInScreen3.png)<br/>
     
-6. **レポート メッセージ**画面で、情報を確認し、[**次**] を選択します。<br/>![レポート メッセージの詳細](media/ReportMessageAdd-InNewScreen4.png)<br/>
+6. [**レポートメッセージ**] 画面で情報を確認し、[**次へ**] を選択します。<br/>![レポートメッセージの詳細](media/ReportMessageAdd-InNewScreen4.png)<br/>
 
-7. Outlook のユーザーの既定の設定を指定し、し、[**次**] を選択します。<br/>![Outlook のメッセージの既定の設定を報告します。](media/ReportMessageOptionsScreen5.png)<br/>
+7. Outlook のユーザーの既定の設定を指定し、[**次へ**] をクリックします。<br/>![Outlook の既定のレポートメッセージ設定](media/ReportMessageOptionsScreen5.png)<br/>
 
-8. メッセージのレポート アドインを取得するかを指定し、**保存**します。 <br/>![追加のレポート メッセージを取得します。](media/ReportMessageOptionsScreen6.png)<br/>
+8. レポートメッセージアドインを取得するユーザーを指定し、[**保存**] を選択します。 <br/>![レポートメッセージアドインを取得するユーザー](media/ReportMessageOptionsScreen6.png)<br/>
 
 > [!TIP]
-> [ユーザーから報告された電子メール メッセージのコピーを取得するルールの設定](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users)を推奨します。
+> [ユーザーによって報告された電子メールメッセージのコピーを取得するルールを設定することを](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users)お勧めします。
 
-アドイン (手順 7-8 の上) を設定するときに選択した内容により、組織内のユーザー[レポート メッセージの追加に](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)使用できるがあります。組織内のユーザーは、次のアイコンで表示されます。 
+アドインのセットアップ時に選択した内容に応じて (上記の手順 7-8)、組織内のユーザーが[レポートメッセージアドイン](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)を使用できるようになります。組織内のユーザーには、次のアイコンが表示されます。 
 
-- Outlook では、次のようなアイコンが表示されます。 <br/> ![Outlook 用アドインのメッセージのアイコンをレポート](media/OutlookReportMessageIcon.png)<br/>
-- Outlook Web App (または、web 上で Outlook) では、次のように、アイコンが表示されます。<br/>![Outlook アドインの Web レポートのメッセージのアイコンを](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
+- Outlook のアイコンは、次のように表示されます。 <br/> ![Outlook のレポートメッセージアドインアイコン](media/OutlookReportMessageIcon.png)<br/>
+- web 上の Outlook では、アイコンは次のようになります。<br/>![Outlook on the Web レポートメッセージアドインアイコン](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
 
 > [!TIP]
-> メッセージのレポート アドインをユーザーに通知するときに[、レポート メッセージのアドインの使用](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)へのリンクが含まれます。
+> レポートメッセージアドインについてユーザーに通知する場合は、[レポートメッセージアドインを使用](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)するためのリンクを含めます。
 
-## <a name="set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users"></a>ルールの設定、ユーザーから報告された電子メール メッセージのコピーを取得するには
+## <a name="set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users"></a>ユーザーによって報告された電子メールメッセージのコピーを取得するルールを設定する
 
 > [!IMPORTANT]
-> このタスクを実行するのには、Exchange にアクセスする権限が必要です。
+> このタスクを実行するには、Exchange Online の管理者である必要があります。
   
-ルールを設定するには、組織内のユーザーによって報告された電子メール メッセージのコピーを取得します。ダウンロードし、組織のメッセージのレポート アドインを有効にした後に行います。
+組織内のユーザーによって報告された電子メールメッセージのコピーを取得するルールを設定できます。この操作は、組織でレポートメッセージアドインをダウンロードして有効にした後に行います。
   
-1. Exchange 管理センターで、**メール フロー**を選択します\>**ルール**です。 
+1. Exchange 管理センターで、[**メールフロー** \> **ルール**] を選択します。 
     
-2. 選択**+** \> **新しい規則を作成**します。 
+2. [ **+** \> **新しいルールを作成する**] を選択します。 
     
-3. **[名前**] ボックスで、提出書類などの名前を入力します。
+3. [**名前**] ボックスに、「送信」などの名前を入力します。
     
-4. **場合にこのルールを適用**] ボックスの一覧で、**受信者のアドレスが含まれています...** を選択します。 
+4. [**このルールを適用する条件**] ボックスの一覧で、[**受信者のアドレス**を選択してください...] を選択します。 
     
-5. **単語または語句を指定する**画面で、追加`junk@office365.microsoft.com`と`phish@office365.microsoft.com`、し、 **[ok]** を選択します。<br/>![ルールの迷惑メールおよびフィッシングの電子メール アドレスを指定します。](media/018c1833-f336-4333-a45c-f2e8b75cd698.png)<br/>
+5. [**単語または語句の指定**] 画面`junk@office365.microsoft.com`で`phish@office365.microsoft.com`、とを追加し、[ **OK]** を選択します。<br/>![ルールの迷惑メールアドレスとフィッシングメールアドレスを指定する](media/018c1833-f336-4333-a45c-f2e8b75cd698.png)<br/>
   
-6. **. 次の操作**の一覧の [ **、メッセージの [bcc] に...**。 
+6. [**実行する処理...** ] の一覧で、[**メッセージの Bcc**] を選択します。 
     
-7. グローバル管理者、セキュリティ管理者は、またはセキュリティ リーダーいる人が、マイクロソフトに報告する各電子メール メッセージのコピーを受信する必要があり、[ **ok]** を追加します。<br/>![報告された各メッセージのコピーを受信するのにはグローバルまたはセキュリティ管理者を追加します。](media/a91ab9d1-66f2-4a2e-9dc1-f9f81a2298ad.png)<br/>
+7. ユーザーが Microsoft に報告する各電子メールメッセージのコピーを受信する必要のある全体管理者、セキュリティ管理者、およびセキュリティ閲覧者を追加し、[ **OK]** を選択します。<br/>![グローバルまたはセキュリティ管理者を追加して、報告された各メッセージのコピーを受信する](media/a91ab9d1-66f2-4a2e-9dc1-f9f81a2298ad.png)<br/>
   
-8. **監査の重大度レベルでは、この規則**を選択し、 **[中]** を選択します。 
+8. [**このルールを次の重大度レベルで監査**する] を選択し、[**中**] を選択します。 
     
-9. [**この規則のモードの選択**を**強制する**を選択します。<br/>![報告された各メッセージのコピーを取得するルールを設定します。](media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)<br/>
+9. [**このルールのモードの選択**] で、[**強制**] を選択します。<br/>![レポートされた各メッセージのコピーを取得するルールを設定する](media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)<br/>
   
 10. [**保存**] を選択します。 
     
-配置では、このルールが他の組織でアドインを使用して、レポート メッセージ、電子メール メッセージを報告するたびに、グローバル管理者、セキュリティ管理者、またはセキュリティ リーダーが表示されますがメッセージのコピー。この情報を使用して、セットアップまたは[Office 365 の ATP の安全なリンク](atp-safe-links.md)ポリシー、または[スパム対策](anti-spam-protection.md)の設定などのポリシーを調整することができます。 
+このルールが設定されている場合、組織内のユーザーがレポートメッセージアドインを使用して電子メールメッセージを報告するたびに、全体管理者、セキュリティ管理者、セキュリティリーダがそのメッセージのコピーを受け取ります。この情報を使用すると、 [Office 365 の ATP の安全なリンク](atp-safe-links.md)ポリシー、または[スパム対策](anti-spam-protection.md)の設定などのポリシーを設定または調整することができます。 
 
-## <a name="learn-how-to-use-the-report-message-add-in"></a>レポート メッセージを追加で使用する方法を学習します。
+## <a name="learn-how-to-use-the-report-message-add-in"></a>レポートメッセージアドインの使用方法について説明します。
 
-[レポート メッセージの追加の使用](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)を参照してください。
+「[レポートメッセージアドインを使用する](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)」を参照してください。
 
-## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>確認またはレポート メッセージを追加の設定を編集します。
+## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>レポートメッセージアドインの設定を確認または編集する
 
-確認し、レポート メッセージを追加で、 [& [アドイン サービス] ページ](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)の既定の設定を編集できます。 
+[[サービス & アドイン] ページ](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)で、レポートメッセージアドインの既定の設定を確認および編集できます。 
 
 > [!IMPORTANT]
-> このタスクを完了するには、Office 365 のグローバル管理者またはオンラインの Exchange 管理者である必要があります。
+> このタスクを完了するには、Office 365 の全体管理者または Exchange Online 管理者である必要があります。
     
-1. Microsoft 365 管理センターの[サービスの & のアドインのページ](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)に移動します。<br/>![新しい 365 管理センターでのサービスとアドインのページ](media/ServicesAddInsPageNewM365AdminCenter.png)<br/>
+1. Microsoft 365 管理センターの [[サービス & アドイン] ページ](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)に移動します。<br/>![新しい Microsoft 365 管理センターの [サービスとアドイン] ページ](media/ServicesAddInsPageNewM365AdminCenter.png)<br/>
 
-2. 検索し、レポート メッセージを追加で選択します。<br/>![検索し、レポート メッセージを追加で選択](media/FindReportMessageAddIn.png)<br/> 
+2. レポートメッセージアドインを検索して選択します。<br/>![レポートメッセージアドインを検索して選択する](media/FindReportMessageAddIn.png)<br/> 
     
-3. レポート メッセージ画面で、確認し、組織の必要に応じて設定を編集します。<br/>![レポート メッセージのアドインの設定](media/EditReportMessageAddIn.png)<br/> 
+3. [レポートメッセージ] 画面で、組織に合わせて設定を確認して編集します。<br/>![レポートメッセージアドインの設定](media/EditReportMessageAddIn.png)<br/> 
   
 ## <a name="related-topics"></a>関連項目
 
 [迷惑メール報告アドインを使用する](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
   
-[セキュリティで電子メールのセキュリティ レポートを表示する&amp;コンプライアンス センター](view-email-security-reports.md)
+[セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する](view-email-security-reports.md)
 
-[Office 365 の高度な脅威保護のためのレポートを表示します。](view-reports-for-atp.md)
+[Office 365 Advanced Threat Protection のレポートを表示する](view-reports-for-atp.md)
 
-[エクスプ ローラーを使用して、セキュリティで&amp;コンプライアンス センター](use-explorer-in-security-and-compliance.md)
+[セキュリティ&amp; /コンプライアンスセンターのエクスプローラーを使用する](use-explorer-in-security-and-compliance.md)
   
 

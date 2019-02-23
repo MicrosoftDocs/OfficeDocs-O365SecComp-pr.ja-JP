@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '概要: Azure Active Directory での分離とアクセス制御のしくみについて説明します。'
-ms.openlocfilehash: 01103361a084d50adbc6c0a8351d9af8311a39fd
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 45b48aef93b9cb146440de7f41f23a493e8565df
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090509"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220187"
 ---
 # <a name="isolation-and-access-control-in-azure-active-directory"></a>Azure Active Directory での分離とアクセス制御
 

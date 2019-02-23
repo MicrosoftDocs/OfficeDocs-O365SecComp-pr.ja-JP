@@ -6,89 +6,89 @@ manager: laurawi
 ms.date: 4/17/2018
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: O365 データおよびサービスへのアクセスを保護するためのランディング ・ ページ
-ms.openlocfilehash: 652a14c5f1f29187aeac51355e7a924c9378806f
-ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
+description: O365 データおよびサービスへのアクセスを保護するためのランディングページ
+ms.openlocfilehash: 95933c5a7bc95f9fd70e8f3470055b57193971d4
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24011279"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213537"
 ---
 # <a name="protect-access-to-data-and-services-in-office-365"></a>Office 365 でデータやサービスへのアクセスを保護する
 
-Office 365 のデータとサービスへのアクセスを保護することは、サイバー攻撃に対する防御と、データの損失から保護するために重要です。環境内での他の SaaS アプリケーションに同レベルの保護を適用することができ、Azure Active Directory アプリケーション プロキシのオンプレミス アプリケーションにも公開します。
+Office 365 のデータおよびサービスへのアクセスを保護することは、サイバー攻撃を防御し、データ損失を防ぐために不可欠です。同じ保護を、環境内の他の SaaS アプリケーション、および Azure Active Directory アプリケーションプロキシで公開されているオンプレミスアプリケーションにも適用できます。
   
-## <a name="step-1-review-recommendations"></a>手順 1: 推奨事項の検討
+## <a name="step-1-review-recommendations"></a>手順 1: 推奨事項を確認する
 
 Office 365、他の SaaS サービス、および Azure AD アプリケーション プロキシで公開したオンプレミス アプリケーションにアクセスする ID とデバイスを保護するために推奨される機能。
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [その他の言語](https://www.microsoft.com/download/details.aspx?id=55032)
   
-## <a name="step-2-configure-mfa"></a>MFA を構成する手順 2。
+## <a name="step-2-configure-mfa"></a>手順 2: MFA を構成する
 
-MFA の向きを自分で、お客様に適したバージョンを決定するこれらのリソースを使用し、計画および展開 MFA 環境に。
+これらのリソースを使用して、mfa を確認し、適切なバージョンを決定して、環境に対して mfa を計画して展開します。
   
-- [Azure の多要素認証とは何ですか。](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication)
+- [Azure 多要素認証とは](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication)
     
-- [Azure の多要素認証ソリューションを選択してください。](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started)
+- [Azure 多要素認証ソリューションを選択する](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started)
     
-- [Azure の多要素認証を取得する方法](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-versions-plans)
+- [Azure 多要素認証を取得する方法](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-versions-plans)
     
-- [Office 365 の展開の多要素認証の計画](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+- [Office 365 の展開で多要素認証を計画する](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
     
-- [Office 365 のユーザーに対して多要素認証を設定します](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+- [Office 365 の多要素認証を設定する](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
     
-- [MFA、クラウドまたはオンプレミスの展開を計画します。](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started)
+- [MFA、クラウド、またはオンプレミスを展開する場所を計画する](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started)
     
-- [Azure の多元的な認証設定を構成します。](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-whats-next)
+- [Azure 多要素認証の設定を構成する](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-whats-next)
     
-## <a name="step-3-enforce-mfa-with-azure-ad-conditional-access-rules"></a>手順 3: Azure AD の条件付きのアクセス ルールで MFA を適用します。
+## <a name="step-3-enforce-mfa-with-azure-ad-conditional-access-rules"></a>手順 3: Azure AD 条件付きアクセスルールで MFA を適用する
 
-Azure AD の MFA を使用する場合は、Office 365 と、環境内の他の SaaS アプリケーションへのアクセスに MFA を必要とする条件付きのアクセス ルールを作成します。
+Azure AD MFA を使用している場合は、環境内の Office 365 およびその他の SaaS アプリへのアクセスに MFA を必要とする条件付きアクセスルールを作成します。
   
-- [Azure Active Directory 内の条件付きアクセス](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+- [Azure Active Directory での条件付きアクセス](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
     
-## <a name="step-4-configure-privileged-access-management"></a>手順 4: アクセス権限の管理を構成します。
+## <a name="step-4-configure-privileged-access-management"></a>手順 4: 特権アクセス管理を構成する
 
-管理者アクセス権を Office 365 の管理により、きめ細かなアクセス特権の管理タスクを制御します。 機密性の高いデータへのアクセスを位置または重要な構成設定へのアクセス権を持つ既存の権限を持つ管理者アカウントを使用するための侵害から組織を保護するために役立ちます。
+特権アクセス管理を使用すると、Office 365 の特権のある管理タスクに対して詳細なアクセス制御を行うことができます。 機密データへの継続的なアクセス、または重要な構成設定へのアクセスを備えた既存の特権のある管理者アカウントを使用する可能性がある侵害から組織を保護するのに役立ちます。
 
-- [特権の概要アクセス管理](privileged-access-management-overview.md)
-- [アクセス権限の管理を構成します。](privileged-access-management-configuration.md)
+- [特権アクセス管理の概要](privileged-access-management-overview.md)
+- [特権アクセス管理を構成する](privileged-access-management-configuration.md)
 
-## <a name="step-5-configure-sharepoint-device-access-policies"></a>手順 5: SharePoint のデバイスのアクセス ポリシーを構成します。
+## <a name="step-5-configure-sharepoint-device-access-policies"></a>手順 5: SharePoint デバイスアクセスポリシーを構成する
 
-SharePoint Online およびビジネスのための OneDrive のデバイスのアクセス ポリシーは、機密性の高い、分類、および規制対象のデータの保護に適しています。準備中は、デバイスのアクセス ポリシーを個々 のチーム サイトに適用する機能です。
+機密、分類、および規制されたデータを保護するには、SharePoint Online と OneDrive for business のデバイスアクセスポリシーをお勧めします。近日中に、デバイスアクセスポリシーを個々のチームサイトに適用できるようになります。
   
 - [非管理対象デバイスからのアクセスを制御する](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&amp;rs=en-US&amp;ad=US)
     
-## <a name="step-6-configure-app-and-data-protection-for-devices"></a>手順 6: デバイス用のアプリケーションとデータの保護を構成します。
+## <a name="step-6-configure-app-and-data-protection-for-devices"></a>手順 6: デバイスのアプリとデータ保護を構成する
 
-モバイル デバイス管理のためのデバイスを登録するかどうかに関係なく、モバイル デバイス上のアプリケーションを管理することができます。これは、メールやファイルなど、Office 365 内のデータの偶発的な漏えいから保護します。
+モバイルデバイス管理のためにデバイスが登録されているかどうかに関係なく、モバイルデバイス上のアプリケーションを管理できます。これにより、メールやファイルを含む Office 365 のデータの偶発的な漏洩から保護されます。
   
-- IOS および Android: [Microsoft Intune とアプリケーションの保護ポリシーを使用してアプリケーション データを保護](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+- iOS および Android の場合: [Microsoft Intune でアプリ保護ポリシーを使用してアプリデータを保護する](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
     
-Windows 10、偶発的なデータ漏洩を防ぐために Windows の情報の保護 (WIP) を構成します。
+windows 10 では、誤ってデータが漏洩しないように windows 情報保護 (WIP) を構成します。
   
-- 管理下のデバイス: [Microsoft Intune の Azure ポータルを使用した登録ポリシーを使用して Windows の情報の保護 (WIP) を作成します。](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune-azure)
+- 管理対象デバイスの場合: [Microsoft Intune の Azure portal を使用して登録ポリシーで Windows 情報保護 (WIP) を作成する](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune-azure)
     
-- 管理されていないデバイスの:[作成 Intune の Windows 情報保護 (WIP) アプリケーションの保護ポリシーを展開し、](https://docs.microsoft.com/intune/windows-information-protection-policy-create)
+- 管理されていないデバイスの場合: [Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成および展開](https://docs.microsoft.com/intune/windows-information-protection-policy-create)する
     
-## <a name="step-7-manage-devices-with-intune"></a>Intune でデバイスを管理する手順 7。
+## <a name="step-7-manage-devices-with-intune"></a>手順 7: Intune を使用してデバイスを管理する
 
-デバイスを管理することは正常な準拠、環境内のリソースへのアクセスを許可する前にことを確認できます。デバイス ベースの条件付きのアクセス ルールにより、攻撃者にアクセスできません、リソース管理されていないデバイスからことを確認します。
+デバイスを管理することにより、環境内のリソースへのアクセスを許可する前に、それらを正常かつ準拠していることを確認できます。デバイスベースの条件付きアクセスルールは、攻撃者が管理されていないデバイスからリソースにアクセスできないようにするのに役立ちます。
   
-- [Intune で管理するためのデバイスを登録します。](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
+- [Intune で管理するためのデバイスの登録](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
     
-## <a name="step-8-configure-additional-intune-policies-and-conditional-access-rules-for-your-environment"></a>Intune ポリシーを追加し、環境の条件付きのアクセス ルールを構成する手順 8。
+## <a name="step-8-configure-additional-intune-policies-and-conditional-access-rules-for-your-environment"></a>手順 8: 環境に対して追加の Intune ポリシーおよび条件付きアクセスルールを構成する
 
-推奨される構成が企業規模や高度なアクセス セキュリティのシナリオの開始点としてこれらを使用します。
+これらの推奨される構成は、エンタープライズ規模または洗練されたアクセスセキュリティシナリオの開始点として使用します。
   
-- [セキュリティで保護された電子メール ポリシーと構成](https://docs.microsoft.com/azure/active-directory/secure-email-introduction)
+- [セキュリティで保護された電子メールポリシーと構成](https://docs.microsoft.com/azure/active-directory/secure-email-introduction)
     
 

@@ -6,140 +6,140 @@ manager: laurawi
 ms.date: 02/11/2019
 ms.audience: ITPro
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
-description: Office 365 で新しいメッセージの保護機能のしくみについて質問があるでしょうか。ここで回答を確認します。
-ms.openlocfilehash: 8774d5e11bbd5b240cb1984e6d8b67b98bfa856e
-ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
+description: Office 365 の新しいメッセージ保護機能がどのように機能するかについての質問がありますか。ここで回答を確認してください。
+ms.openlocfilehash: 651d3f5953f0a6864259ed3a0c8ecde79f40d631
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29890038"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217117"
 ---
 # <a name="office-365-message-encryption-faq"></a>Office 365 Message Encryption に関する FAQ
 
-Office 365 で新しいメッセージの保護機能のしくみについて質問があるでしょうか。ここで回答を確認します。またを見て[Azure の情報保護のデータの保護についてご質問がよく寄せられる](https://docs.microsoft.com/information-protection/get-started/faqs-rms)Azure の著作権管理、データ保護サービスに関する質問への回答の Azure の情報保護の。
+Office 365 の新しいメッセージ保護機能がどのように機能するかについての質問がありますか。ここで回答を確認してください。また、azure information protection でのデータ保護サービスの azure Rights Management に関する質問に対する回答については、「 [azure information protection でのデータ保護に関するよく寄せられる質問](https://docs.microsoft.com/information-protection/get-started/faqs-rms)」を参照してください。
 
 ||
 |:-----|
-|この資料は、Office 365 のメッセージの暗号化についての記事の大規模な一連の一部です。この資料は、管理者および ITPros。だけを行う場合、暗号化されたメッセージを送受信する情報は[Office 365 メッセージの暗号化 (ホーム)](ome.md)内のアーティクルの一覧を参照してくださいし、お客様のニーズに最も適した記事を検索します。 |
+|この記事は、Office 365 メッセージの暗号化についてのより大きな一連の記事の一部です。この記事は、管理者および it 担当者を対象としています。暗号化されたメッセージの送信または受信に関する情報をお探しの場合は、「 [Office 365 message Encryption (OME)](ome.md) 」の記事の一覧を参照し、ニーズに最も適した記事を見つけてください。 |
 ||
   
-## <a name="what-is-office-365-message-encryption-ome"></a>Office 365 メッセージの暗号化 (ホーム) とは何ですか。
+## <a name="what-is-office-365-message-encryption-ome"></a>Office 365 メッセージの暗号化 (OME) とは
 
-ホームでは、電子メールの暗号化と権限管理の機能を結合します。権限管理機能は、Azure の情報保護が導入されています。
+OME は、電子メールの暗号化と権限の管理機能を統合します。権限管理機能は、Azure Information Protection によって処理されます。
   
-## <a name="who-can-use-ome"></a>ホームを使用していることができますか。
+## <a name="who-can-use-ome"></a>OME を使用できるユーザー
 
-ホームの新機能を使用するには次の条件。
+OME の新機能は、次の条件下で使用できます。
   
-- 場合は Office 365 の Exchange Online のホームまたは IRM を設定することことはありませんが。
+- Office 365 で OME または IRM を Exchange Online 用にセットアップしたことがない場合。
     
-- ホームと IRM のように設定した場合は、Azure の情報保護と Azure の権限の管理サービスを使用している場合にこの手順を使用できます。
+- OME と IRM をセットアップしている場合は、azure Information Protection から azure Rights Management サービスを使用している場合は、次の手順を使用できます。
     
-- 使用する場合 Exchange Online では、Active Directory の権限管理サービス (AD RMS)、これらの新機能を直ちに有効にできません。代わりに、する必要があります[Azure の情報保護に AD RMS を移行](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)する最初にします。移行が終了したら、ホーム正常に設定することができます。 
+- Active Directory Rights Management サービス (AD RMS) を使用して Exchange Online を使用している場合、これらの新機能をすぐに有効にすることはできません。代わりに、まず[AD RMS を Azure Information Protection に移行](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)する必要があります。移行が完了したら、OME を正常にセットアップできます。 
     
-    引き続き使用する場合は、オンプレミス AD RMS Exchange 情報の保護を Azure に移行するのではなく、オンラインにすることはできませんこれらの新機能を使用します。
+    Azure Information Protection に移行するのではなく、Exchange Online でオンプレミスの AD RMS を引き続き使用することを選択した場合、これらの新機能を使用することはできません。
     
-## <a name="what-subscriptions-do-i-need-to-use-the-new-ome-capabilities"></a>新しいホーム機能を使用する必要があるどのようなサブスクリプションをしますか。
+## <a name="what-subscriptions-do-i-need-to-use-the-new-ome-capabilities"></a>新しい OME 機能を使用するために必要なサブスクリプションは何ですか。
 
-ホームの新機能を使用するには、次のプランのいずれかが必要です。
+新しい OME 機能を使用するには、次のプランのいずれかが必要です。
   
-- Office 365 の Office 365 エンタープライズ E3 と E5、Microsoft エンタープライズ E3 と E5、Microsoft 365 のビジネス、Office 365 の A1、A3、および A5、および Office 365 の政府第 3 世代と G5 の一部としてメッセージの暗号化が提供されます。お客様では、Azure 情報保護により、新しい保護機能を表示するのには追加のライセンスは必要ありません。 
+- office 365 メッセージの暗号化は、office 365 Enterprise e3 および e5、microsoft Enterprise e3 および e5、microsoft 365 Business、office 365 A1、A3、A5、および Office 365 Government G3 および G5 の一部として提供されます。お客様は、Azure Information protection によって提供される新しい保護機能を利用するために追加のライセンスを必要としません。 
     
-- Azure 情報保護計画する場合は 1 次が新しい Office 365 のメッセージの暗号化機能を受信する計画を追加することも: Exchange オンライン計画 1、Exchange オンライン計画 2、Office 365 の F1、Office 365 の業務に関する重要事項、Office 365 のビジネス プレミアム、またはOffice 365 エンタープライズ E1。
+- また、次のプランに Azure Information Protection Plan 1 を追加して、新しい Office 365 メッセージの暗号化機能を受け取ることができます。 exchange online プラン1、exchange online プラン2、office 365 F1、office 365 business Essentials、office 365 business Premium、またはOffice 365 Enterprise E1
     
-- 各ユーザーが Office 365 のメッセージの暗号化のメリットは、この機能によってカバーされるライセンスを取得する必要があります。
+- Office 365 の各ユーザー利点を活用するには、この機能の対象となるライセンスが必要です。
     
-- 完全なリストについては、Office 365 のメッセージの暗号化の[Exchange Online のサービスの説明](https://technet.microsoft.com/library/exchange-online-service-description.aspx)を参照してください。 
+- 完全なリストについては、「 [Exchange Online サービスの説明](https://technet.microsoft.com/library/exchange-online-service-description.aspx)」の「Office 365 Message Encryption」を参照してください。 
     
-## <a name="can-i-use-exchange-online-with-bring-your-own-key-byok-in-azure-information-protection"></a>使用できる Exchange Online で、Azure の情報保護の独自のキー (BYOK) を表示しますか?
+## <a name="can-i-use-exchange-online-with-bring-your-own-key-byok-in-azure-information-protection"></a>Exchange Online を Azure Information Protection に独自のキーを取り込むことができますか (byok)。
 
-うん！ホームを設定する前に BYOK を設定する手順を完了することをお勧めします。
+うん！Microsoft では、OME を設定する前に、[ok] を設定する手順を完了することをお勧めします。
   
-BYOK の詳細については、[計画と Azure の情報保護のテナントのキーを実装する](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key)を参照してください。
+byok の詳細については、「 [Azure information Protection のテナントキーを計画および実装する](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key)」を参照してください。
   
-## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>ホームと Azure の情報保護と BYOK を変更するマイクロソフトのアプローチ令状などのサード パーティのデータ要求にでしょうか。
+## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>「Azure Information Protection を使用して OME と byok を実行する」では、subpoenas などのサードパーティのデータ要求に対する Microsoft のアプローチを変更します。
 
-違います。提供し、Azure の情報の保護からの BYOK と呼ばれる独自の暗号化キーを制御するには、ホームおよびオプションは、法律の執行令状への応答には設計されていません。Azure の情報を保護するための BYOK で、ホームは、お客様のコンプライアンスを重視した設計されています。非常に真剣に、マイクロソフトでは顧客データの要求をサード ・ パーティ製です。クラウド ・ サービス ・ プロバイダーとして、私たちが顧客データのプライバシー保護のため推奨常になりました。令状を取得して、イベントには常にターゲットを変更しようサード ・ パーティ情報の取得をお客様に。(Brad Smith のブログを参照してください:[政府のスヌーピング (のぞき見) から顧客データの保護](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/))。受信要求の詳細な情報を定期的に公開します。サード ・ パーティ製のデータ要求の詳細については、マイクロソフトのセキュリティ センターで[政府や顧客データにアクセスするための法律執行の要求への応答](https://www.microsoft.com/en-us/trustcenter/privacy/govt-requests-for-data)を参照してください。また、漏えいのお客様で「データ」[オンライン サービス条件 (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)を参照してください。
+違います。OME と、Azure Information Protection からの独自の暗号化キーを提供および制御するオプションは、法的執行者 subpoenas に応答するようには設計されていませんでした。Azure Information Protection の OME では、コンプライアンスを重視したお客様を対象として設計されています。Microsoft は、お客様のデータに関するサードパーティの要求を非常に真剣に行います。クラウドサービスプロバイダーとして、お客様のデータのプライバシーを常に支持しています。召喚を受け取った場合は、常にお客様にサードパーティをリダイレクトして、情報を入手してください。(官庁のブログ: 「[お客様のデータを政府から保護](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)する」を参照してください)。受信する要求の詳細情報を定期的に公開しています。サードパーティのデータ要求の詳細については、「Microsoft Trust Center で[顧客データにアクセスするための政府機関および司法執行機関への対応](https://www.microsoft.com/en-us/trustcenter/privacy/govt-requests-for-data)」を参照してください。また、[オンラインサービス利用規約 (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)の「顧客データの開示」を参照してください。
   
-## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>従来の Office 365 メッセージの暗号化 (ホーム) および情報権利管理 (IRM) 機能にこの機能が関連するはどのようにでしょうか。
+## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>この機能は、従来の Office 365 メッセージの暗号化 (OME) と Information Rights Management (IRM) の機能に関連しています。
 
-Office 365 のメッセージの暗号化のための新しい機能は、既存の IRM と従来のホーム ソリューションの発展させたものです。次の表は、詳細情報を提供します。
+Office 365 の新しいメッセージの暗号化機能は、既存の IRM および従来の OME ソリューションを進化させることができます。詳細については、次の表を参照してください。
   
-**従来のホーム、IRM では、ホームの新機能の比較**
+**従来の OME、IRM、および新しい OME 機能の比較**
 
-|**機能**|**ホームの以前のバージョン**|**IRM**|**ホームの新機能**|
+|**機能**|**以前のバージョンの OME**|**IRM**|**OME の新機能**|
 |:-----|:-----|:-----|:-----|
-|**暗号化された電子メールを送信します。**|Exchange メール フロー ルールによってのみ|エンドユーザーが Outlook の PC、Mac 用の Outlook または Outlook は web 上から行うまたは Exchange からのメール フロー ルール|エンドユーザーが Outlook の PC、Mac 用の Outlook または Outlook は web 上から行うまたはメール フロー ルールを使用|
-|**アクセス権管理**|-|転送不可のオプションとカスタム テンプレートの操作を行います|転送不可のオプション、暗号化のみのオプション、既定値、およびカスタム テンプレートの操作を行います|
-|**受信者の種類をサポート**|外部受信者のみ|内部の受信者のみ|内部および外部の受信者|
-|**受信者の経験**|外部の受信者は、ダウンロードし、ブラウザーで開かれているにモバイル アプリケーションをダウンロード、html 形式のメッセージを受信しました。|のみ、内部の受信者は、PC の Outlook、Outlook for Mac、および web 上の Outlook で暗号化された電子メールを受け取りました。|、IOS 用または web ポータルでは、同じ Office 365 組織または任意の Office 365 にするかどうかにかかわらず、内部および外部の受信者が PC の Outlook、Outlook for Mac、web 上で Outlook、Android では、Outlook と Outlook で電子メールを受信します。組織です。ホーム ポータルには、個別のダウンロードは不要です。|
-|**独自のキーのサポートを提供します。**|使用不可|使用不可| BYOK のサポート|
+|**暗号化された電子メールの送信**|Exchange メールフロールールを使用した場合のみ|エンドユーザーが outlook for PC、outlook for Mac、または outlook on the web から開始しました。または Exchange メールフロールールを介して|エンドユーザーが outlook for PC、outlook for Mac、または outlook on the web から開始しました。またはメールフロールールによって|
+|**アクセス権管理**|-|オプションとカスタムテンプレートを転送しない|転送不可オプション、暗号化のみオプション、既定およびカスタムテンプレート|
+|**サポートされている受信者の種類**|外部の受信者のみ|内部受信者のみ|内部および外部の受信者|
+|**受信者の利便性**|外部の受信者がブラウザーまたはダウンロードしたモバイルアプリでダウンロードして開く HTML メッセージを受信しました。|内部の受信者は、outlook for PC、outlook for Mac、および outlook on the web で暗号化された電子メールのみを受信しました。|内部および外部の受信者は、outlook for PC、outlook for Mac、outlook on the web、outlook for Android、および iOS 用の outlook、または web ポータルで、同じ office 365 組織または office 365 のどちらにあるかに関係なく、電子メールを受信します。機関.OME ポータルには、個別にダウンロードする必要はありません。|
+|**独自のキーサポートを提供する**|使用不可|使用不可| byok サポート|
 
-## <a name="how-do-i-enable-the-new-ome-capabilities-for-my-organization"></a>自分の所属組織のホームの新機能を有効する方法
+## <a name="how-do-i-enable-the-new-ome-capabilities-for-my-organization"></a>組織のために新しい OME 機能を有効にするにはどうすればよいですか?
 
-[新しい Office 365 のメッセージの暗号化機能の設定](set-up-new-message-encryption-capabilities.md)を参照してください。
+「 [Office の新しい365メッセージの暗号化機能をセットアップ](set-up-new-message-encryption-capabilities.md)する」を参照してください。
   
-## <a name="will-the-previous-version-of-ome-be-deprecated"></a>ホームの以前のバージョンは推奨されていませんか。
+## <a name="will-the-previous-version-of-ome-be-deprecated"></a>以前のバージョンの OME は廃止されますか。
 
-ホームの以前のバージョンを使用することができますが、この時点でない推奨されません。ただし、強くお勧め、新規あるいは強化されたホーム ソリューションを使用する組織です。ホームを配置していないお客様は、ホームの以前のバージョンの新しい展開を設定できません。
+OME の以前のバージョンを引き続き使用することはできますが、この時点では廃止されることはありません。ただし、新しい改良された OME ソリューションを使用することを組織に強くお勧めします。OME をまだ展開していないお客様は、OME の以前のバージョンの新しい展開をセットアップすることはできません。
   
-## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>組織が Active Directory の権限の管理を使用して、この機能を使用できますか。
+## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>組織では Active Directory Rights Management を使用していますが、この機能を使用することはできますか?
 
-違います。使用する場合 Exchange Online では、Active Directory の権限管理サービス (AD RMS)、これらの新機能を直ちに有効にできません。代わりに、する必要があります[Azure の情報保護に AD RMS を移行](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)する最初にします。 
+違います。Active Directory Rights Management サービス (AD RMS) を使用して Exchange Online を使用している場合、これらの新機能をすぐに有効にすることはできません。代わりに、まず[AD RMS を Azure Information Protection に移行](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)する必要があります。 
   
-## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>自組織は、Exchange ハイブリッド展開をします。この機能を使用することができますか。
+## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>自分の組織では、Exchange ハイブリッド展開を行っています。この機能を使用できますか。
 
-オンプレミス ユーザーがオンラインの Exchange のメール フロー ルールを使用して、暗号化されたメールを送信できます。これを行うには、Exchange のオンラインを介して電子メールをルーティングする必要があります。詳細についてを参照してください[第 2 部: メールをメール サーバーから Office 365 へのフローを構成する](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)です。
+オンプレミスのユーザーは、Exchange Online のメールフロールールを使用して、暗号化されたメールを送信できます。そのためには、Exchange Online 経由で電子メールをルーティングする必要があります。詳細については、「[パート 2: 電子メールサーバーから Office 365 にメールが流れるように構成する](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)」を参照してください。
   
-## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>ホームの暗号化されたメッセージを作成するために使用する必要があるどのような電子メール クライアントをしますか。保護されたメッセージを送信するためにどのようなアプリケーションがサポートされてでしょうか。
+## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>OME 暗号化メッセージを作成するために、どのような電子メールクライアントを使用する必要がありますか。保護されたメッセージの送信に対してサポートされているアプリケーション
 
-Outlook の 2016年と PC と Mac 用の Outlook 2013 および web 上の Outlook からは、保護されたメッセージを作成できます。
+保護されたメッセージは、outlook 2016、outlook 2013 for PC および Mac、および outlook on the web から作成できます。
   
-## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>読み取りおよび保護された電子メールに返信するのには、どのような電子メール クライアントがサポートされているでしょうか。
+## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>保護された電子メールの読み取りと応答をサポートする電子メールクライアント
 
-Office 365 ユーザーの場合は、Outlook の PC と Mac (2013 および 2016)、web 上の Outlook および Outlook モバイル (Android と iOS) からの応答を読み書きできます。組織で許可される場合にも、iOS のネイティブのメール クライアントを使用できます。以外の Office 365 ユーザーの場合は、読み取りし、web ブラウザーを通じて web 上で暗号化されたメッセージに返信できます。
+Office 365 ユーザーの場合は、PC および Mac 用の outlook (2013 と 2016)、outlook on the web、および outlook mobile (Android および iOS) の読み取りと応答が可能です。組織で許可されている場合は、iOS ネイティブメールクライアントを使用することもできます。Office 365 以外のユーザーの場合は、web ブラウザーを使用して、web 上で暗号化されたメッセージの読み取りと返信を行うことができます。
   
-## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>保護された電子メールの添付ファイルとしては、どのようなファイルの種類がサポートされているでしょうか。添付ファイルは保護された電子メールに関連付けられている保護ポリシーを継承しますか。
+## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>保護された電子メールの添付ファイルとしてサポートされているファイルの種類は何ですか。添付ファイルは、保護された電子メールに関連付けられている保護ポリシーを継承しますか?
 
-上でのみ、ファイルの形式で述べた[ここで](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types)保護ポリシーが適用されますが、保護されたメールの場合は、あらゆる種類のファイルを添付できます。 
+保護されたメールには任意のファイルの種類を添付できますが、保護ポリシーは、[ここ](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types)に記載されているファイル形式でのみ適用されます。 
   
-Word、Excel、または PowerPoint ファイルなど、ファイル形式がサポートされている場合、ファイルは常に保護、受信者が添付ファイルのダウンロードが完了した後でも。たとえば、添付ファイルは転送不可で保護されていると、元の受信者がダウンロードされ、新しい受信者に添付ファイルを転送、新しい受信者されません保護されたファイルを開くことができません。
+ファイル形式がサポートされている場合 (Word、Excel、PowerPoint ファイルなど)、受信者によって添付ファイルがダウンロードされた後も、ファイルは常に保護されます。たとえば、添付ファイルが [転送不可] で保護され、元の受信者がその添付ファイルを新しい受信者にダウンロードして転送する場合、新しい受信者は保護されたファイルを開くことができません。
   
-## <a name="are-pdf-file-attachments-supported"></a>PDF ファイルの添付ファイルはサポートされますか。
+## <a name="are-pdf-file-attachments-supported"></a>PDF ファイル添付はサポートされていますか?
 
-保護されたメッセージには、PDF ファイルを添付する場合、メッセージ自体は保護されているが、追加の保護は適用されません、PDF ファイルを受信者が受信した後。つまりに限って使用するように名前を付けて保存、転送、コピー、および PDF ファイルを印刷します。
+保護されたメッセージに pdf ファイルを添付すると、メッセージ自体は保護されますが、受信者が pdf ファイルを受信した後は、追加の保護は pdf ファイルに適用されません。これは、受信者が PDF ファイルを保存、転送、コピー、および印刷できることを意味します。
   
-## <a name="are-onedrive-for-business-attachments-supported"></a>OneDrive をビジネスの添付ファイルがサポートされているのでしょうか。
+## <a name="are-onedrive-for-business-attachments-supported"></a>OneDrive for business の添付ファイルはサポートされていますか?
 
-まだです。ビジネスの添付ファイルの OneDrive はサポートされていませんし、エンド ・ ユーザーは、ビジネスの添付ファイルのためのクラウド OneDrive を含むメールを暗号化できません。
+まだです。onedrive for business の添付ファイルはサポートされておらず、エンドユーザーは、クラウド onedrive for business の添付ファイルを含むメールを暗号化することはできません。
   
-## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>できますに自動的にメッセージの暗号化のポリシーを設定することによってでしょうか。
+## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>ポリシーをセットアップすることで、メッセージを自動的に暗号化できますか?
 
-うん。使用してメール フロー ルール Exchange オンライン特定の条件に基づいてメッセージを自動的に暗号化します。受信者に基づくポリシーを作成することができますたとえば、ID、受信者のドメイン、またはメッセージの件名、本文の内容にします。参照してください[Office 365 で電子メール メッセージを暗号化するためにメール フローの規則を定義します](define-mail-flow-rules-to-encrypt-email.md)。
+うん。Exchange Online でメールフロールールを使用して、特定の条件に基づいてメッセージを自動的に暗号化します。たとえば、受信者 ID、受信者ドメイン、またはメッセージの本文または件名の内容に基づいたポリシーを作成できます。「 [Office 365 で電子メールメッセージを暗号化するためのメールフロールールの定義」を](define-mail-flow-rules-to-encrypt-email.md)参照してください。
   
-## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>自動的に暗号化メッセージでデータ損失防止 (DLP)、セキュリティ ・ ポリシーを設定することによって&amp;コンプライアンス センターでしょうか。
+## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターを使用して、データ損失防止 (DLP) でポリシーを設定することによって、メッセージを自動的に暗号化できますか?
 
-うん！DLP を使用して、セキュリティで、Exchange のオンラインでのメール フロー ルールを設定することができます&amp;コンプライアンス センターです。
+うん！Exchange Online またはセキュリティ&amp; /コンプライアンスセンターで DLP を使用して、メールフロールールを設定できます。
   
-## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>共有メールボックスに送信された暗号化メッセージを開くことができますか。
+## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>共有メールボックスに送信された暗号化されたメッセージを開くことはできますか。
 
-現在の暗号化されたメッセージは、共有メールボックスではサポートされていません。
+現在暗号化されているメッセージは、共有メールボックスではサポートされていません。
 
-## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>暗号化されたメッセージを自分の会社ブランド設定をカスタマイズできますか。
+## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>企業ブランド化で暗号化されたメッセージをカスタマイズできますか。
 
-うん！電子メール メッセージおよびホーム ポータルをカスタマイズする方法の詳細についてを参照してください暗号化されたメッセージに、組織のブランドを追加します。参照してください[、暗号化されたメッセージを組織のブランドを追加します](add-your-organization-brand-to-encrypted-messages.md)。
+うん！電子メールメッセージと OME ポータルのカスタマイズの詳細については、「組織のブランドを暗号化されたメッセージに追加する」を参照してください。「[組織のブランドを暗号化されたメッセージに追加する」を](add-your-organization-brand-to-encrypted-messages.md)参照してください。
   
-## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>レポート作成機能や暗号化された電子メールの情報はありますか。
+## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>暗号化された電子メールについては、レポート機能や分析情報はありますか。
 
-ではなくこの時間が準備中です。
+現時点ではありませんが、まもなく公開されます。
   
-## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>電子的証拠開示などのコンプライアンス機能とメッセージの暗号化を使用できますか。
+## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>電子情報開示などのコンプライアンス機能を使用してメッセージの暗号化を使用できますか?
 
-うん。すべての暗号化された電子メール メッセージは、Office 365 のコンプライアンス機能により検出可能です。
+うん。すべての暗号化された電子メールメッセージは、Office 365 コンプライアンス機能によって検出できます。
   
 

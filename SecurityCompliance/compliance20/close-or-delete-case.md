@@ -1,12 +1,12 @@
 ---
-title: 閉じるか、ケースを削除します。
+title: ケースを閉じるか、削除する
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,13 +14,37 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 77bfc2572e312c864b4cc262f2c46ecc9117fff3
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: a5a82a1e6ef9b4a4b1033bedf8951dcc109d2983
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608011"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212687"
 ---
-# <a name="close-or-delete-a-case"></a>閉じるか、ケースを削除します。
+# <a name="close-or-delete-a-case"></a>ケースを閉じるか、削除する
 
-コンテンツ準備中です。
+電子情報開示ケースでサポートされている訴訟や調査が完了したら、ケースを閉じることができます。ケースをクローズすると、次のような結果になります。
+
+- ケースに、保留中のコンテンツの場所が含まれている場合は、それらの保持がオフになります。これにより、ユーザーまたは削除ポリシーなどの自動プロセスによって、コンテンツが完全に削除されるか、削除される可能性があります。
+
+- ケースを閉じるだけで、そのケースに関連付けられている保留がオフになります。他のホールドがコンテンツの場所 (訴訟ホールドなど) に設定されている場合は、それらの保持ポリシー、または別の電子情報開示ケースからの保留は引き続き保持されます。
+
+- ケースは、セキュリティ & コンプライアンスセンターの [電子情報開示] ページに表示されたままです。クローズしたケースの詳細、保持、検索、メンバーは保持されます。
+
+- クローズされた case を編集できます。たとえば、メンバーを追加または削除したり、検索を作成したり、検索結果をエクスポートしたり、高度な電子情報開示で分析のために検索結果を準備したりできます。アクティブなケースとクローズケースの主な違いは、ケースがクローズされたときに保留がオフになっていることです。
+
+ケースをクローズするには、次のようにします。
+
+1. **[高度な電子情報開示 (プレビュー)** ] ページで、ケースに移動します。
+
+2. [**設定**] に移動し、[**ケース情報**] を選択します。 
+
+3. [ **Case を閉じる**] をクリックします。 
+
+ケースを削除するには:
+
+1. **[高度な電子情報開示 (プレビュー)** ] ページで、ケースに移動します。
+
+2. [**設定**] に移動し、[**ケース情報**] を選択します。 
+
+3. [ **Case の削除**] をクリックします。 

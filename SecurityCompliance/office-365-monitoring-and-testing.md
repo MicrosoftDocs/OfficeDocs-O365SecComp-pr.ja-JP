@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '概要: Microsoft が Office 365 のテナント境界を監視およびテストする方法について説明します。'
-ms.openlocfilehash: 25b6f713d766b4b12e1c250b54421ad99dff8a1c
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: fce217bfcb5fec1ba3fb6da70eb6f9da9a2c1d44
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090939"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221097"
 ---
 # <a name="monitoring-and-testing-tenant-boundaries"></a>テナント境界の監視とテスト
 Microsoft は継続的に監視し、侵入の監視、アクセス許可違反の試行、リソースの枯渇など、テナントの境界の弱点と脆弱性を明示的にテストします。また、複数の内部システムを使用して、リソースの使用率を継続的に監視し、検出された場合は組み込みの調整をトリガーします。

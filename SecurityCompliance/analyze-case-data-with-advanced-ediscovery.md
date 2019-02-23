@@ -6,50 +6,50 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
-description: 'パラメーターを設定、実行オプション、および電子的証拠開示の Office 365 の詳細設定で、結果を表示するのには、Analyze の処理の概要を取得します。 '
-ms.openlocfilehash: d20ce3acb9c21e8c35b098df2ffae3fa6c871c3e
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: '分析プロセスの概要を説明します。これにより、Office 365 の Advanced eDiscovery でパラメーター、実行オプション、および結果の表示を設定できます。 '
+ms.openlocfilehash: a3e9bc84c09b40b9751dd985faaf0931c77fa37b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532674"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217467"
 ---
 # <a name="analyze-case-data-with-office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery でケース データを分析する
 
 > [!NOTE]
-> 高度な電子的証拠開示では、組織のコンプライアンスを高度なアドオンや、E5 のサブスクリプションの Office 365 E3 が必要です。その計画して高度な電子的証拠開示を実行する、 [Office 365 エンタープライズ E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)することができます。 
+> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
   
-**準備**の\>で高度な電子的証拠開示プロセスを**分析**が含まれているファイルに次の機能を適用します。 
+高度な電子情報開示の**準備** \> **分析**プロセスは、次の機能を添付ファイルに適用します。 
   
-- 識別し、グループの一意のファイル、重複、および重複の近くに読み込まれているファイルを整理します。
+- 読み込まれたファイルを識別し、一意のファイル、重複、およびほぼ重複したグループに整理します。
     
-- 識別し、電子メールのスレッド、電子メールのプログレッシブ inclusiveness に基づいて階層的に構造化されたグループに電子メールを整理します。
+- メールのプログレッシブ inclusiveness に基づいて、メールスレッドの階層構造のグループに電子メールを識別して整理します。
     
-- 高度な電子的証拠開示処理し、ファイルのバッチ処理でのテーマの使用を有効にします。
+- 高度な電子情報開示処理およびファイルのバッチ処理でテーマを使用できるようにします。
     
- 分析オプションを実行し、結果を次のように表示のパラメーターを設定することができます。 
+ Analyze では、次のようにパラメーターを設定し、オプションを実行し、結果を表示することができます。 
   
-- **分析の設定**: 設定ファイルの解析を実行する前に指定することができます。
+- **セットアップの分析**: ファイルの分析を実行する前に設定を指定できます。
     
-- **結果の分析**: 分析の指標が表示されます。 
+- **結果の分析**: 分析の測定基準を表示します。 
     
-Analyze を実行する前に条件を選択して、読み込まれたファイルを分析するなどのファイルを処理および分析の各種類のファイルを送信する先の種類を定義します。 
+Analyze を実行する前に、どのロードされたファイルを分析するか、それぞれの種類のファイルを送信する分析の種類など、ファイルを選択して処理するための基準を定義します。 
   
 ## <a name="see-also"></a>関連項目
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[ドキュメントの類似性を理解します。](understand-document-similarity-in-advanced-ediscovery.md)
+[ドキュメントの類似点について](understand-document-similarity-in-advanced-ediscovery.md)
   
-[設定は無視します。](set-ignore-text-in-advanced-ediscovery.md)
+[無視するテキストの設定](set-ignore-text-in-advanced-ediscovery.md)
   
-[分析の設定の詳細設定](set-analyze-advanced-settings-in-advanced-ediscovery.md)
+[[詳細設定の分析] の設定](set-analyze-advanced-settings-in-advanced-ediscovery.md)
   
-[分析のタスクを表示します。](view-analyze-results-in-advanced-ediscovery.md)
+[分析タスクを表示する](view-analyze-results-in-advanced-ediscovery.md)
 

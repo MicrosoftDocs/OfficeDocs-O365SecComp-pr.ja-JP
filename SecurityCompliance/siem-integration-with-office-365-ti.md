@@ -5,19 +5,19 @@ author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb56b69b-3170-4086-82cf-ba40a530fa1b
 description: office 365 の脅威インテリジェンスと Advanced Threat Protection を使用して、組織の SIEM サーバーを office 365 アクティビティ管理 API と統合します。
-ms.openlocfilehash: 854f763b72dfac1a5dc1442b1d9d123ed5439257
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: cecfb3910520ddf535c50bbe4bccbf200ae8e121
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087246"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212737"
 ---
 # <a name="siem-integration-with-office-365-threat-intelligence-and-advanced-threat-protection"></a>SIEM と Office 365 の脅威インテリジェンスおよび Advanced threat Protection との統合
 

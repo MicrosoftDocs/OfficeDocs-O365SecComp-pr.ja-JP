@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 監査機能の概要、および Office 365 の他の検索機能を使用して監査の使用と透明性を実現します。
-ms.openlocfilehash: 5bab284c5fb66e50c945091766a329de7628abed
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 0d1d0341407546659f4efffac8409edd46312810
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30091069"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214862"
 ---
 # <a name="ediscovery-and-search-features"></a>電子情報開示と検索機能 
 

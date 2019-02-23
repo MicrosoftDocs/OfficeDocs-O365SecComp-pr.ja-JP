@@ -1,25 +1,10 @@
 ---
-title: 検出漏れの問題を防止するために Office 365 のスパム フィルターを使用して迷惑メールをブロックする
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 7/2/2018
-ms.audience: Admin
-ms.topic: article
-ms.service: o365-administration
-localization_priority: Priority
-search.appverid:
+タイトル: "誤応答の問題を防止するために、Office 365 スパムフィルターを使用してスパムをブロックする" krowley: author: kccross manager: laurawi ミリ秒 (日付: 7/2/2018 ms): 管理者向けの送受信: priority検索 appverid: 
 - MOE150
-- MET150
-ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
-description: 迷惑メールをブロックし、検出漏れのメッセージを防止するための Office 365 スパム フィルターの設定に関するヒント。管理者は、Office 365 のスパム対策フィルターを使用して、迷惑メールがユーザーの受信トレイに送信されないようにします。
-ms.openlocfilehash: d96dfa0cad4ef8c27303c9f77d259d4c8b2b04c9
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769871"
+- MET150: da21c0b6-e8f0-4cc8-af2e-5029a9433d59 ms. assetid:
+    - M365-セキュリティ-コンプライアンスに関する説明: 「office 365 スパムフィルターを設定して迷惑メールを受信しないようにするためのヒント」: 管理者は office 365 スパム対策フィルターを使用して、ユーザーの受信トレイにスパムが送信されないようにします。
 ---
+
 # <a name="block-email-spam-with-the-office-365-spam-filter-to-prevent-false-negative-issues"></a>検出漏れの問題を防止するために Office 365 のスパム フィルターを使用して迷惑メールをブロックする
 
 Exchange Online Protection (EOP) は、クラウド ベースのメール フィルター サービスであり、スパムやマルウェアから組織を保護することができます。Office 365 のメールボックスを使用している場合、EOP によって既定で既に保護されています。 
@@ -34,38 +19,38 @@ Office 365 のスパム フィルターを調整することにより、スパ�
 
 接続フィルター IP 禁止一覧に送信者の IP アドレスを追加して、Office 365 のスパム フィルターをカスタマイズします。
   
-1. 「[メッセージ ヘッダー アナライザー](https://go.microsoft.com/fwlink/p/?LinkId=306583)」で説明されているように、Outlook や Outlook Web App などのメール クライアントでブロックするメッセージのヘッダーを取得します。
+1. 「[メッセージヘッダーアナライザー](https://go.microsoft.com/fwlink/p/?LinkId=306583)」で説明されているように、outlook または web 上の outlook (旧称: outlook web App) などのメールクライアントでブロックするメッセージのヘッダーを取得します。
     
 2. [メッセージ ヘッダー アナライザー](https://testconnectivity.microsoft.com/?tabid=mha)を使用するか、または手動で、X-Forefront-Antispam-Report ヘッダー内の CIP タグの後に続く IP アドレスを検索します。 
     
-3. 「[接続フィルター ポリシーを構成する](https://technet.microsoft.com/ja-JP/library/jj200718%28v=exchg.150%29.aspx)」の「EAC を使用して既定の接続フィルター ポリシーを編集する」に示された手順に従って、その IP アドレスを IP 禁止一覧に追加します。
+3. 「[接続フィルター ポリシーを構成する](https://technet.microsoft.com/en-us/library/jj200718%28v=exchg.150%29.aspx)」の「EAC を使用して既定の接続フィルター ポリシーを編集する」に示された手順に従って、その IP アドレスを IP 禁止一覧に追加します。
     
 ### <a name="block-bulk-mail-with-transport-rules-or-the-spam-filter"></a>トランスポート ルールまたはスパム フィルターでバルク メールをブロックする
 
-スパムは主に、ニュースレターやプロモーションなどのバルク メールでしょうか。[トランスポート ルールを使用してバルク メール メッセージを積極的にフィルタリングする](https://technet.microsoft.com/ja-JP/library/dn720438%28v=exchg.150%29.aspx)か、スパム フィルターの[高度なスパム フィルター処理オプション](https://technet.microsoft.com/ja-JP/library/jj200750%28v=exchg.150%29.aspx)で**バルク メール**設定をオンにすると、Office 365 でスパム フィルターをカスタマイズできます。Exchange 管理センターで、**[保護]** \> **[コンテンツ フィルター]** をクリックし、調整するフィルター ポリシーをダブルクリックして作業を開始します。ここで示すとおり、**[Spam and bulk mail actions (スパムおよびバルク メール操作)]** をクリックして設定を調整します。 
+スパムは主に、ニュースレターやプロモーションなどのバルク メールでしょうか。[トランスポート ルールを使用してバルク メール メッセージを積極的にフィルタリングする](https://technet.microsoft.com/en-us/library/dn720438%28v=exchg.150%29.aspx)か、スパム フィルターの[高度なスパム フィルター処理オプション](https://technet.microsoft.com/en-us/library/jj200750%28v=exchg.150%29.aspx)で**バルク メール**設定をオンにすると、Office 365 でスパム フィルターをカスタマイズできます。Exchange 管理センターで、**[保護]** \> **[コンテンツ フィルター]** をクリックし、調整するフィルター ポリシーをダブルクリックして作業を開始します。ここで示すとおり、**[Spam and bulk mail actions (スパムおよびバルク メール操作)]** をクリックして設定を調整します。 
   
 ![Exchange Online でバルク メール フィルターを設定する](media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
   
 ### <a name="block-email-spam-using-spam-filter-block-lists"></a>スパム フィルター禁止一覧を使用して迷惑メールをブロックする
 
-[スパム フィルター ポリシーを構成](https://technet.microsoft.com/ja-JP/library/jj200684%28v=exchg.150%29.aspx)して、スパム フィルターの送信者禁止一覧に送信者アドレスを追加するか、ドメイン禁止一覧にドメインを追加します。スパム フィルター禁止一覧に記載の送信者やドメインからのメールはスパムとしてマークされます。 
+[スパム フィルター ポリシーを構成](https://technet.microsoft.com/en-us/library/jj200684%28v=exchg.150%29.aspx)して、スパム フィルターの送信者禁止一覧に送信者アドレスを追加するか、ドメイン禁止一覧にドメインを追加します。スパム フィルター禁止一覧に記載の送信者やドメインからのメールはスパムとしてマークされます。 
   
 ### <a name="advanced-spam-filtering-options"></a>高度なスパム フィルター処理オプション
 
-[スパム フィルター ポリシーを構成](https://technet.microsoft.com/ja-JP/library/jj200684%28v=exchg.150%29.aspx)し、追加の[高度なスパム対策フィルター オプション](https://technet.microsoft.com/ja-JP/library/jj200750%28v=exchg.150%29.aspx)をオンにします。
+[スパム フィルター ポリシーを構成](https://technet.microsoft.com/en-us/library/jj200684%28v=exchg.150%29.aspx)し、追加の[高度なスパム対策フィルター オプション](https://technet.microsoft.com/en-us/library/jj200750%28v=exchg.150%29.aspx)をオンにします。
   
 組織全体に適用される、より多くのスパム設定については、「[セーフリストまたは他の手法によってスパムとマークされるメール誤検知を防止する](prevent-email-from-being-marked-as-spam-0.md)」を参照してください。これは、管理者レベルの制御を持つ方で、誤検知を防止したい場合に役立ちます。
   
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>メール ユーザーは、Office 365 のスパム フィルターを使用して、確実に検出漏れおよびメール スパムをブロックすることもできます。
 
-Office 365 のスパム対策を活用すれば、[Outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065) または [Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkId=294862) のスパム送信者一覧にスパム送信者アドレスを追加するようユーザーに指示した場合に、検出漏れや迷惑メールを防止することができます。Outlook Web App では、ここで示すとおり、**[設定]** \> **[オプション]** \> **[ブロックまたは許可]** をクリックして開始した後、**[ブロックする差出人]** 一覧にアドレスを追加します。 
+[outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065)または[outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=294862)で受信拒否リストにスパム送信者アドレスを追加するようにユーザーに指示した場合は、Office 365 スパム対策を使用して、誤検知や迷惑メールを防ぐことができます。web 上の Outlook で、[**設定** \> **オプション** \>の**禁止] または [許可**] をクリックしてから、**受信拒否**リストにアドレスを追加して、次のようにして作業を開始します。 
   
-![Outlook Web App で送信者をブロックする](media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
+![Outlook on the web で送信者をブロックする](media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
   
 > [!NOTE]
-> 差出人セーフ リストについて詳しくは、「[差出人セーフ リストと受信拒否リストの FAQ](https://technet.microsoft.com/ja-JP/library/dn133608%28v=exchg.150%29.aspx)」を参照してください。 
+> 差出人セーフ リストについて詳しくは、「[差出人セーフ リストと受信拒否リストの FAQ](https://technet.microsoft.com/en-us/library/dn133608%28v=exchg.150%29.aspx)」を参照してください。 
   
-このサブセクションの前の段落は、EOP をサービスとして使用してオンプレミス メール システムを保護するお客様、またはハイブリッド メール展開の一環として使用するお客様のみに該当します。EOP の詳細については、[ Exchange Online Protection のホームページ](https://products.office.com/ja-JP/exchange/exchange-email-security-spam-protection)をご覧ください。
+このサブセクションの前の段落は、EOP をサービスとして使用してオンプレミス メール システムを保護するお客様、またはハイブリッド メール展開の一環として使用するお客様のみに該当します。EOP の詳細については、[ Exchange Online Protection のホームページ](https://products.office.com/en-us/exchange/exchange-email-security-spam-protection)をご覧ください。
   
 ## <a name="eop-only-customers-set-up-the-office-365-spam-filter-to-block-email-spam"></a>EOP のみのお客様: 迷惑メールをブロックするには Office 365 のスパム フィルターを設定する
 
@@ -94,7 +79,7 @@ EOP サービスは、情報がサービスと共有されている場合、ユ�
     SCL はオンプレミス Exchange サーバーでは 0 なので、非スパムはユーザーの受信トレイに配信されますが、ユーザーのローカルの受信拒否リストによって迷惑メール フォルダーに送信されことも可能です。EOP でスパム検疫を使用している場合も、ユーザーのセーフ リストに記載されている送信者がスパムとして識別され、検疫に送られる可能性があります。ただし、ローカルのメールボックスで迷惑メール フォルダーを使用している場合、この操作で、安全な送信者用の受信トレイへの配信が可能になります。
 
 > [!WARNING]
-> メール フロー ルールを使用して SCL 値を 0 (または -1 以外の値) に変更すると、すべての Outlook の迷惑メール オプションがメッセージに適用されます。これは、ブロック リストおよびセーフ リストが尊重されるようになることを意味しますが、ブロック リストやセーフ リストにアドレスが記載されていないメッセージは、クライアント側の迷惑メール フィルター処理によって迷惑メールとしてマークされる可能性があるということも意味します。Outlook にブロック リストとセーフ リストを処理させる必要があるものの、クライアント側の迷惑メール フィルターは使用したくない場合は、Outlook の迷惑メール オプションでオプションを「自動フィルター処理なし」に設定する必要があります。最新バージョンの Outlook では、「自動フィルター処理なし」が既定のオプションですが、クライアント側の迷惑メール フィルターがメッセージに適用されないようにするために、この設定になっていることを確認する必要があります。管理者は、「[Outlook: 迷惑メールの UI とフィルター処理機構を無効にするポリシー設定](https://support.microsoft.com/ja-JP/kb/2180568)」の手順に従って、Outlook の迷惑メール フィルター処理を無効にすることができます。
+> メール フロー ルールを使用して SCL 値を 0 (または -1 以外の値) に変更すると、すべての Outlook の迷惑メール オプションがメッセージに適用されます。これは、ブロック リストおよびセーフ リストが尊重されるようになることを意味しますが、ブロック リストやセーフ リストにアドレスが記載されていないメッセージは、クライアント側の迷惑メール フィルター処理によって迷惑メールとしてマークされる可能性があるということも意味します。Outlook にブロック リストとセーフ リストを処理させる必要があるものの、クライアント側の迷惑メール フィルターは使用したくない場合は、Outlook の迷惑メール オプションでオプションを「自動フィルター処理なし」に設定する必要があります。最新バージョンの Outlook では、「自動フィルター処理なし」が既定のオプションですが、クライアント側の迷惑メール フィルターがメッセージに適用されないようにするために、この設定になっていることを確認する必要があります。管理者は、「[Outlook: 迷惑メールの UI とフィルター処理機構を無効にするポリシー設定](https://support.microsoft.com/en-us/kb/2180568)」の手順に従って、Outlook の迷惑メール フィルター処理を無効にすることができます。
   
 ## <a name="see-also"></a>関連項目
 

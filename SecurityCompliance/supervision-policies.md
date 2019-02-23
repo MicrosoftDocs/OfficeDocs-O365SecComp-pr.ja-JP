@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Office 365 の監督ポリシーについて
-ms.openlocfilehash: f715fdcd073f8d75f0046bb3ed5adb1987eec263
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 7a173809f37262f73671fe6ee96485cda97c1eb3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090979"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214117"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 の監督ポリシー
 
@@ -215,7 +215,7 @@ Outlook を使用すると、レビューアーは次のことができます。
   
 ### <a name="how-to-use-the-report"></a>レポートの使用方法
 
-監督ポリシーが確認のために通信メッセージを識別すると、電子メールは outlook および outlook web app のレビュー担当者の監督者フォルダーに配信されます。このレポートには、レビュープロセスの各段階での各ポリシーの名前と通信数が一覧表示されます。
+監督ポリシーが確認のために通信メッセージを識別すると、電子メールは、outlook および web 上の outlook (旧称 outlook web App) のレビューアーの監督フォルダーに配信されます。このレポートには、レビュープロセスの各段階での各ポリシーの名前と通信数が一覧表示されます。
   
 レポートを使用して、次のことを行います。
   
@@ -228,7 +228,7 @@ Outlook を使用すると、レビューアーは次のことができます。
   
 |**タグの種類**|**意味**|
 |:-----|:-----|
-| 未確認 | まだ確認されていないメールの数。これらの電子メールは、Office 365 監督ダッシュボードまたは outlook/outlook Web App のレビュー担当者の監督フォルダーにあるレビューを待っています。|
+| 未確認 | まだ確認されていないメールの数。これらの電子メールは、Office 365 監督ダッシュボード、または web 上の outlook/outlook でレビューアーの監督フォルダーにあるレビューを待機しています。
 | 要件 | 確認済みで、準拠としてマークされたメールの数。これらのメッセージは引き続き解決する必要があります。 |
 | 行為 | レビューされ、疑わしいとマークされたメールの数。これはフラグとして機能します。他のレビュー担当者は、コンプライアンスのためにメールが必要かどうかを確認するのに役立ちます。これらのメッセージは引き続き解決する必要があります。 |
 | 非準拠 (アクティブ) | レビュー担当者が現在調査している、準拠していない電子メールの数。 |

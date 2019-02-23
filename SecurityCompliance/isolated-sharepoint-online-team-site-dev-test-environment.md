@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: '概要: Office 365 開発/テスト環境で、組織の他の部分とは分離した SharePoint Online チーム サイトを構成します。'
-ms.openlocfilehash: 0aa5e6e47344134b1e103fb287f627afd2808af6
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+ms.openlocfilehash: a8a02c10f799b136b299801a3636820e4f64e087
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25345819"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217137"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Office 365 開発/テスト環境での分離した SharePoint Online チーム サイト
 
@@ -150,7 +150,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 ProjectX 用の SharePoint Online チーム サイトを作成するには、次の操作を行います。
   
-1. ローカル コンピューター (軽量構成) のいずれかのブラウザーを使用してまたは CLIENT1 の (シミュレートされたエンタープライズ構成の場合)、Office 365 ポータルにサインイン ([https://portal.office.com](https://portal.office.com)) グローバル管理者アカウントを使用して。
+1. ローカルコンピューター (軽量構成) または CLIENT1 (シミュレートされたエンタープライズ構成) のどちらかでブラウザーを使用して、全体管理[https://portal.office.com](https://portal.office.com)者アカウントを使用して Office 365 ポータル () にサインインします。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     
@@ -218,7 +218,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
     
 2. 全体管理者の名前をクリックし、 **[サインアウト]** をクリックします。
     
-3. Office 365 ポータルにサインイン ([https://portal.office.com](https://portal.office.com)) デザイナーの潜在顧客のアカウント名とパスワードを使用します。
+3. デザイナーのリーダーのアカウント名とパスワード[https://portal.office.com](https://portal.office.com)を使用して、Office 365 ポータル () にサインインします。
     
 4. タイルのリストで、 **[SharePoint]** をクリックします。
     
@@ -248,7 +248,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
     
 開発 VP のユーザー アカウントを使用したアクセスをデモンストレーションします。
   
-1. Office 365 ポータルにサインイン ([https://portal.office.com](https://portal.office.com)) の開発担当副社長のアカウント名とパスワードを使用します。
+1. 開発 VP のアカウント名とパスワードを[https://portal.office.com](https://portal.office.com)使用して、Office 365 ポータル () にサインインします。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     
@@ -264,7 +264,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
     
 権限を持たないユーザー アカウントでのアクセスをデモンストレーションします。
   
-1. Office 365 ポータルにサインイン ([https://portal.office.com](https://portal.office.com))、3 のユーザー アカウント名とパスワードを使用します。
+1. User 3 のアカウント名とパスワードを[https://portal.office.com](https://portal.office.com)使用して、Office 365 ポータル () にサインインします。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     

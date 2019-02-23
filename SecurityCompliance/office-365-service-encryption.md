@@ -5,18 +5,18 @@ author: kccross
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: '概要: Microsoft Office 365 のデータ復元性について理解します。'
-ms.openlocfilehash: 09ba8408176627c3aa9833bb59dde8be86aefd51
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: 4e9dd52adbeada92d14db369b386ff1ca7e42fc5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29664083"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220347"
 ---
 # <a name="office-365-service-encryption"></a>Office 365 でのサービスの暗号化
 

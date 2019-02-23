@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,16 +14,16 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '概要: Office 365 の管理アクセス制御とデータ分類の概要について説明します。'
-ms.openlocfilehash: f5cac8b6161ea7eab6ea390e32caec1c5ddb9bac
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: b23fcdcb6c790b3860a24a555424beb3bb99e4f4
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30091029"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216027"
 ---
 # <a name="administrative-access-controls-in-office-365"></a>Office 365 での管理アクセス制御 
 
-## <a name="introduction"></a>概要
+## <a name="introduction"></a>はじめに
 microsoft は、お客様のコンテンツへの microsoft のアクセスを意図的に制限する一方で、ほとんどの Office 365 操作を自動化するシステムと制御に、多くの投資を行ってきました。人間がサービスを制御し、ソフトウェアがサービスを運用します。これにより、microsoft は Office 365 をスケールで管理できるようになり、悪意のある俳優、Microsoft のエンジニアのスピアーフィッシングなど、お客様のコンテンツに対する内部の脅威のリスクを管理することもできます。
 
 既定では、Microsoft のエンジニアは、Office 365 ではゼロの管理者権限と、お客様のコンテンツへの継続的なアクセス権を持ちます。microsoft のエンジニアは、限られた期間、お客様のコンテンツへのアクセスを制限、監査、およびセキュリティで保護することができます。ただし、サービスの運用に必要な場合のみで、また、microsoft シニアマネージメントのメンバーによって承認された場合にのみ、お客様のロックボックス機能のライセンスが供与されます。

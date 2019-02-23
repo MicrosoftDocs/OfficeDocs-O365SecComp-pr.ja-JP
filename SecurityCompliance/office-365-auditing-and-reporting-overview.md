@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 12/03/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -15,16 +15,16 @@ ms.collection:
 - M365-security-compliance
 - M365-analytics
 description: Office 365 内の監査およびレポート機能の概要と、サービス保証について説明します。
-ms.openlocfilehash: 0167239e854d9b96d9505f4264ada225804eef96
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: e2fd596279743ad72a3632ba09ec28142e9322f4
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30091039"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221017"
 ---
 # <a name="auditing-and-reporting-in-office-365"></a>Office 365 での監査とレポート
 
-## <a name="introduction"></a>概要
+## <a name="introduction"></a>はじめに
 Microsoft クラウドサービスには、Exchange online および SharePoint online テナントの構成設定に加えられた変更など、テナント内のユーザーおよび管理アクティビティを追跡するために使用できるいくつかの監査およびレポート機能が含まれています。また、ユーザーによってドキュメントやその他のアイテムに加えられた変更。お客様は、クラウドサービスで利用可能な監査情報とレポートを使用して、ユーザーの作業をより効果的に管理したり、リスクを軽減したり、コンプライアンスの義務を履行したりできます。
 
 ## <a name="office-365-security--compliance-center"></a>Office 365 のセキュリティ センターとコンプライアンス センター

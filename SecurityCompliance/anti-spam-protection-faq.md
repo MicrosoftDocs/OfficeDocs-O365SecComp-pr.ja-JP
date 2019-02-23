@@ -1,25 +1,9 @@
 ---
-title: スパム対策保護 FAQ
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 12/9/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
-ms.custom: TN2DMC
-localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
-description: ここでは、スパム対策保護に関するよく寄せられる質問と回答について説明します。 回答は、Microsoft Exchange Online と Exchange Online Protection (EOP) のお客様に当てはまります。
-ms.openlocfilehash: 77b3dc26d55f75e7476a3b52a550174a3876c56f
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
-ms.translationtype: MT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003076"
+タイトル: "スパム対策保護に関する FAQ" ms. author: krowley author: kccross manager: laurawi ms. date: 12/9/2016 ms: ITPro: TN2DMC 送受信: 通常の検索。 appverid は、次のように指定しています。
+- MET150: c534a35d-b121-45da-9d0a-ce738ce51fce ms. assetid:
+    - M365-コンプライアンスに関する説明: このトピックでは、スパム対策保護に関するよく寄せられる質問と回答について説明します。回答は Microsoft exchange online および exchange online Protection (EOP) のお客様に適用されます。
 ---
+
 # <a name="anti-spam-protection-faq"></a>スパム対策保護 FAQ
 
 ここでは、スパム対策保護に関するよく寄せられる質問と回答について説明します。 回答は、Microsoft Exchange Online と Exchange Online Protection (EOP) のお客様に当てはまります。 
@@ -72,9 +56,9 @@ A. スパムとスパムではないメッセージを分析のために Microso
   
 A. はい。たとえば Office 365 管理センターでスパム検出レポートを取得することができます。 このレポートは、一意のメッセージの数でスパムの量を示します。 レポートの詳細については、以下のリンクを参照してください。
   
-Exchange オンラインのお客様:[監視、レポート作成、および Exchange オンラインのトレース メッセージ](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
+exchange online のお客様: [exchange online での監視、レポート、メッセージ追跡](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
-お客様の Exchange のオンライン保護:[レポートとメッセージは、Exchange のオンライン保護をトレース](eop/reporting-and-message-trace-in-exchange-online-protection.md)
+exchange online protection のお客様: [exchange online protection でのレポート作成とメッセージ追跡](eop/reporting-and-message-trace-in-exchange-online-protection.md)
   
  **Q. 誰かが私にメッセージを送りましたが、そのメッセージを見つけられません。 スパムとして検出された可能性があります。 調べるためのツールはありますか?**
   
@@ -108,7 +92,7 @@ A. 以下に示すガイドラインは、送信メール メッセージを送�
   
 1. **電子メールの送信元のドメインの DNS で解決する必要があります。**
     
-    たとえば、user@example.com を送信者には、example.com というドメインが 192.0.43.10 の IP アドレスに解決します。送信側のドメインの DNS の A レコードと MX レコードがありませんがある場合、サービスは、メッセージの内容は、迷惑メールかどうかに関係なく、高リスク配信プールを通じてメッセージをルーティングします。高リスク配信プールの詳細については、[送信メッセージの危険度の高い配信プール](high-risk-delivery-pool-for-outbound-messages.md)を参照してください。 
+    たとえば、送信者が user@example.com の場合、ドメイン example.com は IP アドレス192.0.43.10 に解決されます。送信側ドメインに DNS に a レコードがなく、MX レコードが含まれていない場合、メッセージの内容がスパムであるかどうかに関係なく、このサービスはより高いリスクの配信プールを経由してメッセージをルーティングします。より危険度の高い配信プールの詳細については、「[送信メッセージ用の高リスク配信プール](high-risk-delivery-pool-for-outbound-messages.md)」を参照してください。 
     
 2. **送信メール サーバーの送信 IP アドレスには、逆引き DNS (PTR) エントリが必要です。**
     

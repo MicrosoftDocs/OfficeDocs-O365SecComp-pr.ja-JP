@@ -1,5 +1,5 @@
 ---
-title: Office 365 のセッションポリシー Cloud App Security
+title: Office 365 Cloud App Security のセッション ポリシー
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -7,17 +7,17 @@ ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
 ms.date: 02/14/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 description: office 365 Cloud App Security セッションポリシーを使用すると、リアルタイムのセッションレベルの監視が可能になり、office 365 アプリの詳細な表示を affording し、ユーザーセッションに設定したポリシーに応じて異なる操作を実行することができます。session control を使用して、アクセスを完全に許可またはブロックするのではなく、セッションの監視中にアクセスを許可したり、条件付きアクセスアプリコントロールのリバースプロキシ機能を使用して特定のセッションアクティビティを制限したりすることができます。
-ms.openlocfilehash: 0dbfb3e5827fb76e52f0262333d372860f0cb58a
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: a57b62073e93c95217a829f8aa381f4a585dacc5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30103342"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218607"
 ---
-# <a name="session-policies-in-office-365-cloud-app-security"></a>Office 365 のセッションポリシー Cloud App Security
+# <a name="session-policies-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security のセッション ポリシー
 
 |評価 * *\>**|計画 * *\>**|展開 * *\>**|使用率 * * * *|
 |:-----|:-----|:-----|:-----|

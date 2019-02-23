@@ -3,7 +3,7 @@ title: Exchange Online の差出人セーフ リストと受信拒否リスト
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 5/22/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 description: Exchange Online または Exchange Online Protection (EOP) の管理者は、サービスを通過する電子メール メッセージがスパムとしてマークされないようにできます。そのための方法の 1 つに、組織内のユーザーの中で、信頼できる差出人とブロックする差出人のリストを作成する、というものがあります。
-ms.openlocfilehash: cbf886bdcc40044a31b285b6806aecbc95f0f97c
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: d785f5f605dd9b8610eaed95f3f2783d04bcbc14
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003106"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206350"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Exchange Online の差出人セーフ リストと受信拒否リスト
 
@@ -38,9 +38,9 @@ Exchange Online での信頼できる差出人とブロックする差出人の�
     
 注:
   
-KB 2590466 (「Outlook Web App for Exchange Server 2010 で「迷惑メールの検証エラー」を受信する」) で説明するエラーが発生することがあります。この問題を解決するには、「自分の連絡先からのメールを信頼する」チェック ボックスをオフにします。あるいは、既定の連絡先フォルダーに含まれている電子メール アドレスの数を、Exchange Online の制限である 1,024 以下に減らします。この制限は 「MaxSafeSenders」属性で設定されています。この属性と Set-Mailbox コマンドレットの詳細については、次のトピックを参照してください。
+[KB2590466](https://support.microsoft.com/help/2590466/you-receive-the-error-junk-e-mail-validation-error-in-outlook-web-app)で説明されているエラーが発生することがあります。この問題を解決するには、[連絡先からの電子メールを信頼する] チェックボックスをオフにします。または、"MaxSafeSenders" 属性に設定されている Exchange Online で、既定の連絡先フォルダーに含まれる電子メールアドレスの量を減らして、最大許容制限である1024に設定します。この属性とメールボックスの設定コマンドレットの詳細については、次のトピックを参照してください。
   
-[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox?view=exchange-ps)
+[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox)
   
 ## <a name="see-also"></a>See also
 

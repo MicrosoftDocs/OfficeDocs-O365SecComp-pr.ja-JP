@@ -1,5 +1,5 @@
 ---
-title: 障害がある方のためのユーザー補助機能
+title: 障碍がある方のためのユーザー補助機能
 ms.author: scotv
 author: scotvidican
 manager: laurawi
@@ -12,24 +12,24 @@ localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: Microsoft では、すべてのユーザーにとって使いやすい製品とサービスを提供できるよう取り組んでいます。
-ms.openlocfilehash: 1e59e995ffaa4b3324913d8e49a9c2ee00b142fb
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 2403ef4ec5a99202a45b40bf639193643b6ad02b
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026214"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206380"
 ---
-# <a name="accessibility-for-people-with-disabilities"></a>障害がある方のためのユーザー補助機能
+# <a name="accessibility-for-people-with-disabilities"></a>障碍がある方のためのユーザー補助機能
 
 ## <a name="accessibility-features-of-exchange"></a>Exchange のユーザー補助機能
 
 Microsoft Exchange に装備された次の機能は、障碍がある方がより快適に使用いただくのに役立ちます。
   
-- [Exchange 2013 プレビューのショートカット キー](http://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
+- [Exchange Server でのキーボードショートカット](http://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
     
-- [Outlook Web App でのキーボード ショート カット](https://go.microsoft.com/fwlink/p/?LinkId=268079)
+- [Outlook on the web のキーボード ショートカット ](https://go.microsoft.com/fwlink/p/?LinkId=268079)
     
-さらに、一部のユーザー補助機能と Windows のユーティリティは、障害を持つ Exchange ユーザーを活用可能性があります。また、Windows PowerShell のサイズと色の変更は、Exchange 管理シェルを使用する場合、ユーザー補助のオプションを提供します。Windows PowerShell ユーザー補助のオプションの詳細については、 [Windows PowerShell 2.0 の ISE のユーザー補助機能](https://go.microsoft.com/fwlink/p/?LinkId=258240)を参照してください。
+また、Windows のユーザー補助機能とユーティリティによっては、障害が発生している Exchange ユーザーにメリットがあります。また、Windows PowerShell のサイズと色の変更によって、Exchange 管理シェルを使用する際のユーザー補助オプションが提供されます。windows powershell のユーザー補助オプションの詳細については、「 [windows powershell 2.0 ISE のアクセシビリティ](https://go.microsoft.com/fwlink/p/?LinkId=258240)」を参照してください。
   
 ## <a name="accessibility-features-of-exchange-help"></a>Exchange ヘルプのユーザー補助機能
 
@@ -74,7 +74,7 @@ Microsoft 製品のドキュメントの多くは、印刷されたドキュメ�
     
 Microsoft のサポート サービスには、サービス利用時の料金、条項、および条件が適用されます。詳細については、[Microsoft サポート](https://go.microsoft.com/fwlink/p/?linkId=18142)をご覧ください。
   
-## <a name="for-more-information"></a>詳細情報
+## <a name="for-more-information"></a>関連情報
 
 障碍がある方がコンピューターを快適に利用するためのユーザー補助テクノロジの詳細については、[Microsoft アクセシビリティ ホーム](http://go.microsoft.com/fwlink/p/?linkId=18139)を参照してください。 
   

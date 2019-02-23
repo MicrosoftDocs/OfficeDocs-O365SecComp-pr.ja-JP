@@ -5,108 +5,108 @@ author: BrendaCarter
 manager: laurawi
 ms.date: 10/11/2018
 ms.audience: ITPro
-ms.topic: get-started-article
-ms.service: o365-administration
+ms.topic: article
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
-description: テナント全体の設定を Office 365 環境内のセキュリティに影響を与えるための推奨される構成について説明します。セキュリティ ニーズは、セキュリティまたは短い必要があります。これらの推奨事項は、開始点として使用します。
-ms.openlocfilehash: 0ec9d739f1347eee55c4c49df2abfcb7178b6d05
-ms.sourcegitcommit: 6bdba12c13c02f7d9a7297d3042933b100c4e481
+description: Office 365 環境のセキュリティに影響を与えるテナント全体の設定に推奨される構成について説明します。セキュリティのニーズによっては、より多くのセキュリティを必要とする場合があります。これらの推奨事項を出発点として使用します。
+ms.openlocfilehash: 95b00d2f5a5c77eff1fcef2450ffb20ce5c57617
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29966201"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213927"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>セキュリティ強化のために、Office 365 テナントを構成する
 
-このトピックでは、テナント全体の設定を Office 365 環境内のセキュリティに影響を与えるための推奨される構成について説明します。セキュリティ ニーズは、セキュリティまたは短い必要があります。これらの推奨事項は、開始点として使用します。
+このトピックでは、Office 365 環境のセキュリティに影響を与えるテナント全体の設定に推奨される構成について説明します。セキュリティのニーズによっては、より多くのセキュリティを必要とする場合があります。これらの推奨事項を出発点として使用します。
   
-## <a name="check-office-365-secure-score"></a>Office 365 のセキュリティで保護されたスコアを確認します。
+## <a name="check-office-365-secure-score"></a>Office 365 のセキュリティで保護されたスコアを確認する
 
-Office 365 セキュリティで保護されたスコアは、通常の動作とセキュリティの設定に基づいて、Office 365 の組織のセキュリティを分析し、スコアが割り当てられます。現在のスコアを記録することから始めます。テナント全体のいくつかの設定を調整すると、あなたのスコアが増加します。目標は、最大のスコアを達成するが、ユーザーの生産性に悪影響を及ぼす影響しない、環境を保護するために営業案件の注意すべきです。[Office 365 のセキュリティで保護されたスコアを導入すること](office-365-secure-score.md)を参照してください。
+office 365 のセキュリティで保護されたスコアは、通常のアクティビティとセキュリティ設定に基づいて office 365 組織のセキュリティを分析し、スコアを割り当てます。最初に、現在のスコアをメモしておきます。テナント全体の設定を調整すると、スコアが増加します。目標は最大スコアを達成することではなく、ユーザーの生産性に悪影響を及ぼすことがない環境を保護する機会に注意してください。「 [Office 365 のセキュリティスコアの紹介」を](office-365-secure-score.md)参照してください。
   
-## <a name="tune-threat-management-policies-in-the-office-365-security-amp-compliance-center"></a>Office 365 のセキュリティの脅威の管理ポリシーを調整する&amp;コンプライアンス センター
+## <a name="tune-threat-management-policies-in-the-office-365-security-amp-compliance-center"></a>Office 365 セキュリティ&amp;コンプライアンスセンターで脅威管理ポリシーを調整する
 
-Office 365 のセキュリティ&amp;コンプライアンス センターには、環境を保護する機能が含まれています。レポートとダッシュ ボードを監視して、処理に使用することができますが含まれます。一部の領域は、既定のポリシーの構成が付いてきます。一部の領域は、既定のポリシーまたはルールには含まれません。安全な環境の脅威の管理の設定を調整するのには脅威の管理の下でこれらのポリシーを参照してください。 
+Office 365 セキュリティ&amp;コンプライアンスセンターには、環境を保護する機能が含まれています。また、レポートとダッシュボードを使用して、監視してアクションを実行することもできます。既定のポリシー構成には、いくつかの領域があります。一部の領域には、既定のポリシーやルールは含まれません。脅威管理の設定を調整して、より安全な環境を構成するには、次のポリシーにアクセスしてください。 
   
-|領域。|既定のポリシー。|推奨。|
+|Area * * * *|既定のポリシーが含まれています * * * * *|推奨事項 * * * *|
 |:-----|:-----|:-----|
-|**フィッシング詐欺対策** <br/> |はい  <br/> | カスタム ドメインがある場合、最高経営責任者など、最も価値のあるユーザーの電子メール アカウントを保護して、ドメインを保護するためには、フィッシング詐欺対策ポリシーを作成します。[フィッシング詐欺対策ポリシーを設定する](set-up-anti-phishing-policies.md)かを確認し、ガイドとしてこの例を使用してポリシーを作成する:」の使用例: ドメインとユーザーを保護するためにフィッシング詐欺対策ポリシー」。|
-|**マルウェア対策エンジン** <br/> |はい  <br/> | 既定のポリシーを編集します。  <br/> &ensp;&ensp;• 一般的な添付ファイル フィルターの種類などを選択  <br/><br>  カスタムのマルウェア フィルター ポリシーを作成し、組織内の指定したユーザー、グループ、またはドメインに適用できます。  <br/> <br> 詳しくは、以下の資料を参照してください。  <br/> &ensp;&ensp;•[マルウェア対策保護](https://technet.microsoft.com/en-us/library/jj200669%28v=exchg.150%29.aspx) <br/> &ensp;&ensp;•[マルウェア対策ポリシーを構成します。](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |
-|**ATP の安全な添付ファイル機能** <br/> |不要  <br/> | 安全な添付ファイルのメイン ページで、SharePoint、OneDrive、およびマイクロソフトのチーム内のファイルを保護このチェック ボックス。  <br/>  &ensp;&ensp;• および有効にする分析ツールで SharePoint、OneDrive、マイクロソフトのチーム  <br/> <br> これらの設定では、新しい安全な添付ファイル ポリシーを追加します。  <br/>  &ensp;&ensp;• ブロック-現在および将来の e メールおよび検出されたマルウェアの添付ファイルをブロックする (このオプションを選択します)  <br/>  &ensp;&ensp;• 有効にする」にリダイレクト: (チェック ボックスをオンし、管理や検査など、電子メール アドレスを入力してください)  <br/>  &ensp;&ensp;• は、マルウェアの添付ファイルのスキャンがタイムアウトになるか、エラーが発生した場合に上記の選択を適用します (チェック ボックスをオン)  <br/>  &ensp;&ensp;• に適用される、受信者のドメインにドメインを (選択)  <br/>  <br>詳細: [Office 365 の ATP の安全な添付ファイル ポリシーを設定します](set-up-atp-safe-attachments-policies.md) <br/> |
-|**ATP の安全なリンク** <br/> |はい  <br/> | この設定を組織全体の既定のポリシーに追加します。  <br/> &ensp;&ensp;• 内の安全なリンクを使用します。 Office 365 用リソース、オフィスの iOS と Android (このオプションを選択します)。  <br/> <br>特定の受信者に対するポリシーを推奨。  <br/>  &ensp;&ensp;• Url 書き換えし、するユーザーがリンクをクリックすると、既知の悪意のあるリンクの一覧に照らし合わせて確認 (このオプションを選択します)。  <br/>  &ensp;&ensp;• ダウンロード可能なコンテンツをスキャンするのには安全な添付ファイルを使用して (チェック ボックスをオン)。  <br/>  &ensp;&ensp;• に適用される、受信者のドメインにドメインを (選択) します。  <br/> <br> 詳細: [Office 365 の ATP の安全なリンク](atp-safe-links.md)です。  <br/> |
-|**スパム対策 (メール フィルター)** <br/> |はい  <br/> | 何を監視するには。  <br/>  &ensp;&ensp;• はスパムが多すぎる、カスタム設定を選択し、迷惑メール フィルターの既定のポリシーを編集します。  <br/>  &ensp;&ensp;• なりすましインテリジェンス-自分のドメインのスプーフィングは、送信者を確認します。ブロックまたは、これらの送信者を許可します。<br/>  <br>詳細: [Office 365 の電子メール スパム対策の保護](anti-spam-protection.md)。  <br/> |
-|***電子メールの認証*** <br/> |はい  <br/> |電子メールの認証は、電子メールの送信者の電子メール メッセージを検証可能な情報を追加するのにはドメイン ネーム システム (DNS) を使用します。Office 365 は、既定のドメイン (onmicrosoft.com)、電子メールの認証を設定しますが、Office 365 の管理者がカスタム ドメインの電子メールの認証も使用できます。3 つの認証方法が使用されます。<br/> <br> &ensp;&ensp;• 送信者ポリシー フレームワーク (SPF) ができます。<br/>&ensp;&ensp;&ensp;&ensp;-セットアップの[スプーフィングを防止するために Office 365 の SPF の設定](set-up-spf-in-office-365-to-help-prevent-spoofing.md)を参照してください。 <br/> &ensp;&ensp;• DomainKeys は、メール (DKIM) を識別します。 <br/> &ensp;&ensp;&ensp;&ensp;-[カスタム ドメインを Office 365 で電子メールを使用して DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)を参照してください。 <br>&ensp;&ensp;&ensp;&ensp;-DKIM を構成した後で有効にするセキュリティ&amp;コンプライアンス センターです。<br/> &ensp;&ensp;• ドメイン ベースのメッセージ認証では、レポート、および準拠 (DMARC)。 </br> &ensp;&ensp;&ensp;&ensp;-DMARC を[Office 365 で電子メールを検証するために使用して DMARC](use-dmarc-to-validate-email.md)を設定します。<br/>  <br/>
+|**フィッシング対策** <br/> |はい  <br/> | カスタムドメインがある場合は、CEO などの最も重要なユーザーの電子メールアカウントを保護し、ドメインを保護するために、フィッシング対策ポリシーを作成します。「[フィッシング対策ポリシーを設定](set-up-anti-phishing-policies.md)する」および「例: ユーザーとドメインを保護するためのフィッシング対策ポリシー」の例を使用してポリシーを作成します。|
+|**マルウェア対策エンジン** <br/> |はい  <br/> | 既定のポリシーを編集します。  <br/> &ensp;&ensp;•一般的な添付ファイルの種類のフィルター— [オン]  <br/><br>  また、カスタムマルウェアフィルターポリシーを作成して、それを組織内の特定のユーザー、グループ、またはドメインに適用することもできます。  <br/> <br> 詳しくは、以下の資料を参照してください。  <br/> &ensp;&ensp;•[マルウェア対策保護](https://technet.microsoft.com/en-us/library/jj200669%28v=exchg.150%29.aspx) <br/> &ensp;&ensp;•[マルウェア対策ポリシーを構成する](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |
+|**ATP の安全な添付ファイル機能** <br/> |いいえ  <br/> | 「安全な添付ファイル」のメインページで、このボックスをオンにして、SharePoint、OneDrive、Microsoft Teams のファイルを保護します。  <br/>  &ensp;&ensp;• SharePoint、OneDrive、Microsoft Teams の ATP を有効にします。  <br/> <br> 次の設定を使用して、新しい安全な添付ファイルポリシーを追加します。  <br/>  &ensp;&ensp;•ブロック: 検出されたマルウェアを使用して、現在の電子メールと添付ファイルをブロックする (このオプションを選択する)  <br/>  &ensp;&ensp;•リダイレクトの有効化— (このボックスをオンにして、管理者や検疫アカウントなどの電子メールアドレスを入力してください)  <br/>  &ensp;&ensp;•添付ファイルのマルウェアスキャンがタイムアウトまたはエラーが発生した場合は、上記の選択を適用します (このチェックボックスをオンにします)。  <br/>  &ensp;&ensp;•適用先-受信者ドメイン is (ドメインを選択してください)  <br/>  <br>詳細情報: [Office 365 の ATP の安全な添付ファイルのポリシーを設定](set-up-atp-safe-attachments-policies.md)する <br/> |
+|**ATP の安全なリンク** <br/> |はい  <br/> | この設定を組織全体の既定のポリシーに追加します。  <br/> &ensp;&ensp;•安全なリンクの使用: office 365 ProPlus、office for iOS および Android (このオプションを選択します)。  <br/> <br>特定の受信者に推奨されるポリシー:  <br/>  &ensp;&ensp;•ユーザーがリンクをクリックしたときに、既知の悪意のあるリンクの一覧に対して url が書き換えられ、チェックされます (このオプションを選択します)。  <br/>  &ensp;&ensp;•安全な添付ファイルを使用して、ダウンロード可能なコンテンツをスキャンします (このチェックボックスをオンにします)。  <br/>  &ensp;&ensp;•適用先-受信者ドメイン is (ドメインを選択してください)。  <br/> <br> 詳細については、「 [Office 365 の ATP の安全なリンク](atp-safe-links.md)」を参照してください。  <br/> |
+|**スパム対策 (メールフィルター)** <br/> |はい  <br/> | 監視対象:  <br/>  &ensp;&ensp;•スパム数が多すぎます。カスタム設定を選択し、既定のスパムフィルターポリシーを編集します。  <br/>  &ensp;&ensp;•スプーフィングインテリジェンス—ドメインをスプーフィングしている送信者を確認します。これらの送信者を禁止または許可します。<br/>  <br>詳細については[、「Office 365 電子メールのスパム対策保護](anti-spam-protection.md)」を参照してください。  <br/> |
+|***電子メール認証*** <br/> |はい  <br/> |電子メール認証は、ドメインネームシステム (DNS) を使用して、電子メールの送信者に関する検証可能な情報を電子メールメッセージに追加します。office 365 は、既定のドメイン (onmicrosoft.com) に対して電子メール認証を設定しますが、office 365 管理者はカスタムドメインに対して電子メール認証を使用することもできます。3つの認証方法が使用されます。<br/> <br> &ensp;&ensp;• Sender Policy Framework (または SPF)。<br/>&ensp;&ensp;&ensp;&ensp;-セットアップの場合は、「 [Set up SPF in Office 365」を参照してスプーフィングを防止](set-up-spf-in-office-365-to-help-prevent-spoofing.md)してください。 <br/> &ensp;&ensp;• domainkeys で識別されたメール (dkim)。 <br/> &ensp;&ensp;&ensp;&ensp;-「 [Office 365 でカスタムドメインのメールに dkim を使用する](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)」を参照してください。 <br>&ensp;&ensp;&ensp;&ensp;-dkim の構成が完了したら、セキュリティ&amp;コンプライアンスセンターでそれを有効にします。<br/> &ensp;&ensp;•ドメインベースのメッセージ認証、レポート、および準拠 (DMARC)。 </br> &ensp;&ensp;&ensp;&ensp;-DMARC セットアップの場合は、 [DMARC を使用して Office 365 で電子メールを検証](use-dmarc-to-validate-email.md)します。<br/>  <br/>
 |
 
 > [!NOTE]
-> SPF の非標準の展開、ハイブリッド展開では、およびトラブルシューティング:[送信者ポリシー フレームワーク (SPF) の悪用を防止するのにを使用して Office 365 ではどのように](how-office-365-uses-spf-to-prevent-spoofing.md)します。
+> spf、ハイブリッド展開、およびトラブルシューティングの標準的でない展開の場合: [Office 365 では、スプーフィングを防止するために Sender Policy Framework (SPF) を使用する方法に](how-office-365-uses-spf-to-prevent-spoofing.md)ついて説明します。
 
-## <a name="view-dashboards-and-reports-in-the-security-amp-compliance-center"></a>セキュリティ ダッシュ ボードおよびレポートを表示する&amp;コンプライアンス センター
+## <a name="view-dashboards-and-reports-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターのダッシュボードとレポートを表示する
 
-これらのレポートとダッシュ ボードをお客様の環境の稼働状態の詳細についてを参照してください。これらのレポート内のデータは豊富なは、組織が Office 365 サービスを使用しているようになります。ここでは、何を監視してアクションを実行を理解します。詳細についてを参照してください:[では、Office 365 のセキュリティ レポート&amp;コンプライアンス センター](reports-in-security-and-compliance.md)です。
+環境の正常性の詳細については、以下のレポートとダッシュボードを参照してください。これらのレポートのデータは、組織が Office 365 サービスを使用しているほど充実したものになります。ここでは、監視してアクションを実行できるものについて理解しておきます。詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのレポート](reports-in-security-and-compliance.md)」を参照してください。
   
-|ダッシュ ボード。|****説明****|
+|ダッシュボード * * * *|****説明****|
 |:-----|:-----|
-|脅威管理ダッシュ ボード  <br/> |セキュリティの脅威の管理] セクションで&amp;コンプライアンス センターへの報告ビジネスの意思決定者にどのような脅威のインテリジェンスは、まだ、既に処理されているを参照してくださいの脅威と便利なツールとしては、このダッシュ ボードを使用して、セキュリティで保護する、ビジネスです。  <br/> |
-|脅威のエクスプ ローラー  <br/> |セキュリティの脅威の管理] セクションでは、この&amp;コンプライアンス センターです。調査中であるか、Office 365 テナントに対して攻撃が発生している場合、は、脅威を分析する脅威のエクスプ ローラーを使用します。脅威エクスプ ローラーに表示する攻撃の量、時間の経過と、脅威の種類や、攻撃者のインフラストラクチャでは、このデータを分析することができます。インシデントの一覧については、電子メールで疑わしいをマークすることもできます。  <br/> |
-|レポート、ダッシュ ボード  <br/> |セキュリティの [レポート] セクションに&amp;、SharePoint Online 組織と Exchange Online 組織のコンプライアンス部門、監査の表示を報告します。アクセスすることも Azure Active Directory (AD) ユーザー サインインのレポートの場合、ユーザーの利用状況を報告して、Azure AD 監査ログ レポート] ページで表示します。  <br/> |
+|脅威管理ダッシュボード  <br/> |セキュリティ&amp; /コンプライアンスセンターの [脅威の管理] セクションで、このダッシュボードを使用して、既に処理されている脅威を確認し、ビジネス上の意思決定者に対して、セキュリティを確保するために既に実行されている脅威を報告する便利なツールとして使用します。出張.  <br/> |
+|脅威エクスプローラー  <br/> |これは、セキュリティ&amp; /コンプライアンスセンターの [脅威の管理] セクションにもあります。Office 365 テナントに対する攻撃を調査している、または攻撃を受けている場合は、脅威エクスプローラーを使用して脅威を分析します。脅威エクスプローラーは、時間の経過と共に攻撃の量を示します。また、脅威ファミリ、攻撃インフラストラクチャなどによって、このデータを分析することができます。インシデントリストに対して疑わしい電子メールをマークすることもできます。  <br/> |
+|レポート—ダッシュボード  <br/> |セキュリティ&amp; /コンプライアンスセンターの [レポート] セクションで、SharePoint online および Exchange Online 組織の監査レポートを表示します。[レポートの表示] ページから、azure Active Directory (AD) ユーザーのサインインレポート、ユーザーアクティビティレポート、および azure AD 監査ログにアクセスすることもできます。  <br/> |
    
-![セキュリティ&amp;コンプライアンス センターのダッシュ ボード](media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
+![セキュリティ&amp;コンプライアンスセンターダッシュボード](media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
   
-## <a name="configure-additional-exchange-online-tenant-wide-settings"></a>追加の Exchange Online テナント全体の設定を構成します。
+## <a name="configure-additional-exchange-online-tenant-wide-settings"></a>その他の Exchange Online テナント全体の設定を構成する
 
-セキュリティとコンプライアンス センターでのセキュリティと Exchange 管理センターで保護するためのコントロールの多くも含まれます。両方の場所でこれらを構成する必要はありません。推奨されるその他の設定のいくつかを次に示します。 
+Exchange 管理センターでのセキュリティと保護の多くの制御は、セキュリティ/コンプライアンスセンターにも含まれています。両方の場所にこれらを構成する必要はありません。推奨されるその他のいくつかの設定を以下に示します。 
   
-|領域。|既定のポリシー。|推奨。|
+|Area * * * *|既定のポリシーが含まれています * * * * *|推奨事項 * * * *|
 |:-----|:-----|:-----|
-|**メールの流れ**(トランスポート ルール)  <br/> |不要  <br/> | Ransomware から保護するためにメール フロー ルールを追加します。このブログ記事の「Exchange のトランスポート ルールを使用して追跡または ransomware によって使用されるファイル拡張子を持つ電子メールをブロックする方法」を参照してください: [ransomware を処理する方法](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/)です。<br><br/> 外部ドメインへのメールの自動転送を防止するトランスポート ルールを作成します。詳細については、[問題を緩和するクライアント外部転送規則セキュリティで保護されたスコア](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)を参照してください。<br/> <br>詳細:[メール フロー ルール (トランスポート ルール) では、Exchange オンライン](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx) <br/> |
-|**現代の認証を有効にします。** <br/> |不要  <br/> | Office 365 の最新の認証とは、多要素認証 (MFA) を使用するための前提条件です。メールを含む、クラウド リソースへのアクセスをセキュリティで保護するのには、MFA をお勧めします。<br/>  <br>これらのトピックを参照してください。  <br/> •[を有効または無効にする最新の認証では、Exchange オンライン](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) <br/> •[ビジネス オンラインの Skype: 最新の認証のため、テナントを有効にする](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/>  <br>Office 2016 クライアント、SharePoint Online では、およびビジネスのための OneDrive の最新の認証がデフォルトで有効です。  <br/>  <br>詳細: [Office クライアントと Office 365 を使用して最新の認証](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a) <br/> |
+|**メールフロー**(トランスポートルール)  <br/> |いいえ  <br/> | ランサムウェアから保護できるように、メールフロールールを追加します。「ランサムウェア対策に[対処する方法](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/)」の記事「Exchange トランスポートルールを使用して、ランサムウェアによって使用されているファイル拡張子を使用してメールを追跡またはブロックする方法」を参照してください。<br><br/> 外部ドメインに電子メールを自動的に転送しないようにするためのトランスポートルールを作成します。詳細については、「[セキュリティで保護されたスコアでクライアントの外部転送ルールを軽減](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)する」を参照してください。<br/> <br>詳細情報: [Exchange Online のメールフロールール (トランスポートルール)](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx) <br/> |
+|**モダン認証を有効にする** <br/> |いいえ  <br/> | Office 365 の先進認証は、多要素認証 (MFA) を使用するための前提条件です。メールを含むクラウドリソースへのアクセスを保護するために、MFA が推奨されています。<br/>  <br>次のトピックを参照してください。  <br/> • [Exchange Online で先進認証を有効または無効](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662)にする <br/> • [Skype for business Online: 最新認証のためにテナントを有効にする](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/>  <br>モダン認証は、Office 2016 クライアント、SharePoint Online、および OneDrive for business では既定で有効になっています。  <br/>  <br>詳細情報: office [365 のモダン認証を office クライアントで使用する](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a) <br/> |
    
-## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>SharePoint 管理センターのテナントの共有ポリシーを構成します。
+## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>SharePoint 管理センターでテナント全体の共有ポリシーを構成する
 
-基準計画の保護を開始して、保護レベルを増やすことでチームの SharePoint サイトを構成するためのマイクロソフトの推奨事項です。詳細については、「 [SharePoint のオンラインのセキュリティで保護されたサイトおよびファイル](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files)の使用」を参照していますください。
+SharePoint チームサイトを保護レベルを高くして構成する場合は、ベースライン保護から始めることをお勧めします。詳細については、「 [Secure SharePoint Online sites and files](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files) 」を参照してください。
   
-ベースライン レベルで構成されている SharePoint のチーム サイトでは、外部ユーザーと匿名アクセスのリンクを使用してファイルの共有を使用できます。電子メールでファイルを送信する代わりには、この方法をお勧めします。 
+ベースラインレベルで構成された SharePoint チームサイトでは、匿名アクセスリンクを使用して外部ユーザーとファイルを共有できます。この方法は、電子メールでファイルを送信する代わりに推奨されます。 
   
-基準計画の保護の目標をサポートするには、ここで推奨されているテナントの共有ポリシーを構成します。個々 のサイトの設定を共有すると、ないより寛容なのですが、このテナント全体のポリシーよりも厳しいことができます。 
+ベースライン保護の目的をサポートするには、ここで推奨されているように、テナント全体の共有ポリシーを構成します。個々のサイトの共有設定は、このテナント全体のポリシーよりも制限がありますが、制限はありません。 
   
-|領域。|既定のポリシー。|推奨。|
+|Area * * * *|既定のポリシーが含まれています * * * * *|推奨事項 * * * *|
 |:-----|:-----|:-----|
-|**共有**(SharePoint のオンラインおよびビジネスのための OneDrive)  <br/> |はい  <br/> | 外部の共有は既定で有効にします。これらの設定を推奨します。<br/>  • は、外部ユーザーを認証するように共有し、リンク (デフォルト設定) に匿名アクセスを使用するを使用できます。  <br/>  • リンクに匿名アクセスは、この何日間で期限が切れます。30 日間など、必要な場合は、番号を入力します。<br/>  • 既定のリンクの種類: 内部 (のみ、組織内のユーザー)] を選択します。匿名のリンクを使用して共有したいユーザーは、[共有] メニューからこのオプションを選択する必要があります。<br/>  <br>詳細:[外部の共有の概要](https://support.office.com/article/c8a462eb-0723-4b0b-8d0a-70feafe4be85) <br/> |
+|**共有**(SharePoint Online と OneDrive for business)  <br/> |はい  <br/> | 既定では、外部共有が有効になっています。これらの設定をお勧めします。<br/>  •認証済み外部ユーザーへの共有と匿名アクセスリンクの使用を許可します (既定の設定)。  <br/>  •匿名アクセスリンクの有効期限がこの日数を過ぎています。必要に応じて、30日などの数値を入力します。<br/>  •既定のリンクの種類— [内部] (組織内のユーザーのみ) を選択します。匿名リンクを使用して共有を希望するユーザーは、[共有] メニューからこのオプションを選択する必要があります。<br/>  <br>詳細情報:[外部共有の概要](https://support.office.com/article/c8a462eb-0723-4b0b-8d0a-70feafe4be85) <br/> |
    
-SharePoint 管理者センターとビジネス管理センターの OneDrive には、同じ設定が含まれます。いずれかの管理センターの設定は、両方に適用されます。
+SharePoint 管理センターと OneDrive for business 管理センターには、同じ設定が含まれています。どちらの管理センターの設定も、両方に適用されます。
   
-## <a name="configure-settings-in-azure-active-directory"></a>Azure Active Directory 内の設定を構成します。
+## <a name="configure-settings-in-azure-active-directory"></a>Azure Active Directory で設定を構成する
 
-安全な環境のテナントのセットアップを完了する、Azure Active Directory でこれら 2 つの領域にアクセスすることを確認します。
+セキュリティで保護された環境でのテナント全体のセットアップを完了するには、Azure Active Directory のこれら2つの領域を参照してください。
   
-### <a name="configure-named-locations-under-conditional-access"></a>(条件付きアクセス)] の下の名前付きの場所を構成します。
+### <a name="configure-named-locations-under-conditional-access"></a>名前付きの場所を構成する (条件付きアクセスの場合)
 
-組織には、セキュリティで保護されたネットワーク アクセスのオフィスが含まれている場合は、名前付きの場所として Azure Active Directory に信頼される側の IP アドレスの範囲を追加します。この機能では、サインインのリスク イベントの偽陽性の報告されたの数を減らすのに役立ちます。 
+セキュリティで保護されたネットワークアクセスを備えたオフィスが組織に含まれている場合は、名前付きの場所として、信頼できる IP アドレス範囲を Azure Active Directory に追加します。この機能により、サインインリスクイベントに対して報告される誤検知の数を減らすことができます。 
   
-[Azure Active Directory 内の名前付きの場所](https://docs.microsoft.com/azure/active-directory/active-directory-named-locations)を参照してください。
+参照: [Azure Active Directory の名前付きの場所](https://docs.microsoft.com/azure/active-directory/active-directory-named-locations)
   
-### <a name="block-apps-that-dont-support-modern-authentication"></a>現代の認証をサポートしていないアプリケーションをブロック
+### <a name="block-apps-that-dont-support-modern-authentication"></a>モダン認証をサポートしていないアプリをブロックする
 
-多要素認証では、最新の認証をサポートするアプリケーションが必要です。条件付きのアクセス ルールを使用して、最新の認証をサポートしていないアプリケーションをブロックできません。
+多要素認証では、先進認証をサポートするアプリが必要です。モダン認証をサポートしていないアプリは、条件付きアクセスルールを使用してブロックすることはできません。
   
-セキュリティで保護された環境では、必ず最新の認証をサポートしていないアプリケーションの認証を無効にします。この設定がまもなくリリースされる、コントロールに Azure Active Directory で行うことができます。
+セキュリティで保護された環境では、先進認証をサポートしていないアプリの認証を無効にしてください。Azure Active Directory でこれを行うには、近日中にコントロールを使用します。
   
-間、SharePoint Online およびビジネスのための OneDrive のためには、次の方法のいずれかを使用します。
+その間、次のいずれかの方法を使用して、SharePoint Online と OneDrive for business でこれを実行します。
   
-- PowerShell を使用して、[最新の認証を使用しないブロックのアプリケーション](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication)を参照してください。
+- PowerShell を使用する場合は、「[モダン認証を使用していないアプリをブロックする](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication)」を参照してください。
     
-- この構成は、SharePoint の管理センターで、「デバイスへアクセスのページ、「最新の認証を使用していないアプリケーションからのアクセスを制御する」ブロックを選択します。 
+- これを SharePoint 管理センターの [デバイスアクセス] ページ ("モダン認証を使用していないアプリからアクセスを制御する") で構成します。[ブロック] を選択します。 
     
-## <a name="get-started-with-cloud-app-security-or-office-365-cloud-app-security"></a>クラウド アプリケーションのセキュリティ、または Office 365 のクラウド アプリケーションのセキュリティを開始します。
+## <a name="get-started-with-cloud-app-security-or-office-365-cloud-app-security"></a>cloud app security または Office 365 cloud app security の使用を開始する
 
-不審な動作は、[アラートのリスクを評価して自動的にアクションを実行するのには、Office 365 のクラウド アプリケーションのセキュリティを使用します。Office 365 の E5 の計画が必要です。
+Office 365 Cloud App Security を使用して、リスクを評価し、疑わしいアクティビティについての警告を行い、自動的にアクションを実行します。Office 365 E5 プランが必要です。
   
-または、マイクロソフトのクラウド アプリケーションのセキュリティを使用して、詳細表示のアクセスを許可した後でも、包括的なコントロール、およびすべてのクラウド アプリケーション、Office 365 をなどの保護の強化を取得します。 
+または、Microsoft cloud App Security を使用して、アクセスが許可された後でも、Office 365 を含むすべてのクラウドアプリケーションに対する包括的な制御と、保護を強化した後でも、より深い可視性を得ることができます。 
   
-このソリューションでは、EMS の E5 のプランをお勧め、ためにを開始するクラウド アプリケーションのセキュリティを使用できるようにこの他の SaaS アプリケーションと、環境内をお勧めします。既定のポリシーと設定を開始します。
+このソリューションでは EMS E5 プランが推奨されるため、これを環境内の他の SaaS アプリケーションで使用できるように、Cloud App Security から始めることをお勧めします。既定のポリシーと設定を使用して開始します。
   
 詳しくは、以下の資料を参照してください。
   
@@ -120,10 +120,10 @@ SharePoint 管理者センターとビジネス管理センターの OneDrive �
   
 ## <a name="additional-resources"></a>その他のリソース
 
-これらの記事とガイドは、Office 365 環境内のセキュリティ保護に関する規範的な追加の情報を提供します。
+これらの記事およびガイドでは、Office 365 環境を保護するためのその他の規範となる情報を提供します。
   
-- [政治運動、慈善団体、およびその他のアジャイルな組織での Microsoft セキュリティ ガイダンス](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance)(特にクラウド専用環境ではどのような環境でこれらの推奨設定を使用できます) 
+- [政治キャンペーン、非営利組織、およびその他のアジャイル組織のための Microsoft security ガイダンス](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance)(特にクラウドのみの環境では、これらの推奨事項を使用できます) 
     
-- [推奨セキュリティ ポリシーとユーザーとデバイスの構成](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-365-policies-configurations)(これらの推奨事項は、AD FS の環境に対するヘルプを含む) 
+- [id とデバイスに推奨されるセキュリティポリシーと構成](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-365-policies-configurations)(これらの推奨事項は、AD FS 環境のヘルプを含みます) 
     
 

@@ -1,26 +1,26 @@
 ---
-title: Office 365 のユーザーと管理者のアクティビティの監査ログを検索します。
+title: Office 365 で監査ログを検索してユーザーと管理者のアクティビティを調べる
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 5/18/2018
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
-description: Office 365 の監査ログは、統合された監査ログです。理由統一された監査ログを記録しますか。あなたの組織は、ほとんどの Office 365 サービスからのイベントをサブスクライブするためは、検索可能な単一の監査ログに記録されます。つまり、ユーザーとこれらのサービスの管理者のアクティビティを検索できます。
-ms.openlocfilehash: 230502f331babeef8f89eacce0d19a7756cb96fc
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: Office 365 監査ログは、統合監査ログです。なぜ統合監査ログがあるのですか。組織が加入しているほとんどの Office 365 サービスからのイベントは、検索可能な単一の監査ログに記録されるためです。つまり、次のサービスでユーザーおよび管理者のアクティビティを検索できます。
+ms.openlocfilehash: ec67c63cff57f95bacabd120c466922870b595b4
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038030"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214087"
 ---
-# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Office 365 のユーザーと管理者のアクティビティの監査ログを検索します。
+# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Office 365 で監査ログを検索してユーザーと管理者のアクティビティを調べる
 
-Office 365 の監査ログは、統合された監査ログです。理由統一された監査ログを記録しますか。あなたの組織は、ほとんどの Office 365 サービスからのイベントをサブスクライブするためは、検索可能な単一の監査ログに記録されます。つまり、ユーザーとこれらのサービスの管理者のアクティビティを検索できます。 
+Office 365 監査ログは、統合監査ログです。なぜ統合監査ログがあるのですか。組織が加入しているほとんどの Office 365 サービスからのイベントは、検索可能な単一の監査ログに記録されるためです。つまり、次のサービスでユーザーおよび管理者のアクティビティを検索できます。 
   
 - SharePoint
 - OneDrive
@@ -33,20 +33,20 @@ Office 365 の監査ログは、統合された監査ログです。理由統一
 - Sway
 - Microsoft Stream
    
- ## <a name="set-up-auditing"></a>監査を設定します。
+ ## <a name="set-up-auditing"></a>監査の設定
   
-Office 365 の監査ログを検索する前に実行する必要があるほとんどの点がありません。
+Office 365 監査ログを検索するには、いくつかの作業を行う必要があります。
   
-- 検索可能なイベントの記録を開始するのには[監査ログの検索の有効化](turn-audit-log-search-on-or-off.md) 
+- [監査ログの検索を有効](turn-audit-log-search-on-or-off.md)にして、検索可能なイベントの記録を開始する 
     
-- メールボックスに関連するイベントを検索することができますので、[メールボックスの監査を有効にする](enable-mailbox-auditing.md)をなどとユーザーがサインイン、メールボックスまたはパージの項目に、[回復可能なアイテム] フォルダーから 
+- メールボックスに関連するイベントを検索できるように、[メールボックスの監査を有効に](enable-mailbox-auditing.md)します。ユーザーが自分のメールボックスにサインインした場合や、回復可能なアイテムフォルダーからアイテムを削除した場合などです。 
     
- ## <a name="search-the-audit-log"></a>監査ログを検索する
+ ## <a name="search-the-audit-log"></a>監査ログの検索
   
-監査を有効にした後は何百もの個々 の複数の Office 365 サービスからのイベントの種類を検索します。
+監査を有効にした後は、複数の Office 365 サービスから、何百もの種類のイベントを検索します。
   
-- ユーザーと管理者のアクティビティの[監査ログを検索](search-the-audit-log-in-security-and-compliance.md) 
+- ユーザーおよび管理者のアクティビティの[監査ログを検索する](search-the-audit-log-in-security-and-compliance.md) 
     
-- 各監査レコードが検索結果に含まれている[詳細なプロパティを理解する](detailed-properties-in-the-office-365-audit-log.md) 
+- 検索結果に含まれる各監査レコードの[詳細なプロパティを理解する](detailed-properties-in-the-office-365-audit-log.md) 
     
-- 管理者およびコンプライアンス マネージャーによって実行される[アクティビティの電子的証拠開示に関連する検索](search-for-ediscovery-activities-in-the-audit-log.md) 
+- 管理者およびコンプライアンスマネージャーによって実行された[電子情報開示関連アクティビティを検索](search-for-ediscovery-activities-in-the-audit-log.md)する 

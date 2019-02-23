@@ -1,35 +1,35 @@
 ---
-title: EU 税 Id 番号
+title: EU 税務識別番号
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f04919c8-2356-4de2-bb2a-b9f67f339726
-description: このトピックでは、データ損失防止 (DLP) ポリシーがどの EU 税 Id 番号の機密性の高い情報の種類が検出されたときを示します。この機密性の高い情報の種類は、さまざまなパターン、キーワード、および各都道府県の他の証拠を定義します。
-ms.openlocfilehash: 5192496b393d15fd6d063e09c9bfe1cb3dd7e2dd
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 税務識別番号の機密情報の種類を検出したときにどのように検索されるかを示します。この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
+ms.openlocfilehash: f851cce4be70fd41c24a7876d97c452f0a738eda
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532123"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213827"
 ---
-# <a name="eu-tax-identification-number"></a>EU 税 Id 番号
+# <a name="eu-tax-identification-number"></a>EU 税務識別番号
 
-このトピックでは、データ損失防止 (DLP) ポリシーがどの EU 税 Id 番号 (TIN) 機密情報の種類が検出されたときを示します。この機密性の高い情報の種類は、さまざまなパターン、キーワード、および各都道府県の他の証拠を定義します。
+このトピックでは、データ損失防止 (DLP) ポリシーが EU 税務識別番号 (TIN) 機密情報の種類を検出したときにどのように検索されるかを示します。この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
   
 ## <a name="austria"></a>オーストリア
 
 ### <a name="format"></a>形式
 
-任意指定のハイフンとスラッシュの 9 つの数字
+任意指定のハイフンとスラッシュ (/) を含む9桁の数字
   
 ### <a name="pattern"></a>パターン
 
-任意指定のハイフンとスラッシュで 9 つの数字。
+任意指定のハイフンとスラッシュ (/) を含む9桁の数字:
   
 -  2 桁の数字 
     
@@ -49,13 +49,13 @@ ms.locfileid: "22532123"
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_austria_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_austria_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_austria_eu_tax_file_number`があります。 
+- from `Keywords_austria_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_austria_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_austria_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -70,13 +70,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsaustriaeutaxfilenumber"></a>Keywords_austria_eu_tax_file_number
 
-税番号
+課税番号
   
-番号
+件数
   
 税務登録番号
   
@@ -91,7 +91,7 @@ steuernummer
 
 ### <a name="format"></a>形式
 
-スペースや区切り記号なし 11 桁の数字
+スペースと区切り文字を含まない11桁の数字
   
 ### <a name="pattern"></a>パターン
 
@@ -99,11 +99,11 @@ steuernummer
   
 - 2 桁の数字
     
-- 「0」または「1」
+- "0" または "1"
     
 - 1 桁の数字
     
-- 「0」または「1」または「2」または「3」 
+- "0" または "1" または "2" または "3" 
     
 - 6 桁の数字
     
@@ -111,13 +111,13 @@ steuernummer
 
 該当なし
   
-### <a name="definition"></a>定義
+### <a name="definition"></a>Definition
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現`Regex_belgium_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 正規表現`Regex_belgium_eu_tax_file_number`は、パターンに一致するコンテンツを検出します。 
     
-- キーワードの`Keywords_belgium_eu_tax_file_number`があります。 
+- from `Keywords_belgium_eu_tax_file_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Tax File Number -->
@@ -129,24 +129,24 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsbelgiumeutaxfilenumber"></a>Keywords_belgium_eu_tax_file_number
 
-税番号
+課税番号
   
-国内の登録番号
+国内登録番号
   
 税務登録番号
   
 tax id
 
   
-%n
+\n\n
   
-%n #
+\n\n
   
-numéro de registre の国
+numéro de registre national
   
 numéro d'identification fiscale
   
@@ -154,7 +154,7 @@ numéro d'identification fiscale
 
 ### <a name="format"></a>形式
 
-スペースや区切り記号なしの 10 桁
+スペースと区切り文字を含まない10桁の数字
   
 ### <a name="pattern"></a>パターン
 
@@ -168,13 +168,13 @@ numéro d'identification fiscale
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_bulgaria_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_bulgaria_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_bulgaria_eu_tax_file_number`があります。 
+- from `Keywords_bulgaria_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_bulgaria_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_bulgaria_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -189,51 +189,51 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsbulgariaeutaxfilenumber"></a>Keywords_bulgaria_eu_tax_file_number
 
 bucn
   
-統一された民事上の数
+一律の民事番号
   
 bucn #
   
 uniformcivilnumber #
   
-民事 id の統一
+uniform 民事 id
   
-民事なしの統一されました。
+uniform 民事 no
   
-egn
+「//入力 n」
   
-ブルガリア語の統一された民事数
+ブルガリアの一様な民事訴訟番号
   
 uniformcivilno #
   
-egn #
+"/入力 id"
   
-УНИФОРМ ГРАЖДАНСКИ НОМЕР
+униформгражданскиномер
   
-Униформ id
+униформ id
   
-Униформ граждански id
+униформграждански id
   
-УНИФОРМ ГРАЖДАНСКИ НЕ
+униформгражданскине
   
 ## <a name="croatia"></a>クロアチア
 
 ### <a name="format"></a>形式
 
-スペースや区切り文字なしで 11 桁の数字
+スペースまたは区切り文字を含まない11桁の数字
   
 ### <a name="pattern"></a>パターン
 
 11 桁の数字:
   
-- ランダムに選択した 10 個の数字
+- ランダムに選択された10桁の数字
     
-- 1 つのチェック ディジット
+- 1つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
@@ -243,13 +243,13 @@ egn #
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_croatia_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_croatia_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_croatia_eu_tax_file_number`があります。 
+- from `Keywords_croatia_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_croatia_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_croatia_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -264,20 +264,20 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordscroatiaeutaxfilenumber"></a>Keywords_croatia_eu_tax_file_number
 
-税番号
+課税番号
   
-税
+申告
   
 tax id
 
   
-oid
+ドーナツ
   
-oid 番号
+ドーナツ
   
 porezni broj
   
@@ -285,17 +285,17 @@ porezni broj
 
 ### <a name="format"></a>形式
 
-8 桁と指定されたパターンの 1 つの文字
+指定したパターンの8桁の数字と1文字
   
 ### <a name="pattern"></a>パターン
 
-8 桁の数字および文字を 1 つ。
+8桁の数字と1つの文字:
   
--  「0」 
+-  "0" 
     
 - 7 桁の数字 
     
-- 1 つの文字 (文字列)
+- 1文字 (大文字小文字を区別しない)
     
 ### <a name="checksum"></a>チェックサム
 
@@ -305,13 +305,13 @@ porezni broj
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_cyprus_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_cyprus_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_cyprus_eu_tax_file_number`があります。 
+- from `Keywords_cyprus_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_cyprus_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_cyprus_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -326,56 +326,56 @@ Pattern confidenceLevel="75">
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordscypruseutaxfilenumber"></a>Keywords_cyprus_eu_tax_file_number
 
-税番号
+課税番号
   
-税
+申告
   
 tax id
 
   
-税の識別コード
+税 id コード
   
-tic
+認め
   
-tic #
+認め
   
-ΑΡΙΘΜΌΣ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
+αριθμόςφορολογικούμητρώου
   
-ΦΟΡΟΛΟΓΙΚΉ ΤΑΥΤΌΤΗΤΑ
+φορολογικήταυτότητα
   
-ΚΩΔΙΚΌΣ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
+κωδικόςφορολογικούμητρώου
   
 ## <a name="czech-republic"></a>チェコ共和国
 
 ### <a name="format"></a>形式
 
-オプションの円記号と 9 桁または 10 桁の数字
+9桁または10桁の数字 (省略可能な円記号付き)
   
 ### <a name="pattern"></a>パターン
 
-9 桁または 10 桁の数字、省略可能な backslashl で:
+9桁または10桁の数字で、省略可能な backslashl を指定します。
   
 - 6 桁の数字 
     
-- バック スラッシュ (省略可能)
+- 円記号 (省略可能)
     
-- 3 つまたは 4 つの数字
+- 3桁または4桁の数字
     
 ### <a name="checksum"></a>チェックサム
 
 該当なし
   
-### <a name="definition"></a>定義
+### <a name="definition"></a>Definition
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現`Regex_czech_republic_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 正規表現`Regex_czech_republic_eu_tax_file_number`は、パターンに一致するコンテンツを検出します。 
     
-- キーワードの`Keywords_czech_republic_eu_tax_file_number`があります。 
+- from `Keywords_czech_republic_eu_tax_file_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Tax File Number -->
@@ -387,38 +387,38 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsczechrepubliceutaxfilenumber"></a>Keywords_czech_republic_eu_tax_file_number
 
-税番号
+課税番号
   
-税
+申告
   
 tax id
 
   
 個人番号
   
-daňové číslo
+daňovéčíslo
   
-osobní číslo
+osobníčíslo
   
 ## <a name="denmark"></a>デンマーク
 
 ### <a name="format"></a>形式
 
-10 桁の数字、ハイフンを含む
+10桁の数字 (ハイフンを含む)
   
 ### <a name="pattern"></a>パターン
 
-10 個の数字が、hyphenl が含まれています。
+hyphenl を含む10桁の数字:
   
--  6 桁の数字が日付の生年月日に対応します。 
+-  誕生日に対応する6桁の数字 (ddmmyy) 
     
 - ハイフン 1 つ 
     
-- 生年月日の 4 桁の年に最初の桁が対応するシーケンス番号に対応する 4 桁の数字と最後の桁は、個人の性別を (男性と女性の場合でも、奇数ページ) に対応します。
+- 1桁目が誕生日の世紀に対応し、最後の桁は個人の性別に対応する4桁の数字 (男性の場合は奇数、女性の場合もあります)。
     
 ### <a name="checksum"></a>チェックサム
 
@@ -428,13 +428,13 @@ osobní číslo
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_denmark_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_denmark_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_denmark_eu_tax_file_number`があります。 
+- from `Keywords_denmark_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_denmark_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_denmark_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -449,42 +449,42 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsdenmarkeutaxfilenumber"></a>Keywords_denmark_eu_tax_file_number
 
-税番号
+課税番号
   
-税
+申告
   
 tax id
 
   
-cpr の数
+cpr 番号
   
-cpr #
+cpr
   
-skat nummer
+nummer の sk
   
-skat id
+id の sk
   
 ## <a name="estonia"></a>エストニア
 
 ### <a name="format"></a>形式
 
-スペースや区切り文字なしで 11 桁の数字
+スペースまたは区切り文字を含まない11桁の数字
   
 ### <a name="pattern"></a>パターン
 
 11 桁の数字:
   
--  性別および誕生日、奇数個 (オス) を示し、ことを示します (メス) を次のように、偶数の世紀に対応する 1 つの数字: 1, 2; 19 世紀の最後の3、4 の 20 世紀の年です。5、6、21 世紀の 
+-  性別と世紀に対応する1桁の数字。奇数は男性を表し、偶数の場合は1、2は19世紀に対しては女性を示します。20世紀に3、4世紀。21世紀の場合は5、6。 
     
-- 生年月日 (YYMMDD) に対応する 6 桁の数字
+- 誕生日に対応する6桁の数字 (yymmdd という)
     
-- シリアル番号が同じ日に生まれた人を分離することに対応する 3 桁の数字
+- 同じ日付に出生地を分けるシリアル番号に対応する3桁の数字
     
-- 1 つのチェック ディジット
+- 1つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
@@ -494,13 +494,13 @@ skat id
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_estonia_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_estonia_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_estonia_eu_tax_file_number`があります。 
+- from `Keywords_estonia_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_estonia_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_estonia_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -515,13 +515,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsestoniaeutaxfilenumber"></a>Keywords_estonia_eu_tax_file_number
 
-税番号
+課税番号
   
-税
+申告
   
 tax id
 
@@ -538,19 +538,19 @@ isikukood
 
 ### <a name="format"></a>形式
 
-数字、11 文字の組み合わせは、次の文字、およびプラス記号とマイナス記号
+数字、文字、プラス記号とマイナス記号の11文字の組み合わせ
   
 ### <a name="pattern"></a>パターン
 
-数字、11 文字の組み合わせは、次の文字、およびプラス記号とマイナス記号。
+数字、文字、プラス記号とマイナス記号の11文字の組み合わせ。
   
 - 6 桁の数字
     
-- 次のいずれか: プラス記号、マイナス記号またはプラス記号の意味、文字"A"(大文字小文字を区別) 1800-1899 の間に生まれたマイナスの署名との間に生まれた意味 1900-1999 年、および"2000 の誕生は A"し、
+- プラス記号、マイナス記号、または文字 "a" (大文字小文字を区別しない) の1つ。プラス記号を1800-1899 の間に置きます。マイナス記号は、1900-1999 の間に出生することを意味します。
     
 - 3 桁の数字
     
-- 1 つの文字または 1 つの数字
+- 1つの文字または1つの番号
     
 ### <a name="checksum"></a>チェックサム
 
@@ -560,13 +560,13 @@ isikukood
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_finland_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_finland_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_finland_eu_tax_file_number`があります。 
+- from `Keywords_finland_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_finland_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_finland_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -581,14 +581,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsfinlandeutaxfilenumber"></a>Keywords_finland_eu_tax_file_number
 
 identification number
 
   
-パーソナル id
+個人 id
   
 id 番号
   
@@ -596,51 +596,51 @@ id 番号
   
 personalidnumber #
   
-国際識別番号
+国別の識別番号
   
 id 番号
   
-国民 id なし。
+国民 id 番号
   
 国民 id 番号
   
-id なし
+id 番号
   
-tunnistenumero
+tun/st列挙 o
   
 henkilötunnus
   
-yksilöllinen henkilökohtainen tunnistenumero
+yksilöllinen henkilökohtainen tun/st列挙 o
   
 ainutlaatuinen henkilökohtainen tunnus
   
-identiteetti して
+識別子 teetti numero
   
 suomen kansallinen henkilötunnus
   
 henkilötunnusnumero #
   
-kansallisen tunnistenumero
+kansallisen tun/st列挙 o
   
 tunnusnumero
   
-kansallinen tunnus して
+kansallinen tunnus numero
   
 ## <a name="france"></a>フランス
 
 ### <a name="format"></a>形式
 
-個人やエンティティの 9 桁の 13 桁の数字
+各ユーザーの13桁の数字、およびエンティティの9桁の数字
   
 ### <a name="pattern"></a>パターン
 
-個人の 13 桁の数字。
+個人の場合は13桁。
   
-- 1 桁の 0、1、2、または 3 にする必要があります。
+- 0、1、2、または3である1桁の数字
     
 - 12 桁の数字
     
-エンティティの 9 桁の数字
+エンティティの9桁の数字
   
 ### <a name="checksum"></a>チェックサム
 
@@ -650,13 +650,13 @@ kansallinen tunnus して
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_france_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_france_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_france_eu_tax_file_number`があります。 
+- from `Keywords_france_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_france_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_france_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -671,13 +671,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsfranceeutaxfilenumber"></a>Keywords_france_eu_tax_file_number
 
-税 id 番号
+税識別番号
   
-税番号
+課税番号
   
 tax id
 
@@ -688,15 +688,15 @@ numéro d'identification fiscale
 
 ### <a name="format"></a>形式
 
-スペースや区切り記号なし 11 桁の数字
+スペースと区切り文字を含まない11桁の数字
   
 ### <a name="pattern"></a>パターン
 
-11 桁の数字。
+11桁の数字:
   
--  10 桁の数字 
+-  10桁の数字 
     
-- 1 つのチェック ディジット
+- 1つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
@@ -706,13 +706,13 @@ numéro d'identification fiscale
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_germany_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_germany_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_germany_eu_tax_file_number`があります。 
+- from `Keywords_germany_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_germany_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_germany_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -727,13 +727,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsgermanyeutaxfilenumber"></a>Keywords_germany_eu_tax_file_number
 
-税番号
+課税番号
   
-なしの税です。
+課税番号
   
 taxno #
   
@@ -746,9 +746,9 @@ tax id
   
 taxid #
   
-税 id 番号
+税識別番号
   
-税 id が不要です。
+税 id 番号
   
 steuernummer
   
@@ -760,7 +760,7 @@ steueridentifikationsnummer
 
 ### <a name="format"></a>形式
 
-スペースや区切り記号なしの 9 桁
+スペースと区切り文字を含まない9桁の数字
   
 ### <a name="pattern"></a>パターン
 
@@ -770,13 +770,13 @@ steueridentifikationsnummer
 
 該当なし
   
-### <a name="definition"></a>定義
+### <a name="definition"></a>Definition
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現`Regex_greece_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 正規表現`Regex_greece_eu_tax_file_number`は、パターンに一致するコンテンツを検出します。 
     
-- キーワードの`Keywords_greece_eu_tax_file_number`があります。 
+- from `Keywords_greece_eu_tax_file_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Tax File Number -->
@@ -788,7 +788,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsgreeceeutaxfilenumber"></a>Keywords_greece_eu_tax_file_number
 
@@ -797,51 +797,51 @@ afm
 tin
 
   
-税 id のないです。
+納税者番号
   
-税 id のないです。
+納税者番号
   
-税 id 番号
+税識別番号
   
-税登録番号
+納税者番号
   
-レジストリを税不要です。
+納税レジストリ番号
   
-afm #
+afm
   
-tin #
+は
   
 taxidno #
   
 taxregistryno #
   
-ΑΡΙΘΜΌΣ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
+αριθμόςφορολογικούμητρώου
   
 aφμ
   
-aφμ αριθμός
+aφμαριθμός
   
-ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ ΝΟ。
+φορολογικούμητρώουνο。
   
-ΤΟΝ ΑΡΙΘΜΌ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
+τοναριθμόφορολογικούμητρώου
   
 ## <a name="hungary"></a>ハンガリー
 
 ### <a name="format"></a>形式
 
-スペースや区切り文字で 10 桁の数字
+スペースまたは区切り文字を含まない10桁の数字
   
 ### <a name="pattern"></a>パターン
 
-10 桁の数字。
+10桁の数字:
   
--  1 桁の数字「8」をする必要があります。 
+-  "8" である1桁の数字 
     
-- 日付間の日数に対応する 5 桁の数字 01/01/1867 および個人の生まれた日
+- 日付01/01/1867 と個人の誕生日との間の日数に対応する5桁の数字
     
-- 同じ日に生まれた個人を区別するために偶然に生成された番号に対応する 3 桁の数字
+- 同じ日に生まれた個人を区別する機会によって生成された番号に対応する3桁の数字
     
-- 1 つのチェック ディジット
+- 1つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
@@ -851,13 +851,13 @@ aφμ αριθμός
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_hungary_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_hungary_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_hungary_eu_tax_file_number`があります。 
+- from `Keywords_hungary_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_hungary_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_hungary_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -872,29 +872,29 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordshungaryeutaxfilenumber"></a>Keywords_hungary_eu_tax_file_number
 
-ハンガリー語の税 id 番号
+ハンガリーの税識別番号
   
-ハンガリー語の tin
+ハンガリー tin
   
-税 id 番号
+納税者番号
   
 vat 番号
   
-税務当局がありません。
+税務当局番号
   
-税 id 税 id の番号
+課税 id 番号
   
 taxidnumber #
   
-tin #
+は
   
 hungatiantin #
   
-税の識別をしません。
+税 id 番号
   
 taxidno #
   
@@ -908,15 +908,15 @@ adóhatóság szám
 
 ### <a name="format"></a>形式
 
-スペースや区切り記号のない文字の後に 7 桁の数字
+7桁の数字の後にスペースまたは区切り文字を含まない文字
   
 ### <a name="pattern"></a>パターン
 
-文字の後に 7 桁の数字:
+7桁の数字の後に、文字を続けます。
   
 -  7 桁の数字  
     
-- 1 つの文字 (文字列)
+- 1文字 (大文字小文字を区別しない)
     
 ### <a name="checksum"></a>チェックサム
 
@@ -926,13 +926,13 @@ adóhatóság szám
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_ireland_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_ireland_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_ireland_eu_tax_file_number`があります。 
+- from `Keywords_ireland_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_ireland_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_ireland_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -947,27 +947,27 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsirelandeutaxfilenumber"></a>Keywords_ireland_eu_tax_file_number
 
-公共サービスなし
+パブリックサービスいいえ
   
-個人の公的サービスなし
+個人用パブリックサービスいいえ
   
-pps なし
+pps no
   
-個人サービスなし
+個人サービスいいえ
   
-pps のサービスなし
+pps サービスいいえ
   
 ppsno #
   
-アイルランド pps なし
+アイルランド語 (pps)
   
 publicserviceno #
   
-個人の公的サービスの数
+個人用パブリックサービス番号
   
 uimhir phearsanta seirbhíse poiblí
   
@@ -979,25 +979,25 @@ uimhir aitheantais phearsanta
 
 ### <a name="format"></a>形式
 
-16 文字と数字で指定されたパターン
+指定したパターンの16桁の文字と数字
   
 ### <a name="pattern"></a>パターン
 
-16 の文字と数字の場合。
+16桁の文字と数字:
   
--  ファミリ名の最初の 3 つの子音に対応する 3 つの文字 
+-  ファミリ名の最初の3つの子音に対応する3つの文字 
     
-- 第 1、3 番目および 4 番目に対応する 3 文字名の子音
+- 最初の名前の最初、3番目、および4番目の子音に対応する3つの文字
     
-- 2 桁の桁の誕生年の最後に対応しています。
+- 誕生年の最後の桁に対応する2桁の数字
     
-- 生年月日の月に対応する 1 つの数字、文字は、アルファベット順で使用されますが、た E、H、L、M、P、t、R には、使用 (つまり、1 月 A で、10 月 R)
+- 誕生日に対応する1桁の数字。文字はアルファベット順に使用されますが、a から E、H、L、M、P、R から T までの文字が使用されます (つまり、1月は a と10月は r)。
     
-- 男女を区別するために女性の誕生日の日に 40 を追加する位置の生年月日の月の日付に対応する 2 つの数字
+- 誕生日に対応する2桁の数字。40が男性と区別するために女性の誕生日に追加されます。
     
-- 個人の生まれた場所の自治体に特定の市外局番に対応する 4 桁の数字、国全体のコードを使用して外部の国
+- 個人が生まれた municipality に固有のエリアコードに対応する4桁の数字。国全体のコードが外国の国に使用されます。
     
-- 1 つのチェック ディジット
+- 1つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
@@ -1007,13 +1007,13 @@ uimhir aitheantais phearsanta
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_italy_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_italy_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_italy_eu_tax_file_number`があります。 
+- from `Keywords_italy_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_italy_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_italy_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1028,13 +1028,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsitalyeutaxfilenumber"></a>Keywords_italy_eu_tax_file_number
 
-税番号
+課税番号
   
-なしの税です。
+課税番号
   
 taxno #
   
@@ -1047,7 +1047,7 @@ tax id
   
 taxid #
   
-会計年度コード
+会計コード
   
 codice fiscale
   
@@ -1055,15 +1055,15 @@ codice fiscale
 
 ### <a name="format"></a>形式
 
-スペースや区切り文字なしで 11 桁の数字
+スペースまたは区切り文字を含まない11桁の数字
   
 ### <a name="pattern"></a>パターン
 
-指定したパターンに 11 桁の数字
+指定したパターンの11桁の数字
   
--  生年月日の日付に対応する 6 桁の数字 
+-  誕生日に対応する6桁の数字 (ddmmyy) 
     
-- 生年月日が「0」は、19 世紀に対応して、20 世紀年を「1」に対応して、"2"は、21 世紀の世紀に対応する 1 つの数字
+- "0" が19世紀に対応する1桁の数字、"1" は20世紀に、"2" は21世紀に対応します。
     
 - 4 桁の数字
     
@@ -1075,13 +1075,13 @@ codice fiscale
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_latvia_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_latvia_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_latvia_eu_tax_file_number`があります。 
+- from `Keywords_latvia_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_latvia_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_latvia_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1096,13 +1096,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordslatviaeutaxfilenumber"></a>Keywords_latvia_eu_tax_file_number
 
-税番号
+課税番号
   
-なしの税です。
+課税番号
   
 taxno #
   
@@ -1115,9 +1115,9 @@ tax id
   
 taxid #
   
-税 id 番号
+税識別番号
   
-税 id が不要です。
+税 id 番号
   
 nodokļa numurs
   
@@ -1129,7 +1129,7 @@ nodokļu identifikācija numurs
 
 ### <a name="format"></a>形式
 
-スペースや区切り文字なし 11 桁の数字
+11桁の数字 (スペースまたは区切り文字なし)
   
 ### <a name="pattern"></a>パターン
 
@@ -1143,13 +1143,13 @@ nodokļu identifikācija numurs
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_lithuania_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_lithuania_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_lithuania_eu_tax_file_number`があります。 
+- from `Keywords_lithuania_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_lithuania_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_lithuania_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1164,15 +1164,15 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordslithuaniaeutaxfilenumber"></a>Keywords_lithuania_eu_tax_file_number
 
-税番号
+課税番号
   
-なしの税です。
+課税番号
   
-税なしで
+課税 no. #
   
 taxnumber #
   
@@ -1183,9 +1183,9 @@ tax id
   
 taxid #
   
-税 id 番号
+税識別番号
   
-税 id が不要です。
+税 id 番号
   
 mokesčių id
   
@@ -1193,11 +1193,11 @@ mokesčių numeris
   
 mokesčių identifikavimas numeris
   
-## <a name="luxemburg"></a>ルクセンブルグ
+## <a name="luxemburg"></a>ルクセンブルク
 
 ### <a name="format"></a>形式
 
-スペースや区切り記号で 13 桁の数字
+13桁の数字、スペースまたは区切り記号なし
   
 ### <a name="pattern"></a>パターン
 
@@ -1215,13 +1215,13 @@ mokesčių identifikavimas numeris
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_luxemburg_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_luxemburg_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_luxemburg_eu_tax_file_number`があります。 
+- from `Keywords_luxemburg_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_luxemburg_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_luxemburg_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1236,13 +1236,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsluxemburgeutaxfilenumber"></a>Keywords_luxemburg_eu_tax_file_number
 
-税番号
+課税番号
   
-なしの税です。
+課税番号
   
 taxno #
   
@@ -1255,9 +1255,9 @@ tax id
   
 taxid #
   
-税 id 番号
+税識別番号
   
-税 id が不要です。
+税 id 番号
   
 steuernummer
   
@@ -1269,19 +1269,19 @@ steueridentifikationsnummer
 
 ### <a name="format"></a>形式
 
-マルタ籍の人々 の: 7 桁と指定されたパターンの 1 つの文字
+マルタ nationals の場合: 7 桁の数字と、指定したパターンの1文字
   
-マルタ語のない外国人向けのも、マルタ語のエンティティ: 9 桁の数字
+非マルタ nationals およびマルタエンティティ: 9 桁の数字
   
 ### <a name="pattern"></a>パターン
 
-マルタ籍の人々: 7 桁の数字および文字を 1 つ
+マルタ nationals: 7 桁と1文字
   
 -  7 桁の数字  
     
-- 1 つの文字 (文字列)
+- 1文字 (大文字小文字を区別しない)
     
-マルタ語のない外国人向けのも、マルタ語のエンティティ: 9 桁の数字
+非マルタ nationals およびマルタエンティティ: 9 桁の数字
   
 -  9 桁の数字 
     
@@ -1289,17 +1289,17 @@ steueridentifikationsnummer
 
 該当なし
   
-### <a name="definition"></a>定義
+### <a name="definition"></a>Definition
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_malta_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_malta_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_malta_eu_tax_file_number`があります。 
+- from `Keywords_malta_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、65% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_malta_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_malta_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1314,13 +1314,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsmaltaeutaxfilenumber"></a>Keywords_malta_eu_tax_file_number
 
-税番号
+課税番号
   
-なしの税です。
+課税番号
   
 taxno #
   
@@ -1333,21 +1333,21 @@ tax id
   
 taxid #
   
-税 id 番号
+税識別番号
   
-税 id が不要です。
+税 id 番号
   
 numru tat-taxxa
   
 id tat-taxxa
   
-numru どっち ' identifikazzjoni tat-taxxa
+numru ta ' identifikazzjoni tat-taxxa
   
 ## <a name="netherlands"></a>オランダ
 
 ### <a name="format"></a>形式
 
-スペースや区切り文字なしの 9 つの数字
+スペースまたは区切り文字を含まない9桁の数字
   
 ### <a name="pattern"></a>パターン
 
@@ -1361,13 +1361,13 @@ numru どっち ' identifikazzjoni tat-taxxa
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_netherlands_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_netherlands_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_netherlands_eu_tax_file_number`があります。 
+- from `Keywords_netherlands_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_netherlands_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_netherlands_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1382,43 +1382,43 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsnetherlandseutaxfilenumber"></a>Keywords_netherlands_eu_tax_file_number
 
-オランダ税 id 番号
+オランダの税識別番号
   
 オランダの税 id
   
-オランダの税 id 番号
+netherland の税識別番号
   
-オランダの税 id
+netherland の税 id
   
-税 id 番号
+税識別番号
   
 オランダの納税者番号
   
-オランダ語の税 id 番号
+オランダの税識別番号
   
 tax id
 
   
 税 id 番号
   
-税番号
+課税番号
   
-税なしで
+課税 no. #
   
-税番号
+申告
   
 tin
 
   
-tin #
+は
   
 オランダ tin
   
-オランダの tin
+netherland の tin
   
 nederlands belasting identificatienummer
   
@@ -1426,25 +1426,25 @@ identificatienummer van belasting
   
 identificatienummer belasting
   
-nederlands belasting identificatie
+nederlands belasting 識別子
   
 nederlands belasting id nummer
   
 nederlands belastingnummer
   
-ところで nummer
+btw nummer
   
-nederlandse belasting identificatie
+nederlandse belasting 識別子
   
 ## <a name="poland"></a>ポーランド
 
 ### <a name="format"></a>形式
 
-スペースや区切り文字なしで 11 桁の数字
+スペースまたは区切り文字を含まない11桁の数字
   
 ### <a name="pattern"></a>パターン
 
-11 桁の数字
+11桁の数字
   
 ### <a name="checksum"></a>チェックサム
 
@@ -1454,13 +1454,13 @@ nederlandse belasting identificatie
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_poland_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_poland_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_poland_eu_tax_file_number`があります。 
+- from `Keywords_poland_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_poland_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_poland_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1475,13 +1475,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordspolandeutaxfilenumber"></a>Keywords_poland_eu_tax_file_number
 
-税番号
+課税番号
   
-なしの税です。
+課税番号
   
 taxno #
   
@@ -1500,25 +1500,25 @@ tax id
   
 nip id
   
-nip id 番号
+nip id #
+  
+税識別番号
   
 税 id 番号
   
-税 id が不要です。
-  
 vat 番号
   
-いいえを vat です。
+vat 番号
   
 vatno #
   
 vat id
   
-vat id 番号
+vat id #
   
-数値 identyfikacji podatkowej
+特定 identyfikacji podat・ wewej
   
-polski の数値 identyfikacji podatkowej
+polski 特定 identyfikacji podat・ wej
   
 numeridentyfikacjipodatkowej #
   
@@ -1526,7 +1526,7 @@ numeridentyfikacjipodatkowej #
 
 ### <a name="format"></a>形式
 
-スペースや区切り文字なしで 9 桁の数字
+スペースまたは区切り文字を含まない9桁の数字
   
 ### <a name="pattern"></a>パターン
 
@@ -1540,13 +1540,13 @@ numeridentyfikacjipodatkowej #
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_portugal_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_portugal_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_portugal_eu_tax_file_number`があります。 
+- from `Keywords_portugal_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_portugal_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_portugal_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1561,13 +1561,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsportugaleutaxfilenumber"></a>Keywords_portugal_eu_tax_file_number
 
-税番号
+課税番号
   
-なしの税です。
+課税番号
   
 taxno #
   
@@ -1575,19 +1575,19 @@ taxnumber #
   
 taxnumber
   
-%n
+\n\n
   
-%n #
+\n\n
   
-会計して
+numero 会計
   
-número de identificação の会計
+número de identificação 会計
   
 ## <a name="romania"></a>ルーマニア
 
 ### <a name="format"></a>形式
 
-スペースや区切り記号で 13 桁の数字
+13桁の数字、スペースまたは区切り記号なし
   
 ### <a name="pattern"></a>パターン
 
@@ -1597,13 +1597,13 @@ número de identificação の会計
 
 該当なし
   
-### <a name="definition"></a>定義
+### <a name="definition"></a>Definition
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現`Regex_romania_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 正規表現`Regex_romania_eu_tax_file_number`は、パターンに一致するコンテンツを検出します。 
     
-- キーワードの`Keywords_romania_eu_tax_file_number`があります。 
+- from `Keywords_romania_eu_tax_file_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1615,38 +1615,38 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsromaniaeutaxfilenumber"></a>Keywords_romania_eu_tax_file_number
 
 tax id
 
   
-税 id 番号
+納税者番号
   
-ファイルのない税します。
+税ファイル番号
   
 
 
 tax file number
   
-税なし
+課税番号
   
-税番号
+課税番号
   
 taxid #
   
 taxno #
   
-id ul taxei
+id-ul taxei
   
-numărul デ identificare fiscală
+numărul de 識別子は fiscală
   
 ## <a name="slovakia"></a>スロバキア
 
 ### <a name="format"></a>形式
 
-スペースや区切り文字で 10 桁の数字
+スペースまたは区切り文字を含まない10桁の数字
   
 ### <a name="pattern"></a>パターン
 
@@ -1656,13 +1656,13 @@ numărul デ identificare fiscală
 
 該当なし
   
-### <a name="definition"></a>定義
+### <a name="definition"></a>Definition
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現`Regex_slovakia_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 正規表現`Regex_slovakia_eu_tax_file_number`は、パターンに一致するコンテンツを検出します。 
     
-- キーワードの`Keywords_slovakia_eu_tax_file_number`があります。 
+- from `Keywords_slovakia_eu_tax_file_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1674,49 +1674,49 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsslovakiaeutaxfilenumber"></a>Keywords_slovakia_eu_tax_file_number
 
 tax id
 
   
-税 id 番号
+納税者番号
   
-ティン id
+tin id
   
-ティンなし
+tin no
   
-スロバキア語ティン id
+スロバキア tin id
   
 tin
 
   
-ファイルのない税します。
+税ファイル番号
   
 
 
 tax file number
   
-税なし
+課税番号
   
-税番号
+課税番号
   
 taxid #
   
 taxno #
   
-daňové identifikačné číslo
+daňové identifikačnéčíslo
   
-daňové číslo
+daňovéčíslo
   
-daňové číslo súboru
+daňovéčíslo súboru
   
 ## <a name="slovenia"></a>スロベニア
 
 ### <a name="format"></a>形式
 
-スペースや区切り文字なしで 8 つの数字
+スペースまたは区切り文字を含まない8桁の数字
   
 ### <a name="pattern"></a>パターン
 
@@ -1730,13 +1730,13 @@ daňové číslo súboru
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_slovenia_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_slovenia_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_slovenia_eu_tax_file_number`があります。 
+- from `Keywords_slovenia_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_slovenia_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_slovenia_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1751,33 +1751,33 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordssloveniaeutaxfilenumber"></a>Keywords_slovenia_eu_tax_file_number
 
 tax id
 
   
-税 id 番号
+納税者番号
   
-ティン id
+tin id
   
-ティンなし
+tin no
   
-スロベニア語ティン id
+スロベニア tin id
   
 tin
 
   
-ファイルのない税します。
+税ファイル番号
   
 
 
 tax file number
   
-税なし
+課税番号
   
-税番号
+課税番号
   
 taxid #
   
@@ -1787,53 +1787,53 @@ identifikacijska številka davka
   
 davčna številka
   
-Številka davčne datoteke
+številka davčne datoteke
   
 ## <a name="spain"></a>スペイン
 
 ### <a name="format"></a>形式
 
-7 または 8 桁の数字と 1 つまたは 2 つの文字を指定したパターンに
+7桁または8桁の数字と、指定したパターンの1文字または2文字
   
 ### <a name="pattern"></a>パターン
 
-スペイン国内の Id カードを使用して自然なスペイン語の担当者:
+スペインの国民 id カードを持つスペインの自然の人物:
   
 -  8 桁の数字 
     
-- 大文字を 1 つ (大文字小文字を区別) 
+- 1つの大文字 (大文字と小文字を区別) 
     
-非居住のスペイン スペイン国内の身分証明書なし
+スペインの国民 id カードを持たない非常駐 Spaniards
   
-- 大文字"L"(大文字小文字を区別) を 1 つ
+- 1つの大文字の "L" (大文字と小文字を区別する)
     
 - 7 桁の数字 
     
-- 大文字を 1 つ (大文字小文字を区別) 
+- 1つの大文字 (大文字と小文字を区別) 
     
-14 年にスペイン国内の Id カードの有効期間] の下のスペインを常駐。
+Spaniards は、次のようにします。
   
-- 1 つの大文字文字"K"(大文字小文字を区別)
+- 1つの大文字の "K" (大文字と小文字を区別)
     
 -  7 桁の数字  
     
-- 大文字を 1 つ (大文字小文字を区別)
+- 1つの大文字 (大文字と小文字を区別)
     
-他民族の識別番号を使って他の民族
+Foreigner の id 番号を持つ Foreigners
   
-- 大文字文字"X"、"Y"、または"Z"(大文字小文字を区別) では 
+- "X"、"Y"、または "Z" (大文字と小文字を区別) の1つの大文字 
     
 - 7 桁の数字 
     
-- 大文字を 1 つ (大文字小文字を区別) 
+- 1つの大文字 (大文字と小文字を区別) 
     
-他民族の Id 番号のない他
+Foreigner の識別番号のない Foreigners
   
-- 大文字を 1 つは"M"(大文字小文字を区別) 
+- 1つの大文字の "M" (大文字と小文字を区別する) 
     
 - 7 桁の数字 
     
-- 大文字を 1 つ (大文字小文字を区別) 
+- 1つの大文字 (大文字と小文字を区別) 
     
 ### <a name="checksum"></a>チェックサム
 
@@ -1843,13 +1843,13 @@ davčna številka
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_spain_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_spain_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_spain_eu_tax_file_number`があります。 
+- from `Keywords_spain_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_spain_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_spain_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1864,36 +1864,36 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsspaineutaxfilenumber"></a>Keywords_spain_eu_tax_file_number
 
 tax id
 
   
-税 id 番号
+納税者番号
   
 cif id
   
-cif なし
+cif 番号
   
-スペイン語の cif id
+スペインの cif id
   
 cif
   
-ファイルのない税します。
+税ファイル番号
   
-スペイン語の cif 番号
+スペインの cif 番号
   
 
 
 tax file number
   
-スペイン語の cif なし
+スペインの cif 番号
   
-税なし
+課税番号
   
-税番号
+課税番号
   
 taxid #
   
@@ -1905,11 +1905,11 @@ spanishcifid #
   
 spanishcifno #
   
-número デ contribuyente
+número de contribuyente
   
 número de impuesto corporativo
   
-número de identificación の会計
+número de identificación 会計
   
 cif número
   
@@ -1919,23 +1919,23 @@ cifnúmero #
 
 ### <a name="format"></a>形式
 
-10 桁の数字と記号で指定されたパターン
+指定したパターンの10桁の数字と記号
   
 ### <a name="pattern"></a>パターン
 
-10 桁の数字および記号。
+10桁の数字と記号:
   
--  生年月日 (YYMMDD) に対応する 6 桁の数字 
+-  誕生日に対応する6桁の数字 (yymmdd という) 
     
-- プラス記号、マイナス記号、または円記号)
+- プラス記号、マイナス記号、または円記号
     
-- Id を構成する 3 桁の数字番号の一意の場所。 
+- 識別番号を一意にするための3桁の数字: 
     
-  - 1990 年以前に発行された番号の 7 番目と 8 番目の数字は生年月日や foreign-born の人の市区郡を識別します。
+  - 1990より前に発行された番号については、7桁目と8桁目の数字は、誕生日または外国出身の人物を識別します。
     
-  - 数字の 9 番目の位置では、男性または女性の場合も、どちらが奇数で性別を示します
+  - 9桁の数字は、男性に対して、または女性に対して、性別を示します。
     
-- 1 つのチェック ディジット
+- 1つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
@@ -1945,13 +1945,13 @@ cifnúmero #
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_sweden_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_sweden_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_sweden_eu_tax_file_number`があります。 
+- from `Keywords_sweden_eu_tax_file_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_sweden_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_sweden_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU Tax File Number -->
@@ -1966,35 +1966,35 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsswedeneutaxfilenumber"></a>Keywords_sweden_eu_tax_file_number
 
 tax id
 
   
-税 id のないです。
+納税者番号
   
-税 id 番号
+納税者番号
   
 tax identification
 
   
-税識別番号
+税 id #
   
-なしの税です。
+課税番号
   
-税番号
+申告
   
 taxid #
   
 税ファイル
   
-ファイルのない税です。
+税ファイル番号
   
-個人の id 番号
+個人 id 番号
   
-skatt id nummer
+skatt id の nummer
   
 skatt identifikation
   
@@ -2004,15 +2004,15 @@ personnummer
 
 ### <a name="format"></a>形式
 
-スペースや区切り記号のない 10 桁の一意な納税者 (UTR) を参照します。
+Unique 納税リファレンス (utr): スペースと区切り文字を含まない10桁の数字
   
-国民保険番号 (NINO): 詳細についてを参照してください「英国国民保険番号 (NINO)」で、[どのような、機密性の高い情報種類を探します](what-the-sensitive-information-types-look-for.md)。
+国家保険番号 (NINO): 詳細については、「[機密情報の種類がどのようなものか](what-the-sensitive-information-types-look-for.md)」の「英国国立保険番号 (NINO)」セクションを参照してください。
   
 ### <a name="pattern"></a>パターン
 
-10 桁の一意な納税者 (UTR) を参照します。
+Unique 納税リファレンス (utr):10 桁の数字
   
-国民保険番号 (NINO): 詳細についてを参照してください「英国国民保険番号 (NINO)」で、[どのような、機密性の高い情報種類を探します](what-the-sensitive-information-types-look-for.md)。
+国家保険番号 (NINO): 詳細については、「[機密情報の種類がどのようなものか](what-the-sensitive-information-types-look-for.md)」の「英国国立保険番号 (NINO)」セクションを参照してください。
   
 ### <a name="checksum"></a>チェックサム
 
@@ -2022,9 +2022,9 @@ personnummer
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_uk_eu_tax_file_number`パターンに一致するコンテンツを検索します。 
+- 関数`Func_uk_eu_tax_file_number`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_uk_eu_tax_file_number`があります。 
+- from `Keywords_uk_eu_tax_file_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Tax File Number -->
@@ -2036,31 +2036,31 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsukeutaxfilenumber"></a>Keywords_uk_eu_tax_file_number
 
 tax id
 
   
-税 id のないです。
+納税者番号
   
-税 id 番号
+納税者番号
   
 tax identification
 
   
-税識別番号
+税 id #
   
-なしの税です。
+課税番号
   
-税番号
+申告
   
 taxid #
   
 税ファイル
   
-ファイルのない税です。
+税ファイル番号
   
 ## <a name="see-also"></a>関連項目
 

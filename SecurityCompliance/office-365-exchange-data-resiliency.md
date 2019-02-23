@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,16 +14,16 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Exchange Online および Office 365 内のデータの復元のさまざまな側面について説明します。
-ms.openlocfilehash: 5c0f42d1abc48b497a915354e3056b47a41326c5
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 02395c9d87f9f75b260bac88e97db3df7d23e532
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090949"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220407"
 ---
 # <a name="exchange-online-data-resiliency-in-office-365"></a>Office 365 の Exchange Online データの復元
 
-## <a name="introduction"></a>概要
+## <a name="introduction"></a>はじめに
 Exchange データベースに影響を与える可能性がある破損には、次の2種類があります。物理的な破損は、通常、ハードウェア (特にストレージハードウェア) の問題、およびその他の要因によって発生する論理的な破損に起因します。通常、Exchange データベース内で発生する可能性がある論理的な破損には、次の2種類があります。 
 - **データベースの論理破損**-データベースページのチェックサムは一致しますが、ページ上のデータが論理的に間違っています。これは、データベースエンジン (拡張記憶エンジン (ESE)) がデータベースページを作成しようとしたときに、オペレーティングシステムが成功メッセージを返した場合、データがディスクに書き込まれていないか、または正しくない場所に書き込まれている場合に発生する可能性があります。これは、失われた*フラッシュ*と呼ばれます。ESE には、データベースやその他のデータ損失シナリオの物理的な破損を防止するために設計されたさまざまな機能と安全対策が用意されています。失われたデータを失わないようにするため、ESE にはデータベース内の失われたフラッシュ検出メカニズムと機能 (単一ページ復元) が含まれています。 
 - **ストレージの論理破損**-ユーザーが期待できない方法でデータが追加、削除、または操作されます。これらのケースは、一般に、サードパーティ製のアプリケーションによって発生します。通常、ユーザーが破損しているという意味で破壊されるだけです。Exchange ストアは、論理的破損を生成したトランザクションが一連の有効な MAPI 操作であると見なします。Exchange Online の[インプレース保持](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds)機能により、ストアの論理的破損を防止できます (ユーザーまたはアプリケーションによってコンテンツが完全に削除されることはないため)。 

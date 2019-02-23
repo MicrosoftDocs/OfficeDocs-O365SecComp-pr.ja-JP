@@ -1,102 +1,102 @@
 ---
-title: 365 のマイクロソフトのセキュリティとコンプライアンスのための準備します。
+title: Microsoft 365 のセキュリティとコンプライアンスの準備をする
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 01/23/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
-description: コンプライアンス センター、まったく新しい Microsoft 365 セキュリティ センターの準備します。
-ms.openlocfilehash: 35f7e04ca2d51efe69c0f6d4842fe25856b1b3f9
-ms.sourcegitcommit: 0ac3e50150b48b5c633fb3bfc989d5047c160739
+description: すべての新しい Microsoft 365 セキュリティセンターとコンプライアンスセンターの準備をする
+ms.openlocfilehash: 6eb30c8439424a60b5cf02d55d771e11cf24ad10
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29436163"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214967"
 ---
-# <a name="get-ready-for-the-new-microsoft-365-security-center-and-microsoft-365-compliance-center"></a>新しい Microsoft 365 セキュリティ センターと Microsoft 365 コンプライアンス センターの準備します。
+# <a name="get-ready-for-the-new-microsoft-365-security-center-and-microsoft-365-compliance-center"></a>新しい Microsoft 365 セキュリティ センターと Microsoft 365 コンプライアンス センターの準備を行う
 
-**私たちは、まったく新しい[セキュリティ センターの Microsoft 365](#microsoft-365-security-center)と[Microsoft 365 コンプライアンス センター](#microsoft-365-compliance-center)と 2019年 3 月年 2019年 1 月の終わりからのロールアウトを発表しました**。もう[必要な知識](#what-to-expect)、および[必要なライセンスおよび必要なアクセス許可](#required-licenses-and-permissions)の概要を取得するには、この資料を参照してください。
+**マイクロソフトは、すべての新しい[microsoft 365 セキュリティセンター](#microsoft-365-security-center)と[microsoft 365 コンプライアンスセンター](#microsoft-365-compliance-center)を発表することを嬉しくしています。展開は、2019年1月から2019年3月までに開始され**ます。この記事を読むと、提供される内容、[予想](#what-to-expect)されること、および[必要なライセンスとアクセス許可](#required-licenses-and-permissions)の概要を知ることができます。
 
-## <a name="microsoft-365-security-center"></a>Microsoft 365 セキュリティ センター
+## <a name="microsoft-365-security-center"></a>Microsoft 365 セキュリティセンター
 
-新しい Microsoft 365 セキュリティ センターには、管理し、id、データ、デバイス、アプリケーション、およびインフラストラクチャ全体のセキュリティを監視するためのダッシュ ボードが含まれています。まったく新しいマイクロソフト セキュリティで保護されたスコア、新しいデバイスの脅威のレポート、新しいアイデンティティの脅威のレポート、およびクラウド アプリケーションのセキュリティ レポートに簡単にアクセスする必要がも。 
+新しい Microsoft 365 セキュリティセンターには、id、データ、デバイス、アプリ、およびインフラストラクチャ全体のセキュリティを管理および監視するためのダッシュボードが含まれています。また、すべての新しい Microsoft セキュリティスコア、新しいデバイス脅威レポート、新しい id 脅威レポート、および Cloud App Security レポートにも簡単にアクセスできます。 
 
-![新しい Microsoft 365 セキュリティ センター](media/m365-security-center.png)
+![新しい Microsoft 365 セキュリティセンター](media/m365-security-center.png)
 
-最初に 365 のマイクロソフトのセキュリティ センターを使用すると開始するため、画面の上部に情報が表示されます。移動する方法が表示されますも簡単にセキュリティ機能をあなたが最も興味。
+Microsoft 365 セキュリティセンターを初めて使用すると、開始するのに役立つ情報が画面の上部に表示されます。また、探索に最も興味のあるセキュリティ機能に簡単に移動する方法についても説明します。
 
-テナントの 365 のマイクロソフトのセキュリティ センターを有効にするにアクセスするのにはできるが[https://security.microsoft.com](https://security.microsoft.com)。 
-
-> [!NOTE]
-> 365 のマイクロソフトのセキュリティ センターにアクセスするのには有効な Azure Active Directory 役割を割り当てる必要があります。詳細についてを参照してください[ライセンスと権限が必要です](#required-licenses-and-permissions)(この資料では)。
-
-## <a name="microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンス センター
-
-新しい Microsoft 365 コンプライアンス センターでは、Microsoft コンプライアンス マネージャーに、全体的なコンプライアンス体制を反映して、推奨される操作が複雑なコンプライアンスの義務を満たすように設定を構成する際に、可視性を提供します。感知性と保存期間のラベルとポリシー、データ損失防止 (DLP)、データ ・ ガバナンス、電子的証拠開示、データのサブジェクトの要求 (DSRs)、ケース管理、およびクラウド アプリケーションのセキュリティに簡単にアクセスする必要があります。さらに、実践的な洞察を得るし、コンプライアンス ・ リスクを軽減し、デジタル資産を保護するインテリジェントな自動化を活用できます。 
-
-![Microsoft 365 コンプライアンス センター](media/m365-compliance-center.png)
-
-初めて Microsoft 365 のコンプライアンス センターを使用する場合を開始するための画面の上部に情報が表示されます。移動する方法が表示されます簡単にコンプライアンス機能をあなたが最も興味。
-
-テナントの有効にすると、Microsoft 365 のコンプライアンス センターへのアクセスになります[https://compliance.microsoft.com](https://compliance.microsoft.com)。  
+Microsoft 365 セキュリティセンターがテナントに対して有効になると、に[https://security.microsoft.com](https://security.microsoft.com)アクセスできるようになります。 
 
 > [!NOTE]
-> Microsoft 365 コンプライアンス センターにアクセスするのには有効な Azure Active Directory 役割を割り当てる必要があります。詳細についてを参照してください[ライセンスと権限が必要です](#required-licenses-and-permissions)(この資料では)。
+> Microsoft 365 セキュリティセンターにアクセスするには、有効な Azure Active Directory の役割が割り当てられている必要があります。詳細については、この記事の「[必要なライセンスとアクセス許可](#required-licenses-and-permissions)」セクションを参照してください。
 
-## <a name="what-to-expect"></a>予想される結果
+## <a name="microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンスセンター
 
-### <a name="coming-soon"></a>近日公開
+新しい microsoft 365 コンプライアンスセンターでは、コンプライアンスの全体的な状況を反映した microsoft コンプライアンスマネージャーを参照できるようになり、複雑な法令遵守の義務を満たすように設定を構成するための推奨措置が提供されます。秘密度と保持ラベルとポリシー、データ損失防止 (DLP)、データガバナンス、電子情報開示、データ主体要求 (dsrs)、ケース管理、および Cloud App Security に簡単にアクセスできます。さらに、実践的な洞察を得て、インテリジェントな自動化を活用して、コンプライアンスのリスクを軽減し、デジタルスペースを保護することができます。 
 
-新しい Microsoft 365 セキュリティ センターと新しい Microsoft 365 コンプライアンス センターは、アウトの開始遅延の 1 月と年 2019年 3 月をローリングします。新しい Microsoft 365 セキュリティ センターおよびこの期間内の Microsoft 365 コンプライアンス センターへのアクセスが必要です。
+![Microsoft 365 コンプライアンスセンター](media/m365-compliance-center.png)
 
-### <a name="easy-access"></a>簡単にアクセスできます。
+Microsoft 365 コンプライアンスセンターを初めて使用すると、開始するのに役立つ情報が画面の上部に表示されます。調査に最も興味のあるコンプライアンス機能に簡単に移動する方法について説明します。
 
-改善されたナビゲーション システム、統合されたソリューションは、効率的を参照してくださいで最も関心がある場合し、Microsoft 365 に強力なセキュリティとコンプライアンス ・ ソリューションを利用する情報にアクセスするようになります。
+テナントに対して Microsoft 365 コンプライアンスセンターが有効になったら、にアクセスすることが[https://compliance.microsoft.com](https://compliance.microsoft.com)できます。  
 
-### <a name="smooth-transition"></a>滑らかに変化します。
+> [!NOTE]
+> Microsoft 365 コンプライアンスセンターにアクセスするには、有効な Azure Active Directory の役割が割り当てられている必要があります。詳細については、この記事の「[必要なライセンスとアクセス許可](#required-licenses-and-permissions)」セクションを参照してください。
 
-新しいセンターにスムーズに移行が必要です。以前の Microsoft 365 セキュリティ & コンプライアンス センターを廃止するこの変更は、完全に展開した後 ([https://protection.microsoft.com](https://protection.microsoft.com))。管理者の操作性が変更されますが、これ、現在のセキュリティとコンプライアンスの構成に影響はありません。
+## <a name="what-to-expect"></a>期待されること
 
-この更新プログラムが提供される、組織に Microsoft 365 エンタープライズ E3 または E5 がある場合後、は、セキュリティとコンプライアンスの管理者ことができます。
+### <a name="coming-soon"></a>もうすぐです！
 
-- 直接移動[https://security.microsoft.com](https://security.microsoft.com)と[https://compliance.microsoft.com](https://compliance.microsoft.com)です。 <br>または  
-- Microsoft 365 管理センターに移動し、新しい Microsoft 365 セキュリティ センター] と Microsoft 365 コンプライアンス センター (リンクは、管理センターの下の左側のナビゲーション ウィンドウ内) に移動します。
+新しい microsoft 365 セキュリティセンターと新しい microsoft 365 コンプライアンスセンターは、1月から年3月までの初期段階では展開されていません。この期間内に、新しい microsoft 365 セキュリティセンターおよび microsoft 365 コンプライアンスセンターにアクセスできる必要があります。
+
+### <a name="easy-access"></a>簡単なアクセス
+
+向上したナビゲーション、統合されたソリューション、および合理化された操作性により、最も関心のある情報を表示してアクセスし、Microsoft 365 の強力なセキュリティおよびコンプライアンスソリューションを利用できるようになります。
+
+### <a name="smooth-transition"></a>滑らかな移行
+
+新しいセンターへのスムーズな移行を期待できます。この変更が完全に展開された後、以前の Microsoft 365 Security & コンプライアンスセンター ([https://protection.microsoft.com](https://protection.microsoft.com)) を廃止する予定です。管理者の環境は変更されますが、現在のセキュリティとコンプライアンスの構成に影響はありません。
+
+この更新プログラムが展開された後、組織に Microsoft 365 Enterprise E3 または E5 がある場合、セキュリティ/コンプライアンス管理者は次のことを行うことができます。
+
+- に[https://security.microsoft.com](https://security.microsoft.com)直接移動し[https://compliance.microsoft.com](https://compliance.microsoft.com)ます。 <br>または  
+- microsoft 365 管理センターに移動し、新しい microsoft 365 セキュリティセンターと microsoft 365 コンプライアンスセンター (左側のナビゲーションウィンドウの [管理センター] の下にあるリンク) に移動します。
 
 > [!TIP]
-> コンプライアンス センター Office 365 のセキュリティの & を使用しているかどうか ([https://protection.office.com](http://protection.office.com))、構成し、既存の Office 365 のセキュリティ & コンプライアンス センター内で、Office 365 の設定を管理することができます。構成は、既存 Office 365 のセキュリティ & コンプライアンス センターにも、新しい Microsoft 365 セキュリティ センターと Microsoft 365 コンプライアンス センターのように維持されます。  
+> office 365 security & コンプライアンスセンター ([https://protection.office.com](http://protection.office.com)) を使用している場合でも、既存の office 365 security & コンプライアンスセンター内で office 365 の設定を構成および管理することはできます。構成は、既存の Office 365 security & コンプライアンスセンターに加えて、新しい microsoft 365 セキュリティセンターおよび microsoft 365 コンプライアンスセンターにも保持されます。  
 
-## <a name="required-licenses-and-permissions"></a>必要なライセンスと権限
+## <a name="required-licenses-and-permissions"></a>必要なライセンスとアクセス許可
 
-新しい Microsoft 365 セキュリティ センターと Microsoft 365 コンプライアンス センターを取得するには、組織に Microsoft 365 E3、E5、または、ボリューム ライセンスと同じ (Office 365 のエンタープライズ E3 または E5、エンタープライズ モビリティとセキュリティで構成されるサブスクリプションを必要があります。E3 E5 や 10 の Windows エンタープライズ E3/E5)。
+新しい microsoft 365 セキュリティセンターと microsoft 365 コンプライアンスセンターを入手するには、組織に microsoft 365 E3 または e5 へのサブスクリプション、または (Office 365 Enterprise E3 または e5、enterprise Mobility + security で構成された) ボリュームライセンスが必要です。E3 または E5、Windows 10 Enterprise E3/E5。
 
-ユーザーには、新しい Microsoft 365 セキュリティ センターまたはマイクロソフト 365 コンプライアンス センターにアクセスするのには、Azure Active Directory のグローバル管理者、コンプライアンス管理者、セキュリティ管理者、またはセキュリティのリーダーの役割を割り当てる必要があります。
+新しい Microsoft 365 セキュリティセンターまたは microsoft 365 コンプライアンスセンターにアクセスするには、ユーザーに Azure Active Directory のグローバル管理者、コンプライアンス管理者、セキュリティ管理者、またはセキュリティリーダーの役割が割り当てられている必要があります。
 
-- グローバル管理者がセキュリティ センターとコンプライアンス センターの両方にアクセスできます。
+- グローバル管理者はセキュリティセンターとコンプライアンスセンターの両方にアクセスできます。
 
-- コンプライアンス管理者はコンプライアンス センターにアクセスできます。
+- コンプライアンスセンターにアクセスできるコンプライアンス管理者
 
-- セキュリティ管理者またはセキュリティのリーダーがセキュリティ センターにアクセスできます。
+- セキュリティ管理者またはセキュリティ閲覧者は、セキュリティセンターにアクセスできます。
 
 > [!NOTE]
-> オペレーターのセキュリティとコンプライアンス データの管理者を含む、追加のロールの準備中です。
+> セキュリティオペレーターおよびコンプライアンスデータ管理者を含む追加の役割が近日中に公開されています。
 
-Azure、Office 365 では、Windows の間でさまざまなポータルにアクセスできるユーザーを次の表にまとめます。
+次の表では、Azure、Office 365、および Windows でさまざまなポータルにアクセスできるユーザーを要約しています。
 
 |Portal  |Global<br/>管理者  |セキュリティ <br/>管理者<br>または<br>セキュリティ<br>閲覧者 |コンプライアンス<br/>管理者  |
 |---------|---------|---------|---------|
 |[Office 365 セキュリティ/コンプライアンス センター](https://protection.office.com) |はい |はい  |はい |
-|[Microsoft 365 セキュリティ センター](https://security.microsoft.com) |はい  | Yes  | いいえ        |
-|[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com) | はい | いいえ | はい |
+|[Microsoft 365 セキュリティセンター](https://security.microsoft.com) |はい  | Yes  | いいえ        |
+|[Microsoft 365 コンプライアンスセンター](https://compliance.microsoft.com) | はい | いいえ | はい |
 |[コンプライアンス マネージャー](https://aka.ms/compliancemanager) |はい | はい |はい  |
 |[Azure Information Protection](https://docs.microsoft.com/azure/information-protection) |はい |Yes |いいえ |
-|Azure Security Center  |はい |Yes |いいえ |
-|[Azure の高度な脅威保護](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |はい |Yes |いいえ |
-|[Windows Defender の ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp)および[エンドポイントの検出および応答](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)     |はい |Yes |いいえ |
-|ID 保護     |はい |Yes |いいえ |
-|Privileged Identity Management     |はい |Yes |いいえ |
+|[Azure Security Center](https://docs.microsoft.com/azure/security-center/)  |はい |Yes |いいえ |
+|[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |はい |Yes |いいえ |
+|[Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp)および[エンドポイントの検出と応答](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)     |はい |Yes |いいえ |
+|[id 保護](https://docs.microsoft.com/azure/active-directory/identity-protection)     |はい |Yes |いいえ |
+|[特権 id の管理](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |はい |Yes |いいえ |
 |[Intune](https://docs.microsoft.com/intune)     |はい |はい |はい |
 |[Cloud App Security](https://docs.microsoft.com/cloud-app-security/)     |はい |はい |はい |
 |[セキュリティで保護されたスコア](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)     |はい |Yes |いいえ |
@@ -104,5 +104,5 @@ Azure、Office 365 では、Windows の間でさまざまなポータルにア�
 
 ## <a name="additional-resources"></a>その他のリソース
 
-[Microsoft 365 のロードマップ](https://www.microsoft.com/microsoft-365/roadmap)
+[Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)
 

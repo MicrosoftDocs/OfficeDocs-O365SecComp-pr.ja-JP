@@ -1,63 +1,63 @@
 ---
-title: SharePoint、OneDrive、またはマイクロソフトのチームで検出された、悪意のあるファイルに関する情報を表示
+title: SharePoint、OneDrive、Microsoft Teams で検出された悪意のあるファイルに関する情報を表示する
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
-description: SharePoint、OneDrive、またはチームで検出された、悪意のあるファイルに関する情報を表示する場所とそれらのファイルに対してアクションを実行する方法について説明します。
-ms.openlocfilehash: 435e1f449003f670f698c4e6813e18f5e83c498d
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: SharePoint、OneDrive、Teams で検出された悪意のあるファイルに関する情報を表示する方法と、それらのファイルに対してアクションを実行する方法について説明します。
+ms.openlocfilehash: 6f44cd82241b4cd883fbd80e1b1dc2ea115e10af
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014799"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219567"
 ---
-# <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>SharePoint、OneDrive、またはマイクロソフトのチームで検出された、悪意のあるファイルに関する情報を表示
+# <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams で検出された悪意のあるファイルに関する情報を表示する
 
-[SharePoint、OneDrive、およびマイクロソフトのチームの office 365 の分析ツール](atp-for-spo-odb-and-teams.md)は、ドキュメント ライブラリ、およびチーム サイト内の悪意のあるファイルから組織を保護します。悪意のあるファイルが検出されると、そのファイルを開く、コピー、移動、またはそれ以降の操作は、組織のセキュリティ チームによって実行されるまで、共有できる誰にするためにブロックされます。によって検出されたファイルに関する情報を表示する方法とどのような措置を説明するには、この資料を参照してください。 
+[Office 365 ATP for SharePoint、OneDrive、Microsoft Teams](atp-for-spo-odb-and-teams.md)では、組織がドキュメントライブラリおよびチームサイト内の悪意のあるファイルから保護されます。悪意のあるファイルが検出されると、そのファイルはブロックされるようになり、組織のセキュリティチームによって追加の操作が行われるまで、そのファイルを開いたり、コピー、移動、または共有することができなくなります。この記事では、検出されたファイルと実行するアクションに関する情報を表示する方法について説明します。 
 
-この資料で説明するタスクを実行するために、必要なを設定する必要があります[Office 365 のセキュリティのアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。 
+この記事で説明されているタスクを実行するには、 [Office 365 セキュリティ&amp;コンプライアンスセンターに必要なアクセス許可](permissions-in-the-security-and-compliance-center.md)を持っている必要があります。 
   
-## <a name="view-reports-with-information-about-detected-files"></a>によって検出されたファイルに関する情報をレポートの表示
+## <a name="view-reports-with-information-about-detected-files"></a>検出されたファイルに関する情報をレポートを表示する
 
-状態と Office 365 の分析ツールによって検出されたファイルに関する詳細情報を表示するには、脅威の保護の状態レポートを使用できます。
+Office 365 ATP によって検出されたファイルの状態と詳細情報を表示するには、脅威保護の状態レポートを使用できます。
   
-1. [Office 365 のセキュリティ&amp;コンプライアンス センター](https://protection.office.com)で**レポート**を選択\>**ダッシュ ボード** \> **脅威保護の状態**です。
+1. [Office 365 セキュリティ&amp; /コンプライアンスセンター](https://protection.office.com)で、[**ダッシュボード** \>の**脅威保護の状態**を**報告** \>する] を選択します。
     
-2. レポートの右上隅の**ビューの詳細テーブル**を選択します。
+2. レポートの右上隅で、[**詳細テーブルの表示**] を選択します。
     
-3. レポート内で検出されたファイルの一覧を表示します。
+3. レポートで検出されたファイルの一覧を表示します。
     
-4. 詳細については、実行されたアクションを含む、ファイル名、ファイルのパスなどを表示するのには、ボックスの一覧で項目を選択します。
+4. リスト内の項目を選択して、実行されたアクション、ファイル名、ファイルパスなどを含む詳細情報を表示します。
     
-5. 観察された現象と分析の詳細などの情報を表示するのには、**高度な分析**] タブを選択します。 
+5. [**詳細分析**] タブを選択して、観測された動作や分析の詳細などの情報を表示します。 
   
-## <a name="view-and-take-action-on-files-in-quarantine"></a>表示し、検査中のファイルに対してアクションを実行
+## <a name="view-and-take-action-on-files-in-quarantine"></a>検疫内のファイルを表示し、処理を実行する
 
-1. Office 365 のセキュリティで&amp;コンプライアンス センターでは、**脅威の管理**を選択して\>**レビュー** \> **検査**します。
+1. &amp; Office 365 セキュリティコンプライアンスセンターで、[**脅威管理** \> **レビュー** \>の**検疫**] を選択します。
     
-2. 左上隅で、**メール**から**コンテンツ**にフィルターを変更します。
+2. 左上隅で、フィルターを [**電子メール**] から [**コンテンツ**] に変更します。
     
-3. ファイルの URL を含む、詳細情報を表示するのには、ボックスの一覧で項目を選択します。
+3. リストで項目を選択すると、ファイルの URL などの詳細情報が表示されます。
     
 4. 使用可能なアクションを選択します。
     
-  - 選択**リリース&amp;レポート**ファイルのブロックを解除します。 
+  - ファイルのブロックを解除するには、[**レポートの解放&amp; ** ] を選択します。 
     
-    誤認としてファイルをマイクロソフトに報告を**マイクロソフトにレポートを送信する**を選択します。 
+    microsoft への誤検知としてファイルを報告するには、[ **microsoft にレポートを送信**する] を選択します。 
     
-  - さらにファイルを調査する**ファイルのダウンロード**を選択してください。 
+  - [**ファイルのダウンロード**] を選択して、ファイルをさらに調査します。 
     
-  - 検疫済みのアイテムの一覧からファイルを削除する**削除**をクリックします。このオプションを選択する場合は、ビジネス、またはマイクロソフトのチームの SharePoint のオンライン、OneDrive で、それぞれのライブラリからファイルを削除する必要がありますもします。このオプションがないブロックを解除されてからファイルを共有を開くか。 
+  - [**削除**] を選択して、検疫されたアイテムのリストからファイルを削除します。このオプションを選択する場合は、SharePoint Online、OneDrive for business、または Microsoft Teams の対応するライブラリからもファイルを削除する必要があります。このオプションでは、ファイルが開かれたり共有されたりすることはブロックされません。 
     
-5. 選択したアイテムの詳細を閉じるに**閉じる**を選択します。 
+5. [**閉じる**] を選択して、選択したアイテムの詳細を閉じます。 
   
   
 

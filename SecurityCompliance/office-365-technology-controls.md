@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '概要: Office 365 の Microsoft のテクノロジ制御プラクティスの概要について説明します。'
-ms.openlocfilehash: 3fe7f47a2a1903d17c5240a0efec1c2abb94a25d
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 77dee44ec648ea2aa1dab61776089bf7d9e2580a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090769"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220377"
 ---
 # <a name="office-365-technology-controls"></a>Office 365 での技術による制御 
 

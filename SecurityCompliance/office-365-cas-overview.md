@@ -6,59 +6,59 @@ manager: laurawi
 ms.date: 01/22/2019
 ms.audience: ITPro
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
-description: 'Office 365 のクラウド アプリケーションのセキュリティを使用する可能性のある問題があると、必要な場合は、セキュリティ問題に対処するアクションを実行するような状況を調査することができますので、Office 365 で不審な動作を把握できます。 '
-ms.openlocfilehash: edce16edca822bed30c78f34cf141b23f2b2fb8c
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: 'office 365 Cloud App Security では、office 365 の不審なアクティビティについての洞察が得られるため、問題が発生する可能性があり、必要に応じて、セキュリティの問題に対処するための処置を取ることができます。 '
+ms.openlocfilehash: 974858a547d9af2db600f9856efbce619a3b38e4
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29382550"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220177"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Office 365 Cloud App Security の概要
   
-|評価 * *\>**|計画 * *\>**|配置 * *\>**|使用率。|
+|評価 * *\>**|計画 * *\>**|展開 * *\>**|使用率 * * * *|
 |:-----|:-----|:-----|:-----|
-|コースです!  <br/> [次の手順](get-ready-for-office-365-cas.md) <br/> |[計画の開始します。](get-ready-for-office-365-cas.md) <br/> |[展開を開始します。](turn-on-office-365-cas.md) <br/> |[使用します。](utilization-activities-for-ocas.md) <br/> |
+|ここでは、  <br/> [次の手順](get-ready-for-office-365-cas.md) <br/> |[計画を開始する](get-ready-for-office-365-cas.md) <br/> |[展開を開始する](turn-on-office-365-cas.md) <br/> |[利用を開始する](utilization-activities-for-ocas.md) <br/> |
    
 > [!NOTE]
-> Office 365 のクラウド アプリケーションのセキュリティは、Office 365 エンタープライズ E5 に使用できます。組織は、別の Office 365 エンタープライズ サブスクリプションで使用されている場合、Office 365 のクラウド アプリケーションのセキュリティがアドオンとして購入できます。(グローバル管理者は、Office 365 管理センターを選択して**請求** \> **サブスクリプションを追加**します)。詳細についてを参照してください[Office 365 のプラットフォーム サービスの説明: Office 365 のセキュリティ&amp;コンプライアンス センター](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) [購入またはビジネスのための Office 365 のアドオンを編集](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on)するとします。 
+> office 365 Cloud App Security は office 365 Enterprise E5 で利用できます。組織で別の office 365 Enterprise サブスクリプションを使用している場合、office 365 Cloud App Security をアドオンとして購入することができます。(全体管理者として、Office 365 管理センターで、[**課金** \>の**サブスクリプションの追加**] を選択します。)詳細については、「office 365 プラットフォームサービスの説明」を参照してください[。 office 365 セキュリティ&amp;コンプライアンスセンター](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)で、 [office 365 for business のアドオンを購入または編集](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on)します。 
   
-Office 365 のクラウド アプリケーションのセキュリティを使用する可能性のある問題があると、必要な場合は、セキュリティ問題に対処するアクションを実行するような状況を調査することができますので、Office 365 で不審な動作を把握できます。Office 365 のクラウド アプリケーションのセキュリティ、例外、または不審な活動に対してトリガーされたアラートの通知を受け取る、Office 365 の組織のデータがアクセス方法と使用方法、ユーザー アカウントが、不審なアクティビティが発生することを中断し、必要とするを参照してください。アラートがトリガーされた後、Office 365 アプリケーションに再度ログインするユーザーです。Office 365 のクラウド アプリケーションのセキュリティ機能と機能の概要を取得するには、この資料を参照してください。
+office 365 Cloud App Security では、office 365 の不審なアクティビティを把握しているため、問題が発生する可能性がある状況を調査し、必要に応じて、セキュリティの問題に対処するための処置を取ることができます。office 365 Cloud App Security では、例外的または不審なアクティビティに対してトリガーされた通知の通知を受け取ることができます。組織のデータが office 365 にどのようにアクセスおよび使用されているかを確認し、ユーザーアカウントに疑わしいアクティビティが発生して中断し、通知がトリガーされた後、ユーザーが Office 365 アプリに再度ログインする。この記事では、Office 365 Cloud App のセキュリティ機能の概要について説明します。
   
     
-## <a name="how-to-find-the-office-365-cloud-app-security-portal"></a>Office 365 のクラウド アプリケーションのセキュリティ関連ポータルを検索する方法
+## <a name="how-to-find-the-office-365-cloud-app-security-portal"></a>Office 365 Cloud App Security ポータルを見つける方法
 
 > [!NOTE]
-> Office 365 のクラウド アプリケーションのセキュリティ関連ポータルにアクセスするには、Office 365 のグローバル管理者、セキュリティ管理者、またはセキュリティのリーダーが必要です。詳細についてを参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。 
+> office 365 Cloud App Security ポータルにアクセスするには、office 365 全体管理者、セキュリティ管理者、またはセキュリティリーダである必要があります。詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。 
   
-Office 365 のクラウド アプリケーションのセキュリティ関連ポータルにアクセスできます[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)署名します。 
+Office 365 Cloud App Security ポータルにアクセスするには、に[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)移動してサインインします。 
 
-取得することもありますから、Office 365 のセキュリティ&amp;コンプライアンス センターです。これを行う方法の 1 つを以下に示します。
+Office 365 セキュリティ&amp;コンプライアンスセンターから入手することもできます。そのためには、次のいずれかの方法をお勧めします。
   
-1. [https://protection.office.com](https://protection.office.com)し、職場、学校のアカウントを使用して Office 365 にサインインします。(これで、セキュリティには、&amp;コンプライアンス センター)。
+1. に[https://protection.office.com](https://protection.office.com)移動して、Office 365 の職場または学校のアカウントを使用してサインインします。(これにより、セキュリティ&amp;コンプライアンスセンターに移動できます。)
     
-2. セキュリティで&amp;コンプライアンス センターでは、**アラート**を選択して\>**管理警告の詳細**です。 <br/>![Office 365 のクラウド アプリケーションのセキュリティに移動するのには高度な通知の管理を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>(Office 365 のクラウド アプリケーションのセキュリティはまだ有効でない、グローバル管理者は、 [Office 365 のクラウド アプリケーションのセキュリティを有効にする](turn-on-office-365-cas.md)) 場合
+2. セキュリティ&amp; /コンプライアンスセンターで、[**警告** \>の**管理] [詳細通知の管理**] を選択します。 <br/>![Office 365 Cloud App Security に移動するには、[高度な通知の管理] を選択します。](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>(office 365 cloud app security がまだ有効になっておらず、全体管理者である場合は、 [office 365 Cloud app security を有効](turn-on-office-365-cas.md)にします。)
     
-3. **Office 365 のクラウド アプリケーションのセキュリティ**を選択します。 
+3. [ **Office 365 Cloud App Security に移動**] を選択します。 
     
 ## <a name="policies"></a>[Policies]
 
-Office 365 クラウド アプリケーションのセキュリティは、組織に対して定義されているポリシーと連携します。Office 365 クラウド アプリケーションのセキュリティでは、組織は、多くの定義済みの異常検出のポリシーとポリシーのアクティビティ テンプレートがいくつかを取得します。全般の異常を検出、危険な IP アドレスからログインするユーザーを識別する、ransomware アクティビティを検出、企業以外の IP アドレス、および複数の管理者のアクティビティを検出するのには、これらのポリシーが設計されています。
+Office 365 Cloud App Security は、組織に対して定義されているポリシーを使用して動作します。Office 365 Cloud App Security を使用すると、組織は多数の事前に定義された異常検出ポリシーとアクティビティポリシーのいくつかのテンプレートを取得します。これらのポリシーは、一般的な異常を検出し、危険な IP アドレスからログインしているユーザーを識別し、ランサムウェアのアクティビティを検出し、企業以外の IP アドレスから管理者アクティビティを検出するなどの目的で設計されています。
   
-![CA ポータルでは、コントロールを選択して\>を表示またはポリシー ・ テンプレートを作成するためのテンプレート](media/88f615b4-aa8a-480c-b239-323dfcd628e1.png)
+![CAS ポータルで、[コントロール\>テンプレート] を選択してポリシーテンプレートを表示または作成します。](media/88f615b4-aa8a-480c-b239-323dfcd628e1.png)
   
-ビュー/ポリシー テンプレート、Office 365 のクラウド アプリケーションのセキュリティ関連ポータルに、使用する**コントロール**に移動して\>**のテンプレート**です。 
+ポリシーテンプレートを表示または使用するには、Office 365 Cloud App Security ポータルで、[**コントロール** \> **テンプレート**] に移動します。 
   
-![O365 CA ポータルでは、コントロールを選択します](media/287c2ea9-5172-4697-8e0e-b9ab654105bc.png)
+![O365 CAS ポータルで、[コントロール] を選択します。](media/287c2ea9-5172-4697-8e0e-b9ab654105bc.png)
   
-ポリシーに関する詳細については、次のリソースを参照してください。
+ポリシーの詳細については、以下のリソースを参照してください。
   
 - [Office 365 Cloud App Security のアクティビティ ポリシーと警告](activity-policies-and-alerts.md)
     
@@ -66,61 +66,61 @@ Office 365 クラウド アプリケーションのセキュリティは、組�
     
 ## <a name="alerts"></a>警告
 
-ポリシーを定義したら、検出された疑わしい、または典型的な活動について通知します。組織の警告を表示するには、画面の上部にナビゲーション ・ バーの**アラート**を選択します。 
+ポリシーが定義されている場合、検出された疑わしいまたは例外的なアクティビティについて通知されます。組織の通知を表示するには、画面上部のナビゲーションバーにある [**通知**] を選択します。 
   
-![[アラート] ページで、トリガーされたアラートと行った操作を確認できます。](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
+![[通知] ページには、トリガーされた通知と実行されたアクションが表示されます。](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
   
-アラートがトリガーされると、何が起こっているの詳細については、それらを確認できます。次に、アクティビティがまだ疑わしい場合は、アクションを実行できます。問題についてユーザーに通知することができますから、Office 365 にサインインするユーザーを一時停止にもう一度アプリケーションを Office 365 にサインインするユーザーを必要とします。
+アラートがトリガーされたときに、その通知を確認して、何が起こっているのかについて詳しく知ることができます。その後も、アクティビティが疑わしい場合は、アクションを実行できます。たとえば、問題についてユーザーに通知したり、ユーザーの office 365 へのサインインを中断したり、office 365 アプリにサインインし直すようにユーザーに要求することができます。
   
-警告に関する詳細については、次のリソースを参照してください。
+通知の詳細については、次のリソースを参照してください。
   
 - [Office 365 Cloud App Security のアクティビティ ポリシーと警告](activity-policies-and-alerts.md)
     
 - [Office 365 Cloud App Security の異常検出ポリシー](anomaly-detection-policies-in-ocas.md)
     
-- [Office 365 のクラウド アプリケーションのセキュリティの警告を確認して処理](review-office-365-cas-alerts.md)
+- [Office 365 Cloud App Security alerts を確認してアクションを実行する](review-office-365-cas-alerts.md)
     
-## <a name="activity-logs"></a>動作状況のログ
+## <a name="activity-logs"></a>アクティビティログ
 
-Office 365 のクラウド アプリケーションのセキュリティで、利用状況ログ] ページで、ユーザーの活動に関する情報を表示します。
+Office 365 Cloud App Security のアクティビティログページにあるユーザーアクティビティに関する情報を表示します。
   
-![O365 CA ポータルでは、調査を選択して\>アクティビティ ・ ログ](media/ec19e77d-4e11-49fc-ab7c-0e8b0c29c93c.png)
+![O365 CAS ポータルで、[アクティビティログ\>の調査] を選択します。](media/ec19e77d-4e11-49fc-ab7c-0e8b0c29c93c.png)
   
-**調査**には、Office 365 のクラウド アプリケーションのセキュリティ ポータルでは、このページを表示するのには\>**のアクティビティのログ**です。 
+このページを表示するには、Office 365 Cloud App Security ポータルで、[ **** \> **アクティビティログ**の調査] に移動します。 
   
-![O365 CA ポータルでは、調査を選択します。](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
+![O365 CAS ポータルで、[調査] を選択します。](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
-すぎると Office 365 のクラウド アプリケーションのセキュリティ、web のトラフィックのログを使用できます。ログ ファイルの詳細については、それらに含まれている、可視性が向上すれば、ユーザーの利用状況にします。Barracuda、青いコート、チェック ポイント、シスコ、Clavister、Dell の SonicWALL、Fortinet、ビャクシン、McAfee、マイクロソフト、パロアルト、Sophos、Squid、Websence、Zscaler などからのログ ファイルを使用することができます。
+web トラフィックログは Office 365 Cloud App Security でも使用できます。これらのログファイルに含まれる詳細については、「ユーザーのアクティビティ」を参照してください。ログファイルは、Barracuda、ブルーコート、チェックポイント、Cisco、clavister、Dell SonicWALL、for et、Juniper、McAfee、Microsoft、Palo Alto、Sophos、Squid、websence、Zscaler などから使用できます。
   
-[Office 365 のクラウド アプリケーションのセキュリティは、web トラフィックのログとデータ ソースについてください。](web-traffic-logs-and-data-sources-for-ocas.md)
+[Office 365 Cloud App Security の web トラフィックログとデータソースについて説明します。](web-traffic-logs-and-data-sources-for-ocas.md)
   
-## <a name="oauth-apps"></a>OAuth のアプリケーション
+## <a name="oauth-apps"></a>OAuth アプリ
 
-Office 365 のクラウド アプリケーションのセキュリティ、許可したり、Office 365 のデータにアクセスするサードパーティ製アプリケーションを使用する組織内のユーザーを禁止できます。
+office 365 Cloud App Security では、組織内のユーザーが office 365 のデータにアクセスするサードパーティ製アプリを使用することを許可または禁止することができます。
   
-![O365 の CA では、[調査] メニューの [OAuth の管理の [アプリ] ページを表示できます。](media/78272cda-986f-4b3b-bbbe-8c236c74f5d3.png)
+![O365 CAS では、[調査] メニューから [OAuth アプリの管理] ページにアクセスできます。](media/78272cda-986f-4b3b-bbbe-8c236c74f5d3.png)
   
-**調査**にこのページを表示して、 \> **OAuth のアプリケーション**です。 
+このページを表示するには、「 **OAuth アプリ**を**調査** \>する」に移動します。 
   
-![O365 CA ポータルでは、調査を選択します。](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
+![O365 CAS ポータルで、[調査] を選択します。](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
 [Office 365 Cloud App Security を使用して OAuth アプリを管理する](manage-app-permissions-in-ocas.md)
   
-## <a name="cloud-discovery-dashboard"></a>クラウド探索のダッシュ ボード
+## <a name="cloud-discovery-dashboard"></a>クラウド検出ダッシュボード
 
-**クラウド探索のダッシュ ボード****の生産性アプリケーションの検出**とも呼ばれるには、組織内でのクラウド アプリケーションの使用状況に関する情報が表示されます。アプリケーション、ユーザー、トラフィック、トランザクション、およびデジタル ダッシュ ボードを使用して複数の情報を表示することができます。クラウド探索のダッシュ ボードには、次のイメージが似ています。 
+**クラウド検出ダッシュボード**(**生産性アプリの検出**とも呼ばれます) は、組織内でのクラウドアプリの使用に関する情報を示しています。このダッシュボードを使用して、アプリ、ユーザー、トラフィック、トランザクションなどに関する情報を表示できます。クラウド検出ダッシュボードは、次のようなイメージです。 
   
-![検出を選択して、Office 365 の CA のポータルでは、\>クラウド探索のダッシュ ボード](media/61269290-fd82-4d4b-8045-aea1ebc82287.png)
+![Office 365 CAS ポータルで、[クラウド検出\>ダッシュボードの検出] を選択します。](media/61269290-fd82-4d4b-8045-aea1ebc82287.png)
   
-**検出**には、Office 365 のクラウド アプリケーションのセキュリティのポータルでは、このダッシュ ボードを表示する\>**クラウド探索のダッシュ ボード**です。 
+このダッシュボードにアクセスするには、Office 365 cloud App Security ポータルで、[ **** \> **cloud Discovery dashboard**の検出] に移動します。 
   
-![Office 365 CA ポータルでは、検出を選択します](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)
+![Office 365 CAS ポータルで、[検出] を選択します。](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)
   
 [Office 365 Cloud App Security でアプリ検出結果を確認する](review-app-discovery-findings-in-ocas.md)
   
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
-- [Office 365 クラウド アプリケーション セキュリティの使用例と使用に関するガイド](https://aka.ms/O365CASGuide)
+- [Office 365 Cloud App Security の使用例と利用状況ガイド](https://aka.ms/O365CASGuide)を取得する
     
 - [Office 365 Cloud App Security の使用準備](get-ready-for-office-365-cas.md)
     

@@ -6,56 +6,56 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
-description: 'ユーザー ロールを構成し、場合を作成し、Office 365 の高度な電子的証拠の開示の場合にユーザーを割り当てる方法について説明します。  '
-ms.openlocfilehash: 4c0043b7651cc82272492e19faf01041c6f67932
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: 'Office 365 Advanced eDiscovery でユーザーの役割を構成し、ケースを作成して、ケースにユーザーを割り当てる方法について説明します。  '
+ms.openlocfilehash: f393c59a9726baa6d7423eacb33543ae7adf5065
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29559060"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212990"
 ---
 # <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery でユーザーと とケースを設定する
 
-このトピックでは、ユーザーと Office 365 の高度な証拠開示のためのケースを設定する方法について説明します。
+このトピックでは、Office 365 Advanced eDiscovery のユーザーおよびケースをセットアップする方法について説明します。
   
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
   
 ## <a name="prerequisites"></a>前提条件
 
-ケースと高度な電子的証拠開示にユーザーを設定する前に、以下が必要です。
+Advanced eDiscovery でケースとユーザーを設定する前に、次のものが必要です。
   
-- 高度な電子的証拠開示を使用してユーザーのデータを分析するには、ユーザー (データの保管担当者) 割り当てる必要があります、Office 365 の E5 のライセンスです。または、Office 365 の E1 または E3 のライセンスを持つユーザーが高度な電子的証拠開示のスタンドアロン ライセンスを割り当てることができます。管理者およびコンプライアンス担当者の場合に割り当てられ、データを分析する高度な電子的証拠開示を使用している E5 のライセンスは不要です。 
+- Advanced eDiscovery を使用してユーザーのデータを分析するには、ユーザー (データの保管担当者) に Office 365 E5 ライセンスが割り当てられている必要があります。または、Office 365 E1 または E3 ライセンスを持つユーザーに、Advanced eDiscovery スタンドアロンライセンスを割り当てることができます。ケースに割り当てられ、高度な電子情報開示を使用してデータを分析する管理者とコンプライアンス責任者は、E5 ライセンスは必要ありません。 
     
-- Office 365 のセキュリティでは、電子的証拠開示マネージャーの役割グループのメンバーである必要がある&amp;コンプライアンス センターは、電子的証拠開示のサポート案件を作成し、メンバーを追加します。セキュリティでは、電子的証拠開示マネージャーのロール グループに登録するのには&amp;には、Office 365 の組織のグローバル管理者コンプライアンス ・ センターがあります。グローバル管理者でない場合に電子的証拠開示マネージャーの役割グループに追加できるグローバル管理者に依頼する必要があります。詳細についてを参照してください。
+- 電子情報開示ケースを作成してメンバーを追加するには、Office 365 &amp;セキュリティコンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。セキュリティ&amp; /コンプライアンスセンターの電子情報開示マネージャーの役割グループに自分を追加するには、Office 365 組織の全体管理者である必要があります。全体管理者ではない場合は、電子情報開示マネージャーの役割グループに追加するように全体管理者に依頼する必要があります。詳細については、以下を参照してください。
     
-  - [Office 365 のセキュリティのアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)
+  - [Office 365 セキュリティ&amp; /コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)
     
-  - [Office 365 のセキュリティ、電子的証拠開示のアクセス許可を割り当てる&amp;コンプライアンス センター](assign-ediscovery-permissions.md)
+  - [Office 365 セキュリティ&amp;コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)
     
-## <a name="step-1-assign-users-ediscovery-permissions"></a>手順 1: 電子的証拠開示のアクセス許可をユーザーに割り当てる
+## <a name="step-1-assign-users-ediscovery-permissions"></a>手順 1: ユーザーに電子情報開示のアクセス許可を割り当てる
 
-セキュリティ要件のアクセス許可をユーザーに割り当てるには、まず&amp;コンプライアンス センターの私の電子的証拠開示の場合は、メンバーとして追加できるようにします。ユーザーを追加する場合は、セキュリティでのメンバーとして&amp;コンプライアンス センターで行うことができる高度な電子的証拠開示の場合にアクセスします。
+最初の手順は、ユーザーが電子情報開示ケースのメンバー &amp;として追加できるように、セキュリティコンプライアンスセンターで必要なアクセス許可をユーザーに割り当てることです。セキュリティ&amp; /コンプライアンスセンターでユーザーをケースのメンバーとして追加すると、上級電子情報開示のケースにアクセスできるようになります。
   
-電子的証拠開示のサポート案件のメンバーとして追加できるように、必要なアクセス許可、ユーザーを割り当て、手順 1 を参照してください。[電子的証拠開示の場合は、Office 365 のセキュリティ&amp;コンプライアンス センター](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members)です。
+電子情報開示ケースのメンバーとして追加できるように、必要なアクセス許可をユーザーに割り当てるには、「 [Office 365 セキュリティ&amp;コンプライアンスセンターでの電子情報開示のケース](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members)」のステップ1を参照してください。
   
-## <a name="step-2-create-an-ediscovery-case-and-add-members"></a>手順 2: 電子的証拠開示のサポート案件を作成し、メンバーを追加
+## <a name="step-2-create-an-ediscovery-case-and-add-members"></a>手順 2: 電子情報開示ケースを作成し、メンバーを追加する
 
-セキュリティの新しい電子的証拠開示のサポート案件を作成するのには、次の手順&amp;コンプライアンス センター メンバーを追加します。ケースのメンバーは高度な電子的証拠開示の場合にアクセスするのには、できます。
+次の手順では、セキュリティ&amp;コンプライアンスセンターで新しい電子情報開示ケースを作成し、メンバーを追加します。そのケースのメンバーは、高度な電子情報開示のケースにアクセスできるようになります。
   
-1. 新しい電子的証拠開示のサポート案件を作成するには、手順 2 を参照してください。[電子的証拠開示の場合は、Office 365 のセキュリティ&amp;コンプライアンス センター](ediscovery-cases.md#step-2-create-a-new-case)です。
+1. 新しい電子情報開示ケースを作成するには、「 [Office 365 セキュリティ&amp;コンプライアンスセンターでの電子情報](ediscovery-cases.md#step-2-create-a-new-case)開示のケース」のステップ2を参照してください。
     
-2. メンバーを追加する、電子的証拠開示の場合に、手順 3 を参照してください[電子的証拠開示の場合は、Office 365 のセキュリティ&amp;コンプライアンス センター](ediscovery-cases.md#step-3-add-members-to-a-case)
+2. 電子情報開示ケースにメンバーを追加するには、「 [Office 365 セキュリティ&amp;コンプライアンスセンターでの電子情報開示ケース](ediscovery-cases.md#step-3-add-members-to-a-case)のステップ3」を参照してください。
     
-## <a name="step-3-go-a-case-in-advanced-ediscovery"></a>手順 3: 高度な電子的証拠開示のケースを移動します。
+## <a name="step-3-go-a-case-in-advanced-ediscovery"></a>手順 3: 高度な電子情報開示でケースを進める
 
-電子的証拠開示のサポート案件を作成してメンバーを追加する (または、大文字と小文字の任意のメンバー) は高度な電子的証拠開示に対応する大文字と小文字をアクセスできます。高度な電子的証拠開示のサポート案件を開くには、手順 8 を参照してください。[電子的証拠開示の場合は、Office 365 のセキュリティ&amp;コンプライアンス センター](ediscovery-cases.md#step-8-go-to-the-case-in-advanced-ediscovery)です。
+電子情報開示ケースを作成してメンバーを追加すると、そのユーザー (またはケースのメンバー) は、高度な電子情報開示で対応するケースにアクセスできるようになります。上級電子情報開示のケースにアクセスするには、「 [Office 365 セキュリティ&amp;コンプライアンスセンターでの電子情報](ediscovery-cases.md#step-8-go-to-the-case-in-advanced-ediscovery)開示のケース」の手順8を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

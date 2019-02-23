@@ -1,12 +1,12 @@
 ---
-title: 保留リストを確認するには、通知
+title: 保留通知の承認
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5ed3d214fe55df658faee6859d366637ef0fd37b
-ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
+ms.openlocfilehash: 3722d9c58e701455c02c07388036141cd8d9ddd5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694933"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213297"
 ---
-# <a name="acknowledge-a-hold-notification"></a>保留中の通知を確認します。 
+# <a name="acknowledge-a-hold-notification"></a>保留通知を確認する 
 
 コンテンツ準備中です。

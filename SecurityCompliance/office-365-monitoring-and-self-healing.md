@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Office 365 の監視および自動修復機能に関する情報。
-ms.openlocfilehash: 799c4dc97e9cc88dcc77f17b0f11ab76525012d9
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 4878ca5889c9b893154e0e7b910cb17c4b36402c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090519"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217547"
 ---
 # <a name="office-365-monitoring-and-self-healing"></a>Office 365 の監視と自己復旧
 Office 365 の規模を考えると、包括的な監視、インテリジェントな警告、および高速で信頼性の高い自己復旧を行うことなく、お客様のデータを復元し、マルウェアから安全に保持することはできません。Office 365 のスケールでサービスのセットを監視することは非常に困難です。接続されたグローバル環境でサービスを運用および管理するために必要な新しい mindsets と方法論を導入する必要がありました。データ収集とフィルター処理の従来の監視アプローチから、データ分析に基づくアプローチに対する通知を作成しました。そのデータの信号を受け取り、信頼性を構築した後、自動化を使用して問題を回復または解決します。この方法を使用すると、復旧式から人間を取得することができます。これにより、操作の費用がかからない高速で、エラーが発生しやすくなります。 

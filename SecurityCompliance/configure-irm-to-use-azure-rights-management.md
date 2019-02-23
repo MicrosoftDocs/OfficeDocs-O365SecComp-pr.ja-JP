@@ -1,7 +1,7 @@
 ---
 title: Azure Rights Management を使用するように IRM を構成する
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/13/2017
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 1b1f8c8b-f3b4-439b-910c-cf2f89a07a15
+ms.collection:
+- M365-security-compliance
 description: Office 365 Message Encryption (OME) の新機能のリリースにより、IRM を個別にセットアップする必要はなくなりました。Microsoft では、Azure Rights Management でレガシ OME と IRM を使用する新しい展開をセットアップすることはお勧めしません。OME の新機能の詳細については、「Office 365 Message Encryption のよくあるご質問」を参照してください。組織内で OME 新機能を使用する準備ができたら、「Azure Information Protection の上に構築された Office 365 Message Encryption の新機能をセットアップする」を参照してください。
-ms.openlocfilehash: bf49f2950e179e2805bde6cc4c02f4d6e533a301
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 131543e835f4b74e5f9238f67ca19857da1100a1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003236"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212867"
 ---
 # <a name="configure-irm-to-use-azure-rights-management"></a>Azure Rights Management を使用するように IRM を構成する
 

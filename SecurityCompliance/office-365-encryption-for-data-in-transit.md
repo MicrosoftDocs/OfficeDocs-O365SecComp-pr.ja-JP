@@ -5,18 +5,18 @@ author: kccross
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: '概要: 転送中に Microsoft がデータを暗号化する方法を簡単に説明します。'
-ms.openlocfilehash: fcb93bdda792a174c00bc5b2fc2153faeb049465
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: 987e923e242b47b07ad1ef65e5c7ce791c27d5bd
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29664153"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217507"
 ---
 # <a name="office-365-encryption-for-data-in-transit"></a>転送中のデータの Office 365 暗号化
 

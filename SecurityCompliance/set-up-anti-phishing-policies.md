@@ -6,16 +6,16 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.date: 02/06/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: office 365 の一部としての包括的な保護を備えたフィッシング対策保護 (office 365 の高度な脅威保護と基本的な保護機能) Exchange Online protection では、悪意のある偽造ベースのフィッシング攻撃から組織を保護するのに役立ちます。その他のフィッシング攻撃。
-ms.openlocfilehash: 94aa4ca6339ee0e0c250e96b9d8a499c83e964f7
-ms.sourcegitcommit: 32cb896aef370764ec6e8f8278ebaf16f1c5ff37
+ms.openlocfilehash: da18fdb3592d4d0dbe3d62c11627a7057fec5ed6
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30123968"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213707"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Office 365 の ATP のフィッシング対策およびフィッシング対策ポリシーをセットアップする
 
