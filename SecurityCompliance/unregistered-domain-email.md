@@ -1,52 +1,52 @@
 ---
-title: 登録されていないドメインの電子メール
+title: 未登録のドメインメール
 ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 10/17/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
-description: 大量のドメインが登録されていない電子メールを送信する場合は、ブロックを取得する電子メールのリスクを実行します。詳細については、この資料を参照してください。
-ms.openlocfilehash: f632c5f7ab94a200a364828408b13c0026335869
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+description: 登録されていないドメインの電子メールを大量に送信する場合は、メールがブロックされる危険を実行します。詳細については、この記事をお読みください。
+ms.openlocfilehash: bef39780438a6d9669354bddaed391b2364badf8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769787"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220777"
 ---
-# <a name="unregistered-domain-email-what-you-need-to-know"></a>登録されていないドメインのメール: に必要なものを知る
+# <a name="unregistered-domain-email-what-you-need-to-know"></a>未登録のドメインメール: 知っておくべき情報
 
-Office 365 は、Exchange オンライン保護 (EOP) では、いくつかのメッセージを中継するテナントのことができます。サポートされている 1 つの例としては、ユーザーが Office 365 メールボックスを持って、電子メールを送信して外部の人がされるようにバックアップを外部メールボックスのユーザーの電子メールの転送が構成されているときになります。これは、受講者が自分の個人的な電子メールのインタ フェースを活用して、、まだ学校に関連する電子メールを取得する必要な教育環境で最も一般的です。別の例がお客様のハイブリッド シナリオでは、EOP から電子メールを送信するサーバーを設置します。
+Office 365 では、テナントが Exchange Online Protection (EOP) を介して一部のメッセージを中継できます。サポートされている例の1つは、ユーザーが Office 365 メールボックスを持っていて、誰かが電子メールを送信したが、電子メール転送がユーザーの外部メールボックスに戻るように構成されている場合です。これは、学生が個人用の電子メールインターフェイスを利用していても、学校に関連するメールを受信したい教育環境で最も一般的です。もう1つの例として、顧客がハイブリッドシナリオで、EOP からメールを送信するオンプレミスサーバーがある場合があります。
 
-## <a name="problems-with-unregistered-domains"></a>登録されていないドメインの問題
+## <a name="problems-with-unregistered-domains"></a>未登録のドメインに関する問題
 
-オンプレミスのサーバーが侵害され、大量の EOP をスパムの中継を終了するときに問題があります。ほとんどすべての場合、右側のコネクタに設定されてですが、登録されていないとも呼ばれる準備が解除された、ドメインから送信される電子メール。Office 365 は適度な未登録のドメインからのメールを許可するを送信するように計画する各ドメインの管理センターで、承認済みドメインを構成する必要があります。
+この問題は、オンプレミスのサーバーが侵害され、EOP の大量のスパムを中継してしまうことにあります。ほとんどの場合、右コネクタはセットアップされていますが、未登録のドメイン (プロビジョニング解除されたドメインとも呼ばれる) からメールを送信しています。Office 365 では、登録されていないドメインからのメールの送信を許可していますが、の送信を計画している各ドメインの管理センターで承認済みドメインを構成する必要があります。
 
-危険にさらされた後のテナントされなくなります登録されていないドメインからの送信メールを送信します。ユーザーは配信不能レポート (NDR) を示すが表示されます。
+いったん侵害されると、テナントは未登録のドメインの送信メールを送信できなくなります。ユーザーは、次の状態を示す配信不能レポート (NDR) を受信します。
 
-- 550 5.7.750 サービスを利用できません。クライアントが登録されていないドメインからの送信は禁止
+- 550 5.7.750 サービスは利用できません。クライアントが未登録のドメインからの送信をブロックされました
 
-## <a name="unblocking-tenant-in-order-to-send-again"></a>再送信するためにブロック解除のテナント
+## <a name="unblocking-tenant-in-order-to-send-again"></a>再送信するためにテナントのブロックを解除する
 
-登録されていないドメインから送信するためにブロックされる場合に実行する必要があるいくつかの方法があります。
+未登録のドメインからの送信がブロックされた場合は、いくつかの作業を行う必要があります。
 
-1. すべてのドメインを Office 365 の管理センターで登録することを確認します。詳細についてを参照して[ここで](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
+1. Office 365 管理センターですべてのドメインを登録していることを確認してください。詳細については、[こちら](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)を参照してください。
 
-2. 特殊なコネクタを探します。出演者の悪意のある多くの場合迷惑メールを送信するのには、Office 365 のテナントで新しい受信コネクタが作成されます。詳細については、コネクタを確認する方法を参照して[ここで](https://docs.microsoft.com/en-us/powershell/module/exchange/mail-flow/get-inboundconnector?view=exchange-ps)。 
+2. 異常なコネクタを探します。悪意のある俳優は、多くの場合、スパムを送信するために Office 365 テナントに新しい受信コネクタを作成します。コネクタの確認の詳細については、[こちら](https://docs.microsoft.com/en-us/powershell/module/exchange/mail-flow/get-inboundconnector?view=exchange-ps)を参照してください。 
 
-3. オンプレミスのサーバーをロックダウンし、侵害がないことを確認します。
+3. オンプレミスのサーバーをロックし、侵害されないようにします。
 
 > [!TIP]
-> 多くの要因関係するここでは、これらは、サード パーティのサーバーの場合は特に。関係なく、する必要があるには、サーバーをそのまますべてのメールが正当であることを確認します。
+> ここでは、特にサードパーティ製のサーバーの場合に、多くの要因が関係しています。いずれにしても、サーバーから発信されたすべてのメールが正当であることを確認できるようにする必要があります。
 
-4. 終わったら、マイクロソフト サポートに連絡し、登録されていないドメインから再送信をブロック解除、テナントを取得するよう要求する必要があります。 エラー コードを提供することをお勧め、ですが、お客様の環境がセキュリティで保護されていると、迷惑メールは再送信されないことを証明する必要があります。サポート案件を開く方法の詳細についてを参照して[ここで](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online)。
+4. 完了したら、Microsoft サポートに連絡して、登録されていないドメインから送信されないようにテナントのブロック解除を取得するように依頼する必要があります。 エラーコードを提供することは役に立ちますが、環境がセキュリティで保護されており、スパムが再送信されないことを証明する必要があります。サポートケースを開く方法については、[こちら](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online)を参照してください。
   
-## <a name="for-more-information"></a>詳細情報
+## <a name="for-more-information"></a>関連情報
 
 [Office 365 の電子メールのスパム対策保護](anti-spam-protection.md)
 
@@ -56,4 +56,4 @@ Office 365 は、Exchange オンライン保護 (EOP) では、いくつかの�
 
 [Office 365 を使用してメールを送信するように多機能デバイスまたはアプリケーションをセット アップする方法](https://support.office.com/en-us/article/How-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
 
-[管理許可ドメイン Exchange オンライン](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
+[Exchange Online で承認済みドメインを管理](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)します。

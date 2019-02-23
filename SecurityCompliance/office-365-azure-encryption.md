@@ -5,22 +5,22 @@ author: kccross
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: '概要: Azure の暗号化について説明します。'
-ms.openlocfilehash: f169744933a304dc92ba46021ea647403a75bbd9
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: 317fafe34c642d6c78cdf856e7391715770c1659
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29664113"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219837"
 ---
 # <a name="office-365-encryption-in-azure"></a>Azure での Office 365 暗号化
 
-## <a name="introduction"></a>概要
+## <a name="introduction"></a>はじめに
 暗号化された通信や運用プロセスなど、Azure の技術的な防護策は、データのセキュリティを維持するのに役立ちます。また、追加の暗号化機能を実装し、独自の暗号化キーを管理する柔軟性もあります。お客様の構成に関係なく、Microsoft は暗号化を適用して Azure の顧客データを保護します。Microsoft では、さまざまな高度なテクノロジを使用して Azure でホストされているデータを制御し、暗号化キーの暗号化、制御、および管理、およびデータへのアクセスの制御や監査を行うこともできます。さらに、Azure ストレージには、セキュリティ機能の包括的なセットが用意されているため、開発者はセキュリティで保護されたアプリケーションを構築できます。
 
 Azure には、ある場所から別の場所に移動する際にデータを保護するためのさまざまなメカニズムが用意されています。Microsoft では、クラウドサービスと顧客の間を移動するときに、TLS を使用してデータを保護しています。Microsoft のデータセンターは、Azure サービスに接続するクライアントシステムとの TLS 接続をネゴシエートします。完全転送機密性 (PFS) は、顧客のクライアントシステムと Microsoft のクラウドサービスとの間の接続を一意のキーで保護します。また、接続は RSA ベースの2048ビット暗号化キーの長さも使用します。この組み合わせにより、送信中のデータを他のユーザーが傍受したり、アクセスしたりすることが困難になります。

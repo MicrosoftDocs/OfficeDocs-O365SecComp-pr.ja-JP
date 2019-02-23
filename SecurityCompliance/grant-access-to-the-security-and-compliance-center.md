@@ -1,5 +1,5 @@
 ---
-title: ユーザーに Office 365 のセキュリティのアクセス権を与える&amp;コンプライアンス センター
+title: Office 365 セキュリティ&amp;コンプライアンスセンターへのアクセス権をユーザーに付与する
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -8,62 +8,62 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.PermissionsHelp
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: ユーザーが Office 365 のセキュリティのアクセス許可を割り当てる必要があります&amp;コンプライアンス ・ センターのセキュリティやコンプライアンスの機能のいずれかを管理することができます。
-ms.openlocfilehash: 5055c64d914e15a6570c339ade48bb8f7e802ea7
-ms.sourcegitcommit: a56fa2e184a2662fd8a7881ccea0891e9a26d497
+description: ユーザーは、セキュリティまたはコンプライアンス機能を管理する&amp;前に、Office 365 セキュリティコンプライアンスセンターでアクセス許可を割り当てる必要があります。
+ms.openlocfilehash: 0a3f0d1ddde7d269a0f8f9596c5c3de14e94429d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27221068"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216307"
 ---
-# <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>ユーザーに Office 365 のセキュリティのアクセス権を与える&amp;コンプライアンス センター
+# <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Office 365 セキュリティ&amp;コンプライアンスセンターへのアクセス権をユーザーに付与する
 
-ユーザーが Office 365 のセキュリティのアクセス許可を割り当てる必要があります&amp;コンプライアンス ・ センターのセキュリティやコンプライアンスの機能のいずれかを管理することができます。Office 365 のグローバル管理者またはセキュリティの OrganizationManagement の役割グループのメンバーとして&amp;コンプライアンス センターでは、ユーザーにこれらのアクセス許可を与えることができます。ユーザーのみへのアクセスを許可するセキュリティやコンプライアンスの機能を管理できるようになります。 
+ユーザーは、セキュリティまたはコンプライアンス機能を管理する&amp;前に、Office 365 セキュリティコンプライアンスセンターでアクセス許可を割り当てる必要があります。セキュリティ&amp; /コンプライアンスセンターでは、Office 365 のグローバル管理者または組織の管理役割グループのメンバーとして、これらのアクセス許可をユーザーに与えることができます。ユーザーは、アクセスを許可するセキュリティまたはコンプライアンス機能のみを管理できます。 
   
-セキュリティでユーザーに与えることができます別のアクセス許可の詳細については&amp;コンプライアンス センターでは、チェック アウト[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)。
+セキュリティ/コンプライアンスセンターでユーザーに付与できるさまざまなアクセス許可の詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターでアクセス許可](permissions-in-the-security-and-compliance-center.md)を確認する」を参照してください。 &amp;
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>事前に必要な知識
 
-- Office 365 のグローバル管理者、またはセキュリティの OrganizationManagement の役割グループのメンバーである必要があります&amp;コンプライアンス センターは、この資料の手順を完了します。
+- この記事に記載されている手順を完了するには、Office 365 グローバル管理者である&amp;か、または、セキュリティコンプライアンスセンターの組織管理役割グループのメンバーである必要があります。
     
-- セキュリティの役割のグループ&amp;コンプライアンス センターでは、Exchange online では、役割グループに似た名前がありますが、同じあります。 
+- セキュリティ&amp; /コンプライアンスセンターの役割グループの名前は Exchange Online の役割グループと似ている場合がありますが、同じではありません。 
     
-- 役割グループのメンバーシップが Exchange Online とセキュリティの間で共有されていない&amp;コンプライアンス センターです。
+- 役割グループのメンバーシップは、Exchange Online とセキュリティ&amp;センターコンプライアンスセンターとの間で共有されません。
     
-## <a name="use-the-office-365-admin-center-to-give-another-user-access-to-the-security-amp-compliance-center"></a>Office 365 管理センターを使用して、セキュリティを保護する別のユーザーのアクセス権を与える&amp;コンプライアンス センター
+## <a name="use-the-office-365-admin-center-to-give-another-user-access-to-the-security-amp-compliance-center"></a>Office 365 管理センターを使用して、別のユーザーにセキュリティ&amp;コンプライアンスセンターへのアクセス権を付与する
 
-1. [管理ページに移動し、Office 365 にサインイン](https://go.microsoft.com/fwlink/p/?LinkId=525275)します。
+1. [Office 365 にサインインし、管理センターに移動し](https://go.microsoft.com/fwlink/p/?LinkId=525275)ます。
     
-2. Office 365 管理センターをクリックし、[**管理センター**を開く] をクリックし、**セキュリティ&amp;準拠**。 
+2. Office 365 管理センターで、**管理センター**を開き、[**セキュリティ&amp;のコンプライアンス**] をクリックします。 
     
-3. セキュリティ&amp;コンプライアンス センターでは、**アクセス許可**に移動します。
+3. セキュリティ&amp; /コンプライアンスセンターで、[**アクセス許可**] に移動します。
     
-4. 役割グループにユーザーを追加し、[**編集**] をクリックするを選択します] ボックスの一覧から![の編集アイコン](media/O365_MDM_CreatePolicy_EditIcon.gif)。
+4. リストからユーザーを追加する役割グループを選択し、[編集] [ **** ![編集] アイコン](media/O365_MDM_CreatePolicy_EditIcon.gif)をクリックします。
     
-5. [**メンバー]** の役割グループのプロパティ ページで [**追加**] をクリックします![アイコンの追加](media/ITPro-EAC-AddIcon.gif)名を選択してユーザー (またはユーザー) を追加したいです。 
+5. 役割グループのプロパティページの [**メンバー**] で、 ****![[追加]](media/ITPro-EAC-AddIcon.gif)アイコンをクリックし、追加するユーザーの名前を選択します。 
     
-6. すべての役割グループに追加] をクリックしユーザーを選択した**を追加-\>** し、 **[ok]** をクリックします。
+6. 役割グループに追加するすべてのユーザーを選択したら、[ **\>追加**] をクリックし、[ **OK]** をクリックします。
     
 7. **[保存]** をクリックして、役割グループに加えた変更を保存します。 
     
 ### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 
-1. セキュリティ&amp;コンプライアンス センターでは、**アクセス許可**に移動します。
+1. セキュリティ&amp; /コンプライアンスセンターで、[**アクセス許可**] に移動します。
     
-2. リストからメンバーを表示するロール グループを選択します。
+2. リストから、メンバーを表示する役割グループを選択します。
     
-3. 役割グループの詳細] で、右側の役割グループのメンバーを表示できます。
+3. 右側の役割グループの詳細では、役割グループのメンバーを表示できます。
     
-## <a name="use-powershell-to-give-another-user-access-to-the-security-amp-compliance-center"></a>PowerShell を使用してセキュリティを保護する別のユーザーのアクセス権を与える&amp;コンプライアンス センター
+## <a name="use-powershell-to-give-another-user-access-to-the-security-amp-compliance-center"></a>PowerShell を使用して、セキュリティ&amp; /コンプライアンスセンターへのアクセス権を別のユーザーに付与する
 
-1. [Office 365 のセキュリティとコンプライアンス センター PowerShell に接続](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)します。
+1. [Office 365 Security & コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)します。
     
 2. 次の例で示すように、**Add-RoleGroupMember** コマンドを使用して、ユーザーを Organization Management の役割に追加できます。 
     
@@ -76,19 +76,19 @@ ms.locfileid: "27221068"
   
 - _-Identity_ は、メンバーを追加する役割グループです。 
     
-- _メンバー_は、役割グループに追加するには、メールボックス、ユニバーサル セキュリティ グループ (USG)、またはコンピューターです。一度に 1 つだけメンバーを指定できます。 
+- _Member_は、役割グループに追加するメールボックス、ユニバーサルセキュリティグループ (USG)、またはコンピューターです。一度に指定できるメンバーは1つだけです。 
     
-構文とパラメーターの詳細については、[追加 RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859)を参照してください。
+構文とパラメーターの詳細については、「 [add-rolegroupmember](https://go.microsoft.com/fwlink/p/?LinkId=510859)」を参照してください。
   
 ### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 
-与えたユーザーのアクセス セキュリティを保護することを確認するのには&amp;コンプライアンス センターでは、次の例のように、組織の管理役割グループのメンバーを表示するのには**Get RoleGroupMember**コマンドレットを使用します。 
+ユーザーにセキュリティ&amp;コンプライアンスセンターへのアクセス権が与えられたことを確認するには、次の例に示すように、 **add-rolegroupmember**コマンドレットを使用して組織の管理役割グループのメンバーを表示します。 
   
 ```
 Get-RoleGroupMember -Identity "OrganizationManagement"
 
 ```
 
-構文とパラメーターの詳細については、 [Get RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510860)を参照してください。
+構文とパラメーターの詳細については、「 [add-rolegroupmember](https://go.microsoft.com/fwlink/p/?LinkId=510860)」を参照してください。
   
 

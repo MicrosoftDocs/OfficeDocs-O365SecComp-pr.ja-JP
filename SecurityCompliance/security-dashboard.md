@@ -1,127 +1,127 @@
 ---
-title: ダッシュ ボードのセキュリティの概要
+title: セキュリティダッシュボードの概要
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 02/07/2019
 ms.audience: ITPro
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection: M365-security-compliance
-description: Office 365 の脅威保護の状態を確認し、表示、およびセキュリティの警告の動作には、新しいセキュリティ ダッシュ ボードを使用します。
-ms.openlocfilehash: 403c47ed09e9652a66abeafb93be02589c9b1702
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: 新しいセキュリティダッシュボードを使用して、Office 365 の脅威保護の状態を確認し、セキュリティの警告を表示して操作します。
+ms.openlocfilehash: 7fcf570887e5ed720e2e62d627b442597b824e84
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995128"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215176"
 ---
-# <a name="security-dashboard"></a>セキュリティ ダッシュ ボード
+# <a name="security-dashboard"></a>セキュリティダッシュボード
 
 ## <a name="overview"></a>概要
 
-[セキュリティ&amp;コンプライアンス センター](go-to-the-securitycompliance-center.md)データの保護とコンプライアンスを管理する組織を有効にします。必要な権限があると仮定した場合、セキュリティ ダッシュ ボードを使用すると同様に、脅威の保護状態を確認、表示、およびセキュリティの警告の動作です。 
+[ &amp;セキュリティ/コンプライアンスセンター](go-to-the-securitycompliance-center.md)を使用すると、組織でデータの保護とコンプライアンスを管理できます。必要なアクセス許可を持っていれば、セキュリティダッシュボードを使用して、脅威保護の状態を確認したり、セキュリティの警告を表示および操作したりできます。 
   
-、概要を説明するビデオを見るし、詳細については、この資料を読みます。
+概要についてはビデオを参照し、詳細についてはこの記事を読んでください。
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/3540b1f8-62d2-47fa-a07d-d7ad76f55b0f?autoplay=false]
   
-セキュリティ ダッシュ ボードにはによって、どのような組織の Office 365 サブスクリプションが含まれている脅威の管理の概要、脅威保護の状態、週単位のグローバルの脅威検出、マルウェア、および詳細についてで説明したようなど、いくつかのウィジェットが含まれます、次のセクション。
+組織の Office 365 サブスクリプションに含まれているものに応じて、セキュリティダッシュボードには、脅威管理の概要、脅威の保護の状態、グローバルな週次の脅威の検出、マルウェアなど、いくつかのウィジェットが含まれています。次のセクション。
   
-セキュリティ ダッシュ ボードを表示するのには、 [Office 365 のセキュリティ&amp;コンプライアンス センター](go-to-the-securitycompliance-center.md)**脅威の管理**には、 \> **ダッシュ ボード**です。
+セキュリティダッシュボードを表示するには、 [Office 365 セキュリティ&amp;コンプライアンスセンター](go-to-the-securitycompliance-center.md)で、[**脅威管理** \> ]**ダッシュボード**に移動します。
   
 > [!NOTE]
-> セキュリティ ダッシュ ボードを表示するのには Office 365 のグローバル管理者、セキュリティ管理者は、またはセキュリティのリーダーである必要があります。一部のウィジェットでは、追加のアクセス許可を表示する必要があります。詳細についてを参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。 
+> セキュリティダッシュボードを表示するには、Office 365 の全体管理者、セキュリティ管理者、またはセキュリティリーダーである必要があります。一部のウィジェットには、表示するための追加のアクセス許可が必要です。詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。 
   
-## <a name="threat-management-summary"></a>脅威の管理の概要
+## <a name="threat-management-summary"></a>脅威管理の概要
 
-脅威の管理の概要のウィジェットが一目でわかります組織が保護する方法の脅威から過去 7 (7) 日間にします。
+脅威管理の概要ウィジェットは、過去7日間の脅威から組織がどのように保護されているかをひとめで確認できます。
 
-![セキュリティ ダッシュ ボード ・ ウィジェットの脅威の管理の概要](media/SecDash-ThreatMgmtSummary.png)
+![セキュリティダッシュボード-脅威管理の概要ウィジェット](media/SecDash-ThreatMgmtSummary.png)
 
-については、脅威の管理の概要に表示するサブスクリプションが含まれていますによって異なります。次の表は、どのような情報は、Office 365 エンタープライズ E3 と Office 365 のエンタープライズ E5 に含まれているについて説明します。
+脅威管理の概要に表示される情報は、サブスクリプションの内容によって異なります。次の表では、office 365 enterprise E3 および office 365 enterprise E5 に含まれる情報について説明します。
 
 
 |Office 365 Enterprise E3  |Office 365 Enterprise E5  |
 |---------|---------|
-|マルウェアのメッセージがブロックされています。<br/>フィッシング詐欺メッセージがブロックされています。<br>ユーザーから報告されたメッセージ<br><br><br><br> |マルウェアのメッセージがブロックされています。<br>フィッシング詐欺メッセージがブロックされています。<br>ユーザーから報告されたメッセージ<br>0 日マルウェアがブロックされています。<br>高度なフィッシング詐欺メッセージの検出<br>悪意のある Url がブロックされています。 |
+|ブロックされるマルウェアメッセージ<br/>ブロックされたフィッシングメッセージ<br>ユーザーによって報告されるメッセージ<br><br><br><br> |ブロックされるマルウェアメッセージ<br>ブロックされたフィッシングメッセージ<br>ユーザーによって報告されるメッセージ<br>ゼロ日のマルウェアがブロックされる<br>検出された高度なフィッシングメッセージ<br>ブロックされた悪意のある url |
 
-表示または、脅威の管理の概要のウィジェットにアクセスするには、脅威保護の高度なレポートを表示するアクセス許可が必要です。詳細についてを参照してください[ATP のレポートを表示するのにはどのような権限が必要ですか?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)です。 
+脅威管理の概要ウィジェットを表示またはアクセスするには、高度な脅威保護レポートを表示するためのアクセス許可を持っている必要があります。詳細については、「 [ATP レポートを表示するために必要なアクセス許可](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)」を参照してください。 
 
 ## <a name="threat-protection-status"></a>脅威保護の状態
 
-脅威保護の状態のウィジェットは、フィッシングやマルウェアの傾向と詳細なビューを使用して脅威保護の有効性を示しています。 
+脅威保護の状態ウィジェットは、フィッシングとマルウェアの傾向と詳細な表示を使用して、脅威保護の効果を示します。 
 
-![脅威保護の状態のウィジェット](media/tpswidget.png)
+![脅威保護状態ウィジェット](media/tpswidget.png)
 
-詳細によって異なるかどうか、Office 365 サブスクリプションにはでは[Office 365 の高度な脅威保護](office-365-atp.md)(ATP) の有無にかかわらず、 [Exchange のオンライン保護](eop/exchange-online-protection-eop.md)(EOP) が含まれています。
+この詳細は、office 365 サブスクリプションに[office 365 Advanced Threat protection](office-365-atp.md) (ATP) があるかどうかにかかわらず、 [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP) が含まれているかどうかによって異なります。
 
 
-|サブスクリプションが含まれている場合. |これらの詳細が表示されます。 |
+|サブスクリプションに含まれるもの |これらの詳細が表示できます。 |
 |---------|---------|
-|EOP ですが、Office 365 ATP ではありません。     |検出され、EOP によってブロックされている悪意のある電子メール<br> [脅威保護の状態のレポート (EOP)](view-email-security-reports.md#threat-protection-status-report)を参照してください。| |
-|Office 365 の ATP |悪意のあるコンテンツや悪意のある電子メール EOP と Office 365 の分析ツールによって検出されブロック<br>マルウェア対策エンジン、 [0 時間の自動削除](zero-hour-auto-purge.md)、および分析ツールの機能 ([安全なリンク](atp-safe-links.md)、[安全な添付ファイル](atp-safe-attachments.md)では、 [ATP のフィッシング対策](atp-anti-phishing.md)など) によってブロックされている、悪意のあるコンテンツに一意の電子メール メッセージの数を集計します。<br>[脅威保護の状態のレポート (ATP)](view-reports-for-atp.md#threat-protection-status-report)を参照してください。 | 
+|EOP ではないが、Office 365 ATP     |EOP によって検出およびブロックされた悪意のある電子メール<br> 「[脅威保護の状態レポート (EOP)](view-email-security-reports.md#threat-protection-status-report)」を参照してください。| |
+|Office 365 ATP |EOP および Office 365 ATP により、悪意のあるコンテンツや悪意のある電子メールが検出されブロックされる<br>マルウェア対策エンジン、[ゼロ時間自動削除](zero-hour-auto-purge.md)、atp 機能 ([安全なリンク](atp-safe-links.md)、[安全な添付ファイル](atp-safe-attachments.md)、 [atp のフィッシング対策](atp-anti-phishing.md)など) によってブロックされた一意の電子メールメッセージの集計数。<br>「[脅威保護の状態レポート (ATP)](view-reports-for-atp.md#threat-protection-status-report)」を参照してください。 | 
 
-表示または脅威保護の状態のウィジェットにアクセスをするには、脅威保護の高度なレポートを表示するアクセス許可が必要です。詳細についてを参照してください[ATP のレポートを表示するのにはどのような権限が必要ですか?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)です。 
+脅威保護状態ウィジェットを表示またはアクセスするには、Advanced threat protection レポートを表示する権限が必要です。詳細については、「 [ATP レポートを表示するために必要なアクセス許可](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)」を参照してください。 
 
-## <a name="global-weekly-threat-detections"></a>グローバル週 1 回の脅威の検出
+## <a name="global-weekly-threat-detections"></a>グローバルな毎週の脅威の検出
  
-週単位のグローバルの脅威検出のウィジェットでは、過去 7 (7) 日間の電子メール メッセージにどのように多くの脅威が検出されましたを示します。
+グローバルな週次脅威検出ウィジェットは、過去7日間 (7 日間) の電子メールメッセージで検出された脅威の数を示します。
 
-![グローバルの脅威の検出を毎週ウィジェット](media/globalweeklythreatdetections.png)
+![グローバルな週次脅威検出ウィジェット](media/globalweeklythreatdetections.png)
 
-メトリックは、次の表で説明するように計算されます。
+メトリックは、次の表に示すように計算されます。
 
 |測定基準  |計算方法  |
 |---------|---------|
-|スキャンされたメッセージ |スキャンされた電子メール メッセージの数は、受信者の数を掛けた値 |
-|停止の脅威  |マルウェアの受信者の数を掛けた値が含まれていると識別された電子メール メッセージの数 |
-|[ATP](office-365-atp.md)によってブロックされています。 |ATP の受信者の数を掛けた値によってブロックされている電子メール メッセージの数 |
-|配信された後に削除 |[がゼロの自動パージ](zero-hour-auto-purge.md)の受信者の数を掛けた値が削除されたメッセージの数 |
+|スキャンされたメッセージ |スキャンされた電子メールメッセージの数を受信者の数で乗算した数 |
+|停止した脅威  |マルウェアが含まれていると識別された電子メールメッセージの数が受信者数を乗算した回数 |
+|[ATP](office-365-atp.md)によるブロック |ATP によってブロックされた電子メールメッセージの数が受信者数に乗じる |
+|配信後に削除 |[0 時間の自動削除](zero-hour-auto-purge.md)によって削除されたメッセージの数が、受信者の数で乗算された数 |
 
 ## <a name="malware"></a>マルウェア
 
-マルウェアのウィジェットは、過去の 7 (7) 日の間にマルウェアの傾向やマルウェア ファミリの種類に関する詳細情報を表示します。
+マルウェアウィジェットは、マルウェアの傾向とマルウェアファミリの種類に関する詳細を過去7日間 (7 日間) に表示します。
 
-![マルウェアの傾向やファミリの種類](media/malwarewidgetatpe5.png)
+![マルウェアの傾向とファミリの種類](media/malwarewidgetatpe5.png)
  
 ## <a name="insights"></a>分析情報
 
-洞察を確認する必要がある重要な問題を表面だけでなく、考慮すべき推奨事項と操作も含まれます。 
+洞察では、確認すべき重要な問題が表面化するだけでなく、考慮すべき推奨事項とアクションも含まれています。 
 
-![スマート ・ インサイト](media/smartinsights.png)
+![Smart insights](media/smartinsights.png)
 
-たとえば、一部のユーザーは、迷惑メールのオプションを無効にしているためにフィッシング詐欺の電子メール メッセージが配信されているを参照してください可能性があります。見識のしくみに関する詳細についてを参照してください[のレポートと Office 365 のセキュリティ情報&amp;コンプライアンス センター](reports-and-insights-in-security-and-compliance.md)です。
+たとえば、一部のユーザーが迷惑メールのオプションを無効にしているために、フィッシング電子メールメッセージが配信されている可能性があります。insights の機能の詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのレポートと分析](reports-and-insights-in-security-and-compliance.md)」を参照してください。
   
 ## <a name="threat-intelligence"></a>脅威インテリジェンス
 
-組織のサブスクリプションには、[脅威のインテリジェンス機能](office-365-ti.md)が含まれている場合、セキュリティ ダッシュ ボードには、高度なツールを含む**脅威インテリジェンス**セクションが含まれて。組織のセキュリティ チームは、新たなキャンペーンを理解し、脅威を調査し、インシデントを管理する、このセクションの情報を使用できます。 
+組織のサブスクリプションに[脅威インテリジェンス機能](office-365-ti.md)が含まれている場合、セキュリティダッシュボードには、高度なツールを含む**脅威インテリジェンス**のセクションがあります。組織のセキュリティチームは、このセクションの情報を使用して、新しいキャンペーンの理解、脅威の調査、インシデントの管理を行うことができます。 
   
-![脅威インテリジェンスでは、組織を対象とした攻撃を理解できます。](media/threatintelwidget.png)
+![脅威インテリジェンスは、組織を対象とした攻撃を理解するのに役立つ](media/threatintelwidget.png)
   
   
 ## <a name="trends"></a>傾向
 
-セキュリティ ダッシュ ボードの下部にある**の傾向**] セクションは、組織のメール フローの傾向をまとめたものです。レポートでは、スパム、マルウェア、フィッシング詐欺、および適切な e メールとして分類されたメールに関する情報を提供します。レポートの詳細な情報を表示するタイルをクリックします。 
+セキュリティダッシュボードの下部にある [**傾向**] セクションは、組織の電子メールフローの傾向を要約したものです。レポートでは、スパム、マルウェア、フィッシングの試行、および適切な電子メールとして分類された電子メールに関する情報が提供されます。タイルをクリックすると、レポートに詳細な情報が表示されます。 
   
-![傾向] セクションは、組織のメール フローの傾向をまとめたもの。](media/trends.png)
+![[傾向] セクションには、組織の電子メールフローの傾向が要約されています。](media/trends.png)
   
-組織の Office 365 サブスクリプションには、[脅威のインテリジェンス機能](office-365-ti.md)が含まれている場合する必要があります、**最新の脅威の管理に関するアラート**レポートを表示して処理するには、セキュリティ チームはこのセクションでと、優先度の高いセキュリティの警告です。 
+また、組織の Office 365 サブスクリプションに[脅威インテリジェンス機能](office-365-ti.md)が含まれている場合は、セキュリティチームによる表示と操作の実行を可能にする、**最新の脅威管理通知**レポートがこのセクションにあります。優先度の高いセキュリティ警告。 
 
-表示または送信および受信したメールのウィジェットにアクセスするには、脅威保護の高度なレポートを表示するアクセス許可が必要です。詳細についてを参照してください[ATP のレポートを表示するのにはどのような権限が必要ですか?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)です。 
+送信および受信した電子メールウィジェットを表示またはアクセスするには、高度な脅威保護レポートを表示するアクセス許可を持っている必要があります。詳細については、「 [ATP レポートを表示するために必要なアクセス許可](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)」を参照してください。 
 
-表示または、最新の脅威に対する管理警告のウィジェットにアクセスするには、アラートを表示するアクセス許可が必要です。詳細については、[アラートを表示するために必要な RBAC 権限](alert-policies.md#rbac-permissions-required-to-view-alerts)を参照してください。
+最近の脅威管理通知 widget を表示またはアクセスするには、通知を表示するためのアクセス許可が必要です。詳細については、「[通知の表示に必要な RBAC アクセス許可](alert-policies.md#rbac-permissions-required-to-view-alerts)」を参照してください。
   
 ## <a name="related-topics"></a>関連項目
 
-[セキュリティで電子メールのセキュリティ レポートを表示する&amp;コンプライアンス センター](view-email-security-reports.md)
+[セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する](view-email-security-reports.md)
   
-[Office 365 の高度な脅威保護のためのレポートを表示します。](view-reports-for-atp.md)
+[Office 365 Advanced Threat Protection のレポートを表示する](view-reports-for-atp.md)
   
 [Office 365 Advanced Threat Protection](office-365-atp.md)
   

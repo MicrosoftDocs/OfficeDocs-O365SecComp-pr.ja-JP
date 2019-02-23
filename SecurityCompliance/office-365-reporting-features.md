@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,16 +14,16 @@ ms.collection:
 - Strat_O365_IP
 - M365-analytics
 description: Office 365 内のレポート機能の説明。
-ms.openlocfilehash: f750ac6647199ef14bd6605535797e00c1cab961
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: e38be005c31f6c96c603d5efbbe690ec42a9a25f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090899"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219857"
 ---
 # <a name="office-365-reporting-features"></a>Office 365 のレポート作成機能 
 
-## <a name="introduction"></a>概要
+## <a name="introduction"></a>はじめに
 Office 365 のレポート機能には、Azure Active Directory (AD)、Exchange Online、デバイス管理、監督レビュー、データ損失防止 (DLP) のさまざまな監査レポートが用意されています。これらは、Office 365 アクティビティレポートとは異なります。
 
 ## <a name="office-365-reports-dashboard"></a>Office 365 レポートダッシュボード

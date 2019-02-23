@@ -1,7 +1,7 @@
 ---
 title: 送信スパム ポリシーを構成する
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/10/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
-description: 送信スパム フィルターは常に有効場合は、送信する電子メールを送るためにサービスを使用すると、サービスは、それぞれの受信者を使用して組織を保護します。
-ms.openlocfilehash: b6185cfded28613cb5a512882aefb1a99db158db
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.collection:
+- M365-security-compliance
+description: 送信電子メールの送信にサービスを使用すると、送信スパムフィルターは常に有効になり、それによって、そのサービスと目的の受信者を使用して組織が保護されます。
+ms.openlocfilehash: 095098c058a5ca5165e0ad24ef48296c980eadcf
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002418"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214527"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>送信スパム ポリシーを構成する
 
@@ -31,13 +33,13 @@ ms.locfileid: "23002418"
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 <a name="sectionSection0"> </a>
 
-予想所要時間 : 5 分
+予想所要時間 : 5 分
   
-このプロシージャまたはプロシージャを実行する前にアクセス許可を割り当てる必要があります。必要なアクセス許可を表示するには、エントリを参照"スパム対策[機能のアクセス許可を Exchange Online で](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)トピックです。 
+この手順を実行する前に、アクセス許可を割り当てる必要があります。必要なアクセス許可を確認するには、「 [Exchange Online の機能のアクセス許可](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)」トピックの「スパム対策エントリ」を参照してください。 
   
 このトピックの手順で使用可能なキーボード ショートカットについては、「**Exchange 管理センターのキーボード ショートカット**」を参照してください。
   
-リモート PowerShell を使用して次の手順を実行できます。[Get HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/8f15c83c-c10a-4d9d-b135-35321430bdc2.aspx)コマンドレットを使用すると、設定、および送信スパム ポリシーの設定を編集するのには[一連の HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/665d1b04-d4b5-4a0e-811a-4e37096ccbfd.aspx)を確認します。Exchange のオンライン保護への接続に Windows PowerShell を使用する方法については、 [Exchange のオンライン保護 PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=627290)を参照してください。Exchange Online に接続する Windows PowerShell を使用する方法については、 [Exchange オンライン PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=396554)を参照してください。
+次の手順は、リモート PowerShell を使用して実行することもできます。設定を確認するには、 [HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/8f15c83c-c10a-4d9d-b135-35321430bdc2.aspx)コマンドレットを使用し、送信スパムポリシーの設定を編集するには[HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/665d1b04-d4b5-4a0e-811a-4e37096ccbfd.aspx)を使用します。Windows PowerShell を使用して exchange online protection に接続する方法については、「 [exchange online protection の PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=627290)」を参照してください。Windows PowerShell を使用して exchange online に接続する方法については、「 [exchange online powershell への接続](https://go.microsoft.com/fwlink/p/?linkid=396554)」を参照してください。
   
 ## <a name="use-the-eac-to-edit-the-default-outbound-spam-policy"></a>EAC を使用して既定の送信スパム ポリシーを編集する
 <a name="sectionSection1"> </a>
@@ -60,11 +62,11 @@ ms.locfileid: "23002418"
     
 4. **[保存]** をクリックします。既定のポリシー設定の概要が右側のウィンドウに表示されます。
     
-## <a name="for-more-information"></a>詳細情報
+## <a name="for-more-information"></a>関連情報
 <a name="sectionSection2"> </a>
 
 [送信メッセージにおける危険度の高い配信プール](high-risk-delivery-pool-for-outbound-messages.md)
   
-[スパム対策の保護に関する FAQ](anti-spam-protection-faq.md)
+[スパム対策保護に関する FAQ](anti-spam-protection-faq.md)
   
 

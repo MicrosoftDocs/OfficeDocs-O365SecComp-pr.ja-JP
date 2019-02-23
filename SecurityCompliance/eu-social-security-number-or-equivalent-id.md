@@ -1,41 +1,41 @@
 ---
-title: EU の社会保障番号またはそれと同等の ID
+title: EU 社会保障番号または同等の ID
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1fabd341-e594-4bfe-961c-62aa82893f60
-description: このトピックでは、どのようなデータ損失防止 (DLP) ポリシーを検索、機密性の高い情報の種類として [EU の社会保障番号または同等の ID を検出したときを示します。この機密性の高い情報の種類は、さまざまなパターン、キーワード、および各都道府県の他の証拠を定義します。
-ms.openlocfilehash: 6f1027dcfb648ed937b8180d74d4bc6348dab650
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 社会保障番号または同等の ID の機密情報の種類を検出したときにどのように検索されるかを示します。この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
+ms.openlocfilehash: abcefb6930e9c02d2f32d84b65accfecf1e20d95
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532030"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216527"
 ---
-# <a name="eu-social-security-number-or-equivalent-id"></a>EU の社会保障番号またはそれと同等の ID
+# <a name="eu-social-security-number-or-equivalent-id"></a>EU 社会保障番号または同等の ID
 
-このトピックでは、どのようなデータ損失防止 (DLP) ポリシーを検索、機密性の高い情報の種類として [EU の社会保障番号 (SSN) または同等の ID を検出したときを示します。この機密性の高い情報の種類は、さまざまなパターン、キーワード、および各都道府県の他の証拠を定義します。
+このトピックでは、データ損失防止 (DLP) ポリシーが EU 社会保障番号 (SSN) または同等の ID 機密情報の種類を検出したときにどのように検索されるかを示します。この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
   
 ## <a name="austria"></a>オーストリア
 
 ### <a name="format"></a>形式
 
-指定した形式で 10 桁の数字
+指定した形式の10桁の数字
   
 ### <a name="pattern"></a>パターン
 
 10 桁の数字:
   
--  シリアル番号に対応する 3 桁の数字 
+-  シリアル番号に対応する3桁の数字 
     
-- 1 つのチェック ディジット
+- 1つのチェックディジット
     
-- 6 桁の数字が日付の生年月日に対応します。
+- 誕生日に対応する6桁の数字 (ddmmyy)
     
 ### <a name="checksum"></a>チェックサム
 
@@ -45,13 +45,13 @@ ms.locfileid: "22532030"
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_austria_eu_ssn_or_equivalent`パターンに一致するコンテンツを検索します。 
+- 関数`Func_austria_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_austria_eu_ssn_or_equivalent`があります。 
+- from `Keywords_austria_eu_ssn_or_equivalent`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_austria_eu_ssn_or_equivalent`パターンに一致するコンテンツを検索します。 
+- 関数`Func_austria_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -66,11 +66,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsaustriaeussnorequivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
-社会保険なし
+ソーシャルセキュリティなし
   
 social security number
 
@@ -82,15 +82,15 @@ social security code
   
 オーストリア ssn
   
-ssn #
+ssn
   
 ssn
   
 保険コード
   
-保険コード番号
+保険コード #
   
-socialsecurityno #
+"社会 securityno"
   
 sozialversicherungsnummer
   
@@ -102,7 +102,7 @@ versicherungsnummer
 
 ### <a name="format"></a>形式
 
-スペースや区切り文字なし 11 桁の数字
+11桁の数字 (スペースまたは区切り文字なし)
   
 ### <a name="pattern"></a>パターン
 
@@ -116,13 +116,13 @@ versicherungsnummer
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_belgium_eu_ssn_or_equivalent`パターンに一致するコンテンツを検索します。 
+- 関数`Func_belgium_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_belgium_eu_ssn_or_equivalent`があります。 
+- from `Keywords_belgium_eu_ssn_or_equivalent`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_belgium_eu_ssn_or_equivalent`パターンに一致するコンテンツを検索します。 
+- 関数`Func_belgium_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -137,7 +137,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsbelgiumeussnorequivalent"></a>Keywords_belgium_eu_ssn_or_equivalent
 
@@ -150,7 +150,7 @@ social security number
   
 nationalnumber #
   
-ssn #
+ssn
   
 ssn
   
@@ -160,18 +160,18 @@ bnn #
   
 bnn
   
-個人の id 番号
+個人 id 番号
   
 personalidnumber #
   
-numéro 国立
+numéro national
   
 numéro de sécurité
 
   
 numéro d'assuré
   
-国内 identifiant
+identifiant national
   
 identifiantnational #
   
@@ -181,15 +181,15 @@ numéronational #
 
 ### <a name="format"></a>形式
 
-スペースや区切り記号なし 11 桁の数字
+スペースと区切り文字を含まない11桁の数字
   
 ### <a name="pattern"></a>パターン
 
  11 桁の数字: 
   
--  10 桁の数字 
+-  10桁の数字 
     
-- 1 つのチェック ディジット
+- 1つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
@@ -199,13 +199,13 @@ numéronational #
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_croatia_eu_ssn_or_equivalent`パターンに一致するコンテンツを検索します。 
+- 関数`Func_croatia_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_croatia_eu_ssn_or_equivalent`があります。 
+- from `Keywords_croatia_eu_ssn_or_equivalent`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_croatia_eu_ssn_or_equivalent`パターンに一致するコンテンツを検索します。 
+- 関数`Func_croatia_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -220,22 +220,22 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordscroatiaeussnorequivalent"></a>Keywords_croatia_eu_ssn_or_equivalent
 
 個人識別番号
   
-マスターの市民数
+マスター市民番号
   
-国際識別番号
+国別の識別番号
   
 social security number
 
   
 nationalnumber #
   
-ssn #
+ssn
   
 ssn
   
@@ -245,7 +245,7 @@ bnn #
   
 bnn
   
-個人の id 番号
+個人 id 番号
   
 personalidnumber #
   
@@ -257,19 +257,19 @@ osobni identifikacijski broj
 
 ### <a name="format"></a>形式
 
-10 桁と指定したパターン内のバック スラッシュ
+指定したパターンの10桁の数字と円記号
   
 ### <a name="pattern"></a>パターン
 
-10 桁の数字と、円記号 ()。
+10桁の数字と円記号:
   
-- 生年月日 (YYMMDD) に対応する 6 つの数字。 
+- 誕生日に対応する6桁の数字 (yymmdd という): 
     
 - 円記号
     
-- 同じ日に生まれた人を分離するためのシリアル番号に対応する 3 桁の数字
+- 同じ日付で個人の出生を区切るシリアル番号に対応する3桁の数字
     
-- 1 つのチェック ディジット
+- 1つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
@@ -279,13 +279,13 @@ osobni identifikacijski broj
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_czech_republic_eu_ssn_or_equivalent`パターンに一致するコンテンツを検索します。 
+- 関数`Func_czech_republic_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_czech_republic_eu_ssn_or_equivalent`があります。 
+- from `Keywords_czech_republic_eu_ssn_or_equivalent`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_czech_republic_eu_ssn_or_equivalent`パターンに一致するコンテンツを検索します。 
+- 関数`Func_czech_republic_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -300,13 +300,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsczechrepubliceussnorequivalent"></a>Keywords_czech_republic_eu_ssn_or_equivalent
 
-生年月日数
+出生地番号
   
-国際識別番号
+国別の識別番号
   
 個人識別番号
   
@@ -315,19 +315,19 @@ social security number
   
 nationalnumber #
   
-ssn #
+ssn
   
 ssn
   
 国番号
   
-個人の id 番号
+個人 id 番号
   
 personalidnumber #
   
 rč
   
-rodné číslo
+rodnéčíslo
   
 rodne cislo
   
@@ -335,17 +335,17 @@ rodne cislo
 
 ### <a name="format"></a>形式
 
-10 桁の数字とハイフンで指定されたパターン
+指定したパターンの10桁の数字とハイフン
   
 ### <a name="pattern"></a>パターン
 
-10 桁の数字とハイフン。
+10桁の数字とハイフン:
   
-- 6 桁の数字が日付の生年月日に対応します。 
+- 誕生日に対応する6桁の数字 (ddmmyy) 
     
 - ハイフン 1 つ 
     
-- シーケンス番号に対応する 4 桁の数字
+- シーケンス番号に対応する4桁の数字
     
 ### <a name="checksum"></a>チェックサム
 
@@ -355,13 +355,13 @@ rodne cislo
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_denmark_eu_ssn_or_equivalent`パターンに一致するコンテンツを検索します。 
+- 関数`Func_denmark_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_denmark_eu_ssn_or_equivalent`があります。 
+- from `Keywords_denmark_eu_ssn_or_equivalent`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_denmark_eu_ssn_or_equivalent`パターンに一致するコンテンツを検索します。 
+- 関数`Func_denmark_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -376,30 +376,30 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsdenmarkeussnorequivalent"></a>Keywords_denmark_eu_ssn_or_equivalent
 
 個人識別番号
   
-国際識別番号
+国別の識別番号
   
 social security number
 
   
 nationalnumber #
   
-ssn #
+ssn
   
 ssn
   
 国番号
   
-個人の id 番号
+個人 id 番号
   
 personalidnumber #
   
-cpr nummer
+cpr-nummer
   
 personnummer
   
@@ -407,25 +407,25 @@ personnummer
 
 ### <a name="format"></a>形式
 
-指定した形式で、11 文字の組み合わせ
+指定した書式の11文字の組み合わせ
   
 ### <a name="pattern"></a>パターン
 
-指定した形式での 11 文字の組み合わせ。
+指定した形式の11文字の組み合わせ。
   
 -  6 桁の数字 
     
-- 次のいずれかのインスタンスを 1 つ。
+- 次のいずれかのインスタンス。
     
   - プラス記号
     
   - マイナス記号
     
-  - 文字"A"(いない大文字小文字を区別)
+  - 文字 "A" (大文字と小文字を区別しない)
     
 - 3 桁の数字
     
-- 1 つの文字または 1 桁の数字
+- 1文字または1桁の数字
     
 ### <a name="checksum"></a>チェックサム
 
@@ -435,13 +435,13 @@ personnummer
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_finland_eu_ssn_or_equivalent`パターンに一致するコンテンツを検索します。 
+- 関数`Func_finland_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_finland_eu_ssn_or_equivalent`があります。 
+- from `Keywords_finland_eu_ssn_or_equivalent`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_finland_eu_ssn_or_equivalent`パターンに一致するコンテンツを検索します。 
+- 関数`Func_finland_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -456,14 +456,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsfinlandeussnorequivalent"></a>Keywords_finland_eu_ssn_or_equivalent
 
 identification number
 
   
-パーソナル id
+個人 id
   
 id 番号
   
@@ -471,55 +471,55 @@ id 番号
   
 personalidnumber #
   
-国際識別番号
+国別の識別番号
   
 id 番号
   
-国民 id なし。
+国民 id 番号
   
 国民 id 番号
   
-id なし
+id 番号
   
-tunnistenumero
+tun/st列挙 o
   
 henkilötunnus
   
-yksilöllinen henkilökohtainen tunnistenumero
+yksilöllinen henkilökohtainen tun/st列挙 o
   
 ainutlaatuinen henkilökohtainen tunnus
   
-identiteetti して
+識別子 teetti numero
   
 suomen kansallinen henkilötunnus
   
 henkilötunnusnumero #
   
-kansallisen tunnistenumero
+kansallisen tun/st列挙 o
   
 tunnusnumero
   
-kansallinen tunnus して
+kansallinen tunnus numero
   
 hetu
   
 ## <a name="france"></a>フランス
 
-詳細についてを参照してください「フランスの社会保障番号 (INSEE)」で、[どのような機密性の高い情報の種類を探します](what-the-sensitive-information-types-look-for.md)。
+詳細については、「[機密情報の種類がどのようなもの](what-the-sensitive-information-types-look-for.md)か」の「フランスの社会保障番号 (insee)」セクションを参照してください。
   
 ## <a name="germany"></a>ドイツ
 
-詳細についてを参照してください"ドイツの Id カードの番号」で、[どのような機密性の高い情報の種類を探します](what-the-sensitive-information-types-look-for.md)。
+詳細については、「[機密情報の種類がどのようなもの](what-the-sensitive-information-types-look-for.md)か」の「ドイツの id カード番号」セクションを参照してください。
   
 ## <a name="greece"></a>ギリシャ
 
-詳細についてを参照してください「ギリシャ国内の ID カード」で、[どのような機密性の高い情報の種類を探します](what-the-sensitive-information-types-look-for.md)。
+詳細については、「ギリシャの国民 ID カード」の「[機密情報の種類の検索方法](what-the-sensitive-information-types-look-for.md)」を参照してください。
   
 ## <a name="hungary"></a>ハンガリー
 
 ### <a name="format"></a>形式
 
-スペースや区切り記号なしの 9 桁
+スペースと区切り文字を含まない9桁の数字
   
 ### <a name="pattern"></a>パターン
 
@@ -533,13 +533,13 @@ hetu
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_hungary_eu_ssn_or_equivalent`パターンに一致するコンテンツを検索します。 
+- 関数`Func_hungary_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_hungary_eu_ssn_or_equivalent`があります。 
+- from `Keywords_hungary_eu_ssn_or_equivalent`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_hungary_eu_ssn_or_equivalent`パターンに一致するコンテンツを検索します。 
+- 関数`Func_hungary_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -554,20 +554,20 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordshungaryeussnorequivalent"></a>Keywords_hungary_eu_ssn_or_equivalent
 
-ハンガリー語の社会保障番号
+ハンガリーのソーシャルセキュリティ番号
   
 social security number
 
   
-socialsecuritynumber #
+指定した仮のセキュリティ番号
   
 hssn #
   
-socialsecuritynno
+"対話型"
   
 hssn
   
@@ -577,9 +577,9 @@ taj #
   
 ssn
   
-ssn #
+ssn
   
-社会保険なし
+ソーシャルセキュリティなし
   
 áfa
   
@@ -595,31 +595,31 @@ magyar áfa szám
   
 ## <a name="portugal"></a>ポルトガル
 
-詳細についてを参照してください「ポルトガルの市民のカード番号」で、[どのような機密性の高い情報の種類を探します](what-the-sensitive-information-types-look-for.md)。
+詳細については、「[機密情報の種類がどのようなもの](what-the-sensitive-information-types-look-for.md)か」の「ポルトガル市民カード番号」セクションを参照してください。
   
 ## <a name="spain"></a>スペイン
 
-詳細についてを参照してください「スペインの社会保障番号 (SSN)」で、[どのような機密性の高い情報の種類を探します](what-the-sensitive-information-types-look-for.md)。
+詳細については、「スペインの社会保障番号 (SSN)」の「[機密情報の種類の検索方法](what-the-sensitive-information-types-look-for.md)」を参照してください。
   
 ## <a name="sweden"></a>スウェーデン
 
 ### <a name="format"></a>形式
 
-スペースや区切り記号のない 12 桁の数字
+12桁の数字 (スペースと区切り記号なし)
   
 ### <a name="pattern"></a>パターン
 
 12 桁の数字:
   
--  8 桁の日付 (YYYYMMDD) の生年月日に対応します。 
+-  誕生日に対応する8桁の数字 (YYYYMMDD) 
     
-- シリアル番号に対応する 3 つの桁位置。 
+- 次の場合、シリアル番号に対応する3桁の数字です。 
     
-  - シリアル番号の最後の数字は、男性の数が奇数と偶数の女性の場合の割り当てによって性別を示します
+  - シリアル番号の最後の桁は、男性の場合は奇数、女性の場合は偶数の数字を指定します。
     
-  - 1990 年までのシリアル番号の割り当てに当てはめて考える郡番号のベアラーが誕生した (1947年の前に生まれた) 場合や、本人が生活、税の記録による 1947 年 1 月 1日、上の特別なコード (通常 7 桁の数字としての 9) のimmigrants 
+  - 1990までの間、シリアル番号 corresponded は、番号のベアラーが生まれたか (1947 以前に作成された場合)、特別なコード (通常は7番目の数字) を使用して、税務レコードに従って、そのユーザーが生活していた市区郡に割り当てられています。immigrants 
     
-- 1 つのチェック ディジット
+- 1つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
@@ -629,13 +629,13 @@ magyar áfa szám
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_sweden_eu_ssn_or_equivalent`パターンに一致するコンテンツを検索します。 
+- 関数`Func_sweden_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
-- キーワードの`Keywords_sweden_eu_ssn_or_equivalent`があります。 
+- from `Keywords_sweden_eu_ssn_or_equivalent`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数`Func_sweden_eu_ssn_or_equivalent`パターンに一致するコンテンツを検索します。 
+- 関数`Func_sweden_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -650,28 +650,28 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>キーワード
 
 #### <a name="keywordsswedeneussnorequivalent"></a>Keywords_sweden_eu_ssn_or_equivalent
 
-個人の id 番号
+個人 id 番号
   
 identification number
 
   
-パーソナル id なし
+個人 id 番号
   
-識別情報なし
+id 番号
   
-識別なし
+識別番号
   
-個人識別なし
+個人識別番号
   
 personnummer id
   
-- nummer personligt id
+personligt id-nummer
   
-- nummer unikt id
+unikt id-nummer
   
 personnummer
   

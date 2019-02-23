@@ -6,20 +6,20 @@ manager: laurawi
 ms.date: 6/18/2016
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 94349ed4-5351-4ee2-bbda-70813c9ed693
-description: 機密性の高い情報の種類は、特定のパターンを検索し、適切な書式設定、チェックサムを適用することと関連するキーワードまたはその他の情報を探すことを確認して、それを裏付けます。この機能の一部は、内部関数によって実行されます。このトピックでは、どのようなこれらの関数を探して、機密情報の定義済みの型がどのように動作するかを理解するためについて説明します。
-ms.openlocfilehash: 510f98e2b4e1d2480550f11026cf445be6ffc931
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 機密情報の種類では、特定のパターンが検索され、適切な書式設定とチェックサムの適用を確認し、関連するキーワードやその他の情報を検索することによって、corroborate を行います。この機能の一部は、内部機能によって実行されます。このトピックでは、定義済みの機密情報の種類がどのように機能するかを理解するために、これらの関数がどのようなものかを説明します。
+ms.openlocfilehash: 55c740e892e92902b368b2dcf7b0999cbc60f3ed
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013761"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219357"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 関数の検索対象
 
@@ -29,21 +29,21 @@ ms.locfileid: "23013761"
   
 ## <a name="funcusdate"></a>Func_us_date
 
-この関数は、米国で一般的に使用される形式の日付の検索します。形式を「月/日/年」、「月-日-年」、および「1 日の年の月」が含まれています。名前または数か月の省略名は、大文字小文字を区別ではありません。 
+この関数は、米国でよく使用される形式の日付を検索します。これには、"月/日/年"、"月-日-年"、"月間年月日" の形式が含まれます。月の名前または省略形は、大文字と小文字を区別しません。 
   
 例:
   
-- 2016 年 12 月 2 日
+- 2016年12月2日
     
-- 2016 年 12 月 2 日
+- 2016年12月2
     
-- 02 2016 年 12
+- 02 2016 年12月
     
-- 2016/12/2
+- 12/2/2016
     
 - 12/02/16
     
-- 2016 年 12 月-2-
+- 2-2016 年12月
     
 - 12-2-16
     
@@ -51,9 +51,9 @@ ms.locfileid: "23013761"
   
 - 英語
     
-  - 年 1 月、2 月、3 月、4 月、可能性があります、6 月、7 月、8 月、9 月、10 月、11 月 12 月
+  - 1月、2月、3月、4月、5月、6月、7月、5月、7月、7月、11月、10月、11月、12月
     
-  - 年 1 月 2 月年年 4 月では、6 月 7 月 8 月 9 月 10 月 11 月 12 月があります。
+  - Jan 7 月2日5月5日5月5日5月5日。
     
 ## <a name="funceudate"></a>Func_eu_date
 
@@ -61,17 +61,17 @@ ms.locfileid: "23013761"
   
 例:
   
-- 2 年 12 月 2016
+- 2016年12月2時
     
-- 2016 年 12 月の 02
+- 02 dec 2016
     
-- 2 年 12 月 16 日
+- 2月16時
     
-- 2016/2/12
+- 2/12/2016
     
 - 02/12/16
     
-- 2016 年 12 月-2-
+- 2016年12月2時
     
 - 2-12-16
     
@@ -79,66 +79,66 @@ ms.locfileid: "23013761"
   
 - 英語
     
-  - 年 1 月、2 月、3 月、4 月、可能性があります、6 月、7 月、8 月、9 月、10 月、11 月 12 月
+  - 1月、2月、3月、4月、5月、6月、7月、5月、7月、7月、11月、10月、11月、12月
     
-  - 年 1 月 2 月年年 4 月では、6 月 7 月 8 月 9 月 10 月 11 月 12 月があります。
+  - Jan 7 月2日5月5日5月5日5月5日。
     
 - オランダ語
     
   - januari、februari、maart、April、mei、juni、juli、augustus、September、ocktober、October、November、December
     
-  - 1 月 2 月の maart 年 4 月 mei 6 月 7 月 8 月 9 月 9 月 10 okt 年 11 月 12 月
+  - 1月1日6月 (2001 年11月) (oct) 7 月7日9月 | 8 月7日 (oct)
     
 - フランス語
     
   - janvier、février、mars、avril、mai、juin juillet、août、septembre、octobre、novembre、décembre
     
-  - janv。févr。avril の juin juil を mars します。août 9 月。10 月 11 月。déc。
+  - janv。févr。mars avril mai juin juil。août 9 月11月11月déc。
     
 - ドイツ語
     
-  - jänuar、februar、märz、4 月、mai、juni juli、8 月、9 月、oktober、11 月、dezember
+  - jänuar、februar、märz、エイプリル、mai、juni juli、8月、9月、oktober、11月、dezember
     
-  - Jan。/Jän です。2 月 März 月の Juni Juli の 8 月 9 月 Okt。Dez の 11 月です。
+  - Jan./Jän。März Mai Juni Juli 年8月9日。11月. dez。
     
 - イタリア語
     
-  - gennaio、febbraio、marzo、aprile、maggio、giugno、luglio、agosto、settembre、ottobre、novembre、dicembre
+  - gennaio、febbraio、marzo、aprile、maggio、gifeno、luglio、agosto、settembre、ottobre、novembre、dicembre
     
-  - genn。febbr。3 月 3 日です。4 月です。magg。giugno luglio ag。設定します。ott。11 月です。dic。
+  - genn。febbr。年.4.magggiluglio ag はありません。設定.ott。年11月..dic.
     
 - ポルトガル語
     
   - janeiro、fevereiro、março、marco、abril、maio、junho、julho、agosto、setembro、outubro、novembro、dezembro
     
-  - 1 月 fev 年 3 月の abr の 6 月 7 月前 11 月の dez を設定
+  - jan fev 3 月 abr mai 6 月5日前にセットアップする
     
 - スペイン語
     
-  - enero、febrero、marzo、abril、mayo、junio、julio、agosto、septiembre、octubre、noviembre、diciembre
+  - enero、febrero、marzo、abril、ago、junio、julio、agosto、septiembre、octubre、noviembre、diciembre
     
-  - enero 年 2 月。marzo abr. mayo jun. 年 7 月。agosto 9 月を設定します。10 月 11 月。dic。
+  - enero febmarzo。7月7日/set. 年9月.11月11月.dic.
     
 ## <a name="funceudate1-deprecated"></a>Func_eu_date1 (非推奨)
 
 > [!NOTE]
-> ポルトガル語の月名に含まれるようになりましたがサポートしているためこの関数は廃止されました、`Func_eu_date`上の関数です。 
+> この関数は、上記の`Func_eu_date`関数に含まれているポルトガル語の月の名前のみをサポートしているため、廃止されました。 
   
-この関数は、ポルトガル語でよく使用される形式の日付を検索します。この関数の形式は、 `Func_eu_date`、使用される言語でのみ異なる。
+この関数は、ポルトガル語でよく使用される形式で日付を検索します。この関数の形式は、使用され`Func_eu_date`ている言語でのみ異なります。
   
 例:
   
-- 2 Dez 2016
+- 2 dez 2016
     
 - 02 dez 2016
     
-- 2 Dez 16
+- 2 dez 16
     
-- 2016/2/12
+- 2/12/2016
     
 - 02/12/16
     
-- 2-Dez-2016
+- 2-dez-2016
     
 - 2-12-16
     
@@ -148,28 +148,28 @@ ms.locfileid: "23013761"
     
   - janeiro、fevereiro、março、marco、abril、maio、junho、julho、agosto、setembro、outubro、novembro、dezembro
     
-  - 1 月 fev 年 3 月の abr の 6 月 7 月前 11 月の dez を設定
+  - jan fev 3 月 abr mai 6 月5日前にセットアップする
     
 ## <a name="funceudate2-deprecated"></a>Func_eu_date2 (非推奨)
 
 > [!NOTE]
-> オランダ語の月名に含まれるようになりましたがサポートしているためこの関数は廃止されました、`Func_eu_date`上の関数です。 
+> この関数は、上の`Func_eu_date`関数に含まれるオランダ語の月の名前のみをサポートしているため、廃止されました。 
   
-この関数は、オランダ語でよく使用される形式の日付を検索します。この関数の形式は、 `Func_eu_date`、使用される言語でのみ異なる。
+この関数は、オランダ語でよく使用される形式で日付を検索します。この関数の形式は、使用され`Func_eu_date`ている言語でのみ異なります。
   
 例:
   
-- 2 Mei 2016
+- 2 mei 2016
     
 - 02 mei 2016
     
-- 2 Mei 16
+- 2 mei 16
     
-- 2016/2/12
+- 2/12/2016
     
 - 02/12/16
     
-- 2016-2-Mei
+- 2-mei-2016
     
 - 2-12-16
     
@@ -179,11 +179,11 @@ ms.locfileid: "23013761"
     
   - januari、februari、maart、April、mei、juni、juli、augustus、September、ocktober、October、November、December
     
-  - 1 月 2 月の maart 年 4 月 mei 6 月 7 月 8 月 9 月 9 月 10 okt 年 11 月 12 月
+  - 1月1日6月 (2001 年11月) (oct) 7 月7日9月 | 8 月7日 (oct)
     
 ## <a name="funcexpirationdate"></a>Func_expiration_date
 
-この関数は、数か月のための日を除外するクレジット_カードやデビット カードで一般的に使用される形式で日付を検索します。この関数には、「月」、「月-年」、「[月の名前] 年」と「[月の省略] 年」の形式で日付が一致します。名前または数か月の省略名は、大文字小文字を区別ではありません。
+この関数は、クレジットカードとデビットカードでよく使用される形式の日付を検索します。これにより、月の代わりに日付が除外されます。この関数は、日付を "月/年"、"月-年"、"[月名] 年"、"月の省略名] 年" の形式で照合します。月の名前または省略形は、大文字と小文字を区別しません。
   
 例:
   
@@ -203,15 +203,15 @@ ms.locfileid: "23013761"
     
 - MonthYYYY -- たとえば、'january2010'、'Jan2010'、'january10'、または 'Jan10'
     
-- 月/日 - たとえば、' 年 1 月/2010 'または' 1 月/2010 'または' 1 月 10' または ' 1 月 10'
+- Month/YYYY--たとえば、' january/2010 '、' jan/2010 '、' jan/10 '、または ' jan/10 '
     
 使用可能な月の名前:
   
 - 英語
     
-  - 年 1 月、2 月、3 月、4 月、可能性があります、6 月、7 月、8 月、9 月、10 月、11 月 12 月
+  - 1月、2月、3月、4月、5月、6月、7月、5月、7月、7月、11月、10月、11月、12月
     
-  - 6 月 7 月 8 月 9 月 10 月 11 月 12 月が 1 月 2 月 3 月 4 月に可能性があります。
+  - 1月2日から4月5日 (年7月)
     
 ## <a name="funcusaddress"></a>Func_us_address
 

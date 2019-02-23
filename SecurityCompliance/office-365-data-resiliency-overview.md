@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,16 +14,16 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Microsoft Office 365 のデータ復元性について理解します。
-ms.openlocfilehash: 126e00c53e578b287538617a0e1ad84ae86ce7f1
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 1e85f431edeec0a4548b1d37b65a4b1a6cbef8eb
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090539"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215637"
 ---
 # <a name="data-resiliency-in-office-365"></a>Office 365 でのデータの回復性
 
-## <a name="introduction"></a>概要
+## <a name="introduction"></a>はじめに
 クラウドコンピューティングの複雑な性質を考慮した場合、Microsoft は、問題が発生した場合には発生しないことに注意してください。クラウドサービスを設計することで、信頼性を最大化し、問題が発生した場合にお客様に悪影響を最小限に抑えることができます。複雑な物理インフラストラクチャに依存する従来の戦略にとどまらないようになり、クラウドサービスに直接冗長性が組み込まれています。より複雑な物理インフラストラクチャと、データの復元をサービスに提供し、お客様に高可用性を提供する、よりインテリジェントなソフトウェアを組み合わせて使用しています。 
 
 ## <a name="resiliency-and-recoverability-are-built-in"></a>回復性と回復性が組み込まれている 

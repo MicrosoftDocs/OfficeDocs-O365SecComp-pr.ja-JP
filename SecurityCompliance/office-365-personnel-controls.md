@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '概要: office 365 の人事審査プラクティスの概要について説明します。'
-ms.openlocfilehash: 126be117c790e4d8fc0328ee2dab6b97d516ab88
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: e7b7659447217adc2a5b7c001df0994e82180b3b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30091079"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216217"
 ---
 # <a name="office-365-personnel-controls"></a>Office 365 での担当者の制御 
 

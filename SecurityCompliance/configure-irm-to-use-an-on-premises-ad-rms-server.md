@@ -1,7 +1,7 @@
 ---
 title: オンプレミスの AD RMS サーバーを使用するように IRM を構成する
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/13/2017
 ms.audience: End User
@@ -12,19 +12,21 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
+ms.collection:
+- M365-security-compliance
 description: このトピックでは、AD RMS サーバーを使用するように IRM を構成する方法を示します。
-ms.openlocfilehash: 82eed73797cfb4ade04bfeed9118d8466c5c5480
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 19d353dc8aa0e02b564616aacdde31c0fffa0483
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002791"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215258"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>オンプレミスの AD RMS サーバーを使用するように IRM を構成する
   
-設置型展開で使用するためは、Exchange Online の情報権利管理 (IRM) は、Active Directory Rights Management サービス (AD RMS) と後で Windows Server 2008 では、情報保護の技術を使用します。IRM による保護は、電子メール メッセージに AD RMS 権利ポリシー テンプレートを適用することにより、電子メールに適用されます。権限は、オンラインとオフラインと内部と外部の組織のファイアウォールの保護が行われるように、メッセージ自体に添付されます。
+オンプレミス展開でを使用する場合、Exchange Online の information Rights management (IRM) では、Windows Server 2008 以降の情報保護テクノロジである Active Directory Rights management サービス (AD RMS) が使用されます。IRM 保護が電子メールに適用されるのは、AD RMS 権利ポリシーテンプレートを電子メールメッセージに適用することです。権限はメッセージ自体に添付されるので、保護はオンラインおよびオフラインになり、組織のファイアウォールの内外で行われます。
   
-このトピックでは、AD RMS サーバーを使用して IRM を構成する方法を示します。Azure Active Directory と Azure のアクセス権の管理と Office 365 のメッセージの暗号化の新しい機能の使用方法の詳細については、 [Office 365 のメッセージの暗号化の FAQ](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e)を参照してください。
+このトピックでは、AD RMS サーバーを使用するように IRM を構成する方法について説明します。azure Active Directory と azure Rights Management を使用した office 365 メッセージ暗号化の新機能の使用方法については、「 [office 365 のメッセージ暗号化](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e)に関する FAQ」を参照してください。
   
 Exchange Online の IRM については、「[Exchange Online での Information Rights Management](information-rights-management-in-exchange-online.md)」を参照してください。
   
@@ -99,7 +101,7 @@ TPD が正常にインポートされたことを確認するには、 **Get-RMS
   
 ### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>手順 3: Exchange 管理シェル を使用して AD RMS 権利ポリシー テンプレートを配布する
 
-TPD をインポートしたら、AD RMS 権利ポリシー テンプレートが配布されていることを確認する必要があります。配布済みテンプレートは Outlook Web App ユーザーに対して表示され、電子メール メッセージに適用できるようになります。
+TPD をインポートしたら、AD RMS 権利ポリシーテンプレートが配布されていることを確認する必要があります。分散テンプレートは、web 上の outlook (旧称 outlook web App) ユーザーに表示され、その後、電子メールメッセージにテンプレートを適用できます。
   
 既定の TPD に含まれているすべてのテンプレートの一覧を取得するには、次のコマンドを実行します。
   
@@ -107,7 +109,7 @@ TPD をインポートしたら、AD RMS 権利ポリシー テンプレート�
 Get-RMSTemplate -Type All | fl
 ```
 
-_Type_ パラメーターの値が  `Archived` の場合は、テンプレートがユーザーに対して表示されません。既定の TPD に含まれている配布済みテンプレートだけを Outlook Web App で使用できます。
+_Type_パラメーターの値がの場合、 `Archived`テンプレートはユーザーに表示されません。web 上の Outlook では、既定の TPD で配布されたテンプレートのみを使用できます。
   
 テンプレートを配布するには、次のコマンドを実行します。
   
@@ -165,6 +167,6 @@ TPD が正常にインポートされ、IRM が有効になったことを確認
   
 - IRM の機能をテストするには、 **Test-IRMConfiguration** コマンドレットを使用します。詳細については、「 [Test-IRMConfiguration](http://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx)」の「例 1」を参照してください。
     
-- Outlook Web App で新しいメッセージを作成し、拡張メニュー (****[その他のオプション] アイコン![) で ](media/ITPro-EAC-MoreOptionsIcon.gif) オプションを選択して、そのメッセージを IRM で保護します。
+- web 上の Outlook で新しいメッセージを作成し、拡張メニュー ( ![[その他のオプション] アイコン](media/ITPro-EAC-MoreOptionsIcon.gif)) で [**アクセス許可の設定**] オプションを選択して、そのメッセージを IRM で保護します。
     
 

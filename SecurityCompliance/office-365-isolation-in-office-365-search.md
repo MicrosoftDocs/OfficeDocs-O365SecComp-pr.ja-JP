@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '概要: Office 365 検索でのテナントの分離について説明します。'
-ms.openlocfilehash: b9faae9f1d61af181807f60243890b5115c0d679
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: fa9ba75f6ae5b0b89e3565ffb0e6f022ab36f81b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090809"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216867"
 ---
 # <a name="tenant-isolation-in-office-365-search"></a>Office 365 の検索でのテナントの分離
 SharePoint Online の検索では、テナント間の情報リークに対する保護と、共有データ構造の効率のバランスを実現するテナント分離モデルが使用されます。このモデルを使用すると、次のような検索機能を使用できなくなります。

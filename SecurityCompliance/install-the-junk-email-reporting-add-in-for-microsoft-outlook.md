@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
-description: この articleSupported LanguagesInstall で迷惑メールを電子メールで送信レポートの追加-inUninstall の追加情報を迷惑メールの報告の詳細
-ms.openlocfilehash: 4204c80f298a0756f8e2fde2d0845d07570eaff9
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+description: この articleSupported LanguagesInstall the 迷惑メール報告アドインをアンインストールします。迷惑メール報告アドインをアンインストールする inFor 詳細情報
+ms.openlocfilehash: 20fb879d3a965a973513a69cf8055f0d96507e9a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272322"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217027"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Microsoft Outlook 用迷惑メール報告アドインのインストール
   
@@ -123,11 +123,11 @@ Microsoft Outlook 用 Microsoft 迷惑メール報告アドインのインスト
     
   - MaxMessageSelection 管理者は、ユーザーが 1 回のクリックで送信する対象として選択できる最大メッセージ数を定義できます。範囲は 1 ～ 50 件で、既定値は 10 件です。
     
-    例: 16 に 1 回のクリックで送信するためのユーザーが選択できるメッセージの最大数を設定する場合は、インストール コマンドの一部として次のオプションを使用します。`MaxMessageSelection=16`
+    例: ユーザーが1回のクリックで送信できる最大メッセージ数を16に設定する場合は、インストールコマンドの一部として次のオプションを使用します。`MaxMessageSelection=16`
     
   - BccEmailAddress 管理者は、Bcc 電子メール アドレスを設定することで、ユーザーによるすべての送信のコピーを受信するようにメールボックスを設定できます。メールボックスを設定すると、送信されたすべての電子メールのコピーが BccEmailAddress に送信されます。この設定を行わない場合、既定の設定に Bcc 電子メール アドレスはありません。
     
-    例: すべての提出書類の Bcc 電子メール アドレスとして junkReports@contoso.com を使用する場合は、次のコマンドを使用します。`BccEmailAddress="junkReports@contoso.com"`
+    例: すべての送信の Bcc 電子メールアドレスとして junkReports@contoso.com を使用する場合は、次のコマンドを使用します。`BccEmailAddress="junkReports@contoso.com"`
     
     > [!NOTE]
     > セミコロンで区切って入力することで、複数の Bcc 電子メール アドレスを設定できます。例:  `BccEmailAddress="junkReports@contoso.com; hollyd@treyresearch.net"`

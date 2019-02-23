@@ -1,60 +1,60 @@
 ---
-title: セキュリティ レポートのスケジュールを作成する&amp;コンプライアンス センター
+title: セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを作成する
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/1/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
-description: セキュリティ レポートのスケジュールを設定する方法を説明&amp;コンプライアンス センターです。
-ms.openlocfilehash: b1c253f1af6369fc17f5f620c464bf1ed231cbde
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを設定する方法について説明します。
+ms.openlocfilehash: 25e8ee175314c5447da95d3636236d1682479c70
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014779"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216757"
 ---
-# <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>セキュリティ レポートのスケジュールを作成する&amp;コンプライアンス センター
+# <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを作成する
 
-セキュリティ&amp;コンプライアンス センターでは、いくつかの[レポートと分析](reports-and-insights-in-security-and-compliance.md)は、組織のセキュリティ チームが軽減し、組織に対する脅威に対処できます。組織のセキュリティ チームのメンバーにする場合は、レポートのスケジュールを作成できます。スケジュールを作成するには、組織に合わせてユーザー設定の日付の範囲を含めることができます。 
+セキュリティ&amp; /コンプライアンスセンターでは、組織のセキュリティチームが組織に対する脅威を軽減して対処するのに役立つ、いくつかの[レポートと分析](reports-and-insights-in-security-and-compliance.md)情報が提供されています。組織のセキュリティチームのメンバーである場合は、レポートのスケジュールを作成できます。作成したスケジュールには、組織に合わせてカスタムの日付範囲を含めることができます。 
   
 ## <a name="create-a-schedule-for-a-report"></a>レポートのスケジュールを作成する
 
 > [!IMPORTANT]
-> このタスクを実行するために必要な権限があることを確認します。一般に、Office 365 のグローバル管理者、セキュリティ管理者、およびセキュリティのリーダーのセキュリティ レポートにアクセスできます&amp;コンプライアンス センターです。アクセス許可の詳細についてを参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。
+> このタスクを実行するために必要なアクセス許可を持っていることを確認してください。一般に、Office 365 の全体管理者、セキュリティ管理者、およびセキュリティ閲覧者は、 &amp;セキュリティ/コンプライアンスセンターのレポートにアクセスできます。アクセス許可の詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
   
-1. [セキュリティ&amp;コンプライアンス センター](https://protection.office.com)**のレポート**には、 \> **ダッシュ ボード**です。
+1. [セキュリティ&amp; /コンプライアンスセンター](https://protection.office.com)で、[**レポート** \> **ダッシュボード**] に移動します。
     
-2. レポートを選択します。この例では、脅威の保護の状態のレポートを選択します。
+2. レポートを選択します。この例では、[脅威保護の状態レポート] を選択します。
     
-3. レポートの左上隅の **+ を作成するスケジュール**を選択します。
+3. レポートの左上隅で、[ **+ スケジュールの作成**] を選択します。
     
-    ![セキュリティ レポートのスケジュールを作成することができます&amp;コンプライアンス センター](media/2311327c-14f6-4a17-b604-0c9ff2d485d1.png)
+    ![セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを作成できます。](media/2311327c-14f6-4a17-b604-0c9ff2d485d1.png)
   
-    **スケジュールの作成**] ダイアログ ボックスが開きます。 
+    [**スケジュールの作成**] ダイアログボックスが表示されます。 
     
-4. デフォルト設定のまま**作成スケジュール**を選択するか、**スケジュールをカスタマイズする**を選択します。
+4. 既定の設定のままにして、[**スケジュールの作成**] を選択するか、[**スケジュールのカスタマイズ**] を選択します。
     
-    ![既定の設定を使用するか、レポートのスケジュールをカスタマイズします。](media/04fac327-8f73-4711-8319-58c11880fd96.png)
+    ![既定の設定を使用するか、レポートのスケジュールをカスタマイズできます。](media/04fac327-8f73-4711-8319-58c11880fd96.png)
   
-    を、レポートのスケジュールをカスタマイズする場合は、レポートの頻度、送信者の電子メール アドレス、および受信者の電子メール アドレスを指定できます。 
+    レポートスケジュールのカスタマイズを選択する場合は、レポートの頻度、送信者の電子メールアドレス、および受信者の電子メールアドレスを指定できます。 
     
-1 回レポートを自動的に宛先の emali のアドレスにメールで配信されるレポートのスケジュールを作成しました。 
+レポートのスケジュールを作成すると、そのレポートは電子メール経由で受信者の emali アドレスに自動的に配信されます。 
   
 ## <a name="related-topics"></a>関連項目
 
-[レポートと Office 365 のセキュリティ情報&amp;コンプライアンス センター](reports-and-insights-in-security-and-compliance.md)
+[Office 365 セキュリティ&amp; /コンプライアンスセンターのレポートと分析情報](reports-and-insights-in-security-and-compliance.md)
   
-[セキュリティ レポートのスケジュールを管理する&amp;コンプライアンス センター](manage-schedules-for-multiple-reports.md)
+[セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを管理する](manage-schedules-for-multiple-reports.md)
   
-[セキュリティを既存のレポートをダウンロード&amp;コンプライアンス センター](download-existing-reports.md)
+[セキュリティ&amp; /コンプライアンスセンターで既存のレポートをダウンロードする](download-existing-reports.md)
   
-[セキュリティでのカスタム レポートをダウンロード&amp;コンプライアンス センター](set-up-and-download-a-custom-report.md)
+[セキュリティ&amp; /コンプライアンスセンターでカスタムレポートをダウンロードする](set-up-and-download-a-custom-report.md)
   
 

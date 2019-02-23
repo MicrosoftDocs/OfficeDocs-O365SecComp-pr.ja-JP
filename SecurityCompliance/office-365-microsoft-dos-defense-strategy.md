@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: サービス拒否 (DoS) 攻撃に対処するための Microsoft の防御戦略の概要について説明します。
-ms.openlocfilehash: 0b0cf20e6282c85ede05edda3979ae5a7295ac78
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: acc0c74ae9ed434d4718d7b8b3bd9429b3245d46
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090819"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219987"
 ---
 # <a name="microsofts-denial-of-service-defense-strategy"></a>Microsoft のサービス拒否防御戦略
 

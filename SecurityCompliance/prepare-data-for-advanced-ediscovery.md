@@ -6,73 +6,73 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: 'Office 365 のセキュリティを使用する方法については&amp;で電子的証拠開示の Office 365 の詳細な分析のための Office 365 のデータを準備するのにはコンプライアンス センターです。 '
-ms.openlocfilehash: cf0c76b0c274121da435de7829c769abf5111cab
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'office 365 セキュリティ&amp;コンプライアンスセンターを使用して office 365 Advanced eDiscovery で分析するために office 365 データを準備する方法について説明します。 '
+ms.openlocfilehash: 8ede0f0cb97e1b49297b66fb2b929b3cb292ed52
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532543"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218797"
 ---
 # <a name="prepare-data-for-office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery 用にデータを準備する
 
-このトピックでは、高度な電子的証拠開示のケースでのコンテンツの検索の結果をロードする方法について説明します。 
+このトピックでは、高度な電子情報開示のケースにコンテンツ検索の結果を読み込む方法について説明します。 
   
 > [!NOTE]
-> 高度な電子的証拠開示では、組織のコンプライアンスを高度なアドオンや、E5 のサブスクリプションの Office 365 E3 が必要です。その計画して高度な電子的証拠開示を実行する、 [Office 365 エンタープライズ E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)することができます。 
+> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
   
-## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>手順 1: 高度な電子的証拠開示の Office 365 のデータを準備します。
+## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>手順 1: 高度な電子情報開示用に Office 365 データを準備する
 
-高度な電子的証拠開示を使用してデータを分析するには、Office 365 のセキュリティで実行するコンテンツの検索の結果を使用することができます&amp;コンプライアンス センター (Office 365 のセキュリティ**コンテンツの検索**ページに記載されている&amp;コンプライアンス センター) や検索電子的証拠開示のサポート案件に関連付けられている (セキュリティで**電子的証拠開示**のページに記載されている&amp;コンプライアンス センター)。 
+上級電子情報開示を使用してデータを分析するには、office 365 セキュリティ&amp;コンプライアンスセンター (office 365 セキュリティ&amp;コンプライアンスセンターの**コンテンツ検索**ページにリストされています) または検索で実行するコンテンツ検索の結果を使用できます。電子情報開示ケースに関連付けられています (セキュリティ&amp;コンプライアンスセンターの**電子情報開示**ページに記載されています)。 
   
-分析のために高度な電子的証拠開示検索結果の準備に関する詳細な手順については、 [Office 365 の高度な証拠開示のための準備の検索結果](prepare-search-results-for-advanced-ediscovery.md)を参照してください。
+高度な電子情報開示で分析のために検索結果を準備する詳細な手順については、「 [Office 365 advanced ediscovery の検索結果を準備](prepare-search-results-for-advanced-ediscovery.md)する」を参照してください。
   
 > [!NOTE]
-> Office 365 以外のデータがあるしを準備し、高度な電子的証拠開示を参照してくださいにそれを分析するために Office 365 にインポートするかどうかは[Office 365 に PST ファイルのインポートの概要について説明](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84)し、 [Office 365 のサード ・ パーティ製データをアーカイブ](https://go.microsoft.com/fwlink/p/?linkid=716918)します。 
+> office 365 の外部にデータがあり、そのデータを office 365 にインポートして、高度な電子情報開示で準備および分析できるようにする場合は、「office 2010[への PST ファイルのインポートの概要](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84)」と「 [office の365でのサードパーティデータのアーカイブ](https://go.microsoft.com/fwlink/p/?linkid=716918)」を参照してください。 
   
-## <a name="step-2-load-search-result-data-in-to-a-case-in-advanced-ediscovery"></a>手順 2: 検索結果データの読み込みの高度な電子的証拠開示の場合に
+## <a name="step-2-load-search-result-data-in-to-a-case-in-advanced-ediscovery"></a>手順 2: 高度な電子情報開示のケースに検索結果データを読み込む
 
-セキュリティで検索結果を準備した後&amp;分析のためのコンプライアンス センター、高度な電子的証拠開示の場合に検索結果を読み込むには、次の手順です。詳細な情報は、[プロセス モジュールを実行する](run-the-process-module-in-advanced-ediscovery.md)を参照してください。
+分析のためにセキュリティ&amp;コンプライアンスセンターで検索結果を準備した後、次の手順では、高度な電子情報開示のケースに検索結果を読み込みます。詳細については、「 [Process module を実行する](run-the-process-module-in-advanced-ediscovery.md)」を参照してください。
   
-1. [https://protection.office.com](https://protection.office.com)。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
-2. 職場、学校のアカウントを使用して Office 365 にサインインします。
+2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
     
-3. セキュリティ&amp;コンプライアンス センター] をクリックして**検索&amp;調査** \> 、組織のサポート案件の一覧を表示するのには、**電子的証拠開示**します。 
+3. セキュリティ&amp;コンプライアンス センターで、**[検索&amp;調査]** \> **[電子情報開示]** の順にクリックし、組織内のケースの一覧を表示します。 
     
-4. 内でデータを高度な電子的証拠開示をロードする場合の横にある [**開く**] をクリックします。 
+4. 高度な電子情報開示でにデータを読み込むケースの横にある [**開く**] をクリックします。 
     
-5. [**ホーム**] ページの場合、**高度な電子的証拠開示**をクリックします。 
+5. ケースの **[ホーム]** ページで、**[Advanced eDiscovery]** をクリックします。 
     
-    ![スイッチをクリックすると高度な電子的証拠開示のケースを開けるには、[高度な電子的証拠開示](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
+    ![[高度な電子情報開示に切り替え] をクリックして、高度な電子情報開示でケースを開きます。](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
-    **高度な電子的証拠開示への接続**の進行状況バーが表示されます。高度な電子的証拠開示に接続している場合、大文字と小文字のセットアップ] ページでコンテナーの一覧が表示されます。 
+    **[高度な電子情報開示**の進行状況バーへの接続] が表示されます。上級電子情報開示に接続されている場合は、ケースのセットアップページにコンテナーの一覧が表示されます。 
     
-    ![高度な電子的証拠開示に大文字と小文字が表示されます。](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
+    ![詳細な電子情報開示でケースが表示される](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
   
-     これらのコンテナーでは、手順 1 には、[高度な電子的証拠開示の分析のために準備した検索結果を表します。コンテナーの名前が、セキュリティの場合、コンテンツの検索と同じ名前を持って注&amp;コンプライアンス センターです。コンテナー、ボックスの一覧では、準備したものです。さまざまなユーザーが検索結果を高度な電子的証拠開示に備える、対応するコンテナーが一覧に含まれません。 
+     これらのコンテナーは、手順1でアドバンスト eDiscovery で分析するために準備した検索結果を表します。セキュリティ&amp; /コンプライアンスセンターでは、コンテナーの名前がコンテンツ検索と同じ名前になっていることに注意してください。リスト内のコンテナーは、準備したものです。上級電子情報開示のために別のユーザーが検索結果を準備している場合、対応するコンテナーはリストに含まれません。 
     
-6. 内のコンテナーから検索結果のデータを読み込むには高度な電子的証拠開示の場合に、コンテナーを選択して、[**プロセス**] をクリックします。
+6. 高度な電子情報開示のケースに、コンテナーからの検索結果データを読み込むには、コンテナーを選択し、[**処理**] をクリックします。
     
-セキュリティの検索結果の後&amp;コンプライアンス センターに追加で高度な電子的証拠開示は、大文字と小文字を分析し、選別、サポート案件に関連する高度な電子的証拠開示でツールを使用するは、次のステップです。 
+上級電子情報開示のケースに&amp;セキュリティコンプライアンスセンターからの検索結果が追加された後、次の手順では、[advanced ediscovery] のツールを使用して、ケースに関連するデータを分析し、選別します。 
   
 ## <a name="see-also"></a>関連項目
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[ユーザーおよびサポート案件を設定します](set-up-users-and-cases-in-advanced-ediscovery.md)
+[ユーザーおよびケースをセットアップする](set-up-users-and-cases-in-advanced-ediscovery.md)
   
 [ケース データの分析](analyze-case-data-with-advanced-ediscovery.md)
   
-[関連性の設定を管理します。](manage-relevance-setup-in-advanced-ediscovery.md)
+[関連性の設定の管理](manage-relevance-setup-in-advanced-ediscovery.md)
   
-[関連モジュールを使用します。](use-relevance-in-advanced-ediscovery.md)
+[関連度モジュールの使用](use-relevance-in-advanced-ediscovery.md)
   
-[ケースのデータをエクスポートします。](export-case-data-in-advanced-ediscovery.md)
+[ケース データのエクスポート](export-case-data-in-advanced-ediscovery.md)
 

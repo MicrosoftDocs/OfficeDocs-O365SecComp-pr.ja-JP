@@ -6,96 +6,96 @@ manager: laurawi
 ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 86f414ad-81de-4703-b40a-c6615bbe9108
-description: 設定すると、Office 365 のクラウド アプリケーションのセキュリティを展開すると、次のように、構成が正しいこと、および定期的な確認作業の準備ができなことを確認するのには、特定のタスクを実行する必要があります。
-ms.openlocfilehash: 71b6793f2e325fcba3431ba5157640b29814ad30
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Office 365 Cloud App Security をセットアップしてロールアウトした後、特定のタスクを実行して構成が正しいことと、定期的なレビューの準備ができていることを確認してください。
+ms.openlocfilehash: 3afcfc307ea4a587287f3b71080bba89c715c908
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603708"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215947"
 ---
 # <a name="utilization-activities-after-rolling-out-office-365-cloud-app-security"></a>Office 365 Cloud App Security 展開後の利用に関する作業
   
-|評価 * *\>**|計画 * *\>**|配置 * *\>**|使用率。|
+|評価 * *\>**|計画 * *\>**|展開 * *\>**|使用率 * * * *|
 |:-----|:-----|:-----|:-----|
-|[評価を開始します。](office-365-cas-overview.md) <br/> |[計画の開始します。](get-ready-for-office-365-cas.md) <br/> |[展開を開始します。](turn-on-office-365-cas.md) <br/> |コースです!  <br/> [次の手順](review-office-365-cas-alerts.md) <br/> |
+|[評価の開始](office-365-cas-overview.md) <br/> |[計画を開始する](get-ready-for-office-365-cas.md) <br/> |[展開を開始する](turn-on-office-365-cas.md) <br/> |ここでは、  <br/> [次の手順](review-office-365-cas-alerts.md) <br/> |
    
 > [!NOTE]
-> Office 365 のクラウド アプリケーションのセキュリティは、Office 365 エンタープライズ E5 に使用できます。組織は、別の Office 365 エンタープライズ サブスクリプションで使用されている場合、Office 365 のクラウド アプリケーションのセキュリティがアドオンとして購入できます。(グローバル管理者は、Office 365 管理センターを選択して**請求** \> **サブスクリプションを追加**します)。詳細についてを参照してください[Office 365 のプラットフォーム サービスの説明: Office 365 のセキュリティ&amp;コンプライアンス センター](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) [購入またはビジネスのための Office 365 のアドオンを編集](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)するとします。 
+> office 365 Cloud App Security は office 365 Enterprise E5 で利用できます。組織で別の office 365 Enterprise サブスクリプションを使用している場合、office 365 Cloud App Security をアドオンとして購入することができます。(全体管理者として、Office 365 管理センターで、[**課金** \>の**サブスクリプションの追加**] を選択します。)詳細については、「office 365 プラットフォームサービスの説明」を参照してください[。 office 365 セキュリティ&amp;コンプライアンスセンター](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)で、 [office 365 for business のアドオンを購入または編集](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)します。 
   
-設定して、Office 365 のクラウド アプリケーションのセキュリティを構成することが後、に Office 365 のグローバル管理者または組織のセキュリティ管理者としての使用率、特定のタスクを実行します。 
+office 365 Cloud App security をセットアップして構成した後、組織のために office 365 の全体管理者またはセキュリティ管理者として、特定の使用状況タスクを実行する必要があります。 
 
-これらのタスクを実行していることを確認 Office 365 のクラウド アプリケーションのセキュリティが正しく構成されている、ポリシーが最新で、組織が Office 365 の値を実現していますをしてみましょう。これらのタスクを計画するためのガイドとしてこの資料を使用します。
+これらのタスクを実行することにより、office 365 Cloud App Security が適切に構成され、ポリシーが最新のものであり、組織が office 365 の価値を実感していることを確認できます。この記事を参考にして、これらのタスクを計画してください。
   
 > [!NOTE]
-> この資料で説明するタスクを実行するには、グローバル管理者またはセキュリティ管理者である必要があります。詳細についてを参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。 
+> この記事で説明されているタスクを実行するには、全体管理者またはセキュリティ管理者である必要があります。詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。 
     
-## <a name="activities-after-the-initial-configuration-and-rollout-of-office-365-cloud-app-security"></a>初期設定と Office 365 のクラウド アプリケーションのセキュリティの展開後の活動
+## <a name="activities-after-the-initial-configuration-and-rollout-of-office-365-cloud-app-security"></a>Office 365 Cloud App Security の初期構成とロールアウト後のアクティビティ
 
-Office 365 のクラウド アプリケーションのセキュリティの構成し、展開、グローバル ・ アドミニストレーターまたはセキュリティ管理者として、考慮すべき点があります。
+Office 365 Cloud App Security を構成してロールアウトした後、全体管理者またはセキュリティ管理者として、次の点を考慮する必要があります。
   
-- どのような作業は、IT 部署の予定表に追加する必要があるでしょうか。
+- IT 部門の予定表に追加する必要があるタスク
     
-- どのように時間の経過とともに適切なポリシーが設定を使用する Office 365 のクラウド アプリケーションのセキュリティが構成されていることを確認しますか。
+- Office 365 Cloud App Security が、時間の経過とともに適切なポリシーセットを使用するように構成されていることを確認するには、どうすればよいですか。
     
-- IT 管理のチェーンを要約情報の種類を送信する必要がありますか。
+- IT 管理チェーンを送信する必要がある要約情報の種類は何ですか。
     
-次の表には、継続的なタスクを実行して、IT 部門のカレンダーに追加することを考慮する必要があります、定期的なタスクについて簡単にまとめたものです。
+次の表に、実行する必要がある進行中のタスクと、IT 部門の予定表に追加する必要がある定期的なタスクを簡単にまとめています。
   
 |**進行中のタスク**|**定期的なタスク**|
 |:-----|:-----|
-| 警告メッセージを送信する電子メール アカウントを監視します。  <br/>  新しいサイバー攻撃に関する最新情報については、業界 cybersecurity ニュース フィードを監視します。  <br/>  識別し、セキュリティの問題やリスクに対処するセキュリティ警告の動作します。  <br/>  各セキュリティ上の問題と、中央のログでの解像度を集計します。  <br/> | スポット異常に Office 365 のクラウド アプリケーションのセキュリティ警告の毎月または四半期ごとのレビューを行い、傾向の分析  <br/>  毎月または四半期ごとの拡張機能に含める Office 365 のクラウド アプリケーションのセキュリティとアドレスの新しい cyberattacks と cybersecurity の傾向を既存の Office 365 のクラウド アプリケーションのセキュリティ ポリシーのレビューを行う  <br/> |
+| 通知メッセージを送信する電子メールアカウントを監視する  <br/>  新しいサイバー攻撃に関する最新情報について業界 cybersecurity ニュースフィードを監視する  <br/>  セキュリティの警告に基づいてセキュリティインシデントとリスクを識別して解決する  <br/>  中央ログで各セキュリティインシデントと解決策を要約する  <br/> | Office 365 Cloud App Security alerts の月次または四半期のレビューを実行して、異常を発見し、傾向を分析する  <br/>  既存の office 365 cloud app security ポリシーの月次または四半期のレビューを実行して、office 365 cloud app security の機能強化を含み、cybersecurity の新しい cyberattacks およびトレンドを解決します。  <br/> |
    
-によって、組織のサイズと目的の監視とセキュリティの名声を維持するのには、IT 管理のチェーンを含むの月ごとのサマリーをコンパイルできます。
+組織の規模とセキュリティ stature の監視と保守に関する情報に応じて、次のものを含む IT 管理チェーンの月ごとのサマリーをコンパイルできます。
   
-- Office 365 のクラウド アプリケーションのセキュリティと識別される、セキュリティ インシデントの種類
+- Office 365 Cloud App security で識別されるさまざまな種類のセキュリティインシデント
     
-- 検出されたインシデントの数など、セキュリティ インシデントへの対応、集中管理されたログからの情報
+- 検出されたインシデント数などの、セキュリティインシデントの中央ログからの概要情報
     
-- 警告の傾向と、それらがどのように解決されました。
+- アラートの傾向とその対処方法
     
-- Cybersecurity の最新の動向
+- 最新の cybersecurity 傾向
     
-- Office 365 のクラウド アプリケーションのセキュリティ ポリシーを変更し、エンド ・ ユーザーに与える影響に関する推奨事項
+- Office 365 Cloud App Security policy の変更点とエンドユーザーへの影響に関する推奨事項
     
-## <a name="activities-after-time-has-passed-since-rolling-out-office-365-cloud-app-security"></a>Office 365 のクラウド アプリケーションのセキュリティを展開してから時間が経過した後の活動
+## <a name="activities-after-time-has-passed-since-rolling-out-office-365-cloud-app-security"></a>Office 365 Cloud App Security を展開してから経過した後のアクティビティ
 
-最初に構成されているか、Office 365 のクラウド アプリケーションのセキュリティ ポリシーを維持するため、時間のかかる時間が過ぎている場合は、組織のセキュリティ目標と現在の機能を反映した構成に戻るには、以下の手順を実行します。Office 365 のクラウド アプリケーションのセキュリティ。
+Office 365 Cloud App Security ポリシーを最初に構成または管理してから、protracted の時間が経過した場合は、次の手順を実行して、組織のセキュリティ目標および現在の機能を反映した構成に戻すことができます。Office 365 Cloud App Security の場合:
   
-1. Office 365 のクラウド アプリケーションのセキュリティの構成の最終変更の日付を決定します。
+1. Office 365 Cloud App Security の最後の構成変更の日付を確認します。
     
-2. 現在の Office 365 のクラウド アプリケーションのセキュリティ構成を理解し、必要に応じて、これらのポリシーを調整します。たとえば、電子メールを通じて通知が送信される場所を知っているを確認します。
+2. 現在の Office 365 Cloud App Security の構成を理解し、必要に応じてそれらのポリシーを調整します。たとえば、通知が電子メールで送信されている場所を確認してください。
     
-3. 最後に Office 365 のクラウド アプリケーションのセキュリティを構成した後は、[ [Office 365 のクラウド アプリケーションのセキュリティの新](new-in-office-365-cas.md)製品の変更を参照してください。 
+3. 前回 office 365 cloud app security を構成した後の製品変更については、「 [office 365 cloud app security の新機能](new-in-office-365-cas.md)」を参照してください。 
     
-4. Office 365 のクラウド アプリケーションのセキュリティの警告やスポットの異常ログの分析を実行し、傾向を分析します。
+4. Office 365 Cloud App Security の警告とログの分析を実行して、異常を発見し、傾向を分析します。
     
-5. 最新のセキュリティ上の脅威を認識する業界の cybersecurity の傾向を確認してください。
+5. 業界 cybersecurity の傾向をチェックして、最新のセキュリティの脅威を認識します。
     
-6. Office 365 のクラウド アプリケーションのセキュリティ ポリシーの現在のセットにする必要がある変更の分析を実行します。Office 365 のクラウド アプリケーションのセキュリティ機能の変更、現在の異常、および cybersecurity の傾向を反映します。既存のポリシーまたは新しいポリシーの作成、変更をお勧めします。
+6. 現在の Office 365 Cloud App Security ポリシーセットに対して行う必要のある変更の分析を行います。Office 365 Cloud App Security 機能の変更、現在の異常、cybersecurity の傾向を組み込みます。既存のポリシーの変更または新しいポリシーの作成をお勧めします。
     
-7. ポリシーの変更を実装するための計画を作成します。通信 (交流) 必要に応じて、エンド ・ ユーザーに提案された変更の結果です。
+7. ポリシーの変更を実装するための計画を立ててください。必要に応じて、提案された変更の結果をエンドユーザーに通知 (socialize) します。
     
-8. Office 365 のクラウド アプリケーションのセキュリティ ポリシーの変更を実装します。
+8. Office 365 Cloud App Security policy の変更を実装します。
     
-9. エンド ・ ユーザーからのフィードバックと Office 365 のクラウド アプリケーションのセキュリティの警告を監視し、時間の経過のポリシーを調整します。
+9. エンドユーザーのフィードバックと Office 365 Cloud App Security alerts を監視して、ポリシーを徐々に調整します。
     
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
-- [アクティビティを調査します。](investigate-an-activity-in-office-365-cas.md)
+- [アクティビティを調べる](investigate-an-activity-in-office-365-cas.md)
     
-- [サスペンド モードまたはユーザー アカウントを復元します。](suspend-or-restore-an-account-in-ocas.md)
+- [ユーザーアカウントを中断または復元する](suspend-or-restore-an-account-in-ocas.md)
     
-- [OAuth のアプリケーションを管理します。](manage-app-permissions-in-ocas.md)
+- [OAuth アプリを管理する](manage-app-permissions-in-ocas.md)
     
 - [Office 365 Cloud App Security でアプリ検出結果を確認する](review-app-discovery-findings-in-ocas.md)
     
-- サポートされている[Web トラフィックのログとデータ ソース](web-traffic-logs-and-data-sources-for-ocas.md)の一覧を表示します。
+- サポートされている[Web トラフィックログとデータソース](web-traffic-logs-and-data-sources-for-ocas.md)の一覧を表示する
     
 

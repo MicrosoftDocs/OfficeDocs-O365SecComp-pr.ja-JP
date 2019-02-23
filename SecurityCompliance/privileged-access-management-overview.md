@@ -5,7 +5,7 @@ author: robmazz
 manager: laurawi
 ms.audience: ITPro
 ms.topic: overview
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Office 365 での特権アクセス管理の詳細については、このトピックを使用してください。
-ms.openlocfilehash: 78107ceb497a546ef4d19ba33b8b72ec1406de1b
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: d8b16d7dd73f99c15ec241963a58273966074318
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090799"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214927"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Office 365 での特権アクセス管理
 

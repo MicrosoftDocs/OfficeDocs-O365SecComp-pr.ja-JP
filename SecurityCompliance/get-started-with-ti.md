@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +15,12 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: Office 365 の脅威インテリジェンスと開始する方法について説明します。
-ms.openlocfilehash: 6412f575bbe581aa469c7ad615213564b728d0aa
-ms.sourcegitcommit: 2af6c3e8a74995294a67429530af8f085e6ca136
+ms.openlocfilehash: f116b7a01ab3b27760b597527cc1e5a4440a6586
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "30051168"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217857"
 ---
 # <a name="get-started-with-threat-intelligence"></a>脅威インテリジェンスの概要
 

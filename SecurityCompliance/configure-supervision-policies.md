@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 監督レビューポリシーを設定して、レビューのために従業員のコミュニケーションをキャプチャします。
-ms.openlocfilehash: dee9f21d4b88338a092a64538cca33b41cc481c4
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: af317194fcf551acde8c53cdf6aa38bfb040dc84
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090959"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216737"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>組織用に監督ポリシーを構成する
 
@@ -53,7 +53,7 @@ Office 365 組織の監督をセットアップして使用するには、次の
 
     監督ポリシーをテストして、必要に応じて機能していることを確認してください。これは、コンプライアンス戦略が標準を満たしていることを確認するための重要な部分です。
 
-- **手順 6-(省略可能)**[Office 365 監督ダッシュボードまたは OWA を使用して、監視対象の通信を確認しないようにするための Outlook アドインのセットアップ](configure-supervision-policies.md#UseOutlook)
+- **手順 6-(省略可能)**[Office 365 監督ダッシュボードまたは web 上の outlook (以前の outlook web App) を使用しないで、監視された通信を確認するには、outlook アドインをセットアップ](configure-supervision-policies.md#UseOutlook)します。
 
     outlook 用の監督アドインにより、レビューアーが outlook クライアント内の監督機能にアクセスできるようになり、各アイテムを評価および分類できるようになります。
 

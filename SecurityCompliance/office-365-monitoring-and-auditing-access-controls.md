@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '概要: Office 365 で利用できるさまざまな監視および監査アクセス制御の概要について説明します。'
-ms.openlocfilehash: 7a7023f61a72bd1368bb25754b33e40581a403b9
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 91d78ba3de41554755a7c19799eb1f7b25933b05
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090909"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217737"
 ---
 # <a name="monitoring-and-auditing-access-controls-in-office-365"></a>Office 365 でのアクセス制御の監視と監査
 

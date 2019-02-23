@@ -1,48 +1,48 @@
 ---
-title: セキュリティを既存のレポートをダウンロード&amp;コンプライアンス センター
+title: セキュリティ&amp; /コンプライアンスセンターで既存のレポートをダウンロードする
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/1/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
-description: セキュリティの 1 つまたは複数の既存のレポートをダウンロードする方法を説明&amp;コンプライアンス センターです。
-ms.openlocfilehash: b4231a29fd9c3282bd36bed6197f811de36de092
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: セキュリティ&amp; /コンプライアンスセンターで、既存のレポートをダウンロードする方法について説明します。
+ms.openlocfilehash: 0ea48eca0744dbcf663d15f52342546a54a85af2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014839"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219127"
 ---
-# <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>セキュリティを既存のレポートをダウンロード&amp;コンプライアンス センター
+# <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターで既存のレポートをダウンロードする
 
-[セキュリティ&amp;コンプライアンス センター](https://protection.office.com)、いくつかの[レポートと情報](reports-and-insights-in-security-and-compliance.md)が利用できる、組織のセキュリティ チームが軽減し、組織に対する脅威に対処します。組織のセキュリティ チームのメンバーにする場合は、1 つまたは複数の既存のレポートをダウンロードできます。 
+[ &amp;セキュリティ/コンプライアンスセンター](https://protection.office.com)では、組織のセキュリティチームが組織に対する脅威を軽減して対処するのに役立つ、いくつかの[レポートと分析](reports-and-insights-in-security-and-compliance.md)情報が提供されています。組織のセキュリティチームのメンバーである場合は、1つまたは複数の既存のレポートをダウンロードできます。 
   
 ## <a name="download-existing-reports"></a>既存のレポートをダウンロードする
 
 > [!IMPORTANT]
-> 必要があるかどうかを確認[Office 365 のセキュリティに割り当てられたアクセス権&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。一般に、Office 365 のグローバル管理者、セキュリティ管理者、およびセキュリティのリーダーのセキュリティ レポートにアクセスできます&amp;コンプライアンス センターです。 
+> [Office 365 セキュリティ&amp;コンプライアンスセンターで、必要なアクセス許可が割り当てら](permissions-in-the-security-and-compliance-center.md)れていることを確認してください。一般に、Office 365 の全体管理者、セキュリティ管理者、およびセキュリティ閲覧者は、 &amp;セキュリティ/コンプライアンスセンターのレポートにアクセスできます。 
   
-1. [セキュリティ&amp;コンプライアンス センター](https://protection.office.com)**のレポート**には、 \> **のレポートをダウンロード**します。
+1. [ &amp;セキュリティ/コンプライアンスセンター](https://protection.office.com)で、[**レポート** \>レポート] に移動し**てダウンロード**します。
     
-2. リスト内の 1 つまたは複数の項目を選択します。
+2. リストから1つ以上のアイテムを選択します。
     
-3. **レポートをダウンロード**] をクリックし、[**閉じる**] をクリックします。
+3. [**レポートのダウンロード**] をクリックし、[**閉じる**] をクリックします。
     
 ## <a name="related-topics"></a>関連項目
 
-[レポートと Office 365 のセキュリティ情報&amp;コンプライアンス センター](reports-and-insights-in-security-and-compliance.md)
+[Office 365 セキュリティ&amp; /コンプライアンスセンターのレポートと分析情報](reports-and-insights-in-security-and-compliance.md)
   
-[セキュリティ レポートのスケジュールを作成する&amp;コンプライアンス センター](create-a-schedule-for-a-report.md)
+[セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを作成する](create-a-schedule-for-a-report.md)
   
-[セキュリティ レポートのスケジュールを管理する&amp;コンプライアンス センター](manage-schedules-for-multiple-reports.md)
+[セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを管理する](manage-schedules-for-multiple-reports.md)
   
-[セキュリティでのカスタム レポートをダウンロード&amp;コンプライアンス センター](set-up-and-download-a-custom-report.md)
+[セキュリティ&amp; /コンプライアンスセンターでカスタムレポートをダウンロードする](set-up-and-download-a-custom-report.md)
   
 

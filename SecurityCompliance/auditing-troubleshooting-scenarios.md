@@ -5,19 +5,19 @@ author: markjjo
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MET150
 - MOE150
 description: Office 365 監査ログ検索ツールを使用すると、侵害されたアカウントを調査する、メールボックスのメール転送を誰が設定したかを識別する、などの一般的な問題のトラブルシューティングに役立ちます。
-ms.openlocfilehash: 930e311712e49214ca2a51e256c29e5f959deab8
-ms.sourcegitcommit: c34f1a0d560117153fc9a7b8da8994bc6fc53791
-ms.translationtype: HT
+ms.openlocfilehash: 301c8a19c5e268b1c4e3ff0e9633c85a31fd3f4d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27123900"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220877"
 ---
 # <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>Office 365 監査ログを検索して一般的なシナリオのトラブルシューティングを行う
 
@@ -157,7 +157,7 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 ### <a name="recovering-deleted-email-items"></a>削除済み電子メール項目の回復
 
-削除済み項目の保持期間がまだ切れていない場合、ユーザーはソフト削除された項目を回復できます。Exchange Online では削除済み項目の既定の保持期間は 14 日間ですが、管理者はこの設定を最大 30 日間にまで増やすことができます。削除済み項目の回復手順については、「[Outlook Web App で削除済みのアイテムやメールを復元する](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4)」を参照するようユーザーに通知してください。
+削除済みアイテムの保存期間の期限が切れていない場合、ユーザーは削除済みアイテムを回復できます。Exchange Online では、既定の削除済みアイテムの保存期間は14日ですが、管理者はこの設定を最大30日間に増やすことができます。削除済みアイテムを復元する手順については、「 [web 上の Outlook の削除済みアイテムまたは電子メールを復元する」](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4)を参照してください。
 
 すでに述べたように、削除済み項目の保持期間がまだ切れていない場合、またはメールボックスが保留中の場合に、管理者はハード削除された項目を回復できる可能性があります。後者の場合、保留期間が切れるまで項目が保持されます。コンテンツ検索を実行すると、「回復可能なアイテム」フォルダー内のソフト削除された項目とハード削除された項目が検索クエリに一致する場合、それらが検索結果に返されます。コンテンツ検索の実行の詳細については、「[Office 365 でのコンテンツ検索](content-search.md)」を参照してください。
 

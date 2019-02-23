@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: データの不変性、または検出可能で、破棄または変更することができないデータを定義して説明します。
-ms.openlocfilehash: ab7bfc3795da761eacc9e9aa7d41e69e482fc411
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 5d0deef04d879959238dbbcfe36bb98ed0159242
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090879"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215567"
 ---
 # <a name="immutability-in-office-365"></a>Office 365 での不変性
 一部の組織では、規制遵守、内部ガバナンス要件、訴訟リスクで、電子メールと関連データを検出可能な形式で保持する必要があります。システム内のすべてのデータが検出可能である必要があります。また、そのいずれも破棄または変更することはできません。業界標準の用語は、"不変" です。 

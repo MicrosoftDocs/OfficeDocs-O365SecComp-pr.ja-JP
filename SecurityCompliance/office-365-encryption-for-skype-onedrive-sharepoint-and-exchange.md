@@ -5,18 +5,18 @@ author: kccross
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: '概要: Skype、OneDrive、SharePoint、および Exchange Online の暗号化について説明します。'
-ms.openlocfilehash: c8f3658a2d76bd9184babe7729236309ec1feb30
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: b08b9d00dc83ab59cf2f5b979fb9b6079990a8e8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29664143"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216937"
 ---
 # <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Skype for business、OneDrive for business、SharePoint online、Exchange online の Office 365 暗号化
 

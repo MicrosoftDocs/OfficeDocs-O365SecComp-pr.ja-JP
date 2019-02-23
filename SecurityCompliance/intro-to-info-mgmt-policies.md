@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 5/16/2014
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - WSU150
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 description: 情報管理ポリシーとは、コンテンツ タイプに関する一連のルールです。 情報管理ポリシーにより、組織はコンテンツの保持期間やユーザーがそのコンテンツで実行できる操作などを制御し、管理することができます。 情報管理ポリシーは、組織が法律上または行政上の規制を遵守したり、内部のビジネス プロセスを徹底するのに役立ちます。
-ms.openlocfilehash: 9ec64cd7e015acc6a7d8da324ba18cf74405cc71
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0ac273a62464e8a02668396dbeabb6bbd473dc0d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532045"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218357"
 ---
 # <a name="introduction-to-information-management-policies"></a>情報管理ポリシー入門
 

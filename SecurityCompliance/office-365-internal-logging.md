@@ -5,7 +5,7 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Office 365 エンジニアリングチームの内部ログのしくみについて説明します。
-ms.openlocfilehash: cf11a52541f6434a580435688db0f986f670bd31
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 68f8763b9a647de462f402e40a4c78749343dfd9
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090759"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216497"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Office 365 のエンジニアリングのための内部ログ記録
 お客様が利用できるイベントとログデータに加えて、Office 365 のエンジニアが利用できる内部ログデータ収集システムもあります。Office 365 サーバーから、Cosmos と呼ばれる内部の大規模なデータコンピューティングサービスに、さまざまな種類のログデータがアップロードされています。各サービスチームは、それぞれのサーバーからの監査ログを Cosmos データベースにアップロードして、集約と分析を行います。このデータ転送は、「Office データローダー (ODL)」と呼ばれる独自の自動化ツールを使用して、明示的に承認されたポートとプロトコルに基づいて、FIPS 140-2 で検証された TLS 接続を介して行われます。Office 365 で監査レコードを収集して処理するために使用されるツールでは、元の監査レコードのコンテンツまたは時間の順序を永続的に変更したり、取り消したりすることはできません。

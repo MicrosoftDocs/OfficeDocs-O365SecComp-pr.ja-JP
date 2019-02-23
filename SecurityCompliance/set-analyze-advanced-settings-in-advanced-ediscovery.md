@@ -6,40 +6,40 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
-description: '重複の近くに、電子メールのスレッド、分析プロセスを Office 365 に高度な電子的証拠開示では、テーマなど、高度な設定を構成する方法について説明します。 '
-ms.openlocfilehash: 7ffb80230a43eacb98a9c4ecb569f03cff134aac
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Office 365 advanced eDiscovery の分析プロセスについて、ほぼ重複、電子メールスレッド、テーマなどの高度な設定を構成する方法について説明します。 '
+ms.openlocfilehash: d8dfb9f3ecfcda0f267dfccdc716eda40fe450b2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22531613"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220087"
 ---
 # <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery の分析で詳細オプションを設定する
 
 > [!NOTE]
-> 高度な電子的証拠開示では、組織のコンプライアンスを高度なアドオンや、E5 のサブスクリプションの Office 365 E3 が必要です。その計画して高度な電子的証拠開示を実行する、 [Office 365 エンタープライズ E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)することができます。 
+> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
   
-高度な電子的証拠開示では、分析モジュールの設定の詳細設定の既定のパラメーターを提供します。次の手順では、指定できる設定について説明します。
+advanced eDiscovery は、モジュール設定を分析するための既定の高度なパラメーターを提供します。次の手順では、指定可能な設定について説明します。
   
-1. **の準備\>分析\>セットアップ**] タブで、(ページの下部) の **[詳細設定**] をクリックします。次のパネルが表示されます。 
+1. [ ** \> Analyze \> **の設定の準備] タブで、[**詳細設定**] (ページの下部) をクリックします。次のパネルが表示されます。 
     
     ![分析設定の拡張設定](media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
   
-2. **重複の近く、電子メール スレッドのパラメーター**は、必要に応じて、次の値を選択します。
+2. [**ほぼ重複] および [電子メールスレッド] パラメーター**で、必要に応じて次の値を選択します。
     
-  - **単語の最小数**: 重複の近くの分析のため送信されませんファイルを次の単語の最小数。 
+  - **少なく**とも1つの単語の最小数: ファイルがほぼ重複した分析のために送信されません。 
     
-  - **単語の最大数**: 上にファイルを複製に近い分析のため送信できません、単語の最大数です。
+  - **単語の**最大数: 単語の最大数。これは、ほぼ重複した分析のためにファイルが送信されません。
     
-  - **電子メールの類似性**: 最小レベルのような考慮すべき 2 つの電子メールの場合とは異なるのです。値は常に、またはドキュメントの類似性よりも大きい。既定では 90% です。
+  - **電子メールの類似性**: 2 通の電子メールについては、resemblance の最低限のレベルで類似したものと見なされます。値は常に等しいか、ドキュメントの類似性よりも大きい値です。既定値は 90% です。
     
-3. **テーマのパラメーター**では、テーマの解析中に処理に番号を追加する [**テーマの分析に番号を含める**] チェック ボックスを選択します。 
+3. [テーマの**パラメーター**] で、[**テーマの分析に数字を含める**] チェックボックスをオンにして、分析中のテーマの処理に番号を含めます。 
     
 4. **[保存]** をクリックします。 
     
@@ -47,11 +47,11 @@ ms.locfileid: "22531613"
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[ドキュメントの類似性を理解します。](understand-document-similarity-in-advanced-ediscovery.md)
+[ドキュメントの類似点について](understand-document-similarity-in-advanced-ediscovery.md)
   
 [分析オプションの設定](set-analyze-options-in-advanced-ediscovery.md)
   
-[設定は無視します。](set-ignore-text-in-advanced-ediscovery.md)
+[無視するテキストの設定](set-ignore-text-in-advanced-ediscovery.md)
   
-[分析結果を表示します。](view-analyze-results-in-advanced-ediscovery.md)
+[分析結果の表示](view-analyze-results-in-advanced-ediscovery.md)
 

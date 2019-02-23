@@ -6,148 +6,148 @@ manager: laurawi
 ms.date: 12/26/2018
 ms.audience: ITPro
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 290b02bf-a988-4fb9-88b2-34e408216ac8
-description: Office 365 クラウド アプリケーションのセキュリティは、プロバイダーのさまざまな web トラフィックのログを使用して動作します。Web トラフィックのログの詳細については、この資料を参照し、Office 365 のクラウド アプリケーションのセキュリティをデータ ソースをサポートします。
-ms.openlocfilehash: ab962e4a030d06c133ad9fc4aa62a60755793bc3
-ms.sourcegitcommit: 25f72d20e76463c2f0a075dfc0116f00c934bd77
+description: Office 365 Cloud App Security はさまざまなプロバイダーからの web トラフィックログを使用して動作します。この記事では、Office 365 Cloud App Security での web トラフィックログおよびサポートされているデータソースについて説明します。
+ms.openlocfilehash: 67246ded0e3d39c81b5b906f753b91298309d1d8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "27447055"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218107"
 ---
 # <a name="web-traffic-logs-and-data-sources-for-office-365-cloud-app-security"></a>Office 365 Cloud App Security の Web トラフィック ログとデータ ソース
   
-|評価 * *\>**|計画 * *\>**|配置 * *\>**|使用率。|
+|評価 * *\>**|計画 * *\>**|展開 * *\>**|使用率 * * * *|
 |:-----|:-----|:-----|:-----|
-|[評価を開始します。](office-365-cas-overview.md) <br/> |[計画の開始します。](get-ready-for-office-365-cas.md) <br/> |[展開を開始します。](turn-on-office-365-cas.md) <br/> |コースです!  <br/> [次の手順](#next-steps) <br/> |
+|[評価の開始](office-365-cas-overview.md) <br/> |[計画を開始する](get-ready-for-office-365-cas.md) <br/> |[展開を開始する](turn-on-office-365-cas.md) <br/> |ここでは、  <br/> [次の手順](#next-steps) <br/> |
   
-Office 365 のクラウド アプリケーションのセキュリティでは、web トラフィックのログ ファイルとデータ ソースのさまざまなを使用できます。ただし、web トラフィックのログ ファイルは、特定の情報を含める必要があります、Office 365 のクラウド アプリケーションのセキュリティ アプリケーションの検出のレポートとクラウドの探索のダッシュ ボードでは動作するように、特定の方法を書式設定します。Web トラフィックのログと Office 365 のクラウド アプリケーションのセキュリティを使用するデータ ソースのリファレンス ・ ガイドとしてこの資料を使用します。
+Office 365 Cloud App Security では、さまざまな web トラフィックログファイルとデータソースを使用できます。ただし、web トラフィックログファイルには特定の情報が含まれている必要があり、Office 365 cloud app Security App discovery reports および Cloud discovery dashboard で機能するように特定の方法でフォーマットする必要があります。この記事は、Office 365 Cloud App Security で使用する web トラフィックログおよびデータソースのリファレンスガイドとしてご利用ください。
   
 > [!NOTE]
-> セキュリティにアクセスするグローバル管理者、セキュリティ管理者、またはセキュリティのリーダーにする必要があります&amp;コンプライアンス センターと Office 365 のクラウド アプリケーションのセキュリティのポータルです。参照してください[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)です。 
+> セキュリティ&amp; /コンプライアンスセンターおよび Office 365 Cloud App security portal にアクセスするには、全体管理者、セキュリティ管理者、またはセキュリティ閲覧者である必要があります。「 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可」を](permissions-in-the-security-and-compliance-center.md)参照してください。 
   
-## <a name="web-traffic-log-requirements"></a>Web トラフィックのログの要件
+## <a name="web-traffic-log-requirements"></a>Web トラフィックログの要件
 
-組織のユーザーがどのアプリケーションを理解するために、web トラフィックのログに office 365 のクラウド アプリケーションのセキュリティはデータを使用しています。詳細についてを正しく把握する必要がありますユーザーの利用状況のログ ファイルに含まれています。
+Office 365 Cloud App Security では、web トラフィックログのデータを使用して、組織内のユーザーがどのアプリを使用しているかを理解するのに役立ちます。ログファイルの詳細については、「ユーザーのアクティビティ」を参照してください。
   
-次のセクションでは、Office 365 のクラウド アプリケーションのセキュリティと正常に動作する web トラフィック ログ用の追加の要件と必要な属性を一覧表示します。
+次のセクションでは、Office 365 Cloud App Security で正しく動作するように、必要な属性と web トラフィックログの追加要件を示します。
 
 ### <a name="attributes"></a>属性
 
-Office 365 クラウド アプリケーションのセキュリティを表示またはできません、web トラフィックのログに含まれていない属性を分析します。たとえば、Cisco ASA ファイアウォールの標準的なログ形式には、トランザクション、ユーザー名、またはターゲットの URL (ターゲット IP のみ) ごとのアップロードされたバイト数はありません。したがって、クラウドの探索データには、これらの属性は表示されていないし、クラウド アプリケーションの可視性は制限されます。Cisco ASA ファイアウォールについては、情報のレベルを 6 に設定する必要があります。 
+Office 365 Cloud App Security では、web トラフィックログに含まれていない属性を表示または分析することはできません。たとえば、Cisco ASA ファイアウォールの標準ログ形式には、トランザクションあたりにアップロードされたバイト数、ユーザー名、またはターゲット URL (ターゲット IP のみ) がありません。そのため、これらの属性はクラウド探索データには表示されず、クラウドアプリの表示が制限されます。Cisco ASA ファイアウォールの場合、情報レベルを6に設定する必要があります。 
 
-Web のトラフィックのログは、次の属性を含める必要があります。
+web トラフィックログには、次の属性が含まれている必要があります。
 
 - トランザクションの日付
 - 発信元 IP アドレス
-- 移動元のユーザーが (強く推奨)
+- 移行元ユーザー (高推奨)
 - 宛先 IP アドレス
-- リンク先の URL (お勧めします。Url では、IP アドレスよりもクラウド アプリケーションの検出の精度を上げるを提供)
-- データの総容量 (推奨されるデータの情報は非常に貴重な)。
-- 量がアップロードまたはダウンロードされたデータ (推奨されるクラウドに関する洞察アプリケーションの使用パターンが用意されています)。
-- (許可またはブロック) を実行するアクション
+- 宛先 URL (推奨、url を使用すると、IP アドレスよりもクラウドアプリを検出する場合の精度が高くなります)
+- データの合計量 (推奨、データ情報が非常に重要)
+- アップロードまたはダウンロードされたデータの量 (推奨、クラウドアプリの使用パターンに関する洞察)
+- 実行されたアクション (許可またはブロック)
 
 ### <a name="additional-requirements"></a>追加要件 
 
-この資料に記載されている属性を含む、他の web トラフィックのログは次の要件を満たす必要があります。
+この記事で前述した属性を含めることに加えて、web トラフィックログは次の要件を満たしている必要があります。
 
-- ログ ファイルのデータ ソースをサポートする必要があります。
-- ログ ファイルを使用する形式は、標準形式に一致しなければなりません。ファイルがアップロードされると、アプリケーションの検出はこれを確認します。
-- ログにする必要があります発生したイベントは 90 日前です。
-- ログ ファイルは、送信トラフィックについては、ネットワークの動作を分析することができますを含める必要があります。
+- ログファイルのデータソースがサポートされている必要があります。
+- ログファイルで使用される形式は、標準の形式と一致している必要があります。ファイルがアップロードされると、アプリの検出によってこれが確認されます。
+- ログのイベントは、90日以内に実行される必要があります。
+- ログファイルには、ネットワークアクティビティについて分析できる送信トラフィック情報が含まれている必要があります。
   
 ## <a name="data-attributes-for-different-vendors"></a>さまざまなベンダーのデータ属性
 
-次の表は、さまざまなベンダーの web トラフィックのログの情報をまとめたものです。**の最新情報については、ベンダーに確認してください**。
+次の表は、さまざまなベンダーからの web トラフィックログの情報をまとめたものです。最新情報については **、必ずベンダーに確認**してください。
 
 
-|                 データ ソース                  |    ターゲット アプリケーションの URL    |    対象アプリケーションの ip アドレス     |       ユーザー名       |      送信元 IP       |    トラフィックの合計     |    アップロードされたバイト数    |
+|                 データ ソース                  |    ターゲットアプリの URL    |    ターゲットアプリの IP     |       ユーザー名       |      送信元 IP       |    合計トラフィック     |    アップロードされたバイト数    |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
 |                  Barracuda                   | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |          ×          |          いいえ          |
-|                  ブルー コート                   | <strong>○</strong> |          ×          | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
-|                  チェックポイント                  |          いいえ          | <strong>○</strong> |          ×          | <strong>○</strong> |          ×          |          いいえ          |
+|                  青のコート                   | <strong>○</strong> |          ×          | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
+|                  Checkpoint                  |          いいえ          | <strong>○</strong> |          ×          | <strong>○</strong> |          ×          |          いいえ          |
 |              Cisco ASA (Syslog)              |          いいえ          | <strong>○</strong> |          ×          | <strong>○</strong> | <strong>○</strong> |          ×          |
-|           Cisco ASA 火力に           | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
+|           FirePOWER を使用する Cisco ASA           | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
 |                  Cisco FWSM                  |          いいえ          | <strong>○</strong> |          ×          | <strong>○</strong> | <strong>○</strong> |          ×          |
 |              Cisco Ironport WSA              | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
-|                 Cisco Meraki                 | <strong>○</strong> | <strong>○</strong> |          ×          | <strong>○</strong> |          ×          |          いいえ          |
-|           Clavister NGFW (Syslog)            | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
-|                SonicWall (以前は Dell)                | <strong>○</strong> | <strong>○</strong> |          ×          | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
-|            デジタル アート i フィルター             | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
-|                  Fortigate                   |          いいえ          | <strong>○</strong> |          ×          | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
-|                 ビャクシン SRX                  |          いいえ          | <strong>○</strong> |          ×          | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
-|                 ビャクシン SSG                  |          いいえ          | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
-|                  McAfee SWG                  | <strong>○</strong> |          ×          |          いいえ          | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
+|                 Cisco のおアキ                 | <strong>○</strong> | <strong>○</strong> |          ×          | <strong>○</strong> |          ×          |          いいえ          |
+|           clavister NGFW (Syslog)            | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
+|                SonicWall (旧称デル)                | <strong>○</strong> | <strong>○</strong> |          ×          | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
+|            デジタルアート i フィルター             | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
+|                  fortigate                   |          いいえ          | <strong>○</strong> |          ×          | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
+|                 Juniper srx                  |          いいえ          | <strong>○</strong> |          ×          | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
+|                 Juniper ssg                  |          いいえ          | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
+|                  McAfee swg                  | <strong>○</strong> |          ×          |          いいえ          | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
 |                    MS TMG                    | <strong>○</strong> |          ×          | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
-|              パロアルト ネットワーク              |          いいえ          | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
+|              Palo Alto Networks              |          いいえ          | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
 |                    Sophos                    | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |          ×          |
-|                Squid (共通)                | <strong>○</strong> |          ×          | <strong>○</strong> | <strong>○</strong> |          ×          | <strong>○</strong> |
+|                Squid (Common)                | <strong>○</strong> |          ×          | <strong>○</strong> | <strong>○</strong> |          ×          | <strong>○</strong> |
 |                Squid (ネイティブ)                | <strong>○</strong> |          ×          | <strong>○</strong> | <strong>○</strong> |          ×          | <strong>○</strong> |
-| Websense の調査の詳細レポート (CSV) | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
-|    Websense ・ インターネット ・ アクティビティ ・ ログ (CEF)    | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
+| websense-調査詳細レポート (CSV) | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
+|    websense-インターネットアクティビティログ (cef)    | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
 |                   Zscaler                    | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> | <strong>○</strong> |
    
 ## <a name="supported-vendor-firewalls-and-proxies"></a>サポートされているベンダーのファイアウォールとプロキシ
 
-Office 365 のクラウド アプリケーションのセキュリティには、次のファイアウォールやプロキシがサポートしています。
+Office 365 Cloud App Security では、次のファイアウォールとプロキシがサポートされています。
   
-- Barracuda の Web アプリケーション ファイアウォール (W3C)  
-- 青コートのプロキシ アクセスのログ (W3C) のストレージ ・ グループ
-- チェック ポイント
-- Cisco ASA ファイアウォール (情報のレベルを 6 に設定するのにしてください)
-- Cisco ASA 火力に   
+- Barracuda-Web App Firewall (W3C)  
+- ブルーコートプロキシ SG-アクセスログ (W3C)
+- チェックポイント
+- Cisco ASA ファイアウォール (情報レベルを6に設定することを確認してください)
+- FirePOWER を使用する Cisco ASA   
 - Cisco IronPort WSA
-- Cisco ScanSafe
-- Cisco Merkai の Url のログ
-- Clavister NGFW (Syslog)
-- デジタル アート i フィルター
-- Fortinet Fortigate
-- iboss クラウド ゲートウェイのセキュリティで保護されました。
-- ビャクシン SRX
-- ビャクシン SSG
-- McAfee のセキュリティで保護された Web ゲートウェイ
-- Microsoft Forefront 脅威管理ゲートウェイ (W3C)
-- パロアルト シリーズ ファイアウォール
-- Sonicwall (以前は Dell)   
+- Cisco scansafe
+- Cisco Merkai-url ログ
+- clavister NGFW (Syslog)
+- デジタルアート i フィルター
+- fortinet fortinet
+- iboss のセキュリティで保護されたクラウドゲートウェイ
+- Juniper srx
+- Juniper ssg
+- McAfee Secure Web Gateway
+- Microsoft Forefront Threat Management Gateway (W3C)
+- Palo Alto series ファイアウォール
+- Sonicwall (旧称デル)   
 - Sophos SG
-- Sophos XG
+- Sophos xg
 - Sophos Cyberoam
-- Squid (共通)
+- Squid (Common)
 - Squid (ネイティブ)
-- Websense の Web セキュリティ ソリューションの調査の詳細レポート (CSV)
-- Websense - Web セキュリティ ・ ソリューション ・ インターネット ・ アクティビティ ・ ログ (CEF)
+- websense-Web セキュリティソリューション-調査の詳細レポート (CSV)
+- websense-Web セキュリティソリューション-インターネットアクティビティログ (cef)
 - Zscaler
     
 > [!NOTE]
-> データ ソースを使用するには含まれていない場合は、ここでは、アプリケーションの検出に追加することを要求できます。レポートを作成する場合、[**その他**の**データ ソース**です。アップロードしようとしているデータ ソースの名前を入力します。ログを確認し、そのログの種類に対するサポートを追加して確認することはします。または、[カスタム パーサーを定義](https://docs.microsoft.com/cloud-app-security/custom-log-parser)の形式に一致することができます。 
+> 使用するデータソースがここに含まれていない場合は、アプリの検出に追加するように要求できます。これを行うには、レポートを作成するときに、**データソース**に [**その他**] を選択します。次に、アップロードしようとしているデータソースの名前を入力します。ログを確認し、そのログの種類に対するサポートを追加するかどうかを確認します。または、形式に一致する[カスタムパーサーを定義](https://docs.microsoft.com/cloud-app-security/custom-log-parser)することもできます。 
   
-## <a name="troubleshoot-errors-when-log-files-are-uploaded"></a>ログ ファイルをアップロードするとエラーをトラブルシューティングします。
+## <a name="troubleshoot-errors-when-log-files-are-uploaded"></a>ログファイルがアップロードされるときのエラーのトラブルシューティング
 
-Web トラフィックのログ ファイルをアップロードした後、エラーが発生したかどうかの管理ログを確認してください。エラーがある場合は、これらのエラーを解決するのには次の表に情報を使用します。
+web トラフィックログファイルをアップロードしたら、ガバナンスログを調べて、エラーが発生していないかどうかを確認します。エラーが発生した場合は、次の表の情報を使用してエラーを解決します。
   
 |**エラー**|**説明**|**解決法**|
 |:-----|:-----|:-----|
-|サポートされていないファイルの種類  <br/> |アップロードされたファイルは、ログ ファイルが有効ではありません。たとえば、イメージのファイルです。  <br/> |テキスト、郵便番号、または、ファイアウォールまたはプロキシから直接エクスポートされた gzip ファイルをアップロードします。  <br/> |
-|内部エラー  <br/> |内部リソース エラーが検出されました。  <br/> |タスクを再実行するのには**再試行**をクリックします。  <br/> |
-|ログの形式が一致しません  <br/> |アップロードしたログ形式では、このデータ ソースに必要なログの形式が一致しません。  <br/> |
-ログが壊れていないことを確認します。比較し、[アップロード] ページで、サンプルの形式のログ ファイルの形式に一致します。 |
-|トランザクションは、90 日以上経過  <br/> |すべてのトランザクションは、90 日以上経過で無視されているためです。  <br/> |最近のイベントで新しいログをエクスポートし、再度アップロードします。  <br/> |
-|クラウド アプリケーションのカタログには、トランザクション  <br/> |ログに、認識されたクラウド アプリケーションにトランザクションが見つかりません。  <br/> |送信トラフィックの情報がログに含まれていることを確認します。  <br/> |
-|サポートされていないログの種類  <br/> |選択すると**データ ソースその他の (サポートされていない) =**、ログを解析できません。代わりに、[マイクロソフトのクラウド アプリケーションのセキュリティ](https://aka.ms/whatiscas)技術チームに確認のために送られます。<br/> |[マイクロソフト クラウド アプリケーションのセキュリティ](https://aka.ms/whatiscas)技術チームは、データ ソースごとに専用のパーサーを作成します。最も人気のあるデータ ソースが既にサポートされています。サポートされていないデータ ソースがアップロードされると、確認および、潜在的な新しいデータ ソースのパーサーの一覧に追加します。<br/> 新しいパーサーをフィーチャーに追加すると、通知がマイクロソフトのクラウド アプリケーションのセキュリティのリリース ノートに含まれます。  <br/> |
+|サポートされていないファイルの種類  <br/> |アップロードされたファイルは有効なログファイルではありません。たとえば、イメージファイルです。  <br/> |ファイアウォールまたはプロキシから直接エクスポートされたテキスト、zip、または gzip ファイルをアップロードします。  <br/> |
+|内部エラー  <br/> |内部リソースエラーが検出されました。  <br/> |[**再試行**] をクリックして、タスクを再度実行します。  <br/> |
+|ログ形式が一致しません  <br/> |アップロードしたログ形式が、このデータソースの予想されるログ形式と一致しません。  <br/> |
+ログが破損していないことを確認します。ログファイルの形式と、[アップロード] ページに表示されているサンプルの形式を比較します。 |
+|トランザクションは90日を超えています。  <br/> |すべてのトランザクションは90日を超えているため、無視されます。  <br/> |最新のイベントを使用して新しいログをエクスポートし、再アップロードします。  <br/> |
+|クラウドアプリをカタログするトランザクションがありません  <br/> |認識されたクラウドアプリへのトランザクションがログにありません。  <br/> |ログに送信トラフィック情報が含まれていることを確認します。  <br/> |
+|サポートされていないログの種類  <br/> |[データソース] を選択した場合 (サポートされてい**ない)**、ログは解析されません。その代わりに、レビューのために[Microsoft Cloud App Security](https://aka.ms/whatiscas) technical team に送信されます。<br/> |[Microsoft Cloud App Security](https://aka.ms/whatiscas) technical team は、データソースごとに専用パーサーを構築します。最もよく使用されるデータソースは、既にサポートされています。サポートされていないデータソースがアップロードされると、それが確認され、潜在的な新しいデータソースパーサーのリストに追加されます。<br/> 機能に新しいパーサーが追加されると、Microsoft Cloud App Security リリースノートに通知が追加されます。  <br/> |
    
 ## <a name="next-steps"></a>次の手順
 
-- [確認し、アラート アクションを実行](review-office-365-cas-alerts.md)
+- [通知を確認して処理を実行する](review-office-365-cas-alerts.md)
     
-- [アプリケーション検出レポートを作成します。](create-app-discovery-reports-in-ocas.md)
+- [アプリ検出レポートを作成する](create-app-discovery-reports-in-ocas.md)
     
-- [アプリケーションの検出結果を確認します。](review-app-discovery-findings-in-ocas.md)
+- [アプリ検出の調査結果を確認する](review-app-discovery-findings-in-ocas.md)
     
-- [Office 365 のクラウド アプリケーションのセキュリティの使用率のアクティビティを確認します。](utilization-activities-for-ocas.md)
+- [Office 365 Cloud App Security の使用率のアクティビティを確認する](utilization-activities-for-ocas.md)
     
 

@@ -1,7 +1,7 @@
 ---
 title: 接続フィルター ポリシーを構成する
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 10/24/2018
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
-description: 信頼できる人から送信された電子メールがブロックされていないことを確認するには、信頼できる IP アドレスの安全な送信者リストとも呼ばれ、許可リストを作成するのには、接続フィルター ポリシーを使用することができます。受信拒否リストを作成することもできます。
-ms.openlocfilehash: 2f8ec3d01de4358d7394c68d0efae9222db08282
-ms.sourcegitcommit: a07b91723bae9ecee2cb092bfbc5b208b30b11a1
+ms.collection:
+- M365-security-compliance
+description: 信頼できるユーザーからの電子メールがブロックされないようにするには、接続フィルターポリシーを使用して、信頼する IP アドレスの許可リスト (安全な差出人のリストとも呼ばれます) を作成します。受信拒否リストを作成することもできます。
+ms.openlocfilehash: d7c99f8fb6b9b05efb800804927ccb26f7dd9f40
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "25793562"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216907"
 ---
 # <a name="configure-the-connection-filter-policy"></a>接続フィルター ポリシーを構成する
  
@@ -33,15 +35,15 @@ ms.locfileid: "25793562"
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 <a name="sectionSection0"> </a>
 
-- 完了までの推定時間: 15 分
+- 予想所要時間: 15 分
     
-- このプロシージャまたはプロシージャを実行する前にアクセス許可を割り当てる必要があります。必要なアクセス許可については、 [Exchange のオンラインでの機能のアクセス許可](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)トピックの「スパム対策」エントリを参照してください。 
+- この手順を実行する前に、アクセス許可を割り当てる必要があります。必要なアクセス許可を確認するには、「 [Exchange Online の機能のアクセス許可](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)」トピックの「スパム対策」のエントリを参照してください。 
     
-- 許可またはブロックを行うメッセージの送信者の IP アドレスを取得するには、メッセージのインターネット ヘッダーを確認できます。[スパム メッセージのヘッダー](anti-spam-message-headers.md)に記載されているように CIP ヘッダーを確認します。さまざまな電子メール クライアントでメッセージ ヘッダーを表示する方法の詳細については、[メッセージ ヘッダーの分析](https://go.microsoft.com/fwlink/p/?LinkId=306583)を参照してください。 
+- 許可またはブロックするメッセージの送信者の IP アドレスを取得するには、メッセージのインターネットヘッダーを確認します。「[スパム対策メッセージヘッダー](anti-spam-message-headers.md)」で説明されているように、CIP ヘッダーを検索します。さまざまな電子メールクライアントでメッセージヘッダーを表示する方法については、「[メッセージヘッダーアナライザー](https://go.microsoft.com/fwlink/p/?LinkId=306583)」を参照してください。 
     
 - IP ブロック一覧の IP アドレスから送信された電子メール メッセージは拒否され、スパムとしてマークされず、追加のフィルター処理は行われません。
     
-- リモート PowerShell を使用しても、次の接続フィルターの手順を実行できます。設定と、接続フィルター ポリシーの設定を編集するのには[一連の HostedConnectionFilterPolicy](http://technet.microsoft.com/library/ccb5731b-3fca-4d69-a91f-5049ea963fac.aspx)を確認するのには、 [Get HostedConnectionFilterPolicy](http://technet.microsoft.com/library/bd751db2-3f26-495b-8e5a-4fcab53b17fd.aspx)コマンドレットを使用します。Exchange のオンライン保護への接続に Windows PowerShell を使用する方法については、 [Exchange のオンライン保護 PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=627290)を参照してください。Exchange Online に接続する Windows PowerShell を使用する方法については、 [Exchange オンライン PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=396554)を参照してください。
+- 次の接続フィルター手順は、リモート PowerShell を使用して実行することもできます。設定を確認するには、 [remove-hostedconnectionfilterpolicy](http://technet.microsoft.com/library/bd751db2-3f26-495b-8e5a-4fcab53b17fd.aspx)コマンドレットを使用し、接続フィルターポリシーの設定を編集するには[remove-hostedconnectionfilterpolicy](http://technet.microsoft.com/library/ccb5731b-3fca-4d69-a91f-5049ea963fac.aspx)を使用します。Windows PowerShell を使用して exchange online protection に接続する方法については、「 [exchange online protection の PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=627290)」を参照してください。Windows PowerShell を使用して exchange online に接続する方法については、「 [exchange online powershell への接続](https://go.microsoft.com/fwlink/p/?linkid=396554)」を参照してください。
     
 ## <a name="use-the-eac-to-edit-the-default-connection-filter-policy"></a>EAC を使用して既定の接続フィルター ポリシーを編集する
 <a name="sectionSection1"> </a>
@@ -55,13 +57,13 @@ IP 許可リストまたは IP 禁止リストを作成するには、Exchange �
     この一覧を作成するには、![[追加] アイコン](media/ITPro-EAC-AddIcon.gif) をクリックします。後続のダイアログ ボックスでは、IP アドレスまたはアドレス範囲を指定して **[OK]** をクリックします。さらにアドレスを追加するには、このプロセスを繰り返します。(IP アドレスは、追加後に編集または削除できます。)
     
     > [!NOTE]
-    >  両方の一覧に IP アドレスを追加すると、その IP アドレスから送信された電子メールは許可されます。 
+    >  両方のリストに ip アドレスを追加すると、その ip アドレスから送信された電子メールが許可されます。 
 
-    Nnn には、0 から 255 までの数値形式 nnn.nnn.nnn.nnn の IPV4 の IP アドレスを指定します。Rr が 24 から 32 までの数字を形式 nnn.nnn.nnn.nnn/rr でクラスレス ドメイン間ルーティング (CIDR) の範囲を指定することもできます。24 ~ 32 の範囲外の範囲を指定するには、 [IP 許可を構成するときの追加の考慮事項の一覧](configure-the-connection-filter-policy.md#bkmk_addtionalconsiderationswhenconfiguringipallowlists)を参照してください。 
+    形式を nnn. nnn にする場合は、IPV4 IP アドレスを指定します。 nnn には0から255の数値を指定します。また、rr が 24 ~ 32 の数字の形式の場合は、クラスレスドメイン間ルーティング (CIDR) 範囲を指定することもできます。24 ~ 32 の範囲外の範囲を指定するには、 [IP 許可一覧を構成するときの追加の考慮事項](configure-the-connection-filter-policy.md#bkmk_addtionalconsiderationswhenconfiguringipallowlists)を参照してください。 
 
-    1273 のエントリ、エントリが 1 つの IP アドレスまたは、CIDR の IP アドレス範囲/24 から/32 のいずれかを最大を指定できます。> TLS で暗号化されたメッセージを送信する場合、IPv6 アドレスおよびアドレス範囲はサポートされません。 
+    最大1273エントリを指定できます。これは、1つの ip アドレス、または、/24 から/32 の範囲の ip アドレスの CIDR 範囲のいずれかです。> TLS で暗号化されたメッセージを送信している場合、IPv6 アドレスとアドレス範囲はサポートされていません。 
   
-3. しないようにするのには、[**セーフ リストを有効にする**] チェック ボックスを選択して必要に応じて、特定の既知の送信者からのメールがありません。どう。マイクロソフトでは、差出人セーフ リストのサード パーティのソースをサブスクライブします。このセーフ リストを使用して、これらの信頼された送信者はいない誤ってスパムとしてマークされたことを意味します。誤検知 (スパムとして分類されている適切なメール) の数を削減する必要がありますので、このオプションを選択することをお勧めします。 表示されます。 
+3. 必要に応じて、[**セーフリストを有効**にする] チェックボックスをオンにして、特定の既知の送信者からの電子メールが失われないようにします。どう。Microsoft は、信頼できる送信者のサードパーティソースにサブスクライブします。このセーフリストを使用することは、これらの信頼できる差出人が誤ってスパムとしてマークされていることを意味します。受信する誤検知 (良好なメールに分類されているメール) の数を減らす必要があるため、このオプションを選択することをお勧めします。 
     
 4. **[保存]** をクリックします。既定のポリシー設定の概要が右側のウィンドウに表示されます。
     
@@ -72,9 +74,9 @@ IP 許可一覧を構成する場合に考慮するまたは認識すべきそ�
   
 ### <a name="specifying-a-cidr-range-that-falls-outside-of-the-recommended-range"></a>推奨範囲外の CIDR 範囲の指定
 
-CIDR IP のアドレス/1 から/23 の範囲を指定するには、**スパムのフィルタ リングを使用しない**(つまり、この IP アドレス範囲から受信したすべてのメッセージがスパム信頼レベル (SCL) を設定している IP アドレスの範囲で動作するメールの流れのルールを作成する必要があります。「スパム」に設定) し、サービスが追加のフィルター処理は実行されません)。ただしに表示されるこれらの IP アドレスの一覧が表示マイクロソフトの独自のブロックのいずれか、または、サード パーティのブロックのいずれかの一覧が表示、これらのメッセージはブロックされます。したがって強くお勧め/24 から 32 に IP アドレスの範囲を使用することです。 
+/1 から/23 の CIDR ip アドレス範囲を指定するには、スパムの信頼レベル (SCL) を設定するメールフロールールを作成する必要があります。これは、スパムの**フィルター処理をバイパス**する (つまり、この ip アドレス範囲内で受信するすべてのメッセージが[迷惑メールではない] に設定し、サービスによって追加のフィルター処理は実行されません)。ただし、これらの IP アドレスのいずれかが Microsoft の独自のブロックリストまたはサードパーティのブロックリストのいずれかに表示される場合でも、これらのメッセージはブロックされます。そのため、/24 ~ 32 IP アドレス範囲を使用することを強くお勧めします。 
   
-このメール フロー ルールを作成するには、次の手順を実行します。
+このメールフロールールを作成するには、次の手順を実行します。
   
 1. EAC で、 **[メール フロー]** \> **[ルール]** に移動します。
     
@@ -84,15 +86,15 @@ CIDR IP のアドレス/1 から/23 の範囲を指定するには、**スパム
     
 4. **[このルールを適用する条件]** で、 **[差出人]** を選択してから、 **[IP アドレスがこれらの範囲内か完全に一致している]** を選択します。
     
-5. **IP アドレスを指定**する IP アドレスの範囲を指定、[**追加**] をクリックして![アイコンの追加](media/ITPro-EAC-AddIcon.gif)、し、[ **ok**] をクリックします。
+5. [ **ip アドレスの指定**] で、ip アドレスの範囲を**** ![指定し、](media/ITPro-EAC-AddIcon.gif)[追加] アイコンをクリックして、[ **ok]** をクリックします。
     
 6. **[実行する処理]** ボックスで、 **[メッセージのプロパティを変更する]** の次に **[SCL (Spam Confidence Level) の設定]** を選択することによって、処理を設定します。 **[SCL の指定]** ボックスで、 **[スパム対策フィルターをバイパスする]** を選択してから、 **[ok]** をクリックします。
     
-7. 希望する場合は、監査規則、ルールをテスト、特定の期間中にルールをアクティブにするための選択および他の選択を行うことができます。それを実施する前に一定のルールをテストすることをお勧めします。[メール フローの手順のルールでは、Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures)には、これらの選択の詳細については含まれています。 
+7. 必要に応じて、ルールを監査したり、ルールをテストしたり、特定の期間中にルールをアクティブ化したり、その他の選択を行ったりすることができます。ルールを適用する前に、期間に対してルールをテストすることをお勧めします。[Exchange Server のメールフロールールの手順には](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures)、これらの選択についての詳細が含まれています。 
     
-8. ルールを保存**保存**をクリックします。ルールは、ルールの一覧に表示されます。 
+8. [**保存**] をクリックしてルールを保存します。ルールがルールの一覧に表示されます。 
     
-作成して、ルールを適用すると、サービスは、スパムの IP アドレスの範囲を指定したフィルターをバイパスします。
+ルールを作成して適用すると、サービスは指定した IP アドレス範囲のスパムフィルター処理をバイパスします。
   
 ### <a name="scoping-an-ip-allow-list-exception-for-a-specific-domain"></a>特定のドメインに関する IP 許可一覧例外の範囲指定
 
@@ -110,17 +112,17 @@ CIDR IP のアドレス/1 から/23 の範囲を指定するには、**スパム
     
 4. **[このルールを適用する条件]** で、 **[差出人]** を選択してから、 **[IP アドレスがこれらの範囲内か完全に一致している]** を選択します。
     
-5. IP アドレスまたは IP 許可一覧に入力した IP アドレスの範囲を指定、[ **IP アドレスを指定**] ボックスで、[**追加**] をクリックして![アイコンの追加](media/ITPro-EAC-AddIcon.gif)、し、[ **ok**] をクリックします。
+5. [ip**アドレスの指定**] ボックスで、ip 許可一覧**** ![に入力した ip アドレスまたは ip アドレスの範囲を指定し](media/ITPro-EAC-AddIcon.gif)、[追加] アイコンをクリックし、[ **ok]** をクリックします。
     
 6. **[実行する処理]** で、 **[メッセージのプロパティを変更する]** の次に **[SCL (Spam Confidence Level) の設定]** を選択することによって、処理を設定します。 **[SCL の指定]** ボックスで、 **[0]** を選択してから、 **[ok]** をクリックします。
     
 7. **[例外の追加]** をクリックして、 **[ただし次の場合を除く]** で、 **[差出人]** を選択し、 **[ドメイン名]** を選択します。 
     
-8. **ドメインの指定**] ボックスで、 **contosob.com**など、スパムのフィルタ リングをバイパスするドメインを入力します。[**追加**] をクリックして![アイコンの追加](media/ITPro-EAC-AddIcon.gif)語句のリストに移動します。例外として追加のドメインの追加が完了したら、[ **ok** ] をクリックする場合は、この手順を繰り返します。 
+8. [**ドメインの指定**] ボックスに、スパムフィルタリングをバイパスするドメイン ( **contosob.com**など) を入力します。[追加] アイコン](media/ITPro-EAC-AddIcon.gif)をクリックして、それを語句の一覧に移動します。 **** ![他のドメインを例外として追加する場合は、この手順を繰り返し、完了したら [ **ok** ] をクリックします。 
     
-9. 希望する場合は、監査規則、ルールをテスト、特定の期間中にルールをアクティブにするための選択および他の選択を行うことができます。それを実施する前に一定のルールをテストすることをお勧めします。[メール フローの手順のルールでは、Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures)には、これらの選択の詳細については含まれています。 
+9. 必要に応じて、ルールを監査したり、ルールをテストしたり、特定の期間中にルールをアクティブ化したり、その他の選択を行ったりすることができます。ルールを適用する前に、期間に対してルールをテストすることをお勧めします。[Exchange Server のメールフロールールの手順には](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures)、これらの選択についての詳細が含まれています。 
     
-10. ルールを保存**保存**をクリックします。ルールは、ルールの一覧に表示されます。 
+10. [**保存**] をクリックしてルールを保存します。ルールがルールの一覧に表示されます。 
     
 ルールを作成して適用すると、指定した IP アドレスまたは IP アドレス範囲に対するスパム フィルター処理が入力したドメイン例外の場合にのみ省略されます。
   

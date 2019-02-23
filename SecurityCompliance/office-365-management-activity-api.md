@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-analytics
 description: Office 365 Management Activity API についての簡単な概要。
-ms.openlocfilehash: ca5517d3049830cd7be912b2e2e47a34a866aca0
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: df90eba0d019a862d4699f3e2aa0a04e88b0c371
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090560"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214577"
 ---
 # <a name="office-365-management-activity-api"></a>Office 365 マネージメント アクティビティ API
 Microsoft では、管理者が Office 365 テナントに関する集約されたトランザクション情報を取得できるようにするレポートサービスを提供しています。[Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)は、業界標準の RESTful 設計および OAuth v2 を使用して認証を行います。これにより、データを取得して取り込むをビジュアル化ツールやアプリケーションに簡単に取り込むことができます。API は、Office 365 のユーザー、管理者、操作、およびセキュリティアクティビティに関する情報を含むデータフィードを提供します。このデータは、規制目的のため、またはオンプレミスのインフラストラクチャやその他のソースから調達されたログデータと組み合わせて、企業全体にわたる運用、セキュリティ、およびコンプライアンスの監視ソリューションを構築するために保持できます。

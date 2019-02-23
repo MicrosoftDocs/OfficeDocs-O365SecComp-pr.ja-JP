@@ -6,60 +6,60 @@ manager: laurawi
 ms.date: 1/28/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 15fa4545-28b4-4dd4-bf85-88e0926bd5fc
-description: 'Office 365 のクラウド アプリケーションのセキュリティ、経由での検索について調査中の活動とアカウントで Office 365 環境内で起こってを確認できます。 '
-ms.openlocfilehash: e463323cf28738e1d54fcdb65ed0d15290c79994
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: 'office 365 Cloud App Security では、アクティビティとアカウントを調べて調査することで、office 365 環境で起こっていることを確認できます。 '
+ms.openlocfilehash: 0cc3860d953b40b0b0c247af6fb2b157d1abb235
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603658"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218967"
 ---
 # <a name="investigate-an-activity-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security のアクティビティの調査
   
-|評価 * *\>**|計画 * *\>**|配置 * *\>**|使用率。|
+|評価 * *\>**|計画 * *\>**|展開 * *\>**|使用率 * * * *|
 |:-----|:-----|:-----|:-----|
-|[評価を開始します。](office-365-cas-overview.md) <br/> |[計画の開始します。](get-ready-for-office-365-cas.md) <br/> |[展開を開始します。](turn-on-office-365-cas.md) <br/> |コースです!  <br/> [次の手順](#next-steps) <br/> |
+|[評価の開始](office-365-cas-overview.md) <br/> |[計画を開始する](get-ready-for-office-365-cas.md) <br/> |[展開を開始する](turn-on-office-365-cas.md) <br/> |ここでは、  <br/> [次の手順](#next-steps) <br/> |
    
-Office 365 クラウド アプリケーションのセキュリティは、 [Office 365 は監査ログ](detailed-properties-in-the-office-365-audit-log.md)で動作します。グローバル管理者またはセキュリティ管理者は、Office 365 のクラウド アプリケーションのセキュリティとに、組織が Office 365 を使用する方法の潜在的な問題が解決されないアクティビティ ・ ログ ・ ページを使用できます。
+office 365 Cloud App Security は[office 365 監査ログ](detailed-properties-in-the-office-365-audit-log.md)と連携して動作します。office 365 Cloud App Security では、全体管理者またはセキュリティ管理者として、アクティビティログページを使用して、組織が Office 365 を使用する方法に関する潜在的な問題を確認できます。
   
-## <a name="how-to-get-to-the-activity-log-page"></a>アクティビティ ログのページを表示する方法
+## <a name="how-to-get-to-the-activity-log-page"></a>アクティビティログページにアクセスする方法
 
-1. クラウド アプリケーションのセキュリティ関連ポータルに移動 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) し、サインインします。
+1. Cloud App Security ポータル ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) に移動し、サインインします。
   
-2. **調査**を選択して、画面の上部にナビゲーション ・ バーで\>**のアクティビティのログ**です。<br/>![O365 CA ポータルでは、調査を選択します。](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
+2. 画面上部のナビゲーションバーで、[**アクティビティログ**の**調査** \> ] を選択します。<br/>![O365 CAS ポータルで、[調査] を選択します。](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
-## <a name="review-and-investigate-activities"></a>確認し、活動の調査
+## <a name="review-and-investigate-activities"></a>アクティビティの確認と調査
 
-アクティビティ ログ] ページでは、Office 365 を使用して、組織内で行われるさまざまな活動の一覧を表示できます。活動または特定のユーザーの特定の種類に焦点を画面の上部にフィルターを使用できます。たとえば、組織の Office 365 管理者アカウントのパスワードの変更に関する情報は次の例のようにします。
+[アクティビティログ] ページには、Office 365 を使用して組織内で実行されているさまざまなアクティビティの一覧が表示されます。画面の上部でフィルターを使用して、特定の種類のアクティビティまたは特定のユーザーに焦点を当てることができます。たとえば、次の図は、組織の Office 365 管理者アカウントのパスワード変更に関する情報を示しています。
   
-![調査の選択では、Office 365 のクラウド アプリケーションのセキュリティ、\>のアクティビティのログです。](media/5d54600c-59cd-4f33-b4f0-29b75c37baae.png)
+![Office 365 Cloud App Security で、[アクティビティ\>ログの調査] を選択します。](media/5d54600c-59cd-4f33-b4f0-29b75c37baae.png)
   
-アクティビティ ・ ログ内の各項目を見ると、他の関連する活動項目を検索するのには 2 つの楕円をクリックできます。たとえば、同じ種類、同じ IP アドレスとは、同じ国/地域からの他のアクティビティを表示できます。
+アクティビティログの各アイテムを確認するときに、省略記号をクリックして、関連するその他のアクティビティを検索できます。たとえば、同じ IP アドレスまたは同じ国/地域の同じ種類の他のアクティビティを表示できます。
   
-すぎる、アクティビティの他の多くの種類に関する情報を表示できます。たとえば、ここではアクティビティをアクティビティ ・ ログを表示することができます。
+その他のさまざまなアクティビティについての情報を表示することもできます。たとえば、アクティビティログに表示できるアクティビティのいくつかを次に示します。
   
-- メンバーを追加またはグループから削除
+- グループに追加された、またはグループから削除されたメンバー
     
-- ユーザー ライセンスの変更
+- ユーザーライセンスの変更
     
-- ファイルまたはフォルダーの内部または外部の共有
+- 内部または外部で共有しているファイルまたはフォルダー
     
-- 作成または削除されたサイトまたはサイト コレクション
+- 作成または削除されたサイトまたはサイトコレクション
     
-- 電子メールの転送ルール
+- メール転送ルール
     
-途中と、Office 365 の組織内のユーザーの使用方法を習得するアクティビティのログ ページを発行する使用が発生する可能性があります。
+アクティビティログページを使用すると、組織内のユーザーが Office 365 をどのように使用しているか、また、どのような問題が発生しているかについて理解できます。
   
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [Office 365 Cloud App Security の警告の確認と処理](review-office-365-cas-alerts.md)
     
-- [Office 365 のクラウド アプリケーションのセキュリティの使用率のアクティビティ](utilization-activities-for-ocas.md)を確認します。
+- [Office 365 Cloud App Security の使用率のアクティビティを](utilization-activities-for-ocas.md)確認する
     
 

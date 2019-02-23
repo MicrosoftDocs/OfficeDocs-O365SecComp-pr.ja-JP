@@ -5,51 +5,51 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
-description: 管理者は、メールを暗号化し、Office 365 メッセージの暗号化 (ホーム) を使用してメッセージを復号化のフロー ルール (トランスポート ルールでとも呼ばれます) を作成するに学習できます。
-ms.openlocfilehash: db421c808f1eed69ddbece2b333f9edd61712235
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: 管理者は、Office 365 Message Encryption (OME) を使用してメッセージを暗号化および復号化するメールフロールール (トランスポートルールとも呼ばれます) を作成する方法を学習できます。
+ms.openlocfilehash: 38838bea22eda1b3bc92fa33902ed38f4cd052e5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29696281"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218557"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Office 365 でメールを暗号化するためにメール フロー ルールを定義する
 
-Office 365 グローバル管理者は、ルールを作成できますメール フロー (トランスポートの規則とも呼ばれます) は、電子メール メッセージの送受信を保護するためです。送信電子メール メッセージを暗号化および暗号化されたメッセージを組織内から、または組織から送信される、暗号化されたメッセージへの返信から暗号化を削除するルールを設定することができます。これらのルールを作成するのには、Exchange 管理センター (EAC) または Exchange のオンライン PowerShell を使用できます。だけでなく全体の暗号化の規則を有効にするか、エンド ・ ユーザーの個々 のメッセージの暗号化オプションを無効にすることもできます。
+Office 365 全体管理者は、メールフロールール (トランスポートルールとも呼ばれます) を作成して、送受信する電子メールメッセージを保護することができます。送信電子メールメッセージを暗号化したり、組織内から送信される暗号化されたメッセージから暗号化を削除したり、組織から送信された暗号化メッセージへの返信を削除したりするためのルールを設定できます。これらのルールを作成するには、exchange 管理センター (EAC) または exchange Online PowerShell を使用できます。暗号化ルール全体に加えて、エンドユーザーの個々のメッセージ暗号化オプションを有効または無効にすることもできます。
 
 ||
 |:-----|
-|この資料は、Office 365 のメッセージの暗号化についての記事の大規模な一連の一部です。この資料は、管理者および ITPros。だけを行う場合、暗号化されたメッセージを送受信する情報は[Office 365 メッセージの暗号化 (ホーム)](ome.md)内のアーティクルの一覧を参照してくださいし、お客様のニーズに最も適した記事を検索します。 |
+|この記事は、Office 365 メッセージの暗号化についてのより大きな一連の記事の一部です。この記事は、管理者および it 担当者を対象としています。暗号化されたメッセージの送信または受信に関する情報をお探しの場合は、「 [Office 365 message Encryption (OME)](ome.md) 」の記事の一覧を参照し、ニーズに最も適した記事を見つけてください。 |
 ||
 
-最近に移行する AD RMS から Azure 情報の保護、新しい環境で作業を続けられるようにするのには、既存のメール フロー ルールを確認する必要があります。さらに、新しい Office 365 メッセージの暗号化 (ホーム) 機能を使用するを通じて利用 Azure 情報保護する場合は、既存のメール フロー ルールを更新する必要があります。それ以外の場合、ユーザーは引き続き、シームレスな新しいホームの経験ではなく HTML 添付ファイルの以前の形式を使用する暗号化されたメールを受信します。ホームをまだ設定していない場合は、情報の[新しい Office 365 のメッセージの暗号化機能の設定](set-up-new-message-encryption-capabilities.md)を参照してください。
+AD RMS から Azure Information Protection に最近移行した場合は、既存のメールフロールールを確認して、新しい環境で引き続き動作するようにする必要があります。さらに、Azure Information Protection を使用して利用できる新しい Office 365 Message Encryption (OME) 機能を利用する場合は、既存のメールフロールールを更新する必要があります。そうしないと、ユーザーは、新しいシームレスな OME の操作ではなく、前の HTML 添付ファイル形式を使用する暗号化メールを引き続き受信できます。まだ OME をセットアップしていない場合は、「 [Office の新しい365メッセージ暗号化機能を設定](set-up-new-message-encryption-capabilities.md)する」を参照してください。
 
-メール フロー ルール、およびメール フローによる作業時間の規則を構成するコンポーネントについては、 [Exchange Online でメールの流れのルール (トランスポート ルール)](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)を参照してください。Azure の情報保護とメール フロー ルールの動作に関する詳細については、 [Azure の情報保護のラベルのメール フロー ルールを構成する Exchange のオンライン](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules)を参照してください。
+メールフロールールを構成するコンポーネントと、メールフロールールのしくみについては、「 [Exchange Online のメールフロールール (トランスポートルール)](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)」を参照してください。メールフロールールが azure information protection でどのように機能するかの詳細については、「 [azure information protection のラベルの Exchange Online メールフロールールの構成](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules)」を参照してください。
 
 > [!IMPORTANT]
-> ハイブリッド Exchange 環境では、オンプレミス ユーザーは、Exchange Online でメールをルーティングする場合にのみホームを使用して、暗号化されたメールを送信できます。ハイブリッドな Exchange 環境では、ホームを構成するには、最初の[ハイブリッド構成ウィザードを使用してハイブリッドを構成](https://docs.microsoft.com/Exchange/exchange-hybrid)し、 [Office 365 に電子メール サーバーからメールを設定](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)する必要があります。1 回このガイダンスを使用してホームのメール フロー ルールを構成することができますし、Office 365 を通過するメールを構成しました。
+> ハイブリッド exchange 環境では、オンプレミスのユーザーは、電子メールが Exchange Online を経由してルーティングされる場合にのみ、OME を使用して暗号化されたメールを送信できます。ハイブリッド Exchange 環境で OME を構成するには、まず[ハイブリッド構成ウィザードを使用してハイブリッドを構成](https://docs.microsoft.com/Exchange/exchange-hybrid)し、次に、[電子メールサーバーから Office 365 にメールが流れるように構成](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)する必要があります。Office 365 を通過するようにメールを構成したら、このガイダンスを使用して OME のメールフロールールを構成できます。
 
-## <a name="create-mail-flow-rules-to-encrypt-email-messages-with-the-new-ome-capabilities"></a>メール ホームの新機能を持つ電子メール メッセージを暗号化するためにフロー ルールを作成します。
+## <a name="create-mail-flow-rules-to-encrypt-email-messages-with-the-new-ome-capabilities"></a>メールフロールールを作成して、新しい OME 機能で電子メールメッセージを暗号化する
 
-EAC を使用して新しいホーム機能でメッセージの暗号化をトリガーするためのメール フロー ルールを定義することができます。
+EAC を使用して、新しい OME 機能でメッセージの暗号化をトリガーするためのメールフロールールを定義できます。
 
-### <a name="use-the-eac-to-create-a-rule-for-encrypting-email-messages-with-the-new-ome-capabilities"></a>EAC を使用して、新しいホーム機能を持つ電子メール メッセージを暗号化するための規則を作成するには
+### <a name="use-the-eac-to-create-a-rule-for-encrypting-email-messages-with-the-new-ome-capabilities"></a>EAC を使用して、新しい OME 機能で電子メールメッセージを暗号化するためのルールを作成する
 
-1. Web ブラウザーで[Office 365 にサインイン](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)、グローバル管理者のアクセス許可が与えられている、職場、学校のアカウントを使用します。
+1. web ブラウザーで、グローバル管理者のアクセス許可が付与されている職場または学校のアカウントを使用して、 [Office 365 にサインイン](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)します。
 
-2. **管理者**のタイルを選択します。
+2. [**管理**] タイルを選択します。
 
 3. Office 365 管理センター で、 **[管理センター]** \> **[Exchange]** を選びます。
 
-4. **メール フロー**には、EAC で\>**の規則**と**新規**作成]![新しいアイコン](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **新しい規則を作成します**。詳細については、EAC を使用して、 [Exchange のオンラインでの Exchange 管理センター](https://docs.microsoft.com/exchange/exchange-admin-center)を参照してください。
+4. EAC で、[**メールフロー** \> ] [**ルール**] に**** ![移動し、](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> [新しい新規作成] アイコンを選択して**新しいルールを作成**します。EAC の使用方法の詳細については、「exchange [Online の exchange 管理センター](https://docs.microsoft.com/exchange/exchange-admin-center)」を参照してください。
 
-5. [**名前**] には、DrToniRamos@hotmail.com の暗号化メールのルールの名前を入力します。
+5. [**名前**] にルールの名前 (DrToniRamos@hotmail.com のメールの暗号化など) を入力します。
 
 6. **[次の場合、このルールを適用する]** で条件を選択し、必要に応じて値を入力します。たとえば、DrToniRamos@hotmail.com 宛のメッセージを暗号化するには、以下のようにします。
 
@@ -59,55 +59,55 @@ EAC を使用して新しいホーム機能でメッセージの暗号化をト�
 
       - 既存の名前を選択する場合は、一覧から名前を選択してから **[OK]** をクリックします。
 
-      - 新しい名前を入力、[**名前**] ボックスで電子メール アドレスを入力し、 **[名前の確認**を\> **OK**です。
+      - 新しい名前を入力するには、[**名前の確認**] ボックスに電子メールアドレスを入力し、[**名前** \>の確認 **]** を選択します。
 
-7. さらに条件を追加するのには**他のオプション**を選択**条件の追加**] を選択し、一覧から選択します。
+7. 他の条件を追加するには、[**その他のオプション**] を選択し、[**条件の追加**] を選択して、一覧から選択します。
 
-   たとえば、組織外の受信者がいる場合にのみルールを適用するに**条件を追加**] を選択し、[**受信者が外部および内部** \> **組織外** \> **OK**です。
+   たとえば、受信者が組織の外部にいる場合にのみルールを適用するには、[**条件の追加**] を選択し、[**受信者が外部/内部** \>の**組織** \>外にある **]** を選択します。
 
-8. ホームの新機能で、**次の操作**をからを使用して暗号化を有効にするには、**メッセージ セキュリティの変更**] を選択し、 **Office 365 メッセージ暗号化を適用し権利保護**します。RMS テンプレートを一覧から選択、**保存**を選択し、[ **ok]** します。
+8. 新しい OME 機能を使用して暗号化を有効にするには、**次の操作を行い**ます。次に、[**メッセージのセキュリティを変更**する] を選択し、[ **Office 365 メッセージの暗号化と権限保護を適用**する] を選択します。一覧から RMS テンプレートを選択し、[**保存**] を選択して、[ **OK]** を選択します。
   
-  テンプレートの一覧には、すべての既定のテンプレートが含まれていて、オプションと同様に作成したカスタム テンプレートを Office 365 で使用します。リストが空の場合は、設定することが Office 365 のメッセージの暗号化を新しい機能を備えた[新しい Office 365 のメッセージの暗号化機能の設定](set-up-new-message-encryption-capabilities.md)の説明に従ってを確認します。既定のテンプレートの詳細については、[構成して Azure の情報保護のためのテンプレートを管理する](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)を参照してください。[**転送不可**] オプションの詳細については、[電子メールの転送不可] オプション](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)を参照してください。**のみ暗号化**オプションの詳細については、[電子メールの暗号化のみ] オプション](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)を参照してください。
+  テンプレートの一覧には、既定のテンプレートとオプションのすべてに加えて、Office 365 で使用するために作成したカスタムテンプレートがすべて含まれています。リストが空の場合は、「office の[新しいメッセージの暗号化機能をセットアップ](set-up-new-message-encryption-capabilities.md)する」の説明に従って、office 365 メッセージの暗号化を新しい機能で設定していることを確認してください。既定のテンプレートの詳細については、「 [Azure information Protection 用のテンプレートを構成および管理](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)する」を参照してください。[**転送**しない] オプションの詳細については、「[メールの転送オプション](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)を送信しない」を参照してください。[**暗号化のみ**] オプションの詳細については、「[電子メールの暗号化のみオプション](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)」を参照してください。
 
-  別のアクションを指定する場合は、**アクションを追加する**選択できます。
+  別のアクションを指定する場合は、[**アクションの追加**] を選択できます。
 
-### <a name="use-the-eac-to-update-an-existing-mail-flow-rule-to-use-the-new-ome-capabilities"></a>EAC を使用して、新しいホーム機能を使用する既存のメール フロー ルールを更新するには
+### <a name="use-the-eac-to-update-an-existing-mail-flow-rule-to-use-the-new-ome-capabilities"></a>EAC を使用して既存のメールフロールールを更新し、新しい OME 機能を使用する
 
-1. Web ブラウザーで[Office 365 にサインイン](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)、グローバル管理者のアクセス許可が与えられている、職場、学校のアカウントを使用します。
+1. web ブラウザーで、グローバル管理者のアクセス許可が付与されている職場または学校のアカウントを使用して、 [Office 365 にサインイン](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)します。
 
-2. **管理者**のタイルを選択します。
+2. [**管理**] タイルを選択します。
 
 3. Office 365 管理センター で、 **[管理センター]** \> **[Exchange]** を選びます。
 
 4. EAC で、 **[メール フロー]** \> **[ルール]** に移動します。
 
-5. メール フロー ルールの一覧で、ホームの新機能を使用して、**編集**を選択し、変更するルールを選択します![[編集] アイコン](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)。
+5. メールフロールールの一覧で、新しい OME 機能を使用するように変更するルールを選択し、[編集**** ![] [編集](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)] アイコンを選択します。
 
-6. ホームの新機能で、**次の操作**をからを使用して暗号化を有効にするには、**メッセージのセキュリティの変更**を選択し、**適用 Office 365 のメッセージの暗号化および権利の保護**します。RMS テンプレートを一覧から選択、**保存**を選択し、[ **ok]** します。
+6. 新しい OME 機能を使用して暗号化を有効にするには、**次の操作を行い**ます。次に、[**メッセージのセキュリティを変更**する] を選択し、[ **Office 365 メッセージの暗号化と権限保護を適用**する] を選択します。一覧から RMS テンプレートを選択し、[**保存**] を選択して、[ **OK]** を選択します。
 
-   テンプレートの一覧には、すべての既定のテンプレートが含まれていて、オプションと同様に作成したカスタム テンプレートを Office 365 で使用します。リストが空の場合は、設定することが Office 365 のメッセージの暗号化を新しい機能を備えた[Azure の情報保護の上位に構築され、新しい Office 365 のメッセージの暗号化機能の設定](set-up-new-message-encryption-capabilities.md)の説明に従ってを確認します。既定のテンプレートの詳細については、[構成して Azure の情報保護のためのテンプレートを管理する](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)を参照してください。[**転送不可**] オプションの詳細については、[電子メールの転送不可] オプション](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)を参照してください。**のみ暗号化**オプションの詳細については、[電子メールの暗号化のみ] オプション](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)を参照してください。
+   テンプレートの一覧には、既定のテンプレートとオプションのすべてに加えて、Office 365 で使用するために作成したカスタムテンプレートがすべて含まれています。リストが空の場合は、「 [Azure Information Protection の上に構築された新しい office 365 メッセージの暗号化機能をセットアップ](set-up-new-message-encryption-capabilities.md)する」に記載されているように、新しい機能を使用して office 365 メッセージの暗号化を設定していることを確認してください。既定のテンプレートの詳細については、「 [Azure information Protection 用のテンプレートを構成および管理](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)する」を参照してください。[**転送**しない] オプションの詳細については、「[メールの転送オプション](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)を送信しない」を参照してください。[**暗号化のみ**] オプションの詳細については、「[電子メールの暗号化のみオプション](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)」を参照してください。
 
-   別のアクションを指定する場合は、**アクションを追加する**選択できます。
+   別のアクションを指定する場合は、[**アクションの追加**] を選択できます。
 
-7. **次の操作**] ボックスの一覧から、**メッセージ セキュリティの変更**] に割り当てられているすべてのアクションを削除します\>**ホームの以前のバージョンを適用**します。
+7. [**実行**する処理] で、**メッセージセキュリティ** \>を変更するために割り当てられているアクションを削除します。**以前のバージョンの OME を適用**します。
 
-8. **[保存]** を選択します。
+8. [**保存**] を選択します。
 
-## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>新しい機能がない Office 365 のメッセージの暗号化メール フロー ルールを作成します。
+## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>新しい機能を使用せずに Office 365 メッセージ暗号化のメールフロールールを作成する
 
-新しいホーム機能を提供する、Office 365 の組織にまだ移動していない場合、は、組織のメッセージを暗号化するためにメール フローの規則を定義するのにはこれらのタスクを使用します。ホームの新機能、組織の適切なことがすぐに移動するための計画を作成することをお勧めします。手順については、[情報の保護を Azure 上に構築された、新しい Office 365 のメッセージの暗号化機能の設定](set-up-new-message-encryption-capabilities.md)を参照してください。
+Office 365 組織を新しい OME 機能にまだ移行していない場合は、これらのタスクを使用して、組織のメッセージを暗号化するためのメールフロールールを定義します。Microsoft は、組織にとって適切であることをすぐに、新しい OME 機能に移行するための計画を立てることを推奨します。手順については、「 [Azure Information Protection の上に構築された新しい Office 365 メッセージ暗号化機能のセットアップ](set-up-new-message-encryption-capabilities.md)」を参照してください。
 
-### <a name="use-the-eac-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>EAC を使用して、新しいホーム機能のない電子メール メッセージを暗号化するためのメール フロー ルールを作成するには
+### <a name="use-the-eac-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>EAC を使用して、新しい OME 機能を使用せずに電子メールメッセージを暗号化するためのメールフロールールを作成する
 
-1. Web ブラウザーで[Office 365 にサインイン](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)、グローバル管理者のアクセス許可が与えられている、職場、学校のアカウントを使用します。
+1. web ブラウザーで、グローバル管理者のアクセス許可が付与されている職場または学校のアカウントを使用して、 [Office 365 にサインイン](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)します。
 
-2. **管理者**のタイルを選択します。
+2. [**管理**] タイルを選択します。
 
 3. Office 365 管理センター で、 **[管理センター]** \> **[Exchange]** を選びます。
 
-4. **メール フロー**には、EAC で\>**の規則**と**新規**作成]![新しいアイコン](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **新しい規則を作成します**。詳細については、EAC を使用して、 [Exchange 管理センター オンラインの Exchange](https://docs.microsoft.com/exchange/exchange-admin-center)を参照してください。
+4. EAC で、[**メールフロー** \> ] [**ルール**] に**** ![移動し、](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> [新しい新規作成] アイコンを選択して**新しいルールを作成**します。EAC の使用方法の詳細については、「exchange [Online の exchange 管理センター](https://docs.microsoft.com/exchange/exchange-admin-center)」を参照してください。
 
-5. [**名前**] には、DrToniRamos@hotmail.com の暗号化メールのルールの名前を入力します。
+5. [**名前**] にルールの名前 (DrToniRamos@hotmail.com のメールの暗号化など) を入力します。
 
 6. **[次の場合、このルールを適用する]** で条件を選択し、必要に応じて値を入力します。たとえば、DrToniRamos@hotmail.com 宛のメッセージを暗号化するには、以下のようにします。
 
@@ -117,25 +117,25 @@ EAC を使用して新しいホーム機能でメッセージの暗号化をト�
 
       - 既存の名前を選択する場合は、一覧から名前を選択してから **[OK]** をクリックします。
 
-      - 新しい名前を入力、[**名前**] ボックスで電子メール アドレスを入力し、 **[名前の確認**を\> **OK**です。
+      - 新しい名前を入力するには、[**名前の確認**] ボックスに電子メールアドレスを入力し、[**名前** \>の確認 **]** を選択します。
 
-7. さらに条件を追加するに**他のオプション**を選択し、[**条件の追加**] を選択し、リストから選択します。
+7. さらに条件を追加するには、[**その他のオプション**] を選択し、[**条件の追加**] を選択してリストから選択します。
 
-   たとえば、組織外の受信者がいる場合にのみルールを適用するに**条件を追加**] を選択し、[**受信者が外部および内部** \> **組織外** \> **OK**です。
+   たとえば、受信者が組織の外部にいる場合にのみルールを適用するには、[**条件の追加**] を選択し、[**受信者が外部/内部** \>の**組織** \>外にある **]** を選択します。
 
-8. なし機能を使用して、新しいホーム、**次の操作**で暗号化を有効にするのには **、メッセージ セキュリティの変更**] を選択\>**ホームの以前のバージョンを適用**し、**保存**を選択します。
+8. 新しい OME 機能を使用せずに暗号化を有効にするには、**次の操作を行い**ます。 [**メッセージセキュリティ** \>を変更する] [**前のバージョンの OME を適用**する]、[**保存**] の順に選択します。
 
-  エラーが発生する場合は、使用許諾契約が IRM 機能が有効になってし、まだ組織のホームを設定していません。ホームをここで設定したい場合は、新しいホーム機能を使用するを設定する必要があります。については、[情報の保護を Azure 上に構築された、新しい Office 365 のメッセージの暗号化機能の設定](set-up-new-message-encryption-capabilities.md)を参照してください。Microsoft は、新しい機能がないホームの新規の展開の設定をサポートしていません。
+  IRM ライセンスが有効になっていないというエラーが表示された場合は、まだ組織の OME をセットアップしていません。今すぐ OME を設定したい場合は、新しい OME 機能を使用するように設定する必要があります。詳細については、「 [Azure information Protection の上に構築された新しい Office 365 メッセージ暗号化機能のセットアップ](set-up-new-message-encryption-capabilities.md)」を参照してください。Microsoft では、新しい機能なしで OME の新しい展開をセットアップすることはサポートされなくなりました。
 
-  別のアクションを指定する場合は、**アクションを追加する**選択できます。
+  別のアクションを指定する場合は、[**アクションの追加**] を選択できます。
 
-### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Exchange オンライン PowerShell を使用して、新しいホーム機能のない電子メール メッセージを暗号化するためのメール フロー ルールを作成するには
+### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Exchange Online の PowerShell を使用して、新しい OME 機能なしで電子メールメッセージを暗号化するためのメールフロールールを作成する
 
-1. オンライン PowerShell を交換するために接続します。詳細については、 [Exchange オンライン PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)を参照してください。
+1. Exchange Online PowerShell に接続します。詳細については、「 [Exchange Online PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
 
-2. **新規 TransportRule**コマンドレットを使用してルールを作成し、 _ApplyOME_パラメーターを設定`$true`。
+2. **new-transportrule**コマンドレットを使用してルールを作成し、 _ApplyOME_パラメーターをに`$true`設定します。
 
-   この例では、DrToniRamos@hotmail.com に送信されるすべての電子メール メッセージを暗号化する必要がある必要があります。
+   この例では、DrToniRamos@hotmail.com に送信されるすべての電子メールメッセージが暗号化されている必要があります。
 
    ```powershell
    New-TransportRule -Name "Encrypt rule for Dr Toni Ramos" -SentTo "DrToniRamos@hotmail.com" -SentToScope "NotinOrganization" -ApplyOME $true
@@ -143,43 +143,43 @@ EAC を使用して新しいホーム機能でメッセージの暗号化をト�
 
    **注**:
 
-   - 新しいルールの一意の名前は、「Dr Toni タモの暗号化ルール」です。
+   - 新しいルールの一意の名前は、"Dr toni ramos の暗号化ルール" です。
 
-   - _SentTo_パラメーターは、(名前、電子メール アドレス、識別名などで識別される) メッセージの受信者を指定します。この例では、受信者が電子メール アドレス"DrToniRamos@hotmail.com"によって識別されます。
+   - パラメーター_に_は、メッセージの受信者を指定します (名前、電子メールアドレス、識別名などで識別されます)。この例では、受信者は電子メールアドレス "DrToniRamos@hotmail.com" によって識別されます。
 
-   - _SentToScope_パラメーターは、メッセージの受信者の場所を指定します。この例では、受信者のメールボックス hotmail では、Office 365 の組織の一部、値`NotInOrganization`を使用します。
+   - / __ は、メッセージの受信者の場所を指定します。この例では、受信者のメールボックスは hotmail にあり、Office 365 組織の一部ではないため`NotInOrganization` 、値が使用されます。
 
    詳細な構文とパラメーターについては、「[New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule)」を参照してください。
 
-### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>新しいホーム機能なしで暗号化電子メールの返信の暗号化を解除します。
+### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>新しい OME 機能を使用せずに暗号化された電子メールの返信から暗号化を削除する
 
-電子メール ユーザーは、暗号化されたメッセージを送信、ときにそれらのメッセージの受信者が暗号化された応答で応答できます。メールの返信を組織のメール ユーザーを表示するための暗号化のポータルにサインインする必要はありませんので暗号化を自動的に削除するフロー ルールを作成できます。EAC または Windows PowerShell コマンドレットを使用すると、これらの規則を定義します。ホームの新機能を使用されていない場合は、あなたの組織または組織内から送信されたメッセージへの返信のメッセージから送信されたいずれかのメッセージのみ解読できます。組織の外部から発信されたメッセージを暗号化の暗号化を解除することはできません。
+電子メールユーザーが暗号化されたメッセージを送信すると、それらのメッセージの受信者は暗号化された応答で応答できます。メールフロールールを作成して、返信からの暗号化を自動的に削除することで、組織内の電子メールユーザーが暗号化ポータルにサインインして表示されないようにすることができます。これらのルールは、EAC または Windows PowerShell コマンドレットを使用して定義できます。新しい OME 機能をまだ使用していない場合は、組織内から送信されたメッセージまたは組織内から送信されたメッセージに返信されるメッセージの暗号化を解除することしかできません。組織外からの暗号化されたメッセージを解読することはできません。
 
-#### <a name="use-the-eac-to-create-a-rule-for-removing-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>EAC を使用して、新しいホーム機能なしで暗号化電子メールの返信を暗号化を削除するルールを作成するには
+#### <a name="use-the-eac-to-create-a-rule-for-removing-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>EAC を使用して、新しい OME 機能を使用せずに暗号化された電子メールの返信からの暗号化を削除するためのルールを作成する
 
-1. Web ブラウザーで[Office 365 にサインイン](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)の管理者権限が与えられている、職場、学校のアカウントを使用してください。
+1. web ブラウザーで、管理者のアクセス許可が付与されている職場または学校のアカウントを使用して、 [Office 365 にサインイン](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)します。
 
-2. **管理者**のタイルを選択します。
+2. [**管理**] タイルを選択します。
 
 3. Office 365 管理センター で、 **[管理センター]** \> **[Exchange]** を選びます。
 
-4. **メール フロー**には、EAC で\>**の規則**と**新規**作成]![新しいアイコン](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **新しい規則を作成します**。詳細については、EAC を使用して、 [Exchange 管理センター オンラインの Exchange](https://docs.microsoft.com/exchange/exchange-admin-center)を参照してください。
+4. EAC で、[**メールフロー** \> ] [**ルール**] に**** ![移動し、](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> [新しい新規作成] アイコンを選択して**新しいルールを作成**します。EAC の使用方法の詳細については、「exchange [Online の exchange 管理センター](https://docs.microsoft.com/exchange/exchange-admin-center)」を参照してください。
 
-5. [**名前**] には、受信メールから削除暗号化など、ルールの名前を入力します。
+5. [**名前**] にルールの名前を入力します。たとえば、[受信メールからの暗号化の削除] などです。
 
-6. **場合は、このルールを適用する**には、**受信者は**、メッセージから暗号化を削除する必要がある条件を選択して\> **、組織の内部**。
+6. [**次の場合、このルールを適用**する] [**受信者が** \> **組織内**にある] など、メッセージから暗号化を削除する条件を選択します。
 
-7. **次の操作**をには、**メッセージ セキュリティの変更**] を選択\>**ホームの以前のバージョンを削除**します。
+7. [**実行する処理**] で、[**メッセージのセキュリティ** \>を変更する] を選択します。**以前のバージョンの OME を削除**します。
 
-8. [**保存**] を選択します。
+8. **[保存]** を選択します。
 
-#### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Exchange オンライン PowerShell を使用して、新しいホーム機能なしで暗号化電子メールの返信を暗号化を解除する規則を作成するには
+#### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Exchange Online PowerShell を使用して、新しい OME 機能なしで暗号化された電子メールの返信から暗号化を削除するルールを作成する
 
-1. オンライン PowerShell を交換するために接続します。詳細については、 [Exchange オンライン PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)を参照してください。
+1. Exchange Online PowerShell に接続します。詳細については、「 [Exchange Online PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
 
-2. **新規 TransportRule**コマンドレットを使用してルールを作成し、 _RemoveOME_パラメーターを設定`$true`。
+2. **new-transportrule**コマンドレットを使用してルールを作成し、 _RemoveOME_パラメーターをに`$true`設定します。
 
-   この例では、Office 365 の組織内の受信者に送信されるすべてのメールから暗号化を削除します。
+   この例では、Office 365 組織内の受信者に送信されるすべてのメールから暗号化を削除します。
 
    ```powershell
    New-TransportRule -Name "Remove encryption from incoming mail" -SentToScope "InOrganization" -RemoveOME $true
@@ -187,19 +187,19 @@ EAC を使用して新しいホーム機能でメッセージの暗号化をト�
 
    **注**:
 
-   - 新しいルールの一意の名前は、「受信メールから暗号化を削除する」です。
+   - 新しいルールの一意の名前は、"受信メールから暗号化を削除する" です。
 
-   - _SentToScope_パラメーターは、メッセージの受信者の場所を指定します。この例では、値`InOrganization`値が使用されることを示します。
+   - / __ は、メッセージの受信者の場所を指定します。この例では、値`InOrganization`の値を使用して、次のことを示します。
 
-     - 受信者は、メールボックス、メール ユーザー、グループ、または組織内のパブリック フォルダーのメールが有効です。
+     - 受信者が組織内のメールボックス、メールユーザー、グループ、またはメールが有効なパブリックフォルダーである。
 
        または
 
-     - 受信者の電子メール アドレスが、権限のあるドメインまたは組織_および_メッセージが送信または、認証された接続経由で受信した、内部の中継ドメインとして構成されている承認済みドメインです。
+     - 受信者の電子メールアドレスが、組織内の権限のあるドメインまたは内部の中継ドメインとして構成さ__ れている承認済みドメイン内にあり、認証された接続を介してメッセージが送信または受信された。
 
 詳細な構文とパラメーターについては、「[New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule)」を参照してください。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Office 365 での暗号化](encryption.md)
 
