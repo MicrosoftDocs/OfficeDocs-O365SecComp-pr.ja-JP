@@ -1,12 +1,12 @@
 ---
-title: 高度な電子的証拠開示 (プレビュー) での大文字のデータをエクスポートします。
+title: 高度な電子情報開示でケースデータをエクスポートする (プレビュー)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 02eccac2ecd1ee50597ddcaa8fcf0c35e724893e
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 58e64b89330ce52dead7ce00bfefac5c01c0a04b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29695023"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218277"
 ---
-# <a name="export-case-data-in-advanced-ediscovery-preview"></a><span data-ttu-id="a8e6a-102">高度な電子的証拠開示 (プレビュー) での大文字のデータをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="a8e6a-102">Export case data in Advanced eDiscovery (Preview)</span></span>
+# <a name="export-case-data-in-advanced-ediscovery-preview"></a><span data-ttu-id="29af9-102">高度な電子情報開示でケースデータをエクスポートする (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="29af9-102">Export case data in Advanced eDiscovery (Preview)</span></span>
 
-<span data-ttu-id="a8e6a-103">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="a8e6a-103">Content coming soon.</span></span>
+<span data-ttu-id="29af9-103">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="29af9-103">Content coming soon.</span></span>

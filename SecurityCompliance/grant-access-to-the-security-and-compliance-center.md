@@ -1,5 +1,5 @@
 ---
-title: ユーザーに Office 365 のセキュリティのアクセス権を与える&amp;コンプライアンス センター
+title: Office 365 セキュリティ&amp;コンプライアンスセンターへのアクセス権をユーザーに付与する
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -8,87 +8,87 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.PermissionsHelp
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: ユーザーが Office 365 のセキュリティのアクセス許可を割り当てる必要があります&amp;コンプライアンス ・ センターのセキュリティやコンプライアンスの機能のいずれかを管理することができます。
-ms.openlocfilehash: 5055c64d914e15a6570c339ade48bb8f7e802ea7
-ms.sourcegitcommit: a56fa2e184a2662fd8a7881ccea0891e9a26d497
+description: ユーザーは、セキュリティまたはコンプライアンス機能を管理する&amp;前に、Office 365 セキュリティコンプライアンスセンターでアクセス許可を割り当てる必要があります。
+ms.openlocfilehash: 0a3f0d1ddde7d269a0f8f9596c5c3de14e94429d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27221068"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216307"
 ---
-# <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a><span data-ttu-id="ad687-103">ユーザーに Office 365 のセキュリティのアクセス権を与える&amp;コンプライアンス センター</span><span class="sxs-lookup"><span data-stu-id="ad687-103">Give users access to the Office 365 Security &amp; Compliance Center</span></span>
+# <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a><span data-ttu-id="5db8f-103">Office 365 セキュリティ&amp;コンプライアンスセンターへのアクセス権をユーザーに付与する</span><span class="sxs-lookup"><span data-stu-id="5db8f-103">Give users access to the Office 365 Security &amp; Compliance Center</span></span>
 
-<span data-ttu-id="ad687-p101">ユーザーが Office 365 のセキュリティのアクセス許可を割り当てる必要があります&amp;コンプライアンス ・ センターのセキュリティやコンプライアンスの機能のいずれかを管理することができます。Office 365 のグローバル管理者またはセキュリティの OrganizationManagement の役割グループのメンバーとして&amp;コンプライアンス センターでは、ユーザーにこれらのアクセス許可を与えることができます。ユーザーのみへのアクセスを許可するセキュリティやコンプライアンスの機能を管理できるようになります。</span><span class="sxs-lookup"><span data-stu-id="ad687-p101">Users need to be assigned permissions in the Office 365 Security &amp; Compliance Center before they can manage any of its security or compliance features. As an Office 365 global admin or member of the OrganizationManagement role group in the Security &amp; Compliance Center, you can give these permissions to users. Users will only be able to manage the security or compliance features that you give them access to.</span></span> 
+<span data-ttu-id="5db8f-p101">ユーザーは、セキュリティまたはコンプライアンス機能を管理する&amp;前に、Office 365 セキュリティコンプライアンスセンターでアクセス許可を割り当てる必要があります。セキュリティ&amp; /コンプライアンスセンターでは、Office 365 のグローバル管理者または組織の管理役割グループのメンバーとして、これらのアクセス許可をユーザーに与えることができます。ユーザーは、アクセスを許可するセキュリティまたはコンプライアンス機能のみを管理できます。</span><span class="sxs-lookup"><span data-stu-id="5db8f-p101">Users need to be assigned permissions in the Office 365 Security &amp; Compliance Center before they can manage any of its security or compliance features. As an Office 365 global admin or member of the OrganizationManagement role group in the Security &amp; Compliance Center, you can give these permissions to users. Users will only be able to manage the security or compliance features that you give them access to.</span></span> 
   
-<span data-ttu-id="ad687-107">セキュリティでユーザーに与えることができます別のアクセス許可の詳細については&amp;コンプライアンス センターでは、チェック アウト[では、Office 365 のセキュリティ アクセス許可&amp;コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="ad687-107">For more information about the different permissions you can give to users in the Security &amp; Compliance Center, check out [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+<span data-ttu-id="5db8f-107">セキュリティ/コンプライアンスセンターでユーザーに付与できるさまざまなアクセス許可の詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターでアクセス許可](permissions-in-the-security-and-compliance-center.md)を確認する」を参照してください。 &amp;</span><span class="sxs-lookup"><span data-stu-id="5db8f-107">For more information about the different permissions you can give to users in the Security &amp; Compliance Center, check out [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="ad687-108">始める前に把握しておくべき情報</span><span class="sxs-lookup"><span data-stu-id="ad687-108">What do you need to know before you begin?</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="5db8f-108">事前に必要な知識</span><span class="sxs-lookup"><span data-stu-id="5db8f-108">What do you need to know before you begin?</span></span>
 
-- <span data-ttu-id="ad687-109">Office 365 のグローバル管理者、またはセキュリティの OrganizationManagement の役割グループのメンバーである必要があります&amp;コンプライアンス センターは、この資料の手順を完了します。</span><span class="sxs-lookup"><span data-stu-id="ad687-109">You need to be an Office 365 global admin, or a member of the OrganizationManagement role group in the Security &amp; Compliance Center, to complete the steps in this article.</span></span>
+- <span data-ttu-id="5db8f-109">この記事に記載されている手順を完了するには、Office 365 グローバル管理者である&amp;か、または、セキュリティコンプライアンスセンターの組織管理役割グループのメンバーである必要があります。</span><span class="sxs-lookup"><span data-stu-id="5db8f-109">You need to be an Office 365 global admin, or a member of the OrganizationManagement role group in the Security &amp; Compliance Center, to complete the steps in this article.</span></span>
     
-- <span data-ttu-id="ad687-110">セキュリティの役割のグループ&amp;コンプライアンス センターでは、Exchange online では、役割グループに似た名前がありますが、同じあります。</span><span class="sxs-lookup"><span data-stu-id="ad687-110">Role groups for the Security &amp; Compliance Center might have similar names to the role groups in Exchange Online, but they're not the same.</span></span> 
+- <span data-ttu-id="5db8f-110">セキュリティ&amp; /コンプライアンスセンターの役割グループの名前は Exchange Online の役割グループと似ている場合がありますが、同じではありません。</span><span class="sxs-lookup"><span data-stu-id="5db8f-110">Role groups for the Security &amp; Compliance Center might have similar names to the role groups in Exchange Online, but they're not the same.</span></span> 
     
-- <span data-ttu-id="ad687-111">役割グループのメンバーシップが Exchange Online とセキュリティの間で共有されていない&amp;コンプライアンス センターです。</span><span class="sxs-lookup"><span data-stu-id="ad687-111">Role group memberships aren't shared between Exchange Online and the Security &amp; Compliance Center.</span></span>
+- <span data-ttu-id="5db8f-111">役割グループのメンバーシップは、Exchange Online とセキュリティ&amp;センターコンプライアンスセンターとの間で共有されません。</span><span class="sxs-lookup"><span data-stu-id="5db8f-111">Role group memberships aren't shared between Exchange Online and the Security &amp; Compliance Center.</span></span>
     
-## <a name="use-the-office-365-admin-center-to-give-another-user-access-to-the-security-amp-compliance-center"></a><span data-ttu-id="ad687-112">Office 365 管理センターを使用して、セキュリティを保護する別のユーザーのアクセス権を与える&amp;コンプライアンス センター</span><span class="sxs-lookup"><span data-stu-id="ad687-112">Use the Office 365 admin center to give another user access to the Security &amp; Compliance Center</span></span>
+## <a name="use-the-office-365-admin-center-to-give-another-user-access-to-the-security-amp-compliance-center"></a><span data-ttu-id="5db8f-112">Office 365 管理センターを使用して、別のユーザーにセキュリティ&amp;コンプライアンスセンターへのアクセス権を付与する</span><span class="sxs-lookup"><span data-stu-id="5db8f-112">Use the Office 365 admin center to give another user access to the Security &amp; Compliance Center</span></span>
 
-1. <span data-ttu-id="ad687-113">[管理ページに移動し、Office 365 にサインイン](https://go.microsoft.com/fwlink/p/?LinkId=525275)します。</span><span class="sxs-lookup"><span data-stu-id="ad687-113">[Sign in to Office 365 and go to the Admin center](https://go.microsoft.com/fwlink/p/?LinkId=525275).</span></span>
+1. <span data-ttu-id="5db8f-113">[Office 365 にサインインし、管理センターに移動し](https://go.microsoft.com/fwlink/p/?LinkId=525275)ます。</span><span class="sxs-lookup"><span data-stu-id="5db8f-113">[Sign in to Office 365 and go to the Admin center](https://go.microsoft.com/fwlink/p/?LinkId=525275).</span></span>
     
-2. <span data-ttu-id="ad687-114">Office 365 管理センターをクリックし、[**管理センター**を開く] をクリックし、**セキュリティ&amp;準拠**。</span><span class="sxs-lookup"><span data-stu-id="ad687-114">In the Office 365 admin center, open **Admin centers** and then click **Security &amp; Compliance**.</span></span> 
+2. <span data-ttu-id="5db8f-114">Office 365 管理センターで、**管理センター**を開き、[**セキュリティ&amp;のコンプライアンス**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5db8f-114">In the Office 365 admin center, open **Admin centers** and then click **Security &amp; Compliance**.</span></span> 
     
-3. <span data-ttu-id="ad687-115">セキュリティ&amp;コンプライアンス センターでは、**アクセス許可**に移動します。</span><span class="sxs-lookup"><span data-stu-id="ad687-115">In the Security &amp; Compliance Center, go to **Permissions**.</span></span>
+3. <span data-ttu-id="5db8f-115">セキュリティ&amp; /コンプライアンスセンターで、[**アクセス許可**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="5db8f-115">In the Security &amp; Compliance Center, go to **Permissions**.</span></span>
     
-4. <span data-ttu-id="ad687-116">役割グループにユーザーを追加し、[**編集**] をクリックするを選択します] ボックスの一覧から![の編集アイコン](media/O365_MDM_CreatePolicy_EditIcon.gif)。</span><span class="sxs-lookup"><span data-stu-id="ad687-116">From the list, choose the role group that you want to add the user to and click **Edit** ![Edit icon](media/O365_MDM_CreatePolicy_EditIcon.gif).</span></span>
+4. <span data-ttu-id="5db8f-116">リストからユーザーを追加する役割グループを選択し、[編集] [ \*\*\*\* ![編集] アイコン](media/O365_MDM_CreatePolicy_EditIcon.gif)をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5db8f-116">From the list, choose the role group that you want to add the user to and click **Edit** ![Edit icon](media/O365_MDM_CreatePolicy_EditIcon.gif).</span></span>
     
-5. <span data-ttu-id="ad687-117">[**メンバー]** の役割グループのプロパティ ページで [**追加**] をクリックします![アイコンの追加](media/ITPro-EAC-AddIcon.gif)名を選択してユーザー (またはユーザー) を追加したいです。</span><span class="sxs-lookup"><span data-stu-id="ad687-117">In the role group's properties page under **Members**, click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif) and select the name of the user (or users) you want to add.</span></span> 
+5. <span data-ttu-id="5db8f-117">役割グループのプロパティページの [**メンバー**] で、 \*\*\*\*![[追加]](media/ITPro-EAC-AddIcon.gif)アイコンをクリックし、追加するユーザーの名前を選択します。</span><span class="sxs-lookup"><span data-stu-id="5db8f-117">In the role group's properties page under **Members**, click **Add**![Add Icon](media/ITPro-EAC-AddIcon.gif) and select the name of the user (or users) you want to add.</span></span> 
     
-6. <span data-ttu-id="ad687-118">すべての役割グループに追加] をクリックしユーザーを選択した**を追加-\>** し、 **[ok]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ad687-118">When you've selected all of the users you want to add to the role group, click **add-\>** and then **OK**.</span></span>
+6. <span data-ttu-id="5db8f-118">役割グループに追加するすべてのユーザーを選択したら、[ **\>追加**] をクリックし、[ **OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5db8f-118">When you've selected all of the users you want to add to the role group, click **add-\>** and then **OK**.</span></span>
     
-7. <span data-ttu-id="ad687-119">**[保存]** をクリックして、役割グループに加えた変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="ad687-119">Click **Save** to save the changes to the role group.</span></span> 
+7. <span data-ttu-id="5db8f-119">**[保存]** をクリックして、役割グループに加えた変更を保存します。</span><span class="sxs-lookup"><span data-stu-id="5db8f-119">Click **Save** to save the changes to the role group.</span></span> 
     
-### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="ad687-120">正常な動作を確認する方法</span><span class="sxs-lookup"><span data-stu-id="ad687-120">How do you know this worked?</span></span>
+### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="5db8f-120">正常な動作を確認する方法</span><span class="sxs-lookup"><span data-stu-id="5db8f-120">How do you know this worked?</span></span>
 
-1. <span data-ttu-id="ad687-121">セキュリティ&amp;コンプライアンス センターでは、**アクセス許可**に移動します。</span><span class="sxs-lookup"><span data-stu-id="ad687-121">In the Security &amp; Compliance Center, go to **Permissions**.</span></span>
+1. <span data-ttu-id="5db8f-121">セキュリティ&amp; /コンプライアンスセンターで、[**アクセス許可**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="5db8f-121">In the Security &amp; Compliance Center, go to **Permissions**.</span></span>
     
-2. <span data-ttu-id="ad687-122">リストからメンバーを表示するロール グループを選択します。</span><span class="sxs-lookup"><span data-stu-id="ad687-122">From the list, select the role group to view the members.</span></span>
+2. <span data-ttu-id="5db8f-122">リストから、メンバーを表示する役割グループを選択します。</span><span class="sxs-lookup"><span data-stu-id="5db8f-122">From the list, select the role group to view the members.</span></span>
     
-3. <span data-ttu-id="ad687-123">役割グループの詳細] で、右側の役割グループのメンバーを表示できます。</span><span class="sxs-lookup"><span data-stu-id="ad687-123">On the right, in the role group details, you can view the members of the role group.</span></span>
+3. <span data-ttu-id="5db8f-123">右側の役割グループの詳細では、役割グループのメンバーを表示できます。</span><span class="sxs-lookup"><span data-stu-id="5db8f-123">On the right, in the role group details, you can view the members of the role group.</span></span>
     
-## <a name="use-powershell-to-give-another-user-access-to-the-security-amp-compliance-center"></a><span data-ttu-id="ad687-124">PowerShell を使用してセキュリティを保護する別のユーザーのアクセス権を与える&amp;コンプライアンス センター</span><span class="sxs-lookup"><span data-stu-id="ad687-124">Use PowerShell to give another user access to the Security &amp; Compliance Center</span></span>
+## <a name="use-powershell-to-give-another-user-access-to-the-security-amp-compliance-center"></a><span data-ttu-id="5db8f-124">PowerShell を使用して、セキュリティ&amp; /コンプライアンスセンターへのアクセス権を別のユーザーに付与する</span><span class="sxs-lookup"><span data-stu-id="5db8f-124">Use PowerShell to give another user access to the Security &amp; Compliance Center</span></span>
 
-1. <span data-ttu-id="ad687-125">[Office 365 のセキュリティとコンプライアンス センター PowerShell に接続](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)します。</span><span class="sxs-lookup"><span data-stu-id="ad687-125">[Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).</span></span>
+1. <span data-ttu-id="5db8f-125">[Office 365 Security & コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)します。</span><span class="sxs-lookup"><span data-stu-id="5db8f-125">[Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).</span></span>
     
-2. <span data-ttu-id="ad687-126">次の例で示すように、**Add-RoleGroupMember** コマンドを使用して、ユーザーを Organization Management の役割に追加できます。</span><span class="sxs-lookup"><span data-stu-id="ad687-126">Use the **Add-RoleGroupMember** command to add a user to the Organization Management Role, as shown in the following example.</span></span> 
+2. <span data-ttu-id="5db8f-126">次の例で示すように、**Add-RoleGroupMember** コマンドを使用して、ユーザーを Organization Management の役割に追加できます。</span><span class="sxs-lookup"><span data-stu-id="5db8f-126">Use the **Add-RoleGroupMember** command to add a user to the Organization Management Role, as shown in the following example.</span></span> 
     
   ```
   Add-RoleGroupMember -Identity "OrganizationManagement" -Member MatildaS
   
   ```
 
- <span data-ttu-id="ad687-127">**パラメーター**</span><span class="sxs-lookup"><span data-stu-id="ad687-127">**Parameters**</span></span>
+ <span data-ttu-id="5db8f-127">**パラメーター**</span><span class="sxs-lookup"><span data-stu-id="5db8f-127">**Parameters**</span></span>
   
-- <span data-ttu-id="ad687-128">_-Identity_ は、メンバーを追加する役割グループです。</span><span class="sxs-lookup"><span data-stu-id="ad687-128">_-Identity_ is the role group to add a member to.</span></span> 
+- <span data-ttu-id="5db8f-128">_-Identity_ は、メンバーを追加する役割グループです。</span><span class="sxs-lookup"><span data-stu-id="5db8f-128">_-Identity_ is the role group to add a member to.</span></span> 
     
-- <span data-ttu-id="ad687-p102">_メンバー_は、役割グループに追加するには、メールボックス、ユニバーサル セキュリティ グループ (USG)、またはコンピューターです。一度に 1 つだけメンバーを指定できます。</span><span class="sxs-lookup"><span data-stu-id="ad687-p102">_Member_ is the mailbox, universal security group (USG), or computer to add to the role group. You can specify only one member at a time.</span></span> 
+- <span data-ttu-id="5db8f-p102">_Member_は、役割グループに追加するメールボックス、ユニバーサルセキュリティグループ (USG)、またはコンピューターです。一度に指定できるメンバーは1つだけです。</span><span class="sxs-lookup"><span data-stu-id="5db8f-p102">_Member_ is the mailbox, universal security group (USG), or computer to add to the role group. You can specify only one member at a time.</span></span> 
     
-<span data-ttu-id="ad687-131">構文とパラメーターの詳細については、[追加 RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ad687-131">For detailed information on syntax and parameters, see [Add-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859).</span></span>
+<span data-ttu-id="5db8f-131">構文とパラメーターの詳細については、「 [add-rolegroupmember](https://go.microsoft.com/fwlink/p/?LinkId=510859)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5db8f-131">For detailed information on syntax and parameters, see [Add-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859).</span></span>
   
-### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="ad687-132">正常な動作を確認する方法</span><span class="sxs-lookup"><span data-stu-id="ad687-132">How do you know this worked?</span></span>
+### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="5db8f-132">正常な動作を確認する方法</span><span class="sxs-lookup"><span data-stu-id="5db8f-132">How do you know this worked?</span></span>
 
-<span data-ttu-id="ad687-133">与えたユーザーのアクセス セキュリティを保護することを確認するのには&amp;コンプライアンス センターでは、次の例のように、組織の管理役割グループのメンバーを表示するのには**Get RoleGroupMember**コマンドレットを使用します。</span><span class="sxs-lookup"><span data-stu-id="ad687-133">To verify that you've given users access to the Security &amp; Compliance Center, use the **Get-RoleGroupMember** cmdlet to view the members in the Organization Management role group, as shown in the following example.</span></span> 
+<span data-ttu-id="5db8f-133">ユーザーにセキュリティ&amp;コンプライアンスセンターへのアクセス権が与えられたことを確認するには、次の例に示すように、 **add-rolegroupmember**コマンドレットを使用して組織の管理役割グループのメンバーを表示します。</span><span class="sxs-lookup"><span data-stu-id="5db8f-133">To verify that you've given users access to the Security &amp; Compliance Center, use the **Get-RoleGroupMember** cmdlet to view the members in the Organization Management role group, as shown in the following example.</span></span> 
   
 ```
 Get-RoleGroupMember -Identity "OrganizationManagement"
 
 ```
 
-<span data-ttu-id="ad687-134">構文とパラメーターの詳細については、 [Get RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510860)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ad687-134">For detailed information on syntax and parameters, see [Get-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510860).</span></span>
+<span data-ttu-id="5db8f-134">構文とパラメーターの詳細については、「 [add-rolegroupmember](https://go.microsoft.com/fwlink/p/?LinkId=510860)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5db8f-134">For detailed information on syntax and parameters, see [Get-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510860).</span></span>
   
 

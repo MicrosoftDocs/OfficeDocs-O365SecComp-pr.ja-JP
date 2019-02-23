@@ -1,12 +1,12 @@
 ---
-title: 高度な電子的証拠開示 (プレビュー) でのジョブを管理します。
+title: Advanced eDiscovery でジョブを管理する (プレビュー)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,26 +14,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 493d1b6ec448f3de9b782028b903c7b290681e88
-ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
+ms.openlocfilehash: 03165ba64ed5b75fa2d327ee798dc6a8e43fe908
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694803"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214987"
 ---
-# <a name="manage-jobs-in-advanced-ediscovery-preview"></a><span data-ttu-id="4c392-102">高度な電子的証拠開示 (プレビュー) でのジョブを管理します。</span><span class="sxs-lookup"><span data-stu-id="4c392-102">Manage jobs in Advanced eDiscovery (Preview)</span></span>
+# <a name="manage-jobs-in-advanced-ediscovery-preview"></a><span data-ttu-id="86289-102">Advanced eDiscovery でジョブを管理する (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="86289-102">Manage jobs in Advanced eDiscovery (Preview)</span></span>
 
-<span data-ttu-id="4c392-103">ここでは、高度な電子的証拠開示 (プレビュー) で、大文字と小文字の [**ジョブ**] タブで追跡されているジョブのリストです。</span><span class="sxs-lookup"><span data-stu-id="4c392-103">Here's a list of the jobs that are tracked on the **Jobs** tab of a case in Advanced eDiscovery (Preview).</span></span>
+<span data-ttu-id="86289-103">高度な電子情報開示 (プレビュー) のケースの [**ジョブ**] タブで追跡されるジョブの一覧を次に示します。</span><span class="sxs-lookup"><span data-stu-id="86289-103">Here's a list of the jobs that are tracked on the **Jobs** tab of a case in Advanced eDiscovery (Preview).</span></span>
 
-- <span data-ttu-id="4c392-104">保管担当者データのインデックスを再作成</span><span class="sxs-lookup"><span data-stu-id="4c392-104">Re-indexing custodian data</span></span>
-- <span data-ttu-id="4c392-105">検索結果の評価</span><span class="sxs-lookup"><span data-stu-id="4c392-105">Estimating search results</span></span>
-- <span data-ttu-id="4c392-106">サーチ プレビューを準備しています。</span><span class="sxs-lookup"><span data-stu-id="4c392-106">Preparing search preview</span></span>
-- <span data-ttu-id="4c392-107">ワーキング セットにデータの追加</span><span class="sxs-lookup"><span data-stu-id="4c392-107">Adding data to a working set</span></span>
-- <span data-ttu-id="4c392-108">別のワーキング セットにデータの追加</span><span class="sxs-lookup"><span data-stu-id="4c392-108">Adding data to another working set</span></span>
-- <span data-ttu-id="4c392-109">Office 365 以外のデータのワーキング セットに追加</span><span class="sxs-lookup"><span data-stu-id="4c392-109">Adding non-Office 365 data to a working set</span></span>
-- <span data-ttu-id="4c392-110">エラーの解決のための準備</span><span class="sxs-lookup"><span data-stu-id="4c392-110">Preparing for error resolution</span></span>
-- <span data-ttu-id="4c392-111">ワーキング セットに修正されたデータの追加</span><span class="sxs-lookup"><span data-stu-id="4c392-111">Adding remediated data to a working set</span></span>
-- <span data-ttu-id="4c392-112">比較負荷を設定します。</span><span class="sxs-lookup"><span data-stu-id="4c392-112">Comparing load sets</span></span>
-- <span data-ttu-id="4c392-113">文書をタグ付け</span><span class="sxs-lookup"><span data-stu-id="4c392-113">Tagging documents</span></span>
-- <span data-ttu-id="4c392-114">分析を実行しています。</span><span class="sxs-lookup"><span data-stu-id="4c392-114">Running analytics</span></span>
-- <span data-ttu-id="4c392-115">データを書き出す準備</span><span class="sxs-lookup"><span data-stu-id="4c392-115">Preparing data for export</span></span>
+- <span data-ttu-id="86289-104">保管担当者データの再インデックス作成</span><span class="sxs-lookup"><span data-stu-id="86289-104">Re-indexing custodian data</span></span>
+- <span data-ttu-id="86289-105">検索結果の見積もり</span><span class="sxs-lookup"><span data-stu-id="86289-105">Estimating search results</span></span>
+- <span data-ttu-id="86289-106">検索プレビューの準備</span><span class="sxs-lookup"><span data-stu-id="86289-106">Preparing search preview</span></span>
+- <span data-ttu-id="86289-107">作業セットへのデータの追加</span><span class="sxs-lookup"><span data-stu-id="86289-107">Adding data to a working set</span></span>
+- <span data-ttu-id="86289-108">別の作業セットへのデータの追加</span><span class="sxs-lookup"><span data-stu-id="86289-108">Adding data to another working set</span></span>
+- <span data-ttu-id="86289-109">Office 以外の365データを作業セットに追加する</span><span class="sxs-lookup"><span data-stu-id="86289-109">Adding non-Office 365 data to a working set</span></span>
+- <span data-ttu-id="86289-110">エラー解決の準備</span><span class="sxs-lookup"><span data-stu-id="86289-110">Preparing for error resolution</span></span>
+- <span data-ttu-id="86289-111">修復されたデータを作業セットに追加する</span><span class="sxs-lookup"><span data-stu-id="86289-111">Adding remediated data to a working set</span></span>
+- <span data-ttu-id="86289-112">荷重セットの比較</span><span class="sxs-lookup"><span data-stu-id="86289-112">Comparing load sets</span></span>
+- <span data-ttu-id="86289-113">ドキュメントにタグを付けます。</span><span class="sxs-lookup"><span data-stu-id="86289-113">Tagging documents</span></span>
+- <span data-ttu-id="86289-114">分析の実行</span><span class="sxs-lookup"><span data-stu-id="86289-114">Running analytics</span></span>
+- <span data-ttu-id="86289-115">エクスポート用のデータを準備する</span><span class="sxs-lookup"><span data-stu-id="86289-115">Preparing data for export</span></span>

@@ -1,12 +1,12 @@
 ---
-title: 荷重セットを管理します。
+title: 読み込みセットの管理
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4897b57e5f0bc765a371b61941179f6bd67060d6
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 03eedef2782f2da302923703aaefbe2c3270d3b2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608010"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215407"
 ---
-# <a name="manage-load-sets"></a><span data-ttu-id="35bc3-102">荷重セットを管理します。</span><span class="sxs-lookup"><span data-stu-id="35bc3-102">Manage load sets</span></span>
+# <a name="manage-load-sets"></a><span data-ttu-id="36611-102">読み込みセットの管理</span><span class="sxs-lookup"><span data-stu-id="36611-102">Manage load sets</span></span>
 
-<span data-ttu-id="35bc3-103">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="35bc3-103">Content coming soon.</span></span>
+<span data-ttu-id="36611-103">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="36611-103">Content coming soon.</span></span>

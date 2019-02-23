@@ -6,67 +6,67 @@ manager: laurawi
 ms.date: 8/7/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2ea4459b-cb13-4ce2-b9d1-0619316df88c
-description: この見解を優先する推奨設定を使用すると保存されているし、通知することにより可能なギャップがない場合、Office 365 の共有は、機密性の高いコンテンツを安全に保つ、DLP ポリシーの適用範囲。セキュリティのホーム ページにこの推奨事項が表示されます&amp;コンプライアンス センター、ドキュメントのトップ 5 の最も一般的な種類の機密情報が含まれている DLP ポリシーで保護されていない場合。
-ms.openlocfilehash: fcd3a5a3a12932b22c310938c12f71fb01019411
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+description: この洞察を重視する推奨事項は、組織が DLP ポリシーの範囲内に潜在的なギャップがある場合に通知することによって、Office 365 で機密コンテンツを保存および共有する際に、機密コンテンツを安全に保持するのに役に立ちます。ドキュメントに上位5つの最も一般的な種類の機密&amp;情報が含まれていても、DLP ポリシーによって保護されていない場合は、セキュリティコンプライアンスセンターのホームページにこの推奨事項が表示されます。
+ms.openlocfilehash: ba5a1dd6165309ec024087f6b7c036edd5b480bc
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002630"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220537"
 ---
-# <a name="get-started-with-dlp-policy-recommendations"></a><span data-ttu-id="59800-104">DLP の推奨ポリシーの概要</span><span class="sxs-lookup"><span data-stu-id="59800-104">Get started with DLP policy recommendations</span></span>
+# <a name="get-started-with-dlp-policy-recommendations"></a><span data-ttu-id="3b647-104">DLP の推奨ポリシーの概要</span><span class="sxs-lookup"><span data-stu-id="3b647-104">Get started with DLP policy recommendations</span></span>
 
-<span data-ttu-id="59800-p102">この見解を優先する推奨設定を使用すると保存されているし、通知することにより可能なギャップがない場合、Office 365 の共有は、機密性の高いコンテンツを安全に保つ、DLP ポリシーの適用範囲。セキュリティの [**ホーム**] ページでこの推奨事項が表示されます&amp;コンプライアンス センター、文書は、トップ 5 の最も一般的な種類の機密情報のいずれかが含まれているが、データ損失防止 (DLP) ポリシーで保護されていない場合。</span><span class="sxs-lookup"><span data-stu-id="59800-p102">This insight-driven recommendation helps your organization keep sensitive content secure when it's stored and shared in Office 365 by informing you when there's a possible gap in your DLP policy coverage. You'll see this recommendation on the **Home** page of the Security &amp; Compliance Center, if your documents contain any of the top-five most common types of sensitive information but aren't protected by a data loss prevention (DLP) policy.</span></span> 
+<span data-ttu-id="3b647-p102">この洞察を重視する推奨事項は、組織が DLP ポリシーの範囲内に潜在的なギャップがある場合に通知することによって、Office 365 で機密コンテンツを保存および共有する際に、機密コンテンツを安全に保持するのに役に立ちます。ドキュメントに上位5つの最も\*\*\*\* 一般的な種類の機密&amp;情報が含まれていても、データ損失防止 (DLP) ポリシーでは保護されていない場合は、セキュリティコンプライアンスセンターのホームページにこの推奨事項が表示されます。</span><span class="sxs-lookup"><span data-stu-id="3b647-p102">This insight-driven recommendation helps your organization keep sensitive content secure when it's stored and shared in Office 365 by informing you when there's a possible gap in your DLP policy coverage. You'll see this recommendation on the **Home** page of the Security &amp; Compliance Center, if your documents contain any of the top-five most common types of sensitive information but aren't protected by a data loss prevention (DLP) policy.</span></span> 
   
-<span data-ttu-id="59800-p103">このウィジェットを使用するにはクリックするだけの 2 つのカスタマイズされた DLP ポリシーを簡単に作成して、この DLP ポリシーを作成した後は、完全にカスタマイズ可能です。最初は、推奨事項が表示されない場合は、**詳細と\*\*\*\*推奨する**] セクションの下部にあるをクリックすると実行してくださいに注意してください。</span><span class="sxs-lookup"><span data-stu-id="59800-p103">You can use this widget to quickly create a customized DLP policy in just a click or two, and after you create this DLP policy, it's fully customizable. Note that if you don't see the recommendation at first, try clicking **+More** at the bottom of the **Recommended for you** section.</span></span> 
+<span data-ttu-id="3b647-p103">このウィジェットを使用すると、クリックまたは2つのカスタマイズされた dlp ポリシーをすばやく作成できます。この dlp ポリシーを作成すると、完全にカスタマイズできるようになります。最初に推奨事項が表示されない場合は、[**推奨する**方法] セクションの下部にある [ **+ More** ] をクリックしてください。</span><span class="sxs-lookup"><span data-stu-id="3b647-p103">You can use this widget to quickly create a customized DLP policy in just a click or two, and after you create this DLP policy, it's fully customizable. Note that if you don't see the recommendation at first, try clicking **+More** at the bottom of the **Recommended for you** section.</span></span> 
   
-![という名前の機密情報が保護されていないウィジェット](media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
+![保護されていない機密情報という名前のウィジェット](media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
   
-## <a name="create-the-recommended-dlp-policy"></a><span data-ttu-id="59800-110">推奨の DLP ポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="59800-110">Create the recommended DLP policy</span></span>
+## <a name="create-the-recommended-dlp-policy"></a><span data-ttu-id="3b647-110">推奨の DLP ポリシーを作成する</span><span class="sxs-lookup"><span data-stu-id="3b647-110">Create the recommended DLP policy</span></span>
 
-<span data-ttu-id="59800-111">ウィジェットでは、機密情報の保護を解除して表示されている場合は、DLP ポリシーを簡単に作成するのには一番下にある**開始**を選択します。</span><span class="sxs-lookup"><span data-stu-id="59800-111">When the widget shows you unprotected sensitive information, choose **Get started** at the bottom to quickly create a DLP policy.</span></span> 
+<span data-ttu-id="3b647-111">保護されていない機密情報がウィジェットに表示されたら、一番下にある [**開始**] を選んで DLP ポリシーをすばやく作成します。</span><span class="sxs-lookup"><span data-stu-id="3b647-111">When the widget shows you unprotected sensitive information, choose **Get started** at the bottom to quickly create a DLP policy.</span></span> 
   
-<span data-ttu-id="59800-112">この DLP ポリシーの機密情報を保護するためには。</span><span class="sxs-lookup"><span data-stu-id="59800-112">To help protect the sensitive information, this DLP policy:</span></span>
+<span data-ttu-id="3b647-112">機密情報を保護するために、次の DLP ポリシーを使用します。</span><span class="sxs-lookup"><span data-stu-id="3b647-112">To help protect the sensitive information, this DLP policy:</span></span>
   
-- <span data-ttu-id="59800-113">Exchange、SharePoint、および機密情報の保護されていない種類のいずれかを含む OneDrive のコンテンツは、組織外のユーザーと共有されている場合を検出します。</span><span class="sxs-lookup"><span data-stu-id="59800-113">Detects when content in Exchange, SharePoint, and OneDrive that contains one of the unprotected types of sensitive information is shared with people outside your organization.</span></span>
+- <span data-ttu-id="3b647-113">保護されていない種類の機密情報のいずれかが含まれている Exchange、SharePoint、OneDrive のコンテンツを組織外のユーザーと共有していることを検出します。</span><span class="sxs-lookup"><span data-stu-id="3b647-113">Detects when content in Exchange, SharePoint, and OneDrive that contains one of the unprotected types of sensitive information is shared with people outside your organization.</span></span>
     
-- <span data-ttu-id="59800-p104">組織外のユーザーとコンテンツを共有して、行ったことのようなものを追跡することができるように、詳細な利用状況レポートを生成します。DLP の[レポート](view-the-dlp-reports.md)と[監査ログのデータ](search-the-audit-log-in-security-and-compliance.md)を使用することができます (場所**活動** = **DLP**) にこの情報を参照してください。</span><span class="sxs-lookup"><span data-stu-id="59800-p104">Generates detailed activity reports so that you can track things like who shared the content with people outside your organization and when they did it. You can use the [DLP reports](view-the-dlp-reports.md) and [audit log data](search-the-audit-log-in-security-and-compliance.md) (where **Activity** = **DLP**) to see this information.</span></span>
+- <span data-ttu-id="3b647-p104">詳細なアクティビティレポートを生成して、組織外のユーザーとコンテンツを共有しているユーザーや、自分が行ったことなどを追跡できるようにします。[DLP レポート](view-the-dlp-reports.md)および[監査ログデータ](search-the-audit-log-in-security-and-compliance.md)(**アクティビティ** = **DLP**) を使用して、この情報を確認できます。</span><span class="sxs-lookup"><span data-stu-id="3b647-p104">Generates detailed activity reports so that you can track things like who shared the content with people outside your organization and when they did it. You can use the [DLP reports](view-the-dlp-reports.md) and [audit log data](search-the-audit-log-in-security-and-compliance.md) (where **Activity** = **DLP**) to see this information.</span></span>
     
-<span data-ttu-id="59800-116">DLP ポリシーを選択することもできます。</span><span class="sxs-lookup"><span data-stu-id="59800-116">You can also choose to have the DLP policy:</span></span>
+<span data-ttu-id="3b647-116">DLP ポリシーを選択することもできます。</span><span class="sxs-lookup"><span data-stu-id="3b647-116">You can also choose to have the DLP policy:</span></span>
   
-- <span data-ttu-id="59800-117">電子メールで送信インシデント レポート、組織外のユーザーとユーザーが機密性の高い情報の多くを共有する場合。</span><span class="sxs-lookup"><span data-stu-id="59800-117">Send you an incident report email when users share a lot of this sensitive information with people outside your organization.</span></span>
+- <span data-ttu-id="3b647-117">ユーザーがこの機密情報を組織外のユーザーと共有している場合は、インシデントレポート電子メールを送信します。</span><span class="sxs-lookup"><span data-stu-id="3b647-117">Send you an incident report email when users share a lot of this sensitive information with people outside your organization.</span></span>
     
-- <span data-ttu-id="59800-118">電子メール インシデント レポートには、他のユーザーを追加します。</span><span class="sxs-lookup"><span data-stu-id="59800-118">Add other users to the email incident report.</span></span>
+- <span data-ttu-id="3b647-118">他のユーザーを電子メールインシデントレポートに追加します。</span><span class="sxs-lookup"><span data-stu-id="3b647-118">Add other users to the email incident report.</span></span>
     
-- <span data-ttu-id="59800-p105">ポリシー ヒントを表示して、この機密情報を組織外のユーザーと共有するとき、ユーザーに電子メール通知を送信します。これらのオプションの詳細については、[送信する電子メール通知と DLP ポリシーのポリシー ヒントの表示](use-notifications-and-policy-tips.md)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="59800-p105">Show a policy tip and send an email notification to users when they attempt to share this sensitive information with people outside your organization. For more information on these options, see [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md).</span></span>
+- <span data-ttu-id="3b647-p105">ポリシーヒントを表示し、この機密情報を組織外のユーザーと共有しようとしたときに、ユーザーに電子メール通知を送信します。これらのオプションの詳細については、「[電子メール通知を送信する」と「DLP ポリシーのポリシーヒントを表示する](use-notifications-and-policy-tips.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3b647-p105">Show a policy tip and send an email notification to users when they attempt to share this sensitive information with people outside your organization. For more information on these options, see [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md).</span></span>
     
-<span data-ttu-id="59800-p106">後でこれらのオプションを変更する場合は、作成後、DLP ポリシーを編集できます。たとえば、行うことができます、ポリシーによる機密性の高い情報が含まれるコンテンツの共有もブロックの方がより制限の厳しい最初の段階で、次のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="59800-p106">If you want to change these options later, you can edit the DLP policy after it's created. For example, you can make the policy more restrictive by even blocking people from sharing content that contains sensitive information in the first place - see the next section.</span></span>
+<span data-ttu-id="3b647-p106">これらのオプションを後で変更する場合は、作成後に DLP ポリシーを編集できます。たとえば、最初の場所に機密情報が含まれるコンテンツの共有をブロックすることで、ポリシーの制限を高めることができます。次のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="3b647-p106">If you want to change these options later, you can edit the DLP policy after it's created. For example, you can make the policy more restrictive by even blocking people from sharing content that contains sensitive information in the first place - see the next section.</span></span>
   
-![ウィジェットの設定が保護されていない機密情報を名前付き](media/b6106cbd-1bed-4582-aaef-b678de470c9b.png)
+![保護されていない機密情報という名前のウィジェットの設定](media/b6106cbd-1bed-4582-aaef-b678de470c9b.png)
   
-## <a name="edit-the-recommended-dlp-policy"></a><span data-ttu-id="59800-124">推奨の DLP ポリシーを編集します。</span><span class="sxs-lookup"><span data-stu-id="59800-124">Edit the recommended DLP policy</span></span>
+## <a name="edit-the-recommended-dlp-policy"></a><span data-ttu-id="3b647-124">推奨の DLP ポリシーを編集する</span><span class="sxs-lookup"><span data-stu-id="3b647-124">Edit the recommended DLP policy</span></span>
 
-<span data-ttu-id="59800-125">DLP ポリシーを作成するウィジェットを使用するポリシー下に表示されます**データ損失の防止**セキュリティ**ポリシー**のページに&amp;コンプライアンス センターです。</span><span class="sxs-lookup"><span data-stu-id="59800-125">After you use the widget to create a DLP policy, the policy appears under **Data loss prevention** on the **Policy** page of the Security &amp; Compliance Center.</span></span> 
+<span data-ttu-id="3b647-125">このウィジェットを使用して DLP ポリシーを作成すると、セキュリティ&amp;コンプライアンスセンターの [**ポリシー** ] ページの [**データ損失防止**] の下にポリシーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="3b647-125">After you use the widget to create a DLP policy, the policy appears under **Data loss prevention** on the **Policy** page of the Security &amp; Compliance Center.</span></span> 
   
-<span data-ttu-id="59800-p107">既定では、ポリシーがという名前の**システムの機密情報の共有ポリシーをお勧め**します。このポリシーは、完全にカスタマイズ可能なすべての DLP ポリシーが自分を最初から作成することと同じです。たとえば、ウィジェットを使用する場合は、インシデント レポートと、ポリシーのヒントをオンにしないようにする場合、常にポリシーを編集していつでもこれらのオプションをオンにします。</span><span class="sxs-lookup"><span data-stu-id="59800-p107">By default, the policy is named **System Recommended Policy for Sharing Sensitive Information**. This policy is fully customizable, the same as any DLP policy that you create yourself from scratch. For example, if you decided not to turn on incident reports and policy tips when you used the widget, you can always edit the policy and turn on those options at any time.</span></span>
+<span data-ttu-id="3b647-p107">既定では、**機密情報を共有するためのシステム推奨ポリシー**という名前のポリシーです。このポリシーは完全にカスタマイズ可能ですが、最初から自分で作成した DLP ポリシーと同じです。たとえば、ウィジェットを使用したときにインシデントレポートとポリシーヒントを有効にしないことにした場合は、いつでもポリシーを編集してこれらのオプションを有効にすることができます。</span><span class="sxs-lookup"><span data-stu-id="3b647-p107">By default, the policy is named **System Recommended Policy for Sharing Sensitive Information**. This policy is fully customizable, the same as any DLP policy that you create yourself from scratch. For example, if you decided not to turn on incident reports and policy tips when you used the widget, you can always edit the policy and turn on those options at any time.</span></span>
   
-![システムの機密情報を共有するためのポリシーの推奨](media/2fc49f25-ec25-4433-add4-d60f73888f13.png)
+![機密情報を共有するためのシステム推奨ポリシー](media/2fc49f25-ec25-4433-add4-d60f73888f13.png)
   
-## <a name="when-the-widget-does-and-does-not-appear"></a><span data-ttu-id="59800-130">ウィジェットは、表示されない.</span><span class="sxs-lookup"><span data-stu-id="59800-130">When the widget does and does not appear</span></span>
+## <a name="when-the-widget-does-and-does-not-appear"></a><span data-ttu-id="3b647-130">ウィジェットが表示されない場合</span><span class="sxs-lookup"><span data-stu-id="3b647-130">When the widget does and does not appear</span></span>
 
-<span data-ttu-id="59800-131">Widget という名前の**機密情報が保護されていない**セクションに表示されます、**推奨する**セキュリティの [**ホーム**] ページの&amp;コンプライアンス センターです。</span><span class="sxs-lookup"><span data-stu-id="59800-131">The widget named **Unprotected Sensitive Information** appears in the **Recommended for you** section of the **Home** page of the Security &amp; Compliance Center.</span></span> 
+<span data-ttu-id="3b647-131">保護されていない**機密情報**という名前のウィジェットが\*\*\*\* 、セキュリティ&amp; /コンプライアンスセンターのホームページの [**お勧めのお勧め**] セクションに表示されます。</span><span class="sxs-lookup"><span data-stu-id="3b647-131">The widget named **Unprotected Sensitive Information** appears in the **Recommended for you** section of the **Home** page of the Security &amp; Compliance Center.</span></span> 
   
-<span data-ttu-id="59800-132">このウィジェットでは、場合にのみ表示されます。</span><span class="sxs-lookup"><span data-stu-id="59800-132">This widget appears only when:</span></span>
+<span data-ttu-id="3b647-132">このウィジェットは、次の場合にのみ表示されます。</span><span class="sxs-lookup"><span data-stu-id="3b647-132">This widget appears only when:</span></span>
   
-- <span data-ttu-id="59800-133">SharePoint または OneDrive では、過去 30 日間の 5 つの最も一般的な種類の機密情報を含む新規ドキュメントが検出されます。</span><span class="sxs-lookup"><span data-stu-id="59800-133">New documents containing any of the five most common types of sensitive information are detected in SharePoint or OneDrive over the past 30 days.</span></span>
+- <span data-ttu-id="3b647-133">過去30日間の SharePoint または OneDrive で最も一般的な種類の機密情報のいずれかを含む新しいドキュメントが検出されます。</span><span class="sxs-lookup"><span data-stu-id="3b647-133">New documents containing any of the five most common types of sensitive information are detected in SharePoint or OneDrive over the past 30 days.</span></span>
     
-- <span data-ttu-id="59800-134">機微な情報は、現在既存の DLP ポリシーによって保護されていません。</span><span class="sxs-lookup"><span data-stu-id="59800-134">That sensitive information is not already protected by an existing DLP policy.</span></span>
+- <span data-ttu-id="3b647-134">その機密情報は既存の DLP ポリシーによって保護されていません。</span><span class="sxs-lookup"><span data-stu-id="3b647-134">That sensitive information is not already protected by an existing DLP policy.</span></span>
     
-<span data-ttu-id="59800-135">データのスキャンは、常に DLP ポリシーとは異なりこの推奨事項をスキャンし、DLP ポリシーの適用範囲のギャップの約 48 時間ごとに新しいコンテンツをアップロードすると後が表示されることを推奨の最大 2 日間がかかる場合がありますので。</span><span class="sxs-lookup"><span data-stu-id="59800-135">Unlike DLP policies that are constantly scanning your data, this recommendation scans for gaps in your DLP policy coverage roughly every 48 hours, so after new content is uploaded, it may take up to two days for the recommendation to appear.</span></span>
+<span data-ttu-id="3b647-135">絶えずデータをスキャンする dlp ポリシーとは異なり、この推奨事項では、dlp ポリシーの範囲内で約48時間ごとにギャップをスキャンします。そのため、新しいコンテンツがアップロードされると、推奨事項が表示されるまで最大で2日かかる場合があります。</span><span class="sxs-lookup"><span data-stu-id="3b647-135">Unlike DLP policies that are constantly scanning your data, this recommendation scans for gaps in your DLP policy coverage roughly every 48 hours, so after new content is uploaded, it may take up to two days for the recommendation to appear.</span></span>
   
-<span data-ttu-id="59800-136">最後に、ウィジェットを使用して推奨される DLP ポリシーを作成した後、ウィジェットは、**ホーム**ページから削除されます。</span><span class="sxs-lookup"><span data-stu-id="59800-136">Finally, after you use the widget to create a recommended DLP policy, the widget disappears from the **Home** page.</span></span> 
+<span data-ttu-id="3b647-136">最後に、ウィジェットを使用して推奨の DLP ポリシーを作成すると、そのウィジェットは**ホーム**ページに表示されなくなります。</span><span class="sxs-lookup"><span data-stu-id="3b647-136">Finally, after you use the widget to create a recommended DLP policy, the widget disappears from the **Home** page.</span></span> 
   
 

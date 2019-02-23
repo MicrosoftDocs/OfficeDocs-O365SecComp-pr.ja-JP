@@ -6,44 +6,44 @@ manager: laurawi
 ms.date: 6/4/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
-description: 学習の方法は、セキュリティの推奨される操作を把握する詳細なレポートから移動することができます&amp;コンプライアンス センターです。
-ms.openlocfilehash: 48c7283723a75685e16e1f7ddbe34bc3779819cf
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: セキュリティ&amp; /コンプライアンスセンターの推奨されるアクションを使用して、詳細レポートから洞察に移動する方法について説明します。
+ms.openlocfilehash: b0fdb3a75db8e3b18813193a5fa7c5523de16fe8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014979"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219087"
 ---
-# <a name="walkthrough---from-a-detailed-report-to-an-insight"></a><span data-ttu-id="d48d0-103">チュートリアル - 詳細レポートからインサイトへの移動</span><span class="sxs-lookup"><span data-stu-id="d48d0-103">Walkthrough - From a detailed report to an insight</span></span>
+# <a name="walkthrough---from-a-detailed-report-to-an-insight"></a><span data-ttu-id="87057-103">チュートリアル - 詳細レポートからインサイトへの移動</span><span class="sxs-lookup"><span data-stu-id="87057-103">Walkthrough - From a detailed report to an insight</span></span>
 
-<span data-ttu-id="d48d0-104">経験がない場合に[のレポートと Office 365 のセキュリティ情報&amp;コンプライアンス センター](reports-and-insights-in-security-and-compliance.md)、移動できるか簡単に詳細なレポートから把握するを参照してくださいに役立つ場合があり、推奨される操作です。</span><span class="sxs-lookup"><span data-stu-id="d48d0-104">If you're new to [reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md), it might help to see how you can easily navigate from a detailed report to an insight and recommended actions.</span></span> 
+<span data-ttu-id="87057-104">[Office 365 セキュリティ&amp; /コンプライアンスセンターのレポートと洞察](reports-and-insights-in-security-and-compliance.md)を初めて使用する場合は、詳細レポートから洞察や推奨される操作まで、どのように簡単に移動できるかを確認するのに役立つ場合があります。</span><span class="sxs-lookup"><span data-stu-id="87057-104">If you're new to [reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md), it might help to see how you can easily navigate from a detailed report to an insight and recommended actions.</span></span> 
   
-<span data-ttu-id="d48d0-p101">これは、セキュリティのいくつかのチュートリアルのいずれかの&amp;コンプライアンス センターです。その他のチュートリアルを表示するには、 ["関連項目"](#related-topics)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="d48d0-p101">This is one of several walkthroughs for the Security &amp; Compliance Center. To see additional walkthroughs, see the [Related topics](#related-topics) section.</span></span> 
+<span data-ttu-id="87057-p101">これは、セキュリティ&amp;コンプライアンスセンターのいくつかのチュートリアルの1つです。その他のチュートリアルについては、「[関連項目](#related-topics)」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="87057-p101">This is one of several walkthroughs for the Security &amp; Compliance Center. To see additional walkthroughs, see the [Related topics](#related-topics) section.</span></span> 
   
-## <a name="walkthrough-from-a-detailed-report-to-an-insight"></a><span data-ttu-id="d48d0-107">チュートリアル: 把握する詳細なレポートから</span><span class="sxs-lookup"><span data-stu-id="d48d0-107">Walkthrough: From a detailed report to an insight</span></span>
+## <a name="walkthrough-from-a-detailed-report-to-an-insight"></a><span data-ttu-id="87057-107">チュートリアル: 詳細レポートから洞察を得る</span><span class="sxs-lookup"><span data-stu-id="87057-107">Walkthrough: From a detailed report to an insight</span></span>
 
-<span data-ttu-id="d48d0-p102">見てみましょうフロー詳細なレポートからを把握し、操作します。(これ[スパム対策およびマルウェア対策](anti-spam-and-anti-malware-protection.md)の簡単な例です)。</span><span class="sxs-lookup"><span data-stu-id="d48d0-p102">Let's walk through the flow from a detailed report to an insight and actions. (This is a brief [anti-spam and anti-malware](anti-spam-and-anti-malware-protection.md) example.)</span></span> 
+<span data-ttu-id="87057-p102">詳細レポートから洞察およびアクションへのフローについて説明します。(これは、短い[スパム対策とマルウェア対策](anti-spam-and-anti-malware-protection.md)の例です。)</span><span class="sxs-lookup"><span data-stu-id="87057-p102">Let's walk through the flow from a detailed report to an insight and actions. (This is a brief [anti-spam and anti-malware](anti-spam-and-anti-malware-protection.md) example.)</span></span> 
   
-1. <span data-ttu-id="d48d0-p103">処理を開始[セキュリティ&amp;コンプライアンス センター](https://protection.office.com)のレポートです。(**レポート**には、 \> **ダッシュ ボード**です)。</span><span class="sxs-lookup"><span data-stu-id="d48d0-p103">We begin with [Security &amp; Compliance Center](https://protection.office.com) reports. (Go to **Reports** \> **Dashboard**.) </span></span><br/><span data-ttu-id="d48d0-112">![セキュリティ&amp;コンプライアンス センターでは、レポートに移動\>ダッシュ ボード](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)</span><span class="sxs-lookup"><span data-stu-id="d48d0-112">![In the Security &amp; Compliance Center, go to Reports \> Dashboard](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)</span></span>
+1. <span data-ttu-id="87057-p103">[ &amp;セキュリティコンプライアンスセンター](https://protection.office.com)のレポートから始めます。([**レポート** \> ]**ダッシュボード**に移動します。)</span><span class="sxs-lookup"><span data-stu-id="87057-p103">We begin with [Security &amp; Compliance Center](https://protection.office.com) reports. (Go to **Reports** \> **Dashboard**.) </span></span><br/><span data-ttu-id="87057-112">![セキュリティ&amp; /コンプライアンスセンターで、[レポート\> ] ダッシュボードに移動します。](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)</span><span class="sxs-lookup"><span data-stu-id="87057-112">![In the Security &amp; Compliance Center, go to Reports \> Dashboard](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)</span></span>
   
-2. <span data-ttu-id="d48d0-p104">詳細なビューを取得するレポートを選択します。(**脅威保護のステータス**レポートなど、レポートを選択します)。</span><span class="sxs-lookup"><span data-stu-id="d48d0-p104">We choose a report to get a more detailed view. (Choose a report, such as the **Threat Protection Status** report.)</span></span><br/><span data-ttu-id="d48d0-115">![脅威保護の状態のレポート情報を表示](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)</span><span class="sxs-lookup"><span data-stu-id="d48d0-115">![Threat Protection Status report showing insights](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)</span></span>
+2. <span data-ttu-id="87057-p104">レポートを選択して、より詳細なビューを取得します。(**脅威保護の状態**レポートなどのレポートを選択します。)</span><span class="sxs-lookup"><span data-stu-id="87057-p104">We choose a report to get a more detailed view. (Choose a report, such as the **Threat Protection Status** report.)</span></span><br/><span data-ttu-id="87057-115">![分析情報を示す脅威保護状態レポート](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)</span><span class="sxs-lookup"><span data-stu-id="87057-115">![Threat Protection Status report showing insights](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)</span></span>
   
-3. <span data-ttu-id="d48d0-p105">グラフとレポートの下の洞察インジケーターがわかります。見識のマーカーにマウス ポインターを移動、追加の詳細情報を示します。(追加の詳細を表示する情報のマーカーの上を移動します。)</span><span class="sxs-lookup"><span data-stu-id="d48d0-p105">We notice an insights indicator in the chart as well as below the report. Positioning the mouse pointer on the insights marker gives some additional details. (Hover over the insights marker to see additional details.)</span></span>
+3. <span data-ttu-id="87057-p105">レポートの下と同様に、グラフにはインサイトインジケーターが表示されます。insights マーカーにマウスポインターを置くと、追加の詳細が表示されます。(詳細については、insights マーカーの上にカーソルを移動してください)。</span><span class="sxs-lookup"><span data-stu-id="87057-p105">We notice an insights indicator in the chart as well as below the report. Positioning the mouse pointer on the insights marker gives some additional details. (Hover over the insights marker to see additional details.)</span></span>
     
-4. <span data-ttu-id="d48d0-p106">グラフの洞察のマーカーまたはグラフの下のマルウェアに関する情報ウィジェットのいずれかをクリックすると、詳細ウィンドウが開きます。(情報のウィジェットを選択、グラフの下)。</span><span class="sxs-lookup"><span data-stu-id="d48d0-p106">Clicking either the insights marker in the chart or the insights widget about malware below the chart opens a details pane. (Below the chart, select the insights widget.)</span></span><br/><span data-ttu-id="d48d0-121">![マルウェアについての洞察力の詳細](media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)</span><span class="sxs-lookup"><span data-stu-id="d48d0-121">![Details for insights about malware](media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)</span></span><br/><span data-ttu-id="d48d0-p107">詳細ウィンドウが用意されています情報と推奨事項を考慮すると、ポリシーを確認する、さらに調査を実行および編集の状態を含みます。([Office 365 でのスパム対策およびマルウェア対策保護の詳細情報](anti-spam-and-anti-malware-protection.md))</span><span class="sxs-lookup"><span data-stu-id="d48d0-p107">The details pane provides information and recommendations to consider, including reviewing policies, conducting further exploration, and editing status. ([Learn more about anti-spam and anti-malware protection in Office 365](anti-spam-and-anti-malware-protection.md).)</span></span>
+4. <span data-ttu-id="87057-p106">グラフの下にある、グラフまたは insights ウィジェットの [insights] マーカーのいずれかをクリックすると、グラフの下に詳細ウィンドウが表示されます。(グラフの下で、insights ウィジェットを選択します)。</span><span class="sxs-lookup"><span data-stu-id="87057-p106">Clicking either the insights marker in the chart or the insights widget about malware below the chart opens a details pane. (Below the chart, select the insights widget.)</span></span><br/><span data-ttu-id="87057-121">![マルウェアに関する洞察の詳細](media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)</span><span class="sxs-lookup"><span data-stu-id="87057-121">![Details for insights about malware](media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)</span></span><br/><span data-ttu-id="87057-p107">詳細ウィンドウには、ポリシーの確認、詳細な探索の実施、状態の編集など、考慮すべき情報と推奨事項が表示されます。([Office 365 でのスパム対策とマルウェア対策の保護の詳細について説明](anti-spam-and-anti-malware-protection.md)します)。</span><span class="sxs-lookup"><span data-stu-id="87057-p107">The details pane provides information and recommendations to consider, including reviewing policies, conducting further exploration, and editing status. ([Learn more about anti-spam and anti-malware protection in Office 365](anti-spam-and-anti-malware-protection.md).)</span></span>
     
-<span data-ttu-id="d48d0-124">こうするは、詳細なレポートから、情報に移動でき、アクションをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="d48d0-124">In this way, we can move from a detailed report to an insight and recommended actions.</span></span> 
+<span data-ttu-id="87057-124">このようにして、詳細レポートから洞察や推奨されるアクションに移動することができます。</span><span class="sxs-lookup"><span data-stu-id="87057-124">In this way, we can move from a detailed report to an insight and recommended actions.</span></span> 
   
-## <a name="related-topics"></a><span data-ttu-id="d48d0-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="d48d0-125">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="87057-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="87057-125">Related topics</span></span>
 
-[<span data-ttu-id="d48d0-126">チュートリアル: 詳細なレポートを調べるから</span><span class="sxs-lookup"><span data-stu-id="d48d0-126">Walkthrough: From an insight to a detailed report</span></span>](from-an-insight-to-a-detailed-report.md)
+[<span data-ttu-id="87057-126">チュートリアル: 洞察から詳細レポートへ</span><span class="sxs-lookup"><span data-stu-id="87057-126">Walkthrough: From an insight to a detailed report</span></span>](from-an-insight-to-a-detailed-report.md)
   
-[<span data-ttu-id="d48d0-127">チュートリアル: 把握するダッシュ ボードから</span><span class="sxs-lookup"><span data-stu-id="d48d0-127">Walkthrough: From a dashboard to an insight</span></span>](from-a-dashboard-to-an-insight.md)
+[<span data-ttu-id="87057-127">チュートリアル: ダッシュボードから洞察へ</span><span class="sxs-lookup"><span data-stu-id="87057-127">Walkthrough: From a dashboard to an insight</span></span>](from-a-dashboard-to-an-insight.md)
   
 
