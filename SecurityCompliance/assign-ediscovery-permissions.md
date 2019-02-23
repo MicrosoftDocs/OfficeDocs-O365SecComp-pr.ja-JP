@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: セキュリティ&amp; /コンプライアンスセンターを使用して、電子情報開示関連のタスクを実行するために必要なアクセス許可を割り当てます。
-ms.openlocfilehash: 44992697af8ba27f50566398c3f79095653ea4c0
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: c4dcbf51282aa2887fd7d5032eb8587b5e9d56d7
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219527"
+ms.locfileid: "30223276"
 ---
 # <a name="assign-ediscovery-permissions-in-the-office-365-security-amp-compliance-center"></a>Office 365 セキュリティ&amp;コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる
 

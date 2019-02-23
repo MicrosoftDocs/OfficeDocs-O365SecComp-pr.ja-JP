@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: ファイルをそれぞれの関連度でスコアリングして分析結果を生成するには、Office 365 Advanced eDiscovery で関連度トレーニングを設定するための推奨事項を参照してください。
-ms.openlocfilehash: 189c81bd415f94d4ded06fd13eaf5aea861b283d
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: e2ab772c900068c140e365c10b681da3983bea6b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "27446348"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215627"
 ---
 # <a name="manage-relevance-setup-in-office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery で関連度の設定を管理する
 

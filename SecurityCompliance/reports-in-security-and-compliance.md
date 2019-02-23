@@ -3,21 +3,20 @@ title: Office 365 セキュリティ センターとコンプライアンス セ
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 f1_keywords:
 - ms.o365.cc.AuditingHelp
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: 'Office 365 Security & コンプライアンスセンターを使用して、SharePoint online および Exchange online 組織のさまざまなレポートと、Azure Active Directory レポートを取得します。  '
-ms.openlocfilehash: 36e6d3efce1758d52cd30451a2b60b19f4654056
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: 5f3e510aaacd82095cf502acd5609a204e738bd3
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087306"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223546"
 ---
 # <a name="reports-in-the-office-365-security--compliance-center"></a>Office 365 セキュリティ センターとコンプライアンス センターのレポート
 

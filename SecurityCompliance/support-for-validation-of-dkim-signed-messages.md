@@ -3,7 +3,6 @@ title: DKIM 署名付きメッセージの検証をサポートする
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,13 +11,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
-description: について DKIM の検証メッセージを Exchange のオンライン保護と Exchange のオンラインでの署名
-ms.openlocfilehash: 22f0d1c4fdd6b1e159db732d6ef3d956efbf99c9
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+description: exchange online Protection と exchange online での dkim 署名付きメッセージの検証について
+ms.openlocfilehash: 7b40769e18c01199669043c42031987695bba639
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255832"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223326"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>DKIM 署名付きメッセージの検証をサポートする
 
@@ -28,6 +27,6 @@ DKIM は、メッセージ ヘッダー内の DKIM 署名ヘッダーに表示�
   
  `Authentication-Results: <contoso.com>; dkim=pass (signature was verified) header.d=example.com;`
   
-フィルターに DKIM の検証の結果を管理者が Exchange の[メール フロー ルール](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)(トランスポート ルールでとも呼ばれます) を作成できますかとのメッセージのルーティングが必要な。 
+管理者は、dkim 検証の結果に対して Exchange[メールフロールール](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)(トランスポートルールとも呼ばれます) を作成し、必要に応じてメッセージをフィルター処理またはルーティングすることができます。 
   
 

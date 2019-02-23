@@ -3,7 +3,6 @@ title: Office 365 アドバンスト eDiscovery 用に検索結果を準備す�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -14,12 +13,12 @@ ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 高度な電子情報開示ツールを使用して詳細な分析を行う&amp;ために、Office 365 セキュリティコンプライアンスセンターでコンテンツ検索の結果を準備する方法について説明します。
-ms.openlocfilehash: 52573169692c2457e51898f9f36d2c586c7e7a4b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 04de96064f400f8055d0e477bf41ed1c7cb1b35f
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30212677"
+ms.locfileid: "30223846"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Office 365 アドバンスト eDiscovery 用に検索結果を準備する
 

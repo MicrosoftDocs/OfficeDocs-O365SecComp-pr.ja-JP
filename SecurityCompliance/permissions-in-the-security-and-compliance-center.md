@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d10608af-7934-490a-818e-e68f17d0e9c1
 description: Office 365 セキュリティ&amp;コンプライアンスセンターを使用すると、デバイス管理、データ損失防止、電子情報開示、保持などのコンプライアンスタスクを実行するユーザーにアクセス許可を付与することができます。これらのユーザーは、明示的にアクセスを許可したタスクのみを実行できます。セキュリティ&amp; /コンプライアンスセンターにアクセスするには、ユーザーは Office 365 のグローバル管理者または1つ以上の&amp;セキュリティコンプライアンスセンターの役割グループのメンバーである必要があります。
-ms.openlocfilehash: cee6bc64b971ef99343d35df74415e80c087321e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3ff5583a0a4f9dcabcc1b7d676593b7c6eb0bbba
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214917"
+ms.locfileid: "30223506"
 ---
 # <a name="permissions-in-the-office-365-security-amp-compliance-center"></a>Office 365 セキュリティ&amp; /コンプライアンスセンターのアクセス許可
 

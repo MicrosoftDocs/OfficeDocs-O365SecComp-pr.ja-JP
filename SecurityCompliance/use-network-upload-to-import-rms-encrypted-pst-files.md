@@ -6,104 +6,104 @@ manager: laurawi
 ms.date: 5/29/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: 84a595b8-cd77-4f66-ac52-57a33ddd4773
-description: RMS で暗号化された PST ファイルを Office 365 でユーザーのメールボックスにインポートするのには、ネットワークのアップロードを使用する方法について説明します。
-ms.openlocfilehash: 6460512e2d6085df684841248dc286d39dbd9d87
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: ネットワークアップロードを使用して、RMS で暗号化された PST ファイルを Office 365 のユーザーメールボックスにインポートする方法について説明します。
+ms.openlocfilehash: c552e8a4d1ddc4163fefaeff18b75a4dbd5ee4cb
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532765"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223646"
 ---
 # <a name="use-network-upload-to-import-rms-encrypted-pst-files-to-office-365"></a>ネットワーク アップロードを使用して、RMS で暗号化された PST ファイルを Office 365 にインポートする
 
-**この資料では、管理者用です。自分のメールボックスを PST ファイルをインポートしようとしていますか。[インポート電子メール、連絡先、および Outlook の .pst ファイルから予定表](https://go.microsoft.com/fwlink/p/?LinkID=785075)を参照してください。**
+**この記事は、管理者を対象としています。PST ファイルを自分のメールボックスにインポートしようとしていますか?「 [Outlook .pst ファイルからメール、連絡先、予定表をインポートする](https://go.microsoft.com/fwlink/p/?LinkID=785075)」を参照してください。**
    
-ネットワークの使用は、PST ファイルをユーザーのメールボックスにインポートするには、オプションと Office 365 のインポート サービスにアップロードします。ネットワークのアップロードでは、マイクロソフトのクラウド内の一時記憶領域、PST ファイルをアップロードすることを意味します。Office 365 のインポート サービスは、ターゲット ユーザーのメールボックスにストレージ領域から PST ファイルをコピーします。インポート サービスの新機能では、アップロード、およびマイクロソフトのクラウドに格納されている前に、PST ファイルを暗号化することができます。ユーザーのメールボックスにインポートすると、これらのファイルは暗号化を解除できません。 
+ユーザーのメールボックスに PST ファイルをインポートするには、ネットワークアップロードオプションと Office 365 インポートサービスを使用します。ネットワークのアップロードとは、PST ファイルを Microsoft クラウドの一時的なストレージ領域としてアップロードすることを意味します。その後、Office 365 インポートサービスは、PST ファイルをストレージ領域からターゲットユーザーのメールボックスにコピーします。インポートサービスの新機能により、PST ファイルを暗号化して Microsoft クラウドに保存することができます。これらのファイルは、ユーザーのメールボックスにインポートするときに暗号化が解除されます。 
   
-暗号化し、Office 365 のメールボックスを PST ファイルをインポートするための手順を以下に示します。
+PST ファイルを暗号化して Office 365 メールボックスにインポートするために必要な手順は次のとおりです。
   
 [手順 1:PST インポートの Azure Rights Management をセットアップする ](#step-1-set-up-azure-rights-management-for-pst-import)
 
 [手順 2:PST インポートの暗号化キーを生成する](#step-2-generate-an-encryption-key-for-pst-import)
 
-[手順 3: RMS のテナント ID とライセンスの URL を取得します。](#step-3-obtain-rms-tenant-id-and-licensing-url)
+[手順 3: RMS テナント ID とライセンス URL を取得する](#step-3-obtain-rms-tenant-id-and-licensing-url)
 
-[手順 4: PST インポート ツールをダウンロードして、SAS の URL をコピー](#step-4-download-the-pst-import-tools-and-copy-the-sas-url)
+[手順 4: PST インポートツールをダウンロードして、SAS URL をコピーする](#step-4-download-the-pst-import-tools-and-copy-the-sas-url)
 
-[手順 5: の暗号化し、PST ファイルを Office 365 にアップロードします。](#step-5-encrypt-and-upload-your-pst-files-to-office-365)
+[手順 5: PST ファイルを暗号化して Office 365 にアップロードする](#step-5-encrypt-and-upload-your-pst-files-to-office-365)
 
-[(省略可能)手順 6: Office 365 のビュー PST ファイルのアップロード](#optional-step-6-view-a-list-of-the-pst-files-uploaded-to-office-365)
+[オプション手順 6: Office 365 にアップロードされた PST ファイルの一覧を表示する](#optional-step-6-view-a-list-of-the-pst-files-uploaded-to-office-365)
 
-[PST インポート マッピング ファイルを作成する手順 7。](#step-7-create-the-pst-import-mapping-file)
+[手順 7: PST インポートのマッピングファイルを作成する](#step-7-create-the-pst-import-mapping-file)
 
 [手順 8:Office 365 で PST インポート ジョブを作成する](#step-8-create-a-pst-import-job-in-office-365)
   
 > [!IMPORTANT]
-> 設定し、組織を構成する手順 4 を 1 回だけを暗号化し、Office 365 のメールボックスを PST ファイルをインポートする手順 1 を実行する必要があります。次の手順を実行した後は、暗号化、アップロード、および複数の PST ファイルをインポートするたびを手順 8 から手順 5 に従います。 
+> PST ファイルを暗号化して Office 365 メールボックスにインポートするように組織を設定および構成するには、手順 1 ~ 4 を一度だけ実行する必要があります。これらの手順を実行した後、PST ファイルのバッチを暗号化、アップロード、およびインポートするたびに、手順5から手順8に従います。 
   
-Office 365 へのデータのインポートの詳細については、 [Office 365 の組織の PST ファイルのインポートの概要](importing-pst-files-to-office-365.md)を参照してください。
+office 365 へのデータのインポートの詳細については、「[組織の PST ファイルを office 365 にインポートする」の概要](importing-pst-files-to-office-365.md)を参照してください。
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
-- メールボックスのエクスポートをインポートの役割を割り当てるには、Exchange オンライン Office 365 のメールボックスを PST ファイルをインポートするのにはする必要があります。既定では、この役割はありませんに割り当てられている役割グループは、Exchange オンライン。組織の管理役割グループに、メールボックスのインポート エクスポートの役割を追加できます。または、新しい役割グループを作成、メールボックスのインポート エクスポートの役割を割り当てるし、ユーザー自身をメンバーとして追加します。詳細については、追加するロール グループのロール」を参照してください。 または、「作成」の役割グループの[役割グループの管理](https://go.microsoft.com/fwlink/p/?LinkId=730688)のセクションです。
+- PST ファイルを Office 365 メールボックスにインポートするには、Exchange Online でメールボックスのインポートのエクスポートの役割を割り当てられている必要があります。既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。[組織の管理] 役割グループに、メールボックスのインポートのエクスポートの役割を追加できます。または、新しい役割グループを作成し、メールボックスのインポートのエクスポート役割を割り当てて、自分をメンバーとして追加することもできます。詳細については、「 [Manage role groups](https://go.microsoft.com/fwlink/p/?LinkId=730688)」の「役割グループに役割を追加する」または「役割グループを作成する」のセクションを参照してください。
     
-    Office 365 のセキュリティのジョブのインポートを作成するのにはさらに、&amp;コンプライアンス センターは、次のいずれかを満たす必要があります。
+    さらに、Office 365 セキュリティ&amp;コンプライアンスセンターでインポートジョブを作成するには、次のいずれかの条件を満たしている必要があります。
     
-  - メール受信者の役割を割り当てるには、Exchange オンラインする必要があります。既定では、この役割は組織の管理と受信者の管理役割グループに割り当てられます。
+  - Exchange Online では、メール受信者の役割が割り当てられている必要があります。既定では、この役割は組織の管理役割グループと受信者管理役割グループに割り当てられます。
     
     または
     
-  - Office 365 の組織のグローバル管理者があります。
+  - Office 365 組織の全体管理者である必要があります。
     
   > [!TIP]
-  > Exchange Online の具体的には、Office 365 に PST ファイルをインポートする新しい役割グループを作成することを検討してください。PST ファイルをインポートするのには必要な特権を最低限のレベルで、新しい役割グループにメールボックスのエクスポートをインポートし、メール受信者の役割を割り当てるし、メンバーを追加します。 
+  > Office 365 に PST ファイルをインポートするための特別な目的である Exchange Online に新しい役割グループを作成することを検討してください。PST ファイルのインポートに必要な最低限の特権レベルについては、メールボックスのインポートの役割とメール受信者の役割を新しい役割グループに割り当ててから、メンバーを追加します。 
   
-- ファイル サーバーまたは共有のフォルダー、組織内で Office 365 にインポートする PST ファイルを保存する必要があります。ステップ 5 で、暗号化され、このファイル サーバーに格納されるか、Office 365 にフォルダーを共有する PST ファイルをアップロード、Office 365 の ImportTool を実行します。
+- Office 365 にインポートする PST ファイルは、組織内のファイルサーバーまたは共有フォルダーに格納する必要があります。手順5では、office 365 importtool を実行して、このファイルサーバーまたは共有フォルダーに保存されている PST ファイルを office 365 に暗号化してアップロードします。
     
-- この手順ではコピーして、暗号化キー、ストレージ ・ キー、および多数の識別キーと Url のコピーを保存します。この情報は、暗号化し、PST ファイルをアップロードする手順 5 で使用されます。パスワードやその他のセキュリティに関連する情報を保護するようにこれらだけを保護する対策を講じていることを確認します。たとえば、パスワードで保護された Microsoft Word 文書に保存または暗号化された USB ドライブに保存します。これらのキー、Id、および Url の例の[詳細について](#more-information)はを参照してください。 
+- この手順では、暗号化キー、ストレージキー、およびいくつかの識別キーと url のコピーをコピーして保存します。この情報は、手順5で PST ファイルを暗号化してアップロードするために使用されます。パスワードやその他のセキュリティ関連の情報を保護するのと同じように、これらを保護するための予防措置を講じるようにしてください。たとえば、パスワードで保護された Microsoft Word 文書に保存するか、暗号化された USB ドライブに保存することができます。これらのキー、id、および url の例については、「 [More information](#more-information) 」セクションを参照してください。 
     
-- PST ファイルをインポートするには Office 365 の非アクティブなメールボックスにします。内の非アクティブなメールボックスの GUID を指定することによってこれを行う、 `Mailbox` PST インポート マッピング ファイル内のパラメーターです。詳細については、[手順 7](#step-7-create-the-pst-import-mapping-file)を参照してください。 
+- Office 365 の非アクティブなメールボックスに PST ファイルをインポートすることができます。これを行うには、PST インポートマッピングファイルの`Mailbox`パラメーターに非アクティブなメールボックスの GUID を指定します。詳細については、[手順 7](#step-7-create-the-pst-import-mapping-file)を参照してください。 
     
-- Exchange ハイブリッド展開の場合は、[プライマリ メールボックスは、オンプレミス ユーザーのクラウド ベースのアーカイブ メールボックスに PST ファイルをインポートできます。PST インポート マッピング ファイルで次の操作を行います。
+- Exchange ハイブリッド展開では、プライマリメールボックスがオンプレミスであるユーザーのクラウドベースのアーカイブメールボックスに PST ファイルをインポートできます。これを行うには、PST インポートマッピングファイルで以下の手順を実行します。
     
-  - ユーザーのオンプレミスのメールボックスの電子メール アドレスを指定します`Mailbox`パラメーター。 
+  - `Mailbox`パラメーターに、ユーザーの社内メールボックスの電子メールアドレスを指定します。 
     
-  - **真**の値を指定します`IsArchive`パラメーター。 
+  - `IsArchive`パラメーターに**TRUE**の値を指定します。 
     
     詳細については、[手順 7](#step-7-create-the-pst-import-mapping-file)を参照してください。 
     
-- PST ファイルが Office 365 のメールボックスにインポートされると、メールボックスの設定の保存は不定の期間のになっています。つまり、メールボックスに割り当てられているリテンション ・ ポリシーは、の保持を無効にするか、保留リストを無効にする日付を設定するまで処理されません。なぜこのような処理でしょうか。メールボックスにインポートするメッセージが古い場合は、それら可能性が完全に削除 (パージ)、メールボックスに対して構成されている保存期間の設定に基づいて、保存期間が期限切れになった。保存保留中のメールボックスを配置することと、これらの新しくインポートされたメッセージまたはメールボックスの保存期間の設定を変更するのには、時間を提供を管理するためにメールボックス所有者の時間が提供されます。保存保留リストの管理に関する推奨事項の[詳細について](#more-information)はを参照してください。 
+- PST ファイルが Office 365 メールボックスにインポートされると、メールボックスの保持ホールドの設定は無期限に有効になります。これは、メールボックスに割り当てられたアイテム保持ポリシーは、保存機能を無効にするか、保留を解除する日付を設定するまで処理されないことを意味します。なぜこれを行うのでしょうか。メールボックスにインポートされたメッセージが古くなっている場合は、メールボックスに対して構成されたアイテム保持ポリシーに基づいて保持期間が経過したために、削除 (パージ) される可能性があります。メールボックスの保存機能を有効にすると、メールボックスの所有者は新しくインポートされたメッセージを管理することができ、メールボックスの保存期間の設定を変更する時間を与えることができます。保持ホールドの管理に関する提案については、「 [More information](#more-information) 」セクションを参照してください。 
     
-- Office 365 にアップロードする前に、PST ファイルを暗号化する必要はない場合、は、 [Office 365 に PST ファイルをインポートするのにはアップロードの使用のネットワーク](use-network-upload-to-import-pst-files.md)を参照してください。
+- office 365 にアップロードする前に pst ファイルを暗号化する必要がない場合は、「[ネットワークアップロードを使用して pst ファイルを office 365 にインポート](use-network-upload-to-import-pst-files.md)する」を参照してください。
     
-- Office 365 に PST ファイルをインポートするのには、ネットワークのアップロードを使用してについてよく寄せられる質問は、 [Office 365 に PST ファイルのインポートについての FAQ](faqimporting-pst-files-to-office-365.md)を参照してください。
+- ネットワークアップロードを使用して pst ファイルを office 365 にインポートする方法についてよく寄せられる質問については、「 [office 365 への pst ファイルのインポートに関する FAQ](faqimporting-pst-files-to-office-365.md)」を参照してください。
   
 ## <a name="step-1-set-up-azure-rights-management-for-pst-import"></a>手順 1:PST インポートの Azure Rights Management をセットアップする 
 
-PST インポートでは、Office 365 の Azure アクセス権管理 (Azure RMS) サービスによって提供される暗号化機能を使用します。これにより、Office 365 にアップロードする前に PST ファイルを暗号化することができます。 
+PST インポートでは、Office 365 の azure Rights Management (azure RMS) サービスが提供する暗号化機能を使用します。これにより、Office 365 にアップロードする前に PST ファイルを暗号化することができます。 
   
-PST インポートの Azure の RMS の構成は、3 つの手順で構成されます。
+PST インポート用に Azure RMS を構成するには、3つの手順から構成されます。
   
-- [Azure の RMS をアクティブにします。](#activate-azure-rms)
+- [Azure RMS をアクティブ化する](#activate-azure-rms)
     
-- [RMS を構成する Exchange オンライン](#configure-rms-in-exchange-online)
+- [Exchange Online で RMS を構成する](#configure-rms-in-exchange-online)
     
-- [Active Directory の RMS クライアントをインストールします。](#install-the-active-directory-rms-client)
+- [Active Directory RMS クライアントのインストール](#install-the-active-directory-rms-client)
     
-### <a name="activating-azure-rms"></a>Azure の RMS をアクティブにします。
+### <a name="activating-azure-rms"></a>Azure RMS をアクティブ化する
 
-Azure の RMS は、既定で無効にしますが、するか、組織内の別の管理者がありますがアクティブになって。インストールし、Azure の DRM を有効にする[Azure アクセス権の管理をアクティブにする](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service)の指示に従って操作します。
+Azure RMS は既定で無効になっていますが、組織内の別の管理者がライセンス認証を行った可能性があります。[azure Rights Management をアクティブ化](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service)して azure DRM をインストールしてアクティブ化する手順に従います。
   
-### <a name="configuring-rms-in-exchange-online"></a>RMS を構成する Exchange オンライン
+### <a name="configuring-rms-in-exchange-online"></a>Exchange Online で RMS を構成する
 
-権限管理サービスをアクティブにした後、次に、Exchange Azure の RMS を使用するオンラインでの情報権利管理 (IRM) を設定するのには。詳細については、 [Azure の権利管理を使用する IRM を構成する](https://go.microsoft.com/fwlink/p/?LinkId=394816)を参照してください。
+Rights management サービスをアクティブ化した後、次の手順では、Azure RMS を使用するために Exchange Online で Information Rights Management (IRM) をセットアップします。詳細については、「 [Azure Rights Management を使用するように IRM を構成する](https://go.microsoft.com/fwlink/p/?LinkId=394816)」を参照してください。
   
 1. [リモート PowerShell を使用して Exchange Online に接続](https://go.microsoft.com/fwlink/p/?LinkId=396554 )します。
     
@@ -117,22 +117,22 @@ Azure の RMS は、既定で無効にしますが、するか、組織内の別
     
     |**場所**|**RMS キー共有場所**|
     |:-----|:-----|
-    |北アメリカ  <br/> | `https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
+    |North America  <br/> | `https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
     |欧州連合  <br/> | `https://sp-rms.eu.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
     |アジア  <br/> | `https://sp-rms.ap.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
     |南アメリカ  <br/> | `https://sp-rms.sa.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
-    |行政機関向け Office 365 (行政機関のコミュニティ クラウド)  <br/> | `https://sp-rms.govus.aadrm.com/TenantManagement/ServicePartner.svc`<sup>1</sup> <br/> |
+    |行政機関向け Office 365 (行政機関のコミュニティ クラウド)  <br/> | `https://sp-rms.govus.aadrm.com/TenantManagement/ServicePartner.svc`<sup>1-d</sup> <br/> |
    
     > [!NOTE]
-    > <sup>1</sup>政府の Sku (政府コミュニティ クラウド) に Office 365 が購入されたお客様のみがこの RMS キーの場所の共有を使用してください。 
+    > <sup>1</sup> Office 365 for government sku (government Community Cloud) を購入したお客様のみ、この RMS キー共有場所を使用する必要があります。 
   
-    たとえば、このコマンドは、共有の場所に Exchange オンライン北アメリカにある顧客の RMS のオンライン キーを構成します。
+    たとえば、次のコマンドを実行すると、北米に配置されている顧客に対して Exchange online の RMS online キー共有場所が構成されます。
     
     ```
     Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
     ```
 
-3. RMS オンラインから Office 365 の組織に、信頼された発行ドメイン (TPD) をインポートするのには次のコマンドを実行します。 
+3. 次のコマンドを実行して、信頼された発行ドメイン (TPD) を RMS Online から Office 365 組織にインポートします。 
     
     ```
     Import-RMSTrustedPublishingDomain -RMSOnline -Name "RMS Online"
@@ -140,25 +140,25 @@ Azure の RMS は、既定で無効にしますが、するか、組織内の別
 
     TPD には、PST ファイルの暗号化など、組織で RMS 機能を使用するために必要な設定が含まれています。  
     
-4. Office 365 組織で IRM を有効にするのには、次のコマンドを実行します。
+4. 次のコマンドを実行して、Office 365 組織の IRM を有効にします。
     
     ```
     Set-IRMConfiguration -InternalLicensingEnabled $true
     ```
 
-### <a name="installing-the-active-directory-rms-client"></a>Active Directory の RMS クライアントをインストールします。
+### <a name="installing-the-active-directory-rms-client"></a>Active Directory RMS クライアントのインストール
 
-このセクションの最後のステップでは、権限管理サービス (RMS) クライアント 2.1 をダウンロードします。このソフトウェアでは、Azure の RMS へのアクセスを保護するのに役立ち、情報を暗号化し、手順 5 で PST ファイルをアップロードするに使用する同じコンピューターに RM クライアントを Azure 利用のインストールを使用するアプリケーションからフローを保護します。 
+このセクションの最後の手順では、Rights Management Services (RMS) クライアント2.1 をダウンロードします。このソフトウェアは、azure rms へのアクセスを保護し、azure rms を使用するアプリケーションを介して流れる情報を保護します。 rms クライアントは、手順5で PST ファイルを暗号化してアップロードする際に使用するのと同じコンピューターにインストールします。 
   
-1. [権限管理サービス クライアント 2.1](https://www.microsoft.com/en-us/download/details.aspx?id=38396)をダウンロードしてください。
+1. [Rights Management サービスクライアント 2.1](https://www.microsoft.com/en-us/download/details.aspx?id=38396)をダウンロードします。
     
 2. Active Directory Rights Management サービス クライアント 2.1 ウィザードを実行して、クライアントをインストールする。
 
 ## <a name="step-2-generate-an-encryption-key-for-pst-import"></a>手順 2:PST インポートの暗号化キーを生成する
 
-Azure の RMS を設定した後、次の手順では、Office 365 にアップロードする PST ファイルを暗号化するために使用される暗号化キー (対称キーと呼ばれます) を生成します。Azure Active Directory の主要サービスとして PST インポート サービスを追加することによってこれを行うでしょう。サービス主体が PST インポート サービスにアップロードすると、Azure Active Directory と直接認証を許可するようにこのアプリケーションを追加すると、手順 5 で Azure ストレージの場所に PST ファイルが暗号化されます。
+Azure RMS をセットアップしたら、次の手順として、Office 365 にアップロードする PST ファイルを暗号化するために使用される暗号化キー (対称キーと呼ばれる) を生成します。これを行うには、Azure Active Directory のサービスプリンシパルとして PST インポートサービスを追加します。このアプリケーションをサービスプリンシパルとして追加すると、手順5で pst ファイルを暗号化して azure ストレージの場所にアップロードするときに、pst インポートサービスが azure Active Directory を直接認証できるようになります。
   
-1. Windows PowerShell の Azure Active Directory のモジュールを起動します。
+1. Windows PowerShell の Azure Active Directory モジュールを開始します。
     
 2. 次のコマンドを実行して、Microsoft Online サービスに接続する。
     
@@ -166,7 +166,7 @@ Azure の RMS を設定した後、次の手順では、Office 365 にアップ�
     Connect-MsolService
     ```
 
-3. Office 365 組織の管理者アカウントの資格情報を入力し、し、[ **OK**] をクリックします。
+3. Office 365 組織の管理者アカウントの資格情報を入力し、[ **OK]** をクリックします。
     
 4. 次のコマンドを実行して、暗号化キー (対称キーと呼ばれる) を生成する。これを行うには、新しい PST 暗号化プリンシパルを作成します。
     
@@ -183,81 +183,81 @@ Azure の RMS を設定した後、次の手順では、Office 365 にアップ�
     > [!IMPORTANT]
     > PST 暗号化プリンシパルの作成後は、**Get-MsolServicePrincipal** コマンドレットを使用して対称キーを取得することはできなくなります。このためキーを保存することが重要になります。 
   
-開いたままで、Azure Active Directory モジュールを Windows PowerShell の Microsoft オンライン サービスに接続されています。次の手順では、このウィンドウでコマンドを実行します。
+Windows PowerShell 用 Azure Active Directory モジュールを開いたままにして、Microsoft Online サービスに接続します。このウィンドウでは、次の手順でコマンドを実行します。
 
-## <a name="step-3-obtain-rms-tenant-id-and-licensing-url"></a>手順 3: RMS のテナント ID とライセンスの URL を取得します。
+## <a name="step-3-obtain-rms-tenant-id-and-licensing-url"></a>手順 3: RMS テナント ID とライセンス URL を取得する
 
-次の手順では、ID と、組織の RMS の Azure サービスのライセンスの場所の URL は、テナントを取得します。コピーし、手順 2 から対称キーが格納されている同じファイルにこの情報を保存します。ID と URL は、PST ファイルを暗号化する手順 5 で使用されます。
+次の手順では、組織の Azure RMS サービスのテナント ID とライセンスの場所の URL を取得します。この情報をコピーして、手順2の対称キーを含む同じファイルに保存します。ID と URL は、手順5で PST ファイルを暗号化するために使用されます。
   
-1. モジュールでは、Azure Active ディレクトリ (Microsoft オンライン サービスに接続されている)、Windows PowerShell の組織の Office 365 の Azure の RMS サービスに接続する次のコマンドを実行します。
+1. (Microsoft Online service に接続されている) Windows PowerShell 用 azure Active Directory モジュールで、次のコマンドを実行して Office 365 組織の azure RMS サービスに接続します。
     
     ```
     Connect-AadrmService 
     ```
 
-2. 組織の Office 365 の管理者アカウントの資格情報を入力し、し、[ **OK**] をクリックします。
+2. Office 365 組織の管理者アカウントの資格情報を入力し、[ **OK]** をクリックします。
     
-3. Office 365 の組織で、Azure の RMS サービスのテナント ID を表示する次のコマンドを実行します。
+3. Office 365 組織の Azure RMS サービスのテナント ID を表示するには、次のコマンドを実行します。
     
     ```
     Get-AadrmConfiguration | FL BPOSId
     ```
 
-    値をコピーして、`BPOSId`プロパティ。 
+    `BPOSId`プロパティの値をコピーして保存します。 
     
-4. Azure の RMS サービスのライセンスの場所を表示するのには次のコマンドを実行します。
+4. Azure RMS サービスのライセンスの場所を表示するには、次のコマンドを実行します。
     
     ```
     Get-AadrmConfiguration | FL LicensingIntranetDistributionPointUrl
     ```
 
-    値をコピーして、`LicensingIntranetDistributionPointUrl`プロパティ。 
+    `LicensingIntranetDistributionPointUrl`プロパティの値をコピーして保存します。 
 
-## <a name="step-4-download-the-pst-import-tools-and-copy-the-sas-url"></a>手順 4: PST インポート ツールをダウンロードして、SAS の URL をコピー
+## <a name="step-4-download-the-pst-import-tools-and-copy-the-sas-url"></a>手順 4: PST インポートツールをダウンロードして、SAS URL をコピーする
 
-Azure の RMS を構成し、PST ファイルを暗号化するために必要な Id を取得した、次に、ダウンロードして Office 365 を暗号化する手順 5 で実行して、ファイルのアップロードの PST のツールをインストールします。これらのツールは、Azure AzCopy ツールと Office 365 のデータの暗号化ツールです。組織の SA の URL をコピーすることもあります。この URL は、組織と共有アクセス署名 (SAS) キーをマイクロソフトのクラウド内の Azure ストレージ場所のネットワークの URL の組み合わせです。このキーは、Azure のストレージ場所に PST ファイルをアップロードする必要なアクセス許可を提供します。ファイルに保存、同じステップ 2 とステップ 3 で、その他の情報をコピーしたことです。述べたように、SAS の URL を保護するために予防措置を講じます。 
+Azure RMS を構成し、pst ファイルを暗号化するために必要な id を取得したので、次の手順では、手順5で実行するツールをダウンロードしてインストールし、pst ファイルを暗号化して Office 365 にアップロードします。これらのツールは、Azure azcopy ツールおよび Office 365 データ暗号化ツールです。組織の SAS URL もコピーします。この url は、組織のための Microsoft クラウド内の Azure ストレージの場所のネットワーク URL と、共有アクセス署名 (SAS) キーの組み合わせです。このキーは、Azure ストレージの場所に PST ファイルをアップロードするために必要なアクセス許可を提供します。手順2と手順3で、他の情報をコピーしたのと同じファイルに保存します。前述したように、SAS URL を保護するための予防措置を講じます。 
   
 > [!IMPORTANT]
-> Azure ストレージの場所に PST ファイルを正常にアップロードするのには Azure AzCopy バージョン 5.0 を使用する必要があります。AzCopy ツールの新しいバージョンは、Office 365 に PST ファイルをインポートするためにサポートされていません。この手順の手順に従って、**ネットワーク経由でファイルのアップロード**ページから AzCopy ツールをダウンロードすることを確認します。 
+> azure のストレージの場所に PST ファイルを正常にアップロードするには、azure azcopy バージョン5.0 を使用する必要があります。新しいバージョンの azcopy ツールは、Office 365 に PST ファイルをインポートするためにサポートされていません。この手順の手順に従って、[**ネットワーク経由でファイルをアップロード**する] ページから azcopy ツールをダウンロードしてください。 
   
-1. [https://protection.office.com](https://protection.office.com)。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
-2. 組織の Office 365 の管理者アカウントの資格情報を使用して Office 365 にサインインします。
+2. office 365 組織の管理者アカウントの資格情報を使用して、office 365 にサインインします。
     
-3. 左側のウィンドウでは、**データ ・ ガバナンス**をクリックし、し、[**インポート**] をクリックします。
+3. 左側のウィンドウで、[**データガバナンス**] をクリックし、[**インポート**] をクリックします。
     
 4. **[インポート]** ページで、**[インポート サービスに移動する]** をクリックします。
     
-5. **Office 365 へのデータのインポート**] ページで、[**新しいジョブ**] をクリックします![アイコンの追加](media/ITPro-EAC-AddIcon.gif)、**電子メール メッセージをアップロードする (PST ファイル)** をクリックします。
+5. [ **Office へのデータのインポート 365** ] ページで、[**新しいジョブ** ![の追加] アイコン](media/ITPro-EAC-AddIcon.gif)をクリックし、[**電子メールメッセージ (PST ファイル) のアップロード**] をクリックします。
     
-6. **ネットワーク経由でファイルのアップロード**ページで、手順 2 では、**ネットワーク アップロード SAS の URL を表示する**をクリックします。
+6. [**ネットワーク経由でファイルをアップロード**する] ページの手順2で、[**ネットワークアップロード SAS URL を表示する**] をクリックします。
     
-7. URL が表示されたら、コピーし、他のキーを保存したファイルに保存します。URL 全体をコピーすることを確認します。 
+7. URL が表示されたら、それをコピーして、他のキーを保存したファイルに保存します。必ず URL 全体をコピーしてください。 
     
-8. 手順 3 で、 **Azure の AzCopy ツールをダウンロード**をダウンロードして、Azure の AzCopy ツールをインストールする] をクリックします。 
+8. 手順3で、[ **azure azcopy ツールのダウンロード**] をクリックして、azure azcopy ツールをダウンロードしてインストールします。 
     
 9. ポップアップ ウィンドウで、**[実行]** をクリックして、Azure AzCopy ツールをインストールします。 
     
     > [!IMPORTANT]
-    > 既定の場所に、Azure の AzCopy ツールをインストールしてください`%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy`のコンピューターで 64 ビットの Windows を実行しています。この場所で AzCopy ツールを探す手順 5 で、O365ImportTool.exe を実行するとためにです。 
+    > 必ず、64ビットの Windows を実行しているコンピューター `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy`上の、既定の場所に Azure azcopy ツールをインストールしてください。これは、手順5で o365importtool.zip を実行したときに、この場所で azcopy ツールを検索するためです。 
   
-10. Azure AzCopy ツールをインストールした後、 **Office 365 のデータの暗号化およびインポート ツールのダウンロード**をクリックします。
+10. Azure azcopy ツールをインストールした後、[ **Office 365 データ暗号化およびインポートツールをダウンロード**する] をクリックします。
     
-11. ポップアップ ウィンドウで、[**保存**] をクリックします\>**として保存する**に O365ImportTool.zip ファイルをローカル コンピューター上のフォルダーに保存します。 
+11. ポップアップウィンドウで、[名前を付け**** \> **て**保存] をクリックして、o365importtool.zip ファイルをローカルコンピューター上のフォルダーに保存します。 
     
 12. O365ImportTool.zip ファイルを抽出する。
     
-13. **ネットワーク経由でファイルのアップロード**] ページを閉じます**キャンセル**をクリックします。 
+13. [**キャンセル**] をクリックして、[**ネットワーク経由でファイルをアップロード**する] ページを閉じます。 
  
-## <a name="step-5-encrypt-and-upload-your-pst-files-to-office-365"></a>手順 5: の暗号化し、PST ファイルを Office 365 にアップロードします。
+## <a name="step-5-encrypt-and-upload-your-pst-files-to-office-365"></a>手順 5: PST ファイルを暗号化して Office 365 にアップロードする
 
-手順 4 から手順 1 が完了したら後、は、O365ImportTool.exe ツールを使用して暗号化して、Office 365 に PST ファイルをアップロードする準備が整ったら。このツールは、PST ファイルを暗号化しアップロードし、マイクロソフトのクラウドでは、Azure ストレージの場所に保存します。この手順を完了するには、PST ファイルをファイル共有や、組織内のファイル サーバーに配置する必要があります。これは、次の手順でソース ディレクトリと呼ばれます。O365ImportTool.exe ツールを実行するたびができるディレクトリを指定する別のソース。 
+手順 1 ~ 手順4を完了したら、o365importtool.zip ツールを使用して、PST ファイルを暗号化して Office 365 にアップロードすることができます。このツールは、PST ファイルを暗号化してから、Microsoft クラウド内の Azure ストレージの場所にアップロードして保存します。この手順を完了するには、組織内のファイル共有またはファイルサーバーに PST ファイルを配置する必要があります。これは、次の手順でソースディレクトリと呼ばれます。o365importtool.zip ツールを実行するたびに、別のソースディレクトリを指定することができます。 
   
 1. ローカル コンピューター上でコマンド プロンプトを開く。
     
 2. 手順 4 で O365ImportTool.exe ツールをインストールしたディレクトリに移動する。
     
-3. 暗号化し、Office 365 に PST ファイルをアップロードするには、次のコマンドを実行します。
+3. 次のコマンドを実行して、PST ファイルを暗号化して Office 365 にアップロードします。
     
     ```
     O365ImportTool.exe /srcdir:<Location of PST files> /protect-rmsserver:<RMS licensing location> /protect-tenantid:<BPOSId> /protect-key:<Symmetric key> /transfer:upload /upload-dest:<Network upload URL> /upload-destSAS:<SAS key>
@@ -267,14 +267,14 @@ Azure の RMS を構成し、PST ファイルを暗号化するために必要�
     
     |**パラメーター**|**説明**|**例**|
     |:-----|:-----|:-----|
-    | `/srcdir:` <br/> |Office 365 にアップロードする PST ファイルを含む、組織内には、ソース ディレクトリを指定します。  <br/> | `/srcdir:\\FILESERVER01\PSTs` <br/> |
-    | `/protect-rmsserver:` <br/> |Azure の RMS サービスのライセンスの場所を指定します。値を使用して、`LicensingIntranetDistributionPointUrl`の手順 3 で取得したプロパティです。二重引用符では、このパラメーターの値を囲むことを確認する ("")<br/> | `/protect-rmsserver:"https://afcbd8ec-cb2b-4a1a-8246-0b4bc22d1978.rms.na.aadrm.com/_wmcs/licensing"` <br/> |
-    | `/protect-tenantid:` <br/> |Azure の RMS の組織の id を指定します。値を使用して、`BPOSId`の手順 3 で取得したプロパティです。<br/> | `/protect-tenantid:42745b33-2a5c-4726-8a2a-ca43caa0f74b` <br/> |
-    | `/protect-key:` <br/> |手順 2 で取得した対称キーを指定します。二重引用符では、このパラメーターの値を囲むことを確認する ("")。  <br/> | `/protect-key:"l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867="` <br/> |
-    | `/transfer:` <br/> |PST ファイルをネットワーク経由でアップロードまたは、ハード ドライブに付属しているかどうかを指定します。値`upload`、ネットワーク経由でファイルをアップロードすることを示します。値`drive`ハード ドライブ上の pst ファイルを配布することを示します。<br/> | `/transfer:upload` <br/> |
-    | `/upload-dest:` <br/> |PST ファイルのアップロードをするには Office 365 の宛先を指定します。これは、組織の Azure ストレージの場所です。このパラメーターの値は、手順 4 でコピーした SAS の URL から、ネットワークのアップロード URL で構成されています。二重引用符では、このパラメーターの値を囲むことを確認する ("")。<br/><br/> **ヒント:**(省略可能)暗号化された PST ファイルをアップロードするのには Azure ストレージの場所にサブフォルダーを指定することができます。("Ingestiondata") の後にサブフォルダーの場所を追加するネットワークのアップロード URL でこれを行います。最初の例は、サブフォルダーを指定しません。つまり、pst ファイルには、Azure ストレージの場所の ( *ingestiondata*という名前) のルートにアップロードされます。2 番目の例では、Azure ストレージの場所に PST ファイルのフォルダー ( *EncryptedPSTs* ) をアップロードします。           | `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata"` <br/> または  <br/>  `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/EncryptedPSTs"` <br/> |
-    | `/upload-destSAS:` <br/> |組織の SA のキーを指定します。このパラメーターの値は、手順 4 でコピーした SAS の URL から SA のキーで構成されます。SA のキーの最初の文字が疑問符 () であることを確認 ("?")。二重引用符では、このパラメーターの値を囲むことを確認する ("")。  <br/> | `/upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
-    | `/recurse` <br/> |このオプション スイッチは、O365ImportTool.exe ツールがで指定されたソース ディレクトリ内のサブフォルダーにある Pst ファイルをコピーするために再帰的なモードを指定します`/srcdir:`パラメーター。  <br/><br/> **注:** このスイッチを含める場合は、PST ファイルのサブフォルダーには、アップロードした Azure ストレージの場所に別のファイルのパス名があります。手順 7 で作成した CSV ファイルの正確なファイルのパス名を指定する必要があります。           | `/recurse` <br/> |
+    | `/srcdir:` <br/> |Office 365 にアップロードされる PST ファイルを含む、組織内のソースディレクトリを指定します。  <br/> | `/srcdir:\\FILESERVER01\PSTs` <br/> |
+    | `/protect-rmsserver:` <br/> |Azure RMS サービスのライセンスの場所を指定します。手順3で取得し`LicensingIntranetDistributionPointUrl`たプロパティの値を使用します。このパラメーターの値は二重引用符 ("") で囲むようにしてください。<br/> | `/protect-rmsserver:"https://afcbd8ec-cb2b-4a1a-8246-0b4bc22d1978.rms.na.aadrm.com/_wmcs/licensing"` <br/> |
+    | `/protect-tenantid:` <br/> |Azure RMS 組織の id を指定します。手順3で取得し`BPOSId`たプロパティの値を使用します。<br/> | `/protect-tenantid:42745b33-2a5c-4726-8a2a-ca43caa0f74b` <br/> |
+    | `/protect-key:` <br/> |手順2で取得した対称キーを指定します。このパラメーターの値は二重引用符 ("") で囲むようにしてください。  <br/> | `/protect-key:"l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867="` <br/> |
+    | `/transfer:` <br/> |PST ファイルをネットワーク経由でアップロードするか、ハードディスク上に送付するかを指定します。この値`upload`は、ネットワーク経由でファイルをアップロードしていることを示します。この値`drive`は、ハードドライブに pst を配布することを示します。<br/> | `/transfer:upload` <br/> |
+    | `/upload-dest:` <br/> |PST ファイルのアップロード先となる Office 365 の送信先を指定します。これは、組織の Azure ストレージの場所です。このパラメーターの値は、手順4でコピーした SAS url からのネットワークアップロード URL で構成されます。このパラメーターの値は二重引用符 ("") で囲むようにしてください。<br/><br/> **ヒント:** オプション暗号化された PST ファイルをアップロードするために、Azure ストレージの場所にサブフォルダーを指定することができます。これを行うには、ネットワークアップロード URL にサブフォルダーの場所 ("ingestiondata" の後) を追加します。最初の例では、サブフォルダーを指定しません。これは、pst が Azure ストレージの場所のルート ( *ingestiondata*という名前) にアップロードされることを意味します。2番目の例では、PST ファイルを Azure ストレージの場所のサブフォルダー ( *encryptedpsts*という名前) にアップロードします。           | `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata"` <br/> または  <br/>  `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/EncryptedPSTs"` <br/> |
+    | `/upload-destSAS:` <br/> |組織の SAS キーを指定します。このパラメーターの値は、手順4でコピーした sas URL の sas キーで構成されます。SAS キーの最初の文字が疑問符 ("?") であることに注意してください。このパラメーターの値は二重引用符 ("") で囲むようにしてください。  <br/> | `/upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
+    | `/recurse` <br/> |このオプションスイッチは、o365importtool.zip ツールが、 `/srcdir:`パラメーターで指定されたソースディレクトリ内のサブフォルダーにある pst ファイルをコピーするように、再帰モードを指定します。  <br/><br/> **注:** このスイッチを含めると、サブフォルダー内の PST ファイルは、アップロード後に、Azure ストレージの場所に別のファイルパス名を持つことになります。手順7で作成した CSV ファイルで、ファイルのパス名を正確に指定する必要があります。           | `/recurse` <br/> |
    
     各パラメーターの実際の値を使用する O365ImportTool.exe ツールの構文の例を以下に示します。
     
@@ -285,56 +285,56 @@ Azure の RMS を構成し、PST ファイルを暗号化するために必要�
     コマンドを実行すると、PST ファイルの暗号化とアップロードの進行状況を示す状態メッセージが表示されます。最終の状態メッセージは、暗号化とアップロードが正常に完了したファイルの合計数を示しています。  
     
     > [!TIP]
-    > 正常に O365ImportTool.exe コマンドを実行してすべてのパラメーターが正しいことを確認するものと同じ情報をコピーする (セキュリティで保護された) ファイルをコマンド ・ ライン構文のコピーを保存で取得した前の手順を実行します。できますをコピーし、貼り付けコマンド プロンプトでこのコマンドを暗号化し、Office 365 に PST ファイルをアップロードするには、O365ImportTool.exe ツールを実行するたびにします。ものは、値のみを変更する必要があります、`/srcdir:`と`/upload-dest:`のパラメーターです。 
+    > o365importtool.zip コマンドを正常に実行し、すべてのパラメーターが正しいことを確認した後、前の手順で取得した情報をコピーしたものと同じ (セキュリティで保護された) ファイルにコマンドライン構文のコピーを保存します。次に、o365importtool.zip ツールを実行して PST ファイルを暗号化して Office 365 にアップロードするたびに、このコマンドをコマンドプロンプトにコピーして貼り付けることができます。変更する必要があるのは、パラメーター `/srcdir:`と`/upload-dest:`パラメーターの値だけです。 
   
-## <a name="optional-step-6-view-a-list-of-the-pst-files-uploaded-to-office-365"></a>(省略可能)手順 6: Office 365 のビュー PST ファイルのアップロード
+## <a name="optional-step-6-view-a-list-of-the-pst-files-uploaded-to-office-365"></a>オプション手順 6: Office 365 にアップロードされた PST ファイルの一覧を表示する
 
-オプションの手順としてインストールし、Azure blob にアップロードしている PST ファイルの一覧を表示するのには、Azure ストレージ エクスプ ローラーは、無料のオープン ソースのツール) を使用できます。これを行う 3 つの理由があります。
+オプションの手順として、Microsoft azure ストレージエクスプローラー (無償のオープンソースツール) をインストールして使用し、azure blob にアップロードした PST ファイルの一覧を表示することができます。これを行うには、次の3つの適切な理由があります。
   
-- PST ファイルを共有フォルダーまたは組織内のファイル サーバーからが、Azure blob を正常にアップロードされたことを確認します。
+- 組織内の共有フォルダーまたはファイルサーバーの PST ファイルが Azure blob に正常にアップロードされたことを確認します。
 
-- PST ファイルが暗号化されていることを確認します。暗号化された PST ファイルが、 `.pfile` 、PST ファイル名に追加した拡張子たとえば、 `pilarp.pst.pfile`。
+- PST ファイルが暗号化されていることを確認します。暗号化された pst `.pfile`ファイルには、pst ファイル名に拡張子が付いています。たとえば、 `pilarp.pst.pfile`のようになります。
     
-- Azure blob にアップロードされた各 PST ファイルのファイル名 (および 1 つ含まれている場合、サブフォルダーのパス名) を確認します。各 PST ファイルのファイル名とフォルダーのパス名を指定する必要があるために、次の手順でファイルをマッピングする pst ファイルを作成するときに非常に便利です。これらの名前を確認すると、PST のマッピング ・ ファイル内の潜在的なエラーを削減できます。
+- Azure blob にアップロードされた各 PST ファイルのファイル名 (およびサブフォルダーが含まれている場合はそのパス名) を確認します。これは、次の手順で pst マッピングファイルを作成している場合に、各 pst ファイルのフォルダーパス名とファイル名の両方を指定する必要があるため、非常に役立ちます。これらの名前を確認すると、PST マッピングファイルの潜在的なエラーを減らすのに役立ちます。
     
-プレビューでは、Microsoft Azure ストレージ エクスプ ローラーです。 
+Microsoft Azure ストレージエクスプローラーはプレビュー段階です。 
   
  > [!IMPORTANT]
->  アップロードまたは PST ファイルを変更するには、Azure ストレージ エクスプ ローラーを使うことはできません。Office 365 に PST ファイルをインポートするための唯一のサポートされている方法では、AzCopy を使用します。また、Azure blob にアップロードしている PST ファイルを削除できません。PST ファイルを削除しようとすると、必要な権限がないというエラー メッセージが表示されます。Azure ストレージ領域からすべての PST ファイルを自動的に削除するに注意してください。ある場合、すべて PST ファイルの**ingestiondata**コンテナーには、進行中のインポート ジョブは削除されません、最新のインポート ジョブを作成した後 30 日間。 
+>  Azure ストレージエクスプローラーを使用して PST ファイルをアップロードまたは変更することはできません。PST ファイルを Office 365 にインポートするためにサポートされている唯一の方法は、azcopy を使用することです。また、Azure blob にアップロードした PST ファイルを削除することもできません。PST ファイルを削除しようとすると、必要なアクセス許可がないというエラーが表示されます。すべての PST ファイルが Azure ストレージ領域から自動的に削除されることに注意してください。進行中のインポートジョブがない場合は、最新のインポートジョブが作成されてから30日後に**ingestiondata**コンテナー内のすべての PST ファイルが削除されます。 
   
-Azure ストレージ エクスプ ローラーをインストールし、Azure のストレージ領域への接続します。
+azure ストレージエクスプローラーをインストールして azure ストレージ領域に接続するには、次のようにします。
   
-1. ダウンロードして、 [Microsoft Azure ストレージ エクスプ ローラー ツール](https://go.microsoft.com/fwlink/p/?LinkId=544842)をインストールします。
+1. [Microsoft Azure ストレージエクスプローラーツール](https://go.microsoft.com/fwlink/p/?LinkId=544842)をダウンロードしてインストールします。
     
-2. Microsoft Azure ストレージ エクスプ ローラーを起動左側のウィンドウで、**ストレージ アカウント**を右クリックし、 **Azure ストレージへの接続**] をクリックします。 
+2. Microsoft Azure ストレージエクスプローラーを起動し、左側のウィンドウで [**ストレージアカウント**] を右クリックして、[ **Azure ストレージに接続] を**クリックします。 
     
-    ![ストレージ アカウントを右クリックし、Azure ストレージに接続] をクリックし、](media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
+    ![[ストレージアカウント] を右クリックし、[Azure ストレージへの接続] をクリックします。](media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
   
-3. [ **Azure ストレージに接続する]** ボックスで、手順 4 で取得した SAS の URL を貼り付けるし、[**次へ**] をクリックします。 
+3. [ **Azure ストレージへの接続**] のボックスで、手順4で取得した SAS URL を貼り付けて、[**次へ**] をクリックします。 
     
-    ![Azure ストレージのページへの接続] ボックスに、SAS の URL を貼り付ける](media/5d034128-e087-48e1-9ebc-4c9fa262d5b7.png)
+    ![[Azure Storage への接続] ページのボックスに、SAS URL を貼り付けます。](media/5d034128-e087-48e1-9ebc-4c9fa262d5b7.png)
   
-4. [**接続の概要**] ページで、接続情報を確認し、[**接続**] をクリックできます。 
+4. [**接続の概要**] ページで、接続情報を確認し、[**接続**] をクリックします。 
     
-5. [**ストレージ アカウント**] でノードを展開します **(サービスの SAS)** と**Blob コンテナー**ノードを展開します。 
+5. [**ストレージアカウント**] の下にある **(サービス SAS)** ノードを展開し、[ **Blob コンテナー** ] ノードを展開します。 
     
-6. **Ingestiondata**を右クリックし、 **Blob コンテナー エディターを開く**] をクリックします。
+6. [ **ingestiondata**] を右クリックし、[ **Blob コンテナーエディターを開く**] をクリックします。
     
     ![ingestiondata を右クリックし、[Blob コンテナー エディターを開く] をクリックする](media/f50eee30-9202-4efc-904a-2895a0bc388d.png)
   
-    Azure ストレージ領域、手順 5 でアップロードしている PST ファイルの一覧が表示されます。
+    手順5でアップロードした PST ファイルの一覧を含む Azure ストレージ領域が表示されます。
     
     ![Azure ストレージ エクスプローラーには、アップロードした PST ファイルの一覧が表示される](media/a448ae43-e744-4153-8304-22b59e93883c.png)
   
-7. Microsoft Azure ストレージ エクスプ ローラーの使用が終了したら、 **ingestiondata**を右クリックし、Azure のストレージ領域から切断するのには**接続解除**] をクリックします。それ以外の場合、次に接続しようとするとき、エラーが表示されます。 
+7. Microsoft azure ストレージエクスプローラーの使用が終了したら、[ **ingestiondata**] を右クリックし、 **** [切断] をクリックして azure ストレージ領域から切断します。そうしないと、次に接続しようとしたときにエラーが表示されます。 
     
     ![ingestion を右クリックして [デタッチ] をクリックし、Azure のストレージ エリアから切断する](media/1e8e5e95-4215-4ce4-a13d-ab5f826a0510.png)
   
-## <a name="step-7-create-the-pst-import-mapping-file"></a>PST インポート マッピング ファイルを作成する手順 7。
+## <a name="step-7-create-the-pst-import-mapping-file"></a>手順 7: PST インポートのマッピングファイルを作成する
 
-PST ファイルは、暗号化され、組織の Office 365 の Azure ストレージの場所にアップロードされたが後、次に、PST ファイルはインポートできません、ユーザーのメールボックスを指定する値 (CSV) ファイルを区切るコンマを作成します。PST インポート ジョブを作成するときは、次の手順では、この CSV ファイルが送信されます。
+pst ファイルが暗号化され、Office 365 組織の Azure ストレージの場所にアップロードされたら、次の手順では、pst ファイルをインポートするユーザーのメールボックスを指定するコンマ区切り値 (CSV) ファイルを作成します。PST インポートジョブを作成する場合は、次の手順でこの CSV ファイルを送信します。
   
-1. [PST インポート マッピング ・ ファイルのコピーをダウンロード](https://go.microsoft.com/fwlink/p/?LinkId=544717)します。 
+1. [PST インポートのマッピングファイルのコピーをダウンロード](https://go.microsoft.com/fwlink/p/?LinkId=544717)します。 
     
 2. CSV ファイルを開くか、ローカル コンピューターに保存します。次の例は、完了した PST インポートのマッピング ファイル (メモ帳で開いた) を示しています。Microsoft Excel を使って CSV ファイルを編集するほうが、はるかに簡単です。
     
@@ -352,7 +352,7 @@ PST ファイルは、暗号化され、組織の Office 365 の Azure ストレ
     Exchange,EncryptedPSTs,zrinkam_archive.pst.pfile,zrinkam@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
     ```
 
-    最初の行、または CSV ファイルのヘッダー行は、PST ファイルをユーザーのメールボックスにインポートする PST インポート サービスによって使用されるパラメーターを一覧表示します。各パラメーター名は、コンマで区切られます。ヘッダー行の下の各行は、特定のメールボックスを PST ファイルをインポートするためのパラメーター値を表します。行は、各ユーザーのメールボックスにインポートする PST ファイルの必要があります。マッピング ファイル内のプレース ホルダーのデータを実際のデータに置き換えることを確認します。
+    CSV ファイルの最初の行、つまりヘッダー行には、pst ファイルをユーザーメールボックスにインポートするために pst インポートサービスによって使用されるパラメーターが一覧表示されます。各パラメーター名はコンマで区切ります。ヘッダー行の下の各行は、特定のメールボックスに PST ファイルをインポートするためのパラメーター値を表します。ユーザーのメールボックスにインポートする PST ファイルごとに1つの行が必要になります。マッピングファイルのプレースホルダーデータを実際のデータに置き換えてください。
     
     > [!NOTE]
     > SharePoint パラメーターなど、ヘッダー行は何も変更しないでください。これらは PST インポートの処理中、無視されます。 
@@ -361,41 +361,41 @@ PST ファイルは、暗号化され、組織の Office 365 の Azure ストレ
     
     |**パラメーター**|**説明**|**例**|
     |:-----|:-----|:-----|
-    | `Workload` <br/> |Office 365 サービスにインポートするデータを指定します。PST ファイルをユーザーのメールボックスにインポートするを使用して、 `Exchange`。<br/> | `Exchange` <br/> |
-    | `FilePath` <br/> |手順 5 で PST ファイルをアップロードした Azure ストレージの場所にフォルダーの場所を指定します。  <br/>  ネットワークの URL を任意のサブフォルダーの名前が含まれていないかどうか、`/upload-dest:`パラメーターでは、手順 5 では、空白のままにこのパラメーターで CSV ファイルです。サブフォルダー名を入力した場合、このパラメーターに値を指定します。このパラメーターの値は、大文字小文字を区別します。*どちらにしてがの値に"ingestiondata"を含まない*、`FilePath`のパラメーターです。<br/> <br/>**重要な:** ファイルのパス名の大文字と小文字に SAS の URL を任意のサブフォルダーの名前が含まれている場合に使用した同じ大文字と小文字にする必要があります、`/upload-dest:`手順 5 でのパラメーターです。使用した場合など、 `EncryptedPSTs` 、サブフォルダー名を手順 5 で、使用して`encryptedpsts`で、 `FilePath` CSV ファイル内のパラメーター、PST ファイルのインポートは失敗します。両方のインスタンスで、同じ大文字と小文字を使用することを確認します。           |(空白)  <br/> または  <br/>  `EncryptedPSTs` <br/> |
-    | `Name` <br/> |ユーザーのメールボックスにインポートする PST ファイルの名前を指定します。このパラメーターの値は、大文字小文字を区別します。Azure ストレージの場所にアップロードされた PST ファイルが暗号化されているため、 `.pfile` PST ファイル名に拡張子が追加されます。追加する必要があります、 `.pfile` pst ファイルの名前に拡張子のファイルを CSV ファイルにします。<br/><br/> **重要な:** CSV ファイル内の PST ファイル名の大文字と小文字は、手順 5 で Azure ストレージの場所にアップロードされた PST ファイルと同じである必要があります。使用する場合など、`annb.pst.pfile`で、 `Name` 、CSV ファイルが実際の PST ファイルの名前のパラメーターは、 `AnnB.pst`、その PST ファイルのインポートは失敗します。CSV ファイルに pst ファイルの名前が実際の PST ファイルと同じ大文字と小文字を使用することを確認します。           | `annb.pst.pfile` <br/> |
-    | `Mailbox` <br/> |PST ファイルのインポート先になるメールボックスのメール アドレスを指定します。   <br/> 非アクティブなメールボックスに PST ファイルをインポートするのにはこのパラメーターにメールボックスの GUID を指定する必要です。この GUID を取得するには、Exchange Online で次の PowerShell コマンドを実行します: ' Get メールボックス InactiveMailboxOnly。<identity of inactive mailbox> | FL Guid` <br/><br/> **Note:** In some cases, you might have multiple mailboxes with the same email address, where one mailbox is an active mailbox and the other mailbox is in a soft-deleted (or inactive) state. In these situations, you have specify the mailbox GUID to uniquely identify the mailbox to import the PST file to. To obtain this GUID for active mailboxes, run the following PowerShell command:  `Get-メールボックス -<identity of active mailbox> | FL Guid`. To obtain the GUID for soft-deleted (or inactive) mailboxes, run this command  `Get ・ メールボックス ・ <identity of soft-deleted or inactive mailbox> ・ SoftDeletedMailbox | FL Guid'           | `annb@contoso.onmicrosoft.com` <br/> または  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
-    | `IsArchive` <br/> | PST ファイルをユーザーのアーカイブ メールボックスにインポートするかどうかを指定します。次のような 2 つの選択肢があります。<br/> **FALSE**PST ファイルをユーザーのプライマリ メールボックスにインポートします。  <br/> **場合は TRUE。** PST ファイルをユーザーのアーカイブ メールボックスにインポートします。  <br/>  このパラメーターを空白のままにすると、PST ファイルは、ユーザーのプライマリ メールボックスにインポートされます。  <br/><br/> **注:** クラウド ベースのアーカイブ メールボックスがプライマリ メールボックスは、オンプレミス ユーザーの PST ファイルをインポートするにだけこのパラメーターに**TRUE**を指定しのユーザーのオンプレミスのメールボックスの電子メール アドレスを指定します`Mailbox`パラメーター。           | `FALSE` <br/> または  <br/>  `TRUE` <br/> |
-    | `TargetRootFolder` <br/> | PST ファイルをインポートするメールボックス フォルダーを指定します。  <br/>  このパラメーターを空白のままにする場合は、**インポート済み**の名前付きの ([受信トレイ] フォルダーおよびその他の既定のメールボックス フォルダーと同じレベル) のメールボックスのルート レベルに新しいフォルダーを pst ファイルがインポートされます。  <br/>  指定する場合は、 `/`、PST ファイル内の項目をユーザーの受信トレイ フォルダーに直接インポートされます。  <br/>  指定する場合は、 `/<foldername>`、という名前のサブフォルダーをインポートする PST ファイルのアイテム*\<フォルダー名\>*。使用した場合など、 `/ImportedPst`、 **ImportedPst**をという名前のサブフォルダーにアイテムをインポートするとします。このサブフォルダーは、ユーザーの受信トレイ フォルダーに配置されます。<br/><br/> **ヒント:** Pst ファイルをインポートするのには最適なフォルダーの場所を特定できるように、このパラメーターを実験するのには、いくつかのテスト バッチを実行することを検討してください。           |(空白)  <br/> または  <br/>  `/` <br/> または  <br/>  `/ImportedPst` <br/> |
-    | `ContentCodePage` <br/> |この省略可能なパラメーターでは、ANSI のファイル形式の PST ファイルのインポートに使用するコード ページの数値を指定します。これらの言語が文字をエンコードするための 2 バイト文字セット (DBCS) を通常使用されるため、中国語、日本語、韓国語 (CJK) の組織から PST ファイルをインポートするため、このパラメーターが使用されます。メールボックス フォルダーの名前に DBCS を使用する言語の PST ファイルをインポートするのにはこのパラメーターを使用していない場合は、フォルダー名を多くの場合文字化けする、インポートした後。このパラメーターを使用するのにはサポートされている値のリストは、[コード ページの識別子](https://go.microsoft.com/fwlink/p/?LinkId=328514)を参照してください。<br/><br/> **注:** 前に述べたように、これは、オプションのパラメーターと、CSV ファイルに含めるようにする必要はありません。または追加して値を 1 つまたは複数の行の空白のままにします。           |(空白)  <br/> または  <br/>  `932`(日本語版 ANSI と OEM のコード ページの id です)  <br/> |
+    | `Workload` <br/> |データのインポート先となる Office 365 サービスを指定します。PST ファイルをユーザーのメールボックスにインポート`Exchange`するには、を使用します。<br/> | `Exchange` <br/> |
+    | `FilePath` <br/> |手順5で PST ファイルをアップロードした Azure ストレージの場所でのフォルダーの場所を指定します。  <br/>  手順5の`/upload-dest:`パラメーターに、ネットワーク URL にオプションのサブフォルダー名を含めなかった場合は、CSV ファイルでこのパラメーターを空白のままにしておきます。サブフォルダー名を含める場合は、このパラメーターで指定します。このパラメーターの値は、大文字と小文字を区別します。どちらの方法** でも、 `FilePath`パラメーターの値に "ingestiondata" を含めないでください。<br/> <br/>**重要:** ファイルパス名の大文字と小文字は、手順5で`/upload-dest:`パラメーターの SAS URL にオプションのサブフォルダ名を含めた場合に使用したものと同じである必要があります。たとえば、手順5でサブ`EncryptedPSTs`フォルダー名を使用し、CSV ファイルの`encryptedpsts` `FilePath`パラメーターでを使用した場合、PST ファイルのインポートは失敗します。両方のインスタンスで同じケースを使用してください。           |(空白)  <br/> または  <br/>  `EncryptedPSTs` <br/> |
+    | `Name` <br/> |ユーザーメールボックスにインポートされる PST ファイルの名前を指定します。このパラメーターの値は、大文字と小文字を区別します。Azure ストレージの場所にアップロードされる pst ファイルは暗号化されるため、 `.pfile` pst ファイル名に拡張子が追加されます。CSV ファイルの PST `.pfile`ファイルの名前に拡張機能を追加する必要があります。<br/><br/> **重要:** CSV ファイルの pst ファイル名の大文字と小文字は、手順5で Azure ストレージの場所にアップロードされた pst ファイルと同じである必要があります。たとえば、CSV ファイルの`annb.pst.pfile` `Name`パラメーターでを使用していて、実際の pst ファイルの名前が`AnnB.pst`である場合、その pst ファイルのインポートは失敗します。CSV ファイルの pst の名前では、実際の pst ファイルと同じ大文字と小文字が使用されていることを確認してください。           | `annb.pst.pfile` <br/> |
+    | `Mailbox` <br/> |PST ファイルのインポート先になるメールボックスのメール アドレスを指定します。   <br/> 非アクティブなメールボックスに PST ファイルをインポートするには、このパラメーターのメールボックス GUID を指定する必要があります。この GUID を取得するには、Exchange Online で次の PowerShell コマンドを実行します。`Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | FL Guid` <br/><br/> **注:** 場合によっては、1つのメールボックスがアクティブなメールボックスであり、もう一方のメールボックスが削除済み (非アクティブ) 状態になっているメールボックスが同じメールアドレスを持つ複数のメールボックスが存在することがあります。このような状況では、PST ファイルをインポートするメールボックスを一意に識別するメールボックス GUID を指定します。この GUID をアクティブなメールボックスに対して取得するには`Get-Mailbox - <identity of active mailbox> | FL Guid`、次の PowerShell コマンドを実行します。回復可能な削除 (または非アクティブ) のメールボックスの GUID を取得するには、次のコマンドを実行します。`Get-Mailbox - <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`           | `annb@contoso.onmicrosoft.com` <br/> または  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
+    | `IsArchive` <br/> | PST ファイルをユーザーのアーカイブ メールボックスにインポートするかどうかを指定します。次のような 2 つの選択肢があります。<br/> **FALSE**PST ファイルをユーザーのプライマリメールボックスにインポートします。  <br/> **TRUE**PST ファイルをユーザーのアーカイブメールボックスにインポートします。  <br/>  このパラメーターを空白のままにすると、PST ファイルがユーザーのプライマリメールボックスにインポートされます。  <br/><br/> **注:** プライマリメールボックスがオンプレミスであるユーザーのクラウドベースのアーカイブメールボックスに PST ファイルをインポートするには、このパラメーターに**TRUE**を指定し、 `Mailbox`パラメーターのユーザーの社内メールボックスの電子メールアドレスを指定するだけです。           | `FALSE` <br/> または  <br/>  `TRUE` <br/> |
+    | `TargetRootFolder` <br/> | PST ファイルのインポート先メールボックスフォルダーを指定します。  <br/>  このパラメーターを空白のままにした場合、PST はメールボックスのルートレベル (受信トレイフォルダーとその他の既定のメールボックスフォルダーと同じレベル) にある**インポート**された新しいフォルダーにインポートされます。  <br/>  を指定`/`した場合、PST ファイル内のアイテムは、ユーザーの受信トレイフォルダーに直接インポートされます。  <br/>  を指定`/<foldername>`した場合、PST ファイルのアイテムは、 * \<foldername\> *という名前のサブフォルダーにインポートされます。たとえば、を使用`/ImportedPst`した場合、アイテムは**ImportedPst**という名前のサブフォルダーにインポートされます。このサブフォルダーは、ユーザーの受信トレイフォルダーに配置されます。<br/><br/> **ヒント:** pst ファイルのインポートに最適なフォルダーの場所を決定できるように、いくつかのテストバッチを実行して、このパラメーターを試してみることをお勧めします。           |(空白)  <br/> または  <br/>  `/` <br/> または  <br/>  `/ImportedPst` <br/> |
+    | `ContentCodePage` <br/> |このオプションパラメーターは、ANSI ファイル形式で PST ファイルをインポートするために使用するコードページの数値を指定します。このパラメーターは、中国語、日本語、および韓国語 (CJK) の組織から PST ファイルをインポートするために使用されます。これらの言語では、通常、文字エンコードに2バイト文字セット (DBCS) を使用します。メールボックスフォルダー名に DBCS を使用する言語の PST ファイルをインポートするためにこのパラメーターを使用していない場合は、インポート後にフォルダー名が正しくないことがよくあります。このパラメーターに使用することがサポートされている値の一覧については、「[コードページ識別子](https://go.microsoft.com/fwlink/p/?LinkId=328514)」を参照してください。<br/><br/> **注:** 前述したように、これはオプションのパラメーターであり、CSV ファイルに含める必要はありません。または、1つまたは複数の行の値を空白のままにしておくこともできます。           |(空白)  <br/> または  <br/>  `932`(ANSI/OEM 日本語のコードページ識別子)  <br/> |
     | `SPFileContainer` <br/> |PST インポートの場合は、このパラメーターを空白のままにします。   <br/> |該当なし  <br/> |
     | `SPManifestContainer` <br/> |PST インポートの場合は、このパラメーターを空白のままにします。   <br/> |該当なし  <br/> |
     | `SPSiteUrl` <br/> |PST インポートの場合は、このパラメーターを空白のままにします。   <br/> |該当なし  <br/> |
   
 ## <a name="step-8-create-a-pst-import-job-in-office-365"></a>手順 8:Office 365 で PST インポート ジョブを作成する
 
-最後のステップでは、Office 365 のサービスのインポートの PST のインポート ジョブを作成します。手順 7 で作成した PST インポート マッピング ファイルを提出する前に説明したようです。インポート サービスが、解除するようマッピング ファイルの情報を使用して新しいジョブを作成した後に暗号化し、PST ファイル (手順 5 で Office 365 にアップロードした場合) を指定したユーザーのメールボックスにインポートします。 
+最後の手順では、Office 365 のインポートサービスで PST インポートジョブを作成します。前述のように、手順7で作成した PST インポートマッピングファイルを送信します。新しいジョブを作成した後、インポートサービスはマッピングファイル内の情報を使用して、(手順5で Office 365 にアップロードした) PST ファイルを暗号化解除してインポートし、指定されたユーザーメールボックスにインポートします。 
   
-1. [https://protection.office.com](https://protection.office.com)。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
-2. 組織の Office 365 の管理者アカウントの資格情報を使用して Office 365 にサインインします。
+2. office 365 組織の管理者アカウントの資格情報を使用して、office 365 にサインインします。
     
-3. 左側のウィンドウでは、**データ ・ ガバナンス**をクリックし、し、[**インポート**] をクリックします。
+3. 左側のウィンドウで、[**データガバナンス**] をクリックし、[**インポート**] をクリックします。
     
 4. **[インポート]** ページで、**[インポート サービスに移動する]** をクリックします。
     
-5. **Office 365 へのデータのインポート**] ページで、[**新しいジョブ**] をクリックします![アイコンの追加](media/ITPro-EAC-AddIcon.gif)、**電子メール メッセージをアップロードする (PST ファイル)** をクリックします。
+5. [ **Office へのデータのインポート 365** ] ページで、[**新しいジョブ**![の追加] アイコン](media/ITPro-EAC-AddIcon.gif)をクリックし、[**電子メールメッセージ (PST ファイル) のアップロード**] をクリックします。
     
 6. **[ネットワーク経由でファイルをアップロードする]** ページで、**[ファイルのアップロードが完了しました]** と **[マッピング ファイルにアクセスできます]** の各チェック ボックスを選択して、**[次へ]** をクリックします。  
     
 7. PST インポート ジョブの名前を入力し、**[次へ]** をクリックします。
     
-8. [**追加**] をクリックして![アイコンの追加](media/ITPro-EAC-AddIcon.gif)手順 7 で作成したマッピングの PST ファイルを選択します。 
+8. [追加] アイコン](media/ITPro-EAC-AddIcon.gif)をクリックして、手順7で作成した PST マッピングファイルを選択します。 **** ![ 
     
 9. CSV ファイルの名前が一覧に表示されたら、CSV ファイルを選択して **[検証]** をクリックし、CSV ファイルにエラーがないか確認します。  
     
     > [!NOTE]
-    > 前に説明すると、PST ファイルが暗号化されている場合、 `.pfile` PST ファイル名に拡張子が追加されます。追加する必要があります、 `.pfile` pst ファイルの名前に拡張子のファイルを CSV ファイルにします。ない場合は、CSV ファイルの検証に失敗します。 
+    > 前述したように、pst ファイルが暗号化され`.pfile`ている場合は、pst ファイル名に拡張子が追加されます。CSV ファイルの PST `.pfile`ファイルの名前に拡張機能を追加する必要があります。省略すると、CSV ファイルの検証は失敗します。 
   
     PST インポート ジョブを作成するには、CSV ファイルが正常に検証される必要があります。検証が失敗した場合は、**[状態]** 列の **[無効]** リンクをクリックします。PST インポートのマッピング ファイルのコピーが開き、失敗したファイル内の各行ごとにエラー メッセージが表示されます。 
     
@@ -403,17 +403,17 @@ PST ファイルは、暗号化され、組織の Office 365 の Azure ストレ
     
 11. **[完了]** をクリックして、ジョブを送信します。 
     
-    ジョブは、 **Office 365 へのデータのインポート**] ページで、PST のインポート ジョブの一覧に表示されます。 
+    ジョブは、[**データを Office 365 にインポートする**] ページの PST インポートジョブの一覧に表示されます。 
     
-12. ジョブを選択し、[**更新**] をクリックして![更新アイコン](media/O365-MDM-Policy-RefreshIcon.gif)詳細ペインに表示されるステータス情報を更新します。 
+12. ジョブを選択し、 ****![[更新の](media/O365-MDM-Policy-RefreshIcon.gif)更新] アイコンをクリックして、詳細ウィンドウに表示される状態情報を更新します。 
     
 13. 詳細ウィンドウで、**[詳細の表示]** をクリックして、選択したジョブの最新の状態を取得します。 
  
 ## <a name="more-information"></a>詳細情報
 
-- 理由 PST ファイルを Office 365 にインポートしますか。
+- PST ファイルを Office 365 にインポートする理由
     
-  - 組織の電子メールを Office 365 に移行する良い方法です。
+  - 組織の電子メールを Office 365 に移行することをお勧めします。
     
   - 次のことが可能になるので、組織のコンプライアンスのニーズに対応するのに役立ちます。
     
@@ -425,13 +425,13 @@ PST ファイルは、暗号化され、組織の Office 365 の Azure ストレ
     
   - アイテム保持ポリシーを使って、メールボックスのコンテンツの保持期間を制御する。
     
-  - Office 365 の監査ログ メールボックスに関連するイベントを検索します。
+  - メールボックス関連イベントに対して Office 365 監査ログを検索します。
     
-  - データの損失に対する保護に役立ちます。Office 365 のメールボックスにインポートする PST ファイルは、ユーザーのコンピューターにデータを格納するのではなく、オンラインの Exchange の高可用性機能を継承します。
+  - データ損失からの保護に役立てることができます。Office 365 メールボックスにインポートされる PST ファイルは、データをユーザーのコンピューターに保存するのではなく、Exchange Online の高可用性機能を継承します。
     
   - データがクラウドに格納されるので、ユーザーはあらゆるデバイスからデータを利用できます。
     
-- ここでは、キー、Id、および 2、3、および 4 の手順で取得した Url の例です。この例では、暗号化するために O365ImportTool.exe ツールを実行して、アップロードの PST ファイルを Office 365 にするコマンドの構文も含まれています。パスワードやその他のセキュリティに関連する情報を保護するようにこれらだけを保護する対策を講じていることを確認します。
+- 手順2、3、および4で取得したキー、id、および url の例を次に示します。この例には、o365importtool.zip ツールで実行して、PST ファイルを暗号化して Office 365 にアップロードするためのコマンドの構文も含まれています。パスワードやその他のセキュリティ関連の情報を保護するのと同じように、これらを保護するための予防措置を講じるようにしてください。
     
   ```
   Symmetric key: l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867=
@@ -455,10 +455,10 @@ PST ファイルは、暗号化され、組織の Office 365 の Azure ストレ
   O365ImportTool.exe /srcdir:\\FILESERVER01\PSTs /protect-rmsserver:"https://afcbd8ec-cb2b-4a1a-8246-0b4bc22d1978.rms.na.aadrm.com/_wmcs/licensing" /protect-tenantid:42745b33-2a5c-4726-8a2a-ca43caa0f74b /protect-ownerid:45beb445-4d06-47df-8e61-6ca1a88a080e /protect-key:"l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867=" /transfer:upload /upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/EncryptedPSTs" /upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"
   ```
 
-- 説明したよう Office 365 のインポート サービスをオンに設定 (不定の期間) のメールボックスを PST ファイルをインポートした後に保持します。つまり、 *RentionHoldEnabled*プロパティに設定されて`True`メールボックスに割り当てられているリテンション ・ ポリシーを処理しないようにします。これには、削除したり、古いメッセージをアーカイブするアーカイブ ポリシーの削除を防止することで、新しくインポートされたメッセージを管理するためにメールボックス所有者の時間が与えられます。この保持を管理するためのいくつかの手順を以下に示します。 
+- 前述したように、Office 365 インポートサービスは、PST ファイルがメールボックスにインポートされた後、保持ホールドの設定 (無期限) を有効にします。つまり、 *RentionHoldEnabled*プロパティはに`True`設定されているため、メールボックスに割り当てられたアイテム保持ポリシーは処理されません。これにより、メールボックスの所有者は、削除またはアーカイブポリシーによる古いメッセージの削除またはアーカイブを禁止することにより、新しくインポートされたメッセージを管理できます。この保持ホールドを管理するために実行できるいくつかの手順を次に示します。 
     
-  - 後、一定時間、オフにできます、保存を実行して、`Set-Mailbox -RetentionHoldEnabled $false`コマンドです。手順については、[保存上のメールボックスの場所を保持](https://go.microsoft.com/fwlink/p/?LinkId=544749)を参照してください。
+  - 一定の期間が経過した後、 `Set-Mailbox -RetentionHoldEnabled $false`コマンドを実行して保存機能を無効にすることができます。手順については、「[メールボックスを保持ホールドの状態にする](https://go.microsoft.com/fwlink/p/?LinkId=544749)」を参照してください。
     
-  - 無効になって、将来的にいくつかの日付にするため、保持を構成できます。これを実行するのには、`Set-Mailbox -EndDateForRetentionHold <date>`コマンドです。たとえば、今日の日付は 2016 年 7 月 1 日、30 日以内にオフに保持する、ことを前提としては、次のコマンドを実行、: `Set-Mailbox -EndDateForRetentionHold 8/1/2016`。このシナリオでは、 *RentionHoldEnabled*プロパティに設定のままに`True`。詳細については、[一連のメールボックス](https://go.microsoft.com/fwlink/p/?LinkId=150317)を参照してください。
+  - 今後、ある日付に無効になるように、保存機能を構成することができます。そのためには、 `Set-Mailbox -EndDateForRetentionHold <date>`コマンドを実行します。たとえば、今日の日付が2016年7月1日で、保持ホールドを30日以内に無効にする場合は、次のコマンド`Set-Mailbox -EndDateForRetentionHold 8/1/2016`を実行します。このシナリオでは、 *RentionHoldEnabled*プロパティをに`True`設定したままにします。詳細については、「[メールボックスの設定](https://go.microsoft.com/fwlink/p/?LinkId=150317)」を参照してください。
     
-  - できるように、すぐに削除またはユーザーのアーカイブ メールボックスに移動しないインポートされた古いアイテムは、メールボックスに割り当てられているリテンション ・ ポリシーの設定を変更することができます。たとえば、削除またはアーカイブ メールボックスに割り当てられているポリシーの保有期間を長く可能性があります。このシナリオでは無効にするメールボックスに保持リテンション ・ ポリシーの設定を変更した後。詳細については、 [Office 365 の組織内のメールボックスのアーカイブと削除ポリシーの設定](set-up-an-archive-and-deletion-policy-for-mailboxes.md)を参照してください。
+  - メールボックスに割り当てられているアイテム保持ポリシーの設定を変更して、インポートした古いアイテムがすぐに削除されるか、ユーザーのアーカイブメールボックスに移動されないようにすることができます。たとえば、メールボックスに割り当てられている削除ポリシーまたはアーカイブポリシーの保存期間を長くすることができます。このシナリオでは、アイテム保持ポリシーの設定を変更した後、メールボックスの保存機能をオフにします。詳細については、「 [Office 365 組織のメールボックスのアーカイブおよび削除ポリシーをセットアップする](set-up-an-archive-and-deletion-policy-for-mailboxes.md)」を参照してください。

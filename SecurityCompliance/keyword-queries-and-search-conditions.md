@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Office 365 セキュリティ&amp;コンプライアンスセンターのコンテンツ検索ツールを使用して、Exchange Online メールボックスおよび SharePoint または OneDrive for business サイトで検索できる電子メールとファイルプロパティについて説明します。  '
-ms.openlocfilehash: b3d0e7bb18513765c48bfc5ca324f13e5abc4c27
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3963105a790f8cc149bb5522f386f7bffe974e6c
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214077"
+ms.locfileid: "30223696"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>コンテンツ検索のキーワード クエリと検索条件
 

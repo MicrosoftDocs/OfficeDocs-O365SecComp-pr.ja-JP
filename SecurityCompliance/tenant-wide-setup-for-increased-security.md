@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Office 365 環境のセキュリティに影響を与えるテナント全体の設定に推奨される構成について説明します。セキュリティのニーズによっては、より多くのセキュリティを必要とする場合があります。これらの推奨事項を出発点として使用します。
-ms.openlocfilehash: 95b00d2f5a5c77eff1fcef2450ffb20ce5c57617
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 982e9b73821553ae1f666cf54e143d4a806e3cb3
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213927"
+ms.locfileid: "30223166"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>セキュリティ強化のために、Office 365 テナントを構成する
 
@@ -37,7 +37,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターには、�
 |**ATP の安全な添付ファイル機能** <br/> |いいえ  <br/> | 「安全な添付ファイル」のメインページで、このボックスをオンにして、SharePoint、OneDrive、Microsoft Teams のファイルを保護します。  <br/>  &ensp;&ensp;• SharePoint、OneDrive、Microsoft Teams の ATP を有効にします。  <br/> <br> 次の設定を使用して、新しい安全な添付ファイルポリシーを追加します。  <br/>  &ensp;&ensp;•ブロック: 検出されたマルウェアを使用して、現在の電子メールと添付ファイルをブロックする (このオプションを選択する)  <br/>  &ensp;&ensp;•リダイレクトの有効化— (このボックスをオンにして、管理者や検疫アカウントなどの電子メールアドレスを入力してください)  <br/>  &ensp;&ensp;•添付ファイルのマルウェアスキャンがタイムアウトまたはエラーが発生した場合は、上記の選択を適用します (このチェックボックスをオンにします)。  <br/>  &ensp;&ensp;•適用先-受信者ドメイン is (ドメインを選択してください)  <br/>  <br>詳細情報: [Office 365 の ATP の安全な添付ファイルのポリシーを設定](set-up-atp-safe-attachments-policies.md)する <br/> |
 |**ATP の安全なリンク** <br/> |はい  <br/> | この設定を組織全体の既定のポリシーに追加します。  <br/> &ensp;&ensp;•安全なリンクの使用: office 365 ProPlus、office for iOS および Android (このオプションを選択します)。  <br/> <br>特定の受信者に推奨されるポリシー:  <br/>  &ensp;&ensp;•ユーザーがリンクをクリックしたときに、既知の悪意のあるリンクの一覧に対して url が書き換えられ、チェックされます (このオプションを選択します)。  <br/>  &ensp;&ensp;•安全な添付ファイルを使用して、ダウンロード可能なコンテンツをスキャンします (このチェックボックスをオンにします)。  <br/>  &ensp;&ensp;•適用先-受信者ドメイン is (ドメインを選択してください)。  <br/> <br> 詳細については、「 [Office 365 の ATP の安全なリンク](atp-safe-links.md)」を参照してください。  <br/> |
 |**スパム対策 (メールフィルター)** <br/> |はい  <br/> | 監視対象:  <br/>  &ensp;&ensp;•スパム数が多すぎます。カスタム設定を選択し、既定のスパムフィルターポリシーを編集します。  <br/>  &ensp;&ensp;•スプーフィングインテリジェンス—ドメインをスプーフィングしている送信者を確認します。これらの送信者を禁止または許可します。<br/>  <br>詳細については[、「Office 365 電子メールのスパム対策保護](anti-spam-protection.md)」を参照してください。  <br/> |
-|***電子メール認証*** <br/> |はい  <br/> |電子メール認証は、ドメインネームシステム (DNS) を使用して、電子メールの送信者に関する検証可能な情報を電子メールメッセージに追加します。office 365 は、既定のドメイン (onmicrosoft.com) に対して電子メール認証を設定しますが、office 365 管理者はカスタムドメインに対して電子メール認証を使用することもできます。3つの認証方法が使用されます。<br/> <br> &ensp;&ensp;• Sender Policy Framework (または SPF)。<br/>&ensp;&ensp;&ensp;&ensp;-セットアップの場合は、「 [Set up SPF in Office 365」を参照してスプーフィングを防止](set-up-spf-in-office-365-to-help-prevent-spoofing.md)してください。 <br/> &ensp;&ensp;• domainkeys で識別されたメール (dkim)。 <br/> &ensp;&ensp;&ensp;&ensp;-「 [Office 365 でカスタムドメインのメールに dkim を使用する](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)」を参照してください。 <br>&ensp;&ensp;&ensp;&ensp;-dkim の構成が完了したら、セキュリティ&amp;コンプライアンスセンターでそれを有効にします。<br/> &ensp;&ensp;•ドメインベースのメッセージ認証、レポート、および準拠 (DMARC)。 </br> &ensp;&ensp;&ensp;&ensp;-DMARC セットアップの場合は、 [DMARC を使用して Office 365 で電子メールを検証](use-dmarc-to-validate-email.md)します。<br/>  <br/>
+|***電子メール認証*** <br/> |はい  <br/> |電子メール認証は、ドメインネームシステム (DNS) を使用して、電子メールの送信者に関する検証可能な情報を電子メールメッセージに追加します。office 365 は、既定のドメイン (onmicrosoft.com) に対して電子メール認証を設定しますが、office 365 管理者はカスタムドメインに対して電子メール認証を使用することもできます。3つの認証方法が使用されます。<br/> <br> &ensp;&ensp;• Sender Policy Framework (または SPF)。<br/>&ensp;&ensp;&ensp;&ensp;-セットアップの場合は、「 [Set up SPF in Office 365」を参照してスプーフィングを防止](set-up-spf-in-office-365-to-help-prevent-spoofing.md)してください。 <br/> &ensp;&ensp;• domainkeys で識別されたメール (dkim)。 <br/> &ensp;&ensp;&ensp;&ensp;-「 [Office 365 でカスタムドメインのメールに dkim を使用する](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)」を参照してください。 <br>&ensp;&ensp;&ensp;&ensp;-dkim の構成が完了したら、セキュリティ&amp;コンプライアンスセンターでそれを有効にします。<br/> &ensp;&ensp;•ドメインベースのメッセージ認証、レポート、および準拠 (DMARC)。 <br/> &ensp;&ensp;&ensp;&ensp;-DMARC セットアップの場合は、 [DMARC を使用して Office 365 で電子メールを検証](use-dmarc-to-validate-email.md)します。<br/>  <br/>
 |
 
 > [!NOTE]

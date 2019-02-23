@@ -1,9 +1,27 @@
 ---
-タイトル: "スパム対策保護に関する FAQ" ms. author: krowley author: kccross manager: laurawi ms. date: 12/9/2016 ms: ITPro: TN2DMC 送受信: 通常の検索。 appverid は、次のように指定しています。
-- MET150: c534a35d-b121-45da-9d0a-ce738ce51fce ms. assetid:
-    - M365-コンプライアンスに関する説明: このトピックでは、スパム対策保護に関するよく寄せられる質問と回答について説明します。回答は Microsoft exchange online および exchange online Protection (EOP) のお客様に適用されます。
+title: スパム対策保護 FAQ
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 12/9/2016
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
+ms.collection:
+- M365-security-compliance
+description: ここでは、スパム対策保護に関するよく寄せられる質問と回答について説明します。 回答は、Microsoft Exchange Online と Exchange Online Protection (EOP) のお客様に当てはまります。
+ms.openlocfilehash: f41799a3870e899fd3601453aaa11f6f9c51c608
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223056"
 ---
-
 # <a name="anti-spam-protection-faq"></a>スパム対策保護 FAQ
 
 ここでは、スパム対策保護に関するよく寄せられる質問と回答について説明します。 回答は、Microsoft Exchange Online と Exchange Online Protection (EOP) のお客様に当てはまります。 

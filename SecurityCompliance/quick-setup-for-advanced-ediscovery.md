@@ -5,20 +5,20 @@ author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
-ms.topic: get-started-article
-ms.service: o365-administration
+ms.topic: article
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: 'Office 365 セキュリティ&amp;コンプライアンス センターから Office 365 Advanced eDiscovery にアクセスする方法を説明し、Advanced eDiscovery を使用するための一般的なワークフローを確認します。  '
-ms.openlocfilehash: b3cd220e4d97f4774e8839891bf2f13cfcfadc52
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 69c3b7d281576462ed49bb5bf6306002eab63ba5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532153"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218747"
 ---
 # <a name="quick-setup-for-office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery のクイック セットアップ
 

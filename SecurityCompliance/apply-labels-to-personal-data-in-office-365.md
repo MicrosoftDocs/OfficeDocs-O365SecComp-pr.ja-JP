@@ -10,19 +10,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - GDPR
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Priority
-ms.custom: ''
-ms.assetid: ''
 search.appverid:
 - MET150
 description: Office のラベルを GDPR 保護計画の一部として使用する方法について説明します。
-ms.openlocfilehash: 35fc3be6f2c98d6b7f6c4d6f6150eeef6d552437
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: d92d132190296e2243bf7ea00c3c0dba4e38930f
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272342"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223156"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Office 365 の個人データにラベルを適用する
 

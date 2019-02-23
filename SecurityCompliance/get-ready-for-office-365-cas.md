@@ -4,21 +4,21 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
-ms.topic: overview
+ms.topic: article
 ms.date: 02/15/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d9ee4d67-f2b3-42b4-9c9e-c4529904990a
 description: Office 365 Cloud App Security の使用を開始する
-ms.openlocfilehash: eef1a4f0465b583bb0f0589d213f61c9a15fd152
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: 89718adcbb7c77735db3009937d887e88d4a8bc3
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087436"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223716"
 ---
 # <a name="get-ready-for-office-365-cloud-app-security"></a>Office 365 Cloud App Security の使用準備
   
@@ -73,9 +73,9 @@ Office 365 Cloud App Security には2種類の通知があります。不審な�
 
 詳細については、以下のリソースを参照してください。
 
-- [Office 365 Cloud App Security Conditional Access App Control を使用したアプリの保護](ocas-conditional-access-app-control.md)
+- [Office 365 Cloud App Security アプリの条件付きアクセス制御を使用してアプリを保護する](ocas-conditional-access-app-control.md)
 
-- [Office 365 アプリ用の条件付きアクセスアプリコントロールの展開](ocas-deploy-conditional-access-app-control.md)
+- [Office 365 アプリ用のアプリの条件付きアクセス制御を展開する](ocas-deploy-conditional-access-app-control.md)
 
 ## <a name="step-6-learn-about-your-organizations-cloud-usage"></a>手順 6: 組織のクラウド使用状況について学びます。
 

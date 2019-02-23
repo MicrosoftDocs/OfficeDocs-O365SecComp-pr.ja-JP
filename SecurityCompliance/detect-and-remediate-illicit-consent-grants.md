@@ -11,17 +11,15 @@ ms.collection:
 - Strat_O365_IP
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.custom: ''
-ms.assetid: ''
 search.appverid:
 - MET150
 description: Office 365 で不法な同意を付与する攻撃を認識し、修復する方法について説明します。
-ms.openlocfilehash: 18b57aa6151568920dcb72891f773db110d2bba6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1d8df4db94129bcdcb6ecf4859f9f89a1974edbe
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219587"
+ms.locfileid: "30223356"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Microsoft Office 365 での不正な同意付与の検出と修復
 

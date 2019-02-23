@@ -5,16 +5,15 @@ author: MikePlumleyMSFT
 manager: pamgreen
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-ms.custom: ''
+ms.service: O365-seccomp
 localization_priority: Priority
 description: オンプレミス サーバー上の Office で GDPR の要件に対応する方法について説明します。
-ms.openlocfilehash: 2f5dc98a9842d6afc70563c6d9dbc0e46b85b089
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 9b1c7eb4313d1c33e273b6ac0d494c2359c40f00
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272442"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216067"
 ---
 # <a name="gdpr-for-office-on-premises-servers"></a>オンプレミス サーバー上の Office の GDPR
 

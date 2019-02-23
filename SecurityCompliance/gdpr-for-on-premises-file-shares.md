@@ -5,16 +5,15 @@ author: MikePlumleyMSFT
 manager: pamgreen
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-ms.custom: ''
+ms.service: O365-seccomp
 localization_priority: Priority
 description: オンプレミスの Windows Server ファイル共有で GDPR の要件に対応する方法について説明します。
-ms.openlocfilehash: 29f79f05f4b23656e3262b717e4fa24d80d9d470
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 14af73a2ff2a162f2f3e621c2efeb5d9050c069a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272452"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220267"
 ---
 # <a name="gdpr-for-on-premises-windows-server-file-shares"></a>オンプレミスの Windows Server ファイル共有の GDPR
 

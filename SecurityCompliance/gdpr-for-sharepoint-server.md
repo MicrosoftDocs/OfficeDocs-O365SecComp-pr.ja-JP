@@ -5,16 +5,15 @@ author: MikePlumleyMSFT
 manager: pamgreen
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-ms.custom: ''
+ms.service: O365-seccomp
 localization_priority: Priority
 description: オンプレミスの SharePoint Server で GDPR の要件に対応する方法について説明します。
-ms.openlocfilehash: 05c64c10c2fea80ed410258433c35efc33c4a9de
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 84692799222be595d69f7a33a31b0ec3fe767c3d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29740829"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221117"
 ---
 # <a name="gdpr-for-sharepoint-server"></a>SharePoint Server での GDPR への対応
 

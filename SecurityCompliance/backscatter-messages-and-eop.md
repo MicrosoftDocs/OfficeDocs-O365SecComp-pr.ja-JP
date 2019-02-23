@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
-description: Backscatter のメッセージは、受信した迷惑メールの結果として通常のメール サーバーから送信される自動バウンス メッセージです。Backscatterer DNSBL は、backscatter メッセージを送信する IP アドレスの一覧です。スパム送信者の一覧ではありませんし、Backscatterer DNSBL からサーバーを削除しようとはしません。
-ms.openlocfilehash: 2ab5c6a3bec347446452acd3bdfd8c5d309994a9
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.collection:
+- M365-security-compliance
+description: backscatter メッセージは、通常、スパムの受信の結果としてメールサーバーによって送信される自動バウンスメッセージです。バックスキャター dnsbl は、バック散布メッセージを送信する IP アドレスのリストです。スパム送信者のリストではないため、バックスキャター dnsbl からサーバーを削除しようとしていません。
+ms.openlocfilehash: 075200ff85762056290690f40d6047ea25a1dbde
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002687"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222776"
 ---
 # <a name="backscatter-messages-and-eop"></a>バックスキャター メッセージと EOP
 
@@ -31,6 +33,6 @@ ms.locfileid: "23002687"
 
 [Backscatterer.org IP 一覧](https://blogs.msdn.com/b/tzink/archive/2012/08/22/the-backscatterer-org-ip-list.aspx)
   
-[高度な迷惑メール フィルターのオプション](advanced-spam-filtering-asf-options.md)で「NDR backscatter」エントリを参照してください。
+「 [Advanced spam filtering options](advanced-spam-filtering-asf-options.md) 」の「NDR backscatter」エントリを参照してください。
   
 

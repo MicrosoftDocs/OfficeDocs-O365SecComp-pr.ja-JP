@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 9/25/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイル計画マネージャーは、保持ラベルおよびポリシーのための高度な管理機能を提供します。作成に始まり、コラボレーション、レコード宣言、保持、そして廃棄に至るまでのコンテンツのライフ サイクル全体におけるラベルとコンテンツのラベリングを網羅する統合的な機能を提供します。
-ms.openlocfilehash: 4feacf20444591f6da2d55a928a81e86b56c5d9a
-ms.sourcegitcommit: 9f34ace6bbe3d5e07e24ebaae96613750869cddf
+ms.openlocfilehash: 792729d55f7096114694a59d7202b36fc130e48c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25019278"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221187"
 ---
 # <a name="overview-of-file-plan-manager"></a>ファイル計画マネージャーの概要
 

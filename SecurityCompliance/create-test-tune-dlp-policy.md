@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'DLP ポリシーを使用して作業を開始する最も簡単な方法は、Office 365 に含まれるテンプレートの1つを使用することです。 '
-ms.openlocfilehash: 58ff52e0fdcd1579985d05d06887d6aca2bb2940
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 14582a6507d271bc569aeb0c5456a662962d20a9
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220477"
+ms.locfileid: "30223746"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>DLP ポリシーの作成、テスト、調整
 
-**プリンシパルの作成者** </br>
-Paul Cunningham、Microsoft MVP </br>
-[実際的な365](https://practical365.com/) </br>
-[@Practical365](https://twitter.com/practical365)</br>
+**プリンシパルの作成者** <br/>
+Paul Cunningham、Microsoft MVP <br/>
+[実際的な365](https://practical365.com/) <br/>
+[@Practical365](https://twitter.com/practical365)<br/>
 __________________________________________________
 
 データ損失防止とは、Office 365 のコンプライアンス機能で、組織が不要な機密情報を意図的または偶発的に危険にさらすことを防ぐために設計されています。DLP は、exchange Server と exchange Online ではルートがあり、SharePoint Online と OneDrive for business にも適用されます。

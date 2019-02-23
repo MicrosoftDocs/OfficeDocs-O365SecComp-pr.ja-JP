@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 10/22/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 機密ラベルを作成するときに、そのラベルが適用されるコンテンツへのアクセスを制限できます。機密ラベルでは、コンテンツの保護のために暗号化を使用できます。
-ms.openlocfilehash: 154be1d4dd1e891913e1b64d8f1ae5dfa34706bf
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 04de1b1efaa26694bcad2274d2ff9e9b3b2c637e
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "26547319"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220317"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>機密ラベルの暗号化を使用してコンテンツへのアクセスを制限する
 

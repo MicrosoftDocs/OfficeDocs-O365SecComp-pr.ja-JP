@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 12/14/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: '概要: SharePoint Online チーム サイトを作成し、さまざまなレベルの情報保護用に構成します。'
-ms.openlocfilehash: 69dc7395e8394694eab9eb6c27f229ea971516b0
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: c39b1d85241c2d21c196e0c2c7f0d5c70149de5c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "27281778"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220307"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>3 層の保護用に SharePoint Online サイトを展開する
 

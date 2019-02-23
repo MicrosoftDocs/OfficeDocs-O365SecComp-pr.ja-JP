@@ -3,21 +3,20 @@ title: Exchange Online および セキュリティ/コンプライアンス セ
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 description: Exchange Online および セキュリティ/コンプライアンス センターは、推奨通りに構成した場合、米国商品先物取引委員会規則 1.31(c)-(d) (CFTC Rule 1.31(c)-(d) )、米国金融取引業規制機構規則 4511 (FINRA Rule 4511)、および米国証券取引委員会規則 17a-4 (SEC Rule 17a-4) における記憶域に関する該当要件に準拠することが、Cohasset Associates により検証されました。
-ms.openlocfilehash: 0b81c99eeff65e5e9d98c6167d8e8f52b9535d98
-ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
+ms.openlocfilehash: a50771b7565e328b2a288a2824706626c82b026c
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29610564"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223036"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Exchange Online および セキュリティ/コンプライアンス センターを使用して米国証券取引委員会規則 17a-4 (SEC Rule 17a-4) に準拠する
 

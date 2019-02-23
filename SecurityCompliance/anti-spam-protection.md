@@ -1,10 +1,27 @@
 ---
-title: "Office 365 電子メールのスパム対策保護" laurawi: krowley author: kccross manager: ms. 日: 6/29/2018 ミリ秒: 管理者: 送受信: O365-seccomp: 通常の検索。 appverid は次のとおりです。
+title: Office 365 電子メールのスパム対策保護
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 6/29/2018
+ms.audience: Admin
+ms.topic: overview
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
 - MET150
-- MOE150 ms. assetid: 6a601501-a6a8-4559eb2e7-56b59c96a586 ms. コレクション:
-    - M365-セキュリティ-コンプライアンスに関する説明: 「Exchange Online および Office 365 でスパムを防止するために役立つスパム対策の設定とフィルターについて説明します。Office 365 で迷惑メールを過剰に取得するスパムフィルターとスパム対策ポリシー設定をカスタマイズできます。
+- MOE150
+ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
+ms.collection:
+- M365-security-compliance
+description: Exchange Online および Office 365 でスパムを防止するのに役立つスパム対策設定とフィルターについて説明します。Office 365 で迷惑メールを過剰に取得するスパムフィルターとスパム対策ポリシー設定をカスタマイズできます。
+ms.openlocfilehash: 2d8f433cabda4408da2e29b7bc6570e09e6989dd
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223426"
 ---
-
 # <a name="office-365-email-anti-spam-protection"></a>Office 365 の電子メールのスパム対策保護
 
 Office 365 で懸念されるスパム数Office 365 または Exchange Online Protection (EOP) サービスに複数のスパムフィルターを作成しています。そのため、最初のメッセージを受信した時点からメールを保護することができます。Office 365 でスパムを防止するために、組織内の特定の問題に対処するために保護設定を変更する必要があります (たとえば、特定の送信者から多数のスパムを受信している場合など)。または、設定を微調整して、それらの情報が表示されるようにしてください。お客様の組織のニーズを満たすように調整します。これを行うには、Office 365 セキュリティ&amp;コンプライアンスセンターでスパム対策設定を変更することができます。

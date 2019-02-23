@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 10/22/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Office 365 の機密ラベルを使用すると、機密コンテンツの分類が可能になり、機密コンテンツの保護に役立てることができます。このラベルの使用によって、共同作業の生産性や機能性が低下することはありません。機密ラベルは、ラベル付けされたコンテンツの暗号化や透かしなどの保護設定を強制適用するために使用できます。
-ms.openlocfilehash: 48d66a93c82a7430bc34373975d385ebc7bfbf9a
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 449b2567366bb262d469d78d3de447cccf04389b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706168"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220947"
 ---
 # <a name="overview-of-sensitivity-labels"></a>機密ラベルの概要
 

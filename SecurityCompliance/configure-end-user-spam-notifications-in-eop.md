@@ -1,9 +1,26 @@
 ---
-title: "EOP のエンドユーザーのスパム通知を構成する" (執筆者: krowley author: kccross manager: laurawi ms.: ITPro ms): TN2DMC: ms. custom: 送受信: 通常の検索。 appverid:
-- MET150: e9947db5-1dd1-4493-872d-7362b24c7ba0 ms. assetid:
-    - M365-コンプライアンスの説明: "既定の会社全体のコンテンツフィルターポリシーまたはドメインに適用されるカスタムコンテンツフィルターポリシーに対して、エンドユーザーのスパム通知を構成できます。"
+title: EOP でのエンドユーザー スパム通知の構成
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
+ms.collection:
+- M365-security-compliance
+description: エンド ユーザー向けスパム通知は、既定の会社全体のコンテンツ フィルター ポリシーに対して、またはドメインに適用されるカスタム コンテンツ フィルター ポリシーに対して構成できます。
+ms.openlocfilehash: 2cab65347c726cab482eb127f5068586f4f3afd3
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222976"
 ---
-
 # <a name="configure-end-user-spam-notifications-in-eop"></a>EOP でのエンドユーザー スパム通知の構成
   
 > [!IMPORTANT]

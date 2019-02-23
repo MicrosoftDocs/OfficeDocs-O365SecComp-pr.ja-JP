@@ -1,7 +1,7 @@
 ---
 title: スパムが各ユーザーの [迷惑メール] フォルダーにルーティングされるようにする
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 7/16/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
+ms.collection:
+- M365-security-compliance
 description: EOP のお客様のための既定のスパム対策アクションでは、スパム メッセージは受信者の [迷惑メール] フォルダーに移動されます。このアクションをオンプレミスのメールボックスで使用するには、EOP によって追加されたスパム ヘッダーを検出するように、オンプレミスのエッジ サーバーまたはハブ サーバーで Exchange トランスポート ルールを構成する必要があります。これらのトランスポート ルールにより、Set-OrganizationConfig コマンドレットの SclJunkThreshold プロパティで使用する Spam Confidence Level (SCL) が設定されます。
-ms.openlocfilehash: 1b0a9e5ee39820baade714612ca0b0bdb7a81bb9
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: f712e66934956bcf46215e4016501003ce9b1725
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002856"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222886"
 ---
 # <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>スパムが各ユーザーの [迷惑メール] フォルダーにルーティングされるようにする
 

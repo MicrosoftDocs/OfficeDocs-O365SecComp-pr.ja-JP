@@ -3,10 +3,9 @@ title: Office 365 監査ログの詳細なプロパティ
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -15,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Office 365 監査ログ レコードに含まれている追加のプロパティについて説明します。
-ms.openlocfilehash: e2450f8d4f9a613d6b21e373d2a2de841cfc7ca0
-ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
-ms.translationtype: HT
+ms.openlocfilehash: 0219ed1fe29dc3ae1f940cd6991781368ae2d519
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29890048"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223476"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Office 365 監査ログの詳細なプロパティ
 

@@ -3,7 +3,6 @@ title: ネットワークアップロードを使用して組織の PST ファ�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '管理者向け: Office 365 で、ネットワークアップロードを使用して複数の PST ファイルをユーザーのメールボックスに一括インポートする方法について説明します。'
-ms.openlocfilehash: 04beb021b34a7357556e4d6e4d26d43de6a85c5d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a92217ad4126851a042b3492614aaa35ef215f61
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217357"
+ms.locfileid: "30223606"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>ネットワークアップロードを使用して組織の PST ファイルを Office 365 にインポートする
 

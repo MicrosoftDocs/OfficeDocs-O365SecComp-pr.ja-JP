@@ -9,19 +9,17 @@ ms.topic: overview
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.custom: ''
-ms.assetid: ''
 description: このソリューションでは、Office 365 サービスに保存されている機密データを保護する方法を示します。
-ms.openlocfilehash: 9a2c45831b556d9d5dfb3aac16dbd0eae6415d67
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 3ec4f89ba0933ead52467d67ec0f3a5ace37ea4d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272292"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219757"
 ---
 # <a name="office-365-information-protection-for-gdpr"></a>GDPR のための Office 365 の情報保護
 

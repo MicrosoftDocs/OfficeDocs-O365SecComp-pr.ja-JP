@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Office 365 セキュリティ&amp;コンプライアンスセンター経由でコンテンツ検索の実行に含めることができる、Exchange および SharePoint のインデックスのないアイテムについて説明します。 '
-ms.openlocfilehash: 028a0468e352121c64e12fbec209658dc32f9bbe
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1f307f3ecff1bb63c30ff6ce1f792901475fe2c4
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219497"
+ms.locfileid: "30223436"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>Office 365 のコンテンツ検索で部分的にインデックスが作成されたアイテム
 

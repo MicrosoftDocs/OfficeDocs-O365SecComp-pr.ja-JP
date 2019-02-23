@@ -1,10 +1,27 @@
 ---
-title: "OneDrive for business および SharePoint Online のデータ暗号化" krowley: author: kccross manager: laurawi ミリ秒: ITPro ミリ秒: ミリ秒: ms (date):: 概要: ms * sharepoint:-secverid: 
+title: OneDrive for Business および SharePoint Online におけるデータ暗号化
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 7/2/2018
+ms.audience: ITPro
+ms.topic: overview
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
 - SPO160
-- MET150 ms. assetid: 6501b5ef-6bf7-43df781847d6c ミリ秒のコレクション:
-    - M365-セキュリティ-コンプライアンスに関する説明: 「OneDrive for business および SharePoint Online のデータセキュリティの暗号化の基本要素について理解する」
+- MET150
+ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
+ms.collection:
+- M365-security-compliance
+description: OneDrive for Business および SharePoint Online におけるデータ セキュリティの暗号化の基本要素について理解を深めます。
+ms.openlocfilehash: a43db3da6e4663aee4437689ff51276972298872
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223216"
 ---
-
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>OneDrive for Business および SharePoint Online におけるデータ暗号化
 
 OneDrive for Business および SharePoint Online におけるデータ セキュリティの暗号化の基本要素について理解を深めます。

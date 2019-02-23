@@ -13,15 +13,13 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.custom: ''
-ms.assetid: ''
 description: このソリューションでは、最も一般的なサイバーセキュリティ攻撃が Office 365 とどのように対応しているか、またそれらに対処する方法について説明します。
-ms.openlocfilehash: 473a7db30df72ecbe0bdc58d578f4c82c31beaca
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: ac0a61e31f50846547517d721456a5229a7fb64c
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217267"
+ms.locfileid: "30223286"
 ---
 # <a name="office-365-security-incident-response"></a>Office 365 セキュリティ インシデント対応
 

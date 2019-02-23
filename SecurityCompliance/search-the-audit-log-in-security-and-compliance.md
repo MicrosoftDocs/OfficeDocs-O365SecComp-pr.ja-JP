@@ -3,10 +3,9 @@ title: Office 365 セキュリティ/コンプライアンス センターで監
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Office 365 セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: 55d45d55bb515307ed94853878b6e9ae1cef4ad8
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
-ms.translationtype: HT
+ms.openlocfilehash: 5fe4eac59f3e60e75a7452b0dcc51b6b8ca88a5b
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995408"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223766"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Office 365 セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -105,8 +104,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
     |Advanced Threat Protection および脅威インテリジェンス  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
     |Azure Active Directory (ユーザー ログイン イベント)  <br/> ||![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
     |Azure Active Directory (管理イベント)  <br/> ||![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
-    |Azure Active Directory (ユーザー ログイン イベント)  <br/> ||![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-    |データ損失防止  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |データ損失防止  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)       <br/>| |
     |Dynamics 365 CRM <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |電子情報開示  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Exchange Online  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
@@ -589,7 +587,7 @@ Power BI の監査ログは、既定で有効にはならないことに注意�
   
 ### <a name="microsoft-workplace-analytics-activities"></a>Microsoft Workplace Analytics アクティビティ
 
-Workplace Analytics では、Office 365 組織において各グループが共同作業を行う方法に関する洞察が得られます。次の表に、Microsoft Workplace Analytics での管理者役割とアナリスト役割を割り当てられたユーザーによって実行されるアクティビティを一覧表示しています。アナリスト役割を割り当てられたユーザーはすべてのサービス機能への完全なアクセス権を持ち、この製品を使用して分析を行うことができます。管理者役割を割り当てられたユーザーはプライバシーの設定とシステムの既定値を構成し、Workplace Analytics で組織データを準備、アップロード、検証することができます。詳しくは、「[Workplace Analytics](https://docs.microsoft.com/ja-JP/workplace-analytics/index-orig)」をご覧ください。
+Workplace Analytics では、Office 365 組織において各グループが共同作業を行う方法に関する洞察が得られます。次の表に、Microsoft Workplace Analytics での管理者役割とアナリスト役割を割り当てられたユーザーによって実行されるアクティビティを一覧表示しています。アナリスト役割を割り当てられたユーザーはすべてのサービス機能への完全なアクセス権を持ち、この製品を使用して分析を行うことができます。管理者役割を割り当てられたユーザーはプライバシーの設定とシステムの既定値を構成し、Workplace Analytics で組織データを準備、アップロード、検証することができます。詳しくは、「[Workplace Analytics](https://docs.microsoft.com/en-us/workplace-analytics/index-orig)」をご覧ください。
 
 |**フレンドリ名**|**操作名**|**説明**|
 |:-----|:-----|:-----|

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 description: Office 365 では、使用可能な最強の暗号化、プロトコル、およびテクノロジを使用して、コンテンツが保存中で転送中に暗号化されます。Office 365 の暗号化の概要について説明します。
-ms.openlocfilehash: 6bc62cf8248e9ec53da18d9f586e0b85eb1611d2
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6371bc7fabfccfca30d1e8fec94d4f22c1c6f492
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213667"
+ms.locfileid: "30223666"
 ---
 # <a name="encryption-in-office-365"></a>Office 365 での暗号化
 

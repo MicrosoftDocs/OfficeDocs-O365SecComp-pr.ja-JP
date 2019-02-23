@@ -3,7 +3,6 @@ title: Exchange Online の削除済みメールボックス (回復可能) に�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,21 +11,21 @@ localization_priority: Normal
 search.appverid: ''
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 description: 削除済みメールボックス (回復可能) のインプレース ホールドを非アクティブにして、その内容を保存する方法について説明します。Microsoft 電子情報開示ツールを使用して、非アクティブなメールボックスを検索できるようになります。
-ms.openlocfilehash: e666ac608ec224bf97caa947be2cb42b742c6fa9
-ms.sourcegitcommit: ca97beff215d154b6ab006ce1222056434fde1a9
+ms.openlocfilehash: 70feb265e95741406dbf170c6be70bd83b2ec081
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29740799"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223526"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>Exchange Online の削除済みメールボックス (回復可能) にインプレース ホールドを適用する
 
 削除済みメールボックス (回復可能) のインプレース ホールドを非アクティブにして、その内容を保存する方法について説明します。Microsoft 電子情報開示ツールを使用して、非アクティブなメールボックスを検索できるようになります。
   
 > [!NOTE]
-> 新規作成の場所に保持している Exchange Online の (Office 365 と Exchange のオンラインのスタンドアロン プラン) の期限を延期しましたしました。今年または来年の早期ことはできません新しいを作成する場所に保持している Exchange オンライン。インプレース保持しているを使用する代わりに、使用できます[電子的証拠開示のサポート案件](https://go.microsoft.com/fwlink/?linkid=780738)または[アイテム保持ポリシー](https://go.microsoft.com/fwlink/?linkid=827811)で Office 365 のセキュリティ&amp;コンプライアンス センターです。私たちを非コミッションに新しい場所に保持している後、まだことができます既存の埋め込み先を保持しているを変更して、新規作成を保持する、インプレースでは、Exchange Server 2013 と Exchange ハイブリッド展開はサポートされます。証拠保全上のメールボックスを配置することができます。 
+> exchange online (Office 365 および exchange online スタンドアロンプラン) に新しいインプレースホールドを作成する期限を延期しました。しかし今年度以降では、Exchange Online に新しいインプレースホールドを作成することはできません。インプレース保持を使用する代わりに、Office 365 セキュリティ&amp;コンプライアンスセンターで[電子情報開示ケース](https://go.microsoft.com/fwlink/?linkid=780738)または[アイテム保持ポリシー](https://go.microsoft.com/fwlink/?linkid=827811)を使用することができます。新しいインプレースホールドを廃止した後でも、既存のインプレース保持を変更したり、exchange Server 2013 に新しいインプレースホールドを作成したり、exchange ハイブリッド展開を引き続きサポートすることができます。また、メールボックスを訴訟ホールドの対象にすることもできます。 
   
-人が、組織のままにされ、対応するユーザー アカウントとメールボックスが削除された場合があります。その後、保持する必要のあるメールボックスに情報がわかっています。できることは何ですか。削除済みメールボックスの保存期間の期限が切れていない場合は (ソフト削除されたメールボックスと呼ばれます)、削除済みメールボックスの配置、埋め込みを保持し、非アクティブなメールボックスを使用すればできます。*非アクティブなメールボックス*は、彼または彼女が組織を離れた後に、以前の社員の電子メールを保持するために使用されます。埋め込み保持の期間は、アクティブでないとなったときソフト削除されたメールボックスに配置されますの非アクティブなメールボックスの内容は保持されます。Exchange オンライン、Office 365 のセキュリティでのコンテンツの検索で、インプレース電子証拠開示を使用してメールボックスを検索するには、メールボックスを無効になりましたが後、&amp;コンプライアンス部門、または SharePoint Online では、電子的証拠開示中心です。 
+ユーザーが組織を離れていて、対応するユーザーアカウントとメールボックスが削除されている場合があります。その後、メールボックスに保持する必要がある情報があることを認識します。できること削除済みメールボックスの保持期間が期限切れになっていない場合は、削除済みメールボックス (回復可能な削除によって削除されたメールボックスと呼ばれる) にインプレースホールドを設定して、非アクティブなメールボックスにします。*非アクティブなメールボックス*は、退職後に元従業員の電子メールを保持するために使用されます。非アクティブなメールボックスのコンテンツは、削除済みメールボックスが非アクティブになったときに、削除されたメールボックスに配置されたインプレースホールドの期間中保持されます。メールボックスが非アクティブになった後は、Exchange online のインプレース電子情報開示、Office 365 セキュリティ&amp;コンプライアンスセンターのコンテンツ検索、または SharePoint Online の電子情報開示センターを使用して、メールボックスを検索できます。 
   
 > [!NOTE]
 > Exchange Online では、削除済みメールボックス (回復可能) は、メールボックスが削除されていても、特定の保存期間内であれば回復することができます。Exchange Online の削除済みメールボックス (回復可能) の保存期間は 30 日です。つまり、削除してから 30 日以内なら、メールボックスは復元できます (または、非アクティブなメールボックスにできます)。30 日が経過すると、削除済みメールボックスには完全削除のマークが付けられ、回復または非アクティブにすることができなくなります。 
@@ -43,7 +42,7 @@ ms.locfileid: "29740799"
   Get-Mailbox -SoftDeletedMailbox | FL Name,WhenSoftDeleted,DistinguishedName,ExchangeGuid,PrimarySmtpAddress
   ```
 
-- 非アクティブなメールボックスの詳細については、 [Office 365 のメールボックスを非アクティブの概要](inactive-mailboxes-in-office-365.md)を参照してください。
+- 非アクティブなメールボックスの詳細については、「 [Office 365 の非アクティブなメールボックスの概要](inactive-mailboxes-in-office-365.md)」を参照してください。
     
 ## <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-to-make-it-an-inactive-mailbox"></a>削除済みメールボックス (回復可能) にインプレース ホールドを適用し、非アクティブなメールボックスにする
 
@@ -91,4 +90,4 @@ ms.locfileid: "29740799"
     
 - [非アクティブなメールボックスを復元する](restore-an-inactive-mailbox.md)
     
-- [非アクティブなメールボックスを削除します。](delete-an-inactive-mailbox.md)(を保留リストを削除する)
+- [非アクティブなメールボックスを削除する](delete-an-inactive-mailbox.md)(保留リストを削除する)

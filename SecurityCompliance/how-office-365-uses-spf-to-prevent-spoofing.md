@@ -5,7 +5,7 @@ author: kccross
 manager: laurawi
 ms.date: 12/15/2016
 ms.audience: ITPro
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 description: '概要: この記事では、Office 365 において、Sender Policy Framework (SPF) TXT レコードを DNS で使用して、カスタム ドメインから送信されたメッセージを送信先のメール システムが信頼するようにする方法を説明します。これは、Office 365 から送信された送信メールに適用されます。Office 365 から Office 365 内の受信者に送信されたメッセージは、常に SPF チェックに合格します。'
-ms.openlocfilehash: b42c2528f7a6a272e11d2434cce1e1735649962a
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: b4898bf8b607e7ad600455c915f99baaab21f6f6
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003286"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223566"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Office 365 において Sender Policy Framework (SPF) を使用して、スプーフィングを防止する方法
 
@@ -240,7 +240,7 @@ SPF TXT レコードにサード パーティのドメインを含む場合は�
 
 nslookup を使用して、SPF TXT レコードなどの DNS レコードを表示できます。また、ご希望に応じて、無料のオンライン ツールを多数入手し、SPF TXT レコードの内容を表示することもできます。SPF TXT を参照し、一連の include ステートメントとリダイレクトに従って、レコードが必要とする DNS 参照数を判断できます。オンライン ツールには、これらの参照数をカウントして表示するものもあります。この数を継続的に追跡することで、組織から送信されたメッセージが、受信側のサーバーからの permerror と呼ばれる永続的なエラーの要因にならないようにできます。
   
-## <a name="for-more-information"></a>詳細情報
+## <a name="for-more-information"></a>関連情報
 <a name="SPFTroubleshoot"> </a>
 
 SPF TXT レコードの追加についてヘルプが必要ですか?一般的な種々のドメイン レジストラーで SPF (TXT) レコードを更新するには、「[DNS レコードの管理時に Office 365 の DNS レコードを作成する](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404)」を参照してください。[スパム対策メッセージ ヘッダー](anti-spam-message-headers.md) には、Office 365 が SPF チェックに使用する構文とヘッダー フィールドが含まれています。 

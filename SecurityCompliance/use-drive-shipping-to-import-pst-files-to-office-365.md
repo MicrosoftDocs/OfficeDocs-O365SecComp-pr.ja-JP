@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: '管理者向け: pst ファイルをハードドライブにコピーしてから Microsoft に配布することによって、組織の pst ファイルを Office 365 メールボックスに一括インポートする方法について説明します。 '
-ms.openlocfilehash: 7a03f7b9092cf75a468f9ddad514c7508cfc006e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 44ca6e58d9273c73a807ba0b186c47721949c6f6
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217297"
+ms.locfileid: "30223686"
 ---
 # <a name="use-drive-shipping-to-import-your-organization-pst-files-to-office-365"></a>ドライブの送付を使用して組織の PST ファイルを Office 365 にインポートする
 
