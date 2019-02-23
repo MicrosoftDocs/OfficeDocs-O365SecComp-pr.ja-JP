@@ -1,72 +1,71 @@
 ---
-title: 通知のキューおよびキュー
+title: キューのアラートとキュー
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
-description: 管理者は、Office 365 のセキュリティ & コンプライアンス センターでメール フローのダッシュ ボードで、通知のキューおよびキューについて学習できます。
-ms.openlocfilehash: fe750e32136af095bb0ccff8544306db76a7a667
-ms.sourcegitcommit: 25fb33a1f8b2844fde15f6c03db2936c610824e0
+description: 管理者は、Office 365 Security & コンプライアンスセンターのメールフローダッシュボードにあるキューのアラートとキューについて知ることができます。
+ms.openlocfilehash: 45c03ae8d5f646c4514b19669ca83b3eac561f68
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28685539"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220797"
 ---
-# <a name="queue-alerts-and-queues"></a><span data-ttu-id="f7d35-103">通知のキューおよびキュー</span><span class="sxs-lookup"><span data-stu-id="f7d35-103">Queue alerts and Queues</span></span>
+# <a name="queue-alerts-and-queues"></a><span data-ttu-id="1a1a6-103">キューのアラートとキュー</span><span class="sxs-lookup"><span data-stu-id="1a1a6-103">Queue alerts and Queues</span></span>
 
-## <a name="queue-alerts"></a><span data-ttu-id="f7d35-104">キューの通知</span><span class="sxs-lookup"><span data-stu-id="f7d35-104">Queue alerts</span></span>
+## <a name="queue-alerts"></a><span data-ttu-id="1a1a6-104">キューのアラート</span><span class="sxs-lookup"><span data-stu-id="1a1a6-104">Queue alerts</span></span>
 
-<span data-ttu-id="f7d35-p101">設置に、Office 365 の組織からメッセージを送信できない場合、コネクタを使用してパートナーの電子メール サーバーは、Office 365 で、メッセージがキューにします。この状態が発生する一般的な例としては次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="f7d35-p101">When messages can't be sent from your Office 365 organization to your on-premises or partner email servers using connectors, the messages are queued in Office 365. Common examples that cause this condition are:</span></span>
+<span data-ttu-id="1a1a6-p101">コネクタを使用して office 365 組織からオンプレミスまたはパートナーの電子メールサーバーにメッセージを送信できない場合、メッセージは office 365 でキューに入れられます。このような状態になる一般的な例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="1a1a6-p101">When messages can't be sent from your Office 365 organization to your on-premises or partner email servers using connectors, the messages are queued in Office 365. Common examples that cause this condition are:</span></span>
 
-- <span data-ttu-id="f7d35-107">コネクタが正しく構成されていません。</span><span class="sxs-lookup"><span data-stu-id="f7d35-107">The connector is incorrectly configured.</span></span>
+- <span data-ttu-id="1a1a6-107">コネクタが正しく構成されていません。</span><span class="sxs-lookup"><span data-stu-id="1a1a6-107">The connector is incorrectly configured.</span></span>
 
-- <span data-ttu-id="f7d35-108">オンプレミス環境ではネットワークやファイアウォールの変更をされています。</span><span class="sxs-lookup"><span data-stu-id="f7d35-108">There have been networking or firewall changes in your on-premises environment.</span></span>
+- <span data-ttu-id="1a1a6-108">オンプレミス環境でネットワークまたはファイアウォールの変更が行われています。</span><span class="sxs-lookup"><span data-stu-id="1a1a6-108">There have been networking or firewall changes in your on-premises environment.</span></span>
 
-<span data-ttu-id="f7d35-p102">Office 365 は、48 時間の配信を再試行するのには続行されます。48 時間後、メッセージの有効期限し、配信不能レポートの送信者に返されます (、Ndr とも呼ばれるメッセージをバウンスまたは)。</span><span class="sxs-lookup"><span data-stu-id="f7d35-p102">Office 365 will continue to retry to delivery for 48 hours. After 48 hours, the messages will expire and will be returned to the senders in non-delivery reports (also known as a NDRs or bounce messages).</span></span>
+<span data-ttu-id="1a1a6-p102">Office 365 は、引き続き48時間、配信を再試行します。48時間後に、メッセージは有効期限が切れて、配信不能レポート (ndr またはバウンスメッセージとも呼ばれる) で送信者に返されます。</span><span class="sxs-lookup"><span data-stu-id="1a1a6-p102">Office 365 will continue to retry to delivery for 48 hours. After 48 hours, the messages will expire and will be returned to the senders in non-delivery reports (also known as a NDRs or bounce messages).</span></span>
 
-<span data-ttu-id="f7d35-p103">メールがキューに入っているボリュームでは、定義済みのしきい値 (既定値は、2000 のメッセージ) を超えている場合、アラートで**最新の通知**は、メール フローのダッシュ ボードで使用可能な管理者 (その他の電子メール アドレスなど) を電子メールで通知を受け取ります。.警告のしきい値、毎日の通知の制限、警告の受信者を構成するには、以下の**キューの通知をカスタマイズする**セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7d35-p103">If the queued email volume exceeds the pre-defined threshold (the default value is 2000 messages), the alerts will be available in the mail flow dashboard at **Recent alerts**, and admins will receive an email notification (to their alternative email address). To configure the alert threshold, daily notification limit, and/or recipients of the alert, see the **Customize queue alerts** section below.</span></span>
+<span data-ttu-id="1a1a6-p103">キューに登録された電子メールのボリュームが事前に定義されたしきい値 (既定値は2000メッセージ) を超えた場合、**最近の通知**のメールフローダッシュボードで通知が使用可能になり、管理者はメール通知を受信します (ユーザーの代替メールアドレス)。.警告のしきい値、毎日の通知の制限、または通知の受信者を構成するには、以下の「**キューの警告をカスタマイズ**する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="1a1a6-p103">If the queued email volume exceeds the pre-defined threshold (the default value is 2000 messages), the alerts will be available in the mail flow dashboard at **Recent alerts**, and admins will receive an email notification (to their alternative email address). To configure the alert threshold, daily notification limit, and/or recipients of the alert, see the **Customize queue alerts** section below.</span></span>
 
-![Office 365 のセキュリティ & コンプライアンス センターでメール フローのダッシュ ボードの最近の通知領域内のキューの警告](media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
+![Office 365 セキュリティ & コンプライアンスセンターのメールフローダッシュボードの [最近の通知] 領域でのキューのアラート](media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
 
-## <a name="customize-queue-alerts"></a><span data-ttu-id="f7d35-114">キューの通知をカスタマイズします。</span><span class="sxs-lookup"><span data-stu-id="f7d35-114">Customize queue alerts</span></span>
+## <a name="customize-queue-alerts"></a><span data-ttu-id="1a1a6-114">キューの通知をカスタマイズする</span><span class="sxs-lookup"><span data-stu-id="1a1a6-114">Customize queue alerts</span></span>
 
-<span data-ttu-id="f7d35-p104">メール フローの分析、アラート ・ ポリシー**の警告**については、名前付き**のメッセージが遅れている**(例以下のスクリーン ショットで**電子メール通知を送信**] チェック ボックス) を作成する\>**アラート ポリシー**です。しきい値とアラートの受信者を変更するには、[ポリシー] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="f7d35-p104">Mail flow insights create an alert policy named **Messages have been delayed** (the **Send email notifications** check box in the example screen shot below) found in **Alerts** \> **Alert Policies**. You can modify the threshold and alert recipients by clicking on the policy.</span></span>
+<span data-ttu-id="1a1a6-p104">メールフローの insights メッセージという名前のアラートポリシー**が遅延して**います (以下の例のスクリーンショットの例では\*\*\*\* \> \*\*\*\*、[**電子メール通知の送信**] チェックボックスをオンにしています)。ポリシーをクリックして、しきい値と警告の受信者を変更することができます。</span><span class="sxs-lookup"><span data-stu-id="1a1a6-p104">Mail flow insights create an alert policy named **Messages have been delayed** (the **Send email notifications** check box in the example screen shot below) found in **Alerts** \> **Alert Policies**. You can modify the threshold and alert recipients by clicking on the policy.</span></span>
 
-![アラートのナビゲーション](media/efb95976-9e0b-484e-a2fd-093c5bc7a40f.png)
+![通知ナビゲーション](media/efb95976-9e0b-484e-a2fd-093c5bc7a40f.png)
 
-<span data-ttu-id="f7d35-118">新しいポリシー情報のブレードが表示されます、**ポリシーの編集**] をクリックしてできるようになりました。</span><span class="sxs-lookup"><span data-stu-id="f7d35-118">You'll see a new policy information blade, you can now click **Edit Policy**.</span></span>
+<span data-ttu-id="1a1a6-118">新しいポリシー情報ブレードが表示されるので、[**ポリシーの編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="1a1a6-118">You'll see a new policy information blade, you can now click **Edit Policy**.</span></span>
 
 ![ポリシーの編集 ](media/ed2aceae-3ee2-4849-a17e-87915987a7dd.png)
 
-<span data-ttu-id="f7d35-p105">情報のブレードは、**ポリシーの編集**に変更されます。(200 以上) の警告をトリガーするのには、1 日最小しきい値に送信された通知の数の制限、警告の電子メールの受信者を変更できます。</span><span class="sxs-lookup"><span data-stu-id="f7d35-p105">The information blade will change to the **Edit Policy**. You can now change the recipients for the alert email, the limit on the number of notifications sent per day, and the minimum threshold to trigger the alert (200 or more).</span></span>
+<span data-ttu-id="1a1a6-p105">情報ブレードが**編集ポリシー**に変更されます。通知メールの受信者、1日に送信される通知の数の制限、および警告をトリガーする最小しきい値 (200 以上) を変更できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="1a1a6-p105">The information blade will change to the **Edit Policy**. You can now change the recipients for the alert email, the limit on the number of notifications sent per day, and the minimum threshold to trigger the alert (200 or more).</span></span>
 
-![ブレードのポリシーを編集します。](media/c657cc74-7867-474c-b2c9-dc478449f990.png)
+![ポリシーブレードを編集する](media/c657cc74-7867-474c-b2c9-dc478449f990.png)
 
-## <a name="queue-alert-details"></a><span data-ttu-id="f7d35-123">キューのアラートの詳細</span><span class="sxs-lookup"><span data-stu-id="f7d35-123">Queue alert details</span></span>
+## <a name="queue-alert-details"></a><span data-ttu-id="1a1a6-123">キュー警告の詳細</span><span class="sxs-lookup"><span data-stu-id="1a1a6-123">Queue alert details</span></span>
 
-<span data-ttu-id="f7d35-124">アラートをクリックすると、フライアウト ウィンドウでアラートの詳細が表示されます。</span><span class="sxs-lookup"><span data-stu-id="f7d35-124">When you click the alert, the alert details appear in a flyout pane.</span></span>
+<span data-ttu-id="1a1a6-124">アラートをクリックすると、アラートの詳細がフライアウトウィンドウに表示されます。</span><span class="sxs-lookup"><span data-stu-id="1a1a6-124">When you click the alert, the alert details appear in a flyout pane.</span></span>
 
-![Office 365 のセキュリティ & コンプライアンス センターでメール フローのダッシュ ボードの最近の通知領域でキューの警告を選択します。](media/1f6b0e96-5b2c-41ef-9684-9d813b3fabe6.png)
+![Office 365 セキュリティ & コンプライアンスセンターのメールフローダッシュボードの [最近の通知] 領域でキューのアラートを選択する](media/1f6b0e96-5b2c-41ef-9684-9d813b3fabe6.png)
 
-![Office 365 のセキュリティ & コンプライアンス センターでキューの警告詳細フライアウト](media/105c8fff-912f-4763-8806-2740ebdecd4b.png)
+![Office 365 Security & コンプライアンスセンターのキュー通知の詳細ポップアップ](media/105c8fff-912f-4763-8806-2740ebdecd4b.png)
 
-<span data-ttu-id="f7d35-127">**再生待ちの表示**をクリックすると、キューの詳細、問題、および新しいフライアウト ウィンドウの利用可能な修正プログラムへのリンクを表示するアラートの詳細にできます。</span><span class="sxs-lookup"><span data-stu-id="f7d35-127">You can click **View queue** in the alert details to see the queue details, problems, and links to the available fixes in a new flyout pane.</span></span>
+<span data-ttu-id="1a1a6-127">アラート詳細の [**キューの表示**] をクリックすると、キューの詳細、問題、および新しいフライアウトウィンドウで利用可能な修正へのリンクが表示されます。</span><span class="sxs-lookup"><span data-stu-id="1a1a6-127">You can click **View queue** in the alert details to see the queue details, problems, and links to the available fixes in a new flyout pane.</span></span>
 
-![Office 365 のセキュリティ & コンプライアンス センターでキューの警告詳細フライアウト](media/8ff60955-55ef-4f32-a966-85e02cb608d1.png)
+![Office 365 Security & コンプライアンスセンターのキュー通知の詳細ポップアップ](media/8ff60955-55ef-4f32-a966-85e02cb608d1.png)
 
-![アラートの詳細に再生待ちの表示](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
+![アラートの詳細のキューを表示する](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
 
-## <a name="queues"></a><span data-ttu-id="f7d35-130">キュー</span><span class="sxs-lookup"><span data-stu-id="f7d35-130">Queues</span></span>
+## <a name="queues"></a><span data-ttu-id="1a1a6-130">キュー</span><span class="sxs-lookup"><span data-stu-id="1a1a6-130">Queues</span></span>
 
-<span data-ttu-id="f7d35-p106">メッセージをキューに入れられたボリュームがしきい値を超えていない場合でも、メール フローのダッシュ ボードの [**キュー** ] 領域を使用する 1 時間以上のキューに登録されたメッセージを表示することができます。(値 0 は、メール フローは、[ok] を示します)、キュー内のメッセージの数を監視し、キュー内のメッセージの数が大きくなりすぎる前にアクションを実行するのには、[**キュー** ] 領域を使用できます。</span><span class="sxs-lookup"><span data-stu-id="f7d35-p106">Even if the queued message volume hasn't exceeded the threshold, you can still use the **Queues** area of the mail flow dashboard to see messages that have been queued for more than one hour. You can use the **Queues** area to monitor the number of queued messages (the value 0 indicates mail flow is OK) and take action before the number of queued messages becomes too large.</span></span>
+<span data-ttu-id="1a1a6-p106">キュー内のメッセージボリュームがしきい値を超えていない場合でも、メールフローダッシュボードの [**キュー** ] 領域を使用して、キューに入れられたメッセージを1時間以上表示することができます。キューの領域を\*\*\*\* 使用して、キューに入れられたメッセージ数 (0 はメールフローが OK であることを示します) を監視し、キューに入れられたメッセージの数が多すぎる前に処理を実行することができます。</span><span class="sxs-lookup"><span data-stu-id="1a1a6-p106">Even if the queued message volume hasn't exceeded the threshold, you can still use the **Queues** area of the mail flow dashboard to see messages that have been queued for more than one hour. You can use the **Queues** area to monitor the number of queued messages (the value 0 indicates mail flow is OK) and take action before the number of queued messages becomes too large.</span></span>
 
-![Office 365 のセキュリティ & コンプライアンス センターでメール フローのダッシュ ボード内のキュー](media/0ef6e2ef-dd22-4363-9d4a-b20a00babc9f.png)
+![Office 365 Security & コンプライアンスセンターのメールフローダッシュボードのキュー](media/0ef6e2ef-dd22-4363-9d4a-b20a00babc9f.png)
 
-<span data-ttu-id="f7d35-134">キュー内のメッセージ**キュー**キューの詳細の数をクリックして、フライアウト ウィンドウ (キューの警告の詳細を**再生待ちの表示**] をクリックした後に表示される同じフライアウト) で、問題を解決するためのガイダンスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="f7d35-134">When you click the number of queued messages in **Queues**, the queue details and guidance for how to fix the issue will appear in a flyout pane (the same flyout that appears after you click **View queue** in the details of a queue alert).</span></span>
+<span data-ttu-id="1a1a6-134">キュー内のキューに入れられた\*\*\*\* メッセージの数をクリックすると、問題の解決方法に関するキューの詳細とガイダンスが、フライアウトのウィンドウに表示されます (キューの通知の詳細については、[**キューの表示**] をクリックした後に表示されるポップアップと同じポップアップ)。</span><span class="sxs-lookup"><span data-stu-id="1a1a6-134">When you click the number of queued messages in **Queues**, the queue details and guidance for how to fix the issue will appear in a flyout pane (the same flyout that appears after you click **View queue** in the details of a queue alert).</span></span>
 
 ![キューの詳細](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
