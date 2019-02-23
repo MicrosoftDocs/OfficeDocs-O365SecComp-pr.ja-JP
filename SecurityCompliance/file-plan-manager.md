@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 9/25/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,111 +14,111 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイル計画マネージャーは、保持ラベルおよびポリシーのための高度な管理機能を提供します。作成に始まり、コラボレーション、レコード宣言、保持、そして廃棄に至るまでのコンテンツのライフ サイクル全体におけるラベルとコンテンツのラベリングを網羅する統合的な機能を提供します。
-ms.openlocfilehash: 4feacf20444591f6da2d55a928a81e86b56c5d9a
-ms.sourcegitcommit: 9f34ace6bbe3d5e07e24ebaae96613750869cddf
+ms.openlocfilehash: 792729d55f7096114694a59d7202b36fc130e48c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25019278"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221187"
 ---
-# <a name="overview-of-file-plan-manager"></a><span data-ttu-id="3ea95-103">ファイル計画マネージャーの概要</span><span class="sxs-lookup"><span data-stu-id="3ea95-103">Overview of file plan manager</span></span>
+# <a name="overview-of-file-plan-manager"></a><span data-ttu-id="1148f-103">ファイル計画マネージャーの概要</span><span class="sxs-lookup"><span data-stu-id="1148f-103">Overview of file plan manager</span></span>
 
-<span data-ttu-id="3ea95-104">ファイル計画マネージャーは、保持ラベルおよびポリシーのための高度な管理機能を提供します。作成に始まり、コラボレーション、レコード宣言、保持、そして廃棄に至るまでのコンテンツのライフ サイクル全体におけるラベルとコンテンツのラベリングを網羅する統合的な機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="3ea95-104">File plan manager provides advanced management capabilities for retention labels and policies, and provides an integrated way to traverse label and label-to-content activity for your entire content lifecycle – from creation, through collaboration, record declaration, retention, and finally disposition.</span></span>
+<span data-ttu-id="1148f-104">ファイル計画マネージャーは、保持ラベルおよびポリシーのための高度な管理機能を提供します。作成に始まり、コラボレーション、レコード宣言、保持、そして廃棄に至るまでのコンテンツのライフ サイクル全体におけるラベルとコンテンツのラベリングを網羅する統合的な機能を提供します。</span><span class="sxs-lookup"><span data-stu-id="1148f-104">File plan manager provides advanced management capabilities for retention labels and policies, and provides an integrated way to traverse label and label-to-content activity for your entire content lifecycle – from creation, through collaboration, record declaration, retention, and finally disposition.</span></span>
 
 ![[ファイル計画] ページ](media/file-plan-page.png)
 
-## <a name="important-this-feature-is-currently-available-only-as-part-of-the-office-365-preview-program"></a><span data-ttu-id="3ea95-106">重要: 現在、この機能は Office 365 Preview プログラムの一部としてのみ提供されています</span><span class="sxs-lookup"><span data-stu-id="3ea95-106">Important: This feature is currently available only as part of the Office 365 Preview program</span></span>
+## <a name="important-this-feature-is-currently-available-only-as-part-of-the-office-365-preview-program"></a><span data-ttu-id="1148f-106">重要: 現在、この機能は Office 365 Preview プログラムの一部としてのみ提供されています</span><span class="sxs-lookup"><span data-stu-id="1148f-106">Important: This feature is currently available only as part of the Office 365 Preview program</span></span>
 
-<span data-ttu-id="3ea95-107">お客様の組織が Office 365 Preview プログラムに登録されている場合にのみ、テナントでこの機能が表示されます。</span><span class="sxs-lookup"><span data-stu-id="3ea95-107">You will see this feature in your tenant only if your organization has enrolled in the Office 365 Preview program.</span></span>
+<span data-ttu-id="1148f-107">お客様の組織が Office 365 Preview プログラムに登録されている場合にのみ、テナントでこの機能が表示されます。</span><span class="sxs-lookup"><span data-stu-id="1148f-107">You will see this feature in your tenant only if your organization has enrolled in the Office 365 Preview program.</span></span>
 
-## <a name="accessing-file-plan-manager"></a><span data-ttu-id="3ea95-108">ファイル計画マネージャーへのアクセス</span><span class="sxs-lookup"><span data-stu-id="3ea95-108">Accessing file plan manager</span></span>
+## <a name="accessing-file-plan-manager"></a><span data-ttu-id="1148f-108">ファイル計画マネージャーへのアクセス</span><span class="sxs-lookup"><span data-stu-id="1148f-108">Accessing file plan manager</span></span>
 
-<span data-ttu-id="3ea95-109">ファイル計画マネージャーにアクセスするには次の 2 つの要件があります。</span><span class="sxs-lookup"><span data-stu-id="3ea95-109">There are two requirements to access file plan manager, they are:</span></span>
-- <span data-ttu-id="3ea95-110">Office 365 Enterprise E5 サブスクリプション。</span><span class="sxs-lookup"><span data-stu-id="3ea95-110">An Office 365 Enterprise E5 subscription with user licenses.</span></span>
-- <span data-ttu-id="3ea95-111">次のいずれかのセキュリティ &amp; コンプライアンス センターの役割がユーザーに割り当てられている状態。</span><span class="sxs-lookup"><span data-stu-id="3ea95-111">The user has been in assigned one of the following roles of the Security &amp; Compliance Center:</span></span> 
-    - <span data-ttu-id="3ea95-112">保持マネージャー</span><span class="sxs-lookup"><span data-stu-id="3ea95-112">Retention Manager</span></span>
-    - <span data-ttu-id="3ea95-113">閲覧限定保持マネージャー</span><span class="sxs-lookup"><span data-stu-id="3ea95-113">View-only Retention Manager</span></span>
+<span data-ttu-id="1148f-109">ファイル計画マネージャーにアクセスするには次の 2 つの要件があります。</span><span class="sxs-lookup"><span data-stu-id="1148f-109">There are two requirements to access file plan manager, they are:</span></span>
+- <span data-ttu-id="1148f-110">Office 365 Enterprise E5 サブスクリプション。</span><span class="sxs-lookup"><span data-stu-id="1148f-110">An Office 365 Enterprise E5 subscription.</span></span>
+- <span data-ttu-id="1148f-111">次のいずれかのセキュリティ &amp; コンプライアンス センターの役割がユーザーに割り当てられている状態。</span><span class="sxs-lookup"><span data-stu-id="1148f-111">The user has been in assigned one of the following roles of the Security &amp; Compliance Center:</span></span> 
+    - <span data-ttu-id="1148f-112">保持マネージャー</span><span class="sxs-lookup"><span data-stu-id="1148f-112">Retention Manager</span></span>
+    - <span data-ttu-id="1148f-113">閲覧限定保持マネージャー</span><span class="sxs-lookup"><span data-stu-id="1148f-113">View-only Retention Manager</span></span>
 
-## <a name="navigating-your-file-plan"></a><span data-ttu-id="3ea95-114">ファイル計画の中の移動</span><span class="sxs-lookup"><span data-stu-id="3ea95-114">Navigating your file plan</span></span>
+## <a name="navigating-your-file-plan"></a><span data-ttu-id="1148f-114">ファイル計画の中の移動</span><span class="sxs-lookup"><span data-stu-id="1148f-114">Navigating your file plan</span></span>
 
-<span data-ttu-id="3ea95-115">ファイル計画マネージャーでは、すべての保持ラベルとポリシーの設定を 1 つのビューから簡単に参照できます。</span><span class="sxs-lookup"><span data-stu-id="3ea95-115">File plan manager makes it easier see into and across the settings of all your retention labels and policies from one view.</span></span>
+<span data-ttu-id="1148f-115">ファイル計画マネージャーでは、すべての保持ラベルとポリシーの設定を 1 つのビューから簡単に参照できます。</span><span class="sxs-lookup"><span data-stu-id="1148f-115">File plan manager makes it easier see into and across the settings of all your retention labels and policies from one view.</span></span>
 
-<span data-ttu-id="3ea95-116">ファイル計画の外で作成された保持ラベルはファイル計画上で利用可能で、また、その逆も同様であることに注意します。</span><span class="sxs-lookup"><span data-stu-id="3ea95-116">Note that retention labels created outside of the file plan will be available in the file plan and vice versa.</span></span>
+<span data-ttu-id="1148f-116">ファイル計画の外で作成された保持ラベルはファイル計画上で利用可能で、また、その逆も同様であることに注意します。</span><span class="sxs-lookup"><span data-stu-id="1148f-116">Note that retention labels created outside of the file plan will be available in the file plan and vice versa.</span></span>
 
-<span data-ttu-id="3ea95-117">[**ファイル計画ラベル**] タブで、次の追加の情報と機能が提供されます。</span><span class="sxs-lookup"><span data-stu-id="3ea95-117">On the **file plan labels** tab, the following additional information and capabilities are available:</span></span>
+<span data-ttu-id="1148f-117">[**ファイル計画ラベル**] タブで、次の追加の情報と機能が提供されます。</span><span class="sxs-lookup"><span data-stu-id="1148f-117">On the **file plan labels** tab, the following additional information and capabilities are available:</span></span>
 
-### <a name="label-settings-columns"></a><span data-ttu-id="3ea95-118">ラベル設定列</span><span class="sxs-lookup"><span data-stu-id="3ea95-118">Label settings columns</span></span>
+### <a name="label-settings-columns"></a><span data-ttu-id="1148f-118">ラベル設定列</span><span class="sxs-lookup"><span data-stu-id="1148f-118">Label settings columns</span></span>
  
-- <span data-ttu-id="3ea95-p101">[**分類方法**] は保持期間を起動するトリガーの種類を識別します。有効な値は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="3ea95-p101">**Based on** identifies the type of trigger that will start the retention period. Valid values are:</span></span> 
-    - <span data-ttu-id="3ea95-121">イベント</span><span class="sxs-lookup"><span data-stu-id="3ea95-121">Event</span></span>
-    - <span data-ttu-id="3ea95-122">作成日時</span><span class="sxs-lookup"><span data-stu-id="3ea95-122">When created</span></span>
-    - <span data-ttu-id="3ea95-123">最終更新日時</span><span class="sxs-lookup"><span data-stu-id="3ea95-123">When last modified</span></span>
-    - <span data-ttu-id="3ea95-124">ラベルが付けられた日時</span><span class="sxs-lookup"><span data-stu-id="3ea95-124">When labeled</span></span>
-- <span data-ttu-id="3ea95-p102">[**レコード**] は、ラベルが適用されときにアイテムが宣言されたレコードが宣言されたレコードになるかどうかを識別します。有効な値は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="3ea95-p102">**Record** identifies if the item will become a declared record when the label is applied. Valid values are:</span></span>
-    - <span data-ttu-id="3ea95-127">いいえ</span><span class="sxs-lookup"><span data-stu-id="3ea95-127">No</span></span>
-    - <span data-ttu-id="3ea95-128">はい</span><span class="sxs-lookup"><span data-stu-id="3ea95-128">Yes</span></span>
-    - <span data-ttu-id="3ea95-129">はい (法的)</span><span class="sxs-lookup"><span data-stu-id="3ea95-129">Yes(Regulatory)</span></span>
-- <span data-ttu-id="3ea95-p103">[**保持**] は保持の種類を識別します。有効な値は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="3ea95-p103">**Retention** identifies the retention type. Valid values are:</span></span>
-    - <span data-ttu-id="3ea95-132">保持</span><span class="sxs-lookup"><span data-stu-id="3ea95-132">Keep</span></span>
-    - <span data-ttu-id="3ea95-133">保持および削除</span><span class="sxs-lookup"><span data-stu-id="3ea95-133">Keep and delete</span></span>
-    - <span data-ttu-id="3ea95-134">削除</span><span class="sxs-lookup"><span data-stu-id="3ea95-134">Delete</span></span>
-- <span data-ttu-id="3ea95-p104">[**廃棄**] は保持期間終了時のコンテンツの取り扱い方法を識別します。有効な値は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="3ea95-p104">**Disposition** identifies what will happen to the content at the end of the retention period. Valid values are:</span></span> 
-    - <span data-ttu-id="3ea95-137">null</span><span class="sxs-lookup"><span data-stu-id="3ea95-137">Null</span></span>
-    - <span data-ttu-id="3ea95-138">アクションなし</span><span class="sxs-lookup"><span data-stu-id="3ea95-138">No action necessary.</span></span>
-    - <span data-ttu-id="3ea95-139">自動削除</span><span class="sxs-lookup"><span data-stu-id="3ea95-139">Auto-delete</span></span>
-    - <span data-ttu-id="3ea95-140">要確認 (廃棄レビューとも呼ばれる)</span><span class="sxs-lookup"><span data-stu-id="3ea95-140">Review required (aka Disposition review)</span></span>
+- <span data-ttu-id="1148f-p101">[**分類方法**] は保持期間を起動するトリガーの種類を識別します。有効な値は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="1148f-p101">**Based on** identifies the type of trigger that will start the retention period. Valid values are:</span></span> 
+    - <span data-ttu-id="1148f-121">イベント</span><span class="sxs-lookup"><span data-stu-id="1148f-121">Event</span></span>
+    - <span data-ttu-id="1148f-122">作成日時</span><span class="sxs-lookup"><span data-stu-id="1148f-122">When created</span></span>
+    - <span data-ttu-id="1148f-123">最終更新日時</span><span class="sxs-lookup"><span data-stu-id="1148f-123">When last modified</span></span>
+    - <span data-ttu-id="1148f-124">ラベルが付けられた日時</span><span class="sxs-lookup"><span data-stu-id="1148f-124">When labeled</span></span>
+- <span data-ttu-id="1148f-p102">[**レコード**] は、ラベルが適用されときにアイテムが宣言されたレコードが宣言されたレコードになるかどうかを識別します。有効な値は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="1148f-p102">**Record** identifies if the item will become a declared record when the label is applied. Valid values are:</span></span>
+    - <span data-ttu-id="1148f-127">いいえ</span><span class="sxs-lookup"><span data-stu-id="1148f-127">No</span></span>
+    - <span data-ttu-id="1148f-128">はい</span><span class="sxs-lookup"><span data-stu-id="1148f-128">Yes</span></span>
+    - <span data-ttu-id="1148f-129">はい (法的)</span><span class="sxs-lookup"><span data-stu-id="1148f-129">Yes(Regulatory)</span></span>
+- <span data-ttu-id="1148f-p103">[**保持**] は保持の種類を識別します。有効な値は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="1148f-p103">**Retention** identifies the retention type. Valid values are:</span></span>
+    - <span data-ttu-id="1148f-132">保持</span><span class="sxs-lookup"><span data-stu-id="1148f-132">Keep</span></span>
+    - <span data-ttu-id="1148f-133">保持および削除</span><span class="sxs-lookup"><span data-stu-id="1148f-133">Keep and delete</span></span>
+    - <span data-ttu-id="1148f-134">削除</span><span class="sxs-lookup"><span data-stu-id="1148f-134">Delete</span></span>
+- <span data-ttu-id="1148f-p104">[**廃棄**] は保持期間終了時のコンテンツの取り扱い方法を識別します。有効な値は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="1148f-p104">**Disposition** identifies what will happen to the content at the end of the retention period. Valid values are:</span></span> 
+    - <span data-ttu-id="1148f-137">null</span><span class="sxs-lookup"><span data-stu-id="1148f-137">null</span></span>
+    - <span data-ttu-id="1148f-138">アクションなし</span><span class="sxs-lookup"><span data-stu-id="1148f-138">No action</span></span>
+    - <span data-ttu-id="1148f-139">自動削除</span><span class="sxs-lookup"><span data-stu-id="1148f-139">Auto-delete</span></span>
+    - <span data-ttu-id="1148f-140">要確認 (廃棄レビューとも呼ばれる)</span><span class="sxs-lookup"><span data-stu-id="1148f-140">Review required (aka Disposition review)</span></span>
 
 ![ファイル計画でのラベル設定](media/file-plan-label-columns.png)
 
-### <a name="label-file-plan-descriptors-columns"></a><span data-ttu-id="3ea95-142">ファイル計画記述子列にラベルを付ける</span><span class="sxs-lookup"><span data-stu-id="3ea95-142">Label file plan descriptors columns</span></span>
+### <a name="label-file-plan-descriptors-columns"></a><span data-ttu-id="1148f-142">ファイル計画記述子列にラベルを付ける</span><span class="sxs-lookup"><span data-stu-id="1148f-142">Label file plan descriptors columns</span></span>
 
-<span data-ttu-id="3ea95-p105">より多くの情報を保持ラベルの構成に含めることができます。ファイル計画記述子をラベルに挿入することにより、ファイル計画の管理性が向上し整理がしやすくなります。</span><span class="sxs-lookup"><span data-stu-id="3ea95-p105">You can now include more information in the configuration of your retention labels. Inserting file plan descriptors into labels will improve the manageability and organization of your file plan.</span></span>
+<span data-ttu-id="1148f-p105">より多くの情報を保持ラベルの構成に含めることができます。ファイル計画記述子をラベルに挿入することにより、ファイル計画の管理性が向上し整理がしやすくなります。</span><span class="sxs-lookup"><span data-stu-id="1148f-p105">You can now include more information in the configuration of your retention labels. Inserting file plan descriptors into labels will improve the manageability and organization of your file plan.</span></span>
 
-<span data-ttu-id="3ea95-p106">すぐに利用開始できるように、ファイル計画マネージャーでは次の既定値が提供されています: 役割/部門、カテゴリ、権限の種類、規定/是正勧告。保持ラベルを作成または編集するときに、ファイル計画記述子の値を新たに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="3ea95-p106">To get you started, file plan manager provides some out-of-box values for: Function/department, Category, Authority type and Provision/citation. You can add new file plan descriptor values when creating or editing a retention label.</span></span>
+<span data-ttu-id="1148f-p106">すぐに利用開始できるように、ファイル計画マネージャーでは次の既定値が提供されています: 役割/部門、カテゴリ、権限の種類、規定/是正勧告。保持ラベルを作成または編集するときに、ファイル計画記述子の値を新たに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="1148f-p106">To get you started, file plan manager provides some out-of-box values for: Function/department, Category, Authority type and Provision/citation. You can add new file plan descriptor values when creating or editing a retention label.</span></span>
 
-<span data-ttu-id="3ea95-147">保持ラベルを作成または編集時のファイル計画記述子に関する手順の画面です。</span><span class="sxs-lookup"><span data-stu-id="3ea95-147">Here's a view of the file plan descriptors step when creating or editing a retention label.</span></span>
+<span data-ttu-id="1148f-147">保持ラベルを作成または編集時のファイル計画記述子に関する手順の画面です。</span><span class="sxs-lookup"><span data-stu-id="1148f-147">Here's a view of the file plan descriptors step when creating or editing a retention label.</span></span>
 
 ![ファイル計画記述子](media/file-plan-descriptors.png)
 
-<span data-ttu-id="3ea95-149">ファイル計画マネージャーの [ラベル] タブのファイル計画記述子列の画面です。</span><span class="sxs-lookup"><span data-stu-id="3ea95-149">Here's a view of the file plan descriptors columns on the labels tab of file plan manager.</span></span>
+<span data-ttu-id="1148f-149">ファイル計画マネージャーの [ラベル] タブのファイル計画記述子列の画面です。</span><span class="sxs-lookup"><span data-stu-id="1148f-149">Here's a view of the file plan descriptors columns on the labels tab of file plan manager.</span></span>
 
 ![file-plan-descriptors-on-labels-tab.png](media/file-plan-descriptors-on-labels-tab.png)
 
-## <a name="export-labels-out-of-your-file-plan"></a><span data-ttu-id="3ea95-151">ファイル計画からラベルをエクスポートする</span><span class="sxs-lookup"><span data-stu-id="3ea95-151">Export labels out of your file plan</span></span>
+## <a name="export-labels-out-of-your-file-plan"></a><span data-ttu-id="1148f-151">ファイル計画からラベルをエクスポートする</span><span class="sxs-lookup"><span data-stu-id="1148f-151">Export labels out of your file plan</span></span>
 
-<span data-ttu-id="3ea95-152">組織内のデータ ガバナンス関係者との定期的なコンプライアンス レビューが円滑に行えるように、ファイル計画マネージャーではすべての保持ラベルの詳細を .csv ファイルにエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="3ea95-152">From file plan manager, you can export the details of all retention labels into a .csv file to assist you in facilitating periodic compliance reviews with data governance stakeholders in your organization.</span></span>
+<span data-ttu-id="1148f-152">組織内のデータ ガバナンス関係者との定期的なコンプライアンス レビューが円滑に行えるように、ファイル計画マネージャーではすべての保持ラベルの詳細を .csv ファイルにエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="1148f-152">From file plan manager, you can export the details of all retention labels into a .csv file to assist you in facilitating periodic compliance reviews with data governance stakeholders in your organization.</span></span>
 
-<span data-ttu-id="3ea95-153">すべての保持ラベルをエクスポートするには、[**ファイル計画マネージャー**] \> [**ファイル計画アクション**] \> [**ラベルのエクスポート**] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="3ea95-153">To export all retention labels, go to **file plan manager** \> **file plan actions** \> **export labels**.</span></span>
+<span data-ttu-id="1148f-153">すべての保持ラベルをエクスポートするには、[**ファイル計画マネージャー**] \> [**ファイル計画アクション**] \> [**ラベルのエクスポート**] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="1148f-153">To export all retention labels, go to **file plan manager** \> **file plan actions** \> **export labels**.</span></span>
 
 ![ファイル計画をエクスポートするオプション](media/file-plan-export-labels-option.png)
 
-<span data-ttu-id="3ea95-155">既存のすべての保持ラベルを含む \*.csv ファイルが開きます。</span><span class="sxs-lookup"><span data-stu-id="3ea95-155">A \*.csv file containing all existing retention labels will open.</span></span>
+<span data-ttu-id="1148f-155">既存のすべての保持ラベルを含む \*.csv ファイルが開きます。</span><span class="sxs-lookup"><span data-stu-id="1148f-155">A \*.csv file containing all existing retention labels will open.</span></span>
 
 ![すべての保持ラベルが表示された CSV ファイル](media/file-plan-csv-file.png)
 
-## <a name="import-labels-into-your-file-plan"></a><span data-ttu-id="3ea95-157">ファイル計画にラベルをインポートする</span><span class="sxs-lookup"><span data-stu-id="3ea95-157">Import labels into your file plan</span></span>
+## <a name="import-labels-into-your-file-plan"></a><span data-ttu-id="1148f-157">ファイル計画にラベルをインポートする</span><span class="sxs-lookup"><span data-stu-id="1148f-157">Import labels into your file plan</span></span>
 
-<span data-ttu-id="3ea95-158">ファイル計画マネージャーでは新しいラベルの一括インポートおよび既存の保持ラベルの変更を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="3ea95-158">From file plan manager, you can bulk import new labels as well as modify existing retention labels.</span></span>
+<span data-ttu-id="1148f-158">ファイル計画マネージャーでは新しいラベルの一括インポートおよび既存の保持ラベルの変更を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="1148f-158">From file plan manager, you can bulk import new labels as well as modify existing retention labels.</span></span>
 
-<span data-ttu-id="3ea95-159">新しい保持ラベルのインポートおよび既存の保持ラベルの更新を行うには、[**ファイル計画マネージャー**] \> [**ファイル計画アクション**] \> [**ラベルのインポート**] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="3ea95-159">To import new retention labels and make updates existing retention labels, go to **file plan manager** \> **file plan actions** \> **import labels**.</span></span>
+<span data-ttu-id="1148f-159">新しい保持ラベルのインポートおよび既存の保持ラベルの更新を行うには、[**ファイル計画マネージャー**] \> [**ファイル計画アクション**] \> [**ラベルのインポート**] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="1148f-159">To import new retention labels and make updates existing retention labels, go to **file plan manager** \> **file plan actions** \> **import labels**.</span></span>
 
 ![ファイル計画のインポートのオプション](media/file-plan-import-labels-option.png)
 
 ![空白のファイル計画テンプレートをダウンロードするオプション](media/file-plan-blank-template-option.png)
 
-<span data-ttu-id="3ea95-162">空白のテンプレートをダウンロードします (または現在のファイル計画のエクスポートを使います)。</span><span class="sxs-lookup"><span data-stu-id="3ea95-162">Download a blank template (or start from an export of your current file plan).</span></span>
+<span data-ttu-id="1148f-162">空白のテンプレートをダウンロードします (または現在のファイル計画のエクスポートを使います)。</span><span class="sxs-lookup"><span data-stu-id="1148f-162">Download a blank template (or start from an export of your current file plan).</span></span>
 
 ![Excel で開かれた空白のファイル計画テンプレート](media/file-plan-blank-template.png)
 
-<span data-ttu-id="3ea95-164">テンプレートに入力します (“準備中”とは、記載事項の有効値についてのリファレンス情報です)。</span><span class="sxs-lookup"><span data-stu-id="3ea95-164">Fill-out the template (coming soon is reference information about valid values for entries).</span></span>
+<span data-ttu-id="1148f-164">テンプレートに入力します (“準備中”とは、記載事項の有効値についてのリファレンス情報です)。</span><span class="sxs-lookup"><span data-stu-id="1148f-164">Fill-out the template (coming soon is reference information about valid values for entries).</span></span>
 
 ![情報が入力されたファイル計画テンプレート](media/file-plan-filled-out-template.png)
 
-<span data-ttu-id="3ea95-166">入力済みのテンプレートをアップロードすると、ファイル計画マネージャーで記載事項が検証され、インポートの統計情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="3ea95-166">Upload the filled-out template, and file plan manager will validate the entries and display import statistics.</span></span>
+<span data-ttu-id="1148f-166">入力済みのテンプレートをアップロードすると、ファイル計画マネージャーで記載事項が検証され、インポートの統計情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="1148f-166">Upload the filled-out template, and file plan manager will validate the entries and display import statistics.</span></span>
 
 ![ファイル計画のインポートの統計情報](media/file-plan-import-statistics.png)
 
-<span data-ttu-id="3ea95-168">インポートが完了したらファイル計画マネージャーに戻り、新規または既存のポリシーに新しいラベルを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="3ea95-168">When the import is complete, return to file plan manager to assign new labels to new or existing policies.</span></span>
+<span data-ttu-id="1148f-168">インポートが完了したらファイル計画マネージャーに戻り、新規または既存のポリシーに新しいラベルを割り当てます。</span><span class="sxs-lookup"><span data-stu-id="1148f-168">When the import is complete, return to file plan manager to assign new labels to new or existing policies.</span></span>
 
 ![ラベルを公開するオプション](media/file-plan-publish-labels-option.png)
 

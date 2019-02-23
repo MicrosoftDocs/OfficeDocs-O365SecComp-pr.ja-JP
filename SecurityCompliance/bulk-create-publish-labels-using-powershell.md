@@ -5,47 +5,47 @@ author: stephow-msft
 ms.date: 1/17/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8986701b-ffa1-46ec-8fd0-8f7e81d5b25f
 description: Office 365 では、ラベルを使用して組織の保持スケジュールを実装できます。レコード マネージャーまたは法令遵守責任者は、作成および発行すべきラベルを何百も持っている可能性があります。セキュリティ/コンプライアンス センターの UI でラベルの作成と発行を行うことができますが、一度に 1 つずつラベルを作成するのは時間がかかり、非効率です。以下のスクリプトと .csv ファイルを使用すると、ラベルとラベル ポリシーを一括で作成し、発行することができます。まず、ラベルのリストとラベル ポリシーのリストを Excel で作成し、PowerShell を使用してそれらのリスト内のラベルとラベル ポリシーを一括作成します。これにより、保持スケジュールに必要なすべてのラベルを一度に作成して発行することが容易になります。
-ms.openlocfilehash: d05246dacd71ee59a795121e60a2a4202cfef69f
-ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
+ms.openlocfilehash: a3181448f64b497f468085d136739c1aed473e09
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29629049"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220767"
 ---
-# <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a><span data-ttu-id="a6b4a-108">PowerShell を使用して保持ラベルを一括で作成および発行する</span><span class="sxs-lookup"><span data-stu-id="a6b4a-108">Bulk create and publish retention labels by using PowerShell</span></span>
+# <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a><span data-ttu-id="21fb5-108">PowerShell を使用して保持ラベルを一括で作成および発行する</span><span class="sxs-lookup"><span data-stu-id="21fb5-108">Bulk create and publish retention labels by using PowerShell</span></span>
 
-<span data-ttu-id="a6b4a-p102">Office 365 では、ラベルを使用して組織の保持スケジュールを実装できます。レコード マネージャーまたは法令遵守責任者は、作成および発行すべきラベルを何百も持っている可能性があります。セキュリティ&amp;コンプライアンス センターの UI でラベルの作成と発行を行うことができますが、一度に 1 つずつラベルを作成するのは時間がかかり、非効率です。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-p102">In Office 365, you can use labels to implement a retention schedule for your organization. As a record manager or compliance officer, you might have hundreds of labels to create and publish. You can do this through the UI in the Security &amp; Compliance Center, but creating labels one at a time is time-consuming and inefficient.</span></span>
+<span data-ttu-id="21fb5-p102">Office 365 では、ラベルを使用して組織の保持スケジュールを実装できます。レコード マネージャーまたは法令遵守責任者は、作成および発行すべきラベルを何百も持っている可能性があります。セキュリティ&amp;コンプライアンス センターの UI でラベルの作成と発行を行うことができますが、一度に 1 つずつラベルを作成するのは時間がかかり、非効率です。</span><span class="sxs-lookup"><span data-stu-id="21fb5-p102">In Office 365, you can use labels to implement a retention schedule for your organization. As a record manager or compliance officer, you might have hundreds of labels to create and publish. You can do this through the UI in the Security &amp; Compliance Center, but creating labels one at a time is time-consuming and inefficient.</span></span>
   
-<span data-ttu-id="a6b4a-p103">以下のスクリプトと .csv ファイルを使用すると、ラベルとラベル ポリシーを一括で作成し、発行することができます。まず、ラベルのリストとラベル ポリシーのリストを Excel で作成し、PowerShell を使用してそれらのリスト内のラベルとラベル ポリシーを一括作成します。これにより、保持スケジュールに必要なすべてのラベルを一度に作成して発行することが容易になります。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-p103">By using the script and .csv files provided below, you can bulk create and publish labels and label policies. First you create a list of the labels and a list of the label policies in Excel, and then you bulk create the labels and label policies in those lists by using PowerShell. This makes it easier to create and publish at one time all of the labels that your retention schedule requires.</span></span>
+<span data-ttu-id="21fb5-p103">以下のスクリプトと .csv ファイルを使用すると、ラベルとラベル ポリシーを一括で作成し、発行することができます。まず、ラベルのリストとラベル ポリシーのリストを Excel で作成し、PowerShell を使用してそれらのリスト内のラベルとラベル ポリシーを一括作成します。これにより、保持スケジュールに必要なすべてのラベルを一度に作成して発行することが容易になります。</span><span class="sxs-lookup"><span data-stu-id="21fb5-p103">By using the script and .csv files provided below, you can bulk create and publish labels and label policies. First you create a list of the labels and a list of the label policies in Excel, and then you bulk create the labels and label policies in those lists by using PowerShell. This makes it easier to create and publish at one time all of the labels that your retention schedule requires.</span></span>
   
-<span data-ttu-id="a6b4a-115">ラベルの詳細については、「[ラベルの概要](labels.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-115">For more information about labels, see [Overview of labels](labels.md).</span></span>
+<span data-ttu-id="21fb5-115">ラベルの詳細については、「[ラベルの概要](labels.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="21fb5-115">For more information about labels, see [Overview of labels](labels.md).</span></span>
   
-## <a name="disclaimer"></a><span data-ttu-id="a6b4a-116">免責事項</span><span class="sxs-lookup"><span data-stu-id="a6b4a-116">Disclaimer</span></span>
+## <a name="disclaimer"></a><span data-ttu-id="21fb5-116">免責事項</span><span class="sxs-lookup"><span data-stu-id="21fb5-116">Disclaimer</span></span>
 
-<span data-ttu-id="a6b4a-p104">このトピックで提供されているサンプル スクリプトは、いかなる Microsoft 標準サポート プログラムまたはサービスでもサポートされていません。サンプル スクリプトは、いかなる保証もありません。これらのサンプルに対しては、Microsoft 社は商品またはその他の何らかの目的を持つものに付随すると考えられている暗黙の責任も一切認めません。これらのサンプルは、完全にユーザーの責任において使用してください。いかなる場合でも、Microsoft 社および販売店は、これらのサンプルを使用した結果発生した損害およびこれらのサンプルを使用できなかったことによる損害に対して、商業的損失、業務の中断、企業情報の喪失、およびその他の金銭的損失等を含め、何ら制限も設けることなく一切の責任を認めません。これは、たとえ Microsoft 社がそのような損害の可能性について通知を受けていた場合でも同じです。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-p104">The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.</span></span>
+<span data-ttu-id="21fb5-p104">このトピックで提供されているサンプル スクリプトは、いかなる Microsoft 標準サポート プログラムまたはサービスでもサポートされていません。サンプル スクリプトは、いかなる保証もありません。これらのサンプルに対しては、Microsoft 社は商品またはその他の何らかの目的を持つものに付随すると考えられている暗黙の責任も一切認めません。これらのサンプルは、完全にユーザーの責任において使用してください。いかなる場合でも、Microsoft 社および販売店は、これらのサンプルを使用した結果発生した損害およびこれらのサンプルを使用できなかったことによる損害に対して、商業的損失、業務の中断、企業情報の喪失、およびその他の金銭的損失等を含め、何ら制限も設けることなく一切の責任を認めません。これは、たとえ Microsoft 社がそのような損害の可能性について通知を受けていた場合でも同じです。</span><span class="sxs-lookup"><span data-stu-id="21fb5-p104">The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.</span></span>
   
-## <a name="step-1-create-a-csv-file-for-creating-the-labels"></a><span data-ttu-id="a6b4a-122">手順 1: ラベルを作成するための .csv ファイルを作成する</span><span class="sxs-lookup"><span data-stu-id="a6b4a-122">Step 1: Create a .csv file for creating the labels</span></span>
+## <a name="step-1-create-a-csv-file-for-creating-the-labels"></a><span data-ttu-id="21fb5-122">手順 1: ラベルを作成するための .csv ファイルを作成する</span><span class="sxs-lookup"><span data-stu-id="21fb5-122">Step 1: Create a .csv file for creating the labels</span></span>
 
-<span data-ttu-id="a6b4a-p105">まず、保持設定を持つラベルのリストを含む .csv ファイルを作成します。下のサンプルを Excel にコピーしてテンプレートとして使用し、テキストを列に変換します (Excel で \>**[データ]** タブ\>**[区切り位置]**\>**[コンマやタブなどの区切り文字によってフィールドごとに区切られたデータ]**\>**[コンマ]**\>**[一般]** を選択します)。次にワークシートを見つけやすい場所に .csv ファイルとして保存します。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-p105">First you create a .csv file that contains a list of your labels with their retention settings. You can use the sample below as a template by copying it into Excel, converting the text to columns (in Excel \> **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**), and then saving the worksheet as a .csv file in a location that's easy to find.</span></span>
+<span data-ttu-id="21fb5-p105">まず、保持設定を持つラベルのリストを含む .csv ファイルを作成します。下のサンプルを Excel にコピーしてテンプレートとして使用し、テキストを列に変換します (Excel で \>**[データ]** タブ\>**[区切り位置]**\>**[コンマやタブなどの区切り文字によってフィールドごとに区切られたデータ]**\>**[コンマ]**\>**[一般]** を選択します)。次にワークシートを見つけやすい場所に .csv ファイルとして保存します。</span><span class="sxs-lookup"><span data-stu-id="21fb5-p105">First you create a .csv file that contains a list of your labels with their retention settings. You can use the sample below as a template by copying it into Excel, converting the text to columns (in Excel \> **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**), and then saving the worksheet as a .csv file in a location that's easy to find.</span></span>
   
-<span data-ttu-id="a6b4a-125">このコマンドレットのパラメーター値の詳細については、「[New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-125">For more information about the parameter values for this cmdlet, see [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).</span></span>
+<span data-ttu-id="21fb5-125">このコマンドレットのパラメーター値の詳細については、「[New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="21fb5-125">For more information about the parameter values for this cmdlet, see [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).</span></span>
   
-<span data-ttu-id="a6b4a-126">メモ:</span><span class="sxs-lookup"><span data-stu-id="a6b4a-126">Notes:</span></span>
+<span data-ttu-id="21fb5-126">メモ:</span><span class="sxs-lookup"><span data-stu-id="21fb5-126">Notes:</span></span>
   
-- <span data-ttu-id="a6b4a-127">ラベルを作成するためのソース ファイルを指定しない場合、スクリプトは進行し、ラベルを発行するためのソース ファイルを要求してきます (次のセクションを参照)。スクリプトは既存のラベルのみを発行します。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-127">If you don't provide a source file for creating labels, the script moves on and prompts you for the source file for publishing labels (see the next section), and the script will publish only existing labels.</span></span>
+- <span data-ttu-id="21fb5-127">ラベルを作成するためのソース ファイルを指定しない場合、スクリプトは進行し、ラベルを発行するためのソース ファイルを要求してきます (次のセクションを参照)。スクリプトは既存のラベルのみを発行します。</span><span class="sxs-lookup"><span data-stu-id="21fb5-127">If you don't provide a source file for creating labels, the script moves on and prompts you for the source file for publishing labels (see the next section), and the script will publish only existing labels.</span></span>
     
-- <span data-ttu-id="a6b4a-p106">.csv ファイルに既に存在するラベルと同じ名前のラベルが含まれている場合、スクリプトはそのラベルの作成をスキップします。重複するラベルは作成されません。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-p106">If the .csv file contains a label with the same name as one that already exists, the script skips creating that label. No duplicate labels are created.</span></span>
+- <span data-ttu-id="21fb5-p106">.csv ファイルに既に存在するラベルと同じ名前のラベルが含まれている場合、スクリプトはそのラベルの作成をスキップします。重複するラベルは作成されません。</span><span class="sxs-lookup"><span data-stu-id="21fb5-p106">If the .csv file contains a label with the same name as one that already exists, the script skips creating that label. No duplicate labels are created.</span></span>
     
-- <span data-ttu-id="a6b4a-p107">列見出しを変更したり、名前を変更したりすると、スクリプトは失敗します。このスクリプトでは、ここに示す形式の .csv ファイルが必要です。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-p107">If you change or rename the column headers, the script will fail. The script requires a .csv file in the format provided here.</span></span>
+- <span data-ttu-id="21fb5-p107">列見出しを変更したり、名前を変更したりすると、スクリプトは失敗します。このスクリプトでは、ここに示す形式の .csv ファイルが必要です。</span><span class="sxs-lookup"><span data-stu-id="21fb5-p107">If you change or rename the column headers, the script will fail. The script requires a .csv file in the format provided here.</span></span>
     
-### <a name="sample-csv-file"></a><span data-ttu-id="a6b4a-132">CSV ファイルのサンプル</span><span class="sxs-lookup"><span data-stu-id="a6b4a-132">Sample .csv file</span></span>
+### <a name="sample-csv-file"></a><span data-ttu-id="21fb5-132">CSV ファイルのサンプル</span><span class="sxs-lookup"><span data-stu-id="21fb5-132">Sample .csv file</span></span>
 
 ```
 Name (Required),Comment (Optional),IsRecordLabel (Required),RetentionAction (Optional),RetentionDuration (Optional),RetentionType (Optional),ReviewerEmail (Optional)
@@ -55,23 +55,23 @@ LabelName_t_3,5 year delete,$false,Delete,1825,TaggedAgeInDays,
 LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 ```
 
-## <a name="step-2-create-a-csv-file-for-publishing-the-labels"></a><span data-ttu-id="a6b4a-133">手順 2: ラベルを発行するための .csv ファイルを作成する</span><span class="sxs-lookup"><span data-stu-id="a6b4a-133">Step 2: Create a .csv file for publishing the labels</span></span>
+## <a name="step-2-create-a-csv-file-for-publishing-the-labels"></a><span data-ttu-id="21fb5-133">手順 2: ラベルを発行するための .csv ファイルを作成する</span><span class="sxs-lookup"><span data-stu-id="21fb5-133">Step 2: Create a .csv file for publishing the labels</span></span>
 
-<span data-ttu-id="a6b4a-p108">次に、場所とその他の設定を持つラベル ポリシーのリストを含む .csv ファイルを作成します。下のサンプルを Excel にコピーしてテンプレートとして使用し、テキストを列に変換します (Excel で \>**[データ]** タブ\>**[区切り位置]**\>**[コンマやタブなどの区切り文字によってフィールドごとに区切られたデータ]**\>**[コンマ]**\>**[一般]** を選択します)。次にワークシートを見つけやすい場所に .csv ファイルとして保存します。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-p108">Next you create a .csv file that contains a list of label policies with their locations and other settings. You can use the sample below as a template by copying it into Excel, converting the text to columns (in Excel \> **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**), and then saving the worksheet as a .csv file in a location that's easy to find.</span></span>
+<span data-ttu-id="21fb5-p108">次に、場所とその他の設定を持つラベル ポリシーのリストを含む .csv ファイルを作成します。下のサンプルを Excel にコピーしてテンプレートとして使用し、テキストを列に変換します (Excel で \>**[データ]** タブ\>**[区切り位置]**\>**[コンマやタブなどの区切り文字によってフィールドごとに区切られたデータ]**\>**[コンマ]**\>**[一般]** を選択します)。次にワークシートを見つけやすい場所に .csv ファイルとして保存します。</span><span class="sxs-lookup"><span data-stu-id="21fb5-p108">Next you create a .csv file that contains a list of label policies with their locations and other settings. You can use the sample below as a template by copying it into Excel, converting the text to columns (in Excel \> **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**), and then saving the worksheet as a .csv file in a location that's easy to find.</span></span>
   
-<span data-ttu-id="a6b4a-136">このコマンドレットのパラメーター値の詳細については、「[New-RetentionCompliancePolicy](https://go.microsoft.com/fwlink/?linkid=866512)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-136">For more information about the parameter values for this cmdlet, see [New-RetentionCompliancePolicy](https://go.microsoft.com/fwlink/?linkid=866512).</span></span>
+<span data-ttu-id="21fb5-136">このコマンドレットのパラメーター値の詳細については、「[New-RetentionCompliancePolicy](https://go.microsoft.com/fwlink/?linkid=866512)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="21fb5-136">For more information about the parameter values for this cmdlet, see [New-RetentionCompliancePolicy](https://go.microsoft.com/fwlink/?linkid=866512).</span></span>
   
-<span data-ttu-id="a6b4a-137">メモ:</span><span class="sxs-lookup"><span data-stu-id="a6b4a-137">Notes:</span></span>
+<span data-ttu-id="21fb5-137">メモ:</span><span class="sxs-lookup"><span data-stu-id="21fb5-137">Notes:</span></span>
   
-- <span data-ttu-id="a6b4a-138">ラベルを公開するためのソース ファイルを指定しない場合、スクリプトはラベルを作成しますが (前のセクションを参照)、その発行はしません。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-138">If you don't provide a source file for publishing labels, the script creates labels (see the previous section) but does not publish them.</span></span>
+- <span data-ttu-id="21fb5-138">ラベルを公開するためのソース ファイルを指定しない場合、スクリプトはラベルを作成しますが (前のセクションを参照)、その発行はしません。</span><span class="sxs-lookup"><span data-stu-id="21fb5-138">If you don't provide a source file for publishing labels, the script creates labels (see the previous section) but does not publish them.</span></span>
     
-- <span data-ttu-id="a6b4a-p109">.csv ファイルに既に存在するラベル ポリシーと同じ名前のラベル ポリシーが含まれている場合、スクリプトはそのラベル ポリシーの作成をスキップします。重複するラベル ポリシーは作成されません。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-p109">If the .csv file contains a label policy with the same name as one that already exists, the script skips creating that label policy. No duplicate label policies are created.</span></span>
+- <span data-ttu-id="21fb5-p109">.csv ファイルに既に存在するラベル ポリシーと同じ名前のラベル ポリシーが含まれている場合、スクリプトはそのラベル ポリシーの作成をスキップします。重複するラベル ポリシーは作成されません。</span><span class="sxs-lookup"><span data-stu-id="21fb5-p109">If the .csv file contains a label policy with the same name as one that already exists, the script skips creating that label policy. No duplicate label policies are created.</span></span>
     
-- <span data-ttu-id="a6b4a-p110">スクリプトは、コンテンツに手動で適用されるラベルのみを発行します。また、コンテンツに自動で適用されるラベルはサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-p110">The script publishes only labels that are applied manually to content. This script does not support labels that are auto-applied to content.</span></span>
+- <span data-ttu-id="21fb5-p110">スクリプトは、コンテンツに手動で適用されるラベルのみを発行します。また、コンテンツに自動で適用されるラベルはサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="21fb5-p110">The script publishes only labels that are applied manually to content. This script does not support labels that are auto-applied to content.</span></span>
     
-- <span data-ttu-id="a6b4a-p111">列見出しを変更したり、名前を変更したりすると、スクリプトは失敗します。このスクリプトでは、ここに示す形式の .csv ファイルが必要です。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-p111">If you change or rename the column headers, the script will fail. The script requires a .csv file in the format provided here.</span></span>
+- <span data-ttu-id="21fb5-p111">列見出しを変更したり、名前を変更したりすると、スクリプトは失敗します。このスクリプトでは、ここに示す形式の .csv ファイルが必要です。</span><span class="sxs-lookup"><span data-stu-id="21fb5-p111">If you change or rename the column headers, the script will fail. The script requires a .csv file in the format provided here.</span></span>
     
-### <a name="sample-csv-file"></a><span data-ttu-id="a6b4a-145">CSV ファイルのサンプル</span><span class="sxs-lookup"><span data-stu-id="a6b4a-145">Sample .csv file</span></span>
+### <a name="sample-csv-file"></a><span data-ttu-id="21fb5-145">CSV ファイルのサンプル</span><span class="sxs-lookup"><span data-stu-id="21fb5-145">Sample .csv file</span></span>
 
 ```
 Policy Name (Required),PublishComplianceTag (Required),Comment (Optional),Enabled (Required),ExchangeLocation (Optional),ExchangeLocationException (Optional),ModernGroupLocation (Optional),ModernGroupLocationException (Optional),OneDriveLocation (Optional),OneDriveLocationException (Optional),PublicFolderLocation (Optional),SharePointLocation (Optional),SharePointLocationException (Optional),SkypeLocation (Optional),SkypeLocationException (Optional)
@@ -80,11 +80,11 @@ Publishing Policy Orange1,"LabelName_t_1, LabelName_t_2",N/A,$true,All,,,,,,,,,,
 Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,,
 ```
 
-## <a name="step-3-create-the-powershell-script"></a><span data-ttu-id="a6b4a-146">手順 3: PowerShell スクリプトを作成する</span><span class="sxs-lookup"><span data-stu-id="a6b4a-146">Step 3: Create the PowerShell script</span></span>
+## <a name="step-3-create-the-powershell-script"></a><span data-ttu-id="21fb5-146">手順 3: PowerShell スクリプトを作成する</span><span class="sxs-lookup"><span data-stu-id="21fb5-146">Step 3: Create the PowerShell script</span></span>
 
-<span data-ttu-id="a6b4a-p112">以下の PowerShell スクリプトをコピーしてメモ帳に貼り付けます。\<path\>CreateRetentionSchedule.ps1 のように、ファイル名にサフィックス .ps1 を使用して、簡単に見つけやすい場所にファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-p112">Copy and paste the below PowerShell script into Notepad. Save the file by using a filename suffix of .ps1 in a location that's easy to find -- for example, \<path\>CreateRetentionSchedule.ps1.</span></span>
+<span data-ttu-id="21fb5-p112">以下の PowerShell スクリプトをコピーしてメモ帳に貼り付けます。\<path\>CreateRetentionSchedule.ps1 のように、ファイル名にサフィックス .ps1 を使用して、簡単に見つけやすい場所にファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="21fb5-p112">Copy and paste the below PowerShell script into Notepad. Save the file by using a filename suffix of .ps1 in a location that's easy to find -- for example, \<path\>CreateRetentionSchedule.ps1.</span></span>
   
-### <a name="powershell-script"></a><span data-ttu-id="a6b4a-149">PowerShell スクリプト</span><span class="sxs-lookup"><span data-stu-id="a6b4a-149">PowerShell script</span></span>
+### <a name="powershell-script"></a><span data-ttu-id="21fb5-149">PowerShell スクリプト</span><span class="sxs-lookup"><span data-stu-id="21fb5-149">PowerShell script</span></span>
 
 ```
 <#
@@ -706,33 +706,33 @@ if ($ResultCSV)
 
 ```
 
-## <a name="step-4-connect-to-security-amp-compliance-center-powershell"></a><span data-ttu-id="a6b4a-150">手順 4: セキュリティ&amp;コンプライアンス センター PowerShell に接続する</span><span class="sxs-lookup"><span data-stu-id="a6b4a-150">Step 4: Connect to Security &amp; Compliance Center PowerShell</span></span>
+## <a name="step-4-connect-to-security-amp-compliance-center-powershell"></a><span data-ttu-id="21fb5-150">手順 4: セキュリティ&amp;コンプライアンス センター PowerShell に接続する</span><span class="sxs-lookup"><span data-stu-id="21fb5-150">Step 4: Connect to Security &amp; Compliance Center PowerShell</span></span>
 
-<span data-ttu-id="a6b4a-151">以下の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-151">Follow the steps here:</span></span>
+<span data-ttu-id="21fb5-151">以下の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="21fb5-151">Follow the steps here:</span></span>
   
-- [<span data-ttu-id="a6b4a-152">Office 365 セキュリティ&amp;コンプライアンス センター PowerShell への接続</span><span class="sxs-lookup"><span data-stu-id="a6b4a-152">Connect to Office 365 Security &amp; Compliance Center PowerShell</span></span>](https://go.microsoft.com/fwlink/?linkid=799771)
+- [<span data-ttu-id="21fb5-152">Office 365 セキュリティ&amp;コンプライアンス センター PowerShell への接続</span><span class="sxs-lookup"><span data-stu-id="21fb5-152">Connect to Office 365 Security &amp; Compliance Center PowerShell</span></span>](https://go.microsoft.com/fwlink/?linkid=799771)
     
-## <a name="step-5-run-the-powershell-script-to-create-and-publish-the-labels"></a><span data-ttu-id="a6b4a-153">手順 5: PowerShell スクリプトを実行して、ラベルを作成および発行します。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-153">Step 5: Run the PowerShell script to create and publish the labels</span></span>
+## <a name="step-5-run-the-powershell-script-to-create-and-publish-the-labels"></a><span data-ttu-id="21fb5-153">手順 5: PowerShell スクリプトを実行して、ラベルを作成および発行します。</span><span class="sxs-lookup"><span data-stu-id="21fb5-153">Step 5: Run the PowerShell script to create and publish the labels</span></span>
 
-<span data-ttu-id="a6b4a-154">セキュリティ&amp;コンプライアンス センター PowerShell に接続したら、次に、ラベルを作成して発行するスクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-154">After you've connected to Security &amp; Compliance Center PowerShell, next you run the script that creates and publishes the labels.</span></span>
+<span data-ttu-id="21fb5-154">セキュリティ&amp;コンプライアンス センター PowerShell に接続したら、次に、ラベルを作成して発行するスクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="21fb5-154">After you've connected to Security &amp; Compliance Center PowerShell, next you run the script that creates and publishes the labels.</span></span>
   
-1. <span data-ttu-id="a6b4a-155">セキュリティ&amp;コンプライアンス PowerShell セッションでパスを入力し、その後ろに文字「.\」とスクリプトのファイル名を入力し、ENTER キーを押してスクリプトを実行します。例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-155">In the Security &amp; Compliance PowerShell session, enter the path, followed by the characters .\ and file name of the script, and then press ENTER to run the script - for example:</span></span>
+1. <span data-ttu-id="21fb5-155">セキュリティ&amp;コンプライアンス PowerShell セッションでパスを入力し、その後ろに文字「.\」とスクリプトのファイル名を入力し、ENTER キーを押してスクリプトを実行します。例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="21fb5-155">In the Security &amp; Compliance PowerShell session, enter the path, followed by the characters .\ and file name of the script, and then press ENTER to run the script - for example:</span></span>
     
   ```
   <path>.\CreateRetentionSchedule.ps1
   ```
 
-    <span data-ttu-id="a6b4a-156">スクリプトは、上で作成した .csv ファイルの場所を要求するダイアログを表示します。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-156">The script will prompt you for the locations of the .csv files that you created above.</span></span>
+    <span data-ttu-id="21fb5-156">スクリプトは、上で作成した .csv ファイルの場所を要求するダイアログを表示します。</span><span class="sxs-lookup"><span data-stu-id="21fb5-156">The script will prompt you for the locations of the .csv files that you created above.</span></span>
     
-2. <span data-ttu-id="a6b4a-157">パスを入力し、その後ろに文字「.\」と .csv ファイルの名前を入力し、ENTER キーを押します。例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-157">Enter the path, followed by the characters .\ and file name of the .csv file, and then press ENTER - for example:</span></span>
+2. <span data-ttu-id="21fb5-157">パスを入力し、その後ろに文字「.\」と .csv ファイルの名前を入力し、ENTER キーを押します。例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="21fb5-157">Enter the path, followed by the characters .\ and file name of the .csv file, and then press ENTER - for example:</span></span>
     
   ```
   <path>.\LabelsToCreate.csv
   ```
 
-## <a name="step-6-view-the-log-file-with-the-results"></a><span data-ttu-id="a6b4a-158">手順 6: 結果を含むログ ファイルを表示する</span><span class="sxs-lookup"><span data-stu-id="a6b4a-158">Step 6: View the log file with the results</span></span>
+## <a name="step-6-view-the-log-file-with-the-results"></a><span data-ttu-id="21fb5-158">手順 6: 結果を含むログ ファイルを表示する</span><span class="sxs-lookup"><span data-stu-id="21fb5-158">Step 6: View the log file with the results</span></span>
 
-<span data-ttu-id="a6b4a-p113">スクリプトを実行すると、実行された各アクションと、アクションが成功したか失敗したかを記録するログ ファイルが生成されます。ログ ファイルには、作成されたラベルと発行されたラベルに関するすべてのメタデータが含まれています。ログ ファイルはこの場所で見つけられます。ファイル名の数字は異なることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="a6b4a-p113">When you run the script, it generates a log file that records each action it took and whether the action succeeded or failed. The log file includes all metadata about what labels were created and what labels were published. You can find the log file at this location -- note that the digits in the file name vary.</span></span>
+<span data-ttu-id="21fb5-p113">スクリプトを実行すると、実行された各アクションと、アクションが成功したか失敗したかを記録するログ ファイルが生成されます。ログ ファイルには、作成されたラベルと発行されたラベルに関するすべてのメタデータが含まれています。ログ ファイルはこの場所で見つけられます。ファイル名の数字は異なることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="21fb5-p113">When you run the script, it generates a log file that records each action it took and whether the action succeeded or failed. The log file includes all metadata about what labels were created and what labels were published. You can find the log file at this location -- note that the digits in the file name vary.</span></span>
   
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt
