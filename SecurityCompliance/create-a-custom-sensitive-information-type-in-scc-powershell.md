@@ -3,10 +3,9 @@ title: Office 365 セキュリティ/コンプライアンス センターの Po
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
 description: Office 365 セキュリティ/コンプライアンス センターの　DLP について、カスタムの機密情報の種類を作成してインポートする方法について説明します。
-ms.openlocfilehash: 46e3e0cc502eb6135e18c30df3d96ec2e083b54c
-ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
+ms.openlocfilehash: 1f94da09bd455a82c9b9d7c5cf12e91de3a1ad29
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25866054"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223306"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>Office 365 セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する
 
-Office 365 のデータ損失防止 (DLP) には、[機密情報の種類](what-the-sensitive-information-types-look-for.md)が多数含まれており、DLP ポリシーで使用するための準備が整っています。これらの組み込みの種類は、クレジット カード番号、銀行口座番号、パスポート番号などの特定と保護に役立ちます。 
+Office 365 のデータ損失防止 (DLP) には、DLP ポリシーですぐに使用できる組み込みの[機密情報の種類](what-the-sensitive-information-types-look-for.md)が多数含まれています。これらの組み込みの種類は、クレジット カード番号、銀行口座番号、パスポート番号などの特定と保護に役立ちます。 
   
 ただし、組織に固有の形式を使用する従業員 ID など、さまざまな種類の機密情報を特定して保護する必要がある場合は、カスタムの機密情報の種類を作成することができます。機密情報の種類は、_ルール パッケージ_と呼ばれる XML ファイルで定義されます。
   
@@ -38,7 +37,7 @@ Office 365 のデータ損失防止 (DLP) には、[機密情報の種類](what-
 
 お客様の環境やコンテンツ マッチの要件はさまざまに異なるため、Microsoft サポートは、カスタム分類や正規表現 (別名: RegEx) パターンを定義するなど、カスタムのコンテンツ マッチング定義を提供することの支援は行えません。カスタムのコンテンツ マッチングの開発、テスト、デバッグについては、Office 365 のお客様は、内部の IT リソースを利用するか、Microsoft コンサルティング サービス (MCS) などの外部のコンサルティング リソースを利用する必要があります。サポート エンジニアは、機能の制限付きサポートを提供することはできますが、カスタムのコンテンツ マッチング開発がお客様の要件や義務を満たすことの保証はできません。提供できるサポートの種類の例として、テスト目的の正規表現パターンのサンプルが挙げられます。また、サポートは、特定の単一コンテンツにおいて期待通りに動作していない既存の RegEx パターンのトラブルシューティングを支援できます。
 
- テキストの処理に使用される .NET RegEx エンジンの詳細については、「[.NET の正規表現](https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions)」を参照してください。
+ テキストを処理するために使用されている Boost.RegEx (以前の RegEx++) エンジンの詳細については、「[Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)」を参照してください。
     
 ## <a name="sample-xml-of-a-rule-package"></a>ルール パッケージのサンプル XML
 

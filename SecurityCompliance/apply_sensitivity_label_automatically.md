@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを作成する場合、ドキュメントまたは電子メールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 5165e9c7bd674046f6a3f3a9d1f1eeedc35f931e
-ms.sourcegitcommit: 44cea06d4b007988cadc1e9de2d5ef601f1b3863
+ms.openlocfilehash: a65b0848d6fb875366d35a0130ccc45cbe7adc75
+ms.sourcegitcommit: 942726b33ba67f2b89b5c593ccd534af6715c8b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760768"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30202788"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>機密ラベルをコンテンツに自動的に適用する
 

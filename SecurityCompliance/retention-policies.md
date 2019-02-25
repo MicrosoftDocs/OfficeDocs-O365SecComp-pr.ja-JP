@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: アイテム保持ポリシーでは、コンテンツを保持するか、コンテンツを削除するか、またはコンテンツを保持して後に削除するかを事前に決定できます。さらに、1 つのポリシーを組織全体に適用するか、特定の場所やユーザーにのみ適用するか、すべてのコンテンツにポリシーを適用するか、特定の条件を満たしているコンテンツのみにポリシーを適用するかも事前に決定できます。
-ms.openlocfilehash: 328d63265fdaa311b94c25902e7f380c9b0be89c
-ms.sourcegitcommit: c2ec9a4b0279a248b85c2e4a4e91458214b5b31c
+ms.openlocfilehash: e76ec96b83dd5870416d864cf9f3b0b5f43cb9b2
+ms.sourcegitcommit: 942726b33ba67f2b89b5c593ccd534af6715c8b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "29770822"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30202758"
 ---
 # <a name="overview-of-retention-policies"></a>アイテム保持ポリシーの概要
 
@@ -224,7 +224,13 @@ Skype for Business のユーザーを選択するときには、列のヘッダ�
   
 ![Skype ユーザーの選択ページ](media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
-Outlook のフォルダー **[会話履歴]** は、Skype のアーカイブには作用しない機能です。**[会話履歴]** はエンド ユーザーが無効にできますが、Skype のアーカイブの場合はユーザーがアクセスできない (電子情報開示には使用できる) 非表示フォルダーに Skype の会話のコピーが保存されます。 
+Outlook のフォルダー **[会話履歴]** は、Skype のアーカイブには作用しない機能です。**[会話履歴]** はエンド ユーザーが無効にできますが、Skype のアーカイブの場合はユーザーがアクセスできない (電子情報開示には使用できる) 非表示フォルダーに Skype の会話のコピーが保存されます。
+
+### <a name="office-365-groups-locations"></a>Office 365 グループの場所
+
+Office 365 グループのコンテンツを保持するには、Office 365 グループの場所を使用する必要があります。Office 365 グループには Exchange メールボックスがありますが、Exchange の場所全体が含まれるアイテム保持ポリシーには、Office 365 グループのメールボックスのコンテンツは含まれません。Office 365 グループに適用されるアイテム保持ポリシーには、グループのメールボックスとサイトが両方とも含まれます。
+
+また、Exchange の場所を使用して、特定のグループのメールボックスを含めたり除外したりすることはできません。最初は Exchange の場所でグループのメールボックスを選択できますが、アイテム保持ポリシーを保存しようとすると、Exchange の場所では "RemoteGroupMailbox" を選択できないことを示すエラーを受け取ります。 
   
 ### <a name="teams-locations"></a>Teams の場所
 
