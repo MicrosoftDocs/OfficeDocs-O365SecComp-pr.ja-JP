@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 11/16/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: アイテム保持ポリシーでは、コンテンツを保持するか、コンテンツを削除するか、またはコンテンツを保持して後に削除するかを事前に決定できます。さらに、1 つのポリシーを組織全体に適用するか、特定の場所やユーザーにのみ適用するか、すべてのコンテンツにポリシーを適用するか、特定の条件を満たしているコンテンツのみにポリシーを適用するかも事前に決定できます。
-ms.openlocfilehash: e76ec96b83dd5870416d864cf9f3b0b5f43cb9b2
-ms.sourcegitcommit: 942726b33ba67f2b89b5c593ccd534af6715c8b9
+ms.openlocfilehash: 26f28b1e4ce0b8bce69d135bf54332585bdf9745
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30202758"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214277"
 ---
 # <a name="overview-of-retention-policies"></a>アイテム保持ポリシーの概要
 
