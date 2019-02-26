@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを設定する方法について説明します。
-ms.openlocfilehash: 25e8ee175314c5447da95d3636236d1682479c70
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f3730c6f2bd6a7c307cd17c0894116b1e8328dc9
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216757"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241869"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを作成する
 
@@ -45,7 +45,7 @@ ms.locfileid: "30216757"
   
     レポートスケジュールのカスタマイズを選択する場合は、レポートの頻度、送信者の電子メールアドレス、および受信者の電子メールアドレスを指定できます。 
     
-レポートのスケジュールを作成すると、そのレポートは電子メール経由で受信者の emali アドレスに自動的に配信されます。 
+レポートのスケジュールを作成すると、そのレポートは電子メールによって受信者の電子メールアドレスに自動的に配信されます。 
   
 ## <a name="related-topics"></a>関連項目
 

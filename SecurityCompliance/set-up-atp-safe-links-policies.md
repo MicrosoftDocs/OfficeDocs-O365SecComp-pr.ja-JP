@@ -12,19 +12,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: 安全なリンクポリシーを設定して、Word、Excel、PowerPoint、および Visio ファイル内の悪意のあるリンクや、電子メールメッセージだけで組織を保護します。
-ms.openlocfilehash: db7da9d6ce2d2f2503585c0cde89f2b2626e2afa
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 0cf6c22be42f11fe52a1f43d0ebef48bd639675d
+ms.sourcegitcommit: 5b5bbced1577701bdb6befc8ed252e9d9e776529
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220167"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30245603"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Office 365 の ATP の安全なリンクポリシーを設定する
 
 > [!IMPORTANT]
-> この記事は、ビジネスのお客様を対象としています。Outlook の安全なリンクに関する情報をお探しのホームユーザーの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
+> この記事は、Office 365 Enterprise のお客様を対象としています。Outlook.com、office 365 Home、または office 365 Personal を使用していて、Outlook での安全なリンクに関する情報をお探しの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
 [atp の安全なリンク](atp-safe-links.md)は、 [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) の機能で、フィッシングやその他の攻撃で使用されている悪意のあるリンクから組織を保護するのに役立ちます。[Office 365 セキュリティ&amp;コンプライアンスセンターに必要なアクセス許可](permissions-in-the-security-and-compliance-center.md)がある場合は、ユーザーが web アドレス (url) をクリックしたときに組織が保護されるようにするために、ATP の安全なリンクポリシーを設定することができます。ATP の安全なリンクポリシーを構成して、Office ドキュメント内の電子メールと url の url をスキャンできます。
   
@@ -46,13 +47,13 @@ ms.locfileid: "30220167"
     
 - 必要なアクセス許可を持っていることを確認してください。ATP ポリシーを定義 (または編集) するには、適切な役割が割り当てられている必要があります。次の表では、いくつかの例について説明します。 <br>
 
-    |役割  |場所/割り当て方法  |
+    |役割  |参照先/割り当て方法  |
     |---------|---------|
-    |Office 365 グローバル管理者 |Office 365 の購入にサインアップするユーザーは、既定ではグローバル管理者です。(詳細については、「 [Office 365 管理者の役割につい](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)て」を参照してください)。         |
+    |Office 365 グローバル管理者 |Office 365 の購入へのサインアップをする場合、既定ではグローバル管理者になります。詳細については、「[Office 365 の管理者の役割について](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)」を参照してください。         |
     |セキュリティ管理者 |Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-    |Exchange Online 組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  powershell コマンドレット (「 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)」を参照) |
+    |Exchange Online 組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)」を参照してください) |
 
-    役割とアクセス許可の詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+    役割とアクセス許可の詳細については、「[Office 365 セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
 - office クライアントが[先進認証](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)を使用するように構成されていることを確認します (これは、office ドキュメントの ATP の安全なリンク保護に対して行われます)。
     
@@ -64,11 +65,11 @@ ms.locfileid: "30220167"
 
 [Office 365 Advanced Threat Protection](office-365-atp.md)を使用している場合は、組織内のすべてのユーザーに適用される既定の ATP 安全なリンクポリシーがあります。必ず確認してください。必要に応じて、既定のポリシーを編集します。
   
-1. に[https://protection.office.com](https://protection.office.com)移動して、職場または学校のアカウントでサインインします。 
+1. [https://protection.office.com](https://protection.office.com) に移動し、職場または学校のアカウントでサインインします。 
     
 2. 左側のナビゲーションで、[**脅威の管理**] の下にある [ ** \>ポリシー** **セーフリンク**] を選択します。
     
-3. [**組織全体に適用されるポリシー** ] セクションで、[**既定**] を選択し、[**編集**] を選択します (このボタンは鉛筆に似ています)。<br/>![[編集] をクリックして、安全なリンクの保護のための既定のポリシーを編集します。](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
+3. **[組織全体に適用されるポリシー]** セクションで、**[既定]**、**[編集]** (編集ボタンは鉛筆に似ています) の順に選びます。<br/>![[編集] をクリックして安全なリンクの保護に関する既定のポリシーを編集する](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
   
 4. [**次の url をブロック**する] セクションで、組織内のユーザーが閲覧できないようにする1つ以上の url を指定します。(「 [ATP Safe Links を使用してカスタムのブロックされた url リストをセットアップする](set-up-a-custom-blocked-urls-list-wtih-atp.md)」を参照してください)。
     
@@ -80,7 +81,7 @@ ms.locfileid: "30220167"
 
 すべてのユーザーに適用される既定の ATP の安全なリンクポリシーを確認 (または編集) した後、次の手順として、特定の受信者に適用する追加のポリシーを定義します。たとえば、追加のポリシーを定義することによって、既定のポリシーに対する例外を指定できます。 
   
-1. に[https://protection.office.com](https://protection.office.com)移動して、職場または学校のアカウントでサインインします。 
+1. [https://protection.office.com](https://protection.office.com) に移動し、職場または学校のアカウントでサインインします。 
     
 2. 左側のナビゲーションで、[**脅威の管理**] の下にある [**ポリシー**] を選択します。
     
@@ -129,7 +130,7 @@ ATP の安全なリンクポリシーを設定または編集すると、いく�
 
 |このオプション  |機能  |
 |---------|---------|
-|**Off** <br/> |電子メールメッセージ内の url はスキャンされません。  <br/> 特定の受信者グループの電子メールメッセージ内の url をスキャンしないルールなどの例外ルールを定義できます。  <br/> |
+|**オフ** <br/> |電子メールメッセージ内の url はスキャンされません。  <br/> 特定の受信者グループの電子メールメッセージ内の url をスキャンしないルールなどの例外ルールを定義できます。  <br/> |
 |**オン** <br/> |ユーザーが電子メールメッセージ内の url をクリックしたときに、ユーザーが ATP の安全なリンク保護を介してユーザーをルーティングするように url を書き換えます。  <br/> 禁止または悪意のある url の一覧に対してクリックしたときに URL をチェックします。  <br/> |
 |**安全な添付ファイルを使用してダウンロード可能なコンテンツをスキャンする** <br/> |このオプションを選択すると、ダウンロード可能なコンテンツをポイントする url がスキャンされます。  <br/> |
 |**組織内で送信されるメッセージに安全なリンクを適用する** <br/> | このオプションを選択して選択すると、電子メールアカウントが Office 365 でホストされている場合に、組織内のユーザー間で送信される電子メールメッセージに対して ATP の安全なリンク保護が適用されます。  <br/> |

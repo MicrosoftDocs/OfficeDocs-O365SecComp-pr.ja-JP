@@ -12,14 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターのエクスプローラー (脅威エクスプローラーとも呼ばれます) について説明します。
-ms.openlocfilehash: 439a7d53e185e12ddd5d2e19b9d88bd8c9b47dad
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4a28626d0e643d7a7b96a34656e7678c71a86c66
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218987"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241969"
 ---
 # <a name="use-explorer-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターのエクスプローラーを使用する
 
