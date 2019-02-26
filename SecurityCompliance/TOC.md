@@ -146,7 +146,7 @@
 #### [オンプレミスの AD RMS サーバーを使用するように IRM を構成する](configure-irm-to-use-an-on-premises-ad-rms-server.md)
 ### [S/MIME](s-mime-for-message-signing-and-encryption.md)
 #### [S/MIME によるメッセージの署名と暗号化](s-mime-for-message-signing-and-encryption.md)
-#### [Outlook Web App 用の S/MIME 設定値を構成する](configure-s-mime-settings-for-outlook-web-app.md)
+#### [Outlook on the web の S/MIME 設定を構成する](configure-s-mime-settings-for-outlook-web-app.md)
 #### [S/MIME 署名および暗号化された電子メールを送受信する](send-and-receive-s-mime-signed-and-encrypted-email.md)
 #### [S/MIME 用にユーザー証明書を Office 365 に同期させる](sync-user-certificates-to-office-365-for-s-mime.md)
 #### [S/MIME を検証するための仮想証明書コレクションを設定する](set-up-virtual-certificate-collection-to-validate-s-mime.md)
@@ -282,7 +282,7 @@
 
 ### [保留リストを管理する](compliance20/managing-holds.md)
 
-### [処理中のエラーを修正する](compliance20/processing-data-for-case.md)
+### [処理中のエラーの操作](compliance20/processing-data-for-case.md)
 #### [カストディアン データの詳細なインデックス処理](compliance20/indexing-custodian-data.md)
 #### [データ処理中のエラー修復](compliance20/error-remediation.md)
 
