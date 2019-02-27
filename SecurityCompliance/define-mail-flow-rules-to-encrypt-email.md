@@ -5,19 +5,21 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
+ms.collection:
+- M365-security-compliance
 description: 管理者は、Office 365 Message Encryption (OME) を使用してメッセージを暗号化および復号化するメールフロールール (トランスポートルールとも呼ばれます) を作成する方法を学習できます。
-ms.openlocfilehash: 38838bea22eda1b3bc92fa33902ed38f4cd052e5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f76abe2d341b9e3677a90d447e70f6091e3a91cc
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218557"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276207"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Office 365 でメールを暗号化するためにメール フロー ルールを定義する
 
@@ -91,7 +93,7 @@ EAC を使用して、新しい OME 機能でメッセージの暗号化をト�
 
 7. [**実行**する処理] で、**メッセージセキュリティ** \>を変更するために割り当てられているアクションを削除します。**以前のバージョンの OME を適用**します。
 
-8. [**保存**] を選択します。
+8. **[保存]** を選択します。
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>新しい機能を使用せずに Office 365 メッセージ暗号化のメールフロールールを作成する
 

@@ -9,16 +9,18 @@ f1_keywords:
 - ms.o365.cc.CustomizeExportWithZoom
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 高度な電子情報開示ツールを使用して詳細な分析を行う&amp;ために、Office 365 セキュリティコンプライアンスセンターでコンテンツ検索の結果を準備する方法について説明します。
-ms.openlocfilehash: 04de96064f400f8055d0e477bf41ed1c7cb1b35f
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: de96e06dcbb5ae9a3cbf80b66f976e6ffdfd5b0e
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223846"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296920"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Office 365 アドバンスト eDiscovery 用に検索結果を準備する
 
@@ -42,7 +44,7 @@ office 365 セキュリティ&amp; /コンプライアンスセンターの電�
     
 - **レビューアプリケーション用のデータのエクスポート**-分析を完了し、データセットを縮小した後で、高度な電子情報開示と Office 365 のデータをエクスポートできます。エクスポートパッケージには、エクスポートされたコンテンツと分析メタデータのプロパティを含む CSV ファイルが含まれています。このエクスポートパッケージは、電子情報開示レビューアプリケーションにインポートできます。 
     
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - Advanced eDiscovery を使用してユーザーのデータを分析するには、ユーザー (データの保管担当者) に Office 365 E5 ライセンスが割り当てられている必要があります。または、Office 365 E1 または E3 ライセンスを持つユーザーに、Advanced eDiscovery スタンドアロンライセンスを割り当てることができます。ケースに割り当てられ、高度な電子情報開示を使用してデータを分析する管理者とコンプライアンス責任者は、E5 ライセンスは必要ありません。 
     

@@ -8,18 +8,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: コンテンツ検索のアクセス許可フィルターを使用して、電子情報開示マネージャーが Office 365 組織のメールボックスとサイトのサブセットのみを検索できるようにします。
-ms.openlocfilehash: 61db727646f4158419c4afd0201acf0fc167d382
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: f9f3344fce11e5eacfede43aab593b6235cfe1c7
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223676"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296910"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>コンテンツ検索用にアクセス許可フィルターを構成する
 
@@ -37,7 +39,7 @@ ms.locfileid: "30223676"
 
 [new-compliancesecurityfilter](#remove-compliancesecurityfilter)
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - コンプライアンスセキュリティフィルターコマンドレットを実行するには、セキュリティ&amp;コンプライアンスセンターで、組織の管理役割グループのメンバーである必要があります。詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
     

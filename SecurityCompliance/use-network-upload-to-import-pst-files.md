@@ -7,19 +7,21 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '管理者向け: Office 365 で、ネットワークアップロードを使用して複数の PST ファイルをユーザーのメールボックスに一括インポートする方法について説明します。'
-ms.openlocfilehash: a92217ad4126851a042b3492614aaa35ef215f61
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 7de27e7dc15e823727544437ff79de6f72c61d5e
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223606"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30297150"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>ネットワークアップロードを使用して組織の PST ファイルを Office 365 にインポートする
 
@@ -42,7 +44,7 @@ ms.locfileid: "30223606"
 
 Office 365 メールボックスに PST ファイルをインポートするには、手順1を一度だけ実行する必要があることに注意してください。これらの手順を実行した後、PST ファイルのバッチをアップロードしてインポートするたびに、手順2から手順6に従います。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
   
 - PST ファイルを Office 365 メールボックスにインポートするには、Exchange Online でメールボックスのインポートのエクスポートの役割を割り当てられている必要があります。既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。[組織の管理] 役割グループに、メールボックスのインポートのエクスポートの役割を追加できます。または、新しい役割グループを作成し、メールボックスのインポートのエクスポート役割を割り当てて、自分をメンバーとして追加することもできます。詳細については、「 [Manage role groups](https://go.microsoft.com/fwlink/p/?LinkId=730688)」の「役割グループに役割を追加する」または「役割グループを作成する」のセクションを参照してください。
     

@@ -7,22 +7,23 @@ ms.date: 1/3/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: コンテンツ検索とこの記事のスクリプトを使用して、ユーザーのグループのメールボックスと OneDrive for business サイトを検索します。
-ms.openlocfilehash: 758c9b9e756f6830f207b76392ad808fc14f0caa
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1d180d4b6deefd59a26b1e93f354c72810030718
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218887"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295500"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>コンテンツ検索を使用してメールボックスと OneDrive for Business サイトでユーザーの一覧を探す
 
 Office 365 セキュリティ&amp;コンプライアンスセンターでは、時間がかかる電子情報開示に関連するタスクを自動化するための Windows PowerShell コマンドレットが多数提供されています。現時点では、セキュリティ&amp;コンプライアンスセンターでコンテンツ検索を作成して大量の保管担当者コンテンツの場所を検索すると、時間と準備がかかります。検索を作成する前に、各 OneDrive for business サイトの URL を収集し、ビジネスサイト用の各メールボックスと O nedrive を検索に追加する必要があります。今後のリリースでは、これはセキュリティ&amp;コンプライアンスセンターでの操作が簡単になります。その後、この記事のスクリプトを使用してこのプロセスを自動化できます。このスクリプトは、組織の個人用サイトのドメイン名 (たとえば、URL https://contoso-my.sharepoint.com)内の**contoso** 、ユーザーの電子メールアドレスのリスト、新しいコンテンツ検索の名前、使用する検索クエリ) の入力を求めます。このスクリプトは、リスト内の各ユーザーの OneDrive for business URL を取得し、ユーザーが指定した検索クエリを使用して、リスト内の各ユーザーのメールボックスと onedrive for business サイトを検索するコンテンツ検索を作成して開始します。 
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - 手順3でスクリプトを実行するには、セキュリティ&amp;コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。また、SharePoint Online のグローバル管理者である必要があります。
     

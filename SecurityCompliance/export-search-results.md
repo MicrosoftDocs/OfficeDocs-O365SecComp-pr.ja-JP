@@ -9,19 +9,21 @@ f1_keywords:
 - ms.o365.cc.CustomizeExport
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Office 365 Security & コンプライアンスセンターのコンテンツ検索からローカルコンピューターに検索結果をエクスポートします。電子メールの結果は PST ファイルとしてエクスポートされます。SharePoint と OneDrive for business サイトのコンテンツは、ネイティブの Office ドキュメントとしてエクスポートされます。 '
-ms.openlocfilehash: 5ec1456c7d1a787a1ede70c15b109e7f0358f60a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1a94a7ed948de06bfc8f3f9a2dc9c8a5d26ca653
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219947"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296570"
 ---
 # <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Office 365 Security & コンプライアンスセンターからコンテンツ検索の結果をエクスポートする
 
@@ -31,7 +33,7 @@ ms.locfileid: "30219947"
   
 コンテンツ検索の結果をエクスポートするには、結果を準備してからローカルコンピューターにダウンロードする必要があります。
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - 検索結果をエクスポートするには、Office 365 セキュリティ&amp;コンプライアンスセンターで、export 管理役割が割り当てられている必要があります。この役割は、組み込みの電子情報開示マネージャーの役割グループに割り当てられます。既定では、組織の管理役割グループに割り当てられません。詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
     

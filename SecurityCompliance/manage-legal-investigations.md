@@ -4,20 +4,21 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.audience: Admin
-ms.topic: hub-page
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Office 365 セキュリティ&amp;コンプライアンスセンターの電子情報開示ケースを使用して、組織の法的調査を管理します。E5 サブスクリプションを持っている場合は、高度な電子情報開示のテキスト分析、machine learning、および予測コーディング機能を使用して、ケースデータをさらに分析できます。
-ms.openlocfilehash: 5b3feb16b638235d46f67f6aa16ce49e1e7c11d5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: b97bd99740e2db090df70af0c76070186f5b8ccf
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214397"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296900"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Office 365 で法的調査を管理する
 
@@ -58,7 +59,7 @@ Office 365 Advanced ediscovery は、前のセクションで説明したコン�
 > [!NOTE]
 > Advanced eDiscovery を使用してユーザーのデータを分析するには、ユーザー (データの保管担当者) に Office 365 E5 ライセンスが割り当てられている必要があります。または、Office 365 E1 または E3 ライセンスを持つユーザーに、Advanced eDiscovery スタンドアロンライセンスを割り当てることができます。ケースに割り当てられ、高度な電子情報開示を使用してデータを分析する管理者とコンプライアンス責任者は、E5 ライセンスは必要ありません。 
   
-### <a name="get-started"></a>作業の開始
+### <a name="get-started"></a>はじめに
 
 上級電子情報開示の使用を開始する最も簡単な方法は、ケースを作成して&amp; 、セキュリティコンプライアンスセンターで検索結果を準備し、それらの結果を高度な電子情報開示に読み込んでから、そのケースのデータを分析してエクスプレス分析を実行し、外部レビューの結果。
   

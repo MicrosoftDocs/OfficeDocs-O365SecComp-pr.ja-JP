@@ -10,16 +10,18 @@ f1_keywords:
 - ms.o365.cc.IngestionHelp
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: '管理者向け: Office 365 セキュリティ&amp;コンプライアンスセンターのインポートサービスを使用して、電子メールデータ (PST ファイル) を Exchange Online のユーザーメールボックスに一括インポートする方法について説明します。このトピックでは、faq を示し、PST インポート処理のしくみについて説明します。'
-ms.openlocfilehash: b6f32a6b5552773c197003ddac41c138539bb6ef
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 89aa1a351d0a9bcc70819f4b2657d04adc7599e2
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218047"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296780"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Overview of importing your organization PST files to Office 365
 

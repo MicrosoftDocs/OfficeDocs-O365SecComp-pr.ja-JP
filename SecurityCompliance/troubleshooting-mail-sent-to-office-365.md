@@ -1,7 +1,7 @@
 ---
 title: Office 365 に送信されるメールのトラブルシューティング
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 5/2/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
+ms.collection:
+- M365-security-compliance
 description: この資料では、Office 365 の受信トレイに電子メールを送信するときに生じる問題に関して送信者が参照できるトラブルシューティング情報と、Office 365 顧客に対するバルク メールのベスト プラクティスについて取り上げます。
-ms.openlocfilehash: 3d90da9ac239971fd888ed3b8637ba9941628fc2
-ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
+ms.openlocfilehash: cfb3901b930b63ef8a33391c673a32a73eaa1b07
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27240560"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276297"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Office 365 に送信されるメールのトラブルシューティング
 
@@ -115,7 +117,7 @@ IP アドレスが EOP によって調整されたことを示す NDR を EOP �
 ### <a name="i-cant-receive-email-from-senders-in-office-365"></a>Office 365 で送信者からの電子メールを受信できない
 <a name="AllowEOPIPs"> </a>
 
- ユーザーからメッセージを受信するのには、ネットワークでは、EOP を当社のデータ センターで使用する IP アドレスからの接続になっていることを確認します。詳細については、 [Exchange のオンライン保護の IP アドレス](eop/exchange-online-protection-ip-addresses.md)を参照してください。 
+ ユーザーからメッセージを受信するには、EOP がデータセンターで使用している IP アドレスからの接続がネットワークで許可されていることを確認してください。詳細については、「 [Exchange Online Protection の IP アドレス](eop/exchange-online-protection-ip-addresses.md)」を参照してください。 
   
 ## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>Office 365 ユーザーへのバルク メールのベスト プラクティス
 <a name="BulkMailer"> </a>

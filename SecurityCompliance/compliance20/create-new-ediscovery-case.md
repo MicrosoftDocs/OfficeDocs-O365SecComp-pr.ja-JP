@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d01a0c8951ff1ae203bca54c4e196b747a79c378
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: b06c377c4841bce16e0121177665d1884497eaaa
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220337"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295350"
 ---
 # <a name="create-a-new-case-in-advanced-ediscovery-preview"></a>高度な電子情報開示で新しいケースを作成する (プレビュー)    
 

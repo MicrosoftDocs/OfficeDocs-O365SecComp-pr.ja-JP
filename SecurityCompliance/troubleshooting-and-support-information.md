@@ -1,7 +1,7 @@
 ---
 title: トラブルシューティングとサポート情報
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
+ms.collection:
+- M365-security-compliance
 description: このトピックでは、エンドユーザーと管理者向けのトラブルシューティング手順と、支援を得るためのテクニカル サポートへの問合わせ方法について説明します。
-ms.openlocfilehash: 249f6fabf0ae7037ef905c455cfb45582be0e40b
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: d9ff55350487b21325d9a95491fa6861fcc441fd
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003126"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275997"
 ---
 # <a name="troubleshooting-and-support-information"></a>トラブルシューティングとサポート情報
 
@@ -85,7 +87,7 @@ ms.locfileid: "23003126"
     
 ## <a name="support-information"></a>サポート情報
 
-インストールに関するヘルプを表示する場合は、構成、またはアドインをアンインストールしてくださいテクニカル サポートに連絡 Office 365 管理センターの [サポート] ページで、新しいサービス要求のリンクを使用します。電話とセルフ サポート オプションを使用してサービス要求を送信するなど、追加のオプションは、 [EOP のヘルプとサポート](eop/help-and-support-for-eop.md)を参照してください。
+アドインのインストール、構成、またはアンインストールに関してサポートが必要な場合は、Office 365 管理センターのサポートページにある [新しいサービスリクエスト] リンクを使用してテクニカルサポートにお問い合わせください。電話およびセルフサポートオプション経由でのサービス要求の提出などのその他のオプションについては、「 [Help and support for EOP](eop/help-and-support-for-eop.md)」を参照してください。
   
 ## <a name="for-more-information"></a>詳細情報
 

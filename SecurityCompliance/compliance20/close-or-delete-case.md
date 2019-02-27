@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a5a82a1e6ef9b4a4b1033bedf8951dcc109d2983
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 016b87388a17bc5cb01eb1a90d88aedb6e2e133c
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30212687"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295750"
 ---
 # <a name="close-or-delete-a-case"></a>ケースを閉じるか、削除する
 

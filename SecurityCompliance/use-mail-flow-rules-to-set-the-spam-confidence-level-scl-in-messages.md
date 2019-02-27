@@ -1,7 +1,7 @@
 ---
 title: メール フロー ルールを使用して、メッセージの Spam Confidence Level (SCL) を設定する
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
+ms.collection:
+- M365-security-compliance
 description: トランスポート ルールを作成して、電子メール メッセージの Spam Confidence Level (SCL) を設定できます。SCL は、メッセージがスパムである可能性がどの程度かを測定します。スパムとは、迷惑な (通常は不要な) 電子メール メッセージです。メッセージに対するアクションは、メッセージの SCL 評価によって異なります。たとえば、同僚からのメッセージはスパムでないと信頼できるため、社内ユーザーからのメッセージの場合はスパム コンテンツ フィルターをバイパスできます。トランスポート ルールを使用して電子メール メッセージの SCL 値を設定すると、スパムの制御を強化できます。
-ms.openlocfilehash: 97b9a62e76efea134af5bb1bb7bd25a98bb466d2
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: dfce98aa9d4fec25a06674eb68d6e00ae2964e87
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972279"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275627"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>メール フロー ルールを使用して、メッセージの Spam Confidence Level (SCL) を設定する
 
@@ -28,7 +30,7 @@ ms.locfileid: "24972279"
   
 - この手順の予想所要時間:10 分。
     
-- このプロシージャまたはプロシージャを実行する前にアクセス許可を割り当てる必要があります。必要なアクセス許可については、トランスポート ルール"のエントリ[で、Exchange のオンライン機能のアクセス許可](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)または[EOP でアクセス許可の機能](eop/feature-permissions-in-eop.md)を参照してください。 
+- この手順を実行する前に、アクセス許可を割り当てる必要があります。必要なアクセス許可を確認するには、「 [Exchange Online の機能のアクセス](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)許可」の「トランスポートルール」、または「 [EOP の機能のアクセス許可](eop/feature-permissions-in-eop.md)」のエントリを参照してください。 
     
 - このトピックの手順で使用可能なキーボード ショートカットについては、「 **Keyboard shortcuts in Exchange 2013**」を参照してください。
     

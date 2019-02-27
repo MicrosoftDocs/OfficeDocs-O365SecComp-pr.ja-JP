@@ -7,19 +7,21 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - BCS160
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Office 365 監査ログ レコードに含まれている追加のプロパティについて説明します。
-ms.openlocfilehash: 0219ed1fe29dc3ae1f940cd6991781368ae2d519
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: d5c8d45454ddf45823ff96109194c4a1013fa4ea
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223476"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296870"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Office 365 監査ログの詳細なプロパティ
 
@@ -65,7 +67,7 @@ Office 365 のセキュリティ/コンプライアンス センターから監�
 |OrganizationID  <br/> |Office 365 組織の GUID。  <br/> |すべて  <br/> |
 |Path  <br/> |アクセスされたメッセージが置かれているメールボックス フォルダーの名前。このプロパティは、メッセージの作成先、コピー先、移動先のフォルダーも識別します。  <br/> |Exchange (メールボックス アクティビティ)  <br/> |
 |Parameters  <br/> |Exchange 管理者のアクティビティの場合、Operation プロパティで識別されたコマンドレットで使用された、すべてのパラメーターの名前と値。  <br/> |Exchange (管理者のアクティビティ)  <br/> |
-|RecordType  <br/> |レコードで示されている操作の種類。次の値によって、レコードの種類が示されます。<br/><br/> **1** - Exchange 管理者監査ログのレコードを意味します。 <br/>**2** - Exchange メールボックス監査ログの、単一のメールボックス アイテムに対して行われた操作に関するレコードを意味します。 <br/>**3** - この値も Exchange 管理者監査ログのレコードを意味します。ただし、このレコードの種類は、ソース メールボックス内の複数のアイテムに対して操作が行われたこと (複数のアイテムを削除済みアイテム フォルダーに移動する操作や、複数のアイテムを完全に削除する操作など) を意味します。<br/>**4** - SharePoint でのサイト管理者の操作 (管理者またはユーザーがサイトに対するアクセス許可を割り当てるなど) を意味します。 <br/>**6** - SharePoint でのファイルまたはフォルダーに関連する操作 (ユーザーの表示、ファイルの変更など) を意味します。 <br/>**8** - Azure Active Directory で行われた管理者の操作を意味します。 <br/>**9** - Azure Active Directory での OrgId ログオン イベントを意味します。このレコードの種類は非推奨となっています。<br/>**10** - データ センターで Microsoft 担当者が行ったセキュリティ コマンドレット イベントを意味します。 <br/>**11** - SharePoint でのデータ損失防止 (DLP) イベントを意味します。<br/> **12** - Sway のイベントを意味します。 <br/>**13** - 統合 DLP ポリシーを使用して構成されている場合、Exchange の DLP イベントを意味します。Exchange トランスポート ルールに基づく DLP イベントはサポートされません。<br>**14** - SharePoint の共有イベントを意味します。<br/> **15** - Azure Active Directory の Secure Token Service (STS) ログオン イベントを意味します。 <br/>**18** - セキュリティ/コンプライアンス センターのイベントを意味します。 <br/>**20** - Power BI のイベントを意味します。 <br/>**21**- Dynamics 365 のイベントを意味します。<br/>**22** - Yammer のイベントを意味します。 <br/>**23** - Skype for Business のイベントを意味します。 <br/>**24** - 電子情報開示イベントを意味します。このレコードの種類は、セキュリティ/コンプライアンス センターでコンテンツ検索を実行し電子情報開示ケースを管理することによって行われたアクティビティを意味します。詳細については、Office 365 監査ログ内の電子情報開示アクティビティの検索に関する記事を参照してください。<br/>**25、26、27** - Microsoft Teams のイベントを意味します。 <br/>**28** - Exchange Online Protection イベントと Office 365 Advanced Threat Protection イベントからのフィッシングとマルウェアのイベントを意味します。<br/> **30** - Microsoft Flow のイベントを意味します。<br/> **32** - Microsoft Stream のイベントを意味します。<br/> **35** - Microsoft Project のイベントを意味します。 <br/> **36** - Sharepoint リストのイベントを意味します。<br/> **40** - セキュリティ/コンプライアンス アラートのシグナルに起因するイベントを意味します。<br/> **41** - Office 365 Advanced Threat Protection でのブロック時の安全なリンクと上書きのブロック イベントを意味します。<br/>**44** - Workplace Analytics のイベントを意味します。 <br/>**47** - SharePoint、OneDrive、Microsoft Teams 内のファイルに対する、Office 365 Advanced Threat Protection からのフィッシングとマルウェアのイベントを意味します。 |すべて  <br/> |
+|RecordType  <br/> |レコードで示されている操作の種類。次の値によって、レコードの種類が示されます。<br/><br/> **1** - Exchange 管理者監査ログのレコードを意味します。 <br/>**2** - Exchange メールボックス監査ログの、単一のメールボックス アイテムに対して行われた操作に関するレコードを意味します。 <br/>**3** - この値も Exchange 管理者監査ログのレコードを意味します。ただし、このレコードの種類は、ソース メールボックス内の複数のアイテムに対して操作が行われたこと (複数のアイテムを削除済みアイテム フォルダーに移動する操作や、複数のアイテムを完全に削除する操作など) を意味します。<br/>**4** - SharePoint でのサイト管理者の操作 (管理者またはユーザーがサイトに対するアクセス許可を割り当てるなど) を意味します。 <br/>**6** - SharePoint でのファイルまたはフォルダーに関連する操作 (ユーザーの表示、ファイルの変更など) を意味します。 <br/>**8** - Azure Active Directory で行われた管理者の操作を意味します。 <br/>**9** - Azure Active Directory での OrgId ログオン イベントを意味します。このレコードの種類は非推奨となっています。<br/>**10** - データ センターで Microsoft 担当者が行ったセキュリティ コマンドレット イベントを意味します。 <br/>**11** - SharePoint でのデータ損失防止 (DLP) イベントを意味します。<br/> **12** - Sway のイベントを意味します。 <br/>**13** - 統合 DLP ポリシーを使用して構成されている場合、Exchange の DLP イベントを意味します。Exchange トランスポート ルールに基づく DLP イベントはサポートされません。<br>**14** - SharePoint の共有イベントを意味します。<br/> **15** - Azure Active Directory の Secure Token Service (STS) ログオン イベントを意味します。 <br/>**18** - セキュリティ/コンプライアンス センターのイベントを意味します。 <br/>**20** - Power BI のイベントを意味します。 <br/>**21**- Dynamics 365 のイベントを意味します。<br/>**22** - Yammer のイベントを意味します。 <br/>**23** - Skype for Business のイベントを意味します。 <br/>**24** - 電子情報開示イベントを意味します。このレコードの種類は、セキュリティ/コンプライアンス センターでコンテンツ検索を実行し電子情報開示ケースを管理することによって行われたアクティビティを意味します。詳細については、Office 365 監査ログ内の電子情報開示アクティビティの検索に関する記事を参照してください。<br/>**25、26、27** - Microsoft Teams のイベントを意味します。 <br/>**28** - Exchange Online Protection イベントと Office 365 Advanced Threat Protection イベントからのフィッシングとマルウェアのイベントを意味します。<br/> **30** - Microsoft Flow のイベントを意味します。<br/> **32** - Microsoft Stream のイベントを意味します。<br/> **35** - Microsoft Project のイベントを意味します。 <br/> **36** - Sharepoint リストのイベントを意味します。<br/> **40** - セキュリティ/コンプライアンス アラートのシグナルに起因するイベントを意味します。<br/> **41** - Office 365 Advanced Threat Protection でのブロック時の安全なリンクと上書きのブロック イベントを意味します。<br/>**44** - Workplace Analytics のイベントを意味します。 <br/>**45** -PowerApps アプリイベントを示します。 <br/> **47** - SharePoint、OneDrive、Microsoft Teams 内のファイルに対する、Office 365 Advanced Threat Protection からのフィッシングとマルウェアのイベントを意味します。 |すべて  <br/> |
 |ResultStatus  <br/> |(**Operation** プロパティで指定された) アクションが正常に終了したかどうかを示します。  <br/> Exchange 管理者アクティビティでは、値は **True** (成功) または **False** (失敗) のいずれかになります。  <br/> |すべて  <br/>|
 |SecurityComplianceCenterEventType  <br/> |アクティビティがセキュリティ/コンプライアンス センターのイベントであったことを示します。セキュリティ/コンプライアンス センターのすべてのアクティビティでは、このプロパティの値は **0** になります。<br/> |Office 365 セキュリティ/コンプライアンス センター  <br/> |
 |SharingType  <br/> |リソースが共有されたユーザーに割り当てられているアクセス許可の種類。このユーザーは、**UserSharedWith** プロパティによって識別されます。<br/> |SharePoint  <br/> |

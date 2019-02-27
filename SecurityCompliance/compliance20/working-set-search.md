@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f5b7bef5d9f20c6425e8d4636c94ed59f72504d3
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d4f8de5c1c0b4e9416959065b30394b2a086805d
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30212837"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295580"
 ---
 # <a name="query-the-data-in-a-working-set"></a>ワーキング セット内のデータのクエリ
 

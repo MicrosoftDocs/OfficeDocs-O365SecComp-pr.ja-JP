@@ -1,7 +1,7 @@
 ---
 title: ゼロアワー自動消去 - スパムやマルウェアからの保護
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/05/2018
 ms.audience: Admin
@@ -14,13 +14,15 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
+ms.collection:
+- M365-security-compliance
 description: ゼロ時間自動削除 (ZAP) は、ユーザーの受信トレイに既に配信されているスパムまたはマルウェアを含むメッセージを検出し、その悪意のあるコンテンツを無害にする電子メール保護機能です。これは、検出された悪意のあるコンテンツの種類によってどのような違いがありますか。
-ms.openlocfilehash: eac984289cf5e2785e8ff61e4a3dd3e0c0d99732
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 84d9c1dc12c3caf0630d25a3980cdaea1830a4c0
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213568"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295640"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>ゼロアワー自動消去 - スパムやマルウェアからの保護
 
@@ -92,6 +94,6 @@ Office 365 テナントまたはユーザーのセットに対する ZAP を無�
 
 [Office 365 の電子メールのスパム対策保護](anti-spam-protection.md)
   
-[検出漏れの問題を防止するために Office 365 スパム フィルターを使用して迷惑メールをブロックする](block-email-spam-to-prevent-false-negatives.md)
+[検出漏れの問題を防止するために Office 365 スパム フィルターを使用して迷惑メールをブロックする](reduce-spam-email.md)
   
 

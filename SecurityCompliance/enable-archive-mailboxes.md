@@ -9,18 +9,20 @@ f1_keywords:
 - ms.o365.cc.ArchivingHelp
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Office 365 セキュリティ&amp;コンプライアンスセンターを使用して、組織のメッセージ保持、電子情報開示、および保持要件をサポートするアーカイブメールボックスを有効にします。
-ms.openlocfilehash: 10e20d09c531d6758d8011030aea64a6c30cdf9b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 763097925ed0910fe9a66e5c556b8a2995df74e6
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217287"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296060"
 ---
 # <a name="enable-archive-mailboxes-in-the-office-365-security-amp-compliance-center"></a>Office 365 セキュリティ&amp;コンプライアンスセンターでアーカイブメールボックスを有効にする
   
@@ -29,7 +31,7 @@ Office 365 のアーカイブ (インプレースアーカイブとも呼ばれ�
 > [!TIP]
 > Office 365 では、自動拡張アーカイブ機能を使用して、無制限の数のアーカイブストレージを提供しています。自動拡張アーカイブが有効になっている場合に、ユーザーのアーカイブメールボックス内の最初の記憶域のクォータに達すると、Office 365 は自動的に追加の記憶域を追加します。これは、ユーザーがメールボックスの記憶域を使い切ることがなく、アーカイブメールボックスを最初に有効にして、組織の自動拡張アーカイブを有効にした後でも、すべてを管理する必要がないことを意味します。詳細については、「 [Office 365 での無制限アーカイブの概要](unlimited-archiving.md)」を参照してください。 
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 アーカイブメールボックスを有効または無効にするには、Exchange Online の Mail Recipients 役割を割り当てられている必要があります。既定では、この役割は Exchange 管理センターの [**アクセス許可**] ページの [受信者管理] および [組織の管理] 役割グループに割り当てられます。セキュリティ&amp; /コンプライアンスセンターに [**アーカイブ**] ページが表示されない場合は、必要なアクセス許可を割り当てるように管理者に依頼してください。 
   

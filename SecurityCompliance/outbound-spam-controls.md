@@ -1,7 +1,7 @@
 ---
 title: Office 365 で送信スパムを制御する
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.audience: Admin
 ms.topic: overview
@@ -11,13 +11,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
+ms.collection:
+- M365-security-compliance
 description: 組織がスパムとしてマークされている大量のバルクメールを送信すると、Office 365 での電子メールの送信がブロックされることがあります。このような状況についての詳細と、その理由については、この記事を参照してください。
-ms.openlocfilehash: 1098d22dedf9fd2a40b6ad8320c61ecd86f66593
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2cfcb7016b0c0d11117f6d78af2632229c70aa1d
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218687"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275927"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>Office 365 で送信スパムを制御する
 
@@ -56,7 +58,7 @@ b.**サードパーティのバルク emailer を使用して、大量通信を�
 
 メッセージング、モバイル、マルウェア対策行為グループ (maawg) は、メンバーシップ名簿を[ここ](http://www.maawg.org/about/roster)に公開します。複数のバルクメールプロバイダーがリストにあり、インターネット市民を担当することがわかっています。 
   
-## <a name="for-more-information"></a>関連情報
+## <a name="for-more-information"></a>詳細情報
 
 [送信者が送信スパムの送信をブロックされる場合の通知例](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Office 365 の ATP のフィッシング詐欺対策ポリシーを設定する
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
@@ -9,13 +9,15 @@ ms.date: 02/06/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
+ms.collection:
+- M365-security-compliance
 description: office 365 の一部としての包括的な保護を備えたフィッシング対策保護 (office 365 の高度な脅威保護と基本的な保護機能) Exchange Online protection では、悪意のある偽造ベースのフィッシング攻撃から組織を保護するのに役立ちます。その他のフィッシング攻撃。
-ms.openlocfilehash: da18fdb3592d4d0dbe3d62c11627a7057fec5ed6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4a647463dd37261cfa1f4c2fd2901ed8f12902b7
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213707"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276277"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Office 365 の ATP のフィッシング対策およびフィッシング対策ポリシーをセットアップする
 
@@ -40,13 +42,13 @@ ms.locfileid: "30213707"
 
 - ATP ポリシーを定義 (または編集) するには、適切な役割が割り当てられている必要があります。次の表では、いくつかの例について説明します。 <br>
 
-    |役割  |場所/割り当て方法  |
+    |役割  |参照先/割り当て方法  |
     |---------|---------|
-    |Office 365 グローバル管理者 |Office 365 の購入にサインアップするユーザーは、既定ではグローバル管理者です。(詳細については、「 [Office 365 管理者の役割につい](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)て」を参照してください)。         |
+    |Office 365 グローバル管理者 |Office 365 の購入へのサインアップをする場合、既定ではグローバル管理者になります。詳細については、「[Office 365 の管理者の役割について](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)」を参照してください。         |
     |セキュリティ管理者 |Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-    |Exchange Online 組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  powershell コマンドレット (「 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)」を参照) |
+    |Exchange Online 組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)」を参照してください) |
     
-    役割とアクセス許可の詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+    役割とアクセス許可の詳細については、「[Office 365 セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
 - 組織に対して複数のフィッシング対策ポリシーをセットアップする可能性があります。Office 365 は、セキュリティ&amp; /コンプライアンスセンターの [**フィッシング対策] ページ**と ATP の**フィッシング対策**ページに記載されている順序でこれらのポリシーを適用します。[ポリシーオプション](#learn-about-atp-anti-phishing-policy-options)を確認したら、少し時間をかけて必要なポリシーの数とそれぞれの優先度を決定します。 
     
@@ -58,7 +60,7 @@ ms.locfileid: "30213707"
 
 Office 365 の各組織には、すべてのユーザーに適用される既定のフィッシング対策ポリシーがあります。組織内の特定のユーザー、グループ、またはドメインに適用できる複数のカスタムのマルウェア対策ポリシーを作成できます。作成したカスタムポリシーは、既定のポリシーよりも優先されます。Office 365 セキュリティ&amp;コンプライアンスセンターで、フィッシング対策ポリシーを追加、編集、および削除します。
   
-1. に[https://protection.office.com](https://protection.office.com)移動して、職場または学校のアカウントでサインインします。 
+1. [https://protection.office.com](https://protection.office.com) に移動し、職場または学校のアカウントでサインインします。 
     
 2. Office 365 セキュリティ&amp; /コンプライアンスセンターの左側のナビゲーションウィンドウで、[**脅威の管理**] の下にある [**ポリシー**] を選択します。
     
@@ -126,7 +128,7 @@ Contoso 社のセキュリティ管理者は、これらの要件を満たすフ
 
 セキュリティ&amp; /コンプライアンスセンターを使用して作成したカスタムポリシーを削除することができます。組織の既定のポリシーを削除することはできません。セキュリティ&amp;コンプライアンスセンターを使用して、ATP ポリシーを確認または編集することをお勧めします。
   
-1. に[https://protection.office.com](https://protection.office.com)移動して、職場または学校のアカウントでサインインします。 
+1. [https://protection.office.com](https://protection.office.com) に移動し、職場または学校のアカウントでサインインします。 
     
 2. 左側のナビゲーションで、[**脅威の管理**] の下にある [**ポリシー**] を選択します。
     

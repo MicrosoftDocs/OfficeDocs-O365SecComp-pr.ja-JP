@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Exchange Online および Office 365 でスパムを防止するのに役立つスパム対策設定とフィルターについて説明します。Office 365 で迷惑メールを過剰に取得するスパムフィルターとスパム対策ポリシー設定をカスタマイズできます。
-ms.openlocfilehash: 2d8f433cabda4408da2e29b7bc6570e09e6989dd
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: f4d32bb0efae0a38fdc6789feef73bd5014eb75b
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223426"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296320"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Office 365 の電子メールのスパム対策保護
 
@@ -67,7 +67,7 @@ Office 365 でスパム、フィッシング、およびスプーフィングに
   
  **エンドユーザーによる管理の設定。** エンドユーザーが自分のスパム設定を管理する方法については、「[迷惑メールフィルターの概要」](https://go.microsoft.com/fwlink/?LinkId=270065) (Microsoft Outlook ユーザーの場合) または「[迷惑メールとフィッシング](https://go.microsoft.com/fwlink/?LinkId=270068)対策 (web 上の Outlook の場合)」を参照してください。EOP を使用してオンプレミスのメールボックスを保護している場合は、必ずディレクトリ同期を使用して、これらの設定がサービスに同期されるようにしてください。ディレクトリ同期のセットアップの詳細については、「 [EOP でメールユーザーを管理](https://technet.microsoft.com/library/dn636911%28v=exchg.150%29.aspx)する」の「ディレクトリ同期を使用してメールユーザーを管理する」を参照してください。
   
-## <a name="for-more-information"></a>関連情報
+## <a name="for-more-information"></a>詳細情報
 
 [ブログ: スパムとフィッシングが Office 365 によって取得されるのはなぜですか?](https://go.microsoft.com/fwlink/?LinkId=528179 )
   
@@ -75,7 +75,7 @@ Office 365 でスパム、フィッシング、およびスプーフィングに
   
 [セーフリストまたはその他の手法で誤検知の電子メールがスパムとしてマークされないようにする](prevent-email-from-being-marked-as-spam-0.md)
   
-[迷惑メールをブロックするために Office 365 スパムフィルターを設定する方法](block-email-spam-to-prevent-false-negatives.md)
+[迷惑メールをブロックするために Office 365 スパムフィルターを設定する方法](reduce-spam-email.md)
   
 [迷惑メールとバルクメールの違いは何ですか。](https://technet.microsoft.com/library/dn720441%28v=exchg.150%29.aspx)
   

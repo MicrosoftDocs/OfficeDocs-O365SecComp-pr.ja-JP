@@ -1,7 +1,7 @@
 ---
 title: Spam Confidence Level
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 10/2/2017
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
+ms.collection:
+- M365-security-compliance
 description: 電子メール メッセージがスパム フィルターを通過すると、その電子メール メッセージにはスパム スコアが割り当てられます。そのスコアは個別の Spam Confidence Level (SCL) 評価にマップされ、X-ヘッダーにスタンプされます。サービスは SCL 評価のスパム信頼度の解釈を基に、メッセージに対してアクションを実施します。次の表は、さまざまな SCL 評価がフィルターによって解釈される方法、および評価ごとに受信メッセージに対して実行される既定のアクションを示しています。
-ms.openlocfilehash: 4b8eea798bc46396e06da2c6ba0573c019d7a9b7
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 1822fa50f9815397513fddf7a2024a99277cbb28
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002906"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275647"
 ---
 # <a name="spam-confidence-levels"></a>Spam Confidence Level
 
@@ -32,7 +34,7 @@ ms.locfileid: "23002906"
 |7, 8, 9  <br/> |信頼度の高いスパム  <br/> |受信者の迷惑メール フォルダーにメッセージを配信します。  <br/> |
    
 > [!TIP]
-> サービスでは、2、3、4、7、および 8 の scl は設定されていません。5 または 6 の SCL レベルより特定の迷惑メールとみなされ、9 の SCL レベルのスパムである保証は、疑いのある迷惑メールと見なされます。スパムと精度の高いスパムの別のアクションは、Exchange 管理センターでコンテンツ フィルター ポリシーを使用して構成できます。詳細については、[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)を参照してください。[メッセージでスパム信頼レベル (SCL) を設定するのにはメールの流れの規則を使用する](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)で説明するようトランスポート ルールを使用して特定の条件に一致するメッセージの SCL レベルを設定することもできます。7、8、または 9 の SCL が設定するのにはトランスポート ルールを使用する場合、メッセージは精度の高い迷惑メールとして扱われます。 
+> SCL ランク2、3、4、7、および8は、サービスによって設定されません。scl レベルが5または6の場合は、スパムの疑いがあると見なされます。これは、特定のスパムと見なされる scl レベル9よりも短いスパムであると見なされます。Exchange 管理センターのコンテンツフィルターポリシーを使用して、スパムや信頼度の高いスパムに対するさまざまなアクションを構成できます。詳細については、「[スパムフィルターポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。「[メールフロールールを使用してメッセージにスパム信頼レベル (SCL) を設定する](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)」の説明に従って、トランスポートルールを使用して、特定の条件に一致するメッセージの SCL レベルを設定することもできます。トランスポートルールを使用して、7、8、または9の SCL を設定すると、メッセージは信頼度の高いスパムとして処理されます。 
   
 ||
 |:-----|

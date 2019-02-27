@@ -1,7 +1,7 @@
 ---
 title: Exchange Online Protection を使用して社内メールボックスを保護する
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/1/2017
 ms.audience: ITPro
@@ -14,13 +14,15 @@ search.appverid:
 - GPA150
 - MET150
 ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
+ms.collection:
+- M365-security-compliance
 description: 一部またはすべてのメールボックスを社内でホストすることを計画している場合でも、Exchange Online Protection (EOP) を使用してメールボックスを保護することができます。コネクタを構成するには、アカウントが Office 365 グローバル管理者、または Exchange 会社の管理者 (Organization Management 役割グループ) である必要があります。office 365 のアクセス許可と Exchange のアクセス許可との関係の詳細については、「office 2013 で運用されている管理者ロールの割り当て」を参照してください。すべての Exchange メールボックスがオンプレミスである場合は、次の手順に従って EOP サービスを設定します。
-ms.openlocfilehash: 01a364accd40bfd5889e7b0203cfaa7e156d0997
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 40fb5471a084cf245d9aef7f7b2b88effb5c4a83
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216633"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276037"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>Exchange Online Protection を使用して社内メールボックスを保護する
 

@@ -9,14 +9,15 @@ ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- M365-security-compliance
 description: '概要: Skype、OneDrive、SharePoint、および Exchange Online の暗号化について説明します。'
-ms.openlocfilehash: b08b9d00dc83ab59cf2f5b979fb9b6079990a8e8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 730bd15e6d6853b08c388895c9eaa3c7b68b4930
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216937"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276247"
 ---
 # <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Skype for business、OneDrive for business、SharePoint online、Exchange online の Office 365 暗号化
 

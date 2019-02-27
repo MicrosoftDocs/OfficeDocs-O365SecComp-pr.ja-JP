@@ -7,24 +7,26 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: Office 365 では、メールボックス監査ログを有効にして、メールボックスの所有者、代理人、および管理者によるメールボックスへのアクセスをログに記録できます。既定では、Office 365 のメールボックスの監査は有効になっていません。メールボックスのメールボックス監査ログを有効にした後、メールボックスに対して実行されたアクティビティの Office 365 監査ログを検索することができます。
-ms.openlocfilehash: bb110e95d27feb8ae82b62803d218a2b38528692
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a9bc84bad8532dd546d5ce3e2f149151967050d6
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214607"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295920"
 ---
 # <a name="enable-mailbox-auditing-in-office-365"></a>Office 365 でメールボックスの監査を有効にする
   
 Office 365 では、メールボックス監査ログを有効にして、メールボックスの所有者、代理人、および管理者によるメールボックスへのアクセスをログに記録できます。既定では、Office 365 のメールボックスの監査は有効になっていません。これは、Office 365 監査ログでメールボックスアクティビティを検索したときに、メールボックス監査イベントが結果に表示されないことを意味します。ただし、ユーザーメールボックスのメールボックス監査ログを有効にした後は、メールボックスアクティビティの監査ログを検索することができます。さらに、メールボックス監査ログが有効になっている場合、管理者、代理人、および所有者によって実行される操作の中には、既定で記録されるものがあります。その他の操作をログに記録して検索するには、「手順3」を参照してください。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
   
 - メールボックス監査ログを有効にするには、Exchange Online PowerShell を使用する必要があります。Office 365 セキュリティ&amp;コンプライアンスセンターまたは Exchange 管理センターを使用することはできません。
     

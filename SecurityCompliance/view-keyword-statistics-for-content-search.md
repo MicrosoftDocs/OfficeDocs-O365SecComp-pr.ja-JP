@@ -6,19 +6,20 @@ manager: laurawi
 ms.date: 1/30/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Office 365 セキュリティ/コンプライアンス センターで複数のコンテンツ検索の統計情報を表示および比較するには、検索の統計機能を使用します。また、検索クエリを作成または編集するときにキーワード リストを構成して、各キーワードやキーワード語句に一致するアイテムの数を表示する拡張統計を取得することもできます。
-ms.openlocfilehash: 0f0258f228e296e48def8de16aabc068901dffc7
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
-ms.translationtype: HT
+ms.openlocfilehash: 614f832ec737850986af334a390ffc0c4e88122d
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "27209808"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295730"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>コンテンツ検索結果のキーワード統計の表示
 

@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: aef32ad1e1b5d92cfbcd0de064f4c0934e89fc49
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 972c6c6e8cd6ebe3a4f078b02f238642509b752a
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214937"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295020"
 ---
 # <a name="download-export-jobs"></a>エクスポート ジョブのダウンロード
 

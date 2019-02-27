@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 933dfafb0f103f072966cb7ae455ba3a977ae03f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: c73f403bd13956904219c8db41afaa7f5e5fc088
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218187"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30294770"
 ---
 # <a name="work-with-custodians-in-advanced-ediscovery-preview"></a>Advanced eDiscovery で保管担当者を操作する (プレビュー)
 

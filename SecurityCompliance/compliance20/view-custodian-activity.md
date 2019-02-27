@@ -8,24 +8,24 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: eb32b465fa10f6236ffe00db255c89e33ce7412d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1f5f463bcda5c33df890547f7113a032ae935dbe
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213737"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295530"
 ---
 # <a name="view-custodian-audit-activity"></a>保管担当者監査アクティビティを表示する
 
 ユーザーが特定のドキュメントを表示したかどうか、またはメールボックスからアイテムを削除したかどうかを確認する必要がありますか。Advanced eDiscovery (プレビュー) は、セキュリティ & コンプライアンスセンターの既存の監査ログ検索ツールと統合されました。この組み込みの操作を使用すると、高度な電子情報開示 (プレビュー) 保管担当者管理ツールを使用して、ケース内で保管担当者のアクティビティに容易にアクセスして検索することで、調査を容易に行うことができます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 Office 365 監査ログを検索するには、Exchange Online で [表示のみの監査ログまたは監査ログの役割が割り当てられている必要があります。既定では、これらの役割は、Exchange 管理センターの [アクセス許可] ページで、コンプライアンス管理および組織の管理役割グループに割り当てられます。ユーザーが高度な電子情報開示 (プレビュー) 監査ログを最低限の特権レベルで検索できるようにするには、Exchange Online でカスタム役割グループを作成し、表示のみの監査ログまたは監査ログの役割を追加し、そのユーザーを新しい役割 gr のメンバーとして追加することができます。oup。詳細については、「Manage role groups in Exchange Online」を参照してください。
 

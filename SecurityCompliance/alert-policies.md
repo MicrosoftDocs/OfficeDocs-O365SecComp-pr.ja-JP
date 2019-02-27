@@ -4,21 +4,23 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Office 365 セキュリティ&amp;コンプライアンスセンターで通知ポリシーを作成し、潜在的な脅威、データ損失、およびアクセス許可の問題を監視します。これにより、ユーザーがアラートポリシーの条件に一致するアクティビティを実行するときに生成されるアラートを表示および管理できます。
-ms.openlocfilehash: 5c2d9dc7cf74198198036f062e8300f82fd69631
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6418315914a0a80421db382ae8e55ccf3fc310a2
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220667"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296560"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>Office 365 セキュリティ&amp;コンプライアンスセンターのアラートポリシー
 

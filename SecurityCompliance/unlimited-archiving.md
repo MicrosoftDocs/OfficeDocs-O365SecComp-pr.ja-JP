@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Office 365 の自動拡張アーカイブについて説明します。これにより、Exchange Online メールボックスには無制限のアーカイブストレージが提供されます。
-ms.openlocfilehash: fa1fc2a8b2de577232a50ecb1f89b53d52012096
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 4ed1260cdf348d0bd29d88952ab69d234f044c26
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223486"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296650"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Office 2010 での無制限アーカイブの概要 (機械翻訳) 365
 

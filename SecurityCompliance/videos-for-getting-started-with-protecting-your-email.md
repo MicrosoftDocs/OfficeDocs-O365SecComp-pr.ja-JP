@@ -1,7 +1,7 @@
 ---
 title: 電子メール保護の入門ビデオ
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
+ms.collection:
+- M365-security-compliance
 description: 次の一連の入門ビデオは、Exchange Online Protection (EOP) を使用してメールボックスを保護する方法を説明します。これらのビデオは、Exchange Server 2013 などの社内メールボックスを保護している EOP スタンドアロンのお客様と、クラウドでホストされたメールボックスが既定で EOP によって保護されている Exchange Online のお客様を対象とします。
-ms.openlocfilehash: 42d92b36cbfcf3261e391c8b3d74f44050f2881a
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: b590ac9bdd12c49a644977573048edac22de21f1
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002916"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275877"
 ---
 # <a name="videos-for-getting-started-with-protecting-your-email"></a>電子メール保護の入門ビデオ
 
@@ -53,13 +55,13 @@ ms.locfileid: "23002916"
 - マルウェア対策ポリシーを構成する
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/12517702-ab48-4df8-a7ff-8eb02aa31724?autoplay=false]
   
-    詳細については、[マルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)トピックを参照してください。 
+    詳細については、「[マルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)」のトピックを参照してください。 
     
 企業ポリシーや規制に基づいて設定した特定の条件によってメッセージをフィルタリングし、経路指定するには、トランスポート ルールの作成方法についてのビデオを参照してください。
   
 - EOP における Exchange トランスポート ルールの構成
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
   
-    詳細については、Exchange Online を使用する場合は、[トランスポート ルール](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)のトピックを参照してくださいまたは、スタンドアロンの EOP を使用する場合[のメール フロー ルール (トランスポート ルール) では、Exchange オンライン保護](eop/mail-flow-rules-transport-rules-0.md)のトピックを参照してください。 
+    詳細については、「 [exchange online Protection でのメールフロールール (トランスポートルール)](eop/mail-flow-rules-transport-rules-0.md) EOP を参照してください。 exchange online を使用している場合は、[トランスポートルール](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)」を参照してください。 
     
 

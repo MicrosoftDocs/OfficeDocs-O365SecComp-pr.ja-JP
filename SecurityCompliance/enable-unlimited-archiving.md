@@ -8,24 +8,26 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: '管理者向け: Office 365 で自動拡張アーカイブを有効にする方法について説明します。これにより、ユーザーに Exchange Online メールボックスのための無制限のストレージが提供されます。自動拡張アーカイブは、組織全体に対して、または特定のユーザーに対してのみ有効にすることができます。'
-ms.openlocfilehash: 39098ffc78d0379436cafb20e5a484ec0e7aa283
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 96e9fdd4b645df9e52cf9e11c3a43a80ef029ffa
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215397"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296030"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Office 365 で無制限のアーカイブを有効にする-管理者向けヘルプ
 
 Office 365 の Exchange Online 自動拡張アーカイブ機能を使用して、アーカイブメールボックスの無制限の記憶域スペースを有効にすることができます。自動拡張アーカイブが有効になっている場合は、記憶域の制限に近づいたときに、ユーザーのアーカイブメールボックスに追加の記憶域が自動的に追加されます。その結果、メールボックスの格納容量は無制限になります。自動拡張アーカイブは、組織内のすべてのユーザーに対して、または特定のユーザーに対してのみ有効にすることができます。自動拡張アーカイブの詳細については、「 [Office 365 の無制限アーカイブの概要](unlimited-archiving.md)」を参照してください。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - 組織全体または特定のユーザーに対して自動拡張アーカイブを有効にするには、Office 365 組織のグローバル管理者、または Exchange Online 組織の organization Management 役割グループのメンバーである必要があります。または、特定のユーザーに対して自動拡張アーカイブを有効にするために、メール受信者の役割が割り当てられている役割グループのメンバーである必要があります。
     

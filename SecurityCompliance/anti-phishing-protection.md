@@ -1,7 +1,7 @@
 ---
 title: Office 365 でのフィッシング対策保護
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 10/11/2018
 ms.audience: ITPro
@@ -14,12 +14,12 @@ ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
 ms.collection:
 - M365-security-compliance
 description: Office 365 は、既定では、フィッシング対策のような追加のサービスを通じて、フィッシング攻撃に対するさまざまな保護を提供しています。このトピックでは、Office 365 でのフィッシング対策のオプションと戦略について学習し、実装するために使用できるオンラインリソースについて説明します。
-ms.openlocfilehash: b930e4d41e96225e9b2685ebda02c74c5f8bb7d1
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 8248c90db6158cf6fc5f30871fc3bd7c5096d077
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222806"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276057"
 ---
 # <a name="anti-phishing-protection-in-office-365"></a>Office 365 でのフィッシング対策保護
 

@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f8c2ab0ea0f01f436bb1d365e3b7bd87affcef5f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3f273152d4242e8ce3f9990dc01927edf105f3dc
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220577"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296290"
 ---
 # <a name="export-limits-in-advanced-ediscovery-preview"></a>高度な電子情報開示のエクスポート制限 (プレビュー)
 

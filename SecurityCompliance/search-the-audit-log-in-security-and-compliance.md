@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Office 365 セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: 5fe4eac59f3e60e75a7452b0dcc51b6b8ca88a5b
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 6cab2a0495b4c4b1976a5c45b898603653568599
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223766"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296610"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Office 365 セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -54,6 +56,8 @@ ms.locfileid: "30223766"
 - Microsoft Stream 内のユーザーおよび管理者のアクティビティ
 
 - Microsoft Workplace Analytics でのアナリストと管理者のアクティビティ
+
+- PowerApps でのユーザーと管理者のアクティビティ
     
    
 ## <a name="before-you-begin"></a>始める前に
@@ -295,8 +299,8 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |[アプリケーション管理アクティビティ](#application-administration-activities) <br/> |[役割管理アクティビティ](#role-administration-activities) <br/> |[ディレクトリ管理アクティビティ](#directory-administration-activities) <br/> |
 |[電子情報開示アクティビティ](#ediscovery-activities) <br/> |[Power BI アクティビティ](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|
 [Microsoft Teams アクティビティ](#microsoft-teams-activities) <br/> |[Yammer アクティビティ](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> 
-|[Microsoft Stream](#microsoft-stream) <br/>|[Exchange 管理アクティビティ](#exchange-admin-audit-log)<br/>
-||||
+|[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|[Exchange 管理アクティビティ](#exchange-admin-audit-log)<br/>|
+|||
    
   
 ### <a name="file-and-page-activities"></a>ファイル アクティビティとページ アクティビティ
@@ -663,6 +667,9 @@ Workplace Analytics では、Office 365 組織において各グループが共�
 
 監査ログで Microsoft Flow 内のアクティビティを検索できます。これらのアクティビティには、フローの作成、編集、削除、フローのアクセス許可の変更が含まれます。Flow アクティビティの監査については、ブログ記事「[Microsoft Flow audit events now available in Office 365 Security & Compliance Center](https://flow.microsoft.com/blog/security-and-compliance-center)」を参照してください。
 
+### <a name="microsoft-powerapps"></a>Microsoft PowerApps
+
+PowerApps でアプリ関連のアクティビティについては、監査ログを検索できます。これらのアクティビティには、アプリの作成、起動、公開が含まれます。アプリへのアクセス許可の割り当ても監査されます。すべての powerapps アクティビティの詳細については、「 [powerapps のアクティビティログ](https://docs.microsoft.com/en-us/power-platform/admin/logging-powerapps#what-events-are-audited)」を参照してください。
 
 ### <a name="microsoft-stream"></a>Microsoft Stream
   

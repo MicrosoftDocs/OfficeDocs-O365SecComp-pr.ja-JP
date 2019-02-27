@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Office 365 セキュリティ&amp;コンプライアンスセンターの検索と削除機能を使用して、組織内のすべてのメールボックスから電子メールメッセージを検索し、削除します。
-ms.openlocfilehash: ecdacd4e484d6de267e029b8e3fcdafc9b1fce4d
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 15d67e42e4bdc63838f7ec1701d643391fa5c552
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223616"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296860"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Office 365 組織の電子メールメッセージを検索して削除する-管理者向けヘルプ
 
@@ -35,7 +37,7 @@ Office 365 のコンテンツ検索機能を使用して、組織内のすべて
 > [!CAUTION]
 > 検索と削除は、必要なアクセス許可が割り当てられているユーザーが組織内のメールボックスから電子メールメッセージを削除できるようにするための強力な機能です。 
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - コンテンツ検索を作成して実行するには、**電子情報開示マネージャー**の役割グループのメンバーであるか、または**コンプライアンス検索**管理役割が割り当てられている必要があります。メッセージを削除するには、**組織の管理**役割グループのメンバーであるか、または**検索と削除**の管理役割が割り当てられている必要があります。役割グループへのユーザーの追加の詳細については、「[ユーザーに Office 365 セキュリティ & コンプライアンスセンターへのアクセス権を付与する](grant-access-to-the-security-and-compliance-center.md)」を参照してください。
     

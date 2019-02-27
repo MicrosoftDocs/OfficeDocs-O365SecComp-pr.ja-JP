@@ -1,7 +1,7 @@
 ---
 title: Office 365 Message Encryption を管理する
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
@@ -10,13 +10,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
+ms.collection:
+- M365-security-compliance
 description: Office 365 Message Encryption (OME) の設定を終了すると、さまざまな方法で展開の構成をカスタマイズできます。たとえば、1回限りのパスコードを有効にするかどうかを構成したり、Outlook on the web に [保護] ボタンを表示したり、その他の設定を行ったりすることができます。この記事のタスクでは、その方法について説明します。
-ms.openlocfilehash: 8b044898efb1ef86790773cd3f8e8061523b0ec0
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 7b5297ae42d3efa071408540863c6ff7dbdee407
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213757"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275977"
 ---
 # <a name="manage-office-365-message-encryption"></a>Office 365 Message Encryption を管理する
 

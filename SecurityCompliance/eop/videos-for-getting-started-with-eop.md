@@ -1,7 +1,7 @@
 ---
 title: EOP の使用を開始するためのビデオ
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 3/13/2015
 ms.audience: ITPro
@@ -10,13 +10,15 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
+ms.collection:
+- M365-security-compliance
 description: 次の一連のビデオは、Exchange Online Protection (EOP) でホストされた電子メール フィルタリング サービスを設定および使用するうえで役立ちます。
-ms.openlocfilehash: 950d12ef9b4f8fdd8964a93b2c6d04e1799e51c4
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 524eb25a3564a844d5cdd147a1101af87ddfc393
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027644"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276007"
 ---
 # <a name="videos-for-getting-started-with-eop"></a>EOP の使用を開始するためのビデオ
 
@@ -54,14 +56,14 @@ EOP には、さらに、サービスによって検出されたマルウェア�
 - マルウェア対策ポリシーの構成
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/12517702-ab48-4df8-a7ff-8eb02aa31724?autoplay=false]
   
-    詳細については、[マルウェア対策ポリシーを構成する](../configure-anti-malware-policies.md)トピックを参照してください。 
+    詳細については、「[マルウェア対策ポリシーを構成する](../configure-anti-malware-policies.md)」のトピックを参照してください。 
     
 企業ポリシーや規制に基づいて設定した特定の条件によってメッセージをフィルタリングし、経路指定するには、トランスポート ルールの作成方法についてのビデオを参照してください。
   
 - EOP における Exchange トランスポート ルールの構成
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
   
-    詳細については、Exchange Online を使用する場合は、[トランスポート ルール](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)のトピックを参照してくださいまたは、スタンドアロンの EOP を使用する場合[のメール フロー ルール (トランスポート ルール) では、Exchange オンライン保護](mail-flow-rules-transport-rules-0.md)のトピックを参照してください。 
+    詳細については、「 [exchange online Protection でのメールフロールール (トランスポートルール)](mail-flow-rules-transport-rules-0.md) EOP を参照してください。 exchange online を使用している場合は、[トランスポートルール](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)」を参照してください。 
     
 コマンド ラインからスクリプトを実行してサービスを構成する場合は、まずリモート PowerShell のビデオをご覧ください。
   

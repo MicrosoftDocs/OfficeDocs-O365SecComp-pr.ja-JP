@@ -7,16 +7,16 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection: ''
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Microsoft pst コレクションツールを使用して、組織のネットワークを検索し、組織全体に散在している PST ファイルのインベントリを取得します。pst ファイルを検索したら、pst コレクションツールを使用して、それらを Office 365 にインポートできるように、1つの場所にコピーすることができます。
-ms.openlocfilehash: 42f192b1a69ee9893df7cc8353b48cd9baabeda7
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 87e13ec8a4c58f848ac2ff7a430a7532942ece74
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216647"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296960"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>pst コレクションツールを使用して、組織内の pst ファイルを検索、コピー、および削除する
 
@@ -43,7 +43,7 @@ pst コレクションツールを使用して、組織内の pst ファイル�
     
 5. **[手順 5: ネットワーク上の pst ファイルを削除](#step-5-delete-the-pst-files-found-on-your-network)** する-見つかって収集された pst ファイルを Office 365 の Exchange Online メールボックスにインポートした後、pst コレクションツールを使用して、pst ファイルを元の場所から削除することができます。が手順1で見つかりました。 
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - PST コレクションツールをローカルコンピューターにダウンロードするには、次の手順を実行します。 
     

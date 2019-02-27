@@ -1,7 +1,7 @@
 ---
 title: リストから除外のポータルを使って、Office 365 の受信拒否リストから自分自身を削除する
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 4/18/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
+ms.collection:
+- M365-security-compliance
 description: Office 365 にメール アドレスがある受信者にメールを送信しようとするときに、エラー メッセージが返される場合があります。エラー メッセージを受信しないようにするには、リストから除外のポータルを使って、Office 365 の受信拒否リストから自分自身を削除します。
-ms.openlocfilehash: 4964429f4d3aa1a585b1b543929f83c2cebfb9a4
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 9b4834ae474d781497043bd8800879c57f36d785
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003256"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276186"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>リストから除外のポータルを使って、Office 365 の受信拒否リストから自分自身を削除する
 
@@ -30,7 +32,7 @@ Microsoft は、受信拒否リストを使って、スパム、スプーフィ�
   
 メール メッセージに対して、次のようなエラーが含まれた応答を受信する場合、お客様は受信拒否リストに追加されています。
   
-550 5.7.606-649 のアクセスが拒否されると、[_IP アドレス_] の IP の送信を禁止されています。要求をこのリストからの削除を参照してくださいhttps://sender.office.com/し、指示に従います。詳細については、 [Office 365 の電子メールの配信不能レポート](http://go.microsoft.com/fwlink/?LinkID=526653)を参照してください。
+550 5.7.606-649 アクセス拒否、禁止された送信 ip [_ip address_]、このリストからの削除を要求するhttps://sender.office.com/には、にアクセスして、指示に従ってください。詳細については、「 [Office 365 で配信不能レポートを送信](http://go.microsoft.com/fwlink/?LinkID=526653)する」を参照してください。
   
 ここで、 _IP address_ は、メール サーバーを稼働しているコンピューターの IP アドレスです。 
   
@@ -40,9 +42,9 @@ Microsoft は、受信拒否リストを使って、スパム、スプーフィ�
     
 2. ページ上の指示に従います。エラー メッセージを受信したメール アドレス、エラー メッセージで特定されている IP アドレスを使っていることを確認してください。1 回のアクセスにつき、1 つのメール アドレス、1 つの IP アドレスのみ入力できます。
     
-3. [ **保存**] をクリックします。
+3. **[送信]** をクリックします。
     
-    ポータルでは、指定した電子メール アドレスに電子メールを送信します。電子メールは次のようになります: ![delist ポータルを通じて要求を送信するときに受信した電子メールのスクリーン ショット](media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    ポータルは、指定した電子メールアドレスに電子メールを送信します。電子メールは次のようになります![。リストから除外ポータルを通じて要求を送信したときに受信された電子メールのスクリーンショット](media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
   
 4. リストから除外のポータルから受信したメールの中にある確認のリンクをクリックします。
     

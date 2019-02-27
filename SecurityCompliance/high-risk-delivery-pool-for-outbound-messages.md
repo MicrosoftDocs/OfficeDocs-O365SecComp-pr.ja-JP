@@ -1,7 +1,7 @@
 ---
 title: 送信メッセージにおける危険度の高い配信プール
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 8/24/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
+ms.collection:
+- M365-security-compliance
 description: 顧客の電子メール システムがマルウェアまたは悪意のあるスパム攻撃によって侵害を受け、ホストされているフィルター サービスでスパムを送信していると、Office 365 データ センター サーバーの IP アドレスがサードパーティのブロック リストに表示されることがあります。
-ms.openlocfilehash: 69548488f70944a319a449bfc4ac1cb1bffd7b1c
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 604fdf2df11b6dff493444fe9dbcc6f95ced6a7d
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003136"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275547"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>送信メッセージにおける危険度の高い配信プール
 
@@ -48,6 +50,6 @@ DSN メッセージの急増の原因は、次のとおりです。
 
 [送信スパム ポリシーを構成する](configure-the-outbound-spam-policy.md)
   
-[スパム対策の保護に関する FAQ](anti-spam-protection-faq.md)
+[スパム対策保護に関する FAQ](anti-spam-protection-faq.md)
   
 

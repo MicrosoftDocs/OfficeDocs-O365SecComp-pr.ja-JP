@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: この記事では、Office 365 Security & コンプライアンスセンターで新しいデータ調査 (プレビュー) ツールを使用してデータ流出インシデントを管理する方法について説明します。
-ms.openlocfilehash: 93cbbed8763f0af31ab8d4e32348f01bfda17a2a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d130983bc87ae5cbb962f9271d8b4b505db0e6f1
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218127"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295810"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Microsoft 365 でデータ流出インシデントを管理する 
 
@@ -51,7 +51,7 @@ ms.locfileid: "30218127"
 5.  調査を終了または削除します。
 
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - Office 365 Security & コンプライアンスセンターのデータ調査 (プレビュー) ツールを使用して、調査を作成し、こぼれたデータを検索して、それを確認して分析します。その後、セキュリティ & コンプライアンスセンター PowerShell を使用して、Office 365 からこぼれたデータを完全に削除します。 
 

@@ -8,15 +8,16 @@ ms.audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
 description: Office 365 監査ログは、統合監査ログです。なぜ統合監査ログがあるのですか。組織が加入しているほとんどの Office 365 サービスからのイベントは、検索可能な単一の監査ログに記録されるためです。つまり、次のサービスでユーザーおよび管理者のアクティビティを検索できます。
-ms.openlocfilehash: ec67c63cff57f95bacabd120c466922870b595b4
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d964a1404dd022ba9b56e5d86766c5fc6eabf10a
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214087"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296520"
 ---
 # <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Office 365 で監査ログを検索してユーザーと管理者のアクティビティを調べる
 

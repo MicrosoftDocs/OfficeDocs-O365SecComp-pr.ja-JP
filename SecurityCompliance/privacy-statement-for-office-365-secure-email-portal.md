@@ -1,7 +1,7 @@
 ---
 title: Office 365 セキュリティで保護された電子メールポータルのプライバシーに関する声明
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 10/12/2018
 ms.audience: End User
@@ -11,13 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
+ms.collection:
+- M365-security-compliance
 description: '最終更新日: 2017 年5月'
-ms.openlocfilehash: bd49b496685b94ed4555e6d8b0ff82c0aff5a202
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 5e7927bacb6513f01a276ef6487346f319ffb704
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219157"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275957"
 ---
 # <a name="privacy-statement-for-office-365-secure-email-portal"></a>Office 365 セキュリティで保護された電子メールポータルのプライバシーに関する声明
 

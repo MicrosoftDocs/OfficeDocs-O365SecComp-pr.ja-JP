@@ -10,15 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: GDPR は、個人データに対して、特定の権限を (データの対象と呼ばれる) EU 市民に提供します。これらの権限には、そのファイルのコピーの取得、変更の要求、ファイルの処理の制限、削除、または電子形式での受信などが含まれます。個人データに対してアクションを実行するデータ主体による正式な要求は、データ主体要求または DSR と呼ばれます。Office 365 セキュリティ&amp;コンプライアンスセンターで dsr ケースを使用して、組織の dsr 調査を管理することができます。
-ms.openlocfilehash: 8338ca2eed4f5120571f642a1cbb4408ce36e2c3
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: fe702ab9050e76b6b8f00fbc8d2670505a030756
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213497"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296590"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-amp-compliance-center"></a>Office 365 セキュリティ&amp; /コンプライアンスセンターの DSR ケースツールを使用して GDPR データ主体要求を管理する
 

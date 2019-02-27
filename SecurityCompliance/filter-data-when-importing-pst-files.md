@@ -8,16 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: 'Office 365 インポートサービスの新しいインテリジェントインポート機能を使用して、実際にターゲットメールボックスにインポートされるアイテムをフィルター処理します。インテリジェントインポートを使用すると、どのデータをインポートするか、またどのデータを残しておくかを事前に決定できます。インテリジェントインポートでは、Office 365 にインポートしているデータについての洞察も提供されます。 '
-ms.openlocfilehash: 49399f11a71069059ffae2d03482ac7ffe03daf0
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6091f6cca75bffbb05bcd59f70cfae0dbdcb9040
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219817"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30297070"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>Office 365 に PST ファイルをインポートするときにデータをフィルター処理する
 
@@ -41,7 +43,7 @@ Office 365 インポートサービスの新しいインテリジェントイン
   
 ![Office 365 のインテリジェントなインポートプロセス](media/f2ec309b-11f5-48f2-939c-a6ff72152d14.png)
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - このトピックの手順では、ネットワークアップロードまたはドライブ出荷を使用して、Office 365 インポートサービスに PST インポートジョブを作成したことを前提としています。詳細な手順については、以下のいずれかのトピックを参照してください。
     

@@ -9,7 +9,9 @@ f1_keywords:
 - ms.o365.cc.CustomizeExportReport
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
@@ -17,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Office 365 セキュリティ&amp;コンプライアンスセンターでは、コンテンツ検索の実際の結果をエクスポートする代わりに、検索結果レポートをエクスポートするだけで済みます。レポートには、検索結果の概要と、エクスポートされる各アイテムの詳細情報を含むドキュメントが含まれます。
-ms.openlocfilehash: 12799474bfb099c521f72cd3902173d42b17d4dd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d98f70d4f38f524de8751aecb197d0f85ee7f088
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216237"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295980"
 ---
 # <a name="export-a-content-search-report"></a>コンテンツ検索のレポートをエクスポートする
 
@@ -30,7 +32,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンター (およ�
   
 レポートをエクスポートすると、コンテンツ検索と同じ名前のフォルダーにダウンロードされますが、そのレポートには [レポート]*のみ*が追加されます。たとえば、コンテンツ検索に*ContosoCase0815*という名前が付けられている場合、レポートは*ContosoCase0815_ReportsOnly*という名前のフォルダーにダウンロードされます。レポートに含まれるドキュメントの一覧については、「[レポートに含まれるもの](#whats-included-in-the-report)」を参照してください。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - コンテンツ検索レポートをエクスポートするには、Office 365 セキュリティ&amp;コンプライアンスセンターでコンプライアンス検索管理役割が割り当てられている必要があります。この役割は、組み込みの電子情報開示マネージャーと組織の管理役割グループに割り当てられます。既定では、組織の管理役割グループに割り当てられません。詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
     

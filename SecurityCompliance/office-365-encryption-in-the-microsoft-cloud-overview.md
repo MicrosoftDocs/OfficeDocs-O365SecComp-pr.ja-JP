@@ -9,14 +9,15 @@ ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- M365-security-compliance
 description: Microsoft クラウドでの暗号化の概要について説明します。
-ms.openlocfilehash: cdd072437a82e2a40f577a277720dd475b1f722d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 8d4b94908e9847062ff5f4612b8726b44a36a59f
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218597"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275947"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Microsoft Cloud における暗号化
 

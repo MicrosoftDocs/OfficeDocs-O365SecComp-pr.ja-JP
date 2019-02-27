@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 92ad9179d5d62fdf25c1ae78e9c367f509bf6ccf
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 916691e1f2470ef9e9e54d9dfe06c5277a92ba53
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214257"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296090"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery-preview"></a>高度な電子情報開示で通信を操作する (プレビュー)
 

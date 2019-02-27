@@ -7,6 +7,7 @@ ms.date: 6/4/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -14,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Office 365 セキュリティ&amp;コンプライアンスセンターのコンテンツ検索ツールを使用して、Exchange ハイブリッド展開でオンプレミスのユーザーのために microsoft teams のチャットデータ (1xn チャット) を検索してエクスポートします。
-ms.openlocfilehash: 5707f9ed814bf6d4e040db8ec61290507def258f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 148a5766342fcdd52e0505a59729cad3d2993908
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214387"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296700"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Office 365 でオンプレミスのユーザーのクラウドベースのメールボックスを検索する
 

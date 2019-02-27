@@ -1,7 +1,7 @@
 ---
 title: DMARC を使用して Office 365 でメールを検証する
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
@@ -11,13 +11,15 @@ search.appverid:
 - MET150
 ms.custom: TN2DMC
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
+ms.collection:
+- M365-security-compliance
 description: Office 365 組織から送信されたメッセージを検証するための、ドメインベースのメッセージ認証、レポート、および準拠 (DMARC) を構成する方法について説明します。
-ms.openlocfilehash: f96fbe147a14087ee86bca2b9fae04d281ccdbec
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 178eb9658f1cfe298d3b5600ecdc524d7bd66a72
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223726"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276181"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>DMARC を使用して Office 365 でメールを検証する
 
@@ -223,7 +225,7 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 すべて、またはほとんどの電子メールは、プライマリ MX であるため、最初に mail.contoso.com にルーティングされ、その後、EOP にルーティングされます。場合によっては、MX レコードとして EOP を一覧表示し、単にメールをルーティングするためにコネクタを接続するだけでもかまいません。EOP は、DMARC 検証を実行するための最初のエントリである必要はありません。すべてのオンプレミス/O365 サーバーが DMARC チェックを行うことができないため、検証を確実にするだけです。 DMARC は、DMARC TXT レコードを設定するときに、顧客のドメインに対して適用する資格がありますが、実際に実行するのは受信側のサーバーである必要があります。 受信側のサーバーとして EOP を設定した場合、EOP は DMARC 強制を行います。
   
-## <a name="for-more-information"></a>関連情報
+## <a name="for-more-information"></a>詳細情報
 <a name="sectionSection8"> </a>
 
 DMARC の詳細情報が必要ですか。以下のリソースが役に立ちます。

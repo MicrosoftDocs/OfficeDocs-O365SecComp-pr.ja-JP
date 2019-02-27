@@ -7,16 +7,17 @@ ms.date: 10/24/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: コンプライアンス管理者が、セキュリティ&amp; /コンプライアンスセンターでコンテンツ検索と電子情報開示のケースタスクを実行するときに記録されるイベントの Office 365 監査ログを検索する方法について説明します。
-ms.openlocfilehash: 1e364e1d82acb7ad72c4a6d3fb27421a9a89916c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f4778fd2aab48d58b3104dd2466875ba53e2c0a0
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220897"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296760"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Office 365 監査ログで電子情報開示アクティビティを検索する
 

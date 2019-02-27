@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0224e6bf750af209eefd47902f1f4a78200d1db1
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: bf48e605dc321da4b7a9d5343d18f90fbb179073
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215997"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296730"
 ---
 # <a name="error-remediation-when-processing-data"></a>データ処理中のエラー修復
 

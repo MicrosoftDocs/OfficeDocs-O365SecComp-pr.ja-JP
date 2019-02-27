@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Office 365 セキュリティ&amp;コンプライアンスセンターを使用して、組織内の電子情報開示ケースを作成して管理します。ケースにメンバーを割り当てたり、コンテンツの場所を保持状態にしたり、ケースに関連付けられているコンテンツ searchs 実行したり、検索結果をエクスポートしたりすることができます。また、高度な電子情報開示に関する詳細な分析のためにケースデータを準備することもできます。
-ms.openlocfilehash: 92ef00bbdd8de5b1ba6bdae40bce96720ac46089
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1265aa5f4d08f5bbbff4c52a50dd2fd8eacffd21
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214017"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296850"
 ---
 # <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>Office 365 セキュリティ&amp; /コンプライアンスセンターの電子情報開示ケース
 

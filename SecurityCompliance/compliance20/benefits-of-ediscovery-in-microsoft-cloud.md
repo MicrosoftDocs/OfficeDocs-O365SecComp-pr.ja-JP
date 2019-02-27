@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3344bd6e37a91608a29bcd59d1319fab4d84ebfc
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 5584f123ac9cf47542b3665d3c142b1b87c600dd
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215467"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295820"
 ---
 # <a name="ediscovery-in-the-microsoft-cloud"></a>Microsoft クラウドの電子情報開示
 

@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7d2746699a427fa3c7ad3afd7cf791c61cd55249
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: c7fa8c7229ebb6b5304b80e15fba604c139076cd
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213097"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296140"
 ---
 # <a name="create-a-legal-hold-notice"></a>法的情報保留通知を作成する
 

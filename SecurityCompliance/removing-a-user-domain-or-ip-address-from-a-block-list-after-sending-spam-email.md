@@ -1,7 +1,7 @@
 ---
 title: ユーザー、ドメイン、または IP アドレスをスパム電子メール送信後のブロック一覧から削除する
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/01/2018
 ms.audience: ITPro
@@ -14,13 +14,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
+ms.collection:
+- M365-security-compliance
 description: 'スパムとして分類されている Office 365 からメール メッセージをユーザーが送り続ける場合、メッセージを送信しないようブロックされます。 '
-ms.openlocfilehash: 3ffd8b65d6994699093237e9f9a0a3aaa802f5e2
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 870e5eabca9e799dfca1e99846a5bfe845f65df4
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223086"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275937"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>ユーザー、ドメイン、または IP アドレスをスパム電子メール送信後のブロック一覧から削除する
 
@@ -62,7 +64,7 @@ Exchange Online Protection では、スパムフィルター処理における�
 > [!NOTE]
 > office 365 の外部のユーザーが office 365 アカウントにメッセージを送信できない場合は、そのアカウントが外部の受信拒否リストに含まれている可能性があります。Office 365 の外部のユーザーは、[セルフサービス](https://docs.microsoft.com/en-us/office365/SecurityCompliance/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis)の区切りポータルを使用して自分自身を削除しようとすることができます。 
 
-## <a name="for-more-information"></a>関連情報
+## <a name="for-more-information"></a>詳細情報
 
 [侵害された電子メールアカウントへの対応](responding-to-a-compromised-email-account.md)
 

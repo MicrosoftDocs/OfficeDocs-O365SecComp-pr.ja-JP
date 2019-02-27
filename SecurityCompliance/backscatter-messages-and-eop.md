@@ -1,7 +1,7 @@
 ---
 title: バックスキャター メッセージと EOP
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -15,12 +15,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: backscatter メッセージは、通常、スパムの受信の結果としてメールサーバーによって送信される自動バウンスメッセージです。バックスキャター dnsbl は、バック散布メッセージを送信する IP アドレスのリストです。スパム送信者のリストではないため、バックスキャター dnsbl からサーバーを削除しようとしていません。
-ms.openlocfilehash: 075200ff85762056290690f40d6047ea25a1dbde
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 73f8631c50bcfb8a023b2b6007b7ccf48038e16e
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222776"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275297"
 ---
 # <a name="backscatter-messages-and-eop"></a>バックスキャター メッセージと EOP
 

@@ -7,18 +7,19 @@ ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'Office 365 のメールボックスの回復可能なアイテムフォルダーのサイズを大きくするには、アーカイブメールボックスを有効にして、自動拡張アーカイブをオンにします。 '
-ms.openlocfilehash: ebb052ba17ba8a84076e1e75a82713cc5cf437a1
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 701821074294441525315c3db77daeccd5700935
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218477"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296540"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>保持中のメールボックスの [回復可能なアイテム] のクォータを拡大する
 

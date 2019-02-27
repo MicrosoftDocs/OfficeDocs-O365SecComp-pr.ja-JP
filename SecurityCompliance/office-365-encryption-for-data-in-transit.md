@@ -9,14 +9,15 @@ ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- M365-security-compliance
 description: '概要: 転送中に Microsoft がデータを暗号化する方法を簡単に説明します。'
-ms.openlocfilehash: 987e923e242b47b07ad1ef65e5c7ce791c27d5bd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 596b884ac76c9b138d01958363c7921acf926345
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217507"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275847"
 ---
 # <a name="office-365-encryption-for-data-in-transit"></a>転送中のデータの Office 365 暗号化
 

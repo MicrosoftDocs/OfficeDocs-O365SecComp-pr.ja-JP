@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 98999d3d82efaace7673d70b0334cb0efb80fc08
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a2234d0a0e94e3fbb15f8fac8f6e49cc7b26cfb2
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215207"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295660"
 ---
 # <a name="search-statistics"></a>検索の統計
 
@@ -53,7 +53,7 @@ ms.locfileid: "30215207"
   
   - キーワードを指定せずにすべての contentin メールボックスを検索すると、実際のクエリは (size > = 0)、すべてのアイテムが返されるようになります。
   
-  - SharePoint Online と OneDrive for business のサイトを検索する場合、次の2つのコンポーネントが追加されます。
+  - SharePoint Online と OneDrive for Business サイトを検索すると、次の 2 つのコンポーネントが追加されます。
     
     - NOT IsExternalContent: 1-オンプレミスの SharePoint 組織からコンテンツを除外する
     

@@ -8,15 +8,16 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: office 365 セキュリティ&amp;コンプライアンスセンターおよび office 365 Advanced eDiscovery から検索結果をダウンロードするとき、データのスループットを向上させるように Windows レジストリを構成する方法について説明します。
-ms.openlocfilehash: bafe9eda98b411472098770e4178748eb84f8afd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a23525ada1ef5f36bc7df4fc738c712e22243bc0
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216247"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295430"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Office 365 から電子情報開示検索の結果をエクスポートするときにダウンロード速度を上げる
 

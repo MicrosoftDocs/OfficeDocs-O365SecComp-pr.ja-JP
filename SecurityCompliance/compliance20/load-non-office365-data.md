@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 50fcf679b5cd17a079765bfca5435088bef4c06e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: b177fc292c748f21907621196dc28d6b8fe17959
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217687"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296790"
 ---
 # <a name="load-non-office-365-data-into-a-working-set"></a>ワーキング セットに Office 365 以外のデータを読み込む
 
@@ -28,7 +28,7 @@ office 365 の高度な電子情報開示で分析する必要があるすべて
 >[!Note]
 >Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、Office 365 Enterprise E5 の試用版にサインアップしてください。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 この手順の説明に従って Office 365 以外のアップロード機能を使用するには、次の条件を持っている必要があります。
 
 - 高度なコンプライアンスアドオンまたは E5 サブスクリプションを備えた Office 365 E3。

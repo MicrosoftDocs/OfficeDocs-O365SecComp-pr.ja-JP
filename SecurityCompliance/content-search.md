@@ -7,19 +7,21 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Office 365 セキュリティ&amp;コンプライアンスセンターでコンテンツ検索を使用して、メールボックス、SharePoint Online サイト、OneDrive アカウント、Microsoft Teams、Office 365 グループ、Skype for business の会話のコンテンツを検索します。キーワード検索クエリと検索条件を使用して、検索結果を絞り込むことができます。その後、検索結果をプレビューしてエクスポートできます。コンテンツ検索は、GDPR データ主体要求に関連する可能性があるコンテンツを検索するための効果的なツールでもあります。
-ms.openlocfilehash: 37f5bf96c8176770f44d0681fa7046a904283f72
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: b7ecfc68c143225f097508e2cca0e87b7ce250d6
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215328"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296360"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 でのコンテンツ検索
 
@@ -123,7 +125,7 @@ office 365 セキュリティ&amp;コンプライアンスセンターのコン�
 
 コンテンツ検索を作成して実行すると、予想される検索結果に関する統計情報を表示できます。これには、検索結果の概要、検索クエリと一致するアイテムが含まれるコンテンツの場所の数、最も一致するアイテムを含むコンテンツの場所の名前などが含まれます。1つまたは複数のコンテンツ検索の統計を表示できます。これにより、複数の検索の結果をすばやく比較し、検索クエリの有効性を判断することができます。
   
-検索統計とキーワード統計を CSV ファイルにダウンロードすることもできます。これにより、Excel のフィルター処理および並べ替え機能を使用して結果を比較し、検索結果のレポートを準備することができます。
+また、検索の統計情報とキーワードの統計情報を CSV ファイルにダウンロードできます。これにより、Excel のフィルター機能や並べ替え機能を使用して結果を比較し、検索結果のレポートを準備できます。
   
 検索の統計情報を表示するには
   

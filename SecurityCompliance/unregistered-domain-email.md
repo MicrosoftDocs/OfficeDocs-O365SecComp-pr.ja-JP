@@ -1,7 +1,7 @@
 ---
 title: 未登録のドメインメール
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 10/17/2018
 ms.audience: Admin
@@ -11,13 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
+ms.collection:
+- M365-security-compliance
 description: 登録されていないドメインの電子メールを大量に送信する場合は、メールがブロックされる危険を実行します。詳細については、この記事をお読みください。
-ms.openlocfilehash: bef39780438a6d9669354bddaed391b2364badf8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 8120bd147da2a7aab41ae14c444d2fe57242199e
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220777"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276227"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>未登録のドメインメール: 知っておくべき情報
 
@@ -46,7 +48,7 @@ Office 365 では、テナントが Exchange Online Protection (EOP) を介し�
 
 4. 完了したら、Microsoft サポートに連絡して、登録されていないドメインから送信されないようにテナントのブロック解除を取得するように依頼する必要があります。 エラーコードを提供することは役に立ちますが、環境がセキュリティで保護されており、スパムが再送信されないことを証明する必要があります。サポートケースを開く方法については、[こちら](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online)を参照してください。
   
-## <a name="for-more-information"></a>関連情報
+## <a name="for-more-information"></a>詳細情報
 
 [Office 365 の電子メールのスパム対策保護](anti-spam-protection.md)
 

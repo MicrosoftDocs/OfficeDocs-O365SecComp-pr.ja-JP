@@ -9,14 +9,15 @@ ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- M365-security-compliance
 description: '概要: Azure の暗号化について説明します。'
-ms.openlocfilehash: 317fafe34c642d6c78cdf856e7391715770c1659
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4d6d898ecd711f09519ca53eaebb8c345f443488
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219837"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276257"
 ---
 # <a name="office-365-encryption-in-azure"></a>Azure での Office 365 暗号化
 

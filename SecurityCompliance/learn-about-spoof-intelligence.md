@@ -1,7 +1,7 @@
 ---
 title: スプーフィング インテリジェンスの詳細情報
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 10/22/2018
 ms.audience: Admin
@@ -12,13 +12,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
+ms.collection:
+- M365-security-compliance
 description: '[スパム対策設定] ページ&amp;のセキュリティコンプライアンスセンターのスプーフィングインテリジェンスを使用して、組織の一部であるドメインを偽装している、または外部ドメインのスプーフィングを行っているすべての送信者を確認します。スプーフィングインテリジェンスは、Office 365 Enterprise E5 の一部として、または Advanced Threat protection と Exchange Online Protection の一部として別途利用できます。'
-ms.openlocfilehash: b8c791dc47198fa0da08dec1de6fdab8ebfbdb32
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: fe963371326628e44593cc3f586c744de91e5e4d
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214833"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276167"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>スプーフィング インテリジェンスの詳細情報
 

@@ -1,7 +1,7 @@
 ---
 title: 送信者が送信スパムの送信をブロックされる場合の通知例
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/2/2017
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c33fd406-a4c8-4ac8-ad85-123996c5cded
+ms.collection:
+- M365-security-compliance
 description: 送信スパムを送信しようとしたために送信者がサービスからブロックされる場合、「送信スパム ポリシーを構成する」で指定したドメイン管理者は、次のような通知の電子メールを受信します。
-ms.openlocfilehash: b9fcdf9c2f44a4446a678ca4b22a0a12b24b6fd4
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 94af965505f7541600a6cd7937ae881226a2ac79
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003246"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275477"
 ---
 # <a name="sample-notification-when-a-sender-is-blocked-sending-outbound-spam"></a>送信者が送信スパムの送信をブロックされる場合の通知例
 
@@ -61,6 +63,6 @@ Exchange Online Protection
 \*\*注意: この電子メールは監視されていないアドレスから送信されているため、このメールには返信しないでください\*\*
   
 > [!TIP]
-> [EOP のヘルプとサポート](eop/help-and-support-for-eop.md)に記載されているオプションを使用してのサポートに連絡することもできます。 
+> 「 [Help and support for EOP](eop/help-and-support-for-eop.md)」に記載されているオプションを使用してサポートに連絡することもできます。 
   
 
