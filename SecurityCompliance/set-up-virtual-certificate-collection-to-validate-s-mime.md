@@ -1,9 +1,9 @@
 ---
-title: S/MIME を検証するための仮想証明書コレクションをセットアップする
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 12/9/2016
+title: S/MIME を検証するために Exchange Online で仮想証明書コレクションをセットアップする
+ms.author: chrisda
+author: chrisda
+manager: serdars
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,37 +12,42 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
-description: s テナント管理者は、s/MIME 証明書の検証に使用する仮想証明書コレクションを構成する必要があります。
-ms.openlocfilehash: 0e8226ca35e872cd8c7da16ba353bf8b99a6954d
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+description: 管理者は、Exchange Online で S/MIME 証明書の検証に使用する仮想証明書コレクションを作成する方法について説明します。
+ms.openlocfilehash: 2aa6e529f5ca374af6fe6d80a403058a8b6e468a
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30091059"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296950"
 ---
-# <a name="set-up-virtual-certificate-collection-to-validate-smime"></a><span data-ttu-id="b04c0-103">S/MIME を検証するための仮想証明書コレクションをセットアップする</span><span class="sxs-lookup"><span data-stu-id="b04c0-103">Set up virtual certificate collection to validate S/MIME</span></span>
+# <a name="set-up-virtual-certificate-collection-in-exchange-online-to-validate-smime"></a><span data-ttu-id="62306-103">S/MIME を検証するために Exchange Online で仮想証明書コレクションをセットアップする</span><span class="sxs-lookup"><span data-stu-id="62306-103">Set up virtual certificate collection in Exchange Online to validate S/MIME</span></span>
 
-<span data-ttu-id="b04c0-p101">テナント管理者は、S/MIME 証明書の検証に使用する仮想証明書コレクションを構成する必要があります。この仮想証明書コレクションは、SST ファイル名拡張子を持つ証明書ストア ファイルの種類としてセットアップされます。SST ファイルには、S/MIME 証明書の検証時に使用されるすべてのルート証明書と中間証明書が含まれます。</span><span class="sxs-lookup"><span data-stu-id="b04c0-p101">As a tenant administrator you will need to configure a virtual certificate collection that will be used to validate S/MIME certificates. This virtual certificate collection is set up as a certificate store file type with an SST filename extension. The SST file contains all the root and intermediate certificates that are used when validating an S/MIME certificate.</span></span>
-  
-## <a name="create-and-save-an-sst"></a><span data-ttu-id="b04c0-107">SST を作成して保存する</span><span class="sxs-lookup"><span data-stu-id="b04c0-107">Create and save an SST</span></span>
-<span data-ttu-id="b04c0-108"><a name="sectionSection0"> </a></span><span class="sxs-lookup"><span data-stu-id="b04c0-108"></span></span>
+<span data-ttu-id="62306-p101">管理者は、S/MIME 証明書の検証に使用する Exchange Online の仮想証明書コレクションを構成する必要があります。この仮想証明書コレクションは、SST ファイル拡張子を持つ証明書ストアとして設定されます。SST ファイルには、S/MIME 証明書の検証時に使用されるすべてのルート証明書と中間証明書が含まれています。</span><span class="sxs-lookup"><span data-stu-id="62306-p101">As an admin, you will need to configure a virtual certificate collection in Exchange Online that will be used to validate S/MIME certificates. This virtual certificate collection is set up as a certificate store with an SST filename extension. The SST file contains all the root and intermediate certificates that are used when validating an S/MIME certificate.</span></span>
 
-<span data-ttu-id="b04c0-p102">この手順を実行するには、シェルを使用する必要があります。 オンプレミスの Exchange 組織で Exchange 管理シェル を開く方法については、「 **Open the Shell**」を参照してください。 Windows PowerShell を使って Exchange Online に接続する方法については、「[Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=396554)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b04c0-p102">You can only use the Shell to perform this procedure. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Shell**. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).</span></span>
-  
-<span data-ttu-id="b04c0-p103">管理者は、 `Export-Certificate` コマンドレットを使用して信頼できるコンピューターから証明書をエクスポートし、その種類を SST に設定することによって、この SST ファイルを作成できます。  `Export-Certificate` コマンドレットの詳細については、「 [Export-Certificate](https://docs.microsoft.com/en-us/powershell/module/pkiclient/export-certificate?view=win10-ps)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b04c0-p103">As an administrator, you can create this SST file by exporting the certificates from a trusted machine using the  `Export-Certificate` cmdlet and specifying the type as SST. For more information the  `Export-Certificate` cmdlet, see the [Export-Certificate](https://docs.microsoft.com/en-us/powershell/module/pkiclient/export-certificate?view=win10-ps) reference topic.</span></span> 
-  
-<span data-ttu-id="b04c0-p104">SST ファイルが生成されたら、 `Set-Smimeconfig` コマンドレットと  _-SMIMECertificateIssuingCA_ パラメーターを使用して、そのファイルを仮想証明書ストアに保存します。例:  `Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content filename.sst -Encoding Byte)`</span><span class="sxs-lookup"><span data-stu-id="b04c0-p104">Once the SST file is generated, use the  `Set-Smimeconfig` cmdlet to save it in the virtual certificate store by using the  _-SMIMECertificateIssuingCA_ parameter. For example:  `Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content filename.sst -Encoding Byte)`</span></span>
-  
-## <a name="ensuring-a-certificate-is-valid"></a><span data-ttu-id="b04c0-116">証明書が有効なことを確認する</span><span class="sxs-lookup"><span data-stu-id="b04c0-116">Ensuring a certificate is valid</span></span>
-<span data-ttu-id="b04c0-117"><a name="sectionSection1"> </a></span><span class="sxs-lookup"><span data-stu-id="b04c0-117"></span></span>
+## <a name="create-and-save-an-sst"></a><span data-ttu-id="62306-107">SST を作成して保存する</span><span class="sxs-lookup"><span data-stu-id="62306-107">Create and save an SST</span></span>
 
-<span data-ttu-id="b04c0-p105">Exchange 2013 SP1 は、まず、SST ファイルをチェックして、証明書を検証します。検証が失敗した場合は、ローカル コンピューターの証明書ストアを調査して、証明書を検証します。この動作は、Exchange 2013 SP1 で変更されたもので、以前のバージョンの Exchange とは異なります。Exchange Online では、SST のみが検証に使用されます。</span><span class="sxs-lookup"><span data-stu-id="b04c0-p105">Exchange 2013 SP1 first checks for the SST file and validates the certificate. If the validation fails, it will look at the local machine certificate store to validate the certificate. This behavior is new for Exchange 2013 SP1 and different from prior versions of Exchange. In Exchange Online only the SST will be used for validation.</span></span>
-  
-## <a name="more-information"></a><span data-ttu-id="b04c0-122">詳細情報</span><span class="sxs-lookup"><span data-stu-id="b04c0-122">More Information</span></span>
-<span data-ttu-id="b04c0-123"><a name="sectionSection2"> </a></span><span class="sxs-lookup"><span data-stu-id="b04c0-123"></span></span>
+<span data-ttu-id="62306-p102">この SST 証明書ストアファイルは、Windows PowerShell で**証明書のエクスポート**コマンドレットを使用して信頼できるコンピューターから証明書をエクスポートし、 _Type_の値を SST として指定することによって作成できます。手順については、「 [Export-Certificate](https://docs.microsoft.com/powershell/module/pkiclient/export-certificate)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="62306-p102">You can create this SST certificate store file by exporting the certificates from a trusted machine using the **Export-Certificate** cmdlet in Windows PowerShell and specifying the _Type_ value as SST. For instructions, see [Export-Certificate](https://docs.microsoft.com/powershell/module/pkiclient/export-certificate).</span></span>
 
-[<span data-ttu-id="b04c0-124">S/MIME によるメッセージの署名と暗号化</span><span class="sxs-lookup"><span data-stu-id="b04c0-124">S/MIME for message signing and encryption</span></span>](s-mime-for-message-signing-and-encryption.md)
-  
-[<span data-ttu-id="b04c0-125">Get-smimeconfig</span><span class="sxs-lookup"><span data-stu-id="b04c0-125">Get-SmimeConfig</span></span>](http://technet.microsoft.com/library/4b29fa89-0840-4fe9-8885-019fcef2e02b.aspx)
-  
+<span data-ttu-id="62306-p103">SST 証明書ストアファイルを取得したら、exchange online PowerShell で次の構文を使用して、exchange online 仮想証明書ストアに SST ファイルの内容を保存します。exchange online powershell に接続するには、「 [exchange online powershell への接続](https://go.microsoft.com/fwlink/p/?linkid=396554)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="62306-p103">Once you have the SST certificate store file, use the following syntax in Exchange Online PowerShell to save the SST file contents in the Exchange Online virtual certificate store. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).</span></span>
 
+```
+Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content <FileNameAndPath>.sst -Encoding Byte)
+```
+
+<span data-ttu-id="62306-112">この例では、SST ファイル C:\My Documents\Exported 証明書ストア SST をインポートします。</span><span class="sxs-lookup"><span data-stu-id="62306-112">This example imports the SST file C:\My Documents\Exported Certificate Store.sst.</span></span>
+
+```
+Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content "C:\My Documents\Exported Certificate Store.sst" -Encoding Byte)
+```
+
+<span data-ttu-id="62306-113">構文およびパラメーターの詳細については、「 [Set-smimeconfig](https://docs.microsoft.com/en-us/powershell/module/exchange/encryption-and-certificates/set-smimeconfig)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="62306-113">For detailed syntax and parameter information, see [Set-SmimeConfig](https://docs.microsoft.com/en-us/powershell/module/exchange/encryption-and-certificates/set-smimeconfig).</span></span>
+
+## <a name="ensuring-a-certificate-is-valid"></a><span data-ttu-id="62306-114">証明書が有効なことを確認する</span><span class="sxs-lookup"><span data-stu-id="62306-114">Ensuring a certificate is valid</span></span>
+
+<span data-ttu-id="62306-115">Exchange Online では、証明書の検証に SST のみが使用されます。</span><span class="sxs-lookup"><span data-stu-id="62306-115">In Exchange Online, only the SST is used for certificate validation.</span></span>
+
+## <a name="more-information"></a><span data-ttu-id="62306-116">詳細情報</span><span class="sxs-lookup"><span data-stu-id="62306-116">More Information</span></span>
+
+[<span data-ttu-id="62306-117">S/MIME によるメッセージの署名と暗号化</span><span class="sxs-lookup"><span data-stu-id="62306-117">S/MIME for message signing and encryption</span></span>](s-mime-for-message-signing-and-encryption.md)
+
+[<span data-ttu-id="62306-118">Get-smimeconfig</span><span class="sxs-lookup"><span data-stu-id="62306-118">Get-SmimeConfig</span></span>](http://technet.microsoft.com/library/4b29fa89-0840-4fe9-8885-019fcef2e02b.aspx)

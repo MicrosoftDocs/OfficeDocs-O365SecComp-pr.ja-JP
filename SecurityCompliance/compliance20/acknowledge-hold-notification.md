@@ -8,19 +8,19 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3722d9c58e701455c02c07388036141cd8d9ddd5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: c0350e43dbd08c949cd9c1486cb8502581273d86
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213297"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295701"
 ---
-# <a name="acknowledge-a-hold-notification"></a><span data-ttu-id="b6640-102">保留通知を確認する</span><span class="sxs-lookup"><span data-stu-id="b6640-102">Acknowledge a hold notification</span></span> 
+# <a name="acknowledge-a-hold-notification"></a><span data-ttu-id="9de74-102">保留通知を確認する</span><span class="sxs-lookup"><span data-stu-id="9de74-102">Acknowledge a hold notification</span></span> 
 
-<span data-ttu-id="b6640-103">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="b6640-103">Content coming soon.</span></span>
+<span data-ttu-id="9de74-103">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="9de74-103">Content coming soon.</span></span>
