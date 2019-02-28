@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 監督レビューポリシーを設定して、レビューのために従業員のコミュニケーションをキャプチャします。
-ms.openlocfilehash: af317194fcf551acde8c53cdf6aa38bfb040dc84
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: bb84520fed1eb5015d46c2c35931f786d29855e7
+ms.sourcegitcommit: 13c601ea11ce6a3c71036fdafda059061c6998d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216737"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30313173"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>組織用に監督ポリシーを構成する
 
@@ -53,9 +53,9 @@ Office 365 組織の監督をセットアップして使用するには、次の
 
     監督ポリシーをテストして、必要に応じて機能していることを確認してください。これは、コンプライアンス戦略が標準を満たしていることを確認するための重要な部分です。
 
-- **手順 6-(省略可能)**[Office 365 監督ダッシュボードまたは web 上の outlook (以前の outlook web App) を使用しないで、監視された通信を確認するには、outlook アドインをセットアップ](configure-supervision-policies.md#UseOutlook)します。
+- **手順 6-(省略可能)**[Office 365 監督ダッシュボードまたは web 上の outlook (以前の outlook web App) を使用しないで、監視された通信を確認するには、outlook を構成](configure-supervision-policies.md#UseOutlook)します。
 
-    outlook 用の監督アドインにより、レビューアーが outlook クライアント内の監督機能にアクセスできるようになり、各アイテムを評価および分類できるようになります。
+    outlook を構成して、レビューアーが outlook クライアント内の監督機能にアクセスできるようにして、各アイテムを評価および分類できるようにすることができます。
 
 <a name="exampledist"> </a>
 
@@ -189,13 +189,13 @@ Contoso Financial International では、米国のブローカー間の通信の
 
 <a name="UseOutlook"> </a>
 
-## <a name="step-6---set-up-outlook-add-in-for-reviewers-optional"></a>手順 6-レビュー担当者用の Outlook アドインをセットアップする (オプション)
+## <a name="step-6---configure-outlook-for-reviewers-optional"></a>手順 6-レビュー担当者用に Outlook を構成する (オプション)
 
-Office 365 または web 上の outlook の監督ダッシュボードを使用して outlook を使用して、outlook クライアントに対して監督用アドインをインストールする必要があります。
+Office 365 で監督ダッシュボードを使用しないで outlook を使用して通信を確認するには、outlook クライアントを構成する必要があります。
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>手順 1: 監督メールボックスのアドレスをコピーする
 
-Outlook デスクトップ用のアドインをインストールするには、監督ポリシーのセットアップの一部として作成された監督メールボックスのアドレスが必要です。
+outlook デスクトップまたは web 用の outlook のレビューを構成するには、監督ポリシーのセットアップの一部として作成された監督メールボックスのアドレスが必要です。
   
 > [!NOTE]
 > 他のユーザーがポリシーを作成した場合は、そのポリシーからこのアドレスを取得してアドインをインストールする必要があります。
@@ -210,7 +210,7 @@ Outlook デスクトップ用のアドインをインストールするには、
 
 4. [ポリシーの詳細] ポップアップの [**監督メールボックス**] で、アドレスをコピーします。<br/>![強調表示されている監督ポリシーの詳細ポップアップの [監督メールボックス] セクション](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)
   
-### <a name="step-2-configure-the-supervision-mailbox-for-outlook-desktop-access"></a>手順 2: Outlook デスクトップアクセス用に監督メールボックスを構成する
+### <a name="step-2-configure-the-supervision-mailbox-for-outlook-access"></a>手順 2: Outlook アクセス用に監督メールボックスを構成する
 
 次に、レビューアーは、Outlook を監督メールボックスに接続できるように、Exchange Online の PowerShell コマンドをいくつか実行する必要があります。
   
