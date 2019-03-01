@@ -1,39 +1,40 @@
 ---
 title: Office 365 で迷惑メールを減らす方法
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/7/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 07824c51-2c45-4005-8596-03c0d7c4ff2a
 description: Office 365 でスパム メールや迷惑メールを減らすための最も一般的な方法について説明します。
-ms.openlocfilehash: fc7181333b9914673c9919d7132af99fec294773
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 0cc07d543618b154570231dcf1d45b39cfe20fec
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219927"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295510"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Office 365 で迷惑メールを減らす方法
 
  **Office 365 で大量のスパムを受信している方は、次のようにしてください。**
   
-Office 365 での迷惑メールに関する多くの問題は、[電子メール メッセージ ヘッダーの表示](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)によって解決し、何が原因か特定することができます。X-Forefront-Antispam-Report という名前のヘッダーを検索する必要があります。
+フィルターの改善のため、[メッセージ報告アドインを使用して](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)検出漏れメッセージを報告することを強くお勧めします。さらに、メッセージを*添付ファイルとして* junk@office365.microsoft.com または phish@office365.microsoft.com (フィッシングの場合) 宛に転送することもできます。
 
-  SFV:NSPM 文字列が含まれている場合は、Exchange Online Protection (EOP) でメッセージをスキャンした際に迷惑メールではないと判断されたことを意味します。これに同意できない場合は、いわゆる検出漏れであるため、[迷惑メール報告アドインを使用する](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)ことを強くお勧めします。弊社のフィルターを改善するのに役立ちます。
+>[警告] 迷惑メールと思われるメッセージが迷惑メール フォルダーにある場合、問題にはなりません。メールボックス内に一切表示しないようにするには、スパム対策ポリシーを変更して、メッセージを検疫する必要があります。メッセージ検疫の詳細については「[Office 365 でメール メッセージを検疫する](quarantine-email-messages.md)」を参照してください。
 
-  この値がヘッダーに表示されない場合、メールが迷惑メールのスキャンを通過しなかった、または構成上の問題が原因でメッセージが感知されなかった可能性があります。この場合は、以下の情報を参照してください。 
-  
-[迷惑メール対策メッセージ ヘッダー](https://technet.microsoft.com/library/dn205071%28v=exchg.150%29.aspx)に関する詳しい説明があります。
+## <a name="fixing-allowed-spam"></a>許可されている迷惑メールを解決する
 
-## <a name="solutions-to-common-causes-of-getting-too-much-spam"></a>大量のスパムの一般的な原因に対する解決策
+多くの場合、構成が正しくないために迷惑メールがお客様の受信トレイに入ってしまっているようです。最も一般的なのは、フィルターをバイパスするようにトランスポート ルールでドメインを構成すること、または許可/安全送信者リストにドメインを一覧表示することです。この方法では、本来検出されるはずのこれらのメッセージが迷惑メール フィルターをスキップしてしまうため、正しくありません。  
+
+## <a name="solutions-to-other-common-causes-of-getting-too-much-spam"></a>大量の迷惑メールを受け取る他の一般的な原因の解決方法
 
 大量のスパムを受信しないようにするには、Exchange Online Protection (EOP) で管理者がいくつかのタスクを実行する必要があります。Office 365 テナントの管理者でなく、大量の迷惑メールを受け取っているユーザーは、これらのタスクを管理者と一緒に行うこともできます。そうしない場合は、ユーザーのセクションにスキップしてください。
   
@@ -45,13 +46,11 @@ Office 365 での迷惑メールに関する多くの問題は、[電子メー�
     
     出力を表示するときは、Enable プロパティを True に設定する必要があります。False に設定されている場合は、Set-MailboxJunkEmailConfiguration を実行して True に変更できます。
     
-- **メール フロー ルールとセーフ リストを確認する**: メッセージ ヘッダーに、スパムとしてマークされているはずのメッセージがないか確認します。X-Forefront-Antispam-Report ヘッダーで SCL プロパティを探します。SCL 値が -1 の場合、これはメッセージがセーフ リストに載り、EOP のスパム対策フィルターをバイパスしたことを示します。メール フロー ルール、許可リスト、受信者の許可送信者リストを調査します。[Office 365 for Business の管理者としてメール配信の問題を探索および修正する](https://support.office.com/article/e7758b99-1896-41db-bf39-51e2dba21de6)ことは、メッセージが -1 の SCL を受信した理由についての詳細情報を提供するのにも役立ちます。 
-    
-- **オンプレミス Exchange Server でメール フロー ルールを作成する**: Exchange Online Protection を使用していても、メールボックスがオンプレミス Exchange Server にある場合は、Exchange Server でいくつかのメール フロー ルールを作成する必要があります。「[EOP 専用の命令](https://technet.microsoft.com/library/ms.exch.eac.EditAntispamPolicy_SpamAction%28EXCHG.150%29.aspx?v=15.20.548.14&amp;l=1&amp;s=BPOS_S_E15_0)」を参照してください。
+- **オンプレミス Exchange Server でメール フロー ルールを作成する**: Exchange Online Protection を使用していても、メールボックスがオンプレミス Exchange Server にある場合は、Exchange Server でいくつかのメール フロー ルールを作成する必要があります。「[EOP 専用の命令](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj900470(v=exchg.150))」を参照してください。
     
 - **バルク メールをスパムとしてマークする**: バルク メールとは、ユーザーはサインアップした可能性があるとしても望ましくないと思われるメールのことです。メッセージ ヘッダーで、X-Microsoft-Antispam ヘッダーの中の BCL (Bulk Confidence Level) プロパティを見つけます。迷惑メール フィルターに設定されたしきい値よりも BCL 値の方が小さければ、これらのタイプのバルク メッセージを迷惑メールとしてマークするようにしきい値を調整することが必要になる場合があります。[バルク メールの処理](https://docs.microsoft.com/ja-JP/office365/SecurityCompliance/bulk-complaint-level-values)に関する許容度とユーザー設定はユーザーによって異なります。ユーザー設定ごとに異なるポリシーやルールを作成できます。 
     
-- **すぐに送信者をブロックする**: すぐに送信者をブロックする必要がある場合は、メール アドレス、ドメイン、または IP アドレスでブロックすることができます。「[検出漏れの問題を防止するために Office 365 のスパム フィルターを使用して迷惑メールをブロックする](block-email-spam-to-prevent-false-negatives.md)」を参照してください。エンド ユーザー許可リスト内のエントリは、管理者によるブロック設定をオーバーライドできます。
+- **すぐに送信者をブロックする**: すぐに送信者をブロックする必要がある場合は、メール アドレス、ドメイン、または IP アドレスでブロックすることができます。「[検出漏れの問題を防止するために Office 365 のスパム フィルターを使用して迷惑メールをブロックする](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-transport-rule-that-blocks-messages-sent-from-a-domain-or-user)」を参照してください。エンド ユーザー許可リスト内のエントリは、管理者によるブロック設定をオーバーライドできます。
     
 - **ユーザーのメッセージ報告アドインをオンにする**: [ユーザーのメッセージ報告アドインを有効にする](enable-the-report-message-add-in.md)ことを強くお勧めします。管理者は、ユーザーが送信しているフィードバックを調べ、何らかのパターンを使用して、問題の原因となっている可能性がある設定を調整することもできます。
     

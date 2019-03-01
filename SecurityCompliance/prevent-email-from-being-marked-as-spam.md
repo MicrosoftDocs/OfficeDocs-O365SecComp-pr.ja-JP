@@ -14,24 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Office 365 で誤検知が発生しないようにして、正しいメールが迷惑メールにならないようにする方法について説明します。
-ms.openlocfilehash: be6e534608544c8db7a33ae6ed6492d4f730a2a0
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 7d64beb5070b62640ce0af2e7f18ed8ea4199dda
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219417"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296890"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Office 365 でメールが迷惑メールとしてマークされるのを防ぐ方法
 
  **Office 365 でメールが迷惑メールとしてマークされていますか? 以下のようにしてください。**
   
-Exchange Online Protection (EOP) は、クラウドベースのメール フィルター サービスです。迷惑メールとマルウェアに対して組織を保護するために役立ちます。Office 365 のメールボックスがある場合、Office 365 に EOP が含まれているため、メールボックスは自動的に EOP で保護されます。
-
-EOP は、迷惑メールをフィルターで除外して、ユーザーが見たくないコンテンツが受信トレイに入らないようにします。ただし、時には、ユーザーが本当に見たいものが EOP によってフィルターで除外されてしまうことがあります。メッセージが間違ってスパム フィルターにより迷惑メールとしてマークされることを、誤検知と呼びます。
-
 誤検知が発生する場合は、「[迷惑メール報告アドインを使用する](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)」ことにより Microsoft にそのメールを報告してください。または、メッセージを*添付ファイルとして* not_junk@office365.microsoft.com に転送することもできます。
 
-    **Important** If you do not forward the messages as attachments, then the headers will be missing and we will be unable to improve the junk mail filtering in Office 365.
+**重要**: メッセージを添付ファイルとして転送しなければ、ヘッダーがないために Office 365 の迷惑メール フィルターの改善ができなくなります。
     
 ## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>メッセージが迷惑メールとしてマークされた理由を判断する
 
