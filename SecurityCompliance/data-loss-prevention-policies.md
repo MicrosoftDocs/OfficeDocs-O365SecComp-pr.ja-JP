@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) ポリシーを使用すると、office 365 全体で機密情報を識別、監視、および自動保護することができます。
-ms.openlocfilehash: bf30e7de625903c3cce53407901f627ef1345d66
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6f96d7150047190e3fec2894383cd56312cfd872
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218977"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341769"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>データ損失防止ポリシーの概要
 
@@ -456,7 +456,7 @@ DLP は、インデックス処理可能なすべてのコンテンツを評価�
 
 exchange online を場所として含む DLP ポリシーを作成すると、ポリシーは Office 365 セキュリティ&amp;コンプライアンスセンターから exchange online に同期され、次に exchange online から web 上の outlook 2013 以降に同期されます。
   
-メッセージが Outlook で構成されている場合、ユーザーは作成されたコンテンツが DLP ポリシーに照らして評価されるときに、ポリシーヒントを表示できます。メッセージが送信された後は、exchange 管理センターで作成された exchange トランスポートルールと dlp ポリシーと共に、メールフローの通常の一部として DLP ポリシーに対して評価されます (詳細については、次のセクションを参照してください)。DLP ポリシーは、メッセージと添付ファイルの両方をスキャンします。
+メッセージが Outlook で構成されている場合、ユーザーは作成されたコンテンツが DLP ポリシーに照らして評価されるときに、ポリシーヒントを表示できます。メッセージが送信されると、メールフローの通常の一部としての DLP ポリシー、exchange メールフロールール (トランスポートルールとも呼ばれます) および exchange 管理センターで作成された dlp ポリシーに対して評価されます (詳細については、次のセクションを参照してください)。DLP ポリシーは、メッセージと添付ファイルの両方をスキャンします。
   
 ### <a name="policy-evaluation-in-the-office-2016-desktop-programs"></a>Office 2016 デスクトップ プログラムにおけるポリシー評価
 

@@ -15,12 +15,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: 信頼できるユーザーからの電子メールがブロックされないようにするには、接続フィルターポリシーを使用して、信頼する IP アドレスの許可リスト (安全な差出人のリストとも呼ばれます) を作成します。受信拒否リストを作成することもできます。
-ms.openlocfilehash: d7c99f8fb6b9b05efb800804927ccb26f7dd9f40
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2b6cbb709eec6911e8aa83d560d5c00ad2a6e344
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216907"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341608"
 ---
 # <a name="configure-the-connection-filter-policy"></a>接続フィルター ポリシーを構成する
  
@@ -98,9 +98,9 @@ IP 許可一覧を構成する場合に考慮するまたは認識すべきそ�
   
 ### <a name="scoping-an-ip-allow-list-exception-for-a-specific-domain"></a>特定のドメインに関する IP 許可一覧例外の範囲指定
 
-一般に、安全だと思われるドメインの IP アドレス (または IP アドレス範囲) をすべて IP 許可一覧に追加することをお勧めします。ただし、IP 許可一覧のエントリをすべてのドメインに適用しない場合は、特定のドメインを除外するトランスポート ルールを作成することができます。 
+一般的に、安全であると見なされるすべてのドメインの ip アドレス (または ip アドレス範囲) を ip 許可一覧に追加することをお勧めします。ただし、IP 許可一覧のエントリをすべてのドメインに適用しない場合は、特定のドメインを除外するメールフロールール (トランスポートルールとも呼ばれます) を作成できます。 
   
-たとえば、ContosoA.com、ContosoB.com、および ContosoC.com という 3 つのドメインがあり、IP アドレス (簡単にするために、1.2.3.4 を使用する) を追加して、ContosoB.com ドメインのフィルター処理だけを省略することにしましょう。すべてのドメインの Spam Confidence Level (SCL) を -1 に設定する (非スパムに分類されることを意味する) 1.2.3.4 用の IP 許可一覧を作成します。その後、ContosoB.com 以外のすべてのドメインについて SCL を 0 に設定するトランスポート ルールを作成できます。これにより、ルールの適用外のドメインに指定されている ContosoB.com を除く IP アドレスに対応するすべてのドメインについてメッセージが再スキャンされます。ContosoB.com の SCL はフィルター処理をスキップする -1 のままであるのに対して、ContosoA.com と ContosoC.com の SCL はコンテンツ フィルターによって再スキャンされる 0 です。
+たとえば、ContosoA.com、ContosoB.com、および ContosoC.com の3つのドメインがあり、IP アドレスを追加する (簡潔にするために、1.2.3.4 を使用してみてください) ので、ドメインの ContosoB.com に対してのみフィルター処理をスキップしたいと考えます。すべてのドメインについて、スパム信頼レベル (SCL) を-1 に設定する (非スパムとして分類されることを意味する) 1.2.3.4 用の IP 許可一覧を作成します。その後、ContosoB.com 以外のすべてのドメインの SCL を0に設定するメールフロールールを作成できます。これにより、IP アドレスに関連付けられているすべてのドメインについてメッセージが再スキャンされます。ただし、ContosoB.com の場合は例外として一覧に表示されます。ContosoB.com には、フィルターをスキップする-1 の SCL があります。ただし、ContosoA.com と ContosoC.com の cls は0で、これはコンテンツフィルターによって再スキャンされます。
   
 これを実現するには、以下の手順を実行します。
   
@@ -133,7 +133,7 @@ IP 許可一覧を構成する場合に考慮するまたは認識すべきそ�
 |:-----|
 |![LinkedIn Learning の小さいアイコン](media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Office 365 を初めて使用する場合は、**         LinkedIn Learning が提供する **Office 365 admins and IT pros** のための無料のビデオ コースをご覧ください。 |
    
-## <a name="for-more-information"></a>関連情報
+## <a name="for-more-information"></a>詳細情報
 <a name="sectionSection4"> </a>
 
 [Exchange Online の差出人セーフ リストと受信拒否リスト](safe-sender-and-blocked-sender-lists-faq.md)

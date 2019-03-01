@@ -10,21 +10,21 @@ search.appverid: MET150
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 1e0c579c-26e0-462a-a1b0-d7506dfe05fa
-description: 組織内のインフォメーション ワーカーは、さまざまな種類の典型的な 1 日の中に機密情報を処理します。文書 Fingerprinting では、組織全体で使用される標準のフォームを識別することによってこの情報を保護することが容易になります。このトピックでは、ドキュメントのフィンガー プリントと PowerShell を使用して作成する方法の概念について説明します。
-ms.openlocfilehash: c33d7412fe4774b74efcd0928df4c99c7bcbb626
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+description: 組織内のインフォメーションワーカーは、一般的な日にさまざまな種類の機密情報を処理します。ドキュメントフィンガープリンティングは、組織全体で使用される標準フォームを識別することにより、この情報をより簡単に保護できるようにします。このトピックでは、ドキュメントフィンガープリンティングの背後にある概念と、PowerShell を使用して作成する方法について説明します。
+ms.openlocfilehash: 20b9f59902c52d347e7c439cb6f380ee9fd4a30e
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002650"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341288"
 ---
 # <a name="document-fingerprinting"></a>ドキュメント フィンガープリンティング
 
-組織内のインフォメーション ワーカーは、さまざまな種類の典型的な 1 日の中に機密情報を処理します。セキュリティ&amp;コンプライアンス センター、文書の指紋と、簡単に組織全体で使用される標準のフォームを識別することによってこの情報を保護することです。このトピックでは、ドキュメントのフィンガー プリントと PowerShell を使用して作成する方法の概念について説明します。
+組織内のインフォメーションワーカーは、一般的な日にさまざまな種類の機密情報を処理します。セキュリティ&amp;コンプライアンスセンターでは、ドキュメントフィンガープリンティングにより、組織全体で使用される標準フォームを識別することにより、この情報をより簡単に保護することができます。このトピックでは、ドキュメントフィンガープリンティングの背後にある概念と、PowerShell を使用して作成する方法について説明します。
   
 ## <a name="basic-scenario-for-document-fingerprinting"></a>ドキュメント フィンガープリンティングに関する基本的なシナリオ
 
-ドキュメントの Fingerprinting は、標準のフォームを DLP ポリシーの規則で使用することができます、機密性の高い情報の種類に変換するデータ損失防止 (DLP) 機能です。たとえば、特許の空のテンプレートに基づくドキュメントのフィンガー プリントを作成でき、DLP ポリシーを検出して機密性の高いコンテンツを持つすべての送信特許テンプレートの入力ブロックを作成できます。必要に応じて、機密情報を送信する可能性があります、その送信者が、受信者がこれらの特許を受け取るための資格を確認する必要があります送信者に通知する[ポリシーのヒント](use-notifications-and-policy-tips.md)を設定できます。このプロセスは、組織で使用されている任意のテキスト ベースのフォームで動作します。アップロードできるフォームの他の例は次のとおりです。 
+ドキュメントフィンガープリンティングは、標準フォームを機密情報の種類に変換するデータ損失防止 (DLP) 機能です。これは、dlp ポリシーのルールで使用できます。たとえば、空白の特許テンプレートに基づいてドキュメントフィンガープリントを作成してから、機密コンテンツが入力されたすべての特許申請書を検出してブロックする DLP ポリシーを作成できます。必要に応じて、機密情報を送信している可能性があることを送信者に通知する[ポリシーヒント](use-notifications-and-policy-tips.md)を設定することができます。また、送信者は、受信者が特許を受信することが認められていることを確認する必要があります。このプロセスは、組織で使用されているテキストベースのフォームでも動作します。アップロードできるフォームのその他の例を次に示します。 
   
 - 政府機関フォーム
     
@@ -34,29 +34,29 @@ ms.locfileid: "25002650"
     
 - 組織用に特別に作成されたカスタム フォーム
     
-理想的が存在する確立された業務の機密情報を送信する特定の形式を使用します。文書の指紋に変換され、対応するポリシーを設定するのには空のフォームをアップロードした後、DLP はその指紋が一致する送信メールのすべてのドキュメントを検出します。
+組織によっては、機密情報を送信するために特定のフォームを使用するというビジネスプラクティスが既に確立されています。ドキュメントのフィンガープリントに変換される空のフォームをアップロードし、対応するポリシーを設定すると、その指紋に一致する送信メール内のすべてのドキュメントが DLP によって検出されます。
   
 ## <a name="how-document-fingerprinting-works"></a>ドキュメント フィンガープリンティングのしくみ
 
-ドキュメントは、実際の指紋を持っていないが、機能を説明する名前は、既に気付いたしました。人の指紋は、独自のパターンであるのと同じように、ドキュメントでは一意な単語のパターンがあります。ファイルをアップロードすると、DLP はドキュメントの一意な単語のパターンを識別、そのパターンに基づくドキュメントのフィンガー プリントを作成し、その文書の指紋を使用して、同じパターンが含まれているドキュメントと送信ドキュメントを検出するために。フォームをアップロードするためまたはテンプレートは、最も効果的な文書の指紋の種類を作成します。すべてのユーザーがフォームの入力単語の元の同じセットを使用して、文書に、自分の単語を追加限り、送信ドキュメントはパスワードで保護をされていないし、元のフォームからすべてのテキストが含まれています、DLP は、ドキュメントにドキュメントの指紋が一致したかどうかを確認できます。
+ドキュメントに実際の指紋がありませんが、名前によって機能の説明がわかります。個人の指紋に固有のパターンが設定されているのと同じように、ドキュメントには一意の単語パターンがあります。ファイルをアップロードすると、DLP はドキュメント内の一意の単語パターンを識別し、そのパターンに基づいてドキュメントフィンガープリントを作成し、そのドキュメントフィンガープリントを使用して同じパターンを含む送信ドキュメントを検出します。そのため、フォームまたはテンプレートをアップロードすると、ドキュメントフィンガープリントの最も効果的な種類が作成されます。フォームに入力したすべてのユーザーは、同じ元の単語セットを使用して、自分の単語を文書に追加します。送信ドキュメントがパスワードで保護されておらず、元のフォームのすべてのテキストが含まれている限り、DLP でドキュメントがドキュメントフィンガープリントと一致するかどうかを判断できます。
   
 次の例では、特許情報テンプレートに基づいてドキュメント フィンガープリントを作成した場合に何が行われるかを示しています。ただし、ドキュメント フィンガープリントは、任意のフォームに基づいて作成できます。
   
 **特許情報テンプレートのドキュメント フィンガープリントと一致する特許情報ドキュメントの例**
 
-![Document_Fingerprinting_diagram.png](media/Document_Fingerprinting_diagram.png)
+![Document_Fingerprinting_diagram](media/Document_Fingerprinting_diagram.png)
   
-特許のテンプレートには、「特許のタイトル、「空白のフィールドが含まれています「発明家、」し [説明] と各フィールドの説明: 単語パターンです。特許元のテンプレートをアップロードすることがサポートされているファイルの種類のいずれかで、テキスト形式でです。DLP の変換元のテキスト、および指紋を表す一意のハッシュ値を含むファイルの小さな Unicode xml ドキュメント指紋認証にこの単語のパターンは、Active Directory 内のデータのクラス分けとして保存されます。(セキュリティ上の手段として、元のドキュメント自体がサービスに格納されていない; ハッシュ値のみが格納されているとハッシュ値から元のドキュメントを再構築することはできません)特許の指紋、DLP ポリシーに関連付けることができる機密情報の種類になります。指紋を関連付けるには、DLP ポリシーを使用して後、DLP は特許の指紋が一致するドキュメントが含まれている送信された e メールを検出し、組織のポリシーに従って処理します。 
+特許テンプレートには、「特許役職」、「Inventors」、「説明」、および「Description」、および各フィールドの説明 (word パターン) が含まれています。元の特許テンプレートをアップロードすると、サポートされているファイルの種類とテキスト形式のいずれかになります。DLP この単語パターンは、元のテキストを表す一意のハッシュ値を含む小さな Unicode XML ファイルであるドキュメント指紋に変換され、指紋は Active Directory 内のデータ分類として保存されます。(セキュリティ対策として、元のドキュメント自体はサービスに格納されず、ハッシュ値のみが格納され、元のドキュメントをハッシュ値から再構築することはできません)。その後、特許指紋は、DLP ポリシーに関連付けることができる機密情報の種類になります。指紋を dlp ポリシーに関連付けた後、dlp は特許指紋に一致するドキュメントを含む送信メールを検出し、組織のポリシーに従ってそれらを処理します。 
 
-たとえば、正規従業員が特許を含む、送信メッセージの送信を禁止する DLP ポリシーを設定する可能性があります。DLP は特許を検出し、それらの電子メールをブロックする特許のフィンガー プリントを使用します。または、これを行うに必要な業務があるために、特許を他の組織に送ることができることは、法務部門をできるようにすることができます。特定の部門、DLP ポリシーで、これらの部門の例外を作成することで機密情報を送信することができます。 または業務の妥当性を持つポリシー ヒントをオーバーライドすることを許可できます。
+たとえば、通常の従業員が特許を含む送信メッセージを送信できないようにする DLP ポリシーを設定することができます。DLP は特許指紋を使用して特許を検出し、それらの電子メールをブロックします。別の方法として、法務部門ではそのような業務が必要になるため、他の組織に特許を送信できるようにすることもできます。特定の部門に対して、DLP ポリシーでその部門の例外を作成することによって機密情報を送信することを許可したり、業務上の理由を使用してポリシーヒントを上書きすることを許可したりできます。
   
 ### <a name="supported-file-types"></a>サポートされているファイルの種類
 
-ドキュメントの Fingerprinting には、トランスポート ルールでサポートされている同じファイルの種類がサポートされています。サポートされているファイルの種類のリストは、[メール フロー ルールのコンテンツの検査のためのサポートされているファイルの種類](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)を参照してください。ファイルの種類の 1 つのクイック注: トランスポート ルールとドキュメントのフィンガー プリントのどちらもサポートしています .dotx ファイルの種類にすることが混乱を Word でテンプレート ファイルであるためです。Word およびその他の文書の指紋のトピックには、「テンプレート」を参照してください、とすると、テンプレート ファイルの種類ではない標準のフォームとして設定するドキュメントを参照します。
+ドキュメントフィンガープリンティングは、メールフロールール (トランスポートルールとも呼ばれる) でサポートされているものと同じ種類のファイルをサポートしています。サポートされているファイルの種類の一覧については、「[メールフロールールコンテンツ検査でサポートされているファイルの種類](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)」を参照してください。ファイルの種類に関するクイックメモ: メールフロールールもドキュメントフィンガープリンティングもサポートしていません。 .dotx ファイルの種類は、Word のテンプレートファイルなので、紛らわしい場合があります。この記事とその他のドキュメントフィンガープリンティングの「テンプレート」という語が表示されている場合は、標準フォームとして設定したドキュメントを参照してください。テンプレートファイルの種類ではありません。
   
 #### <a name="limitations-of-document-fingerprinting"></a>ドキュメント フィンガープリンティングの制限
 
-ドキュメントの Fingerprinting は、次の場合に機密情報を認識できません。
+ドキュメントフィンガープリンティングは、次の場合に機密情報を検出しません。
   
 - パスワードで保護されたファイル
     
@@ -64,11 +64,11 @@ ms.locfileid: "25002650"
     
 - ドキュメント フィンガープリントの作成に使用されたオリジナルのフォームのテキストがすべて含まれていないドキュメント
     
-## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>PowerShell を使用して、ドキュメントのフィンガー プリントに基づくクラス分けルール パッケージを作成するには
+## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>PowerShell を使用してドキュメントフィンガープリントに基づいて分類ルールパッケージを作成する
 
-PowerShell を使用してセキュリティでのみドキュメントのフィンガー プリントを作成すること現在ことができます&amp;コンプライアンス センターです。接続するには、 [Office 365 のセキュリティとコンプライアンス センター PowerShell への接続](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)を参照してください。
+現時点では、セキュリティ&amp; /コンプライアンスセンターで PowerShell を使用することによってのみ、ドキュメントフィンガープリントを作成できます。接続するには、「 [connect to Office 365 Security & コンプライアンスセンター PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)」を参照してください。
 
-DLP では、機密性の高いコンテンツを検出するためにクラス分け規則のパッケージを使用します。文書の指紋認証に基づくクラス分けルール パッケージを作成するには、**新規 DlpFingerprint**および**新しい DlpSensitiveInformationType**コマンドレットを使用します。同じでは、**新規 DlpFingerprint**および**新しい DlpSensitiveInformationType**または**セット DlpSensitiveInformationType**を常に実行するため、**新規 DlpFingerprint**の結果は、データの分類規則の外部に保存されていない、PowerShell セッションです。C:\My Documents\Contoso の従業員の Template.docx ファイルに基づく新しい文書の指紋を作成する例を次にします。PowerShell セッションを同時に**新規 DlpSensitiveInformationType**コマンドレットを使用できるように、変数として、新たな指紋を格納します。 
+DLP は、分類ルールパッケージを使用して機密コンテンツを検出します。ドキュメントのフィンガープリントに基づいて分類ルールパッケージを作成するには、**新しい-dlpfingerprint**および**set-dlpsensitiveinformationtype**コマンドレットを使用します。**新しい-dlpfingerprint**の結果はデータ分類規則の範囲外に格納されないため**** 、常に、 **set-dlpsensitiveinformationtype**または**set-dlpsensitiveinformationtype**を同じように実行します。PowerShell セッション。次の例では、ファイル C:\My documents\contoso employee template.docx Employee テンプレート .docx に基づいて新しいドキュメントフィンガープリントを作成します。新しい指紋を変数として保存し、同じ PowerShell セッションで**set-dlpsensitiveinformationtype**コマンドレットで使用できるようにします。 
   
 ```
 $Employee_Template = Get-Content "C:\My Documents\Contoso Employee Template.docx" -Encoding byte -ReadCount 0
@@ -83,27 +83,27 @@ $Customer_Fingerprint = New-DlpFingerprint -FileData $Customer_Form -Description
 New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerprints $Customer_Fingerprint -Description "Message contains Contoso customer information." 
 ```
 
-DLP データのクラス分けのルール、すべてのパッケージを検索するのには、 **Get DlpSensitiveInformationType**コマンドレットを使用することができますようになりましたし、この例では、「Contoso ユーザーは社外秘」は、データのクラス分けルール パッケージ] の一覧の一部です。 
+**set-dlpsensitiveinformationtype**コマンドレットを使用して、すべての DLP データ分類ルールパッケージを検索できるようになりました。この例では、"Contoso Customer Confidential" はデータ分類規則パッケージリストに含まれています。 
   
-最後に、「Contoso ユーザーは社外秘」のデータのクラス分けルール パッケージをセキュリティで DLP ポリシーに追加する&amp;コンプライアンス センターです。次の使用例では、"ConfidentialPolicy"という名前の既存の DLP ポリシーに規則を追加します。
+最後に、セキュリティ&amp;コンプライアンスセンターで、"Contoso Customer Confidential" データ分類ルールパッケージを DLP ポリシーに追加します。この例では、"ConfidentialPolicy" という名前の既存の DLP ポリシーにルールを追加します。
 
 ```
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-次の例に示すように、Exchange online では、トランスポート ルールで、データのクラス分けルール パッケージを使用できます。このコマンドを実行するのには最初に[オンラインの PowerShell を Exchange に接続](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)する必要があります。ルール パッケージのセキュリティの同期の時間がかかることにも注意してください&amp;Exchange 管理センターへのコンプライアンス センターです。
+次の例に示すように、Exchange Online のメールフロールールでデータ分類ルールパッケージを使用することもできます。このコマンドを実行するには、まず[Exchange Online PowerShell に接続](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)する必要があります。また、ルールパッケージがセキュリティ&amp;コンプライアンスセンターから Exchange 管理センターに同期されるまでに時間がかかることにも注意してください。
   
 ```
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}
 
 ```
 
-DLP は、contoso 社の顧客の Form.docx の文書の指紋が一致するドキュメントを検出します。
+DLP が、コントソ Customer Form .docx ドキュメント指紋に一致するドキュメントを検出するようになりました。
   
-構文とパラメーターについては、次のように表示されます。
+構文およびパラメーターの詳細については、以下を参照してください。
 
-- [新しい-DlpFingerprint](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/New-DlpFingerprint)
-- [新しい-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/New-DlpSensitiveInformationType)
-- [削除 DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Remove-DlpSensitiveInformationType)
-- [セット DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Set-DlpSensitiveInformationType)
-- [Get DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpSensitiveInformationType)
+- [新-dlpfingerprint](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/New-DlpFingerprint)
+- [set-dlpsensitiveinformationtype](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/New-DlpSensitiveInformationType)
+- [set-dlpsensitiveinformationtype](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Remove-DlpSensitiveInformationType)
+- [set-dlpsensitiveinformationtype](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Set-DlpSensitiveInformationType)
+- [set-dlpsensitiveinformationtype](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpSensitiveInformationType)

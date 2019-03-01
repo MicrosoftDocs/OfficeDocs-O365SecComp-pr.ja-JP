@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a73d5fa-b2c8-43e7-9ed4-61f0552b1c98
 description: 脅威管理を使用して、組織のデータへのモバイルデバイスアクセスの制御と管理、データ損失からの組織の保護、および悪意のあるソフトウェアとスパムからの受信および送信メッセージの保護に役立ちます。また、脅威管理を使用して、ドメインの評価を保護し、送信者が悪意のあるドメインからのアカウントを偽装しているかどうかを判断します。
-ms.openlocfilehash: 30083c1e030921598d950afbedc78acab2a24910
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 330dda3c4168e43e199be7b4a2df0ef95f0b81dc
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221167"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341588"
 ---
 # <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>Threat management in the Office 365 Security &amp; Compliance Center
 

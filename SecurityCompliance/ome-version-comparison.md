@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: さまざまなバージョンの Office 365 メッセージ暗号化と共に提供される機能の相違点と、2つの操作がどのように連携するかについて説明します。
-ms.openlocfilehash: 477fbe8f9d71bd92225a7ba5043576f164933b4e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 47632d7e960e2dee2b068baaf46b98716fc8d4d0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216677"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341438"
 ---
 # <a name="compare-versions-of-ome"></a>OME のバージョンを比較する
 
@@ -31,7 +31,7 @@ ms.locfileid: "30216677"
 |                                   |以前の機能       |                   |新機能              |
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |**機能**                     | **従来の OME**    | **IRM**           | **OME の新機能** |
-|*暗号化されたメールを送信する*        |Exchange メールフロールールを使用する|エンドユーザーが outlook デスクトップまたは outlook on the Web から開始しました。または Exchange メールフロールールを介して|エンドユーザーが outlook デスクトップ、outlook for Mac、または outlook on the Web から開始しました。Exchange トランスポートルールおよび Office 365 データ損失防止 (DLP) による|
+|*暗号化されたメールを送信する*        |Exchange メールフロールールを使用する|エンドユーザーが outlook デスクトップまたは outlook on the Web から開始しました。または Exchange メールフロールールを介して|エンドユーザーが outlook デスクトップ、outlook for Mac、または outlook on the Web から開始しました。Exchange メールフロールール (トランスポートルールとも呼ばれます) および Office 365 データ損失防止 (DLP) を使用します。|
 |*Rights management テンプレート*       |   N/A      |オプションとカスタムテンプレートを転送しない|転送不可オプション、暗号化のみオプション、およびカスタムテンプレート|
 |*受信者の種類*                   |内部および外部の受信者|内部受信者のみ         |内部および外部の受信者|
 |*内部の受信者のための環境*|受信者が HTML メッセージを受信し、web ブラウザーまたはモバイルアプリでそれをダウンロードして開く|Outlook クライアントでのネイティブインライン環境|Office 365 受信者のネイティブインライン環境。他のすべての受信者は OME ポータルからメッセージを読み取ることができます (ダウンロードまたはアプリは必要ありません)。|

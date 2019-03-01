@@ -14,12 +14,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: Office 365 組織を新しい OME 機能に移行していない場合でも、既に OME を展開している場合は、この記事の情報が組織に適用されます。Microsoft は、組織にとって適切であることをすぐに、新しい OME 機能に移行するための計画を立てることを推奨します。手順については、「Azure Information Protection の上に構築された新しい Office 365 メッセージ暗号化機能のセットアップ」を参照してください。新しい機能が最初にどのように機能するかについて詳しくは、「Office 365 Message Encryption」を参照してください。この記事の残りの部分では、新しい OME 機能のリリース前の OME の動作を示します。
-ms.openlocfilehash: f6e407208735a53b98033e58a6f7b36fe9a37f62
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 03e2cb9c1f7d447f2fcf222382fcc2366faf0658
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276067"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341498"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 Message Encryption の旧来の情報
 
@@ -167,7 +167,7 @@ RMS は、次のような組み込みのテンプレートを提供すること�
   
  **Q: Office 365 メッセージの暗号化は S/MIME とはどのような違いがありますか?**
   
-S/MIME は、基本的に、クライアント側の暗号化テクノロジであり、複雑な証明書管理と発行インフラストラクチャが必要です。Office 365 Message Encryption は、トランスポート ルールを使用するため、証明書の発行に依存しません。
+S/MIME は本質的にクライアント側の暗号化テクノロジであり、複雑な証明書の管理と発行のインフラストラクチャを必要とします。Office 365 メッセージの暗号化は、メールフロールール (トランスポートルールとも呼ばれます) を使用します。証明書の公開には依存しません。
   
  **Q. モバイル デバイスで暗号化されたメッセージを読むことはできますか。**
   
@@ -213,7 +213,7 @@ Office 365 Message Encryption では、Rights Management サービス (RMS) が�
   
  **Q. 受信されて既読になった暗号化メッセージのレポートを表示することはできますか。**
   
-暗号化されたメッセージが表示されているかどうかを示すレポートはありませんが、特定のトランスポートルールに一致したメッセージの数を特定するために利用できる Office 365 レポートがあります (たとえば、)。
+暗号化されたメッセージが表示されているかどうかを示すレポートはありませんが、特定のメールフロールール (トランスポートルールとも呼ばれます) に一致したメッセージの数を特定するために利用できる Office 365 レポートがあります。
   
  **Q. OME ポータルと OME Viewer アプリで提供した情報を Microsoft はどのように使用しますか。**
   

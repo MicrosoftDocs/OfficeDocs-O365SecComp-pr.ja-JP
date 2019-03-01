@@ -11,18 +11,18 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: メール ユーザーの定義は、Exchange Online Protection (EOP) サービスを管理する上で重要な部分です。
-ms.openlocfilehash: 46bc63232be3ece8b9e5c6fce6bbea18dcfdf2b4
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: b0093c64a0fcb5997b474e7bd491c0915164b77e
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003046"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341028"
 ---
 # <a name="manage-mail-users-in-eop"></a>EOP でメール ユーザーを管理する
 
 メール ユーザーの定義は、Exchange Online Protection (EOP) サービスを管理する上で重要な部分です。EOP でユーザーを管理するには、いくつかの方法があります。
   
-- メール ユーザーを管理するためにディレクトリ同期を使用して: に Azure Active ディレクトリ (AD)、コードのコピーをクラウドに格納する場所は、それらのアカウントを同期するには、オンプレミスの Active Directory 環境で既存のユーザー アカウントがある企業、です。Azure Active Directory への既存のユーザー アカウントを同期するときは、Exchange 管理センター (EAC) の [**受信者**] ウィンドウでこれらのユーザーを表示できます。ディレクトリ同期を使用することをお勧めします。 
+- ディレクトリ同期を使用してメールユーザーを管理する: 社内の active directory 環境に既存のユーザーアカウントがある場合は、それらのアカウントを Azure active directory (AD) と同期することができます。これにより、アカウントのコピーがクラウドに保存されます。既存のユーザーアカウントを Azure Active Directory と同期する場合は、Exchange 管理センター (EAC) の [**受信者**] ウィンドウで、それらのユーザーを表示できます。ディレクトリ同期の使用をお勧めします。 
     
 - EAC を使用してメール ユーザーを管理する: EAC で直接メール ユーザーを追加して管理します。これは、メール ユーザーを追加する最も簡単な方法で、一度に 1 ユーザーを追加する場合に役立ちます。
     
@@ -48,7 +48,7 @@ ms.locfileid: "23003046"
 > ディレクトリ同期を使って受信者を管理する場合でも、Office 365 管理センター でユーザーの追加と管理は可能ですが、これらのユーザーは社内 Active Directory を使った同期の対象になりません。これは、ディレクトリ同期では社内 Active Directory からクラウドへの受信者の同期だけが実行されるためです。 
   
 > [!TIP]
->  次の機能によるディレクトリ同期の使用をお勧めします。 > **Outlook の差出人セーフ リストとブロックする差出人リスト** - サービスに同期すると、これらのリストはサービスのスパム フィルターより優先されます。これにより、ユーザーは独自の差出人セーフ リストとブロックする差出人リストをユーザー単位またはドメイン単位で管理できます。 > **ディレクトリ ベースのエッジ ブロック (DBEB)** - DBEB についての詳細は、「 [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)」を参照してください。 > **エンド ユーザーのスパム検疫**  エンド ユーザーのスパム検疫にアクセスするためには、エンド ユーザーは有効な Office 365 のユーザー ID とパスワードを保有している必要があります。社内のメールボックスを保護している EOP のお客様は、有効な電子メール ユーザーである必要があります。 > **トランスポート ルール** - ディレクトリ同期を使用すると、既存の Active Directory ユーザーおよびグループが自動的にクラウドにアップロードされます。特定のユーザーやグループを対象とするトランスポート ルールを作成するために、EAC または リモート Windows PowerShell を使ってユーザーやグループを手動で追加する必要はありません。ただし、 [動的配布グループ](https://go.microsoft.com/fwlink/?LinkId=507569)は、ディレクトリ同期を介して同期できません。 
+>  次の機能を使用する場合は、ディレクトリ同期を使用することをお勧めします。 > **Outlook の信頼できる差出人と受信拒否リスト**-サービスに同期すると、これらのリストはサービスのスパムフィルタリングよりも優先されます。これにより、ユーザーは、ユーザーごとまたはドメインごとに、自分の信頼できる差出人と受信拒否リストを管理できるようになります。> **directory ベースのエッジブロック (dbeb)** -dbeb の詳細については、「 [Use Directory based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)」を参照してください。>**エンドユーザースパム検疫**-エンドユーザーのスパム検疫にアクセスするには、エンドユーザーが有効な Office 365 ユーザー ID とパスワードを持っている必要があります。社内メールボックスを保護している EOP のお客様は、有効なメールユーザーである必要があります。>**メールフロールール**-ディレクトリ同期を使用すると、既存の Active directory ユーザーとグループがクラウドに自動的にアップロードされ、特定のユーザーを対象とするメールフロールール (トランスポートルールとも呼ばれる) を作成できます。またはグループは、EAC または Exchange Online Protection の PowerShell を使用して手動で追加する必要はありません。[動的配布グループ](https://go.microsoft.com/fwlink/?LinkId=507569)はディレクトリ同期を使用して同期できないことに注意してください。 
   
  **開始する前に**
   
@@ -101,7 +101,7 @@ ms.locfileid: "23003046"
     
 ### <a name="to-edit-or-remove-a-mail-user-in-the-eac"></a>EAC でメール ユーザーを編集または削除するには
 
-- **受信者**には、EAC で\>**の連絡先**です。ユーザーの一覧でを表示または変更するユーザー] をクリックし、**編集**を選択し、![の編集アイコン](../media/ITPro-EAC-EditIcon.gif)必要に応じて、ユーザー設定を更新します。ユーザーの名前、エイリアス、または連絡先の情報を変更することができ、組織内ユーザーの役割に関する詳細情報を記録できます。ユーザーを選択し、し、[**削除**] を選択することができます![削除アイコン](../media/ITPro-EAC-RemoveIcon.gif)を削除します。 
+- EAC で、[**受信者** \>の**連絡先**] に移動します。ユーザーの一覧で、表示または変更するユーザーをクリックし、[編集] **** ![編集アイコン](../media/ITPro-EAC-EditIcon.gif)を選択して、必要に応じてユーザーの設定を更新します。ユーザーの名前、エイリアス、または連絡先情報を変更したり、組織内のユーザーの役割に関する詳細情報を記録したりすることができます。ユーザーを選択し、[削除] [ ****![削除] アイコン](../media/ITPro-EAC-RemoveIcon.gif)を選択して削除することもできます。 
     
 ## <a name="use-remote-windows-powershell-to-manage-mail-users"></a>リモートの Windows PowerShell を使用してメール ユーザーを管理するには
 

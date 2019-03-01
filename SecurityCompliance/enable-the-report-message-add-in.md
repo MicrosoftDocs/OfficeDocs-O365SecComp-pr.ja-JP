@@ -15,12 +15,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 個々のユーザーまたは組織全体で、outlook および outlook on the web 用のレポートメッセージアドインを有効にする方法について説明します。
-ms.openlocfilehash: 48bd8937622588bbf5a1e07b9d4341e937c5cf7f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: c184b7ac1baef297d65e6e93e4e7a085920d87b0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217387"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341428"
 ---
 # <a name="enable-the-report-message-add-in"></a>レポート メッセージ アドインを有効にする
 
@@ -119,7 +119,7 @@ Office 365 の全体管理者または exchange Online 管理者であり、exch
     
 9. [**このルールのモードの選択**] で、[**強制**] を選択します。<br/>![レポートされた各メッセージのコピーを取得するルールを設定する](media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)<br/>
   
-10. [**保存**] を選択します。 
+10. **[保存]** を選択します。 
     
 このルールが設定されている場合、組織内のユーザーがレポートメッセージアドインを使用して電子メールメッセージを報告するたびに、全体管理者、セキュリティ管理者、セキュリティリーダがそのメッセージのコピーを受け取ります。この情報を使用すると、 [Office 365 の ATP の安全なリンク](atp-safe-links.md)ポリシー、または[スパム対策](anti-spam-protection.md)の設定などのポリシーを設定または調整することができます。 
 

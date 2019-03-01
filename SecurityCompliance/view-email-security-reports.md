@@ -3,7 +3,7 @@ title: セキュリティ&amp; /コンプライアンスセンターで電子メ
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/07/2019
+ms.date: 02/21/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,20 +15,22 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Office 365 Enterprise を使用して組織の電子メールセキュリティレポートを検索して使用する方法について説明します。電子メールセキュリティレポートは、セキュリティ&amp;コンプライアンスセンターで利用できます。
-ms.openlocfilehash: fb9f8234f1febf98daf0382f2ad8ece3e3ecbbfe
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 833cb4e0b90375179a4ce2097cb986926a9856d0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241999"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341448"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する
 
-[ &amp;セキュリティコンプライアンスセンター](https://security.microsoft.com)では、さまざまな電子メールセキュリティレポートを使用して、Office 365 のスパム対策とマルウェア対策機能が組織を保護する方法を確認するのに役立てることができます。[必要なアクセス許可](#what-permissions-are-needed-to-view-these-reports)がある場合は、**レポート** \> **ダッシュボード**にアクセスすること&amp;によって、セキュリティコンプライアンスセンターでこれらのレポートを表示できます。
+[ &amp;セキュリティコンプライアンスセンター](https://protection.office.com)では、Office 365 のスパム対策、マルウェア対策、暗号化機能などの電子メールセキュリティ機能が組織を保護していることを確認するのに役立つさまざまなレポートが提供されています。[必要なアクセス許可](#what-permissions-are-needed-to-view-these-reports)がある場合は、**レポート** \> **ダッシュボード**にアクセスすること&amp;によって、セキュリティコンプライアンスセンターでこれらのレポートを表示できます。
   
-![セキュリティ&amp;コンプライアンスセンターのダッシュボードは、高度な脅威保護が機能している場所を確認するのに役立ちます。](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![高度な脅威保護がどのように動作しているかを確認するダッシュボード](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 電子メールのセキュリティレポートには、次のようなものがあります。
+
+- [暗号化レポート](#encryption-report)(新)
   
 - [脅威保護の状態レポート](view-email-security-reports.md#tps) 
     
@@ -43,12 +45,36 @@ ms.locfileid: "30241999"
 - [スパム検出レポート](#spam-detections-report)
     
 - [送信および受信した電子メールレポート](view-email-security-reports.md#sentreceivedemail)
+
+- [ユーザーによって報告されたメッセージレポート](view-email-security-reports.md#userreported)
     
-- [ユーザーによって報告](view-email-security-reports.md#userreported)されたメッセージレポート(新) 
-    
+## <a name="encryption-report"></a>暗号化レポート
+
+(**新**)**暗号化レポート**には、ポリシーまたはエンドユーザーコントロールによって暗号化された電子メールメッセージに関する情報が表示されます。組織のセキュリティチームは、この情報を使用してパターンを識別し、機密性の高い電子メールメッセージのポリシーを事前に適用または調整することができます。
+
+このレポートを表示するには、セキュリティ & コンプライアンスセンターで、[**レポート** \> **ダッシュボード** \>の**暗号化レポート**] に移動します。
+
+![暗号化レポート](media/encryptionreport-defaultview.png) 
+
+最初にレポートを開くと、過去7日間の電子メールメッセージで使用されていた暗号化方法に関するデータが表示されます。レポートで日付の範囲と詳細を変更するには、画面の右上隅にある [フィルター] をクリックします。
+
+![暗号化レポートのフィルター](media/encryptionreport-filters.png)   
+
+[分解] メニューを使用して、データを暗号化テンプレート (またはメソッド) 別に表示することもできます。
+
+![暗号化方法またはテンプレート](media/encryptionreport-breakdownby.png)
+
+また、[データの表示] メニューを使用して、上位5人の受信者ドメインに対する暗号化されたメッセージの数を表示するようにビューを変更できます。
+
+![暗号化レポートのデータをメニュー別に表示する](media/encryptionreport-viewdataby.png)
+
+新しい暗号化レポートを柔軟に使用することで、傾向を表示し、適切な操作を実行できます。たとえば、ユーザーによって大量の電子メールメッセージが暗号化されている場合、暗号化ポリシーを追加して、特定のユースケースの暗号化を自動化することができます。また、使用可能な暗号化テンプレートが多数あり、それを使用しているユーザーがいない場合は、その機能についてユーザーにトレーニングが必要かどうかを調べることができます。 
+
+このレポートを使用すると、組織のセキュリティとコンプライアンスチームは、メッセージの暗号化の使用方法や、さらにアクションが必要かどうかを監視できます。
+
 ## <a name="threat-protection-status-report"></a>脅威保護の状態レポート
 
-新しい**脅威保護状態**レポートは、Exchange Online Protection によって検出およびブロックされた悪意のある電子メールを示すスマートレポートです。このレポートには、マルウェアまたはフィッシングの試行として識別された電子メールに関する情報が表示されます。 
+**脅威保護の状態**レポートは、Exchange Online Protection によって検出およびブロックされた悪意のある電子メールを示すスマートレポートです。このレポートには、マルウェアまたはフィッシングの試行として識別された電子メールに関する情報が表示されます。 
 
 > [!NOTE]
 > 脅威保護の状態レポートは、 [Office 365 ATP](office-365-atp.md)または[Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP) のいずれかを使用しているお客様が利用できます。ただし、ATP のお客様の脅威保護状態レポートに表示される情報には、EOP のお客様に表示されるものとは異なるデータが含まれている可能性があります。たとえば、EOP のお客様は、電子メールで検出されたマルウェアに関する情報を表示できますが、 [SharePoint Online、OneDrive、Microsoft Teams で検出された悪意のあるファイル](atp-for-spo-odb-and-teams.md)に関する情報は、ATP 固有の機能です。([ATP レポートの詳細について](view-reports-for-atp.md)は、を参照してください)。
@@ -109,13 +135,13 @@ ms.locfileid: "30241999"
   
 グラフの下に、上位の電子メール送信者または受信者の数と、指定された期間に送受信されたメッセージ数が表示されます。
   
-## <a name="spoof-mail-report"></a>スプーフィングメールレポート
+## <a name="spoof-detections-report"></a>スプーフィング検出レポート
 
-[**スプーフィングメール**] レポートには、検出されたスプーフィングメールメッセージの数と、それらのメッセージのうちどれが "good" (正当なビジネス上の理由で、メールのスプーフィングが行われたもの) であることが示されます。 
+**スプーフィング検出**レポートには、検出されたスプーフィングメールメッセージの数と、それらのメッセージのうちどれが "good" (正当なビジネス上の理由で、メールのスプーフィングが行われたもの) であることが示されています。 
   
 このレポートを表示するには[、 &amp;セキュリティ/コンプライアンスセンター](https://protection.office.com)で、[**レポート** \> **ダッシュボード** \>の**スプーフィングメール**] に移動します。
   
-![このレポートを表示するには、 &amp;セキュリティ/コンプライアンスセンターで、 \> [ \>レポートダッシュボードのスプーフィングメール] に移動します。](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
+![セキュリティ&amp; /コンプライアンスセンターで、[レポート\>ダッシュボード\>のスプーフィングメール] に移動します。](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
   
 グラフの1日をポイントすると、受信したスプーフィングメールメッセージの数を確認できます。
   
@@ -157,7 +183,7 @@ ms.locfileid: "30241999"
   
 ![このレポートは、マルウェア対策、スパム対策、およびその他のメッセージの検出に関する情報を示します。](media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
   
-## <a name="user-reported-messages-report-new"></a>ユーザーによって報告されたメッセージレポート (新)
+## <a name="user-reported-messages-report"></a>ユーザーによって報告されたメッセージレポート
 
 ユーザーによって報告された**メッセージ**レポートには、ユーザーが[レポートメッセージアドイン](enable-the-report-message-add-in.md)を使用して、迷惑メール、フィッシングの試行、または正常なメールとして報告した電子メールメッセージに関する情報が表示されます。
   

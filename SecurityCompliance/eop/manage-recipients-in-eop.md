@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
 description: Microsoft Exchange Online Protection (EOP) には、メールの受信者を管理するためのいくつかの方法が備わっています。管理者は、Exchange 管理センター (EAC) 内で、またはリモートの Windows PowerShell を使用して、特定の管理タスクを実行するとともに、Microsoft Office 365 管理センターで実行されたその他の管理タスクを確認できます。
-ms.openlocfilehash: 0159604eaa4e021d9ccef544306e8b274af11f18
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 55b28dcb107df85052ff623f653eecaaf88c7bda
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027574"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341658"
 ---
 # <a name="manage-recipients-in-eop"></a>EOP で受信者を管理する
 
@@ -24,7 +24,7 @@ Microsoft Exchange Online Protection (EOP) には、メールの受信者を管�
   
 EOP は次の受信者の種類をサポートします。
   
-- **メール ユーザー**メール ユーザーとは、EOP 内の受信者のドメインを管理します。これらの受信者がログオン資格情報を Office 365 の組織内にあるが、外部の電子メール アドレス、受信者のメールボックスがクラウド組織の外にあることを意味します。メール ユーザーを追加するには、メールを受信することができ、特定のユーザーに対してトランスポート ルールを作成することもできるようにします。組織内で、メール ユーザーにロールを割り当てることができますも管理役割グループの特権を持つユーザーでは、Exchange 管理センター (EAC) にアクセスでき、特定の管理タスクを実行することができます。ユーザー ロールおよび EOP でユーザーのロールを割り当てる方法に関する詳細については、 [EOP の管理者の役割グループ権限の管理](manage-admin-role-group-permissions-in-eop.md)を参照してください。
+- **メールユーザー**メールユーザーは、EOP 管理対象ドメイン内の受信者です。これらの受信者は、Office 365 組織にログオン資格情報を持っていますが、外部の電子メールアドレスを持っています。つまり、受信者のメールボックスはクラウド組織外にあります。メールを受信できるようにメールユーザーを追加したり、特定のユーザーのメールフロールール (トランスポートルールとも呼ばれます) を作成したりすることもできます。組織内のメールユーザーに役割を割り当てることもできます。管理役割グループの権限を持つユーザーは、Exchange 管理センター (EAC) にアクセスして、特定の管理タスクを実行できます。ユーザーの役割と、EOP でユーザーの役割を割り当てる方法の詳細については、「 [Manage admin role group permissions in EOP](manage-admin-role-group-permissions-in-eop.md)」を参照してください。
     
     EOP でのメール ユーザーの管理方法については、「[EOP でメール ユーザーを管理する](manage-mail-users-in-eop.md)」を参照してください。
     

@@ -11,19 +11,19 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: ビジネス要件が変化すると、1 つの Microsoft Exchange Online Protection (EOP) 組織 (テナント) を 2 つの別個の組織に分割したり、2 つの組織を 1 つに併合したり、ドメインや EOP の設定を 1 つの組織から別の組織へ移動したりする必要が生じることがあります。
-ms.openlocfilehash: f822e9e5aa91a67a15b327f73c29bf9bee2ff99e
-ms.sourcegitcommit: 380ea5b269a64bd581a225e122cbd82d2ce0bf98
+ms.openlocfilehash: e2b030064ce180bd7eeebfb281751dc147dca899
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "23002221"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341558"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>ドメインと設定を 1 つの EOP 組織から別の EOP 組織に移動する
 
 ビジネス要件が変化すると、1 つの Microsoft Exchange Online Protection (EOP) 組織 (テナント) を 2 つの別個の組織に分割したり、2 つの組織を 1 つに併合したり、ドメインや EOP の設定を 1 つの組織から別の組織へ移動したりする必要が生じることがあります。1 つの EOP 組織から別の EOP 組織へ移動するのは難しい作業ですが、いくつかの基本的なリモート Windows PowerShell スクリプトを用意し、少しの準備作業を行えば、比較的短いメンテナンス期間で完了できます。 
   
 > [!NOTE]
->  設定確実に移動できます EOP のスタンドアロン (EOP プレミアム) のサービス組織では、EOP 別の [標準] または [Exchange のエンタープライズ CAL に (標準) の組織や EOP プレミアム組織からのみ EOP プレミアムの別の組織に。EOP の標準的な組織では、いくつかのプレミアム機能はサポートされていない、ため EOP プレミアム組織から EOP の標準的な組織への移動に失敗する可能性があります。> 以下の手順では、EOP のフィルタ リング専用の組織です。1 つのオンラインの Exchange 組織から別の Exchange Online 組織に移行する際の考慮すべき事項があります。Exchange Online 組織では、次の手順の対象外です。 
+>  設定は、EOP standalone (標準) 組織から別の EOP Standard または Exchange Enterprise CAL (EOP Premium) 組織へ、または EOP premium 組織から別の EOP premium 組織にのみ、確実に移動できます。一部のプレミアム機能は EOP Standard 組織ではサポートされていないため、EOP premium 組織から EOP 標準組織への移動は成功しないことがあります。> これらの手順は、EOP filtering のみの組織を対象としています。1つの exchange online 組織から別の exchange online 組織への移行に関するその他の考慮事項があります。Exchange Online 組織は、これらの手順の対象外です。 
   
 次の例では、Contoso, Ltd. 社を Contoso Suites 社に併合します。次の図は、ドメイン、メール ユーザーとグループ、および設定を、移動元 EOP 組織 (contoso.onmicrosoft.com) から移動先 EOP 組織 (contososuites.onmicrosoft.com) に移動するプロセスを示しています。
   
@@ -47,10 +47,10 @@ ms.locfileid: "23002221"
     
 - コネクタ
     
-- トランスポート ルール
+- メール フロー ルール (トランスポート ルールとも呼ばれます)
     
     > [!NOTE]
-    > トランスポート ルール コレクションのエクスポートとインポートに対するコマンドレット サポートは、現在のところ、EOP Premium サブスクリプション プランだけでサポートされています。 
+    > メールフロールールコレクションのエクスポートとインポートに対するコマンドレットのサポートは、現時点では EOP Premium サブスクリプションプランではサポートされていません。 
   
 これらの設定をすべて収集する最も簡単な方法は、リモート Windows PowerShell を使用する方法です。リモート Windows PowerShell を使用して EOP に接続する方法については、「[リモート PowerShell を使用して Exchange Online Protection に接続する](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx)」を参照してください。
   
@@ -66,10 +66,10 @@ mkdir C:\EOP\Export
 cd C:\EOP\Export
 ```
 
-次のスクリプトは、移動元の組織のすべてのメール ユーザー、グループ、スパム対策の設定、マルウェア対策の設定、コネクター、およびトランスポート ルールを収集するために使用できます。次のテキストをコピーしてメモ帳などのテキスト エディターに貼り付け、それを先ほど作成した Export ディレクトリに Source_EOP_Settings.ps1 という名前で保存し、次のコマンドを実行してください。
+次のスクリプトは、移動元の組織のすべてのメールユーザー、グループ、スパム対策の設定、マルウェア対策の設定、コネクタ、およびメールフロールールを収集するために使用できます。次のテキストをコピーしてメモ帳などのテキストエディターに貼り付け、先ほど作成したエクスポートディレクトリに Source_EOP_Settings という名前でファイルを保存し、次のコマンドを実行します。
   
 ```
-&amp; "C:\EOP\Export\Source_EOP_Settings.ps1"
+& "C:\EOP\Export\Source_EOP_Settings.ps1"
 
 ```
 
@@ -133,11 +133,10 @@ Get-MalwareFilterRule | Export-Clixml MalwareFilterRule.xml
 Get-InboundConnector | Export-Clixml InboundConnector.xml
 Get-OutboundConnector | Export-Clixml OutboundConnector.xml
 #****************************************************************************
-# Exchange transport rules
+# Exchange mail flow rules
 #****************************************************************************
 $file = Export-TransportRuleCollection
 Set-Content -Path ".TransportRules.xml" -Value $file.FileData -Encoding Byte
-
 ```
 
 次のコマンドを Export ディレクトリから実行して、移動先の組織の .xml ファイルを更新します。contoso.onmicrosoft.com と contososuites.onmicrosoft.com は、実際の移動元および移動先の組織の名前に置き換えてください。

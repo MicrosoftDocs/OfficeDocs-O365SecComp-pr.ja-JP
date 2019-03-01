@@ -14,22 +14,22 @@ search.appverid:
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
-description: EOP のお客様のための既定のスパム対策アクションでは、スパム メッセージは受信者の [迷惑メール] フォルダーに移動されます。このアクションをオンプレミスのメールボックスで使用するには、EOP によって追加されたスパム ヘッダーを検出するように、オンプレミスのエッジ サーバーまたはハブ サーバーで Exchange トランスポート ルールを構成する必要があります。これらのトランスポート ルールにより、Set-OrganizationConfig コマンドレットの SclJunkThreshold プロパティで使用する Spam Confidence Level (SCL) が設定されます。
-ms.openlocfilehash: f712e66934956bcf46215e4016501003ce9b1725
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+description: 管理者は、Exchange Online Protection でスパムをユーザーの迷惑メールフォルダーにルーティングする方法について説明します。
+ms.openlocfilehash: 80c3e3cab1bdaf85e815ab1acc790cc907ebbb91
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222886"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341378"
 ---
 # <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>スパムが各ユーザーの [迷惑メール] フォルダーにルーティングされるようにする
 
 > [!IMPORTANT]
 > このトピックは、ハイブリッド展開でオンプレミスのメールボックスをホストしている Exchange Online Protection (EOP) のお客様にのみ当てはまります。Office 365 でメールボックスが完全にホストされている Exchange Online のお客様は、ここに示すコマンドを実行する必要はありません。 
   
-EOP のお客様のための既定のスパム対策アクションでは、スパム メッセージは受信者の [迷惑メール] フォルダーに移動されます。このアクションをオンプレミスのメールボックスで使用するには、EOP によって追加されたスパム ヘッダーを検出するように、オンプレミスのエッジ サーバーまたはハブ サーバーで Exchange トランスポート ルールを構成する必要があります。これらのトランスポート ルールにより、Set-OrganizationConfig コマンドレットの SclJunkThreshold プロパティで使用する Spam Confidence Level (SCL) が設定されます。 
+EOP のユーザーの既定のスパム対策アクションでは、スパムメッセージを受信者の迷惑メールフォルダーに移動します。このアクションをオンプレミスのメールボックスで使用するには、オンプレミスのエッジサーバーまたはハブサーバーで Exchange メールフロールール (トランスポートルールとも呼ばれます) を構成して、EOP によって追加されたスパムヘッダーを検出する必要があります。これらのメールフロールールは、SclJunkThreshold コマンドレットのプロパティで使用されるスパム信頼レベル (SCL) を設定し、スパムを各メールボックスの迷惑メールフォルダーに移動します。 
   
-### <a name="to-add-transport-rules-to-ensure-spam-is-moved-to-the-junk-email-folder-by-using-windows-powershell"></a>Windows PowerShell を使用して、スパムが [迷惑メール] フォルダーに移動されるようにするトランスポート ルールを追加するには
+### <a name="to-add-mail-flow-rules-to-ensure-spam-is-moved-to-the-junk-email-folder-by-using-windows-powershell"></a>Windows PowerShell を使用してスパムが迷惑メールフォルダーに移動されるようにメールフロールールを追加するには
 
 1. オンプレミス Exchange サーバーの Exchange 管理シェル にアクセスします。オンプレミスの Exchange 組織で Exchange 管理シェル を開く方法については、「 **Open the Shell**」を参照してください。
     

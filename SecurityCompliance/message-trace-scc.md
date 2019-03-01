@@ -9,12 +9,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理者は、セキュリティ & コンプライアンスセンターのメッセージ追跡を使用して、メッセージに何が起こったかを調べることができます。
-ms.openlocfilehash: 843d6032faad69895c49b9c10976b26626dc3812
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 95682b02f50996594650ac5d3aebf18f795efd65
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213961"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341568"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターのメッセージ追跡
 
@@ -351,7 +351,7 @@ ms.locfileid: "30213961"
 
 |**値**|**説明**|
 |:-----|:-----|
-|`AMA=SUM|v=1|`や`AMA=EV|v=1`|メッセージにマルウェアが含まれていることが確認されました。`SUM`マルウェアが、任意の数のエンジンによって検出された可能性があることを示します。`EV`特定のエンジンによってマルウェアが検出されたことを示します。エンジンによってマルウェアが検出されると、それ以降のアクションがトリガーされます。|
+|`AMA=SUM|v=1|` または `AMA=EV|v=1`|メッセージにマルウェアが含まれていることが確認されました。`SUM`マルウェアが、任意の数のエンジンによって検出された可能性があることを示します。`EV`特定のエンジンによってマルウェアが検出されたことを示します。エンジンによってマルウェアが検出されると、それ以降のアクションがトリガーされます。|
 |`Action=r`|メッセージは置き換えられました。|
 |`Action=p`|メッセージはバイパスされました。|
 |`Action=d`|メッセージは延期されました。|

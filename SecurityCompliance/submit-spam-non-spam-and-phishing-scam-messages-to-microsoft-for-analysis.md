@@ -15,12 +15,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'ユーザーは、誤検出および誤検知のスパムメッセージを分析のために Microsoft に送信することができます。 '
-ms.openlocfilehash: 553f73ffc82dc6f7091b81171213f95f7a092674
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: af11c7ab8e6d80737d2b25ca2b37c3bf7da9fe07
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276097"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341528"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する
 
@@ -79,7 +79,7 @@ Microsoft に迷惑メールまたはフィッシング詐欺メッセージを�
     
 - コンテンツフィルターを構成するときに、 **[迷惑メールフォルダーにメッセージを移動**する] アクションの代わりに [メッセージの**検疫**] アクションを使用すると、次のようになります。 
     
-  - 管理者は、スパム検疫済みメッセージを解放し、それらを誤検知として Exchange 管理センターから報告できます。詳細については、「[管理者として検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-an-administrator.md)」を参照してください。
+  - 管理者はスパムとして隔離されたメッセージを解放し、そのメッセージを誤検知メッセージとして Exchange 管理センターから報告できます。詳細については、「[管理者として検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-an-administrator.md)」を参照してください。
     
   - ユーザーは、次のチャネルを使用して、自分のスパム検疫済みメッセージを解放し、誤検知として報告することができます。 
     

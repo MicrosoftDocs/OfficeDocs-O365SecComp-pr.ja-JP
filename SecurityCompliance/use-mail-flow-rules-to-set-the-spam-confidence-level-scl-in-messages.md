@@ -14,27 +14,27 @@ search.appverid:
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
-description: トランスポート ルールを作成して、電子メール メッセージの Spam Confidence Level (SCL) を設定できます。SCL は、メッセージがスパムである可能性がどの程度かを測定します。スパムとは、迷惑な (通常は不要な) 電子メール メッセージです。メッセージに対するアクションは、メッセージの SCL 評価によって異なります。たとえば、同僚からのメッセージはスパムでないと信頼できるため、社内ユーザーからのメッセージの場合はスパム コンテンツ フィルターをバイパスできます。トランスポート ルールを使用して電子メール メッセージの SCL 値を設定すると、スパムの制御を強化できます。
-ms.openlocfilehash: dfce98aa9d4fec25a06674eb68d6e00ae2964e87
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+description: 管理者は、Exchange Online Protection でメッセージの SCL を設定する方法について説明します。
+ms.openlocfilehash: 48569087fe8455dbb5500add435430ec8e78ea30
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275627"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341348"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>メール フロー ルールを使用して、メッセージの Spam Confidence Level (SCL) を設定する
 
-トランスポート ルールを作成して、電子メール メッセージの Spam Confidence Level (SCL) を設定できます。SCL は、メッセージがスパムである可能性がどの程度かを測定します。スパムとは、迷惑な (通常は不要な) 電子メール メッセージです。メッセージに対するアクションは、メッセージの SCL 評価によって異なります。たとえば、同僚からのメッセージはスパムでないと信頼できるため、社内ユーザーからのメッセージの場合はスパム コンテンツ フィルターをバイパスできます。トランスポート ルールを使用して電子メール メッセージの SCL 値を設定すると、スパムの制御を強化できます。 
+電子メールメッセージのスパム信頼レベル (SCL) を設定するメールフロールール (トランスポートルールとも呼ばれます) を作成できます。SCL は、メッセージがスパムである可能性がどの程度かを測定します。スパムとは、迷惑な (通常は不要な) 電子メールメッセージのことです。サービスは、SCL レベルに応じて、メッセージに対して異なるアクションを実行します。たとえば、仕事仲間から内部で送信されたメッセージがスパムではないということを信頼するため、組織内のユーザーから送信されるメッセージに対してスパムコンテンツフィルター処理をバイパスすることができます。メールフロールールを使用してメッセージの SCL 値を設定すると、スパムの処理の制御が強化されます。 
   
  **始める前に把握しておくべき情報**
   
 - この手順の予想所要時間:10 分。
     
-- この手順を実行する前に、アクセス許可を割り当てる必要があります。必要なアクセス許可を確認するには、「 [Exchange Online の機能のアクセス](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)許可」の「トランスポートルール」、または「 [EOP の機能のアクセス許可](eop/feature-permissions-in-eop.md)」のエントリを参照してください。 
+- この手順を実行する前に、アクセス許可を割り当てる必要があります。必要なアクセス許可については、「 [Exchange Online の機能のアクセス](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)許可」の「メールフロールール」、または「 [EOP の機能のアクセス許可](eop/feature-permissions-in-eop.md)」を参照してください。 
     
-- このトピックの手順で使用可能なキーボード ショートカットについては、「 **Keyboard shortcuts in Exchange 2013**」を参照してください。
+- このトピックの手順で使用可能なキーボード ショートカットについては、「**Exchange 管理センターのキーボード ショートカット**」を参照してください。
     
-### <a name="to-create-a-transport-rule-that-sets-the-scl-of-a-message"></a>トランスポート ルールを作成してメッセージの SCL を設定するには
+### <a name="to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>メッセージの SCL を設定するメールフロールールを作成するには
 
 1. Exchange 管理センター (EAC) で、 **[メール フロー]** \> **[ルール]** を選択します。
     
@@ -64,7 +64,7 @@ ms.locfileid: "30275627"
 7. ルールのその他のプロパティを指定し、 **[保存]** を選択します。
     
     > [!TIP]
-    > このルールで選択または指定できるその他のプロパティの詳細については、「[Use the EAC to create a transport rule](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx#CreateEAC)」を参照してください。 
+    > このルールで選択または指定できるその他のプロパティの詳細については、「 [EAC を使用してメールフロールールを作成する](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures#use-the-eac-to-create-mail-flow-rules)」を参照してください。 
   
 ## <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 

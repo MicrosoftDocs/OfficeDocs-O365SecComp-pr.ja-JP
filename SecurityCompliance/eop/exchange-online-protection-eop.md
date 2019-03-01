@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: EOP の操作を開始する前に知っておく必要があるいくつかの点を以下に示します。
-ms.openlocfilehash: 2535a796a0ac1548160545226586233af7b50080
-ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
+ms.openlocfilehash: fc5ea726de190395407952ceac69c4c682ac8f67
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30206560"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341748"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -50,7 +50,7 @@ EOP 管理者向けのヘルプ コンテンツは、次の最上位カテゴリ
     
 - 「[EOP を構成するためのベスト プラクティス](best-practices-for-configuring-eop.md)」 推奨される構成の設定と、サービスの設定およびプロビジョニング後の考慮事項について説明しています。 
     
-- [EOP のメッセージングのポリシーとコンプライアンス](messaging-policy-and-compliance-in-eop.md) Exchange トランスポート ルール (カスタム フィルター処理ルール) を使用して特定の会社の規制とポリシーを適用する方法、および監査レポートを使用してサービスに対する変更を追跡する方法について説明します。 
+- [EOP のメッセージングポリシーとコンプライアンス](messaging-policy-and-compliance-in-eop.md)Exchange メールフロールール (トランスポートルールとも呼ばれます) を使用して特定の会社の規制やポリシーを適用する方法、および監査レポートを使用してサービスへの構成の変更を追跡する方法について説明します。 
     
 - 「[Anti-Spam and Anti-Malware Protection](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)」 スパム フィルター処理とマルウェア フィルター処理について説明し、それらをカスタマイズして組織のニーズに最適化する方法を示しています。また、管理者とエンド ユーザーが検疫済みメッセージに対して実行可能なタスクについても説明しています。 
     

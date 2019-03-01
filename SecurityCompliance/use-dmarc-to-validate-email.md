@@ -14,12 +14,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Office 365 組織から送信されたメッセージを検証するための、ドメインベースのメッセージ認証、レポート、および準拠 (DMARC) を構成する方法について説明します。
-ms.openlocfilehash: 178eb9658f1cfe298d3b5600ecdc524d7bd66a72
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: d224acaf6b1d53cdf9ababca87c5880a5499c613
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276181"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341578"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>DMARC を使用して Office 365 でメールを検証する
 
@@ -209,7 +209,7 @@ DMARC 拒否ポリシー (p=reject) を発行すると、どの顧客も Office 
   
 - ユーザーが、自分のメール クライアントを使用して、個別に安全な送信者を追加する
     
-- 管理者が、該当する送信者のメッセージを許可するすべてのユーザーに向けて Exchange トランスポート ルール (ETR) を作成する 
+- 管理者は、特定の送信者に対してメッセージを許可するすべてのユーザーに対して Exchange メールフロールール (トランスポートルールとも呼ばれます) を作成します。 
     
 ## <a name="troubleshooting-your-dmarc-implementation"></a>DMARC 実装のトラブルシューティング
 <a name="dmarctroubleshoot"> </a>

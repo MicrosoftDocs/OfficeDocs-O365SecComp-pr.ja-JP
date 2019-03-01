@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Office 365 Message Encryption (OME) を使用してメッセージを暗号化および復号化するメールフロールール (トランスポートルールとも呼ばれます) を作成する方法を学習できます。
-ms.openlocfilehash: f76abe2d341b9e3677a90d447e70f6091e3a91cc
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+description: 管理者は、Office 365 Message Encryption (OME) を使用してメッセージを暗号化および復号化するメールフロールール (トランスポートルール) を作成する方法を学習できます。
+ms.openlocfilehash: 29199856600b05cf45e3e9b23c943c87867d169d
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276207"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341538"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Office 365 でメールを暗号化するためにメール フロー ルールを定義する
 
@@ -201,7 +201,7 @@ Office 365 組織を新しい OME 機能にまだ移行していない場合は�
 
 詳細な構文とパラメーターについては、「[New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule)」を参照してください。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Office 365 での暗号化](encryption.md)
 

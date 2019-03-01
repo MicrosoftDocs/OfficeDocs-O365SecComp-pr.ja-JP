@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Office 365 セキュリティ&amp;コンプライアンスセンターを使用して、組織のメッセージ保持、電子情報開示、および保持要件をサポートするアーカイブメールボックスを有効にします。
-ms.openlocfilehash: 763097925ed0910fe9a66e5c556b8a2995df74e6
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 39cd5fd8d7991b787d95e39e4994dc9b0786522c
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296060"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341798"
 ---
 # <a name="enable-archive-mailboxes-in-the-office-365-security-amp-compliance-center"></a>Office 365 セキュリティ&amp;コンプライアンスセンターでアーカイブメールボックスを有効にする
   
@@ -138,7 +138,6 @@ Exchange Online に接続した後、以下のセクションのコマンドを�
     - 14 日以上経過したアイテムを、ユーザーのプライマリ メールボックスの [回復可能なアイテム] フォルダーから、アーカイブ メールボックスの [回復可能なアイテム] フォルダーへ自動的に移動します
     
 - アーカイブメールボックスと Exchange アイテム保持ポリシーの詳細については、以下を参照してください。
-  
     
   - [保持タグおよびアイテム保持ポリシー](https://go.microsoft.com/fwlink/?LinkId=404424)
     

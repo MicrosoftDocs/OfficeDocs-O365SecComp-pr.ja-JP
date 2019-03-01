@@ -15,12 +15,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: ここでは、スパム対策保護に関するよく寄せられる質問と回答について説明します。 回答は、Microsoft Exchange Online と Exchange Online Protection (EOP) のお客様に当てはまります。
-ms.openlocfilehash: f41799a3870e899fd3601453aaa11f6f9c51c608
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 47ab5202e4f20bbb8cdcf1d83987b0c0c20e8f29
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223056"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341678"
 ---
 # <a name="anti-spam-protection-faq"></a>スパム対策保護 FAQ
 
@@ -34,7 +34,7 @@ ms.locfileid: "30223056"
 A. **着信メッセージの場合、** スパムの大部分は、送信者の IP アドレスに基づき、接続フィルタを介して削除されます。 次に、このサービスはメッセージのコンテンツを検査します。 既定では、コンテンツ フィルターで処理されたスパムは受信者の迷惑メール フォルダーに送信されます。 既定のアクションを変更できます。 たとえば、コンテンツ フィルター ポリシーで構成することにより、スパム メッセージを検疫に送信できます。 
   
 > [!IMPORTANT]
-> EOP スタンドアロンのお客様の場合、 社内メールボックスで **[メッセージを [迷惑メール] フォルダーに移動する]** アクションを確実に機能させるには、社内サーバーで 2 つの Exchange トランスポート ルールを構成して、EOP が追加したスパム ヘッダーを検出する必要があります。 詳細については、「 [スパムが各ユーザーの [迷惑メール] フォルダーにルーティングされるようにする](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。 
+> EOP スタンドアロンのお客様の場合: [**迷惑メールフォルダーにメッセージを移動**します] アクションがオンプレミスのメールボックスと連携するようにするには、オンプレミスのサーバー上で2つの Exchange メールフロールール (トランスポートルールとも呼ばれます) を設定して検出する必要があります。EOP によって追加されたスパムヘッダー。詳細については、「[スパムが各ユーザーの迷惑メールフォルダーにルーティングされるようにする](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。 
   
  **送信メッセージの場合、** メッセージは、より危険度の高い配信プール経由でルーティングされるか、戻ってきて配信されないかのいずれかです。後者の場合は、送信者がメッセージを配信できなかったことを知らせる配信状態通知 (DSN) メッセージを受け取るはずです。 
   

@@ -14,12 +14,12 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: エンド ユーザー向けスパム通知は、既定の会社全体のコンテンツ フィルター ポリシーに対して、またはドメインに適用されるカスタム コンテンツ フィルター ポリシーに対して構成できます。
-ms.openlocfilehash: 2cab65347c726cab482eb127f5068586f4f3afd3
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 87a55de49a01c69f3392a3740e19e52630f4dcc8
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222976"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341298"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>EOP でのエンドユーザー スパム通知の構成
   
@@ -74,7 +74,7 @@ Office 365 で、受信拒否リストに送信者を追加する場合は、[**
 > [!NOTE]
 >  エンド ユーザー向けスパム通知は、有効なコンテンツ フィルター ポリシーに対してのみ機能します。 >  エンド ユーザーの迷惑メールの通知は、1 日 1 回だけ送信されます。特定のカスタマーについて通知の配信時間を保証することは不可能であり、設定もできません。 
   
- **ヒント:** エンド ユーザーのスパム通知を完全に実装する前に一部のユーザーに送信してテストする場合は、それらのユーザーが存在しているドメインでエンド ユーザーのスパム通知を有効にするカスタム コンテンツ フィルター ポリシーを作成します。その後、EAC の **[メール フロー] \> [ルール]** で quarantine@messaging.microsoft.com (通知を送信する電子メール アドレス) からのメッセージをブロックするトランスポート ルールを作成し、通知を送るユーザーを対象から除きます。下の図は、Contoso.com ドメインからの 2 人のユーザー (SaraD と AlexD) に対する例外を作成する例です。 
+ **ヒント:** エンドユーザーのスパム通知を完全に実装する前に限定された一連のユーザーに送信してテストする場合は、カスタムコンテンツフィルターポリシーを作成して、ユーザーが存在するドメインに対してエンドユーザーのスパム通知を有効にします。次に、EAC の [**メールフロー \>ルール**] で、メールフロールール (トランスポートルールとも呼ばれます) を作成して、必要なユーザーの例外を除き、quarantine@messaging.microsoft.com (通知を送信する電子メールアドレス) からのメッセージをブロックします。通知を受信します。次の図は、ドメイン Contoso.com から2人のユーザー (SaraD および AlexD) に対して例外を作成する例です。 
   
 ![エンド ユーザー向けスパム通知をテストするためのトランスポート ルール](media/EOP-ESN-testspecificusers.jpg)
   

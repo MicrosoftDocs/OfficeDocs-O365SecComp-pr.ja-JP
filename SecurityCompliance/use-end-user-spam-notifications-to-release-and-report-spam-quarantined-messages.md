@@ -13,12 +13,12 @@ ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
 ms.collection:
 - M365-security-compliance
 description: '検疫済みメールに関するエンドユーザーのスパム通知メッセージを管理者から取得したユーザーは、これらのメッセージに対してこれらの操作を行うことができます。 '
-ms.openlocfilehash: fac960a8eb090248988bd5a0072f659f04e852b9
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: adddd5032e6254b6084a7f6e714859b713815ed2
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275217"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341238"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>エンド ユーザーのスパム通知を使ってスパム検疫済みメッセージを解放して報告する
 
@@ -41,6 +41,6 @@ ms.locfileid: "30275217"
 - **迷惑メールではないと報告** このリンクをクリックすると、メッセージのコピーが分析のために Microsoft に送信されます。スパム チームはメッセージの評価と分析を行い、分析結果に応じてスパム対策フィルター ルールを調整し、そのメッセージの通過を許可します。 
     
 > [!NOTE]
->  トランスポート ルールに適合したために検疫されたメッセージは、エンド ユーザー スパム検疫済みメッセージには含まれません。スパム検疫済みメッセージのみが列挙されます。 >  メッセージを移動して、それを誤検知 (迷惑メールではない) として報告できるのは一度だけです。 
+>  メールフロールール (とも呼ばれます) が一致したために検疫されたメッセージは、エンドユーザースパム検疫済みメッセージには含まれません。スパム検疫済みメッセージのみが一覧表示されます。> メッセージを解放して、誤検知 (迷惑メールではない) として報告することができるのは1回だけです。 
   
 
