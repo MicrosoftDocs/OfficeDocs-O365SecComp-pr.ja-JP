@@ -89,13 +89,13 @@
 
 # [脅威からの保護](protect-against-threats.md)
 ## [スパム対策とマルウェア対策の保護](anti-spam-and-anti-malware-protection.md)
-### [電子メール保護の入門ビデオ](videos-for-getting-started-with-protecting-your-email.md)
-### [Office 365 の電子メールのスパム対策保護](anti-spam-protection.md)
+### [EOP の概要](videos-for-getting-started-with-protecting-your-email.md)
+### [Office 365 メールのスパム対策保護](anti-spam-protection.md)
 ### [Office 365 で、メールが迷惑メールとしてマークされるのを防ぐ方法](prevent-email-from-being-marked-as-spam.md)
 ### [Office 365 で迷惑メールを減らす方法](reduce-spam-email.md)
 ### [EOP と Office 365 で、メールが迷惑メールとしてマークされるのを防ぐ](prevent-email-from-being-marked-as-spam-0.md)
 ### [Office 365 で送信スパムを制御する](outbound-spam-controls.md)
-### [検出漏れの問題を防止するために Office 365 スパム フィルターを使用して迷惑メールをブロックする](block-email-spam-to-prevent-false-negatives.md)
+### [検出漏れの問題を防止するために Office 365 スパム フィルターを使用して迷惑メールをブロックする](reduce-spam-email.md)
 ### [ゼロアワー自動消去 - スパムやマルウェアからの保護](zero-hour-auto-purge.md)
 ### [スパムが各ユーザーの [迷惑メール] フォルダーにルーティングされるようにする](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)
 ### [迷惑メール メッセージを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)
@@ -297,7 +297,7 @@
 #### [読み込みセットの管理](compliance20/manage-load-sets.md)
 #### [ワーキング セットに Office 365 以外のデータを読み込む](compliance20/load-non-office365-data.md)
 #### [ワーキング セット内のデータのクエリ](compliance20/working-set-search.md)
-#### [ワーキング セット内のドキュメントを表示する](compliance20/annotating-and-redacting-documents.md)
+#### [ワーキング セット内のドキュメントを表示する](compliance20/view-documents-in-working-set.md)
 #### [ワーキング セット内のドキュメントにタグ付けする](compliance20/tagging-documents.md)
 
 ### [ケース データを分析する](compliance20/analyzing-data-in-working-set.md)
@@ -317,11 +317,8 @@
 #### [ケースでメンバーを追加または削除する](compliance20/add-remove-members.md)
 #### [検索と分析の設定を構成する](compliance20/configure-search-analytics-settings.md)
 
-### Advanced eDiscovery (プレビュー) のレファレンス
-#### [検索の制限](compliance20/search-limits-ediscovery20.md)
-#### [インデックス作成の制限](compliance20/indexing-limits-ediscovery20.md)
-#### [エクスポートの制限](compliance20/export-limits-ediscovery20.md)
-#### [ダウンロードの制限](compliance20/download-limits-ediscovery20.md)
+### Advanced eDiscovery (プレビュー) のリファレンス
+#### [Advanced eDiscovery (プレビュー) の制限](compliance20/limits-ediscovery20.md)
 #### [サポートされているファイルの種類](compliance20/supported-filetypes-ediscovery20.md)
 #### [ドキュメントのメタデータ フィールド](compliance20/document-metadata-fields.md)
 
