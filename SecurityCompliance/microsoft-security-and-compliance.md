@@ -7,14 +7,16 @@ ms.date: 01/23/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- M365-security-compliance
 localization_priority: Normal
 description: すべての新しい Microsoft 365 セキュリティセンターとコンプライアンスセンターの準備をする
-ms.openlocfilehash: 6eb30c8439424a60b5cf02d55d771e11cf24ad10
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 662f953b9c9e60d2ce59fbde9de03cf973fa0b99
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214967"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357598"
 ---
 # <a name="get-ready-for-the-new-microsoft-365-security-center-and-microsoft-365-compliance-center"></a>新しい Microsoft 365 セキュリティ センターと Microsoft 365 コンプライアンス センターの準備を行う
 
@@ -88,18 +90,18 @@ Microsoft 365 コンプライアンスセンターを初めて使用すると、
 |Portal  |Global<br/>管理者  |セキュリティ <br/>管理者<br>または<br>セキュリティ<br>閲覧者 |コンプライアンス<br/>管理者  |
 |---------|---------|---------|---------|
 |[Office 365 セキュリティ/コンプライアンス センター](https://protection.office.com) |はい |はい  |はい |
-|[Microsoft 365 セキュリティセンター](https://security.microsoft.com) |はい  | Yes  | いいえ        |
-|[Microsoft 365 コンプライアンスセンター](https://compliance.microsoft.com) | はい | いいえ | はい |
+|[Microsoft 365 セキュリティセンター](https://security.microsoft.com) |はい  | Yes  | なし        |
+|[Microsoft 365 コンプライアンスセンター](https://compliance.microsoft.com) | はい | なし | はい |
 |[コンプライアンス マネージャー](https://aka.ms/compliancemanager) |はい | はい |はい  |
-|[Azure Information Protection](https://docs.microsoft.com/azure/information-protection) |はい |Yes |いいえ |
-|[Azure Security Center](https://docs.microsoft.com/azure/security-center/)  |はい |Yes |いいえ |
-|[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |はい |Yes |いいえ |
-|[Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp)および[エンドポイントの検出と応答](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)     |はい |Yes |いいえ |
-|[id 保護](https://docs.microsoft.com/azure/active-directory/identity-protection)     |はい |Yes |いいえ |
-|[特権 id の管理](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |はい |Yes |いいえ |
+|[Azure Information Protection](https://docs.microsoft.com/azure/information-protection) |はい |Yes |なし |
+|[Azure Security Center](https://docs.microsoft.com/azure/security-center/)  |はい |Yes |なし |
+|[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |はい |Yes |なし |
+|[Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp)および[エンドポイントの検出と応答](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)     |はい |Yes |なし |
+|[id 保護](https://docs.microsoft.com/azure/active-directory/identity-protection)     |はい |Yes |なし |
+|[特権 id の管理](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |はい |Yes |なし |
 |[Intune](https://docs.microsoft.com/intune)     |はい |はい |はい |
 |[Cloud App Security](https://docs.microsoft.com/cloud-app-security/)     |はい |はい |はい |
-|[セキュリティで保護されたスコア](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)     |はい |Yes |いいえ |
+|[セキュリティで保護されたスコア](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)     |はい |Yes |なし |
 |[Exchange](https://docs.microsoft.com/exchange/)     |はい |はい |はい |
 
 ## <a name="additional-resources"></a>その他のリソース

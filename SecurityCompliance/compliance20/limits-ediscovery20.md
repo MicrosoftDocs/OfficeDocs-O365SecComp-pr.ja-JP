@@ -3,25 +3,23 @@ title: 高度な電子情報開示 (プレビュー) の制限
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: ''
-ms.openlocfilehash: db8972ef227fdd51248c36ca2c03c8ccfc7e05ea
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 2611205a41b9113c0ca30f787c119806d75f35c8
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30306556"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357358"
 ---
-# <a name="limits-in-advanced-ediscovery-preview"></a>高度な電子情報開示の制限 (プレビュー)
+# <a name="limits-in-advanced-ediscovery-preview"></a>Advanced eDiscovery (プレビュー) の制限
 
 この記事では、高度な電子情報開示 (プレビュー) の制限について説明します。
 

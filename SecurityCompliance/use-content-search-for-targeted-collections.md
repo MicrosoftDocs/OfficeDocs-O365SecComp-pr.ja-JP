@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Office 365 セキュリティ&amp;コンプライアンスセンターでコンテンツ検索を使用して、対象となるコレクションを実行します。対象となるコレクションは、ケースまたは権限アイテムに応答するアイテムが特定のメールボックスまたはサイトフォルダーにあることを確信していることを意味しています。この記事に記載されているスクリプトを使用して、検索する特定のメールボックスまたはサイトフォルダーのフォルダー ID またはパスを取得します。
-ms.openlocfilehash: c6e837e2f95b4f2ae3e32344f966f096407e360e
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 6c41069a268991553f03763ae80dea032d5db202
+ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296930"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30354689"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Office 365 のコンテンツ検索を使用した対象コレクション
 
@@ -55,7 +55,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのコン�
     
 - **ユーザーの資格情報**-スクリプトは、資格情報を使用して Exchange Online に接続&amp;し、リモート PowerShell を使用してセキュリティ/コンプライアンスセンターに接続します。前述のように、このスクリプトを正常に実行するには、適切なアクセス許可を割り当てる必要があります。
     
-メールボックスフォルダーまたはサイトパス名の一覧を表示するには、次のようにします。
+メールボックスフォルダーまたはサイト documentlink (path) 名の一覧を表示するには、次のようにします。
   
 1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、 `GetFolderSearchParameters.ps1`のようになります。
     
@@ -66,9 +66,10 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのコン�
   #      Online and who is an eDiscovery Manager in the Security &amp; Compliance Center.           #
   # The script will then:                                           #
   #    * If an email address is supplied: list the folders for the target mailbox.          #
-  #    * If a SharePoint or OneDrive for Business site is supplied: list the folder paths for the site. #
-  #    * In both cases, the script supplies the correct search properties (folderid: or path:)      #
-  #      appended to the folder ID or path ID to use in a Content Search.               #
+  #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
+  #    * for the site.                                                                                  #
+  #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)  #
+  #      appended to the folder ID or documentlink to use in a Content Search.              #
   # Notes:                                              #
   #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the   #
   #      the current folder and all sub-folders are searched.                       #
@@ -154,7 +155,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのコン�
           {
               $rawUrl = $match.Value
               $rawUrl = $rawUrl -replace "Data Link: " -replace "," -replace "}"
-              Write-Host "path:""$rawUrl"""
+              Write-Host "DocumentLink:""$rawUrl"""
           }
       }
       else
@@ -196,18 +197,15 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのコン�
   
 ### <a name="script-output-for-site-folders"></a>サイトフォルダーのスクリプト出力
 
-SharePoint または OneDrive for business サイトからパスを取得している場合、スクリプトはリモート&amp; PowerShell を使用してセキュリティコンプライアンスセンターに接続し、サイトを検索する新しいコンテンツ検索を作成し、フォルダーの一覧を表示します。指定したサイトにあります。このスクリプトは、各フォルダーの名前を表示し、**パス**のプレフィックス (サイトプロパティの名前) をフォルダーの URL に追加します。**path**プロパティは検索可能なプロパティであるため、手順`path:<path>` 2 の検索クエリでそのフォルダーを検索するために使用します。 
+SharePoint または OneDrive for business サイトから documentlinks を取得する場合、スクリプトはリモート PowerShell を&amp;使用してセキュリティ/コンプライアンスセンターに接続し、サイトを検索する新しいコンテンツ検索を作成し、そのリストを表示します。指定したサイトにあるフォルダー。このスクリプトは、各フォルダーの名前を表示し、**パス**のプレフィックス (サイトプロパティの名前) をフォルダーの URL に追加します。**path**プロパティは検索可能なプロパティであるため、手順`path:<path>` 2 の検索クエリでそのフォルダーを検索するために使用します。 
   
 サイトフォルダーのスクリプトによって返される出力の例を次に示します。
   
-![スクリプトによって返されるサイトフォルダーのパス名の一覧の例](media/519e8347-7365-4067-af78-96c465dc3d15.png)
+![スクリプトによって返されるサイトフォルダーのドキュメントリンク名のリストの例](media/519e8347-7365-4067-af78-96c465dc3d15.png)
   
-## <a name="step-2-use-a-folder-id-or-path-to-perform-a-targeted-collection"></a>手順 2: フォルダー ID またはパスを使用して対象のコレクションを実行する
+## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>手順 2: フォルダー ID または documentlink を使用して対象のコレクションを実行する
 
-特定のユーザーのフォルダー id またはパスの一覧を収集するスクリプトを実行した後、次の手順では、セキュリティ&amp;コンプライアンスセンターに移動して、特定のフォルダーを検索する新しいコンテンツ検索を作成します。`folderid:<folderid>`または、コンテンツ検索`path:<path>`キーワードボックスで構成した検索クエリで or プロパティを使用します (または、 **new-compliancesearch**コマンドレットを使用する場合は、 *contentmatchquery*パラメーターの値として指定します)。`folderid`または`path`プロパティを他の検索パラメーターまたは検索条件と組み合わせることができます。`folderid`または`path`プロパティのみをクエリに含める場合、検索では指定したフォルダーにあるすべてのアイテムが返されます。 
-  
-> [!NOTE]
-> OneDrive の`path`場所を検索するためにプロパティを使用しても、検索結果には .png, tiff ファイル、.wav ファイルなどのメディアファイルは返されません。 
+特定のユーザーのフォルダー id または documentlinks の一覧を収集するスクリプトを実行した後、次の手順では、セキュリティ&amp;コンプライアンスセンターに移動して、特定のフォルダーを検索する新しいコンテンツ検索を作成します。`folderid:<folderid>`または、コンテンツ検索`documentlink:<path>`キーワードボックスで構成した検索クエリで or プロパティを使用します (または、 **new-compliancesearch**コマンドレットを使用する場合は、 *contentmatchquery*パラメーターの値として指定します)。`folderid`または`documentlink`プロパティを他の検索パラメーターまたは検索条件と組み合わせることができます。`folderid`または`documentlink`プロパティのみをクエリに含める場合、検索では指定したフォルダーにあるすべてのアイテムが返されます。 
   
 1. [https://protection.office.com](https://protection.office.com) に移動します。
     
@@ -225,19 +223,19 @@ SharePoint または OneDrive for business サイトからパスを取得して�
     
     - [検索する**特定のサイトを選択する**] をクリックし、手順1でスクリプトを実行したときに指定したものと同じサイト URL を追加します。 
     
-6. **[次へ]** をクリックします。
+6. [**次へ**] をクリックします。
     
-7. [**検索する内容を選択**してください] ページの [キーワード] ボックスに、 `folderid:<folderid>`手順`path:<path>` 1 でスクリプトによって返された値を貼り付けます。 
+7. [**検索する内容を選択**してください] ページの [キーワード] ボックスに、 `folderid:<folderid>`手順`documentlink:<path>` 1 でスクリプトによって返された値を貼り付けます。 
     
     たとえば、次のスクリーンショットのクエリは、ユーザーの回復可能なアイテムフォルダーのパージサブフォルダー内のアイテムを検索します (パージ`folderid`サブフォルダーのプロパティの値は、手順1のスクリーンショットに示されています)。
     
-    ![folderid またはパスを検索クエリのキーワードボックスに貼り付けます。](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
+    ![検索クエリのキーワードボックスに folderid または documentlink を貼り付ける](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
   
 8. [**検索**] をクリックして、対象となるコレクション検索を開始します。 
   
 ### <a name="examples-of-search-queries-for-targeted-collections"></a>対象となるコレクションの検索クエリの例
 
-ここでは、 `folderid`検索クエリで and `path`プロパティを使用して対象となるコレクションを実行する例をいくつか示します。プレースホルダーは、スペースを節約`folderid:<folderid>`する`path:<path>`ために使用されることに注意してください。 
+ここでは、 `folderid`検索クエリで and `documentlink`プロパティを使用して対象となるコレクションを実行する例をいくつか示します。プレースホルダーは、スペースを節約`folderid:<folderid>`する`documentlink:<path>`ために使用されることに注意してください。 
   
 - この例では、3つの異なるメールボックスフォルダーを検索します。同じようなクエリ構文を使用して、ユーザーの回復可能なアイテムフォルダー内の隠しフォルダーを検索することができます。
     
@@ -254,13 +252,13 @@ SharePoint または OneDrive for business サイトからパスを取得して�
 - 次の使用例は、タイトルに "NDA" という文字が含まれるドキュメントのサイトフォルダー (およびすべてのサブフォルダー) を検索します。
     
   ```
-  path:<path> AND filename:nda
+  documentlink:<path> AND filename:nda
   ```
 
 - この例では、日付の範囲内で変更されたドキュメントのサイトフォルダー (およびすべてのサブフォルダー) を検索します。
     
   ```
-  path:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
+  documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
   
 ## <a name="more-information"></a>詳細情報
@@ -273,8 +271,6 @@ SharePoint または OneDrive for business サイトからパスを取得して�
     
 - メールボックスフォルダーを検索する場合、指定されたフォルダー `folderid` (そのプロパティで識別される) のみが検索されます。サブフォルダーは検索されません。サブフォルダーを検索するには、検索するサブフォルダーのフォルダー ID を使用する必要があります。 
     
-- サイトフォルダーを検索すると、その`path`フォルダー (プロパティによって識別される) とすべてのサブフォルダーが検索されます。 
+- サイトフォルダーを検索すると、その`documentlink`フォルダー (プロパティによって識別される) とすべてのサブフォルダーが検索されます。 
     
-- 前述したように、プロパティ`path`を使用して、.png、tiff、.wav ファイルなどのメディアファイルを OneDrive の場所に配置することはできません。OneDrive フォルダーのメディアファイルを検索するには、別の[サイトプロパティ](keyword-queries-and-search-conditions.md#searchable-site-properties)を使用します。 
-
 - 検索クエリで指定した`folderid`プロパティのみを使用した検索の結果をエクスポートする場合は、[最初のエクスポート] オプションを選択できます。「すべてのアイテム、認識できない形式のすべてのアイテム、暗号化されている、またはその他の理由でインデックスが作成されていません」というオプションがあります。フォルダー内のすべてのアイテムは、常にインデックス作成の状態にかかわらずエクスポートされます。フォルダー ID には常にインデックスが付けられています。

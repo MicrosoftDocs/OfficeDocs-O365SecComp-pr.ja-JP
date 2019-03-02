@@ -12,13 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
+ms.collection:
+- M365-security-compliance
 description: データ損失防止の例を使用して、セキュリティ&amp; /コンプライアンスセンターの詳細なレポートに移動する方法を参照してください。
-ms.openlocfilehash: 4b6fee45ebd48a0bd6d5c6c166fb200b28cb9442
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 101aeec71e724204018dee8d12d6c74a120578bf
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217327"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357418"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>チュートリアル - インサイトから詳細レポートへの移動
 

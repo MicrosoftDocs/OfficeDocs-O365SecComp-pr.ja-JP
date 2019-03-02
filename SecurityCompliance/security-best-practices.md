@@ -8,8 +8,6 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection:
-- M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
@@ -17,13 +15,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+- Strat_O365_IP
 description: 以下の推奨されるベストプラクティスに従って、データ違反または侵害されたアカウントの可能性を最小限に抑えます。
-ms.openlocfilehash: ff91721569aae5a4982e3f1dd054575d00c278d8
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 97dffe6e0cf4551c9addc1ba53c4f95c7d88b3f3
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276127"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357528"
 ---
 # <a name="security-best-practices-for-office-365"></a>Office 365 のセキュリティのベスト プラクティス
 
@@ -46,37 +48,37 @@ office 365 について office の[管理者の役割](https://support.office.co
 MFA は、パスワードを正確に入力した後に、スマートフォンでの通話、テキストメッセージ、またはアプリの通知の確認をユーザーに要求することで、強力なパスワード戦略に保護の層を追加します。MFA が設定されていると、ユーザーのパスワードが侵害された場合でも、Office 365 のユーザーアカウントは承認されていないアクセスから保護されたままです。アカウントが保護されるのは、追加のチャレンジが満たされるまでアカウントへのアクセスが許可されないためです。侵害または盗難にあったパスワードが十分ではありません。
   
 - [Office 365 展開用の多要素認証の計画](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
-    
+
 - [Office 365 の多要素認証を設定する](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
-    
+
 ## <a name="use-office-365-cloud-app-security"></a>Office 365 Cloud App Security の使用
 
 ビジネスニーズに基づいてポリシーを設定し、異常なアクティビティを追跡して、それに対処します。Office 365 Cloud App Security を使用して通知を設定することで、管理者は大量のデータのダウンロード、サインイン試行の失敗、不明または危険な IP アドレスからのサインインなど、不審で、または危険なユーザーアクティビティを確認できます。office 365 Enterprise E5 プランを持つ組織では、すぐに office 365 Cloud App Security の使用を開始することができます。エンタープライズプランが異なる場合は、Office 365 Cloud App Security をアドオンとして購入できます。
   
 - [O365 Cloud App Security の概要](office-365-cas-overview.md)
-    
+
 - [Office 365 Cloud App Security を有効にする](turn-on-office-365-cas.md)
-    
+
 ## <a name="secure-mail-flow"></a>セキュリティで保護されたメールフロー
 
 Exchange Online Protection の豊富な機能セットを実装し、各電子メールメッセージの送信者の id についての保証を強化し、電子メールによって送信される不明なマルウェア、ウイルス、および悪意のある url から保護します。
   
-- 組織の[Office 365 電子メールのスパム対策保護](anti-spam-protection.md)ポリシーを構成します。 
-    
+- 組織の[Office 365 電子メールのスパム対策保護](anti-spam-protection.md)ポリシーを構成します。
+
 - [「安全な添付ファイルと安全なリンク](https://technet.microsoft.com/library/mt148491.aspx)」について説明し、Advanced threat protection を使用します。
-    
+
 - [組織にマルウェア対策保護を追加](https://technet.microsoft.com/en-us/library/jj200669%28v=exchg.150%29.aspx)します。
-    
-- ユーザーのために[Office 365 の電子メールメッセージの安全性](safety-tips-in-office-365.md)に関するヒントについて説明し、有効にします。 
-    
+
+- ユーザーのために[Office 365 の電子メールメッセージの安全性](safety-tips-in-office-365.md)に関するヒントについて説明し、有効にします。
+
 - Office 365 で組織のカスタムドメインを使用している場合は、SPF、dkim、DMARC を設定して、組織によって送信されたメールを検証し、スプーフィングを防止するために、次のようにします。
-    
+
   - [スプーフィングを防止するために、Office 365 で SPF をセットアップ](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)します。
-    
+
   - [dkim を使用して、Office 365 でカスタムドメインから送信される送信電子メールを検証](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)します。
-    
+
   - [DMARC を使用して、Office 365 で電子メールを検証](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx)します。
-    
+
 ## <a name="enable-mailbox-audit-logging"></a>メールボックス監査ログを有効にする
 
 Office 365 では、一部の監査ログが自動的に有効になります。ただし、メールボックス監査ログは既定で有効になっていません。Office 365 のすべてのユーザーメールボックスの監査ログをオンにするには、Exchange Online PowerShell を使用します。詳細については、「 [Enable mailbox auditing in Office 365](https://go.microsoft.com/fwlink/p/?LinkID=626109)」を参照してください。
@@ -99,13 +101,11 @@ Office 365 管理者は、カスタマーロックボックスを使用して、
 これらのセキュリティ機能を運用環境で採用する前に、Office 365 試用版サブスクリプションで作業してください。
   
 - [Office 365 試用版サブスクリプションを作成する](https://technet.microsoft.com/library/mt736406.aspx)
-    
-- [ユーザーアカウントの MFA を構成およびテストする](https://technet.microsoft.com/library/mt492459.aspx)
-    
-- [Office 365 Cloud App Security を構成およびテストして、グローバル管理者のアクティビティを通知する](https://technet.microsoft.com/library/mt757250.aspx)
-    
-- [疑わしい電子メールの ATP を構成およびテストする](https://technet.microsoft.com/library/mt490479.aspx)
-    
-- 上記の各手順について、試用版サブスクリプションの[Office 365 セキュリティスコア](https://securescore.office.com/)を確認する 
-    
 
+- [ユーザーアカウントの MFA を構成およびテストする](https://technet.microsoft.com/library/mt492459.aspx)
+
+- [Office 365 Cloud App Security を構成およびテストして、グローバル管理者のアクティビティを通知する](https://technet.microsoft.com/library/mt757250.aspx)
+
+- [疑わしい電子メールの ATP を構成およびテストする](https://technet.microsoft.com/library/mt490479.aspx)
+
+- 上記の各手順について、試用版サブスクリプションの[Office 365 セキュリティスコア](https://securescore.office.com/)を確認する

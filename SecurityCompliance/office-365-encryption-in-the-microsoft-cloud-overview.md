@@ -10,14 +10,16 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection:
+- Strat_O365_Enterprise
 - M365-security-compliance
+- Strat_O365_Enterprise
 description: Microsoft クラウドでの暗号化の概要について説明します。
-ms.openlocfilehash: 8d4b94908e9847062ff5f4612b8726b44a36a59f
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 36bb50cda5f39461401b14ca3e7ada77a6e2cc0d
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275947"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357518"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Microsoft Cloud における暗号化
 
@@ -36,6 +38,7 @@ microsoft[セキュリティポリシー](https://servicetrust.microsoft.com/Vie
 FIPS 140-2 は、これを使用する製品ではなく、暗号化を実装する製品モジュールを検証するために特別に設計された標準です。サービス内で実装されている暗号化モジュールは、ハッシュの強度、キーの管理などの要件を満たすことが認定されている場合があります。Microsoft のクラウドサービスでのデータの機密性、整合性、または可用性を保護するために暗号化機能が使用されている場合は、FIPS 140-2 標準に準拠するモジュールと暗号が使用されます。
 
 Microsoft は、Windows オペレーティングシステムの新しいリリースごとにクラウドサービスで使用される基礎となる暗号化モジュールを認定しています。
+
 - azure および azure 米国政府
 - dynamics 365 および dynamics 365 米国政府
 - office 365、office 365 米国政府機関、および office 365 米国政府機関の防御
