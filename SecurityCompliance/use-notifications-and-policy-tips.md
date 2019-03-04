@@ -8,7 +8,7 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleNotifyUser
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: 'ポリシー ヒントは、誰かがコンテンツを使用していて、それが DLP ポリシーと競合している場合に表示される通知または警告です。メール通知とポリシー ヒントを使用して、組織のポリシーに関する認識を高め、ユーザーの教育に役立てることができます。また、業務上の正当な理由がある場合や、ポリシーが誤検知した場合にブロックされないように、ユーザーにポリシーを上書きするオプションを提供することもできます。 '
-ms.openlocfilehash: 78247a283b2a3b8d581a8b27fe0bf124ed46b222
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 77bf9947356a4c8986e8b8cca7544350fa300c01
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "25803998"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341698"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>メール通知を送信して、DLP ポリシーのポリシーのヒントを表示する
 
@@ -53,7 +53,7 @@ DLP ポリシーを作成すると、メール通知とポリシー ヒントは
     
 2. 職場または学校のアカウントを使用して、Office 365 にサインインします。これで、Office 365 セキュリティ/コンプライアンス センターに移動します。
     
-3. セキュリティ/コンプライアンス センターの左ナビゲーションで、**[データ損失防止]**、**[ポリシー]**、**[+ ポリシーの作成]** と移動します。
+3. セキュリティ/コンプライアンス センターの左側のナビゲーションで、**[データ損失防止]** \> **[ポリシー]** \> **[+ ポリシーの作成]** の順に移動します。
     
     ![[ポリシーの作成] ボタン](media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
   
@@ -227,7 +227,7 @@ Outlook on the web および Outlook 2013 以降で新しいメールを作成�
 
 ポリシー ヒントは、Exchange 管理センターで作成される DLP ポリシーとメール フロー ルール、または Office 365 セキュリティ/コンプライアンス センターで作成される DLP ポリシーのいずれかによって機能します。両方ではありません。これは、これらのポリシーは異なる場所に保存されますが、ポリシー ヒントは 1 つの場所からのみ適用されるためです。
   
-Exchange 管理センターでポリシー ヒントを構成した場合、Office 365 セキュリティ/コンプライアンス センターで構成するポリシー ヒントは、Exchange 管理センターでヒントをオフにしない限り、Outlook on the web および Outlook 2013 以降でユーザーに表示されません。これにより、Office 365 セキュリティ/コンプライアンス センターへの切り替えを選択するまで、現在の Exchange トランスポート ルールが動作し続けます。
+Exchange 管理センターでポリシー ヒントを構成した場合、Office 365 セキュリティ/コンプライアンス センターで構成するポリシー ヒントは、Exchange 管理センターでヒントをオフにしない限り、Outlook on the web および Outlook 2013 以降でユーザーに表示されません。これにより、Office 365 セキュリティ/コンプライアンス センターへの切り替えを選択するまで、現在の Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) が動作し続けます。
   
 ポリシー ヒントは 1 つの場所からのみ適用されますが、Office 365 セキュリティ/コンプライアンス センターおよび Exchange 管理センターの両方で DLP ポリシーを使用している場合でも、メール通知は常に送信されることに注意してください。
   
