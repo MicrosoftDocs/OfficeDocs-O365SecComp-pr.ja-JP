@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 07824c51-2c45-4005-8596-03c0d7c4ff2a
 description: Office 365 でスパム メールや迷惑メールを減らすための最も一般的な方法について説明します。
-ms.openlocfilehash: 0cc07d543618b154570231dcf1d45b39cfe20fec
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: e1915bd51fcda8b587f3a7f248dc54fa18941c7d
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295510"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30340888"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Office 365 で迷惑メールを減らす方法
 
@@ -28,11 +28,12 @@ ms.locfileid: "30295510"
   
 フィルターの改善のため、[メッセージ報告アドインを使用して](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)検出漏れメッセージを報告することを強くお勧めします。さらに、メッセージを*添付ファイルとして* junk@office365.microsoft.com または phish@office365.microsoft.com (フィッシングの場合) 宛に転送することもできます。
 
->[警告] 迷惑メールと思われるメッセージが迷惑メール フォルダーにある場合、問題にはなりません。メールボックス内に一切表示しないようにするには、スパム対策ポリシーを変更して、メッセージを検疫する必要があります。メッセージ検疫の詳細については「[Office 365 でメール メッセージを検疫する](quarantine-email-messages.md)」を参照してください。
+> [!TIP]
+> 迷惑メールと思われるメッセージが迷惑メール フォルダーにある場合、問題にはなりません。メールボックス内に一切表示しないようにするには、スパム対策ポリシーを変更して、メッセージを検疫する必要があります。メッセージ検疫の詳細については「[Office 365 でメール メッセージを検疫する](quarantine-email-messages.md)」を参照してください。
 
 ## <a name="fixing-allowed-spam"></a>許可されている迷惑メールを解決する
 
-多くの場合、構成が正しくないために迷惑メールがお客様の受信トレイに入ってしまっているようです。最も一般的なのは、フィルターをバイパスするようにトランスポート ルールでドメインを構成すること、または許可/安全送信者リストにドメインを一覧表示することです。この方法では、本来検出されるはずのこれらのメッセージが迷惑メール フィルターをスキップしてしまうため、正しくありません。  
+多くの場合、構成が正しくないために迷惑メールがお客様の受信トレイに入ってしまっているようです。最も一般的なのは、フィルターをバイパスするようにメール フロー ルール (別名: トランスポート ルール) でドメインを構成すること、または許可/安全送信者リストにドメインを一覧表示することです。この方法では、本来検出されるはずのこれらのメッセージが迷惑メール フィルターをスキップしてしまうため、正しくありません。  
 
 ## <a name="solutions-to-other-common-causes-of-getting-too-much-spam"></a>大量の迷惑メールを受け取る他の一般的な原因の解決方法
 
@@ -50,7 +51,7 @@ ms.locfileid: "30295510"
     
 - **バルク メールをスパムとしてマークする**: バルク メールとは、ユーザーはサインアップした可能性があるとしても望ましくないと思われるメールのことです。メッセージ ヘッダーで、X-Microsoft-Antispam ヘッダーの中の BCL (Bulk Confidence Level) プロパティを見つけます。迷惑メール フィルターに設定されたしきい値よりも BCL 値の方が小さければ、これらのタイプのバルク メッセージを迷惑メールとしてマークするようにしきい値を調整することが必要になる場合があります。[バルク メールの処理](https://docs.microsoft.com/ja-JP/office365/SecurityCompliance/bulk-complaint-level-values)に関する許容度とユーザー設定はユーザーによって異なります。ユーザー設定ごとに異なるポリシーやルールを作成できます。 
     
-- **すぐに送信者をブロックする**: すぐに送信者をブロックする必要がある場合は、メール アドレス、ドメイン、または IP アドレスでブロックすることができます。「[検出漏れの問題を防止するために Office 365 のスパム フィルターを使用して迷惑メールをブロックする](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-transport-rule-that-blocks-messages-sent-from-a-domain-or-user)」を参照してください。エンド ユーザー許可リスト内のエントリは、管理者によるブロック設定をオーバーライドできます。
+- **すぐに送信者をブロックする** 送信者をすぐにブロックする必要がある場合は、メール アドレス、ドメイン、または IP アドレスでブロックすることができます。「[EAC を使用して、ドメインまたはユーザーから送信されたメッセージをブロックするメール フロー ルールを作成する](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user)」をご覧ください。エンド ユーザーの許可リストのエントリは、管理者が設定したブロックを無効にできることに注意してください。
     
 - **ユーザーのメッセージ報告アドインをオンにする**: [ユーザーのメッセージ報告アドインを有効にする](enable-the-report-message-add-in.md)ことを強くお勧めします。管理者は、ユーザーが送信しているフィードバックを調べ、何らかのパターンを使用して、問題の原因となっている可能性がある設定を調整することもできます。
     

@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: 迷惑メールの検出漏れを防ぐための EOP スタンドアロンの管理者向けドキュメント
-ms.openlocfilehash: c9b17704c514fd83f8c00a51fad76cddb26e378c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 598f63bba4be32c6c664db83126b40c5fae159a0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30306546"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341818"
 ---
 ## <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>以下の設定により Office 365 のスパム対策フィルターをカスタマイズする
 
@@ -37,9 +37,9 @@ ms.locfileid: "30306546"
     
 3. 「[接続フィルター ポリシーを構成する](https://technet.microsoft.com/ja-JP/library/jj200718%28v=exchg.150%29.aspx)」の「EAC を使用して既定の接続フィルター ポリシーを編集する」に示された手順に従って、その IP アドレスを IP 禁止一覧に追加します。
     
-### <a name="block-bulk-mail-with-transport-rules-or-the-spam-filter"></a>トランスポート ルールまたはスパム フィルターでバルク メールをブロックする
+### <a name="block-bulk-mail-with-mail-flow-rules-transport-rules-or-the-spam-filter"></a>メール フロー ルール (トランスポート ルール) またはスパム フィルターでバルク メールをブロックする
 
-スパムは主に、ニュースレターやプロモーションなどのバルク メールでしょうか。[トランスポート ルールを使用してバルク メール メッセージを積極的にフィルタリングする](https://technet.microsoft.com/ja-JP/library/dn720438%28v=exchg.150%29.aspx)か、スパム フィルターの[高度なスパム フィルター処理オプション](https://technet.microsoft.com/ja-JP/library/jj200750%28v=exchg.150%29.aspx)で**バルク メール**設定をオンにすると、Office 365 でスパム フィルターをカスタマイズできます。Exchange 管理センターで、**[保護]** \> **[コンテンツ フィルター]** をクリックし、調整するフィルター ポリシーをダブルクリックして作業を開始します。ここで示すとおり、**[Spam and bulk mail actions (スパムおよびバルク メール操作)]** をクリックして設定を調整します。 
+スパムは主に、ニュースレターやプロモーションなどのバルク メールでしょうか。[メール フロー ルールを使用してバルク メールのフィルター処理を構成する](use-transport-rules-to-configure-bulk-email-filtering.md)か、スパム フィルターの[高度なスパム フィルター処理オプション](advanced-spam-filtering-asf-options.md)で**バルク メール**設定をオンにすると、Office 365 でスパム フィルターをカスタマイズできます。Exchange 管理センターで、**[保護]** \> **[コンテンツ フィルター]** をクリックし、調整するフィルター ポリシーをダブルクリックして作業を開始します。ここで示すとおり、**[Spam and bulk mail actions]** (スパムおよびバルク メール操作) をクリックして設定を調整します。 
   
 ![Exchange Online でバルク メール フィルターを設定する](media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
   
