@@ -501,7 +501,7 @@
 ## [EOP のメール フロー](eop/mail-flow-in-eop.md)
 ### [メッセージが迷惑メールとしてマークされないようにする方法](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md)
 ### [メール フロー ルール (トランスポート ルール)](eop/mail-flow-rules-transport-rules-0.md)
-### [トランスポート ルールを使用してバルク メールのフィルター処理を構成する](use-transport-rules-to-configure-bulk-email-filtering.md)
+### [メール フロー ルールを使用してバルク メールのフィルター処理を構成する](use-transport-rules-to-configure-bulk-email-filtering.md)
 ### [メール フロー ルールを使用して、ユーザーが Microsoft に報告する内容を確認する](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)
 ### [ファイルの添付のブロックを通じてマルウェアの脅威を低減する](eop/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 ### [レポート作成とメッセージ追跡](eop/reporting-and-message-trace-in-exchange-online-protection.md)
