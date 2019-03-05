@@ -9,6 +9,7 @@ ms.topic: overview
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365-security-compliance
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
@@ -16,12 +17,12 @@ search.appverid:
 ms.custom: Strat_O365_Enterprise
 ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: '概要: 増大する脅威プロファイルを抱え、急速に変化する組織向けの計画および実装のガイダンスです。'
-ms.openlocfilehash: d23a41c40aebc78e5aa1751f946d4e64661c12e8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 99539c2480aef3329f517fc855776f1bae463904
+ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213387"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30373838"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス
 

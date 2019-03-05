@@ -13,16 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365-security-compliance
 ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: '概要: SharePoint Online および Office 365 内のファイルを保護するために推奨されている構成を取り上げます。'
-ms.openlocfilehash: 6325f9d327f9037ce63dd56d56ca2d1e688342c2
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 227ece5710fd757af5e7e148a6d7135598bdbc71
+ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220247"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30373918"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>SharePoint Online サイトとファイルをセキュリティで保護する
 

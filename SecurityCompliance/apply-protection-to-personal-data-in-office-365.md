@@ -10,17 +10,18 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - GDPR
+- M365-security-compliance
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 description: DLP ポリシーを使用して、Office 365 の個人データを保護する方法について説明します。
-ms.openlocfilehash: 637992ac673cd59adebf22f6c039ed85c2184477
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: c0b78611a81452ecd8cb8993842c26f6012bb736
+ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223446"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30373948"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Office 365 の個人データに保護を適用する
 

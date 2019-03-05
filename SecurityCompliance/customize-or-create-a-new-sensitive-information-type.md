@@ -10,6 +10,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - GDPR
+- M365-security-compliance
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
@@ -17,12 +18,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: GDPR のための Office 365 の機密情報の種類を変更または新規作成する方法について説明します。
-ms.openlocfilehash: 756c68c2270f010d229c65fe9f9829356b661972
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: c55828572760485eb1d197178d918aee7acaa0b6
+ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220137"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30373938"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>機密情報の種類をカスタマイズまたは新規作成する
 

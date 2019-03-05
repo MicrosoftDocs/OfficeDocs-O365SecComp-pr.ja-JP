@@ -10,17 +10,18 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - GDPR
+- M365-security-compliance
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 description: Office 365 の個人データを検索する方法について説明します。
-ms.openlocfilehash: 8b9359c6daf3817b4da73d6be5a652d17d19549b
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 3fa35b168d9a7e89ead437cba33637b478bb34c7
+ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223556"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30373878"
 ---
 # <a name="search-for-and-find-personal-data"></a>個人データの検索
 
