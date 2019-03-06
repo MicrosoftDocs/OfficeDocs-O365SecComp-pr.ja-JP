@@ -1,5 +1,5 @@
 ---
-title: テンプレートから DLP ポリシーを作成する
+title: テンプレートからの DLP ポリシーの作成
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -8,20 +8,18 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection:
-- Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MET150
-ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'DLP ポリシーの使用を開始する最も簡単で最も一般的な方法は、Office 365 に含まれるいずれかのテンプレートを使用することです。 '
-ms.openlocfilehash: 4e3a5d731538e4998858b5f9f7a296c43e6774ac
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
-ms.translationtype: HT
+ms.openlocfilehash: 2a1802592edbc3cfbcc05f5db979a0b4c3988e0d
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22532203"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410952"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>テンプレートから DLP ポリシーを作成する
 

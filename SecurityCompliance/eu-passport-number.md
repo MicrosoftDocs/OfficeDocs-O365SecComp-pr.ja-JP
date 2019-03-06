@@ -7,23 +7,23 @@ ms.date: 8/16/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: 8c00df57-9fb3-459c-ba87-40480c87bd55
-description: このトピックでは、データ損失防止 (DLP) ポリシーが EU Passport 番号機密情報の種類を検出したときにどのように検索されるかを示します。この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: c46f683bd1baf651bcf13c1766dfff3cb953b341
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: このトピックでは、データ損失防止 (DLP) ポリシーが EU Passport 番号機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
+ms.openlocfilehash: 3ab92e87607f41cffa8c15f1179a4eef5369cb29
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218267"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410932"
 ---
 # <a name="eu-passport-number"></a>EU パスポート番号
 
-このトピックでは、データ損失防止 (DLP) ポリシーが EU Passport 番号機密情報の種類を検出したときにどのように検索されるかを示します。この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
+このトピックでは、データ損失防止 (DLP) ポリシーが EU Passport 番号機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
   
 ## <a name="austria"></a>オーストリア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 1文字の後にオプションのスペースと7桁の数字
   
@@ -64,11 +64,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_austria_eu_passport_number**|
 |:-----|
-|パスポート番号  <br/> オーストリアのパスポート番号  <br/> passport いいえ  <br/> reisepass  <br/> österreichisch reisepass  <br/> |
+|passport number  <br/> オーストリアのパスポート番号  <br/> passport いいえ  <br/> reisepass  <br/> österreichisch reisepass  <br/> |
    
 ## <a name="belgium"></a>ベルギー
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 2つの文字の後に6桁の数字 (スペースまたは区切り記号を付けない)
   
@@ -103,11 +103,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_belgium_eu_passport_number**|
 |:-----|
-|パスポート番号  <br/> ベルギーのパスポート番号  <br/> passport いいえ  <br/> 大き poort  <br/> paspoortnummer  <br/> reisepass kein  <br/> reisepass  <br/> |
+|passport number  <br/> ベルギーのパスポート番号  <br/> passport いいえ  <br/> 大き poort  <br/> paspoortnummer  <br/> reisepass kein  <br/> reisepass  <br/> |
    
 ## <a name="bulgaria"></a>ブルガリア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない9桁の数字
   
@@ -117,7 +117,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -142,11 +142,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_bulgaria_eu_passport_number**|
 |:-----|
-|パスポート番号  <br/> ブルガリアのパスポート番号  <br/> passport いいえ  <br/> номернапаспорта  <br/> |
+|passport number  <br/> ブルガリアのパスポート番号  <br/> passport いいえ  <br/> номернапаспорта  <br/> |
    
 ## <a name="croatia"></a>クロアチア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない9桁の数字
   
@@ -156,7 +156,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -181,11 +181,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_croatia_eu_passport_number**|
 |:-----|
-|パスポート番号  <br/> クロアチア語のパスポート番号  <br/> passport いいえ  <br/> broj putovnice  <br/> |
+|passport number  <br/> クロアチア語のパスポート番号  <br/> passport いいえ  <br/> broj putovnice  <br/> |
    
 ## <a name="cyprus"></a>キプロス
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 1文字の後に、スペースまたは区切り記号を含まない6-8 桁の数字
   
@@ -195,7 +195,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -220,11 +220,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_cyprus_eu_passport_number**|
 |:-----|
-|パスポート番号  <br/> キプロスパスポート番号  <br/> passport いいえ  <br/> αριθμόδιαβατηρίου  <br/> |
+|passport number  <br/> キプロスパスポート番号  <br/> passport いいえ  <br/> αριθμόδιαβατηρίου  <br/> |
    
 ## <a name="czech-republic"></a>チェコ共和国
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースまたは区切り文字を含まない8桁の数字
   
@@ -234,7 +234,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -259,11 +259,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_czech_republic_eu_passport_number**|
 |:-----|
-|パスポート番号  <br/> チェコのパスポート番号  <br/> passport いいえ  <br/> cestovní pas  <br/> pas  <br/> |
+|passport number  <br/> チェコのパスポート番号  <br/> passport いいえ  <br/> cestovní pas  <br/> pas  <br/> |
    
 ## <a name="denmark"></a>デンマーク
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない9桁の数字
   
@@ -273,7 +273,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -298,11 +298,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_denmark_eu_passport_number**|
 |:-----|
-|パスポート番号  <br/> デンマークのパスポート番号  <br/> passport いいえ  <br/> pas  <br/> pasnummer  <br/> |
+|passport number  <br/> デンマークのパスポート番号  <br/> passport いいえ  <br/> pas  <br/> pasnummer  <br/> |
    
 ## <a name="estonia"></a>エストニア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 1文字の後に7桁の数字 (スペースまたは区切り記号なし)
   
@@ -312,7 +312,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -337,7 +337,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_estonia_eu_passport_number**|
 |:-----|
-|パスポート番号  <br/> エストニア語のパスポート番号  <br/> passport いいえ  <br/> eesti kodaniku pass  <br/> |
+|passport number  <br/> エストニア語のパスポート番号  <br/> passport いいえ  <br/> eesti kodaniku pass  <br/> |
    
 ## <a name="finland"></a>フィンランド
 
@@ -353,7 +353,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ## <a name="greece"></a>ギリシャ
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 2つの文字の後に、スペースや区切り文字を含まない7桁の数字
   
@@ -363,7 +363,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -388,11 +388,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_greece_eu_passport_number**|
 |:-----|
-|パスポート番号  <br/> ギリシャのパスポート番号  <br/> passport いいえ  <br/> διαβατηριο  <br/> |
+|passport number  <br/> ギリシャのパスポート番号  <br/> passport いいえ  <br/> διαβατηριο  <br/> |
    
 ## <a name="hungary"></a>ハンガリー
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 2つの文字の後に、スペースや区切り文字を含まない6桁または7桁の数字
   
@@ -402,7 +402,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -427,11 +427,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_hungary_eu_passport_number**|
 |:-----|
-|パスポート番号  <br/> ハンガリーのパスポート番号  <br/> passport いいえ  <br/> útlevél száma  <br/> |
+|passport number  <br/> ハンガリーのパスポート番号  <br/> passport いいえ  <br/> útlevél száma  <br/> |
    
 ## <a name="ireland"></a>Ireland
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 2つの文字または数字の後に、スペースや区切り文字を含まない7桁の数字
   
@@ -445,7 +445,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -470,11 +470,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_ireland_eu_passport_number**|
 |:-----|
-|パスポート番号  <br/> アイルランドのパスポート番号  <br/> passport いいえ  <br/> pas  <br/> passport  <br/> passeport  <br/> passeport numero  <br/> |
+|passport number  <br/> アイルランドのパスポート番号  <br/> passport いいえ  <br/> pas  <br/> サインアウト  <br/> passeport  <br/> passeport numero  <br/> |
    
 ## <a name="italy"></a>イタリア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 2つの文字または数字の後に、スペースや区切り文字を含まない7桁の数字
   
@@ -513,11 +513,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_italy_eu_passport_number**|
 |:-----|
-|イタリアのパスポート番号  <br/> repubblica italiana passaporto  <br/> passaporto  <br/> passaporto italiana  <br/> パスポート番号  <br/> italiana passaporto numero  <br/> passaporto numero  <br/> numéro passeport italien  <br/> numéro passeport  <br/> |
+|イタリアのパスポート番号  <br/> repubblica italiana passaporto  <br/> passaporto  <br/> passaporto italiana  <br/> passport number  <br/> italiana passaporto numero  <br/> passaporto numero  <br/> numéro passeport italien  <br/> numéro passeport  <br/> |
    
 ## <a name="latvia"></a>ラトビア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 2つの文字または数字の後に、スペースや区切り文字を含まない7桁の数字
   
@@ -531,7 +531,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -556,11 +556,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_latvia_eu_passport_number**|
 |:-----|
-|パスポート番号  <br/> ラトビアのパスポート番号  <br/> passport いいえ  <br/> pase numurs  <br/> |
+|passport number  <br/> ラトビアのパスポート番号  <br/> passport いいえ  <br/> pase numurs  <br/> |
    
 ## <a name="lithuania"></a>リトアニア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 8桁の数字または文字、スペースまたは区切り記号なし
   
@@ -595,11 +595,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_lithuania_eu_passport_number**|
 |:-----|
-|パスポート番号  <br/> lithunian パスポート番号  <br/> passport いいえ  <br/> 大き o numeris  <br/> |
+|passport number  <br/> lithunian パスポート番号  <br/> passport いいえ  <br/> 大き o numeris  <br/> |
    
 ## <a name="luxemburg"></a>ルクセンブルク
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 8桁の数字または文字、スペースまたは区切り記号なし
   
@@ -609,7 +609,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -634,11 +634,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_nation_eu_passport_number**|
 |:-----|
-|パスポート番号  <br/> ラトビアのパスポート番号  <br/> passport いいえ  <br/> passnummer  <br/> |
+|passport number  <br/> ラトビアのパスポート番号  <br/> passport いいえ  <br/> passnummer  <br/> |
    
 ## <a name="malta"></a>マルタ
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースまたは区切り文字を含まない7桁の数字
   
@@ -648,7 +648,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -673,11 +673,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_malta_eu_passport_number**|
 |:-----|
-|パスポート番号  <br/> マルタのパスポート番号  <br/> passport いいえ  <br/> numru tal-passaport  <br/> |
+|passport number  <br/> マルタのパスポート番号  <br/> passport いいえ  <br/> numru tal-passaport  <br/> |
    
 ## <a name="netherlands"></a>オランダ
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 9文字または数字 (スペースまたは区切り記号なし)
   
@@ -712,7 +712,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_netherlands_eu_passport_number**|
 |:-----|
-|オランダのパスポート番号  <br/> パスポート番号  <br/> オランダのパスポート番号  <br/> nederlanden の nummer  <br/> 大き poort  <br/> nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
+|オランダのパスポート番号  <br/> passport number  <br/> オランダのパスポート番号  <br/> nederlanden の nummer  <br/> 大き poort  <br/> nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
    
 ## <a name="poland"></a>ポーランド
 
@@ -720,7 +720,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ## <a name="portugal"></a>ポルトガル
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 1文字の後に6桁の数字 (スペースまたは区切り記号を付けない)
   
@@ -734,7 +734,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -759,11 +759,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_portugal_eu_passport_number**|
 |:-----|
-|パスポート番号  <br/> ポルトガルのパスポート番号  <br/> passport いいえ  <br/> número do passaporte  <br/> |
+|passport number  <br/> ポルトガルのパスポート番号  <br/> passport いいえ  <br/> número do passaporte  <br/> |
    
 ## <a name="romania"></a>ルーマニア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を除いた8桁または9桁の数字
   
@@ -773,7 +773,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -798,11 +798,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_romania_eu_passport_number**|
 |:-----|
-|パスポート番号  <br/> ルーマニアのパスポート番号  <br/> passport いいえ  <br/> numărul pașaportului  <br/> |
+|passport number  <br/> ルーマニアのパスポート番号  <br/> passport いいえ  <br/> numărul pașaportului  <br/> |
    
 ## <a name="slovakia"></a>スロバキア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 1つの数字または文字の後に7桁の数字 (スペースまたは区切り記号なし)
   
@@ -812,7 +812,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -837,11 +837,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_slovakia_eu_passport_number**|
 |:-----|
-|パスポート番号  <br/> スロバキアのパスポート番号  <br/> passport いいえ  <br/> číslo/  <br/> |
+|passport number  <br/> スロバキアのパスポート番号  <br/> passport いいえ  <br/> číslo/  <br/> |
    
 ## <a name="slovenia"></a>スロベニア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 2つの文字の後に、スペースや区切り文字を含まない7桁の数字
   
@@ -857,7 +857,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -882,11 +882,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_slovenia_eu_passport_number**|
 |:-----|
-|パスポート番号  <br/> スロベニアのパスポート番号  <br/> passport いいえ  <br/> številka potnega lista  <br/> |
+|passport number  <br/> スロベニアのパスポート番号  <br/> passport いいえ  <br/> številka potnega lista  <br/> |
    
 ## <a name="spain"></a>スペイン
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースまたは区切り記号を含まない、文字と数字の8文字または9文字の組み合わせ
   
@@ -927,15 +927,15 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_spain_eu_passport_number**|
 |:-----|
-|passport  <br/> スペインのパスポート  <br/> パスポートブック  <br/> パスポート番号  <br/> passport いいえ  <br/> libreta pasaporte  <br/> número pasaporte  <br/> españ a pasaporte  <br/> pasaporte  <br/> |
+|サインアウト  <br/> スペインのパスポート  <br/> パスポートブック  <br/> passport number  <br/> passport いいえ  <br/> libreta pasaporte  <br/> número pasaporte  <br/> españ a pasaporte  <br/> pasaporte  <br/> |
    
 ## <a name="sweden"></a>スウェーデン
 
 詳細については、「[機密情報の種類がどのようなもの](what-the-sensitive-information-types-look-for.md)か」の「スウェーデンのパスポート番号」セクションを参照してください。
   
-## <a name="uk"></a>英国
+## <a name="uk"></a>佐賀
 
-詳細については、「[機密情報の種類がどのようなもの](what-the-sensitive-information-types-look-for.md)か」の「米国/英国のパスポート番号」セクションを参照してください。
+詳細については、「米国/英国」を参照してください。 [機密情報の種類がどのように表示されるか](what-the-sensitive-information-types-look-for.md)について、パスポート番号
   
 ## <a name="see-also"></a>関連項目
 

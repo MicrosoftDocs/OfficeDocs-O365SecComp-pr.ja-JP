@@ -7,23 +7,23 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: 2ea971bf-9434-4b61-b825-2bbd28ae6064
-description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 国内の識別番号の機密情報の種類を検出したときにどのように検索されるかを示します。この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: 9a85fd6954f39de348874e03268a2e19ae47366c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 国内の識別番号の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
+ms.openlocfilehash: afae2c3fa54fe5fcd93990cdf5797f5517c46202
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220637"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410972"
 ---
 # <a name="eu-national-identification-number"></a>EU 国家識別番号
 
-このトピックでは、データ損失防止 (DLP) ポリシーが EU 国内の識別番号の機密情報の種類を検出したときにどのように検索されるかを示します。この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
+このトピックでは、データ損失防止 (DLP) ポリシーが EU 国内の識別番号の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
   
 ## <a name="austria"></a>オーストリア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 24文字の文字、数字、特殊文字の組み合わせ
   
@@ -39,7 +39,7 @@ ms.locfileid: "30220637"
 
 該当なし
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -67,7 +67,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 id 番号
   
-
 national id
   
 personalausweis republik österreich
@@ -78,7 +77,7 @@ personalausweis republik österreich
   
 ## <a name="bulgaria"></a>ブルガリア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない10桁の数字
   
@@ -135,7 +134,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 国番号
   
 social security number
-
   
 nationalnumber #
   
@@ -167,7 +165,7 @@ edinen grazhdanski nomer
   
 ## <a name="cyprus"></a>キプロス
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない10桁の数字
   
@@ -179,7 +177,7 @@ edinen grazhdanski nomer
 
 該当なし
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -203,7 +201,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 id カード番号
   
-国別の識別番号
+national identification number
   
 個人 id 番号
   
@@ -221,7 +219,7 @@ id カード番号
   
 ## <a name="estonia"></a>エストニア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない11桁の数字
   
@@ -274,7 +272,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 個人識別番号
   
-国別の識別番号
+national identification number
   
 国番号
   
@@ -306,7 +304,7 @@ id-kaart
   
 ## <a name="hungary"></a>ハンガリー
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 11 桁の数字
   
@@ -357,7 +355,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 個人識別番号
   
 identification number
-
   
 個人 id 番号
   
@@ -365,7 +362,7 @@ személyazonosító igazolvány
   
 ## <a name="ireland"></a>Ireland
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 指定したパターンの文字、数字、スペースの9文字の組み合わせ
   
@@ -433,17 +430,16 @@ rsi no
 個人識別番号
   
 identification number
-
   
 個人 id 番号
   
 uimhir phearsanta seirbhíse poiblí
   
-uimh。psp
+uimh。 psp
   
 ## <a name="italy"></a>イタリア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 指定したパターンの文字と数字の16文字の組み合わせ
   
@@ -525,7 +521,7 @@ codice fiscale
   
 ## <a name="italy"></a>イタリア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 11桁の数字と、指定された形式のハイフン
   
@@ -589,7 +585,7 @@ personalcodeno #
   
 ## <a name="lithuania"></a>リトアニア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない11桁の数字
   
@@ -662,7 +658,7 @@ asmens のためのものです。
   
 ## <a name="luxemburg"></a>ルクセンブルク
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない11桁の数字
   
@@ -682,7 +678,7 @@ asmens のためのものです。
 
 該当なし
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -739,7 +735,7 @@ eindeutigeid #
   
 ## <a name="malta"></a>マルタ
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 7桁の数字の後に1文字
   
@@ -755,7 +751,7 @@ eindeutigeid #
 
 該当なし
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -804,7 +800,7 @@ numru ta ' 識別子 tuniku
   
 ## <a name="netherlands"></a>オランダ
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースまたは区切り文字を含まない9桁の数字
   
@@ -877,7 +873,7 @@ uniek identiteitsnummer
   
 ## <a name="romania"></a>ルーマニア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 13桁の数字 (スペースと区切り文字なし)
   
@@ -926,7 +922,7 @@ cnp
   
 cnp #
   
-固定
+pin
   
 pin
   
@@ -958,7 +954,7 @@ numărpersonalunic #
   
 ## <a name="slovakia"></a>スロバキア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 1つの円記号を含む10桁の数字
   
@@ -1001,12 +997,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 出生地番号
   
-国別の識別番号
+national identification number
   
 個人識別番号
   
 social security number
-
   
 nationalnumber #
   
@@ -1028,7 +1023,7 @@ rodne cislo
   
 ## <a name="slovenia"></a>スロベニア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 13桁の数字、スペースまたは区切り記号なし
   
@@ -1099,7 +1094,7 @@ emšo
   
 ## <a name="spain"></a>スペイン
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 7桁の数字の後に1文字
   
@@ -1115,7 +1110,7 @@ emšo
 
 該当なし
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -1139,7 +1134,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 dni
   
-国別の識別番号
+national identification number
   
 国内の id 番号
   

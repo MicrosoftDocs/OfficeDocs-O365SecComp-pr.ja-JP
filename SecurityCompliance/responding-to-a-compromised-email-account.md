@@ -9,16 +9,16 @@ ms.collection:
 - o365_security_incident_response
 - Strat_O365_IP
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - MET150
 description: 侵害された Office 365 電子メール アカウントを認識して対処する方法について説明します
-ms.openlocfilehash: 326ec01c570ad97b5f1eaf06dcfe1ad4e6ad76f4
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 3f64cd249a425cc098fc49f6e9bbbe1901c734de
+ms.sourcegitcommit: 0a1ce1ac45672d1d98eb7dbcfd4f0179d9eb4509
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341098"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30412945"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>侵害された Office 365 電子メール アカウントへの対応
 

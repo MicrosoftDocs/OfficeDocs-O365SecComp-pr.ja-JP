@@ -7,23 +7,23 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: f04919c8-2356-4de2-bb2a-b9f67f339726
-description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 税務識別番号の機密情報の種類を検出したときにどのように検索されるかを示します。この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: f851cce4be70fd41c24a7876d97c452f0a738eda
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 税務識別番号の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
+ms.openlocfilehash: 4914ff078695519c2a298190d82c86a6abebceb9
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213827"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410912"
 ---
 # <a name="eu-tax-identification-number"></a>EU 税務識別番号
 
-このトピックでは、データ損失防止 (DLP) ポリシーが EU 税務識別番号 (TIN) 機密情報の種類を検出したときにどのように検索されるかを示します。この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
+このトピックでは、データ損失防止 (DLP) ポリシーが EU 税務識別番号 (TIN) 機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
   
 ## <a name="austria"></a>オーストリア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 任意指定のハイフンとスラッシュ (/) を含む9桁の数字
   
@@ -76,12 +76,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 課税番号
   
-件数
+number
   
 税務登録番号
   
 tax id
-
   
 st.nr。
   
@@ -89,7 +88,7 @@ steuernummer
   
 ## <a name="belgium"></a>ベルギー
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない11桁の数字
   
@@ -111,7 +110,7 @@ steuernummer
 
 該当なし
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -140,7 +139,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 税務登録番号
   
 tax id
-
   
 \n\n
   
@@ -152,7 +150,7 @@ numéro d'identification fiscale
   
 ## <a name="bulgaria"></a>ブルガリア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない10桁の数字
   
@@ -223,7 +221,7 @@ uniformcivilno #
   
 ## <a name="croatia"></a>クロアチア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースまたは区切り文字を含まない11桁の数字
   
@@ -273,9 +271,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 申告
   
 tax id
-
   
-ドーナツ
+oid
   
 ドーナツ
   
@@ -283,7 +280,7 @@ porezni broj
   
 ## <a name="cyprus"></a>キプロス
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 指定したパターンの8桁の数字と1文字
   
@@ -335,7 +332,6 @@ Pattern confidenceLevel="75">
 申告
   
 tax id
-
   
 税 id コード
   
@@ -351,7 +347,7 @@ tax id
   
 ## <a name="czech-republic"></a>チェコ共和国
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 9桁または10桁の数字 (省略可能な円記号付き)
   
@@ -369,7 +365,7 @@ tax id
 
 該当なし
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -396,7 +392,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 申告
   
 tax id
-
   
 個人番号
   
@@ -406,7 +401,7 @@ osobníčíslo
   
 ## <a name="denmark"></a>デンマーク
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 10桁の数字 (ハイフンを含む)
   
@@ -458,7 +453,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 申告
   
 tax id
-
   
 cpr 番号
   
@@ -470,7 +464,7 @@ id の sk
   
 ## <a name="estonia"></a>エストニア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースまたは区切り文字を含まない11桁の数字
   
@@ -524,7 +518,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 申告
   
 tax id
-
   
 個人コード
   
@@ -536,7 +529,7 @@ isikukood
   
 ## <a name="finland"></a>フィンランド
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 数字、文字、プラス記号とマイナス記号の11文字の組み合わせ
   
@@ -586,7 +579,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordsfinlandeutaxfilenumber"></a>Keywords_finland_eu_tax_file_number
 
 identification number
-
   
 個人 id
   
@@ -596,7 +588,7 @@ id 番号
   
 personalidnumber #
   
-国別の識別番号
+national identification number
   
 id 番号
   
@@ -628,7 +620,7 @@ kansallinen tunnus numero
   
 ## <a name="france"></a>フランス
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 各ユーザーの13桁の数字、およびエンティティの9桁の数字
   
@@ -680,13 +672,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 課税番号
   
 tax id
-
   
 numéro d'identification fiscale
   
 ## <a name="germany"></a>ドイツ
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない11桁の数字
   
@@ -742,7 +733,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 taxid #
   
@@ -758,7 +748,7 @@ steueridentifikationsnummer
   
 ## <a name="greece"></a>ギリシャ
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない9桁の数字
   
@@ -770,7 +760,7 @@ steueridentifikationsnummer
 
 該当なし
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -794,8 +784,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 afm
   
-tin
-
+は
   
 納税者番号
   
@@ -827,7 +816,7 @@ aφμαριθμός
   
 ## <a name="hungary"></a>ハンガリー
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースまたは区切り文字を含まない10桁の数字
   
@@ -906,7 +895,7 @@ adóhatóság szám
   
 ## <a name="ireland"></a>Ireland
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 7桁の数字の後にスペースまたは区切り文字を含まない文字
   
@@ -977,7 +966,7 @@ uimhir aitheantais phearsanta
   
 ## <a name="italy"></a>イタリア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 指定したパターンの16桁の文字と数字
   
@@ -1043,7 +1032,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 taxid #
   
@@ -1053,7 +1041,7 @@ codice fiscale
   
 ## <a name="latvia"></a>ラトビア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースまたは区切り文字を含まない11桁の数字
   
@@ -1111,7 +1099,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 taxid #
   
@@ -1127,7 +1114,7 @@ nodokļu identifikācija numurs
   
 ## <a name="lithuania"></a>リトアニア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 11桁の数字 (スペースまたは区切り文字なし)
   
@@ -1179,7 +1166,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 taxid #
   
@@ -1195,7 +1181,7 @@ mokesčių identifikavimas numeris
   
 ## <a name="luxemburg"></a>ルクセンブルク
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 13桁の数字、スペースまたは区切り記号なし
   
@@ -1251,7 +1237,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 taxid #
   
@@ -1267,7 +1252,7 @@ steueridentifikationsnummer
   
 ## <a name="malta"></a>マルタ
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 マルタ nationals の場合: 7 桁の数字と、指定したパターンの1文字
   
@@ -1289,7 +1274,7 @@ steueridentifikationsnummer
 
 該当なし
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -1329,7 +1314,6 @@ taxnumber #
 taxnumber
   
 tax id
-
   
 taxid #
   
@@ -1345,7 +1329,7 @@ numru ta ' identifikazzjoni tat-taxxa
   
 ## <a name="netherlands"></a>オランダ
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースまたは区切り文字を含まない9桁の数字
   
@@ -1401,7 +1385,6 @@ netherland の税 id
 オランダの税識別番号
   
 tax id
-
   
 税 id 番号
   
@@ -1411,8 +1394,7 @@ tax id
   
 申告
   
-tin
-
+は
   
 は
   
@@ -1438,7 +1420,7 @@ nederlandse belasting 識別子
   
 ## <a name="poland"></a>ポーランド
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースまたは区切り文字を含まない11桁の数字
   
@@ -1494,7 +1476,6 @@ nip
 nip #
   
 tax id
-
   
 税 id 番号
   
@@ -1524,7 +1505,7 @@ numeridentyfikacjipodatkowej #
   
 ## <a name="portugal"></a>ポルトガル
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースまたは区切り文字を含まない9桁の数字
   
@@ -1585,7 +1566,7 @@ número de identificação 会計
   
 ## <a name="romania"></a>ルーマニア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 13桁の数字、スペースまたは区切り記号なし
   
@@ -1597,7 +1578,7 @@ número de identificação 会計
 
 該当なし
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -1620,14 +1601,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordsromaniaeutaxfilenumber"></a>Keywords_romania_eu_tax_file_number
 
 tax id
-
   
 納税者番号
   
 税ファイル番号
   
-
-
 tax file number
   
 課税番号
@@ -1644,7 +1622,7 @@ numărul de 識別子は fiscală
   
 ## <a name="slovakia"></a>スロバキア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースまたは区切り文字を含まない10桁の数字
   
@@ -1656,7 +1634,7 @@ numărul de 識別子は fiscală
 
 該当なし
   
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -1679,7 +1657,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordsslovakiaeutaxfilenumber"></a>Keywords_slovakia_eu_tax_file_number
 
 tax id
-
   
 納税者番号
   
@@ -1689,13 +1666,10 @@ tin no
   
 スロバキア tin id
   
-tin
-
+は
   
 税ファイル番号
   
-
-
 tax file number
   
 課税番号
@@ -1714,7 +1688,7 @@ daňovéčíslo súboru
   
 ## <a name="slovenia"></a>スロベニア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースまたは区切り文字を含まない8桁の数字
   
@@ -1756,7 +1730,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordssloveniaeutaxfilenumber"></a>Keywords_slovenia_eu_tax_file_number
 
 tax id
-
   
 納税者番号
   
@@ -1766,13 +1739,10 @@ tin no
   
 スロベニア tin id
   
-tin
-
+は
   
 税ファイル番号
   
-
-
 tax file number
   
 課税番号
@@ -1791,7 +1761,7 @@ davčna številka
   
 ## <a name="spain"></a>スペイン
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 7桁または8桁の数字と、指定したパターンの1文字または2文字
   
@@ -1869,7 +1839,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordsspaineutaxfilenumber"></a>Keywords_spain_eu_tax_file_number
 
 tax id
-
   
 納税者番号
   
@@ -1885,8 +1854,6 @@ cif
   
 スペインの cif 番号
   
-
-
 tax file number
   
 スペインの cif 番号
@@ -1917,7 +1884,7 @@ cifnúmero #
   
 ## <a name="sweden"></a>スウェーデン
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 指定したパターンの10桁の数字と記号
   
@@ -1971,14 +1938,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordsswedeneutaxfilenumber"></a>Keywords_sweden_eu_tax_file_number
 
 tax id
-
   
 納税者番号
   
 納税者番号
   
 tax identification
-
   
 税 id #
   
@@ -2000,19 +1965,19 @@ skatt identifikation
   
 personnummer
   
-## <a name="uk"></a>英国
+## <a name="uk"></a>佐賀
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 Unique 納税リファレンス (utr): スペースと区切り文字を含まない10桁の数字
   
-国家保険番号 (NINO): 詳細については、「[機密情報の種類がどのようなものか](what-the-sensitive-information-types-look-for.md)」の「英国国立保険番号 (NINO)」セクションを参照してください。
+国家保険番号 (NINO): 詳細については、「英国 [機密情報の種類がどのように表示されるか](what-the-sensitive-information-types-look-for.md)について、国家保険番号 (NINO) "を指定します。
   
 ### <a name="pattern"></a>パターン
 
 Unique 納税リファレンス (utr):10 桁の数字
   
-国家保険番号 (NINO): 詳細については、「[機密情報の種類がどのようなものか](what-the-sensitive-information-types-look-for.md)」の「英国国立保険番号 (NINO)」セクションを参照してください。
+国家保険番号 (NINO): 詳細については、「英国 [機密情報の種類がどのように表示されるか](what-the-sensitive-information-types-look-for.md)について、国家保険番号 (NINO) "を指定します。
   
 ### <a name="checksum"></a>チェックサム
 
@@ -2041,14 +2006,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordsukeutaxfilenumber"></a>Keywords_uk_eu_tax_file_number
 
 tax id
-
   
 納税者番号
   
 納税者番号
   
 tax identification
-
   
 税 id #
   

@@ -10,18 +10,17 @@ f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleNotifyUser
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: 'ポリシー ヒントは、誰かがコンテンツを使用していて、それが DLP ポリシーと競合している場合に表示される通知または警告です。メール通知とポリシー ヒントを使用して、組織のポリシーに関する認識を高め、ユーザーの教育に役立てることができます。また、業務上の正当な理由がある場合や、ポリシーが誤検知した場合にブロックされないように、ユーザーにポリシーを上書きするオプションを提供することもできます。 '
-ms.openlocfilehash: 77bf9947356a4c8986e8b8cca7544350fa300c01
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
-ms.translationtype: HT
+ms.openlocfilehash: fbaabd674de97ffce32b8caae8e2b41471e52569
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341698"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410922"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>メール通知を送信して、DLP ポリシーのポリシーのヒントを表示する
 
@@ -105,7 +104,7 @@ DLP ポリシーのそれぞれのルールで、次のことを行えます。
 |**構成されている DLP ポリシー ルール**|**SharePoint または OneDrive for Business のドキュメントの既定の通知内容**|**Outlook メッセージの既定の通知内容**|
 |:-----|:-----|:-----|
 |通知を送信するが、上書きは許可しない  <br/> |このアイテムは、組織のポリシーと競合しています。  <br/> |あなたのメール メッセージは、組織のポリシーと競合しています。  <br/> |
-|アクセスをブロックし、通知を送信し、上書きを許可する  <br/> |このアイテムは組織のポリシーと競合しています。この競合を解決しないと、このファイルへのアクセスがブロックされる可能性があります。  <br/> |あなたのメール メッセージは、組織のポリシーと競合しています。メッセージは、すべての受信者には配信されませんでした。  <br/> |
+|アクセスをブロックし、通知を送信し、上書きを許可する  <br/> |このアイテムは組織のポリシーと競合しています。この競合を解決しないと、このファイルへのアクセスがブロックされる可能性があります。  <br/> |あなたのメール メッセージは、組織のポリシーと競合しています。 メッセージはすべての受信者に配信されませんでした。  <br/> |
 |アクセスをブロックして、通知を送信する  <br/> |このアイテムは組織内のポリシーと競合します。アイテムの所有者、最後に更新した人、プライマリ サイト コレクションの管理者を除くすべてのユーザーが、このアイテムへのアクセスをブロックされます。  <br/> |あなたのメール メッセージは、組織のポリシーと競合しています。メッセージは、すべての受信者には配信されませんでした。  <br/> |
    
 ### <a name="custom-email-notification"></a>ユーザー設定のメール通知

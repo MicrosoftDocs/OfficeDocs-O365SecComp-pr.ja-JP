@@ -7,23 +7,23 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: 1fabd341-e594-4bfe-961c-62aa82893f60
-description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 社会保障番号または同等の ID の機密情報の種類を検出したときにどのように検索されるかを示します。この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: abcefb6930e9c02d2f32d84b65accfecf1e20d95
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 社会保障番号または同等の ID の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
+ms.openlocfilehash: c0c808eafa52209c79f3b4e8a2113f587fd8a771
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216527"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410802"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>EU 社会保障番号または同等の ID
 
-このトピックでは、データ損失防止 (DLP) ポリシーが EU 社会保障番号 (SSN) または同等の ID 機密情報の種類を検出したときにどのように検索されるかを示します。この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
+このトピックでは、データ損失防止 (DLP) ポリシーが EU 社会保障番号 (SSN) または同等の ID 機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
   
 ## <a name="austria"></a>オーストリア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 指定した形式の10桁の数字
   
@@ -73,9 +73,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ソーシャルセキュリティなし
   
 social security number
-
   
-
 social security code
   
 保険番号
@@ -100,7 +98,7 @@ versicherungsnummer
   
 ## <a name="belgium"></a>ベルギー
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 11桁の数字 (スペースまたは区切り文字なし)
   
@@ -146,7 +144,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 国番号
   
 social security number
-
   
 nationalnumber #
   
@@ -167,7 +164,6 @@ personalidnumber #
 numéro national
   
 numéro de sécurité
-
   
 numéro d'assuré
   
@@ -179,7 +175,7 @@ numéronational #
   
 ## <a name="croatia"></a>クロアチア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない11桁の数字
   
@@ -228,10 +224,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 マスター市民番号
   
-国別の識別番号
+national identification number
   
 social security number
-
   
 nationalnumber #
   
@@ -255,7 +250,7 @@ osobni identifikacijski broj
   
 ## <a name="czech-republic"></a>チェコ共和国
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 指定したパターンの10桁の数字と円記号
   
@@ -306,12 +301,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 出生地番号
   
-国別の識別番号
+national identification number
   
 個人識別番号
   
 social security number
-
   
 nationalnumber #
   
@@ -333,7 +327,7 @@ rodne cislo
   
 ## <a name="denmark"></a>デンマーク
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 指定したパターンの10桁の数字とハイフン
   
@@ -382,10 +376,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 個人識別番号
   
-国別の識別番号
+national identification number
   
 social security number
-
   
 nationalnumber #
   
@@ -405,7 +398,7 @@ personnummer
   
 ## <a name="finland"></a>フィンランド
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 指定した書式の11文字の組み合わせ
   
@@ -461,7 +454,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordsfinlandeussnorequivalent"></a>Keywords_finland_eu_ssn_or_equivalent
 
 identification number
-
   
 個人 id
   
@@ -471,7 +463,7 @@ id 番号
   
 personalidnumber #
   
-国別の識別番号
+national identification number
   
 id 番号
   
@@ -517,7 +509,7 @@ hetu
   
 ## <a name="hungary"></a>ハンガリー
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない9桁の数字
   
@@ -561,7 +553,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ハンガリーのソーシャルセキュリティ番号
   
 social security number
-
   
 指定した仮のセキュリティ番号
   
@@ -603,7 +594,7 @@ magyar áfa szám
   
 ## <a name="sweden"></a>スウェーデン
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 12桁の数字 (スペースと区切り記号なし)
   
@@ -657,7 +648,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 個人 id 番号
   
 identification number
-
   
 個人 id 番号
   

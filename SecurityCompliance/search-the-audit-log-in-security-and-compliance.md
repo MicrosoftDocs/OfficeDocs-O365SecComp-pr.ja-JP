@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Office 365 セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: ac4ded889b913b2a090e4002f917ec06485948e1
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: d9a0b009a47a00b3d7242b54b14286609ece6886
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341778"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30411022"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Office 365 セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -121,6 +121,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
     |セキュリティ/コンプライアンス センター  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |SharePoint Online と OneDrive for Business  <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Sway  <br/> ||![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Workplace Analytics<br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> || 
     |Yammer  <br/> ||![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
 - Azure Active Directory (Azure AD) は、Office 365 のディレクトリ サービスです。統合監査ログには、Office 365 管理センターまたは Azure 管理ポータルで実行されたユーザー、グループ、アプリケーション、ドメイン、ディレクトリの各アクティビティが含まれます。Azure AD の完全な一覧については、「[Azure Active Directory 監査レポート イベント](https://go.microsoft.com/fwlink/p/?LinkID=616549)」を参照してください。
@@ -431,7 +432,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |サイトの削除  <br/> |SiteDeleted  <br/> |サイト管理者がサイトを削除しました。  <br/> |
 |ドキュメント プレビューの有効化  <br/> |PreviewModeEnabledSet  <br/> |サイト管理者がサイトのドキュメントのプレビューを有効にしました。  <br/> |
 |レガシー ワークフローの有効化  <br/> |LegacyWorkflowEnabledSet  <br/> |サイト管理者または所有者が、SharePoint 2013 ワークフロー タスク コンテンツの種類をサイトに追加します。グローバル管理者は、SharePoint 管理センターの組織全体のワーク フローを有効にすることもできます。  <br/> |
-|オンデマンドでの Office の有効化  <br/> |OfficeOnDemandSet  <br/> |サイト管理者が Office オンデマンドを有効にして、ユーザーが最新バージョンの Office デスクトップ アプリケーションにアクセスできるようにしました。Office オンデマンドは、SharePoint 管理センターで有効になり、フル機能の Office アプリケーションを含む Office 365 サブスクリプションを必要とします。  <br/> |
+|オンデマンドでの Office の有効化  <br/> |OfficeOnDemandSet  <br/> |サイト管理者は、Office オンデマンドを有効にします。これによりユーザーは、Office デスクトップ アプリケーションの最新バージョンにアクセスできます。Office オンデマンドは Office SharePoint 管理センターで有効にされ、インストール済みのすべての Office アプリケーションを含む Office 365 サブスクリプションを必要とします。  <br/> |
 |RSS フィードの有効化  <br/> |NewsFeedEnabledSet  <br/> |サイトの管理者または所有者がサイトの RSS フィードを有効にしました。全体管理者は、SharePoint 管理センターで組織全体の RSS フィードを有効にすることができます。  <br/> |
 |アクセス要求の設定の変更  <br/> |WebRequestAccessModified  <br/> |サイトでアクセス要求の設定が変更されました。  <br/> |
 |[メンバーが共有可能] 設定の変更  <br/> |WebMembersCanShareModified  <br/> |サイトで [**メンバーが共有可能**] 設定が変更されました。  <br/> |
@@ -451,7 +452,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |**フレンドリ名**|**操作名**|**説明**|
 |:-----|:-----|:-----|
 |代理メールボックス アクセス許可の追加  <br/> |Add-MailboxPermission  <br/> |管理者が、ユーザー (代理人と呼ばれる) に対して、別のユーザーのメールボックスに対する FullAccess アクセス許可を割り当てました。FullAccess アクセス許可は、代理人が他のユーザーのメールボックスを開いて、そのメールボックスの内容を読み取り、管理することを許可します。  <br/> |
-|メッセージをレコードとして分類する  <br/> |applyrecordlabel<br/> |メッセージがレコードとして分類されました。これは、コンテンツをレコードとして分類する保持ラベルが手動で、またはメッセージに自動的に適用される場合に発生します。<br/> |
+|メッセージをレコードとして分類する  <br/> |applyrecordlabel<br/> |メッセージがレコードとして分類されました。 これは、コンテンツをレコードとして分類する保持ラベルが手動で、またはメッセージに自動的に適用される場合に発生します。<br/> |
 |別のフォルダーへのメッセージのコピー  <br/> |Copy  <br/> |メッセージが別のフォルダーにコピーされました。  <br/> |
 |メールボックス アイテムの作成  <br/> |Create  <br/> |メールボックスの予定表、連絡先、メモ、または仕事フォルダーでアイテムが作成されます。たとえば、新しい会議出席依頼が作成されます。メッセージの作成、送信、または受信は監査されないことにご注意ください。また、メールボックス フォルダーの作成も監視されません。  <br/> |
 |Outlook web app で新しい受信トレイルールを作成しました  <br/> |NewInboxRule<br/> |<br/> |
@@ -471,7 +472,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
   
 ### <a name="retention-policy-and-label-activities"></a>アイテム保持ポリシーとラベルアクティビティ
 
-次の表では、office 365 のアイテム保持ポリシーと office 365 の保持ラベルに関連するアクティビティについて説明します。詳細については、以下を参照してください。
+次の表では、セキュリティ & コンプライアンスセンターのアイテム保持ポリシーと保持ラベルに関連するアクティビティについて説明します。 詳細については、次のトピックを参照してください。
 
 - [アイテム保持ポリシーの概要](retention-policies.md)
 - [保持ラベルの概要](labels.md)
@@ -479,16 +480,16 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 
 |**アクティビティ**|**操作名**|**説明**|
 |:-----|:-----|:-----|
-| アイテム保持ポリシーの保持構成が作成されました<br/> |NewRetentionComplianceRule<br/> |管理者が新しいアイテム保持ポリシーの保持設定を構成します。保持設定には、アイテムが保持される時間の長さ、および保持期間が経過したときにアイテムに対して行われる処理 (アイテムの削除、アイテムの保持、アイテムの保持、削除など) が含まれます。このアクティビティは、 [get-retentioncompliancerule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule)コマンドレットの実行にも対応しています。<br/>|
+| アイテム保持ポリシーの保持構成が作成されました<br/> |NewRetentionComplianceRule<br/> |管理者が新しいアイテム保持ポリシーの保持設定を構成します。 保持設定には、アイテムが保持される時間の長さ、および保持期間が経過したときにアイテムに対して行われる処理 (アイテムの削除、アイテムの保持、アイテムの保持、削除など) が含まれます。 このアクティビティは、 [get-retentioncompliancerule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule)コマンドレットの実行にも対応しています。<br/>|
 | 作成済みの保持ラベル <br/> |NewComplianceTag<br/>  |管理者が新しい保持ラベルを作成します。<br/> |
 | アイテム保持ポリシーの作成<br/> |NewRetentionCompliancePolicy<br/> |管理者が新しいアイテム保持ポリシーを作成します。<br/>  |
-| アイテム保持ポリシーの削除済みアイテム保持構成<br/> | RemoveRetentionComplianceRule<br/>| 管理者は、アイテム保持ポリシーの構成設定を削除します。多くの場合、このアクティビティは、管理者がアイテム保持ポリシーを削除するか、 **get-retentioncompliancerule**コマンドレットを実行すると記録されます。<br/> |
+| アイテム保持ポリシーの削除済みアイテム保持構成<br/> | RemoveRetentionComplianceRule<br/>| 管理者は、アイテム保持ポリシーの構成設定を削除します。 多くの場合、このアクティビティは、管理者がアイテム保持ポリシーを削除するか、 **get-retentioncompliancerule**コマンドレットを実行すると記録されます。<br/> |
 | 削除済みの保持ラベル <br/> |removecompli/このタグ<br/>  | 管理者が保持ラベルを削除しました。<br/>|
 | 削除済みアイテム保持ポリシー<br/> |RemoveRetentionCompliancePolicy<br/> |管理者がアイテム保持ポリシーを削除しました。 <br/>  |
-| コンプライアンス機能を有効にする<br/> |SetRestrictiveRetentionUI<br/> |管理者は、 **RegulatoryComplianceUI**コマンドレットを実行することにより、法令遵守機能を有効にします。このコマンドレットを実行すると、管理者は、Security & コンプライアンスセンター UI を使用して、保持ポリシーをロックし、保存ラベルを規制レコードとして指定できます。組織が**RegulatoryComplianceUI**コマンドレットを使用してこれらの機能を有効にするまで、保持ポリシーをロックして、規制保持ラベルを作成できるのは、PowerShell を使用する場合のみです。<br/>|
-| アイテム保持ポリシーの保持構成が更新されました<br/> | SetRetentionComplianceRule<br/>| 管理者が既存のアイテム保持ポリシーの保持設定を変更します。保持設定には、アイテムが保持される時間の長さ、および保持期間が経過したときにアイテムに対して行われる処理 (アイテムの削除、アイテムの保持、アイテムの保持、削除など) が含まれます。このアクティビティは、 [get-retentioncompliancerule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule)コマンドレットの実行にも対応しています。<br/>|
+| コンプライアンス機能を有効にする<br/> |SetRestrictiveRetentionUI<br/> |管理者は、 **RegulatoryComplianceUI**コマンドレットを実行することにより、法令遵守機能を有効にします。 このコマンドレットを実行すると、管理者は、Security & コンプライアンスセンター UI を使用して、保持ポリシーをロックし、保存ラベルを規制レコードとして指定できます。 組織が**RegulatoryComplianceUI**コマンドレットを使用してこれらの機能を有効にするまで、保持ポリシーをロックして、規制保持ラベルを作成できるのは、PowerShell を使用する場合のみです。 <br/>|
+| アイテム保持ポリシーの保持構成が更新されました<br/> | SetRetentionComplianceRule<br/>| 管理者が既存のアイテム保持ポリシーの保持設定を変更します。 保持設定には、アイテムが保持される時間の長さ、および保持期間が経過したときにアイテムに対して行われる処理 (アイテムの削除、アイテムの保持、アイテムの保持、削除など) が含まれます。 このアクティビティは、 [get-retentioncompliancerule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule)コマンドレットの実行にも対応しています。 <br/>|
 | 更新された保持ラベル <br/> |SetComplianceTag<br/>  | 管理者が既存の保持ラベルを更新します。<br/>|
-| 更新されたアイテム保持ポリシー<br/> |SetRetentionCompliancePolicy <br/>|管理者が既存のアイテム保持ポリシーを更新します。このイベントをトリガーする更新には、アイテム保持ポリシーが適用されるコンテンツの場所を追加または除外することが含まれます。<br/>|
+| 更新されたアイテム保持ポリシー<br/> |SetRetentionCompliancePolicy <br/>|管理者が既存のアイテム保持ポリシーを更新します。 このイベントをトリガーする更新には、アイテム保持ポリシーが適用されるコンテンツの場所を追加または除外することが含まれます。<br/>|
 ||||
 
 ### <a name="sway-activities"></a>Sway アクティビティ
@@ -694,7 +695,7 @@ Workplace Analytics では、Office 365 組織において各グループが共�
 
 ### <a name="microsoft-powerapps"></a>Microsoft PowerApps
 
-PowerApps でアプリ関連のアクティビティについては、監査ログを検索できます。これらのアクティビティには、アプリの作成、起動、公開が含まれます。アプリへのアクセス許可の割り当ても監査されます。すべての powerapps アクティビティの詳細については、「 [powerapps のアクティビティログ](https://docs.microsoft.com/en-us/power-platform/admin/logging-powerapps#what-events-are-audited)」を参照してください。
+PowerApps でアプリ関連のアクティビティについては、監査ログを検索できます。 これらのアクティビティには、アプリの作成、起動、公開が含まれます。 アプリへのアクセス許可の割り当ても監査されます。 すべての powerapps アクティビティの詳細については、「 [powerapps のアクティビティログ](https://docs.microsoft.com/en-us/power-platform/admin/logging-powerapps#what-events-are-audited)」を参照してください。
 
 ### <a name="microsoft-stream-activities"></a>Microsoft Stream アクティビティ
   

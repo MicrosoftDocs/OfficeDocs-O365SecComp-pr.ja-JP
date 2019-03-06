@@ -7,23 +7,23 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: c3923cd3-ec84-435f-bf41-cadc37996a4b
-description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 運転免許証番号の機密情報の種類を検出したときにどのように検索されるかを示します。この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: 86be7b52aed7581fd62ab595ac2c4b63ab33aab3
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 運転免許証番号の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
+ms.openlocfilehash: be9497c325866a670dff8d82b5170f4ca947c4ad
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217747"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410752"
 ---
 # <a name="eu-drivers-license-number"></a>EU 運転免許証番号
 
-このトピックでは、データ損失防止 (DLP) ポリシーが EU 運転免許証番号の機密情報の種類を検出したときにどのように検索されるかを示します。この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
+このトピックでは、データ損失防止 (DLP) ポリシーが EU 運転免許証番号の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
   
 ## <a name="austria"></a>オーストリア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない8桁の数字
   
@@ -33,7 +33,7 @@ ms.locfileid: "30217747"
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -59,11 +59,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_austria_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> ドライバーのライセンス  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/>  運転免許証番号  <br/> dlno #  <br/> futex  <br/> futex (futex) republik osterreich  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> driver's licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/>  運転免許証番号  <br/> dlno #  <br/> futex  <br/> futex (futex) republik osterreich  <br/> |
    
 ## <a name="belgium"></a>ベルギー
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない10桁の数字
   
@@ -73,7 +73,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -99,11 +99,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords__belgium_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> dlno #  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> führerschein-nr  <br/> futex の eh/Nr  <br/> futex の eh/nr  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> dlno #  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> führerschein-nr  <br/> futex の eh/Nr  <br/> futex の eh/nr  <br/> |
    
 ## <a name="bulgaria"></a>ブルガリア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない9桁の数字
   
@@ -113,7 +113,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -139,11 +139,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_bulgaria_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> свидетелствозауправлениенампс  <br/> свидетелствозауправлениенамоторнопревозносредство  <br/> сумпс  <br/> шофьорскакнижка  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> свидетелствозауправлениенампс  <br/> свидетелствозауправлениенамоторнопревозносредство  <br/> сумпс  <br/> шофьорскакнижка  <br/> |
    
 ## <a name="croatia"></a>クロアチア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない8桁の数字
   
@@ -153,7 +153,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -179,11 +179,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_croatia_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> vozačka dozvola  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> vozačka dozvola  <br/> |
    
 ## <a name="cyprus"></a>キプロス
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 12桁の数字 (スペースと区切り記号なし)
   
@@ -193,7 +193,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -218,11 +218,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_cyprus_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> άδειαοδήγησης  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> άδειαοδήγησης  <br/> |
    
 ## <a name="czech-republic"></a>チェコ共和国
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 2つの文字の後に6桁の数字
   
@@ -238,7 +238,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -264,11 +264,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_czech_republic_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> řidičský prúkaz  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> řidičský prúkaz  <br/> |
    
 ## <a name="denmark"></a>デンマーク
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない8桁の数字
   
@@ -304,11 +304,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_denmark_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> kørekort  <br/> kørekortnummer  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> kørekort  <br/> kørekortnummer  <br/> |
    
 ## <a name="estonia"></a>エストニア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 2つの文字の後に6桁の数字
   
@@ -322,7 +322,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -347,12 +347,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_estonia_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> 運転免許証番号  <br/> dlno #  <br/> 
-permis de conduire  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> 運転免許証番号  <br/> dlno #  <br/> permis de conduire  <br/> |
    
 ## <a name="finland"></a>フィンランド
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 ハイフンを 1 つ含む 10 桁の数字
   
@@ -362,13 +361,13 @@ permis de conduire  <br/> |
   
 -  6 桁の数字 
     
-- ハイフン
+- ハイフン 1 つ
     
 -  4 桁の数字 
     
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -393,7 +392,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_finland_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> ajokortti  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> ajokortti  <br/> |
    
 ## <a name="france"></a>フランス
 
@@ -405,7 +404,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ## <a name="greece"></a>ギリシャ
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない9桁の数字
   
@@ -415,7 +414,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -444,7 +443,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="hungary"></a>ハンガリー
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 2つの文字の後に6桁の数字
   
@@ -458,7 +457,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -483,11 +482,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_hungary_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> vezetoi engedely  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> vezetoi engedely  <br/> |
    
 ## <a name="ireland"></a>Ireland
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 6桁の数字の後に4文字
   
@@ -501,7 +500,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -526,7 +525,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_ireland_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> ceadúnas tiomána  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> ceadúnas tiomána  <br/> |
    
 ## <a name="italy"></a>イタリア
 
@@ -534,7 +533,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ## <a name="latvia"></a>ラトビア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 3つの文字の後に6桁の数字
   
@@ -548,7 +547,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -573,11 +572,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_latvia_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> autovadītāja apliecība  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> autovadītāja apliecība  <br/> |
    
 ## <a name="lithuania"></a>リトアニア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない8桁の数字
   
@@ -587,7 +586,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -612,11 +611,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_lithuania_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> vエア uotojo pažymėjimas  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> vエア uotojo pažymėjimas  <br/> |
    
 ## <a name="luxemburg"></a>ルクセンブルク
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない6桁の数字
   
@@ -626,7 +625,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -651,11 +650,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_luxemburg_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> fahて fabnis  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> fahて fabnis  <br/> |
    
 ## <a name="malta"></a>マルタ
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 指定したパターンの2つの文字と6桁の数字の組み合わせ
   
@@ -675,7 +674,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -700,11 +699,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_malta_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> liċenzja tas-sewqan  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> liċenzja tas-sewqan  <br/> |
    
 ## <a name="netherlands"></a>オランダ
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない10桁の数字
   
@@ -714,7 +713,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -739,12 +738,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_netherlands_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> 
-permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
    
 ## <a name="poland"></a>ポーランド
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 2つのスラッシュを含む14桁の数字
   
@@ -764,7 +762,7 @@ permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
     
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -789,11 +787,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_poland_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> prawo jazdy  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> prawo jazdy  <br/> |
    
 ## <a name="portugal"></a>ポルトガル
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 指定したパターンの2文字の後に7桁の数字
   
@@ -813,7 +811,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -838,11 +836,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_portugal_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> carteira de motorista  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> carteira de motorista  <br/> |
    
 ## <a name="romania"></a>ルーマニア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 1文字の後に8桁の数字
   
@@ -856,7 +854,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -881,11 +879,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_romania_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> permis de conducere  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> permis de conducere  <br/> |
    
 ## <a name="slovakia"></a>スロバキア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 1文字の後に7桁の数字
   
@@ -899,7 +897,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -924,11 +922,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_slovakia_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> vodičský preukaz  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> vodičský preukaz  <br/> |
    
 ## <a name="slovenia"></a>スロベニア
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースと区切り文字を含まない9桁の数字
   
@@ -938,7 +936,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -963,11 +961,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_slovenia_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> vozniško dovoljenje  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> vozniško dovoljenje  <br/> |
    
 ## <a name="spain"></a>スペイン
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 8桁の数字の後に1つの文字
   
@@ -1006,12 +1004,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_spain_eu_driver's_license_number**|
 |:-----|
-|dlno #  <br/> dl#  <br/> ドライバー lic  <br/> ドライバーのライセンス  <br/> driver license  <br/> drivers licence  <br/> drivers license  <br/> ドライバーのライセンス  <br/> driver's license  <br/> driving licence
-  <br/> ライセンスの駆動  <br/> ドライバーライセンス番号  <br/> 運転免許証番号  <br/> ドライバーライセンス番号  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> ライセンス番号の運転  <br/> 運転免許証番号  <br/> 許可の推進  <br/> 許可番号の運転  <br/> permiso de conducción  <br/> permiso conducción  <br/> número/encia conducir  <br/> número デカーネット de conducir  <br/> número carnet conducir  <br/> /暗号化 ia conducir  <br/> número de permiso de conducir  <br/> número de permiso conducir  <br/> número permiso conducir  <br/> permiso conducir  <br/> -encia de manejo  <br/> el carnet de conducir  <br/> carnet conducir  <br/> |
+|dlno #  <br/> dl  <br/> ドライバー lic  <br/> ドライバーのライセンス  <br/> driver license  <br/> drivers licence  <br/> drivers license  <br/> driver's licence  <br/> driver's license  <br/> driving licence  <br/> driving license  <br/> ドライバーライセンス番号  <br/> 運転免許証番号  <br/> ドライバーライセンス番号  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> ライセンス番号の運転  <br/> 運転免許証番号  <br/> 許可の推進  <br/> 許可番号の運転  <br/> permiso de conducción  <br/> permiso conducción  <br/> número/encia conducir  <br/> número デカーネット de conducir  <br/> número carnet conducir  <br/> /暗号化 ia conducir  <br/> número de permiso de conducir  <br/> número de permiso conducir  <br/> número permiso conducir  <br/> permiso conducir  <br/> -encia de manejo  <br/> el carnet de conducir  <br/> carnet conducir  <br/> |
    
 ## <a name="sweden"></a>スウェーデン
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 10桁の数字 (ハイフンを含む)
   
@@ -1021,13 +1018,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 -  6 桁の数字 
     
-- ハイフン
+- ハイフン 1 つ
     
 - 4 桁の数字
     
 ### <a name="checksum"></a>チェックサム
 
-なし
+不要
   
 ### <a name="definition"></a>定義
 
@@ -1052,11 +1049,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_sweden_eu_driver's_license_number**|
 |:-----|
-|dl#  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> körkort  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> körkort  <br/> |
    
-## <a name="uk"></a>英国
+## <a name="uk"></a>佐賀
 
-詳細については、「[機密情報の種類がどのようなもの](what-the-sensitive-information-types-look-for.md)か」の「英国運転免許証番号」セクションを参照してください。
+詳細については、「英国 [[機密情報の種類](what-the-sensitive-information-types-look-for.md)] に表示される運転免許証番号。
   
 ## <a name="see-also"></a>関連項目
 

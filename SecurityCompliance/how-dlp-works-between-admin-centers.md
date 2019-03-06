@@ -5,28 +5,29 @@ author: stephow-msft
 manager: laurawi
 ms.date: 8/4/2017
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: セキュリティ & コンプライアンスセンターの dlp が、Exchange 管理センターの dlp およびメールフロールール (トランスポートルール) とどのように連動するかについて説明します。
-ms.openlocfilehash: c20cf5d4e7b83a726b104a57b89f2d8f765d7f16
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 512d9e4c9d3181cbaec2d58faac4f95f649b78c8
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341488"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410682"
 ---
 # <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>セキュリティ & コンプライアンスセンターと Exchange 管理センターの間で DLP がどのように機能するか
 
 Office 365 では、2つの異なる管理センターでデータ損失防止 (DLP) ポリシーを作成できます。
   
-- **セキュリティ & コンプライアンスセンター**では、SharePoint、OneDrive、および Exchange のコンテンツを保護するための単一の DLP ポリシーを作成できます。可能な場合は、ここで DLP ポリシーを作成することをお勧めします。詳細については、「 [Security & コンプライアンスセンターの DLP](data-loss-prevention-policies.md)」を参照してください。
+- **セキュリティ & コンプライアンスセンター**では、SharePoint、OneDrive、および Exchange のコンテンツを保護するための単一の DLP ポリシーを作成できます。 可能な場合は、ここで DLP ポリシーを作成することをお勧めします。 詳細については、「 [Security & コンプライアンスセンターの DLP](data-loss-prevention-policies.md)」を参照してください。
     
-- **exchange 管理センター**では、exchange でのみコンテンツを保護できる DLP ポリシーを作成できます。このポリシーでは、Exchange メールフロールール (トランスポートルールとも呼ばれます) を使用できるので、電子メールの処理に関するその他のオプションがあります。詳細については、「 [Exchange 管理センターでの DLP](https://go.microsoft.com/fwlink/?linkid=852311)」を参照してください。
+- **exchange 管理センター**では、exchange でのみコンテンツを保護できる DLP ポリシーを作成できます。 このポリシーでは、Exchange メールフロールール (トランスポートルールとも呼ばれます) を使用できるので、電子メールの処理に関するその他のオプションがあります。 詳細については、「 [Exchange 管理センターでの DLP](https://go.microsoft.com/fwlink/?linkid=852311)」を参照してください。
     
 これらの管理センターで作成された DLP ポリシーは、並行して機能します。このトピックでは、その方法について説明します。
   
@@ -34,9 +35,9 @@ Office 365 では、2つの異なる管理センターでデータ損失防止 (
   
 ## <a name="how-dlp-in-the-security--compliance-center-works-with-dlp-and-mail-flow-rules-in-the-exchange-admin-center"></a>セキュリティ & コンプライアンスセンターの dlp が Exchange 管理センターの dlp およびメールフロールールとどのように連動するか
 
-セキュリティ & コンプライアンスセンターで DLP ポリシーを作成すると、そのポリシーに含まれるすべての場所にポリシーが展開されます。ポリシーに exchange Online が含まれている場合は、exchange 管理センターで作成された DLP ポリシーとまったく同じ方法でポリシーが同期され、適用されます。 
+セキュリティ & コンプライアンスセンターで DLP ポリシーを作成すると、そのポリシーに含まれるすべての場所にポリシーが展開されます。 ポリシーに exchange Online が含まれている場合は、exchange 管理センターで作成された DLP ポリシーとまったく同じ方法でポリシーが同期され、適用されます。 
   
-Exchange 管理センターで DLP ポリシーを作成した場合、これらのポリシーは、Security & コンプライアンスセンターで作成した電子メールのポリシーと共に引き続き機能します。ただし、Exchange 管理センターで作成したルールは優先されることに注意してください。最初にすべての Exchange メールフロールールが処理されてから、Security & コンプライアンスセンターの DLP ルールが処理されます。
+Exchange 管理センターで DLP ポリシーを作成した場合、これらのポリシーは、Security & コンプライアンスセンターで作成した電子メールのポリシーと共に引き続き機能します。 ただし、Exchange 管理センターで作成したルールは優先されることに注意してください。 最初にすべての Exchange メールフロールールが処理されてから、Security & コンプライアンスセンターの DLP ルールが処理されます。
   
 これは、次のことを意味します。
   
@@ -48,9 +49,9 @@ Exchange 管理センターで DLP ポリシーを作成した場合、これら
   
 ## <a name="policy-tips-in-the-security--compliance-center-vs-the-exchange-admin-center"></a>セキュリティ & コンプライアンスセンターおよび Exchange 管理センターのポリシーヒント
 
-ポリシーヒントは、Exchange 管理センターで作成された dlp ポリシーとメールフロールール、または Security & コンプライアンスセンターで作成された dlp ポリシーによって動作しますが、両方を使用することはできません。これは、これらのポリシーが異なる場所に格納されているため、ポリシーヒントは1つの場所からのみ描画できるからです。
+ポリシーヒントは、Exchange 管理センターで作成された dlp ポリシーとメールフロールール、または Security & コンプライアンスセンターで作成された dlp ポリシーによって動作しますが、両方を使用することはできません。 これは、これらのポリシーが異なる場所に格納されているため、ポリシーヒントは1つの場所からのみ描画できるからです。
   
-exchange 管理センターでポリシーヒントを構成した場合は、セキュリティ & コンプライアンスセンターで構成するポリシーヒントは、exchange 管理センターのヒントをオフにするまで、outlook on the web および outlook 2013 以降のユーザーには表示されません。これにより、セキュリティ & コンプライアンスセンターへの切り替えを選択するまでは、現在の Exchange メールフロールールが引き続き機能します。
+exchange 管理センターでポリシーヒントを構成した場合は、セキュリティ & コンプライアンスセンターで構成するポリシーヒントは、exchange 管理センターのヒントをオフにするまで、outlook on the web および outlook 2013 以降のユーザーには表示されません。 これにより、セキュリティ & コンプライアンスセンターへの切り替えを選択するまでは、現在の Exchange メールフロールールが引き続き機能します。
   
 ポリシーヒントは1つの場所からしか描画できませんが、セキュリティ & コンプライアンスセンターと Exchange 管理センターの両方で DLP ポリシーを使用している場合でも、電子メール通知は常に送信されることに注意してください。
   
