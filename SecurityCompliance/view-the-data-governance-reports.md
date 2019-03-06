@@ -5,20 +5,20 @@ author: stephow-MSFT
 manager: laurawi
 ms.date: 6/8/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: cc091627-d5f0-4fb9-bc74-7a84cf6258da
 description: Office 365 セキュリティ&amp;コンプライアンス センターのデータ ガバナンス レポートを使用すると、意図したとおりにラベルがコンテンツに適用されているかどうかを簡単に確認できます。
-ms.openlocfilehash: 97f8b8061f7b7fa52d757a6f33208ca32701d39b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 5374b54c87aaf79f70be733d626171b196639725
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213727"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410882"
 ---
 # <a name="view-the-data-governance-reports"></a>データ ガバナンスのレポートを表示する
 

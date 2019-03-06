@@ -8,18 +8,17 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: c8a95d1b-c3b6-4613-98ab-0331d1872cf3
 description: 機密情報を識別する際、特に汎用コンテンツ (医療関連のコミュニケーションなど) や不適切または露骨な言語を識別するのに、キーワードの検索が必要になることがあります。機密情報の種類でもキーワード リストを作成できますが、キーワード リストにはサイズ制限があり、作成や編集のためには XML を変更する必要があります。キーワード ディクショナリでは、よりシンプルかつより大規模にキーワードを管理することができます。ディクショナリあたり最大 100,000 語をサポートします。
-ms.openlocfilehash: 5dd41223cd3ce5ac45614abcc3926bf5e49fbb5a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: bd13b4d522b22773fe56f93e1975f1d4decfbfe5
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217377"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410732"
 ---
 # <a name="create-a-keyword-dictionary"></a>キーワード ディクショナリを作成する
 

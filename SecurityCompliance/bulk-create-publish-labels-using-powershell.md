@@ -6,18 +6,18 @@ ms.date: 1/17/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 8986701b-ffa1-46ec-8fd0-8f7e81d5b25f
 description: Office 365 では、ラベルを使用して組織の保持スケジュールを実装できます。レコード マネージャーまたは法令遵守責任者は、作成および発行すべきラベルを何百も持っている可能性があります。セキュリティ/コンプライアンス センターの UI でラベルの作成と発行を行うことができますが、一度に 1 つずつラベルを作成するのは時間がかかり、非効率です。以下のスクリプトと .csv ファイルを使用すると、ラベルとラベル ポリシーを一括で作成し、発行することができます。まず、ラベルのリストとラベル ポリシーのリストを Excel で作成し、PowerShell を使用してそれらのリスト内のラベルとラベル ポリシーを一括作成します。これにより、保持スケジュールに必要なすべてのラベルを一度に作成して発行することが容易になります。
-ms.openlocfilehash: a3181448f64b497f468085d136739c1aed473e09
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 273dbcd705792769b13a997ae6ca0bd5faaee31c
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220767"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410772"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>PowerShell を使用して保持ラベルを一括で作成および発行する
 

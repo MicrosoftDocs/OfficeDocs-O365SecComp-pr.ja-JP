@@ -5,31 +5,27 @@ author: stephow-MSFT
 manager: laurawi
 ms.date: 9/25/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイル計画マネージャーは、保持ラベルおよびポリシーのための高度な管理機能を提供します。作成に始まり、コラボレーション、レコード宣言、保持、そして廃棄に至るまでのコンテンツのライフ サイクル全体におけるラベルとコンテンツのラベリングを網羅する統合的な機能を提供します。
-ms.openlocfilehash: 792729d55f7096114694a59d7202b36fc130e48c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 328b8f1aeed3e25fb0ab5eb651fb3846b123747c
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221187"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410522"
 ---
 # <a name="overview-of-file-plan-manager"></a>ファイル計画マネージャーの概要
 
 ファイル計画マネージャーは、保持ラベルおよびポリシーのための高度な管理機能を提供します。作成に始まり、コラボレーション、レコード宣言、保持、そして廃棄に至るまでのコンテンツのライフ サイクル全体におけるラベルとコンテンツのラベリングを網羅する統合的な機能を提供します。
 
 ![[ファイル計画] ページ](media/file-plan-page.png)
-
-## <a name="important-this-feature-is-currently-available-only-as-part-of-the-office-365-preview-program"></a>重要: 現在、この機能は Office 365 Preview プログラムの一部としてのみ提供されています
-
-お客様の組織が Office 365 Preview プログラムに登録されている場合にのみ、テナントでこの機能が表示されます。
 
 ## <a name="accessing-file-plan-manager"></a>ファイル計画マネージャーへのアクセス
 

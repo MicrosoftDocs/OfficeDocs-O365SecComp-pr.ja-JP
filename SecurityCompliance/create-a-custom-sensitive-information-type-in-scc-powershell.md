@@ -7,18 +7,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
+ms. topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
 description: Office 365 セキュリティ/コンプライアンス センターの　DLP について、カスタムの機密情報の種類を作成してインポートする方法について説明します。
-ms.openlocfilehash: b6289b962211bbe1764e2b6e3b4f08900cb6abd8
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: bd85b28bab8201291070a72df799bbaf28acaa28
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341518"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410852"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>Office 365 セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する
 
