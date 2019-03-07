@@ -8,17 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Office 365 のラベルを使用すると、特定のイベントが発生したときの保存期間の基準を設定することができます。発生したイベントによって保存期間の開始がトリガーされ、そのイベントの種類のラベルが適用されたすべてのコンテンツによって、コンテンツに適用済みのラベルの保持操作が行われます。イベント ベースの保持は通常、レコード管理プロセスの一環として使用します。
-ms.openlocfilehash: f6686fdbd5e453938d2db4e0eb9e53018ecbd79a
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 129f957585e9df5a959e34187a0edc384c68c448
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410692"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455109"
 ---
 # <a name="overview-of-event-driven-retention"></a>イベント ベースの保持の概要
 

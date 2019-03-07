@@ -9,18 +9,19 @@ ms.topic: reference
 f1_keywords:
 - ms.o365.cc.DLPNewPolicyFromTemplate
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 description: Office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) には、米国の医療保険法に従って機密情報を保護するのに役立つ、一般的なコンプライアンス要件に対応するための使用可能なポリシーテンプレートが用意されています (HIPAA)、米国グラムリーチブライ-対象-なる act (GLBA)、または米国 Patriot 法。このトピックでは、すべてのポリシーテンプレート、検索する機密情報の種類、および既定の条件とアクションについて説明します。
-ms.openlocfilehash: 74c575df18c7e75eba9f01c7864b7fe8502ccde9
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 00e2c4ff42df039804b1b8a3962be7e3c3798022
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30411012"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455209"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>DLP ポリシー テンプレートに含まれるもの
 

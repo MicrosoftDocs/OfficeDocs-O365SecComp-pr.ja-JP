@@ -5,16 +5,16 @@ author: chrisda
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 管理者は、Office 365 Security & コンプライアンスセンターのメールフローダッシュボードにある自動転送メッセージレポートについて理解できます。
-ms.openlocfilehash: 5097a2842eeae56e1eb51b9fae4c0caf5263ad80
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: acfc1996a630cb6ff9a12a1e2953c93ba9862ffd
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219307"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454929"
 ---
 # <a name="auto-forwarded-messages-report"></a>自動転送済みメッセージレポート
 
@@ -26,10 +26,10 @@ ms.locfileid: "30219307"
 
 ## <a name="auto-forwarded-messages-details"></a>自動転送されたメッセージの詳細
 
-ウィジェット内のメッセージ数をクリックすると、自動転送メッセージの状態を示すフライアウトウィンドウが表示されます。[**転送レポート**] リンクをクリックすると、詳細を確認できます。
+ウィジェット内のメッセージ数をクリックすると、自動転送メッセージの状態を示すフライアウトウィンドウが表示されます。 [**転送レポート**] リンクをクリックすると、詳細を確認できます。
 
 ![Office 365 Security & コンプライアンスセンターの自動転送メッセージレポートの詳細ポップアップ](media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
 
 ## <a name="insights"></a>分析情報
 
-レポートデータ:**新しい転送ユーザー**および**新しい転送ドメイン**を基にして、2つの洞察が生成されます。各洞察には、新しいフォワーダーまたはドメインの数の概要と、**新しい転送レポート**へのリンクが含まれており、2種類のデータについてより詳細な情報を提供しています。**新しい転送レポート**には、新しいアクティビティのタイムラインビューも表示され、[詳細] テーブルには転送を開始したユーザーとそのドメインが示されます。
+レポートデータ:**新しい転送ユーザー**および**新しい転送ドメイン**を基にして、2つの洞察が生成されます。 各洞察には、新しいフォワーダーまたはドメインの数の概要と、**新しい転送レポート**へのリンクが含まれており、2種類のデータについてより詳細な情報を提供しています。 **新しい転送レポート**には、新しいアクティビティのタイムラインビューも表示され、[詳細] テーブルには転送を開始したユーザーとそのドメインが示されます。

@@ -5,16 +5,16 @@ author: chrisda
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードについて学習できます。
-ms.openlocfilehash: 1312e7362cd7765a3fbf3df9410e2e777682ece0
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1e18bcb381a6b557d3141c0c17b8433cfcd00049
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215587"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455149"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターのメールフローインサイト
 
@@ -40,7 +40,7 @@ ms.locfileid: "30215587"
 
 - **Office 365 Exchange 管理者**ロールのメンバー。
 
-- Security & コンプライアンスセンターの**メールフロー管理者ロール**のメンバー。この役割が、グローバル管理者または Exchange 管理者の役割のメンバーではないユーザーに明示的に割り当てられている場合:
+- Security & コンプライアンスセンターの**メールフロー管理者ロール**のメンバー。 この役割が、グローバル管理者または Exchange 管理者の役割のメンバーではないユーザーに明示的に割り当てられている場合:
 
   - ユーザーは、Security & コンプライアンスセンターに直接ログインする必要が[https://protection.office.com](https://protection.office.com)あります。
 

@@ -10,16 +10,17 @@ f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MET150
 description: office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) ポリシーを使用すると、office 365 全体で機密情報を識別、監視、および自動保護することができます。
-ms.openlocfilehash: 53f9e3b4fca296c35d4c07b912a9bd1d41e62fc8
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 80416ba0a402e33ed8af6390d261d3224fa0be2f
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410872"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455049"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>データ損失防止ポリシーの概要
 
@@ -505,9 +506,9 @@ DLP ポリシーを作成して適用するときにのみ、これらのアク�
     
 - [DLP ポリシー テンプレートに含まれるもの](what-the-dlp-policy-templates-include.md)
     
-- [機密情報の種類の検索基準:](what-the-sensitive-information-types-look-for.md)
+- [機密情報の種類で検索される情報](what-the-sensitive-information-types-look-for.md)
     
-- [DLP 関数の検索対象](what-the-dlp-functions-look-for.md)
+- [DLP 関数で探索する内容](what-the-dlp-functions-look-for.md)
     
 - [カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)
     

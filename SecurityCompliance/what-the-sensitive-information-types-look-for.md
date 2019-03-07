@@ -11,40 +11,40 @@ f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
-ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
-description: Office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) には、dlp ポリシーで使用できる状態で、80の機密情報の種類が含まれています。このトピックでは、これらすべての機密情報の種類を一覧表示し、各種類を検出したときに DLP ポリシーがどのように検索されるかを示します。
-ms.openlocfilehash: 17fb0b8d745168f8000fba9e6fc42f3c255a1937
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.collection:
+- M365-security-compliance
+description: Office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) には、dlp ポリシーで使用できる状態で、80の機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
+ms.openlocfilehash: 55fa8b6855a9a5bf2c84f6555dd8c8227a2ad9cf
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216357"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455269"
 ---
-# <a name="what-the-sensitive-information-types-look-for"></a>機密情報の種類の検索基準
+# <a name="what-the-sensitive-information-types-look-for"></a>機密情報の種類の検索基準：
 
-Office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) には、dlp ポリシーで使用できるさまざまな機密情報の種類が含まれています。このトピックでは、これらすべての機密情報の種類を一覧表示し、各種類を検出したときに DLP ポリシーがどのように検索されるかを示します。機密情報の種類は、正規表現または関数で識別できるパターンによって定義されます。また、キーワードやチェックサムなどの補強証拠を使用して、機密情報の種類を識別することもできます。評価プロセスでは、信頼度と近接性も使用されます。
+Office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) には、dlp ポリシーで使用できるさまざまな機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。 機密情報の種類はパターンで定義され、正規表現または関数で識別できます。 機密情報の種類はさらに、キーワードやチェックサムなどの確証的な証拠を使用して識別することもできます。 信頼レベルと近接も、評価プロセスで使用されます。
   
 ## <a name="aba-routing-number"></a>ABA ルーティング番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 書式設定ありまたは書式設定なしの 9 桁の数字
 
 ### <a name="pattern"></a>パターン
 
-書式設定されている場合:
+さ
 - 0、1、2、3、6、7、または 8 で始まる 4 桁の数字
 - ハイフン 1 つ 
 - 4 桁の数字
-- ハイフン 1 つ
+- ハイフン 1 つ 
 - 1 桁の数字
 
 書式なし: 0、1、2、3、6、7、または8で始まる9桁の連続した数字 
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -68,42 +68,26 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordabarouting"></a>Keyword_ABA_Routing
 
 - aba
-- 
-aba #
-- 
-aba routing #
-- aba ルーティング番号
-- 
-aba#
-- 
-abarouting#
-- 
-aba number
-- 
-abaroutingnumber
-- 
-american bank association routing #
-- 
-american bank association routing number
-- 
-americanbankassociationrouting#
-- 
-americanbankassociationroutingnumber
-- 
-bank routing number
-- 
-bankrouting#
-- 
-bankroutingnumber
-- 
-routing transit number
-- 
-RTN
- 
+- aba #
+- aba routing #
+- aba routing number
+- aba
+- abarouting #
+- aba number
+- abaroutingnumber
+- american bank association routing #
+- american bank association routing number
+- americanbankassociationrouting #
+- americanbankassociationroutingnumber
+- bank routing number
+- bankrouting #
+- bankroutingnumber
+- routing transit number
+- rtn 
    
 ## <a name="argentina-national-identity-dni-number"></a>アルゼンチンの国民識別 (DNI) 番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 ピリオドで区切られた 8 桁の数字
 
@@ -118,13 +102,13 @@ RTN
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_argentina_national_id がパターンに一致するコンテンツを検出した。
-- Keyword_argentina_national_id のキーワードを検出した。
+- 正規表現 Regex_argentina_national_id は、このパターンに一致するコンテンツを検出します。
+- Keyword_argentina_national_id からのキーワードが見つかりました。
 
 ```
 <!-- Argentina National Identity (DNI) Number -->
@@ -140,38 +124,33 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordargentinanationalid"></a>Keyword_argentina_national_id
 
-- Argentina National Identity number
- 
+- Argentina National Identity number 
 - ID 
 - 識別国の id カード 
-- DNI
- 
+- DNI 
 - 個人の NIC National レジストリ 
-- Documento Nacional de Identidad
- 
-- Registro Nacional de las Personas
- 
-- Identidad
- 
-- Identificación
- 
+- Documento Nacional de Identidad 
+- Registro Nacional de las Personas 
+- dad の識別子 
+- Identificación 
    
 ## <a name="australia-bank-account-number"></a>オーストラリアの銀行口座番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 銀行支店識別コード (BSB) を含むまたは含まない 6 ～ 10 桁の数字
 
 ### <a name="pattern"></a>パターン
 
-アカウント番号は6-10 桁です。オーストラリアの銀行都道府県の支店番号:
+口座番号は 6 ～ 10 桁の数字。
+オーストラリアの銀行の州支店番号:
 - 3 桁の数字 
 - ハイフン 
 - 3 桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -204,36 +183,23 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordaustraliabankaccountnumber"></a>Keyword_australia_bank_account_number
 
 - swift bank code
-- 
-correspondent bank
-- 
-base currency
-- 
-usa account
-- 
-holder address
-- 
-bank address
-- 
-information account
-- 
-fund transfers
-- 
-bank charges
-- 
-bank details
-- 
-banking information
-- 
-full names
-- 
-
-iaea
+- correspondent bank
+- base currency
+- usa account
+- holder address
+- bank address
+- information account
+- fund transfers
+- bank charges
+- bank details
+- banking information
+- full names
+- iaea
 
    
 ## <a name="australia-drivers-license-number"></a>オーストラリアの運転免許証番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 9 桁の文字と数字
 
@@ -256,7 +222,7 @@ iaea
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -283,131 +249,108 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordaustraliadriverslicensenumber"></a>Keyword_australia_drivers_license_number
 
 - international driving permits
-- 
-australian automobile association
-- 
-international driving permit
+- australian automobile association
+- international driving permit
 - driverlicence
 - DriverLicences
-- ドライバー Lic
+- Driver Lic
 - Driver Licence
-
 - Driver Licences
-
 - driverslic
 - その他のライセンス
 - DriversLicences
-- ドライバー Lic
-- ドライバー lics
-- ドライバーのライセンス
-- ドライバーライセンス
+- Drivers Lic
+- Drivers Lics
+- Drivers Licence
+- Drivers Licences
 - driver' Lic
 - driver' lics
 - driver' ライセンス
 - Driver'Licences
-- ドライバー ' Lic
-- ドライバー ' lics
-- ドライバー ' ライセンス
-- ドライバー ' ライセンス
+- Driver' Lic
+- Driver' Lics
+- Driver' Licence
+- Driver' Licences
 - driver' slic
 - driver' slics
 - ドライバ ' スライスの持続性
 - Driver'sLicences
-- ドライバーの Lic
-- ドライバーの lics
+- Driver's Lic
+- Driver's Lics
 - Driver's Licence
-
 - Driver's Licences
-
 - driverlic #
 - driverlics #
 - driverlicence #
 - DriverLicences #
 - Driver Lic#
-- 
-Driver Lics#
-
-- ドライバーライセンス #
-- Driver ライセンス #
+- Driver Lics#
+- Driver Licence#
+- Driver Licences#
 - driverslic #
 - driverslics #
 - のデモライセンス #
 - DriversLicences #
-- ドライバー Lic #
-- ドライバー lics #
-- ドライバーライセンス #
-- Drivers ライセンス #
-- Driver'Lic#
-
-- Driver'Lics#
-
-- Driver'Licence#
-
-- Driver'Licences#
-
+- Drivers Lic#
+- Drivers Lics#
+- Drivers Licence#
+- Drivers Licences#
+- driver' Lic #
+- driver' lics #
+- driver' ライセンス #
+- Driver'Licences #
 - Driver' Lic#
-
 - Driver' Lics#
-
-- ドライバー ' ライセンス #
-- ドライバー ' ライセンス #
+- Driver' Licence#
+- Driver' Licences#
 - driver' slic #
 - driver' slics #
 - ドライバ ' スライスの持続性 #
 - Driver'sLicences #
 - Driver's Lic#
-
 - Driver's Lics#
-
-- ドライバーのライセンス #
-- ドライバーのライセンス # 
+- Driver's Licence#
+- Driver's Licences# 
 
 #### <a name="keywordaustraliadriverslicensenumberexclusions"></a>Keyword_australia_drivers_license_number_exclusions
 
 - aaa
 - driverlicense
 - driverlicenses
-- ドライバーライセンス
-- ドライバーのライセンス
+- Driver License
+- Driver Licenses
 - 製品の使用許諾
 - このライセンス
-- ドライバーのライセンス
-- ドライバーのライセンス
+- Drivers License
+- Drivers Licenses
 - driver' ライセンス
 - driver' ライセンス
-- ドライバーのライセンス
-- ドライバーのライセンス
+- Driver' License
+- Driver' Licenses
 - ドライバのライセンス
 - ドライバのライセンス
-- 運転免許証
-- ドライバーのライセンス
+- Driver's License
+- Driver's Licenses
 - driverlicense #
 - driverlicenses #
-- ドライバーライセンス番号
-- ドライバーライセンス #
+- Driver License#
+- Driver Licenses#
 - 製品のライセンス #
 - (c#) ライセンス #
-- ドライバーライセンス #
-- ドライバーライセンス #
-- Driver'License#
-
-- Driver'Licenses#
-
+- Drivers License#
+- Drivers Licenses#
+- driver' License #
+- driver' Licenses #
 - Driver' License#
-
 - Driver' Licenses#
-
 - driverのライセンス番号
 - ドライバのライセンス #
 - Driver's License#
-
-- 
-
-Driver's Licenses#
+- Driver's Licenses#
    
 ## <a name="australia-medical-account-number"></a>オーストラリアの医療口座番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 10 ～ 11 桁の数字
 
@@ -457,27 +400,19 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordaustraliamedicalaccountnumber"></a>Keyword_Australia_Medical_Account_Number
 
 - bank account details
-- 
-medicare payments
-- 
-mortgage account
-- 
-bank payments
-- 
-information branch
-- 
-credit card loan
-- 
-department of human services
-- ローカルサービス
-- 
-
-medicare
+- medicare payments
+- mortgage account
+- bank payments
+- information branch
+- credit card loan
+- department of human services
+- local service
+- medicare
 
    
 ## <a name="australia-passport-number"></a>オーストラリアのパスポート番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 1 桁の文字の後に 7 桁の数字
 
@@ -487,9 +422,9 @@ medicare
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現 Regex_australia_passport_number がパターンに一致するコンテンツを検出した。
@@ -513,67 +448,42 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordpassport"></a>Keyword_passport
 
 - Passport Number
-- 
-Passport No
+- Passport No
 - Passport #
-
-- Passport#
-
+- サインアウト
 - PassportID
 - Passportno
-
 - passportnumber
-
 - パスポート
 - パスポート番号
-
 - パスポートのNum
-
-- 
-パスポート ＃
- 
+- パスポート ＃ 
 - Numéro de passeport
-- 
-Passeport n °
+- Passeport n °
 - Passeport Non
-
 - Passeport #
-
-- Passeport#
-
+- Passeport #
 - PasseportNon
 - Passeportn °
 
-
 #### <a name="keywordaustraliapassportnumber"></a>Keyword_australia_passport_number
 
-- passport
-- 
-passport details
-- 
-immigration and citizenship
-- 
-commonwealth of australia
-- 
-department of immigration
-- 
-residential address
-- 
-department of immigration and citizenship
+- サインアウト
+- passport details
+- immigration and citizenship
+- commonwealth of australia
+- department of immigration
+- residential address
+- department of immigration and citizenship
 - visa
-
-- 
-national identity card
-- パスポート番号
-- 
-travel document
-- 
-
-issuing authority
+- national identity card
+- passport number
+- travel document
+- issuing authority
    
 ## <a name="australia-tax-file-number"></a>オーストラリアの納税者番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 8 ～ 9 桁の数字
 
@@ -616,21 +526,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordaustraliataxfilenumber"></a>Keyword_Australia_Tax_File_Number
 
 - australian business number
-- 
-marginal tax rate
-- 
-medicare levy
-- 
-portfolio number
-- 
-service veterans
-- 
-withholding tax
-- 
-individual tax return
-- 
-
-tax file number
+- marginal tax rate
+- medicare levy
+- portfolio number
+- service veterans
+- withholding tax
+- individual tax return
+- tax file number
 
 #### <a name="keywordnumberexclusions"></a>Keyword_number_exclusions
 
@@ -667,7 +569,7 @@ tax file number
    
 ## <a name="belgium-national-number"></a>ベルギーの国民番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 11 の数字と区切り文字
 
@@ -677,7 +579,7 @@ tax file number
 - YY.MM.DD の形式の生年月日を表す 6 桁の数字と 2 つピリオド  
 - ハイフン 1 つ  
 - 3 桁の連番 (男性の場合は奇数、女性の場合は偶数)  
-- ピリオド 
+- ピリオド 1 つ  
 - チェック ディジットとして機能する 2 桁の数字
 
 ### <a name="checksum"></a>チェックサム
@@ -687,8 +589,8 @@ tax file number
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_belgium_national_number がパターンに一致するコンテンツを検出した。
-- Keyword_belgium_national_number のキーワードを検出した。
+- 関数 Func_belgium_national_number は、このパターンに一致するコンテンツを検索します。
+- Keyword_belgium_national_number からのキーワードが見つかりました。
 - チェックサムが渡される。
 
 ```
@@ -705,29 +607,21 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordbelgiumnationalnumber"></a>Keyword_belgium_national_number
 
-- Identity
-- Registration
-- Identification 
+- ID
+- レジスタ
+- fim 
 - ID 
-- Identiteitskaart
+- 「識別子」
 - Registratie nummer 
- 
-- Identificatie nummer
- 
-- Identiteit
+- Identificatie nummer 
+- 識別子
 - Registratie
-- Identificatie
-
- 
-- Carte d’identité
- 
+- 識別子 
+- Carte d’identité 
 - numéro d'immatriculation
 - numéro d'identification
-- 
-identité
- 
-- inscription
- 
+- 識別子 
+- inscription 
 - Identifikation
 - Identifizierung
 - Identifikationsnummer
@@ -738,22 +632,22 @@ identité
    
 ## <a name="brazil-cpf-number"></a>ブラジルの CPF 番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 書式設定ありまたは書式設定なしのチェック ディジットを含む 11 桁の数字
 
 ### <a name="pattern"></a>パターン
 
-書式設定されている場合:
-- 3 桁の数字  
+さ
+- 3 桁の数字 
 - ピリオド 1 つ  
-- 3 桁の数字  
+- 3 桁の数字 
 - ピリオド 1 つ  
 - 3 桁の数字 
 - ハイフン 
 - チェック ディジットとして機能する 2 桁の数字
 
-書式設定なし:
+なし
 - 11 桁の数字 (最後の 2 桁はチェック ディジット)
 
 ### <a name="checksum"></a>チェックサム
@@ -763,12 +657,12 @@ identité
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_brazil_cpf がパターンに一致するコンテンツを検出した。
-- Keyword_brazil_cpf のキーワードを検出した。
+- 関数 Func_brazil_cpf は、このパターンに一致するコンテンツを検索します。
+- Keyword_brazil_cpf からのキーワードが見つかりました。
 - チェックサムが渡される。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_brazil_cpf がパターンに一致するコンテンツを検出した。
+- 関数 Func_brazil_cpf は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```
@@ -789,32 +683,26 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordbrazilcpf"></a>Keyword_brazil_cpf
 
 - CPF
-- Identification
-- Registration
-- Revenue
-- Cadastro de Pessoas Físicas
- 
-- Imposto
- 
-- Identificação
- 
-- Inscrição
- 
-- Receita
-
- 
+- fim
+- レジスタ
+- 増大
+- Cadastro de Pessoas Físicas 
+- imposto 
+- Identificação 
+- Inscrição 
+- Receita 
    
 ## <a name="brazil-legal-entity-number-cnpj"></a>Brazil Legal Entity Number (CNPJ)
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 登録番号、枝番号、チェック ディジット、および区切り文字を含む 14 桁の数字
 
 ### <a name="pattern"></a>パターン
 14 桁の数字と区切り文字:
 - 2 桁の数字 
-- ピリオド 1 つ 
-- 3 桁の数字  
+- ピリオド 1 つ  
+- 3 桁の数字 
 - ピリオド 1 つ  
 - 3 桁の数字 (最初の 8 桁の数字は登録番号)  
 - スラッシュ 1 つ  
@@ -829,12 +717,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_brazil_cnpj がパターンに一致するコンテンツを検出した。
-- Keyword_brazil_cnpj のキーワードを検出した。
+- 関数 Func_brazil_cnpj は、このパターンに一致するコンテンツを検索します。
+- Keyword_brazil_cnpj からのキーワードが見つかりました。
 - チェックサムが渡される。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_brazil_cnpj がパターンに一致するコンテンツを検出した。
+- 関数 Func_brazil_cnpj は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```
@@ -854,46 +742,29 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordbrazilcnpj"></a>Keyword_brazil_cnpj
 
-- CNPJ
- 
+- CNPJ 
 - CNPJ/MF 
-- CNPJ-MF
- 
-- National Registry of Legal Entities
- 
-- Taxpayers Registry
- 
-- Legal entity
- 
-- Legal entities
- 
-- Registration Status
- 
-- Business
- 
+- CNPJ-MF 
+- National Registry of Legal Entities 
+- Taxpayers Registry 
+- Legal entity 
+- Legal entities 
+- Registration Status 
+- Business 
 - Company
-- CNPJ
- 
-- Cadastro Nacional da Pessoa Jurídica
- 
-- Cadastro Geral de Contribuintes
- 
-- CGC
- 
-- Pessoa jurídica
- 
-- Pessoas jurídicas
- 
-- Situação cadastral
- 
-- Inscrição
- 
-- Empresa
- 
+- CNPJ 
+- Cadastro Nacional da Pessoa Jurídica 
+- Cadastro Geral de Contribuintes 
+- cgc 
+- Pessoa jurídica 
+- Pessoas jurídicas 
+- Situação cadastral 
+- Inscrição 
+- サイト 
    
 ## <a name="brazil-national-id-card-rg"></a>	ブラジルの国民識別カード (RG)
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 Registro geral (古い形式): 9 桁の数字
 
@@ -903,9 +774,9 @@ Registro de 識別子 dade (ric) (新しい形式):11 桁の数字
 
 Registro Geral (従来の形式):
 - 2 桁の数字 
-- ピリオド 1 つ 
-- 3 桁の数字  
-- ピリオド 1 つ 
+- ピリオド 1 つ  
+- 3 桁の数字 
+- ピリオド 1 つ  
 - 3 桁の数字 
 - ハイフン 1 つ  
 - チェック ディジットとして機能する 1 桁の数字
@@ -922,12 +793,12 @@ Registro de 識別子 dade (ric) (新しい形式):
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_brazil_rg がパターンに一致するコンテンツを検出した。
-- Keyword_brazil_rg のキーワードを検出した。
+- 関数 Func_brazil_rg は、このパターンに一致するコンテンツを検索します。
+- Keyword_brazil_rg からのキーワードが見つかりました。
 - チェックサムが渡される。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_brazil_rg がパターンに一致するコンテンツを検出した。
+- 関数 Func_brazil_rg は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```
@@ -951,7 +822,7 @@ Cédula de 識別子 dade id カード national id número de rregistro registro
    
 ## <a name="canada-bank-account-number"></a>カナダの銀行口座番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 7 桁または 12 桁の数字
 
@@ -961,14 +832,14 @@ Cédula de 識別子 dade id カード national id número de rregistro registro
 
 カナダの銀行口座転送番号は次のとおりです。
 - 5 桁の数字 
-- ハイフン 1 つ  
+- ハイフン 
 - 3桁の数字または
 - 1 桁のゼロ (0)  
 - 8 桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -1001,50 +872,30 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordcanadabankaccountnumber"></a>Keyword_canada_bank_account_number
 
 - canada savings bonds
-- 
-canada revenue agency
-- 
-canadian financial institution
-- 
-direct deposit form
-- 
-canadian citizen
-- 
-legal representative
-- 
-notary public
-- 
-commissioner for oaths
-- 
-child care benefit
-- 
-universal child care
-- 
-canada child tax benefit
-- 
-income tax benefit
-- 
-harmonized sales tax
+- canada revenue agency
+- canadian financial institution
+- direct deposit form
+- canadian citizen
+- legal representative
+- notary public
+- commissioner for oaths
+- child care benefit
+- universal child care
+- canada child tax benefit
+- income tax benefit
+- harmonized sales tax
 - social insurance number
-- 
-income tax refund
-- 
-child tax benefit
-- 
-territorial payments
-- 
-institution number
-- 
-deposit request
-- 
-banking information
-- 
-
-direct deposit
+- income tax refund
+- child tax benefit
+- territorial payments
+- institution number
+- deposit request
+- banking information
+- direct deposit
    
 ## <a name="canada-drivers-license-number"></a>カナダの運転免許証番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 州によって異なります
 
@@ -1054,7 +905,7 @@ direct deposit
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -1121,16 +972,15 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_[province_name]_drivers_license_name
+#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_ [province_name] _drivers_license_name
 
 - 州の略号、AB など
-- 
-州名 (Alberta など)
+- 州名 (Alberta など)
 
 #### <a name="keywordcanadadriverslicense"></a>Keyword_canada_drivers_license
 
 - DL
-- DLS
+- dl
 - CDL
 - cdls
 - driverlic
@@ -1139,87 +989,69 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driverlicenses
 - driverlicence
 - DriverLicences
-- ドライバー Lic
-- ドライバー lics
-- ドライバーライセンス
-- ドライバーのライセンス
+- Driver Lic
+- Driver Lics
+- Driver License
+- Driver Licenses
 - Driver Licence
-
 - Driver Licences
-
 - driverslic
 - driverslics
 - その他のライセンス
 - DriversLicences
 - 製品の使用許諾
 - このライセンス
-- ドライバー Lic
-- ドライバー lics
-- ドライバーのライセンス
-- ドライバーのライセンス
-- ドライバーのライセンス
-- ドライバーライセンス
+- Drivers Lic
+- Drivers Lics
+- Drivers License
+- Drivers Licenses
+- Drivers Licence
+- Drivers Licences
 - driver' Lic
 - driver' lics
 - driver' ライセンス
 - driver' ライセンス
 - driver' ライセンス
 - Driver'Licences
-- ドライバー ' Lic
-- ドライバー ' lics
-- ドライバーのライセンス
-- ドライバーのライセンス
-- ドライバー ' ライセンス
-- ドライバー ' ライセンス
+- Driver' Lic
+- Driver' Lics
+- Driver' License
+- Driver' Licenses
+- Driver' Licence
+- Driver' Licences
 - driver' slic
 - driver' slics
 - ドライバのライセンス
 - ドライバのライセンス
 - ドライバ ' スライスの持続性
 - Driver'sLicences
-- ドライバーの Lic
-- ドライバーの lics
-- 運転免許証
-- ドライバーのライセンス
+- Driver's Lic
+- Driver's Lics
+- Driver's License
+- Driver's Licenses
 - Driver's Licence
-
 - Driver's Licences
-
 - Permis de Conduire
 - id
-- rid
-- 
-idcard number
-- 
-idcard numbers
-- 
-idcard #
-- 
-idcard #s
-- idcard カード
-- idcard カード
+- ids
+- idcard number
+- idcard numbers
+- idcard #
+- idcard #s
+- idcard card
+- idcard cards
 - idcard
 - identification number
-
 - identification numbers
-
 - identification #
-
-- 
-identification #s
-- 識別カード
-- 識別カード
-- 
-identification
- 
-- DL#
-- 
-DLS#
- 
-- CDL#
- 
-- CDLS#
- 
+- identification #s
+- identification card
+- identification cards
+- fim 
+- DL
+- dl 
+- CDL 
+- cdls # 
 - driverlic # 
 - driverlics # 
 - driverlicense # 
@@ -1227,82 +1059,60 @@ DLS#
 - driverlicence # 
 - DriverLicences # 
 - Driver Lic#
-- 
-Driver Lics#
- 
-- ドライバーライセンス番号 
-- ドライバーライセンス # 
-- ドライバーライセンス番号 
-- Driver ライセンス # 
+- Driver Lics# 
+- Driver License# 
+- Driver Licenses# 
+- Driver License# 
+- Driver Licences# 
 - driverslic # 
 - driverslics # 
 - 製品のライセンス # 
 - (c#) ライセンス # 
 - のデモライセンス # 
 - DriversLicences # 
-- ドライバー Lic # 
-- ドライバー lics # 
-- ドライバーライセンス # 
-- ドライバーライセンス # 
-- ドライバーライセンス # 
-- Drivers ライセンス # 
-- Driver'Lic#
- 
-- Driver'Lics#
- 
-- Driver'License#
- 
-- Driver'Licenses#
- 
-- Driver'Licence#
- 
-- Driver'Licences#
- 
-- Driver' Lic#
- 
-- Driver' Lics#
- 
-- Driver' License#
- 
-- Driver' Licenses#
- 
-- ドライバー ' ライセンス # 
-- ドライバー ' ライセンス # 
+- Drivers Lic# 
+- Drivers Lics# 
+- Drivers License# 
+- Drivers Licenses# 
+- Drivers Licence# 
+- Drivers Licences# 
+- driver' Lic # 
+- driver' lics # 
+- driver' License # 
+- driver' Licenses # 
+- driver' ライセンス # 
+- Driver'Licences # 
+- Driver' Lic# 
+- Driver' Lics# 
+- Driver' License# 
+- Driver' Licenses# 
+- Driver' Licence# 
+- Driver' Licences# 
 - driver' slic # 
 - driver' slics # 
 - driverのライセンス番号 
 - ドライバのライセンス # 
 - ドライバ ' スライスの持続性 # 
 - Driver'sLicences # 
-- Driver's Lic#
- 
-- Driver's Lics#
- 
-- Driver's License#
- 
-- Driver's Licenses#
- 
-- ドライバーのライセンス # 
-- ドライバーのライセンス # 
-- Permis de Conduire # 
+- Driver's Lic# 
+- Driver's Lics# 
+- Driver's License# 
+- Driver's Licenses# 
+- Driver's Licence# 
+- Driver's Licences# 
+- Permis de Conduire# 
 - rid 
 - rid 
-- idcard card#
- 
-- idcard cards#
- 
-- idcard#
- 
-- identification card#
- 
-- identification cards#
- 
-- identification#
- 
+- idcard card# 
+- idcard cards# 
+- idcard # 
+- identification card# 
+- identification cards# 
+- fim 
    
 ## <a name="canada-health-service-number"></a>カナダの健康保険番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 10 桁の数字
 
@@ -1312,7 +1122,7 @@ Driver Lics#
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -1337,25 +1147,18 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordcanadahealthservicenumber"></a>Keyword_canada_health_service_number
 
 - personal health number
-- 
-patient information
-- 正常性サービス
-- 
-speciality services
-- 
-automobile accident
-- 
-patient hospital
-- 
-psychiatrist
-- 
-workers compensation
-- 
-disability
+- patient information
+- health services
+- speciality services
+- automobile accident
+- patient hospital
+- psychiatrist
+- workers compensation
+- 身体
       
 ## <a name="canada-passport-number"></a>カナダのパスポート番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 2 桁の大文字の後に 6 桁の数字
 
@@ -1365,7 +1168,7 @@ disability
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -1391,60 +1194,38 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordcanadapassportnumber"></a>Keyword_canada_passport_number
 
 - canadian citizenship
-- 
-canadian passport
-- 
-passport application
-- 
-passport photos
-- 
-certified translator
-- 
-canadian citizens
-- 
-processing times
-- 
-
-renewal application
+- canadian passport
+- passport application
+- passport photos
+- certified translator
+- canadian citizens
+- processing times
+- renewal application
 
 #### <a name="keywordpassport"></a>Keyword_passport
 
 - Passport Number
-- 
-Passport No
+- Passport No
 - Passport #
-
-- Passport#
-
+- サインアウト
 - PassportID
 - Passportno
-
 - passportnumber
-
 - パスポート
 - パスポート番号
-
 - パスポートのNum
-
-- パスポート＃
-
+- パスポート #
 - Numéro de passeport
-- 
-Passeport n °
+- Passeport n °
 - Passeport Non
-
 - Passeport #
-
-- Passeport#
-
+- Passeport #
 - PasseportNon
-- 
-
-Passeportn °
+- Passeportn °
    
 ## <a name="canada-personal-health-identification-number-phin"></a>カナダの個人保健識別番号 (PHIN)
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 9 桁の数字
 
@@ -1454,11 +1235,12 @@ Passeportn °
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは 75% です。この種類の機密情報は、近接する300文字の中で検出されます。正規表現 Regex_canada_phin は、このパターンに一致するコンテンツを検出します。Keyword_canada_phin または Keyword_canada_provinces から、少なくとも2つのキーワードが見つかります。
+DLP ポリシーは 75% です。この種類の機密情報は、近接する300文字の中で検出されます。正規表現 Regex_canada_phin は、このパターンに一致するコンテンツを検出します。
+Keyword_canada_phin または Keyword_canada_provinces から、少なくとも2つのキーワードが見つかります。
 
 ```
 <!-- Canada PHIN -->
@@ -1478,77 +1260,51 @@ DLP ポリシーは 75% です。この種類の機密情報は、近接する30
 #### <a name="keywordcanadaphin"></a>Keyword_canada_phin
 
 - social insurance number
-- 
-health information act
-- 
-income tax information
-- 
-manitoba health
-- 
-health registration
-- 
-prescription purchases
-- 
-benefit eligibility
-- 
-personal health
-- 
-power of attorney
-- 
-registration number
+- health information act
+- income tax information
+- manitoba health
+- health registration
+- prescription purchases
+- benefit eligibility
+- personal health
+- power of attorney
+- registration number
 - personal health number
-- 
-practitioner referral
-- 
-wellness professional
-- 
-patient referral
-- 
-
-health and wellness
+- practitioner referral
+- wellness professional
+- patient referral
+- health and wellness
 
 #### <a name="keywordcanadaprovinces"></a>Keyword_canada_provinces
 
 - Nunavut
-- 
-Quebec
-- 
-Northwest Territories
-- 
-Ontario
-- 
-British Columbia
-- 
-Alberta
-- 
-Saskatchewan
-- 
-Manitoba
-- 
-Yukon
-- 
-Newfoundland and Labrador
-- 
-New Brunswick
-- 
-Nova Scotia
-- 
-Prince Edward Island
+- 州
+- Northwest Territories
+- オンタリオ州
+- British Columbia
+- 州
+- Saskatchewan
+- マニトバ州
+- 州
+- Newfoundland and Labrador
+- New Brunswick
+- Nova Scotia
+- Prince Edward Island
 - カナダ
    
 ## <a name="canada-social-insurance-number"></a>カナダの社会保険番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 9 桁の数字と省略可能なハイフンまたはスペース
 
 ### <a name="pattern"></a>パターン
 
-書式設定されている場合:
+さ
+- 3 桁の数字  
+- ハイフンまたはスペース 
 - 3 桁の数字 
-- ハイフンまたはスペース 1 つ  
-- 3 桁の数字 
-- ハイフンまたはスペース 1 つ  
+- ハイフンまたはスペース 
 - 3 桁の数字
 
 書式なし: 9 桁の数字
@@ -1595,43 +1351,33 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordsin"></a>Keyword_sin
 
 - sin 
-- social insurance
- 
-- numero d'assurance sociale
- 
-- sins
- 
+- social insurance 
+- numero d'assurance sociale 
+- 大罪 
 - ssn 
 - ssn 
-- ソーシャルセキュリティ 
-- numero d'assurance social
- 
-- 国別の識別番号 
-- 
-national id 
-- sin#
- 
-- soc ins
- 
-- social ins
- 
+- social security 
+- numero d'assurance social 
+- national identification number 
+- national id 
+- sin 
+- soc ins 
+- social ins 
 
 #### <a name="keywordsincollaborative"></a>Keyword_sin_collaborative
 
 - driver's license 
 - drivers license 
-- ドライバーのライセンス 
+- driver's licence 
 - drivers licence 
-- DOB
- 
+- dob 
 - 誕生日 
-- 誕生日  
-- Date of Birth
- 
+- Birthday 
+- Date of Birth 
    
-## <a name="chile-identity-card-number"></a>チリの身分証明書番号
+## <a name="chile-identity-card-number"></a>	チリの身分証明書番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 7-8 桁の数字と区切り文字のチェックディジットまたは文字
 
@@ -1641,9 +1387,9 @@ national id
 - 1 ～ 2 桁の数字  
 - ピリオド 1 つ  
 - 3 桁の数字 
-- ピリオド 1 つ 
+- ピリオド 1 つ  
 - 3 桁の数字 
-- ダッシュ 
+- ハイフン 1 つ  
 - チェック ディジットとして機能する 1 桁の数字または文字 (大文字小文字の区別なし)
 
 ### <a name="checksum"></a>チェックサム
@@ -1653,12 +1399,12 @@ national id
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_chile_id_card がパターンに一致するコンテンツを検出した。
-- Keyword_chile_id_card のキーワードを検出した。
+- 関数 Func_chile_id_card は、このパターンに一致するコンテンツを検索します。
+- Keyword_chile_id_card からのキーワードが見つかりました。
 - チェックサムが渡される。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_chile_id_card がパターンに一致するコンテンツを検出した。
+- 関数 Func_chile_id_card は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```
@@ -1678,30 +1424,22 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordchileidcard"></a>Keyword_chile_id_card
 
-- National Identification Number
- 
+- National Identification Number 
 - Identity card 
 - ID 
-- Identification 
-- Rol Único Nacional
- 
+- fim 
+- Rol Único Nacional 
 - 実行 
-- Rol Único Tributario
- 
-- RUT
- 
-- Cédula de Identidad
- 
-- Número De Identificación Nacional
- 
-- Tarjeta de identificación
- 
-- Identificación
- 
+- Rol Único Tributario 
+- 類型 
+- Cédula de Identidad 
+- Número De Identificación Nacional 
+- Tarjeta de identificación 
+- Identificación 
    
 ## <a name="china-resident-identity-card-prc-number"></a>	中国の居民身分証明書 (PRC) 番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 18 桁の数字
 
@@ -1720,12 +1458,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_china_resident_id がパターンに一致するコンテンツを検出した。
-- Keyword_china_resident_id のキーワードを検出した。
+- 関数 Func_china_resident_id は、このパターンに一致するコンテンツを検索します。
+- Keyword_china_resident_id からのキーワードが見つかりました。
 - チェックサムが渡される。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_china_resident_id がパターンに一致するコンテンツを検出した。
+- 関数 Func_china_resident_id は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```
@@ -1745,25 +1483,20 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywordchinaresidentid"></a>Keyword_china_resident_id
 
-- Resident Identity Card
- 
+- Resident Identity Card 
 - PRC 
-- National Identification Card
- 
-- 身份证  
-- 居民 身份证  
-- 居民身份证
- 
-- 鉴定
-
- 
-- 身分證  
+- National Identification Card 
+- 身份证 
+- 居民 身份证 
+- 居民身份证 
+- 鉴定 
+- 身分證 
 - 居民 身份證
-- 鑑定  
+- 鑑定 
    
 ## <a name="credit-card-number"></a>クレジット カード番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 書式設定または書式設定ができない16桁の数字 (dddddddddddddddd)。 luhn テストに合格する必要があります。
 
@@ -1813,365 +1546,201 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - card verification
 - card identification number
 - cvn
-
 - cid
-
 - cvc2
 - cvv2
 - pin block
-
 - security code
-
 - security number
-
 - security no
-
 - issue number
-
 - issue no
-
 - cryptogramme
-
 - numéro de sécurité
-
 - numero de securite
-
 - kreditkartenprüfnummer
-
 - kreditkartenprufnummer
-
 - prüfziffer
-
 - prufziffer
-
-- sicherheits kode
+- sicherheits Kode
 - sicherheitscode
-
 - sicherheitsnummer
-
 - verfalldatum
-
 - codice di verifica
-
 - cod. sicurezza
-
 - cod sicurezza
-- 
-n autorizzazione
+- n autorizzazione
 - código
-
 - codigo
-
 - cod. seg
-
-- cod セグメント
+- cod seg
 - código de segurança
-
 - codigo de seguranca
-
 - codigo de segurança
-
 - código de seguranca
-
-- cód. segurança
-
-- cod.seguranca cod。segurança
-- cód. seguranca
-
+- cód。 segurança
+- cod. seguranca cod。 segurança
+- cód。 seguranca
 - cód segurança
 - cod seguranca cod segurança
 - cód seguranca
 - número de verificação
-
 - numero de verificacao
-
-- ablauf
-
+- ablん f
 - gültig bis
-
 - gültigkeitsdatum
-
 - gultig bis
-
 - gultigkeitsdatum
-
 - scadenza
-
 - data scad
-
 - fecha de expiracion
-
 - fecha de venc
-
 - vencimiento
-
 - válido hasta
-
 - valido hasta
-
 - vto
-
 - data de expiração
-
 - data de expiracao
-
 - data em que expira
-
 - validade
-
-- valor
-
+- valor は
 - vencimento
-
 - venc 
 
 #### <a name="keywordccname"></a>Keyword_cc_name
 
 - amex
-- 
-american express
+- american express
 - americanexpress
-
 - Visa
 - mastercard
-
 - master card
-
-- 
-mc
- 
+- mc 
 - mastercards
-- 
-master cards
-- ダイナースのクラブ
+- master cards
+- diner's Club
 - diners club
-
-- dinersclub
-
+- din/クラブ
 - discover card
-
 - discovercard
-
 - discover cards
-
 - JCB
 - japanese card bureau
-
 - carte blanche
-
 - carteblanche
-
 - credit card
-
 - ]
 - cc #:
-- 
-expiration date
+- expiration date
 - exp date
-
-- 
-expiry date
-- 
-date d’expiration
-- 
-date d'exp
-- 
-date expiration
+- expiry date
+- date d’expiration
+- date d'exp
+- date expiration
 - bank card
-
-- 
-bankcard
+- bankcard
 - card number
-
 - card num
-
-- cardnumber
-
-- cardnumbers
-
+- カード番号
+- カード番号
 - card numbers
-
 - creditcard
-
 - credit cards
-
 - creditcards
-
 - ccn
-
 - card holder
-
-- cardholder
-
+- 所有者
 - card holders
-
 - cardholders
-
 - check card
-
 - checkcard
-
 - check cards
-
 - checkcards
-
 - debit card
-
 - debitcard
-
 - debit cards
-
 - debitcards
-
 - atm card
-
 - atmcard
-
 - atm cards
-
 - atmcards
-
-- 
-enroute
-- 
-en route
+- enroute
+- en route
 - card type
-
 - carte bancaire
-
 - carte de crédit
-
 - carte de credit
-
 - numéro de carte
-
 - numero de carte
-
 - nº de la carte
-
 - nº de carte
-
 - kreditkarte
-
 - karte
-
 - karteninhaber
-
 - karteninhabers
 - kreditkarteninhaber
-
 - kreditkarteninstitut
-
 - kreditkartentyp
-
 - eigentümername
-
-- 
-kartennr
- 
+- kartennr 
 - kartennummer
-- 
-kreditkartennummer
+- kreditkartennummer
 - kreditkarten-nummer
 - carta di credito
-
 - carta credito
-
 - carta
 - n carta
 - nr. carta
-
 - nr carta
 - numero carta
-
 - numero della carta
-
 - numero di carta
-
 - tarjeta credito
-
 - tarjeta de credito
-
-- 
-tarjeta crédito
-- 
-tarjeta de crédito
+- tarjeta crédito
+- tarjeta de crédito
 - tarjeta de atm
-
 - tarjeta atm
-
 - tarjeta debito
-
 - tarjeta de debito
-
-- 
-tarjeta débito
-- 
-tarjeta de débito
+- tarjeta débito
+- tarjeta de débito
 - nº de tarjeta
-
-- no. de tarjeta
-
-- 非の tarjeta
+- 違います。 de tarjeta
+- no de tarjeta
 - numero de tarjeta
-
 - número de tarjeta
-
 - tarjeta no
-
 - tarjetahabiente
-
 - cartão de crédito
-
 - cartão de credito
-
 - cartao de crédito
-
 - cartao de credito
-
 - cartão de débito
-
 - cartao de débito
-
 - cartão de debito
-
 - cartao de debito
-
 - débito automático
 - debito automatico
-
-- 
-número do cartão
-- 
-numero do cartão
- 
+- número do cartão
+- numero do cartão 
 - número do cartao
-- 
-numero do cartao
+- numero do cartao
 - número de cartão
-
 - numero de cartão
-
 - número de cartao
-
 - numero de cartao
-
-- n ° do cartão
+- nº do cartão
 - nº do cartao
-
-- nº. do cartão
-
+- n ° do cartão
 - no do cartão
-- いいえ。
-- no. do cartão
-
-- 
-no. do cartao
- 
+- no do cartao
+- 違います。 do cartão
+- 違います。 do cartao 
    
 ## <a name="croatia-identity-card-number"></a>クロアチアの身分証明書番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 9 桁の数字
 
@@ -2181,13 +1750,13 @@ no. do cartao
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_croatia_id_card がパターンに一致するコンテンツを検出した。
-- Keyword_croatia_id_card のキーワードを検出した。
+- 関数 Func_croatia_id_card は、このパターンに一致するコンテンツを検索します。
+- Keyword_croatia_id_card からのキーワードが見つかりました。
 
 ```
 <!--Croatia Identity Card Number-->
@@ -2207,9 +1776,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Osobna iskaznica
 
    
-## <a name="croatia-personal-identification-oib-number"></a>クロアチアの個人識別 (OIB) 番号
+## <a name="croatia-personal-identification-oib-number"></a>	Croatia Personal Identification (OIB) Number
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 11 桁の数字
 
@@ -2226,12 +1795,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_croatia_oib_number がパターンに一致するコンテンツを検出した。
-- Keyword_croatia_oib_number のキーワードを検出した。
+- 関数 Func_croatia_oib_number は、このパターンに一致するコンテンツを検索します。
+- Keyword_croatia_oib_number からのキーワードが見つかりました。
 - チェックサムが渡される。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_croatia_oib_number がパターンに一致するコンテンツを検出した。
+- 関数 Func_croatia_oib_number は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```
@@ -2252,15 +1821,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordcroatiaoibnumber"></a>Keyword_croatia_oib_number
 
 - Personal Identification Number
-- Osobni identifikacijski broj
- 
-- OIB
- 
+- Osobni identifikacijski broj 
+- oib 
 
    
 ## <a name="czech-personal-identity-number"></a>チェコの個人 id 番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 省略可能なスラッシュ (古い形式) を含む9桁の数字 (省略可能)。スラッシュ (新しい形式)
 
@@ -2290,7 +1857,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは 85% です。この種類の機密情報は、近接する300文字の中で検出されます。関数 Func_czech_id_card は、このパターンに一致するコンテンツを検出します。Keyword_czech_id_card からのキーワードが見つかりました。チェックサムが渡されます。
+DLP ポリシーは 85% です。この種類の機密情報は、近接する300文字の中で検出されます。関数 Func_czech_id_card は、このパターンに一致するコンテンツを検出します。
+Keyword_czech_id_card からのキーワードが見つかりました。
+チェックサムが渡される。
 
 ```
 <!-- Czech Personal Identity Number -->
@@ -2306,9 +1875,9 @@ DLP ポリシーは 85% です。この種類の機密情報は、近接する30
 - チェコの個人 id 番号
 - rodnéčíslo
    
-## <a name="denmark-personal-identification-number"></a>デンマークの個人識別番号
+## <a name="denmark-personal-identification-number"></a>	Denmark Personal Identification Number
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 ハイフンを 1 つ含む 10 桁の数字
 
@@ -2325,7 +1894,9 @@ DLP ポリシーは 85% です。この種類の機密情報は、近接する30
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは 75% です。この種類の機密情報は、近接する300文字の中で検出されます。正規表現 Regex_denmark_id は、このパターンに一致するコンテンツを検出します。Keyword_denmark_id からのキーワードが見つかりました。チェックサムが渡されます。
+DLP ポリシーは 75% です。この種類の機密情報は、近接する300文字の中で検出されます。正規表現 Regex_denmark_id は、このパターンに一致するコンテンツを検出します。
+Keyword_denmark_id からのキーワードが見つかりました。
+チェックサムが渡される。
 
 ```
 <!-- Denmark Personal Identification Number -->
@@ -2348,7 +1919,7 @@ DLP ポリシーは 75% です。この種類の機密情報は、近接する30
    
 ## <a name="drug-enforcement-agency-dea-number"></a>麻薬取締局 (DEA) 番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 2 桁の文字の後に 7 桁の数字
 
@@ -2385,7 +1956,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="eu-debit-card-number"></a>欧州連合のデビット カード番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 16 桁の数字
 
@@ -2429,570 +2000,308 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordeudebitcard"></a>Keyword_eu_debit_card
 
-- アカウント番号 
-- card number
- 
-- card no.
- 
-- security number
- 
+- account number 
+- card number 
+- card no. 
+- security number 
 - ] 
 
 #### <a name="keywordcardtermsdict"></a>Keyword_card_terms_dict
 
-- acct nbr
- 
-- acct num
- 
-- acct no
- 
-- american express
- 
-- americanexpress
- 
-- americano espresso
- 
+- acct nbr 
+- acct num 
+- acct no 
+- american express 
+- americanexpress 
+- americano espresso 
 - amex 
-- atm card
- 
-- atm cards
- 
-- atm kaart
- 
-- atmcard
- 
-- atmcards
- 
-- atmkaart
- 
-- atmkaarten
- 
-- bancontact
- 
-- bank card
- 
-- bankkaart
- 
-- card holder
- 
-- card holders
- 
-- card num
- 
-- card number
- 
-- card numbers
- 
-- card type
- 
-- cardano numerico
- 
-- cardholder
- 
-- cardholders
- 
-- cardnumber
- 
-- cardnumbers
- 
-- carta bianca
- 
-- carta credito
- 
-- carta di credito
- 
-- cartao de credito
- 
-- cartao de crédito
- 
-- cartao de debito
- 
-- cartao de débito
- 
-- carte bancaire
- 
-- carte blanche
- 
-- carte bleue
- 
-- carte de credit
- 
-- carte de crédit
- 
-- carte di credito
- 
-- carteblanche
- 
-- cartão de credito
- 
-- cartão de crédito
- 
-- cartão de debito
- 
-- cartão de débito
- 
-- cb
- 
-- ccn
- 
-- check card
- 
-- check cards
- 
+- atm card 
+- atm cards 
+- atm kaart 
+- atmcard 
+- atmcards 
+- atmkaart 
+- atmkaarten 
+- # # の連絡先 
+- bank card 
+- bankkaart 
+- card holder 
+- card holders 
+- card num 
+- card number 
+- card numbers 
+- card type 
+- cardano numerico 
+- 所有者 
+- cardholders 
+- カード番号 
+- カード番号 
+- carta bianca 
+- carta credito 
+- carta di credito 
+- cartao de credito 
+- cartao de crédito 
+- cartao de debito 
+- cartao de débito 
+- carte bancaire 
+- carte blanche 
+- carte bleue 
+- carte de credit 
+- carte de crédit 
+- carte di credito 
+- carteblanche 
+- cartão de credito 
+- cartão de crédito 
+- cartão de debito 
+- cartão de débito 
+- cb 
+- ccn 
+- check card 
+- check cards 
 - checkcard
-
-- checkcards
- 
-- chequekaart
- 
-- cirrus
- 
-- cirrus-edc-maestro
- 
-- controlekaart
- 
-- controlekaarten
- 
-- credit card
- 
-- credit cards
- 
-- creditcard
- 
-- creditcards
- 
-- debetkaart
- 
-- debetkaarten
- 
-- debit card
- 
-- debit cards
- 
-- debitcard
- 
-- debitcards
- 
-- debito automatico
- 
-- diners club
- 
-- dinersclub
- 
+- checkcards 
+- chequekaart 
+- cirrus 
+- cirrus-edc-maestro 
+- lekaart の方法 
+- lekaar10 の場合 
+- credit card 
+- credit cards 
+- creditcard 
+- creditcards 
+- debetkaart 
+- debetkaarten 
+- debit card 
+- debit cards 
+- debitcard 
+- debitcards 
+- debito automatico 
+- diners club 
+- din/クラブ 
 - 開示 
-- discover card
- 
-- discover cards
- 
-- discovercard
- 
-- discovercards
- 
+- discover card 
+- discover cards 
+- discovercard 
+- discovercards 
 - débito automático
-- 
-edc
- 
-- eigentümername
- 
-- european debit card
- 
-- hoofdkaart
- 
-- hoofdkaarten
- 
-- in viaggio
- 
-- japanese card bureau
- 
-- japanse kaartdienst
- 
-- jcb
- 
-- kaart
- 
-- kaart num
- 
-- kaartaantal
- 
-- kaartaantallen
- 
-- kaarthouder
- 
-- kaarthouders
- 
-- karte
-  
-- karteninhaber
- 
+- edc 
+- eigentümername 
+- european debit card 
+- hoofdkaart 
+- hoofdkaarten 
+- in viaggio 
+- japanese card bureau 
+- japanse kaartdienst 
+- jcb 
+- kaart 
+- kaart num 
+- kaartaantal 
+- kaartaantallen 
+- kaarthouder 
+- kaarthouders 
+- karte  
+- karteninhaber 
 - karteninhabers
-- 
-kartennr
- 
+- kartennr 
 - kartennummer 
-- kreditkarte
- 
+- kreditkarte 
 - kreditkarten-nummer 
-- kreditkarteninhaber
- 
-- kreditkarteninstitut
- 
-- kreditkartennummer
- 
-- kreditkartentyp
- 
-- maestro
- 
-- master card
- 
-- master cards
- 
-- mastercard
- 
+- kreditkarteninhaber 
+- kreditkarteninstitut 
+- kreditkartennummer 
+- kreditkartentyp 
+- maestro 
+- master card 
+- master cards 
+- mastercard 
 - mastercards 
 - mc 
-- mister cash
- 
+- mister cash 
 - n carta 
 - carta 
-- 非の tarjeta 
-- いいえ。 
+- no de tarjeta 
+- no do cartao 
 - no do cartão 
-- no. de tarjeta
- 
-- no. do cartao
- 
-- no. do cartão
- 
+- 違います。 de tarjeta 
+- 違います。 do cartao 
+- 違います。 do cartão 
 - nr carta 
-- nr. carta
- 
-- numeri di scheda
- 
-- numero carta
- 
-- numero de cartao
- 
-- numero de carte
- 
-- numero de cartão
- 
+- nr. carta 
+- numeri di scheda 
+- numero carta 
+- numero de cartao 
+- numero de carte 
+- numero de cartão 
 - numero de tarjeta
-
-- numero della carta
- 
-- numero di carta
- 
-- numero di scheda
- 
-- numero do cartao
- 
-- numero do cartão
- 
-- numéro de carte
- 
-- nº carta
- 
-- nº de carte
- 
-- nº de la carte
- 
-- nº de tarjeta
- 
-- nº do cartao
- 
+- numero della carta 
+- numero di carta 
+- numero di scheda 
+- numero do cartao 
+- numero do cartão 
+- numéro de carte 
+- nº carta 
+- nº de carte 
+- nº de la carte 
+- nº de tarjeta 
+- nº do cartao 
+- nº do cartão 
 - n ° do cartão 
-- nº. do cartão
- 
-- número de cartao
- 
-- número de cartão
- 
-- número de tarjeta
- 
+- número de cartao 
+- número de cartão 
+- número de tarjeta 
 - número do cartao 
-- scheda dell'assegno
- 
-- scheda dell'atmosfera
- 
-- scheda dell'atmosfera
- 
-- scheda della banca
- 
-- scheda di controllo
- 
-- scheda di debito
- 
-- scheda matrice
- 
-- schede dell'atmosfera
- 
-- schede di controllo
- 
-- schede di debito
- 
-- schede matrici
- 
-- scoprono la scheda
- 
-- scoprono le schede
- 
-- solo
- 
-- supporti di scheda
- 
-- supporto di scheda
- 
-- switch
- 
-- tarjeta atm
- 
-- tarjeta credito
- 
-- tarjeta de atm
- 
-- tarjeta de credito
- 
-- tarjeta de debito
- 
-- tarjeta debito
- 
+- scheda dell'assegno 
+- scheda dell'atmosfera 
+- scheda dell'atmosfera 
+- scheda della banca 
+- scheda di controllo 
+- scheda di debito 
+- scheda matrice 
+- schede dell'atmosfera 
+- schede di controllo 
+- schede di debito 
+- schede matrici 
+- scoprono la scheda 
+- scoprono le schede 
+- 単独 
+- supporti di scheda 
+- supporto di scheda 
+- switch 
+- tarjeta atm 
+- tarjeta credito 
+- tarjeta de atm 
+- tarjeta de credito 
+- tarjeta de debito 
+- tarjeta debito 
 - tarjeta no
-
-- tarjetahabiente
- 
-- tipo della scheda
- 
+- tarjetahabiente 
+- tipo della scheda 
 - ufficio giapponese della 
-- scheda
- 
-- v pay
- 
+- scheda 
+- v pay 
 - v-支払い 
-- visa
- 
-- visa plus
- 
-- visa electron
- 
-- visto
- 
-- visum
- 
-- vpay
-   
+- visa 
+- visa plus 
+- visa electron 
+- visto 
+- visum 
+- vpay   
 
 #### <a name="keywordcardsecuritytermsdict"></a>Keyword_card_security_terms_dict
 
 - card identification number
 - card verification 
-- cardi la verifica
- 
-- cid
- 
-- cod セグメント 
+- cardi la verifica 
+- cid 
+- cod seg 
 - cod seguranca 
 - cod segurança 
 - cod sicurezza 
-- cod. seg
- 
-- cod. seguranca
- 
-- cod. segurança
- 
-- cod. sicurezza
- 
-- codice di sicurezza
- 
-- codice di verifica
- 
-- codigo
- 
-- codigo de seguranca
- 
-- codigo de segurança
- 
-- crittogramma
- 
-- cryptogram
- 
-- cryptogramme
- 
+- cod. seg 
+- cod. seguranca 
+- cod. segurança 
+- cod. sicurezza 
+- codice di sicurezza 
+- codice di verifica 
+- codigo 
+- codigo de seguranca 
+- codigo de segurança 
+- crittogramma 
+- cryptogram 
+- cryptogramme 
 - cv2 
-- cvc
- 
+- cvc 
 - cvc2 
-- cvn
- 
-- cvv
- 
+- cvn 
+- cvv 
 - cvv2 
 - cód seguranca 
 - cód segurança 
-- cód. seguranca
- 
-- cód. segurança
- 
-- código
- 
-- código de seguranca
- 
-- código de segurança
- 
-- de kaart controle
- 
-- geeft nr uit
- 
-- issue no
- 
-- issue number
- 
-- kaartidentificatienummer
- 
-- kreditkartenprufnummer
- 
-- kreditkartenprüfnummer
- 
-- kwestieaantal
- 
-- no. dell'edizione
- 
-- no. di sicurezza
- 
-- numero de securite
- 
-- numero de verificacao
- 
-- numero dell'edizione
- 
+- cód。 seguranca 
+- cód。 segurança 
+- código 
+- código de seguranca 
+- código de segurança 
+- de kaart controle 
+- geeft nr uit 
+- issue no 
+- issue number 
+- kaartidentificatienummer 
+- kreditkartenprufnummer 
+- kreditkartenprüfnummer 
+- kwestieaantal 
+- 違います。 dell'edizione 
+- 違います。 di sicurezza 
+- numero de securite 
+- numero de verificacao 
+- numero dell'edizione 
 - numero di identificazione della 
-- scheda
- 
-- numero di sicurezza
- 
-- numero van veiligheid
- 
-- numéro de sécurité
- 
-- nº autorizzazione
- 
-- número de verificação
- 
-- perno il blocco
- 
-- pin block
- 
-- prufziffer
- 
-- prüfziffer
- 
-- security code
- 
-- security no
- 
-- security number
- 
-- sicherheits kode
- 
-- sicherheitscode
- 
-- sicherheitsnummer
- 
-- speldblok
- 
-- veiligheid nr
- 
-- veiligheidsaantal
- 
-- veiligheidscode
- 
-- veiligheidsnummer
- 
-- verfalldatum
- 
+- scheda 
+- numero di sicurezza 
+- numero van veiligheid 
+- numéro de sécurité 
+- nº autorizzazione 
+- número de verificação 
+- perno il blocco 
+- pin block 
+- prufziffer 
+- prüfziffer 
+- security code 
+- security no 
+- security number 
+- sicherheits kode 
+- sicherheitscode 
+- sicherheitsnummer 
+- speldblok 
+- veiligheid nr 
+- veiligheidsaantal 
+- veiligheidscode 
+- veiligheidsnummer 
+- verfalldatum 
 
 #### <a name="keywordcardexpirationtermsdict"></a>Keyword_card_expiration_terms_dict
 
-- ablauf
- 
-- data de expiracao
- 
-- data de expiração
- 
-- data del exp
- 
-- data di exp
- 
-- data di scadenza
- 
-- data em que expira
- 
-- data scad
- 
-- data scadenza
- 
-- date de validité
- 
-- datum afloop
- 
-- datum van exp
- 
-- de afloop
- 
-- espira
- 
-- espira
- 
-- exp date
- 
-- exp datum
- 
+- ablん f 
+- data de expiracao 
+- data de expiração 
+- data del exp 
+- data di exp 
+- data di scadenza 
+- data em que expira 
+- data scad 
+- data scadenza 
+- date de validité 
+- datum afloop 
+- datum van exp 
+- de afloop 
+- espira 
+- espira 
+- exp date 
+- exp datum 
 - nntp 
-- expire
- 
-- expires
- 
-- expiry
- 
-- fecha de expiracion
- 
-- fecha de venc
- 
-- gultig bis
- 
-- gultigkeitsdatum
- 
-- gültig bis
- 
-- gültigkeitsdatum
- 
-- la scadenza
- 
-- scadenza
- 
-- valable
- 
-- validade
- 
-- valido hasta
- 
-- valor
- 
-- venc
- 
-- vencimento
- 
-- vencimiento
- 
-- verloopt
- 
-- vervaldag
- 
-- vervaldatum
- 
-- vto
- 
-- válido hasta
- 
+- 無効 
+- 期限 
+- 期限 
+- fecha de expiracion 
+- fecha de venc 
+- gultig bis 
+- gultigkeitsdatum 
+- gültig bis 
+- gültigkeitsdatum 
+- la scadenza 
+- scadenza 
+- valable 
+- validade 
+- valido hasta 
+- valor は 
+- venc 
+- vencimento 
+- vencimiento 
+- verloopt 
+- vervaldag 
+- vervaldatum 
+- vto 
+- válido hasta 
    
 ## <a name="eu-drivers-license-number"></a>EU 運転免許証番号
 
@@ -3016,7 +2325,7 @@ kartennr
   
 ## <a name="finland-national-id"></a>フィンランドの国民 ID
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 6 桁の数字、世紀を表す 1 桁の文字、3 桁の数字、1 桁のチェック ディジット
 
@@ -3052,22 +2361,23 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="keywords"></a>キーワード
 
 - Keyword_finnish_national_id
-- 
-
-Sosiaaliturvatunnus
+- Sosiaaliturvatunnus
 - SOTU Henkilötunnus HETU
 - Personbeteckning
 - Personnummer
    
 ## <a name="finland-passport-number"></a>フィンランドのパスポート番号
 
-次の9つの文字と数字のパターンの組み合わせを書式設定します。9桁の文字 (大文字小文字を区別しない)、7桁のチェックサムを定義しません。 DLP ポリシーは 75% で、この種類の機密情報がある場合に、300文字の近接性: 正規表現 Regex_finland_passport_number は、このパターンに一致するコンテンツを検出します。Keyword_finland_passport_number からのキーワードが見つかりました。キーワード Keyword_finland_passport_number <!-- Finland Passport Number --> 
- <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern> 
- </Entity>
+次の9つの文字と数字のパターンの組み合わせを書式設定します。9桁の文字 (大文字小文字を区別しない)、7桁のチェックサムを定義しません。 DLP ポリシーは 75% で、この種類の機密情報がある場合に、300文字の近接性: 正規表現 Regex_finland_passport_number は、このパターンに一致するコンテンツを検出します。
+Keyword_finland_passport_number からのキーワードが見つかりました。
+<!-- Finland Passport Number -->
+<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern>
+</Entity>
+キーワード Keyword_finland_passport_number passport Passi
    
 ## <a name="france-drivers-license-number"></a>フランスの運転免許証番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 12 桁の数字
 
@@ -3077,9 +2387,9 @@ Sosiaaliturvatunnus
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_french_drivers_license がパターンに一致するコンテンツを検出した。
@@ -3107,23 +2417,16 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - drivers licence
 - drivers license
 - driving licence
-
-- ライセンスの駆動
-- 
-permis de conduire
-- 
-licence number
-- 
-license number
-- 
-licence numbers
-- 
-
-license numbers
+- driving license
+- permis de conduire
+- licence number
+- license number
+- licence numbers
+- license numbers
 
 ## <a name="france-national-id-card-cni"></a>フランスの国民識別カード (CNI)
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 12 桁の数字
 
@@ -3133,7 +2436,7 @@ license numbers
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -3155,7 +2458,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="france-passport-number"></a>フランスのパスポート番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 9 桁の数字と文字
 
@@ -3163,14 +2466,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 9 つの数字と文字:
 - 2 桁の数字 
-- 2 桁の文字 (大文字小文字の区別なし)  
+- 2 つの文字 (大文字小文字を区別しない) 
 - 5 桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_fr_passport がパターンに一致するコンテンツを検出した。
@@ -3191,43 +2494,28 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordpassport"></a>Keyword_passport
 
 - Passport Number
-- 
-Passport No
+- Passport No
 - Passport #
-
-- Passport#
-
+- サインアウト
 - PassportID
 - Passportno
-
 - passportnumber
-
 - パスポート
 - パスポート番号
-
 - パスポートのNum
-
-- 
-パスポート ＃
- 
+- パスポート ＃ 
 - Numéro de passeport
-- 
-Passeport n °
+- Passeport n °
 - Passeport Non
-
 - Passeport #
-
-- Passeport#
-
+- Passeport #
 - PasseportNon
-- 
-
-Passeportn °
+- Passeportn °
 
       
 ## <a name="france-social-security-number-insee"></a>フランスの社会保障番号 (INSEE)
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 15 桁の数字
 
@@ -3279,55 +2567,37 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordfrinsee"></a>Keyword_fr_insee
 
 - insee
-- 
-securité sociale
-- 
-securite sociale
-- 
-national id
-- 
-national identification
-- 
-numéro d'identité
-- d'identitéなし
-- 
-no. d'identité
-- 
-numero d'identite
-- d'identite なし
-- 
-no. d'identite
+- securité sociale
+- securite sociale
+- national id
+- national identification
+- numéro d'identité
+- no d'identité
+- 違います。 d'identité
+- numero d'identite
+- no d'identite
+- 違います。 d'identite
 - social security number
-
-- 
-social security code
+- social security code
 - social insurance number
-- 
-le numéro d'identification nationale
-- 
-d'identité nationale
-- 
-numéro de sécurité sociale
-- 
-le code de la sécurité sociale
-- 
-numéro d'assurance sociale
-- 
-numéro de sécu
-- 
-code sécu
- 
+- le numéro d'identification nationale
+- d'identité nationale
+- numéro de sécurité sociale
+- le code de la sécurité sociale
+- numéro d'assurance sociale
+- numéro de sécu
+- code sécu 
    
 ## <a name="german-drivers-license-number"></a>ドイツの運転免許証番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 11 桁の数字と文字の組み合わせ
 
 ### <a name="pattern"></a>パターン
 
 11 個の数字と文字 (大文字小文字を区別しない):
-- 1 桁の数字または文字  
+- 1 つの数字または文字 
 - 2 桁の数字 
 - 6 つの数字または文字 
 - 1 桁の数字 
@@ -3366,22 +2636,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordgermandriverslicensenumber"></a>Keyword_german_drivers_license_number
 
 - Führerschein
-- 
-Fuhrerschein
+- futex
 - futex の ehのリリース
-- 
-Führerscheinnummer
-- 
-Fuhrerscheinnummer
-- 
-Fuehrerscheinnummer
-- 
-Führerschein-
- 
-- Fuhrerschein-
- 
-- Fuehrerschein-
- 
+- Führerscheinnummer
+- Fuhrerscheinnummer
+- Fuehrerscheinnummer
+- Führerschein 
+- futex (中) 
+- futex の ehのリリース 
 - FührerscheinnummerNr
 - futex がある hていません einnumnr
 - futex の ehの再リリース/einnumnr
@@ -3389,15 +2651,10 @@ Führerschein-
 - FuhrerscheinnummerKlasse
 - FuehrerscheinnummerKlasse
 - Führerschein- Nr
-
 - Fuhrerschein- Nr
-
-- Fuehrerschein- Nr
- 
-- Führerschein- Klasse
- 
-- Fuhrerschein- Klasse
- 
+- Fuehrerschein- Nr 
+- Führerschein- Klasse 
+- Fuhrerschein- Klasse 
 - Fuehrerschein- Klasse
 - FührerscheinnummerNr 
 - futex がある hていません einnumnr 
@@ -3405,125 +2662,77 @@ Führerschein-
 - FührerscheinnummerKlasse 
 - FuhrerscheinnummerKlasse 
 - FuehrerscheinnummerKlasse 
-- Führerschein- Nr
- 
-- Fuhrerschein- Nr
- 
-- Fuehrerschein- Nr
- 
-- Führerschein- Klasse
- 
-- Fuhrerschein- Klasse
- 
+- Führerschein- Nr 
+- Fuhrerschein- Nr 
+- Fuehrerschein- Nr 
+- Führerschein- Klasse 
+- Fuhrerschein- Klasse 
 - Fuehrerschein- Klasse 
 - DL 
-- DLS
-- 
-Driv Lic
- 
-- Driv Licen
- 
+- dl
+- Driv Lic 
+- Driv Licen 
 - Driv License
-- 
-Driv Licenses
- 
-- Driv Licence
- 
-- Driv Licences
- 
-- Driv Lic
- 
-- Driver Licen
- 
-- ドライバーライセンス 
-- ドライバーのライセンス 
-- Driver Licence
- 
-- Driver Licences
- 
-- ドライバー Lic 
-- ドライバーのライセンス 
-- ドライバーのライセンス 
-- ドライバーのライセンス 
-- ドライバーのライセンス 
-- ドライバーライセンス 
-- ドライバーの Lic 
-- Driver's Licen
- 
-- 運転免許証 
-- ドライバーのライセンス 
-- Driver's Licence
- 
-- Driver's Licences
- 
-- Driving Lic
- 
-- Driving Licen
- 
-- Driving License
- 
-- Driving Licenses
- 
-- Driving Licence
-
- 
+- Driv Licenses 
+- Driv Licence 
+- Driv Licences 
+- Driv Lic 
+- Driver Licen 
+- Driver License 
+- Driver Licenses 
+- Driver Licence 
+- Driver Licences 
+- Drivers Lic 
+- Drivers Licen 
+- Drivers License 
+- Drivers Licenses 
+- Drivers Licence 
+- Drivers Licences 
+- Driver's Lic 
+- Driver's Licen 
+- Driver's License 
+- Driver's Licenses 
+- Driver's Licence 
+- Driver's Licences 
+- Driving Lic 
+- Driving Licen 
+- Driving License 
+- Driving Licenses 
+- Driving Licence 
 - Driving Licences
 
 #### <a name="keywordgermandriverslicensecollaborative"></a>Keyword_german_drivers_license_collaborative
 
-- 
-Nr-Führerschein
- 
-- Nr-Fuhrerschein
- 
-- Nr-Fuehrerschein
- 
-- No-Führerschein
- 
-- No-Fuhrerschein
- 
-- No-Fuehrerschein
- 
-- N-Führerschein
- 
-- N-Fuhrerschein
- 
-- N-Fuehrerschein
-- 
-Nr-Führerschein
- 
-- Nr-Fuhrerschein
- 
-- Nr-Fuehrerschein
- 
-- No-Führerschein
- 
-- No-Fuhrerschein
- 
-- No-Fuehrerschein
- 
-- N-Führerschein
- 
-- N-Fuhrerschein
- 
-- N-Fuehrerschein 
+- Nr-Führerschein 
+- Nr-futex 
+- "Nr" という futex 
+- Führerschein 
+- (futex なし) 
+- その他の ehの場合 
+- N-Führerschein 
+- N の futex 
+- N 桁の ehた ehのリリース
+- Nr-Führerschein 
+- Nr-futex 
+- "Nr" という futex 
+- Führerschein 
+- (futex なし) 
+- その他の ehの場合 
+- N-Führerschein 
+- N の futex 
+- N 桁の ehた ehのリリース 
 
 #### <a name="keywordgermandriverslicense"></a>Keyword_german_drivers_license
 
 - ausstellungsdatum
-- 
-ausstellungsort
-- 
-ausstellende behöde
-- 
-ausstellende behorde
-- 
-
-ausstellende behoerde
+- ausstellungsort
+- ausstellende behöde
+- ausstellende behorde
+- ausstellende behoerde
    
 ## <a name="german-passport-number"></a>ドイツのパスポート番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 10 桁の数字または文字
 
@@ -3582,21 +2791,16 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordgermanpassport"></a>Keyword_german_passport
 
 - reisepass
-- 
-reisepasse
-- 
-reisepassnummer
+- reisepasse
+- reisepassnummer
+- サインアウト
 - passport
-- 
-
-passports
 
 #### <a name="keywordgermanpassportcollaborative"></a>Keyword_german_passport_collaborative
 
-- geburtsdatum
+- ge気流 tsdatum
 - ausstellungsdatum
-- 
-ausstellungsort
+- ausstellungsort
 
 #### <a name="keywordgermanpassportnumber"></a>Keyword_german_passport_number
 
@@ -3606,14 +2810,13 @@ Reisepass Nr-Reisepass
 
 Reisepass-Nr
 
-
 #### <a name="keywordgermanpassport2"></a>Keyword_german_passport2
 
 bnationalit
    
 ## <a name="germany-identity-card-number"></a>ドイツの身分証明書番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 2010年11月1日以降: 9 桁の文字と数字
 
@@ -3622,7 +2825,7 @@ bnationalit
 ### <a name="pattern"></a>パターン
 
 2010 年 11 月 1 日以降:
-- 1 文字 (大文字小文字を区別しない) 
+- 1 桁の文字 (大文字小文字の区別なし)  
 - 8 桁の数字
 
 1987年4月1日から2010年10月31日まで。
@@ -3630,13 +2833,13 @@ bnationalit
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、65% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_germany_id_card がパターンに一致するコンテンツを検出した。
-- Keyword_germany_id_card のキーワードを検出した。
+- 正規表現 Regex_germany_id_card は、このパターンに一致するコンテンツを検出します。
+- Keyword_germany_id_card からのキーワードが見つかりました。
 
 ```
 <!-- Germany Identity Card Number -->
@@ -3654,7 +2857,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 - Identity Card
 - ID
-- Identification
+- fim
 - Personalausweis
 - Identifizierungsnummer
 - Ausweis
@@ -3662,7 +2865,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="greece-national-id-card"></a>ギリシャの国民識別カード
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 7 ～ 8 桁の文字と数字の組み合わせとハイフン 1 つ
 
@@ -3670,23 +2873,23 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 7 桁の文字と数字 (従来の形式):
 - 1 桁の文字 (ギリシャ語のアルファベット文字)  
-- ダッシュ 
+- ハイフン 1 つ  
 - 6 桁の数字
 
 8 桁の文字と数字 (現在の形式):
 - ギリシャ語にもラテン語にも大文字がある文字 (ABEZHIKMNOPTYX) を使用した 2 桁の文字  
-- ダッシュ 
+- ハイフン 1 つ  
 - 6 桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_greece_id_card がパターンに一致するコンテンツを検出した。
-- Keyword_greece_id_card のキーワードを検出した。
+- 正規表現 Regex_greece_id_card は、このパターンに一致するコンテンツを検出します。
+- Keyword_greece_id_card からのキーワードが見つかりました。
 
 ```
 <!-- Greece National ID Card -->
@@ -3703,13 +2906,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordgreeceidcard"></a>Keyword_greece_id_card
 
 - Greek identity Card
-- Tautotita
+- tautotita
 - Δελτίο αστυνομικής ταυτότητας
 - Ταυτότητα
    
 ## <a name="hong-kong-identity-card-hkid-number"></a>香港の ID カード (HKID) 番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 8 ～ 9 桁の文字と数字の組み合わせ、最後の文字はかっこで囲むことも可能
 
@@ -3727,12 +2930,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_hong_kong_id_card がパターンに一致するコンテンツを検出した。
-- Keyword_hong_kong_id_card のキーワードを検出した。
+- 関数 Func_hong_kong_id_card は、このパターンに一致するコンテンツを検索します。
+- Keyword_hong_kong_id_card からのキーワードが見つかりました。
 - チェックサムが渡される。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、65% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_hong_kong_id_card がパターンに一致するコンテンツを検出した。
+- 関数 Func_hong_kong_id_card は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```
@@ -3754,24 +2957,20 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 - 香港の id カード
 - hkidc
-- id カード
+- id card
 - Identity card
 - hk の id カード
 - 香港特別行政 id
 - 香港身份證
-
 - 香港永久性居民身份證
-
 - 身份證
-
 - 身份証
-- 身分證 
+- 身分證
 - 身分証
 - 香港身份証
 - 香港身分證
 - 香港身分証
 - 香港身份證
-
 - 香港居民身份證
 - 香港居民身份証
 - 香港居民身分證
@@ -3780,7 +2979,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 香港永久性居民身分證
 - 香港永久性居民身分証
 - 香港永久性居民身份證
-
 - 香港非永久性居民身份證
 - 香港非永久性居民身份証
 - 香港非永久性居民身分證
@@ -3796,7 +2994,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="india-permanent-account-number-pan"></a>インドの永久口座番号 (PAN)
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 10 桁の文字または数字
 
@@ -3814,8 +3012,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_india_permanent_account_number がパターンに一致するコンテンツを検出した。
-- Keyword_india_permanent_account_number のキーワードを検出した。
+- 正規表現 Regex_india_permanent_account_number は、このパターンに一致するコンテンツを検出します。
+- Keyword_india_permanent_account_number からのキーワードが見つかりました。
 - チェックサムが渡される。
 
 ```
@@ -3832,23 +3030,21 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordindiapermanentaccountnumber"></a>Keyword_india_permanent_account_number
 
-- Permanent Account Number
- 
-- PAN
- 
+- Permanent Account Number 
+- ペン 
    
 ## <a name="india-unique-identification-aadhaar-number"></a>インドの固有識別 (Aadhaar) 番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 省略可能なスペースまたはハイフンを含む 12 桁の数字
 
 ### <a name="pattern"></a>パターン
 
 12 桁の数字:
-- 4 桁の数字  
+- 4 桁の数字 
 - スペースまたはハイフン 1 つ (省略可能)  
-- 4 桁の数字  
+- 4 桁の数字 
 - スペースまたはハイフン 1 つ (省略可能)  
 - 最後の数字はチェック ディジット
 
@@ -3858,7 +3054,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは 85% です。この種類の機密情報は、近接する300文字の中で検出されます。関数 Func_india_aadhaar は、このパターンに一致するコンテンツを検出します。Keyword_india_aadhar からのキーワードが見つかりました。チェックサムが渡されます。DLP ポリシーは 75% です。この種類の機密情報は、近接する300文字の中で検出されます。関数 Func_india_aadhaar は、このパターンに一致するコンテンツを検出します。チェックサムが渡されます。<!-- India Unique Identification (Aadhaar) number -->
+DLP ポリシーは 85% です。この種類の機密情報は、近接する300文字の中で検出されます。関数 Func_india_aadhaar は、このパターンに一致するコンテンツを検出します。
+Keyword_india_aadhar からのキーワードが見つかりました。
+チェックサムが渡される。
+DLP ポリシーは 75% です。この種類の機密情報は、近接する300文字の中で検出されます。関数 Func_india_aadhaar は、このパターンに一致するコンテンツを検出します。
+チェックサムが渡される。
+<!-- India Unique Identification (Aadhaar) number -->
 <Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300"> <Pattern confidenceLevel="85"> <IdMatch idRef="Func_india_aadhaar"/> <Match idRef="Keyword_india_aadhar"/> </Pattern> <Pattern confidenceLevel="75"> <IdMatch idRef="Func_india_aadhaar"/> </Pattern>
 </Entity>
 
@@ -3872,7 +3073,7 @@ DLP ポリシーは 85% です。この種類の機密情報は、近接する30
    
 ## <a name="indonesia-identity-card-ktp-number"></a>インドネシアの身分証明書 (KTP) 番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 省略可能なピリオドを含む 16 桁の数字
 
@@ -3890,16 +3091,16 @@ DLP ポリシーは 85% です。この種類の機密情報は、近接する30
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
-### <a name="definition"></a>Definition
-
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_indonesia_id_card がパターンに一致するコンテンツを検出した。
-- Keyword_indonesia_id_card のキーワードを検出した。
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_indonesia_id_card がパターンに一致するコンテンツを検出した。
+- 正規表現 Regex_indonesia_id_card は、このパターンに一致するコンテンツを検出します。
+- Keyword_indonesia_id_card からのキーワードが見つかりました。
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現 Regex_indonesia_id_card は、このパターンに一致するコンテンツを検出します。
 
 ```
 <!-- Indonesia Identity Card (KTP) Number -->
@@ -3919,29 +3120,27 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordindonesiaidcard"></a>Keyword_indonesia_id_card
 
 - KTP
-- Kartu Tanda Penduduk
- 
-- Nomor Induk Kependudukan
- 
+- Kartu Tanda Penduduk 
+- Nomor Induk Kependudukan 
    
 ## <a name="international-banking-account-number-iban"></a>国際銀行口座番号 (IBAN)
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
-国コード (2 文字)、チェック ディジット (2 桁)、bban 番号 (最大 30 文字)
+国コード (2 文字)、チェックディジット (2 桁)、および番号を bban 最大30文字)
 
 ### <a name="pattern"></a>パターン
 
 パターンには、以下のすべてが含まれる必要があります。
 
-- 2 文字の国コード
-- 2 桁のチェック ディジット (省略可能なスペースが続く)  
-- 4 個の文字または数字で構成される 1 から 7 個のグループ (スペースで区切ることができる)
+- 2文字の国コード
+- 2つのチェックディジット (オプションのスペースが続く) 
+- 1-7 4 つの文字または数字のグループ (スペースで区切ることができます)
 - 1 ～ 3 個の文字または数字
 
-各国の形式は多少異なります。IBAN 機密情報の型は、次の 60 か国をカバーしています。
+各国の形式は少し異なります。 IBAN 機密情報の種類には、次の60国が含まれています。
 
-ad、ae、al、at、az、ba、be、bg、bh、ch、cr、cy、cz、de、dk、do、ee、es、fi、fo、fr、gb、ge、gi、gl、gr、hr、hu、ie、il、is、it、kw、kz、lb、li、lt、lu、lv、mc、md、me、mk、mr、mt、mu、nl、no、pl、pt、ro、rs、sa、se、si、sk、sm、tn、tr、vg
+ad、ae、al、at、az、ba、be、bg、bh、ch、cr、cy、cz、de、dk、do、ee、es、fi、fo、fr、gb、ge、hu、gl、gr、hr、、ie、il、、it、kw、kz、lb、li、lt、lu、lv、mc、md、me、mk、mr、mt、mu、nl、no、pl、pt、ro、rs、sa、se、si、sk、sm、tn、tr、vg
 
 ### <a name="checksum"></a>チェックサム
 
@@ -3968,19 +3167,19 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="ip-address"></a>IP アドレス
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
-#### <a name="ipv4"></a>IPv4:
+#### <a name="ipv4"></a>IPv4
 書式設定あり (ピリオド付き) または書式設定なし (ピリオドなし) のIPv4 アドレスを表す複雑なパターン
 
-#### <a name="ipv6"></a>IPv6:
+#### <a name="ipv6"></a>IPv6
  書式設定あり (コロン付き) の IPv6 番号を表す複雑なパターン
 
 ### <a name="pattern"></a>パターン
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -3994,7 +3193,7 @@ IPv4 の場合、DLP ポリシーは、抽出した約 300 文字が次の条件
 
 IPv6 の場合、DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、95% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現 Regex_ipv6_address がパターンに一致するコンテンツを検出した。
-- Keyword_ipaddress のキーワードが検出されません。
+- Keyword_ipaddress のキーワードを検出しなかった。
 
 ```
     <!-- IP Address -->
@@ -4025,19 +3224,16 @@ IPv6 の場合、DLP ポリシーは、抽出した約 300 文字が次の条件
 #### <a name="keywordipaddress"></a>Keyword_ipaddress
 
 - IP (このキーワードでは大文字と小文字が区別されます)
-- ip address
- 
+- ip address 
 - ip addresses
 - internet protocol
-- 
-IP-כתובת ה
- 
+- IP-כתובת ה 
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Diseases の国際分類 (ICD-10-CM)
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
-欧文
+Dictionary
 
 ### <a name="pattern"></a>パターン
 
@@ -4045,7 +3241,7 @@ IP-כתובת ה
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -4063,14 +3259,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 キーワード
 
-Dictionary_icd_10_cm キーワードディクショナリの用語。 [Diseases、10リビジョン、臨床修正 (icd-10-cm) の国際分類](https://go.microsoft.com/fwlink/?linkid=852604)に基づいています。この型は、保険コードではなく、用語に対してのみ表示されます。
+Dictionary_icd_10_cm キーワードディクショナリの用語。 [Diseases、10リビジョン、臨床修正 (icd-10-cm) の国際分類](https://go.microsoft.com/fwlink/?linkid=852604)に基づいています。 この型は、保険コードではなく、用語に対してのみ表示されます。
 
    
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>Diseases の国際分類 (ICD-9-CM)
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
-欧文
+Dictionary
 
 ### <a name="pattern"></a>パターン
 
@@ -4078,7 +3274,7 @@ Dictionary_icd_10_cm キーワードディクショナリの用語。 [Diseases�
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -4095,11 +3291,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-Dictionary_icd_9_cm キーワードディクショナリの用語。 [Diseases、9リビジョン、臨床修正 (icd-9-cm) の国際分類](https://go.microsoft.com/fwlink/?linkid=852605)に基づいています。この型は、保険コードではなく、用語に対してのみ表示されます。
+Dictionary_icd_9_cm キーワードディクショナリの用語。 [Diseases、9リビジョン、臨床修正 (icd-9-cm) の国際分類](https://go.microsoft.com/fwlink/?linkid=852605)に基づいています。 この型は、保険コードではなく、用語に対してのみ表示されます。
    
 ## <a name="ireland-personal-public-service-pps-number"></a>アイルランドの個人公共サービス (PPS) 番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 古い形式 (2012 年12月31日まで):
 - 7 桁の数字の後に 1 ～ 2 桁の文字  
@@ -4125,14 +3321,14 @@ Dictionary_icd_9_cm キーワードディクショナリの用語。 [Diseases�
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_ireland_pps がパターンに一致するコンテンツを検出した。
+- 関数 Func_ireland_pps は、このパターンに一致するコンテンツを検索します。
 - 次のいずれかの条件に該当する:
-    - Keyword_ireland_pps のキーワードを検出した。
+    - Keyword_ireland_pps からのキーワードが見つかりました。
     - 関数 Func_eu_date が適切な日付形式の日付を検出した。
 - チェックサムが渡される。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、65% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_ireland_pps がパターンに一致するコンテンツを検出した。
+- 関数 Func_ireland_pps は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```
@@ -4156,50 +3352,40 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordirelandpps"></a>Keyword_ireland_pps
 
 - Personal Public Service Number 
- 
-- PPS Number
- 
-- PPS Num
- 
-- PPS No.
- 
-- PPS #
- 
+- PPS Number 
+- PPS Num 
+- PPS No. 
+- PPS # 
 - PPS 
-- PPSN
- 
-- Public Services Card
- 
-- Uimhir Phearsanta Seirbhíse Poiblí
- 
-- Uimh.PSP
- 
-- PSP
- 
+- ppsn 
+- Public Services Card 
+- Uimhir Phearsanta Seirbhíse Poiblí 
+- Uimh。 PSP 
+- PSP 
    
 ## <a name="israel-bank-account-number"></a>イスラエルの銀行口座番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 13 桁の数字
 
 ### <a name="pattern"></a>パターン
 
-書式設定されている場合:
+さ
 - 2 桁の数字 
 - ダッシュ 
 - 3 桁の数字 
 - ダッシュ 
 - 8 桁の数字
 
-書式設定されていない場合:
+なし
 - 	13 桁の連続する数字
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現 Regex_israel_bank_account_number がパターンに一致するコンテンツを検出した。
@@ -4221,18 +3407,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordisraelbankaccountnumber"></a>Keyword_israel_bank_account_number
 
-- Bank Account Number
- 
-- Bank Account
- 
-- Account Number
- 
-- מספר חשבון בנק
- 
+- Bank Account Number 
+- Bank Account 
+- Account Number 
+- מספר חשבון בנק 
    
 ## <a name="israel-national-id"></a>イスラエルの国民 ID
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 9 桁の数字
 
@@ -4267,29 +3449,28 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordisraelnationalid"></a>Keyword_Israel_National_ID
 
-- מספר זהות
- 
+- מספר זהות 
 - National ID Number
    
 ## <a name="italy-drivers-license-number"></a>イタリアの運転免許証番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 10 桁の文字と数字の組み合わせ
 
 ### <a name="pattern"></a>パターン
 
 - 10 個の文字と数字の組み合わせ:
-- 1 桁の文字 (大文字小文字の区別なし)  
+- 1 文字 (大文字小文字を区別しない) 
 - 文字 "A" または "V" (大文字小文字を区別しない) 
 - 7 つの文字 (大文字小文字を区別しない)、数字、またはアンダースコア文字 
 - 1 文字 (大文字小文字を区別しない)
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現 Regex_italy_drivers_license_number がパターンに一致するコンテンツを検出した。
@@ -4311,14 +3492,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keyworditalydriverslicensenumber"></a>Keyword_italy_drivers_license_number
 
-- numero di patente di guida
- 
-- patente di guida
- 
+- numero di patente di guida 
+- patente di guida 
    
 ## <a name="japan-bank-account-number"></a>日本の銀行口座番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 7 桁または 8 桁の数字
 
@@ -4333,7 +3512,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -4372,110 +3551,60 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordjpbankaccount"></a>Keyword_jp_bank_account
 
-- Checking Account Number
- 
-- Checking Account
- 
-- Checking Account #
- 
-- Checking Acct Number
- 
-- Checking Acct #
- 
-- Checking Acct No.
- 
-- Checking Account No.
- 
-- Bank Account Number
- 
-- Bank Account
- 
-- Bank Account #
- 
-- Bank Acct Number
- 
-- Bank Acct #
- 
-- Bank Acct No.
- 
-- Bank Account No.
- 
-- Savings Account Number
- 
-- 預金口座 
-- Savings Account #
- 
-- Savings Acct Number
- 
-- Savings Acct #
- 
-- Savings Acct No.
- 
-- Savings Account No.
- 
-- Debit Account Number
- 
-- Debit Account
- 
-- Debit Account #
- 
-- Debit Acct Number
- 
-- Debit Acct #
- 
-- Debit Acct No.
- 
-- Debit Account No.
- 
-- 口座番号を当座預金口座の確認
- 
-- ＃アカウントの確認、勘定番号の確認
- 
-- ＃勘定の確認
- 
-- 勘定番号の確認
- 
-- 口座番号の確認
- 
+- Checking Account Number 
+- Checking Account 
+- Checking Account # 
+- Checking Acct Number 
+- Checking Acct # 
+- Checking Acct No. 
+- Checking Account No. 
+- Bank Account Number 
+- Bank Account 
+- Bank Account # 
+- Bank Acct Number 
+- Bank Acct # 
+- Bank Acct No. 
+- Bank Account No. 
+- Savings Account Number 
+- Savings Account 
+- Savings Account # 
+- Savings Acct Number 
+- Savings Acct # 
+- Savings Acct No. 
+- Savings Account No. 
+- Debit Account Number 
+- Debit Account 
+- Debit Account # 
+- Debit Acct Number 
+- Debit Acct # 
+- Debit Acct No. 
+- Debit Account No. 
+- 口座番号を当座預金口座の確認 
+- #アカウントの確認、勘定番号の確認 
+- #勘定の確認 
+- 勘定番号の確認 
+- 口座番号の確認 
 - 銀行口座番号 
 - 銀行口座 
-- 銀行口座＃
- 
-- 銀行の勘定番号
- 
-- 銀行のacct＃
- 
-- 銀行の勘定いいえ
- 
+- 銀行口座 # 
+- 銀行の勘定番号 
+- 銀行のacct # 
+- 銀行の勘定いいえ 
 - 銀行口座番号
-- 
-普通預金口座番号
- 
-- 預金口座
- 
-- 貯蓄口座＃
- 
-- 貯蓄勘定の数
- 
-- 貯蓄勘定＃
- 
-- 貯蓄勘定番号
- 
-- 普通預金口座番号
- 
-- 引き落とし口座番号
- 
+- 普通預金口座番号 
+- 預金口座 
+- 貯蓄口座 # 
+- 貯蓄勘定の数 
+- 貯蓄勘定 # 
+- 貯蓄勘定番号 
+- 普通預金口座番号 
+- 引き落とし口座番号 
 - 口座番号 
-- 口座番号＃
- 
-- デビットのacct番号
- 
-- デビット勘定＃
- 
-- デビットACCTの番号
- 
-- デビット口座番号
- 
+- 口座番号 # 
+- デビットのacct番号 
+- デビット勘定 # 
+- デビットACCTの番号 
+- デビット口座番号 
 
 #### <a name="keywordjpbankbranchcode"></a>Keyword_jp_bank_branch_code
 
@@ -4483,7 +3612,7 @@ Otemachi
 
 ## <a name="japan-drivers-license-number"></a>日本の運転免許証番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 12 桁の数字
 
@@ -4493,7 +3622,7 @@ Otemachi
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -4515,9 +3644,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordjpdriverslicensenumber"></a>Keyword_jp_drivers_license_number
 
-- dl# 
+- dl 
 - DL 
-- dls# 
+- dl 
 - dl 
 - driver license 
 - driver licenses 
@@ -4525,32 +3654,25 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driver's license 
 - drivers licenses 
 - driver's licenses 
-- driving licence
- 
-- lic# 
+- driving licence 
 - そして 
-- lics# 
-- 状態 id 
-- state identification
- 
-- state identification number
- 
-- 低所得国＃
- 
+- そして 
+- lics # 
+- state id 
+- state identification 
+- state identification number 
+- 低所得国 # 
 - 免許証 
 - 状態ID
-- 
-状態の識別
- 
-- 状態の識別番号
- 
+- 状態の識別 
+- 状態の識別番号 
 - 運転免許 
 - 運転免許証 
 - 運転免許証番号 
    
 ## <a name="japan-passport-number"></a>日本のパスポート番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 2 桁の文字の後に 7 桁の数字
 
@@ -4560,7 +3682,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -4582,18 +3704,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordjppassport"></a>Keyword_jp_passport
 
-- パスポート
- 
-- パスポート番号
- 
-- パスポートのNum
- 
-- パスポート＃
- 
+- パスポート 
+- パスポート番号 
+- パスポートのNum 
+- パスポート # 
    
 ## <a name="japan-resident-registration-number"></a>日本の住民登録番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 11 桁の数字
 
@@ -4603,7 +3721,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -4626,31 +3744,21 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordjpresidentregistrationnumber"></a>Keyword_jp_resident_registration_number
 
 - Resident Registration Number
-- Resident Register Number
- 
-- Residents Basic Registry Number
- 
-- Resident Registration No.
- 
-- Resident Register No.
- 
-- Residents Basic Registry No.
- 
-- Basic Resident Register No.
- 
-- 住民登録番号、登録番号をレジデント
- 
-- 住民基本登録番号、登録番号
- 
-- 住民基本レジストリ番号を常駐
- 
-- 登録番号を常駐住民基本台帳登録番号
- 
+- Resident Register Number 
+- Residents Basic Registry Number 
+- Resident Registration No. 
+- Resident Register No. 
+- Residents Basic Registry No. 
+- Basic Resident Register No. 
+- 住民登録番号、登録番号をレジデント 
+- 住民基本登録番号、登録番号 
+- 住民基本レジストリ番号を常駐 
+- 登録番号を常駐住民基本台帳登録番号 
 
    
 ## <a name="japan-social-insurance-number-sin"></a>日本の社会保険番号 (SIN)
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 7～ 12 桁の数字
 
@@ -4664,7 +3772,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -4694,20 +3802,15 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordjpsin"></a>Keyword_jp_sin
 
-- Social Insurance No.
- 
-- Social Insurance Num
- 
-- Social Insurance Number
- 
-- 社会保険のテンキー
- 
-- 社会保険番号
- 
+- Social Insurance No. 
+- Social Insurance Num 
+- Social Insurance Number 
+- 社会保険のテンキー 
+- 社会保険番号 
 
 ## <a name="japanese-residence-card-number"></a>日本の居住カード番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 12桁の文字と数字
 
@@ -4720,7 +3823,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -4749,7 +3852,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="malaysia-id-card-number"></a>マレーシアの ID カード番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 省略可能なハイフンを含む 12 桁の数字
 
@@ -4765,13 +3868,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_malaysia_id_card_number がパターンに一致するコンテンツを検出した。
-- Keyword_malaysia_id_card_number のキーワードを検出した。
+- 正規表現 Regex_malaysia_id_card_number は、このパターンに一致するコンテンツを検出します。
+- Keyword_malaysia_id_card_number からのキーワードが見つかりました。
 
 ```
 <!-- Malaysia ID Card Number -->
@@ -4793,7 +3896,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - i/c いいえ
 - ic
 - ic no
-- id カード
+- id card
 - 識別カード
 - Identity card
 - k/p
@@ -4815,7 +3918,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="netherlands-citizens-service-bsn-number"></a>オランダの市民サービス (BSN) 番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 省略可能なハイフンを含む 8 ～ 9 桁の数字
 
@@ -4835,9 +3938,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_netherlands_bsn がパターンに一致するコンテンツを検出した。
-- Keyword_netherlands_bsn のキーワードを検出した。
-- 関数 Func_eu_date2 が適切な日付形式の日付を検出した。
+- 関数 Func_netherlands_bsn は、このパターンに一致するコンテンツを検索します。
+- Keyword_netherlands_bsn からのキーワードが見つかりました。
+- 関数 Func_eu_date2 は、日付を正しい日付形式で検索します。
 - チェックサムが渡される。
 
 ```
@@ -4855,24 +3958,17 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordnetherlandsbsn"></a>Keyword_netherlands_bsn
 
-- Citizen service number
- 
-- BSN
-
- 
-- Burgerservicenummer
- 
-- Sofinummer
- 
-- Persoonsgebonden nummer
- 
-- Persoonsnummer
-    
+- Citizen service number 
+- BSN 
+- Burgerservicenummer 
+- Sofinummer 
+- Persoonsgebonden nummer 
+- Persoonsnummer    
 
    
 ## <a name="new-zealand-ministry-of-health-number"></a>ニュージーランドの保健省番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 3 桁の文字、スペース 1 つ (省略可能)、4 桁の数字
 
@@ -4907,16 +4003,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 Keyword_nz_terms
 
-- NHI
- 
-- ニュージーランド 
-- 正常性 
-- treatment
- 
+- nhi 
+- New Zealand 
+- タスクの状況 
+- 処理 
    
 ## <a name="norway-identification-number"></a>ノルウェーの識別番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 11 桁の数字
 
@@ -4934,11 +4028,11 @@ Keyword_nz_terms
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_norway_id_number がパターンに一致するコンテンツを検出した。
-- Keyword_norway_id_number のキーワードを検出した。
+- 関数 Func_norway_id_number は、このパターンに一致するコンテンツを検索します。
+- Keyword_norway_id_number からのキーワードが見つかりました。
 - チェックサムが渡される。
 - DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_norway_id_numbe がパターンに一致するコンテンツを検出した。
+- 関数 Func_norway_id_numbe は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```
@@ -4961,14 +4055,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Personal identification number
 - Norwegian ID Number
 - ID Number
-- Identification
+- fim
 - Personnummer
 - Fødselsnummer
 
    
 ## <a name="philippines-unified-multi-purpose-id-number"></a>フィリピンの汎用多目的 ID 番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 ハイフンで区切られた 12 桁の数字
 
@@ -4976,20 +4070,20 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 12 桁の数字:
 - 4 桁の数字 
-- ハイフン 1 つ 
+- ハイフン 1 つ  
 - 7 桁の数字  
 - ハイフン 1 つ  
 - 1 桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_philippines_unified_id がパターンに一致するコンテンツを検出した。
-- Keyword_philippines_id のキーワードを検出した。
+- 正規表現 Regex_philippines_unified_id は、このパターンに一致するコンテンツを検出します。
+- Keyword_philippines_id からのキーワードが見つかりました。
 
 ```
 <!-- Philippines Unified Multi-Purpose ID number -->
@@ -5005,16 +4099,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 #### <a name="keywordphilippinesid"></a>Keyword_philippines_id
 
-- Unified Multi-Purpose ID
- 
-- UMID
- 
+- Unified Multi-Purpose ID 
+- umid 
 - Identity Card 
 - Pinag-isang Multi-Layunin ID
    
 ## <a name="poland-identity-card"></a>ポーランドの ID カード
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 3 桁の文字と 6 桁の数字
 
@@ -5028,7 +4120,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは 75% です。この種類の機密情報は、近接する300文字の中で検出されます。関数 Func_polish_national_id は、このパターンに一致するコンテンツを検出します。Keyword_polish_national_id_passport_number からのキーワードが見つかりました。チェックサムが渡されます。
+DLP ポリシーは 75% です。この種類の機密情報は、近接する300文字の中で検出されます。関数 Func_polish_national_id は、このパターンに一致するコンテンツを検出します。
+Keyword_polish_national_id_passport_number のキーワードを検出した。
+チェックサムが渡される。
 
 ```
 <!-- Poland Identity Card-->
@@ -5049,16 +4143,13 @@ DLP ポリシーは 75% です。この種類の機密情報は、近接する30
 - nazwa i 特定 dowodu osobistego
 - nazwa i nr dowodu osobistego
 - Nazwa i nr dowodu tożsamości
-
 - Dowód Tożsamości
-
-- dow. os.
-
+- dow. hp-ux.
 
    
 ## <a name="poland-national-id-pesel"></a>ポーランドの国民 ID (PESEL)
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 11 桁の数字
 
@@ -5097,7 +4188,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="poland-passport"></a>ポーランドのパスポート
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 2 桁の文字と 7 桁の数字
 
@@ -5132,13 +4223,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
 - 特定の引数
-- Nr zportu
+- Nr. 大き zportu
 - があります
 
    
 ## <a name="portugal-citizen-card-number"></a>ポルトガルの市民カード番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 8 桁の数字
 
@@ -5148,13 +4239,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_portugal_citizen_card がパターンに一致するコンテンツを検出した。
-- Keyword_portugal_citizen_card のキーワードを検出した。
+- 正規表現 Regex_portugal_citizen_card は、このパターンに一致するコンテンツを検出します。
+- Keyword_portugal_citizen_card からのキーワードが見つかりました。
 
 ```
 <!-- Portugal Citizen Card Number -->
@@ -5178,7 +4269,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="saudi-arabia-national-id"></a>サウジアラビアの国民 ID
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 10 桁の数字
 
@@ -5188,9 +4279,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現 Regex_saudi_arabia_national_id がパターンに一致するコンテンツを検出した。
@@ -5212,19 +4303,15 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordsaudiarabianationalid"></a>Keyword_saudi_arabia_national_id
 
-- Identification Card
- 
-- I card number
- 
-- ID number
- 
-- الوطنية الهوية بطاقة رقم
- 
+- Identification Card 
+- I card number 
+- ID number 
+- الوطنية الهوية بطاقة رقم 
 
    
 ## <a name="singapore-national-registration-identity-card-nric-number"></a>シンガポールの国民登録 ID カード (NRIC) 番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 9 桁の文字と数字
 
@@ -5242,12 +4329,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_singapore_nric がパターンに一致するコンテンツを検出した。
-- Keyword_singapore_nric のキーワードを検出した。
+- 正規表現 Regex_singapore_nric は、このパターンに一致するコンテンツを検出します。
+- Keyword_singapore_nric からのキーワードが見つかりました。
 - チェックサムが渡される。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_singapore_nric がパターンに一致するコンテンツを検出した。
+- 正規表現 Regex_singapore_nric は、このパターンに一致するコンテンツを検出します。
 - チェックサムが渡される。
 
 ```
@@ -5267,25 +4354,18 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 #### <a name="keywordsingaporenric"></a>Keyword_singapore_nric
 
-- National Registration Identity Card
- 
-- Identity Card Number
- 
-- NRIC
- 
-- IC
- 
-- Foreign Identification Number
- 
-- FIN
- 
-- 身份证  
-- 身份證
- 
+- National Registration Identity Card 
+- Identity Card Number 
+- NRIC 
+- IC 
+- Foreign Identification Number 
+- FIN 
+- 身份证 
+- 身份證 
    
 ## <a name="south-africa-identification-number"></a>南アフリカの識別番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 省略可能なスペースを含む 13 桁の数字
 
@@ -5293,7 +4373,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 13 桁の数字:
 - YYMMDD の形式の生年月日を表す 6 桁の数字  
-- 4 桁の数字  
+- 4 桁の数字 
 - 1 桁の市民標識  
 - 数字「8」または「9」  
 - チェックサム ディジットとして機能する 1 桁の数字
@@ -5305,8 +4385,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_south_africa_identification_number がパターンに一致するコンテンツを検出した。
-- Keyword_south_africa_identification_number のキーワードを検出した。
+- 関数 Func_south_africa_identification_number は、このパターンに一致するコンテンツを検索します。
+- Keyword_south_africa_identification_number からのキーワードが見つかりました。
 - チェックサムが渡される。
 
 ```
@@ -5325,11 +4405,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 - Identity card
 - ID
-- Identification 
+- fim 
    
 ## <a name="south-korea-resident-registration-number"></a>韓国の住民登録番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 ハイフンを 1 つ含む 13 桁の数字
 
@@ -5350,12 +4430,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_south_korea_resident_number がパターンに一致するコンテンツを検出した。
-- Keyword_south_korea_resident_number のキーワードを検出した。
+- 関数 Func_south_korea_resident_number は、このパターンに一致するコンテンツを検索します。
+- Keyword_south_korea_resident_number からのキーワードが見つかりました。
 - チェックサムが渡される。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_south_korea_resident_number がパターンに一致するコンテンツを検出した。
+- 関数 Func_south_korea_resident_number は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
 ```
@@ -5375,19 +4455,15 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 #### <a name="keywordsouthkorearesidentnumber"></a>Keyword_south_korea_resident_number
 
-- National ID card
- 
-- Citizen's Registration Number
- 
-- Jumin deungnok beonho
- 
-- RRN
- 
+- National ID card 
+- Citizen's Registration Number 
+- Jumin deungnok beonho 
+- rrn 
 - 주민등록번호
    
 ## <a name="spain-social-security-number-ssn"></a>スペインの社会保障番号 (SSN)
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 11 ～ 12 桁の数字
 
@@ -5425,7 +4501,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="sweden-national-id"></a>スウェーデンの国民 ID
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 10 桁または 12 桁の数字とオプションの区切り記号 1 つ
 
@@ -5458,11 +4534,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-なし
+いいえ
    
 ## <a name="sweden-passport-number"></a>スウェーデンのパスポート番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 8 桁の数字
 
@@ -5499,63 +4575,40 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 #### <a name="keywordswedenpassport"></a>Keyword_sweden_passport
 
-- visa requirements
- 
-- Alien Registration Card
- 
-- Schengen visas
- 
-- Schengen visa
- 
-- Visa Processing
- 
-- Visa Type
- 
-- Single Entry
- 
-- Multiple Entry
- 
-- G3 Processing Fees
-
- 
+- visa requirements 
+- Alien Registration Card 
+- Schengen visas 
+- Schengen visa 
+- Visa Processing 
+- Visa Type 
+- Single Entry 
+- Multiple Entry 
+- G3 Processing Fees 
 
 #### <a name="keywordpassport"></a>Keyword_passport
 
 - Passport Number 
-- 
-Passport No 
-- Passport #
- 
-- Passport#
- 
+- Passport No 
+- Passport # 
+- サインアウト 
 - PassportID 
-- Passportno
- 
-- passportnumber
- 
+- Passportno 
+- passportnumber 
 - パスポート 
-- パスポート番号
- 
-- パスポートのNum
- 
-- パスポート＃
- 
+- パスポート番号 
+- パスポートのNum 
+- パスポート # 
 - Numéro de passeport 
-- 
-Passeport n ° 
-- Passeport Non
- 
-- Passeport #
- 
-- Passeport#
- 
+- Passeport n ° 
+- Passeport Non 
+- Passeport # 
+- Passeport # 
 - PasseportNon 
-- Passeportn °
- 
+- Passeportn ° 
    
 ## <a name="swift-code"></a>SWIFT コード
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 4 桁の文字の後に 5 ～ 31 桁の文字または数字
 
@@ -5591,64 +4644,41 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 #### <a name="keywordswift"></a>Keyword_swift
 
-- international organization for standardization 9362
- 
-- iso 9362
- 
+- international organization for standardization 9362 
+- iso 9362 
 - iso9362 
 - 実現\# 
-- swiftcode
- 
-- swiftnumber
- 
-- swiftroutingnumber
- 
-- swift コード 
-- swift number #
- 
-- swift routing number
- 
-- bic number
- 
-- bic code
- 
+- swiftcode 
+- swiftnumber 
+- swiftroutingnumber 
+- swift code 
+- swift number # 
+- swift routing number 
+- bic number 
+- bic code 
 - bic\# 
 - bic\# 
-- bank identifier code
- 
+- bank identifier code 
 - 標準化9362 
-- 迅速＃
- 
-- SWIFTコード
- 
-- SWIFT番号
- 
-- 迅速なルーティング番号
- 
-- BIC番号
- 
-- BICコード
- 
-- 銀行識別コードのための国際組織
- 
-- Organisation internationale de normalisation 9362
- 
+- 迅速 # 
+- SWIFTコード 
+- SWIFT番号 
+- 迅速なルーティング番号 
+- BIC番号 
+- BICコード 
+- 銀行識別コードのための国際組織 
+- Organisation internationale de normalisation 9362 
 - rapide\# 
-- code SWIFT
- 
-- le numéro de swift
- 
-- swift numéro d'acheminement
- 
-- le numéro BIC
- 
+- code SWIFT 
+- le numéro de swift 
+- swift numéro d'acheminement 
+- le numéro BIC 
 - \#bic 
-- code identificateur de banque
- 
+- code identificateur de banque 
    
 ## <a name="taiwan-national-id"></a>台湾の国民 ID
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 1 桁の文字 (アルファベット) の後に 9 桁の数字
 
@@ -5684,37 +4714,24 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordtaiwanesenationalid"></a>Keyword_taiwanese_national_id
 
-- 身份證字號
- 
-- 身份證
- 
-- 身份證號碼
- 
-- 身份證號
- 
-- 身分證字號
- 
-- 身分證  
-- 身分證號碼
- 
-- 身份證號
- 
-- 身分證統一編號
- 
-- 國民身分證統一編號
- 
-- 簽名
- 
-- 蓋章
- 
-- 簽名或蓋章
-
- 
+- 身份證字號 
+- 身份證 
+- 身份證號碼 
+- 身份證號 
+- 身分證字號 
+- 身分證 
+- 身分證號碼 
+- 身份證號 
+- 身分證統一編號 
+- 國民身分證統一編號 
+- 簽名 
+- 蓋章 
+- 簽名或蓋章 
 - 簽章   
    
-## <a name="taiwan-passport-number"></a>台湾のパスポート番号
+## <a name="taiwan-passport-number"></a>	台湾のパスポート番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 - バイオメトリックパスポート番号: 9 桁の数字
 - バイオメトリクスでないパスポート番号: 9 桁の数字
@@ -5729,13 +4746,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_taiwan_passport がパターンに一致するコンテンツを検出した。
-- Keyword_taiwan_passport のキーワードを検出した。
+- 正規表現 Regex_taiwan_passport は、このパターンに一致するコンテンツを検出します。
+- Keyword_taiwan_passport からのキーワードが見つかりました。
 
 ```
 <!-- Taiwan Passport Number -->
@@ -5751,23 +4768,18 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordtaiwanpassport"></a>Keyword_taiwan_passport
 
-- ROC passport number
- 
-- パスポート番号 
-- Passport いいえ 
-- Passport Num
- 
-- Passport #
- 
-- 护照
- 
-- 中華民國護照
- 
+- ROC passport number 
+- Passport number 
+- Passport no 
+- Passport Num 
+- Passport # 
+- 护照 
+- 中華民國護照 
 - Zhōnghuá Mínguó hùzhào
    
 ## <a name="taiwan-resident-certificate-arctarc-number"></a>台湾の在留証明書 (ARC/TARC) 番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 10 桁の文字と数字
 
@@ -5779,13 +4791,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_taiwan_resident_certificate がパターンに一致するコンテンツを検出した。
-- Keyword_taiwan_resident_certificate のキーワードを検出した。
+- 正規表現 Regex_taiwan_resident_certificate は、このパターンに一致するコンテンツを検出します。
+- Keyword_taiwan_resident_certificate からのキーワードが見つかりました。
 
 ```
 <!-- Taiwan Resident Certificate (ARC/TARC) -->
@@ -5801,29 +4813,21 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordtaiwanresidentcertificate"></a>Keyword_taiwan_resident_certificate
 
-- Resident Certificate
- 
-- 常駐証明書 
-- Resident Cert.
- 
-- 識別カード 
-- Alien Resident Certificate
- 
+- Resident Certificate 
+- Resident Cert 
+- Resident Cert. 
+- Identification card 
+- Alien Resident Certificate 
 - 円弧 
-- Taiwan Area Resident Certificate
- 
-- TARC
- 
-- 居留證
- 
-- 外僑居留證
- 
-- 台灣地區居留證
- 
+- Taiwan Area Resident Certificate 
+- tarc 
+- 居留證 
+- 外僑居留證 
+- 台灣地區居留證 
 
 ## <a name="thai-population-identification-code"></a>タイ語の母集団識別コード
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 13 桁の数字
 
@@ -5872,7 +4876,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ## <a name="turkish-national-identification-number"></a>トルコの国の識別番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 11 桁の数字
 
@@ -5917,7 +4921,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="uk-drivers-license-number"></a>英国の運転免許証番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 指定の形式で組み合わせた 18 桁の文字と数字
 
@@ -5955,39 +4959,25 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordukdriverslicense"></a>Keyword_uk_drivers_license
 
-- DVLA
- 
-- light vans
- 
-- quadbikes
- 
-- motor cars
- 
+- dvla 
+- light vans 
+- quadbikes 
+- motor cars 
 - 125cc 
-- sidecar
- 
-- tricycles
- 
-- motorcycles
- 
-- photocard licence
- 
-- learner drivers
- 
-- licence holder
- 
-- licence holders
- 
-- driving licences
- 
-- driving licence
- 
-- dual control car
- 
+- sidecar 
+- tricycles 
+- motorcycles 
+- photocard licence 
+- learner drivers 
+- licence holder 
+- licence holders 
+- driving licences 
+- driving licence 
+- dual control car 
    
 ## <a name="uk-electoral-roll-number"></a>英国の選挙登録番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 2 桁の文字の後に 1 ～ 4 桁の数字
 
@@ -5997,9 +4987,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
-### <a name="definition"></a>Definition
+### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現 Regex_uk_electoral がパターンに一致するコンテンツを検出した。
@@ -6021,19 +5011,15 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordukelectoral"></a>Keyword_uk_electoral
 
-- council nomination
- 
-- nomination form
- 
-- electoral register
-
- 
+- council nomination 
+- nomination form 
+- electoral register 
 - electoral roll
 
    
 ## <a name="uk-national-health-service-number"></a>英国の国民健康保険番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースで区切られた 10 ～ 17 桁の数字
 
@@ -6078,40 +5064,29 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 #### <a name="keyworduknhsnumber"></a>Keyword_uk_nhs_number
 
-- national health service
- 
-- nhs
- 
-- health services authority
-
- 
+- national health service 
+- nhs 
+- health services authority 
 - health authority
 
 #### <a name="keyworduknhsnumber1"></a>Keyword_uk_nhs_number1
 
-- patient id
- 
-- patient identification
- 
-- patient no
-
- 
+- patient id 
+- patient identification 
+- patient no 
 - patient number
 
 #### <a name="keyworduknhsnumberdob"></a>Keyword_uk_nhs_number_dob
 
 - GP 
-- DOB
- 
+- dob 
 - D. 
-- Date of Birth
- 
-- Birth Date
- 
+- Date of Birth 
+- Birth Date 
    
 ## <a name="uk-national-insurance-number-nino"></a>英国の国民保険番号 (NINO)
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 スペースまたはダッシュで区切られた7文字または9文字
 
@@ -6137,7 +5112,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -6171,33 +5146,22 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keyworduknino"></a>Keyword_uk_nino
 
-- national insurance number
- 
-- national insurance contributions
- 
-- protection act
- 
-- insurance
- 
-- social security number
- 
-- insurance application
- 
-- medical application
- 
-- social insurance
- 
-- medical attention
- 
-- ソーシャルセキュリティ 
-- great britain
- 
-- insurance
-    
+- national insurance number 
+- national insurance contributions 
+- protection act 
+- 金 
+- social security number 
+- insurance application 
+- medical application 
+- social insurance 
+- medical attention 
+- social security 
+- great britain 
+- 金    
    
 ## <a name="us--uk-passport-number"></a>米国/英国のパスポート番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 9 桁の数字
 
@@ -6207,7 +5171,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -6229,40 +5193,27 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordpassport"></a>Keyword_passport
 
 - Passport Number 
-- 
-Passport No 
-- Passport #
- 
-- Passport#
- 
+- Passport No 
+- Passport # 
+- サインアウト 
 - PassportID 
-- Passportno
- 
-- passportnumber
- 
+- Passportno 
+- passportnumber 
 - パスポート 
-- パスポート番号
- 
-- パスポートのNum
- 
-- パスポート＃
- 
+- パスポート番号 
+- パスポートのNum 
+- パスポート # 
 - Numéro de passeport 
-- 
-Passeport n ° 
-- Passeport Non
- 
-- Passeport #
- 
-- Passeport#
- 
+- Passeport n ° 
+- Passeport Non 
+- Passeport # 
+- Passeport # 
 - PasseportNon 
-- Passeportn °
- 
+- Passeportn ° 
    
 ## <a name="us-bank-account-number"></a>米国の銀行口座番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 8 ～ 17 桁の数字
 
@@ -6272,7 +5223,7 @@ Passeport n °
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -6294,83 +5245,56 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordusabankaccount"></a>Keyword_usa_Bank_Account
 
-- Checking Account Number
- 
-- Checking Account
- 
-- Checking Account #
- 
-- Checking Acct Number
- 
-- Checking Acct #
- 
-- Checking Acct No.
- 
-- Checking Account No.
- 
-- Bank Account Number
- 
-- Bank Account #
- 
-- Bank Acct Number
- 
-- Bank Acct #
- 
-- Bank Acct No.
- 
-- Bank Account No.
- 
-- Savings Account Number
- 
-- Savings Account.
- 
-- Savings Account #
- 
-- Savings Acct Number
- 
-- Savings Acct #
- 
-- Savings Acct No.
- 
-- Savings Account No.
- 
-- Debit Account Number
- 
-- Debit Account
- 
-- Debit Account #
- 
-- Debit Acct Number
- 
-- Debit Acct #
- 
-- Debit Acct No.
- 
-- Debit Account No.
- 
+- Checking Account Number 
+- Checking Account 
+- Checking Account # 
+- Checking Acct Number 
+- Checking Acct # 
+- Checking Acct No. 
+- Checking Account No. 
+- Bank Account Number 
+- Bank Account # 
+- Bank Acct Number 
+- Bank Acct # 
+- Bank Acct No. 
+- Bank Account No. 
+- Savings Account Number 
+- Savings Account. 
+- Savings Account # 
+- Savings Acct Number 
+- Savings Acct # 
+- Savings Acct No. 
+- Savings Account No. 
+- Debit Account Number 
+- Debit Account 
+- Debit Account # 
+- Debit Acct Number 
+- Debit Acct # 
+- Debit Acct No. 
+- Debit Account No. 
    
 ## <a name="us-drivers-license-number"></a>米国の運転免許証番号
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 州に応じて異なる
 
 ### <a name="pattern"></a>パターン
 
 州に応じて異なる - ニューヨークの場合:
-- ddd ddd ddd のような形式の 9 桁の数字がマッチします。
-- ddddddddd のような 9 桁の数字はマッチしません。
+- ddd ddd ddd のような形式の9桁の数字は一致します。
+- ddddddddd のように9桁の数字は一致しません。
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_new_york_drivers_license_number がパターンに一致するコンテンツを検出した。
 - Keyword_[state_name]_drivers_license_name のキーワードを検出した。
-- Keyword_us_drivers_license のキーワードを検出しました。
+- Keyword_us_drivers_license からのキーワードが見つかりました。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、65% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_new_york_drivers_license_number がパターンに一致するコンテンツを検出した。
@@ -6399,30 +5323,21 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordusdriverslicenseabbreviations"></a>Keyword_us_drivers_license_abbreviations
 
 - DL 
-- DLS 
+- dl 
 - CDL 
 - cdls 
 - ID 
 - rid 
-- DL# 
-- 
-DLS#
- 
-- CDL#
- 
-- CDLS#
- 
-- ID#
-- 
-IDs#
- 
-- ID number
- 
-- ID numbers
- 
+- DL 
+- dl 
+- CDL 
+- cdls # 
+- rid
+- rid 
+- ID number 
+- ID numbers 
 - そして 
-- LIC#
- 
+- そして 
 
 #### <a name="keywordusdriverslicense"></a>Keyword_us_drivers_license
 
@@ -6430,115 +5345,93 @@ IDs#
 - driverlics 
 - driverlicense 
 - driverlicenses 
-- ドライバー Lic 
-- ドライバー lics 
-- ドライバーライセンス 
-- ドライバーのライセンス 
+- Driver Lic 
+- Driver Lics 
+- Driver License 
+- Driver Licenses 
 - driverslic 
 - driverslics 
 - 製品の使用許諾 
 - このライセンス 
-- ドライバー Lic 
-- ドライバー lics 
-- ドライバーのライセンス 
-- ドライバーのライセンス 
+- Drivers Lic 
+- Drivers Lics 
+- Drivers License 
+- Drivers Licenses 
 - driver' Lic 
 - driver' lics 
 - driver' ライセンス 
 - driver' ライセンス 
-- ドライバー ' Lic 
-- ドライバー ' lics 
-- ドライバーのライセンス 
-- ドライバーのライセンス
+- Driver' Lic 
+- Driver' Lics 
+- Driver' License 
+- Driver' Licenses
 - driver' slic 
 - driver' slics 
 - ドライバのライセンス 
 - ドライバのライセンス 
-- ドライバーの Lic 
-- ドライバーの lics 
-- 運転免許証 
-- ドライバーのライセンス 
-- identification number
- 
-- identification numbers
- 
-- identification #
- 
-- id カード 
-- id カード 
-- 識別カード 
-- 識別カード 
+- Driver's Lic 
+- Driver's Lics 
+- Driver's License 
+- Driver's Licenses 
+- identification number 
+- identification numbers 
+- identification # 
+- id card 
+- id cards 
+- identification card 
+- identification cards 
 - driverlic # 
 - driverlics # 
 - driverlicense # 
 - driverlicenses # 
 - Driver Lic# 
-- 
-Driver Lics#
- 
-- ドライバーライセンス番号 
-- ドライバーライセンス # 
+- Driver Lics# 
+- Driver License# 
+- Driver Licenses# 
 - driverslic # 
 - driverslics # 
 - 製品のライセンス # 
 - (c#) ライセンス # 
-- ドライバー Lic # 
-- ドライバー lics # 
-- ドライバーライセンス # 
-- ドライバーライセンス # 
-- Driver'Lic#
- 
-- Driver'Lics#
- 
-- Driver'License#
- 
-- Driver'Licenses#
- 
-- Driver' Lic#
- 
-- Driver' Lics#
- 
-- Driver' License#
- 
-- Driver' Licenses#
- 
+- Drivers Lic# 
+- Drivers Lics# 
+- Drivers License# 
+- Drivers Licenses# 
+- driver' Lic # 
+- driver' lics # 
+- driver' License # 
+- driver' Licenses # 
+- Driver' Lic# 
+- Driver' Lics# 
+- Driver' License# 
+- Driver' Licenses# 
 - driver' slic # 
 - driver' slics # 
 - driverのライセンス番号 
 - ドライバのライセンス # 
-- Driver's Lic#
- 
-- Driver's Lics#
- 
-- Driver's License#
- 
-- Driver's Licenses#
- 
-- id カード番号 
-- id cards#
- 
-- identification card#
- 
-- identification cards#
- 
+- Driver's Lic# 
+- Driver's Lics# 
+- Driver's License# 
+- Driver's Licenses# 
+- id card# 
+- id cards# 
+- identification card# 
+- identification cards# 
 
 
-#### <a name="keywordstatenamedriverslicensename"></a>Keyword_[state_name]_drivers_license_name
+#### <a name="keywordstatenamedriverslicensename"></a>Keyword_ [state_name] _drivers_license_name
 
-- 州の略号 (たとえば、"NY")
- 
-- 州の名前 (たとえば、"New York")
-    
+- 州の略号 (たとえば、"NY") 
+- 州の名前 (たとえば、"New York")    
    
 ## <a name="us-individual-taxpayer-identification-number-itin"></a>米国の個人納税者識別番号 (ITIN)
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 「9」で始まる 9 桁の数字、4 桁目は「7」または「8」、スペースまたはスラッシュによる書式設定は省略可能
 
 ### <a name="pattern"></a>パターン
 
-書式設定されている場合:
+さ
 - 数字「9」 
 - 2 桁の数字 
 - スペースまたはダッシュ 
@@ -6547,7 +5440,7 @@ Driver Lics#
 - スペースまたはダッシュ 
 - 4 桁の数字
 
-書式設定されていない場合:
+なし
 - 数字「9」 
 - 2 桁の数字 
 - 「7」または「8」 
@@ -6555,7 +5448,7 @@ Driver Lics#
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 ### <a name="definition"></a>定義
 
@@ -6602,51 +5495,39 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keyworditin"></a>Keyword_itin
 
-- taxpayer
- 
-- tax id
- 
-- tax identification
- 
-- itin
- 
+- 納税 
+- tax id 
+- tax identification 
+- itin 
 - ssn 
-- tin
- 
-- ソーシャルセキュリティ 
-- tax payer
- 
-- itins
- 
-- taxid
-
- 
-- individual taxpayer
- 
+- は 
+- social security 
+- tax payer 
+- itins 
+- taxid 
+- individual taxpayer 
 
 #### <a name="keyworditincollaborative"></a>Keyword_itin_collaborative
 
 - License 
 - DL 
-- DOB
- 
+- dob 
 - 誕生日 
-- 誕生日  
-- Date of Birth
- 
+- Birthday 
+- Date of Birth 
    
 ## <a name="us-social-security-number-ssn"></a>米国の社会保障番号 (SSN)
 
-### <a name="format"></a>形式
+### <a name="format"></a>Format
 
 書式設定ありまたは書式設定なしの 9 桁の数字
 
 > [!NOTE]
-> 2011 年の中旬より前に発行されている場合、SSN には厳密な書式があり、数値の特定の部分が一定の範囲内に入っていなければ有効になりません。
+> 2011より前に発行された場合、SSN の書式には、特定の範囲内にある特定の範囲内にある必要があり、チェックサムがないという厳密な形式があります。
 
 ### <a name="pattern"></a>パターン
 
-4 つの異なるパターンで SSN を検索する 4 つの関数を次に示します。
+次の4つの異なるパターンで ssns を検索する4つの関数があります。
 - Func_ssn は、2011 年以前の厳密な書式の SSN を検索します。これはダッシュまたはスペース (ddd-dd-dddd または ddd dd dddd) の形式になっています。
 - Func_unformatted_ssn は、2011 年以前の厳密な書式の SSN を検索します。これは 9 桁の連続した数字 (ddddddddd) の形式になっています。
 - Func_randomized_formatted_ssn は、2011 年以降の SSN を検索します。これはダッシュまたはスペース (ddd-dd-dddd または ddd dd dddd) の形式になっています。
@@ -6654,7 +5535,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-なし
+いいえ
 
 
 ### <a name="definition"></a>定義
@@ -6664,7 +5545,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_ssn のキーワードを検出した。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_unformatted_ssn がパターンに一致するコンテンツを検出した。
+- 関数 Func_unformatted_ssn は、このパターンに一致するコンテンツを検索します。
 - Keyword_ssn のキーワードを検出した。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、65% の確証を持ってそれがこの種類の機密情報であると特定します。
@@ -6709,20 +5590,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keywordssn"></a>Keyword_ssn
 
-- Social Security
- 
-- Social Security#
- 
-- Soc Sec
- 
+- Social Security 
+- Social Security# 
+- Soc Sec 
 - SSN 
-- SSNS
- 
-- SSN#
- 
-- SS#
- 
-- SSID
- 
+- ssn 
+- SSN 
+- 秒 
+- SSID 
    
 
