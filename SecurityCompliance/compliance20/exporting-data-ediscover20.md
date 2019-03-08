@@ -14,13 +14,21 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 458d3aa7a13d038305009085d02ee0edc8a939a5
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: efdadd2769bf2b812d3642184fc7fd4ae1cbc8c2
+ms.sourcegitcommit: 9f38ba72eba0b656e507860ca228726e4199f7ec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295760"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30475687"
 ---
 # <a name="export-case-data-in-advanced-ediscovery-preview"></a>高度な電子情報開示でケースデータをエクスポートする (プレビュー)
 
-コンテンツ準備中です。
+エクスポートは、テナントからエクスポートされるものを完全に把握するために、作業セット内で実行されます。 コンテンツをエクスポートするには、次の3つの別個の方法があります。
+
+ダウンロード–ユーザーはブラウザーを使用して、一連の小さなネイティブファイルをダウンロードできます。
+
+export –がファイルおよびテキストファイルに格納されたメタデータファイルを含む、追加のコンテンツを含めるようにエクスポートをカスタマイズします。
+
+作業セット–ユーザーが1つの作業セットから別の作業セットにコンテンツをエクスポートできるようにします。
+
+エクスポートが完了すると、コンテンツは Microsoft Azure blob に配置されます。 [エクスポート] タブの情報を使用して、コンテンツにアクセスできます。詳細については\[、「エクスポートジョブをダウンロードするためのリンク」を参照してください。\]
