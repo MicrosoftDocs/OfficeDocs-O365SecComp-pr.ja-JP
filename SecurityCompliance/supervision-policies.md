@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Office 365 の監督ポリシーについて
-ms.openlocfilehash: f4eae6aebde130bdacdc45b419becc32953bffd2
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.openlocfilehash: 99957accb6a1f52f0e0a895fc96ef2b6ac0ac757
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465474"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492856"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 の監督ポリシー
 
@@ -57,7 +57,8 @@ Office 365 の監督ポリシーでは、指定されたレビュー担当者に
 監督の使用を開始する前に、誰が通信をレビューするかを決定する必要があります。 このポリシーでは、ユーザーの電子メールアドレスを使用して、監督する人物またはグループを識別します。 これらのグループの例としては、Office 365 グループ、Exchange ベースの配布リスト、Microsoft Teams チャネルなどがあります。 また、監視グループまたはグループの一覧に含まれている監督から、特定のユーザーまたはグループを除外することもできます。
 
 > [!IMPORTANT]
-> 監督ポリシーによって監視されるユーザーはすべて、Advanced コンプライアンスアドオンを備えた office 365 enterprise E3 ライセンスを持っているか、office 365 Enterprise E5 サブスクリプションに含まれている必要があります。 既存の Enterprise e5 プランを所有しておらず、監督を試みる場合は、 [Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)することができます。
+> 監督ポリシーによって監視されるユーザーは、Microsoft 365 E5 コンプライアンスライセンス、Advanced コンプライアンスアドオンを備えた office 365 Enterprise E3 ライセンス、または office 365 Enterprise E5 サブスクリプションに含まれている必要があります。
+既存の Enterprise e5 プランを所有しておらず、監督を試みる場合は、 [Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)することができます。
 
 ### <a name="reviewers"></a>校閲者
 
@@ -153,9 +154,9 @@ Office 365 の監督ポリシーでは、指定されたレビュー担当者に
 - 選択したポリシーについてレビュー担当者のリストを参照し、teams をレビューします。
 - ポリシーの監視の下にコンテンツがある通信プラットフォームを確認します。
 
-#### <a name="supervise-tab"></a>[監督] タブ
+#### <a name="review-tab"></a>[校閲] タブ
 
-[**監督**] タブでは、選択したポリシーによって識別されたアイテムをレビュー担当者がアクションを実行し、解決することができます。 次のことができます。
+[**校閲**] タブでは、選択したポリシーによって識別されたアイテムをレビュー担当者がアクションを実行し、解決することができます。 次のことができます。
 
 - 保留中、準拠している、準拠していないアイテム、および疑わしいアイテムによるフィルター
 - 準拠している、準拠していない、または疑わしい、1つのアイテムにタグを付けます。 また、コメントをアイテムと共に記録して、タグ付けアクションをわかりやすくすることもできます。

@@ -1,5 +1,5 @@
 ---
-title: Office 365 Advanced eDiscovery でケース データを分析する
+title: Office 365 の高度な電子情報開示を使用してケースデータを分析する
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,14 +13,15 @@ search.appverid:
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
 description: '分析プロセスの概要を説明します。これにより、Office 365 の Advanced eDiscovery でパラメーター、実行オプション、および結果の表示を設定できます。 '
-ms.openlocfilehash: a3e9bc84c09b40b9751dd985faaf0931c77fa37b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 0329e64bc507c0ddc3158ac6ae189730b506bb49
+ms.sourcegitcommit: 07a4f9a8888756e05cd67ca24f6121b2a4e9f464
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217467"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "30512642"
 ---
-# <a name="analyze-case-data-with-office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery でケース データを分析する
+# <a name="analyze-case-data-with-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示を使用してケースデータを分析する
 
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 

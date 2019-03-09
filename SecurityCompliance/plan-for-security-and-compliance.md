@@ -13,16 +13,17 @@ search.appverid:
 - MET150
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: セキュリティとコンプライアンスを計画するためのランディングページ
-ms.openlocfilehash: 71d814fbbc946fddbc57d4528f43b83589454e31
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 4c653e20fbab8f93897b00589a00cb53b1e36963
+ms.sourcegitcommit: 07a4f9a8888756e05cd67ca24f6121b2a4e9f464
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218467"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "30512652"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>Office 365 の&amp;セキュリティコンプライアンスを計画する
 
-セキュリティとコンプライアンスの管理は、パートナーシップです。Microsoft 強力は Office 365 サービスを保護していますが、データ、id、デバイスを保護する責任があります。Office 365 と Enterprise Mobility + Security (EMS) を一緒に使用して、組織に適したレベルの保護を実現することができます。
+セキュリティとコンプライアンスの管理は、パートナーシップです。 Microsoft 強力は Office 365 サービスを保護していますが、データ、id、デバイスを保護する責任があります。 Office 365 と Enterprise Mobility + Security (EMS) を一緒に使用して、組織に適したレベルの保護を実現することができます。
   
 ## <a name="step-1-review-capabilities"></a>手順 1: 機能を確認する
 
@@ -32,13 +33,13 @@ Office 365 の情報保護のポスターの情報保護機能に自分を向け
   
 ## <a name="step-2-check-your-secure-score"></a>手順 2: セキュリティで保護されたスコアを確認する
 
-Office 365 のサブスクリプションを設定した後、開始スコアをメモします。「Secure score」では、スコアを増やすために使用できる Office 365 の構成の提案を示します。目標は、ユーザーの生産性に悪影響を及ぼすことがない環境を保護するために取ることができるチャンスを認識することです。
+Office 365 のサブスクリプションを設定した後、開始スコアをメモします。 「Secure score」では、スコアを増やすために使用できる Office 365 の構成の提案を示します。 目標は、ユーザーの生産性に悪影響を及ぼすことがない環境を保護するために取ることができるチャンスを認識することです。
   
-- [Office 365 セキュリティ スコア の紹介](office-365-secure-score.md)
+- [Office 365 のセキュリティスコアの導入](office-365-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>手順 3: id とデバイスのアクセス保護を計画する
 
-Office 365 のデータやサービスに対するアクセス保護は、サイバー攻撃に対する防御を固め、データ損失を防止するために必要不可欠です。
+Office 365 のデータおよびサービスへのアクセスを保護することは、サイバー攻撃を防御し、データ損失を防ぐために不可欠です。
   
 - [Office 365 でデータやサービスへのアクセスを保護する](protect-access-to-data-and-services.md)
     
@@ -58,7 +59,7 @@ Office 365 のデータやサービスに対するアクセス保護は、サイ
   
 - [Office 365 セキュリティ&amp;コンプライアンスセンターに移動する](go-to-the-securitycompliance-center.md)
     
-- [Office 365 セキュリティ&amp; /コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)
+- [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
     
 - [Office 365 セキュリティ&amp;コンプライアンスセンターへのアクセス権をユーザーに付与する](grant-access-to-the-security-and-compliance-center.md)
     

@@ -1,7 +1,7 @@
 ---
 title: Office 365 にメールを送信するユーザー以外に対するサービス
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 5/2/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
+ms.collection:
+- M365-security-compliance
 description: 電子メールをユーザーが安心して使用できるようにするため、Microsoft は各種ポリシーやテクノロジを用いて、ユーザーを保護しています。
-ms.openlocfilehash: fca916f57ad1b7dc6ebcd13fabbea2f0971f5a00
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 868f5491ae9433e115090567b40abcd39ef2ebf8
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002705"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492796"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>Office 365 にメールを送信するユーザー以外に対するサービス
   
@@ -61,6 +63,6 @@ Microsoft は、Office 365 受信トレイに電子メールを送信するユ�
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Exchange Online からの迷惑メールの不正使用とスパムの報告
 <a name="ReportOurJunk"> </a>
 
-Office 365 は、当社の使用条件およびポリシーに違反した迷惑メールを送信するのには、サード パーティによって使用されます。Office 365 からの迷惑メールを受信する場合は、 [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com)にこれらのメッセージを報告できます。RFC 5322 や ARF の形式で完全なメッセージ ヘッダーを含む、問題のあるメッセージを添付してください。Web ユーザーの outlook では、迷惑メールのレポートに組み込みのツールを使用できます。については、[迷惑メールのレポートと web 上の Outlook でのフィッシング詐欺](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)を参照してください。
+ある場合、当社の使用条件およびポリシーに違反した迷惑メールをサード パーティーが送信するのに Office 365 が使用されることがあります。 Office 365 から迷惑メールを受信する場合、そうしたメッセージに関して [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) に報告できます。 RFC 5322 や ARF 形式でメッセージ ヘッダー全体を含め、問題のあるメッセージを添付してください。 Outlook on the web ユーザーは、組み込みツールを使用して迷惑メールを報告できます。 詳細については、「 [Outlook on the web で迷惑メールとフィッシング詐欺を報告する](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)」を参照してください。
   
 
