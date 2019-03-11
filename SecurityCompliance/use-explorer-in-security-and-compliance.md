@@ -1,9 +1,9 @@
 ---
-title: セキュリティ&amp; /コンプライアンスセンターのエクスプローラーを使用する
+title: セキュリティ&amp; /コンプライアンスセンターで脅威エクスプローラーを使用する
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 03/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,27 +15,27 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターのエクスプローラー (脅威エクスプローラーとも呼ばれます) について説明します。
-ms.openlocfilehash: 4a28626d0e643d7a7b96a34656e7678c71a86c66
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 626d827712760aa0b7b6faf75d94f525cfe38dc2
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241969"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524011"
 ---
-# <a name="use-explorer-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターのエクスプローラーを使用する
+# <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターで脅威エクスプローラーを使用する
 
-組織に[Office 365 の脅威インテリジェンス](office-365-ti.md)があり、必要なアクセス許可が付与されている場合は、エクスプローラーを使用して脅威を識別し、分析することができます。たとえば、配信された悪意のある電子メールを特定して削除したり、Office 365 セキュリティ機能によって検出されたマルウェアを確認したりすることができます。エクスプローラー (脅威エクスプローラーとも呼ばれます) は、セキュリティ&amp; /コンプライアンスセンターの強力なほぼリアルタイムレポートです。
+組織に[Office 365 Advanced Threat Protection プラン 2](office-365-ti.md)があり、必要なアクセス許可を持っている場合は、脅威エクスプローラーを使用して脅威を特定して分析することができます。 たとえば、配信された悪意のある電子メールを特定して削除したり、Office 365 セキュリティ機能によって検出されたマルウェアを確認したりすることができます。 脅威エクスプローラー (エクスプローラーとも呼ばれます) は、セキュリティ運用チームがセキュリティ&amp;コンプライアンスセンターで脅威を調査して対応するのに役立つ、ほぼリアルタイムの強力なツールです。
   
 ![[脅威管理\>エクスプローラー] に移動します。](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
 エクスプローラーを使用するには、 &amp;セキュリティ/コンプライアンスセンターで、[**脅威管理** \> **エクスプローラー**] に移動します。
 
 > [!IMPORTANT]
-> 2019年2月から、次の数か月間に展開されています。 office 365 の脅威インテリジェンスは、追加の脅威保護機能を備えた office 365 Advanced threat protection プラン2になりつつあります。詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
+> office 365 脅威インテリジェンスは、追加の脅威保護機能を備えた office 365 Advanced threat protection プラン2の一部になっています。 詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
       
 ## <a name="explorer-overview"></a>エクスプローラーの概要
 
-エクスプローラーには、Office 365 の電子メールやファイルにある疑いのあるマルウェアに関する情報と、組織に対する他のセキュリティ上の脅威やリスクが表示されます。エクスプローラーを最初に開くと、既定の表示では過去7日間のウイルス対策によるマルウェアの検出が表示されます。エクスプローラーには、Office 365 のセキュリティ保護機能 ([安全なリンク](atp-safe-links.md)と[安全な添付ファイル](atp-safe-attachments.md)を含む) を表示することもできます。これにより、過去30日間のデータを表示するように変更することができます。
+エクスプローラーは、疑いのあるマルウェアおよびフィッシングに関する情報を、Office 365 の電子メールやファイル、および組織に対する他のセキュリティ上の脅威やリスクと共に表示します。 エクスプローラーを最初に開くと、既定の表示で過去7日間の電子メールマルウェアの検出が表示されます。 エクスプローラーには、Office 365 のセキュリティ保護機能 ([安全なリンク](atp-safe-links.md)と[安全な添付ファイル](atp-safe-attachments.md)を含む) を表示することもできます。これにより、過去30日間のデータを表示するように変更することができます。 office 365 Advanced Threat Protection プラン2または office 365 E5 の試用版のサブサブスクリプションがある場合、過去7日間の検出とメールデータのみが表示されます。
   
 ![エクスプローラーは、上位マルウェアと対象ユーザーに関する情報を表示します。](media/8e8c1582-d6f4-4521-8591-686a1cb01f7e.png)
   
@@ -43,10 +43,10 @@ ms.locfileid: "30241969"
   
 ![エクスプローラーの [表示] メニュー](media/2bb34f58-555f-4967-ba55-740334ef1f8e.png)
   
-エクスプローラーには、上位の対象ユーザー、上位のマルウェアファミリなどの詳細を掘り下げられるフィルター処理とクエリ機能がいくつか用意されています。各種類のレポートには、データの表示と探索にさまざまな方法が用意されています。
+エクスプローラーには、上位の対象ユーザー、上位マルウェアファミリ、検出テクノロジなどの詳細を掘り下げたフィルター処理とクエリ機能がいくつか用意されています。 各種類のレポートには、データの表示と探索にさまざまな方法が用意されています。
 
 > [!IMPORTANT]
-> エクスプローラーでは、アスタリスク (*) や疑問符 (?) などのワイルドカード文字を使用しないでください。電子メールメッセージの [件名] フィールドを検索すると、エクスプローラーは部分一致を実行し、ワイルドカード検索と同様の結果を生成します。
+> エクスプローラーでは、アスタリスク (*) や疑問符 (?) などのワイルドカード文字を使用しないでください。 電子メールメッセージの [件名] フィールドを検索すると、エクスプローラーは部分一致を実行し、ワイルドカード検索と同様の結果を生成します。
 
 ## <a name="email--malware"></a>メール\>マルウェア
 
@@ -85,7 +85,7 @@ ms.locfileid: "30241969"
 > [!NOTE]
 > **表示するデータが多すぎる**というエラーが表示された場合は、フィルターを追加し、必要に応じて、表示している日付範囲を絞り込んでください。 
 
-フィルターを適用するには、[**送信者**] を選択し、リスト内の項目を選択してから [最新の情報に更新] をクリックします。この例では、**検出テクノロジ**をフィルタとして使用しています (複数のオプションを使用できます)。送信者、送信者のドメイン、受信者、件名、添付ファイル名、マルウェアファミリ、保護状態 (Office 365 の脅威保護機能およびポリシーによって行われた操作)、検出テクノロジ (マルウェアの検出方法)、およびもっとその。 
+フィルターを適用するには、[**送信者**] を選択し、リスト内の項目を選択してから [最新の情報に更新] をクリックします。 この例では、**検出テクノロジ**をフィルタとして使用しています (複数のオプションを使用できます)。 送信者、送信者のドメイン、受信者、件名、添付ファイル名、マルウェアファミリ、保護状態 (Office 365 の脅威保護機能およびポリシーによって行われた操作)、検出テクノロジ (マルウェアの検出方法)、およびもっとその。 
 
 ![検出された電子メールに関するデータを検出テクノロジで表示する](media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png) 
 
@@ -93,7 +93,7 @@ ms.locfileid: "30241969"
 
 ## <a name="content--malware"></a>コンテンツ\>マルウェア
 
-このビューには、SharePoint Online、OneDrive for business、Microsoft Teams で悪意のあるファイルとして識別されたファイルが表示されます。
+このビューには、SharePoint Online、OneDrive for business、Microsoft Teams で Office 365 Advanced Threat Protection によって悪意のあるファイルとして識別されたファイルが表示されます。
 
 マルウェアファミリ、検出テクノロジ (マルウェアの検出方法)、ワークロード (OneDrive、SharePoint、Teams) 別の情報を表示します。 
 
@@ -103,7 +103,7 @@ ms.locfileid: "30241969"
   
 ## <a name="new-click-to-filter-capabilities"></a>(新)クリックフィルター機能
 
-エクスプローラーを新規にクリックすると、フィルター処理することができます。2018年5月後期に凡例の項目をクリックすると、その項目がレポートのフィルターになります。たとえば、エクスプローラーのマルウェアビューを見ているとします。
+エクスプローラーを新規にクリックすると、フィルター処理することができます。 凡例の項目をクリックすると、その項目がレポートのフィルターになります。 たとえば、エクスプローラーのマルウェアビューを見ているとします。
   
 ![[脅威管理\>エクスプローラー] に移動します。](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
@@ -111,7 +111,7 @@ ms.locfileid: "30241969"
   
 ![ATO 分析の結果のみを表示するためにフィルター処理されたエクスプローラー](media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
   
-このビューでは、 [Office 365 ATP の安全な添付ファイル](atp-safe-attachments.md)によって分析されたファイルのデータを調べています。チャートの下には、ATP の安全な添付ファイルによって検出された添付ファイルがある特定の電子メールメッセージに関する詳細が表示されます。
+このビューでは、 [Office 365 ATP の安全な添付ファイル](atp-safe-attachments.md)によって分析されたファイルのデータを調べています。 チャートの下には、ATP の安全な添付ファイルによって検出された添付ファイルがある特定の電子メールメッセージに関する詳細が表示されます。
   
 ![検出された添付ファイルを含む電子メールメッセージに関する具体的な詳細情報](media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
   
@@ -123,15 +123,15 @@ ms.locfileid: "30241969"
   
 ## <a name="how-do-i-get-explorer"></a>エクスプローラーを入手するにはどうすればよいですか?
 
-エクスプローラーは、 [Office 365 の脅威インテリジェンス](office-365-ti.md)に含まれています。 
+Explorer は[Office 365 Advanced Threat Protection プラン 2](office-365-ti.md)に含まれています。 
 
-エクスプローラーを表示および使用するには、セキュリティ管理者やセキュリティリーダーに付与されている適切なアクセス許可を持っている必要があります。詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+エクスプローラーを表示および使用するには、セキュリティ管理者やセキュリティリーダーに付与されている適切なアクセス許可を持っている必要があります。 詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
   
 ## <a name="related-topics"></a>関連項目
 
 [Office 365 セキュリティ&amp; /コンプライアンスセンターのレポートと分析情報](reports-and-insights-in-security-and-compliance.md)
   
-[配信された悪意のある電子メールを検索して調査する (Office 365 の脅威インテリジェンス)](investigate-malicious-email-that-was-delivered.md)
+[配信された悪意のある電子メールを検索して調査する (Office 365 の脅威 Invesitgation および応答)](investigate-malicious-email-that-was-delivered.md)
   
 [Office 365 のスパム対策とマルウェア対策の保護](anti-spam-and-anti-malware-protection.md)
   

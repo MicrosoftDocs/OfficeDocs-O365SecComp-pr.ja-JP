@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
-description: 概要:この記事では、Office 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージを送信先のメール システムが信頼するようにする方法を説明します。
-ms.openlocfilehash: ba3fc67d906c2d87a79d0f006cdc98aab5f401fd
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+description: '概要: この記事では、Office 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージを送信先のメール システムが信頼するようにする方法を説明します。'
+ms.openlocfilehash: 28e529038cefc955da4c76309d169a9f3b5e4a23
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275897"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524081"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>DKIM を使用して、Office 365 のカスタム ドメインから送信される送信電子メールを検証する
 
@@ -68,7 +68,7 @@ SPF ではメッセージ エンベロープに情報を追加しますが、DKI
   
 この例で、ドメインに対して SPF TXT レコードしか発行しなかったとしたら、受信者のメール サーバーによってメールがスパムとしてマークされ、誤検知の結果になる可能性があります。このシナリオでは DKIM を追加することによって、誤検知のスパム報告が減少しています。DKIM は、IP アドレスだけではなく、公開キー暗号化を使って認証を行うので、SPF よりもはるかに強力な認証形態といえます。展開では DMARC だけでなく、SPF と DKIM の両方を使うことをお勧めします。
   
-基本事項:DKIM では秘密キーを使用して、暗号化された署名をメッセージ ヘッダーに挿入します。署名ドメイン、つまり送信ドメインは、 **d=** フィールドの値としてヘッダーに挿入されます。確認ドメイン、つまり受信者のドメインは、 **d=** フィールドを使用して、DNS から公開キーを検索し、メッセージを認証します。メッセージが確認されれば、DKIM チェックは合格です。 
+基本事項:DKIM では秘密キーを使用して、暗号化された署名をメッセージ ヘッダーに挿入します。署名ドメイン、つまり送信ドメインは、**d=** フィールドの値としてヘッダーに挿入されます。確認ドメイン、つまり受信者のドメインは、**d=** フィールドを使用して、DNS から公開キーを検索し、メッセージを認証します。メッセージが確認されれば、DKIM チェックは合格です。 
   
 ## <a name="what-you-need-to-do-to-manually-set-up-dkim-in-office-365"></a>Office 365 で DKIM を手動でセットアップする方法
 <a name="SetUpDKIMO365"> </a>
@@ -82,14 +82,14 @@ DKIM を構成するには、次の手順を完了します。
 ### <a name="publish-two-cname-records-for-your-custom-domain-in-dns"></a>DNS でカスタム ドメインに対して 2 つの CNAME レコードを発行する
 <a name="Publish2CNAME"> </a>
 
-DNS の DKIM 署名を追加する各ドメインに対して、2 つの CNAME レコードを発行する必要があります。CNAME レコードは、ドメインの 正規名が別のドメイン名のエイリアスであることを指定するために DNS によって使用されます。 
+DNS の DKIM 署名を追加する各ドメインに対して、2 つの CNAME レコードを発行する必要があります。 CNAME レコードは、ドメインの 正規名が別のドメイン名のエイリアスであることを指定するために DNS によって使用されます。 CNAME レコードは、カスタマイズしたドメインのパブリックに使用可能な DNS サーバー上に作成する必要があります。 dns の CNAME レコードは、Office 365 用の Microsoft dns サーバー上の dns に存在するレコードが既に作成されていることを指します。
   
  Office 365 は、発行された 2 つのレコードを使用して自動的にキーの交換を実行します。Office 365 の初期ドメインに加えてプロビジョニングされたカスタム ドメインがある場合には、追加の各ドメインに対して 2 つの CNAME レコードを発行する必要があります。したがって、2 つのドメインがある場合は、さらに 2 つの CNAME レコードを発行するなどの操作が必要になります。
   
 CNAME レコードには、次の形式を使用します。
 
 > [!IMPORTANT]
-> 使用している GCC の数が多いお客様の場合は、 _domainguid_を異なるものとして計算します。_domainguid_を計算するために_initialdomain_の MX レコードを検索する代わりに、カスタマイズしたドメインから直接計算します。たとえば、カスタマイズしたドメインが "contoso.com" の場合、domainguid は "contoso-com" になり、ピリオドはすべてダッシュに置き換えられます。そのため、initialdomain が指している MX レコードに関係なく、常に上記の方法を使用して、CNAME レコードで使用する domainguid を計算します。
+> 使用している GCC の数が多いお客様の場合は、 _domainguid_を異なるものとして計算します。 _domainguid_を計算するために_initialdomain_の MX レコードを検索する代わりに、カスタマイズしたドメインから直接計算します。 たとえば、カスタマイズしたドメインが "contoso.com" の場合、domainguid は "contoso-com" になり、ピリオドはすべてダッシュに置き換えられます。 そのため、initialdomain が指している MX レコードに関係なく、常に上記の方法を使用して、CNAME レコードで使用する domainguid を計算します。
 
   
 ```
@@ -106,13 +106,13 @@ TTL:                3600
   
 - Office 365 では、セレクターは常に "selector1" または "selector2" になります。 
     
-- _domainguid_は、mail.protection.outlook.com の前に表示されるカスタムドメインのカスタマイズされた MX レコードの_domainguid_と同じです。たとえば、ドメイン contoso.com の次の MX レコードでは、 _domainguid_は contoso-com です。 
+- _domainguid_は、mail.protection.outlook.com の前に表示されるカスタムドメインのカスタマイズされた MX レコードの_domainguid_と同じです。 たとえば、ドメイン contoso.com の次の MX レコードでは、 _domainguid_は contoso-com です。 
     
     ```
     contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
     ```
 
-- _initialdomain_は、Office 365 のサインアップ時に使用したドメインです。最初のドメインは常に onmicrosoft.com で終了します。最初のドメインを決定する方法については、「ドメインに関する[FAQ](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain)」を参照してください。
+- _initialDomain_ は、Office 365 にサインアップしたときに使用したドメインです。 最初のドメインは常に onmicrosoft.com で終了します。 初期ドメインを決定する方法の詳細については、「 [ドメインに関する FAQ](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain)」を参照してください。
     
 たとえば、初期ドメイン (cohovineyardandwinery.onmicrosoft.com) と 2 つのカスタム ドメイン (cohovineyard.com と cohowinery.com) がある場合は、追加のそれぞれのドメインに対して 2 つの CNAME レコードをセットアップして、合計で 4 つの CNAME レコードをセットアップする必要があります。
   
@@ -226,7 +226,7 @@ DNS に CNAME レコードを発行したら、Office 365 で DKIM 署名を有�
     Set-DkimSigningConfig -identity $p[<number>].identity -enabled $false
     ```
 
-    ここで、_number_ はポリシーのインデックスです。たとえば、 
+    ここで、 _number_はポリシーのインデックスです。 たとえば、 
     
     ```
     Set-DkimSigningConfig -identity $p[0].identity -enabled $false
@@ -283,6 +283,6 @@ Return-Path: <communication@bulkemailprovider.com>
 ## <a name="next-steps-after-you-set-up-dkim-for-office-365"></a>次の手順: Office 365 に SPF をセットアップした後
 <a name="DKIMNextSteps"> </a>
 
-dkim はスプーフィングを防止するように設計されていますが、SPF と DMARC では dkim の方が優れています。dkim をセットアップした後、まだ SPF をセットアップしていない場合は、これを行う必要があります。spf の簡単な説明と、すぐに構成する方法については、「 [Set up SPF in Office 365」を](set-up-spf-in-office-365-to-help-prevent-spoofing.md)参照してスプーフィングを防止してください。office 365 が spf をどのように使用するか、またはハイブリッド展開のようなトラブルシューティングまたは標準的でない展開についての詳細については、「 [office 365 で Sender Policy Framework (SPF) を使用してスプーフィングを防止する方法](how-office-365-uses-spf-to-prevent-spoofing.md)から始める」を参照してください。次に、「 [Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md)」を参照してください。[スパム対策メッセージヘッダー](anti-spam-message-headers.md)には、Office 365 が dkim チェックに使用する構文とヘッダーフィールドが含まれています。 
+DKIM はスプーフィングを防止するように設計されていますが、SPF と DMARC を併用すると DKIM はより適切に機能します。 DKIM をセットアップした後、まだ SPF を構成していなければ、SPF を構成する必要があります。 SPF の概要と簡単な構成方法を確認するには、「[Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)」を参照してください。 Office 365 における SPF の使用方法についての詳細や、ハイブリッド展開などの非標準の展開のトラブルシューティングについては、「[How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)」をご確認ください。 次は、「[DMARC を使用して Office 365 でメールを検証する](use-dmarc-to-validate-email.md)」を参照してください。 「[スパム対策メッセージ ヘッダー](anti-spam-message-headers.md)」には、Office 365 が DKIM チェックに使用する構文とヘッダー フィールドが含まれています。 
   
 

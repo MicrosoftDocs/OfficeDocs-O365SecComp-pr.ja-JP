@@ -9,14 +9,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理者は、セキュリティ & コンプライアンスセンターのメッセージ追跡を使用して、メッセージに何が起こったかを調べることができます。
-ms.openlocfilehash: 9c427328972fb9c8d64a2847368f5be022974744
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 73d4aa6f9a12b8e1bf955dad09e4c4ca7290dae8
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455349"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524091"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターのメッセージ追跡
+
+## <a name="overview"></a>概要
 
 セキュリティ & コンプライアンスセンターのメッセージ追跡は、Exchange Online 組織を通過する電子メールメッセージに従います。 メッセージがサービスによって受信、拒否、延期、または配信されたかどうかを判断できます。 メッセージが最終的な状態になる前に、メッセージに行われた処理も表示します。
 
@@ -54,7 +56,8 @@ ms.locfileid: "30455349"
 
 - **ユーザーへ**: このフィールドをクリックして、組織内の1人または複数の受信者を選択します。
 
-外部の送信者と受信者の電子メールアドレスを入力することもできます。 ワイルドカードはサポート`*@contoso.com`さ`scot?@contoso.com`れていますが、同じフィールドで複数のワイルドカードエントリを同時に使用することはできません。
+> [!NOTE]外部の送信者と受信者の電子メールアドレスを入力することもできます。 ワイルドカードはサポート`*@contoso.com`さ`scot?@contoso.com`れていますが、同じフィールドで複数のワイルドカードエントリを同時に使用することはできません。
+> [!NOTE]複数の送信者または受信者リストをセミコロン (`;`) で区切って貼り付けることができます。 スペース (`\s`)、キャリッジリターン (`\r`)、または次`\n`の行 () 記号を使用できます。
 
 ### <a name="time-range"></a>時間の範囲
 
