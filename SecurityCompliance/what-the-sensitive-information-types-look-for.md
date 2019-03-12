@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) には、dlp ポリシーで使用できる状態で、80の機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
-ms.openlocfilehash: 55fa8b6855a9a5bf2c84f6555dd8c8227a2ad9cf
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: e9811b285e98a791570dc91e275cb5cead4f8bc9
+ms.sourcegitcommit: 6e8e2b43a4bea31c1e835c5b050824651c6a0094
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455269"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30537644"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>機密情報の種類の検索基準：
 
@@ -44,7 +44,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのデー�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -102,7 +102,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -150,7 +150,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -222,7 +222,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -364,7 +364,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -422,7 +422,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -498,7 +498,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -566,7 +566,476 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 7777777777
 - 8888888888
 - 9999999999
-   
+
+## <a name="azure-documentdb-auth-key"></a>Azure DocumentDB 認証キー
+
+### <a name="format"></a>Format
+
+文字列 "DocumentDb" の後に、次のパターンで概説されている文字と文字列が続きます。
+
+### <a name="pattern"></a>パターン
+
+- 文字列 "DocumentDb"
+- 3-200 の小文字または大文字、数字、記号、特殊文字、スペースのいずれかの組み合わせ
+- より大きい記号 (>)、等号 (=)、二重引用符 (")、またはアポストロフィ (')
+- 86の小文字または小文字、数字、スラッシュ (/)、またはプラス記号 (+) の任意の組み合わせ
+- 2つの等号 (=)
+
+### <a name="checksum"></a>チェックサム
+
+無
+
+### <a name="definition"></a>定義
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現 CEP_Regex_AzureDocumentDBAuthKey は、このパターンに一致するコンテンツを検出します。
+- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
+
+```
+<!-- Azure Document DB Auth Key -->
+<Entity id="0f587d92-eb28-44a9-bd1c-90f2892b47aa" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureDocumentDBAuthKey" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+          </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>キーワード
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(この機密情報の種類では、キーワードリストではなく正規表現を使用してこれらのキーワードを識別していることに注意してください)。
+
+- 拠点
+- fabrikam
+- ノース
+- サンド
+- onebox
+- localhost
+- 127.0.0.1
+- testacs。<!--no-hyperlink-->com
+- s-int<!--no-hyperlink-->
+
+## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>azure IAAS データベースの接続文字列と azure SQL 接続文字列
+
+### <a name="format"></a>Format
+
+文字列 "server"、"server"、または "data source" の後に、次のパターンで概説されている文字と文字列を指定します (文字列 "cloudapp" を含む)。<!--no-hyperlink-->com または "cloudapp azure。<!--no-hyperlink-->net "または" database "です。<!--no-hyperlink-->net "、および" password "または" pwd "という文字列を指定します。
+
+### <a name="pattern"></a>パターン
+
+- 文字列 "server"、"server"、または "data source"
+- 0-2 空白文字
+- 等号 (=)
+- 0-2 空白文字
+- 1-200 の小文字または大文字、数字、記号、特殊文字、スペースのいずれかの組み合わせ
+- 文字列 "cloudapp。<!--no-hyperlink-->com "," cloudapp。<!--no-hyperlink-->net "、または" database "です。<!--no-hyperlink-->net "
+- 1-300 の小文字または大文字、数字、記号、特殊文字、スペースのいずれかの組み合わせ
+- 文字列 "password"、"password"、または "pwd"
+- 0-2 空白文字
+- 等号 (=)
+- 0-2 空白文字
+- セミコロンではない1つ以上の文字 (;)、引用符 (")、またはアポストロフィ (')
+- セミコロン (;)、引用符 (")、またはアポストロフィ (')
+
+### <a name="checksum"></a>チェックサム
+
+無
+
+### <a name="definition"></a>定義
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現 CEP_Regex_AzureConnectionString は、このパターンに一致するコンテンツを検出します。
+- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
+
+```
+<!--Azure IAAS Database Connection String and Azure SQL Connection String-->
+<Entity id="ce1a126d-186f-4700-8c0c-486157b953fd" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>キーワード
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(この機密情報の種類では、キーワードリストではなく正規表現を使用してこれらのキーワードを識別していることに注意してください)。
+
+- 拠点
+- fabrikam
+- ノース
+- サンド
+- onebox
+- localhost
+- 127.0.0.1
+- testacs。<!--no-hyperlink-->com
+- s-int<!--no-hyperlink-->
+
+## <a name="azure-iot-connection-string"></a>Azure IoT 接続文字列
+
+### <a name="format"></a>Format
+
+文字列 "HostName" の後に、次のパターンで概説されている文字と文字列 ("azure デバイス" を含む)。<!--no-hyperlink-->net "および" sharedaccesskey "。
+
+### <a name="pattern"></a>パターン
+
+- 文字列 "HostName"
+- 0-2 空白文字
+- 等号 (=)
+- 0-2 空白文字
+- 1-200 の小文字または大文字、数字、記号、特殊文字、スペースのいずれかの組み合わせ
+- 文字列 "azure デバイス。<!--no-hyperlink-->net "
+- 1-200 の小文字または大文字、数字、記号、特殊文字、スペースのいずれかの組み合わせ
+- 文字列 "sharedaccesskey"
+- 0-2 空白文字
+- 等号 (=)
+- 0-2 空白文字
+- 43の小文字または小文字、数字、スラッシュ (/)、またはプラス記号 (+) の任意の組み合わせ
+- 等号 (=)
+
+### <a name="checksum"></a>チェックサム
+
+無
+
+### <a name="definition"></a>定義
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現 CEP_Regex_AzureIoTConnectionString は、このパターンに一致するコンテンツを検出します。
+- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
+
+```
+<!--Azure IoT Connection String-->
+<Entity id="0b34bec3-d5d6-4974-b7b0-dcdb5c90c29d" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureIoTConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>キーワード
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(この機密情報の種類では、キーワードリストではなく正規表現を使用してこれらのキーワードを識別していることに注意してください)。
+
+- 拠点
+- fabrikam
+- ノース
+- サンド
+- onebox
+- localhost
+- 127.0.0.1
+- testacs。<!--no-hyperlink-->com
+- s-int<!--no-hyperlink-->
+
+## <a name="azure-publish-setting-password"></a>Azure 発行設定パスワード
+
+### <a name="format"></a>Format
+
+文字列 "userpwd =" に続けて英数字の文字列を指定します。
+
+### <a name="pattern"></a>パターン
+
+- 文字列 "userpwd ="
+- 60小文字または数字の任意の組み合わせ
+- 二重引用符 (")
+
+### <a name="checksum"></a>チェックサム
+
+無
+
+### <a name="definition"></a>定義
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現 CEP_Regex_AzurePublishSettingPasswords は、このパターンに一致するコンテンツを検出します。
+- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
+
+
+```
+<!--Azure Publish Setting Password-->
+<Entity id="75f4cc8a-a68e-49e5-89ce-fa8f03d286a5" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+       <IdMatch idRef="CEP_Regex_AzurePublishSettingPasswords" />
+       <Any minMatches="0" maxMatches="0">
+           <Match idRef="CEP_CommonExampleKeywords" />
+       </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>キーワード
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(この機密情報の種類では、キーワードリストではなく正規表現を使用してこれらのキーワードを識別していることに注意してください)。
+
+- 拠点
+- fabrikam
+- ノース
+- サンド
+- onebox
+- localhost
+- 127.0.0.1
+- testacs。<!--no-hyperlink-->com
+- s-int<!--no-hyperlink-->
+
+## <a name="azure-redis-cache-connection-string"></a>Azure Redis cache 接続文字列
+
+### <a name="format"></a>Format
+
+文字列 "redis...<!--no-hyperlink-->net "の後に、次のパターンで概説されている文字と文字列を指定します。文字列" password "または" pwd "が含まれます。
+
+### <a name="pattern"></a>パターン
+
+- 文字列 "redis...<!--no-hyperlink-->net "
+- 1-200 の小文字または大文字、数字、記号、特殊文字、スペースのいずれかの組み合わせ
+- 文字列 "password" または "pwd"
+- 0-2 空白文字
+- 等号 (=)
+- 0-2 空白文字
+- 43文字の任意の組み合わせ (小文字または大文字の文字、数字、スラッシュ (/)、プラス記号 (+))
+- 等号 (=)
+
+### <a name="checksum"></a>チェックサム
+
+無
+
+### <a name="definition"></a>定義
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現 CEP_Regex_AzureRedisCacheConnectionString は、このパターンに一致するコンテンツを検出します。
+- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
+
+```
+<!--Azure Redis Cache Connection String-->
+<Entity id="095a7e6c-efd8-46d5-af7b-5298d53a49fc" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureRedisCacheConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>キーワード
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(この機密情報の種類では、キーワードリストではなく正規表現を使用してこれらのキーワードを識別していることに注意してください)。
+
+- 拠点
+- fabrikam
+- ノース
+- サンド
+- onebox
+- localhost
+- 127.0.0.1
+- testacs。<!--no-hyperlink-->com
+- s-int<!--no-hyperlink-->
+
+## <a name="azure-sas"></a>Azure SAS
+
+### <a name="format"></a>Format
+
+文字列 "sig" の後に、次のパターンで概説されている文字と文字列が続きます。
+
+### <a name="pattern"></a>パターン
+
+- 文字列 "sig"
+- 0-2 空白文字
+- 等号 (=)
+- 0-2 空白文字
+- 43-53 文字のうち、下位または大文字の文字、数字、またはパーセント記号 (%) の任意の組み合わせ。
+- 文字列 "% 3d"
+- 小文字または大文字、数字、パーセント記号 (%) 以外の文字
+
+### <a name="checksum"></a>チェックサム
+
+無
+
+### <a name="definition"></a>定義
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現 CEP_Regex_AzureSAS は、このパターンに一致するコンテンツを検出します。
+
+```
+<!--Azure SAS-->
+<Entity id="4d235014-e564-47f4-a6fb-6ebb4a826834" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureSAS" />
+  </Pattern>
+</Entity>
+```
+
+## <a name="azure-service-bus-connection-string"></a>Azure Service Bus の接続文字列
+
+### <a name="format"></a>Format
+
+文字列 "EndPoint" の後に、次のパターンで概説されている文字と文字列が続きます。<!--no-hyperlink-->net "および" shared' キー "。
+
+### <a name="pattern"></a>パターン
+
+- 文字列 "EndPoint"
+- 0-2 空白文字
+- 等号 (=)
+- 0-2 空白文字
+- 1-200 の小文字または大文字、数字、記号、特殊文字、スペースのいずれかの組み合わせ
+- 文字列 "windows.<!--no-hyperlink-->net "
+- 1-200 の小文字または大文字、数字、記号、特殊文字、スペースのいずれかの組み合わせ
+- 文字列 "sharedaccesskey"
+- 0-2 空白文字
+- 等号 (=)
+- 0-2 空白文字
+- 43文字の任意の組み合わせ (小文字または大文字の文字、数字、スラッシュ (/)、プラス記号 (+))
+- 等号 (=)
+
+### <a name="checksum"></a>チェックサム
+
+無
+
+### <a name="definition"></a>定義
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現 CEP_Regex_AzureServiceBusConnectionString は、このパターンに一致するコンテンツを検出します。
+- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
+
+```
+<!--Azure Service Bus Connection String-->
+<Entity id="b9a6578f-a83f-4fcd-bf44-2130bae49a6f" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureServiceBusConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>キーワード
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(この機密情報の種類では、キーワードリストではなく正規表現を使用してこれらのキーワードを識別していることに注意してください)。
+
+- 拠点
+- fabrikam
+- ノース
+- サンド
+- onebox
+- localhost
+- 127.0.0.1
+- testacs。<!--no-hyperlink-->com
+- s-int<!--no-hyperlink-->
+
+## <a name="azure-storage-account-key"></a>Azure ストレージアカウントキー
+
+### <a name="format"></a>Format
+
+文字列 "defaultendpointsprotocol" の後に、文字列 "AccountKey" を含む、次のパターンで概説されている文字および文字列が続きます。
+
+### <a name="pattern"></a>パターン
+
+- 文字列 "defaultendpointsprotocol"
+- 0-2 空白文字
+- 等号 (=)
+- 0-2 空白文字
+- 1-200 の小文字または大文字、数字、記号、特殊文字、スペースのいずれかの組み合わせ
+- 文字列 "AccountKey"
+- 0-2 空白文字
+- 等号 (=)
+- 0-2 空白文字
+- 86文字の任意の組み合わせ (小文字または大文字の文字、数字、スラッシュ (/)、プラス記号 (+))
+- 2つの等号 (=)
+
+### <a name="checksum"></a>チェックサム
+
+無
+
+### <a name="definition"></a>定義
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現 CEP_Regex_AzureStorageAccountKey は、このパターンに一致するコンテンツを検出します。
+- 正規表現 CEP_AzureEmulatorStorageAccountFilter は、このパターンに一致するコンテンツを検出し**ません**。
+- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
+
+```
+<!--Azure Storage Account Key-->
+<Entity id="c7bc98e8-551a-4c35-a92d-d2c8cda714a7" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureStorageAccountKey" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_AzureEmulatorStorageAccountFilter" />
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>キーワード
+
+#### <a name="cepazureemulatorstorageaccountfilter"></a>CEP_AzureEmulatorStorageAccountFilter
+
+(この機密情報の種類では、キーワードリストではなく正規表現を使用してこれらのキーワードを識別していることに注意してください)。
+
+- Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/kbhbeksogmgw = =
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(この機密情報の種類では、キーワードリストではなく正規表現を使用してこれらのキーワードを識別していることに注意してください)。
+
+- 拠点
+- fabrikam
+- ノース
+- サンド
+- onebox
+- localhost
+- 127.0.0.1
+- testacs。<!--no-hyperlink-->com
+- s-int<!--no-hyperlink-->
+
+## <a name="azure-storage-account-key-generic"></a>Azure ストレージアカウントキー (汎用)
+
+### <a name="format"></a>Format
+
+86の下または大文字、数字、スラッシュ (/)、またはプラス記号 (+) の任意の組み合わせで、下のパターンで説明されている文字が前または後にある。
+
+### <a name="pattern"></a>パターン
+
+- 0-1 より大きい記号 (>)、アポストロフィ (')、等号 (=)、二重引用符 (")、または番号記号 (#) を指定します。
+- 86文字の任意の組み合わせ (小文字または大文字の文字、数字、スラッシュ (/)、プラス記号 (+))
+- 2つの等号 (=)
+
+
+### <a name="checksum"></a>チェックサム
+
+無
+
+### <a name="definition"></a>定義
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現 CEP_Regex_AzureStorageAccountKeyGeneric は、このパターンに一致するコンテンツを検出します。
+
+```
+<!--Azure Storage Account Key (Generic)-->
+<Entity id="7ff41bd0-5419-4523-91d6-383b3a37f084" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureStorageAccountKeyGeneric" />
+  </Pattern>
+</Entity>
+```
+
 ## <a name="belgium-national-number"></a>ベルギーの国民番号
 
 ### <a name="format"></a>Format
@@ -579,12 +1048,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - YY.MM.DD の形式の生年月日を表す 6 桁の数字と 2 つピリオド  
 - ハイフン 1 つ  
 - 3 桁の連番 (男性の場合は奇数、女性の場合は偶数)  
-- ピリオド 1 つ  
+- ピリオド 1 つ 
 - チェック ディジットとして機能する 2 桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -644,7 +1113,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 3 桁の数字 
 - ピリオド 1 つ  
 - 3 桁の数字 
-- ハイフン 
+- ハイフン 1 つ  
 - チェック ディジットとして機能する 2 桁の数字
 
 なし
@@ -652,7 +1121,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -712,7 +1181,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -788,7 +1257,7 @@ Registro de 識別子 dade (ric) (新しい形式):
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -839,7 +1308,7 @@ Cédula de 識別子 dade id カード national id número de rregistro registro
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -905,7 +1374,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -1122,7 +1591,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -1168,7 +1637,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -1235,7 +1704,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -1301,7 +1770,7 @@ Keyword_canada_phin または Keyword_canada_provinces から、少なくとも2
 ### <a name="pattern"></a>パターン
 
 さ
-- 3 桁の数字  
+- 3 桁の数字 
 - ハイフンまたはスペース 
 - 3 桁の数字 
 - ハイフンまたはスペース 
@@ -1311,7 +1780,7 @@ Keyword_canada_phin または Keyword_canada_provinces から、少なくとも2
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -1394,7 +1863,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -1453,7 +1922,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -1750,7 +2219,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -1790,7 +2259,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -1853,7 +2322,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -1890,7 +2359,7 @@ Keyword_czech_id_card からのキーワードが見つかりました。
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -1932,7 +2401,7 @@ Keyword_denmark_id からのキーワードが見つかりました。
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -1966,7 +2435,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -2339,7 +2808,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -2387,7 +2856,7 @@ Keyword_finland_passport_number からのキーワードが見つかりました
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -2436,7 +2905,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -2471,7 +2940,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -2528,7 +2997,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -2605,7 +3074,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -2746,7 +3215,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -2833,7 +3302,7 @@ bnationalit
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -2883,7 +3352,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -2925,7 +3394,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -3007,7 +3476,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -3042,15 +3511,15 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="pattern"></a>パターン
 
 12 桁の数字:
-- 4 桁の数字 
+- 4 桁の数字  
 - スペースまたはハイフン 1 つ (省略可能)  
-- 4 桁の数字 
+- 4 桁の数字  
 - スペースまたはハイフン 1 つ (省略可能)  
 - 最後の数字はチェック ディジット
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -3091,7 +3560,7 @@ DLP ポリシーは 75% です。この種類の機密情報は、近接する30
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -3144,7 +3613,7 @@ ad、ae、al、at、az、ba、be、bg、bh、ch、cr、cy、cz、de、dk、do、
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -3179,7 +3648,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -3241,7 +3710,7 @@ Dictionary
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -3274,7 +3743,7 @@ Dictionary
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -3316,7 +3785,7 @@ Dictionary_icd_9_cm キーワードディクショナリの用語。 [Diseases�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -3383,7 +3852,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -3424,7 +3893,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -3468,7 +3937,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -3512,7 +3981,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -3622,7 +4091,7 @@ Otemachi
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -3682,7 +4151,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -3721,7 +4190,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -3772,7 +4241,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -3823,7 +4292,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -3868,7 +4337,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -3933,7 +4402,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -3978,7 +4447,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -4023,7 +4492,7 @@ Keyword_nz_terms
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -4077,7 +4546,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -4116,7 +4585,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -4159,7 +4628,7 @@ Keyword_polish_national_id_passport_number のキーワードを検出した。
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -4198,7 +4667,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -4239,7 +4708,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -4279,7 +4748,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -4324,7 +4793,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -4380,7 +4849,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -4425,7 +4894,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -4478,7 +4947,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -4498,7 +4967,83 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="keywords"></a>キーワード
 
 なし
-   
+
+## <a name="sql-server-connection-string"></a>SQL Server の接続文字列
+
+### <a name="format"></a>Format
+
+文字列 "user id"、"user id"、"uid"、または "UserId" の後に、次のパターンで概説されている文字と文字列が続きます。
+
+### <a name="pattern"></a>パターン
+
+- 文字列 "user id"、"user id"、"uid"、または "UserId"
+- 1-200 の小文字または大文字、数字、記号、特殊文字、スペースのいずれかの組み合わせ
+- 文字列 "Password" または "pwd" ("pwd" の前に小文字が含まれていません)
+- 等号 (=)
+- ドル記号 ($)、パーセント記号 (%)、不等号 (>)、記号 (@)、二重引用符 (")、セミコロン (;)、左中かっこ ([)、左大かっこ ({) のいずれでもない文字
+- セミコロンではない7-128 文字の任意の組み合わせ (;)、スラッシュ (/)、または引用符 (")
+- セミコロン (;)または二重引用符 (")
+
+### <a name="checksum"></a>チェックサム
+
+無
+
+### <a name="definition"></a>定義
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 正規表現 CEP_Regex_SQLServerConnectionString は、このパターンに一致するコンテンツを検出します。
+- CEP_GlobalFilter からのキーワードが見つかり**ません**。
+- 正規表現 CEP_PasswordPlaceHolder は、このパターンに一致するコンテンツを検出し**ません**。
+- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
+
+```
+<!---SQL Server Connection String>
+<Entity id="e76b6205-d3cb-46f2-bd63-c90153f2f97d" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_SQLServerConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_GlobalFilter" />
+            <Match idRef="CEP_PasswordPlaceHolder" />
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>キーワード
+
+#### <a name="cepglobalfilter"></a>CEP_GlobalFilter
+
+- パスワードの一部
+- パスワード
+- secretPassword
+- 示す
+
+#### <a name="ceppasswordplaceholder"></a>CEP_PasswordPlaceHolder
+
+(この機密情報の種類では、キーワードリストではなく正規表現を使用してこれらのキーワードを識別していることに注意してください)。
+
+- Password または pwd の後に、0-2 スペース、等号 (=)、0-2 スペース、アスタリスク (*)、または--
+- Password または pwd の後に、次のように入力します。
+    - 等号 (=)
+    - 小なり記号 (<)
+    - 1-200 文字の大文字と小文字、数字、アスタリスク (*)、ハイフン (-)、下線 (_)、または空白文字の任意の組み合わせ。
+    - より大きい記号 (>)
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(この機密情報の種類では、キーワードリストではなく正規表現を使用してこれらのキーワードを識別していることに注意してください)。
+
+- 拠点
+- fabrikam
+- ノース
+- サンド
+- onebox
+- localhost
+- 127.0.0.1
+- testacs。<!--no-hyperlink-->com
+- s-int<!--no-hyperlink-->
+
 ## <a name="sweden-national-id"></a>スウェーデンの国民 ID
 
 ### <a name="format"></a>Format
@@ -4515,7 +5060,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -4534,7 +5079,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-いいえ
+無
    
 ## <a name="sweden-passport-number"></a>スウェーデンのパスポート番号
 
@@ -4548,7 +5093,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -4623,7 +5168,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -4691,7 +5236,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -4746,7 +5291,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -4791,7 +5336,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -4839,7 +5384,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -4886,7 +5431,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -4936,7 +5481,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -4987,7 +5532,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -5034,7 +5579,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+有
 
 ### <a name="definition"></a>定義
 
@@ -5112,7 +5657,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -5171,7 +5716,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -5223,7 +5768,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -5287,7 +5832,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -5448,7 +5993,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 ### <a name="definition"></a>定義
 
@@ -5535,7 +6080,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+無
 
 
 ### <a name="definition"></a>定義
