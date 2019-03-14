@@ -1,7 +1,7 @@
 ---
 title: リファレンスポリシー、プラクティス、ガイドライン
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
-description: マイクロソフト開発のさまざまなポリシー、手順があり、不適切な発言、望ましくない、または悪意のあるメールからユーザーを保護するためにいくつかの業界のベスト プラクティスを採用します。
-ms.openlocfilehash: e552128a06ce942383e7c5410508df61331fb874
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.collection:
+- M365-security-compliance
+description: Microsoft は、さまざまなポリシー、手順を開発し、業界のベストプラクティスをいくつか採用して、ユーザーを不適切な迷惑メールや悪意のあるメールから保護しています。
+ms.openlocfilehash: a7f29ed77b373ee2b66831e074fda16fcda30508
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003086"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276367"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>リファレンス:ポリシー、プラクティス、ガイドライン
   
@@ -86,14 +88,14 @@ Microsoft は、インターネットと電子メールのエコシステムを�
   
 - [Messaging Malware Mobile Anti-Abuse Working Group](https://www.m3aawg.org/)
     
-- [オンラインの信頼のパートナー](https://www.otalliance.org/resources)
+- [オンラインの信頼アライアンス](https://www.otalliance.org/resources)
     
 - [Email Sender &amp; Provider Coalition](http://www.espcoalition.org/)
     
 ## <a name="abuse-and-spam-reporting"></a>迷惑行為とスパムの報告
 <a name="AbuseSpamReports"> </a>
 
-違法、不適切な発言、不要なまたは悪意のある電子メールを報告するには、[レポートを web 上の Outlook での電子メールやフィッシング詐欺の迷惑メール](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)をしてください。これらのタイプの通信を送信するマイクロソフトのポリシーに違反し、適切な動作が確認済みのレポートで行われます。
+迷惑メールや不適切な迷惑メールを報告するには、 [Outlook on the web で迷惑メールとフィッシング詐欺を報告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)してください。 これらの種類の通信を送信することは、Microsoft ポリシーに違反するものであり、確認レポートに基づいて適切な処置が取られます。
   
 ## <a name="law-enforcement"></a>法的処置
 <a name="sectionSection7"> </a>

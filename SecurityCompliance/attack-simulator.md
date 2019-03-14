@@ -15,19 +15,19 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Office 365 のグローバル管理者として、攻撃シミュレータを使用して、組織内で現実的な攻撃シナリオを実行できます。 これは、実際の攻撃によってビジネスに遭遇する前に、脆弱性のあるユーザーを特定して見つけるのに役立ちます。
-ms.openlocfilehash: 8cbe3c5c34bbc68fc89c8550d9711d953dced9b5
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 1956dd2dda187b9d1d0147911dd278e8ae3650b3
+ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524061"
+ms.locfileid: "30536157"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 の攻撃シミュレータ
 
 **概要**office 365 のグローバル管理者であり、組織に[office 365 の脅威の調査と応答の capabilties](office-365-ti.md)がある場合は、攻撃シミュレータを使用して、組織内で現実的な攻撃シナリオを実行できます。 これは、実際の攻撃が下の回線に影響を与える前に、脆弱性のあるユーザーを特定して見つけるのに役立ちます。 詳細については、この記事をお読みください。
 
 > [!IMPORTANT]
-> office 365 脅威インテリジェンスは、追加の脅威保護機能を備えた office 365 Advanced threat protection プラン2の一部になっています。 詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
+> office 365 advanced threat protection および脅威の調査と応答 (以前は脅威インテリジェンス) が office 365 advanced threat protection プラン2の一部になっており、追加の脅威保護機能を備えています。 詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
   
 ## <a name="the-attacks"></a>攻撃
 

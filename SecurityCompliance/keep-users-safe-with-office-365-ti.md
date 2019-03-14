@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Office 365 の脅威調査および応答機能を使用して、組織が侵入や脅威を検出し、脅威から迅速に脅威を軽減および回復する方法について説明します。
-ms.openlocfilehash: 4cb1355e841ee4b416bf5471872421b4c05433c5
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 924ec3522b056b267f5e8af394f380aaff8392a2
+ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524031"
+ms.locfileid: "30536137"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>office 365 のユーザーに office 365 の脅威の調査と応答機能を安全に保つ
 
@@ -31,7 +31,7 @@ ms.locfileid: "30524031"
 [office 365 の脅威の調査と応答](office-365-ti.md)は、office 365 E5 サブスクリプションに含まれる一連の機能です。 Office 365 の脅威の調査と応答の機能により、Microsoft IT は、過去2四半期と比較して、ソーシャルエンジニアリングインシデントの解決に要する平均時間を 80% 削減し、1か月あたりの処理速度を 37% 増加させました。 
 
 > [!IMPORTANT]
-> office 365 advanced threat protection および脅威インテリジェンスは、追加の脅威保護機能を備えた office 365 advanced threat protection プラン2の一部になっています。 詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
+> office 365 advanced threat protection および脅威の調査と応答 (旧称 office 365 Threat 知能) は、追加の脅威保護機能を備えた office 365 advanced threat protection プラン2の一部になっています。 詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
   
 最近、新しい機能を追加して、脅威を検出して回復する方法を改善しました。 この記事では、更新された脅威の調査と応答の機能をさらに効率的にする方法について簡単に説明します。
   
@@ -60,7 +60,7 @@ ms.locfileid: "30524031"
 Office 365 の脅威の調査と応答機能には、Microsoft インテリジェントセキュリティグラフからのデータが使用されています。 グラフは、10億の Windows デバイス、4500億月の Azure ログイン、および Office 365 の4000億の電子メールメッセージから最新の脅威信号を取得します。 この unrivaled の脅威の信号は、管理者およびセキュリティアナリストが組織に影響を与える脅威を完全に把握するために不可欠な、顧客のテナントに対する広範な可視性を提供します。 
   
    
-## <a name="why-threat-intelligence"></a>脅威インテリジェンスの理由
+## <a name="why-use-office-365-threat-investigation-and-response-capabilities"></a>Office 365 の脅威の調査および応答機能を使用する理由
 
 2017が $ 90b を超えた場合、Gartner の推定は cybersecurity に費やされました。 Sid deshpande、Gartner の主な研究アナリストは、「the the the the the the the the the the the the the the the the the the the the the the the the the the the the the」と言っています。 検出/応答機能に関連付けられていない限り、futile が無効であることを示すメッセージを送信します。 脅威 investigtion と応答は、すべての企業のサービスポートフォリオの重要な部分であり、スタンドアロンサービスとして、または Office 365 E5 の一部として使用できます。
   

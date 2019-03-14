@@ -8,17 +8,18 @@ ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーでは、コンテンツを保持するか、コンテンツを削除するか、またはコンテンツを保持して後に削除するかを事前に決定できます。さらに、1 つのポリシーを組織全体に適用するか、特定の場所やユーザーにのみ適用するか、すべてのコンテンツにポリシーを適用するか、特定の条件を満たしているコンテンツのみにポリシーを適用するかも事前に決定できます。
-ms.openlocfilehash: b09f879779b0209944c37dd70df4786b26d7a4bd
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 82125d13adfb42706a44feeaca3dfb85e06163f6
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410942"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455449"
 ---
 # <a name="overview-of-retention-policies"></a>アイテム保持ポリシーの概要
 

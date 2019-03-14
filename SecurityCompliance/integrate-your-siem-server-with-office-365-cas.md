@@ -11,13 +11,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
-description: SIEM サーバーを Office 365 Cloud App Security と統合することができます。この記事では、機能の概要と設定方法について説明します。
-ms.openlocfilehash: b4baeda3cb836c0b1aa528d29176bbf4321d1fe2
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: SIEM サーバーを Office 365 Cloud App Security と統合することができます。 この記事では、機能の概要と設定方法について説明します。
+ms.openlocfilehash: 82b5e0e6467bd42acba3c40d67e4e0363a7e0f72
+ms.sourcegitcommit: 4abcc03497478abf1ae7fc84792f44360d8e59c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215877"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "30548587"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>SIEM サーバーと Office 365 Cloud App Security を統合する
   
@@ -27,13 +27,13 @@ ms.locfileid: "30215877"
    
 ## <a name="overview-and-prerequisites"></a>概要と前提条件
 
-[Office 365 Cloud App security](get-ready-for-office-365-cas.md)をセキュリティ情報およびイベント管理 (SIEM) サーバーと統合して、アラートの集中監視を有効にすることができます。これは、クラウドサービスとオンプレミスのサーバーアプリケーションを使用している組織に特に便利です。SIEM サーバーとの統合により、セキュリティチームは、通常のセキュリティワークフローを維持しながら、特定のセキュリティの手順を自動化し、クラウドベースのイベントとオンプレミスのイベントを関連付けることにより、Office 365 アプリケーションをより適切に保護することができます。  
+[Office 365 Cloud App security](get-ready-for-office-365-cas.md)をセキュリティ情報およびイベント管理 (SIEM) サーバーと統合して、アラートの集中監視を有効にすることができます。 これは、クラウドサービスとオンプレミスのサーバーアプリケーションを使用している組織に特に便利です。 SIEM サーバーを統合して、Office 365 Cloud App Security から SIEM サーバーに通知とアクティビティを取得することができます。 SIEM サーバーとの統合により、セキュリティチームは、通常のセキュリティワークフローを維持しながら、特定のセキュリティの手順を自動化し、クラウドベースのイベントとオンプレミスのイベントを関連付けることにより、Office 365 アプリケーションをより適切に保護することができます。  
   
-最初に SIEM サーバーを Office 365 Cloud App Security と統合すると、過去2日以内の通知が SIEM サーバーに転送されます。さらに、選択したフィルターに基づいて、その後のすべての通知が送信されます。さらに、この機能を長期に対して無効にした場合、再度有効にすると、過去2日間の通知を転送した後、その後にすべての通知が送信されます。
+最初に SIEM サーバーを Office 365 Cloud App Security と統合すると、過去2日以内の通知が SIEM サーバーに転送されます。さらに、選択したフィルターに基づいて、その後のすべての通知が送信されます。 さらに、この機能を長期に対して無効にした場合、再度有効にすると、過去2日間の通知を転送した後、その後にすべての通知が送信されます。
 
 ### <a name="siem-integration-architecture"></a>SIEM 統合アーキテクチャ
 
-組織のネットワークに SIEM エージェントが設定されている。SIEM エージェントは、を展開して構成すると、Office 365 Cloud App Security RESTful api を使用して構成されたデータ型 (警告) を取得します。その後、トラフィックはポート443上の暗号化された HTTPS チャネルを介して送信されます。
+組織のネットワークに SIEM エージェントが設定されている。 SIEM エージェントは、を展開して構成すると、Office 365 Cloud App Security RESTful api を使用して構成されたデータ型 (警告) を取得します。 その後、トラフィックはポート443上の暗号化された HTTPS チャネルを介して送信されます。
   
 SIEM エージェントは、Office 365 Cloud App Security からデータを取得するときに、セットアップ時に提供されたネットワーク構成 (カスタムポートを使用する TCP または UDP) を使用して、Syslog メッセージをローカルの SIEM サーバーに送信します。
 
@@ -47,7 +47,7 @@ Office 365 Cloud App Security は現在、次の SIEM サーバーをサポー�
 
 ### <a name="prerequisites"></a>前提条件
 
-- この記事で説明されているタスクを実行するには、全体管理者またはセキュリティ管理者である必要があります。[Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可を参照する](permissions-in-the-security-and-compliance-center.md)
+- この記事で説明されているタスクを実行するには、全体管理者またはセキュリティ管理者である必要があります。 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可を参照する](permissions-in-the-security-and-compliance-center.md)
 
 - 組織に対し[て Office 365 Cloud App Security が有効になっ](turn-on-office-365-cas.md)ている必要があります。
 
@@ -61,7 +61,7 @@ Office 365 Cloud App Security は現在、次の SIEM サーバーをサポー�
     - [Oracle Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html)のインストール
     - 「[ネットワーク要件](https://docs.microsoft.com/cloud-app-security/network-requirements)」の説明に従って構成されたファイアウォール
 
-- **リモート syslog ホスト**および**syslot ポート番号**についての詳細を確認する必要があります。ネットワーク管理者またはセキュリティ管理者は、その情報を検索できるようにする必要があります。 
+- **リモート syslog ホスト**および**syslot ポート番号**についての詳細を確認する必要があります。 ネットワーク管理者またはセキュリティ管理者は、その情報を検索できるようにする必要があります。 
 
 - SIEM サーバーを統合するために必要な[JAR ファイル](https://go.microsoft.com/fwlink/?linkid=838596)をダウンロードするには、[ソフトウェアライセンス条項](https://go.microsoft.com/fwlink/?linkid=862491)に同意する必要があります。
  
@@ -76,26 +76,27 @@ Office 365 Cloud App Security は現在、次の SIEM サーバーをサポー�
     
 4. [**ウィザードの開始**] を選択します。<br/>![ヘルプを表示する、またはウィザードを開始する](media/HelpOrWizard.png) 
     
-5. **一般的**な手順で、名前を指定し、 **SIEM 形式を選択**して、その形式に関連する**詳細設定**を設定します。[**次へ**] を選択します。<br/>![名前と種類を指定する](media/ChooseAgentTypeAndName.png)
+5. **一般的**な手順で、名前を指定し、 **SIEM 形式を選択**して、その形式に関連する**詳細設定**を設定します。 [**次へ**] を選択します。<br/>![名前と種類を指定する](media/ChooseAgentTypeAndName.png)
     
-6. syslog の**リモート**ステップで、**リモート syslog ホスト**の IP アドレスまたはホスト名と**syslog ポート番号**を指定します。リモート Syslog プロトコルとして TCP または UDP を選択します。(必要な場合は、ネットワーク管理者またはセキュリティ管理者と協力して、これらの詳細を取得することができます)。[**次へ**] を選択します。<br/>![リモート Syslog の詳細を指定する](media/ArcSightS1Syslog.png)
+6. syslog の**リモート**ステップで、**リモート syslog ホスト**の IP アドレスまたはホスト名と**syslog ポート番号**を指定します。 リモート Syslog プロトコルとして TCP または UDP を選択します。 (必要な場合は、ネットワーク管理者またはセキュリティ管理者と協力して、これらの詳細を取得することができます)。[**次へ**] を選択します。<br/>![リモート Syslog の詳細を指定する](media/ArcSightS1Syslog.png)
   
 7. [**データ型**] ステップで、次のいずれかの操作を行い、[**次へ**] をクリックします。
-    - **すべての通知**の既定の設定を保持する<br/>または
-    - [**すべての通知**] をクリックし、[**特定のフィルター**] を選択します。SIEM サーバーに送信する通知の種類を選択するためのフィルターを定義します。<br/>![ウィザードの [データ型] の手順](media/ArcSightS1ExportOptions.png)
+    - **すべての通知**の既定の設定を保持する<br/>OR
+    - [**すべての通知**] をクリックし、[**特定のフィルター**] を選択します。 SIEM サーバーに送信する通知の種類を選択するためのフィルターを定義します。
+<br/>![ウィザードの [データ型] の手順](media/ArcSightS1ExportOptions.png)
   
 8. [完了] 画面で、トークンをコピーし、後で保存します。<br/>![SIEM エージェント作成画面](media/SIEMAgentFinished.png) 
 
 > [!IMPORTANT]
-> この時点で、Office 365 Cloud App Security で SIEM エージェントをセットアップしましたが、SIEM サーバーの統合はまだ完了していません。次の手順に進んで、SIEM サーバーの統合を続行します。
+> この時点で、Office 365 Cloud App Security で SIEM エージェントをセットアップしましたが、SIEM サーバーの統合はまだ完了していません。 次の手順に進んで、SIEM サーバーの統合を続行します。
 
-[閉じる] をクリックしてウィザードを終了すると、[セキュリティ拡張機能] 画面に、表に追加した SIEM エージェントが表示されます。後で接続されるまで、[**作成済み**] の状態が表示されます。
+[閉じる] をクリックしてウィザードを終了すると、[セキュリティ拡張機能] 画面に、表に追加した SIEM エージェントが表示されます。 後で接続されるまで、[**作成済み**] の状態が表示されます。
 
 ![SIEM エージェントの作成](media/SIEMAgentCreated.png)
     
 ## <a name="step-2-download-a-jar-file-and-run-it-on-your-siem-server"></a>手順 2: JAR ファイルをダウンロードして、SIEM サーバー上で実行する
 
-1. [Microsoft Cloud App Security SIEM エージェント](https://go.microsoft.com/fwlink/?linkid=838596)をダウンロードし、フォルダーを解凍します。(続行するには、[ソフトウェアライセンス条項](https://go.microsoft.com/fwlink/?linkid=862491)に同意する必要があります)。 
+1. [Microsoft Cloud App Security SIEM エージェント](https://go.microsoft.com/fwlink/?linkid=838596)をダウンロードし、フォルダーを解凍します。 (続行するには、[ソフトウェアライセンス条項](https://go.microsoft.com/fwlink/?linkid=862491)に同意する必要があります)。 
     
 2. zip フォルダーから .jar ファイルを抽出し、SIEM サーバー上で実行します。
     
@@ -116,7 +117,7 @@ Office 365 Cloud App Security は現在、次の SIEM サーバーをサポー�
     java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &
     ```
 
-- 角かっこで囲まれたパラメーターはオプションであり、関連する場合にのみ使用してください。次の変数を使用します。
+- 角かっこで囲まれたパラメーターはオプションであり、関連する場合にのみ使用してください。 次の変数を使用します。
 
     - **DIRNAME**は、ローカルエージェントのデバッグログに使用するディレクトリへのパスです。
 
@@ -155,18 +156,18 @@ SIEM サーバーに送信される可能性のある警告ログファイルの
 
 |cef フィールド名  | 説明  |
 |---------|---------|
-|実行     | アラートのタイムスタンプ        |
-|終わり     | アラートのタイムスタンプ        |
+|開始     | アラートのタイムスタンプ        |
+|end     | アラートのタイムスタンプ        |
 |rt     | アラートのタイムスタンプ        |
 |msg     | Office 365 Cloud App Security ポータルに表示されるアラートの説明        |
 |suser     | 通知対象ユーザー        |
 |destinationservicename     | Office 365、SharePoint、OneDrive などの通知元アプリ        |
-|cslabel     | (ラベルの意味は異なります)。通常、ラベルは targetObjects のように、わかりやすいように記述されています。        |
+|cslabel     | (ラベルの意味は異なります)。 通常、ラベルは targetObjects のように、わかりやすいように記述されています。        |
 |cs     | ラベルに対応する情報 (ラベルの例に従って通知を行う対象ユーザーなど)        |
 
 ## <a name="additional-tasks-as-needed"></a>その他のタスク (必要な場合)
 
-SIEM サーバーを構成し、それを Office 365 Cloud App Security と統合した後で、トークンの再生成、SIEM エージェントの編集、または SIEM エージェントの削除が必要になる場合があります。次のセクションでは、これらのタスクを実行する方法について説明します。
+SIEM サーバーを構成し、それを Office 365 Cloud App Security と統合した後で、トークンの再生成、SIEM エージェントの編集、または SIEM エージェントの削除が必要になる場合があります。 次のセクションでは、これらのタスクを実行する方法について説明します。
 
 ### <a name="regenerate-a-token"></a>トークンの再生成
 
@@ -184,7 +185,7 @@ SIEM サーバーを構成し、それを Office 365 Cloud App Security と統�
 
 2. SIEM エージェントの行を見つけます。 
 
-3. 省略記号をクリックしてから、[**編集**] を選択します。(SIEM エージェントを編集する場合は、.jar ファイルを再実行する必要はありませんが、自動的に更新されます)。<br/>![SIEM エージェントを編集するには、省略記号を選択してから、[編集] を選択します。](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
+3. 省略記号をクリックしてから、[**編集**] を選択します。 (SIEM エージェントを編集する場合は、.jar ファイルを再実行する必要はありませんが、自動的に更新されます)。 <br/>![SIEM エージェントを編集するには、省略記号を選択してから、[編集] を選択します。](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
   
 ### <a name="delete-a-siem-agent"></a>SIEM エージェントを削除する
 
@@ -195,7 +196,7 @@ SIEM サーバーを構成し、それを Office 365 Cloud App Security と統�
 3. 省略記号をクリックし、[**削除**] を選択します。<br/>![SIEM エージェントを削除するには、省略記号を選択してから、[削除] を選択します。](media/540b5bdf-5574-4ecc-a7b0-92a499a387d7.png)
 
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Office 365 Cloud App Security 展開後の利用に関する作業](utilization-activities-for-ocas.md)
     

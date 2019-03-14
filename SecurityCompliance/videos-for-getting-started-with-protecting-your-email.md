@@ -1,9 +1,10 @@
 ---
 title: 電子メール保護の入門ビデオ
 ms.author: tracyp
-author: MSFTTracyP
+author: msfttracyp
+ms.reviewer: andypunt
 manager: laurawi
-ms.date: 11/17/2014
+ms.date: 2/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,56 +13,41 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
-ms.collection:
-- M365-security-compliance
-description: 次の一連の入門ビデオは、Exchange Online Protection (EOP) を使用してメールボックスを保護する方法を説明します。これらのビデオは、Exchange Server 2013 などの社内メールボックスを保護している EOP スタンドアロンのお客様と、クラウドでホストされたメールボックスが既定で EOP によって保護されている Exchange Online のお客様を対象とします。
-ms.openlocfilehash: b590ac9bdd12c49a644977573048edac22de21f1
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+description: この入門ドキュメントは、Exchange Online Protection (EOP) といくつかの重要な用語を理解するのに役立ちます。 これは、exchange Online のクラウドホスト型メールボックスを保護している、または exchange Server 2016 などの社内メールボックスを保護している EOP スタンドアロンのお客様に対して適用されます。
+ms.openlocfilehash: f9c966fd2e4ca4788b6400aba337019c49f56b84
+ms.sourcegitcommit: 9403f8f038a9940f1b6299fc7d5c560bb7fbcc41
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275877"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30310007"
 ---
-# <a name="videos-for-getting-started-with-protecting-your-email"></a>電子メール保護の入門ビデオ
+## <a name="what-is-exchange-online-protection-eop"></a>Exchange Online Protection (EOP) とは
 
-次の一連の入門ビデオは、Exchange Online Protection (EOP) を使用してメールボックスを保護する方法を説明します。これらのビデオは、Exchange Server 2013 などの社内メールボックスを保護している EOP スタンドアロンのお客様と、クラウドでホストされたメールボックスが既定で EOP によって保護されている Exchange Online のお客様を対象とします。 
-  
-次の 3 つのビデオは、組織のニーズに合わせてスパム対策の設定を調整する方法を示しています。サービスを使用して組織が受け取る受信メールについては、IP アドレスに基づいて差出人セーフ リストと受信拒否リストを作成すること、およびコンテンツ フィルター設定を構成することが含まれます。また、コンテンツ フィルタリング済みのスパム メッセージまたは検疫に送られているトランスポート ルールに一致するメッセージを見つけて解放する方法、およびサービスの改善に役立つようにスパム メッセージを報告する方法をを示すビデオもあります。
-  
-- EOP で IP 許可一覧と IP 禁止一覧を構成する
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
-  
-    詳細については、「[接続フィルター ポリシーを構成する](configure-the-connection-filter-policy.md)」トピックを参照してください。 
-    
-- EOP におけるスパム コンテンツ フィルターの構成
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
-  
-    詳細については、「[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」トピックを参照してください。 
-    
-- メッセージの検出と検疫からの解放
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/2a78346d-a3ab-4d70-a88e-0c9d562f7545?autoplay=false]
-  
-    詳細については、「[管理者として検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-an-administrator.md)」トピックを参照してください。 
-    
-組織からスパムが送信されていないか監視するために、送信スパム ポリシーを構成することもできます。その方法については、送信スパムのビデオを参照してください。
-  
-- 送信スパム ポリシーの構成
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/1f20d655-0d3d-4141-9cae-e57f5a6cffe8?autoplay=false]
-  
-    詳細については、「[送信スパム ポリシーを構成する](configure-the-outbound-spam-policy.md)」を参照してください。
-    
-サービスによって検出されたマルウェアの処理方法の設定もあり、それについてはマルウェア対策フィルタリングのビデオで説明されています。
-  
-- マルウェア対策ポリシーを構成する
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/12517702-ab48-4df8-a7ff-8eb02aa31724?autoplay=false]
-  
-    詳細については、「[マルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)」のトピックを参照してください。 
-    
-企業ポリシーや規制に基づいて設定した特定の条件によってメッセージをフィルタリングし、経路指定するには、トランスポート ルールの作成方法についてのビデオを参照してください。
-  
-- EOP における Exchange トランスポート ルールの構成
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
-  
-    詳細については、「 [exchange online Protection でのメールフロールール (トランスポートルール)](eop/mail-flow-rules-transport-rules-0.md) EOP を参照してください。 exchange online を使用している場合は、[トランスポートルール](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)」を参照してください。 
-    
+Exchange Online Protection (EOP) は、クラウドベースの電子メールフィルター処理サービスであり、スパムやマルウェアから組織を保護します。 Office 365 にメールボックスがある場合、それらはサービスの一部であるため、EOP によって自動的に保護されます。 これには、Office 365 とオンプレミスの両方にメールボックスがあり、ハイブリッドシナリオとしてよく知られている組織が含まれます。 EOP スタンドアロンは、クラウドにメールボックスを持っていないが、社内メールボックスを保護する必要があるお客様も利用できます。 
 
+EOP は迷惑メールのフィルターを試行し、ユーザーが表示したくないコンテンツを受信トレイがクリアしないようにします。 通常、迷惑メールは [迷惑メール] フォルダーに配信されます。 迷惑メールフォルダーが自分で必要なことを確認するための簡単な方法であることを確認するために、フィルター処理で必要なことを確認することができます。  
+
+> [!TIP]
+> 迷惑メールやその他の不正な電子メールが迷惑メールフォルダーに自動的に送られる場合に適しています。 サービスは、既定またはカスタムの管理者設定の状態に基づいて必要な処理を実行します。 言い換えると、ユーザーは迷惑メールフォルダーに多数のスパムメールを表示することを心配する必要はありません。 管理者がすべての迷惑メールを視界から除外することを希望している場合は、検疫を構成する必要があります。 詳細については、「 [Office で電子メールメッセージを検疫する 365](quarantine-email-messages.md) 」を参照してください。
+
+## <a name="important-terms"></a>重要な用語
+
+**受信:** Office 365 に入ってくるメッセージ
+
+**送信:** Office 365 から出てくるメッセージ。
+
+**内部:** 組織内のユーザーから組織内のユーザーに送信されるメッセージ。 これには、ハイブリッドシナリオと1つのメールボックスがオンプレミスにあり、他のメールボックスがクラウド内に存在する可能性があるユーザーが含まれます。
+
+**False 負 (FN):** スパムやその他の迷惑メールが、受信トレイに正しく送信されません。
+
+**False 陽性 (FP):** 誤ってスパムとしてマークされ、迷惑メールフォルダーまたは検疫に入れられる正当なメッセージ。
+
+**スパム (迷惑メールとも呼ばれます):** これには、商業広告、チェーンレター、政治的メールなどの形式があります。これは、ユーザーが電子メールを送信しようとしたり、不正なコミットを試行したりしているスパムからのサインアップを行わないメールです。
+
+**フィッシング:** フィッシングとは、個人情報の盗難や不正行為を防止するために、個人情報を提供することを目的とする特別な種類のスパムです。 通常、この種類のメッセージには、悪意のあるリンクや添付ファイルが含まれますが、常には含まれません。
+
+**スプーフィング:** スプーフィングとは、スパム送信者が from ヘッダーを偽造して、メッセージが実際のソース以外の人物または別の場所から発信されたように見えるようにすることです。 これはスパムでもかまいませんが、フィッシングユーザーに最もよく使用されます。
+
+**偽装:** この種類のスパムは、送信者アドレスを偽造する方法でもありますが、実際のソースのようになるように名前またはドメインの一部を変更することによって行われます。 たとえば、請求書の "l" が実際には11で、Microsoft の "o" が0という数字に置き換えられていると、Bi11@micr0s0ft.com のようになります。
+
+**Bulk:** 通常、バルクメールはユーザーによって要請されますが、企業が他の企業に情報を販売する際に間接的に発生する場合があります。 通常、ユーザーは大量のメール (newletters) に意図的にサインアップしていますが、後で忘れることはなく、スパムであると考えられます。 バルクメールが送信されると、ユーザーがサインアップするよりも多くの場合、大量メールがスパムになる。

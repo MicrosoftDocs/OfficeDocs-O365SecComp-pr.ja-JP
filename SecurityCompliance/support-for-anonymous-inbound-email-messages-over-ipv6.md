@@ -1,7 +1,7 @@
 ---
 title: IPv6 経由の匿名受信電子メール メッセージのサポート
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: ''
 ms.audience: ITPro
@@ -12,17 +12,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
-description: IPv6 のソースからの匿名のメッセージを Exchange のオンライン保護と Exchange のオンラインのサポートを構成する方法について説明します。
-ms.openlocfilehash: 0d324ce6e0ff0ff9104ef597176b09a5a319abc7
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+ms.collection:
+- M365-security-compliance
+description: exchange online Protection および exchange online の IPv6 ソースからの匿名メッセージのサポートを構成する方法について説明します。
+ms.openlocfilehash: 229ee045d03b3fa4ccb7b4d5e59e1b2b7df6a7d7
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255812"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276357"
 ---
 # <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>IPv6 経由の匿名受信電子メール メッセージのサポート
 
-Exchange オンライン保護 (EOP) および Exchange Online は、トランスポート層セキュリティ (TLS) 経由でメッセージを送信しないユーザーの送信者からの IPv6 通信経由の匿名の受信電子メール メッセージの受信をサポートします。ことができますオプトイン IPv6 経由でマイクロソフトのサポートから Office 365 の管理センターを開くことでこの機能を要求することによってメッセージを受信する[https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home)、**サポート**をクリックし、**新しいサービス要求**) します。しないに IPv6 の場合、IPv4 経由でメッセージを受信する続行するでしょう。
+Exchange Online Protection (EOP) および Exchange Online は、トランスポート層セキュリティ (TLS) 経由でメッセージを送信しない送信者からの IPv6 通信経由の匿名受信電子メール メッセージの受信をサポートしています。 この機能を Microsoft サポートから要求することにより[https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home)、IPv6 経由でメッセージを受信することができます。そのためには、Office 365 管理センターを開き、[**サポート**] をクリックしてから、[**新しいサービスリクエスト**] をクリックします。 IPv6 にオプトインしない場合は、引き続き、IPv4 経由でメッセージを受信することになります。
   
 IPv6 経由でメッセージをサービスに送信する送信者は、次の 2 つの要件を満たす必要があります。
   

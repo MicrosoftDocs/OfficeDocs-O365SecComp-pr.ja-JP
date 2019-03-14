@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: この記事では、偽造された送信者ドメイン (スプーフィングされているドメイン) を使用するフィッシング攻撃に対して Office 365 が軽減される方法について説明します。 これは、メッセージを分析し、標準の電子メール認証方法またはその他の送信者評価手法を使用して認証できないメッセージをブロックすることによって実現されます。 この変更は、Office 365 の組織が公開されるフィッシング攻撃の数を減らすために実装されました。
-ms.openlocfilehash: 422bac2ad5fd0c58928d79467721204b20583fd7
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.openlocfilehash: 377bc75e7538dacab1180045ddfdeb1a2ac32a65
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465484"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492876"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 でのスプーフィング対策保護
 
@@ -253,11 +253,11 @@ To: someone@example.com
   
 メッセージが偽装される方法は複数あります (この記事で前述し[た「異なる種類のスプーフィング間](#differentiating-between-different-types-of-spoofing)の相違」を参照してください)。ただし、Office 365 がこれらのメッセージを扱う方法は、2018年3月現在、これらのメッセージは統合されていません。 次の表は、クロスドメインスプーフィング対策が新しい動作であることを簡単にまとめたものです。 
   
-|**スプーフィングの種類**|**分類**|**セキュリティヒントが追加されましたか?**|**適用対象**|
+|**スプーフィングの種類**|**カテゴリ**|**セキュリティヒントが追加されましたか?**|**適用対象**|
 |:-----|:-----|:-----|:-----|
 |DMARC fail (検疫または拒否)  <br/> |hspm (既定) は、SPM または phsh でもかまいません。  <br/> |いいえ (未完了)  <br/> |すべての Office 365 お客様、Outlook.com  <br/> |
-|自己完結型  <br/> |SPM  <br/> |はい  <br/> |すべての Office 365 組織、Outlook.com  <br/> |
-|クロスドメイン  <br/> |なりすます  <br/> |はい  <br/> |Office 365 Advanced Threat Protection および E5 お客様  <br/> |
+|自己完結型  <br/> |SPM  <br/> |有  <br/> |すべての Office 365 組織、Outlook.com  <br/> |
+|クロスドメイン  <br/> |なりすます  <br/> |有  <br/> |Office 365 Advanced Threat Protection および E5 お客様  <br/> |
 
 ### <a name="changing-your-anti-spoofing-settings"></a>スプーフィング対策の設定を変更する
 
@@ -415,10 +415,10 @@ Exchange Online を使用する組織では、ATP があるかどうかにかか
   
 一般に、メッセージに適用されるポリシーは、CAT (Category) プロパティのスパム対策ヘッダーで識別されます。
   
-|**優先度**|**ポリシー**|**分類**|**管理されている場所**|**適用対象**|
+|**[優先度]**|**ポリシー**|**カテゴリ**|**管理されている場所**|**適用対象**|
 |:-----|:-----|:-----|:-----|:-----|
-|1-d  <br/> |ウェア  <br/> |悪意のある w  <br/> |[マルウェアポリシー](configure-anti-malware-policies.md) <br/> |すべての組織  <br/> |
-|pbm-2  <br/> |フィッシング  <br/> |phsh  <br/> |[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md) <br/> |すべての組織  <br/> |
+|1  <br/> |ウェア  <br/> |悪意のある w  <br/> |[マルウェアポリシー](configure-anti-malware-policies.md) <br/> |すべての組織  <br/> |
+|2  <br/> |フィッシング  <br/> |phsh  <br/> |[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md) <br/> |すべての組織  <br/> |
 |1/3  <br/> |信頼度の高いスパム  <br/> |hspm  <br/> |[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md) <br/> |すべての組織  <br/> |
 |2/4  <br/> |なりすまし  <br/> |なりすます  <br/> |[フィッシング対策ポリシー](https://go.microsoft.com/fwlink/?linkid=864553)、[スプーフィングインテリジェンス](learn-about-spoof-intelligence.md) <br/> |すべての組織  <br/> |
 |5  <br/> |スパム  <br/> |SPM  <br/> |[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md) <br/> |すべての組織  <br/> |
@@ -428,10 +428,10 @@ Exchange Online を使用する組織では、ATP があるかどうかにかか
 
 複数の異なるフィッシング対策ポリシーがある場合は、優先度の高いポリシーが適用されます。 たとえば、次の2つのポリシーがあるとします。
 
-|**ポリシー**|**優先度**|**ユーザー/ドメインの偽装**|**スプーフィング対策**|
+|**ポリシー**|**[優先度]**|**ユーザー/ドメインの偽装**|**スプーフィング対策**|
 |:-----|:-----|:-----|:-----|
-|A  <br/> |1-d  <br/> |オン  <br/> |Off  <br/> |
-|B  <br/> |pbm-2  <br/> |Off  <br/> |オン  <br/> |
+|A  <br/> |1  <br/> |オン  <br/> |Off  <br/> |
+|B  <br/> |2  <br/> |Off  <br/> |オン  <br/> |
 
 メッセージが受信され、スプーフィングとユーザー偽装の両方として識別され、同じユーザーセットがポリシー a およびポリシー B を対象としている場合、メッセージはスプーフィングとして扱われますが、スプーフィング対策がオフになっているため、アクションは適用されません。、なりすましは、ユーザー偽装 (8) よりも高い優先度 (4) で実行されます。
   

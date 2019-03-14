@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 2164ce3d-4d64-4283-b6b1-b81fbe835e8e
 description: コンテンツから機密情報を探すときには、ルールと呼ばれるものの中にその情報を記述する必要があります。データ損失防止 (DLP) には、すぐに利用できる最も一般的な機密情報の種類を表すルールが含まれています。これらのルールを使用するには、それらをポリシーの中に組み込む必要があります。これらの組み込みのルールを組織の特定のニーズに合わせて調整する必要がある場合は、カスタムの機密情報の種類を作成することができます。このトピックでは、クレジット カード情報である可能性のある情報をより幅広い範囲で検出できるように、既存のルール コレクションが入っている XML ファイルをカスタマイズする方法について説明します。
-ms.openlocfilehash: 6ac047bc6d8ce601dd8f582a429c1dd7353aa48e
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 9596fe6aac92dca4d2dd66b5eff13005c5c6724b
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341458"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455429"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>組み込みの機密情報の種類をカスタマイズする
 
@@ -44,7 +44,7 @@ XML をエクスポートするには、[リモート PowerShell を介してセ
      `Set-Content -path "C:\custompath\exportedRules.xml" -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection`
     
     > [!IMPORTANT]
-    > ルール パックが実際に格納されている場所を指定してください。`C:\custompath\` はプレースホルダーです。 
+    > ルール パックが実際に格納されている場所を指定してください。  `C:\custompath\`はプレースホルダーです。 
   
 ## <a name="find-the-rule-that-you-want-to-modify-in-the-xml"></a>変更する必要のあるルールを XML の中から見つける
 

@@ -7,18 +7,19 @@ ms.date: 6/8/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: Priority\
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: 組織の Office 365 の有料サブスクリプションに含まれる、Azure Active Directory にアクセスする方法について説明します。
-ms.openlocfilehash: f5d6c80c02b28ff5f916a55a34ffc4cd869a8663
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 0a8ed74a0e135ae216f33401016a7321ad1a1adf
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217667"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295600"
 ---
 # <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>Office 365 で無料の Azure Active Directory サブスクリプションを使用する
 

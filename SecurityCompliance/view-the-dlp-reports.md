@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 の dlp レポートを使用すると、dlp ポリシーの一致、オーバーライド、誤検知の数をすばやく表示できます。時間の経過と共に、傾向の上下が変化するかどうかを確認します。レポートをさまざまな方法でフィルター処理します。そして、グラフ上の線上の点を選択して詳細を表示します。
-ms.openlocfilehash: 6f97a29b5a80eeff60b13ba4467d44e3ef87b028
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: bd2bc63fa3e2ea08f44ddb3923786010c59e829f
+ms.sourcegitcommit: 173936324ea015d788703440924ec8a9fb0db88b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454849"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30510224"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>データ損失防止のレポートの表示
 
@@ -71,6 +71,16 @@ DLP ポリシーでユーザーによる上書きを許可する場合は、誤�
   
 ![インサイトアイコンをクリックすると、詳細と実行されるアクションが表示されます。](media/51782036-7299-4960-8175-75c2b1637159.png)
   
+## <a name="permissions-for-dlp-reports"></a>DLP レポートのアクセス許可
+
+セキュリティ & コンプライアンスセンターで DLP レポートを表示するには、次のものを割り当てられている必要があります。
+
+- Exchange 管理センターでの**セキュリティリーダー**の役割。 既定では、この役割は Exchange 管理センターの [組織の管理] および [セキュリティリーダー] 役割グループに割り当てられます。
+
+- セキュリティ & コンプライアンスセンターでの**表示のみの DLP コンプライアンス管理**役割。 既定では、この役割は、セキュリティ & コンプライアンスセンターの [コンプライアンス管理者]、[組織の管理]、[セキュリティ管理者]、および [セキュリティリーダー] 役割グループに割り当てられます。
+
+- Exchange 管理センターの [**表示のみの受信者**の役割。 既定では、この役割は、Exchange 管理センターの [コンプライアンス管理]、[組織の管理]、および [表示のみ] 組織の管理役割グループに割り当てられます。
+
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>DLP レポートのコマンドレットを検索する
 
 セキュリティ&amp; /コンプライアンスセンターのほとんどのコマンドレットを使用するには、次のことを行う必要があります。
