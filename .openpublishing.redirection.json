@@ -99,6 +99,11 @@
         "source_path": "securitycompliance/prevent-email-from-being-marked-as-spam-0.md",
         "redirect_url": "https://docs.microsoft.com/office365/SecurityCompliance/prevent-email-from-being-marked-as-spam", 
         "redirect_document_id": true
-    }                                                                                   
+    },
+    {
+        "source_path": "securitycompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email.md",
+        "redirect_url": "https://docs.microsoft.com/office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam", 
+        "redirect_document_id": true
+    }                                                                                       
   ] 
 }
