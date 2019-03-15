@@ -1,9 +1,26 @@
 ---
-title: "Office の安全性のヒントを有効または無効にする" krowley: author: kccross manager: laurawi ms * (日付: 12/05/2018 ms): 管理者送受信: 記事 365:: 管理用の: 通常の検索。 appverid: 
-- MET150: f09668bd-fe1a-4c01-89e3-e88c370e66c7 ms. assetid:
-    - M365-セキュリティ-コンプライアンスの説明: "Office 365 および EOP admins に電子メールメッセージの安全性のヒントを有効にして無効にする方法を教えてください。"
+title: Office 365 で安全性のヒントを有効または無効にする
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 12/05/2018
+ms.audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
+ms.collection:
+- M365-security-compliance
+description: Office 365 と EOP admins に、電子メールメッセージの安全性に関するヒントを有効または無効にする方法を伝えます。
+ms.openlocfilehash: 020ee15676cc2d4dd6156db9e4d50558ff7793f0
+ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573531"
 ---
-
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Office 365 で安全性のヒントを有効または無効にする
 
 Exchange Online Protection (EOP) は、配信する電子メールメッセージに安全なヒントを追加またはスタンプします。 これらの安全なヒントにより、メッセージが安全であることを確認するための視覚的な方法、メッセージが Office 365 によってスパムとしてマークされている場合、メッセージにフィッシング詐欺などの疑わしいものが含まれている場合、または外部画像がある場合は、ブロックされています。 Office 365 と EOP の管理者は、スパムポリシー設定を編集して、Outlook およびその他のデスクトップ電子メールクライアントでの安全なヒントの表示を有効または無効にすることができます。 
