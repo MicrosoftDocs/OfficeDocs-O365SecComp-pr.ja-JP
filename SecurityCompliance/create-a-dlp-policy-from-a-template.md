@@ -1,7 +1,7 @@
 ---
 title: テンプレートからの DLP ポリシーの作成
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'DLP ポリシーの使用を開始する最も簡単で最も一般的な方法は、Office 365 に含まれるいずれかのテンプレートを使用することです。 '
-ms.openlocfilehash: 7e07c79df8ff9b65e2b213b180c607008007550e
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 7ebb2a77e8f1f9fa47882fcbb758b34cd40daee9
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455259"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639104"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>テンプレートから DLP ポリシーを作成する
 

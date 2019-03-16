@@ -1,7 +1,7 @@
 ---
 title: DLP ポリシーの作成、テスト、調整
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'DLP ポリシーの使用を開始する最も簡単で最も一般的な方法は、Office 365 に含まれるいずれかのテンプレートを使用することです。 '
-ms.openlocfilehash: b4a41a3594b52267000f5f272a6048deb5bea64b
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: a025b006810c7f03b44fa9d307e263ba20af0903
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454959"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639094"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>DLP ポリシーの作成、テスト、調整
 
@@ -217,6 +217,6 @@ DLP ポリシーを有効にした後、独自の最終的なテストを実行�
 
 ![コンテンツが制限されているポリシーのヒント](media/DLP-create-test-tune-restrict-warning.png)
 
-## <a name="summary"></a>Summary
+## <a name="summary"></a>概要
 
 データ損失防止ポリシーは、すべての種類の組織に適しています。 一部の DLP ポリシーのテストは、ポリシーヒント、エンドユーザーによる上書き、インシデントレポートなどの制御によって、リスクの低い課題となります。 一部の DLP ポリシーを自動的にテストして、組織内で既に発生している違反の種類を確認してから、誤検知率の低いポリシーを作成し、許可されたものと許可されていないものについてユーザーを教育し、dlp ポリシーをに展開することができます。機関.

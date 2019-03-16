@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Office 365 セキュリティ&amp;コンプライアンスセンターのコンテンツ検索ツールを使用して、Exchange Online メールボックスおよび SharePoint または OneDrive for business サイトで検索できる電子メールとファイルプロパティについて説明します。  '
-ms.openlocfilehash: 49236223392af94a5641a9b319d2168f53bbcc06
-ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
+ms.openlocfilehash: 478f0f7089046cea9a1650fc090e59fc056db8a9
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30354759"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639164"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>コンテンツ検索のキーワード クエリと検索条件
 
@@ -123,11 +123,14 @@ ms.locfileid: "30354759"
 
 ## <a name="searchable-sensitive-data-types"></a>検索可能な機密性の高いデータ型
 
-セキュリティ&amp; /コンプライアンスセンターのコンテンツ検索機能を使用して、SharePoint および OneDrive for business サイトのドキュメントに格納されている機密データ (クレジットカード番号や社会保障番号など) を検索できます。 これを行うには、キーワード`SensitiveType`クエリで、プロパティと機密情報の種類の名前を使用します。 たとえば、クエリ`SensitiveType:"Credit Card Number"`は、クレジットカード番号が含まれるドキュメントを返します。 このクエリ`SensitiveType:"U.S. Social Security Number (SSN)"`は、米国の社会保障番号が含まれるドキュメントを返します。 検索可能な機密性の高いデータ型の一覧を表示する&amp;には、セキュリティ/コンプライアンスセンターの [**分類** \> **機密情報の種類**] に移動します。 または、セキュリティ&amp;コンプライアンスセンターの PowerShell で**set-dlpsensitiveinformationtype**コマンドレットを使用して、機密情報の種類の一覧を表示することもできます。 
+セキュリティ & コンプライアンスセンターのコンテンツ検索機能を使用して、SharePoint および OneDrive for business サイトのドキュメントに格納されている機密データ (クレジットカード番号、社会保障番号など) を検索できます。 これを行うには、キーワード`SensitiveType`クエリで、プロパティと機密情報の種類の名前を使用します。 たとえば、クエリ`SensitiveType:"Credit Card Number"`は、クレジットカード番号が含まれるドキュメントを返します。 このクエリ`SensitiveType:"U.S. Social Security Number (SSN)"`は、米国の社会保障番号が含まれるドキュメントを返します。 検索可能な機密性の高いデータ型の一覧を表示する&amp;には、セキュリティ/コンプライアンスセンターの [**分類** \> **機密情報の種類**] に移動します。 または、セキュリティ&amp;コンプライアンスセンターの PowerShell で**set-dlpsensitiveinformationtype**コマンドレットを使用して、機密情報の種類の一覧を表示することもできます。 
   
 `SensitiveType`プロパティを使用して、組織に対して作成したカスタムの機密情報の種類の名前を検索することもできます (または別の管理者)。 組み込みおよびカスタムの機密情報&amp;を区別するために、セキュリティコンプライアンスセンター (または PowerShell の**Publisher**プロパティ) の [**機密情報の種類**] ページで**publisher**列を使用できることに注意してください。情報の種類。 詳細については、「[カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)」を参照してください。
   
 `SensitiveType`プロパティを使用してクエリを作成する方法の詳細については、「[サイトに保存されている機密データを検索するためのクエリを形成する](form-a-query-to-find-sensitive-data-stored-on-sites.md)」を参照してください。
+
+> [!NOTE]
+> 機密データの種類と`SensitiveType`検索プロパティを使用して、Exchange Online メールボックス内の保存されていない機密データを検索することはできません。 ただし、データ損失防止 (DLP) ポリシーを使用して、機密性の高い電子メールデータを送信中で保護することができます。 詳細については、「[データ損失防止ポリシーの概要](data-loss-prevention-policies.md)」および「[検索して個人データ](search-for-and-find-personal-data.md)を検索する」を参照してください。
   
 ## <a name="search-operators"></a>検索演算子
 
@@ -143,7 +146,7 @@ ms.locfileid: "30354759"
 |NEAR|keyword1 NEAR(n) keyword2|互いに近い単語を含む項目を返します。 n は単語の数と等しくなります。 たとえば、 `best NEAR(5) worst` "最下位" という単語が5単語の "best" に含まれているアイテムを返します。 数値が指定されていない場合、既定の間隔は 8 単語です。 <sup>2</sup>|
 |ONEAR|keyword1 ONEAR(n) keyword2|**near**に似ていますが、指定された順序で互いに近い単語を持つアイテムを返します。 たとえば、" `best ONEAR(5) worst` best" という単語の前に "best" が出現し、2つの単語がそれぞれ互いの5つの単語の中にある場合は、"best" という単語を返します。 数値が指定されていない場合、既定の間隔は 8 単語です。 <sup>2</sup> <br/> > [!NOTE]> メールボックスの検索では、 **onear**演算子はサポートされていません。SharePoint と OneDrive for business サイトを検索する場合にのみ機能します。 同じ検索でメールボックスとサイトを検索していて、クエリに**onear**演算子が含まれている場合、検索では、 **NEAR**演算子を使用している場合と同様にメールボックスアイテムが返されます。 つまり、検索では、単語が出現する順序に関係なく、指定した単語が互いに近くにあるアイテムが返されます。|
 |:|property:value|コロン (:)`property:value`構文では、検索対象のプロパティの値に指定された値が含まれることを指定します。 たとえば、  `recipients:garthf@contoso.com` は garthf@contoso.com に送信されたすべてのメッセージを返します。|
-|=|property=value|**:** 演算子と同じです。|
+|=|プロパティ = 値|**:** 演算子と同じです。|
 |\<|property\<value|検索対象のプロパティが指定の値より小さいことを意味します。<sup>1</sup>|
 |\>|property\>value|検索対象のプロパティが指定の値より大きいことを意味します。<sup>1</sup>|
 |\<=|property\<=value|検索対象のプロパティが特定の値以下であることを意味します。<sup>1</sup>|

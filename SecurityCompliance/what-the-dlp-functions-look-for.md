@@ -1,7 +1,7 @@
 ---
 title: DLP 関数の検索対象
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/18/2016
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密情報の種類では、特定のパターンが検索され、適切な書式設定とチェックサムの適用を確認し、関連するキーワードやその他の情報を検索することによって、corroborate を行います。 この機能の一部は、内部機能によって実行されます。 このトピックでは、定義済みの機密情報の種類がどのように機能するかを理解するために、これらの関数がどのようなものかを説明します。
-ms.openlocfilehash: f64a4f174483b2aa57520991dcf85d13515074fb
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: d0aeb38001f42d9db2b124466b02746ee106b078
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454969"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30638934"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 関数の検索対象
 

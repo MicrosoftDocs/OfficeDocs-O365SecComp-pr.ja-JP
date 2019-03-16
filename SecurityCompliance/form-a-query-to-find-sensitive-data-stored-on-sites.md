@@ -1,7 +1,7 @@
 ---
 title: サイトに保存された機密データを検索するクエリの形成
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint Online でデータ損失防止 (DLP) を使用すると、テナント全体の機密データを含むドキュメントを検出できます。 そのドキュメントが見つかったら、ドキュメントの所有者と連携してデータを保護できます。 このトピックは、機密データを検索するクエリを形成するために役立ちます。
-ms.openlocfilehash: 8ea9622242775e7d411280707a61ba10aa02f4f2
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 91ef057170ef10614d3888e128769129e4c33fb9
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455069"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639134"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>サイトに保存された機密データを検索するクエリの形成
 
@@ -64,9 +64,9 @@ SharePoint の DLP には、LastSensitiveContentScan プロパティも導入さ
 |**Query**|**説明**|
 |:-----|:-----|
 | `SensitiveType:"International Banking Account Number (IBAN)"` <br/> |この名前は長いため、奇妙に見えるかもしれませんが、その機密の種類の正しい名前です。 [機密情報の種類のインベントリ](https://go.microsoft.com/fwlink/?LinkID=509999)から正確な名前を使用していることを確認してください。 組織に対して作成した[カスタムの機密情報の種類](create-a-custom-sensitive-information-type.md)の名前を使用することもできます。  <br/> |
-| ' SensitiveType: "クレジットカード番号|1. 4294967295|1.. 100 "' <br/> |これにより、機密の種類 "クレジットカード番号" に少なくとも1つ一致するドキュメントが返されます。 各範囲の値は、それぞれの最小値と最大値です。 このクエリはより簡単に記述する`SensitiveType:"Credit Card Number"`ことができますが、おもしろいのはどこにありますか。  <br/> |
-| ' SensitiveType: "クレジットカード番号| 5.. 25 "および LastSensitiveContentScan:" 8/11/2018/2018 "' <br/> |これにより、2018年8月11日から2018にスキャンされた5-25 クレジットカード番号を持つドキュメントが返されます。  <br/> |
-| ' SensitiveType: "クレジットカード番号| 5 ~ 25 インチおよび LastSensitiveContentScan: "8/11/2018" NOT fileextension: .xlsx ' (2018) <br/> |これにより、2018年8月11日から2018にスキャンされた5-25 クレジットカード番号を持つドキュメントが返されます。 .xlsx 拡張子を持つファイルは、クエリの結果に含まれていません。  `FileExtension`は、クエリに含めることができる、多くのプロパティの1つです。 詳細については、「[電子情報開示で検索プロパティと演算子を使用する](https://go.microsoft.com/fwlink/?LinkId=510093)」を参照してください。  <br/> |
+| `SensitiveType:"Credit Card Number|1..4294967295|1..100"` <br/> |これにより、機密の種類 "クレジットカード番号" に少なくとも1つ一致するドキュメントが返されます。 各範囲の値は、それぞれの最小値と最大値です。 このクエリはより簡単に記述する`SensitiveType:"Credit Card Number"`ことができますが、おもしろいのはどこにありますか。  <br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018"` <br/> |これにより、2018年8月11日から2018にスキャンされた5-25 クレジットカード番号を持つドキュメントが返されます。  <br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018" NOT FileExtension:XLSX` <br/> |これにより、2018年8月11日から2018にスキャンされた5-25 クレジットカード番号を持つドキュメントが返されます。 .xlsx 拡張子を持つファイルは、クエリの結果に含まれていません。  `FileExtension`は、クエリに含めることができる、多くのプロパティの1つです。 詳細については、「[電子情報開示で検索プロパティと演算子を使用する](https://go.microsoft.com/fwlink/?LinkId=510093)」を参照してください。  <br/> |
 | `SensitiveType:"Credit Card Number" OR SensitiveType:"U.S. Social Security Number (SSN)"` <br/> |クレジット カード番号または社会保障番号が含まれているドキュメントを返します。  <br/> |
    
 ## <a name="examples-of-queries-to-avoid"></a>例
@@ -75,15 +75,15 @@ SharePoint の DLP には、LastSensitiveContentScan プロパティも導入さ
   
 |**サポートされていないクエリ**|**理由**|
 |:-----|:-----|
-| ' SensitiveType: "クレジットカード番号|.."` <br/> |少なくとも 1 つの値を追加する必要があります。  <br/> |
+| `SensitiveType:"Credit Card Number|.."` <br/> |少なくとも 1 つの値を追加する必要があります。  <br/> |
 | `SensitiveType:"NotARule"` <br/> |"notarule" は、有効な機密型名ではありません。 DLP クエリでは、[機密情報の種類が一覧](https://go.microsoft.com/fwlink/?LinkID=509999)に含まれる名前のみが機能します。  <br/> |
-| ' SensitiveType: "クレジットカード番号|0 "' <br/> |0は、範囲内の最小値または最大値のいずれかとしては有効ではありません。  <br/> |
+| `SensitiveType:"Credit Card Number|0"` <br/> |0は、範囲内の最小値または最大値のいずれかとしては有効ではありません。  <br/> |
 | `SensitiveType:"Credit Card Number"` <br/> |"クレジット" と "カード" の間に空白のスペースがあると、クエリが無効になる可能性があります。 [機密情報の種類のインベントリ](https://go.microsoft.com/fwlink/?LinkID=509999)から、厳密に機密性の高い種類名を使用します。  <br/> |
-| ' SensitiveType: "クレジットカード番号|1.. 3 "' <br/> |2つのピリオドの部分は、スペースで区切る必要があります。  <br/> |
-| ' SensitiveType: "クレジットカード番号| |1..|80.. "' <br/> |パイプの区切り文字が多すぎます (|). 代わりに、次の形式に従います。 ' SensitiveType: "クレジットカード番号|1..|80.. "' <br/> |
-| ' SensitiveType: "クレジットカード番号|1..|80.. 101 "' <br/> |信頼度の値はパーセンテージを表しているため、100を超えることはできません。 1 ～ 100 の数値を選択してください。  <br/> |
+| `SensitiveType:"Credit Card Number|1. .3"` <br/> |2つのピリオドの部分は、スペースで区切る必要があります。  <br/> |
+| `SensitiveType:"Credit Card Number| |1..|80.."` <br/> |パイプの区切り文字が多すぎます (|). 代わりに、次の形式に従います。`SensitiveType: "Credit Card Number|1..|80.."` <br/> |
+| `SensitiveType:"Credit Card Number|1..|80..101"` <br/> |信頼度の値はパーセンテージを表しているため、100を超えることはできません。 1 ～ 100 の数値を選択してください。  <br/> |
    
-## <a name="for-more-information"></a>詳細情報
+## <a name="for-more-information"></a>関連情報
 
 [機密情報の種類の検索基準](what-the-sensitive-information-types-look-for.md)
   

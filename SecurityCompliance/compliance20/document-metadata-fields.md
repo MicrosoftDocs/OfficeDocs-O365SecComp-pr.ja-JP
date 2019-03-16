@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7559653c5c92b26535fb3a16ae7dbb442dc0ba97
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: ed252eca2b05f3d44e0c69e5b9649a4d7819e92c
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455409"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639114"
 ---
 # <a name="document-metadata-fields"></a>ドキュメントのメタデータ フィールド
 
 
 |**フィールド名** </br>|**作業セットでの検索と表示の可否** |**ファイルのメタデータパネル** |**出す** |
 |:-------------------------- |:---------------------------------------- |:------------------------|:------------------|
-|Case タグ                  | はい                                             |                         | はい         |
+|Case タグ                  | はい (タグ)                                      |                         | はい         |
 |コンプライアンスラベル          |                                                 |                         | はい         |
 |複合パス              |                                                 |                         | はい         |
 |コンテナー ID               |                                                 |                         | はい         |
@@ -37,11 +37,11 @@ ms.locfileid: "30455409"
 |Deduped 複合パス      |                                                 |                         | はい         |
 |Deduped 保管担当者         |                                                 |                         | はい         |
 |Deduped ファイル id           |                                                 |                         | はい         |
-|Doc 作成者                |                                                 |                         | はい         |
+|Doc 作成者                | はい (作成者) *                                   |                         | はい         |
 |ドキュメントコメント               |                                                 |                         | はい         |
 |Doc company                |                                                 |                         | はい         |
-|ドキュメント作成日           |                                                 |                         | はい         |
-|変更された文書の日付          |                                                 |                         | はい         |
+|ドキュメント作成日           | はい ([ランタイム]) *                              |                         | はい         |
+|変更された文書の日付          | はい (lastModifiedDate) *                         |                         | はい         |
 |Doc キーワード               |                                                 |                         | はい         |
 |ドキュメントの最終保存者          |                                                 |                         | はい         |
 |ドキュメントの更新者            |                                                 |                         | はい         |
@@ -103,10 +103,10 @@ ms.locfileid: "30455409"
 |ND ET attach を除く     |                                                 |                         | はい         |
 |ND ET sort を含む、添付     |                                                 |                         | はい         |
 |ND セット                     |                                                 |                         | はい         |
-|O365 作成者               |                                                 |                         | はい         |
+|O365 作成者               | はい (作成者) *                                   |                         | はい         |
 |O365 の作成者            |                                                 |                         | はい         |
-|O365 の作成日          |                                                 |                         | はい         |
-|O365 日付が変更されました         |                                                 |                         | はい         |
+|O365 の作成日          | はい ([ランタイム]) *                              |                         | はい         |
+|O365 日付が変更されました         | はい (lastModifiedDate) *                         |                         | はい         |
 |O365 更新者           |                                                 |                         | はい         |
 |親ノード                |                                                 |                         | はい         |
 |ピボット ID                   | はい (pivotId)                                   |                         | はい         |
@@ -117,3 +117,8 @@ ms.locfileid: "30455409"
 |類似性のパーセンテージ         |                                                 |                         | はい         |
 |テーマリスト                | はい (一覧)                                |                         | はい         |
 |Word count                 | はい (wordCount)                                 |                         | はい         |
+|関連性スコア (問題)    | はい (relevanceScore_issueNum)                   |                         |             |
+|読み取りの百分位 (問題)    | はい (readPercentile_issueNum)                   |                         |             |
+|関連性タグ (問題)      | はい (relevanceTag_issueNum)                     |                         |             |
+
+  \*これらのフィールドについては、ドキュメント内に埋め込まれた値がある場合、検索によってそれらの値の優先順位が設定されます。それ以外の場合は、O365 から値を表示しようとします。

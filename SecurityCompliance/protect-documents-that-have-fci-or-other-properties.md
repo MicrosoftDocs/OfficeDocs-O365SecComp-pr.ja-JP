@@ -1,7 +1,7 @@
 ---
 title: FCI または他のプロパティが使用されているドキュメントを保護する DLP ポリシーを作成する
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 多くの組織では、Windows Server ファイル分類インフラストラクチャ (fci) の分類プロパティ、SharePoint のドキュメントプロパティ、またはドキュメントプロパティを使用して、機密情報を識別して分類するプロセスが既に存在します。サードパーティ製のシステムによって適用されます。 これが組織を説明している場合は、office 365 で、Windows Server fci または他のシステムによってドキュメントに適用されたプロパティを認識する dlp ポリシーを作成して、特定の fci またはその他の office ドキュメントに dlp ポリシーを適用できるようにすることができます。プロパティの値。
-ms.openlocfilehash: fc1d38f1bf648e02f0e86f7cc11e6dca9f88b540
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b1a5b438714a0c0b91d33a9544c0f26cbd12b4c9
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455179"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639084"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>FCI または他のプロパティが使用されているドキュメントを保護する DLP ポリシーを作成する
 

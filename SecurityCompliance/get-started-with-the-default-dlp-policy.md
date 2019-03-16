@@ -1,7 +1,7 @@
 ---
 title: DLP の既定ポリシーの概要
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 8/10/2017
 ms.audience: Admin
@@ -15,12 +15,12 @@ ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection:
 - M365-security-compliance
 description: 最初のデータ損失防止 (dlp) ポリシーを作成する前に、dlp は既定のポリシーを使用して機密情報を保護するのに役立ちます。 この既定のポリシーとその推奨事項 (以下を参照) は、クレジットカード番号を含む電子メールやドキュメントが組織外のユーザーと共有されたことを通知することにより、機密コンテンツの安全性を確保するのに役立ちます。
-ms.openlocfilehash: d965288a1ea44b1d0cb3d41e24611897a043f535
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: fa48025a7b979ad69c600b21a10fbb62567234c3
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455369"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30638944"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>DLP の既定ポリシーの概要
 

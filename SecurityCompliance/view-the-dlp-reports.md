@@ -1,7 +1,7 @@
 ---
 title: データ損失防止のレポートの表示
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/7/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 の dlp レポートを使用すると、dlp ポリシーの一致、オーバーライド、誤検知の数をすばやく表示できます。時間の経過と共に、傾向の上下が変化するかどうかを確認します。レポートをさまざまな方法でフィルター処理します。そして、グラフ上の線上の点を選択して詳細を表示します。
-ms.openlocfilehash: bd2bc63fa3e2ea08f44ddb3923786010c59e829f
-ms.sourcegitcommit: 173936324ea015d788703440924ec8a9fb0db88b
+ms.openlocfilehash: 447245f945bd777f56cca71320a72a9d9dd8720e
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30510224"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639024"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>データ損失防止のレポートの表示
 

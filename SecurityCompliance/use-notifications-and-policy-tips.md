@@ -1,7 +1,7 @@
 ---
 title: メール通知を送信して、DLP ポリシーのポリシーのヒントを表示する
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 3/21/2018
 ms.audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'ポリシー ヒントは、誰かがコンテンツを使用していて、それが DLP ポリシーと競合している場合に表示される通知または警告です。メール通知とポリシー ヒントを使用して、組織のポリシーに関する認識を高め、ユーザーの教育に役立てることができます。また、業務上の正当な理由がある場合や、ポリシーが誤検知した場合にブロックされないように、ユーザーにポリシーを上書きするオプションを提供することもできます。 '
-ms.openlocfilehash: ad351a4f24ce566a47692c190b455e9e680882ca
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b598b665de3d45846e221ea4c1b5c2f49a659c6b
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455189"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639154"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>メール通知を送信して、DLP ポリシーのポリシーのヒントを表示する
 
@@ -90,7 +90,7 @@ DLP ポリシーのそれぞれのルールで、次のことを行えます。
 - HTML またはトークンを使用して、通知に含まれるテキストをカスタマイズできます。詳細については、次のセクションを参照してください。
     
 > [!NOTE]
->  メール通知は、個別の受信者にのみ送信できます。グループまたは配布リストには送信できません。メール通知をトリガーするのは、新しいコンテンツだけです。既存のコンテンツを編集すると、ポリシー ヒントはトリガーされますが、メール通知はトリガーされません。 
+>  電子メール通知は、グループまたは配布リストではなく、個々の受信者にのみ送信できます。 電子メール通知をトリガーするのは新しいコンテンツだけです。 既存のコンテンツを編集すると、ポリシー ヒントが表示されますが、電子メール通知はトリガーされません。 
   
 ![メール通知オプション](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   
