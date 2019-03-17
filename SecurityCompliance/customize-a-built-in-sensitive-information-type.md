@@ -1,7 +1,7 @@
 ---
 title: 組み込みの機密情報の種類をカスタマイズする
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/25/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツから機密情報を探すときには、ルールと呼ばれるものの中にその情報を記述する必要があります。データ損失防止 (DLP) には、すぐに利用できる最も一般的な機密情報の種類を表すルールが含まれています。これらのルールを使用するには、それらをポリシーの中に組み込む必要があります。これらの組み込みのルールを組織の特定のニーズに合わせて調整する必要がある場合は、カスタムの機密情報の種類を作成することができます。このトピックでは、クレジット カード情報である可能性のある情報をより幅広い範囲で検出できるように、既存のルール コレクションが入っている XML ファイルをカスタマイズする方法について説明します。
-ms.openlocfilehash: 9596fe6aac92dca4d2dd66b5eff13005c5c6724b
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: c0a3fcb86acf1eaa5df72e385b21e8dba9b0d668
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455429"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639074"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>組み込みの機密情報の種類をカスタマイズする
 
@@ -44,7 +44,7 @@ XML をエクスポートするには、[リモート PowerShell を介してセ
      `Set-Content -path "C:\custompath\exportedRules.xml" -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection`
     
     > [!IMPORTANT]
-    > ルール パックが実際に格納されている場所を指定してください。  `C:\custompath\`はプレースホルダーです。 
+    > ルール パックが実際に格納されている場所を指定してください。`C:\custompath\` はプレースホルダーです。 
   
 ## <a name="find-the-rule-that-you-want-to-modify-in-the-xml"></a>変更する必要のあるルールを XML の中から見つける
 
