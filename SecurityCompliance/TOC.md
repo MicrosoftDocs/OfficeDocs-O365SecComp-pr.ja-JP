@@ -106,7 +106,7 @@
 ### [スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)
 ### [接続フィルター ポリシーを構成する](configure-the-connection-filter-policy.md)
 ### [送信スパム ポリシーを構成する](configure-the-outbound-spam-policy.md)
-### [ブロック リストからユーザー、ドメイン、IP アドレスをする](removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email.md)
+### [迷惑メールを送信した後で制限付きユーザー ポータルからユーザーを削除する](removing-user-from-restricted-users-portal-after-spam.md)
 ### [Spam Confidence Level](spam-confidence-levels.md)
 #### [メール フロー ルールを使用して、メッセージの Spam Confidence Level (SCL) を設定する](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 #### [スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)
