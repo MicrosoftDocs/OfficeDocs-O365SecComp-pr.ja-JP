@@ -11,19 +11,19 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: ビジネス要件が変化すると、1 つの Microsoft Exchange Online Protection (EOP) 組織 (テナント) を 2 つの別個の組織に分割したり、2 つの組織を 1 つに併合したり、ドメインや EOP の設定を 1 つの組織から別の組織へ移動したりする必要が生じることがあります。
-ms.openlocfilehash: e2b030064ce180bd7eeebfb281751dc147dca899
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 4cc3c7273a06374050f705f51d6b3d85fa8e037c
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341558"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670592"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>ドメインと設定を 1 つの EOP 組織から別の EOP 組織に移動する
 
 ビジネス要件が変化すると、1 つの Microsoft Exchange Online Protection (EOP) 組織 (テナント) を 2 つの別個の組織に分割したり、2 つの組織を 1 つに併合したり、ドメインや EOP の設定を 1 つの組織から別の組織へ移動したりする必要が生じることがあります。1 つの EOP 組織から別の EOP 組織へ移動するのは難しい作業ですが、いくつかの基本的なリモート Windows PowerShell スクリプトを用意し、少しの準備作業を行えば、比較的短いメンテナンス期間で完了できます。 
   
 > [!NOTE]
->  設定は、EOP standalone (標準) 組織から別の EOP Standard または Exchange Enterprise CAL (EOP Premium) 組織へ、または EOP premium 組織から別の EOP premium 組織にのみ、確実に移動できます。一部のプレミアム機能は EOP Standard 組織ではサポートされていないため、EOP premium 組織から EOP 標準組織への移動は成功しないことがあります。> これらの手順は、EOP filtering のみの組織を対象としています。1つの exchange online 組織から別の exchange online 組織への移行に関するその他の考慮事項があります。Exchange Online 組織は、これらの手順の対象外です。 
+>  設定を確実に移動できるのは、EOP スタンドアロン (Standard) 組織から別の EOP Standard または Exchange Enterprise CAL with Services (EOP Premium) 組織のいずれかへの移動、または EOP Premium 組織から別の EOP Premium 組織への移動だけです。 一部のプレミアム機能は EOP Standard 組織ではサポートされていないため、EOP premium 組織から EOP 標準組織への移動は成功しないことがあります。 >  この記事の指示は、EOP フィルターのみの組織を対象にしています。 1 つの Exchange Online 組織から別の Exchange Online 組織への移動には、追加の考慮事項があります。 Exchange Online 組織は、この記事の指示の適用範囲外です。 
   
 次の例では、Contoso, Ltd. 社を Contoso Suites 社に併合します。次の図は、ドメイン、メール ユーザーとグループ、および設定を、移動元 EOP 組織 (contoso.onmicrosoft.com) から移動先 EOP 組織 (contososuites.onmicrosoft.com) に移動するプロセスを示しています。
   
@@ -58,22 +58,22 @@ ms.locfileid: "30341558"
   
 リモート Windows PowerShell に接続した後、見つけやすい場所に Export というディレクトリを作成し、そのディレクトリに移動します。次に例を示します。
   
-```
+```Powershell
 mkdir C:\EOP\Export
 ```
 
-```
+```Powershell
 cd C:\EOP\Export
 ```
 
-次のスクリプトは、移動元の組織のすべてのメールユーザー、グループ、スパム対策の設定、マルウェア対策の設定、コネクタ、およびメールフロールールを収集するために使用できます。次のテキストをコピーしてメモ帳などのテキストエディターに貼り付け、先ほど作成したエクスポートディレクトリに Source_EOP_Settings という名前でファイルを保存し、次のコマンドを実行します。
+次のスクリプトは、移動元の組織のすべてのメールユーザー、グループ、スパム対策の設定、マルウェア対策の設定、コネクタ、およびメールフロールールを収集するために使用できます。 次のテキストをコピーしてメモ帳などのテキスト エディターに貼り付け、それを先ほど作成した Export ディレクトリに Source_EOP_Settings.ps1 という名前で保存し、次のコマンドを実行してください。
   
-```
+```Powershell
 & "C:\EOP\Export\Source_EOP_Settings.ps1"
 
 ```
 
-```
+```Powershell
 #****************************************************************************
 # Export Domains
 #*****************************************************************************
@@ -141,7 +141,7 @@ Set-Content -Path ".TransportRules.xml" -Value $file.FileData -Encoding Byte
 
 次のコマンドを Export ディレクトリから実行して、移動先の組織の .xml ファイルを更新します。contoso.onmicrosoft.com と contososuites.onmicrosoft.com は、実際の移動元および移動先の組織の名前に置き換えてください。
   
-```
+```Powershell
 $files = ls
 ForEach ($file in $files) { (Get-Content $file.Name) | Foreach-Object {$_ -replace 'contoso.onmicrosoft.com', 'contososuites.onmicrosoft.com'} | Set-Content $file.Name}
 ```
@@ -150,13 +150,13 @@ ForEach ($file in $files) { (Get-Content $file.Name) | Foreach-Object {$_ -repla
 
 次のスクリプトを使用して、移動先の組織にドメインを追加します。テキストをコピーしてメモ帳などのテキスト エディターに貼り付け、スクリプトを C:\EOP\Export\Add_Domains.ps1 として保存し、次のコマンドを実行してください。
   
-```
+```Powershell
 &amp; "C:\EOP\Export\Add_Domains.ps1"
 ```
 
 これらのドメインは検証されず、メールのルーティングには使用できませんが、ドメインを追加した後、ドメインを検証するために必要な情報を収集し、最終的には新しいテナントに合わせて MX レコードを更新できます。
   
-```
+```Powershell
 #***********************************************************************
 # Login to Azure Active Directory
 #*****************************************************************************
@@ -172,9 +172,9 @@ Foreach ($domain in $Domains) {
 
 ```
 
-この時点で、移動先の組織の Office 365 管理センターからの情報を検討して収集し、タイミングを見計らってドメインを手早く検証することができます。
+次に、必要な時間にドメインを迅速に検証できるように、移行先の組織の Microsoft 365 管理センターから情報を調べて収集できるようになりました。
   
-1. [https://portal.office.com](https://portal.office.com) の Office 365 管理センターにサインインします。
+1. Microsoft 365 管理センターにサインイン[https://portal.office.com](https://portal.office.com)します。
     
 2. **[ドメイン]** をクリックします。
     
@@ -203,11 +203,11 @@ DNS の構成の詳細については、「[Office 365 の DNS レコードを�
 
 次のスクリプトでは、Azure Active Directory のリモート Windows PowerShell を使用して、移動元のテナントからユーザー、グループ、およびドメインを削除します。次のテキストをコピーしてメモ帳などのテキスト エディターに貼り付け、ファイルを C:\EOP\Export\Remove_Users_and_Groups.ps1 として保存し、次のコマンドを実行してください。
   
-```
-&amp; "C:\EOP\Export\Remove_Users_and_Groups.ps1"
+```Powershell
+& "C:\EOP\Export\Remove_Users_and_Groups.ps1"
 ```
 
-```
+```Powershell
 #*****************************************************************************
 # Login to Azure Active Directory
 #*****************************************************************************
@@ -243,7 +243,7 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>手順 5: 移動先の組織のドメインを検証する
 
-1. [https://portal.office.com](https://portal.office.com) の Office 365 管理センターにサインインします。
+1. の管理センターにサインイン[https://portal.office.com](https://portal.office.com)します。
     
 2. **[ドメイン]** をクリックします。
     
@@ -255,11 +255,11 @@ EOP の場合のベスト プラクティスは、Azure Active Directory を使�
   
 スクリプトを使用するには、次のテキストをコピーしてメモ帳などのテキスト エディターに貼り付け、ファイルを C:\EOP\Export\Add_Users_and_Groups.ps1 として保存し、次のコマンドを実行してください。
   
-```
-&amp; "C:\EOP\Export\Add_Users_and_Groups.ps1"
+```Powershell
+& "C:\EOP\Export\Add_Users_and_Groups.ps1"
 ```
 
-```
+```Powershell
 #***********************************************************************
 # makeparam helper function
 #****************************************************************************
@@ -608,13 +608,13 @@ if($MailContactsCount -gt 0){
   
 次のテキストをコピーしてメモ帳などのテキスト エディターに貼り付け、ファイルを C:\EOP\Export\Import_Settings.ps1 として保存し、次のコマンドを実行してください。
   
-```
-&amp; "C:\EOP\Export\Import_Settings.ps1"
+```Powershell
+& "C:\EOP\Export\Import_Settings.ps1"
 ```
 
-このスクリプトでは, .xml ファイルをインポートして Settings.ps1 という Windows PowerShell スクリプトが作成されます。作成されたスクリプトを検討し編集してから実行し、保護とメール フローの設定を再作成してください。
+このスクリプトでは、.xml ファイルをインポートして Settings.ps1 という Windows PowerShell スクリプトが作成されます。作成されたスクリプトを検討し編集してから実行し、保護とメール フローの設定を再作成してください。
   
-```
+```Powershell
 #***********************************************************************
 # makeparam helper function
 #****************************************************************************
@@ -926,6 +926,6 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>手順 8: DNS 設定を元に戻し、メールをキューに格納する処置を停止する
 
-移行中に送信者がメールをキューに格納するようにするために MX レコードに無効なアドレスを設定した場合は、その設定を、[Office 365 管理センター](https://portal.office.com) で指定した正しい値に戻す必要があります。DNS の構成の詳細については、「 [Office 365 の DNS レコードを作成する](https://go.microsoft.com/fwlink/p/?LinkId=304219)」を参照してください。
+送信中に送信者がメールをキューに入れられるように MX レコードを無効なアドレスに設定することを選択した場合は、[管理センター](https://admin.microsoft.com)で指定されているとおりに正しい値に設定する必要があります。 DNS の構成の詳細については、「 [Office 365 の DNS レコードを作成する](https://go.microsoft.com/fwlink/p/?LinkId=304219)」を参照してください。
   
 

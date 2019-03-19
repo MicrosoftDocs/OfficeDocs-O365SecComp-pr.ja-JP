@@ -15,12 +15,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: このトピックでは、エンドユーザーと管理者向けのトラブルシューティング手順と、支援を得るためのテクニカル サポートへの問合わせ方法について説明します。
-ms.openlocfilehash: d9ff55350487b21325d9a95491fa6861fcc441fd
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 43af048a457835ef16e36c8587f811cb0963bc97
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275997"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670482"
 ---
 # <a name="troubleshooting-and-support-information"></a>トラブルシューティングとサポート情報
 
@@ -87,9 +87,9 @@ ms.locfileid: "30275997"
     
 ## <a name="support-information"></a>サポート情報
 
-アドインのインストール、構成、またはアンインストールに関してサポートが必要な場合は、Office 365 管理センターのサポートページにある [新しいサービスリクエスト] リンクを使用してテクニカルサポートにお問い合わせください。電話およびセルフサポートオプション経由でのサービス要求の提出などのその他のオプションについては、「 [Help and support for EOP](eop/help-and-support-for-eop.md)」を参照してください。
+アドインのインストール、構成、またはアンインストールに関してサポートが必要な場合は、Microsoft 365 管理センターのサポートページにある [新しいサービスリクエスト] リンクを使用してテクニカルサポートにお問い合わせください。 電話およびセルフサポートオプション経由でのサービス要求の提出などのその他のオプションについては、「 [Help and support for EOP](eop/help-and-support-for-eop.md)」を参照してください。
   
-## <a name="for-more-information"></a>詳細情報
+## <a name="for-more-information"></a>関連情報
 
 [レポート メッセージ アドインを有効にする](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
   

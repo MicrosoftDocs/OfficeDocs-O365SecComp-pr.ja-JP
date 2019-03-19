@@ -10,13 +10,13 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
-description: Exchange オンライン保護 (EOP) を使用すると、Exchange 組織用のメールが有効なグループを作成します。メンバーシップ、電子メール アドレス、およびグループの他の側面を指定するグループのプロパティを定義または EOP を使用することもできます。
-ms.openlocfilehash: 1af39e3a55864a9a87f90e0a00957ebf1631bb45
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+description: Exchange Online Protection (EOP) を使用すれば、Exchange 組織のメールが有効なグループを作成できます。 また、EOP を使用してメンバーシップ、電子メール アドレス、グループのその他の側面を指定するグループのプロパティを定義または更新することもできます。
+ms.openlocfilehash: 2e747dc9a26cbbc1ce214107235ccea62f175dd0
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003176"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670462"
 ---
 # <a name="manage-groups-in-eop"></a>EOP でグループを管理する
 
@@ -79,7 +79,7 @@ Exchange 組織では、2 種類のグループを作成できます。
     
 2. 次のいずれかを実行します。
     
-  - グループを編集するのには: グループの一覧でをクリックし、[配布またはセキュリティ グループを表示または変更する] をクリックし、[**編集**] をクリックして![[編集] アイコン](../media/ITPro-EAC-EditIcon.gif)。全般的な設定を更新、追加またはグループの所有者を削除して追加したり、必要に応じて、グループのメンバーを削除できます。
+  - グループを編集するには、グループの一覧で、表示または変更する配布グループまたはセキュリティグループをクリックし、[ **** ![編集] 編集](../media/ITPro-EAC-EditIcon.gif)アイコンをクリックします。 必要に応じて、全般設定を更新したり、グループ所有者を追加または削除したり、グループメンバーを追加または削除したりできます。
     
   - グループを削除するには、次の手順を実行します。グループを選択して、 **[削除]**![[削除] アイコン](../media/ITPro-EAC-RemoveIcon.gif) をクリックします。
     
@@ -93,7 +93,7 @@ Exchange 組織では、2 種類のグループを作成できます。
   
 この例では、コマンドレット [New-EOPDistributionGroup](http://technet.microsoft.com/library/4610dfe5-fca8-4ba8-be3c-535d1753e0f4.aspx) を使用して、エイリアスが「itadmin」、名前が「IT Administrators」の配布グループを作成します。また、ユーザーをグループのメンバーとして追加します。 
   
-```
+```Powershell
 New-EOPDistributionGroup -Type "Distribution" -Name "IT Administrators" -Alias itadmin -Members @("Member1","Member2","Member3") -ManagedBy "Member1"
 
 ```
@@ -102,21 +102,21 @@ New-EOPDistributionGroup -Type "Distribution" -Name "IT Administrators" -Alias i
   
 正常に IT Administrators グループを作成したことを確認するには、コマンドレット [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx) を実行して新しいグループの情報を表示します。 
   
-```
+```Powershell
 Get-Recipient "IT Administrators" | Format-List
 
 ```
 
 グループ内のメンバーの一覧を取得するには、次のようにコマンドレット [Get-DistributionGroupMember](http://technet.microsoft.com/library/15c71bc5-4246-44ac-8b34-8ccd585294b5.aspx) を実行します。 
   
-```
+```Powershell
 Get-DistributionGroupMember "IT Administrators"
 
 ```
 
 すべてのグループの完全な一覧を取得するには、次のように [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx) コマンドレットを実行します。 
   
-```
+```Powershell
 Get-Recipient -RecipientType "MailUniversalDistributionGroup" | FT | more
 
 ```
@@ -129,28 +129,28 @@ Get-Recipient -RecipientType "MailUniversalDistributionGroup" | FT | more
   
 この例では、コマンドレット [Set-EOPDistributionGroup](http://technet.microsoft.com/library/689a66c5-a524-4870-88f3-091fd6eae3b7.aspx) を使用して、シアトルの従業員グループのプライマリ SMTP アドレス (返信アドレスともいう) を sea.employees@contoso.com に変更します。 
   
-```
+```Powershell
 Set-EOPDistributionGroup "Seattle Employees" -PrimarysmptAddress "sea.employees@contoso.com"
 
 ```
 
 グループのプロパティが正常に変更されたことを確認するには、コマンドレット [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx) を使用して変更を確認します。リモートの PowerShell を使用する利点の 1 つは、複数のグループの複数のプロパティを参照できる点です。前にプライマリ SMTP アドレス グループが変更された例で、次のコマンドを実行して新しい値を確認します。 
   
-```
+```Powershell
 Get-Recipient "Seattle Employees" | FL "PrimarySmtpAddress"
 
 ```
 
 この例では、コマンドレット [Update-EOPDistributionGroupMember](http://technet.microsoft.com/library/a6d4f790-1b94-42f8-af6f-fa79c504d8ec.aspx) を使用して、シアトルの従業員グループの全メンバーを更新します。全メンバーをコンマを使用して区切ります。 
   
-```
+```Powershell
 Update-EOPDistributionGroupMember -Identity "Seattle Employees" -Members @("Member1","Member2","Member3","Member4","Member5")
 
 ```
 
 シアトルの従業員グループの全メンバーの一覧を取得するには、次のようにコマンドレット [Get-DistributionGroupMember](http://technet.microsoft.com/library/15c71bc5-4246-44ac-8b34-8ccd585294b5.aspx) を使用します。 
   
-```
+```Powershell
 Get-DistributionGroupMember "Seattle Employees"
 
 ```
@@ -159,14 +159,14 @@ Get-DistributionGroupMember "Seattle Employees"
   
 この例では、コマンドレット [Remove-EOPDistributionGroup](http://technet.microsoft.com/library/a17b1307-3187-40b0-a438-c7b35a34c002.aspx) を使用して、IT Administrators という名前の配布グループを削除します。 
   
-```
+```Powershell
 Remove-EOPDistributionGroup -Identity "IT Administrators" 
 
 ```
 
 グループが削除されたことを確認するには、次のようにコマンドレット [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx) を実行し、グループ (この場合は「IT Administrators」) が削除されたことを確認します。 
   
-```
+```Powershell
 Get-Recipient -RecipientType "MailUniversalDistributionGroup"
 
 ```

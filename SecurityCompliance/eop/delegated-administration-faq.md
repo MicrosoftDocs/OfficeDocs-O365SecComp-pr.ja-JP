@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: このトピックでは、代理で Office 365 の管理タスクを実行する (他のテナント (企業) のために Exchange Online Protection (EOP) を管理する機能を含む) Microsoft パートナーとリセラーを対象に、よく寄せられる質問とその答えを取り上げます。
-ms.openlocfilehash: b6096e835f90a0d5f22a39a5df76e52f1a25a79d
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 61f939932ab221343b67f87dd5c63f6697e70026
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027494"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670442"
 ---
 # <a name="delegated-administration-faq"></a>代理管理の FAQ
 
@@ -24,7 +24,7 @@ ms.locfileid: "22027494"
   
  **Q. わたしはリセラーで、お客様のテナントを管理する必要があります。どのようにしたらいいですか？**
   
-A. Microsoft パートナーまたはリセラーが Microsoft アドバイザーとしてサインアップした場合、Office 365 管理センター内でカスタマーのテナントを管理する権限を要求できます。これを代理管理と呼びます。代理管理では、組織内の管理者と同等に (EOP 設定を含む) Office 365 テナントを管理できます。代理管理を実行するための手順は以下のとおりです。
+A. microsoft のパートナーまたは販売店で、microsoft advisor にサインアップする場合は、管理センター内でテナントを管理するためのアクセス許可を要求できます。 これは委任された管理と呼ばれ、組織内の管理者であるかのように、Office 365 テナント (EOP 設定を含む) を管理することができます。 委任された管理を実行する手順は次のとおりです。
   
 1. [Microsoft Office 365 アドバイザー](https://aka.ms/cloudbenefits) としてサインアップします。
     
@@ -44,6 +44,6 @@ A. 現在、Office 365 にその機能はありません。
   
  **Q. 自分のすべてのサブ テナントを統合したレポートを取得できますか？**
   
-A. 現時点では、Office 365 管理センターのレポートで、自分が管理する企業を横断して統合レポートを作成することはできません。ただしこれは、リモート Windows PowerShell または[レポート Web サービス](https://go.microsoft.com/fwlink/?LinkId=279926)を使用すると実行できます。 
+A. この時点では、管理対象の会社を超えた統合されたレポートは、micrsoft 365 admin center レポートでは使用できません。 ただしこれは、リモート Windows PowerShell または[レポート Web サービス](https://go.microsoft.com/fwlink/?LinkId=279926)を使用すると実行できます。 
   
 

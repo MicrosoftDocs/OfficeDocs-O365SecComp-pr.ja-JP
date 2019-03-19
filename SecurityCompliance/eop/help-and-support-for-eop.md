@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft は、サポート サービスやアシスト サービスを含め、さまざまな場所と方法で EOP のヘルプを提供しています。
-ms.openlocfilehash: af99b029fec25368cafcacef7558eda0dc94af25
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 7321b93f8391a3238535c905b1f9c916278843a9
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027554"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670532"
 ---
 # <a name="help-and-support-for-eop"></a>EOP のヘルプとサポート
 
@@ -38,7 +38,7 @@ ms.locfileid: "22027554"
   
 ## <a name="assisted-support-from-microsoft"></a>Microsoft のアシスト サポート
 
-Office 365 管理センター 内で新しいサービス リクエストを開始するか、電話を掛けることで、Microsoft から支援を得ることができます。プレミア サポートのサブスクライバーには、この他にもサポート オプションがあります。
+microsoft からサポートを受けられるようにするには、microsoft 365 管理センター内で新しいサービスリクエストを開始するか、電話で電話をかけることができます。 プレミア サポートのサブスクライバーには、この他にもサポート オプションがあります。
   
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Microsoft プレミア サポート サブスクライバーのサポート
 
@@ -48,7 +48,7 @@ EOP のユーザーで、Microsoft プレミア サポート契約もしてい�
   
 ### <a name="ask-for-help-on-the-web"></a>Web で支援を依頼する
 
-1. Office 365 管理センター にログインします。
+1. Microsoft 365 管理センターにログインします。
     
 2. **[サポート]** \> **[カスタマー サポートを要求する]** \> **[新しいサービス リクエスト]** の順に移動します。
     
@@ -56,7 +56,7 @@ EOP のユーザーで、Microsoft プレミア サポート契約もしてい�
     
 ### <a name="ask-for-help-on-the-telephone"></a>電話で支援を依頼する
 
-1. Office 365 管理センター にログインします。
+1. Microsoft 365 管理センターにログインします。
     
 2. 一般的な製品の問題の場合は、 **[サポート]** \> **[カスタマー サポートを要求する]** \> **[テクニカル サポートに電話する]** の順に移動します。
     
@@ -81,8 +81,8 @@ Microsoft は、世界中で製品サポート用にローカルまたはフリ�
    
 ## <a name="for-more-information-about-eop-documentation"></a>EOP ドキュメントの詳細について
 
-[サード パーティの著作権に関する通知](third-party-copyright-notices.md)
+[サードパーティの著作権通知](third-party-copyright-notices.md)
   
-[障害のあるユーザー補助機能](accessibility-for-people-with-disabilities.md)
+[障碍がある方のためのユーザー補助機能](accessibility-for-people-with-disabilities.md)
   
 

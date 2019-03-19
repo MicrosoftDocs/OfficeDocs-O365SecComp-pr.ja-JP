@@ -10,13 +10,13 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
-description: このトピックでは、Microsoft Exchange Online Protection (EOP) のセットアップ方法について説明します。Office 365 ドメイン ウィザードからここに移動してきた場合、Exchange Online Protection を使用する必要がなければ Office 365 ドメイン ウィザードに戻ってください。コネクタの構成方法の詳細については、「Configure mail flow using connectors in Office 365」をご覧ください。
-ms.openlocfilehash: 6c9e3becf0f86deeee92ec7cf336bdbd950ac5e2
-ms.sourcegitcommit: f49ab866e21da83a0be6cb23ab7b6b4366a6a7ee
+description: このトピックでは、Microsoft Exchange Online Protection (EOP) のセットアップ方法について説明します。 Office 365 ドメイン ウィザードからここに移動してきた場合、Exchange Online Protection を使用する必要がなければ Office 365 ドメイン ウィザードに戻ってください。 コネクタの構成方法の詳細については、「Configure mail flow using connectors in Office 365」をご覧ください。
+ms.openlocfilehash: 96751f1f68e0b73c1d92b6868e99f4eb1c2739bf
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "25715903"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670612"
 ---
 # <a name="set-up-your-eop-service"></a>EOP サービスを設定する
 
@@ -40,11 +40,11 @@ ms.locfileid: "25715903"
   
 ## <a name="how-do-you-do-this"></a>実行方法
 
-### <a name="step-1-use-the-office-365-admin-center-to-add-and-verify-your-domain"></a>手順 1: Office 365 管理センターを使用してドメインを追加して管理する
+### <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>手順 1: Microsoft 365 管理センターを使用してドメインを追加して確認する
 
-1. Office 365 管理センターで、 **[セットアップ]** に移動して、サービスにドメインを追加します。 
+1. Microsoft 365 管理センターで、[**セットアップ**] に移動して、ドメインをサービスに追加します。 
     
-    Office 365 管理センターの見つけ方がわからない場合、詳細については、「[Office 365 管理センターについて](https://go.microsoft.com/fwlink/p/?LinkId=521888)」をご覧ください。
+    Microsoft 365 管理センターの場所がわからない場合は、どうすればよいですか。 詳細につい[ては、「Microsoft 365 管理センター」を](https://go.microsoft.com/fwlink/p/?LinkId=521888)参照してください。
     
 2. ドメインの所有権を確認するため、以下の手順に従って、適用可能な DNS レコードを DNS ホスティング プロバイダーに追加します。
     
@@ -72,11 +72,11 @@ Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプ
   
 ### <a name="step-5-use-the-shell-to-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>手順 5: シェルを使用してスパムがそれぞれのユーザーの迷惑メール フォルダーにルーティングされることを確認する
 
-スパム (迷惑) メールを各ユーザーの迷惑メール フォルダーに正しくルーティングされることを確認するには、いくつかの構成手順を行う必要があります。[スパムを各ユーザーの迷惑メール フォルダーにルーティングされるようにするの](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)には、手順が用意されています。
+スパム (迷惑) メールがそれぞれのユーザーの迷惑メール フォルダーに正しくルーティングされることを保証するには、一組の構成手順を実行する必要があります。 この手順は、[スパムが各ユーザーの迷惑メールフォルダーにルーティングされるよう](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)にするためのものです。
   
-各ユーザーの迷惑メール フォルダーにメッセージを移動しない場合は、Exchange 管理センターでコンテンツ フィルター ポリシーを編集することによって別のアクションを選択する可能性があります。詳細については、[スパム フィルター ポリシーの構成](../configure-your-spam-filter-policies.md)を参照してください。
+メッセージをそれぞれのユーザーの迷惑メール フォルダーに移動しない場合は、Exchange 管理センターでコンテンツ フィルター ポリシーを編集すると別のアクションを選択できます。 詳細については、「 [スパム フィルター ポリシーの構成](../configure-your-spam-filter-policies.md)」を参照してください。
   
-### <a name="step-6-use-the-office-365-admin-center-to-point-your-mx-record-to-eop"></a>手順 6: Office 365 管理センターを使用して、MX レコードが EOP をポイントするようにする
+### <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>手順 6: Microsoft 365 管理センターを使用して MX レコードを EOP にポイントする
 
 Office 365 ドメイン構成手順に従って、ドメインの MX レコードを更新し、受信メールが EOP 経由で流れるようにします。サード パーティのフィルタリング サービスを通して電子メールを EOP に送るのではなく、MX レコードが直接 EOP をポイントするようにします。詳細については、「[Office 365 の DNS レコードを作成する ](https://go.microsoft.com/fwlink/p/?LinkId=304219)」を参照してください。
   

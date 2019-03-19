@@ -11,25 +11,25 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: メール ユーザーの定義は、Exchange Online Protection (EOP) サービスを管理する上で重要な部分です。
-ms.openlocfilehash: b0093c64a0fcb5997b474e7bd491c0915164b77e
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 9ab4420dd9fcf6c056bc661b5f3646672a89a683
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341028"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670642"
 ---
 # <a name="manage-mail-users-in-eop"></a>EOP でメール ユーザーを管理する
 
 メール ユーザーの定義は、Exchange Online Protection (EOP) サービスを管理する上で重要な部分です。EOP でユーザーを管理するには、いくつかの方法があります。
   
-- ディレクトリ同期を使用してメールユーザーを管理する: 社内の active directory 環境に既存のユーザーアカウントがある場合は、それらのアカウントを Azure active directory (AD) と同期することができます。これにより、アカウントのコピーがクラウドに保存されます。既存のユーザーアカウントを Azure Active Directory と同期する場合は、Exchange 管理センター (EAC) の [**受信者**] ウィンドウで、それらのユーザーを表示できます。ディレクトリ同期の使用をお勧めします。 
+- ディレクトリ同期を使用してメールユーザーを管理する: 社内の active directory 環境に既存のユーザーアカウントがある場合は、それらのアカウントを Azure active directory (AD) と同期することができます。これにより、アカウントのコピーがクラウドに保存されます。 既存のユーザーアカウントを Azure Active Directory と同期する場合は、Exchange 管理センター (EAC) の [**受信者**] ウィンドウで、それらのユーザーを表示できます。 ディレクトリ同期の使用をお勧めします。 
     
-- EAC を使用してメール ユーザーを管理する: EAC で直接メール ユーザーを追加して管理します。これは、メール ユーザーを追加する最も簡単な方法で、一度に 1 ユーザーを追加する場合に役立ちます。
+- EAC を使用してメール ユーザーを管理する: EAC で直接メール ユーザーを追加して管理します。 これは、メール ユーザーを追加する最も簡単な方法で、一度に 1 ユーザーを追加する場合に役立ちます。
     
-- リモートの Windows PowerShell を使用してメール ユーザーを管理するには: リモートの Windows PowerShell を実行してメール ユーザーを追加し、管理します。このメソッドは、複数のレコードの追加およびスクリプトの作成に役立ちます。
+- リモートの Windows PowerShell を使用してメール ユーザーを管理するには: リモートの Windows PowerShell を実行してメール ユーザーを追加し、管理します。 このメソッドは、複数のレコードの追加およびスクリプトの作成に役立ちます。
     
 > [!NOTE]
-> Office 365 管理センターにユーザーを追加できますが、このユーザーはメールの受信者には使用できません。 
+> Microsoft 365 管理センターでユーザーを追加することはできますが、これらのユーザーをメール受信者として使用することはできません。 
   
 ## <a name="before-you-begin"></a>開始する前に
 
@@ -45,10 +45,10 @@ ms.locfileid: "30341028"
 このセクションでは、ディレクトリ同期を使用して電子メール ユーザーを管理する方法について説明します。
   
 > [!IMPORTANT]
-> ディレクトリ同期を使って受信者を管理する場合でも、Office 365 管理センター でユーザーの追加と管理は可能ですが、これらのユーザーは社内 Active Directory を使った同期の対象になりません。これは、ディレクトリ同期では社内 Active Directory からクラウドへの受信者の同期だけが実行されるためです。 
+> ディレクトリ同期を使用して受信者を管理している場合でも、Microsoft 365 管理センターでユーザーを追加および管理することはできますが、オンプレミスの Active directory と同期されることはありません。 これは、ディレクトリ同期では社内 Active Directory からクラウドへの受信者の同期だけが実行されるためです。 
   
 > [!TIP]
->  次の機能を使用する場合は、ディレクトリ同期を使用することをお勧めします。 > **Outlook の信頼できる差出人と受信拒否リスト**-サービスに同期すると、これらのリストはサービスのスパムフィルタリングよりも優先されます。これにより、ユーザーは、ユーザーごとまたはドメインごとに、自分の信頼できる差出人と受信拒否リストを管理できるようになります。> **directory ベースのエッジブロック (dbeb)** -dbeb の詳細については、「 [Use Directory based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)」を参照してください。>**エンドユーザースパム検疫**-エンドユーザーのスパム検疫にアクセスするには、エンドユーザーが有効な Office 365 ユーザー ID とパスワードを持っている必要があります。社内メールボックスを保護している EOP のお客様は、有効なメールユーザーである必要があります。>**メールフロールール**-ディレクトリ同期を使用すると、既存の Active directory ユーザーとグループがクラウドに自動的にアップロードされ、特定のユーザーを対象とするメールフロールール (トランスポートルールとも呼ばれる) を作成できます。またはグループは、EAC または Exchange Online Protection の PowerShell を使用して手動で追加する必要はありません。[動的配布グループ](https://go.microsoft.com/fwlink/?LinkId=507569)はディレクトリ同期を使用して同期できないことに注意してください。 
+>  次の機能を使用する場合は、ディレクトリ同期を使用することをお勧めします。 > **Outlook の信頼できる差出人と受信拒否リスト**-サービスに同期すると、これらのリストはサービスのスパムフィルタリングよりも優先されます。 これにより、ユーザーは独自の差出人セーフ リストとブロックする差出人リストをユーザー単位またはドメイン単位で管理できます。 > **ディレクトリベースのエッジブロック (dbeb)** -dbeb の詳細については、「 [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)」を参照してください。 > **エンドユーザーのスパム検疫**-エンドユーザーのスパム検疫にアクセスするには、エンドユーザーが有効な Office 365 ユーザー ID とパスワードを持っている必要があります。 社内のメールボックスを保護している EOP のお客様は、有効な電子メール ユーザーである必要があります。 > **メールフロールール**-ディレクトリ同期を使用すると、既存の Active directory ユーザーとグループがクラウドに自動的にアップロードされ、特定のユーザーを対象とするメールフロールール (トランスポートルールとも呼ばれます) を作成できます。または、EAC または Exchange Online Protection の PowerShell を使用して手動で追加する必要のないグループ。 [動的配布グループ](https://go.microsoft.com/fwlink/?LinkId=507569)はディレクトリ同期を使用して同期できないことに注意してください。 
   
  **開始する前に**
   
@@ -101,7 +101,7 @@ ms.locfileid: "30341028"
     
 ### <a name="to-edit-or-remove-a-mail-user-in-the-eac"></a>EAC でメール ユーザーを編集または削除するには
 
-- EAC で、[**受信者** \>の**連絡先**] に移動します。ユーザーの一覧で、表示または変更するユーザーをクリックし、[編集] **** ![編集アイコン](../media/ITPro-EAC-EditIcon.gif)を選択して、必要に応じてユーザーの設定を更新します。ユーザーの名前、エイリアス、または連絡先情報を変更したり、組織内のユーザーの役割に関する詳細情報を記録したりすることができます。ユーザーを選択し、[削除] [ ****![削除] アイコン](../media/ITPro-EAC-RemoveIcon.gif)を選択して削除することもできます。 
+- EAC で、[**受信者** \>の**連絡先**] に移動します。 ユーザーの一覧で、表示または変更するユーザーをクリックし、[編集] **** ![編集アイコン](../media/ITPro-EAC-EditIcon.gif)を選択して、必要に応じてユーザーの設定を更新します。 ユーザーの名前、エイリアス、または連絡先情報を変更したり、組織内のユーザーの役割に関する詳細情報を記録したりすることができます。 ユーザーを選択し、[削除] [ ****![削除] アイコン](../media/ITPro-EAC-RemoveIcon.gif)を選択して削除することもできます。 
     
 ## <a name="use-remote-windows-powershell-to-manage-mail-users"></a>リモートの Windows PowerShell を使用してメール ユーザーを管理するには
 
@@ -133,7 +133,7 @@ ms.locfileid: "30341028"
     
 - パスワードは Pa$$word1 です。
     
-```
+```Powershell
 New-EOPMailUser -LastName Zeng -FirstName Jeffrey -DisplayName "Jeffrey Zeng" -Name Jeffrey -Alias jeffreyz -MicrosoftOnlineServicesID jeffreyz@contoso.onmicrosoft.com -ExternalEmailAddress jeffreyz@tailspintoys.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
 ```
 
@@ -141,7 +141,7 @@ New-EOPMailUser -LastName Zeng -FirstName Jeffrey -DisplayName "Jeffrey Zeng" -N
   
 新しいメール ユーザー Jeffrey Zeng に関する情報を表示するには、次のようにコマンドレット [Get-User](http://technet.microsoft.com/library/2a33c9e6-33da-438c-912d-28ce3f4c9afb.aspx) を実行します。 
   
-```
+```Powershell
 Get-User "Jeffrey Zeng"
 
 ```
@@ -152,13 +152,13 @@ Get-User "Jeffrey Zeng"
   
 この例では、Pilar Pinilla の外部電子メール アドレスを設定します。
   
-```
+```Powershell
 Set-EOPMailUser -Identity "Pilar Pinilla" -EmailAddresses pilarp@tailspintoys.com
 ```
 
 この例では、すべてのメール ユーザーの [会社] プロパティを Contoso に設定します。
   
-```
+```Powershell
 $Recip = Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')}
 $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
 
@@ -168,14 +168,14 @@ $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
   
 前にメール ユーザー Pilar Pinella のプロパティを変更した例で、コマンドレット [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx) を使用して変更を確認します。(複数のメール連絡先に対して複数のプロパティが表示されることに注意してください)。 
   
-```
+```Powershell
 Get-Recipient -Identity "Pilar Pinilla" | Format-List 
 
 ```
 
 前にすべてのメール ユーザーの ［会社］ プロパティを Contoso に設定した例で、次のコマンドを実行して変更を確認します。
   
-```
+```Powershell
 Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')} | Format-List Name,Company
 ```
 
@@ -186,7 +186,7 @@ Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser
   
 この例では、コマンドレット [Remove-EOPMailUser](http://technet.microsoft.com/library/cb91dc26-ed22-4d3c-9f64-df9df1754edb.aspx) を使用してユーザー Jeffrey Zeng を削除します。 
   
-```
+```Powershell
 Remove-EOPMailUser -Identity Jeffrey
 ```
 
@@ -194,7 +194,7 @@ Remove-EOPMailUser -Identity Jeffrey
   
 次のようにコマンドレット [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx) を実行します。ユーザーが存在しないため、エラー メッセージが表示されます。 
   
-```
+```Powershell
 Get-Recipient Jeffrey | fl
 ```
 

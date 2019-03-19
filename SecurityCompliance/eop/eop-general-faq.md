@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: ここでは、Microsoft Exchange Online Protection (EOP) のクラウド ホスト型電子メール フィルター サービスについてよく寄せられる質問を紹介します。その他のよく寄せられる質問 (FAQ) については、以下のリンクを参照してください。
-ms.openlocfilehash: 9a8ac96678e33623803e95998780b4544dec5a78
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 888cf338a3f1767ddd6ba01a2f0f60f2f8794e3e
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027384"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670452"
 ---
 # <a name="eop-general-faq"></a>EOP の一般的な FAQ
 
@@ -24,9 +24,9 @@ ms.locfileid: "22027384"
   
 - [EOP のキューイング、保留、返送されるメッセージに関する FAQ](eop-queued-deferred-and-bounced-messages-faq.md)
     
-- [代理管理の FAQ](delegated-administration-faq.md)
+- [代理管理に関する FAQ](delegated-administration-faq.md)
     
-- [スパム対策の保護に関する FAQ](../anti-spam-protection-faq.md)
+- [スパム対策保護に関する FAQ](../anti-spam-protection-faq.md)
     
 - [Exchange Online の差出人セーフ リストと受信拒否リスト](../safe-sender-and-blocked-sender-lists-faq.md)
     
@@ -64,7 +64,7 @@ A. Office 365 というのは、Office 365 テナントを通じてアクセス�
   
  **Q. EOP には、既知の問題や想定される解決策を見つけることのできる通信ポータルがありますか。新機能についてはどうですか。**
   
-A. Office 365 の管理者センターにこの情報の一部があります。サービス レベル イベントの影響を受けている場合は、Office 365 の管理者センターにサインインした後に通信アラートが (通常はベルのアイコンと共に) 表示されます。その項目を参照して、適切に対応することをお勧めします。
+A. Microsoft 365 管理センターには、この情報がいくつか含まれています。 サービスレベルイベントの影響を受けている場合は、Microsoft 365 管理センターにサインインした後に、通信警告 (通常はベルアイコンが付属) が表示されます。 その項目を参照して、適切に対応することをお勧めします。
   
 EOP の新機能については、「[ビジネス向けの Office 365 ロードマップ](https://office.microsoft.com/en-us/products/office-365-roadmap-FX104343353.aspx)」を参照してください。新機能を調べるためのお勧めの情報源です。[Office ブログ](https://go.microsoft.com/fwlink/p/?LinkId=392724) Web サイトにも新機能に関するブログ記事が投稿されています。 
   
