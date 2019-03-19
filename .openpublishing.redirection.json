@@ -107,7 +107,7 @@
     },
     {
         "source_path": "securitycompliance/eop/exchange-online-protection-ip-addresses.md",
-        "redirect_url": "https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#exchange-online", 
+        "redirect_url": "https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges", 
         "redirect_document_id": false
     }                                                                                              
   ] 
