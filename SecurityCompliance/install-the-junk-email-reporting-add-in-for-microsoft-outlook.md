@@ -7,18 +7,17 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
 ms.collection:
 - M365-security-compliance
 description: この articleSupported LanguagesInstall the 迷惑メール報告アドインをアンインストールします。迷惑メール報告アドインをアンインストールする inFor 詳細情報
-ms.openlocfilehash: b29bd367ca168ff45d983796b8ae6e68ee9df297
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: ee7d1ef3f906c7c03433140c50c5c975f456cb08
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276307"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693016"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Microsoft Outlook 用迷惑メール報告アドインのインストール
   
@@ -26,7 +25,7 @@ ms.locfileid: "30276307"
   
 この (サポートされているすべての言語の) アドインで、Outlook のリボンから直接、迷惑メールを報告できます。英語版アドインには、リボンから直接マイクロソフトにメールの問題を報告するための追加のオプションが含まれています。
   
--   受信したフィッシング詐欺メールを報告してください。 
+-  受信したフィッシング詐欺メールを報告してください。 
     
 - 迷惑メールとして誤って識別されたメールを報告してください。
     
@@ -68,7 +67,7 @@ ms.locfileid: "30276307"
     
 - インストール ユーザー インターフェイスを表示しないサイレント インストールを実行する。インストール スクリプトを実行するコマンドライン オプションを指定します。アドインをインストールする際、GUI インターフェイスでは提供されない追加の構成オプションが使用できます。詳細については、「[サイレント モードで迷惑メール報告アドインをインストールする](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_InstalltheJunkEmailReportingAdd-IninSilentMode)」をご覧ください。
     
-### <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+### <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 Microsoft Outlook 用 Microsoft 迷惑メール報告アドインのインストール要件は次のとおりです。
   
@@ -125,11 +124,11 @@ Microsoft Outlook 用 Microsoft 迷惑メール報告アドインのインスト
     
   - MaxMessageSelection 管理者は、ユーザーが 1 回のクリックで送信する対象として選択できる最大メッセージ数を定義できます。範囲は 1 ～ 50 件で、既定値は 10 件です。
     
-    例: ユーザーが1回のクリックで送信できる最大メッセージ数を16に設定する場合は、インストールコマンドの一部として次のオプションを使用します。`MaxMessageSelection=16`
+    Example: If you want to set the maximum number of messages that can be selected by users for submission in a single click to 16, use the following option as part of the installation command:  `MaxMessageSelection=16`
     
   - BccEmailAddress 管理者は、Bcc 電子メール アドレスを設定することで、ユーザーによるすべての送信のコピーを受信するようにメールボックスを設定できます。メールボックスを設定すると、送信されたすべての電子メールのコピーが BccEmailAddress に送信されます。この設定を行わない場合、既定の設定に Bcc 電子メール アドレスはありません。
     
-    例: すべての送信の Bcc 電子メールアドレスとして junkReports@contoso.com を使用する場合は、次のコマンドを使用します。`BccEmailAddress="junkReports@contoso.com"`
+    Example: If you want to use junkReports@contoso.com as the Bcc email address for all submissions, use the following command:  `BccEmailAddress="junkReports@contoso.com"`
     
     > [!NOTE]
     > セミコロンで区切って入力することで、複数の Bcc 電子メール アドレスを設定できます。例:  `BccEmailAddress="junkReports@contoso.com; hollyd@treyresearch.net"`
@@ -209,7 +208,7 @@ Microsoft Outlook 用 Microsoft 迷惑メール報告アドインのインスト
     
 4. Outlook を再起動して、アドインが Outlook のリボンに表示されていないことを確認します。
     
-## <a name="for-more-information"></a>詳細情報
+## <a name="for-more-information"></a>関連情報
 <a name="sectionSection3"> </a>
 
 [迷惑メール メッセージを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)

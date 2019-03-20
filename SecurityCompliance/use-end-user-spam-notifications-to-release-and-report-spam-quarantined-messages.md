@@ -7,18 +7,17 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
 ms.collection:
 - M365-security-compliance
 description: '検疫済みメールに関するエンドユーザーのスパム通知メッセージを管理者から取得したユーザーは、これらのメッセージに対してこれらの操作を行うことができます。 '
-ms.openlocfilehash: adddd5032e6254b6084a7f6e714859b713815ed2
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: f9a8cdf21dfae631b311651aa2259af2f76d73b8
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341238"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691976"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>エンド ユーザーのスパム通知を使ってスパム検疫済みメッセージを解放して報告する
 
@@ -41,6 +40,6 @@ ms.locfileid: "30341238"
 - **迷惑メールではないと報告** このリンクをクリックすると、メッセージのコピーが分析のために Microsoft に送信されます。スパム チームはメッセージの評価と分析を行い、分析結果に応じてスパム対策フィルター ルールを調整し、そのメッセージの通過を許可します。 
     
 > [!NOTE]
->  メールフロールール (とも呼ばれます) が一致したために検疫されたメッセージは、エンドユーザースパム検疫済みメッセージには含まれません。スパム検疫済みメッセージのみが一覧表示されます。> メッセージを解放して、誤検知 (迷惑メールではない) として報告することができるのは1回だけです。 
+>  メールフロールール (とも呼ばれます) が一致したために検疫されたメッセージは、エンドユーザースパム検疫済みメッセージには含まれません。 スパム検疫済みメッセージのみが列挙されます。 >  メッセージを移動して、それを誤検知 (迷惑メールではない) として報告できるのは一度だけです。 
   
 

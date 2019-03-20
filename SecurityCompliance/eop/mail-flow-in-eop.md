@@ -7,16 +7,15 @@ ms.date: 3/13/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 description: Exchange Online Protection (EOP) のお客様の場合、組織に送信されたすべてのメッセージは EOP を通って従業員に配信されます。クラウド内のすべてのメールボックスを Exchange Online を使用してホストしているか、既存のインフラストラクチャの利用を継続するためなどの理由で、メールボックスを社内でホストしている (いわゆるスタンドアロン シナリオ) かに関係なく、処理のために EOP を通過してから従業員の受信トレイに配信されるメッセージのルーティング方法に関するオプションがあります。
-ms.openlocfilehash: ff5284eafe01a3887fa69fde2b5bcd023ee391db
-ms.sourcegitcommit: 285c58a371e6ab82c40fac3f24530cf3b09d0175
+ms.openlocfilehash: b223efc62ff875ed345ce27a17263b3876829999
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "23002150"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691716"
 ---
 # <a name="mail-flow-in-eop"></a>EOP のメール フロー
 
@@ -36,7 +35,7 @@ EOP はメッセージのルーティング方法の柔軟性を高めます。�
   
 「[Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx)」では、コネクタについて概説し、それを使ってメール ルーティングをカスタマイズする方法を示します。シナリオには、パートナー組織との安全な通信の保証とスマート ホストのセットアップが含まれます。 
   
-各ユーザーの迷惑メール フォルダーに迷惑メールが正しくルーティングされることを確認するには、いくつかの構成手順を行う必要があります。詳細については、[各ユーザーの迷惑メール フォルダーに迷惑メールがルーティングされるようにします](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。メッセージを各ユーザーの迷惑メール フォルダーに移動したくない場合は、Exchange 管理センターでコンテンツ フィルター ポリシーを編集することによって別のアクションができます。詳細については、[スパム フィルター ポリシーの構成](../configure-your-spam-filter-policies.md)を参照してください。
+迷惑メールがそれぞれのユーザーの迷惑メール フォルダーに正しくルーティングされることを保証するには、一組の構成手順を実行する必要があります。 これらは、[スパムが各ユーザーの迷惑メールフォルダーにルーティングされる](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)ことを確認するために詳細に記載されています。 メッセージをそれぞれのユーザーの迷惑メール フォルダーに移動しない場合は、Exchange 管理センターでコンテンツ フィルター ポリシーを編集することによって別のアクションを選択できます。 詳細については、「 [スパム フィルター ポリシーの構成](../configure-your-spam-filter-policies.md)」を参照してください。
   
 ## <a name="verify-mail-flow"></a>メール フローを確認する
 

@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターのエクスプローラー (脅威エクスプローラーとも呼ばれます) について説明します。
-ms.openlocfilehash: 626d827712760aa0b7b6faf75d94f525cfe38dc2
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 0c86792d8ed84b43b28bde31004dc95d2fa2b547
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524011"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693616"
 ---
 # <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターで脅威エクスプローラーを使用する
 
@@ -31,7 +31,7 @@ ms.locfileid: "30524011"
 エクスプローラーを使用するには、 &amp;セキュリティ/コンプライアンスセンターで、[**脅威管理** \> **エクスプローラー**] に移動します。
 
 > [!IMPORTANT]
-> office 365 脅威インテリジェンスは、追加の脅威保護機能を備えた office 365 Advanced threat protection プラン2の一部になっています。 詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
+> office 365 脅威インテリジェンスは office 365 Advanced threat protection プラン2に加えて、追加の脅威保護機能と共に提供されるようになりました。 詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
       
 ## <a name="explorer-overview"></a>エクスプローラーの概要
 

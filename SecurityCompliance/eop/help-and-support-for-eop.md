@@ -7,16 +7,15 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft は、サポート サービスやアシスト サービスを含め、さまざまな場所と方法で EOP のヘルプを提供しています。
-ms.openlocfilehash: 7321b93f8391a3238535c905b1f9c916278843a9
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: 0df74ea3d517a08578099eb03119b23690de655a
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670532"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693536"
 ---
 # <a name="help-and-support-for-eop"></a>EOP のヘルプとサポート
 
@@ -81,7 +80,7 @@ Microsoft は、世界中で製品サポート用にローカルまたはフリ�
    
 ## <a name="for-more-information-about-eop-documentation"></a>EOP ドキュメントの詳細について
 
-[サードパーティの著作権通知](third-party-copyright-notices.md)
+[サード パーティの著作権に関する通知](third-party-copyright-notices.md)
   
 [障碍がある方のためのユーザー補助機能](accessibility-for-people-with-disabilities.md)
   

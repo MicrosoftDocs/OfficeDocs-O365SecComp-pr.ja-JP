@@ -7,7 +7,6 @@ ms.date: 1/7/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: お客様が迷惑メールとバルクメールメッセージの違いを askwhat ことがありますか。このトピックの目的は、exchange online と exchange online Protection (EOP) の両方で使用可能なさまざまなオプションについて説明し、その違いを説明することです。
-ms.openlocfilehash: 877912c94af5d4b399769759189d091c62d50075
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 146cc5654e39441be3544f7ac24bd1300811936f
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275717"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693216"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>迷惑メールとバルク メールの違い
 
@@ -43,6 +42,6 @@ ms.locfileid: "30275717"
   
 ### <a name="enable-bulk-mail-sensitivity-control-in-the-content-filter-policy"></a>コンテンツ フィルター ポリシーのバルク メールの秘密度の制御を有効にします。
 
-バルクメールメッセージに関する会社のポリシーに応じて、管理者はバルクメールを割り当てるしきい値を選択できます。この設定は、EAC のコンテンツフィルターポリシーを使用して構成できます。手順については、「[スパムフィルターポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。しきい値は1-9 から選択できます。1の場合、1はスパムとして最も多くのバルクメールをマークし、9では大量の電子メールを配信することができます。その後、サービスは、メッセージを受信者の迷惑メールフォルダーに送信するなど、構成されたアクションを実行します。 
+バルクメールメッセージに関する会社のポリシーに応じて、管理者はバルクメールを割り当てるしきい値を選択できます。 この設定は、EAC のコンテンツフィルターポリシーを使用して構成できます。 手順については、「[スパムフィルターポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。 しきい値は1-9 から選択できます。1の場合、1はスパムとして最も多くのバルクメールをマークし、9では大量の電子メールを配信することができます。 その後、サービスは、メッセージを受信者の迷惑メールフォルダーに送信するなど、構成されたアクションを実行します。 
   
 

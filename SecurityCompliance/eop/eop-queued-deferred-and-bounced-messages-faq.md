@@ -7,16 +7,15 @@ ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
 description: ここでは、Microsoft Exchange Online Protection (EOP) のフィルター処理中にキューイング、保留、または返送されるメッセージに関してよく寄せられる質問の回答を提供します。
-ms.openlocfilehash: 4b2c902adacd6e72e587aadaceecd22dd0084d85
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: e8fdb07d11a1f540e94b82730eb848a97f51523a
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29686427"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693206"
 ---
 # <a name="eop-queued-deferred-and-bounced-messages-faq"></a>EOP のキューイング、保留、返送されるメッセージに関する FAQ
 
@@ -32,7 +31,7 @@ A. 受信者のサーバーに接続できず、受信者のサーバーから�
   
  **Q. メッセージが保留される期間と再試行の間隔はどのくらいですか?**
   
-A. メッセージ遅延を 2 日間、キューに残ります。メッセージの再試行回数は、受信者のメール システムから返されます、エラーに基づいています。最初のいくつかの繰延は、15 分を 60 分の最大値を何度か再試行間隔を大きく (次の半ダースかそこら) 経由でのそれ以降の再試行で、小さいか。間隔の期間の拡張は、動的で、キューのサイズを内部のメッセージの優先順位などの複数の変数を考慮に入れる。Basic では、15 分は (または小さい) を開始するを展開するから次のいくつかの時間を 60 分の最大にします。
+A. 保留状態のメッセージはキューに 2 日間保持されます。 メッセージの再試行は、受信者のメールシステムから返されたエラーに基づいて行われます。 最初のいくつかの deferrals は15分以内で、以降の再試行 (次の半周期以上) では、複数回の再試行の間隔が最大60分に増加します。 間隔の期間の展開は動的であり、キューのサイズや内部メッセージの優先度などの複数の変数を考慮します。 基本的には、15分 (またはそれ以下) から開始します。その後、次の数時間で最大60分に拡張できます。
   
  **Q. メール サーバーが復元された後、キューイングされたメッセージはどのように配信されますか?**
   

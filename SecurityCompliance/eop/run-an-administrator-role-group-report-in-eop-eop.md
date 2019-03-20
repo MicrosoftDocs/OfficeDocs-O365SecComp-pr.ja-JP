@@ -1,5 +1,5 @@
 ---
-title: 'EOP の管理者の役割グループ レポートを実行します。 '
+title: 'EOP で管理者役割グループ レポートを実行する '
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -7,18 +7,17 @@ ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
-description: 管理者にメンバーを追加または各 Microsoft Exchange Online ・保護 (EOP) ログの管理者の役割グループからメンバーを削除します。
-ms.openlocfilehash: 49311faa4ee54fafa1c05a2314ed2f9d74cbe5a5
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+description: 管理者が管理者の役割グループに対してメンバーを追加または削除すると、Microsoft Exchange Online Protection (EOP) によって各発生がログに記録されます。
+ms.openlocfilehash: 752def771d95fcfbb3f7cbe0bc86a33b3967716d
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027204"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692716"
 ---
-# <a name="run-an-administrator-role-group-report-in-eop"></a>EOP の管理者の役割グループ レポートを実行します。 
+# <a name="run-an-administrator-role-group-report-in-eop"></a>EOP で管理者役割グループ レポートを実行する 
 
  管理者が管理者役割グループに対してメンバーを追加または削除すると、操作のたびに Microsoft Exchange Online Protection (EOP) がその情報をログに記録します。Exchange 管理センターで管理者役割グループ レポートを実行すると、検索結果としてエントリが表示されます。エントリには、影響を受ける役割グループ、誰がいつ役割グループのメンバーシップを変更したか、およびどのメンバーシップが更新されたかが含まれます。このレポートを使用して、組織内のユーザーに割り当てられた管理アクセス許可に対する変更を監視します。
   
@@ -28,7 +27,7 @@ ms.locfileid: "22027204"
     
 - 「この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。必要なアクセス許可の一覧については、以下を参照してください。[EOP の機能アクセス許可](feature-permissions-in-eop.md)」の「レポート」セクション。 
     
-- このトピックの手順で使用可能なキーボード ショートカットについては、「**Exchange 管理センターのキーボード ショートカット**」を参照してください。
+- このトピックの手順で使用可能なキーボード ショートカットについては、「 **Keyboard shortcuts in Exchange 2013**」を参照してください。
     
 > [!TIP]
 > 問題がある場合は、Exchange のフォーラムで質問してください。 次のフォーラムにアクセスしてください。[Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612)、[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)、 または [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)。 

@@ -15,12 +15,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 個々のユーザーまたは組織全体で、outlook および outlook on the web 用のレポートメッセージアドインを有効にする方法について説明します。
-ms.openlocfilehash: aba02855b514f0d631d332623d840f9c65911bd1
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: f2bb79c4c613fdb804d19226fb359124387a678f
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410902"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693386"
 ---
 # <a name="enable-the-report-message-add-in"></a>レポート メッセージ アドインを有効にする
 
@@ -29,12 +29,12 @@ ms.locfileid: "30410902"
 
 ## <a name="overview"></a>概要
 
-outlook 用のレポートメッセージアドインと web 上の outlook を使用すると、ユーザーは、安全であるか悪意のある電子メールであっても、分析のために Microsoft と関連会社に対して、誤った分類されたメールを簡単に報告できます。 Microsoft では、これらの送信を使用して、電子メール保護テクノロジの有効性を向上させています。 さらに、組織が[office 365 Advanced Threat Protection](office-365-atp.md)または[office 365 の脅威インテリジェンス](office-365-ti.md)を使用している場合、レポートメッセージアドインにより、組織のセキュリティチームに対して、確認と更新に使用できる有用な情報が提供されます。セキュリティポリシー。 
+outlook 用のレポートメッセージアドインと web 上の outlook を使用すると、ユーザーは、安全であるか悪意のある電子メールであっても、分析のために Microsoft と関連会社に対して、誤った分類されたメールを簡単に報告できます。 Microsoft では、これらの送信を使用して、電子メール保護テクノロジの有効性を向上させています。 さらに、組織で[Office 365 Advanced Threat Protection プラン 1](office-365-atp.md)または[Plan 2](office-365-ti.md)を使用している場合は、レポートメッセージアドインにより、組織のセキュリティチームに対して、セキュリティポリシーの確認と更新に使用できる有用な情報が提供されます。 
 
 たとえば、ユーザーが大量のメッセージをフィッシングとして報告しているとします。 この情報は、[セキュリティダッシュボード](security-dashboard.md)やその他のレポートに表示されます。 組織のセキュリティチームは、この情報を、フィッシング対策ポリシーの更新が必要になる可能性があることを示すものとして使用できます。 または、レポートメッセージアドインを使用して迷惑メールではないというフラグが付いたメッセージを多数報告している場合は、組織のセキュリティチームが[スパム対策ポリシー](configure-the-anti-spam-policies.md)を調整する必要があります。 
 
 レポートメッセージアドインは、Office 365 サブスクリプションと、次の製品で機能します。
- - Web 上の Outlook
+ - Outlook on the web
  - Outlook 2013 SP1
  - Outlook 2016
  - Outlook 2016 for Mac
@@ -121,7 +121,7 @@ Office 365 の全体管理者または exchange Online 管理者であり、exch
     
 9. [**このルールのモードの選択**] で、[**強制**] を選択します。<br/>![レポートされた各メッセージのコピーを取得するルールを設定する](media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)<br/>
   
-10. [**保存**] を選択します。 
+10. **[保存]** を選択します。 
     
 このルールが設定されている場合、組織内のユーザーがレポートメッセージアドインを使用して電子メールメッセージを報告するたびに、全体管理者、セキュリティ管理者、セキュリティリーダがそのメッセージのコピーを受け取ります。 この情報を使用すると、 [Office 365 の ATP の安全なリンク](atp-safe-links.md)ポリシー、または[スパム対策](anti-spam-protection.md)の設定などのポリシーを設定または調整することができます。 
 

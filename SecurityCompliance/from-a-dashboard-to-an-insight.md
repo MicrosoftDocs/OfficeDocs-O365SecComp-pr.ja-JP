@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 6/4/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +15,12 @@ ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターの推奨されるアクションを使用して、ダッシュボードから洞察に移動する方法について説明します。
-ms.openlocfilehash: 9f241ce52d76744d2bb6f7b789438110c295ee01
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: 732c78b35a60c1686bc382931688dec08080f8c2
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492756"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692666"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>チュートリアル - ダッシュボードからインサイトへの移動
 

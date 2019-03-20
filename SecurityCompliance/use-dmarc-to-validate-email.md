@@ -9,30 +9,29 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.custom: TN2DMC
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Office 365 組織から送信されたメッセージを検証するための、ドメインベースのメッセージ認証、レポート、および準拠 (DMARC) を構成する方法について説明します。
-ms.openlocfilehash: d224acaf6b1d53cdf9ababca87c5880a5499c613
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: de92825726225549fda1b0dc57d737763f273043
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341578"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693406"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>DMARC を使用して Office 365 でメールを検証する
 
-メール送信者を認証し、宛先の電子メールシステムがから送信されたメッセージを信頼していることを確認するために、ドメインベースのメッセージの認証、報告、および準拠 ([DMARC](https://dmarc.org)) は、送信者ポリシーフレームワーク (SPF) および domainkeys で識別されるメール (dkim) と連携して動作します。自分のドメイン。DMARC を SPF と dkim で実装すると、スプーフィングやフィッシング電子メールに対する保護が強化されます。DMARC はメールシステムの受信をサポートしており、SPF または dkim チェックに失敗したドメインから送信されたメッセージの処理を決定します。
+メール送信者を認証し、宛先の電子メールシステムがから送信されたメッセージを信頼していることを確認するために、ドメインベースのメッセージの認証、報告、および準拠 ([DMARC](https://dmarc.org)) は、送信者ポリシーフレームワーク (SPF) および domainkeys で識別されるメール (dkim) と連携して動作します。自分のドメイン。 SPF および DKIM と共に DMARC を実装すると、メールのスプーフィングやフィッシングに対抗する追加の保護が得られます。 DMARC は、電子メールを受信するシステムが、ドメインから送信された SPF チェックまたは DKIM チェックに失敗したメッセージに対して、どのように対応するかを判断する際に役に立ちます。
   
 ## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-office-365"></a>SPF と DMARC が連携して Office 365 の電子メールを保護するしくみ
 <a name="SPFandDMARC"> </a>
 
  電子メール メッセージには、発信者、送信者、またはアドレスが含まれていることがあります。これらのアドレスは、さまざまな目的に使用できます。たとえば、次のアドレスについて考えてみましょう。 
   
-- **"Mail From" アドレス**: 送信者を識別し、配信不能通知など、メッセージの配信に関する問題が発生した場合に、いつ返信を送信するかを指定します。これは、電子メールメッセージの封筒部分に表示され、通常は電子メールアプリケーションによって表示されません。これは、MailFrom アドレスまたは逆パスアドレスと呼ばれることがあります。
+- **"Mail From" アドレス**: 送信者を識別し、配信不能通知など、メッセージの配信に関する問題が発生した場合に、いつ返信を送信するかを指定します。 通常、ユーザーの電子メール アプリケーションには表示されません。 これは、MailFrom アドレスまたは逆パスアドレスと呼ばれることがあります。
     
-- **"from" アドレス**: メールアプリケーションによって差出人アドレスとして表示されるアドレス。このアドレスは、電子メールの作成者を識別します。これは、メッセージの作成を担当するユーザーまたはシステムのメールボックスです。これは、5322.from アドレスと呼ばれることがあります。
+- **"from" アドレス**: メールアプリケーションによって差出人アドレスとして表示されるアドレス。 このアドレスは電子メールの作成者を識別します。 つまり、メッセージを書いた個人またはシステムのメールボックスになります。 これは、 5322.From アドレスとも呼ばれます。
     
 SPF は、DNS TXT レコードを使用して、特定のドメインに対する認証済みの送信側 IP アドレスのリストを提示します。通常、SPF チェックは 5321.MailFrom アドレスに対してのみ実行されます。つまり、単独で SPF を使用すると、5322.From アドレスは認証されないことになります。これは、SPF チェックにパスしていても、5322.From 送信者アドレスがスプーフィングされたメッセージをユーザーが受信するというシナリオの余地を残すことになります。たとえば、次のような SMTP トランスクリプトを考えてみます。
   
@@ -142,13 +141,13 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; pct=100; p=policy"
 
 各部分の意味は次のとおりです。
   
-- *domain*は、保護するドメインです。既定では、このレコードは、ドメインとすべてのサブドメインからのメールを保護します。たとえば、dmarc.contoso.com を指定\_すると、dmarc は、ドメインおよび housewares.contoso.com や plumbing.contoso.com などのすべてのサブドメインからのメールを保護します。 
+- *domain* は、保護対象にするドメインです。 既定では、このレコードは、ドメインとすべてのサブドメインからのメールを保護します。 たとえば、dmarc.contoso.com を指定\_すると、dmarc は、ドメインおよび housewares.contoso.com や plumbing.contoso.com などのすべてのサブドメインからのメールを保護します。 
     
-- *TTL*は常に1時間に相当する必要があります。TTL に使用される単位は、ドメインのレジストラーに応じて時間 (1 時間)、分 (60 分)、または秒 (3600 秒) のいずれかです。 
+- *TTL* は、常に 1 時間に相当する必要があります。TTL に使用される単位は、ドメインのレジストラーに応じて hours (1 時間)、minutes (60 分)、または seconds (3,600 秒) のいずれかになります。 
     
 - *pct = 100*は、このルールが電子メールの 100% で使用されることを示します。
     
-- ** DMARC が失敗した場合に受信側サーバーが従う必要のあるポリシーを指定します。ポリシーは、なし、検疫、または拒否に設定できます。 
+- *policy* では、DMARC に失敗した場合に受信側サーバーが従う必要のあるポリシーを指定します。ポリシーは、なし (none)、検疫 (quarantine)、または拒否 (reject) に設定できます。 
     
 どのオプションを使用するかについては、「[Office 365 で DMARC を実装する際のベスト プラクティス](use-dmarc-to-validate-email.md#DMARCbestpractices)」の概念をよく理解してください。
   
@@ -196,7 +195,7 @@ DMARC は、メール フローの他の部分に影響を与えないように�
 ## <a name="how-office-365-handles-outbound-email-that-fails-dmarc"></a>Office 365 が DMARC に失敗した送信メールを処理する方法
 <a name="outbounddmarcfail"> </a>
 
-メッセージが Office 365 から送信され、DMARC に失敗し、ポリシーが p = quarantine または p = reject に設定されている場合、メッセージは[送信メッセージの高リスク配信プール](high-risk-delivery-pool-for-outbound-messages.md)を経由してルーティングされます。送信メールの上書きはありません。
+メッセージが Office 365 から送信され、DMARC に失敗し、ポリシーが p = quarantine または p = reject に設定されている場合、メッセージは[送信メッセージの高リスク配信プール](high-risk-delivery-pool-for-outbound-messages.md)を経由してルーティングされます。 送信メールの上書きはありません。
   
 DMARC 拒否ポリシー (p=reject) を発行すると、どの顧客も Office 365 ではドメインを偽装できなくなります。メッセージは、サービスを通じたメッセージ送信の中継時に、ドメインの SPF または DKIM をパスできないためです。 ただし、DMARC 拒否ポリシーを発行していても、すべてのメールが Office 365 で認証されている場合、前述の説明どおりに受信メールの一部はスパムとしてのマークが付けられます。それ以外のメールは、SPF を発行していない場合に、サービスを通じて送信を中継するようにしていると拒否されます。 これは、DMARC TXT レコードの作成時に、ドメインの代理としてメールを送信するサーバーの一部の IP アドレスとアプリを含め忘れている場合などに発生します。
   
@@ -223,9 +222,9 @@ contoso.com     3600   IN  MX  0  mail.contoso.com
 contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 ```
 
-すべて、またはほとんどの電子メールは、プライマリ MX であるため、最初に mail.contoso.com にルーティングされ、その後、EOP にルーティングされます。場合によっては、MX レコードとして EOP を一覧表示し、単にメールをルーティングするためにコネクタを接続するだけでもかまいません。EOP は、DMARC 検証を実行するための最初のエントリである必要はありません。すべてのオンプレミス/O365 サーバーが DMARC チェックを行うことができないため、検証を確実にするだけです。 DMARC は、DMARC TXT レコードを設定するときに、顧客のドメインに対して適用する資格がありますが、実際に実行するのは受信側のサーバーである必要があります。 受信側のサーバーとして EOP を設定した場合、EOP は DMARC 強制を行います。
+すべて、またはほとんどのメールは、最初にプライマリ MX である mail.contoso.com にルーティングされてから、EOP にルーティングされます。 場合によっては、MX レコードとして EOP をリストすることさえなく、単にメールをルーティングするようにコネクタを接続していることもあります。 EOP は、DMARC 検証を実行するための最初のエントリである必要はありません。 すべてのオンプレミス/O365 サーバーが DMARC チェックを行うことができないため、検証を確実にするだけです。  DMARC は、DMARC TXT レコードを設定するときに、顧客のドメインに対して適用する資格がありますが、実際に実行するのは受信側のサーバーである必要があります。  受信側のサーバーとして EOP を設定した場合、EOP は DMARC 強制を行います。
   
-## <a name="for-more-information"></a>詳細情報
+## <a name="for-more-information"></a>関連情報
 <a name="sectionSection8"> </a>
 
 DMARC の詳細情報が必要ですか。以下のリソースが役に立ちます。
@@ -238,7 +237,7 @@ DMARC の詳細情報が必要ですか。以下のリソースが役に立ち�
     
 - [DMARC.org](https://dmarc.org) のソースに直接アクセスする。
     
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>関連項目
 <a name="sectionSection8"> </a>
 
 [Office 365 で Sender Policy Framework (SPF) を使用してスプーフィングを防止する方法](how-office-365-uses-spf-to-prevent-spoofing.md)

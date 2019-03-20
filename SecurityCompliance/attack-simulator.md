@@ -15,16 +15,16 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Office 365 のグローバル管理者として、攻撃シミュレータを使用して、組織内で現実的な攻撃シナリオを実行できます。 これは、実際の攻撃によってビジネスに遭遇する前に、脆弱性のあるユーザーを特定して見つけるのに役立ちます。
-ms.openlocfilehash: 1956dd2dda187b9d1d0147911dd278e8ae3650b3
-ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
+ms.openlocfilehash: e372fe3c4cc10c4f96836db394fbccd2f180145a
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30536157"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693666"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 の攻撃シミュレータ
 
-**概要**office 365 のグローバル管理者であり、組織に[office 365 の脅威の調査と応答の capabilties](office-365-ti.md)がある場合は、攻撃シミュレータを使用して、組織内で現実的な攻撃シナリオを実行できます。 これは、実際の攻撃が下の回線に影響を与える前に、脆弱性のあるユーザーを特定して見つけるのに役立ちます。 詳細については、この記事をお読みください。
+**概要**office 365 のグローバル管理者であり、組織に[office 365 の脅威の調査および応答機能](office-365-ti.md)がある場合は、攻撃シミュレータを使用して、組織内で現実的な攻撃シナリオを実行できます。 これは、実際の攻撃が下の回線に影響を与える前に、脆弱性のあるユーザーを特定して見つけるのに役立ちます。 詳細については、この記事をお読みください。
 
 > [!IMPORTANT]
 > office 365 advanced threat protection および脅威の調査と応答 (以前は脅威インテリジェンス) が office 365 advanced threat protection プラン2の一部になっており、追加の脅威保護機能を備えています。 詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
@@ -56,7 +56,7 @@ ms.locfileid: "30536157"
     
 - **少なくとも Office 365 のグローバル管理者アカウントでは、[多要素認証](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)(MFA) が有効になっ**ています。 (組織内のすべてのユーザーに対して MFA が有効になっていることが理想的です)。
  
-- **組織に[Office 365 の脅威インテリジェンス](office-365-ti.md)があり**、セキュリティ&amp;コンプライアンスセンターにアタックシミュレータが表示されています (**脅威管理** \>の**アタックシミュレータ**に移動)。<br/>![脅威管理-アタックシミュレータ](media/ThreatMgmt-AttackSimulator.png)
+- **組織に[Office 365 Advanced Threat Protection プラン 2](office-365-ti.md)があり**、セキュリティ&amp;コンプライアンスセンターでアタックシミュレータが表示されている (**脅威管理** \>の**アタックシミュレータ**に移動)<br/>![脅威管理-アタックシミュレータ](media/ThreatMgmt-AttackSimulator.png)
 
     
 ## <a name="display-name-spear-phishing-attack"></a>表示名スピアー-フィッシング攻撃

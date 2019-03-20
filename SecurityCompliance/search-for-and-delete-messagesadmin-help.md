@@ -8,18 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: 管理者は Search-Mailbox コマンドレットを使って、ユーザーのメールボックスを検索し、メールボックスからメッセージを削除できます。
-ms.openlocfilehash: 718a23f649843420ccfd924be72752a99278da4c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: abf7e7f39fe719ecc6c23565e284c01aed8822ee
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30297130"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693486"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>メッセージを検索して削除する - 管理者向けヘルプ
   
@@ -31,25 +30,25 @@ ms.locfileid: "30297130"
   
 ## <a name="before-you-begin"></a>はじめに
 
-- 予想所要時間 : 10 分。実際の時間は、メールボックスのサイズと検索クエリによって異なる場合があります。
+- 予想所要時間 : 10 分。実際の時間は、メールボックスのサイズと検索クエリによって異なる場合があります。
     
 - Exchange 管理センター (EAC) を使用して、これらの手順を実行することはできません。シェルを使用する必要があります。
     
 - ユーザーのメールボックスにあるメッセージを検索し、削除するためには、次の両方の管理役割を割り当てられる必要があります。
     
-  - **メールボックスの検索**-この役割を使用すると、組織内の複数のメールボックス間でメッセージを検索することができます。既定では、管理者はこの役割を割り当てられていません。メールボックスを検索できるようにこの役割を自分自身に割り当てるには、自分自身を Discovery Management 役割グループのメンバーとして追加します。「[ユーザーを Discovery Management 役割グループに追加する」を](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx)参照してください。
+  - **メールボックスの検索**-この役割を使用すると、組織内の複数のメールボックス間でメッセージを検索することができます。 既定ではこの役割は管理者には割り当てられません。 メールボックスを検索できるようにこの役割を自分自身に割り当てるには、探索管理役割グループのメンバーとして自身を追加します。 「[ユーザーを Discovery Management 役割グループに追加する」を](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx)参照してください。
     
-  - **メールボックスインポートエクスポート**-この役割を使用すると、ユーザーのメールボックスからメッセージを削除することができます。既定では、この役割はどの役割グループにも割り当てられていません。ユーザーのメールボックスからメッセージを削除するには、"Organization Management/組織の管理" 役割グループに [メールボックスのインポートのエクスポート] 役割を追加します。詳細については、「 [Manage role Groups](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) 」の「役割グループに役割を追加する」セクションを参照してください。 
+  - **メールボックスインポートエクスポート**-この役割を使用すると、ユーザーのメールボックスからメッセージを削除することができます。 既定では、この役割はどの役割グループにも割り当てられていません。 ユーザーのメールボックスからメッセージを削除するために、"Mailbox Import Export" 役割を "組織管理" 役割グループに追加できます。 詳細については、「 [Manage role Groups](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) 」の「役割グループに役割を追加する」セクションを参照してください。 
     
 - メッセージの削除を行うメールボックスで単一アイテムの回復が有効になっている場合は、最初にその機能を無効にする必要があります。詳細については、「[メールボックスの単一アイテムの回復を有効または無効にする](http://technet.microsoft.com/library/2e7f1bcd-8395-45ad-86ce-22868bd46af0.aspx)」を参照してください。
     
-- メッセージを削除するメールボックスが保留になっている場合は、保留リストを削除してメールボックスの内容を削除する前に、レコード管理または法務部門に確認することをお勧めします。承認を得た後、「[回復可能なアイテム」フォルダーをクリーンアップ](http://technet.microsoft.com/library/82c310f8-de2f-46f2-8e1a-edb6055d6e69.aspx)するトピックに記載されている手順に従います。
+- メッセージの削除を行うメールボックスがホールドの対象になっている場合は、ホールドを解除してメールボックスのコンテンツを削除する前に、レコード管理または法務部門に確認することをお勧めします。 承認を得た後、「[回復可能なアイテム」フォルダーをクリーンアップ](http://technet.microsoft.com/library/82c310f8-de2f-46f2-8e1a-edb6055d6e69.aspx)するトピックに記載されている手順に従います。
     
 - **Search-Mailbox** コマンドレットを使用して、最大 10,000 個のメールボックスを検索できます。10,000 以上のメールボックスを持つ Exchange Online 組織の場合は、コンプライアンス検索機能 (または対応する **New-ComplianceSearch** コマンドレット) を使用して無制限の数のメールボックスを検索できます。その後、 **New-ComplianceSearchAction** コマンドレットを使用して、コンプライアンス検索によって返されたメッセージを削除できます。詳細については、「 [Office 365 組織でメール メッセージの検索と削除を行う - 管理者向けヘルプ](https://go.microsoft.com/fwlink/p/?LinkId=786856)」を参照してください。
     
 - ( *SearchQuery*  パラメーターを使用していて) 検索クエリが含まれている場合、 **Search-Mailbox** コマンドレットは、検索結果で最大 10,000 個のアイテムを返します。したがって、検索クエリを含める場合は、 **Search-Mailbox** コマンドを複数回実行して 10,000 を超えるアイテムを削除する必要があるかもしれません。 
     
-- **検索-メールボックス**コマンドレットを実行すると、ユーザーのアーカイブメールボックスも検索されます。同様に、 _DeleteContent_スイッチを指定して**Search メールボックス**コマンドレットを使用すると、プライマリアーカイブメールボックス内のアイテムが削除されます。これを防止するには、「 ** 」と表示されているスイッチを含めることができます。また、予期しないデータ損失が発生する可能性があるため、自動拡張アーカイブが有効になっている Exchange Online メールボックス内のメッセージを削除する場合は、 _DeleteContent_スイッチを使用しないことをお勧めします。 
+- **Search-Mailbox** コマンドレットを実行すると、ユーザーのアーカイブ メールボックスも検索されます。 同様に、  **DeleteContent** スイッチと併せて _Search-Mailbox_ コマンドレットを使用すると、プライマリ アーカイブ メールボックス内のアイテムは削除されます。 これを防ぐために、  *DoNotIncludeArchive*  スイッチを含めることができます。 また、予期しないデータ損失が発生する可能性があるため、自動拡張アーカイブが有効になっている Exchange Online メールボックス内のメッセージを削除する場合は、 _DeleteContent_スイッチを使用しないことをお勧めします。 
     
 ## <a name="search-messages-and-log-the-search-results"></a>メッセージを検索し、検索結果をログに記録する
 

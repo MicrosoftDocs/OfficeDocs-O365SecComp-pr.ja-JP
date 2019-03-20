@@ -7,18 +7,17 @@ ms.date: 3/13/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
 ms.collection:
 - M365-security-compliance
 description: 次の一連のビデオは、Exchange Online Protection (EOP) でホストされた電子メール フィルタリング サービスを設定および使用するうえで役立ちます。
-ms.openlocfilehash: 65568d21f6b4cb718526a9c9dcddfef2f58b1ca1
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 1e8aadd173f4e30c528679347171230e83752af0
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341188"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693566"
 ---
 # <a name="videos-for-getting-started-with-eop"></a>EOP の使用を開始するためのビデオ
 
@@ -27,7 +26,7 @@ ms.locfileid: "30341188"
 > [!NOTE]
 > ビデオで説明されているタスクを開始する前に、メール フローを設定することをお勧めします。詳細については、「[Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx)」を参照してください。 
   
-これらのビデオでは、組織のニーズに合わせてスパム対策の設定を調整する方法について説明します。組織へのサービスを通過する受信メールの場合、これには、IP アドレスに基づいて差出人セーフリストと受信拒否リストを作成すること、およびコンテンツフィルター設定を構成することが含まれます。管理者が、検疫に送信されたメールフロールール (トランスポートルールとも呼ばれる) と一致するコンテンツフィルターが適用されたスパムメッセージやメッセージを検索して解放する方法についても説明します。また、サービスの改善に役立つスパムメッセージを報告する方法も示しています。
+以下のビデオでは、組織のニーズに合わせてスパム対策の設定を調整する方法について説明しています。 サービスを使用して組織が受け取る受信メールについては、IP アドレスに基づいて差出人セーフ リストと受信拒否リストを作成すること、およびコンテンツ フィルター設定を構成することが含まれます。 管理者が、検疫に送信されたメールフロールール (トランスポートルールとも呼ばれる) と一致するコンテンツフィルターが適用されたスパムメッセージやメッセージを検索して解放する方法についても説明します。また、サービスの改善に役立つスパムメッセージを報告する方法も示しています。
   
 - EOP で IP 許可一覧と IP 禁止一覧を構成する
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]

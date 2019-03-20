@@ -7,7 +7,6 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: ここでは、スパム対策保護に関するよく寄せられる質問と回答について説明します。 回答は、Microsoft Exchange Online と Exchange Online Protection (EOP) のお客様に当てはまります。
-ms.openlocfilehash: 47ab5202e4f20bbb8cdcf1d83987b0c0c20e8f29
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 8ac5fff97828764524c8bfa1510549396d509866
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341678"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692236"
 ---
 # <a name="anti-spam-protection-faq"></a>スパム対策保護 FAQ
 
@@ -34,7 +33,7 @@ ms.locfileid: "30341678"
 A. **着信メッセージの場合、** スパムの大部分は、送信者の IP アドレスに基づき、接続フィルタを介して削除されます。 次に、このサービスはメッセージのコンテンツを検査します。 既定では、コンテンツ フィルターで処理されたスパムは受信者の迷惑メール フォルダーに送信されます。 既定のアクションを変更できます。 たとえば、コンテンツ フィルター ポリシーで構成することにより、スパム メッセージを検疫に送信できます。 
   
 > [!IMPORTANT]
-> EOP スタンドアロンのお客様の場合: [**迷惑メールフォルダーにメッセージを移動**します] アクションがオンプレミスのメールボックスと連携するようにするには、オンプレミスのサーバー上で2つの Exchange メールフロールール (トランスポートルールとも呼ばれます) を設定して検出する必要があります。EOP によって追加されたスパムヘッダー。詳細については、「[スパムが各ユーザーの迷惑メールフォルダーにルーティングされるようにする](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。 
+> EOP スタンドアロンのお客様の場合: [**迷惑メールフォルダーにメッセージを移動**します] アクションがオンプレミスのメールボックスと連携するようにするには、オンプレミスのサーバー上で2つの Exchange メールフロールール (トランスポートルールとも呼ばれます) を設定して検出する必要があります。EOP によって追加されたスパムヘッダー。 詳細については、「 [スパムが各ユーザーの [迷惑メール] フォルダーにルーティングされるようにする](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。 
   
  **送信メッセージの場合、** メッセージは、より危険度の高い配信プール経由でルーティングされるか、戻ってきて配信されないかのいずれかです。後者の場合は、送信者がメッセージを配信できなかったことを知らせる配信状態通知 (DSN) メッセージを受け取るはずです。 
   
@@ -110,7 +109,7 @@ A. 以下に示すガイドラインは、送信メール メッセージを送�
   
 1. **電子メールの送信元のドメインの DNS で解決する必要があります。**
     
-    たとえば、送信者が user@example.com の場合、ドメイン example.com は IP アドレス192.0.43.10 に解決されます。送信側ドメインに DNS に a レコードがなく、MX レコードが含まれていない場合、メッセージの内容がスパムであるかどうかに関係なく、このサービスはより高いリスクの配信プールを経由してメッセージをルーティングします。より危険度の高い配信プールの詳細については、「[送信メッセージ用の高リスク配信プール](high-risk-delivery-pool-for-outbound-messages.md)」を参照してください。 
+    たとえば、送信者が user@example.com であり、ドメイン example.com が IP アドレス 192.0.43.10 に解決されるとします。 DNS で送信者のドメインの A-record と MX レコードが存在しない場合、メッセージのコンテンツがスパムであるなしにかかわらず、サービスはより危険度の高い配信プール経由でメッセージをルーティングします。 より危険度の高い配信プールの詳細については、「[送信メッセージ用の高リスク配信プール](high-risk-delivery-pool-for-outbound-messages.md)」を参照してください。 
     
 2. **送信メール サーバーの送信 IP アドレスには、逆引き DNS (PTR) エントリが必要です。**
     

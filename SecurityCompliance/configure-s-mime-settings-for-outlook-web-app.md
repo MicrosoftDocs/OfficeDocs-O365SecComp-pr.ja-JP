@@ -6,7 +6,6 @@ manager: serdars
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,12 +13,12 @@ ms.assetid: c7dee22c-9b5b-425c-91a9-d093204ff84e
 ms.collection:
 - M365-security-compliance
 description: exchange online の Outlook on the web で S/MIME 設定を表示および構成するために必要な exchange online 管理者の簡単な説明。
-ms.openlocfilehash: 005c3075ec8fe6255231ba7358e5b4cc22b92f1d
-ms.sourcegitcommit: 8b36bf7949f1769f1418d740293637d60e403f87
+ms.openlocfilehash: d890b7f39d16d8c0f3866d5ff0024fe31160af6b
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30339445"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693336"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>Outlook on the web を使用して、Exchange Online の S/MIME 設定を構成する
 
@@ -33,6 +32,6 @@ Google Chrome web ブラウザーで Outlook on the web で S/mime を使用す�
 
 この手順は、Chrome を使用するための前提条件です。ユーザーによってインストールされた S/MIME コントロールは置き換えられません。 **extensioninstallforcelist**ポリシーの詳細については、「 [extensioninstallforcelist](http://dev.chromium.org/administrators/policy-list-3#ExtensionInstallForcelist)」を参照してください。
 
-## <a name="for-more-information"></a>詳細情報
+## <a name="for-more-information"></a>関連情報
 
 [S/MIME によるメッセージの署名と暗号化](s-mime-for-message-signing-and-encryption.md)

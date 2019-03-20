@@ -7,16 +7,15 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: EOP の操作を開始する前に知っておく必要があるいくつかの点を以下に示します。
-ms.openlocfilehash: fc5ea726de190395407952ceac69c4c682ac8f67
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 878380adb039961334413019551847717ace0cc7
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341748"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692326"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -42,7 +41,7 @@ EOP 管理者向けのヘルプ コンテンツは、次の最上位カテゴリ
     
 - [EOP サービスを設定する](set-up-your-eop-service.md) EOP サービスを設定するための手順と、追加情報へのリンクを提供します。 
     
-- [EOP から Google postini、Barracuda スパムおよびウイルスファイアウォール、または Cisco IronPort に切り替えます](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md)。別の電子メール保護製品から EOP に切り替えるためのプロセスについて説明します。 
+- [Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md) Describes the process for switching to EOP from another email protection product. 
     
 - [EOP で受信者と管理役割グループを管理する](manage-recipients-and-admin-role-groups-in-eop.md) 受信者を管理する方法とユーザーを管理役割グループに割り当てる方法について説明します。 
     
@@ -69,11 +68,11 @@ EOP エンド ユーザーによるスパム管理を支援するためのヘル
   
 - [Find and Release Quarantined Messages as an End User](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) エンド ユーザーが、スパム検疫ユーザー インターフェイスで独自のスパム検疫済みメッセージを検出して解放し、オプションで、それらのメッセージを迷惑メールではないとして Microsoft に報告する方法について説明します。 
         
-- [スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)エンドユーザーがスパム (迷惑メール) メッセージと非スパム (迷惑メールではない) メッセージを Microsoft に送信するさまざまな方法について説明します。このトピックには、Microsoft outlook および web 上の outlook (旧称 Outlook web App) で使用可能なレポートツールへのリンクが含まれています。 
+- [スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)エンドユーザーがスパム (迷惑メール) メッセージと非スパム (迷惑メールではない) メッセージを Microsoft に送信するさまざまな方法について説明します。 このトピックには、Microsoft outlook および web 上の outlook (旧称 Outlook web App) で使用可能なレポートツールへのリンクが含まれています。 
     
 - [Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md) エンド ユーザーがフィルターを通過したマルウェアやマルウェアとして誤判定されたと思われるファイルを報告する方法について説明します。 
     
-- エンドユーザーは、outlook または web 上の outlook で迷惑メール設定を構成することで、特定のユーザーまたはドメインを安全な送信者リストまたは受信拒否リストに追加できます。禁止された送信者から送信されたメッセージは拒否されず、スパムとしてマークされ、迷惑メールフォルダーまたは検疫から取得できることに注意してください (管理者がスパムを送信するように構成されている場所によって異なります)。詳細については、「[レポートメッセージアドインを使用する](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)」を参照してください。
+- エンドユーザーは、outlook または web 上の outlook で迷惑メール設定を構成することで、特定のユーザーまたはドメインを安全な送信者リストまたは受信拒否リストに追加できます。 禁止された送信者から送信されたメッセージは拒否されず、スパムとしてマークされ、迷惑メールフォルダーまたは検疫から取得できることに注意してください (管理者がスパムを送信するように構成されている場所によって異なります)。詳細については、「[レポートメッセージアドインを使用する](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)」を参照してください。
     
 - 「[EOP のヘルプとサポート](help-and-support-for-eop.md)」 ヘルプおよびテクニカル サポートの入手方法について説明しています。 
     

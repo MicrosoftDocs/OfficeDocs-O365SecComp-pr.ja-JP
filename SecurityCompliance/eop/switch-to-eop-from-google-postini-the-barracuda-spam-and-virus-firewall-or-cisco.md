@@ -1,5 +1,5 @@
 ---
-title: Google Postini、Barracuda Spam & Virus Firewall、または Cisco IronPort から EOP に切り替える
+title: Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -7,18 +7,17 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: このトピックの目的は、社内の電子メール検疫アプライアンスまたはクラウドベースの保護サービスから Exchange Online Protection (EOP) に切り替えるプロセスを理解していただくことと、着手に役立つリソースを提供することにあります。
-ms.openlocfilehash: a1fa7b63dfc1e6eb193d458545722c4b5331bc48
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 0923bf0060891536ac11c5f9fa773f74aed1463f
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30340758"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693416"
 ---
-# <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Google Postini、Barracuda Spam & Virus Firewall、または Cisco IronPort から EOP に切り替える
+# <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort
 
  このトピックの目的は、社内の電子メール検疫アプライアンスまたはクラウドベースの保護サービスから Exchange Online Protection (EOP) に切り替えるプロセスを理解していただくことと、着手に役立つリソースを提供することにあります。多数のスパム対策フィルター ソリューションがありますが、多くの場合 EOP への切り替えプロセスは同様です。
   
@@ -56,9 +55,9 @@ Office 365 の設定プロセスでは、クラウド ベースのメールボ�
 
 EOP への切り替えを決定したら、特に次の分野について考慮する必要があります。
   
-- **カスタムフィルター規則**特定のスパムをキャッチするためのカスタムフィルター処理またはビジネスポリシールールがある場合は、ルールを移行する前に、EOP で期間の既定の設定を使用することをお勧めします。EOP は既定の設定でエンタープライズレベルのスパム対策を提供しているため、一部のルールを EOP に移行する必要がない場合があります。当然、特定のカスタムビジネスポリシーを適用するルールがある場合は、それらを作成できます。[「Exchange Online Protection のメールフロールール (トランスポートルール)](mail-flow-rules-transport-rules-0.md) 」では、EOP でメールフロールールを作成するための詳細な手順を説明します。 
+- **カスタム フィルター処理ルール** 特定のスパムを検知するためのカスタム フィルター処理またはビジネス ポリシー ルールがある場合は、一定期間、既定の設定で EOP を試行してからルールを移行することをお勧めします。 EOP は既定の設定でエンタープライズ レベルのスパム対策を提供しているため、一部のルールを EOP に移行する必要がない場合があります。 当然、特定のカスタム ビジネス ポリシーを適用するルールがある場合には、それらを作成できます。 [「Exchange Online Protection のメールフロールール (トランスポートルール)](mail-flow-rules-transport-rules-0.md) 」では、EOP でメールフロールールを作成するための詳細な手順を説明します。 
     
-- **ip 許可一覧と ip 禁止一覧**ユーザー単位の許可リストとブロックリストがある場合は、セットアッププロセスの一部として、EOP へのリストのコピーをしばらく許可します。ip 許可一覧と ip 禁止一覧の詳細については、「 [Configure the connection filter policy](../configure-the-connection-filter-policy.md)」を参照してください。
+- **IP 許可一覧と IP 禁止一覧** ユーザーごとの許可一覧と禁止一覧がある場合は、設定プロセスの一部としてその一覧を EOP にコピーできます。 ip 許可一覧と ip 禁止一覧の詳細については、「 [Configure the connection filter policy](../configure-the-connection-filter-policy.md)」を参照してください。
     
 - **セキュリティで保護された通信** 暗号化メッセージングが必要なパートナーがいる場合は、これを Exchange 管理センターで設定することをお勧めします。このシナリオを構成するには、「 [Create connectors for a secure mail channel using transport layer security (TLS)](http://technet.microsoft.com/library/1ce4d6a4-41ba-4d1e-9ca9-e826252c1041.aspx)」を参照してください。
     

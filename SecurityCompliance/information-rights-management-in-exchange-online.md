@@ -7,18 +7,17 @@ ms.date: 12/13/2017
 ms.audience: End User
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 description: 電子メールは、財務データ、法的契約、社外秘の製品情報、売上レポートや売上見込み、患者の医療情報、顧客や従業員の情報などの機密性の高い情報を交換するためによく使われています。その結果、メールボックスが機密性の高い大量の情報のリポジトリとして使用され、組織にとって情報漏洩が深刻な脅威となる可能性があります。
-ms.openlocfilehash: 5036fe359215de1c2674d7efabbb283c78418a19
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: aef3acaba6b0efe4550958ce1d98add371069648
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002572"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692346"
 ---
 # <a name="information-rights-management-in-exchange-online"></a>Exchange Online での Information Rights Management
 
@@ -36,7 +35,7 @@ Exchange Online IRM では、Windows Server 2008 以降の情報保護テクノ�
   
 ユーザーは、電子メール メッセージにテンプレートを適用して、メッセージに対する受信者のアクセス許可を制御できます。転送、メッセージからの情報の抽出、メッセージの保存、メッセージの印刷などの操作を制御するには、AD RMS 権利ポリシーをメッセージに適用します。
   
-Windows Server 2008 以降を実行している AD RMS サーバーを使用するよう IRM を構成できます。この AD RMS サーバーは、クラウドベースの組織の AD RMS 権利ポリシー テンプレートを管理するために使用できます。Outlook では、ユーザーが IRM 保護を送信メッセージに適用できるようにする目的にも AD RMS サーバーが使用されます。詳細については、「[Configure IRM to use an on-premises AD RMS server](configure-irm-to-use-an-on-premises-ad-rms-server.md)」を参照してください。 
+Windows Server 2008 以降を実行している AD RMS サーバーを使用するよう IRM を構成できます。 この AD RMS サーバーは、クラウドベースの組織の AD RMS 権利ポリシー テンプレートを管理するために使用できます。 Outlook では、ユーザーが IRM 保護を送信メッセージに適用できるようにする目的にも AD RMS サーバーが使用されます。 詳細については、「[オンプレミスの AD RMS サーバーを使用するように IRM を構成する](configure-irm-to-use-an-on-premises-ad-rms-server.md)」を参照してください。 
   
 有効になっていれば、次のように、IRM 保護をメッセージに適用できます。
   

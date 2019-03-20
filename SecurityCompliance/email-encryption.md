@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 10/30/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -15,12 +15,12 @@ ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
 ms.collection:
 - M365-security-compliance
 description: office メッセージの暗号化 (OME)、S/MIME、Information Rights Management (IRM)、トランスポート層セキュリティ (TLS) について説明します。
-ms.openlocfilehash: 8b8eb96b49d2b3d875ceba5216edfd0f12f8aa97
-ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.openlocfilehash: 18f3d5098557f65a0738254b57882689c013d677
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573541"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692466"
 ---
 # <a name="email-encryption-in-office-365"></a>Office 365 での電子メールの暗号化
 

@@ -7,7 +7,6 @@ ms.date: 2/19/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: '概要: この記事では、Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。 SPF を使うと、カスタム ドメインから送信される送信電子メールを検証できます。'
-ms.openlocfilehash: 330cdb7e3aa5fa6ba6e46015b7333672f8a96451
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: 039a09e7dac307ead156eac47699edbd2350b304
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492836"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692836"
 ---
 # <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>スプーフィングを防止するために Office 365 で SPF を設定する
 
@@ -60,8 +59,8 @@ DNS で TXT レコードを更新する前に、情報を収集し、レコー�
     
 ||**使用対象**|**Office 365 ユーザーとの共通性**|**追加対象**|
 |:-----|:-----|:-----|:-----|
-|1  <br/> |いずれかの電子メール システム (必須)  <br/> |共通。この値で始まるすべての SPF レコード  <br/> |v=spf1  <br/> |
-|2  <br/> |Exchange Online  <br/> |共通  <br/> |include:spf.protection.outlook.com  <br/> |
+|1-d  <br/> |いずれかの電子メール システム (必須)  <br/> |共通。この値で始まるすべての SPF レコード  <br/> |v=spf1  <br/> |
+|pbm-2  <br/> |Exchange Online  <br/> |共通  <br/> |include:spf.protection.outlook.com  <br/> |
 |1/3  <br/> |Exchange Online 専用のみ  <br/> |共通ではない  <br/> |ip4: 23.103.224.0/19 ip4: 206.191.224.0/19 ip4: 40.103.0.0/16 に含まれています。  <br/> |
 |2/4  <br/> |Office 365 Germany、Microsoft Cloud Germany のみ  <br/> |共通ではない  <br/> |添付の内容は以下のとおりです。  <br/> |
 |5  <br/> |サード パーティ製の電子メール システム  <br/> |共通ではない  <br/> |include:\<domain name\>  <br/> domain name は、サード パーティ製の電子メール システムのドメイン名です。  <br/> |

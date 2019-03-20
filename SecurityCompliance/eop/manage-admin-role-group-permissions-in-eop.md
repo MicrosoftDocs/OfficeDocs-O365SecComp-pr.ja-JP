@@ -7,16 +7,15 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Microsoft Exchange Online Protection (EOP) では、Exchange 管理センター (EAC) を使用して、特定の管理タスクを実行するアクセス許可を割り当てるために、ユーザーを役割グループのメンバーにすることができます。また、EAC を使用して、ユーザーを役割グループから削除することもできます。
-ms.openlocfilehash: b773b541b85288b4cb4deaa075cc0346d6bcc646
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: aed32c8a9224bc60ef3e4a1ac9be9d797e61bda8
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002976"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693426"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>EOP で管理役割グループのアクセス許可を管理する
   
@@ -30,7 +29,7 @@ Microsoft Exchange Online Protection (EOP) では、Exchange 管理センター 
     
 - Office 365 内の特定のアクセス許可が EOP 管理役割グループのアクセス許可にマップされます。詳細については、「[管理者ロールを割り当てる](https://go.microsoft.com/fwlink/p/?LinkId=286708)」の「Office 365 権限の対象になるのはどのサービスですか。」セクションの「Exchange Online の役割」列を参照してください。
     
-- このトピックの手順で使用可能なキーボード ショートカットについては、「**Exchange 管理センターのキーボード ショートカット**」を参照してください。
+- このトピックの手順で使用可能なキーボード ショートカットについては、「 **Keyboard shortcuts in Exchange 2013**」を参照してください。
     
 > [!TIP]
 > 問題がある場合は、Exchange のフォーラムで質問してください。 次のフォーラムにアクセスしてください。[Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612)、[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)、 または [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)。 
@@ -39,7 +38,7 @@ Microsoft Exchange Online Protection (EOP) では、Exchange 管理センター 
 
 ### <a name="use-the-eac-to-assign-members-to-admin-role-groups"></a>EAC を使用してメンバーを管理役割グループに割り当てる
 
-1. EAC では、[**アクセス許可**] に移動\>**管理者の役割**、役割グループ、ユーザーを追加する] をクリックし、し、[**編集**] をクリックして![[編集] アイコン](../media/ITPro-EAC-EditIcon.gif)。
+1. EAC で、[**アクセス許可** \> **管理者の役割**] に移動し、ユーザーを追加する役割グループをクリックし、[編集] **** ![編集アイコン](../media/ITPro-EAC-EditIcon.gif)をクリックします。
     
 2. [メンバー] の **[追加]**![[追加] アイコン](../media/ITPro-EAC-AddIcon.gif) をクリックします。[メンバーの選択] ウィンドウが表示されます。
     
@@ -54,7 +53,7 @@ Microsoft Exchange Online Protection (EOP) では、Exchange 管理センター 
   
 ### <a name="use-the-eac-to-remove-members-from-admin-role-groups"></a>EAC を使用して管理役割グループからメンバーを削除する
 
-1. EAC では、[**アクセス許可**] に移動\>**管理者の役割**、ユーザーまたはユーザーが、削除するロール グループをクリックし、し、[**編集**] をクリックして![[編集] アイコン](../media/ITPro-EAC-EditIcon.gif)。
+1. EAC で、[**アクセス許可** \> **管理者の役割**] に移動し、ユーザーを削除する役割グループをクリックしてから、[ **** ![編集アイコン](../media/ITPro-EAC-EditIcon.gif)の編集] をクリックします。
     
 2. [メンバー] で削除するユーザーを選択し、 **[削除]**![[削除] アイコン](../media/ITPro-EAC-RemoveIcon.gif) をクリックします。
     

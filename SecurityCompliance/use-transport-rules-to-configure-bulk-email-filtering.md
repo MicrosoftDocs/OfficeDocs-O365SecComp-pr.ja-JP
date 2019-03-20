@@ -6,7 +6,6 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,18 +13,18 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection でのメールフロールールをバルクメールフィルターに使用する方法について説明します。
-ms.openlocfilehash: b7144f16df3e7b9f90a24f1ac224ccb20287d918
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 43f0af6fe41bc7f8f4a62d0d87dbd825fb868f7b
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275687"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693286"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>メールフロールールを使用して Exchange Online Protection で一括メールフィルターを構成する
 
 既定のスパム コンテンツ フィルター ポリシーを使用して、スパムやバルク メールに対して会社全体のコンテンツ フィルターを設定することができます。コンテンツ フィルター ポリシーを設定する方法については、「[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」と「[Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy?view=exchange-ps)」を確認してください。 
   
-バルクメッセージをフィルター処理するためのその他のオプションが必要な場合は、メールフロールール (トランスポートルールとも呼ばれます) を作成して、バルクメールでよく見られるテキストパターンや語句を検索することができます。これらの特性を含むメッセージは、スパムとしてマークされます。これらのルールを使用すると、組織が受信する不要なバルクメールの量を減らすことができます。
+バルクメッセージをフィルター処理するためのその他のオプションが必要な場合は、メールフロールール (トランスポートルールとも呼ばれます) を作成して、バルクメールでよく見られるテキストパターンや語句を検索することができます。 それらの特徴を持つメッセージは、すべてスパムとしてマーク付けされます。 このルールを使用すれば、組織で受信する不要なバルク メールの量を減らすことができます。
 
 > [!IMPORTANT]
 > このトピックに記載されているメールフロールールを作成する前に、「[迷惑メールとバルクメールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md)」および「[バルク苦情レベルの値](bulk-complaint-level-values.md)」を参照することをお勧めします。<br>以下の手順は、特定のメッセージを組織全体でスパムとしてマークします。ただし、別の条件を追加すれば、これらのルールを組織内の特定の受信者にだけ適用することができます。このように、積極的なバルク メール フィルター処理設定を注目すべき少数のユーザーにだけ適用することによって、他のユーザー (受信するもののほとんどが登録したバルク メール) には影響を与えないようにすることができます。 
@@ -66,7 +65,7 @@ ms.locfileid: "30275687"
     
    - `click (here to|the) unsubscribe`
     
-   上記のリストは、バルクメールで検出された正規表現の完全なセットではありません。必要に応じて、追加または削除することができます。ただし、開始点として適しています。<br>メッセージ内の件名フィールドまたは他のヘッダーフィールドに含まれる単語またはテキストパターンを検索すると、メッセージが ASCII テキスト形式の SMTP サーバー間でバイナリメッセージを送信するために使用された MIME コンテンツ転送エンコード方式からデコードされ*た後*に発生します。条件または例外を使用して、メッセージ内の subject またはその他のヘッダーフィールドの生 (通常は Base64) でエンコードされた値を検索することはできません。 
+   上記のリストは、バルクメールで検出された正規表現の完全なセットではありません。必要に応じて、追加または削除することができます。 それでも、有益な出発点にはなります。<br>メッセージ内の件名フィールドまたは他のヘッダーフィールドに含まれる単語またはテキストパターンを検索すると、メッセージが ASCII テキスト形式の SMTP サーバー間でバイナリメッセージを送信するために使用された MIME コンテンツ転送エンコード方式からデコードされ*た後*に発生します。 条件または例外を使用して、メッセージ内の件名または他のヘッダー フィールドの未加工 (通常は Base64) のエンコード値を検索することはできません。 
     
 6. **[実行する処理]** で、 **[メッセージのプロパティを変更する]** \> **[SCL (Spam Confidence Level) の設定]** の順に選択します。
     
@@ -118,7 +117,7 @@ ms.locfileid: "30275687"
     
    - `You are receiving this email because you are subscribed`
     
-   このリストは、バルクメールで検出された一連の語句を網羅したものではありません。必要に応じて、追加または削除することができます。ただし、開始点として適しています。
+   このリストは、バルクメールで検出された一連の語句を網羅したものではありません。必要に応じて、追加または削除することができます。 それでも、有益な出発点にはなります。
     
 6. **[実行する処理]** で、 **[メッセージのプロパティを変更する]** \> **[SCL (Spam Confidence Level) の設定]** の順に選択します。
     

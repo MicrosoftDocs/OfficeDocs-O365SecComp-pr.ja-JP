@@ -3,7 +3,7 @@ title: 配信された悪意のある電子メールを検索して調査する 
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 03/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,43 +14,43 @@ search.appverid:
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
-description: 脅威インテリジェンスを使用して悪意のある電子メールを検索し、調査する方法について説明します。
-ms.openlocfilehash: d5b08338bc0a3a6a88ea498861ab9e27522b759d
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+description: 脅威の調査と応答機能を使用して、悪意のある電子メールを検索して調査する方法について説明します。
+ms.openlocfilehash: 167a587e16b464bcc7b45bca25e9f3adceda758c
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241909"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692456"
 ---
-# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>配信された悪意のある電子メールを検索して調査する (Office 365 の脅威インテリジェンス)
+# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>配信された悪意のある電子メールを検索して調査する (Office 365 Advanced Threat Protection プラン 2)
 
-[Office 365 の脅威インテリジェンス](office-365-ti.md)により、ユーザーが危険にさらされ、組織を保護するアクションを実行するアクティビティを調査できます。たとえば、組織のセキュリティチームに属している場合は、ユーザーに配信された不審な電子メールメッセージを見つけて調査することができます。これは、[脅威エクスプローラー](get-started-with-ti.md#threat-explorer)を使用して行うことができます。
+[Office 365 Advanced Threat Protection プラン 2](office-365-ti.md)を使用すると、ユーザーが危険にさらされ、組織を保護するアクションを実行するアクティビティを調査できます。 たとえば、組織のセキュリティチームに属している場合は、ユーザーに配信された不審な電子メールメッセージを見つけて調査することができます。 これは、[脅威エクスプローラー](get-started-with-ti.md#threat-explorer)を使用して行うことができます。
   
 > [!IMPORTANT]
-> 2019年2月から、次の数か月間に展開されています。 office 365 の脅威インテリジェンスは、追加の脅威保護機能を備えた office 365 Advanced threat protection プラン2になりつつあります。詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
+> office 365 脅威インテリジェンスは office 365 Advanced threat protection プラン2に加えて、追加の脅威保護機能と共に提供されるようになりました。 詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
   
 ## <a name="before-you-begin"></a>開始する前に
 
 次の要件が満たされていることを確認してください。
   
-- 組織に[office 365 の脅威インテリジェンス](office-365-ti.md)があり、 [office 365 for business のユーザーにライセンスを割り当て](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)ます。
+- 組織では、 [office 365 Advanced Threat Protection プラン 2](office-365-ti.md)を使用しており、 [office 365 for business のユーザーにライセンスを割り当て](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)ます。
     
 - [Office 365 監査ログ](turn-audit-log-search-on-or-off.md)は、組織に対して有効になっています。 
     
-- 組織には、スパム対策、マルウェア対策、フィッシング対策などに対して定義されたポリシーがあります。「 [Office 365 セキュリティ&amp; /コンプライアンスセンター](threat-management.md)」の「脅威管理」を参照してください。
+- 組織には、スパム対策、マルウェア対策、フィッシング対策などに対して定義されたポリシーがあります。 「 [Office 365 セキュリティ&amp; /コンプライアンスセンター](threat-management.md)」の「脅威管理」を参照してください。
     
-- Office 365 の全体管理者であるか、セキュリティ管理者、またはセキュリティ&amp;コンプライアンスセンターで割り当てられている検索および削除の役割を持っているかどうか。「 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可」を](permissions-in-the-security-and-compliance-center.md)参照してください。
+- Office 365 の全体管理者であるか、セキュリティ管理者、またはセキュリティ&amp;コンプライアンスセンターで割り当てられている検索および削除の役割を持っているかどうか。 「 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可」を](permissions-in-the-security-and-compliance-center.md)参照してください。
     
 ## <a name="dealing-with-suspicious-emails"></a>疑わしいメールの処理
 
-悪意のある攻撃者は、ユーザーにメールを送信して、自分の資格情報をフィッシングし、会社の機密情報にアクセスできるようにすることができます。これを防止するには、Office 365 で提供されている脅威保護サービス (Exchange Online protection や Advanced threat protection など) を使用する必要があります。ただし、攻撃者が url を含むユーザーにメールを送信し、その url を後で悪意のあるコンテンツ (マルウェアなど) に対して使用する場合があります。または、組織内のユーザーが侵害され、そのユーザーが侵害されたときに、そのアカウントを使用して社内の他のユーザーに電子メールを送信したことがあります。これらのシナリオの両方をクリーンアップする際に、ユーザーの受信トレイから電子メールメッセージを削除することが必要な場合があります。このような状況では、脅威エクスプローラーを活用して、これらの電子メールメッセージを見つけて削除することができます。
+悪意のある攻撃者は、ユーザーにメールを送信して、自分の資格情報をフィッシングし、会社の機密情報にアクセスできるようにすることができます。 これを防止するには、Office 365 で提供されている脅威保護サービス (Exchange Online protection や Advanced threat protection など) を使用する必要があります。 ただし、攻撃者が url を含むユーザーにメールを送信し、その url を後で悪意のあるコンテンツ (マルウェアなど) に対して使用する場合があります。 または、組織内のユーザーが侵害され、そのユーザーが侵害されたときに、そのアカウントを使用して社内の他のユーザーに電子メールを送信したことがあります。 これらのシナリオの両方をクリーンアップする際に、ユーザーの受信トレイから電子メールメッセージを削除することが必要な場合があります。 このような状況では、脅威エクスプローラーを活用して、これらの電子メールメッセージを見つけて削除することができます。
   
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>配信された疑わしいメールを見つけて削除する
 
 > [!TIP]
-> [脅威エクスプローラー](get-started-with-ti.md#threat-explorer)(エクスプローラーとも呼ばれます) は、メッセージの検索と削除、悪意のある電子メールの送信者の IP アドレスの識別、さらなる調査のためのインシデントの開始など、複数の目的に使用できる強力なレポートです。次の手順では、エクスプローラーを使用して受信者のメールボックスから悪意のある電子メールを検索し、削除する方法を説明します。 
+> [脅威エクスプローラー](get-started-with-ti.md#threat-explorer)(エクスプローラーとも呼ばれます) は、メッセージの検索と削除、悪意のある電子メールの送信者の IP アドレスの識別、さらなる調査のためのインシデントの開始など、複数の目的に使用できる強力なレポートです。 次の手順では、エクスプローラーを使用して受信者のメールボックスから悪意のある電子メールを検索し、削除する方法を説明します。 
   
-1. に[https://protection.office.com](https://protection.office.com)移動して、Office 365 の職場または学校のアカウントを使用してサインインします。これにより、セキュリティ&amp;コンプライアンスセンターに移動します。 
+1. に[https://protection.office.com](https://protection.office.com)移動して、Office 365 の職場または学校のアカウントを使用してサインインします。 これにより、セキュリティ&amp;コンプライアンスセンターに移動します。 
     
 2. 左側のナビゲーションで、[**脅威管理** \> **エクスプローラー**] を選択します。
     
@@ -62,17 +62,17 @@ ms.locfileid: "30241909"
   
 6. グラフの下にある、グラフの下にある**電子メール**リストを確認します。<br/>![グラフの下に、検出された電子メールメッセージの一覧を表示します。](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
   
-7. リストで、その電子メールメッセージの詳細を表示するアイテムを選択します。たとえば、件名行をクリックして、送信者、受信者、添付ファイル、その他の同様の電子メールメッセージに関する情報を表示することができます。<br/>![詳細および添付ファイルを含む、アイテムに関する追加情報を表示できます。](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
+7. リストで、その電子メールメッセージの詳細を表示するアイテムを選択します。 たとえば、件名行をクリックして、送信者、受信者、添付ファイル、その他の同様の電子メールメッセージに関する情報を表示することができます。<br/>![詳細および添付ファイルを含む、アイテムに関する追加情報を表示できます。](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
   
 8. 電子メールメッセージに関する情報を表示した後、リスト内の1つ以上のアイテムを選択して、 **+ アクション**をアクティブ化します。
     
-9. [ **+ アクション**] リストを使用して、[**削除済みアイテムに移動する**] などのアクションを適用します。これにより、選択したメッセージが受信者のメールボックスから削除されます。<br/>![1つまたは複数の電子メールメッセージを選択する場合は、いくつかの使用可能なアクションから選択できます。](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
+9. [ **+ アクション**] リストを使用して、[**削除済みアイテムに移動する**] などのアクションを適用します。 これにより、選択したメッセージが受信者のメールボックスから削除されます。<br/>![1つまたは複数の電子メールメッセージを選択する場合は、いくつかの使用可能なアクションから選択できます。](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
   
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 脅威インテリジェンス](office-365-ti.md)
+[Office 365 Advanced Threat Protection プラン2](office-365-ti.md)
   
-[Office 365 での脅威からの保護](protect-against-threats.md)
+[Office 365 で脅威から保護する](protect-against-threats.md)
   
 [Office 365 Advanced Threat Protection のレポートを表示する](view-reports-for-atp.md)
   

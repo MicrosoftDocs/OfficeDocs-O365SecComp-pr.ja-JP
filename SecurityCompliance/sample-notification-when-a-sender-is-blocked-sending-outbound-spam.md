@@ -7,7 +7,6 @@ ms.date: 11/2/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: c33fd406-a4c8-4ac8-ad85-123996c5cded
 ms.collection:
 - M365-security-compliance
 description: 送信スパムを送信しようとしたために送信者がサービスからブロックされる場合、「送信スパム ポリシーを構成する」で指定したドメイン管理者は、次のような通知の電子メールを受信します。
-ms.openlocfilehash: 94af965505f7541600a6cd7937ae881226a2ac79
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 04d8bde8e9cadd3525191a5bee7d368229e85056
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275477"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691808"
 ---
 # <a name="sample-notification-when-a-sender-is-blocked-sending-outbound-spam"></a>送信者が送信スパムの送信をブロックされる場合の通知例
 

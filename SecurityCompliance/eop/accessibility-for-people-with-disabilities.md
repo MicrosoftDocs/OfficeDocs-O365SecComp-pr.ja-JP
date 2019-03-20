@@ -1,5 +1,5 @@
 ---
-title: 障碍がある方のためのユーザー補助機能
+title: 障害がある方のためのユーザー補助機能
 ms.author: scotv
 author: scotvidican
 manager: laurawi
@@ -7,17 +7,16 @@ ms.date: 12/15/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: Microsoft では、すべてのユーザーにとって使いやすい製品とサービスを提供できるよう取り組んでいます。
-ms.openlocfilehash: 2403ef4ec5a99202a45b40bf639193643b6ad02b
-ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
+ms.openlocfilehash: 271383361ee99f6959e81a1f38dea4b200c54fb5
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30206380"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693106"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>障碍がある方のためのユーザー補助機能
 
@@ -29,7 +28,7 @@ Microsoft Exchange に装備された次の機能は、障碍がある方がよ�
     
 - [Outlook on the web のキーボード ショートカット ](https://go.microsoft.com/fwlink/p/?LinkId=268079)
     
-また、Windows のユーザー補助機能とユーティリティによっては、障害が発生している Exchange ユーザーにメリットがあります。また、Windows PowerShell のサイズと色の変更によって、Exchange 管理シェルを使用する際のユーザー補助オプションが提供されます。windows powershell のユーザー補助オプションの詳細については、「 [windows powershell 2.0 ISE のアクセシビリティ](https://go.microsoft.com/fwlink/p/?LinkId=258240)」を参照してください。
+また、Windows のユーザー補助機能とユーティリティは、障碍がある Exchange ユーザーにとって有用なものです。 Exchange 管理シェルについては、ユーザー補助オプションとして、Windows PowerShell のサイズと色を変更できます。 windows powershell のユーザー補助オプションの詳細については、「 [windows powershell 2.0 ISE のアクセシビリティ](https://go.microsoft.com/fwlink/p/?LinkId=258240)」を参照してください。
   
 ## <a name="accessibility-features-of-exchange-help"></a>Exchange ヘルプのユーザー補助機能
 
@@ -54,7 +53,7 @@ Windows オペレーティング システムには、キーボード入力や�
     
     補助テクノロジを使用する場合は、ソフトウェアまたはハードウェアをアップグレードする前に、互換性の問題がないかどうかを補助テクノロジ ベンダーにお問い合わせください。 
     
-### <a name="documentation-in-alternative-formats"></a>他の形態のドキュメント
+### <a name="documentation-in-alternative-formats"></a>代替形式のドキュメント
 
 Microsoft 製品のドキュメントの多くは、印刷されたドキュメントが読みにくい、または扱いにくい方でも快適にご利用いただけるよう、さまざまな形態で入手できます。入手可能な製品ドキュメントのインデックスは、[Microsoft アクセシビリティ ホーム](https://go.microsoft.com/fwlink/p/?linkId=18139)にあります。 
   

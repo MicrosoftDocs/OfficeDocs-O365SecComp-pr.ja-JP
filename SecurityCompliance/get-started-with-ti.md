@@ -3,7 +3,7 @@ title: Office 365 の脅威の調査と対応についての作業を開始す�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/10/2019
+ms.date: 03/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,29 +15,29 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: Office 365 の脅威の調査と応答、および開始する方法について説明します。
-ms.openlocfilehash: 3e77e79a38da10ed80a611d93dbd55ab9cfc0fda
-ms.sourcegitcommit: 6e8e2b43a4bea31c1e835c5b050824651c6a0094
+ms.openlocfilehash: f30a3c8007d2643a67f59d9421496e9ae0bc6e8c
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30537624"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693136"
 ---
-# <a name="get-started-with-threat-investigation-and-response"></a>脅威の調査と応答の概要 
+# <a name="get-started-with-threat-investigation-and-response-office-365-advanced-threat-protection-plan-2"></a>脅威の調査と対応に関する作業を開始する (Office 365 Advanced Threat Protection プラン 2)
 
 組織のセキュリティチームに参加している場合は、Office 365 の脅威調査および応答機能を使用して、ユーザーを攻撃から保護することができます。 office 365 Advanced Threat Protection プラン 2 (旧称 Office 365 Threat 知能) は、組織の Office の365環境で何が起こっているかに基づいて、洞察を調べて、操作を識別することによって、セキュリティアナリストや管理者がユーザーを安全に保つことができます。 これらの洞察は、脅威インテリジェンスのデータとシステムの包括的なリポジトリに基づいています。これは、攻撃の動作や不審な動作に対応するパターンを見つけるためのものです。
   
-脅威インテリジェンスおよび開始方法の詳細については、この記事をお読みください。
+脅威の調査と応答の詳細と、開始する方法については、この記事を参照してください。
   
 ## <a name="what-are-the-threat-investigation-and-response-capabilities-included-in-office-365"></a>Office 365 に含まれている脅威の調査および応答機能について
 
-脅威の調査と応答は、脅威とそれに関連する応答アクションに役立つ洞察を提供するツールのコレクションを提供し&amp; 、Office 365 セキュリティコンプライアンスセンターで利用できます。 これらの洞察は、組織のセキュリティチームが電子メールやファイルベースの攻撃から Office 365 ユーザーを保護するのに役立ちます。 機能は、ユーザーアクティビティ、認証、電子メール、侵害された pc、セキュリティインシデントなど、複数のソースからの信号を監視し、データを収集するのに役立ちます。 ビジネス意思決定者および office 365 の全体管理者、セキュリティ管理者、およびセキュリティアナリストは、この情報を使用して、Office 365 ユーザーに対する脅威を理解し、それに対応し、知的財産を保護することができます。
+脅威の調査と応答の機能は、Office 365 セキュリティ&amp;コンプライアンスセンターで利用可能な脅威と、関連する応答アクションに関する洞察を促進します。 これらの洞察は、組織のセキュリティチームが電子メールやファイルベースの攻撃から Office 365 ユーザーを保護するのに役立ちます。 機能は、ユーザーアクティビティ、認証、電子メール、侵害された pc、セキュリティインシデントなど、複数のソースからの信号を監視し、データを収集するのに役立ちます。 ビジネス意思決定者および office 365 の全体管理者、セキュリティ管理者、およびセキュリティアナリストは、この情報を使用して、Office 365 ユーザーに対する脅威を理解し、それに対応し、知的財産を保護することができます。
 
 > [!IMPORTANT]
-> office 365 脅威インテリジェンスは、追加の脅威保護機能を備えた office 365 Advanced threat protection プラン2が現在使用されています。 詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
+> office 365 脅威インテリジェンスは office 365 Advanced threat protection プラン2に加えて、追加の脅威保護機能と共に提供されるようになりました。 詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
   
 ## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>脅威ダッシュボード、エクスプローラー、インシデントについて理解する
 
-セキュリティ&amp;コンプライアンスセンターでのこれらの脅威の調査と応答の capabiltiies の表面 ([脅威ダッシュボード](get-started-with-ti.md#dashboard)、[脅威エクスプローラ](get-started-with-ti.md#explorer)、[インシデント](get-started-with-ti.md#incidents)、攻撃を含む) としての一連のツールと応答ワークフロー [シミュレータ](attack-simulator.md)、および自動調査 & 応答。
+これらの脅威の調査と応答能力は、 &amp;セキュリティコンプライアンスセンターで、[脅威ダッシュボード](get-started-with-ti.md#dashboard)、[脅威エクスプローラ](get-started-with-ti.md#explorer)、[インシデント](get-started-with-ti.md#incidents)、攻撃などの一連のツールと応答ワークフローとして、さまざまな機能を備えています。 [シミュレータ](attack-simulator.md)、および自動調査 & 応答。
   
 ### <a name="threat-dashboard"></a>脅威ダッシュボード
 
@@ -81,12 +81,12 @@ office 365 の脅威 Invesigation および応答機能は、office 365 Advanced
 1. office 365 の全体管理者として[https://portal.office.com](https://portal.office.com) 、に移動して、office 365 の職場または学校のアカウントを使用してサインインします。 
     
 2. [**管理者** \> **課金**] を選択して、現在のサブスクリプションに含まれる内容を確認します。 
-    - **office 365 Enterprise E5**が表示されている場合は、組織に office 365 の脅威インテリジェンスがあります。 
-    - **office 365 enterprise E3**または**office 365 enterprise E1**などの別のサブスクリプションが表示される場合は、脅威インテリジェンスを追加することを検討してください。 (これを行うには、[**サブスクリプションの追加**] を選択します。)
+    - **office 365 Enterprise E5**が表示されている場合は、組織に office 365 Advanced threat Protection プラン2があります (脅威の調査と応答の機能を含みます)。 
+    - **office 365 enterprise E3**または**office 365 enterprise E1**などの別のサブスクリプションが表示される場合は、「office 365 Advanced Threat Protection プラン2」を追加することを検討してください。 (これを行うには、[**サブスクリプションの追加**] を選択します。)
     
 3. In the Office 365 admin center, choose **Users** \> **Active users**.
     
-5. Office 365 の脅威インテリジェンスのライセンスをすべてのアクティブユーザーに割り当てます。 (脅威インテリジェンスのライセンスを持つユーザーのみが、エクスプローラなどのレポートに表示されます)。
+5. Office 365 Advanced Threat Protection プラン2ライセンスをアクティブなすべてのユーザーに割り当てます。 (こののライセンスを持っているユーザーのみが、エクスプローラなどのレポートに表示されます)。
     
 6. Office 365 Advanced Threat Protection を使用する組織内のユーザーに役割を割り当てます。 「[ユーザーに Office 365 セキュリティ&amp;コンプライアンスセンターへのアクセス権を付与する](grant-access-to-the-security-and-compliance-center.md)」を参照し、次の表を参照してください。<br/>
 
@@ -96,7 +96,7 @@ office 365 の脅威 Invesigation および応答機能は、office 365 Advanced
   |脅威エクスプローラー (エクスプローラーとも呼ばれます) を使用する  <br/> 脅威を分析する  <br/> |Office 365 グローバル管理者  <br/> セキュリティ管理者 (セキュリティ&amp;コンプライアンスセンターで割り当てられている)  <br/> セキュリティリーダ (セキュリティ&amp;センターコンプライアンスセンターで割り当てられたもの)  <br/> |
   |インシデント (調査とも呼ばれる) を表示する <br/> インシデントに電子メールメッセージを追加する  <br/> |Office 365 グローバル管理者  <br/> セキュリティ管理者 (セキュリティ&amp;コンプライアンスセンターで割り当てられている)  <br/> セキュリティリーダ (セキュリティ&amp;センターコンプライアンスセンターで割り当てられたもの)  <br/> |
   |インシデントで電子メールアクションをトリガーする  <br/> 疑わしい電子メールメッセージの検索と削除  <br/> |Office 365 の全体管理者またはセキュリティ管理者  <br/> 上記の役割の1つと検索と削除 (セキュリティ&amp;コンプライアンスセンターで割り当てられたもの)  <br/> |
-  |Windows Defender Advanced Threat Protection と Office 365 脅威インテリジェンスを統合する  <br/> Office 365 脅威インテリジェンスを SIEM サーバーに統合する  <br/> |Office 365 グローバル管理者  <br/> セキュリティ管理者 (セキュリティ&amp;コンプライアンスセンターで割り当てられている)  <br/> 追加のアプリケーション (Windows Defender Advanced Threat Protection ポータルまたは SIEM サーバーなど) で割り当てられている適切な役割  <br/> |
+  |Office 365 advanced threat protection プラン2と Windows Defender advanced threat protection を統合する  <br/> Office 365 Advanced Threat Protection プラン2を SIEM サーバーと統合する  <br/> |Office 365 グローバル管理者  <br/> セキュリティ管理者 (セキュリティ&amp;コンプライアンスセンターで割り当てられている)  <br/> 追加のアプリケーション (Windows Defender Advanced Threat Protection ポータルまたは SIEM サーバーなど) で割り当てられている適切な役割  <br/> |
    
 役割、役割グループ、およびアクセス許可の詳細については、「 [Office 365 &amp;セキュリティコンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
     

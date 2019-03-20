@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Office 365 の脅威調査および応答機能を使用して、組織が侵入や脅威を検出し、脅威から迅速に脅威を軽減および回復する方法について説明します。
-ms.openlocfilehash: 924ec3522b056b267f5e8af394f380aaff8392a2
-ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
+ms.openlocfilehash: 9ed20713cac07631e63b969efea402e8dbeb8f6d
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30536137"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692286"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>office 365 のユーザーに office 365 の脅威の調査と応答機能を安全に保つ
 
@@ -28,10 +28,10 @@ ms.locfileid: "30536137"
 
 どの Office 365 ユーザーが攻撃にさらされているか、または深刻な侵害になっているかどうかを確認します。 ユーザーを対象とする攻撃を緩和して回復する方法を理解していますか。 Office 365 で既に利用可能なセキュリティ機能を使用して、これを正確に実行できることがわかりましたか? 
   
-[office 365 の脅威の調査と応答](office-365-ti.md)は、office 365 E5 サブスクリプションに含まれる一連の機能です。 Office 365 の脅威の調査と応答の機能により、Microsoft IT は、過去2四半期と比較して、ソーシャルエンジニアリングインシデントの解決に要する平均時間を 80% 削減し、1か月あたりの処理速度を 37% 増加させました。 
+office [365 の脅威の調査と応答](office-365-ti.md)は、office の 365 E5 サブスクリプション (office 365 Advanced Threat Protection プラン2の一部として) に含まれている機能のセットです。 Office 365 の脅威の調査と応答の機能により、Microsoft IT は、過去2四半期と比較して、ソーシャルエンジニアリングインシデントの解決に要する平均時間を 80% 削減し、1か月あたりの処理速度を 37% 増加させました。 
 
 > [!IMPORTANT]
-> office 365 advanced threat protection および脅威の調査と応答 (旧称 office 365 Threat 知能) は、追加の脅威保護機能を備えた office 365 advanced threat protection プラン2の一部になっています。 詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
+> 脅威の調査および応答機能 (旧称 office 365 脅威インテリジェンス) は、office 365 Advanced threat protection プラン2の一部であり、追加の脅威保護機能も含まれていました。 詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
   
 最近、新しい機能を追加して、脅威を検出して回復する方法を改善しました。 この記事では、更新された脅威の調査と応答の機能をさらに効率的にする方法について簡単に説明します。
   
@@ -51,7 +51,7 @@ ms.locfileid: "30536137"
   
  **更新:** インシデントフレームワークから直接電子メールを削除 (ソフト削除またはハード削除) する機能を追加しました。 以前の管理者は、ユーザーの迷惑メールフォルダーにのみメールを移動でき、ユーザーはそのアイテムを回復できます。 新たにリリースされた削除機能を使用すると、悪意のあるメールまたは不要なメールが完全に削除されていることを確認できるようになりました。 
   
-これらの Office 365 脅威の調査および応答機能をまだお持ちでない場合は、[今すぐお試しください](https://aka.ms/tryo365threatintel3)。 [Office 365 の脅威調査および応答機能の詳細に](https://aka.ms/readmoreabouto365threatintel)ついて説明します。
+これらの機能がまだ用意されていない場合は、[今すぐお試しください](https://aka.ms/tryo365threatintel3)。 [Office 365 の脅威調査および応答機能の詳細に](https://aka.ms/readmoreabouto365threatintel)ついて説明します。
   
 ![インシデント修復の電子メールリストのスクリーンショット](media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
   
@@ -66,7 +66,7 @@ Office 365 の脅威の調査と応答機能には、Microsoft インテリジ�
   
 ## <a name="whats-next"></a>[次へ]
 
-- この記録されたセッションの office 365 脅威の調査および応答機能の詳細については[、「office 365 の脅威インテリジェンスを Cyberattacks する」を](https://myignite.microsoft.com/videos/53723)参照してください。
+- この記録されたセッションの office 365 脅威の調査および応答機能の詳細については[、「office 365 で Cyberattacks を使用する](https://myignite.microsoft.com/videos/53723)」を参照してください。
     
 - [今すぐ office 365 の脅威の調査と応答機能を試す](https://aka.ms/tryo365threatintel3)か、または office E5 の試用版を開始しましょう。 
     

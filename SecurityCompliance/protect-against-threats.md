@@ -14,18 +14,18 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Office 365 Enterprise が、スプーフィング、マルウェア、スパム、フィッシングの試行、データへの無許可アクセスなどのさまざまな脅威から組織を保護する方法について説明します。
-ms.openlocfilehash: da39421184deacdc19adf073f086a3d8a2021acd
-ms.sourcegitcommit: 5b5bbced1577701bdb6befc8ed252e9d9e776529
+ms.openlocfilehash: 1d6abe6bd9347a625c6e533737ffe4bb3b7cee7a
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30245583"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693246"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Office 365 で脅威から保護する
 
-Office 365 Enterprise を使用すると、スプーフィング、マルウェア、スパム、フィッシングの試行、データへの無許可アクセスなどのさまざまな脅威から組織を保護することができます。このページのリソースを使用して、脅威保護のオプションと実行できるアクションについて学習します。
+Office 365 Enterprise を使用すると、スプーフィング、マルウェア、スパム、フィッシングの試行、データへの無許可アクセスなどのさまざまな脅威から組織を保護することができます。 このページのリソースを使用して、脅威保護のオプションと実行できるアクションについて学習します。
 
-## <a name="malware"></a>マルウェア
+## <a name="malware"></a>ウェア
 
 - [スパム&amp;対策マルウェア対策保護](anti-spam-and-anti-malware-protection.md)
     
@@ -39,7 +39,7 @@ Office 365 Enterprise を使用すると、スプーフィング、マルウェ�
 
 - [Office 365 ATP の安全な添付ファイル](atp-safe-attachments.md)
 
-- [Office 365 の ATP の安全なリンク機能](atp-safe-links.md)
+- [Office 365 の ATP の安全なリンク](atp-safe-links.md)
 
 ## <a name="anti-phishing"></a>フィッシング対策
 
@@ -55,11 +55,11 @@ Office 365 でカスタムドメインを使用している場合は、組織か
     
 - [DKIM を使用して、Office 365 のカスタム ドメインから送信される送信電子メールを検証する](use-dkim-to-validate-outbound-email.md)
     
-- [DMARC を使用して Office 365 でメールを検証する](use-dmarc-to-validate-email.md)
+- [DMARC を使用して Office で電子メールを検証する365](use-dmarc-to-validate-email.md)
 
 ## <a name="anti-spam"></a>スパム対策
 
-- [Office 365 の電子メールのスパム対策保護](anti-spam-protection.md)
+- [Office 365 メールのスパム対策保護](anti-spam-protection.md)
 
 - [Office 365 で組織全体の信頼できる差出人またはブロックする差出人の一覧を作成する](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md)
 
@@ -72,7 +72,7 @@ Office 365 でカスタムドメインを使用している場合は、組織か
   
 - [Office 365 ATP について](office-365-atp.md)
 
-- [Office 365 脅威インテリジェンスの概要を理解する](office-365-ti.md)
+- [Office 365 ATP Plan 2 の概要を取得する](office-365-ti.md)
     
 - [フィッシング対策ポリシーを設定する](set-up-anti-phishing-policies.md)
     
@@ -82,7 +82,7 @@ Office 365 でカスタムドメインを使用している場合は、組織か
     
 ## <a name="encryption"></a>暗号化
 
-暗号化の入門を行い、rights management ポリシーおよび電子メールの暗号化を設定し、追加の暗号化設定を構成します。Office 365 用のメールサーバーによって使用されるルート証明書の詳細を取得します。
+暗号化の入門を行い、rights management ポリシーおよび電子メールの暗号化を設定し、追加の暗号化設定を構成します。 Office 365 用のメールサーバーによって使用されるルート証明書の詳細を取得します。
   
 - [Office 365 での暗号化について](encryption.md)
     
@@ -94,7 +94,7 @@ Office 365 でカスタムドメインを使用している場合は、組織か
         
 ## <a name="privileged-access-management"></a>特権アクセスの管理
 
-機密データへの継続的なアクセス、または重要な構成設定へのアクセスを備えた既存の特権のある管理者アカウントを使用する可能性がある、侵害から組織を保護します。特権アクセス管理を有効にした後、ユーザーは、範囲と時間を制限された承認ワークフローを使用して、昇格された権限のあるタスクを完了するためにジャストインタイムアクセスを要求する必要があります。
+機密データへの継続的なアクセス、または重要な構成設定へのアクセスを備えた既存の特権のある管理者アカウントを使用する可能性がある、侵害から組織を保護します。 特権アクセス管理を有効にした後、ユーザーは、範囲と時間を制限された承認ワークフローを使用して、昇格された権限のあるタスクを完了するためにジャストインタイムアクセスを要求する必要があります。
   
 - [特権アクセス管理の概要を理解する](privileged-access-management-overview.md)
     

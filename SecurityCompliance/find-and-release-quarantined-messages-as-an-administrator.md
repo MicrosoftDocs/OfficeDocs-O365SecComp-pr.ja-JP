@@ -7,7 +7,6 @@ ms.date: 6/16/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,18 +14,18 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: このトピックでは、Exchange Online and Exchange Online Protection (EOP) の管理者が、Exchange 管理センター (EAC) の検疫済みメッセージに入っているメッセージの検索、解放、報告を行う方法について説明します。
-ms.openlocfilehash: aec067169b343ed186d506ed33c29385a7dc6450
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: a973d3a3b1875ed1ba691f91c1c23373ac8d6694
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341788"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693226"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>管理者として検疫済みメッセージを検索して解放する
 
-このトピックでは、exchange online と exchange online Protection (EOP) 管理者が、exchange 管理センター (EAC) で検疫されたメッセージの検索、解放、およびレポートを行う方法について説明します。Office 365 は、スパムとして識別されたか、メールフロールール (トランスポートルールとも呼ばれる) と一致したために、メッセージを検疫するように指示します。 
+このトピックでは、Exchange Online and Exchange Online Protection (EOP) の管理者が、Exchange 管理センター (EAC) の検疫済みメッセージに入っているメッセージの検索、解放、報告を行う方法について説明します。 Office 365 は、スパムとして識別されたか、メールフロールール (トランスポートルールとも呼ばれる) と一致したために、メッセージを検疫するように指示します。 
   
-EAC の代わり&amp;にセキュリティコンプライアンスセンターを使用して、これらのタスクを完了したり、マルウェアが含まれているために検疫に送信されたメッセージを表示および操作したりできます。詳細については、「 [Office 365 で電子メールメッセージを検疫](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b)する」を参照してください。
+Use the Security &amp; Compliance Center instead of the EAC to complete any of these tasks as well as view and work with messages that were sent to quarantine because they contain malware. For more information, see [Quarantine email messages in Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
 検疫済みメッセージは EAC の **[検疫]** ページに一覧表示されます。既定では、メッセージは **[受信]** フィールドの降順で並べ替えられます。 **[送信者]**、 **[件名]**、および **[有効期限]** の値もメッセージごとに表示されます。フィールドは、ヘッダーをクリックして並べ替えることができます。見出しをもう一度クリックすると、逆の順序で並べ替えられます。 **[検疫]** ページには最大で 500 個のメッセージを表示できます。 
   
@@ -39,16 +38,16 @@ EAC の代わり&amp;にセキュリティコンプライアンスセンター�
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 <a name="sectionSection0"> </a>
 
-- この手順を実行する前に、アクセス許可を割り当てる必要があります。必要なアクセス許可を確認するには、「 [Exchange Online の機能のアクセス許可](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)」トピックの「検疫」エントリを参照してください。 
+- この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可を確認するには、「 [Exchange Online の機能のアクセス許可](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)」トピックの「検疫」エントリを参照してください。 
     
 - **[検疫]** ページでは、一度に複数のメッセージを解放または報告することができません。代わりに、このタスクを実行するリモート Windows PowerShell スクリプトを作成することができます。メッセージを検索する場合は [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) コマンドレットを使用し、それらを解放する場合は [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) コマンドレットを使用します。 
     
-- このトピックの手順で使用可能なキーボード ショートカットについては、「**Exchange 管理センターのキーボード ショートカット**」を参照してください。
+- このトピックの手順で使用可能なキーボード ショートカットについては、「 **Keyboard shortcuts in Exchange 2013**」を参照してください。
     
 > [!TIP]
 > 問題がある場合は、Exchange のフォーラムで質問してください。 次のフォーラムにアクセスしてください。[Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612)、[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)、 または [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)。 
   
-## <a name="use-advanced-search-to-filter-and-locate-quarantined-messages"></a>高度な検索を使用して、検疫されたメッセージをフィルタリングして特定する
+## <a name="use-advanced-search-to-filter-and-locate-quarantined-messages"></a>高度な検索を使用して検疫済みメッセージをフィルター処理して特定する
 <a name="BKMK_UseAdvancedSearchtoFilterMessages"> </a>
 
 Exchange 管理センター (EAC) では、高度な検索を使用してさまざまな条件に基づいて検疫済みアイテムをフィルター処理することができます。これらの条件は、個別に使用することも、組み合わせて使用することもできます。検索によって、すべてのフィルター条件を満たすメッセージのリストが返されます。
@@ -70,7 +69,7 @@ Exchange 管理センター (EAC) では、高度な検索を使用してさま�
 6. **[有効期限]** メッセージが検疫から削除されるのが今後 24 時間以内 ( **[今日]**) か、今後 48 時間以内 ( **[今後 2 日間]**) か、今後 1 週間以内 ( **[今後 7 日間]**) かを選択したり、メッセージが検疫から削除される期間を指定することもできます。
     
     > [!IMPORTANT]
-    > 既定では、スパム検疫メッセージは15日間検疫に保持され、メールフロールールと一致した検疫メッセージは7日間検疫に保持されます。この期間が経過すると、Office 365 はメッセージを削除し、取得することはできません。メールフロールールと一致した検疫済みメッセージの保持期間は構成できません。ただし、スパム検疫メッセージの保持期間は、コンテンツフィルターポリシーの [**スパムを保持する (日)** ] の設定によって下げることができます。詳細については、「[スパムフィルターポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。 
+    > 既定では、スパム検疫メッセージは15日間検疫に保持され、メールフロールールと一致した検疫メッセージは7日間検疫に保持されます。 この期間が経過したら、Office 365 はメッセージを削除し、メッセージは取得不能になります。 メールフロールールと一致した検疫済みメッセージの保持期間は構成できません。 ただし、スパム検疫メッセージの保持期間は、コンテンツ フィルター ポリシーの **[次の期間スパムを保持する (日)]** の設定によって短縮できます。 詳細については、「 [スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。 
   
 7. **種類****スパム**として識別された検疫済みメッセージを検索するかどうか、またはメールフロールール (**トランスポートルール**) に一致したメッセージを検索するかどうかを指定できます。
     
@@ -132,7 +131,7 @@ Exchange 管理センター (EAC) では、高度な検索を使用してさま�
     
 - [1 つ以上の検疫済みメッセージをすべての受信者に解放する](find-and-release-quarantined-messages-as-an-administrator.md#Releaseoneormorequarantinedmessagestoallrecipients)
     
-- [すべての受信者に 1 つ以上の検疫済みメッセージを解放し、誤検知として報告する](find-and-release-quarantined-messages-as-an-administrator.md#Releaseoneormorequarantinedmessagestoallrecipientsandreportfalsepositives)
+- [Release one or more quarantined messages to all recipients and report false positives](find-and-release-quarantined-messages-as-an-administrator.md#Releaseoneormorequarantinedmessagestoallrecipientsandreportfalsepositives)
     
 ### <a name="release-a-quarantined-message-and-allow-future-messages-from-the-sender"></a>検疫済みメッセージを解放し、この送信者からの将来のメッセージを許可する
 <a name="Releasequarantinedmessageallowfuturemessagesfromsender"> </a>
@@ -145,7 +144,7 @@ Exchange 管理センター (EAC) では、高度な検索を使用してさま�
   
 **[選択したメッセージを解放し、送信者を許可します]** をドロップダウン リストからクリックします。 
     
-3. [**メッセージを解放し、送信者を許可する**] ダイアログボックスが開きます。必要に応じて、メッセージを Microsoft に報告するかどうかを選択し、[**解放して許可**する] をクリックすることもできます。メッセージは、宛先になっているすべての受信者に解放され、この送信者からの今後のすべてのメッセージが許可されます。ただし、このメッセージがメールフロールールまたはブロックされる送信者によって検疫された場合、今後のメッセージの送信者は引き続きブロックされます。 
+3. **[メッセージを解放し、送信者を許可する]** ダイアログ ボックスが開きます。 オプションで、メッセージを Microsoft に報告することを選択し、その後、 **[解放して許可する]** をクリックすることもできます。 メッセージは、アドレス指定されるすべての受信者に解放され、この送信者からの将来のメッセージはすべて許可されます。 ただし、このメッセージがメールフロールールまたはブロックされる送信者によって検疫された場合、今後のメッセージの送信者は引き続きブロックされます。 
     
 ### <a name="release-a-quarantined-message-to-specific-recipients-without-reporting-it-as-a-false-positive"></a>検疫済みメッセージを誤検知として報告せずに特定の受信者に解放する
 <a name="Releasequarantinedmessagetospecificrecipientswithoutreportingasfalsepositive"> </a>
@@ -193,7 +192,7 @@ Exchange 管理センター (EAC) では、高度な検索を使用してさま�
   
 **[最新の情報に更新]**![[最新の情報に更新] アイコン](media/ITPro-EAC-RefreshIcon.gif) アイコンをクリックしてデータを更新してから、メッセージをダブルクリックすると、それが目的の受信者に解放されていることが示されます。 
   
-## <a name="for-more-information"></a>詳細情報
+## <a name="for-more-information"></a>関連情報
 <a name="sectionSection4"> </a>
 
 [検疫に関する FAQ](quarantine-faq.md)

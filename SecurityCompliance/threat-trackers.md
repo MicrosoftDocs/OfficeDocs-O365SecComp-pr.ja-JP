@@ -14,19 +14,19 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: 新しい注目すべきトラッカーを含む脅威のトラッカーについて説明します。これにより、組織はセキュリティ上の問題に常に役立てることができます。
-ms.openlocfilehash: 4cf3e13b7379e26deec90bbae2c4f9cf42fa91b7
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 6870e8d613dbd5d72f20e96be9615712bac711a9
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524051"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693076"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>脅威トラッカー - 新機能とNoteworthy 機能 
 
 [Office 365 の脅威調査と応答](office-365-ti.md)機能を使用すると、組織のセキュリティチームが cybersecurity の脅威を検出し、行動を取ることができます。 Office 365 の脅威の調査と応答の機能には、注目すべきトラッカーを含む脅威の追跡機能が含まれています。 これらの新機能と次の手順の概要を確認するには、この記事をお読みください。 
 
 > [!IMPORTANT]
-> office 365 脅威インテリジェンスは、追加の脅威保護機能を備えた office 365 Advanced threat protection プラン2の一部になっています。 詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
+> office 365 脅威インテリジェンスは office 365 Advanced threat protection プラン2に加えて、追加の脅威保護機能と共に提供されるようになりました。 詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
   
 ## <a name="what-are-threat-trackers"></a>脅威のトラッカーとは
 
@@ -91,7 +91,7 @@ inaugural 注目すべき脅威により、 [Office 365 の ATP の安全な添�
   
 新しい注目すべき脅威フィルターは、ATP の安全な添付ファイルによって最近検出されたアイテムを強調表示します。 これらの検出は、電子メールフローまたは他のお客様の電子メールのいずれかで Office 365 によって以前検出されていない、新しい悪意のあるファイルであるアイテムを表します。 注目すべき脅威追跡ツールの項目に注目し、それらのユーザーが対象としているユーザーを確認し、[詳細な分析] タブ (エクスプローラーで電子メールの件名をクリックすると表示されます) に示されている分析の詳細を確認します。 メモこのタブは、ATP の安全な添付ファイル機能によって検出されたメールにのみ表示されます。この注目すべきトラッカーにはフィルターが含まれていますが、そのフィルターをエクスプローラーで他の検索に使用することもできます。
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - 組織にこれらの office 365 脅威の調査および応答機能がまだない場合は、「 [office 365 の脅威の調査および応答機能を入手する方法](get-started-with-ti.md)」を参照してください。
     
