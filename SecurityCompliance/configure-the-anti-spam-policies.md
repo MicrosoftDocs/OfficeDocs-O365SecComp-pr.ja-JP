@@ -7,7 +7,6 @@ ms.date: 6/9/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,26 +14,26 @@ ms.assetid: 31279431-828d-48bd-b979-20b6de15fa4a
 ms.collection:
 - M365-security-compliance
 description: スパム フィルターは、既定のスパム対策ポリシー (接続フィルター、スパム フィルター、送信スパム) により、企業全体で自動的に有効になります。管理者は既定のスパム対策ポリシーを削除できません。ただし、表示と編集は行えるため、組織のニーズを最適に満たすように既定のスパム対策ポリシーをカスタマイズすることは可能です。よりきめ細かく制御する場合は、カスタム ポリシーを作成して、それを組織内の特定のユーザー、グループ、またはドメインに適用することもできます。既定で、カスタム ポリシーの方が既定のポリシーより優先されますが、ポリシーの優先度は変更できます。
-ms.openlocfilehash: 3e972a150b70f1081cb4c3b5e3672a3acba34785
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 992885a394031e133008f28a455383fc2f3f0616
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30340968"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691756"
 ---
-# <a name="configure-the-anti-spam-policies"></a><span data-ttu-id="e9054-106">スパム対策ポリシーを構成する</span><span class="sxs-lookup"><span data-stu-id="e9054-106">Configure the anti-spam policies</span></span>
+# <a name="configure-the-anti-spam-policies"></a><span data-ttu-id="292c3-106">スパム対策ポリシーを構成する</span><span class="sxs-lookup"><span data-stu-id="292c3-106">Configure the anti-spam policies</span></span>
 
-<span data-ttu-id="e9054-p102">スパム フィルターは、既定のスパム対策ポリシー (接続フィルター、スパム フィルター、送信スパム) により、企業全体で自動的に有効になります。管理者は既定のスパム対策ポリシーを削除できません。ただし、表示と編集は行えるため、組織のニーズを最適に満たすように既定のスパム対策ポリシーをカスタマイズすることは可能です。よりきめ細かく制御する場合は、カスタム ポリシーを作成して、それを組織内の特定のユーザー、グループ、またはドメインに適用することもできます。既定で、カスタム ポリシーの方が既定のポリシーより優先されますが、ポリシーの優先度は変更できます。</span><span class="sxs-lookup"><span data-stu-id="e9054-p102">Spam filtering is automatically enabled company-wide through the default anti-spam policies (connection filter, spam filter, and outbound spam). As an administrator, you can view and edit, but not delete, the default anti-spam policies so that they are tailored to best meet the needs of your organization. For greater granularity, you can also create custom policies and apply them to specified users, groups, or domains in your organization. By default, custom policies take precedence over the default policy, but you can change the priority of your policies.</span></span> 
+<span data-ttu-id="292c3-p102">スパム フィルターは、既定のスパム対策ポリシー (接続フィルター、スパム フィルター、送信スパム) により、企業全体で自動的に有効になります。管理者は既定のスパム対策ポリシーを削除できません。ただし、表示と編集は行えるため、組織のニーズを最適に満たすように既定のスパム対策ポリシーをカスタマイズすることは可能です。よりきめ細かく制御する場合は、カスタム ポリシーを作成して、それを組織内の特定のユーザー、グループ、またはドメインに適用することもできます。既定で、カスタム ポリシーの方が既定のポリシーより優先されますが、ポリシーの優先度は変更できます。</span><span class="sxs-lookup"><span data-stu-id="292c3-p102">Spam filtering is automatically enabled company-wide through the default anti-spam policies (connection filter, spam filter, and outbound spam). As an administrator, you can view and edit, but not delete, the default anti-spam policies so that they are tailored to best meet the needs of your organization. For greater granularity, you can also create custom policies and apply them to specified users, groups, or domains in your organization. By default, custom policies take precedence over the default policy, but you can change the priority of your policies.</span></span> 
   
-<span data-ttu-id="e9054-111">スパム対策ポリシーの構成の詳細については、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e9054-111">For more about configuring your anti-spam policies, see the following topics:</span></span>
+<span data-ttu-id="292c3-111">スパム対策ポリシーの構成の詳細については、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="292c3-111">For more about configuring your anti-spam policies, see the following topics:</span></span>
   
-[<span data-ttu-id="e9054-112">接続フィルター ポリシーを構成する</span><span class="sxs-lookup"><span data-stu-id="e9054-112">Configure the connection filter policy</span></span>](configure-the-connection-filter-policy.md)
+[<span data-ttu-id="292c3-112">接続フィルター ポリシーを構成する</span><span class="sxs-lookup"><span data-stu-id="292c3-112">Configure the connection filter policy</span></span>](configure-the-connection-filter-policy.md)
   
-[<span data-ttu-id="e9054-113">スパム フィルター ポリシーの構成</span><span class="sxs-lookup"><span data-stu-id="e9054-113">Configure your spam filter policies</span></span>](configure-your-spam-filter-policies.md)
+[<span data-ttu-id="292c3-113">スパム フィルター ポリシーの構成</span><span class="sxs-lookup"><span data-stu-id="292c3-113">Configure your spam filter policies</span></span>](configure-your-spam-filter-policies.md)
   
 > [!IMPORTANT]
-> <span data-ttu-id="e9054-p103">EOP スタンドアロンのお客様の場合、既定では、EOP コンテンツフィルターはスパム検出メッセージを各受信者の迷惑メールフォルダーに送信します。ただし、[**メッセージを迷惑メールフォルダーに移動する**] アクションがオンプレミスのメールボックスに対して機能するようにするには、オンプレミスのサーバー上で2つの Exchange メールフロールール (トランスポートルールとも呼ばれる) を構成して、によって追加されたスパムヘッダーを検出する必要があります。EOP.詳細については、「[スパムが各ユーザーの迷惑メールフォルダーにルーティングされるようにする](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e9054-p103">For EOP standalone customers: By default, the EOP content filters send spam-detected messages to each recipients' Junk Email folder. However, in order to ensure that the **Move message to Junk Email folder** action will work with on-premises mailboxes, you must configure two Exchange mail flow rules (also known as transport rules) on your on-premises servers to detect spam headers added by EOP. For details, see [Ensure that spam is routed to each user's Junk Email folder](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).</span></span> 
+> <span data-ttu-id="292c3-114">EOP スタンドアロンのお客様の場合、既定では、EOP コンテンツ フィルターはスパム検出メッセージを各受信者の迷惑メール フォルダーに送信します。</span><span class="sxs-lookup"><span data-stu-id="292c3-114">For EOP standalone customers: By default, the EOP content filters send spam-detected messages to each recipients' Junk Email folder.</span></span> <span data-ttu-id="292c3-115">ただし、[**メッセージを迷惑メールフォルダーに移動する**] アクションがオンプレミスのメールボックスに対して機能するようにするには、オンプレミスのサーバー上で2つの Exchange メールフロールール (トランスポートルールとも呼ばれる) を構成して、によって追加されたスパムヘッダーを検出する必要があります。EOP.</span><span class="sxs-lookup"><span data-stu-id="292c3-115">However, in order to ensure that the **Move message to Junk Email folder** action will work with on-premises mailboxes, you must configure two Exchange mail flow rules (also known as transport rules) on your on-premises servers to detect spam headers added by EOP.</span></span> <span data-ttu-id="292c3-116">詳細については、「 [スパムが各ユーザーの [迷惑メール] フォルダーにルーティングされるようにする](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="292c3-116">For details, see [Ensure that spam is routed to each user's Junk Email folder](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).</span></span> 
   
-[<span data-ttu-id="e9054-117">送信スパム ポリシーを構成する</span><span class="sxs-lookup"><span data-stu-id="e9054-117">Configure the outbound spam policy</span></span>](configure-the-outbound-spam-policy.md)
+[<span data-ttu-id="292c3-117">送信スパム ポリシーを構成する</span><span class="sxs-lookup"><span data-stu-id="292c3-117">Configure the outbound spam policy</span></span>](configure-the-outbound-spam-policy.md)
   
 

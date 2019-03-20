@@ -7,23 +7,22 @@ ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 description: Microsoft Outlook で S/MIME 暗号化メッセージを送信または返信する場合の操作感は、非暗号化メッセージを使用した場合とよく似ています。
-ms.openlocfilehash: 311da8b87994703b68d163ff60b25786719ab024
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: dabb911cf770ae843d97eb6ac8b0f683f27a78dd
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296640"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692686"
 ---
-# <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a><span data-ttu-id="a34d8-103">Exchange Online で S/MIME 署名および暗号化された電子メールを送受信する</span><span class="sxs-lookup"><span data-stu-id="a34d8-103">Send and receive S/MIME signed and encrypted email in Exchange Online</span></span>
+# <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a><span data-ttu-id="5c293-103">Exchange Online で S/MIME 署名および暗号化された電子メールを送受信する</span><span class="sxs-lookup"><span data-stu-id="5c293-103">Send and receive S/MIME signed and encrypted email in Exchange Online</span></span>
 
-<span data-ttu-id="a34d8-p101">Microsoft Outlook で S/MIME 暗号化メッセージを送信または返信することは、暗号化されていないメッセージと非常によく似ています。outlook on the web (旧称 outlook web App) などの電子メールプログラムからの S/mime 暗号化メッセージの読み取りまたは送信の詳細については、「 [outlook を使用して s/mime で暗号化されたメッセージを送受信](https://go.microsoft.com/fwlink/p/?LinkId=392520)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a34d8-p101">Sending or replying to an S/MIME-encrypted message in Microsoft Outlook is very similar to the experience with a non-encrypted message. For more information about reading or sending S/MIME-encrypted messages from an email program such as Outlook on the web (formerly known as Outlook Web App), see [Use Outlook to send and reply to S/MIME encrypted messages](https://go.microsoft.com/fwlink/p/?LinkId=392520).</span></span>
+<span data-ttu-id="5c293-104">Microsoft Outlook で S/MIME 暗号化メッセージを送信または返信する場合の操作感は、非暗号化メッセージを使用した場合とよく似ています。</span><span class="sxs-lookup"><span data-stu-id="5c293-104">Sending or replying to an S/MIME-encrypted message in Microsoft Outlook is very similar to the experience with a non-encrypted message.</span></span> <span data-ttu-id="5c293-105">outlook on the web (旧称 outlook web App) などの電子メールプログラムからの S/mime 暗号化メッセージの読み取りまたは送信の詳細については、「 [outlook を使用して s/mime で暗号化されたメッセージを送受信](https://go.microsoft.com/fwlink/p/?LinkId=392520)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5c293-105">For more information about reading or sending S/MIME-encrypted messages from an email program such as Outlook on the web (formerly known as Outlook Web App), see [Use Outlook to send and reply to S/MIME encrypted messages](https://go.microsoft.com/fwlink/p/?LinkId=392520).</span></span>
 
-## <a name="for-more-information"></a><span data-ttu-id="a34d8-106">詳細情報</span><span class="sxs-lookup"><span data-stu-id="a34d8-106">For more information</span></span>
+## <a name="for-more-information"></a><span data-ttu-id="5c293-106">関連情報</span><span class="sxs-lookup"><span data-stu-id="5c293-106">For more information</span></span>
 
-[<span data-ttu-id="a34d8-107">S/MIME によるメッセージの署名と暗号化</span><span class="sxs-lookup"><span data-stu-id="a34d8-107">S/MIME for message signing and encryption</span></span>](s-mime-for-message-signing-and-encryption.md)
+[<span data-ttu-id="5c293-107">S/MIME によるメッセージの署名と暗号化</span><span class="sxs-lookup"><span data-stu-id="5c293-107">S/MIME for message signing and encryption</span></span>](s-mime-for-message-signing-and-encryption.md)
