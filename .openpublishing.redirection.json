@@ -109,6 +109,16 @@
         "source_path": "securitycompliance/eop/exchange-online-protection-ip-addresses.md",
         "redirect_url": "https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges", 
         "redirect_document_id": false
-    }                                                                                              
+    },
+    {
+        "source_path": "securitycompliance/supervision-reports.md",
+        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/supervision-policies#reporting", 
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "securitycompliance/install-the-supervision-add-in-for-outlook-desktop.md",
+        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/configure-supervision-policies#step-6---configure-outlook-for-reviewers-optional", 
+        "redirect_document_id": true
+    }                                                                                            
   ] 
 }
