@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 で誤検知が発生しないようにして、正しいメールが迷惑メールにならないようにする方法について説明します。
-ms.openlocfilehash: 31977cee26b894e915744b76e717b829bd540fc0
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 65f7e927d64051e82a135234703e0c86123dab15
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455099"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670652"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Office 365 でメールが迷惑メールとしてマークされるのを防ぐ方法
 
@@ -62,6 +62,10 @@ Exchange Online Protection (EOP) が効率的に機能するためには、い�
 - **DNS レコードが Office 365 を指すようにする** EOP が保護を提供するためには、すべてのドメインのメール エクスチェンジャー (MX) DNS レコードが Office 365 だけを指すようにする必要があります。お使いの MX が Office 365 を指していない場合、EOP はユーザーに迷惑メール フィルター機能を提供しません。別のサービスまたはアプライアンスを使用してドメインのための迷惑メールをフィルタリングする場合、EOP の迷惑メール保護を無効にすることを検討する必要があります。これを行うには、SCL 値を -1 に設定するメール フロー ルールを作成します。EOP を使用することを後で決定する場合は、このメール フロー ルールを必ず削除してください。 
     
 - **ユーザーのメッセージ報告アドインをオンにする** [ユーザーのメッセージ報告アドインを有効にする](enable-the-report-message-add-in.md)ことを強くお勧めします。管理者は、ユーザーが送信しているフィードバックを調べ、あらゆるパターンを使用して、問題の原因と思われる設定を調整することもできます。
+
+- **ユーザーが電子メールの送受信に関する制限の許容範囲内にあることを確認する** (制限の詳細については、[ここ](https://docs.microsoft.com/ja-JP/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)を参照)。
+
+ - **バルク レベルを再確認する** (レベルの詳細については、[ここ](bulk-complaint-level-values.md)を参照)。
     
 ### <a name="for-users"></a>ユーザー向け
     
@@ -74,7 +78,7 @@ EOP では、ユーザーの信頼できる差出人と宛先のリストは適�
 - **Outlook の SmartScreen フィルターを無効にする** ユーザーが古い Outlook デスクトップ クライアントを使用している場合、廃止されている SmartScreen フィルター機能を無効にする必要があります。有効にしておくと、誤検知の原因になることがあります。これは、更新されたデスクトップ Outlook クライアントを実行している場合は必要ありません。
 
 ## <a name="troubleshooting-a-message-ends-up-in-the-junk-folder-even-though-eop-marked-the-message-as-non-spam"></a>トラブルシューティング: EOP がメッセージを迷惑メールではないとマークしてもメッセージが迷惑メール フォルダーに送られる
-<a name="TroubleshootingJunkEOPNonSpam"> </a>
+
 
 ユーザーが Outlook のオプションで、[セーフ リストのみ: 差出人セーフ リストまたは宛先セーフ リストに登録されたユーザーやドメインからのメールのみを受信トレイに配信する] を有効にしている場合、受信者が信頼できる差出人のリストに登録していない差出人からのすべてのメールは、迷惑メールに送られます。EOP がメッセージを迷惑メールではないと判断したかどうか、または管理者がメッセージを迷惑メールではないと判断するルールを EOP に設定したかどうかにかかわらず、この処理は実行されます。
   
@@ -90,7 +94,7 @@ Outlook on the web でメッセージを表示している場合、受信者の�
     
 2. 次のコマンドを実行して、ユーザーの迷惑メール構成設定を確認します。
     
-  ```
+  ```Powershell
   Get-MailboxJunkEmailConfiguration example@contoso.com | fl TrustedListsOnly,ContactsTrusted,TrustedSendersAndDomains
   ```
 

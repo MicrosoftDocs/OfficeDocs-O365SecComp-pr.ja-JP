@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: メールボックス、SharePoint Online サイト、OneDrive アカウント、Microsoft Teams、Office 365 グループ、および Skype for Business の会話内のコンテンツを検索するには、Office 365 セキュリティ/コンプライアンス センターのコンテンツを使用します。キーワード検索クエリと検索条件を使用して検索結果を絞り込むことができます。さらに検索結果をプレビューしたり、エクスポートしたりすることができます。コンテンツ検索は、GDPR データ主体の要求に関連する可能性のあるコンテンツを検索するための効果的なツールでもあります。
-ms.openlocfilehash: b7ecfc68c143225f097508e2cca0e87b7ce250d6
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 22792e9513d0e9a7be468bb13db2e4286f9f140c
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296360"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670722"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 のコンテンツ検索
 
@@ -152,7 +152,7 @@ Office 365 セキュリティ/コンプライアンス センターのコンテ�
   
 検索結果をエクスポートするには
   
-1. セキュリティ/コンプライアンス センターの **[コンテンツ検索]** ページで、**[開く]** をクリックし、検索結果をエクスポートする対象の検索をクリックします。 
+1. セキュリティ/コンプライアンス センターの **[コンテンツ検索]** ページで、検索結果をエクスポートする対象の検索をクリックします。 
     
 2. [ポップアップ] ページで、![検索結果のエクスポート アイコン ](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **[詳細]**、**[結果のエクスポート]** の順にクリックします。検索結果レポートのエクスポートも可能です。
     

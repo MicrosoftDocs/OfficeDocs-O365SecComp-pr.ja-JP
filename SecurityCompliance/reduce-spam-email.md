@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Office 365 でスパム メールや迷惑メールを減らすための最も一般的な方法について説明します。
-ms.openlocfilehash: 5dac207393864f95f769ac205277b0c969f2fe32
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: d32cad18cf3972a667f2eb9a11b50d1b12e809a7
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357548"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670562"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Office 365 で迷惑メールを減らす方法
 
@@ -56,6 +56,9 @@ ms.locfileid: "30357548"
 - **すぐに送信者をブロックする** 送信者をすぐにブロックする必要がある場合は、メール アドレス、ドメイン、または IP アドレスでブロックすることができます。「[EAC を使用して、ドメインまたはユーザーから送信されたメッセージをブロックするメール フロー ルールを作成する](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user)」をご覧ください。エンド ユーザーの許可リストのエントリは、管理者が設定したブロックを無効にできることに注意してください。
     
 - **ユーザーのメッセージ報告アドインをオンにする**: [ユーザーのメッセージ報告アドインを有効にする](enable-the-report-message-add-in.md)ことを強くお勧めします。管理者は、ユーザーが送信しているフィードバックを調べ、何らかのパターンを使用して、問題の原因となっている可能性がある設定を調整することもできます。
+- **[DKIM](use-dkim-to-validate-outbound-email.md)を有効にする**: これにより、すべての送信メッセージに署名して、ドメインとテナントのセキュリティを強化します。
+ > [!TIP]
+> DKIM を有効化したら、[DMARC](use-dkim-to-validate-outbound-email.md) も有効にする必要があります。このレコードにより、DKIM と SPF が正しく動作していることを確認するためです。また、秘密キーと公開対称キーは O365 によって管理されるため、ほとんどのスプーフィング電子メールには署名がありません。
     
 ### <a name="for-users"></a>ユーザー向け
 
