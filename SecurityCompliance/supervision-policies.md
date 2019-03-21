@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Office 365 の監督ポリシーについて
-ms.openlocfilehash: 99957accb6a1f52f0e0a895fc96ef2b6ac0ac757
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: c22abdf315b2301ae9c63b26f548eff302df8e2a
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492856"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720277"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 の監督ポリシー
 
@@ -60,7 +60,7 @@ Office 365 の監督ポリシーでは、指定されたレビュー担当者に
 > 監督ポリシーによって監視されるユーザーは、Microsoft 365 E5 コンプライアンスライセンス、Advanced コンプライアンスアドオンを備えた office 365 Enterprise E3 ライセンス、または office 365 Enterprise E5 サブスクリプションに含まれている必要があります。
 既存の Enterprise e5 プランを所有しておらず、監督を試みる場合は、 [Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)することができます。
 
-### <a name="reviewers"></a>校閲者
+### <a name="reviewers"></a>Reviewers
 
 監督ポリシーを作成すると、監視対象ユーザーのメッセージのレビューを実行するユーザーも決定されます。 ポリシーでは、ユーザーの電子メールアドレスを使用して、監視対象の通信を確認する個人またはグループを識別します。
 
@@ -99,7 +99,7 @@ Office 365 の監督ポリシーでは、指定されたレビュー担当者に
 
 #### <a name="custom-keyword-dictionaries"></a>ユーザー設定のキーワード辞書
 
-カスタムキーワード辞書 (または辞書) を構成すると、組織または業界固有のキーワードを簡単に管理でき、辞書ごとに最大10万用語をサポートできます。 必要に応じて、1つのポリシーに複数のカスタムキーワードディクショナリを適用したり、ポリシーごとに1つのキーワードディクショナリを設定したりできます。 これらの辞書は、監督ポリシーで割り当てられ、ファイル (.csv または .txt リストなど) からソースとして、または[PowerShell コマンドレットで直接入力](create-a-keyword-dictionary.md)できるリストから作成できます。
+カスタムキーワード辞書 (または辞書) を構成すると、組織または業界固有のキーワードを簡単に管理でき、辞書ごとに最大10万用語をサポートできます。 必要に応じて、1つのポリシーに複数のカスタムキーワードディクショナリを適用したり、ポリシーごとに1つのキーワードディクショナリを設定したりできます。 これらの辞書は、監督ポリシーで割り当てられ、ファイル (.csv または .txt リストなど) や、[コンプライアンスセンターでインポート](create-a-keyword-dictionary.md)できるリストからソースにすることができます。
 
 #### <a name="conditional-settings"></a>条件付き設定
 
@@ -107,7 +107,7 @@ Office 365 の監督ポリシーでは、指定されたレビュー担当者に
 
 次の表では、各条件の詳細について説明します。
   
-|**条件**|**この条件の使用方法**|
+|**Condition**|**この条件の使用方法**|
 |:-----|:-----|
 |これらのいずれかのドメインからのメッセージを受信します。  <br><br> これらのドメインのいずれからもメッセージを受信できません | 特定のドメインを受信メッセージに含めたり、除外したりするときにポリシーを適用するには、各ドメインを入力し、複数のドメインをコンマで区切ります。 入力した各ドメインは個別に適用されます (ポリシーをメッセージに適用するには、これらのドメインのいずれか1つだけを適用する必要があります)。 |
 |これらのドメインのいずれかにメッセージが送信されます。  <br><br> メッセージがこれらのドメインのいずれにも送信されない | 特定のドメインを送信メッセージに含めたり除外したりするときにポリシーを適用するには、各ドメインを入力し、複数のドメインをコンマで区切ります。 入力した各ドメインは個別に適用されます (ポリシーをメッセージに適用するには、これらのドメインのいずれか1つだけを適用する必要があります)。 |
@@ -230,7 +230,7 @@ Outlook を使用すると、レビューアーは次のことができます。
 |**タグの種類**|**意味**|
 |:-----|:-----|
 | 未確認 | まだ確認されていないメールの数。 これらの電子メールは、Office 365 監督ダッシュボード、または web 上の outlook/outlook でレビューアーの監督フォルダーにあるレビューを待機しています。
-| 準拠 | 確認済みで、準拠としてマークされたメールの数。 これらのメッセージは引き続き解決する必要があります。 |
+| Compliant | 確認済みで、準拠としてマークされたメールの数。 これらのメッセージは引き続き解決する必要があります。 |
 | Questionable | レビューされ、疑わしいとマークされたメールの数。 これはフラグとして機能します。他のレビュー担当者は、コンプライアンスのためにメールが必要かどうかを確認するのに役立ちます。 これらのメッセージは引き続き解決する必要があります。 |
 | 非準拠 (アクティブ) | レビュー担当者が現在調査している、準拠していない電子メールの数。 |
 | 非準拠 (解決) | レビュー担当者が調査および解決した、準拠していない電子メールの数。 |
@@ -249,16 +249,17 @@ Outlook を使用すると、レビューアーは次のことができます。
 
 |**アクティビティ**|**関連付けられたコマンド**|
 |:-----|:-----|
-| ポリシーの作成 | SupervisoryReviewPolicy <br> SupervisoryReviewRule |
-| ポリシーの編集 | SupervisoryReviewPolicy <br> SupervisoryReviewRule |
-| ポリシーの削除| SupervisoryReviewPolicy |
+| ポリシーの作成 | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
+| ポリシーの編集 | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
+| ポリシーの削除| [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
+| ポリシーの表示 | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
 
 監査は、統合監査ログの検索機能を使用するか、 [search-unifiedauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell コマンドレットを使用して取得できます。
 
 たとえば、次の例では、すべての監督レビュー活動 (ポリシーとルール) のアクティビティを返し、それぞれの詳細情報を一覧表示します。
 
 ```
-Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"} | fl CreationDate,Operations,UserIds,AuditData 
+Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
 ```
 
 監督のレポートとログで提供される情報に加えて、 [SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity?view=exchange-ps) PowerShell コマンドレットを使用して、すべての監督ポリシーアクティビティの完全な詳細リストを取得することもできます。

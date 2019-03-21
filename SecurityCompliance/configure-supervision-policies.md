@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 監督レビューポリシーを設定して、レビューのために従業員のコミュニケーションをキャプチャします。
-ms.openlocfilehash: 2e321989934402b833d6190f65d696f4eb7919ca
-ms.sourcegitcommit: 547a05da067a8f66fdaccf1cc399afcf863f5a87
+ms.openlocfilehash: 76a5e7152b609944eeb2fe1390e204e1463a673b
+ms.sourcegitcommit: 9a69ea604b415af4fef4964a19a09f3cead5a2ce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30474158"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30701292"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>組織用に監督ポリシーを構成する
 
@@ -62,26 +62,20 @@ Office 365 組織の監督をセットアップして使用するには、次の
 
 ## <a name="step-1---set-up-groups-for-supervision-optional"></a>手順 1-監督のグループをセットアップする (オプション)
 
- 監督ポリシーを作成すると、誰が通信をレビューし、それらのレビューを実行するかを決定できます。 このポリシーでは、電子メールアドレスを使用して個人またはユーザーのグループを識別します。 セットアップを簡単にするために、コミュニケーションをレビューするユーザーのためのグループを作成します。 グループを使用している場合は、たとえば、2つの異なるグループ間の通信を監視する場合、または、監視しないグループを指定する場合などに、いくつかの必要な場合があります。 このしくみの詳細については、「[配布グループの例](configure-supervision-policies.md#GroupExample)」を参照してください。
-  
-組織内のグループ間の通信を監督するには、Exchange 管理センターで配布グループを設定します (**受信者** \> **グループ**に移動します)。 配布グループの設定の詳細については、「[配布グループの管理](http://go.microsoft.com/fwlink/?LinkId=613635)」を参照してください。
-  
-> [!NOTE]
-> 必要に応じて、監視に動的配布グループまたはセキュリティグループを使用することもできます。 組織のニーズに適したものかどうかを判断するには、「[メールが有効なセキュリティグループの管理](http://go.microsoft.com/fwlink/?LinkId=627033)」と「[動的配布グループの管理](http://go.microsoft.com/fwlink/?LinkId=627058)」を参照してください。
-  
-<a name="GroupExample"> </a>
+ 監督ポリシーを作成すると、誰が通信をレビューし、それらのレビューを実行するかを決定できます。 このポリシーでは、電子メールアドレスを使用して個人またはユーザーのグループを識別します。 セットアップを簡単にするために、コミュニケーションをレビューするユーザーのためのグループを作成できます。 グループを使用している場合、たとえば、2つの異なるグループ間の通信を監視する場合、または、監視しないグループを指定する場合は、いくつかの必要な場合があります。
 
-### <a name="example-distribution-groups"></a>配布グループの例
+次の表を使用して、監督ポリシー用に組織内のグループを構成する方法について説明します。
 
-この例には、Contoso の金融地域に設定されている配布グループが含まれています。
-  
-Contoso 社の金融地域では、米国の仲立人間での通信のサンプリングを監視する必要があります。 ただし、そのグループ内のコンプライアンス責任者は監督を必要としません。 この例では、次のグループを作成できます。
-  
-|**この配布グループをセットアップする**|**グループアドレス (エイリアス)**|**説明**|
+| **ポリシーメンバー** | **サポートされるグループ** | **サポートされないグループ** |
 |:-----|:-----|:-----|
-|すべての US ブローカー | US_Brokers@Contoso.com | このグループには、Contoso に勤務しているすべての US ベースのブローカーの電子メールアドレスが含まれています。 |
-| すべての US コンプライアンス責任者 | US_Compliance@Contoso.com  | このグループには、Contoso に勤務しているすべての米準拠責任者の電子メールアドレスが含まれています。 このグループはすべての US ベースのブローカーのサブセットであるため、このエイリアスを使用して、監督ポリシーからコンプライアンス担当者を除外することができます。 |
+|ユーザーの監視 | 配布グループ <br> [Office 365 グループ] | 動的配布グループ |
+| Reviewers | メールが有効なセキュリティ グループ  | 配布グループ <br> 動的配布グループ |
   
+グループのセットアップの詳細については、以下を参照してください。
+- [配布グループを作成および管理する](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
+- [メールが有効なセキュリティ グループの管理](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
+- [Office 365 グループの概要](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+
 <a name="MakeAvailable"> </a>
 
 ## <a name="step-2---make-supervision-available-in-your-organization-required"></a>手順 2-組織で監督を利用できるようにする (必須)
@@ -118,43 +112,26 @@ Contoso 社の金融地域では、米国の仲立人間での通信のサンプ
 
 <a name="sensitiveinfo"> </a>
   
-## <a name="step-3---create-custom-sensitive-information-types-or-custom-keyword-dictionaries-optional"></a>手順 3-カスタムの機密情報の種類またはユーザー設定のキーワードディクショナリを作成する (オプション)
+## <a name="step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional"></a>手順 3-カスタムの機密情報の種類とカスタムのキーワードディクショナリを作成する (オプション)
 
 監督ポリシーウィザードで既存のカスタムの機密情報の種類またはカスタムキーワードディクショナリから選択するには、最初に、必要に応じてこれらの項目を作成する必要があります。
 
+### <a name="create-custom-keyword-dictionarylexicon-optional"></a>ユーザー設定のキーワード辞書/辞書を作成する (オプション)
+
+テキストエディター (メモ帳など) を使用して、監督ポリシーで監視するキーワード用語を含む新しいファイルを作成します。 各用語が別々の行にあることを確認し、 **Unicode/utf-16 (リトルエンディアン)** 形式でファイルを保存します。
+
 ### <a name="create-custom-sensitive-information-types"></a>カスタムの機密情報の種類を作成する
 
-1. Office 365 Security & コンプライアンスセンターで、新しい機密情報の種類を作成します。 [**分類** \> **機密情報の種類**] に移動し、**新しい機密情報の種類ウィザード**の手順に従います。 ここでは、次の操作を行います。
+1. 新しい機密情報の種類を作成し、Office 365 セキュリティ & コンプライアンスセンターでユーザー辞書を追加します。 [**分類** \> **機密情報の種類**] に移動し、**新しい機密情報の種類ウィザード**の手順に従います。 ここでは、次の操作を行います。
 
     - 機密情報の種類の名前と説明を定義する
     - 近接、信頼度、およびプライマリパターン要素を定義する
+    - ユーザー辞書を一致要素の要件としてインポートする
     - 選択内容を確認し、機密情報の種類を作成する
 
-    詳細については、「[カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)」を参照してください。
-
-### <a name="create-custom-keyword-dictionarylexicon"></a>ユーザー設定のキーワード辞書または辞書を作成する
-
-1. テキストエディター (メモ帳など) を使用して、監督ポリシーで監視するキーワード用語を含む新しいファイルを作成します。 各用語が別々の行にあることを確認し、 **Unicode/utf-16 (リトルエンディアン)** 形式でファイルを保存します。
-2. PowerShell を使用して、Office 365 テナントにキーワードファイルをインポートします。 powershell を使用して office 365 に接続する方法については、「 [connect to office 365 Security & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)」を参照してください。
-
-    PowerShell を使用して Office 365 に接続した後、次のコマンドを実行してキーワード辞書をインポートします。
-
-    ```
-    $fileData = Get-Content "your keyword path and file name" -Encoding Byte -ReadCount 0
-
-    New-DlpKeywordDictionary -Name "Name for your keyword dictionary" -Description "optional description for your keyword dictionary" -FileData $fileData
-    ```
-    詳細については、「 [Create a keyword dictionary](create-a-keyword-dictionary.md)」を参照してください。
-
-3. Office 365 Security & コンプライアンスセンターで、新しい機密情報の種類を作成します。 [**分類** \> **機密情報の種類**] に移動し、**新しい機密情報の種類ウィザード**の手順に従います。 ここでは、次の操作を行います。
-
-    - 機密情報の種類の名前と説明を定義する
-    - マッチング要素の要件としてカスタム辞書を追加する
-    - 選択内容を確認し、機密情報の種類を作成する
+    詳細については、「[カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)」および「[キーワードディクショナリを作成](create-a-keyword-dictionary.md)する」を参照してください。
 
     ユーザー辞書または辞書を作成した後で、 [get-dlpkeyworddictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary)コマンドレットを使用して構成済みのキーワードを表示するか、 [get-dlpkeyworddictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary)コマンドレットを使用して用語を追加または削除することができます。
-
-    詳細については、「[カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)」を参照してください。
 
 <a name="setupsuper"> </a>
 

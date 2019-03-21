@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: 管理者は、Office 365 Security & コンプライアンスセンターのメールフローダッシュボードにある送信メールフローウィジェットと受信メールフローウィジェットについて学習できます。
-ms.openlocfilehash: 98806a699909056b4295911a031bb7b14233ede5
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b3e92228506267e674f2f428fab1ef54d5aee38e
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454889"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720287"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>送信と受信のメール フロー
 
@@ -25,7 +25,7 @@ ms.locfileid: "30454889"
 
 ウィジェットの情報は、Office 365 のコネクタと TLS メッセージ保護に関連しています。 詳細については、以下のトピックを参照してください。
 
-- [Configure mail flow using connectors in Office 365](https://technet.microsoft.com/library/ms.exch.eac.connectorselection.aspx)
+- [Office 365 でコネクタを使用してメール フローを構成する](https://technet.microsoft.com/library/ms.exch.eac.connectorselection.aspx)
 
 - [Exchange Online で電子メール接続をセキュリティで保護するために Office 365 で TLS を使用する方法](https://support.office.com/article/4CDE0CDA-3430-4DC0-B489-F2C0736C929F)
 
@@ -48,3 +48,7 @@ ms.locfileid: "30454889"
 ドロップダウンから [ **tls usage]** ビューを選択すると、そのコネクタ経由でメッセージに対する tls 保護の内訳を確認できます。 **tls の概要レポート**レポートと同様に、このビューには、さまざまな tls バージョンの割合が表示されます。 tls 1.0 接続の場合は、実際には、Office 365 で tls 1.0 サポートが廃止された場合の問題を回避するために、電子メールサーバーまたはパートナーのサーバーをアップグレードまたは修正する必要があります。 詳細については、「 [Office 365 の暗号化に関するテクニカルリファレンスの詳細](https://support.office.com/article/862cbe93-4268-4ef9-ba79-277545ecf221)」を参照してください。
 
 Insights コネクタの潜在的な TLS 暗号化の問題に注意を向けるために役立つコネクタを指します。 分析情報は次のとおりです。 **tls が 25% を超え**ているか、 **tls 1.0 が 50% を超え**ています。 このような洞察がある場合は、コネクタに関連付けられている電子メールサーバーを調査するか、パートナー組織に連絡する必要があります。
+
+## <a name="see-also"></a>関連項目
+
+メールフローダッシュボードの他のメールフローインサイトの詳細については、「 [Security &/コンプライアンスセンター」の「mail flow insights](mail-flow-insights.md)」を参照してください。

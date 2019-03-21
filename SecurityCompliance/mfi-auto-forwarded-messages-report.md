@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 管理者は、Office 365 Security & コンプライアンスセンターのメールフローダッシュボードにある自動転送メッセージレポートについて理解できます。
-ms.openlocfilehash: acfc1996a630cb6ff9a12a1e2953c93ba9862ffd
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 3f3d32eee9c3d706a10731ba7983d3ce8d1f7a75
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454929"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720267"
 ---
 # <a name="auto-forwarded-messages-report"></a>自動転送済みメッセージレポート
 
@@ -33,3 +33,7 @@ ms.locfileid: "30454929"
 ## <a name="insights"></a>分析情報
 
 レポートデータ:**新しい転送ユーザー**および**新しい転送ドメイン**を基にして、2つの洞察が生成されます。 各洞察には、新しいフォワーダーまたはドメインの数の概要と、**新しい転送レポート**へのリンクが含まれており、2種類のデータについてより詳細な情報を提供しています。 **新しい転送レポート**には、新しいアクティビティのタイムラインビューも表示され、[詳細] テーブルには転送を開始したユーザーとそのドメインが示されます。
+
+## <a name="see-also"></a>関連項目
+
+メールフローダッシュボードの他のメールフローインサイトの詳細については、「 [Security &/コンプライアンスセンター」の「mail flow insights](mail-flow-insights.md)」を参照してください。

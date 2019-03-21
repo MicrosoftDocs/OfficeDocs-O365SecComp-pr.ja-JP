@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 管理者は、Office 365 Security & コンプライアンスセンターのメールフローダッシュボードにあるキューのアラートとキューについて知ることができます。
-ms.openlocfilehash: 6abfe9e8b3edfc6b0ca02e11a9713dcdb5c19b7c
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 642aa672cda124873eb0b2ca8e9294e64325f55d
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454869"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720307"
 ---
 # <a name="queue-alerts-and-queues"></a>キューのアラートとキュー
 
@@ -69,3 +69,7 @@ Office 365 は、引き続き48時間、配信を再試行します。 48時間�
 キュー内のキューに入れられた**** メッセージの数をクリックすると、問題の解決方法に関するキューの詳細とガイダンスが、フライアウトのウィンドウに表示されます (キューの通知の詳細については、[**キューの表示**] をクリックした後に表示されるポップアップと同じポップアップ)。
 
 ![キューの詳細](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
+
+## <a name="see-also"></a>関連項目
+
+メールフローダッシュボードの他のメールフローインサイトの詳細については、「 [Security &/コンプライアンスセンター」の「mail flow insights](mail-flow-insights.md)」を参照してください。

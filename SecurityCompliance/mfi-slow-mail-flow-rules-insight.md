@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 description: 管理者は、Office 365 Security & コンプライアンスセンターのメールフローダッシュボードに記載されている低速メールフロールールについて理解できます。
-ms.openlocfilehash: 8188ee0da15ac337499866783ca4f2d893062d5b
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: e1ce23c94cd5260d8a7a7ebd99521a4a6f5c7b0a
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454879"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720257"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>低速メール フローのルールの分析情報
 
@@ -34,3 +34,7 @@ ms.locfileid: "30454879"
 [詳細の**表示**] をクリックすると、フライアウトウィンドウが表示され、ルールを確認できます。 また、フライアウトウィンドウで [**サンプルメッセージの表示**] をクリックして、ルールによって影響を受けたメッセージの種類を確認することもできます。
 
 ![メールフローダッシュボードの [低速メールフロールールの詳細を表示する] をクリックした後のフライアウトウィンドウ](media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
+
+## <a name="see-also"></a>関連項目
+
+メールフローダッシュボードの他のメールフローインサイトの詳細については、「 [Security &/コンプライアンスセンター」の「mail flow insights](mail-flow-insights.md)」を参照してください。
