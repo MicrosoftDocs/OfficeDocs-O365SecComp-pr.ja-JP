@@ -88,12 +88,12 @@
 ### [Microsoft のデータ ガバナンス チームによるビデオを見る](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # [脅威からの保護](protect-against-threats.md)
+## [クイック スタート ガイド: Set up Office 365 Advanced Threat Protection のセットアップ](checklist-atp-setup.md)
 ## [スパム対策とマルウェア対策の保護](anti-spam-and-anti-malware-protection.md)
 ### [EOP の概要](videos-for-getting-started-with-protecting-your-email.md)
 ### [Office 365 メールのスパム対策保護](anti-spam-protection.md)
 ### [Office 365 で、メールが迷惑メールとしてマークされるのを防ぐ方法](prevent-email-from-being-marked-as-spam.md)
 ### [Office 365 で迷惑メールを減らす方法](reduce-spam-email.md)
-### [EOP と Office 365 で、メールが迷惑メールとしてマークされるのを防ぐ](prevent-email-from-being-marked-as-spam-0.md)
 ### [Office 365 で送信スパムを制御する](outbound-spam-controls.md)
 ### [検出漏れの問題を防止するために Office 365 スパム フィルターを使用して迷惑メールをブロックする](reduce-spam-email.md)
 ### [ゼロアワー自動消去 - スパムやマルウェアからの保護](zero-hour-auto-purge.md)
@@ -369,7 +369,7 @@
 
 # [監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)
 ## [監査ログ検索を有効または無効にする](turn-audit-log-search-on-or-off.md)
-## [メールボックスの監査を有効にする](enable-mailbox-auditing.md)
+## [メールボックスの監査を管理する](enable-mailbox-auditing.md)
 ## [監査ログの詳細なプロパティ](detailed-properties-in-the-office-365-audit-log.md)
 ## [監査ログを使用して一般的なシナリオのトラブルシューティングを行う](auditing-troubleshooting-scenarios.md)
 ## [監査ログで共有監査を使用する](use-sharing-auditing.md)
