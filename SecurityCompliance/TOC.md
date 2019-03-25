@@ -166,7 +166,7 @@
 #### [Microsoft Dynamics 365 での暗号化](office-365-encryption-in-microsoft-dynamics-365.md)
 #### [Azure での暗号化](office-365-azure-encryption.md)
 
-## [Advanced Threat Protection (安全なリンクと安全な添付ファイル)](office-365-atp.md)
+## [Advanced Threat Protection ](office-365-atp.md)
 ### [ATP の安全なリンク](atp-safe-links.md)
 #### [ATP の安全なリンク機能のポリシーを設定する](set-up-atp-safe-links-policies.md)
 #### [「書き換えない」URL のカスタム リストを設定する](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
@@ -183,7 +183,10 @@
 ## [脅威の調査および対応](office-365-ti.md)
 ### [概要](get-started-with-ti.md)
 ### [脅威トラッカー](threat-trackers.md)
-### [セキュリティ/コンプライアンス センターでエクスプローラーを使用する](use-explorer-in-security-and-compliance.md)
+### [脅威エクスプローラー](use-explorer-in-security-and-compliance.md)
+#### [脅威エクスプローラーのビュー](threat-explorer-views.md)
+#### [配信された悪意のあるメールの検索と調査](investigate-malicious-email-that-was-delivered.md)
+### [自動調査および対応](automated-investigation-response-office.md)
 ### [ATP レポートを表示する](view-reports-for-atp.md)
 ### [Office 365 の攻撃シミュレータ](attack-simulator.md)
 ### [脅威の調査および対応によりユーザーの安全を確保する](keep-users-safe-with-office-365-ti.md)
@@ -319,6 +322,7 @@
 #### [Advanced eDiscovery (プレビュー) の制限](compliance20/limits-ediscovery20.md)
 #### [サポートされているファイルの種類](compliance20/supported-filetypes-ediscovery20.md)
 #### [ドキュメントのメタデータ フィールド](compliance20/document-metadata-fields.md)
+#### [AzCopy のトラブルシューティング](compliance20/troubleshooting-azcopy.md)
 
 ## [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
 ### [Advanced eDiscovery の概要](quick-setup-for-advanced-ediscovery.md)
