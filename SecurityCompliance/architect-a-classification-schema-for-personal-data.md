@@ -3,7 +3,7 @@ title: 個人データの分類スキーマを設計する
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 2/7/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: overview
 ms.collection:
@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 組織が GDPR 計画の一環としてラベルを実装するかどうかを決定します。
-ms.openlocfilehash: be700d0b055346822ddd63c3c250fad048a7fce8
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: 79c68b8340209c3cc3e3a7081a4075c31a112e80
+ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373868"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789442"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>個人データの分類スキーマを設計する
 
@@ -45,13 +45,13 @@ Office 365 では、個人情報に分類の 2 つの方法のいずれかを使
 
 -   将来的には、これらは Cloud App Security とも連携するため、他の SaaS アプリでも機密データを検出することができます。
 
-### <a name="option-2-use-sensitive-information-types--office-labels"></a>オプション 2: 機密情報の種類と Office のラベルを使用する
+### <a name="option-2-use-sensitive-information-types--retention-labels"></a>オプション 2: 機密情報の種類と保持ラベルを使用する
 
--   GDPR の対象となる個人データにラベルを自動的に適用するには、機密情報の種類が必要になるため、これは前提条件です。
+-   GDPR の対象となる個人データにラベルを自動的に適用するには、機密情報の種類が必要になるため、必須になります。
 
--   Office のラベルを使用すると、GDPR の対象となる個人データを、組織の広範なデータ ガバナンス計画に含めることができます。
+-   保持ラベルを使用すると、GDPR の対象となる個人データを、組織の広範なデータ ガバナンス計画に含めることができます。
 
--   その後、Office ラベルは Azure Information Protection ラベルと併せて、統一された分類とラベル付けエンジンにまとめられます。
+
 
 ## <a name="develop-a-label-schema-that-includes-personal-data"></a>個人データを含むラベル スキーマを開発する
 

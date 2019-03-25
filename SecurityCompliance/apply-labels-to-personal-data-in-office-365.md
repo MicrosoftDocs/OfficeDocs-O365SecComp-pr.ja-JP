@@ -3,7 +3,7 @@ title: Office 365 の個人データにラベルを適用する
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 2/7/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: overview
 ms.collection:
@@ -16,38 +16,42 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Office のラベルを GDPR 保護計画の一部として使用する方法について説明します。
-ms.openlocfilehash: 9474d4b911936bca2c06c9660578790578fba4a2
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: e31cd420fe476ace8031fc2c6e52158762814c7a
+ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373898"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789432"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Office 365 の個人データにラベルを適用する
 
- GDPR 保護計画の一部として Office ラベルを使用している場合は、このトピックを使用してください。現在、ラベルは、Office 365 セキュリティ/コンプライアンス センターと Azure Information Protection で作成できます。近い将来、これらのテクノロジによりラベル付けとその分類のエクスペリエンスが統一され、より多くのことを達成できるようになります。
+ GDPR 保護計画の一環として、分類ラベルを使用している場合は、このトピックを使用します。 
 
-Office 365 で個人用データを保護するためにラベルを使用している場合は、Office ラベルを使用することをお勧めします。アドバンスト データ ガバナンスを使用すると、機密情報の種類やその他の基準に基づいてラベルを自動的に適用できます。データ損失防止機能を備えた Office ラベルを使用して、保護を適用することができます。また、電子情報開示とコンテンツ検索でラベルを使用することもできます。そして間もなく、Cloud App Security でラベルと機密情報の種類の両方を使用して、他の SaaS アプリにある個人データを監視できるようになります。
+Office 365 で個人用データを保護するためにラベルを使用している場合は、[保持ラベル](labels.md)を使用することをお勧めします。 保持ラベルを使用すると、次のことができます。
+- アドバンスト データ ガバナンスを使用して、機密情報の種類やその他の基準に基づいてラベルを自動的に適用できます。
+-  データ損失防止機能を備えた保持ラベルを使用して、保護を適用できます。 
+- 電子情報開示とコンテンツの検索でラベルを使用できます。 
+- Cloud App Security でラベルと機密情報の種類の両方を使用して、他の SaaS アプリにある個人データを監視できます。
 
-Azure Information Protection のラベルは現在、オンプレミスのファイル、その他のクラウド サービスのファイル、プロバイダーにラベルを適用する場合に推奨されています。また、営業秘密ファイルなどのデータ保護用の Azure Rights Management (Azure RMS) 暗号化を必要とする Office 365 のファイルにも推奨されます。
+[機密ラベル](sensitivity-labels.md)は現在、オンプレミスのファイル、その他のクラウド サービスのファイル、プロバイダーにラベルを適用する場合に推奨されています。 また、営業秘密ファイルなどのデータ保護用の Azure Information Protection (AIP) 暗号化を必要とする Office 365 のファイルにも推奨されます。
 
-現時点では、Azure Information Protection を使用して Azure RMS 暗号化を適用することは、GDPR の対象となるデータを含む Office 365 のファイルにはお勧めできません。現在、Office 365 サービスでは RMS で暗号化されたファイルへの読み取りはできないため、その種のファイル内の機密データを検出できません。
+現時点では、GDPR の対象となるデータを含む Office 365 のファイルに対して Azure Information Protection を使用して暗号化を適用することは、推奨されていません。 現在、Office 365 サービスでは AIP で暗号化されたファイルへの読み取りはできません。 そのため、サービスでこれらのファイル内の機密データを検索することはできません。
 
-Azure Information Protection のラベルは Exchange Online のメールに適用することができ、これらのラベルは Office 365 のデータ損失防止で使用します。ラベル付けとその分類を統一するエンジンが近日公開される予定で、電子メールとファイルに同じラベルを使用できるようになります。また、自動ラベル付けや送信中の電子メールの保護も可能になります。
+機密ラベルは Exchange Online のメールに適用できます。これらのラベルは Office 365 のデータ損失防止と連動することができます。 
 
 ![Office 365 のラベルと Azure Information Protection のラベル](Media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
+
 この図について:
 
--   SharePoint Online および OneDrive for Business では、個人データや厳しく規制された営業秘密ファイルに Office 365 のラベルを使用します。
+-   SharePoint Online および OneDrive for Business では、個人データや厳しく規制された営業秘密ファイルに保持ラベルを使用します。
 
--   厳しく規制された営業秘密ファイル、Exchange Online 電子メール、他の SaaS サービスのファイル、オンプレミスのデータセンターのファイル、他のクラウド プロバイダーのファイルには、Azure Information Protection (AIP) のラベルを使用します。
+-   厳しく規制された営業秘密ファイル、Exchange Online 電子メール、他の SaaS サービスのファイル、オンプレミスのデータセンターのファイル、他のクラウド プロバイダーのファイルには、機密ラベルを使用します。
 
--   近日公開: 両方のラベルに関して、ラベル付けとその分類のエクスペリエンスが統一されます。
 
-## <a name="use-office-labels-and-sensitive-information-types-across-microsoft-365-for-information-protection"></a>情報を保護するために Microsoft 365 全体で Office のラベルと機密情報の種類を使用する
+## <a name="use-retention-labels-and-sensitive-information-types-across-microsoft-365-for-information-protection"></a>情報を保護するために Microsoft 365 全体で保持ラベルと機密情報の種類を使用する
 
-次の図は、ラベル ポリシー、データ損失防止ポリシー、Cloud App Security ポリシーで Office のラベルと機密情報の種類を使用する方法を示しています。
+次の図は、ラベル ポリシー、データ損失防止ポリシー、Cloud App Security ポリシーで保持ラベルと機密情報の種類を使用する方法を示しています。
 
 ![Office のラベルと機密情報の種類](Media/Apply-labels-to-personal-data-in-Office-365-image2.png)
 
@@ -64,7 +68,7 @@ Azure Information Protection のラベルは Exchange Online のメールに適�
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Office のラベル。例: 個人、公開、顧客データ、人事データ、社外秘、非常に機密性の高い社外秘</td>
+<td align="left">保持ラベル。 例: 個人、公開、顧客のデータ、人事データ、社外秘、非常に機密性の高い社外秘</td>
 <td align="left"><p>このラベルを自動で . . .</p>
 <p>顧客データ</p>
 <p>. . . これらの機密情報の種類に一致する文書に適用します . . .</p>
@@ -178,8 +182,8 @@ GDPR の対象となる個人データについては、環境に合わせて設
 <p>「<a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">ユーザーに Office 365 セキュリティ センター &amp; コンプライアンス センターへのアクセスを許可する</a>」を参照してください。</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Office のラベルを作成します。</p></td>
-<td align="left">セキュリティ/コンプライアンス センターの [分類] に移動し、[ラベル] を選択して、使用している環境のラベルを作成します。</td>
+<td align="left"><p>保持ラベルを作成します。</p></td>
+<td align="left">セキュリティ/コンプライアンス センターの [分類] に移動し、[保持ラベル] を選択して、使用している環境のラベルを作成します。</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ラベルの自動適用ポリシーを作成します。</p></td>
