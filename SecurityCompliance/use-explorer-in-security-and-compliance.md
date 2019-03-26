@@ -3,7 +3,7 @@ title: セキュリティ&amp; /コンプライアンスセンターで脅威エ
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/10/2019
+ms.date: 03/21/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターのエクスプローラー (脅威エクスプローラーとも呼ばれます) について説明します。
-ms.openlocfilehash: 0c86792d8ed84b43b28bde31004dc95d2fa2b547
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 202898873bb9611c747aed335d295c749c7cd0fa
+ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693616"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30732260"
 ---
 # <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターで脅威エクスプローラーを使用する
 
@@ -35,104 +35,92 @@ ms.locfileid: "30693616"
       
 ## <a name="explorer-overview"></a>エクスプローラーの概要
 
-エクスプローラーは、疑いのあるマルウェアおよびフィッシングに関する情報を、Office 365 の電子メールやファイル、および組織に対する他のセキュリティ上の脅威やリスクと共に表示します。 エクスプローラーを最初に開くと、既定の表示で過去7日間の電子メールマルウェアの検出が表示されます。 エクスプローラーには、Office 365 のセキュリティ保護機能 ([安全なリンク](atp-safe-links.md)と[安全な添付ファイル](atp-safe-attachments.md)を含む) を表示することもできます。これにより、過去30日間のデータを表示するように変更することができます。 office 365 Advanced Threat Protection プラン2または office 365 E5 の試用版のサブサブスクリプションがある場合、過去7日間の検出とメールデータのみが表示されます。
-  
-![エクスプローラーは、上位マルウェアと対象ユーザーに関する情報を表示します。](media/8e8c1582-d6f4-4521-8591-686a1cb01f7e.png)
-  
-表示する情報を変更するには、[表示] メニューを使用します。
-  
-![エクスプローラーの [表示] メニュー](media/2bb34f58-555f-4967-ba55-740334ef1f8e.png)
-  
-エクスプローラーには、上位の対象ユーザー、上位マルウェアファミリ、検出テクノロジなどの詳細を掘り下げたフィルター処理とクエリ機能がいくつか用意されています。 各種類のレポートには、データの表示と探索にさまざまな方法が用意されています。
+組織に[Office 365 の脅威の調査と応答機能](office-365-ti.md)(ATP Plan 2 に含まれています) があり、必要なアクセス許可がある場合は、脅威エクスプローラー (エクスプローラーとも呼ばれます) を使用して脅威を識別して分析することができます。 (セキュリティ&amp;コンプライアンスセンターで、[**脅威管理** \> **エクスプローラー**] に移動します)。
 
-> [!IMPORTANT]
-> エクスプローラーでは、アスタリスク (*) や疑問符 (?) などのワイルドカード文字を使用しないでください。 電子メールメッセージの [件名] フィールドを検索すると、エクスプローラーは部分一致を実行し、ワイルドカード検索と同様の結果を生成します。
-
-## <a name="email--malware"></a>メール\>マルウェア
-
-このビューには、マルウェアを含むと識別された電子メールメッセージが表示されます。  
-
-マルウェアファミリ、送信者のドメイン、送信者の IP、保護の状態 (Office 365 の脅威保護機能およびポリシーによって行われた操作)、検出テクノロジ (マルウェアの検出方法) に基づいて、グラフの情報を表示します。  
-
-![検出されたマルウェアに関するデータを表示する](media/d11dc568-b091-4159-b261-df13d76b520b.png)         
-
-グラフの下に、上位マルウェアファミリ、上位の対象ユーザー、および特定のメッセージに関する詳細情報が表示されます。 
-
-## <a name="email--phish"></a>電子\>メールフィッシング
-
-このビューには、フィッシングとして識別された電子メールメッセージが表示されます。  
-
-送信者のドメイン、送信者の IP、および保護の状態によって情報を表示します (Office 365 の脅威保護機能およびポリシーによって実行される操作)。 
-
-![フィッシングの試行として識別された電子メールに関するデータを表示する](media/2e3f97fa-2b99-47f9-afd6-216d10633c50.png) 
-
-グラフの下に、特定のメッセージの詳細を表示します。 
-
-## <a name="email--user-reported"></a>電子\>メールユーザーのレポート
-
-このビューには、ユーザーが迷惑メール、迷惑メールではないメールとして報告した電子メールが表示されます。  
-
-レポートの種類別に情報を表示する (電子メールが迷惑メールではなく迷惑メールであったことをユーザーが決定した場合)、配信の理由 (スパムフィルターポリシー、メールフロールール、受信拒否リスト、差出人セーフリストなどの特定の場所に電子メールが送信された理由)、など)。  
-
-![迷惑メールや迷惑メールではないと報告されたメールユーザーに関するデータを表示する](media/255acd04-0d07-4b29-82af-5060a60c20ab.png)  
-
-グラフの下に、件名行、送信者の IP アドレス、メッセージを迷惑メールとして報告したユーザー、迷惑メール、フィッシングなど、特定の電子メールメッセージの詳細を表示します。 
-
-## <a name="email--all-mail"></a>すべて\>のメールを電子メールで送信
-
-このビューには、フィッシングまたはマルウェアによって悪意があると識別された電子メールや、悪意のあるメール (通常の電子メール、スパム、およびバルクメール) など、すべての電子メールアクティビティが表示されます。 
-
-> [!NOTE]
-> **表示するデータが多すぎる**というエラーが表示された場合は、フィルターを追加し、必要に応じて、表示している日付範囲を絞り込んでください。 
-
-フィルターを適用するには、[**送信者**] を選択し、リスト内の項目を選択してから [最新の情報に更新] をクリックします。 この例では、**検出テクノロジ**をフィルタとして使用しています (複数のオプションを使用できます)。 送信者、送信者のドメイン、受信者、件名、添付ファイル名、マルウェアファミリ、保護状態 (Office 365 の脅威保護機能およびポリシーによって行われた操作)、検出テクノロジ (マルウェアの検出方法)、およびもっとその。 
-
-![検出された電子メールに関するデータを検出テクノロジで表示する](media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png) 
-
-グラフの下に、件名行、受信者、送信者、状態など、特定の電子メールメッセージの詳細を表示します。 
-
-## <a name="content--malware"></a>コンテンツ\>マルウェア
-
-このビューには、SharePoint Online、OneDrive for business、Microsoft Teams で Office 365 Advanced Threat Protection によって悪意のあるファイルとして識別されたファイルが表示されます。
-
-マルウェアファミリ、検出テクノロジ (マルウェアの検出方法)、ワークロード (OneDrive、SharePoint、Teams) 別の情報を表示します。 
-
-![検出されたマルウェアに関するデータを表示する](media/d11dc568-b091-4159-b261-df13d76b520b.png)  
-
-グラフの下に、添付ファイルのファイル名、ワークロード、ファイルのサイズ、ファイルを最後に変更したユーザーなど、特定のファイルの詳細が表示されます。 
-  
-## <a name="new-click-to-filter-capabilities"></a>(新)クリックフィルター機能
-
-エクスプローラーを新規にクリックすると、フィルター処理することができます。 凡例の項目をクリックすると、その項目がレポートのフィルターになります。 たとえば、エクスプローラーのマルウェアビューを見ているとします。
-  
 ![[脅威管理\>エクスプローラー] に移動します。](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
-  
-このグラフの [ **ATP 分析**] をクリックすると、次のような表示になります。 
-  
-![ATO 分析の結果のみを表示するためにフィルター処理されたエクスプローラー](media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
-  
-このビューでは、 [Office 365 ATP の安全な添付ファイル](atp-safe-attachments.md)によって分析されたファイルのデータを調べています。 チャートの下には、ATP の安全な添付ファイルによって検出された添付ファイルがある特定の電子メールメッセージに関する詳細が表示されます。
-  
-![検出された添付ファイルを含む電子メールメッセージに関する具体的な詳細情報](media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
-  
-1つまたは複数のアイテムを選択すると、[ **Actions** ] メニューがアクティブ化され、選択したアイテムに対して選択できるいくつかの選択肢が提供されます。 
-  
-![アイテムを選択すると、[アクション] メニューがアクティブになります。](media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png)
-  
-クリックして特定の詳細に移動する機能を使用すると、脅威の調査に長い時間をかけることができます。
-  
-## <a name="how-do-i-get-explorer"></a>エクスプローラーを入手するにはどうすればよいですか?
+
+この記事では、エクスプローラーで実行できるいくつかの操作について説明します (多くの可能性があります)。
+
+- [電子メールで検出されたマルウェアの種類](#see-malware-detected-in-email-by-technology)、および脅威保護テクノロジ (マルウェア対策保護、ATP の安全な添付ファイルなど) について説明します。
+
+- [フィッシングリンク (url) に関するデータ](#view-data-about-phishing-urls-and-click-verdict)、およびクリック verdicts がどのようなものか (警告が発生しても、ブロック、許可、またはアクセスした url) を表示します。
+
+- 迷惑[メール (迷惑メールではない) として報告された電子メールメッセージを確認](#review-email-messages-reported-by-users)し、傾向 (通常はフィッシングとして報告されるメッセージ数の大きいなど) を特定します。 
+
+## <a name="see-malware-detected-in-email-by-technology"></a>テクノロジによる電子メールで検出されたマルウェアを参照
+
+電子メールで検出されたマルウェアと Office 365 のテクノロジについて確認する必要があるとします。 これを行うには、エクスプローラーの [ [Email > マルウェア](threat-explorer-views.md#email--malware)] ビューを使用します。
+
+1. Office 365[https://protection.office.com](https://protection.office.com)セキュリティ & コンプライアンスセンター () で、[**脅威管理** > **エクスプローラー**] を選択します。
+2. [**表示**] メニューで、[**電子メール** > **マルウェア**] を選択します。<br/>![エクスプローラーの [表示] メニュー](media/ExplorerViewEmailMalwareMenu.png)<br/>
+3. [**送信者**] をクリックし、[**基本** > **検出テクノロジ**] を選択します。<br/>これで、検出テクノロジがレポートのフィルターとして使用できるようになります。<br/>![マルウェア検出テクノロジ](media/ExplorerEmailMalwareDetectionTech.png)<br/> 
+4. オプションを選択し、[更新] ボタンをクリックしてそのフィルターを適用します。<br/>![選択されている検出テクノロジ](media/ExplorerEmailMalwareDetectionTechATP.png)<br/> 
+
+レポートが更新され、選択した [テクノロジ] オプションを使用して、電子メールで検出された結果のマルウェアが表示されます。 ここから、さらに分析を行うことができます。
+
+## <a name="view-data-about-phishing-urls-and-click-verdict"></a>フィッシング url に関するデータを表示し、[verdict] をクリックします。
+
+許可された url の一覧を含む電子メール内の url を使用して、許可され、ブロックされ、上書きされたフィッシングを表示する場合を考えてみます。 これを行うには、エクスプローラーの [ [Email > フィッシング](threat-explorer-views.md#email--phish)] ビューを使用します。
+
+1. Office 365[https://protection.office.com](https://protection.office.com)セキュリティ & コンプライアンスセンター () で、[**脅威管理** > **エクスプローラー**] を選択します。
+2. [**表示**] メニューの [**電子メール** > **フィッシング**] をクリックします。<br/>![エクスプローラーの [表示] メニュー](media/ExplorerViewEmailPhishMenu.png)<br/>
+3. [**送信者**] をクリックし、[ **url** > ] を選択して、**[verdict] をクリック**します。
+4. 1つ以上のオプション ([**ブロック**されてブロックされた**ブロック**] など) を選択し、[**更新**] ボタンをクリックしてそのフィルターを適用します。<br/>![url および [verdicts] をクリックします。](media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
+
+レポートが更新され、電子メールの配信状態と共に、検出された (または警告に関係していても表示されている) 電子メールで検出されたフィッシング url が表示されます ここから、さらに分析を行うことができます。 たとえば、グラフの下に、組織の電子メールでブロックされた上位の url が表示されます。 
+
+![ブロックされたエクスプローラーの url](media/ExplorerPhishClickVerdictURLs.png) 
+
+URL を選択して、詳細情報を表示します。
+
+## <a name="review-email-messages-reported-by-users"></a>ユーザーが報告した電子メールメッセージを確認する
+
+組織内のユーザーが、 [outlook 用のレポートメッセージアドインと web 上の outlook](enable-the-report-message-add-in.md)を使用して、迷惑メールではなく迷惑メールとして報告した電子メールメッセージを表示したいとします。 これを行うには、> のエクスプローラーの[ユーザーレポート](threat-explorer-views.md#email--user-reported)ビューを使用します。
+
+1. Office 365[https://protection.office.com](https://protection.office.com)セキュリティ & コンプライアンスセンター () で、[**脅威管理** > **エクスプローラー**] を選択します。
+2. [**表示**] メニューで、[**電子メール** > **ユーザー-レポート**] を選択します。<br/>![エクスプローラーの [表示] メニュー](media/ExplorerViewMenuEmailUserReported.png)<br/>
+3. [**送信者**] をクリックし、[**基本** > **レポートの種類**] を選択します。
+4. オプション (**フィッシング**など) を選択し、[**更新**] ボタンをクリックします。 <br/>![ユーザーによって報告されるフィッシング](media/EmailUserReportedReportType.png)<br/> 
+
+レポートが更新され、組織内のユーザーがフィッシングとして報告した電子メールメッセージに関するデータが表示されます。 この情報を使用して、さらに分析を行い、必要に応じて、 [ATP のフィッシング対策ポリシー](set-up-anti-phishing-policies.md)を調整することができます。
+
+## <a name="theres-more"></a>他にもまだあります！
+
+この記事で説明されている3つのシナリオに加えて、多くのレポートシナリオをエクスプローラーで利用できます。 その他の例を次に示します。
+
+- [配信された悪意のあるメールの検索と調査](investigate-malicious-email-that-was-delivered.md)
+
+- [SharePoint Online、OneDrive、Microsoft Teams で検出された悪意のあるファイルを表示する](malicious-files-detected-in-spo-odb-or-teams.md)
+
+- [脅威エクスプローラーのビューの概要を取得する](threat-explorer-views.md)
+
+## <a name="how-to-get-explorer"></a>エクスプローラーを取得する方法
 
 Explorer は[Office 365 Advanced Threat Protection プラン 2](office-365-ti.md)に含まれています。 
 
-エクスプローラーを表示および使用するには、セキュリティ管理者やセキュリティリーダーに付与されている適切なアクセス許可を持っている必要があります。 詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+エクスプローラーを表示して使用するには、セキュリティ管理者やセキュリティリーダーに付与されている権限など、適切なアクセス許可を持っている必要があります。 
+
+- セキュリティ&amp; /コンプライアンスセンターでは、次の役割のいずれかが割り当てられている必要があります。
+    - 組織の管理
+    - セキュリティ管理者 (Azure Active Directory 管理センター[https://aad.portal.azure.com](https://aad.portal.azure.com)で割り当て可能)
+    - セキュリティリーダ
+
+- exchange online の場合は、exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) または PowerShell コマンドレット (「 [exchange online powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)」を参照) のいずれかで、次のいずれかの役割が割り当てられている必要があります。
+    - 組織の管理
+    - 表示限定の組織管理
+    - "View-Only Recipients/表示専用受信者" 役割
+    - コンプライアンス管理
+
+詳細については、以下のリソースを参照してください。
+
+- [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+
+- [Exchange Online の機能アクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
   
 ## <a name="related-topics"></a>関連項目
 
-[Office 365 セキュリティ&amp; /コンプライアンスセンターのレポートと分析情報](reports-and-insights-in-security-and-compliance.md)
-  
-[配信された悪意のある電子メールを検索して調査する (Office 365 の脅威 Invesitgation および応答)](investigate-malicious-email-that-was-delivered.md)
-  
-[Office 365 のスパム対策とマルウェア対策の保護](anti-spam-and-anti-malware-protection.md)
-  
+- [自動化された調査と応答 (AIR)](automated-investigation-response-office.md)
 
+- [脅威エクスプローラーのビュー](threat-explorer-views.md)
+
+- [Office 365 Advanced Threat Protection のレポートを表示する](view-reports-for-atp.md)
