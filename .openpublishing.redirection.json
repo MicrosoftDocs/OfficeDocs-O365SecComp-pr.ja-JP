@@ -112,13 +112,18 @@
     },
     {
         "source_path": "securitycompliance/supervision-reports.md",
-        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/supervision-policies#reporting", 
+        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/supervision-policies", 
         "redirect_document_id": true
     },
     {
         "source_path": "securitycompliance/install-the-supervision-add-in-for-outlook-desktop.md",
-        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/configure-supervision-policies#step-6---configure-outlook-for-reviewers-optional", 
+        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/configure-supervision-policies", 
         "redirect_document_id": true
-    }                                                                                            
+    },
+    {
+        "source_path": "securitycompliance/videos-for-getting-started-with-protecting-your-email.md",
+        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/eop/what-is-eop", 
+        "redirect_document_id": true
+    }                                                                                                                            
   ] 
 }
