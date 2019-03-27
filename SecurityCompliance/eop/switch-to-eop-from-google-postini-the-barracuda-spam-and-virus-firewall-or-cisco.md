@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: このトピックの目的は、社内の電子メール検疫アプライアンスまたはクラウドベースの保護サービスから Exchange Online Protection (EOP) に切り替えるプロセスを理解していただくことと、着手に役立つリソースを提供することにあります。
-ms.openlocfilehash: 0923bf0060891536ac11c5f9fa773f74aed1463f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 0c33d89be5cb4ebf7719e6742532ebfc7a2e5c20
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693416"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30899956"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort
 
@@ -25,14 +25,13 @@ EOP を初めてお使いで、切り替えを決定する前に機能の概要�
   
 EOP に切り替える前に、Exchange Online、社内、またはハイブリッド シナリオによってクラウド内で EOP 保護されたメールボックスをホストするかどうかを検討することが重要です (ハイブリッドとは、社内でいくつかのメールボックスをホストし、Exchange Online で別の部分をホストすることを意味します)。候補となるこれらの各ホスト シナリオ:クラウド、社内、およびハイブリッドは、セットアップの手順が異なる場合があります。適切な展開を選択するための、いくつかの考慮事項を次に示します。
   
-- **社内メールボックスを使用した EOP 保護** このシナリオは、使用したい既存のメール ホスティング インフラストラクチャがあるか、または社内のメールボックスを保持しなければならないビジネス要件があり、さらに EOP のクラウドベースの電子メール保護を希望する場合に適しています。「 [EOP スタンドアロンに切り替える](#BKMK_SwitchStandalone.md)」で、このシナリオの詳細を説明しています。 
+- **社内メールボックスを使用した EOP 保護** このシナリオは、使用したい既存のメール ホスティング インフラストラクチャがあるか、または社内のメールボックスを保持しなければならないビジネス要件があり、さらに EOP のクラウドベースの電子メール保護を希望する場合に適しています。「 [EOP スタンドアロンに切り替える](#switch-to-eop-standalone)」で、このシナリオの詳細を説明しています。 
     
 - **Exchange Online メールボックスを使用した EOP 保護** このシナリオは、EOP 保護とすべてのメールボックスをクラウドでホストしたい場合に適しています。社内メッセージング サーバーを維持する必要がないため、複雑さを軽減できます。このシナリオについては、「 [Exchange Online に切り替える](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md#BKMK_SwitchEXO)」で説明しています。 
     
-- **ハイブリッド メールボックスを使用した EOP 保護** クラウド メールボックスを希望していても、一部のユーザーのためにメールボックスを社内で保持する必要がある場合があります。いくつかのメールボックスを社内でホストし、別の部分を Exchange Online でホストする場合は、このシナリオを選択してください。このシナリオについては、「 [ハイブリッド ソリューションに切り替える](#BKMK_SwitchHybrid.md)」で説明しています。 
+- **ハイブリッド メールボックスを使用した EOP 保護** クラウド メールボックスを希望していても、一部のユーザーのためにメールボックスを社内で保持する必要がある場合があります。いくつかのメールボックスを社内でホストし、別の部分を Exchange Online でホストする場合は、このシナリオを選択してください。このシナリオについては、「 [ハイブリッド ソリューションに切り替える](#switch-to-a-hybrid-solution)」で説明しています。 
     
 ## <a name="switch-to-eop-standalone"></a>EOP スタンドアロンに切り替える
-<a name="BKMK_SwitchStandalone"> </a>
 
 現在、メールボックスを社内でホストし、社内保護アプライアンスまたはクラウド メッセージング保護サービスを使用している場合は、EOP に切り替えて、その保護機能と可用性を活かすことができます。スタンドアロン シナリオ、つまり、社内でメールボックスをホストし EOP を使用して電子メール保護を提供するように EOP を設定するには、「[EOP サービスを設定する](set-up-your-eop-service.md)」で概説されている手順に従います。このトピックでは、サインアップ、ドメインの追加、コネクタとのメール フローの設定などの、EOP 保護の設定に関する手順を概説しています。
   

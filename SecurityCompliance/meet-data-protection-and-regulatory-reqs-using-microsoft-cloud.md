@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Microsoft Service Trust Portal のコンプライアンス マネージャーでは、コントロールの追跡、実装、管理を行えるツールが用意されています。それらのツールは、Office 365 や Microsoft Azure などの Microsoft クラウド サービスを扱う際に、組織がセキュリティおよびデータ保護に関する業界標準 (GDPR、ISO 27001 および 27018、HIPAA など) に準拠するのに役立ちます。コンプライアンス マネージャーは、組織のデータ保護とプライバシー対策を講じる担当者が、コンプライアンスとリスク評価のプロセスを管理するのに役立ちます。
-ms.openlocfilehash: cb12299dee5392cb75d41156a834a7190b8ade1b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: bd61920967cfeacbefc09d1347203565617af5a1
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296840"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900176"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Microsoft クラウド サービスの利用時に、コンプライアンス マネージャーを使用してデータ保護と規制の要件を満たす
 
@@ -385,7 +385,7 @@ Assessment のグループ化の要件は以下のとおりです。
   
 - [ユーザーの検索](#search-for-a-user)
 
-- [アカウント データ履歴のレポートのエクスポート](#export-report-of-account-data-history)
+- [アカウント データ履歴のレポートのエクスポート](#export-a-report-of-account-data-history)
 
 - [実施項目の再割り当て](#reassign-action-items)
 
@@ -511,9 +511,9 @@ Assessment のグループ化の要件は以下のとおりです。
   
 1. コンプライアンス マネージャーのダッシュボードで、![[追加] アイコン](media/ITPro-EAC-AddIcon.gif) **[Assessment の追加]** をクリックします。 
     
-2. **[Assessment の追加]** ウィンドウでは、新しいグループを作成して Assessment を追加したり、既存のグループに追加したりすることができます (組み込みのグループ名は "初期グループ" です)。選択したオプションに応じて、新しいグループの名前を入力するか、ドロップダウン リストから既存のグループを選択します。詳細については、「[Assessment のグループ化](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#grouping)」を参照してください。
+2. **[Assessment の追加]** ウィンドウでは、新しいグループを作成して Assessment を追加したり、既存のグループに追加したりすることができます (組み込みのグループ名は "初期グループ" です)。選択したオプションに応じて、新しいグループの名前を入力するか、ドロップダウン リストから既存のグループを選択します。詳細については、「[Assessment のグループ化](#grouping-assessments)」を参照してください。
     
-    新しいグループを作成する場合、既存のグループの情報を新しい Assessment にコピーすることもできます。つまり、コピー元グループ内における Assessment の顧客管理のコントロールの [実装の詳細]、[テスト計画]、[管理応答] の各フィールドに追加されたすべての情報が、新しい Assessment の同じ (または関連する) 顧客管理のコントロールにコピーされます。既存のグループに新しい Assessment を追加する場合、そのグループ内の Assessment の共通情報が新しい Assessment にコピーされます。詳細については、「[既存の Assessment から情報をコピーする](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#copying)」を参照してください。
+    新しいグループを作成する場合、既存のグループの情報を新しい Assessment にコピーすることもできます。つまり、コピー元グループ内における Assessment の顧客管理のコントロールの [実装の詳細]、[テスト計画]、[管理応答] の各フィールドに追加されたすべての情報が、新しい Assessment の同じ (または関連する) 顧客管理のコントロールにコピーされます。既存のグループに新しい Assessment を追加する場合、そのグループ内の Assessment の共通情報が新しい Assessment にコピーされます。詳細については、「[既存の Assessment から情報をコピーする](#copying-information-from-existing-assessments)」を参照してください。
     
 3. **[次へ]** をクリックし、以下のことを行います。
     
@@ -553,7 +553,7 @@ Assessment のグループ化の要件は以下のとおりです。
   
 1. このセクションには、Assessment グループの名前、製品、Assessment 名、評価コントロールの数など、Assessment の要約情報が表示されます。
     
-2. このセクションには、Assessment フィルター コントロールが表示されます。Assessment フィルター コントロールの使用方法の詳細については、「[評価プロセスの管理](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#managecomplianceprocess_1)」セクションを参照してください。 
+2. このセクションには、Assessment フィルター コントロールが表示されます。Assessment フィルター コントロールの使用方法の詳細については、「[評価プロセスの管理](#managing-the-assessment-process)」セクションを参照してください。 
     
 3. このセクションには、評価の範囲内のそれぞれのクラウド サービスが表示されます。
     
@@ -561,7 +561,7 @@ Assessment のグループ化の要件は以下のとおりです。
     
 5. このセクションには、顧客管理のコントロールが含まれます。ここもコントロールは、コントロール ファミリー別にまとめられています。コントロール ファミリーをクリックして展開すると、それぞれのコントロールが表示されます。
     
-6. コントロール ファミリーにあるコントロールの合計数と、評価されたコントロールの数が表示されます。顧客管理のコントロール評価への組織の進捗状況を追跡する機能は、コンプライアンス マネージャーの重要な機能です。詳細については、「[コンプライアンス スコアについて](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#compliancescore)」セクションを参照してください。 
+6. コントロール ファミリーにあるコントロールの合計数と、評価されたコントロールの数が表示されます。顧客管理のコントロール評価への組織の進捗状況を追跡する機能は、コンプライアンス マネージャーの重要な機能です。詳細については、「[コンプライアンス スコアについて](#understanding-the-compliance-score)」セクションを参照してください。 
 
 ## <a name="managing-the-assessment-process"></a>評価プロセスの管理
 

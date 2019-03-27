@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint Online でデータ損失防止 (DLP) を使用すると、テナント全体の機密データを含むドキュメントを検出できます。 そのドキュメントが見つかったら、ドキュメントの所有者と連携してデータを保護できます。 このトピックは、機密データを検索するクエリを形成するために役立ちます。
-ms.openlocfilehash: 91ef057170ef10614d3888e128769129e4c33fb9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 8ecce920810d52fadb311c6c4925c9fa4b6fb2b1
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639134"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900056"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>サイトに保存された機密データを検索するクエリの形成
 
@@ -53,7 +53,7 @@ ms.locfileid: "30639134"
   
 ### <a name="additional-query-properties-and-search-operators-available-in-the-ediscovery-center"></a>電子情報開示センターで使用できるその他のクエリ プロパティと検索演算子
 
-SharePoint の DLP には、LastSensitiveContentScan プロパティも導入されており、特定の期間内にスキャンされたファイルを検索するのに役立ちます。 `LastSensitiveContentScan`プロパティを使用したクエリの例については、次のセクションの[複雑なクエリの例](form-a-query-to-find-sensitive-data-stored-on-sites.md#BKMK_ExamplesOfComplexQueries)を参照してください。 
+SharePoint の DLP には、LastSensitiveContentScan プロパティも導入されており、特定の期間内にスキャンされたファイルを検索するのに役立ちます。 `LastSensitiveContentScan`プロパティを使用したクエリの例については、次のセクションの[複雑なクエリの例](#examples-of-complex-queries)を参照してください。 
   
 クエリを作成するのに`Author`は、DLP 固有のプロパティだけでなく、または`FileExtension`のような標準の SharePoint eDiscovery 検索プロパティも使用できます。 演算子を使用して、複雑なクエリを作成できます。 使用可能なプロパティと演算子の一覧については、「[電子情報開示のブログ投稿で検索プロパティと演算子を使用する](https://go.microsoft.com/fwlink/?LinkId=510093)」を参照してください。 
   

@@ -1,5 +1,5 @@
 ---
-title: Office 365 で非アクティブなメールボックスを削除する
+title: Office 365 の非アクティブなメールボックスを削除する
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,30 +13,30 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
-description: Office 365 の非アクティブなメールボックスの内容を保持する必要がなくなった場合は、保留リストを削除することによって、非アクティブなメールボックスを完全に削除することができます。ホールドを削除すると、非アクティブなメールボックスは削除するようにマークされ、処理された後は完全に削除されます。
-ms.openlocfilehash: 6af107face519ac18d5b072d675e76f70dc4c4a6
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: Office 365 の非アクティブなメールボックスの内容を保持する必要がなくなった場合は、保留リストを削除することによって、非アクティブなメールボックスを完全に削除することができます。 ホールドを削除すると、非アクティブなメールボックスは削除するようにマークされ、処理された後は完全に削除されます。
+ms.openlocfilehash: 51f3181e77db2f36976f01f349f1c628f1e67bcf
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295740"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30899986"
 ---
-# <a name="delete-an-inactive-mailbox-in-office-365"></a>Office 365 で非アクティブなメールボックスを削除する
+# <a name="delete-an-inactive-mailbox-in-office-365"></a>Office 365 の非アクティブなメールボックスを削除する
 
-非アクティブなメールボックスは、退職後に元従業員の電子メールを保持するために使用されます。非アクティブなメールボックスの内容を保持する必要がなくなった場合は、その保留リストを削除することによって、非アクティブなメールボックスを完全に削除することができます。また、複数の保留リストが非アクティブなメールボックスに配置されている可能性もあります。たとえば、非アクティブなメールボックスを訴訟ホールドの対象にして、1つ以上のインプレース保持に配置することができます。さらに、office 365 のアイテム保持ポリシー (office 365 セキュリティ&amp;コンプライアンスセンターで作成されたもの) は、非アクティブなメールボックスに適用されることがあります。非アクティブなメールボックスからすべてのホールドポリシーと Office 365 アイテム保持ポリシーを削除する必要があります。保留ポリシーとアイテム保持ポリシーを削除すると、非アクティブなメールボックスは削除のマークが付けられ、処理された後は完全に削除されます。
+An inactive mailbox is used to preserve a former employee's email after he or she leaves your organization. When you no longer need to preserve the contents of an inactive mailbox, you can permanently delete the inactive mailbox by removing the hold. Also, it's possible that multiple holds might be placed on an inactive mailbox. For example, an inactive mailbox might be placed on Litigation Hold and on one or more In-Place Holds. Additionally, an Office 365 retention policy (created in the Office 365 Security &amp; Compliance Center) might be applied to the inactive mailbox. You have to remove all holds and Office 365 retention policies from an inactive mailbox to delete it. After you remove the holds and retention policies, the inactive mailbox is marked for deletion and is permanently deleted after it's processed.
   
 > [!IMPORTANT]
 > 2017 年 7 月 1 日に終了する予定だった、メールボックスを非アクティブにするために新しいインプレース ホールドを作成できる期間を延長しました。しかし、今年の終わりごろまたは来年の初めごろには、新しいインプレース ホールドを Exchange Online 内で作成することはできなくなります。その時点で、非アクティブのメールボックスを作成するために使用できるのは、訴訟ホールドと Office 365 アイテム保持ポリシーだけになります。ただし、インプレース ホールドにある既存の非アクティブなメールボックスは引き続きサポートされます。また、引き続き非アクティブなメールボックスのインプレース ホールドを管理することができます。これには、インプレース ホールドの期間を変更すること、およびそのインプレース ホールドを削除することによって非アクティブなメールボックスを完全に削除することが含まれます。 
   
-保留リストが非アクティブなメールボックスから削除された結果の詳細については、「[詳細情報](delete-an-inactive-mailbox.md#moreinfo)」セクションを参照してください。 
+保留リストが非アクティブなメールボックスから削除された結果の詳細については、「[詳細情報](#more-information)」セクションを参照してください。 
   
 ## <a name="before-you-begin"></a>開始する前に
 
-- 非アクティブなメールボックスから訴訟ホールドを削除するには、Exchange Online PowerShell を使用する必要があります。Exchange 管理センター (EAC) を使用することはできません。詳細な手順については、「 [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/?linkid=396554)」を参照してください。Exchange Online PowerShell または EAC を使用して、非アクティブなメールボックスからインプレースホールドを削除することができます。 
+- 非アクティブなメールボックスから訴訟ホールドを削除するには、Exchange Online PowerShell を使用する必要があります。 Exchange 管理センター (EAC) を使用することはできません。 詳細な手順については、「 [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/?linkid=396554)」を参照してください。 非アクティブなメールボックスからインプレース ホールドを削除する場合は、Exchange Online PowerShell または EAC を使用できます。 
     
-- 保留リストを削除して非アクティブなメールボックスを削除する前に、非アクティブなメールボックスの内容を別のメールボックスにコピーすることができます。詳細については、「 [Office の非アクティブなメールボックスを復元する 365](restore-an-inactive-mailbox.md)」を参照してください。
+- 非アクティブなメールボックスの内容は、ホールドを解除して、非アクティブなメールボックスを削除する前に別のメールボックスにコピーできます。 詳細については、「 [Office の非アクティブなメールボックスを復元する 365](restore-an-inactive-mailbox.md)」を参照してください。
     
-- 非アクティブなメールボックスからホールドまたは Office 365 のアイテム保持ポリシーを削除し、そのメールボックスの回復可能な削除によって削除されたメールボックスの保存期間が切れた場合、そのメールボックスは完全に削除されます。削除すると、回復することはできません。保留リストを削除する前に、メールボックスの内容が不要になっていることを確認してください。非アクティブなメールボックスを再アクティブ化する場合は、回復することができます。詳細については、「 [Office 365 の非アクティブなメールボックスを回復する](recover-an-inactive-mailbox.md)」を参照してください。
+- 非アクティブなメールボックスからホールドまたは Office 365 アイテム保持ポリシーを解除すると、メールボックスの回復可能な削除によって削除されたメールボックスの保持期間の有効期限が切れていれば、メールボックスは完全に削除されます。 削除後に回復することはできません。 ホールドを解除する前に、メールボックスの中身が不要かどうかを確認してください。 非アクティブなメールボックスを再アクティブ化することが必要な場合、メールボックスを回復することは可能です。 詳細については、「 [Office 365 の非アクティブなメールボックスを回復する](recover-an-inactive-mailbox.md)」を参照してください。
     
 - 非アクティブなメールボックスの詳細については、「 [Office 365 の非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)」を参照してください。
     
@@ -67,7 +67,7 @@ InPlaceHolds          : {c0ba3ce811b6432a8751430937152491, ba6f4ba25b62490aaaa25
 ```
 
 > [!TIP]
-> 非アクティブなメールボックスに多数のインプレースホールドが設定されている場合は、インプレースホールドのすべての guid が表示されるわけではありません。すべてのインプレースホールド guid を表示するには、次のコマンドを実行します。`Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds`
+> 多数のインプレース ホールドが非アクティブなメールボックスに設定されている場合、一部のインプレース ホールドの GUID が表示されません。 すべてのインプレースホールド guid を表示するには、次のコマンドを実行します。`Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds`
   
 ## <a name="step-2-remove-a-hold-from-an-inactive-mailbox"></a>手順 2:非アクティブなメールボックスから保留リストを削除する
 
@@ -97,25 +97,25 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
     
 #### <a name="use-the-eac-to-delete-an-in-place-hold"></a>EAC を使用してインプレース ホールドを削除する
 
-1. 削除するインプレース ホールドの名前が分かっている場合は、次の手順に進むことができます。そうでない場合は、次のコマンドを実行して、完全に削除する非アクティブなメールボックスに設定されているインプレース ホールドの名前を取得します。[手順 1: 非アクティブなメールボックスに設定されているホールドを特定する](delete-an-inactive-mailbox.md#step1) で取得したインプレース ホールドの GUID を使用します。
+1. 削除するインプレース ホールドの名前が分かっている場合は、次の手順に進むことができます。そうでない場合は、次のコマンドを実行して、完全に削除する非アクティブなメールボックスに設定されているインプレース ホールドの名前を取得します。[手順 1: 非アクティブなメールボックスに設定されているホールドを特定する](#step-1-identify-the-holds-on-an-inactive-mailbox) で取得したインプレース ホールドの GUID を使用します。
     
 ```
   Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
 ```
 
-2. EAC で、[**コンプライアンス管理** \> ]**の [インプレース電子情報&amp;開示の保留**] に移動します。
+2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
 3. 削除するインプレースホールドを選択し、[編集] **** ![編集アイコン](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)をクリックします。
     
-4. [**インプレースの電子情報開示&amp;保持**のプロパティ] ページで、[**インプレースホールド**] をクリックし、[**選択したメールボックス内の検索クエリに一致**したコンテンツを保持する] ボックスをオフにして、[**保存**] をクリックします。
+4. On the **In-Place eDiscovery &amp; Hold** properties page, click **In-Place Hold**, uncheck the **Place content matching the search query in selected mailboxes on hold** box, and then click **Save**.
     
-5. [**インプレースの電子情報開示&amp;保持**] ページで、インプレースホールドをもう一度選択し、[ ****![削除] アイコン](media/87565fbb-5147-4f22-9ed7-1c18ce664392.png)をクリックします。
+5. On the **In-Place eDiscovery &amp; Hold** page, select the In-Place Hold again, and then click **Delete**![Delete icon](media/87565fbb-5147-4f22-9ed7-1c18ce664392.png).
     
 6. 警告が表示されたら、 **[はい]** をクリックして、インプレース保持を削除します。 
     
 #### <a name="use-exchange-online-powershell-to-delete-an-in-place-hold"></a>Exchange Online PowerShell を使用してインプレース ホールドを削除する
 
-1. 削除するインプレース保持のプロパティを含む変数を作成します。[手順 1: 非アクティブなメールボックスに設定されているホールドを特定する](delete-an-inactive-mailbox.md#step1) で取得したインプレース保持の GUID を使用します。
+1. 削除するインプレース保持のプロパティを含む変数を作成します。[手順 1: 非アクティブなメールボックスに設定されているホールドを特定する](#step-1-identify-the-holds-on-an-inactive-mailbox) で取得したインプレース保持の GUID を使用します。
     
 ```
   $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
@@ -135,17 +135,17 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 #### <a name="use-the-eac-to-remove-an-inactive-mailbox-from-an-in-place-hold"></a>EAC を使用してインプレース ホールドから非アクティブなメールボックスを削除する
 
-1. 非アクティブなメールボックスに設定されたインプレース ホールドの名前が分かっている場合は、次の手順に進むことができます。そうでない場合は、次のコマンドを実行して、メールボックスに設定されたインプレース ホールドの名前を取得します。[手順 1: 非アクティブなメールボックスに設定されているホールドを特定する](delete-an-inactive-mailbox.md#step1) で取得したインプレース ホールドの GUID を使用します。
+1. 非アクティブなメールボックスに設定されたインプレース ホールドの名前が分かっている場合は、次の手順に進むことができます。そうでない場合は、次のコマンドを実行して、メールボックスに設定されたインプレース ホールドの名前を取得します。[手順 1: 非アクティブなメールボックスに設定されているホールドを特定する](#step-1-identify-the-holds-on-an-inactive-mailbox) で取得したインプレース ホールドの GUID を使用します。
     
 ```
   Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
 ```
 
-2. EAC で、[**コンプライアンス管理** \> ]**の [インプレース電子情報&amp;開示の保留**] に移動します。
+2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
 3. 非アクティブなメールボックスに配置されたインプレースホールドを選択し、[ **** ![編集アイコン](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)の編集] をクリックします。
     
-4. [**インプレースの電子情報開示&amp;保持**のプロパティ] ページで、[**ソース**] をクリックします。
+4. On the **In-Place eDiscovery &amp; Hold** properties page, click **Sources**.
     
 5. ソース メールボックスのリストで、削除する非アクティブなメールボックスの名前をクリックして、 **[削除]**![[削除] アイコン](media/adf01106-cc79-475c-8673-065371c1897b.gif)をクリックします。
     
@@ -157,7 +157,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 インプレース ホールドに多数のソース メールボックスが含まれている場合、EAC の **[ソース]** ページに非アクティブなメールボックスがリストされないことがあります。インプレース ホールドを編集する場合、 **[ソース]** ページに最大 3,000 のメールボックスが表示されます。非アクティブなメールボックスが **[ソース]** ページにリストされない場合は、Exchange Online PowerShell を使用してインプレース ホールドから削除できます。 
   
-1. 非アクティブなメールボックスに設定されたインプレース保持のプロパティを含む変数を作成します。[手順 1: 非アクティブなメールボックスに設定されているホールドを特定する](delete-an-inactive-mailbox.md#step1) で取得したインプレース保持の GUID を使用します。
+1. 非アクティブなメールボックスに設定されたインプレース保持のプロパティを含む変数を作成します。[手順 1: 非アクティブなメールボックスに設定されているホールドを特定する](#step-1-identify-the-holds-on-an-inactive-mailbox) で取得したインプレース保持の GUID を使用します。
     
 ```
   $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
@@ -169,7 +169,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
   $InPlaceHold.Sources
 ```
 
-   **注:** インプレースホールドの*Sources*プロパティは、 *LegacyExchangeDN*プロパティによってソースメールボックスを識別します。このプロパティは、非アクティブなメールボックスを一意に識別するので、インプレース保持の*Sources*プロパティを使用すると、間違ったメールボックスが削除されないようにすることができます。これにより、2つのメールボックスが同じエイリアスまたは SMTP アドレスを持つ場合に問題が発生しないようにすることもできます。 
+   **注:** インプレースホールドの*Sources*プロパティは、 *LegacyExchangeDN*プロパティによってソースメールボックスを識別します。 このプロパティは非アクティブなメールボックスを一意に特定するため、インプレース ホールドの *Sources* プロパティを削除すると、正しくないメールボックスの削除を回避できます。 これはまた、2 つのメールボックスが同じエイリアスまたは SMTP アドレスを持っているときの問題も回避できます。 
    
 3. 変数のソース メールボックスのリストから非アクティブなメールボックスを削除します。前の手順のコマンドで返された非アクティブなメールボックスの **LegacyExchangeDN** を必ず使用してください。 
     
@@ -209,9 +209,9 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
     
 - **ホールドを解除した直後に、非アクティブなメールボックスは完全に削除されますか。** 非アクティブなメールボックスが回復可能な削除によって削除された日付が 30 日より前であっても、ホールドを解除するとすぐにメールボックスが完全に削除されるということはありません。メールボックスに完全に削除するようマークが付けられ、次に処理されるときに削除されます。 
     
-- **削除済みメールボックスの保持期間は非アクティブなメールボックスにどのように影響しますか?** 非アクティブなメールボックスの回復可能な削除によって、保持期間が削除されてから30日が経過すると、そのメールボックスは完全削除のマークが付けられます。ただし、非アクティブなメールボックスに過去30日間以内に削除された削除済みの日付がある場合は、削除済みメールボックスの保持期間が経過するまでメールボックスを回復することができます。詳細については、「 [Exchange Online でユーザーメールボックスを削除または復元](https://go.microsoft.com/fwlink/?linkid=856835)する」を参照してください。回復可能な削除によって削除されたメールボックスの保持期間が経過すると、非アクティブなメールボックスを回復するための手順に従います。詳細については、「 [Office 365 の非アクティブなメールボックスを回復する](recover-an-inactive-mailbox.md)」を参照してください。
+- **回復可能な削除によって削除されたメールボックスの保持期間は非アクティブなメールボックスにどのように影響しますか。** 非アクティブなメールボックスが回復可能な削除によって削除された日付が、ホールドが解除された日付からさかのぼって 30 日目よりも前である場合は、メールボックスに完全削除のマークが付けられます。 ただし、非アクティブなメールボックスの回復可能な削除によって削除された日から 30 日が経過しないうちにホールドを解除した場合は、回復可能な削除によって削除されたメールボックスの保持期間内であれば、メールボックスを回復することが可能です。 詳細については、「 [Exchange Online でユーザーメールボックスを削除または復元](https://go.microsoft.com/fwlink/?linkid=856835)する」を参照してください。 回復可能な削除によって削除されたメールボックスの保持期間が経過した後は、非アクティブなメールボックスを回復するための手順を実行する必要があります。 詳細については、「 [Office 365 の非アクティブなメールボックスを回復する](recover-an-inactive-mailbox.md)」を参照してください。
     
-- **保留が解除された後、非アクティブなメールボックスに関する情報をどのように表示しますか。** 保持が削除され、非アクティブなメールボックスが回復可能な削除によって削除されたメールボックスに戻された後は、**メールボックスの取得**コマンドレットで*inactivemailboxonly*パラメーターを使用して返されることはありません。ただし、 **SoftDeletedMailbox**コマンドを使用して、メールボックスに関する情報を表示することができます。例えば： 
+- **ホールドを解除した後、どうすれば非アクティブなメールボックスの情報を表示できますか。** 保持が削除され、非アクティブなメールボックスが回復可能な削除によって削除されたメールボックスに戻された後は、**メールボックスの取得**コマンドレットで*inactivemailboxonly*パラメーターを使用して返されることはありません。 ただし、 **Get-Mailbox -SoftDeletedMailbox** コマンドを使用して、メールボックスの情報を表示できます。 たとえば、次のように入力します。 
     
 ```
   Get-Mailbox -SoftDeletedMailbox -Identity pilarp | FL Name,Identity,LitigationHoldEnabled,In
@@ -224,5 +224,5 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
   IsInactiveMailbox      : False
 ```
   
-上記の例では、 *whensoftdeleted*プロパティは、回復可能な削除によって削除された日付 (この例では、2014年10月30日) を示しています。この回復可能な削除によって削除されたメールボックスが以前は、保留が削除された非アクティブなメールボックスであった場合、 *whensoftdeleted*プロパティの値の30日後に完全に削除されます。この場合、2014年11月30日以降、メールボックスは完全に削除されます。
+上記の例では、 *whensoftdeleted*プロパティは、回復可能な削除によって削除された日付 (この例では、2014年10月30日) を示しています。 この回復可能な削除によって削除されたメールボックスが以前は、保留が削除された非アクティブなメールボックスであった場合、 *whensoftdeleted*プロパティの値の30日後に完全に削除されます。 この場合、メールボックスは 2014 年 11 月 30 日に完全に削除されます。
 

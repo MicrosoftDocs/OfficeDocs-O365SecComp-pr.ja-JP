@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: EOP の操作を開始する前に知っておく必要があるいくつかの点を以下に示します。
-ms.openlocfilehash: 878380adb039961334413019551847717ace0cc7
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fdaeba4f38d2e7676b336519f6d04649ee9d8137
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692326"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900126"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -23,7 +23,7 @@ Microsoft Exchange Online Protection (EOP) でホストされる電子メール 
   
 - EOP の詳細については、「[Exchange Online Protection サービスの説明](https://go.microsoft.com/fwlink/p/?LinkId=320619)」を参照してください。その他の有益なリソースとして、「[Exchange Online Protection の概要](exchange-online-protection-overview.md)」、「[EOP の一般的な FAQ](eop-general-faq.md)」、および「[EOP の機能](eop-features.md)」、および「[Exchange Online Protection ホームページ](https://go.microsoft.com/fwlink/?LinkId=279912)」があります。
     
-- EOP を初めて使うお客様は、まず「[EOP サービスを設定する](set-up-your-eop-service.md)」を参照してください。このトピックには、EOP を使い始める際に役立つ手順が記載されています。「[EOP の使用を開始するためのビデオ](videos-for-getting-started-with-eop.md)」で一連の入門ビデオを観ることもできます。
+- EOP を初めて使うお客様は、まず「[EOP サービスを設定する](set-up-your-eop-service.md)」を参照してください。 このトピックには、EOP を使い始める際に役立つ手順が記載されています。 
     
 - さらに支援が必要な場合や、アイデアを共有したい場合は、「[EOP のフォーラム](https://go.microsoft.com/fwlink/?LinkId=285351)」からご確認ください。 
     
@@ -36,8 +36,6 @@ EOP 管理者向けのヘルプ コンテンツは、次の最上位カテゴリ
 - [Exchange Online Protection の概要](exchange-online-protection-overview.md) EOP の機能を紹介し、追加情報へのリンクを提供します。 
     
 - [EOP の機能](eop-features.md) EOP で使用可能な機能の一覧を示します。 
-    
-- [EOP の使用を開始するためのビデオ](videos-for-getting-started-with-eop.md) 一般的なセットアップ タスクに関する一連のビデオを使って EOP の概要を説明します。 
     
 - [EOP サービスを設定する](set-up-your-eop-service.md) EOP サービスを設定するための手順と、追加情報へのリンクを提供します。 
     

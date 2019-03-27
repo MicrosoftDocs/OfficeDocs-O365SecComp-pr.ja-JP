@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Office 365 の監督ポリシーについて
-ms.openlocfilehash: c22abdf315b2301ae9c63b26f548eff302df8e2a
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: db0dedbbb41eef334165a4bde65c45a52d14299a
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720277"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900096"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 の監督ポリシー
 
@@ -73,7 +73,11 @@ Office 365 の監督ポリシーでは、指定されたレビュー担当者に
 監督ポリシーを使用すると、次のいずれかまたは複数の通信プラットフォームでメッセージを監視することを選択できます。
 
 - **Exchange 電子メール:** Office 365 サブスクリプションの一部として Exchange Online でホストされているメールボックスは、すべてメッセージ監督の対象となります。 監督ポリシー条件に一致する電子メールと添付ファイルは、監視と監督レポートですぐに利用できます。 監督用にサポートされている添付ファイルの種類は、 [Exchange メールフロールールの内容検査でサポートさ](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)れているファイルの種類と同じです。
-- **Microsoft Teams:** パブリックおよびプライベートの Microsoft Teams チャネルおよび個々のチャットの両方のチャット通信と関連付けられた添付ファイルは、監視できます。 Teams のチャット監督ポリシー条件は24時間ごとに処理され、監視と監督のレポートで利用できるようになります。
+- **Microsoft Teams:** パブリックおよびプライベートの Microsoft Teams チャネルおよび個々のチャットの両方のチャット通信と関連付けられた添付ファイルは、監視できます。 Teams のチャット監督ポリシー条件は24時間ごとに処理され、監視と監督のレポートで利用できるようになります。 次のグループ管理構成を使用して、Teams で個々のユーザーのチャットとチャネル通信を効果的に監督します。
+
+    - **Teams チャットの監督の場合**は、個々のユーザーを割り当てるか、監督ポリシーに[配布グループ](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)を割り当てる必要があります。 これは、1対1または1対多のユーザー/チャットの関係についてのものです。
+    - **Teams チャネル通信の場合:** 特定のユーザーが含まれている Microsoft のすべてのチームチャネルまたは Office 365 グループに、監督ポリシーを割り当てる必要があります。 追加の Microsoft Teams チャネルまたは Office 365 グループに同じユーザーを追加する場合は、これらの新しいチャネルとグループも監督ポリシーに追加してください。
+
 - **サードパーティのソース:** このデータを組織内の Office 365 メールボックスにインポートした場合は、サードパーティのソース (Facebook または DropBox など) からの通信を監督できます。 [サードパーティのデータを Office 365 にインポートする方法について説明](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data)します。
 
 ### <a name="policy-settings"></a>ポリシー設定
