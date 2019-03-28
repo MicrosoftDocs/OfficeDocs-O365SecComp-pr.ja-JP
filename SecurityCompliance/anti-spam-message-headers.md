@@ -13,12 +13,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection では、受信電子メール メッセージをスキャンするときに、 **X-Forefront-Antispam-Report** ヘッダーをそれぞれのメッセージに挿入します。
-ms.openlocfilehash: de5e1b16ac6c9e7515e23f083f2e938125c7e9cd
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 92614b8cb6e1571c3d5438206f9dcd106579669a
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693576"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936747"
 ---
 # <a name="anti-spam-message-headers"></a>スパム対策メッセージ ヘッダー
 
@@ -28,7 +28,6 @@ Exchange Online Protection では、受信電子メール メッセージをス�
 > さまざまな電子メール クライアントで電子メール メッセージ ヘッダーを表示する方法については、「[メッセージ ヘッダー アナライザー](https://go.microsoft.com/fwlink/p/?LinkId=306583)」を参照してください。メッセージ ヘッダーの内容は、コピーして[メッセージ ヘッダー アナライザー](https://testconnectivity.microsoft.com/?tabid=mha) ツールに貼り付けることができます。Exchange 管理センターで検疫内のメッセージを選択した場合は、 **[メッセージ ヘッダーの表示]** リンクを使ってメッセージ ヘッダー テキストをコピーしてツールに貼り付けることもできます。メッセージ ヘッダー アナライザー ツールに貼り付ければ、 **[ヘッダーの分析]** をクリックしてヘッダーに関する情報を取得できます。
   
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>X-Forefront-Antispam-Report メッセージ ヘッダー フィールド
-<a name="sectionSection0"> </a>
 
 メッセージ ヘッダー情報にアクセスしたら、**X-Forefront-Antispam-Report** を検索して、次に示すフィールドを確認します。このヘッダー内のその他のフィールドは、Microsoft スパム対策チームが診断のために専用で使用します。
 
@@ -38,7 +37,7 @@ Exchange Online Protection では、受信電子メール メッセージをス�
 |CTRY|サービスに接続されたメッセージの発信国。これは、接続先 IP アドレスから特定されます。そのため、発信元の送信先 IP アドレスとは異なる可能性があります。|
 |LANG|メッセージが作成された言語であり、国番号 (たとえば、ロシア語は ru_RU) で指定されます。|
 |SCL|メッセージの Spam Confidence Level (SCL) 値。これらの値の解釈方法については、「[Spam Confidence Level](spam-confidence-levels.md)」を参照してください。  |
-|PCL|メッセージの Phishing Confidence Level (PCL) 値。 |
+|PCL|メッセージの Phishing Confidence Level (PCL) 値。|
 |SRV:BULK|メッセージが一括電子メール メッセージとして識別されました。**[バルクメール メッセージをすべてブロックする]** 詳細スパム フィルター オプションが有効になっている場合、このメッセージがスパムとしてマークされます。このオプションが有効になっていない場合は、残りのフィルター処理ルールでそのメッセージがスパンであると判断された場合にのみスパムとしてマークされます。|
 |SFV:SFE|メッセージが個人の差出人セーフ リスト上のアドレスから送信されているため、フィルター処理が省略され、メッセージはそのまま配信されました。|
 |SFV:BLK|メッセージが個人の受信拒否リスト上のアドレスから送信されているため、フィルター処理が省略され、メッセージはブロックされました。  <br/> **ヒント**: エンドユーザーがセーフリストと受信拒否リストを作成する方法の詳細については、「 [Block or allow (迷惑メール設定)](https://go.microsoft.com/fwlink/p/?LinkId=294862) 」 (web 上の outlook) および「[迷惑メールフィルター](https://go.microsoft.com/fwlink/p/?LinkId=270065) (outlook) の概要」を参照してください。|
@@ -58,7 +57,6 @@ Exchange Online Protection では、受信電子メール メッセージをス�
 |X-CustomSpam:[ASFOption]|メッセージは、高度なスパムフィルターオプションと一致しました。 たとえば、**X-CustomSpam:リモート サイトへのイメージ リンク**は、**リモート サイトへのイメージ リンク** の ASF オプションが一致したことを表します。 特定の ASF オプションに対してどの X ヘッダーテキストが追加されているかを確認するには、「 [Advanced spam filtering options](advanced-spam-filtering-asf-options.md)」を参照してください。|
    
 ## <a name="x-microsoft-antispam-message-header-fields"></a>X-Microsoft-Antispam メッセージ ヘッダー フィールド
-<a name="sectionSection1"> </a>
 
 次の表に、**X-Microsoft-Antispam** メッセージ ヘッダー内の便利なフィールドを示します。このヘッダー内のその他のフィールドは、Microsoft スパム対策チームが診断のために専用で使用します。
   
@@ -68,16 +66,14 @@ Exchange Online Protection では、受信電子メール メッセージをス�
 |PCL|メッセージの Phishing Confidence Level (PCL)。これは、そのメッセージがフィッシング メッセージかどうかを示します。     この状態は、次のいずれかの数値として返されます。 <br/>• **0-3**: メッセージの内容がフィッシングではない可能性があります。 <br/>• **4-8**: メッセージの内容がフィッシングである可能性が高いことを示します。 <br/>• **-9990**: (Exchange Online Protection のみ) メッセージの内容がフィッシングである可能性が高いことを示します。  <br/>  これらの値は、電子メール クライアントがメッセージに対して実行するアクションを決めるために使用されます。 たとえば、Outlook は PCL スタンプを使用して、疑わしいメッセージの内容をブロックします。 フィッシングについてと、Outlook がフィッシング メッセージを処理する方法の詳細については、「 [電子メール メッセージ内のリンクを有効または無効にする](https://support.office.com/article/2D79B907-93B6-4774-82E6-1F0385CF20F8)」を参照してください。|
    
 ## <a name="authentication-results-message-header"></a>Authentication-results メッセージ ヘッダー
-<a name="sectionSection2"> </a>
 
 メール サーバーが電子メール メッセージを受信すると、SPF、DKIM、および DMARC に対するチェックの結果が Office 365 によって、**Authentication-results** メッセージ ヘッダーに記録またはスタンプされます。
   
 ### <a name="check-stamp-syntax-and-examples"></a>check stamp 構文と例
-<a name="referenceSPFstamp"> </a>
 
 次に示す構文の例では、Office 365 がメール サーバーでの受信時に電子メールの認証チェックを受ける各メールのメッセージ ヘッダーに適用するテキスト "スタンプ" の一部を示しています。このスタンプは **Authentication-Results** ヘッダーに追加されます。
   
- **構文:SPF check stamp**
+**構文:SPF check stamp**
   
 SPF の場合は、次の構文を適用します。
   
@@ -85,14 +81,14 @@ SPF の場合は、次の構文を適用します。
 spf=<pass (IP address)|fail (IP address)|softfail (reason)|neutral|none|temperror|permerror> smtp.mailfrom=<domain>
 ```
 
- **例:SPF check stamp**
+**例:SPF check stamp**
   
 ```
 spf=pass (sender IP is 192.168.0.1) smtp.mailfrom=contoso.com
 spf=fail (sender IP is 127.0.0.1) smtp.mailfrom=contoso.com
 ```
 
- **構文:DKIM check stamp**
+**構文:DKIM check stamp**
   
 DKIM の場合は、次の構文を適用します。
   
@@ -100,14 +96,14 @@ DKIM の場合は、次の構文を適用します。
 dkim=<pass|fail (reason)|none> header.d=<domain>
 ```
 
- **例:DKIM check stamp**
+**例:DKIM check stamp**
   
 ```
 dkim=pass (signature was verified) header.d=contoso.com
 dkim=fail (body hash did not verify) header.d=contoso.com
 ```
 
- **構文:DMARC check stamp**
+**構文:DMARC check stamp**
   
 DMARC の場合は、次の構文を適用します。
   
@@ -115,7 +111,7 @@ DMARC の場合は、次の構文を適用します。
 dmarc=<pass|fail|bestguesspass|none> action=<permerror|temperror|oreject|pct.quarantine|pct.reject> header.from=<domain>
 ```
 
- **例:DMARC check stamp**
+**例:DMARC check stamp**
   
 ```
 dmarc=pass action=none header.from=contoso.com
@@ -125,7 +121,6 @@ dmarc=fail action=oreject header.from=contoso.com
 ```
 
 ### <a name="authentication-results-message-header-fields-used-by-office-365-email-authentication"></a>Office 365 の電子メールの認証で使用される Authentication-results メッセージ ヘッダー フィールド
-<a name="referenceSPFstamp"> </a>
 
 フィールドと各電子メールの認証チェックに使用できる値を次の表に示します。
   
