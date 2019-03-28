@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 組織が GDPR 計画の一環としてラベルを実装するかどうかを決定します。
-ms.openlocfilehash: 79c68b8340209c3cc3e3a7081a4075c31a112e80
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 6886adaa09599b32eb2f3084efdea06fd5794af0
+ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789442"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30800299"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>個人データの分類スキーマを設計する
 
@@ -41,9 +41,9 @@ Office 365 では、個人情報に分類の 2 つの方法のいずれかを使
 
 -   これらは、組織でまだラベルを使用する広範なデータ ガバナンス計画がない場合、またはその実装が準備段階の場合に簡単に使用できます。
 
--   これらは DLP ルールにも適しています (Office のラベルも同様)。
+-   これらは DLP ルールと連携します (保持ラベルも同様です)。
 
--   将来的には、これらは Cloud App Security とも連携するため、他の SaaS アプリでも機密データを検出することができます。
+-   機密情報の種類は Cloud App Security とも連携するため、他の SaaS アプリでも機密データを検出することができます。
 
 ### <a name="option-2-use-sensitive-information-types--retention-labels"></a>オプション 2: 機密情報の種類と保持ラベルを使用する
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 の保持ラベルは、適切なコンテンツで適切な操作を実行するために役立ちます。保持ラベルを使用すると、ガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制できます。保持ラベルは、Office 365 全体のレコード管理の実装に使用することもできます。
-ms.openlocfilehash: c7a1ea3221de193db30a821e0449194ea761ebcf
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 174be4cbb55b72a3bc8751460ff030b38238590e
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455309"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900136"
 ---
 # <a name="overview-of-retention-labels"></a>保持ラベルの概要
 
@@ -90,7 +90,7 @@ ms.locfileid: "30455309"
     
 - 自動適用ラベルを割り当てるルールが複数あり、コンテンツが複数のルールの条件を満たしている場合、最も古いルールの保持ラベルが割り当てられます。
     
-手動で割り当てたラベルは明示的に割り当てられ、自動適用のラベルは暗黙的に割り当てられます。明示的な保持ラベルは暗黙的なラベルよりも優先されます。詳細については、後続の「[保持の原則、すなわち優先順位について](labels.md#principles)」セクションを参照してください。
+手動で割り当てたラベルは明示的に割り当てられ、自動適用のラベルは暗黙的に割り当てられます。明示的な保持ラベルは暗黙的なラベルよりも優先されます。詳細については、後続の「[保持の原則、すなわち優先順位について](#the-principles-of-retention-or-what-takes-precedence)」セクションを参照してください。
 
 このセクションのすべての情報は、保持ラベルにのみ適用されます。コンテンツのアイテムには、1 つの保持ラベルの他に 1 つの機密ラベルを適用することもできます。
   
@@ -291,7 +291,7 @@ Office 365 グループのコンテンツを保持するには、Office 365 グ�
 
 - Exchange
     - subject:"Quarterly Financials"
-    - recipients:garthf<!--nolink-->@contoso.com
+    - 受信者: garthf<!--nolink-->@contoso.com
 - SharePoint および OneDrive for Business
     - contenttype:contract
     - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
