@@ -1,74 +1,53 @@
 ---
-title: EOP の使用を開始するためのビデオ
+title: EOP とは
 ms.author: tracyp
-author: MSFTTracyP
+author: msfttracyp
+ms.reviewer: andypunt
 manager: laurawi
-ms.date: 3/13/2015
+ms.date: 2/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.custom: TN2DMC
 localization_priority: Normal
-ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
-ms.collection:
-- M365-security-compliance
-description: 次の一連のビデオは、Exchange Online Protection (EOP) でホストされた電子メール フィルタリング サービスを設定および使用するうえで役立ちます。
-ms.openlocfilehash: 1e8aadd173f4e30c528679347171230e83752af0
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+search.appverid:
+- MET150
+ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
+description: この入門ドキュメントは、Exchange Online Protection (EOP) といくつかの重要な用語を理解するのに役立ちます。 これは、exchange Online のクラウドホスト型メールボックスを保護している、または exchange Server 2016 などの社内メールボックスを保護している EOP スタンドアロンのお客様に対して適用されます。
+ms.openlocfilehash: f23f28b5c15c7057d1fd8ec77cce67bf1746410c
+ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30926735"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30950434"
 ---
-# <a name="videos-for-getting-started-with-eop"></a><span data-ttu-id="44744-103">EOP の使用を開始するためのビデオ</span><span class="sxs-lookup"><span data-stu-id="44744-103">Videos for getting started with EOP</span></span>
+## <a name="what-is-exchange-online-protection-eop"></a><span data-ttu-id="856e5-104">Exchange Online Protection (EOP) とは</span><span class="sxs-lookup"><span data-stu-id="856e5-104">What is Exchange Online Protection (EOP)</span></span>
 
-<span data-ttu-id="44744-104">次の一連のビデオは、Exchange Online Protection (EOP) でホストされた電子メール フィルタリング サービスを設定および使用するうえで役立ちます。</span><span class="sxs-lookup"><span data-stu-id="44744-104">The following series of videos will help you set up and use the Exchange Online Protection (EOP) hosted email filtering service.</span></span>
-  
-> [!NOTE]
-> <span data-ttu-id="44744-p101">ビデオで説明されているタスクを開始する前に、メール フローを設定することをお勧めします。詳細については、「[Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="44744-p101">Before you start the tasks described in the videos, we recommend that you set up mail flow. For more information, see the [Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx) topic.</span></span> 
-  
-<span data-ttu-id="44744-107">以下のビデオでは、組織のニーズに合わせてスパム対策の設定を調整する方法について説明しています。</span><span class="sxs-lookup"><span data-stu-id="44744-107">These videos are about tailoring your anti-spam settings to fit the needs of your organization.</span></span> <span data-ttu-id="44744-108">サービスを使用して組織が受け取る受信メールについては、IP アドレスに基づいて差出人セーフ リストと受信拒否リストを作成すること、およびコンテンツ フィルター設定を構成することが含まれます。</span><span class="sxs-lookup"><span data-stu-id="44744-108">For inbound mail traveling through the service to your organization, this includes creating safe sender and blocked sender lists based on IP addresses, and configuring content filter settings.</span></span> <span data-ttu-id="44744-109">管理者が、検疫に送信されたメールフロールール (トランスポートルールとも呼ばれる) と一致するコンテンツフィルターが適用されたスパムメッセージやメッセージを検索して解放する方法についても説明します。また、サービスの改善に役立つスパムメッセージを報告する方法も示しています。</span><span class="sxs-lookup"><span data-stu-id="44744-109">There's also a video showing how admins can find and release content-filtered spam messages or messages that matched a mail flow rule (also known as a transport rule) that were sent to the quarantine, and also how to report spam messages to help us improve the service.</span></span>
-  
-- <span data-ttu-id="44744-110">EOP で IP 許可一覧と IP 禁止一覧を構成する</span><span class="sxs-lookup"><span data-stu-id="44744-110">Configure IP Allow and IP Block Lists in EOP</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
-  
-    <span data-ttu-id="44744-111">詳細については、「[接続フィルター ポリシーを構成する](../configure-the-connection-filter-policy.md)」トピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="44744-111">For more details, see the [Configure the connection filter policy](../configure-the-connection-filter-policy.md) topic.</span></span> 
-    
-- <span data-ttu-id="44744-112">EOP におけるスパム コンテンツ フィルターの構成</span><span class="sxs-lookup"><span data-stu-id="44744-112">Configure Spam Content Filtering in EOP</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
-  
-    <span data-ttu-id="44744-113">詳細については、「[スパム フィルター ポリシーの構成](../configure-your-spam-filter-policies.md)」トピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="44744-113">For more details, see the [Configure your spam filter policies](../configure-your-spam-filter-policies.md) topic.</span></span> 
-    
-- <span data-ttu-id="44744-114">メッセージの検出と検疫からの解放</span><span class="sxs-lookup"><span data-stu-id="44744-114">Find and Release Messages From the Quarantine</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/2a78346d-a3ab-4d70-a88e-0c9d562f7545?autoplay=false]
-  
-    <span data-ttu-id="44744-115">詳細については、「[管理者として検疫済みメッセージを検索して解放する](../find-and-release-quarantined-messages-as-an-administrator.md)」トピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="44744-115">For more details, see the [Find and release quarantined messages as an administrator](../find-and-release-quarantined-messages-as-an-administrator.md) topic.</span></span> 
-    
-<span data-ttu-id="44744-p103">組織からスパムが送信されていないか監視するために、送信スパム ポリシーを構成することもできます。その方法については、送信スパムのビデオを参照してください。</span><span class="sxs-lookup"><span data-stu-id="44744-p103">You'll also want to configure the outbound spam policy because you'll want to monitor if spam is being sent from your organization. Check out the outbound spam video to learn how.</span></span>
-  
-- <span data-ttu-id="44744-118">送信スパム ポリシーの構成</span><span class="sxs-lookup"><span data-stu-id="44744-118">Configure the Outbound Spam Policy</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/1f20d655-0d3d-4141-9cae-e57f5a6cffe8?autoplay=false]
-  
-    <span data-ttu-id="44744-119">詳細については、「[送信スパム ポリシーを構成する](../configure-the-outbound-spam-policy.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="44744-119">For more details, see the [Configure the outbound spam policy](../configure-the-outbound-spam-policy.md)</span></span>
-    
-<span data-ttu-id="44744-120">EOP には、さらに、サービスによって検出されたマルウェアの処理方法を定めるための設定もあります。この点については、マルウェア対策のフィルタリングのビデオで説明されています。</span><span class="sxs-lookup"><span data-stu-id="44744-120">EOP also has settings for how to handle malware that's detected by the service, which the anti-malware filtering video describes.</span></span>
-  
-- <span data-ttu-id="44744-121">マルウェア対策ポリシーの構成</span><span class="sxs-lookup"><span data-stu-id="44744-121">Configure the Anti-Malware Policy</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/12517702-ab48-4df8-a7ff-8eb02aa31724?autoplay=false]
-  
-    <span data-ttu-id="44744-122">詳細については、「[マルウェア対策ポリシーを構成する](../configure-anti-malware-policies.md)」のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="44744-122">For more details, see the [Configure anti-malware policies](../configure-anti-malware-policies.md) topic.</span></span> 
-    
-<span data-ttu-id="44744-123">設定した特定の条件に基づいてメッセージをフィルター処理し、会社のポリシーや規制に基づいてルーティングするには、メールフロールールの作成方法に関するビデオをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="44744-123">To filter and route messages based on specific conditions you set, based on company policy or regulations, you'll want to watch the video about how to create mail flow rules.</span></span>
-  
-- <span data-ttu-id="44744-124">EOP で Exchange メールフロールールを構成する</span><span class="sxs-lookup"><span data-stu-id="44744-124">Configure Exchange mail flow rules in EOP</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
-  
-    <span data-ttu-id="44744-125">詳細については、「exchange online [Protection でのメールフロールール (トランスポートルール)](mail-flow-rules-transport-rules-0.md) EOP」を参照してください。 exchange online を使用している場合は、「exchange online Protection の[メールフロールール (トランスポートルール)](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) 」トピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="44744-125">For more details, see the [Mail flow rules (transport rules) in Exchange Online Protection](mail-flow-rules-transport-rules-0.md) topic if you use EOP standalone, or see [Mail flow rules (transport rules) in Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) topic if you use Exchange Online.</span></span>
-    
-<span data-ttu-id="44744-126">コマンド ラインからスクリプトを実行してサービスを構成する場合は、まずリモート PowerShell のビデオをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="44744-126">f you're interested in configuring the service by running scripts from the command line, the remote PowerShell video will help you get started.</span></span>
-  
-- <span data-ttu-id="44744-127">EOP におけるリモート PowerShell の使用</span><span class="sxs-lookup"><span data-stu-id="44744-127">Use Remote PowerShell in EOP</span></span>
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/9cb28006-c2cb-45b6-b72e-eeed8767dee7?autoplay=false]
-  
-    <span data-ttu-id="44744-128">詳細については、「[Exchange Online Protection の PowerShell](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx)」トピック (EOP スタンドアロンを使用している場合)、または「[Exchange Online PowerShell](http://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx)」トピック (Exchange Online を使用している場合) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="44744-128">For more details, see the [PowerShell in Exchange Online Protection](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) topic if you use EOP standalone, or see the [Exchange Online PowerShell](http://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx) topic if you use Exchange Online.</span></span> 
-    
+<span data-ttu-id="856e5-105">Exchange Online Protection (EOP) は、クラウドベースの電子メールフィルター処理サービスであり、スパムやマルウェアから組織を保護します。</span><span class="sxs-lookup"><span data-stu-id="856e5-105">Exchange Online Protection (EOP) is a cloud-based email filtering service that helps protect your organization against spam and malware.</span></span> <span data-ttu-id="856e5-106">Office 365 にメールボックスがある場合、それらはサービスの一部であるため、EOP によって自動的に保護されます。</span><span class="sxs-lookup"><span data-stu-id="856e5-106">If you have mailboxes in Office 365, they are automatically protected by EOP since it is part of the service.</span></span> <span data-ttu-id="856e5-107">これには、Office 365 とオンプレミスの両方にメールボックスがあり、ハイブリッドシナリオとしてよく知られている組織が含まれます。</span><span class="sxs-lookup"><span data-stu-id="856e5-107">This includes organizations that have mailboxes in both Office 365 and on-premise, which is commonly known as a hybrid scenario.</span></span> <span data-ttu-id="856e5-108">EOP スタンドアロンは、クラウドにメールボックスを持っていないが、社内メールボックスを保護する必要があるお客様も利用できます。</span><span class="sxs-lookup"><span data-stu-id="856e5-108">EOP standalone is also available for customers who do not have mailboxes in the cloud but want to protect their on-premise mailboxes.</span></span> 
 
+<span data-ttu-id="856e5-109">EOP は迷惑メールのフィルターを試行し、ユーザーが表示したくないコンテンツを受信トレイがクリアしないようにします。</span><span class="sxs-lookup"><span data-stu-id="856e5-109">EOP attempts to filter out junk, keeping your Inbox clear of content that users don't want to see.</span></span> <span data-ttu-id="856e5-110">通常、迷惑メールは [迷惑メール] フォルダーに配信されます。</span><span class="sxs-lookup"><span data-stu-id="856e5-110">Normally, junk mail is delivered to the Junk Email folder.</span></span> <span data-ttu-id="856e5-111">迷惑メールフォルダーが自分で必要なことを確認するための簡単な方法であることを確認するために、フィルター処理で必要なことを確認することができます。</span><span class="sxs-lookup"><span data-stu-id="856e5-111">Some users like to check to make sure the filtering is doing what they want so the Junk Email folder is an easy way for users to check on their own.</span></span>  
+
+> [!TIP]
+> <span data-ttu-id="856e5-112">迷惑メールやその他の不正な電子メールが迷惑メールフォルダーに自動的に送られる場合に適しています。</span><span class="sxs-lookup"><span data-stu-id="856e5-112">It is a good thing when junk or otherwise bad email goes into the Junk Email folder automatically.</span></span> <span data-ttu-id="856e5-113">サービスは、既定またはカスタムの管理者設定の状態に基づいて必要な処理を実行します。</span><span class="sxs-lookup"><span data-stu-id="856e5-113">The service will do what is necessary based on what the default or the custom admin settings state.</span></span> <span data-ttu-id="856e5-114">言い換えると、ユーザーは迷惑メールフォルダーに多数のスパムメールを表示することを心配する必要はありません。</span><span class="sxs-lookup"><span data-stu-id="856e5-114">In other words, users should not worry about seeing a lot of spam mail in the Junk Email folder.</span></span> <span data-ttu-id="856e5-115">管理者がすべての迷惑メールを視界から除外することを希望している場合は、検疫を構成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="856e5-115">If admins prefer to move all junk out of sight, then the Quarantine should be configured.</span></span> <span data-ttu-id="856e5-116">詳細については、「 [Office で電子メールメッセージを検疫する 365](../quarantine-email-messages.md) 」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="856e5-116">For more details, see the [Quarantine email messages in Office 365](../quarantine-email-messages.md) article.</span></span>
+
+## <a name="important-terms"></a><span data-ttu-id="856e5-117">重要な用語</span><span class="sxs-lookup"><span data-stu-id="856e5-117">Important terms</span></span>
+
+<span data-ttu-id="856e5-118">**受信:** Office 365 に入ってくるメッセージ</span><span class="sxs-lookup"><span data-stu-id="856e5-118">**Inbound:** Messages that are coming into Office 365.</span></span>
+
+<span data-ttu-id="856e5-119">**送信:** Office 365 から出てくるメッセージ。</span><span class="sxs-lookup"><span data-stu-id="856e5-119">**Outbound:** Messages that are going out of Office 365.</span></span>
+
+<span data-ttu-id="856e5-120">**内部:** 組織内のユーザーから組織内のユーザーに送信されるメッセージ。</span><span class="sxs-lookup"><span data-stu-id="856e5-120">**Internal:** Messages that are from someone inside the organization to someone inside the organization.</span></span> <span data-ttu-id="856e5-121">これには、ハイブリッドシナリオと1つのメールボックスがオンプレミスにあり、他のメールボックスがクラウド内に存在する可能性があるユーザーが含まれます。</span><span class="sxs-lookup"><span data-stu-id="856e5-121">This includes customers who are in hybrid scenarios and one mailbox could be on-premise and the other mailbox is in the cloud.</span></span>
+
+<span data-ttu-id="856e5-122">**False 負 (FN):** スパムやその他の迷惑メールが、受信トレイに正しく送信されません。</span><span class="sxs-lookup"><span data-stu-id="856e5-122">**False Negative (FN):** Spam and other junk that incorrectly gets sent into the inbox.</span></span>
+
+<span data-ttu-id="856e5-123">**False 陽性 (FP):** 誤ってスパムとしてマークされ、迷惑メールフォルダーまたは検疫に入れられる正当なメッセージ。</span><span class="sxs-lookup"><span data-stu-id="856e5-123">**False Positive (FP):** Legitimate messages that incorrectly get marked as spam and put into the Junk Email folder or Quarantine.</span></span>
+
+<span data-ttu-id="856e5-124">**スパム (迷惑メールとも呼ばれます):** これには、商業広告、チェーンレター、政治的メールなどの形式があります。これは、ユーザーが電子メールを送信しようとしたり、不正なコミットを試行したりしているスパムからのサインアップを行わないメールです。</span><span class="sxs-lookup"><span data-stu-id="856e5-124">**Spam, also known as unsolicited e-mail:** This comes in the form of commercial advertising, chain letters, political mailings, etc. This is email that users do not sign up for and from spammers who are trying to solicit products or attempting to commit fraud.</span></span>
+
+<span data-ttu-id="856e5-125">**フィッシング:** フィッシングとは、個人情報の盗難や不正行為を防止するために、個人情報を提供することを目的とする特別な種類のスパムです。</span><span class="sxs-lookup"><span data-stu-id="856e5-125">**Phish:** Phishing is a special type of spam that is intended to trick you into giving up personal information for the purpose of committing identity theft or fraud.</span></span> <span data-ttu-id="856e5-126">通常、この種類のメッセージには、悪意のあるリンクや添付ファイルが含まれますが、常には含まれません。</span><span class="sxs-lookup"><span data-stu-id="856e5-126">This type of message usually contains a malicious link or attachment, but not always.</span></span>
+
+<span data-ttu-id="856e5-127">**スプーフィング:** スプーフィングとは、スパム送信者が from ヘッダーを偽造して、メッセージが実際のソース以外の人物または別の場所から発信されたように見えるようにすることです。</span><span class="sxs-lookup"><span data-stu-id="856e5-127">**Spoof:** Spoofing is when spammers forge the FROM header so that messages appear to have originated from someone or somewhere other than the actual source.</span></span> <span data-ttu-id="856e5-128">これはスパムでもかまいませんが、フィッシングユーザーに最もよく使用されます。</span><span class="sxs-lookup"><span data-stu-id="856e5-128">This can be spam but most commonly used to phish users.</span></span>
+
+<span data-ttu-id="856e5-129">**偽装:** この種類のスパムは、送信者アドレスを偽造する方法でもありますが、実際のソースのようになるように名前またはドメインの一部を変更することによって行われます。</span><span class="sxs-lookup"><span data-stu-id="856e5-129">**Impersonation:** This type of spam is also a way to forge the sender address, but it is done by modifying part of the name or domain so that it looks like the real source.</span></span> <span data-ttu-id="856e5-130">たとえば、請求書の "l" が実際には11で、Microsoft の "o" が0という数字に置き換えられていると、Bi11@micr0s0ft.com のようになります。</span><span class="sxs-lookup"><span data-stu-id="856e5-130">For example, Bi11@micr0s0ft.com, where the "l" in Bill was actually the number eleven and the "o" in Microsoft was replaced with the number zero.</span></span>
+
+<span data-ttu-id="856e5-131">**Bulk:** 通常、バルクメールはユーザーによって要請されますが、企業が他の企業に情報を販売する際に間接的に発生する場合があります。</span><span class="sxs-lookup"><span data-stu-id="856e5-131">**Bulk:** Bulk mail is usually solicited by users, although sometimes indirectly when companies sell information to other companies.</span></span> <span data-ttu-id="856e5-132">通常、ユーザーは大量のメール (newletters) に意図的にサインアップしていますが、後で忘れることはなく、スパムであると考えられます。</span><span class="sxs-lookup"><span data-stu-id="856e5-132">It is common that users intentionally sign up for bulk mail (i.e. newletters) but forget later on and think it is spam.</span></span> <span data-ttu-id="856e5-133">バルクメールが送信されると、ユーザーがサインアップするよりも多くの場合、大量メールがスパムになる。</span><span class="sxs-lookup"><span data-stu-id="856e5-133">Bulk mail becomes spam when bulk mailers send more than users sign up and complaint levels get too high.</span></span>
