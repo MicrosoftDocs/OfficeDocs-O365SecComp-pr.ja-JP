@@ -3,7 +3,7 @@ title: イベント ベースの保持の概要
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 5/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 のラベルを使用すると、特定のイベントが発生したときの保存期間の基準を設定することができます。発生したイベントによって保存期間の開始がトリガーされ、そのイベントの種類のラベルが適用されたすべてのコンテンツによって、コンテンツに適用済みのラベルの保持操作が行われます。イベント ベースの保持は通常、レコード管理プロセスの一環として使用します。
-ms.openlocfilehash: 129f957585e9df5a959e34187a0edc384c68c448
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: ceb4b2fde10e43235d8d310243fe56cce1a2b240
+ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455109"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30866363"
 ---
 # <a name="overview-of-event-driven-retention"></a>イベント ベースの保持の概要
 

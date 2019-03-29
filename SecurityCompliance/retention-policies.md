@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーでは、コンテンツを保持するか、コンテンツを削除するか、またはコンテンツを保持して後に削除するかを事前に決定できます。さらに、1 つのポリシーを組織全体に適用するか、特定の場所やユーザーにのみ適用するか、すべてのコンテンツにポリシーを適用するか、特定の条件を満たしているコンテンツのみにポリシーを適用するかも事前に決定できます。
-ms.openlocfilehash: 82125d13adfb42706a44feeaca3dfb85e06163f6
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b07adf61f63e683de4f5868c227741dc957ffd68
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455449"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935302"
 ---
 # <a name="overview-of-retention-policies"></a>アイテム保持ポリシーの概要
 
@@ -244,7 +244,7 @@ Microsoft では、Teams のアイテム保持に関する作業を継続して�
     
 - **Teams は組織全体のポリシーには含まれない**: 組織全体のポリシーを作成する場合、Teams は含まれません。Teams には個別のアイテム保持ポリシーが必要になるためです。 
     
-- **Teams は高度なアイテム保持をサポートしていない**: アイテム保持ポリシーを作成するときに、[特定の条件を満たすコンテンツにのみポリシーを適用する高度な設定](retention-policies.md#advanced)を選択すると、Teams の場所は利用できなくなります。現時点では、Teams のアイテム保持はすべてのチャットおよびチャネル メッセージのコンテンツに適用されます。
+- **Teams は高度なアイテム保持をサポートしていない**: アイテム保持ポリシーを作成するときに、[特定の条件を満たすコンテンツにのみポリシーを適用する高度な設定](#advanced-settings-that-apply-a-policy-only-to-content-that-meets-certain-conditions)を選択すると、Teams の場所は利用できなくなります。現時点では、Teams のアイテム保持はすべてのチャットおよびチャネル メッセージのコンテンツに適用されます。
     
 - **Teams コンテンツは削除されるまでに少なくとも 30 日間かかる**: 現時点では、経過時間が 30 日未満の Teams コンテンツを削除するポリシーの作成はサポートされていません。このポリシーを Teams コンテンツに適用する必要がある場合は、30 日以上のアイテム保持期間を指定します。 
     
@@ -252,7 +252,7 @@ Microsoft では、Teams のアイテム保持に関する作業を継続して�
     
 チームでは、チャットで共有されるファイルが、ファイルを共有したユーザーの OneDrive アカウントに保存されます。チャネルにアップロードされたファイルは、チームの SharePoint 内に保存されます。そのため、チーム内のファイルを保持または削除するには、SharePoint の場所と OneDrive の場所に適用されるアイテム保持ポリシーを作成する必要があります。特定のチームのみのファイルにポリシーを適用する場合は、チーム用の SharePoint サイトおよびチーム内のユーザーの OneDrive アカウントを選択できます。
   
-Teams に適用するアイテム保持ポリシーには、[保持ロック](retention-policies.md#locking)を使用できます。
+Teams に適用するアイテム保持ポリシーには、[保持ロック](#locking-a-retention-policy)を使用できます。
   
 ![チャットおよびチャネル メッセージに対応する Teams の場所](media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
   
