@@ -3,7 +3,7 @@ title: Office 365 Advanced Threat Protection
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/19/2019
+ms.date: 03/28/2019
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,17 +15,17 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection には、安全な添付ファイル、安全なリンク、高度なフィッシング対策ツール、レポートツール、および脅威インテリジェンス機能が含まれています。
-ms.openlocfilehash: ce4652e19f97cda6dbbea7df8083531ee0a0a1fc
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 442c827f9844184fc6f03f6e253a0f492d12dd62
+ms.sourcegitcommit: 787a0fef671e5dc6f5e805b580321b2edbfad8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693056"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989622"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
 > [!IMPORTANT]
-> この記事は、Office 365 Enterprise のお客様を対象としています。 Outlook.com、office 365 Home、または office 365 Personal を使用していて、Outlook での安全なリンクに関する情報をお探しの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
+> この記事は、Office 365 enterprise および Microsoft 365 enterprise のお客様を対象としています。 Outlook.com、office 365 Home、または office 365 Personal を使用していて、Outlook での安全なリンクに関する情報をお探しの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
 ## <a name="overview"></a>概要
 
@@ -36,13 +36,14 @@ Office 365 Advanced Threat Protection (ATP) は、電子メールメッセージ
 - [レポート](#view-atp-reports): 組織内の ATP のパフォーマンスを監視するためのリアルタイムレポートを表示します。 
 
 - [脅威の調査と応答の機能](#use-threat-investigation-and-response-capabilities): トップエッジツールを使用して、脅威の調査、理解、シミュレーション、および防止を行います。 
- 
+
+- 自動化された[調査と応答の機能](#save-time-with-automated-investigation-and-response): 脅威を調査および軽減する時間と労力を節約します。
 
 ## <a name="configure-atp-policies"></a>ATP ポリシーを構成する
 
 Office 365 ATP には、組織に適したレベルの保護を設定するための多数のツールが用意されています。 
 
-組織のセキュリティチームは、Office 365 security & コンプライアンスセンターの各 ATP ツールに対してポリシーを定義する必要があります。 [**脅威管理** > **ポリシー** ] に移動して、[ポリシーオプションにアクセスします。 
+組織のセキュリティチームは、Office 365 security & コンプライアンスセンターの各 ATP ツールに対してポリシーを定義する必要があります。 [**脅威管理** > **ポリシー** ] に移動して、[ポリシーオプションにアクセスします。 (詳細については、「[クイックスタートガイド: Office 365 Advanced Threat Protection をセットアップ](checklist-atp-setup.md)する」を参照してください)。
 
 組織に対して定義されているポリシーによって、定義済みの脅威の動作と保護レベルが決まります。 ポリシーオプションは、非常に柔軟です。 たとえば、組織のセキュリティチームは、ユーザー、組織、受信者、およびドメインレベルできめ細かな脅威保護を設定できます。 新しい脅威や課題が日々浮上するため、ポリシーを定期的に確認することが重要です。  
 
@@ -58,7 +59,7 @@ Office 365 ATP には、組織に適したレベルの保護を設定するた�
 
 Office 365 atp には、atp のパフォーマンスを監視するための高度な[レポートダッシュボード](view-reports-for-atp.md)が含まれています。 これは、Security & コンプライアンスセンターの**Reports > Dashboard**でアクセスできます。 
 
-最新の洞察を提供して、リアルタイムで更新を報告します。 これらのレポートでは、推奨事項も提供されており、脅威を差し迫っていることを警告します。 定義済みのレポートには、[脅威保護の状態レポート](view-reports-for-atp.md#threat-protection-status-report)、 [atp ファイルの種類レポート](view-reports-for-atp.md#atp-file-types-report)、 [atp メッセージ廃棄レポート](view-reports-for-atp.md#atp-message-disposition-report)などがあります。 
+最新の洞察を提供して、リアルタイムで更新を報告します。 これらのレポートでは、推奨事項も提供されており、脅威を差し迫っていることを警告します。 定義済みのレポートには、[脅威エクスプローラー](use-explorer-in-security-and-compliance.md)、[脅威保護状態レポート](view-reports-for-atp.md#threat-protection-status-report)、 [atp ファイルの種類レポート](view-reports-for-atp.md#atp-file-types-report)、 [atp メッセージ廃棄レポート](view-reports-for-atp.md#atp-message-disposition-report)などがあります。 
 
 ## <a name="use-threat-investigation-and-response-capabilities"></a>脅威の調査と応答の機能を使用する
 
@@ -70,6 +71,12 @@ Office 365 ATP プラン2には、クラスの適切な[脅威調査および応
 
 - [アタックシミュレータ](attack-simulator.md)を使用すると、組織内で現実的な攻撃シナリオを実行して vulnerabilites を識別できます。 [表示名のスピアーフィッシング攻撃](attack-simulator.md#display-name-spear-phishing-attack)、[パスワードスプレー攻撃](attack-simulator.md#password-spray-attack)、[ブルートフォースパスワード攻撃](attack-simulator.md#brute-force-password-attack)など、現在の種類の攻撃のシミュレーションを利用できます。
     
+## <a name="save-time-with-automated-investigation-and-response"></a>自動調査と応答による時間の節約
+
+(**新**)潜在的なサイバー攻撃を調査している場合、時間は基本的なものです。 すぐに脅威を特定して軽減することができますが、組織の方が適しています。 Office 365 ATP プラン2には[、自動調査と応答 (AIR)](automated-investigation-response-office.md)機能が含まれるようになりました。 (これらの機能がまだインストールされていない場合は、ATP プラン2に近い時期になります)。
+
+AIR には、アラートがトリガーされたときや、脅威エクスプローラーのビューなどから手動で開始できるセキュリティプレイブックのセットが含まれています。 AIR を使用すると、セキュリティ運用チームの時間と、脅威を軽減するための労力を効果的かつ効率的に保存することができます。 詳細については、「 [Office 365 での自動調査と応答 (AIR)](automated-investigation-response-office.md)」を参照してください。
+
 ## <a name="permissions-required-to-use-atp-features"></a>ATP 機能を使用するために必要なアクセス許可
 
 セキュリティ & コンプライアンスセンターの ATP 機能にアクセスするには、適切な役割が割り当てられている必要があります。 次の表は、いくつかの例を示しています。
@@ -88,7 +95,7 @@ Office 365 ATP プラン2には、クラスの適切な[脅威調査および応
 
 ## <a name="get-office-365-atp"></a>Office 365 ATP を取得する
 
-office 365 ATP は、office 365 Enterprise E5、office 365 エデュケーション A5、および Microsoft 365 Business に含まれています。 サブスクリプションに Office 365 atp が含まれていない場合は、atp をアドオンとして購入する可能性があります。 詳細については、以下のリソースを参照してください。
+office 365 ATP プラン2は、office 365 Enterprise E5、office 365 エデュケーション A5、および Microsoft 365 Business に含まれています。 サブスクリプションに Office 365 atp が含まれていない場合は、atp をアドオンとして購入する可能性があります。 詳細については、以下のリソースを参照してください。
 
 - atp プランを含むサブスクリプションの一覧については、「 [Office 365 Advanced Threat Protection (ATP) availability](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability) 」を参照してください。
 
