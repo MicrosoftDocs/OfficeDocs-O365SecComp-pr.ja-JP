@@ -1,74 +1,53 @@
 ---
-title: EOP の使用を開始するためのビデオ
+title: EOP とは
 ms.author: tracyp
-author: MSFTTracyP
+author: msfttracyp
+ms.reviewer: andypunt
 manager: laurawi
-ms.date: 3/13/2015
+ms.date: 2/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.custom: TN2DMC
 localization_priority: Normal
-ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
-ms.collection:
-- M365-security-compliance
-description: 次の一連のビデオは、Exchange Online Protection (EOP) でホストされた電子メール フィルタリング サービスを設定および使用するうえで役立ちます。
-ms.openlocfilehash: 1e8aadd173f4e30c528679347171230e83752af0
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+search.appverid:
+- MET150
+ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
+description: この入門ドキュメントは、Exchange Online Protection (EOP) といくつかの重要な用語を理解するのに役立ちます。 これは、exchange Online のクラウドホスト型メールボックスを保護している、または exchange Server 2016 などの社内メールボックスを保護している EOP スタンドアロンのお客様に対して適用されます。
+ms.openlocfilehash: f23f28b5c15c7057d1fd8ec77cce67bf1746410c
+ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30926735"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30950434"
 ---
-# <a name="videos-for-getting-started-with-eop"></a>EOP の使用を開始するためのビデオ
+## <a name="what-is-exchange-online-protection-eop"></a>Exchange Online Protection (EOP) とは
 
-次の一連のビデオは、Exchange Online Protection (EOP) でホストされた電子メール フィルタリング サービスを設定および使用するうえで役立ちます。
-  
-> [!NOTE]
-> ビデオで説明されているタスクを開始する前に、メール フローを設定することをお勧めします。詳細については、「[Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx)」を参照してください。 
-  
-以下のビデオでは、組織のニーズに合わせてスパム対策の設定を調整する方法について説明しています。 サービスを使用して組織が受け取る受信メールについては、IP アドレスに基づいて差出人セーフ リストと受信拒否リストを作成すること、およびコンテンツ フィルター設定を構成することが含まれます。 管理者が、検疫に送信されたメールフロールール (トランスポートルールとも呼ばれる) と一致するコンテンツフィルターが適用されたスパムメッセージやメッセージを検索して解放する方法についても説明します。また、サービスの改善に役立つスパムメッセージを報告する方法も示しています。
-  
-- EOP で IP 許可一覧と IP 禁止一覧を構成する
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
-  
-    詳細については、「[接続フィルター ポリシーを構成する](../configure-the-connection-filter-policy.md)」トピックを参照してください。 
-    
-- EOP におけるスパム コンテンツ フィルターの構成
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
-  
-    詳細については、「[スパム フィルター ポリシーの構成](../configure-your-spam-filter-policies.md)」トピックを参照してください。 
-    
-- メッセージの検出と検疫からの解放
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/2a78346d-a3ab-4d70-a88e-0c9d562f7545?autoplay=false]
-  
-    詳細については、「[管理者として検疫済みメッセージを検索して解放する](../find-and-release-quarantined-messages-as-an-administrator.md)」トピックを参照してください。 
-    
-組織からスパムが送信されていないか監視するために、送信スパム ポリシーを構成することもできます。その方法については、送信スパムのビデオを参照してください。
-  
-- 送信スパム ポリシーの構成
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/1f20d655-0d3d-4141-9cae-e57f5a6cffe8?autoplay=false]
-  
-    詳細については、「[送信スパム ポリシーを構成する](../configure-the-outbound-spam-policy.md)」を参照してください。
-    
-EOP には、さらに、サービスによって検出されたマルウェアの処理方法を定めるための設定もあります。この点については、マルウェア対策のフィルタリングのビデオで説明されています。
-  
-- マルウェア対策ポリシーの構成
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/12517702-ab48-4df8-a7ff-8eb02aa31724?autoplay=false]
-  
-    詳細については、「[マルウェア対策ポリシーを構成する](../configure-anti-malware-policies.md)」のトピックを参照してください。 
-    
-設定した特定の条件に基づいてメッセージをフィルター処理し、会社のポリシーや規制に基づいてルーティングするには、メールフロールールの作成方法に関するビデオをご覧ください。
-  
-- EOP で Exchange メールフロールールを構成する
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
-  
-    詳細については、「exchange online [Protection でのメールフロールール (トランスポートルール)](mail-flow-rules-transport-rules-0.md) EOP」を参照してください。 exchange online を使用している場合は、「exchange online Protection の[メールフロールール (トランスポートルール)](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) 」トピックを参照してください。
-    
-コマンド ラインからスクリプトを実行してサービスを構成する場合は、まずリモート PowerShell のビデオをご覧ください。
-  
-- EOP におけるリモート PowerShell の使用
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/9cb28006-c2cb-45b6-b72e-eeed8767dee7?autoplay=false]
-  
-    詳細については、「[Exchange Online Protection の PowerShell](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx)」トピック (EOP スタンドアロンを使用している場合)、または「[Exchange Online PowerShell](http://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx)」トピック (Exchange Online を使用している場合) を参照してください。 
-    
+Exchange Online Protection (EOP) は、クラウドベースの電子メールフィルター処理サービスであり、スパムやマルウェアから組織を保護します。 Office 365 にメールボックスがある場合、それらはサービスの一部であるため、EOP によって自動的に保護されます。 これには、Office 365 とオンプレミスの両方にメールボックスがあり、ハイブリッドシナリオとしてよく知られている組織が含まれます。 EOP スタンドアロンは、クラウドにメールボックスを持っていないが、社内メールボックスを保護する必要があるお客様も利用できます。 
 
+EOP は迷惑メールのフィルターを試行し、ユーザーが表示したくないコンテンツを受信トレイがクリアしないようにします。 通常、迷惑メールは [迷惑メール] フォルダーに配信されます。 迷惑メールフォルダーが自分で必要なことを確認するための簡単な方法であることを確認するために、フィルター処理で必要なことを確認することができます。  
+
+> [!TIP]
+> 迷惑メールやその他の不正な電子メールが迷惑メールフォルダーに自動的に送られる場合に適しています。 サービスは、既定またはカスタムの管理者設定の状態に基づいて必要な処理を実行します。 言い換えると、ユーザーは迷惑メールフォルダーに多数のスパムメールを表示することを心配する必要はありません。 管理者がすべての迷惑メールを視界から除外することを希望している場合は、検疫を構成する必要があります。 詳細については、「 [Office で電子メールメッセージを検疫する 365](../quarantine-email-messages.md) 」を参照してください。
+
+## <a name="important-terms"></a>重要な用語
+
+**受信:** Office 365 に入ってくるメッセージ
+
+**送信:** Office 365 から出てくるメッセージ。
+
+**内部:** 組織内のユーザーから組織内のユーザーに送信されるメッセージ。 これには、ハイブリッドシナリオと1つのメールボックスがオンプレミスにあり、他のメールボックスがクラウド内に存在する可能性があるユーザーが含まれます。
+
+**False 負 (FN):** スパムやその他の迷惑メールが、受信トレイに正しく送信されません。
+
+**False 陽性 (FP):** 誤ってスパムとしてマークされ、迷惑メールフォルダーまたは検疫に入れられる正当なメッセージ。
+
+**スパム (迷惑メールとも呼ばれます):** これには、商業広告、チェーンレター、政治的メールなどの形式があります。これは、ユーザーが電子メールを送信しようとしたり、不正なコミットを試行したりしているスパムからのサインアップを行わないメールです。
+
+**フィッシング:** フィッシングとは、個人情報の盗難や不正行為を防止するために、個人情報を提供することを目的とする特別な種類のスパムです。 通常、この種類のメッセージには、悪意のあるリンクや添付ファイルが含まれますが、常には含まれません。
+
+**スプーフィング:** スプーフィングとは、スパム送信者が from ヘッダーを偽造して、メッセージが実際のソース以外の人物または別の場所から発信されたように見えるようにすることです。 これはスパムでもかまいませんが、フィッシングユーザーに最もよく使用されます。
+
+**偽装:** この種類のスパムは、送信者アドレスを偽造する方法でもありますが、実際のソースのようになるように名前またはドメインの一部を変更することによって行われます。 たとえば、請求書の "l" が実際には11で、Microsoft の "o" が0という数字に置き換えられていると、Bi11@micr0s0ft.com のようになります。
+
+**Bulk:** 通常、バルクメールはユーザーによって要請されますが、企業が他の企業に情報を販売する際に間接的に発生する場合があります。 通常、ユーザーは大量のメール (newletters) に意図的にサインアップしていますが、後で忘れることはなく、スパムであると考えられます。 バルクメールが送信されると、ユーザーがサインアップするよりも多くの場合、大量メールがスパムになる。

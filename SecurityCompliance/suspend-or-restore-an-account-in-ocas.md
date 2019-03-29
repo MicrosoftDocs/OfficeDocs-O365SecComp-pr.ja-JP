@@ -13,32 +13,32 @@ search.appverid:
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: 'Office 365 Cloud App Security では、ユーザーアカウントの中断または停止解除を行うことができるガバナンスアクションがあります。 '
-ms.openlocfilehash: 3650a5304af0440dc537610994c4bd827f599989
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 10da1385f850fadf077b4e3f9e3a00e9e4629fdd
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215097"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862449"
 ---
 # <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security でユーザー アカウントを停止または復元する
 
 |評価 * *\>**|計画 * *\>**|展開 * *\>**|使用率 * * * *|
 |:-----|:-----|:-----|:-----|
-|[評価の開始](office-365-cas-overview.md) <br/> |[計画を開始する](get-ready-for-office-365-cas.md) <br/> |[展開を開始する](turn-on-office-365-cas.md) <br/> |ここでは、  <br/> [次の手順](suspend-or-restore-an-account-in-ocas.md#nextsteps) <br/> |
+|[評価の開始](office-365-cas-overview.md) <br/> |[計画を開始する](get-ready-for-office-365-cas.md) <br/> |[展開を開始する](turn-on-office-365-cas.md) <br/> |ここでは、  <br/> [次の手順](#next-steps)<br/> |
    
-Office 365 用の組織のユーザーアカウントのいずれかが侵害されたという警告が表示されたとします。または、ユーザーアカウントで問題が発生したことを示す通知を受信したとします。Office 365 Cloud App Security では、受信した通知を調査した後、ユーザーアカウントを中断してから復元することができます。
+Office 365 用の組織のユーザーアカウントのいずれかが侵害されたという警告が表示されたとします。 または、ユーザーアカウントで問題が発生したことを示す通知を受信したとします。 Office 365 Cloud App Security では、受信した通知を調査した後、ユーザーアカウントを中断してから復元することができます。
   
 > [!NOTE]
-> office 365 Cloud App Security は office 365 Enterprise E5 で利用できます。組織で別の office 365 Enterprise サブスクリプションを使用している場合、office 365 Cloud App Security をアドオンとして購入することができます。(全体管理者として、Office 365 管理センターで、[**課金** \>の**サブスクリプションの追加**] を選択します。)詳細については、「office 365 プラットフォームサービスの説明」を参照してください[。 office 365 セキュリティ&amp;コンプライアンスセンター](https://technet.microsoft.com/en-us/library/dn933793.aspx)で、 [office 365 for business のアドオンを購入または編集](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)します。 
+> office 365 Cloud App Security は office 365 Enterprise E5 で利用できます。 組織で別の office 365 Enterprise サブスクリプションを使用している場合、office 365 Cloud App Security をアドオンとして購入することができます。 (全体管理者として、Office 365 管理センターで、[**課金** \>の**サブスクリプションの追加**] を選択します。)詳細については、「office 365 プラットフォームサービスの説明」を参照してください[。 office 365 セキュリティ&amp;コンプライアンスセンター](https://technet.microsoft.com/en-us/library/dn933793.aspx)で、 [office 365 for business のアドオンを購入または編集](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)します。 
   
 ## <a name="to-suspend-a-user-account-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security でユーザーアカウントを中断するには
 
-ユーザーアカウントを中断すると、ユーザーが再度サインインするのを防ぐことができます。Office 365 で直接ユーザーアカウントを編集して、サインインが**ブロック**されるようにサインイン状態を設定するのと同じです。
+ユーザーアカウントを中断すると、ユーザーが再度サインインするのを防ぐことができます。 Office 365 で直接ユーザーアカウントを編集して、サインインが**ブロック**されるようにサインイン状態を設定するのと同じです。
   
 > [!NOTE]
-> ユーザーが office 365 にサインインすることを禁止している場合、中止することによって、またはサインイン状態を編集することによって、ユーザーのすべてのデバイスとクライアント ([Office 365 でユーザーを編集または変更](https://support.office.com/article/42BB3F17-8F9D-4182-B434-5F1C8024E614#SingleUserPreview)する) が有効になるまでに時間がかかる場合があることに注意してください。ユーザーが office 365 にサインインしている場合、office 365 が再度サインインする必要がある場合は常にブロックが有効になります。 
+> ユーザーが office 365 にサインインすることを禁止している場合、中止することによって、またはサインイン状態を編集することによって、ユーザーのすべてのデバイスとクライアント ([Office 365 でユーザーを編集または変更](https://support.office.com/article/42BB3F17-8F9D-4182-B434-5F1C8024E614#SingleUserPreview)する) が有効になるまでに時間がかかる場合があることに注意してください。 ユーザーが office 365 にサインインしている場合、office 365 が再度サインインする必要がある場合は常にブロックが有効になります。 
   
-1. [全体管理者またはセキュリティ管理者](permissions-in-the-security-and-compliance-center.md)とし[https://protection.office.com](https://protection.office.com)て、に移動し、職場または学校のアカウントを使用してサインインします。(これにより、セキュリティ&amp;コンプライアンスセンターに移動できます。) 
+1. [全体管理者またはセキュリティ管理者](permissions-in-the-security-and-compliance-center.md)とし[https://protection.office.com](https://protection.office.com)て、に移動し、職場または学校のアカウントを使用してサインインします。 (これにより、セキュリティ&amp;コンプライアンスセンターに移動できます。) 
     
 2. セキュリティ&amp; /コンプライアンスセンターで、[**警告** \>の**管理] [詳細通知の管理**] を選択します。
     

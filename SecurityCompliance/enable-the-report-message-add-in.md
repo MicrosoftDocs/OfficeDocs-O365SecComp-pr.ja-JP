@@ -3,7 +3,7 @@ title: レポート メッセージ アドインを有効にする
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/05/2019
+ms.date: 03/26/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 個々のユーザーまたは組織全体で、outlook および outlook on the web 用のレポートメッセージアドインを有効にする方法について説明します。
-ms.openlocfilehash: f2bb79c4c613fdb804d19226fb359124387a678f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 3c476a6e097307b1aabc3580b598bb91a4407731
+ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693386"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30866343"
 ---
 # <a name="enable-the-report-message-add-in"></a>レポート メッセージ アドインを有効にする
 
@@ -67,7 +67,7 @@ Office 365 の全体管理者または exchange Online 管理者であり、exch
 ## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>組織のレポートメッセージアドインを取得して有効にする
 
 > [!IMPORTANT]
-> このタスクを完了するには、Office 365 の全体管理者または Exchange Online 管理者である必要があります。 また、詳細については、OAuth 認証を使用するように exchange を構成する必要があります。詳細については、「 [exchange の要件 (アドインの一元展開)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements)」を参照してください。 
+> このタスクを完了するには、Office 365 の全体管理者または Exchange Online 管理者である必要があります。 また、詳細については、OAuth 認証を使用するように exchange を構成する必要があります。詳細については、「 [exchange の要件 (アドインの一元展開)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)」を参照してください。 
 
 1. Microsoft 365 管理センターの [[サービス & アドイン] ページ](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)に移動します。<br/>![新しい Microsoft 365 管理センターの [サービスとアドイン] ページ](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
     

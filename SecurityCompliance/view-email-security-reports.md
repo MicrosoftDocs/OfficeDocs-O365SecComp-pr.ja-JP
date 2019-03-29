@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Office 365 Enterprise を使用して組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ&amp;コンプライアンスセンターで利用できます。
-ms.openlocfilehash: bfd84948624beaa8ea9d2a37da2ecd186b5bd717
-ms.sourcegitcommit: 15202bba32313534da2478b0cd215f32a10c9ef4
+ms.openlocfilehash: 1a885661f5bf020c325ee2d9f084473ecb27c53a
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30684366"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862509"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する
 
@@ -29,24 +29,15 @@ ms.locfileid: "30684366"
 ![高度な脅威保護がどのように動作しているかを確認するダッシュボード](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 電子メールのセキュリティレポートには、次のようなものがあります。
-
 - [暗号化レポート](#encryption-report)(新)
-  
-- [脅威保護の状態レポート](view-email-security-reports.md#tps) 
-    
-- [マルウェア検出レポート](view-email-security-reports.md#maldet)
-    
+- [脅威保護の状態レポート](#threat-protection-status-report) 
+- [マルウェア検出レポート](#malware-detections-report)    
 - [上位マルウェアレポート](#top-malware-report)
-    
-- [[上位送信者および受信者] レポート](view-email-security-reports.md#topsenders)
-    
-- [スプーフィングメールレポート](#spoof-mail-report)
-    
+- [[上位送信者および受信者] レポート](#top-senders-and-recipients-report)
+- [スプーフィング検出レポート](#spoof-detections-report)
 - [スパム検出レポート](#spam-detections-report)
-    
-- [送信および受信した電子メールレポート](view-email-security-reports.md#sentreceivedemail)
-
-- [ユーザーによって報告されたメッセージレポート](view-email-security-reports.md#userreported)
+- [送信および受信した電子メールレポート](#sent-and-received-email-report)
+- [ユーザーによって報告されたメッセージレポート](#user-reported-messages-report)
     
 ## <a name="encryption-report"></a>暗号化レポート
 

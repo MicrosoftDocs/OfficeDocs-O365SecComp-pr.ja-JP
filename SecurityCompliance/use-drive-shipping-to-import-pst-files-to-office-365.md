@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: '管理者向け: pst ファイルをハードドライブにコピーしてから Microsoft に配布することによって、組織の pst ファイルを Office 365 メールボックスに一括インポートする方法について説明します。 '
-ms.openlocfilehash: 9c1cbe17fd1c6e20b0df3bc295da527fa6af6c42
-ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
+ms.openlocfilehash: e6623e4b5a66b9c2e8eeb2cfe6c978115b6fdc9f
+ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30354749"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30950474"
 ---
 # <a name="use-drive-shipping-to-import-your-organization-pst-files-to-office-365"></a>ドライブの送付を使用して組織の PST ファイルを Office 365 にインポートする
 
@@ -48,7 +48,7 @@ Office 365 インポートサービスとドライブ配送を使用して、PST
   
 ドライブの送付を使用して pst ファイルを Office 365 にインポートする方法についてよく寄せられる質問については、「[ドライブ出荷を使用して pst ファイルをインポートする](faqimporting-pst-files-to-office-365.md#using-drive-shipping-to-import-pst-files)」を参照してください。 
   
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 - PST ファイルを Office 365 メールボックスにインポートするには、Exchange Online でメールボックスのインポートのエクスポートの役割を割り当てられている必要があります。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself as a member. 詳細については、「 [Manage role groups](https://go.microsoft.com/fwlink/p/?LinkId=730688)」の「役割グループに役割を追加する」または「役割グループを作成する」のセクションを参照してください。
     
@@ -86,16 +86,16 @@ Office 365 インポートサービスとドライブ配送を使用して、PST
     
 - Microsoft に送付するハード ドライブは、国境を超えて送付される場合があります。この場合は、お客様にはハード ドライブとそれに含まれるデータが適用法に従って輸入または輸出されることを保証する責任があります。ハード ドライブを送付する前に、指定された Microsoft データ センターにハード ドライブとデータを合法的に送付できるか法律顧問と一緒に確認してください。こうすることで、適切なタイミングで確実に Microsoft に届きます。
     
-- この手順では、セキュリティで保護されたストレージ キーと BitLocker 暗号化キーをコピーして保存します。 パスワードやその他のセキュリティ関連情報を保護するように、これらのキーを保護するための予防策を必ず講じてください。 たとえば、パスワードで保護された Microsoft Word 文書に保存する、または暗号化された USB ドライブに保存することができます。 これらのキーの例については、「 [More information](use-drive-shipping-to-import-pst-files-to-office-365.md#moreinfo) 」セクションを参照してください。 
+- この手順では、セキュリティで保護されたストレージ キーと BitLocker 暗号化キーをコピーして保存します。 パスワードやその他のセキュリティ関連情報を保護するように、これらのキーを保護するための予防策を必ず講じてください。 たとえば、パスワードで保護された Microsoft Word 文書に保存する、または暗号化された USB ドライブに保存することができます。 これらのキーの例については、「 [More information](#more-information) 」セクションを参照してください。 
     
-- PST ファイルが Office 365 メールボックスにインポートされると、メールボックスの保持ホールドの設定は無期限に有効になります。 これは、メールボックスに割り当てられたアイテム保持ポリシーは、保存機能を無効にするか、保留を解除する日付を設定するまで処理されないことを意味します。 なぜこれを行うのでしょうか。 メールボックスにインポートされたメッセージが古くなっている場合は、メールボックスに対して構成されたアイテム保持ポリシーに基づいて保持期間が経過したために、削除 (パージ) される可能性があります。 メールボックスの保存機能を有効にすると、メールボックスの所有者は新しくインポートされたメッセージを管理することができ、メールボックスの保存期間の設定を変更する時間を与えることができます。 保持ホールドの管理に関する提案については、「 [More information](use-drive-shipping-to-import-pst-files-to-office-365.md#moreinfo) 」セクションを参照してください。 
+- PST ファイルが Office 365 メールボックスにインポートされると、メールボックスの保持ホールドの設定は無期限に有効になります。 これは、メールボックスに割り当てられたアイテム保持ポリシーは、保存機能を無効にするか、保留を解除する日付を設定するまで処理されないことを意味します。 なぜこれを行うのでしょうか。 メールボックスにインポートされたメッセージが古くなっている場合は、メールボックスに対して構成されたアイテム保持ポリシーに基づいて保持期間が経過したために、削除 (パージ) される可能性があります。 メールボックスの保存機能を有効にすると、メールボックスの所有者は新しくインポートされたメッセージを管理することができ、メールボックスの保存期間の設定を変更する時間を与えることができます。 保持ホールドの管理に関する提案については、「 [More information](#more-information) 」セクションを参照してください。 
     
 - 既定では、Office 365 メールボックスで受信できる最大メッセージサイズは 35 MB です。 これは、メールボックスの*MaxReceiveSize*プロパティの既定値が 35 MB に設定されているためです。 ただし、Office 365 の最大メッセージ受信サイズの制限は 150 MB です。 そのため、35 mb を超えるアイテムを含む PST ファイルをインポートすると、Office 365 インポートサービスによって、ターゲットメールボックスの*MaxReceiveSize*プロパティの値が 150 mb に自動的に変更されます。 これにより、150 MB までのメッセージをユーザーのメールボックスにインポートできます。 
     
     > [!TIP]
     > メールボックスのメッセージ受信サイズを特定するには、Exchange Online PowerShell で次のコマンドを`Get-Mailbox <user mailbox> | FL MaxReceiveSize`実行します。 
   
-- Office 365 の非アクティブなメールボックスに PST ファイルをインポートすることができます。 これを行うには、PST インポートマッピングファイルの`Mailbox`パラメーターに非アクティブなメールボックスの GUID を指定します。 詳細については[、「ステップ 3: PST インポートのマッピングファイルを作成](use-drive-shipping-to-import-pst-files-to-office-365.md#step3)する」を参照してください。 
+- Office 365 の非アクティブなメールボックスに PST ファイルをインポートすることができます。 これを行うには、PST インポートマッピングファイルの`Mailbox`パラメーターに非アクティブなメールボックスの GUID を指定します。 詳細については[、「ステップ 3: PST インポートのマッピングファイルを作成](#step-3-create-the-pst-import-mapping-file)する」を参照してください。 
     
 - Exchange ハイブリッド展開では、プライマリメールボックスがオンプレミスであるユーザーのクラウドベースのアーカイブメールボックスに PST ファイルをインポートできます。 これを行うには、PST インポートマッピングファイルで以下の手順を実行します。
     
@@ -103,7 +103,7 @@ Office 365 インポートサービスとドライブ配送を使用して、PST
     
   - `IsArchive`パラメーターに**TRUE**の値を指定します。 
     
-    詳細については[、「ステップ 3: PST インポートのマッピングファイルを作成](use-drive-shipping-to-import-pst-files-to-office-365.md#step3)する」を参照してください。 
+    詳細については[、「ステップ 3: PST インポートのマッピングファイルを作成](#step-3-create-the-pst-import-mapping-file)する」を参照してください。 
 
 ## <a name="step-1-download-the-secure-storage-key-and-pst-import-tool"></a>手順 1: セキュリティで保護されたストレージキーおよび PST インポートツールをダウンロードする
 
@@ -308,7 +308,7 @@ Microsoft データセンターの担当者がハードドライブから Azure 
 次の手順では、Microsoft にハードドライブを送付してから、ドライブ出荷ジョブの発送番号と返送情報を提供します。 ドライブは、Microsoft によって受信された後、データセンターの担当者が組織の Azure ストレージ領域に PST ファイルをアップロードするのに 7 ~ 10 営業日かかります。
   
 > [!NOTE]
-> インポートジョブの作成から14日以内に追跡番号を指定せずに出荷情報を取得した場合、インポートジョブは期限切れになります。 このような状況が発生した場合は、新しいドライブ送付インポートジョブを作成する必要があります (「[手順 4: Office 365 で pst インポートジョブを作成](use-drive-shipping-to-import-pst-files-to-office-365.md#step4)する」を参照し、ドライブファイルと pst インポートマッピングファイルを再送信します。 
+> インポートジョブの作成から14日以内に追跡番号を指定せずに出荷情報を取得した場合、インポートジョブは期限切れになります。 このような状況が発生した場合は、新しいドライブ送付インポートジョブを作成する必要があります (「[手順 4: Office 365 で pst インポートジョブを作成](#step-4-create-a-pst-import-job-in-office-365)する」を参照し、ドライブファイルと pst インポートマッピングファイルを再送信します。 
   
 ### <a name="ship-the-hard-drive"></a>ハード ドライブを送付する
 
@@ -502,7 +502,7 @@ azure ストレージエクスプローラーをインストールして azure �
     
   - 一定の期間が経過した後、 `Set-Mailbox -RetentionHoldEnabled $false`コマンドを実行して保存機能を無効にすることができます。 手順については、「[メールボックスを保持ホールドの状態にする](https://go.microsoft.com/fwlink/p/?LinkId=544749)」を参照してください。
     
-  - 今後、ある日付に無効になるように、保存機能を構成することができます。 そのためには、 `Set-Mailbox -EndDateForRetentionHold <date>`コマンドを実行します。 たとえば、今日の日付が2016年7月1日で、保持ホールドを30日以内に無効にする場合は、次のコマンド`Set-Mailbox -EndDateForRetentionHold 8/1/2016`を実行します。 このシナリオでは、 *RentionHoldEnabled*プロパティを*True*に設定したままにします。 詳細については、「[メールボックスの設定](https://go.microsoft.com/fwlink/p/?LinkId=150317)」を参照してください。
+  - 今後、ある日付に無効になるように、保存機能を構成することができます。 そのためには、 `Set-Mailbox -EndDateForRetentionHold <date>`コマンドを実行します。 たとえば、今日の日付が2016年6月1日で、保存機能を30日以内に無効にする場合は、次のコマンド`Set-Mailbox -EndDateForRetentionHold 7/1/2016`を実行します。 このシナリオでは、 *RentionHoldEnabled*プロパティを*True*に設定したままにします。 詳細については、「[メールボックスの設定](https://go.microsoft.com/fwlink/p/?LinkId=150317)」を参照してください。
     
   - メールボックスに割り当てられているアイテム保持ポリシーの設定を変更して、インポートした古いアイテムがすぐに削除されるか、ユーザーのアーカイブメールボックスに移動されないようにすることができます。 たとえば、メールボックスに割り当てられている削除ポリシーまたはアーカイブポリシーの保存期間を長くすることができます。 このシナリオでは、アイテム保持ポリシーの設定を変更した後、メールボックスの保存機能をオフにします。 詳細については、「 [Office 365 組織のメールボックスのアーカイブおよび削除ポリシーをセットアップする](set-up-an-archive-and-deletion-policy-for-mailboxes.md)」を参照してください。
     

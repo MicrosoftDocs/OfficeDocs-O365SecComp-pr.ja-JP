@@ -14,12 +14,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: 新しい注目すべきトラッカーを含む脅威のトラッカーについて説明します。これにより、組織はセキュリティ上の問題に常に役立てることができます。
-ms.openlocfilehash: 6870e8d613dbd5d72f20e96be9615712bac711a9
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 4a12a1cfe68f8ebcfae640a65d0eca68e36fb04c
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693076"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862529"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>脅威トラッカー - 新機能とNoteworthy 機能 
 
@@ -38,7 +38,7 @@ ms.locfileid: "30693076"
   
 ![エクスプローラーでのキャンペーン情報の例](media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
-トラッカーは、 [Office 365 Advanced Threat Protection プラン 2](office-365-ti.md)で取得する多くの優れた機能のほんの一部に過ぎません。 脅威のトラッカーには、[注目すべきトラッカー](threat-trackers.md#notey)、[傾向分析](threat-trackers.md#trending)、[追跡クエリ](threat-trackers.md#trackedq)、および[保存されたクエリ](threat-trackers.md#savedq)が含まれます。
+トラッカーは、 [Office 365 Advanced Threat Protection プラン 2](office-365-ti.md)で取得する多くの優れた機能のほんの一部に過ぎません。 脅威のトラッカーには、[注意を価値トラッカー](#noteworthy-trackers)、[傾向分析](#trending-trackers)、[追跡クエリ](#tracked-queries)、および[保存されたクエリ](#saved-queries)が含まれます。
   
 組織の脅威のトラッカーを表示して使用するには、セキュリティ&amp;コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動して、[**脅威管理** \>の**脅威の追跡ツール**] を選択します。
   
@@ -91,7 +91,7 @@ inaugural 注目すべき脅威により、 [Office 365 の ATP の安全な添�
   
 新しい注目すべき脅威フィルターは、ATP の安全な添付ファイルによって最近検出されたアイテムを強調表示します。 これらの検出は、電子メールフローまたは他のお客様の電子メールのいずれかで Office 365 によって以前検出されていない、新しい悪意のあるファイルであるアイテムを表します。 注目すべき脅威追跡ツールの項目に注目し、それらのユーザーが対象としているユーザーを確認し、[詳細な分析] タブ (エクスプローラーで電子メールの件名をクリックすると表示されます) に示されている分析の詳細を確認します。 メモこのタブは、ATP の安全な添付ファイル機能によって検出されたメールにのみ表示されます。この注目すべきトラッカーにはフィルターが含まれていますが、そのフィルターをエクスプローラーで他の検索に使用することもできます。
   
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - 組織にこれらの office 365 脅威の調査および応答機能がまだない場合は、「 [office 365 の脅威の調査および応答機能を入手する方法](get-started-with-ti.md)」を参照してください。
     

@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) ポリシーを使用すると、office 365 全体で機密情報を識別、監視、および自動保護することができます。
-ms.openlocfilehash: 69ec5b2925d70c503655837af600f106379e1485
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 7c776b3fd703ddb24d9d8195609384771858c7f5
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639144"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862539"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>データ損失防止ポリシーの概要
 
@@ -100,7 +100,7 @@ DLP ポリシーは、情報が Exchange online、SharePoint Online、OneDrive f
   
 - コンテンツには、種類の機密情報が含まれています。
     
-- コンテンツにはラベルが含まれています。 詳細については、「 [DLP ポリシーの条件としてラベルを使用する](data-loss-prevention-policies.md#label)」セクションを参照してください。
+- コンテンツにはラベルが含まれています。 詳細については、「 [DLP ポリシーの条件としてラベルを使用する](#using-a-label-as-a-condition-in-a-dlp-policy)」セクションを参照してください。
     
 - コンテンツが組織の内または外のユーザーと共有されている。
     

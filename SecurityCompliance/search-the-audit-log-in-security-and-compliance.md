@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Office 365 セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: d9a0b009a47a00b3d7242b54b14286609ece6886
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 8cb8650315c19714960aba7551902780e38a554b
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30411022"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935352"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Office 365 セキュリティ/コンプライアンス センターで監査ログを検索する
+
+## <a name="introduction"></a>概要
 
 ユーザーが特定のドキュメントを表示したかどうか、またはメールボックスからアイテムを消去したかどうかを確認する必要がある場合、Office 365 セキュリティ/コンプライアンス センターを使用して、統合監査ログで Office 365 組織内のユーザーおよび管理者のアクティビティを検索し、表示することができます。統合監査ログでは、Office 365 内のユーザーおよび管理者の次の種類のアクティビティを検索できます。
   
@@ -57,7 +59,7 @@ ms.locfileid: "30411022"
 
 - Microsoft Workplace Analytics でのアナリストと管理者のアクティビティ
 
-- PowerApps でのユーザーと管理者のアクティビティ
+- Microsoft PowerApps でのユーザーおよび管理者のアクティビティ
     
    
 ## <a name="before-you-begin"></a>始める前に
@@ -296,12 +298,11 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |:-----|:-----|:-----|
 |[ファイル アクティビティとページ アクティビティ](#file-and-page-activities)<br/> |[フォルダー アクティビティ](#folder-activities)<br/> |[共有アクティビティとアクセス要求アクティビティ](#sharing-and-access-request-activities)<br/> |
 |[同期アクティビティ](#synchronization-activities)<br/> |[サイト管理アクティビティ](#site-administration-activities)<br/> |[Exchange メールボックス アクティビティ](#exchange-mailbox-activities)<br/> |
-|[アイテム保持ポリシーとラベルアクティビティ](#retention-policy-and-label-activities) <br/>|[Sway アクティビティ](#sway-activities) <br/> |[ユーザー管理アクティビティ](#user-administration-activities) <br/> 
-|[Azure AD グループ管理アクティビティ](#azure-ad-group-administration-activities) <br/> |[アプリケーション管理アクティビティ](#application-administration-activities) <br/> |[役割管理アクティビティ](#role-administration-activities) <br/> |
-|[ディレクトリ管理アクティビティ](#directory-administration-activities) <br/> |[電子情報開示アクティビティ](#ediscovery-activities) <br/> |[Power BI アクティビティ](#power-bi-activities) <br/> |
-|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|[Microsoft Teams アクティビティ](#microsoft-teams-activities) <br/> |[Yammer アクティビティ](#yammer-activities) <br/> |
-[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|
-|[Exchange 管理アクティビティ](#exchange-admin-audit-log)<br/>
+|[Sway アクティビティ](#sway-activities) <br/> |[ユーザー管理アクティビティ](#user-administration-activities) <br/> |[Azure AD グループ管理アクティビティ](#azure-ad-group-administration-activities) <br/> 
+|[アプリケーション管理アクティビティ](#application-administration-activities) <br/> |[役割管理アクティビティ](#role-administration-activities) <br/> |[ディレクトリ管理アクティビティ](#directory-administration-activities) <br/>| 
+|[電子情報開示アクティビティ](#ediscovery-activities) <br/> |[Power BI アクティビティ](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|
+|[Microsoft Teams アクティビティ](#microsoft-teams-activities) <br/> |[Yammer アクティビティ](#yammer-activities) <br/> |[Microsoft Flow アクティビティ](#microsoft-flow-activities) <br/>|
+|[Microsoft PowerApps アクティビティ](#microsoft-powerapps)<br/>|[Microsoft Stream アクティビティ](#microsoft-stream-activities) <br/>|[Exchange 管理アクティビティ](#exchange-admin-audit-log)<br/>|
 ||||
    
   
@@ -468,28 +469,6 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |メッセージの更新  <br/> |Update  <br/> |メッセージまたはそのプロパティが変更されました。  <br/> |
 |メールボックスへのユーザーのサインイン  <br/> |MailboxLogin  <br/> |ユーザーが自分のメールボックスにサインインしました。  <br/> |
 |(なし)  <br/> |UpdateInboxRules  <br/> |受信トレイ ルールが、追加、削除、または変更されました。受信トレイ ルールを使用して、指定された条件に基づいて受信ボックス内のメッセージを処理し、ルールの条件と一致した場合は、指定されたフォルダーへのメッセージの移動やメッセージの削除などのアクションを実行します。<br/> 受信トレイ ルール アクティビティのエントリを返すには、[**アクティビティ**] の一覧で [**すべてのアクティビティの結果を表示**] を選択する必要があります。検索結果を絞り込むには、日付範囲ボックスと [**ユーザー**] の一覧を使用します。<br/> |
-||||
-  
-### <a name="retention-policy-and-label-activities"></a>アイテム保持ポリシーとラベルアクティビティ
-
-次の表では、セキュリティ & コンプライアンスセンターのアイテム保持ポリシーと保持ラベルに関連するアクティビティについて説明します。 詳細については、次のトピックを参照してください。
-
-- [アイテム保持ポリシーの概要](retention-policies.md)
-- [保持ラベルの概要](labels.md)
-<br/>
-
-|**アクティビティ**|**操作名**|**説明**|
-|:-----|:-----|:-----|
-| アイテム保持ポリシーの保持構成が作成されました<br/> |NewRetentionComplianceRule<br/> |管理者が新しいアイテム保持ポリシーの保持設定を構成します。 保持設定には、アイテムが保持される時間の長さ、および保持期間が経過したときにアイテムに対して行われる処理 (アイテムの削除、アイテムの保持、アイテムの保持、削除など) が含まれます。 このアクティビティは、 [get-retentioncompliancerule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule)コマンドレットの実行にも対応しています。<br/>|
-| 作成済みの保持ラベル <br/> |NewComplianceTag<br/>  |管理者が新しい保持ラベルを作成します。<br/> |
-| アイテム保持ポリシーの作成<br/> |NewRetentionCompliancePolicy<br/> |管理者が新しいアイテム保持ポリシーを作成します。<br/>  |
-| アイテム保持ポリシーの削除済みアイテム保持構成<br/> | RemoveRetentionComplianceRule<br/>| 管理者は、アイテム保持ポリシーの構成設定を削除します。 多くの場合、このアクティビティは、管理者がアイテム保持ポリシーを削除するか、 **get-retentioncompliancerule**コマンドレットを実行すると記録されます。<br/> |
-| 削除済みの保持ラベル <br/> |removecompli/このタグ<br/>  | 管理者が保持ラベルを削除しました。<br/>|
-| 削除済みアイテム保持ポリシー<br/> |RemoveRetentionCompliancePolicy<br/> |管理者がアイテム保持ポリシーを削除しました。 <br/>  |
-| コンプライアンス機能を有効にする<br/> |SetRestrictiveRetentionUI<br/> |管理者は、 **RegulatoryComplianceUI**コマンドレットを実行することにより、法令遵守機能を有効にします。 このコマンドレットを実行すると、管理者は、Security & コンプライアンスセンター UI を使用して、保持ポリシーをロックし、保存ラベルを規制レコードとして指定できます。 組織が**RegulatoryComplianceUI**コマンドレットを使用してこれらの機能を有効にするまで、保持ポリシーをロックして、規制保持ラベルを作成できるのは、PowerShell を使用する場合のみです。 <br/>|
-| アイテム保持ポリシーの保持構成が更新されました<br/> | SetRetentionComplianceRule<br/>| 管理者が既存のアイテム保持ポリシーの保持設定を変更します。 保持設定には、アイテムが保持される時間の長さ、および保持期間が経過したときにアイテムに対して行われる処理 (アイテムの削除、アイテムの保持、アイテムの保持、削除など) が含まれます。 このアクティビティは、 [get-retentioncompliancerule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule)コマンドレットの実行にも対応しています。 <br/>|
-| 更新された保持ラベル <br/> |SetComplianceTag<br/>  | 管理者が既存の保持ラベルを更新します。<br/>|
-| 更新されたアイテム保持ポリシー<br/> |SetRetentionCompliancePolicy <br/>|管理者が既存のアイテム保持ポリシーを更新します。 このイベントをトリガーする更新には、アイテム保持ポリシーが適用されるコンテンツの場所を追加または除外することが含まれます。<br/>|
 ||||
 
 ### <a name="sway-activities"></a>Sway アクティビティ
@@ -723,9 +702,9 @@ Exchange Online 組織で管理者 (または管理者のアクセス許可を�
 
 Office 365 で使用可能な監査およびレポート機能の詳細については、「[Office 365 での監査とレポート](office-365-auditing-and-reporting-overview.md)」を参照してください。 
 
-**現在監査対象となっているのは、どの Office 365 サービスですか? **
+**現在監査されている別の Office 365 サービスとは何ですか。**
 
-Exchange Online、SharePoint、OneDrive、Azure Active Directory、Microsoft Teams、CRM、Advanced Threat Protection、データ損失防止など、最も使用されている Office 365 サービスが監査されます。完全な一覧については、この記事の「[Intro](#search-the-audit-log-in-the-office-365-security-amp-compliance-center)」セクションを参照してください。
+Exchange online、SharePoint Online、OneDrive for business、Azure Active Directory、Microsoft Teams、Dynamics 365、Advanced Threat Protection、Power BI など、最もよく使用される Office 365 サービスが監査されます。 監査対象のサービスの一覧については、[この記事の冒頭](search-the-audit-log-in-security-and-compliance.md)を参照してください。
 
 **Office 365 の監査サービスでは、どんなアクティビティが監視されますか? **
 
@@ -771,15 +750,3 @@ Office 365 で監査されるアクティビティの一覧と説明について
 **監査データは暗号化されますか? **
 
 監査データは、監査パイプラインが配置されている地域と同一の地域の Exchange メールボックスに格納されます。このデータは暗号化されません。ただし、送信中のデータは常に暗号化されます。 
-
-
-
-
-
-
-
-
-
-
-
-

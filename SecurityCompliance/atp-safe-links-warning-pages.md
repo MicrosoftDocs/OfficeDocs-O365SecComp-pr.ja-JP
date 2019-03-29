@@ -14,39 +14,39 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection が機能している場合に表示される可能性がある警告ページの概要を取得します。
-ms.openlocfilehash: 5bf6d436e319127fdd5aecd5c58e168a59333d25
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: e90951a010ff5de4d3b292259e9c4596b6cc8e89
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357448"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862579"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 ATP の安全なリンクの警告ページ
 
 > [!IMPORTANT]
-> この記事は、Office 365 Enterprise のお客様を対象としています。Outlook.com、office 365 Home、または office 365 Personal を使用していて、Outlook での安全なリンクに関する情報をお探しの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
+> この記事は、Office 365 Enterprise のお客様を対象としています。 Outlook.com、office 365 Home、または office 365 Personal を使用していて、Outlook での安全なリンクに関する情報をお探しの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
-[Office 365 Advanced Threat Protection](office-365-atp.md)(atp) は、 [atp の安全なリンク](atp-safe-links.md)、atp の安全な[添付ファイル](atp-safe-attachments.md)、[フィッシング対策保護](anti-phishing-protection.md)などの機能を介して組織をフィッシングやマルウェアから保護するのに役に立ちます。保護が設定されている場合、電子メールメッセージと Office ドキュメント内のリンク (url) はチェックされます。url が疑わしいまたは悪意のあるものとして識別された場合、その url をクリックしても url を開くことがブロックされることがあります。直接サイトに移行するのではなく、警告ページが表示されることがあります。 
+[Office 365 Advanced Threat Protection](office-365-atp.md)(atp) は、 [atp の安全なリンク](atp-safe-links.md)、atp の安全な[添付ファイル](atp-safe-attachments.md)、[フィッシング対策保護](anti-phishing-protection.md)などの機能を介して組織をフィッシングやマルウェアから保護するのに役に立ちます。 保護が設定されている場合、電子メールメッセージと Office ドキュメント内のリンク (url) はチェックされます。 url が疑わしいまたは悪意のあるものとして識別された場合、その url をクリックしても url を開くことがブロックされることがあります。 直接サイトに移行するのではなく、警告ページが表示されることがあります。 
   
-この記事では、表示される可能性がある[警告ページの例](atp-safe-links-warning-pages.md#examples)と、[警告ページに対する最新の更新プログラム](atp-safe-links-warning-pages.md#updates)を確認しています。
+この記事では、表示される可能性がある警告ページの例と、警告ページに対する最新の更新プログラムを確認しています。
   
 ## <a name="examples-of-warning-pages"></a>警告ページの例
 
 ### <a name="atp-is-scanning-the-link"></a>ATP がリンクをスキャンしています
 
-ATP の安全なリンクによって、URL がスキャンされています。リンクを再度試すには、しばらく待つ必要がある場合があります。
+ATP の安全なリンクによって、URL がスキャンされています。 リンクを再度試すには、しばらく待つ必要がある場合があります。
 
 ![ATP がリンクをスキャンしています](media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png)
 
 ### <a name="a-url-is-in-a-suspicious-email-message"></a>疑わしい電子メールメッセージ内の URL
 
-この URL は、疑わしいと思われる他の電子メールメッセージに類似した電子メールメッセージに含まれています。サイトに進む前に、電子メールメッセージをもう一度確認することをお勧めします。
+この URL は、疑わしいと思われる他の電子メールメッセージに類似した電子メールメッセージに含まれています。 サイトに進む前に、電子メールメッセージをもう一度確認することをお勧めします。
 
 ![この URL は疑わしい電子メールメッセージに含まれています](media/33f57923-23e3-4b0f-838b-6ad589ba897b.png)
 
 ### <a name="a-url-is-in-a-message-identified-as-a-phishing-attempt"></a>フィッシングの試行として識別されたメッセージ内の URL
 
-この URL は、フィッシング攻撃として識別された電子メールメッセージに含まれています。その結果、電子メールメッセージ内のすべての url がブロックされます。サイトに進まないことをお勧めします。
+この URL は、フィッシング攻撃として識別された電子メールメッセージに含まれています。 その結果、電子メールメッセージ内のすべての url がブロックされます。 サイトに進まないことをお勧めします。
 
 ![この URL は、フィッシングとして識別されたメッセージ内にあります。](media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
 
@@ -58,7 +58,7 @@ URL は、悪意があると識別されたサイトを指しています。  <b
 
 ### <a name="a-site-is-blocked"></a>サイトがブロックされている
 
-組織の URL がブロックされています。URL がブロックされる理由はいくつかあります。組織の Office 365 管理者に連絡することをお勧めします。
+組織の URL がブロックされています。 URL がブロックされる理由はいくつかあります。 組織の Office 365 管理者に連絡することをお勧めします。
 
 ![このサイトはブロックされています](media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
 
@@ -70,7 +70,7 @@ URL は、悪意があると識別されたサイトを指しています。  <b
 
 ## <a name="recent-updates-to-warning-pages"></a>警告ページに対する最新の更新プログラム
 
-Office 365 ATP のために最近更新された警告ページがいくつかあります。更新されたページがまだ表示されていない場合は、間もなく表示されます。更新には、新しい配色、詳細、および指定された警告と推奨事項にかかわらずサイトに進む機能が含まれています。
+Office 365 ATP のために最近更新された警告ページがいくつかあります。 更新されたページがまだ表示されていない場合は、間もなく表示されます。 更新には、新しい配色、詳細、および指定された警告と推奨事項にかかわらずサイトに進む機能が含まれています。
 
 ### <a name="url-scan-in-progress"></a>進行中の URL スキャン
 

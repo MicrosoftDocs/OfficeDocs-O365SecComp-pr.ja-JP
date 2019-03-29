@@ -15,12 +15,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Office 365 のグローバル管理者として、攻撃シミュレータを使用して、組織内で現実的な攻撃シナリオを実行できます。 これは、実際の攻撃によってビジネスに遭遇する前に、脆弱性のあるユーザーを特定して見つけるのに役立ちます。
-ms.openlocfilehash: e372fe3c4cc10c4f96836db394fbccd2f180145a
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 88e71fe2db0ed9149ab84bb99e8b04910afdc265
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693666"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862459"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 の攻撃シミュレータ
 
@@ -33,11 +33,9 @@ ms.locfileid: "30693666"
 
 現在、次の3種類の攻撃のシミュレーションを利用できます。
   
-- [表示名スピアー-フィッシング攻撃](attack-simulator.md#spearphish)
-    
-- [パスワード-スプレー攻撃](attack-simulator.md#passwordspray)
-    
-- [ブルートフォースパスワード攻撃](attack-simulator.md#bruteforce)
+- [表示名スピアー-フィッシング攻撃](#display-name-spear-phishing-attack)
+- [パスワード-スプレー攻撃](#password-spray-attack)
+- [ブルートフォースパスワード攻撃](#brute-force-password-attack)
     
 攻撃が正常に開始されるようにするには、シミュレートされた攻撃を実行するために使用しているアカウントで多要素認証を使用します。 さらに、Office 365 の全体管理者である必要があります。
   

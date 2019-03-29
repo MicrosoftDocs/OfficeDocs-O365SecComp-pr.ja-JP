@@ -9,14 +9,14 @@ ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 description: セキュリティ原則の詳細、確立されたベストプラクティス、組織のモダン化に関する最新のベストプラクティスについて説明します。
-ms.openlocfilehash: cdf194e6d04a8085ada6d9d7571a95b77a79a1ee
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.openlocfilehash: c98944b746fb564f946440408f0be87425237232
+ms.sourcegitcommit: e89c21d569b96f34e5d4d4074ae25d8eec9aeacf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935192"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30948518"
 ---
-# <a name="chief-information-security-officer-ciso-workshop"></a>チーフ情報セキュリティ責任者 (ciso) ワークショップ
+# <a name="chief-information-security-officer-ciso-workshop-training"></a>チーフ情報セキュリティ責任者 (ciso) ワークショップのトレーニング
 
 このチーフ Information Security Office (ciso) ワークショップには、セキュリティな学習事項、原則、確立されたベストプラクティスのコレクションと、クラウドの時代に向けて組織でモダン化セキュリティのためのベストプラクティスが新たに含まれています。 このワークショップは、Microsoft のセキュリティチームおよびお客様からな学習事項の経験の組み合わせに基づいて構築されています。
 
@@ -25,13 +25,14 @@ ciso ワークショップは、次のような2つのセキュリティ課題�
 - ますます高度な攻撃
 - クラウドプラットフォームが含まれるハイブリッドエンタープライズのアセットを保護する
 
-ciso ワークショップビデオおよび PowerPoint コンテンツはモジュール化するように設計されており、目的の任意のセクションに移動したり、単に最初から開始したり、そのすべてを実行したりすることができます。 このスライドには、クリエイティブな commons (属性付き) ライセンスが用意されており、組織が効果的なセキュリティ戦略を構築するのに役立つように再利用することができます。
+ciso ワークショップビデオおよび PDF/PowerPoint のダウンロードコンテンツは、モジュールとして使用するように設計されており、目的の任意のセクションに移動したり、単に最初から開始して途中まで進めたりすることができます。 このスライドには、クリエイティブな commons (属性付き) ライセンスが用意されており、組織が効果的なセキュリティ戦略を構築するのに役立つように再利用することができます。
 
 ## <a name="module-1--microsoft-cybersecurity-briefing"></a>モジュール1– Microsoft Cybersecurity ブリーフィング
 
 このモジュールでは、重要なセキュリティ対策、Microsoft cybersecurity reference architecture、cybersecurity の復元、インターネット機能 (IoT)、運用技術の概要について説明します。
 
-モジュール PDF のダウンロード:[モジュール1– Microsoft Cybersecurity ブリーフィング](media/ciso-workshop-1-cybersecurity-briefing.pdf)
+- PDF の概要をダウンロードする: [Module 1 – Microsoft Cybersecurity ブリーフィング](media/ciso-workshop-1-cybersecurity-briefing.pdf)
+- PowerPoint の概要:[モジュール1– Microsoft Cybersecurity ブリーフィング](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-1-cybersecurity-briefing.pptx)をダウンロードする
 
 ### <a name="part-1--course-introduction-and-overview"></a>パート1–コースの概要と概要
 
@@ -89,7 +90,8 @@ ciso ワークショップビデオおよび PowerPoint コンテンツはモジ
 
 この7つのパートシリーズで、統合されたガイダンス、自動化されたポリシーの適用、監視を使用して、ハイブリッドエンタープライズ領域の可視性と制御を向上させる方法について説明します。
 
-モジュール PDF のダウンロード:[モジュール2–セキュリティ管理](media/ciso-workshop-2-security-management.pdf)
+- PDF 概要のダウンロード:[モジュール2–セキュリティ管理](media/ciso-workshop-2-security-management.pdf)
+- PowerPoint の概要:[モジュール2–セキュリティ管理](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-2-security-management.pptx)
 
 ### <a name="introduction---security-management"></a>導入-セキュリティ管理
 
@@ -127,7 +129,8 @@ ciso ワークショップビデオおよび PowerPoint コンテンツはモジ
 
 最新の攻撃のほとんどはユーザーの id を侵害するため、新しい id セキュリティの境界を構築して企業ネットワーク外の資産を保護する方法について説明します。
 
-モジュール PDF のダウンロード:[モジュール3– id およびアクセス管理](media/ciso-workshop-3-identity-protection.pdf)
+- PDF の概要をダウンロードする:[モジュール3– id およびアクセス管理](media/ciso-workshop-3-identity-protection.pdf)
+- PowerPoint の概要:[モジュール3– id およびアクセス管理](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-3-identity-protection.pptx)
 
 ### <a name="introduction--identity-and-access-management"></a>概要-id およびアクセス管理
 
@@ -157,7 +160,8 @@ ciso ワークショップビデオおよび PowerPoint コンテンツはモジ
 
 脅威保護、セキュリティの進化、戦略、およびセキュリティのロードマップに関する重要なな学習事項について説明します。
 
-モジュール PDF のダウンロード:[モジュール4a –脅威保護戦略](media/ciso-workshop-4a-threat-protection.pdf)
+- PDF 概要のダウンロード:[モジュール4a –脅威保護戦略](media/ciso-workshop-4a-threat-protection.pdf)
+- PowerPoint の概要をダウンロードする:[モジュール4a –脅威保護戦略](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4a-threat-protection.pptx)
 
 ### <a name="introduction--threat-protection-strategy-identify-protect"></a>導入–脅威保護戦略 (識別-保護)
 
@@ -215,7 +219,8 @@ ciso ワークショップビデオおよび PowerPoint コンテンツはモジ
 
 このモジュールでは、microsoft のセキュリティ運用センター (SOC) の進化と軌道について説明します。この機能は、trillions のインテリジェントセキュリティグラフの信号を利用しています。
 
-モジュール PDF のダウンロード:[モジュール4b –脅威保護戦略](media/ciso-workshop-4b-threat-protection-strategy.pdf)
+- PDF 概要のダウンロード:[モジュール4b –脅威保護戦略](media/ciso-workshop-4b-threat-protection-strategy.pdf)
+- PowerPoint の概要をダウンロード:[モジュール4b –脅威保護戦略](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4b-threat-protection-strategy.pptx)
 
 ### <a name="introduction--threat-protection-strategy-detect-respond-recover"></a>概要–脅威保護戦略 (検出-応答-回復)
 
@@ -265,7 +270,8 @@ ciso ワークショップビデオおよび PowerPoint コンテンツはモジ
 
 自動分類、デバイス間での永続的な暗号化、モバイルデバイス、クラウドサービス、およびその他の企業資産間でのデータの継続的な監視を使用して、機密情報を保護する方法について説明します。
 
-モジュール PDF のダウンロード:[モジュール5–情報保護](media/ciso-workshop-5-information-protection-strategy.pdf)
+- PDF の概要をダウンロードする:[モジュール5–情報保護](media/ciso-workshop-5-information-protection-strategy.pdf)
+- PowerPoint の概要:[モジュール 5: 情報保護](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-5-information-protection-strategy.pptx)
 
 ### <a name="introduction--information-protection"></a>概要–情報保護
 

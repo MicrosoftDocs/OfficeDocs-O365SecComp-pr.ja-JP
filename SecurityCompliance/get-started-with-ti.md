@@ -15,12 +15,12 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: Office 365 の脅威の調査と応答、および開始する方法について説明します。
-ms.openlocfilehash: f30a3c8007d2643a67f59d9421496e9ae0bc6e8c
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: a04b39ecb11c33baa647bb9716af9ff12aed755e
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693136"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862521"
 ---
 # <a name="get-started-with-threat-investigation-and-response-office-365-advanced-threat-protection-plan-2"></a>脅威の調査と対応に関する作業を開始する (Office 365 Advanced Threat Protection プラン 2)
 
@@ -37,7 +37,7 @@ ms.locfileid: "30693136"
   
 ## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>脅威ダッシュボード、エクスプローラー、インシデントについて理解する
 
-これらの脅威の調査と応答能力は、 &amp;セキュリティコンプライアンスセンターで、[脅威ダッシュボード](get-started-with-ti.md#dashboard)、[脅威エクスプローラ](get-started-with-ti.md#explorer)、[インシデント](get-started-with-ti.md#incidents)、攻撃などの一連のツールと応答ワークフローとして、さまざまな機能を備えています。 [シミュレータ](attack-simulator.md)、および自動調査 & 応答。
+これらの脅威の調査と応答能力は、 &amp;セキュリティコンプライアンスセンターで、[脅威ダッシュボード](#threat-dashboard)、[脅威エクスプローラ](#threat-explorer)、[インシデント](get-started-with-ti.md#incidents)、攻撃などの一連のツールと応答ワークフローとして、さまざまな機能を備えています。 [シミュレータ](attack-simulator.md)、および自動調査 & 応答。
   
 ### <a name="threat-dashboard"></a>脅威ダッシュボード
 
@@ -100,7 +100,7 @@ office 365 の脅威 Invesigation および応答機能は、office 365 Advanced
    
 役割、役割グループ、およびアクセス許可の詳細については、「 [Office 365 &amp;セキュリティコンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
     
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [脅威のトラッカーについて-新知識と注目](threat-trackers.md)
     

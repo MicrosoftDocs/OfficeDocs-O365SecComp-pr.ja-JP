@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: 監督レビューポリシーを設定して、レビューのために従業員のコミュニケーションをキャプチャします。
-ms.openlocfilehash: 76a5e7152b609944eeb2fe1390e204e1463a673b
-ms.sourcegitcommit: 9a69ea604b415af4fef4964a19a09f3cead5a2ce
+ms.openlocfilehash: ce032a96131fdfb6f226dd25dfbb8e2de41c9931
+ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30701292"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30866393"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>組織用に監督ポリシーを構成する
 
@@ -68,9 +68,37 @@ Office 365 組織の監督をセットアップして使用するには、次の
 
 | **ポリシーメンバー** | **サポートされるグループ** | **サポートされないグループ** |
 |:-----|:-----|:-----|
-|ユーザーの監視 | 配布グループ <br> [Office 365 グループ] | 動的配布グループ |
+|ユーザーの監視 | 配布グループ <br> Office 365 グループ | 動的配布グループ |
 | Reviewers | メールが有効なセキュリティ グループ  | 配布グループ <br> 動的配布グループ |
   
+大規模なエンタープライズ組織での管理対象ユーザーを管理するには、非常に大きなグループにまたがるすべてのユーザーを監視する必要がある場合があります。 PowerShell を使用して、割り当てられたグループのグローバル監督ポリシーの配布グループを構成できます。 これは、1つのポリシーで数千のユーザーを監視し、新しい従業員が組織に参加したときに監督ポリシーを更新するのに役立ちます。
+
+1. 次のプロパティを使用して、グローバル監督ポリシー用の専用の[配布グループ](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps)を作成します。 この配布グループが他の目的または他の Office 365 サービスで使用されていないことを確認してください。
+
+    - **MemberDepartRestriction = Closed**。 これにより、ユーザーは配布グループから自分自身を削除することができなくなります。
+    - **memberjoinrestriction = Closed**。 これにより、ユーザーは自分を配布グループに追加できなくなります。
+    - **ModerationEnabled = True**。 これにより、このグループに送信されるすべてのメッセージを承認する必要があり、監督ポリシー構成の外部との通信にグループが使用されていないことが保証されます。
+
+    ```
+    New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
+    ```
+2. 組織内の監督ポリシーに追加されたユーザーを追跡するために使用する、未使用の[Exchange カスタム属性](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww)を選択します。
+
+3. 次の PowerShell スクリプトを定期的なスケジュールで実行して、ユーザーを監督ポリシーに追加します。
+
+    ```
+    $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
+    $i = 0
+    ForEach ($M in $Mbx) 
+    {
+      Write-Host "Adding" $M.DisplayName
+      Add-DistributionGroupMember -Identity <your group name> -Member $M.DistinguishedName -ErrorAction SilentlyContinue
+      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded 
+      $i++
+    }
+    Write-Host $i "Mailboxes added to supervisory review distribution group."
+    ```
+
 グループのセットアップの詳細については、以下を参照してください。
 - [配布グループを作成および管理する](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [メールが有効なセキュリティ グループの管理](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
