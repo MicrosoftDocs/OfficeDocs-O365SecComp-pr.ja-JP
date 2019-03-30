@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: '概要: Office 365 開発/テスト環境で、組織の他の部分とは分離した SharePoint Online チーム サイトを構成します。'
-ms.openlocfilehash: a8a02c10f799b136b299801a3636820e4f64e087
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 56c10b1a3871014f26a4d2fd98d9b4139d19ac47
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217137"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000230"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Office 365 開発/テスト環境での分離した SharePoint Online チーム サイト
 
@@ -50,10 +50,9 @@ Office 365 開発/テスト環境での分離した SharePoint Online チーム 
 3. 新しい ProjectX SharePoint Online チーム サイトを作成して分離させる。
     
 > [!TIP]
-> 
-            [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
+> [ここ](http://aka.ms/catlgstack)をクリックして、One Microsoft Cloud のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップをご確認ください。
   
-## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>フェーズ 1:ライトウェイトの、またはシミュレーションのエンタープライズ Office 365 開発/テスト環境を構築する
+## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>フェーズ 1: ライトウェイトの、またはシミュレーションのエンタープライズ Office 365 開発/テスト環境を構築する
 
 最小要件でのライトウェイトの方法で分離した SharePoint Online チーム サイトを作成する場合は、[Office 365 開発/テスト環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment) のフェーズ 2 とフェーズ 3 の手順に従ってください。
   
@@ -66,7 +65,7 @@ Office 365 開発/テスト環境での分離した SharePoint Online チーム 
 
 「[Office 365 PowerShell への接続](https://technet.microsoft.com/library/dn975125.aspx)」の手順を使用して、全体管理者アカウントで以下から Office 365 の監査サブスクリプション フォームに接続します。
   
-- 自分のコンピューター (ライトウェイトの Office 365 開発/テスト環境の場合)。
+- 自分のコンピューター (軽量の Office 365 開発/テスト環境の場合)。
     
 - CLIENT1 仮想マシン (シミュレーションのエンタープライズ Office 365 開発/テスト環境の場合)。
     
@@ -150,7 +149,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 ProjectX 用の SharePoint Online チーム サイトを作成するには、次の操作を行います。
   
-1. ローカルコンピューター (軽量構成) または CLIENT1 (シミュレートされたエンタープライズ構成) のどちらかでブラウザーを使用して、全体管理[https://portal.office.com](https://portal.office.com)者アカウントを使用して Office 365 ポータル () にサインインします。
+1. ローカル コンピューター (ライトウェイト構成) または CLIENT1 (シミュレーションのエンタープライズ構成) のいずれかのブラウザーを使用して、全体管理者アカウントで Office 365 ポータル ([https://admin.microsoft.com](https://admin.microsoft.com)) にサインインします。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     
@@ -172,7 +171,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
     
 11. リストの **[ProjectX のメンバー]** をクリックします。
     
-12. **[ユーザーとグループ]** ページで、 **[新規]** をクリックします。
+12. **[ユーザーとグループ]** ページで、**[新規]** をクリックします。
     
 13. **[共有]** ダイアログ ボックスに「 **ProjectX-Members**」と入力し、それを選択して、 **[共有]** をクリックします。
     
@@ -180,7 +179,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
     
 15. リストの **[ProjectX の所有者]** をクリックします。
     
-16. **[ユーザーとグループ]** ページで、 **[新規]** をクリックします。
+16. **[ユーザーとグループ]** ページで、**[新規]** をクリックします。
     
 17. **[共有]** ダイアログ ボックスに「 **ProjectX-Admins**」と入力し、それを選択して、 **[共有]** をクリックします。
     
@@ -218,7 +217,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
     
 2. 全体管理者の名前をクリックし、 **[サインアウト]** をクリックします。
     
-3. デザイナーのリーダーのアカウント名とパスワード[https://portal.office.com](https://portal.office.com)を使用して、Office 365 ポータル () にサインインします。
+3. デザイナーのリーダーのアカウント名とパスワードを使用して、Office 365 ポータル ([https://admin.microsoft.com](https://admin.microsoft.com)) にサインインします。
     
 4. タイルのリストで、 **[SharePoint]** をクリックします。
     
@@ -248,7 +247,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
     
 開発 VP のユーザー アカウントを使用したアクセスをデモンストレーションします。
   
-1. 開発 VP のアカウント名とパスワードを[https://portal.office.com](https://portal.office.com)使用して、Office 365 ポータル () にサインインします。
+1. 開発 VP のアカウント名とパスワードを使用して、Office 365 ポータル ([https://admin.microsoft.com](https://admin.microsoft.com)) にサインインします。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     
@@ -264,7 +263,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
     
 権限を持たないユーザー アカウントでのアクセスをデモンストレーションします。
   
-1. User 3 のアカウント名とパスワードを[https://portal.office.com](https://portal.office.com)使用して、Office 365 ポータル () にサインインします。
+1. User 3 のアカウント名とパスワードを使用して、Office 365 ポータル ([https://admin.microsoft.com](https://admin.microsoft.com)) にサインインします。
     
 2. タイルのリストで、 **[SharePoint]** をクリックします。
     

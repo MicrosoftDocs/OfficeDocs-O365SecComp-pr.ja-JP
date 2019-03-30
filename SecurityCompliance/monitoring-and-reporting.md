@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2dcc82dd6eb64567ed944ff8fc876a029d82f74a
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 40afc6fb999b5bf55262d4020ffc68c815dff3ae
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791782"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998910"
 ---
 # <a name="monitor-and-report-security-status-in-microsoft-365-security-center"></a>Microsoft 365 セキュリティセンターのセキュリティ状態を監視および報告する
-
-[!include[Prerelease�information](prerelease.md)]
 
 microsoft 365 セキュリティセンターは、microsoft 365 環境での保護とセキュリティの状態の概要を一目で確認できます。
 

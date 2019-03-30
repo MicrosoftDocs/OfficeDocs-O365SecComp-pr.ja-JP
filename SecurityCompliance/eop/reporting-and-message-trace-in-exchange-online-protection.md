@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) には、組織の全体的な状態と正常性を判断するのに役立つさまざまなレポートが用意されています。 特定イベント (目的の受信者に届かなかったメッセージなど) のトラブルシューティングを支援するツール、さらに法令遵守の要件のための監査レポートもあります。 次の表には、EOP 管理者が利用できるレポートおよびトラブルシューティングのツールを示します。
-ms.openlocfilehash: c26f3e88edb378f2eb9ae5967e96fadbce69110e
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fcefa14991d074f1f4459007c16dd7f4df1cedd1
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693166"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000950"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Exchange Online Protection でのレポート作成とメッセージ追跡
 
@@ -38,7 +38,7 @@ Microsoft Exchange Online Protection (EOP) には、組織の全体的な状態�
 - [管理センターの Office 365 レポート-電子メールアプリの使用状況](https://go.microsoft.com/fwlink/p/?linkid=859707)
 - [管理センターでの Office 365 レポート-メールボックスの使用状況](https://go.microsoft.com/fwlink/p/?linkid=859708)
 
-## <a name="security-amp-compliance-reports-in-the-office-365-admin-center"></a>Office &amp; 365 管理センターのセキュリティコンプライアンスレポート
+## <a name="security-amp-compliance-reports-in-the-microsoft-365-admin-center"></a>Microsoft &amp; 365 管理センターのセキュリティコンプライアンスレポート
 
 これらの拡張されたレポートは EOP 管理者向けの対話型レポート エクスペリエンスを提供します。これには概要情報、および詳細についてドリルダウンする機能が含まれます。  
 
@@ -50,7 +50,7 @@ Microsoft Exchange Online Protection (EOP) には、組織の全体的な状態�
 
 ##<a name="custom-reports-using-microsoft-graph"></a>Microsoft Graph を使用するカスタムレポート
 
-microsoft graph を使用して office 365 管理センターで利用可能なレポートをプログラムで作成する[microsoft graph の office 365 利用状況レポート](https://go.microsoft.com/fwlink/p/?linkid=865135)の使用に関するサブトピックを参照してください。 
+microsoft graph を使用して microsoft 365 管理センターで利用可能なレポートをプログラムで作成する microsoft [graph の Office 365 使用状況レポート](https://go.microsoft.com/fwlink/p/?linkid=865135)の使用に関するサブトピックを参照してください。 
 
 ##<a name="custom-reports-using-reporting-web-services"></a>レポート Web サービスを使用するカスタム レポート
 
@@ -83,6 +83,6 @@ EOP のレポート機能とメッセージ トレース データが使用可�
 |メッセージ追跡データ  <br/> |90 日  <br/> |生成後 7 日未満のメッセージのメッセージ追跡を実施した場合は、メッセージが 5 ～ 30 分で表示されるはずです。  <br/> 7 日以上前のメッセージのメッセージ追跡を実施した場合は、結果が出るまでに最大で数時間かかる場合があります。  <br/> |
    
 > [!NOTE]
-> データの可用性と待機時間は、Office 365 管理センターまたはリモート PowerShell 経由で要求されたかどうかにかかわらず同じです。 
+> データの可用性と待機時間は、Microsoft 365 管理センターまたはリモート PowerShell を介して要求された場合と同じです。 
   
 

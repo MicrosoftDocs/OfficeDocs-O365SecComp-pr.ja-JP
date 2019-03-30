@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: 組織の Office 365 の有料サブスクリプションに含まれる、Azure Active Directory にアクセスする方法について説明します。
-ms.openlocfilehash: 0a8ed74a0e135ae216f33401016a7321ad1a1adf
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
-ms.translationtype: HT
+ms.openlocfilehash: c49f6ca6aba109346ceea4558fe050b0cc561600
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295600"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001080"
 ---
 # <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>Office 365 で無料の Azure Active Directory サブスクリプションを使用する
 
@@ -41,6 +41,6 @@ ms.locfileid: "30295600"
     
 ## <a name="more-information"></a>詳細情報
 
-- また、Office 365 管理センターから **Azure Active Directory** 管理センターにアクセスすることもできます。Office 365 管理センターの左側のナビゲーション ウィンドウで、**管理センター**\>**Azure Active Directory** をクリックします。
+- また、Microsoft 365 管理センターから**Azure Active Directory**管理センターにアクセスすることもできます。 Microsoft 365 管理センターの左側のナビゲーションウィンドウで、[**管理センター** \> **Azure Active Directory**] をクリックします。
     
 - ユーザーとグループの管理や、その他のディレクトリ管理タスクの実行の詳細については、「[Azure AD Directory の管理](https://docs.microsoft.com/azure/active-directory/active-directory-administer)」を参照してください。

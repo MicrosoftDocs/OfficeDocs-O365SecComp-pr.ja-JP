@@ -3,7 +3,7 @@ title: Permissions in the Office 365 Security &amp; Compliance Center
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 セキュリティ&amp;コンプライアンスセンターを使用すると、デバイス管理、データ損失防止、電子情報開示、保持などのコンプライアンスタスクを実行するユーザーにアクセス許可を付与することができます。 これらのユーザーは、明示的にアクセス権を付与されたタスクのみを実行できます。 セキュリティ&amp; /コンプライアンスセンターにアクセスするには、ユーザーは Office 365 のグローバル管理者または1つ以上の&amp;セキュリティコンプライアンスセンターの役割グループのメンバーである必要があります。
-ms.openlocfilehash: 9b2692d2afd70be911581caff237e61d405cf10f
-ms.sourcegitcommit: 6a7cec7d1f0d3b8d71f313bfa22f44c827de2336
+ms.openlocfilehash: eba77fd6edcf41bac5eeebae3637707c2c5a7246
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "30798133"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997083"
 ---
 # <a name="permissions-in-the-office-365-security-amp-compliance-center"></a>Permissions in the Office 365 Security &amp; Compliance Center
 
@@ -74,13 +74,13 @@ Office 365 セキュリティ&amp;コンプライアンスセンターを使用�
 
 |**役割グループ**|**割り当てられた役割**|
 |:-----|:-----|
-|**コンプライアンス管理者** <br/> |表示のみの保持管理 <br/>通知の管理 <br/>表示のみの通知の管理 <br/>表示専用のデバイス管理 <br/>組織の構成 <br/>DLP コンプライアンス管理 <br/>表示専用 IB のコンプライアンス管理 <br/>廃棄管理 <br/>表示のみの DLP コンプライアンス管理 <br/>recordmanagement <br/>IB コンプライアンス管理 <br/>表示のみの監査ログ <br/>コンプライアンス管理者 <br/>デバイスの管理 <br/>コンプライアンス検索 <br/>ケース管理 <br/>保持管理 <br/>表示専用のレコード管理 <br/>"View-Only Recipients/表示専用受信者" <br/>収める <br/> |
+|**コンプライアンス管理者** <br/> |表示のみの保持管理 <br/>通知の管理 <br/>表示のみの通知の管理 <br/>表示専用のデバイス管理 <br/>組織の構成 <br/>DLP コンプライアンス管理 <br/>表示専用 IB のコンプライアンス管理 <br/>廃棄管理 <br/>表示のみの DLP コンプライアンス管理 <br/>recordmanagement <br/>IB コンプライアンス管理 <br/>表示のみの監査ログ <br/>コンプライアンス管理者 <br/>デバイスの管理 <br/>コンプライアンス検索 <br/>ケース管理 <br/>保持管理 <br/>表示専用のレコード管理 <br/>"View-Only Recipients/表示専用受信者" <br/>保留 <br/> |
 |**コンプライアンスデータ管理者** <br/> |表示のみの保持管理 <br/>通知の管理 <br/>機密ラベル管理者 <br/>表示のみの通知の管理 <br/>表示専用のデバイス管理 <br/>組織の構成 <br/>DLP コンプライアンス管理 <br/>表示専用 IB のコンプライアンス管理 <br/>廃棄管理 <br/>表示のみの DLP コンプライアンス管理 <br/>recordmanagement <br/>IB コンプライアンス管理 <br/>表示のみの監査ログ <br/>コンプライアンス管理者 <br/>デバイスの管理 <br/>コンプライアンス検索 <br/>保持管理 <br/>表示専用のレコード管理 <br/>"View-Only Recipients/表示専用受信者"<br/> |
-|**電子情報開示マネージャー** <br/> |エクスポート <br/>RMS の復号化 <br/>Custodian <br/>情報 <br/>確認 <br/>プレビュー <br/>コンプライアンス検索 <br/>ケース管理 <br/>収める <br/> |
+|**電子情報開示マネージャー** <br/> |エクスポート <br/>RMS の暗号化解除 <br/>Custodian <br/>情報 <br/>レビュー <br/>プレビュー <br/>コンプライアンス検索 <br/>ケース管理 <br/>保留 <br/> |
 |**メールフロー管理者** <br/> |"View-Only Recipients/表示専用受信者" <br/>  |
-|**組織の管理** <br/> |表示のみの保持管理 <br/>通知の管理 <br/>役割管理 <br/>機密ラベル管理者 <br/>表示のみの通知の管理 <br/>表示専用のデバイス管理 <br/>組織の構成 <br/>DLP コンプライアンス管理 <br/>表示専用 IB のコンプライアンス管理 <br/>廃棄管理 <br/>表示のみの DLP コンプライアンス管理 <br/>recordmanagement <br/>監査ログ <br/>IB コンプライアンス管理 <br/>セキュリティリーダ <br/>セキュリティ管理者 <br/>サービス保証ビュー <br/>検索と削除 <br/>表示のみの監査ログ <br/>コンプライアンス管理者 <br/>デバイスの管理 <br/>コンプライアンス検索 <br/>ケース管理 <br/>保持管理 <br/>表示専用のレコード管理 <br/>"View-Only Recipients/表示専用受信者" <br/>収める <br/> |
+|**組織の管理** <br/> |表示のみの保持管理 <br/>通知の管理 <br/>役割管理 <br/>機密ラベル管理者 <br/>表示のみの通知の管理 <br/>表示専用のデバイス管理 <br/>組織の構成 <br/>DLP コンプライアンス管理 <br/>表示専用 IB のコンプライアンス管理 <br/>廃棄管理 <br/>表示のみの DLP コンプライアンス管理 <br/>recordmanagement <br/>監査ログ <br/>IB コンプライアンス管理 <br/>セキュリティリーダ <br/>セキュリティ管理者 <br/>サービス保証ビュー <br/>検索と消去 <br/>表示のみの監査ログ <br/>コンプライアンス管理者 <br/>デバイスの管理 <br/>コンプライアンス検索 <br/>ケース管理 <br/>保持管理 <br/>表示専用のレコード管理 <br/>"View-Only Recipients/表示専用受信者" <br/>保留 <br/> |
 |**レコードの管理** <br/> |recordmanagement <br/>監査ログ <br/>保持管理 <br/> |
-|**レビュー担当者** <br/> |確認 <br/> |
+|**レビュー担当者** <br/> |レビュー <br/> |
 |**セキュリティ管理者** <br/> |通知の管理 <br/>機密ラベル管理者 <br/>表示のみの通知の管理 <br/>表示専用のデバイス管理 <br/>DLP コンプライアンス管理 <br/>表示専用 IB のコンプライアンス管理 <br/>表示のみの DLP コンプライアンス管理 <br/>監査ログ <br/>IB コンプライアンス管理 <br/>セキュリティ管理者 <br/>表示のみの監査ログ <br/>デバイスの管理 <br/> |
 |**セキュリティオペレーター** <br/> |通知の管理 <br/>表示のみの通知の管理 <br/>表示専用のデバイス管理 <br/>表示専用 IB のコンプライアンス管理 <br/>表示のみの DLP コンプライアンス管理 <br/>セキュリティリーダ <br/>表示のみの監査ログ <br/>コンプライアンス検索 <br/> |
 |**セキュリティリーダ** <br/> |表示のみの通知の管理 <br/>表示専用のデバイス管理 <br/>表示専用 IB のコンプライアンス管理 <br/>表示のみの DLP コンプライアンス管理 <br/>セキュリティリーダ <br/> |

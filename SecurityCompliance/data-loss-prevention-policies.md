@@ -3,8 +3,8 @@ title: データ損失防止ポリシーの概要
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/29/2018
-ms.audience: Admin
+ms.date: 3/29/2019
+ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) ポリシーを使用すると、office 365 全体で機密情報を識別、監視、および自動保護することができます。
-ms.openlocfilehash: 7c776b3fd703ddb24d9d8195609384771858c7f5
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: 4117a99afc804fd397deb45087c5058077f9ff60
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862539"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000020"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>データ損失防止ポリシーの概要
 
@@ -28,7 +28,7 @@ ms.locfileid: "30862539"
   
 DLP ポリシーを使用すると、以下のことが可能になります。
   
-- **Exchange online、SharePoint Online、OneDrive for business などのさまざまな場所で機密情報を識別します。**
+- **Exchange online、SharePoint Online、OneDrive for business、Microsoft Teams など、さまざまな場所の機密情報を特定します。**
     
     たとえば、任意の onedrive for business サイトに保存されているクレジットカード番号を含むドキュメントを特定したり、特定のユーザーの onedrive サイトのみを監視したりすることができます。
     
@@ -36,13 +36,13 @@ DLP ポリシーを使用すると、以下のことが可能になります。
     
     たとえば、組織外のユーザーと共有している正常性レコードが含まれているドキュメントまたは電子メールを特定し、そのドキュメントへのアクセスを自動的にブロックしたり、電子メールの送信をブロックしたりすることができます。
     
-- **デスクトップ バージョンの Excel 2016、PowerPoint 2016、Word 2016 内の機密情報を監視し、保護します。**
+- **デスクトップバージョンの Excel、PowerPoint、および Word の機密情報を監視して保護します。**
     
-    Exchange online、SharePoint Online、OneDrive for business の場合と同様に、これらの Office 2016 デスクトッププログラムには、機密情報を識別し、DLP ポリシーを適用するための同じ機能が含まれています。 他のユーザーとこうした Office 2016 プログラムのコンテンツを共有すると、DLP によって継続的な監視が行われます。
+    Exchange online、SharePoint Online、OneDrive for business の場合と同様に、これらの Office デスクトッププログラムには、機密情報を識別し、DLP ポリシーを適用するための同じ機能が含まれています。 DLP は、ユーザーがこれらの Office プログラムでコンテンツを共有するときの継続的な監視を提供します。
     
 - **ユーザーがワークフローを中断せずに、コンプライアンスを準拠しつづける方法を学ぶよう支援します。**
     
-    ユーザーに対して、DLP ポリシーについての教育を行い、作業をブロックすることなく、準拠を維持することができます。 たとえば、機密情報を含むドキュメントをユーザーが共有しようとすると、DLP ポリシーによって電子メール通知が送信されます。また、ビジネスがある場合にポリシーを上書きすることができるように、ドキュメントライブラリのコンテキストでポリシーヒントを表示することができます。位置. outlook on the web、outlook 2013 以降、Excel 2016、PowerPoint 2016、および Word 2016 にも同じポリシーヒントが表示されます。
+    ユーザーに対して、DLP ポリシーについての教育を行い、作業をブロックすることなく、準拠を維持することができます。 たとえば、機密情報を含むドキュメントをユーザーが共有しようとすると、DLP ポリシーによって電子メール通知が送信されます。また、ビジネスがある場合にポリシーを上書きすることができるように、ドキュメントライブラリのコンテキストでポリシーヒントを表示することができます。位置. outlook on the web、outlook、Excel、PowerPoint、Word にも同じポリシーヒントが表示されます。
     
 - **組織の dlp ポリシーに一致するコンテンツを示す DLP レポートを表示します。**
     
@@ -56,7 +56,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターの [デ�
 
 DLP ポリシーにはいくつかの基本的な内容が含まれます。
   
-- Exchange online、SharePoint online、OneDrive for business サイトなどのコンテンツの**場所**を保護する場所。 
+- Exchange online、SharePoint online、OneDrive for business のサイト、Microsoft Teams のチャットやチャネルなど、コンテンツの**場所**を保護する場所。 
     
 - **ルール**を適用してコンテンツを保護するタイミングと方法。ルールは次の要素で構成されます。 
     
@@ -72,7 +72,7 @@ DLP ポリシーにはいくつかの基本的な内容が含まれます。
   
 ### <a name="locations"></a>場所
 
-DLP ポリシーは、情報が Exchange online、SharePoint Online、OneDrive for business のいずれにあるかにかかわらず、Office 365 全体の機密情報を検索して保護することができます。 すべての SharePoint サイトまたは OneDrive アカウント、特定のサイトまたはアカウントのみ、またはすべてのメールボックスを保護することを簡単に選択できます。 特定のユーザーのメールボックスのみを選択することはまだできないことに注意してください。
+DLP ポリシーは、Exchange online、SharePoint Online、OneDrive for business、または Microsoft Teams に情報があるかどうかにかかわらず、Office 365 全体の機密情報を検索して保護することができます。 Exchange 電子メール、Microsoft Teams のチャットおよびチャネル、すべての SharePoint または OneDrive ライブラリのコンテンツを保護するか、ポリシーの特定の場所を選択するかを選択できます。
   
 ![DLP ポリシーを適用できる場所のオプション](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
@@ -148,11 +148,11 @@ DLP ポリシーは、クレジットカード番号などの機密情報の種�
   
 電子メール通知の送信に加えて、ユーザー通知にはポリシーヒントが表示されます。
   
-- outlook 2013 以降および web 上の outlook。
+- outlook および outlook on the web。
     
 - SharePoint Online または OneDrive for business サイト上のドキュメントの場合。
     
-- Excel 2016、PowerPoint 2016、および Word 2016 で、DLP ポリシーに含まれるサイトにドキュメントが格納されている場合。
+- Excel、PowerPoint、および Word で、ドキュメントが DLP ポリシーに含まれるサイトに格納されている場合。
     
 電子メール通知とポリシーヒントは、コンテンツが DLP ポリシーと競合する理由について説明します。 選択した場合、電子メール通知とポリシーヒントを使用すると、ユーザーが誤検知を報告してルールを上書きしたり、業務上の理由を提供したりすることができます。 これにより、ユーザーに DLP ポリシーについての教育を行い、ユーザーの作業を妨げることなくそれらを適用することができます。 コンプライアンス担当者が定期的に情報をレビューできるように、上書きおよび誤検知に関する情報もレポート (DLP レポートを参照) およびインシデントレポート (次のセクション) に含まれています。
   
@@ -428,13 +428,15 @@ DLP は、(単純なテキスト スキャンだけでなく) 詳細なコンテ
 
 セキュリティ&amp; /コンプライアンスセンターで DLP ポリシーを作成すると、そのポリシーは中央ポリシーストアに格納され、次のようにさまざまなコンテンツソースと同期されます。
   
-- Exchange Online および outlook on the web および outlook 2013 以降
+- Exchange Online、outlook on the web、outlook
     
 - OneDrive for Business サイト
     
 - SharePoint Online サイト
     
-- Office 2016 デスクトップ プログラム (Excel 2016、PowerPoint 2016、Word 2016)
+- Office デスクトッププログラム (Excel、PowerPoint、および Word)
+
+- Microsoft Teams チャンネルおよびチャット
     
 ポリシーが正しい場所に同期されると、コンテンツの評価とアクションの適用が開始されます。
   
@@ -444,26 +446,36 @@ SharePoint Online サイトと OneDrive for business サイトのすべてにお
   
 このため、DLP ポリシーは、バックグラウンドでポリシーに一致しているかどうか頻繁にドキュメントを確認します。 これを、非同期のポリシー評価と考えることができます。
   
-そのしくみは次のとおりです。 ユーザーがサイトでドキュメントを追加または変更すると、検索エンジンによってコンテンツがスキャンされ、後で検索できるようになります。 これが発生していますが、機密情報のためにコンテンツもスキャンされ、共有されているかどうかが確認されます。 検出された機密情報は検索インデックスに安全に格納されるため、コンプライアンスチームのみがアクセスできますが、一般的なユーザーにはアクセスできません。 オンにした各 DLP ポリシーはバックグラウンドで実行され (非同期)、ポリシーに一致するコンテンツについては検索頻度がよくチェックされ、不注意によるリークから保護するアクションを適用します。
+#### <a name="how-it-works"></a>しくみ
+ 
+ユーザーがサイトでドキュメントを追加または変更すると、検索エンジンによってコンテンツがスキャンされ、後で検索できるようになります。 これが発生していますが、機密情報のためにコンテンツもスキャンされ、共有されているかどうかが確認されます。 検出された機密情報は検索インデックスに安全に格納されるため、コンプライアンスチームのみがアクセスできますが、一般的なユーザーにはアクセスできません。 オンにした各 DLP ポリシーはバックグラウンドで実行され (非同期)、ポリシーに一致するコンテンツについては検索頻度がよくチェックされ、不注意によるリークから保護するアクションを適用します。
   
 ![DLP ポリシーがコンテンツを非同期で評価する方法を示す図](media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
   
 最後に、ドキュメントが DLP ポリシーに矛盾し、その後 DLP ポリシーに準拠するようになることがあります。たとえば、ユーザーがドキュメントにクレジット カード番号を追加する場合、DLP ポリシーによってドキュメントへのアクセスが自動的にブロックされる可能性があります。しかしユーザーが後で機密情報を削除すると、次にドキュメントが対象ポリシーに対して再び評価されるときに、アクション (この例ではブロック) が自動的に取り消されます。
   
-DLP は、インデックス処理が可能なすべてのコンテンツを評価します。 既定でクロールされるファイルの種類の詳細については、「既定のクロールされた[ファイル名拡張子」および「解析されたファイルの種類 (SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=627430))」を参照してください。
+DLP は、インデックス処理が可能なすべてのコンテンツを評価します。 既定でクロールされるファイルの種類の詳細については、「既定のクロールされた[ファイル名拡張子」および「解析されたファイルの種類 (SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types))」を参照してください。
   
-### <a name="policy-evaluation-in-exchange-online-outlook-2013-and-later-and-outlook-on-the-web"></a>Exchange Online、outlook 2013 以降、outlook on the web でのポリシー評価
+### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Exchange Online、outlook、outlook on the web でのポリシー評価
 
-exchange online を場所として含む DLP ポリシーを作成すると、ポリシーは Office 365 セキュリティ&amp;コンプライアンスセンターから exchange online に同期され、次に exchange online から web 上の outlook 2013 以降に同期されます。
+exchange online を場所として含む DLP ポリシーを作成すると、ポリシーは Office 365 セキュリティ&amp;コンプライアンスセンターから exchange online に同期され、次に exchange online から web 上の outlook および outlook 上の outlook に同期されます。
   
-メッセージが Outlook で構成されている場合、ユーザーは作成されたコンテンツが DLP ポリシーに照らして評価されるときに、ポリシーヒントを表示できます。 メッセージが送信されると、メールフローの通常の一部としての DLP ポリシー、exchange メールフロールール (トランスポートルールとも呼ばれます) および exchange 管理センターで作成された dlp ポリシーに対して評価されます (詳細については、次のセクションを参照してください)。 DLP ポリシーは、メッセージと添付ファイルの両方をスキャンします。
+メッセージが Outlook で構成されている場合、ユーザーは作成されたコンテンツが DLP ポリシーに照らして評価されるときに、ポリシーヒントを表示できます。 メッセージが送信されると、exchange メールフロールール (トランスポートルールとも呼ばれる) と exchange 管理センターで作成された dlp ポリシーと共に、電子メールフローの通常の一部として DLP ポリシーに対して評価されます。 DLP ポリシーは、メッセージと添付ファイルの両方をスキャンします。
   
-### <a name="policy-evaluation-in-the-office-2016-desktop-programs"></a>Office 2016 デスクトップ プログラムにおけるポリシー評価
+### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Office デスクトッププログラムでのポリシー評価
 
-Excel 2016、PowerPoint 2016、Word 2016 には、機密情報を識別して DLP ポリシーを適用するための、SharePoint Online と OneDrive for Business と同じ機能が含まれています。 これらの Office 2016 プログラムは、自分の dlp ポリシーを中央ポリシーストアから直接同期し、dlp ポリシーに含まれているサイトから開いたドキュメントをユーザーが操作するときに、dlp ポリシーに対してコンテンツを継続的に評価します。
+Excel、PowerPoint、および Word には、機密情報を識別し、DLP ポリシーを SharePoint Online と OneDrive for business として適用するのと同じ機能が含まれています。 これらの Office プログラムは、自分の dlp ポリシーを中央ポリシーストアから直接同期し、dlp ポリシーに含まれているサイトから開いたドキュメントをユーザーが操作するときに、dlp ポリシーに対してコンテンツを継続的に評価します。
   
-Office 2016 における DLP ポリシーの評価は、プログラムのパフォーマンス、またはコンテンツを扱っているユーザーの生産性に影響を与えることがないように設計されています。 大きなドキュメントで作業している場合や、ユーザーのコンピューターがビジー状態になっている場合は、ポリシーヒントが表示されるまで数秒かかる場合があります。
-  
+Office での DLP ポリシーの評価は、プログラムのパフォーマンスや、コンテンツを扱うユーザーの生産性に影響を与えないように設計されています。 大きなドキュメントで作業している場合や、ユーザーのコンピューターがビジー状態になっている場合は、ポリシーヒントが表示されるまで数秒かかる場合があります。
+
+### <a name="policy-evaluation-in-microsoft-teams"></a>Microsoft Teams でのポリシー評価
+ 
+場所として Microsoft Teams を含む DLP ポリシーを作成すると、Office 365 セキュリティ&amp;コンプライアンスセンターからユーザーアカウントおよび Microsoft teams のチャネルとチャットにポリシーが同期されます。 DLP ポリシーの構成方法によっては、Microsoft Teams のチャットやチャネルで機密情報を共有しようとすると、メッセージをブロックまたは取り消すことができます。 また、機密情報が含まれていて、ゲスト (外部ユーザー) と共有されているドキュメントは、それらのユーザーに対しては開きません。
+
+たとえば、他のユーザーが Teams のチャットまたはチャネル内の機密情報を外部ユーザーと共有しようとしたとします。 これを防ぐために定義された DLP ポリシーがあるとします。 保護を適用すると、外部ユーザーに送信される機密情報を含むメッセージが削除されます。 これは数秒で行われ、DLP ポリシーの構成方法に従って自動的に発生します。
+
+ポリシーヒントは、メッセージがブロックされた、または取り消された理由について送信者に通知します。 たとえば、送信者には、すべてのユーザーとの共有が許可されていない個人情報 (pii) が含まれていることや、pii を含むドキュメントを組織外のユーザーと共有できないことが通知されることがあります。 送信者は、DLP ポリシーに準拠するようにメッセージを編集できます。
+ 
 ## <a name="permissions"></a>アクセス許可
 
 DLP ポリシーを作成するコンプライアンスチームのメンバーは、セキュリティ&amp;コンプライアンスセンターに対するアクセス許可が必要です。 既定では、テナント管理者は、この場所にアクセスできるようになり、テナント管理者や他の&amp;ユーザーには、テナント管理者のすべてのアクセス許可を付与することなく、セキュリティコンプライアンスセンターへのアクセス権を付与することができます。そのためには、次のことを行うことをお勧めします。
@@ -482,19 +494,19 @@ DLP ポリシーを作成して適用するときにのみ、これらのアク�
 
 セキュリティ&amp; /コンプライアンスセンターのほとんどのコマンドレットを使用するには、次のことを行う必要があります。
   
-1. [リモート PowerShell を使用して Office 365 セキュリティ/コンプライアンス センターに接続する](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [リモート PowerShell を使用して Office 365 セキュリティ/コンプライアンス センターに接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     
-2. 次のいずれかの[Office 365 &amp;セキュリティコンプライアンスセンターコマンドレット](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)を使用する
+2. これらの[ポリシーおよびコンプライアンス-dlp のコマンドレット](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)を使用する
     
-ただし、DLP レポートには、Exchange Online などの Office 365 間でデータをプルする必要があります。 このため、DLP レポートのコマンドレットは Exchange Online powershell で使用できます (セキュリティ&amp;コンプライアンスセンターの powershell には含まれません)。 そのため、DLP レポートのコマンドレットを使用するには、次のことを行う必要があります。
+ただし、DLP レポートには、Exchange Online などの Office 365 間でデータをプルする必要があります。 このため、 **DLP レポートのコマンドレットは Exchange Online powershell で使用できます (セキュリティ&amp;コンプライアンスセンターの powershell に**は含まれません)。 そのため、DLP レポートのコマンドレットを使用するには、次のことを行う必要があります。
   
-1. [Connect to Exchange Online using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
 2. 次のいずれかのコマンドレットを DLP レポートに使用します。
     
-  - [get-dlpdetectionsreport](http://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
+  - [get-dlpdetectionsreport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
     
-  - [取得-dlpのレポート](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
+  - [取得-dlpのレポート](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
     
 ## <a name="more-information"></a>詳細情報
 

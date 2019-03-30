@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection の自動化された調査と応答機能について説明します。
-ms.openlocfilehash: 9c01121ed6389f4a9014fe1ee1298b0e840f06ab
-ms.sourcegitcommit: 1706b618c9ec63ed05aebb5f84a77b5bfb50734a
+ms.openlocfilehash: 223a28a7f63f101dd5644e433d72a3ddf6e5dc23
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "30792511"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000440"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Office 365 を使用した自動調査と応答 (AIR)
 
@@ -39,9 +39,9 @@ ms.locfileid: "30792511"
 
 ***注**: これらのアラートには、電子メール通知がオフになっているセキュリティ & コンプライアンスセンター内のそれぞれのアラートポリシーに「情報」の重要度が割り当てられています。 これらは、通知ポリシー構成を使用して有効にすることができます。
 
-通知を表示するには、Office 365 Security & コンプライアンスセンターで、[**通知** > ] [**警告を表示**する] を選択します。 通知を選択して詳細を表示します。そこから、[**調査の表示**] リンクを使用して、対応する[調査](#investigation-graph)に移動します。 情報通知は、既定では通知ビューに表示されないことに注意してください。 それらを表示するには、通知フィルターを変更して情報通知を含める必要があります。
+通知を表示するには、セキュリティ & コンプライアンスセンターで**** > 、[通知] [**警告を表示**する] を選択します。 通知を選択して詳細を表示します。そこから、[**調査の表示**] リンクを使用して、対応する[調査](#investigation-graph)に移動します。 情報通知は、既定では通知ビューに表示されないことに注意してください。 それらを表示するには、通知フィルターを変更して情報通知を含める必要があります。
 
-組織がアラート管理システム、サービス管理システム、またはセキュリティ情報およびイベント管理 (SIEM) システムを通じてセキュリティ警告を管理する場合は、電子メール通知またはを介し[てそのシステムに Office 365 通知を送信できます。Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。 電子メールまたは API を使用した調査アラート通知には、Office 365 security & コンプライアンスセンターのアラートにアクセスするためのリンクが含まれています。これにより、割り当てられたセキュリティ管理者が調査にすばやく移動できます。
+組織がアラート管理システム、サービス管理システム、またはセキュリティ情報およびイベント管理 (SIEM) システムを通じてセキュリティ警告を管理する場合は、電子メール通知またはを介し[てそのシステムに Office 365 通知を送信できます。Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)。 電子メールまたは API を使用した調査アラート通知には、セキュリティ & コンプライアンスセンターのアラートにアクセスするためのリンクが含まれています。これにより、割り当てられたセキュリティ管理者は、調査にすばやく移動できるようになります。
 
 ![調査にリンクされたアラート](media/air-alerts-page-details.png) 
 
@@ -121,15 +121,15 @@ ms.locfileid: "30792511"
 
 ## <a name="get-started"></a>はじめに
 
-office 365 のグローバル管理者、セキュリティ管理者、またはセキュリティリーダとして調査にアクセスするには、office 365 security &[https://protection.office.com](https://protection.office.com)コンプライアンスセンター () に移動し、サインインします。 次に、以下のどちらかの操作を行います。
+Office 365 のグローバル管理者、セキュリティ管理者、またはセキュリティリーダとして調査にアクセスするには、security &[https://protection.office.com](https://protection.office.com)コンプライアンスセンター () に移動し、サインインします。 次に、以下のどちらかの操作を行います。
 
 - 左側のナビゲーションで、[アラート**** > **表示の通知**] に移動し、調査関連の通知の1つを開いてから、通知のポップアップの下部にある [**調査の表示**] リンクをクリックします。 
 
-    または
+    or
 
 - 左側のナビゲーションで、[**脅威管理** > の**調査**] に移動します。
 
-    または
+    or
 
 - 脅威管理ダッシュボード (セキュリティ & コンプライアンスセンターで、[**脅威管理** > ]**ダッシュボード**) にアクセスします。
 

@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: 管理者は、Office 365 Security & コンプライアンスセンターのメールフローのダッシュボードにあるメールフローマップレポートについて学ぶことができます。
+description: 管理者は、Security & コンプライアンスセンターのメールフローのダッシュボードにあるメールフローマップレポートについて理解できます。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 14a98b57c277238d4f603b56386bf51ac310f7ef
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: bd05ff5cb78adb9dd89dbe3f69c2c3a78d2b1df9
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722953"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001140"
 ---
 # <a name="mail-flow-map-report"></a>メールフローマップレポート
 
@@ -24,7 +24,7 @@ ms.locfileid: "30722953"
 
 このレポートでは、Office 365 組織を通過するメールの流れについての説明が提供されます。 この情報を使用して、パターンを学習し、異常を特定し、発生した問題を解決することができます。
 
-![Office 365 Security & コンプライアンスセンターのメールフローのダッシュボードにあるメールフローマップレポート](media/mail-flow-map-selected.png)
+![セキュリティ & コンプライアンスセンターのメールフローダッシュボードのメールフローマップレポート](media/mail-flow-map-selected.png)
 
 ## <a name="mail-flow-map-widget"></a>メールフローマップウィジェット
 

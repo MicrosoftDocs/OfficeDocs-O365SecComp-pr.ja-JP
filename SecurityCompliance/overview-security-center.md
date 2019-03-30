@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 863cd36d383000b81d1a543d866f24b0380e5fdd
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: a0acaf9560b814fe8e87751d3a8f4b6d13b3864a
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791794"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000600"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティセンターの概要
-
-[!include[Prerelease�information](prerelease.md)]
 
 ビジネスのセキュリティを管理して、発展を続ける脅威の状況を保護するには、多くの課題があります。 さまざまな場所で多数のセキュリティソリューションを構成して、さまざまな制御を構成することができ、どのコントロールが最も効果的で、従業員に新たな課題をもたらすかがわからない場合があります。 セキュリティチームにとって、セキュリティと生産性の適切なバランスを見つけるのが困難な場合があります。
 

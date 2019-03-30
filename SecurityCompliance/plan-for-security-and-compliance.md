@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: セキュリティとコンプライアンスを計画するためのランディングページ
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4c653e20fbab8f93897b00589a00cb53b1e36963
-ms.sourcegitcommit: 07a4f9a8888756e05cd67ca24f6121b2a4e9f464
+ms.openlocfilehash: b0c7af13a78499f3ee8af5b902bc4c8db85aca32
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "30512652"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998490"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>Office 365 の&amp;セキュリティコンプライアンスを計画する
 
@@ -53,7 +53,7 @@ Office 365 のデータおよびサービスへのアクセスを保護するこ
   
 [PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
-## <a name="step-5-leverage-the-office-365-security-amp-compliance-center"></a>手順 5: Office 365 セキュリティ&amp;コンプライアンスセンターを活用する
+## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>手順 5: Microsoft 365 セキュリティ&amp;コンプライアンスセンターを活用する
 
 セキュリティ&amp;コンプライアンスセンターでは、脅威管理、データガバナンス、検索と調査など、Office 365 のさまざまなセキュリティを管理するために使用するコントロールを1つのビューで確認できます。 
   
@@ -71,13 +71,13 @@ Office 365 のデータおよびサービスへのアクセスを保護するこ
     
 - [Microsoft Cloud の Contoso](http://aka.ms/cloudarchcontoso)
     
-## <a name="office-365-admin-centers-and-dashboards"></a>Office 365 管理センターとダッシュボード
+## <a name="microsoft-365-admin-centers-and-dashboards"></a>Microsoft 365 管理センターとダッシュボード
 
 Office 365 環境を保護するために、これらの管理センターおよびダッシュボードでセキュリティとコンプライアンスの設定を構成します。
   
 |**サブスクリプション**|**管理 URL**|**ダッシュボードと管理センター**|
 |:-----|:-----|:-----|
-|Office 365  <br/> |`https://portal.office.com`  <br/> | Office 365 管理センター  <br/>  セキュリティ/コンプライアンス センター  <br/>  Exchange 管理センター  <br/>  SharePoint 管理センターと OneDrive for business 管理センター  <br/> |
+|Office 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 管理センター  <br/>  セキュリティ/コンプライアンス センター  <br/>  Exchange 管理センター  <br/>  SharePoint 管理センターと OneDrive for business 管理センター  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft モバイルアプリケーション管理  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud App Security  <br/> |
    

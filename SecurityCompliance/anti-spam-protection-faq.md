@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: ここでは、スパム対策保護に関するよく寄せられる質問と回答について説明します。 回答は、Microsoft Exchange Online と Exchange Online Protection (EOP) のお客様に当てはまります。
-ms.openlocfilehash: 8ac5fff97828764524c8bfa1510549396d509866
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fa2709c995ff9ef83213b86e079a778c61bef3a2
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692236"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000990"
 ---
 # <a name="anti-spam-protection-faq"></a>スパム対策保護 FAQ
 
@@ -71,7 +71,7 @@ A. スパムとスパムではないメッセージを分析のために Microso
   
  **Q. スパム報告を取得できますか?**
   
-A. はい。たとえば Office 365 管理センターでスパム検出レポートを取得することができます。 このレポートは、一意のメッセージの数でスパムの量を示します。 レポートの詳細については、以下のリンクを参照してください。
+A. はい。たとえば、Microsoft 365 管理センターでスパム検出レポートを取得できます。 このレポートでは、スパムボリュームが一意のメッセージ数として表示されます。 レポートの詳細については、次のリンクを参照してください。
   
 exchange online のお客様: [exchange online での監視、レポート、メッセージ追跡](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   

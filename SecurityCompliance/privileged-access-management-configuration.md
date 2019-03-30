@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Office 365 での特権アクセス管理の構成の詳細については、このトピックを使用してください。
-ms.openlocfilehash: 3d186998006dd3cc59877b1571f50314af5bbce8
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: 9d0f5955eb2fd67d245bad3e7a9b1b89769bd947
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492826"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001150"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Office 365 での特権アクセス管理の構成
 
@@ -58,13 +58,13 @@ Office 365 組織で特権アクセスをセットアップして使用するに
 
 ## <a name="step-1---create-an-approvers-group"></a>手順 1-承認者のグループを作成する
 
-1. 組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://portal.office.com)にサインインします。
+1. 組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
 
 2. 管理センターで、[グループ**** > **の追加]** を選びます。
 
 3. メールが**有効なセキュリティグループ**グループの種類を選択し、新しいグループの**名前**、**グループ電子メールアドレス**、および**説明**フィールドを入力します。
 
-4. グループを保存します。 グループが完全に構成され、Office 365 管理センターに表示されるまでに数分かかる場合があります。
+4. グループを保存します。 グループが完全に構成され、Microsoft 365 管理センターに表示されるまでに数分かかる場合があります。
 
 5. 新しい承認者のグループを選択し、[**編集**] を選択してグループにユーザーを追加します。
 
@@ -76,7 +76,7 @@ Office 365 組織で特権アクセスをセットアップして使用するに
 
 ### <a name="using-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの使用
 
-1. 組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://portal.office.com)にサインインします。
+1. 組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
 
 2. 管理センターで、[**設定 > セキュリティ & プライバシー** > **特権アクセス**] に移動します。
 
@@ -108,7 +108,7 @@ Office 365 組織に対して最大30の特権アクセスポリシーを作成�
 
 ### <a name="using-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの使用
 
-1. 組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://portal.office.com)にサインインします。
+1. 組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
 
 2. 管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。
 
@@ -152,7 +152,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 #### <a name="using-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの使用
 
-1. 資格情報を使用して、 [Microsoft 365 管理センター](https://portal.office.com)にサインインします。
+1. 資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
 
 2. 管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。
 
@@ -187,7 +187,7 @@ New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting t
 
 #### <a name="using-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの使用
 
-1. 資格情報を使用して、 [Microsoft 365 管理センター](https://portal.office.com)にサインインします。
+1. 資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
 
 2. 管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。
 
@@ -211,7 +211,7 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 
 #### <a name="using-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの使用
 
-1. 資格情報を使用して、 [Microsoft 365 管理センター](https://portal.office.com)にサインインします。
+1. 資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
 
 2. 管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。
 
@@ -248,7 +248,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 ### <a name="using-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの使用
 
-1. 組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://portal.office.com)にサインインします。
+1. 組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
 
 2. 管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。
 
@@ -274,7 +274,7 @@ Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you w
 
 ### <a name="using-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの使用
 
-1. 組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://portal.office.com)にサインインします。
+1. 組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
 
 2. 管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。
 

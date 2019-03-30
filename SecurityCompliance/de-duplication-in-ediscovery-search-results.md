@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: 同じメッセージの複数のインスタンスが異なるメールボックスで検出された場合でも、エクスポートされる電子情報開示検索結果の重複を除外するオプションがあります。
-ms.openlocfilehash: 7a4f156a68cafbffbb416c625e1e3ba432e6b069
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: b3810e3568bd2c7aa1628bcfcebbad5a87468ff8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936727"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999300"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>電子情報開示検索結果での重複除去
 
@@ -66,7 +66,7 @@ Office 365 電子情報開示ツールは、次の電子メールプロパティ
 
 - この記事の情報は、次の電子情報開示ツールのいずれかを使用して検索結果をエクスポートする場合に適用されます。
     
-  - Office 365 セキュリティ&amp; /コンプライアンスセンターのコンテンツ検索
+  - Office 365 のコンプライアンスセンターでのコンテンツ検索
     
   - Exchange Online のインプレース電子情報開示
     
@@ -74,9 +74,9 @@ Office 365 電子情報開示ツールは、次の電子メールプロパティ
     
 - 検索結果のエクスポートの詳細については、以下を参照してください。
     
-  - [Office 365 セキュリティ/コンプライアンス センターから検索結果をエクスポートする](export-search-results.md)
+  - [コンテンツ検索をエクスポートする](export-search-results.md)
     
-  - [Office 365 セキュリティ&amp;コンプライアンスセンターからコンテンツ検索レポートをエクスポートする](export-a-content-search-report.md)
+  - [コンテンツ検索のレポートをエクスポートする](export-a-content-search-report.md)
     
   - [インプレース電子情報開示の検索結果を PST ファイルにエクスポートする](https://go.microsoft.com/fwlink/p/?linkid=832671)
     

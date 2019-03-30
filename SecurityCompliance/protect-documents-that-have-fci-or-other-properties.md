@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 多くの組織では、Windows Server ファイル分類インフラストラクチャ (fci) の分類プロパティ、SharePoint のドキュメントプロパティ、またはドキュメントプロパティを使用して、機密情報を識別して分類するプロセスが既に存在します。サードパーティ製のシステムによって適用されます。 これが組織を説明している場合は、office 365 で、Windows Server fci または他のシステムによってドキュメントに適用されたプロパティを認識する dlp ポリシーを作成して、特定の fci またはその他の office ドキュメントに dlp ポリシーを適用できるようにすることができます。プロパティの値。
-ms.openlocfilehash: b1a5b438714a0c0b91d33a9544c0f26cbd12b4c9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: ad643c77d477f6b9aaecb122010584510ea9bf7e
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639084"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000580"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>FCI または他のプロパティが使用されているドキュメントを保護する DLP ポリシーを作成する
 
@@ -50,7 +50,7 @@ DLP ポリシーで Windows Server FCI プロパティまたは他のプロパ�
   
 ### <a name="step-2-create-a-managed-property"></a>手順 2: 管理プロパティを作成する
 
-1. Office 365 管理センターにサインインします。
+1. Microsoft 365 管理センターにサインインします。
     
 2. 左側のナビゲーションで、[**管理センター** \> **SharePoint**] を選択します。 SharePoint 管理センターが表示されます。
     

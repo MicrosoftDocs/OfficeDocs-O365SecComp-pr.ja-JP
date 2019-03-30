@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: 管理者は、Office 365 Security & コンプライアンスセンターのメールフローダッシュボードにある上位ドメインのメールフローの状態に関する洞察を得ることができます。
+description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードにある上位のドメインメールフローの状態について理解できます。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 04aa986982465a4c66fbf99f517fb34622d65e19
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: baa69c3373623d4742d6d957a5022012fb60f7e7
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722959"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000670"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>トップドメインメールフローのステータスの洞察
 
@@ -24,7 +24,7 @@ ms.locfileid: "30722959"
 
 **上位ドメインのメールフローの状態**に関する情報は、メールフローの観点から、組織のドメインの現在の状態を示します。 この洞察は、***メールフローに影響を与える***(たとえば、外部電子メールを受信できない) 問題が発生しているドメインを特定してトラブルシューティングするのに役立ちます。特に、ドメインの有効期限、または間違った MX レコードがあるドメイン。
 
-![Office 365 Security & コンプライアンスセンターのメールフローダッシュボードにある上位ドメインフローの状態の洞察](media/domain-mail-flow-status-selected.png)
+![セキュリティ & コンプライアンスセンターのメールフローダッシュボードにある上位ドメインフローの状態の洞察](media/domain-mail-flow-status-selected.png)
 
 [**詳細**] をクリックすると、各ドメインの状態の詳細が表示されるポップアップが表示されます。
 

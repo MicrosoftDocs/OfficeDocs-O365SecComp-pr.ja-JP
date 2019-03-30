@@ -15,12 +15,12 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: Office 365 の脅威の調査と応答、および開始する方法について説明します。
-ms.openlocfilehash: a04b39ecb11c33baa647bb9716af9ff12aed755e
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: fd038f706ccb3df68b98f02593e43091484ec0c6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862521"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998880"
 ---
 # <a name="get-started-with-threat-investigation-and-response-office-365-advanced-threat-protection-plan-2"></a>脅威の調査と対応に関する作業を開始する (Office 365 Advanced Threat Protection プラン 2)
 
@@ -78,13 +78,13 @@ office 365 の脅威 Invesigation および応答機能は、office 365 Advanced
 > [!TIP]
 > これらの脅威の調査および応答機能を含まない office 365 サブスクリプションが組織にある場合は、それらをアドオンとして office 365 Advanced threat Protection と共に購入することができます。 プランオプションの詳細については、「 [office 365 Platform Service Description: office &amp; 365 Security コンプライアンスセンター](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) 」および「[購入または編集 (office 365 for business](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on))」を参照してください。
   
-1. office 365 の全体管理者として[https://portal.office.com](https://portal.office.com) 、に移動して、office 365 の職場または学校のアカウントを使用してサインインします。 
+1. office 365 の全体管理者として[https://admin.microsoft.com](https://admin.microsoft.com) 、に移動して、office 365 の職場または学校のアカウントを使用してサインインします。 
     
 2. [**管理者** \> **課金**] を選択して、現在のサブスクリプションに含まれる内容を確認します。 
     - **office 365 Enterprise E5**が表示されている場合は、組織に office 365 Advanced threat Protection プラン2があります (脅威の調査と応答の機能を含みます)。 
     - **office 365 enterprise E3**または**office 365 enterprise E1**などの別のサブスクリプションが表示される場合は、「office 365 Advanced Threat Protection プラン2」を追加することを検討してください。 (これを行うには、[**サブスクリプションの追加**] を選択します。)
     
-3. In the Office 365 admin center, choose **Users** \> **Active users**.
+3. Microsoft 365 管理センターで、[**ユーザー** \>の**アクティブなユーザー**] を選択します。
     
 5. Office 365 Advanced Threat Protection プラン2ライセンスをアクティブなすべてのユーザーに割り当てます。 (こののライセンスを持っているユーザーのみが、エクスプローラなどのレポートに表示されます)。
     

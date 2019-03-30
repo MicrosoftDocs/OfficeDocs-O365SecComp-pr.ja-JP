@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: 'Office 365 Cloud App Security では、ユーザーアカウントの中断または停止解除を行うことができるガバナンスアクションがあります。 '
-ms.openlocfilehash: 10da1385f850fadf077b4e3f9e3a00e9e4629fdd
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: d162be9d4e5382c6c03c63ae1b30043edbf0295b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862449"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998870"
 ---
 # <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security でユーザー アカウントを停止または復元する
 
@@ -29,7 +29,7 @@ ms.locfileid: "30862449"
 Office 365 用の組織のユーザーアカウントのいずれかが侵害されたという警告が表示されたとします。 または、ユーザーアカウントで問題が発生したことを示す通知を受信したとします。 Office 365 Cloud App Security では、受信した通知を調査した後、ユーザーアカウントを中断してから復元することができます。
   
 > [!NOTE]
-> office 365 Cloud App Security は office 365 Enterprise E5 で利用できます。 組織で別の office 365 Enterprise サブスクリプションを使用している場合、office 365 Cloud App Security をアドオンとして購入することができます。 (全体管理者として、Office 365 管理センターで、[**課金** \>の**サブスクリプションの追加**] を選択します。)詳細については、「office 365 プラットフォームサービスの説明」を参照してください[。 office 365 セキュリティ&amp;コンプライアンスセンター](https://technet.microsoft.com/en-us/library/dn933793.aspx)で、 [office 365 for business のアドオンを購入または編集](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)します。 
+> office 365 Cloud App Security は office 365 Enterprise E5 で利用できます。 組織で別の office 365 Enterprise サブスクリプションを使用している場合、office 365 Cloud App Security をアドオンとして購入することができます。 (全体管理者として、Microsoft 365 管理センターで、[**課金** \>の**サブスクリプションの追加**] を選択します。)詳細については、「office 365 プラットフォームサービスの説明」を参照してください[。 office 365 セキュリティ&amp;コンプライアンスセンター](https://technet.microsoft.com/en-us/library/dn933793.aspx)で、 [office 365 for business のアドオンを購入または編集](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6)します。 
   
 ## <a name="to-suspend-a-user-account-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security でユーザーアカウントを中断するには
 

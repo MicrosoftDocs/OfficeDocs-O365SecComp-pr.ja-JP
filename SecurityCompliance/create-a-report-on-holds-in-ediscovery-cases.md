@@ -11,31 +11,31 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
-description: この記事のスクリプトを使用して、Office 365 セキュリティ&amp;コンプライアンスセンターの電子情報開示ケースに関連付けられているすべての保留リストに関する情報を含むレポートを生成します。
-ms.openlocfilehash: 95a960e8f76c672185e10d5b6be2a7ff2538a34b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: この記事のスクリプトを使用して、Office 365 または Microsoft 365 のコンプライアンスセンターで電子情報開示ケースに関連付けられているすべての保留リストに関する情報を含むレポートを生成します。
+ms.openlocfilehash: db5a462087dd20ed71f87efe2fd83b821654f1b9
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30297000"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000880"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Office 365 で電子情報開示ケースの保留リストのレポートを作成する
   
-この記事に記載されているスクリプトを使用すると、電子情報開示管理者と電子情報開示マネージャーは、Office 365 セキュリティ&amp;コンプライアンスセンターの電子情報開示ケースに関連付けられているすべての保留リストに関する情報を含むレポートを生成できます。このレポートには、保留リストが関連付けられているケースの名前、保留になっているコンテンツの場所、保留がクエリベースかどうかなどの情報が含まれています。保持されていないケースがある場合、スクリプトは、保留を行わないケースの一覧を含む追加のレポートを作成します。
+この記事に記載されているスクリプトを使用すると、Office 365 または Microsoft 365 のコンプライアンスセンターで電子情報開示ケースに関連付けられているすべての保留リストに関する情報を含むレポートを、電子情報開示管理者と電子情報開示マネージャーが生成できます。 このレポートには、保留リストが関連付けられているケースの名前、保留になっているコンテンツの場所、保留がクエリベースかどうかなどの情報が含まれています。 保持されていないケースがある場合、スクリプトは、保留を行わないケースの一覧を含む追加のレポートを作成します。
 
 レポートに含まれる情報の詳細については、「 [More information](#more-information) 」セクションを参照してください。 
   
 ## <a name="before-you-begin"></a>はじめに
 
-- 組織内のすべての電子情報開示ケースに関するレポートを生成するには、組織の電子情報開示管理者である必要があります。電子情報開示マネージャーの場合、レポートには、アクセスできるケースに関する情報のみが含まれます。電子情報開示のアクセス許可の詳細については、「 [Office 365 &amp;セキュリティコンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
+- 組織内のすべての電子情報開示ケースに関するレポートを生成するには、組織の電子情報開示管理者である必要があります。 電子情報開示マネージャーの場合、レポートには、アクセスできるケースに関する情報のみが含まれます。 ediscovery アクセス許可の詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
     
-- この記事のスクリプトには、最小限のエラー処理が含まれています。主な目的は、組織内の電子情報開示ケースに関連付けられている保留リストに関するレポートをすばやく作成することです。
+- この記事のスクリプトには、最小限のエラー処理が含まれています。 主な目的は、組織内の電子情報開示ケースに関連付けられている保留リストに関するレポートをすばやく作成することです。
     
 - このトピックで提供されているサンプル スクリプトは、いかなる Microsoft 標準サポート プログラムまたはサービスでもサポートされていません。サンプル スクリプトは、いかなる保証もありません。これらのサンプルに対しては、Microsoft 社は商品またはその他の何らかの目的を持つものに付随すると考えられている暗黙の責任も一切認めません。これらのサンプルは、完全にユーザーの責任において使用してください。いかなる場合でも、Microsoft 社および販売店は、これらのサンプルを使用した結果発生した損害およびこれらのサンプルを使用できなかったことによる損害に対して、商業的損失、業務の中断、企業情報の喪失、およびその他の金銭的損失等を含め、何ら制限も設けることなく一切の責任を認めません。これは、たとえ Microsoft 社がそのような損害の可能性について通知を受けていた場合でも同じです。
     
-## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a>手順 1: リモート PowerShell を使用&amp;してセキュリティコンプライアンスセンターに接続する
+## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>手順 1: Security & コンプライアンスセンター PowerShell に接続する
 
-最初の手順として、Windows PowerShell を組織&amp;のセキュリティコンプライアンスセンターに接続します。
+最初の手順として、組織のセキュリティ & コンプライアンスセンターに接続します。
   
 1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、 `ConnectSCC.ps1`のようになります。 
     
@@ -44,7 +44,7 @@ ms.locfileid: "30297000"
       $UserCredential = Get-Credential 
       $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
       Import-PSSession $Session -AllowClobber -DisableNameChecking 
-      $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Office 365 Security &amp; Compliance Center)" 
+      $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
     ```
 
 2. ローカルコンピューターで、Windows PowerShell を開き、スクリプトを保存したフォルダーに移動します。 
@@ -59,7 +59,7 @@ ms.locfileid: "30297000"
   
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>手順 2: 電子情報開示ケースに関連付けられている保留リストをレポートするスクリプトを実行する
 
-リモート PowerShell を使用してセキュリティ&amp;コンプライアンスセンターに接続した後、次の手順では、組織内の電子情報開示ケースに関する情報を収集するスクリプトを作成して実行します。 
+Security & コンプライアンスセンター PowerShell に接続した後、次の手順では、組織内の電子情報開示ケースに関する情報を収集するスクリプトを作成して実行します。 
   
 1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、CaseHoldsReport のようにします。 
     
@@ -67,7 +67,7 @@ ms.locfileid: "30297000"
 #script begin
 " " 
 write-host "***********************************************"
-write-host "   Office 365 Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
+write-host "   Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
 write-host "        eDiscovery cases - Holds report         " -foregroundColor yellow -backgroundcolor darkgreen 
 write-host "***********************************************"
 " " 
@@ -164,11 +164,11 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
 4. レポートを保存するフォルダーの完全パス名を入力し、 **enter**キーを押します。
     
     > [!TIP]
-    > スクリプトが配置されているのと同じフォルダーにレポートを保存するには、ターゲットフォルダーの入力を求めるメッセージが表示されたら、ピリオド (".") を入力します。スクリプトが配置されているフォルダー内のサブフォルダーにレポートを保存するには、サブフォルダーの名前を入力するだけです。 
+    > スクリプトが配置されているのと同じフォルダーにレポートを保存するには、ターゲットフォルダーの入力を求めるメッセージが表示されたら、ピリオド (".") を入力します。 スクリプトが配置されているフォルダー内のサブフォルダーにレポートを保存するには、サブフォルダーの名前を入力するだけです。 
   
-    このスクリプトは、組織内のすべての電子情報開示ケースに関する情報の収集を開始します。スクリプトの実行中はレポートファイルにアクセスしないでください。スクリプトが完了すると、Windows PowerShell セッションに確認メッセージが表示されます。このメッセージが表示された後、手順4で指定したフォルダー内のレポートにアクセスできます。レポートのファイル名は`CaseHoldsReport<DateTimeStamp>.csv`です。
+    このスクリプトは、組織内のすべての電子情報開示ケースに関する情報の収集を開始します。 スクリプトの実行中はレポートファイルにアクセスしないでください。 スクリプトが完了すると、Windows PowerShell セッションに確認メッセージが表示されます。 このメッセージが表示された後、手順4で指定したフォルダー内のレポートにアクセスできます。 レポートのファイル名は`CaseHoldsReport<DateTimeStamp>.csv`です。
 
-    さらでは、このスクリプトは、保留がないケースの一覧を含むレポートも作成します。このレポートのファイル名は`CaseswithNoHolds<DateTimeStamp>.csv`です。
+    さらでは、このスクリプトは、保留がないケースの一覧を含むレポートも作成します。 このレポートのファイル名は`CaseswithNoHolds<DateTimeStamp>.csv`です。
     
     CaseHoldsReport スクリプトを実行する例を次に示します。 
     
@@ -176,7 +176,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
   
 ## <a name="more-information"></a>詳細情報
 
-この記事のスクリプトを実行したときに作成されるケース保持レポートには、各ホールドに関する以下の情報が含まれています。前述のように、組織内のすべての保留リストに関する情報を返すには、電子情報開示管理者でなければなりません。ケース保持の詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターの電子情報開示ケース](ediscovery-cases.md)」を参照してください。
+この記事のスクリプトを実行したときに作成されるケース保持レポートには、各ホールドに関する以下の情報が含まれています。 前述のように、組織内のすべての保留リストに関する情報を返すには、電子情報開示管理者でなければなりません。 ケース保持の詳細については、「[電子情報開示ケース](ediscovery-cases.md)」を参照してください。
   
   - 保留の名前と、保留が関連付けられている電子情報開示ケースの名前。
     
@@ -184,7 +184,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     
   - 保留が有効であるか無効であるか。
     
-  - 保留が関連付けられている電子情報開示ケースのメンバ。ケースメンバーは、割り当てられている電子情報開示のアクセス許可に応じて、ケースを表示または管理できます。
+  - 保留が関連付けられている電子情報開示ケースのメンバ。 ケースメンバーは、割り当てられている電子情報開示のアクセス許可に応じて、ケースを表示または管理できます。
     
   - ケースが作成された日時。
     

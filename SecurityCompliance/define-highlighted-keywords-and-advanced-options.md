@@ -1,9 +1,8 @@
 ---
-title: Office 365 Advanced eDiscovery で強調表示されたキーワードと高度なオプションを定義する
+title: Office 365 の高度な電子情報開示で強調表示されたキーワードと詳細オプションを定義する
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,21 +12,21 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: 'ユーザー定義のキーワードを関連性に追加して、Office 365 の高度な電子情報開示でのタグ付けとコストパラメータを指定する際に関連ファイルを特定する方法について説明します。  '
-ms.openlocfilehash: e380f63691d30216a082a51aac406329a9d0159f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: aec9efac91cc3fb48068fca9b6b7313f829f4fe2
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220657"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999340"
 ---
-# <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery で強調表示されたキーワードと高度なオプションを定義する
+# <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示で強調表示されたキーワードと詳細オプションを定義する
 
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
   
-詳細な電子情報開示では、ユーザー定義のキーワードを関連性に追加して、タグ付けの際に関連ファイルを識別するのに役立てることができます。キーワードは、**関連性\>タグ**の指定した色で表示されます。 
+詳細な電子情報開示では、ユーザー定義のキーワードを関連性に追加して、タグ付けの際に関連ファイルを識別するのに役立てることができます。 キーワードは、**関連性\>タグ**の指定した色で表示されます。 
   
-以下に示すように、キーワードリストを追加したり、キーワードリストに割り当てられている色や関連する問題を追加したりできます。ヒントには、キーワードの説明 (存在する場合) が、二重下線で示されます。
+以下に示すように、キーワードリストを追加したり、キーワードリストに割り当てられている色や関連する問題を追加したりできます。 ヒントには、キーワードの説明 (存在する場合) が、二重下線で示されます。
   
 > [!IMPORTANT]
 > 関連性のタグ付け時にドキュメント内の関連性の強調表示とキーワードヒット結果の表示は、日本語、中国語、韓国語の2バイト文字セットでは機能しません。 
@@ -36,7 +35,7 @@ ms.locfileid: "30220657"
 
 1. [**関連性\>の関連性の設定**] タブで、[**強調表示**されたキーワード] を選択します。
     
-2. アイコンを**+** クリックしてキーワードを追加します。[**新しいキーワードの追加**] ダイアログが表示されます。 
+2. アイコンを**+** クリックしてキーワードを追加します。 [**新しいキーワードの追加**] ダイアログが表示されます。 
     
 3. [**キーワード**] にキーワードリストを入力します。キーワードはコンマで区切ります。 
     
@@ -48,7 +47,7 @@ ms.locfileid: "30220657"
     
     ![新しいキーワードの追加](media/1683a71f-0875-48fc-b4ef-01f3b0e8e8e9.png)
   
-7. 完了したら、[ **OK]** をクリックします。作成したリストがキーワードリストテーブルに追加され、編集または削除できるようになります。 
+7. 完了したら、[ **OK]** をクリックします。 作成したリストがキーワードリストテーブルに追加され、編集または削除できるようになります。 
     
     ![関連性の設定のキーワードの一覧](media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
   
@@ -68,7 +67,7 @@ ms.locfileid: "30220657"
     
     ![関連性の設定のコストのパラメーター](media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
   
-3. [**保存**] をクリックします。選択した設定が保存されます。
+3. [**保存**] をクリックします。 選択した設定が保存されます。
     
 ## <a name="see-also"></a>関連項目
 

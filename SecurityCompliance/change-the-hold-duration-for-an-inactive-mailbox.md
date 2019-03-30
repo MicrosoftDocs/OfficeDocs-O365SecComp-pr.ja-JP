@@ -13,13 +13,13 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
-description: Office 365 メールボックスが非アクティブになった後は、非アクティブなメールボックスに割り当てられているホールドまたは office 365 アイテム保持ポリシーの期間を変更できます。保持期間は、[回復可能なアイテム] フォルダー内のアイテムを保持する期間を定義します。
-ms.openlocfilehash: f51750a0e822a4786f332639203b08ba4b5e2ba7
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: Office 365 メールボックスが非アクティブになった後は、非アクティブなメールボックスに割り当てられているホールドまたは office 365 アイテム保持ポリシーの期間を変更できます。 保持期間は、[回復可能なアイテム] フォルダー内のアイテムを保持する期間を定義します。
+ms.openlocfilehash: 57b4bda5bda49785b752646174620101f8441135
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295890"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999600"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Office 365 の非アクティブなメールボックスの保持期間を変更する
 
@@ -30,13 +30,13 @@ ms.locfileid: "30295890"
   
 ## <a name="before-you-begin"></a>はじめに
 
-- 非アクティブなメールボックスに対する訴訟ホールドの保持期間を変更するには、Exchange Online PowerShell を使用する必要があります。Exchange 管理センター (EAC) を使用することはできません。ただし、Exchange Online PowerShell または EAC を使用して、インプレース保持の保持期間を変更することができます。office 365 セキュリティ&amp;コンプライアンスセンターまたはセキュリティ&amp;コンプライアンスセンターの PowerShell を使用して、office 365 アイテム保持ポリシーの保持期間を変更することができます。
+- You have to use Exchange Online PowerShell to change the hold duration for a Litigation Hold on an inactive mailbox. You can't use the Exchange admin center (EAC). But you can use Exchange Online PowerShell or the EAC to change the hold duration for an In-Place Hold. セキュリティ/コンプライアンスセンターまたは security & コンプライアンスセンター PowerShell を使用して、Office 365 アイテム保持ポリシーの保持期間を変更できます。
     
-- Exchange Online powershell または Security &amp;コンプライアンスセンター powershell に接続するには、次のいずれかのトピックを参照してください。
+- Exchange Online powershell または Security & コンプライアンスセンター powershell に接続するには、次のいずれかのトピックを参照してください。
     
   - [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
-  - [Office 365 セキュリティ&amp;コンプライアンス センター PowerShell への接続](https://go.microsoft.com/fwlink/?linkid=799771)
+  - [Office 365 Security& コンプライアンスセンター PowerShell への接続](https://go.microsoft.com/fwlink/?linkid=799771)
     
 - 電子情報開示ケースに関連付けられているホールドは無限ホールド、つまり変更できるホールド期間がない点にご注意ください。アイテムは、ホールドが削除されて非アクティブなメールボックスが削除されるまで無限に保持されます。
     
@@ -52,7 +52,7 @@ Exchange Online PowerShell で次のコマンドを実行して、組織内の�
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,LitigationHoldDuration,InPlaceHolds
 ```
    
-**LitigationHoldEnabled**プロパティの値が**True の場合**は、非アクティブなメールボックスが訴訟ホールドの対象であることを示します。インプレースホールド、電子情報開示の保持、または Office 365 アイテム保持ポリシーが非アクティブなメールボックスに配置されている場合、保留またはアイテム保持ポリシーの GUID が**InPlaceHolds**プロパティの値として表示されます。たとえば、以下は5つの非アクティブなメールボックスの結果を示しています。 
+**LitigationHoldEnabled** プロパティの値が **True** になっている場合、非アクティブなメールボックスは訴訟ホールド中ということになります。 非アクティブなメールボックスにインプレース ホールド、電子情報開示ホールド、または Office 365 アイテム保持ポリシーが設定されているときは、このホールドまたはアイテム保持ポリシーの GUID が **InPlaceHolds** プロパティの値として表示されます。 たとえば、以下は5つの非アクティブなメールボックスの結果を示しています。 
   
 ||
 |:-----|
@@ -99,10 +99,10 @@ InPlaceHolds          : {UniH7d895d48-7e23-4a8d-8346-533c3beac15d}
 |**非アクティブなメールボックス**|**ホールドの種類**|**非アクティブなメールボックスのホールドを識別する方法**|
 |:-----|:-----|:-----|
 |Ann Beebe  <br/> |訴訟ホールド  <br/> |*LitigationHoldEnabled*  プロパティが  `True` に設定されています。  <br/> |
-|Pilar Pinilla  <br/> |インプレース ホールド  <br/> |*InPlaceHolds*  プロパティには非アクティブなメールボックスに設定されたインプレース ホールドの GUID が含まれています。ID がプレフィックスから始まっていないため、これはインプレース ホールドだとわかります。  <br/> Exchange Online PowerShell の`Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL`コマンドを使用して、非アクティブなメールボックスのインプレース保持に関する情報を取得できます。  <br/> |
-|Mario Necaise  <br/> |セキュリティ&amp; /コンプライアンスセンターの組織全体にわたる Office 365 アイテム保持ポリシー  <br/> |*InPlaceHolds*プロパティが空になっています。これは、1つ以上の組織全体 (または Exchange 全体) の Office 365 アイテム保持ポリシーが非アクティブなメールボックスに適用されることを示します。この場合、Exchange Online PowerShell で`Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds`コマンドを実行して、組織全体の Office 365 保持ポリシーの guid の一覧を取得できます。Exchange メールボックスに適用される組織全体のアイテム保持ポリシーの GUID は、 `mbx`接頭辞で始まります。例`mbxa3056bb15562480fadb46ce523ff7b02`を示します。<br/> <br/>非アクティブなメールボックスに適用されている Office 365 アイテム保持ポリシーを識別するには&amp; 、セキュリティコンプライアンスセンターの PowerShell で次のコマンドを実行します。  <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>
-|Carol Olson  <br/> |特定のメールボックスに適用さ&amp;れるセキュリティコンプライアンスセンターの Office 365 アイテム保持ポリシー  <br/> |*InPlaceHolds*  プロパティに、非アクティブなメールボックスに適用されている Office 365 アイテム保持ポリシーの GUID が含まれています。GUID が  `mbx` プレフィックスで始まっているため、これは特定のメールボックスに適用されたアイテム保持ポリシーであることがわかります。非アクティブなメールボックスに適用されている保持ポリシーの GUID が  `skp` プレフィックスで始まる場合、保持ポリシーが Skype for Business の会話に適用されることを示していることに注意してください。  <br/><br/> 非アクティブなメールボックスに適用されている Office 365 アイテム保持ポリシーを識別するには&amp; 、セキュリティコンプライアンスセンターの PowerShell で次のコマンドを実行します。<br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name` <br/><br/>このコマンドを実行する`mbx`場合`skp`は、またはのプレフィックスを必ず削除してください。  <br/> |
-|Abraham McMahon  <br/> |セキュリティ&amp; /コンプライアンスセンターの電子情報開示ケースホールド  <br/> |*InPlaceHolds*  プロパティに、非アクティブなメールボックスに設定されている電子情報開示ケース ホールドの GUID が含まれています。GUID が  `UniH` プレフィックスで始まっているため、これは電子情報開示ケース ホールドであることがわかります。  <br/> セキュリティ&amp;コンプライアンスセンターの`Get-CaseHoldPolicy` PowerShell でコマンドレットを使用すると、非アクティブなメールボックスの保留リストが関連付けられている電子情報開示ケースに関する情報を取得できます。たとえば、非アクティブなメールボックスに`Get-CaseHoldPolicy <hold GUID without prefix> | FL Name`あるケースホールドの名前を表示するには、コマンドを実行します。このコマンドを実行する`UniH`場合は、必ずプレフィックスを削除してください。<br/><br/> 非アクティブなメールボックスのホールドが関連付けられている電子情報開示ケースを特定するには、次のコマンドを実行します。  <br/><br/> `$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/> `Get-ComplianceCase $CaseHold.CaseId | FL Name`<br/><br/><br/> **注:** 非アクティブなメールボックスに対して電子情報開示保持を使用することはお勧めしません。これは、電子情報開示ケースは法的問題に関連する特定の時間制限のあるケースを対象としているためです。いずれかの時点で、訴訟ケースが終了し、ケースに関連付けられている保留リストが削除され、電子情報開示ケースがクローズされる (または削除される) 場合があります。実際には、非アクティブなメールボックスに配置されたホールドが電子情報開示ケースに関連付けられていて、保留が解除されるか、または電子情報開示ケースが閉じられるか削除されると、非アクティブなメールボックスは完全に削除されます。 
+|Pilar Pinilla  <br/> |インプレース ホールド  <br/> |*InPlaceHolds*  プロパティには非アクティブなメールボックスに設定されたインプレース ホールドの GUID が含まれています。ID がプレフィックスから始まっていないため、これはインプレース ホールドだとわかります。  <br/> Exchange Online PowerShell で  `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` コマンドを使用して、非アクティブのメールボックスのインプレース ホールドについての情報を取得できます。  <br/> |
+|Mario Necaise  <br/> |セキュリティ & コンプライアンスセンターの組織全体にわたる Office 365 アイテム保持ポリシー  <br/> |*InPlaceHolds*  プロパティが空になっています。 これは、1 つ以上の組織全体 (または Exchange 全体) の Office 365 アイテム保持ポリシーが非アクティブなメールボックスに適用されていることを示します。 この場合は、Exchange Online PowerShell で  `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` command in Exchange Online PowerShell to get a list of the GUIDs for organization-wide Office 365 retention policies. The GUID for organization-wide retention policies that are applied to Exchange mailboxes start with the  `mbx` prefix; for example  `mbxa3056bb15562480fadb46ce523ff7b02` プレフィックスで始まります。  <br/> <br/>非アクティブなメールボックスに適用されている Office 365 アイテム保持ポリシーを識別するには、Security & コンプライアンスセンターの PowerShell で次のコマンドを実行します。  <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>
+|Carol Olson  <br/> |特定のメールボックスに適用されるセキュリティ & コンプライアンスセンターの Office 365 アイテム保持ポリシー  <br/> |*InPlaceHolds*  プロパティに、非アクティブなメールボックスに適用されている Office 365 アイテム保持ポリシーの GUID が含まれています。GUID が  `mbx` プレフィックスで始まっているため、これは特定のメールボックスに適用されたアイテム保持ポリシーであることがわかります。非アクティブなメールボックスに適用されている保持ポリシーの GUID が  `skp` プレフィックスで始まる場合、保持ポリシーが Skype for Business の会話に適用されることを示していることに注意してください。  <br/><br/> 非アクティブなメールボックスに適用されている Office 365 アイテム保持ポリシーを識別するには、Security & コンプライアンスセンターの PowerShell で次のコマンドを実行します。<br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name` <br/><br/>このコマンドを実行する場合は、必ず、 `mbx` または  `skp` プレフィックスを削除してください。  <br/> |
+|Abraham McMahon  <br/> |セキュリティ & コンプライアンスセンターにおける電子情報開示ケースホールド  <br/> |*InPlaceHolds*  プロパティに、非アクティブなメールボックスに設定されている電子情報開示ケース ホールドの GUID が含まれています。GUID が  `UniH` プレフィックスで始まっているため、これは電子情報開示ケース ホールドであることがわかります。  <br/> Security & コンプライアンスセンター `Get-CaseHoldPolicy` PowerShell のコマンドレットを使用して、非アクティブなメールボックスの保留リストが関連付けられている電子情報開示ケースに関する情報を取得できます。 For example, you can run the command  `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` to display the name of the case hold that's on the inactive mailbox. Be sure to remove the  `UniH` プレフィックスを削除してください。  <br/><br/> 非アクティブなメールボックスのホールドが関連付けられている電子情報開示ケースを特定するには、次のコマンドを実行します。  <br/><br/> `$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/> `Get-ComplianceCase $CaseHold.CaseId | FL Name`<br/><br/><br/> **注:** 非アクティブなメールボックスに対して電子情報開示保持を使用することはお勧めしません。 That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. いずれかの時点で、訴訟ケースが終了し、ケースに関連付けられている保留リストが削除され、電子情報開示ケースがクローズされる (または削除される) 場合があります。 実際には、非アクティブなメールボックスに配置されたホールドが電子情報開示ケースに関連付けられていて、保留が解除されるか、または電子情報開示ケースが閉じられるか削除されると、非アクティブなメールボックスは完全に削除されます。 
 
 Office 365 アイテム保持ポリシーの詳細については、「[アイテム保持ポリシーの概要](retention-policies.md)」を参照してください。
   
@@ -129,23 +129,23 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
   
 #### <a name="use-the-eac-to-change-the-hold-duration"></a>EAC を使用して保持期間を変更する
 
-1. 変更するインプレースホールドの名前がわかっている場合は、次の手順に進みます。それ以外の場合は、次のコマンドを実行して、非アクティブなメールボックスに配置されているインプレースホールドの名前を取得します。[手順 1](#step-1-identify-the-holds-on-an-inactive-mailbox)で取得したインプレースホールドの GUID を使用します。
+1. 変更するインプレース ホールドの名前が分かっている場合は、次の手順に進みます。 そうでない場合は、次のコマンドを実行して、非アクティブなメールボックスに設定されたインプレース ホールドの名前を取得します。 [手順 1](#step-1-identify-the-holds-on-an-inactive-mailbox)で取得したインプレースホールドの GUID を使用します。
 
     ```
     Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
     ```
 
-2. EAC で、[**コンプライアンス管理** \> ]**の [インプレース電子情報&amp;開示の保留**] に移動します。
+2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
 3. 変更するインプレースホールドを選択し、[編集] **** ![編集アイコン](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)をクリックします。
     
-4. [**インプレースの電子情報開示&amp;保持**のプロパティ] ページで、[**インプレースホールド**] をクリックします。 
+4. On the **In-Place eDiscovery &amp; Hold** properties page, click **In-Place Hold**. 
     
 5. 現在の保持期間に基づいて、次のいずれかの操作を実行します。
     
 1. 無制限にアイテムを保持する場合は、 **[無期限に保持]** をクリックします。 
     
-2. 特定の期間のアイテムを保持するために **、[受信日を基準**としてアイテムを保持する日数を指定する] をクリックします。アイテムを保持する日数を入力します。 
+2. 特定の期間のアイテムを保持するために **、[受信日を基準**としてアイテムを保持する日数を指定する] をクリックします。 Type the number of days that you want to hold items for. 
     
     ![インプレース ホールド期間の変更に関するスクリーン ショット](media/cfcfd92a-9d65-40c0-90ef-ab72697b0166.png)
   
@@ -153,7 +153,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
     
 #### <a name="use-exchange-online-powershell-to-change-the-hold-duration"></a>Exchange Online PowerShell を使用して保持期間を変更する
 
-1. 変更するインプレースホールドの名前がわかっている場合は、次の手順に進みます。それ以外の場合は、次のコマンドを実行して、非アクティブなメールボックスに配置されているインプレースホールドの名前を取得します。[手順 1](#step-1-identify-the-holds-on-an-inactive-mailbox)で取得したインプレースホールドの GUID を使用します。
+1. 変更するインプレース ホールドの名前が分かっている場合は、次の手順に進みます。 そうでない場合は、次のコマンドを実行して、非アクティブなメールボックスに設定されたインプレース ホールドの名前を取得します。 [手順 1](#step-1-identify-the-holds-on-an-inactive-mailbox)で取得したインプレースホールドの GUID を使用します。
 
     ```
     Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name

@@ -1,5 +1,5 @@
 ---
-title: スクリプトを使用して Office 365 セキュリティ&amp;コンプライアンスセンターの電子情報開示ケースの保留リストにユーザーを追加する
+title: スクリプトを使用してセキュリティ & コンプライアンスセンターの電子情報開示ケースの保留リストにユーザーを追加する
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 - MED150
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
-description: メールボックスと OneDrive for business サイトを Office 365 セキュリティ&amp;コンプライアンスセンターの電子情報開示ケースに関連付けられた新しい保留リストにすばやく追加するためのスクリプトを実行します。
-ms.openlocfilehash: f71c82a830f029f8137a60d8329e30be0e7eeb46
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: メールボックスと OneDrive for business サイトをセキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられた新しい保留リストにすばやく追加するためのスクリプトを実行します。
+ms.openlocfilehash: 992fddad3bfbc9f08855bd85d87b0edf92b3cdbe
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935242"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001190"
 ---
-# <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-office-365-security-amp-compliance-center"></a>スクリプトを使用して Office 365 セキュリティ&amp;コンプライアンスセンターの電子情報開示ケースの保留リストにユーザーを追加する
+# <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>スクリプトを使用してセキュリティ & コンプライアンスセンターの電子情報開示ケースの保留リストにユーザーを追加する
 
-Office 365 セキュリティ&amp;コンプライアンスセンターでは、電子情報開示ケースの作成と管理に関連する時間のかかるタスクを自動化できる、多くの Windows PowerShell コマンドレットが提供されています。 現時点では、セキュリティ&amp;コンプライアンスセンターの電子情報開示ケースツールを使用して、大量の保管担当者コンテンツの場所を保持することにより、時間と準備が行われます。 たとえば、ホールドを作成する前に、保留にする各 OneDrive for business サイトの URL を収集する必要があります。 その後、保持するユーザーごとに、メールボックスとその OneDrive for business サイトを保留リストに追加する必要があります。 セキュリティ&amp; /コンプライアンスセンターの今後のリリースでは、この操作が簡単になりました。 その後、この記事のスクリプトを使用してこのプロセスを自動化できます。
+Security & コンプライアンスセンターでは、電子情報開示ケースの作成と管理に関連する時間のかかるタスクを自動化できる、多くの Windows PowerShell コマンドレットが提供されています。 現時点では、Security & コンプライアンスセンターの電子情報開示ケースツールを使用して、保管担当者のコンテンツの場所が大量に保持されるようにするには、時間と準備が必要です。 たとえば、ホールドを作成する前に、保留にする各 OneDrive for business サイトの URL を収集する必要があります。 その後、保持するユーザーごとに、メールボックスとその OneDrive for business サイトを保留リストに追加する必要があります。 セキュリティ & コンプライアンスセンターの今後のリリースでは、この操作が簡単になりました。 その後、この記事のスクリプトを使用してこのプロセスを自動化できます。
   
 スクリプトによって、組織の個人用サイトドメインの名前 (たとえば、URL https://contoso-my.sharepoint.com)内の**contoso** 、既存の電子情報開示ケースの名前、ケースに関連付けられた新しい保留の名前、必要なユーザーの電子メールアドレスの一覧) の入力を求めるプロンプトが表示されます。を使用して、クエリベースの保持を作成する場合に使用する検索クエリを保持します。 次に、スクリプトは、リスト内の各ユーザーの OneDrive for business サイトの URL を取得し、新しいホールドを作成して、リスト内の各ユーザーのメールボックスと onedrive for business サイトを保留リストに追加します。 このスクリプトは、新しいホールドに関する情報を含むログファイルも生成します。 
   
@@ -35,11 +35,11 @@ Office 365 セキュリティ&amp;コンプライアンスセンターでは、�
   
 [手順 3: スクリプトを実行して保留リストを作成し、ユーザーを追加する](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step3)
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
-- 手順3でスクリプトを実行するには、セキュリティ&amp;コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。また、SharePoint Online のグローバル管理者である必要があります。 詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
+- 手順3でスクリプトを実行するには、Security & コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。また、SharePoint Online のグローバル管理者である必要があります。 詳細については、「 [Office 365 セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
     
-- セキュリティ&amp; /コンプライアンスセンターの電子情報開示ケースに関連付けられている保留リストには、最大1000のメールボックスと100サイトを追加できます。 保持するユーザーに OneDrive for business サイトが含まれている場合は、この記事のスクリプトを使用して、最大100ユーザーを保留リストに追加できます。 
+- セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられている保留リストには、最大1000のメールボックスと100サイトを追加できます。 保持するユーザーに OneDrive for business サイトが含まれている場合は、この記事のスクリプトを使用して、最大100ユーザーを保留リストに追加できます。 
     
 - 手順2で作成したユーザーの一覧と、手順3のスクリプトを同じフォルダーに保存するようにしてください。 これにより、スクリプトをより簡単に実行できるようになります。
     
@@ -75,7 +75,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 この手順でスクリプトを実行すると、次の情報を入力するように求めるメッセージが表示されます。 スクリプトを実行する前に、この情報を用意しておいてください。
   
-- **ユーザーの資格情報**-スクリプトは、資格情報を使用して、 &amp;リモート PowerShell を使用してセキュリティコンプライアンスセンターに接続します。 また、これらの資格情報を使用して SharePoint Online にアクセスし、ユーザーリストの OneDrive for business url を取得します。
+- **ユーザーの資格情報**-スクリプトは、資格情報を使用して、リモート PowerShell を使用して Security & コンプライアンスセンターに接続します。 また、これらの資格情報を使用して SharePoint Online にアクセスし、ユーザーリストの OneDrive for business url を取得します。
     
 - **個人用サイトのドメインの名前**-個人用サイトのドメインは、組織内のすべての OneDrive for business サイトを含むドメインです。 たとえば、個人用サイトのドメインの URL がの場合**https://contoso-my.sharepoint.com**は、スクリプトによっ`contoso`て、個人用サイトのドメインの名前を入力するように求めるメッセージが表示されます。 
     
@@ -85,7 +85,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
     
 - クエリ**ベースの保持の検索クエリ**-指定した検索条件に一致するコンテンツのみが保持されるように、クエリベースの保持を作成できます。 すべてのコンテンツを保持するには、検索クエリの入力を求められたときに**enter**キーを押します。 
     
-- **ホールドをオンにするかどうか**を指定すると、作成後にスクリプトでホールドを有効にしたり、スクリプトでホールドを有効にすることができます。 スクリプトでホールドを有効にしていない場合は、セキュリティ&amp;コンプライアンスセンターで後で有効にするか、次の PowerShell コマンドを実行します。 
+- **ホールドをオンにするかどうか**を指定すると、作成後にスクリプトでホールドを有効にしたり、スクリプトでホールドを有効にすることができます。 スクリプトでホールドを有効にしていない場合は、後でセキュリティ & コンプライアンスセンターで有効にするか、次の PowerShell コマンドを実行します。 
     
   ```
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
@@ -105,12 +105,12 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
   #script begin
   " " 
   write-host "***********************************************"
-  write-host "   Office 365 Security &amp; Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
+  write-host "   Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
   write-host "   eDiscovery cases - Add users to a hold   " -foregroundColor yellow -backgroundcolor darkgreen 
   write-host "***********************************************"
   " " 
   # Get user credentials &amp; Connect to Office 365 SCC, SPO
-  $credentials = Get-Credential -Message "Specify your credentials to connect to the Office 365 Security &amp; Compliance Center and SharePoint Online"
+  $credentials = Get-Credential -Message "Specify your credentials to connect to the Security & Compliance Center and SharePoint Online"
   $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://ps.compliance.protection.outlook.com/powershell-liveid" -Credential $credentials -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
   $a = Import-PSSession $s -AllowClobber
       if (!$s)
@@ -284,7 +284,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 4. スクリプトによってプロンプトが表示される情報を入力します。
     
-    このスクリプトは、Security & コンプライアンスセンター PowerShell に接続し、電子情報開示ケースで新しいホールドを作成し、リスト内のユーザーのメールボックスと OneDrive for business を追加します。 セキュリティ&amp; /コンプライアンスセンターの [**電子情報開示**] ページで、新しいホールドを表示することができます。 
+    このスクリプトは、Security & コンプライアンスセンター PowerShell に接続し、電子情報開示ケースで新しいホールドを作成し、リスト内のユーザーのメールボックスと OneDrive for business を追加します。 セキュリティ & コンプライアンスセンターの [**電子情報開示**] ページに移動して、新しいホールドを表示することができます。 
     
 スクリプトの実行が完了すると、次のログファイルが作成され、スクリプトが配置されているフォルダーに保存されます。
   

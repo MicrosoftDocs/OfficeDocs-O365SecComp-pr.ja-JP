@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Office 365 メールボックスに配置できるさまざまな種類の保留リストを識別する方法について説明します。 これらの種類には、訴訟ホールド、電子情報開示の保持、および Office 365 アイテム保持ポリシーが含まれます。 ユーザーが組織全体のアイテム保持ポリシーから除外されているかどうかを確認することもできます。
-ms.openlocfilehash: fa037e4e4f6a0c4b419645bdc3242fdc3d6db7db
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: e0c1c54cedfc7494233f12f043bb6d033576eca8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900156"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001220"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Exchange Online メールボックスに適用されている保留の種類を特定する方法
 
@@ -28,7 +28,7 @@ Office 365 には、組織がメールボックスの内容が完全に削除さ
 
 - **訴訟ホールド**-Exchange Online のユーザーメールボックスに適用されるホールド。
 
-- **電子**情報開示の保持-セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられている保留。 電子情報開示の保持は、ユーザーのメールボックス、および対応する Office 365 グループおよび Microsoft Teams のメールボックスに適用できます。
+- **電子情報開示の保持**-セキュリティ/コンプライアンスセンターの電子情報開示ケースに関連付けられた保留リスト。 電子情報開示の保持は、ユーザーのメールボックス、および対応する Office 365 グループおよび Microsoft Teams のメールボックスに適用できます。
 
 - インプレース**保持**-exchange Online の exchange 管理センターでインプレース電子情報開示 & ホールドツールを使用して、ユーザーのメールボックスに適用されるホールド。
 
@@ -72,9 +72,9 @@ Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
 |ホールドの種類  |値の例  |保留リストを識別する方法  |
 |---------|---------|---------|
 |訴訟ホールド     |    `True`     |     *LitigationHoldEnabled*プロパティがに`True`設定されている場合、メールボックスに対して訴訟ホールドが有効になります。    |
-|電子情報開示の保留     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   *InPlaceHolds プロパティ*には、セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられている保留の GUID が含まれています。 GUID は`UniH`プレフィックス (統合された保持を示す) で始まっているため、これが電子情報開示の保留であることを伝えることができます。      |
-|インプレース ホールド     |     `c0ba3ce811b6432a8751430937152491` <br/> または <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     *InPlaceHolds*プロパティには、メールボックスに配置されたインプレースホールドの GUID が含まれています。 GUID がプレフィックスで始まっていないか、 `cld`プレフィックスで始まっていないため、これはインプレースホールドであると判断できます。     |
-|特にメールボックスに適用される Office 365 アイテム保持ポリシー     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> または <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     InPlaceHolds プロパティには、メールボックスに適用される特定の場所保持ポリシーの guid が含まれています。 GUID は`mbx`または`skp`プレフィックスで始まっているため、アイテム保持ポリシーを識別できます。 プレフィックス`skp`は、アイテム保持ポリシーがユーザーのメールボックス内の Skype for business の会話に適用されることを示します。    |
+|電子情報開示の保留     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   *InPlaceHolds プロパティ*には、セキュリティ/コンプライアンスセンターの電子情報開示ケースに関連付けられている保留リストの GUID が含まれています。 GUID は`UniH`プレフィックス (統合された保持を示す) で始まっているため、これが電子情報開示の保留であることを伝えることができます。      |
+|インプレース ホールド     |     `c0ba3ce811b6432a8751430937152491` <br/> or <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     *InPlaceHolds*プロパティには、メールボックスに配置されたインプレースホールドの GUID が含まれています。 GUID がプレフィックスで始まっていないか、 `cld`プレフィックスで始まっていないため、これはインプレースホールドであると判断できます。     |
+|特にメールボックスに適用される Office 365 アイテム保持ポリシー     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> or <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     InPlaceHolds プロパティには、メールボックスに適用される特定の場所保持ポリシーの guid が含まれています。 GUID は`mbx`または`skp`プレフィックスで始まっているため、アイテム保持ポリシーを識別できます。 プレフィックス`skp`は、アイテム保持ポリシーがユーザーのメールボックス内の Skype for business の会話に適用されることを示します。    |
 |組織全体の Office 365 アイテム保持ポリシーから除外されます。     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     メールボックスが組織全体の Office 365 アイテム保持ポリシーから除外されている場合、メールボックスが除外されるアイテム保持ポリシーの GUID は InPlaceHolds プロパティに表示され`-mbx` 、プレフィックスで識別されます。    |
 
 ### <a name="get-organizationconfig"></a>Get-OrganizationConfig
@@ -137,7 +137,7 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold | FL Name,ExchangeLocation
 ```
 
-security & コンプライアンスセンター powershell に接続するには、「 [connect to Office 365 Security & コンプライアンスセンター powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)」を参照してください。
+security & コンプライアンスセンター powershell に接続するには、「 [connect to security & コンプライアンスセンター powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)」を参照してください。
 
 ### <a name="in-place-holds"></a>インプレース保持
 

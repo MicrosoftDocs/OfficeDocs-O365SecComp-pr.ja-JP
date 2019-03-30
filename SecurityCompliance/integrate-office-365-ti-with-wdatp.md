@@ -15,12 +15,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: Windows Defender advanced threat protection を使用して Office 365 advanced threat protection を統合し、より詳細な脅威管理情報を表示します。
-ms.openlocfilehash: bbbb42c9d0f37ab33323b2fa1dd071bd5ee16829
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 832b9c6bc600366e1ed6b7c6e60442bec8b5002c
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30523981"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998960"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-windows-defender-advanced-threat-protection"></a>Windows Defender advanced threat protection を使用して Office 365 advanced threat protection を統合する
 
@@ -42,7 +42,7 @@ ms.locfileid: "30523981"
     
 ## <a name="to-integrate-office-365-advanced-threat-protection-with-windows-defender-atp"></a>Office 365 Advanced Threat Protection を Windows Defender ATP と統合するには
 
-office 365 advanced threat protection with windows defender advanced threat protection は、office 365 Security & コンプライアンスセンターと windows defender advanced threat protection ポータルの両方を使用してセットアップされます。
+Office 365 advanced threat protection with windows defender advanced threat protection は、Security & コンプライアンスセンターと windows defender advanced threat protection ポータルの両方を使用して設定されています。
   
 1. office 365 全体管理者またはセキュリティ管理者として[https://protection.office.com](https://protection.office.com) 、に移動して、office 365 の職場または学校アカウントでサインインします。 
     

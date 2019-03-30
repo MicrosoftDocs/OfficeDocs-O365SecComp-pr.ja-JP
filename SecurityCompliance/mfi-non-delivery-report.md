@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: 管理者は、Office 365 Security & コンプライアンスセンターのメールフローダッシュボードの配信不能レポートについて学習できます。
+description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードの配信不能レポートについて学習できます。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7786e2667f268566d189d4f09acd937eacb2c225
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: 21d9b08330ddb5832600431f0d60179c7a157177
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722955"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000060"
 ---
 # <a name="non-delivery-report"></a>配信不能レポート
 
@@ -24,7 +24,7 @@ ms.locfileid: "30722955"
 
 **配信不能レポート**には、組織内のユーザーの配信不能レポート (ndr またはバウンスメッセージとも呼ばれる) で最も発生したエラーコードが表示されます。 このレポートは ndr の詳細を表示することを目的としているため、問題のトラブルシューティングを行うことができます。
 
-![Office 365 Security & コンプライアンスセンターのメールフローダッシュボードの配信不能レポート](media/non-delivery-report-selected.png)
+![セキュリティ & コンプライアンスセンターのメールフローダッシュボードの配信不能レポート](media/non-delivery-report-selected.png)
 
 [**データの表示]** をクリックすると、すべての NDR コードまたは特定のコードに関する情報を表示できます。 また、次の図に示すように、[**詳細テーブルの表示**] をクリックして、より詳細なビューを表示することもできます。
 

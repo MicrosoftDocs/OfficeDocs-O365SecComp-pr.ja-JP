@@ -14,14 +14,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 次のクイックスタートガイドを使用して、Office 365 Advanced Threat Protection (ATP) が組織に合わせて設定および構成されていることを確認できます。
-ms.openlocfilehash: 5aecbdb63f30a620812de44907b29dcae838ba36
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: a071c626327aa7d0055df522e8fec5ebe41d6a83
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693300"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999400"
 ---
-# <a name="quick-start-guide-set-up-office-365-advanced-threat-protection"></a>クイックスタートガイド: Office 365 Advanced Threat Protection のセットアップ
+# <a name="quick-start-guide-set-up-office-365-advanced-threat-protection"></a>クイック スタート ガイド: Set up Office 365 Advanced Threat Protection のセットアップ
 
 ここでは、Office 365 Advanced Threat Protection (ATP) が組織に対して設定されていることを確認するためのチェックリストとして使用できる、クイックスタートガイドを紹介します。 Office 365 で脅威を保護するのが初めての場合、またはどこから始めるべきかがわからない場合は、次のガイダンスを出発点としてご利用ください。 
 
@@ -44,12 +44,12 @@ ms.locfileid: "30693300"
 
 ## <a name="part-1---anti-malware"></a>パート 1-マルウェア対策
 
-1. [Office 365 セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**脅威管理** > **ポリシー** > の**マルウェア対策**] を選択します。
+1. [セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**脅威管理** > **ポリシー** > の**マルウェア対策**] を選択します。
 2. [**既定**のポリシー] をダブルクリックし、[**設定**] を選択します。
 3. 次の設定を指定します。
     - [**マルウェア検出の応答**] セクションで、既定の設定の [**いいえ**] をそのまま使用します。
     - [**一般的な添付ファイルの種類のフィルター** ] セクションで、 **[オン**] を選択します。
-4. **[保存]** をクリックします。
+4. [**保存**] をクリックします。
 
 マルウェア対策ポリシーオプションの詳細については、「[マルウェア対策ポリシーを構成](configure-anti-malware-policies.md)する」を参照してください。
 
@@ -59,7 +59,7 @@ ms.locfileid: "30693300"
 
 ### <a name="atp-safe-attachments-policies"></a>ATP の安全な添付ファイルポリシー
 
-1. [Office 365 セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**脅威管理** > **ポリシー** > **ATP 安全添付ファイル**] を選択します。
+1. [セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**脅威管理** > **ポリシー** > **ATP 安全添付ファイル**] を選択します。
 2. [ **SharePoint、OneDrive、Microsoft Teams の ATP を有効にする**] オプションを選択します。
 3. [**電子メールの添付ファイルを保護**する] セクションで**+**、プラス記号 () をクリックします。
 4. 次の設定を指定します。
@@ -67,7 +67,7 @@ ms.locfileid: "30693300"
     - [応答] セクションで、[**ブロック**] を選択します。
     - [**添付ファイルのリダイレクト**] セクションで、[**リダイレクトを有効にする**] オプションを選択し、検出されたファイルを確認する組織のセキュリティ管理者またはオペレーターの電子メールアドレスを指定します。
     - [**適用先**] セクションで、[**受信者ドメイン**] を選択します。 次に、ドメインを選択し、[**追加**] を選択して、[ **OK]** をクリックします。
-5. **[保存]** をクリックします。
+5. [**保存**] をクリックします。
 6. (推奨の追加手順)グローバル管理者または SharePoint Online 管理者は、 **[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** コマンドレットを実行して、Office 365 環境の**DisallowInfectedFileDownload**パラメーターを*true*に設定します。 (これにより、ユーザーが悪意を持って検出されたファイルを開く、移動、コピー、または共有できなくなります)。  
 
 詳細については、「 [office 365 の atp の安全な添付ファイルのポリシーをセットアップ](set-up-atp-safe-attachments-policies.md)する」および「 [SharePoint、OneDrive、Microsoft Teams 用の office 365 ATP を有効](turn-on-atp-for-spo-odb-and-teams.md)にする」を参照してください。
@@ -76,7 +76,7 @@ ms.locfileid: "30693300"
 
 ATP の安全なリンクを設定するには、既定のポリシーを確認し、ポリシーを追加します。
 
-1. [Office 365 セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**脅威管理** > **ポリシー** > **ATP セーフリンク**] を選択します。
+1. [セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**脅威管理** > **ポリシー** > **ATP セーフリンク**] を選択します。
 2. [**既定**のポリシー] をダブルクリックします。
 3. [**安全なリンクの使用**] セクションで、[ **office 365 ProPlus、office for iOS**、および Android] オプションをオンにして、[**保存**] をクリックします。
 4. [**特定の受信者に適用されるポリシー** ] セクションで、プラス**+** 記号 () をクリックします。
@@ -88,13 +88,13 @@ ATP の安全なリンクを設定するには、既定のポリシーを確認�
         - **組織内で送信される電子メールメッセージに安全なリンクを適用する**
         - **ユーザーが元の URL への安全なリンクをクリックできないようにする**
     - [**適用先**] セクションで、[**受信者ドメイン**] を選択します。 次に、ドメインを選択し、[**追加**] を選択して、[ **OK]** をクリックします。
-6. **[保存]** をクリックします。
+6. [**保存**] をクリックします。
 
 詳細については、「 [Office 365 ATP 安全リンクポリシー](set-up-atp-safe-links-policies.md)のセットアップ」を参照してください。 
 
 ## <a name="part-3---anti-phishing"></a>パート 3-フィッシング対策 
 
-1. [Office 365 セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**脅威管理** > **ポリシー** > **ATP のフィッシング対策**] を選択します。
+1. [セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**脅威管理** > **ポリシー** > **ATP のフィッシング対策**] を選択します。
 2. [**既定のポリシー**] をクリックします。
 3. [**偽装**] セクションで、[**編集**] をクリックし、次の設定を指定します。
     -  [**保護するユーザーの追加**] タブで、[保護] をオンにします。 次に、組織の取締役会のメンバー、CEO、CFO、その他のシニアリーダーなどのユーザーを追加します。 (個々の電子メールアドレスを入力するか、クリックしてリストを表示することができます。)
@@ -112,12 +112,12 @@ ATP の安全なリンクを設定するには、既定のポリシーを確認�
 
 ## <a name="part-4---anti-spam"></a>パート 4-スパム対策
 
-1. [Office 365 セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**脅威管理** > **ポリシー** > のスパム**対策**] を選択します。
+1. [セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**脅威管理** > **ポリシー** > のスパム**対策**] を選択します。
 2. [**カスタム**] タブで、[**カスタム設定**] をオンにします。
 3. [**既定のスパムフィルターポリシー**] を展開し、[**ポリシーの編集**] をクリックして、次の設定を指定します。
     - [**スパムと一括操作**] セクションで、しきい値を5または6に設定します。
     - [**許可するリスト**] セクションで、許可された送信者とドメインを確認し、必要に応じて編集します。
-4. **[保存]** をクリックします。
+4. [**保存**] をクリックします。
 
 スパム対策ポリシーオプションの詳細については、「[スパム対策](configure-the-anti-spam-policies.md)ポリシーを構成する」を参照してください。
 

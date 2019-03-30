@@ -13,13 +13,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Office 365 のコンテンツを保持する保持ラベルを作成する場合、保持期間の終了時に廃棄のレビューを開始することを選択できます。
-ms.openlocfilehash: 5c55b842045eefd42745486c603e34f6498b3bac
-ms.sourcegitcommit: 07a4f9a8888756e05cd67ca24f6121b2a4e9f464
+description: Microsoft 365 のコンテンツを保持する保持ラベルを作成する場合、保持期間の終了時に廃棄のレビューを開始することを選択できます。
+ms.openlocfilehash: 1828f4055e9048260db7d16df8ad87db36438211
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "30512662"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997263"
 ---
 # <a name="overview-of-disposition-reviews"></a>廃棄レビューの概要
 
@@ -33,7 +33,7 @@ ms.locfileid: "30512662"
     
 - クライアントにコンテンツを返すか、または別の組織に転送します。
     
-Office 365 で保持ラベルを作成する場合、保持期間の終了時に廃棄のレビューを開始することを選択できます。 廃棄レビューの場合:
+microsoft 365 コンプライアンスセンター、microsoft 365 セキュリティセンター、または Office 365 security & コンプライアンスセンターで保持ラベルを作成する場合、保持期間の終了時に廃棄レビューを開始することを選択できます。 廃棄レビューの場合:
   
 - 選択したユーザーには、閲覧するコンテンツがあることを示す電子メール通知が送信されます。 これらのレビュー担当者は、個別のユーザー、配布グループまたはセキュリティグループ、または Office 365 グループにすることができます。 通知は週単位で送信されることに注意してください。
     

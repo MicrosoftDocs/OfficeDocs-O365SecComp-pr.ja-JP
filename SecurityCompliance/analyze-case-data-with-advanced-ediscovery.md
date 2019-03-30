@@ -3,7 +3,6 @@ title: Office 365 の高度な電子情報開示を使用してケースデー�
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
 description: '分析プロセスの概要を説明します。これにより、Office 365 の Advanced eDiscovery でパラメーター、実行オプション、および結果の表示を設定できます。 '
-ms.openlocfilehash: 65fc84ff873202a72572ba8f81c1c74c7c7d1395
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 11ef6f9bd052134625012742e64c466ae1e54f91
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30656033"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998930"
 ---
 # <a name="analyze-case-data-with-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示を使用してケースデータを分析する
 

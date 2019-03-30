@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: Office 365 Cloud App Security の [通知] ページを使用して、潜在的な問題を表示し、処理を実行します。 通知を破棄または解決し、必要に応じてユーザーアカウントを中断することができます。
-ms.openlocfilehash: 701d80c3f890115c6c403fff21d2d0444d71c95a
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: ddef10293fca7b722a13babdca5c05bbe2398cb3
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862469"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000040"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security の警告の確認と処理
   
@@ -37,7 +37,7 @@ Office 365 Cloud App Security の [通知] ページを使用して、潜在的�
 2. 画面上部のナビゲーションバーで、[**通知**] を選択します。<br/>![[通知] ページには、トリガーされた通知と実行されたアクションが表示されます。](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
  
 > [!NOTE]
-> Cloud App security alerts は、Office 365 security & コンプライアンスセンターにも表示されます ([**アラート** > **表示**] [アラート] に移動します。 ただし、現時点では、Cloud App security ポータルと Office 365 security & コンプライアンスセンターの両方でこれらのアラートを解決する必要があります。 詳細については、「 [Cloud App Security alerts を表示](alert-policies.md#viewing-cloud-app-security-alerts)する」を参照してください)。 
+> Cloud App security alerts は、Security & コンプライアンスセンターにも表示されます ([**アラート** > **表示**] [アラート] に移動します。 ただし、現時点では、Cloud App security ポータルと security & コンプライアンスセンターの両方でこれらのアラートを解決する必要があります。 詳細については、「 [Cloud App Security alerts を表示](alert-policies.md#viewing-cloud-app-security-alerts)する」を参照してください)。 
  
 ## <a name="review-and-handle-alerts"></a>通知を確認して処理する
 

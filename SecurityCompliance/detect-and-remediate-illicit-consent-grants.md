@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Office 365 で不法な同意を付与する攻撃を認識し、修復する方法について説明します。
-ms.openlocfilehash: 454b1b0dcf7a6182895dcc97889286f3000c9626
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 32fa8fedd0cac0ba1a6193b7b107492efb136838
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30656073"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999940"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Microsoft Office 365 での不正な同意付与の検出と修復
 
@@ -86,7 +86,7 @@ ms.locfileid: "30656073"
 4.  [clientdisplayname] 列 (列 C) で、疑わしいと思われるアプリを探します。 名前のスペルが間違っているアプリ、super bland names、またはハッカーが発音した名前は、慎重に検討する必要があります。
 
 ## <a name="determine-the-scope-of-the-attack"></a>攻撃の範囲を決定する
-アプリケーションアクセスのインベントリ処理が終了したら、Office 365**監査ログ**を確認して、違反の完全なスコープを特定します。  影響を受けるユーザー、不法アプリケーションが組織にアクセスした時間枠、およびアプリのアクセス許可を検索します。 [Office 365 セキュリティ/コンプライアンスセンター](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)で**監査ログ**を検索できます。 
+アプリケーションアクセスのインベントリ処理が終了したら、Office 365**監査ログ**を確認して、違反の完全なスコープを特定します。  影響を受けるユーザー、不法アプリケーションが組織にアクセスした時間枠、およびアプリのアクセス許可を検索します。 **監査ログ**は、 [Microsoft 365 セキュリティ/コンプライアンスセンター](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)で検索できます。 
 
 > [!IMPORTANT]
 > この情報を取得するには、攻撃の前に、[管理者とユーザーの](https://support.office.com/article/turn-office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)[メールボックスの監査](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918)とアクティビティの監査を有効にする必要があります。

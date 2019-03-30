@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 43d074a9d42703b60b7b8eb17bdaf83a9360ce2d
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: fea3f35e0fca3ccc8148d93b7a535c98dd2d32b9
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791810"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000530"
 ---
 # <a name="monitor-devices-in-microsoft-365-security"></a>Microsoft 365 セキュリティでデバイスを監視する
-
-[!include[Prerelease�information](prerelease.md)]
 
 モバイルデバイスのセキュリティを確保し、最新の状態に保つことができます。また、潜在的な脅威については、Microsoft 365 セキュリティセンターを使用してください。
 
@@ -102,7 +100,7 @@ Windows Defender ATP は、各アラートを、アタックチェーンまた�
 
 Intune 登録デバイスデータには次のものが含まれます。
 
-* デバイスコンプライアンス
+* デバイスのポリシー準拠
 * アクティブなマルウェアがあるデバイス
 * デバイス上のマルウェアの種類
 * デバイスのマルウェア

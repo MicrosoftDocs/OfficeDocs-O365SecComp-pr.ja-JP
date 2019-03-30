@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: すべての新しい Microsoft 365 セキュリティセンターとコンプライアンスセンターの準備をする
-ms.openlocfilehash: e67c3f61898187d87aa638cf2dab871a7b694c18
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.openlocfilehash: 15e67b5bdd6aca8c5447abe2e4cd12fb15e36760
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935202"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000690"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>新しい microsoft 365 セキュリティセンターと microsoft 365 コンプライアンスセンターが一般公開されるようになりました。
 
@@ -66,11 +66,11 @@ Microsoft 365 コンプライアンスセンターにアクセスする必要が
 
 この更新プログラムが展開された後、組織に Microsoft 365 Enterprise E3 または E5 がある場合、セキュリティ/コンプライアンス管理者は次のことを行うことができます。
 
-- に[https://security.microsoft.com](https://security.microsoft.com)直接移動し[https://compliance.microsoft.com](https://compliance.microsoft.com)ます。 <br>または  
+- に[https://security.microsoft.com](https://security.microsoft.com)直接移動し[https://compliance.microsoft.com](https://compliance.microsoft.com)ます。 <br>or  
 - microsoft 365 管理センターに移動し、新しい microsoft 365 セキュリティセンターと microsoft 365 コンプライアンスセンター (左側のナビゲーションウィンドウの [管理センター] の下にあるリンク) に移動します。
 
 > [!TIP]
-> office 365 security & コンプライアンスセンター ([https://protection.office.com](http://protection.office.com)) を使用している場合でも、既存の office 365 security & コンプライアンスセンター内で office 365 の設定を構成および管理することはできます。 構成は、既存の Office 365 security & コンプライアンスセンターに加えて、新しい microsoft 365 セキュリティセンターおよび microsoft 365 コンプライアンスセンターにも保持されます。  
+> office 365 security & コンプライアンスセンター ([https://protection.office.com](http://protection.office.com)) を使用している場合でも、既存のセキュリティ & コンプライアンスセンター内で office 365 の設定を構成および管理することはできます。 構成は、既存のセキュリティ & コンプライアンスセンターに加え、新しい microsoft 365 セキュリティセンターおよび microsoft 365 コンプライアンスセンターでも維持されます。  
 
 ## <a name="required-licenses-and-permissions"></a>必要なライセンスとアクセス許可
 
@@ -92,7 +92,7 @@ Microsoft 365 コンプライアンスセンターにアクセスする必要が
 
 |向け |グローバル管理者 |セキュリティ管理者、セキュリティオペレーター、またはセキュリティリーダ|コンプライアンス管理者またはコンプライアンスデータ管理者 |
 |---------|---------|---------|---------|
-|[Office 365 セキュリティ/コンプライアンス センター](https://protection.office.com) |はい |はい  |はい |
+|[セキュリティ & コンプライアンスセンター](https://protection.office.com) |はい |はい  |はい |
 |[Microsoft 365 セキュリティセンター](https://security.microsoft.com) |はい  | はい  | いいえ        |
 |[Microsoft 365 コンプライアンスセンター](https://compliance.microsoft.com) | はい | いいえ | はい |
 |[コンプライアンス マネージャー](https://aka.ms/compliancemanager) |はい | はい |はい  |

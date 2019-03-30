@@ -1,9 +1,9 @@
 ---
-title: Office 365 セキュリティ&amp;コンプライアンスセンターに移動する
+title: Go to the Office 365 Security &amp; Compliance Center
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 8/18/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -13,21 +13,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
-description: office 365 セキュリティ&amp;コンプライアンスセンターは、office 365 でデータを保護するためのワンストップポータルです。office 365 セキュリティ&amp;コンプライアンスセンターを使用して、office 365 全体の組織のすべてのデータのコンプライアンスを管理します。
-ms.openlocfilehash: 31cb275b8a961d597db06a6597660c3a07b7e8d7
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: Before you can use the Security &amp; Compliance Center, you need the right permissions. 職場または学校のアカウントには、Office 365 のグローバル管理者の役割が割り当てられているか&amp; 、グローバル管理者によって1つまたは複数のセキュリティコンプライアンスセンターの役割グループに割り当てられている必要があります。
+ms.openlocfilehash: a4d6c1a62047728517316199b5ad555d1996a497
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219297"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997223"
 ---
-# <a name="go-to-the-office-365-security-amp-compliance-center"></a>Office 365 セキュリティ&amp;コンプライアンスセンターに移動する
+# <a name="go-to-the-office-365-security-amp-compliance-center"></a>Go to the Office 365 Security &amp; Compliance Center
 
-office 365 セキュリティ&amp;コンプライアンスセンターは、office 365 でデータを保護するためのワンストップポータルです。office 365 セキュリティ&amp;コンプライアンスセンターを使用して、office 365 全体の組織のすべてのデータのコンプライアンスを管理します。
-  
-## <a name="go-to-the-office-365-security-amp-compliance-center"></a>Office 365 セキュリティ&amp;コンプライアンスセンターに移動する
-
-セキュリティ&amp; /コンプライアンスセンターを使用するには、適切なアクセス許可が必要です。職場または学校のアカウントには、Office 365 のグローバル管理者の役割が割り当てられているか&amp; 、グローバル管理者によって1つ以上のセキュリティコンプライアンスセンターの役割グループに割り当てられている必要があります。
+Before you can use the Security &amp; Compliance Center, you need the right permissions. 職場または学校のアカウントには、Office 365 のグローバル管理者の役割が割り当てられているか&amp; 、グローバル管理者によって1つ以上のセキュリティコンプライアンスセンターの役割グループに割り当てられている必要があります。
   
 - office 365 のグローバル管理者の役割の詳細については、「 [office 365 管理者の役割につい](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d)て」を参照してください。 
     

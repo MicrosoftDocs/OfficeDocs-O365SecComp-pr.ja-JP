@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: 管理者は、Office 365 Security & コンプライアンスセンターのメールフローダッシュボードの承認されていないドメインレポートについて学習できます。
+description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードで、承認されていないドメインレポートについて学習できます。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f7fc54a4b1d31d724a95c5d8540b95034effbab4
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: a69a1e59241ea7b6680afe8608534dbf9460c269
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722962"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998990"
 ---
 # <a name="non-accepted-domain-report"></a>承認されていないドメインレポート
 
@@ -26,7 +26,7 @@ ms.locfileid: "30722962"
 
 これらのメッセージが悪意のあるものであることを証明するためのデータがある場合、Office 365 はこれらのメッセージを調整する可能性があります。 そのため、何が起こっているのかを理解し、問題を修正することが重要です。
 
-![Office 365 Security & コンプライアンスセンターのメールフローダッシュボードの承認されていないドメインレポート](media/non-accepted-domain-report-selected.png)
+![セキュリティ & コンプライアンスセンターのメールフローダッシュボードの承認されていないドメインレポート](media/non-accepted-domain-report-selected.png)
 
 ウィジェットをクリックすると、レポート全体が表示されます。 完全レポートで、次の図に示すように、[**詳細の表示**] をクリックして、テーブル内の情報を表示できます。
 

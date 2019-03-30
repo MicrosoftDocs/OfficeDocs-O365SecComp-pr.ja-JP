@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: 新しい Microsoft 365 コンプライアンスセンター (含まれるもの、その入手方法、および次の手順) について説明します。
-ms.openlocfilehash: 00c9325b35c2dca5b474964e47683e94a77c97fe
-ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
+ms.openlocfilehash: 76ddc27ad616f2cbf4ec3a97892e3baea92469ec
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30950444"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001040"
 ---
 # <a name="welcome-to-your-all-new-microsoft-365-compliance-center"></a>すべての新しい Microsoft 365 コンプライアンスセンターへようこそ
 
@@ -83,7 +83,7 @@ Microsoft コンプライアンススコアカードに移動すると、[コン
 
 ### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>特定のポリシーの定義などのいくつかのタスクを実行するために、Office 365 Security & コンプライアンスセンターに移動する理由は何ですか。
 
-引き続き Microsoft 365 コンプライアンスセンターを開発しており、今後数か月の間により多くの機能とソリューションを追加していく予定です。 その間に、Office 365 セキュリティ & コンプライアンスセンターで実行する必要があるタスクがいくつかあります。 そのような場合は、監督ポリシーの作成や編集など、手動でタスクを実行できる場所に自動的に転送されます。
+引き続き Microsoft 365 コンプライアンスセンターを開発しており、今後数か月の間により多くの機能とソリューションを追加していく予定です。 その間に、Security & コンプライアンスセンターで実行する必要があるタスクがいくつかあります。 そのような場合は、監督ポリシーの作成や編集など、手動でタスクを実行できる場所に自動的に転送されます。
 
 ### <a name="why-dont-i-see-the-new-microsoft-365-compliance-center-yet"></a>新しい Microsoft 365 コンプライアンスセンターがまだ表示されないのはなぜですか?
 

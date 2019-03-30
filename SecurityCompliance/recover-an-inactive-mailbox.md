@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: '元従業員が組織に戻った場合、または新しい従業員が退職した従業員の職務を受けた場合は、Office 365 の非アクティブなメールボックスの内容を復元できます。 非アクティブなメールボックスを復元すると、非アクティブなメールボックスのコンテンツが含まれる新しいメールボックスに変換されます。 '
-ms.openlocfilehash: d5cdb07c7a7209f11021a8f4235280a6b27f216d
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: c7f942c518dcc74a4bdb37d67e27e8a63879ab46
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900046"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999820"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>Office 365 で非アクティブなメールボックスを回復する
 
@@ -69,7 +69,7 @@ ms.locfileid: "30900046"
 
     回復された非アクティブなメールボックスのプライマリ SMTP アドレスの値は、 *MicrosoftOnlineServicesID*パラメーターで指定されたものと同じになります。 
     
-非アクティブなメールボックスを回復した後に、新しい Office 365 ユーザー アカウントも作成されます。ライセンスを割り当てて、このユーザー アカウントをアクティブにする必要があります。Office 365 管理センターでライセンスを割り当てる方法については、「[一般法人向け Office 365 ライセンスの割り当てまたは割り当て解除を行う](https://go.microsoft.com/fwlink/p/?LinkId=276798)」を参照してください。
+非アクティブなメールボックスを回復した後に、新しい Office 365 ユーザー アカウントも作成されます。 ライセンスを割り当てて、このユーザー アカウントをアクティブにする必要があります。 Microsoft 365 管理センターでライセンスを割り当てるには、「[一般法人向け Office 365 ライセンスの割り当てまたは割り当て解除を行う](https://go.microsoft.com/fwlink/p/?LinkId=276798)」を参照してください。
   
 ## <a name="more-information"></a>詳細情報
 

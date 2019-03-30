@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: 管理者は、Office 365 Security & コンプライアンスセンターのメールフローダッシュボードにある送信者ドメインの洞察を修正する方法について説明します。
+description: 管理者は、「Security & コンプライアンスセンターのメールフローダッシュボードでの送信者ドメインの洞察を修正する」を参照してください。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6d98d2a2660c24a77db58215faa0de1a4a18ea1a
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: bd62d6d0b42edfd1eedf543d7d8bb68903c7c608
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722956"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000310"
 ---
 # <a name="fix-sender-domain-insight"></a>送信者ドメインの洞察を修正する
 
@@ -38,7 +38,7 @@ office 365 では、内部のオンプレミスの電子メール環境から of
 
 「**送信者ドメインを修正**する」では、オンプレミス環境からの基準を満たしていない電子メールを表示し、社内の電子メール環境で侵害された可能性のあるコンピューターやユーザーアカウントを特定して、実行に役立てることができます。修復アクション。
 
-![Office 365 Security & コンプライアンスセンターのメールフローダッシュボードでの送信者ドメインの理解](media/sender-domain-insight-selected.png)
+![セキュリティ & コンプライアンスセンターのメールフローダッシュボードでの送信者ドメインの洞察を修正する](media/sender-domain-insight-selected.png)
 
 [詳細の**表示**] をクリックすると、次の図に示すように、詳細を含む別のウィジェットに移動します。
 

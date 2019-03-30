@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7c7fd07e2e1dfe495addc41242790f1c0ed15d2e
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 2bd777b6e785d1631810469f699da0823f1c3320
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791787"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998680"
 ---
 # <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>脅威分析に関する最新の攻撃キャンペーンおよび手法を理解する
-
-[!include[Prerelease�information](prerelease.md)]
 
 サイバーの脅威は、より頻繁かつ高度になりつつあります。 組織にとって、特定の新たな脅威に対するセキュリティの姿勢と復元性を迅速に評価することが重要です。
 

@@ -11,12 +11,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 組織内のインフォメーション ワーカーは、日常的にさまざまな種類の機密情報を処理します。 ドキュメント フィンガープリンティングは、組織全体で使用される標準フォームを特定することによってこの情報の保護を容易にします。 このトピックでは、ドキュメントフィンガープリンティングの背後にある概念と、PowerShell を使用して作成する方法について説明します。
-ms.openlocfilehash: bf28d1d901598337a5c9c18d80590b136c539d26
-ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+ms.openlocfilehash: 2b8e4fd6b286f2c1a5c67863957f2b04fbef31b9
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30866353"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999140"
 ---
 # <a name="document-fingerprinting"></a>ドキュメント フィンガープリンティング
 
@@ -66,7 +66,7 @@ ms.locfileid: "30866353"
     
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>PowerShell を使用してドキュメントフィンガープリントに基づいて分類ルールパッケージを作成する
 
-現時点では、セキュリティ&amp; /コンプライアンスセンターで PowerShell を使用することによってのみ、ドキュメントフィンガープリントを作成できます。 接続するには、「 [connect to Office 365 Security & コンプライアンスセンター PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)」を参照してください。
+現時点では、セキュリティ&amp; /コンプライアンスセンターで PowerShell を使用することによってのみ、ドキュメントフィンガープリントを作成できます。 接続するには、「 [connect to Security & コンプライアンスセンター PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)」を参照してください。
 
 DLP は、分類ルールパッケージを使用して機密コンテンツを検出します。 ドキュメントのフィンガープリントに基づいて分類ルールパッケージを作成するには、**新しい-dlpfingerprint**および**set-dlpsensitiveinformationtype**コマンドレットを使用します。 **新しい-dlpfingerprint**の結果はデータ分類規則の範囲外に格納されないため**** 、常に、 **set-dlpsensitiveinformationtype**または**set-dlpsensitiveinformationtype**を同じように実行します。PowerShell セッション。 次の例では、C:\My Documents\Contoso Employee Template.docx ファイルに基づいて新しいドキュメント フィンガープリントを作成します。 同じ PowerShell セッションで **New-DlpSensitiveInformationType** コマンドレットを使用して新しい指紋を使用できるように、新しい指紋を変数として保存します。 
   

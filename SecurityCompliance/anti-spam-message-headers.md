@@ -13,19 +13,21 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection では、受信電子メール メッセージをスキャンするときに、 **X-Forefront-Antispam-Report** ヘッダーをそれぞれのメッセージに挿入します。
-ms.openlocfilehash: 92614b8cb6e1571c3d5438206f9dcd106579669a
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 70322d49defe49517a75658b1e2084d520fd7ae8
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936747"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004244"
 ---
 # <a name="anti-spam-message-headers"></a>スパム対策メッセージ ヘッダー
 
 Exchange Online Protection では、受信電子メール メッセージをスキャンするときに、 **X-Forefront-Antispam-Report** ヘッダーをそれぞれのメッセージに挿入します。このヘッダー内のフィールドは、そのメッセージに関する情報やそれがどのように処理されたかに関する情報を管理者に提供できます。 **X-Microsoft-Antispam** ヘッダー内のフィールドは、バルク メールやフィッシングについての追加情報を提供します。これら 2 つのヘッダーのほかに、Exchange Online Protection も電子メール認証の結果を **Authentication-results** ヘッダーで処理する各メッセージに挿入します。
+
+さまざまな電子メール クライアントで電子メール メッセージ ヘッダーを表示する方法については、「[メッセージ ヘッダー アナライザー](https://go.microsoft.com/fwlink/p/?LinkId=306583)」を参照してください。 
   
 > [!TIP]
-> さまざまな電子メール クライアントで電子メール メッセージ ヘッダーを表示する方法については、「[メッセージ ヘッダー アナライザー](https://go.microsoft.com/fwlink/p/?LinkId=306583)」を参照してください。メッセージ ヘッダーの内容は、コピーして[メッセージ ヘッダー アナライザー](https://testconnectivity.microsoft.com/?tabid=mha) ツールに貼り付けることができます。Exchange 管理センターで検疫内のメッセージを選択した場合は、 **[メッセージ ヘッダーの表示]** リンクを使ってメッセージ ヘッダー テキストをコピーしてツールに貼り付けることもできます。メッセージ ヘッダー アナライザー ツールに貼り付ければ、 **[ヘッダーの分析]** をクリックしてヘッダーに関する情報を取得できます。
+>  メッセージヘッダーの内容をコピーして[メッセージアナライザー](https://testconnectivity.microsoft.com/?tabid=mha)ツールに貼り付けることができます。 このツールは、ヘッダーを解析して、より readible 形式にするために役に立ちます。
   
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>X-Forefront-Antispam-Report メッセージ ヘッダー フィールド
 

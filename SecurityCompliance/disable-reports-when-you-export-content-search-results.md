@@ -1,5 +1,5 @@
 ---
-title: Office 365 セキュリティ&amp;コンプライアンスセンターでコンテンツ検索の結果をエクスポートするときにレポートを無効にする
+title: コンテンツ検索の結果をエクスポートするときにレポートを無効にする
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
-description: Office 365 Security &amp; comlioffcenter からコンテンツ検索の結果をエクスポートするときにレポートを無効にするには、ローカルコンピューターの Windows レジストリを編集します。 これらのレポートを無効にすると、ダウンロード時間が短縮され、ディスク容量が節約されます。
-ms.openlocfilehash: f08f5e7143022591d38bda787301e71ae80fb3d3
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+description: Office 365 のセキュリティ & コンプライアンスセンターからコンテンツ検索の結果をエクスポートするときにレポートを無効にするには、ローカルコンピューターの Windows レジストリを編集します。 これらのレポートを無効にすると、ダウンロード時間が短縮され、ディスク容量が節約されます。
+ms.openlocfilehash: 19d97bbc95be5db6540e6822721752ca62adebfc
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936717"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998767"
 ---
-# <a name="disable-reports-when-you-export-content-search-results-in-the-office-365-security-amp-compliance-center"></a>Office 365 セキュリティ&amp;コンプライアンスセンターでコンテンツ検索の結果をエクスポートするときにレポートを無効にする
+# <a name="disable-reports-when-you-export-content-search-results"></a>コンテンツ検索の結果をエクスポートするときにレポートを無効にする
 
-Office 365 eDiscovery エクスポートツールを使用して、セキュリティ&amp; /コンプライアンスセンターのコンテンツ検索の結果をエクスポートすると、エクスポートされたコンテンツに関する追加情報を含む2つのレポートが自動的に作成およびエクスポートされます。 これらのレポートは、結果 .csv ファイルと manifest.xml ファイルです (これらのレポートの詳細な説明については、このトピックの「[エクスポートレポートの無効化についてよく寄せられる質問](#frequently-asked-questions-about-disabling-export-reports)」を参照してください)。 これらのファイルは非常に大きくなる可能性があるため、ダウンロード時間を短縮し、これらのファイルがエクスポートされないようにすることによって、ディスク領域を節約できます。 これを行うには、検索結果のエクスポートに使用するコンピューターで Windows レジストリを変更します。 後でレポートを含める必要がある場合は、レジストリ設定を編集できます。 
+Office 365 eDiscovery エクスポートツールを使用して、Security & コンプライアンスセンターでコンテンツ検索の結果をエクスポートすると、エクスポートされたコンテンツに関する追加情報を含む2つのレポートが自動的に作成およびエクスポートされます。 これらのレポートは、結果 .csv ファイルと manifest.xml ファイルです (これらのレポートの詳細な説明については、このトピックの「[エクスポートレポートの無効化についてよく寄せられる質問](#frequently-asked-questions-about-disabling-export-reports)」を参照してください)。 これらのファイルは非常に大きくなる可能性があるため、ダウンロード時間を短縮し、これらのファイルがエクスポートされないようにすることによって、ディスク領域を節約できます。 これを行うには、検索結果のエクスポートに使用するコンピューターで Windows レジストリを変更します。 後でレポートを含める必要がある場合は、レジストリ設定を編集できます。 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>レジストリ設定を作成してエクスポートレポートを無効にする
 

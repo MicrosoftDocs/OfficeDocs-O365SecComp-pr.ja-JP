@@ -8,19 +8,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
-description: 管理者は、Office 365 Security & コンプライアンスセンターのメールフローダッシュボードにあるメールループの洞察について知ることができます。
-ms.openlocfilehash: 5fa7267d68183ea9f8117e420a769a2beaafdac1
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+description: 管理者は、Security & コンプライアンスセンターのメールフローダッシュボードにあるメールループについて理解できます。
+ms.openlocfilehash: 7229f8ebfc9ca1a46d91acc210199a3a6002c01e
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720297"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000320"
 ---
 # <a name="mail-loop-insight"></a>メールループの分析情報
 
 メールループは、システムリソースが浪費され、組織のメールボリュームクォータを使用して、元の送信者に (ndr またはバウンスメッセージとも呼ばれる) 混乱しない配信不能レポートを送信するため、不正です。 この洞察は、組織内でメールループが検出されたとき、ループに含まれる電子メールドメイン、およびループ内の前日からのメッセージ数について報告します。
 
-![Office 365 Security & コンプライアンスセンターのメールフローダッシュボードにあるメールループの分析情報](media/c3f707cb-4c89-4e88-989c-81ce1d1d6b99.png)
+![セキュリティ & コンプライアンスセンターのメールフローダッシュボードにあるメールループの洞察](media/c3f707cb-4c89-4e88-989c-81ce1d1d6b99.png)
 
 [詳細の**表示**] をクリックすると、フライアウトウィンドウに詳細が表示されます。 また、最も一般的なループシナリオを特定し、そのループを修正するために推奨されるアクション (使用可能な場合) を提供します。
 

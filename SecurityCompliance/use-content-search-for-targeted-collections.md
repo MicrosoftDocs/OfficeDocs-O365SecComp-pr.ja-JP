@@ -11,13 +11,13 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
-description: Office 365 セキュリティ&amp;コンプライアンスセンターでコンテンツ検索を使用して、対象となるコレクションを実行します。 対象となるコレクションは、ケースまたは権限アイテムに応答するアイテムが特定のメールボックスまたはサイトフォルダーにあることを確信していることを意味しています。 この記事に記載されているスクリプトを使用して、検索する特定のメールボックスまたはサイトフォルダーのフォルダー ID またはパスを取得します。
-ms.openlocfilehash: 4cfdb95ef65f94bc46b79265f986ed8d9ada04da
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+description: セキュリティ & コンプライアンスセンターでコンテンツ検索を使用して、対象となるコレクションを実行します。 対象となるコレクションは、ケースまたは権限アイテムに応答するアイテムが特定のメールボックスまたはサイトフォルダーにあることを確信していることを意味しています。 この記事に記載されているスクリプトを使用して、検索する特定のメールボックスまたはサイトフォルダーのフォルダー ID またはパスを取得します。
+ms.openlocfilehash: 06d1d4d213f0efd5a05badd9a0edef568ae15d75
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30899997"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001240"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Office 365 のコンテンツ検索を使用した対象コレクション
 
@@ -56,7 +56,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのコン�
     
   - **OneDrive for business** - https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com 
     
-- **ユーザーの資格情報**-スクリプトは、資格情報を使用して Exchange Online に接続&amp;し、リモート PowerShell を使用してセキュリティ/コンプライアンスセンターに接続します。 前述のように、このスクリプトを正常に実行するには、適切なアクセス許可を割り当てる必要があります。
+- **ユーザーの資格情報**-スクリプトは、資格情報を使用して Exchange Online およびセキュリティ & コンプライアンスセンターとリモート PowerShell に接続します。 前述のように、このスクリプトを正常に実行するには、適切なアクセス許可を割り当てる必要があります。
     
 メールボックスフォルダーまたはサイト documentlink (path) 名の一覧を表示するには、次のようにします。
   
@@ -66,7 +66,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのコン�
   #########################################################################################################
   # This PowerShell script will prompt you for:                             #
   #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
-  #      Online and who is an eDiscovery Manager in the Security &amp; Compliance Center.           #
+  #      Online and who is an eDiscovery Manager in the Security & Compliance Center.           #
   # The script will then:                                           #
   #    * If an email address is supplied: list the folders for the target mailbox.          #
   #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
@@ -83,7 +83,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのコン�
   #########################################################################################################
   # Collect the target email address or SharePoint Url
   $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
-  # Authenticate with Exchange Online and the Security &amp; Compliance Center (Exchange Online Protection - EOP)
+  # Authenticate with Exchange Online and the Security & Compliance Center (Exchange Online Protection - EOP)
   if (!$credentials)
   {
       $credentials = Get-Credential
@@ -125,7 +125,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのコン�
       $searchActionName = "SPFoldersSearch_Preview"
       # List the folders for the SharePoint or OneDrive for Business Site
       $siteUrl = $addressOrSite
-      # Authenticate with the Security &amp; Compliance Center
+      # Authenticate with the Security & Compliance Center
       if (!$SccSession)
       {
           $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $credentials -Authentication Basic -AllowRedirection
@@ -229,7 +229,7 @@ SharePoint または OneDrive for business サイトから**documentlink**プロ
     
     - [検索する**特定のサイトを選択する**] をクリックし、手順1でスクリプトを実行したときに指定したものと同じサイト URL を追加します。 
     
-6. **[次へ]** をクリックします。
+6. [**次へ**] をクリックします。
     
 7. [**検索する内容を選択**してください] ページの [キーワード] ボックスに、 `folderid:<folderid>`手順`documentlink:<path>` 1 でスクリプトによって返された値を貼り付けます。 
     

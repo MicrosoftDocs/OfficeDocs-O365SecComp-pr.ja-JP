@@ -10,22 +10,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: インプレースホールド、訴訟ホールド、および Office 365 のアイテム保持ポリシーを使用すると、メールボックスのコンテンツを保持して規制コンプライアンスおよび電子情報開示の要件を満たすことができます。
-ms.openlocfilehash: 21f6d4520f41710e89e0a7ce1fc491aa03ea44b0
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fcf5567bc50f25ce51d8d569d772559a376703d0
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693236"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999520"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>電子情報開示のために Bcc および展開された配布グループの受信者を保持する
   
-In-Place Hold, Litigation Hold, and [Office 365 retention policies](http://go.microsoft.com/fwlink/?LinkID=827811) (created in the Office 365 Security &amp; Compliance Center) allow you to preserve mailbox content to meet regulatory compliance and eDiscovery requirements. Information about recipients directly addressed in the To and Cc fields of a message is included in all messages by default, but your organization may require the ability to search for and reproduce details about all recipients of a message. This includes: 
+インプレースホールド、訴訟ホールド、および[Office 365 アイテム保持ポリシー](http://go.microsoft.com/fwlink/?LinkID=827811) (Security & コンプライアンスセンターで作成) を使用すると、メールボックスのコンテンツを保持して、規制遵守および電子情報開示の要件を満たすことができます。 メッセージの [宛先] フィールドと [CC] フィールドに直接指定されている受信者の情報は既定ですべてのメッセージに含められますが、組織によってはメッセージの全受信者の詳細を検索して再現する機能が必要な場合もあります。 これには、以下が含まれます。 
   
 - **メッセージの [BCC] フィールドを使用して指定された受信者:** BCC の受信者は、送信者のメールボックス内のメッセージには格納されますが、受信者に配信されたメッセージのヘッダーには含まれません。 
     
 - **展開された配布グループの受信者:** メッセージの [宛先]、[CC]、[BCC] のいずれかに指定された配布グループのメンバーであるためにメッセージを受信した受信者。 
     
-Exchange Online and Exchange Server 2013 (Cumulative Update 7 and later versions) retain information about Bcc and expanded distribution group recipients. You can search for this information by using an In-Place eDiscovery search in the Exchange admin center (EAC) or a Content Search in the Security &amp; Compliance Center. 
+Exchange Online および Exchange Server 2013 (累積的な更新プログラムの 7 以降のバージョン) は、BCC および展開された配布グループの受信者に関する情報を保持します。 この情報を検索するには、Exchange 管理センター (EAC) でインプレース電子情報開示検索を使用するか、セキュリティ & コンプライアンスセンターでコンテンツ検索を使用します。 
   
 ## <a name="how-bcc-recipients-and-expanded-distribution-group-recipients-are-preserved"></a>BCC 受信者および展開された配布グループの受信者を保持する方法
 <a name="sectionSection0"> </a>

@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection には、安全な添付ファイル、安全なリンク、高度なフィッシング対策ツール、レポートツール、および脅威インテリジェンス機能が含まれています。
-ms.openlocfilehash: 442c827f9844184fc6f03f6e253a0f492d12dd62
-ms.sourcegitcommit: 787a0fef671e5dc6f5e805b580321b2edbfad8e9
+ms.openlocfilehash: 402110fa7b835cd86ffbcf14439304d364cf03dd
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989622"
+ms.locfileid: "31001180"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -89,9 +89,9 @@ AIR には、アラートがトリガーされたときや、脅威エクスプ�
 
 詳細については、次のトピックを参照してください。
 
-- [Office 365 Security & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md) 
+- [セキュリティ センターとコンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md) 
 
-- [ユーザーに Office 365 Security & コンプライアンスセンターへのアクセス権を付与する](grant-access-to-the-security-and-compliance-center.md)
+- [ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する](grant-access-to-the-security-and-compliance-center.md)
 
 ## <a name="get-office-365-atp"></a>Office 365 ATP を取得する
 

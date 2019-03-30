@@ -1,6 +1,6 @@
 ---
 title: Office 365 のセキュリティとコンプライアンス
-description: お客様の組織がデータを保護する必要がある場合、または法律または規制標準に準拠している場合は、適切な場所に配置されます。Office 365 のセキュリティとコンプライアンスの詳細については、こちらを参照してください。
+description: お客様の組織がデータを保護する必要がある場合、または法律または規制標準に準拠している場合は、適切な場所に配置されます。 Office 365 のセキュリティとコンプライアンスの詳細については、こちらを参照してください。
 services: office-365-security-compliance
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ ms.author: robmazz
 ---
 # <a name="office-365-security-and-compliance"></a>Office 365 のセキュリティとコンプライアンス
 
-お客様の組織がデータを保護する必要がある場合、または法律または規制標準に準拠している場合は、適切な場所に配置されます。以下の領域は、Office 365 のセキュリティとコンプライアンスについて学習するための最初の停止です。
+お客様の組織がデータを保護する必要がある場合、または法律または規制標準に準拠している場合は、適切な場所に配置されます。 以下の領域は、Office 365 のセキュリティとコンプライアンスについて学習するための最初の停止です。
 
 <ul class="cardsF panelContent">
     <li>
@@ -90,8 +90,8 @@ ms.author: robmazz
                     <div class="cardText">
                         <h3>安全維持</h3>
                         <p><a href="security-roadmap.md">Office 365 のセキュリティロードマップ</a></p>
-                        <p><a href="office-365-secure-score.md" target="_blank">Microsoft セキュリティスコア</a></p>
-                        <p><a href="https://protection.office.com" target="_blank">Office 365 セキュリティ/コンプライアンス センター</a></p>
+                        <p><a href="office-365-secure-score.md" target="_blank">Microsoft セキュア スコア</a></p>
+                        <p><a href="https://protection.office.com" target="_blank">セキュリティ & コンプライアンスセンター</a></p>
                     </div>
                 </div>
             </div>
