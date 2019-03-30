@@ -11,63 +11,63 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
-description: この記事のスクリプトを使用して、Office 365 セキュリティ&amp;コンプライアンスセンターの電子情報開示ケースに関連付けられているすべての保留リストに関する情報を含むレポートを生成します。
-ms.openlocfilehash: 95a960e8f76c672185e10d5b6be2a7ff2538a34b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: この記事のスクリプトを使用して、Office 365 または Microsoft 365 のコンプライアンスセンターで電子情報開示ケースに関連付けられているすべての保留リストに関する情報を含むレポートを生成します。
+ms.openlocfilehash: db5a462087dd20ed71f87efe2fd83b821654f1b9
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30297000"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000880"
 ---
-# <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a><span data-ttu-id="38bb3-103">Office 365 で電子情報開示ケースの保留リストのレポートを作成する</span><span class="sxs-lookup"><span data-stu-id="38bb3-103">Create a report on holds in eDiscovery cases in Office 365</span></span>
+# <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a><span data-ttu-id="89d5e-103">Office 365 で電子情報開示ケースの保留リストのレポートを作成する</span><span class="sxs-lookup"><span data-stu-id="89d5e-103">Create a report on holds in eDiscovery cases in Office 365</span></span>
   
-<span data-ttu-id="38bb3-p101">この記事に記載されているスクリプトを使用すると、電子情報開示管理者と電子情報開示マネージャーは、Office 365 セキュリティ&amp;コンプライアンスセンターの電子情報開示ケースに関連付けられているすべての保留リストに関する情報を含むレポートを生成できます。このレポートには、保留リストが関連付けられているケースの名前、保留になっているコンテンツの場所、保留がクエリベースかどうかなどの情報が含まれています。保持されていないケースがある場合、スクリプトは、保留を行わないケースの一覧を含む追加のレポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="38bb3-p101">The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with eDiscovery cases in the Office 365 Security &amp; Compliance Center. The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based. If there are cases that don't have any holds, the script will create an additional report with a list of cases without holds.</span></span>
+<span data-ttu-id="89d5e-104">この記事に記載されているスクリプトを使用すると、Office 365 または Microsoft 365 のコンプライアンスセンターで電子情報開示ケースに関連付けられているすべての保留リストに関する情報を含むレポートを、電子情報開示管理者と電子情報開示マネージャーが生成できます。</span><span class="sxs-lookup"><span data-stu-id="89d5e-104">The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with eDiscovery cases in the the compliance center in Office 365 or Microsoft 365.</span></span> <span data-ttu-id="89d5e-105">このレポートには、保留リストが関連付けられているケースの名前、保留になっているコンテンツの場所、保留がクエリベースかどうかなどの情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="89d5e-105">The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based.</span></span> <span data-ttu-id="89d5e-106">保持されていないケースがある場合、スクリプトは、保留を行わないケースの一覧を含む追加のレポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="89d5e-106">If there are cases that don't have any holds, the script will create an additional report with a list of cases without holds.</span></span>
 
-<span data-ttu-id="38bb3-107">レポートに含まれる情報の詳細については、「 [More information](#more-information) 」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="38bb3-107">See the [More information](#more-information) section for a detailed description of the information included in the report.</span></span> 
+<span data-ttu-id="89d5e-107">レポートに含まれる情報の詳細については、「 [More information](#more-information) 」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="89d5e-107">See the [More information](#more-information) section for a detailed description of the information included in the report.</span></span> 
   
-## <a name="before-you-begin"></a><span data-ttu-id="38bb3-108">はじめに</span><span class="sxs-lookup"><span data-stu-id="38bb3-108">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="89d5e-108">はじめに</span><span class="sxs-lookup"><span data-stu-id="89d5e-108">Before you begin</span></span>
 
-- <span data-ttu-id="38bb3-p102">組織内のすべての電子情報開示ケースに関するレポートを生成するには、組織の電子情報開示管理者である必要があります。電子情報開示マネージャーの場合、レポートには、アクセスできるケースに関する情報のみが含まれます。電子情報開示のアクセス許可の詳細については、「 [Office 365 &amp;セキュリティコンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38bb3-p102">To generate a report on all eDiscovery cases in your organization, you have to be an eDiscovery Administrator in your organization. If you are an eDiscovery Manager, the report will only include information about the cases that you can access. For more information about eDiscovery permissions, see [Assign eDiscovery permissions in the Office‍ 365 Security &amp; Compliance Center](assign-ediscovery-permissions.md).</span></span>
+- <span data-ttu-id="89d5e-109">組織内のすべての電子情報開示ケースに関するレポートを生成するには、組織の電子情報開示管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="89d5e-109">To generate a report on all eDiscovery cases in your organization, you have to be an eDiscovery Administrator in your organization.</span></span> <span data-ttu-id="89d5e-110">電子情報開示マネージャーの場合、レポートには、アクセスできるケースに関する情報のみが含まれます。</span><span class="sxs-lookup"><span data-stu-id="89d5e-110">If you are an eDiscovery Manager, the report will only include information about the cases that you can access.</span></span> <span data-ttu-id="89d5e-111">ediscovery アクセス許可の詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="89d5e-111">For more information about eDiscovery permissions, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).</span></span>
     
-- <span data-ttu-id="38bb3-p103">この記事のスクリプトには、最小限のエラー処理が含まれています。主な目的は、組織内の電子情報開示ケースに関連付けられている保留リストに関するレポートをすばやく作成することです。</span><span class="sxs-lookup"><span data-stu-id="38bb3-p103">The script in this article has minimal error handling. The primary purpose is to quickly create report about the holds that are associated with the eDiscovery cases in your organization.</span></span>
+- <span data-ttu-id="89d5e-112">この記事のスクリプトには、最小限のエラー処理が含まれています。</span><span class="sxs-lookup"><span data-stu-id="89d5e-112">The script in this article has minimal error handling.</span></span> <span data-ttu-id="89d5e-113">主な目的は、組織内の電子情報開示ケースに関連付けられている保留リストに関するレポートをすばやく作成することです。</span><span class="sxs-lookup"><span data-stu-id="89d5e-113">The primary purpose is to quickly create report about the holds that are associated with the eDiscovery cases in your organization.</span></span>
     
-- <span data-ttu-id="38bb3-p104">このトピックで提供されているサンプル スクリプトは、いかなる Microsoft 標準サポート プログラムまたはサービスでもサポートされていません。サンプル スクリプトは、いかなる保証もありません。これらのサンプルに対しては、Microsoft 社は商品またはその他の何らかの目的を持つものに付随すると考えられている暗黙の責任も一切認めません。これらのサンプルは、完全にユーザーの責任において使用してください。いかなる場合でも、Microsoft 社および販売店は、これらのサンプルを使用した結果発生した損害およびこれらのサンプルを使用できなかったことによる損害に対して、商業的損失、業務の中断、企業情報の喪失、およびその他の金銭的損失等を含め、何ら制限も設けることなく一切の責任を認めません。これは、たとえ Microsoft 社がそのような損害の可能性について通知を受けていた場合でも同じです。</span><span class="sxs-lookup"><span data-stu-id="38bb3-p104">The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.</span></span>
+- <span data-ttu-id="89d5e-p104">このトピックで提供されているサンプル スクリプトは、いかなる Microsoft 標準サポート プログラムまたはサービスでもサポートされていません。サンプル スクリプトは、いかなる保証もありません。これらのサンプルに対しては、Microsoft 社は商品またはその他の何らかの目的を持つものに付随すると考えられている暗黙の責任も一切認めません。これらのサンプルは、完全にユーザーの責任において使用してください。いかなる場合でも、Microsoft 社および販売店は、これらのサンプルを使用した結果発生した損害およびこれらのサンプルを使用できなかったことによる損害に対して、商業的損失、業務の中断、企業情報の喪失、およびその他の金銭的損失等を含め、何ら制限も設けることなく一切の責任を認めません。これは、たとえ Microsoft 社がそのような損害の可能性について通知を受けていた場合でも同じです。</span><span class="sxs-lookup"><span data-stu-id="89d5e-p104">The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.</span></span>
     
-## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a><span data-ttu-id="38bb3-119">手順 1: リモート PowerShell を使用&amp;してセキュリティコンプライアンスセンターに接続する</span><span class="sxs-lookup"><span data-stu-id="38bb3-119">Step 1: Connect to the Security &amp; Compliance Center using Remote PowerShell</span></span>
+## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a><span data-ttu-id="89d5e-119">手順 1: Security & コンプライアンスセンター PowerShell に接続する</span><span class="sxs-lookup"><span data-stu-id="89d5e-119">Step 1: Connect to the Security & Compliance Center PowerShell</span></span>
 
-<span data-ttu-id="38bb3-120">最初の手順として、Windows PowerShell を組織&amp;のセキュリティコンプライアンスセンターに接続します。</span><span class="sxs-lookup"><span data-stu-id="38bb3-120">The first step is to connect Windows PowerShell to the Security &amp; Compliance Center for your organization.</span></span>
+<span data-ttu-id="89d5e-120">最初の手順として、組織のセキュリティ & コンプライアンスセンターに接続します。</span><span class="sxs-lookup"><span data-stu-id="89d5e-120">The first step is to connect to the Security & Compliance Center for your organization.</span></span>
   
-1. <span data-ttu-id="38bb3-121">ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、 `ConnectSCC.ps1`のようになります。</span><span class="sxs-lookup"><span data-stu-id="38bb3-121">Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `ConnectSCC.ps1`.</span></span> 
+1. <span data-ttu-id="89d5e-121">ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、 `ConnectSCC.ps1`のようになります。</span><span class="sxs-lookup"><span data-stu-id="89d5e-121">Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `ConnectSCC.ps1`.</span></span> 
     
       ```
       # Get login credentials 
       $UserCredential = Get-Credential 
       $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
       Import-PSSession $Session -AllowClobber -DisableNameChecking 
-      $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Office 365 Security &amp; Compliance Center)" 
+      $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
     ```
 
-2. <span data-ttu-id="38bb3-122">ローカルコンピューターで、Windows PowerShell を開き、スクリプトを保存したフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="38bb3-122">On your local computer, open Windows PowerShell and go to the folder where you saved the script.</span></span> 
+2. <span data-ttu-id="89d5e-122">ローカルコンピューターで、Windows PowerShell を開き、スクリプトを保存したフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="89d5e-122">On your local computer, open Windows PowerShell and go to the folder where you saved the script.</span></span> 
     
-3. <span data-ttu-id="38bb3-123">スクリプトを実行します。例えば：</span><span class="sxs-lookup"><span data-stu-id="38bb3-123">Run the script; for example:</span></span>
+3. <span data-ttu-id="89d5e-123">スクリプトを実行します。例えば：</span><span class="sxs-lookup"><span data-stu-id="89d5e-123">Run the script; for example:</span></span>
 
     ```
     .\ConnectSCC.ps1
     ```
    
-4. <span data-ttu-id="38bb3-124">資格情報の入力を求められたら、電子メールアドレスとパスワードを入力し、[ **OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="38bb3-124">When prompted for your credentials, enter your email address and password, and then click **OK**.</span></span> 
+4. <span data-ttu-id="89d5e-124">資格情報の入力を求められたら、電子メールアドレスとパスワードを入力し、[ **OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="89d5e-124">When prompted for your credentials, enter your email address and password, and then click **OK**.</span></span> 
   
-## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a><span data-ttu-id="38bb3-125">手順 2: 電子情報開示ケースに関連付けられている保留リストをレポートするスクリプトを実行する</span><span class="sxs-lookup"><span data-stu-id="38bb3-125">Step 2: Run the script to report on holds associated with eDiscovery cases</span></span>
+## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a><span data-ttu-id="89d5e-125">手順 2: 電子情報開示ケースに関連付けられている保留リストをレポートするスクリプトを実行する</span><span class="sxs-lookup"><span data-stu-id="89d5e-125">Step 2: Run the script to report on holds associated with eDiscovery cases</span></span>
 
-<span data-ttu-id="38bb3-126">リモート PowerShell を使用してセキュリティ&amp;コンプライアンスセンターに接続した後、次の手順では、組織内の電子情報開示ケースに関する情報を収集するスクリプトを作成して実行します。</span><span class="sxs-lookup"><span data-stu-id="38bb3-126">After you've connected to the Security &amp; Compliance Center with remote PowerShell, the next step is to create and run the script that collects information about the eDiscovery cases in your organization.</span></span> 
+<span data-ttu-id="89d5e-126">Security & コンプライアンスセンター PowerShell に接続した後、次の手順では、組織内の電子情報開示ケースに関する情報を収集するスクリプトを作成して実行します。</span><span class="sxs-lookup"><span data-stu-id="89d5e-126">After you've connected to Security & Compliance Center PowerShell, the next step is to create and run the script that collects information about the eDiscovery cases in your organization.</span></span> 
   
-1. <span data-ttu-id="38bb3-127">ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、CaseHoldsReport のようにします。</span><span class="sxs-lookup"><span data-stu-id="38bb3-127">Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, CaseHoldsReport.ps1.</span></span> 
+1. <span data-ttu-id="89d5e-127">ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、CaseHoldsReport のようにします。</span><span class="sxs-lookup"><span data-stu-id="89d5e-127">Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, CaseHoldsReport.ps1.</span></span> 
     
   ```
 #script begin
 " " 
 write-host "***********************************************"
-write-host "   Office 365 Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
+write-host "   Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
 write-host "        eDiscovery cases - Holds report         " -foregroundColor yellow -backgroundcolor darkgreen 
 write-host "***********************************************"
 " " 
@@ -151,49 +151,49 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
 #script end
   ```
 
-2. <span data-ttu-id="38bb3-128">手順1で開いた Windows PowerShell セッションで、スクリプトを保存したフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="38bb3-128">In the Windows PowerShell session that opened in Step 1, go to the folder where you saved the script.</span></span> 
+2. <span data-ttu-id="89d5e-128">手順1で開いた Windows PowerShell セッションで、スクリプトを保存したフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="89d5e-128">In the Windows PowerShell session that opened in Step 1, go to the folder where you saved the script.</span></span> 
     
-3. <span data-ttu-id="38bb3-129">スクリプトを実行します。例えば：</span><span class="sxs-lookup"><span data-stu-id="38bb3-129">Run the script; for example:</span></span>
+3. <span data-ttu-id="89d5e-129">スクリプトを実行します。例えば：</span><span class="sxs-lookup"><span data-stu-id="89d5e-129">Run the script; for example:</span></span>
 
     ```
     .\CaseHoldsReport.ps1
     ```
 
-    <span data-ttu-id="38bb3-130">スクリプトは、レポートを保存するターゲットフォルダーの入力を求めるメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="38bb3-130">The script will prompt for a target folder to save the report to.</span></span> 
+    <span data-ttu-id="89d5e-130">スクリプトは、レポートを保存するターゲットフォルダーの入力を求めるメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="89d5e-130">The script will prompt for a target folder to save the report to.</span></span> 
     
-4. <span data-ttu-id="38bb3-131">レポートを保存するフォルダーの完全パス名を入力し、 **enter**キーを押します。</span><span class="sxs-lookup"><span data-stu-id="38bb3-131">Type the full path name of the folder to save the report to, and then press **Enter**.</span></span>
+4. <span data-ttu-id="89d5e-131">レポートを保存するフォルダーの完全パス名を入力し、 **enter**キーを押します。</span><span class="sxs-lookup"><span data-stu-id="89d5e-131">Type the full path name of the folder to save the report to, and then press **Enter**.</span></span>
     
     > [!TIP]
-    > <span data-ttu-id="38bb3-p105">スクリプトが配置されているのと同じフォルダーにレポートを保存するには、ターゲットフォルダーの入力を求めるメッセージが表示されたら、ピリオド (".") を入力します。スクリプトが配置されているフォルダー内のサブフォルダーにレポートを保存するには、サブフォルダーの名前を入力するだけです。</span><span class="sxs-lookup"><span data-stu-id="38bb3-p105">To save the report in the same folder that the script is located in, type a period (".") when prompted for a target folder. To save the report in a subfolder in the folder where the script is located, just type the name of the subfolder.</span></span> 
+    > <span data-ttu-id="89d5e-132">スクリプトが配置されているのと同じフォルダーにレポートを保存するには、ターゲットフォルダーの入力を求めるメッセージが表示されたら、ピリオド (".") を入力します。</span><span class="sxs-lookup"><span data-stu-id="89d5e-132">To save the report in the same folder that the script is located in, type a period (".") when prompted for a target folder.</span></span> <span data-ttu-id="89d5e-133">スクリプトが配置されているフォルダー内のサブフォルダーにレポートを保存するには、サブフォルダーの名前を入力するだけです。</span><span class="sxs-lookup"><span data-stu-id="89d5e-133">To save the report in a subfolder in the folder where the script is located, just type the name of the subfolder.</span></span> 
   
-    <span data-ttu-id="38bb3-p106">このスクリプトは、組織内のすべての電子情報開示ケースに関する情報の収集を開始します。スクリプトの実行中はレポートファイルにアクセスしないでください。スクリプトが完了すると、Windows PowerShell セッションに確認メッセージが表示されます。このメッセージが表示された後、手順4で指定したフォルダー内のレポートにアクセスできます。レポートのファイル名は`CaseHoldsReport<DateTimeStamp>.csv`です。</span><span class="sxs-lookup"><span data-stu-id="38bb3-p106">The script starts to collect information about all the eDiscovery cases in your organization. Don't access the report file while the script is running. After the script is complete, a confirmation message is displayed in the Windows PowerShell session. After this message is displayed, you can access the report in the folder that you specified in Step 4. The file name for the report is `CaseHoldsReport<DateTimeStamp>.csv`.</span></span>
+    <span data-ttu-id="89d5e-134">このスクリプトは、組織内のすべての電子情報開示ケースに関する情報の収集を開始します。</span><span class="sxs-lookup"><span data-stu-id="89d5e-134">The script starts to collect information about all the eDiscovery cases in your organization.</span></span> <span data-ttu-id="89d5e-135">スクリプトの実行中はレポートファイルにアクセスしないでください。</span><span class="sxs-lookup"><span data-stu-id="89d5e-135">Don't access the report file while the script is running.</span></span> <span data-ttu-id="89d5e-136">スクリプトが完了すると、Windows PowerShell セッションに確認メッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="89d5e-136">After the script is complete, a confirmation message is displayed in the Windows PowerShell session.</span></span> <span data-ttu-id="89d5e-137">このメッセージが表示された後、手順4で指定したフォルダー内のレポートにアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="89d5e-137">After this message is displayed, you can access the report in the folder that you specified in Step 4.</span></span> <span data-ttu-id="89d5e-138">レポートのファイル名は`CaseHoldsReport<DateTimeStamp>.csv`です。</span><span class="sxs-lookup"><span data-stu-id="89d5e-138">The file name for the report is `CaseHoldsReport<DateTimeStamp>.csv`.</span></span>
 
-    <span data-ttu-id="38bb3-p107">さらでは、このスクリプトは、保留がないケースの一覧を含むレポートも作成します。このレポートのファイル名は`CaseswithNoHolds<DateTimeStamp>.csv`です。</span><span class="sxs-lookup"><span data-stu-id="38bb3-p107">Addtionally, the script also creates a report with a list of cases that don't have any holds. The file name for this report is `CaseswithNoHolds<DateTimeStamp>.csv`.</span></span>
+    <span data-ttu-id="89d5e-139">さらでは、このスクリプトは、保留がないケースの一覧を含むレポートも作成します。</span><span class="sxs-lookup"><span data-stu-id="89d5e-139">Addtionally, the script also creates a report with a list of cases that don't have any holds.</span></span> <span data-ttu-id="89d5e-140">このレポートのファイル名は`CaseswithNoHolds<DateTimeStamp>.csv`です。</span><span class="sxs-lookup"><span data-stu-id="89d5e-140">The file name for this report is `CaseswithNoHolds<DateTimeStamp>.csv`.</span></span>
     
-    <span data-ttu-id="38bb3-141">CaseHoldsReport スクリプトを実行する例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="38bb3-141">Here's an example of running the CaseHoldsReport.ps1 script.</span></span> 
+    <span data-ttu-id="89d5e-141">CaseHoldsReport スクリプトを実行する例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="89d5e-141">Here's an example of running the CaseHoldsReport.ps1 script.</span></span> 
     
     ![CaseHoldsReport スクリプトを実行した後の出力](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
-## <a name="more-information"></a><span data-ttu-id="38bb3-143">詳細情報</span><span class="sxs-lookup"><span data-stu-id="38bb3-143">More information</span></span>
+## <a name="more-information"></a><span data-ttu-id="89d5e-143">詳細情報</span><span class="sxs-lookup"><span data-stu-id="89d5e-143">More information</span></span>
 
-<span data-ttu-id="38bb3-p108">この記事のスクリプトを実行したときに作成されるケース保持レポートには、各ホールドに関する以下の情報が含まれています。前述のように、組織内のすべての保留リストに関する情報を返すには、電子情報開示管理者でなければなりません。ケース保持の詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターの電子情報開示ケース](ediscovery-cases.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="38bb3-p108">The case holds report that's created when you run the script in this article contains the following information about each hold. As previously explained, you have to be an eDiscovery Administrator to return information for all holds in your organization. For more information about case holds, see [eDiscovery cases in the Office 365 Security &amp; Compliance Center](ediscovery-cases.md).</span></span>
+<span data-ttu-id="89d5e-144">この記事のスクリプトを実行したときに作成されるケース保持レポートには、各ホールドに関する以下の情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="89d5e-144">The case holds report that's created when you run the script in this article contains the following information about each hold.</span></span> <span data-ttu-id="89d5e-145">前述のように、組織内のすべての保留リストに関する情報を返すには、電子情報開示管理者でなければなりません。</span><span class="sxs-lookup"><span data-stu-id="89d5e-145">As previously explained, you have to be an eDiscovery Administrator to return information for all holds in your organization.</span></span> <span data-ttu-id="89d5e-146">ケース保持の詳細については、「[電子情報開示ケース](ediscovery-cases.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="89d5e-146">For more information about case holds, see [eDiscovery cases](ediscovery-cases.md).</span></span>
   
-  - <span data-ttu-id="38bb3-147">保留の名前と、保留が関連付けられている電子情報開示ケースの名前。</span><span class="sxs-lookup"><span data-stu-id="38bb3-147">The name of the hold and the name of the eDiscovery case that the hold is associated with.</span></span>
+  - <span data-ttu-id="89d5e-147">保留の名前と、保留が関連付けられている電子情報開示ケースの名前。</span><span class="sxs-lookup"><span data-stu-id="89d5e-147">The name of the hold and the name of the eDiscovery case that the hold is associated with.</span></span>
     
-  - <span data-ttu-id="38bb3-148">電子情報開示ケースがアクティブかクローズかを指定します。</span><span class="sxs-lookup"><span data-stu-id="38bb3-148">Whether or not the eDiscovery case is active or closed.</span></span>
+  - <span data-ttu-id="89d5e-148">電子情報開示ケースがアクティブかクローズかを指定します。</span><span class="sxs-lookup"><span data-stu-id="89d5e-148">Whether or not the eDiscovery case is active or closed.</span></span>
     
-  - <span data-ttu-id="38bb3-149">保留が有効であるか無効であるか。</span><span class="sxs-lookup"><span data-stu-id="38bb3-149">Whether or not the hold is enabled or disabled.</span></span>
+  - <span data-ttu-id="89d5e-149">保留が有効であるか無効であるか。</span><span class="sxs-lookup"><span data-stu-id="89d5e-149">Whether or not the hold is enabled or disabled.</span></span>
     
-  - <span data-ttu-id="38bb3-p109">保留が関連付けられている電子情報開示ケースのメンバ。ケースメンバーは、割り当てられている電子情報開示のアクセス許可に応じて、ケースを表示または管理できます。</span><span class="sxs-lookup"><span data-stu-id="38bb3-p109">The members of the eDiscovery case that the hold is associated with. Case members can view or manage a case, depending on the eDiscovery permissions they've been assigned.</span></span>
+  - <span data-ttu-id="89d5e-150">保留が関連付けられている電子情報開示ケースのメンバ。</span><span class="sxs-lookup"><span data-stu-id="89d5e-150">The members of the eDiscovery case that the hold is associated with.</span></span> <span data-ttu-id="89d5e-151">ケースメンバーは、割り当てられている電子情報開示のアクセス許可に応じて、ケースを表示または管理できます。</span><span class="sxs-lookup"><span data-stu-id="89d5e-151">Case members can view or manage a case, depending on the eDiscovery permissions they've been assigned.</span></span>
     
-  - <span data-ttu-id="38bb3-152">ケースが作成された日時。</span><span class="sxs-lookup"><span data-stu-id="38bb3-152">The time and date the case was created.</span></span>
+  - <span data-ttu-id="89d5e-152">ケースが作成された日時。</span><span class="sxs-lookup"><span data-stu-id="89d5e-152">The time and date the case was created.</span></span>
     
-  - <span data-ttu-id="38bb3-153">ケースがクローズされている場合は、そのケースをクローズしたユーザーと、それがクローズされた日時。</span><span class="sxs-lookup"><span data-stu-id="38bb3-153">If a case is closed, the person who closed it and the time and date it was closed.</span></span>
+  - <span data-ttu-id="89d5e-153">ケースがクローズされている場合は、そのケースをクローズしたユーザーと、それがクローズされた日時。</span><span class="sxs-lookup"><span data-stu-id="89d5e-153">If a case is closed, the person who closed it and the time and date it was closed.</span></span>
     
-  - <span data-ttu-id="38bb3-154">保留中の Exchange メールボックスと SharePoint サイトの場所。</span><span class="sxs-lookup"><span data-stu-id="38bb3-154">The Exchange mailboxes and SharePoint sites locations that are on hold.</span></span>
+  - <span data-ttu-id="89d5e-154">保留中の Exchange メールボックスと SharePoint サイトの場所。</span><span class="sxs-lookup"><span data-stu-id="89d5e-154">The Exchange mailboxes and SharePoint sites locations that are on hold.</span></span>
     
-  - <span data-ttu-id="38bb3-155">保留がクエリベースの場合は、クエリ構文。</span><span class="sxs-lookup"><span data-stu-id="38bb3-155">If the hold is query-based, the query syntax.</span></span>
+  - <span data-ttu-id="89d5e-155">保留がクエリベースの場合は、クエリ構文。</span><span class="sxs-lookup"><span data-stu-id="89d5e-155">If the hold is query-based, the query syntax.</span></span>
     
-  - <span data-ttu-id="38bb3-156">保留が作成された日時と、それを作成したユーザー。</span><span class="sxs-lookup"><span data-stu-id="38bb3-156">The time and date the hold was created and the person who created it.</span></span>
+  - <span data-ttu-id="89d5e-156">保留が作成された日時と、それを作成したユーザー。</span><span class="sxs-lookup"><span data-stu-id="89d5e-156">The time and date the hold was created and the person who created it.</span></span>
     
-  - <span data-ttu-id="38bb3-157">保留が最後に変更された日時と、それを変更したユーザー。</span><span class="sxs-lookup"><span data-stu-id="38bb3-157">The time and date the hold was last changed and the person who changed it.</span></span>
+  - <span data-ttu-id="89d5e-157">保留が最後に変更された日時と、それを変更したユーザー。</span><span class="sxs-lookup"><span data-stu-id="89d5e-157">The time and date the hold was last changed and the person who changed it.</span></span>
