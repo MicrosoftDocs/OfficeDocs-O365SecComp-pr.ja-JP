@@ -16,16 +16,16 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: DLP ポリシーを使用して、Office 365 の個人データを保護する方法について説明します。
-ms.openlocfilehash: c0b78611a81452ecd8cb8993842c26f6012bb736
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: af4af4fd8a80b1f1ad34919ed1380f4fed7d9461
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373948"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955250"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Office 365 の個人データに保護を適用する
 
-Office 365 の個人情報の保護にはデータ損失防止機能の使用が含まれます。Office 365 セキュリティ/コンプライアンス センターでデータ損失防止 (DLP) ポリシーを使用することにより、Office 365 全体で機密情報を識別、監視、および自動的に保護することができます。
+Office 365 の個人情報の保護には、データ損失防止機能の使用が含まれます。 コンプライアンス センターのデータ損失防止 (DLP) ポリシーを使用すると、Office 365 全体の機密情報を識別および監視して、自動的に保護できます。
 
 このトピックでは、DLP を使用して、個人データを保護する方法について説明します。さらに、SharePoint ライブラリでのアクセス許可の設定やデバイス アクセス ポリシーの使用など、GDPR 準拠を実現するために使用できその他の保護機能もリストします。
 

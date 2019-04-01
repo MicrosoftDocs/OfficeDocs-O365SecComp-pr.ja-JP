@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Office 365 の個人データを検索する方法について説明します。
-ms.openlocfilehash: 3fa35b168d9a7e89ead437cba33637b478bb34c7
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: 3c2981116e2abb3518a132084a697618ef3261cc
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373878"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955180"
 ---
 # <a name="search-for-and-find-personal-data"></a>個人データの検索
 
@@ -72,13 +72,12 @@ Microsoft では、Office 365 の個人データ検索に 3 段階のアプロ�
 </tbody>
 </table>
 
-近日公開: セキュリティ/コンプライアンス センターの新しいユーザー インターフェイスで、機密情報の種類を作成および変更できるようになります。一致した結果を動的に参照し、機密情報の種類をニーズに合わせて調整することができます。
 
 ## <a name="search-for-sensitive-information-types-using-content-search"></a>コンテンツ検索を使用した機密情報の種類の検索
 
-Office 365 に含まれている機密情報の種類を使用して個人データの検索を開始します。これらはセキュリティ/コンプライアンス センターの [分類] の下にリストされています。
+Office 365 に含まれている機密情報の種類を使用して個人データの検索を開始します。 これらはセキュリティ/コンプライアンス センターの [分類] の下にリストされています。
 
-このトピックには、欧州連合の市民に適用される現在の機密情報の種類がリストされています。これらを開始点として、セキュリティ/コンプライアンス センターで GDPR 準拠を支える新しい追加事項がないか頻繁にチェックしてください。
+このトピックでは、欧州連合の市民に適用される機密情報の種類の一部がリストされています。 GDPR コンプライアンスを支援できる新しい追加については、セキュリティ センターまたはコンプライアンス センターを確認してください。
 
 また次の記事も参照してください: [機密情報の種類と、それぞれの検索対象の一覧](https://support.office.com/ja-JP/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)
 

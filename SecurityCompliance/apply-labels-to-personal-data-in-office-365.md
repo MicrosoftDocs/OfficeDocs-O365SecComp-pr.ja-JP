@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Office のラベルを GDPR 保護計画の一部として使用する方法について説明します。
-ms.openlocfilehash: 4167ace41c5d7534b7e90130c189e3c04e5c5100
-ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
+ms.openlocfilehash: 32f94e02dac81abaef46ef5495701e5037ff8c6b
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800289"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955200"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Office 365 の個人データにラベルを適用する
 
@@ -167,7 +167,7 @@ GDPR の対象となる個人データについては、環境に合わせて設
 
 ## <a name="create-labels-and-auto-apply-label-policies"></a>ラベルおよび自動適用ラベル ポリシーの作成
 
-セキュリティ/コンプライアンス センターで、ラベルおよびポリシーを作成します。
+セキュリティ センターまたはコンプライアンス センターで、ラベルおよびポリシーを作成します。
 
 <table>
 <thead>
@@ -179,16 +179,16 @@ GDPR の対象となる個人データについては、環境に合わせて設
 <tbody>
 <tr class="odd">
 <td align="left"><p>コンプライアンス チームのメンバーにアクセス許可を与えます。</p></td>
-<td align="left"><p>ラベルを作成するコンプライアンス チームのメンバーには、セキュリティ &amp; コンプライアンス センターを使用するためのアクセス許可が必要です。[セキュリティ/コンプライアンス センターのアクセス許可] に移動し、コンプライアンス管理者グループのメンバーを変更します。</p>
-<p>「<a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">ユーザーに Office 365 セキュリティ センター &amp; コンプライアンス センターへのアクセスを許可する</a>」を参照してください。</p></td>
+<td align="left"><p>ラベルを作成するコンプライアンス チームのメンバーには、セキュリティ センターやコンプライアンス センターを使用するためのアクセス許可が必要です。セキュリティ センターまたはコンプライアンス センターの [アクセス許可] に移動し、コンプライアンス管理者グループのメンバーを変更します。</p>
+<p>「<a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">ユーザーにセキュリティ センターやコンプライアンス センターへのアクセス権を付与する</a>」を参照してください。</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>保持ラベルを作成します。</p></td>
-<td align="left">セキュリティ/コンプライアンス センターの [分類] に移動し、[保持ラベル] を選択して、使用している環境のラベルを作成します。</td>
+<td align="left">セキュリティ センターまたはコンプライアンス センターの [分類] に移動し、[保持ラベル] を選択して、使用している環境のラベルを作成します。</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ラベルの自動適用ポリシーを作成します。</p></td>
-<td align="left">セキュリティ/コンプライアンスセンターの [分類] に移動し、[ラベル ポリシー] を選択し、自動適用ラベルのポリシーを作成します。これらのポリシーは、優先順位に従って作成してください。</td>
+<td align="left">セキュリティ センターまたはコンプライアンスセンターの [分類] に移動し、[ラベル ポリシー] を選択し、自動適用ラベルのポリシーを作成します。これらのポリシーは、優先順位に従って作成してください。</td>
 </tr>
 </tbody>
 </table>

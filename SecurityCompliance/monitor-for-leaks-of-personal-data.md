@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 個人データの漏えいの監視に使用できる 3 つのツールについて説明します。
-ms.openlocfilehash: 1923aa00f4ababb66ff8c915a8c3d7a99ff1cd04
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: d9b48589ace06186d5f177d1b90f02f8657637bd
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373888"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955210"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>個人情報の漏えいを監視する
 
@@ -57,7 +57,7 @@ DLP レポートを使用すると、以下のことを行えます。
 
 さらに、テスト モードで実行するときに、DLP レポートを使用して DLP ポリシーを微調整することができます。
 
-DLP レポートは、セキュリティ/コンプライアンス センターにあります。[レポート] \> [レポートの表示] に移動し、[データ損失防止 (DLP)] の下で [DLP ポリシーおよびルールの一致] または [DLP の誤検知と上書き] に移動します。
+DLP レポートは、セキュリティ/コンプライアンス センターにあります。 [レポート] \> [レポートの表示] に移動します。 [データ損失防止 (DLP)] の下で、[DLP ポリシーおよびルールの一致] または [DLP の誤検知と上書き] に移動します。
 
 詳細については、「[データ損失防止のレポートの表示](https://support.office.com/ja-JP/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b)」を参照してください。
 
@@ -67,9 +67,9 @@ DLP レポートは、セキュリティ/コンプライアンス センター�
 
 Office 365 監査ログには、Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Directory、Microsoft Teams、Power BI、Sway などの Office 365 サービスからのイベントが含まれます。
 
-Office 365 セキュリティ/コンプライアンス センターでは、Office 365 監査ログを監視およびレポートする 2 つの方法を提供しています。
+セキュリティ/コンプライアンス センターでは、Office 365 監査ログを監視およびレポートする 2 つの方法を提供しています。
 
--   アラート ポリシーの設定、アラートの表示、トレンドの監視には、Office 365 セキュリティ/コンプライアンス センターにある新しいアラート ポリシーとアラート ダッシュボード ツールを使用します。
+-   アラート ポリシーの設定、アラートの表示、トレンドの監視には、セキュリティ センターまたはコンプライアンス センターのいずれかにあるアラート ポリシーとアラート ダッシュボード ツールを使用します。
 
 -   監査ログを直接検索するには、指定した日付の範囲ですべてのイベントを検索します。また、操作を実行したユーザー、操作、または対象オブジェクトなど、特定の条件に基づいて結果をフィルター処理することもできます。
 
@@ -81,14 +81,14 @@ Microsoft 管理アクティビティ API を使用して統一監査ログを�
 
 アラート ポリシーと監査ログの検索については、以下を参照してください。
 
--   [Office 365 セキュリティ/コンプライアンス センターのアラート ポリシー](https://support.office.com/ja-JP/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+-   [Microsoft 365 セキュリティ/コンプライアンス センターのアラート ポリシー](https://support.office.com/ja-JP/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
 
 -   [Office 365 で監査ログを検索してユーザーと管理者のアクティビティを確認する](https://support.office.com/ja-JP/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (概要)
 
 -   [Office 365 監査ログの検索を有効または無効にする](https://support.office.com/ja-JP/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
 -   
-  [Office 365 セキュリティ/コンプライアンス センターで監査ログを検索する](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+  [監査ログを検索する](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
 -   
   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (コマンドレット) 

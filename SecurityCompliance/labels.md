@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 の保持ラベルは、適切なコンテンツで適切な操作を実行するために役立ちます。保持ラベルを使用すると、ガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制できます。保持ラベルは、Office 365 全体のレコード管理の実装に使用することもできます。
-ms.openlocfilehash: 174be4cbb55b72a3bc8751460ff030b38238590e
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: 50b002236bb57094f170d4b796ee20c0268fbdd1
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900136"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955240"
 ---
 # <a name="overview-of-retention-labels"></a>保持ラベルの概要
 
@@ -384,11 +384,13 @@ OneDrive でレコードを削除しようとすると、「[アイテム保持�
   
 詳細については、「[DLP ポリシーにおける条件としてのラベルの使用](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy)」を参照してください。
   
-## <a name="using-the-label-activity-explorer-and-the-data-governance-reports"></a>ラベル アクティビティ エクスプローラーとデータ ガバナンス レポートの使用。
+## <a name="monitor-retention-labels"></a>保持ラベルの監視
 
 保持ラベルを発行または自動適用した後、意図したとおりにラベルがコンテンツに適用されていることを確認する必要があります。保持ラベルを監視するには、次のものを使用できます。
   
 - **ラベル アクティビティ エクスプローラー**。エクスプローラー (下記参照) を使用すると、過去 30 日間の SharePoint および OneDrive for Business 全体のすべてのコンテンツの保持ラベルのアクティビティをすばやく検索して表示できます。詳細については、「[ドキュメントのラベルのアクティビティを表示する](view-label-activity-for-documents.md)」を参照してください。
+
+- **[ラベル分析]** ページ。 Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターでは、上位のラベルとその適用対象を簡単に表示できます。 また、特定のラベルが付いたコンテンツをすべて表示することもできます。 詳細については、「[ラベル分析でラベルの使用状況を表示する](label-analytics.md)」を参照してください。
     
 - **データ ガバナンス レポート**。これらのレポートでは、過去 90 日間の Exchange、SharePoint および OneDrive for Business 全体のすべてのコンテンツの保持ラベルの傾向とアクティビティをすばやく表示できます。詳細については、「[データ ガバナンス レポートを表示する](view-the-data-governance-reports.md)」を参照してください。
     

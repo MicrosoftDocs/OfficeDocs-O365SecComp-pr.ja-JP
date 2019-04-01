@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: Office 365 の GDPR 機能をデモします。
-ms.openlocfilehash: c0d46eb8839fe594e00ae40fae3b2eb69dc2adcc
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: d4d4113f6d78069a150e13c32ab192571671d986
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373908"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955280"
 ---
 # <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Office 365 開発/テスト環境における GDPR の検出、保護、および報告
 
@@ -175,7 +175,7 @@ Contoso では、必ず、内部対応、外部対応、ドキュメント、お
 
 ## <a name="phase-5-demonstrate-data-protection"></a>フェーズ 5: データ保護をデモする
 
-Office 365 の個人情報の保護には、データ損失防止 (DLP) 機能の使用が含まれます。Office 365 セキュリティ/コンプライアンス センターで DLP ポリシーを使用することにより、Office 365 全体で機密情報を自動的に保護することができます。
+Office 365 の個人情報の保護には、データ損失防止 (DLP) 機能の使用が含まれます。  DLP ポリシーにより、Office 365 全体で自動的に機密情報を保護できます。
 
 保護を適用するための複数の方法があります。環境内の EU 居住者データの保存場所と従業員によるその処理方法の教育と認識の向上は、Office 365 DLP を使用した情報保護の 1 つのレベルを表しています。
 
