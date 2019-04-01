@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: '概要: SharePoint Online および Office 365 内のファイルを保護するために推奨されている構成を取り上げます。'
-ms.openlocfilehash: 3e41a46d244f88110b87426fe975b3f72e376984
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: cc31d6633b41fe8bcec57794247718c44c0fc555
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955230"
+ms.locfileid: "30999380"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>SharePoint Online サイトとファイルをセキュリティで保護する
 
@@ -117,15 +117,15 @@ Azure Active Directory で推奨される条件付きアクセス ポリシー�
 |:-----|:-----|:-----|:-----|:-----|
 ||**ベースライン保護 1** <br/> |**基準の保護 #2** <br/> |**機密の保護** <br/> |**非常に機密性の高い社外秘** <br/> |
 |説明  <br/> |組織内ではアクセスや共同作業が自由。  <br/> |グループ外で共有が許可されている、プライベート サイトとグループ。  <br/> |アクセス レベルが特定のグループのメンバーシップによって定義されている、独立したサイト。共有はサイトのメンバーにのみ許可されます。組織外にファイルを送信しようとすると、DLP はユーザーに警告します。  <br/> |独立したサイトと、Azure Information Protection によるファイルの暗号化とアクセス許可。DLP はユーザーがファイルを組織の外部に送信できないようにします。  <br/> |
-|プライベート サイトまたはパブリック チーム サイト  <br/> |パブリック  <br/> |Kirkland  <br/> |Kirkland  <br/> |Kirkland  <br/> |
+|プライベート サイトまたはパブリック チーム サイト  <br/> |パブリック  <br/> |プライベート  <br/> |プライベート  <br/> |プライベート  <br/> |
 |誰にアクセス権が与えられるか  <br/> |B2B のユーザーとゲスト ユーザーを含む、組織の全員。  <br/> |サイトのメンバーのみ。他のユーザーは、アクセス権を要求できます。  <br/> |サイトのメンバーのみ。他のユーザーは、アクセス権を要求できます。  <br/> |メンバーのみ。他のユーザーは、アクセス権を要求できません。  <br/> |
 |サイト レベルの共有制御  <br/> |すべてのユーザーと共有できます。既定の設定です。  <br/> |すべてのユーザーと共有できます。既定の設定です。  <br/> |メンバーはサイトへのアクセスを共有できません。  <br/> メンバー以外の人はサイトへのアクセスを要求できますが、要求はサイトの管理者に対して行う必要があります。  <br/> |メンバーはサイトへのアクセスを共有できません。  <br/> メンバー以外の人はサイトまたはコンテンツへのアクセスを要求できません。  <br/> |
 |サイトレベルのデバイス アクセス制御  <br/> |付加的な制御はありません。  <br/> |付加的な制御はありません。  <br/> |ユーザーは、非準拠デバイスまたはドメインに参加していないデバイスにファイルをダウンロードできません。他のすべてのデバイスからは参照専用のアクセスが許可されます。  <br/> |非準拠デバイスまたはドメインに参加していないデバイスへのファイルのダウンロードをブロックします。  <br/> |
-|保持ラベル  <br/> |内部パブリック  <br/> |Kirkland  <br/> |機密  <br/> |非常に機密性の高い社外秘  <br/> |
+|保持ラベル  <br/> |内部パブリック  <br/> |プライベート  <br/> |機密  <br/> |非常に機密性の高い社外秘  <br/> |
 |DLP ポリシー  <br/> |||機密ラベルが付けられたファイルを組織の外に送信しようとするとユーザーに警告が表示されます。  <br/> クレジット カード番号や他の個人データなど、機密データの種類の外部共有をブロックするには、これらのデータの種類 (自分で構成したカスタム データの種類を含む) に追加の DLP ポリシーを構成できます。  <br/> |ユーザーが高機密のラベルが付けられているファイルを組織の外部に送信できないようにします。ファイルの共有相手など、理由を提供することよって、ユーザーはこの設定を上書きできます。  <br/> |
 |機密ラベル  <br/> ||||機密ラベルを使用して、ファイルの暗号化とファイルへのアクセス許可の付与を自動化します。 機密ラベルは Azure Information Protection を使用して、ファイルを暗号化します。 ファイルが流出した場合も、暗号化やアクセス許可は維持されます。  <br/> Office 365 は、Azure Information Protection で暗号化されたファイルを読み取ることができません。さらに、DLP ポリシーが操作できるのはメタデータ (ラベルを含む) のみで、これらのファイルのコンテンツ (ファイル内のクレジット カード番号など) を操作することはできません。  <br/> |
    
-このソリューションで 4 つの異なる種類の SharePoint Online チーム サイトを展開する手順については、「[3 つの層による保護用のサイトを展開する](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)」を参照してください。開発/テスト環境の作成手順については、「[開発/テスト環境の SharePoint Online サイトをセキュリティで保護する](secure-sharepoint-online-sites-in-a-dev-test-environment.md)」を参照してください。 
+このソリューションで異なる 4 種類の SharePoint Online チーム サイトを展開する手順については、「[3 つの層による保護用のサイトを展開する](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)」を参照してください。 
   
 ## <a name="office-365-retention-labels"></a>Office 365 保持ラベル
 
@@ -147,7 +147,7 @@ Azure Active Directory で推奨される条件付きアクセス ポリシー�
     
 - 機密
     
-- Kirkland
+- プライベート
     
 - 内部パブリック
     
@@ -186,7 +186,3 @@ Azure Information Protection で保護されているファイルへのアクセ
   
 [クラウド導入およびハイブリッド ソリューション](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   
-[開発/テスト環境の SharePoint Online サイトをセキュリティで保護する](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
-
-
-
