@@ -1,5 +1,5 @@
 ---
-title: Office 365 セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する
+title: セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -12,15 +12,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Office 365 セキュリティ/コンプライアンス センターの　DLP について、カスタムの機密情報の種類を作成してインポートする方法について説明します。
-ms.openlocfilehash: bf917ac40f98ec19332aac90f2d954d44b9a834d
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+description: セキュリティ/コンプライアンス センターの DLP について、カスタムの機密情報の種類を作成してインポートする方法について説明します。
+ms.openlocfilehash: 7a21b62ddaf4d24793d4479d0d6270a18cc50532
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639124"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999840"
 ---
-# <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>Office 365 セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する
+# <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する
 
 Office 365 のデータ損失防止 (DLP) には、DLP ポリシーですぐに使用できる組み込みの[機密情報の種類](what-the-sensitive-information-types-look-for.md)が多数含まれています。これらの組み込みの種類は、クレジット カード番号、銀行口座番号、パスポート番号などの特定と保護に役立ちます。 
   
@@ -329,7 +329,7 @@ Version 要素も重要です。ルール パッケージを初めてアップ�
   
 1. ルールを Unicode エンコードで .xml ファイルとして保存します。
     
-2. [Office 365 セキュリティ/コンプライアンス センター PowerShell への接続](http://go.microsoft.com/fwlink/p/?LinkID=799771)
+2. [セキュリティ/コンプライアンス センターの PowerShell に接続する](http://go.microsoft.com/fwlink/p/?LinkID=799771)
     
 3. 次の構文を使用してください。
 
@@ -419,7 +419,7 @@ Office 365 でテナント全体の再クロールを手動で要求すること
 
 - **カスタム ルール パッケージとそれに含まれるすべてのカスタムの機密情報の種類を削除する**: この方法は、このセクションに記載されています。
 
-1. [Office 365 セキュリティ/コンプライアンス センター PowerShell への接続](http://go.microsoft.com/fwlink/p/?LinkID=799771)
+1. [セキュリティ/コンプライアンス センターの PowerShell に接続する](http://go.microsoft.com/fwlink/p/?LinkID=799771)
 
 2. カスタム ルール パッケージを削除するには、次の構文を使用します。
 
@@ -469,7 +469,7 @@ Office 365 でテナント全体の再クロールを手動で要求すること
 
 3. 更新した XML ファイルを既存のルール パッケージにインポートします。
 
-セキュリティ/コンプライアンス センターの PowerShell に接続するには、「[Office 365 セキュリティ/コンプライアンス センター PowerShell への接続](http://go.microsoft.com/fwlink/p/?LinkID=799771)」を参照してください。
+セキュリティ/コンプライアンス センターの PowerShell に接続するには、「[セキュリティ/コンプライアンス センター PowerShell に接続する](http://go.microsoft.com/fwlink/p/?LinkID=799771)」を参照してください。
 
 #### <a name="step-1-export-the-existing-rule-package-to-an-xml-file"></a>手順 1: 既存のルール パッケージを XML ファイルにエクスポートします
 

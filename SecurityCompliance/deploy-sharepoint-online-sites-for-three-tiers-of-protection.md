@@ -3,7 +3,7 @@ title: 3 層の保護用に SharePoint Online サイトを展開する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/14/2018
+ms.date: 03/29/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: '概要: SharePoint Online チーム サイトを作成し、さまざまなレベルの情報保護用に構成します。'
-ms.openlocfilehash: c39b1d85241c2d21c196e0c2c7f0d5c70149de5c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 69da99c29d3527285547ed824e45fb7aa31e1910
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220307"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999260"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>3 層の保護用に SharePoint Online サイトを展開する
 
@@ -38,9 +38,9 @@ ms.locfileid: "30220307"
 
 パブリック アクセスとアクセス許可を使用するベースライン SharePoint Online チーム サイトを作成するには、次の手順を実行します。
   
-1. SharePoint Online チーム サイト (SharePoint Online 管理者) の管理にも使用されるアカウントを使用して Office 365 ポータルにサインインします。ヘルプについては、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. SharePoint Online チーム サイト (SharePoint Online 管理者) の管理にも使用されるアカウントを使用して、管理センターにサインインします。 詳細については、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
-2. タイルのリストで、 **[SharePoint]** をクリックします。
+2. タイルの一覧で、**[SharePoint]** をクリックします。
     
 3. ブラウザーの新しい **SharePoint** タブで、**[+ サイトの作成]** をクリックします。
     
@@ -62,9 +62,9 @@ ms.locfileid: "30220307"
 
 プライベート アクセスとアクセス許可を使用するベースライン SharePoint Online チーム サイトを作成するには、次の手順を実行します。
   
-1. SharePoint Online チーム サイト (SharePoint Online 管理者) の管理にも使用されるアカウントを使用して Office 365 ポータルにサインインします。ヘルプについては、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. SharePoint Online チーム サイト (SharePoint Online 管理者) の管理にも使用されるアカウントを使用して、管理センターにサインインします。 詳細については、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
-2. タイルのリストで、 **[SharePoint]** をクリックします。
+2. タイルの一覧で、**[SharePoint]** をクリックします。
     
 3. ブラウザーの新しい **SharePoint** タブで、**[+ サイトの作成]** をクリックします。
     
@@ -126,9 +126,9 @@ ms.locfileid: "30220307"
   
 次に、次の手順で SharePoint Online チーム サイトを作成します。
   
-1. SharePoint Online チーム サイト (SharePoint Online 管理者) の管理にも使用されるアカウントを使用して Office 365 ポータルにサインインします。ヘルプについては、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. SharePoint Online チーム サイト (SharePoint Online 管理者) の管理にも使用されるアカウントを使用して、管理センターにサインインします。 詳細については、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
-2. タイルのリストで、 **[SharePoint]** をクリックします。
+2. タイルのリストで、**[SharePoint]** をクリックします。
     
 3. ブラウザーの新しい **[SharePoint]** タブで、 **[+ サイトの作成]** をクリックします。
     
@@ -142,9 +142,9 @@ ms.locfileid: "30220307"
     
 8. **[誰を追加しますか]** ウィンドウで、**[完了]** をクリックします。
     
-次に、新しい SharePoint Online チーム サイトから、以下の手順でアクセス許可を構成します。
+次に、新しい SharePoint Online チーム サイトから、これらの手順を使用してアクセス許可を構成します。
   
-1. サイトへのアクセス要求への対応を担当する IT 管理者または他のユーザーのユーザー プリンシパル名 (UPN) を決定します (belindan@contoso.com は、UPN の一例です)。その UPN をここに書き込みます。![](./media/Common-Images/TableLine.png)。
+1. サイトへのアクセス要求への対応を担当する IT 管理者または他のユーザーのユーザー プリンシパル名 (UPN) を決定します (belindan@contoso.com は、UPN の一例です)。 
     
 2. ツールバーで、設定アイコンをクリックしてから、**[サイトの権限]** をクリックします。
     
@@ -264,8 +264,7 @@ ms.locfileid: "30220307"
   
 ## <a name="next-step"></a>次の手順
 
-[Azure Information Protection を使用して SharePoint Online ファイルを保護する](protect-sharepoint-online-files-with-azure-information-protection.md)
-
+[Office 365 ラベルと DLP による SharePoint ファイルの保護](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
 
 ## <a name="see-also"></a>関連項目
 
@@ -274,7 +273,3 @@ ms.locfileid: "30220307"
 [選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [クラウド導入およびハイブリッド ソリューション](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-

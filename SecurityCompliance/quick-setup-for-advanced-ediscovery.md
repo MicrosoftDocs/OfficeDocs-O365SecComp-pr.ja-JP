@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: 'Office 365 セキュリティ&amp;コンプライアンス センターから Office 365 Advanced eDiscovery にアクセスする方法を説明し、Advanced eDiscovery を使用するための一般的なワークフローを確認します。  '
-ms.openlocfilehash: 69c3b7d281576462ed49bb5bf6306002eab63ba5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 18ba3de9bd8b314eddef90252be532256f0b85a5
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218747"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999770"
 ---
 # <a name="quick-setup-for-office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery のクイック セットアップ
 
-このセットアップ セクションでは、Office 365 セキュリティ&amp;コンプライアンス センターの電子情報開示管理者向けに、Advanced eDiscovery の使用開始方法を説明しています。両方に関して、実務的な知識があることを前提としています。
+このセットアップ セクションでは、Microsoft 365 セキュリティ&amp;コンプライアンス センターの電子情報開示管理者に、Advanced eDiscovery を開始する方法を示します。 両方に関して、実際上の知識があるものと想定しています。
   
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンが含まれている Office 365 E3、または E5 のサブスクリプションが組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 

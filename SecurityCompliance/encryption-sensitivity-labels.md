@@ -3,7 +3,7 @@ title: 機密ラベルの暗号化を使用してコンテンツへのアクセ�
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 10/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを作成するときに、そのラベルが適用されるコンテンツへのアクセスを制限できます。機密ラベルでは、コンテンツの保護のために暗号化を使用できます。
-ms.openlocfilehash: 6f8100ea0196cd1637bbad69757c9cc6e98f5bac
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.openlocfilehash: 69deeed69a5b2970d387c30b01a062c6c068c567
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737697"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997043"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>機密ラベルの暗号化を使用してコンテンツへのアクセスを制限する
 
@@ -36,7 +36,7 @@ ms.locfileid: "30737697"
 - 暗号化は、ファイルの場所 (組織内外) を問わず、ファイル名が変更されていても維持されます。
 - 保存中 (OneDrive アカウントなど) と転送中 (送信中の電子メールなど) の両方で暗号化されています。
 
-暗号化設定は、Office 365 セキュリティ/コンプライアンス センターの **[ラベル]** ページにある **[秘密度]** タブの **[ラベルの作成]** で使用可能になります。
+暗号化の設定は、Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、または Office 365 セキュリティ/コンプライアンス センターで機密ラベルを作成するときに使用できます。
 
 ## <a name="how-encryption-works"></a>暗号化のしくみ
 

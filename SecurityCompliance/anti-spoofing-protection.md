@@ -3,7 +3,7 @@ title: Office 365 でのスプーフィング対策保護
 ms.author: tracyp
 author: MSFTtracyp
 manager: laurawi
-ms.date: 3/6/2019
+ms.date: 03/29/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: この記事では、Office 365 で、偽造された送信者ドメイン (スプーフィングされたドメイン) を使用するフィッシング攻撃を軽減する方法について説明します。 これは、メッセージを分析して、標準の電子メール認証の方法や、その他の送信者評価の手法を使用して認証できないメッセージをブロックすることで実現します。 今回の変更は、Office 365 の組織が対象になるフィッシング攻撃の数を減らすために実装されました。
-ms.openlocfilehash: 00cf4d6ba0fe7bc9bc081466d7b23a8a9b75631e
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 533444d323728d2f238da409256f6547a5c8d209
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936797"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004264"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 でのスプーフィング対策保護
 
@@ -410,34 +410,6 @@ Office 365 の設定が更新されて、スプーフィング対策の適用を
   
 ![スプーフィングされた送信者を許可する際の予定される UX](media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
   
-### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>スパム検出、フィッシング検出、および高度なフィッシング検出の結合方法について
-
-Exchange Online を使用している組織は、ATP の有無にかかわらず、サービスによってメッセージがマルウェア、スパム、高確度スパム、フィッシング、およびバルクとして識別されたときに実行するアクションを指定できます。 ATP ユーザー向けの ATP フィッシング対策ポリシーと、EOP ユーザー向けのフィッシング対策ポリシーがあり、メッセージは複数の検出の種類 (たとえば、マルウェア、フィッシング、およびユーザー偽装) に該当するという事実があるため、どのポリシーが適用されるかについて、ある程度の混乱を招く可能性があります。
-  
-一般に、メッセージに適用されたポリシーは、X-Forefront-Antispam-Report ヘッダーの CAT (カテゴリ) で特定できます。
-  
-|**優先度**|**ポリシー**|**カテゴリ**|**管理の場所**|**適用対象**|
-|:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |マルウェア  <br/> |MALW  <br/> |[マルウェア ポリシー](configure-anti-malware-policies.md) <br/> |すべての組織  <br/> |
-|2  <br/> |フィッシング  <br/> |PHSH  <br/> |[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md) <br/> |すべての組織  <br/> |
-|3  <br/> |高確度スパム  <br/> |HSPM  <br/> |[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md) <br/> |すべての組織  <br/> |
-|4  <br/> |スプーフィング  <br/> |SPOOF  <br/> |[スプーフィング対策ポリシー](https://go.microsoft.com/fwlink/?linkid=864553)、[スプーフィング インテリジェンス](learn-about-spoof-intelligence.md) <br/> |すべての組織  <br/> |
-|5  <br/> |スパム  <br/> |SPM  <br/> |[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md) <br/> |すべての組織  <br/> |
-|6  <br/> |バルク  <br/> |BULK  <br/> |[スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md) <br/> |すべての組織  <br/> |
-|7  <br/> |ドメイン偽装  <br/> |DIMP  <br/> |[Office 365 の ATP フィッシング対策とフィッシング対策ポリシーをセットアップする](set-up-anti-phishing-policies.md) <br/> |ATP ありの組織のみ  <br/> |
-|8  <br/> |ユーザー偽装  <br/> |UIMP  <br/> |[Office 365 の ATP フィッシング対策とフィッシング対策ポリシーをセットアップする](set-up-anti-phishing-policies.md) <br/> |ATP ありの組織のみ <br/> |
-
-複数の異なるフィッシング対策ポリシーがある場合は、優先度が最も高いものが適用されます。 たとえば、次の 2 つのポリシーがあるとします。
-
-|**ポリシー**|**優先度**|**ユーザー/ドメイン偽装**|**スプーフィング対策**|
-|:-----|:-----|:-----|:-----|
-|A  <br/> |1  <br/> |オン  <br/> |オフ  <br/> |
-|B  <br/> |2  <br/> |オフ  <br/> |オン  <br/> |
-
-着信したメッセージがスプーフィングとユーザー偽装の両方として識別され、ポリシー A とポリシー B の適用範囲が同じユーザーのグループに設定されている場合、そのメッセージはスプーフィングとして扱われますが、スプーフィング対策はオフにされていて、SPOOF の優先度 (4) はユーザー偽装の優先度 (8) よりも高いため、どのアクションも適用されません。
-  
-別の種類のフィッシング ポリシーが適用されるようにするには、各種ポリシーの適用対象になるユーザーの設定を調整する必要があります。
-  
 ### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>スプーフィング対策の無効化が正当なシナリオ
 
 スプーフィング対策はフィッシング攻撃からのユーザーの保護を向上するためのものです。そのため、スプーフィング対策保護を無効にすることはお勧めできません。 無効にすることで、ある程度の誤検知を短期的に解決することはできますが、長期的には、より大きなリスクにさらされることになります。 送信者側で認証を設定するコストや、フィッシング ポリシーの調整のためのコストは、通常、1 回限りのイベントであり、要求されるメンテナンスは最小限の定期的なもののみです。 その一方、フィッシング攻撃によってデータが公開されてしまったり、資産が侵害されてしまうと、その回復にかかるコストは非常に高くなります。
@@ -546,18 +518,8 @@ Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
 ### <a name="information-for-individual-users"></a>個々のユーザーに関する情報
 
 個々のユーザーは、スプーフィング対策の安全のヒントに対する操作内容が制限されています。 ただし、一般的なシナリオを解決するために、いくつかのことを実行できます。
-  
-### <a name="common-scenario-1---mailbox-forwarding"></a>一般的なシナリオ #1: メールボックスの転送
-
-別の電子メール サービスを使用しているときに、Office 365 や Outlook.com に電子メールを転送すると、その電子メールにはスプーフィングのマークが付けられ、赤色の安全のヒントが示されることがあります。 Office 365 および Outlook.com では、フォワーダーが Outlook.com、Office 365、Gmail などの [ARC プロトコル](https://arc-spec.org)を使用するサービスの場合は、自動的にこの問題に対応する予定です。 ただし、そのための修正プログラムが展開されるまでは、転送オプションを使用するのではなく、接続先アカウント機能を使用して、メッセージを直接インポートする必要があります。
-  
-Office 365 の接続先アカウントを設定するには、Office 365 Web インターフェイスの右上にある歯車アイコン \> [メール] \> [メール] \> [アカウント] \> [接続されているアカウント] の順に選択します。
-  
-![Office 365: [接続されているアカウント] オプション](media/e8e841ca-8861-4d83-8506-2a0858c51010.jpg)
-  
-Outlook.com の場合は、歯車アイコン \> [オプション] \> [メール] \> [アカウント] \> [接続されているアカウント] の順に進みます。
-  
-### <a name="common-scenario-2---discussion-lists"></a>一般的なシナリオ #2: ディスカッション リスト
+ 
+### <a name="common-scenario-1---discussion-lists"></a>一般的なシナリオ #1 - ディスカッション リスト
 
 ディスカッション リストには、スプーフィング対策に関する既知の問題があります。このリストは、メッセージを転送して、その内容を変更するにもかかわらず元の From: アドレスが保持されるという方法に問題の原因があります。
   
@@ -659,7 +621,7 @@ Office 365 への送信時、会社のトラフィックから送信された電
   
 ### <a name="what-if-you-are-the-owner-of-a-mailing-list"></a>メーリング リストの所有者の場合
 
-セクション「[一般的なシナリオ #2: ディスカッション リスト](#common-scenario-2---discussion-lists)」を参照してください。
+セクション「[一般的なシナリオ #1 - ディスカッション リスト](#common-scenario-1---discussion-lists)」を参照してください。
   
 ### <a name="what-if-you-are-an-infrastructure-provider-such-as-an-internet-service-provider-isp-email-service-provider-esp-or-cloud-hosting-service"></a>インターネット サービス プロバイダー (ISP)、電子メール サービス プロバイダー (ESP)、クラウド ホスティング サービスなどのインフラストラクチャ プロバイダーの場合
 

@@ -12,13 +12,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Office 365 セキュリティ/コンプライアンス センターのグラフィカル ユーザー インターフェイスで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする方法について説明します。
-ms.openlocfilehash: afc5479f08909020d04768c9ca9c20438472b92d
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+description: セキュリティ/コンプライアンス センターのグラフィカル ユーザー インターフェイスで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする方法について説明します。
+ms.openlocfilehash: de7bbc8ee624fe9468dc64a9811db31d529984bf
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639064"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999090"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>カスタムの機密情報の種類を作成する
 
@@ -42,11 +42,11 @@ Office 365 のデータ損失防止 (DLP) には、DLP ポリシーですぐに�
 
     ![インスタンス数と一致精度オプション](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
-次のオプションを使用して、Office 365 セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成できます。
+次のオプションを使用して、セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成できます。
 
 - **UI を使用**: この方法は簡単で高速ですが、PowerShell よりも構成オプションが少なくなります。このトピックの残りの部分では、これらの手順について説明します。
 
-- **PowerShell を使用**: この方法では、まず機密情報の種類を 1 つ以上含む XML ファイル (_ルール パッケージ_と呼ばれる) を作成し、次に、PowerShell を使用してルール パッケージをインポートします (ルール パッケージのインポートは、ルール パッケージの作成と比べて簡単です)。この方法は UI より格段複雑ですが、より多くの構成オプションを使用できます。手順については、「[Office 365 セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)」を参照してください。
+- **PowerShell を使用**: この方法では、まず機密情報の種類を 1 つ以上含む XML ファイル (_ルール パッケージ_と呼ばれる) を作成し、次に、PowerShell を使用してルール パッケージをインポートします (ルール パッケージのインポートは、ルール パッケージの作成と比べて簡単です)。この方法は UI より格段複雑ですが、より多くの構成オプションを使用できます。手順については、「[セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)」を参照してください。
 
 次の表で主な違いについて説明します。
 
@@ -58,9 +58,9 @@ Office 365 のデータ損失防止 (DLP) には、DLP ポリシーですぐに�
 |カスタムの機密情報の種類が Microsoft.SCCManaged.CustomRulePack という名前のルール パッケージに追加されます。|カスタムの機密情報の種類を含む最大 10 個のルール パッケージを作成することができます。|
 |パターンの一致には、プライマリ パターンとすべての補強証拠 (暗黙の AND 演算子を使用) の検出が必要です。|パターンの一致には、プライマリ パターンと構成可能な補強証拠の量 (暗黙の AND および OR 演算子が使用可能) の検出が必要です。|
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- セキュリティ/コンプライアンス センターを開くには、「[Office 365 のセキュリティ センターとコンプライアンス センターに移動する](go-to-the-securitycompliance-center.md)」を参照してください。
+- セキュリティ/コンプライアンス センターを開くには、「[セキュリティ/コンプライアンス センターに移動する](go-to-the-securitycompliance-center.md)」を参照してください。
 
 - カスタムの機密情報の種類では、正規表現 (RegEx) に精通している必要があります。テキストの処理に使用される Boost.RegEx (旧称 RegEx++) エンジンの詳細については、「[Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)」を参照してください。
 

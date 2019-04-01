@@ -3,7 +3,7 @@ title: Azure Information Protection を使用して SharePoint Online ファイ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/08/2018
+ms.date: 03/29/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: '概要: Azure Information Protection を適用して、機密性の高い SharePoint Online チーム サイト内のファイルを保護します。'
-ms.openlocfilehash: 8876de7133721fb1768752fa6482e34f9451c116
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4be30059192bb954a1c2d07d34ece76bb339d7dc
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220987"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999120"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Azure Information Protection を使用して SharePoint Online ファイルを保護する
 
@@ -36,14 +36,15 @@ SharePoint Online 内のファイルに Azure Information Protection を使用�
 
 このソリューションに関する重要な注意点がいくつかあります:
 - Azure Information Protection 暗号化が Office 365 に格納されているファイルに適用される場合、このサービスはこれらのファイルのコンテンツを処理することはできません。共同編集、電子情報開示、検索、Delve、他の共同作業機能は動作しません。データ損失防止 (DLP) ポリシーが操作できるのはメタデータ (Office 365 ラベルを含む) のみで、それらのファイルのコンテンツ (ファイル内のクレジットカード番号など) を操作することはできません。
+
 - このソリューションでは、Azure Information Protection からの保護が適用されるラベルを、ユーザーが選択する必要があります。自動的な暗号化と、インデックスを作成してファイルを検査するための SharePoint の機能を必要とする場合は、SharePoint Online で Information Rights Management (IRM) を使用することを検討してください。IRM 用に SharePoint ライブラリを構成する場合、ファイルが編集用にダウンロードされるときに、ファイルは自動的に暗号化されます。SharePoint IRM には、意思決定に影響を与える可能性のある制限があります。詳細については、「[SharePoint 管理センターで Information Rights Management (IRM) を設定する](https://support.office.com/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239CE6EB-4E81-42DB-BF86-A01362FED65C)」を参照してください。
 
 ## <a name="admin-setup"></a>管理者セットアップ
-まず、「[Office 365 管理センターから Azure RMS をアクティブ化する方法](https://docs.microsoft.com/information-protection/deploy-use/activate-office365)」にある Office 365 サブスクリプションに関する指示を使用します。
+まず、「[Microsoft 365 管理センターから Azure RMS をアクティブ化する方法](https://docs.microsoft.com/information-protection/deploy-use/activate-office365)」にある Office 365 サブスクリプションに関する指示を使用します。
   
 次に、機密性の高い SharePoint Online チーム サイトの保護とアクセス許可用に、新たなスコープ付きポリシーとサブラベルを使用して Azure Information Protection を構成します。
   
-1. セキュリティ管理者または会社管理者のロールのアカウントを使用して、Office 365 ポータルにサインインします。ヘルプを表示するには、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. セキュリティ管理者または会社管理者のロールのアカウントを使用して、管理センターにサインインします。 詳細については、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
 2. ブラウザーで別のタブを開き、Azure portal ([https://portal.azure.com](https://portal.azure.com)) に移動します。
     
@@ -104,19 +105,13 @@ SharePoint Online 内のファイルに Azure Information Protection を使用�
 ## <a name="adding-permissions-for-external-users"></a>外部ユーザーに対するアクセス許可の追加
 Azure Information Protection で保護されているファイルへのアクセス権を外部ユーザーに付与するには、2 つの方法があります。どちらの場合も外部ユーザーには Azure AD アカウントが必要です。外部ユーザーが Azure AD を使用する組織のメンバーでない場合は、サインアップ ページ ([https://aka.ms/aip-signup](https://aka.ms/aip-signup)) を使用して個人で Azure AD アカウントを取得できます。
 
- - 外部ユーザーを、ラベルの保護の構成に使用する Azure AD グループに追加します。最初に、ご使用のディレクトリでアカウントを B2B ユーザーとして追加する必要があります。[Azure Rights Management によるグループ メンバーシップのキャッシュ](https://docs.microsoft.com/azure/information-protection/plan-design/prepare#group-membership-caching-by-azure-information-protection)は、数時間かかる可能性があります。  
+ - 外部ユーザーを、ラベルの保護の構成に使用する Azure AD グループに追加します。 最初に、自分のディレクトリに B2B ユーザーとしてのアカウントを追加する必要があります。 [Azure Rights Management によるグループ メンバーシップのキャッシュ](https://docs.microsoft.com/azure/information-protection/plan-design/prepare#group-membership-caching-by-azure-information-protection)には、数時間かかることがあります。  
  - 外部ユーザーを直接、ラベル保護に追加します。組織 (例: Fabrikam.com) のすべてのユーザー、Azure AD グループ (例: 組織内の財務グループ)、またはユーザーを追加できます。たとえば、監督機関の外部チームをラベルの保護に加えることができます。
 
 ## <a name="see-also"></a>関連項目
 
 [SharePoint Online サイトとファイルをセキュリティで保護する](secure-sharepoint-online-sites-and-files.md)
   
-[開発/テスト環境の SharePoint Online サイトをセキュリティで保護する](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
-  
 [選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [クラウド導入およびハイブリッド ソリューション](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-

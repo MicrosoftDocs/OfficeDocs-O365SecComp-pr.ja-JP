@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 セキュリティ&amp;コンプライアンス センターのラベル アクティビティ エクスプローラーを使用すると、過去 30 日間の SharePoint および OneDrive for Business のすべてコンテンツのラベル アクティビティをすばやく検索して表示することができます。リアルタイム データが表示され、テナントで生じている事柄を明確に把握できます。
-ms.openlocfilehash: 8401e612a117700c0c8338860555c4d52dc4346c
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 55888ff2ef8118389a88955a8f4e047170606524
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410472"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997113"
 ---
 # <a name="view-label-activity-for-documents"></a>ドキュメントのラベル アクティビティを表示する
 
@@ -36,7 +36,7 @@ ms.locfileid: "30410472"
     
 - 各ドキュメントだけでなくフォルダーのラベル アクティビティも表示。今後は、ラベルが付けられたフォルダーの中のファイル数が表示される予定。
     
-ラベル アクティビティ エクスプローラーにアクセスするには、セキュリティ&amp;コンプライアンス センター\> **[データ ガバナンス]** \> **[ラベル アクティビティ エクスプローラー]** の順に移動します。
+ラベル アクティビティ エクスプローラーにアクセスするには、セキュリティ&amp;コンプライアンス センター>**[データ ガバナンス]** > **[ラベル アクティビティ エクスプローラー]** の順に移動します。
   
 なお、ラベル アクティビティ エクスプローラーには、Office 365 Enterprise E5 サブスクリプションが必要となります。
   
