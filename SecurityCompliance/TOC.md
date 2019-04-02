@@ -429,7 +429,7 @@
 ### [選挙運動用の開発/テスト環境でチーム サイトを作成する](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 ## [SharePoint Online サイトとファイルをセキュリティで保護する](secure-sharepoint-online-sites-and-files.md)
 ### [3 層の保護用に SharePoint Online サイトを展開する](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)
-### [Office 365 ラベルと DLP による SharePoint ファイルの保護](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
+### [保持ラベルと DLP により SharePoint Online ファイルを保護する](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
 ### [Azure Information Protection を使用して SharePoint Online ファイルを保護する](protect-sharepoint-online-files-with-azure-information-protection.md)
 ## [分離した SharePoint Online チーム サイト](isolated-sharepoint-online-team-sites.md)
 ### [分離した SharePoint Online チーム サイトの設計](design-an-isolated-sharepoint-online-team-site.md)
