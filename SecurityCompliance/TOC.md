@@ -387,6 +387,47 @@
 #### [Advanced eDiscovery のユーティリティを使用する](use-advanced-ediscovery-utilities.md)
 #### [レポートを実行する](run-reports-in-advanced-ediscovery.md)
 
+# [データ調査を管理します](datainvestigations/overview-data-investigations.md)
+## [リリース ノート](datainvestigations/data-investigations-release-notes.md)
+## [データ流出インシデントを管理します](datainvestigations/manage-data-spillage-incidents.md)
+## [新しい調査を作成します](datainvestigations/create-new-investigation.md)
+ 
+## [調査でデータ検索をします](datainvestigations/search-for-data.md)
+### [検索クエリのビルド](datainvestigations/build-search-queries.md)
+### [検索の統計](datainvestigations/search-statistics.md)
+
+## [エビデンス内のデータをレビューします](datainvestigations/review-data-in-evidence.md)
+### [データクエリを行います](datainvestigations/evidence-query.md)
+### [ドキュメントをタグします](datainvestigations/tag-documents.md)
+### [ドキュメントに注釈づけや墨消しをおこないます](datainvestigations/annotate-and-redact-documents.md)
+### [Office 365由来でないデータをロードします](datainvestigations/load-non-office365-data.md)
+### [データ処理中のエラー修復](datainvestigations/error-remediation.md)
+
+## [アナリティクスを使って、調査をより速く行います](datainvestigations/run-analytics-to-investigate-faster.md)
+### [電子メールのスレッド化](datainvestigations/email-threading.md)
+### [準重複の検出](datainvestigations/near-duplicates.md)
+### [テーマ](datainvestigations/themes.md)
+### [関連性モジュールを実行します](datainvestigations/use-relevance-module.md)
+
+## [調査に関心のあるユーザーを管理します](datainvestigations/manage-people-of-interest.md)
+### [調査で人々のデータに索引を付けます](datainvestigations/index-data-people-of-interest.md)
+### [調査中の人々の監査活動を表示します](datainvestigations/view-people-of-interest-activity.md)
+
+## [調査データをエクスポートします](datainvestigations/export-data.md)
+### [エビデンスから文書をエクスポートします](datainvestigations/export-documents-from-incident.md)
+### [エクスポート ジョブのダウンロード](datainvestigations/download-export-jobs.md)
+
+## [データ調査の設定を行います](datainvestigations/configure-settings-datainvestigations.md)
+### [調査のメンバーを追加または削除します](datainvestigations/add-remove-members.md)
+### [検索と分析の設定を構成する](datainvestigations/configure-search-analytics-settings.md)
+### [調査を完了するか削除します](datainvestigations/close-or-delete-investigation.md)
+
+## データ調査の参考資料
+### [データ調査のリミット](datainvestigations/limits-datainvestigations.md)
+### [サポートされているファイルの種類](datainvestigations/supported-filetypes-datainvestigations.md)
+### [ドキュメントのメタデータ フィールド](datainvestigations/document-metadata-fields.md)
+### [ジョブを管理する](datainvestigations/manage-jobs.md)
+
 # [監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)
 ## [監査ログ検索を有効または無効にする](turn-audit-log-search-on-or-off.md)
 ## [メールボックスの監査を管理する](enable-mailbox-auditing.md)
