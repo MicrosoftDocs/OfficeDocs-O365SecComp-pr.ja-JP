@@ -11,12 +11,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e722a8fbe89a960466ff7995622cedc938075780
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+search.appverid: met150
+ms.openlocfilehash: 741daff150ef52ef99c3da31159c02bc9431757f
+ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998720"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31043328"
 ---
 # <a name="monitor-and-report-data-in-microsoft-365-security"></a>Microsoft 365 セキュリティのデータを監視および報告する
 

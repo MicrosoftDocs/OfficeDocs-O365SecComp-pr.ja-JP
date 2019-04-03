@@ -11,12 +11,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 981cb2e6820cb349ff1e2d101bf21d592c2191c6
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+search.appverid: met150
+ms.openlocfilehash: fa76e2edd3f66595a47fb511881f15c07b441c77
+ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001160"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31043248"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 

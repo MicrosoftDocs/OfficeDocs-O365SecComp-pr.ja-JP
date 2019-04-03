@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: このトピックでは、Microsoft Exchange Online Protection (EOP) のセットアップ方法について説明します。 Office 365 ドメイン ウィザードからここに移動してきた場合、Exchange Online Protection を使用する必要がなければ Office 365 ドメイン ウィザードに戻ってください。 コネクタの構成方法の詳細については、「Configure mail flow using connectors in Office 365」をご覧ください。
-ms.openlocfilehash: 7c5b80ffa103f3ec9b554f69e4bc8ceeccaa6c22
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 496a249f1dc269151dad4b93d2b5cf30fa6ec91b
+ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692706"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31043238"
 ---
 # <a name="set-up-your-eop-service"></a>EOP サービスを設定する
 
@@ -77,7 +77,7 @@ Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプ
   
 ### <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>手順 6: Microsoft 365 管理センターを使用して MX レコードを EOP にポイントする
 
-Office 365 ドメイン構成手順に従って、ドメインの MX レコードを更新し、受信メールが EOP 経由で流れるようにします。サード パーティのフィルタリング サービスを通して電子メールを EOP に送るのではなく、MX レコードが直接 EOP をポイントするようにします。詳細については、「[Office 365 の DNS レコードを作成する ](https://go.microsoft.com/fwlink/p/?LinkId=304219)」を参照してください。
+Office 365 ドメイン構成手順に従って、ドメインの MX レコードを更新し、受信メールが EOP 経由で流れるようにします。サード パーティのフィルタリング サービスを通して電子メールを EOP に送るのではなく、MX レコードが直接 EOP をポイントするようにします。詳細については、「[Office 365 の DNS レコードを作成する ](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)」を参照してください。
   
 #### <a name="how-do-you-know-this-task-worked"></a>このタスクの検証方法
 

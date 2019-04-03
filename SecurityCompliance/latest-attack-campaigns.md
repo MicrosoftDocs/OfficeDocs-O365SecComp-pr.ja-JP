@@ -11,12 +11,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2bd777b6e785d1631810469f699da0823f1c3320
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+search.appverid: met150
+ms.openlocfilehash: e3644f5ace35a574613447ae30b6fa3c665662fe
+ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998680"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31043268"
 ---
 # <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>脅威分析に関する最新の攻撃キャンペーンおよび手法を理解する
 

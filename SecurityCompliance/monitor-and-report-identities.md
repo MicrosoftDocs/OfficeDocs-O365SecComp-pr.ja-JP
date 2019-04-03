@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 セキュリティで id を監視および報告する
+title: Microsoft 365 セキュリティ センターでの ID の監視と報告
 description: 組織内の id を監視し、疑わしいまたは危険な動作を追跡する方法について説明します。
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティセンター、モニター、レポート、id
 ms.prod: w10
@@ -11,14 +11,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 285bc5af108de8a59a65a088ec4e33ae27bff3c1
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+search.appverid: met150
+ms.openlocfilehash: 69ac13fde6e83f5905b95a3eefdc2e1a44156e1d
+ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998890"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31043348"
 ---
-# <a name="monitor-and-report-identities-in-microsoft-365-security"></a>Microsoft 365 セキュリティで id を監視および報告する
+# <a name="monitor-and-report-identities-in-microsoft-365-security"></a>Microsoft 365 セキュリティ センターでの ID の監視と報告
 
 組織内の id を監視し、疑わしいまたは危険な動作を追跡することができます。 **監視 & レポート**の [ **id** ] カテゴリでは、次のものを追跡できます。
 
