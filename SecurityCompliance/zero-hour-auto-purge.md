@@ -1,5 +1,5 @@
 ---
-title: ゼロアワー自動消去 - スパムやマルウェアからの保護
+title: ゼロアワー自動消去 - スパムまたはマルウェアからの保護
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -17,83 +17,81 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: ゼロ時間自動削除 (ZAP) は、ユーザーの受信トレイに既に配信されているスパムまたはマルウェアを含むメッセージを検出し、その悪意のあるコンテンツを無害にする電子メール保護機能です。 これは、検出された悪意のあるコンテンツの種類によってどのような違いがありますか。
-ms.openlocfilehash: b49f7e3b5effec7b67daf6ab8acbf049705a4841
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: 7a357b50a75012408d6958ce528fddf8c203540a
+ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670582"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31479633"
 ---
-# <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a><span data-ttu-id="cf415-104">ゼロアワー自動消去 - スパムやマルウェアからの保護</span><span class="sxs-lookup"><span data-stu-id="cf415-104">Zero-hour auto purge - protection against spam and malware</span></span>
+# <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a><span data-ttu-id="1c0b1-104">ゼロアワー自動消去 - スパムまたはマルウェアからの保護</span><span class="sxs-lookup"><span data-stu-id="1c0b1-104">Zero-hour auto purge - protection against spam and malware</span></span>
 
-## <a name="overview"></a><span data-ttu-id="cf415-105">概要</span><span class="sxs-lookup"><span data-stu-id="cf415-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="1c0b1-105">概要</span><span class="sxs-lookup"><span data-stu-id="1c0b1-105">Overview</span></span>
 
-<span data-ttu-id="cf415-106">ゼロ時間自動削除 (ZAP) は、ユーザーの受信トレイに既に配信されているフィッシング、スパム、またはマルウェアを含むメッセージを検出し、悪意のあるコンテンツを表示する電子メール保護機能です。</span><span class="sxs-lookup"><span data-stu-id="cf415-106">Zero-hour auto purge (ZAP) is an email protection feature that detects messages with phish, spam, or malware that have already been delivered to your users' inboxes, and then renders the malicious content harmless.</span></span> <span data-ttu-id="cf415-107">これは、検出された悪意のあるコンテンツの種類によってどのような違いがありますか。メールの内容、url、または添付ファイルのため、メールを zapped することができます。</span><span class="sxs-lookup"><span data-stu-id="cf415-107">How ZAP does this depends on the type of malicious content detected; mail can be zapped due to mail content, URLs, or attachments.</span></span>
+<span data-ttu-id="1c0b1-106">ゼロ時間自動削除 (ZAP) は、ユーザーの受信トレイに既に配信されているフィッシング、スパム、またはマルウェアを含むメッセージを検出し、悪意のあるコンテンツを表示する電子メール保護機能です。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-106">Zero-hour auto purge (ZAP) is an email protection feature that detects messages with phish, spam, or malware that have already been delivered to your users' inboxes, and then renders the malicious content harmless.</span></span> <span data-ttu-id="1c0b1-107">これは、検出された悪意のあるコンテンツの種類によってどのような違いがありますか。メールの内容、url、または添付ファイルのため、メールを zapped することができます。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-107">How ZAP does this depends on the type of malicious content detected; mail can be zapped due to mail content, URLs, or attachments.</span></span>
   
-<span data-ttu-id="cf415-108">ZAP は、exchange online メールボックスを含む Office 365 サブスクリプションに含まれている既定の exchange online Protection で利用できます。</span><span class="sxs-lookup"><span data-stu-id="cf415-108">ZAP is available with the default Exchange Online Protection that is included with any Office 365 subscription that contains Exchange Online mailboxes.</span></span>
+<span data-ttu-id="1c0b1-108">ZAP は、exchange online メールボックスを含む Office 365 サブスクリプションに含まれている既定の exchange online Protection で利用できます。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-108">ZAP is available with the default Exchange Online Protection that is included with any Office 365 subscription that contains Exchange Online mailboxes.</span></span>
 
-<span data-ttu-id="cf415-109">ZAP は既定で有効になっていますが、次の条件を満たしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="cf415-109">ZAP is turned on by default, but the following conditions must be met:</span></span>
+<span data-ttu-id="1c0b1-109">ZAP は既定で有効になっていますが、次の条件を満たしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-109">ZAP is turned on by default, but the following conditions must be met:</span></span>
   
-- <span data-ttu-id="cf415-110">**迷惑メールフォルダーにメッセージを移動**するように**スパムアクション**が設定されています。</span><span class="sxs-lookup"><span data-stu-id="cf415-110">**Spam action** is set to **Move message to Junk Email folder**.</span></span> <br/><span data-ttu-id="cf415-111">すべてのメールボックスを ZAP でスクリーニングしないようにする場合は、ユーザーのセットにのみ適用される新しいスパムフィルターポリシーを作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="cf415-111">You can also create a new spam filter policy that applies only to a set of users if you don't want all mailboxes to be screened by ZAP.</span></span>
+- <span data-ttu-id="1c0b1-110">**迷惑メールフォルダーにメッセージを移動**するように**スパムアクション**が設定されています。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-110">**Spam action** is set to **Move message to Junk Email folder**.</span></span> <span data-ttu-id="1c0b1-111">すべてのメールボックスを ZAP でスクリーニングしないようにする場合は、ユーザーのセットにのみ適用される新しいスパムフィルターポリシーを作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-111">You can also create a new spam filter policy that applies only to a set of users if you don't want all mailboxes to be screened by ZAP.</span></span>
 
-- <span data-ttu-id="cf415-112">ユーザーが既定の迷惑メール設定を保持しており、迷惑メールの保護がオフになっていない。</span><span class="sxs-lookup"><span data-stu-id="cf415-112">Users have kept their default junk mail settings, and have not turned off junk email protection.</span></span> <span data-ttu-id="cf415-113">(Outlook のユーザーオプションの詳細については[、「迷惑メールフィルターの保護レベルを変更](https://support.office.com/article/change-the-level-of-protection-in-the-junk-email-filter-e89c12d8-9d61-4320-8c57-d982c8d52f6b)する」を参照してください)。</span><span class="sxs-lookup"><span data-stu-id="cf415-113">(See [Change the level of protection in the Junk Email Filter](https://support.office.com/article/change-the-level-of-protection-in-the-junk-email-filter-e89c12d8-9d61-4320-8c57-d982c8d52f6b) for details about user options in Outlook.)</span></span> 
+- <span data-ttu-id="1c0b1-112">ユーザーが既定の迷惑メール設定を保持しており、迷惑メールの保護がオフになっていない。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-112">Users have kept their default junk mail settings, and have not turned off junk email protection.</span></span> <span data-ttu-id="1c0b1-113">(Outlook のユーザーオプションの詳細については[、「迷惑メールフィルターの保護レベルを変更](https://support.office.com/article/change-the-level-of-protection-in-the-junk-email-filter-e89c12d8-9d61-4320-8c57-d982c8d52f6b)する」を参照してください)。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-113">(See [Change the level of protection in the Junk Email Filter](https://support.office.com/article/change-the-level-of-protection-in-the-junk-email-filter-e89c12d8-9d61-4320-8c57-d982c8d52f6b) for details about user options in Outlook.)</span></span> 
   
-## <a name="how-does-zap-work"></a><span data-ttu-id="cf415-114">ZAP はどのように動作しますか?</span><span class="sxs-lookup"><span data-stu-id="cf415-114">How does ZAP work?</span></span>
+## <a name="how-zap-works"></a><span data-ttu-id="1c0b1-114">ZAP のしくみ</span><span class="sxs-lookup"><span data-stu-id="1c0b1-114">How ZAP works</span></span>
 
-<span data-ttu-id="cf415-115">Office 365 は、毎日スパム対策エンジンとマルウェア署名をリアルタイムで更新します。</span><span class="sxs-lookup"><span data-stu-id="cf415-115">Office 365 updates anti-spam engine and malware signatures in real-time on a daily basis.</span></span> <span data-ttu-id="cf415-116">ただし、ユーザーが配信された後にコンテンツが weaponized されている場合を含め、さまざまな理由で、ユーザーは引き続き悪意のあるメッセージを受信トレイに配信する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="cf415-116">However, your users might still get malicious messages delivered to their inboxes for a variety of reasons, including if content is weaponized after being delivered to users.</span></span> <span data-ttu-id="cf415-117">ZAP は、継続的に Office 365 スパムおよびマルウェア署名の更新を監視することによって解決します。</span><span class="sxs-lookup"><span data-stu-id="cf415-117">ZAP addresses this by continually monitoring updates to the Office 365 spam and malware signatures.</span></span> <span data-ttu-id="cf415-118">ZAP は、既にユーザーの受信トレイにある配信済みメッセージを見つけて削除することができます。</span><span class="sxs-lookup"><span data-stu-id="cf415-118">ZAP can find and remove previously delivered messages that are already in users' inboxes.</span></span> 
+<span data-ttu-id="1c0b1-115">Office 365 は、毎日スパム対策エンジンとマルウェア署名をリアルタイムで更新します。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-115">Office 365 updates anti-spam engine and malware signatures in real-time on a daily basis.</span></span> <span data-ttu-id="1c0b1-116">ただし、ユーザーが配信された後にコンテンツが weaponized されている場合を含め、さまざまな理由で、ユーザーは引き続き悪意のあるメッセージを受信トレイに配信する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-116">However, your users might still get malicious messages delivered to their inboxes for a variety of reasons, including if content is weaponized after being delivered to users.</span></span> <span data-ttu-id="1c0b1-117">ZAP は、継続的に Office 365 スパムおよびマルウェア署名の更新を監視することによって解決します。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-117">ZAP addresses this by continually monitoring updates to the Office 365 spam and malware signatures.</span></span> <span data-ttu-id="1c0b1-118">ZAP は、既にユーザーの受信トレイにある配信済みメッセージを見つけて削除することができます。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-118">ZAP can find and remove previously delivered messages that are already in users' inboxes.</span></span>
 
-- <span data-ttu-id="cf415-119">スパムとして識別されたメールの場合、ZAP は未読のメッセージをユーザーの迷惑メールフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="cf415-119">For mail that is identified as spam, ZAP moves unread messages to users' Junk mail folder.</span></span> 
+- <span data-ttu-id="1c0b1-119">スパムとして識別されたメールの場合、ZAP は未読のメッセージをユーザーの迷惑メールフォルダーに移動します。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-119">For mail that is identified as spam, ZAP moves unread messages to users' Junk mail folder.</span></span>
 
-- <span data-ttu-id="cf415-120">フィッシングとして識別されるメールの場合、ZAP は、電子メールが開封されたかどうかに関係なく、ユーザーの迷惑メールフォルダーにメッセージを移動します。</span><span class="sxs-lookup"><span data-stu-id="cf415-120">For mail that is identified as phish, ZAP moves messages to users' Junk mail folder, regardless of whether the email has been read.</span></span>
+- <span data-ttu-id="1c0b1-120">フィッシングとして識別されるメールの場合、ZAP は、電子メールが開封されたかどうかに関係なく、ユーザーの迷惑メールフォルダーにメッセージを移動します。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-120">For mail that is identified as phish, ZAP moves messages to users' Junk mail folder, regardless of whether the email has been read.</span></span>
 
-- <span data-ttu-id="cf415-121">新たに検出されたマルウェアの場合、ZAP は電子メールメッセージの添付ファイルを削除します (電子メールが開封されたかどうかは関係ありません)。</span><span class="sxs-lookup"><span data-stu-id="cf415-121">For newly detected malware, ZAP removes attachments from email messages, regardless of whether the email has been read.</span></span> 
+- <span data-ttu-id="1c0b1-121">新たに検出されたマルウェアの場合、ZAP は電子メールメッセージの添付ファイルを削除します (電子メールが開封されたかどうかは関係ありません)。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-121">For newly detected malware, ZAP removes attachments from email messages, regardless of whether the email has been read.</span></span>
   
-<span data-ttu-id="cf415-122">ZAP アクションは、メールボックスユーザーにとってシームレスです。電子メールメッセージが移動された場合は通知されません。</span><span class="sxs-lookup"><span data-stu-id="cf415-122">The ZAP action is seamless for the mailbox user; they are not notified if an email message is moved.</span></span>
+<span data-ttu-id="1c0b1-122">ZAP アクションは、メールボックスユーザーにとってシームレスです。電子メールメッセージが移動された場合は通知されません。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-122">The ZAP action is seamless for the mailbox user; they are not notified if an email message is moved.</span></span>
   
-<span data-ttu-id="cf415-123">許可リスト、[メールフロールール](https://go.microsoft.com/fwlink/p/?LinkId=722755)、およびエンドユーザールールまたは追加フィルターは、ZAP より優先されます。</span><span class="sxs-lookup"><span data-stu-id="cf415-123">Allow lists, [mail flow rules](https://go.microsoft.com/fwlink/p/?LinkId=722755), and end user rules or additional filters take precedence over ZAP.</span></span>
+<span data-ttu-id="1c0b1-123">許可リスト、[メールフロールール](https://go.microsoft.com/fwlink/p/?LinkId=722755)、およびエンドユーザールールまたは追加フィルターは、ZAP より優先されます。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-123">Allow lists, [mail flow rules](https://go.microsoft.com/fwlink/p/?LinkId=722755), and end user rules or additional filters take precedence over ZAP.</span></span>
   
-## <a name="to-review-or-set-up-a-spam-filter-policy"></a><span data-ttu-id="cf415-124">スパムフィルターポリシーを確認または設定するには</span><span class="sxs-lookup"><span data-stu-id="cf415-124">To review or set up a spam filter policy</span></span>
+## <a name="to-review-or-set-up-a-spam-filter-policy"></a><span data-ttu-id="1c0b1-124">スパムフィルターポリシーを確認または設定するには</span><span class="sxs-lookup"><span data-stu-id="1c0b1-124">To review or set up a spam filter policy</span></span>
   
-1. <span data-ttu-id="cf415-125">に[https://protection.office.com](https://protection.office.com)移動して、Office 365 の職場または学校のアカウントを使用してサインインします。</span><span class="sxs-lookup"><span data-stu-id="cf415-125">Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365.</span></span>
+1. <span data-ttu-id="1c0b1-125">に[https://protection.office.com](https://protection.office.com)移動して、Office 365 の職場または学校のアカウントを使用してサインインします。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-125">Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365.</span></span>
 
-2. <span data-ttu-id="cf415-126">[**脅威の管理**] で、[**スパム対策**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="cf415-126">Under **Threat management**, choose **Anti-spam**.</span></span>
+2. <span data-ttu-id="1c0b1-126">[**脅威の管理**] で、[**スパム対策**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-126">Under **Threat management**, choose **Anti-spam**.</span></span>
 
-3. <span data-ttu-id="cf415-127">標準設定を確認します。</span><span class="sxs-lookup"><span data-stu-id="cf415-127">Review the standard settings.</span></span> 
+3. <span data-ttu-id="1c0b1-127">標準設定を確認します。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-127">Review the standard settings.</span></span>
 
-4. <span data-ttu-id="cf415-128">設定をカスタマイズする場合は、[**ユーザー**設定] タブを選択し、[**ユーザー設定**] をオンにします。</span><span class="sxs-lookup"><span data-stu-id="cf415-128">If you want to customize your settings, select the **Custom** tab, and turn on **Custom settings**.</span></span> <span data-ttu-id="cf415-129">設定を編集し、必要に応じて、[ **+ ポリシーを作成**して新しいポリシーを追加する] を選択します。</span><span class="sxs-lookup"><span data-stu-id="cf415-129">Edit your settings and if you want, choose **+ Create a policy** to add a new policy.</span></span> 
-    
-## <a name="to-see-if-zap-moved-your-message"></a><span data-ttu-id="cf415-130">ZAP がメッセージを移動したかどうかを確認するには</span><span class="sxs-lookup"><span data-stu-id="cf415-130">To see if ZAP moved your message</span></span>
+4. <span data-ttu-id="1c0b1-128">設定をカスタマイズする場合は、[**ユーザー**設定] タブを選択し、[**ユーザー設定**] をオンにします。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-128">If you want to customize your settings, select the **Custom** tab, and turn on **Custom settings**.</span></span> <span data-ttu-id="1c0b1-129">設定を編集し、必要に応じて、[ **+ ポリシーを作成**して新しいポリシーを追加する] を選択します。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-129">Edit your settings and if you want, choose **+ Create a policy** to add a new policy.</span></span>
 
-<span data-ttu-id="cf415-131">ZAP がメッセージを移動したかどうかを確認するには、[脅威保護状態レポート](view-email-security-reports.md#threat-protection-status-report)(または[脅威エクスプローラー](use-explorer-in-security-and-compliance.md)) を使用できます。</span><span class="sxs-lookup"><span data-stu-id="cf415-131">If you want to see if ZAP moved your message, you can use either the [Threat Protection Status report](view-email-security-reports.md#threat-protection-status-report) (or [Threat Explorer](use-explorer-in-security-and-compliance.md)).</span></span>
-    
-## <a name="to-disable-zap"></a><span data-ttu-id="cf415-132">ZAP を無効にするには</span><span class="sxs-lookup"><span data-stu-id="cf415-132">To disable ZAP</span></span>
+## <a name="to-see-if-zap-moved-your-message"></a><span data-ttu-id="1c0b1-130">ZAP がメッセージを移動したかどうかを確認するには</span><span class="sxs-lookup"><span data-stu-id="1c0b1-130">To see if ZAP moved your message</span></span>
+
+<span data-ttu-id="1c0b1-131">ZAP がメッセージを移動したかどうかを確認するには、[脅威保護状態レポート](view-email-security-reports.md#threat-protection-status-report)(または[脅威エクスプローラー](use-explorer-in-security-and-compliance.md)) を使用できます。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-131">If you want to see if ZAP moved your message, you can use either the [Threat Protection Status report](view-email-security-reports.md#threat-protection-status-report) (or [Threat Explorer](use-explorer-in-security-and-compliance.md)).</span></span>
+
+## <a name="to-disable-zap"></a><span data-ttu-id="1c0b1-132">ZAP を無効にするには</span><span class="sxs-lookup"><span data-stu-id="1c0b1-132">To disable ZAP</span></span>
   
-<span data-ttu-id="cf415-133">Office 365 テナントまたはユーザーのセットに対する ZAP を無効にする場合は、 [set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)の EOP コマンドレットの**zapenabled**パラメーターを使用します。</span><span class="sxs-lookup"><span data-stu-id="cf415-133">If you want to disable ZAP for your Office 365 tenant, or a set of users, use the **ZapEnabled** parameter of [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), an EOP cmdlet.</span></span>
-    
-<span data-ttu-id="cf415-134">次の例では、"Test" という名前のコンテンツフィルターポリシーで ZAP が無効になっています。</span><span class="sxs-lookup"><span data-stu-id="cf415-134">In the following example, ZAP is disabled for a content filter policy named "Test".</span></span>
-    
+<span data-ttu-id="1c0b1-133">Office 365 テナントまたはユーザーのセットに対する ZAP を無効にする場合は、 [set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)の EOP コマンドレットの**zapenabled**パラメーターを使用します。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-133">If you want to disable ZAP for your Office 365 tenant, or a set of users, use the **ZapEnabled** parameter of [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), an EOP cmdlet.</span></span>
+
+<span data-ttu-id="1c0b1-134">次の例では、"Test" という名前のコンテンツフィルターポリシーで ZAP が無効になっています。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-134">In the following example, ZAP is disabled for a content filter policy named "Test".</span></span>
+
 ```Powershell
   Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
 ```
 
-## <a name="faq"></a><span data-ttu-id="cf415-135">FAQ</span><span class="sxs-lookup"><span data-stu-id="cf415-135">FAQ</span></span>
+## <a name="faq"></a><span data-ttu-id="1c0b1-135">FAQ</span><span class="sxs-lookup"><span data-stu-id="1c0b1-135">FAQ</span></span>
 
-### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a><span data-ttu-id="cf415-136">正当なメッセージが迷惑メールフォルダーに移動された場合はどうなりますか。</span><span class="sxs-lookup"><span data-stu-id="cf415-136">What happens if a legitimate message is moved to the junk mail folder?</span></span>
+### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a><span data-ttu-id="1c0b1-136">正当なメッセージが迷惑メールフォルダーに移動された場合はどうなりますか。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-136">What happens if a legitimate message is moved to the junk mail folder?</span></span>
   
-<span data-ttu-id="cf415-137">誤[検知](prevent-email-from-being-marked-as-spam.md)の通常のレポートプロセスに従う必要があります。</span><span class="sxs-lookup"><span data-stu-id="cf415-137">You should follow the normal reporting process for [false-positives](prevent-email-from-being-marked-as-spam.md).</span></span> <span data-ttu-id="cf415-138">メッセージが [受信トレイ] から [迷惑メール] フォルダーに移動されるのは、サービスがスパムまたは悪意のあるメッセージであると判断した場合のみです。</span><span class="sxs-lookup"><span data-stu-id="cf415-138">The only reason the message would be moved from the inbox to the junk mail folder would be because the service has determined that the message was spam or malicious.</span></span>
+<span data-ttu-id="1c0b1-137">誤[検知](prevent-email-from-being-marked-as-spam.md)の通常のレポートプロセスに従う必要があります。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-137">You should follow the normal reporting process for [false-positives](prevent-email-from-being-marked-as-spam.md).</span></span> <span data-ttu-id="1c0b1-138">メッセージが [受信トレイ] から [迷惑メール] フォルダーに移動されるのは、サービスがスパムまたは悪意のあるメッセージであると判断した場合のみです。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-138">The only reason the message would be moved from the inbox to the junk mail folder would be because the service has determined that the message was spam or malicious.</span></span>
   
-### <a name="what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a><span data-ttu-id="cf415-139">迷惑メールフォルダーではなく、Office 365 検疫を使用している場合はどうなりますか?</span><span class="sxs-lookup"><span data-stu-id="cf415-139">What if I use the Office 365 quarantine instead of the junk mail folder?</span></span>
+### <a name="what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a><span data-ttu-id="1c0b1-139">迷惑メールフォルダーではなく、Office 365 検疫を使用している場合はどうなりますか?</span><span class="sxs-lookup"><span data-stu-id="1c0b1-139">What if I use the Office 365 quarantine instead of the junk mail folder?</span></span>
   
-<span data-ttu-id="cf415-140">この時点で、ZAP は受信トレイからメッセージを検疫に移動しません。</span><span class="sxs-lookup"><span data-stu-id="cf415-140">ZAP doesn't move messages into quarantine from the Inbox at this time.</span></span>
+<span data-ttu-id="1c0b1-140">この時点で、ZAP は受信トレイからメッセージを検疫に移動しません。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-140">ZAP doesn't move messages into quarantine from the Inbox at this time.</span></span>
   
-### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a><span data-ttu-id="cf415-141">カスタムメールフロールール (ブロック/許可ルール) を持っている場合</span><span class="sxs-lookup"><span data-stu-id="cf415-141">What If I have a custom mail flow rule (Block/ Allow Rule)?</span></span>
+### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a><span data-ttu-id="1c0b1-141">カスタムメールフロールール (ブロック/許可ルール) を持っている場合</span><span class="sxs-lookup"><span data-stu-id="1c0b1-141">What If I have a custom mail flow rule (Block/ Allow Rule)?</span></span>
   
-<span data-ttu-id="cf415-142">管理者によって作成されたルール (メールフロールール) またはブロックと許可ルールが優先されます。</span><span class="sxs-lookup"><span data-stu-id="cf415-142">Rules created by admins (mail flow rules) or Block and Allow rules take precedence.</span></span> <span data-ttu-id="cf415-143">このようなメッセージは、機能の条件から除外されるので、メールフローはルールの処理 (ブロック/許可ルール) に従います。</span><span class="sxs-lookup"><span data-stu-id="cf415-143">Such messages are excluded from the feature criteria so the mail flow will follow the rule action (Block/Allow Rule).</span></span>
+<span data-ttu-id="1c0b1-142">管理者によって作成されたルール (メールフロールール) またはブロックと許可ルールが優先されます。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-142">Rules created by admins (mail flow rules) or Block and Allow rules take precedence.</span></span> <span data-ttu-id="1c0b1-143">このようなメッセージは、機能の条件から除外されるので、メールフローはルールの処理 (ブロック/許可ルール) に従います。</span><span class="sxs-lookup"><span data-stu-id="1c0b1-143">Such messages are excluded from the feature criteria so the mail flow will follow the rule action (Block/Allow Rule).</span></span>
   
-## <a name="related-topics"></a><span data-ttu-id="cf415-144">関連項目</span><span class="sxs-lookup"><span data-stu-id="cf415-144">Related Topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="1c0b1-144">関連項目</span><span class="sxs-lookup"><span data-stu-id="1c0b1-144">Related Topics</span></span>
 
-[<span data-ttu-id="cf415-145">Office 365 の電子メールのスパム対策保護</span><span class="sxs-lookup"><span data-stu-id="cf415-145">Office 365 Email Anti-Spam Protection</span></span>](anti-spam-protection.md)
+[<span data-ttu-id="1c0b1-145">Office 365 の電子メールのスパム対策保護</span><span class="sxs-lookup"><span data-stu-id="1c0b1-145">Office 365 Email Anti-Spam Protection</span></span>](anti-spam-protection.md)
   
-[<span data-ttu-id="cf415-146">検出漏れの問題を防止するために Office 365 スパム フィルターを使用して迷惑メールをブロックする</span><span class="sxs-lookup"><span data-stu-id="cf415-146">Block email spam with the Office 365 spam filter to prevent false negative issues</span></span>](reduce-spam-email.md)
-  
-
+[<span data-ttu-id="1c0b1-146">検出漏れの問題を防止するために Office 365 のスパム フィルターを使用して迷惑メールをブロックする</span><span class="sxs-lookup"><span data-stu-id="1c0b1-146">Block email spam with the Office 365 spam filter to prevent false negative issues</span></span>](reduce-spam-email.md)
