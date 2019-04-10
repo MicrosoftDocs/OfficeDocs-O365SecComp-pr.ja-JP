@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 6779b9eaf5cd07dbc88f400542b6016e91ec9f4c
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: 28577d45c44eabcffcff2d98bc89a664f3fba6f5
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030307"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745299"
 ---
 # <a name="manage-jobs-in-data-investigations-preview"></a>データ調査でジョブを管理する (プレビュー)
 
