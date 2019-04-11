@@ -3,7 +3,7 @@ title: データ損失防止ポリシーの概要
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/29/2019
+ms.date: 04/11/2019
 ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) ポリシーを使用すると、office 365 全体で機密情報を識別、監視、および自動保護することができます。
-ms.openlocfilehash: 4117a99afc804fd397deb45087c5058077f9ff60
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
+ms.sourcegitcommit: 94e9eeab8134a9c4d9004cc16de7da227a0e5cc0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000020"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784108"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>データ損失防止ポリシーの概要
 
@@ -56,13 +56,13 @@ Office 365 セキュリティ&amp;コンプライアンスセンターの [デ�
 
 DLP ポリシーにはいくつかの基本的な内容が含まれます。
   
-- Exchange online、SharePoint online、OneDrive for business のサイト、Microsoft Teams のチャットやチャネルなど、コンテンツの**場所**を保護する場所。 
+- コンテンツを保護する場所: Exchange Online、SharePoint online、OneDrive for business サイトなどの**場所**、および Microsoft Teams のチャットとチャネル。 
     
 - **ルール**を適用してコンテンツを保護するタイミングと方法。ルールは次の要素で構成されます。 
     
-  - ルールを適用する前にコンテンツを一致させる必要がある**条件**。たとえば、組織外の人と共有されている社会保障番号を含むコンテンツのみを検索します。 
+  - ルールを適用する前にコンテンツが一致している必要がある**条件**。 たとえば、組織外の人と共有されている社会保障番号を含むコンテンツのみを検索するようにルールを構成することができます。 
     
-  - **アクション** 条件に一致するコンテンツが検出されるときにルールで自動実行されるアクションです。たとえば、ドキュメントに対するアクセスをブロックし、ユーザーとコンプライアンスの担当者の両方に電子メール通知を送信します。 
+  - 条件に一致するコンテンツが見つかったときにルールが自動的に実行する**アクション**。 たとえば、ドキュメントへのアクセスをブロックし、ユーザーとコンプライアンス責任者の両方に電子メール通知を送信するようにルールを構成することができます。 
     
 ルールを使用して特定の保護要件を満たし、その後共通の保護要件 (たとえば、特定の規定に準拠することが必要なすべてのルール) をグループ化するために 1 つの DLP ポリシーを使用します。
   
@@ -70,7 +70,7 @@ DLP ポリシーにはいくつかの基本的な内容が含まれます。
   
 ![図は、DLP ポリシーに場所とルールが含まれていることを示しています。](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
-### <a name="locations"></a>場所
+### <a name="locations"></a>位置
 
 DLP ポリシーは、Exchange online、SharePoint Online、OneDrive for business、または Microsoft Teams に情報があるかどうかにかかわらず、Office 365 全体の機密情報を検索して保護することができます。 Exchange 電子メール、Microsoft Teams のチャットおよびチャネル、すべての SharePoint または OneDrive ライブラリのコンテンツを保護するか、ポリシーの特定の場所を選択するかを選択できます。
   
@@ -212,10 +212,14 @@ OneDrive for business アカウントのポリシーヒントは次のように�
   
 ## <a name="the-priority-by-which-rules-are-processed"></a>ルールが処理される優先度
 
-ポリシーでルールを作成する場合、各ルールには、作成された順序で優先度が割り当てられます。つまり、最初に作成されたルールの優先度、2番目に作成したルールの優先度が2番目になります。 ルールを作成した後は、ルールを削除して再作成しない限り、その優先度を変更することはできません。
+ポリシーでルールを作成する場合、各ルールには、作成された順序で優先度が割り当てられます。つまり、最初に作成されたルールの優先度、2番目に作成したルールの優先度が2番目になります。 
   
 ![優先順位順のルール](media/f7dc06bf-bc6f-485c-bcdb-606edbcf6565.png)
   
+複数の DLP ポリシーを設定した後で、1つまたは複数のポリシーの優先度を変更できます。 そのためには、ポリシーを選択し、[**ポリシーの編集**] を選択し、[**優先度**] の一覧を使用して優先度を指定します。
+
+![ポリシーの優先度を設定する](media/dlp-set-policy-priority.png)
+
 コンテンツがルールに対して評価されない場合、ルールは優先順位に従って処理されます。 コンテンツが複数のルールと一致する場合、ルールは優先順位に従って処理され、最も制限の厳しいアクションが適用されます。 たとえば、コンテンツが次のすべてのルールに一致する場合は、ルール3が最も優先度の高いルールであるため、ルール3が適用されます。
   
 - ルール 1: ユーザーにのみ通知します。
@@ -244,7 +248,7 @@ OneDrive for business アカウントのポリシーヒントは次のように�
   
 - 機密情報の**ないコンテンツが**多すぎると、ルールに一致します。つまり、誤検知が多すぎます。 
     
-- 機密情報がルールに一致するコンテンツ**が**少なすぎる (つまり、保護アクションが機密情報に対して適用されない)。 
+- 機密情報がルールに一致するコンテンツ**が**少なすぎます。 つまり、保護アクションが機密情報に対して適用されることはありません。 
     
 これらの問題に対処するには、インスタンス数と一致精度を調整して、コンテンツがルールと一致するようにすることで、ルールを調整できます。 ルールで使用される機密情報の種類ごとに、インスタンス数と一致精度の両方があります。
   
@@ -403,6 +407,10 @@ DLP ポリシーを作成する際、段階的にロールアウトして、影�
 DLP ポリシーは、ポリシー内のすべてのルールに影響を与える任意の時点でオフにすることができます。 ただし、ルールエディターで状態を切り替えることによって、各ルールを個別に無効にすることもできます。
   
 ![ポリシー内のルールを無効にするオプション](media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+
+ポリシー内の複数のルールの優先度を変更することもできます。 これを行うには、ポリシーを開いて編集します。 ルールの行で、省略記号 ([.**..**]) を選択してから、[**下へ移動**] や [**最後へ**移動] などのオプションを選択します。
+
+![ルールの優先度を設定する](media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>DLP レポート
 
@@ -500,7 +508,7 @@ DLP ポリシーを作成して適用するときにのみ、これらのアク�
     
 ただし、DLP レポートには、Exchange Online などの Office 365 間でデータをプルする必要があります。 このため、 **DLP レポートのコマンドレットは Exchange Online powershell で使用できます (セキュリティ&amp;コンプライアンスセンターの powershell に**は含まれません)。 そのため、DLP レポートのコマンドレットを使用するには、次のことを行う必要があります。
   
-1. [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [リモート PowerShell による Exchange への接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
 2. 次のいずれかのコマンドレットを DLP レポートに使用します。
     
@@ -512,13 +520,13 @@ DLP ポリシーを作成して適用するときにのみ、これらのアク�
 
 - [テンプレートから DLP ポリシーを作成する](create-a-dlp-policy-from-a-template.md)
     
-- [通知を送信して、DLP ポリシーのポリシーのヒントを表示する](use-notifications-and-policy-tips.md)
+- [DLP ポリシーに関する通知を送信してポリシー ヒントを表示する](use-notifications-and-policy-tips.md)
     
-- [FCI または他のプロパティを含むドキュメントを保護するために DLP ポリシーを作成する](protect-documents-that-have-fci-or-other-properties.md)
+- [FCI または他のプロパティを使用したドキュメントを保護する DLP ポリシーを作成する](protect-documents-that-have-fci-or-other-properties.md)
     
 - [DLP ポリシー テンプレートに含まれるもの](what-the-dlp-policy-templates-include.md)
     
-- [機密情報の種類の検索基準:](what-the-sensitive-information-types-look-for.md)
+- [機密情報の種類の検索基準](what-the-sensitive-information-types-look-for.md)
     
 - [DLP 関数の検索対象](what-the-dlp-functions-look-for.md)
     
