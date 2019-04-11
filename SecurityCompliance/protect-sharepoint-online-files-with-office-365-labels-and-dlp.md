@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: '概要: 情報保護のレベルが多様な SharePoint Online チーム サイトには、保持ラベルとデータ損失防止 (DLP) ポリシーを適用してください。'
-ms.openlocfilehash: be9fe776353af4c420a93e38a0906eeb674ef8a7
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 81173e96ce6e67ee3b513abce4424686abe79e02
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999160"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745259"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>保持ラベルと DLP による SharePoint Online ファイルの保護
 
@@ -48,7 +48,7 @@ ms.locfileid: "30999160"
 |**SharePoint Online チーム サイトの保護レベル**|**ラベル名**|
 |:-----|:-----|
 |ベースライン - パブリック  <br/> |内部パブリック  <br/> |
-|ベースライン - プライベート  <br/> |Kirkland  <br/> |
+|ベースライン - プライベート  <br/> |プライベート  <br/> |
 |機密  <br/> |機密  <br/> |
 |非常に機密性の高い社外秘  <br/> |非常に機密性の高い社外秘  <br/> |
    
@@ -56,9 +56,9 @@ ms.locfileid: "30999160"
 
 このフェーズでは、情報保護の各レベルに応じて決定したラベルを作成して発行します。
   
-1. セキュリティ管理者または会社の管理者のロールが付与されたアカウントで、[Microsoft 365 セキュリティ ポータル](https://security.microsoft.com)にサインインします。
+1. セキュリティ管理者または会社の管理者のロールが付与されたアカウントで [Microsoft 365 コンプライアンス ポータル](https://compliance.microsoft.com)にサインインします。
     
-2. ブラウザーの **[ホーム - Microsoft 365 セキュリティ]** タブで、**[分類] > [ラベル]** をクリックします。
+2. ブラウザーの **[ホーム - Microsoft 365 コンプライアンス]** タブで、**[分類] > [ラベル]** をクリックします。
     
 3. **[保持ラベル] > [ラベルの作成]** をクリックします。
     
@@ -70,7 +70,7 @@ ms.locfileid: "30999160"
     
 7. **[設定の確認]** ウィンドウで、**[ラベルを作成する]** をクリックします。
     
-8. 追加のラベルごとに、**[ラベルの作成]** をクリックして、手順 4 から 7 を繰り返します。
+8. 追加のラベルごとに、**[ラベルの作成]** をクリックして、必要に応じて手順 3 から 7 を繰り返します。
     
 
 ### <a name="publish-your-new-labels"></a>新しいラベルを発行する
@@ -144,9 +144,9 @@ ms.locfileid: "30999160"
     
 11. **[保護するコンテンツの種類を選択する]** ウィンドウで、 **[保存]** をクリックします。
     
-12. **[Customize the type of content you want to protect]\(保護するコンテンツの種類をカスタマイズする\)** ウィンドウで、**[次へ]** をクリックします。
+12. **保護するコンテンツの種類をカスタマイズする** ウィンドウで、**[次へ]** をクリックします。
 
-13. **[What do you want to do if we detect sensitive info?]\(機密性の高い情報が検出された場合に実行する操作\)** ウィンドウで、**[Customize the tip and email]\(ヒントと電子メールをカスタマイズする\)** をクリックします。
+13. **機密性の高い情報が検出された場合に実行する操作** ウィンドウで、**ヒントと電子メールをカスタマイズする** をクリックします。
     
 14. **[ポリシー ヒントと電子メール通知をカスタマイズする]** ウィンドウで、**[ポリシー ヒント テキストをカスタマイズする]** をクリックします。
     
@@ -191,11 +191,11 @@ ms.locfileid: "30999160"
     
 10. **[保護するコンテンツの種類を選択する]** ウィンドウで、 **[保存]** をクリックします。
     
-12. **[Customize the types of sensitive info you want to protect]\(保護する機密情報の種類のカスタマイズ\)** ウィンドウで、**[次へ]** をクリックします。
+12. **保護する機密情報の種類のカスタマイズ** ウィンドウで、**[次へ]** をクリックします。
     
-13. **[What do you want to do if we detect sensitive info?]\(機密情報が検出された場合の処理\)** ウィンドウで、**[Customize the tip and email]\(ヒントと電子メールをカスタマイズする)** をクリックします。
+13. **機密情報が検出された場合の処理** ウィンドウで、**ヒントと電子メールをカスタマイズする** をクリックします。
     
-14. **[Customize policy tips and email notifications]\(ポリシー ヒントと電子メール通知のカスタマイズ\)** ウィンドウで、**[Customize the policy tip text]\(ポリシー ヒントのテキストをカスタマイズする\)** をクリックします。
+14. **ポリシー ヒントと電子メール通知のカスタマイズ** ウィンドウで、**ポリシー ヒントのテキストをカスタマイズする** をクリックします。
     
 15. 次の内容をテキスト ボックスに入力するか、貼り付けます。
     
