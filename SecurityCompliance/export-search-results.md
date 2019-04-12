@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'セキュリティ & コンプライアンスセンターのコンテンツ検索からローカルコンピューターに検索結果をエクスポートします。 電子メールの結果は PST ファイルとしてエクスポートされます。 SharePoint と OneDrive for business サイトのコンテンツは、ネイティブの Office ドキュメントとしてエクスポートされます。 '
-ms.openlocfilehash: f20ad17ba4573485199d72a260598e77bd224ece
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 5d1baa57f466a5ef7657d92b517660e35b0036e8
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000470"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814058"
 ---
 # <a name="export-content-search-results"></a>コンテンツ検索の結果をエクスポートする
 
@@ -33,7 +33,7 @@ ms.locfileid: "31000470"
   
 コンテンツ検索の結果をエクスポートするには、結果を準備してからローカルコンピューターにダウンロードする必要があります。
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - 検索結果をエクスポートするには、Security & コンプライアンスセンターで、export management 役割が割り当てられている必要があります。 この役割は、組み込みの電子情報開示マネージャーの役割グループに割り当てられます。 既定では、Organization Management 役割グループには割り当てられません。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
     
@@ -80,7 +80,7 @@ ms.locfileid: "31000470"
 
 最初の手順では、エクスポートする検索結果を準備します。 結果を準備すると、Microsoft クラウド内の Azure ストレージの場所にアップロードされます。 メールボックスとサイトのコンテンツは、最大で1時間あたり 2 GB にアップロードされることに注意してください。
   
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com) に移動します。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
 2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
     

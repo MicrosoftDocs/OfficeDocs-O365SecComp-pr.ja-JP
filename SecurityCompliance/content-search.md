@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Office 365 または microsoft 365 のコンプライアンスセンターでコンテンツ検索ツールを使用して、メールボックス、SharePoint Online サイト、OneDrive アカウント、Microsoft Teams、Office 365 グループ、Skype for business の会話のコンテンツを検索します。 キーワード検索クエリと検索条件を使用して、検索結果を絞り込むことができます。 その後、検索結果をプレビューしてエクスポートできます。 コンテンツ検索は、GDPR データ主体要求に関連する可能性があるコンテンツを検索するための効果的なツールでもあります。
-ms.openlocfilehash: c9cbf135ce44f26322ca3a6972e0d8a7b749fc8c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 67b32dcc6efcc096b9952be41380a8dc3700a668
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001020"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814068"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 のコンテンツ検索
 
@@ -44,7 +44,7 @@ office 365 または Microsoft 365 のコンプライアンスセンターでコ
 
 検索を実行して検索結果をプレビューおよびエクスポートするために**コンテンツ検索**ページにアクセスできるようにするには、管理者、コンプライアンス責任者、または電子情報開示マネージャーが、Security & コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
   
-1. に[https://compliance.microsoft.com](https://compliance.microsoft.com)移動し、Office 365 の電子メールアドレスとパスワードを使用してサインインします。
+1. に[https://protection.office.com](https://protection.office.com)移動し、Office 365 の電子メールアドレスとパスワードを使用してサインインします。
     
 2. [**検索** \> **コンテンツ検索**] をクリックします。
     
@@ -161,7 +161,7 @@ office 365 または Microsoft 365 のコンプライアンスセンターでコ
   
 - [コンテンツ検索の結果をエクスポートする](export-search-results.md)
     
-- [コンテンツ検索のレポートをエクスポートする](export-a-content-search-report.md)
+- [コンテンツ検索レポートのエクスポート](export-a-content-search-report.md)
     
   
 ## <a name="more-information-about-content-search"></a>コンテンツ検索に関する詳細情報
@@ -207,11 +207,11 @@ office 365 または Microsoft 365 のコンプライアンスセンターでコ
   
 - **[キーワード リストの表示]** チェックボックスをオンにしてから、キーワードをそれぞれ別の行に入力し、各行のキーワード (またはキーワード フレーズ) が **OR** 演算子でつながれる検索クエリを作成する必要があります。単にキーワード ボックスにキーワードのリストを貼り付けるか、キーワードを入力してから **Enter** キーを押すと、**OR** 演算子でつながれません。キーワードのリストを追加する場合の正しくない例と正しい例を以下に示します。 
     
-    **正しくない例**
+    **間違い**
     
     ![キーワード リストの正しくない書式設定方法 (キーワード ボックスにリストを貼り付ける)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
-    **正しい例**
+    **正しい**
     
     ![キーワード リストの正しい書式設定方法 (チェックボックスをオンにしてからリストを貼り付ける)](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   

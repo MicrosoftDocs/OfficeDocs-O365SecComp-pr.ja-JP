@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: セキュリティ & コンプライアンスセンターでコンテンツ検索を使用して、対象となるコレクションを実行します。 対象となるコレクションは、ケースまたは権限アイテムに応答するアイテムが特定のメールボックスまたはサイトフォルダーにあることを確信していることを意味しています。 この記事に記載されているスクリプトを使用して、検索する特定のメールボックスまたはサイトフォルダーのフォルダー ID またはパスを取得します。
-ms.openlocfilehash: 06d1d4d213f0efd5a05badd9a0edef568ae15d75
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 3d9a82926a08b3f7f1f245146e70d79617e7a413
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001240"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813998"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Office 365 のコンテンツ検索を使用した対象コレクション
 
@@ -26,7 +26,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのコン�
 > [!NOTE]
 > SharePoint または OneDrive for business サイト内のフォルダーにあるコンテンツを返すには、このトピックのスクリプトで Path プロパティの代わりに documentlink 管理プロパティを使用します。 documentlink プロパティは、フォルダー内のすべてのコンテンツを返すので、path プロパティよりも堅牢ですが、path プロパティはいくつかのメディアファイルを返すわけではありません。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - 手順1でスクリプトを実行するには、セキュリティ&amp;コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
     
@@ -213,7 +213,7 @@ SharePoint または OneDrive for business サイトから**documentlink**プロ
 
 特定のユーザーのフォルダー id または documentlinks の一覧を収集するスクリプトを実行した後、次の手順では、Security & コンプライアンスセンターに移動し、新しいコンテンツ検索を作成して特定のフォルダーを検索します。 コンテンツ検索キーワードボックス`folderid:<folderid>`で`documentlink:<path>`構成した検索クエリで、またはプロパティ: 値のペアを使用します (または、 **new-compliancesearch**コマンドレットを使用する場合は、 *contentmatchquery*パラメーターの値として指定します)。 `folderid`または`documentlink`プロパティを他の検索パラメーターまたは検索条件と組み合わせることができます。 `folderid`または`documentlink`プロパティのみをクエリに含める場合、検索では指定したフォルダーにあるすべてのアイテムが返されます。 
   
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com) に移動します。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
 2. 手順1でスクリプトの実行に使用したアカウントと資格情報を使用して、Office 365 にサインインします。
     
@@ -229,7 +229,7 @@ SharePoint または OneDrive for business サイトから**documentlink**プロ
     
     - [検索する**特定のサイトを選択する**] をクリックし、手順1でスクリプトを実行したときに指定したものと同じサイト URL を追加します。 
     
-6. [**次へ**] をクリックします。
+6. **[次へ]** をクリックします。
     
 7. [**検索する内容を選択**してください] ページの [キーワード] ボックスに、 `folderid:<folderid>`手順`documentlink:<path>` 1 でスクリプトによって返された値を貼り付けます。 
     

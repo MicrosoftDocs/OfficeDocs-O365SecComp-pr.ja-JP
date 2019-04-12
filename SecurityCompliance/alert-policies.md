@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: セキュリティ/コンプライアンスセンターのアラートポリシーを Office 365 および Microsoft 365 に作成し、潜在的な脅威、データ損失、およびアクセス許可の問題を監視します。 これにより、ユーザーがアラートポリシーの条件に一致するアクティビティを実行するときに生成されるアラートを表示および管理できます。
-ms.openlocfilehash: 137f90668f4f8c78d30a01af8f50278d973bf1cb
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 4770738dd94aaec3fcc776ff7601d99d8d806ace
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000720"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814128"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>セキュリティ/コンプライアンスセンターのアラートポリシー
 
@@ -47,7 +47,7 @@ Office 365 および Microsoft 365 セキュリティ/コンプライアンス�
 
 通知ポリシーは、通知を生成するユーザーまたは管理者のアクティビティを定義する一連のルールおよび条件で構成され、アクティビティを実行するとアラートをトリガーするユーザーのリスト、およびアクティビティが発生する回数を定義するしきい値とn アラートがトリガーされます。 また、ポリシーを分類し、重要度レベルを割り当てます。 これらの2つの設定は、ポリシーを管理し、セキュリティ/コンプライアンスセンターで通知を表示するときにこれらの設定をフィルター処理できるため、アラートポリシー (およびポリシーの条件が一致したときにトリガーされるアラート) を管理するのに役立ちます。 たとえば、同じカテゴリの条件に一致する通知を表示したり、同じ重大度レベルで通知を表示したりすることができます。
   
-通知ポリシーを表示および作成するには[https://compliance.microsoft.com](https://compliance.microsoft.com) 、に移動**** \>してから、[警告**ポリシー**] をクリックします。 
+通知ポリシーを表示および作成するには[https://protection.office.com](https://protection.office.com) 、に移動**** \>してから、[警告**ポリシー**] をクリックします。 
   
 ![セキュリティ/コンプライアンスセンターで、[アラート] をクリックし、[アラートポリシー] をクリックして警告ポリシーを表示および作成します。](media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
   
@@ -100,7 +100,7 @@ Office 365 には、Exchange 管理者のアクセス許可の乱用、マルウ
 
 また、この表は、それぞれに必要な office 365 Enterprise および office 365 US 自治体プランを示しています。 一部の既定の警告ポリシーは、組織が E1/G1 または E3/G3 サブスクリプションに加えて、適切なアドオンサブスクリプションを持っている場合に使用できます。 
   
-|**既定の通知ポリシー**|**説明**|**Category**|**Office 365 Enterprise サブスクリプション**|
+|**既定の通知ポリシー**|**説明**|**カテゴリ**|**Office 365 Enterprise サブスクリプション**|
 |:-----|:-----|:-----|:-----|
 |**潜在的に悪意のある URL のクリックが検出された** <br/> |組織内の[Office 365 ATP Safe リンク](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links)によって保護されているユーザーが悪意のあるリンクをクリックしたときにアラートを生成します。 このイベントは、URL verdict の変更が office 365 atp によって識別された場合、またはユーザーが office 365 atp safe links ページを上書きした場合にトリガーされます (組織の office 365 atp 安全リンクポリシーに基づいて)。 このアラートポリシーには、**高い**重要度が設定されています。 office 365 ATP P2、E5、G5 のお客様の場合、このアラートは自動的に[office 365 自動調査と応答](https://go.microsoft.com/fwlink/?linkid=2084737)をトリガーします。  このアラートをトリガーするイベントの詳細については、「 [Office 365 ATP セーフリンクポリシーの設定](https://docs.microsoft.com/office365/securitycompliance/set-up-atp-safe-links-policies)」を参照してください。  <br/> |脅威の管理 <br/> |E5/G5 または Office 365 ATP P2 アドオンサブスクリプション  <br/> |
 |**転送/リダイレクトルールの作成** <br/> |組織内のユーザーが自分のメールボックスの受信トレイルールを作成し、別の電子メールアカウントにメッセージを転送またはリダイレクトしたときに通知を生成します。 このポリシーでは、web 上の outlook (旧称 outlook web App) または Exchange Online PowerShell を使用して作成された受信トレイルールのみを追跡します。 このポリシーには重要度の**低い**設定があります。 受信トレイルールを使用して outlook on the web で電子メールを転送およびリダイレクトする方法の詳細については、「Use rules in outlook on the web」を参照してください。[メッセージを別のアカウントに自動的に転送](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)します。  <br/> |脅威の管理 <br/> |E1/G1、E3/G3、または E5/G5  <br/> |
@@ -126,7 +126,7 @@ Office 365 には、Exchange 管理者のアクセス許可の乱用、マルウ
 
 組織内のユーザーが実行したアクティビティがアラートポリシーの設定と一致すると、アラートポリシーの設定に応じて、セキュリティ/コンプライアンスセンターの [**通知の表示**] ページに通知が生成され、表示されます。通知は、通知がトリガーされたときに、指定したユーザーのリストにも送信されます。 通知ごとに、[**通知の表示**] ページのダッシュボードに、対応するアラートポリシーの名前、アラートの重要度とカテゴリ、およびアラートが発生した回数 (アラートポリシーで定義) が表示されます。済みこの値は、アラートポリシーのしきい値の設定に基づいています。 ダッシュボードには、各警告の状態も表示されます。 [状態] プロパティを使用して通知を管理する方法の詳細については、「[警告の管理](#managing-alerts)」セクションを参照してください。 
   
-通知を表示するには[https://compliance.microsoft.com](https://compliance.microsoft.com) 、に移動**** \>してから、[アラート**表示の通知**] をクリックします。 
+通知を表示するには[https://protection.office.com](https://protection.office.com) 、に移動**** \>してから、[アラート**表示の通知**] をクリックします。 
   
 ![[セキュリティとコンプライアンス] で、[通知] をクリックし、[通知の表示] をクリックして通知を表示します。](media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
   

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'セキュリティ & コンプライアンスセンターを使用して、Office 365 組織のユーザーおよび管理者のアクティビティを表示するために、統一された監査ログを検索します。 '
-ms.openlocfilehash: d593c7d5403f658175850a66a55603dab2b60d42
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.openlocfilehash: d7dc3849a0a12c52979c46b9ac16cfb0a7cd1f3d
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479683"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814178"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターで監査ログを検索する
 
@@ -147,7 +147,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
   
 ### <a name="step-1-run-an-audit-log-search"></a>手順 1: 監査ログの検索を実行する
 
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com) に移動します。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
     > [!TIP]
     > セキュリティ & コンプライアンスセンターにアクセスするには、(通常のセッションではなく) プライベートブラウズセッションを使用して、現在ログオンしている資格情報が使用されないようにします。 Internet Explorer または Microsoft Edge で InPrivate ブラウズセッションを開くには、CTRL + SHIFT + P キーを押します。 Google Chrome (incognito ウィンドウと呼ばれます) でプライベートブラウジングセッションを開くには、ctrl + SHIFT + N キーを押します。 

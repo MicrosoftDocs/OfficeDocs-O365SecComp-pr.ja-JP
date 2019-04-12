@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: Office 365 または Microsoft 365 のセキュリティ/コンプライアンスセンターで一括検索エディターを使用して、1つまたは複数のコンテンツ検索のクエリとコンテンツの場所をすばやく変更できます。
-ms.openlocfilehash: d372b6b1969e5b321cdea84981449241f3cec1c6
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 3a484ad689b1c638e0e14ed1643edea0f2f56c09
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001100"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813938"
 ---
 # <a name="bulk-edit-content-searches"></a>コンテンツ検索を一括編集する
 
@@ -26,7 +26,7 @@ ms.locfileid: "31001100"
   
 ## <a name="use-the-bulk-search-editor-to-change-queries"></a>一括検索エディターを使用してクエリを変更する
 
-1. に[https://compliance.microsoft.com](https://compliance.microsoft.com)移動し、[**コンテンツ検索**の**検索** \> ] をクリックします。
+1. に[https://protection.office.com](https://protection.office.com)移動し、[**コンテンツ検索**の**検索** \> ] をクリックします。
     
 2. 検索の一覧で、1つ以上の検索を選択し、[**一括検索エディター** ![の一括検索エディター](media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png)] ボタンをクリックします。
     

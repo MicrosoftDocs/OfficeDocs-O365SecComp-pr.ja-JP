@@ -15,22 +15,22 @@ search.appverid:
 - MET150
 ms.assetid: 84a595b8-cd77-4f66-ac52-57a33ddd4773
 description: ネットワークアップロードを使用して、RMS で暗号化された PST ファイルを Office 365 のユーザーメールボックスにインポートする方法について説明します。
-ms.openlocfilehash: 69bbd0082f02bd60101f59c2870bc8adfdc95fda
-ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
+ms.openlocfilehash: 46f77f3fe173da23e08284884bb85c69ab53f710
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30950464"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814158"
 ---
 # <a name="use-network-upload-to-import-rms-encrypted-pst-files-to-office-365"></a>ネットワーク アップロードを使用して、RMS で暗号化された PST ファイルを Office 365 にインポートする
 
-**この記事は、管理者を対象としています。PST ファイルを自分のメールボックスにインポートしようとしていますか?「 [Outlook .pst ファイルからメール、連絡先、予定表をインポートする](https://go.microsoft.com/fwlink/p/?LinkID=785075)」を参照してください。**
+**この記事は、管理者を対象としています。 PST ファイルを自分のメールボックスにインポートしようとしていますか? 「 [Outlook .pst ファイルからメール、連絡先、予定表をインポートする](https://go.microsoft.com/fwlink/p/?LinkID=785075)」を参照してください。**
    
 ユーザーのメールボックスに PST ファイルをインポートするには、ネットワークアップロードオプションと Office 365 インポートサービスを使用します。 ネットワークのアップロードとは、PST ファイルを Microsoft クラウドの一時的なストレージ領域としてアップロードすることを意味します。 その後、Office 365 インポートサービスは、PST ファイルをストレージ領域からターゲットユーザーのメールボックスにコピーします。 インポートサービスの新機能により、PST ファイルを暗号化して Microsoft クラウドに保存することができます。 これらのファイルは、ユーザー メールボックスへのインポート時には暗号化されません。 
   
 PST ファイルを暗号化して Office 365 メールボックスにインポートするために必要な手順は次のとおりです。
   
-[手順 1: PST インポートの Azure Rights Management をセットアップする](#step-1-set-up-azure-rights-management-for-pst-import)
+[手順 1:PST インポートの Azure Rights Management をセットアップする](#step-1-set-up-azure-rights-management-for-pst-import)
 
 [手順 2:PST インポートの暗号化キーを生成する](#step-2-generate-an-encryption-key-for-pst-import)
 
@@ -51,11 +51,11 @@ PST ファイルを暗号化して Office 365 メールボックスにインポ�
   
 office 365 へのデータのインポートの詳細については、「[組織の PST ファイルを office 365 にインポートする」の概要](importing-pst-files-to-office-365.md)を参照してください。
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - PST ファイルを Office 365 メールボックスにインポートするには、Exchange Online でメールボックスのインポートのエクスポートの役割を割り当てられている必要があります。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself as a member. 詳細については、「 [Manage role groups](https://go.microsoft.com/fwlink/p/?LinkId=730688)」の「役割グループに役割を追加する」または「役割グループを作成する」のセクションを参照してください。
     
-    さらに、Office 365 セキュリティ&amp;コンプライアンスセンターでインポートジョブを作成するには、次のいずれかの条件を満たしている必要があります。
+    さらに、Security & コンプライアンスセンターでインポートジョブを作成するには、次のいずれかの条件を満たしている必要があります。
     
   - Exchange Online では、メール受信者の役割が割り当てられている必要があります。 By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
@@ -116,9 +116,9 @@ Rights management サービスをアクティブ化した後、次の手順で�
 
     組織の場所の正しい RMS キー共有場所を決定するには、次の表を使用します。
     
-    |**Location**|**RMS キー共有場所**|
+    |**場所**|**RMS キー共有場所**|
     |:-----|:-----|
-    |North America  <br/> | `https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
+    |北アメリカ  <br/> | `https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
     |欧州連合  <br/> | `https://sp-rms.eu.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
     |地域  <br/> | `https://sp-rms.ap.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
     |南アメリカ  <br/> | `https://sp-rms.sa.aadrm.com/TenantManagement/ServicePartner.svc` <br/> |
@@ -365,10 +365,10 @@ pst ファイルが暗号化され、Office 365 組織の Azure ストレージ�
     | `Workload` <br/> |データのインポート先となる Office 365 サービスを指定します。 PST ファイルをユーザーのメールボックスにインポート`Exchange`するには、を使用します。  <br/> | `Exchange` <br/> |
     | `FilePath` <br/> |手順5で PST ファイルをアップロードした Azure ストレージの場所でのフォルダーの場所を指定します。  <br/>  手順5の`/upload-dest:`パラメーターに、ネットワーク URL にオプションのサブフォルダー名を含めなかった場合は、CSV ファイルでこのパラメーターを空白のままにしておきます。 サブフォルダー名を含める場合は、このパラメーターで指定します。 このパラメーターの値は、大文字と小文字を区別します。 どちらの方法** でも、 `FilePath`パラメーターの値に "ingestiondata" を含めないでください。  <br/> <br/>**重要:** ファイルパス名の大文字と小文字は、手順5で`/upload-dest:`パラメーターの SAS URL にオプションのサブフォルダ名を含めた場合に使用したものと同じである必要があります。 たとえば、手順5でサブ`EncryptedPSTs`フォルダー名を使用し、CSV ファイルの`encryptedpsts` `FilePath`パラメーターでを使用した場合、PST ファイルのインポートは失敗します。 両方のインスタンスで同じケースを使用してください。           |(空白)  <br/> または  <br/>  `EncryptedPSTs` <br/> |
     | `Name` <br/> |ユーザー メールボックスにインポートする PST ファイルの名前を指定します。  このパラメーターの値は、大文字と小文字を区別します。 Azure ストレージの場所にアップロードされる pst ファイルは暗号化されるため、 `.pfile` pst ファイル名に拡張子が追加されます。 CSV ファイルの PST `.pfile`ファイルの名前に拡張機能を追加する必要があります。  <br/><br/> **重要:** CSV ファイルの pst ファイル名の大文字と小文字は、手順5で Azure ストレージの場所にアップロードされた pst ファイルと同じである必要があります。 たとえば、CSV ファイルの`annb.pst.pfile` `Name`パラメーターでを使用していて、実際の pst ファイルの名前が`AnnB.pst`である場合、その pst ファイルのインポートは失敗します。 CSV ファイルの pst の名前では、実際の pst ファイルと同じ大文字と小文字が使用されていることを確認してください。           | `annb.pst.pfile` <br/> |
-    | `Mailbox` <br/> |PST ファイルのインポート先になるメールボックスの電子メール アドレスを指定します。   <br/> 非アクティブなメールボックスに PST ファイルをインポートするには、このパラメーターのメールボックス GUID を指定する必要があります。 この GUID を取得するには、Exchange Online で次の PowerShell コマンドを実行します。`Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | FL Guid` <br/><br/> **注:** 場合によっては、1つのメールボックスがアクティブなメールボックスであり、もう一方のメールボックスが削除済み (非アクティブ) 状態になっているメールボックスが同じメールアドレスを持つ複数のメールボックスが存在することがあります。 このような状況では、PST ファイルをインポートするメールボックスを一意に識別するメールボックス GUID を指定します。 この GUID をアクティブなメールボックスに対して取得するには`Get-Mailbox - <identity of active mailbox> | FL Guid`、次の PowerShell コマンドを実行します。 回復可能な削除 (または非アクティブ) のメールボックスの GUID を取得するには、次のコマンドを実行します。`Get-Mailbox - <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`           | `annb@contoso.onmicrosoft.com` <br/> または  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
+    | `Mailbox` <br/> |PST ファイルのインポート先になるメールボックスの電子メール アドレスを指定します。   <br/> 非アクティブなメールボックスに PST ファイルをインポートするには、このパラメーターのメールボックス GUID を指定する必要があります。 この GUID を取得するには、Exchange Online で次の PowerShell コマンドを実行します。  `Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | FL Guid` <br/><br/> **注:** 場合によっては、1つのメールボックスがアクティブなメールボックスであり、もう一方のメールボックスが削除済み (非アクティブ) 状態になっているメールボックスが同じメールアドレスを持つ複数のメールボックスが存在することがあります。 このような状況では、PST ファイルをインポートするメールボックスを一意に識別するメールボックス GUID を指定します。 この GUID をアクティブなメールボックスに対して取得するには`Get-Mailbox - <identity of active mailbox> | FL Guid`、次の PowerShell コマンドを実行します。 回復可能な削除 (または非アクティブ) のメールボックスの GUID を取得するには、次のコマンドを実行します。  `Get-Mailbox - <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`           | `annb@contoso.onmicrosoft.com` <br/> または  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
     | `IsArchive` <br/> | PST ファイルをユーザーのアーカイブ メールボックスにインポートするかどうかを指定します。 次のような 2 つの選択肢があります。  <br/> **FALSE**PST ファイルをユーザーのプライマリメールボックスにインポートします。  <br/> **TRUE**PST ファイルをユーザーのアーカイブメールボックスにインポートします。  <br/>  If you leave this parameter blank, the PST file is imported to the user's primary mailbox.  <br/><br/> **注:** プライマリメールボックスがオンプレミスであるユーザーのクラウドベースのアーカイブメールボックスに PST ファイルをインポートするには、このパラメーターに**TRUE**を指定し、 `Mailbox`パラメーターのユーザーの社内メールボックスの電子メールアドレスを指定するだけです。           | `FALSE` <br/> または  <br/>  `TRUE` <br/> |
     | `TargetRootFolder` <br/> | PST ファイルのインポート先メールボックスフォルダーを指定します。  <br/>  このパラメーターを空白のままにした場合、PST はメールボックスのルートレベル (受信トレイフォルダーとその他の既定のメールボックスフォルダーと同じレベル) にある**インポート**された新しいフォルダーにインポートされます。  <br/>  を指定`/`した場合、PST ファイル内のアイテムは、ユーザーの受信トレイフォルダーに直接インポートされます。  <br/>  を指定`/<foldername>`した場合、PST ファイルのアイテムは、 * \<foldername\> *という名前のサブフォルダーにインポートされます。 たとえば、を使用`/ImportedPst`した場合、アイテムは**ImportedPst**という名前のサブフォルダーにインポートされます。 このサブフォルダーは、ユーザーの受信トレイフォルダーに配置されます。  <br/><br/> **ヒント:** pst ファイルのインポートに最適なフォルダーの場所を決定できるように、いくつかのテストバッチを実行して、このパラメーターを試してみることをお勧めします。           |(空白)  <br/> または  <br/>  `/` <br/> または  <br/>  `/ImportedPst` <br/> |
-    | `ContentCodePage` <br/> |このオプションパラメーターは、ANSI ファイル形式で PST ファイルをインポートするために使用するコードページの数値を指定します。 このパラメーターは、中国語、日本語、および韓国語 (CJK) の組織から PST ファイルをインポートするために使用されます。これらの言語では、通常、文字エンコードに2バイト文字セット (DBCS) を使用します。 メールボックスフォルダー名に DBCS を使用する言語の PST ファイルをインポートするためにこのパラメーターを使用していない場合は、インポート後にフォルダー名が正しくないことがよくあります。 このパラメーターに使用することがサポートされている値の一覧については、「[コードページ識別子](https://go.microsoft.com/fwlink/p/?LinkId=328514)」を参照してください。  <br/><br/> **注:** 前述したように、これはオプションのパラメーターであり、CSV ファイルに含める必要はありません。 または、1つまたは複数の行の値を空白のままにしておくこともできます。           |(空白)  <br/> または  <br/>  `932`(ANSI/OEM 日本語のコードページ識別子)  <br/> |
+    | `ContentCodePage` <br/> |このオプションパラメーターは、ANSI ファイル形式で PST ファイルをインポートするために使用するコードページの数値を指定します。 このパラメーターは、中国語、日本語、および韓国語 (CJK) の組織から PST ファイルをインポートするために使用されます。これらの言語では、通常、文字エンコードに2バイト文字セット (DBCS) を使用します。 メールボックスフォルダー名に DBCS を使用する言語の PST ファイルをインポートするためにこのパラメーターを使用していない場合は、インポート後にフォルダー名が正しくないことがよくあります。 このパラメーターに使用することがサポートされている値の一覧については、「[コードページ識別子](https://go.microsoft.com/fwlink/p/?LinkId=328514)」を参照してください。  <br/><br/> **注:** 前述したように、これはオプションのパラメーターであり、CSV ファイルに含める必要はありません。 または、1つまたは複数の行の値を空白のままにしておくこともできます。           |(空白)  <br/> または  <br/>  `932` (ANSI/OEM 日本語のコードページ識別子)  <br/> |
     | `SPFileContainer` <br/> |PST インポートの場合は、このパラメーターを空白のままにします。   <br/> |該当なし  <br/> |
     | `SPManifestContainer` <br/> |PST インポートの場合は、このパラメーターを空白のままにします。   <br/> |該当なし  <br/> |
     | `SPSiteUrl` <br/> |PST インポートの場合は、このパラメーターを空白のままにします。   <br/> |該当なし  <br/> |

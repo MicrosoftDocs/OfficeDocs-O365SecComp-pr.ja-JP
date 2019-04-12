@@ -13,12 +13,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: サードパーティの監査をダウンロードし、Microsoft がお客様のデータを安全に保持する方法と、Office 365 を使用する際に ISO、HIPAA、finra、および fedramp に準拠する方法を確認します。
-ms.openlocfilehash: 3c65014246de71e0288874299c591816b1a2ca5c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: d0cb03a7f5cbc34bdce238155372c9e031a95033
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999450"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813958"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターのサービスアシュアランス
 
@@ -53,7 +53,7 @@ ms.locfileid: "30999450"
   
 サービスアシュアランスには、Security & コンプライアンスセンターを使用してアクセスできます。 そのための方法は次のとおりです。
   
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com) に移動します。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
 2. 職場または学校のアカウントを使用して、Office 365 にサインインします。 
     

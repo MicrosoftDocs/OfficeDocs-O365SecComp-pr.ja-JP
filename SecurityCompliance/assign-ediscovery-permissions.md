@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: セキュリティ/コンプライアンス センターを使用して、電子情報開示関連のタスクを実行するために必要なアクセス許可を割り当てます。
-ms.openlocfilehash: d936638173c9f458b6f0bd678a1b80f1d6e9e63f
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
-ms.translationtype: HT
+ms.openlocfilehash: 958dd3f41bb9e578c80608d738fc735f5063148d
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001110"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814048"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子情報開示のアクセス許可を割り当てる
 
@@ -47,11 +47,11 @@ Microsoft Office‍ 365 のセキュリティ/コンプライアンス センタ
 
 - セキュリティ/コンプライアンス センターで電子情報開示のアクセス許可を割り当てるには、組織管理役割グループのメンバーであるか、役割管理の役割が割り当てられている必要があります。
     
-- セキュリティ/コンプライアンス センターの PowerShell で [Add-RoleGroupMember](https://technet.microsoft.com/ja-JP/library/dd638207%28v=exchg.160%29.aspx) コマンドレットを使用して、メールが有効なセキュリティ グループを電子情報開示管理者のサブグループのメンバーとして、電子情報開示管理者の役割グループに追加できます。 ただし、メールが有効なセキュリティ グループを電子情報開示管理者のサブグループに追加することはできません。 詳細については、「[詳細情報](#more-information)」を参照してください。 
+- セキュリティ/コンプライアンス センターの PowerShell で [Add-RoleGroupMember](https://technet.microsoft.com/en-us/library/dd638207%28v=exchg.160%29.aspx) コマンドレットを使用して、メールが有効なセキュリティ グループを電子情報開示管理者のサブグループのメンバーとして、電子情報開示管理者の役割グループに追加できます。 ただし、メールが有効なセキュリティ グループを電子情報開示管理者のサブグループに追加することはできません。 詳細については、「[詳細情報](#more-information)」を参照してください。 
     
 ## <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子情報開示のアクセス許可を割り当てる
 
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com) に移動します。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
 2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
     
@@ -72,7 +72,7 @@ Microsoft Office‍ 365 のセキュリティ/コンプライアンス センタ
 
 次の表では、セキュリティ/コンプライアンス センターの電子情報開示関連の RBAC の役割について説明し、それぞれの役割が既定で割り当てられている組み込みの役割グループを示します。 
     
-|**役割**|**コンプライアンス管理者**|**電子情報開示マネージャーと管理者**|**組織の管理**|**レビュー担当者**|
+|**Role**|**コンプライアンス管理者**|**電子情報開示マネージャー & 管理者**|**組織の管理**|**レビュー担当者**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |ケース管理 <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |コンプライアンス検索 <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |

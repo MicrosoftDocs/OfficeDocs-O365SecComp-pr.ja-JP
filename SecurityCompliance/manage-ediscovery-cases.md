@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: セキュリティ & コンプライアンスセンターを使用して、電子情報開示の保持を作成し、組織内の電子情報開示ケースにアクセスして管理します。
-ms.openlocfilehash: 84cb7eeab55e157f42146f6a0586d32542584680
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 209f31187ad01ffa3e06cf8a5825c4538715fc7d
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000450"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814138"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>セキュリティ センターとコンプライアンス センターの電子情報開示のケースを管理する
 
@@ -71,9 +71,9 @@ ms.locfileid: "31000450"
 > [!IMPORTANT]
 > あるユーザーが、これらの電子情報開示関連のどの役割グループのメンバーでもなく、レビュー担当者の役割が割り当てられた役割グループのメンバーでもない場合は、そのユーザーを電子情報開示ケースのメンバーとして追加することはできません。 
   
- **電子情報開示のアクセス許可を割り当てるには:**
+ **電子情報開示のアクセス許可を割り当てるには、次の操作を実行します。**
   
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com) に移動します。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
 2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
     
@@ -94,7 +94,7 @@ ms.locfileid: "31000450"
 
 次の手順では、新しい電子情報開示ケースを作成します。 電子情報開示のケースを作成するには、電子情報開示マネージャー役割グループのメンバーである必要があります。 前述のとおり、セキュリティ & コンプライアンスセンターで新しいケースを作成した後、組織で Office 365 E5 サブスクリプションを使用している場合は、上級電子情報開示でその同じケースにアクセスできます (およびその他のケースメンバー)。
   
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com) に移動します。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
 2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
     
@@ -406,7 +406,7 @@ Advanced eDiscovery の検索結果を準備すると、光学式文字認識 (O
 
 セキュリティ & コンプライアンスセンターでケースを作成した後は、「Advanced eDiscovery」の同じケースに進むことができます。
   
-Advanced eDiscovery のケースに移動するには、次のようにします。
+Advanced eDiscovery のケースに移動するには、以下を実施します:
   
 1. セキュリティ & コンプライアンスセンターで、[**電子情報** \> **開示電子情報開示**] をクリックして、組織内のケースの一覧を表示します。 
     

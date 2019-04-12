@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: GDPR は、個人データに対して、特定の権限を (データの対象と呼ばれる) EU 市民に提供します。これらの権限には、そのファイルのコピーの取得、変更の要求、ファイルの処理の制限、削除、または電子形式での受信などが含まれます。 個人データに対してアクションを実行するデータ主体による正式な要求は、データ主体要求または DSR と呼ばれます。 Office 365 および Microsoft 365 のコンプライアンスセンターで dsr ケースを使用して、組織の dsr 調査を管理することができます。
-ms.openlocfilehash: d491a0098bfa27818d8a03ded3b2f86da54c0453
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: a131da86350fc288c1c9af371d28464230b742d6
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000110"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814028"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターで DSR ケースツールを使用して GDPR データ主体要求を管理する
 
@@ -84,7 +84,7 @@ dsr ケースツールを使用して dsr 調査を管理するための大ま�
 
 次の手順では、DSR ケースを作成します。 ケースを作成する場合、組み込み検索を開始するか、検索を開始せずにケースを作成するかを選択できます。 次の手順では、検索を開始せずにケースを作成し、ケースにメンバーを追加する方法について説明します。
   
-1. に[https://compliance.microsoft.com](https://compliance.microsoft.com)移動して、職場または学校のアカウントを使用して Office 365 にサインインします。 
+1. に[https://protection.office.com](https://protection.office.com)移動して、職場または学校のアカウントを使用して Office 365 にサインインします。 
     
 2. セキュリティ & コンプライアンスセンターで、[**データプライバシー** \> **データの件名の要求**] をクリック![し、](media/ITPro-EAC-AddIcon.gif) [追加] アイコン [**新しい DSR ケース**] をクリックします。
     

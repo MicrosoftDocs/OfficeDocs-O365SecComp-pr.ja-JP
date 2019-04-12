@@ -3,7 +3,7 @@ title: ゼロアワー自動消去 - スパムまたはマルウェアからの�
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 12/05/2018
+ms.date: 04/11/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: ゼロ時間自動削除 (ZAP) は、ユーザーの受信トレイに既に配信されているスパムまたはマルウェアを含むメッセージを検出し、その悪意のあるコンテンツを無害にする電子メール保護機能です。 これは、検出された悪意のあるコンテンツの種類によってどのような違いがありますか。
-ms.openlocfilehash: 7a357b50a75012408d6958ce528fddf8c203540a
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.openlocfilehash: 507cd6af5320a3b925841786136d518c996e4d29
+ms.sourcegitcommit: 86ff2eba1d57b9d5288840788529e69ad9d836b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479633"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31818604"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>ゼロアワー自動消去 - スパムまたはマルウェアからの保護
 
@@ -48,7 +48,7 @@ Office 365 は、毎日スパム対策エンジンとマルウェア署名をリ
 
 - 新たに検出されたマルウェアの場合、ZAP は電子メールメッセージの添付ファイルを削除します (電子メールが開封されたかどうかは関係ありません)。
   
-ZAP アクションは、メールボックスユーザーにとってシームレスです。電子メールメッセージが移動された場合は通知されません。
+ZAP アクションは、メールボックスユーザーにとってシームレスです。電子メールメッセージが移動された場合は通知されません。 メッセージを2日より前にすることはできません。
   
 許可リスト、[メールフロールール](https://go.microsoft.com/fwlink/p/?LinkId=722755)、およびエンドユーザールールまたは追加フィルターは、ZAP より優先されます。
   
@@ -89,8 +89,11 @@ Office 365 テナントまたはユーザーのセットに対する ZAP を無�
 ### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a>カスタムメールフロールール (ブロック/許可ルール) を持っている場合
   
 管理者によって作成されたルール (メールフロールール) またはブロックと許可ルールが優先されます。 このようなメッセージは、機能の条件から除外されるので、メールフローはルールの処理 (ブロック/許可ルール) に従います。
-  
-## <a name="related-topics"></a>関連項目
+
+### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rule"></a>メッセージが別のフォルダー (たとえば、受信トレイルールなど) に移動した場合はどうなりますか。
+この場合、ZAP は、メッセージが削除されているか、迷惑メールにある場合を除き、この場合でも動作します。
+
+## <a name="related-topics"></a>関連トピック
 
 [Office 365 の電子メールのスパム対策保護](anti-spam-protection.md)
   

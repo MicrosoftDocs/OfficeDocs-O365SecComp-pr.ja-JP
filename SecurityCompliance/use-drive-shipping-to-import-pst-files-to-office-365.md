@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: '管理者向け: pst ファイルをハードドライブにコピーしてから Microsoft に配布することによって、組織の pst ファイルを Office 365 メールボックスに一括インポートする方法について説明します。 '
-ms.openlocfilehash: d0e2c155c267939755a85f30f1ad234dc57cfe5f
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 5f04cc0a29fce7b607920253adb10aefb640c914
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999990"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814118"
 ---
 # <a name="use-drive-shipping-to-import-your-organization-pst-files-to-office-365"></a>ドライブの送付を使用して組織の PST ファイルを Office 365 にインポートする
 
-**この記事は、管理者を対象としています。PST ファイルを自分のメールボックスにインポートしようとしていますか?「 [Outlook .pst ファイルからメール、連絡先、予定表をインポートする](https://go.microsoft.com/fwlink/p/?LinkID=785075)」を参照してください。**
+**この記事は、管理者を対象としています。 PST ファイルを自分のメールボックスにインポートしようとしていますか? 「 [Outlook .pst ファイルからメール、連絡先、予定表をインポートする](https://go.microsoft.com/fwlink/p/?LinkID=785075)」を参照してください。**
    
 Office 365 インポートサービスとドライブ配送を使用して、PST ファイルをユーザーのメールボックスに一括インポートします。 ドライブ送付とは、PST ファイルをハード ディスク ドライブにコピーし、Microsoft にドライブを物理的に送付することを意味します。 Microsoft がハード ドライブを受領すると、データ センターの担当者はハード ドライブのデータを Microsoft クラウド内のストレージ領域にコピーします。 次に、インポートするデータを制御するフィルターを設定することにより、実際にターゲットメールボックスにインポートされた PST データをトリミングする機会があります。 インポートジョブを開始すると、インポートサービスはストレージ領域の PST データをユーザーのメールボックスにインポートします。 ドライブの送付を使用して PST ファイルをユーザーのメールボックスにインポートする方法は、組織の電子メールを Office 365 に移行する方法の1つです。
   
@@ -48,7 +48,7 @@ Office 365 インポートサービスとドライブ配送を使用して、PST
   
 ドライブの送付を使用して pst ファイルを Office 365 にインポートする方法についてよく寄せられる質問については、「[ドライブ出荷を使用して pst ファイルをインポートする](faqimporting-pst-files-to-office-365.md#using-drive-shipping-to-import-pst-files)」を参照してください。 
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - PST ファイルを Office 365 メールボックスにインポートするには、Exchange Online でメールボックスのインポートのエクスポートの役割を割り当てられている必要があります。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself as a member. 詳細については、「 [Manage role groups](https://go.microsoft.com/fwlink/p/?LinkId=730688)」の「役割グループに役割を追加する」または「役割グループを作成する」のセクションを参照してください。
     
@@ -112,7 +112,7 @@ Office 365 インポートサービスとドライブ配送を使用して、PST
 > [!IMPORTANT]
 > drive 送付方法を使用して PST ファイルを正常にインポートするには、Azure インポート/エクスポートツールのバージョン 1 (WAimportExportV1) を使用する必要があります。 Azure インポート/エクスポートツールのバージョン2はサポートされていません。これを使用すると、インポートジョブのハードドライブが正しく準備されない可能性があります。 この手順の手順に従って、Security & コンプライアンスセンターから Azure インポート/エクスポートツールをダウンロードしてください。 
   
-1. に[https://compliance.microsoft.com/](https://compliance.microsoft.com/)移動し、Office 365 組織の管理者アカウントの資格情報を使用してサインインします。 
+1. に[https://protection.office.com/](https://protection.office.com/)移動し、Office 365 組織の管理者アカウントの資格情報を使用してサインインします。 
     
 2. セキュリティ & コンプライアンスセンターの左側のウィンドウで、[**データガバナンス** \>の**インポート**] をクリックします。
     
@@ -230,10 +230,10 @@ Microsoft データセンターの担当者がハードドライブから Azure 
     | `Workload` <br/> |データのインポート先となる Office 365 サービスを指定します。 PST ファイルをユーザーのメールボックスにインポート`Exchange`するには、を使用します。  <br/> | `Exchange` <br/> |
     | `FilePath` <br/> | ハードドライブが Microsoft に出荷されたときに PST ファイルがコピーされる Azure ストレージ領域内のフォルダーの場所を指定します。  <br/>  CSV ファイルのこの列に追加する内容は、前の手順で`/dstdir:`パラメーターに指定した内容によって異なります。 ソースの場所にサブフォルダーがある場合は、 `FilePath`パラメーターの値にサブフォルダーの相対パスが含まれている必要があります。たとえば、[/フォルダー] を選択します。  <br/>  を使用`/dstdir:"ingestiondata/"`した場合は、CSV ファイルでこのパラメーターを空白のままにします。  <br/>  `/dstdir:`パラメーターの値の省略可能なパス名 (たとえば`/dstdir:"ingestiondata/FILESERVER01/PSTs"`、) を指定した場合、CSV ファイルのこのパラメーターにはその pathname ("ingestiondata" を含まない) を使用します。 このパラメーターの値は、大文字と小文字を区別します。  <br/>  どちらの方法** でも、 `FilePath`パラメーターの値に "ingestiondata" を含めないでください。 このパラメーターを空白のままにしておくか、省略可能なパス名のみを指定します。  <br/> > [!IMPORTANT]> ファイルパス名の大文字と小文字は、前の手順で`/dstdir:`パラメーターで指定したものと同じである必要があります。 たとえば、前の手順で`"ingestiondata/FILESERVER01/PSTs"`サブフォルダー名を使用していて、CSV ファイル`fileserver01/psts`の`FilePath`パラメーターで使用した場合、PST ファイルのインポートは失敗します。 両方のインスタンスで同じケースを使用してください。           |(空白)  <br/> または  <br/>  `FILESERVER01/PSTs` <br/> |
     | `Name` <br/> |ユーザー メールボックスにインポートする PST ファイルの名前を指定します。  このパラメーターの値は、大文字と小文字を区別します。  <br/> > [!IMPORTANT]> CSV ファイルの pst ファイル名の大文字と小文字は、手順2で Azure ストレージの場所にアップロードされた pst ファイルと同じである必要があります。 たとえば、CSV ファイルの`annb.pst` `Name`パラメーターでを使用していて、実際の pst ファイルの名前が`AnnB.pst`である場合、その pst ファイルのインポートは失敗します。 CSV ファイルの pst の名前では、実際の pst ファイルと同じ大文字と小文字が使用されていることを確認してください。           | `annb.pst` <br/> |
-    | `Mailbox` <br/> |PST ファイルのインポート先になるメールボックスの電子メール アドレスを指定します。  PST インポート サービスは、PST ファイルのパブリック フォルダーへのインポートをサポートしていないため、パブリック フォルダーの指定はできないことにご注意ください。  <br/> 非アクティブなメールボックスに PST ファイルをインポートするには、このパラメーターのメールボックス GUID を指定する必要があります。 この GUID を取得するには、Exchange Online で次の PowerShell コマンドを実行します。`Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> > [!NOTE]> 場合によっては、1つのメールボックスがアクティブなメールボックスで、もう一方のメールボックスが削除済み (または非アクティブ) 状態になっているメールボックスが同じメールアドレスを持つ複数のメールボックスが存在することがあります。 このような状況では、PST ファイルをインポートするメールボックスを一意に識別するために、メールボックスの GUID を指定する必要があります。 この GUID をアクティブなメールボックスに対して取得するには`Get-Mailbox <identity of active mailbox> | FL Guid`、次の PowerShell コマンドを実行します。 回復可能な削除 (または非アクティブ) のメールボックスの GUID を取得する`Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`には、次のコマンドを実行します。           | `annb@contoso.onmicrosoft.com` <br/> または  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
+    | `Mailbox` <br/> |PST ファイルのインポート先になるメールボックスの電子メール アドレスを指定します。  PST インポート サービスは、PST ファイルのパブリック フォルダーへのインポートをサポートしていないため、パブリック フォルダーの指定はできないことにご注意ください。  <br/> 非アクティブなメールボックスに PST ファイルをインポートするには、このパラメーターのメールボックス GUID を指定する必要があります。 この GUID を取得するには、Exchange Online で次の PowerShell コマンドを実行します。  `Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> > [!NOTE]> 場合によっては、1つのメールボックスがアクティブなメールボックスで、もう一方のメールボックスが削除済み (または非アクティブ) 状態になっているメールボックスが同じメールアドレスを持つ複数のメールボックスが存在することがあります。 このような状況では、PST ファイルをインポートするメールボックスを一意に識別するために、メールボックスの GUID を指定する必要があります。 この GUID をアクティブなメールボックスに対して取得するには`Get-Mailbox <identity of active mailbox> | FL Guid`、次の PowerShell コマンドを実行します。 回復可能な削除 (または非アクティブ) のメールボックスの GUID を取得する`Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`には、次のコマンドを実行します。           | `annb@contoso.onmicrosoft.com` <br/> または  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
     | `IsArchive` <br/> | PST ファイルをユーザーのアーカイブ メールボックスにインポートするかどうかを指定します。 次のような 2 つの選択肢があります。  <br/> **FALSE**PST ファイルをユーザーのプライマリメールボックスにインポートします。  <br/> **TRUE**PST ファイルをユーザーのアーカイブメールボックスにインポートします。 This assumes that the [user's archive mailbox is enabled](enable-archive-mailboxes.md). このパラメーターをに`TRUE`設定し、ユーザーのアーカイブメールボックスが有効になっていない場合、そのユーザーのインポートは失敗します。 1人のユーザーに対してインポートが失敗した場合 (アーカイブが有効になっておら`TRUE`ず、このプロパティがに設定されているため)、インポートジョブの他のユーザーに影響が及ぶことに注意してください。  <br/>  If you leave this parameter blank, the PST file is imported to the user's primary mailbox.  <br/> **注:** プライマリメールボックスがオンプレミスであるユーザーのクラウドベースのアーカイブメールボックスに PST ファイルをインポートするには`TRUE` 、このパラメーターに対してを指定して、 `Mailbox`パラメーターのユーザーの社内メールボックスの電子メールアドレスを指定するだけです。  <br/> | `FALSE` <br/> または  <br/>  `TRUE` <br/> |
     | `TargetRootFolder` <br/> | PST ファイルのインポート先メールボックスフォルダーを指定します。  <br/>  このパラメーターを空白のままにした場合、PST はメールボックスのルートレベル (受信トレイフォルダーとその他の既定のメールボックスフォルダーと同じレベル) にある**インポート**された新しいフォルダーにインポートされます。  <br/>  を指定`/`した場合、PST ファイル内のアイテムは、ユーザーの受信トレイフォルダーに直接インポートされます。  <br/>  を指定`/<foldername>`した場合、PST ファイルのアイテムは、 * \<foldername\> *という名前のフォルダーにインポートされます。 たとえば、を使用`/ImportedPst`すると、アイテムは**ImportedPst**という名前のフォルダーにインポートされます。 このフォルダーは、受信トレイフォルダーと同じレベルにあるユーザーのメールボックスに配置されます。  <br/> |(空白)  <br/> または  <br/>  `/` <br/> または  <br/>  `/ImportedPst` <br/> |
-    | `ContentCodePage` <br/> |このオプションパラメーターは、ANSI ファイル形式で PST ファイルをインポートするために使用するコードページの数値を指定します。 このパラメーターは、中国語、日本語、および韓国語 (CJK) の組織から PST ファイルをインポートするために使用されます。これらの言語では、通常、文字エンコードに2バイト文字セット (DBCS) を使用します。 メールボックスフォルダー名に DBCS を使用する言語の PST ファイルをインポートするためにこのパラメーターを使用していない場合は、インポート後にフォルダー名が正しくないことがよくあります。  <br/> このパラメーターに使用することがサポートされている値の一覧については、「[コードページ識別子](https://go.microsoft.com/fwlink/p/?LinkId=328514)」を参照してください。  <br/> > [!NOTE]> 前述のとおり、これはオプションのパラメーターであり、CSV ファイルに含める必要はありません。 または、1つまたは複数の行の値を空白のままにしておくこともできます。           |(空白)  <br/> または  <br/>  `932`(ANSI/OEM 日本語のコードページ識別子)  <br/> |
+    | `ContentCodePage` <br/> |このオプションパラメーターは、ANSI ファイル形式で PST ファイルをインポートするために使用するコードページの数値を指定します。 このパラメーターは、中国語、日本語、および韓国語 (CJK) の組織から PST ファイルをインポートするために使用されます。これらの言語では、通常、文字エンコードに2バイト文字セット (DBCS) を使用します。 メールボックスフォルダー名に DBCS を使用する言語の PST ファイルをインポートするためにこのパラメーターを使用していない場合は、インポート後にフォルダー名が正しくないことがよくあります。  <br/> このパラメーターに使用することがサポートされている値の一覧については、「[コードページ識別子](https://go.microsoft.com/fwlink/p/?LinkId=328514)」を参照してください。  <br/> > [!NOTE]> 前述のとおり、これはオプションのパラメーターであり、CSV ファイルに含める必要はありません。 または、1つまたは複数の行の値を空白のままにしておくこともできます。           |(空白)  <br/> または  <br/>  `932` (ANSI/OEM 日本語のコードページ識別子)  <br/> |
     | `SPFileContainer` <br/> |PST インポートの場合は、このパラメーターを空白のままにします。   <br/> |該当なし  <br/> |
     | `SPManifestContainer` <br/> |PST インポートの場合は、このパラメーターを空白のままにします。   <br/> |該当なし  <br/> |
     | `SPSiteUrl` <br/> |PST インポートの場合は、このパラメーターを空白のままにします。   <br/> |該当なし  <br/> |
@@ -242,7 +242,7 @@ Microsoft データセンターの担当者がハードドライブから Azure 
 
 次の手順では、Office 365 のインポートサービスで PST インポートジョブを作成します。 前述したように、手順 3 で作成した PST インポートのマッピング ファイルを送信します。 新しいジョブを作成した後、インポートサービスはマッピングファイルの情報を使用して、pst ファイルがハードドライブから Azure ストレージ領域にコピーされた後に、指定されたユーザーメールボックスに pst ファイルをインポートします。その後、インポートジョブを作成して開始します。
   
-1. に[https://compliance.microsoft.com](https://compliance.microsoft.com)移動し、Office 365 組織の管理者アカウントの資格情報を使用してサインインします。 
+1. に[https://protection.office.com](https://protection.office.com)移動し、Office 365 組織の管理者アカウントの資格情報を使用してサインインします。 
     
 2. セキュリティ & コンプライアンスセンターの左側のウィンドウで、[**データガバナンス**] をクリックし、[**インポート**] をクリックします。
     
@@ -328,7 +328,7 @@ Microsoft にハード ドライブを送付する場合は、次の点に注意
 
 Microsoft にハード ドライブを送付した後、インポート サービスのページで次の手順を完了します。
   
-1. に[https://compliance.microsoft.com](https://compliance.microsoft.com)移動し、Office 365 組織の管理者アカウントの資格情報を使用してサインインします。 
+1. に[https://protection.office.com](https://protection.office.com)移動し、Office 365 組織の管理者アカウントの資格情報を使用してサインインします。 
     
 2. 左側のウィンドウで、[**データガバナンス**] をクリックし、[**インポート**] をクリックします。
     
@@ -354,7 +354,7 @@ Microsoft がハードドライブを受信すると、[**インポート**] ペ
   
 PST ファイルが Azure にアップロードされると、進行中の**分析**に状態が変更されます。 これは、Office 365 が pst ファイルのデータ (安全かつ安全な方法) を分析して、アイテムの保存期間と pst ファイルに含まれるさまざまなメッセージの種類を識別することを示しています。 分析が完了し、データをインポートする準備が整ったら、インポートジョブの状態が [**分析完了**] に変更されます。 この時点で、PST ファイルに含まれるすべてのデータをインポートするか、インポートするデータを制御するフィルターを設定することによってインポートされたデータをトリミングするかを選択できます。
   
-1. に[https://compliance.microsoft.com](https://compliance.microsoft.com)移動し、Office 365 組織の管理者アカウントの資格情報を使用してサインインします。 
+1. に[https://protection.office.com](https://protection.office.com)移動し、Office 365 組織の管理者アカウントの資格情報を使用してサインインします。 
     
 2. 左側のウィンドウで、[**データガバナンス** > の**インポート**] をクリックします。
     
@@ -396,7 +396,7 @@ azure ストレージエクスプローラーをインストールして azure �
   
 1. 組織の Shared Access Signature (SAS) URL を取得するには、次の手順を実行します。 この url は、組織および SAS キーで使用される Microsoft クラウド内の Azure ストレージの場所のネットワーク URL の組み合わせです。 このキーは、組織の Azure ストレージの場所にアクセスするために必要なアクセス許可を提供します。
     
-1. に[https://compliance.microsoft.com/](https://compliance.microsoft.com/)移動し、Office 365 組織の管理者アカウントの資格情報を使用してサインインします。 
+1. に[https://protection.office.com/](https://protection.office.com/)移動し、Office 365 組織の管理者アカウントの資格情報を使用してサインインします。 
     
 2. セキュリティ & コンプライアンスセンターの左側のウィンドウで、[**データガバナンス** \>の**インポート**] をクリックします。
     

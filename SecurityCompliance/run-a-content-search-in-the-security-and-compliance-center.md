@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: 'Security & コンプライアンスセンターでコンテンツ検索を使用して、メールボックス、SharePoint Online サイト、および OneDrive for business の場所を検索します。 '
-ms.openlocfilehash: 780a9eacc94985cf1f59993a1d5c2816474b8cb5
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 4c3d9cc024a495ff8464e1117d5f46c13c1b9a08
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000280"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814078"
 ---
 # <a name="run-a-content-search-in-the-security--compliance-center"></a>セキュリティ センターとコンプライアンス センターでコンテンツ検索を実行する
 
@@ -35,7 +35,7 @@ Security & コンプライアンスセンターのコンテンツ検索電子情
     
 コンテンツ検索は、新しい電子情報開示検索ツールで、拡張性とパフォーマンスが向上した新しい機能を備えています。 コンテンツ検索によって、非常に大規模な電子情報開示検索を行えます。 単一のコンテンツ検索において、すべてのメールボックス、すべての Exchange パブリックフォルダー、およびすべての SharePoint Online サイトと OneDrive for business アカウントを検索することができます。 検索できるコンテンツの場所の数に制限はありません。 また、同時に実行できる検索の数の制限もありません。 コンテンツ検索を実行すると、コンテンツの場所の数と予想される検索結果の数が、**コンテンツ検索**ページの [詳細] ウィンドウに表示されます。 検索を実行すると、結果のプレビュー、1つ以上の検索のキーワード統計情報の取得、コンテンツ検索の一括編集、ローカルコンピューターへの結果のエクスポートを行うことができます。 
   
- **内容**
+ **コンテンツ**
   
 [Create a search](run-a-content-search-in-the-security-and-compliance-center.md#create)
   
@@ -47,11 +47,11 @@ Security & コンプライアンスセンターのコンテンツ検索電子情
   
 [Edit a search](run-a-content-search-in-the-security-and-compliance-center.md#edit)
   
-[Retry a search](run-a-content-search-in-the-security-and-compliance-center.md#retry)
+[検索をやり直す](run-a-content-search-in-the-security-and-compliance-center.md#retry)
   
 
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - 検索クエリの作成とブール検索演算子の使用の詳細とガイダンスについては、「[コンテンツ検索のキーワードクエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。 この記事には、機密情報の種類の検索と、組織内外のユーザーが共有するコンテンツの検索に関する情報も含まれています。
     
@@ -69,12 +69,12 @@ Security & コンプライアンスセンターのコンテンツ検索電子情
     
     Office 365 グループおよび Microsoft Teams のコンテンツを検索するためのヒントについては、「」セクションを参照してください。 
     
-[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[ページのトップへ](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="create-a-search"></a>Create a search
 <a name="create"> </a>
 
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com) に移動します。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
 2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
     
@@ -209,7 +209,7 @@ Security & コンプライアンスセンターのコンテンツ検索電子情
     
 - .gzip
     
-[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[ページのトップへ](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="update-search-results"></a>検索結果の更新
 <a name="restart"> </a>
@@ -222,7 +222,7 @@ Security & コンプライアンスセンターのコンテンツ検索電子情
     
     結果を取得中であることを示す状況メッセージが表示されます。 検索が終了すると、詳細ウィンドウの **[結果]** に、更新された情報が表示されます。 詳細ウィンドウの **[検索日]** フィールドの日付が現在の日時に更新されていることに注目してください。 コンテンツ検索の一覧の情報を更新するには、 ****![[更新]](media/O365-MDM-Policy-RefreshIcon.gif)アイコンをクリックします。
     
-[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[ページのトップへ](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="edit-a-search"></a>検索を編集する
 <a name="edit"> </a>
@@ -252,7 +252,7 @@ Security & コンプライアンスセンターのコンテンツ検索電子情
     
     結果を取得中であることを示す状況メッセージが表示されます。 検索が完了すると、詳細ペインの **[結果]** に更新された情報が表示されます。 詳細ペインの **[検索日]** フィールドの日付が現在の日時に更新されていることに注目してください。 検索の一覧の情報を更新するには、 ****![[更新]](media/O365-MDM-Policy-RefreshIcon.gif)アイコンをクリックします。
     
-[先頭へ戻る](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[ページのトップへ](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="more-information"></a>詳細情報
 <a name="moreinfo"> </a>
@@ -273,7 +273,7 @@ Security & コンプライアンスセンターのコンテンツ検索電子情
   
 [その他](#miscellaneous)
   
-[Return to top](#before-you-begin)
+[ページのトップへ](#before-you-begin)
   
 ### <a name="limits-and-performance"></a>制限とパフォーマンス
   
@@ -353,11 +353,11 @@ Security & コンプライアンスセンターのコンテンツ検索電子情
     
   - **[キーワード リストの表示]** チェックボックスをオンにしてから、キーワードをそれぞれ別の行に入力し、各行のキーワード (またはキーワード フレーズ) が **OR** 演算子でつながれる検索クエリを作成する必要があります。単にキーワード ボックスにキーワードのリストを貼り付けるか、キーワードを入力してから **Enter** キーを押すと、**OR** 演算子でつながれません。キーワードのリストを追加する場合の正しくない例と正しい例を以下に示します。 
     
-    **正しくない例**
+    **間違い**
     
     ![キーワード リストの正しくない書式設定方法 (キーワード ボックスにリストを貼り付ける)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
-    **正しい例**
+    **正しい**
     
     ![キーワード リストの正しい書式設定方法 (チェックボックスをオンにしてからリストを貼り付ける)](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Office 365 のセキュリティ & コンプライアンスセンターを使用して、組織のメッセージ保持、電子情報開示、および保持要件をサポートするアーカイブメールボックスを有効にします。
-ms.openlocfilehash: 334af008f6eb8baedff1239ed1692a0ad73acdb6
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000260"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813968"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターでアーカイブメールボックスを有効にする
   
@@ -31,13 +31,13 @@ Office 365 のアーカイブ (インプレースアーカイブとも呼ばれ�
 > [!TIP]
 > Office 365 では、自動拡張アーカイブ機能を使用して、無制限の数のアーカイブストレージを提供しています。 自動拡張アーカイブが有効になっている場合に、ユーザーのアーカイブメールボックス内の最初の記憶域のクォータに達すると、Office 365 は自動的に追加の記憶域を追加します。 これは、ユーザーがメールボックスの記憶域を使い切ることがなく、アーカイブメールボックスを最初に有効にして、組織の自動拡張アーカイブを有効にした後でも、すべてを管理する必要がないことを意味します。 詳しくは、「[Office 365 での無制限アーカイブの概要](unlimited-archiving.md)」をご覧ください。 
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 アーカイブメールボックスを有効または無効にするには、Exchange Online の Mail Recipients 役割を割り当てられている必要があります。 既定では、この役割は Exchange 管理センターの [**アクセス許可**] ページの [受信者管理] および [組織の管理] 役割グループに割り当てられます。 セキュリティ & コンプライアンスセンターに [**アーカイブ**] ページが表示されない場合は、必要なアクセス許可を割り当てるように管理者に依頼してください。 
   
 ## <a name="enable-an-archive-mailbox"></a>アーカイブ メールボックスの有効化
   
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com) に移動します。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
 2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
     
@@ -68,7 +68,7 @@ Office 365 のアーカイブ (インプレースアーカイブとも呼ばれ�
   
 アーカイブメールボックスを無効にするには:
   
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com) に移動します。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
 2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
     
@@ -141,6 +141,6 @@ Exchange Online に接続した後、以下のセクションのコマンドを�
     
   - [保持タグおよびアイテム保持ポリシー](https://go.microsoft.com/fwlink/?LinkId=404424)
     
-  - [Exchange Online の既定のアイテム保持ポリシー](https://go.microsoft.com/fwlink/?linkid=839418)
+  - [Exchange Online の既定のアイテム保持ポリシー ](https://go.microsoft.com/fwlink/?linkid=839418)
     
   - [Office 365 組織のメールボックスのアーカイブおよび削除ポリシーを設定する](set-up-an-archive-and-deletion-policy-for-mailboxes.md)

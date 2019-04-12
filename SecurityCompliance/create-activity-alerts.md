@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: ユーザーが office 365 で特定の操作を実行したときに office 365 が電子メール通知を送信できるように、セキュリティ/コンプライアンスセンターでアクティビティアラートを追加して管理します。
-ms.openlocfilehash: 2bbd5b02ec9497b798c948ac58e5e6ac1501bbc4
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: d71763d4633c3396afdf58400e9cb7b8b8a468e8
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999660"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813988"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>Office 365 でアクティビティ通知を作成する
 
@@ -31,7 +31,7 @@ ms.locfileid: "30999660"
 > [!NOTE]
 > 新しいアクティビティ通知を作成するのではなく、セキュリティ/コンプライアンスセンターで通知ポリシーの使用を開始することをお勧めします。 アラートポリシーは、ユーザーが特定のアクティビティを実行したときにアラートをトリガーする通知ポリシーを作成する機能や、セキュリティ/コンプライアンスセンターの [**通知の表示**] ページに通知を表示するなどの追加機能を提供します。 詳細については、「 [Alert policies](alert-policies.md)」を参照してください。
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - アクティビティアラートを管理するには、Security & コンプライアンスセンターで組織の構成役割が割り当てられている必要があります。 既定では、この役割は、コンプライアンス管理者および組織の管理役割グループに割り当てられます。 役割グループへのメンバーの追加の詳細については、「[ユーザーにセキュリティ & コンプライアンスセンターへのアクセス権を付与する](grant-access-to-the-security-and-compliance-center.md)」を参照してください。
     
@@ -43,7 +43,7 @@ ms.locfileid: "30999660"
     
 ## <a name="create-an-activity-alert"></a>アクティビティアラートを作成する
 
-1. [https://compliance.microsoft.com/#/managealerts](https://compliance.microsoft.com/#/managealerts) に移動します。
+1. [https://protection.office.com/managealerts](https://protection.office.com/managealerts) に移動します。
     
 2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
     
@@ -82,7 +82,7 @@ ms.locfileid: "30999660"
 
 アクティビティ通知をオフにして、電子メール通知が送信されないようにすることができます。 アクティビティアラートをオフにしても、組織のアクティビティアラートの一覧に表示されたままになり、そのプロパティを表示することができます。
   
-1. [https://compliance.microsoft.com/#/managealerts](https://compliance.microsoft.com/#/managealerts) に移動します。
+1. [移動先] [https://protection.office.com/managealerts](https://protection.office.com/managealerts)に移動します。
     
 2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
     
@@ -111,7 +111,7 @@ ms.locfileid: "30999660"
     |:-----|:-----|:-----|
     |サイト上のドキュメントを表示します。  <br/> |ファイルへのアクセス  <br/> |ファイルとフォルダーのアクティビティ  <br/> |
     |文書を編集または変更します。  <br/> |ファイルの変更  <br/> |ファイルとフォルダーのアクティビティ  <br/> |
-    |組織外のユーザーとドキュメントを共有します。  <br/> |ファイル、フォルダー、またはサイトを共有する  <br/> および  <br/> 共有への招待の作成  <br/> 詳細については、「 [Office 365 監査ログで共有監査を使用する](use-sharing-auditing.md)」を参照してください。  <br/> |共有アクティビティとアクセス要求アクティビティ  <br/> |
+    |組織外のユーザーとドキュメントを共有します。  <br/> |ファイル、フォルダー、またはサイトを共有する  <br/> And  <br/> 共有への招待の作成  <br/> 詳細については、「 [Office 365 監査ログで共有監査を使用する](use-sharing-auditing.md)」を参照してください。  <br/> |共有アクティビティとアクセス要求アクティビティ  <br/> |
     |ドキュメントをアップロードまたはダウンロードします。  <br/> |ファイルのアップロード  <br/> または  <br/> ファイルのダウンロード  <br/> |ファイルとフォルダーのアクティビティ  <br/> |
     |サイトへのアクセス許可を変更します。  <br/> |サイト アクセス許可の変更  <br/> |サイト管理アクティビティ  <br/> |
 
@@ -120,7 +120,7 @@ ms.locfileid: "30999660"
     |**ユーザーが実行する処理**|**このアクティビティの通知を作成する**|**アクティビティグループ**|
     |:-----|:-----|:-----|
     |メールボックスから電子メールメッセージを完全に削除 (パージ) します。  <br/> |メールボックスからメッセージを削除した  <br/> | Exchange メールボックス アクティビティ  <br/> |
-    |共有メールボックスから電子メールメッセージを送信します。  <br/> |送信者権限を使ったメッセージの送信  <br/> および  <br/> 代理送信権限を使ったメッセージの送信  <br/> | Exchange メールボックス アクティビティ  <br/> |
+    |共有メールボックスから電子メールメッセージを送信します。  <br/> |送信者権限を使ったメッセージの送信  <br/> And  <br/> 代理送信権限を使ったメッセージの送信  <br/> | Exchange メールボックス アクティビティ  <br/> |
    
 - Security & コンプライアンスセンターの PowerShell で、**新しい activityalert**および**Set activityalert**コマンドレットを使用して、アクティビティ通知を作成および編集することもできます。 これらのコマンドレットを使用してアクティビティ通知を作成または編集する場合は、次の点に注意してください。 
     
