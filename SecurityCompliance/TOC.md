@@ -310,11 +310,12 @@
 #### [検索結果をワーキング セットに追加する](compliance20/add-data-to-working-set.md)
 
 ### [ケース データを確認する](compliance20/reviewing-data-in-working-set.md)
+#### [ワーキング セット内のドキュメントを表示します](compliance20/view-documents-in-working-set.md)
+#### [ワーキング セット内のデータをクエリします](compliance20/working-set-search.md)
 #### [ワーキング セットの管理](compliance20/managing-working-sets.md)
+#### [データを別のワーキング セットに追加します。](compliance20/add-data-to-working-set-from-another-working-set.md)
 #### [ロード セットの管理](compliance20/manage-load-sets.md)
 #### [ワーキング セットに Office 365 以外のデータを読み込む](compliance20/load-non-office365-data.md)
-#### [ワーキング セット内のデータをクエリする](compliance20/working-set-search.md)
-#### [ワーキング セット内のドキュメントを表示する](compliance20/view-documents-in-working-set.md)
 #### [ワーキング セット内のドキュメントにタグ付けする](compliance20/tagging-documents.md)
 
 ### [ケース データを分析する](compliance20/analyzing-data-in-working-set.md)
@@ -396,7 +397,7 @@
 ### [検索クエリのビルド](datainvestigations/build-search-queries.md)
 ### [検索の統計](datainvestigations/search-statistics.md)
 
-## [エビデンスのデータを確認する](datainvestigations/review-data-in-evidence.md)
+## [エビデンスのデータを確認します](datainvestigations/review-data-in-evidence.md)
 ### [データをクエリする](datainvestigations/evidence-query.md)
 ### [ドキュメントにタグ付けする](datainvestigations/tag-documents.md)
 ### [ドキュメントに注釈づけや墨消しをする](datainvestigations/annotate-and-redact-documents.md)
