@@ -124,6 +124,11 @@
         "source_path": "securitycompliance/videos-for-getting-started-with-protecting-your-email.md",
         "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/eop/what-is-eop", 
         "redirect_document_id": true
-    }                                                                                                                            
+    },
+    {
+        "source_path": "securitycompliance/checklist-atp-setup.md",
+        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/protect-against-threats", 
+        "redirect_document_id": true
+    }                                                                                                                                    
   ] 
 }
