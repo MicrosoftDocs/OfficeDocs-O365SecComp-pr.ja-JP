@@ -12,18 +12,18 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: Office 365 のセキュリティ & コンプライアンスセンターおよび Advanced eDiscovery から検索結果をダウンロードし、データを検索するときに、データのスループットを向上させるように Windows レジストリを構成する方法について説明します。
-ms.openlocfilehash: 36a4f1766f3ac0108d1829c93cfca63bc5cf09f5
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 10eff929d6b668d5e2bc22d8ee7f223da4943326
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000920"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958627"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Office 365 から電子情報開示検索の結果をエクスポートするときにダウンロード速度を上げる
 
 office 365 eDiscovery エクスポートツールを使用して、Security & コンプライアンスセンターでコンテンツ検索の結果をダウンロードするか、office 365 Advanced eDiscovery からのデータをダウンロードすると、ツールによって、ダウンロードするための一定数の同時エクスポート操作が開始されます。ローカルコンピューターにデータを作成します。 既定では、同時操作の数は、データのダウンロードに使用しているコンピューターのコア数の8倍に設定されます。 たとえば、デュアルコアコンピューター (1 つのチップ上に2台の中央処理装置があることを意味します) では、既定の同時エクスポート操作数は16です。 データ転送のスループットとダウンロード処理の速度を向上させるために、検索結果のダウンロードに使用するコンピューターで Windows レジストリ設定を構成することによって、同時操作の数を増やすことができます。 ダウンロードプロセスを高速化するには、24回の同時操作の設定から始めることをお勧めします。
   
-低帯域幅ネットワーク経由で検索結果をダウンロードする場合は、この設定値を大きくすると、悪影響を及ぼす可能性があります。 または、高帯域幅ネットワーク (同時操作の最大数は 512) で、24を超える同時操作の設定値を増やすことができる場合もあります。 このレジストリ設定を構成した後で、環境に最適な同時操作数を見つけるために、この設定を変更する必要がある場合があります。
+低帯域幅ネットワーク経由で検索結果をダウンロードする場合は、この設定値を大きくすると、悪影響を及ぼす可能性があります。 または、高帯域幅ネットワーク (同時操作の最大数は 48) で、24を超える同時操作の設定値を増やすことができる場合もあります。 このレジストリ設定を構成した後で、環境に最適な同時操作数を見つけるために、この設定を変更する必要がある場合があります。
   
 ## <a name="create-a-registry-setting-to-change-the-number-of-concurrent-operations-when-exporting-data"></a>レジストリ設定を作成してデータをエクスポートするときの同時操作数を変更する
 

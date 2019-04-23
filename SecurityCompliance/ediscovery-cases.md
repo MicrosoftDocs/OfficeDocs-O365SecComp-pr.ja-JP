@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: セキュリティ & コンプライアンスセンターを使用して、組織内の電子情報開示ケースを作成して管理します。 ケースにメンバーを割り当てたり、コンテンツの場所を保持に配置したり、ケースに関連付けられたコンテンツ検索を実行したり、検索結果をエクスポートしたりすることができます。 また、高度な電子情報開示に関する詳細な分析のためにケースデータを準備することもできます。
-ms.openlocfilehash: cd7e7f9dba947ef28b27faf9df7b9e927ca73bd5
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.openlocfilehash: 5f31153e70495dc28ee276c36e9edfc67638956e
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814108"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958528"
 ---
 # <a name="ediscovery-cases-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターの電子情報開示ケース
 
@@ -77,7 +77,7 @@ Office 365 および Microsoft 365 のコンプライアンスセンターで電
 
 ediscovery アクセス許可の詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
   
- **電子情報開示のアクセス許可を割り当てるには、次の操作を実行します。**
+ **電子情報開示のアクセス許可を割り当てるには:**
   
 1. [https://protection.office.com](https://protection.office.com) に移動します。
     
@@ -95,7 +95,7 @@ ediscovery アクセス許可の詳細については、「[電子情報開示�
 
 ## <a name="step-2-create-a-new-case"></a>手順 2: 新しいケースを作成する
 
-次の手順では、新しい電子情報開示ケースを作成します。 電子情報開示のケースを作成するには、電子情報開示マネージャー役割グループのメンバーである必要があります。 前述のとおり、セキュリティ & コンプライアンスセンターで新しいケースを作成した後、組織で Office 365 E5 サブスクリプションを使用している場合は、上級電子情報開示でその同じケースにアクセスできます (およびその他のケースメンバー)。
+次の手順では、新しい電子情報開示ケースを作成します。 電子情報開示のケースを作成するには、電子情報開示マネージャー役割グループのメンバーである必要があります。 前述のとおり、セキュリティ & コンプライアンスセンターで新しいケースを作成すると、組織に Office 365 E5 サブスクリプションがある場合は、上級電子情報開示でその同じケースにアクセスできるようになります。
   
 1. [https://protection.office.com](https://protection.office.com) に移動します。
     

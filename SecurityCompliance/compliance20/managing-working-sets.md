@@ -14,13 +14,28 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fa227c199d78d2b5f9d102e1eae26054ec431ad2
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 611177522defbbe88274820a6163e5288e7a3e2b
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454729"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958668"
 ---
-# <a name="manage-working-sets-in-advanced-ediscovery-preview"></a>高度な電子情報開示の作業セットを管理する (プレビュー)  
+# <a name="manage-working-sets-in-advanced-ediscovery-preview"></a>高度な電子情報開示の作業セットを管理する (プレビュー)
+作業セットとは、コンテンツの[分析](https://docs.microsoft.com/en-us/office365/securitycompliance/compliance20/analyzing-data-in-working-set)、[クエリ](https://docs.microsoft.com/en-us/office365/securitycompliance/compliance20/working-set-search)、[表示](https://docs.microsoft.com/en-us/office365/securitycompliance/compliance20/view-documents-in-working-set)、[タグ付け](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/compliance20/tagging-documents)、および[エクスポート](https://docs.microsoft.com/en-us/office365/securitycompliance/compliance20/exporting-data-ediscover20)を行うことができる静的なドキュメントセットです。
 
-コンテンツ準備中です。
+# <a name="creating-a-working-set"></a>作業セットの作成
+[作業設定] タブで、 ** [ *+ 作業セットの追加*] ボタンをクリックして、ワーキングセットを作成できます。
+
+![作業セットを追加する](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
+
+[ *+ 作業セットの追加*] ボタンをクリックすると、フライアウトが表示されます。  作業セットに名前を付けて、[保存] ボタンをクリックすることもできます。  作業セットが [*作業セット*] タブに表示されます。
+
+![ワーキングセットポップアップを追加する](../media/5e5c99f8-42ca-4c2f-960f-f1a5709569d1.png)
+
+作業セットにコンテンツを追加するには、次の3つの方法があります。
+1) [検索結果をワーキング セットに追加する](add-data-to-working-set.md)
+2) [ワーキング セットに Office 365 以外のデータを読み込む](load-non-office365-data.md)
+3) [別のワーキングセットからワーキングセットにデータを追加](add-data-to-working-set-from-another-working-set.md)します。
+
+![作業セット](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)

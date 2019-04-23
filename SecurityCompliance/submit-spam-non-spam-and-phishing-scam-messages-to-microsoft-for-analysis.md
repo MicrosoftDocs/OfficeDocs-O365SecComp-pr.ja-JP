@@ -3,7 +3,7 @@ title: スパム、非スパム、フィッシング詐欺メッセージを分�
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 6/11/2018
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'ユーザーは、誤検出および誤検知のスパムメッセージを分析のために Microsoft に送信することができます。 '
-ms.openlocfilehash: 471d497a952345da673ce6b3a6f7e9e78bf9b94d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 75943a923195b522113690d5e176777e47d026d4
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693626"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958678"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する
 
@@ -33,11 +33,11 @@ ms.locfileid: "30693626"
 
 スパムフィルターを通過して、迷惑メールまたはフィッシング詐欺メールとして分類されるメッセージを受信した場合は、必要に応じて microsoft スパム分析チームと microsoft のフィッシング分析チームに "偽否定的" メッセージを送信できます。 アナリストはメッセージを確認し、分類基準を満たす場合は、サービス全体のフィルターに追加します。 
   
-組織全体に適用されるスパム設定について詳しくは、「[検出漏れ問題を防ぐために Office 365 スパム フィルターで迷惑メールをブロックする](https://go.microsoft.com/fwlink/p/?LinkId=534225)」をご覧ください。 この記事には、誤検知を防止するためのヒントが記載されています。
+組織全体に適用されるスパム設定について詳しくは、「[検出漏れ問題を防ぐために Office 365 スパム フィルターで迷惑メールをブロックする](reduce-spam-email.md)」をご覧ください。 この記事には、誤検知を防止するためのヒントが記載されています。
   
 迷惑メール メッセージを送信するには、次のようにします。
   
-- outlook および web 上の outlook では、Microsoft outlook 用のレポートメッセージアドインを使用します。 このツールをインストールして使用する方法については、「[レポートメッセージアドインを有効](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)にする」を参照してください。 
+- outlook および web 上の outlook では、Microsoft outlook 用のレポートメッセージアドインを使用します。 このツールをインストールして使用する方法については、「[レポートメッセージアドインを有効](enable-the-report-message-add-in.md)にする」を参照してください。 
         
 - 次の手順で説明するように、電子メールを使用して、迷惑メールまたはフィッシング詐欺として分類されるメッセージを Microsoft に送信することもできます。
     
@@ -66,7 +66,7 @@ Microsoft に迷惑メールまたはフィッシング詐欺メッセージを�
 
 メッセージが誤って迷惑メールとして識別された場合は、「偽陽性」メッセージを Microsoft スパム分析チームに送信できます。 アナリストは、メッセージの評価と分析を行います。 分析結果によっては、このメッセージが許可されるようにサービス全体のスパム コンテンツ フィルター ルールが調整されることがあります。
   
-管理者は、組織全体に適用されるその他のスパム設定情報を確認できます。 [メッセージがスパムとしてマークされないようにする方法に](https://go.microsoft.com/fwlink/p/?LinkId=534224)ついて説明します。 管理者レベルの制御権限を持っている場合に誤検出防止に役立つ情報を記載しています。
+管理者は、組織全体に適用されるその他のスパム設定情報を確認できます。 [メッセージがスパムとしてマークされないようにする方法に](prevent-email-from-being-marked-as-spam.md)ついて説明します。 管理者レベルの制御権限を持っている場合に誤検出防止に役立つ情報を記載しています。
   
 スパムではないメッセージを送信するには、次のようにします。
   
@@ -82,7 +82,7 @@ Microsoft に迷惑メールまたはフィッシング詐欺メッセージを�
     
   - ユーザーは、次のチャネルを使用して、自分のスパム検疫済みメッセージを解放し、誤検知として報告することができます。 
     
-  - Exchange 管理センター (EAC) ユーザー インターフェイス。 詳細については、「[Find and Release Quarantined Messages (End Users)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx)」を参照してください。
+  - Exchange 管理センター (EAC) ユーザー インターフェイス。 詳細については、「[Find and Release Quarantined Messages (End Users)](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。
     
   - エンドユーザー スパム通知メッセージ (管理者が有効にしている場合)。 
     
@@ -118,10 +118,10 @@ Microsoft に迷惑メールまたはフィッシング詐欺メッセージを�
 ## <a name="for-more-information"></a>関連情報
 <a name="sectionSection4"> </a>
 
-[スパム対策とマルウェア対策の保護](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)
+[スパム対策とマルウェア対策の保護](anti-spam-and-anti-malware-protection.md)
   
-[メッセージがスパムとしてマークされないようにする方法](https://go.microsoft.com/fwlink/p/?LinkId=534224)
+[メッセージがスパムとしてマークされないようにする方法](prevent-email-from-being-marked-as-spam.md)
   
-[検出漏れの問題を防止するために Office 365 スパム フィルターを使用して迷惑メールをブロックする](https://go.microsoft.com/fwlink/p/?LinkId=534225)
+[検出漏れの問題を防止するために Office 365 スパム フィルターを使用して迷惑メールをブロックする](reduce-spam-email.md)
   
 

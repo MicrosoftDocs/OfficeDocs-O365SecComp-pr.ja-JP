@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Office 365 のセキュリティ & コンプライアンスセンターでコンテンツ検索の実際の結果をエクスポートする代わりに、検索結果レポートをエクスポートするだけで済みます。 レポートには、検索結果の概要と、エクスポートされる各アイテムの詳細情報を含むドキュメントが含まれます。
 ms.openlocfilehash: 57c8a9be5c53998570f6ff15a49df69e27745e26
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813928"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958728"
 ---
 # <a name="export-a-content-search-report"></a>コンテンツ検索レポートのエクスポート
 
@@ -48,7 +48,7 @@ ms.locfileid: "31813928"
     
     - Microsoft Edge
     
-      または
+      or
     
     - Microsoft Internet Explorer 10 以降のバージョン
     

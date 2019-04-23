@@ -3,7 +3,7 @@ title: Office 365 での動的配信とプレビュー、ATP の安全な添付�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/12/2019
+ms.date: 04/19/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: ATP の安全な添付ファイルのポリシーを設定する場合は、[動的配信] を選択してメッセージの遅延を回避し、スキャンされた添付ファイルをプレビューできるようにします。
-ms.openlocfilehash: d27fa16f8d1d117aa56a2080eb020ab3638ca6fe
-ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.openlocfilehash: 567b5f0c5bc75123169073bf5dc33de191187846
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573511"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958568"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Office 365 での動的配信とプレビュー、ATP の安全な添付ファイル
 
@@ -81,4 +81,4 @@ ATP の安全な添付ファイルのスキャンは、Office 365 データが�
 
 - [セキュリティで保護された、または汎用インターネットメール内線 (S/MIME)](s-mime-for-message-signing-and-encryption.md)で暗号化されたメッセージ
 
-動的配信がサポートされていない場合、ATP の安全な添付ファイルは電子メールメッセージをスキャンしません。 ただし、ATP の安全な[リンクポリシー](set-up-atp-safe-links-policies.md)の構成方法によっては、電子メールメッセージ (および Office ファイル) 内の url がチェックされます。
+- 動的配信がサポートされていない場合、ATP の安全な添付ファイルは電子メールメッセージをスキャンしません。 ただし、 [ATP の安全なリンクポリシー](set-up-atp-safe-links-policies.md)がどのように構成されているかに応じて、url を含む添付ファイル付きの電子メールメッセージを配信することが確認されます。 このような場合、電子メールメッセージと Office ファイルの url がチェックされます。

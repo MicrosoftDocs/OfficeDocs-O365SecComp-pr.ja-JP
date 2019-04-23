@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: セキュリティ/コンプライアンス センターを使用して、電子情報開示関連のタスクを実行するために必要なアクセス許可を割り当てます。
 ms.openlocfilehash: 958dd3f41bb9e578c80608d738fc735f5063148d
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814048"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958598"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子情報開示のアクセス許可を割り当てる
 
@@ -72,7 +72,7 @@ Microsoft Office‍ 365 のセキュリティ/コンプライアンス センタ
 
 次の表では、セキュリティ/コンプライアンス センターの電子情報開示関連の RBAC の役割について説明し、それぞれの役割が既定で割り当てられている組み込みの役割グループを示します。 
     
-|**Role**|**コンプライアンス管理者**|**電子情報開示マネージャー & 管理者**|**組織の管理**|**レビュー担当者**|
+|**役割**|**コンプライアンス管理者**|**電子情報開示マネージャーと管理者**|**組織の管理**|**レビュー担当者**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |ケース管理 <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |コンプライアンス検索 <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |

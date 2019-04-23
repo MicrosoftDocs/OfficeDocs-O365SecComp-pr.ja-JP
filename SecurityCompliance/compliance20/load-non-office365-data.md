@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7a27da4b8932d9bef268de897d9a992d8b87bdef
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.openlocfilehash: 2ac12cf8c447e3341724d9e853da0f32b7c232fb
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737667"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958698"
 ---
 # <a name="load-non-office-365-data-into-a-working-set"></a>ワーキング セットに Office 365 以外のデータを読み込む
 
@@ -28,7 +28,7 @@ office 365 の高度な電子情報開示で分析する必要があるすべて
 >[!Note]
 >高度な電子情報開示では、組織の高度なコンプライアンスアドオンまたは E5 サブスクリプションに Office 365 E3 が必要です。 その計画がなく、高度な電子情報開示を試行する必要がある場合は、Office 365 Enterprise E5 の試用版にサインアップすることができます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 この手順の説明に従って Office 365 以外のアップロード機能を使用するには、次の条件を持っている必要があります。
 
 - 高度なコンプライアンスアドオンまたは E5 サブスクリプションを備えた Office 365 E3。
@@ -47,19 +47,21 @@ office 365 の高度な電子情報開示で分析する必要があるすべて
 
    この例では、abraham.mcmahon@contoso.com、jewell.gordon@contoso.com、および staci.gonzalez@contoso.com は、保管担当者の SMTP アドレスです。
 
+![Office 以外の365データアップロードフォルダーの構造](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
+
 - Office 365 以外のコンテンツフォルダー構造にアクセスできるコンピューターにインストールされている、電子情報開示マネージャーまたは電子情報開示管理者の Microsoft Azure Storage Tools のどちらかのアカウント。
 
 - azcopy をインストールします。これは、ここから行うことができます。https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Office 以外の365コンテンツを上級電子情報開示にアップロードする
 
-1. 電子情報開示マネージャーまたは電子情報開示管理者として、Advanced ediscovery を開き、Office 以外の365データのアップロード先となるケースを開きます。  [**作業設定**] タブをクリックし、Office 以外の365データを読み込む作業セットを選択します。  作業セットをまだ作成していない場合は、ここで作成できます。  最後に、[動作**設定の管理**] をクリックし、[Office ではない365データ] セクションの [**アップロードを表示**する] をクリックします。
+1. 電子情報開示マネージャーまたは電子情報開示管理者として、Advanced ediscovery を開き、Office 以外の365データのアップロード先となるケースを開きます。  [**作業設定**] タブをクリックし、Office 以外の365データを読み込む作業セットを選択します。  作業セットをまだ作成していない場合は、ここで作成できます。  最後に、[動作**設定の管理**] をクリックし、[Office ではない365データ] セクションの**アップロードを表示**します。
 
 2. [**ファイルのアップロード**] ボタンをクリックして、Office 365 以外のデータインポートウィザードを起動します。
 
 ![ファイルをアップロードする](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
-3. ウィザードの最初の手順では、ファイルをアップロードするために、セキュリティで保護された Azure blob を準備するだけです。  準備が整ったら、[**次へ: ファイルのアップロード**] ボタンをクリックします。
+3. ウィザードの最初の手順では、ファイルをアップロードするために、セキュリティで保護された Azure blob を準備するだけです。  準備が完了したら、[**次へ: ファイルのアップロード**] ボタンをクリックします。
 
 ![Office 以外の365インポート-準備](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Office 365 のセキュリティ & コンプライアンスセンターを使用して、組織のメッセージ保持、電子情報開示、および保持要件をサポートするアーカイブメールボックスを有効にします。
-ms.openlocfilehash: 334af008f6eb8baedff1239ed1692a0ad73acdb6
-ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
+ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901945"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958308"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターでアーカイブメールボックスを有効にする
   
@@ -37,7 +37,7 @@ Office 365 のアーカイブ (インプレースアーカイブとも呼ばれ�
   
 ## <a name="enable-an-archive-mailbox"></a>アーカイブ メールボックスの有効化
   
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com) に移動します。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
 2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
     
@@ -68,7 +68,7 @@ Office 365 のアーカイブ (インプレースアーカイブとも呼ばれ�
   
 アーカイブメールボックスを無効にするには:
   
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com) に移動します。
+1. [https://protection.office.com](https://protection.office.com) に移動します。
     
 2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
     

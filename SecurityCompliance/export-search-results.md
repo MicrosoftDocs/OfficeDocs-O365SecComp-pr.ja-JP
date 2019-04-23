@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'セキュリティ & コンプライアンスセンターのコンテンツ検索からローカルコンピューターに検索結果をエクスポートします。 電子メールの結果は PST ファイルとしてエクスポートされます。 SharePoint と OneDrive for business サイトのコンテンツは、ネイティブの Office ドキュメントとしてエクスポートされます。 '
 ms.openlocfilehash: 5d1baa57f466a5ef7657d92b517660e35b0036e8
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814058"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958648"
 ---
 # <a name="export-content-search-results"></a>コンテンツ検索の結果をエクスポートする
 

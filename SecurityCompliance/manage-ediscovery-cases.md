@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: セキュリティ & コンプライアンスセンターを使用して、電子情報開示の保持を作成し、組織内の電子情報開示ケースにアクセスして管理します。
 ms.openlocfilehash: 209f31187ad01ffa3e06cf8a5825c4538715fc7d
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814138"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958548"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>セキュリティ センターとコンプライアンス センターの電子情報開示のケースを管理する
 
@@ -71,7 +71,7 @@ ms.locfileid: "31814138"
 > [!IMPORTANT]
 > あるユーザーが、これらの電子情報開示関連のどの役割グループのメンバーでもなく、レビュー担当者の役割が割り当てられた役割グループのメンバーでもない場合は、そのユーザーを電子情報開示ケースのメンバーとして追加することはできません。 
   
- **電子情報開示のアクセス許可を割り当てるには、次の操作を実行します。**
+ **電子情報開示のアクセス許可を割り当てるには:**
   
 1. [https://protection.office.com](https://protection.office.com) に移動します。
     
