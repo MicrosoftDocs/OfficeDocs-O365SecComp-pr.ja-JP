@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: '概要: ステップごとの手順を使用して、分離した新しい SharePoint Online チーム サイトを展開します。'
-ms.openlocfilehash: e59c92ff488f82f4ea042364d742f7418da50167
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 4cb60cd55f526592cb469d80a061375a4f556afe
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257016"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの展開
 
@@ -78,12 +78,12 @@ Azure AD で次のアクセス グループを作成する必要があります�
     
   - **[メンバーシップの種類]** で **[割り当て済み]** を選択します。
     
-5. **[作成]** をクリックして、**[グループ]** ブレードを閉じます。
+5. **[作成]** をクリックして、 **[グループ]** ブレードを閉じます。
     
 6. 追加グループについて手順 3 から 5 を繰り返します。
     
 > [!NOTE]
-> Office の機能を有効にできるグループを作成するには、Azure Portal を使用する必要があります。SharePoint Online の独立したサイトを、後から Azure Information Protection (AIP) のラベルを使用して高機密サイトとして構成し、ファイルを暗号化して特定のグループにアクセス許可を割り当てる場合、許可されるグループは Office の機能を有効にして作成する必要があります。Azure AD グループが作成された後は、その Office の機能の設定は変更できません。 
+> Office の機能を有効にできるグループを作成するには、Azure Portal を使用する必要があります。 SharePoint Online の分離されたサイトが、ファイルを暗号化して特定のグループにアクセス許可を割り当てるために、Azure Information Protection ラベルを使用して、非常に機密性の高いサイトとして後で構成されている場合は、許可されるグループが Office 機能を有効にして作成されている Azure AD グループが作成された後は、その Office の機能の設定は変更できません。 
   
 これで 3 つのサイトのアクセス グループの構成が完了します。
   
@@ -105,7 +105,7 @@ Office 365 を使用してユーザー アカウントとグループを管理�
   
 Office 管理者センターでは、ユーザー アカウント管理者または会社管理者の役割が割り当てられているユーザー アカウントでサインインし、グループを使用して適切なユーザー アカウントおよびグループを適切なアクセス グループに追加します。
   
-PowerShell については、まず「[Azure Active Directory V2 PowerShell モジュールを使用した接続](https://go.microsoft.com/fwlink/?linkid=842218)」を参照してください。
+PowerShell の場合、まず、 [Azure Active Directory PowerShell for Graph モジュールに接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
   
 次に、以下のコマンド ブロックを使用して、個々のユーザー アカウントをアクセス グループに追加します。
   
@@ -161,9 +161,9 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 最初に、次の手順で SharePoint Online チーム サイトを作成します。
   
-1. sharepoint online チームサイト (sharepoint online 管理者) を管理するために使用されるアカウントを使用して、管理センターにサインインします。 ヘルプを表示するには、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. SharePoint Online チーム サイト (SharePoint Online 管理者) の管理にも使用されるアカウントを使用して、管理センターにサインインします。 詳細については、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
-2. タイルのリストで、 **[SharePoint]** をクリックします。
+2. タイルのリストで、**[SharePoint]** をクリックします。
     
 3. ブラウザーの新しい **[SharePoint]** タブで、 **[+ サイトの作成]** をクリックします。
     
@@ -175,7 +175,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 7. **[プライバシー設定]** で、 **[プライベート - メンバーのみがこのサイトにアクセス可能**」を選択して **[次へ]** をクリックします。
     
-8. **[誰を追加しますか]** ウィンドウで、**[完了]** をクリックします。
+8. **[誰を追加しますか]** ウィンドウで、 **[完了]** をクリックします。
     
 次に、新しい SharePoint Online チーム サイトから、アクセス許可を構成します。
   
@@ -183,7 +183,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 2. **[サイトの権限]** ウィンドウで、 **[高度な権限の設定]** をクリックします。
     
-3. ブラウザーの新しい **[権限]** タブで、 **[アクセス要求の設定]** をクリックします。
+3. ブラウザーの新しい **[権限]** タブで、**[アクセス要求の設定]** をクリックします。
     
 4. **[アクセス要求の設定]** ダイアログ ボックスの **[サイトと個別のファイルおよびフォルダーの共有をメンバーに許可します]** と **[アクセス要求の許可]** をクリアし (これによって、3 つのチェック ボックスがすべてクリアされる)、 **[OK]** をクリックします。
     

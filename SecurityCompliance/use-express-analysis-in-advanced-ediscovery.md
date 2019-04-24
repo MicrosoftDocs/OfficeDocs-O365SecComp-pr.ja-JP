@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: Office 365 Advanced eDiscovery の簡易分析モードを実行する方法について説明します。
 ms.openlocfilehash: d8457587c9c1a1237ddc076ce803a46382a04ed8
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264493"
 ---
 # <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示でのエクスプレス分析の使用
 

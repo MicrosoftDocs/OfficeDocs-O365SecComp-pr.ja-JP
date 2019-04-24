@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: 'Security & コンプライアンスセンターでコンテンツ検索を使用して、メールボックス、SharePoint Online サイト、および OneDrive for business の場所を検索します。 '
 ms.openlocfilehash: 4c3d9cc024a495ff8464e1117d5f46c13c1b9a08
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261758"
 ---
 # <a name="run-a-content-search-in-the-security--compliance-center"></a>セキュリティ センターとコンプライアンス センターでコンテンツ検索を実行する
 

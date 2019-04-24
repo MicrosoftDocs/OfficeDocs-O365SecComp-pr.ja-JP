@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: '[安全な添付ファイル] 機能を使用すると、電子メールの添付ファイルの確認時間を確認できます。 安全な添付ファイルを使用して、ユーザーが電子メールで送受信する悪意のあるファイルから組織を保護します。'
 ms.openlocfilehash: 933a533a6deb52a41d1412e319c6fb6840046390
-ms.sourcegitcommit: 77e45ce4c9b992ec64420f90946bec6077fc73ad
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "31476825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32250967"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP の安全な添付ファイル
 
@@ -30,7 +30,7 @@ atp の安全な添付ファイル ( [atp の安全なリンク](atp-safe-links.
   
 ATP の保護は、SharePoint Online、OneDrive for business、Microsoft Teams のファイルに拡張することもできます。 詳細については、「 [Office 365 Advanced Threat Protection for SharePoint、OneDrive、Microsoft Teams](atp-for-spo-odb-and-teams.md)」を参照してください。
 
-## <a name="how-it-works"></a>しくみ
+## <a name="how-it-works"></a>メカニズム
 
 ATP の安全な添付ファイル機能は、組織内のユーザーの電子メールの添付ファイルを確認します。 atp の安全な添付ファイルポリシーが設定されている場合に、そのポリシーの対象となるユーザーが Office 365 で電子メールを表示すると、そのメール添付ファイルがチェックされ、ATP の安全な添付ファイルのポリシーに基づいて適切な操作が実行されます。 ポリシーの定義によっては、悪意のあるファイルが送信されたことを知らなくても、ユーザーは作業を続けることができます。
   

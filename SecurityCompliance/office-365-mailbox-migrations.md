@@ -3,26 +3,25 @@ title: Office 365 のメールボックスの移行
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Office 365 メールボックスの移行に使用されるコマンドレットの概要を簡単に説明します。
-ms.openlocfilehash: 8e0f23a3efbbcf6f84364c09e667678972120e18
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f21462b1f4a1838ee617e0d429ba73f01ca2db90
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262579"
 ---
 # <a name="office-365-mailbox-migrations"></a>Office 365 のメールボックスの移行
-exchange ベースのハイブリッド展開では、オンプレミスの exchange メールボックスを[exchange online](https://docs.microsoft.com/Exchange/exchange-online)組織に移動するか、exchange online メールボックスを exchange[のオンプレミス](https://docs.microsoft.com/Exchange/exchange-server)の組織に移動するかを選択できます。移行バッチは、オンプレミスの組織と Exchange Online 組織間でメールボックスを移動するときに使用されます。お客様は、次のコマンドレットを使用して、メールボックスの移行に関する統計情報やその他の情報を確認できます。
+exchange ベースのハイブリッド展開では、オンプレミスの exchange メールボックスを[exchange online](https://docs.microsoft.com/Exchange/exchange-online)組織に移動するか、exchange online メールボックスを exchange[のオンプレミス](https://docs.microsoft.com/Exchange/exchange-server)の組織に移動するかを選択できます。 移行バッチは、オンプレミスの組織と Exchange Online 組織間でメールボックスを移動するときに使用されます。 お客様は、次のコマンドレットを使用して、メールボックスの移行に関する統計情報やその他の情報を確認できます。
 
 - [get-moverequeststatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-MoveRequestStatistics?view=exchange-ps) -ユーザーメールボックスの既定の統計情報を提供します。これには、ステータス、メールボックスのサイズ、アーカイブメールボックスのサイズ、完了率が含まれます。
 - [Get-mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-Mailbox?view=exchange-ps

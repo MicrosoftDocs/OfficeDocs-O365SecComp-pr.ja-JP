@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: この記事では、office 365 cloud app security を有効にする方法について説明します。これは、cloud app security by Microsoft Azure で提供されています。
 ms.openlocfilehash: 1227545b1e4d1521dc1820342f09aabdf16ec2c6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264129"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>Office 365 Cloud App Security を有効にする
   
@@ -28,9 +28,9 @@ ms.locfileid: "30220367"
 ## <a name="turn-on-office-365-cloud-app-security"></a>Office 365 Cloud App Security を有効にする
 
 > [!IMPORTANT]
-> 次のタスクを実行するには、全体管理者またはセキュリティ管理者である必要があります。詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。office 365 Cloud App Security を正しく動作させるには、office 365 環境の**監査ログを有効にする必要があり**ます。詳細については、「 [Office 365 監査ログ検索をオンまたはオフにする](turn-audit-log-search-on-or-off.md)」を参照してください。 
+> 次のタスクを実行するには、全体管理者またはセキュリティ管理者である必要があります。 詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。 office 365 Cloud App Security を正しく動作させるには、office 365 環境の**監査ログを有効にする必要があり**ます。 詳細については、「 [Office 365 監査ログ検索をオンまたはオフにする](turn-audit-log-search-on-or-off.md)」を参照してください。 
   
-1. グローバル管理者またはセキュリティ管理者とし[https://protection.office.com](https://security.microsoft.com)て、Office 365 の職場または学校アカウントを使用してサインインします。(これにより、セキュリティ&amp;コンプライアンスセンターに移動できます。) 
+1. グローバル管理者またはセキュリティ管理者とし[https://protection.office.com](https://security.microsoft.com)て、Office 365 の職場または学校アカウントを使用してサインインします。 (これにより、セキュリティ&amp;コンプライアンスセンターに移動できます。) 
     
 2. [**アラート** \> ] **[advanced alerts の管理**] に移動します。
     
@@ -41,9 +41,9 @@ ms.locfileid: "30220367"
 Office 365 cloud app security を有効にした後は、cloud app security ポータルにアクセス[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)して、サインインします。
     
 > [!NOTE]
-> office 365 Cloud app security を有効にすると、office 365 のユーザーアカウントとユーザーアクティビティに関する監査情報が[Microsoft Cloud App security](https://aka.ms/whatiscas)に転送されます。これにより、Office 365 は高度な通知、フィルタリング、およびその他の機能を提供して、情報を取得し、疑わしいアクティビティに関するアクションを実行できるようにします。 
+> office 365 Cloud app security を有効にすると、office 365 のユーザーアカウントとユーザーアクティビティに関する監査情報が[Microsoft Cloud App security](https://aka.ms/whatiscas)に転送されます。 これにより、Office 365 は高度な通知、フィルタリング、およびその他の機能を提供して、情報を取得し、疑わしいアクティビティに関するアクションを実行できるようにします。 
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [アクティビティポリシー](activity-policies-and-alerts.md)
     

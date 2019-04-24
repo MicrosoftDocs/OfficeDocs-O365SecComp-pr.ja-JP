@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: サードパーティの監査をダウンロードし、Microsoft がお客様のデータを安全に保持する方法と、Office 365 を使用する際に ISO、HIPAA、finra、および fedramp に準拠する方法を確認します。
 ms.openlocfilehash: d0cb03a7f5cbc34bdce238155372c9e031a95033
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261174"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターのサービスアシュアランス
 

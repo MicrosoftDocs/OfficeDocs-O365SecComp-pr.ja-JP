@@ -3,7 +3,6 @@ title: Office 365 データの不変性
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,14 +13,14 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: データの不変性、または検出可能で、破棄または変更することができないデータを定義して説明します。
-ms.openlocfilehash: d3f02a088ede557a1e7308182b2ec6e378cd418e
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.openlocfilehash: b23a62dd95ec2ca554997fc667d89e6979e5b747
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262869"
 ---
-# <a name="immutability-in-office-365"></a>Office 365 での不変性
+# <a name="immutability-in-office-365"></a>Office 365 の不変性
 一部の組織では、規制遵守、内部ガバナンス要件、訴訟リスクで、電子メールと関連データを検出可能な形式で保持する必要があります。 システム内のすべてのデータが検出可能である必要があります。また、そのいずれも破棄または変更することはできません。 業界標準の用語は、"不変" です。 
 
 通常、不変性を実現する従来の方法は、電子メールメッセージを読み取り専用の別の保存場所に移動することによって動作します。 このようなシステムは、証拠開示のためにメールボックスアイテムを保持することを目的としていますが、通常は日常のワークフローから保持されているアイテムを削除することによって、ユーザーの作業に大きな影響を与えます。 IT 担当者にとって不変性を実現するには、独立したサーバーとストレージインフラストラクチャを展開し、継続的に保守する必要があります。 検索自体は、メールシステムの外部にあるツールを使用して実行され、展開と保守のコストが関連しています。

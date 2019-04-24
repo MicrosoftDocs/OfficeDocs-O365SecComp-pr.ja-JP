@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: '管理者の場合: Exchange Online メールボックスのユーザーの回復可能なアイテムフォルダーのアイテムを削除します (法的情報保留に設定されている場合も含む)。 これは、Office 365 に誤ってこぼれたデータを削除する効果的な方法です。'
 ms.openlocfilehash: 7badd45f582e4d5fef4cb5708c504573da0aba50
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256875"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>クラウドベースのメールボックスの [回復可能なアイテム] フォルダー内のアイテムを削除する-管理者向けヘルプ
 
@@ -43,7 +43,7 @@ Exchange Online メールボックスの回復可能なアイテムフォルダ�
 > [!CAUTION]
 > この記事に記載されている手順により、Exchange Online メールボックスからデータが完全に削除 (パージ) されます。 これは、回復可能なアイテムフォルダーから削除されたメッセージを回復できず、法的証拠開示やその他の法令遵守のために利用できないことを意味します。 セキュリティ/コンプライアンスセンターで作成された訴訟ホールド、インプレースホールド、電子情報開示のホールド、または Office 365 アイテム保持ポリシーの一部として保留になっているメールボックスからメッセージを削除する場合は、レコード管理または法務部門に確認してください。保留リストを削除する前。 組織には、保留中のメールボックスとデータ流出インシデントのどちらを優先するかを定義するポリシーがあります。 
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - 手順5で [回復可能なアイテム] フォルダーからメッセージを検索して削除するには、Exchange Online の次の両方の管理役割を割り当てられている必要があります。
     
@@ -67,7 +67,7 @@ Exchange Online メールボックスの回復可能なアイテムフォルダ�
     
 また、この手順の実行中に所有者 (または他のユーザー) がメールボックスにアクセスできないように、メールボックスクライアントアクセスの設定を取得する必要があります。 最後に、[回復可能なアイテム] フォルダー内のアイテムの現在のサイズと数を取得することができます。 手順5で [回復可能なアイテム] フォルダー内のアイテムを削除した後、この情報を使用してアイテムが実際に削除されたことを確認します。
   
-1. [Exchange Online PowerShell に接続します](https://go.microsoft.com/fwlink/?linkid=396554)。 Exchange Online で適切な管理役割が割り当てられている管理者アカウントには、必ずユーザー名とパスワードを使用してください。 
+1. [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/?linkid=396554)。 Exchange Online で適切な管理役割が割り当てられている管理者アカウントには、必ずユーザー名とパスワードを使用してください。 
     
 2. 単一アイテムの回復と削除済みアイテムの保存期間に関する情報を取得するには、次のコマンドを実行します。
 

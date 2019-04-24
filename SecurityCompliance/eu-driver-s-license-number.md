@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 運転免許証番号の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
 ms.openlocfilehash: be9497c325866a670dff8d82b5170f4ca947c4ad
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255775"
 ---
 # <a name="eu-drivers-license-number"></a>EU 運転免許証番号
 
@@ -33,7 +33,7 @@ ms.locfileid: "30410752"
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -73,7 +73,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -113,7 +113,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -153,7 +153,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -193,7 +193,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -238,7 +238,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -322,7 +322,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -367,7 +367,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -414,7 +414,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -457,7 +457,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -484,7 +484,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 |:-----|
 |dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> vezetoi engedely  <br/> |
    
-## <a name="ireland"></a>Ireland
+## <a name="ireland"></a>アイルランド
 
 ### <a name="format"></a>Format
 
@@ -500,7 +500,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -547,7 +547,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -586,7 +586,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -625,7 +625,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -674,7 +674,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -713,7 +713,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -762,7 +762,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -811,7 +811,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -854,7 +854,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -897,7 +897,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -936,7 +936,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -1024,7 +1024,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 

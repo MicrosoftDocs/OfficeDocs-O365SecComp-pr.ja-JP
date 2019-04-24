@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: fe208f4a9f7927d8481d5c6ec8b901baafb98626
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243577"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>高度な電子情報開示 (プレビュー) ケースへの保管担当者の追加
 

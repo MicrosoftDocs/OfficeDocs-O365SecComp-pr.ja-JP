@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 新しい注目すべきトラッカーを含む脅威のトラッカーについて説明します。これにより、組織はセキュリティ上の問題に常に役立てることができます。
 ms.openlocfilehash: 4a12a1cfe68f8ebcfae640a65d0eca68e36fb04c
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260044"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>脅威トラッカー - 新機能とNoteworthy 機能 
 
@@ -91,7 +91,7 @@ inaugural 注目すべき脅威により、 [Office 365 の ATP の安全な添�
   
 新しい注目すべき脅威フィルターは、ATP の安全な添付ファイルによって最近検出されたアイテムを強調表示します。 これらの検出は、電子メールフローまたは他のお客様の電子メールのいずれかで Office 365 によって以前検出されていない、新しい悪意のあるファイルであるアイテムを表します。 注目すべき脅威追跡ツールの項目に注目し、それらのユーザーが対象としているユーザーを確認し、[詳細な分析] タブ (エクスプローラーで電子メールの件名をクリックすると表示されます) に示されている分析の詳細を確認します。 メモこのタブは、ATP の安全な添付ファイル機能によって検出されたメールにのみ表示されます。この注目すべきトラッカーにはフィルターが含まれていますが、そのフィルターをエクスプローラーで他の検索に使用することもできます。
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - 組織にこれらの office 365 脅威の調査および応答機能がまだない場合は、「 [office 365 の脅威の調査および応答機能を入手する方法](get-started-with-ti.md)」を参照してください。
     

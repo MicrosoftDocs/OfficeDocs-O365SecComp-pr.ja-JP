@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 611177522defbbe88274820a6163e5288e7a3e2b
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241909"
 ---
 # <a name="manage-working-sets-in-advanced-ediscovery-preview"></a>高度な電子情報開示の作業セットを管理する (プレビュー)
 作業セットとは、コンテンツの[分析](https://docs.microsoft.com/en-us/office365/securitycompliance/compliance20/analyzing-data-in-working-set)、[クエリ](https://docs.microsoft.com/en-us/office365/securitycompliance/compliance20/working-set-search)、[表示](https://docs.microsoft.com/en-us/office365/securitycompliance/compliance20/view-documents-in-working-set)、[タグ付け](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/compliance20/tagging-documents)、および[エクスポート](https://docs.microsoft.com/en-us/office365/securitycompliance/compliance20/exporting-data-ediscover20)を行うことができる静的なドキュメントセットです。

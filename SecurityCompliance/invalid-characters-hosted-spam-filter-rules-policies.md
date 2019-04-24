@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 description: スパム対策構成に無効な文字が含まれていて、セキュリティ&amp; /コンプライアンスセンターを使用しようとしたときに問題が発生する管理者向けのヘルプを提供します。
 ms.openlocfilehash: 797389da26823b6528c2aee0baaa118fbfcf7942
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253955"
 ---
 # <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>スパムフィルタールールおよびスパムフィルターポリシーに無効な文字を使用しない 
 
-以前の Office 365 管理者は、Exchange 管理センター (EAC) を使用して、スパムフィルタールールおよびスパムフィルターポリシーをセットアップおよび構成します。ここで、セキュリティ&amp;コンプライアンスセンターを使用して、スパム対策構成を管理します。次の文字は EAC でサポートされていますが、セキュリティ&amp;コンプライアンスセンターでは使用できません。  
+以前の Office 365 管理者は、Exchange 管理センター (EAC) を使用して、スパムフィルタールールおよびスパムフィルターポリシーをセットアップおよび構成します。 ここで、セキュリティ&amp;コンプライアンスセンターを使用して、スパム対策構成を管理します。 次の文字は EAC でサポートされていますが、セキュリティ&amp;コンプライアンスセンターでは使用できません。  
 
 **無効な文字:**
   
@@ -52,7 +52,7 @@ ms.locfileid: "30341468"
     ```  
 
   
- ## <a name="for-more-information"></a>詳細情報
+ ## <a name="for-more-information"></a>関連情報
 
 [セキュリティ&amp; /コンプライアンスセンターでの脅威管理](threat-management.md)
   

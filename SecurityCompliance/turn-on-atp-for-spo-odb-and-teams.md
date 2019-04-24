@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 検出されたファイルに対して通知を設定する方法など、SharePoint、OneDrive、Teams の ATP を有効にする方法について説明します。
 ms.openlocfilehash: 30eb28bfc5156664656ca1c200f9e999661b3b0c
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30242149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264303"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams の Office 365 ATP を有効にする
 
@@ -74,9 +74,9 @@ SharePoint Online、OneDrive for business、または Microsoft Teams のファ�
     
 5. [**この通知を送信するタイミング**] セクションで、次の操作を行います。 
     
-    a: [**アクティビティ**] リストで、[**検出されたマルウェア (ファイル内**)] を選択します。
+    a. [**アクティビティ**] リストで、[**検出されたマルウェア (ファイル内**)] を選択します。
     
-    b: [**ユーザー** ] フィールドは空のままにします。 
+    b. [**ユーザー** ] フィールドは空のままにします。 
     
 6. [**この通知を送信する**ユーザー...] セクションで、悪意のあるファイルが検出されたときに通知を受信する必要がある1つ以上のグローバル管理者、セキュリティ管理者、またはセキュリティ閲覧者を選択します。 
     

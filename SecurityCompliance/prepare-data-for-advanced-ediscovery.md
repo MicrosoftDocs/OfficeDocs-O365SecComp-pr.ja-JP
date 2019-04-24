@@ -1,5 +1,5 @@
 ---
-title: Office 365 Advanced eDiscovery 用にデータを準備する
+title: Office 用データを準備する 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -12,15 +12,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: 'office 365 セキュリティ&amp;コンプライアンスセンターを使用して office 365 Advanced eDiscovery で分析するために office 365 データを準備する方法について説明します。 '
-ms.openlocfilehash: 8ede0f0cb97e1b49297b66fb2b929b3cb292ed52
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 'Microsoft 365 セキュリティ&amp;コンプライアンスセンターを使用して office 365 Advanced eDiscovery で分析するために office 365 データを準備する方法について説明します。 '
+ms.openlocfilehash: d9d81c145a86075affd76761eb6dcff0f84a1eac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265509"
 ---
-# <a name="prepare-data-for-office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery 用にデータを準備する
+# <a name="prepare-data-for-office-365-advanced-ediscovery"></a>Office 用データを準備する 365 Advanced eDiscovery
 
 このトピックでは、高度な電子情報開示のケースにコンテンツ検索の結果を読み込む方法について説明します。 
   
@@ -29,7 +29,7 @@ ms.locfileid: "30218797"
   
 ## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>手順 1: 高度な電子情報開示用に Office 365 データを準備する
 
-上級電子情報開示を使用してデータを分析するには、office 365 セキュリティ&amp;コンプライアンスセンター (office 365 セキュリティ&amp;コンプライアンスセンターの**コンテンツ検索**ページにリストされています) または検索で実行するコンテンツ検索の結果を使用できます。電子情報開示ケースに関連付けられています (セキュリティ&amp;コンプライアンスセンターの**電子情報開示**ページに記載されています)。 
+上級電子情報開示を使用してデータを分析するには、microsoft 365 セキュリティ&amp;コンプライアンスセンター (microsoft 365 セキュリティ&amp;コンプライアンスセンターの**コンテンツ検索**ページにリストされています) で実行するコンテンツ検索の結果を使用するか、電子情報開示ケースに関連付けられている検索 (セキュリティ&amp;コンプライアンスセンターの [**電子情報開示**] ページにリストされています)。 
   
 高度な電子情報開示で分析のために検索結果を準備する詳細な手順については、「 [Office 365 advanced ediscovery の検索結果を準備](prepare-search-results-for-advanced-ediscovery.md)する」を参照してください。
   
@@ -38,7 +38,7 @@ ms.locfileid: "30218797"
   
 ## <a name="step-2-load-search-result-data-in-to-a-case-in-advanced-ediscovery"></a>手順 2: 高度な電子情報開示のケースに検索結果データを読み込む
 
-分析のためにセキュリティ&amp;コンプライアンスセンターで検索結果を準備した後、次の手順では、高度な電子情報開示のケースに検索結果を読み込みます。詳細については、「 [Process module を実行する](run-the-process-module-in-advanced-ediscovery.md)」を参照してください。
+分析のためにセキュリティ&amp;コンプライアンスセンターで検索結果を準備した後、次の手順では、高度な電子情報開示のケースに検索結果を読み込みます。 詳細については、「 [Process module を実行する](run-the-process-module-in-advanced-ediscovery.md)」を参照してください。
   
 1. [https://protection.office.com](https://protection.office.com) に移動します。
     
@@ -52,11 +52,11 @@ ms.locfileid: "30218797"
     
     ![[高度な電子情報開示に切り替え] をクリックして、高度な電子情報開示でケースを開きます。](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
-    **[高度な電子情報開示**の進行状況バーへの接続] が表示されます。上級電子情報開示に接続されている場合は、ケースのセットアップページにコンテナーの一覧が表示されます。 
+    **[高度な電子情報開示**の進行状況バーへの接続] が表示されます。 上級電子情報開示に接続されている場合は、ケースのセットアップページにコンテナーの一覧が表示されます。 
     
     ![詳細な電子情報開示でケースが表示される](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
   
-     これらのコンテナーは、手順1でアドバンスト eDiscovery で分析するために準備した検索結果を表します。セキュリティ&amp; /コンプライアンスセンターでは、コンテナーの名前がコンテンツ検索と同じ名前になっていることに注意してください。リスト内のコンテナーは、準備したものです。上級電子情報開示のために別のユーザーが検索結果を準備している場合、対応するコンテナーはリストに含まれません。 
+     これらのコンテナーは、手順1でアドバンスト eDiscovery で分析するために準備した検索結果を表します。 セキュリティ&amp; /コンプライアンスセンターでは、コンテナーの名前がコンテンツ検索と同じ名前になっていることに注意してください。 リスト内のコンテナーは、準備したものです。 上級電子情報開示のために別のユーザーが検索結果を準備している場合、対応するコンテナーはリストに含まれません。 
     
 6. 高度な電子情報開示のケースに、コンテナーからの検索結果データを読み込むには、コンテナーを選択し、[**処理**] をクリックします。
     

@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Microsoft Exchange Online Protection (EOP) を管理するタスクを実行するために必要なアクセス許可は、管理している機能に応じて異なります。
 ms.openlocfilehash: 08753d537982e49e735a1f81796f4709882c2be9
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256255"
 ---
 # <a name="feature-permissions-in-eop"></a>EOP の機能アクセス許可
 

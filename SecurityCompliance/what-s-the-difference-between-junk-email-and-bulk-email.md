@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: お客様が迷惑メールとバルクメールメッセージの違いを askwhat ことがありますか。このトピックの目的は、exchange online と exchange online Protection (EOP) の両方で使用可能なさまざまなオプションについて説明し、その違いを説明することです。
 ms.openlocfilehash: 146cc5654e39441be3544f7ac24bd1300811936f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266929"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>迷惑メールとバルク メールの違い
 

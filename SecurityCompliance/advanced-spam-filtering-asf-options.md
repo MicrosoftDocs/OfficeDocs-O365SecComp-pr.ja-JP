@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 高度なスパムフィルターオプションを使用すると、管理者はメッセージのさまざまなコンテンツ属性を検査できます。 このような属性がメッセージに存在すると、メッセージのスパム スコアが上がるか (そのためにスパムとして識別される可能性が上がる)、メッセージがスパムとしてマークされます。 ASF オプションの対象は、スパム メッセージで一般的に検出される、HTML タグや URL リダイレクトなど、特定のメッセージ プロパティです。
 ms.openlocfilehash: 0fad573c29c440d69e27b1e70810bf2fc67be164
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242485"
 ---
 # <a name="advanced-spam-filtering-options"></a>高度なスパム フィルター処理オプション
 

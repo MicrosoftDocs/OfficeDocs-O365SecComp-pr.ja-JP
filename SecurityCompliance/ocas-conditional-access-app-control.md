@@ -1,5 +1,5 @@
 ---
-title: Office 365 Cloud App Security アプリの条件付きアクセス制御を使用してアプリを保護する
+title: Office 365 Cloud App Security のアプリの条件付きアクセス制御を使用してアプリを保護する
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -11,13 +11,13 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Office 365 Cloud App Security Conditional Access App Control を使用してリアルタイムで違反とリークを阻止します。
 ms.openlocfilehash: d8370b1e02866db8f92ab7f6a46b06ddc3ed1055
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262989"
 ---
-# <a name="protect-apps-with-office-365-cloud-app-security-conditional-access-app-control"></a>Office 365 Cloud App Security アプリの条件付きアクセス制御を使用してアプリを保護する
+# <a name="protect-apps-with-office-365-cloud-app-security-conditional-access-app-control"></a>Office 365 Cloud App Security のアプリの条件付きアクセス制御を使用してアプリを保護する
 
 |評価 * *\>**|計画 * *\>**|展開 * *\>**|使用率 * * * *|
 |:-----|:-----|:-----|:-----|
@@ -28,7 +28,7 @@ ms.locfileid: "30312104"
 > [!IMPORTANT]
 > Cloud app security Conditional Access App Control を使用するには、 [Azure active Directory P1 ライセンス](https://azure.microsoft.com/pricing/details/active-directory/) と、アクティブな[Office 365 Cloud App Security](office-365-cas-overview.md)サブスクリプションが必要です。
 
-## <a name="how-it-works"></a>しくみ
+## <a name="how-it-works"></a>メカニズム
 
 条件付きアクセスアプリコントロールはリバースプロキシアーキテクチャを使用し、Azure AD 条件付きアクセスと一意に統合されています。 Azure AD 条件付きアクセスを使用すると、特定の条件に基づいて組織のアプリにアクセス制御を適用することができます。 条件は、 ** (ユーザーまたはユーザー ** のグループ) と、条件付きアクセスポリシーが適用される *場所* (場所とネットワーク) を定義します。 条件を決定した後、ユーザーを Office 365 Cloud app Security にルーティングすることができます。これには、access および session control を適用することによって、条件付きアクセスアプリを使用してデータを保護できます。
 

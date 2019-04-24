@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 7830b483190a69e6055fae369580064c5df42f49
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243392"
 ---
 # <a name="add-search-results-to-a-working-set"></a>検索結果をワーキング セットに追加する
 

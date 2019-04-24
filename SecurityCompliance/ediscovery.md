@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Office 365 には、Exchange メールボックス、SharePoint、OneDrive for business サイト、Office 365 グループ、Skype for business の会話など、さまざまな場所にあるコンテンツを検索して保持するために使用できる、さまざまな種類の電子情報開示ツールが用意されています。
 ms.openlocfilehash: 51ef4e744f2347fe3cdaff757131baf0c5fe83bf
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256805"
 ---
 # <a name="ediscovery-in-office-365"></a>Office 365 の電子情報開示
 
@@ -76,7 +76,7 @@ Office 365 には、次の電子情報開示ツールが用意されています
    
 [Return to top](ediscovery.md#top)
   
-## <a name="office-365-advanced-ediscovery"></a>Office 365 の詳細な電子情報開示
+## <a name="office-365-advanced-ediscovery"></a>Office 365 Advanced eDiscovery
 <a name="advancedediscovery"> </a>
 
 次の表には、Office 365 の高度な電子情報開示ツールの学習と使用に役立つトピックへのリンクが含まれています。

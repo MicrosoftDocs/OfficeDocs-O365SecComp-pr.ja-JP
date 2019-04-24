@@ -13,11 +13,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.openlocfilehash: 33a10996ceaf3023d5aee58aaabf3fef54372c30
-ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31043298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263341"
 ---
 # <a name="monitor-and-report-app-status-in-microsoft-365-security"></a>Microsoft 365 セキュリティでのアプリの状態を監視および報告する
 

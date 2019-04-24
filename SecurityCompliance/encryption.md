@@ -17,13 +17,13 @@ ms.collection:
 - Strat_O365_IP
 description: Office 365 では、使用可能な最強の暗号化、プロトコル、およびテクノロジを使用して、コンテンツが保存中で転送中に暗号化されます。 Office 365 の暗号化の概要について説明します。
 ms.openlocfilehash: 7a73d3d3b24e28f8795ec93ac05dbc383b525906
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31026328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256675"
 ---
-# <a name="encryption-in-office-365"></a>Office 365 での暗号化
+# <a name="encryption-in-office-365"></a>Office 365 の暗号化
 
 暗号化は、ファイル保護と情報保護戦略の重要な部分です。 この記事では、office 365 のすべてのバージョンで使用されている暗号化の概要を説明し、暗号化タスクに関するヘルプを取得するために、「組織の暗号化を設定する」から「office ドキュメントをパスワードで保護する」までを参照してください。
   
@@ -75,7 +75,7 @@ office 365 でのボリューム暗号化、ファイル暗号化、メールボ
 |パスワード保護を使用してドキュメントを暗号化する  <br/><br/>  現時点では、Office Online ではパスワード保護はサポートされていません。 デスクトップ版の Word、Excel、および PowerPoint をパスワード保護に使用します。           |[文書、ブック、またはプレゼンテーションの保護を追加または削除する](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826)([**保護の追加**] セクションを選択し、[**パスワードで暗号化**する] をクリックします)。  <br/> |
 |文書から暗号化を削除する  <br/> |[文書、ブック、またはプレゼンテーションの保護を追加または削除する](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826)([**保護の解除**] セクションを選択し、[**パスワード暗号化の解除**] をクリックします)。  <br/> |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Office 365 のセキュリティおよび情報保護機能を計画する](https://support.office.com/article/3d4ac4a1-3920-4ff9-918f-011f3ce60408)
   

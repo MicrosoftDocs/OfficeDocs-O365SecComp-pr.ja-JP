@@ -13,11 +13,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.openlocfilehash: fa76e2edd3f66595a47fb511881f15c07b441c77
-ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31043248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252316"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
@@ -25,11 +25,11 @@ Microsoft 365 セキュリティ センターの Microsoft セキュア スコ�
 
 Microsoft セキュア スコアは、強力な可視化、他の Microsoft 製品との統合、他社とのスコアの比較、カテゴリ別のフィルタリングなどを提供します。 このツールを使用すると、組織内のセキュリティ改善アクションを完了し、スコアの履歴を追跡することができます。 スコアは、サードパーティのソリューションが推奨される改善アクションに対応した場合も反映されます。  
 
-## <a name="how-it-works"></a>しくみ
+## <a name="how-it-works"></a>メカニズム
 
 推奨されるセキュリティ機能を構成するためのポイント、セキュリティ関連タスクの実行 (レポートの表示など)、またはサードパーティ製のアプリケーションまたはソフトウェアを使用した改善アクションへの対応を行います。 ユーザーの多要素認証 (MFA) を有効にするなど、一部のアクションは部分的に完了するとスコアリングされます。 セキュリティは常に使いやすさとバランスが取れている必要があり、すべての推奨事項が環境に適しているとは限りません。
 
-## <a name="required-permissions"></a>必要な権限
+## <a name="required-permissions"></a>必要なアクセス許可
 
 現時点では、Microsoft セキュリティスコアを表示するには、Azure Active Directory に次のいずれかのロールが割り当てられている必要があります。
 

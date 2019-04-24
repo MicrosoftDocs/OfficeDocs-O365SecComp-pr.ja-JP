@@ -1,5 +1,5 @@
 ---
-title: 複数のコンテンツ検索を作成、報告、削除する
+title: 複数のコンテンツ検索の作成、報告、削除
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,21 +12,21 @@ search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: Office 365 セキュリティ&amp;コンプライアンスセンターの PowerShell スクリプトを使用して検索を作成し、レポートを実行するなどのコンテンツ検索タスクを自動化する方法について説明します。
-ms.openlocfilehash: 740f3384e5d4f26e09512cc846ad8779bcbc31ef
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+description: Office 365 のセキュリティ & コンプライアンスセンターで、PowerShell スクリプトを使用して検索を作成し、レポートを実行するなどのコンテンツ検索タスクを自動化する方法について説明します。
+ms.openlocfilehash: 96d10e274cd83a4785170239302d55e74d40ca84
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258446"
 ---
-# <a name="create-report-on-and-delete-multiple-content-searches"></a>複数のコンテンツ検索を作成、報告、削除する
+# <a name="create-report-on-and-delete-multiple-content-searches"></a>複数のコンテンツ検索の作成、報告、削除
 
- 検索検索を迅速に作成およびレポートすることは、基礎となるデータについて学習しようとしているときに電子情報開示や調査を行う際に重要な手順です。 これを実現するために、セキュリティ&amp;コンプライアンスセンターでは、時間のかかるコンテンツ検索タスクを自動化する一連の Windows PowerShell コマンドレットを提供しています。 これらのスクリプトを使用すると、多数の検索をすばやく簡単に作成し、予想される検索結果のレポートを実行して、問題のデータ量を判断するのに役立つことができます。 また、これらのスクリプトを使用して、それぞれの結果を比較するさまざまなバージョンの検索を作成することもできます。 これらのスクリプトは、データを迅速かつ効率的に識別してカリングするのに役立ちます。 
+ 検索検索を迅速に作成およびレポートすることは、基礎となるデータについて学習しようとしているときに電子情報開示や調査を行う際に重要な手順です。 これを実現するために、Security & コンプライアンスセンター PowerShell では、時間のかかるコンテンツ検索タスクを自動化する一連のコマンドレットを提供しています。 これらのスクリプトを使用すると、多数の検索をすばやく簡単に作成し、予想される検索結果のレポートを実行して、問題のデータ量を判断するのに役立つことができます。 また、これらのスクリプトを使用して、それぞれの結果を比較するさまざまなバージョンの検索を作成することもできます。 これらのスクリプトは、データを迅速かつ効率的に識別してカリングするのに役立ちます。 
   
 ## <a name="before-you-begin"></a>始める前に
 
-- このトピックで説明するスクリプトを実行するには、セキュリティ&amp;コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 
+- このトピックで説明するスクリプトを実行するには、Security & コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 
     
 - 手順1で CSV ファイルに追加できる、組織内の onedrive for business サイトの url の一覧を収集するには、「[組織内のすべての onedrive の場所の一覧を作成](https://support.office.com/article/Create-a-list-of-all-OneDrive-locations-in-your-organization-8e200cb2-c768-49cb-88ec-53493e8ad80a)する」を参照してください。 
     
@@ -68,7 +68,7 @@ ms.locfileid: "30670662"
   
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>手順 2: Security & コンプライアンスセンター PowerShell に接続する
 
-次の手順では、Windows PowerShell を組織の&amp;セキュリティコンプライアンスセンターに接続します。
+次の手順では、組織の Security & コンプライアンスセンター PowerShell に接続します。
   
 1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、 `ConnectSCC.ps1`のようになります。 手順1で CSV ファイルを保存したのと同じフォルダーにファイルを保存します。
     
@@ -77,7 +77,7 @@ ms.locfileid: "30670662"
     $UserCredential = Get-Credential 
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
     Import-PSSession $Session -AllowClobber -DisableNameChecking 
-    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Office 365 Security &amp; Compliance Center)" 
+    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
     ```
 
 2. ローカルコンピューターで、Windows PowerShell を開き、前の手順で作成したスクリプトが置かれているフォルダーに移動して、スクリプトを実行します。例えば：

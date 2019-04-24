@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: e86fc991-0161-4f01-9c1c-d25e87733d06
 description: Office 365 では、一部の暗号化機能が既定で有効になっています。その他の機能は、特定のコンプライアンスまたは法的な要件を満たすように構成できます。
 ms.openlocfilehash: 1bc4ceb7762c96f55c03f89e7c448f9e4073063e
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260795"
 ---
 # <a name="set-up-encryption-in-office-365-enterprise"></a>Office 365 Enterprise で暗号化を設定する
 
@@ -38,6 +38,6 @@ Office 365 では、いくつかの暗号化機能が既定で使用できます
 |ファイルは、チームサイトまたはドキュメントライブラリ (OneDrive for business または SharePoint Online) からアクセスされます。  <br/> |ユーザーが OneDrive for business または SharePoint Online に保存されたファイルを使用している場合、TLS 接続が使用されます。 これは、Office 365 に自動的に組み込まれます。 「 [OneDrive for business および SharePoint Online のデータ暗号化](https://go.microsoft.com/fwlink/?linkid=526379)」を参照してください。  <br/> |
 |オンライン会議および IM 会話でファイルが共有されている (Skype for business online)  <br/> |ユーザーが Skype for business Online を使用してファイルを使用している場合、接続に TLS が使用されます。 これは、Office 365 に自動的に組み込まれます。 「 [Security and アーカイビング (Skype for business Online)](https://aka.ms/nuq4ws)」を参照してください。  <br/> |
 
-## <a name="additional-information"></a>追加情報
+## <a name="additional-information"></a>ページの先頭へ
 
 暗号化オプションを含むファイル保護ソリューションの詳細については、「 [Office 365 のファイル保護ソリューション](https://www.microsoft.com/en-us/download/details.aspx?id=55523)」を参照してください。

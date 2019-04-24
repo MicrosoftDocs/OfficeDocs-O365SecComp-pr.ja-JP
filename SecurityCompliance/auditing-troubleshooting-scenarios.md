@@ -15,11 +15,11 @@ search.appverid:
 - MOE150
 description: Office 365 監査ログ検索ツールを使用すると、侵害されたアカウントを調査する、メールボックスのメール転送を誰が設定したかを識別する、などの一般的な問題のトラブルシューティングに役立ちます。
 ms.openlocfilehash: bd0483f2b2e209dc0cbd2b03eda928fd8d44d7b0
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32250271"
 ---
 # <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>Office 365 監査ログを検索して一般的なシナリオのトラブルシューティングを行う
 
@@ -111,9 +111,9 @@ Office 365 監査ログを検索するには、Exchange Online で [表示のみ
 
 a. [**ObjectId**] フィールドに、電子メール転送が設定されたメールボックスのエイリアスが表示されます。また、このメールボックスは検索結果ページの [**項目**] 列にも表示されます。
 
-b: [**パラメーター** ] フィールドの値*ForwardingSmtpAddress*は、メールがメールボックスに設定されていることを示します。 この例では、メールは alpinehouse.onmicrosoft.com 組織外の電子mike@contoso.comメールアドレスに転送されます。
+b. [**パラメーター**] フィールドの値 *ForwardingSmtpAddress* は、メールボックスでメール転送が設定されていることを示します。この例では、alpinehouse.onmicrosoft.com 組織の外部にある mike@contoso.com というメール アドレスに電子メールが転送されています。
 
-c. *DeliverToMailboxAndForward*パラメーターの*True*値は、 *ForwardingSmtpAddress*パラメーターによって指定されsarad@alpinehouse.onmicrosoft.com ** た電子メールアドレスに転送されるメッセージのコピーが送信されることを示します。これは、この例はmike@contoso.comです。 *DeliverToMailboxAndForward*パラメーターの値が*False*に設定されている場合、電子メールは*ForwardingSmtpAddress*パラメーターで指定されたアドレスにのみ転送されます。 **ObjectId**フィールドで指定されたメールボックスに配信されません。
+c. *DeliverToMailboxAndForward* パラメーターの値 *True* は、メッセージのコピーが sarad@alpinehouse.onmicrosoft.com に送信され、*しかも* *ForwardingSmtpAddress* パラメーターの電子メール アドレス (この例では mike@contoso.com) に転送されたことを示しています。*DeliverToMailboxAndForward* パラメーターの値が *False* に設定されている場合は、*ForwardingSmtpAddress* パラメーターのアドレスだけに電子メールが転送されます。つまり [**ObjectId**] フィールドで指定されたメールボックスには送信されません。
 
 d. [**UserId**] フィールドは、[**ObjectId**] フィールドで指定されたメールボックスの電子メール転送を設定したユーザーを示します。また、このユーザーは検索結果ページの [**ユーザー**] 列にも表示されます。このケースの場合、メールボックス所有者が自分のメールボックスのメール転送を設定したようです。
 
@@ -187,8 +187,8 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 a. [**ObjectId**] フィールドに受信トレイ ルールの完全な名前が表示されます。この名前には、ユーザーのメールボックスのエイリアス (たとえば SaraD) と受信トレイ ルールの名前 (たとえば「管理者からのメッセージを移動」) が含まれます。
 
-b: [**パラメーター** ] フィールドに、受信トレイルールの条件が表示されます。 この例では、条件が*From*パラメーターで指定されています。 *From*パラメーターに対して定義された値は、受信トレイルールが電子admin@alpinehouse.onmicrosoft.comメールの送信に対して動作することを示します。 受信トレイルールの条件を定義するために使用できるパラメーターの完全な一覧については、[新しい-](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule)受信トレイルールの記事を参照してください。
+b. [**パラメーター**] フィールドには受信トレイ ルールの条件が表示されます。この例では、[*送信者*] パラメーターによって条件が指定されます。[*送信者*] パラメーターに定義された値は、admin@alpinehouse.onmicrosoft.com から送られた電子メールを受信トレイ ルールで処理することを示しています。受信トレイ ルールの条件の定義に使用できるパラメーターの完全なリストについては、「[New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule)」の記事を参照してください。
 
-c. *movetofolder*パラメーターは、受信トレイルールのアクションを指定します。この例でadmin@alpinehouse.onmicrosoft.comは、受信したメッセージは*adminsearch*という名前のフォルダーに移動されます。 また、受信トレイルールのアクションを定義するために使用できるパラメーターの完全な一覧については、新しい受信トレイ[ルール](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule)の記事も参照してください。
+c. [*MoveToFolder*] パラメーターは、受信トレイ ルールのアクションを指定します。この例では、admin@alpinehouse.onmicrosoft.com から受け取ったメッセージを *AdminSearch* というフォルダーに移動します。さらに、受信トレイ ルールのアクションの定義に使用できるパラメーターの完全なリストについては「[New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule)」の記事を参照してください。
 
 d. [**UserId**] フィールドは、[**ObjectId**] フィールドで指定された受信トレイ ルールを作成したユーザーを示します。また、このユーザーは検索結果ページの [**ユーザー**] 列にも表示されます。

@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Office 365 の電子情報開示および検索ツールを使用して、組織内のデータ流出インシデントを管理および応答します。
 ms.openlocfilehash: 50078e3f22ede8a1af2a252a7a6f75710534c062
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258950"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>電子情報開示ソリューションシリーズ: Data 流出 scenario-検索と削除
 
@@ -170,7 +170,7 @@ afer 検索結果を確認した後、他のユーザーと検索結果を共有
 
 手順6で収集して準備したメールボックスの場所と、手順3で作成して調整した検索クエリを使用して、こぼれたデータが含まれている電子メールメッセージを検索することで、そのデータを完全に削除できます。 前述したように、次の手順を使用してメッセージを削除するには、Exchange Online のメールボックスのインポートの役割が割り当てられている必要があります。
   
-1. [Exchange Online PowerShell に接続します](https://go.microsoft.com/fwlink/?linkid=396554)。
+1. [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/?linkid=396554)。
     
 2. 次のコマンドを実行します。
     

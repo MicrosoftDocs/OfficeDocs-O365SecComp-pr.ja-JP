@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: office 365 Advanced threat Protection の脅威インテリジェンス機能が、組織に対する脅威を調査し、マルウェア、フィッシング、および office 365 がユーザーに代わって検出したその他の攻撃に対応し、脅威を検索する方法について説明します。切り替える.
 ms.openlocfilehash: 6f7e6e0a49bb4035458af2e9d7e45fd954a1f9fc
-ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30732270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265399"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 の脅威の調査と対応
 
@@ -71,7 +71,7 @@ Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-
     
 - [脅威の調査と応答を Windows Defender Advanced threat Protection と統合する](integrate-office-365-ti-with-wdatp.md)
     
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [脅威エクスプローラーのビュー](threat-explorer-views.md)
 

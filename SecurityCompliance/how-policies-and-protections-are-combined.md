@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 ms.openlocfilehash: 73f44e747581664f075608d972ee80c8381ca7fd
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30994877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256315"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>複数の保護方法および検出スキャンがメールで実行される場合に適用されるポリシー
 
@@ -30,11 +30,11 @@ ms.locfileid: "30994877"
 |優先度 |ポリシー  |カテゴリ  |管理対象の場所 |
 |---------|---------|---------|---------|
 |1-d     | マルウェア      | MALW      | マルウェア ポリシー   |
-|pbm-2     | フィッシング     | PHSH     | スパム フィルター ポリシーの構成     |
-|1/3     | 高確度スパム      | HSPM        | スパム フィルター ポリシーの構成        |
+|pbm-2     | フィッシング     | PHSH     | スパム フィルター ポリシーの設定     |
+|1/3     | 高確度スパム      | HSPM        | スパム フィルター ポリシーの設定        |
 |2/4     | スプーフィング        | SPOOF        | フィッシング対策ポリシー、スプーフィングインテリジェンス        |
-|5     | スパム         | SPM         | スパム フィルター ポリシーの構成         |
-|シックス     | バルク         | BULK        | スパム フィルター ポリシーの構成         |
+|5     | スパム         | SPM         | スパム フィルター ポリシーの設定         |
+|シックス     | バルク         | BULK        | スパム フィルター ポリシーの設定         |
 
 さらに、これらのポリシーは_ATP を使用している組織_にも適用されます。
 

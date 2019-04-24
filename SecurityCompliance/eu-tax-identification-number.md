@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 税務識別番号の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
 ms.openlocfilehash: 4914ff078695519c2a298190d82c86a6abebceb9
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255525"
 ---
 # <a name="eu-tax-identification-number"></a>EU 税務識別番号
 
@@ -893,7 +893,7 @@ adószám
   
 adóhatóság szám
   
-## <a name="ireland"></a>Ireland
+## <a name="ireland"></a>アイルランド
 
 ### <a name="format"></a>Format
 

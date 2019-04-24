@@ -1,5 +1,5 @@
 ---
-title: Office 365 で監査ログを検索してユーザーと管理者のアクティビティを調べる
+title: Office 365 のユーザーおよび管理者のアクティビティについて監査ログを検索する
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,17 +11,17 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
-description: Office 365 監査ログは、統合監査ログです。なぜ統合監査ログがあるのですか。組織が加入しているほとんどの Office 365 サービスからのイベントは、検索可能な単一の監査ログに記録されるためです。つまり、次のサービスでユーザーおよび管理者のアクティビティを検索できます。
+description: Office 365 監査ログは、統合監査ログです。 なぜ統合監査ログがあるのですか。 組織が加入しているほとんどの Office 365 サービスからのイベントは、検索可能な単一の監査ログに記録されるためです。 つまり、次のサービスでユーザーおよび管理者のアクティビティを検索できます。
 ms.openlocfilehash: d964a1404dd022ba9b56e5d86766c5fc6eabf10a
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265859"
 ---
-# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Office 365 で監査ログを検索してユーザーと管理者のアクティビティを調べる
+# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Office 365 のユーザーおよび管理者のアクティビティについて監査ログを検索する
 
-Office 365 監査ログは、統合監査ログです。なぜ統合監査ログがあるのですか。組織が加入しているほとんどの Office 365 サービスからのイベントは、検索可能な単一の監査ログに記録されるためです。つまり、次のサービスでユーザーおよび管理者のアクティビティを検索できます。 
+Office 365 監査ログは、統合監査ログです。 なぜ統合監査ログがあるのですか。 組織が加入しているほとんどの Office 365 サービスからのイベントは、検索可能な単一の監査ログに記録されるためです。 つまり、次のサービスでユーザーおよび管理者のアクティビティを検索できます。 
   
 - SharePoint
 - OneDrive
@@ -42,7 +42,7 @@ Office 365 監査ログを検索するには、いくつかの作業を行う必
     
 - メールボックスに関連するイベントを検索できるように、[メールボックスの監査を有効に](enable-mailbox-auditing.md)します。ユーザーが自分のメールボックスにサインインした場合や、回復可能なアイテムフォルダーからアイテムを削除した場合などです。 
     
- ## <a name="search-the-audit-log"></a>監査ログの検索
+ ## <a name="search-the-audit-log"></a>監査ログを検索する
   
 監査を有効にした後は、複数の Office 365 サービスから、何百もの種類のイベントを検索します。
   

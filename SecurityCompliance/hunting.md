@@ -13,11 +13,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.openlocfilehash: e10ec5cc54ed53242f62871a8837885c9520c749
-ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31043308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256222"
 ---
 # <a name="hunt-for-malware-and-other-threats-in-microsoft-365"></a>Microsoft 365 でマルウェアやその他の脅威を探します。
 

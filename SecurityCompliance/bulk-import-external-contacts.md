@@ -13,12 +13,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: 管理者が Exchange Online PowerShell と CSV ファイルを使用して外部連絡先をグローバルアドレス一覧に一括インポートする方法について説明します。
-ms.openlocfilehash: f95adcd54ebf2194536a199bca6fecf417064882
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: 2948332d7cdf2d1364b2b563f94efdb3e8d0672d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244507"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>外部連絡先を Exchange Online に一括インポートする
 
@@ -91,7 +91,7 @@ ms.locfileid: "30862499"
     インポートされた連絡先は、outlook および web 上の outlook の共有アドレス帳に表示されます。
     
     > [!NOTE]
-    > [**ユーザー** \>の**連絡先**] にアクセスして、Office 365 管理センターで連絡先を表示することもできます。 
+    > [**ユーザー** \>の**連絡先**] にアクセスして、Microsoft 365 管理センターで連絡先を表示することもできます。 
 
 ## <a name="step-3-add-information-to-the-properties-of-the-external-contacts"></a>手順 3: 外部連絡先のプロパティに情報を追加する
 
@@ -134,7 +134,7 @@ ms.locfileid: "30862499"
   
 ## <a name="hide-external-contacts-from-the-shared-address-book"></a>共有アドレスから外部連絡先を非表示にする book>
 
-一部の企業では、配布グループのメンバーとして追加できるように外部連絡先のみを使用する場合があります。 このシナリオでは、共有アドレス帳から外部連絡先を非表示にすることができます。 次の手順どおりに行います。
+一部の企業では、配布グループのメンバーとして追加できるように外部連絡先のみを使用する場合があります。 このシナリオでは、共有アドレス帳から外部連絡先を非表示にすることができます。 次の操作を実行してください。
   
 1.  PowerShell を Exchange Online 組織に接続します。 詳細な手順については、「 [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?LinkId=396554)」を参照してください。
     

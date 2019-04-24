@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 顧客の電子メール システムがマルウェアまたは悪意のあるスパム攻撃によって侵害を受け、ホストされているフィルター サービスでスパムを送信していると、Office 365 データ センター サーバーの IP アドレスがサードパーティのブロック リストに表示されることがあります。
 ms.openlocfilehash: b3c0aecd45dd01d407712af2e3945e1cff521710
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253945"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>送信メッセージにおける危険度の高い配信プール
 

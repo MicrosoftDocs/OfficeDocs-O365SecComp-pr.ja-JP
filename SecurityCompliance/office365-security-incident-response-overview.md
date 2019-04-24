@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: このソリューションでは、最も一般的なサイバーセキュリティ攻撃が Office 365 とどのように対応しているか、またそれらに対処する方法について説明します。
 ms.openlocfilehash: 13e57d914138edc44d0001781459852fba994f61
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30656023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262359"
 ---
 # <a name="office-365-security-incident-response"></a>Office 365 セキュリティ インシデント対応
 

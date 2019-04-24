@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: 監査機能の概要、および Office 365 の他の検索機能を使用して監査の使用と透明性を実現します。
 ms.openlocfilehash: a7a4412e116fe0cbb28ae1ac193178ac7e3097a3
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262809"
 ---
 # <a name="ediscovery-and-search-features"></a>電子情報開示と検索機能 
 

@@ -1,5 +1,5 @@
 ---
-title: ワーキング セット内のデータのクエリ
+title: ワーキング セット内のデータをクエリします
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 3000a066bf69f71327801035e7c270cc602565ac
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263809"
 ---
-# <a name="query-the-data-in-a-working-set"></a>ワーキング セット内のデータのクエリ
+# <a name="query-the-data-in-a-working-set"></a>ワーキング セット内のデータをクエリします
 
 ほとんどの場合、作業セットに含まれるものをより深く掘り下げて、より効率的にレビューできるように整理するのに役立ちます。 作業セット内のクエリを使用すると、一度に定義された条件を満たすドキュメントのサブセットに集中することができます。
 

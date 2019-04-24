@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 904bc5f8a6d6cef937d55336e8f383957713769a
-ms.sourcegitcommit: 9f38ba72eba0b656e507860ca228726e4199f7ec
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30475697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32251917"
 ---
 # <a name="download-export-jobs"></a>エクスポート ジョブのダウンロード
 

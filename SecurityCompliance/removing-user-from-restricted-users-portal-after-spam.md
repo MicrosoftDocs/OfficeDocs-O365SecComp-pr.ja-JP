@@ -17,11 +17,11 @@ ms.collection:
 - M365-security-compliance
 description: ユーザーが、スパムとして分類された Office 365 から電子メールを継続的に送信した場合、それ以上メッセージを送信することはできません。
 ms.openlocfilehash: a4f22b4d5192df202c1caa19714e8b5476dd8205
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264939"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>迷惑メールを送信した後で制限付きユーザー ポータルからユーザーを削除する
 
@@ -29,7 +29,7 @@ ms.locfileid: "30998500"
 
 - 有効な送信者として認識されなかったため、メッセージを配信できませんでした。 最も一般的な理由は、メールアドレスがスパムを送信している可能性があり、組織外のメッセージを送信することが許可されなくなったためです。 詳細については、メール管理者に問い合わせてください。 リモートサーバーが ' 550 5.1.8 アクセスが拒否されましたが、正しくない送信送信者 ' が返されました
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 <a name="sectionSection0"> </a>
 
 予想所要時間 : 5 分
@@ -70,4 +70,4 @@ ms.locfileid: "30998500"
 
 [送信メッセージにおける危険度の高い配信プール](high-risk-delivery-pool-for-outbound-messages.md)
 
-[セキュリティ センターとコンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)
+[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)

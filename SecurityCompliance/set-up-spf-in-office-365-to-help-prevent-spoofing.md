@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: '概要: この記事では、Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。 SPF を使うと、カスタム ドメインから送信される送信電子メールを検証できます。'
 ms.openlocfilehash: 039a09e7dac307ead156eac47699edbd2350b304
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260715"
 ---
-# <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>スプーフィングを防止するために Office 365 で SPF を設定する
+# <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>Office 365 で SPF を設定して、スプーフィングを防止する
 
  **概要:** この記事では、Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。SPF を使うと、カスタム ドメインから送信される送信電子メールを検証できます。 
   

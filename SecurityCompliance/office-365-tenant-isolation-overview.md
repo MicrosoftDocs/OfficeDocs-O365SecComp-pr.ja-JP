@@ -3,27 +3,26 @@ title: Office 365 でのテナントの分離
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Microsoft が Office 365 のテナント分離を強制する方法の概要。
-ms.openlocfilehash: dceff3b73ac01d3e0422a190d450ee28f7fdfb27
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 87fd8cddce830ef58bcaa08462d6bcb120d1e05f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262379"
 ---
 # <a name="tenant-isolation-in-office-365"></a>Office 365 でのテナントの分離
 
-クラウドコンピューティングの主な利点の1つは、同時に多数のお客様に共通する共有インフラストラクチャの概念で、スケールの経済につながることです。この概念を*マルチテナント*と呼びます。Microsoft は、クラウドサービスのマルチテナントアーキテクチャがエンタープライズレベルのセキュリティ、機密性、プライバシー、整合性、および可用性の標準をサポートするように継続的に取り組みます。
+クラウドコンピューティングの主な利点の1つは、同時に多数のお客様に共通する共有インフラストラクチャの概念で、スケールの経済につながることです。 この概念を*マルチテナント*と呼びます。 Microsoft は、クラウドサービスのマルチテナントアーキテクチャがエンタープライズレベルのセキュリティ、機密性、プライバシー、整合性、および可用性の標準をサポートするように継続的に取り組みます。
 
 [信頼できるコンピューティング](https://www.microsoft.com/en-us/twc/default.aspx)および[セキュリティ開発ライフサイクル](http://www.microsoft.com/security/sdl/default.aspx)から得られる重要な投資と実績に基づいて、Microsoft cloud services はすべてのテナントがすべてに悪影響を与える可能性があるという前提で設計されていました。その他のテナント。また、1つのテナントのアクションが別のテナントのセキュリティまたはサービスに影響を与えたり、別のテナントのコンテンツにアクセスしたりしないようにセキュリティ対策を実装しています。
 
@@ -34,8 +33,8 @@ ms.locfileid: "30220277"
 office 365 には複数の形式の保護が実装されており、お客様が office 365 のサービスまたはアプリケーションを侵害したり、他のテナントまたは office 365 システム自体の情報に無許可でアクセスしたりすることを防ぐことができます。
 - Office 365 サービス用の各テナント内の顧客コンテンツの論理的分離は、Azure Active Directory の承認と役割ベースのアクセス制御によって実現されます。
 - SharePoint Online は、データ分離メカニズムをストレージレベルで提供します。
-- Microsoft は、厳密な物理的なセキュリティ、背景審査、および複数層の暗号化戦略を使用して、顧客のコンテンツの機密性と整合性を保護しています。すべての Office 365 データセンターには、バイオメトリクスアクセスコントロールがあり、ほとんどの場合、物理的なアクセスを得るために palm 印刷が要求されています。また、米国のすべての Microsoft の従業員は、雇用プロセスの一環として、標準のバックグラウンドチェックを正常に完了する必要があります。office 365 の管理アクセスに使用されるコントロールの詳細については、「 [office 365 管理アクセス制御](office-365-administrative-access-controls-overview.md)」を参照してください。
-- Office 365 は、BitLocker、ファイル暗号化、トランスポート層セキュリティ (TLS)、インターネットプロトコルセキュリティ (IPsec) など、お客様のコンテンツを保存し、送信中で暗号化するサービス側のテクノロジを使用しています。office 365 での暗号化の詳細については、「 [office 365 のデータ暗号化テクノロジ](office-365-encryption-in-the-microsoft-cloud-overview.md)」を参照してください。
+- Microsoft は、厳密な物理的なセキュリティ、背景審査、および複数層の暗号化戦略を使用して、顧客のコンテンツの機密性と整合性を保護しています。 すべての Office 365 データセンターには、バイオメトリクスアクセスコントロールがあり、ほとんどの場合、物理的なアクセスを得るために palm 印刷が要求されています。 また、米国のすべての Microsoft の従業員は、雇用プロセスの一環として、標準のバックグラウンドチェックを正常に完了する必要があります。 office 365 の管理アクセスに使用されるコントロールの詳細については、「 [office 365 管理アクセス制御](office-365-administrative-access-controls-overview.md)」を参照してください。
+- Office 365 は、BitLocker、ファイル暗号化、トランスポート層セキュリティ (TLS)、インターネットプロトコルセキュリティ (IPsec) など、お客様のコンテンツを保存し、送信中で暗号化するサービス側のテクノロジを使用しています。 office 365 での暗号化の詳細については、「 [office 365 のデータ暗号化テクノロジ](office-365-encryption-in-the-microsoft-cloud-overview.md)」を参照してください。
 
 これらの保護によって、物理的な分離だけで提供される脅威の保護と軽減対策を提供する、堅牢な論理的分離コントロールが提供されます。
 

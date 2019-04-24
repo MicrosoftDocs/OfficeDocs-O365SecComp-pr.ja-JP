@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection でのメールフロールールをバルクメールフィルターに使用する方法について説明します。
 ms.openlocfilehash: 43f0af6fe41bc7f8f4a62d0d87dbd825fb868f7b
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267013"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>メールフロールールを使用して Exchange Online Protection で一括メールフィルターを構成する
 
@@ -31,7 +31,7 @@ ms.locfileid: "30693286"
   
 ## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a>テキストパターンに基づいてバルクメールメッセージをフィルター処理するメールフロールールを作成する
 
-1. Exchange 管理センター (EAC) で、 **[メール フロー]** \> **[ルール]** に移動します。
+1. Exchange 管理センター (EAC) で、[**メール フロー**] \> [**ルール**] に移動します。
     
 2. [追加] アイコン](media/ITPro-EAC-AddIcon.gif)をクリックし、[**新しいルールの作成**] を選択します。 **** ![
     

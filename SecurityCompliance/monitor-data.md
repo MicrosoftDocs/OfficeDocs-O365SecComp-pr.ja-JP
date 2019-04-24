@@ -13,11 +13,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.openlocfilehash: 741daff150ef52ef99c3da31159c02bc9431757f
-ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31043328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263236"
 ---
 # <a name="monitor-and-report-data-in-microsoft-365-security"></a>Microsoft 365 セキュリティのデータを監視および報告する
 

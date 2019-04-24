@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: インプレースホールド、訴訟ホールド、および Office 365 のアイテム保持ポリシーを使用すると、メールボックスのコンテンツを保持して規制コンプライアンスおよび電子情報開示の要件を満たすことができます。
 ms.openlocfilehash: fcf5567bc50f25ce51d8d569d772559a376703d0
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261685"
 ---
-# <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>電子情報開示のために Bcc および展開された配布グループの受信者を保持する
+# <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>電子情報開示のために Bcc および展開された配布リスト グループの受信者を保存する
   
 インプレースホールド、訴訟ホールド、および[Office 365 アイテム保持ポリシー](http://go.microsoft.com/fwlink/?LinkID=827811) (Security & コンプライアンスセンターで作成) を使用すると、メールボックスのコンテンツを保持して、規制遵守および電子情報開示の要件を満たすことができます。 メッセージの [宛先] フィールドと [CC] フィールドに直接指定されている受信者の情報は既定ですべてのメッセージに含められますが、組織によってはメッセージの全受信者の詳細を検索して再現する機能が必要な場合もあります。 これには、以下が含まれます。 
   

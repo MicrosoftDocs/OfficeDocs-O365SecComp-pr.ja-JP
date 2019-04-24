@@ -1,5 +1,5 @@
 ---
-title: 電子情報開示ワークフローにおけるコンテンツ検索の使用
+title: 電子情報開示ワークフローでコンテンツ検索を使用する
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
 description: 'PowerShell スクリプトを使用して、セキュリティ & コンプライアンスセンターで作成された検索に基づいて、Exchange Online でインプレース電子情報開示検索を作成します。 '
 ms.openlocfilehash: 2e4f1b3570ce2400472a0b2a9ddee886ffc4bab3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263799"
 ---
-# <a name="use-content-search-in-your-ediscovery-workflow"></a>電子情報開示ワークフローにおけるコンテンツ検索の使用
+# <a name="use-content-search-in-your-ediscovery-workflow"></a>電子情報開示ワークフローでコンテンツ検索を使用する
 
 セキュリティ & コンプライアンスセンターのコンテンツ検索機能を使用すると、組織内のすべてのメールボックスを検索できます。 Exchange Online のインプレース電子情報開示とは異なり (1万メールボックスを検索することができます)、単一の検索の対象メールボックスの数に制限はありません。 組織全体の検索を実行する必要があるシナリオでは、コンテンツ検索を使用してすべてのメールボックスを検索できます。 その後、インプレース電子情報開示のワークフロー機能を使用して、メールボックスを保持に配置したり、検索結果をエクスポートしたりするなど、電子情報開示関連のその他のタスクを実行できます。 たとえば、すべてのメールボックスを検索して、訴訟に応答する特定の保管担当者を識別する必要があるとします。 セキュリティ & コンプライアンスセンターでコンテンツ検索を使用して、組織内のすべてのメールボックスを検索し、そのケースに応答するものを特定することができます。 その後、保管担当者メールボックスのリストを、Exchange Online のインプレース電子情報開示検索用のソースメールボックスとして使用できます。 インプレース電子情報開示を使用すると、これらのソースメールボックスを保持でき、検索結果を証拠開示用メールボックスにコピーして、検索結果をエクスポートすることもできます。
   

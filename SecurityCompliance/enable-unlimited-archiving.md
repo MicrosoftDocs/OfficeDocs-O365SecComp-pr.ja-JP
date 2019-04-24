@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: '管理者向け: Office 365 で自動拡張アーカイブを有効にする方法について説明します。これにより、ユーザーに Exchange Online メールボックスのための無制限のストレージが提供されます。 自動拡張アーカイブは、組織全体に対して、または特定のユーザーに対してのみ有効にすることができます。'
 ms.openlocfilehash: e41ebc0605b7e6ce2178791de27421a82e2b6cf6
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256842"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Office 365 で無制限のアーカイブを有効にする-管理者向けヘルプ
 
 Office 365 の Exchange Online 自動拡張アーカイブ機能を使用して、アーカイブメールボックスの無制限の記憶域スペースを有効にすることができます。 自動拡張アーカイブが有効になっている場合は、記憶域の制限に近づいたときに、ユーザーのアーカイブメールボックスに追加の記憶域が自動的に追加されます。 その結果、メールボックスの格納容量は無制限になります。 自動拡張アーカイブは、組織内のすべてのユーザーに対して、または特定のユーザーに対してのみ有効にすることができます。 自動拡張アーカイブの詳細については、「 [Office 365 の無制限アーカイブの概要](unlimited-archiving.md)」を参照してください。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - 組織全体または特定のユーザーに対して自動拡張アーカイブを有効にするには、Office 365 組織のグローバル管理者、または Exchange Online 組織の organization Management 役割グループのメンバーである必要があります。 または、特定のユーザーに対して自動拡張アーカイブを有効にするために、メール受信者の役割が割り当てられている役割グループのメンバーである必要があります。
     
@@ -35,7 +35,7 @@ Office 365 の Exchange Online 自動拡張アーカイブ機能を使用して�
     
 - PowerShell を使用してアーカイブメールボックスを有効にすることもできます。 組織内のすべてのユーザーに対してアーカイブメールボックスを有効にするために使用できる PowerShell コマンドの例については、「 [More information](#more-information) 」セクションを参照してください。 
     
-- アーカイブの自動拡張では、共有メールボックスもサポートされます。 共有メールボックスのアーカイブを有効にするには、exchange online プラン2ライセンスまたは exchange online プラン1ライセンスを持つ exchange online プラン1ライセンスが必要です。
+- アーカイブの自動拡張では、共有メールボックスもサポートされます。 共有メールボックスのアーカイブを有効にするには、Exchange Online プラン 2 のライセンス、または Exchange Online Archiving のライセンスの付いた Exchange Online プラン 1 のライセンスが必要です。
     
 - Exchange 管理センターまたはセキュリティ & コンプライアンスセンターを使用して、自動拡張アーカイブを有効にすることはできません。 Exchange Online PowerShell を使用する必要があります。 リモート powershell を使用して exchange online 組織に接続するには、「 [exchange online powershell への接続](https://go.microsoft.com/fwlink/p/?linkid=396554)」を参照してください。
     

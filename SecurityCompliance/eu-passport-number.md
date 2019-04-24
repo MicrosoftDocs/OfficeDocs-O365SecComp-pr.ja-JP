@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: このトピックでは、データ損失防止 (DLP) ポリシーが EU Passport 番号機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
 ms.openlocfilehash: 3ab92e87607f41cffa8c15f1179a4eef5369cb29
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256825"
 ---
 # <a name="eu-passport-number"></a>EU パスポート番号
 
@@ -117,7 +117,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -156,7 +156,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -195,7 +195,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -234,7 +234,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -273,7 +273,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -312,7 +312,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -363,7 +363,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -402,7 +402,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -429,7 +429,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 |:-----|
 |passport number  <br/> ハンガリーのパスポート番号  <br/> passport いいえ  <br/> útlevél száma  <br/> |
    
-## <a name="ireland"></a>Ireland
+## <a name="ireland"></a>アイルランド
 
 ### <a name="format"></a>Format
 
@@ -445,7 +445,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -531,7 +531,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -609,7 +609,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -648,7 +648,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -734,7 +734,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -773,7 +773,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -812,7 +812,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -857,7 +857,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-不要
+いいえ
   
 ### <a name="definition"></a>定義
 

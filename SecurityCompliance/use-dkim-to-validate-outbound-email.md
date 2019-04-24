@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: '概要: この記事では、Office 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージを送信先のメール システムが信頼するようにする方法を説明します。'
 ms.openlocfilehash: fc2a509aacdaac0aeef22696d85512f91957502f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263746"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>DKIM を使用して、Office 365 のカスタム ドメインから送信される送信電子メールを検証する
 
@@ -152,7 +152,7 @@ DNS に CNAME レコードを発行したら、Office 365 で DKIM 署名を有�
     
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>PowerShell を使用してカスタム ドメインの DKIM 署名を有効にするには
 
-1. [Exchange Online PowerShell に接続します](https://technet.microsoft.com/library/jj984289.aspx)。
+1. [Exchange Online PowerShell への接続](https://technet.microsoft.com/library/jj984289.aspx)。
     
 2. 次のコマンドを実行します。
     
@@ -203,7 +203,7 @@ DNS に CNAME レコードを発行したら、Office 365 で DKIM 署名を有�
   
 ### <a name="to-disable-the-dkim-signing-policy-by-using-windows-powershell"></a>Windows PowerShell を使用して DKIM 署名ポリシーを無効にするには
 
-1. [Exchange Online PowerShell に接続します](https://technet.microsoft.com/library/jj984289.aspx)。
+1. [Exchange Online PowerShell への接続](https://technet.microsoft.com/library/jj984289.aspx)。
     
 2. DKIM 署名を無効にする各ドメインに対して次のいずれかのコマンドを実行します。
     

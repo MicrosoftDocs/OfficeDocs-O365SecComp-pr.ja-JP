@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection では、受信電子メール メッセージをスキャンするときに、 **X-Forefront-Antispam-Report** ヘッダーをそれぞれのメッセージに挿入します。
 ms.openlocfilehash: 70322d49defe49517a75658b1e2084d520fd7ae8
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242998"
 ---
 # <a name="anti-spam-message-headers"></a>スパム対策メッセージ ヘッダー
 

@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
 description: この入門ドキュメントは、Exchange Online Protection (EOP) といくつかの重要な用語を理解するのに役立ちます。 これは、exchange Online のクラウドホスト型メールボックスを保護している、または exchange Server 2016 などの社内メールボックスを保護している EOP スタンドアロンのお客様に対して適用されます。
 ms.openlocfilehash: f23f28b5c15c7057d1fd8ec77cce67bf1746410c
-ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30950434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256475"
 ---
 ## <a name="what-is-exchange-online-protection-eop"></a>Exchange Online Protection (EOP) とは
 

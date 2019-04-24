@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 管理者は、Security & コンプライアンスセンターのメールフローダッシュボードのキューのアラートとキューについて説明しています。
 ms.openlocfilehash: 490665bb6b062c5a0b93c988adea9eeb9827cb86
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267694"
 ---
 # <a name="queue-alerts-and-queues"></a>キューのアラートとキュー
 

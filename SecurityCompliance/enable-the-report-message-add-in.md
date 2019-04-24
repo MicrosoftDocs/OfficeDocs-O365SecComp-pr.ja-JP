@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 個々のユーザーまたは組織全体で、outlook および outlook on the web 用のレポートメッセージアドインを有効にする方法について説明します。
 ms.openlocfilehash: 3c476a6e097307b1aabc3580b598bb91a4407731
-ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30866343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257497"
 ---
 # <a name="enable-the-report-message-add-in"></a>レポート メッセージ アドインを有効にする
 
@@ -142,7 +142,7 @@ Office 365 の全体管理者または exchange Online 管理者であり、exch
     
 3. [レポートメッセージ] 画面で、組織に合わせて設定を確認して編集します。<br/>![レポートメッセージアドインの設定](media/EditReportMessageAddIn.png)<br/> 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [レポートメッセージアドインを使用する](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
   

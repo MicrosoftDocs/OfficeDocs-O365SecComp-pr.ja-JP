@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Microsoft は、サービス拒否 (DoS) 攻撃に対する防御において、吸収、検出、軽減の中心となる原則を活用する方法について説明します。
 ms.openlocfilehash: bbfffeaeb66fc83e80c274be9550a95dc8bd3f0d
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262929"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>サービス拒否攻撃に対する防御の主要な原則
 

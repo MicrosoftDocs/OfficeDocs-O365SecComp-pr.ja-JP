@@ -15,15 +15,15 @@ ms.collection:
 - M365-security-compliance
 description: SharePoint、OneDrive、Teams で検出された悪意のあるファイルに関する情報を表示する方法と、それらのファイルに対してアクションを実行する方法について説明します。
 ms.openlocfilehash: f5304f78ddec884748dd7d1090e2a7895044d045
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259835"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams で検出された悪意のあるファイルに関する情報を表示する
 
-[Office 365 ATP for SharePoint、OneDrive、Microsoft Teams](atp-for-spo-odb-and-teams.md)では、組織がドキュメントライブラリおよびチームサイト内の悪意のあるファイルから保護されます。悪意のあるファイルが検出されると、そのファイルはブロックされるようになり、組織のセキュリティチームによって追加の操作が行われるまで、そのファイルを開いたり、コピー、移動、または共有することができなくなります。この記事では、検出されたファイルと実行するアクションに関する情報を表示する方法について説明します。 
+[Office 365 ATP for SharePoint、OneDrive、Microsoft Teams](atp-for-spo-odb-and-teams.md)では、組織がドキュメントライブラリおよびチームサイト内の悪意のあるファイルから保護されます。 悪意のあるファイルが検出されると、そのファイルはブロックされるようになり、組織のセキュリティチームによって追加の操作が行われるまで、そのファイルを開いたり、コピー、移動、または共有することができなくなります。 この記事では、検出されたファイルと実行するアクションに関する情報を表示する方法について説明します。 
 
 この記事で説明されているタスクを実行するには、 [Office 365 セキュリティ&amp;コンプライアンスセンターに必要なアクセス許可](permissions-in-the-security-and-compliance-center.md)を持っている必要があります。 
   
@@ -57,7 +57,7 @@ Office 365 ATP によって検出されたファイルの状態と詳細情報�
     
   - [**ファイルのダウンロード**] を選択して、ファイルをさらに調査します。 
     
-  - [**削除**] を選択して、検疫されたアイテムのリストからファイルを削除します。このオプションを選択する場合は、SharePoint Online、OneDrive for business、または Microsoft Teams の対応するライブラリからもファイルを削除する必要があります。このオプションでは、ファイルが開かれたり共有されたりすることはブロックされません。 
+  - [**削除**] を選択して、検疫されたアイテムのリストからファイルを削除します。 このオプションを選択する場合は、SharePoint Online、OneDrive for business、または Microsoft Teams の対応するライブラリからもファイルを削除する必要があります。 このオプションでは、ファイルが開かれたり共有されたりすることはブロックされません。 
     
 5. [**閉じる**] を選択して、選択したアイテムの詳細を閉じます。 
   

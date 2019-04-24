@@ -10,11 +10,11 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: 新しい Microsoft 365 コンプライアンスセンター (含まれるもの、その入手方法、および次の手順) について説明します。
 ms.openlocfilehash: ae608d1aafb803fabe6ed1eba3804b9921bac7b2
-ms.sourcegitcommit: 48b77ec6fb499175507fc08f11dc9f5efe6c4858
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265571"
 ---
 # <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>すべての新しい Microsoft 365 コンプライアンスセンターの概要
 
@@ -24,7 +24,7 @@ ms.locfileid: "31518387"
 
 この記事では、Microsoft 365 コンプライアンスセンター、[その入手方法](#how-do-i-get-this)、[よく寄せ](#frequently-asked-questions)られる質問、および[次の手順](#next-steps)について説明します。
 
-[![Microsoft 365 コンプライアンスセンター](media/m365-compliance-center.png)](https://compliance.microsoft.com)
+[![Microsoft 365 コンプライアンス センター](media/m365-compliance-center.png)](https://compliance.microsoft.com)
 
 ## <a name="welcome-to-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスへようこそ
 
@@ -93,7 +93,7 @@ Microsoft コンプライアンススコアカードに移動すると、[コン
 
 引き続き、Microsoft 365 コンプライアンスセンターに機能を追加しています。 監査ログの検索など、何かが見つからない場合は、Office 365 Security & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動してみてください。 構成は、既存の Office 365 セキュリティ & コンプライアンスセンターと新しい Microsoft 365 コンプライアンスセンターの両方に自動的に保存されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - **Microsoft コンプライアンススコアを確認**し、コンプライアンスマネージャーを使用してスコアを向上させます。 詳細については、「[コンプライアンスマネージャーを使用して、Microsoft クラウドサービスを使用する際のデータ保護と規制要件を満たす](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)」を参照してください。
 

@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: '管理者向け: Security & コンプライアンスセンターのインポートサービスを使用して、Exchange Online のユーザーメールボックスに電子メールデータ (PST ファイル) を一括インポートする方法について説明します。 このトピックでは、faq を示し、PST インポート処理のしくみについて説明します。'
-ms.openlocfilehash: 3a7dba3db608eb45347609acef396faf73da483f
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: afe19076f2b0cd8dd5dfe3a596d80a7b65e8a891
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254906"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Overview of importing your organization PST files to Office 365
 
@@ -95,6 +95,8 @@ Security & コンプライアンスセンターのインポートサービスを
   - [電子情報開示ケース](ediscovery-cases.md)を使用して組織の法的調査を行う 
     
   - セキュリティ & コンプライアンスセンターの[アイテム保持ポリシー](retention-policies.md)を使用して、メールボックスのコンテンツを保持する期間を制御し、保存期間の期限が切れた後にコンテンツを削除します。 
+
+  - [監督ポリシー](supervision-policies.md)を使用して、メッセージがメッセージ標準に準拠していることを確認し、分類型を追加します。
     
 - Office 365 にデータをインポートすると、データの損失を防ぐことができます。 Office 365 にインポートされた電子メールデータは、Exchange Online の高可用性機能を継承します。
     

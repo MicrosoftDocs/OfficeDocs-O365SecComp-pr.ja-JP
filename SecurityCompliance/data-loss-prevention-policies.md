@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) ポリシーを使用すると、office 365 全体で機密情報を識別、監視、および自動保護することができます。
 ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
-ms.sourcegitcommit: 94e9eeab8134a9c4d9004cc16de7da227a0e5cc0
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262215"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>データ損失防止ポリシーの概要
 
@@ -30,7 +30,7 @@ DLP ポリシーを使用すると、以下のことが可能になります。
   
 - **Exchange online、SharePoint Online、OneDrive for business、Microsoft Teams など、さまざまな場所の機密情報を特定します。**
     
-    たとえば、任意の onedrive for business サイトに保存されているクレジットカード番号を含むドキュメントを特定したり、特定のユーザーの onedrive サイトのみを監視したりすることができます。
+    たとえば、OneDrive for Business サイトに保存されているクレジット カード番号を含む文書を特定したり、特定のユーザーの OneDrive サイトだけを監視したりできます。
     
 - **機密情報を誤って共有することを防ぎます**。 
     
@@ -454,7 +454,7 @@ SharePoint Online サイトと OneDrive for business サイトのすべてにお
   
 このため、DLP ポリシーは、バックグラウンドでポリシーに一致しているかどうか頻繁にドキュメントを確認します。 これを、非同期のポリシー評価と考えることができます。
   
-#### <a name="how-it-works"></a>しくみ
+#### <a name="how-it-works"></a>メカニズム
  
 ユーザーがサイトでドキュメントを追加または変更すると、検索エンジンによってコンテンツがスキャンされ、後で検索できるようになります。 これが発生していますが、機密情報のためにコンテンツもスキャンされ、共有されているかどうかが確認されます。 検出された機密情報は検索インデックスに安全に格納されるため、コンプライアンスチームのみがアクセスできますが、一般的なユーザーにはアクセスできません。 オンにした各 DLP ポリシーはバックグラウンドで実行され (非同期)、ポリシーに一致するコンテンツについては検索頻度がよくチェックされ、不注意によるリークから保護するアクションを適用します。
   
@@ -508,7 +508,7 @@ DLP ポリシーを作成して適用するときにのみ、これらのアク�
     
 ただし、DLP レポートには、Exchange Online などの Office 365 間でデータをプルする必要があります。 このため、 **DLP レポートのコマンドレットは Exchange Online powershell で使用できます (セキュリティ&amp;コンプライアンスセンターの powershell に**は含まれません)。 そのため、DLP レポートのコマンドレットを使用するには、次のことを行う必要があります。
   
-1. [リモート PowerShell による Exchange への接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
 2. 次のいずれかのコマンドレットを DLP レポートに使用します。
     
@@ -520,13 +520,13 @@ DLP ポリシーを作成して適用するときにのみ、これらのアク�
 
 - [テンプレートから DLP ポリシーを作成する](create-a-dlp-policy-from-a-template.md)
     
-- [DLP ポリシーに関する通知を送信してポリシー ヒントを表示する](use-notifications-and-policy-tips.md)
+- [通知を送信して、DLP ポリシーのポリシーのヒントを表示する](use-notifications-and-policy-tips.md)
     
-- [FCI または他のプロパティを使用したドキュメントを保護する DLP ポリシーを作成する](protect-documents-that-have-fci-or-other-properties.md)
+- [FCI または他のプロパティを含むドキュメントを保護するために DLP ポリシーを作成する](protect-documents-that-have-fci-or-other-properties.md)
     
 - [DLP ポリシー テンプレートに含まれるもの](what-the-dlp-policy-templates-include.md)
     
-- [機密情報の種類の検索基準](what-the-sensitive-information-types-look-for.md)
+- [機密情報の種類の検索基準:](what-the-sensitive-information-types-look-for.md)
     
 - [DLP 関数の検索対象](what-the-dlp-functions-look-for.md)
     

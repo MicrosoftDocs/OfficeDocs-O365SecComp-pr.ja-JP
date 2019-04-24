@@ -1,5 +1,5 @@
 ---
-title: 低速メール フローのルールの分析情報
+title: 低速メール フローのルールのインサイト
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードに表示される低速メールフロールールについて理解できます。
 ms.openlocfilehash: ede12e14f287599cab0e5f39aaf71c38ed519276
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267227"
 ---
-# <a name="slow-mail-flow-rules-insight"></a>低速メール フローのルールの分析情報
+# <a name="slow-mail-flow-rules-insight"></a>低速メール フローのルールのインサイト
 
 非効率的なメールフロールール (トランスポートルールとも呼ばれます) は、組織のメールフロー遅延につながる可能性があります。 この洞察は、組織のメールフローに影響を与えるメールフロールールを報告します。 これらの種類のルールの例を次に示します。
 

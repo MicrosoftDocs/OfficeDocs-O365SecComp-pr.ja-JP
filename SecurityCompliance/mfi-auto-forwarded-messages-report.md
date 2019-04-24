@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 管理者は、Office 365 Security & コンプライアンスセンターのメールフローダッシュボードにある自動転送メッセージレポートについて理解できます。
 ms.openlocfilehash: 3f3d32eee9c3d706a10731ba7983d3ce8d1f7a75
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252350"
 ---
 # <a name="auto-forwarded-messages-report"></a>自動転送済みメッセージレポート
 

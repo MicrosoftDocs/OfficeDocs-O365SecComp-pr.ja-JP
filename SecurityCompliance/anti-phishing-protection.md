@@ -1,5 +1,5 @@
 ---
-title: Office 365 でのフィッシング対策保護
+title: Office 365 のフィッシング対策保護
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 は、既定では、フィッシング対策のような追加のサービスを通じて、フィッシング攻撃に対するさまざまな保護を提供しています。 このトピックでは、Office 365 でのフィッシング対策のオプションと戦略について学習し、実装するために使用できるオンラインリソースについて説明します。
 ms.openlocfilehash: cceae7d316d89325fa37688995555c9e449ac422
-ms.sourcegitcommit: f6073deec39a18581ed12abef18728417a52cdf4
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "30747573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242585"
 ---
-# <a name="anti-phishing-protection-in-office-365"></a>Office 365 でのフィッシング対策保護
+# <a name="anti-phishing-protection-in-office-365"></a>Office 365 のフィッシング対策保護
 
 Office 365 は、既定では、フィッシング対策のような追加のサービスを通じて、フィッシング攻撃に対するさまざまな保護を提供しています。 このトピックでは、Office 365 でのフィッシング対策のオプションと戦略について学習し、実装するために使用できるオンラインリソースについて説明します。
   
@@ -38,7 +38,7 @@ office Enterprise E5 を使用している office 365 組織の場合は、セ�
   
 フィッシング攻撃から保護するために既定で office 365 が構成される方法の詳細については、「office 365 が差出人を検証する方法」を参照してください。[フィッシングを防ぐ方法に](how-office-365-validates-the-from-address.md)ついて説明します。
   
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Office 365 がフィッシング詐欺を防ぐために差出人アドレスを検証する方法](how-office-365-validates-the-from-address.md)
   

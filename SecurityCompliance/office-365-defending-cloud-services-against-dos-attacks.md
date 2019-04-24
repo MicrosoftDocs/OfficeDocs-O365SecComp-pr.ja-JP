@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 description: サービス拒否 (DoS) 攻撃に対する Microsoft のクラウドサービスの防御方法。
 ms.openlocfilehash: 784e17d4b80ac990c903c96f92cd6b96f194439b
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262849"
 ---
 # <a name="defending-microsoft-cloud-services-against-denial-of-service-attacks"></a>サービス拒否攻撃に対する Microsoft クラウドサービスの防御
 
-## <a name="introduction"></a>概要
+## <a name="introduction"></a>はじめに
 Microsoft データセンターは、境界線フェンス、ビデオカメラ、セキュリティ担当者、およびバイオメトリクス、スマートカード、多要素認証を使用する安全な入り口を含む多層防御セキュリティによって保護されています。 多層防御セキュリティは、施設のすべての領域および各物理サーバーユニットに対して続行されます。 [Microsoft クラウドインフラストラクチャと運用グループ](https://www.microsoft.com/en-us/cloud-platform/global-datacenters)は、クラウドサービスのコアインフラストラクチャと基本的なテクノロジを提供します。 データセンターは、物理的なセキュリティと信頼性の業界標準に準拠しており、Microsoft の運用担当者が管理、監視、管理します。
 
 クラウドサービスをさらに保護するために、microsoft は、microsoft Azure の継続的監視およびペネトレーションテストプロセスの一部である DDoS 防御システムを提供しています。 azure DDoS 防御システムは、外部からの攻撃に耐えられるだけでなく、他の azure テナントからも攻撃されるように設計されています。 Azure は、SYN cookie、レート制限、接続制限などの標準的な検出と軽減の手法を使用して、DDoS 攻撃を防止します。

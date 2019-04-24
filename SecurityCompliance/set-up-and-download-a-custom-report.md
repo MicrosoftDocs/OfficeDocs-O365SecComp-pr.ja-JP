@@ -15,34 +15,34 @@ ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターでカスタムの日付範囲とフィルターを使用してレポートを設定およびダウンロードする方法について説明します。
 ms.openlocfilehash: 912dfb43a7fd146f4fb00eb68a7d1004db81466c
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264363"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターでカスタムレポートを設定およびダウンロードする
 
-[ &amp;セキュリティ/コンプライアンスセンター](https://protection.office.com)では、組織のセキュリティチームが組織に対する脅威を軽減して対処するのに役立つ、いくつかの[レポートと分析](reports-and-insights-in-security-and-compliance.md)情報が提供されています。組織のセキュリティチームのメンバーである場合は、カスタムの日付範囲とフィルターを使用してレポートを構成し、カスタムレポートをダウンロードすることができます。 
+[ &amp;セキュリティ/コンプライアンスセンター](https://protection.office.com)では、組織のセキュリティチームが組織に対する脅威を軽減して対処するのに役立つ、いくつかの[レポートと分析](reports-and-insights-in-security-and-compliance.md)情報が提供されています。 組織のセキュリティチームのメンバーである場合は、カスタムの日付範囲とフィルターを使用してレポートを構成し、カスタムレポートをダウンロードすることができます。 
   
 ## <a name="download-a-custom-report"></a>カスタムレポートをダウンロードする
 
 > [!IMPORTANT]
-> [Office 365 セキュリティ&amp;コンプライアンスセンターに必要なアクセス許可](permissions-in-the-security-and-compliance-center.md)を持っていることを確認してください。一般に、Office 365 の全体管理者、セキュリティ管理者、およびセキュリティ閲覧者は、 &amp;セキュリティ/コンプライアンスセンターのレポートにアクセスできます。 
+> [Office 365 セキュリティ&amp;コンプライアンスセンターに必要なアクセス許可](permissions-in-the-security-and-compliance-center.md)を持っていることを確認してください。 一般に、Office 365 の全体管理者、セキュリティ管理者、およびセキュリティ閲覧者は、 &amp;セキュリティ/コンプライアンスセンターのレポートにアクセスできます。 
   
 1. [セキュリティ&amp; /コンプライアンスセンター](https://protection.office.com)で、[**レポート** \> **ダッシュボード**] に移動します。
     
-2. レポートを選択します。(この例では、メッセージの廃棄レポートを使用します)。<br/>![レポートをダウンロードするための要求レポートを選択する](media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
+2. レポートを選択します。 (この例では、メッセージの廃棄レポートを使用します)。<br/>![レポートをダウンロードするための要求レポートを選択する](media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
   
 3. レポートの左上隅で、[**要求レポート**] を選択します。
     
-4. [**レポートの要求**] ダイアログボックスで、レポートの名前、開始日、および終了日を指定します。[**次へ**] を選択します。<br/>![セキュリティ&amp; /コンプライアンスセンターで、[レポート\>レポート] を選択してダウンロードします。](media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
+4. [**レポートの要求**] ダイアログボックスで、レポートの名前、開始日、および終了日を指定します。 [**次へ**] を選択します。<br/>![セキュリティ&amp; /コンプライアンスセンターで、[レポート\>レポート] を選択してダウンロードします。](media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
   
-5. レポートに使用するフィルターを指定します。(たとえば、メッセージの廃棄レポートにクライアント IP アドレスを指定することがあります)。[**次へ**] を選択します。
+5. レポートに使用するフィルターを指定します。 (たとえば、メッセージの廃棄レポートにクライアント IP アドレスを指定することがあります)。[**次へ**] を選択します。
     
 6. レポートの電子メール受信者を指定し、[**保存**] を選択します。
     
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Office 365 セキュリティ&amp; /コンプライアンスセンターのレポートと分析情報](reports-and-insights-in-security-and-compliance.md)
   

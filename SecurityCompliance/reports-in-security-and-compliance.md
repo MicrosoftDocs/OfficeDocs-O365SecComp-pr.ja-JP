@@ -12,11 +12,11 @@ localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: 'Security & コンプライアンスセンターを使用して、SharePoint online および Exchange online 組織のさまざまなレポートと、Azure Active Directory レポートを取得します。  '
 ms.openlocfilehash: b902ce8e44e20fdb9e5fc22189ca07b6168be329
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264899"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>セキュリティ センターとコンプライアンス センターのレポート
 

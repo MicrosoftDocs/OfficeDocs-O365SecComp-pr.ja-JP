@@ -12,11 +12,11 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 管理者は、ユーザーが迷惑メールとして電子メールを報告する機能をオフにできます。
 ms.openlocfilehash: f3e8a8cf837e7923d3c7241852ab2acd375492b8
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264169"
 ---
 # <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>Outlook on the web で迷惑メール報告機能をオフにする
 
@@ -29,7 +29,7 @@ web 上の outlook on the web (以前の outlook web App) の迷惑メール報�
     
 - この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可を確認するには、「web 上の[outlook のアクセス許可](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx#OutlookWebApp)」トピックの「web メールボックスポリシー」エントリを参照してください。 
 
-- exchange online powershell に接続するには、「 [exchange online powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
 
 ## <a name="turn-off-junk-phishing-and-not-junk-reporting-to-microsoft"></a>迷惑メール報告をオフにして Microsoft に通知しない
 <a name="sectionSection1"> </a>

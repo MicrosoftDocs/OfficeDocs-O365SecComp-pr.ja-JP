@@ -15,15 +15,15 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: e3f3e863423fe4312a944eb6f04a58182e11665c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243238"
 ---
 # <a name="analyze-data-in-a-working-set-in-advanced-ediscovery-preview"></a>高度な電子情報開示で作業セット内のデータを分析する (プレビュー)
 
-収集されたドキュメントの数が多い場合は、それらをすべて確認するのは非常に困難です。Advanced eDiscovery (プレビュー) には、ドキュメントを分析して、情報が失われずにレビューされるドキュメントのボリュームを減らし、一貫性のある方法でドキュメントを整理するのに役立つさまざまなツールが用意されています。これらの機能の詳細については、以下を参照してください。
+収集されたドキュメントの数が多い場合は、それらをすべて確認するのは非常に困難です。 Advanced eDiscovery (プレビュー) には、ドキュメントを分析して、情報が失われずにレビューされるドキュメントのボリュームを減らし、一貫性のある方法でドキュメントを整理するのに役立つさまざまなツールが用意されています。 これらの機能の詳細については、以下を参照してください。
 
 - [準重複の検出](near-duplicates.md)
 - [電子メールのスレッド化](email-threading.md)
@@ -31,7 +31,7 @@ ms.locfileid: "30295480"
 
 作業セット内のデータを分析するには、次のようにします。
 
-1. ケースの分析設定を構成します。詳細については、「 [Configure search and analytics settings](configure-search-analytics-settings.md)」を参照してください。
+1. ケースの分析設定を構成します。 詳細については、「 [Configure search and analytics settings](configure-search-analytics-settings.md)」を参照してください。
 2. 分析する作業セットを開きます。
 3. [作業セットの管理] に移動します。
 4. [分析] をクリックします。

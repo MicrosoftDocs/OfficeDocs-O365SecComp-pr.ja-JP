@@ -12,13 +12,13 @@ ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: Microsoft では、すべてのユーザーにとって使いやすい製品とサービスを提供できるよう取り組んでいます。
 ms.openlocfilehash: 271383361ee99f6959e81a1f38dea4b200c54fb5
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257045"
 ---
-# <a name="accessibility-for-people-with-disabilities"></a>障碍がある方のためのユーザー補助機能
+# <a name="accessibility-for-people-with-disabilities"></a>障碍があるユーザーの為の補助機能
 
 ## <a name="accessibility-features-of-exchange"></a>Exchange のユーザー補助機能
 

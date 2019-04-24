@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: このトピックでは、AD RMS サーバーを使用するように IRM を構成する方法を示します。
 ms.openlocfilehash: 1da66c5afa37c96c061a4bf25c0858e4e71e2313
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259575"
 ---
-# <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>オンプレミスの AD RMS サーバーを使用するように IRM を構成する
+# <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>IRM を設定して、オンプレミスの AD RMS サーバーを使用する
   
 オンプレミス展開でを使用する場合、Exchange Online の information Rights management (IRM) では、Windows Server 2008 以降の情報保護テクノロジである Active Directory Rights management サービス (AD RMS) が使用されます。 IRM 保護を電子メールに適用するには、AD RMS 権利ポリシー テンプレートを電子メール メッセージに適用します。 権限はメッセージ自体に添付されているため、オンラインとオフラインの両方、および組織のファイアウォールの内外両方で保護が有効になります。
   

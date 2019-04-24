@@ -14,13 +14,13 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 エンジニアリングチームの内部ログのしくみについて説明します。
 ms.openlocfilehash: e8798d4c6d4ba7393612f9a2b22bc282956a2aa9
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262679"
 ---
-# <a name="internal-logging-for-office-365-engineering"></a>Office 365 のエンジニアリングのための内部ログ記録
+# <a name="internal-logging-for-office-365-engineering"></a>Office 365 のエンジニアリングのための内部データログ
 お客様が利用できるイベントとログデータに加えて、Office 365 のエンジニアが利用できる内部ログデータ収集システムもあります。 Office 365 サーバーから、Cosmos と呼ばれる内部の大規模なデータコンピューティングサービスに、さまざまな種類のログデータがアップロードされています。 各サービスチームは、それぞれのサーバーからの監査ログを Cosmos データベースにアップロードして、集約と分析を行います。 このデータ転送は、「Office データローダー (ODL)」と呼ばれる独自の自動化ツールを使用して、明示的に承認されたポートとプロトコルに基づいて、FIPS 140-2 で検証された TLS 接続を介して行われます。 Office 365 で監査レコードを収集して処理するために使用されるツールでは、元の監査レコードのコンテンツまたは時間の順序を永続的に変更したり、取り消したりすることはできません。
 
 サービスチームは、Cosmos を一元的なリポジトリとして使用して、アプリケーションの使用状況の分析、システムおよび運用上のパフォーマンスの測定、問題やセキュリティの問題を示す異常なパターンの調査を行います。 各サービスチームは、分析の対象に応じてログのベースラインを Cosmos にアップロードします。これには、多くの場合、次のものが含まれます。

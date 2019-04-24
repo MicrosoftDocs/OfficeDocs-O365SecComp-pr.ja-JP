@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: 'ユーザー定義のキーワードを関連性に追加して、Office 365 の高度な電子情報開示でのタグ付けとコストパラメータを指定する際に関連ファイルを特定する方法について説明します。  '
 ms.openlocfilehash: aec9efac91cc3fb48068fca9b6b7313f829f4fe2
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257086"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示で強調表示されたキーワードと詳細オプションを定義する
 
@@ -67,7 +67,7 @@ ms.locfileid: "30999340"
     
     ![関連性の設定のコストのパラメーター](media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
   
-3. [**保存**] をクリックします。 選択した設定が保存されます。
+3. **[保存]** をクリックします。 選択した設定が保存されます。
     
 ## <a name="see-also"></a>関連項目
 

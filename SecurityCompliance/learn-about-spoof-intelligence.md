@@ -1,5 +1,5 @@
 ---
-title: スプーフィング インテリジェンスの詳細情報
+title: スプーフィング インテリジェンスをもっとよく知る
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 description: '[スパム対策設定] ページ&amp;のセキュリティコンプライアンスセンターのスプーフィングインテリジェンスを使用して、組織の一部であるドメインを偽装している、または外部ドメインのスプーフィングを行っているすべての送信者を確認します。 スプーフィングインテリジェンスは、Office 365 Enterprise E5 の一部として、または Advanced Threat protection と Exchange Online Protection の一部として別途利用できます。'
 ms.openlocfilehash: 0d18b5f011597266a3a975d49722e88b411c52d8
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252270"
 ---
-# <a name="learn-more-about-spoof-intelligence"></a>スプーフィング インテリジェンスの詳細情報
+# <a name="learn-more-about-spoof-intelligence"></a>スプーフィング インテリジェンスをもっとよく知る
 
 [ &amp; **スパム対策設定] ページ**のセキュリティコンプライアンスセンターのスプーフィングインテリジェンスを使用して、組織の一部であるドメインを偽装している、または外部ドメインのスプーフィングを行っているすべての送信者を確認します。 スプーフィングインテリジェンスは、Office 365 Enterprise E5 の一部として、または Advanced Threat protection (ATP) の一部として、または、2018の Exchange Online Protection (EOP) の一部として別途利用できます。 
   

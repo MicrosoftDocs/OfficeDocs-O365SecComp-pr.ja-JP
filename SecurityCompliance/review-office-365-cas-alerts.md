@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: Office 365 Cloud App Security の [通知] ページを使用して、潜在的な問題を表示し、処理を実行します。 通知を破棄または解決し、必要に応じてユーザーアカウントを中断することができます。
 ms.openlocfilehash: ddef10293fca7b722a13babdca5c05bbe2398cb3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261482"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security の警告の確認と処理
   
@@ -54,7 +54,7 @@ Office 365 Cloud App Security の [通知] ページを使用して、潜在的�
     
 - **Suspend**アカウントに対して認証されていないサインインが疑われる場合、たとえば他の国からサインインしている場合は、その人物が物理的にローカルオフィスにいることがわかっている場合は、何が起こっているのかを調査している間、[そのアカウントを中断](suspend-or-restore-an-account-in-ocas.md)することができます。 
     
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [アクティビティを調べる](investigate-an-activity-in-office-365-cas.md)
     

@@ -13,11 +13,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.openlocfilehash: 69ac13fde6e83f5905b95a3eefdc2e1a44156e1d
-ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31043348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265896"
 ---
 # <a name="monitor-and-report-identities-in-microsoft-365-security"></a>Microsoft 365 セキュリティ センターでの ID の監視と報告
 

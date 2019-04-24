@@ -1,5 +1,5 @@
 ---
-title: Office 365 Cloud App Security 展開後の利用に関する作業
+title: Office 365 Cloud App Security 展開後の利用方法
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 86f414ad-81de-4703-b40a-c6615bbe9108
 description: Office 365 Cloud App Security をセットアップしてロールアウトした後、特定のタスクを実行して構成が正しいことと、定期的なレビューの準備ができていることを確認してください。
 ms.openlocfilehash: 232de4df1d1eb4debdddcee2c1d8672d1aeb4b21
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242545"
 ---
-# <a name="utilization-activities-after-rolling-out-office-365-cloud-app-security"></a>Office 365 Cloud App Security 展開後の利用に関する作業
+# <a name="utilization-activities-after-rolling-out-office-365-cloud-app-security"></a>Office 365 Cloud App Security 展開後の利用方法
   
 |評価 * *\>**|計画 * *\>**|展開 * *\>**|使用率 * * * *|
 |:-----|:-----|:-----|:-----|
@@ -86,7 +86,7 @@ Office 365 Cloud App Security ポリシーを最初に構成または管理し�
     
 9. エンドユーザーのフィードバックと Office 365 Cloud App Security alerts を監視して、ポリシーを徐々に調整します。
     
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [アクティビティを調べる](investigate-an-activity-in-office-365-cas.md)
     

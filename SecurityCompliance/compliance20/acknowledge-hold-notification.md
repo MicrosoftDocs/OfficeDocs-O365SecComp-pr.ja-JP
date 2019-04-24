@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 048c85c7b8d77b9c7d3b9527640648b9ebe463d0
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243639"
 ---
 # <a name="acknowledge-a-hold-notification"></a>保留通知を確認する 
 法的な要求または調査に対応する際には、保管担当者に、電子的に保存された情報 (ESI) を保持するように義務を与える必要があります。また、法律上の法的事項に関連する可能性があるすべてのマテリアルを通知する必要があります。 送信された法律チームは、各保管担当者が受信、読み取り、理解されており、所定の手順に準拠していることを知っている必要があります。

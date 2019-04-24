@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: 送信電子メールの送信にサービスを使用すると、送信スパムフィルターは常に有効になり、それによって、そのサービスと目的の受信者を使用して組織が保護されます。
 ms.openlocfilehash: af48962879dd4ee1e5bbbe832f221e88900faa75
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258409"
 ---
-# <a name="configure-the-outbound-spam-policy"></a>送信スパム ポリシーを構成する
+# <a name="configure-the-outbound-spam-policy"></a>送信スパム ポリシーを設定する
 
 送信電子メールを送信するサービスを使用している場合は、送信スパム フィルターが常時有効になっているため、このフィルターによりこのサービスを利用している組織と対象の受信者は保護されます。送信スパム フィルターは、受信フィルターと同様、接続フィルターとコンテンツ フィルターで構成されていますが、送信フィルターの設定は構成できません。送信メッセージがスパムとして判断されると、より危険度の高い配信プール経由でルーティングされます。これにより、通常の送信 IP プールが禁止リストに追加される可能性が低くなります。ユーザーがこのサービス経由で送信スパムを送信し続けると、ユーザーはメッセージの送信からブロックされます。送信スパム フィルターを無効にしたり変更したりすることはできませんが、既定の送信スパム ポリシーを使用して企業全体の送信スパム設定を構成できます。 
   

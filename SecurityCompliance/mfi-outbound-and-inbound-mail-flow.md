@@ -9,19 +9,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
-description: 管理者は、Office 365 Security & コンプライアンスセンターのメールフローダッシュボードにある送信メールフローウィジェットと受信メールフローウィジェットについて学習できます。
-ms.openlocfilehash: b3e92228506267e674f2f428fab1ef54d5aee38e
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードの送信メールフローウィジェットと受信メールフローウィジェットについて学習できます。
+ms.openlocfilehash: 89408618e7c5b3c921382b3efa0257f263509b6d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252219"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>送信と受信のメール フロー
 
 **送信メールフロー**ウィジェットは、**コネクタレポート**と以前の**TLS 概要レポート**の情報を1つの場所で結合します。
 
-![Office 365 Security & コンプライアンスセンターのメールフローダッシュボードの [送信および受信メールフロー] レポート](media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
+![セキュリティ & コンプライアンスセンターのメールフローダッシュボードの送信および受信メールフローレポート](media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
 
 ウィジェットの情報は、Office 365 のコネクタと TLS メッセージ保護に関連しています。 詳細については、以下のトピックを参照してください。
 
@@ -33,7 +33,7 @@ ms.locfileid: "30720287"
 
 **送信および受信メールフロー**ウィジェットは、Office 365 組織との間でメッセージが配信されるときに接続に使用される TLS 暗号化を表示します。 他の電子メールサービスで確立された接続は、両方の側で tls が提供されるときに tls によって暗号化されます。 このウィジェットは、メールフローの最終週のスナップショットを提供します。 [詳細の**表示**] をクリックすると、**送信中 (TLS) によって保護さ**れたメッセージには、組織に出入りするメッセージの TLS 保護が表示されます。
 
-![Office 365 Security & コンプライアンスセンターの [送信中 (TLS)] ポップアップで保護されたメッセージ](media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
+![セキュリティ & コンプライアンスセンターの送信中 (TLS) によって保護されたメッセージ](media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
 
 現時点では、tls 1.2 は、Office 365 で提供される最も安全な tls のバージョンです。 多くの場合、コンプライアンス監査に使用されている TLS 暗号化を知っておく必要があります。 ほとんどの場合、送信元および送信先の電子メールサーバー (それらを所有しておらず、Microsoft も対象としていません) との直接的な関係はありません。そのため、これらのサーバーで使用される TLS 暗号化を改善するためのオプションは多くありません。
 

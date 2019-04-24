@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: b17492b11603ff27b91da8def4db6cba519801ee
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258755"
 ---
 # <a name="configure-search-and-analytics-settings"></a>検索と分析の設定を構成する
 

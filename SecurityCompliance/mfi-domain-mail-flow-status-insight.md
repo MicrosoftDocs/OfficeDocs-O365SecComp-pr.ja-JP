@@ -11,11 +11,11 @@ ms.assetid: ''
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードにある上位のドメインメールフローの状態について理解できます。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: baa69c3373623d4742d6d957a5022012fb60f7e7
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267040"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>トップドメインメールフローのステータスの洞察
 

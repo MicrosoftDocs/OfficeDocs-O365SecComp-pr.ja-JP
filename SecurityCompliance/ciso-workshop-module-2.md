@@ -11,11 +11,11 @@ ms.collection:
 - M365-security-compliance
 description: セキュリティに関する原則と推奨事項の詳細については、「組織のモダン化セキュリティ」を参照してください。
 ms.openlocfilehash: d802f6ad1af1cd818dffeba32c5b8c101636da61
-ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31908277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244088"
 ---
 # <a name="ciso-workshop-module-2-security-management"></a>ciso ワークショップモジュール 2: セキュリティ管理 
 

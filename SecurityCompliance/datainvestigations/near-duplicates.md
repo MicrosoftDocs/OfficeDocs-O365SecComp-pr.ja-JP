@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 941809193a3342d8c7b9de991370848aee4af070
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257665"
 ---
 # <a name="near-duplicate-detection"></a>準重複の検出
 

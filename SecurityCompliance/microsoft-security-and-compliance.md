@@ -3,7 +3,7 @@ title: 新しい microsoft 365 セキュリティセンターと microsoft 365 �
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/09/2019
+ms.date: 04/22/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: すべての新しい Microsoft 365 セキュリティセンターとコンプライアンスセンターの準備をする
-ms.openlocfilehash: 36159872bb42230523fac0a2d006fbb35eac18c6
-ms.sourcegitcommit: 48b77ec6fb499175507fc08f11dc9f5efe6c4858
+ms.openlocfilehash: a64c64756f0c4588efcc6e467316b90aa1aabc3f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265493"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>新しい microsoft 365 セキュリティセンターと microsoft 365 コンプライアンスセンターが一般公開されるようになりました。
 
@@ -26,7 +26,7 @@ ms.locfileid: "31518377"
 
 新しい[Microsoft 365 セキュリティセンター](overview-security-center.md)には、id、データ、デバイス、アプリ、およびインフラストラクチャ全体のセキュリティを管理および監視するためのダッシュボードが含まれています。 また、すべての新しい[Microsoft セキュリティスコア](microsoft-secure-score.md)、新しいデバイス脅威レポート、新しい id 脅威レポート、および Cloud App Security レポートにも簡単にアクセスできます。 
 
-[![NMicrosoft 365 セキュリティセンター (新規)(media/m365-security-center.png)](overview-security-center.md)
+[![新しい Microsoft 365 セキュリティセンター](media/m365-security-center.png)](overview-security-center.md)
 
 Microsoft 365 セキュリティセンターを初めて使用すると、開始するのに役立つ情報が画面の上部に表示されます。 また、探索に最も興味のあるセキュリティ機能に簡単に移動する方法についても説明します。 詳細については、「 [Microsoft 365 セキュリティセンターの概要](overview-security-center.md)」を参照してください。
 
@@ -41,7 +41,7 @@ Microsoft 365 セキュリティセンターにアクセスできるようにな
 
 秘密度と保持ラベルとポリシー、データ損失防止 (DLP)、データガバナンス、電子情報開示、データ主体要求 (dsrs)、ケース管理、および Cloud App Security に簡単にアクセスできます。 さらに、実践的な洞察を得て、インテリジェントな自動化を活用して、コンプライアンスのリスクを軽減し、デジタルスペースを保護することができます。 
 
-[![Microsoft 365 コンプライアンスセンター](media/m365-compliance-center.png)](microsoft-365-compliance-center.md)
+[![Microsoft 365 コンプライアンス センター](media/m365-compliance-center.png)](microsoft-365-compliance-center.md)
 
 Microsoft 365 コンプライアンスセンターを初めて使用すると、開始するのに役立つ情報が画面の上部に表示されます。 調査に最も興味のあるコンプライアンス機能に簡単に移動する方法について説明します。 詳細については、「[新しい Microsoft 365 コンプライアンスセンターへようこそ](microsoft-365-compliance-center.md)」を参照してください。
 
@@ -87,11 +87,13 @@ Office 365 セキュリティ & コンプライアンスセンターを含むス
 
 - セキュリティ管理者、セキュリティオペレーター、セキュリティ閲覧者がセキュリティセンターにアクセスできる
 
+ これらの役割の詳細については、「 [Office 365 セキュリティ & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+ 
 次の表では、Azure、Office 365、および Windows でさまざまなポータルにアクセスできるユーザーを要約しています。
 
 |向け |グローバル管理者 |セキュリティ管理者、セキュリティオペレーター、またはセキュリティリーダ|コンプライアンス管理者またはコンプライアンスデータ管理者 |
 |---------|---------|---------|---------|
-|[セキュリティ センターとコンプライアンス センター](https://protection.office.com) |はい |はい  |はい |
+|[セキュリティ & コンプライアンスセンター](https://protection.office.com) |はい |はい  |はい |
 |[Microsoft 365 セキュリティ センター](https://security.microsoft.com) |はい  | はい  | いいえ        |
 |[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com) | はい | いいえ | はい |
 |[コンプライアンス マネージャー](https://aka.ms/compliancemanager) |はい | はい |はい  |
@@ -115,3 +117,5 @@ Office 365 セキュリティ & コンプライアンスセンターを含むス
 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Office 365 Security & コンプライアンスセンターサービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
+
+microsoft 365 セキュリティセンターおよび microsoft 365 コンプライアンスセンター (新機能のアイデアなど) に関するフィードバックを提供するには、 [microsoft Office のフィードバックをお](https://office365.uservoice.com)寄せください。

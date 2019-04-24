@@ -1,5 +1,5 @@
 ---
-title: セキュリティ & コンプライアンスセンターのメールフローインサイト
+title: セキュリティ/コンプライアンス センター のメール フロー インサイト
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -10,13 +10,13 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードについて学習できます。
 ms.openlocfilehash: 1e18bcb381a6b557d3141c0c17b8433cfcd00049
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252392"
 ---
-# <a name="mail-flow-insights-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターのメールフローインサイト
+# <a name="mail-flow-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメール フロー インサイト
 
 管理者は、Security & コンプライアンスセンターのメールフローダッシュボードを使用して、Office 365 組織のメールフローに関連する問題を解決するための傾向、洞察、アクションの実行を見つけることができます。
 

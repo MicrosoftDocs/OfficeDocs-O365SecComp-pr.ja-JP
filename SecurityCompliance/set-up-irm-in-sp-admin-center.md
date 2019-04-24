@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Microsoft Azure Active Directory Rights Management Services (RMS) を使用して sharepoint Online IRM を使用して sharepoint リストとドキュメントライブラリを保護する方法について説明します。
 ms.openlocfilehash: 6b68135720846a0e74f5b0272dc5f25272381284
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260772"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
-## <a name="introduction"></a>概要
+## <a name="introduction"></a>はじめに
 
 SharePoint Online では、IRM 保護はリストおよびライブラリレベルでファイルに適用されます。 組織で IRM 保護を使用するには、最初に Rights Management を設定する必要があります。 IRM は azure Information Protection からの azure Rights Management サービスに依存して、使用制限を暗号化して割り当てます。 一部の Office 365 プランには、Azure Rights Management は含まれていますが、すべてではありません。 詳細については、「 [Office アプリケーションとサービスが Azure Rights Management をサポートする方法](https://docs.microsoft.com/azure/information-protection/understand-explore/office-apps-services-support)」を参照してください。
   

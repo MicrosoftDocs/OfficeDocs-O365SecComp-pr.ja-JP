@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 7c9d1a52acef48d96816fefbb1c836032d262b93
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240979"
 ---
 # <a name="themes"></a>テーマ
 ユーザーがドキュメントを作成する方法 通常は、ドキュメントに伝えたい1つ以上のアイデアから始め、アイデアに沿った単語を使用して作成します。 最も普及しているのは、その概念に関連する単語が頻繁に発生する傾向があるということです。 これにより、ユーザーがドキュメントをどのように使用するかを知ることができます。ドキュメントの閲覧に関する重要な点として、ドキュメントが伝達しようとしているアイデアと、アイデア間の関係について説明します。

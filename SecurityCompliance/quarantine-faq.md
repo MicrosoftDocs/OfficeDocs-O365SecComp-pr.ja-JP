@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: このトピックでは、ホストされた検疫についてのよく寄せられる質問 (FAQ) とその回答を紹介します。
 ms.openlocfilehash: 9a9673b3360a9a8b6bf837e09b49aca7a38e2172
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265039"
 ---
 # <a name="quarantine-faq"></a>検疫に関する FAQ
 

@@ -1,5 +1,5 @@
 ---
-title: 調査でデータを検索する
+title: 調査でデータ検索する
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 5f52f26c4443addd0e108794e1d3635a9b8efb98
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258055"
 ---
-# <a name="search-for-data-in-an-investigation"></a>調査でデータを検索する
+# <a name="search-for-data-in-an-investigation"></a>調査でデータ検索する
 
 データ調査の [**検索**] タブでは、キーワードと条件を使用して、Office 365 のコンテンツの場所で、誤っている、機密データ、機密データを検索することができます。 
 

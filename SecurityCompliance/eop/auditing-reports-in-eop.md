@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Microsoft Exchange Online Protection (EOP) の監査レポートは、組織の規制、コンプライアンス、および訴訟に関する要件を満たすために役立ちます。いつでも監査レポートを取得して、EOP 構成に加えられた変更を確認できます。これらのレポートの構成に関する問題のトラブルシューティングを行うか、セキュリティ関連やコンプライアンス関連の問題の原因を見つけることができます。
 ms.openlocfilehash: b2b62939d4330b62e3cb78d682f6ac62251bb5bb
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256655"
 ---
 # <a name="auditing-reports-in-eop"></a>EOP の監査レポート
 

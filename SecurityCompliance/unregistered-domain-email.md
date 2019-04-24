@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 登録されていないドメインの電子メールを大量に送信する場合は、メールがブロックされる危険を実行します。 詳細については、この記事をお読みください。
 ms.openlocfilehash: 21c403c8072902565f63048782b06c531cdbceb0
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263989"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>未登録のドメインメール: 知っておくべき情報
 
@@ -31,7 +31,7 @@ Office 365 では、テナントが Exchange Online Protection (EOP) を介し�
 
 いったん侵害されると、テナントは未登録のドメインの送信メールを送信できなくなります。 ユーザーは、次の状態を示す配信不能レポート (NDR) を受信します。
 
-- 550 5.7.750 サービスは利用できません。 クライアントが未登録のドメインからの送信をブロックされました
+- 550 5.7.750 サービスは利用できません。 クライアントが未登録のドメインからの送信をブロックしました
 
 ## <a name="unblocking-tenant-in-order-to-send-again"></a>再送信するためにテナントのブロックを解除する
 

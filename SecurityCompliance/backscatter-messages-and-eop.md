@@ -14,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: バックスキャター メッセージは、通常、スパムを受信した結果としてメール サーバーから送信される自動バウンス メッセージです。 バックスキャター DNSBL はバックスキャター メッセージを送信する IP アドレスのリストです。 スパム送信者のリストではないため、掲載されたサーバーがバックスキャター DNSBL から削除されることはありません。
-ms.openlocfilehash: 7581255ce4e68f6eb661df280ecb0cb94b7515ef
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 62dd86d91e89e4f3c966b2969d0d763595bb5dc3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243898"
 ---
 # <a name="backscatter-messages-and-eop"></a>バックスキャター メッセージと EOP
 
@@ -28,10 +28,8 @@ ms.locfileid: "30693366"
 > [!TIP]
 > バックスキャター Web サイト上の説明によれば、すべての受信メールに対する拒否モードの使用はそのサービスの構成または使用として推奨されていません。代わりに、セーフ モードで使用する必要があります。正しいバックスキャター構成の実装方法については、「[Backscatterer.org Web サイト](http://www.backscatterer.org/?target=usage)」を参照してください。 
   
-## <a name="for-more-information"></a>関連情報
-
-[Backscatterer.org IP 一覧](https://blogs.msdn.com/b/tzink/archive/2012/08/22/the-backscatterer-org-ip-list.aspx)
+## <a name="related-topics"></a>関連トピック
   
-「 [Advanced spam filtering options](advanced-spam-filtering-asf-options.md) 」の「NDR backscatter」エントリを参照してください。
+[高度なスパム対策フィルターオプション](advanced-spam-filtering-asf-options.md)
   
 

@@ -1,5 +1,5 @@
 ---
-title: セキュリティ & コンプライアンスセンターのメッセージ追跡
+title: セキュリティ/コンプライアンス センター のメッセージ追跡
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -10,13 +10,13 @@ localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理者は、セキュリティ & コンプライアンスセンターのメッセージ追跡を使用して、メッセージに何が起こったかを調べることができます。
 ms.openlocfilehash: ebfc8d5e19bbc45c32ad65451f3f850662f358b4
-ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265641"
 ---
-# <a name="message-trace-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターのメッセージ追跡
+# <a name="message-trace-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメッセージ追跡
 
 ## <a name="overview"></a>概要
 
@@ -109,7 +109,7 @@ ms.locfileid: "30573551"
 
 **メッセージ ID**を使用して結果をフィルター処理する場合は、山かっこを含む完全な文字列を含める必要があります。
 
-#### <a name="direction"></a>Direction
+#### <a name="direction"></a>方向
 
 既定値を**すべて**選択したままにするか、[**受信**(組織内の受信者に送信されるメッセージ)] または [**送信**] (組織内のユーザーから送信されるメッセージ) を選択して結果をフィルター処理できます。
 

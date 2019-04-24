@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: Office 365 Cloud App Security の新機能を見る
 ms.openlocfilehash: bc85c0c6444eadf8f623a6fee853ff03d31565d1
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263003"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security の新機能
 
@@ -51,7 +51,7 @@ ms.locfileid: "30312064"
 
 - **異常検出ポリシーの高度なチューニング**これで、異常検出エンジンが、ユーザーの設定に従って通知を抑制または表面化するようになります。 不可能なトラベルポリシーでは、警告が発生するまでに必要とされる異常動作のレベルを決定するために、[感度] スライダーを設定できます。 また、頻度の低い国、匿名 ip アドレス、疑わしい ip アドレス、および不可能な移動のどちらを使用しても、失敗および成功したログインと、成功したログインの両方を分析する必要があるかどうかを構成することもできます。 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [「2018 updates for Office 365 Cloud App Security」を参照してください。](new-in-office-365-cas-2018.md)
 

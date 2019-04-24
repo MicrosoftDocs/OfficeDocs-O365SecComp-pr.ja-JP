@@ -11,11 +11,11 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Office 365 cloud App Security アクセスポリシーを使用すると、ユーザー、場所、デバイス、およびアプリに基づいて、クラウドアプリへのアクセスをリアルタイムで監視し、制御することができます。 クライアント証明書を管理対象デバイスに展開したり、サードパーティの MDM 証明書などの既存の証明書を使用したりすることによって、ドメインに参加していないデバイスや、Windows Intune によって管理されていないデバイスを含む、任意のデバイスのアクセスポリシーを作成できます。 たとえば、クライアント証明書を管理対象デバイスに展開し、証明書を持たないデバイスからのアクセスをブロックすることができます。
 ms.openlocfilehash: 5e8b8fa293420bc9ff3616daf288b8e02a2eb768
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263007"
 ---
 # <a name="access-policies-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security のアクセス ポリシー
 

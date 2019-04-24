@@ -1,5 +1,5 @@
 ---
-title: コンテンツ検索を複製する
+title: コンテンツ検索をコピーする
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: この記事に記載されている Windows PowerShell スクリプトを使用して、Office 365 または Microsoft 365 のコンプライアンスセンターで既存のコンテンツ検索をすばやく複製します。 検索を複製すると、元の検索と同じプロパティを含む新しい検索 (新しい名前) が作成されます。 その後、キーワードクエリまたは日付範囲を変更して新しい検索を編集し、それを実行します。
 ms.openlocfilehash: b08ccb6fbaf2dc9d92e0814fe9f92ea77c731147
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243348"
 ---
-# <a name="clone-a-content-search"></a>コンテンツ検索を複製する
+# <a name="clone-a-content-search"></a>コンテンツ検索をコピーする
 
 Office 365 または Microsoft 365 のコンプライアンスセンターでコンテンツ検索を作成して、多くのメールボックスまたは SharePoint および OneDrive for business サイトを検索するには、しばらく時間がかかることがあります。 URL を誤って指定すると、検索対象のサイトを指定してもエラーが発生する可能性があります。 この問題を回避するには、この記事の Windows PowerShell スクリプトを使用して、既存のコンテンツ検索をすばやく複製できます。 検索を複製すると、元の検索と同じプロパティ (コンテンツの場所や検索クエリなど) を含む新しい検索 (別の名前) が作成されます。 その後、キーワードクエリまたは日付範囲を変更して、新しい検索を編集して実行できます。
   
@@ -32,7 +32,7 @@ Office 365 または Microsoft 365 のコンプライアンスセンターでコ
     
 - 検索結果のサイズを小さくすることができます。たとえば、エクスポートする結果が多すぎる場合は、検索結果の複製を作成し、日付範囲に基づく検索条件を追加して、検索結果の数を減らすことができます。
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - このトピックで説明するスクリプトを実行するには、Security & コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。
     
@@ -142,4 +142,4 @@ Office 365 または Microsoft 365 のコンプライアンスセンターでコ
     
 - [コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)
     
-- [電子情報開示ケース](ediscovery-cases.md)
+- [電子情報開示のケース](ediscovery-cases.md)

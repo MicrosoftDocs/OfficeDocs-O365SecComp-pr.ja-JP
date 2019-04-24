@@ -11,11 +11,11 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
 ms.openlocfilehash: e4cb614167f89cb6e99d96aa94027ba90d86543e
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258372"
 ---
 # <a name="create-a-litigation-hold"></a>訴訟ホールドを作成する
 
@@ -31,7 +31,7 @@ ms.locfileid: "30862409"
     
 - ユーザーのプライマリおよびアーカイブメールボックスのアイテムは保持されます。
     
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - exchange online メールボックスを訴訟ホールドの対象にするには、exchange online プラン2ライセンスが割り当てられている必要があります。 メールボックスに exchange online プラン1ライセンスが割り当てられている場合は、それを保持するために別の exchange online アーカイブライセンスを割り当てる必要があります。
     

@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'セキュリティ & コンプライアンスセンターのコンテンツ検索ツールを使用して、Exchange Online メールボックスおよび SharePoint または OneDrive for business サイトで検索できる電子メールとファイルプロパティについて説明します。  '
 ms.openlocfilehash: bb8c8090f8439bbd08b9c153b332c30d78ced8c8
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254497"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>コンテンツ検索のキーワード クエリと検索条件
 
@@ -50,23 +50,23 @@ ms.locfileid: "31814168"
 |Bcc|メール メッセージの BCC フィールド。<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|どの例も Bcc フィールドに「Pilar Pinilla」が含まれているメッセージを返します。|
 |Category| 検索するカテゴリ。 カテゴリは、outlook または web 上の outlook (旧称 outlook web App) を使用してユーザーが定義できます。 値は次のいずれかです。  <br/><br/>  blue  <br/>  green  <br/>  orange  <br/>  purple  <br/>  red  <br/>  yellow|`category:"Red Category"`|元のメールボックスで「red」のカテゴリが割り当てられているメッセージ。|
 |CC|メール メッセージの CC フィールド。<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|どちらの例も、CC フィールドに Pilar Pinilla が指定されたメッセージ。|
-|Folderid|特定のメールボックスフォルダーのフォルダー ID (GUID)。 このプロパティを使用する場合は、指定したフォルダーが配置されているメールボックスを検索してください。 指定したフォルダーのみが検索されることに注意してください。 フォルダー内のサブフォルダーは検索されません。 サブフォルダーを検索するには、検索するサブフォルダーの Folderid プロパティを使用する必要があります。  <br/> Folderid プロパティを検索する方法と、スクリプトを使用して特定のメールボックスのフォルダー id を取得する方法の詳細については、「[対象化コレクションの Office 365 でコンテンツ検索を使用](use-content-search-for-targeted-collections.md)する」を参照してください。|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|最初の例では、指定されたメールボックスフォルダー内のすべてのアイテムを返します。 2番目の例では、が送信または受信した、指定garthf@contoso.comされたメールボックスフォルダー内のすべてのアイテムを返します。|
+|Folderid|特定のメールボックスフォルダーのフォルダー ID (GUID)。 このプロパティを使用する場合は、指定したフォルダーが配置されているメールボックスを検索してください。 指定したフォルダーのみが検索されることに注意してください。 フォルダー内のサブフォルダーは検索されません。 サブフォルダーを検索するには、検索するサブフォルダーの Folderid プロパティを使用する必要があります。  <br/> Folderid プロパティを検索する方法と、スクリプトを使用して特定のメールボックスのフォルダー id を取得する方法の詳細については、「[対象化コレクションの Office 365 でコンテンツ検索を使用](use-content-search-for-targeted-collections.md)する」を参照してください。|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|最初の例では、指定されたメールボックスフォルダー内のすべてのアイテムを返します。 2番目の例では、garthf@contoso.com によって送受信された、指定されたメールボックスフォルダー内のすべてのアイテムを返します。|
 |From|メール メッセージの送信者。<sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|指定されたユーザーによって送信された、または指定されたドメインから送信されたメッセージ。|
 |HasAttachment|メッセージに添付ファイルがあるかどうかを示します。 **true**または**false**の値を使用します。|`from:pilar@contoso.com AND hasattachment:true`|添付ファイルを持つ、指定されたユーザーによって送信されたメッセージ。|
 |Importance|送信者がメッセージを送信するときに指定できる電子メール メッセージの重要度。既定では、送信者が重要度を **high** または **low** に設定していない限り、メッセージは普通の重要度で送信されます。  |`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|高重要度、中重要度、または低重要度とマークされているメッセージ。|
 |IsRead|メッセージが開封されたかどうかを示します。 **true**または**false**の値を使用します。|`isread:true`  <br/> `isread:false`|最初の例では、isread プロパティが**True**に設定されたメッセージを返します。 2番目の例では、isread プロパティが**False**に設定されたメッセージを返します。|
-|ItemClass|このプロパティを使用して、組織が Office 365 にインポートした特定のサードパーティのデータ型を検索します。 このプロパティには、次の構文を使用します。  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|最初の例では、Subject プロパティに "contoso" という単語が含まれる Facebook のアイテムを返します。 2番目の例では、彩 Beebe によって投稿され、キーワード "Northwind Traders" が含まれている Twitter アイテムを返します。  <br/> itemclass プロパティのサードパーティデータ型に使用する値の完全な一覧については、「[コンテンツ検索を使用して、Office 365 にインポートされたサードパーティのデータを検索する](use-content-search-to-search-third-party-data-that-was-imported.md)」を参照してください。|
+|ItemClass|このプロパティを使用して、組織が Office 365 にインポートした特定のサードパーティのデータ型を検索します。 このプロパティには、次の構文を使用します。`itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|最初の例では、Subject プロパティに "contoso" という単語が含まれる Facebook のアイテムを返します。 2番目の例では、彩 Beebe によって投稿され、キーワード "Northwind Traders" が含まれている Twitter アイテムを返します。  <br/> itemclass プロパティのサードパーティデータ型に使用する値の完全な一覧については、「[コンテンツ検索を使用して、Office 365 にインポートされたサードパーティのデータを検索する](use-content-search-to-search-third-party-data-that-was-imported.md)」を参照してください。|
 |Kind| 検索する電子メールメッセージの種類。 可能な値:  <br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoft teams (Microsoft teams でチャット、会議、通話のアイテムを返す)  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|最初の例では、検索条件に一致する電子メールメッセージを返します。 2番目の例では、電子メールメッセージ、インスタントメッセージの会話 (Microsoft Teams での Skype for business の会話やチャットを含む)、および検索条件に一致する音声メッセージを返します。 3番目の例では、検索条件を満たす Twitter、Facebook、Cisco jabber などのサードパーティのデータソースから、Office 365 のメールボックスにインポートされたアイテムを返します。 詳細については、「 [Office 365 でサードパーティのデータをアーカイブ](https://go.microsoft.com/fwlink/p/?linkid=716918)する」を参照してください。|
-|Participants|メール メッセージ内のすべての送受信者フィールド。すなわち、From、To、CC、BCC の各フィールドです。<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|によって送信またはgarthf@contoso.com送信されるメッセージ。 2 番目の例は、contoso.com ドメイン内のユーザーが送信元または送信先のすべてのメッセージを返します。|
+|Participants|メール メッセージ内のすべての送受信者フィールド。すなわち、From、To、CC、BCC の各フィールドです。<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|garthf@contoso.com が送信元または送信先のメッセージ。2 番目の例は、contoso.com ドメイン内のユーザーが送信元または送信先のすべてのメッセージを返します。|
 |Received|電子メール メッセージが受信者によって受信された日付。|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|2016年4月15日に受信したメッセージ。 2番目の例では、2016年1月1日から2016年3月31日までの間に受信したすべてのメッセージを返します。|
-|Recipients|メール メッセージ内のすべての受信者フィールド。すなわち、To、CC、BCC の各フィールドです。<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|にgarthf@contoso.com送信されたメッセージ 2 番目の例では、contoso.com ドメイン内のすべての受信者に送信されたメッセージを返します。|
+|Recipients|メール メッセージ内のすべての受信者フィールド。すなわち、To、CC、BCC の各フィールドです。<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|garthf@contoso.com に送信されたメッセージ。2 番目の例では、contoso.com ドメイン内のすべての受信者に送信されたメッセージを返します。|
 |Sent|送信者によって電子メール メッセージが送信された日付。|`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`|指定された日付に送信された、または指定された日付範囲内に送信されたメッセージ。|
 |Size|アイテムのサイズ (バイト数)。|`size>26214400`  <br/> `size:1..1048567`|25より大きいメッセージ8mb. 2 番目の例は 1 ～ 1,048,567 バイト (1 MB) のサイズのメッセージを返します。|
 |Subject|電子メール メッセージの件名行に含まれるテキスト。  <br/> **注:** クエリで subject プロパティを使用すると、???the search は、検索するテキストが件名に含まれているすべてのメッセージを返します。 つまり、クエリは、完全に一致するメッセージのみを返しません。 たとえば、を検索`subject:"Quarterly Financials"`すると、件名が "四半期財務 2018" のメッセージが結果に含まれます。|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|件名行のテキスト内の任意の場所に "四半期財務" という語句が含まれるメッセージ。 2 番目の例では、件名行に「northwind」の語が含まれているすべてのメッセージを返します。|
 |To|メール メッセージの To フィールド。<sup>1</sup>|`to:annb@contoso.com`  <br/> `to:annb ` <br/> `to:"Ann Beebe"`|どの例も、To: 行に「Ann Beebe」が指定されているメッセージを返します。|
    
 > [!NOTE]
-> <sup>1</sup>受信者プロパティの値には、電子メールアドレス (*ユーザープリンシパル名*または UPN とも呼ばれる)、表示名、またはエイリアスを使用して、ユーザーを指定できます。 たとえば、"彩 Beebe" annb@contoso.comを使用して、ユーザー彩 Beebe を指定することができます。<br/><br/>受信者のプロパティ (From、To、Cc、Bcc、参加者、および受信者) を検索する場合、Office 365 は Azure Active Directory で検索して各ユーザーの id を拡張しようとします。  ユーザーが Azure Active Directory で見つかった場合、そのユーザーの電子メールアドレス (または UPN)、エイリアス、表示名、および LegacyExchangeDN を含むようにクエリが拡張されます。<br/><br/>たとえば、のようなクエリが`participants:ronnie@contoso.com`に`participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`展開されます。
+> <sup>1</sup>受信者プロパティの値には、電子メールアドレス (*ユーザープリンシパル名*または UPN とも呼ばれる)、表示名、またはエイリアスを使用して、ユーザーを指定できます。 たとえば、ユーザー Ann Beebe を指定するために、annb@contoso.com、annb、または "Ann Beebe" を使用できます。<br/><br/>受信者のプロパティ (From、To、Cc、Bcc、参加者、および受信者) を検索する場合、Office 365 は Azure Active Directory で検索して各ユーザーの id を拡張しようとします。  ユーザーが Azure Active Directory で見つかった場合、そのユーザーの電子メールアドレス (または UPN)、エイリアス、表示名、および LegacyExchangeDN を含むようにクエリが拡張されます。<br/><br/>たとえば、のようなクエリが`participants:ronnie@contoso.com`に`participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`展開されます。
 
 ## <a name="searchable-site-properties"></a>検索可能なサイトのプロパティ
 
@@ -81,12 +81,12 @@ ms.locfileid: "31814168"
 |Created|アイテムが作成された日付。|`created\>=06/01/2016`|2016年6月1日以降に作成されたすべてのアイテム。|
 |CreatedBy|アイテムを作成またはアップロードした人。 このプロパティには、必ずユーザーの表示名を使用してください。|`createdby:"Garth Fort"`|Garth Fort によって作成またはアップロードされたすべてのアイテム。|
 |DetectedLanguage|アイテムの言語。|`detectedlanguage:english`|英語のすべてのアイテム。|
-|documentlink|SharePoint または OneDrive for business サイトの特定のフォルダーのパス (URL)。 このプロパティを使用する場合は、指定したフォルダーが配置されているサイトを検索するようにしてください。  <br/> documentlink プロパティに指定したフォルダーのサブフォルダーにあるアイテムを返すには、指定したフォルダー\*の URL にを追加する必要があります。例えば  `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>documentlink プロパティを検索する方法と、スクリプトを使用して特定のサイト上のフォルダーの documentlink url を取得する方法の詳細については、「[対象化コレクション用に Office 365 のコンテンツ検索を使用](use-content-search-for-targeted-collections.md)する」を参照してください。|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|最初の例では、指定した OneDrive for business フォルダー内のすべてのアイテムを返します。 2番目の例では、指定されたサイトフォルダー (およびすべてのサブフォルダー) に、ファイル名に "confidential" という単語が含まれるドキュメントを返します。|
+|documentlink|SharePoint または OneDrive for business サイトの特定のフォルダーのパス (URL)。 このプロパティを使用する場合は、指定したフォルダーが配置されているサイトを検索するようにしてください。  <br/> documentlink プロパティに指定したフォルダーのサブフォルダーにあるアイテムを返すには、指定したフォルダー\*の URL にを追加する必要があります。例えば`documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>documentlink プロパティを検索する方法と、スクリプトを使用して特定のサイト上のフォルダーの documentlink url を取得する方法の詳細については、「[対象化コレクション用に Office 365 のコンテンツ検索を使用](use-content-search-for-targeted-collections.md)する」を参照してください。|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|最初の例では、指定した OneDrive for business フォルダー内のすべてのアイテムを返します。 2番目の例では、指定されたサイトフォルダー (およびすべてのサブフォルダー) に、ファイル名に "confidential" という単語が含まれるドキュメントを返します。|
 |FileExtension|ファイルの拡張子。例: .docx、one、.pptx、または .xlsx。|`fileextension:xlsx`|すべての excel ファイル (excel 2007 以降)|
 |FileName|ファイルの名前。|`filename:"marketing plan"`  <br/> `filename:estimate`|最初の例では、タイトルに "marketing plan" と完全一致する語句が含まれるファイルが返されます。2 番目の例では、ファイル名に "estimate" という単語を含むファイルが返されます。|
 |LastModifiedTime|アイテムが最後に変更された日付。|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|最初の例では、2016年5月1時以降に変更されたアイテムを返します。 2番目の例では、2016年5月1日から2016年6月1日までの間に変更されたアイテムを返します。|
 |ModifiedBy|アイテムを最後に変更した人。 このプロパティには、必ずユーザーの表示名を使用してください。|`modifiedby:"Garth Fort"`|Garth Fort によって最後に変更されたすべてのアイテム。|
-|Path|SharePoint または OneDrive for business サイトの特定のサイトのパス (URL)。  <br/> path プロパティに指定したサイト内のフォルダーにあるアイテムを返すには、指定したサイト\*の URL を追加する必要があります。例えば  `path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **注:** OneDrive の`Path`場所を検索するためにプロパティを使用しても、検索結果には .png, tiff ファイル、.wav ファイルなどのメディアファイルは返されません。 検索クエリで別のサイトプロパティを使用して、OneDrive フォルダーのメディアファイルを検索します。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|最初の例では、指定した OneDrive for business サイト内のすべてのアイテムを返します。 2番目の例では、指定したサイト (およびサイト内のフォルダー) に、ファイル名に "confidential" という単語が含まれるドキュメントを返します。|
+|Path|SharePoint または OneDrive for business サイトの特定のサイトのパス (URL)。  <br/> path プロパティに指定したサイト内のフォルダーにあるアイテムを返すには、指定したサイト\*の URL を追加する必要があります。例えば`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **注:** OneDrive の`Path`場所を検索するためにプロパティを使用しても、検索結果には .png, tiff ファイル、.wav ファイルなどのメディアファイルは返されません。 検索クエリで別のサイトプロパティを使用して、OneDrive フォルダーのメディアファイルを検索します。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|最初の例では、指定した OneDrive for business サイト内のすべてのアイテムを返します。 2番目の例では、指定したサイト (およびサイト内のフォルダー) に、ファイル名に "confidential" という単語が含まれるドキュメントを返します。|
 |sharedwithusersowsuser|指定したユーザーと共有され、ユーザーの OneDrive for business サイトの [**自分と共有**] ページに表示されるドキュメント。 これらは、組織内の他のユーザーによって指定されたユーザーが明示的に共有しているドキュメントです。 sharedwithusersowsuser プロパティを使用する検索クエリに一致するドキュメントをエクスポートすると、指定されたユーザーとドキュメントを共有しているユーザーの元のコンテンツの場所からドキュメントがエクスポートされます。 詳細については、「[組織内で共有しているサイトコンテンツを検索する](#searching-for-site-content-shared-within-your-organization)」を参照してください。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|両方の例では、Garth 砦と明示的に共有されており、Garth 砦の OneDrive for business アカウントの [**自分と共有**] ページに表示されるすべての内部ドキュメントを返します。|
 |サイト|組織内のサイトかサイトのグループの URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|最初の例では、組織内のすべてのユーザーについて、OneDrive for business サイトからアイテムを返します。 2 番目の例では、すべてのチーム サイトからアイテムが返されます。|
 |Size|アイテムのサイズ (バイト数)。|`size>=1`  <br/> `size:1..10000`|最初の例では、1 バイトより大きいアイテムが返されます。2 番目の例では、1 ～ 10,000 バイトのサイズのメッセージが返されます。|
@@ -136,17 +136,17 @@ ms.locfileid: "31814168"
 
 **and**、 **OR**、 **NOT**などのブール型の検索演算子を使用すると、検索クエリで特定の単語を含めたり除外したりして、より正確な検索を定義できます。 その他の手法 (たとえば、 \>= または..)、引用符、かっこ、ワイルドカードなどを使用して、検索クエリを絞り込むことができます。 次の表に、検索結果を絞り込んだり広げたりするために使用できる演算子を示します。 
   
-|**Operator**|**使用方法**|**説明**|
+|**演算子**|**用途**|**説明**|
 |:-----|:-----|:-----|
-|AND|keyword1 AND keyword2|指定されたすべてのキーワードまたは`property:value`式を含むアイテムを返します。 たとえば、は`from:"Ann Beebe" AND subject:northwind` 、件名行に "northwind" が含まれている、彩 Beebe が送信したすべてのメッセージを返します。 <sup>pbm-2</sup>|
+|AND|keyword1 AND keyword2|指定されたすべてのキーワードまたは`property:value`式を含むアイテムを返します。 たとえば、は`from:"Ann Beebe" AND subject:northwind` 、件名行に "northwind" が含まれている、彩 Beebe が送信したすべてのメッセージを返します。 <sup>2</sup>|
 |+|keyword1 + keyword2 + keyword3|Returns items that contain  *either*  `keyword2` or  `keyword3` *and*  that also contain  `keyword1`. Therefore, this example is equivalent to the query  `(keyword2 OR keyword3) AND keyword1`.  <br/> Note that the query  `keyword1 + keyword2` (with a space after the **+** symbol) isn't the same as using the ** AND ** operator. This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.  |
-|OR|keyword1 OR keyword2|指定した1つ以上のキーワードまた`property:value`は式を含むアイテムを返します。 <sup>pbm-2</sup>|
-|NOT|keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> NOT kind: im|キーワードまたは`property:value`式で指定された項目を除外します。 2番目の例では、彩 Beebe によって送信されたメッセージを除外します。 3番目の例では、会話履歴メールボックスフォルダーに保存されている Skype for business の会話など、インスタントメッセージングの会話を除外します。 <sup>pbm-2</sup>|
+|OR|keyword1 OR keyword2|指定した1つ以上のキーワードまた`property:value`は式を含むアイテムを返します。 <sup>2</sup>|
+|NOT|keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> NOT kind: im|キーワードまたは`property:value`式で指定された項目を除外します。 2番目の例では、彩 Beebe によって送信されたメッセージを除外します。 3番目の例では、会話履歴メールボックスフォルダーに保存されている Skype for business の会話など、インスタントメッセージングの会話を除外します。 <sup>2</sup>|
 |-|keyword1 -keyword2|**NOT** 演算子と同じです。 そのため`keyword1` 、このクエリは、を含むアイテムを返し、 `keyword2`を含むアイテムを除外します。|
-|NEAR|keyword1 NEAR(n) keyword2|互いに近い単語を含む項目を返します。 n は単語の数と等しくなります。 たとえば、 `best NEAR(5) worst` "最下位" という単語が5単語の "best" に含まれているアイテムを返します。 数値が指定されていない場合、既定の間隔は 8 単語です。 <sup>pbm-2</sup>|
-|ONEAR|keyword1 ONEAR(n) keyword2|**near**に似ていますが、指定された順序で互いに近い単語を持つアイテムを返します。 たとえば、" `best ONEAR(5) worst` best" という単語の前に "best" が出現し、2つの単語がそれぞれ互いの5つの単語の中にある場合は、"best" という単語を返します。 数値が指定されていない場合、既定の間隔は 8 単語です。 <sup>pbm-2</sup> <br/> > [!NOTE]> メールボックスの検索では、 **onear**演算子はサポートされていません。SharePoint と OneDrive for business サイトを検索する場合にのみ機能します。 同じ検索でメールボックスとサイトを検索していて、クエリに**onear**演算子が含まれている場合、検索では、 **NEAR**演算子を使用している場合と同様にメールボックスアイテムが返されます。 つまり、検索では、単語が出現する順序に関係なく、指定した単語が互いに近くにあるアイテムが返されます。|
-|:|property:value|コロン (:)`property:value`構文では、検索対象のプロパティの値に指定された値が含まれることを指定します。 たとえば、は`recipients:garthf@contoso.com`にgarthf@contoso.com送信されたメッセージを返します。|
-|=|property=value|**:** 演算子と同じです。|
+|NEAR|keyword1 NEAR(n) keyword2|互いに近い単語を含む項目を返します。 n は単語の数と等しくなります。 たとえば、 `best NEAR(5) worst` "最下位" という単語が5単語の "best" に含まれているアイテムを返します。 数値が指定されていない場合、既定の間隔は 8 単語です。 <sup>2</sup>|
+|ONEAR|keyword1 ONEAR(n) keyword2|**near**に似ていますが、指定された順序で互いに近い単語を持つアイテムを返します。 たとえば、" `best ONEAR(5) worst` best" という単語の前に "best" が出現し、2つの単語がそれぞれ互いの5つの単語の中にある場合は、"best" という単語を返します。 数値が指定されていない場合、既定の間隔は 8 単語です。 <sup>2</sup> <br/> > [!NOTE]> メールボックスの検索では、 **onear**演算子はサポートされていません。SharePoint と OneDrive for business サイトを検索する場合にのみ機能します。 同じ検索でメールボックスとサイトを検索していて、クエリに**onear**演算子が含まれている場合、検索では、 **NEAR**演算子を使用している場合と同様にメールボックスアイテムが返されます。 つまり、検索では、単語が出現する順序に関係なく、指定した単語が互いに近くにあるアイテムが返されます。|
+|:|property:value|コロン (:)`property:value`構文では、検索対象のプロパティの値に指定された値が含まれることを指定します。 たとえば、  `recipients:garthf@contoso.com` は garthf@contoso.com に送信されたすべてのメッセージを返します。|
+|=|プロパティ = 値|**:** 演算子と同じです。|
 |\<|property\<value|検索対象のプロパティが指定の値より小さいことを意味します。<sup>1</sup>|
 |\>|property\>value|検索対象のプロパティが指定の値より大きいことを意味します。<sup>1</sup>|
 |\<=|property\<=value|検索対象のプロパティが特定の値以下であることを意味します。<sup>1</sup>|
@@ -161,7 +161,7 @@ ms.locfileid: "31814168"
   
 ## <a name="search-conditions"></a>検索条件
 
-検索クエリに条件を追加して、検索を絞り込んだり、より絞り込みのある結果セットを返すことができます。 各条件は、検索を開始するときに作成され実行される KQL 検索クエリに句を追加します。
+検索クエリに条件を追加して、検索を絞り込んだり、より絞り込みのある結果セットを返すことができます。 各条件によって、作成された KQL 検索クエリに句が追加され、ユーザーが検索を開始するとそのクエリが実行されます。
   
 [共通プロパティの条件 ](#conditions-for-common-properties)
 
@@ -181,7 +181,7 @@ ms.locfileid: "31814168"
   
 |**条件**|**説明**|
 |:-----|:-----|
-|日付|メールの場合、受信者によってメッセージが受信された日付か、送信者によってメッセージが送信された日付。 ドキュメントの場合は、ドキュメントが最後に変更された日付。|
+|Date|メールの場合、受信者によってメッセージが受信された日付か、送信者によってメッセージが送信された日付。 ドキュメントの場合は、ドキュメントが最後に変更された日付。|
 |送信者/作成者|メールの場合、メッセージの送信者。 ドキュメントの場合、Office ドキュメントから作成者フィールドに示されている人。 複数の名前をコンマで区切って入力できます。 2 つ以上の値は **OR** 演算子によって論理的に接続されます。|
 |サイズ (バイト数)|メールとドキュメントのいずれの場合も、アイテムのサイズ (バイト単位)。|
 |件名/タイトル|メールの場合、メッセージの件名行のテキスト。 ドキュメントの場合、ドキュメントのタイトル。 前述のとおり、Title プロパティは、Microsoft Office ドキュメントで指定されたメタデータです。 複数の件名またはタイトルの名前をコンマで区切って入力することができます。 2 つ以上の値は **OR** 演算子によって論理的に接続されます。|
@@ -195,7 +195,7 @@ ms.locfileid: "31814168"
 |:-----|:-----|
 |メッセージの種類| 検索するメッセージの種類。 これは、Kind メール プロパティと同じプロパティです。 可能な値:  <br/><br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|
 |参加者|メール メッセージ内のすべての送受信者フィールド。すなわち、From、To、CC、BCC の各フィールドです。|
-|タイプ|電子メールアイテムのメッセージクラスプロパティ。 このプロパティは、itemclass email プロパティと同じです。 複数値の条件でもあります。 そのため、複数のメッセージクラスを選択するには、 **CTRL**キーを押したまま、条件に追加するドロップダウンリストで2つ以上のメッセージクラスをクリックします。 リストで選択した各メッセージクラスは、対応する検索クエリの**or**演算子によって論理的に接続されます。  <br/> Exchange によって使用されるメッセージクラス (および対応するメッセージクラス ID) の一覧については、「アイテムの**** [種類とメッセージクラス](https://go.microsoft.com/fwlink/?linkid=848143)」を参照してください。|
+|型|電子メールアイテムのメッセージクラスプロパティ。 このプロパティは、itemclass email プロパティと同じです。 複数値の条件でもあります。 そのため、複数のメッセージクラスを選択するには、 **CTRL**キーを押したまま、条件に追加するドロップダウンリストで2つ以上のメッセージクラスをクリックします。 リストで選択した各メッセージクラスは、対応する検索クエリの**or**演算子によって論理的に接続されます。  <br/> Exchange によって使用されるメッセージクラス (および対応するメッセージクラス ID) の一覧については、「アイテムの**** [種類とメッセージクラス](https://go.microsoft.com/fwlink/?linkid=848143)」を参照してください。|
 |Received|電子メール メッセージが受信者によって受信された日付。 これは、Received メール プロパティと同じプロパティです。|
 |受信者|電子メールメッセージが送信されたユーザー。 これは、To メール プロパティと同じプロパティです。|
 |Sender|電子メール メッセージの差出人。|
@@ -219,7 +219,7 @@ SharePoint および OneDrive for business サイトでドキュメントを検�
 
 条件を追加するときは、条件のプロパティの種類に関連した演算子を選択します。条件とともに使用される演算子を次の表で説明します。また、検索クエリで使用される同等物の一覧も表示します。
   
-|**Operator**|**クエリの同等物**|**説明**|
+|**演算子**|**クエリの同等物**|**説明**|
 |:-----|:-----|:-----|
 |After|`property>date`|日付の条件で使用されます。指定された日付の後に送信、受信、変更された項目を返します。 |
 |Before|`property<date`|日付の条件で使用されます。指定された日付の前に送信、受信、変更された項目を返します。|
@@ -256,7 +256,7 @@ SharePoint および OneDrive for business サイトでドキュメントを検�
     
 - ドラッグ アンド ドロップを使用して、条件を並び替えることができます。 条件のコントロールをクリックするだけで上または下に移動できます。
     
-- 前述のとおり、いくつかの条件プロパティでは複数の値を入力することができます。 各値は **OR** 演算子によって論理的に接続されます。 これは、同じ条件の複数のインスタンス (値はそれぞれ 1 つ) の場合と同じロジックになります。 次の図は、複数の値を持つ 1 つの条件の例と、1 つの値を持つ (同じプロパティの) 複数の条件の例を示しています。 両方の例は、同じクエリになります。  `(filetype="docx") OR (filetype="pptx") OR (filetype="xlsx")`
+- 前述のとおり、いくつかの条件プロパティでは複数の値を入力することができます。 各値は **OR** 演算子によって論理的に接続されます。 これは、同じ条件の複数のインスタンス (値はそれぞれ 1 つ) の場合と同じロジックになります。 次の図は、複数の値を持つ 1 つの条件の例と、1 つの値を持つ (同じプロパティの) 複数の条件の例を示しています。 両方の例は、同じクエリになります。`(filetype="docx") OR (filetype="pptx") OR (filetype="xlsx")`
     
     ![メッセージは、ルールのすべての条件に一致しなければなりません。別々の条件に一致させる必要がある場合は、条件ごとに個別のルールを使用します。たとえば、ファイルが添付されたメッセージと、コンテンツがパターンと一致するメッセージに同じ免責事項を追加するには、それぞれの条件ごとに 1 つのルールを作成します。ルールは簡単にコピーできます。](media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
   
@@ -397,7 +397,7 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
     
 - 形式に`property:value`一致する構文を使用します。 値の大文字と小文字は区別されず、演算子の後にスペースを含めることはできません。 スペースがある場合、目的の値はフルテキスト検索だけになります。 たとえば`to: pilarp` 、pilarp がに送信されたメッセージではなく、キーワードとして "pilarp が" を検索します。 
     
-- To、From、Cc、Recipients などの受信者プロパティを検索するとき、SMTP アドレス、別名、または表示名を使用して受信者を指定できます。 たとえば、、pilarp が、またpilarp@contoso.comは "Pilar Pinilla" を使用できます。
+- To、From、Cc、Recipients などの受信者プロパティを検索するとき、SMTP アドレス、別名、または表示名を使用して受信者を指定できます。たとえば、pilarp@contoso.com、pilarp、または "Pilar Pinilla" を使用できます。
     
 - プレフィックスワイルドカード検索のみ使用できます。例: **cat\* **または**set\***。 サフィックス検索 ( ** \*cat** )、挿入辞検索 **(\*c t** )、および部分文字列検索 ( ** \*\* cat** ) はサポートされていません。 
     

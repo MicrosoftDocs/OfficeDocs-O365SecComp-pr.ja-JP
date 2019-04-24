@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: '概要: 以下の手順を使用して、分離した SharePoint Online チーム サイトを管理します。'
-ms.openlocfilehash: 81a6fcd80bb3e4950eb7b783d1ad964b9bc67cc5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f8531c4922f6ee6a86e32e646692825e71fafec2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32251993"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの管理
 
@@ -41,7 +41,7 @@ Office 365 を使用してユーザー アカウントとグループを管理�
   
 - Office 管理者センターでは、ユーザー アカウント管理者または会社管理者の役割が割り当てられているユーザー アカウントでサインインし、グループを使用して適切なユーザーを適切なアクセス グループに追加します。
     
-- PowerShell の場合、最初に [Azure Active Directory V2 PowerShell モジュールを使用して接続](https://go.microsoft.com/fwlink/?linkid=842218)します。ユーザー アカウントをそのユーザー プリンシパル名 (UPN) が含まれるアクセス グループに追加するには、次の PowerShell コマンド ブロックを使用します。
+- PowerShell の場合、まず、 [Azure Active Directory PowerShell for Graph モジュールに接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)します。 ユーザー プリンシパル名 (UPN) を使ってユーザー アカウントをアクセス グループに追加するには、次の PowerShell コマンド ブロックを使用します。
     
 ```
 $userUPN="<UPN of the user account>"
@@ -76,7 +76,8 @@ Office 365 を使用してユーザー アカウントとグループを管理�
   
 - Office 管理者センターでは、ユーザー アカウント管理者または会社管理者の役割が割り当てられているユーザー アカウントでサインインし、グループを使用して適切なアクセス グループを適切なグループに追加します。
     
-- PowerShell の場合、[最初に Azure Active Directory V2 PowerShell モジュールを使用して接続](https://go.microsoft.com/fwlink/?linkid=842218)します。その後、次の PowerShell コマンドを使用します。
+- PowerShell の場合、まず、 [Azure Active Directory PowerShell for Graph モジュールに接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
+ その後、次の PowerShell コマンドを使用します。
  
 ```
 $newGroupName="<display name of the new group to add>"
@@ -100,7 +101,8 @@ Office 365 を使用してユーザー アカウントとグループを管理�
   
 - Office 管理者センターでは、ユーザー アカウント管理者または会社管理者の役割が割り当てられているユーザー アカウントでサインインし、グループを使用して適切なユーザーを適切なアクセス グループから削除します。
     
-- PowerShell の場合、最初に [Azure Active Directory V2 PowerShell モジュールを使用して接続](https://go.microsoft.com/fwlink/?linkid=842218)します。ユーザー アカウントをそのユーザー プリンシパル名 (UPN) が含まれるアクセス グループから削除するには、次の PowerShell コマンド ブロックを使用します。
+- PowerShell の場合、まず、 [Azure Active Directory PowerShell for Graph モジュールに接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
+UPN を使ってアクセス グループからユーザー アカウントを削除するには、次の PowerShell コマンド ブロックを使用します。
     
 ```
 $userUPN="<UPN of the user account>"
@@ -132,7 +134,7 @@ Office 365 を使用してユーザー アカウントとグループを管理�
   
 - Office 管理者センターでは、ユーザー アカウント管理者または会社管理者の役割が割り当てられているユーザー アカウントでサインインし、グループを使用して適切なグループを適切なアクセス グループから削除します。
     
-- PowerShell については、まず「[Azure Active Directory V2 PowerShell モジュールを使用した接続](https://go.microsoft.com/fwlink/?linkid=842218)」を参照してください。    
+- PowerShell の場合、まず、 [Azure Active Directory PowerShell for Graph モジュールに接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)します。    
 表示名を使用してアクセス グループからグループを削除するには、次の PowerShell コマンド ブロックを使用します。
     
 ```

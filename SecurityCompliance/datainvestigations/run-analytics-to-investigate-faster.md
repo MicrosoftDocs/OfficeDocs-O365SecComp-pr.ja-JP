@@ -1,5 +1,5 @@
 ---
-title: 分析を実行してより早く調査する
+title: アナリティクスを使用して、より速い調査を実行する
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 9516035fb6c758fdff1852249fff2815f19af559
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257615"
 ---
-# <a name="run-analytics-to-investigate-faster"></a>分析を実行してより早く調査する
+# <a name="run-analytics-to-investigate-faster"></a>アナリティクスを使用して、より速い調査を実行する
 
 証拠のコレクションが大きい場合、それらをすべて確認するのは困難な場合があります。 多くの場合、証拠のセットには、同じまたは類似の電子メールメッセージまたはドキュメントの複数のコピーが含まれます。 データ調査 (プレビュー) には、情報が失われないように、確認が必要なドキュメントのボリュームを減らすために役立つ分析ツールが多数用意されています。 これらの機能の詳細については、以下を参照してください。
 

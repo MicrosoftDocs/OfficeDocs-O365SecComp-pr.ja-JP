@@ -14,11 +14,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection の自動化された調査と応答機能について説明します。
 ms.openlocfilehash: 223a28a7f63f101dd5644e433d72a3ddf6e5dc23
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249898"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Office 365 を使用した自動調査と応答 (AIR)
 
@@ -119,7 +119,7 @@ ms.locfileid: "31000440"
 
 通知によってトリガーされるプレイブックに似ていますが、エクスプローラーのビューからトリガーされる自動調査には、ルート調査、脅威を識別して関連付けを行うための手順、およびそれらの脅威を軽減するための推奨措置が含まれます。
 
-## <a name="get-started"></a>はじめに
+## <a name="get-started"></a>作業の開始
 
 Office 365 のグローバル管理者、セキュリティ管理者、またはセキュリティリーダとして調査にアクセスするには、security &[https://protection.office.com](https://protection.office.com)コンプライアンスセンター () に移動し、サインインします。 次に、以下のどちらかの操作を行います。
 
@@ -294,7 +294,7 @@ Office 365 のグローバル管理者、セキュリティ管理者、または
 
 - Microsoft 365 Enterprise E5
 - Office 365 Enterprise E5
-- Microsoft の脅威保護
+- Microsoft Threat Protection
 - Office 365 Advanced Threat Protection プラン2
 
 機能の可用性の詳細については、 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)を参照してください。

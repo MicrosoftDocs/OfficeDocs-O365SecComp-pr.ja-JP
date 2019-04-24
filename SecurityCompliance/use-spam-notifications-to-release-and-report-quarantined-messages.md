@@ -1,5 +1,5 @@
 ---
-title: Office 365 でエンド ユーザーのスパム通知を使って検疫済みメッセージを解放して報告する
+title: Office 365 でユーザーのスパム通知を使って検疫済みメッセージを解放して報告する
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -17,13 +17,13 @@ ms.collection:
 - M365-security-compliance
 description: 管理者がユーザーの通知を有効にした場合、スパム、大量、またはフィッシングメッセージとして識別されたメールボックスに送信されたメッセージを一覧表示する通知メッセージを受け取ります。 通知された後にメッセージを解放または報告することができます。
 ms.openlocfilehash: de67987b0028102bdf61889ce54ca4215182e279
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30638974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263439"
 ---
-# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Office 365 でエンド ユーザーのスパム通知を使って検疫済みメッセージを解放して報告する
+# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Office 365 でユーザーのスパム通知を使って検疫済みメッセージを解放して報告する
 
 管理者がユーザーのスパム通知を有効にした場合、スパムとして識別されたメールボックス宛てのメッセージを一覧表示する通知メッセージを受け取ります。
   

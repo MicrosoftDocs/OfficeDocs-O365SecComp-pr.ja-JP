@@ -1,5 +1,5 @@
 ---
-title: チュートリアル - ダッシュボードからインサイトへの移動
+title: ウォークスルー - ダッシュボードからインサイトへの移動
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターの推奨されるアクションを使用して、ダッシュボードから洞察に移動する方法について説明します。
 ms.openlocfilehash: 732c78b35a60c1686bc382931688dec08080f8c2
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255600"
 ---
-# <a name="walkthrough---from-a-dashboard-to-an-insight"></a>チュートリアル - ダッシュボードからインサイトへの移動
+# <a name="walkthrough---from-a-dashboard-to-an-insight"></a>ウォークスルー - ダッシュボードからインサイトへの移動
 
 [Office 365 セキュリティ&amp;コンプライアンスセンターのレポートと洞察](reports-and-insights-in-security-and-compliance.md)を初めて使用する場合は、ダッシュボードから洞察や推奨されるアクションに簡単にアクセスする方法を確認することができます。 
   
@@ -44,7 +44,7 @@ ms.locfileid: "30692666"
   
 この方法では、ダッシュボードから洞察および推奨されるアクションに移行できます。
   
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [チュートリアル: 洞察から詳細レポートへ](from-an-insight-to-a-detailed-report.md)
   

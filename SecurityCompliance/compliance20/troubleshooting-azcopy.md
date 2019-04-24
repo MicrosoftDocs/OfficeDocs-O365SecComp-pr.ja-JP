@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 9711bee4ec9a61510b47568df37dfd3135e1e00c
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30742509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241080"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery-preview"></a>Advanced eDiscovery での azcopy のトラブルシューティング (プレビュー)
 

@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 918a49859d3e3a10d14b346860027a1b434c73e9
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30297110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240912"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery-preview"></a>Advanced eDiscovery で処理エラーを処理する (プレビュー)
 
 処理とは、ファイルの識別、埋め込まれた文書と添付ファイルの拡張、画像ファイルのテキスト抽出、OCR (光学式文字認識)、およびそのコンテンツのインデックス作成のプロセスです。  
 
-保管担当者が**保管担当者**タブのケースに追加されると、完全に検索可能になるように、Office 365 からのすべてのインデックスアイテムが処理されます。 同様に、office 365 データソースまたは office 以外の365データソースの作業セットにコンテンツが追加されると、コンテンツも処理されます。
+保管担当者が**保管担当者**タブのケースに追加されると、完全に検索可能になるように、Office 365 からのすべてのインデックスアイテムが処理されます。  同様に、office 365 データソースまたは office 以外の365データソースの作業セットにコンテンツが追加されると、コンテンツも処理されます。
 
 advanced eDiscovery (プレビュー) の [**処理**] タブでは、これらのすべてのシナリオの*詳細なインデックス作成*の状態が透明になります。
 

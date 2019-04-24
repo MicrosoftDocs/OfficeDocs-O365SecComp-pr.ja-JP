@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 2ac12cf8c447e3341724d9e853da0f32b7c232fb
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242950"
 ---
 # <a name="load-non-office-365-data-into-a-working-set"></a>ワーキング セットに Office 365 以外のデータを読み込む
 

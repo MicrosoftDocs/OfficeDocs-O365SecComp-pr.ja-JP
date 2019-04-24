@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: Office 365 Advanced eDiscovery でユーザーを割り当てたり、電子情報開示ケースの問題を削除したりするなど、案件を追加または編集する方法について説明します。
 ms.openlocfilehash: 80ea6e2579b8bc68b70e2181d9c986c91c890836
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257749"
 ---
 # <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>Office 365 で問題を定義してユーザーを割り当てる高度な電子情報開示
 

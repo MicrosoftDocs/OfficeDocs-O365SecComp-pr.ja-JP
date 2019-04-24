@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: '差出人セーフ リストを使用する場合は、Exchange Online Protection (EOP) と Outlook で処理が異なることを認識しておく必要があります。サービスでは RFC 5321.MailFrom アドレスと RFC 5322.From アドレスを検査することによって信頼できる差出人とドメインを尊重するのに対して、Outlook では RFC 5322.From アドレスをユーザーの差出人セーフ リストに追加します (注 : サービスは、ブロックする差出人とドメインについては、5321.MailFrom アドレスと 5322.From アドレスの両方を検査します)。'
 ms.openlocfilehash: 006c2b9520f1e1f71f5ec745baaf84f906f31eb4
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259655"
 ---
-# <a name="manage-safe-sender-lists-for-bulk-mailers"></a>バルク メール業者の差出人セーフ リストを管理する
+# <a name="manage-safe-sender-lists-for-bulk-mailers"></a>バルク メーラーの差出人セーフ リストを管理する
 
 差出人セーフリストを使用する場合は、Exchange Online Protection (EOP) と Outlook が異なる方法で処理することに注意してください。 Office 365 サービスは、rfc 5321.mailfrom アドレスと rfc 5322.from from アドレスを検査することによって、安全な送信者とドメインを尊重しますが、Outlook は rfc 5322.from アドレスをユーザーの [差出人セーフリスト] に追加します。 (注: サービスは、ブロックされた送信者とドメインの5321.mailfrom アドレスと5322.from アドレスの両方を調べます。)
   

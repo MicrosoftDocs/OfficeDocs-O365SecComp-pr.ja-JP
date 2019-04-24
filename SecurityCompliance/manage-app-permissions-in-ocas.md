@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 2062c312-b1e4-4ce7-8cb2-ea39bc0dfdad
 description: office 365 の OAuth アプリ Cloud App Security は、ユーザーが office 365 データで使用するためにダウンロードするアプリを管理するのに役立ちます。
 ms.openlocfilehash: 0d9916414d55abb73fd99eaf30c3b6df0648b191
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260187"
 ---
 # <a name="manage-oauth-apps-using-office-365-cloud-app-security"></a>Office 365 Cloud App Security を使用して OAuth アプリを管理する
 
@@ -43,7 +43,7 @@ ms.locfileid: "30862589"
 
 次の表では、[OAuth アプリの管理] ページで使用できるコントロールとオプションについて説明します。
   
-|**アイテム**|**説明**|
+|**Item**|**説明**|
 |:-----|:-----|
 |アプリクエリバーの [基本] アイコン  <br/> ![クエリの基本的なクエリビューを示すアイコン](media/a459bc51-e86b-43d5-a0ee-661b9fb4afc9.png)|[詳細] ビューに切り替えるには、このオプションを選択します。  <br/> ( **Basic**が表示されている場合は、[詳細設定] ビューを使用しています)  <br/> |
 |アプリクエリバーの [詳細] アイコン  <br/> ![クエリの高度なクエリビューを示すアイコン](media/9958d832-2c81-45ed-a642-d926310ba6b6.png)|[基本] ビューに切り替えるには、このチェックボックスをオンにします。  <br/> ( **[詳細**] が表示されている場合は、基本ビューを使用しています)。  <br/> |
@@ -115,7 +115,7 @@ ms.locfileid: "30862589"
     
 フィルターは自動的に適用され、それに応じてアプリの一覧が更新されます。
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [通知を確認して処理を実行する](review-office-365-cas-alerts.md)
     

@@ -11,11 +11,11 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: office 365 Cloud App Security セッションポリシーを使用すると、リアルタイムのセッションレベルの監視が可能になり、office 365 アプリの詳細な表示を affording し、ユーザーセッションに設定したポリシーに応じて異なる操作を実行することができます。 session control を使用して、アクセスを完全に許可またはブロックするのではなく、セッションの監視中にアクセスを許可したり、条件付きアクセスアプリコントロールのリバースプロキシ機能を使用して特定のセッションアクティビティを制限したりすることができます。
 ms.openlocfilehash: e0e4b04ee8cc0f7a14adbc26b074a5f2947e44c2
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263033"
 ---
 # <a name="session-policies-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security のセッション ポリシー
 

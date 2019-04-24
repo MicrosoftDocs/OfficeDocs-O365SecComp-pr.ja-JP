@@ -1,5 +1,5 @@
 ---
-title: ワーキング セット内のドキュメントを表示する
+title: ワーキング セット内のドキュメントを表示します
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: dd708554e9b89c8f1057cffb1bcbaddb302cb253
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242535"
 ---
-# <a name="view-documents-in-a-working-set"></a>ワーキング セット内のドキュメントを表示する
+# <a name="view-documents-in-a-working-set"></a>ワーキング セット内のドキュメントを表示します
 
 コンテンツ準備中です。

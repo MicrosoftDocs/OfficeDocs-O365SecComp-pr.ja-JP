@@ -1,5 +1,5 @@
 ---
-title: 電子情報開示検索結果での重複除去
+title: 電子情報開示検索結果での重複排除
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: 同じメッセージの複数のインスタンスが異なるメールボックスで検出された場合でも、エクスポートされる電子情報開示検索結果の重複を除外するオプションがあります。
 ms.openlocfilehash: b3810e3568bd2c7aa1628bcfcebbad5a87468ff8
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258079"
 ---
-# <a name="de-duplication-in-ediscovery-search-results"></a>電子情報開示検索結果での重複除去
+# <a name="de-duplication-in-ediscovery-search-results"></a>電子情報開示検索結果での重複排除
 
 この記事では、電子情報開示検索結果の重複除外がどのように機能するかを説明し、重複除外アルゴリズムの制限事項を説明します。
   

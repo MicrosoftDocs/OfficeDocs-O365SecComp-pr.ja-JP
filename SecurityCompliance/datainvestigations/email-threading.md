@@ -1,5 +1,5 @@
 ---
-title: 電子メールのスレッド化
+title: 電子メールスレッド
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: ca4823ecfc06ddc0ef6f6840ad55fec492ac472c
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258795"
 ---
-# <a name="email-threading"></a>電子メールのスレッド化
+# <a name="email-threading"></a>電子メールスレッド
 
 しばらくの間、電子メールでの会話を検討してください。 ほとんどの場合、スレッドの最後のメールには、先行するすべてのメールの内容が含まれます。最後のメールを確認すると、スレッドで発生した会話のコンテキストが完全にわかります。 電子メールスレッドでは、このような電子メールを識別して、校閲者が収集されたドキュメントの一部をコンテキストを失わずに確認できるようにします。
 

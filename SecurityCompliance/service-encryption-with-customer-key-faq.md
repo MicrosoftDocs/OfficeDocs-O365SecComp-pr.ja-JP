@@ -1,5 +1,5 @@
 ---
-title: Office 365 のよく寄せられる質問のための、顧客キーによるサービスの暗号化
+title: Office 365 のFAQための、顧客キーによるサービスの暗号化
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: BitLocker および Distributed Key Manager (DKM) によって有効になるベースライン、ボリュームレベルの暗号化に加えて、office 365 では、Exchange からのデータを含む、office 365 の顧客コンテンツのための暗号化のレイヤーが追加されています。Online、Skype for business、SharePoint Online、OneDrive for business。 これをサービス暗号化と呼びます。
-ms.openlocfilehash: 5e1acca69ccdd8acb986acb4d7a302d4ca3fbe8a
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 8515354d716df22fa124c03e18c36914d27102f4
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266946"
 ---
-# <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Office 365 のよく寄せられる質問のための、顧客キーによるサービスの暗号化
+# <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Office 365 のFAQための、顧客キーによるサービスの暗号化
 
 BitLocker および Distributed Key Manager (DKM) によって有効になるベースライン、ボリュームレベルの暗号化に加えて、office 365 では、Exchange からのデータを含む、office 365 の顧客コンテンツのための暗号化のレイヤーが追加されています。Online、Skype for business、SharePoint Online、OneDrive for business。 これをサービス暗号化と呼びます。
   
@@ -46,7 +46,7 @@ byok Exchange Online の Azure Information Protection は、Office 365 メッセ
 ## <a name="does-office-365-message-encryption-and-bring-your-own-key-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>Office 365 Message Encryption および Azure Information Protection を使用して独自のキーを取り込む subpoenas などのサードパーティのデータ要求に対する Microsoft のアプローチを変更する
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-いいえ。 Office 365 メッセージの暗号化と、独自の暗号化キーを提供して制御するオプション (AIP) を使用して、法的執行者に対応するように設計されていません。 Office 365 AIP の byok によるメッセージの暗号化は、内部または外部のコンプライアンス義務を満たす必要があるコンプライアンスに重点を置いたお客様向けに設計されています。 Microsoft は、お客様のデータに関するサードパーティの要求を非常に真剣に行います。 クラウドサービスプロバイダーとして、お客様のデータのプライバシーを常に支持しています。 召喚を受け取った場合は、常にお客様にサードパーティをリダイレクトして、情報を入手してください。 (官庁のブログ: 「[お客様のデータを政府から保護](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)する」を参照してください)。 [ここで](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data)受信する要求の詳細情報を定期的に公開しています。
+いいえ。 Office 365 メッセージの暗号化、および Azure Information Protection 用の独自のキー (byok) を使用して独自の暗号化キーを提供および制御するオプションは、法的執行 subpoenas への対応を目的としたものではありませんでした。 Office 365 AIP の byok によるメッセージの暗号化は、内部または外部のコンプライアンス義務を満たす必要があるコンプライアンスに重点を置いたお客様向けに設計されています。 Microsoft は、お客様のデータに関するサードパーティの要求を非常に真剣に行います。 クラウドサービスプロバイダーとして、お客様のデータのプライバシーを常に支持しています。 召喚を受け取った場合は、常にお客様にサードパーティをリダイレクトして、情報を入手してください。 (官庁のブログ: 「[お客様のデータを政府から保護](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)する」を参照してください)。 [ここで](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data)受信する要求の詳細情報を定期的に公開しています。
   
 詳細については、[オンラインサービス利用規約 (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)にあるサードパーティのデータ要求と "顧客データの開示" に関する[Microsoft のセキュリティセンター](https://www.microsoft.com/en-us/trustcenter/default.aspx)を参照してください。
   

@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: この記事では、Microsoft 365 の新しいデータ調査 (プレビュー) ツールについて説明します。
 ms.openlocfilehash: 11ba4d0870461695d327577396ccd535ac4340e1
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257722"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 のデータ調査 (プレビュー) の概要
 
@@ -43,9 +43,9 @@ ms.locfileid: "31030309"
 
 収集する証拠に対して高度な分析を実行することもできます。 これにより、一般的なテーマが提供され、電子メールのスレッド、正確な複製、およびほぼ重複による証拠を整理して、調査を容易にすることができます。 抽出されたテキストビューまたはネイティブファイル形式のドキュメントを確認し、調査結果でタグを付けることができます。 詳細については、次のトピックを参照してください。
 
-  - [証拠でデータを確認する](review-data-in-evidence.md)
+  - [エビデンスのデータを確認する](review-data-in-evidence.md)
 
-  - [分析を実行してより早く調査する](run-analytics-to-investigate-faster.md)
+  - [アナリティクスを使って、調査をより速く行います](run-analytics-to-investigate-faster.md)
 
 
 ## <a name="managing-people-of-interest"></a>関心のあるユーザーを管理する

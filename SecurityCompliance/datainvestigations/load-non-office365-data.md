@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: f5478d89d71db22e710b5d5fcab397ae8d6aee56
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259565"
 ---
 # <a name="load-non-office-365-data-into-evidence"></a>Office 以外の365データを証拠に読み込む
 
@@ -28,7 +28,7 @@ office 365 の高度な電子情報開示で分析する必要があるすべて
 >[!Note]
 >高度な電子情報開示では、組織の高度なコンプライアンスアドオンまたは E5 サブスクリプションに Office 365 E3 が必要です。 その計画がなく、高度な電子情報開示を試行する必要がある場合は、Office 365 Enterprise E5 の試用版にサインアップすることができます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 この手順の説明に従って Office 365 以外のアップロード機能を使用するには、次の条件を持っている必要があります。
 
 - 高度なコンプライアンスアドオンまたは E5 サブスクリプションを備えた Office 365 E3。

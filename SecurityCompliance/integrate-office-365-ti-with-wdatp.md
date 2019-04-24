@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Windows Defender advanced threat protection を使用して Office 365 advanced threat protection を統合し、より詳細な脅威管理情報を表示します。
 ms.openlocfilehash: 832b9c6bc600366e1ed6b7c6e60442bec8b5002c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254436"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-windows-defender-advanced-threat-protection"></a>Windows Defender advanced threat protection を使用して Office 365 advanced threat protection を統合する
 
@@ -55,7 +55,7 @@ Office 365 advanced threat protection with windows defender advanced threat prot
 5. Windows Defender Advanced Threat Protection で接続を有効にします。 「 [Windows Defender Advanced Threat Protection ポータルの使用](https://go.microsoft.com/fwlink/?linkid=859690)」を参照してください。
 
   
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Office 365 の脅威の調査と対応](office-365-ti.md)
   

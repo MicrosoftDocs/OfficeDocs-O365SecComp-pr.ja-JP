@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: この記事では、Security & コンプライアンスセンターで新しいデータ調査 (プレビュー) ツールを使用してデータ流出インシデントを管理する方法について説明します。
 ms.openlocfilehash: 93a98a4e01df011b789ba2453734f093ad8c19d6
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258825"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Microsoft 365 でデータ流出インシデントを管理する
 
@@ -51,7 +51,7 @@ Data 流出は、機密情報を含むドキュメントが信頼されていな
 5.  調査を終了または削除します。
 
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - セキュリティ & コンプライアンスセンターのデータ調査 (プレビュー) ツールを使用して、調査を作成し、こぼれたデータを検索して、それを確認して分析します。 その後、セキュリティ & コンプライアンスセンター PowerShell を使用して、Office 365 からこぼれたデータを完全に削除します。 
 
@@ -111,7 +111,7 @@ Data 流出は、機密情報を含むドキュメントが信頼されていな
 
 ドキュメントをグループ化して、レビューのための詳細を取得するには、[**証明の管理**] をクリックします。 [**分析**] タイルで、[**分析**] をクリックします。 これにより、重複データ検出、電子メールスレッド、テーマ分析などの高度な分析が実行されます。 詳細については、次のトピックを参照してください。
 
-- [分析を実行してより早く調査する](run-analytics-to-investigate-faster.md)
+- [アナリティクスを使って、調査をより速く行います](run-analytics-to-investigate-faster.md)
 - [準重複の検出](near-duplicates.md)
 - [電子メールのスレッド化](email-threading.md)
 - [テーマ](themes.md)

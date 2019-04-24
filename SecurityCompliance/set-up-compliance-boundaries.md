@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: コンプライアンスの境界を使用して、電子情報開示マネージャーが検索できるユーザーコンテンツの場所を制御する、Office 365 組織内の論理的な境界を作成します。 コンプライアンス境界では、検索アクセス許可フィルター (コンプライアンスセキュリティフィルターとも呼ばれます) を使用して、特定のユーザーが検索できるメールボックス、SharePoint サイト、および OneDrive アカウントを制御します。
 ms.openlocfilehash: b23c6d0c96874fb7e6205de6bf8a7f4eb00e4254
-ms.sourcegitcommit: 691370682825a7601bd4b77d0a8c4b51ed15682f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "31014026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264663"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Office 365 での電子情報開示調査のためにコンプライアンスの境界を設定する
 
@@ -56,7 +56,7 @@ ms.locfileid: "31014026"
   
 以下は、コンプライアンスの境界に使用できる Azure Active Directory ユーザー属性の一覧です。
   
-- Company
+- 会社名
     
 - CustomAttribute1-CustomAttribute15
     
@@ -190,8 +190,8 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
     |**パラメーターの値**|**データセンターの場所**|
     |:-----|:-----|
     |NAM  <br/> |北アメリカ (実際のデータセンターは米国にあります)  <br/> |
-    |EUR  <br/> |地区  <br/> |
-    |APC  <br/> |アジア太平洋地域  <br/> |
+    |EUR  <br/> |ヨーロッパ  <br/> |
+    |APC  <br/> |アジア太平洋  <br/> |
     |CAN <br/> |カナダ
     
 - **コンテンツ検索をルーティング**する-SharePoint サイトと OneDrive アカウントのコンテンツ検索をサテライトデータセンターにルーティングできます。 これは、検索を実行するデータセンターの場所を指定できることを意味します。
@@ -201,14 +201,14 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
     |**パラメーターの値**|**エクスポート用のデータセンタールーティング場所**|
     |:-----|:-----|
     |NAM  <br/> |電源  <br/> |
-    |EUR  <br/> |地区  <br/> |
-    |APC  <br/> |アジア太平洋地域  <br/> |
+    |EUR  <br/> |ヨーロッパ  <br/> |
+    |APC  <br/> |アジア太平洋  <br/> |
     |CAN  <br/> |電源  <br/> |
-    |AUS  <br/> |アジア太平洋地域  <br/> |
+    |AUS  <br/> |アジア太平洋  <br/> |
     |KOR  <br/> |組織の既定のデータセンター  <br/> |
-    |GBR  <br/> |地区  <br/> |
-    |JPN  <br/> |アジア太平洋地域  <br/> |
-    |IND  <br/> |アジア太平洋地域  <br/> |
+    |GBR  <br/> |ヨーロッパ  <br/> |
+    |JPN  <br/> |アジア太平洋  <br/> |
+    |IND  <br/> |アジア太平洋  <br/> |
     |語頭  <br/> |電源  <br/> |
    
 > [!NOTE]

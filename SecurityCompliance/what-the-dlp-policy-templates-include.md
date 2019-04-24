@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) には、米国の医療保険法に従って機密情報を保護するのに役立つ、一般的なコンプライアンス要件に対応するための使用可能なポリシーテンプレートが用意されています (HIPAA)、米国グラムリーチブライ-対象-なる act (GLBA)、または米国 Patriot 法。このトピックでは、すべてのポリシーテンプレート、検索する機密情報の種類、および既定の条件とアクションについて説明します。
 ms.openlocfilehash: 0031b5415db2f1c4a9497bcfbc5226da250b01b6
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266842"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>DLP ポリシー テンプレートに含まれるもの
 
@@ -125,7 +125,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのデー�
 |フランス PII:外部共有されているコンテンツをスキャン - 低カウント  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  フランスの社会保障番号 (INSEE) — 最小数 1、最大数 9  <br/>  フランスの運転免許証番号 — 最小数 1、最大数 9  <br/>  フランスのパスポート番号 — 最小数 1、最大数 9  <br/>  フランスの国民識別カード (CNI) — 最小数 1、最大数 9  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> |通知の送信  <br/> |
 |フランス PII:外部共有されているコンテンツをスキャン - 高カウント  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  フランスの社会保障番号 (INSEE) — 最小数 10、最大数 任意  <br/>  フランスの運転免許証番号 — 最小数 10、最大数 任意  <br/>  フランスのパスポート番号 — 最小数 10、最大数 任意  <br/>  フランスの国民識別カード (CNI) — 最小数 10、最大数 任意  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> | コンテンツへのアクセスの禁止  <br/>  通知の送信  <br/>  上書きの許可  <br/>  業務上の理由が必要  <br/>  インシデント レポートの送信  <br/> |
    
-## <a name="general-data-protection-regulation-gdpr"></a>一般的なデータ保護規則 (GDPR)
+## <a name="general-data-protection-regulation-gdpr"></a>EU 一般データ保護規則 (GDPR)
 
 |**ルール名**|**条件<br/> (機密情報の種類を含む)**|**Actions**|
 |:-----|:-----|:-----|

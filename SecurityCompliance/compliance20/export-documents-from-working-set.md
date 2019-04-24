@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 815b92b13ed09d8aec64f5207f1c82d910e2dce0
-ms.sourcegitcommit: 9f38ba72eba0b656e507860ca228726e4199f7ec
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30475707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252052"
 ---
 # <a name="export-documents-from-a-working-set"></a>ワーキング セットからドキュメントをエクスポートする
 

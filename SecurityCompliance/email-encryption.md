@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 description: office メッセージの暗号化 (OME)、S/MIME、Information Rights Management (IRM)、トランスポート層セキュリティ (TLS) について説明します。
 ms.openlocfilehash: 18f3d5098557f65a0738254b57882689c013d677
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256786"
 ---
-# <a name="email-encryption-in-office-365"></a>Office 365 での電子メールの暗号化
+# <a name="email-encryption-in-office-365"></a>Office 365 の電子メールの暗号化
 
 この記事では、office メッセージの暗号化 (OME)、S/MIME、Information Rights Management (IRM)、トランスポート層セキュリティ (TLS) について説明します。
   

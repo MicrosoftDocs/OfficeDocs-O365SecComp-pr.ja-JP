@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: office 365 で非アクティブなメールボックスを作成するには、ホールドまたは office 365 アイテム保持ポリシーをメールボックスに適用してから、対応する office 365 ユーザーアカウントを削除します。 非アクティブなメールボックス内のアイテムは、非アクティブになる前に適用されていた保留またはアイテム保持ポリシーの期間中保持されます。 非アクティブなメールボックスを完全に削除するには、保持ポリシーまたはアイテム保持ポリシーを削除するだけです。
 ms.openlocfilehash: ad874d2f21afaa86fa7fa5a18dc827dfa1b90574
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258896"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Office 365 で非アクティブなメールボックスを作成および管理する
 
@@ -52,7 +52,7 @@ Office 365 により、削除済みメールボックスの内容を保持する
   
 メールボックスを訴訟ホールドの対象にするため、または Office 365 アイテム保持ポリシーを適用するためのステップごとの手順については、以下を参照してください。
   
-- [メールボックスを訴訟ホールドの対象にする](https://go.microsoft.com/fwlink/?linkid=856286)
+- [Place a mailbox on Litigation Hold](https://go.microsoft.com/fwlink/?linkid=856286)
     
 - [アイテム保持ポリシーの概要](retention-policies.md)
     

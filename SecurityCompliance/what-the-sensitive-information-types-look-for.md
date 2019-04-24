@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) には、dlp ポリシーで使用できる状態で、80の機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
 ms.openlocfilehash: d161435c75149183289cfbfd6abe79d55e371e31
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30639194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266873"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>機密情報の種類の検索基準
 
@@ -1220,7 +1220,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Legal entities 
 - Registration Status 
 - Business 
-- Company
+- 会社名
 - CNPJ 
 - Cadastro Nacional da Pessoa Jurídica 
 - Cadastro Geral de Contribuintes 
@@ -2420,7 +2420,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-None
+なし
 
    
 ## <a name="eu-debit-card-number"></a>欧州連合のデビット カード番号
@@ -2923,7 +2923,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-None
+なし
    
 ## <a name="france-passport-number"></a>フランスのパスポート番号
 
@@ -2992,7 +2992,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 次のいずれかのパターンに一致する:
 - 13桁の数字の後にスペースを続け、2桁の数字<br/>
-または
+or
 - 15 桁の連続する数字
 
 ### <a name="checksum"></a>チェックサム
@@ -3631,7 +3631,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-None
+なし
 
    
 ## <a name="ip-address"></a>IP アドレス
@@ -4966,7 +4966,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-None
+なし
 
 ## <a name="sql-server-connection-string"></a>SQL Server の接続文字列
 
@@ -6054,7 +6054,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keyworditincollaborative"></a>Keyword_itin_collaborative
 
-- License 
+- ライセンス 
 - DL 
 - dob 
 - 誕生日 

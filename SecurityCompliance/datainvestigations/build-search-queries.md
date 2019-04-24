@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: Microsoft 365 でデータ調査を使用しているときにデータを検索するときに、検索範囲を絞るには、キーワードと条件を使用します。
 ms.openlocfilehash: eeca1bf7ff89d1b7f79ceeed3334668e354f035a
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262893"
 ---
 # <a name="build-search-queries"></a>検索クエリのビルド
 

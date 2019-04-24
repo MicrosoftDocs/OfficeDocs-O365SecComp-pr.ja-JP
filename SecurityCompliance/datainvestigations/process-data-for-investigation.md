@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 5593d9bbf76cd0004b48f45123c4921dc3fed9e6
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257625"
 ---
 # <a name="process-data-for-an-investigation"></a>調査のためにデータを処理する
 

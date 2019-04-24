@@ -1,5 +1,5 @@
 ---
-title: 脅威エクスプローラーのビュー
+title: 脅威エクスプローラー ビュー
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,13 +13,13 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection プラン2の一部として、エクスプローラー (脅威エクスプローラーとも呼ばれます) で使用できるさまざまなビューの種類について説明します。
 ms.openlocfilehash: bcfa044db6844d9459b3dd62d9ced1cd37a999ec
-ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30736401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260591"
 ---
-# <a name="threat-explorer-views"></a>脅威エクスプローラーのビュー
+# <a name="threat-explorer-views"></a>脅威エクスプローラー ビュー
 
 [脅威エクスプローラ](use-explorer-in-security-and-compliance.md)は、セキュリティ運用チームがセキュリティ&amp;コンプライアンスセンターで脅威を調査して対応するのに役立つ、強力でほぼリアルタイムのツールです。 エクスプローラーは、疑いのあるマルウェアおよびフィッシングに関する情報を、Office 365 の電子メールやファイル、および組織に対する他のセキュリティ上の脅威やリスクと共に表示します。 
 

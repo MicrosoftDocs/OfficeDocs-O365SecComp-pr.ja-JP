@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Microsoft Outlook on the web ユーザーは、組み込みの電子メール報告オプションを使用して、迷惑メール (スパム) とフィッシング詐欺を報告することができます。 また、電子メールが誤って迷惑メール (スパム) として識別されたかどうかを Microsoft に知らせることもできます。
 ms.openlocfilehash: 089792ab8e46f4b200a2d98781cd378c2666c35f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261586"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Outlook on the web で迷惑メールとフィッシング詐欺を報告する 
 

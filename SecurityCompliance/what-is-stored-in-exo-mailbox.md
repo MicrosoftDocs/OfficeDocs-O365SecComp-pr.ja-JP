@@ -16,11 +16,11 @@ ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Office 365 のクラウドベースのアプリによって生成されたデータは、Microsoft クラウド内のユーザーの Exchange Online メールボックスに格納されます。
 ms.openlocfilehash: 6f7a81842df5972a03648a2f93d4bd6fbd738fec
-ms.sourcegitcommit: 7a6c742a81bc8ebd55b5a437e835bcb85485cf99
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31520250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266899"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>Exchange Online メールボックスに格納されているコンテンツ
 
@@ -39,7 +39,7 @@ Exchange Online のメールボックスは、主に、メッセージ、予定�
 |Skype for Business    <br/>  | Skype for business の会話は、ユーザーのメールボックスの [会話履歴] フォルダーに保存されます。 Skype 会議の参加者のメールボックスが訴訟ホールドの対象となっている場合、またはアイテム保持ポリシーに割り当てられている場合、会議に添付されたファイルは参加者のメールボックスに保持されます。         <br/> |
 |Sway     <br/> |  sway は、電子メールメッセージに添付された HTML ファイルとして格納され、sway を作成したユーザーのメールボックス内の隠しフォルダーに格納されます。 PST ファイルの Sway からコンテンツをエクスポートする場合、このデータは、次の GUID で名前が付けられているサブフォルダーの**applicationdataroot**フォルダーに格納されます。 **905fcf2647 eb7-48a0-9ff0-8dcc7194b5ba**。       <br/> |
 |タスク    <br/> |  tasks app 内のタスク (Outlook でアクセス可能なタスク) は、ユーザーのメールボックスに保存されます。       <br/> |
-|チーム    <br/>  |Teams チャネルの一部である会話は、チームに関連付けられているメールボックスに格納されます。 Teams のチャットリスト (「 *1 x N」チャット*とも呼ばれます) に含まれる会話は、チャットに参加しているユーザーのメールボックスに保存されます。 また、Teams チャネルでの会議と通話の概要情報は、会議または通話にダイヤルしたユーザーのメールボックスに保存されます。 <br/> | 
+|Teams    <br/>  |Teams チャネルの一部である会話は、チームに関連付けられているメールボックスに格納されます。 Teams のチャットリスト (「 *1 x N」チャット*とも呼ばれます) に含まれる会話は、チャットに参加しているユーザーのメールボックスに保存されます。 また、Teams チャネルでの会議と通話の概要情報は、会議または通話にダイヤルしたユーザーのメールボックスに保存されます。 <br/> | 
 |To Do  <br/> | to do アプリ** のタスク (to do リストに保存される) は、ユーザーのメールボックスに保存されます。        <br/> |
 ||||
 

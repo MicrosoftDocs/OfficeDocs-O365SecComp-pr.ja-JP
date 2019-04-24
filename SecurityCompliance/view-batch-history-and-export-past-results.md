@@ -1,5 +1,5 @@
 ---
-title: バッチ履歴を表示し以前の Office 365 Advanced eDiscovery の結果をエクスポートする
+title: Office 365 のバッチ履歴を表示して過去の結果をエクスポートする高度な電子情報開示
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: '選択したエクスポートバッチセッションの詳細情報を表示する方法と、Office 365 Advanced eDiscovery で最終エクスポートセッションを取り消す方法について説明します。  '
 ms.openlocfilehash: a55f299669c2a404ee176153aa766210a3141199
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243513"
 ---
-# <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>バッチ履歴を表示し以前の Office 365 Advanced eDiscovery の結果をエクスポートする
+# <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>Office 365 のバッチ履歴を表示して過去の結果をエクスポートする高度な電子情報開示
 
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
@@ -41,11 +41,11 @@ ms.locfileid: "30214947"
     
     ![バッチ履歴のエクスポート](media/04c5b75c-348c-491d-b4fe-716659333890.png)
   
-3. 前のセッションをロールバックする必要がある場合は、[**前回のセッションを元に戻す**] をクリックします。Rollback を複数回実行して、最後のセッションを取り消すことができます。
+3. 前のセッションをロールバックする必要がある場合は、[**前回のセッションを元に戻す**] をクリックします。 Rollback を複数回実行して、最後のセッションを取り消すことができます。
     
 4. 以前に実行したエクスポートバッチセッションからいつでもデータをダウンロードする場合は、エクスポートする![必要のあるエクスポートバッチ](media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif)の横にある [**ダウンロード**] アイコンエクスポートバッチ履歴のダウンロードアイコンをクリックします。 
     
-5. [**共有アクセス署名**] ダイアログボックスが表示されたら、[**クリップボードにコピー** ] をクリックして、エクスポートセッションデータをローカルコンピューターにコピーし、[**閉じる**] をクリックします。Office 365 セキュリティ&amp;コンプライアンスセンターの**電子情報開示エクスポートツール**のダイアログボックスが表示されます。 
+5. [**共有アクセス署名**] ダイアログボックスが表示されたら、[**クリップボードにコピー** ] をクリックして、エクスポートセッションデータをローカルコンピューターにコピーし、[**閉じる**] をクリックします。 Office 365 セキュリティ&amp;コンプライアンスセンターの**電子情報開示エクスポートツール**のダイアログボックスが表示されます。 
     
     ![[電子情報開示のエクスポート] ダイアログボックス](media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   
@@ -55,7 +55,7 @@ ms.locfileid: "30214947"
     
 2. [**参照**] をクリックして、ダウンロードしたエクスポートファイルをローカルコンピューターに保存するためのターゲットの場所を選択します。 
     
-3. [**開始**] をクリックします。エクスポートファイルがローカルコンピューターにダウンロードされます。 
+3. [**開始**] をクリックします。 エクスポートファイルがローカルコンピューターにダウンロードされます。 
     
 ## <a name="see-also"></a>関連項目
 

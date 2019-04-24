@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 description: '概要: Office 365 の管理アクセス制御とデータ分類の概要について説明します。'
 ms.openlocfilehash: 90dd00049e7e3a9b9548530c42b1c21534cfd7fd
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262979"
 ---
 # <a name="administrative-access-controls-in-office-365"></a>Office 365 での管理アクセス制御 
 
-## <a name="introduction"></a>概要
+## <a name="introduction"></a>はじめに
 microsoft は、お客様のコンテンツへの microsoft のアクセスを意図的に制限する一方で、ほとんどの Office 365 操作を自動化するシステムと制御に、多くの投資を行ってきました。 人間がサービスを制御し、ソフトウェアがサービスを運用します。 これにより、microsoft は Office 365 をスケールで管理できるようになり、悪意のある俳優、Microsoft のエンジニアのスピアーフィッシングなど、お客様のコンテンツに対する内部の脅威のリスクを管理することもできます。
 
 既定では、Microsoft のエンジニアには継続的な管理者権限も、Office 365 の顧客コンテンツへのアクセス権もありません。 microsoft のエンジニアは、限られた期間、お客様のコンテンツへのアクセスを制限、監査、およびセキュリティで保護することができます。ただし、サービスの運用に必要な場合のみで、また、microsoft シニアマネージメントのメンバーによって承認された場合にのみ、お客様のロックボックス機能のライセンスが供与されます。

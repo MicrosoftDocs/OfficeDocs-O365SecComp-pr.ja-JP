@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 新しいセキュリティダッシュボードを使用して、Office 365 の脅威保護の状態を確認し、セキュリティの警告を表示して操作します。
 ms.openlocfilehash: 83e75f1a38038f1c95697f4db3e7b1134d03779d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261094"
 ---
 # <a name="security-dashboard"></a>セキュリティダッシュボード
 
@@ -85,7 +85,7 @@ ms.locfileid: "30692756"
 |[ATP](office-365-atp.md)によるブロック |ATP によってブロックされた電子メールメッセージの数が受信者数に乗じる |
 |配信後に削除 |[0 時間の自動削除](zero-hour-auto-purge.md)によって削除されたメッセージの数が、受信者の数で乗算された数 |
 
-## <a name="malware"></a>ウェア
+## <a name="malware"></a>マルウェア
 
 マルウェアウィジェットは、マルウェアの傾向とマルウェアファミリの種類に関する詳細を過去7日間 (7 日間) に表示します。
 
@@ -118,7 +118,7 @@ ms.locfileid: "30692756"
 
 最近の脅威管理通知 widget を表示またはアクセスするには、通知を表示するためのアクセス許可が必要です。 詳細については、「[通知の表示に必要な RBAC アクセス許可](alert-policies.md#rbac-permissions-required-to-view-alerts)」を参照してください。
   
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する](view-email-security-reports.md)
   

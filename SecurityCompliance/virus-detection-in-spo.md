@@ -17,11 +17,11 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 では、ユーザーが SharePoint Online にアップロードするファイルのウイルスが検出されるため、お客様の環境をマルウェアから保護できます。ファイルをアップロードすると、そのファイルがスキャンされてウイルスが検出されます。ファイルで感染が見つかると、プロパティが設定されて、そのファイルをダウンロードしたり、同期したりできなくなります。
 ms.openlocfilehash: d4f18c84935d9c6e1d3f135bbda6c40737956ae7
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266827"
 ---
 # <a name="virus-detection-in-sharepoint-online"></a>SharePoint Online のウイルス検出
 
@@ -32,7 +32,7 @@ Office 365 では、ユーザーが SharePoint Online にアップロードす�
   
 ## <a name="what-happens-when-an-infected-file-is-uploaded-to-sharepoint-online"></a>感染したファイルが SharePoint Online にアップロードされたとき
 
-Office 365 は、一般的なウイルス検出エンジンを使用します。エンジンは SharePoint Online 内で非同期に実行され、アップロード後にファイルをスキャンします。ファイルにウイルスが含まれていることが検出されると、再度ダウンロードできないようにフラグが付けられます。2018年4月に、スキャンされたファイルの 25 MB の制限を削除しました。
+Office 365 では一般的なウイルス検出エンジンが使用されます。 エンジンは SharePoint Online 内で非同期に実行され、アップロード後にファイルをスキャンします。 ファイルでウイルスが見つかると、フラグが設定されて、そのファイルはダウンロードできなくなります。 2018年4月に、スキャンされたファイルの 25 MB の制限を削除しました。
   
 動作は次のとおりです。
   
@@ -50,10 +50,10 @@ SharePoint Online からファイルをダウンロードすることはでき�
   
 1. Web ブラウザーを開き、感染したファイルを SharePoint Online からダウンロードしようとすると、
     
-2. ウイルスが検出されたという警告がユーザーに提示されます。ユーザーには、ファイルをダウンロードして、独自のウイルスソフトウェアを使用して駆除を試行するオプションが与えられます。
+2. ウイルスが検出されたという警告がユーザーに提示されます。 ユーザーには、ファイルをダウンロードして、独自のウイルスソフトウェアを使用して駆除を試行するオプションが与えられます。
 
 > [!NOTE]
-> set-spotenant コマンドレットを**DisallowInfectedFileDownload**パラメーターと共に使用して、ウイルス対策の警告ウィンドウであっても、検出されたファイルをダウンロードできないようにすることができます。「[DisallowInfectedFileDownload] (https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)」を参照してください。
+> set-spotenant コマンドレットを**DisallowInfectedFileDownload**パラメーターと共に使用して、ウイルス対策の警告ウィンドウであっても、検出されたファイルをダウンロードできないようにすることができます。 「[DisallowInfectedFileDownload] (https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)」を参照してください。
     
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>感染したファイルを OneDrive の同期クライアントが同期しようとするとどうなりますか?
 

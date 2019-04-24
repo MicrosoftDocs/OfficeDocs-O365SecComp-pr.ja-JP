@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: セキュリティ & コンプライアンスセンターを使用して、組織内の電子情報開示ケースを作成して管理します。 ケースにメンバーを割り当てたり、コンテンツの場所を保持に配置したり、ケースに関連付けられたコンテンツ検索を実行したり、検索結果をエクスポートしたりすることができます。 また、高度な電子情報開示に関する詳細な分析のためにケースデータを準備することもできます。
 ms.openlocfilehash: 5f31153e70495dc28ee276c36e9edfc67638956e
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257975"
 ---
 # <a name="ediscovery-cases-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターの電子情報開示ケース
 

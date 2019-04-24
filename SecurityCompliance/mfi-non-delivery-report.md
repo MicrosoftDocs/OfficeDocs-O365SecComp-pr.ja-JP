@@ -11,11 +11,11 @@ ms.assetid: ''
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードの配信不能レポートについて学習できます。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 21d9b08330ddb5832600431f0d60179c7a157177
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267151"
 ---
 # <a name="non-delivery-report"></a>配信不能レポート
 

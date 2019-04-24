@@ -13,11 +13,11 @@ ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Office 365、Azure、および Dynamics 365 Online の規制コンプライアンスレポートでは、サードパーティの監査を確認するために、Microsoft がお客様のデータを安全に保持する方法と、これらのオンラインサービスを使用する場合に ISO、HIPAA、NIST、finra、GDPR、および fedramp に準拠する方法を確認します。
 ms.openlocfilehash: ff14f1b88dbde06dbfd17a87bb94c3f32ddff81b
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30647337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254317"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft Service Trust Portal を使い始める
 
@@ -70,9 +70,9 @@ Service Trust Portal には、クラウドサービスおよびお客様のデ�
   
     - 国際標準化機構 (ISO)
     - サービス組織の制御 (SOC)
-    - 米国標準技術局 (NIST)
-    - 連邦リスクおよび承認管理プログラム (fedramp)
-    - 一般的なデータ保護規則 (GDPR)
+    - アメリカ国立標準技術研究所 (NIST)
+    - Federal Risk and Authorization Management Program (FedRAMP)
+    - EU 一般データ保護規則 (GDPR)
 
   監査レポートと、[**監査レポート**] ページへのリンクに関する情報も、サービス信頼ポータルのホームページに表示されます。 
   

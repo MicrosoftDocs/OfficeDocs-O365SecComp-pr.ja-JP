@@ -14,38 +14,46 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2e76203fa8f57f9e228919ec6abb1144f3cb48c5
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: a6240692916d1b38ccbdae272fcd7a9b4292b376
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258736"
 ---
-# <a name="data-investigations-limits"></a>データ調査の制限
+# <a name="data-investigations-preview-limits"></a>データ調査 (プレビュー) の制限
 
-この記事では、データ調査の制限について説明します。
+この記事では、データ調査 (プレビュー) の制限について説明します。
 
-## <a name="investigatino-limits"></a>Investigatino の制限
+## <a name="investigation-limits"></a>調査の制限
 
-## <a name="indexing-limits"></a>インデックス作成の制限
-
-## <a name="search-limits"></a>検索の制限
-
-## <a name="incident-limits"></a>インシデントの制限
-
-次の表は、データ調査でのインシデントの制限を示しています。  1つのファイルの最大数を超えるアイテムは、処理エラーとして表示されます。
+次の表は、データ調査 (プレビュー) における調査の制限を示しています。 
     
   |**制限の説明**|**制限**|
   |:-----|:-----|
-  |インシデントの最大数  <br/> |50  <br/> |
-  |インシデントに取り込まれたできるドキュメントの合計数 (調査中のすべてのインシデントに対して)  <br/> |100 万  <br/> |
-  |ロードあたりの合計ファイルサイズ  <br/> |100 GB  <br/> |
-  |単一ファイルの最大サイズ   <br/> |100 MB  <br/> |
-  |1つのファイルから抽出される最大文字数  <br/> |1000 万  <br/> |
-  |文書内の埋め込みアイテムの深さ  <br/> |まで  <br/> |
-  
+  |調査の最大数。  <br/> |50  <br/> |
+  |調査に追加できるドキュメントの合計数 (調査中のすべての証拠セットに対して)。  <br/> |100 万  <br/> |
+  |ロードあたりのファイルサイズの合計。  <br/> |100 GB  <br/> |
+  |1つのファイルの最大サイズ。   <br/> |100 MB <sup>1</sup> <br/> |
+  |1つのファイルから抽出する最大文字数。  <br/> |1000万<sup>1</sup> <br/> |
+  |1つのファイルに埋め込まれたアイテムの深さ。  <br/> |25 <sup>1</sup> <br/> |
+|||
+> [!NOTE]
+><sup>1</sup> 1 つのファイル制限を超えるアイテムは、処理エラーとして表示されます。
+
+## <a name="indexing-limits"></a>インデックス作成の制限
+
+コンテンツ準備中です。
+
+## <a name="search-limits"></a>検索の制限
+
+コンテンツ準備中です。
 
 ## <a name="export-limits"></a>エクスポートの制限
 
+コンテンツ準備中です。
+
 ## <a name="download-limits"></a>ダウンロードの制限
+
+コンテンツ準備中です。
 

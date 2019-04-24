@@ -1,5 +1,5 @@
 ---
-title: セキュリティ & コンプライアンスセンターのメールフローインサイト
+title: セキュリティ/コンプライアンス センター のメール フロー インサイト
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -11,13 +11,13 @@ ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードについて学習できます。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 4af35fea640c1f4c43464d1adf2e4a9f3b4f780d
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252112"
 ---
-# <a name="mail-flow-insights-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターのメールフローインサイト
+# <a name="mail-flow-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメール フロー インサイト
 
 > [!NOTE]
 > このトピックで説明する機能は、すべての Office 365 組織に展開されていないため、変更される可能性があります。

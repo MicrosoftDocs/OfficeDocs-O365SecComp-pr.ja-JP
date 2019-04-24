@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: acfa0c635b361426542e91a55c8d75c315bfb831
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242805"
 ---
 # <a name="create-a-legal-hold-notice"></a>法的情報保留通知を作成する
 
@@ -45,7 +45,7 @@ ms.locfileid: "30455199"
     
     - **発行責任**者: ドロップダウンリストには、ケースメンバーの一覧が表示されます。 保管担当者に送信される各通知は、指定された発行責任者の代理として送信されます。
 
-4. [**次へ**] をクリックします。
+4. **[次へ]** をクリックします。
 
 ## <a name="step-2-define-the-portal-content"></a>手順 2: ポータルコンテンツを定義する
 
@@ -59,7 +59,7 @@ ms.locfileid: "30455199"
 
 2. 通知に差し込み変数を挿入して、通知をカスタマイズし、保管担当者コンプライアンスポータルを共有します。
 
-3. [**次へ**] をクリックします。
+3. **[次へ]** をクリックします。
 
   >[!Tip]
   >ポータルコンテンツのコンテンツと形式をカスタマイズする方法の詳細については、「 [Use the Communications Editor](using-communications-editor.md)」を参照してください。
@@ -100,7 +100,7 @@ ms.locfileid: "30455199"
    
 4. 保管担当者に提供するコンテンツまたは追加の手順を指定します (必須)。 手順2で定義したポータルコンテンツが再発行通知の最後に追加されることに注意してください。
    
-5. [**保存**] をクリックします。
+5. **[保存]** をクリックします。
 
 >[!Note]
 >保留通知が変更されると、その通知に割り当てられたすべての保管担当者に対して、再発行の通知が自動的に送信されます。 通知が送信されると、保管担当者は保留通知を再認識するように求められます。 通知またはエスカレーションワークフローを設定している場合は、それらも再起動されます。 

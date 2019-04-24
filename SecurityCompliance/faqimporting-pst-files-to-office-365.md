@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: '管理者にとってよく寄せられる質問。 office 365 インポートサービスを使用して、組織の PST ファイルを office 365 メールボックスにインポートする方法について説明します。 '
 ms.openlocfilehash: 69767353a574336351b01fdc42a9c6117c5c31ed
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255435"
 ---
 # <a name="faq-about-importing-pst-files-to-office-365"></a>Office 365 への PST ファイルのインポートに関するよくあるご質問
 

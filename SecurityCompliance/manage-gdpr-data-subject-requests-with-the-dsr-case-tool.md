@@ -16,11 +16,11 @@ ms.collection:
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: GDPR は、個人データに対して、特定の権限を (データの対象と呼ばれる) EU 市民に提供します。これらの権限には、そのファイルのコピーの取得、変更の要求、ファイルの処理の制限、削除、または電子形式での受信などが含まれます。 個人データに対してアクションを実行するデータ主体による正式な要求は、データ主体要求または DSR と呼ばれます。 Office 365 および Microsoft 365 のコンプライアンスセンターで dsr ケースを使用して、組織の dsr 調査を管理することができます。
 ms.openlocfilehash: a131da86350fc288c1c9af371d28464230b742d6
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259907"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターで DSR ケースツールを使用して GDPR データ主体要求を管理する
 
@@ -297,7 +297,7 @@ myanalytics と Office ローミングサービスからのデータは、デー
   
 myanalytics および Office ローミングサービスからデータをエクスポートすると、データは、データ主体の電子メールアドレスを持つ名前のフォルダーの下にある、 **applicationdataroot**フォルダーにあるアプリケーションごとに個別のフォルダーに保存されます。 このデータは JSON ファイルとしてエクスポートされます。これは、電子メールメッセージに添付された XML または TXT ファイルに似た、人間が判読できるテキストファイルです。 現在、これらのフォルダーには、myanalytics と Office ローミングサービスに割り当てられているグローバル一意識別子 (GUID) が付けられ、次の表に記載されています。 DSR ケースツールの今後のバージョンでは、GUID が実際のアプリケーションの名前に置き換えられます。 
   
-|**Application**|**GUID/フォルダー名**|
+|**アプリケーション**|**GUID/フォルダー名**|
 |:-----|:-----|
 |MyAnalytics  <br/> |3c896ded-22c5-450f-91f6-3d1ef0848f6e  <br/> |
 |Office ローミングサービス  <br/> |1caee58f-eb14-4a6b-9339-1fe2ddf6692b  <br/> |

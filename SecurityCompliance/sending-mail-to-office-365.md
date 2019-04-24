@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: これらの記事は、外部の送信者が自身の評価や Office 365 のユーザーにメールを送信する能力を高めるために役立ちます。また、Office 365 ユーザーでない場合であっても、迷惑メールとフィッシング行為を報告する方法に関する情報も提供します。
 ms.openlocfilehash: c3f9b6e383b604985a125d270a46c0b0211e7071
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260915"
 ---
 # <a name="sending-mail-to-office-365"></a>Office 365 へのメール送信
 

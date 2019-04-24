@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: ユーザーが office 365 で特定の操作を実行したときに office 365 が電子メール通知を送信できるように、セキュリティ/コンプライアンスセンターでアクティビティアラートを追加して管理します。
 ms.openlocfilehash: d71763d4633c3396afdf58400e9cb7b8b8a468e8
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258683"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>Office 365 でアクティビティ通知を作成する
 
@@ -56,9 +56,9 @@ ms.locfileid: "31813988"
   
 4. アクティビティアラートを作成するには、以下のフィールドに入力します。
     
-    a: **name** -通知の名前を入力します。 アラート名は、組織内で一意である必要があります。
+    a. **name** -通知の名前を入力します。 アラート名は、組織内で一意である必要があります。
     
-    b: **説明**(オプション)-追跡するアクティビティとユーザー、電子メール通知の送信先ユーザーなど、アラートを説明します。 説明では、他の管理者に通知する目的をすばやく簡単に説明します。
+    b. **説明**(オプション)-追跡するアクティビティとユーザー、電子メール通知の送信先ユーザーなど、アラートを説明します。 説明では、他の管理者に通知する目的をすばやく簡単に説明します。
     
     c. **警告の種類**-**カスタム**オプションが選択されていることを確認します。 
 

@@ -12,13 +12,13 @@ search.appverid:
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理者は、Office 365 のコネクタを使用したメッセージ配信に関連付けられているエラーコード (メールフローインテリジェンスとも呼ばれます) について学ぶことができます。
 ms.openlocfilehash: d9ddfdf7c54c8dc709c3d5ae03d9fbd76a153f7e
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252502"
 ---
-# <a name="mail-flow-intelligence-in-office-365"></a>Office 365 のメール フローのインテリジェンス
+# <a name="mail-flow-intelligence-in-office-365"></a>Office 365 でのメール フロー インテリジェンス
 
 通常は、コネクタを使用して、Office 365 組織からオンプレミスの電子メール環境に電子メールメッセージをルーティングします。 また、Office 365 からパートナーの組織へメッセージをルーティングするためにコネクタを使用することもあります。 Office 365 がコネクタ経由でこれらのメッセージを配信することができない場合、それらのメッセージは Office 365 でキューに入れられます。 Office 365 は、48 時間にわたって各メッセージの配信を再試行し続けます。 48 時間後、キュー内のメッセージは失効し、配信不能レポート (NDR、またはバウンス メッセージとも呼ばれます) 内で元の送信者にそのメッセージが返されます。
 

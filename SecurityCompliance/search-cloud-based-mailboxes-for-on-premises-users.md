@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Exchange ハイブリッド展開のオンプレミスのユーザーについて、microsoft teams のチャットデータ (1xn チャット) を検索してエクスポートするには、Security & コンプライアンスセンターのコンテンツ検索ツールを使用します。
 ms.openlocfilehash: 0c68023fdd4e1c9e06596937247270861cdbd2b3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261009"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Office 365 でオンプレミスのユーザーのクラウドベースのメールボックスを検索する
 
@@ -36,7 +36,7 @@ ms.locfileid: "31000010"
     
  **注:** Teams チャネルの会話は、チームに関連付けられたクラウドベースのメールボックスに常に格納されます。 これは、コンテンツ検索を使用して、サポート要求をファイルしなくてもチャネル会話を検索できることを意味します。 Teams チャネル会話の検索の詳細については、「 [Microsoft teams および Office 365 グループの検索](content-search.md#searching-microsoft-teams-and-office-365-groups)」を参照してください。
   
-## <a name="how-it-works"></a>しくみ
+## <a name="how-it-works"></a>メカニズム
 
 microsoft Teams が有効なユーザーがオンプレミスのメールボックスを持ち、そのユーザーアカウントまたは id がクラウドに同期されている場合、microsoft は、1xn Teams のチャットデータを格納するためのクラウドベースのメールボックスを作成します。 Teams のチャットデータは、クラウドベースのメールボックスに格納された後、検索用にインデックスが付けられます。 これにより、コンテンツ検索 (および電子情報開示ケースに関連付けられた検索) を使用して、オンプレミスユーザーの Teams チャットデータの検索、プレビュー、エクスポートを行うことができます。 また、Security & コンプライアンスセンターの PowerShell で** \*new-compliancesearch**コマンドレットを使用して、オンプレミスユーザーの Teams チャットデータを検索することもできます。 
   

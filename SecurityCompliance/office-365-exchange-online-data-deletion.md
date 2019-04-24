@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Exchange Online でのソフトおよびハードデータの削除の処理方法。
 ms.openlocfilehash: 977beb41469e0015e22aea6750cfd657d9ee3b39
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262689"
 ---
 # <a name="exchange-online-data-deletion-in-office-365"></a>Office 365 での Exchange Online データの削除
 Exchange Online では、次の2種類の削除があります。ソフト削除とハード削除です。 これは、メールボックス内のメールボックスとアイテムの両方に適用されます。

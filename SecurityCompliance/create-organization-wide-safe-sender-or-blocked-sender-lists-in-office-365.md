@@ -1,5 +1,5 @@
 ---
-title: Office 365 で組織全体の信頼できる差出人またはブロックする差出人の一覧を作成する
+title: Office 365 で組織全体の信頼できる差出人またはブロックする差出人のリストを作成する
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 特定の送信者からのメールを確実に受信できるようにする場合は、Exchange 管理センターでスパムフィルターポリシーの許可リストを調整できます。このようなメッセージを受信します。
 ms.openlocfilehash: 765660ba8c0c9ab384368a0f0c4cd194e4ff2bc6
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258175"
 ---
-# <a name="create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365"></a>Office 365 で組織全体の信頼できる差出人またはブロックする差出人の一覧を作成する
+# <a name="create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365"></a>Office 365 で組織全体の信頼できる差出人またはブロックする差出人のリストを作成する
   
 特定の送信者とそのメッセージを信頼しているため、その送信者からのメールを確実に受信したい場合は、Exchange 管理センター (EAC) の **[保護]** \> **[スパム フィルター]** で開くスパム フィルター ポリシーで許可リストを調整できます。 この内容の詳細については、「 [スパム フィルター ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。 別のオプションとして、Exchange メールフロールール (トランスポートルールとも呼ばれます) を作成します。これは、スパムフィルターのドメインまたはユーザーベースの許可一覧のように機能します。 同様の方法でも、特定のドメインまたはユーザーからの送信メッセージをブロックすることができます。
   
