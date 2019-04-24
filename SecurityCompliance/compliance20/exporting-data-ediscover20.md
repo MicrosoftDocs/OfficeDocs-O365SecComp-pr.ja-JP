@@ -14,21 +14,23 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: efdadd2769bf2b812d3642184fc7fd4ae1cbc8c2
-ms.sourcegitcommit: 9f38ba72eba0b656e507860ca228726e4199f7ec
+ms.openlocfilehash: 0798cb66729b215a50b21a29494183f7eed5d1d6
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30475687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256175"
 ---
-# <a name="export-case-data-in-advanced-ediscovery-preview"></a><span data-ttu-id="f7906-102">高度な電子情報開示でケースデータをエクスポートする (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="f7906-102">Export case data in Advanced eDiscovery (Preview)</span></span>
+# <a name="export-case-data-in-advanced-ediscovery-preview"></a><span data-ttu-id="bb585-102">高度な電子情報開示でケースデータをエクスポートする (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="bb585-102">Export case data in Advanced eDiscovery (Preview)</span></span>
 
-<span data-ttu-id="f7906-103">エクスポートは、テナントからエクスポートされるものを完全に把握するために、作業セット内で実行されます。</span><span class="sxs-lookup"><span data-stu-id="f7906-103">Exporting is accomplished within a working set in order to provide full visibility into what is being exported from a tenant.</span></span> <span data-ttu-id="f7906-104">コンテンツをエクスポートするには、次の3つの別個の方法があります。</span><span class="sxs-lookup"><span data-stu-id="f7906-104">There are three separate methods to export content:</span></span>
+<span data-ttu-id="bb585-103">作業セットからデータをエクスポートするには、次の3つの方法があります。</span><span class="sxs-lookup"><span data-stu-id="bb585-103">There are three ways to export data from a working set:</span></span>
 
-<span data-ttu-id="f7906-105">ダウンロード–ユーザーはブラウザーを使用して、一連の小さなネイティブファイルをダウンロードできます。</span><span class="sxs-lookup"><span data-stu-id="f7906-105">Download – allows a user to download a small set of native files via the browser.</span></span>
+<span data-ttu-id="bb585-104">**ダウンロード**–一連の小さなネイティブファイルを (ブラウザーを使用して) ダウンロードするために使用します。</span><span class="sxs-lookup"><span data-stu-id="bb585-104">**Download** – Use to download (by using a browser) a small set of native files.</span></span> <span data-ttu-id="bb585-105">このことは、データの小さなセットをエクスポートするのが最も簡単です。</span><span class="sxs-lookup"><span data-stu-id="bb585-105">This is the quickest was to export a small set of data.</span></span>
 
-<span data-ttu-id="f7906-106">export –がファイルおよびテキストファイルに格納されたメタデータファイルを含む、追加のコンテンツを含めるようにエクスポートをカスタマイズします。</span><span class="sxs-lookup"><span data-stu-id="f7906-106">Export – customize export to include additional content including a metadata file, burned in redacted files and text files.</span></span>
+<span data-ttu-id="bb585-106">**エクスポート**: メタデータファイル、ネイティブファイル、テキストファイル、および PDF ファイルに保存されているがドキュメントのエクスポートなど、エクスポートされるデータをカスタマイズするために使用します。</span><span class="sxs-lookup"><span data-stu-id="bb585-106">**Export** – Use to customize what data is exported, including the export of metadata files, native files, text files, and redacted documents that have been saved to a PDF file.</span></span> <span data-ttu-id="bb585-107">エクスポートされたデータを Azure の保存場所にアップロードした後、ローカルコンピューターにダウンロードする必要があります。</span><span class="sxs-lookup"><span data-stu-id="bb585-107">After exported data is uploaded Azure storage location, you have to download it to a local computer.</span></span> <span data-ttu-id="bb585-108">詳細については、次のトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="bb585-108">For more information, see:</span></span> 
 
-<span data-ttu-id="f7906-107">作業セット–ユーザーが1つの作業セットから別の作業セットにコンテンツをエクスポートできるようにします。</span><span class="sxs-lookup"><span data-stu-id="f7906-107">Working Set – allows a user to export content from one working set to another working set.</span></span>
+   - [<span data-ttu-id="bb585-109">ワーキング セットからドキュメントをエクスポートする</span><span class="sxs-lookup"><span data-stu-id="bb585-109">Export documents from a working set</span></span>](export-documents-from-working-set.md)
 
-<span data-ttu-id="f7906-108">エクスポートが完了すると、コンテンツは Microsoft Azure blob に配置されます。</span><span class="sxs-lookup"><span data-stu-id="f7906-108">Once export is complete, the content is placed in a Microsoft Azure blob.</span></span> <span data-ttu-id="f7906-109">[エクスポート] タブの情報を使用して、コンテンツにアクセスできます。詳細については\[、「エクスポートジョブをダウンロードするためのリンク」を参照してください。\]</span><span class="sxs-lookup"><span data-stu-id="f7906-109">The content can be reached by using the information in the Exports tab. For more information, see \[link to download export jobs\]</span></span>
+   - [<span data-ttu-id="bb585-110">エクスポート ジョブのダウンロード</span><span class="sxs-lookup"><span data-stu-id="bb585-110">Download export jobs</span></span>](download-export-jobs.md)
+
+<span data-ttu-id="bb585-111">**別の作業セットに追加**-1 つの作業セットから別の作業セットにデータをコピーするために使用します。</span><span class="sxs-lookup"><span data-stu-id="bb585-111">**Add to another working set** – Use to copy data from one working set to a different working set.</span></span> <span data-ttu-id="bb585-112">詳細については、「 [1 つの作業セットから別の作業セットにデータを追加する](add-data-to-working-set-from-another-working-set.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bb585-112">For more information, see [Add data from one working set to another working set](add-data-to-working-set-from-another-working-set.md).</span></span> 

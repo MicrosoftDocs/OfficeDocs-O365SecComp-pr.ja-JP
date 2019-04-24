@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: d6557c76cc5f913856025833020c3e9918c979a8
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260845"
 ---
-# <a name="export-documents-from-an-incident"></a><span data-ttu-id="65fcd-102">インシデントからドキュメントをエクスポートする</span><span class="sxs-lookup"><span data-stu-id="65fcd-102">Export documents from an incident</span></span>
+# <a name="export-documents-from-an-incident"></a><span data-ttu-id="27497-102">インシデントからドキュメントをエクスポートする</span><span class="sxs-lookup"><span data-stu-id="27497-102">Export documents from an incident</span></span>
 
-<span data-ttu-id="65fcd-103">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="65fcd-103">Content coming soon.</span></span>
+<span data-ttu-id="27497-103">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="27497-103">Content coming soon.</span></span>

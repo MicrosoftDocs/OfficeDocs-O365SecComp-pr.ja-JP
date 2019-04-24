@@ -1,5 +1,5 @@
 ---
-title: 読み込みセットの管理
+title: ロード セットの管理
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 28336f633967ce61ef2cb00b45170e34d600f839
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30294990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241009"
 ---
-# <a name="manage-load-sets"></a><span data-ttu-id="2b6f0-102">読み込みセットの管理</span><span class="sxs-lookup"><span data-stu-id="2b6f0-102">Manage load sets</span></span>
+# <a name="manage-load-sets"></a><span data-ttu-id="731b1-102">ロード セットの管理</span><span class="sxs-lookup"><span data-stu-id="731b1-102">Manage load sets</span></span>
 
-<span data-ttu-id="2b6f0-103">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="2b6f0-103">Content coming soon.</span></span>
+<span data-ttu-id="731b1-103">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="731b1-103">Content coming soon.</span></span>

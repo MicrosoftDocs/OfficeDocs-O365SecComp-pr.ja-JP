@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: ab437eda6731181deb783146e4df23f437279444
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30297080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242750"
 ---
-# <a name="configure-case-settings-in-advanced-ediscovery-preview"></a><span data-ttu-id="2346d-102">高度な電子情報開示でケース設定を構成する (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="2346d-102">Configure case settings in Advanced eDiscovery (Preview)</span></span>
+# <a name="configure-case-settings-in-advanced-ediscovery-preview"></a><span data-ttu-id="33cf7-102">高度な電子情報開示でケース設定を構成する (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="33cf7-102">Configure case settings in Advanced eDiscovery (Preview)</span></span>
 
-<span data-ttu-id="2346d-103">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="2346d-103">Content coming soon.</span></span>
+<span data-ttu-id="33cf7-103">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="33cf7-103">Content coming soon.</span></span>
