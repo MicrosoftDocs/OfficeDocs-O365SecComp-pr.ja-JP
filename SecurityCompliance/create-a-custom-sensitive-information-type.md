@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: セキュリティ/コンプライアンス センターのグラフィカル ユーザー インターフェイスで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする方法について説明します。
 ms.openlocfilehash: de7bbc8ee624fe9468dc64a9811db31d529984bf
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258309"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>カスタムの機密情報の種類を作成する
 

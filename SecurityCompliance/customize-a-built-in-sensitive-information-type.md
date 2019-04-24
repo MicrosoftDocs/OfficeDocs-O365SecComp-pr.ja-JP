@@ -3,7 +3,7 @@ title: 組み込みの機密情報の種類をカスタマイズする
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/25/2018
+ms.date: 04/03/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツから機密情報を探すときには、ルールと呼ばれるものの中にその情報を記述する必要があります。データ損失防止 (DLP) には、すぐに利用できる最も一般的な機密情報の種類を表すルールが含まれています。これらのルールを使用するには、それらをポリシーの中に組み込む必要があります。これらの組み込みのルールを組織の特定のニーズに合わせて調整する必要がある場合は、カスタムの機密情報の種類を作成することができます。このトピックでは、クレジット カード情報である可能性のある情報をより幅広い範囲で検出できるように、既存のルール コレクションが入っている XML ファイルをカスタマイズする方法について説明します。
-ms.openlocfilehash: 0acf10e52707c164c93fe442de287b08b3cf6804
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: a4e9a6e981889bd2be19451127fc96b351b4b00f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258145"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>組み込みの機密情報の種類をカスタマイズする
 
@@ -29,7 +29,7 @@ ms.locfileid: "30999610"
   
 ## <a name="export-the-xml-file-of-the-current-rules"></a>現在のルールの XML ファイルをエクスポートする
 
-XML をエクスポートするには、[リモート PowerShell を介してセキュリティ/コンプライアンス センターに接続する](https://go.microsoft.com/fwlink/?linkid=799771)必要があります。
+XML をエクスポートするには、[リモート PowerShell を介してセキュリティ/コンプライアンス センターに接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)必要があります。
   
 1. PowerShell で次のように入力すると、組織のルールが画面上に表示されます。まだ独自のルールを作成していない場合は、"Microsoft Rule Package" というラベルの付いた既定の組み込みルールだけが表示されます。
     

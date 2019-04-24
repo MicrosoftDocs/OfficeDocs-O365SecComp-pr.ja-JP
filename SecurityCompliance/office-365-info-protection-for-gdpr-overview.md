@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: GDPR のための Office 365 の情報保護の概要を確認します。個人データを検出、分類、保護、監視する方法について説明します。
 ms.openlocfilehash: 5f10b8c19a2a0d3fe5ace8bcfe8cf6f64c30308f
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262740"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>GDPR のための Office 365 の情報保護の概要
 

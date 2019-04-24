@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Office 365 で誤検知が発生しないようにして、正しいメールが迷惑メールにならないようにする方法について説明します。
 ms.openlocfilehash: ecce497269030945457344122a9a218105369be2
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261239"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Office 365 でメールが迷惑メールとしてマークされるのを防ぐ方法
 

@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: Office 365 セキュリティ&amp;コンプライアンス センターのラベル アクティビティ エクスプローラーを使用すると、過去 30 日間の SharePoint および OneDrive for Business のすべてコンテンツのラベル アクティビティをすばやく検索して表示することができます。リアルタイム データが表示され、テナントで生じている事柄を明確に把握できます。
 ms.openlocfilehash: 55888ff2ef8118389a88955a8f4e047170606524
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267341"
 ---
 # <a name="view-label-activity-for-documents"></a>ドキュメントのラベル アクティビティを表示する
 

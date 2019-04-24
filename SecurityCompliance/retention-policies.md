@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: アイテム保持ポリシーでは、コンテンツを保持するか、コンテンツを削除するか、またはコンテンツを保持した後で削除するかを事前に決定できます。さらに、1 つのポリシーを組織全体に適用するか、特定の場所やユーザーにのみ適用するか、すべてのコンテンツにポリシーを適用するか、特定の条件を満たしているコンテンツにのみポリシーを適用するかも事前に決定できます。
 ms.openlocfilehash: 55680f16e92d33c2cbf612b6aabae1f51778f93a
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265171"
 ---
 # <a name="overview-of-retention-policies"></a>アイテム保持ポリシーの概要
 

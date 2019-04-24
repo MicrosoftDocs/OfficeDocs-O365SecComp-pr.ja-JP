@@ -17,11 +17,11 @@ ms.custom: TopSMBIssues
 localization_priority: Priority
 description: この記事では、Office 365 で、偽造された送信者ドメイン (スプーフィングされたドメイン) を使用するフィッシング攻撃を軽減する方法について説明します。 これは、メッセージを分析して、標準の電子メール認証の方法や、その他の送信者評価の手法を使用して認証できないメッセージをブロックすることで実現します。 今回の変更は、Office 365 の組織が対象になるフィッシング攻撃の数を減らすために実装されました。
 ms.openlocfilehash: 533444d323728d2f238da409256f6547a5c8d209
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252860"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 でのスプーフィング対策保護
 

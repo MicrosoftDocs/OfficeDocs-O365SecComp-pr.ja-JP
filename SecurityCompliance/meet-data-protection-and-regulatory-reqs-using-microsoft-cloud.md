@@ -1,7 +1,7 @@
 ---
 title: Microsoft クラウド サービスの利用時に、コンプライアンス マネージャーを使用してデータ保護と規制の要件を満たす
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Microsoft Service Trust Portal のコンプライアンス マネージャーでは、コントロールの追跡、実装、管理を行えるツールが用意されています。それらのツールは、Office 365 や Microsoft Azure などの Microsoft クラウド サービスを扱う際に、組織がセキュリティおよびデータ保護に関する業界標準 (GDPR、ISO 27001 および 27018、HIPAA など) に準拠するのに役立ちます。コンプライアンス マネージャーは、組織のデータ保護とプライバシー対策を講じる担当者が、コンプライアンスとリスク評価のプロセスを管理するのに役立ちます。
-ms.openlocfilehash: bd61920967cfeacbefc09d1347203565617af5a1
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: 4f1806b72b2f4fdbf98ffea66b22e39eab03f101
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32268249"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Microsoft クラウド サービスの利用時に、コンプライアンス マネージャーを使用してデータ保護と規制の要件を満たす
 

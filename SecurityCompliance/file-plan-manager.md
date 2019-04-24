@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイル計画マネージャーは、保持ラベルおよびポリシーのための高度な管理機能を提供します。作成に始まり、コラボレーション、レコード宣言、保持、そして廃棄に至るまでのコンテンツのライフ サイクル全体におけるラベルとコンテンツのラベリングを網羅する統合的な機能を提供します。
 ms.openlocfilehash: f104e5ea0046af1e8cdee39b1e7dc5f47524e707
-ms.sourcegitcommit: d9f695650e26e4125b00b6281717b4d5b63fc401
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31824436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256099"
 ---
 # <a name="overview-of-file-plan-manager"></a>ファイル計画マネージャーの概要
 

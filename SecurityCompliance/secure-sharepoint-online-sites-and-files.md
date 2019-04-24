@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: '概要: SharePoint Online および Office 365 内のファイルを保護するために推奨されている構成を取り上げます。'
 ms.openlocfilehash: 5dd9866096f4fea4fbb578e39f6b017f5cc898a2
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265423"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>SharePoint Online サイトとファイルをセキュリティで保護する
 
@@ -115,7 +115,7 @@ Azure Active Directory で推奨される条件付きアクセス ポリシー�
   
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-||**ベースライン保護 1** <br/> |**ベースラン保護 2** <br/> |**機密の保護** <br/> |**非常に機密性の高い社外秘** <br/> |
+||**ベースライン保護 1** <br/> |**基準の保護 #2** <br/> |**機密の保護** <br/> |**非常に機密性の高い社外秘** <br/> |
 |説明  <br/> |組織内ではアクセスや共同作業が自由。  <br/> |グループ外で共有が許可されている、プライベート サイトとグループ。  <br/> |アクセス レベルが特定のグループのメンバーシップによって定義されている、独立したサイト。共有はサイトのメンバーにのみ許可されます。組織外にファイルを送信しようとすると、DLP はユーザーに警告します。  <br/> |独立したサイトと、Azure Information Protection によるファイルの暗号化とアクセス許可。DLP はユーザーがファイルを組織の外部に送信できないようにします。  <br/> |
 |プライベート サイトまたはパブリック チーム サイト  <br/> |パブリック  <br/> |プライベート  <br/> |プライベート  <br/> |プライベート  <br/> |
 |誰にアクセス権が与えられるか  <br/> |B2B のユーザーとゲスト ユーザーを含む、組織の全員。  <br/> |サイトのメンバーのみ。他のユーザーは、アクセス権を要求できます。  <br/> |サイトのメンバーのみ。他のユーザーは、アクセス権を要求できます。  <br/> |メンバーのみ。他のユーザーは、アクセス権を要求できません。  <br/> |

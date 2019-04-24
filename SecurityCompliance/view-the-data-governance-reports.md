@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: Office 365 セキュリティ&amp;コンプライアンス センターのデータ ガバナンス レポートを使用すると、意図したとおりにラベルがコンテンツに適用されているかどうかを簡単に確認できます。
 ms.openlocfilehash: 5374b54c87aaf79f70be733d626171b196639725
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266990"
 ---
 # <a name="view-the-data-governance-reports"></a>データ ガバナンスのレポートを表示する
 

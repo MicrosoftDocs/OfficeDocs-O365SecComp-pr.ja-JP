@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: 個人データの漏えいの監視に使用できる 3 つのツールについて説明します。
 ms.openlocfilehash: d9b48589ace06186d5f177d1b90f02f8657637bd
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263277"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>個人情報の漏えいを監視する
 

@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: 保持ラベルと機密ラベルを作成した後に、テナント全体でどのように使用されているかを確認することができます。 Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのラベル分析で、どのラベルが最もよく使われているか、どこで適用されているかを簡単に確認できます。
 ms.openlocfilehash: d0289eb79dca04262ef61d58a8e622ae6d7cbe93
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30994873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254574"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>ラベル分析によるラベル使用状況の表示
 

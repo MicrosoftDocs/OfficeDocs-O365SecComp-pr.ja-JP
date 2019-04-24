@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: '概要: 情報保護のレベルが多様な SharePoint Online チーム サイトには、保持ラベルとデータ損失防止 (DLP) ポリシーを適用してください。'
 ms.openlocfilehash: 81173e96ce6e67ee3b513abce4424686abe79e02
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261666"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>保持ラベルと DLP による SharePoint Online ファイルの保護
 

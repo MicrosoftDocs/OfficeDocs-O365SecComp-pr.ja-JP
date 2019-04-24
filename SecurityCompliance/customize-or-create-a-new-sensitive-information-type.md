@@ -19,11 +19,11 @@ ms.custom: ''
 ms.assetid: ''
 description: GDPR のための Office 365 の機密情報の種類を変更または新規作成する方法について説明します。
 ms.openlocfilehash: 6810a6b6d9b0ea34ab11cc778c32a76d556d7a17
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258785"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>機密情報の種類をカスタマイズまたは新規作成する
 
