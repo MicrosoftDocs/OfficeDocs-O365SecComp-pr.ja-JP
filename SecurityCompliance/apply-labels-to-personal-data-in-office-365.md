@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Office のラベルを GDPR 保護計画の一部として使用する方法について説明します。
-ms.openlocfilehash: 32f94e02dac81abaef46ef5495701e5037ff8c6b
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: a5ffcca94ea98a3d6426dc60fae0f6cb98d0029d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244169"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Office 365 の個人データにラベルを適用する
 
@@ -34,7 +34,7 @@ Office 365 で個人用データを保護するためにラベルを使用して
 
 現在、Cloud App Security は保持ラベルをサポートしていません。ただし、Office 365 の機密情報を Cloud App Security と併用して、別の SaaS アプリにある個人データを監視することはできます。
 
-[機密ラベル](sensitivity-labels.md)は現在、オンプレミスのファイル、その他のクラウド サービスのファイル、プロバイダーにラベルを適用する場合に推奨されています。 また、営業秘密ファイルなどのデータ保護用の Azure Information Protection (AIP) 暗号化を必要とする Office 365 のファイルにも推奨されます。
+[機密ラベル](sensitivity-labels.md)は現在、オンプレミスのファイル、その他のクラウド サービスのファイル、プロバイダーにラベルを適用する場合に推奨されています。 また、営業秘密ファイルなどのデータ保護用の Azure Information Protection 暗号化を必要とする Office 365 のファイルにも推奨されます。
 
 現時点では、GDPR の対象となるデータを含む Office 365 のファイルに対して Azure Information Protection を使用して暗号化を適用することは、推奨されていません。 現在、Office 365 サービスでは AIP で暗号化されたファイルへの読み取りはできません。 そのため、サービスでこれらのファイル内の機密データを検索することはできません。
 

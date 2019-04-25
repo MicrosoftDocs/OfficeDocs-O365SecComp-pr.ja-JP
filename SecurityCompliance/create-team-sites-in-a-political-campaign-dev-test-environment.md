@@ -16,12 +16,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: '概要: 選挙運動用の開発/テスト環境で、パブリック、プライベート、機密、および高機密の SharePoint Online チーム サイトを作成します。'
-ms.openlocfilehash: 7e28034955a54fe7c2013dcaaf606c24c4089e75
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 29220c83eb207d58586b39d101e7139dc6ddf94a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259185"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>選挙運動用の開発/テスト環境でチーム サイトを作成する
 
@@ -37,7 +37,7 @@ ms.locfileid: "30216267"
 
 このフェーズでは、SharePoint Online チーム サイトのドキュメント フォルダーに対してさまざまなセキュリティ レベルのラベルを作成します。
   
-1. 必要に応じて、Office 365 ポータルに、試用版サブスクリプション用の全体管理者アカウントの資格情報でサインインします。ヘルプについては、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. 必要に応じて、試用版サブスクリプション用の全体管理者アカウントの資格情報で管理センターにサインインします。 詳細については、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
 2. **[Microsoft Office Home]** タブで、**[管理者]** タイルをクリックします。
     
@@ -83,9 +83,9 @@ ms.locfileid: "30216267"
   
 ### <a name="campaign-wide-team-site"></a>キャンペーン全体のチーム サイト
 
-ベースラインのパブリック SharePoint Online チーム サイトを作成するには、次の操作を実行します。
+ベースラインのパブリック SharePoint Online チーム サイトを作成するには、次の操作を行います。
   
-1. 必要な場合は、ローカル コンピューターのブラウザーを使用して、全体管理者アカウントで Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) にサインインします。
+1. 必要に応じて、ローカル コンピューターのブラウザーを使用し、全体管理者アカウントで管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) にサインインします。
     
 2. タイルのリストで、**[SharePoint]** をクリックします。
     
@@ -115,7 +115,7 @@ ms.locfileid: "30216267"
 
 キャンペーン内のプロジェクト用にベースラインのプライベート SharePoint Online チーム サイトを作成するには、次の操作を実行します。
   
-1. 必要な場合は、ローカル コンピューターのブラウザーを使用して、全体管理者アカウントで Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) にサインインします。
+1. 必要に応じて、ローカル コンピューターのブラウザーを使用し、全体管理者アカウントで管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) にサインインします。
     
 2. タイルのリストで、**[SharePoint]** をクリックします。
     
@@ -145,7 +145,7 @@ ms.locfileid: "30216267"
 
 キャンペーン マーケティング リソース用の機密レベルの分離した SharePoint Online チーム サイトを作成するには、次の操作を実行します。
   
-1. ローカル コンピューターのブラウザーを使用して、全体管理者アカウントで Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) にサインインします。
+1. ローカル コンピューターのブラウザーを使用し、全体管理者アカウントで管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) にサインインします。
     
 2. タイルのリストで、**[SharePoint]** をクリックします。
     
@@ -235,11 +235,11 @@ ms.locfileid: "30216267"
     
 11. **[保護するコンテンツの種類を選択する]** ウィンドウで、 **[保存]** をクリックします。
     
-12. **[Customize the types of sensitive info you want to protect]\(保護する機密情報の種類のカスタマイズ\)** ウィンドウで、**[次へ]** をクリックします。
+12. **保護する機密情報の種類のカスタマイズ** ウィンドウで、**[次へ]** をクリックします。
     
-13. **[What do you want to do if we detect sensitive info?]\(機密情報が検出された場合の処理\)** ウィンドウで、**[Customize the tip and email]\(ヒントと電子メールをカスタマイズする)** をクリックします。
+13. **機密情報が検出された場合の処理** ウィンドウで、**ヒントと電子メールをカスタマイズする** をクリックします。
     
-14. **[Customize policy tips and email notifications]\(ポリシー ヒントと電子メール通知のカスタマイズ\)** ウィンドウで、**[Customize the policy tip text]\(ポリシー ヒントのテキストをカスタマイズする\)** をクリックします。
+14. **ポリシー ヒントと電子メール通知のカスタマイズ** ウィンドウで、**ポリシー ヒントのテキストをカスタマイズする** をクリックします。
     
 15. 次の内容をテキスト ボックスに入力するか、貼り付けます。
     
@@ -257,7 +257,7 @@ ms.locfileid: "30216267"
 
 キャンペーン戦略リソース用に機密性の高いレベルで分離された SharePoint Online チーム サイトを作成するには、次の操作を実行します。
   
-1. 必要な場合は、ローカル コンピューターのブラウザーを使用して、全体管理者アカウントで Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) にサインインします。
+1. 必要に応じて、ローカル コンピューターのブラウザーを使用し、全体管理者アカウントで管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) にサインインします。
     
 2. タイルのリストで、**[SharePoint]** をクリックします。
     
@@ -322,7 +322,7 @@ ms.locfileid: "30216267"
     
 次に、高機密ラベルの付いた SharePoint Online チーム サイト上のドキュメントをユーザーが組織の外部と共有するのをブロックする DLP ポリシーを構成します。この PLD は、キャンペーン戦略サイトのリソースに適用します。
   
-1. 必要に応じて、ローカル コンピューターのブラウザーを使用して、セキュリティ管理者または会社管理者のロールのアカウントで、Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) にサインインします。
+1. 必要に応じて、ローカル コンピューターのブラウザーを使用して、セキュリティ管理者または会社管理者の役割のアカウントで、管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) にサインインします。
     
 2. ブラウザーの **[Microsoft Office Home]** タブで、**[セキュリティとコンプライアンス]** タイルをクリックします。
     
@@ -346,11 +346,11 @@ ms.locfileid: "30216267"
     
 12. **[保護するコンテンツの種類を選択する]** ウィンドウで、 **[保存]** をクリックします。
     
-13. **[Customize the types of sensitive info you want to protect]\(保護する機密情報の種類のカスタマイズ\)** ウィンドウで、**[次へ]** をクリックします。
+13. **保護する機密情報の種類のカスタマイズ** ウィンドウで、**[次へ]** をクリックします。
     
-14. **[What do you want to do if we detect sensitive info?]\(機密情報が検出された場合の処理\)** ウィンドウで、**[Customize the tip and email]\(ヒントと電子メールをカスタマイズする)** をクリックします。
+14. **機密情報が検出された場合の処理** ウィンドウで、**ヒントと電子メールをカスタマイズする** をクリックします。
     
-15. **[Customize policy tips and email notifications]\(ポリシー ヒントと電子メール通知のカスタマイズ\)** ウィンドウで、**[Customize the policy tip text]\(ポリシー ヒントのテキストをカスタマイズする\)** をクリックします。
+15. **ポリシー ヒントと電子メール通知のカスタマイズ** ウィンドウで、**ポリシー ヒントのテキストをカスタマイズする** をクリックします。
     
 16. 次の内容をテキスト ボックスに入力するか、貼り付けます。
     
@@ -362,13 +362,13 @@ ms.locfileid: "30216267"
     
 19. **[ポリシーを有効にしますか、または最初にテストしますか?]** ウィンドウで、 **[すぐ有効にします]** をクリックし、 **[次へ]** をクリックします。
     
-20. **[設定の確認]** ウィンドウで、**[作成]** をクリックして、**[閉じる]** をクリックします。
+20. **[設定の確認]** ウィンドウで、 **[作成]** をクリックしてから **[閉じる]** をクリックします。
     
-「[Office 365 管理センターから Azure Rights Management をアクティブ化する方法](https://docs.microsoft.com/information-protection/deploy-use/activate-office365)」にある指示に従います。
+「[Microsoft 365 管理センターから Azure Rights Management をアクティブ化する方法](https://docs.microsoft.com/information-protection/deploy-use/activate-office365)」にある指示に従います。
   
 次に、以下の手順に従い、保護とアクセス許可用の新しいスコープ付きポリシーとサブラベルを使用して、Azure Information Protection を構成します。
   
-1. セキュリティ管理者または会社管理者のロールのアカウントを使用して、Office 365 ポータルにサインインします。ヘルプを表示するには、「[Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. セキュリティ管理者または会社管理者のロールのアカウントを使用して、管理センターにサインインします。 詳細については、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
 2. ブラウザーで別のタブを開き、Azure portal ([https://portal.azure.com](https://portal.azure.com)) に移動します。
     
@@ -412,7 +412,7 @@ ms.locfileid: "30216267"
   
 これで、この 4 つのサイトでドキュメントの作成を開始し、さまざまなユーザー アカウントを使用してサイトへのアクセスをテストする準備が整いました。 
   
-Azure Information Protection とこの新しいラベルでドキュメントを保護するには、テスト マシンに [Azure Information Protection クライアントをインストール](https://docs.microsoft.com/information-protection/rms-client/install-client-app)して、Office 365 ポータルから Office をインストールしてから、試用版サブスクリプションの **[戦略的シニア スタッフ]** グループのアカウントを使用して Microsoft Word からサインインする必要があります。
+Azure Information Protection とこの新しいラベルでドキュメントを保護するには、テスト マシンに [Azure Information Protection クライアントをインストール](https://docs.microsoft.com/information-protection/rms-client/install-client-app)し、管理センターから Office をインストールしてから、試用版サブスクリプションの **[戦略的シニア スタッフ]** グループのアカウントを使用して Microsoft Word からサインインする必要があります。
   
 ## <a name="see-also"></a>関連項目
 

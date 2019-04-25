@@ -3,7 +3,7 @@ title: Office 365 のコンテンツを検索する
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/4/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: セキュリティ & コンプライアンスセンターのコンテンツ検索電子情報開示ツールを使用して、Exchange メールボックス、SharePoint サイトと OneDrive の場所にあるドキュメント、および Skype for business でのインスタントメッセージングの会話をすばやく見つけることができます。
-ms.openlocfilehash: fc0bea90ce9cbfc27f894985c7d3083756ab108a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3e8e0594cac700fe37ee7a4a6c889dbf862cd0fb
+ms.sourcegitcommit: 3509e324952aee703f3ced5b950dd53cb5f974ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261355"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33248302"
 ---
 # <a name="search-for-content-in-office-365"></a>Office 365 のコンテンツを検索する
 
@@ -42,7 +42,10 @@ ms.locfileid: "32261355"
     
 - 複数の検索のためにクエリとコンテンツの場所を[一括編集](bulk-edit-content-searches.md)する 
     
+- コンテンツ[検索を再試行](retry-failed-content-search.md)してコンテンツの場所のエラーを解決する
+
 - [Bcc の受信者を保持](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members)して検索できるようにする 
+
 
 ## <a name="perform-actions-on-content-you-find"></a>検索したコンテンツに対してアクションを実行する
 
