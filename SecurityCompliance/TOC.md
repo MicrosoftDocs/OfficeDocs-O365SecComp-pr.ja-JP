@@ -254,7 +254,7 @@
 ### [コンテンツの検索を使用してサード パーティのデータを検索する](use-content-search-to-search-third-party-data-that-was-imported.md)
 ### [電子情報開示ワークフローにおけるコンテンツ検索の使用](use-content-search-in-ediscovery.md)
 ### [コンテンツ検索のクエリでエラーを確認する](check-your-content-search-query-for-errors.md)
-### [コンテンツ検索用に BCC の受信者を保持する](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members)
+### [コンテンツ検索用に BCC の受信者を保持する](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 ## コンテンツ検索について理解する
 ### [コンテンツ検索の制限](limits-for-content-search.md)
 ### [コンテンツ検索で部分的にインデックスが作成されたアイテム](partially-indexed-items-in-content-search.md)
@@ -286,6 +286,7 @@
 ### [保留中のクラウド ベースのメールボックスの [回復可能なアイテム] フォルダーのアイテムを削除する](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
 ### [保留中のメールボックスの [回復可能なアイテム] のクォータを増やす](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
 ### [Exchange Online メールボックスに適用されている保留の種類を特定する方法](identify-a-hold-on-an-exchange-online-mailbox.md)
+### [Bccと拡張配布グループの受信者を保持する](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 
 ## [Microsoft 365 の Advanced eDiscovery (プレビュー)](compliance20/overview-ediscovery-20.md)
 ### [リリース ノート](compliance20/release-notes-ediscovery20.md)
@@ -314,13 +315,14 @@
 #### [検索の統計](compliance20/search-statistics.md)
 #### [検索結果をワーキング セットに追加する](compliance20/add-data-to-working-set.md)
 
+### [ワーキング セットの管理](compliance20/managing-working-sets.md)
+#### [ワーキング セットに Office 365 以外のデータを読み込む](compliance20/load-non-office365-data.md)
+#### [データを別のワーキング セットに追加する](compliance20/add-data-to-working-set-from-another-working-set.md)
+#### [読み込みセットの管理](compliance20/manage-load-sets.md)
+
 ### [ケース データを確認する](compliance20/reviewing-data-in-working-set.md)
 #### [ワーキング セット内のドキュメントを表示する](compliance20/view-documents-in-working-set.md)
 #### [ワーキング セット内のデータのクエリ](compliance20/working-set-search.md)
-#### [ワーキング セットの管理](compliance20/managing-working-sets.md)
-#### [データを別のワーキング セットに追加する](compliance20/add-data-to-working-set-from-another-working-set.md)
-#### [読み込みセットの管理](compliance20/manage-load-sets.md)
-#### [ワーキング セットに Office 365 以外のデータを読み込む](compliance20/load-non-office365-data.md)
 #### [ワーキング セット内のドキュメントにタグ付けする](compliance20/tagging-documents.md)
 
 ### [ケース データを分析する](compliance20/analyzing-data-in-working-set.md)
@@ -579,7 +581,6 @@
 ### [Office 365 でのメールフロー インテリジェンス](mail-flow-intelligence-in-office-365.md)
 ## メールボックスの保留
 ### [訴訟ホールドを作成する](create-a-litigation-hold.md)
-### [電子情報開示のために BCC および展開された配布グループの受信者を保持する](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 ### [削除済みメールボックス (回復可能) にインプレース ホールドを適用する](put-an-in-place-hold-on-a-soft-deleted-mailbox.md)
 ## [検疫](quarantine.md)
 ### [管理者として検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-an-administrator.md)
