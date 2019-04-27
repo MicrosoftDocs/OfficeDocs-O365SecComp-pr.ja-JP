@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) ポリシーを使用すると、office 365 全体で機密情報を識別、監視、および自動保護することができます。
-ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fedb48c20720a7eaa66cd0ea7d2184dd3dc4df55
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262215"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33362055"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>データ損失防止ポリシーの概要
 
@@ -70,7 +70,7 @@ DLP ポリシーにはいくつかの基本的な内容が含まれます。
   
 ![図は、DLP ポリシーに場所とルールが含まれていることを示しています。](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
-### <a name="locations"></a>位置
+### <a name="locations"></a>場所
 
 DLP ポリシーは、Exchange online、SharePoint Online、OneDrive for business、または Microsoft Teams に情報があるかどうかにかかわらず、Office 365 全体の機密情報を検索して保護することができます。 Exchange 電子メール、Microsoft Teams のチャットおよびチャネル、すべての SharePoint または OneDrive ライブラリのコンテンツを保護するか、ポリシーの特定の場所を選択するかを選択できます。
   
@@ -478,11 +478,7 @@ Office での DLP ポリシーの評価は、プログラムのパフォーマ�
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Microsoft Teams でのポリシー評価
  
-場所として Microsoft Teams を含む DLP ポリシーを作成すると、Office 365 セキュリティ&amp;コンプライアンスセンターからユーザーアカウントおよび Microsoft teams のチャネルとチャットにポリシーが同期されます。 DLP ポリシーの構成方法によっては、Microsoft Teams のチャットやチャネルで機密情報を共有しようとすると、メッセージをブロックまたは取り消すことができます。 また、機密情報が含まれていて、ゲスト (外部ユーザー) と共有されているドキュメントは、それらのユーザーに対しては開きません。
-
-たとえば、他のユーザーが Teams のチャットまたはチャネル内の機密情報を外部ユーザーと共有しようとしたとします。 これを防ぐために定義された DLP ポリシーがあるとします。 保護を適用すると、外部ユーザーに送信される機密情報を含むメッセージが削除されます。 これは数秒で行われ、DLP ポリシーの構成方法に従って自動的に発生します。
-
-ポリシーヒントは、メッセージがブロックされた、または取り消された理由について送信者に通知します。 たとえば、送信者には、すべてのユーザーとの共有が許可されていない個人情報 (pii) が含まれていることや、pii を含むドキュメントを組織外のユーザーと共有できないことが通知されることがあります。 送信者は、DLP ポリシーに準拠するようにメッセージを編集できます。
+場所として Microsoft Teams を含む DLP ポリシーを作成すると、Office 365 セキュリティ&amp;コンプライアンスセンターからユーザーアカウントおよび Microsoft teams のチャネルとチャットにポリシーが同期されます。 DLP ポリシーの構成方法によっては、Microsoft Teams のチャットやチャネルで機密情報を共有しようとすると、メッセージをブロックまたは取り消すことができます。 また、機密情報が含まれていて、ゲスト (外部ユーザー) と共有されているドキュメントは、それらのユーザーに対しては開きません。 詳細については、「[データ損失防止と Microsoft Teams](dlp-microsoft-teams.md)」を参照してください。
  
 ## <a name="permissions"></a>アクセス許可
 

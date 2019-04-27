@@ -3,7 +3,7 @@ title: セキュリティ/コンプライアンス センターと Exchange 管�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/4/2017
+ms.date: 04/19/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: セキュリティ & コンプライアンスセンターの dlp が、Exchange 管理センターの dlp およびメールフロールール (トランスポートルール) とどのように連動するかについて説明します。
-ms.openlocfilehash: 66dceb447e02eb01810997c23644c76f68795844
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: efe8fb733417275a259a472db3444b8f6cad1f92
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254932"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33362035"
 ---
 # <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>セキュリティ/コンプライアンス センターと Exchange 管理センターでの DLP の動作
 
 Office 365 では、2つの異なる管理センターでデータ損失防止 (DLP) ポリシーを作成できます。
   
-- **セキュリティ & コンプライアンスセンター**では、SharePoint、OneDrive、および Exchange のコンテンツを保護するための単一の DLP ポリシーを作成できます。 可能な場合は、ここで DLP ポリシーを作成することをお勧めします。 詳細については、「 [Security & コンプライアンスセンターの DLP](data-loss-prevention-policies.md)」を参照してください。
+- **セキュリティ & コンプライアンスセンター**では、SharePoint、OneDrive、Exchange、および Microsoft Teams のコンテンツを保護するための単一の DLP ポリシーを作成できます。 可能な場合は、ここで DLP ポリシーを作成することをお勧めします。 詳細については、「 [Security & コンプライアンスセンターの DLP](data-loss-prevention-policies.md)」を参照してください。
     
 - **exchange 管理センター**では、exchange でのみコンテンツを保護できる DLP ポリシーを作成できます。 このポリシーでは、Exchange メールフロールール (トランスポートルールとも呼ばれます) を使用できるので、電子メールの処理に関するその他のオプションがあります。 詳細については、「 [Exchange 管理センターでの DLP](https://go.microsoft.com/fwlink/?linkid=852311)」を参照してください。
     
