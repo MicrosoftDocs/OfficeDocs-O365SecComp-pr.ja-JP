@@ -41,7 +41,7 @@
 | 2019/3/19 | [上級電子情報開示のリリースノート (プレビュー)](/Office365/SecurityCompliance/compliance20/release-notes-ediscovery20) | 更新日時 |
 | 2019/3/19 | [組織用に監督ポリシーを構成する](/Office365/SecurityCompliance/configure-supervision-policies) | 更新日時 |
 | 2019/3/19 | [セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する](/Office365/SecurityCompliance/view-email-security-reports) | 更新日時 |
-| 2019/3/19 | [クイックスタート: Office 365 Advanced Threat Protection のセットアップ](/Office365/SecurityCompliance/checklist-atp-setup) | 追加 |
+| 2019/3/19 | [クイックスタート: Office 365 Advanced Threat Protection のセットアップ](/Office365/SecurityCompliance/checklist-atp-setup) | 追加済み |
 | 2019/3/19 | [Office 365 でのスプーフィング対策保護](/Office365/SecurityCompliance/anti-spoofing-protection) | 更新日時 |
 | 2019/3/19 | [Office 365 ATP for SharePoint、OneDrive、Microsoft Teams](/Office365/SecurityCompliance/atp-for-spo-odb-and-teams) | 更新日時 |
 | 2019/3/19 | [Office 365 の攻撃シミュレータ](/Office365/SecurityCompliance/attack-simulator) | 更新日時 |
@@ -161,22 +161,22 @@
 | 2019/3/20 | [組織用に監督ポリシーを構成する](/Office365/SecurityCompliance/configure-supervision-policies) | 更新日時 |
 | 2019/3/20 | [キーワード辞書を作成する](/Office365/SecurityCompliance/create-a-keyword-dictionary) | 更新日時 |
 | 2019/3/20 | [Office 365 の監督ポリシー](/Office365/SecurityCompliance/supervision-policies) | 更新日時 |
-| 2019/3/20 | [セキュリティとコンプライアンス センターのメッセージ追跡の分析情報](/Office365/SecurityCompliance/mail-flow-insights-v2) | 追加 |
+| 2019/3/20 | [セキュリティとコンプライアンス センターのメッセージ追跡の分析情報](/Office365/SecurityCompliance/mail-flow-insights-v2) | 追加済み |
 | 2019/3/20 | [自動転送済みメッセージレポート](/Office365/SecurityCompliance/mfi-auto-forwarded-messages-report) | 更新日時 |
-| 2019/3/20 | [トップドメインメールフローのステータスの洞察](/Office365/SecurityCompliance/mfi-domain-mail-flow-status-insight) | 追加 |
-| 2019/3/20 | [メールフローマップレポート](/Office365/SecurityCompliance/mfi-mail-flow-map-report) | 追加 |
+| 2019/3/20 | [トップドメインメールフローのステータスの洞察](/Office365/SecurityCompliance/mfi-domain-mail-flow-status-insight) | 追加済み |
+| 2019/3/20 | [メールフローマップレポート](/Office365/SecurityCompliance/mfi-mail-flow-map-report) | 追加済み |
 | 2019/3/20 | [メールループの分析情報](/Office365/SecurityCompliance/mfi-mail-loop-insight) | 更新日時 |
-| 2019/3/20 | [承認されていないドメインレポート](/Office365/SecurityCompliance/mfi-non-accepted-domain-report) | 追加 |
-| 2019/3/20 | [配信不能レポート](/Office365/SecurityCompliance/mfi-non-delivery-report) | 追加 |
+| 2019/3/20 | [承認されていないドメインレポート](/Office365/SecurityCompliance/mfi-non-accepted-domain-report) | 追加済み |
+| 2019/3/20 | [配信不能レポート](/Office365/SecurityCompliance/mfi-non-delivery-report) | 追加済み |
 | 2019/3/20 | [送信と受信のメール フロー](/Office365/SecurityCompliance/mfi-outbound-and-inbound-mail-flow) | 更新日時 |
 | 2019/3/20 | [キューのアラートとキュー](/Office365/SecurityCompliance/mfi-queue-alerts-and-queues) | 更新日時 |
-| 2019/3/20 | [送信者ドメインの洞察を修正する](/Office365/SecurityCompliance/mfi-sender-domain-insight) | 追加 |
+| 2019/3/20 | [送信者ドメインの洞察を修正する](/Office365/SecurityCompliance/mfi-sender-domain-insight) | 追加済み |
 | 2019/3/20 | [低速メール フローのルールの分析情報](/Office365/SecurityCompliance/mfi-slow-mail-flow-rules-insight) | 更新日時 |
 | 2019/3/20 | [SMTP 認証クライアントレポート](/Office365/SecurityCompliance/mfi-smtp-auth-clients-report) | 追加 |
-| 2019/3/21 | [Office 365 の脅威インテリジェンスによる自動化された調査と応答 (AIR)](/Office365/SecurityCompliance/automated-investigation-response-office) | 追加 |
+| 2019/3/21 | [Office 365 の脅威インテリジェンスによる自動化された調査と応答 (AIR)](/Office365/SecurityCompliance/automated-investigation-response-office) | 追加済み |
 | 2019/3/21 | [配信された悪意のある電子メールを検索して調査する (Office 365 の脅威の調査と応答](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | 更新日時 |
-| 2019/3/21 | [Office 365 の脅威の調査と対応](/Office365/SecurityCompliance/office-365-ti) | 更新日時 |
-| 2019/3/21 | [脅威エクスプローラーのビュー](/Office365/SecurityCompliance/threat-explorer-views) | 追加 |
+| 2019/3/21 | [Office 365 脅威の調査および対応](/Office365/SecurityCompliance/office-365-ti) | 更新日時 |
+| 2019/3/21 | [脅威エクスプローラーのビュー](/Office365/SecurityCompliance/threat-explorer-views) | 追加済み |
 | 2019/3/21 | [セキュリティ&amp; /コンプライアンスセンターで脅威エクスプローラーを使用する](/Office365/SecurityCompliance/use-explorer-in-security-and-compliance) | 更新日時 |
 | 2019/3/21 | [機密ラベルでの暗号化を使用してコンテンツへのアクセスを制限する](/Office365/SecurityCompliance/encryption-sensitivity-labels) | 更新日時 |
 | 2019/3/21 | [機密ラベルの概要](/Office365/SecurityCompliance/sensitivity-labels) | 更新日時 |
@@ -213,10 +213,10 @@
 | 2019/3/25 | [Permissions in the Office 365 Security &amp; Compliance Center](/Office365/SecurityCompliance/permissions-in-the-security-and-compliance-center) | 更新日時 |
 | 2019/3/25 | [Office 365 の個人データにラベルを適用する](/Office365/SecurityCompliance/apply-labels-to-personal-data-in-office-365) | 更新日時 |
 | 2019/3/25 | [個人データの分類スキーマを設計する](/Office365/SecurityCompliance/architect-a-classification-schema-for-personal-data) | 更新日時 |
-| 3/26/2019 | [すべての新しい Microsoft 365 コンプライアンスセンターへようこそ](/Office365/SecurityCompliance/microsoft-365-compliance-center) | 追加 |
+| 3/26/2019 | [すべての新しい Microsoft 365 コンプライアンスセンターへようこそ](/Office365/SecurityCompliance/microsoft-365-compliance-center) | 追加済み |
 | 3/26/2019 | [Office 365 での電子情報開示調査のためにコンプライアンスの境界を設定する](/Office365/SecurityCompliance/set-up-compliance-boundaries) | 更新日時 |
 | 3/26/2019 | [Office 365 ATP の安全なリンクの警告ページ](/Office365/SecurityCompliance/atp-safe-links-warning-pages) | 更新日時 |
-| 3/26/2019 | [Office 365 の ATP の安全なリンク](/Office365/SecurityCompliance/atp-safe-links) | 更新日時 |
+| 3/26/2019 | [Office 365 ATP の安全なリンク](/Office365/SecurityCompliance/atp-safe-links) | 更新日時 |
 | 3/26/2019 | [Office 365 の攻撃シミュレータ](/Office365/SecurityCompliance/attack-simulator) | 更新日時 |
 | 3/26/2019 | [外部連絡先を Exchange Online に一括インポートする](/Office365/SecurityCompliance/bulk-import-external-contacts) | 更新日時 |
 | 3/26/2019 | [Microsoft 365 でデータ流出インシデントを管理する](/Office365/SecurityCompliance/compliance20/manage-data-spillage-incidents) | 更新日時 |
@@ -238,10 +238,10 @@
 | 3/26/2019 | [ドキュメント フィンガープリンティング](/Office365/SecurityCompliance/document-fingerprinting) | 更新日時 |
 | 3/26/2019 | [イベント ベースの保持の概要](/Office365/SecurityCompliance/event-driven-retention) | 更新日時 |
 | 3/26/2019 | [組織用に監督ポリシーを構成する](/Office365/SecurityCompliance/configure-supervision-policies) | 更新日時 |
-| 3/26/2019 | メールが赤のフラグが設定されている場合のポリシーと保護の組み合わせ | 追加 |
+| 3/26/2019 | メールが赤のフラグが設定されている場合のポリシーと保護の組み合わせ | 追加済み |
 | 3/26/2019 | [Office 365 の監督ポリシー](/Office365/SecurityCompliance/supervision-policies) | 更新日時 |
 | 3/26/2019 | [Office 365 のコンテンツ検索を使用した対象コレクション](/Office365/SecurityCompliance/use-content-search-for-targeted-collections) | 更新日時 |
-| 3/26/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ](/Office365/SecurityCompliance/ciso-workshop) | 追加 |
+| 3/26/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ](/Office365/SecurityCompliance/ciso-workshop) | 追加済み |
 | 3/26/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ](/Office365/SecurityCompliance/ciso-workshop) | 更新日時 |
 | 3/26/2019 | [Office 365 のコンテンツ検索](/Office365/SecurityCompliance/content-search) | 更新日時 |
 | 3/26/2019 | [Office 365 の非アクティブなメールボックスを削除する](/Office365/SecurityCompliance/delete-an-inactive-mailbox) | 更新日時 |
@@ -588,7 +588,7 @@
 | 4/4/2019 | [新しい Office 365 Message Encryption 機能を設定する](/Office365/SecurityCompliance/set-up-new-message-encryption-capabilities) | 更新日時 |
 | 4/4/2019 | [ゼロアワー自動消去 - スパムやマルウェアからの保護](/Office365/SecurityCompliance/zero-hour-auto-purge) | 更新日時 |
 | 4/5/2019 | [バックスキャター メッセージと EOP](/Office365/SecurityCompliance/backscatter-messages-and-eop) | 更新日時 |
-| 4/5/2019 | [Exchange Online メールボックスに格納されているコンテンツ](/Office365/SecurityCompliance/what-is-stored-in-exo-mailbox) | 追加 |
+| 4/5/2019 | [Exchange Online メールボックスに格納されているコンテンツ](/Office365/SecurityCompliance/what-is-stored-in-exo-mailbox) | 追加済み |
 
 
 ## <a name="week-of-april-08-2019"></a>2019 年 4 月 8 日の週
@@ -605,7 +605,7 @@
 | 4/9/2019 | [保持ラベルと DLP により SharePoint Online ファイルを保護する](/Office365/SecurityCompliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp) | 更新日時 |
 | 4/9/2019 | [SharePoint Online サイトとファイルをセキュリティで保護する](/Office365/SecurityCompliance/secure-sharepoint-online-sites-and-files) | 更新日時 |
 | 4/9/2019 | [開発/テスト環境の SharePoint Online サイトをセキュリティで保護する](/Office365/SecurityCompliance/secure-sharepoint-online-sites-in-a-dev-test-environment) | 更新日時 |
-| 2019 年 4 月 10 日 | [1つの作業セットから別の作業セットにデータを追加する](/Office365/SecurityCompliance/compliance20/add-data-to-working-set-from-another-working-set) | 追加 |
+| 2019 年 4 月 10 日 | [1つの作業セットから別の作業セットにデータを追加する](/Office365/SecurityCompliance/compliance20/add-data-to-working-set-from-another-working-set) | 追加済み |
 | 2019 年 4 月 10 日 | [Advanced eDiscovery のドキュメントメタデータフィールド (プレビュー)](/Office365/SecurityCompliance/compliance20/document-metadata-fields) | 更新日時 |
 | 2019 年 4 月 10 日 | [高度な電子情報開示 (プレビュー) の制限](/Office365/SecurityCompliance/compliance20/limits-ediscovery20) | 更新日時 |
 | 2019 年 4 月 10 日 | [Advanced eDiscovery でジョブを管理する (プレビュー)](/Office365/SecurityCompliance/compliance20/managing-jobs-ediscovery20) | 更新日時 |
@@ -656,7 +656,7 @@
 | 4/12/2019 | [Office 365 Message Encryption](/Office365/SecurityCompliance/ome) | 更新日時 |
 
 
-## <a name="week-of-april-15-2019"></a>2019年4月15日の週
+## <a name="week-of-april-15-2019"></a>2019 年 4 月 15 日の週
 
 
 | 公開日 |トピックのタイトル | 変更 |
@@ -696,12 +696,12 @@
 | 4/16/2019 | [ネットワーク アップロードを使用して、RMS で暗号化された PST ファイルを Office 365 にインポートする](/Office365/SecurityCompliance/use-network-upload-to-import-rms-encrypted-pst-files) | 更新日時 |
 | 4/16/2019 | [共有を監査して外部ユーザーと共有されているリソースを見つける](/Office365/SecurityCompliance/use-sharing-auditing) | 更新日時 |
 | 4/16/2019 | [セキュリティ/コンプライアンスセンターのアラートポリシー](/Office365/SecurityCompliance/alert-policies) | 更新日時 |
-| 4/16/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ-モジュール1– Microsoft Cybersecurity ブリーフィング](/Office365/SecurityCompliance/ciso-workshop-module-1) | 追加 |
-| 4/16/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ-モジュール 2-セキュリティ管理](/Office365/SecurityCompliance/ciso-workshop-module-2) | 追加 |
-| 4/16/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ-モジュール 3-id およびアクセス管理](/Office365/SecurityCompliance/ciso-workshop-module-3) | 追加 |
-| 4/16/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ-モジュール4a –脅威保護戦略](/Office365/SecurityCompliance/ciso-workshop-module-4a) | 追加 |
-| 4/16/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ-モジュール4b –脅威保護戦略](/Office365/SecurityCompliance/ciso-workshop-module-4b) | 追加 |
-| 4/16/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ-モジュール5–情報保護](/Office365/SecurityCompliance/ciso-workshop-module-5) | 追加 |
+| 4/16/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ-モジュール1– Microsoft Cybersecurity ブリーフィング](/Office365/SecurityCompliance/ciso-workshop-module-1) | 追加済み |
+| 4/16/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ-モジュール 2-セキュリティ管理](/Office365/SecurityCompliance/ciso-workshop-module-2) | 追加済み |
+| 4/16/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ-モジュール 3-id およびアクセス管理](/Office365/SecurityCompliance/ciso-workshop-module-3) | 追加済み |
+| 4/16/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ-モジュール4a –脅威保護戦略](/Office365/SecurityCompliance/ciso-workshop-module-4a) | 追加済み |
+| 4/16/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ-モジュール4b –脅威保護戦略](/Office365/SecurityCompliance/ciso-workshop-module-4b) | 追加済み |
+| 4/16/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ-モジュール5–情報保護](/Office365/SecurityCompliance/ciso-workshop-module-5) | 追加済み |
 | 4/16/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ](/Office365/SecurityCompliance/ciso-workshop) | 更新日時 |
 | 4/16/2019 | [高度な電子情報開示でケースデータをエクスポートする (プレビュー)](/Office365/SecurityCompliance/compliance20/exporting-data-ediscover20) | 更新日時 |
 | 4/16/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ-モジュール1– Microsoft Cybersecurity ブリーフィング](/Office365/SecurityCompliance/ciso-workshop-module-1) | 更新日時 |
@@ -710,17 +710,17 @@
 | 4/16/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ-モジュール4a –脅威保護戦略](/Office365/SecurityCompliance/ciso-workshop-module-4a) | 更新日時 |
 | 4/16/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ-モジュール4b –脅威保護戦略](/Office365/SecurityCompliance/ciso-workshop-module-4b) | 更新日時 |
 | 4/16/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ-モジュール5–情報保護](/Office365/SecurityCompliance/ciso-workshop-module-5) | 更新日時 |
-| 4/17/2019 | [組織用に監督ポリシーを構成する](/Office365/SecurityCompliance/configure-supervision-policies) | 更新日時 |
-| 4/17/2019 | [Office 365 の監督ポリシー](/Office365/SecurityCompliance/supervision-policies) | 更新日時 |
-| 4/17/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ、モジュール 1: Microsoft Cybersecurity ブリーフィング](/Office365/SecurityCompliance/ciso-workshop-module-1) | 更新日時 |
-| 4/17/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ、モジュール 2: セキュリティ管理](/Office365/SecurityCompliance/ciso-workshop-module-2) | 更新日時 |
-| 4/17/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ、モジュール 3: id、およびアクセス管理](/Office365/SecurityCompliance/ciso-workshop-module-3) | 更新日時 |
-| 4/17/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ、モジュール 4a: 脅威保護戦略](/Office365/SecurityCompliance/ciso-workshop-module-4a) | 更新日時 |
-| 4/17/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ、モジュール 4b: 脅威保護戦略](/Office365/SecurityCompliance/ciso-workshop-module-4b) | 更新日時 |
-| 4/17/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ、モジュール 5: 情報保護](/Office365/SecurityCompliance/ciso-workshop-module-5) | 更新日時 |
-| 4/17/2019 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ](/Office365/SecurityCompliance/ciso-workshop) | 更新日時 |
-| 4/17/2019 | [Office 365 での特権アクセス管理の構成](/Office365/SecurityCompliance/privileged-access-management-configuration) | 更新日時 |
-| 4/17/2019 | [Office 365 での特権アクセス管理](/Office365/SecurityCompliance/privileged-access-management-overview) | 更新日時 |
+| 2019/4/17 | [組織用に監督ポリシーを構成する](/Office365/SecurityCompliance/configure-supervision-policies) | 更新日時 |
+| 2019/4/17 | [Office 365 の監督ポリシー](/Office365/SecurityCompliance/supervision-policies) | 更新日時 |
+| 2019/4/17 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ、モジュール 1: Microsoft Cybersecurity ブリーフィング](/Office365/SecurityCompliance/ciso-workshop-module-1) | 更新日時 |
+| 2019/4/17 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ、モジュール 2: セキュリティ管理](/Office365/SecurityCompliance/ciso-workshop-module-2) | 更新日時 |
+| 2019/4/17 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ、モジュール 3: id、およびアクセス管理](/Office365/SecurityCompliance/ciso-workshop-module-3) | 更新日時 |
+| 2019/4/17 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ、モジュール 4a: 脅威保護戦略](/Office365/SecurityCompliance/ciso-workshop-module-4a) | 更新日時 |
+| 2019/4/17 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ、モジュール 4b: 脅威保護戦略](/Office365/SecurityCompliance/ciso-workshop-module-4b) | 更新日時 |
+| 2019/4/17 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ、モジュール 5: 情報保護](/Office365/SecurityCompliance/ciso-workshop-module-5) | 更新日時 |
+| 2019/4/17 | [チーフ情報セキュリティ責任者 (ciso) ワークショップ](/Office365/SecurityCompliance/ciso-workshop) | 更新日時 |
+| 2019/4/17 | [Office 365 での特権アクセス管理の構成](/Office365/SecurityCompliance/privileged-access-management-configuration) | 更新日時 |
+| 2019/4/17 | [Office 365 での特権アクセス管理](/Office365/SecurityCompliance/privileged-access-management-overview) | 更新日時 |
 | 4/18/2019 | [セキュリティ強化のために、Office 365 テナントを構成する](/Office365/SecurityCompliance/tenant-wide-setup-for-increased-security) | 更新日時 |
 | 4/18/2019 | [組織用に監督ポリシーを構成する](/Office365/SecurityCompliance/configure-supervision-policies) | 更新日時 |
 | 4/18/2019 | [Office 365 の監督ポリシー](/Office365/SecurityCompliance/supervision-policies) | 更新日時 |

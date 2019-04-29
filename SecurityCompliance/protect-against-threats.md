@@ -14,12 +14,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: この記事をガイドとして使用して、今すぐ脅威保護機能を構成します。
-ms.openlocfilehash: 065071999130f209d63bcafc09ad72daceceac04
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 646ec220bf4649472d4ab885824010bc32ea862c
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261635"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402985"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Office 365 で脅威から保護する
 
@@ -30,14 +30,19 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 ## <a name="requirements"></a>要件
 
-### <a name="licenses"></a>ライセンス
+### <a name="subscriptions"></a>サブスクリプション
 
-脅威保護機能は、すべての Office 365 サブスクリプションに含まれています。ただし、一部のサブスクリプションには、Office 365 advanced Threat Protection などの高度な機能が含まれています。 この記事では、各保護エリアのサブスクリプション要件を示します。
+脅威保護機能は、すべての Office 365 サブスクリプションに含まれています。ただし、一部のサブスクリプションには、より高度な機能が含まれています。 次の表に、この記事に含まれる保護機能を最小限のサブスクリプション要件と共に示します。<br/>
 
-脅威保護機能と subsriptions の詳細については、以下のリソースを参照してください。
-- [Office 365 Advanced Threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
-- [Exchange Online Protection サービスの説明](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
-- [Office 365 セキュリティ/コンプライアンス センター](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
+|保護の種類  |サブスクリプションの要件  |
+|---------|---------|
+|マルウェア対策保護    | [Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)EOP        |
+|電子メールおよび Office ドキュメント内の悪意のある url やファイルからの保護    | [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)        |
+|フィッシング対策保護    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)      |
+|高度なフィッシング対策保護    | [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)   |
+|スパム対策保護     | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)       |
+|ゼロ時間自動削除 (電子メール用)    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)EOP        |
+|監査ログ (これはレポートのために使用されます)    | [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)        |
 
 ### <a name="roles-and-permissions"></a>ロールと権限
 
@@ -51,9 +56,9 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-## <a name="part-1---anti-malware"></a>パート 1-マルウェア対策
+## <a name="part-1---anti-malware-protection"></a>パート 1-マルウェア対策保護
 
-[Exchange Online protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) (EOP) を含むサブスクリプションでは[、マルウェア対策保護](anti-malware-protection.md)を利用できます。 
+[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) (EOP) を含むサブスクリプションでは、[マルウェア対策保護](anti-malware-protection.md)を利用できます。 
 
 1. [セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**脅威管理** > **ポリシー** > の**マルウェア対策**] を選択します。
 
@@ -69,9 +74,9 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 マルウェア対策ポリシーオプションの詳細については、「[マルウェア対策ポリシーを構成](configure-anti-malware-policies.md)する」を参照してください。
 
-## <a name="part-2---zero-day-protection"></a>パート 2-0 日の保護
+## <a name="part-2---protection-from-malicious-urls-and-files"></a>パート 2-悪意のある url およびファイルからの保護
 
-ゼロ日の保護は、 [Office 365 Advanced Threat protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP) を含むサブスクリプションで利用でき、 [atp の安全な添付ファイル](atp-safe-attachments.md)と[atp の安全なリンク](atp-safe-links.md)ポリシーによって設定されます。
+悪意のある url やファイルからのクリック時の保護は、 [Office 365 atp](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (atp) を含むサブスクリプションで利用でき、atp の[安全な添付ファイル](atp-safe-attachments.md)と[atp の安全なリンク](atp-safe-links.md)ポリシーによって設定されます。
 
 ### <a name="atp-safe-attachments-policies"></a>ATP の安全な添付ファイルポリシー
 
@@ -97,9 +102,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 6. (**推奨の追加手順**)グローバル管理者または SharePoint Online 管理者は、 **[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** コマンドレットを実行して、Office 365 環境の**DisallowInfectedFileDownload**パラメーターを*true*に設定します。 (これにより、ユーザーが悪意を持って検出されたファイルを開く、移動、コピー、または共有できなくなります)。  
 
-詳細については、次を参照してください。 
-- [Office 365 の ATP の安全な添付ファイルのポリシーを設定する](set-up-atp-safe-attachments-policies.md)
-- [SharePoint、OneDrive、Microsoft Teams の Office 365 ATP を有効にする](turn-on-atp-for-spo-odb-and-teams.md)
+詳細については、「 [office 365 の atp の安全な添付ファイルのポリシーをセットアップ](set-up-atp-safe-attachments-policies.md)する」および「 [SharePoint、OneDrive、Microsoft Teams 用の office 365 ATP を有効](turn-on-atp-for-spo-odb-and-teams.md)にする」を参照してください。
 
 ### <a name="atp-safe-links-policies"></a>ATP の安全なリンクポリシー
 
@@ -133,7 +136,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 詳細については、「 [Office 365 ATP 安全リンクポリシー](set-up-atp-safe-links-policies.md)のセットアップ」を参照してください。 
 
-## <a name="part-3---anti-phishing"></a>パート 3-フィッシング対策 
+## <a name="part-3---anti-phishing-protection"></a>パート 3-フィッシング対策保護
 
 [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)を含むサブスクリプションでは、[フィッシング対策保護](anti-phishing-protection.md)を利用できます。 高度なフィッシング対策を[ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)で利用できます。 次の手順では、ATP のフィッシング対策ポリシーを構成する方法について説明します。 この手順は、(ATP を使用しない) フィッシング対策ポリシーの構成に似ています。
 
@@ -165,7 +168,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 フィッシング対策ポリシーオプションの詳細については、「[フィッシング対策ポリシーの設定](set-up-anti-phishing-policies.md)」を参照してください。
 
-## <a name="part-4---anti-spam"></a>パート 4-スパム対策
+## <a name="part-4---anti-spam-protection"></a>パート 4-スパム対策保護
 
 [スパム対策保護](anti-spam-protection.md)は、 [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)を含むサブスクリプションで使用できます。
 
@@ -183,9 +186,11 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 スパム対策ポリシーオプションの詳細については、「[スパム対策](configure-the-anti-spam-policies.md)ポリシーを構成する」を参照してください。
 
-## <a name="part-5---service-wide-settings"></a>パート 5-サービスレベルの設定
+## <a name="part-5---additional-settings-to-configure"></a>パート 5-構成する追加の設定
 
-### <a name="zero-hour-auto-purge"></a>ゼロ時間自動削除
+マルウェア、悪意のある url、ファイル、フィッシング、スパムからの保護を構成するだけでなく、ゼロ時間の自動削除と監査ログの設定を構成することをお勧めします。
+
+### <a name="zero-hour-auto-purge-for-email"></a>電子メールのゼロ時間自動削除
 
 [ゼロ時間自動削除](zero-hour-auto-purge.md)(ZAP) は、 [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)を含むサブスクリプションで使用できます。 この保護は既定で有効になっています。ただし、保護を有効にするには、次の条件を満たす必要があります。
 
@@ -195,35 +200,18 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 詳細については、「[スパムおよびマルウェアに対するゼロ時間自動削除対策](zero-hour-auto-purge.md)」を参照してください。
 
-### <a name="audit-logging"></a>監査ログ
+### <a name="audit-logging-for-reporting-and-investigation"></a>レポートおよび調査の監査ログ
 
 監査ログは、 [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)を含むサブスクリプションで利用できます。 [セキュリティダッシュボード](security-dashboard.md)、[電子メールセキュリティレポート](view-email-security-reports.md)、[エクスプローラー](use-explorer-in-security-and-compliance.md)などの脅威保護レポートのデータを表示するには、組織に対して監査ログを有効にする必要があります。 詳細については、「 [Office 365 監査ログ検索をオンまたはオフに](turn-audit-log-search-on-or-off.md)する」を参照してください。
 
 ## <a name="post-setup-tasks"></a>セットアップ後のタスク
 
-### <a name="watch-for-new-features-and-service-updates"></a>新機能とサービス更新を見る
+脅威保護機能を構成した後は、それらの機能がどのように動作しているかを監視し、必要に応じてポリシーを確認して変更し、新しい機能とサービスの更新について確認してください。
 
-- [標準または対象指定リリースオプションを設定する](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)
+|行うこと  |詳細については、リソースを参照してください  |
+|---------|---------|
+|レポートを表示して、組織の脅威保護機能がどのように機能するかを確認する    |[セキュリティダッシュボード](security-dashboard.md)<br/>[電子メールセキュリティレポート](view-email-security-reports.md)<br/>[Office 365 ATP のレポート](view-reports-for-atp.md)<br/>[脅威エクスプローラー](use-explorer-in-security-and-compliance.md)    |
+|必要に応じて脅威保護ポリシーを定期的にレビューし、改訂する    |[セキュリティ スコア](microsoft-secure-score.md)<br/>[スマートレポートと分析情報](reports-and-insights-in-security-and-compliance.md)<br/>[Office 365 の脅威の調査と応答の機能](keep-users-safe-with-office-365-ti.md)          |
+|新機能とサービス更新を見る     |[標準および対象のリリースオプション](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)<br/>[Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)<br/>[Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)         |
 
-- [メッセージセンターに移動して機能のアナウンスを表示する](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) 
 
-- [新しい機能の状態を確認するには、Microsoft 365 ロードマップを参照してください。](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)
-
-- [Office 365 サービスの説明を確認する](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)
-
-### <a name="see-how-threat-protection-features-are-working-for-your-organization"></a>組織に対して脅威保護機能がどのように機能しているかを確認する
-
-- [セキュリティダッシュボードにアクセスする](security-dashboard.md)
-
-- [Office 365 ATP](view-reports-for-atp.md)([エクスプローラー](use-explorer-in-security-and-compliance.md)を含む) のレポートを表示する
-
-- [電子メールのセキュリティレポートを表示する](view-email-security-reports.md)
-
-### <a name="periodically-review-and-revise-your-threat-protection-policies"></a>脅威保護ポリシーを定期的に見直し、改訂する
-
-- [セキュリティで保護されたスコアを確認する](microsoft-secure-score.md)
-
-- [セキュリティ&amp; /コンプライアンスセンターのスマートレポートと分析情報を使用する](reports-and-insights-in-security-and-compliance.md) 
-
-- [Office 365 の脅威の調査と応答機能をユーザーに対して安全に保つ](keep-users-safe-with-office-365-ti.md) 
- 

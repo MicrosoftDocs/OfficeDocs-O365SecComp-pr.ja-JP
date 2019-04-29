@@ -13,11 +13,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.openlocfilehash: 2984231caba574b8fa47b725ab77227f6ab5ae56
-ms.sourcegitcommit: 468a7c72df3206333d7d633dd7ce1f210dc1ef3a
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33302741"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402935"
 ---
 # <a name="monitor-devices-in-microsoft-365-security"></a>Microsoft 365 セキュリティ センター でのデバイスの監視
 

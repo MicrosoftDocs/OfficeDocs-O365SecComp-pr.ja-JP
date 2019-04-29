@@ -12,11 +12,11 @@ ms.collection:
 localization_priority: Normal
 description: すべての新しい Microsoft 365 セキュリティセンターとコンプライアンスセンターの準備をする
 ms.openlocfilehash: a64c64756f0c4588efcc6e467316b90aa1aabc3f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265493"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402995"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>新しい microsoft 365 セキュリティセンターと microsoft 365 コンプライアンスセンターが一般公開されるようになりました。
 
@@ -66,7 +66,7 @@ Office 365 セキュリティ & コンプライアンスセンターを含むス
 
 新しいセンターへのスムーズな移行を期待できます。 最終的には、以前の Microsoft 365 Security & コンプライアンス[https://protection.microsoft.com](https://protection.microsoft.com)センター () は廃止されます。 管理者の環境は変更されますが、現在のセキュリティとコンプライアンスの構成に影響はありません。 組織に Microsoft 365 Enterprise E3 または E5 がある場合、セキュリティ/コンプライアンス管理者は次のことを行うことができます。
 
-- に[https://security.microsoft.com](https://security.microsoft.com)直接移動し[https://compliance.microsoft.com](https://compliance.microsoft.com)ます。 <br>or  
+- に[https://security.microsoft.com](https://security.microsoft.com)直接移動し[https://compliance.microsoft.com](https://compliance.microsoft.com)ます。 <br>または  
 - Microsoft 365 管理[https://admin.microsoft.com](https://admin.microsoft.com)センター () に移動し、そこから移動します (ナビゲーションウィンドウで [**すべて表示**] をクリックし、[**セキュリティ**] または [**コンプライアンス**] を選択します)。
 
 さらに、既存の Office 365 セキュリティ & コンプライアンスセンター ([https://protection.office.com](http://protection.office.com)) で設定を構成して管理することもできます。 構成は、既存の Office 365 セキュリティ & コンプライアンスセンターと、新しい microsoft 365 セキュリティセンターおよび microsoft 365 コンプライアンスセンターの両方で維持されます。  
@@ -108,7 +108,7 @@ Office 365 セキュリティ & コンプライアンスセンターを含むス
 |[セキュリティ スコア](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)     |はい |はい |いいえ |
 |[Exchange](https://docs.microsoft.com/exchange/)     |はい |はい |はい |
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>その他の技術情報
 
 [Microsoft 365 セキュリティ センター](overview-security-center.md)
 

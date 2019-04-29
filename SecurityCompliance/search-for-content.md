@@ -12,11 +12,11 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: セキュリティ & コンプライアンスセンターのコンテンツ検索電子情報開示ツールを使用して、Exchange メールボックス、SharePoint サイトと OneDrive の場所にあるドキュメント、および Skype for business でのインスタントメッセージングの会話をすばやく見つけることができます。
 ms.openlocfilehash: 3e8e0594cac700fe37ee7a4a6c889dbf862cd0fb
-ms.sourcegitcommit: 3509e324952aee703f3ced5b950dd53cb5f974ac
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33248302"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403015"
 ---
 # <a name="search-for-content-in-office-365"></a>Office 365 のコンテンツを検索する
 

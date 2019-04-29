@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: 管理者は、Office 365 セキュリティ & コンプライアンスセンターで利用可能なアクセス許可について理解できます。
 ms.openlocfilehash: 4d5fb942ea613b7b732d1150de497b1992dbd717
-ms.sourcegitcommit: 81e86658c9c890a2fd0c36f73f1c94941cc74775
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32439341"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402975"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Office 365 セキュリティ センターとコンプライアンス センターのアクセス許可
 
@@ -91,7 +91,7 @@ Security & コンプライアンスセンターには、ユーザーを割り当
 
 - 監督レビュー管理者
 
-|**役割**|**説明**|**既定の役割グループの割り当て**|
+|**ロール**|**説明**|**既定の役割グループの割り当て**|
 |:-----|:-----|:-----|
 |**監査ログ**|Office 365 組織の監査を有効にして構成し、組織の監査レポートを表示して、これらのレポートをファイルにエクスポートします。|組織の管理 <br/><br/> レコード管理 <br/><br/> セキュリティ管理者|
 |**ケース管理**|電子情報開示ケースへのアクセスを作成、編集、削除、制御します。|コンプライアンス管理者 <br/><br/> 電子情報開示マネージャー <br/><br/> 組織の管理|

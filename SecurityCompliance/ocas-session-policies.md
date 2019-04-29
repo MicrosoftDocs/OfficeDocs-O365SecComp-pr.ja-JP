@@ -10,12 +10,12 @@ ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 description: office 365 Cloud App Security セッションポリシーを使用すると、リアルタイムのセッションレベルの監視が可能になり、office 365 アプリの詳細な表示を affording し、ユーザーセッションに設定したポリシーに応じて異なる操作を実行することができます。 session control を使用して、アクセスを完全に許可またはブロックするのではなく、セッションの監視中にアクセスを許可したり、条件付きアクセスアプリコントロールのリバースプロキシ機能を使用して特定のセッションアクティビティを制限したりすることができます。
-ms.openlocfilehash: e0e4b04ee8cc0f7a14adbc26b074a5f2947e44c2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8abc7753543d5147ce8c48c1784a6795143f9105
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263033"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403035"
 ---
 # <a name="session-policies-in-office-365-cloud-app-security"></a>Office 365 Cloud App Security のセッション ポリシー
 
@@ -117,7 +117,7 @@ Conditional Access App Control は、それを経由してルーティングさ�
 
 1. [設定] cog に移動し、[ **条件付きアクセスアプリコントロール**] をクリックします。
 
-2. 表の右側で、[エクスポート] ボタンをクリックします。<br>![[エクスポート] ボタン](media/image3.png)<br>
+2. 表の右側で、[エクスポート] ボタンをクリックします。<br>![[エクスポート] ボタン](media/OCASimage3.png)<br>
 
 3. レポートの範囲を選択し、[ **エクスポート**] をクリックします。 この処理には時間がかかる場合があります。
 
@@ -125,7 +125,7 @@ Conditional Access App Control は、それを経由してルーティングさ�
 
 1. レポートの準備が整ったら、[ **設定** ] に移動し、[ **レポートのエクスポート**] をクリックします。
 
-2. 表で、 **条件付きアクセスアプリコントロールのトラフィックログ** の一覧から関連するレポートを選択し、[ダウンロード] をクリックします。<br>![[ダウンロード] ボタン](media/image4.png)<br>
+2. 表で、 **条件付きアクセスアプリコントロールのトラフィックログ** の一覧から関連するレポートを選択し、[ダウンロード] をクリックします。<br>![[ダウンロード] ボタン](media/OCASimage4.png)<br>
 
 ## <a name="block-all-downloads"></a>すべてのダウンロードをブロックする
 
@@ -143,7 +143,7 @@ Cloud App Security セッションポリシーで実行する **アクション
 
 Cloud App Security セッションポリシーで行われる **アクション** として **保護** が設定されている場合、条件付きアクセスアプリコントロールは、ポリシーのファイルフィルターごとに、ファイルのラベル付けとその後の保護を適用します。 クラウドアプリのセキュリティポリシーにオプションとして表示されるようにするには、Azure Information Protection コンソールでラベルを構成し、ラベル内で **保護** を選択する必要があります。 ラベルが選択されているときに、Cloud App Security ポリシーの条件に一致するファイルがダウンロードされると、ラベルと対応する保護 (アクセス許可あり) がダウンロード時にファイルに適用されます。 ダウンロードしたファイルが保護されている間、元のファイルはクラウドアプリにそのまま残ります。 ファイルにアクセスしようとするユーザーは、保護が適用されているアクセス許可の要件を満たしている必要があります。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [Office 365 Cloud App Security のアクセスポリシーについて](ocas-access-policies.md)
 

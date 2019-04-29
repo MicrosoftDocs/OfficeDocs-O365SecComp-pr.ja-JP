@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Office 365 監査ログ レコードに含まれている追加のプロパティについて説明します。
-ms.openlocfilehash: f64b514b777c08048e0f904c17e21c235f8a6f23
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2c2d878bb79bdec19aef07ed0de35b53a826e9ca
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257652"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402965"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Office 365 監査ログの詳細なプロパティ
 
@@ -86,13 +86,15 @@ ms.locfileid: "32257652"
 |UserID|レコードがログに記録される原因となった、(**Operation** プロパティで指定された) アクションを実行したユーザー。監査ログには、システム アカウント (SHAREPOINT\system または NT AUTHORITY\SYSTEM など) で実行されたアクティビティのレコードも含まれることに注意してください。|すべて|
 |UserKey|**UserID** プロパティで識別されたユーザーの別の ID。このプロパティには、たとえば SharePoint でユーザーによって発生したイベントの Passport 固有 ID (PUID) が格納されます。このプロパティは、他のサービスで発生したイベントや、システム アカウントによって発生したイベントの **UserID** プロパティと同じ値を示す場合もあります。|すべて|
 |UserSharedWith|リソースが共有されたユーザー。**Operation** プロパティの値が **SharingSet** の場合は、このプロパティが含まれます。このユーザーは、レポートの **[共有ユーザー]** 列にも表示されます。|SharePoint|
-|UserType|操作を実行したユーザーの種類。次の値によって、ユーザーの種類が示されます。<br/> <br/> **0** - 標準のユーザー。 <br/>**2** - Office 365 組織の管理者。 <br/>**3** - Microsoft データセンター管理者またはデータセンターのシステム アカウント。 <br/>**4** - システム アカウント。 <br/>**5** - アプリケーション。 <br/>**6** - サービス プリンシパル。<br/>**7** - カスタム ポリシー。<br/>**8** - システム ポリシー。|すべて|
+|UserType|操作を実行したユーザーの種類。次の値によって、ユーザーの種類が示されます。<br/> <br/> **0** - 標準のユーザー。 <br/>**2** - Office 365 組織の管理者。 <sup>1</sup> <br/>**3** - Microsoft データセンター管理者またはデータセンターのシステム アカウント。 <br/>**4** - システム アカウント。 <br/>**5** - アプリケーション。 <br/>**6** - サービス プリンシパル。<br/>**7** - カスタム ポリシー。<br/>**8** - システム ポリシー。|すべて|
 |Version|ログに記録された (**Operation** プロパティで識別された) アクティビティのバージョン番号を示します。|すべて|
 |Workload|アクティビティが発生した Office 365 サービス。このプロパティの有効な値は次のとおりです。<br/> <br/>**SharePoint<br/>OneDrive<br/>Exchange<br/>AzureActiveDirectory<br/>DataCenterSecurity<br/>Compliance<br/>Sway<br/>Skype for Business<br/>SecurityComplianceCenter<br/>PowerBI<br/>CRM<br/>Yammer<br/>MicrosoftTeams<br/>ThreatIntelligence<br/>MicrosoftFlow<br/>MicrosoftStream<br/>DlpSharePointClassificationData<br/>Project<br/>PowerApps<br/>Workplace Analytics**|すべて|
 ||||
-   
-上記のプロパティは、特定のイベントの詳細が表示されている状態で **[詳細情報]** をクリックした場合にも表示されます。 
+
+> [!NOTE]
+> <sup>1</sup> Azure Active Directory 関連イベントの場合、管理者の値は監査レコードでは使用されません。 管理者によって実行されたアクティビティの監査レコードは、通常のユーザー (たとえば、 **UserType: 0**) がアクティビティを実行したことを示します。 **UserID**プロパティは、アクティビティを実行したユーザー (通常のユーザーまたは管理者) を識別します。
+
+上記のプロパティは、特定のイベントの詳細を表示するときに [**詳細情報**] をクリックしたときにも表示されます。 
   
 ![[詳細情報] をクリックして監査ログのイベント レコードの詳細なプロパティを表示する](media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
   
-

@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Office 365 で不法な同意を付与する攻撃を認識し、修復する方法について説明します。
-ms.openlocfilehash: 32fa8fedd0cac0ba1a6193b7b107492efb136838
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 658183b3e5a3089425312ee14c6663485e0543ce
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999940"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402955"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Microsoft Office 365 での不正な同意付与の検出と修復
 
@@ -36,7 +36,11 @@ ms.locfileid: "30999940"
 3. 検索を作成し (すべてのアクティビティとすべてのユーザー)、アプリケーションに対する同意のために結果をフィルター処理して、OAuth2PermissionGrant を追加します。
 4. 拡張プロパティを調べ、isadmincontent が True に設定されているかどうかを確認します。
 
-
+> [!NOTE]
+>  
+   - イベントが発生した後、対応する監査ログエントリが検索結果に表示されるまでに最大で30分または最大24時間かかる場合があります。
+   - 監査レコードが保持され、監査ログで検索可能になる時間の長さは、Office 365 サブスクリプションによって異なり、特定のユーザーに割り当てられているライセンスの種類によって異なります。 詳細については、「[監査ログ](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
+      
 この値が true の場合は、グローバル管理者のアクセス権を持つユーザーがデータへの広範なアクセス権を持っている可能性があることを示します。 これが予期しない場合は、[攻撃を確認](detect-and-remediate-illicit-consent-grants.md#confirmattack)するための手順を実行します。
 
 <a name="confirmattack"> </a>
