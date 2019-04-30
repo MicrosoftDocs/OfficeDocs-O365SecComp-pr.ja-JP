@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: コンテンツの場所にエラーがあるコンテンツ検索を解決するには、[再試行] ボタンを使用します。
-ms.openlocfilehash: 8334ec053e86e48f99955af2d56e511a2df5c25a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0963bccfe88a74b82ec3155469ca6d892bf2f7d8
+ms.sourcegitcommit: 72e8a74b55fe7f56b50e30ff10a635734b5a3220
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261502"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33472382"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>コンテンツ検索を再試行してコンテンツの場所のエラーを解決する
 
-セキュリティ/コンプライアンスセンターでコンテンツ検索を使用して大量のメールボックスを検索する場合 (たとえば、1つのコンテンツ検索で10万メールボックス以上を検索する場合)、次のような検索エラーが発生することがあります。
+セキュリティ/コンプライアンスセンターでコンテンツ検索を使用して多数のメールボックスを検索すると、次のような検索エラーが表示されることがあります。
 
 ```
 Error
