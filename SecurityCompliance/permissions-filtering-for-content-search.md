@@ -96,7 +96,7 @@ ms.locfileid: "32261255"
 
 **New-ComplianceSecurityFilter** は新しいアクセス許可の検索フィルターを作成する場合に使用します。 次の表では、このコマンドレットのパラメーターについて説明します。 コンプライアンス セキュリティ フィルターを作成するには、すべてのパラメーターが必要です。 
   
-|**Parameter**|**説明**|
+|**パラメーター**|**説明**|
 |:-----|:-----|
 | _Action_ <br/> | _Action_ パラメーターは、フィルターに適用する検索操作の種類を指定します。 可能なコンテンツ検索操作は次のとおりです。  <br/><br/> **Export** - 検索結果をエクスポートするときに、フィルターが適用されます。  <br/> **Preview** - 検索結果をプレビューするときに、フィルターが適用されます。  <br/> **Purge** - 検索結果を消去するときに、フィルターが適用されます。  <br/> **Search** - 検索を実行するときに、フィルターが適用されます。  <br/> **All** - すべての検索操作に、フィルターが適用されます。  <br/> |
 | _FilterName_ <br/> |_FilterName_ パラメーターは、アクセス許可フィルターの名前を指定します。 この名前は、**Get ComplianceSecurityFilter**、**Set-ComplianceSecurityFilter**、および**Remove-ComplianceSecurityFilter** コマンドレットを使用する際に、フィルターを特定するために使用されます。  <br/> |
@@ -180,7 +180,7 @@ New-ComplianceSecurityFilter -FilterName NoEXO -Users "OneDrive Discovery Manage
 
 **Set-ComplianceSecurityFilter** は既存のアクセス許可の検索フィルターを変更する場合に使用します。 唯一の必須パラメーターは _FilterName_ です。 
   
-|**Parameter**|**説明**|
+|**パラメーター**|**説明**|
 |:-----|:-----|
 | _Action_| _Action_ パラメーターは、フィルターに適用する検索操作の種類を指定します。 可能なコンテンツ検索操作は次のとおりです。 <br/><br/> **Export** - 検索結果をエクスポートするときに、フィルターが適用されます。  <br/> **Preview** - 検索結果をプレビューするときに、フィルターが適用されます。  <br/> **Purge** - 検索結果を消去するときに、フィルターが適用されます。  <br/> **Search** - 検索を実行するときに、フィルターが適用されます。  <br/> **All** - すべての検索操作に、フィルターが適用されます。  <br/> |
 | _FilterName_|_FilterName_ パラメーターは、アクセス許可フィルターの名前を指定します。 |
@@ -222,7 +222,7 @@ Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.u
 
 **Remove-ComplianceSecurityFilter** は検索フィルターを削除する場合に使用します。 _FilterName_ パラメーターを使用して、削除するフィルターを指定します。 
   
-## <a name="more-information"></a>More information
+## <a name="more-information"></a>詳細情報
 
 - **検索アクセス許可のフィルター処理のしくみ。** アクセス許可のフィルターは、コンテンツ検索が実行されると、検索クエリに追加されます。 アクセス許可のフィルターは基本的に、**AND** ブール演算子によって検索クエリに結合されます。 たとえば、Bob に Workers 配布グループのメンバーのメールボックスですべての検索操作の実行を許可するアクセス許可フィルターがあるとします。 Bob は、検索クエリ `sender:jerry@adatum.com` を使用して、組織内のすべてのメールボックスでコンテンツ検索を実行したとします。 アクセス許可フィルターと検索クエリは **AND** 演算子で論理的に結合されているため、検索では jerry@adatum.com から Workers 配布グループの任意のメンバーに送信されたすべてのメッセージが返されます。 
     
