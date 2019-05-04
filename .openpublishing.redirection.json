@@ -139,6 +139,11 @@
         "source_path": "securitycompliance/protected-message-viewer-portal-privacy-statement.md",
         "redirect_url": "https://privacy.microsoft.com/privacystatement", 
         "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/office-365-secure-score.md",
+        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score", 
+        "redirect_document_id": true
     }                                                                                                                                            
   ] 
 }
