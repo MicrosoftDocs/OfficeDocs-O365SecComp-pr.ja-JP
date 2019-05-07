@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c521ca4485b00963c7d144b3013134fcaa30f298
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: e3d1a33d14231fb0f383436c0bee7cb63c21d8af
+ms.sourcegitcommit: 25595bc8fae96bc23b7b6d7102a22f37878987c0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527212"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33641594"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>高度な電子情報開示でのレビューセットの管理
 
@@ -27,11 +27,11 @@ Review sets は、データの分析、クエリ、表示、タグ付け、お�
 
 - [レビューセット内のデータを分析する](analyzing-data-in-review-set.md)
 
-- [レビューセット内のデータを照会する](review-set-search.md)
+- [レビュー セット内のデータをクエリする](review-set-search.md)
 
-- [校閲セットでドキュメントを表示する](view-documents-in-review-set.md)
+- [レビュー セット内のドキュメントを表示する](view-documents-in-review-set.md)
 
-- [レビューセット内のドキュメントにタグを設定する](tagging-documents.md)
+- [レビュー セット内のドキュメントをタグ付けする](tagging-documents.md)
 
 - [ケース データをエクスポートする](exporting-data-ediscover20.md)
 
@@ -41,16 +41,16 @@ Review sets は、データの分析、クエリ、表示、タグ付け、お�
 
 ![レビューセットを追加する](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-フライアウトが表示されます。  [保存] をクリックすると、レビューセットに名前を**付けて保存**することができます。  新しいレビューセットが [**確認セット**] タブに表示されます。
+[**レビュー設定の追加**] ページで、レビューセットの名前を入力し、[**保存**] をクリックします。  新しいレビューセットが [**確認セット**] タブの一覧に表示されます。
 
-![レビューセットポップアップを追加する](../media/5e5c99f8-42ca-4c2f-960f-f1a5709569d1.png)
+![[レビューセット] タブに新しいレビューセットが表示されている](../media/AeDnewreviewset.png)
 
-レビューセットにコンテンツを追加するには、次の3つの方法があります。
+高度な電子情報開示ケースのレビューセットにデータを追加するには、3種類の方法があります。
 
-1. [検索結果をレビューセットに追加する](add-data-to-review-set.md)
+![レビューセットに追加する3つの方法](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
-2. [Office 以外の365データをレビューセットに読み込む](load-non-office365-data.md)
+1. [検索結果をレビュー セットに追加する](add-data-to-review-set.md)
 
-3. [別のレビューセットからデータをレビューセットに追加](add-data-to-review-set-from-another-review-set.md)します。
+2. [レビュー セットに Office 365 以外のデータを読み込む](load-non-office365-data.md)
 
-![チェックセット](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
+3. [別のレビューセットからのレビューセットへのデータの追加](add-data-to-review-set-from-another-review-set.md)
