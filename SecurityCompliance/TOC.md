@@ -111,6 +111,7 @@
 ### [EOP とは何ですか?](eop/what-is-eop.md)
 ### [Office 365 メールのスパム対策保護](anti-spam-protection.md)
 ### [Office 365 で、メールが迷惑メールとしてマークされるのを防ぐ方法](prevent-email-from-being-marked-as-spam.md)
+### [ポリシーと保護を組み合わせる方法](how-policies-and-protections-are-combined.md)
 ### [Office 365 で迷惑メールを減らす方法](reduce-spam-email.md)
 ### [Office 365 で送信スパムを制御する](outbound-spam-controls.md)
 ### [検出漏れの問題を防止するために Office 365 スパム フィルターを使用して迷惑メールをブロックする](reduce-spam-email.md)
@@ -464,11 +465,17 @@
 # メール フロー
 ## [レポート メッセージ アドインを有効にする](enable-the-report-message-add-in.md)
 ## [セキュリティとコンプライアンス センターのメッセージ追跡](message-trace-scc.md)
-## [セキュリティとコンプライアンス センターのメッセージ追跡の分析情報](mail-flow-insights.md)
-### [自動転送済みメッセージレポート](mfi-auto-forwarded-messages-report.md)
-### [メールループの分析情報](mfi-mail-loop-insight.md)
+## [セキュリティとコンプライアンス センターのメッセージ追跡の分析情報](mail-flow-insights-v2.md)
+### [メール フローのマップ レポート](mfi-mail-flow-map-report.md)
+### [トップドメインのメール フローの状態洞察](mfi-domain-mail-flow-status-insight.md)　
+### [SMTP Auth クライアントのレポート](mfi-smtp-auth-clients-report.md)
+### [送信者ドメインの洞察を修正する](mfi-sender-domain-insight.md)
+### [配信不能レポート](mfi-non-delivery-report.md)
+### [承認されていないドメインのレポート](mfi-non-accepted-domain-report.md)
 ### [送信と受信のメール フロー](mfi-outbound-and-inbound-mail-flow.md)
 ### [キューのアラートとキュー](mfi-queue-alerts-and-queues.md)
+### [自動転送済みメッセージレポート](mfi-auto-forwarded-messages-report.md)
+### [メールループの分析情報](mfi-mail-loop-insight.md)
 ### [低速メール フローのルールの分析情報](mfi-slow-mail-flow-rules-insight.md)
 
 # セキュリティ ソリューション
