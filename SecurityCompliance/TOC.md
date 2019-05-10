@@ -5,7 +5,6 @@
 ### [Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)
 ### [Microsoft 365 セキュリティ センター](overview-security-center.md)
 ### [Microsoft セキュア スコア](microsoft-secure-score.md)
-### [Office 365 セキュア スコア](office-365-secure-score.md)
 ## [セキュリティ/コンプライアンス センターに移動する](go-to-the-securitycompliance-center.md)
 ### [セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)
 ### [ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する](grant-access-to-the-security-and-compliance-center.md)
@@ -50,10 +49,14 @@
 ### [DLP 関数の検索対象](what-the-dlp-functions-look-for.md)
 ### [DLP のカスタマイズの概要の詳しい説明を見る](https://go.microsoft.com/fwlink/?linkid=852306)
 ### [組み込みの機密情報の種類をカスタマイズする](customize-a-built-in-sensitive-information-type.md)
-### [カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)
-### [Office 365 セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+### [カスタムの機密情報の種類:](custom-sensitive-info-types.md)
+### [データ一致 (プレビュー) で、カスタムの機密情報の種類を作成する](create-custom-sensitive-info-type-edm.md)
+### [セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)
+### [PowerShell を使用してカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [キーワード辞書を作成する](create-a-keyword-dictionary.md)
 ### [ドキュメント フィンガープリンティング](document-fingerprinting.md)
+### [ 機密情報のDLP 関数](what-the-dlp-functions-look-for.md)
+### [DLP のカスタマイズの概要の詳しい説明を見る](https://go.microsoft.com/fwlink/?linkid=852306)
 
 ## [Office 365 での電子メールの暗号化](email-encryption.md)
 ### [Office 365 Message Encryption (OME)](ome.md)
@@ -71,68 +74,13 @@
 #### [Office 365 Message Encryption の旧来の情報](legacy-information-for-message-encryption.md)
 #### [Office 365 Message Encryption の旧バージョン用に Microsoft Azure AD Rights Management を設定する](set-up-azure-rms-for-previous-version-message-encryption.md)
 
-# レコード管理
-## [ファイル計画マネージャー](file-plan-manager.md)
-## [保持ラベル](labels.md)
-### [SEC Rule 17a-4 に準拠する ](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [PowerShell を使用して保持ラベルを作成および発行する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-## [イベント ベースの保持](event-driven-retention.md)
-### [イベント ベースの保持を自動化する](automate-event-driven-retention.md)
-## [廃棄確認](disposition-reviews.md)
-## レコード管理の監視
-### [データ ガバナンスのレポートを表示する](view-the-data-governance-reports.md)
-### [ドキュメントのラベルのアクティビティを表示する](view-label-activity-for-documents.md)
-### [ラベル分析によるラベル使用状況の表示](label-analytics.md)
-## レコード管理についての詳細
-### [Microsoft Data Governance チームによるビデオを見る](https://go.microsoft.com/fwlink/?linkid=867039)
-
-# データ ガバナンスを管理する
-## [データをインポートする](importing-pst-files-to-office-365.md)
-### [ネットワーク アップロードを使用して PST ファイルをインポートする](use-network-upload-to-import-pst-files.md)
-### [ドライブ送付を使用して PST ファイルをインポートする](use-drive-shipping-to-import-pst-files-to-office-365.md)
-### [PST コレクション ツールを使用して、PST ファイルの検索、コピー、および を削除をする](find-copy-and-delete-pst-files-in-your-organization.md)
-### [PST ファイルをインポートするときに、データをフィルター処理する](filter-data-when-importing-pst-files.md)
-### [ネットワーク アップロードを使用して、RMS で暗号化された PST ファイルをインポートする](use-network-upload-to-import-rms-encrypted-pst-files.md)
-### [PST ファイルのインポートに関する FAQ](faqimporting-pst-files-to-office-365.md)
-### [Office 365 でサードパーティのデータをアーカイブする](archiving-third-party-data.md)
-#### [サンプル コネクタを使って、サードパーティーのデータをアーカイブする](archive-third-party-data-with-sample-connector.md)
-#### [パートナーと共同作業でサードパーティーのデータをアーカイブする](work-with-partner-to-archive-third-party-data.md)
-## データを格納する
-### [アーカイブ メールボックスの有効化](enable-archive-mailboxes.md)
-### [無制限アーカイブの概要](unlimited-archiving.md)
-### [無制限アーカイブを有効化する](enable-unlimited-archiving.md)
-### [メールボックスのアーカイブと削除ポリシーを設定する](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
-## データを保持する
-### [保持ポリシー](retention-policies.md)
-### [ファイル計画マネージャー](file-plan-manager.md)
-### [保持ラベル](labels.md)
-### [SEC Rule 17a-4 に準拠する ](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [PowerShell を使用して保持ラベルを作成および発行する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-### [イベント ベースの保持](event-driven-retention.md)
-### [イベント ベースの保持を自動化する](automate-event-driven-retention.md)
-## [データを破棄する](disposition-reviews.md)
-## [通信を監督する](supervision-policies.md)
-### [組織用に監督ポリシーを構成する](configure-supervision-policies.md)
-## [非アクティブなメールボックスを管理する](inactive-mailboxes-in-office-365.md)
-### [非アクティブなメールボックスを作成および管理する](create-and-manage-inactive-mailboxes.md)
-### [非アクティブなメールボックスの保持期間を変更する](change-the-hold-duration-for-an-inactive-mailbox.md)
-### [非アクティブなメールボックスを回復する](recover-an-inactive-mailbox.md)
-### [非アクティブなメールボックスを復元する](restore-an-inactive-mailbox.md)
-### [非アクティブなメールボックスを削除する](delete-an-inactive-mailbox.md)
-## データ ガバナンスをモニターする
-### [ドキュメントのラベルのアクティビティを表示する](view-label-activity-for-documents.md)
-### [ラベル分析によるラベル使用状況の表示](label-analytics.md)
-### [データ ガバナンスのレポートを表示する](view-the-data-governance-reports.md)
-## データ ガバナンスの詳細情報
-### [Microsoft のデータ ガバナンス チームによるビデオを見る](https://go.microsoft.com/fwlink/?linkid=867039)
-
 # [脅威からの保護](protect-against-threats.md)
 
 ## [Microsoft 365 での捜索](hunting.md)
 
 ## [脅威の分析によって最新の攻撃行動を理解する](latest-attack-campaigns.md)
 
-## [Advanced Threat Protection ](office-365-atp.md)
+## [Office 365 Advanced Threat Protection](office-365-atp.md)
 ### [ATP の安全なリンク](atp-safe-links.md)
 #### [ATP の安全なリンク機能のポリシーを設定する](set-up-atp-safe-links-policies.md)
 #### [「書き換えない」URL のカスタム リストを設定する](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
@@ -226,6 +174,66 @@
 ### [Office 365 の検疫に関する FAQ](quarantine-faq.md)
 ### [Office 365 でエンド ユーザーのスパム通知を使って検疫済みメッセージを解放して報告する](use-spam-notifications-to-release-and-report-quarantined-messages.md)
 
+# セキュリティ インシデントの管理
+## [Office 365 セキュリティ インシデント対応](office365-security-incident-response-overview.md)
+## [Microsoft Office 365 での不正な同意付与の検出と修復](detect-and-remediate-illicit-consent-grants.md)
+## [Office 365 で Outlook のルールとカスタム フォーム インジェクション攻撃の検出と修復を行う](detect-and-remediate-outlook-rules-forms-attack.md)
+## [侵害された Office 365 電子メール アカウントへの対応](responding-to-a-compromised-email-account.md)
+
+# レコード管理
+## [ファイル計画マネージャー](file-plan-manager.md)
+## [保持ラベル](labels.md)
+### [SEC Rule 17a-4 に準拠する ](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+### [PowerShell を使用して保持ラベルを作成および発行する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+## [イベント ベースの保持](event-driven-retention.md)
+### [イベント ベースの保持を自動化する](automate-event-driven-retention.md)
+## [廃棄確認](disposition-reviews.md)
+## レコード管理の監視
+### [データ ガバナンスのレポートを表示する](view-the-data-governance-reports.md)
+### [ドキュメントのラベルのアクティビティを表示する](view-label-activity-for-documents.md)
+### [ラベル分析によるラベル使用状況の表示](label-analytics.md)
+## レコード管理についての詳細
+### [Microsoft Data Governance チームによるビデオを見る](https://go.microsoft.com/fwlink/?linkid=867039)
+
+# データ ガバナンスを管理する
+## [データをインポートする](importing-pst-files-to-office-365.md)
+### [ネットワーク アップロードを使用して PST ファイルをインポートする](use-network-upload-to-import-pst-files.md)
+### [ドライブ送付を使用して PST ファイルをインポートする](use-drive-shipping-to-import-pst-files-to-office-365.md)
+### [PST コレクション ツールを使用して、PST ファイルの検索、コピー、および を削除をする](find-copy-and-delete-pst-files-in-your-organization.md)
+### [PST ファイルをインポートするときに、データをフィルター処理する](filter-data-when-importing-pst-files.md)
+### [ネットワーク アップロードを使用して、RMS で暗号化された PST ファイルをインポートする](use-network-upload-to-import-rms-encrypted-pst-files.md)
+### [PST ファイルのインポートに関する FAQ](faqimporting-pst-files-to-office-365.md)
+### [Office 365 でサードパーティのデータをアーカイブする](archiving-third-party-data.md)
+#### [サンプル コネクタを使って、サードパーティーのデータをアーカイブする](archive-third-party-data-with-sample-connector.md)
+#### [パートナーと共同作業でサードパーティーのデータをアーカイブする](work-with-partner-to-archive-third-party-data.md)
+## データを格納する
+### [アーカイブ メールボックスの有効化](enable-archive-mailboxes.md)
+### [無制限アーカイブの概要](unlimited-archiving.md)
+### [無制限アーカイブを有効化する](enable-unlimited-archiving.md)
+### [メールボックスのアーカイブと削除ポリシーを設定する](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+## データを保持する
+### [保持ポリシー](retention-policies.md)
+### [ファイル計画マネージャー](file-plan-manager.md)
+### [保持ラベル](labels.md)
+### [SEC Rule 17a-4 に準拠する ](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+### [PowerShell を使用して保持ラベルを作成および発行する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [イベント ベースの保持](event-driven-retention.md)
+### [イベント ベースの保持を自動化する](automate-event-driven-retention.md)
+## [データを破棄する](disposition-reviews.md)
+## [通信を監督する](supervision-policies.md)
+### [組織用に監督ポリシーを構成する](configure-supervision-policies.md)
+## [非アクティブなメールボックスを管理する](inactive-mailboxes-in-office-365.md)
+### [非アクティブなメールボックスを作成および管理する](create-and-manage-inactive-mailboxes.md)
+### [非アクティブなメールボックスの保持期間を変更する](change-the-hold-duration-for-an-inactive-mailbox.md)
+### [非アクティブなメールボックスを回復する](recover-an-inactive-mailbox.md)
+### [非アクティブなメールボックスを復元する](restore-an-inactive-mailbox.md)
+### [非アクティブなメールボックスを削除する](delete-an-inactive-mailbox.md)
+## データ ガバナンスをモニターする
+### [ドキュメントのラベルのアクティビティを表示する](view-label-activity-for-documents.md)
+### [ラベル分析によるラベル使用状況の表示](label-analytics.md)
+### [データ ガバナンスのレポートを表示する](view-the-data-governance-reports.md)
+## データ ガバナンスの詳細情報
+### [Microsoft Data Governance チームによるビデオを見る](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # [コンテンツを検索する](search-for-content.md)
 ## [コンテンツ検索を使う](content-search.md)
@@ -479,7 +487,7 @@
 ### [開発/テスト環境での分離した SharePoint Online チーム サイト](isolated-sharepoint-online-team-site-dev-test-environment.md)
 ## [SIEM サーバー統合](siem-server-integration.md)
 
-# コンプライアンス ソリューション
+# 規制遵守の解決策
 ## [Microsoft Service Trust Portal](get-started-with-service-trust-portal.md)
 ## [コンプライアンス マネージャー (クラシック)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [コンプライアンス マネージャー (プレビュー)](compliance-manager-overview.md)
@@ -490,6 +498,7 @@
 ### [顧客キーを使用して Office 365 でデータを制御する](controlling-your-data-using-customer-key.md)
 ### [Office 365 のよく寄せられる質問のための、顧客キーによるサービスの暗号化](service-encryption-with-customer-key-faq.md)
 ## [GDPR データ主体の要求ツール](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
+## [カスタマー ロックボックス](customer-lockbox-requests.md)
 ## [GDPR のための Office 365 の情報保護](office-365-information-protection-for-gdpr.md)
 ### [概要: GDPR のための Office 365 での保護](office-365-info-protection-for-gdpr-overview.md)
 ### [個人データの検索](search-for-and-find-personal-data.md)
@@ -506,12 +515,6 @@
 ### [Project Server の GDPR](gdpr-for-project-server.md)
 ### [Office Web Apps Server および Office Online Server の GDPR](gdpr-for-office-online-server.md)
 ### [オンプレミスの Windows Server ファイル共有における GDPR への対応](gdpr-for-on-premises-file-shares.md)
-
-# セキュリティ インシデントの管理
-## [Office 365 セキュリティ インシデント対応](office365-security-incident-response-overview.md)
-## [Microsoft Office 365 での不正な同意付与の検出と修復](detect-and-remediate-illicit-consent-grants.md)
-## [Office 365 で Outlook のルールとカスタム フォーム インジェクション攻撃の検出と修復を行う](detect-and-remediate-outlook-rules-forms-attack.md)
-## [侵害された Office 365 電子メール アカウントへの対応](responding-to-a-compromised-email-account.md)
 
 # サービス アシュアランス
 ## [Office 365 セキュリティ/コンプライアンス センターのサービス アシュアランス](service-assurance.md)
