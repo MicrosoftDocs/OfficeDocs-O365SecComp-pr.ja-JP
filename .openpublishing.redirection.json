@@ -144,6 +144,11 @@
         "source_path": "securitycompliance/office-365-secure-score.md",
         "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score", 
         "redirect_document_id": true
-    }                                                                                                                                            
+    },
+    {
+        "source_path": "securitycompliance/mail-flow-insights.md",
+        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/mail-flow-insights-v2", 
+        "redirect_document_id": true
+    }                                
   ] 
 }
