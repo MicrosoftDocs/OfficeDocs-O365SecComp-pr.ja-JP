@@ -1,5 +1,5 @@
 ---
-title: Advanced eDiscovery でサポートされているファイルの種類 (プレビュー)
+title: 高度な電子情報開示でサポートされているファイルの種類
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,58 +14,60 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7955debee750019d60b8016d736ba50f1ff70bce
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 378bd9ae88269d6a6d15a672473550e50179f772
+ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32240892"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "33834936"
 ---
-# <a name="supported-file-types-in-advanced-ediscovery-preview"></a>Advanced eDiscovery でサポートされているファイルの種類 (プレビュー)
+# <a name="supported-file-types-in-advanced-ediscovery"></a>高度な電子情報開示でサポートされているファイルの種類
 
-上級電子情報開示 (プレビュー) では、さまざまな種類のファイルがサポートされています。これについては、次の表で説明します。 この一覧は最終処理されていません。検証テストを続行するときに、新しいファイルの種類を追加します。 また、事前電子情報開示 (プレビュー) で利用可能なビューアーでファイルの種類を表示できるかどうかも示しています。
+高度な電子情報開示では、多くのファイルの種類をサポートしており、さまざまなレベルでサポートされています。次の表で説明します。 この一覧はまだ完了していません。検証テストを続行するときに、新しいファイルの種類を追加します。 また、Advanced eDiscovery で利用可能なビューアーでファイルの種類を表示できるかどうかも示します。
 
-| Mime の種類 | File クラス | ネイティブビューアー | テキストビューアー | ビューアーに注釈を付ける | コンテナーの抽出 | 拡張機能 |
+| Mime の種類 | 説明 | ネイティブビューアー | テキストビューアー | ビューアーに注釈を付ける | コンテナーの抽出 | 拡張機能 |
 | :- | :- | :- | :- | :- | :- | :- |
-| application/msword | Document | はい | はい | はい | いいえ | .doc、.dat |
-| application/pdf | Document | はい | はい | はい | いいえ | .pdf |
-| アプリケーション/rtf | Document | はい | はい | はい | いいえ | .rtf;。.doc |
-| application/vnd. が application | Document | はい | はい | はい | いいえ | .xls、.dat |
-| アプリケーション/vnd を有効にします。12 | 生産性/オープンドキュメント形式 | はい | はい | いいえ | いいえ | .xlsb |
-| アプリケーション/vnd を有効にします。12 | Document | はい | はい | はい | いいえ | .xlsm |
-| アプリケーション/が application を有効にします。12 | 生産性/オープンドキュメント形式 | いいえ | はい | いいえ | いいえ | 。 xltm |
-| application/vnd. ms-outlook | 生産性 | いいえ | いいえ | いいえ | いいえ | .msg |
-| application/vnd. ms-outlook-pst | 生産性/コラボレーション | いいえ | いいえ | いいえ | はい | .pst |
-| application/vnd. が application | Document | はい | はい | はい | いいえ | .ppt; .pps;。なべ |
-| アプリケーション/vnd を有効にします。12 | Document | はい | はい | はい | いいえ | .docm |
-| アプリケーション/が application を有効にします。12 | Document | はい | はい | はい | いいえ | normal.dotm |
-| application/vnd. oasis | Document | はい | はい | はい | いいえ | odt  |
-| application/vnd.openxmlformats-officedocument.presentationml.presentation | Document | はい | はい | はい | いいえ | .pptx |
-| openxmlformats-officedocument (アプリケーション/vnd) | 生産性/オープンドキュメント形式 | はい | はい | はい | いいえ | . ppsx |
-| openxmlformats-officedocument (アプリケーション/vnd) | Document | はい | はい | はい | いいえ | . potx |
-| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | Document | はい | はい | はい | いいえ | .xlsx |
-| application/vnd. openxmlformats-officedocument | Document | はい | はい | はい | いいえ | 。 xltx |
-| application/vnd.openxmlformats-officedocument.wordprocessingml.document | Document | はい | はい | はい | いいえ | .docx |
-| application/vnd. openxmlformats-officedocument | Document | はい | はい | はい | いいえ | .dotx |
-| アプリケーション/vnd visio | Document | はい | はい | はい | いいえ | .vsd |
-| アプリケーション/x-7z-圧縮 | Archive/Container | いいえ | いいえ | いいえ | はい | . 7z |
-| application/xhtml + xml | Document | はい | はい | はい | いいえ | xhtml |
-| application/xml | Document | はい | はい | はい | いいえ | .xml |
-| アプリケーション/x-msaccess.exe | Document | はい | はい | はい | いいえ | .mdb |
-| アプリケーション/x-mspublisher | Document | はい | はい | はい | いいえ | .pub |
-| アプリケーション/x-rar 圧縮 | Archive/Container | いいえ | いいえ | いいえ | はい | rar |
-| アプリケーション/zip | Archive/Container | いいえ | いいえ | いいえ | はい | .zip |
-| image/bmp | イメージ | はい | はい | はい | いいえ | .bmp |
-| イメージ/emf | イメージ | はい | はい | はい | いいえ | .emf |
-| image/gif | Document | はい | はい | はい | いいえ | .gif |
-| image/jpeg | イメージ | はい | はい | はい | いいえ | .jpg、.jpeg、...jpgt |
-| image/png | イメージ | はい | はい | はい | いいえ | .png |
-| image/tiff | イメージ | はい | はい | はい | いいえ | .tif |
-| 画像/vnd. .dwg | Document | はい | はい | はい | いいえ | .dwg;。dxf |
-| image/wmf | Document | はい | はい | はい | いいえ | .wmf |
-| message/rfc822 | 生産性/コラボレーション | いいえ | いいえ | いいえ | いいえ | .eml |
-| text/csv | Document | はい | はい | はい | いいえ | .csv |
-| text/html | Document | はい | はい | はい | いいえ | .html;。shtml.dll; .htm |
-| text/plain | Document | はい | はい | はい | いいえ | .txt、.css、。con; pl; .csv; .dat |
-| テキスト/vcard-連絡先 | Document | はい | はい | はい | いいえ | .vcf |
+| application/mbox | Archive/Container |  |  |  | はい | mbox |
+| application/msword | 生産性 | はい | はい | はい |  | .doc、.dat |
+| application/pdf | 生産性 | はい | はい | はい |  | .pdf |
+| アプリケーション/rtf | Document | はい | はい | はい |  | .rtf;。.doc |
+| application/vnd. が application | 生産性 | はい | はい | はい |  | .xls、.dat |
+| アプリケーション/vnd を有効にします。12 | 生産性 | はい | はい | いいえ |  | .xlsb |
+| アプリケーション/vnd を有効にします。12 | 生産性 | はい | はい | はい |  | .xlsm |
+| アプリケーション/が application を有効にします。12 | 生産性 | いいえ | はい | いいえ |  | 。 xltm |
+| application/vnd. ms-outlook | グループ作業 | はい | はい | はい |  | .msg |
+| application/vnd. ms-outlook-pst | Archive/Container |  |  |  | はい | .pst |
+| application/vnd. が application | 生産性 | はい | はい | はい |  | .ppt; .pps;。なべ |
+| アプリケーション/vnd を有効にします。12 | 生産性 | はい | はい | はい |  | .docm |
+| アプリケーション/が application を有効にします。12 | 生産性 | はい | はい | はい |  | normal.dotm |
+| application/vnd. oasis | 生産性 | はい | はい | はい |  | odt  |
+| application/vnd.openxmlformats-officedocument.presentationml.presentation | 生産性 | はい | はい | はい |  | .pptx |
+| openxmlformats-officedocument (アプリケーション/vnd) | 生産性 | はい | はい | はい |  | . ppsx |
+| openxmlformats-officedocument (アプリケーション/vnd) | 生産性 | はい | はい | はい |  | . potx |
+| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | 生産性 | はい | はい | はい |  | .xlsx |
+| application/vnd. openxmlformats-officedocument | 生産性 | はい | はい | はい |  | 。 xltx |
+| application/vnd.openxmlformats-officedocument.wordprocessingml.document | 生産性 | はい | はい | はい |  | .docx |
+| application/vnd. openxmlformats-officedocument | 生産性 | はい | はい | はい |  | .dotx |
+| アプリケーション/vnd visio | 生産性 | はい | はい | はい |  | .vsd |
+| アプリケーション/x-7z-圧縮 | Archive/Container |  |  |  | はい | . 7z |
+| application/xhtml + xml | Document | はい | はい | はい |  | xhtml |
+| application/xml | Document | はい | はい | はい |  | .xml |
+| アプリケーション/x-msaccess.exe | 生産性 | はい | はい | はい |  | .mdb |
+| アプリケーション/x-mspublisher | 生産性 | はい | はい | はい |  | .pub |
+| アプリケーション/x-rar 圧縮 | Archive/Container |  |  |  | はい | rar |
+| アプリケーション/x-tar | Archive/Container |  |  |  | はい | tar |
+| アプリケーション/zip | Archive/Container |  |  |  | はい | .zip |
+| image/bmp | イメージ | はい | はい | はい |  | .bmp |
+| イメージ/emf | イメージ | はい | はい | はい |  | .emf |
+| image/gif | イメージ | はい | はい | はい |  | .gif |
+| image/jpeg | イメージ | はい | はい | はい |  | .jpg、.jpeg、...jpgt |
+| image/png | イメージ | はい | はい | はい |  | .png |
+| image/tiff | イメージ | はい | はい | はい |  | .tif |
+| 画像/vnd. .dwg | 図面 | はい | はい | はい |  | .dwg;。dxf |
+| image/wmf | Document | はい | はい | はい |  | .wmf |
+| message/rfc822 | グループ作業 | はい | はい | はい |  | .eml |
+| text/csv | Document | はい | はい | はい |  | .csv |
+| text/html | Document | はい | はい | はい |  | .html;。shtml.dll; .htm |
+| text/plain | Document | はい | はい | はい |  | .txt、.css、。con; pl; .csv; .dat |
+| テキスト/vcard-連絡先 | グループ作業 | はい | はい | はい |  | .vcf |
 ||||||||

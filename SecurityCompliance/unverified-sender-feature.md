@@ -1,5 +1,5 @@
 ---
-title: Outlook.com および web 上の Outlook で不審なメッセージを特定する
+title: 未確認の送信者
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: フィッシングメッセージがメールボックスに到達しないようにするため、Outlook.com および web 上の Outlook では、送信者が本人であることを確認し、疑わしいメッセージを迷惑メールとしてマークします。
-ms.openlocfilehash: edba30bb2ac0f9dc6ebc12db957a518de0c1b543
-ms.sourcegitcommit: 9907bebc5f225032f681c4952de0b0be2df278ac
+ms.openlocfilehash: 5d4315afb33964e7c466384366b7315287cf6298
+ms.sourcegitcommit: d24f50347c671cf5d2d8afec2f80d37d18af8b5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345912"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867847"
 ---
-# <a name="identify-suspicious-messages-in-outlookcom-and-outlook-on-the-web"></a>Outlook.com および web 上の Outlook で不審なメッセージを特定する
+# <a name="unverified-sender"></a>未確認の送信者
 
 フィッシングメッセージがメールボックスに到達しないようにするため、Outlook.com および web 上の Outlook では、送信者が本人であることを確認し、疑わしいメッセージを迷惑メールとしてマークします。
 
@@ -29,11 +29,27 @@ ms.locfileid: "33345912"
 
 ## <a name="how-can-i-identify-a-suspicious-message-in-my-inbox"></a>受信トレイ内の疑わしいメッセージを特定するには、どうすればよいですか。
 
-web 上の Outlook.com および Outlook on the メッセージの送信者が識別できない場合、または送信者アドレスに表示されているものとは異なる場合のインジケーターを表示します。
+Web 上の Outlook.com および Outlook on the メッセージの送信者が識別できない場合、または送信者アドレスに表示されているものとは異なる場合のインジケーターを表示します。
+
+## <a name="how-to-manage-which-messages-receive-the-unverified-sender-treatment"></a>未確認の送信者の処理を受信するメッセージを管理する方法 
+
+Office 365 をご利用のお客様の場合は、セキュリティ & コンプライアンスセンターを使用してこの機能を管理できます。 
+
+- Office 365 Security & コンプライアンスセンターでは、テナント管理者は、フィッシングポリシーの下にあるスプーフィング対策保護を使用して、この機能をオンまたはオフにすることができます。 また、' Get-antiphishpolicy ' コマンドレットを使用して管理することもできます。 詳細については、「Office 365 のフィッシング対策保護」および「Get-antiphishpolicy」を参照してください。
+
+    ![グラフィックインターフェイスで認証されていない送信者を編集する。](media/unverified-sender-article-editing-unauthenticated-senders.jpg)
+
+- 管理者が誤検知を識別し、送信者が未確認の送信者の処理を受信しないようにする場合は、次のいずれかの操作を実行して、スプーフィングインテリジェンススプーフィング許可リストに送信者を追加することができます。
+        
+    - スプーフィングインテリジェンスの洞察を通じてドメインペアを追加します。 詳細については、「チュートリアル: スプーフィングインテリジェンスの洞察」を参照してください。
+                
+    - Get-phishfilterpolicy コマンドレットを使用して、ドメインペアを追加します。 詳細については、「Get-phishfilterpolicy」および「Office のスプーフィング対策保護」を参照してください365
+
+また、電子メールトランスポートルール (Etr)、安全なドメインリスト (スパム対策ポリシー)、安全な送信者リスト、またはユーザーがこのユーザーを自分のドメイン内の "安全な送信者" として設定している場合にも、未検証の送信者の処理は適用されません。ボックス.
 
 ### <a name="you-see-a--in-the-sender-image"></a>送信者の画像に '? ' が表示される
 
-Outlook.com と web 上の Outlook が電子メール認証手法を使用して送信者の身元を確認できない場合は、送信者の写真に '? ' が表示されます。
+Outlook.com と web 上の Outlook が電子メール認証手法を使用して送信者の身元を確認できない場合は、送信者の写真に '? ' が表示されます。 
 
 ![メッセージが検証に合格しませんでした](media/message-did-not-pass-verification.jpg)
 
@@ -49,7 +65,7 @@ Outlook.com と、web 上の Outlook で、送信者の実際のアドレスと�
 
 この例では、送信側`suspicious.com`ドメインは認証されますが`unknown@contoso.com` 、送信者は差出人アドレスに入力します。
 
-via タグを持つすべてのメッセージが疑わしいとは限りません。 ただし、via タグが付いているメッセージを認識しない場合は、それとの対話に注意する必要があります。
+Via タグを持つすべてのメッセージが疑わしいとは限りません。 ただし、via タグが付いているメッセージを認識しない場合は、それとの対話に注意する必要があります。
 
 Outlook.com と新しい Outlook on the web では、メッセージを開く必要なしに、メッセージ一覧の送信者の名前またはアドレスの上にカーソルを置くと、その電子メールアドレスを確認できます。
 
@@ -63,9 +79,9 @@ Outlook.com と新しい Outlook on the web では、メッセージを開く必
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>Outlook.com と web 上の Outlook で、'? ' および ' via ' プロパティを追加するために使用する条件とは何ですか。
 
-送信者イメージの '? ' の場合: Outlook.com では、メッセージが SPF または dkim 認証のいずれかを通過する必要があります。 詳細については、「 [Set up SPF in office 365](set-up-spf-in-office-365-to-help-prevent-spoofing.md) 」を参照して、スプーフィングを防止し、 [dkim を使用して office 365 のカスタムドメインから送信される送信電子メールを検証](use-dkim-to-validate-outbound-email.md)します。
+送信者イメージの '? ' の場合: Outlook.com では、メッセージが SPF または DKIM 認証のいずれかを通過する必要があります。 詳細については、「 [Set UP SPF In office 365](set-up-spf-in-office-365-to-help-prevent-spoofing.md) 」を参照して、スプーフィングを防止し、 [Dkim を使用して office 365 のカスタムドメインから送信される送信電子メールを検証](use-dkim-to-validate-outbound-email.md)します。
 
-via タグの場合: from アドレスのドメインが dkim シグネチャまたは SMTP メールのドメインと異なる場合、Outlook.com は、この2つのフィールドのいずれかにドメインを表示します (dkim シグネチャを優先します)。
+Via タグの場合: From アドレスのドメインが DKIM シグネチャまたは SMTP メールのドメインと異なる場合、Outlook.com は、この2つのフィールドのいずれかにドメインを表示します (DKIM シグネチャを優先します)。
 
 ### <a name="can-i-override-these-properties-with-ip-allows-exchange-transport-rule-allows-or-safe-senders"></a>これらのプロパティを IP で使用できる、Exchange トランスポートルールの許可、または安全な送信者に上書きすることはできますか。
 
@@ -73,9 +89,9 @@ via タグの場合: from アドレスのドメインが dkim シグネチャま
 
 ### <a name="how-do-i-remove-these-properties"></a>これらのプロパティを削除するにはどうすればよいですか?
 
-送信者の画像の '? ' の場合は、送信者として、SPF または dkim のいずれかを使用してメッセージを認証する必要があります。
+送信者の画像の '? ' の場合は、送信者として、SPF または DKIM のいずれかを使用してメッセージを認証する必要があります。
 
-via タグ: 送信者としての場合は、dkim 署名のドメインまたは SMTP メールが、from アドレスのドメインと同じかサブドメインのものであることを確認する必要があります。
+Via タグ: 送信者としての場合は、DKIM 署名のドメインまたは SMTP メールが、From アドレスのドメインと同じかサブドメインのものであることを確認する必要があります。
 
 ### <a name="does-outlookcom-and-outlook-on-the-web-show-this-for-every-message-that-doesnt-pass-authentication"></a>Outlook.com と web 上の Outlook は、認証を通過しないすべてのメッセージに対してこのように表示されます。
 

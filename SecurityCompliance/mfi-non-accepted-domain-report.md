@@ -9,18 +9,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードで、承認されていないドメインレポートについて学習できます。
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a69a1e59241ea7b6680afe8608534dbf9460c269
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 11bddc79f81c30726ba653eb432238765a8cee74
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252146"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868575"
 ---
 # <a name="non-accepted-domain-report"></a>承認されていないドメインレポート
-
-> [!NOTE]
-> このトピックで説明する機能は、すべての Office 365 組織に展開されていないため、変更される可能性があります。
 
 **送信者のドメイン**の洞察と同様に、承認されてい**ないドメイン**の洞察は社内の電子メール組織からのメッセージを識別しますが、送信者のドメインは Office 365 組織の承認済みドメインとして構成されていません。
 

@@ -9,20 +9,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理者は、Security & コンプライアンスセンターのメールフローダッシュボードの SMTP Auth クライアントレポートについて学習できます。
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b6698345a89edf52e4ee14cea144cb88ff080583
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: df0ef74a3ffd7ae8d36e5d1092b3e23304e1df78
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252567"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868555"
 ---
 # <a name="smtp-auth-clients-report"></a>SMTP 認証クライアントレポート
 
-> [!NOTE]
-> このトピックで説明する機能は、すべての Office 365 組織に展開されていないため、変更される可能性があります。
-
-**smtp auth clients**レポートでは、組織内のユーザーまたはシステムアカウントによる smtp auth クライアント送信プロトコルの使用が強調されています。 この従来のプロトコル (エンドポイント smtp.office365.com を使用します) は基本認証のみを提供し、侵害されたアカウントが電子メールを送信するために使用されやすくなります。  このレポートでは、異常な動作を確認できます。 また、SMTP 認証を使用するクライアントまたはデバイスの TLS 使用状況データも表示されます。
+**Smtp auth clients**レポートでは、組織内のユーザーまたはシステムアカウントによる smtp auth クライアント送信プロトコルの使用が強調されています。 この従来のプロトコル (エンドポイント smtp.office365.com を使用します) は基本認証のみを提供し、侵害されたアカウントが電子メールを送信するために使用されやすくなります。  このレポートでは、異常な動作を確認できます。 また、SMTP 認証を使用するクライアントまたはデバイスの TLS 使用状況データも表示されます。
 
 メールフローダッシュボードに表示されるウィジェットは、過去7日間に SMTP 認証プロトコルを使用したユーザーまたはサービスアカウントの数を示します。
 
@@ -42,7 +38,7 @@ ms.locfileid: "32252567"
 
 ![SMTP Auth Clients レポートでのボリューム送信の詳細表](media/smtp-auth-clients-report-details-sending-volume.png)
 
-tls**使用率**ピボットは、Office 365 の tls 1.0 と tls 1.1 の今後の廃止によって重要です。 多くのレガシデバイスおよびアプリケーションは、SMTP Auth で tls 1.0 を使用できる場合にのみ電子メールを送信できなくなります。このピボットにより、以前のバージョンの TLS を使用しているユーザーとシステムアカウントを識別し、アクションを実行することができます。
+Tls**使用率**ピボットは、Office 365 の tls 1.0 と tls 1.1 の今後の廃止によって重要です。 多くのレガシデバイスおよびアプリケーションは、SMTP Auth で TLS 1.0 を使用できる場合にのみ電子メールを送信できなくなります。このピボットにより、以前のバージョンの TLS を使用しているユーザーとシステムアカウントを識別し、アクションを実行することができます。
 
 ![SMTP Auth Clients レポートでの TLS の使用](media/smtp-auth-clients-report-tls-usage.png)
 

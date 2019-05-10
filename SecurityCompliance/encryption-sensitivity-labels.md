@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを作成するときに、そのラベルが適用されるコンテンツへのアクセスを制限できます。機密ラベルでは、コンテンツの保護のために暗号化を使用できます。
-ms.openlocfilehash: 69deeed69a5b2970d387c30b01a062c6c068c567
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 41e1a9f1c789d555b1b5db3204b13f3279a6b56a
+ms.sourcegitcommit: d17ef25bf2a638c867cd399fff6c961ffeccaba4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257263"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33628332"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>機密ラベルの暗号化を使用してコンテンツへのアクセスを制限する
 
@@ -113,6 +113,26 @@ Rights Management 発行者には、常に、ドキュメントや電子メー�
 - Rights Management 発行者は、失効後のドキュメントも開くことができます。
 
 詳細については、「[Rights Management 発行者と Rights Management 所有者](https://docs.microsoft.com/ja-JP/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)」を参照してください。
+
+## <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>ラベルが適用された場合の既存の暗号化
+
+機密ラベルをコンテンツに適用する前に、ユーザーが他の保護設定を適用してコンテンツを既に暗号化している場合があります。 たとえば、ユーザーが以下を適用している場合があります。
+
+- **転送不可**オプション。
+- Azure Information Protection の統合ラベル付けクライアントを使用したカスタム保護。
+- ラベルには関連付けされずにコンテンツを暗号化する Azure Rights Management Service (RMS) テンプレート。
+
+次の表は、機密ラベルがコンテンツに適用されたときに既存の暗号化がどうなるかについての説明です。
+<br/>
+<br/>
+
+| |**ユーザーが暗号化をオフにして機密ラベルを適用する**|**ユーザーが暗号化をオンにして機密ラベルを適用する**|**ユーザーが保護を解除してラベルを適用する**<sup>1</sup>|
+|:-----|:-----|:-----|:-----|
+|**転送不可**|メール - 保護が解除されます<br/>ドキュメント - 保護が維持されます|ラベルの保護が適用されます|**転送不可**が削除されます|
+|**カスタム保護**<sup>1</sup>|保護が維持されます|ラベルの保護が適用されます|カスタム保護が解除されます|
+|**Azure RMS テンプレート**|保護が維持されます|ラベルの保護が適用されます|カスタム保護が解除されます|
+
+<sup>1</sup>これらは、Azure Information Protection のラベル付けクライアントでのみサポートされています。
 
 ## <a name="storing-encrypted-content-in-onedrive-and-sharepoint"></a>OneDrive および SharePoint に暗号化されたコンテンツを保存する
 

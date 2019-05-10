@@ -9,20 +9,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理者は、「Security & コンプライアンスセンターのメールフローダッシュボードでの送信者ドメインの洞察を修正する」を参照してください。
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bd62d6d0b42edfd1eedf543d7d8bb68903c7c608
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a285a1c744ca540cc58b9408b4ee31e768f89479
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252186"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868565"
 ---
 # <a name="fix-sender-domain-insight"></a>送信者ドメインの洞察を修正する
 
-> [!NOTE]
-> このトピックで説明する機能は、すべての Office 365 組織に展開されていないため、変更される可能性があります。
-
-office 365 では、内部のオンプレミスの電子メール環境から office 365 に送信されるメッセージで、特定のセキュリティ条件を満たす必要があります。
+Office 365 では、内部のオンプレミスの電子メール環境から Office 365 に送信されるメッセージで、特定のセキュリティ条件を満たす必要があります。
 
 - 送信元の IP アドレスまたは証明書を使用して、オンプレミスの電子メールサーバーからの SMTP 接続を認証するために、Office 365 で受信コネクタを作成しました。
 
@@ -32,7 +28,7 @@ office 365 では、内部のオンプレミスの電子メール環境から of
 
   - 送信者の電子メールドメインは、Office 365 組織に登録されています。 詳細については、「Office のドメインを追加する365」を参照してください。
 
-  - オンプレミスの電子メールサーバーが、証明書を使用して office 365 に電子メールを送信するように構成されており、証明書が office 365 に登録したドメイン名と完全に一致していて、それを含む office 365 に証明書ベースのコネクタが作成されている。領域. 
+  - オンプレミスの電子メールサーバーが、証明書を使用して Office 365 に電子メールを送信するように構成されており、証明書が office 365 に登録したドメイン名と完全に一致していて、それを含む Office 365 に証明書ベースのコネクタが作成されている。領域. 
 
 条件を満たしていないメッセージは、組織には含まれず、拒否される可能性があります。
 
