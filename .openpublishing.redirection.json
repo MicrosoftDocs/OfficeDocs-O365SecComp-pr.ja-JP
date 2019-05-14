@@ -154,6 +154,121 @@
         "source_path": "securitycompliance/security-best-practices.md",
         "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/security-roadmap", 
         "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/review-app-discovery-findings-in-ocas.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/daily-activities-to-protect-your-cloud-environment", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/create-app-discovery-reports-in-ocas.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/create-snapshot-cloud-discovery-reports", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/suspend-or-restore-an-account-in-ocas.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/accounts", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/web-traffic-logs-and-data-sources-for-ocas.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/set-up-cloud-discovery", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/manage-app-permissions-in-ocas.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/manage-app-permissions", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/investigate-an-activity-in-office-365-cas.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/investigate", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/review-office-365-cas-alerts.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/monitor-alerts", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/utilization-activities-for-ocas.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/control", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/integrate-your-siem-server-with-office-365-cas.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/siem", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/office-365-cas-overview.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/new-in-office-365-cas.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/release-notes", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/new-in-office-365-cas-2018.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/release-note-archive", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/new-in-office-365-cas-2017.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/release-note-archive", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/get-ready-for-office-365-cas.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/turn-on-office-365-cas.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/general-setup", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/activity-policies-and-alerts.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/user-activity-policies", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/anomaly-detection-policies-in-ocas.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/ocas-conditional-access-app-control.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/proxy-intro-aad", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/ocas-session-policies.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/session-policy-aad", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/ocas-access-policies.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/access-policy-aad", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/group-your-ip-addresses-in-ocas.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/ip-tags", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/ocas-deploy-conditional-access-app-control.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad", 
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "securitycompliance/security-policy-reference-information-for-ocas.md",
+        "redirect_url": "https://docs.microsoft.com/cloud-app-security/control",
+        "redirect_document_id": false
     }                                
   ] 
 }
