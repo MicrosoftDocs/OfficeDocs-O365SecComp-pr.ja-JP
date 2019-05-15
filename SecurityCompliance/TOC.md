@@ -182,19 +182,19 @@
 ## [侵害された Office 365 電子メール アカウントへの対応](responding-to-a-compromised-email-account.md)
 
 # レコード管理
-## [ファイル計画マネージャー](file-plan-manager.md)
-## [保持ラベル](labels.md)
-### [SEC Rule 17a-4 に準拠する ](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+## ファイル計画
+### [ファイル計画マネージャー](file-plan-manager.md)
+### [保持ラベル](labels.md)
 ### [PowerShell を使用して保持ラベルを作成および発行する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-## [イベント ベースの保持](event-driven-retention.md)
-### [イベント ベースの保持を自動化する](automate-event-driven-retention.md)
-## [廃棄確認](disposition-reviews.md)
-## レコード管理の監視
-### [データ ガバナンスのレポートを表示する](view-the-data-governance-reports.md)
+### [ラベル分析によるラベル使用状況を表示する](label-analytics.md)
 ### [ドキュメントのラベルのアクティビティを表示する](view-label-activity-for-documents.md)
-### [ラベル分析によるラベル使用状況の表示](label-analytics.md)
-## レコード管理についての詳細
-### [Microsoft Data Governance チームによるビデオを見る](https://go.microsoft.com/fwlink/?linkid=867039)
+### [データ ガバナンスのレポートを表示する](view-the-data-governance-reports.md)
+## イベント
+### [イベント ベースの保持](event-driven-retention.md)
+### [イベント ベースの保持を自動化する](automate-event-driven-retention.md)
+## [廃棄](disposition-reviews.md)
+## レコード管理の詳細情報
+### [レコード管理のビデオを見る](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # データ ガバナンスを管理する
 ## [データをインポートする](importing-pst-files-to-office-365.md)
