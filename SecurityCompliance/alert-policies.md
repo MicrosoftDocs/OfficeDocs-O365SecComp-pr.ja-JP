@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: セキュリティ/コンプライアンスセンターのアラートポリシーを Office 365 および Microsoft 365 に作成し、潜在的な脅威、データ損失、およびアクセス許可の問題を監視します。 これにより、ユーザーがアラートポリシーの条件に一致するアクティビティを実行するときに生成されるアラートを表示および管理できます。
-ms.openlocfilehash: 7d7ef6f1f9737a0da3787b093d499a0833885eff
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 57b30a3c7202940ebb5422d7ef392e93c5351bfb
+ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33516505"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33979503"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>セキュリティ/コンプライアンスセンターのアラートポリシー
 
@@ -229,7 +229,8 @@ $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------
     
 ## <a name="viewing-cloud-app-security-alerts"></a>Cloud App Security alerts の表示
   
-Office 365 Cloud App Security ポリシーによってトリガーされた通知は、セキュリティ/コンプライアンスセンターの [**通知の表示**] ページに表示されるようになりました。 これには、Office 365 Cloud App Security の異常検出ポリシーによってトリガーされたアクティビティポリシーとアラートによってトリガーされるアラートが含まれます。 これは、セキュリティ/コンプライアンスセンターですべての警告を表示できることを意味します。 Office 365 Cloud App Security は、Office 365 Enterprise E5 または Office 365 US Government G5 サブスクリプションを使用している組織に対してのみ使用できます。 詳細については、「 [Office 365 Cloud App Security の概要](office-365-cas-overview.md)」を参照してください。
+Office 365 Cloud App Security ポリシーによってトリガーされた通知は、セキュリティ/コンプライアンスセンターの [**通知の表示**] ページに表示されるようになりました。 これには、Office 365 Cloud App Security の異常検出ポリシーによってトリガーされたアクティビティポリシーとアラートによってトリガーされるアラートが含まれます。 これは、セキュリティ/コンプライアンスセンターですべての警告を表示できることを意味します。 Office 365 Cloud App Security は、Office 365 Enterprise E5 または Office 365 US Government G5 サブスクリプションを使用している組織に対してのみ使用できます。 詳細については、「 [Cloud App Security の概要](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
+)」を参照してください。
 
 さらに、Microsoft Cloud App Security を Enterprise Mobility + Security E5 サブスクリプションの一部として、またはスタンドアロンサービスとして持っている組織では、セキュリティ & の Office 365 アプリおよびサービスに関連する Cloud App Security alerts を表示することもできます。コンプライアンスセンター
 
@@ -237,7 +238,7 @@ Office 365 Cloud App Security ポリシーによってトリガーされた通�
 
 ![ソースフィルターを使用して Cloud App Security alerts のみを表示する](media/FilterCASAlerts.png)
 
-セキュリティ/コンプライアンスセンターのアラートポリシーによってトリガーされる警告と同様に、Cloud App Security のアラートをクリックして、アラートの詳細を示すフライアウトページを表示することができます。 通知には、Cloud App Security portal で詳細情報を表示し、アラートを管理するためのリンクが含まれています。これには、アラートをトリガーした対応する Cloud App Security policy へのリンクが含まれています。 「 [Office 365 Cloud App Security で通知を確認してアクションを実行](review-office-365-cas-alerts.md)する」を参照してください。
+セキュリティ/コンプライアンスセンターのアラートポリシーによってトリガーされる警告と同様に、Cloud App Security のアラートをクリックして、アラートの詳細を示すフライアウトページを表示することができます。 通知には、Cloud App Security portal で詳細情報を表示し、アラートを管理するためのリンクが含まれています。これには、アラートをトリガーした対応する Cloud App Security policy へのリンクが含まれています。 「 [Cloud App Security でアラートを監視](https://docs.microsoft.com/cloud-app-security/monitor-alerts)する」を参照してください。
 
 ![アラートの詳細に、Cloud App Security ポータルへのリンクが含まれています。](media/CASAlertDetail.png)
 
