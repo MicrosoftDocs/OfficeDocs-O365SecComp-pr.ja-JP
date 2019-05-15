@@ -3,7 +3,7 @@ title: セキュリティ&amp; /コンプライアンスセンターで電子メ
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/19/2019
+ms.date: 05/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Office 365 Enterprise を使用して組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ&amp;コンプライアンスセンターで利用できます。
-ms.openlocfilehash: 1a885661f5bf020c325ee2d9f084473ecb27c53a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4271f26c0d8a0a9a5bd4085e38daaabcc375512c
+ms.sourcegitcommit: 7ad5618db6004757599d8b7c153fdb6ab3ba3f6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267941"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33970258"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する
 
@@ -31,7 +31,7 @@ ms.locfileid: "32267941"
 電子メールのセキュリティレポートには、次のようなものがあります。
 - [暗号化レポート](#encryption-report)(新)
 - [脅威保護の状態レポート](#threat-protection-status-report) 
-- [マルウェア検出レポート](#malware-detections-report)    
+- [マルウェア検出レポート](#malware-detections-report) 
 - [上位マルウェアレポート](#top-malware-report)
 - [[上位送信者および受信者] レポート](#top-senders-and-recipients-report)
 - [スプーフィング検出レポート](#spoof-detections-report)
@@ -41,27 +41,27 @@ ms.locfileid: "32267941"
     
 ## <a name="encryption-report"></a>暗号化レポート
 
-(**新**)**暗号化レポート**には、ポリシーまたはエンドユーザーコントロールによって暗号化された電子メールメッセージに関する情報が表示されます。 組織のセキュリティチームは、この情報を使用してパターンを識別し、機密性の高い電子メールメッセージのポリシーを事前に適用または調整することができます。
+(**新**)**暗号化レポート**には、組織のポリシーによって、またはエンドユーザーの制御によって暗号化された電子メールメッセージに関する情報が表示されます。 組織のセキュリティチームは、このレポートの情報を使用して、パターンを識別し、機密性の高い電子メールメッセージのポリシーを事前に適用または調整することができます。
 
 このレポートを表示するには、セキュリティ & コンプライアンスセンターで、[**レポート** \> **ダッシュボード** \>の**暗号化レポート**] に移動します。
 
 ![暗号化レポート](media/encryptionreport-defaultview.png) 
 
-最初にレポートを開くと、過去7日間の電子メールメッセージで使用されていた暗号化方法に関するデータが表示されます。 レポートで日付の範囲と詳細を変更するには、画面の右上隅にある [フィルター] をクリックします。
+最初にレポートを開くと、過去7日間の電子メールメッセージで使用されていた暗号化方法に関するデータが表示されます。 レポートに表示される日付の範囲と詳細を変更するには、画面の右上隅にある [**フィルター** ] をクリックします。
 
 ![暗号化レポートのフィルター](media/encryptionreport-filters.png)   
 
-[分解] メニューを使用して、データを暗号化テンプレート (またはメソッド) 別に表示することもできます。
+[**分解**] メニューを使用して、データを暗号化テンプレート (またはメソッド) 別に表示することもできます。
 
 ![暗号化方法またはテンプレート](media/encryptionreport-breakdownby.png)
 
-また、[データの表示] メニューを使用して、上位5人の受信者ドメインに対する暗号化されたメッセージの数を表示するようにビューを変更できます。
+また、[**データの表示**] メニューを使用して、上位5人の受信者ドメインに対する暗号化されたメッセージの数を表示するようにビューを変更できます。
 
 ![暗号化レポートのデータをメニュー別に表示する](media/encryptionreport-viewdataby.png)
 
 新しい暗号化レポートを柔軟に使用することで、傾向を表示し、適切な操作を実行できます。 たとえば、ユーザーによって大量の電子メールメッセージが暗号化されている場合、暗号化ポリシーを追加して、特定のユースケースの暗号化を自動化することができます。 (詳細については、「 [Office 365 で電子メールメッセージを暗号化するためのメールフロールールを定義する](define-mail-flow-rules-to-encrypt-email.md)」を参照してください)。もう1つの例として、使用可能な暗号化テンプレートが多数あり、それを使用しているユーザーがいない場合は、その機能についてユーザーにトレーニングが必要かどうかを調べることができます。 
 
-このレポートを使用すると、組織のセキュリティとコンプライアンスチームは、メッセージの暗号化の使用方法と、さらにアクションが必要かどうかを監視できます。
+このレポートを使用すると、組織のセキュリティとコンプライアンスチームは、メッセージの暗号化の使用方法と、さらにアクションが必要かどうかを監視できます。 暗号化の詳細については、「 [Office の電子メールの暗号化 365](email-encryption.md)」を参照してください。
 
 ## <a name="threat-protection-status-report"></a>脅威保護の状態レポート
 
@@ -74,7 +74,7 @@ ms.locfileid: "32267941"
   
 ![脅威保護の状態レポート](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
-脅威保護の状態レポートを初めて開いたとき、既定では過去7日間のデータがレポートに表示されます。ただし、[**フィルター** ] をクリックして、最大90日間の日付範囲を変更することができます。 このレポートは、組織の Exchange Online Protection 機能の有効性と影響、および長期的な傾向を確認するのに役立ちます。 
+脅威保護の状態レポートを初めて開いたとき、既定では過去7日間のデータがレポートに表示されます。ただし、[**フィルター** ] をクリックして、最大90日間の日付範囲を変更することができます。 このレポートは、組織の[Exchange Online Protection 機能](eop/eop-features.md)の有効性と影響、および長期的な傾向を確認するのに役立ちます。 
   
 ![脅威保護の状態レポートのフィルター](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
   
@@ -90,11 +90,11 @@ ms.locfileid: "32267941"
   
 ![マルウェア検出レポートの例](media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
   
-脅威保護の状態レポートなどの他のレポートと同様に、レポートには既定で過去7日間のデータが表示されます。 ただし、[**フィルター** ] を選択して、日付の範囲を変更できます。 
+[脅威保護の状態レポート](#threat-protection-status-report)などの他のレポートと同様に、レポートには既定で過去7日間のデータが表示されます。 ただし、[**フィルター** ] を選択して、日付の範囲を変更できます。 
   
 ## <a name="top-malware-report"></a>上位マルウェアレポート
 
-**上位マルウェア**レポートには、Exchange Online によって検出されたさまざまな種類のマルウェアが表示されます。 
+**上位マルウェア**レポートには、 [Exchange Online](eop/eop-features.md)によって検出されたさまざまな種類のマルウェアが表示されます。 
   
 このレポートを表示するには[、 &amp;セキュリティ/コンプライアンスセンター](https://protection.office.com)で、[ **Reports** \> **Dashboard** \> **Top マルウェア**] に移動します。
   
@@ -120,7 +120,7 @@ ms.locfileid: "32267941"
   
 レポートをクリック (またはタップ) して、新しいブラウザーウィンドウでレポートを開きます。これにより、レポートの詳細が表示されます。
   
-[**データの表示**] リストを使用して、上位の送信者、受信者、スパム受信者、およびマルウェア受信者のデータを表示するかどうかを選択します。 Advanced Threat Protection によって検出されたマルウェアの受信者を確認することもできます。 
+[**データの表示**] リストを使用して、上位の送信者、受信者、スパム受信者、およびマルウェア受信者のデータを表示するかどうかを選択します。 また、 [Exchange Online Protection](eop/exchange-online-protection-overview.md)によって検出されたマルウェアの受信者を確認することもできます。 
   
 ![特定の情報を表示するには、[データの表示] リストを使用します。](media/bd91449f-7d42-4749-8666-7b44044049b8.png)
   
@@ -136,7 +136,7 @@ ms.locfileid: "32267941"
   
 グラフの1日をポイントすると、受信したスプーフィングメールメッセージの数を確認できます。
   
-レポートをクリック (またはタップ) して、新しいブラウザーウィンドウでレポートを開きます。これにより、レポートの詳細が表示されます。
+レポートをクリック (またはタップ) して、新しいブラウザーウィンドウでレポートを開きます。これにより、レポートの詳細が表示されます。 スプーフィング対策保護の詳細については、「 [Office 365 のスプーフィング対策保護](anti-spoofing-protection.md)」を参照してください。
   
 ## <a name="spam-detections-report"></a>スパム検出レポート
 
@@ -152,7 +152,7 @@ ms.locfileid: "32267941"
   
 ![スパム検出レポートでは、ブロックまたはフィルターで除外されたスパムメッセージの数がわかります。](media/370ec67d-eb30-4863-bfcf-68a41be02295.png)
   
-グラフの下に、検出されたスパムアイテムの一覧が表示されます。 その他の情報を表示するアイテムを選択します。これには、受信または送信、メッセージ ID、受信者などの追加情報が表示されます。
+グラフの下に、検出されたスパムアイテムの一覧が表示されます。 その他の情報を表示するアイテムを選択します。これには、受信または送信、メッセージ ID、受信者などの追加情報が表示されます。 スパム対策保護の詳細については、「 [Office 365 電子メールのスパム対策保護](anti-spam-protection.md)」を参照してください。
   
 ## <a name="sent-and-received-email-report"></a>送信および受信した電子メールレポート
 
@@ -173,6 +173,8 @@ ms.locfileid: "32267941"
 グラフの下に、 **GoodMail**、 **SpamContentFiltered**などの電子メールカテゴリの一覧が表示されます。 カテゴリを選択して、マルウェアに対して行われたアクションや電子メールが受信または送信されたかどうかなどの追加情報を表示します。
   
 ![このレポートは、マルウェア対策、スパム対策、およびその他のメッセージの検出に関する情報を示します。](media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
+
+電子メールインテリジェンスの詳細については、「 [Office 365 のメールフローインテリジェンス](mail-flow-intelligence-in-office-365.md)」を参照してください。
   
 ## <a name="user-reported-messages-report"></a>ユーザーによって報告されたメッセージレポート
 
@@ -202,7 +204,7 @@ ms.locfileid: "32267941"
     - セキュリティ管理者 (Azure Active Directory 管理センターで割り当てることができます[https://aad.portal.azure.com](https://aad.portal.azure.com)()
     - セキュリティリーダ
 
-- exchange online の場合は、exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) または PowerShell コマンドレット (「 [exchange online powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)」を参照) のいずれかで、次のいずれかの役割が割り当てられている必要があります。
+- Exchange Online の場合は、Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) または PowerShell コマンドレット (「 [Exchange online Powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)」を参照) のいずれかで、次のいずれかの役割が割り当てられている必要があります。
     - 組織の管理
     - 表示限定の組織管理
     - "View-Only Recipients/表示専用受信者" 役割
@@ -217,9 +219,9 @@ ms.locfileid: "32267941"
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートでデータが表示されない場合はどうなりますか。
 
-レポートにデータが表示されない場合は、ポリシーが正しく設定されているかどうかを再確認してください。 詳細については、「 [Office 365 のスパム対策およびマルウェア対策保護](anti-spam-and-anti-malware-protection.md)」を参照してください。
+レポートにデータが表示されない場合は、ポリシーが正しく設定されているかどうかを再確認してください。 詳細については、「 [Office 365 の脅威から保護](protect-against-threats.md)する」を参照してください。
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Office 365 の電子メールのスパム対策保護](anti-spam-protection.md)
   
