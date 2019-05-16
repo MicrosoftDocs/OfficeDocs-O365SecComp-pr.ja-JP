@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContentPropertyContainsWords
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 多くの組織では、Windows Server ファイル分類インフラストラクチャ (fci) の分類プロパティ、SharePoint のドキュメントプロパティ、またはドキュメントプロパティを使用して、機密情報を識別して分類するプロセスが既に存在します。サードパーティ製のシステムによって適用されます。 これが組織を説明している場合は、office 365 で、Windows Server fci または他のシステムによってドキュメントに適用されたプロパティを認識する dlp ポリシーを作成して、特定の fci またはその他の office ドキュメントに dlp ポリシーを適用できるようにすることができます。プロパティの値。
-ms.openlocfilehash: ad643c77d477f6b9aaecb122010584510ea9bf7e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 多くの組織では、Windows Server ファイル分類インフラストラクチャ (FCI) の分類プロパティ、SharePoint のドキュメントプロパティ、またはドキュメントプロパティを使用して、機密情報を識別して分類するプロセスが既に存在します。サードパーティ製のシステムによって適用されます。 これが組織を説明している場合は、Office 365 で、Windows Server FCI または他のシステムによってドキュメントに適用されたプロパティを認識する DLP ポリシーを作成して、特定の FCI またはその他の Office ドキュメントに DLP ポリシーを適用できるようにすることができます。プロパティの値。
+ms.openlocfilehash: 4db84ac4fd0c62dff0834c68827808f832a36d03
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265314"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077283"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>FCI または他のプロパティを使用したドキュメントを保護する DLP ポリシーを作成する
 
@@ -28,7 +28,7 @@ Office 365 でデータ損失防止 (DLP) ポリシーを使用すると、機�
   
 ![Office 365 と外部の分類システムを示す図](media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
   
-たとえば、組織において、Windows Server FCI を使用して社会保障番号などの個人情報 (PII) が含まれるドキュメントを識別し、ドキュメント内で検出された個人情報の種類と検出回数に基づいて [**個人情報**] プロパティを [**高**]、[**中**]、[**低**]、[**公開**]、または [**個人情報ではない**] に設定することによってドキュメントの分類を行っている場合があります。 Office 365 では、それらのプロパティが [**高**] や [**中**] などの特定の値に設定されているドキュメントを識別し、それらのファイルに対するアクセスをブロックするなどのアクションを実行する DLP ポリシーを作成できます。 プロパティが [**低**] に設定されている場合には (電子メールの通知送信などの) 異なるアクションを実行する別のルールを同じポリシーに含めることができます。 このようにして、office 365 の DLP が windows server fci と統合されており、windows server ベースのファイルサーバーから office 365 にアップロードまたは共有される office ドキュメントを保護するのに役立ちます。
+たとえば、組織において、Windows Server FCI を使用して社会保障番号などの個人情報 (PII) が含まれるドキュメントを識別し、ドキュメント内で検出された個人情報の種類と検出回数に基づいて [**個人情報**] プロパティを [**高**]、[**中**]、[**低**]、[**公開**]、または [**個人情報ではない**] に設定することによってドキュメントの分類を行っている場合があります。 Office 365 では、それらのプロパティが [**高**] や [**中**] などの特定の値に設定されているドキュメントを識別し、それらのファイルに対するアクセスをブロックするなどのアクションを実行する DLP ポリシーを作成できます。 プロパティが [**低**] に設定されている場合には (電子メールの通知送信などの) 異なるアクションを実行する別のルールを同じポリシーに含めることができます。 このようにして、Office 365 の DLP が Windows Server FCI と統合されており、Windows Server ベースのファイルサーバーから Office 365 にアップロードまたは共有される Office ドキュメントを保護するのに役立ちます。
   
 DLP ポリシーは、特定のプロパティの名前と値のペアを探すだけです。対象プロパティに SharePoint 検索の対応する管理プロパティが含まれる場合には、任意のドキュメント プロパティを使用できます。たとえば、SharePoint のサイト コレクションが [**旅行レポート**] という名前のコンテンツの種類を使用し、[**顧客**] という必須フィールドが指定されているとします。ユーザーが旅行レポートを作成するたびに、顧客名を入力する必要が生じます。このプロパティの名前と値のペアを DLP ポリシーでも使用できます。たとえば、[**顧客**] フィールドに [**Contoso**] が含まれるときに外部ユーザーによるドキュメントへのアクセスをブロックするルールを作成できます。
   
@@ -78,19 +78,19 @@ DLP ポリシーで Windows Server FCI プロパティまたは他のプロパ�
     
 ## <a name="create-a-dlp-policy-that-uses-an-fci-property-or-other-property"></a>FCI プロパティまたは他のプロパティを使用する DLP ポリシーを作成する
 
-この例では、組織が Windows Server ベースのファイルサーバー上で fci を使用しています。具体的には、[**高**]、[中]、[**低**]、[**パブリック**]、 **** および [PII] で**はなく**、可能な値を持つ、"**個人識別情報**" という名前の fci 分類プロパティを使用しています。 ここで、Office 365 の DLP ポリシーで既存の fci 分類を活用することを希望しています。
+この例では、組織が Windows Server ベースのファイルサーバー上で FCI を使用しています。具体的には、[**高**]、[中]、[**低**]、[**パブリック**]、 **** および [PII] で**はなく**、可能な値を持つ、"**個人識別情報**" という名前の fci 分類プロパティを使用しています。 ここで、Office 365 の DLP ポリシーで既存の FCI 分類を活用することを希望しています。
   
 まず、前述の手順に従って SharePoint Online で管理プロパティを作成します。管理プロパティを、FCI に基づいて自動作成された、クロールされたプロパティにマッピングします。
   
 次に、2つのルールを使用する DLP ポリシーを作成します。両方のプロパティには、条件**ドキュメントプロパティに次のいずれかの値が含まれ**ています。
   
-- **fci PII コンテンツ-高、** 中最初のルールは、fci 分類プロパティの個人を特定できる**情報**が**高**または**モデレート**で、ドキュメントが組織外のユーザーと共有されている場合に、ドキュメントへのアクセスを制限します。 
+- **Fci PII コンテンツ-高、** 中最初のルールは、FCI 分類プロパティの個人を特定できる**情報**が**高**または**モデレート**で、ドキュメントが組織外のユーザーと共有されている場合に、ドキュメントへのアクセスを制限します。 
     
-- **fci PII コンテンツ-低**2番目のルールは、fci 分類プロパティの個人を特定できる**情報**が**少なく**、ドキュメントが組織外のユーザーと共有されている場合に、ドキュメント所有者に通知を送信します。 
+- **Fci PII コンテンツ-低**2番目のルールは、FCI 分類プロパティの個人を特定できる**情報**が**少なく**、ドキュメントが組織外のユーザーと共有されている場合に、ドキュメント所有者に通知を送信します。 
     
 ### <a name="create-the-dlp-policy-by-using-powershell"></a>PowerShell を使用して DLP ポリシーを作成する
 
-condition**ドキュメントプロパティにこれらの値のいずれかが含ま**れていることに注意してください&amp; 。これらの値は、セキュリティコンプライアンスセンターの UI では一時的に使用できませんが、PowerShell を使用してこの条件を引き続き使用することができます。 コマンドレットを使用して DLP ポリシーを操作`ContentPropertyContainsWords`し、パラメーターを指定`New\Set\Get-DlpComplianceRule`したコマンドレットを使用して、条件**ドキュメントプロパティにこれらの値のいずれかを含める**ことができます。 `New\Set\Get-DlpCompliancePolicy`
+Condition**ドキュメントプロパティにこれらの値のいずれかが含ま**れていることに注意してください&amp; 。これらの値は、セキュリティコンプライアンスセンターの UI では一時的に使用できませんが、PowerShell を使用してこの条件を引き続き使用することができます。 コマンドレットを使用して DLP ポリシーを操作`ContentPropertyContainsWords`し、パラメーターを指定`New\Set\Get-DlpComplianceRule`したコマンドレットを使用して、条件**ドキュメントプロパティにこれらの値のいずれかを含める**ことができます。 `New\Set\Get-DlpCompliancePolicy`
   
 これらのコマンドレットの詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのコマンドレット](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)」を参照してください。
   
@@ -112,7 +112,7 @@ condition**ドキュメントプロパティにこれらの値のいずれかが
       New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
       ```
 
-    Windows Server fci には、この例で使用されている**個人を特定できる情報**を含む、多くの組み込みのプロパティが含まれていることに注意してください。 各プロパティに指定できる値は、すべての組織によって異なる場合があります。 ここで使用**** されているのは、次に示すように、**高**、中、**低**の値だけです。 組織では、windows server fci 分類プロパティを、windows server ベースのファイルサーバー上のファイルサーバーリソースマネージャーで指定可能な値で表示できます。 詳細については、「[分類プロパティを作成する](http://go.microsoft.com/fwlink/p/?LinkID=627456)」を参照してください。
+    Windows Server FCI には、この例で使用されている**個人を特定できる情報**を含む、多くの組み込みのプロパティが含まれていることに注意してください。 各プロパティに指定できる値は、すべての組織によって異なる場合があります。 ここで使用**** されているのは、次に示すように、**高**、中、**低**の値だけです。 組織では、windows server FCI 分類プロパティを、Windows Server ベースのファイルサーバー上のファイルサーバーリソースマネージャーで指定可能な値で表示できます。 詳細については、「[分類プロパティを作成する](http://go.microsoft.com/fwlink/p/?LinkID=627456)」を参照してください。
     
 完了したら、ドキュメントプロパティを使用する2つの新しいルールに**これらの値の条件が含まれ**ている必要があります。 この条件は UI には表示されませんが、他の条件、アクション、設定が表示されることに注意してください。 
   

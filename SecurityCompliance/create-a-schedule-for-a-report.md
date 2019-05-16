@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/1/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを設定する方法について説明します。
-ms.openlocfilehash: 2c385dad023febef4ad8b36b8f92f66cbb5b082e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: cd7856a55f6d3442d96941012d5d06bf93c3d9d7
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258719"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077603"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを作成する
 
@@ -49,7 +49,7 @@ ms.locfileid: "32258719"
     
 レポートのスケジュールを作成すると、そのレポートは電子メールによって受信者の電子メールアドレスに自動的に配信されます。 
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Office 365 セキュリティ&amp; /コンプライアンスセンターのレポートと分析情報](reports-and-insights-in-security-and-compliance.md)
   

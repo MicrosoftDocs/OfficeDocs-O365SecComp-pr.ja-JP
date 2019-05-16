@@ -3,7 +3,7 @@ title: SharePoint、OneDrive、Microsoft Teams の Office 365 ATP を有効に�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.date: 02/06/2019
 ms.service: O365-seccomp
@@ -15,16 +15,16 @@ ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 ms.collection:
 - M365-security-compliance
 description: 検出されたファイルに対して通知を設定する方法など、SharePoint、OneDrive、Teams の ATP を有効にする方法について説明します。
-ms.openlocfilehash: 30eb28bfc5156664656ca1c200f9e999661b3b0c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6b7403ceff810d96c677fc6af7673547424346b8
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264303"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077243"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams の Office 365 ATP を有効にする
 
-[Office 365 ATP for SharePoint、OneDrive、Microsoft Teams では](atp-for-spo-odb-and-teams.md)、組織が悪意のあるファイルを誤って共有することを防止します。 悪意のあるファイルが検出されると、そのファイルはブロックされるようになり、組織のセキュリティチームによって追加の操作が行われるまで、そのファイルを開いたり、コピー、移動、または共有することができなくなります。 この記事では、SharePoint、OneDrive、Teams の ATP を有効にし、検出されたファイルについて通知する通知を設定し、次の手順を実行します。 
+[Office 365 ATP For SharePoint、OneDrive、Microsoft Teams では](atp-for-spo-odb-and-teams.md)、組織が悪意のあるファイルを誤って共有することを防止します。 悪意のあるファイルが検出されると、そのファイルはブロックされるようになり、組織のセキュリティチームによって追加の操作が行われるまで、そのファイルを開いたり、コピー、移動、または共有することができなくなります。 この記事では、SharePoint、OneDrive、Teams の ATP を有効にし、検出されたファイルについて通知する通知を設定し、次の手順を実行します。 
   
 ATP ポリシーを定義 (または編集) するには、適切な役割が割り当てられている必要があります。 次の表では、いくつかの例について説明します。
 
@@ -42,7 +42,7 @@ ATP ポリシーを定義 (または編集) するには、適切な役割が割
     
 2. Office 365 &amp;セキュリティ/コンプライアンスセンターの左側のナビゲーションウィンドウで、[**脅威の管理**] の下にある [**ポリシー** \>の**安全な添付ファイル**] を選択します。 <br/>![セキュリティ&amp; /コンプライアンスセンターで、[脅威管理\>ポリシー] を選択します。](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   
-3. [ **SharePoint、OneDrive、Microsoft Teams に対して ATP を有効にする**] を選択します。<br/>![SharePoint Online、OneDrive for business、Microsoft Teams の Advanced Threat Protection を有効にします。](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
+3. [ **SharePoint、OneDrive、Microsoft Teams に対して ATP を有効にする**] を選択します。<br/>![SharePoint Online、OneDrive for Business、Microsoft Teams の Advanced Threat Protection を有効にします。](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
   
 4. **[保存]** をクリックします。
     
@@ -56,13 +56,13 @@ ATP ポリシーを定義 (または編集) するには、適切な役割が割
     
 8. 勧め検出されたファイルの通知の設定に進みます。
     
-office 365 での powershell の使用の詳細については、「 [Manage office 365 with powershell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)」を参照してください。 
+Office 365 での PowerShell の使用の詳細については、「 [Manage office 365 With powershell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)」を参照してください。 
 
 ファイルが悪意のあるものとして検出された場合のユーザーの操作の詳細については、「 [SharePoint Online、OneDrive、または Microsoft Teams で悪意のあるファイルが検出された場合の対処](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)方法」を参照してください。 
   
 ## <a name="set-up-alerts-for-detected-files"></a>検出されたファイルの通知を設定する
 
-SharePoint Online、OneDrive for business、または Microsoft Teams のファイルが悪意のあるものとして識別された場合に通知を受け取るには、警告を設定します。
+SharePoint Online、OneDrive for Business、または Microsoft Teams のファイルが悪意のあるものとして識別された場合に通知を受け取るには、警告を設定します。
   
 1. [Office 365 セキュリティ&amp; /コンプライアンスセンター](https://protection.office.com)で、[ **** \>警告の**管理**] を選択します。
     

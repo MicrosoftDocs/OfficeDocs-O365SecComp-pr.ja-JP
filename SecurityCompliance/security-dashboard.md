@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/19/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 新しいセキュリティダッシュボードを使用して、Office 365 の脅威保護の状態を確認し、セキュリティの警告を表示して操作します。
-ms.openlocfilehash: 83e75f1a38038f1c95697f4db3e7b1134d03779d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 46f11a4e5693cf243ff72acd6d87406c34af247a
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261094"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077223"
 ---
 # <a name="security-dashboard"></a>セキュリティダッシュボード
 
@@ -45,12 +45,12 @@ ms.locfileid: "32261094"
 
 ![セキュリティダッシュボード-脅威管理の概要ウィジェット](media/SecDash-ThreatMgmtSummary.png)
 
-脅威管理の概要に表示される情報は、サブスクリプションの内容によって異なります。 次の表では、office 365 enterprise E3 および office 365 enterprise E5 に含まれる情報について説明します。
+脅威管理の概要に表示される情報は、サブスクリプションの内容によって異なります。 次の表では、Office 365 Enterprise E3 および Office 365 Enterprise E5 に含まれる情報について説明します。
 
 
 |Office 365 Enterprise E3  |Office 365 Enterprise E5  |
 |---------|---------|
-|ブロックされるマルウェアメッセージ<br/>ブロックされたフィッシングメッセージ<br>ユーザーによって報告されるメッセージ<br><br><br><br> |ブロックされるマルウェアメッセージ<br>ブロックされたフィッシングメッセージ<br>ユーザーによって報告されるメッセージ<br>ゼロ日のマルウェアがブロックされる<br>検出された高度なフィッシングメッセージ<br>ブロックされた悪意のある url |
+|ブロックされるマルウェアメッセージ<br/>ブロックされたフィッシングメッセージ<br>ユーザーによって報告されるメッセージ<br><br><br><br> |ブロックされるマルウェアメッセージ<br>ブロックされたフィッシングメッセージ<br>ユーザーによって報告されるメッセージ<br>ゼロ日のマルウェアがブロックされる<br>検出された高度なフィッシングメッセージ<br>ブロックされた悪意のある Url |
 
 脅威管理の概要ウィジェットを表示またはアクセスするには、高度な脅威保護レポートを表示するためのアクセス許可を持っている必要があります。 詳細については、「 [ATP レポートを表示するために必要なアクセス許可](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)」を参照してください。 
 
@@ -68,7 +68,7 @@ ms.locfileid: "32261094"
 |EOP ではないが、Office 365 ATP     |EOP によって検出およびブロックされた悪意のある電子メール<br> 「[脅威保護の状態レポート (EOP)](view-email-security-reports.md#threat-protection-status-report)」を参照してください。| |
 |Office 365 ATP |EOP および Office 365 ATP により、悪意のあるコンテンツや悪意のある電子メールが検出されブロックされる<br>マルウェア対策エンジン、[ゼロ時間自動削除](zero-hour-auto-purge.md)、atp 機能 ([安全なリンク](atp-safe-links.md)、[安全な添付ファイル](atp-safe-attachments.md)、 [atp のフィッシング対策](atp-anti-phishing.md)など) によってブロックされた一意の電子メールメッセージの集計数。<br>「[脅威保護の状態レポート (ATP)](view-reports-for-atp.md#threat-protection-status-report)」を参照してください。 | 
 
-脅威保護状態ウィジェットを表示またはアクセスするには、Advanced threat protection レポートを表示する権限が必要です。 詳細については、「 [ATP レポートを表示するために必要なアクセス許可](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)」を参照してください。 
+脅威保護状態ウィジェットを表示またはアクセスするには、Advanced Threat Protection レポートを表示する権限が必要です。 詳細については、「 [ATP レポートを表示するために必要なアクセス許可](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)」を参照してください。 
 
 ## <a name="global-weekly-threat-detections"></a>グローバルな毎週の脅威の検出
  
@@ -97,11 +97,11 @@ ms.locfileid: "32261094"
 
 ![Smart insights](media/smartinsights.png)
 
-たとえば、一部のユーザーが迷惑メールのオプションを無効にしているために、フィッシング電子メールメッセージが配信されている可能性があります。 insights の機能の詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのレポートと分析](reports-and-insights-in-security-and-compliance.md)」を参照してください。
+たとえば、一部のユーザーが迷惑メールのオプションを無効にしているために、フィッシング電子メールメッセージが配信されている可能性があります。 Insights の機能の詳細については、「 [Office 365 セキュリティ&amp;コンプライアンスセンターのレポートと分析](reports-and-insights-in-security-and-compliance.md)」を参照してください。
   
 ## <a name="threat-investigation-and-response"></a>脅威の調査および対応
 
-組織のサブスクリプションに[Office 365 advanced threat Protection プラン 2](office-365-ti.md)が含まれている場合、セキュリティダッシュボードには、高度な脅威調査および応答ツールを含むセクションがあります。 組織のセキュリティチームは、このセクションの情報を使用して、新しいキャンペーンの理解、脅威の調査、インシデントの管理を行うことができます。 
+組織のサブスクリプションに[Office 365 Advanced Threat Protection プラン 2](office-365-ti.md)が含まれている場合、セキュリティダッシュボードには、高度な脅威調査および応答ツールを含むセクションがあります。 組織のセキュリティチームは、このセクションの情報を使用して、新しいキャンペーンの理解、脅威の調査、インシデントの管理を行うことができます。 
   
 ![脅威インテリジェンスは、組織を対象とした攻撃を理解するのに役立つ](media/threatintelwidget.png)
   
@@ -112,13 +112,13 @@ ms.locfileid: "32261094"
   
 ![[傾向] セクションには、組織の電子メールフローの傾向が要約されています。](media/trends.png)
   
-また、組織の office 365 サブスクリプションに[office 365 Advanced threat Protection プラン 2](office-365-ti.md)が含まれている場合は、セキュリティチームが表示してアクションを実行できるようにするための、**最新の脅威管理通知**レポートもこのセクションにあります。優先度の高いセキュリティ警告。 
+また、組織の Office 365 サブスクリプションに[office 365 Advanced Threat Protection プラン 2](office-365-ti.md)が含まれている場合は、セキュリティチームが表示してアクションを実行できるようにするための、**最新の脅威管理通知**レポートもこのセクションにあります。優先度の高いセキュリティ警告。 
 
 送信および受信した電子メールウィジェットを表示またはアクセスするには、高度な脅威保護レポートを表示するアクセス許可を持っている必要があります。 詳細については、「 [ATP レポートを表示するために必要なアクセス許可](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)」を参照してください。 
 
 最近の脅威管理通知 widget を表示またはアクセスするには、通知を表示するためのアクセス許可が必要です。 詳細については、「[通知の表示に必要な RBAC アクセス許可](alert-policies.md#rbac-permissions-required-to-view-alerts)」を参照してください。
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する](view-email-security-reports.md)
   

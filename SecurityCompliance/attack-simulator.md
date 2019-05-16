@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/05/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,19 +15,19 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Office 365 のグローバル管理者として、攻撃シミュレータを使用して、組織内で現実的な攻撃シナリオを実行できます。 これは、実際の攻撃によってビジネスに遭遇する前に、脆弱性のあるユーザーを特定して見つけるのに役立ちます。
-ms.openlocfilehash: 88e71fe2db0ed9149ab84bb99e8b04910afdc265
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a39259cdcc47e2c881b3977aa570b1f221f0b2bd
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32249716"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077623"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 の攻撃シミュレータ
 
-**概要**office 365 のグローバル管理者であり、組織に[office 365 の脅威の調査および応答機能](office-365-ti.md)がある場合は、攻撃シミュレータを使用して、組織内で現実的な攻撃シナリオを実行できます。 これは、実際の攻撃が下の回線に影響を与える前に、脆弱性のあるユーザーを特定して見つけるのに役立ちます。 詳細については、この記事をお読みください。
+**概要**Office 365 のグローバル管理者であり、組織に[office 365 の脅威の調査および応答機能](office-365-ti.md)がある場合は、攻撃シミュレータを使用して、組織内で現実的な攻撃シナリオを実行できます。 これは、実際の攻撃が下の回線に影響を与える前に、脆弱性のあるユーザーを特定して見つけるのに役立ちます。 詳細については、この記事をお読みください。
 
 > [!IMPORTANT]
-> office 365 advanced threat protection および脅威の調査と応答 (以前は脅威インテリジェンス) が office 365 advanced threat protection プラン2の一部になっており、追加の脅威保護機能を備えています。 詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
+> Office 365 Advanced Threat Protection および脅威の調査と応答 (以前は脅威インテリジェンス) が Office 365 Advanced Threat Protection プラン2の一部になっており、追加の脅威保護機能を備えています。 詳細については、「 [office 365 Advanced Threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [Office 365 Advanced threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
   
 ## <a name="the-attacks"></a>攻撃
 
@@ -67,7 +67,7 @@ ms.locfileid: "32249716"
 
 ![電子メール本文の作成](media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
   
-リッチ html エディターは、**電子メール本文**フィールド自体で直接作成することも、html ソースで操作することもできます。
+リッチ HTML エディターは、**電子メール本文**フィールド自体で直接作成することも、html ソースで操作することもできます。
   
 1. [セキュリティ&amp; /コンプライアンスセンター](https://protection.office.com)で、[**脅威管理** \>の**アタックシミュレータ**] を選択します。
     
@@ -79,9 +79,9 @@ ms.locfileid: "32249716"
     
 5. [**差出人 (名前)** ] フィールドにテキストを指定します。 これは、受信側の電子メールクライアントの**表示名**に表示されるフィールドです。 
     
-6. text または**From**フィールドを指定します。 これは、受信側の電子メールクライアントの送信者の電子メールアドレスとして表示されるフィールドです。 <br/>組織内に既存の電子メール名前空間を入力できます (これにより、受信側クライアントで電子メールアドレスが実際に解決されるようになり、非常に高い信頼モデルを使用できるようになります)。または、外部電子メールアドレスを入力することができます。 指定した電子メールアドレスは実際に存在する必要はありませんが、有効な SMTP アドレスの形式 (user @ domainname など) の形式に従う必要があります。 
+6. Text または**From**フィールドを指定します。 これは、受信側の電子メールクライアントの送信者の電子メールアドレスとして表示されるフィールドです。 <br/>組織内に既存の電子メール名前空間を入力できます (これにより、受信側クライアントで電子メールアドレスが実際に解決されるようになり、非常に高い信頼モデルを使用できるようになります)。または、外部電子メールアドレスを入力することができます。 指定した電子メールアドレスは実際に存在する必要はありませんが、有効な SMTP アドレスの形式 (user @ domainname など) の形式に従う必要があります。 
   
-7. ドロップダウンセレクターを使用して、攻撃の対象となるコンテンツの種類を反映するフィッシングのログインサーバーの URL を選択します。 文書の配信、技術、給与など、さまざまなテーマを選択できるようにするための url が用意されています。これは事実上、対象ユーザーがクリックするよう求められる URL です。
+7. ドロップダウンセレクターを使用して、攻撃の対象となるコンテンツの種類を反映するフィッシングのログインサーバーの URL を選択します。 文書の配信、技術、給与など、さまざまなテーマを選択できるようにするための Url が用意されています。これは事実上、対象ユーザーがクリックするよう求められる URL です。
     
 8. カスタムのランディングページの URL を指定します。 これを使用すると、成功した攻撃の終了時に指定した URL にユーザーがリダイレクトされます。 たとえば、内部の認識トレーニングがある場合は、ここで指定できます。
     

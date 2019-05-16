@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/31/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターのエクスプローラー (脅威エクスプローラーとも呼ばれます) について説明します。
-ms.openlocfilehash: c782e5962164b7d35947befe526c20f7dc0943d5
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 30f3759b6eb35508a9de8c03abb72562417aa04f
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264728"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077333"
 ---
 # <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターで脅威エクスプローラーを使用する
 
@@ -30,13 +30,13 @@ ms.locfileid: "32264728"
 
 エクスプローラーは、セキュリティ運用チームがセキュリティ&amp;コンプライアンスセンターで脅威を調査して対応するのに役立つ、強力でほぼリアルタイムのツールです。 実行できる操作の一部を次に示します。
 - [Office 365 のセキュリティ機能によって検出されたマルウェアを参照してください。](#see-malware-detected-in-email-by-technology)
-- [フィッシング url に関するデータを表示し、[verdict] をクリックします。](#view-data-about-phishing-urls-and-click-verdict)
+- [フィッシング Url に関するデータを表示し、[verdict] をクリックします。](#view-data-about-phishing-urls-and-click-verdict)
 - [エクスプローラーのビューから自動化された調査と応答プロセスを開始する](#start-automated-investigation-and-response)
 - ...その[他](#more-ways-to-use-explorer)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>テクノロジによる電子メールで検出されたマルウェアを参照
 
-電子メールで検出されたマルウェアと Office 365 のテクノロジについて確認する必要があるとします。 これを行うには、エクスプローラーの [ [Email > マルウェア](threat-explorer-views.md#email--malware)] ビューを使用します。
+電子メールで検出されたマルウェアと Office 365 のテクノロジについて確認する必要があるとします。 これを行うには、エクスプローラーの [ [Email _GT_ マルウェア](threat-explorer-views.md#email--malware)] ビューを使用します。
 
 1. セキュリティ &[https://protection.office.com](https://protection.office.com)コンプライアンスセンター () で、[**脅威管理** > **エクスプローラー**] を選択します。
 2. [**表示**] メニューで、[**電子メール** > **マルウェア**] を選択します。<br/>![エクスプローラーの [表示] メニュー](media/ExplorerViewEmailMalwareMenu.png)<br/>
@@ -45,24 +45,24 @@ ms.locfileid: "32264728"
 
 レポートが更新され、選択した [テクノロジ] オプションを使用して、電子メールで検出された結果のマルウェアが表示されます。 ここから、さらに分析を行うことができます。
 
-## <a name="view-data-about-phishing-urls-and-click-verdict"></a>フィッシング url に関するデータを表示し、[verdict] をクリックします。
+## <a name="view-data-about-phishing-urls-and-click-verdict"></a>フィッシング Url に関するデータを表示し、[verdict] をクリックします。
 
-許可された url の一覧を含む電子メール内の url を使用して、許可され、ブロックされ、上書きされたフィッシングを表示する場合を考えてみます。  クリックされた url を識別するには、 [ATP の安全なリンク](atp-safe-links.md)が必要です。 (atp の安全なリンクによるクリック verdicts のクリック時の保護とログ記録のために、ユーザーに対して[atp の安全なリンクポリシー](set-up-atp-safe-links-policies.md)を設定して適用していることを確認してください)。メッセージ内のフィッシング url を確認し、フィッシングメッセージで url をクリックするには、エクスプローラーの [ [Email > フィッシング](threat-explorer-views.md#email--phish)] ビューを使用します。
+許可された Url の一覧を含む電子メール内の Url を使用して、許可され、ブロックされ、上書きされたフィッシングを表示する場合を考えてみます。  クリックされた Url を識別するには、 [ATP の安全なリンク](atp-safe-links.md)が必要です。 (Atp の安全なリンクによるクリック verdicts のクリック時の保護とログ記録のために、ユーザーに対して[atp の安全なリンクポリシー](set-up-atp-safe-links-policies.md)を設定して適用していることを確認してください)。メッセージ内のフィッシング Url を確認し、フィッシングメッセージで Url をクリックするには、エクスプローラーの [ [Email _GT_ フィッシング](threat-explorer-views.md#email--phish)] ビューを使用します。
 
 1. セキュリティ &[https://protection.office.com](https://protection.office.com)コンプライアンスセンター () で、[**脅威管理** > **エクスプローラー**] を選択します。
 2. [**表示**] メニューの [**電子メール** > **フィッシング**] をクリックします。<br/>![エクスプローラーの [表示] メニュー](media/ExplorerViewEmailPhishMenu.png)<br/>
 3. [**送信者**] をクリックし、[ **url** > ] を選択して、**[verdict] をクリック**します。
-4. 1つ以上のオプション ([**ブロック**されてブロックされた**ブロック**] など) を選択し、[**更新**] ボタンをクリックしてそのフィルターを適用します。<br/>![url および [verdicts] をクリックします。](media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
+4. 1つ以上のオプション ([**ブロック**されてブロックされた**ブロック**] など) を選択し、[**更新**] ボタンをクリックしてそのフィルターを適用します。<br/>![Url および [verdicts] をクリックします。](media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
 
-レポートが更新され、下の [url] タブに2つの異なる url テーブルが表示されます。
-1. **トップ url**は、フィルター処理されたメッセージに含まれる url と、各 url の電子メール配信アクション数を示します。 [フィッシング email] ビューには、通常、正当な url が含まれています。 攻撃者は、適切な url と正しくない url をメッセージに混在させて配信を試みることができますが、ユーザーがクリックできるように、悪意のあるリンクがより関心を持っています。 url の表は、電子メールの合計数によって並べ替えられます (注: この列はビューを簡略化するために表示されていません)。
-2. **トップクリック**は、クリックされた url をラップした安全なリンクです。 [合計] をクリックします (この列はビューを簡略化するためにも表示されません)。 列別の合計カウント [セーフリンク] は、クリックされた各 URL の [verdict count] を示します。 フィッシングの電子メール表示では、多くの場合、疑わしいまたは悪意のあるリンクになりますが、フィッシングメッセージ内に存在するクリーンな url を含めることができます。 ラップされていないリンクの URL クリックは表示されません。
+レポートが更新され、下の [URL] タブに2つの異なる URL テーブルが表示されます。
+1. **トップ url**は、フィルター処理されたメッセージに含まれる url と、各 url の電子メール配信アクション数を示します。 [フィッシング email] ビューには、通常、正当な Url が含まれています。 攻撃者は、適切な Url と正しくない Url をメッセージに混在させて配信を試みることができますが、ユーザーがクリックできるように、悪意のあるリンクがより関心を持っています。 Url の表は、電子メールの合計数によって並べ替えられます (注: この列はビューを簡略化するために表示されていません)。
+2. **トップクリック**は、クリックされた url をラップした安全なリンクです。 [合計] をクリックします (この列はビューを簡略化するためにも表示されません)。 列別の合計カウント [セーフリンク] は、クリックされた各 URL の [verdict count] を示します。 フィッシングの電子メール表示では、多くの場合、疑わしいまたは悪意のあるリンクになりますが、フィッシングメッセージ内に存在するクリーンな Url を含めることができます。 ラップされていないリンクの URL クリックは表示されません。
 
-2つの url 表は、配信状態によるフィッシング電子メールの上位 url を示しています。また、ユーザーが無効にした潜在的なリンクがユーザーによって受信され、ユーザーによってアクセスされた可能性のある、どのような可能性があるかを知ることができます。 ここから、さらに分析を行うことができます。 たとえば、グラフの下に、組織の環境でブロックされたメールの上位の url が表示されます。 
+2つの Url 表は、配信状態によるフィッシング電子メールの上位 Url を示しています。また、ユーザーが無効にした潜在的なリンクがユーザーによって受信され、ユーザーによってアクセスされた可能性のある、どのような可能性があるかを知ることができます。 ここから、さらに分析を行うことができます。 たとえば、グラフの下に、組織の環境でブロックされたメールの上位の Url が表示されます。 
 
-![ブロックされたエクスプローラーの url](media/ExplorerPhishClickVerdictURLs.png) 
+![ブロックされたエクスプローラーの Url](media/ExplorerPhishClickVerdictURLs.png) 
 
-URL を選択して、詳細情報を表示します。 url のポップアップダイアログでは、環境内の url の公開が完全に表示されるように、メールのフィルタリングが削除されることに注意してください。 これにより、懸念されているものに対してエクスプローラーでメールをフィルター処理し、潜在的な脅威である特定の url を見つけ、url フィルターを追加することなく、環境内の url の公開について理解を深めることができます。エクスプローラービュー自体。
+URL を選択して、詳細情報を表示します。 URL のポップアップダイアログでは、環境内の URL の公開が完全に表示されるように、メールのフィルタリングが削除されることに注意してください。 これにより、懸念されているものに対してエクスプローラーでメールをフィルター処理し、潜在的な脅威である特定の Url を見つけ、url フィルターを追加することなく、環境内の URL の公開について理解を深めることができます。エクスプローラービュー自体。
 
 ## <a name="review-email-messages-reported-by-users"></a>ユーザーが報告した電子メールメッセージを確認する
 
@@ -99,7 +99,7 @@ Explorer は[Office 365 Advanced Threat Protection プラン 2](office-365-ti.md
     - セキュリティ管理者 (Azure Active Directory 管理センター[https://aad.portal.azure.com](https://aad.portal.azure.com)で割り当て可能)
     - セキュリティリーダ
 
-- exchange online の場合は、exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) または PowerShell コマンドレット (「 [exchange online powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)」を参照) のいずれかで、次のいずれかの役割が割り当てられている必要があります。
+- Exchange Online の場合は、Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) または PowerShell コマンドレット (「 [Exchange online Powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)」を参照) のいずれかで、次のいずれかの役割が割り当てられている必要があります。
     - 組織の管理
     - 表示限定の組織管理
     - "View-Only Recipients/表示専用受信者" 役割

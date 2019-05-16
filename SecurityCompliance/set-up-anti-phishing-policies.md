@@ -3,7 +3,7 @@ title: Office 365 の ATP のフィッシング対策ポリシーをセットア
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.date: 02/06/2019
 ms.service: O365-seccomp
@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
-description: office 365 の一部としての包括的な保護を備えたフィッシング対策保護 (office 365 の高度な脅威保護と基本的な保護機能) Exchange Online protection では、悪意のある偽造ベースのフィッシング攻撃から組織を保護するのに役立ちます。その他のフィッシング攻撃。
-ms.openlocfilehash: 4a647463dd37261cfa1f4c2fd2901ed8f12902b7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Office 365 の一部としての包括的な保護を備えたフィッシング対策保護 (office 365 の高度な脅威保護と基本的な保護機能) Exchange Online Protection では、悪意のある偽造ベースのフィッシング攻撃から組織を保護するのに役立ちます。その他のフィッシング攻撃。
+ms.openlocfilehash: cabcc4ab6401f2ebfdbf0c849df4da6a7691b6b8
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266966"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077213"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Office 365 の ATP フィッシング対策とフィッシング対策ポリシーをセットアップする
 
@@ -26,55 +26,55 @@ ms.locfileid: "32266966"
 フィッシング攻撃は、対象のスピアーフィッシングまたは whaling に対する市販の攻撃からさまざまな形式で提供されます。 複雑さが増すにつれて、これらの高度な攻撃の一部を特定することが困難になります。 幸いなことに、Office 365 Advanced Threat Protection は役立ちます。 ATP のフィッシング対策ポリシーを設定して、組織がそのような攻撃から保護されるようにすることができます。
   
 > [!NOTE]
-> atp のフィッシング対策は、Advanced Threat Protection (ATP) でのみ利用できます。 ATP は、 [microsoft 365 enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)、 [microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)、office 365 Enterprise E5、office 365 エデュケーション A5 などのサブスクリプションに含まれています。office 365 atp を含まない office 365 サブスクリプションが組織にある場合は、atp をアドオンとして購入する可能性があります。 詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。 組織が、ATP のフィッシング対策保護を十分に活用できるように、Windows で最新バージョンの Office 365 ProPlus を使用していることを確認してください。 
+> ATP のフィッシング対策は、Advanced Threat Protection (ATP) でのみ利用できます。 ATP は、サブスクリプションに含まれています ( [microsoft 365 enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)、 [microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)、office 365 Enterprise E5、office 365 エデュケーション A5 など)。Office 365 ATP を含まない Office 365 サブスクリプションが組織にある場合は、ATP をアドオンとして購入する可能性があります。 詳細については、「 [office 365 Advanced Threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [Office 365 Advanced threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。 組織が、ATP のフィッシング対策保護を十分に活用できるように、Windows で最新バージョンの Office 365 ProPlus を使用していることを確認してください。 
 
 フィッシング対策ポリシーは、Office 365 Exchange Online Protection でも使用できます。制限されたスプーフィング対策は、認証ベースおよび内容ベースの攻撃から保護することを目的としています。
   
 対処方法:
   
 1. 前提条件を確認します。
-    
+
 2. フィッシング対策と ATP のフィッシング対策ポリシーのオプションについて説明します。
-    
+
 3. フィッシング対策ポリシーまたは ATP のフィッシング対策ポリシーを設定します。
-    
+
 ## <a name="review-the-prerequisites"></a>前提条件を確認する
 
-- ATP ポリシーを定義 (または編集) するには、適切な役割が割り当てられている必要があります。 次の表では、いくつかの例について説明します。 <br>
+- ATP ポリシーを定義 (または編集) するには、適切な役割が割り当てられている必要があります。 次の表では、いくつかの例について説明します。
 
     |役割  |参照先/割り当て方法  |
     |---------|---------|
     |Office 365 グローバル管理者 |Office 365 の購入へのサインアップをする場合、既定ではグローバル管理者になります。詳細については、「[Office 365 の管理者の役割について](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)」を参照してください。         |
     |セキュリティ管理者 |Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
     |Exchange Online 組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)」を参照してください) |
-    
+
     役割とアクセス許可の詳細については、「[Office 365 セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
 - 組織に対して複数のフィッシング対策ポリシーをセットアップする可能性があります。 Office 365 は、セキュリティ&amp; /コンプライアンスセンターの [**フィッシング対策] ページ**と ATP の**フィッシング対策**ページに記載されている順序でこれらのポリシーを適用します。 [ポリシーオプション](#learn-about-atp-anti-phishing-policy-options)を確認したら、少し時間をかけて必要なポリシーの数とそれぞれの優先度を決定します。 
-    
+
 - 最初のフィッシング対策ポリシーを設定するのに約5-15 分かかることを計画します。
-    
+
 - 新規または更新されたポリシーがすべての Office 365 データセンターに蔓延するのに最大30分かかります。
-    
+
 ## <a name="set-up-an-anti-phishing-or-atp-anti-phishing-policy"></a>フィッシング対策または ATP のフィッシング対策ポリシーを設定する
 
 Office 365 の各組織には、すべてのユーザーに適用される既定のフィッシング対策ポリシーがあります。 組織内の特定のユーザー、グループ、またはドメインに適用できる複数のカスタムのマルウェア対策ポリシーを作成できます。 作成したカスタムポリシーは、既定のポリシーよりも優先されます。 Office 365 セキュリティ&amp;コンプライアンスセンターで、フィッシング対策ポリシーを追加、編集、および削除します。
   
 1. [https://protection.office.com](https://protection.office.com) に移動し、職場または学校のアカウントでサインインします。 
-    
+
 2. Office 365 セキュリティ&amp; /コンプライアンスセンターの左側のナビゲーションウィンドウで、[**脅威の管理**] の下にある [**ポリシー**] を選択します。
-    
+
 3. [**ポリシー** ] ページで、[**フィッシング対策**] または [ **ATP のフィッシング対策**] を選択します。
-    
-4. **フィッシング対策**または ATP の**フィッシング対策**ページで、次のいずれかの手順を実行します。 
-    
+
+4. **フィッシング対策**または ATP の**フィッシング対策**ページで、次のいずれかの手順を実行します。
+
     - 新しいポリシーを追加するには、[ **+ 作成**] を選択します。
     - 既存のポリシーを編集するには、[**フィッシング対策**] ページに表示されている一覧からポリシー名を選択します。 (または、リストの上にある [**既定のポリシー** ] を選択することもできます)。表示されるページで、[**ポリシーの編集**] を選択します。  
-    
+
 5. ポリシーの名前、説明、設定を指定します。 詳細については、「 [ATP のフィッシング対策ポリシーのオプションについ](#learn-about-atp-anti-phishing-policy-options)て」を参照してください。 
-    
-6. 設定を確認したら、[**このポリシーを作成**する (または**保存**)] を選択します。 
-    
+
+6. 設定を確認したら、[**このポリシーを作成**する (または**保存**)] を選択します。
+
 ## <a name="learn-about-atp-anti-phishing-policy-options"></a>ATP のフィッシング対策ポリシーのオプションについて説明します。
 
 ATP のフィッシング対策ポリシーを設定または編集するときには、次の表に示すように、最も高度で包括的な保護を提供するいくつかのオプションから選択できます。
@@ -88,8 +88,8 @@ ATP のフィッシング対策ポリシーを設定または編集するとき�
 |**信頼できる差出人とドメインを追加する** <br/> |このポリシーでは、impersonations と見なされない電子メールアドレスとドメインを定義します。 信頼できる送信者とドメインとして追加した送信者のメールアドレスとドメインからのメッセージは、偽装ベースの攻撃として分類されることはありません。 その結果、このポリシーのアクションと設定は、これらの送信者およびドメインからのメッセージには適用されません。  <br/> |ユーザーが偽装を発生させるドメインまたはユーザーと対話し、安全であると見なされる場合。 たとえば、パートナーの表示名またはドメイン名が、リストで定義されたユーザーと同じである場合です。  <br/> |
 |**適用対象** <br/> |受信メールメッセージがポリシーのルールの対象となる受信者を定義します。 ポリシーに関連付けられている受信者の条件と例外を作成できます。  <br/> たとえば、ドメイン内のすべての受信者にルールを適用することによって、組織のグローバルポリシーを作成できます。  <br/> 特定の受信者グループの電子メールメッセージをスキャンしないルールなどの例外ルールを作成することもできます。  <br/> |各ポリシーは、特定のグループまたはドメイン内のユーザーなど、一連のユーザーに関連付けられている必要があります。  <br/> |
 |**高度なフィッシングしきい値** <br/> |フィッシングメッセージの処理方法に関する設定のレベルを定義します。  <br/> **標準**フィッシングの疑いのあるメールは、標準的な方法で処理されます。  <br/> **アグレッシブ**高レベルまたは非常に高い信頼度を持つ電子メールは、システムによって同じ方法で処理されます。フィッシング。  <br/> **より厳しい**中規模、高レベル、または非常に高い確実性を持つ電子メールは、システムによって同じように処理されます。フィッシング  <br/> **最も積極的**低、中、高、または非常に高い信頼度を持つ電子メールは、システムによって同じ方法で処理されますフィッシング。  <br/> |Office 365 で潜在的なフィッシングメッセージをより積極的に処理する必要がある場合。 たとえば、フィッシングになる確率が非常に高いメッセージには、そのメッセージに対して最も積極的なアクションが適用されます。 この設定は、シグナルを結合するフィルターシステムの他の部分にも影響します。 設定のレベルが増加するにつれて、適切なメッセージが移動する可能性が高くなります。  <br/>|
-   
-## <a name="learn-about-anti-phishing-policy-options"></a>フィッシング対策ポリシーのオプションについて 
+
+## <a name="learn-about-anti-phishing-policy-options"></a>フィッシング対策ポリシーのオプションについて
 
 フィッシング対策を設定または編集するときには、次の表に示すように、いくつかのオプションから選択できます。 
 
@@ -102,14 +102,14 @@ ATP のフィッシング対策ポリシーを設定または編集するとき�
   
 ## <a name="example-anti-phishing-policy-to-protect-a-user-and-a-domain"></a>例: ユーザーとドメインを保護するためのフィッシング対策ポリシー
 
-この例では、偽装からユーザーとドメインの両方の保護を提供し、そのポリシーをドメイン`contoso.com`内のユーザーが受信するすべての電子メールに適用する "Domain and CEO" というポリシーを設定します。 セキュリティ管理者が、このポリシーは次のビジネス要件を満たす必要があると判断しました。
+この例では、偽装からユーザーとドメインの両方の保護を提供し、そのポリシーをドメイン`contoso.com`内のユーザーが受信するすべての電子メールに適用する "DOMAIN and CEO" というポリシーを設定します。 セキュリティ管理者が、このポリシーは次のビジネス要件を満たす必要があると判断しました。
   
 - このポリシーでは、CEO の電子メールアカウントとドメイン全体に対する保護を提供する必要があります。
-    
+
 - CEO のユーザーアカウントに対して偽装を試行したと判断されたメッセージは、セキュリティ管理者の電子メールアドレスにリダイレクトする必要があります。
-    
+
 - ドメインに対して偽装を試行していると判断されたメッセージは緊急性が低く、後で確認するために検疫する必要があります。
-    
+
 Contoso 社のセキュリティ管理者は、これらの要件を満たすフィッシング対策ポリシーを作成するために、次のような値を使用する場合があります。
   
 |||
@@ -123,27 +123,27 @@ Contoso 社のセキュリティ管理者は、これらの要件を満たすフ
 |メールボックスインテリジェンス  <br/> |既定では、新しいフィッシング対策ポリシーを作成すると、メールボックスインテリジェンスが選択されます。 最良の結果を得るために、この設定**をオンのままにして**おきます。  <br/> |
 |信頼できる差出人とドメインを追加する  <br/> |この例では、オーバーライドを定義しません。  <br/> |
 |適用対象  <br/> |[**受信者ドメイン**] を選択します。 **これらのいずれかの**下で、[**選択**] を選択します。 [ **+ 追加**] を選択します。 一覧のドメイン`contoso.com`名の横にあるチェックボックスをオンにして、[**追加**] を選択します。 [ **Done**] を選びます。  <br/> |
-   
+
 ## <a name="delete-an-anti-phishing-or-atp-anti-phishing-policy"></a>フィッシング対策または ATP のフィッシング対策ポリシーを削除する
 
 セキュリティ&amp; /コンプライアンスセンターを使用して作成したカスタムポリシーを削除することができます。 組織の既定のポリシーを削除することはできません。 セキュリティ&amp;コンプライアンスセンターを使用して、ATP ポリシーを確認または編集することをお勧めします。
   
-1. [https://protection.office.com](https://protection.office.com) に移動し、職場または学校のアカウントでサインインします。 
-    
+1. [https://protection.office.com](https://protection.office.com) に移動し、職場または学校のアカウントでサインインします。
+
 2. 左側のナビゲーションで、[**脅威の管理**] の下にある [**ポリシー**] を選択します。
-    
+
 3. [**ポリシー** ] ページで、[**フィッシング対策**] または [ **ATP のフィッシング対策**] を選択します。
-    
+
 4. [**フィッシング対策**] ページまたは [ **ATP のフィッシング対策**] ページで、一覧からポリシー名を選択します。
 
 5. 表示されるページで、[**ポリシーの削除**] を選択します。 変更がすべての Office 365 データセンターに蔓延するまで最大30分かかります。
-    
 
 ## <a name="next-steps"></a>次のステップ
 
 フィッシング対策ポリシーを設定すると、レポートを表示して、組織の脅威保護機能がどのように機能しているかを確認できます。 詳細については、以下のリソースを参照してください。
+
 - [Office 365 Advanced Threat Protection のレポートを表示する](view-reports-for-atp.md)、または[電子メールのセキュリティレポートを表示](view-email-security-reports.md)する
+
 - [エクスプローラー (脅威エクスプローラーとも呼ばれます) を使用する](use-explorer-in-security-and-compliance.md)
 
 ATP に関する新機能を常に活用してください。 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)にアクセスし、 [ATP に追加](office-365-atp.md#new-features-in-office-365-atp)されている新機能について説明します。
- 

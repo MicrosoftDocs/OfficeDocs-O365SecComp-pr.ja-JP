@@ -3,7 +3,7 @@ title: Office 365 の ATP の安全なリンクポリシーを設定する
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.date: 02/26/2019
 ms.service: O365-seccomp
@@ -15,19 +15,19 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 安全なリンクポリシーを設定して、Word、Excel、PowerPoint、および Visio ファイル内の悪意のあるリンクや、電子メールメッセージだけで組織を保護します。
-ms.openlocfilehash: d02866b7ab9a4da30a14aa0c55a42935926e99e3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fd67562955e14bf5d94280ad6bc8afcd72bcbeb5
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267056"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077233"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Office 365 の ATP の安全なリンクポリシーを設定する
 
 > [!IMPORTANT]
-> この記事は、Office 365 Enterprise のお客様を対象としています。 Outlook.com、office 365 Home、または office 365 Personal を使用していて、Outlook での安全なリンクに関する情報をお探しの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
+> この記事は、Office 365 Enterprise のお客様を対象としています。 Outlook.com、Office 365 Home、または Office 365 Personal を使用していて、Outlook での安全なリンクに関する情報をお探しの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
-[atp の安全なリンク](atp-safe-links.md)は、 [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) の機能で、フィッシングやその他の攻撃で使用されている悪意のあるリンクから組織を保護するのに役立ちます。 [Office 365 セキュリティ&amp;コンプライアンスセンターに必要なアクセス許可](permissions-in-the-security-and-compliance-center.md)がある場合は、ユーザーが web アドレス (url) をクリックしたときに組織が保護されるようにするために、ATP の安全なリンクポリシーを設定することができます。 ATP の安全なリンクポリシーを構成して、Office ドキュメント内の電子メールと url の url をスキャンできます。
+[Atp の安全なリンク](atp-safe-links.md)は、 [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) の機能で、フィッシングやその他の攻撃で使用されている悪意のあるリンクから組織を保護するのに役立ちます。 [Office 365 セキュリティ&amp;コンプライアンスセンターに必要なアクセス許可](permissions-in-the-security-and-compliance-center.md)がある場合は、ユーザーが web アドレス (url) をクリックしたときに組織が保護されるようにするために、ATP の安全なリンクポリシーを設定することができます。 ATP の安全なリンクポリシーを構成して、Office ドキュメント内の電子メールと Url の Url をスキャンできます。
   
 [新機能は ATP に継続的に追加](office-365-atp.md#new-features-in-office-365-atp)されています。 新機能が追加されたときに、既存の ATP の安全なリンクポリシーを調整する必要がある場合があります。
 
@@ -55,7 +55,7 @@ ms.locfileid: "32267056"
 
     役割とアクセス許可の詳細については、「[Office 365 セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-- office クライアントが[先進認証](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)を使用するように構成されていることを確認します (これは、office ドキュメントの ATP の安全なリンク保護に対して行われます)。
+- Office クライアントが[先進認証](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)を使用するように構成されていることを確認します (これは、office ドキュメントの ATP の安全なリンク保護に対して行われます)。
     
 - [ATP の安全なリンクポリシーのオプションについて説明](#step-4-learn-about-atp-safe-links-policy-options)します。(この記事の内容)。 
 
@@ -121,26 +121,26 @@ ATP の安全なリンクポリシーを設定または編集すると、いく�
 
 |このオプション  |機能  |
 |---------|---------|
-| **次の url をブロックする** <br/>    | 自動でブロックされる url のカスタムリストを組織で使用できるようにします。 ユーザーがこのリストの url をクリックすると、url がブロックされる理由を説明する[警告ページ](atp-safe-links-warning-pages.md)が表示されます。 詳細については、「 [Office 365 の ATP の安全なリンクを使用してカスタムのブロックされた url リストをセットアップする](set-up-a-custom-blocked-urls-list-wtih-atp.md)」を参照してください。 |
-| **office 365 ProPlus、iOS 版 office および Android** <br/>    | このオプションを選択すると、windows または Mac OS 上の Word、Excel、および PowerPoint ファイルの url、iOS 上の Office ドキュメント、または Android デバイス、Visio 2016 on windows、および Office online (word online、PowerPoint online、Excel online、と OneNote Online) は、ユーザーが Office 365 にサインインしていることを示しています。 |
-| **ユーザーが ATP の安全なリンクをクリックしたときに追跡しない** <br/>  | このオプションが選択されている場合は、Word、Excel、PowerPoint、および Visio のドキュメントで、[データの url] をクリックしても保存されません。  <br/> |
+| **次の Url をブロックする** <br/>    | 自動でブロックされる Url のカスタムリストを組織で使用できるようにします。 ユーザーがこのリストの URL をクリックすると、URL がブロックされる理由を説明する[警告ページ](atp-safe-links-warning-pages.md)が表示されます。 詳細については、「 [Office 365 の ATP の安全なリンクを使用してカスタムのブロックされた url リストをセットアップする](set-up-a-custom-blocked-urls-list-wtih-atp.md)」を参照してください。 |
+| **Office 365 ProPlus、iOS 版 Office および Android** <br/>    | このオプションを選択すると、Windows または Mac OS 上の Word、Excel、および PowerPoint ファイルの Url、iOS 上の Office ドキュメント、または Android デバイス、Visio 2016 on Windows、および Office Online (Word Online、PowerPoint Online、Excel Online、と OneNote Online) は、ユーザーが Office 365 にサインインしていることを示しています。 |
+| **ユーザーが ATP の安全なリンクをクリックしたときに追跡しない** <br/>  | このオプションが選択されている場合は、Word、Excel、PowerPoint、および Visio のドキュメントで、[データの Url] をクリックしても保存されません。  <br/> |
 |**ユーザーが元の URL に対して ATP の安全なリンクをクリックできないようにします。** <br/> |このオプションが選択されている場合、ユーザーは、悪意があると判断された URL に[警告ページ](atp-safe-links-warning-pages.md)をスキップすることはできません。  <br/> |
 
 ### <a name="policies-that-apply-to-specific-email-recipients"></a>特定の電子メールの受信者に適用されるポリシー
 
 |このオプション  |機能  |
 |---------|---------|
-|**オフ** <br/> |電子メールメッセージ内の url はスキャンされません。  <br/> 特定の受信者グループの電子メールメッセージ内の url をスキャンしないルールなどの例外ルールを定義できます。  <br/> |
-|**On** <br/> |ユーザーが電子メールメッセージ内の url をクリックしたときに、ユーザーが ATP の安全なリンク保護を介してユーザーをルーティングするように url を書き換えます。  <br/> 禁止または悪意のある url の一覧に対してクリックしたときに URL をチェックします。  <br/> |
-|**安全な添付ファイルを使用してダウンロード可能なコンテンツをスキャンする** <br/> |このオプションを選択すると、ダウンロード可能なコンテンツをポイントする url がスキャンされます。  <br/> |
+|**オフ** <br/> |電子メールメッセージ内の Url はスキャンされません。  <br/> 特定の受信者グループの電子メールメッセージ内の Url をスキャンしないルールなどの例外ルールを定義できます。  <br/> |
+|**On** <br/> |ユーザーが電子メールメッセージ内の Url をクリックしたときに、ユーザーが ATP の安全なリンク保護を介してユーザーをルーティングするように Url を書き換えます。  <br/> 禁止または悪意のある Url の一覧に対してクリックしたときに URL をチェックします。  <br/> |
+|**安全な添付ファイルを使用してダウンロード可能なコンテンツをスキャンする** <br/> |このオプションを選択すると、ダウンロード可能なコンテンツをポイントする Url がスキャンされます。  <br/> |
 |**組織内で送信されるメッセージに安全なリンクを適用する** <br/> | このオプションを選択して選択すると、電子メールアカウントが Office 365 でホストされている場合に、組織内のユーザー間で送信される電子メールメッセージに対して ATP の安全なリンク保護が適用されます。  <br/> |
 |**ユーザーのクリックを追跡しない** <br/> |このオプションが選択されている場合は、[外部送信者からの電子メール] の [データ] をクリックします。 URL [組織内で送信された電子メールメッセージ内のリンクの追跡] [現在サポートされていません]。  <br/> |
 |**ユーザーが元の URL にクリックできないようにする** <br/> |このオプションが選択されている場合、ユーザーは、悪意があると判断された URL に[警告ページ](atp-safe-links-warning-pages.md)をスキップすることはできません。  <br/> |
-|**次の url を書き換えないでください。** <br/> |url をそのまま残します。 組織内の特定の電子メール受信者グループに対して、スキャンを必要としない安全な url のカスタムリストを保持します。  追加の詳細については、「 [ATP Safe Links を使用してカスタムの url リストを設定する](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)」を参照してください\*。これには、ワイルドカードのアスタリスク () のサポートに関する最新の変更が含まれています。  <br/> |
+|**次の Url を書き換えないでください。** <br/> |Url をそのまま残します。 組織内の特定の電子メール受信者グループに対して、スキャンを必要としない安全な Url のカスタムリストを保持します。  追加の詳細については、「 [ATP Safe Links を使用してカスタムの url リストを設定する](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)」を参照してください\*。これには、ワイルドカードのアスタリスク () のサポートに関する最新の変更が含まれています。  <br/> |
    
 ## <a name="next-steps"></a>次のステップ
 
-atp の安全なリンクポリシーを設定すると、レポートを表示することにより、atp が自分の組織でどのように動作しているかを確認できます。 詳細については、以下のリソースを参照してください。
+ATP の安全なリンクポリシーを設定すると、レポートを表示することにより、ATP が自分の組織でどのように動作しているかを確認できます。 詳細については、以下のリソースを参照してください。
 
 - [Office 365 Advanced Threat Protection のレポートを表示する](view-reports-for-atp.md)
 
