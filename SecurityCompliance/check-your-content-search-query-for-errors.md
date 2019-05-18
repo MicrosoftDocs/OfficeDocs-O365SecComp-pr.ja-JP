@@ -4,19 +4,19 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 11/30/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: 検索を実行する前に、サポートされていない文字や小文字のブール演算子などのエラーと入力ミスについては、キーワードクエリのコンテンツ検索を確認してください。 エラーが見つかった場合は、変更されたクエリを提案します。
-ms.openlocfilehash: 00612116f345e2a01471d5c83df77f4bc8db9ce5
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9f9f59c4466102d678bc3a599aa208869bbd9d64
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243666"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155579"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>コンテンツ検索クエリでエラーを確認する
 
@@ -42,4 +42,4 @@ ms.locfileid: "32243666"
   
 ## <a name="how-to-prevent-unsupported-characters-in-your-search-queries"></a>検索クエリでサポートされていない文字を防ぐ方法
 
-サポートされていない文字は、通常、他のアプリケーション (microsoft Word や microsoft Excel など) からクエリの一部をコピーし、それをコンテンツ検索のクエリページの [キーワード] ボックスにコピーするときに、クエリに追加されます。 サポートされていない文字を使用しないようにする最善の方法は、キーワード ボックスにクエリを入力することです。 また、Word や Excel からクエリをコピーして、メモ帳などのテキスト エディターでファイルに貼り付けることもできます。 そのテキスト ファイルを保存し、 **[エンコード]** ドロップダウン リストで **[ANSI]** を選択します。 これにより、すべての書式設定とサポートされない文字が削除されます。 その後、テキスト ファイルからクエリをコピーして、キーワード クエリ ボックスに貼り付けることができます。 
+サポートされていない文字は、通常、他のアプリケーション (Microsoft Word や Microsoft Excel など) からクエリの一部をコピーし、それをコンテンツ検索のクエリページの [キーワード] ボックスにコピーするときに、クエリに追加されます。 サポートされていない文字を使用しないようにする最善の方法は、キーワード ボックスにクエリを入力することです。 また、Word や Excel からクエリをコピーして、メモ帳などのテキスト エディターでファイルに貼り付けることもできます。 そのテキスト ファイルを保存し、 **[エンコード]** ドロップダウン リストで **[ANSI]** を選択します。 これにより、すべての書式設定とサポートされない文字が削除されます。 その後、テキスト ファイルからクエリをコピーして、キーワード クエリ ボックスに貼り付けることができます。 

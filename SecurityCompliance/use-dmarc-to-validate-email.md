@@ -3,7 +3,7 @@ title: DMARC を使用して Office 365 でメールを検証する
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,16 +13,16 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Office 365 組織から送信されたメッセージを検証するための、ドメインベースのメッセージ認証、レポート、および準拠 (DMARC) を構成する方法について説明します。
-ms.openlocfilehash: de92825726225549fda1b0dc57d737763f273043
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9e3c2cd21e411d775f621c8b353bee9e6b0e235e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263729"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156189"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>DMARC を使用して Office 365 でメールを検証する
 
-メール送信者を認証し、宛先の電子メールシステムがから送信されたメッセージを信頼していることを確認するために、ドメインベースのメッセージの認証、報告、および準拠 ([DMARC](https://dmarc.org)) は、送信者ポリシーフレームワーク (SPF) および domainkeys で識別されるメール (dkim) と連携して動作します。自分のドメイン。 SPF および DKIM と共に DMARC を実装すると、メールのスプーフィングやフィッシングに対抗する追加の保護が得られます。 DMARC は、電子メールを受信するシステムが、ドメインから送信された SPF チェックまたは DKIM チェックに失敗したメッセージに対して、どのように対応するかを判断する際に役に立ちます。
+メール送信者を認証し、宛先の電子メールシステムがから送信されたメッセージを信頼していることを確認するために、ドメインベースのメッセージの認証、報告、および準拠 ([DMARC](https://dmarc.org)) は、送信者ポリシーフレームワーク (SPF) および Domainkeys で識別されるメール (dkim) と連携して動作します。自分のドメイン。 SPF および DKIM と共に DMARC を実装すると、メールのスプーフィングやフィッシングに対抗する追加の保護が得られます。 DMARC は、電子メールを受信するシステムが、ドメインから送信された SPF チェックまたは DKIM チェックに失敗したメッセージに対して、どのように対応するかを判断する際に役に立ちます。
   
 ## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-office-365"></a>SPF と DMARC が連携して Office 365 の電子メールを保護するしくみ
 <a name="SPFandDMARC"> </a>
@@ -31,7 +31,7 @@ ms.locfileid: "32263729"
   
 - **"Mail From" アドレス**: 送信者を識別し、配信不能通知など、メッセージの配信に関する問題が発生した場合に、いつ返信を送信するかを指定します。 通常、ユーザーの電子メール アプリケーションには表示されません。 これは、MailFrom アドレスまたは逆パスアドレスと呼ばれることがあります。
     
-- **"from" アドレス**: メールアプリケーションによって差出人アドレスとして表示されるアドレス。 このアドレスは電子メールの作成者を識別します。 つまり、メッセージを書いた個人またはシステムのメールボックスになります。 これは、 5322.From アドレスとも呼ばれます。
+- **"From" アドレス**: メールアプリケーションによって差出人アドレスとして表示されるアドレス。 このアドレスは電子メールの作成者を識別します。 つまり、メッセージを書いた個人またはシステムのメールボックスになります。 これは、 5322.From アドレスとも呼ばれます。
     
 SPF は、DNS TXT レコードを使用して、特定のドメインに対する認証済みの送信側 IP アドレスのリストを提示します。通常、SPF チェックは 5321.MailFrom アドレスに対してのみ実行されます。つまり、単独で SPF を使用すると、5322.From アドレスは認証されないことになります。これは、SPF チェックにパスしていても、5322.From 送信者アドレスがスプーフィングされたメッセージをユーザーが受信するというシナリオの余地を残すことになります。たとえば、次のような SMTP トランスクリプトを考えてみます。
   

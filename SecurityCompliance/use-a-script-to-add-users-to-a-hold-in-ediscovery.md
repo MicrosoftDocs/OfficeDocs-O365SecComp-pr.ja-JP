@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 1/23/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,19 +13,19 @@ search.appverid:
 - MED150
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
-description: メールボックスと OneDrive for business サイトをセキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられた新しい保留リストにすばやく追加するためのスクリプトを実行します。
-ms.openlocfilehash: 992fddad3bfbc9f08855bd85d87b0edf92b3cdbe
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: メールボックスと OneDrive for Business サイトをセキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられた新しい保留リストにすばやく追加するためのスクリプトを実行します。
+ms.openlocfilehash: c680e584a6f729b3d6d0d74b84ddd0e03da6dc9a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263979"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156229"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>スクリプトを使用してセキュリティ & コンプライアンスセンターの電子情報開示ケースの保留リストにユーザーを追加する
 
-Security & コンプライアンスセンターでは、電子情報開示ケースの作成と管理に関連する時間のかかるタスクを自動化できる、多くの Windows PowerShell コマンドレットが提供されています。 現時点では、Security & コンプライアンスセンターの電子情報開示ケースツールを使用して、保管担当者のコンテンツの場所が大量に保持されるようにするには、時間と準備が必要です。 たとえば、ホールドを作成する前に、保留にする各 OneDrive for business サイトの URL を収集する必要があります。 その後、保持するユーザーごとに、メールボックスとその OneDrive for business サイトを保留リストに追加する必要があります。 セキュリティ & コンプライアンスセンターの今後のリリースでは、この操作が簡単になりました。 その後、この記事のスクリプトを使用してこのプロセスを自動化できます。
+Security & コンプライアンスセンターでは、電子情報開示ケースの作成と管理に関連する時間のかかるタスクを自動化できる、多くの Windows PowerShell コマンドレットが提供されています。 現時点では、Security & コンプライアンスセンターの電子情報開示ケースツールを使用して、保管担当者のコンテンツの場所が大量に保持されるようにするには、時間と準備が必要です。 たとえば、ホールドを作成する前に、保留にする各 OneDrive for Business サイトの URL を収集する必要があります。 その後、保持するユーザーごとに、メールボックスとその OneDrive for Business サイトを保留リストに追加する必要があります。 セキュリティ & コンプライアンスセンターの今後のリリースでは、この操作が簡単になりました。 その後、この記事のスクリプトを使用してこのプロセスを自動化できます。
   
-スクリプトによって、組織の個人用サイトドメインの名前 (たとえば、URL https://contoso-my.sharepoint.com)内の**contoso** 、既存の電子情報開示ケースの名前、ケースに関連付けられた新しい保留の名前、必要なユーザーの電子メールアドレスの一覧) の入力を求めるプロンプトが表示されます。を使用して、クエリベースの保持を作成する場合に使用する検索クエリを保持します。 次に、スクリプトは、リスト内の各ユーザーの OneDrive for business サイトの URL を取得し、新しいホールドを作成して、リスト内の各ユーザーのメールボックスと onedrive for business サイトを保留リストに追加します。 このスクリプトは、新しいホールドに関する情報を含むログファイルも生成します。 
+スクリプトによって、組織の個人用サイトドメインの名前 (たとえば、URL https://contoso-my.sharepoint.com)内の**contoso** 、既存の電子情報開示ケースの名前、ケースに関連付けられた新しい保留の名前、必要なユーザーの電子メールアドレスの一覧) の入力を求めるプロンプトが表示されます。を使用して、クエリベースの保持を作成する場合に使用する検索クエリを保持します。 次に、スクリプトは、リスト内の各ユーザーの OneDrive for Business サイトの URL を取得し、新しいホールドを作成して、リスト内の各ユーザーのメールボックスと OneDrive for business サイトを保留リストに追加します。 このスクリプトは、新しいホールドに関する情報を含むログファイルも生成します。 
   
 これを行うには、以下の手順を実行します。
   
@@ -37,9 +37,9 @@ Security & コンプライアンスセンターでは、電子情報開示ケー
   
 ## <a name="before-you-begin"></a>始める前に
 
-- 手順3でスクリプトを実行するには、Security & コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。また、SharePoint Online のグローバル管理者である必要があります。 詳細については、「 [Office 365 セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
+- 手順3でスクリプトを実行するには、Security & コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。また、SharePoint Online のグローバル管理者である必要があります。 詳細については、「 [Office 365 セキュリティ _AMP_ コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
     
-- セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられている保留リストには、最大1000のメールボックスと100サイトを追加できます。 保持するユーザーに OneDrive for business サイトが含まれている場合は、この記事のスクリプトを使用して、最大100ユーザーを保留リストに追加できます。 
+- セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられている保留リストには、最大1000のメールボックスと100サイトを追加できます。 保持するユーザーに OneDrive for Business サイトが含まれている場合は、この記事のスクリプトを使用して、最大100ユーザーを保留リストに追加できます。 
     
 - 手順2で作成したユーザーの一覧と、手順3のスクリプトを同じフォルダーに保存するようにしてください。 これにより、スクリプトをより簡単に実行できるようになります。
     
@@ -51,16 +51,16 @@ Security & コンプライアンスセンターでは、電子情報開示ケー
 
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>手順 1: SharePoint Online 管理シェルをインストールする
 
-最初の手順として、SharePoint Online 管理シェルがローカルコンピューターにまだインストールされていない場合はインストールします。 この手順でシェルを使用する必要はありませんが、手順3で実行するスクリプトに必要な前提条件が含まれているためインストールする必要があります。 これらの前提条件によって、スクリプトは SharePoint Online と通信して、OneDrive for business サイトの url を取得できます。
+最初の手順として、SharePoint Online 管理シェルがローカルコンピューターにまだインストールされていない場合はインストールします。 この手順でシェルを使用する必要はありませんが、手順3で実行するスクリプトに必要な前提条件が含まれているためインストールする必要があります。 これらの前提条件によって、スクリプトは SharePoint Online と通信して、OneDrive for Business サイトの Url を取得できます。
   
-「 [sharepoint online 管理シェル Windows PowerShell 環境をセットアップ](https://go.microsoft.com/fwlink/p/?LinkID=286318)する」に移動し、手順1と手順2を実行して、ローカルコンピューターに sharepoint online 管理シェルをインストールします。 
+「 [Sharepoint Online 管理シェル Windows PowerShell 環境をセットアップ](https://go.microsoft.com/fwlink/p/?LinkID=286318)する」に移動し、手順1と手順2を実行して、ローカルコンピューターに Sharepoint Online 管理シェルをインストールします。 
 
 ## <a name="step-2-generate-a-list-of-users"></a>手順 2: ユーザーのリストを生成する
 <a name="step2"> </a>
 
-手順3のスクリプトは、電子情報開示ケースに関連付けられているホールドを作成し、ユーザーのリストのメールボックスと OneDrive for business サイトを保留リストに追加します。 テキストファイルに電子メールアドレスを入力することも、Windows PowerShell でコマンドを実行して電子メールアドレスの一覧を取得し、それをファイルに保存することもできます (手順3でスクリプトを保存するのと同じフォルダーに格納されます)。
+手順3のスクリプトは、電子情報開示ケースに関連付けられているホールドを作成し、ユーザーのリストのメールボックスと OneDrive for Business サイトを保留リストに追加します。 テキストファイルに電子メールアドレスを入力することも、Windows PowerShell でコマンドを実行して電子メールアドレスの一覧を取得し、それをファイルに保存することもできます (手順3でスクリプトを保存するのと同じフォルダーに格納されます)。
   
-次に示すのは、powershell コマンド (Exchange Online 組織に接続されたリモート PowerShell を使用して実行する) で、組織内のすべてのユーザーの電子メールアドレスの一覧を取得し、HoldUsers という名前のテキストファイルに保存します。
+次に示すのは、PowerShell コマンド (Exchange Online 組織に接続されたリモート PowerShell を使用して実行する) で、組織内のすべてのユーザーの電子メールアドレスの一覧を取得し、HoldUsers という名前のテキストファイルに保存します。
   
 ```
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > HoldUsers.txt
@@ -75,7 +75,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 この手順でスクリプトを実行すると、次の情報を入力するように求めるメッセージが表示されます。 スクリプトを実行する前に、この情報を用意しておいてください。
   
-- **ユーザーの資格情報**-スクリプトは、資格情報を使用して、リモート PowerShell を使用して Security & コンプライアンスセンターに接続します。 また、これらの資格情報を使用して SharePoint Online にアクセスし、ユーザーリストの OneDrive for business url を取得します。
+- **ユーザーの資格情報**-スクリプトは、資格情報を使用して、リモート PowerShell を使用して Security _AMP_ コンプライアンスセンターに接続します。 また、これらの資格情報を使用して SharePoint Online にアクセスし、ユーザーリストの OneDrive for Business Url を取得します。
     
 - **個人用サイトのドメインの名前**-個人用サイトのドメインは、組織内のすべての OneDrive for business サイトを含むドメインです。 たとえば、個人用サイトのドメインの URL がの場合**https://contoso-my.sharepoint.com**は、スクリプトによっ`contoso`て、個人用サイトのドメインの名前を入力するように求めるメッセージが表示されます。 
     
@@ -284,14 +284,14 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 4. スクリプトによってプロンプトが表示される情報を入力します。
     
-    このスクリプトは、Security & コンプライアンスセンター PowerShell に接続し、電子情報開示ケースで新しいホールドを作成し、リスト内のユーザーのメールボックスと OneDrive for business を追加します。 セキュリティ & コンプライアンスセンターの [**電子情報開示**] ページに移動して、新しいホールドを表示することができます。 
+    このスクリプトは、Security & コンプライアンスセンター PowerShell に接続し、電子情報開示ケースで新しいホールドを作成し、リスト内のユーザーのメールボックスと OneDrive for Business を追加します。 セキュリティ & コンプライアンスセンターの [**電子情報開示**] ページに移動して、新しいホールドを表示することができます。 
     
 スクリプトの実行が完了すると、次のログファイルが作成され、スクリプトが配置されているフォルダーに保存されます。
   
-- **locationsonhold .txt** -スクリプトが正常に停止したメールボックスと OneDrive for business サイトの一覧が含まれています。
+- **Locationsonhold .txt** -スクリプトが正常に停止したメールボックスと OneDrive for business サイトの一覧が含まれています。
     
-- **LocationsNotOnHold** -スクリプトが保留になっていないメールボックスおよび OneDrive for business サイトの一覧が含まれています。 ユーザーがメールボックスを持っているが、onedrive for business サイトを持っていない場合、ユーザーは保留になっていない onedrive for business サイトの一覧に含まれています。
+- **LocationsNotOnHold** -スクリプトが保留になっていないメールボックスおよび OneDrive for business サイトの一覧が含まれています。 ユーザーがメールボックスを持っているが、OneDrive for Business サイトを持っていない場合、ユーザーは保留になっていない OneDrive for Business サイトの一覧に含まれています。
     
-- **GetCaseHoldPolicy** -新しいホールドの**CaseHoldPolicy**コマンドレットの出力が含まれています。新しいホールドを作成した後にスクリプトが実行されます。 このコマンドレットによって返される情報には、メールボックスと OneDrive for business サイトが保持されたユーザーの一覧、および保留が有効か無効かが含まれます。 
+- **GetCaseHoldPolicy** -新しいホールドの**CaseHoldPolicy**コマンドレットの出力が含まれています。新しいホールドを作成した後にスクリプトが実行されます。 このコマンドレットによって返される情報には、メールボックスと OneDrive for Business サイトが保持されたユーザーの一覧、および保留が有効か無効かが含まれます。 
     
 - **GetCaseHoldRule** -新しいホールドの**new-caseholdrule**コマンドレットの出力が含まれています。新しいホールドを作成した後にスクリプトが実行されます。 このコマンドレットによって返される情報には、クエリベースの保持を作成するためにスクリプトを使用した場合の検索クエリが含まれています。 

@@ -4,21 +4,21 @@ ms.author: scotv
 author: scotvidican
 manager: laurawi
 ms.date: 12/15/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: Microsoft では、すべてのユーザーにとって使いやすい製品とサービスを提供できるよう取り組んでいます。
-ms.openlocfilehash: 271383361ee99f6959e81a1f38dea4b200c54fb5
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8cf86f2ce4aa176baa0a151edea93a247a2113c7
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257045"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154709"
 ---
-# <a name="accessibility-for-people-with-disabilities"></a>障碍があるユーザーの為の補助機能
+# <a name="accessibility-for-people-with-disabilities"></a>障碍がある方のためのユーザー補助機能
 
 ## <a name="accessibility-features-of-exchange"></a>Exchange のユーザー補助機能
 
@@ -28,7 +28,7 @@ Microsoft Exchange に装備された次の機能は、障碍がある方がよ�
     
 - [Outlook on the web のキーボード ショートカット ](https://go.microsoft.com/fwlink/p/?LinkId=268079)
     
-また、Windows のユーザー補助機能とユーティリティは、障碍がある Exchange ユーザーにとって有用なものです。 Exchange 管理シェルについては、ユーザー補助オプションとして、Windows PowerShell のサイズと色を変更できます。 windows powershell のユーザー補助オプションの詳細については、「 [windows powershell 2.0 ISE のアクセシビリティ](https://go.microsoft.com/fwlink/p/?LinkId=258240)」を参照してください。
+また、Windows のユーザー補助機能とユーティリティは、障碍がある Exchange ユーザーにとって有用なものです。 Exchange 管理シェルについては、ユーザー補助オプションとして、Windows PowerShell のサイズと色を変更できます。 Windows PowerShell のユーザー補助オプションの詳細については、「 [Windows powershell 2.0 ISE のアクセシビリティ](https://go.microsoft.com/fwlink/p/?LinkId=258240)」を参照してください。
   
 ## <a name="accessibility-features-of-exchange-help"></a>Exchange ヘルプのユーザー補助機能
 

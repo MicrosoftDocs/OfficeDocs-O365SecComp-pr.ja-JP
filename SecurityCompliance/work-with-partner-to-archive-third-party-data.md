@@ -4,22 +4,22 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 組織は Microsoft パートナーと協力して、Salesforce チャター、Yahoo Messenger、Yammer などのデータソースからサードパーティのデータをインポートするカスタムコネクタを設定できます。 これにより、office 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどの office 365 コンプライアンス機能を使用して、組織のサードパーティデータのガバナンスを管理できます。
-ms.openlocfilehash: dce015438c9764f66e98936df9454cba73fd8472
-ms.sourcegitcommit: 63a10dc5ffa9d709fac437d3fc9e554b1bcd826f
+description: 組織は Microsoft パートナーと協力して、Salesforce チャター、Yahoo Messenger、Yammer などのデータソースからサードパーティのデータをインポートするカスタムコネクタを設定できます。 これにより、Office 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどの Office 365 コンプライアンス機能を使用して、組織のサードパーティデータのガバナンスを管理できます。
+ms.openlocfilehash: 9bc8dddfed4b9721237f06ecf03c1ca41df091d6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33308079"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155999"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>パートナーと連携して、Office 365 でサードパーティのデータをアーカイブする
 
-Microsoft パートナーと協力して、サードパーティのデータソースから Office 365 にデータをインポートしてアーカイブすることができます。 パートナーは、サードパーティのデータソースからアイテムを抽出するように構成されたカスタムコネクタ (定期的に) を提供して、それらのアイテムを Office 365 にインポートすることができます。 パートナーコネクタは、アイテムのコンテンツをデータソースから電子メールメッセージ形式に変換してから、Office 365 のメールボックスにアイテムを保存します。 サードパーティのデータをインポートした後は、このデータに、訴訟ホールド、コンテンツ検索、インプレースアーカイブ、監査、および Office 365 アイテム保持ポリシーなどの office 365 コンプライアンス機能を適用できます。
+Microsoft パートナーと協力して、サードパーティのデータソースから Office 365 にデータをインポートしてアーカイブすることができます。 パートナーは、サードパーティのデータソースからアイテムを抽出するように構成されたカスタムコネクタ (定期的に) を提供して、それらのアイテムを Office 365 にインポートすることができます。 パートナーコネクタは、アイテムのコンテンツをデータソースから電子メールメッセージ形式に変換してから、Office 365 のメールボックスにアイテムを保存します。 サードパーティのデータをインポートした後は、このデータに、訴訟ホールド、コンテンツ検索、インプレースアーカイブ、監査、および Office 365 アイテム保持ポリシーなどの Office 365 コンプライアンス機能を適用できます。
   
 ここでは、サードパーティのデータを Office 365 にインポートするために Microsoft パートナーと連携するために必要なプロセスと手順の概要を説明します。
 
@@ -47,13 +47,13 @@ Microsoft パートナーと協力して、サードパーティのデータソ�
     
 4. アイテムは特定のユーザーのメールボックスまたは "catch-all" というサードパーティ データのメールボックスにインポートされます。アイテムが特定のユーザーのメールボックスにインポートされるか、またはサードパーティ データのメールボックスにインポートされるかは、以下の条件に基づきます。
     
-    a. **office 365 ユーザーアカウントに対応するユーザー id を持つアイテム**。パートナーコネクタがサードパーティデータソース内のアイテムのユーザー id を office 365 の特定のユーザー id にマップできる場合、そのアイテムはユーザーのレコードの [削除] **** フォルダーにコピーされます。overable アイテムフォルダー。 ユーザーがパージフォルダー内のアイテムにアクセスできません。 ただし、Office 365 電子情報開示ツールを使用して、[削除] フォルダー内のアイテムを検索できます。
+    a. **Office 365 ユーザーアカウントに対応するユーザー id を持つアイテム**。パートナーコネクタがサードパーティデータソース内のアイテムのユーザー Id を office 365 の特定のユーザー id にマップできる場合、そのアイテムはユーザーのレコードの [削除] **** フォルダーにコピーされます。overable アイテムフォルダー。 ユーザーがパージフォルダー内のアイテムにアクセスできません。 ただし、Office 365 電子情報開示ツールを使用して、[削除] フォルダー内のアイテムを検索できます。
     
-    b. **office 365 ユーザーアカウントに対応するユーザー id を持たないアイテム**。パートナーコネクタがアイテムのユーザー id を office 365 の特定のユーザー id にマップできない場合、そのアイテムはサードパーティデータメールボックスの**受信トレイ**フォルダーにコピーされます。 受信トレイにアイテムをインポートすると、組織内のユーザーがサードパーティのメールボックスにサインインしてこれらのアイテムを表示および管理できるようになります。また、パートナーコネクタ構成で調整が必要かどうかを確認します。
+    b. **Office 365 ユーザーアカウントに対応するユーザー id を持たないアイテム**。パートナーコネクタがアイテムのユーザー Id を office 365 の特定のユーザー id にマップできない場合、そのアイテムはサードパーティデータメールボックスの**受信トレイ**フォルダーにコピーされます。 受信トレイにアイテムをインポートすると、組織内のユーザーがサードパーティのメールボックスにサインインしてこれらのアイテムを表示および管理できるようになります。また、パートナーコネクタ構成で調整が必要かどうかを確認します。
  
 ## <a name="step-1-find-a-third-party-data-partner"></a>手順 1: サード パーティのデータのパートナーを見つける
 
-office 365 でサードパーティのデータをアーカイブするための主要なコンポーネントは、サードパーティのデータソースからデータを取得して office 365 にインポートすることに特化した Microsoft パートナーを検索して作業することです。 インポートされたデータは、組織の他の Microsoft データ (Exchange からの電子メールや SharePoint および OneDrive for business からのメールなど) と共にアーカイブおよび保存することができます。 パートナーは、組織のサードパーティのデータソース (BlackBerry、Facebook、Google +、Thomson Reuters、Twitter、YouTube など) からデータを抽出し、そのデータを、Exchange メールボックスにアイテムをインポートする Office 365 API に渡すコネクタを作成します。電子メールメッセージ。 
+Office 365 でサードパーティのデータをアーカイブするための主要なコンポーネントは、サードパーティのデータソースからデータを取得して Office 365 にインポートすることに特化した Microsoft パートナーを検索して作業することです。 インポートされたデータは、組織の他の Microsoft データ (Exchange からの電子メールや SharePoint および OneDrive for business からのメールなど) と共にアーカイブおよび保存することができます。 パートナーは、組織のサードパーティのデータソース (BlackBerry、Facebook、Google +、Thomson Reuters、Twitter、YouTube など) からデータを抽出し、そのデータを、Exchange メールボックスにアイテムをインポートする Office 365 API に渡すコネクタを作成します。電子メールメッセージ。 
   
 次のセクションでは、Office 365 でサードパーティのデータをアーカイブするためのプログラムに参加している Microsoft パートナーと、そのパートナーがサポートするサードパーティのデータソースを示します。
 
@@ -67,7 +67,7 @@ office 365 でサードパーティのデータをアーカイブするための
   
 [OpenText](#opentext)
   
-[verba](#verba)
+[Verba](#verba)
   
 ### <a name="17a-4-llc"></a>17a-4 LLC
 
@@ -141,7 +141,7 @@ office 365 でサードパーティのデータをアーカイブするための
     
 - Bloomberg メール
     
-- celltrust
+- CellTrust
     
 - チャットのインポート
     
@@ -165,7 +165,7 @@ office 365 でサードパーティのデータをアーカイブするための
     
 - FastTrack
     
-- gnutella
+- Gnutella
     
 - Google +
     
@@ -211,13 +211,13 @@ office 365 でサードパーティのデータをアーカイブするための
     
 - Jive のインポート
     
-- jxta
+- JXTA
     
 - LinkedIn
     
 - Microsoft Lync (2010、2013)
     
-- mftp
+- MFTP
     
 - Microsoft Lync 2013 Voice
     
@@ -241,7 +241,7 @@ office 365 でサードパーティのデータをアーカイブするための
     
 - Office 365 Shared IM
     
-- pinterest
+- Pinterest
     
 - ピボット
     
@@ -263,9 +263,9 @@ office 365 でサードパーティのデータをアーカイブするための
     
 - Twitter
     
-- winmx
+- WinMX
     
-- winny
+- Winny
     
 - Yahoo
     
@@ -286,7 +286,7 @@ office 365 でサードパーティのデータをアーカイブするための
     
 - LinkedIn
     
-- pinterest
+- Pinterest
     
 - Twitter
     
@@ -332,7 +332,7 @@ office 365 でサードパーティのデータをアーカイブするための
     
 - Factset
     
-- fxconnect
+- FXConnect
     
 - ICE Chat/YellowJacket
     
@@ -392,9 +392,9 @@ office 365 でサードパーティのデータをアーカイブするための
     
 - Thomson Reuters
   
-### <a name="verba"></a>verba
+### <a name="verba"></a>Verba
 
-[verba](https://www.verba.com)は、次のサードパーティデータソースをサポートしています。 
+[Verba](https://www.verba.com)は、次のサードパーティデータソースをサポートしています。 
   
 - Avaya Aura ビデオ
     
@@ -416,9 +416,9 @@ office 365 でサードパーティのデータをアーカイブするための
     
 - Cisco UC 音声
     
-- Cisco uccx/uccx ビデオ
+- Cisco UCCX/UCCX ビデオ
     
-- Cisco uccx/uccx 音声
+- Cisco UCCX/UCCX 音声
     
 - ESChat ラジオ
     
@@ -481,7 +481,7 @@ Office 365 にデータをインポートするためにサードパーティ製
     Set-Mailbox -Identity <identity of third-party data mailbox> -HiddenFromAddressListsEnabled $true
     ```
 
-2. サードパーティのデータメールボックスに**fullaccess**のアクセス許可を割り当てて、管理者またはコンプライアンス責任者が Outlook デスクトップクライアントでサードパーティのデータメールボックスを開くことができるようにします。「[管理者のアクセス許可を管理する」を](https://go.microsoft.com/fwlink/p/?LinkId=692104)参照してください。
+2. サードパーティのデータメールボックスに**Fullaccess**のアクセス許可を割り当てて、管理者またはコンプライアンス責任者が Outlook デスクトップクライアントでサードパーティのデータメールボックスを開くことができるようにします。「[管理者のアクセス許可を管理する」を](https://go.microsoft.com/fwlink/p/?LinkId=692104)参照してください。
     
 3. サードパーティのデータメールボックスに対して、次のコンプライアンス関連の Office 365 機能を有効にします。
     
@@ -495,7 +495,7 @@ Office 365 にデータをインポートするためにサードパーティ製
     
        
     
-    - サードパーティデータメールボックスへの所有者、代理人、および管理者のアクセスに対してメールボックス監査ログを有効にします。「 [Enable mailbox auditing in Office 365](enable-mailbox-auditing.md)」を参照してください。 これにより、サードパーティのデータメールボックスにアクセスできるすべてのユーザーによって実行されたすべてのアクティビティを監査できます。
+    - サードパーティデータメールボックスへの所有者、代理人、および管理者のアクセスに対してメールボックス監査ログを有効にします。「 [Enable mailbox auditing In Office 365](enable-mailbox-auditing.md)」を参照してください。 これにより、サードパーティのデータメールボックスにアクセスできるすべてのユーザーによって実行されたすべてのアクティビティを監査できます。
 
 ## <a name="step-3-configure-user-mailboxes-for-third-party-data"></a>手順 3: サード パーティのデータに対してユーザーのメールボックスを構成する
 
@@ -525,13 +525,13 @@ Office 365 にデータをインポートするためにサードパーティ製
  
 ## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>手順 5: Azure Active Directory にサードパーティのデータコネクタを登録する
 
-2018年9月30日以降、office 365 の Azure サービスは、Exchange Online での先進認証の使用を開始して、office 365 組織に接続してデータをインポートするサードパーティ製データコネクタを認証します。 この変更によって、モダン認証は現在のメソッドよりも高いセキュリティを提供しています。これは、以前に説明したエンドポイントを使用して Azure サービスに接続するサードパーティコネクタに基づいていました。
+2018年9月30日以降、Office 365 の Azure サービスは、Exchange Online での先進認証の使用を開始して、Office 365 組織に接続してデータをインポートするサードパーティ製データコネクタを認証します。 この変更によって、モダン認証は現在のメソッドよりも高いセキュリティを提供しています。これは、以前に説明したエンドポイントを使用して Azure サービスに接続するサードパーティコネクタに基づいていました。
 
-新しいモダン認証方法を使用してサードパーティ製データコネクタを office 365 に接続できるようにするには、office 365 組織の管理者が、Azure Active Directory の信頼済みサービスアプリケーションとしてそのコネクタを登録するために同意する必要があります。 これを行うには、アクセス許可要求を受け入れ、コネクタが Azure Active Directory 内の組織のデータにアクセスできるようにします。 この要求を承諾すると、サードパーティのデータコネクタがエンタープライズアプリケーションとして Azure Active Directory に追加され、サービスプリンシパルとして表されます。 同意プロセスの詳細については、「[テナント管理者の同意](https://docs.microsoft.com/en-us/skype-sdk/trusted-application-api/docs/tenantadminconsent)」を参照してください。
+新しいモダン認証方法を使用してサードパーティ製データコネクタを Office 365 に接続できるようにするには、Office 365 組織の管理者が、Azure Active Directory の信頼済みサービスアプリケーションとしてそのコネクタを登録するために同意する必要があります。 これを行うには、アクセス許可要求を受け入れ、コネクタが Azure Active Directory 内の組織のデータにアクセスできるようにします。 この要求を承諾すると、サードパーティのデータコネクタがエンタープライズアプリケーションとして Azure Active Directory に追加され、サービスプリンシパルとして表されます。 同意プロセスの詳細については、「[テナント管理者の同意](https://docs.microsoft.com/en-us/skype-sdk/trusted-application-api/docs/tenantadminconsent)」を参照してください。
 
 コネクタを登録するための要求をアクセスして受け入れる手順を次に示します。
 
-1. [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Office 365 グローバル管理者の資格情報を使用してサインインします。<br/><br/>次のダイアログボックスが表示されます。 carets を展開して、コネクタに割り当てられているアクセス許可を確認できます。<br/><br/>![[アクセス許可の要求] ダイアログが表示されます。](media/O365_ThirdPartyDataConnector_OptIn1.png)
+1. [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Office 365 グローバル管理者の資格情報を使用してサインインします。<br/><br/>次のダイアログボックスが表示されます。 Carets を展開して、コネクタに割り当てられているアクセス許可を確認できます。<br/><br/>![[アクセス許可の要求] ダイアログが表示されます。](media/O365_ThirdPartyDataConnector_OptIn1.png)
 2. [**Accept**] をクリックします。
 
 要求を受け入れると、 [Azure portal](https://portal.azure.com)が表示されます。 組織のアプリケーションの一覧を表示するには、[ **Azure Active Directory** > **エンタープライズアプリケーション**] をクリックします。 Office 365 サードパーティデータコネクタは、**エンタープライズアプリケーション**ブレードに一覧表示されています。
@@ -543,7 +543,7 @@ Office 365 にデータをインポートするためにサードパーティ製
 
 組織がアクセス許可要求に同意して、Azure Active Directory にサードパーティデータコネクタを登録すると、組織はいつでもその同意を取り消すことができます。 ただし、コネクタの同意を取り消すと、サードパーティのデータソースからのデータは Office 365 にインポートされなくなります。
 
-サードパーティのデータコネクタの同意を取り消すには、azure ポータルの [**エンタープライズアプリケーション**] ブレードまたはを使用[して、azure Active Directory からアプリケーション (対応するサービスプリンシパルを削除) を削除するか、または](https://docs.microsoft.com/en-us/powershell/module/msonline/remove-msolserviceprincipal)Office 365 PowerShell で new-msolserviceprincipal を削除します。 Azure Active Directory PowerShell で[AzureADServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadserviceprincipal)コマンドレットを使用することもできます。
+サードパーティのデータコネクタの同意を取り消すには、Azure ポータルの [**エンタープライズアプリケーション**] ブレードまたはを使用[して、azure Active Directory からアプリケーション (対応するサービスプリンシパルを削除) を削除するか、または](https://docs.microsoft.com/en-us/powershell/module/msonline/remove-msolserviceprincipal)Office 365 PowerShell で new-msolserviceprincipal を削除します。 Azure Active Directory PowerShell で[AzureADServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadserviceprincipal)コマンドレットを使用することもできます。
   
 ## <a name="more-information"></a>詳細情報
 
@@ -551,7 +551,7 @@ Office 365 にデータをインポートするためにサードパーティ製
     
     |**メッセージのプロパティ**|**必須かどうか?**|**説明**|**値の例**|
     |:-----|:-----|:-----|:-----|
-    |**FROM** <br/> |はい  <br/> |最初にサード パーティのデータ ソース内のアイテムを作成または送信したユーザー。 パートナーコネクタは、ソースアイテム (Twitter ハンドルなど) から、すべての参加者 ([差出人] および [宛先] フィールド内のユーザー) の Office 365 ユーザーアカウントにユーザー ID をマップしようとします。 メッセージのコピーが、すべての参加者のメールボックスにインポートされます。 そのアイテムの参加者が office 365 ユーザーアカウントにマップできない場合、そのアイテムは office 365 のサードパーティのアーカイブメールボックスにインポートされます。  <br/> <br/> アイテムの送信者として識別される参加者は、アイテムがインポートされる Office 365 組織にアクティブなメールボックスを持っている必要があります。 送信者がアクティブなメールボックスを持っていない場合は、次のエラーが返されます。<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
+    |**FROM** <br/> |はい  <br/> |最初にサード パーティのデータ ソース内のアイテムを作成または送信したユーザー。 パートナーコネクタは、ソースアイテム (Twitter ハンドルなど) から、すべての参加者 ([差出人] および [宛先] フィールド内のユーザー) の Office 365 ユーザーアカウントにユーザー ID をマップしようとします。 メッセージのコピーが、すべての参加者のメールボックスにインポートされます。 そのアイテムの参加者が Office 365 ユーザーアカウントにマップできない場合、そのアイテムは Office 365 のサードパーティのアーカイブメールボックスにインポートされます。  <br/> <br/> アイテムの送信者として識別される参加者は、アイテムがインポートされる Office 365 組織にアクティブなメールボックスを持っている必要があります。 送信者がアクティブなメールボックスを持っていない場合は、次のエラーが返されます。<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
     |**TO** <br/> |はい  <br/> |アイテムを受信したユーザー (データ ソース内のアイテムに該当する場合)。  <br/> | `bob@contoso.com` <br/> |
     |**件名** <br/> |いいえ  <br/> |ソース アイテムの件名。  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
     |**DATE** <br/> |はい  <br/> |アイテムが最初に作成されたか、または顧客データ ソースに投稿された日付 (たとえば、Twitter のメッセージがツイートされた日付)。  <br/> | `01 NOV 2015` <br/> |

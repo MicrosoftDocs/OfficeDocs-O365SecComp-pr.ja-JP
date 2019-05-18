@@ -3,7 +3,7 @@ title: コンテンツ検索レポートのエクスポート
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExportReport
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Office 365 のセキュリティ & コンプライアンスセンターでコンテンツ検索の実際の結果をエクスポートする代わりに、検索結果レポートをエクスポートするだけで済みます。 レポートには、検索結果の概要と、エクスポートされる各アイテムの詳細情報を含むドキュメントが含まれます。
-ms.openlocfilehash: 57c8a9be5c53998570f6ff15a49df69e27745e26
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8e33a7ba236e0890fc5985aa9a00cba904a40793
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255655"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154609"
 ---
 # <a name="export-a-content-search-report"></a>コンテンツ検索レポートのエクスポート
 
@@ -48,7 +48,7 @@ ms.locfileid: "32255655"
     
     - Microsoft Edge
     
-      or
+      または
     
     - Microsoft Internet Explorer 10 以降のバージョン
     
@@ -89,7 +89,7 @@ ms.locfileid: "32255655"
     
     インデックスのないアイテムの詳細については、「[コンテンツ検索でインデックス](partially-indexed-items-in-content-search.md)が作成されたアイテム」を参照してください。
     
-7. SharePoint ドキュメントのすべてのバージョンの検索統計を含めるかどうかを選択します。 このオプションは、検索のコンテンツソースに SharePoint または OneDrive for business サイトが含まれている場合にのみ表示されます。
+7. SharePoint ドキュメントのすべてのバージョンの検索統計を含めるかどうかを選択します。 このオプションは、検索のコンテンツソースに SharePoint または OneDrive for Business サイトが含まれている場合にのみ表示されます。
     
 8. [**レポートの生成**] をクリックします。
     
@@ -157,7 +157,7 @@ ms.locfileid: "32255655"
     
   - メッセージの送信者と受信者。
     
-    SharePoint および OneDrive for business サイトのドキュメントの場合、結果ログには、各ドキュメントに関する以下の情報が含まれています。
+    SharePoint および OneDrive for Business サイトのドキュメントの場合、結果ログには、各ドキュメントに関する以下の情報が含まれています。
     
   - ドキュメントの URL。
     

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: acfa0c635b361426542e91a55c8d75c315bfb831
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: efd5dfdee48e892b5fa3fb018a9655c10d9a325e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242805"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155159"
 ---
 # <a name="create-a-legal-hold-notice"></a>法的情報保留通知を作成する
 
-高度な電子情報開示 (プレビュー) 保管担当者コミュニケーションを使用すると、組織は保管担当者との通信に関するワークフローを管理できます。 法務部門は、コミュニケーションツールを使用して、法的情報保留通知の送信、収集、追跡を系統的に行うことができます。 また、柔軟な作成プロセスでは、チームは、保留通知ワークフローと、保管担当者に送信される通知の内容をカスタマイズすることもできます。 
+Advanced eDiscovery 保管担当者 communications を使用すると、組織は保管担当者との通信に関するワークフローを管理できます。 法務部門は、コミュニケーションツールを使用して、法的情報保留通知の送信、収集、追跡を系統的に行うことができます。 また、柔軟な作成プロセスでは、チームは、保留通知ワークフローと、保管担当者に送信される通知の内容をカスタマイズすることもできます。 
 
 ![通信ページ](../media/CommunicationPage.PNG)
 
@@ -35,13 +35,13 @@ ms.locfileid: "32242805"
 
 ![名前の通信ページ](../media/NameCommunication.PNG)
 
-1. セキュリティ & コンプライアンスセンターで、[**電子情報開示 > Advanced eDiscovery (プレビュー)** ] に移動して、組織内のケースの一覧を表示します。
+1. セキュリティ & コンプライアンスセンターで、**電子情報開示 _GT_ Advanced ediscovery**に移動して、組織内のケースの一覧を表示します。
    
 2. [**通信**] タブをクリックし、[**新しい通信**] をクリックします。
    
 3. [**名前の通信**] ページで、次の (必須) 通信の詳細を指定します。
 
-    - **name**: これは通信の名前です。
+    - **Name**: これは通信の名前です。
     
     - **発行責任**者: ドロップダウンリストには、ケースメンバーの一覧が表示されます。 保管担当者に送信される各通知は、指定された発行責任者の代理として送信されます。
 
@@ -62,7 +62,7 @@ ms.locfileid: "32242805"
 3. **[次へ]** をクリックします。
 
   >[!Tip]
-  >ポータルコンテンツのコンテンツと形式をカスタマイズする方法の詳細については、「 [Use the Communications Editor](using-communications-editor.md)」を参照してください。
+  >ポータルコンテンツのコンテンツと形式をカスタマイズする方法の詳細については、「 [Use The Communications Editor](using-communications-editor.md)」を参照してください。
 
 ## <a name="step-3-set-the-required-notifications"></a>手順 3: 必要な通知を設定する
 
