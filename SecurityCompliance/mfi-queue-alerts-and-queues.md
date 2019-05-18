@@ -3,30 +3,30 @@ title: キューのアラートとキュー
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 管理者は、Security & コンプライアンスセンターのメールフローダッシュボードのキューのアラートとキューについて説明しています。
-ms.openlocfilehash: 490665bb6b062c5a0b93c988adea9eeb9827cb86
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 149a1d82b3627037db2ab5c6e1427c79a49535bd
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267694"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158759"
 ---
 # <a name="queue-alerts-and-queues"></a>キューのアラートとキュー
 
 ## <a name="queue-alerts"></a>キューのアラート
 
-コネクタを使用して office 365 組織からオンプレミスまたはパートナーの電子メールサーバーにメッセージを送信できない場合、メッセージは office 365 でキューに入れられます。 このような状態になる一般的な例を次に示します。
+コネクタを使用して Office 365 組織からオンプレミスまたはパートナーの電子メールサーバーにメッセージを送信できない場合、メッセージは Office 365 でキューに入れられます。 このような状態になる一般的な例を次に示します。
 
 - コネクタが正しく構成されていません。
 
 - オンプレミス環境でネットワークまたはファイアウォールの変更が行われています。
 
-Office 365 は、引き続き48時間、配信を再試行します。 48時間後に、メッセージは有効期限が切れて、配信不能レポート (ndr またはバウンスメッセージとも呼ばれる) で送信者に返されます。
+Office 365 は、引き続き48時間、配信を再試行します。 48時間後に、メッセージは有効期限が切れて、配信不能レポート (Ndr またはバウンスメッセージとも呼ばれる) で送信者に返されます。
 
 キューに登録された電子メールのボリュームが事前に定義されたしきい値 (既定値は2000メッセージ) を超えた場合、**最近の通知**のメールフローダッシュボードで通知が使用可能になり、管理者はメール通知を受信します (ユーザーの代替メールアドレス)。. 警告のしきい値、毎日の通知の制限、または通知の受信者を構成するには、以下の「**キューの警告をカスタマイズ**する」を参照してください。
 

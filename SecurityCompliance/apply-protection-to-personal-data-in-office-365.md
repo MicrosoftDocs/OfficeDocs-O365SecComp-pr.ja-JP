@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 2/7/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.collection:
 - Ent_O365
@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: DLP ポリシーを使用して、Office 365 の個人データを保護する方法について説明します。
-ms.openlocfilehash: 97a8c584cd010ae10a0416e47d8184c84f1e1ab9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b4754f5b8627b398c92d36baf2d48b04e67edcf9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243216"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155599"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Office 365 の個人データに保護を適用する
 
@@ -142,7 +142,7 @@ Office 365 DLP を使用した情報の保護レベルの 1 つは、環境内�
 <tr class="odd">
 <td align="left">コンテンツがポリシーの設定に一致する場合にユーザーに通知する</td>
 <td align="left"><p>このボックスをチェックします ([ユーザーにポリシー ヒントを表示して電子メール通知を送信する])。</p>
-<p>[ヒントとメールをカスタマイズする] をクリックし、環境に合わせてこれらを更新します。この記事の既定の通知 [<a href="https://support.office.com/en-us/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">メール通知を送信し、DLP ポリシーのポリシー ヒントを表示する</a>] を参照してください。</p></td>
+<p>[ヒントとメールをカスタマイズする] をクリックし、環境に合わせてこれらを更新します。この記事の既定の通知 [<a href="https://support.office.com/ja-JP/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">メール通知を送信し、DLP ポリシーのポリシー ヒントを表示する</a>] を参照してください。</p></td>
 </tr>
 <tr class="even">
 <td align="left">特定の量の機密情報が同時に共有されている場合に検出します。</td>
@@ -248,9 +248,11 @@ SharePoint のアクセス許可を使用して、サイトまたはそのコン
 
 詳しくは、以下の資料を参照してください。
 
--   [SharePoint でのアクセス許可レベルについて](https://support.office.com/ja-JP/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
+-   
+  [SharePoint でのアクセス許可レベルについて](https://support.office.com/ja-JP/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
 
--   [SharePoint グループについて](https://support.office.com/ja-JP/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
+-   
+  [SharePoint グループについて](https://support.office.com/ja-JP/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
 
 ### <a name="external-sharing-policies-for-sharepoint-and-onedrive-for-business-libraries"></a>SharePoint と OneDrive for Business ライブラリに関する外部共有ポリシー
 
@@ -301,9 +303,10 @@ SharePoint のアクセス許可を使用して、サイトまたはそのコン
 詳しくは、以下の資料を参照してください。
 
 -   
-  [SharePoint Online 環境の外部共有を管理する](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+  [SharePoint Online 環境の外部共有を管理する](https://support.office.com/ja-JP/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
--   [組織外部のユーザーとのサイトまたはドキュメントの共有](https://support.office.com/ja-JP/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
+-   
+  [組織外部のユーザーとのサイトまたはドキュメントの共有](https://support.office.com/ja-JP/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
 ### <a name="site-level-device-access-policies"></a>サイトレベルのデバイス アクセス ポリシー
 
@@ -352,7 +355,7 @@ SharePoint と OneDrive for Business のデバイス アクセス ポリシー�
 </tbody>
 </table>
 
-詳細: [SharePoint Online 管理センター: 非管理対象デバイスからのアクセスをコントロールします](https://support.office.com/en-us/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US)。
+詳細: [SharePoint Online 管理センター: 非管理対象デバイスからのアクセスをコントロールします](https://support.office.com/ja-JP/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US)。
 
 ## <a name="service-access-protection-for-identities-and-devices"></a>ID とデバイスのサービス アクセスの保護
 

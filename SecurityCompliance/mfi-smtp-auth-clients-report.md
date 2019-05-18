@@ -1,22 +1,22 @@
 ---
-title: SMTP 認証クライアントレポート
+title: SMTP Auth クライアントのレポート
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理者は、Security & コンプライアンスセンターのメールフローダッシュボードの SMTP Auth クライアントレポートについて学習できます。
-ms.openlocfilehash: df0ef74a3ffd7ae8d36e5d1092b3e23304e1df78
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: fde5be59e2b8a86b2bac6fc793293d8887670746
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868555"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158599"
 ---
-# <a name="smtp-auth-clients-report"></a>SMTP 認証クライアントレポート
+# <a name="smtp-auth-clients-report"></a>SMTP Auth クライアントのレポート
 
 **Smtp auth clients**レポートでは、組織内のユーザーまたはシステムアカウントによる smtp auth クライアント送信プロトコルの使用が強調されています。 この従来のプロトコル (エンドポイント smtp.office365.com を使用します) は基本認証のみを提供し、侵害されたアカウントが電子メールを送信するために使用されやすくなります。  このレポートでは、異常な動作を確認できます。 また、SMTP 認証を使用するクライアントまたはデバイスの TLS 使用状況データも表示されます。
 

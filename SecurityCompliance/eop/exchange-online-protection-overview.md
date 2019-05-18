@@ -4,18 +4,18 @@ ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
 ms.date: 01/31/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: マイクロソフト Exchange Online Protection (EOP) は、クラウドベースの電子メール フィルタリング サービスであり、スパムやマルウェアから組織を保護するのに役立ち、メッセージング ポリシー違反から組織を保護する機能が含まれています。
-ms.openlocfilehash: a0b736eb9773ace87f32f1272b3f4326532206d2
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: b9fb5591834292fba4a58cfd024a667edce3c7ca
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402885"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150249"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection の概要
 
@@ -23,7 +23,7 @@ ms.locfileid: "33402885"
   
 メッセージング保護に EOP を使用できる基本的な方法として、次のようなものがあります。
   
-- **スタンドアロンのシナリオで**EOP は、社内の Microsoft exchange server 2013 環境、レガシ Exchange server バージョン、またはその他の社内 SMTP 電子メールソリューションに対して、クラウドベースの電子メール保護を提供します。 
+- **スタンドアロンのシナリオで**EOP は、社内の Microsoft Exchange Server 2013 環境、レガシ Exchange Server バージョン、またはその他の社内 SMTP 電子メールソリューションに対して、クラウドベースの電子メール保護を提供します。 
     
 - **Microsoft Exchange Online の一部として** 既定で、EOP は Microsoft Exchange Online クラウドホスト型メールボックスを保護します。 Exchange Online の機能の構成については、「[脅威から保護](../protect-against-threats.md)する」を参照してください。 
     
@@ -48,13 +48,13 @@ EOP はデータセンター間の負荷分散を実行しますが、1 つの�
     
 - ヨーロッパ、中東、およびアフリカ (EMEA) では、すべての Exchange Online メールボックスが EMEA データセンターに配置され、すべてのメッセージが EOP フィルター処理のために EMEA データセンター経由でルーティングされます。
     
-- アジア太平洋 (apac) では、すべての Exchange Online メールボックスが apac データセンターに配置されていますが、現在、メッセージは EOP フィルター処理のために apac データセンター経由でルーティングされます。
+- アジア太平洋 (APAC) では、すべての Exchange Online メールボックスが APAC データセンターに配置されていますが、現在、メッセージは EOP フィルター処理のために APAC データセンター経由でルーティングされます。
 
 - 南北アメリカでは、すべての Exchange Online メールボックスは米国のデータセンターに配置されており、ブラジルとチリのデータセンターが使用されている南米と、カナダのデータセンターが使用されているカナダには例外があります。 南米およびカナダの顧客宛てのメッセージを含むすべての電子メールメッセージは、EOP フィルター処理のためにローカルデータセンターを経由してルーティングされます。quaratined 電子メールは、テナントが配置されているデータセンターに格納されます。
     
 - ヨーロッパ、中東、およびアフリカ (EMEA) では、すべての Exchange Online メールボックスが EMEA データセンターに配置され、すべてのメッセージが EOP フィルター処理のために EMEA データセンター経由でルーティングされます。
     
-- アジア太平洋 (apac) では、すべての Exchange Online メールボックスが apac データセンターに配置されており、現在、メッセージは EOP フィルター処理のために apac データセンター経由でルーティングされます。
+- アジア太平洋 (APAC) では、すべての Exchange Online メールボックスが APAC データセンターに配置されており、現在、メッセージは EOP フィルター処理のために APAC データセンター経由でルーティングされます。
     
 - Government Community Cloud (GCC) では、すべての Exchange Online メールボックスが米国データセンターに配置され、すべてのメッセージが EOP フィルター処理のために米国データセンター経由でルーティングされます。
     
@@ -76,7 +76,7 @@ EOP のセットアップは、特にコンプライアンス ルールが少な
   
 すでに EOP を購入している場合は、「[EOP サービスを設定する](set-up-your-eop-service.md)」を参照して、メッセージング環境を保護するように EOP を構成するために必要なすべての手順が完了していることを確認してください。 
   
-## <a name="for-more-information"></a>詳細情報
+## <a name="for-more-information"></a>関連情報
 
 [EOP の機能](eop-features.md)
   

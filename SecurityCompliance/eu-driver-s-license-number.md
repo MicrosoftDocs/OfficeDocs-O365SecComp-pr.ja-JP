@@ -4,18 +4,18 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 運転免許証番号の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: be9497c325866a670dff8d82b5170f4ca947c4ad
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f1a95ecbaf6b6d1ac189290dd6d076cfd91ab30f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255775"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152979"
 ---
 # <a name="eu-drivers-license-number"></a>EU 運転免許証番号
 
@@ -41,7 +41,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_austria_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_austria_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_austria_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
 <!-- EU Driver's License Number -->
@@ -81,7 +81,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_belgium_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_belgium_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_belgium_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -121,7 +121,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_bulgaria_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_bulgaria_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_bulgaria_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -139,7 +139,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_bulgaria_eu_driver's_license_number**|
 |:-----|
-|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> свидетелствозауправлениенампс  <br/> свидетелствозауправлениенамоторнопревозносредство  <br/> сумпс  <br/> шофьорскакнижка  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> свидетелство за управление на мпс  <br/> свидетелство за управление на моторно превозно средство  <br/> сумпс  <br/> шофьорска книжка  <br/> |
    
 ## <a name="croatia"></a>クロアチア
 
@@ -161,7 +161,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_croatia_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_croatia_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_croatia_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -201,7 +201,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_cyprus_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_cyprus_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_cyprus_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -218,7 +218,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_cyprus_eu_driver's_license_number**|
 |:-----|
-|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> άδειαοδήγησης  <br/> |
+|dl  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> άδεια οδήγησης  <br/> |
    
 ## <a name="czech-republic"></a>チェコ共和国
 
@@ -246,7 +246,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_czech_republic_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_czech_republic_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_czech_republic_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -286,7 +286,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_denmark_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_denmark_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_denmark_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -330,7 +330,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_estonia_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_estonia_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_estonia_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -375,7 +375,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_finland_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_finland_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_finland_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -422,7 +422,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_greece_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_greece_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_greece_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -439,7 +439,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_greece_eu_driver's_license_number**|
 |:-----|
-|ライブラリ  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> δειαοδήγησης  <br/> Adeia odigisis  <br/> |
+|ライブラリ  <br/> driver license  <br/> 運転免許証番号  <br/> ドライバーのライセンス  <br/> ドライバー lic  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> 運転免許証番号  <br/> ドライバーのライセンス番号  <br/> 運転免許証番号  <br/> dlno #  <br/> δεια οδήγησης  <br/> Adeia odigisis  <br/> |
    
 ## <a name="hungary"></a>ハンガリー
 
@@ -465,7 +465,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_hungary_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_hungary_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_hungary_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -508,7 +508,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_ireland_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_ireland_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_ireland_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -555,7 +555,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_latvia_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_latvia_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_latvia_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -594,7 +594,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_lithuania_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_lithuania_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_lithuania_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -633,7 +633,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_luxemburg_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_luxemburg_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_luxemburg_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -682,7 +682,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_malta_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_malta_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_malta_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
 <!-- EU Driver's License Number -->
@@ -721,7 +721,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_netherlands_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_netherlands_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_netherlands_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -770,7 +770,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_poland_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_poland_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_poland_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -819,7 +819,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_portugal_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_portugal_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_portugal_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -862,7 +862,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_romania_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_romania_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_romania_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -905,7 +905,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_slovakia_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_slovakia_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_slovakia_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -944,7 +944,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_slovenia_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_slovenia_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_slovenia_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -987,7 +987,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 関数`Func_spain_eu_driver's_license_number`は、パターンに一致するコンテンツを検索します。 
     
-- from `Keywords_spain_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_spain_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->
@@ -1032,7 +1032,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_sweden_eu_driver's_license_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_sweden_eu_driver's_license_number`キーワードが見つかりました。 
+- From `Keywords_sweden_eu_driver's_license_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Driver's License Number -->

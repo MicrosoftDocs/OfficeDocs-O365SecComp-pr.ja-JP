@@ -4,26 +4,26 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/12/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: 電子情報開示検索結果をエクスポートするときに、コンピューターにダウンロードされる PST ファイルの既定のサイズを変更できます。
-ms.openlocfilehash: 98b543b6e34cb9cb075a765671def91742aee6c1
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 82a3d80cae04cd8d08b126c800ec2b4a1995f262
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243612"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152090"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>電子情報開示検索結果をエクスポートするときに PST ファイルのサイズを変更する
 
-Office 365 ediscovery エクスポートツールを使用して、さまざまな Microsoft ediscovery ツールから電子情報開示検索の結果をエクスポートする場合、エクスポート可能な PST ファイルの既定のサイズは 10 GB です。 この既定のサイズを変更する場合は、検索結果のエクスポートに使用するコンピューターで Windows レジストリを編集できます。 これを行う理由の1つは、PST ファイルが DVD、コンパクトディスク、または USB ドライブなどのリムーバブルメディアに格納できるようにするためです。 
+Office 365 eDiscovery エクスポートツールを使用して、さまざまな Microsoft eDiscovery ツールから電子情報開示検索の結果をエクスポートする場合、エクスポート可能な PST ファイルの既定のサイズは 10 GB です。 この既定のサイズを変更する場合は、検索結果のエクスポートに使用するコンピューターで Windows レジストリを編集できます。 これを行う理由の1つは、PST ファイルが DVD、コンパクトディスク、または USB ドライブなどのリムーバブルメディアに格納できるようにするためです。 
   
 > [!NOTE]
->  Office 365 eDiscovery エクスポートツールは、セキュリティ/コンプライアンスセンター、Exchange online のインプレース電子情報開示、および SharePoint online の電子情報開示センターでコンテンツ検索ツールを使用して検索結果をエクスポートするために使用されます。
+>  Office 365 eDiscovery エクスポートツールは、セキュリティ/コンプライアンスセンター、Exchange Online のインプレース電子情報開示、および SharePoint Online の電子情報開示センターでコンテンツ検索ツールを使用して検索結果をエクスポートするために使用されます。
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>電子情報開示検索結果をエクスポートするときに PST ファイルのサイズを変更するためのレジストリ設定を作成する
 

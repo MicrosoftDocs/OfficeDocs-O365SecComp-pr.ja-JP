@@ -3,17 +3,17 @@ title: SharePoint Server での GDPR への対応
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: オンプレミスの SharePoint Server で GDPR の要件に対応する方法について説明します。
-ms.openlocfilehash: 84692799222be595d69f7a33a31b0ec3fe767c3d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6da9d635506eafc2b976cf6a87f68370f40e327a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253895"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152739"
 ---
 # <a name="gdpr-for-sharepoint-server"></a>SharePoint Server での GDPR への対応
 
@@ -35,7 +35,9 @@ SharePoint Server のサイトとライブラリに含まれているユーザ�
 
 ファイル共有、SharePoint のサイトおよびライブラリについて推奨される作業の手順を次に示します。
 
-1.  **[Azure Information Protection スキャナーをインストールし、構成します。](https://docs.microsoft.com/ja-JP/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
+1.  
+  **
+  [Azure Information Protection スキャナーをインストールし、構成します。](https://docs.microsoft.com/ja-JP/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
 
     -   使用する機密データの種類を決定します。
 

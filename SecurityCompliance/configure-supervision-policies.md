@@ -3,7 +3,7 @@ title: 組織の監督ポリシーを設定する
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
@@ -16,46 +16,46 @@ search.appverid:
 - MET150
 - MOE150
 description: 監督レビューポリシーを設定して、レビューのために従業員のコミュニケーションをキャプチャします。
-ms.openlocfilehash: c99936a9a33446ce13e5d0a719ef7447be619bf4
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: 4cf8c47f761f13165898cbc719f94e9bf9fd66f2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33470397"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151539"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>組織の監督ポリシーを設定する
 
 監督ポリシーを使用して、内部または外部のレビューアーによる検査のために従業員の通信をキャプチャします。 監督ポリシーが組織内の通信を監視するのに役立つ方法の詳細については、「 [Office 365 の監督ポリシー](supervision-policies.md)」を参照してください。
 
 > [!NOTE]
-> 監督ポリシーによって監視されるユーザーは、Microsoft 365 E5 コンプライアンスライセンス、Advanced コンプライアンスアドオンを備えた office 365 Enterprise E3 ライセンス、または office 365 Enterprise E5 サブスクリプションに含まれている必要があります。
-既存の Enterprise e5 プランを所有しておらず、監督を試みる場合は、 [Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)することができます。
+> 監督ポリシーによって監視されるユーザーは、Microsoft 365 E5 コンプライアンスライセンス、Advanced コンプライアンスアドオンを備えた Office 365 Enterprise E3 ライセンス、または Office 365 Enterprise E5 サブスクリプションに含まれている必要があります。
+既存の Enterprise E5 プランを所有しておらず、監督を試みる場合は、 [Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)することができます。
   
 Office 365 組織の監督をセットアップして使用するには、次の手順を実行します。
   
-- **手順 1 (省略可能)**:[監督のグループをセットアップする (オプション)](#step-1---set-up-groups-for-supervision-optional)
+- **手順 1 (オプション)**:[監督のグループをセットアップする](#step-1-set-up-groups-for-supervision-optional) 
 
     監督の使用を開始する前に、通信をレビューする必要があるユーザーとレビューを実行するユーザーを決定します。 監督がどのように機能するかを確認するために、少数のユーザーのみを使用して作業を開始する場合は、現時点ではグループの設定を省略できます。
 
-- **手順 2 (必須)**:[組織で監督を利用できるようにする (必須)](#step-2---make-supervision-available-in-your-organization-required)
+- **手順 2 (必須)**:[組織で監督を利用できるようにする](#step-2-make-supervision-available-in-your-organization-required)
 
-    ポリシーをセットアップできるように、自分を監督レビュー役割グループに追加します。 この役割が割り当てられているすべてのユーザーは、コンプライアンスセンターの [**監督**] ページにアクセスできます。 再表示可能な電子メールが exchange online でホストされている場合は、各レビュー担当者が[exchange online へのリモート PowerShell アクセス権](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)を持っている必要があります。
+    ポリシーをセットアップできるように、自分を監督レビュー役割グループに追加します。 この役割が割り当てられているすべてのユーザーは、コンプライアンスセンターの [**監督**] ページにアクセスできます。 再表示可能な電子メールが Exchange Online でホストされている場合は、各レビュー担当者が[Exchange online へのリモート PowerShell アクセス権](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)を持っている必要があります。
 
-- **手順 3 (省略可能)**:[カスタムの機密情報の種類とカスタムキーワードディクショナリを作成する](#step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
+- **手順 3 (省略可能)**:[カスタムの機密情報の種類とカスタムキーワードディクショナリを作成する](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
     監督ポリシー用のカスタムの機密情報の種類またはカスタムキーワード辞書が必要な場合は、監督のウィザードを開始する前に、それを作成する必要があります。
 
-- **手順 4 (必須)**:[監督ポリシーを設定する](#step-4---set-up-a-supervision-policy-required)
+- **手順 4 (必須)**:[監督ポリシーを設定する](#step-4-set-up-a-supervision-policy-required)
 
     監督ポリシーは、コンプライアンスセンターで作成します。 これらのポリシーでは、組織内で検討する対象となる通信を定義し、レビューを実行するユーザーを指定します。 コミュニケーションには、電子メールと Microsoft Teams の通信、およびサードパーティ製のプラットフォーム通信 (Facebook、Twitter など) が含まれます。
 
-- **手順 5 (オプション)**:[監督ポリシーをテストする](#step-5---test-your-supervision-policy-optional)
+- **手順 5 (オプション)**:[監督ポリシーをテストする](#step-5-test-your-supervision-policy-optional)
 
     監督ポリシーをテストし、必要に応じて機能していることを確認します。 コンプライアンス戦略によって標準が達成されていることを確認することが重要です。
 
-- **手順 6 (オプション)**: [Office 365 監督ダッシュボードまたは outlook on the web (旧称 outlook web App) を使用しないで、監視された通信を確認するように outlook を構成](#step-6---configure-outlook-for-reviewers-optional)する
+- **手順 6 (オプション)**: [Office 365 監督ダッシュボードまたは outlook on the Web (旧称 outlook web App) を使用しないで、監視された通信を確認するように outlook を構成](#step-6-configure-outlook-for-reviewers-optional)する
 
-    outlook を構成して、レビューアーが outlook クライアント内の監督機能にアクセスできるようにして、各アイテムを評価および分類できるようにします。
+    Outlook を構成して、レビューアーが Outlook クライアント内の監督機能にアクセスできるようにして、各アイテムを評価および分類できるようにします。
 
 ## <a name="step-1-set-up-groups-for-supervision-optional"></a>手順 1: 監督のグループをセットアップする (オプション)
 
@@ -65,7 +65,7 @@ Office 365 組織の監督をセットアップして使用するには、次の
 
 | **ポリシーメンバー** | **サポートされるグループ** | **サポートされないグループ** |
 |:-----|:-----|:-----|
-|ユーザーの監視 | 配布グループ <br> Office 365 グループ | 動的配布グループ |
+|ユーザーの監視 <br> 非監視ユーザー | 配布グループ <br> [Office 365 グループ] | 動的配布グループ |
 | Reviewers | メールが有効なセキュリティ グループ  | 配布グループ <br> 動的配布グループ |
   
 大規模なエンタープライズ組織での管理対象ユーザーを管理するには、大規模なグループのすべてのユーザーを監視する必要がある場合があります。 PowerShell を使用して、割り当てられたグループのグローバル監督ポリシーの配布グループを構成できます。 これにより、数千人のユーザーを1つのポリシーで監視し、新しい従業員が組織に参加したときに、監督ポリシーを更新したままにすることができます。
@@ -73,7 +73,7 @@ Office 365 組織の監督をセットアップして使用するには、次の
 1. 次のプロパティを使用して、グローバル監督ポリシー用の専用の[配布グループ](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps)を作成します。この配布グループは、他の目的や他の Office 365 サービスで使用されていないことを確認してください。
 
     - **MemberDepartRestriction = Closed**。 ユーザーが配布グループから自分自身を削除できないようにします。
-    - **memberjoinrestriction = Closed**。 ユーザーが自分を配布グループに追加できないようにします。
+    - **Memberjoinrestriction = Closed**。 ユーザーが自分を配布グループに追加できないようにします。
     - **ModerationEnabled = True**。 このグループに送信されるすべてのメッセージが承認され、監督ポリシー構成外との通信にグループが使用されていないことを確認します。
 
     ```
@@ -185,11 +185,11 @@ Office 365 組織の監督をセットアップして使用するには、次の
 
 ## <a name="step-6-configure-outlook-for-reviewers-optional"></a>手順 6: レビューアー用に Outlook を構成する (オプション)
 
-Office 365 の監督ダッシュボードではなく outlook を使用して通信を確認するためには、outlook クライアントを構成する必要があります。
+Office 365 の監督ダッシュボードではなく Outlook を使用して通信を確認するためには、Outlook クライアントを構成する必要があります。
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>手順 1: 監督メールボックスのアドレスをコピーする
 
-outlook デスクトップまたは web 用の outlook の確認を構成するには、監督ポリシーのセットアップの一部として作成された監督メールボックスのアドレスが必要です。
+Outlook デスクトップまたは web 用の Outlook の確認を構成するには、監督ポリシーのセットアップの一部として作成された監督メールボックスのアドレスが必要です。
   
 > [!NOTE]
 > 他のユーザーがポリシーを作成した場合は、そのポリシーからこのアドレスを取得してアドインをインストールする必要があります。
@@ -223,7 +223,7 @@ outlook デスクトップまたは web 用の outlook の確認を構成する�
 最後の手順として、レビュー担当者は、監督メールボックスに接続するための Outlook プロファイルを作成する必要があります。
 
 > [!NOTE]
-> 新しい Outlook プロファイルを作成するには、Windows のコントロールパネルの [メール] 設定を使用します。 これらの設定にアクセスするために必要なパスは、使用している windows オペレーティングシステム (windows 7、windows 8、または windows 10)、およびインストールされている Outlook のバージョンによって異なる場合があります。
+> 新しい Outlook プロファイルを作成するには、Windows のコントロールパネルの [メール] 設定を使用します。 これらの設定にアクセスするために必要なパスは、使用している Windows オペレーティングシステム (Windows 7、Windows 8、または Windows 10)、およびインストールされている Outlook のバージョンによって異なる場合があります。
   
 1. コントロールパネルを開きます。 ウィンドウの上部にある**検索**ボックスに、「 **Mail**」と入力します。<br/>(コントロールパネルへのアクセス方法がわからない場合はどうすればよいですか? [[コントロールパネルの場所] を](https://support.microsoft.com/help/13764/windows-where-is-control-panel)参照)
   

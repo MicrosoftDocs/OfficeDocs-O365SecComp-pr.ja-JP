@@ -1,10 +1,10 @@
 ---
-title: 高度な電子情報開示の検索制限 (プレビュー)
+title: 高度な電子情報開示での検索の制限
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b46a8fe7e1b3406e3e039380ec8a3e814ac1ee62
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a9e7aedc8493459c93812a131bfa4cadc22bcedc
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32240932"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153959"
 ---
-# <a name="search-limits-in-advanced-ediscovery-preview"></a>高度な電子情報開示の検索制限 (プレビュー)
+# <a name="search-limits-in-advanced-ediscovery"></a>高度な電子情報開示での検索の制限
 
 コンテンツ準備中です。

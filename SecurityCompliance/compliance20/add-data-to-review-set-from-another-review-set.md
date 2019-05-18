@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3a4d0d309daa5af9830f98215ca09321429785ee
-ms.sourcegitcommit: 25595bc8fae96bc23b7b6d7102a22f37878987c0
+ms.openlocfilehash: 9dc75717ac0a57c8ccb38b1e01ec2fcb9c5737ab
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33641657"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151969"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>別のレビューセットからのレビューセットへのデータの追加
 

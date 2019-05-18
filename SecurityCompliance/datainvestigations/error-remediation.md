@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b78a8e45ffb0833dec5116ff637cd0930387ebfe
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: bca6967fd99696ffb4b610105e448011b9837be4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258865"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150859"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>調査のためにデータを処理するときのエラー修復
 
@@ -54,9 +54,9 @@ ms.locfileid: "32258865"
     >最適なパフォーマンスを得るには、リモートネットワークパスの代わりにローカルファイルパスを使用することをお勧めします。
 
     > [!NOTE]
-    > azcopy をインストールしていない場合は、ここからインストールできます。https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+    > AzCopy をインストールしていない場合は、ここからインストールできます。https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
-6. [**クリップボードにコピー] を**クリックして、定義済みのコマンドをコピーします。 windows コマンドプロンプトを起動し、コマンドを貼り付けて、 **enter**キーを押します。  
+6. [**クリップボードにコピー] を**クリックして、定義済みのコマンドをコピーします。 Windows コマンドプロンプトを起動し、コマンドを貼り付けて、 **enter**キーを押します。  
 
     ファイルがダウンロードされます。
 
@@ -67,7 +67,7 @@ ms.locfileid: "32258865"
 
 7. ファイルをダウンロードした後、適切なツールを使用して修復できます。 パスワードで保護されたファイルには、いくつかのパスワードクラッキングツールを使用できます。 ファイルのパスワードがわかっている場合は、それらを開いてパスワード保護を解除することができます。
     > [!NOTE]
-    > tact で修復されたファイルのディレクトリ構造とファイル名を保持することが重要です。  ダウンロードしたファイルとフォルダーで使用されているすべての命名規則によって、remdiated ファイルを元のファイルに戻すことができます。
+    > Tact で修復されたファイルのディレクトリ構造とファイル名を保持することが重要です。  ダウンロードしたファイルとフォルダーで使用されているすべての命名規則によって、remdiated ファイルを元のファイルに戻すことができます。
 
 8. データの調査 (プレビュー) に戻り、[**次へ: ファイルのアップロード**] をクリックします。  これにより、次の手順に進み、ファイルをアップロードできるようになります。
 
@@ -94,8 +94,8 @@ ms.locfileid: "32258865"
 - IsParentExtractedUrl
 - ItemExtractedUrl
 - LoadId
-- processingerrormessage
-- processingstatus
+- ProcessingErrorMessage
+- ProcessingStatus
 - テキスト
 - WordCount
 - WorkingsetId

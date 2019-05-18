@@ -1,25 +1,25 @@
 ---
-title: 'チーフ情報セキュリティ責任者 (ciso) ワークショップ、モジュール 4b: 脅威保護戦略'
+title: 'チーフ情報セキュリティ責任者 (CISO) ワークショップ、モジュール 4b: 脅威保護戦略'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティに関する原則と推奨事項の詳細については、「組織のモダン化セキュリティ」を参照してください。
-ms.openlocfilehash: bbe28d89280826202c9d338827ac2b1469c8a632
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f5b296351ed0fe076f22c148487ed1044da3ae4f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243368"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152139"
 ---
-# <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>ciso ワークショップモジュール 4b: 脅威保護戦略 
+# <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>CISO ワークショップモジュール 4b: 脅威保護戦略 
 
-このモジュールでは、microsoft のセキュリティ運用センター (SOC) の進化と軌道について説明します。この機能は、microsoft のインテリジェントセキュリティグラフの trillions の信号を利用しています。
+このモジュールでは、microsoft のセキュリティ運用センター (SOC) の進化と軌道について説明します。この機能は、Microsoft のインテリジェントセキュリティグラフの trillions の信号を利用しています。
 
 - PDF の概要をダウンロードする:[モジュール 4b: 脅威保護戦略](media/ciso-workshop-4b-threat-protection-strategy.pdf)
 - PowerPoint の概要:[モジュール 4b: 脅威保護戦略](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4b-threat-protection-strategy.pptx)

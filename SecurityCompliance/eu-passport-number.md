@@ -4,18 +4,18 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/16/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: このトピックでは、データ損失防止 (DLP) ポリシーが EU Passport 番号機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: 3ab92e87607f41cffa8c15f1179a4eef5369cb29
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fa3be04dec0f71a2568e046abd6b0af3e20181c5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256825"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152969"
 ---
 # <a name="eu-passport-number"></a>EU パスポート番号
 
@@ -47,7 +47,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_austria_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_austria_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_austria_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -86,7 +86,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_belgium_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_belgium_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_belgium_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -125,7 +125,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_bulgaria_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_bulgaria_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_bulgaria_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -142,7 +142,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_bulgaria_eu_passport_number**|
 |:-----|
-|passport number  <br/> ブルガリアのパスポート番号  <br/> passport いいえ  <br/> номернапаспорта  <br/> |
+|passport number  <br/> ブルガリアのパスポート番号  <br/> passport いいえ  <br/> номер на паспорта  <br/> |
    
 ## <a name="croatia"></a>クロアチア
 
@@ -164,7 +164,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_croatia_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_croatia_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_croatia_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -203,7 +203,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_cyprus_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_cyprus_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_cyprus_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -220,7 +220,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 | |
 |**Keywords_cyprus_eu_passport_number**|
 |:-----|
-|passport number  <br/> キプロスパスポート番号  <br/> passport いいえ  <br/> αριθμόδιαβατηρίου  <br/> |
+|passport number  <br/> キプロスパスポート番号  <br/> passport いいえ  <br/> αριθμό διαβατηρίου  <br/> |
    
 ## <a name="czech-republic"></a>チェコ共和国
 
@@ -242,7 +242,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_czech_republic_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_czech_republic_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_czech_republic_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -281,7 +281,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_denmark_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_denmark_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_denmark_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -320,7 +320,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_estonia_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_estonia_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_estonia_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -371,7 +371,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_greece_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_greece_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_greece_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -410,7 +410,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_hungary_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_hungary_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_hungary_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -453,7 +453,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_ireland_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_ireland_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_ireland_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -496,7 +496,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_italy_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_italy_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_italy_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -539,7 +539,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_latvia_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_latvia_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_latvia_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -578,7 +578,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_lithuania_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_lithuania_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_lithuania_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -617,7 +617,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_nation_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_nation_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_nation_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -656,7 +656,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_malta_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_malta_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_malta_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -695,7 +695,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_netherlands_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_netherlands_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_netherlands_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -742,7 +742,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_portugal_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_portugal_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_portugal_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -781,7 +781,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_romania_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_romania_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_romania_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -820,7 +820,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_slovakia_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_slovakia_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_slovakia_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -865,7 +865,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_slovenia_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_slovenia_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_slovenia_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->
@@ -910,7 +910,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_spain_eu_passport_number`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_spain_eu_passport_number`キーワードが見つかりました。 
+- From `Keywords_spain_eu_passport_number`キーワードが見つかりました。 
     
 ```
  <!-- EU Passport Number -->

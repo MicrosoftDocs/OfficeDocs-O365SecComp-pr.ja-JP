@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4d306f6f1a37fad0aa5e3f92cafdb29b1ea37d1c
-ms.sourcegitcommit: 25595bc8fae96bc23b7b6d7102a22f37878987c0
+ms.openlocfilehash: c0dd3b19f1fb666e07f70c36db05ed520093bfac
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33641613"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154179"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>高度な電子情報開示でジョブを管理する
 

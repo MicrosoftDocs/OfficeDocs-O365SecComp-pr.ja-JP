@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 016b87388a17bc5cb01eb1a90d88aedb6e2e133c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 30697bfafdd7db69444b97345733f3d8ec5be92a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243770"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155169"
 ---
 # <a name="close-or-delete-a-case"></a>ケースを閉じるか、ケースを削除する
 
@@ -35,7 +35,7 @@ ms.locfileid: "32243770"
 
 ケースを閉じるには、次のようにします。
 
-1. **[高度な電子情報開示 (プレビュー)** ] ページで、ケースに移動します。
+1. **[高度な電子情報開示**] ページで、ケースに移動します。
 
 2. [**設定**] に移動し、[**ケース情報**] を選択します。 
 
@@ -43,7 +43,7 @@ ms.locfileid: "32243770"
 
 ケースを削除するには:
 
-1. **[高度な電子情報開示 (プレビュー)** ] ページで、ケースに移動します。
+1. **[高度な電子情報開示**] ページで、ケースに移動します。
 
 2. [**設定**] に移動し、[**ケース情報**] を選択します。 
 

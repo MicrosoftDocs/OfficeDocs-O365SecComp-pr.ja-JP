@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/05/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,18 +14,18 @@ ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 ms.collection:
 - M365-security-compliance
 description: Office 365 と EOP admins に、電子メールメッセージの安全性に関するヒントを有効または無効にする方法を伝えます。
-ms.openlocfilehash: 9be9c4cd7fc8e94208aac2ad8812c93a3465f58b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a782c9a1eca874c2aa2128b6129257067c63219a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256956"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154759"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Office 365 で安全性のヒントを有効または無効にする
 
 Exchange Online Protection (EOP) は、配信する電子メールメッセージに安全なヒントを追加またはスタンプします。 これらの安全なヒントにより、メッセージが安全であることを確認するための視覚的な方法、メッセージが Office 365 によってスパムとしてマークされている場合、メッセージにフィッシング詐欺などの疑わしいものが含まれている場合、または外部画像がある場合は、ブロックされています。 Office 365 と EOP の管理者は、スパムポリシー設定を編集して、Outlook およびその他のデスクトップ電子メールクライアントでの安全なヒントの表示を有効または無効にすることができます。 
   
-Office 365 では、組織のために既定で安全なヒントが有効になっており、スパムやフィッシング攻撃に対処できるようにしておくことをお勧めします。 web 上の Outlook の安全性に関するヒントを無効にすることはできません。
+Office 365 では、組織のために既定で安全なヒントが有効になっており、スパムやフィッシング攻撃に対処できるようにしておくことをお勧めします。 Web 上の Outlook の安全性に関するヒントを無効にすることはできません。
   
 例を確認し、安全なヒントに表示される情報について詳しくは、「 [Office 365 の電子メールメッセージの安全性に関するヒント](safety-tips-in-office-365.md)」を参照してください。
   
@@ -67,11 +67,11 @@ Office 365 では、組織のために既定で安全なヒントが有効にな
 ## <a name="to-enable-or-disable-safety-tips-by-using-powershell"></a>PowerShell を使用して安全性ヒントを有効または無効にするには
 <a name="pshellsafetytip"> </a>
 
-管理者は、Exchange Online PowerShell を使用して安全性のヒントを有効または無効にすることができます。 スパムフィルターポリシーの安全性に関するヒントを有効または無効にするには、set-hostedcontentfilterpolicy コマンドレットを使用します。
+管理者は、Exchange Online PowerShell を使用して安全性のヒントを有効または無効にすることができます。 スパムフィルターポリシーの安全性に関するヒントを有効または無効にするには、Set-hostedcontentfilterpolicy コマンドレットを使用します。
   
 1. Exchange Online PowerShell への接続。 詳細については、「 [Exchange Online PowerShell への接続](http://go.microsoft.com/fwlink/p/?LinkId=396554)」を参照してください。
     
-2. set-hostedcontentfilterpolicy コマンドレットを実行して、安全性に関するヒントを有効または無効にします。
+2. Set-hostedcontentfilterpolicy コマンドレットを実行して、安全性に関するヒントを有効または無効にします。
     
   ```
   Set-HostedContentFilterPolicy -Identity "policy name " -InlineSafetyTipsEnabled <$true|$false>
@@ -98,7 +98,7 @@ Office 365 では、組織のために既定で安全なヒントが有効にな
 
 安全のヒントを無効にしても、電子メールメッセージに表示されている場合は、次の点を確認してください。
   
-- web 上の Outlook の安全性に関するヒントを無効にすることはできません。 Outlook などの別のクライアントで同じ電子メールを表示してみてください。
+- Web 上の Outlook の安全性に関するヒントを無効にすることはできません。 Outlook などの別のクライアントで同じ電子メールを表示してみてください。
     
 - EOP を使用するすべてのユーザーについて、既定で安全性のヒントはオンになっています。これには、Office 365 を持つすべてのユーザーが含まれます。 セーフヒントが電子メールで表示されないようにするには、このトピックで説明されているように、スパムフィルターポリシーを使用して、それらを無効にする必要があります。 ポリシーを設定したら、そのポリシーが有効になっていることを確認します。 スパムフィルターポリシーの有効化の詳細については、「[スパムフィルターポリシーの構成](https://technet.microsoft.com/library/jj200684.aspx)」を参照してください。
     

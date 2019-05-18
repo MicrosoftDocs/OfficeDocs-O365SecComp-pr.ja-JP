@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: '概要: 分離した SharePoint Online チーム サイトの使用方法について説明します。'
-ms.openlocfilehash: 17e6fffc72a366d2cbb2c96e2b6bc812d0670e94
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 07f4d84493cdc7c0e153186164824fe8aa1e36bc
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253925"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150069"
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>分離した SharePoint Online チーム サイト
 

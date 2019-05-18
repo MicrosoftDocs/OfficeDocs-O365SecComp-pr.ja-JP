@@ -1,23 +1,23 @@
 ---
-title: 'チーフ情報セキュリティ責任者 (ciso) ワークショップ、モジュール 1: Microsoft Cybersecurity ブリーフィング'
+title: 'チーフ情報セキュリティ責任者 (CISO) ワークショップ、モジュール 1: Microsoft Cybersecurity ブリーフィング'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティに関する原則と推奨事項の詳細については、「組織のモダン化セキュリティ」を参照してください。
-ms.openlocfilehash: 08a0a3fc93745ec32459746fce737ac9e9e164ef
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 35f3feca7597eb3e80076eccc36e00debd754d01
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243998"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152159"
 ---
-# <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>ciso ワークショップモジュール 1: Microsoft Cybersecurity ブリーフィング
+# <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>CISO ワークショップモジュール 1: Microsoft Cybersecurity ブリーフィング
 
 このモジュールでは、重要なセキュリティ対策、Microsoft cybersecurity reference architecture、cybersecurity の復元、インターネット機能 (IoT)、運用技術の概要について説明します。
 
@@ -44,7 +44,7 @@ ms.locfileid: "32243998"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQL2]
 
-## <a name="part-6-reference-architecture-for-identity-and-access-725"></a>パート 6: id とアクセスの参照アーキテクチャ (7:25)
+## <a name="part-6-reference-architecture-for-identity-and-access-725"></a>パート 6: Id とアクセスの参照アーキテクチャ (7:25)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtITd]
 
@@ -72,6 +72,6 @@ ms.locfileid: "32243998"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtITj]
 
-## <a name="part-13-conclusion-summary-of-ciso-workshop-approach-608"></a>パート 13: 結論: ciso ワークショップのアプローチの概要 (6:08)
+## <a name="part-13-conclusion-summary-of-ciso-workshop-approach-608"></a>パート 13: 結論: CISO ワークショップのアプローチの概要 (6:08)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtITk]

@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 のコンテンツを保持する保持ラベルを作成する場合、保持期間の終了時に廃棄のレビューを開始することを選択できます。
-ms.openlocfilehash: 1828f4055e9048260db7d16df8ad87db36438211
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6d4a8993efb3046e7f79f4e76a921921abf6d3e6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257344"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153429"
 ---
 # <a name="overview-of-disposition-reviews"></a>廃棄レビューの概要
 
@@ -33,7 +33,7 @@ ms.locfileid: "32257344"
     
 - クライアントにコンテンツを返すか、または別の組織に転送します。
     
-microsoft 365 コンプライアンスセンター、microsoft 365 セキュリティセンター、または Office 365 security & コンプライアンスセンターで保持ラベルを作成する場合、保持期間の終了時に廃棄レビューを開始することを選択できます。 廃棄レビューの場合:
+Microsoft 365 コンプライアンスセンター、Microsoft 365 セキュリティセンター、または Office 365 Security & コンプライアンスセンターで保持ラベルを作成する場合、保持期間の終了時に廃棄レビューを開始することを選択できます。 廃棄レビューの場合:
   
 - 選択したユーザーには、閲覧するコンテンツがあることを示す電子メール通知が送信されます。 これらのレビュー担当者は、個別のユーザー、配布グループまたはセキュリティグループ、または Office 365 グループにすることができます。 通知は週単位で送信されることに注意してください。
     

@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 2/7/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.collection:
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 個人データの漏えいの監視に使用できる 3 つのツールについて説明します。
-ms.openlocfilehash: d9b48589ace06186d5f177d1b90f02f8657637bd
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d5dbf2841b165e46ef40125056f142cbd316e9ee
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263277"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158639"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>個人情報の漏えいを監視する
 
@@ -81,19 +81,23 @@ Microsoft 管理アクティビティ API を使用して統一監査ログを�
 
 アラート ポリシーと監査ログの検索については、以下を参照してください。
 
--   [Microsoft 365 セキュリティ/コンプライアンス センターのアラート ポリシー](https://support.office.com/ja-JP/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
-
--   [Office 365 で監査ログを検索してユーザーと管理者のアクティビティを確認する](https://support.office.com/ja-JP/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (概要)
-
--   [Office 365 監査ログの検索を有効または無効にする](https://support.office.com/ja-JP/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
+-   
+  [Microsoft 365 セキュリティ/コンプライアンス センターのアラート ポリシー](https://support.office.com/ja-JP/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
 
 -   
-  [監査ログを検索する](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+  [Office 365 で監査ログを検索してユーザーと管理者のアクティビティを確認する](https://support.office.com/ja-JP/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (概要)
 
 -   
-  [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (コマンドレット) 
+  [Office 365 監査ログの検索を有効または無効にする](https://support.office.com/ja-JP/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
--   [Office 365 監査ログの詳細なプロパティ](https://support.office.com/ja-JP/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
+-   
+  [監査ログを検索する](https://support.office.com/ja-JP/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+
+-   
+  [Search-UnifiedAuditLog](https://technet.microsoft.com/ja-JP/library/mt238501(v=exchg.160).aspx) (コマンドレット) 
+
+-   
+  [Office 365 監査ログの詳細なプロパティ](https://support.office.com/ja-JP/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
@@ -127,11 +131,13 @@ Microsoft Cloud App Security は、クラウド アプリのための詳細な�
 
 詳しくは、以下の資料を参照してください。
 
--   [Cloud App Security を展開する](https://docs.microsoft.com/ja-JP/cloud-app-security/getting-started-with-cloud-app-security)
+-   
+  [Cloud App Security を展開する](https://docs.microsoft.com/ja-JP/cloud-app-security/getting-started-with-cloud-app-security)
 
--   [Microsoft Cloud App Security の詳細情報](https://www.microsoft.com/ja-JP/cloud-platform/cloud-app-security)
+-   [Microsoft Cloud App Security の詳細情報](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security)
 
--   [Microsoft Cloud App Security プロキシを使用して機密情報のダウンロードをブロックする](https://docs.microsoft.com/ja-JP/cloud-app-security/use-case-proxy-block-session-aad)
+-   
+  [Microsoft Cloud App Security プロキシを使用して機密情報のダウンロードをブロックする](https://docs.microsoft.com/ja-JP/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>個人データの共有を検出するためのファイル ポリシーとアクティビティ ポリシーの例
 

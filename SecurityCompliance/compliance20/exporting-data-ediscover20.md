@@ -1,10 +1,10 @@
 ---
-title: 高度な電子情報開示でケースデータをエクスポートする (プレビュー)
+title: 高度な電子情報開示でケースデータをエクスポートする
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,23 +14,23 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0798cb66729b215a50b21a29494183f7eed5d1d6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0bd071912ca1a39779e71beed193b3f59fc93d21
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256175"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155029"
 ---
-# <a name="export-case-data-in-advanced-ediscovery-preview"></a>高度な電子情報開示でケースデータをエクスポートする (プレビュー)
+# <a name="export-case-data-in-advanced-ediscovery"></a>高度な電子情報開示でケースデータをエクスポートする
 
-作業セットからデータをエクスポートするには、次の3つの方法があります。
+レビューセットからデータをエクスポートするには、次の3つの方法があります。
 
 **ダウンロード**–一連の小さなネイティブファイルを (ブラウザーを使用して) ダウンロードするために使用します。 このことは、データの小さなセットをエクスポートするのが最も簡単です。
 
-**エクスポート**: メタデータファイル、ネイティブファイル、テキストファイル、および PDF ファイルに保存されているがドキュメントのエクスポートなど、エクスポートされるデータをカスタマイズするために使用します。 エクスポートされたデータを Azure の保存場所にアップロードした後、ローカルコンピューターにダウンロードする必要があります。 詳細については、次のトピックを参照してください。 
+**エクスポート**: メタデータファイル、ネイティブファイル、テキストファイル、および PDF ファイルに保存されているがドキュメントのエクスポートなど、エクスポートされるデータをカスタマイズするために使用します。 エクスポートされたデータを Azure の保存場所にアップロードした後、ローカルコンピューターにダウンロードする必要があります。 詳細については、以下を参照してください。 
 
-   - [ワーキング セットからドキュメントをエクスポートする](export-documents-from-working-set.md)
+   - [レビュー セットからドキュメントをエクスポートする](export-documents-from-review-set.md)
 
    - [エクスポート ジョブのダウンロード](download-export-jobs.md)
 
-**別の作業セットに追加**-1 つの作業セットから別の作業セットにデータをコピーするために使用します。 詳細については、「 [1 つの作業セットから別の作業セットにデータを追加する](add-data-to-working-set-from-another-working-set.md)」を参照してください。 
+**別のレビューセットへの追加**-1 つのレビューセットから別のレビューセットへのデータのコピーに使用します。 詳細については、「 [1 つのレビューセットから別のレビューセットにデータを追加する](add-data-to-review-set-from-another-review-set.md)」を参照してください。 

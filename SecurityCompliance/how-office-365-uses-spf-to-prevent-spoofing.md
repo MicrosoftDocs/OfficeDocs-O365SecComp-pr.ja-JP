@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/15/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: '概要: この記事では、Office 365 において、Sender Policy Framework (SPF) TXT レコードを DNS で使用して、カスタム ドメインから送信されたメッセージを送信先のメール システムが信頼するようにする方法を説明します。 これは、Office 365 から送信された送信メールに適用されます。 Office 365 から Office 365 内の受信者に送信されたメッセージは、常に SPF チェックに合格します。'
-ms.openlocfilehash: 5abe892eae4840b44a606f4004eb3b66a94accdc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9c52f5d0f83ce90b4c46e0d377afcd02eadf224b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256556"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152789"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Office 365 において Sender Policy Framework (SPF) を使用して、スプーフィングを防止する方法
 
@@ -87,7 +87,7 @@ Woodgrovebank.com がメッセージを受け取る際に、IP アドレス # 1 
   
 ![偽装しているサーバーから送信されるときに SPF がメールを認証する方法を示す図。](media/235dac3d-cdc5-466e-86e0-37b5979de198.jpg)
   
-IP アドレス #12 は contoso の spf TXT レコードにないため、メッセージは spf チェックに失敗し、受信者はそのメッセージをスパムとしてマークすることを選択できます。
+IP アドレス #12 は contoso の SPF TXT レコードにないため、メッセージは SPF チェックに失敗し、受信者はそのメッセージをスパムとしてマークすることを選択できます。
   
 ### <a name="example-3-spf-and-forwarded-messages"></a>例 3:SPF と転送されたメッセージ
 <a name="spfExample3"> </a>
@@ -96,7 +96,7 @@ SPF の欠点の1つは、メールが転送されたときに機能しないこ
   
 ![電子メール メッセージが転送される際に SPF がメールを認証できないことを示す図。](media/6e92acd6-463e-4a1b-8327-fb1cf861f356.jpg)
   
-このメッセージは最初、woodgrovebank.com で spf チェックに合格していますが、outlook.com の spf チェックに失敗します。 IP #25 は、contoso 社の spf TXT レコードには含まれていません。 このため、Outlook.com はメッセージをスパムとしてマークする可能性があります。 この問題を回避するには、SPF を DKIM や DMARC などの他の電子メールの認証方法と組み合わせて使用します。
+このメッセージは最初、woodgrovebank.com で SPF チェックに合格していますが、outlook.com の SPF チェックに失敗します。 IP #25 は、contoso 社の SPF TXT レコードには含まれていません。 このため、Outlook.com はメッセージをスパムとしてマークする可能性があります。 この問題を回避するには、SPF を DKIM や DMARC などの他の電子メールの認証方法と組み合わせて使用します。
   
 ### <a name="spf-basics-including-third-party-domains-that-can-send-mail-on-behalf-of-your-domain"></a>SPF の基本:自分のドメインに代わってメールを送信できるサード パーティのドメインを含める
 <a name="SPFBasicsIncludes"> </a>
@@ -107,7 +107,7 @@ IP アドレスに加えて、送信者としてドメインを含めるよう�
 IN TXT "v=spf1 include:contoso.net include:contoso.org -all"
 ```
 
-受信側のサーバーは、このレコードを dns に表示するときに、contoso.net の SPF TXT レコードに対する DNS 参照も行い、contoso.org に対しても実行します。contoso.net または contoso.org のレコード内に追加の include ステートメントが見つかった場合は、それに従っていることになります。 サービス拒否攻撃を防止するための、1 つの電子メール メッセージに対する DNS 参照の最大数は 10 です。 各 include ステートメントは追加の DNS 参照を表します。 メッセージが上限 10 を超えると、メッセージは SPF チェックに失敗します。 メッセージがこの制限に達すると、受信側サーバーの構成方法によっては、メッセージが "参照が多すぎます" または "メッセージの最大ホップ数を超えました" というメッセージが表示されることがあります。 この問題を回避する方法のヒントについては、「[トラブルシューティング:Office 365 における SPF のベスト プラクティス](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)」を参照してください。
+受信側のサーバーは、このレコードを DNS に表示するときに、contoso.net の SPF TXT レコードに対する DNS 参照も行い、contoso.org に対しても実行します。Contoso.net または contoso.org のレコード内に追加の include ステートメントが見つかった場合は、それに従っていることになります。 サービス拒否攻撃を防止するための、1 つの電子メール メッセージに対する DNS 参照の最大数は 10 です。 各 include ステートメントは追加の DNS 参照を表します。 メッセージが上限 10 を超えると、メッセージは SPF チェックに失敗します。 メッセージがこの制限に達すると、受信側サーバーの構成方法によっては、メッセージが "参照が多すぎます" または "メッセージの最大ホップ数を超えました" というメッセージが表示されることがあります。 この問題を回避する方法のヒントについては、「[トラブルシューティング:Office 365 における SPF のベスト プラクティス](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)」を参照してください。
   
 ## <a name="requirements-for-your-spf-txt-record-and-office-365"></a>SPF TXT レコードと Office 365 の要件
 <a name="SPFReqsinO365"> </a>
@@ -189,7 +189,7 @@ v=spf1 ip4:192.168.0.1 include:spf.protection.outlook.com -all
 ### <a name="example-spf-txt-record-for-multiple-outbound-on-premises-mail-servers-and-office-365"></a>例: 複数のオンプレミスの送信メール サーバーと Office 365 のための SPF TXT レコード
 <a name="ExampleSPFMultipleMailServerO365"> </a>
 
-送信メールサーバーが複数ある場合は、SPF TXT レコードに各メールサーバーの ip アドレスを含め、各 ip アドレスをスペースで区切った後に "ip4:" ステートメントを続けます。 たとえば、次のようにします。
+送信メールサーバーが複数ある場合は、SPF TXT レコードに各メールサーバーの IP アドレスを含め、各 IP アドレスをスペースで区切った後に "ip4:" ステートメントを続けます。 たとえば、次のようにします。
   
 ```
 v=spf1 ip4:192.168.0.1 ip4:192.168.0.2 ip4:192.168.0.3 include:spf.protection.outlook.com -all

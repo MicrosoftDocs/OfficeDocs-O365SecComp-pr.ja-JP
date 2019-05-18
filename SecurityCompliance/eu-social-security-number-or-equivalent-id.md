@@ -4,18 +4,18 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 社会保障番号または同等の ID の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: c0c808eafa52209c79f3b4e8a2113f587fd8a771
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b42a8d927e18f813eb6ef6d1d55b2de15ea9dcd5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255555"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154489"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>EU 社会保障番号または同等の ID
 
@@ -35,7 +35,7 @@ ms.locfileid: "32255555"
     
 - 1つのチェックディジット
     
-- 誕生日に対応する6桁の数字 (ddmmyy)
+- 誕生日に対応する6桁の数字 (DDMMYY)
     
 ### <a name="checksum"></a>チェックサム
 
@@ -47,7 +47,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 関数`Func_austria_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
-- from `Keywords_austria_eu_ssn_or_equivalent`キーワードが見つかりました。 
+- From `Keywords_austria_eu_ssn_or_equivalent`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -116,7 +116,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 関数`Func_belgium_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
-- from `Keywords_belgium_eu_ssn_or_equivalent`キーワードが見つかりました。 
+- From `Keywords_belgium_eu_ssn_or_equivalent`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -145,7 +145,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 ssn
   
@@ -159,7 +159,7 @@ bnn
   
 個人 id 番号
   
-personalidnumber #
+personalidnumber#
   
 numéro national
   
@@ -169,9 +169,9 @@ numéro d'assuré
   
 identifiant national
   
-identifiantnational #
+identifiantnational#
   
-numéronational #
+numéronational#
   
 ## <a name="croatia"></a>クロアチア
 
@@ -197,7 +197,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 関数`Func_croatia_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
-- from `Keywords_croatia_eu_ssn_or_equivalent`キーワードが見つかりました。 
+- From `Keywords_croatia_eu_ssn_or_equivalent`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -228,7 +228,7 @@ national identification number
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 ssn
   
@@ -242,7 +242,7 @@ bnn
   
 個人 id 番号
   
-personalidnumber #
+personalidnumber#
   
 oib
   
@@ -258,7 +258,7 @@ osobni identifikacijski broj
 
 10桁の数字と円記号:
   
-- 誕生日に対応する6桁の数字 (yymmdd という): 
+- 誕生日に対応する6桁の数字 (YYMMDD という): 
     
 - 円記号
     
@@ -276,7 +276,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 関数`Func_czech_republic_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
-- from `Keywords_czech_republic_eu_ssn_or_equivalent`キーワードが見つかりました。 
+- From `Keywords_czech_republic_eu_ssn_or_equivalent`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -307,7 +307,7 @@ national identification number
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 ssn
   
@@ -317,7 +317,7 @@ ssn
   
 個人 id 番号
   
-personalidnumber #
+personalidnumber#
   
 rč
   
@@ -335,7 +335,7 @@ rodne cislo
 
 10桁の数字とハイフン:
   
-- 誕生日に対応する6桁の数字 (ddmmyy) 
+- 誕生日に対応する6桁の数字 (DDMMYY) 
     
 - ハイフン 1 つ 
     
@@ -351,7 +351,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 関数`Func_denmark_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
-- from `Keywords_denmark_eu_ssn_or_equivalent`キーワードが見つかりました。 
+- From `Keywords_denmark_eu_ssn_or_equivalent`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -380,7 +380,7 @@ national identification number
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 ssn
   
@@ -390,7 +390,7 @@ ssn
   
 個人 id 番号
   
-personalidnumber #
+personalidnumber#
   
 cpr-nummer
   
@@ -430,7 +430,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 関数`Func_finland_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
-- from `Keywords_finland_eu_ssn_or_equivalent`キーワードが見つかりました。 
+- From `Keywords_finland_eu_ssn_or_equivalent`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -461,7 +461,7 @@ id 番号
   
 フィンランドの国民 id 番号
   
-personalidnumber #
+personalidnumber#
   
 national identification number
   
@@ -485,7 +485,7 @@ ainutlaatuinen henkilökohtainen tunnus
   
 suomen kansallinen henkilötunnus
   
-henkilötunnusnumero #
+henkilötunnusnumero#
   
 kansallisen tun/st列挙 o
   
@@ -501,7 +501,7 @@ hetu
   
 ## <a name="germany"></a>ドイツ
 
-詳細については、「[機密情報の種類がどのようなもの](what-the-sensitive-information-types-look-for.md)か」の「ドイツの id カード番号」セクションを参照してください。
+詳細については、「[機密情報の種類がどのようなもの](what-the-sensitive-information-types-look-for.md)か」の「ドイツの Id カード番号」セクションを参照してください。
   
 ## <a name="greece"></a>ギリシャ
 
@@ -527,7 +527,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 関数`Func_hungary_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
-- from `Keywords_hungary_eu_ssn_or_equivalent`キーワードが見つかりました。 
+- From `Keywords_hungary_eu_ssn_or_equivalent`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -608,7 +608,7 @@ magyar áfa szám
     
   - シリアル番号の最後の桁は、男性の場合は奇数、女性の場合は偶数の数字を指定します。
     
-  - 1990までの間、シリアル番号 corresponded は、番号のベアラーが生まれたか (1947 以前に作成された場合)、特別なコード (通常は7番目の数字) を使用して、税務レコードに従って、そのユーザーが生活していた市区郡に割り当てられています。immigrants 
+  - 1990までの間、シリアル番号 corresponded は、番号のベアラーが生まれたか (1947 以前に作成された場合)、特別なコード (通常は7番目の数字) を使用して、税務1947レコードに従って、そのユーザーが生活していた市区郡に割り当てられています。immigrants 
     
 - 1つのチェックディジット
     
@@ -622,7 +622,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 関数`Func_sweden_eu_ssn_or_equivalent`は、パターンに一致するコンテンツを検索します。 
     
-- from `Keywords_sweden_eu_ssn_or_equivalent`キーワードが見つかりました。 
+- From `Keywords_sweden_eu_ssn_or_equivalent`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -667,9 +667,9 @@ personnummer
   
 identifikationsnumret
   
-personnummer #
+personnummer#
   
-identifikationsnumret #
+identifikationsnumret#
   
 ## <a name="see-also"></a>関連項目
 

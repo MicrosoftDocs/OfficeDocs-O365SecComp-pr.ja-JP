@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 4/23/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection:
 - o365_security_incident_response
@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Office 365 で不法な同意を付与する攻撃を認識し、修復する方法について説明します。
-ms.openlocfilehash: 658183b3e5a3089425312ee14c6663485e0543ce
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 5e89e6cb39c04b708ffe0a49a2cd41d6a775e4a4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402955"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150280"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Microsoft Office 365 での不正な同意付与の検出と修復
 
@@ -34,7 +34,7 @@ ms.locfileid: "33402955"
 1. Office 365 テナントの [**セキュリティとコンプライアンスセンター** ] を開きます。
 2. [**検索 & 調査**] ノードに移動して、[**監査ログ**の検索] を選択します。
 3. 検索を作成し (すべてのアクティビティとすべてのユーザー)、アプリケーションに対する同意のために結果をフィルター処理して、OAuth2PermissionGrant を追加します。
-4. 拡張プロパティを調べ、isadmincontent が True に設定されているかどうかを確認します。
+4. 拡張プロパティを調べ、IsAdminContent が True に設定されているかどうかを確認します。
 
 > [!NOTE]
 >  
@@ -84,10 +84,10 @@ ms.locfileid: "33402955"
 5. 次のように、この PowerShell コマンドラインを実行します。`Get-AzureADPSPermissions.ps1 | Export-csv -path "Permissions.csv" -NoTypeInformation`
 
 スクリプトによって、Permissions という名前のファイルが1つ作成されます。 次の手順に従って、不法なアプリケーションアクセス許可の付与を検索します。 
-1. [conな種類] 列 (列 G) で、値 "allprinciples" を検索します。 allprincipals アクセス許可によって、クライアントアプリケーションは、テナント内のすべてのユーザーのコンテンツにアクセスできます。 ネイティブの Office 365 アプリケーションは、正しく動作するためにこのアクセス許可を必要とします。 このアクセス許可を持つ Microsoft 以外のすべてのアプリケーションは、慎重にレビューする必要があります。
+1. [Conな種類] 列 (列 G) で、値 "AllPrinciples" を検索します。 AllPrincipals アクセス許可によって、クライアントアプリケーションは、テナント内のすべてのユーザーのコンテンツにアクセスできます。 ネイティブの Office 365 アプリケーションは、正しく動作するためにこのアクセス許可を必要とします。 このアクセス許可を持つ Microsoft 以外のすべてのアプリケーションは、慎重にレビューする必要があります。
 2.  [アクセス許可] 列 (列 F) に、各委任されたアプリケーションがコンテンツに対して持っているアクセス許可を確認します。 "読み取り" と "書き込み" アクセス許可または "* を探します。All "アクセス許可を使用して、適切ではない可能性があるため慎重に確認してください。
 3.  同意が付与されている特定のユーザーを確認します。 プロファイルが大きい場合や、影響度の高いユーザーに不適切な同意が付与されている場合は、さらに詳しく調査する必要があります。
-4.  [clientdisplayname] 列 (列 C) で、疑わしいと思われるアプリを探します。 名前のスペルが間違っているアプリ、super bland names、またはハッカーが発音した名前は、慎重に検討する必要があります。
+4.  [ClientDisplayName] 列 (列 C) で、疑わしいと思われるアプリを探します。 名前のスペルが間違っているアプリ、super bland names、またはハッカーが発音した名前は、慎重に検討する必要があります。
 
 ## <a name="determine-the-scope-of-the-attack"></a>攻撃の範囲を決定する
 アプリケーションアクセスのインベントリ処理が終了したら、Office 365**監査ログ**を確認して、違反の完全なスコープを特定します。  影響を受けるユーザー、不法アプリケーションが組織にアクセスした時間枠、およびアプリのアクセス許可を検索します。 **監査ログ**は、 [Microsoft 365 セキュリティ/コンプライアンスセンター](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)で検索できます。 
@@ -117,5 +117,5 @@ Office 365 サブスクリプションには、データとユーザーを保護
 - [[自分のアプリケーション] リスト内の予期しないアプリケーション](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application)は、データにアクセスするための予期しないアプリケーションがあることを認識した後に、管理者がさまざまなアクションを実行できるようにします。
 - [Azure Active Directory とアプリケーションを統合] (https://docs.microsoft.com/azure/active-directory/active-directory-apps-permissions-consent)は、同意とアクセス許可の概要を示しています。  特別な注意事項については、「[同意フレームワーク」セクションの概要](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#overview-of-the-consent-framework)を参照してください。
 - [アプリケーションの開発に関する問題](https://docs.microsoft.com/azure/active-directory/active-directory-application-dev-development-content-map)さまざまな同意に関する記事へのリンクを提供します。
-- 「 [azure Active Directory のアプリケーションおよびサービスプリンシパルオブジェクト (azure AD)」で](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects)は、アプリケーションモデルにとって中核となるアプリケーションおよびサービスプリンシパルオブジェクトの概要を示します。
+- 「 [Azure Active Directory のアプリケーションおよびサービスプリンシパルオブジェクト (AZURE AD)」で](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects)は、アプリケーションモデルにとって中核となるアプリケーションおよびサービスプリンシパルオブジェクトの概要を示します。
 - アプリへの[アクセスを管理](https://docs.microsoft.com/azure/active-directory/active-directory-managing-access-to-apps)すると、管理者がアプリへのユーザーアクセスを管理するために必要な機能の概要が表示されます。

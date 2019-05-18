@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
-description: office 365 で非アクティブなメールボックスを作成するには、ホールドまたは office 365 アイテム保持ポリシーをメールボックスに適用してから、対応する office 365 ユーザーアカウントを削除します。 非アクティブなメールボックス内のアイテムは、非アクティブになる前に適用されていた保留またはアイテム保持ポリシーの期間中保持されます。 非アクティブなメールボックスを完全に削除するには、保持ポリシーまたはアイテム保持ポリシーを削除するだけです。
-ms.openlocfilehash: ad874d2f21afaa86fa7fa5a18dc827dfa1b90574
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Office 365 で非アクティブなメールボックスを作成するには、ホールドまたは Office 365 アイテム保持ポリシーをメールボックスに適用してから、対応する Office 365 ユーザーアカウントを削除します。 非アクティブなメールボックス内のアイテムは、非アクティブになる前に適用されていた保留またはアイテム保持ポリシーの期間中保持されます。 非アクティブなメールボックスを完全に削除するには、保持ポリシーまたはアイテム保持ポリシーを削除するだけです。
+ms.openlocfilehash: 1a2eb5a998de7f31bcf531aacf22dca51c71acb8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258896"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151229"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Office 365 で非アクティブなメールボックスを作成および管理する
 
-Office 365 により、削除済みメールボックスの内容を保持することができます。 この機能は[非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)と呼ばれます。 Inactive mailboxes allow you to retain former employees' email after they leave your organization. メールボックスは、対応する office 365 ユーザーアカウントが削除される前に、訴訟ホールドまたは office 365 アイテム保持ポリシー (office 365 または Microsoft 365 のセキュリティ/コンプライアンスセンターで作成されたもの) がメールボックスに適用されると、非アクティブになります。 The contents of an inactive mailbox are retained for the duration of the hold that was placed on the mailbox before it was made inactive. これにより、管理者、コンプライアンス責任者、およびレコード管理者は、コンテンツ検索を使用して、非アクティブなメールボックスのコンテンツを検索してエクスポートすることができます。 Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists.
+Office 365 により、削除済みメールボックスの内容を保持することができます。 この機能は[非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)と呼ばれます。 Inactive mailboxes allow you to retain former employees' email after they leave your organization. メールボックスは、対応する Office 365 ユーザーアカウントが削除される前に、訴訟ホールドまたは Office 365 アイテム保持ポリシー (Office 365 または Microsoft 365 のセキュリティ/コンプライアンスセンターで作成されたもの) がメールボックスに適用されると、非アクティブになります。 The contents of an inactive mailbox are retained for the duration of the hold that was placed on the mailbox before it was made inactive. これにより、管理者、コンプライアンス責任者、およびレコード管理者は、コンテンツ検索を使用して、非アクティブなメールボックスのコンテンツを検索してエクスポートすることができます。 Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists.
   
 > [!NOTE]
 > 2017 年 7 月 1 日に終了する予定だった、メールボックスを非アクティブにするために新しいインプレース ホールドを作成できる期間を延長しました。しかし、今年の終わりごろまたは来年の初めごろには、新しいインプレース ホールドを Exchange Online 内で作成することはできなくなります。その時点で、非アクティブのメールボックスを作成するために使用できるのは、訴訟ホールドと Office 365 アイテム保持ポリシーだけになります。ただし、インプレース ホールドにある既存の非アクティブなメールボックスは引き続きサポートされます。また、引き続き非アクティブなメールボックスのインプレース ホールドを管理することができます。これには、インプレース ホールドの期間を変更すること、およびそのインプレース ホールドを削除することによって非アクティブなメールボックスを完全に削除することが含まれます。 
   
 ## <a name="before-you-begin"></a>始める前に
 
-- メールボックスを非アクティブにするには、メールボックスを削除する前に、訴訟ホールドまたは Office 365 のアイテム保持ポリシーをメールボックスに適用できるように、Exchange Online プラン2のライセンスを割り当てる必要があります。 Exchange Online プラン2のライセンスは、Office 365 Enterprise E3 および E5 サブスクリプションの一部です。 メールボックスに exchange online プラン1ライセンス (Office 365 Enterprise E1 サブスクリプションの一部) が割り当てられている場合は、削除する前にメールボックスに保留リストを適用できるように、メールボックスに別の exchange online アーカイブライセンスを割り当てる必要があります。 詳細については、「[Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153)」をご覧ください。
+- メールボックスを非アクティブにするには、メールボックスを削除する前に、訴訟ホールドまたは Office 365 のアイテム保持ポリシーをメールボックスに適用できるように、Exchange Online プラン2のライセンスを割り当てる必要があります。 Exchange Online プラン2のライセンスは、Office 365 Enterprise E3 および E5 サブスクリプションの一部です。 メールボックスに Exchange Online プラン1ライセンス (Office 365 Enterprise E1 サブスクリプションの一部) が割り当てられている場合は、削除する前にメールボックスに保留リストを適用できるように、メールボックスに別の Exchange Online アーカイブライセンスを割り当てる必要があります。 詳細については、「[Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153)」をご覧ください。
     
 - 削除された Exchange Online メールボックスに関連付けられたライセンスは、対応する Office 365 ユーザー アカウントを削除した後に使用可能になります。 その後、 [Office 365 for business のユーザーにライセンス](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)を別のユーザーに割り当てることができます。 
     
@@ -42,7 +42,7 @@ Office 365 により、削除済みメールボックスの内容を保持する
   
 ## <a name="create-an-inactive-mailbox"></a>非アクティブなメールボックスを作成する
 
-メールボックスを非アクティブにするには、2つの手順を実行します。 1) メールボックスを訴訟ホールドの対象にするか、office 365 アイテム保持ポリシーを適用するか、2) メールボックスまたは対応する office 365 ユーザーアカウントを削除します。 メールボックスが非アクティブになると、そのコンテンツは保持ポリシーまたはアイテム保持ポリシーが削除されるまで保持されます。
+メールボックスを非アクティブにするには、2つの手順を実行します。 1) メールボックスを訴訟ホールドの対象にするか、Office 365 アイテム保持ポリシーを適用するか、2) メールボックスまたは対応する Office 365 ユーザーアカウントを削除します。 メールボックスが非アクティブになると、そのコンテンツは保持ポリシーまたはアイテム保持ポリシーが削除されるまで保持されます。
   
 ### <a name="step-1-place-a-mailbox-on-litigation-hold-or-apply-an-office-365-retention-policy"></a>手順 1:メールボックスを訴訟ホールドの対象にするか、Office 365 アイテム保持ポリシーを適用する
 

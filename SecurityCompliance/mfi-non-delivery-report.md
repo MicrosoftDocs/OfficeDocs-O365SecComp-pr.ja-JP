@@ -3,18 +3,18 @@ title: 配信不能レポート
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードの配信不能レポートについて学習できます。
-ms.openlocfilehash: d4b34b5801f663a1028a23cf3a1f897d56a2239b
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: 9f9cc2865174344a2d411add4032ddf6ced8c740
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868605"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158629"
 ---
 # <a name="non-delivery-report"></a>配信不能レポート
 

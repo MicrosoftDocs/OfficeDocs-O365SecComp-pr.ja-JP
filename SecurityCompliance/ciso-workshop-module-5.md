@@ -1,23 +1,23 @@
 ---
-title: 'チーフ情報セキュリティ責任者 (ciso) ワークショップ、モジュール 5: 情報保護'
+title: 'チーフ情報セキュリティ責任者 (CISO) ワークショップ、モジュール 5: 情報保護'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティに関する原則と推奨事項の詳細については、「組織のモダン化セキュリティ」を参照してください。
-ms.openlocfilehash: f68345f4041d4fae9d35f38ea2b80af5dee7c762
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: dccd34a6bed27ec3dbbca6c2affdc56234b1a21a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243338"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155509"
 ---
-# <a name="ciso-workshop-module-5-information-protection"></a>ciso ワークショップモジュール 5: 情報保護
+# <a name="ciso-workshop-module-5-information-protection"></a>CISO ワークショップモジュール 5: 情報保護
 
 自動分類、デバイス間での永続的な暗号化、モバイルデバイス、クラウドサービス、およびその他の企業資産間でのデータの継続的な監視を使用して、機密情報を保護する方法について説明します。
 

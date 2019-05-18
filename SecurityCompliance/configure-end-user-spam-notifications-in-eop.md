@@ -3,7 +3,7 @@ title: EOP でのエンドユーザー スパム通知の構成
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,17 +13,17 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: エンド ユーザー向けスパム通知は、既定の会社全体のコンテンツ フィルター ポリシーに対して、またはドメインに適用されるカスタム コンテンツ フィルター ポリシーに対して構成できます。
-ms.openlocfilehash: 09ddd7fd2800e4038e354e53da53320184da3e77
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 07bca81f06a347bbce5e997e570553f85deb5c1d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259625"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151459"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>EOP でのエンドユーザー スパム通知の構成
   
 > [!IMPORTANT]
-> このトピックの対象読者は、社内メールボックスを保護している、Exchange Online Protection (EOP) のスタンドアロンのお客様向けです。 クラウドでホストされるメールボックスを保護している exchange online のお客様は、代わりに次のトピックを参照してください。 [exchange online でエンドユーザーのスパム通知を構成](configure-end-user-spam-notifications-in-exchange-online.md)します。 
+> このトピックの対象読者は、社内メールボックスを保護している、Exchange Online Protection (EOP) のスタンドアロンのお客様向けです。 クラウドでホストされるメールボックスを保護している exchange Online のお客様は、代わりに次のトピックを参照してください。 [Exchange online でエンドユーザーのスパム通知を構成](configure-end-user-spam-notifications-in-exchange-online.md)します。 
   
 エンド ユーザー向けスパム通知は、既定の会社全体のコンテンツ フィルター ポリシーに対して、またはドメインに適用されるカスタム コンテンツ フィルター ポリシーに対して構成できます。エンド ユーザー向けスパム通知メッセージを有効にすると、エンド ユーザーは自分のスパム検疫メッセージを自己管理することができます。エンド ユーザー向けスパム通知は、ユーザーまたはグループに適用されるポリシーや、例外が設定されたポリシーでは使用できません。
   
@@ -39,11 +39,11 @@ ms.locfileid: "32259625"
 
 **Release &** メッセージがスパムではない場合に、[送信者を許可する] をクリックして、今後の電子メールに対応するように、Office 365 に送信者を信頼できる差出人と受信者の一覧に追加します。 管理者には、[信頼できる差出人のリスト] を上書きする、組織全体にわたる許可/ブロック構成が存在する可能性があることに注意してください。
 
-メッセージがスパムではなく、メールボックスにメッセージを送信して分析のために Microsoft に報告する場合は、 **& レポートをリリース**します。
+メッセージがスパムではなく、メールボックスにメッセージを送信して分析のために Microsoft に報告する場合は、 **_AMP_ レポートをリリース**します。
 
 Office 365 で、受信拒否リストに送信者を追加する場合は、[**ブロック**] を選択します。
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>事前に必要な知識
 <a name="sectionSection0"> </a>
 
 予想所要時間 : 5 分

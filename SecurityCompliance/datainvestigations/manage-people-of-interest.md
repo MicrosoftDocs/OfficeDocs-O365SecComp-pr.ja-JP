@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d06dde60ae75cfea1bf1d79f445b613d20a76363
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e374509dccd235ef689609acc1c4f99db6594d4c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257675"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150709"
 ---
 # <a name="manage-people-of-interest-in-data-investigations-preview"></a>データ調査で関心のあるユーザーを管理する (プレビュー)
 
@@ -53,8 +53,8 @@ ms.locfileid: "32257675"
         > [!NOTE]
         > [ユーザー、グループ、またはチームの選択] をクリックしてメールボックスを指定すると、表示されているメールボックスピッカーが空になります。 これは、パフォーマンスを向上させるための仕様です。 このリストにユーザーを追加するには、検索ボックスに名前 (少なくと3文字) を入力します。
      
-     - **sharepoint サイト**-[**サイトの選択**] をクリックし、[**サイトの選択**] をもう一度クリックして、ユーザーに追加する SharePoint および OneDrive for business サイトを追加します。 Office 365 グループまたは Microsoft チームの SharePoint サイトの URL を追加することもできます。 割り当てる各サイトの URL を入力します。 [**選択**] をクリックし、[**完了**] をクリックします。
-     - **microsoft Teams** – [**チームの選択**] をクリックし、[ **teams の選択**] をもう一度クリックして、その人物が現在参加している microsoft チームグループの一覧を表示します。 ユーザーに追加するチームを選択します。 このチェックボックスをオンにすると、システムは & を自動的に識別します。関連付けられている SharePoint サイトとグループメールボックスを選択して、その Microsoft チームに関連付けます。 [**選択**] をクリックし、[**完了**] をクリックします。
+     - **Sharepoint サイト**-[**サイトの選択**] をクリックし、[**サイトの選択**] をもう一度クリックして、ユーザーに追加する SharePoint および OneDrive for business サイトを追加します。 Office 365 グループまたは Microsoft チームの SharePoint サイトの URL を追加することもできます。 割り当てる各サイトの URL を入力します。 [**選択**] をクリックし、[**完了**] をクリックします。
+     - **Microsoft Teams** – [**チームの選択**] をクリックし、[ **teams の選択**] をもう一度クリックして、その人物が現在参加している microsoft チームグループの一覧を表示します。 ユーザーに追加するチームを選択します。 このチェックボックスをオンにすると、システムは & を自動的に識別します。関連付けられている SharePoint サイトとグループメールボックスを選択して、その Microsoft チームに関連付けます。 [**選択**] をクリックし、[**完了**] をクリックします。
         
       > [!NOTE]
       > Microsoft Teams を追加するには、上記のように、メールボックスと SharePoint サイトを個別に追加する必要があります。
@@ -70,15 +70,15 @@ ms.locfileid: "32257675"
   - [**表示名**: アドレス帳に表示される peron の名前です。 これは通常、姓、ミドルネーム、姓の組み合わせです。
   - [**メール/SMTP**]: ユーザーの SMTP アドレスです。たとえば、jeff@contoso.onmicrosoft.com のようになります。  
   - **タイトル**: 役職
-  - **department**: ユーザーが働く部署の名前。
+  - **Department**: ユーザーが働く部署の名前。
   - **上司**: ユーザーの上司。 上司がこの人物のすべてのエスカレーション情報を受信します。
   
 - 場所情報
 
-  - **city**: 人物が配置されている市区町村。
+  - **City**: 人物が配置されている市区町村。
   - [**状態**: 人物が配置されている都道府県を指定します。
   - [**国/地域**]: 人物が配置されている国/地域。たとえば、"US" や "UK" などです。
-  - **office**: ユーザーの勤務先所在地。
+  - **Office**: ユーザーの勤務先所在地。
 
 - 処理状態
 

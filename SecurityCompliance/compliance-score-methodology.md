@@ -3,7 +3,7 @@ title: コンプライアンススコアの方法論
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,13 +11,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: microsoft コンプライアンスマネージャーは、microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用すると、Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証することができます。
-ms.openlocfilehash: 120aede52d67375f60145412f5d210509ac57581
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+description: Microsoft コンプライアンスマネージャーは、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用すると、Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証することができます。
+ms.openlocfilehash: 5d59ef322fc9b5686d16230cb59ae141cd338090
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33473143"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155259"
 ---
 # <a name="compliance-score-methodology-preview"></a>コンプライアンススコアの方法論 (プレビュー)
 
@@ -57,10 +57,10 @@ ms.locfileid: "33473143"
 |:-----|:-----|
 | 予防必須 | 27 |
 | 予防的裁量 | 9  |
-| 検出必須 | 3  |
-| 検出随意 | 1  |
-| 修正必須 | 3  |
-| 随意随意 | 1  |
+| 検出必須 | 1/3 |
+| 検出随意 | 1-d |
+| 修正必須 | 1/3 |
+| 随意随意 | 1-d |
   
 ## <a name="action-item-workflow"></a>アクションアイテムワークフロー
 

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 10/12/2018
-ms.audience: End User
+audience: End User
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
 ms.collection:
 - M365-security-compliance
 description: '最終更新日: 2017 年5月'
-ms.openlocfilehash: 5e7927bacb6513f01a276ef6487346f319ffb704
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 869d4a7bbc809d72e048b6e1d0af24fa603b0a9d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265269"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157429"
 ---
 # <a name="privacy-statement-for-office-365-secure-email-portal"></a>Office 365 セキュリティで保護された電子メールポータルのプライバシーに関する声明
 
@@ -29,7 +29,7 @@ ms.locfileid: "32265269"
   
 ## <a name="collection-processing-and-use-of-your-information"></a>情報の収集、処理、および使用
 
-新しい OME capabilities ポータルを使用すると、Office 365 で暗号化された電子メールを、デスクトップコンピューターやモバイルデバイスなどのさまざまなエンドポイントから表示できます。 暗号化された電子メールは、通常のメールの HTML 添付ファイルとしてメールボックスに届きます。 メールが Microsoft アカウント、職場または学校のアカウント、または Gmail のアカウントに送信された場合は、そのアカウントを使用して、web ベースの新しい OME 機能ポータルにサインインするように求められます。 暗号化されたメールが microsoft アカウント、職場または学校のアカウント、または Gmail アカウント以外のアカウントに送信された場合は、microsoft アカウントを作成し、それを暗号化されたメッセージの送信先のアカウントに関連付けるように求めるメッセージが表示されます。または、暗号化されたメッセージが送信されたのと同じ電子メールアドレスに送信されるワンタイムパスコードを要求するように選択することもできます。 認証に成功すると、メッセージは暗号化が解除され、新しい OME capabilities ポータルに表示されます。
+新しい OME capabilities ポータルを使用すると、Office 365 で暗号化された電子メールを、デスクトップコンピューターやモバイルデバイスなどのさまざまなエンドポイントから表示できます。 暗号化された電子メールは、通常のメールの HTML 添付ファイルとしてメールボックスに届きます。 メールが Microsoft アカウント、職場または学校のアカウント、または Gmail のアカウントに送信された場合は、そのアカウントを使用して、web ベースの新しい OME 機能ポータルにサインインするように求められます。 暗号化されたメールが Microsoft アカウント、職場または学校のアカウント、または Gmail アカウント以外のアカウントに送信された場合は、Microsoft アカウントを作成し、それを暗号化されたメッセージの送信先のアカウントに関連付けるように求めるメッセージが表示されます。または、暗号化されたメッセージが送信されたのと同じ電子メールアドレスに送信されるワンタイムパスコードを要求するように選択することもできます。 認証に成功すると、メッセージは暗号化が解除され、新しい OME capabilities ポータルに表示されます。
   
 Microsoft アカウント、職場または学校のアカウント、または Gmail アカウントの資格情報は、認証のためにのみ使用されます。また、ワンタイムパスコードも使用されます。これは、新しい OME 機能ポータルに保存されないか、またはその他の目的で新しい OME 機能によって使用されることはありません。
   

@@ -3,7 +3,7 @@ title: Office 365 のメール フローのインテリジェンス
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理者は、Office 365 のコネクタを使用したメッセージ配信に関連付けられているエラーコード (メールフローインテリジェンスとも呼ばれます) について学ぶことができます。
-ms.openlocfilehash: d9ddfdf7c54c8dc709c3d5ae03d9fbd76a153f7e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 224940b84480b694188bd3047829d4896cc2584e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252502"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155869"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Office 365 でのメール フロー インテリジェンス
 
@@ -64,7 +64,7 @@ ms.locfileid: "32252502"
 
 - それ以上のエラー メッセージがオンプレミス環境に配信されないようにするには、通知内の **[今すぐ修正]** をクリックして、Office 365 が無効な受信者によるメッセージをすぐに拒否できるようにします。これにより、組織の無効な受信者用のクオータを超過するリスクが低減されます。このクオータの超過は、通常メッセージの配信に影響を及ぼすことがあります。または、次の手順を実行して、手動で問題を修正します。
 
-  - office 365 の[Exchange 管理センター (EAC)](https://docs.microsoft.com/Exchange/exchange-admin-center)で、office 365 からオンプレミスの電子メール環境に電子メールを配信するコネクタを無効にするか、削除します。
+  - Office 365 の[Exchange 管理センター (EAC)](https://docs.microsoft.com/Exchange/exchange-admin-center)で、office 365 からオンプレミスの電子メール環境に電子メールを配信するコネクタを無効にするか、削除します。
 
     1. EAC で、[**メールフロー** \> **コネクタ**] に移動します。
 
@@ -86,11 +86,11 @@ ms.locfileid: "32252502"
 
 - 宛先の電子メールサーバーが、"サービスは利用できません" というエラーで応答しました。これは、サーバーが Office 365 との通信を維持できないことを示します。
 
-- コネクタは tls を要求するように構成されていますが、送信先の電子メールサーバーが tls をサポートしていません。
+- コネクタは TLS を要求するように構成されていますが、送信先の電子メールサーバーが TLS をサポートしていません。
 
 ### <a name="how-do-i-fix-error-code-450-44317"></a>エラーコード 450 4.4.317 を修正する方法
 
-- オンプレミスの電子メールサーバー上の tls 設定と証明書、およびコネクタの tls 設定を確認します。
+- オンプレミスの電子メールサーバー上の TLS 設定と証明書、およびコネクタの TLS 設定を確認します。
 
 - エラーがパートナー組織 (たとえば、サード パーティのクラウド サービス プロバイダー) によるものである場合、そのパートナーに連絡して問題を解決する必要があります。
 

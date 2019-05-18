@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: ここでは、スパム対策保護に関するよく寄せられる質問と回答について説明します。 回答は、Microsoft Exchange Online と Exchange Online Protection (EOP) のお客様に当てはまります。
-ms.openlocfilehash: fa2709c995ff9ef83213b86e079a778c61bef3a2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9ea57d34e14697a0dec9005a7377f320ac53ed81
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242495"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152379"
 ---
 # <a name="anti-spam-protection-faq"></a>スパム対策保護 FAQ
 
@@ -73,9 +73,9 @@ A. スパムとスパムではないメッセージを分析のために Microso
   
 A. はい。たとえば、Microsoft 365 管理センターでスパム検出レポートを取得できます。 このレポートでは、スパムボリュームが一意のメッセージ数として表示されます。 レポートの詳細については、次のリンクを参照してください。
   
-exchange online のお客様: [exchange online での監視、レポート、メッセージ追跡](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
+Exchange Online のお客様: [Exchange online での監視、レポート、メッセージ追跡](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
-exchange online protection のお客様: [exchange online protection でのレポート作成とメッセージ追跡](eop/reporting-and-message-trace-in-exchange-online-protection.md)
+Exchange Online Protection のお客様: [Exchange Online protection でのレポート作成とメッセージ追跡](eop/reporting-and-message-trace-in-exchange-online-protection.md)
   
  **Q. 誰かが私にメッセージを送りましたが、そのメッセージを見つけられません。 スパムとして検出された可能性があります。 調べるためのツールはありますか?**
   

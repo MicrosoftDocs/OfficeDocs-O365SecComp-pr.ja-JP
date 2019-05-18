@@ -1,10 +1,10 @@
 ---
-title: 校閲セットからドキュメントをエクスポートする
+title: レビュー セットからドキュメントをエクスポートする
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ea9db6d95b003b5a741ae8a235fc5f06087f87d6
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 14efa58305e1963aa43c0c94fb208e5391c87119
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527222"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155069"
 ---
-# <a name="export-documents-from-a-review-set"></a>校閲セットからドキュメントをエクスポートする
+# <a name="export-documents-from-a-review-set"></a>レビュー セットからドキュメントをエクスポートする
 
 レビューセットからコンテンツをエクスポートするには、3つの異なる方法で行うことができます。
 

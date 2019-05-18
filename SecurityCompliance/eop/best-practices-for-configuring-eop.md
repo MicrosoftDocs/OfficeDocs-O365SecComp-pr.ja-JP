@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Exchange Online Protection (EOP) のベスト プラクティス推奨に従って正しく設定し、一般的な構成エラーを防止してください。
-ms.openlocfilehash: 3b8cf41be41e199017dcff7fd3762711402d8ca2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c60e3d62cc758a75f85d6cb149c8e13492cad35c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256645"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150289"
 ---
 # <a name="best-practices-for-configuring-eop"></a>EOP を設定するための最良の実施
   
@@ -31,11 +31,11 @@ Exchange Online Protection (EOP) のベスト プラクティス推奨に従っ�
   
 ## <a name="spf-record-customization-to-help-prevent-spoofing"></a>スプーフィングを防止するための SPF レコードのカスタマイズ
 
-EOP をセットアップすると、DNS レコードに EOP 用の SPF (Sender Policy Framework) レコードが追加されれます。 SPF レコードによって、スプーフィングを防止できます。 spf レコードがスプーフィングを防ぎ、オンプレミスの IP アドレスを spf レコードに追加する方法の詳細については、「 [Set up SPF in Office 365」を](../set-up-spf-in-office-365-to-help-prevent-spoofing.md)参照して、スプーフィングを防止してください。 
+EOP をセットアップすると、DNS レコードに EOP 用の SPF (Sender Policy Framework) レコードが追加されれます。 SPF レコードによって、スプーフィングを防止できます。 SPF レコードがスプーフィングを防ぎ、オンプレミスの IP アドレスを SPF レコードに追加する方法の詳細については、「 [Set UP SPF In Office 365」を](../set-up-spf-in-office-365-to-help-prevent-spoofing.md)参照して、スプーフィングを防止してください。 
   
 ## <a name="set-anti-spam-options"></a>スパム対策オプションを設定する
 
-ip 許可一覧と ip 禁止一覧に ip アドレスを追加し、[**セーフリストを有効に**する] オプションを選択することによって、接続フィルター設定を整理します。受信する誤検知 (良好なメールとして分類されるメール) の数を減らす必要があります。 詳細につい[ては、「Configure the connection filter policy」を](../configure-the-connection-filter-policy.md)参照してください。 組織全体に適用されるスパム設定の詳細については、「 [EOP と Office 365 でメールが迷惑メールとして検出されないようにする](https://go.microsoft.com/fwlink/p/?LinkId=534224)」または「[Office 365 のスパム フィルターでスパムや迷惑メールをブロックして、検出漏れ問題を防止する](https://go.microsoft.com/fwlink/p/?LinkId=534225)」を参照してください。 これらは、管理者レベルの制御権限を持っている場合にスパムの誤検知や検出漏れを防ぐ上で役立ちます。
+Ip 許可一覧と ip 禁止一覧に IP アドレスを追加し、[**セーフリストを有効に**する] オプションを選択することによって、接続フィルター設定を整理します。受信する誤検知 (良好なメールとして分類されるメール) の数を減らす必要があります。 詳細につい[ては、「Configure the connection filter policy」を](../configure-the-connection-filter-policy.md)参照してください。 組織全体に適用されるスパム設定の詳細については、「 [EOP と Office 365 でメールが迷惑メールとして検出されないようにする](https://go.microsoft.com/fwlink/p/?LinkId=534224)」または「[Office 365 のスパム フィルターでスパムや迷惑メールをブロックして、検出漏れ問題を防止する](https://go.microsoft.com/fwlink/p/?LinkId=534225)」を参照してください。 これらは、管理者レベルの制御権限を持っている場合にスパムの誤検知や検出漏れを防ぐ上で役立ちます。
   
 コンテンツフィルターを管理するには、既定の設定を確認し、必要に応じて変更します。 たとえば、スパム検出メッセージに対して行われる処理を変更することができます。 スパムフィルター処理に積極的なアプローチを使用する場合は、高度なスパムフィルターオプションを構成できます。 これらのオプションは、運用環境に実装する前にまずテストすることをお勧めします (オンにすることにより)。フィッシングを懸念している組織では、 **SPF レコード: hard fail**オプションをオンにすることをお勧めします。 詳細につい[ては、「スパムフィルターポリシーの構成](../configure-your-spam-filter-policies.md)」および[「Advanced spam filtering options](../advanced-spam-filtering-asf-options.md)」を参照してください。
   
@@ -50,7 +50,7 @@ ip 許可一覧と ip 禁止一覧に ip アドレスを追加し、[**セーフ
 
 Exchange 管理センター(EAC) でマルウェアのフィルター設定を確認し、微調整を行います。 詳細については[、「マルウェア対策ポリシーを構成する](../configure-anti-malware-policies.md)」を参照してください。 また、[マル](../anti-malware-protection-faq-eop.md)ウェア対策保護に関するよく寄せられる質問や、マルウェア対策の保護に関する回答についてもお読みください。
   
-マルウェアを含む実行可能ファイルを懸念している場合は、実行可能なコンテンツを含むすべての電子メール添付ファイルをブロックする Exchange メール フロー ルールを作成できます。 「[メールフロールールを使用して exchange online のメッセージの添付ファイルを検査する](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)」に記載されているファイルの種類をブロックするには、「 [exchange online Protection でのファイル添付ブロックを介してマルウェアの脅威を軽減する](https://support.microsoft.com/kb/2959596)」の手順に従います。
+マルウェアを含む実行可能ファイルを懸念している場合は、実行可能なコンテンツを含むすべての電子メール添付ファイルをブロックする Exchange メール フロー ルールを作成できます。 「[メールフロールールを使用して Exchange online のメッセージの添付ファイルを検査する](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)」に記載されているファイルの種類をブロックするには、「 [exchange online Protection でのファイル添付ブロックを介してマルウェアの脅威を軽減する](https://support.microsoft.com/kb/2959596)」の手順に従います。
   
 EAC の一般的な添付ファイルの種類フィルターを使用できます。 **[保護]** \> **[マルウェア フィルター]** と選択します。 実行可能なコンテンツを含むすべての電子メール添付ファイルをブロックするメールフロールールを作成できます。 
   

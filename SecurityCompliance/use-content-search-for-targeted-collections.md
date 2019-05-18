@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -12,19 +12,19 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: セキュリティ & コンプライアンスセンターでコンテンツ検索を使用して、対象となるコレクションを実行します。 対象となるコレクションは、ケースまたは権限アイテムに応答するアイテムが特定のメールボックスまたはサイトフォルダーにあることを確信していることを意味しています。 この記事に記載されているスクリプトを使用して、検索する特定のメールボックスまたはサイトフォルダーのフォルダー ID またはパスを取得します。
-ms.openlocfilehash: 3d9a82926a08b3f7f1f245146e70d79617e7a413
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 476478f3f4d5c2d1992989eac790068f28ba747f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264020"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156309"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Office 365 のコンテンツ検索を使用した対象コレクション
 
-Office 365 セキュリティ&amp;コンプライアンスセンターのコンテンツ検索機能では、Exchange メールボックスまたは SharePoint および OneDrive for business サイトの特定のフォルダーを検索するための直接 UI を使用することはできません。 ただし、実際の検索クエリ構文で、サイトの email または path (documentlink) プロパティを指定して、特定のフォルダー (*対象のコレクション*と呼ばれる) を検索することができます。 コンテンツ検索を使用して対象のコレクションを実行することは、特定のメールボックスまたはサイトフォルダーに、訴訟や権限のあるアイテムに応答するアイテムがあることを確信する場合に役立ちます。 この記事に記載されているスクリプトを使用して、SharePoint および OneDrive for business サイト上のフォルダーのメールボックスフォルダーのフォルダー ID またはパス (documentlink) を取得することができます。 その後、検索クエリでフォルダー ID またはパスを使用して、フォルダー内にあるアイテムを返すことができます。
+Office 365 セキュリティ&amp;コンプライアンスセンターのコンテンツ検索機能では、Exchange メールボックスまたは SharePoint および OneDrive for business サイトの特定のフォルダーを検索するための直接 UI を使用することはできません。 ただし、実際の検索クエリ構文で、サイトの email または path (DocumentLink) プロパティを指定して、特定のフォルダー (*対象のコレクション*と呼ばれる) を検索することができます。 コンテンツ検索を使用して対象のコレクションを実行することは、特定のメールボックスまたはサイトフォルダーに、訴訟や権限のあるアイテムに応答するアイテムがあることを確信する場合に役立ちます。 この記事に記載されているスクリプトを使用して、SharePoint および OneDrive for business サイト上のフォルダーのメールボックスフォルダーのフォルダー ID またはパス (DocumentLink) を取得することができます。 その後、検索クエリでフォルダー ID またはパスを使用して、フォルダー内にあるアイテムを返すことができます。
 
 > [!NOTE]
-> SharePoint または OneDrive for business サイト内のフォルダーにあるコンテンツを返すには、このトピックのスクリプトで Path プロパティの代わりに documentlink 管理プロパティを使用します。 documentlink プロパティは、フォルダー内のすべてのコンテンツを返すので、path プロパティよりも堅牢ですが、path プロパティはいくつかのメディアファイルを返すわけではありません。
+> SharePoint または OneDrive for Business サイト内のフォルダーにあるコンテンツを返すには、このトピックのスクリプトで Path プロパティの代わりに DocumentLink 管理プロパティを使用します。 DocumentLink プロパティは、フォルダー内のすべてのコンテンツを返すので、Path プロパティよりも堅牢ですが、Path プロパティはいくつかのメディアファイルを返すわけではありません。
 
 ## <a name="before-you-begin"></a>始める前に
 
@@ -40,7 +40,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのコン�
 
     詳細については、「[Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?linkid=396554)」を参照してください。
     
-- スクリプトには、最小限のエラー処理が含まれています。 このスクリプトの主な目的は、コンテンツ検索の検索クエリ構文で対象のコレクションを実行するために使用できるメールボックスフォルダー id またはサイトパスの一覧をすばやく表示することです。
+- スクリプトには、最小限のエラー処理が含まれています。 このスクリプトの主な目的は、コンテンツ検索の検索クエリ構文で対象のコレクションを実行するために使用できるメールボックスフォルダー Id またはサイトパスの一覧をすばやく表示することです。
     
 - このトピックで提供されているサンプルスクリプトは、Microsoft 標準サポートプログラムまたはサービスではサポートされていません。 このサンプルスクリプトは、あらゆる種類の保証なしに提供されています。 Microsoft は、商品性の保証および特定目的への適合性の保証を含むいかなる明示もしくは黙示の保証責任を負いません。 サンプルスクリプトおよびドキュメントの使用によって発生した、またはパフォーマンスの低下によって生じるリスク全体は、そのままになります。 サンプル スクリプトおよびドキュメントを使用したこと、または使用できなかったことに伴って生じるいかなる損害 (業務利益の損失、業務の中断、業務情報の損失、金銭上の損失、その他一切の損害) についても、Microsoft、Microsoft に帰属する作者、スクリプトの作成、製造、または納入に関与したその他のすべての人員は、いかなる場合も責めを負わないものとします。
   
@@ -48,15 +48,15 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのコン�
 
 この最初の手順で実行するスクリプトは、メールボックスフォルダーまたは SharePoint と OneDrive for business フォルダーの一覧と、各フォルダーの対応するフォルダー ID またはパスを返します。 このスクリプトを実行すると、次の情報を求めるメッセージが表示されます。
   
-- **電子メールアドレスまたはサイトの URL**Exchange メールボックスフォルダーとフォルダー id の一覧を返すには、保管担当者の電子メールアドレスを入力します。 または、指定したサイトのパスの一覧を返すには、SharePoint サイトまたは OneDrive for business サイトの URL を入力します。 次に例を示します。 
+- **電子メールアドレスまたはサイトの URL**Exchange メールボックスフォルダーとフォルダー Id の一覧を返すには、保管担当者の電子メールアドレスを入力します。 または、指定したサイトのパスの一覧を返すには、SharePoint サイトまたは OneDrive for Business サイトの URL を入力します。 次に例を示します。 
     
   - **Exchange** -stacig@contoso.onmicrosoft.com 
     
   - **SharePoint** - https://contoso.sharepoint.com/sites/marketing 
     
-  - **OneDrive for business** - https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com 
+  - **OneDrive for Business** - https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com 
     
-- **ユーザーの資格情報**-スクリプトは、資格情報を使用して Exchange Online およびセキュリティ & コンプライアンスセンターとリモート PowerShell に接続します。 前述のように、このスクリプトを正常に実行するには、適切なアクセス許可を割り当てる必要があります。
+- **ユーザーの資格情報**-スクリプトは、資格情報を使用して Exchange Online およびセキュリティ _AMP_ コンプライアンスセンターとリモート PowerShell に接続します。 前述のように、このスクリプトを正常に実行するには、適切なアクセス許可を割り当てる必要があります。
     
 メールボックスフォルダーまたはサイト documentlink (path) 名の一覧を表示するには、次のようにします。
   
@@ -190,20 +190,20 @@ Office 365 セキュリティ&amp;コンプライアンスセンターのコン�
   
 ### <a name="script-output-for-mailbox-folders"></a>メールボックスフォルダーのスクリプト出力
 
-メールボックスフォルダー id を取得している場合、スクリプトはリモート PowerShell を使用して Exchange Online に接続し、 **MailboxFolderStatisics**コマンドレットを実行して、指定したメールボックスのフォルダーの一覧を表示します。 メールボックス内のすべてのフォルダーについて、スクリプトによって、 **FolderPath**列にフォルダーの名前と、フォルダー ID が**folderquery**列に表示されます。 また、スクリプトは**folderId** (メールボックスプロパティの名前) のプレフィックスをフォルダー ID に追加します。 **folderid**プロパティは検索可能なプロパティであるため、手順`folderid:<folderid>` 2 の検索クエリでそのフォルダーを検索するために使用します。 
+メールボックスフォルダー Id を取得している場合、スクリプトはリモート PowerShell を使用して Exchange Online に接続し、 **MailboxFolderStatisics**コマンドレットを実行して、指定したメールボックスのフォルダーの一覧を表示します。 メールボックス内のすべてのフォルダーについて、スクリプトによって、 **FolderPath**列にフォルダーの名前と、フォルダー ID が**folderquery**列に表示されます。 また、スクリプトは**folderId** (メールボックスプロパティの名前) のプレフィックスをフォルダー ID に追加します。 **Folderid**プロパティは検索可能なプロパティであるため、手順`folderid:<folderid>` 2 の検索クエリでそのフォルダーを検索するために使用します。 
 
 > [!IMPORTANT]
-> この記事のスクリプトには、 **get-mailboxfolderstatistics**によって返される64文字のフォルダー Id 値を、検索用にインデックス付けされたものと同じ48文字形式に変換するためのエンコードロジックが含まれています。 PowerShell で**get-mailboxfolderstatistics**コマンドレットを実行してフォルダー id を取得した場合 (この記事のスクリプトを実行するのではなく)、そのフォルダー id 値を使用する検索クエリは失敗します。 コンテンツ検索で使用できる正しい形式のフォルダー id を取得するには、スクリプトを実行する必要があります。
+> この記事のスクリプトには、 **get-mailboxfolderstatistics**によって返される64文字のフォルダー Id 値を、検索用にインデックス付けされたものと同じ48文字形式に変換するためのエンコードロジックが含まれています。 PowerShell で**get-mailboxfolderstatistics**コマンドレットを実行してフォルダー id を取得した場合 (この記事のスクリプトを実行するのではなく)、そのフォルダー id 値を使用する検索クエリは失敗します。 コンテンツ検索で使用できる正しい形式のフォルダー Id を取得するには、スクリプトを実行する必要があります。
   
 メールボックスフォルダーのスクリプトによって返される出力の例を次に示します。
   
-![スクリプトによって返されるメールボックスフォルダーとフォルダー id のリストの例](media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
+![スクリプトによって返されるメールボックスフォルダーとフォルダー Id のリストの例](media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
   
 手順2の例は、ユーザーの [回復可能なアイテム] フォルダー内の [削除] サブフォルダーを検索するために使用されるクエリを示しています。
   
 ### <a name="script-output-for-site-folders"></a>サイトフォルダーのスクリプト出力
 
-SharePoint または OneDrive for business サイトから**documentlink**プロパティのパスを取得している場合、スクリプトはリモート PowerShell を使用して Security & コンプライアンスセンターに接続し、サイトを検索する新しいコンテンツ検索を作成します。指定したサイトにあるフォルダーの一覧を表示します。 このスクリプトは、各フォルダーの名前を表示し、" **documentlink of ドキュメント**" というプレフィックスをフォルダーの URL に追加します。 **documentlink**プロパティは検索可能なプロパティであるため、手順`documentlink:<path>` 2 の検索クエリで [プロパティ: 値のペア] を使用して、そのフォルダーを検索します。 
+SharePoint または OneDrive for Business サイトから**documentlink**プロパティのパスを取得している場合、スクリプトはリモート PowerShell を使用して Security _AMP_ コンプライアンスセンターに接続し、サイトを検索する新しいコンテンツ検索を作成します。指定したサイトにあるフォルダーの一覧を表示します。 このスクリプトは、各フォルダーの名前を表示し、" **documentlink of ドキュメント**" というプレフィックスをフォルダーの URL に追加します。 **Documentlink**プロパティは検索可能なプロパティであるため、手順`documentlink:<path>` 2 の検索クエリで [プロパティ: 値のペア] を使用して、そのフォルダーを検索します。 
   
 サイトフォルダーのスクリプトによって返される出力の例を次に示します。
   
@@ -211,7 +211,7 @@ SharePoint または OneDrive for business サイトから**documentlink**プロ
   
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>手順 2: フォルダー ID または documentlink を使用して対象のコレクションを実行する
 
-特定のユーザーのフォルダー id または documentlinks の一覧を収集するスクリプトを実行した後、次の手順では、Security & コンプライアンスセンターに移動し、新しいコンテンツ検索を作成して特定のフォルダーを検索します。 コンテンツ検索キーワードボックス`folderid:<folderid>`で`documentlink:<path>`構成した検索クエリで、またはプロパティ: 値のペアを使用します (または、 **new-compliancesearch**コマンドレットを使用する場合は、 *contentmatchquery*パラメーターの値として指定します)。 `folderid`または`documentlink`プロパティを他の検索パラメーターまたは検索条件と組み合わせることができます。 `folderid`または`documentlink`プロパティのみをクエリに含める場合、検索では指定したフォルダーにあるすべてのアイテムが返されます。 
+特定のユーザーのフォルダー Id または documentlinks の一覧を収集するスクリプトを実行した後、次の手順では、Security & コンプライアンスセンターに移動し、新しいコンテンツ検索を作成して特定のフォルダーを検索します。 コンテンツ検索キーワードボックス`folderid:<folderid>`で`documentlink:<path>`構成した検索クエリで、またはプロパティ: 値のペアを使用します (または、 **new-compliancesearch**コマンドレットを使用する場合は、 *contentmatchquery*パラメーターの値として指定します)。 `folderid`または`documentlink`プロパティを他の検索パラメーターまたは検索条件と組み合わせることができます。 `folderid`または`documentlink`プロパティのみをクエリに含める場合、検索では指定したフォルダーにあるすべてのアイテムが返されます。 
   
 1. [https://protection.office.com](https://protection.office.com) に移動します。
     

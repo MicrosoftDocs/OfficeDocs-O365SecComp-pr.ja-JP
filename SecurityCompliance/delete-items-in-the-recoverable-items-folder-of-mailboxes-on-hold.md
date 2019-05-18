@@ -3,7 +3,7 @@ title: クラウドベースのメールボックスの [回復可能なアイ�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,16 +15,16 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: '管理者の場合: Exchange Online メールボックスのユーザーの回復可能なアイテムフォルダーのアイテムを削除します (法的情報保留に設定されている場合も含む)。 これは、Office 365 に誤ってこぼれたデータを削除する効果的な方法です。'
-ms.openlocfilehash: 7badd45f582e4d5fef4cb5708c504573da0aba50
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9da469af900c2610762338029aa80d31c7f10363
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256875"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150409"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>クラウドベースのメールボックスの [回復可能なアイテム] フォルダー内のアイテムを削除する-管理者向けヘルプ
 
-Exchange Online メールボックスの回復可能なアイテムフォルダーは、偶発的または悪意のある削除から保護するために存在します。 また、保存されていて、Office 365 コンプライアンス機能 (保留や電子情報開示の検索など) によってアクセスされるアイテムを格納するためにも使用されます。 ただし、状況によっては、削除する必要のある回復可能なアイテムフォルダーに誤って保持されていたデータが組織に存在する可能性があります。 たとえば、ユーザーが気付かないうちに機密情報や情報が含まれる電子メールメッセージを知らずに送信または転送することがあります。 メッセージが完全に削除された場合でも、メールボックスに法的情報保持が設定されているため、無期限に保持される可能性があります。 このシナリオは、データが Office 365 に誤って含まれていたため、データ流出と呼ばれます。 このような状況では、Exchange Online メールボックスのユーザーの回復可能なアイテムフォルダーのアイテムを削除することができます。これは、Office 365 のさまざまな保留機能のいずれかを使用して、そのメールボックスが保持されている場合でも削除できます。 これらの種類には、office 365 または Microsoft 365 のセキュリティ/コンプライアンスセンターで作成された訴訟ホールド、インプレースホールド、電子情報開示の保持、および office 365 アイテム保持ポリシーがあります。
+Exchange Online メールボックスの回復可能なアイテムフォルダーは、偶発的または悪意のある削除から保護するために存在します。 また、保存されていて、Office 365 コンプライアンス機能 (保留や電子情報開示の検索など) によってアクセスされるアイテムを格納するためにも使用されます。 ただし、状況によっては、削除する必要のある回復可能なアイテムフォルダーに誤って保持されていたデータが組織に存在する可能性があります。 たとえば、ユーザーが気付かないうちに機密情報や情報が含まれる電子メールメッセージを知らずに送信または転送することがあります。 メッセージが完全に削除された場合でも、メールボックスに法的情報保持が設定されているため、無期限に保持される可能性があります。 このシナリオは、データが Office 365 に誤って含まれていたため、データ流出と呼ばれます。 このような状況では、Exchange Online メールボックスのユーザーの回復可能なアイテムフォルダーのアイテムを削除することができます。これは、Office 365 のさまざまな保留機能のいずれかを使用して、そのメールボックスが保持されている場合でも削除できます。 これらの種類には、Office 365 または Microsoft 365 のセキュリティ/コンプライアンスセンターで作成された訴訟ホールド、インプレースホールド、電子情報開示の保持、および Office 365 アイテム保持ポリシーがあります。
   
  この記事では、保留中のクラウドベースのメールボックスの [回復可能なアイテム] フォルダーからアイテムを削除する方法について説明します。 この手順では、メールボックスへのアクセスを無効にし、単一アイテムの回復を無効にし、管理フォルダーアシスタントを無効にして、メールボックスの処理を一時的に解除し、回復可能なアイテムフォルダーからアイテムを削除してから、元に戻す必要があります。メールボックスを以前の構成に設定します。 プロセスは次のとおりです。 
   
@@ -61,7 +61,7 @@ Exchange Online メールボックスの回復可能なアイテムフォルダ�
 
 最初の手順では、この手順に影響する、ターゲットメールボックスから選択したプロパティを収集します。 これらのプロパティの一部を変更し、[回復可能なアイテム] フォルダーからアイテムを削除した後に、手順6で元の値に戻すことができるように、これらの設定を書き留めておくか、テキストファイルに保存してください。 収集する必要があるメールボックスのプロパティの一覧を次に示します。
   
--  *singleitemrecoveryenabled*および*RetainDeletedItemsFor* ;必要に応じて、1回の回復を無効にして、手順3で削除済みアイテムの保存期間を延長します。 
+-  *Singleitemrecoveryenabled*および*RetainDeletedItemsFor* ;必要に応じて、1回の回復を無効にして、手順3で削除済みアイテムの保存期間を延長します。 
     
 -  *LitigationHoldEnabled*および*InPlaceHolds* ;手順3で一時的に削除できるように、メールボックスに配置されているすべての保留リストを識別する必要があります。 メールボックスに配置される可能性のある型保持を特定する方法については、「[詳細情報](#more-information)」セクションを参照してください。 
     
@@ -190,11 +190,11 @@ Exchange Online PowerShell で次のコマンドを実行して、メールボ�
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name
 ```
    
-インプレースホールドを識別した後、exchange 管理センター (EAC) または exchange Online PowerShell を使用して、保留リストからメールボックスを削除できます。 詳細については、「[インプレース保持を作成または削除する](https://go.microsoft.com/fwlink/?linkid=852668)」を参照してください。
+インプレースホールドを識別した後、Exchange 管理センター (EAC) または Exchange Online PowerShell を使用して、保留リストからメールボックスを削除できます。 詳細については、「[インプレース保持を作成または削除する](https://go.microsoft.com/fwlink/?linkid=852668)」を参照してください。
   
  ### <a name="office-365-retention-policies-applied-to-specific-mailboxes"></a>特定のメールボックスに適用される Office 365 アイテム保持ポリシー
   
-[Security & コンプライアンスセンターの PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)で次のコマンドを実行して、メールボックスに適用されている Office 365 アイテム保持ポリシーを特定します。 手順1で特定したアイテム`mbx`保持`skp`ポリシーの GUID (またはプレフィックスを含まない) を使用します。 
+[Security _AMP_ コンプライアンスセンターの PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)で次のコマンドを実行して、メールボックスに適用されている Office 365 アイテム保持ポリシーを特定します。 手順1で特定したアイテム`mbx`保持`skp`ポリシーの GUID (またはプレフィックスを含まない) を使用します。 
 
 ```
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
@@ -204,7 +204,7 @@ Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
   
  ### <a name="organization-wide-office-365-retention-policies"></a>組織全体の Office 365 のアイテム保持ポリシー
   
-組織全体および Exchange 全体の Office 365 保持ポリシーは、組織内のすべてのメールボックスに適用されます。 これらは、(メールボックスレベルではなく) 組織レベルで適用され、手順1で取得した組織レベルの**config**コマンドレットを実行したときに返されます。 [Security & コンプライアンスセンターの PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)で次のコマンドを実行して、組織全体の Office 365 アイテム保持ポリシーを特定します。 手順1で特定した組織`mbx`全体のアイテム保持ポリシーの GUID (プレフィックスを含まない) を使用します。 
+組織全体および Exchange 全体の Office 365 保持ポリシーは、組織内のすべてのメールボックスに適用されます。 これらは、(メールボックスレベルではなく) 組織レベルで適用され、手順1で取得した組織レベルの**config**コマンドレットを実行したときに返されます。 [Security _AMP_ コンプライアンスセンターの PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)で次のコマンドを実行して、組織全体の Office 365 アイテム保持ポリシーを特定します。 手順1で特定した組織`mbx`全体のアイテム保持ポリシーの GUID (プレフィックスを含まない) を使用します。 
 
 ```
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
@@ -228,7 +228,7 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
  ### <a name="ediscovery-case-holds"></a>電子情報開示ケースの保持
   
-[Security & コンプライアンスセンターの PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)で次のコマンドを実行して、メールボックスに適用される電子情報開示ケースに関連付けられている保留リストを識別します。 手順1で特定した電子`UniH`情報開示ホールドの GUID (プレフィックスを含まない) を使用します。 2番目のコマンドには、保留が関連付けられている電子情報開示ケースの名前が表示されることに注意してください。3番目のコマンドは、保留の名前を表示します。 
+[Security _AMP_ コンプライアンスセンターの PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)で次のコマンドを実行して、メールボックスに適用される電子情報開示ケースに関連付けられている保留リストを識別します。 手順1で特定した電子`UniH`情報開示ホールドの GUID (プレフィックスを含まない) を使用します。 2番目のコマンドには、保留が関連付けられている電子情報開示ケースの名前が表示されることに注意してください。3番目のコマンドは、保留の名前を表示します。 
   
 ```
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
@@ -278,7 +278,7 @@ Set-Mailbox <username> -RemoveDelayHoldApplied
 > [!NOTE]
 > ( *SearchQuery*  パラメーターを使用していて) 検索クエリが含まれている場合、 **Search-Mailbox** コマンドレットは、検索結果で最大 10,000 個のアイテムを返します。したがって、検索クエリを含める場合は、 **Search-Mailbox** コマンドを複数回実行して 10,000 を超えるアイテムを削除する必要があるかもしれません。 
   
-次の例は、これらの各オプションのコマンド構文を示しています。 これらの例で`-SearchQuery size>0`は、パラメーター値を使用して、回復可能なアイテムフォルダー内のすべてのサブフォルダーからすべてのアイテムを削除します。 特定の条件に一致するアイテムのみを削除する必要がある場合は、 *searchquery*パラメーターを使用して、メッセージの件名、日付の範囲など、他の条件を指定することもできます。 [その他の searchquery パラメーターの使用例](#other-examples-of-using-the-searchquery-parameter)を参照してください。 
+次の例は、これらの各オプションのコマンド構文を示しています。 これらの例で`-SearchQuery size>0`は、パラメーター値を使用して、回復可能なアイテムフォルダー内のすべてのサブフォルダーからすべてのアイテムを削除します。 特定の条件に一致するアイテムのみを削除する必要がある場合は、 *Searchquery*パラメーターを使用して、メッセージの件名、日付の範囲など、他の条件を指定することもできます。 [その他の SearchQuery パラメーターの使用例](#other-examples-of-using-the-searchquery-parameter)を参照してください。 
   
 ### <a name="example-1"></a>例 1
 
@@ -288,7 +288,7 @@ Set-Mailbox <username> -RemoveDelayHoldApplied
 Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox "Discovery Search Mailbox" -TargetFolder "<foldername>"
 ```
 
-前の例では、アイテムを探索検索メールボックスにコピーする必要はありません。 任意のターゲットメールボックスにメッセージをコピーできます。 ただし、機密性の高いメールボックスデータにアクセスできないようにするには、権限のある人物にアクセスが制限されたメールボックスにメッセージをコピーすることをお勧めします。 既定では、既定の探索検索メールボックスへのアクセスは、Exchange Online の "discovery Management/検出の管理" 役割グループのメンバーに制限されています。 
+前の例では、アイテムを探索検索メールボックスにコピーする必要はありません。 任意のターゲットメールボックスにメッセージをコピーできます。 ただし、機密性の高いメールボックスデータにアクセスできないようにするには、権限のある人物にアクセスが制限されたメールボックスにメッセージをコピーすることをお勧めします。 既定では、既定の探索検索メールボックスへのアクセスは、Exchange Online の "Discovery Management/検出の管理" 役割グループのメンバーに制限されています。 
   
 ### <a name="example-2"></a>例 2
 
@@ -306,9 +306,9 @@ Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -TargetMailbox
 Search-Mailbox <username> -SearchQuery size>0 -SearchDumpsterOnly -DeleteContent
 ```
 
-### <a name="other-examples-of-using-the-searchquery-parameter"></a>searchquery パラメーターを使用する他の例
+### <a name="other-examples-of-using-the-searchquery-parameter"></a>SearchQuery パラメーターを使用する他の例
 
-次に、 *searchquery*パラメーターを使用して特定のメッセージを検索する例をいくつか示します。 *searchquery*パラメーターを使用して特定のアイテムを検索する場合は、検索結果を確認し、必要に応じてクエリを修正してから検索結果を削除することができるように、検索結果をターゲットメールボックスにコピーすることを検討してください。 
+次に、 *Searchquery*パラメーターを使用して特定のメッセージを検索する例をいくつか示します。 *Searchquery*パラメーターを使用して特定のアイテムを検索する場合は、検索結果を確認し、必要に応じてクエリを修正してから検索結果を削除することができるように、検索結果をターゲットメールボックスにコピーすることを検討してください。 
   
 この例では、[件名] フィールドに特定の語句が含まれるメッセージを返します。
   
@@ -433,8 +433,8 @@ Exchange Online PowerShell で次の手順を実行します (指定された順
 |:-----|:-----|:-----|
 |訴訟ホールド  <br/> | `True` <br/> |*LitigationHoldEnabled*  プロパティが  `True` に設定されています。  <br/> |
 |インプレース ホールド  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |*InPlaceHolds*プロパティには、メールボックスに配置されたインプレースホールドの GUID が含まれています。 GUID はプレフィックスで始まっていないため、これはインプレースホールドであることを伝えることができます。  <br/> Exchange Online の PowerShell `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL`でコマンドを使用して、メールボックスのインプレース保持に関する情報を取得できます。  <br/> |
-| 特定のメールボックスに適用されるセキュリティ & コンプライアンスセンターの Office 365 アイテム保持ポリシー  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> or  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |**メールボックスの取得**コマンドレットを実行すると、 *InPlaceHolds*プロパティには、メールボックスに適用されている Office 365 アイテム保持ポリシーの guid も含まれます。 GUID が`mbx`プレフィックスで始まっているため、アイテム保持ポリシーを識別できます。 アイテム保持ポリシーの GUID が`skp`プレフィックスで始まっている場合は、アイテム保持ポリシーが Skype for business の会話に適用されることを示すことに注意してください。  <br/> メールボックスに適用されている Office 365 アイテム保持ポリシーを識別するには、Security & コンプライアンスセンターの PowerShell で次のコマンドを実行します。 <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>このコマンドを実行する場合は、必ず、 `mbx` または  `skp` プレフィックスを削除してください。  <br/> |
-|セキュリティ & コンプライアンスセンターの組織全体にわたる Office 365 のアイテム保持ポリシー  <br/> |値なし  <br/> or  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696`(メールボックスが組織全体のポリシーから除外されていることを示します)  <br/> |InPlaceHolds コマンドレットの実行時に** プロパティが空**** の場合でも、メールボックスに適用されている組織全体の Office 365 保持ポリシーが1つ以上存在する可能性があります。  <br/> このことを確認するには、 `Get-OrganizationConfig | FL InPlaceHolds` Exchange Online PowerShell でコマンドを実行して、組織全体の Office 365 アイテム保持ポリシーの guid の一覧を取得します。 Exchange メールボックスに適用される組織全体のアイテム保持ポリシーの GUID `mbx`は、接頭辞で始まります。例`mbxa3056bb15562480fadb46ce523ff7b02`を示します。  <br/> メールボックスに適用されている組織全体の Office 365 アイテム保持ポリシーを識別するには、Security & コンプライアンスセンターの PowerShell で次のコマンドを実行します。 <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>メールボックスが組織全体の Office 365 アイテム保持ポリシーから除外されている場合は、**メールボックス取得**コマンドレットを実行すると、ユーザーのメールボックスの*InPlaceHolds*プロパティにアイテム保持ポリシーの GUID が表示されることに注意してください。プレフィックス`-mbx`によって識別されます。例えば`-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
-|セキュリティ & コンプライアンスセンターにおける電子情報開示ケースホールド  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |*InPlaceHolds*プロパティには、メールボックスに配置される可能性のある Security & コンプライアンスセンターの電子情報開示ケースに関連付けられている保留の GUID も含まれています。 GUID が  `UniH` プレフィックスで始まっているため、これは電子情報開示ケース ホールドであることがわかります。  <br/> Security & コンプライアンスセンター `Get-CaseHoldPolicy` PowerShell のコマンドレットを使用して、メールボックスの保留リストに関連付けられている電子情報開示ケースに関する情報を取得できます。 たとえば、コマンド`Get-CaseHoldPolicy <hold GUID without prefix> | FL Name`を実行して、メールボックスにあるケースホールドの名前を表示できます。 Be sure to remove the  `UniH` プレフィックスを削除してください。  <br/><br/> メールボックスの保留リストが関連付けられている電子情報開示ケースを識別するには、次のコマンドを実行します。<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`
+| 特定のメールボックスに適用されるセキュリティ & コンプライアンスセンターの Office 365 アイテム保持ポリシー  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> または  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |**メールボックスの取得**コマンドレットを実行すると、 *InPlaceHolds*プロパティには、メールボックスに適用されている Office 365 アイテム保持ポリシーの guid も含まれます。 GUID が`mbx`プレフィックスで始まっているため、アイテム保持ポリシーを識別できます。 アイテム保持ポリシーの GUID が`skp`プレフィックスで始まっている場合は、アイテム保持ポリシーが Skype for business の会話に適用されることを示すことに注意してください。  <br/> メールボックスに適用されている Office 365 アイテム保持ポリシーを識別するには、Security & コンプライアンスセンターの PowerShell で次のコマンドを実行します。 <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>このコマンドを実行する場合は、必ず、 `mbx` または  `skp` プレフィックスを削除してください。  <br/> |
+|セキュリティ & コンプライアンスセンターの組織全体にわたる Office 365 のアイテム保持ポリシー  <br/> |値なし  <br/> または  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696`(メールボックスが組織全体のポリシーから除外されていることを示します)  <br/> |InPlaceHolds コマンドレットの実行時に** プロパティが空**** の場合でも、メールボックスに適用されている組織全体の Office 365 保持ポリシーが1つ以上存在する可能性があります。  <br/> このことを確認するには、 `Get-OrganizationConfig | FL InPlaceHolds` Exchange Online PowerShell でコマンドを実行して、組織全体の Office 365 アイテム保持ポリシーの guid の一覧を取得します。 Exchange メールボックスに適用される組織全体のアイテム保持ポリシーの GUID `mbx`は、接頭辞で始まります。例`mbxa3056bb15562480fadb46ce523ff7b02`を示します。  <br/> メールボックスに適用されている組織全体の Office 365 アイテム保持ポリシーを識別するには、Security & コンプライアンスセンターの PowerShell で次のコマンドを実行します。 <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>メールボックスが組織全体の Office 365 アイテム保持ポリシーから除外されている場合は、**メールボックス取得**コマンドレットを実行すると、ユーザーのメールボックスの*InPlaceHolds*プロパティにアイテム保持ポリシーの GUID が表示されることに注意してください。プレフィックス`-mbx`によって識別されます。例えば`-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
+|セキュリティ & コンプライアンスセンターにおける電子情報開示ケースホールド  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |*InPlaceHolds*プロパティには、メールボックスに配置される可能性のある Security _AMP_ コンプライアンスセンターの電子情報開示ケースに関連付けられている保留の GUID も含まれています。 GUID が  `UniH` プレフィックスで始まっているため、これは電子情報開示ケース ホールドであることがわかります。  <br/> Security & コンプライアンスセンター `Get-CaseHoldPolicy` PowerShell のコマンドレットを使用して、メールボックスの保留リストに関連付けられている電子情報開示ケースに関する情報を取得できます。 たとえば、コマンド`Get-CaseHoldPolicy <hold GUID without prefix> | FL Name`を実行して、メールボックスにあるケースホールドの名前を表示できます。 Be sure to remove the  `UniH` プレフィックスを削除してください。  <br/><br/> メールボックスの保留リストが関連付けられている電子情報開示ケースを識別するには、次のコマンドを実行します。<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`
 
 

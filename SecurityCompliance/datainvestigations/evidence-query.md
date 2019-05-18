@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 845cc17a85109575c3957044dc1d3688b3e2bc5a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d2c4fa5a4fbb46508962e1c6237c17b95b071b0c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258135"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150839"
 ---
 # <a name="query-the-data-in-evidence"></a>証拠でデータを照会する
 
@@ -31,7 +31,7 @@ ms.locfileid: "32258135"
 
 ## <a name="conditions"></a>条件
 
-さまざまな条件を使用してクエリを定義できます。 これは、送信された日付や参加者のようなメタデータから、包括的な種類や主要なテーマなどの分析結果への範囲です。 分析結果を条件として使用する前に、まず証拠を分析する必要があります。 条件は、OR'ed または and'ed にすることができます。コネクタを混在させるために、条件グループを使用できます。
+さまざまな条件を使用してクエリを定義できます。 これは、送信された日付や参加者のようなメタデータから、包括的な種類や主要なテーマなどの分析結果への範囲です。 分析結果を条件として使用する前に、まず証拠を分析する必要があります。 条件は、OR'ed または AND'ed にすることができます。コネクタを混在させるために、条件グループを使用できます。
 
 ## <a name="filters"></a>フィルター
 フィルターは、クエリ内のクエリとして動作します。検索条件では、過度に条件を絞り込むことができます。

@@ -1,10 +1,10 @@
 ---
-title: Advanced eDiscovery でのダウンロードの制限 (プレビュー)
+title: 高度な電子情報開示でのダウンロードの制限
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 874a44557e4c63dc46afcebb383b6c3974291f16
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ec50b20fd8029700f436e83465f529198b56257e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242633"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151909"
 ---
-# <a name="download-limits-in-advanced-ediscovery-preview"></a>Advanced eDiscovery でのダウンロードの制限 (プレビュー)
+# <a name="download-limits-in-advanced-ediscovery"></a>高度な電子情報開示でのダウンロードの制限
 
 コンテンツ準備中です。

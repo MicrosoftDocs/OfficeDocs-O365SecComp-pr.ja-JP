@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fa83a90448250a91d6c2ccbf43588ee18e00619c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0b1b20a8b41803a945bc9f5c39cd0618c420b0c0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241264"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151739"
 ---
 # <a name="manage-hold-notifications"></a>保留通知を管理する
 
-法的情報保持通知ワークフローを開始したら、Advanced eDiscovery (プレビュー) を活用して、コミュニケーションの状態を追跡できます。 [通信] タブでは、アドバンスト eDiscovery (プレビュー) ケース内のすべての保留通知が表示されます。 ここでは、割り当てられている、または通知を確認した保管担当者の数などの詳細を確認できます。
+法的情報開示通知ワークフローを開始したら、Advanced eDiscovery を活用して、コミュニケーションの状態を追跡できます。 [通信] タブでは、高度な電子情報開示ケース内のすべての保留通知が対象になります。 ここでは、割り当てられている、または通知を確認した保管担当者の数などの詳細を確認できます。
 
 ## <a name="view-communication-details"></a>コミュニケーションの詳細を表示する
 
@@ -42,7 +42,7 @@ ms.locfileid: "32241264"
 場合によっては、保管担当者が電子メールを毎日の作業で追跡できなくなります。 または、長期間訴訟が発生した場合は、保管担当者が到着して、通知を再送信するよう求められることがあります。 法的情報保持通知に関するワークフローを管理する際には、「ユーザーのメールボックスの先頭」に戻るために通知を再送信する必要がある場合があります。
 
 保留通知は、次の方法で保管担当者に再送信できます。
-1. **セキュリティ/コンプライアンス > Advanced eDiscovery (プレビュー)** 内のケースに移動します。
+1. **セキュリティ/コンプライアンス _GT_ Advanced eDiscovery**でケースに移動します。
 2. ケースを選択したら、[**通信**] タブに移動します。
 3. 法的情報保留通知を保管担当者に再送信するには、通信を選択し、[**再送信**] オプションをクリックします。
 4. 保管担当者が保留通知をまだ確認していない場合は、アラームとエスカレーションフローが再起動されます。 保管担当者が既に保留通知を受信確認している場合、保管担当者は最初のホールド通知のコピーを受け取ります。
@@ -58,7 +58,7 @@ ms.locfileid: "32241264"
 
 最初の保留通知の内容を更新するには、次のようにします。
 
-1. **セキュリティ/コンプライアンス > Advanced eDiscovery (プレビュー)** 内のケースに移動します。
+1. **セキュリティ/コンプライアンス _GT_ Advanced eDiscovery**でケースに移動します。
 2. ケースを選択したら、[**通信**] タブに移動します。
 3. 更新するホールド通知を選択し、[**編集**] をクリックします。
 4. 編集ワークフローで、[**ポータルコンテンツを定義**する] を選択し、通知の内容を更新します。 

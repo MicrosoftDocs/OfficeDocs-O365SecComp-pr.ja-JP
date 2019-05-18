@@ -3,17 +3,17 @@ title: Exchange Server の GDPR
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: オンプレミスの Exchange Server で GDPR の要件に対応する方法について説明します。
-ms.openlocfilehash: 8c66787c7da8eef9a580361848499f9f336b49b9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6f353f6902458671f0bd21d44035753299023e30
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255625"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152749"
 ---
 # <a name="gdpr-for-exchange-server"></a>Exchange Server の GDPR
 

@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 7/2/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,23 +14,23 @@ search.appverid:
 ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
 - M365-security-compliance
-description: OneDrive for business および SharePoint Online におけるデータセキュリティの暗号化の基本要素について説明します。
-ms.openlocfilehash: 84d44ceec96545388d0e4f77f0a84e95ff07db59
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: OneDrive for Business および SharePoint Online におけるデータセキュリティの暗号化の基本要素について説明します。
+ms.openlocfilehash: c8ac6f0a4364117c475637e0288d7a1a790d57c2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258155"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151099"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>OneDrive for Business および SharePoint Online におけるデータ暗号化
 
-OneDrive for business および SharePoint Online におけるデータセキュリティの暗号化の基本要素について説明します。
+OneDrive for Business および SharePoint Online におけるデータセキュリティの暗号化の基本要素について説明します。
   
 ## <a name="overview"></a>概要
 
-Office 365 は、高度なセキュリティで保護された環境で、物理データセンターのセキュリティ、ネットワークセキュリティ、アクセスセキュリティ、アプリケーションセキュリティ、およびデータセキュリティがあります。 この記事では特に、OneDrive for business および SharePoint Online のデータセキュリティの、送信中およびインプレース暗号化側に焦点を当てます。
+Office 365 は、高度なセキュリティで保護された環境で、物理データセンターのセキュリティ、ネットワークセキュリティ、アクセスセキュリティ、アプリケーションセキュリティ、およびデータセキュリティがあります。 この記事では特に、OneDrive for Business および SharePoint Online のデータセキュリティの、送信中およびインプレース暗号化側に焦点を当てます。
   
-office 365 のセキュリティの詳細については、「 [security in office 365 ホワイトペーパー](https://go.microsoft.com/fwlink/p/?LinkId=270895)」を参照してください。
+Office 365 のセキュリティの詳細については、「 [security In office 365 ホワイトペーパー](https://go.microsoft.com/fwlink/p/?LinkId=270895)」を参照してください。
   
 データの暗号化の仕組みについて、次のビデオをご覧ください。
   
@@ -38,7 +38,7 @@ office 365 のセキュリティの詳細については、「 [security in offi
   
 ## <a name="encryption-of-data-in-transit"></a>転送中データの暗号化
 
-OneDrive for business と SharePoint Online では、データを入力してデータセンターを終了する2つのシナリオがあります。
+OneDrive for Business と SharePoint Online では、データを入力してデータセンターを終了する2つのシナリオがあります。
   
 - **クライアントとサーバーとの通信**インターネット経由での OneDrive for business への通信では、SSL/TLS 接続が使用されます。 すべての SSL 接続は、2048ビットのキーを使用して確立されます。
 
@@ -48,13 +48,13 @@ OneDrive for business と SharePoint Online では、データを入力してデ
 
 保管中の暗号化には、ユーザー コンテンツの BitLocker ディスク レベル暗号化と、ファイル単位暗号化が関係しています。
   
-BitLocker は、OneDrive for business と SharePoint Online のサービス全体に展開されます。 ファイル単位の暗号化は、OneDrive for business と SharePoint Online の Office 365 マルチテナントと、マルチテナントテクノロジに基づいて構築された新しい専用環境にも含まれています。
+BitLocker は、OneDrive for business と SharePoint Online のサービス全体に展開されます。 ファイル単位の暗号化は、OneDrive for Business と SharePoint Online の Office 365 マルチテナントと、マルチテナントテクノロジに基づいて構築された新しい専用環境にも含まれています。
   
 BitLocker 暗号化はディスク上のすべてのデータを暗号化し、ファイル単位暗号化の場合にはファイルごとに固有の暗号化キーを含めてさらに細かく暗号化を行えます。 つまり、各ファイルを更新するたびに独自の暗号化キーを使用して暗号化されます。 保存される前に、暗号化されたコンテンツに対するキーがコンテンツとは物理的に離れた場所に保存されます。 この暗号化の各ステップでは、256 ビット キーによる高度暗号化標準 (Advanced Encryption Standard: AES) が使用され、Federal Information Processing Standard (FIPS) 140-2 に準拠しています。 暗号化されたコンテンツは、データセンターにある多数のコンテナーに配布され、各コンテナーでは固有の資格情報が使用されます。 これらの資格情報はコンテンツまたはコンテンツ キーとは物理的に別の場所に格納されます。
   
-fips 140-2 準拠の詳細については、「 [fips 140-2 コンプライアンス](https://go.microsoft.com/fwlink/?LinkId=517625)」を参照してください。
+FIPS 140-2 準拠の詳細については、「 [fips 140-2 コンプライアンス](https://go.microsoft.com/fwlink/?LinkId=517625)」を参照してください。
   
-ファイル レベルでの保管中の暗号化では Blob ストレージを活用し、事実上無制限のストレージ拡張を行ったり、前例のないレベルの保護機能を提供したりできます。 OneDrive for business と SharePoint Online のすべてのお客様のコンテンツは blob ストレージに移行されます。 データのセキュリティ保護の方法は次のとおりです。
+ファイル レベルでの保管中の暗号化では Blob ストレージを活用し、事実上無制限のストレージ拡張を行ったり、前例のないレベルの保護機能を提供したりできます。 OneDrive for Business と SharePoint Online のすべてのお客様のコンテンツは blob ストレージに移行されます。 データのセキュリティ保護の方法は次のとおりです。
   
 1. すべてのコンテンツが暗号化されます。その場合、複数のキーを使用して暗号化されることもあります。暗号化されたデータはデータセンターで分散されます。格納される各ファイルはサイズに応じて 1 つ以上のチャンクに分けられます。その後、各チャンクは固有のキーを使用して暗号化されます。更新作業も同様に処理されます。つまり、ユーザーによって送信された一連の変更または差分がチャンクに分けられ、それぞれが独自のキーで暗号化されます。
 

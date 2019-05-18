@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、Microsoft 365 の新しいデータ調査 (プレビュー) ツールについて説明します。
-ms.openlocfilehash: 648f223c136007e88a3beb6b58e692b758b5d27f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 200b1c6c08d0fdb1c4af5da59fa75836b4b1fab3
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258985"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150899"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 のデータ調査用リリースノート (プレビュー)
 
-Microsoft 365 の新しいデータ調査 (プレビュー) ツールを使用して、データ流出インシデントや内部調査などのデータ関連インシデントのトリアージ、調査、および修復を行うことができます。 データ調査のパブリックプレビューを使用すると、今後予定されている機能と更新プログラムに早期にアクセスできます。 最新の機能にいち早くアクセスするには、Security & コンプライアンスセンターでデータの調査 (プレビュー) に新しい調査を作成します。 その方法については、「 [Manage a data 流出 incident in Microsoft 365](manage-data-spillage-incidents.md)」を参照してください。
+Microsoft 365 の新しいデータ調査 (プレビュー) ツールを使用して、データ流出インシデントや内部調査などのデータ関連インシデントのトリアージ、調査、および修復を行うことができます。 データ調査のパブリックプレビューを使用すると、今後予定されている機能と更新プログラムに早期にアクセスできます。 最新の機能にいち早くアクセスするには、Security & コンプライアンスセンターでデータの調査 (プレビュー) に新しい調査を作成します。 その方法については、「 [Manage a data 流出 incident In Microsoft 365](manage-data-spillage-incidents.md)」を参照してください。
 
 ## <a name="whats-new"></a>新機能 
 

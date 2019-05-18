@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 2/13/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: '共有は、SharePoint Online と OneDrive for business の主要なアクティビティです。 管理者は、Office 365 監査ログで共有監査を使用して、組織での共有の使用状況を確認できるようになりました。 '
-ms.openlocfilehash: 08b511acdf74edac5b2d595d1b60bdd84d630918
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a363ebe2e8b1697521ab5f84df0b3fc221a2abcd
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263411"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157899"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>共有を監査して外部ユーザーと共有されているリソースを見つける
 
@@ -28,11 +28,11 @@ ms.locfileid: "32263411"
   
 ## <a name="the-sharepoint-sharing-schema"></a>SharePoint 共有スキーマ
 
-共有イベント (共有ポリシーと共有リンクイベントを除く) は、1つのユーザーが別のユーザーに対して何らかの影響を与えるアクションを実行しているという主な方法で、ファイルとフォルダーに関連するイベントとは異なります。 たとえば、user A はユーザー B にファイルへのアクセス権を与えます。 この例では、ユーザー A は、動作している*ユーザー*で、ユーザー B は*対象ユーザー*です。 SharePoint ファイルスキーマでは、動作しているユーザーの操作だけがファイル自体に影響します。 ユーザーがファイルを開くと、 **fileaccessed**イベントに必要な情報は、動作しているユーザーのみになります。 この違いに対処するために、共有イベントに関する詳細情報を収集する、 *SharePoint 共有スキーマ*と呼ばれる別のスキーマがあります。 これにより、管理者はリソースを共有しているユーザーとリソースを共有していたユーザーについて、より洞察を得ることができます。 
+共有イベント (共有ポリシーと共有リンクイベントを除く) は、1つのユーザーが別のユーザーに対して何らかの影響を与えるアクションを実行しているという主な方法で、ファイルとフォルダーに関連するイベントとは異なります。 たとえば、User A はユーザー B にファイルへのアクセス権を与えます。 この例では、ユーザー A は、動作している*ユーザー*で、ユーザー B は*対象ユーザー*です。 SharePoint ファイルスキーマでは、動作しているユーザーの操作だけがファイル自体に影響します。 ユーザーがファイルを開くと、 **Fileaccessed**イベントに必要な情報は、動作しているユーザーのみになります。 この違いに対処するために、共有イベントに関する詳細情報を収集する、 *SharePoint 共有スキーマ*と呼ばれる別のスキーマがあります。 これにより、管理者はリソースを共有しているユーザーとリソースを共有していたユーザーについて、より洞察を得ることができます。 
   
 共有スキーマは、イベントの共有に関連する2つの追加フィールドを監査ログに提供します。 
   
-- **targetuserorgroupname** -リソースが共有されていたターゲットユーザーまたはグループの UPN または名前を格納します (前の例では user B)。 
+- **Targetuserorgroupname** -リソースが共有されていたターゲットユーザーまたはグループの UPN または名前を格納します (前の例では user B)。 
     
 - **TargetUserOrGroupType** -対象のユーザーまたはグループが、メンバー、ゲスト、グループ、またはパートナーであるかどうかを識別します。 
     
@@ -42,17 +42,17 @@ ms.locfileid: "32263411"
 
 ## <a name="the-sharepoint-sharing-model-and-sharing-events"></a>SharePoint 共有モデルと共有イベント
 
-共有は、実際には、 **sharingset**、 **SharingInvitationCreated**、および**SharingInvitaitonAccepted**の3つの個別のイベントによって定義されます。 Office 365 監査ログに共有イベントを記録する方法については、次のワークフローを参照してください。 
+共有は、実際には、 **Sharingset**、 **SharingInvitationCreated**、および**SharingInvitaitonAccepted**の3つの個別のイベントによって定義されます。 Office 365 監査ログに共有イベントを記録する方法については、次のワークフローを参照してください。 
   
 ![共有の監査のしくみを示すフローチャート](media/d83dd40f-919b-484f-bfd6-5dc8de31bff6.png)
   
-ユーザー (動作しているユーザー) が別のユーザー (ターゲットユーザー) とリソースを共有しようとしている場合、SharePoint (または OneDrive for business) は最初に、対象ユーザーの電子メールアドレスが組織のディレクトリ内のユーザーアカウントに関連付けられているかどうかを確認します。 ターゲットユーザーが組織のディレクトリにある場合、SharePoint は次の処理を行います。
+ユーザー (動作しているユーザー) が別のユーザー (ターゲットユーザー) とリソースを共有しようとしている場合、SharePoint (または OneDrive for Business) は最初に、対象ユーザーの電子メールアドレスが組織のディレクトリ内のユーザーアカウントに関連付けられているかどうかを確認します。 ターゲットユーザーが組織のディレクトリにある場合、SharePoint は次の処理を行います。
   
 -  リソースにアクセスするためのターゲットユーザーのアクセス許可を即時に割り当てます。 
     
 - ターゲットユーザーの電子メールアドレスに共有通知を送信します。
     
-- **sharingset**イベントをログに記録します。 
+- **Sharingset**イベントをログに記録します。 
     
  ターゲットユーザーのユーザーアカウントが組織のディレクトリにない場合、SharePoint は次の処理を行います。 
   
@@ -73,7 +73,7 @@ ms.locfileid: "32263411"
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>手順 1: 共有イベントを検索し、結果を CSV ファイルにエクスポートする
 
-最初の手順として、Office 365 監査ログで共有イベントを検索します。 監査ログの検索に関する詳細 (必要なアクセス許可を含む) については、「 [Security & コンプライアンスセンターでの監査ログの検索](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
+最初の手順として、Office 365 監査ログで共有イベントを検索します。 監査ログの検索に関する詳細 (必要なアクセス許可を含む) については、「 [Security _AMP_ コンプライアンスセンターでの監査ログの検索](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
   
 1. [https://protection.office.com](https://protection.office.com) に移動します。
     
@@ -101,7 +101,7 @@ ms.locfileid: "32263411"
   
 ### <a name="step-2-filter-the-csv-file-for-resources-shared-with-external-users"></a>手順 2: 外部ユーザーと共有しているリソースの CSV ファイルをフィルター処理する
 
-次の手順では、 **sharingset**イベントと**SharingInvitationCreated**イベントに対して CSV をフィルター処理し、 **TargetUserOrGroupType**プロパティが**Guest**であるイベントを表示します。 これを行うには、Excel の Power Query 機能を使用します。 Excel 2016 では、次の手順が実行されます。 
+次の手順では、 **Sharingset**イベントと**SharingInvitationCreated**イベントに対して CSV をフィルター処理し、 **TargetUserOrGroupType**プロパティが**Guest**であるイベントを表示します。 これを行うには、Excel の Power Query 機能を使用します。 Excel 2016 では、次の手順が実行されます。 
   
 1. Excel 2016 で、空のブックを開きます。
     
@@ -121,31 +121,31 @@ ms.locfileid: "32263411"
   
 6. [**区切り記号で分割**した列] ウィンドウで、次の操作を行います。 
     
-      - [ **select or enter delimiter**] で、[**コンマ**] を選択します。
+      - [ **Select or enter delimiter**] で、[**コンマ**] を選択します。
     
       - [**分割**] で、**区切り記号が出現するたびに**[] を選択します。
     
 7. **[OK]** をクリックします。
     
-    **詳細**列は複数の列に分割されます。 各新しい列には、詳細について説明します。 **1**、 **2**、 **3**というように指定します。 詳細については、各セルの値を確認**してください。 n**列の先頭には、プロパティの名前が付きます。たとえば、 **operation: sharingset**、 **operation: SharingInvitationAccepted**、 **operation: SharingInvitationCreated**。
+    **詳細**列は複数の列に分割されます。 各新しい列には、詳細について説明します。 **1**、 **2**、 **3**というように指定します。 詳細については、各セルの値を確認**してください。 n**列の先頭には、プロパティの名前が付きます。たとえば、 **operation: SharingSet**、 **operation: SharingInvitationAccepted**、 **operation: SharingInvitationCreated**。
     
     ![詳細列は、プロパティごとに1つずつ、複数の列に分割されます。](media/4b104ead-0313-4bd4-b2a9-f143ccb378ac.png)
   
 8. [**ファイル**] タブの [**読み込み&amp;を閉じる**] をクリックして、クエリエディターを閉じ、Excel ブックでファイルを開きます。 
     
-    次の手順では、 **sharingset**および**SharingInvitationCreated**イベントのみを表示するようにファイルをフィルター処理します。 
+    次の手順では、 **Sharingset**および**SharingInvitationCreated**イベントのみを表示するようにファイルをフィルター処理します。 
     
 9. [**ホーム**] タブに移動して、[**アクション**] 列を選択します。 
     
-10. [**並べ替え&amp;フィルター** ] ドロップダウンリストで、すべての選択を解除し、[ **sharingset** ] と [ **SharingInvitationCreated**] を選択して、[ **OK]** をクリックします。
+10. [**並べ替え&amp;フィルター** ] ドロップダウンリストで、すべての選択を解除し、[ **Sharingset** ] と [ **SharingInvitationCreated**] を選択して、[ **OK]** をクリックします。
     
-    **sharingset**および**SharingInvitationCreated**イベントの行が Excel に表示されます。 
+    **Sharingset**および**SharingInvitationCreated**イベントの行が Excel に表示されます。 
     
 11. [ **Detail** ] (または [ **TargetUserOrGroupType** ] プロパティを含む列) という名前の列に移動し、それを選択します。 
     
 12. [**並べ替え&amp;フィルター** ] ドロップダウンリストで、すべての選択を解除し、[ **TargetUserOrGroupType: Guest**] を選択して、[ **OK**] をクリックします。
     
-    ここでは、外部ユーザーが**TargetUserOrGroupType: Guest**という値で識別されるため、 **SharingInvitationCreated**および**sharingset**イベントの行と、ターゲットユーザーが組織外にある場所に表示されます。 
+    ここでは、外部ユーザーが**TargetUserOrGroupType: Guest**という値で識別されるため、 **SharingInvitationCreated**および**SHARINGSET**イベントの行と、ターゲットユーザーが組織外にある場所に表示されます。 
     
 次の表に、指定された日付範囲内のゲストユーザーとリソースを共有している、組織内のすべてのユーザーを示します。
   

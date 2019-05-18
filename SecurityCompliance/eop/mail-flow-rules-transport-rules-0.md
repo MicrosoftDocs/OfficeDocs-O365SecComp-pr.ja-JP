@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 4/29/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: メールフロールール (トランスポートルール) を使用して、Office 365 組織を通過するメッセージを識別し、処理を行うことができます。
-ms.openlocfilehash: 379886788a4fa411d70830c702dd8850e8118b32
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 73f5668be76a20af7474f6de06d50e278057fd06
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256633"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153149"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection のメール フロー ルール (トランスポート ルール)
 
@@ -53,13 +53,13 @@ ms.locfileid: "32256633"
   
 - **[条件]** アクションを適用するメッセージを特定します。一部の条件は、メッセージ ヘッダー フィールド (例、宛先、差出人、または CC フィールド) を確認します。その他の条件はメッセージ プロパティ (例、メッセージの件名、本文、添付ファイル、メッセージ サイズ、またはメッセージ分類) を確認します。ほとんどの条件は、比較演算子 (例、次と一致する、次と一致しない、または次が含まれる) と一致する値を指定する必要があります。条件または例外が 1 つもない場合、ルールはすべてのメッセージに適用されます。 
     
-    exchange online Protection におけるメールフロールールの条件の詳細については、「 [exchange online でのメールフロールールの条件と例外 (述語)](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)」を参照してください。
+    Exchange Online Protection におけるメールフロールールの条件の詳細については、「 [Exchange online でのメールフロールールの条件と例外 (述語)](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)」を参照してください。
     
 - **[例外]** アクションが適用されないメッセージを任意で特定します。条件で使用可能なメッセージ識別子と同じものが、例外でも使用可能です。例外は条件より優先され、メッセージが構成されているすべての条件に一致していても、そのメッセージにルール アクションが適用されないようにします。 
     
 - **[アクション]** ルールの条件に一致し、いずれの例外にも一致しないメッセージに対して行うことを指定します。使用できるアクションには、メッセージの拒否、削除、またはリダイレクト、受信者の追加、メッセージの件名へのプレフィックスの追加、またはメッセージ本文への免責事項の挿入など、多数のものがあります。 
     
-    exchange online protection で使用可能なメールフロールールの処理の詳細については、「 [exchange online protection のメールフロールールのアクション](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx)」を参照してください。
+    Exchange Online Protection で使用可能なメールフロールールの処理の詳細については、「 [Exchange Online protection のメールフロールールのアクション](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx)」を参照してください。
     
 - **[プロパティ]** その他のルールの設定で、条件、例外、またはアクションではないものを指定します。たとえば、いつルールを適用するか、ルールを強制するか、あるいはテストするかどうか、およびルールを有効化する期間などです。 
     
@@ -87,7 +87,7 @@ ms.locfileid: "32256633"
 |**[モード]** <br/> | _Mode_ <br/> |ルールにすぐにメッセージの処理を開始させるか、あるいはメッセージの配信に影響を与えずにルールをテストするかどうかを指定することができます (データ紛失防止、DLP ポリシー ヒントの有無を問わず)。  <br/> ポリシー ヒントは、メッセージを作成しているユーザーにそれがポリシー違反の可能性があることを通知する短いメモを、Outlook または Web 上の Outlook で提示します。詳細については、「 **Policy Tips** 」を参照してください。  <br/> モードの詳細については、「 **Test a mail flow rule** 」を参照してください。  <br/> |
 |**次の日付でこのルールを有効にする** <br/> **次の日付に、このルールを無効にする** <br/> | _ActivationDate_ <br/>  _ExpiryDate_ <br/> |ルールが有効化される日付の範囲を指定します。  <br/> |
 |選択されているかどうかに関わらず、チェック ボックスを **オン** にします。  <br/> |新しいルール: _New-TransportRule_ コマンドレットの  **Enabled** パラメーター。  <br/> 既存のルール: **Enable-TransportRule** または **Disable-TransportRule** コマンドレットを使用します。  <br/> 値はルールの **State** プロパティに表示されます。  <br/> |無効なルールを作成して、それをテストする準備ができたときに有効にすることができます。または、設定を保持するために削除することなくルールを無効にすることができます  <br/> |
-|**[ルール処理が完了しない場合メッセージを優先する]** <br/> | _ruleerroraction_ <br/> |ルール処理が完了しない場合にメッセージをどのように扱うかを指定することができます。既定値ではルールは無視されますが、処理のためにメッセージを再送信することを選択できます。  <br/> |
+|**[ルール処理が完了しない場合メッセージを優先する]** <br/> | _RuleErrorAction_ <br/> |ルール処理が完了しない場合にメッセージをどのように扱うかを指定することができます。既定値ではルールは無視されますが、処理のためにメッセージを再送信することを選択できます。  <br/> |
 |**メッセージの送信者アドレスを一致** <br/> | _SenderAddressLocation_ <br/> |ルールが送信者のメール アドレスを確認する例外や条件を使用する場合、メッセージ ヘッダー、メッセージのエンベロープ、またはその両方の値を検索できます。  <br/> |
 |**[ルールの処理を中止する]** <br/> | _SenderAddressLocation_ <br/> |これはルールのアクションですが、EAC でのプロパティのように見えます。ルールがメッセージを処理した後に、追加のルールが適用されないように選択できます。  <br/> |
 |**コメント** <br/> | _Comments_ <br/> |ルールに関する説明的なコメントを入力することができます。  <br/> |

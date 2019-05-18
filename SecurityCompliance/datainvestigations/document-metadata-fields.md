@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c4a7c479d730d5256efabe9120960b1590094779
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 41e551850b47bec88f6dd8353c6db02048255e74
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258125"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150909"
 ---
 # <a name="document-metadata-fields-in-data-investigations-preview"></a>データ調査のドキュメントメタデータフィールド (プレビュー)
 
@@ -40,7 +40,7 @@ ms.locfileid: "32258125"
 |日付                       | はい (日付)                                      |   はい (Date UTC)        | はい         |
 |Deduped 複合パス      |                                                 |                         | はい         |
 |Deduped 保管担当者         |                                                 |                         | はい         |
-|Deduped ファイル id           |                                                 |                         | はい         |
+|Deduped ファイル Id           |                                                 |                         | はい         |
 |Doc 作成者                | はい (作成者) *                                   |    はい (作成者)         | はい         |
 |ドキュメントコメント               | はい (コメント)                                  |                         | はい         |
 |Doc company                |                                                 |                         | はい         |
@@ -74,17 +74,17 @@ ms.locfileid: "32258125"
 |電子メールの送信者               | はい (送信者)                                    |   はい (送信者)          | はい         |
 |電子メールの送信元ドメイン        | はい (senderDomain)                              |                         | はい         |
 |メールの秘密度          |                                                 |                         | はい         |
-|メールセット                  | はい (emailsetid)                                |   はい (emailsetid)      | はい         |
+|メールセット                  | はい (emailSetId)                                |   はい (EmailSetID)      | はい         |
 |電子メールの件名              | はい (件名)                                   |   はい (件名/タイトル)   | はい         |
 |電子メールスレッド               |                                                 |                         | はい         |
 |メールを                   | はい (to)                                        |                         | はい         |
-|エラー コード                 | はい (processingstatus)                          |                         | はい         |
+|エラー コード                 | はい (processingStatus)                          |                         | はい         |
 |ネイティブパスをエクスポートする         |                                                 |                         | はい         |
 |抽出された文字列の長さ      |                                                 |                         | はい         |
 |抽出されたテキストのパス        |                                                 |                         | はい         |
 |ファミリ ID                  | はい (familyId)                                  |   はい (FamilyId)        | はい         |
 |ファミリーサイズ                |                                                 |                         | はい         |
-|File クラス                 | はい (fileclass)                                 |   はい (File クラス)      | はい         |
+|File クラス                 | はい (fileClass)                                 |   はい (File クラス)      | はい         |
 |ファイル ID                    | はい (fileId)                                    |   はい (Id)              | はい         |
 |テキストあり                   |                                                 |                         | はい         |
 |包括型             | はい (inclusiveType)                             |   はい (包含型)  | はい         |
@@ -92,17 +92,17 @@ ms.locfileid: "32258125"
 |入力ファイル ID              |                                                 |                         | はい         |
 |入力パス                 |                                                 |                         | はい         |
 |インターネット メッセージ ID        |                                                 |                         | はい         |
-|担当者          | はい (markasrepresentative)                      |                         | はい         |
+|担当者          | はい (markAsRepresentative)                      |                         | はい         |
 |アイテム クラス                 |                                                 |                         | はい         |
 |ロード ID                    | はい (loadId)                                    |                         | はい         |
 |場所の名前              |                                                 |                         | はい         |
-|ピボットとしてマーク            | はい (markaspivot)                               |   はい (ピボットとしてマークされている) | はい         |
-|メッセージの種類               | はい (messagekind)                               |                         | はい         |
+|ピボットとしてマーク            | はい (markAsPivot)                               |   はい (ピボットとしてマークされている) | はい         |
+|メッセージの種類               | はい (messageKind)                               |                         | はい         |
 |ネイティブの拡張子           |                                                 |                         | はい         |
 |ネイティブファイル名           |                                                 |    はい (ファイル名)      | はい         |
 |ネイティブ MD5                 |                                                 |                         | はい         |
 |ネイティブ SHA 256             |                                                 |                         | はい         |
-|ネイティブサイズ                | はい (サイズ)                                      |   はい (nativesize)     | はい         |
+|ネイティブサイズ                | はい (サイズ)                                      |   はい (NativeSize)     | はい         |
 |ネイティブ型                | Yes (fileType)                                  |   はい (ファイルの種類)       | はい         |
 |ND ET attach を除く     |                                                 |                         | はい         |
 |ND ET sort を含む、添付     |                                                 |                         | はい         |

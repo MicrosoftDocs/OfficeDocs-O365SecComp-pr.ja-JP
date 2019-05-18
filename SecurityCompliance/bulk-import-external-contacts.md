@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: End User
+audience: End User
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,18 +13,18 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: 管理者が Exchange Online PowerShell と CSV ファイルを使用して外部連絡先をグローバルアドレス一覧に一括インポートする方法について説明します。
-ms.openlocfilehash: 2948332d7cdf2d1364b2b563f94efdb3e8d0672d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 08fe7666f03c7fe60555133292be9e27a9ffa413
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32244507"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152209"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>外部連絡先を Exchange Online に一括インポートする
 
 **この記事は、管理者を対象としています。連絡先を自分のメールボックスにインポートしようとしていますか?「 [Outlook に連絡先をインポートする」を](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)参照してください。**
    
-会社は、Exchange Online の共有アドレス帳 (グローバルアドレス一覧とも呼ばれます) に含める必要のある、多数の既存のビジネス用連絡先を所有していますか。 外部の連絡先を、社内のユーザーと同様に、配布グループのメンバーとして追加しますか。 その場合は、exchange online の PowerShell と CSV (コンマ区切り値) ファイルを使用して、外部連絡先を exchange online に一括インポートすることができます。 次の3つの手順からなるプロセスがあります。
+会社は、Exchange Online の共有アドレス帳 (グローバルアドレス一覧とも呼ばれます) に含める必要のある、多数の既存のビジネス用連絡先を所有していますか。 外部の連絡先を、社内のユーザーと同様に、配布グループのメンバーとして追加しますか。 その場合は、Exchange Online の PowerShell と CSV (コンマ区切り値) ファイルを使用して、外部連絡先を Exchange Online に一括インポートすることができます。 次の3つの手順からなるプロセスがあります。
   
 [手順 1: 外部連絡先に関する情報を含む CSV ファイルを作成する](#step-1-create-a-csv-file-that-contains-information-about-the-external-contacts)
 
@@ -42,10 +42,10 @@ ms.locfileid: "32244507"
 
 最初の手順として、Exchange Online にインポートする各外部連絡先に関する情報を含む CSV ファイルを作成します。 
   
-1. 次のテキストをメモ帳のテキストファイルにコピーして、ファイル名サフィックス .csv を使用して、そのファイルを csv ファイルとしてデスクトップに保存します。たとえば、externalcontacts。
+1. 次のテキストをメモ帳のテキストファイルにコピーして、ファイル名サフィックス .csv を使用して、そのファイルを CSV ファイルとしてデスクトップに保存します。たとえば、ExternalContacts。
     
     > [!TIP]
-    > 言語に特殊文字 ( **å**、 **ä**、 **ö**など) が含まれている場合は、メモ帳でファイルを保存するときに、CSV ファイルを utf-8 またはその他の Unicode エンコードで保存します。 
+    > 言語に特殊文字 ( **å**、 **ä**、 **ö**など) が含まれている場合は、メモ帳でファイルを保存するときに、CSV ファイルを Utf-8 またはその他の Unicode エンコードで保存します。 
   
     ```
     ExternalEmailAddress,Name,FirstName,LastName,StreetAddress,City,StateorProvince,PostalCode,Phone,MobilePhone,Pager,HomePhone,Company,Title,OtherTelephone,Department,CountryOrRegion,Fax,Initials,Notes,Office,Manager
@@ -58,16 +58,16 @@ ms.locfileid: "32244507"
     > [!NOTE]
     > このテキストには、サンプルデータが含まれています。これは削除できます。 ただし、最初の (ヘッダー) 行を削除または変更しないでください。 これには、外部連絡先のすべてのプロパティが含まれています。 
   
-2. csv ファイルを編集するには、excel を使用する方が簡単なため、Microsoft excel で csv ファイルを開いて編集してください。
+2. Csv ファイルを編集するには、Excel を使用する方が簡単なため、Microsoft Excel で CSV ファイルを開いて編集してください。
     
 3. Exchange Online にインポートする連絡先ごとに行を作成します。 可能な限り多くのセルにデータを設定します。 この情報は、連絡先ごとに共有アドレス帳に表示されます。 
     
     > [!IMPORTANT]
-    >  外部連絡先を作成するには、次のプロパティ (見出し行の最初の4つの項目) が必要です。 **ExternalEmailAddress**、 **Name**、 **FirstName**、 **LastName**という CSV ファイルに設定する必要があります。 手順2で実行した PowerShell コマンドは、これらのプロパティの値を使用して連絡先を作成します。 
+    >  外部連絡先を作成するには、次のプロパティ (見出し行の最初の4つの項目) が必要です。 **ExternalEmailAddress**、 **Name**、 **FIRSTNAME**、 **LastName**という CSV ファイルに設定する必要があります。 手順2で実行した PowerShell コマンドは、これらのプロパティの値を使用して連絡先を作成します。 
 
 ## <a name="step-2-create-the-external-contacts-with-powershell"></a>手順 2: PowerShell を使用して外部連絡先を作成する
 
-次の手順では、手順1および PowerShell で作成した csv ファイルを使用して、csv ファイルに記載されている外部連絡先を Exchange Online に一括インポートします。 
+次の手順では、手順1および PowerShell で作成した CSV ファイルを使用して、CSV ファイルに記載されている外部連絡先を Exchange Online に一括インポートします。 
   
 1.  PowerShell を Exchange Online 組織に接続します。 詳細な手順については、「 [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?LinkId=396554)」を参照してください。 Exchange Online の PowerShell に接続するときは、必ず Office 365 のグローバル管理者アカウントのユーザー名とパスワードを使用してください。 
     
@@ -88,7 +88,7 @@ ms.locfileid: "32244507"
   
 5. 必要に応じて**** ![、[最新](media/O365-MDM-Policy-RefreshIcon.gif)の情報に更新] アイコンをクリックしてリストを更新し、インポートされた外部連絡先を表示します。 
     
-    インポートされた連絡先は、outlook および web 上の outlook の共有アドレス帳に表示されます。
+    インポートされた連絡先は、Outlook および web 上の Outlook の共有アドレス帳に表示されます。
     
     > [!NOTE]
     > [**ユーザー** \>の**連絡先**] にアクセスして、Microsoft 365 管理センターで連絡先を表示することもできます。 
@@ -123,7 +123,7 @@ ms.locfileid: "32244507"
     
 2. 連絡先をクリックし、[ **** ![編集] 編集](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)アイコンをクリックして、連絡先のプロパティを表示します。 
     
-するだけです。 ユーザーは、アドレス帳 outlook および outlook on the web の連絡先とその他の情報を表示できます。
+するだけです。 ユーザーは、アドレス帳 Outlook および Outlook on the web の連絡先とその他の情報を表示できます。
   
 ## <a name="add-more-external-contacts"></a>外部連絡先を追加する
 

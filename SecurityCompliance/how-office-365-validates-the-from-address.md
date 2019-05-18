@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
 ms.date: 10/11/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,16 +15,16 @@ ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
 description: 'フィッシングを防止するために、Office 365 と Outlook.com では、From: アドレスの RFC 準拠が必要になりました。'
-ms.openlocfilehash: e540e56a7a40d13a92719865fccefefa61de47c2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2721b66b18016269c8e4cc3684814faa402cec58
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253935"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154289"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Office 365 がフィッシングを防ぐために差出人アドレスを検証する方法
 
-Office 365 と Outlook.com 電子メールアカウントには、次第に大量のフィッシング攻撃があります。 phishers を使用する方法の1つは、 [RFC 5322](https://tools.ietf.org/html/rfc5322)に準拠していない From: アドレスの値を持つメッセージを送信することです。 from: アドレスは、5322.from アドレスとも呼ばれます。 この種のフィッシングを防止するために、Office 365 と Outlook.com は、この記事で説明されているように、RFC 準拠の差出人: アドレスを含むようにサービスによって受信されるメッセージを要求します。
+Office 365 と Outlook.com 電子メールアカウントには、次第に大量のフィッシング攻撃があります。 Phishers を使用する方法の1つは、 [RFC 5322](https://tools.ietf.org/html/rfc5322)に準拠していない From: アドレスの値を持つメッセージを送信することです。 From: アドレスは、5322.from アドレスとも呼ばれます。 この種のフィッシングを防止するために、Office 365 と Outlook.com は、この記事で説明されているように、RFC 準拠の差出人: アドレスを含むようにサービスによって受信されるメッセージを要求します。
   
 > [!NOTE]
 > この記事に記載されている情報では、電子メールアドレスの一般的な形式を基本的に理解しておく必要があります。 詳細については、rfc [5322](https://tools.ietf.org/html/rfc5322) (特にセクション3.2.3、3.4、および 3.4.1)、rfc [5321](https://tools.ietf.org/html/rfc5321)、および[rfc 3696](https://tools.ietf.org/html/rfc3696)を参照してください。 この記事では、5322.from アドレスのポリシーの適用について説明します。 この記事では、5321.mailfrom の MailFrom アドレスについては説明しません。 
@@ -56,18 +56,18 @@ Office 365 は、フィッシング攻撃からの保護を強化するために
 ### <a name="all-messages-must-include-a-valid-from-address"></a>すべてのメッセージに有効な差出人: アドレスを含める必要があります。
 <a name="MustIncludeFromAddress"> </a>
 
-一部の自動メッセージには、送信時に From: アドレスは含まれません。 以前は、Office 365 または Outlook.com が From: アドレスなしでメッセージを受信すると、サービスは次の既定の from: address をメッセージに追加して、そのメッセージを配信できるようにします。
+一部の自動メッセージには、送信時に From: アドレスは含まれません。 以前は、Office 365 または Outlook.com が From: アドレスなしでメッセージを受信すると、サービスは次の既定の From: address をメッセージに追加して、そのメッセージを配信できるようにします。
   
 ```
 From: <>
 ```
 
-2017年11月9日以降、office 365 はデータセンターとメールサーバーへの変更をロールアウトします。これにより、From: アドレスのないメッセージは office 365 または Outlook.com によって受け入れられなくなり、新しいルールが適用されます。 その代わりに、Office 365 で受信したすべてのメッセージには、有効な差出人: アドレスが既に含まれている必要があります。 それ以外の場合は、Outlook.com と Office 365 の迷惑メールフォルダーまたは削除済みアイテムフォルダーにメッセージが送信されます。 
+2017年11月9日以降、Office 365 はデータセンターとメールサーバーへの変更をロールアウトします。これにより、From: アドレスのないメッセージは Office 365 または Outlook.com によって受け入れられなくなり、新しいルールが適用されます。 その代わりに、Office 365 で受信したすべてのメッセージには、有効な差出人: アドレスが既に含まれている必要があります。 それ以外の場合は、Outlook.com と Office 365 の迷惑メールフォルダーまたは削除済みアイテムフォルダーにメッセージが送信されます。 
   
 ### <a name="syntax-overview-valid-format-for-the-from-address-for-office-365"></a>構文の概要: Office 365 の From: アドレスの有効な形式
 <a name="SyntaxOverviewFromAddress"> </a>
 
-From: アドレスの値の形式は、いくつかの rfc で詳細に定義されています。 アドレス指定には、さまざまなバリエーションがあり、有効または無効と見なすことができます。 簡単にするために、Microsoft は次の形式と定義を使用することをお勧めします。
+From: アドレスの値の形式は、いくつかの Rfc で詳細に定義されています。 アドレス指定には、さまざまなバリエーションがあり、有効または無効と見なすことができます。 簡単にするために、Microsoft は次の形式と定義を使用することをお勧めします。
   
 ```
 From: "displayname " <emailaddress >
@@ -199,13 +199,13 @@ From: 表示名の値を含むアドレスでは、次のルールが適用さ�
   
 - 電子メールを受信しないメッセージの送信元のドメインを選択します。 たとえば、プライマリドメインが contoso.com の場合は、noreply.contoso.com を選択することができます。
     
-- ドメインの null MX レコードを設定します。 null MX レコードは、次の例のように1つのドットで構成されます。
+- ドメインの null MX レコードを設定します。 Null MX レコードは、次の例のように1つのドットで構成されます。
     
   ```
   noreply.contoso.com IN MX .
   ```
 
-null MX の公開の詳細については、「 [RFC 7505](https://tools.ietf.org/html/rfc7505)」を参照してください。
+Null MX の公開の詳細については、「 [RFC 7505](https://tools.ietf.org/html/rfc7505)」を参照してください。
   
 ### <a name="overriding-the-office-365-from-address-enforcement-policy"></a>Office 365 From: address 強制ポリシーの上書き
 <a name="Override"> </a>
@@ -225,7 +225,7 @@ Office 365 で送信する送信メールに対してこのポリシーを上書
 
 フィッシング、スパム、データ侵害、その他の脅威などの cybercrimes に対して組織を強化する方法の詳細については、「 [Office 365 のセキュリティのベストプラクティス](https://support.office.com/article/9295e396-e53d-49b9-ae9b-0b5828cdedc3)」を参照してください。
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [バックスキャター メッセージと EOP](https://technet.microsoft.com/en-us/library/dn499795%28v=exchg.150%29.aspx)
   

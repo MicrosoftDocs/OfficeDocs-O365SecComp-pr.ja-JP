@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 11/7/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,13 +14,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
-description: ユーザーが office 365 で特定の操作を実行したときに office 365 が電子メール通知を送信できるように、セキュリティ/コンプライアンスセンターでアクティビティアラートを追加して管理します。
-ms.openlocfilehash: d71763d4633c3396afdf58400e9cb7b8b8a468e8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: ユーザーが Office 365 で特定の操作を実行したときに Office 365 が電子メール通知を送信できるように、セキュリティ/コンプライアンスセンターでアクティビティアラートを追加して管理します。
+ms.openlocfilehash: 1b09b191f82d8dd589fe2e5f650f42f67a846da2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258683"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151309"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>Office 365 でアクティビティ通知を作成する
 
@@ -33,7 +33,7 @@ ms.locfileid: "32258683"
   
 ## <a name="before-you-begin"></a>始める前に
 
-- アクティビティアラートを管理するには、Security & コンプライアンスセンターで組織の構成役割が割り当てられている必要があります。 既定では、この役割は、コンプライアンス管理者および組織の管理役割グループに割り当てられます。 役割グループへのメンバーの追加の詳細については、「[ユーザーにセキュリティ & コンプライアンスセンターへのアクセス権を付与する](grant-access-to-the-security-and-compliance-center.md)」を参照してください。
+- アクティビティアラートを管理するには、Security & コンプライアンスセンターで組織の構成役割が割り当てられている必要があります。 既定では、この役割は、コンプライアンス管理者および組織の管理役割グループに割り当てられます。 役割グループへのメンバーの追加の詳細については、「[ユーザーにセキュリティ _AMP_ コンプライアンスセンターへのアクセス権を付与する](grant-access-to-the-security-and-compliance-center.md)」を参照してください。
     
 - アクティビティ通知の使用を開始するには、まず、組織の監査ログを有効にする必要があります (または別の管理者)。 これを行うには、[**アクティビティの通知**] ページで [**ユーザーと管理者のアクティビティの記録を開始**する] をクリックするだけです。 (このリンクが表示されていない場合は、組織の監査が既に有効になっています。)セキュリティ & コンプライアンスセンターの [**監査ログの検索**] ページで監査をオンにすることもでき**** \>ます ([**監査ログ**の検索] に移動します)。 これは組織に1回だけ実行する必要があります。
   
@@ -56,7 +56,7 @@ ms.locfileid: "32258683"
   
 4. アクティビティアラートを作成するには、以下のフィールドに入力します。
     
-    a. **name** -通知の名前を入力します。 アラート名は、組織内で一意である必要があります。
+    a. **Name** -通知の名前を入力します。 アラート名は、組織内で一意である必要があります。
     
     b. **説明**(オプション)-追跡するアクティビティとユーザー、電子メール通知の送信先ユーザーなど、アラートを説明します。 説明では、他の管理者に通知する目的をすばやく簡単に説明します。
     

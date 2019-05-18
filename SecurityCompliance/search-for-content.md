@@ -4,23 +4,23 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
-description: セキュリティ & コンプライアンスセンターのコンテンツ検索電子情報開示ツールを使用して、Exchange メールボックス、SharePoint サイトと OneDrive の場所にあるドキュメント、および Skype for business でのインスタントメッセージングの会話をすばやく見つけることができます。
-ms.openlocfilehash: 3e8e0594cac700fe37ee7a4a6c889dbf862cd0fb
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+description: セキュリティ & コンプライアンスセンターのコンテンツ検索電子情報開示ツールを使用して、Exchange メールボックス、SharePoint サイトと OneDrive の場所にあるドキュメント、および Skype for Business でのインスタントメッセージングの会話をすばやく見つけることができます。
+ms.openlocfilehash: 9978262223de059511a011358764069ef23d4340
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33403015"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158749"
 ---
 # <a name="search-for-content-in-office-365"></a>Office 365 のコンテンツを検索する
 
-セキュリティ & コンプライアンスセンターのコンテンツ検索ツールを使用すると、Exchange メールボックス内の電子メール、SharePoint サイトと OneDrive の場所にあるドキュメント、および Skype for business でのインスタントメッセージングの会話をすばやく見つけることができます。 コンテンツ検索ツールを使用して、Microsoft Teams や office 365 グループなどの office 365 コラボレーションツールで、電子メール、ドキュメント、インスタントメッセージの会話を検索することができます。
+セキュリティ & コンプライアンスセンターのコンテンツ検索ツールを使用すると、Exchange メールボックス内の電子メール、SharePoint サイトと OneDrive の場所にあるドキュメント、および Skype for Business でのインスタントメッセージングの会話をすばやく見つけることができます。 コンテンツ検索ツールを使用して、Microsoft Teams や Office 365 グループなどの Office 365 コラボレーションツールで、電子メール、ドキュメント、インスタントメッセージの会話を検索することができます。
   
 ## <a name="search-for-content"></a>コンテンツを検索する
 
@@ -61,7 +61,7 @@ ms.locfileid: "33403015"
     
 ## <a name="learn-more-about-content-search"></a>コンテンツ検索の詳細情報
 
-コンテンツ検索は簡単に使用できますが、強力なツールでもあります。 舞台裏では、多くのことが進行しています。 it の理解を深め、その動作とその制限を理解すると、組織の検索と調査のニーズに合わせて使用できるようになりました。 以下について調べます。
+コンテンツ検索は簡単に使用できますが、強力なツールでもあります。 舞台裏では、多くのことが進行しています。 It の理解を深め、その動作とその制限を理解すると、組織の検索と調査のニーズに合わせて使用できるようになりました。 以下について調べます。
   
 - [Exchange と SharePoint の部分的にインデックス](partially-indexed-items-in-content-search.md)が作成されたアイテム、および検索結果をエクスポートおよびダウンロードするときにそれらを含めるか除外するかを指定します。 
     

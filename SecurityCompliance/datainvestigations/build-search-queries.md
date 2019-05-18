@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365 でデータ調査を使用しているときにデータを検索するときに、検索範囲を絞るには、キーワードと条件を使用します。
-ms.openlocfilehash: eeca1bf7ff89d1b7f79ceeed3334668e354f035a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6d6c7e99257d071595365ec9a9557892fe3fe8db
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262893"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151059"
 ---
 # <a name="build-search-queries"></a>検索クエリのビルド
 
@@ -29,7 +29,7 @@ ms.locfileid: "32262893"
 
 ## <a name="keyword-searches"></a>キーワード検索
 
-検索クエリの [**キーワード**] ボックスにキーワードクエリを入力します。 キーワード、電子メールメッセージのプロパティ (送信日時や受信日時など)、またはドキュメントプロパティ (ファイル名、ドキュメントが最後に変更された日付など) を指定できます。 **and**、 **OR**、 **NOT**、 **NEAR**などのブール演算子を使用するより複雑なクエリを使用することができます。 SharePoint および OneDrive (電子メールメッセージではない) のドキュメントで機密情報 (社会保障番号など) を検索したり、外部で共有されているドキュメントを検索したりすることもできます。 [**キーワード**] ボックスを空のままにすると、指定したコンテンツの場所にあるすべてのコンテンツが検索結果に含まれます。
+検索クエリの [**キーワード**] ボックスにキーワードクエリを入力します。 キーワード、電子メールメッセージのプロパティ (送信日時や受信日時など)、またはドキュメントプロパティ (ファイル名、ドキュメントが最後に変更された日付など) を指定できます。 **And**、 **OR**、 **NOT**、 **NEAR**などのブール演算子を使用するより複雑なクエリを使用することができます。 SharePoint および OneDrive (電子メールメッセージではない) のドキュメントで機密情報 (社会保障番号など) を検索したり、外部で共有されているドキュメントを検索したりすることもできます。 [**キーワード**] ボックスを空のままにすると、指定したコンテンツの場所にあるすべてのコンテンツが検索結果に含まれます。
     
 または、[**キーワードリストを表示**する] チェックボックスをオンにして、各行にキーワードまたはキーワードフレーズを入力することもできます。 このようにすると、各行のキーワードが論理演算子 ( *c:s*として表されます) によって接続されます。これは、作成された検索クエリの**or**演算子に似ています。 つまり、任意の行にキーワードが含まれているアイテムは検索結果に含まれます。
 

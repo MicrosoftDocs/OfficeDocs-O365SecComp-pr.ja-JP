@@ -1,10 +1,10 @@
 ---
-title: レビューセット内のデータを照会する
+title: レビュー セット内のデータをクエリする
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 395cc01238f4dbc91de5dd652e10121f5e0cc926
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 446f3f2588a79cb328476db490f1f555448b5ce7
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527216"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154009"
 ---
-# <a name="query-the-data-in-a-review-set"></a>レビューセット内のデータを照会する
+# <a name="query-the-data-in-a-review-set"></a>レビュー セット内のデータをクエリする
 
 ほとんどの場合、レビューセットにあるものを深く掘り下げて、レビューのために整理して、より効率的にレビューできるようにするのが便利です。 校閲セット内のクエリを使用すると、一度に定義された条件を満たすドキュメントのサブセットに集中することができます。
 

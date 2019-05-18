@@ -1,10 +1,10 @@
 ---
-title: 高度な電子情報開示でケースのデータを収集する (プレビュー)
+title: 高度な電子情報開示でケースのデータを収集する
 ms.author: esclee
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fb4b36841394576c44667f9677507c5655179e45
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8e67c3c8a693e627bade9e581f0f1e246bf6802a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242555"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151889"
 ---
-# <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>高度な電子情報開示でケースのデータを収集する (プレビュー)
+# <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>高度な電子情報開示でケースのデータを収集する
 
-ケースに関係のある保管担当者とデータソースを識別したら、delve のドキュメントセットを特定してください。 上級電子情報開示 (プレビュー) の検索ツールを使用して、Office 365 の custodial および非 wi-fi ダイヤルの場所からこれらを識別することができます。
+ケースに関係のある保管担当者とデータソースを識別したら、delve のドキュメントセットを特定してください。 上級電子情報開示の検索ツールを使用して、Office 365 の custodial および非 wi-fi ダイヤルの場所からこれらを識別することができます。
 
-検索を実行すると、検索クエリに一致したアイテムが最も多い場所など、取得したアイテムの統計情報を表示できるようになります。 結果のサブセットをプレビューすることもできます。 さらに調べる必要のあるドキュメントセットを特定したら、検索結果を作業セットに追加して、収集して処理することができます。
+検索を実行すると、検索クエリに一致したアイテムが最も多い場所など、取得したアイテムの統計情報を表示できるようになります。 結果のサブセットをプレビューすることもできます。 さらに調べる必要のあるドキュメントセットを特定したら、検索結果をレビューセットに追加して、収集して処理することができます。
 
 ## <a name="create-a-search"></a>Create a search
 
@@ -46,6 +46,6 @@ ms.locfileid: "32242555"
 
 プレビューが完了すると、[**プレビュー** ] ボタンがアクティブになります。 これをクリックして、抽出された結果のサブセットをプレビューします。
 
-## <a name="adding-search-results-to-a-working-set"></a>作業セットへの検索結果の追加
+## <a name="adding-search-results-to-a-review-set"></a>検索結果をレビューセットに追加する
 
-検索結果全体を収集して処理する準備ができたら、それを作業セットに追加します。 詳細については、「[作業セットにデータを追加する](add-data-to-working-set.md)」を参照してください。 
+検索結果全体を収集して処理する準備ができたら、それをレビューセットに追加することで、それを行うことができます。 詳細については、「[レビューセットにデータを追加する](add-data-to-review-set.md)」を参照してください。 

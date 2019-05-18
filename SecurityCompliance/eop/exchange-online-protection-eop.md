@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: EOP の操作を開始する前に知っておく必要があるいくつかの点を以下に示します。
-ms.openlocfilehash: fdaeba4f38d2e7676b336519f6d04649ee9d8137
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3bf4874e3ab445813ee03de4def23ed12f66f537
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256465"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154669"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -53,7 +53,7 @@ EOP 管理者向けのヘルプ コンテンツは、次の最上位カテゴリ
     
 - 「[Exchange Online Protection でのレポート作成とメッセージ追跡](reporting-and-message-trace-in-exchange-online-protection.md)」 使用可能なレポートとトラブルシューティング ツールについて説明しています。 
     
-- exchange [Online Protection の exchange 管理センター](../exchange-admin-center-in-exchange-online-protection-eop.md)EOP サービスを管理するために、Exchange 管理センター (EAC) 管理インターフェイスを使用してアクセスおよび移動を行う方法について説明します。 
+- Exchange [Online Protection の exchange 管理センター](../exchange-admin-center-in-exchange-online-protection-eop.md)EOP サービスを管理するために、Exchange 管理センター (EAC) 管理インターフェイスを使用してアクセスおよび移動を行う方法について説明します。 
     
 - [Exchange Online Protection の PowerShell](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) リモート PowerShell に関する情報を提供します。このシェルでは、EOP サービスをコマンド ラインから管理できます。 
     
@@ -66,11 +66,11 @@ EOP エンド ユーザーによるスパム管理を支援するためのヘル
   
 - [Find and Release Quarantined Messages as an End User](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) エンド ユーザーが、スパム検疫ユーザー インターフェイスで独自のスパム検疫済みメッセージを検出して解放し、オプションで、それらのメッセージを迷惑メールではないとして Microsoft に報告する方法について説明します。 
         
-- [スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)エンドユーザーがスパム (迷惑メール) メッセージと非スパム (迷惑メールではない) メッセージを Microsoft に送信するさまざまな方法について説明します。 このトピックには、Microsoft outlook および web 上の outlook (旧称 Outlook web App) で使用可能なレポートツールへのリンクが含まれています。 
+- [スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)エンドユーザーがスパム (迷惑メール) メッセージと非スパム (迷惑メールではない) メッセージを Microsoft に送信するさまざまな方法について説明します。 このトピックには、Microsoft Outlook および web 上の Outlook (旧称 Outlook Web App) で使用可能なレポートツールへのリンクが含まれています。 
     
 - [Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md) エンド ユーザーがフィルターを通過したマルウェアやマルウェアとして誤判定されたと思われるファイルを報告する方法について説明します。 
     
-- エンドユーザーは、outlook または web 上の outlook で迷惑メール設定を構成することで、特定のユーザーまたはドメインを安全な送信者リストまたは受信拒否リストに追加できます。 禁止された送信者から送信されたメッセージは拒否されず、スパムとしてマークされ、迷惑メールフォルダーまたは検疫から取得できることに注意してください (管理者がスパムを送信するように構成されている場所によって異なります)。詳細については、「[レポートメッセージアドインを使用する](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)」を参照してください。
+- エンドユーザーは、Outlook または web 上の Outlook で迷惑メール設定を構成することで、特定のユーザーまたはドメインを安全な送信者リストまたは受信拒否リストに追加できます。 禁止された送信者から送信されたメッセージは拒否されず、スパムとしてマークされ、迷惑メールフォルダーまたは検疫から取得できることに注意してください (管理者がスパムを送信するように構成されている場所によって異なります)。詳細については、「[レポートメッセージアドインを使用する](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)」を参照してください。
     
 - 「[EOP のヘルプとサポート](help-and-support-for-eop.md)」 ヘルプおよびテクニカル サポートの入手方法について説明しています。 
     

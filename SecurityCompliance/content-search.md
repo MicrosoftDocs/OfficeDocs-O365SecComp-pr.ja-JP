@@ -3,7 +3,7 @@ title: Office 365 のコンテンツ検索
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,17 +15,17 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: Office 365 または microsoft 365 のコンプライアンスセンターでコンテンツ検索ツールを使用して、メールボックス、SharePoint Online サイト、OneDrive アカウント、Microsoft Teams、Office 365 グループ、Skype for business の会話のコンテンツを検索します。 キーワード検索クエリと検索条件を使用して、検索結果を絞り込むことができます。 その後、検索結果をプレビューしてエクスポートできます。 コンテンツ検索は、GDPR データ主体要求に関連する可能性があるコンテンツを検索するための効果的なツールでもあります。
-ms.openlocfilehash: 67b32dcc6efcc096b9952be41380a8dc3700a668
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Office 365 または Microsoft 365 のコンプライアンスセンターでコンテンツ検索ツールを使用して、メールボックス、SharePoint Online サイト、OneDrive アカウント、Microsoft Teams、Office 365 グループ、Skype for Business の会話のコンテンツを検索します。 キーワード検索クエリと検索条件を使用して、検索結果を絞り込むことができます。 その後、検索結果をプレビューしてエクスポートできます。 コンテンツ検索は、GDPR データ主体要求に関連する可能性があるコンテンツを検索するための効果的なツールでもあります。
+ms.openlocfilehash: 4661f724a646eaaf522485726b2cb0475483e56b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264095"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153929"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 のコンテンツ検索
 
-office 365 または Microsoft 365 のコンプライアンスセンターでコンテンツ検索電子情報開示ツールを使用して、office 365 組織の電子メール、ドキュメント、インスタントメッセージの会話など、インプレースアイテムを検索することができます。 このツールを使用して、これらの Office 365 サービスのアイテムを検索します。
+Office 365 または Microsoft 365 のコンプライアンスセンターでコンテンツ検索電子情報開示ツールを使用して、Office 365 組織の電子メール、ドキュメント、インスタントメッセージの会話など、インプレースアイテムを検索することができます。 このツールを使用して、これらの Office 365 サービスのアイテムを検索します。
   
 - Exchange Online メールボックスとパブリック フォルダー
     
@@ -42,7 +42,7 @@ office 365 または Microsoft 365 のコンプライアンスセンターでコ
 
 ## <a name="create-a-new-search"></a>新しい検索を作成する
 
-検索を実行して検索結果をプレビューおよびエクスポートするために**コンテンツ検索**ページにアクセスできるようにするには、管理者、コンプライアンス責任者、または電子情報開示マネージャーが、Security & コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
+検索を実行して検索結果をプレビューおよびエクスポートするために**コンテンツ検索**ページにアクセスできるようにするには、管理者、コンプライアンス責任者、または電子情報開示マネージャーが、Security _AMP_ コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
   
 1. に[https://protection.office.com](https://protection.office.com)移動し、Office 365 の電子メールアドレスとパスワードを使用してサインインします。
     
@@ -255,7 +255,7 @@ Microsoft Teams と Office 365 グループのコンテンツを検索する場�
   
 - ユーザーのメールボックスを検索すると、ユーザーが属している Microsoft チームまたは Office 365 グループは検索されません。同様に、Microsoft チームまたは Office 365 グループを検索する場合は、指定したグループ メールボックスとグループ サイトのみが検索されます。検索に明示的に追加しない限り、グループ メンバーのメールボックスと OneDrive for Business アカウントは検索されません。
     
-- microsoft Team または Office 365 グループのメンバーの一覧を取得するには、microsoft 365 管理センターの [**ホーム\>グループ**] ページでプロパティを表示します。 または、Exchange Online PowerShell で次のコマンドを実行することもできます。 
+- Microsoft Team または Office 365 グループのメンバーの一覧を取得するには、Microsoft 365 管理センターの [**ホーム\>グループ**] ページでプロパティを表示します。 または、Exchange Online PowerShell で次のコマンドを実行することもできます。 
     
   ```
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 

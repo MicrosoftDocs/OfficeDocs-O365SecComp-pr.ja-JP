@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: 'Office 365 Advanced eDiscovery で関連性トレーニングを実行する前に、インポートされたファイルを最後に定義したロードまたはバッチファイルに追加する手順を確認します。  '
-ms.openlocfilehash: 8c5101628b468719f8aa4f81a4c73cbbb226105f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 65e022680cc0bd39bbca3e05a4e3b6d24da1b2ad
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260742"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158609"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示でインポートされたファイルを追加するためのロードを設定する
 
@@ -60,7 +60,7 @@ ms.locfileid: "32260742"
   
 1. [**関連性\>の関連性の設定**] タブで、[**ロード**] を選択します。
     
-2. [load **management** ] の一覧から、ロードを選択し、[**編集**] アイコンをクリックします。 [読み込みの編集] ウィンドウが表示されます。 
+2. [Load **management** ] の一覧から、ロードを選択し、[**編集**] アイコンをクリックします。 [読み込みの編集] ウィンドウが表示されます。 
     
 3. 変更を入力し、[ **OK]** をクリックします。
     

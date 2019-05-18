@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,17 +12,17 @@ search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
-description: Office 365 には、Exchange メールボックス、SharePoint、OneDrive for business サイト、Office 365 グループ、Skype for business の会話など、さまざまな場所にあるコンテンツを検索して保持するために使用できる、さまざまな種類の電子情報開示ツールが用意されています。
-ms.openlocfilehash: 51ef4e744f2347fe3cdaff757131baf0c5fe83bf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Office 365 には、Exchange メールボックス、SharePoint、OneDrive for business サイト、Office 365 グループ、Skype for Business の会話など、さまざまな場所にあるコンテンツを検索して保持するために使用できる、さまざまな種類の電子情報開示ツールが用意されています。
+ms.openlocfilehash: 300de1a767e9ab3f6be81974a704506d367d68b4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256805"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153319"
 ---
 # <a name="ediscovery-in-office-365"></a>Office 365 の電子情報開示
 
-電子情報開示 (eDiscovery) とは、訴訟で証拠として使用できる電子的情報を特定および提供するプロセスです。 office 365 で電子情報開示を使用して、Exchange Online メールボックス、office 365 グループ、Microsoft Teams、SharePoint Online と OneDrive for business のサイト、および Skype for business の会話のコンテンツを検索できます。 セキュリティ & コンプライアンスセンターのコンテンツ検索ツールを使用して、同じ電子情報開示検索のメールボックスとサイトを検索できます。 また、セキュリティ & コンプライアンスセンターで電子情報開示ケースを使用して、メールボックスおよびサイト内のコンテンツを特定、保持、およびエクスポートすることができます。 組織に office 365 E5 サブスクリプションがある場合は、office 365 Advanced eDiscovery を使用してさらにコンテンツを分析することができます。
+電子情報開示 (eDiscovery) とは、訴訟で証拠として使用できる電子的情報を特定および提供するプロセスです。 Office 365 で電子情報開示を使用して、Exchange Online メールボックス、Office 365 グループ、Microsoft Teams、SharePoint Online と OneDrive for business のサイト、および Skype for Business の会話のコンテンツを検索できます。 セキュリティ & コンプライアンスセンターのコンテンツ検索ツールを使用して、同じ電子情報開示検索のメールボックスとサイトを検索できます。 また、セキュリティ & コンプライアンスセンターで電子情報開示ケースを使用して、メールボックスおよびサイト内のコンテンツを特定、保持、およびエクスポートすることができます。 組織に Office 365 E5 サブスクリプションがある場合は、Office 365 Advanced eDiscovery を使用してさらにコンテンツを分析することができます。
   
 Office 365 には、次の電子情報開示ツールが用意されています。
   
@@ -39,7 +39,7 @@ Office 365 には、次の電子情報開示ツールが用意されています
   
 |**トピック**|**説明**|
 |:-----|:-----|
-|[セキュリティ & コンプライアンスセンターでコンテンツ検索を実行する](run-a-content-search-in-the-security-and-compliance-center.md) <br/> |コンテンツ検索ツールを使用して、1回の検索で、メールボックス、パブリックフォルダー、office 365 グループ、Microsoft Teams、SharePoint Online サイト、ビジネスの場所に1台のドライブ、および Office 365 組織の Skype for business の会話を検索する方法について説明します。  <br/> |
+|[セキュリティ & コンプライアンスセンターでコンテンツ検索を実行する](run-a-content-search-in-the-security-and-compliance-center.md) <br/> |コンテンツ検索ツールを使用して、1回の検索で、メールボックス、パブリックフォルダー、Office 365 グループ、Microsoft Teams、SharePoint Online サイト、ビジネスの場所に1台のドライブ、および Office 365 組織の Skype for Business の会話を検索する方法について説明します。  <br/> |
 |[コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md) <br/> |Office 365 組織のメールボックスとサイトのコンテンツを検索するために使用できる電子メールおよびファイルのプロパティと検索条件について説明します。  <br/> |
 |[コンテンツ検索の結果のキーワード統計を表示する](view-keyword-statistics-for-content-search.md) <br/> |検索統計を使用して、1つまたは複数のコンテンツ検索の統計を表示および比較し、検索クエリ内の各キーワードの統計情報を返す新規および既存の検索を構成する方法について説明します。  <br/> |
 |[セキュリティ & コンプライアンスセンターでコンテンツ検索を一括編集する](bulk-edit-content-searches.md) <br/> |1つまたは複数のコンテンツ検索の検索クエリとコンテンツの場所を一括編集する方法について説明します。  <br/> |
@@ -71,7 +71,7 @@ Office 365 には、次の電子情報開示ツールが用意されています
 |[セキュリティ & コンプライアンスセンターで電子情報開示ケースを管理する](manage-ediscovery-cases.md) <br/> |セキュリティ & コンプライアンスセンターで電子情報開示ケースを作成および管理する方法について説明します。  <br/> |
 |[Office?? で電子情報開示のアクセス許可を割り当てる365セキュリティ & コンプライアンスセンター](assign-ediscovery-permissions.md) <br/> |セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる方法について説明します。 アクセス許可を割り当てることにより、ユーザーが電子情報開示ケースを作成したり、電子情報開示ケースに関連付けられた保留リストを作成したり、コンテンツ検索を実行したり、検索結果をプレビューしたり、検索結果をエクスポートしたりできる  <br/> |
 |[Office 365 で電子情報開示ケースの保留リストのレポートを作成する](create-a-report-on-holds-in-ediscovery-cases.md) <br/> |この記事の Windows PowerShell スクリプトを使用して、セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられているすべての保留リストに関する情報を含むレポートを生成する方法について説明します。  <br/> |
-|[スクリプトを使用してセキュリティ & コンプライアンスセンターの電子情報開示ケースの保留リストにユーザーを追加する](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) <br/> |この記事に記載されている Windows PowerShell スクリプトを使用して、セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられている新しいホールドに、ユーザーの一覧のメールボックスと OneDrive for business サイトをすばやく追加する方法について説明します。  <br/> |
+|[スクリプトを使用してセキュリティ & コンプライアンスセンターの電子情報開示ケースの保留リストにユーザーを追加する](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) <br/> |この記事に記載されている Windows PowerShell スクリプトを使用して、セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられている新しいホールドに、ユーザーの一覧のメールボックスと OneDrive for Business サイトをすばやく追加する方法について説明します。  <br/> |
 |[Office 365 監査ログで電子情報開示アクティビティを検索する](search-for-ediscovery-activities-in-the-audit-log.md) <br/> |電子情報開示ケースおよびコンテンツ検索の作成と管理に関連するアクティビティの Office 365 監査ログを検索する方法について説明します。  <br/> |
    
 [Return to top](ediscovery.md#top)

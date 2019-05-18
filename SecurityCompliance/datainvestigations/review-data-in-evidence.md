@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e84f05fa1a7356952b62f2f4adc3b7d0f1ddc94e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 781b0b749390b36ecdf391bff1089d6180e7c3d2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258045"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150669"
 ---
 # <a name="review-the-data-in-evidence"></a>エビデンスのデータを確認する
 
@@ -50,7 +50,7 @@ ms.locfileid: "32258045"
 
 ## <a name="native-view"></a>ネイティブビュー
 
-ネイティブビューアーは、ドキュメントをネイティブ形式で最も正確に表示します。 ネイティブビューは、数百種類のファイルタイプでサポートされており、ドキュメントを表示することを目的としています。 Microsoft office ファイルの場合、ネイティブビューアーは office Online を使用します。 これにより、さまざまな Office ドキュメント、数式、Excel の非表示の行/列、PowerPoint のメモビューなどのコンテンツを表示できます。
+ネイティブビューアーは、ドキュメントをネイティブ形式で最も正確に表示します。 ネイティブビューは、数百種類のファイルタイプでサポートされており、ドキュメントを表示することを目的としています。 Microsoft Office ファイルの場合、ネイティブビューアーは Office Online を使用します。 これにより、さまざまな Office ドキュメント、数式、Excel の非表示の行/列、PowerPoint のメモビューなどのコンテンツを表示できます。
 
 ![ネイティブビュー
 ](../media/Reviewimage3.png)
@@ -102,4 +102,4 @@ ms.locfileid: "32258045"
 ![ビューに注釈を付ける](../media/Reviewimage1.png)
 
 > [!NOTE]
-> 注釈は、証拠セットに追加されたドキュメントのコピーに適用されます。 live サービスの元のドキュメントには、注釈は付けません。
+> 注釈は、証拠セットに追加されたドキュメントのコピーに適用されます。 Live サービスの元のドキュメントには、注釈は付けません。

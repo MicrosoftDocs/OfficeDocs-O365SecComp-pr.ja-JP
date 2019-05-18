@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 7/2/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.assetid: 3bdb5c4e-94fc-4741-b02f-4e7cc3c54aa1
 ms.collection:
 - M365-security-compliance
 description: Information Rights Management (IRM) を使用すると、リストまたはライブラリからダウンロードされたファイルを制御し、保護することができます。
-ms.openlocfilehash: ae07136cf128f167695f667cc8a149492287f498
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3c350a3648b77992dd8e86ee47498efc327b2af8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32244032"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152339"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>リストまたはライブラリに Information Rights Management (IRM) を適用する
 
@@ -30,16 +30,16 @@ Information Rights Management (IRM) を使用すると、リストまたはラ�
   
 ## <a name="before-you-begin"></a>始める前に
 
-- azure information Protection からの azure Rights management サービス (azure RMS) と、オンプレミスの Active Directory Rights management サービス (AD RMS) は、サイトの information Rights management をサポートしています。 個別または追加のインストールは必要ありません。
+- Azure Information Protection からの azure Rights Management サービス (Azure RMS) と、オンプレミスの Active Directory Rights Management サービス (AD RMS) は、サイトの Information Rights Management をサポートしています。 個別または追加のインストールは必要ありません。
     
 - IRM をリストまたはライブラリに適用する前に、サイトの管理者が IRM を有効にする必要があります。
     
 - リストまたはライブラリに IRM を適用するには、そのリストまたはライブラリに対する管理者権限が必要です。
     
-- SharePoint Online を使用している場合は、IRM で保護された大規模なファイルをダウンロードするときにタイムアウトが発生することがあります。 このような場合は、Office プログラムを使用して irm 保護を適用し、irm を使用しない SharePoint ライブラリに大きなファイルを保存します。
+- SharePoint Online を使用している場合は、IRM で保護された大規模なファイルをダウンロードするときにタイムアウトが発生することがあります。 このような場合は、Office プログラムを使用して IRM 保護を適用し、IRM を使用しない SharePoint ライブラリに大きなファイルを保存します。
     
 > [!NOTE]
-> SharePoint server 2013 を使用している場合は、組織内のユーザーが IRM を使用して保護するすべてのファイルの種類について、サーバー管理者がすべてのフロントエンド Web サーバーにプロテクターをインストールする必要があります。 
+> SharePoint Server 2013 を使用している場合は、組織内のユーザーが IRM を使用して保護するすべてのファイルの種類について、サーバー管理者がすべてのフロントエンド Web サーバーにプロテクターをインストールする必要があります。 
   
 ## <a name="apply-irm-to-a-list-or-library"></a>リストまたはライブラリに IRM を適用する
 <a name="__toc256598179"> </a>
@@ -84,7 +84,7 @@ Information Rights Management (IRM) を使用すると、ユーザーがリス�
 サイトでは、個々のファイルではなく、リストまたはライブラリ全体に IRM を適用します。 これにより、ドキュメントやファイルのセット全体に対して一貫したレベルの保護を実現することが容易になります。 これにより、IRM により、機密情報の使用と伝達を管理する企業ポリシーを適用することができます。
   
 > [!NOTE]
-> information rights management に関するこのページの情報は、Microsoft sharepoint server 2013 および SharePoint Server 2016 ライセンス条項契約で「information rights management」を参照している用語よりも優先されます。 
+> Information Rights management に関するこのページの情報は、Microsoft SharePoint Server 2013 および SharePoint Server 2016 ライセンス条項契約で「Information Rights Management」を参照している用語よりも優先されます。 
   
 ### <a name="how-irm-can-help-protect-content"></a>IRM がコンテンツを保護するための方法
 <a name="__toc256598176"> </a>
@@ -134,7 +134,7 @@ IRM 保護は、リストまたはライブラリレベルでファイルに適�
 |権限の管理、Web サイトの管理  <br/> |**フルコントロール**(クライアントプログラムによって定義されています): この権限は、通常、権限が管理されたコンテンツの読み取り、編集、コピー、保存、および変更のアクセス許可をユーザーに許可します。  <br/> |
 |アイテムの編集、リストの管理、ページの追加とカスタマイズ  <br/> |[**編集**]、[**コピー**]、[**保存**]: リストまたはライブラリの [Information Rights Management の設定] ページで、[**ユーザーにドキュメントの印刷を許可する**] チェックボックスがオンになっている場合にのみ、ファイルを印刷できます。  <br/> |
 |アイテムの表示  <br/> |**読み取り**: ユーザーはドキュメントを読み取ることはできますが、コンテンツをコピーまたは変更することはできません。 リストまたはライブラリの [Information Rights Management の設定] ページで、[ユーザー**にドキュメントの印刷を許可する**] チェックボックスがオンになっている場合にのみ、印刷を行うことができます。  <br/> |
-|その他  <br/> |IRM アクセス許可に直接対応するその他のアクセス許可はありません。  <br/> |
+|Other  <br/> |IRM アクセス許可に直接対応するその他のアクセス許可はありません。  <br/> |
    
 SharePoint Server 2013 のリストまたはライブラリで IRM を有効にする場合、すべてのフロントエンド Web サーバーにプロテクターがインストールされているリストまたはライブラリ内のファイルの種類のみを保護できます。 プロテクターは、特定のファイル形式の権限が管理されたファイルの暗号化と復号化を制御するプログラムです。 SharePoint には、次のファイルの種類のプロテクターが含まれています。
   
@@ -142,7 +142,7 @@ SharePoint Server 2013 のリストまたはライブラリで IRM を有効に�
     
 - 次の Microsoft Office プログラムの97-2003 ファイル形式: Word、Excel、および PowerPoint
     
-- office Open XML 形式の次の Microsoft Office プログラム: Word、Excel、および PowerPoint
+- Office Open XML 形式の次の Microsoft Office プログラム: Word、Excel、および PowerPoint
     
 - XML Paper Specification (XPS) 形式
     

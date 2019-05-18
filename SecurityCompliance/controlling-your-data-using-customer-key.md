@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 8/1/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 ms.collection:
 - M365-security-compliance
-description: Exchange Online、Skype for business、SharePoint Online、OneDrive for business で Office 365 の顧客キーを設定する方法について説明します。 顧客キーを使用して、組織の暗号化キーを制御し、Office 365 を使用して Microsoft のデータセンターで保存されているデータを暗号化するように構成します。
-ms.openlocfilehash: 219ddb94727cd2b708f734a77a8397b3bc3f1064
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Exchange Online、Skype for Business、SharePoint Online、OneDrive for business で Office 365 の顧客キーを設定する方法について説明します。 顧客キーを使用して、組織の暗号化キーを制御し、Office 365 を使用して Microsoft のデータセンターで保存されているデータを暗号化するように構成します。
+ms.openlocfilehash: 839d0b56b3748e2ab4ccecc30a084447f22131aa
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258355"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153719"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>顧客キーを使用して Office 365 でデータを制御する
 
@@ -33,7 +33,7 @@ Office 365 の顧客キーを使用するには、事前に Azure をセット�
 ## <a name="before-you-begin-setting-up-customer-key"></a>顧客キーの設定を開始する前に
 <a name="Beforeyoustart"> </a>
 
-開始する前に、組織に適したライセンスを持っていることを確認してください。 office 365 の顧客キーは、office 365 E5 または Advanced コンプライアンス SKU で提供されます。
+開始する前に、組織に適したライセンスを持っていることを確認してください。 Office 365 の顧客キーは、Office 365 E5 または Advanced コンプライアンス SKU で提供されます。
   
 その後、このトピックの概念と手順を理解するには、 [Azure Key Vault](https://azure.microsoft.com/en-us/documentation/services/key-vault/)のマニュアルを参照してください。 また、「[テナント](https://msdn.microsoft.com/library/azure/jj573650.aspx#BKMK_WhatIsAnAzureADTenant)」など、Azure で使用される用語について理解しておいてください。
   
@@ -44,7 +44,7 @@ Office 365 の顧客キーを使用するには、事前に Azure をセット�
 
 顧客キーを設定するには、これらのタスクを完了します。 このトピックの残りの部分では、各タスクの詳細な手順を説明します。または、プロセスの各ステップに関する詳細情報へのリンクを示します。
   
-**Azure と Microsoft fasttrack の場合:**
+**Azure と Microsoft FastTrack の場合:**
   
 これらのタスクのほとんどは、Azure PowerShell にリモートで接続することで完了します。 最良の結果を得るには、Azure PowerShell のバージョン4.4.0 以降を使用します。
   
@@ -56,7 +56,7 @@ Office 365 の顧客キーを使用するには、事前に Azure をセット�
     
 - [Office 365 の顧客キーを有効にするための要求を送信する](controlling-your-data-using-customer-key.md#FastTrack)
     
-    2つの新しい Azure サブスクリプションを作成したら、Microsoft fasttrack ポータルでホストされている web フォームに入力して、適切な顧客キー提示要求を送信する必要があります。 **fasttrack チームは、顧客キーについてサポートを提供していません。Office では、fasttrack ポータルを使用**してフォームを送信することができます。また、顧客キーの関連する提供を追跡するのに役立ちます。
+    2つの新しい Azure サブスクリプションを作成したら、Microsoft FastTrack ポータルでホストされている web フォームに入力して、適切な顧客キー提示要求を送信する必要があります。 **FastTrack チームは、顧客キーについてサポートを提供していません。Office では、FastTrack ポータルを使用**してフォームを送信することができます。また、顧客キーの関連する提供を追跡するのに役立ちます。
   
 カスタマーキーオファーを送信すると、Microsoft は要求を確認し、残りのセットアップタスクを続行できる場合に通知します。 このプロセスには最大5営業日かかることがあります。
     
@@ -74,45 +74,45 @@ Office 365 の顧客キーを使用するには、事前に Azure をセット�
     
 - [Azure Key Vault 構成設定を検証する](controlling-your-data-using-customer-key.md#Validateconfiguration)
     
-- [各 Azure key Vault キーの URI を取得する](controlling-your-data-using-customer-key.md#GetKeyURI)
+- [各 Azure Key Vault キーの URI を取得する](controlling-your-data-using-customer-key.md#GetKeyURI)
     
 **Office 365:**
   
-Exchange Online と Skype for business:
+Exchange Online と Skype for Business:
   
-- [Exchange Online と Skype for business で使用するデータ暗号化ポリシー (DEP) を作成する](controlling-your-data-using-customer-key.md#CreateDEP4EXOSkype)
+- [Exchange Online と Skype for Business で使用するデータ暗号化ポリシー (DEP) を作成する](controlling-your-data-using-customer-key.md#CreateDEP4EXOSkype)
     
 - [メールボックスに DEP を割り当てる](controlling-your-data-using-customer-key.md#assignDEPtomailbox)
     
 - [メールボックスの暗号化を検証する](controlling-your-data-using-customer-key.md#validatemailboxencryption)
     
-SharePoint Online と OneDrive for business:
+SharePoint Online と OneDrive for Business:
   
 - [SharePoint Online と OneDrive for business の各 geo にデータ暗号化ポリシー (DEP) を作成する](controlling-your-data-using-customer-key.md#CreateDEP4SPOODfB)
     
-- [グループサイト、チームサイト、および OneDrive for business の暗号化を検証する](controlling-your-data-using-customer-key.md#validateencryptionSPO)
+- [グループサイト、チームサイト、および OneDrive for Business の暗号化を検証する](controlling-your-data-using-customer-key.md#validateencryptionSPO)
     
-## <a name="complete-tasks-in-azure-key-vault-and-microsoft-fasttrack-for-customer-key"></a>Azure key Vault のタスクを完了し、顧客キーの Microsoft fasttrack を管理する
+## <a name="complete-tasks-in-azure-key-vault-and-microsoft-fasttrack-for-customer-key"></a>Azure Key Vault のタスクを完了し、顧客キーの Microsoft FastTrack を管理する
 <a name="AzureSteps"> </a>
 
-Office 365 の顧客キーを設定するために、Azure Key Vault でこれらのタスクを完了します。 これらの手順は、Exchange online と Skype for business、SharePoint online と OneDrive for business、または Office 365 でサポートされているすべてのサービスに対して、顧客キーを設定するかどうかにかかわらず実行する必要があります。
+Office 365 の顧客キーを設定するために、Azure Key Vault でこれらのタスクを完了します。 これらの手順は、Exchange Online と Skype for business、SharePoint Online と OneDrive for business、または Office 365 でサポートされているすべてのサービスに対して、顧客キーを設定するかどうかにかかわらず実行する必要があります。
   
 ### <a name="create-two-new-azure-subscriptions"></a>2つの新しい Azure サブスクリプションを作成する
 <a name="Create2newsubs"> </a>
 
-顧客キーには、2つの Azure サブスクリプションが必要です。 ベストプラクティスとして、Microsoft では、顧客キーと共に使用するために新しい Azure サブスクリプションを作成することをお勧めします。 azure Key Vault キーは、同じ azure Active Directory (AAD) テナント内のアプリケーションに対してのみ承認できます。この新しいサブスクリプションは、deps が割り当てられている Office 365 組織で使用されているものと同じ azure AD テナントを使用して作成する必要があります。 たとえば、Office 365 組織のグローバル管理者特権を持つ職場または学校のアカウントを使用します。 詳細な手順については、「[組織としての Azure へのサインアップ](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/)」を参照してください。
+顧客キーには、2つの Azure サブスクリプションが必要です。 ベストプラクティスとして、Microsoft では、顧客キーと共に使用するために新しい Azure サブスクリプションを作成することをお勧めします。 Azure Key Vault キーは、同じ Azure Active Directory (AAD) テナント内のアプリケーションに対してのみ承認できます。この新しいサブスクリプションは、DEPs が割り当てられている Office 365 組織で使用されているものと同じ Azure AD テナントを使用して作成する必要があります。 たとえば、Office 365 組織のグローバル管理者特権を持つ職場または学校のアカウントを使用します。 詳細な手順については、「[組織としての Azure へのサインアップ](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/)」を参照してください。
   
 > [!IMPORTANT]
-> 顧客キーには、データ暗号化ポリシー (DEP) ごとに2つのキーが必要です。 これを実現するためには、2つの Azure サブスクリプションを作成する必要があります。 ベストプラクティスとして、組織のメンバーごとに、各サブスクリプションで1つのキーを構成することをお勧めします。 さらに、これらの Azure サブスクリプションは、Office 365 の暗号化キーを管理するためにのみ使用してください。 これにより、オペレーターのいずれかが偶然、故意、または悪意によって削除された場合や、自分が責任を持つキーを誤って管理した場合に、組織が保護されます。 <br/> 顧客キーで使用するために azure Key Vault リソースの管理にのみ使用される新しい azure サブスクリプションをセットアップすることをお勧めします。 組織に対して作成できる Azure サブスクリプションの数に実際に制限はありません。 これらのベストプラクティスに従うことで、顧客キーによって使用されるリソースの管理を支援しながら、人的エラーの影響を最小限に抑えることができます。 
+> 顧客キーには、データ暗号化ポリシー (DEP) ごとに2つのキーが必要です。 これを実現するためには、2つの Azure サブスクリプションを作成する必要があります。 ベストプラクティスとして、組織のメンバーごとに、各サブスクリプションで1つのキーを構成することをお勧めします。 さらに、これらの Azure サブスクリプションは、Office 365 の暗号化キーを管理するためにのみ使用してください。 これにより、オペレーターのいずれかが偶然、故意、または悪意によって削除された場合や、自分が責任を持つキーを誤って管理した場合に、組織が保護されます。 <br/> 顧客キーで使用するために Azure Key Vault リソースの管理にのみ使用される新しい Azure サブスクリプションをセットアップすることをお勧めします。 組織に対して作成できる Azure サブスクリプションの数に実際に制限はありません。 これらのベストプラクティスに従うことで、顧客キーによって使用されるリソースの管理を支援しながら、人的エラーの影響を最小限に抑えることができます。 
   
 ### <a name="submit-a-request-to-activate-customer-key-for-office-365"></a>Office 365 の顧客キーを有効にするための要求を送信する
 <a name="FastTrack"> </a>
 
-Azure の手順を完了したら、 [Microsoft fasttrack ポータル](https://fasttrack.microsoft.com/)で提供要求を提出する必要があります。 fasttrack web ポータルを通じて要求を送信すると、Microsoft は、提供された Azure Key Vault 構成データと連絡先情報を検証します。 組織の承認済みの担当者に関する提供フォームで行う選択は、重要であり、顧客のキーの登録を完了するために必要です。 フォームで選択する組織の責任者は、顧客キーデータ暗号化ポリシーで使用されているすべてのキーを取り消して破棄するためのすべての要求の信頼性を確保するために使用されます。 この手順を1回実行する必要があります。これを行うには、Exchange online と Skype for business の使用をサポートするための顧客キーを有効にし、SharePoint Online と OneDrive for business の顧客キーを再度アクティブにします。
+Azure の手順を完了したら、 [Microsoft FastTrack ポータル](https://fasttrack.microsoft.com/)で提供要求を提出する必要があります。 FastTrack web ポータルを通じて要求を送信すると、Microsoft は、提供された Azure Key Vault 構成データと連絡先情報を検証します。 組織の承認済みの担当者に関する提供フォームで行う選択は、重要であり、顧客のキーの登録を完了するために必要です。 フォームで選択する組織の責任者は、顧客キーデータ暗号化ポリシーで使用されているすべてのキーを取り消して破棄するためのすべての要求の信頼性を確保するために使用されます。 この手順を1回実行する必要があります。これを行うには、Exchange Online と Skype for business の使用をサポートするための顧客キーを有効にし、SharePoint Online と OneDrive for business の顧客キーを再度アクティブにします。
   
 顧客キーを有効にするオファーを提出するには、次の手順を実行します。
   
-1. Office 365 組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、 [Microsoft fasttrack ポータル](https://fasttrack.microsoft.com/)にログインします。
+1. Office 365 組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、 [Microsoft FastTrack ポータル](https://fasttrack.microsoft.com/)にログインします。
     
 2. ログインしたら、**ダッシュボード**を参照します。
     
@@ -120,9 +120,9 @@ Azure の手順を完了したら、 [Microsoft fasttrack ポータル](https://
     
 4. 適用するオファーの詳細については、「**詳細情報**」を選択します。 
     
-  - **Exchange Online と Skype for business:**「 **Exchange サービスの顧客キー** 」で、[**詳細情報**] を選択します。 
+  - **Exchange Online と Skype For business:**「 **Exchange サービスの顧客キー** 」で、[**詳細情報**] を選択します。 
     
-  - **SharePoint Online と OneDrive for business:**「 **SharePoint および OneDrive for business のお客様キー** 」を**参照**してください。 
+  - **SharePoint Online と OneDrive For business:**「 **SharePoint および OneDrive For business のお客様キー** 」を**参照**してください。 
     
 5. [**提供の詳細**] ページで、[**要求の作成**] を選択します。
     
@@ -139,7 +139,7 @@ Azure の手順を完了したら、 [Microsoft fasttrack ポータル](https://
   
 Office 365 チームに連絡する前に、顧客キーで使用する各 Azure サブスクリプションに対して次の手順を実行する必要があります。
   
-1. azure PowerShell を使用して azure サブスクリプションにログインします。 手順については、「 [Azure PowerShell を使用](https://docs.microsoft.com/powershell/azure/authenticate-azureps?view=azurermps-4.3.1)してログインする」を参照してください。
+1. Azure PowerShell を使用して Azure サブスクリプションにログインします。 手順については、「 [Azure PowerShell を使用](https://docs.microsoft.com/powershell/azure/authenticate-azureps?view=azurermps-4.3.1)してログインする」を参照してください。
     
 2. AzureRmProviderFeature コマンドレットを実行して、必須の保持期間を使用するようにサブスクリプションを登録します。
     
@@ -147,7 +147,7 @@ Office 365 チームに連絡する前に、顧客キーで使用する各 Azure
   Register-AzureRmProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.Resources
   ```
 
-3. プロセスを完了させるために、Microsoft にお問い合わせください。 SharePoint および OneDrive for business チームについては、 [spock@microsoft.com](mailto:spock@microsoft.com)にお問い合わせください。 Exchange Online と Skype for business の場合は、 [exock@microsoft.com](mailto:exock@microsoft.com)にお問い合わせください。 このプロセスを完了するためのサービスレベル契約 (SLA) は、Microsoft が事前通知 (および検証) した後で、サブスクリプションを必須の保持期間を使用するように登録した後、5営業日です。 メールに次のものを含めます。
+3. プロセスを完了させるために、Microsoft にお問い合わせください。 SharePoint および OneDrive for Business チームについては、 [spock@microsoft.com](mailto:spock@microsoft.com)にお問い合わせください。 Exchange Online と Skype for Business の場合は、 [exock@microsoft.com](mailto:exock@microsoft.com)にお問い合わせください。 このプロセスを完了するためのサービスレベル契約 (SLA) は、Microsoft が事前通知 (および検証) した後で、サブスクリプションを必須の保持期間を使用するように登録した後、5営業日です。 メールに次のものを含めます。
     
     **件名**: \<*テナントの完全修飾ドメイン名*の顧客キー\> 
     
@@ -170,12 +170,12 @@ Office 365 チームに連絡する前に、顧客キーで使用する各 Azure
 
 キーコンテナーを作成する手順については、「azure[キーコンテナー](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)の概要」で説明されています。このガイドでは、azure PowerShell のインストールと起動、azure サブスクリプションへの接続、リソースグループの作成、およびその場所でのキーコンテナーの作成を実行する方法について説明します。リソースグループ。
   
-キーコンテナーを作成する場合、SKU: Standard または Premium のどちらかを選択する必要があります。 標準 SKU を使用すると、Azure key Vault キーがソフトウェアで保護されます。ハードウェアセキュリティモジュール (HSM) キー保護はありません。また、Premium SKU では、重要な資格情報のキーを保護するために hsm を使用することができます。 顧客キーは、いずれかの sku を使用するキーコンテナーを受け入れますが、Microsoft は Premium sku のみを使用することを強くお勧めします。 どちらの種類のキーを使用する操作のコストも同じであるため、コストの唯一の違いは、各 HSM で保護されたキーの月ごとのコストです。 詳細については、「[主要な資格情報](https://azure.microsoft.com/pricing/details/key-vault/)」を参照してください。 
+キーコンテナーを作成する場合、SKU: Standard または Premium のどちらかを選択する必要があります。 標準 SKU を使用すると、Azure Key Vault キーがソフトウェアで保護されます。ハードウェアセキュリティモジュール (HSM) キー保護はありません。また、Premium SKU では、重要な資格情報のキーを保護するために Hsm を使用することができます。 顧客キーは、いずれかの SKU を使用するキーコンテナーを受け入れますが、Microsoft は Premium SKU のみを使用することを強くお勧めします。 どちらの種類のキーを使用する操作のコストも同じであるため、コストの唯一の違いは、各 HSM で保護されたキーの月ごとのコストです。 詳細については、「[主要な資格情報](https://azure.microsoft.com/pricing/details/key-vault/)」を参照してください。 
   
 > [!IMPORTANT]
-> プレミアム sku キーコンテナーおよび HSM で保護された、運用データ用のキーを使用して、テストおよび検証の目的で標準的な sku キーボルトとキーのみを使用します。 
+> プレミアム SKU キーコンテナーおよび HSM で保護された、運用データ用のキーを使用して、テストおよび検証の目的で標準的な SKU キーボルトとキーのみを使用します。 
   
-顧客キーを使用する Office 365 サービスごとに、作成した2つの Azure サブスクリプションのそれぞれにキーコンテナーを作成します。 たとえば、Exchange Online と Skype for business のみ、または SharePoint online と OneDrive for business の場合のみ、ボルトのペアを1つだけ作成します。 Exchange online と SharePoint online の両方で顧客キーを有効にするには、キーコンテナーの2つのペアを作成します。
+顧客キーを使用する Office 365 サービスごとに、作成した2つの Azure サブスクリプションのそれぞれにキーコンテナーを作成します。 たとえば、Exchange Online と Skype for business のみ、または SharePoint Online と OneDrive for business の場合のみ、ボルトのペアを1つだけ作成します。 Exchange Online と SharePoint Online の両方で顧客キーを有効にするには、キーコンテナーの2つのペアを作成します。
   
 資格を与えるために使用する DEP の使用目的を反映する、キーコンテナーの名前付け規則を使用します。 命名規則の推奨事項については、以下の「ベストプラクティス」セクションを参照してください。
   
@@ -184,7 +184,7 @@ Office 365 チームに連絡する前に、顧客キーで使用する各 Azure
 キーコンテナーの作成には、Azure リソースグループの作成も必要です。これは、キーコンテナーにはストレージ容量が必要です (非常に小さい)。また、キーヴォールトログが有効になっている場合は、保存されたデータも生成します。 ベストプラクティスとして、Microsoft では、個別の管理者を使用して各リソースグループを管理することをお勧めします。管理者は、関連するすべての顧客キーリソースを管理する一連の管理者と連携しています。
   
 > [!IMPORTANT]
-> 可用性を最大限にするには、Office 365 サービスの近くにある地域にキーコンテナーが存在する必要があります。 たとえば、北米に Exchange Online 組織がある場合は、北アメリカにキーコンテナーを配置します。 Exchange Online 組織がヨーロッパの場合は、重要な資格を欧州に配置します。<br/>キーコンテナーに共通のプレフィックスを使用します。また、重要な資格情報の使用およびスコープの省略形を含めることもできます (たとえば、コンテナーが北米に配置される Contoso SharePoint サービスの場合は、名前のペアが O365SP-NA-VaultA1 となり、Contoso-O365SP-VaultA2。 コンテナー名は azure 内のグローバルに一意の文字列なので、目的の名前が他の Azure のお客様によって既に要求されている場合は、目的の名前のバリエーションを試す必要があります。 2017年7月の資格情報を変更することはできません。そのため、セットアップに関する計画を作成し、2番目のユーザーを使用して計画が正常に実行されることを確認することをお勧めします。<br/>可能な場合は、ペアになっていない地域にコンテナーを作成します。 ペアになっている Azure 領域は、サービス障害ドメイン間で高可用性を提供します。 そのため、地域のペアは、互いのバックアップ地域と考えることができます。 これは、1つの領域に配置されている Azure リソースが、ペア化された領域を通じて自動的にフォールトトレランスを獲得することを意味します。 このため、地域がペアになっている場合に、DEP で使用される2つの資格情報領域を選択することは、2つの空き領域が使用されていることを意味します。 ほとんどの地域には2つの地域があるため、ペアになっていない地域を選択することはまだできません。 可能であれば、DEP で使用する2つのコンテナーに対して2つのペアでない地域を選択します。 これは、合計4つの可用性の領域からメリットを得られます。 詳細については、「 [Business 継続性と障害復旧 (bcdr)](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) 」を参照してください。現在の地域のペアの一覧については、「Azure ペアリング領域」を参照してください。 
+> 可用性を最大限にするには、Office 365 サービスの近くにある地域にキーコンテナーが存在する必要があります。 たとえば、北米に Exchange Online 組織がある場合は、北アメリカにキーコンテナーを配置します。 Exchange Online 組織がヨーロッパの場合は、重要な資格を欧州に配置します。<br/>キーコンテナーに共通のプレフィックスを使用します。また、重要な資格情報の使用およびスコープの省略形を含めることもできます (たとえば、コンテナーが北米に配置される Contoso SharePoint サービスの場合は、名前のペアが O365SP-NA-VaultA1 となり、Contoso-O365SP-VaultA2。 コンテナー名は Azure 内のグローバルに一意の文字列なので、目的の名前が他の Azure のお客様によって既に要求されている場合は、目的の名前のバリエーションを試す必要があります。 2017年7月の資格情報を変更することはできません。そのため、セットアップに関する計画を作成し、2番目のユーザーを使用して計画が正常に実行されることを確認することをお勧めします。<br/>可能な場合は、ペアになっていない地域にコンテナーを作成します。 ペアになっている Azure 領域は、サービス障害ドメイン間で高可用性を提供します。 そのため、地域のペアは、互いのバックアップ地域と考えることができます。 これは、1つの領域に配置されている Azure リソースが、ペア化された領域を通じて自動的にフォールトトレランスを獲得することを意味します。 このため、地域がペアになっている場合に、DEP で使用される2つの資格情報領域を選択することは、2つの空き領域が使用されていることを意味します。 ほとんどの地域には2つの地域があるため、ペアになっていない地域を選択することはまだできません。 可能であれば、DEP で使用する2つのコンテナーに対して2つのペアでない地域を選択します。 これは、合計4つの可用性の領域からメリットを得られます。 詳細については、「 [Business 継続性と障害復旧 (BCDR)](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) 」を参照してください。現在の地域のペアの一覧については、「Azure ペアリング領域」を参照してください。 
   
 ### <a name="assign-permissions-to-each-key-vault"></a>各キーコンテナーにアクセス許可を割り当てる
 <a name="KeyVaultPerms"> </a>
@@ -196,7 +196,7 @@ Office 365 チームに連絡する前に、顧客キーで使用する各 Azure
     > [!IMPORTANT]
     > キーコンテナー管理者に割り当てられているアクセス許可のセットには、キーを削除するためのアクセス許可は含まれていません。 これは意図的で重要な手法です。 暗号化キーの削除は、通常、データを完全に破棄するため、通常は行われません。 ベストプラクティスとして、既定では、このアクセス許可を主要な資格情報管理者に付与しないでください。 その代わりに、主要な資格情報投稿者に対してこれを予約し、その結果を明確に理解した後に、短い期間のみ管理者に割り当てるようにしてください。 
   
-    Office 365 組織のユーザーにこれらのアクセス許可を割り当てるには、azure PowerShell を使用して azure サブスクリプションにログインします。 手順については、「 [Azure PowerShell を使用](https://docs.microsoft.com/powershell/azure/authenticate-azureps?view=azurermps-4.3.1)してログインする」を参照してください。
+    Office 365 組織のユーザーにこれらのアクセス許可を割り当てるには、azure PowerShell を使用して Azure サブスクリプションにログインします。 手順については、「 [Azure PowerShell を使用](https://docs.microsoft.com/powershell/azure/authenticate-azureps?view=azurermps-4.3.1)してログインする」を参照してください。
     
 - 必要なアクセス許可を割り当てるには、AzureRmKeyVaultAccessPolicy コマンドレットを実行します。
     
@@ -212,9 +212,9 @@ Office 365 チームに連絡する前に、顧客キーで使用する各 Azure
   -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
   ```
 
-- Azure key vault 自体に対する権限を変更できる**重要な資格情報投稿**者。 これらのアクセス許可を変更する必要があるのは、従業員がチームを脱退するか、チームに参加するか、重要な資格情報管理者がキーを削除または復元するためのアクセス許可を必要とする非常にまれな状況です。 この一連の主要なコンテナー投稿者は、キーコンテナーに対して**投稿者**の役割を付与する必要があります。 この役割は、Azure リソースマネージャーを使用して割り当てることができます。 詳細な手順については、「[役割ベースのアクセス制御を使用して Azure サブスクリプションリソースへのアクセスを管理する](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure)」を参照してください。 サブスクリプションを作成する管理者は、このアクセス権と、他の管理者を共同作成者の役割に割り当てることができます。
+- Azure Key Vault 自体に対する権限を変更できる**重要な資格情報投稿**者。 これらのアクセス許可を変更する必要があるのは、従業員がチームを脱退するか、チームに参加するか、重要な資格情報管理者がキーを削除または復元するためのアクセス許可を必要とする非常にまれな状況です。 この一連の主要なコンテナー投稿者は、キーコンテナーに対して**投稿者**の役割を付与する必要があります。 この役割は、Azure リソースマネージャーを使用して割り当てることができます。 詳細な手順については、「[役割ベースのアクセス制御を使用して Azure サブスクリプションリソースへのアクセスを管理する](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure)」を参照してください。 サブスクリプションを作成する管理者は、このアクセス権と、他の管理者を共同作成者の役割に割り当てることができます。
     
-- exchange online と skype for business で顧客キーを使用する場合は、Office 365 に exchange online と skype for business の代わりにキーヴォールトを使用するためのアクセス許可を付与する必要があります。 同様に、sharepoint online と onedrive for business で顧客キーを使用する場合は、sharepoint online と onedrive for business の代わりにキーコンテナーを使用するために Office 365 にアクセス許可を追加する必要があります。 Office 365 にアクセス許可を付与するには、次の構文を使用して**AzureRmKeyVaultAccessPolicy**コマンドレットを実行します。 
+- Exchange Online と Skype for business で顧客キーを使用する場合は、Office 365 に Exchange Online と Skype for business の代わりにキーヴォールトを使用するためのアクセス許可を付与する必要があります。 同様に、SharePoint Online と OneDrive for business で顧客キーを使用する場合は、SharePoint Online と OneDrive for business の代わりにキーコンテナーを使用するために Office 365 にアクセス許可を追加する必要があります。 Office 365 にアクセス許可を付与するには、次の構文を使用して**AzureRmKeyVaultAccessPolicy**コマンドレットを実行します。 
     
   ```
   Set-AzureRmKeyVaultAccessPolicy -VaultName <vaultname> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
@@ -224,11 +224,11 @@ Office 365 チームに連絡する前に、顧客キーで使用する各 Azure
     
   - *vaultname*は、作成したキーのコンテナーの名前です。 
     
-  - Exchange Online と Skype for business の場合は、 *Office 365 appID*をに置き換えます。`00000002-0000-0ff1-ce00-000000000000`
+  - Exchange Online と Skype for Business の場合は、 *Office 365 appID*をに置き換えます。`00000002-0000-0ff1-ce00-000000000000`
     
   - SharePoint Online と OneDrive for business の場合は、 *Office 365 appID*をに置き換えます。`00000003-0000-0ff1-ce00-000000000000`
     
-  例: Exchange Online と Skype for business のアクセス許可を設定する:
+  例: Exchange Online と Skype for Business のアクセス許可を設定する:
     
   ```
   Set-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 
@@ -288,7 +288,7 @@ Add-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname> -Destination <HSM|So
     > [!TIP]
     > キーコンテナーの場合と同様の命名規則を使用して、名前付きキーを指定します。 このようにすると、キー名のみを表示するツールでは、文字列が自己記述されます。 
   
-- キーを hsm で保護する場合は、 _Destination_パラメーターの値として**hsm**を指定する必要があります。そうでない場合は、**ソフトウェア**を指定します。
+- キーを HSM で保護する場合は、 _Destination_パラメーターの値として**hsm**を指定する必要があります。そうでない場合は、**ソフトウェア**を指定します。
     
 For example,
   
@@ -296,20 +296,20 @@ For example,
 Add-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination Software -KeyOps wrapKey,unwrapKey
 ```
 
-キーを直接キーコンテナーにインポートするには、Thales nshield ハードウェアセキュリティモジュールを用意する必要があります。
+キーを直接キーコンテナーにインポートするには、Thales nShield ハードウェアセキュリティモジュールを用意する必要があります。
   
 一部の組織では、キーの機能を確立するためにこの方法をお勧めします。また、この方法では、次の機能も提供されます。
   
-- インポートに使用されるツールセットには、Thales からの構成証明が含まれています。生成するキー交換キー (kek) はエクスポート可能ではないため、Thales によって製造された正規の HSM の内部で生成されます。
+- インポートに使用されるツールセットには、Thales からの構成証明が含まれています。生成するキー交換キー (KEK) はエクスポート可能ではないため、Thales によって製造された正規の HSM の内部で生成されます。
     
 - ツールセットには、Thales からの構成証明が含まれています。これは、Azure Key Vault セキュリティ world が Thales で製造された正規の HSM でも生成されたことです。 この構成証明は、Microsoft が正規の Thales ハードウェアを使用していることを証明します。
     
-セキュリティグループに確認して、上記の attestations が必要かどうかを確認してください。 オンプレミスのキーを作成してキーコンテナーにインポートする詳細な手順については、「 [Azure key vault 用に HSM で保護されたキーを生成して転送する方法](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/)」を参照してください。 各キーコンテナーにキーを作成するには、Azure の手順を使用します。
+セキュリティグループに確認して、上記の attestations が必要かどうかを確認してください。 オンプレミスのキーを作成してキーコンテナーにインポートする詳細な手順については、「 [Azure Key vault 用に HSM で保護されたキーを生成して転送する方法](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/)」を参照してください。 各キーコンテナーにキーを作成するには、Azure の手順を使用します。
   
 ### <a name="check-the-recovery-level-of-your-keys"></a>キーの回復レベルを確認する
 <a name="CheckKeyRecoveryLevel"> </a>
 
-Office 365 では、Azure key Vault サブスクリプションがキャンセルされないように設定されている必要があります。また、顧客キーで使用されるキーには、ソフト削除が有効になっています。 このことを確認するには、キーの回復レベルを参照してください。
+Office 365 では、Azure Key Vault サブスクリプションがキャンセルされないように設定されている必要があります。また、顧客キーで使用されるキーには、ソフト削除が有効になっています。 このことを確認するには、キーの回復レベルを参照してください。
   
 キーの復旧レベルを確認するには、Azure PowerShell で、次のように AzureKeyVaultKey コマンドレットを実行します。
   
@@ -322,9 +322,9 @@ _回復レベル_プロパティが、回復**可能 + ProtectedSubscription**�
 ### <a name="backup-azure-key-vault"></a>Azure Key Vault のバックアップ
 <a name="BackupAzureKeyVaultkeys"> </a>
 
-作成またはキーへの変更の直後に、バックアップを実行し、オンラインとオフラインの両方でバックアップとストアのコピーを行います。 オフラインコピーは、物理的な安全または商用ストレージ機能などのネットワークに接続することはできません。 バックアップの少なくとも1つは、障害が発生した場合にアクセスできる場所に格納する必要があります。 バックアップ blob はキーマテリアルを復元するための唯一の手段です。キーコンテナーキーを完全に破棄するか、またはその他の方法で操作できないようにする必要があります。 azure key vault の外部にあるキーは、キーを使用するために必要なメタデータが外部キーに存在しないため、バックアップとして認定されません。 顧客キーを使用した復元操作には、Azure Key Vault から取得したバックアップのみを使用できます。 したがって、キーをアップロードまたは作成した後に、Azure key Vault のバックアップを作成することが重要です。
+作成またはキーへの変更の直後に、バックアップを実行し、オンラインとオフラインの両方でバックアップとストアのコピーを行います。 オフラインコピーは、物理的な安全または商用ストレージ機能などのネットワークに接続することはできません。 バックアップの少なくとも1つは、障害が発生した場合にアクセスできる場所に格納する必要があります。 バックアップ blob はキーマテリアルを復元するための唯一の手段です。キーコンテナーキーを完全に破棄するか、またはその他の方法で操作できないようにする必要があります。 Azure key vault の外部にあるキーは、キーを使用するために必要なメタデータが外部キーに存在しないため、バックアップとして認定されません。 顧客キーを使用した復元操作には、Azure Key Vault から取得したバックアップのみを使用できます。 したがって、キーをアップロードまたは作成した後に、Azure Key Vault のバックアップを作成することが重要です。
   
-Azure key Vault キーのバックアップを作成するには、次のように[AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Backup-AzureKeyVaultKey)コマンドレットを実行します。
+Azure Key Vault キーのバックアップを作成するには、次のように[AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Backup-AzureKeyVaultKey)コマンドレットを実行します。
 ```
 Backup-AzureKeyVaultKey -VaultName <vaultname> -Name <keyname> 
 -OutputFile <filename .backup>
@@ -347,7 +347,7 @@ Backup-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365E
 ### <a name="validate-azure-key-vault-configuration-settings"></a>Azure Key Vault 構成設定を検証する
 <a name="Validateconfiguration"> </a>
 
-DEP でキーを使用する前に検証を実行することはオプションですが、強くお勧めします。 特に、手順を使用して、このトピックで説明されているもの以外のキーとボルトを設定する場合は、顧客キーを構成する前に、Azure key Vault のリソースの状態を検証する必要があります。
+DEP でキーを使用する前に検証を実行することはオプションですが、強くお勧めします。 特に、手順を使用して、このトピックで説明されているもの以外のキーとボルトを設定する場合は、顧客キーを構成する前に、Azure Key Vault のリソースの状態を検証する必要があります。
   
 キーに get、wrapKey、および unwrapKey 操作が有効になっていることを確認するには、次の操作を行います。
   
@@ -357,7 +357,7 @@ DEP でキーを使用する前に検証を実行することはオプション�
 Get-AzureRMKeyVault -VaultName <vaultname>
 ```
 
-出力で、必要に応じて、アクセスポリシーと Exchange online id (guid) または SharePoint online id (guid) を探します。 上記の3つのアクセス許可のすべてを [キーへのアクセス許可] の下に表示する必要があります。
+出力で、必要に応じて、アクセスポリシーと Exchange Online id (GUID) または SharePoint Online id (GUID) を探します。 上記の3つのアクセス許可のすべてを [キーへのアクセス許可] の下に表示する必要があります。
   
 アクセスポリシーの構成が正しくない場合は、次のように AzureRmKeyVaultAccessPolicy コマンドレットを実行します。
   
@@ -365,7 +365,7 @@ Get-AzureRMKeyVault -VaultName <vaultname>
 Set-AzureRmKeyVaultAccessPolicy -VaultName <vaultname> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
 ```
 
-たとえば、Exchange Online と Skype for business の場合は次のようになります。
+たとえば、Exchange Online と Skype for Business の場合は次のようになります。
   
 ```
 Set-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 
@@ -397,10 +397,10 @@ Set-AzureKeyVaultKeyAttribute -VaultName <vaultname> -Name <keyname>
 > [!CAUTION]
 > 顧客キーで使用する暗号化キーに有効期限を設定しないようにします。 
   
-### <a name="obtain-the-uri-for-each-azure-key-vault-key"></a>各 Azure key Vault キーの URI を取得する
+### <a name="obtain-the-uri-for-each-azure-key-vault-key"></a>各 Azure Key Vault キーの URI を取得する
 <a name="GetKeyURI"> </a>
 
-キーコンテナーを設定してキーを追加するために Azure のすべての手順を完了したら、次のコマンドを実行して、各キーコンテナーのキーの URI を取得します。 後で各 DEP を作成して割り当てるときにこれらの uri を使用する必要があるので、この情報は安全な場所に保存しておいてください。 このコマンドは、キーヴォールトごとに1回実行してください。
+キーコンテナーを設定してキーを追加するために Azure のすべての手順を完了したら、次のコマンドを実行して、各キーコンテナーのキーの URI を取得します。 後で各 DEP を作成して割り当てるときにこれらの Uri を使用する必要があるので、この情報は安全な場所に保存しておいてください。 このコマンドは、キーヴォールトごとに1回実行してください。
   
 Azure PowerShell の場合:
   
@@ -408,23 +408,23 @@ Azure PowerShell の場合:
 (Get-AzureKeyVaultKey -VaultName <vaultname>).Id
 ```
 
-## <a name="office-365-setting-up-customer-key-for-exchange-online-and-skype-for-business"></a>Office 365: Exchange Online と Skype for business の顧客キーの設定
+## <a name="office-365-setting-up-customer-key-for-exchange-online-and-skype-for-business"></a>Office 365: Exchange Online と Skype for Business の顧客キーの設定
 <a name="AzureSteps"> </a>
 
-開始する前に、Azure Key Vault をセットアップするために必要なタスクを完了していることを確認してください。 詳細については[、「Azure key Vault でタスクを完了する」および「Microsoft fasttrack for Customer key](controlling-your-data-using-customer-key.md#AzureSteps) 」を参照してください。 
+開始する前に、Azure Key Vault をセットアップするために必要なタスクを完了していることを確認してください。 詳細については[、「Azure Key Vault でタスクを完了する」および「Microsoft FastTrack For Customer key](controlling-your-data-using-customer-key.md#AzureSteps) 」を参照してください。 
   
-exchange online と Skype for business の顧客キーを設定するには、Windows PowerShell を使用して exchange online にリモートで接続することにより、これらの手順を実行する必要があります。
+Exchange Online と Skype for Business の顧客キーを設定するには、Windows PowerShell を使用して Exchange Online にリモートで接続することにより、これらの手順を実行する必要があります。
   
-### <a name="create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business"></a>Exchange Online と Skype for business で使用するデータ暗号化ポリシー (DEP) を作成する
+### <a name="create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business"></a>Exchange Online と Skype for Business で使用するデータ暗号化ポリシー (DEP) を作成する
 <a name="CreateDEP4EXOSkype"> </a>
 
-DEP は、Azure Key Vault に格納されているキーのセットに関連付けられています。 Office 365 で、メールボックスに DEP を割り当てます。 Office 365 は、ポリシーで識別されたキーを使用して、メールボックスを暗号化します。 DEP を作成するには、前の手順で取得したキーの資格情報 uri が必要です。 手順については[、「Azure key Vault キーごとに URI を取得](controlling-your-data-using-customer-key.md#GetKeyURI)する」を参照してください。 
+DEP は、Azure Key Vault に格納されているキーのセットに関連付けられています。 Office 365 で、メールボックスに DEP を割り当てます。 Office 365 は、ポリシーで識別されたキーを使用して、メールボックスを暗号化します。 DEP を作成するには、前の手順で取得したキーの資格情報 Uri が必要です。 手順については[、「Azure Key Vault キーごとに URI を取得](controlling-your-data-using-customer-key.md#GetKeyURI)する」を参照してください。 
   
 念頭! DEP を作成するときには、2つの異なる Azure キーボルトに存在する2つのキーを指定します。 これらのキーが、地理的冗長性を確保するために2つの独立した Azure 領域に配置されていることを確認します。
   
 DEP を作成するには、次の手順を実行します。
   
-1. ローカルコンピューターで、Office 365 組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows powershell を開いて次のコマンドを実行して、 [Exchange Online powershell に接続](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx)します。 
+1. ローカルコンピューターで、Office 365 組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell を開いて次のコマンドを実行して、 [Exchange Online powershell に接続](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx)します。 
     
    ```
    $UserCredential = Get-Credential
@@ -442,7 +442,7 @@ DEP を作成するには、次の手順を実行します。
    Import-PSSession $Session
    ```
 
-4. DEP を作成するには、次のコマンドを入力して、新しい-dataencryptionpolicy コマンドレットを使用します。
+4. DEP を作成するには、次のコマンドを入力して、新しい-DataEncryptionPolicy コマンドレットを使用します。
     
    ```
    New-DataEncryptionPolicy -Name <PolicyName> -Description "PolicyDescription " -AzureKeyIDs <KeyVaultURI1>, <KeyVaultURI2>
@@ -456,7 +456,7 @@ DEP を作成するには、次の手順を実行します。
     
    -  *KeyVaultURI1*は、ポリシー内の最初のキーの URI です。 たとえば、https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01 などです。 
     
-   -  *KeyVaultURI2*は、ポリシーの2番目のキーの URI です。 たとえば、https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02 などです。 2つの uri をコンマとスペースで区切ります。 
+   -  *KeyVaultURI2*は、ポリシーの2番目のキーの URI です。 たとえば、https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02 などです。 2つの Uri をコンマとスペースで区切ります。 
     
    例:
   
@@ -478,9 +478,9 @@ Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ### <a name="validate-mailbox-encryption"></a>メールボックスの暗号化を検証する
 <a name="validatemailboxencryption"> </a>
 
-メールボックスを暗号化するには、しばらく時間がかかることがあります。 最初にポリシーを割り当てる場合、メールボックスは、サービスがメールボックスを暗号化する前に、あるデータベースから別のデータベースへの移動も完了する必要があります。 dep を変更した後、または初めてメールボックスに dep を割り当てるときに、暗号化の検証を試行する前に、72時間待つことをお勧めします。
+メールボックスを暗号化するには、しばらく時間がかかることがあります。 最初にポリシーを割り当てる場合、メールボックスは、サービスがメールボックスを暗号化する前に、あるデータベースから別のデータベースへの移動も完了する必要があります。 DEP を変更した後、または初めてメールボックスに DEP を割り当てるときに、暗号化の検証を試行する前に、72時間待つことをお勧めします。
   
-メールボックスが暗号化されているかどうかを確認するには、get-mailboxstatistics コマンドレットを使用します。
+メールボックスが暗号化されているかどうかを確認するには、Get-mailboxstatistics コマンドレットを使用します。
   
 ```
 Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEncrypted
@@ -488,7 +488,7 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 IsEncrypted プロパティは、メールボックスが暗号化されている場合は**true**の値を返し、メールボックスが暗号化されていない場合は**false**の値を返します。 
 
-メールボックスの移動が完了するまでの時間は、最初に DEP を割り当てるメールボックスの数、およびメールボックスのサイズによって異なります。 DEP を割り当てたときから1週間後にメールボックスが暗号化されていない場合は、new-moverequest コマンドレットを使用して、暗号化されていないメールボックスのメールボックスの移動を開始します。
+メールボックスの移動が完了するまでの時間は、最初に DEP を割り当てるメールボックスの数、およびメールボックスのサイズによって異なります。 DEP を割り当てたときから1週間後にメールボックスが暗号化されていない場合は、New-moverequest コマンドレットを使用して、暗号化されていないメールボックスのメールボックスの移動を開始します。
 
 ```
 New-MoveRequest <mailbox alias>
@@ -497,14 +497,14 @@ New-MoveRequest <mailbox alias>
 ## <a name="office-365-setting-up-customer-key-for-sharepoint-online-and-onedrive-for-business"></a>Office 365: SharePoint Online と OneDrive for business の顧客キーの設定
 <a name="AzureSteps"> </a>
 
-開始する前に、Azure Key Vault をセットアップするために必要なタスクを完了していることを確認してください。 詳細については[、「Azure key Vault でタスクを完了する」および「Microsoft fasttrack for Customer key](controlling-your-data-using-customer-key.md#AzureSteps) 」を参照してください。 
+開始する前に、Azure Key Vault をセットアップするために必要なタスクを完了していることを確認してください。 詳細については[、「Azure Key Vault でタスクを完了する」および「Microsoft FastTrack For Customer key](controlling-your-data-using-customer-key.md#AzureSteps) 」を参照してください。 
   
-sharepoint online と OneDrive for business の顧客キーを設定するには、Windows PowerShell を使用して sharepoint online にリモートで接続することにより、これらの手順を実行する必要があります。
+SharePoint Online と OneDrive for business の顧客キーを設定するには、Windows PowerShell を使用して SharePoint Online にリモートで接続することにより、これらの手順を実行する必要があります。
   
 ### <a name="create-a-data-encryption-policy-dep-for-each-sharepoint-online-and-onedrive-for-business-geo"></a>SharePoint Online と OneDrive for business の各 geo にデータ暗号化ポリシー (DEP) を作成する
 <a name="CreateDEP4SPOODfB"> </a>
 
-DEP は、Azure Key Vault に格納されているキーのセットに関連付けられています。 1つの地理的な場所 (geo とも呼ばれます) 内のすべてのデータに DEP を適用します。 Office 365 の複数地域機能を使用している場合 (現在プレビュー中)、geo ごとに1つの DEP を作成できます。 複数地域を使用していない場合は、SharePoint Online と OneDrive for business で使用するために、1つの DEP を Office 365 で作成できます。 Office 365 は、DEP で識別されたキーを使用して、その地域のデータを暗号化します。 DEP を作成するには、前の手順で取得したキーの資格情報 uri が必要です。 手順については[、「Azure key Vault キーごとに URI を取得](controlling-your-data-using-customer-key.md#GetKeyURI)する」を参照してください。 
+DEP は、Azure Key Vault に格納されているキーのセットに関連付けられています。 1つの地理的な場所 (geo とも呼ばれます) 内のすべてのデータに DEP を適用します。 Office 365 の複数地域機能を使用している場合 (現在プレビュー中)、geo ごとに1つの DEP を作成できます。 複数地域を使用していない場合は、SharePoint Online と OneDrive for business で使用するために、1つの DEP を Office 365 で作成できます。 Office 365 は、DEP で識別されたキーを使用して、その地域のデータを暗号化します。 DEP を作成するには、前の手順で取得したキーの資格情報 Uri が必要です。 手順については[、「Azure Key Vault キーごとに URI を取得](controlling-your-data-using-customer-key.md#GetKeyURI)する」を参照してください。 
   
 念頭! DEP を作成するときには、2つの異なる Azure キーボルトに存在する2つのキーを指定します。 これらのキーが、地理的冗長性を確保するために2つの独立した Azure 領域に配置されていることを確認します。
   
@@ -520,10 +520,10 @@ DEP を作成するには、Windows PowerShell を使用して SharePoint Online
 
    DEP を登録すると、暗号化は geo のデータに対して開始されます。 これには、しばらく時間がかかることがあります。
     
-### <a name="validate-encryption-of-group-sites-team-sites-and-onedrive-for-business"></a>グループサイト、チームサイト、および OneDrive for business の暗号化を検証する
+### <a name="validate-encryption-of-group-sites-team-sites-and-onedrive-for-business"></a>グループサイト、チームサイト、および OneDrive for Business の暗号化を検証する
 <a name="validateencryptionSPO"> </a>
 
-get-spodataencryptionpolicy コマンドレットを次のように実行して、暗号化の状態を確認できます。
+Get-spodataencryptionpolicy コマンドレットを次のように実行して、暗号化の状態を確認できます。
   
 ```
 Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
@@ -535,15 +535,15 @@ Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
     
 - セカンダリキーの URI。
     
-- geo の暗号化の状態。 次の状態が考えられます。
+- Geo の暗号化の状態。 次の状態が考えられます。
     
   - **未登録:** 顧客キーの暗号化はまだ適用されていません。 
     
-  - **登録:** 顧客キーの暗号化が適用され、ファイルが暗号化されています。 geo がこの状態にある場合は、暗号化の進行状況を監視できるように、地域内のサイトの割合がどれだけ完了しているかに関する情報も表示されます。 
+  - **登録:** 顧客キーの暗号化が適用され、ファイルが暗号化されています。 Geo がこの状態にある場合は、暗号化の進行状況を監視できるように、地域内のサイトの割合がどれだけ完了しているかに関する情報も表示されます。 
     
   - **登録済み:** 顧客キーの暗号化が適用され、すべてのサイトのすべてのファイルが暗号化されました。 
     
-  - **ローリング:** キーロールが進行中です。 geo がこの状態にある場合は、進行状況を監視できるように、キーロール操作を完了したサイトの割合に関する情報も表示されます。 
+  - **ローリング:** キーロールが進行中です。 Geo がこの状態にある場合は、進行状況を監視できるように、キーロール操作を完了したサイトの割合に関する情報も表示されます。 
     
 ## <a name="managing-customer-key-for-office-365"></a>Office 用の顧客キーの管理365
 <a name="ManageCustomerKey"> </a>
@@ -552,7 +552,7 @@ Office 365 の顧客キーを設定した後、これらの追加の管理タス
   
 - [Azure Key Vault キーを復元する](controlling-your-data-using-customer-key.md#RestoreAzureKeyVaultKeys)
     
-- [顧客キーと共に使用する Azure key Vault でキーをローリングまたは回転する](controlling-your-data-using-customer-key.md#RollCKkey)
+- [顧客キーと共に使用する Azure Key Vault でキーをローリングまたは回転する](controlling-your-data-using-customer-key.md#RollCKkey)
     
 - [キーコンテナーのアクセス許可を管理する](controlling-your-data-using-customer-key.md#Managekeyvaultperms)
     
@@ -575,10 +575,10 @@ Restore-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso
 
 同じ名前を持つキーがキーコンテナーに既に存在する場合、復元操作は失敗します。 AzureKeyVaultKey は、キーの名前を含むキーのすべてのキーバージョンとすべてのメタデータを復元します。
   
-### <a name="rolling-or-rotating-a-key-in-azure-key-vault-that-you-use-with-customer-key"></a>顧客キーと共に使用する Azure key Vault でキーをローリングまたは回転する
+### <a name="rolling-or-rotating-a-key-in-azure-key-vault-that-you-use-with-customer-key"></a>顧客キーと共に使用する Azure Key Vault でキーをローリングまたは回転する
 <a name="RollCKkey"> </a>
 
-キーのローリングは、Azure key Vault または顧客キーでは必要ありません。 さらに、HSM で保護されているキーは、実質的には危険にさらすことは不可能です。 ルートキーが悪意のある出演者に所有されている場合でも、Office 365 コードのみがその使用方法を認識しているため、これを使用してデータの暗号化を解除することはできません。 ただし、キーのロールは顧客キーでサポートされています。
+キーのローリングは、Azure Key Vault または顧客キーでは必要ありません。 さらに、HSM で保護されているキーは、実質的には危険にさらすことは不可能です。 ルートキーが悪意のある出演者に所有されている場合でも、Office 365 コードのみがその使用方法を認識しているため、これを使用してデータの暗号化を解除することはできません。 ただし、キーのロールは顧客キーでサポートされています。
   
 > [!CAUTION]
 > お客様キーと一緒に使用する暗号化キーをロールするのは、明確な技術的理由が存在するか、コンプライアンスの要件によってキーをロールする必要がある場合のみにしてください。 また、ポリシーに関連付けられている、またはポリシーに関連付けられていたキーは削除しないでください。 キーをロールすると、以前のキーを使用してコンテンツが暗号化されます。 たとえば、アクティブなメールボックスは頻繁に再暗号化されますが、非アクティブ、切断済み、および無効になったメールボックスは、以前のキーで暗号化されたままになります。 SharePoint Online は復元と回復のためにコンテンツのバックアップを実行するので、古いキーを使用してアーカイブされたコンテンツが残っている場合があります。 <br/> データの安全性を確保するために、SharePoint Online では一度に1つのキーロール操作を実行することはできません。 キーコンテナーで両方のキーをロールバックする場合は、最初のキーロール操作が完全に完了するまで待機する必要があります。 重要な役割の操作をさまざまな間隔でずらして、これが問題にならないようにすることをお勧めします。 
@@ -593,27 +593,27 @@ Add-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-N
 
 この例では、 **VaultA1-Key001**という名前のキーが O365EX に既に存在して**** いるため、新しいキーバージョンが作成されます。 操作によって新しいキーバージョンが追加されます。 この操作では、以前のキーバージョンがキーのバージョン履歴で保持されるため、以前にキーを使用して暗号化されたデータを復号化することができます。 DEP に関連付けられているキーのすべてのロールアウトを完了したら、追加のコマンドレットを実行して、顧客キーが新しいキーを使用するようにする必要があります。 
   
-#### <a name="enable-exchange-online-and-skype-for-business-to-use-a-new-key-after-you-roll-or-rotate-keys-in-azure-key-vault"></a>Azure key Vault でキーをロールまたは回転した後、Exchange Online と Skype for business が新しいキーを使用できるようにする
+#### <a name="enable-exchange-online-and-skype-for-business-to-use-a-new-key-after-you-roll-or-rotate-keys-in-azure-key-vault"></a>Azure Key Vault でキーをロールまたは回転した後、Exchange Online と Skype for Business が新しいキーを使用できるようにする
 
-Exchange Online と Skype for business で使用される dep に関連付けられている Azure キーヴォールトキーのいずれかをロールバックする場合は、次のコマンドを実行して dep を更新し、Office 365 を有効にして新しいキーの使用を開始する必要があります。
+Exchange Online と Skype for Business で使用される DEP に関連付けられている Azure キーヴォールトキーのいずれかをロールバックする場合は、次のコマンドを実行して DEP を更新し、Office 365 を有効にして新しいキーの使用を開始する必要があります。
   
-Office 365 でメールボックスを暗号化するために新しいキーを使用するよう顧客キーに指示するには、次のように、Set-dataencryptionpolicy コマンドレットを実行します。
+Office 365 でメールボックスを暗号化するために新しいキーを使用するよう顧客キーに指示するには、次のように、Set-DataEncryptionPolicy コマンドレットを実行します。
   
 ```
 Set-DataEncryptionPolicy <policyname> -Refresh 
 ```
 
-48時間以内に、このポリシーを使用して暗号化されたアクティブなメールボックスは、更新されたキーに関連付けられます。 「[メールボックスに対して DEP が割り当てられているかどうかを判断](controlling-your-data-using-customer-key.md#DeterminemailboxDEP)する」の手順を使用して、メールボックスの dataencryptionpolicyid プロパティの値を確認します。 更新したキーが適用されると、このプロパティの値が変更されます。 
+48時間以内に、このポリシーを使用して暗号化されたアクティブなメールボックスは、更新されたキーに関連付けられます。 「[メールボックスに対して DEP が割り当てられているかどうかを判断](controlling-your-data-using-customer-key.md#DeterminemailboxDEP)する」の手順を使用して、メールボックスの DataEncryptionPolicyID プロパティの値を確認します。 更新したキーが適用されると、このプロパティの値が変更されます。 
   
-#### <a name="enable-sharepoint-online-and-onedrive-for-business-to-use-a-new-key-after-you-roll-or-rotate-keys-in-azure-key-vault"></a>Azure key Vault でキーをロールまたは回転した後、SharePoint Online と OneDrive for business で新しいキーを使用できるようにする
+#### <a name="enable-sharepoint-online-and-onedrive-for-business-to-use-a-new-key-after-you-roll-or-rotate-keys-in-azure-key-vault"></a>Azure Key Vault でキーをロールまたは回転した後、SharePoint Online と OneDrive for Business で新しいキーを使用できるようにする
 
-SharePoint Online と OneDrive for business で使用される dep に関連付けられている Azure キーヴォールトキーのいずれかをロールする場合は、 [get-spodataencryptionpolicy](https://technet.microsoft.com/library/mt843948.aspx)コマンドレットを実行して dep を更新し、Office 365 を有効にして新しいキーの使用を開始する必要があります。 
+SharePoint Online と OneDrive for business で使用される DEP に関連付けられている Azure キーヴォールトキーのいずれかをロールする場合は、 [get-spodataencryptionpolicy](https://technet.microsoft.com/library/mt843948.aspx)コマンドレットを実行して dep を更新し、Office 365 を有効にして新しいキーの使用を開始する必要があります。 
   
 ```
 Update-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl> -KeyVaultName <ReplacementKeyVaultName> -KeyName <ReplacementKeyName> -KeyVersion <ReplacementKeyVersion> -KeyType <Primary | Secondary>
 ```
 
-これにより、SharePoint Online と OneDrive for business のキーロール操作が開始されます。 このアクションは、すぐには実行されません。 キーロール操作の進行状況を確認するには、次のように get-spodataencryptionpolicy コマンドレットを実行します。
+これにより、SharePoint Online と OneDrive for business のキーロール操作が開始されます。 このアクションは、すぐには実行されません。 キーロール操作の進行状況を確認するには、次のように Get-spodataencryptionpolicy コマンドレットを実行します。
   
 ```
 Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
@@ -653,13 +653,13 @@ Remove-AzureRmKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1
 ### <a name="determine-the-dep-assigned-to-a-mailbox"></a>メールボックスに割り当てられた DEP を決定する
 <a name="DeterminemailboxDEP"> </a>
 
-メールボックスに割り当てられている DEP を特定するには、get-mailboxstatistics コマンドレットを使用します。 コマンドレットは、一意の識別子 (GUID) を返します。
+メールボックスに割り当てられている DEP を特定するには、Get-mailboxstatistics コマンドレットを使用します。 コマンドレットは、一意の識別子 (GUID) を返します。
   
 ```
 Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
 ```
 
-ここで、 *GeneralMailboxOrMailUserIdParameter*はメールボックスを指定します。 get-mailboxstatistics コマンドレットの詳細については、「 [get-mailboxstatistics](https://technet.microsoft.com/library/bb124612%28v=exchg.160%29.aspx)」を参照してください。
+ここで、 *GeneralMailboxOrMailUserIdParameter*はメールボックスを指定します。 Get-mailboxstatistics コマンドレットの詳細については、「 [get-mailboxstatistics](https://technet.microsoft.com/library/bb124612%28v=exchg.160%29.aspx)」を参照してください。
   
 GUID を使用して、次のコマンドレットを実行して、メールボックスが割り当てられている DEP のフレンドリ名を検索します。
   
