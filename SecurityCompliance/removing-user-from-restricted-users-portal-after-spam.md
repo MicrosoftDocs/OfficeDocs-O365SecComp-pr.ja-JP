@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 03/12/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 f1_keywords:
 - ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers
@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: ユーザーが、スパムとして分類された Office 365 から電子メールを継続的に送信した場合、それ以上メッセージを送信することはできません。
-ms.openlocfilehash: a4f22b4d5192df202c1caa19714e8b5476dd8205
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7a44ff7f2bcf88f2132ee4c372cc11b9657dd16a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264939"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157249"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>迷惑メールを送信した後で制限付きユーザー ポータルからユーザーを削除する
 
@@ -29,7 +29,7 @@ ms.locfileid: "32264939"
 
 - 有効な送信者として認識されなかったため、メッセージを配信できませんでした。 最も一般的な理由は、メールアドレスがスパムを送信している可能性があり、組織外のメッセージを送信することが許可されなくなったためです。 詳細については、メール管理者に問い合わせてください。 リモートサーバーが ' 550 5.1.8 アクセスが拒否されましたが、正しくない送信送信者 ' が返されました
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>事前に必要な知識
 <a name="sectionSection0"> </a>
 
 予想所要時間 : 5 分
@@ -40,9 +40,9 @@ ms.locfileid: "32264939"
 
 ## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>ブロックされた Office 365 メールアカウントの制限を削除する
 
-このタスクは、Security & コンプライアンスセンター (SCC) で完了します。 SCC の詳細について[は、「Security & コンプライアンスセンター」を参照](go-to-the-securitycompliance-center.md)してください。 これらの機能を実行するには、**組織の管理**または**セキュリティ管理者**の役割グループに所属している必要があります。 SCC の役割グループの詳細について[は、「Security & コンプライアンスセンター」の「アクセス許可」を参照](permissions-in-the-security-and-compliance-center.md)してください。
+このタスクは、Security & コンプライアンスセンター (SCC) で完了します。 SCC の詳細について[は、「Security _AMP_ コンプライアンスセンター」を参照](go-to-the-securitycompliance-center.md)してください。 これらの機能を実行するには、**組織の管理**または**セキュリティ管理者**の役割グループに所属している必要があります。 SCC の役割グループの詳細について[は、「Security _AMP_ コンプライアンスセンター」の「アクセス許可」を参照](permissions-in-the-security-and-compliance-center.md)してください。
 
-1. office 365 のグローバル管理者特権を持つ職場または学校のアカウントを使用して、office 365 セキュリティ/コンプライアンスセンターにサインインし、左側の一覧で [**脅威の管理**] を展開し、[**レビュー**] を選択して、[制限あり] を選択します。 **ユーザー**。
+1. Office 365 のグローバル管理者特権を持つ職場または学校のアカウントを使用して、Office 365 セキュリティ/コンプライアンスセンターにサインインし、左側の一覧で [**脅威の管理**] を展開し、[**レビュー**] を選択して、[制限あり] を選択します。 **ユーザー**。
     
     > [!TIP]
     > セキュリティ&amp; /コンプライアンスセンターの [制限された**ユーザー** ] ページ (以前のアクションセンター) に直接移動するには、次の URL を使用します。 >[https://protection.office.com/#/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
@@ -60,7 +60,7 @@ ms.locfileid: "32264939"
 
 ## <a name="making-sure-admins-are-alerted-when-this-happens"></a>この問題が発生した場合に管理者に警告を出す
 
-また、テナント管理者は、ユーザーがその他の送信メッセージの送信を制限していることを示す警告を受信します。 これは、すべてのテナントに対して提供され、[SCC alert policies] ページに一覧表示されます (「ユーザーがメールを送信して制限」というタイトルが付いています)。 警告の詳細について[は、「Security & コンプライアンスセンターのアラートポリシー」](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies)を参照してください。
+また、テナント管理者は、ユーザーがその他の送信メッセージの送信を制限していることを示す警告を受信します。 これは、すべてのテナントに対して提供され、[SCC Alert policies] ページに一覧表示されます (「ユーザーがメールを送信して制限」というタイトルが付いています)。 警告の詳細について[は、「Security _AMP_ コンプライアンスセンターのアラートポリシー」](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies)を参照してください。
 
 ## <a name="for-more-information"></a>関連情報
 

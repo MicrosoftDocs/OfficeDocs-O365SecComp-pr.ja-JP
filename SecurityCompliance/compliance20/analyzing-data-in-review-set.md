@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c765234e1aa0738415f66f90b66ebce0fcab2505
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: cfed07d473f2af367de4cb2e9fe924a29e4123cd
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527213"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155209"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>高度な電子情報開示のレビューセットのデータを分析する
 

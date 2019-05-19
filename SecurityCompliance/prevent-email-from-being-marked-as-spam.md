@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 6/7/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 で誤検知が発生しないようにして、正しいメールが迷惑メールにならないようにする方法について説明します。
-ms.openlocfilehash: ecce497269030945457344122a9a218105369be2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c49bd519adf6c66f7f8c6c97fb7a24a0c7f85a99
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261239"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157479"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Office 365 でメールが迷惑メールとしてマークされるのを防ぐ方法
 
@@ -45,7 +45,8 @@ Office 365 での迷惑メールに関する多くの問題は、[電子メー�
     
 - **SFV:SKB** メッセージは迷惑メール フィルター ポリシーの拒否リストと一致したために迷惑メールとしてマークされたことを示します。 
     
-- **SFV:BULK** x-microsoft-antispam ヘッダーにある Bulk Complaint Level (BCL) 値が、コンテンツ フィルターに設定されているバルクしきい値を超えていることを示します。バルク メールとは、ユーザーはサインアップした可能性があるとしても望ましくないと思われるメールのことです。メッセージ ヘッダーで、X-Microsoft-Antispam ヘッダーの中の BCL (Bulk Confidence Level) プロパティを見つけます。迷惑メール フィルターに設定されたしきい値よりも BCL 値の方が小さければ、これらのタイプのバルク メッセージを迷惑メールとしてマークするようにしきい値を調整することが必要になる場合があります。[バルク メールの処理](https://docs.microsoft.com/ja-JP/office365/SecurityCompliance/bulk-complaint-level-values)に関する許容度とユーザー設定はユーザーによって異なります。ユーザー設定ごとに異なるポリシーやルールを作成できます。
+- 
+  **SFV:BULK** x-microsoft-antispam ヘッダーにある Bulk Complaint Level (BCL) 値が、コンテンツ フィルターに設定されているバルクしきい値を超えていることを示します。バルク メールとは、ユーザーはサインアップした可能性があるとしても望ましくないと思われるメールのことです。メッセージ ヘッダーで、X-Microsoft-Antispam ヘッダーの中の BCL (Bulk Confidence Level) プロパティを見つけます。迷惑メール フィルターに設定されたしきい値よりも BCL 値の方が小さければ、これらのタイプのバルク メッセージを迷惑メールとしてマークするようにしきい値を調整することが必要になる場合があります。[バルク メールの処理](https://docs.microsoft.com/ja-JP/office365/SecurityCompliance/bulk-complaint-level-values)に関する許容度とユーザー設定はユーザーによって異なります。ユーザー設定ごとに異なるポリシーやルールを作成できます。
     
 - **CAT:SPOOF** または **CAT:PHISH** メッセージはなりすましと思われることを示します。つまり、メッセージ ソースは検証できないため、疑わしい可能性があるということです。有効であるなら、送信元は SPF と DKIM が適切に構成されていることを確認する必要があります。詳細については、Authentication-Results ヘッダーを確認してください。すべての送信元に適切なメール認証方法を使用させるのは難しいかもしれませんが、こうした確認を省略することは極めて危険であり、侵害の一番の原因です。 
     
@@ -63,7 +64,8 @@ Exchange Online Protection (EOP) が効率的に機能するためには、い�
     
 - **ユーザーのメッセージ報告アドインをオンにする** [ユーザーのメッセージ報告アドインを有効にする](enable-the-report-message-add-in.md)ことを強くお勧めします。管理者は、ユーザーが送信しているフィードバックを調べ、あらゆるパターンを使用して、問題の原因と思われる設定を調整することもできます。
 
-- **ユーザーが電子メールの送受信に関する制限の許容範囲内にあることを確認する** (制限の詳細については、[ここ](https://docs.microsoft.com/ja-JP/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)を参照)。
+- 
+  **ユーザーが電子メールの送受信に関する制限の許容範囲内にあることを確認する** (制限の詳細については、[ここ](https://docs.microsoft.com/ja-JP/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)を参照)。
 
  - **バルク レベルを再確認する** (レベルの詳細については、[ここ](bulk-complaint-level-values.md)を参照)。
     
@@ -82,7 +84,7 @@ EOP では、ユーザーの信頼できる差出人と宛先のリストは適�
 
 ユーザーが Outlook のオプションで、[セーフ リストのみ: 差出人セーフ リストまたは宛先セーフ リストに登録されたユーザーやドメインからのメールのみを受信トレイに配信する] を有効にしている場合、受信者が信頼できる差出人のリストに登録していない差出人からのすべてのメールは、迷惑メールに送られます。EOP がメッセージを迷惑メールではないと判断したかどうか、または管理者がメッセージを迷惑メールではないと判断するルールを EOP に設定したかどうかにかかわらず、この処理は実行されます。
   
-Outlook ユーザーの [セーフ リストのみ] オプションを無効にするには、「[Outlook: 迷惑メール UI とフィルター処理機構を無効にするポリシー設定](https://support.microsoft.com/ja-JP/kb/2180568)」の指示に従って操作してください。
+Outlook ユーザーの [セーフ リストのみ] オプションを無効にするには、「[Outlook: 迷惑メール UI とフィルター処理機構を無効にするポリシー設定](https://support.microsoft.com/en-us/kb/2180568)」の指示に従って操作してください。
   
 Outlook on the web でメッセージを表示している場合、受信者の信頼できる差出人のリストに差出人が登録されていないため、メッセージが迷惑メール フォルダーに送られた、という黄色の安全性のヒントが表示されます。
   

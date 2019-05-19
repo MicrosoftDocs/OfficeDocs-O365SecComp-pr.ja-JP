@@ -3,17 +3,17 @@ title: Project Server の GDPR
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: オンプレミスの Project Server で GDPR の要件に対応する方法について説明します。
-ms.openlocfilehash: 67097cdab4fdab31537cf4b6dd27ce17234c2bdc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8fb29c2d383c03c79d619d2c78df75cffb4eab27
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255285"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154499"
 ---
 # <a name="gdpr-for-project-server"></a>Project Server の GDPR
 

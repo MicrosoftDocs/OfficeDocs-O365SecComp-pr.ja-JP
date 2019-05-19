@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 6/7/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Office 365 でスパム メールや迷惑メールを減らすための最も一般的な方法について説明します。
-ms.openlocfilehash: d32cad18cf3972a667f2eb9a11b50d1b12e809a7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7c2ea48c4244d2b86f01c89decd4add006f21a5c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261525"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157349"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Office 365 で迷惑メールを減らす方法
 
@@ -45,13 +45,15 @@ ms.locfileid: "32261525"
 
 - **DNS レコードを Office 365 用にする**: EOP で最大の保護を提供するには、すべてのドメインのメール エクスチェンジャー (MX) の DNS レコードを Office 365 専用にする必要があります。「[任意の DNS ホスティング プロバイダーで Office 365 用の DNS レコードを作成する](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23)」を参照してください。
     
-- **すべてのメールボックスで迷惑メール ルールを有効にする**: 既定では、迷惑メールのフィルタリング アクションは**メッセージを迷惑メール フォルダーに移動する**ように設定されています。この設定が優先される現在のスパム ポリシー アクションである場合、各メールボックスで[迷惑メール ルールが有効になっている必要があります](https://support.office.com/ja-JP/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)。設定を確認するには、1 つ以上のメールボックスに対して Get-MailboxJunkEmailConfiguration コマンドレットを実行します。たとえば、コマンド「Get-MailboxJunkEmailConfiguration -Identity \* | Where {$_.Enabled -eq $false}」を実行すると、すべてのメールボックスに対して設定をチェックすることができます。
+- 
+  **すべてのメールボックスで迷惑メール ルールを有効にする**: 既定では、迷惑メールのフィルタリング アクションは**メッセージを迷惑メール フォルダーに移動する**ように設定されています。この設定が優先される現在のスパム ポリシー アクションである場合、各メールボックスで[迷惑メール ルールが有効になっている必要があります](https://support.office.com/ja-JP/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)。設定を確認するには、1 つ以上のメールボックスに対して Get-MailboxJunkEmailConfiguration コマンドレットを実行します。たとえば、コマンド「Get-MailboxJunkEmailConfiguration -Identity \* | Where {$_.Enabled -eq $false}」を実行すると、すべてのメールボックスに対して設定をチェックすることができます。
     
     出力を表示するときは、Enable プロパティを True に設定する必要があります。False に設定されている場合は、Set-MailboxJunkEmailConfiguration を実行して True に変更できます。
     
 - **オンプレミス Exchange Server でメール フロー ルールを作成する**: Exchange Online Protection を使用していても、メールボックスがオンプレミス Exchange Server にある場合は、Exchange Server でいくつかのメール フロー ルールを作成する必要があります。「[EOP 専用の命令](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj900470(v=exchg.150))」を参照してください。
     
-- **バルク メールをスパムとしてマークする**: バルク メールとは、ユーザーはサインアップした可能性があるとしても望ましくないと思われるメールのことです。メッセージ ヘッダーで、X-Microsoft-Antispam ヘッダーの中の BCL (Bulk Confidence Level) プロパティを見つけます。迷惑メール フィルターに設定されたしきい値よりも BCL 値の方が小さければ、これらのタイプのバルク メッセージを迷惑メールとしてマークするようにしきい値を調整することが必要になる場合があります。[バルク メールの処理](https://docs.microsoft.com/ja-JP/office365/SecurityCompliance/bulk-complaint-level-values)に関する許容度とユーザー設定はユーザーによって異なります。ユーザー設定ごとに異なるポリシーやルールを作成できます。 
+- 
+  **バルク メールをスパムとしてマークする**: バルク メールとは、ユーザーはサインアップした可能性があるとしても望ましくないと思われるメールのことです。メッセージ ヘッダーで、X-Microsoft-Antispam ヘッダーの中の BCL (Bulk Confidence Level) プロパティを見つけます。迷惑メール フィルターに設定されたしきい値よりも BCL 値の方が小さければ、これらのタイプのバルク メッセージを迷惑メールとしてマークするようにしきい値を調整することが必要になる場合があります。[バルク メールの処理](https://docs.microsoft.com/ja-JP/office365/SecurityCompliance/bulk-complaint-level-values)に関する許容度とユーザー設定はユーザーによって異なります。ユーザー設定ごとに異なるポリシーやルールを作成できます。 
     
 - **すぐに送信者をブロックする** 送信者をすぐにブロックする必要がある場合は、メール アドレス、ドメイン、または IP アドレスでブロックすることができます。「[EAC を使用して、ドメインまたはユーザーから送信されたメッセージをブロックするメール フロー ルールを作成する](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user)」をご覧ください。エンド ユーザーの許可リストのエントリは、管理者が設定したブロックを無効にできることに注意してください。
     

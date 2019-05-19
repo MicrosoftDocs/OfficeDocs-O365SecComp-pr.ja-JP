@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 4/18/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: Office 365 にメール アドレスがある受信者にメールを送信しようとするときに、エラー メッセージが返される場合があります。エラー メッセージを受信しないようにするには、リストから除外のポータルを使って、Office 365 の受信拒否リストから自分自身を削除します。
-ms.openlocfilehash: b63459fe7c3a16486210a7f35de6f5fc23a19b30
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7ad7ac050829f2014d2c16dd39ad67fb2e91a1ec
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243885"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157849"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>無効化ポータルを使って、Office 365 の受信拒否リストから自分自身を削除する
 
@@ -31,7 +31,7 @@ Microsoft は、受信拒否リストを使って、スパム、スプーフィ�
   
 メール メッセージに対して、次のようなエラーが含まれた応答を受信する場合、お客様は受信拒否リストに追加されています。
   
-> 550 5.7.606-649 アクセス拒否、禁止された送信 ip [_ip address_]、このリストからの削除を要求するhttps://sender.office.com/には、にアクセスして、指示に従ってください。 詳細については、「 [Office 365 で配信不能レポートを送信](http://go.microsoft.com/fwlink/?LinkID=526653)する」を参照してください。
+> 550 5.7.606-649 アクセス拒否、禁止された送信 IP [_ip address_]、このリストからの削除を要求するhttps://sender.office.com/には、にアクセスして、指示に従ってください。 詳細については、「 [Office 365 で配信不能レポートを送信](http://go.microsoft.com/fwlink/?LinkID=526653)する」を参照してください。
   
 ここで、 _IP address_ は、メール サーバーを稼働しているコンピューターの IP アドレスです。 
   

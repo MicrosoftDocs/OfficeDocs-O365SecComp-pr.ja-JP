@@ -3,7 +3,7 @@ title: Microsoft コンプライアンスマネージャーの概要
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,20 +11,20 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: microsoft コンプライアンスマネージャーは、microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用すると、Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証することができます。
-ms.openlocfilehash: a2f59eac63f8bbef98da09c2149e49ec32e56b77
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+description: Microsoft コンプライアンスマネージャーは、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用すると、Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証することができます。
+ms.openlocfilehash: e7c8afd3a9b2e0514e0df7df0f10871b0a7ca329
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33473154"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155289"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft コンプライアンスマネージャー (プレビュー)
 
 > [!IMPORTANT]
 > コンプライアンス マネージャーは、21Vianet が運用している Office 365、Office 365 Germany、Office 365 U.S. Government Community High (GCC High)、Office 365 Department of Defense では使用できません。
 
-[microsoft コンプライアンスマネージャー (プレビュー)](https://servicetrust.microsoft.com/ComplianceManager)は、無料のワークフローベースのリスク評価ツールであり、microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証できます。 microsoft 365、Office 365、または Azure Active Directory サブスクリプションの一部であるコンプライアンスマネージャーは、microsoft クラウドサービスの共有責任モデルにおける法令遵守の管理をサポートしています。 コンプライアンスマネージャーは、標準、規制、統制の実装の詳細と Microsoft サービス評価のテスト結果を表示するための一元的なダッシュボードを提供します。 また、カスタムコントロールの実装と組織に固有のコンプライアンスの追跡を管理するためのツールも含まれています。
+[Microsoft コンプライアンスマネージャー (プレビュー)](https://servicetrust.microsoft.com/ComplianceManager)は、無料のワークフローベースのリスク評価ツールであり、microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証できます。 Microsoft 365、Office 365、または Azure Active Directory サブスクリプションの一部であるコンプライアンスマネージャーは、Microsoft クラウドサービスの共有責任モデルにおける法令遵守の管理をサポートしています。 コンプライアンスマネージャーは、標準、規制、統制の実装の詳細と Microsoft サービス評価のテスト結果を表示するための一元的なダッシュボードを提供します。 また、カスタムコントロールの実装と組織に固有のコンプライアンスの追跡を管理するためのツールも含まれています。
 
 コンプライアンスマネージャーを使用すると、組織は次のことを行うことができます。
   
@@ -32,7 +32,7 @@ ms.locfileid: "33473154"
 - コンプライアンスおよび評価に関連するアクティビティの割り当て、追跡、記録を行うことができます。これにより、組織がチームの障壁を超えてコンプライアンス目標を達成できるようになります。
 - コンプライアンススコアを提供して、進捗状況を追跡したり、組織のリスクを軽減するための監査制御を優先順位付けしたりできます。
 - セキュリティで保護されたリポジトリを提供して、コンプライアンスアクティビティに関連する証拠およびその他の成果物をアップロードして管理します。
-- 監査、監督、およびその他のコンプライアンスレビュー担当者に対して、microsoft と組織で実施されたコンプライアンスアクティビティを文書化する詳細な microsoft Excel レポートを作成します。
+- 監査、監督、およびその他のコンプライアンスレビュー担当者に対して、Microsoft と組織で実施されたコンプライアンスアクティビティを文書化する詳細な Microsoft Excel レポートを作成します。
 
 > [!NOTE]
 > コンプライアンスマネージャーで提供されるお客様のアクションは推奨事項です。実装の前に、それぞれの規制環境でこれらの推奨事項の有効性を評価することは、組織によって行われます。 コンプライアンスマネージャーの推奨事項は、コンプライアンスの保証として解釈されないようにする必要があります。
@@ -62,11 +62,11 @@ ms.locfileid: "33473154"
 評価には、いくつかのコンポーネントが含まれます。
   
 - **スコープ内サービス**: 各評価は、Microsoft サービスの特定のセットに適用されます。
-- **microsoft 管理コントロール**: 各クラウドサービスについて、microsoft は、適用される標準および規制に関する一連のコンプライアンス制御を実装して管理します。
+- **Microsoft 管理コントロール**: 各クラウドサービスについて、microsoft は、適用される標準および規制に関する一連のコンプライアンス制御を実装して管理します。
 - **顧客管理コントロール**: これは、各コントロールに対してアクションを実行するときに、組織によって実装されたコントロールのコレクションです。
 - **評価スコア**: 評価での顧客管理コントロールの可能なスコアの合計の割合です。 これにより、各コントロールに割り当てられたアクションの実装を追跡できます。
 
-## <a name="controls"></a>Controls
+## <a name="controls"></a>コントロール
 
 [統制](https://docs.microsoft.com/office365/securitycompliance/working-with-compliance-manager#controls-and-actions)はコンプライアンスマネージャーのコンプライアンスプロセスコンテナーで、コンプライアンスアクティビティを管理する方法を定義します。 これらのコントロールは、対応する認定資格または規制の評価構造と一致するように、コントロールファミリ内に整理されています。
 
@@ -81,7 +81,7 @@ ms.locfileid: "33473154"
 
 ### <a name="microsoft-managed-controls"></a>Microsoft 管理コントロール
 
-microsoft は、各クラウドサービスについて、さまざまな標準および規制への microsoft のコンプライアンスの一環として、一連の制御を実装して管理しています。 各コントロールは、microsoft がどのように実装されたか、およびその実装が microsoft および/または独立したサードパーティの監査者によってテストおよび検証された方法についての詳細を提供します。
+Microsoft は、各クラウドサービスについて、さまざまな標準および規制への Microsoft のコンプライアンスの一環として、一連の制御を実装して管理しています。 各コントロールは、Microsoft がどのように実装されたか、およびその実装が Microsoft および/または独立したサードパーティの監査者によってテストおよび検証された方法についての詳細を提供します。
 
 ### <a name="customer-managed-controls"></a>顧客管理のコントロール
 
@@ -111,7 +111,7 @@ microsoft は、各クラウドサービスについて、さまざまな標準�
 
 ## <a name="permissions"></a>アクセス許可
 
-コンプライアンスマネージャーは、役割ベースのアクセス制御のアクセス[許可モデル](https://docs.microsoft.com/office365/securitycompliance/working-with-compliance-manager#permissions)を使用します。 既定では、azure Active Directory (azure AD) アカウントを持つ組織内のすべてのユーザーは、完全なアクセス権を持ち、コンプライアンスマネージャーで任意のアクションを実行できます。 組織によって役割ベースのアクセス制御が実装されている場合、定義されたコンプライアンスマネージャーの役割に割り当てられていないすべてのユーザーにはゲストアクセスが割り当てられます。 Microsoft サービス担当者は、入力またはアップロードするデータへの継続的なアクセス権を持っていません。
+コンプライアンスマネージャーは、役割ベースのアクセス制御のアクセス[許可モデル](https://docs.microsoft.com/office365/securitycompliance/working-with-compliance-manager#permissions)を使用します。 既定では、Azure Active Directory (Azure AD) アカウントを持つ組織内のすべてのユーザーは、完全なアクセス権を持ち、コンプライアンスマネージャーで任意のアクションを実行できます。 組織によって役割ベースのアクセス制御が実装されている場合、定義されたコンプライアンスマネージャーの役割に割り当てられていないすべてのユーザーにはゲストアクセスが割り当てられます。 Microsoft サービス担当者は、入力またはアップロードするデータへの継続的なアクセス権を持っていません。
 
 既定のアクセス許可から変更し、完全な役割ベースのアクセス制御モデルを実装するには、各コンプライアンスマネージャーの役割に少なくとも1人のユーザーを追加する必要があります。 ユーザーが役割に追加されると、その役割に割り当てられた操作を実行するためのアクセス許可が、すべてのユーザーが使用できる既定のアクセス許可のセットから削除されます。 この役割を使用してプロビジョニングされたユーザーのみが、コンプライアンスマネージャーにアクセスして、その役割によって許可されるアクションを実行できます。
 
@@ -132,10 +132,10 @@ microsoft は、各クラウドサービスについて、さまざまな標準�
 - [NIST 800-53](https://csrc.nist.gov/publications/detail/sp/800-53/rev-4/final)
 - [NIST 800-171](https://csrc.nist.gov/publications/detail/sp/800-171/rev-1/final)
 - [NIST Cybersecurity Framework (CSF)](https://www.nist.gov/cyberframework)
-- [cloud Security アライアンス (CSA) cloud Control Matrix (CCM) 3.0.1](https://cloudsecurityalliance.org/working-groups/cloud-controls-matrix/#_overview)
+- [Cloud Security アライアンス (CSA) Cloud Control Matrix (CCM) 3.0.1](https://cloudsecurityalliance.org/working-groups/cloud-controls-matrix/#_overview)
 - [連邦金融機関調査協議会 (FFIEC) Information Security ブックレット](https://ithandbook.ffiec.gov/it-booklets/information-security.aspx) 
 - [HIPAA](https://www.hhs.gov/hipaa/for-professionals/index.html) / の[ヒット](https://www.hhs.gov/hipaa/for-professionals/special-topics/hitech-act-enforcement-interim-final-rule/index.html)
-- [fedramp モデレート](https://www.fedramp.gov/documents/)
+- [FedRAMP モデレート](https://www.fedramp.gov/documents/)
 - [欧州連合 GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN)
 
 ## <a name="compliance-score"></a>コンプライアンススコア

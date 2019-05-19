@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,13 +12,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: 'office 365 セキュリティ&amp;コンプライアンスセンターを使用して office 365 Advanced eDiscovery にアクセスし、ケースに対して Process モジュールを実行する方法について説明します。  '
-ms.openlocfilehash: 95c73c034ed2ffa1c45f9aacd8463c497a842859
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Office 365 セキュリティ&amp;コンプライアンスセンターを使用して Office 365 Advanced eDiscovery にアクセスし、ケースに対して Process モジュールを実行する方法について説明します。  '
+ms.openlocfilehash: 89a4be9bf56f35d9d9cbd88494bcae5a5a10fe7a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261409"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157019"
 ---
 # <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>プロセスモジュールを実行し、Office 365 でデータを読み込む高度な電子情報開示
 
@@ -58,7 +58,7 @@ Advanced eDiscovery は、重複したグループや関連性のスコアなど
   
   - [ **Seed** ] セクションで、次のようにします。 
     
-    [ **seed ファイルとしてマーク**] を選択して、コンテナーをシードファイルとしてマークします。 [**問題**] ドロップダウンから、問題ごとに割り当てるように選択する必要もあります。 [タグ**** ] ドロップダウンから [関連**** する] または [**無関係**] を選択します。 
+    [ **Seed ファイルとしてマーク**] を選択して、コンテナーをシードファイルとしてマークします。 [**問題**] ドロップダウンから、問題ごとに割り当てるように選択する必要もあります。 [タグ**** ] ドロップダウンから [関連**** する] または [**無関係**] を選択します。 
     
     > [!NOTE]
     > ファイルを**Seed**として設定すると、**あらかじめタグ**付けされたマークを付けることはできません。 

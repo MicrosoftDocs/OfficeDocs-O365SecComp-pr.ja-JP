@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 6d639df4f7afaa3a55e31bd75cd3e35104593ddd
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7534b7a79ae97ec0513b496ebbb801e3818ab3aa
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258392"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150959"
 ---
 # <a name="create-a-new-investigation-in-data-investigations-preview"></a>データ調査で新しい調査を作成する (プレビュー)
 

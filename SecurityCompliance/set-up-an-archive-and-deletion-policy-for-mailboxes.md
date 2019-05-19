@@ -3,7 +3,7 @@ title: Office 365 組織のメールボックスのアーカイブおよび削�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Office 365 でアーカイブと削除のポリシーを作成します。これにより、アイテムは自動的にユーザーのアーカイブメールボックスに移動されます。
-ms.openlocfilehash: d1dafb145564e6db7e0df7505cff09d10a72e3af
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ca43498d785f1a5525a8159e7e553bd36257a7c2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264595"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156709"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Office 365 組織のメールボックスのアーカイブおよび削除ポリシーを設定する
 
@@ -48,7 +48,7 @@ ms.locfileid: "32264595"
 
 - このトピックの手順を実行するには、Office 365 組織の全体管理者である必要があります。 
     
--  Office 365 で新しいユーザーアカウントを作成し、ユーザーに Exchange Online のライセンスを割り当てると、そのユーザーのメールボックスが自動的に作成されます。 メールボックスが作成されると、default mrm policy という名前の既定のアイテム保持ポリシーが自動的に割り当てられます。 この記事では、新しいアイテム保持ポリシーを作成し、それをユーザーのメールボックスに割り当てて、既定の mrm ポリシーを置き換えます。 メールボックスには、一度に1つだけ保持ポリシーを割り当てることができます。
+-  Office 365 で新しいユーザーアカウントを作成し、ユーザーに Exchange Online のライセンスを割り当てると、そのユーザーのメールボックスが自動的に作成されます。 メールボックスが作成されると、default MRM Policy という名前の既定のアイテム保持ポリシーが自動的に割り当てられます。 この記事では、新しいアイテム保持ポリシーを作成し、それをユーザーのメールボックスに割り当てて、既定の MRM ポリシーを置き換えます。 メールボックスには、一度に1つだけ保持ポリシーを割り当てることができます。
     
 - Exchange Online の保持タグとアイテム保持ポリシーの詳細については、「 [retention tags and retention policies](https://go.microsoft.com/fwlink/p/?LinkId=404424)」を参照してください。
     
@@ -95,9 +95,9 @@ ms.locfileid: "32264595"
     
 - Alpine House 7 年間完全に削除 (カスタム削除ポリシー)
     
-- Alpine House deleted items 5 年間削除して回復を許可する (削除済みアイテムフォルダーのカスタムタグ)
+- Alpine House Deleted Items 5 年間削除して回復を許可する (削除済みアイテムフォルダーのカスタムタグ)
     
-新しい保持タグを作成するには、exchange Online 組織の exchange 管理センター (EAC) を使用します。
+新しい保持タグを作成するには、exchange Online 組織の Exchange 管理センター (EAC) を使用します。
   
 1. セキュリティ & コンプライアンスセンターで、左上隅にあるアプリ起動ツールをクリックし、[**管理**] タイルをクリックします。 
     
@@ -208,7 +208,7 @@ ms.locfileid: "32264595"
   
 ## <a name="step-4-assign-the-new-retention-policy-to-user-mailboxes"></a>手順 4: 新しいアイテム保持ポリシーをユーザーメールボックスに割り当てる
 
-新しいメールボックスが作成されると、default mrm policy という名前のアイテム保持ポリシーが既定で割り当てられます。 この手順では、手順3で作成した新しいアイテム保持ポリシーを組織内のユーザーのメールボックスに割り当てることによって、このアイテム保持ポリシーを置き換えます (メールボックスに割り当てられる保持ポリシーは1つだけです)。 この手順では、組織内のすべてのメールボックスに新しいポリシーを割り当てることを前提としています。
+新しいメールボックスが作成されると、default MRM policy という名前のアイテム保持ポリシーが既定で割り当てられます。 この手順では、手順3で作成した新しいアイテム保持ポリシーを組織内のユーザーのメールボックスに割り当てることによって、このアイテム保持ポリシーを置き換えます (メールボックスに割り当てられる保持ポリシーは1つだけです)。 この手順では、組織内のすべてのメールボックスに新しいポリシーを割り当てることを前提としています。
   
 1. EAC で、 **[受信者]** \> **[メールボックス]** に移動します。
     
@@ -234,7 +234,7 @@ ms.locfileid: "32264595"
 
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>オプション手順 5: 管理フォルダーアシスタントを実行して新しい設定を適用する
 
-手順4で新しいアイテム保持ポリシーをメールボックスに適用した後、メールボックスに新しいアイテム保持設定を適用するには、Exchange Online で最大7日かかることがあります。 これは、管理フォルダーアシスタントと呼ばれるプロセスが7日ごとにメールボックスを処理するからです。 管理フォルダーアシスタントの実行を待機する代わりに、Exchange Online PowerShell で " **Start/managedfolderassistant** " コマンドレットを実行することによって、これを強制的に実行することができます。 
+手順4で新しいアイテム保持ポリシーをメールボックスに適用した後、メールボックスに新しいアイテム保持設定を適用するには、Exchange Online で最大7日かかることがあります。 これは、管理フォルダーアシスタントと呼ばれるプロセスが7日ごとにメールボックスを処理するからです。 管理フォルダーアシスタントの実行を待機する代わりに、Exchange Online PowerShell で " **Start/ManagedFolderAssistant** " コマンドレットを実行することによって、これを強制的に実行することができます。 
   
  **管理フォルダーアシスタントを実行するとどうなりますか。** アイテム保持ポリシーの設定を適用するには、メールボックス内のアイテムを調べて、保持の対象であるかどうかを判断します。 その後、適切な保持タグを使用してアイテムに保存期間をスタンプし、保存期間を過ぎたアイテムに対して指定された保持アクションを実行します。 
   
@@ -267,7 +267,7 @@ Exchange Online PowerShell に接続し、組織内のすべてのメールボ�
     ```
 
     > [!NOTE]
-    > 詳細については、または exchange online 組織への接続に問題がある場合は、「 [exchange online PowerShell への接続](https://go.microsoft.com/fwlink/p/?LinkId=517283)」を参照してください。 
+    > 詳細については、または Exchange Online 組織への接続に問題がある場合は、「 [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?LinkId=517283)」を参照してください。 
   
 5. 組織内のすべてのユーザーメールボックスに対して管理フォルダーアシスタントを開始するには、次の2つのコマンドを実行します。
     
@@ -283,7 +283,7 @@ Exchange Online PowerShell に接続し、組織内のすべてのメールボ�
   
 ## <a name="optional-step-6-make-the-new-retention-policy-the-default-for-your-organization"></a>オプション手順 6: 新しいアイテム保持ポリシーを組織の既定に設定する
 
-手順4では、既存のメールボックスに新しいアイテム保持ポリシーを割り当てる必要があります。 ただし、今後作成される新しいメールボックスに新しいアイテム保持ポリシーが割り当てられるように、Exchange Online を構成することができます。 これを行うには、Exchange Online PowerShell を使用して組織の既定のメールボックスプランを更新します。 *メールボックス計画*は、新しいメールボックスのプロパティを自動的に構成するテンプレートです。  このオプションの手順では、メールボックスプランに割り当てられている現在のアイテム保持ポリシー (既定では、既定の mrm ポリシー) を手順3で作成したアイテム保持ポリシーに置き換えることができます。 メールボックスプランを更新すると、新しいアイテム保持ポリシーが新しいメールボックスに割り当てられます。
+手順4では、既存のメールボックスに新しいアイテム保持ポリシーを割り当てる必要があります。 ただし、今後作成される新しいメールボックスに新しいアイテム保持ポリシーが割り当てられるように、Exchange Online を構成することができます。 これを行うには、Exchange Online PowerShell を使用して組織の既定のメールボックスプランを更新します。 *メールボックス計画*は、新しいメールボックスのプロパティを自動的に構成するテンプレートです。  このオプションの手順では、メールボックスプランに割り当てられている現在のアイテム保持ポリシー (既定では、既定の MRM ポリシー) を手順3で作成したアイテム保持ポリシーに置き換えることができます。 メールボックスプランを更新すると、新しいアイテム保持ポリシーが新しいメールボックスに割り当てられます。
 
 1. [Exchange Online PowerShell に接続する](https://go.microsoft.com/fwlink/p/?LinkId=517283)か、手順5を参照してください。
 
@@ -294,7 +294,7 @@ Exchange Online PowerShell に接続し、組織内のすべてのメールボ�
     ```
     既定として設定されているメールボックスプランをメモします。
 
-3. 次のコマンドを実行して、手順3で作成した新しいアイテム保持ポリシー (たとえば、 **Alpine House Archive and retention policy**) を既定のメールボックス計画に割り当てます。 この例では、既定のメールボックスプランの名前が**exchangeonline enterprise**であると仮定しています。
+3. 次のコマンドを実行して、手順3で作成した新しいアイテム保持ポリシー (たとえば、 **Alpine House Archive And Retention policy**) を既定のメールボックス計画に割り当てます。 この例では、既定のメールボックスプランの名前が**Exchangeonline enterprise**であると仮定しています。
 
     ```
     Set-MailboxPlan "ExchangeOnlineEnterprise" -RetentionPolicy "Alpine House Archive and Retention Policy"
@@ -319,6 +319,6 @@ Exchange Online PowerShell に接続し、組織内のすべてのメールボ�
     |削除しない  <br/> |このタグは、アイテム保持ポリシーによってアイテムが削除されないようにします。  <br/> |組み込み  <br/> |作成者このタグは、ユーザーが適用することができます。  <br/> |
     |個人 - 1 年でアーカイブへ移動  <br/> |1年後にアイテムをアーカイブメールボックスに移動します。  <br/> |組み込み  <br/> |作成者このタグは、ユーザーが適用することができます。  <br/> |
    
-    > <sup>\*</sup>ユーザーは、outlook および web 上の outlook (旧称 outlook web App) で削除済みアイテムを復元するツールを使用して、削除済みアイテムの保存期間 (既定では、Exchange Online では14日) 内の削除済みアイテムを復元できます。 管理者は、Windows PowerShell を使用して、削除済みアイテムの保存期間を最大で30日に増やすことができます。 詳細については、「 [Windows 版 Outlook で削除済みアイテムを復元](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)する」および「 [Exchange Online のメールボックスの削除済みアイテムの保存期間を変更](https://go.microsoft.com/fwlink/p/?LinkId=286940)する」を参照してください。
+    > <sup>\*</sup>ユーザーは、Outlook および web 上の Outlook (旧称 Outlook Web App) で削除済みアイテムを復元するツールを使用して、削除済みアイテムの保存期間 (既定では、Exchange Online では14日) 内の削除済みアイテムを復元できます。 管理者は、Windows PowerShell を使用して、削除済みアイテムの保存期間を最大で30日に増やすことができます。 詳細については、「 [Windows 版 Outlook で削除済みアイテムを復元](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)する」および「 [Exchange Online のメールボックスの削除済みアイテムの保存期間を変更](https://go.microsoft.com/fwlink/p/?LinkId=286940)する」を参照してください。
   
 - 回復可能なアイテムを使用して、 **14 日後にアーカイブ保持タグに移動する**と、ユーザーのプライマリメールボックス内の回復可能なアイテムフォルダーの記憶域を解放することができます。 これは、ユーザーのメールボックスが保持されている場合に便利です。つまり、ユーザーのメールボックスが完全に削除されることはありません。 アイテムをアーカイブメールボックスに移動せずに、プライマリメールボックスの [回復可能なアイテム] フォルダーの記憶域のクォータに到達できるようになります。 詳細については、「[ホールド状態のメールボックスの回復可能なアイテムのクォータを増やす](https://go.microsoft.com/fwlink/p/?LinkId=786479)」を参照してください。

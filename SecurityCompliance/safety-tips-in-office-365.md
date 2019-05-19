@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: scotv
 ms.date: 10/6/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,16 +15,16 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: EOP および Office 365 スパムフィルターによってフィルター処理された電子メールメッセージの安全のヒントを紹介します。
-ms.openlocfilehash: d85eb0bde24220fbbfc12e7b5f01acec69571dee
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b5501459a56dcff322dfdfa05d019d7fb626f369
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261453"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156989"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Office 365 の電子メールメッセージの安全性に関するヒント
 
-Exchange Online Protection (EOP) と Office 365 は、スパム、フィッシング、マルウェアの防止を強化します。 今日では、これらの攻撃の一部は正当なものであることがよく細工されています。 [迷惑メール] フォルダーにメッセージを送信するだけでは不十分なわけではありません。 これで、outlook または web 上の outlook で電子メールを確認すると、EOP は自動的に送信者をチェックし、安全のヒントを電子メールの先頭に追加します。 
+Exchange Online Protection (EOP) と Office 365 は、スパム、フィッシング、マルウェアの防止を強化します。 今日では、これらの攻撃の一部は正当なものであることがよく細工されています。 [迷惑メール] フォルダーにメッセージを送信するだけでは不十分なわけではありません。 これで、Outlook または web 上の Outlook で電子メールを確認すると、EOP は自動的に送信者をチェックし、安全のヒントを電子メールの先頭に追加します。 
   
 安全性に関するヒント (色分けされたメッセージ) は、潜在的に有害なメッセージに関する警告を表示します。 受信トレイ内のほとんどのメッセージには安全なヒントがありません。 スパム、フィッシング、およびマルウェア攻撃を防ぐために必要な情報が EOP および Office 365 にある場合にのみ表示されます。 受信トレイに安全のヒントが表示される場合は、次の例を使用して、安全に関するヒントの種類について詳しく調べることができます。
   

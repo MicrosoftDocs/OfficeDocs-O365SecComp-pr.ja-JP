@@ -4,19 +4,19 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 12/29/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: Office 365 または Microsoft 365 のセキュリティ/コンプライアンスセンターで一括検索エディターを使用して、1つまたは複数のコンテンツ検索のクエリとコンテンツの場所をすばやく変更できます。
-ms.openlocfilehash: 3a484ad689b1c638e0e14ed1643edea0f2f56c09
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d4f79cc323b752d020606e22ff72a47bc03e9ae9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243856"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152219"
 ---
 # <a name="bulk-edit-content-searches"></a>コンテンツ検索を一括編集する
 
@@ -60,7 +60,7 @@ ms.locfileid: "32243856"
   
 - 既存のクエリ ( **Ctrl キー**を使用して) をテキストファイルにコピーします。 テキストファイルのクエリを編集し、変更したクエリをコピーして ( **Ctrl キー**を使用して)、[**クエリ**] ページのセルに貼り付けます。 
     
-- 他のアプリケーション (microsoft Word や microsoft Excel など) からクエリをコピーすることもできます。 ただし、一括検索エディターを使用して、サポートされていない文字をクエリに誤って追加する可能性があることに注意してください。 サポートされていない文字を回避するには、[**クエリ**] ページのセルにクエリを入力することをお勧めします。 また、Word や Excel からクエリをコピーして、メモ帳などのテキスト エディターでファイルに貼り付けることもできます。 そのテキスト ファイルを保存し、 **[エンコード]** ドロップダウン リストで **[ANSI]** を選択します。 これにより、すべての書式設定とサポートされない文字が削除されます。 その後、テキストファイルから [クエリ] ページにクエリをコピー **** して貼り付けることができます。 
+- 他のアプリケーション (Microsoft Word や Microsoft Excel など) からクエリをコピーすることもできます。 ただし、一括検索エディターを使用して、サポートされていない文字をクエリに誤って追加する可能性があることに注意してください。 サポートされていない文字を回避するには、[**クエリ**] ページのセルにクエリを入力することをお勧めします。 また、Word や Excel からクエリをコピーして、メモ帳などのテキスト エディターでファイルに貼り付けることもできます。 そのテキスト ファイルを保存し、 **[エンコード]** ドロップダウン リストで **[ANSI]** を選択します。 これにより、すべての書式設定とサポートされない文字が削除されます。 その後、テキストファイルから [クエリ] ページにクエリをコピー **** して貼り付けることができます。 
     
   
 ## <a name="use-the-bulk-search-editor-to-change-content-locations"></a>一括検索エディターを使用してコンテンツの場所を変更する
@@ -92,8 +92,8 @@ ms.locfileid: "32243856"
 - テキストファイルまたは Excel ファイルから複数の行をコピーし、[**場所**] ページのセクションに貼り付けると、複数のコンテンツの場所を1つ以上の検索に追加できます。 新しい場所を追加した後、場所を追加する検索のチェックボックスを必ずオンにします。 
     
     > [!TIP]
-    > 組織内のすべてのユーザーの電子メールアドレスの一覧を生成するには、「コンテンツ検索を使用する」の手順2で PowerShell コマンドを実行し、[メールボックスと OneDrive for business サイトでユーザーの一覧を検索](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step2)します。 または、「[組織内のすべての onedrive の場所の一覧を作成](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a)する」のスクリプトを使用して、組織内のすべての onedrive for business サイトの一覧を生成します。 自分の組織の個人用サイトドメイン (たとえば、スクリプトで作成された OneDrive for business サイトhttps://contoso-my.sharepoint.com) ) の URL を追加する必要があることに注意してください。 電子メールアドレスまたは OneDrive for business サイトの一覧を作成した後、それらを一括検索エディターの [**場所**] ページにコピーして貼り付けることができます。 
+    > 組織内のすべてのユーザーの電子メールアドレスの一覧を生成するには、「コンテンツ検索を使用する」の手順2で PowerShell コマンドを実行し、[メールボックスと OneDrive For business サイトでユーザーの一覧を検索](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step2)します。 または、「[組織内のすべての onedrive の場所の一覧を作成](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a)する」のスクリプトを使用して、組織内のすべての Onedrive for business サイトの一覧を生成します。 自分の組織の個人用サイトドメイン (たとえば、スクリプトで作成された OneDrive for Business サイトhttps://contoso-my.sharepoint.com) ) の URL を追加する必要があることに注意してください。 電子メールアドレスまたは OneDrive for Business サイトの一覧を作成した後、それらを一括検索エディターの [**場所**] ページにコピーして貼り付けることができます。 
   
-- [**保存**] をクリックして変更を一括検索エディターに保存すると、検索に追加したメールボックスの電子メールアドレスが検証されます。 メールアドレスが存在しない場合は、メールボックスが見つからないというエラーメッセージが表示されます。 サイトの url は検証されていないことに注意してください。 
+- [**保存**] をクリックして変更を一括検索エディターに保存すると、検索に追加したメールボックスの電子メールアドレスが検証されます。 メールアドレスが存在しない場合は、メールボックスが見つからないというエラーメッセージが表示されます。 サイトの Url は検証されていないことに注意してください。 
   
 

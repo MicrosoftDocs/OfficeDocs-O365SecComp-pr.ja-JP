@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTtracyp
 manager: laurawi
 ms.date: 03/29/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 search.appverid:
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: この記事では、Office 365 で、偽造された送信者ドメイン (スプーフィングされたドメイン) を使用するフィッシング攻撃を軽減する方法について説明します。 これは、メッセージを分析して、標準の電子メール認証の方法や、その他の送信者評価の手法を使用して認証できないメッセージをブロックすることで実現します。 今回の変更は、Office 365 の組織が対象になるフィッシング攻撃の数を減らすために実装されました。
-ms.openlocfilehash: 533444d323728d2f238da409256f6547a5c8d209
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 455ce577e4ffb3dc4d943004dd3c299e7e6f1eae
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252860"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155779"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Office 365 でのスプーフィング対策保護
 
@@ -653,7 +653,8 @@ Microsoft のスプーフィング対策テクノロジは、最初に Office 36
   
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>スパムまたは非スパムのメッセージについて、どのように Microsoft に報告すればよいですか
 
-[Outlook 用の迷惑メール報告アドイン](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)を使用できます。このアドインをインストールしていない場合は、[スパム、非スパム、およびフィッシング詐欺メッセージを分析のために Microsoft に送信する](https://technet.microsoft.com/ja-JP/library/jj200769%28v=exchg.150%29.aspx)こともできます。
+
+  [Outlook 用の迷惑メール報告アドイン](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)を使用できます。このアドインをインストールしていない場合は、[スパム、非スパム、およびフィッシング詐欺メッセージを分析のために Microsoft に送信する](https://technet.microsoft.com/ja-JP/library/jj200769%28v=exchg.150%29.aspx)こともできます。
   
 ### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>ドメイン管理者ですが、把握できていない送信者がいます
 

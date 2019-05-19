@@ -3,7 +3,7 @@ title: Office 365 監査ログを検索して一般的なシナリオのトラ�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Office 365 監査ログ検索ツールを使用すると、侵害されたアカウントを調査する、メールボックスのメール転送を誰が設定したかを識別する、などの一般的な問題のトラブルシューティングに役立ちます。
-ms.openlocfilehash: bd0483f2b2e209dc0cbd2b03eda928fd8d44d7b0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e5c043668d73bdff30dfce962962a015a6748949
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32250271"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155679"
 ---
 # <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>Office 365 監査ログを検索して一般的なシナリオのトラブルシューティングを行う
 
@@ -36,7 +36,7 @@ ms.locfileid: "32250271"
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>監査ログ検索ツールを使用するために必要なアクセス許可
 
-Office 365 監査ログを検索するには、Exchange Online で [表示のみの監査ログまたは監査ログの役割が割り当てられている必要があります。 既定では、これらの役割は、Exchange 管理センターの [**アクセス許可**] ページで、コンプライアンス管理および組織の管理役割グループに割り当てられます。 Office 365 および Microsoft 365 の全体管理者は、Exchange Online で組織の管理役割グループのメンバーとして自動的に追加されることに注意してください。 詳細については、「 [Manage role groups in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688)」を参照してください。
+Office 365 監査ログを検索するには、Exchange Online で [表示のみの監査ログまたは監査ログの役割が割り当てられている必要があります。 既定では、これらの役割は、Exchange 管理センターの [**アクセス許可**] ページで、コンプライアンス管理および組織の管理役割グループに割り当てられます。 Office 365 および Microsoft 365 の全体管理者は、Exchange Online で組織の管理役割グループのメンバーとして自動的に追加されることに注意してください。 詳細については、「 [Manage role groups In Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688)」を参照してください。
 
 ### <a name="running-audit-log-searches"></a>監査ログ検索の実行
 
@@ -127,9 +127,9 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 ## <a name="determining-if-a-user-deleted-email-items"></a>ユーザーがメール項目を削除したかどうかを判別する
 
-2019年1月以降、microsoft は、すべての Office 365 および Microsoft 組織に対して、既定でメールボックス監査ログをオンにします。 これは、メールボックスの所有者によって実行される特定のアクションが自動的にログに記録されることを意味します。メールボックス監査ログで検索すると、対応するメールボックス監査レコードが使用できるようになります。 既定でメールボックス監査を有効にする前に、組織内のすべてのユーザーメールボックスに対して手動で有効にする必要がありました。 
+2019年1月以降、Microsoft は、すべての Office 365 および Microsoft 組織に対して、既定でメールボックス監査ログをオンにします。 これは、メールボックスの所有者によって実行される特定のアクションが自動的にログに記録されることを意味します。メールボックス監査ログで検索すると、対応するメールボックス監査レコードが使用できるようになります。 既定でメールボックス監査を有効にする前に、組織内のすべてのユーザーメールボックスに対して手動で有効にする必要がありました。 
 
-既定でログに記録されるメールボックスの操作には、メールボックスの所有者によって実行された softdelete メールボックスとハードデリートメールボックスアクションがあります。 これは、次の手順を使用して、削除された電子メールアイテムに関連するイベントの監査ログを検索することができます。 既定でのメールボックス監査の詳細については、「 [Manage mailbox auditing](enable-mailbox-auditing.md)」を参照してください。
+既定でログに記録されるメールボックスの操作には、メールボックスの所有者によって実行された SoftDelete メールボックスとハードデリートメールボックスアクションがあります。 これは、次の手順を使用して、削除された電子メールアイテムに関連するイベントの監査ログを検索することができます。 既定でのメールボックス監査の詳細については、「 [Manage mailbox auditing](enable-mailbox-auditing.md)」を参照してください。
 
 このシナリオで監査ログの検索クエリを構成する方法は次のとおりです。
 

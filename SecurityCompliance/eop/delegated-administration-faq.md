@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: このトピックでは、代理で Office 365 の管理タスクを実行する (他のテナント (企業) のために Exchange Online Protection (EOP) を管理する機能を含む) Microsoft パートナーとリセラーを対象に、よく寄せられる質問とその答えを取り上げます。
-ms.openlocfilehash: 41f2e8f0ed48273ff1934ca4f2306f29f92b1ff1
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 15433a9ac0bb8b165dd8ee97767fca4a3e29f01a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256195"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153229"
 ---
 # <a name="delegated-administration-faq"></a>代理管理の FAQ
 
@@ -23,7 +23,7 @@ ms.locfileid: "32256195"
   
  **Q. わたしはリセラーで、お客様のテナントを管理する必要があります。どのようにしたらいいですか？**
   
-A. microsoft のパートナーまたは販売店で、microsoft advisor にサインアップする場合は、管理センター内でテナントを管理するためのアクセス許可を要求できます。 これは委任された管理と呼ばれ、組織内の管理者であるかのように、Office 365 テナント (EOP 設定を含む) を管理することができます。 委任された管理を実行する手順は次のとおりです。
+A. Microsoft のパートナーまたは販売店で、Microsoft advisor にサインアップする場合は、管理センター内でテナントを管理するためのアクセス許可を要求できます。 これは委任された管理と呼ばれ、組織内の管理者であるかのように、Office 365 テナント (EOP 設定を含む) を管理することができます。 委任された管理を実行する手順は次のとおりです。
   
 1. [Microsoft Office 365 アドバイザー](https://aka.ms/cloudbenefits) としてサインアップします。
     
@@ -43,6 +43,6 @@ A. 現在、Office 365 にその機能はありません。
   
  **Q. 自分のすべてのサブ テナントを統合したレポートを取得できますか？**
   
-A. この時点では、管理対象の会社を超えた統合されたレポートは、micrsoft 365 admin center レポートでは使用できません。 ただしこれは、リモート Windows PowerShell または[レポート Web サービス](https://go.microsoft.com/fwlink/?LinkId=279926)を使用すると実行できます。 
+A. この時点では、管理対象の会社を超えた統合されたレポートは、Micrsoft 365 admin center レポートでは使用できません。 ただしこれは、リモート Windows PowerShell または[レポート Web サービス](https://go.microsoft.com/fwlink/?LinkId=279926)を使用すると実行できます。 
   
 

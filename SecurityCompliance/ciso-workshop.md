@@ -1,34 +1,34 @@
 ---
-title: チーフ情報セキュリティ責任者 (ciso) ワークショップ
+title: チーフ情報セキュリティ責任者 (CISO) ワークショップ
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティに関する原則と推奨事項の詳細については、「組織のモダン化セキュリティ」を参照してください。
-ms.openlocfilehash: 62f1150b0f72550de11ebfbf5562d92d585d52d2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 95bfc90211b90e129e6b208ab09b6123c61ccaae
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242684"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155309"
 ---
-# <a name="chief-information-security-officer-ciso-workshop-training"></a>チーフ情報セキュリティ責任者 (ciso) ワークショップのトレーニング
+# <a name="chief-information-security-officer-ciso-workshop-training"></a>チーフ情報セキュリティ責任者 (CISO) ワークショップのトレーニング
 
-「チーフ Information Security Office (ciso) ワークショップ」には、組織内のモダン化セキュリティのためのセキュリティな学習事項、原則、推奨事項のコレクションが含まれています。 このトレーニングワークショップは、Microsoft security teams およびな学習事項の経験の組み合わせをお客様に提供します。
+「チーフ Information Security Office (CISO) ワークショップ」には、組織内のモダン化セキュリティのためのセキュリティな学習事項、原則、推奨事項のコレクションが含まれています。 このトレーニングワークショップは、Microsoft security teams およびな学習事項の経験の組み合わせをお客様に提供します。
 
-ciso ワークショップは、次のような2つのセキュリティ課題を組織が達成するのに役立ちます。
+CISO ワークショップは、次のような2つのセキュリティ課題を組織が達成するのに役立ちます。
 
 - ますます高度な攻撃
 - クラウドプラットフォームが含まれるハイブリッドエンタープライズのアセットを保護する
 
-ciso ワークショップのビデオおよび PDF/PowerPoint のダウンロードコンテンツは、目的のセクションに移動したり、最初から開始したりできるように、モジュラー化されています。 各モジュールのスライドは、組織が効果的なセキュリティ戦略を構築するのに役立つ creative commons (属性付き) ライセンスと共有されています。
+CISO ワークショップのビデオおよび PDF/PowerPoint のダウンロードコンテンツは、目的のセクションに移動したり、最初から開始したりできるように、モジュラー化されています。 各モジュールのスライドは、組織が効果的なセキュリティ戦略を構築するのに役立つ creative commons (属性付き) ライセンスと共有されています。
 
-- [第1章: microsoft Cybersecurity ブリーフィング](ciso-workshop-module-1.md): このモジュールでは、重要なセキュリティの検疫、microsoft Cybersecurity reference architecture、Cybersecurity の復元、インターネット機能 (IoT)、運用技術の概要について説明します。
+- [第1章: Microsoft Cybersecurity ブリーフィング](ciso-workshop-module-1.md): このモジュールでは、重要なセキュリティの検疫、microsoft Cybersecurity reference architecture、Cybersecurity の復元、インターネット機能 (IoT)、運用技術の概要について説明します。
 
 - [モジュール 2: セキュリティ管理](ciso-workshop-module-2.md): 統合されたガイダンス、ポリシーの自動適用、監視を使用して、ハイブリッドエンタープライズ領域の可視性と制御を向上させる方法について説明します。
 

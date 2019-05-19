@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: このトピックでは、エンドユーザーと管理者向けのトラブルシューティング手順と、支援を得るためのテクニカル サポートへの問合わせ方法について説明します。
-ms.openlocfilehash: bea2ad502f24d63874bfa954e6d67c73dc44d98d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: baf8761ca4ce55695c2def74a39d3ca9a6de79ff
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259845"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156339"
 ---
 # <a name="troubleshooting-and-support-information"></a>トラブルシューティングとサポート情報
 
@@ -86,7 +86,7 @@ ms.locfileid: "32259845"
     
 ## <a name="support-information"></a>サポート情報
 
-アドインのインストール、構成、またはアンインストールに関してサポートが必要な場合は、Microsoft 365 管理センターのサポートページにある [新しいサービスリクエスト] リンクを使用してテクニカルサポートにお問い合わせください。 電話およびセルフサポートオプション経由でのサービス要求の提出などのその他のオプションについては、「 [Help and support for EOP](eop/help-and-support-for-eop.md)」を参照してください。
+アドインのインストール、構成、またはアンインストールに関してサポートが必要な場合は、Microsoft 365 管理センターのサポートページにある [新しいサービスリクエスト] リンクを使用してテクニカルサポートにお問い合わせください。 電話およびセルフサポートオプション経由でのサービス要求の提出などのその他のオプションについては、「 [Help and support FOR EOP](eop/help-and-support-for-eop.md)」を参照してください。
   
 ## <a name="for-more-information"></a>関連情報
 

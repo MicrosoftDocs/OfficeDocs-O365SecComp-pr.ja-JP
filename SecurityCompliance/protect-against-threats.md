@@ -3,10 +3,11 @@ title: Office 365 で脅威から保護する
 ms.author: tracyp
 author: msfttracyp
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.date: 4/30/2019
 search.appverid:
 - MOE150
 - MET150
@@ -14,12 +15,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: この記事をガイドとして使用して、今すぐ脅威保護機能を構成します。
-ms.openlocfilehash: 646ec220bf4649472d4ab885824010bc32ea862c
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 1697904dac69e3b634c0f853fbd48c5a5b5257d8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402985"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157299"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Office 365 で脅威から保護する
 
@@ -37,7 +38,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 |保護の種類  |サブスクリプションの要件  |
 |---------|---------|
 |マルウェア対策保護    | [Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)EOP        |
-|電子メールおよび Office ドキュメント内の悪意のある url やファイルからの保護    | [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)        |
+|電子メールおよび Office ドキュメント内の悪意のある Url やファイルからの保護    | [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)        |
 |フィッシング対策保護    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)      |
 |高度なフィッシング対策保護    | [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)   |
 |スパム対策保護     | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)       |
@@ -46,7 +47,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 ### <a name="roles-and-permissions"></a>ロールと権限
 
-[セキュリティ & コンプライアンスセンター](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)でポリシーを構成するには、適切な役割が割り当てられている必要があります。 次の表は、いくつかの例を示しています。 
+[セキュリティ _AMP_ コンプライアンスセンター](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)でポリシーを構成するには、適切な役割が割り当てられている必要があります。 次の表は、いくつかの例を示しています。 
 
 |役割または役割グループ  |詳細情報  |
 |---------|---------|
@@ -65,22 +66,22 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 2. [**既定**のポリシー] をダブルクリックし、[**設定**] を選択します。
 
 3. 次の設定を指定します。
-    
+
     - [**マルウェア検出の応答**] セクションで、既定の設定の [**いいえ**] をそのまま使用します。
-   
+
     - [**一般的な添付ファイルの種類のフィルター** ] セクションで、 **[オン**] を選択します。
 
 4. **[保存]** をクリックします。
 
 マルウェア対策ポリシーオプションの詳細については、「[マルウェア対策ポリシーを構成](configure-anti-malware-policies.md)する」を参照してください。
 
-## <a name="part-2---protection-from-malicious-urls-and-files"></a>パート 2-悪意のある url およびファイルからの保護
+## <a name="part-2---protection-from-malicious-urls-and-files"></a>パート 2-悪意のある Url およびファイルからの保護
 
-悪意のある url やファイルからのクリック時の保護は、 [Office 365 atp](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (atp) を含むサブスクリプションで利用でき、atp の[安全な添付ファイル](atp-safe-attachments.md)と[atp の安全なリンク](atp-safe-links.md)ポリシーによって設定されます。
+悪意のある Url やファイルからのクリック時の保護は、 [Office 365 atp](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (atp) を含むサブスクリプションで利用でき、Atp の[安全な添付ファイル](atp-safe-attachments.md)と[atp の安全なリンク](atp-safe-links.md)ポリシーによって設定されます。
 
 ### <a name="atp-safe-attachments-policies"></a>ATP の安全な添付ファイルポリシー
 
-[atp の安全な添付ファイル](atp-safe-attachments.md)を設定するには、少なくとも1つの atp の安全な添付ファイルポリシーを定義する必要があります。 
+[Atp の安全な添付ファイル](atp-safe-attachments.md)を設定するには、少なくとも1つの Atp の安全な添付ファイルポリシーを定義する必要があります。 
 
 1. [セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**脅威管理** > **ポリシー** > **ATP 安全添付ファイル**] を選択します。
 
@@ -112,7 +113,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 2. [**既定**のポリシー] をダブルクリックします。
 
-3. [**安全なリンクの使用**] セクションで、[ **office 365 ProPlus、office for iOS**、および Android] オプションをオンにして、[**保存**] をクリックします。
+3. [**安全なリンクの使用**] セクションで、[ **office 365 ProPlus、office for IOS**、および Android] オプションをオンにして、[**保存**] をクリックします。
 
 4. [**特定の受信者に適用されるポリシー** ] セクションで、プラス**+** 記号 () をクリックします。
 
@@ -146,7 +147,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 3. [**偽装**] セクションで、[**編集**] をクリックし、次の設定を指定します。
 
-    -  [**保護するユーザーの追加**] タブで、[保護] をオンにします。 次に、組織の取締役会のメンバー、CEO、CFO、その他のシニアリーダーなどのユーザーを追加します。 (個々の電子メールアドレスを入力するか、クリックしてリストを表示することができます。)
+    - [**保護するユーザーの追加**] タブで、[保護] をオンにします。 次に、組織の取締役会のメンバー、CEO、CFO、その他のシニアリーダーなどのユーザーを追加します。 (個々の電子メールアドレスを入力するか、クリックしてリストを表示することができます。)
 
     - [**保護するドメインの追加**] タブで、**自分が所有しているドメインを自動的**に有効にします。 カスタムドメインがある場合は、それらも追加します。
 
@@ -188,7 +189,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 ## <a name="part-5---additional-settings-to-configure"></a>パート 5-構成する追加の設定
 
-マルウェア、悪意のある url、ファイル、フィッシング、スパムからの保護を構成するだけでなく、ゼロ時間の自動削除と監査ログの設定を構成することをお勧めします。
+マルウェア、悪意のある Url、ファイル、フィッシング、スパムからの保護を構成するだけでなく、ゼロ時間の自動削除と監査ログの設定を構成することをお勧めします。
 
 ### <a name="zero-hour-auto-purge-for-email"></a>電子メールのゼロ時間自動削除
 
@@ -213,5 +214,3 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 |レポートを表示して、組織の脅威保護機能がどのように機能するかを確認する    |[セキュリティダッシュボード](security-dashboard.md)<br/>[電子メールセキュリティレポート](view-email-security-reports.md)<br/>[Office 365 ATP のレポート](view-reports-for-atp.md)<br/>[脅威エクスプローラー](use-explorer-in-security-and-compliance.md)    |
 |必要に応じて脅威保護ポリシーを定期的にレビューし、改訂する    |[セキュリティ スコア](microsoft-secure-score.md)<br/>[スマートレポートと分析情報](reports-and-insights-in-security-and-compliance.md)<br/>[Office 365 の脅威の調査と応答の機能](keep-users-safe-with-office-365-ti.md)          |
 |新機能とサービス更新を見る     |[標準および対象のリリースオプション](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)<br/>[Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)<br/>[Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)         |
-
-

@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
 description: '表示されているタスクオプションの定義を含む、Office 365 Advanced eDiscovery の分析プロセスの結果を表示する場所について説明します。  '
-ms.openlocfilehash: 990bcbb3c6626521d40f7ce057c764200d5047b5
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 092daa506316b5eb1ef1f5c466055b29e350dc18
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267111"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157859"
 ---
 # <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>Office の分析結果を表示する 365 Advanced eDiscovery
 
@@ -37,7 +37,7 @@ ms.locfileid: "32267111"
   
 - **ND/ET: セットアップ**: 実行の準備をします。たとえば、run および case パラメーターを設定します。
     
-- **nd/ET: nd 計算**: ファイルのほぼ重複した分析を処理します。
+- **Nd/ET: nd 計算**: ファイルのほぼ重複した分析を処理します。
     
 - **ND/et: et 計算**: 電子メールセット全体で電子メールスレッド分析を実行します。
     
@@ -66,7 +66,7 @@ ms.locfileid: "32267111"
     
 - **包括的コピー**: 包括的なメールまたは包括的なメールが含まれている別のメッセージのコピーである場合は、包括コピーとして指定します。 言い換えると、このメッセージの件名と本文は別の包括的なメッセージと同じであり、同じノードに共存しています。 包括的なコピーメッセージには同じ内容が含まれているため、通常はレビュープロセスでスキップできます。 
     
-- **rest**: これは、一意のコンテンツがまったく含まれていないため、上記の3つのカテゴリに分類されないメールを示します。 これらの電子メールメッセージを確認する必要はありません。 メッセージに添付ファイルが含まれていて、それより後の包括的な電子メールに含まれていない場合は、添付ファイルのレビューが必要になる可能性があります。 これは、スレッド内に包括的なマイナスの電子メールが存在することによって示されます。
+- **Rest**: これは、一意のコンテンツがまったく含まれていないため、上記の3つのカテゴリに分類されないメールを示します。 これらの電子メールメッセージを確認する必要はありません。 メッセージに添付ファイルが含まれていて、それより後の包括的な電子メールに含まれていない場合は、添付ファイルのレビューが必要になる可能性があります。 これは、スレッド内に包括的なマイナスの電子メールが存在することによって示されます。
     
 **添付ファイル**の結果には、重複した種類によって添付ファイルの数が表示されます。 
   

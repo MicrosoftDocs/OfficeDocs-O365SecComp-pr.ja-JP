@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 8/24/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: 顧客の電子メール システムがマルウェアまたは悪意のあるスパム攻撃によって侵害を受け、ホストされているフィルター サービスでスパムを送信していると、Office 365 データ センター サーバーの IP アドレスがサードパーティのブロック リストに表示されることがあります。
-ms.openlocfilehash: b3c0aecd45dd01d407712af2e3945e1cff521710
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0581d4d0ac745f7520f73cd6b4465d72fa1dcf48
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253945"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152729"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>送信メッセージにおける危険度の高い配信プール
 

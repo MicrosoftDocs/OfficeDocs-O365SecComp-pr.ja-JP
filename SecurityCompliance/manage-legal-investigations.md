@@ -3,7 +3,7 @@ title: Office 365 で法的調査を管理する
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Office 365 のセキュリティ & コンプライアンスセンターで電子情報開示ケースを使用して、組織の法的調査を管理します。 E5 サブスクリプションを持っている場合は、高度な電子情報開示のテキスト分析、machine learning、および予測コーディング機能を使用して、ケースデータをさらに分析できます。
-ms.openlocfilehash: 5bfa4719f2bb065a7064e7dc9d02778a4d032da8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6f5b7bc7b1c8d672efe60629b1ccf1315c8b74dd
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252095"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155729"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Office 365 で法的調査を管理する
 
@@ -54,14 +54,14 @@ ms.locfileid: "32252095"
   
 ## <a name="analyze-case-data-using-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示を使用してケースデータを分析する
 
-Office 365 Advanced ediscovery は、前のセクションで説明したコンテンツ検索および電子情報開示機能に基づいて構築されます。 電子情報開示ケースを作成し、保管担当者の場所を保留にして、ケースに応答する可能性があるデータを収集したら、テキスト分析、machine learning、および高度な予測コーディング機能を使用して、さらにデータを分析することができます。情報. これにより、組織は、多数の電子メールメッセージ、ドキュメント、およびその他の種類のデータを簡単に処理して、特定のケースに関連する可能性が最も高いアイテムを見つけることができます。 また、統合されたケース管理と高度な電子情報開示を使用して、セキュリティ & コンプライアンスセンター内で同じケースをシームレスに管理することができました。
+Office 365 Advanced eDiscovery は、前のセクションで説明したコンテンツ検索および電子情報開示機能に基づいて構築されます。 電子情報開示ケースを作成し、保管担当者の場所を保留にして、ケースに応答する可能性があるデータを収集したら、テキスト分析、machine learning、および高度な予測コーディング機能を使用して、さらにデータを分析することができます。情報. これにより、組織は、多数の電子メールメッセージ、ドキュメント、およびその他の種類のデータを簡単に処理して、特定のケースに関連する可能性が最も高いアイテムを見つけることができます。 また、統合されたケース管理と高度な電子情報開示を使用して、セキュリティ & コンプライアンスセンター内で同じケースをシームレスに管理することができました。
   
 > [!NOTE]
 > Advanced eDiscovery を使用してユーザーのデータを分析するには、ユーザー (データの保管担当者) に Office365 E5 ライセンスが割り当てられている必要があります。または、Office365 E1 または E3 ライセンスを持つユーザーに Advanced eDiscovery 単体のライセンスを割り当てることもできます。ケースに割り当てられ、Advanced eDiscovery を使用してデータを分析する管理者および法令遵守責任者には E5 ライセンスは不要です。 
   
 ### <a name="get-started"></a>作業の開始
 
-上級電子情報開示を開始する最も簡単な方法は、「セキュリティ & コンプライアンスセンターでのケースの作成と検索結果の準備」、「Advanced ediscovery にその結果を読み込む」、および「case データを分析するためのエクスプレス分析を実行する」というものです。外部レビュー用。
+上級電子情報開示を開始する最も簡単な方法は、「セキュリティ & コンプライアンスセンターでのケースの作成と検索結果の準備」、「Advanced eDiscovery にその結果を読み込む」、および「case データを分析するためのエクスプレス分析を実行する」というものです。外部レビュー用。
   
 - 高度な電子情報開示ワークフローの[簡単な概要を取得する](quick-setup-for-advanced-ediscovery.md) 
     

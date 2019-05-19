@@ -4,22 +4,22 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/19/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: インプレースホールド、訴訟ホールド、および Office 365 のアイテム保持ポリシーを使用すると、メールボックスのコンテンツを保持して規制コンプライアンスおよび電子情報開示の要件を満たすことができます。
-ms.openlocfilehash: fcf5567bc50f25ce51d8d569d772559a376703d0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 85e291b5fb4e12ad077c98d805ac232b17e6e647
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261685"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157409"
 ---
-# <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>電子情報開示のために Bcc および展開された配布リスト グループの受信者を保存する
+# <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>電子情報開示のために Bcc および展開された配布グループの受信者を保持する
   
-インプレースホールド、訴訟ホールド、および[Office 365 アイテム保持ポリシー](http://go.microsoft.com/fwlink/?LinkID=827811) (Security & コンプライアンスセンターで作成) を使用すると、メールボックスのコンテンツを保持して、規制遵守および電子情報開示の要件を満たすことができます。 メッセージの [宛先] フィールドと [CC] フィールドに直接指定されている受信者の情報は既定ですべてのメッセージに含められますが、組織によってはメッセージの全受信者の詳細を検索して再現する機能が必要な場合もあります。 これには、以下が含まれます。 
+インプレースホールド、訴訟ホールド、および[Office 365 アイテム保持ポリシー](http://go.microsoft.com/fwlink/?LinkID=827811) (Security _AMP_ コンプライアンスセンターで作成) を使用すると、メールボックスのコンテンツを保持して、規制遵守および電子情報開示の要件を満たすことができます。 メッセージの [宛先] フィールドと [CC] フィールドに直接指定されている受信者の情報は既定ですべてのメッセージに含められますが、組織によってはメッセージの全受信者の詳細を検索して再現する機能が必要な場合もあります。 これには、以下が含まれます。 
   
 - **メッセージの [BCC] フィールドを使用して指定された受信者:** BCC の受信者は、送信者のメールボックス内のメッセージには格納されますが、受信者に配信されたメッセージのヘッダーには含まれません。 
     

@@ -3,18 +3,18 @@ title: セキュリティ/コンプライアンス センター のメール フ
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードについて学習できます。
-ms.openlocfilehash: 80aa6b773d63b6c98293fa2787d38ad393e67b37
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: c7c1a6a16c908f42098500c1015b3c3994175818
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868625"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155879"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメール フロー インサイト
 
@@ -22,17 +22,17 @@ ms.locfileid: "33868625"
 
 メールフローダッシュボードで使用できる洞察、レポート、およびウィジェットは次のとおりです。
 
-- [メールフローマップレポート](mfi-mail-flow-map-report.md)
+- [メール フローのマップ レポート](mfi-mail-flow-map-report.md)
 
 - [ドメインメールフローの状態の洞察](mfi-domain-mail-flow-status-insight.md)
 
-- [SMTP 認証クライアントレポート](mfi-smtp-auth-clients-report.md)
+- [SMTP Auth クライアントのレポート](mfi-smtp-auth-clients-report.md)
 
 - [送信者ドメインの洞察](mfi-sender-domain-insight.md)
 
 - [配信不能レポート](mfi-non-delivery-report.md)
 
-- [承認されていないドメインレポート](mfi-non-accepted-domain-report.md)
+- [承認されていないドメインのレポート](mfi-non-accepted-domain-report.md)
 
 - [送信と受信のメール フロー](mfi-outbound-and-inbound-mail-flow.md)
 

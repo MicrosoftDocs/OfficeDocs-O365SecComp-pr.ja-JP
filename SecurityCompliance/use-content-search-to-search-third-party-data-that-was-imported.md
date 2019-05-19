@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/27/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -12,18 +12,18 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: コンテンツ検索電子情報開示ツールを使用して、サードパーティのデータソースから Office 365 のメールボックスにインポートされたアイテムを検索します。 クエリを作成して、インポートされたすべてのアイテムを検索したり、特定のサードパーティのデータ型を検索するクエリを作成したりすることができます。 この記事では、Office 365 にインポートできるサードパーティのデータ型を検索するために、キーワードクエリで使用できる値の一覧を示します。
-ms.openlocfilehash: c71472b5e6d9b992196780aba55e3775823447ab
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 4a611ed04cc102aad4d978a379efbf46a0bd70e2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402905"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156209"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>コンテンツ検索を使用して Office 365 にインポートされたサードパーティデータを検索する
 
 セキュリティ & コンプライアンスセンターの[コンテンツ検索電子情報開示ツール](content-search.md)を使用して、サードパーティのデータソースから Office 365 のメールボックスにインポートされたアイテムを検索できます。 インポートされたサードパーティのデータアイテムをすべて検索するクエリを作成するか、特定のサードパーティデータアイテムのみを検索するクエリを作成することができます。 また、Office 365 でサードパーティのデータを保持するために、クエリベースの保持ポリシーまたはクエリベースの電子情報開示の保持を作成することもできます。 
   
-サードパーティのデータのインポート、および office 365 にインポートできるサードパーティのデータ型のリストの詳細については、「 [office を使用してサードパーティのデータをアーカイブする (office 365](work-with-partner-to-archive-third-party-data.md))」を参照してください。 
+サードパーティのデータのインポート、および Office 365 にインポートできるサードパーティのデータ型のリストの詳細については、「 [office を使用してサードパーティのデータをアーカイブする (office 365](work-with-partner-to-archive-third-party-data.md))」を参照してください。 
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>すべてのサードパーティデータを検索するクエリを作成する
 
@@ -67,7 +67,7 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |Axs Signed  <br/> | `ipm.externaldata.AxsSigned*` <br/> |
 |Bazaarvoice  <br/> | `ipm.externaldata.Bazaarvoice*` <br/> |
 |Bearshare  <br/> | `ipm.externaldata.Bearshare*` <br/> |
-|bittorrent  <br/> | `ipm.externaldata.BitTorrent*` <br/> |
+|BitTorrent  <br/> | `ipm.externaldata.BitTorrent*` <br/> |
 |Blackberry  <br/> | `ipm.externaldata.Blackberry*` <br/> |
 |BlackBerry 呼び出しログ  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
 |BlackBerry メッセンジャー  <br/> | `ipm.externaldata.BlackBerryMessenger*` <br/> |
@@ -83,9 +83,9 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |Direct Connect  <br/> | `ipm.externaldata.DirectConnect*` <br/> |
 |Facebook  <br/> | `ipm.externaldata.Facebook*` <br/> |
 |FastTrack  <br/> | `ipm.externaldata.FastTrack*` <br/> |
-|fxconnect  <br/> | `ipm.externaldata.FXConnect.chat` <br/> |
+|FXConnect  <br/> | `ipm.externaldata.FXConnect.chat` <br/> |
 |Flickr  <br/> | `ipm.externaldata.Flickr*` <br/> |
-|gnutella  <br/> | `ipm.externaldata.Gnutella*` <br/> |
+|Gnutella  <br/> | `ipm.externaldata.Gnutella*` <br/> |
 |Google +  <br/> | `ipm.externaldata.GooglePlus*` <br/> |
 |Google Talk  <br/> | `ipm.externaldata.GoogleTalk*` <br/> |
 |GoToMyPC  <br/> | `ipm.externaldata.GoToMyPC*` <br/> |
@@ -93,7 +93,7 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |Hopster  <br/> | `ipm.externaldata.Hopster*` <br/> |
 |HubConnex  <br/> | `ipm.externaldata.HubConnex*` <br/> |
 |IBM 接続  <br/> | `ipm.externaldata.Connections*` <br/> |
-|IBM sametime  <br/> | `ipm.externaldata.Sametime*` <br/> |
+|IBM SameTime  <br/> | `ipm.externaldata.Sametime*` <br/> |
 |ICE チャット  <br/> | `ipm.externaldata.ICEChat.Chat` <br/> |
 |Indii Messenger  <br/> | `ipm.externaldata.Indii*` <br/> |
 |Instagram  <br/> | `ipm.externaldata.Instagram*` <br/> |
@@ -102,17 +102,17 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |IRC  <br/> | `ipm.externaldata.IRC*` <br/> |
 |Jive  <br/> | `ipm.externaldata.Jive*` <br/> |
 |JiveApiRetention  <br/> | `ipm.externaldata.JiveApiRetention*` <br/> |
-|jxta  <br/> | `ipm.externaldata.JXTA*` <br/> |
+|JXTA  <br/> | `ipm.externaldata.JXTA*` <br/> |
 |LinkedIn  <br/> | `ipm.externaldata.LinkedIn*` <br/> |
-|mftp  <br/> | `ipm.externaldata.MFTP*` <br/> |
+|MFTP  <br/> | `ipm.externaldata.MFTP*` <br/> |
 |Microsoft UC  <br/> | `ipm.externaldata.MicrosoftUC*` <br/> |
 |マインド揃え  <br/> | `ipm.externaldata.MindAlign*` <br/> |
 |Mobile Guard  <br/> | `ipm.externaldata.MobileGuard*` <br/> |
 |ウェブ  <br/> | `ipm.externaldata.MSN*` <br/> |
-|myspace  <br/> | `ipm.externaldata.MySpace*` <br/> |
+|MySpace  <br/> | `ipm.externaldata.MySpace*` <br/> |
 |NEONetwork  <br/> | `ipm.externaldata.NEONetwork*` <br/> |
-|opennap  <br/> | `ipm.externaldata.OpenNap*` <br/> |
-|pinterest  <br/> | `ipm.externaldata.Pinterest*` <br/> |
+|OpenNap  <br/> | `ipm.externaldata.OpenNap*` <br/> |
+|Pinterest  <br/> | `ipm.externaldata.Pinterest*` <br/> |
 |ピボット  <br/> | `ipm.externaldata.Pivot*` <br/> |
 |QQ  <br/> | `ipm.externaldata.QQ*` <br/> |
 |Microsoft SharePoint  <br/> | `ipm.externaldata.SharePoint*` <br/> |
@@ -129,9 +129,9 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |Twitter  <br/> | `ipm.externaldata.Twitter*` <br/> |
 |UBS チャット  <br/> | `ipm.externaldata.UBS*` <br/> |
 |Vimeo  <br/> | `ipm.externaldata.Vimeo*` <br/> |
-|winmx  <br/> | `ipm.externaldata.WinMX*` <br/> |
-|winny  <br/> | `ipm.externaldata.Winny*` <br/> |
-|yahoo!  <br/> | `ipm.externaldata.Yahoo!*` <br/> |
+|WinMX  <br/> | `ipm.externaldata.WinMX*` <br/> |
+|Winny  <br/> | `ipm.externaldata.Winny*` <br/> |
+|Yahoo!  <br/> | `ipm.externaldata.Yahoo!*` <br/> |
 |Yammer  <br/> | `ipm.externaldata.Yammer*` <br/> |
 |YellowJacket  <br/> | `ipm.externaldata.YellowJacket*` <br/> |
 |YouTube  <br/> | `ipm.externaldata.YouTube*` <br/> |

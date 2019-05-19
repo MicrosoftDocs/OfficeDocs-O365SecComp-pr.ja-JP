@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,17 +13,17 @@ search.appverid:
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
-description: exchange online Protection および exchange online の IPv6 ソースからの匿名メッセージのサポートを構成する方法について説明します。
-ms.openlocfilehash: 5d87dc929d2d67681b21eb46a4aaa52ca32caff9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Exchange Online Protection および Exchange Online の IPv6 ソースからの匿名メッセージのサポートを構成する方法について説明します。
+ms.openlocfilehash: 87317188a4564fccd968b00c9a93dc1b963c142b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260255"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158189"
 ---
 # <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>IPv6 経由の匿名受信電子メール メッセージのサポート
 
-Exchange Online Protection (EOP) および Exchange Online は、トランスポート層セキュリティ (TLS) 経由でメッセージを送信しない送信者からの IPv6 通信経由の匿名受信電子メール メッセージの受信をサポートしています。 microsoft 365 管理センターを開いて、[ [https://admin.microsoft.com/adminportal/home](https://admin.microsoft.com/adminportal/home)**サポート**] をクリックし、[**新しいサービスリクエスト**] をクリックすることによって、IPv6 経由でメッセージを受信するようにオプトインできます。 IPv6 にオプトインしない場合は、引き続き、IPv4 経由でメッセージを受信することになります。
+Exchange Online Protection (EOP) および Exchange Online は、トランスポート層セキュリティ (TLS) 経由でメッセージを送信しない送信者からの IPv6 通信経由の匿名受信電子メール メッセージの受信をサポートしています。 Microsoft 365 管理センターを開いて、[ [https://admin.microsoft.com/adminportal/home](https://admin.microsoft.com/adminportal/home)**サポート**] をクリックし、[**新しいサービスリクエスト**] をクリックすることによって、IPv6 経由でメッセージを受信するようにオプトインできます。 IPv6 にオプトインしない場合は、引き続き、IPv4 経由でメッセージを受信することになります。
   
 IPv6 経由でメッセージをサービスに送信する送信者は、次の 2 つの要件を満たす必要があります。
   

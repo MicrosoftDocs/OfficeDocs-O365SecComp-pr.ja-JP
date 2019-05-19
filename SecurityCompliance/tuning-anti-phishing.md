@@ -4,19 +4,19 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: 管理者は、フィッシングメッセージがどのように使用されたのかや、今後のフィッシング対策メッセージを回避するために何を行う必要があるかを特定する方法について説明します。
-ms.openlocfilehash: c3025267ad8e01c18de618c85127dfe1077a16aa
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b17cdc6ec6cfc07642a6a40657009b46b83f1559
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264319"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156349"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Office 365 でフィッシング対策保護を調整する
 
@@ -40,7 +40,7 @@ Office 365 には、既定で有効になっているさまざまなフィッシ
 
 フィッシングメッセージの報告は、Office 365 のすべてのお客様を保護するために使用されるフィルターを調整するのに役立ちます。
 
-フィッシングメッセージを新しい、それ以外の空のメッセージの_添付ファイルとして_ **phish@office365.microsoft.com**に送信します。 元のメッセージを転送するだけではありません。それ以外の場合は、元のメッセージヘッダーを調べることはできません。 または、outlook または web 上の outlook (旧称 outlook web App) で[レポートメッセージ](https://docs.microsoft.com/office365/securitycompliance/enable-the-report-message-add-in)アドインを使用することもできます。
+フィッシングメッセージを新しい、それ以外の空のメッセージの_添付ファイルとして_ **phish@office365.microsoft.com**に送信します。 元のメッセージを転送するだけではありません。それ以外の場合は、元のメッセージヘッダーを調べることはできません。 または、Outlook または web 上の Outlook (旧称 Outlook Web App) で[レポートメッセージ](https://docs.microsoft.com/office365/securitycompliance/enable-the-report-message-add-in)アドインを使用することもできます。
 
 詳細については、「[スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)」を参照してください。
 
@@ -52,7 +52,7 @@ Office 365 には、既定で有効になっているさまざまなフィッシ
 
 ## <a name="best-practices-to-stay-protected"></a>保護を維持するためのベストプラクティス
 
-- office 365 のセキュリティ設定を評価するために、月単位で[office のセキュリティで保護されたスコア](office-365-secure-score.md)を実行します。
+- Office 365 組織のセキュリティ設定を評価するために、月単位で、[セキュリティで保護されたスコア](microsoft-secure-score.md)を実行します。
 
 - [スプーフィングインテリジェンスレポート](learn-about-spoof-intelligence.md)を定期的に確認し、[フィッシング対策ポリシーのスプーフィング対策保護を有効](learn-about-spoof-intelligence.md#configuring-the-anti-spoofing-policy)にして、疑わしいメッセージをユーザーの迷惑メールフォルダーに配信する代わりに、そのメッセージを**検疫**します。
 
@@ -60,7 +60,7 @@ Office 365 には、既定で有効になっているさまざまなフィッシ
 
 - ユーザーによっては、スパム対策ポリシーの [送信者を許可する] または [ドメインを許可する] の一覧に独自のドメインを設定することで、フィッシングメッセージを誤って許可することがあります。 これを行う場合は、細心の注意を払う必要があります。 この構成では、一部の正当なメッセージが許可されますが、通常は Office 365 スパムまたはフィッシングフィルターによってブロックされる悪意のあるメッセージも許可されます。
 
-  ドメイン内の送信者によって禁止されている正当なメッセージ (誤検知) を処理する最善の方法は、office 365 の_すべて_の電子メールドメインについて、DNS の SPF、dkim、および DMARC レコードを完全に完全に構成することです。
+  ドメイン内の送信者によっ365て禁止されている正当なメッセージ (誤検知) を処理する最善の方法は、office 365 のすべての電子メールドメインについて、DNS の SPF、dkim、および DMARC レコードを完全に完全に構成することです。
 
   - SPF レコードが、ドメイン内の送信者の電子メールの_すべて_のソースを識別していることを確認します (サードパーティのサービスを忘れないでください)。
 
@@ -74,8 +74,8 @@ Office 365 には、既定で有効になっているさまざまなフィッシ
 
   - [DMARC を使用して Office で電子メールを検証する365](use-dmarc-to-validate-email.md)
 
-- 可能な限り、自分のドメインのメールを Office 365 に直接配信することをお勧めします。 言い換えると、office 365 ドメインの MX レコードを office 365 にポイントします。 Exchange Online protection (EOP) は、メールが Office 365 に直接配信される場合に、クラウドユーザーに最高の保護を提供することができます。 EOP の前にサードパーティの電子メールの検疫システムを使用する必要がある場合は、[ここに記載](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud)されているガイダンスに従っていることを確認してください。
+- 可能な限り、自分のドメインのメールを Office 365 に直接配信することをお勧めします。 言い換えると、Office 365 ドメインの MX レコードを Office 365 にポイントします。 Exchange Online Protection (EOP) は、メールが Office 365 に直接配信される場合に、クラウドユーザーに最高の保護を提供することができます。 EOP の前にサードパーティの電子メールの検疫システムを使用する必要がある場合は、[ここに記載](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud)されているガイダンスに従っていることを確認してください。
 
-- 複数要素認証 (MFA) は、侵害されたアカウントを防止するための最適な方法です。 すべてのユーザーに対して MFA を有効にすることを強くお勧めします。 段階的なアプローチの場合は、すべてのユーザーに対して mfa を有効にする前に、最も機密性の高いユーザー (管理者、役員など) に対して mfa を有効にすることから始めます。 手順については、「[多要素認証をセットアップ](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)する」を参照してください。
+- 複数要素認証 (MFA) は、侵害されたアカウントを防止するための最適な方法です。 すべてのユーザーに対して MFA を有効にすることを強くお勧めします。 段階的なアプローチの場合は、すべてのユーザーに対して MFA を有効にする前に、最も機密性の高いユーザー (管理者、役員など) に対して MFA を有効にすることから始めます。 手順については、「[多要素認証をセットアップ](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)する」を参照してください。
 
-- 外部の受信者へのルールの転送は、多くの場合、攻撃者がデータを抽出するために使用します。 「 [Office 365 のセキュリティで保護されたスコア](office-365-secure-score.md)の情報を**確認**する」の情報を使用して、外部の受信者に対する転送ルールを見つけて、それを防止します。 詳細については、「[セキュリティで保護されたスコアでクライアントの外部転送ルールを軽減](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)する」を参照してください。
+- 外部の受信者へのルールの転送は、多くの場合、攻撃者がデータを抽出するために使用します。 「 [Microsoft セキュリティスコア](microsoft-secure-score.md)」の「**メールボックス転送ルールを確認**する」を使用して、外部の受信者に対する転送ルールを見つけて、それを防止します。 詳細については、「[セキュリティで保護されたスコアでクライアントの外部転送ルールを軽減](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)する」を参照してください。

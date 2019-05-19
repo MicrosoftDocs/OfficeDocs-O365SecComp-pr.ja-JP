@@ -3,7 +3,7 @@ title: Office 365 の高度な電子情報開示の結果に基づく決定
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: 'Office 365 の Advanced eDiscovery の [判断] タブで、ケースファイルのレビューセットの適切なサイズを決定するのに役立つデータを提供する方法について説明します。 '
-ms.openlocfilehash: a9250a45129320517f96b9a335db95d164d2dae7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3f8ce0343b5a09cf3ab4c4bd94a53d8d0cbe0cce
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257822"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153519"
 ---
 # <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示の結果に基づく決定
 
@@ -36,7 +36,7 @@ ms.locfileid: "32257822"
     
 - **レビュー-取り消し率**: 関連性スコアによる高度な電子情報開示レビューの比較。 グラフのカットオフポイントは、関連性スコアにマッピングされた、確認するファイルのパーセンテージを表します。 これは、関連性テストフェーズで、カリングのエクスポートしきい値として使用されます。 既定のカットオフポイントは、確認するファイル数に対して、呼び戻しと精度の間のバランスが最適であるポイントです。 実際のカットオフポイントは、目標とコストのトレードオフ (% レビュー) およびリスク (% のリコール) に応じて、ユーザーによって決定される必要があります。スライダーを使用して、カットオフポイントを調整し、グラフおよびパラメータに対する影響を確認したり、取得する関連ファイルの割合を調整したり、決定を検証したりすることができます。
     
-- **パラメーター**: review、呼び戻し、次の関連性、およびコストの合計パラメーターは、ケース全体のコレクションに対するレビューセットに関連する累積計算された統計情報です。 これらのパラメーターの定義は次のとおりです。
+- **パラメーター**: Review、呼び戻し、次の関連性、およびコストの合計パラメーターは、ケース全体のコレクションに対するレビューセットに関連する累積計算された統計情報です。 これらのパラメーターの定義は次のとおりです。
     
     **レビュー**: このカットオフに基づいてレビューするファイルのパーセンテージ。 
     

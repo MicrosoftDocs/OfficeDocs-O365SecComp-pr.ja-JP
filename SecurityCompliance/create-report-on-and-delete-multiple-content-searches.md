@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/26/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Office 365 のセキュリティ & コンプライアンスセンターで、PowerShell スクリプトを使用して検索を作成し、レポートを実行するなどのコンテンツ検索タスクを自動化する方法について説明します。
-ms.openlocfilehash: 96d10e274cd83a4785170239302d55e74d40ca84
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 75caf75d576ac4a24779de15f5b05cb7fe8fa724
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258446"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151179"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>複数のコンテンツ検索の作成、報告、削除
 
@@ -28,7 +28,7 @@ ms.locfileid: "32258446"
 
 - このトピックで説明するスクリプトを実行するには、Security & コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 
     
-- 手順1で CSV ファイルに追加できる、組織内の onedrive for business サイトの url の一覧を収集するには、「[組織内のすべての onedrive の場所の一覧を作成](https://support.office.com/article/Create-a-list-of-all-OneDrive-locations-in-your-organization-8e200cb2-c768-49cb-88ec-53493e8ad80a)する」を参照してください。 
+- 手順1で CSV ファイルに追加できる、組織内の OneDrive for Business サイトの Url の一覧を収集するには、「[組織内のすべての onedrive の場所の一覧を作成](https://support.office.com/article/Create-a-list-of-all-OneDrive-locations-in-your-organization-8e200cb2-c768-49cb-88ec-53493e8ad80a)する」を参照してください。 
     
 - このトピックで作成するすべてのファイルを同じフォルダーに保存するようにしてください。 これにより、スクリプトをより簡単に実行できるようになります。
     
@@ -38,7 +38,7 @@ ms.locfileid: "32258446"
     
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>手順 1: 実行する検索に関する情報を含む CSV ファイルを作成する
 
-この手順で作成するコンマ区切り値 (CSV) ファイルには、検索するユーザーごとに1つの行が含まれています。 ユーザーの Exchange Online メールボックス (アーカイブメールボックスが有効になっている場合) と OneDrive for business サイトを検索できます。 または、メールボックスまたは OneDrive for business サイトのみを検索することもできます。 SharePoint Online 組織の任意のサイトを検索することもできます。 手順3で実行するスクリプトは、CSV ファイルの各行に対して個別に検索を作成します。 
+この手順で作成するコンマ区切り値 (CSV) ファイルには、検索するユーザーごとに1つの行が含まれています。 ユーザーの Exchange Online メールボックス (アーカイブメールボックスが有効になっている場合) と OneDrive for Business サイトを検索できます。 または、メールボックスまたは OneDrive for Business サイトのみを検索することもできます。 SharePoint Online 組織の任意のサイトを検索することもできます。 手順3で実行するスクリプトは、CSV ファイルの各行に対して個別に検索を作成します。 
   
 1. 次のテキストをコピーして、メモ帳を使用して .txt ファイルに貼り付けます。 このファイルをローカルコンピューター上のフォルダーに保存します。 他のスクリプトもこのフォルダーに保存します。
     
@@ -59,10 +59,10 @@ ms.locfileid: "32258446"
     |**パラメーター**|**説明**|
     |:-----|:-----|
     | `ExchangeLocation` <br/> |ユーザーのメールボックスの SMTP アドレス。  <br/> |
-    | `SharePointLocation` <br/> |ユーザーの OneDrive for business サイトの url、または組織内のサイトの url。 OneDrive for business サイトの URL の場合は、次` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `の形式を使用します。 たとえば、 `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`。  <br/> |
+    | `SharePointLocation` <br/> |ユーザーの OneDrive for Business サイトの URL、または組織内のサイトの URL。 OneDrive for Business サイトの URL の場合は、次` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `の形式を使用します。 例: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`。  <br/> |
     | `ContentMatchQuery` <br/> |検索の検索クエリ。 検索クエリの作成の詳細については、「[コンテンツ検索のキーワードクエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。  <br/> |
-    | `StartDate` <br/> |電子メールの場合、メッセージが受信者によって受信された日付または送信者によって送信された日付。 SharePoint または OneDrive for business サイトのドキュメントの場合は、ドキュメントが最後に変更された日付またはそれ以降の日付を指定します。  <br/> |
-    | `EndDate` <br/> |電子メールの場合、ユーザーによって送信されたメッセージが送信された日付またはそれ以前の日付。 SharePoint または OneDrive for business サイトのドキュメントの場合、ドキュメントが最後に変更された日付またはそれ以前の日付。  <br/> |
+    | `StartDate` <br/> |電子メールの場合、メッセージが受信者によって受信された日付または送信者によって送信された日付。 SharePoint または OneDrive for Business サイトのドキュメントの場合は、ドキュメントが最後に変更された日付またはそれ以降の日付を指定します。  <br/> |
+    | `EndDate` <br/> |電子メールの場合、ユーザーによって送信されたメッセージが送信された日付またはそれ以前の日付。 SharePoint または OneDrive for Business サイトのドキュメントの場合、ドキュメントが最後に変更された日付またはそれ以前の日付。  <br/> |
    
 3. Excel ファイルを CSV ファイルとして、ローカルコンピューター上のフォルダーに保存します。 手順3で作成したスクリプトでは、この CSV ファイルの情報を使用して検索を作成します。 
   
@@ -80,7 +80,7 @@ ms.locfileid: "32258446"
     $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
     ```
 
-2. ローカルコンピューターで、Windows PowerShell を開き、前の手順で作成したスクリプトが置かれているフォルダーに移動して、スクリプトを実行します。例えば：
+2. ローカル コンピューター上で、Windows PowerShell を開き、前の手順で作成したスクリプトが配置されているフォルダーに移動し、スクリプトを実行します。例:
     
     ```
     .\ConnectSCC.ps1
@@ -92,7 +92,7 @@ ms.locfileid: "32258446"
   
 - **検索グループ ID** -この名前は、CSV ファイルから作成された検索を簡単に整理する方法を提供します。 作成された各検索には、検索グループ ID が付けられ、検索名に数字が追加されます。 たとえば、検索グループ ID に「 **ContosoCase** 」と入力すると、検索には**ContosoCase_1**、 **ContosoCase_2**、 **ContosoCase_3**という名前が付けられます。 入力する名前は大文字と小文字が区別されることに注意してください。 手順4と手順5で検索グループ ID を使用する場合は、作成時と同じケースを使用する必要があります。 
     
-- **csv ファイル**-手順1で作成した csv ファイルの名前。 必ず完全なファイル名を指定してください。ファイル拡張子は .csv にします。たとえば、 `ContosoCase.csv`のようになります。
+- **Csv ファイル**-手順1で作成した csv ファイルの名前。 必ず完全なファイル名を指定してください。ファイル拡張子は .csv にします。たとえば、 `ContosoCase.csv`のようになります。
     
 このスクリプトを実行するには、以下の手順を実行します。
 
@@ -183,7 +183,7 @@ ms.locfileid: "32258446"
     
 4. [**ソース csv ファイル**] プロンプトで、csv ファイル拡張子を含む csv ファイルの名前を入力します。たとえば、 `ContosoCase.csv`のようになります。
     
-5. **enter**キーを押して、スクリプトの実行を続行します。 
+5. **Enter**キーを押して、スクリプトの実行を続行します。 
     
     スクリプトには、検索の作成と実行の進行状況が表示されます。 スクリプトが完了すると、プロンプトに戻ります。 
     
@@ -191,7 +191,7 @@ ms.locfileid: "32258446"
   
 ## <a name="step-4-run-the-script-to-report-the-search-estimates"></a>手順 4: 検索結果を報告するスクリプトを実行する
 
-検索を作成した後、手順3で作成した各検索の検索ヒット数の簡単なレポートを表示するスクリプトを実行します。 レポートには、各検索の結果のサイズと、ヒットの合計数とすべての検索の合計サイズも含まれます。 レポートスクリプトを実行すると、検索グループ ID の入力を求められます。また、レポートを csv ファイルに保存する場合は、csv ファイル名を指定する必要があります。
+検索を作成した後、手順3で作成した各検索の検索ヒット数の簡単なレポートを表示するスクリプトを実行します。 レポートには、各検索の結果のサイズと、ヒットの合計数とすべての検索の合計サイズも含まれます。 レポートスクリプトを実行すると、検索グループ ID の入力を求められます。また、レポートを CSV ファイルに保存する場合は、CSV ファイル名を指定する必要があります。
   
 1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、 `SearchReport.ps1`のようになります。 他のファイルを保存したのと同じフォルダーにファイルを保存します。
     
@@ -256,7 +256,7 @@ ms.locfileid: "32258446"
 
 3. [**検索グループ ID** ] プロンプトで、検索グループ名を入力し、enter **** キーを押します。例`ContosoCase`を示します。 この名前は大文字と小文字が区別されるので、手順3でスクリプトを実行したときと同じ方法で入力する必要があります。
     
-4. レポートを csv ファイルに保存するための**ファイルパス (空白のままに**してレポートを表示します) を入力します。レポートを csv ファイルに保存する場合は、完全なファイル名パス (.csv ファイル拡張子を含む) のファイル名を入力します。 csv ファイル拡張子を含む csv ファイルの名前。 たとえば、現在のディレクトリに`ContosoCaseReport.csv`保存するか、別のフォルダーに保存`C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv`するように入力することができます。 また、メッセージを空白のままにしてレポートを表示することもできますが、ファイルに保存することはできません。 
+4. レポートを csv ファイルに保存するための**ファイルパス (空白のままに**してレポートを表示します) を入力します。レポートを csv ファイルに保存する場合は、完全なファイル名パス (.csv ファイル拡張子を含む) のファイル名を入力します。 csv ファイル拡張子を含む CSV ファイルの名前。 たとえば、現在のディレクトリに`ContosoCaseReport.csv`保存するか、別のフォルダーに保存`C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv`するように入力することができます。 また、メッセージを空白のままにしてレポートを表示することもできますが、ファイルに保存することはできません。 
     
 5. **[Enter]** キーを押します。
     

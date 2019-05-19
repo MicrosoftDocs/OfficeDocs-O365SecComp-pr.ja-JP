@@ -4,7 +4,7 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 管理者は、Exchange Online で S/MIME を使用する方法について説明します。
-ms.openlocfilehash: 7c7225efce247928e19946e695c19931f198ae32
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 570e306ea1c781344bed120f1dd467d31a4a4fe6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261385"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156999"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>Exchange Online でのメッセージの署名と暗号化の S/MIME
 
@@ -59,7 +59,7 @@ Outlook on the web を使用して Exchange Online の S/MIME をセットアッ
 
 ## <a name="related-message-encryption-technologies"></a>関連するメッセージ暗号化テクノロジ
 
-メッセージセキュリティがより重要になると、管理者はセキュリティで保護されたメッセージングの原則と概念を理解する必要があります。 利用可能なさまざまな保護関連テクノロジ (S/MIME を含む) があるため、この点を理解することは特に重要です。 s/mime の詳細と、電子メールのコンテキストでの動作の詳細については、「 [s/mime につい](https://go.microsoft.com/fwlink/?LinkID=393948)て」を参照してください。 さまざまな暗号化テクノロジが連携して、保管されているメッセージと転送中のメッセージの保護を提供します。 S/MIME は次のようなテクノロジと同時に機能しますが、それらに依存してはいません。
+メッセージセキュリティがより重要になると、管理者はセキュリティで保護されたメッセージングの原則と概念を理解する必要があります。 利用可能なさまざまな保護関連テクノロジ (S/MIME を含む) があるため、この点を理解することは特に重要です。 S/MIME の詳細と、電子メールのコンテキストでの動作の詳細については、「 [s/mime につい](https://go.microsoft.com/fwlink/?LinkID=393948)て」を参照してください。 さまざまな暗号化テクノロジが連携して、保管されているメッセージと転送中のメッセージの保護を提供します。 S/MIME は次のようなテクノロジと同時に機能しますが、それらに依存してはいません。
 
 - **トランスポート層セキュリティ (TLS)** は、盗聴防止に役立てるために電子メール サーバー間のトンネルまたはルートを暗号化します。
 
@@ -69,7 +69,7 @@ Outlook on the web を使用して Exchange Online の S/MIME をセットアッ
 
 ### <a name="smime-compared-with-office-365-message-encryption"></a>S/MIME と Office 365 のメッセージ暗号化との比較
 
-S/MIME には B2B (企業間取引) および B2C (企業-消費者間取引) の状況でよく使用される証明書および公開のインフラストラクチャが必要です。 ユーザーは、S/MIME で暗号化キーを制御し、送信する各メッセージにキーを使用するかどうかを選択できます。 Outlook などの電子メール プログラムはデジタル署名と署名の検証を実行するために、信頼できるルート証明機関の場所を検索します。 Office 365 のメッセージの暗号化は、組織内外の任意の受信者に送信されるメールを暗号化するための、管理者が構成できる (個々のユーザーは構成できない) ポリシー ベースの暗号化サービスです。 Azure Rights Management (RMS) 上に構築されているオンラインサービスであり、公開キー基盤に依存していません。 Office 365 メッセージの暗号化では、組織のブランドを使用してメールをカスタマイズする機能など、追加機能も提供されます。 office 365 メッセージの暗号化の詳細については、「 [office 365 message encryption](https://go.microsoft.com/fwlink/?LinkID=392525)」を参照してください。
+S/MIME には B2B (企業間取引) および B2C (企業-消費者間取引) の状況でよく使用される証明書および公開のインフラストラクチャが必要です。 ユーザーは、S/MIME で暗号化キーを制御し、送信する各メッセージにキーを使用するかどうかを選択できます。 Outlook などの電子メール プログラムはデジタル署名と署名の検証を実行するために、信頼できるルート証明機関の場所を検索します。 Office 365 のメッセージの暗号化は、組織内外の任意の受信者に送信されるメールを暗号化するための、管理者が構成できる (個々のユーザーは構成できない) ポリシー ベースの暗号化サービスです。 Azure Rights Management (RMS) 上に構築されているオンラインサービスであり、公開キー基盤に依存していません。 Office 365 メッセージの暗号化では、組織のブランドを使用してメールをカスタマイズする機能など、追加機能も提供されます。 Office 365 メッセージの暗号化の詳細については、「 [office 365 Message encryption](https://go.microsoft.com/fwlink/?LinkID=392525)」を参照してください。
 
 ## <a name="more-information"></a>詳細情報
 

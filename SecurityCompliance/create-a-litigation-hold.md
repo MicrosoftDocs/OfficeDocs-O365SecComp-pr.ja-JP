@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 3/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-ms.openlocfilehash: e4cb614167f89cb6e99d96aa94027ba90d86543e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e6201fc938f7481a524a8d3c4171d4c1b67997e9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258372"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153749"
 ---
 # <a name="create-a-litigation-hold"></a>訴訟ホールドを作成する
 
@@ -27,13 +27,13 @@ ms.locfileid: "32258372"
     
 - ユーザーが [回復可能なアイテム] フォルダーから削除されたアイテムは、保持期間中は保持されます。
     
-- 回復可能なアイテムフォルダーの記憶域のクォータは、30 gb から 110 gb に増加しました。
+- 回復可能なアイテムフォルダーの記憶域のクォータは、30 GB から 110 GB に増加しました。
     
 - ユーザーのプライマリおよびアーカイブメールボックスのアイテムは保持されます。
     
 ## <a name="before-you-begin"></a>始める前に
 
-- exchange online メールボックスを訴訟ホールドの対象にするには、exchange online プラン2ライセンスが割り当てられている必要があります。 メールボックスに exchange online プラン1ライセンスが割り当てられている場合は、それを保持するために別の exchange online アーカイブライセンスを割り当てる必要があります。
+- Exchange Online メールボックスを訴訟ホールドの対象にするには、Exchange online プラン2ライセンスが割り当てられている必要があります。 メールボックスに Exchange Online プラン1ライセンスが割り当てられている場合は、それを保持するために別の Exchange Online アーカイブライセンスを割り当てる必要があります。
     
 
 ## <a name="place-a-mailbox-on-litigation-hold"></a>メールボックスを訴訟ホールドの対象にする
@@ -42,7 +42,7 @@ Exchange 管理センターを使用してメールボックスを訴訟ホー�
 
 1. に[https://outlook.office.com/ecp](https://outlook.office.com/ecp)移動し、全体管理者アカウントを使用してサインインします。
 
-2. 左側のナビゲーションウィンドウで [**受信者 > メールボックス**] をクリックします。
+2. 左側のナビゲーションウィンドウで [**受信者 _GT_ メールボックス**] をクリックします。
 
 3. 訴訟ホールドに配置するメールボックスを選択し、[**編集**] をクリックします。
 
@@ -87,5 +87,5 @@ Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <num
 ![訴訟ホールドライフサイクル](media/LitigationHoldLifeCycle.png)
 
 > [!NOTE]
-> 電子情報開示ケースに関連付けられた保留リストがメールボックスに配置されている場合、削除されたアイテムは、削除サブフォルダーから discoveryholds サブフォルダーに移動され、メールボックスが電子情報開示ホールドから解放されるまで保持されます。
+> 電子情報開示ケースに関連付けられた保留リストがメールボックスに配置されている場合、削除されたアイテムは、削除サブフォルダーから DiscoveryHolds サブフォルダーに移動され、メールボックスが電子情報開示ホールドから解放されるまで保持されます。
   

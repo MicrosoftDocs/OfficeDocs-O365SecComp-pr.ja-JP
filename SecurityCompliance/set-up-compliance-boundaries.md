@@ -3,7 +3,7 @@ title: Office 365 での電子情報開示調査のためにコンプライア�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: コンプライアンスの境界を使用して、電子情報開示マネージャーが検索できるユーザーコンテンツの場所を制御する、Office 365 組織内の論理的な境界を作成します。 コンプライアンス境界では、検索アクセス許可フィルター (コンプライアンスセキュリティフィルターとも呼ばれます) を使用して、特定のユーザーが検索できるメールボックス、SharePoint サイト、および OneDrive アカウントを制御します。
-ms.openlocfilehash: b23c6d0c96874fb7e6205de6bf8a7f4eb00e4254
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ab9fae4dcae04bc79c94f5a5138dfd56cc551414
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264663"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156579"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Office 365 での電子情報開示調査のためにコンプライアンスの境界を設定する
 
@@ -28,9 +28,9 @@ ms.locfileid: "32264663"
   
 次の図の例を使用して、コンプライアンスの境界がどのように機能するかを説明します。
   
-![コンプライアンス境界は、政府機関へのアクセスを制御する検索アクセス許可フィルターと、edisococo極端なケースへのアクセスを制御する管理役割グループで構成されます。](media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
+![コンプライアンス境界は、政府機関へのアクセスを制御する検索アクセス許可フィルターと、Edisococo極端なケースへのアクセスを制御する管理役割グループで構成されます。](media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
   
-この例では、Contoso ltd. は、2つの子会社、4番目のコーヒー、Coho (コーホーワイナリー) で構成される Office 365 組織です。 ビジネスでは、電子情報開示 mangers と調査担当者が、エージェンシー内の Exchange メールボックス、OneDrive アカウント、および SharePoint サイトのみを検索できるようにする必要があります。 また、電子情報開示の管理者と調査担当者は、エージェンシーの電子情報開示ケースのみを表示でき、メンバーとなっているケースのみにアクセスできます。 以下に、コンプライアンスの境界がこれらの要件を満たす方法を示します。
+この例では、Contoso LTD. は、2つの子会社、4番目のコーヒー、Coho (コーホーワイナリー) で構成される Office 365 組織です。 ビジネスでは、電子情報開示 mangers と調査担当者が、エージェンシー内の Exchange メールボックス、OneDrive アカウント、および SharePoint サイトのみを検索できるようにする必要があります。 また、電子情報開示の管理者と調査担当者は、エージェンシーの電子情報開示ケースのみを表示でき、メンバーとなっているケースのみにアクセスできます。 以下に、コンプライアンスの境界がこれらの要件を満たす方法を示します。
   
 - コンテンツ検索の検索アクセス許可フィルター機能は、電子情報開示の管理者および捜査担当者が検索できるコンテンツの場所を制御します。 これは、4番目のコーヒーエージェンシーの電子情報開示マネージャーと調査担当者のみが、第4のコーヒー子会社のコンテンツの場所を検索できることを意味します。 同じ制限は、Coho の "子会社" にも適用されます。
     
@@ -56,7 +56,7 @@ ms.locfileid: "32264663"
   
 以下は、コンプライアンスの境界に使用できる Azure Active Directory ユーザー属性の一覧です。
   
-- 会社名
+- Company
     
 - CustomAttribute1-CustomAttribute15
     
@@ -78,7 +78,7 @@ Microsoft サポートに要求を送信するときに、次の情報を含め�
     
 - Azure Active Directory 属性の名前 (手順1から)
     
-- サポート要求の目的に関する次のタイトルまたは説明: "コンプライアンスセキュリティフィルターのために Azure Active Directory との OneDrive for business の同期を有効にする"。 これは、要求を実装する Office 365 eDiscovery エンジニアリングチームに要求をルーティングするのに役立ちます。
+- サポート要求の目的に関する次のタイトルまたは説明: "コンプライアンスセキュリティフィルターのために Azure Active Directory との OneDrive for Business の同期を有効にする"。 これは、要求を実装する Office 365 eDiscovery エンジニアリングチームに要求をルーティングするのに役立ちます。
     
 エンジニアリングの変更が行われ、属性が OneDrive に同期されると、Microsoft Support は変更が行われたビルド番号と推定展開日を送信します。 通常、サポート要求を送信した後、展開プロセスは4-6 週間かかることに注意してください。
   
@@ -86,7 +86,7 @@ Microsoft サポートに要求を送信するときに、次の情報を含め�
   
 ## <a name="step-3-create-a-role-group-for-each-agency"></a>手順 3: 各エージェンシーの役割グループを作成する
 
-次の手順では、組織の機関と連携するセキュリティ & コンプライアンスセンターで役割グループを作成します。 組み込みの電子情報開示マネージャーグループをコピーし、適切なメンバーを追加して、ニーズに該当しない可能性がある役割を削除することによって、新しい役割グループを作成することをお勧めします。 電子情報開示関連のロールの詳細については、「 [Office 365 セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
+次の手順では、組織の機関と連携するセキュリティ & コンプライアンスセンターで役割グループを作成します。 組み込みの電子情報開示マネージャーグループをコピーし、適切なメンバーを追加して、ニーズに該当しない可能性がある役割を削除することによって、新しい役割グループを作成することをお勧めします。 電子情報開示関連のロールの詳細については、「 [Office 365 セキュリティ _AMP_ コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
   
 役割グループを作成するには、Security & コンプライアンスセンターの [**アクセス許可**] ページに移動し、コンプライアンスの境界と電子情報開示ケースを使用して調査を管理する各エージェンシーの各チームの役割グループを作成します。 
   
@@ -104,7 +104,7 @@ Contoso 社のコンプライアンス境界シナリオを使用して、4つ�
   
 ## <a name="step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary"></a>手順 4: コンプライアンスの境界を適用するための検索アクセス許可フィルターを作成する
 
-各エージェンシーの役割グループを作成したら、次の手順として、各役割グループを特定のエージェンシーに関連付け、コンプライアンス境界自体を定義する検索アクセス許可フィルターを作成します。 各エージェンシーに対して1つの検索アクセス許可フィルターを作成する必要があります。 セキュリティアクセス許可フィルターの作成の詳細については、「 [Configure permissions filtering for Content Search](permissions-filtering-for-content-search.md)」を参照してください。
+各エージェンシーの役割グループを作成したら、次の手順として、各役割グループを特定のエージェンシーに関連付け、コンプライアンス境界自体を定義する検索アクセス許可フィルターを作成します。 各エージェンシーに対して1つの検索アクセス許可フィルターを作成する必要があります。 セキュリティアクセス許可フィルターの作成の詳細については、「 [Configure permissions filtering For Content Search](permissions-filtering-for-content-search.md)」を参照してください。
   
 以下は、コンプライアンスの境界に使用される検索アクセス許可フィルターを作成するために使用される構文です。
 
@@ -122,13 +122,13 @@ New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -
     
   -  `Mailbox`- `Users`パラメーターで定義されている役割グループが検索できるメールボックスを指定します。 コンプライアンスの境界の場合、 *ComplianceAttribute*は、手順1と属性*値*で指定したものと同じであり、エージェンシーを指定します。 このフィルターを使用すると、役割グループのメンバーは特定のエージェンシーのメールボックスのみを検索できます。たとえば、 `"Mailbox_Department -eq 'FourthCoffee'"`のようになります。 
     
-  -  `Site`- `Users`パラメーターで定義されている役割グループが検索できる OneDrive アカウントを指定します。 OneDrive フィルターの場合は、実際の文字列`ComplianceAttribute`を使用します。これは、手順2で送信したサポート要求の結果として、手順1で識別し、OneDrive アカウントに同期されている属性にマッピングされます。 *attributevalue*はエージェンシーを指定します。 このフィルターを使用すると、役割グループのメンバーは特定のエージェンシーの OneDrive アカウントのみを検索できます。たとえば、 `"Site_ComplianceAttribute -eq 'FourthCoffee'"`のようになります。
+  -  `Site`- `Users`パラメーターで定義されている役割グループが検索できる OneDrive アカウントを指定します。 OneDrive フィルターの場合は、実際の文字列`ComplianceAttribute`を使用します。これは、手順2で送信したサポート要求の結果として、手順1で識別し、OneDrive アカウントに同期されている属性にマッピングされます。 *Attributevalue*はエージェンシーを指定します。 このフィルターを使用すると、役割グループのメンバーは特定のエージェンシーの OneDrive アカウントのみを検索できます。たとえば、 `"Site_ComplianceAttribute -eq 'FourthCoffee'"`のようになります。
     
   -  `Site_Path`- `Users`パラメーターで定義されている役割グループが検索できる SharePoint サイトを指定します。 *SharePointURL*は、役割グループのメンバーが検索できる機関内のサイトを指定します。例えば`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
     
 -  `Action`-フィルターが適用されるコンプライアンス検索アクションの種類を指定します。 たとえば、は`-Action Search` 、 `Users`パラメーターで定義された役割グループのメンバーがコンテンツ検索を実行するときにのみフィルターを適用します。 この場合、検索結果をエクスポートするときに、フィルターは適用されません。 コンプライアンスの境界の場合`-Action All`は、を使用して、すべての検索操作にフィルターが適用されるようにします。 
     
-    コンテンツ検索アクションの一覧については、「 [Configure permissions filtering for content search](permissions-filtering-for-content-search.md#new-compliancesecurityfilter)」の「new-compliancesecurityfilter」セクションを参照してください。
+    コンテンツ検索アクションの一覧については、「 [Configure permissions filtering For Content search](permissions-filtering-for-content-search.md#new-compliancesecurityfilter)」の「new-compliancesecurityfilter」セクションを参照してください。
     
 Contoso 社のコンプライアンス境界シナリオをサポートするために作成される2つの検索アクセス許可フィルターの例を次に示します。
   
@@ -185,7 +185,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
 - **検索結果をエクスポート**する-特定のデータセンターから Exchange メールボックス、SharePoint サイト、および OneDrive アカウントから検索結果をエクスポートできます。 これは、検索結果のエクスポート元となるデータセンターの場所を指定できることを意味します。
 
-    **new-compliancesecurityfilter**または**new-compliancesecurityfilter**コマンドレットに**Region**パラメーターを使用して、エクスポートがルーティングされるデータセンターを作成または変更します。
+    **New-compliancesecurityfilter**または**new-compliancesecurityfilter**コマンドレットに**Region**パラメーターを使用して、エクスポートがルーティングされるデータセンターを作成または変更します。
   
     |**パラメーターの値**|**データセンターの場所**|
     |:-----|:-----|
@@ -232,7 +232,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
     
 - SharePoint および OneDrive でコンテンツを検索する場合、 **Region**パラメーターは、電子情報開示マネージャーが電子情報開示の調査を行うメインまたはサテライトの場所を検索します。 電子情報開示マネージャーが、検索アクセス許可フィルターで指定されている地域外の SharePoint および OneDrive サイトを検索すると、検索結果は返されません。 
     
-- 検索結果をエクスポートすると、すべてのコンテンツの場所 (Exchange、Skype for business、SharePoint、OneDrive、およびコンテンツ検索ツールを使用して検索できる他の Office 365 サービスを含む) からのコンテンツが、**Region**パラメーターで指定されたデータセンター。 これにより、管理された境界を越えてコンテンツをエクスポートすることを許可しないことで、組織のコンプライアンスを実現できます。 検索アクセス許可フィルターで地域が指定されていない場合、コンテンツは組織の既定の地域にアップロードされます。 
+- 検索結果をエクスポートすると、すべてのコンテンツの場所 (Exchange、Skype for Business、SharePoint、OneDrive、およびコンテンツ検索ツールを使用して検索できる他の Office 365 サービスを含む) からのコンテンツが、**Region**パラメーターで指定されたデータセンター。 これにより、管理された境界を越えてコンテンツをエクスポートすることを許可しないことで、組織のコンプライアンスを実現できます。 検索アクセス許可フィルターで地域が指定されていない場合、コンテンツは組織の既定の地域にアップロードされます。 
     
 - 既存の検索アクセス許可フィルターを編集して、次のコマンドを実行し、地域を追加または変更することができます。
 
@@ -242,7 +242,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
  
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
- **検索アクセス許可フィルターを作成および管理できるユーザー (new-compliancesecurityfilter および new-compliancesecurityfilter コマンドレットを使用)**
+ **検索アクセス許可フィルターを作成および管理できるユーザー (New-compliancesecurityfilter および New-compliancesecurityfilter コマンドレットを使用)**
   
 検索アクセス許可のフィルターを作成、表示、および変更するには、Security & コンプライアンスセンターで、組織の管理役割グループのメンバーである必要があります。
   
@@ -262,10 +262,10 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
 いいえ (現時点では不可)
   
- **コンテンツのエクスポート先を制御する地域を指定したが、その地域に sharepoint 組織が存在しない場合、sharepoint を検索することはできますか?**
+ **コンテンツのエクスポート先を制御する地域を指定したが、その地域に SharePoint 組織が存在しない場合、SharePoint を検索することはできますか?**
   
 検索アクセス許可フィルターで指定されている地域が組織内に存在しない場合は、既定の地域が検索されます。
   
  **組織内で作成できる検索アクセス許可のフィルターの最大数はいくつですか。**
   
-組織内で作成できる検索アクセス許可フィルターの数に制限はありません。 ただし、100を超える検索アクセス許可フィルターがある場合は、検索のパフォーマンスが影響を受けます。 組織内の検索アクセス許可フィルターの数を可能な限り小さくするには、Exchange、SharePoint、および OneDrive のルールを可能な限り1つの検索アクセス許可フィルターにまとめるフィルターを作成します。
+組織で作成できる検索アクセス許可フィルターの数に制限はありません。 ただし、検索アクセス許可フィルターが 100 個以上ある場合、検索のパフォーマンスに影響を与えます。 組織内の検索アクセス許可フィルターの数を可能な限り小さくするには、Exchange、SharePoint、および OneDrive のルールを可能な限り1つの検索アクセス許可フィルターにまとめるフィルターを作成します。

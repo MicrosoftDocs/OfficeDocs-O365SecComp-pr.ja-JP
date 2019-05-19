@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0f5a98a7ba7a62e3b77794b38e444006a340cb49
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5aa83f4f736c239b1cdfe940f27cfaa4b981ff64
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243195"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155119"
 ---
 # <a name="configure-search-and-analytics-settings"></a>検索と分析の設定を構成する
+
 
 ## <a name="near-duplicates-and-email-threading"></a>ほぼ重複、電子メールスレッド
 
@@ -31,7 +32,7 @@ ms.locfileid: "32243195"
 
 - しきい値: 2 つのドキュメントの類似性レベルがしきい値を超えている場合は、同じ近くにある重複セットに配置されます。
 
-- 既定で重複を非表示にする: この設定をオンにすると、重複したドキュメントを非表示にするためのフィルターが既定で作業セットに適用されます。 必要に応じて、ワーキングセット内のフィルターを手動で削除できます。
+- 既定で重複を非表示にする: この設定をオンにすると、重複したドキュメントを非表示にするためのフィルターが既定でチェックセットに適用されます。 このフィルターは、必要に応じてレビューセットで手動で削除できます。
 
 - 最小/最大単語数: 重複および電子メールスレッド処理は、少なくとも単語の最小数が少なく、最大で単語数が多いドキュメントに対してのみ実行されます。
 詳細については、「[重複の検出](near-duplicates.md)と[電子メールのスレッド処理](email-threading.md)」を参照してください。
@@ -47,7 +48,7 @@ ms.locfileid: "32243195"
 
 ## <a name="optical-character-recognition-ocr"></a>光学式文字認識 (OCR)
 
-この設定が有効になっている場合は、ワークセットに取り込まれたされている画像に対して OCR が実行され、検索できるようになります。
+この設定をオンにすると、取り込まれたが検索可能になるように、校閲セットに入れられている画像に対して OCR が実行されます。
 
 ## <a name="ignore-text"></a>テキストを無視する
 

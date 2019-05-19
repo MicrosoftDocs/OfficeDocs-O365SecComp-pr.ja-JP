@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 description: 'Office 365 Advanced eDiscovery でバッチ計算の後に [テスト] タブを使用して、全体的な処理の品質をテスト、比較、検証する方法について説明します。  '
-ms.openlocfilehash: 735a6d8088b4696e2ebc348db435a11914bd0b10
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 984a7b3f8088604aca235a1caf60bb67b5471499
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259979"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158309"
 ---
 # <a name="test-relevance-analysis-in-office-365-advanced-ediscovery"></a>Office 365 の詳細な電子情報開示でのテスト関連の分析
 
@@ -29,7 +29,7 @@ ms.locfileid: "32259979"
   
 1つまたは複数の問題があるシナリオでは、通常、テストは問題ごとに実行されます。 結果は各テストの後に表示でき、指定したサンプルテストファイルを使用してテスト結果をやり直すことができます。
   
-## <a name="testing-the-rest"></a>rest のテスト
+## <a name="testing-the-rest"></a>Rest のテスト
 
 「Rest のテスト」テストは、最終の高度な電子情報開示の結果に基づいて特定の関連性のカットオフスコアの上にあるファイルのみを確認するためのカリングの決定を検証するために使用されます。 専門家は、選択されたカットオフスコアの下にあるファイルのサンプルをレビューして、そのセット内の関連ファイルの数を評価します。
   
@@ -51,7 +51,7 @@ ms.locfileid: "32259979"
     
 5. [**案件/カテゴリ**] ボックスの一覧で、問題の名前を選択します。 
     
-6. [ **load** ] の一覧で、[load] を選択します。 
+6. [ **Load** ] の一覧で、[load] を選択します。 
     
 7. **読み取り%** では、既定値をそのまま使用するか、カットオフの関連性スコアの値を選択します。 
     
@@ -93,7 +93,7 @@ ms.locfileid: "32259979"
     
 5. [**問題**] リストで、問題の名前を選択します。 
     
-6. [ **load** ] の一覧で、[load] を選択します。 
+6. [ **Load** ] の一覧で、[load] を選択します。 
     
 7. [**の読み取り率**] で、既定の [低] と [高] の範囲の値を使用するか、[カットオフの関連性スコア] の値を選択します。 
     

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 2/19/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: '概要: この記事では、Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。 SPF を使うと、カスタム ドメインから送信される送信電子メールを検証できます。'
-ms.openlocfilehash: 039a09e7dac307ead156eac47699edbd2350b304
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5194a9a8a8b694bc2dbac0eaf9b50517e46a9064
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260715"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158199"
 ---
 # <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>Office 365 で SPF を設定して、スプーフィングを防止する
 
@@ -81,7 +81,7 @@ DNS で TXT レコードを更新する前に、情報を収集し、レコー�
    v=spf1 include:spf.protection.outlook.de -all
   ```
 
-1.4 office 365 に既に展開されており、カスタムドメイン用の SPF TXT レコードをセットアップしていて、office 365 ドイツに移行する場合は、spf txt レコードを更新する必要があります。 これを行うには**** 、次のように変更します。たとえば、「spf」を**含め**ます。
+1.4 Office 365 に既に展開されており、カスタムドメイン用の SPF TXT レコードをセットアップしていて、Office 365 ドイツに移行する場合は、SPF TXT レコードを更新する必要があります。 これを行うには**** 、次のように変更します。たとえば、「spf」を**含め**ます。
     
 2. SPF TXT レコードを形成した後は、DNS でレコードを更新する必要があります。 1つのドメインに対して使用できる SPF TXT レコードは1つだけです。 SPF TXT レコードが存在する場合は、新しいレコードを追加するのではなく、既存のレコードを更新する必要があります。 [ [Office 365 の dns レコードの作成](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide)] に移動し、dns ホストのリンクをクリックします。 
     

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: セキュリティ & コンプライアンスセンターで、監査ログ検索機能を有効にすることができます。 変更した場合は、いつでもオフにすることができます。 監査ログ検索がオフになっている場合、管理者は、組織内のユーザーおよび管理者のアクティビティに対して Office 365 監査ログを検索することはできません。
-ms.openlocfilehash: 0619b19f9dc6e8bdc21e26275f02a81948b40bf4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c5e1106617aa4828ec2db5afcc44ac55e91f2383
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265383"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158299"
 ---
 # <a name="turn-office-365-audit-log-search-on-or-off"></a>Office 365 監査ログの検索を有効または無効にする
 
@@ -30,18 +30,18 @@ Office 365 監査ログの検索を開始する前に、自分 (または別の�
   
 ## <a name="before-you-begin"></a>始める前に
 
-- Office 365 組織で監査ログの検索をオンまたはオフにするには、Exchange Online の audit Logs 役割が割り当てられている必要があります。 既定では、この役割は、Exchange 管理センターの [**アクセス許可**] ページで、コンプライアンス管理および組織の管理役割グループに割り当てられます。 Office 365 のグローバル管理者は、Exchange Online の Organization Management 役割グループのメンバーです。 
+- Office 365 組織で監査ログの検索をオンまたはオフにするには、Exchange Online の Audit Logs 役割が割り当てられている必要があります。 既定では、この役割は、Exchange 管理センターの [**アクセス許可**] ページで、コンプライアンス管理および組織の管理役割グループに割り当てられます。 Office 365 のグローバル管理者は、Exchange Online の Organization Management 役割グループのメンバーです。 
     
     > [!IMPORTANT]
     > 監査ログの検索を有効または無効にするには、Exchange Online のアクセス許可をユーザーに割り当てる必要があります。 セキュリティ & コンプライアンスセンターの [**アクセス許可**] ページで監査ログの役割をユーザーに割り当てると、監査ログの検索をオンまたはオフにすることができなくなります。 これは、基礎となるコマンドレットが Exchange Online のコマンドレットであるためです。 
   
-- office 365 で監査ログの検索を無効にすると、office 365 Management Activity API を使用して組織の監査データにアクセスできなくなります。 この記事の手順に従って監査ログの検索を無効にすると、Security & コンプライアンスセンターを使用して監査ログを検索したとき、または Exchange Online で**search-unifiedauditlog**コマンドレットを実行したときに結果が返されないことを意味します。PowerShell. これは、Office 365 Management Activity API を介して監査ログを利用できないことも意味します。  
+- Office 365 で監査ログの検索を無効にすると、Office 365 Management Activity API を使用して組織の監査データにアクセスできなくなります。 この記事の手順に従って監査ログの検索を無効にすると、Security & コンプライアンスセンターを使用して監査ログを検索したとき、または Exchange Online で**search-unifiedauditlog**コマンドレットを実行したときに結果が返されないことを意味します。PowerShell. これは、Office 365 Management Activity API を介して監査ログを利用できないことも意味します。  
     
-- Office 365 監査ログの検索の詳細な手順については、「 [Security & コンプライアンスセンターでの監査ログの検索](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
+- Office 365 監査ログの検索の詳細な手順については、「 [Security _AMP_ コンプライアンスセンターでの監査ログの検索](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
     
 ## <a name="turn-on-audit-log-search"></a>監査ログ検索を有効にする
 
-Security & コンプライアンスセンターまたは PowerShell を使用して、Office 365 で監査ログの検索を有効にすることができます。 監査ログの検索を有効にすると、監査ログの検索時に結果を返す前に、数時間かかる場合があります。 監査ログ検索を有効にするには、Exchange Online で audit Logs 役割を割り当てられている必要があります。
+Security & コンプライアンスセンターまたは PowerShell を使用して、Office 365 で監査ログの検索を有効にすることができます。 監査ログの検索を有効にすると、監査ログの検索時に結果を返す前に、数時間かかる場合があります。 監査ログ検索を有効にするには、Exchange Online で Audit Logs 役割を割り当てられている必要があります。
   
 ### <a name="use-the-security--compliance-center-to-turn-on-audit-log-search"></a>セキュリティ & コンプライアンスセンターを使用して監査ログの検索を有効にする
 
@@ -71,7 +71,7 @@ Security & コンプライアンスセンターまたは PowerShell を使用し
   
 ## <a name="turn-off-audit-log-search"></a>監査ログの検索を無効にする
 
-監査ログの検索を無効にするには、Exchange Online 組織に接続されたリモート PowerShell を使用する必要があります。 監査ログ検索を有効にするのと同様に、監査ログ検索を無効にするには、Exchange Online の audit Logs 役割を割り当てられている必要があります。
+監査ログの検索を無効にするには、Exchange Online 組織に接続されたリモート PowerShell を使用する必要があります。 監査ログ検索を有効にするのと同様に、監査ログ検索を無効にするには、Exchange Online の Audit Logs 役割を割り当てられている必要があります。
   
 1. [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/p/?LinkID=396554)
     

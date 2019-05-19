@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 11/17/2014
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 description: 以下のサンプル スクリプトにより、複数のテナント (会社) を管理する Microsoft Exchange Online Protection (EOP) 管理者は、Windows PowerShell を使用して構成設定をテナントに適用できます。
-ms.openlocfilehash: 61b2b203493581185abeee69cf2bd6e8f0f7567a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f064a44722d165711543e5a15ec6a19d70af4b25
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256630"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154559"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>EOP 設定を複数のテナントに適用するスクリプトのサンプル
 
@@ -44,7 +44,7 @@ ms.locfileid: "32256630"
 
 4. 各テナントへのログオンが行われて、コマンドレットが実行されます。
     
-## <a name="runcmdletonmultipletenantsps1"></a>runコマンドレット。 ps1
+## <a name="runcmdletonmultipletenantsps1"></a>Runコマンドレット。 ps1
 <a name="RunCmdletOnMultipleTenants.ps1"> </a>
 
 ```Powershell

@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 3/15/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: セキュリティとコンプライアンスを計画するためのランディングページ
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b0c7af13a78499f3ee8af5b902bc4c8db85aca32
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c125bd36494e26d9603b565dc5154b975604f2b3
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265869"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157509"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>Office 365 の&amp;セキュリティコンプライアンスを計画する
 
@@ -33,9 +33,9 @@ Office 365 の情報保護のポスターの情報保護機能に自分を向け
   
 ## <a name="step-2-check-your-secure-score"></a>手順 2: セキュリティで保護されたスコアを確認する
 
-Office 365 のサブスクリプションを設定した後、開始スコアをメモします。 「Secure score」では、スコアを増やすために使用できる Office 365 の構成の提案を示します。 目標は、ユーザーの生産性に悪影響を及ぼすことがない環境を保護するために取ることができるチャンスを認識することです。
+Office 365 のサブスクリプションを設定した後、開始スコアをメモします。 「Secure Score」では、スコアを増やすために使用できる Office 365 の構成の提案を示します。 目標は、ユーザーの生産性に悪影響を及ぼすことがない環境を保護するために取ることができるチャンスを認識することです。
   
-- [Office 365 のセキュリティスコアの導入](office-365-secure-score.md)
+- [Office 365 のセキュリティスコアの導入](microsoft-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>手順 3: id とデバイスのアクセス保護を計画する
 
@@ -77,7 +77,7 @@ Office 365 環境を保護するために、これらの管理センターおよ
   
 |**サブスクリプション**|**管理 URL**|**ダッシュボードと管理センター**|
 |:-----|:-----|:-----|
-|Office 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 管理センター  <br/>  セキュリティ/コンプライアンス センター  <br/>  Exchange 管理センター  <br/>  SharePoint 管理センターと OneDrive for business 管理センター  <br/> |
+|Office 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 管理センター  <br/>  セキュリティ/コンプライアンス センター  <br/>  Exchange 管理センター  <br/>  SharePoint 管理センターと OneDrive for Business 管理センター  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft モバイルアプリケーション管理  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud App Security  <br/> |
    

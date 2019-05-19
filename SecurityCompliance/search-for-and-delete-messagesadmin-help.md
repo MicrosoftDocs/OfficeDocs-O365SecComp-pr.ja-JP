@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 12/20/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: 管理者は Search-Mailbox コマンドレットを使って、ユーザーのメールボックスを検索し、メールボックスからメッセージを削除できます。
-ms.openlocfilehash: abf7e7f39fe719ecc6c23565e284c01aed8822ee
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a097b39aa179ed18c3d5426eeeacff204d48ee9b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260985"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158489"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>メッセージを検索して削除する - 管理者向けヘルプ
   
@@ -38,7 +38,7 @@ ms.locfileid: "32260985"
     
   - **メールボックスの検索**-この役割を使用すると、組織内の複数のメールボックス間でメッセージを検索することができます。 既定ではこの役割は管理者には割り当てられません。 メールボックスを検索できるようにこの役割を自分自身に割り当てるには、探索管理役割グループのメンバーとして自身を追加します。 「[ユーザーを Discovery Management 役割グループに追加する」を](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx)参照してください。
     
-  - **メールボックスインポートエクスポート**-この役割を使用すると、ユーザーのメールボックスからメッセージを削除することができます。 既定では、この役割はどの役割グループにも割り当てられていません。 ユーザーのメールボックスからメッセージを削除するために、"Mailbox Import Export" 役割を "組織管理" 役割グループに追加できます。 詳細については、「 [Manage role Groups](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) 」の「役割グループに役割を追加する」セクションを参照してください。 
+  - **メールボックスインポートエクスポート**-この役割を使用すると、ユーザーのメールボックスからメッセージを削除することができます。 既定では、この役割はどの役割グループにも割り当てられていません。 ユーザーのメールボックスからメッセージを削除するために、"Mailbox Import Export" 役割を "組織管理" 役割グループに追加できます。 詳細については、「 [Manage Role Groups](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) 」の「役割グループに役割を追加する」セクションを参照してください。 
     
 - メッセージの削除を行うメールボックスで単一アイテムの回復が有効になっている場合は、最初にその機能を無効にする必要があります。詳細については、「[メールボックスの単一アイテムの回復を有効または無効にする](http://technet.microsoft.com/library/2e7f1bcd-8395-45ad-86ce-22868bd46af0.aspx)」を参照してください。
     

@@ -3,7 +3,7 @@ title: Office 365 組織の電子メールメッセージを検索して削除�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Office 365 のセキュリティ & コンプライアンスセンターで検索と削除の機能を使用して、組織内のすべてのメールボックスから電子メールメッセージを検索し、削除します。
-ms.openlocfilehash: c6fa0d09852016b918375dbff5a19468886d86b3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f654b643a5f1e4feac6e32a67843b2a6a9563bd0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265349"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158479"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Office 365 組織の電子メールメッセージを検索して削除する-管理者向けヘルプ
 
@@ -47,7 +47,7 @@ Office 365 のコンテンツ検索機能を使用して、組織内のすべて
     
 - 検索と削除の操作を実行して、コンテンツ検索でアイテムを削除できる最大メールボックス数は5万です。 [手順 1](#step-1-create-a-content-search-to-find-the-message-to-delete)で作成したコンテンツ検索に5万個を超えるソースメールボックスがある場合、削除アクション (手順3で作成したもの) は失敗します。 5万を超えるメールボックスで検索と削除の操作を実行する際のヒントについては、「 [More information](#more-information) 」セクションを参照してください。 
     
-- この記事の手順は、Exchange Online メールボックスおよびパブリックフォルダー内のアイテムを削除する場合にのみ使用できます。 これを使用して SharePoint または OneDrive for business サイトからコンテンツを削除することはできません。
+- この記事の手順は、Exchange Online メールボックスおよびパブリックフォルダー内のアイテムを削除する場合にのみ使用できます。 これを使用して SharePoint または OneDrive for Business サイトからコンテンツを削除することはできません。
     
 ## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>手順 1: コンテンツ検索を作成して、削除するメッセージを探す
 
@@ -94,9 +94,9 @@ Office 365 のコンテンツ検索機能を使用して、組織内のすべて
 
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>手順 2: Security & コンプライアンスセンター PowerShell に接続する
 
-次の手順では、組織の Security & コンプライアンスセンター PowerShell に接続します。 詳細な手順については、「 [Connect to Security & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)」を参照してください。
+次の手順では、組織の Security & コンプライアンスセンター PowerShell に接続します。 詳細な手順については、「 [Connect To Security _AMP_ コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)」を参照してください。
   
-Office 365 アカウントで多要素認証 (MFA) またはフェデレーション認証を使用している場合は、「Security & コンプライアンスセンター PowerShell への接続」に記載されている前のトピックの手順を使用することはできません。 代わりに、「[多要素認証を使用してセキュリティ & コンプライアンスセンター PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell)」の手順を参照してください。
+Office 365 アカウントで多要素認証 (MFA) またはフェデレーション認証を使用している場合は、「Security & コンプライアンスセンター PowerShell への接続」に記載されている前のトピックの手順を使用することはできません。 代わりに、「[多要素認証を使用してセキュリティ _AMP_ コンプライアンスセンター PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell)」の手順を参照してください。
   
 ## <a name="step-3-delete-the-message"></a>手順 3: メッセージを削除する
 
@@ -114,7 +114,7 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
 ```
 
-前のコマンドを実行してメッセージをソフトまたは物理的に削除すると、 *searchname*パラメーターで指定された検索は、手順1で作成したコンテンツ検索になることに注意してください。 
+前のコマンドを実行してメッセージをソフトまたは物理的に削除すると、 *Searchname*パラメーターで指定された検索は、手順1で作成したコンテンツ検索になることに注意してください。 
   
 詳細については、「 [new-compliancesearchaction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction)」を参照してください。
 
@@ -122,7 +122,7 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 
 - **検索と削除の操作の状態を取得するには、どうすればよいですか。**
 
-    **Get-ComplianceSearchAction** を実行して、削除操作の状態を取得します。 **new-compliancesearchaction**コマンドレットを実行するときに作成されるオブジェクトは、次`<name of Content Search>_Purge`の形式を使用して指定されていることに注意してください。 
+    **Get-ComplianceSearchAction** を実行して、削除操作の状態を取得します。 **New-compliancesearchaction**コマンドレットを実行するときに作成されるオブジェクトは、次`<name of Content Search>_Purge`の形式を使用して指定されていることに注意してください。 
     
 - **メッセージを削除した後はどうなりますか。**
 
@@ -132,11 +132,11 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
     
 - **5万を超えるメールボックスからメッセージを削除する必要がある場合はどうなりますか。**
 
-    前述したように、最大5万のメールボックスで検索と削除の操作を実行できます。 5万を超えるメールボックスで検索と削除の操作を実行する必要がある場合は、検索対象のメールボックスの数が5万未満になるようにするための、一時検索アクセス許可フィルターを作成することを検討してください。 たとえば、組織のメールボックスが異なる部署、都道府県、または国に含まれている場合は、これらのいずれかのメールボックスのプロパティに基づいてメールボックス検索アクセス許可フィルターを作成し、組織内のメールボックスのサブセットを検索することができます。 検索アクセス許可フィルターを作成したら、手順1で説明した検索を作成し、メッセージを削除します (手順3を参照)。 その後、フィルターを編集して、別のメールボックスのセット内のメッセージを検索し、削除することができます。 検索アクセス許可フィルターの作成の詳細については、「 [Configure permissions filtering for Content search](permissions-filtering-for-content-search.md)」を参照してください。
+    前述したように、最大5万のメールボックスで検索と削除の操作を実行できます。 5万を超えるメールボックスで検索と削除の操作を実行する必要がある場合は、検索対象のメールボックスの数が5万未満になるようにするための、一時検索アクセス許可フィルターを作成することを検討してください。 たとえば、組織のメールボックスが異なる部署、都道府県、または国に含まれている場合は、これらのいずれかのメールボックスのプロパティに基づいてメールボックス検索アクセス許可フィルターを作成し、組織内のメールボックスのサブセットを検索することができます。 検索アクセス許可フィルターを作成したら、手順1で説明した検索を作成し、メッセージを削除します (手順3を参照)。 その後、フィルターを編集して、別のメールボックスのセット内のメッセージを検索し、削除することができます。 検索アクセス許可フィルターの作成の詳細については、「 [Configure permissions filtering For Content search](permissions-filtering-for-content-search.md)」を参照してください。
     
 - **検索結果に含まれるインデックスのないアイテムは削除されますか。**
 
-    いいえ。 ' new-compliancesearchaction-削除コマンドは、インデックスが作成されていないアイテムを削除しません。 
+    いいえ。 ' New-compliancesearchaction-削除コマンドは、インデックスが作成されていないアイテムを削除しません。 
     
 - **インプレース保持または訴訟ホールドの対象となっているメールボックスから、または Office 365 アイテム保持ポリシーに割り当てられているメッセージが削除された場合はどうなりますか?**
 

@@ -4,20 +4,20 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/26/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.ComplianceSearch
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
-description: 'Security & コンプライアンスセンターでコンテンツ検索を使用して、メールボックス、SharePoint Online サイト、および OneDrive for business の場所を検索します。 '
-ms.openlocfilehash: 4c3d9cc024a495ff8464e1117d5f46c13c1b9a08
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Security & コンプライアンスセンターでコンテンツ検索を使用して、メールボックス、SharePoint Online サイト、および OneDrive for Business の場所を検索します。 '
+ms.openlocfilehash: cebdbf7808534b82085affa16c06ac1929b3fd8d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261758"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157099"
 ---
 # <a name="run-a-content-search-in-the-security--compliance-center"></a>セキュリティ センターとコンプライアンス センターでコンテンツ検索を実行する
 
@@ -25,7 +25,7 @@ Security & コンプライアンスセンターのコンテンツ検索電子情
   
 - Exchange Online メールボックスとパブリック フォルダー
     
-- SharePoint Online と OneDrive for business のサイト
+- SharePoint Online と OneDrive for Business のサイト
     
 - Skype for Business の会話
     
@@ -33,7 +33,7 @@ Security & コンプライアンスセンターのコンテンツ検索電子情
     
 - Office 365 グループ
     
-コンテンツ検索は、新しい電子情報開示検索ツールで、拡張性とパフォーマンスが向上した新しい機能を備えています。 コンテンツ検索によって、非常に大規模な電子情報開示検索を行えます。 単一のコンテンツ検索において、すべてのメールボックス、すべての Exchange パブリックフォルダー、およびすべての SharePoint Online サイトと OneDrive for business アカウントを検索することができます。 検索できるコンテンツの場所の数に制限はありません。 また、同時に実行できる検索の数の制限もありません。 コンテンツ検索を実行すると、コンテンツの場所の数と予想される検索結果の数が、**コンテンツ検索**ページの [詳細] ウィンドウに表示されます。 検索を実行すると、結果のプレビュー、1つ以上の検索のキーワード統計情報の取得、コンテンツ検索の一括編集、ローカルコンピューターへの結果のエクスポートを行うことができます。 
+コンテンツ検索は、新しい電子情報開示検索ツールで、拡張性とパフォーマンスが向上した新しい機能を備えています。 コンテンツ検索によって、非常に大規模な電子情報開示検索を行えます。 単一のコンテンツ検索において、すべてのメールボックス、すべての Exchange パブリックフォルダー、およびすべての SharePoint Online サイトと OneDrive for Business アカウントを検索することができます。 検索できるコンテンツの場所の数に制限はありません。 また、同時に実行できる検索の数の制限もありません。 コンテンツ検索を実行すると、コンテンツの場所の数と予想される検索結果の数が、**コンテンツ検索**ページの [詳細] ウィンドウに表示されます。 検索を実行すると、結果のプレビュー、1つ以上の検索のキーワード統計情報の取得、コンテンツ検索の一括編集、ローカルコンピューターへの結果のエクスポートを行うことができます。 
   
  **内容**
   
@@ -55,9 +55,9 @@ Security & コンプライアンスセンターのコンテンツ検索電子情
 
 - 検索クエリの作成とブール検索演算子の使用の詳細とガイダンスについては、「[コンテンツ検索のキーワードクエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。 この記事には、機密情報の種類の検索と、組織内外のユーザーが共有するコンテンツの検索に関する情報も含まれています。
     
-- 検索を実行し、検索結果をプレビューおよびエクスポートするために**コンテンツ検索**ページにアクセスできるようにするには、管理者、コンプライアンス責任者、または電子情報開示マネージャーが、Security & コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 Exchange online、SharePoint Online、OneDrive for business サイトで追加の検索アクセス許可を割り当てる必要はありません。 詳細については、「 [Office 365 セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
+- 検索を実行し、検索結果をプレビューおよびエクスポートするために**コンテンツ検索**ページにアクセスできるようにするには、管理者、コンプライアンス責任者、または電子情報開示マネージャーが、Security _AMP_ コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 Exchange Online、SharePoint Online、OneDrive for Business サイトで追加の検索アクセス許可を割り当てる必要はありません。 詳細については、「 [Office 365 セキュリティ _AMP_ コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
     
-- Office 365 組織に提供されるサービスの正常性と品質を維持するために、コンテンツ検索に適用される制限があります。 ほとんどの場合、これらの制限を変更することはできませんが、検索の計画、実行、トラブルシューティングを行う際に考慮できるように、これらの制限について知っている必要があります。 詳細については、「 [Security & コンプライアンスセンターでの検索の制限](limits-for-content-search.md)」を参照してください。
+- Office 365 組織に提供されるサービスの正常性と品質を維持するために、コンテンツ検索に適用される制限があります。 ほとんどの場合、これらの制限を変更することはできませんが、検索の計画、実行、トラブルシューティングを行う際に考慮できるように、これらの制限について知っている必要があります。 詳細については、「 [Security _AMP_ コンプライアンスセンターでの検索の制限](limits-for-content-search.md)」を参照してください。
     
 - 単一のコンテンツ検索で検索されるメールボックスの数に基づいた推定時間については、セクションを参照してください。 
     
@@ -88,7 +88,7 @@ Security & コンプライアンスセンターのコンテンツ検索電子情
     
     ![検索するコンテンツの場所を選択する](media/da32e3f9-6cd6-4a26-8217-e97a5a7071e4.png)
   
-1. **すべての場所を検索**する組織内のすべてのコンテンツの場所を検索するには、このオプションを選択します。 このオプションを選択すると、すべてのメールボックス (非アクティブなメールボックスと、すべての office 365 グループおよび Microsoft Teams のメールボックスを含む)、すべての SharePoint および OneDrive for business サイト (すべての office 365 グループのサイトが含まれます)、およびMicrosoft Teams)、すべてのパブリックフォルダー。
+1. **すべての場所を検索**する組織内のすべてのコンテンツの場所を検索するには、このオプションを選択します。 このオプションを選択すると、すべてのメールボックス (非アクティブなメールボックスと、すべての Office 365 グループおよび Microsoft Teams のメールボックスを含む)、すべての SharePoint および OneDrive for Business サイト (すべての Office 365 グループのサイトが含まれます)、およびMicrosoft Teams)、すべてのパブリックフォルダー。
     
     ![[すべての場所を検索する] オプションをクリックしてすべてのコンテンツの場所を検索する](media/86f132f1-0a2a-4048-900c-9f219d909ef2.png)
   
@@ -167,12 +167,12 @@ Security & コンプライアンスセンターのコンテンツ検索電子情
 ## <a name="export-search-results"></a>検索結果をエクスポートする
 <a name="export"> </a>
 
-検索が正常に実行されたら、検索結果をローカルコンピューターにエクスポートできます。 電子メールの結果をエクスポートする場合は、PST ファイルとしてコンピューターにダウンロードされます。 SharePoint と OneDrive for business サイトからコンテンツをエクスポートすると、ネイティブな Office ドキュメントのコピーがエクスポートされます。 また、エクスポートした検索結果に含まれる追加のドキュメントとレポートもあります。 詳細については、「 [Security & コンプライアンスセンターからの検索結果のエクスポート](export-search-results.md)」を参照してください。
+検索が正常に実行されたら、検索結果をローカルコンピューターにエクスポートできます。 電子メールの結果をエクスポートする場合は、PST ファイルとしてコンピューターにダウンロードされます。 SharePoint と OneDrive for Business サイトからコンテンツをエクスポートすると、ネイティブな Office ドキュメントのコピーがエクスポートされます。 また、エクスポートした検索結果に含まれる追加のドキュメントとレポートもあります。 詳細については、「 [Security _AMP_ コンプライアンスセンターからの検索結果のエクスポート](export-search-results.md)」を参照してください。
   
 ## <a name="preview-search-results"></a>検索結果のプレビュー
 <a name="preview"> </a>
 
-検索が正常に完了すると、検索結果をプレビューできます。 コンテンツ検索の結果のプレビューに関連する制限が多数あります。 詳細については、「 [Security & コンプライアンスセンターでの検索の制限](limits-for-content-search.md)」を参照してください。 インデックスを持たないアイテムはプレビューできないことに注意してください。
+検索が正常に完了すると、検索結果をプレビューできます。 コンテンツ検索の結果のプレビューに関連する制限が多数あります。 詳細については、「 [Security _AMP_ コンプライアンスセンターでの検索の制限](limits-for-content-search.md)」を参照してください。 インデックスを持たないアイテムはプレビューできないことに注意してください。
   
 1. [**コンテンツ検索**] ページで、検索を選択します。 
     
@@ -184,7 +184,7 @@ Security & コンプライアンスセンターのコンテンツ検索電子情
     
     アイテムがプレビューウィンドウで開きます。
     
-4. ファイルの種類がプレビューでサポートされていない場合や、ドキュメントのコピーをダウンロードする場合は、[**元のファイルをダウンロード**] をクリックして、ローカルコンピューターにダウンロードします。 .aspx Web ページの場合は、ページの URL が含まれますが、ページにアクセスするアクセス許可を持っていない可能性があります。 
+4. ファイルの種類がプレビューでサポートされていない場合や、ドキュメントのコピーをダウンロードする場合は、[**元のファイルをダウンロード**] をクリックして、ローカルコンピューターにダウンロードします。 .Aspx Web ページの場合は、ページの URL が含まれますが、ページにアクセスするアクセス許可を持っていない可能性があります。 
     
 > [!NOTE]
 > 最後に実行してから 7 日を超えて経過している検索の検索結果をプレビューすると、検索結果を更新するよう求めるメッセージが表示されます。 検索を再実行して、検索クエリに一致する最新の結果を取得します。 
@@ -265,8 +265,7 @@ Security & コンプライアンスセンターのコンテンツ検索電子情
  
 [Microsoft Teams と Office 365 グループ](#microsoft-teams-and-office-365-groups)
   
-
-  [OneDrive for Business](#onedrive-for-business)
+[OneDrive for Business](#onedrive-for-business)
   
 [検索クエリ](#search-queries)
   
@@ -278,7 +277,7 @@ Security & コンプライアンスセンターのコンテンツ検索電子情
   
 ### <a name="limits-and-performance"></a>制限とパフォーマンス
   
-- コンテンツ検索機能に適用される制限の説明については、「 [Security & コンプライアンスセンターでの検索の制限](limits-for-content-search.md)」を参照してください。
+- コンテンツ検索機能に適用される制限の説明については、「 [Security _AMP_ コンプライアンスセンターでの検索の制限](limits-for-content-search.md)」を参照してください。
     
 - すべての Office 365 組織が実行するコンテンツ検索について、Microsoft はパフォーマンス情報を収集しています。検索クエリが複雑になると、検索時間が長くなる可能性がありますが、検索時間が長くなる最も大きな要因は、検索するメールボックス数です。Microsoft は検索時間についてサービス レベル アグリーメントを提供していませんが、検索に含まれるメールボックス数に基づくコンテンツ検索の平均検索時間を次の表に示します。
     
@@ -320,7 +319,7 @@ Security & コンプライアンスセンターのコンテンツ検索電子情
   
   - ユーザーのメールボックスを検索すると、ユーザーが属している Microsoft チームまたは Office 365 グループは検索されません。同様に、Microsoft チームまたは Office 365 グループを検索する場合は、指定したグループ メールボックスとグループ サイトのみが検索されます。検索に明示的に追加しない限り、グループ メンバーのメールボックスと OneDrive for Business アカウントは検索されません。
     
-  - microsoft Team または Office 365 グループのメンバーの一覧を取得するには、microsoft 365 管理センターの [**ホーム\>グループ**] ページでプロパティを表示します。 または、Exchange Online PowerShell で次のコマンドを実行することもできます。 
+  - Microsoft Team または Office 365 グループのメンバーの一覧を取得するには、Microsoft 365 管理センターの [**ホーム\>グループ**] ページでプロパティを表示します。 または、Exchange Online PowerShell で次のコマンドを実行することもできます。 
     
   ```
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -345,7 +344,7 @@ Security & コンプライアンスセンターのコンテンツ検索電子情
   
 ### <a name="onedrive-for-business"></a>OneDrive for Business
   
-- 組織内の onedrive for business サイトの url の一覧を収集するには、「[組織内のすべての onedrive の場所の一覧を作成](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a)する」を参照してください。 この記事のスクリプトでは、すべての OneDrive for business サイトの一覧を含むテキストファイルを作成します。 このスクリプトを実行するには、SharePoint Online 管理シェルをインストールして使用する必要があります。 検索する各 OneDrive for business サイトに、組織の個人用サイトドメインの URL を追加してください。 これは、すべての OneDrive for business を含むドメインです。たとえば、 `https://contoso-my.sharepoint.com`のようになります。 ユーザーの OneDrive for business サイトの URL の例を次`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`に示します。
+- 組織内の OneDrive for Business サイトの Url の一覧を収集するには、「[組織内のすべての onedrive の場所の一覧を作成](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a)する」を参照してください。 この記事のスクリプトでは、すべての OneDrive for Business サイトの一覧を含むテキストファイルを作成します。 このスクリプトを実行するには、SharePoint Online 管理シェルをインストールして使用する必要があります。 検索する各 OneDrive for Business サイトに、組織の個人用サイトドメインの URL を追加してください。 これは、すべての OneDrive for Business を含むドメインです。たとえば、 `https://contoso-my.sharepoint.com`のようになります。 ユーザーの OneDrive for Business サイトの URL の例を次`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`に示します。
     
 
 ### <a name="search-queries"></a>検索クエリ
@@ -401,7 +400,7 @@ Security & コンプライアンスセンターのコンテンツ検索電子情
   
 - セキュリティ & コンプライアンスセンターの [**コンテンツ検索**] ページで作成されたコンテンツ検索は、Exchange 管理センターの [**インプレースの電子情報&amp;開示保持**] ページには表示されません。 これは、コンテンツ検索アーキテクチャおよびセキュリティ & コンプライアンスセンターで作成された検索オブジェクトが、Exchange Online のインプレース電子情報開示機能とまったく異なるためです。 
     
-    同じ理由から、[**コンテンツ検索**] ページで作成された検索は、セキュリティ & コンプライアンスセンターの電子情報開示ケースの [**検索**] ページに表示されません。 
+    同じ理由から、[**コンテンツ検索**] ページで作成された検索は、セキュリティ _AMP_ コンプライアンスセンターの電子情報開示ケースの [**検索**] ページに表示されません。 
     
 - 検索の再開とやり直しの違いは何ですか。 検索を再開すると、検索で指定されているすべてのコンテンツの場所が、新しいプレビュー検索で再び検索されます。 ただし、検索を再試行すると、検索が最後に実行された時点で失敗したコンテンツの場所のみが再度検索されます。
    

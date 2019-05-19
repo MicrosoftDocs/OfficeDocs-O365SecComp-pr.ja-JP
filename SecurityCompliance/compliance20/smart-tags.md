@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 721426f23aec862bcefbd13b8e61415dac3aeb27
-ms.sourcegitcommit: aa8ea45d5854f8906714e0a407937585ec7993ad
+ms.openlocfilehash: 5310acad1aa1bc2e01cbabee69dd7bb38084bd9a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33951703"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153969"
 ---
 # <a name="set-up-smart-tags-for-ml-assisted-review-in-advanced-ediscovery"></a>高度な電子情報開示での ML サポートのスマートタグの設定
 

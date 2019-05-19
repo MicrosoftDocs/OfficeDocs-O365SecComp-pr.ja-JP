@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
 description: 'レポートを実行してから、Office 365 Advanced eDiscovery でその .csv ファイルをダウンロードする方法について説明します。  '
-ms.openlocfilehash: c6b70700d785c2616f984f3902fbc543d1ae26b3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2eee2c423210c9d65152c7299eed5c73c5b455b0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261212"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156749"
 ---
 # <a name="run-reports-in-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示でレポートを実行する
 

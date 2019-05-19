@@ -4,18 +4,18 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 国内の識別番号の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: afae2c3fa54fe5fcd93990cdf5797f5517c46202
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 205019d040648f0600f3dbf4403063edf9f31c41
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255645"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154461"
 ---
 # <a name="eu-national-identification-number"></a>EU 国家識別番号
 
@@ -45,7 +45,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_austria_eu_national_id_card`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_austria_eu_national_id_card`キーワードが見つかりました。 
+- From `Keywords_austria_eu_national_id_card`キーワードが見つかりました。 
     
 ```
  
@@ -85,7 +85,7 @@ personalausweis republik österreich
 
 スペースと区切り文字を含まない10桁の数字
   
--  誕生日に対応する6桁の数字 (yymmdd という) 
+-  誕生日に対応する6桁の数字 (YYMMDD という) 
     
 - 誕生日の順序に対応する2桁の数字
     
@@ -103,7 +103,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 関数`Func_bulgaria_national_number`は、パターンに一致するコンテンツを検索します。 
     
-- from `Keywords_bulgaria_national_number`キーワードが見つかりました。 
+- From `Keywords_bulgaria_national_number`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -135,7 +135,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 ssn
   
@@ -149,15 +149,15 @@ bnn
   
 個人 id 番号
   
-personalidnumber #
+personalidnumber#
   
-единенгражданскиномер
+единен граждански номер
   
 edinen grazhdanski nomer
   
 егн
   
-егн #
+егн#
   
 ## <a name="croatia"></a>クロアチア
 
@@ -183,7 +183,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_cyprus_eu_national_id_card`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_cyprus_eu_national_id_card`キーワードが見つかりました。 
+- From `Keywords_cyprus_eu_national_id_card`キーワードが見つかりました。 
     
 ```
  
@@ -229,7 +229,7 @@ id カード番号
   
 - 性別と世紀に対応する1桁の数字 (奇数個の男性、偶数の女性、1-2:19 世紀、3-4:20 世紀、5-6:21 世紀)
     
-- 誕生日に対応する6桁の数字 (yymmdd という)
+- 誕生日に対応する6桁の数字 (YYMMDD という)
     
 - 同じ日付に出生地を分けるシリアル番号に対応する3桁の数字
     
@@ -245,7 +245,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 関数`Func_estonia_eu_national_id_card`は、パターンに一致するコンテンツを検索します。 
     
-- from `Keywords_estonia_eu_national_id_card`キーワードが見つかりました。 
+- From `Keywords_estonia_eu_national_id_card`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -278,7 +278,7 @@ national identification number
   
 個人 id 番号
   
-personalidnumber #
+personalidnumber#
   
 ik
   
@@ -296,7 +296,7 @@ id-kaart
   
 ## <a name="germany"></a>ドイツ
 
-詳細については、「[機密情報の種類がどのようなもの](what-the-sensitive-information-types-look-for.md)か」の「ドイツの id カード番号」セクションを参照してください。
+詳細については、「[機密情報の種類がどのようなもの](what-the-sensitive-information-types-look-for.md)か」の「ドイツの Id カード番号」セクションを参照してください。
   
 ## <a name="greece"></a>ギリシャ
 
@@ -314,7 +314,7 @@ id-kaart
   
 -  性別に対応する1桁の数字 (1-オス、2-女性、その他の数字は1900または市民が二重市民権を持つ市民の場合もあります) 
     
-- 誕生日に対応する6桁の数字 (yymmdd という)
+- 誕生日に対応する6桁の数字 (YYMMDD という)
     
 - シリアル番号に対応する3桁の数字
     
@@ -330,7 +330,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 関数`Func_hungary_eu_national_id_card`は、パターンに一致するコンテンツを検索します。 
     
-- from `Keywords_hungary_eu_national_id_card`キーワードが見つかりました。 
+- From `Keywords_hungary_eu_national_id_card`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -370,7 +370,7 @@ személyazonosító igazolvány
 
 指定したパターンの文字、数字、スペースの9文字の組み合わせ
   
-01年1月から今すぐに。
+01年 1 2013 月から今すぐに。
   
 -  7 桁の数字  
     
@@ -396,7 +396,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 関数は、パターンに一致するコンテンツを検索します。
     
-- from キーワードが見つかりました。
+- From キーワードが見つかりました。
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -435,7 +435,7 @@ identification number
   
 uimhir phearsanta seirbhíse poiblí
   
-uimh。 psp
+uimh. psp
   
 ## <a name="italy"></a>イタリア
 
@@ -453,9 +453,9 @@ uimh。 psp
     
 - 誕生年の最後の桁に対応する2桁の数字
     
-- 誕生日の文字に対応する1つの文字-文字はアルファベット順に使用されますが、a から E、H、L、M、P、R から T までの文字が使用されます (つまり、1月は a と10月は r)。
+- 誕生日の文字に対応する1つの文字-文字はアルファベット順に使用されますが、A から E、H、L、M、P、R から T までの文字が使用されます (つまり、1月は A と10月は R)。
     
-- genders を区別するために、誕生日に対応する2桁の数字は、女性の誕生日に40が追加されます。
+- Genders を区別するために、誕生日に対応する2桁の数字は、女性の誕生日に40が追加されます。
     
 - 個人が生まれた municipality に固有のエリアコードに対応する4桁の数字 (国全体のコードは外国で使用されます)
     
@@ -471,7 +471,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 関数`Func_italy_eu_national_id_card`は、パターンに一致するコンテンツを検索します。 
     
-- from `Keywords_italy_eu_national_id_card`キーワードが見つかりました。 
+- From `Keywords_italy_eu_national_id_card`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -501,7 +501,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 会計コード
   
-personalcodeno #
+personalcodeno#
   
 個人 id 番号
   
@@ -529,7 +529,7 @@ codice fiscale
 
 11桁の数字とハイフン:
   
--  誕生日に対応する6桁の数字 (ddmmyy) 
+-  誕生日に対応する6桁の数字 (DDMMYY) 
     
 - ハイフン 1 つ 
     
@@ -547,7 +547,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 関数`Func_latvia_eu_national_id_card`は、パターンに一致するコンテンツを検索します。 
     
-- from `Keywords_latvia_eu_national_id_card`キーワードが見つかりました。 
+- From `Keywords_latvia_eu_national_id_card`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -575,7 +575,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 個人証明書番号
   
-personalcodeno #
+personalcodeno#
   
 個人 id 番号
   
@@ -595,7 +595,7 @@ personalcodeno #
   
 - ユーザーの性別および誕生世紀に対応する1桁の数字
     
--  誕生日に対応する6桁の数字 (yymmdd という) 
+-  誕生日に対応する6桁の数字 (YYMMDD という) 
     
 - 誕生日のシリアル番号に対応する3桁の数字
     
@@ -611,7 +611,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 関数`Func_lithuania_eu_national_id_card`は、パターンに一致するコンテンツを検索します。 
     
-- from `Keywords_lithuania_eu_national_id_card`キーワードが見つかりました。 
+- From `Keywords_lithuania_eu_national_id_card`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -642,7 +642,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 一意の id 番号
   
-uniqueidentityno #
+uniqueidentityno#
   
 個人コード
   
@@ -668,7 +668,7 @@ asmens のためのものです。
   
 - ユーザーの性別および誕生世紀に対応する1桁の数字
     
--  誕生日に対応する6桁の数字 (yymmdd という) 
+-  誕生日に対応する6桁の数字 (YYMMDD という) 
     
 - 誕生日のシリアル番号に対応する3桁の数字
     
@@ -684,7 +684,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_luxemburg_eu_national_id_card`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_luxemburg_eu_national_id_card`キーワードが見つかりました。 
+- From `Keywords_luxemburg_eu_national_id_card`キーワードが見つかりました。 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -707,13 +707,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 一意の id 番号
   
-personalidnumber #
+personalidnumber#
   
 一意の id キー
   
 個人 id コード
   
-uniqueidkey #
+uniqueidkey#
   
 個別のコード
   
@@ -727,11 +727,11 @@ id personnelle
   
 numéro d'identification 職員
   
-idpersonnelle #
+idpersonnelle#
   
 persönliche identifikationsnummer
   
-eindeutigeid #
+eindeutigeid#
   
 ## <a name="malta"></a>マルタ
 
@@ -757,7 +757,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_malta_eu_national_id_card`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_malta_eu_national_id_card`キーワードが見つかりました。 
+- From `Keywords_malta_eu_national_id_card`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、65% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -788,7 +788,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 一意の id 番号
   
-uniqueidentityno #
+uniqueidentityno#
   
 kodiċi numerali パーソナル i
   
@@ -818,7 +818,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 関数`Func_netherlands_eu_national_id_card`は、パターンに一致するコンテンツを検索します。 
     
-- from キーワードが見つかりました。
+- From キーワードが見つかりました。
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -849,7 +849,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 一意の id 番号
   
-uniqueidentityno #
+uniqueidentityno#
   
 bsn
   
@@ -891,7 +891,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 関数`Func_romania_eu_national_id_card`は、パターンに一致するコンテンツを検索します。 
     
-- from `Keywords_romania_eu_national_id_card`キーワードが見つかりました。 
+- From `Keywords_romania_eu_national_id_card`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -928,11 +928,11 @@ pin
   
 保険番号
   
-insurancenumber #
+insurancenumber#
   
 一意の id 番号
   
-uniqueidentityno #
+uniqueidentityno#
   
 cod 数値個人
   
@@ -946,11 +946,11 @@ număr 識別子縦
   
 număr 識別子の個人情報
   
-număridentitate #
+număridentitate#
   
-codnumericpersonal #
+codnumericpersonal#
   
-numărpersonalunic #
+numărpersonalunic#
   
 ## <a name="slovakia"></a>スロバキア
 
@@ -972,7 +972,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 関数`Func_slovakia_eu_national_id_card`は、パターンに一致するコンテンツを検索します。 
     
-- from `Keywords_slovakia_eu_national_id_card`キーワードが見つかりました。 
+- From `Keywords_slovakia_eu_national_id_card`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -1003,7 +1003,7 @@ national identification number
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 ssn
   
@@ -1013,7 +1013,7 @@ ssn
   
 個人 id 番号
   
-personalidnumber #
+personalidnumber#
   
 rč
   
@@ -1049,7 +1049,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 関数`Func_slovenia_eu_national_id_card`は、パターンに一致するコンテンツを検索します。 
     
-- from `Keywords_slovenia_eu_national_id_card`キーワードが見つかりました。 
+- From `Keywords_slovenia_eu_national_id_card`キーワードが見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
@@ -1080,7 +1080,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 一意の id 番号
   
-uniqueidentityno #
+uniqueidentityno#
   
 一意のマスター市民番号
   
@@ -1116,7 +1116,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 - 正規表現`Regex_spain_eu_national_id_card`は、パターンに一致するコンテンツを検出します。 
     
-- from `Keywords_spain_eu_national_id_card"`キーワードが見つかりました。 
+- From `Keywords_spain_eu_national_id_card"`キーワードが見つかりました。 
     
 ```
  
@@ -1148,19 +1148,19 @@ national identification number
   
 一意の id 番号
   
-nationalidno #
+nationalidno#
   
 見つから
   
 dni
   
-nationalid #
+nationalid#
   
-nie #
+nie#
   
 nie
   
-nienúmero #
+nienúmero#
   
 nie número
   
@@ -1172,9 +1172,9 @@ número nacional 識別子 dad
   
 dni número
   
-dninúmero #
+dninúmero#
   
-identidadúnico #
+identidadúnico#
   
 ## <a name="sweden"></a>スウェーデン
 

@@ -1,10 +1,10 @@
 ---
-title: iOS デバイス用の APNs 証明書を作成する
+title: IOS デバイス用の APNs 証明書を作成する
 ms.author: brendonb
 author: brendonb
 manager: laurawi
 ms.date: 8/5/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - O365M_APNCertMDM
@@ -17,17 +17,17 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 522b43f4-a2ff-46f6-962a-dd4f47e546a7
-description: Office 365 のモバイルデバイス管理で iPad や iphones などの iOS デバイスを管理するには、最初に APNs 証明書を作成するために、次の手順を実行します。
-ms.openlocfilehash: 5f82690f0add5f1aae95a089d9cdfc0b320ae596
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Office 365 のモバイルデバイス管理で iPad や iPhones などの iOS デバイスを管理するには、最初に APNs 証明書を作成するために、次の手順を実行します。
+ms.openlocfilehash: 17dae3e02520cdac2b1381039844d1657b12c4eb
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258633"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153759"
 ---
-# <a name="create-an-apns-certificate-for-ios-devices"></a>iOS デバイス用の APNs 証明書を作成する
+# <a name="create-an-apns-certificate-for-ios-devices"></a>IOS デバイス用の APNs 証明書を作成する
 
- Office 365 のモバイルデバイス管理で iPad や iphones などの iOS デバイスを管理するには、APNs 証明書を作成する必要があります。 
+ Office 365 のモバイルデバイス管理で iPad や iPhones などの iOS デバイスを管理するには、APNs 証明書を作成する必要があります。 
   
 これを行うには、ポータルページの [**設定**] リンクからの手順を実行します。 ( ** &amp;セキュリティコンプライアンスセンター** \>の**セキュリティポリシー** \>に移動し、**デバイス管理** \>の**設定を管理**します。)
   
@@ -67,7 +67,7 @@ ms.locfileid: "32258633"
     
     ![[参照] ボタンをクリックして Apple からダウンロードした APNS 証明書を選択します。](media/afe2849d-af23-4c55-9009-d8f25edaf6c0.png)
   
-7. Select **Finish**.
+7. **[完了]** を選択します。
     
 **セキュリティ&amp; /コンプライアンスセンター** \> **のセキュリティポリシー** \>に戻る**デバイス管理** \> **設定を管理**してセットアップを完了します。 
   

@@ -4,7 +4,7 @@ ms.author: chrisda
 author: chrisda
 manager: chrisda
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.AdminRoleGroups
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、Office 365 セキュリティ & コンプライアンスセンターで利用可能なアクセス許可について理解できます。
-ms.openlocfilehash: 81b9020260f11700038f7cc266179355dd1a7896
-ms.sourcegitcommit: 09fd88272187f82b6e635af83edabea08c2cc49c
+ms.openlocfilehash: 9305800ed19f6a3748b667ed04fb90dedafb624c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33884775"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156979"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Office 365 セキュリティ センターとコンプライアンス センターのアクセス許可
 

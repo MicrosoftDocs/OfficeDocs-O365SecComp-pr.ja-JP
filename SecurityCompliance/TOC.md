@@ -1,3 +1,5 @@
+# [セキュリティ / コンプライアンス](index.md)
+
 # はじめに
 ## [Office 365 のセキュリティ ロードマップ](security-roadmap.md)
 ## [セキュリティ強化のために、Office 365 テナントを構成する](tenant-wide-setup-for-increased-security.md)
@@ -186,7 +188,8 @@
 ### [ネットワーク アップロードを使用して、RMS で暗号化された PST ファイルをインポートする](use-network-upload-to-import-rms-encrypted-pst-files.md)
 ### [PST ファイルのインポートに関する FAQ](faqimporting-pst-files-to-office-365.md)
 ### [Office 365 でサードパーティのデータをアーカイブする](archiving-third-party-data.md)
-#### [サンプル コネクタを使って、サードパーティーのデータをアーカイブする](archive-third-party-data-with-sample-connector.md)
+#### [サンプルコネクタを使用して Facebook のデータをアーカイブする](archive-facebook-data-with-sample-connector.md)
+#### [サンプルコネクタを使用して Twitter のデータをアーカイブする](archive-twitter-data-with-sample-connector.md)
 #### [パートナーと共同作業でサードパーティーのデータをアーカイブする](work-with-partner-to-archive-third-party-data.md)
 ## データを格納する
 ### [アーカイブ メールボックスの有効化](enable-archive-mailboxes.md)
@@ -203,7 +206,8 @@
 ### [イベント ベースの保持](event-driven-retention.md)
 ### [イベント ベースの保持を自動化する](automate-event-driven-retention.md)
 ## [データを破棄する](disposition-reviews.md)
-## [通信を監督する](supervision-policies.md)
+## 通信を監督する
+### [監督ポリシー](supervision-policies.md)
 ### [組織用に監督ポリシーを構成する](configure-supervision-policies.md)
 ## [非アクティブなメールボックスを管理する](inactive-mailboxes-in-office-365.md)
 ### [非アクティブなメールボックスを作成および管理する](create-and-manage-inactive-mailboxes.md)

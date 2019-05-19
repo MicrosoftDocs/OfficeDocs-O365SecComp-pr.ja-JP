@@ -1,9 +1,9 @@
 ---
-title: Office 365 でカスタムドメイン内の電子メールに dkim を使用する
+title: Office 365 でカスタムドメイン内の電子メールに DKIM を使用する
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,16 +13,16 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: '概要: この記事では、Office 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージを送信先のメール システムが信頼するようにする方法を説明します。'
-ms.openlocfilehash: fc2a509aacdaac0aeef22696d85512f91957502f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 35df7cdd1a95311dac612aa486670e03f6f23d07
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263746"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158009"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>DKIM を使用して、Office 365 のカスタム ドメインから送信される送信電子メールを検証する
 
- **概要:** この記事では、Office 365 で domainkeys 識別メール (dkim) を使用して、宛先の電子メールシステムが、カスタムドメインから送信されたメッセージを信頼するようにする方法について説明します。 
+ **概要:** この記事では、Office 365 で DomainKeys 識別メール (DKIM) を使用して、宛先の電子メールシステムが、カスタムドメインから送信されたメッセージを信頼するようにする方法について説明します。 
   
 ドメインから送信されたように見えるメッセージをなりすまし者が送信できないようにするためには、SPF と DMARC に加え、DKIM を使用する必要があります。DKIM では、電子メール メッセージのメッセージ ヘッダー内にデジタル署名を追加することができます。複雑そうに思えますが、まったく複雑ではありません。DKIM の構成時に、関連付けるドメインを承認するか、暗号化認証を使用して電子メール メッセージにその名前を署名します。ドメインから電子メールを受信する電子メール システムでは、このデジタル署名を使用して、受け取った受信メールが正当であるかどうかを判断することができます。
   
@@ -81,14 +81,14 @@ DKIM を構成するには、次の手順を完了します。
 ### <a name="publish-two-cname-records-for-your-custom-domain-in-dns"></a>DNS でカスタム ドメインに対して 2 つの CNAME レコードを発行する
 <a name="Publish2CNAME"> </a>
 
-DNS の DKIM 署名を追加する各ドメインに対して、2 つの CNAME レコードを発行する必要があります。 CNAME レコードは、ドメインの 正規名が別のドメイン名のエイリアスであることを指定するために DNS によって使用されます。 CNAME レコードは、カスタマイズしたドメインのパブリックに使用可能な DNS サーバー上に作成する必要があります。 dns の CNAME レコードは、Office 365 用の Microsoft dns サーバー上の dns に存在するレコードが既に作成されていることを指します。
+DNS の DKIM 署名を追加する各ドメインに対して、2 つの CNAME レコードを発行する必要があります。 CNAME レコードは、ドメインの 正規名が別のドメイン名のエイリアスであることを指定するために DNS によって使用されます。 CNAME レコードは、カスタマイズしたドメインのパブリックに使用可能な DNS サーバー上に作成する必要があります。 DNS の CNAME レコードは、Office 365 用の Microsoft DNS サーバー上の DNS に存在するレコードが既に作成されていることを指します。
   
  Office 365 は、発行された 2 つのレコードを使用して自動的にキーの交換を実行します。Office 365 の初期ドメインに加えてプロビジョニングされたカスタム ドメインがある場合には、追加の各ドメインに対して 2 つの CNAME レコードを発行する必要があります。したがって、2 つのドメインがある場合は、さらに 2 つの CNAME レコードを発行するなどの操作が必要になります。
   
 CNAME レコードには、次の形式を使用します。
 
 > [!IMPORTANT]
-> 使用している GCC の数が多いお客様の場合は、 _domainguid_を異なるものとして計算します。 _domainguid_を計算するために_initialdomain_の MX レコードを検索する代わりに、カスタマイズしたドメインから直接計算します。 たとえば、カスタマイズしたドメインが "contoso.com" の場合、domainguid は "contoso-com" になり、ピリオドはすべてダッシュに置き換えられます。 そのため、initialdomain が指している MX レコードに関係なく、常に上記の方法を使用して、CNAME レコードで使用する domainguid を計算します。
+> 使用している GCC の数が多いお客様の場合は、 _Domainguid_を異なるものとして計算します。 _Domainguid_を計算するために_INITIALDOMAIN_の MX レコードを検索する代わりに、カスタマイズしたドメインから直接計算します。 たとえば、カスタマイズしたドメインが "contoso.com" の場合、domainGuid は "contoso-com" になり、ピリオドはすべてダッシュに置き換えられます。 そのため、initialDomain が指している MX レコードに関係なく、常に上記の方法を使用して、CNAME レコードで使用する domainGuid を計算します。
 
   
 ```
@@ -105,7 +105,7 @@ TTL:                3600
   
 - Office 365 では、セレクターは常に "selector1" または "selector2" になります。 
     
-- _domainguid_は、mail.protection.outlook.com の前に表示されるカスタムドメインのカスタマイズされた MX レコードの_domainguid_と同じです。 たとえば、ドメイン contoso.com の次の MX レコードでは、 _domainguid_は contoso-com です。 
+- _domainguid_は、mail.protection.outlook.com の前に表示されるカスタムドメインのカスタマイズされた MX レコードの_domainguid_と同じです。 たとえば、ドメイン contoso.com の次の MX レコードでは、 _Domainguid_は contoso-com です。 
     
     ```
     contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
@@ -138,7 +138,7 @@ TTL:                3600
 
 DNS に CNAME レコードを発行したら、Office 365 で DKIM 署名を有効にする準備が整ったことになります。 これは、Microsoft 365 管理センターまたは PowerShell を使用して行うことができます。
   
-#### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-admin-center"></a>管理センターを使用してカスタムドメインの dkim 署名を有効にするには
+#### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-admin-center"></a>管理センターを使用してカスタムドメインの DKIM 署名を有効にするには
 
 1. [Office 365 へのサインイン](https://support.office.microsoft.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)、職場または学校のアカウントを使用します。 
     

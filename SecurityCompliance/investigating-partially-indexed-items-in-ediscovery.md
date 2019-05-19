@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 1/26/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: 部分的にインデックスが作成されたアイテム (インデックスのないアイテムも呼び出します) は、何らかの理由でコンテンツ検索のインデックスが完全に作成されなかった SharePoint および OneDrive サイト上の Exchange メールボックスアイテムとドキュメントです。 この記事では、検索用にインデックスを作成できず、部分的にインデックスが作成されたアイテムとして返され、部分的にインデックス付けされたアイテムの検索エラーを特定し、PowerShell スクリプトを使用して、部分的にインデックス付けされた電子メールに対する組織の公開を判断する方法について説明します。アイテム.
-ms.openlocfilehash: d6b1326498780a5d40e49ff22aa1ac7d16bee8e4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 78ce6fc9816707e4d8bb18da71ca2ee89386b9b8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254136"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154226"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Office 365 の電子情報開示で部分的にインデックスが作成されたアイテムを調査する
 
@@ -47,7 +47,7 @@ ms.locfileid: "32254136"
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>組織内の部分的にインデックスが作成されたアイテムの比率を計算する
 
-部分的にインデックスが作成されたアイテムに対する組織の影響を理解するには、すべてのメールボックス内のすべてのコンテンツについて検索を実行します (空白のキーワードクエリを使用)。 次の例では、56208 (4830 MB) の完全にインデックスが作成されたアイテムと、470 (316 mb) の一部のインデックスアイテムがあります。
+部分的にインデックスが作成されたアイテムに対する組織の影響を理解するには、すべてのメールボックス内のすべてのコンテンツについて検索を実行します (空白のキーワードクエリを使用)。 次の例では、56208 (4830 MB) の完全にインデックスが作成されたアイテムと、470 (316 MB) の一部のインデックスアイテムがあります。
   
 ![部分的にインデックスが作成されたアイテムを示す検索統計の例](media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
   
@@ -99,7 +99,7 @@ ms.locfileid: "32254136"
 | `attachmentdepth` <br/> |コンテンツ取得とドキュメントパーサーで、他の添付ファイル内にネストされた添付ファイルのレベルが多すぎます。 これらの添付ファイルの一部は処理されませんでした。  <br/> |
 | `attachmentrms` <br/> |添付ファイルは RMS で保護されていたため、デコードに失敗しました。  <br/> |
 | `attachmentsize` <br/> |電子メールメッセージに添付されたファイルが大きすぎて処理できませんでした。  <br/> |
-| `indexingtruncated` <br/> |処理された電子メールメッセージをインデックスに書き込むときに、インデックス可能なプロパティのいずれかが大きすぎたため、切り捨てられました。 切り捨てられたプロパティは、[Error properties] フィールドに表示されます。  <br/> |
+| `indexingtruncated` <br/> |処理された電子メールメッセージをインデックスに書き込むときに、インデックス可能なプロパティのいずれかが大きすぎたため、切り捨てられました。 切り捨てられたプロパティは、[Error Properties] フィールドに表示されます。  <br/> |
 | `invalidunicode` <br/> |有効な Unicode として処理できなかったテキストが電子メールメッセージに含まれています。 このアイテムのインデックス処理が完了していない可能性があります。  <br/> |
 | `parserencrypted` <br/> |添付ファイルまたは電子メールメッセージの内容は暗号化されており、Office 365 はコンテンツをデコードできませんでした。  <br/> |
 | `parsererror` <br/> |解析中に不明なエラーが発生しました。 これは通常、ソフトウェアバグまたはサービスのクラッシュによって生じます。  <br/> |
@@ -112,7 +112,7 @@ ms.locfileid: "32254136"
 | `retrieverrms` <br/> |コンテンツ取得元は、RMS で保護されたメッセージのデコードに失敗しました。  <br/> |
 | `wordbreakertruncated` <br/> |ドキュメントでインデックス処理中に識別された単語の数が多すぎます。 制限値に達したときにプロパティの処理が停止され、プロパティが切り捨てられます。  <br/> |
    
-エラーフィールドは、error Tags フィールドにリストされている処理エラーの影響を受けるフィールドを示します。 `subject`や`participants`などのプロパティを検索する場合、メッセージ本文のエラーは検索結果に影響しません。 これは、さらに調査する必要がある、部分的にインデックスが作成されたアイテムを正確に判断する場合に役立ちます。
+エラーフィールドは、Error Tags フィールドにリストされている処理エラーの影響を受けるフィールドを示します。 `subject`や`participants`などのプロパティを検索する場合、メッセージ本文のエラーは検索結果に影響しません。 これは、さらに調査する必要がある、部分的にインデックスが作成されたアイテムを正確に判断する場合に役立ちます。
   
 ## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>PowerShell スクリプトを使用して、部分的にインデックスが作成された電子メールアイテムに対する組織の公開を決定する
 
@@ -164,7 +164,7 @@ ms.locfileid: "32254136"
   
 ```
    
-2. [Security & コンプライアンスセンター PowerShell に接続](https://go.microsoft.com/fwlink/p/?linkid=627084)します。
+2. [Security _AMP_ コンプライアンスセンター PowerShell に接続](https://go.microsoft.com/fwlink/p/?linkid=627084)します。
     
 3. Security & コンプライアンスセンター PowerShell で、手順1でスクリプトを保存したフォルダーに移動し、スクリプトを実行します。例えば：
 

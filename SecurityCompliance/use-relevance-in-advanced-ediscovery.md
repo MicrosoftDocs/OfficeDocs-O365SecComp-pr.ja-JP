@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: 'Office 365 Advanced eDiscovery の関連性モジュールについて説明します。これには、ワークフロー、ガイドライン、トレーニングとファイルレビューの手順が含まれます。  '
-ms.openlocfilehash: ad44066c8b00bccacf1f4fe2088aa84096c4db84
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f5b585008dca58f95b0f3b932b2ee4b82a1ae731
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263789"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156079"
 ---
 # <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>Office 365 の詳細な電子情報開示の関連モジュールを使用する
 
@@ -75,7 +75,7 @@ ms.locfileid: "32263789"
     
   - すべてのサンプルに戻って、評価およびトレーニングセットファイルのタグ付けを変更できます。 変更は、次のサンプルを作成するときに適用されます。
     
-  - PDF 形式でスキャンした excel ファイルは、ファイルにタグ付けするときに、ネイティブの excel ファイルと同じように処理されます。
+  - PDF 形式でスキャンした Excel ファイルは、ファイルにタグ付けするときに、ネイティブの Excel ファイルと同じように処理されます。
     
   - ファイルの関連性のタグ付けに関して疑わしい場合は、専門家に相談してください。 関連性トレーニング中に誤ったタグ付けを行うと、プロセスの後期に時間が失われることがあり、結果全体の品質に悪影響を及ぼす可能性があります。
     

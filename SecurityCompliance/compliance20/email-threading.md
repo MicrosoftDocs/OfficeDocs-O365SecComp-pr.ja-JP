@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ca4823ecfc06ddc0ef6f6840ad55fec492ac472c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7bfae202886d4c1af5914f4b49d0e4d528b8975d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243808"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155049"
 ---
 # <a name="email-threading"></a>電子メールスレッド
 
@@ -27,7 +27,7 @@ ms.locfileid: "32243808"
 
 ## <a name="what-does-email-threading-do"></a>電子メールスレッド処理の機能
 
-電子メールスレッドは各電子メールを解析し、個々のメッセージにコンストラクトを作成します。各電子メールは、個々のメッセージのチェインです。 次に、作業セット内のすべての電子メールを分析して、電子メールに固有のコンテンツがあるかどうか、またはチェーンが完全に別の電子メールに含まれているかどうかを判断します。 エンドメールは、次の4つのカテゴリに分かれています。
+電子メールスレッドは各電子メールを解析し、個々のメッセージにコンストラクトを作成します。各電子メールは、個々のメッセージのチェインです。 次に、確認セット内のすべてのメールを分析して、電子メールに固有のコンテンツがあるかどうか、またはチェーンが完全に別の電子メールに含まれているかどうかを判断します。 エンドメールは、次の4つのカテゴリに分かれています。
 
 - **包括**: 電子メールの最後のメッセージに固有のコンテンツがあり、電子メールには、その電子メールに含まれているその他の電子メールに含まれていたすべての添付ファイルが含まれています。
 

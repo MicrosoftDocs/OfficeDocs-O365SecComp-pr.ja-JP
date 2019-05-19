@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e3d1a33d14231fb0f383436c0bee7cb63c21d8af
-ms.sourcegitcommit: 25595bc8fae96bc23b7b6d7102a22f37878987c0
+ms.openlocfilehash: 4bf85fb8294ce7d95f31574112b9719b2b633c3e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33641594"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154039"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>高度な電子情報開示でのレビューセットの管理
 

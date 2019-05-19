@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: 'Office 365 の Advanced eDiscovery で分析プロセスのオプションを設定する手順を確認します。これには、ほぼ重複、電子メールのスレッド、テーマなどが含まれます。  '
-ms.openlocfilehash: 4689638f5cebe2ef17fcea5a13ff06edc29e5930
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6d853d701613fcbe61c6e98b3bf55ae99eefd901
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260899"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156669"
 ---
 # <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>Office 365 の高度な電子情報開示の分析オプションを設定する
 
 > [!NOTE]
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
   
-Advanced eDiscovery で、analyze を実行する前に analyze オプションを設定します。
+Advanced eDiscovery で、analyze を実行する前に Analyze オプションを設定します。
   
 ## <a name="set-analyze-options"></a>分析オプションを設定する
 

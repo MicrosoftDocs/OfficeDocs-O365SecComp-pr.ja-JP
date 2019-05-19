@@ -3,7 +3,7 @@ title: 検索とタグ付け
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: 高度な電子情報開示では、検索とタグ付けモジュールを使用して、ケースでドキュメントを検索、プレビュー、および整理することができます。 現時点では、このモジュールはベータ版です。
-ms.openlocfilehash: 58913a01f30b4169470592f5fc271e3ce785ac5d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b3e660e6dca014323cfd06f10c14747751aeb386
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261372"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158539"
 ---
 # <a name="search-and-tagging"></a>検索とタグ付け
 
@@ -27,9 +27,9 @@ ms.locfileid: "32261372"
   
 ## <a name="search-the-documents-in-your-case"></a>ケースでドキュメントを検索する
 
-高度な電子情報開示ケースでドキュメントを処理した後 (必要に応じて Analyze または関連性モジュールを実行すると)、検索とタグ付けを使用してドキュメントを検索し、大文字と小文字を区別したタグ (ラベルとも呼ばれます) を適用することで、それらを整理することができます。 検索クエリは、指定された条件カードを使用するか、またはキーワードの条件カードで kql のようなクエリ言語を使用して定義できます。 and、OR、NOT、NEAR (n) などの一般的な kql 構文がサポートされています。また、末尾の複数文字ワイルドカード (*) もサポートされています。 
+高度な電子情報開示ケースでドキュメントを処理した後 (必要に応じて Analyze または関連性モジュールを実行すると)、検索とタグ付けを使用してドキュメントを検索し、大文字と小文字を区別したタグ (ラベルとも呼ばれます) を適用することで、それらを整理することができます。 検索クエリは、指定された条件カードを使用するか、またはキーワードの条件カードで KQL のようなクエリ言語を使用して定義できます。 AND、OR、NOT、NEAR (n) などの一般的な KQL 構文がサポートされています。また、末尾の複数文字ワイルドカード (*) もサポートされています。 
 
-次の表に、kql キーワードクエリを使用して検索できるプロパティを示します。 または、高度な電子情報開示検索ツールで条件カードを使用して、検索クエリに条件 (選択したプロパティの場合) を追加することもできます。
+次の表に、KQL キーワードクエリを使用して検索できるプロパティを示します。 または、高度な電子情報開示検索ツールで条件カードを使用して、検索クエリに条件 (選択したプロパティの場合) を追加することもできます。
 
 |**プロパティ**|**説明**|
 |:-----|:-----|

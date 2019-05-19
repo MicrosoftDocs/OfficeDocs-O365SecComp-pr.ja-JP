@@ -3,7 +3,7 @@ title: Office 365 カスタマー ロックボックス要求
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 問題が発生したときに Microsoft サポートエンジニアがデータにアクセスする方法を制御するための、カスタマーロックボックス要求について説明します。
-ms.openlocfilehash: 3a86f3333114f3015b85d8066298f9834737f127
-ms.sourcegitcommit: 000548aa269ad775f20af5acd6aa726ac340c793
+ms.openlocfilehash: 2f15201cb4c49a22d7789ffafcdd94b5266bcdd4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33661423"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153839"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Office 365 のカスタマーロックボックス
 
@@ -78,7 +78,7 @@ Office 365 管理者は、Microsoft 365 管理センターでカスタマーロ�
 
 1. [https://admin.microsoft.com](https://admin.microsoft.com) に移動し、職場または学校のアカウントでサインインします。
 
-2. [**設定 _GT_ Security & Privacy**] をクリックします。
+2. [**設定 _GT_ Security & privacy**] をクリックします。
 
     ![管理センターでカスタマーロックボックスの設定を編集する](media/CustomerLockbox2.png)
 

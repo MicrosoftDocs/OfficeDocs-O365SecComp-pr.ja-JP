@@ -3,7 +3,7 @@ title: Office 365 での特権アクセス管理の構成
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,17 +15,17 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Office 365 での特権アクセス管理の構成の詳細については、このトピックを使用してください。
-ms.openlocfilehash: e086e93c268fe4de627bef30d3ac7aed8e6b1f98
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 46bfeaf0c73c4598fcdaa65d654201620396600c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265239"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157419"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Office 365 での特権アクセス管理の構成
 
 > [!IMPORTANT]
-> このトピックでは、Office 365 E5 と Advanced コンプライアンス sku で現在利用可能な機能の展開と構成のガイダンスについて説明します。
+> このトピックでは、Office 365 E5 と Advanced コンプライアンス Sku で現在利用可能な機能の展開と構成のガイダンスについて説明します。
 
 このトピックでは、Office 365 組織で特権アクセス管理を有効にして構成する手順を説明します。 Microsoft 365 管理センターまたは Exchange 管理 PowerShell のいずれかを使用して、特権アクセスを管理および使用することができます。 
 
@@ -52,7 +52,7 @@ Office 365 組織で特権アクセスをセットアップして使用するに
 承認が付与されると、要求元のユーザーは目的のタスクを実行できるようになり、特権アクセスにより、ユーザーに代わってタスクが承認および実行されます。 承認は、要求された期間 (既定の期間は4時間) に対して有効なままとなり、要求者は目的のタスクを複数回実行できます。 このような実行はすべてログに記録され、セキュリティとコンプライアンスの監査に使用できるようになります。 
 
 > [!NOTE]
-> exchange 管理 powershell を使用して特権アクセスを有効にし、構成する場合は、「[複数要素認証を使用して exchange online powershell に](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)接続する」の手順に従って、Office 365 を使用して exchange online powershell に接続します。クリデンシャル. Office 365 組織に対して多要素認証を有効にして、Exchange Online PowerShell への接続中に特権アクセスを有効にする手順を使用する必要はありません。 多要素認証を使用して接続すると、要求に署名するために特権アクセスで使用される OAuth トークンが作成されます。
+> Exchange 管理 PowerShell を使用して特権アクセスを有効にし、構成する場合は、「[複数要素認証を使用して Exchange Online powershell に](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)接続する」の手順に従って、Office 365 を使用して Exchange online powershell に接続します。クリデンシャル. Office 365 組織に対して多要素認証を有効にして、Exchange Online PowerShell への接続中に特権アクセスを有効にする手順を使用する必要はありません。 多要素認証を使用して接続すると、要求に署名するために特権アクセスで使用される OAuth トークンが作成されます。
 
 <a name="step1"> </a>
 
@@ -168,7 +168,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
     **期間 (時間)**: 要求されたアクセスの時間数。 要求可能な時間数に制限はありません。
 
-    **comments**: アクセス要求に関連するコメントのテキストフィールド
+    **Comments**: アクセス要求に関連するコメントのテキストフィールド
 
 5. [**保存**] を選択し、[**閉じる**] をクリックします。 要求は、電子メールを介して承認者のグループに送信されます。
 

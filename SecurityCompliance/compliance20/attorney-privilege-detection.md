@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 6838203a500a4fe600d8186a4b848beed0730665
-ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
+ms.openlocfilehash: ee5f2257e73467c50a0ecc296d8d3b70b7c3d0f8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33835067"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155189"
 ---
 # <a name="set-up-attorney-client-privilege-detection-preview-in-advanced-ediscovery"></a>上級電子情報開示で、弁護士クライアント特権の検出 (プレビュー) を設定する
 
@@ -65,7 +65,7 @@ ms.locfileid: "33835067"
 
 ### <a name="step-2-create-a-smart-tag-group-with-attorney-client-privilege-detection-model"></a>手順 2: 弁護士クライアント特権検出モデルを使用してスマートタググループを作成する
 
-レビュープロセスにおいて、弁護士クライアント特権の検出結果を使用する主な方法の1つは、スマートタググループを使用することです。 スマートタググループは ML モデルの結果を取得し、タグの横にモデルの結果を表示して、関連性がある場合にモデルの結果を簡単に使用できるようにします。また、タグは、タグ付けパネルの他のタグと同じようにレビュープロセスで使用します。
+レビュープロセスにおいて、弁護士クライアント特権の検出結果を使用する主な方法の1つは、スマートタググループを使用することです。 スマートタググループは ML モデルの結果を取得し、タグの横にモデルの結果を表示して、関連性がある場合にモデルの結果を簡単に使用できるようにします。また、タグは、タグ付けパネルの他のタグと同じようにレビュープロセスで使用します。 詳細については、 [「Advanced eDiscovery での ML サポートのスマートタグの設定」](smart-tags.md)を参照してください。
 
 - [タグの管理] で、[スマートタグセクションの追加] をクリックします。
 

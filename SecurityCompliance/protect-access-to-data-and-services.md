@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 4/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: O365 データおよびサービスへのアクセスを保護するためのランディングページ
-ms.openlocfilehash: e1b529a641d25f82521c40d0df9d091e0ebb5d90
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 0b693d9b259a671f0e2a3e45747f81e1020d7487
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33403005"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156869"
 ---
 # <a name="protect-user-and-device-access"></a>ユーザーとデバイス アクセスの保護
 
@@ -44,7 +44,7 @@ Office 365 環境を管理するために使用する管理アカウントには
 
 もう1つの主要な推奨事項は、管理作業用に構成されたワークステーションを使用することです。 これらは、管理タスクのみに使用される専用デバイスです。 「[権限](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access)のあるアクセスの保護」を参照してください。
 
-最後に、テナント内に2つ以上の緊急アクセスアカウントを作成することによって、不注意による管理アクセスが行われない影響を軽減できます。 「 [Azure AD でエマージェンシーアクセスアカウントを管理](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-emergency-access)する」を参照してください。 
+最後に、テナント内に2つ以上の緊急アクセスアカウントを作成することによって、不注意による管理アクセスが行われない影響を軽減できます。 「 [AZURE AD でエマージェンシーアクセスアカウントを管理](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-emergency-access)する」を参照してください。 
 
 ## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>手順 3: 推奨される id とデバイスアクセスポリシーを構成する
 多要素認証 (MFA) と条件付きアクセスポリシーは、侵害されたアカウントおよび権限のないアクセスを軽減するための強力なツールです。 一緒にテストされたポリシーのセットを実装することをお勧めします。 展開の手順を含む詳細については、「 [id とデバイスのアクセス構成](https://docs.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-policies-configurations)」を参照してください。

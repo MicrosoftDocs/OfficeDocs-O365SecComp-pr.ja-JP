@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,13 +12,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: 'Microsoft 365 セキュリティ&amp;コンプライアンスセンターを使用して office 365 Advanced eDiscovery で分析するために office 365 データを準備する方法について説明します。 '
-ms.openlocfilehash: d9d81c145a86075affd76761eb6dcff0f84a1eac
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Microsoft 365 セキュリティ&amp;コンプライアンスセンターを使用して Office 365 Advanced eDiscovery で分析するために office 365 データを準備する方法について説明します。 '
+ms.openlocfilehash: be778acb3356071e9575ed708623a0b94e2b3c7a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265509"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157459"
 ---
 # <a name="prepare-data-for-office-365-advanced-ediscovery"></a>Office 用データを準備する 365 Advanced eDiscovery
 
@@ -29,12 +29,12 @@ ms.locfileid: "32265509"
   
 ## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>手順 1: 高度な電子情報開示用に Office 365 データを準備する
 
-上級電子情報開示を使用してデータを分析するには、microsoft 365 セキュリティ&amp;コンプライアンスセンター (microsoft 365 セキュリティ&amp;コンプライアンスセンターの**コンテンツ検索**ページにリストされています) で実行するコンテンツ検索の結果を使用するか、電子情報開示ケースに関連付けられている検索 (セキュリティ&amp;コンプライアンスセンターの [**電子情報開示**] ページにリストされています)。 
+上級電子情報開示を使用してデータを分析するには、Microsoft 365 セキュリティ&amp;コンプライアンスセンター (Microsoft 365 セキュリティ&amp;コンプライアンスセンターの**コンテンツ検索**ページにリストされています) で実行するコンテンツ検索の結果を使用するか、電子情報開示ケースに関連付けられている検索 (セキュリティ&amp;コンプライアンスセンターの [**電子情報開示**] ページにリストされています)。 
   
-高度な電子情報開示で分析のために検索結果を準備する詳細な手順については、「 [Office 365 advanced ediscovery の検索結果を準備](prepare-search-results-for-advanced-ediscovery.md)する」を参照してください。
+高度な電子情報開示で分析のために検索結果を準備する詳細な手順については、「 [Office 365 Advanced ediscovery の検索結果を準備](prepare-search-results-for-advanced-ediscovery.md)する」を参照してください。
   
 > [!NOTE]
-> office 365 の外部にデータがあり、そのデータを office 365 にインポートして、高度な電子情報開示で準備および分析できるようにする場合は、「office 2010[への PST ファイルのインポートの概要](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84)」と「 [office の365でのサードパーティデータのアーカイブ](https://go.microsoft.com/fwlink/p/?linkid=716918)」を参照してください。 
+> Office 365 の外部にデータがあり、そのデータを office 365 にインポートして、高度な電子情報開示で準備および分析できるようにする場合は、「office 2010 365 への PST ファイルのインポートの概要」と「office の365でのサードパーティデータのアーカイブ」を参照してください。 
   
 ## <a name="step-2-load-search-result-data-in-to-a-case-in-advanced-ediscovery"></a>手順 2: 高度な電子情報開示のケースに検索結果データを読み込む
 

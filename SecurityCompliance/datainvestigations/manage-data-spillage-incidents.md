@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、Security & コンプライアンスセンターで新しいデータ調査 (プレビュー) ツールを使用してデータ流出インシデントを管理する方法について説明します。
-ms.openlocfilehash: eef273bd1690845be61b6aec5918dcc0870ed6b2
-ms.sourcegitcommit: 09fd88272187f82b6e635af83edabea08c2cc49c
+ms.openlocfilehash: 7aada296566bb5312ab56680485798323d0ab096
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33884765"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150749"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Microsoft 365 でデータ流出インシデントを管理する
 

@@ -3,7 +3,7 @@ title: Office 365 アドバンスト eDiscovery 用に検索結果を準備す�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExportWithZoom
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 詳細な電子情報開示ツールを使用して詳細な分析を行うために、Office 365 のセキュリティ & コンプライアンスセンターでコンテンツ検索の結果を準備する方法について説明します。
-ms.openlocfilehash: 772ef8e24613a0fb872f0c397d7ea80bdad16e4b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 244fae317964261ad1eeadbdca2d4dffeda0a23a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261979"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157469"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Office 365 アドバンスト eDiscovery 用に検索結果を準備する
 
@@ -30,7 +30,7 @@ ms.locfileid: "32261979"
 
     - GIF
     - JPEG
-    - .jpg
+    - .JPG
     - PNG
     - TIFF
     
@@ -82,7 +82,7 @@ ms.locfileid: "32261979"
 ## <a name="step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery"></a>手順 2: 高度な電子情報開示のケースに検索結果データを追加する
 <a name="step2"> </a>
 
-準備が完了したら、次の手順として、advanced ediscovery に進み、高度な電子情報開示のケースに、検索結果データ (Microsoft クラウド内の Azure ストレージ領域にアップロードされています) を読み込みます。 前述したように、advanced ediscovery にアクセスするには、Security & コンプライアンスセンターの電子情報開示管理者であるか、高度な電子情報開示の管理者である必要があります。
+準備が完了したら、次の手順として、advanced ediscovery に進み、高度な電子情報開示のケースに、検索結果データ (Microsoft クラウド内の Azure ストレージ領域にアップロードされています) を読み込みます。 前述したように、Advanced eDiscovery にアクセスするには、Security & コンプライアンスセンターの電子情報開示管理者であるか、高度な電子情報開示の管理者である必要があります。
   
 > [!NOTE]
 > セキュリティ & コンプライアンスセンターのデータが高度な電子情報開示のケースに追加できるようになるまでにかかる時間は、電子情報開示検索の結果のサイズによって異なります。 
@@ -103,16 +103,16 @@ ms.locfileid: "32261979"
     
 4. 高度な電子情報開示のケースに、コンテナーからの検索結果データを読み込むには、コンテナーを選択し、[**処理**] をクリックします。
     
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
-電子情報開示検索の結果をケースに追加した後、次の手順では、高度な電子情報開示ツールを使用してデータを分析し、特定の訴訟に対応しているコンテンツを特定します。 advanced ediscovery の使用方法については、「 [Office 365 advanced ediscovery](office-365-advanced-ediscovery.md)」を参照してください。
+電子情報開示検索の結果をケースに追加した後、次の手順では、高度な電子情報開示ツールを使用してデータを分析し、特定の訴訟に対応しているコンテンツを特定します。 Advanced eDiscovery の使用方法については、「 [Office 365 Advanced ediscovery](office-365-advanced-ediscovery.md)」を参照してください。
   
 ## <a name="more-information"></a>詳細情報
 
-検索結果に含まれる rm で暗号化された電子メールメッセージは、上級電子情報開示で分析するために準備するときに復号化されます。 この暗号化解除機能は、電子情報開示マネージャーの役割グループのメンバーに対して既定で有効になっています。 これは、RMS の解読管理役割がこの役割グループに割り当てられるためです。 電子メールメッセージの暗号化解除については、次の点に注意してください。
+検索結果に含まれる RM で暗号化された電子メールメッセージは、上級電子情報開示で分析するために準備するときに復号化されます。 この暗号化解除機能は、電子情報開示マネージャーの役割グループのメンバーに対して既定で有効になっています。 これは、RMS の解読管理役割がこの役割グループに割り当てられるためです。 電子メールメッセージの暗号化解除については、次の点に注意してください。
   
 - 現時点では、この復号化機能には、SharePoint および OneDrive for business サイトの暗号化されたコンテンツは含まれていません。 RMS で暗号化された電子メールメッセージのみが、エクスポート時に復号化されます。
     
 - RMS で暗号化された電子メールメッセージに、添付ファイル (ドキュメントや別の電子メールメッセージなど) が含まれている場合は、最上位の電子メールメッセージのみが復号化されます。
     
-- 上級電子情報開示で分析のための検索結果を準備するときに、他のユーザーが RMS で暗号化されたメッセージの暗号化を解除できないようにする必要がある場合は、(組み込みの電子情報開示マネージャーの役割グループをコピーして) カスタムの役割グループを作成してから、rms を削除する必要があります。カスタム役割グループの管理役割の暗号化を解除します。 その後、メッセージの暗号化を解除しないユーザーを、カスタム役割グループのメンバーとして追加します。
+- 上級電子情報開示で分析のための検索結果を準備するときに、他のユーザーが RMS で暗号化されたメッセージの暗号化を解除できないようにする必要がある場合は、(組み込みの電子情報開示マネージャーの役割グループをコピーして) カスタムの役割グループを作成してから、RMS を削除する必要があります。カスタム役割グループの管理役割の暗号化を解除します。 その後、メッセージの暗号化を解除しないユーザーを、カスタム役割グループのメンバーとして追加します。

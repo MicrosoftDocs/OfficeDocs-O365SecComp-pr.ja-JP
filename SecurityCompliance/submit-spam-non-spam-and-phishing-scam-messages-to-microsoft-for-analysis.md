@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 04/19/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'ユーザーは、誤検出および誤検知のスパムメッセージを分析のために Microsoft に送信することができます。 '
-ms.openlocfilehash: 75943a923195b522113690d5e176777e47d026d4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8949e3422b62a5bca0b72be8168054d8c1b96a70
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260655"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156459"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する
 
@@ -31,13 +31,13 @@ ms.locfileid: "32260655"
 ## <a name="submit-junk-or-phishing-messages-that-passed-through-the-spam-filters"></a>スパム フィルターを通過した迷惑メールまたはフィッシング詐欺メッセージを送信する
 <a name="sectionSection0"> </a>
 
-スパムフィルターを通過して、迷惑メールまたはフィッシング詐欺メールとして分類されるメッセージを受信した場合は、必要に応じて microsoft スパム分析チームと microsoft のフィッシング分析チームに "偽否定的" メッセージを送信できます。 アナリストはメッセージを確認し、分類基準を満たす場合は、サービス全体のフィルターに追加します。 
+スパムフィルターを通過して、迷惑メールまたはフィッシング詐欺メールとして分類されるメッセージを受信した場合は、必要に応じて Microsoft スパム分析チームと Microsoft のフィッシング分析チームに "偽否定的" メッセージを送信できます。 アナリストはメッセージを確認し、分類基準を満たす場合は、サービス全体のフィルターに追加します。 
   
 組織全体に適用されるスパム設定について詳しくは、「[検出漏れ問題を防ぐために Office 365 スパム フィルターで迷惑メールをブロックする](reduce-spam-email.md)」をご覧ください。 この記事には、誤検知を防止するためのヒントが記載されています。
   
 迷惑メール メッセージを送信するには、次のようにします。
   
-- outlook および web 上の outlook では、Microsoft outlook 用のレポートメッセージアドインを使用します。 このツールをインストールして使用する方法については、「[レポートメッセージアドインを有効](enable-the-report-message-add-in.md)にする」を参照してください。 
+- Outlook および web 上の Outlook では、Microsoft Outlook 用のレポートメッセージアドインを使用します。 このツールをインストールして使用する方法については、「[レポートメッセージアドインを有効](enable-the-report-message-add-in.md)にする」を参照してください。 
         
 - 次の手順で説明するように、電子メールを使用して、迷惑メールまたはフィッシング詐欺として分類されるメッセージを Microsoft に送信することもできます。
     
@@ -70,7 +70,7 @@ Microsoft に迷惑メールまたはフィッシング詐欺メッセージを�
   
 スパムではないメッセージを送信するには、次のようにします。
   
-- コンテンツフィルターを構成するときに **[迷惑メールフォルダーにメッセージを移動**する] アクションを使用する (これが既定の操作である) 場合、ユーザーは、outlook または web 上の outlook (旧称: outlook web App) の迷惑メールフォルダーに誤検知メッセージを解放することができます。. 
+- コンテンツフィルターを構成するときに **[迷惑メールフォルダーにメッセージを移動**する] アクションを使用する (これが既定の操作である) 場合、ユーザーは、outlook または web 上の outlook (旧称: Outlook web App) の迷惑メールフォルダーに誤検知メッセージを解放することができます。. 
     
   - Outlook ユーザーは、**迷惑メール**ではない右クリックメニューオプションを使用して誤検知メッセージを解放できます。 ただし、この記事の手順に示されているように、電子メールでメッセージを Microsoft に送信する必要があります。 
     

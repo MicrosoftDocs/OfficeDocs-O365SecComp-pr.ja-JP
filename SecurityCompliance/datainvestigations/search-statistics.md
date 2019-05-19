@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 986c3f3cbb19cd0f66b18db274e68a3bf8414952
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 99310723ed0c157c45363c45c4cca56200d263a7
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258109"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153599"
 ---
 # <a name="search-statistics"></a>検索の統計
 
@@ -73,7 +73,7 @@ ms.locfileid: "32258109"
 
   [**クエリ**] 列に表示される統計情報に関するその他の事項を次に示します。
   
-  - メールボックス内のすべてのコンテンツ (キーワードを指定せず) を検索すると、実際のクエリは **(size > = 0)** 、すべてのアイテムが返されるようになります。
+  - メールボックス内のすべてのコンテンツ (キーワードを指定せず) を検索すると、実際のクエリは **(Size > = 0)** 、すべてのアイテムが返されるようになります。
   
   - SharePoint および OneDrive サイトを検索すると、次の2つのコンポーネントが検索クエリに追加されます。
     
@@ -83,6 +83,6 @@ ms.locfileid: "32258109"
 
 - **検索の場所**行に表示されているパーツまたは条件に対して検索クエリと一致したアイテムがあるコンテンツの場所の数。 アーカイブメールボックスには、検索条件に一致するアイテムが含まれている場合は、別の場所としてカウントされることに注意してください。
 
-- **items** -行に表示されているパーツまたは条件の検索条件に一致したアイテムの合計数。
+- **Items** -行に表示されているパーツまたは条件の検索条件に一致したアイテムの合計数。
 
 - **Size** -行に表示されるパーツまたは条件の検索条件に一致したアイテムの合計数。

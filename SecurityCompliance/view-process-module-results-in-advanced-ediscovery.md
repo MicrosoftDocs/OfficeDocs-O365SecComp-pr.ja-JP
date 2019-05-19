@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: 'タスクの状態とプロセスの概要を含む、Office 365 のアドバンスト eDiscovery でのプロセスモジュールの実行結果を確認する方法について説明します。  '
-ms.openlocfilehash: 0393cde78e559036d92b9ac48245afafc974a8b2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4bbdbf68f71e3459ff2ddcd8ba3fb33e52f16825
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267188"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157799"
 ---
 # <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Office 365 のプロセスモジュールの結果の表示の詳細電子情報開示
 
@@ -45,7 +45,7 @@ ms.locfileid: "32267188"
     
 - **ファイルコピー**: プロセスファイルをコピーします。 [ファイルの詳細コピー] オプションが選択されている場合でも、このタスクは常に表示されます。
     
-- **テキストの抽出**: ネイティブファイルがある場合、Advanced eDiscovery は dtsearch を使用してこれらのファイルからテキストを抽出します。 これらのファイルの抽出テキストは、テキストファイルとして case フォルダーに格納されます。
+- **テキストの抽出**: ネイティブファイルがある場合、Advanced EDiscovery は dtsearch を使用してこれらのファイルからテキストを抽出します。 これらのファイルの抽出テキストは、テキストファイルとして case フォルダーに格納されます。
     
 - **メタデータの更新**: 読み込まれたメタデータを処理します。 
     
@@ -71,7 +71,7 @@ ms.locfileid: "32267188"
     
 - **姓**: 大文字と小文字のファミリ情報 (存在する場合)。
     
-- **seed**ファイルが追加された場合、ファイルに対して定義された問題ごとにシードファイルの数が表示されます。 
+- **Seed**ファイルが追加された場合、ファイルに対して定義された問題ごとにシードファイルの数が表示されます。 
     
     **シード**ファイルのマーキングが失敗した場合は、それも記録されます。 
     

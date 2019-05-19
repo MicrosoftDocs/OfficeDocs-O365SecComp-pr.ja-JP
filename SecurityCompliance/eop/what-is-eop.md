@@ -5,7 +5,7 @@ author: msfttracyp
 ms.reviewer: andypunt
 manager: laurawi
 ms.date: 2/25/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
@@ -13,13 +13,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
-description: この入門ドキュメントは、Exchange Online Protection (EOP) といくつかの重要な用語を理解するのに役立ちます。 これは、exchange Online のクラウドホスト型メールボックスを保護している、または exchange Server 2016 などの社内メールボックスを保護している EOP スタンドアロンのお客様に対して適用されます。
-ms.openlocfilehash: f23f28b5c15c7057d1fd8ec77cce67bf1746410c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: この入門ドキュメントは、Exchange Online Protection (EOP) といくつかの重要な用語を理解するのに役立ちます。 これは、exchange Online のクラウドホスト型メールボックスを保護している、または exchange Server 2016 などの社内メールボックスを保護している EOP スタンドアロン365のお客様に対して適用されます。
+ms.openlocfilehash: cbd286321301cecc8084040dc7538fce12d84466
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256475"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154476"
 ---
 ## <a name="what-is-exchange-online-protection-eop"></a>Exchange Online Protection (EOP) とは
 
@@ -46,7 +46,7 @@ EOP は迷惑メールのフィルターを試行し、ユーザーが表示し�
 
 **フィッシング:** フィッシングとは、個人情報の盗難や不正行為を防止するために、個人情報を提供することを目的とする特別な種類のスパムです。 通常、この種類のメッセージには、悪意のあるリンクや添付ファイルが含まれますが、常には含まれません。
 
-**スプーフィング:** スプーフィングとは、スパム送信者が from ヘッダーを偽造して、メッセージが実際のソース以外の人物または別の場所から発信されたように見えるようにすることです。 これはスパムでもかまいませんが、フィッシングユーザーに最もよく使用されます。
+**スプーフィング:** スプーフィングとは、スパム送信者が FROM ヘッダーを偽造して、メッセージが実際のソース以外の人物または別の場所から発信されたように見えるようにすることです。 これはスパムでもかまいませんが、フィッシングユーザーに最もよく使用されます。
 
 **偽装:** この種類のスパムは、送信者アドレスを偽造する方法でもありますが、実際のソースのようになるように名前またはドメインの一部を変更することによって行われます。 たとえば、請求書の "l" が実際には11で、Microsoft の "o" が0という数字に置き換えられていると、Bi11@micr0s0ft.com のようになります。
 

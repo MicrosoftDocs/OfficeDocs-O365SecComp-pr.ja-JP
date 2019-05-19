@@ -1,10 +1,10 @@
 ---
-title: AD RMS を使用した Exchange Online メールの暗号化
+title: 'AD RMS による Exchange Online のメールの暗号化 '
 ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/13/2017
-ms.audience: End User
+audience: End User
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 description: 必要に応じて、社内の Active Directory Rights Management サービス (AD RMS) を使用するように Exchange Online IRM を構成し、組織の要件を満たすようにすることができます。 これは一般的ではありません。 AD RMS を使用するための要件がない場合は、代わりに Office メッセージの暗号化を使用します。
-ms.openlocfilehash: 423c6008a55539123b76225458a39c4f98e7725d
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: f5611ca7efeae0ab60ef90ebf4f8a225ea1332e7
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33470387"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154269"
 ---
-# <a name="exchange-online-mail-encryption-with-ad-rms"></a>AD RMS を使用した Exchange Online メールの暗号化
+# <a name="exchange-online-mail-encryption-with-ad-rms"></a>AD RMS による Exchange Online のメールの暗号化 
 
-情報漏洩を防止するために、Exchange Online には、電子メール メッセージおよび添付ファイルをオンラインおよびオフラインで保護する Information Rights Management (IRM) 機能が搭載されています。 必要に応じて、社内の Active Directory Rights Management サービス (AD RMS) を使用するように Exchange Online IRM を構成し、組織の要件を満たすようにすることができます。 これは一般的ではありません。 AD RMS を使用するための要件がない場合は、代わりに[Office メッセージの暗号化](ome.md)を使用します。 
+情報漏洩を防止するために、Exchange Online には、電子メール メッセージおよび添付ファイルをオンラインおよびオフラインで保護する Information Rights Management (IRM) 機能が搭載されています。 必要に応じて、社内の Active Directory Rights Management サービス (AD RMS) を使用するように Exchange Online IRM を構成し、組織の要件を満たすようにすることができます。 これは一般的ではありません。 AD RMS を使用するための要件がない場合は、代わりに[Office 365 メッセージの暗号化](ome.md)を使用します。 
 
 IRM 保護は、ユーザーが Microsoft Outlook や Outlook on the web で適用したり、管理者がトランスポート保護ルールや Outlook の保護ルールを使用して適用したりできます。 IRM を使用すると、管理者とユーザーは、電子メールに含まれている機密性の高いデータのアクセス、転送、印刷、コピーをだれに許可するかを管理できるようになります。
   

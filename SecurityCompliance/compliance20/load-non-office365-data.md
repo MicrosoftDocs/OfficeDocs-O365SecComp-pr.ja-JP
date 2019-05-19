@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 60775002d5ebec83aacbec350a044b9d6ffeb461
-ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
+ms.openlocfilehash: 86d858994f95176ea4d415405c4043f7e7c5308e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33834963"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155009"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>レビュー セットに Office 365 以外のデータを読み込む
 

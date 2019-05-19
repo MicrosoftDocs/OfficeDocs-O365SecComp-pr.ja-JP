@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3aa37a6778947934759eb652a9367559b9ef838b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2d7c3ae16b573af7351abda19edebde7ad7491b8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257285"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150589"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a>適合性モジュールを使用して証拠でデータを分析する
 
@@ -73,7 +73,7 @@ ms.locfileid: "32257285"
     
   - すべてのサンプルに戻って、評価およびトレーニングセットファイルのタグ付けを変更できます。 変更は、次のサンプルを作成するときに適用されます。
     
-  - PDF 形式でスキャンした excel ファイルは、ファイルにタグ付けするときに、ネイティブの excel ファイルと同じように処理されます。
+  - PDF 形式でスキャンした Excel ファイルは、ファイルにタグ付けするときに、ネイティブの Excel ファイルと同じように処理されます。
     
   - ファイルの関連性のタグ付けに関して疑わしい場合は、専門家に相談してください。 関連性トレーニング中に誤ったタグ付けを行うと、プロセスの後期に時間が失われることがあり、結果全体の品質に悪影響を及ぼす可能性があります。
     
