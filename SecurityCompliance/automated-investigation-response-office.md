@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/25/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection の自動化された調査と応答機能について説明します。
-ms.openlocfilehash: 223a28a7f63f101dd5644e433d72a3ddf6e5dc23
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: af567fc7bf532fde5854e3e2ee3785ca69c3c7ed
+ms.sourcegitcommit: b7c17e1079da4e60404d704864ccbc08f8e4dbb8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32249898"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34250320"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Office 365 を使用した自動調査と応答 (AIR)
 
-自動化された調査と対応 (AIR) (近日中に[Office 365 の脅威の調査と応答機能](office-365-ti.md)) を使用すると、現在存在している既知の脅威に対する自動化された調査と修復を実行することができます。 この記事では、AIR の概要と、組織およびセキュリティ運用チームがより効果的かつ効率的に脅威を軽減する方法について説明します。 
+自動化された調査と応答 (AIR) (現在は、多くの[Office 365 脅威の調査および応答機能](office-365-ti.md)の1つとしてのパブリックプレビューで) を実行することで、現在存在している既知の脅威に対する自動化された調査と修復を実行することができます。 この記事では、AIR の概要と、組織およびセキュリティ運用チームがより効果的かつ効率的に脅威を軽減する方法について説明します。 
 
 空気の機能がいつ利用可能になるかの詳細については、 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)を参照してください。
 
@@ -35,9 +35,9 @@ ms.locfileid: "32249898"
 1. 潜在的に悪意のある URL のクリックが検出された
 2. ユーザーがフィッシングとして報告した電子メール *
 3. 配信後に削除されたマルウェアを含む電子メールメッセージ *
-4. 配信後に削除されたフィッシング url を含む電子メールメッセージ *
+4. 配信後に削除されたフィッシング Url を含む電子メールメッセージ *
 
-***注**: これらのアラートには、電子メール通知がオフになっているセキュリティ & コンプライアンスセンター内のそれぞれのアラートポリシーに「情報」の重要度が割り当てられています。 これらは、通知ポリシー構成を使用して有効にすることができます。
+***注**: これらのアラートには、電子メール通知がオフになっているセキュリティ _AMP_ コンプライアンスセンター内のそれぞれのアラートポリシーに「情報」の重要度が割り当てられています。 これらは、通知ポリシー構成を使用して有効にすることができます。
 
 通知を表示するには、セキュリティ & コンプライアンスセンターで**** > 、[通知] [**警告を表示**する] を選択します。 通知を選択して詳細を表示します。そこから、[**調査の表示**] リンクを使用して、対応する[調査](#investigation-graph)に移動します。 情報通知は、既定では通知ビューに表示されないことに注意してください。 それらを表示するには、通知フィルターを変更して情報通知を含める必要があります。
 
@@ -64,7 +64,7 @@ ms.locfileid: "32249898"
 - ユーザーによって報告されるフィッシングメッセージ
 - URL [verdict change] をクリックします。 
 - 配信後のマルウェア検出 (マルウェア ZAP)
-- フィッシングは、配信後の zap (フィッシング zap) を検出しました
+- フィッシングは、配信後の ZAP (フィッシング ZAP) を検出しました
 - 手動による電子メール調査 (脅威エクスプローラーを使用)
 
 フェーズ2では、他のいくつかのプレイブックが計画されています。
@@ -80,7 +80,7 @@ ms.locfileid: "32249898"
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>例: ユーザーによって報告されるフィッシングメッセージは、調査のプレイブックを起動します。
 
-組織内のユーザーが電子メールメッセージを送信して、 [outlook または outlook Web Access 用のレポートメッセージアドイン](enable-the-report-message-add-in.md)を使用して Microsoft に報告すると、レポートはシステムにも送信され、ユーザーがレポートしたビューで Explorer に表示されます。 このユーザーによって報告されたメッセージは、システムベースの情報通知をトリガーします。これにより、調査のプレイブックが自動的に起動します。
+組織内のユーザーが電子メールメッセージを送信して、 [outlook または Outlook Web Access 用のレポートメッセージアドイン](enable-the-report-message-add-in.md)を使用して Microsoft に報告すると、レポートはシステムにも送信され、ユーザーがレポートしたビューで Explorer に表示されます。 このユーザーによって報告されたメッセージは、システムベースの情報通知をトリガーします。これにより、調査のプレイブックが自動的に起動します。
 
 ルート調査フェーズでは、電子メールのさまざまな側面を評価します。 これらには以下が含まれます。
 - 脅威の種類を決定すること。
@@ -96,9 +96,9 @@ ms.locfileid: "32249898"
 次に、いくつかの脅威の調査と探しの手順が実行されます。
 
 - 他の電子メールクラスター内の類似した電子メールメッセージが検索されます。
-- シグナルは、 [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)などの他のプラットフォームと共有されます。
+- シグナルは、 [Windows DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)などの他のプラットフォームと共有されます。
 - 疑わしい電子メールメッセージ内の悪意のあるリンクをすべてのユーザーがクリックしたかどうかについての判断が行われます。
-- チェックは、office 365 Exchange Online Protection ([EOP](eop/exchange-online-protection-eop.md)) および office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) の間で行われ、ユーザーによって報告された他の類似メッセージがあるかどうかを確認します。
+- チェックは、Office 365 Exchange Online Protection ([EOP](eop/exchange-online-protection-eop.md)) および Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) の間で行われ、ユーザーによって報告された他の類似メッセージがあるかどうかを確認します。
 - ユーザーが侵害されていないかどうかを確認するためのチェックが行われます。 このチェックでは、 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)と[Azure Active Directory](https://docs.microsoft.com/azure/active-directory)の間の信号を活用し、関連するユーザーアクティビティの異常を関連付けます。 
 
 お探しの段階では、さまざまなお探しのステップにリスクと脅威が割り当てられます。 
@@ -121,15 +121,15 @@ ms.locfileid: "32249898"
 
 ## <a name="get-started"></a>作業の開始
 
-Office 365 のグローバル管理者、セキュリティ管理者、またはセキュリティリーダとして調査にアクセスするには、security &[https://protection.office.com](https://protection.office.com)コンプライアンスセンター () に移動し、サインインします。 次に、以下のどちらかの操作を行います。
+Office 365 のグローバル管理者、セキュリティ管理者、またはセキュリティリーダとして調査にアクセスするには、Security &[https://protection.office.com](https://protection.office.com)コンプライアンスセンター () に移動し、サインインします。 次に、以下のどちらかの操作を行います。
 
 - 左側のナビゲーションで、[アラート**** > **表示の通知**] に移動し、調査関連の通知の1つを開いてから、通知のポップアップの下部にある [**調査の表示**] リンクをクリックします。 
 
-    or
+    または
 
 - 左側のナビゲーションで、[**脅威管理** > の**調査**] に移動します。
 
-    or
+    または
 
 - 脅威管理ダッシュボード (セキュリティ & コンプライアンスセンターで、[**脅威管理** > ]**ダッシュボード**) にアクセスします。
 
@@ -242,11 +242,11 @@ Office 365 のグローバル管理者、セキュリティ管理者、または
 
 ![AIR 調査のコンピューターページ](media/air-investigationmachinepage.png)
 
-調査の一環として、空気は電子メールの脅威をデバイスに関連付けます。 たとえば、調査では、 [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)に対して悪質なファイルハッシュを渡して調査します。 これにより、ユーザーにとって関連するコンピューターの自動調査が可能になり、クラウドとエンドポイントの両方で脅威に対処できるようになります。 
+調査の一環として、空気は電子メールの脅威をデバイスに関連付けます。 たとえば、調査では、 [Windows DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)に対して悪質なファイルハッシュを渡して調査します。 これにより、ユーザーにとって関連するコンピューターの自動調査が可能になり、クラウドとエンドポイントの両方で脅威に対処できるようになります。 
 
 次の操作を実行できます。
 - 現在のコンピューターと脅威の視覚的な概要を取得します。
-- windows defender atp セキュリティセンターの関連する[windows defender atp 調査](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)に含まれるビューを開くコンピューターを選択します。
+- Windows Defender ATP セキュリティセンターの関連する[Windows DEFENDER atp 調査](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)に含まれるビューを開くコンピューターを選択します。
 
 ### <a name="entity-investigation"></a>エンティティの調査
 
