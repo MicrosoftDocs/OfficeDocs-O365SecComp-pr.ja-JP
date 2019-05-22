@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: フィッシングメッセージがメールボックスに到達しないようにするため、Outlook.com および web 上の Outlook では、送信者が本人であることを確認し、疑わしいメッセージを迷惑メールとしてマークします。
-ms.openlocfilehash: ad94a2953b6fd53612b2fc15038a7157e97f3b39
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 92458a93a4da3e449061e4d2a4ba312d635c42cc
+ms.sourcegitcommit: 7f00f765e8fa674ce1c8c66f5b89b6bea45e13ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157989"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34341625"
 ---
 # <a name="unverified-sender"></a>未確認の送信者
 
@@ -55,26 +55,6 @@ Outlook.com と web 上の Outlook が電子メール認証手法を使用して
 
 認証に失敗したすべてのメッセージが悪意のあるものであるとは限りません。 ただし、送信者を認識しない場合は、認証されないメッセージの操作について注意する必要があります。 または、通常は送信者の画像に '? ' が含まれていない送信者を認識したが、突然表示を開始した場合は、送信者がスプーフィングされているという署名になることがあります。
 
-### <a name="the-senders-address-is-different-than-what-appears-in-the-from-address"></a>送信者のアドレスが差出人アドレスに表示されているものと異なる
-
-多くの場合、メッセージに表示される電子メールアドレスは、差出人アドレスに表示されているものとは異なります。 場合によっては、送信者が実際のユーザーではない人物であることを phishers してみることをお勧めします。
-
-Outlook.com と、web 上の Outlook で、送信者の実際のアドレスと差出人のアドレスのアドレスが異なることを検出すると、[経由] タグを使用して実際の送信者が表示されます。これには下線が付きます。
-
-![未確認の送信者代替テキスト](media/unverified-sender-feature1.png)
-
-この例では、送信側`suspicious.com`ドメインは認証されますが`unknown@contoso.com` 、送信者は差出人アドレスに入力します。
-
-Via タグを持つすべてのメッセージが疑わしいとは限りません。 ただし、via タグが付いているメッセージを認識しない場合は、それとの対話に注意する必要があります。
-
-Outlook.com と新しい Outlook on the web では、メッセージを開く必要なしに、メッセージ一覧の送信者の名前またはアドレスの上にカーソルを置くと、その電子メールアドレスを確認できます。
-
-![OneDrive の使用を開始する](media/get-started-with-onedrive-message.png)
-
-新しい Outlook on the web を使用しているかどうかを確認するには、どうすればよいですか。 次の例を参照してください。
-
-![Outlook vs Office 365](media/outlook-vs-outlook365.png)
-
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>Outlook.com と web 上の Outlook で、'? ' および ' via ' プロパティを追加するために使用する条件とは何ですか。
@@ -83,11 +63,7 @@ Outlook.com と新しい Outlook on the web では、メッセージを開く必
 
 Via タグの場合: From アドレスのドメインが DKIM シグネチャまたは SMTP メールのドメインと異なる場合、Outlook.com は、この2つのフィールドのいずれかにドメインを表示します (DKIM シグネチャを優先します)。
 
-### <a name="can-i-override-these-properties-with-ip-allows-exchange-transport-rule-allows-or-safe-senders"></a>これらのプロパティを IP で使用できる、Exchange トランスポートルールの許可、または安全な送信者に上書きすることはできますか。
-
-これらのプロパティを無効にすることはできません。
-
-### <a name="how-do-i-remove-these-properties"></a>これらのプロパティを削除するにはどうすればよいですか?
+### <a name="how-do-i-remove-the-"></a>'? ' を削除する方法
 
 送信者の画像の '? ' の場合は、送信者として、SPF または DKIM のいずれかを使用してメッセージを認証する必要があります。
 
