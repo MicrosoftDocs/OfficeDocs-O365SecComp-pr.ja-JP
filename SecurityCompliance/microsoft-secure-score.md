@@ -9,15 +9,18 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 ms.topic: article
-search.appverid: met150
-ms.openlocfilehash: fa76e2edd3f66595a47fb511881f15c07b441c77
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+search.appverid:
+- MOE150
+- MET150
+ms.openlocfilehash: 1c47ec8e75fb712900fd1e459b7cfd73bb071ac4
+ms.sourcegitcommit: 1021ab534b3bc3c8684e42f67d11711f6765567e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252316"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34334545"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
@@ -39,7 +42,7 @@ Microsoft セキュア スコアは、強力な可視化、他の Microsoft 製�
 
 ## <a name="rich-experiences--additional-security-recommendations"></a>豊富なエクスペリエンス & その他のセキュリティに関する推奨事項
 
-Microsoft のセキュリティで保護されたスコアでは、azure の AD、Intune、および Cloud App Security から推奨事項が追加されており、azure セキュリティセンターと Windows Defender ATP の推奨事項が近日中に提供されています。 また、Office 365 のセキュリティに関する推奨事項をさらに追加しました。 より広範な Microsoft 製品およびサービスのセットについて、さらに洞察を得られるようになるため、組織のセキュリティの状態についての管理者による報告を自信を持って考えることができます。 [Microsoft Graph API](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta)を使用してスコアを取得することもできます。
+Microsoft のセキュリティで保護されたスコアでは、azure の AD、Intune、および Cloud App Security から推奨事項が追加されており、Azure セキュリティセンターと Windows Defender ATP の推奨事項が近日中に提供されています。 また、Office 365 のセキュリティに関する推奨事項をさらに追加しました。 より広範な Microsoft 製品およびサービスのセットについて、さらに洞察を得られるようになるため、組織のセキュリティの状態についての管理者による報告を自信を持って考えることができます。 [Microsoft GRAPH API](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta)を使用してスコアを取得することもできます。
 
 より迅速に必要な情報を提供するために、Microsoft の推奨事項がグループに分類されています。
 
@@ -80,10 +83,14 @@ Microsoft のセキュリティで保護されたスコアでは、azure の AD�
 
 スコアは1日に1回 (約 1:00 AM PST) 計算されます。 測定されたアクションに変更を加えると、スコアは翌日を自動的に更新します。 また、他のいくつかのポータルは Microsoft のセキュリティで保護されたスコア (Windows Defender セキュリティセンターなど) の一部を示していることにも注意する必要があります。 改善アクションを完了し、これらのポータルでスコアが増加した場合は、更新されたスコアが Microsoft 365 セキュリティセンターに表示されるまでに最大24時間かかる場合があります。  
 
+## <a name="how-controls-are-scored"></a>コントロールのスコア
+
+コントロールは、2つの方法でスコアすることができます。 いくつかのスコアはバイナリ形式で評価されます。推奨事項に基づいて機能または設定を構成している場合は、スコアの 100% を取得できます。 その他のスコアは、全体の構成に対する割合として計算されます。 たとえば、改善のための推奨事項が30ポイントの場合は、すべてのユーザーを MFA で保護している場合、保護されたユーザーの合計数が100の場合は、2ポイント (5 つの保護/100 合計 * 30 最大 pts = 2 pts パーシャルスコア) の部分的なスコアが与えられます。. 
+
 ## <a name="risk-awareness"></a>リスクの認識
 
 Microsoft Secure Score は、システム構成、ユーザーの行動、およびその他のセキュリティ関連の測定値に基づいて、セキュリティの状況を示す数値の概要です。システムまたはデータが侵害される可能性の絶対的な測定値ではありません。 そうではなく、侵害されるリスクを相殺できるように、Microsoft 環境にセキュリティコントロールを採用している範囲を表しています。 セキュリティ侵害から完全に保護されていないオンラインサービスはないため、セキュリティ違反に対する保証として、どのような方法でも安全スコアを解釈しないようにする必要があります。
 
 ## <a name="we-want-to-hear-from-you"></a>ご意見をお聞かせください
 
-問題がある場合は、「 [Security, Privacy & コンプライアンス](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy)コミュニティ」に投稿してお知らせください。 コミュニティを監視しており、ヘルプを提供しています。
+問題がある場合は、「 [Security, Privacy _AMP_ コンプライアンス](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy)コミュニティ」に投稿してお知らせください。 コミュニティを監視しており、ヘルプを提供しています。
