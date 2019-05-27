@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Office 365 の脅威調査および応答機能を使用して、組織が侵入や脅威を検出し、脅威から迅速に脅威を軽減および回復する方法について説明します。
-ms.openlocfilehash: 51d776fe2ed5957016028451c1f7dcd1812973c3
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 6cd1a2add3300dad6d869de82d1a1616298fc635
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077263"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408282"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Office 365 のユーザーに Office 365 の脅威の調査と応答機能を安全に保つ
 
@@ -37,7 +37,7 @@ Office [365 の脅威の調査と応答](office-365-ti.md)は、office の 365 E
   
 ## <a name="detect-intrusions-and-threats"></a>侵入と脅威を検出する
 
-[エクスプローラー](use-explorer-in-security-and-compliance.md)(脅威エクスプローラーとも呼ばれます) は、セキュリティ管理者とアナリストが、安全なように見える一見したユーザー構成によって、最も複雑なセキュリティ設定を回避できるため、企業内でアクティブになっている脅威を特定して理解するのに役立つ。送信者のホワイトリスト。 エクスプローラーは、ユーザーがマルウェアやフィッシングなどの脅威によって侵害されたかどうかを、Office 365 グローバルまたはセキュリティ管理者が迅速に判断するのに役に立ちます。 これにより、脅威や必要な応答に対して最も危険度の高いユーザーに優先順位を付けることができます。 
+[脅威エクスプローラー (またはリアルタイムの検出)](threat-explorer.md)(脅威エクスプローラーとも呼ばれます) は、セキュリティ管理者とアナリストが、安全なように見える一見したユーザー構成によって、最も複雑なセキュリティ設定を回避できるため、企業内でアクティブになっている脅威を特定して理解するのに役立つ。送信者のホワイトリスト。 エクスプローラーは、ユーザーがマルウェアやフィッシングなどの脅威によって侵害されたかどうかを、Office 365 グローバルまたはセキュリティ管理者が迅速に判断するのに役に立ちます。 これにより、脅威や必要な応答に対して最も危険度の高いユーザーに優先順位を付けることができます。 
   
 エクスプローラーを使用すると、管理者はユーザーとメールの間の関係を移動することもできます。 特定のメールが正しくないことがわかりますか。 これを検索して、どのユーザーがメールを受信したかを確認してから、一連のイベントを実行し、それらのユーザーが実行したことを確認します。
 

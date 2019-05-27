@@ -15,12 +15,12 @@ ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection を SharePoint Online、OneDrive for Business、Microsoft Teams のファイルに拡張して、組織にとってより安全なコラボレーションを可能にします。
-ms.openlocfilehash: 9a1c4d3f7eca335b1668f8fc0947387cc9d496f3
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: a73f978ca40571e33864061cfe9538033579b3c7
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077613"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408262"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP for SharePoint、OneDrive、Microsoft Teams
 
@@ -50,7 +50,7 @@ Office 365 の構成方法によっては、ブロックされたファイルを
 
 - SharePoint サイトが[モダンな環境](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience)を使用するように構成されていることを確認します。 ファイルが悪意のあるものとして認識され、ブロックされると、これがモダンな機能で発生していることがわかりますが、クラシックビューでは表示されません。 ATP 保護は、モダンな表示とクラシック表示のどちらを使用するかに適用されます。ただし、ファイルがブロックされているという視覚インジケーターは、モダンな環境でのみ表示されます。
     
-- SharePoint Online、OneDrive for Business、または Microsoft Teams で悪意のあるファイルが表示されるのは、 [office 365 Advanced Threat protection](view-reports-for-atp.md)および脅威エクスプローラー ( [Office 365 Advanced threat protection プラン 2](office-365-ti.md)の一部) です。).
+- SharePoint Online、OneDrive for Business、または Microsoft Teams で悪意のあるものとして識別されたファイルは、 [Office 365 Advanced Threat Protection](view-reports-for-atp.md)および[Explorer (およびリアルタイム検出)](threat-explorer.md)のレポートで表示されます。
     
 - ATP は、組織の全体的な脅威保護戦略の一部であり、スパム対策とマルウェア対策の保護、および安全なリンクと安全な添付ファイルが含まれます。 詳細については、「 [Office 365 の脅威から保護](protect-against-threats.md)する」を参照してください。
     
@@ -70,7 +70,7 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
     
 - **ファイルをダウンロード**すると、誤検知のためにファイルをダウンロードして分析することができます。 
     
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 1. [SharePoint、OneDrive、Microsoft Teams の Office 365 ATP を有効にする](turn-on-atp-for-spo-odb-and-teams.md)
     

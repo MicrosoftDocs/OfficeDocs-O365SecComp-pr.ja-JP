@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: ゼロ時間自動削除 (ZAP) は、ユーザーの受信トレイに既に配信されているスパムまたはマルウェアを含むメッセージを検出し、その悪意のあるコンテンツを無害にする電子メール保護機能です。 これは、検出された悪意のあるコンテンツの種類によってどのような違いがありますか。
-ms.openlocfilehash: 80a6631079a68fd2a7fa3ac6d256e1e36556e642
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e6faef4c123ea2db38a27b49ff0ee49b237ec75c
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155959"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408352"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>ゼロアワー自動消去 - スパムまたはマルウェアからの保護
 
@@ -64,7 +64,7 @@ ZAP アクションは、メールボックスユーザーにとってシーム�
 
 ## <a name="to-see-if-zap-moved-your-message"></a>ZAP がメッセージを移動したかどうかを確認するには
 
-ZAP がメッセージを移動したかどうかを確認するには、[脅威保護状態レポート](view-email-security-reports.md#threat-protection-status-report)(または[脅威エクスプローラー](use-explorer-in-security-and-compliance.md)) を使用できます。
+ZAP がメッセージを移動したかどうかを確認するには、[脅威保護状態レポート](view-email-security-reports.md#threat-protection-status-report)または[脅威エクスプローラー (およびリアルタイム検出)](threat-explorer.md)のいずれかを使用できます。
 
 ## <a name="to-disable-zap"></a>ZAP を無効にするには
   

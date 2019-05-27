@@ -15,40 +15,37 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 脅威の調査と応答機能を使用して、悪意のある電子メールを検索して調査する方法について説明します。
-ms.openlocfilehash: 6eec99f5b2872a63efab619e9814ab0fa625ca49
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 7e2cef742339e54c094cfb0c3b32fbf596896a3d
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077273"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408302"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>配信された悪意のある電子メールを検索して調査する (Office 365 Advanced Threat Protection プラン 2)
 
-[Office 365 Advanced Threat Protection プラン 2](office-365-ti.md)を使用すると、ユーザーが危険にさらされ、組織を保護するアクションを実行するアクティビティを調査できます。 たとえば、組織のセキュリティチームに属している場合は、ユーザーに配信された不審な電子メールメッセージを見つけて調査することができます。 これは、[脅威エクスプローラー](get-started-with-ti.md#threat-explorer)を使用して行うことができます。
-  
-> [!IMPORTANT]
-> Office 365 脅威インテリジェンスは Office 365 Advanced Threat Protection プラン2に加えて、追加の脅威保護機能と共に提供されるようになりました。 詳細については、「 [office 365 Advanced Threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [Office 365 Advanced threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
+[Office 365 Advanced Threat Protection](office-365-atp.md)を使用すると、ユーザーが危険にさらされ、組織を保護するアクションを実行するアクティビティを調査できます。 たとえば、組織のセキュリティチームに属している場合は、ユーザーに配信された不審な電子メールメッセージを見つけて調査することができます。 これを行うには、[脅威エクスプローラー (またはリアルタイムの検出)](threat-explorer.md)を使用します。
   
 ## <a name="before-you-begin"></a>開始する前に
 
 次の要件が満たされていることを確認してください。
   
-- 組織では、 [office 365 Advanced Threat Protection プラン 2](office-365-ti.md)を使用しており、 [office 365 for business のユーザーにライセンスを割り当て](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)ます。
+- 組織に[Office 365 Advanced Threat Protection](office-365-atp.md) (プラン1またはプラン 2) があり、[ライセンスがユーザーに割り当てら](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users)れている。
     
 - [Office 365 監査ログ](turn-audit-log-search-on-or-off.md)は、組織に対して有効になっています。 
     
-- 組織には、スパム対策、マルウェア対策、フィッシング対策などに対して定義されたポリシーがあります。 「 [Office 365 Advanced Threat Protection](office-365-atp.md)」を参照してください。
+- 組織には、スパム対策、マルウェア対策、フィッシング対策などに対して定義されたポリシーがあります。 「 [Office 365 の脅威から保護](protect-against-threats.md)する」を参照してください。
     
 - Office 365 の全体管理者であるか、セキュリティ管理者、またはセキュリティ&amp;コンプライアンスセンターで割り当てられている検索および削除の役割を持っているかどうか。 「 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可」を](permissions-in-the-security-and-compliance-center.md)参照してください。
     
 ## <a name="dealing-with-suspicious-emails"></a>疑わしいメールの処理
 
-悪意のある攻撃者は、ユーザーにメールを送信して、自分の資格情報をフィッシングし、会社の機密情報にアクセスできるようにすることができます。 これを防止するには、Office 365 で提供されている脅威保護サービス (Exchange Online Protection や Advanced Threat Protection など) を使用する必要があります。 ただし、攻撃者が URL を含むユーザーにメールを送信し、その URL を後で悪意のあるコンテンツ (マルウェアなど) に対して使用する場合があります。 または、組織内のユーザーが侵害され、そのユーザーが侵害されたときに、そのアカウントを使用して社内の他のユーザーに電子メールを送信したことがあります。 これらのシナリオの両方をクリーンアップする際に、ユーザーの受信トレイから電子メールメッセージを削除することが必要な場合があります。 このような状況では、脅威エクスプローラーを活用して、これらの電子メールメッセージを見つけて削除することができます。
+悪意のある攻撃者は、ユーザーにメールを送信して、自分の資格情報をフィッシングし、会社の機密情報にアクセスできるようにすることができます。 これを防止するには、Office 365 で提供されている脅威保護サービス ( [Exchange Online protection](eop/exchange-online-protection-overview.md)や[Advanced threat protection](office-365-atp.md)など) を使用する必要があります。 ただし、攻撃者が URL を含むユーザーにメールを送信し、その URL を後で悪意のあるコンテンツ (マルウェアなど) に対して使用する場合があります。 または、組織内のユーザーが侵害され、そのユーザーが侵害されたときに、そのアカウントを使用して社内の他のユーザーに電子メールを送信したことがあります。 これらのシナリオの両方をクリーンアップする際に、ユーザーの受信トレイから電子メールメッセージを削除することが必要な場合があります。 このような状況では、[脅威エクスプローラー (またはリアルタイムの検出)](threat-explorer.md)を活用して、それらの電子メールメッセージを見つけて削除することができます。
   
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>配信された疑わしいメールを見つけて削除する
 
 > [!TIP]
-> [脅威エクスプローラー](get-started-with-ti.md#threat-explorer)(エクスプローラーとも呼ばれます) は、メッセージの検索と削除、悪意のある電子メールの送信者の IP アドレスの識別、さらなる調査のためのインシデントの開始など、複数の目的に使用できる強力なレポートです。 次の手順では、エクスプローラーを使用して受信者のメールボックスから悪意のある電子メールを検索し、削除する方法を説明します。 
+> 脅威エクスプローラー (エクスプローラーとも呼ばれます) は、メッセージの検索と削除、悪意のある電子メールの送信者の IP アドレスの識別、さらなる調査のためのインシデントの開始など、複数の目的で利用できる強力なレポートです。 次の手順では、エクスプローラーを使用して受信者のメールボックスから悪意のある電子メールを検索し、削除する方法を説明します。 
   
 1. に[https://protection.office.com](https://protection.office.com)移動して、Office 365 の職場または学校のアカウントを使用してサインインします。 これにより、セキュリティ&amp;コンプライアンスセンターに移動します。 
     

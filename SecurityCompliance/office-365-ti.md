@@ -1,10 +1,10 @@
 ---
-title: Office 365 の脅威の調査と対応
+title: Office 365 脅威の調査および対応
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/18/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,44 +14,44 @@ search.appverid:
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
-description: office 365 Advanced threat Protection の脅威インテリジェンス機能が、組織に対する脅威を調査し、マルウェア、フィッシング、および office 365 がユーザーに代わって検出したその他の攻撃に対応し、脅威を検索する方法について説明します。切り替える.
-ms.openlocfilehash: 6f7e6e0a49bb4035458af2e9d7e45fd954a1f9fc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Office 365 Advanced Threat Protection の脅威インテリジェンス機能が、組織に対する脅威を調査し、マルウェア、フィッシング、および Office 365 がユーザーに代わって検出したその他の攻撃に対応し、脅威を検索する方法について説明します。切り替える.
+ms.openlocfilehash: 3a1ccc3d3e37b9b1433e8e339709d09ba56970b0
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265399"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408362"
 ---
-# <a name="office-365-threat-investigation-and-response"></a>Office 365 の脅威の調査と対応
+# <a name="office-365-threat-investigation-and-response"></a>Office 365 脅威の調査および対応
 
 Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-365-atp.md)は、セキュリティアナリストおよび管理者が組織の office 365 ユーザーを保護するのに役立ちます。
   
 1. 攻撃を特定し、監視し、理解するための簡単な方法
     
-2. Exchange online、SharePoint Online、OneDrive for business、および Microsoft Teams での脅威への迅速な対応
+2. Exchange Online、SharePoint Online、OneDrive for Business、および Microsoft Teams での脅威への迅速な対応
     
 3. 組織に対する攻撃を防止するために、洞察と知識を提供する
 
 4. メールベースの重要な脅威に対する自動調査と応答
     
 > [!IMPORTANT]
-> **office 365 advanced threat protection and threat の調査と応答 (旧称 office 365 Threat 知能) は、office 365 Advanced threat protection プラン 2**と、に含まれている追加の脅威保護機能とともに提供されています。[microsoft 365 enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)、 [microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)、office 365 Enterprise E5、office 365 エデュケーション A5 などの特定のサブスクリプション。Office 365 atp を含まないサブスクリプションが組織にある場合は、atp をアドオンとして購入する可能性があります。 詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)」を参照してください。 
+> **Office 365 Advanced Threat protection And threat の調査と応答 (旧称 office 365 Threat 知能) は、office 365 Advanced Threat Protection プラン 2**と、に含まれている追加の脅威保護機能とともに提供されています。[microsoft 365 enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)、 [microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)、office 365 Enterprise E5、office 365 エデュケーション A5 などの特定のサブスクリプション。Office 365 ATP を含まないサブスクリプションが組織にある場合は、ATP をアドオンとして購入する可能性があります。 詳細については、「 [office 365 Advanced Threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [Office 365 Advanced threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)」を参照してください。 
   
 ## <a name="whats-changing"></a>変更点
 
-以前は、office 365 脅威インテリジェンスは office 365 Enterprise E5 などのサブスクリプションに含まれていました。 これは、脅威の調査と応答機能が office 365 Advanced threat Protection プラン 2 (およびこれは office 365 Enterprise E5 に含まれています) の一部であるためです。 
+以前は、office 365 脅威インテリジェンスは Office 365 Enterprise E5 などのサブスクリプションに含まれていました。 これは、脅威の調査と応答機能が Office 365 Advanced Threat Protection プラン 2 (およびこれは Office 365 Enterprise E5 に含まれています) の一部であるためです。 
 
-さらに、office 365 の脅威インテリジェンスは、一般法人向け office 365 のアドオンとして購入できるようになりました。 これらの機能は、office 365 advanced threat protection プラン 2 (および office 365 advanced threat protection プラン 1) に含まれています。 詳細については、「 [Office 365 Advanced Threat Protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」を参照してください。
+さらに、Office 365 の脅威インテリジェンスは、一般法人向け Office 365 のアドオンとして購入できるようになりました。 これらの機能は、office 365 Advanced Threat Protection プラン 2 (および Office 365 Advanced Threat Protection プラン 1) に含まれています。 詳細については、「 [Office 365 Advanced Threat Protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」を参照してください。
 
 これには次のような意味があります。
 
-- **組織に Office 365 Enterprise E5 が既**にインストールされている場合は、既に Advanced threat Protection プラン2があり、これには脅威調査および応答機能が含まれます。
+- **組織に Office 365 Enterprise E5 が既**にインストールされている場合は、既に Advanced Threat Protection プラン2があり、これには脅威調査および応答機能が含まれます。
 
-- **以前に組織で office 365 脅威インテリジェンス (office 365 Advanced threat protection ではない)** が他の office 365 サブスクリプションへのアドオンとして使用されていた場合、office 365 advanced threat protection プラン2が使用されるようになります。これには次のものが含まれます。脅威の調査と応答の機能。 
+- **以前に組織で office 365 脅威インテリジェンス (office 365 Advanced Threat protection ではない)** が他の office 365 サブスクリプションへのアドオンとして使用されていた場合、Office 365 Advanced Threat protection プラン2が使用されるようになります。これには次のものが含まれます。脅威の調査と応答の機能。 
 
-- **以前に組織で office 365 advanced threat protection (office 365 の脅威インテリジェンスは使用しない)** が他の office 365 サブスクリプションへのアドオンとしてインストールされていた場合は、office 365 advanced threat protection プラン1をご利用になることになります。 これには、Office 365 Advanced threat Protection プラン1が含まれます (ただし、脅威の調査および応答機能は含まれません)。
+- **以前に組織で office 365 Advanced Threat protection (office 365 の脅威インテリジェンスは使用しない)** が他の office 365 サブスクリプションへのアドオンとしてインストールされていた場合は、Office 365 Advanced Threat protection プラン1をご利用になることになります。 これには、Office 365 Advanced Threat Protection プラン1が含まれます (ただし、脅威の調査および応答機能は含まれません)。
 
-詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)」を参照してください。
+詳細については、「 [office 365 Advanced Threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [Office 365 Advanced threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)」を参照してください。
 
 ## <a name="get-started-with-threat-investigation-and-response-capabilities"></a>脅威の調査と応答機能の概要
 
@@ -61,17 +61,17 @@ Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-
     
 - [脅威のトラッカーについて-新知識と注目](threat-trackers.md)
 
-- [Office 365 の脅威インテリジェンスによる自動化された調査と応答 (AIR)](automated-investigation-response-office.md)
+- [自動化された調査と応答 (AIR) 機能を使用して時間と労力を節約する](automated-investigation-response-office.md)
 
-- [セキュリティ&amp; /コンプライアンスセンターで脅威エクスプローラーを使用する](use-explorer-in-security-and-compliance.md)
+- [脅威エクスプローラー (またはリアルタイムの検出) を使用して、電子メールやファイル内の悪意のあるコンテンツを特定し、調査する](threat-explorer.md)
     
 - [配信された悪意のあるメールの検索と調査](investigate-malicious-email-that-was-delivered.md)
     
-- [アタックシミュレータを使用する](attack-simulator.md)
+- [アタックシミュレータを使用して攻撃をシミュレートし、ユーザーの意識を向上させる](attack-simulator.md)
     
-- [脅威の調査と応答を Windows Defender Advanced threat Protection と統合する](integrate-office-365-ti-with-wdatp.md)
+- [Windows Defender Advanced Threat Protection を使用して脅威調査および応答機能を統合する](integrate-office-365-ti-with-wdatp.md)
     
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [脅威エクスプローラーのビュー](threat-explorer-views.md)
 

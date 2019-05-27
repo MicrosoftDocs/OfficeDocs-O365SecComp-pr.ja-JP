@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/4/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
 ms.collection:
 - M365-security-compliance
 description: データ損失防止の例を使用して、セキュリティ&amp; /コンプライアンスセンターの詳細なレポートに移動する方法を参照してください。
-ms.openlocfilehash: 101aeec71e724204018dee8d12d6c74a120578bf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f87902551aa75e761cb297e127a14aab047d748e
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255400"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408292"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>ウォークスルー - インサイトから詳細レポートへの移動
 
@@ -38,11 +38,11 @@ ms.locfileid: "32255400"
   
 3. リスト内のアイテムを選択すると、そのアイテムの詳細を表示できるウィンドウが開きます。 (アイテムをクリックします。)<br/>![選択された洞察の詳細](media/dcbb389f-23b0-4031-b789-4a49068af85a.png)<br/>ポリシーの確認など、考慮すべき推奨アクションが表示されます。 ([データ損失防止ポリシーの詳細をご](data-loss-prevention-policies.md)確認ください)。
     
-4. 詳細を表示するためのリンクも用意されています。 ( **「エクスプローラーで関連するアクティビティ」** をクリック)<br/>これにより、microsoft は[エクスプローラー](use-explorer-in-security-and-compliance.md) (脅威エクスプローラーとも呼ばれます) と呼ばれるレポートの種類に移動し、フィルターを適用して特定の詳細を掘り下げます。<br/>![選択した洞察の詳細が表示されたエクスプローラー](media/3ad15b15-7158-44b7-beda-013351bd868e.png)
+4. 詳細を表示するためのリンクも用意されています。 ( **「エクスプローラーで関連するアクティビティ」** をクリック)<br/>これにより、[[脅威エクスプローラー] (およびリアルタイム検出)](threat-explorer.md)と呼ばれるレポートの種類になります。ここでは、フィルターを適用し、特定の詳細を掘り下げて表示できます。<br/>![選択した洞察の詳細が表示されたエクスプローラー](media/3ad15b15-7158-44b7-beda-013351bd868e.png)
   
 このようにして、洞察から基になる詳細まで簡単に移動したり、組織のデータ損失防止に関するより多くの情報を決定したりできます。
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [チュートリアル: 詳細レポートから洞察を得る](from-a-detailed-report-to-an-insight.md)
   

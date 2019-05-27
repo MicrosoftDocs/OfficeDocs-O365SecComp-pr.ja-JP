@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Office 365 の一部としての包括的な保護を備えたフィッシング対策保護 (office 365 の高度な脅威保護と基本的な保護機能) Exchange Online Protection では、悪意のある偽造ベースのフィッシング攻撃から組織を保護するのに役立ちます。その他のフィッシング攻撃。
-ms.openlocfilehash: cabcc4ab6401f2ebfdbf0c849df4da6a7691b6b8
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: ebe1d4322151c1828f662ca0bf1bd495e808093d
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077213"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408372"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Office 365 の ATP フィッシング対策とフィッシング対策ポリシーをセットアップする
 
@@ -138,12 +138,12 @@ Contoso 社のセキュリティ管理者は、これらの要件を満たすフ
 
 5. 表示されるページで、[**ポリシーの削除**] を選択します。 変更がすべての Office 365 データセンターに蔓延するまで最大30分かかります。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 フィッシング対策ポリシーを設定すると、レポートを表示して、組織の脅威保護機能がどのように機能しているかを確認できます。 詳細については、以下のリソースを参照してください。
 
-- [Office 365 Advanced Threat Protection のレポートを表示する](view-reports-for-atp.md)、または[電子メールのセキュリティレポートを表示](view-email-security-reports.md)する
+- [Office 365 のレポートを表示する](view-reports-for-atp.md)か、[電子メールのセキュリティレポート](view-email-security-reports.md)を表示する
 
-- [エクスプローラー (脅威エクスプローラーとも呼ばれます) を使用する](use-explorer-in-security-and-compliance.md)
+- [脅威エクスプローラー (またはリアルタイムの検出) を使用する](threat-explorer.md)
 
 ATP に関する新機能を常に活用してください。 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)にアクセスし、 [ATP に追加](office-365-atp.md#new-features-in-office-365-atp)されている新機能について説明します。

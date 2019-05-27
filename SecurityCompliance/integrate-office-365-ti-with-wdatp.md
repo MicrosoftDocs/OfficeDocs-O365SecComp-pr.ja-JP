@@ -15,12 +15,12 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: Windows Defender Advanced threat protection を使用して Office 365 Advanced Threat Protection を統合し、より詳細な脅威管理情報を表示します。
-ms.openlocfilehash: f6ea4309d3eb7a4ccd4987d221398d0f15994388
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 8fbbc8beeeba6cfee0e87ee44f99819094d5569e
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077253"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408272"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-windows-defender-advanced-threat-protection"></a>Windows Defender Advanced Threat Protection を使用して Office 365 Advanced Threat Protection を統合する
 
@@ -38,7 +38,7 @@ ms.locfileid: "34077253"
     
 - Office 365 グローバル管理者であるか、セキュリティ管理者の役割 (セキュリティ管理者など) が[ &amp;セキュリティコンプライアンスセンター](https://protection.office.com)で割り当てられている必要があります。 ( [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可を](permissions-in-the-security-and-compliance-center.md)参照してください)
     
-- Security & コンプライアンスセンターおよび Windows Defender Advanced Threat Protection ポータルで、Office 365 の脅威エクスプローラーの両方にアクセスできる必要があります。
+- セキュリティ & コンプライアンスセンターと Windows Defender Advanced Threat Protection ポータルの両方の[エクスプローラー (またはリアルタイム検出)](threat-explorer.md)にアクセスできる必要があります。
     
 ## <a name="to-integrate-office-365-advanced-threat-protection-with-windows-defender-atp"></a>Office 365 Advanced Threat Protection を Windows Defender ATP と統合するには
 

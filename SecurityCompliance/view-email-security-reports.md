@@ -3,8 +3,8 @@ title: セキュリティ&amp; /コンプライアンスセンターで電子メ
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/13/2019
-ms.audience: ITPro
+ms.date: 05/21/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: Office 365 Enterprise を使用して組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ&amp;コンプライアンスセンターで利用できます。
-ms.openlocfilehash: 4271f26c0d8a0a9a5bd4085e38daaabcc375512c
-ms.sourcegitcommit: 7ad5618db6004757599d8b7c153fdb6ab3ba3f6e
+description: 組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ&amp;コンプライアンスセンターで利用できます。
+ms.openlocfilehash: 1dc009260e80c2aca1c5107d1c5f116ec63dd94f
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970258"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408412"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する
 
@@ -65,7 +65,7 @@ ms.locfileid: "33970258"
 
 ## <a name="threat-protection-status-report"></a>脅威保護の状態レポート
 
-**脅威保護の状態**レポートは、Exchange Online Protection によって検出およびブロックされた悪意のある電子メールを示すスマートレポートです。 このレポートには、マルウェアまたはフィッシングの試行として識別された電子メールに関する情報が表示されます。 
+**脅威保護の状態**レポートは、Exchange Online Protection によって検出およびブロックされた悪意のある電子メールを示すスマートレポートです。 このレポートは、マルウェアまたはフィッシング詐欺として特定された電子メールを時間の経過とともに (最大90日間) 表示し、セキュリティ管理者が傾向を特定したり、ポリシーが調整を必要とするかどうかを判断したりするのに役立ちます。
 
 > [!NOTE]
 > 脅威保護の状態レポートは、 [Office 365 ATP](office-365-atp.md)または[Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP) のいずれかを使用しているお客様が利用できます。ただし、ATP のお客様の脅威保護状態レポートに表示される情報には、EOP のお客様に表示されるものとは異なるデータが含まれている可能性があります。 たとえば、EOP のお客様は、電子メールで検出されたマルウェアに関する情報を表示できますが、 [SharePoint Online、OneDrive、Microsoft Teams で検出された悪意のあるファイル](atp-for-spo-odb-and-teams.md)に関する情報は、ATP 固有の機能です。 ([ATP レポートの詳細について](view-reports-for-atp.md)は、を参照してください)。
@@ -74,7 +74,9 @@ ms.locfileid: "33970258"
   
 ![脅威保護の状態レポート](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
-脅威保護の状態レポートを初めて開いたとき、既定では過去7日間のデータがレポートに表示されます。ただし、[**フィルター** ] をクリックして、最大90日間の日付範囲を変更することができます。 このレポートは、組織の[Exchange Online Protection 機能](eop/eop-features.md)の有効性と影響、および長期的な傾向を確認するのに役立ちます。 
+脅威保護の状態レポートを初めて開いたとき、既定では過去7日間のデータがレポートに表示されます。ただし、[**フィルター** ] をクリックして、最大90日間の日付範囲を変更することができます。 (試用版サブスクリプションを使用している場合は、30日間のデータに制限されることがあります)。
+
+このレポートは、組織の[Exchange Online Protection 機能](eop/eop-features.md)の有効性と影響、および長期的な傾向を確認するのに役立ちます。 
   
 ![脅威保護の状態レポートのフィルター](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
   
