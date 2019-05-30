@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bca6967fd99696ffb4b610105e448011b9837be4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f8e253a3d38f0f4846485e3b88ea09914d9978ce
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150859"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547952"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>調査のためにデータを処理するときのエラー修復
 
@@ -40,7 +40,7 @@ ms.locfileid: "34150859"
 
     ![エラーの修復](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    エラー修復セッションが開始され、エラーが発生したファイルが、セキュリティで保護された Azure の場所に移動される準備段階から開始されます。
+    エラー修復セッションが開始され、エラーが発生したファイルが安全な Azure 場所にコピーされ、ダウンロードできるようになります。
 
     ![エラー修復の準備](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
@@ -63,17 +63,18 @@ ms.locfileid: "34150859"
     ![エラー修復の準備](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
      > [!NOTE]
-     > このコマンドの実行に関する問題があるhttps://go.microsoft.com/fwlink/?linkid=2038117場合は、トラブルシューティングのヒントを参照してください。
+     > このコマンドの実行に関する問題がある場合は、「 [Advanced eDiscovery での AzCopy のトラブルシューティング](../compliance20/troubleshooting-azcopy.md)」を参照してください。
 
 7. ファイルをダウンロードした後、適切なツールを使用して修復できます。 パスワードで保護されたファイルには、いくつかのパスワードクラッキングツールを使用できます。 ファイルのパスワードがわかっている場合は、それらを開いてパスワード保護を解除することができます。
-    > [!NOTE]
+    
+   > [!NOTE]
     > Tact で修復されたファイルのディレクトリ構造とファイル名を保持することが重要です。  ダウンロードしたファイルとフォルダーで使用されているすべての命名規則によって、remdiated ファイルを元のファイルに戻すことができます。
 
 8. データの調査 (プレビュー) に戻り、[**次へ: ファイルのアップロード**] をクリックします。  これにより、次の手順に進み、ファイルをアップロードできるようになります。
 
     ![ファイルをアップロードする](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. [**ファイルの場所へのパス**] テキストボックスで、修復したファイルの場所を指定してから、[マイ**ボードにコピー] を**クリックします。
+9. [**ファイルの場所へのパス**] テキストボックスに修復したファイルの場所を指定し、[**クリップボードにコピー] を**クリックします。
 
 10. コマンドを Windows コマンドプロンプトに貼り付け、 **enter**キーを押してファイルをアップロードします。
 
@@ -87,12 +88,9 @@ ms.locfileid: "34150859"
 
 修復済みのファイルがアップロードされると、元のメタデータは次のフィールドを除いて保持されます。 
 
-- DocumentExtractedUrl
 - ExtractedTextSize
 - HasText
 - IsErrorRemediate
-- IsParentExtractedUrl
-- ItemExtractedUrl
 - LoadId
 - ProcessingErrorMessage
 - ProcessingStatus

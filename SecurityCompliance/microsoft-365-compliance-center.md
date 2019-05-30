@@ -3,18 +3,18 @@ title: 新しい Microsoft 365 コンプライアンスセンターの概要
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/09/2019
-ms.audience: ITPro
+ms.date: 05/29/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: 新しい Microsoft 365 コンプライアンスセンター (含まれるもの、その入手方法、および次の手順) について説明します。
-ms.openlocfilehash: ae608d1aafb803fabe6ed1eba3804b9921bac7b2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 149058d6204b7ad9d33fe656a8176609cfda5991
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265571"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547928"
 ---
 # <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>すべての新しい Microsoft 365 コンプライアンスセンターの概要
 
@@ -42,7 +42,7 @@ ms.locfileid: "32265571"
 
 Microsoft コンプライアンススコアカードに移動すると、[コンプライアンスマネージャー](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)を利用して、構成をレビューまたは編集したり、全体的なコンプライアンススコアを改善することができます。
 
-組織のクラウドアプリのコンプライアンスを示すような追加のカードと、共有ファイルを使用しているユーザーに関するデータ、およびデータを調査できる[cloud app Security](https://docs.microsoft.com/cloud-app-security/)またはその他のツールへのリンクが表示されます。
+組織のクラウドアプリのコンプライアンスを示すような追加のカードと、共有ファイルを使用しているユーザーに関するデータ、およびデータを調査できる[Cloud App Security](https://docs.microsoft.com/cloud-app-security/)またはその他のツールへのリンクが表示されます。
 
 ## <a name="the-protect-section"></a>[保護] セクション
 
@@ -89,11 +89,16 @@ Microsoft コンプライアンススコアカードに移動すると、[コン
 
 最初に、適切な[ライセンスとアクセス許可](microsoft-security-and-compliance.md#required-licenses-and-permissions)を持っていることを確認します。 その後、にサインイン[https://compliance.microsoft.com](https://compliance.microsoft.com)します。 新しいコンプライアンスセンターがまだ表示されていない場合は、近いうちに必要になります。
 
-### <a name="i-cant-find-some-of-my-compliance-settings-what-do-i-do"></a>コンプライアンス設定の一部が見つかりません。 What do I do?
+### <a name="some-of-my-compliance-features-are-not-available-in-the-microsoft-365-compliance-center-what-do-i-do"></a>コンプライアンス機能の一部は、Microsoft 365 コンプライアンスセンターでは使用できません。 What do I do?
 
-引き続き、Microsoft 365 コンプライアンスセンターに機能を追加しています。 監査ログの検索など、何かが見つからない場合は、Office 365 Security & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動してみてください。 構成は、既存の Office 365 セキュリティ & コンプライアンスセンターと新しい Microsoft 365 コンプライアンスセンターの両方に自動的に保存されます。
+引き続き、Microsoft 365 コンプライアンスセンターに機能を追加しています。 監査ログの検索など、何かが見つからない場合は、Office 365 Security & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) を使用します。 構成は、既存の Office 365 セキュリティ & コンプライアンスセンターと新しい Microsoft 365 コンプライアンスセンターの両方に自動的に保存されます。
 
-## <a name="next-steps"></a>次のステップ
+そのためには、Microsoft 365 コンプライアンスセンターで、画面の左側のナビゲーションウィンドウで [**その他のリソース**] を選択し、[ **Office 365 security & コンプライアンスセンター**] で [**開く**] を選択します。
+
+![その他のリソース](media/MoreResourcesShowAll.png)
+
+
+## <a name="next-steps"></a>次の手順
 
 - **Microsoft コンプライアンススコアを確認**し、コンプライアンスマネージャーを使用してスコアを向上させます。 詳細については、「[コンプライアンスマネージャーを使用して、Microsoft クラウドサービスを使用する際のデータ保護と規制要件を満たす](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)」を参照してください。
 

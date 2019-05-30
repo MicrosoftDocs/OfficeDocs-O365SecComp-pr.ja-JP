@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Office 365 に Twitter データをインポートしてアーカイブするためのネイティブコネクタをセットアップできます。 このデータを Office 365 にインポートした後、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織の Twitter データのガバナンスを管理できます。
-ms.openlocfilehash: 01c77436fc346a30a3d2cafeac731bf091296632
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4d3bce8418ef2fa62c40d221549e6e089dee9647
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150539"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490549"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data-in-office-365"></a>Office 365 でアーカイブ Twitter データにコネクタを展開する
 
@@ -193,14 +193,14 @@ Twitter 開発者アプリを使用する準備ができました。
 
 4. [**構成の詳細**] で、次の構成設定を入力します。 
 
-   - **Twitter アプリケーション id** -手順5で作成した twitter アプリケーションのアプリ id。
-   - **Twitter アプリケーションシークレット**-手順5で作成した twitter アプリケーションの API シークレットキー。
-   - **Twitter クライアントトークン**-手順5で作成したアクセストークン。
-   - **Twitter クライアントトークンシークレット**-手順5で作成したアクセストークンシークレット。
+   - **Twitter Api キー** -手順5で作成した twitter アプリケーションのアプリ ID。
+   - **Twitter Api シークレットキー** -手順5で作成した twitter アプリケーションの api シークレットキー。
+   - **Twitter アクセストークン**-手順5で作成したアクセストークン。
+   - **Twitter アクセストークンシークレット**-手順5で作成したアクセストークンシークレット。
    - **AAD アプリケーション id** -手順2で作成した Azure Active Directory アプリのアプリケーション id
    - **AAD アプリケーションシークレット**-手順4で作成した APISecretKey シークレットの値。
    - **Aad アプリケーション uri** -手順2で取得した Aad アプリケーション uri。たとえば、 https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213のようになります。
-   - **App insights インストルメンテーションキー** -このボックスは空白のままにします。
+   - **App Insights インストルメンテーションキー** -このボックスは空白のままにします。
 
 5. [**保存**] をクリックしてコネクタの設定を保存します。
 

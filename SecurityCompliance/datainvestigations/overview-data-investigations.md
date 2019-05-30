@@ -14,18 +14,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、Microsoft 365 の新しいデータ調査 (プレビュー) ツールについて説明します。
-ms.openlocfilehash: 1e7621d577d8d08fd27dc7e20e6b8e7a3491236f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 2b125d8f1dc24337804ea0461039aba824c42b8a
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150679"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547912"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 のデータ調査 (プレビュー) の概要
 
 機密、機密、または悪意のあるコンテンツを含むドキュメントが信頼されていない環境に解放されると、データがスピルされます。 データのスピルが検出されたら、環境をすばやく格納し、流出のサイズと場所を評価し、その周囲のユーザーアクティビティを調べて、そのサービスからこぼれたデータを削除することが重要です。 新しいデータ調査 (プレビュー) ツールを使用すると、Office 365 全体の機密データ、悪意のあるデータ、誤ったデータを検索し、何が起こったのかを調査し、適切な操作を行って流出を修復することができます。  
 
 この記事では、新しいデータ調査 (プレビュー) ツールの機能を使用してデータ流出シナリオに対処する方法について説明します。
+
+## <a name="permissions"></a>アクセス許可
+
+データ調査にアクセスして運用するには、データ捜査役割グループのメンバーである必要があります。 詳細については、「[データ調査のアクセス許可を割り当てる](permissions.md)」を参照してください。
 
 ## <a name="data-investigations-preview-workflow"></a>データ調査 (プレビュー) ワークフロー 
 

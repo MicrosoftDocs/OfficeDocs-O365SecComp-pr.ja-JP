@@ -100,7 +100,7 @@
 #### [脅威の調査および対応によりユーザーの安全を確保する](keep-users-safe-with-office-365-ti.md)
 #### [配信された悪意のあるメールの検索と調査](investigate-malicious-email-that-was-delivered.md)
 ### [自動調査および対応](automated-investigation-response-office.md)
-### [脅威エクスプローラー](use-explorer-in-security-and-compliance.md)
+### [脅威エクスプローラーおよびリアルタイムの検出](threat-explorer.md)
 #### [脅威エクスプローラーのビュー](threat-explorer-views.md)
 ### [脅威トラッカー](threat-trackers.md)
 ### [Office 365 の攻撃シミュレータ](attack-simulator.md)
@@ -164,6 +164,7 @@
 ## [侵害された Office 365 電子メール アカウントへの対応](responding-to-a-compromised-email-account.md)
 
 # レコード管理
+## [レコード管理](records-management.md)
 ## ファイル計画
 ### [ファイル計画マネージャー](file-plan-manager.md)
 ### [保持ラベル](labels.md)

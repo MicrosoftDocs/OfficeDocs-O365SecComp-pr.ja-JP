@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Office 365 に Twitter データをインポートするためのネイティブコネクタをセットアップできます。 これにより、Office 365 でサードパーティのデータソースのデータをアーカイブできるため、組織のサードパーティデータのガバナンスを管理するために、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用できます。
-ms.openlocfilehash: b53d882a66ba30a0c4c90389253689a9fe1fb457
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: ad64a982340013fbc5ef9acb612982ccc846ad3a
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155619"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490503"
 ---
 # <a name="use-a-sample-connector-to-archive-twitter-data-in-office-365-preview"></a>サンプルコネクタを使用して Office 365 で Twitter データをアーカイブする (プレビュー)
 
@@ -101,10 +101,10 @@ Twitter データをインポートすると、メールボックスに格納さ
 
 この手順が完了すると (手順に従って)、次の情報がテキストファイルに保存されます。 これらの値は、手順6で Twitter connector アプリを構成するために使用されます。
 
-- Twitter アプリケーション ID
-- Twitter アプリケーションシークレット (API シークレットキー)
-- Twitter クライアントトークン
-- Twitter クライアントトークンシークレット
+- Twitter API キー
+- Twitter API の秘密キー
+- Twitter アクセストークン
+- Twitter アクセストークンシークレット
 
 ## <a name="step-6-configure-the-twitter-connector-app"></a>手順 6: Twitter connector アプリを構成する
 
@@ -114,10 +114,10 @@ Twitter データをインポートすると、メールボックスに格納さ
 
 この手順が完了すると (手順に従って)、次の情報が提供されます (前の手順を完了した後、テキストファイルにコピーしたことになります)。
 
-- Twitter アプリケーション ID (手順5で取得)
-- Twitter アプリケーションシークレット (手順5で取得)
-- Twitter クライアントトークン (手順5で取得)
-- Twitter クライアントトークンシークレット (手順5で取得)
+- Twitter API キー (手順5で取得)
+- Twitter API の秘密キー (手順5で取得)
+- Twitter アクセストークン (手順5で取得)
+- Twitter アクセストークンシークレット (手順5で取得)
 - Azure Active Directory アプリケーション ID (手順2で取得した AAD アプリケーション ID)
 - Azure Active Directory アプリケーションシークレット (手順2で取得した AAD アプリケーションシークレット)
 - Azure Active Directory アプリケーション Uri (手順2で取得した AAD アプリケーション Uri、たとえば、https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)

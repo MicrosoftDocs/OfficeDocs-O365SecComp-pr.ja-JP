@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5a6c545b15ee07fc0200104b8408e7adb7301c79
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8653ebd82e9c045c4fc49b00fcb82bf22ab3f906
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151789"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547942"
 ---
 # <a name="error-remediation-when-processing-data"></a>データ処理中のエラー修復
 
@@ -40,7 +40,7 @@ ms.locfileid: "34151789"
 
     ![エラーの修復](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    エラー修復セッションが開始され、エラーが発生したファイルが、セキュリティで保護された Azure の場所に移動される準備段階から開始されます。
+    エラー修復セッションが開始され、エラーが発生したファイルが安全な Azure 場所にコピーされ、ダウンロードできるようになります。
 
     ![エラー修復の準備](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
@@ -63,7 +63,7 @@ ms.locfileid: "34151789"
     ![エラー修復の準備](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
-    > 指定した AzCopy コマンドが失敗した場合は、「 [Advanced eDiscovery での AzCopy のトラブルシューティング](troubleshooting-azcopy.md)」を参照してください。
+    > 指定した AzCopy コマンドが失敗した場合は、「 [Advanced eDiscovery での azcopy のトラブルシューティング](troubleshooting-azcopy.md)」を参照してください。
 
 7. ファイルをダウンロードした後、適切なツールを使用して修復できます。 パスワードで保護されたファイルには、いくつかのパスワードクラッキングツールを使用できます。 ファイルのパスワードがわかっている場合は、それらを開いてパスワード保護を解除することができます。
     > [!NOTE]
@@ -73,7 +73,7 @@ ms.locfileid: "34151789"
 
     ![ファイルをアップロードする](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. [**ファイルの場所へのパス**] テキストボックスで、修復したファイルの場所を指定してから、[マイ**ボードにコピー] を**クリックします。
+9. [**ファイルの場所へのパス**] テキストボックスに修復したファイルの場所を指定し、[**クリップボードにコピー] を**クリックします。
 
 10. コマンドを Windows コマンドプロンプトに貼り付け、 **enter**キーを押してファイルをアップロードします。
 
@@ -87,12 +87,9 @@ ms.locfileid: "34151789"
 
 修復済みのファイルがアップロードされると、元のメタデータは次のフィールドを除いて保持されます。 
 
-- DocumentExtractedUrl
 - ExtractedTextSize
 - HasText
 - IsErrorRemediate
-- IsParentExtractedUrl
-- ItemExtractedUrl
 - LoadId
 - ProcessingErrorMessage
 - ProcessingStatus
