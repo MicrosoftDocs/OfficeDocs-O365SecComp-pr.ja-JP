@@ -384,6 +384,7 @@
 ## [リリース ノート](datainvestigations/data-investigations-release-notes.md)
 ## [データ流出インシデントを管理します](datainvestigations/manage-data-spillage-incidents.md)
 ## [新しい調査を作成します](datainvestigations/create-new-investigation.md)
+## [データ調査のアクセス許可を割り当てる](datainvestigations/permissions.md)
  
 ## [調査でデータ検索をします](datainvestigations/search-for-data.md)
 ### [検索クエリのビルド](datainvestigations/build-search-queries.md)
