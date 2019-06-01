@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: すべての新しい Microsoft 365 セキュリティセンターとコンプライアンスセンターの準備をする
-ms.openlocfilehash: 9af224f72fc55e6981cf75c6c5596bde6645f75a
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: 0bb30ef3cd6f7d35e0f5a86842a8638e87e89773
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547902"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34652490"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>新しい Microsoft 365 セキュリティセンターと Microsoft 365 コンプライアンスセンターが一般公開されるようになりました。
 
@@ -60,9 +60,9 @@ Office 365 セキュリティ & コンプライアンスセンターを含むス
 
 ### <a name="easy-access"></a>簡単なアクセス
 
-向上したナビゲーション、統合されたソリューション、および合理化された操作性により、最も関心のある情報を表示してアクセスし、Microsoft 365 の強力なセキュリティおよびコンプライアンスソリューションを利用できるようになります。 さらに、今後数か月にわたって多くの機能とソリューションが追加されていますが、Office[https://protection.microsoft.com](https://protection.microsoft.com)365 Security _AMP_ コンプライアンスセンター () は引き続き利用できます。
+向上したナビゲーション、統合されたソリューション、および合理化された操作性により、最も関心のある情報を表示してアクセスし、Microsoft 365 の強力なセキュリティおよびコンプライアンスソリューションを利用できるようになります。 さらに、今後数か月にわたって多くの機能とソリューションが追加されていますが、Office[https://protection.microsoft.com](https://protection.microsoft.com)365 セキュリティ & コンプライアンスセンター () は引き続き利用できます。
 
-Office 365 Security & コンプライアンスセンターにアクセスするには、画面左側のナビゲーションウィンドウで、[**その他のリソース**] を選択します。 次に、 **Office 365 Security & コンプライアンスセンター**で、[**開く**] を選択します。
+Office 365 セキュリティ & コンプライアンスセンターにアクセスするには、画面左側のナビゲーションウィンドウで、[**その他のリソース**] を選択します。 次に、 **Office 365 セキュリティ & コンプライアンスセンター**で、[**開く**] を選択します。
 
 ### <a name="smooth-transition"></a>滑らかな移行
 
@@ -77,7 +77,7 @@ Office 365 Security & コンプライアンスセンターにアクセスする�
 
 ### <a name="licenses"></a>ライセンス
 
-新しい Microsoft 365 セキュリティセンターと Microsoft 365 コンプライアンスセンターを入手するには、組織に Microsoft 365 E3 または E5 へのサブスクリプション、または (Office 365 Enterprise E3 または E5、Enterprise Mobility + Security で構成された) ボリュームライセンスが必要です。E3 または E5、Windows 10 Enterprise E3/E5。 これらのプランの詳細については、「 [Microsoft が適切な Microsoft 365 Enterprise ソリューションを見つける](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)」を参照してください。
+新しい Microsoft 365 セキュリティセンターと Microsoft 365 コンプライアンスセンターを入手するには、組織に Microsoft 365 E3 または E5 へのサブスクリプション、または (Office 365 E3 または E5、Enterprise Mobility + Security E3 または E5 で構成される) ボリュームライセンスが必要です。Windows 10 Enterprise E3/E5)。 これらのプランの詳細については、「 [Microsoft が適切な Microsoft 365 ソリューションを見つける](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)」を参照してください。
 
 ### <a name="roles-and-permissions"></a>ロールと権限
 
@@ -89,7 +89,7 @@ Office 365 Security & コンプライアンスセンターにアクセスする�
 
 - セキュリティ管理者、セキュリティオペレーター、セキュリティ閲覧者がセキュリティセンターにアクセスできる
 
- これらの役割の詳細については、「 [Office 365 セキュリティ _AMP_ コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+ これらの役割の詳細については、「 [Office 365 セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
  
 次の表では、Azure、Office 365、および Windows でさまざまなポータルにアクセスできるユーザーを要約しています。
 
@@ -118,6 +118,6 @@ Office 365 Security & コンプライアンスセンターにアクセスする�
 
 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)
 
-[Office 365 Security & コンプライアンスセンターサービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
+[Office 365 セキュリティ & コンプライアンスセンターサービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
 
 Microsoft 365 セキュリティセンターおよび Microsoft 365 コンプライアンスセンター (新機能のアイデアなど) に関するフィードバックを提供するには、 [microsoft 365 Office のフィードバックをお](https://office365.uservoice.com)寄せください。

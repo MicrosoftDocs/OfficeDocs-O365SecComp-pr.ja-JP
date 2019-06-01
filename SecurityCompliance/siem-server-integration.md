@@ -14,18 +14,18 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: '概要: この記事では、SIEM server と Microsoft 365 の統合の概要について説明します。'
-ms.openlocfilehash: f1911aabaccb7a6c2a56bbd5ff37e396730db72a
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 05b6e980ae8c6a6b5d32fb3428748468dd861902
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077523"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34652580"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM server と Microsoft 365 のサービスおよびアプリケーションの統合
 
 ## <a name="overview"></a>概要
 
-組織でセキュリティ情報およびイベント管理 (SIEM) サーバーを使用している場合、または SIEM サーバーを近いうちに購入する予定の場合は、Office 365 Enterprise を含む Microsoft 365 との統合方法を疑問に思うかもしれません。 SIEM サーバーが必要かどうかは、組織のセキュリティ要件など、さまざまな要因によって異なります。 Microsoft 365 はさまざまなセキュリティ機能を提供しています。ただし、組織のコンテンツとアプリケーションがオンプレミスとクラウド (ハイブリッドクラウドの展開の場合など) にある場合は、追加の保護のために SIEM サーバーを追加することを検討してください。 または、組織が特に厳しいセキュリティ要件を満たしている場合は、SIEM サーバーを環境に追加することを検討する必要があります。
+組織でセキュリティ情報およびイベント管理 (SIEM) サーバーを使用している場合、または SIEM サーバーを近いうちに購入する予定の場合は、Office 365 E5 を含む Microsoft 365 との統合方法について不思議に思うかもしれません。 SIEM サーバーが必要かどうかは、組織のセキュリティ要件など、さまざまな要因によって異なります。 Microsoft 365 はさまざまなセキュリティ機能を提供しています。ただし、組織のコンテンツとアプリケーションがオンプレミスとクラウド (ハイブリッドクラウドの展開の場合など) にある場合は、追加の保護のために SIEM サーバーを追加することを検討してください。 または、組織が特に厳しいセキュリティ要件を満たしている場合は、SIEM サーバーを環境に追加することを検討する必要があります。
 
 ## <a name="siem-server-integration-microsoft-365"></a>SIEM server 統合 Microsoft 365
 
@@ -45,7 +45,7 @@ SIEM サーバーは、さまざまな Microsoft 365 サービスおよびアプ
 
 SIEM サーバーの統合を構成する前に、監査ログが有効になっていることを確認してください。 
 
-- SharePoint Online、OneDrive for Business、および Azure Active Directory で[は、セキュリティ _AMP_ コンプライアンスセンターで監査ログが有効になっ](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off)ています。
+- SharePoint Online、OneDrive for Business、および Azure Active Directory で[は、セキュリティ & コンプライアンスセンターで監査ログが有効になっ](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off)ています。
 
 - Exchange Online で[は、Windows PowerShell を使用して監査ログを有効に](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing)します。
  
