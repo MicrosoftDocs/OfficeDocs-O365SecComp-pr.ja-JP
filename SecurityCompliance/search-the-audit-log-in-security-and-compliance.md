@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: d8a674785c982b19b04b5bd14cd941dde7a86f61
-ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
+ms.openlocfilehash: cb44dd3d7c87928b325a72e783feea85e252dc49
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490493"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547992"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -179,8 +179,13 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
     
     組織内のすべてのファイルおよびフォルダーのエントリを返すには、このボックスを空白のままにします。
     
-    > [!TIP]
-    > ある**サイト**に関するすべてのアクティビティを検索する場合、URL の後ろにワイルドカード文字 (\*) を追加して、そのサイトのすべてのエントリが返されるようにします。例: **"https://contoso-my.sharepoint.com/personal/*"**
+   **ヒント**
+
+   - ある**サイト**に関するすべてのアクティビティを検索する場合、URL の後ろにワイルドカード文字 (\*) を追加して、そのサイトのすべてのエントリが返されるようにします。例: **"https://contoso-my.sharepoint.com/personal/*"**
+
+   - 特定の**ファイル**に関連するすべてのアクティビティを探す場合は、ファイル名の前にワイルドカード文字 (\*) を追加すると、そのファイルのすべてのエントリが返されます (例: **"*Customer_Profitability_Sample.csv"**)。
+    
+
     
 5. [**検索**] をクリックして、設定した検索条件で検索を実行します。 
     
@@ -295,15 +300,15 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
   
 ||||
 |:-----|:-----|:-----|
-|[ファイル アクティビティとページ アクティビティ](#file-and-page-activities)<br/> |[フォルダー アクティビティ](#folder-activities)<br/> |[共有アクティビティとアクセス要求アクティビティ](#sharing-and-access-request-activities)<br/> |
-|[同期アクティビティ](#synchronization-activities)<br/> |[サイト管理アクティビティ](#site-administration-activities)<br/> |[Exchange メールボックス アクティビティ](#exchange-mailbox-activities)<br/> |
-|[Sway アクティビティ](#sway-activities) <br/> |[ユーザー管理アクティビティ](#user-administration-activities) <br/> |[Azure AD グループ管理アクティビティ](#azure-ad-group-administration-activities) <br/> 
-|[アプリケーション管理アクティビティ](#application-administration-activities) <br/> |[役割管理アクティビティ](#role-administration-activities) <br/> |[ディレクトリ管理アクティビティ](#directory-administration-activities) <br/>| 
-|[電子情報開示アクティビティ](#ediscovery-activities) <br/> |[Power BI アクティビティ](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|
-|[Microsoft Teams アクティビティ](#microsoft-teams-activities) <br/> |[Yammer アクティビティ](#yammer-activities) <br/> |[Microsoft Flow アクティビティ](#microsoft-flow-activities) <br/>|
-|[Microsoft PowerApps アクティビティ](#microsoft-powerapps)<br/>|[Microsoft Stream アクティビティ](#microsoft-stream-activities) <br/>|[Exchange 管理アクティビティ](#exchange-admin-audit-log)<br/>|
+|[ファイル アクティビティとページ アクティビティ](#file-and-page-activities)<br/> |[フォルダー アクティビティ](#folder-activities)<br/> |[SharePoint リスト アクティビティ](#sharepoint-list-activities)<br/>|
+|[共有アクティビティとアクセス要求アクティビティ](#sharing-and-access-request-activities)<br/> |[同期アクティビティ](#synchronization-activities)<br/> |[サイト管理アクティビティ](#site-administration-activities)<br/> |
+|[Exchange メールボックス アクティビティ](#exchange-mailbox-activities)<br/> |[Sway アクティビティ](#sway-activities) <br/> |[ユーザー管理アクティビティ](#user-administration-activities) <br/> |
+|[Azure AD グループ管理アクティビティ](#azure-ad-group-administration-activities) <br/> |[アプリケーション管理アクティビティ](#application-administration-activities) <br/> |[役割管理アクティビティ](#role-administration-activities) <br/> |
+|[ディレクトリ管理アクティビティ](#directory-administration-activities) <br/>|[電子情報開示アクティビティ](#ediscovery-activities) <br/> |[Advanced eDiscovery アクティビティ](#advanced-ediscovery-activities)<br/> |
+|[Power BI アクティビティ](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|[Microsoft Teams アクティビティ](#microsoft-teams-activities) <br/> |
+|[Yammer アクティビティ](#yammer-activities) <br/> |[Microsoft Flow アクティビティ](#microsoft-flow-activities) <br/>|[Microsoft PowerApps アクティビティ](#microsoft-powerapps)<br/>|
+|[Microsoft Stream アクティビティ](#microsoft-stream-activities) <br/>|[Exchange 管理アクティビティ](#exchange-admin-audit-log)<br/>|
 ||||
-   
   
 ### <a name="file-and-page-activities"></a>ファイル アクティビティとページ アクティビティ
   
@@ -319,6 +324,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |ファイルの削除  <br/> |FileDeleted  <br/> |ユーザーがサイトからドキュメントを削除しました。  <br/> |
 |ごみ箱からのファイルの削除  <br/> |FileDeletedFirstStageRecycleBin  <br/> |ユーザーがサイトのごみ箱からファイルを削除しました。  <br/> |
 |第 2 段階のごみ箱からのファイルの削除  <br/> |FileDeletedSecondStageRecycleBin  <br/> |ユーザーがサイトの第 2 段階のごみ箱からファイルを削除しました。  <br/> |
+|検出されたドキュメントの秘密度の不一致 <br/>|DocumentSensitivityMismatchDetected<br/>|ユーザーが、ドキュメントのアップロード先サイトに適用されている機密ラベルよりも高い優先度の機密ラベルで分類されたドキュメントをアップロードしました。 注: サイトに適用されている機密ラベルの方が、サイトにアップロードされたドキュメントに適用されている機密ラベルよりも優先順位が高い場合、このイベントは発生しません。 機密ラベルの優先度の詳細については、「[機密ラベルの概要](sensitivity-labels.md#label-priority-order-matters)」の「ラベルの優先度」セクションを参照してください。<br/>|
 |ファイルでのマルウェアの検出  <br/> |FileMalwareDetected  <br/> |SharePoint ウイルス対策エンジンにより、ファイル内でマルウェアが検出されました。  <br/> |
 |ファイル チェックアウトの破棄  <br/> |FileCheckOutDiscarded  <br/> |ユーザーは、チェックアウトしたファイルを破棄します (または元に戻します)。つまり、チェックアウト時にファイルに加えた変更はすべて破棄され、ドキュメント ライブラリ内のドキュメントのバージョンには保存されないということです。  <br/> |
 |ファイルのダウンロード  <br/> |FileDownloaded  <br/> |ユーザーがサイトからドキュメントをダウンロードしました。  <br/> |
@@ -333,6 +339,8 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |ファイルのアップロード  <br/> |FileUploaded  <br/> |ユーザーがサイトのフォルダーにドキュメントをアップロードしました。  <br/> |
 |ページの表示  <br/> |PageViewed  <br/> |ユーザーがサイトのページを表示します。これには、Web ブラウザー使用してドキュメント ライブラリ内にあるファイルを表示する操作は含まれません。  <br/> |
 |(なし)  <br/> |PageViewedExtended  <br/> |これは、「ページが表示されました」 (PageViewed) アクティビティに関連します。PageViewedExtended イベントは、同一人物が長時間 (最長 3 時間) 継続して Web ページを表示した場合に記録されます。PageViewedExtended イベントを記録する目的は、ページが継続的に表示されたときに記録される PageViewed イベントの件数を削減することです。これは、基本的に同一のユーザー アクティビティに関する複数の余分な PageViewed レコードを削減して、最初の (より重要な) PageViewed イベントに集中するのに役立ちます。  <br/> |
+|クライアントが表示をシグナル <br/>|ClientViewSignaled<br/>|ユーザーのクライアント (Web サイトやモバイル アプリなど) が、示されるページをユーザーが表示したことをシグナルしました。 多くの場合、ページでの PagePrefetched イベントに続いてこのアクティビティがログに記録されます。 <br/><br/>**注**: ClientViewSignaled イベントはサーバーではなくクライアントによりシグナルされるため、イベントがサーバーによってログに記録されず、監査ログに表示されない場合があります。 また、監査レコードの情報の信頼性が低い可能性もあります。 ただし、ユーザーの ID はシグナルの作成に使用されたトークンによって検証されるため、対応する監査レコードに記載されているユーザーの ID は正確です。 |
+|(なし) <br/>|PagePrefetched<br/>|示されるページにユーザーがアクセスした際のパフォーマンスを上げるため、ユーザーのクライアント (Web サイトやモバイルアプリなど) がそのページを要求しました。 このイベントは、ページのコンテンツがユーザーのクライアントに提供されたことを示すためにログに記録されます。このイベントは、ユーザーが実際にページに移動したことを確実に示すものではありません。 (ユーザーの要求に従って) ページのコンテンツがクライアントによってレンダリングされると、ClientViewSignaled イベントが生成されます。 プレフェッチの指摘はすべてのクライアントでサポートされているわけではないため、プレフェッチされた一部のアクティビティは PageViewed イベントとしてログ記録される可能性があります。<br/>|
 ||||
   
 ### <a name="folder-activities"></a>フォルダー アクティビティ
@@ -352,6 +360,35 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |フォルダーの復元  <br/> |FolderRestored  <br/> |ユーザーがサイトのごみ箱から削除されたフォルダーを復元しました。  <br/> |
 ||||
   
+### <a name="sharepoint-list-activities"></a>SharePoint リスト アクティビティ
+  
+次の表では、ユーザーが SharePoint Online のリストとリストアイテムを操作する際に関連するアクティビティを説明します。
+
+|**フレンドリ名**|**操作名**|**説明**|
+|:-----|:-----|:-----|
+| リストの作成              | ListCreated              | ユーザーが新しい SharePoint リストを作成しました。|
+| リスト列の作成       | ListColumnCreated        | ユーザーが新しい SharePoint リスト列を作成しました。 リスト列は、1 つまたは複数の SharePoint リストに関連付けられている列です。 |
+| リスト コンテンツ タイプの作成 | ListContentTypeCreated   | ユーザーが新しいリスト コンテンツ タイプを作成しました。 リスト コンテンツ タイプは、1 つまたは複数の SharePoint リストに関連付けられているコンテンツ タイプです。|
+| リスト アイテムの作成         | ListItemCreated          | ユーザーが既存の SharePoint リストに新しいアイテムを作成しました。|
+| サイト列の作成       | SiteColumnCreated        | ユーザーが新しい SharePoint サイト列を作成しました。 サイト列とは、リストに関連付けられていない列のことです。 サイト列は、特定の Web のすべてのリストで使用できるメタデータ構造でもあります。|
+| サイト コンテンツ タイプの作成 | サイトの ContentType の作成 | ユーザーが新しいサイト コンテンツ タイプを作成しました。 サイト コンテンツ タイプは、親サイトに関連付けられているコンテンツ タイプです。|
+| リストの削除              | ListDeleted              | ユーザーが SharePoint リストを削除しました。|
+| リスト列の削除       | 削除されたリスト列      | ユーザーが SharePoint リスト列を削除しました。|
+| リスト コンテンツ タイプの削除 | ListContentTypeDeleted   | ユーザーがリスト コンテンツ タイプを削除しました。 |
+| リスト アイテムの削除         | 削除されたリスト アイテム        | ユーザーが SharePoint リスト アイテムを削除しました。|
+| サイト列の削除       | SiteColumnDeleted        | ユーザーが SharePoint サイト列を削除しました。 |
+| サイト コンテンツ タイプの削除 | SiteContentTypeDeleted   | ユーザーがサイト コンテンツ タイプを削除しました。|
+| リスト アイテムのリサイクル        | ListItemRecycled         | ユーザーが SharePoint リスト アイテムをごみ箱に移動しました。|
+| リストの復元             | ListRestored             | ユーザーが SharePoint リストをごみ箱から復元しました。|
+| リスト アイテムの復元        | ListItemRestored         | ユーザーが SharePoint リスト アイテムをごみ箱から復元しました。|
+| リストの更新              | ListUpdated              | ユーザーが 1 つ以上のプロパティを変更して SharePoint リストを更新しました。|
+| リスト列の更新       | ListColumnUpdated        | ユーザーが 1 つ以上のプロパティを変更して SharePoint リスト列を更新しました。|
+| リスト コンテンツ タイプの更新 | ListContentTypeUpdated   | ユーザーが 1 つ以上のプロパティを変更してリスト コンテンツ タイプを更新しました。|
+| リスト アイテムの更新         | ListItemUpdated          | ユーザーが 1 つ以上のプロパティを変更して SharePoint リスト アイテムを更新しました。|  
+| サイト列の更新       | SiteColumnUpdated        | ユーザーが 1 つ以上のプロパティを変更して SharePoint サイト列を更新しました。|
+| サイト コンテンツ タイプの更新 | SiteContentTypeUpdated   | ユーザーが 1 つ以上のプロパティを変更してサイト コンテンツ タイプを更新しました。|
+||||
+
 ### <a name="sharing-and-access-request-activities"></a>共有アクティビティとアクセス要求アクティビティ
   
 次の表では、SharePoint Online and OneDrive for Business 内のユーザー共有アクティビティおよびアクセス要求アクティビティについて説明します。共有イベントの場合、[**結果**] の下の [**詳細**] 列で、項目の共有相手のユーザーまたはグループの名前と、そのユーザーまたはグループが組織内のメンバーかゲストかが識別されます。詳細については、「[Office 365 監査ログで共有監査を使用する](use-sharing-auditing.md)」を参照してください。
@@ -364,23 +401,17 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |アクセス要求の承諾  <br/> |AccessRequestAccepted  <br/> |サイト、フォルダー、またはドキュメントに対するアクセス要求が承諾されて、要求したユーザーがアクセスを許可されました。  <br/> |
 |共有への招待の承諾  <br/> |SharingInvitationAccepted  <br/> |ユーザー (メンバーまたはゲスト) は共有への招待を承諾し、リソースに対するアクセスが許可されました。このイベントには、招待されたユーザーと招待の承諾に使用されたメール アドレス (招待されたユーザーのメール アドレスとは異なる可能性があります) に関する情報が含まれます。多くの場合、このアクティビティでは、どのような方法でユーザーに対してリソースへのアクセスが許可されたかを説明する 2 つ目のイベントが同時に発生します (たとえば、リソースに対するアクセス許可があるグループへのユーザーの追加など)。  <br/> |
 |サイト コレクションへのアクセス許可レベルの追加  <br/> |PermissionLevelAdded  <br/> |サイト コレクションにアクセス許可レベルが追加されました。  <br/> |
-|セキュリティで保護されたリンクへのユーザーの追加  <br/> |AddedToSecureLink  <br/> |ユーザーが、このセキュリティで保護された共有リンクを使用できるエンティティの一覧に追加されました。  <br/> |
-|共有への招待のブロック  <br/> |SharingInvitationBlocked  <br/> | 組織内のユーザーによって送信された共有への招待は、ターゲット ユーザーのドメインに基づいて外部共有を許可または拒否する外部共有ポリシーのためにブロックされます。この場合、次の理由により、共有への招待がブロックされました。<br/>  ターゲット ユーザーのドメインが、許可されたドメインの一覧に含まれていない。  <br/>  または  <br/>  ターゲット ユーザーのドメインが、ブロックするドメインの一覧に含まれている。  <br/>  ドメインに基づく外部共有の許可またはブロックの詳細については、「[SharePoint Online and OneDrive for Business での制限付きドメイン共有](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9)」を参照してください。  <br/> |
-|アクセス許可レベルの継承の停止  <br/> |PermissionLevelsInheritanceBroken  <br/> |アイテムが変更されたので、アクセス許可レベルが親から継承されなくなりました。  <br/> |
-|共有の継承の停止  <br/> |SharingInheritanceBroken  <br/> |アイテムが変更されたので、共有アクセス許可が親から継承されなくなりました。  <br/> |
+|共有の招待がブロックされました  <br/> |SharingInvitationBlocked  <br/> | 組織内のユーザーによって送信された共有への招待は、ターゲット ユーザーのドメインに基づいて外部共有を許可または拒否する外部共有ポリシーのためにブロックされます。この場合、次の理由により、共有への招待がブロックされました。<br/>  ターゲット ユーザーのドメインが、許可されたドメインの一覧に含まれていない。  <br/>  または  <br/>  ターゲット ユーザーのドメインが、ブロックするドメインの一覧に含まれている。  <br/>  ドメインに基づく外部共有の許可またはブロックの詳細については、「[SharePoint Online and OneDrive for Business での制限付きドメイン共有](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9)」を参照してください。  <br/> |
 |会社の共有可能なリンクの作成  <br/> |CompanyLinkCreated  <br/> |ユーザーがリソースへの全社的なリンクを作成しました。全社的なリンクは、組織内のメンバーのみが使用できます。ゲストは使用できません。  <br/> |
 |アクセス要求の作成  <br/> |AccessRequestCreated  <br/> |アクセス許可がないサイト、フォルダー、またはドキュメントに対するアクセスをユーザーが要求しました。  <br/> |
 |匿名リンクの作成  <br/> |AnonymousLinkCreated  <br/> |ユーザーがリソースへの匿名リンクを作成しました。このリンクを使用できるすべてのユーザーが、認証なしでリソースにアクセスできます。  <br/> |
 |セキュリティで保護されたリンクの作成  <br/> |SecureLinkCreated  <br/> |セキュリティで保護された、このアイテムへの共有リンクが作成されました。  <br/> |
 |共有への招待の作成  <br/> |SharingInvitationCreated  <br/> |ユーザーが、組織のディレクトリ内に含まれていないユーザーと SharePoint Online または OneDrive for Business のリソースを共有しました。  <br/> |
 |セキュリティで保護されたリンクの削除  <br/> |SecureLinkDeleted  <br/> |セキュリティで保護されたリンクが削除されました。  <br/> |
-|アクセス要求の拒否  <br/> |AccessRequestDenied  <br/> |サイト、フォルダー、またはドキュメントに対するアクセス要求が拒否されました。  <br/> |
-|サイト コレクションのアクセス許可レベルの変更  <br/> |PermissionLevelModified  <br/> |サイト コレクションでアクセス許可レベルが変更されました。  <br/> |
-|会社の共有可能なリンクの削除  <br/> |CompanyLinkRemoved  <br/> |ユーザーがリソースへの全社的なリンクを削除しました。リソースへのアクセスにリンクを使用できなくなります。  <br/> |
-|匿名リンクの削除  <br/> |AnonymousLinkRemoved  <br/> |ユーザーがリソースへの匿名リンクを削除しました。リソースへのアクセスにリンクを使用できなくなります。  <br/> |
-|サイト コレクションからのアクセス許可レベルの削除  <br/> |PermissionLevelRemoved  <br/> |サイト コレクションからアクセス許可レベルが削除されました。  <br/> |
-|共有の継承の復元  <br/> |SharingInheritanceReset  <br/> |変更が加えられたので、共有アクセス許可が親から継承されなくなりました。  <br/> |
-|ファイル、フォルダー、またはサイトの共有  <br/> |SharingSet  <br/> |ユーザー (メンバーまたはゲスト) が、組織のディレクトリ内のユーザーと SharePoint または OneDrive for Business のファイル、フォルダー、またはサイトを共有しました。このアクティビティの [**詳細**] 列の値で、リソースの共有相手のユーザー名と、そのユーザーがメンバーかゲストかが識別されます。多くの場合、このアクティビティでは、どのような方法でユーザーに対してリソースへのアクセスが許可されたかを説明する 2 つ目のイベントが同時に発生します (たとえば、リソースに対するアクセス許可があるグループへのユーザーの追加など)。<br/> |
+|アクセス要求の拒否  <br/> |AccessRequestDenied  <br/> |サイト、フォルダー、またはドキュメントに対するアクセスが拒否されました。  <br/> |
+|会社の共有可能なリンクが削除されました  <br/> |CompanyLinkRemoved  <br/> |ユーザーがリソースへの全社的なリンクを削除しました。リソースへのアクセスにリンクを使用できなくなります。  <br/> |
+|匿名リンクの削除  <br/> |AnonymousLinkRemoved  <br/> |ユーザーがリソースに対する匿名リンクを削除しました。リソースにアクセスするリンクは使用できなくなります。  <br/> |
+|ファイル、フォルダー、サイトが共有されました  <br/> |SharingSet  <br/> |ユーザー (メンバーまたはゲスト) が、組織のディレクトリ内のユーザーと SharePoint または OneDrive for Business のファイル、フォルダー、またはサイトを共有しました。このアクティビティの [**詳細**] 列の値で、リソースの共有相手のユーザー名と、そのユーザーがメンバーかゲストかが識別されます。多くの場合、このアクティビティでは、どのような方法でユーザーに対してリソースへのアクセスが許可されたかを説明する 2 つ目のイベントが同時に発生します (たとえば、リソースに対するアクセス許可があるグループへのユーザーの追加など)。<br/> |
 |アクセス要求の更新  <br/> |AccessRequestUpdated  <br/> |アイテムに対するアクセス要求が更新されました。  <br/> |
 |匿名リンクの更新  <br/> |AnonymousLinkUpdated  <br/> |ユーザーがリソースへの匿名リンクを更新しました。検索結果をエクスポートする場合、更新されたフィールドが EventData プロパティに含まれます。  <br/> |
 |共有への招待の更新  <br/> |SharingInvitationUpdated  <br/> |外部共有への招待が更新されました。  <br/> |
@@ -404,19 +435,43 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |コンピューターへのファイルのダウンロード  <br/> |FileSyncDownloadedFull  <br/> |ユーザーが同期関係を確立して、ドキュメント ライブラリからコンピューターに初めてファイルを正常にダウンロードしました。  <br/> |
 |コンピューターへのファイル変更のダウンロード  <br/> |FileSyncDownloadedPartial  <br/> |ユーザーがファイルに対する変更をドキュメント ライブラリから正常にダウンロードしました。このアクティビティは、ドキュメント ライブラリ内のファイルに加えられた変更がユーザーのコンピューターにダウンロードされたことを示します。ドキュメント ライブラリは、(**コンピューターへのファイルのダウンロード** アクティビティで示されているように) 以前にユーザーによってダウンロードされているため、変更のみがダウンロードされました。<br/> |
 |ドキュメント ライブラリへのファイルのアップロード  <br/> |FileSyncUploadedFull  <br/> |ユーザーが同期関係を確立して、コンピューターからドキュメント ライブラリに初めてファイルを正常にアップロードしました。  <br/> |
-|ドキュメント ライブラリへのファイル変更のアップロード  <br/> |FileSyncUploadedPartial  <br/> |ユーザーはドキュメント ライブラリ上のファイルの変更を正常にアップロードしました。 このイベントは、ドキュメント ライブラリからダウンロードしたローカル バージョンのファイルに加えた変更内容が、ドキュメント ライブラリに正常にアップロードされたことを示します。 それらのファイルは、以前にユーザーによってアップロードされている (「**ファイルがドキュメント ライブラリにアップロードされました**」 アクティビティによって示されている) ため、変更のみがアップロードされます。  <br/> |
+|ドキュメント ライブラリへのファイル変更のアップロード  <br/> |FileSyncUploadedPartial  <br/> |ユーザーはドキュメント ライブラリ上のファイルの変更を正常にアップロードしました。 このイベントは、ドキュメント ライブラリからダウンロードしたローカル バージョンのファイルに加えた変更内容が、ドキュメント ライブラリに正常にアップロードされたことを示します。 それらのファイルは、(「**ドキュメント ライブラリへのファイルのアップロード**」 アクティビティによって示されるように) 以前にユーザーによってアップロードされているため、変更内容のみがアップロードされます。  <br/> |
 ||||
+
+### <a name="site-permissions-activities"></a>サイトの権限のアクティビティ
+
+次の表では、SharePoint でのアクセス許可の割り当てとグループの使用によるサイトへのアクセス権の付与に関連するイベントを一覧表示します。
+
+|**フレンドリ名**|**操作名**|**説明**|
+|:-----|:-----|:-----|
+|サイト コレクション管理者の追加  <br/> |SiteCollectionAdminAdded  <br/> |サイト コレクション管理者または所有者が、サイトのサイト コレクション管理者としてユーザーを追加します。 サイト コレクション管理者には、サイト コレクションとすべてのサブサイトのフル コントロール権限があります。 このアクティビティは、SharePoint 管理センターでユーザー プロファイルを編集するか [Microsoft 365 管理センターを使用](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)することにより、管理者がユーザーの OneDrive アカウントへのアクセス権限を自分自身に付与する際にも記録されます。 <br/> |
+|SharePoint グループへのユーザーまたはグループの追加  <br/> |AddedToGroup  <br/> |ユーザーが SharePoint グループにメンバーまたはゲストを追加しました。これは、意図したアクション、または別のアクティビティ (共有イベントなど) の結果の可能性があります。  <br/> |
+|アクセス許可レベルの継承の停止  <br/> |PermissionLevelsInheritanceBroken  <br/> |アイテムが変更されたので、アクセス許可レベルが親から継承されなくなりました。  <br/> |
+|共有の継承の停止  <br/> |SharingInheritanceBroken  <br/> |アイテムが変更されたので、共有アクセス許可が親から継承されなくなりました。  <br/> |
+|グループの作成  <br/> |GroupAdded  <br/> |サイトの管理者または所有者がサイトのグループを作成したか、グループが作成されるタスクを実行しました。たとえば、ユーザーがファイルを共有するためのリンクを初めて作成すると、システム グループがユーザーの OneDrive for Business サイトに追加されます。このイベントは、ユーザーが共有ファイルに対する編集アクセス許可を含むリンクを作成した結果の場合もあります。  <br/> |
+|グループの削除  <br/> |GroupRemoved  <br/> |ユーザーがサイトからグループを削除しました。  <br/> |
+|アクセス要求の設定の変更  <br/> |WebRequestAccessModified  <br/> |サイトでアクセス要求の設定が変更されました。  <br/> |
+|[メンバーが共有可能] 設定の変更  <br/> |WebMembersCanShareModified  <br/> |サイトで [**メンバーが共有可能**] 設定が変更されました。  <br/> |
+|サイト コレクションのアクセス許可レベルの変更  <br/> |PermissionLevelModified  <br/> |サイト コレクションでアクセス許可レベルが変更されました。  <br/> |
+|サイト アクセス許可の変更  <br/> |SitePermissionsModified  <br/> |サイトの管理者または所有者 (またはシステム アカウント) がサイトのグループに割り当てられたアクセス許可レベルを変更しました。すべてのアクセス許可がグループから削除された場合も、このアクティビティが記録されます。<br/><br/> **注**: この操作は、SharePoint で廃止されました。 関連するイベントを見つけるには、**サイト コレクション管理者の追加**、**SharePoint グループへのユーザーまたはグループの追加**、**ユーザーに対するグループ作成の許可**、**グループの作成**、**グループの削除**などのその他のアクセス許可関連のアイテムを検索することができます。|
+|サイト コレクションからのアクセス許可レベルの削除  <br/> |PermissionLevelRemoved  <br/> |サイト コレクションからアクセス許可レベルが削除されました。  <br/> |
+|サイト コレクション管理者の削除  <br/> |SiteCollectionAdminRemoved <br/> |サイト コレクションの管理者または所有者が、サイトのサイト コレクション管理者としてのユーザーを削除しました。このアクティビティは、管理者が、ユーザーの OneDrive アカウントのサイト コレクション管理者リストから (SharePoint 管理センターでユーザー プロファイルを編集することによって) 自分自身を削除する際にも記録されます。 このアクティビティを監査ログの検索結果で返すには、すべてのアクティビティを検索する必要があることに注意してください。 <br/> |
+|SharePoint グループからのユーザーまたはグループの削除  <br/> |RemovedFromGroup  <br/> |ユーザーが SharePoint グループからメンバーまたはゲストを削除しました。これは、意図したアクション、または別のアクティビティ (共有解除イベントなど) の結果の可能性があります。  <br/> |
+|サイト管理者アクセス許可の要求  <br/> |SiteAdminChangeRequest  <br/> |ユーザーが、サイト コレクションのサイト コレクション管理者として追加するように要求しました。サイト コレクション管理者には、サイト コレクションとすべてのサブサイトのフル コントロール権限があります。  <br/> |
+|共有の継承の復元  <br/> |SharingInheritanceReset  <br/> |変更が加えられたので、共有アクセス許可が親から継承されなくなりました。  <br/> |
+|グループの更新  <br/> |GroupUpdated  <br/> |サイトの管理者または所有者がサイトのグループの設定を変更しました。これには、グループ名の変更、グループのメンバーシップを表示または変更できるユーザーの変更、メンバーシップ要求の処理方法の変更などがあります。  <br/> |
+||||
+
   
 ### <a name="site-administration-activities"></a>サイト管理アクティビティ
   
-次の表では、SharePoint Online 内のサイト管理タスクによって発生したイベントを一覧表示します。
+次の表では、SharePoint Online 内のサイト管理タスクによって発生するイベントを一覧表示します。
   
 |**フレンドリ名**|**操作名**|**説明**|
 |:-----|:-----|:-----|
-|適用除外ユーザー エージェントの追加  <br/> |ExemptUserAgentSet  <br/> |SharePoint 管理者または全体管理者が、SharePoint 管理センターで適用除外ユーザー エージェントの一覧にユーザー エージェントを追加しました。  <br/> |
-|サイト コレクション管理者の追加  <br/> |SiteCollectionAdminAdded  <br/> |サイト コレクション管理者または所有者が、サイトのサイト コレクション管理者としてユーザーを追加します。 サイト コレクション管理者には、サイト コレクションとすべてのサブサイトのフル コントロール権限があります。 このアクティビティは、管理者がユーザーの OneDrive アカウントへのアクセス権限を、SharePoint 管理センターでユーザー プロファイルを編集するか [Microsoft 365 管理センターを使用することにより](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)自分自身に付与する際にも記録されます。 <br/> |
-|(なし)  <br/> |SiteCollectionAdminRemoved <br/> |サイト コレクションの管理者または所有者が、サイトのサイト コレクション管理者としてのユーザーを削除しました。このアクティビティは、管理者が、ユーザーの OneDrive アカウントのサイト コレクション管理者リストから (SharePoint 管理センターでユーザー プロファイルを編集することによって) 自分自身を削除する際にも記録されます。 このアクティビティを監査ログの検索結果で返すには、すべてのアクティビティを検索する必要があることに注意してください。 <br/> |
-|SharePoint グループへのユーザーまたはグループの追加  <br/> |AddedToGroup  <br/> |ユーザーが SharePoint グループにメンバーまたはゲストを追加しました。これは、意図したアクション、または別のアクティビティ (共有イベントなど) の結果の可能性があります。  <br/> |
+|許可されるデータの場所の追加<br/>|AllowedDataLocationAdded|SharePoint 管理者またはグローバル管理者が、複数地域環境で許可されるデータの場所を追加しました。 <br/>|
+|適用除外ユーザー エージェントの追加  <br/> |ExemptUserAgentSet  <br/> |SharePoint 管理者またはグローバル管理者が、SharePoint 管理センターで適用除外ユーザー エージェントの一覧にユーザー エージェントを追加しました。  <br/> |
+|地理的位置の管理者の追加<br/>|GeoAdminAdded<br/>|SharePoint 管理者またはグローバル管理者が、地理的位置の管理者としてユーザーを追加しました。 <br/>|
 |ユーザーに対するグループ作成の許可  <br/> |AllowGroupCreationSet  <br/> |サイトの管理者または所有者がアクセス許可レベルをサイトに追加しました。そのアクセス許可が割り当てられているユーザーは、そのサイトのグループを作成することが許可されます。  <br/> |
 |サイトの地域の移動の取り消し  <br/> |SiteGeoMoveCancelled  <br/> |SharePoint 管理者または全体管理者が、SharePoint サイトまたは OneDrive サイトの地域の移動を正常に取り消しました。Multi-Geo Capabilities を使用すると、Office 365 組織は複数の Office 365 データセンター地域 (geo と呼ばれる) にまたがることができます。詳細については、「[Office 365 の OneDrive および SharePoint Online での Multi-Geo Capabilities](https://go.microsoft.com/fwlink/?linkid=860840)」を参照してください。<br/> |
 |共有ポリシーの変更  <br/> |SharingPolicyChanged  <br/> |SharePoint 管理者または全体管理者が、Office 365 管理ポータル、SharePoint 管理ポータル、または SharePoint Online 管理シェルを使用して SharePoint 共有ポリシーを変更しました。組織の共有ポリシーに加えられた変更はすべて記録されます。変更されたポリシーは、イベント レコードの詳細プロパティの **ModifiedProperties**フィールドで識別されます。<br/> |
@@ -424,25 +479,26 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |適用除外ユーザー エージェントの変更  <br/> |CustomizeExemptUsers  <br/> |SharePoint 管理者または全体管理者が、SharePoint 管理センターで適用除外ユーザー エージェントの一覧をカスタマイズしました。インデックスを作成する Web ページ全体を受け取らせないように除外するユーザー エージェントを指定できます。つまり、除外対象として指定されたユーザー エージェントが InfoPath フォームを検出すると、フォームは、Web ページ全体ではなく XML ファイルとして返されます。これにより InfoPath フォームのインデックス作成の速度が向上します。  <br/> |
 |ネットワーク アクセス ポリシーの変更  <br/> |NetworkAccessPolicyChanged  <br/> |SharePoint 管理者または全体管理者が、SharePoint 管理センター内で、または SharePoint Online PowerShell を使用して、場所に基づくアクセス ポリシー (信頼されたネットワーク境界とも呼ばれる) を変更しました。この種類のポリシーは、指定された承認済み IP アドレスの範囲に基づいて、組織内の SharePoint および OneDrive リソースにアクセスできるユーザーを制御します。詳細については、「[ネットワークの場所に基づいて SharePoint Online および OneDrive データへのアクセスを制御する](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f)」を参照してください。<br/> |
 |サイトの地域の移動の完了  <br/> |SiteGeoMoveCompleted  <br/> |組織で全体管理者によってスケジュールされたサイトの地域の移動が正常に完了しました。Multi-Geo Capabilities を使用すると、Office 365 組織は複数の Office 365 データセンター地域 (geo と呼ばれる) にまたがることができます。詳細については、「[Office 365 の OneDrive および SharePoint Online での Multi-Geo Capabilities](https://go.microsoft.com/fwlink/?linkid=860840)」を参照してください。<br/> |
-|グループの作成  <br/> |GroupAdded  <br/> |サイトの管理者または所有者がサイトのグループを作成したか、グループが作成されるタスクを実行しました。たとえば、ユーザーがファイルを共有するためのリンクを初めて作成すると、システム グループがユーザーの OneDrive for Business サイトに追加されます。このイベントは、ユーザーが共有ファイルに対する編集アクセス許可を含むリンクを作成した結果の場合もあります。  <br/> |
 |送信接続の作成  <br/> |SendToConnectionAdded  <br/> |SharePoint 管理者または全体管理者が、SharePoint 管理センターの [レコード管理] ページで、新しい送信接続を作成しました。[送信接続] では、ドキュメント リポジトリまたはレコード センターの設定を指定します。送信接続を作成すると、コンテンツ オーガナイザーにより、指定された場所にドキュメントを送信できます。  <br/> |
 |サイト コレクションの作成  <br/> |SiteCollectionCreated  <br/> |SharePoint 管理者または全体管理者が、SharePoint Online 組織で新しいサイトを作成したか、ユーザーが OneDrive for Busines サイトをプロビジョニングしました。  <br/> |
-|グループの削除  <br/> |GroupRemoved  <br/> |ユーザーがサイトからグループを削除しました。  <br/> |
+|孤立したハブ サイトの削除<br/>|HubSiteOrphanHubDeleted<br/>|SharePoint 管理者またはグローバル管理者が、孤立したハブサイトを削除しました。これは、それに関連付けられているサイトがないハブサイトです。 孤立したハブは、元のハブサイトの削除が原因である可能性が大きいです。 <br/>|
 |送信接続の削除  <br/> |SendToConnectionRemoved  <br/> |SharePoint 管理者または全体管理者が、SharePoint 管理センターの [レコード管理] ページで、送信接続を削除しました。  <br/> |
 |サイトの削除  <br/> |SiteDeleted  <br/> |サイト管理者がサイトを削除しました。  <br/> |
 |ドキュメント プレビューの有効化  <br/> |PreviewModeEnabledSet  <br/> |サイト管理者がサイトのドキュメントのプレビューを有効にしました。  <br/> |
 |レガシー ワークフローの有効化  <br/> |LegacyWorkflowEnabledSet  <br/> |サイト管理者または所有者が、SharePoint 2013 ワークフロー タスク コンテンツの種類をサイトに追加します。グローバル管理者は、SharePoint 管理センターの組織全体のワーク フローを有効にすることもできます。  <br/> |
 |オンデマンドでの Office の有効化  <br/> |OfficeOnDemandSet  <br/> |サイト管理者が Office オンデマンドを有効にして、ユーザーが最新バージョンの Office デスクトップ アプリケーションにアクセスできるようにしました。Office オンデマンドは、SharePoint 管理センターで有効になり、フル機能の Office アプリケーションを含む Office 365 サブスクリプションを必要とします。  <br/> |
+|人の検索の検索先の有効化<br/>|PeopleResultsScopeSet<br/>|サイト管理者が、サイトの人の検索の検索先を作成しました。<br/>|
 |RSS フィードの有効化  <br/> |NewsFeedEnabledSet  <br/> |サイトの管理者または所有者がサイトの RSS フィードを有効にしました。全体管理者は、SharePoint 管理センターで組織全体の RSS フィードを有効にすることができます。  <br/> |
-|アクセス要求の設定の変更  <br/> |WebRequestAccessModified  <br/> |サイトでアクセス要求の設定が変更されました。  <br/> |
-|[メンバーが共有可能] 設定の変更  <br/> |WebMembersCanShareModified  <br/> |サイトで [**メンバーが共有可能**] 設定が変更されました。  <br/> |
-|サイト アクセス許可の変更  <br/> |SitePermissionsModified  <br/> |サイトの管理者または所有者 (またはシステム アカウント) がサイトのグループに割り当てられたアクセス許可レベルを変更しました。すべてのアクセス許可がグループから削除された場合も、このアクティビティが記録されます。<br/> > [!NOTE]> SharePoint Online でのこの操作は廃止されました。関連イベントを検出するには、**サイト コレクション管理者の追加**、**SharePoint グループへのユーザーまたはグループの追加**、**ユーザーに対するグループ作成の許可**、**グループの作成**、**グループの削除**などの他のアクセス許可関連のアクティビティを検索できます。         |
-|SharePoint グループからのユーザーまたはグループの削除  <br/> |RemovedFromGroup  <br/> |ユーザーが SharePoint グループからメンバーまたはゲストを削除しました。これは、意図したアクション、または別のアクティビティ (共有解除イベントなど) の結果の可能性があります。  <br/> |
+|サイトのハブサイトへの結合<br/>|HubSiteJoined<br/>|サイト所有者が、サイトをハブサイトに関連付けました。<br/>|
+|ハブサイトの登録<br/>|HubSiteRegistered<br/>|SharePoint またはグローバル管理者がハブサイトを作成しました。 その結果、サイトがハブサイトとして登録されます。 <br/>|
+|許可されるデータの場所の削除<br/>|AllowedDataLocationDeleted<br/>|SharePoint 管理者またはグローバル管理者が、複数地域環境で許可されるデータの場所を削除しました。<br/>|
+|地理的位置の管理者の削除<br/>|GeoAdminDeleted<br/>|SharePoint 管理者またはグローバル管理者が、ユーザーの地理的位置の管理者の役割を削除しました。<br/>|
 |サイトの名前変更  <br/> |SiteRenamed  <br/> |サイトの管理者または所有者がサイトの名前を変更しました  <br/> |
-|サイト管理者アクセス許可の要求  <br/> |SiteAdminChangeRequest  <br/> |ユーザーが、サイト コレクションのサイト コレクション管理者として追加するように要求しました。サイト コレクション管理者には、サイト コレクションとすべてのサブサイトのフル コントロール権限があります。  <br/> |
 |サイトの地域の移動のスケジュール設定  <br/> |SiteGeoMoveScheduled  <br/> |SharePoint 管理者または全体管理者が、SharePoint サイトまたは OneDrive サイトの地域の移動のスケジュールを正常に設定しました。Multi-Geo Capabilities を使用すると、Office 365 組織は複数の Office 365 データセンター地域 (geo と呼ばれる) にまたがることができます。詳細については、「[Office 365 の OneDrive および SharePoint Online での Multi-Geo Capabilities](https://go.microsoft.com/fwlink/?linkid=860840)」を参照してください。<br/> |
 |ホスト サイトの設定  <br/> |HostSiteSet  <br/> |SharePoint 管理者または全体管理者が、個人用サイトまたは OneDrive for Business サイトをホストするために指定されたサイトを変更しました。  <br/> |
-|グループの更新  <br/> |GroupUpdated  <br/> |サイトの管理者または所有者がサイトのグループの設定を変更しました。これには、グループ名の変更、グループのメンバーシップを表示または変更できるユーザーの変更、メンバーシップ要求の処理方法の変更などがあります。  <br/> |
+|地理的位置のストレージ クォータの構成  <br/> |GeoQuotaAllocated<br/> |SharePoint 管理者またはグローバル管理者が、複数地域環境での地理的位置のストレージ クォータを構成しました。<br/> |
+|サイトのハブサイトへの結合解除<br/>|HubSiteUnjoined<br/>|サイト所有者が、ハブサイトへのサイトの関連付けを解除しました。<br/>|
+|ハブサイトの登録解除<br/>|HubSiteUnregistered<br/>|SharePoint またはグローバル管理者が、ハブサイトとしてのサイトの登録を解除しました。 ハブサイトが解除されると、そのサイトはハブサイトとして機能しなくなります。 <br/>|
 ||||
   
 ### <a name="exchange-mailbox-activities"></a>Exchange メールボックス アクティビティ
@@ -455,7 +511,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |レコードとして分類されたメッセージ  <br/> |ApplyRecordLabel<br/> |メッセージがレコードとして分類されました。 これは、コンテンツをレコードとして分類する保持ラベルが手動または自動でメッセージに適用されるときに発生します。<br/> |
 |別のフォルダーへのメッセージのコピー  <br/> |Copy  <br/> |メッセージが別のフォルダーにコピーされました。  <br/> |
 |メールボックス アイテムの作成  <br/> |Create  <br/> |メールボックスの予定表、連絡先、メモ、または仕事フォルダーでアイテムが作成されます。たとえば、新しい会議出席依頼が作成されます。メッセージの作成、送信、または受信は監査されないことにご注意ください。また、メールボックス フォルダーの作成も監視されません。  <br/> |
-|Outlook Web App の新しい受信トレイ ルールの作成  <br/> |NewInboxRule<br/> |<br/> |
+|Outlook Web App の新しい受信トレイ ルールの作成  <br/> |NewInboxRule<br/> |ユーザーが、Outlook Web App の受信トレイの新しいルールを作成しました。<br/> |
 |削除済みアイテム フォルダーからのメッセージの削除  <br/> |SoftDelete  <br/> |メッセージが完全に削除されたか、削除済みアイテム フォルダーから削除されました。これらのアイテムは、回復可能なアイテム フォルダーに移動されます。ユーザーがメッセージを選択し、**Shift + Delete** キーを押した場合も、回復可能なアイテム フォルダーにメッセージが移動されます。<br/> |
 |別のフォルダーへのメッセージの移動  <br/> |Move  <br/> |メッセージが別のフォルダーに移動されました。  <br/> |
 |削除済みアイテム フォルダーへのメッセージの移動  <br/> |MoveToDeletedItems  <br/> |メッセージが削除され、削除済みアイテム フォルダーに移動されました。  <br/> |
@@ -587,6 +643,37 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 > [!NOTE]
 > [**アクティビティ**] ドロップダウン リストの [**電子情報開示アクティビティ**] に一覧表示されるアクティビティによって発生するイベントが、検索結果に表示されるまで最大 30 分かかります。これに対して、電子情報開示コマンドレット アクティビティによって発生する、対応するイベントが検索結果に表示されるまで最大 24 時間かかります。 
   
+### <a name="advanced-ediscovery-activities"></a>Advanced eDiscovery アクティビティ
+
+次の表では、IT 担当者および法務担当者が Microsoft 365 の Advanced eDiscovery でタスクを実行した場合に発生するアクティビティを一覧表示します。 詳細については、「[Microsoft 365 の Advanced eDiscovery ソリューションの概要](compliance20/overview-ediscovery-20.md)」を参照してください。
+
+|**フレンドリ名**|**操作名**|**説明**|
+|:-----|:-----|:-----|
+| 別のレビュー セットへのデータの追加<br/>         | AddWorkingSetQueryToWorkingSet<br/>  |  ユーザーが、1つのレビュー セットから別のレビュー セットにドキュメントを追加しました。<br/>|
+| レビュー セットへのデータの追加 <br/>                | AddQueryToWorkingSet<br/>            |  ユーザーが、Advanced eDiscovery のケースに関連付けられているコンテンツ検索の検索結果をレビュー セットに追加しました。<br/>|
+| Office 365 以外のデータのレビュー セットへの追加<br/>  | AddNonOffice365DataToWorkingSet<br/> |  ユーザーが、Office 365 以外のデータをレビュー セットに追加しました。<br/>|
+| レビュー セットへの修復済みドキュメントの追加<br/> | AddRemediatedData<br/>               |  ユーザーが、インデックス作成エラーがあったドキュメントを修復したものをレビュー セットにアップロードしました。<br/>|
+| レビュー セット内のデータの分析 <br/>             | RunAlgo<br/>                         |  ユーザーが、レビュー セット内のドキュメントの分析を実行しました。 <br/>|
+| レビュー セット内ドキュメントへの注釈付け <br/>        | AnnotateDocument<br/>                |  ユーザーが、レビュー セット内のドキュメントに注釈を付けました。 注釈付けには、ドキュメントのコンテンツの編集が含まれます。 <br/>|
+| 読み込みセットの比較 <br/>                      | LoadComparisonJob<br/>               |ユーザーが、レビュー セット内の 2 つの異なる読み込みセットを比較しました。 読み込みセットは、ケースに関連付けられているコンテンツ検索からのデータがレビュー セットに追加されたときに比較されます。  <br/>|
+| 編集されたドキュメントの PDF への変換<br/>      | BurnJob<br/>                         |ユーザーが、レビュー セット内のすべての編集されたドキュメントを PDF ファイルに変換しました。<br/>|
+| レビュー セットの作成<br/>                       | CreateWorkingSet<br/>                |ユーザーがレビュー セットを作成しました。<br/>|
+| レビュー セット検索の作成<br/>                | CreateWorkingSetSearch<br/>          |ユーザーが、レビュー セット内のドキュメントを検索する検索クエリを作成しました。 <br/>|
+| タグの作成<br/>                              | CreateTag<br/>                       |ユーザーが、レビュー セット内でタグ グループを作成しました。 タグ グループには、1つまたは複数の子タグを含めることができます。 これらのタグは、レビュー セット内のドキュメントへのタグ付けに使用されます。<br/>|
+| レビュー セット検索の削除 <br/>               | DeleteWorkingSetSearch<br/>          |ユーザーが、レビュー セット内の検索クエリを削除しました。<br/>|
+| タグの削除<br/>                              | DeleteTag<br/>                       |ユーザーが、レビュー セット内のタグまたはタグ グループを削除しました。<br/>|
+| ダウンロードしたドキュメント<br/>                      | DownloadDocument<br/>                |ユーザーが、レビュー セットからドキュメントをダウンロードしました。<br/>|
+| タグの編集 <br/>                              | DownloadDocument<br/>                |ユーザーが、レビュー セット内のタグを変更しました。<br/>|
+| レビュー セットからのドキュメントのエクスポート <br/>      | ExportJob<br/>                       |ユーザーが、レビュー セットからドキュメントをエクスポートしました。<br/>|
+| ケースの設定の変更 <br/>                   | UpdateCaseSettings<br/>              | ユーザーがケースの設定を変更しました。 ケースの設定には、ケース情報、アクセス許可、検索と分析の動作を制御する設定などがあります。<br/>|
+| レビュー セット検索の変更<br/>               | UpdateWorkingSetSearch<br/>          |  ユーザーが、レビュー セット内の検索クエリを編集しました。<br/>|
+| レビュー セット検索のプレビュー <br/>             | PreviewWorkingSetSearch<br/>         |  ユーザーが、レビュー セット内で検索クエリの結果をプレビューしました。<br/>|
+| エラー ドキュメントの修復 <br/>              | ErrorRemediationJob<br/>             |  ユーザーが、インデックス作成エラーを含むファイルを修正しました。 <br/>|
+| ドキュメントのタグ付け<br/>                          | TagFiles<br/>                        |  ユーザーが、レビュー セット内のドキュメントにタグを付けました。<br/>|
+| クエリ結果のタグ付け<br/>                | TagJob<br/>                          |  ユーザーが、レビュー セット内の、検索クエリの条件に一致するすべてのドキュメントにタグを付けました。<br/>|
+| レビュー セット内ドキュメントの表示<br/>            | ViewDocument<br/>                    |  ユーザーが、レビュー セット内のドキュメントを表示しました。<br/>|
+|||
+
 ### <a name="power-bi-activities"></a>Power BI アクティビティ
   
 監査ログで、Power BI のアクティビティを検索できます。Power BI アクティビティについては、「[組織内での監査の使用](https://docs.microsoft.com/power-bi/service-admin-auditing#activities-audited-by-power-bi)」の「Power BI の監査対象アクティビティ」セクションを参照してください。
