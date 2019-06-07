@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365の保持ラベルを使用すると、特定の種類のイベントが発生したときの保持期間を設定できます。イベントによって保持期間の開始がトリガーされ、その種類のイベントに保持ラベルが適用されているすべてのコンテンツに、ラベルの保持アクションが適用されます。イベント ベースの保持は、通常、記録管理プロセスの一部として使用されます。
-ms.openlocfilehash: 6d4d9a1af20e16453343dd2b68b87b033c46e324
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0b8b82038ef00e135b759b4b818a1bb4bd559cf7
+ms.sourcegitcommit: 34b37d83944dce0a05aa1aacc0d4f7bec55e959f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154629"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34728624"
 ---
 # <a name="overview-of-event-driven-retention"></a>イベント ベースの保持の概要
 
@@ -103,7 +103,7 @@ Microsoft 365コンプライアンスセンター、Microsoft 365セキュリテ
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>手順 3: ラベルの発行または自動適用
 
-他のラベルと同様に、手動または自動的にコンテンツに適用されるように、イベントベースのラベルを発行、または自動適用する必要があります。これは**ラベル**または**ラベルポリシー**ページで実行できます。コンテンツを記録として分類するラベルは、発行して手動でコンテンツに適用することしかできません。 
+他のラベルと同じように、イベント ベースのラベルを発行または自動適用する必要があります。したがって、このラベルはコンテンツに手動または自動で適用されます。これは [**ラベル**] または [**ラベルポリシー**] ページで実行できます。 
   
 ![ラベルの発行または自動適用のオプション](media/c9232c54-bbc0-40d2-abc2-122d5d1e70af.png)
   
