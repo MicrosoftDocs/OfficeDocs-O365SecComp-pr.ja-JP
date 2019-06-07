@@ -22,12 +22,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: '[安全なリンク] 機能を使用すると、Office ドキュメントや電子メールメッセージ内のハイパーリンクの時間を確認できます。 安全なリンクを使用して、フィッシングやその他の攻撃から組織を保護します。'
-ms.openlocfilehash: 1be7db8ad96a5fd0b46500288e674946e763385a
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: 4f1449fb97ad8d8f263073c917eed2c399bf4f22
+ms.sourcegitcommit: ff1d18aaddde2048f1cf88338c916295cf8c354e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34652530"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "34748580"
 ---
 # <a name="office-365-atp-safe-links"></a>Office 365 ATP の安全なリンク
 
@@ -40,7 +40,7 @@ Office 365 の ATP の安全なリンク ( [Advanced Threat Protection](office-3
   
 ATP の安全なリンクポリシーが確立されると、Office 365 のグローバル管理者、セキュリティ管理者、およびセキュリティ閲覧者は、 [Advanced Threat Protection のレポートを表示](view-reports-for-atp.md)できるようになります。 これらのレポートの情報は、セキュリティチームが組織を保護したり、セキュリティインシデントを研究したりするために、さらに手順を実行するのに役立ちます。
 
-[新機能が atp に追加される](office-365-atp.md#new-features-in-office-365-atp)と、Office 365 セキュリティチームは、組織の Atp の[安全なリンクポリシー](set-up-atp-safe-links-policies.md)を追加または編集することができます。 また、新しく改訂された[警告ページ](atp-safe-links-warning-pages.md)や、Outlook でのネイティブリンクのレンダリングなどの変更と改善が見られることがあります。
+[新機能が atp に追加される](office-365-atp.md#new-features-in-office-365-atp)と、Office 365 セキュリティチームは、組織の Atp の[安全なリンクポリシー](set-up-atp-safe-links-policies.md)を追加または編集することができます。 また、新しく改訂された[警告ページ](atp-safe-links-warning-pages.md)や Outlook でのネイティブリンクのレンダリング (Office 365 ProPlus version 1809 で導入された) などの変更と改良が発生することがあります。
          
 ## <a name="how-to-get-atp-safe-links-protection"></a>ATP の安全なリンク保護を取得する方法
 

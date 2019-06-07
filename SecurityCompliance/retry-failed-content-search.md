@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: コンテンツの場所にエラーがあるコンテンツ検索を解決するには、[再試行] ボタンを使用します。
-ms.openlocfilehash: ab6f33e00a057ccd9ee7b80e0499b2838855ac83
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 91c656a05111391ad93e03946cf367133f2c25a2
+ms.sourcegitcommit: ff1d18aaddde2048f1cf88338c916295cf8c354e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157069"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "34748570"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>コンテンツ検索を再試行してコンテンツの場所のエラーを解決する
 
@@ -34,7 +34,7 @@ User1@contoso.com: Problem in processing the request. Please try again later. If
 User2@contoso.com: Application error occurred. Please try again later. (CS012-002)
 ```
 
-これらのエラー (エラーコード CS008-009 および CS012) は、コンテンツ検索で特定のコンテンツの場所の検索に失敗したことを示しています。この例では、2つのメールボックスが検索されませんでした。 これらのエラーは、コンテンツ検索の [状態の詳細] ポップアップページに表示されます。
+これらのエラー (エラーコード CS001-002、CS003-002、CS008-009、CS012-002、および CS0XX-0XX の他のエラー) は、コンテンツ検索で特定のコンテンツの場所を検索できなかったことを示しています。この例では、2つのメールボックスが検索されませんでした。 これらのエラーは、コンテンツ検索の [状態の詳細] ポップアップページに表示されます。
 
 ## <a name="cause-of-content-location-errors"></a>コンテンツの場所にエラーが発生する原因
 
