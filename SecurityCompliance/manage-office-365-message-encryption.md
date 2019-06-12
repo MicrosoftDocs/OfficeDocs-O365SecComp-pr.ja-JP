@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Office 365 Message Encryption (OME) の設定を終了すると、いくつかの方法で展開の構成をカスタマイズできます。 たとえば、1回限りのパスコードを有効にするかどうかを構成したり、Outlook on the web に [保護] ボタンを表示したり、その他の設定を行ったりすることができます。 この記事のタスクでは、その方法について説明します。
-ms.openlocfilehash: 5c498c648fb28e6538bfc2fde8bdf50e8e02cbfc
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f19556f88783eed86bd33a7fdcbd1efae18c3ef3
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155749"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852531"
 ---
 # <a name="manage-office-365-message-encryption"></a>Office 365 Message Encryption を管理する
 
-Office 365 Message Encryption (OME) の設定を終了すると、いくつかの方法で展開の構成をカスタマイズできます。 たとえば、1回限りのパスコードを有効にするかどうかを構成したり、Outlook on the web に [**保護**] ボタンを表示したり、その他の設定を行ったりすることができます。 この記事のタスクでは、その方法について説明します。
+Office 365 Message Encryption (OME) の設定を終了すると、いくつかの方法で展開の構成をカスタマイズできます。 たとえば、1回限りのパスコードを有効にするかどうかを構成したり、Outlook on the web の [**暗号化**] ボタンを表示したりすることができます。 この記事のタスクでは、その方法について説明します。
 
 ## <a name="manage-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>Google、Yahoo、Microsoft アカウントの受信者がこれらのアカウントを使用して Office 365 メッセージ暗号化ポータルにサインインできるかどうかを管理する
 
@@ -78,11 +78,11 @@ OME によって暗号化されたメッセージの受信者が Outlook を使�
    Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $true
    ```
 
-## <a name="manage-the-display-of-the-protect-button-in-outlook-on-the-web"></a>Outlook on the web で [保護] ボタンの表示を管理する
+## <a name="manage-the-display-of-the-encrypt-button-in-outlook-on-the-web"></a>Outlook on the web で [暗号化] ボタンの表示を管理する
 
-OME をセットアップすると、web 上の Outlook の [**保護**] ボタンは無効になります。 管理者は、このボタンをエンドユーザーに表示するかどうかを管理できます。
+管理者は、このボタンをエンドユーザーに表示するかどうかを管理できます。
   
-### <a name="to-manage-whether-the-protect-button-appears-in-outlook-on-the-web"></a>Outlook on the web に [保護] ボタンが表示されるかどうかを管理するには
+### <a name="to-manage-whether-the-encrypt-button-appears-in-outlook-on-the-web"></a>Outlook on the web に [暗号化] ボタンを表示するかどうかを管理するには
   
 1. Office 365 組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始して Exchange Online に接続します。 手順については、「 [Exchange Online PowerShell への接続](https://aka.ms/exopowershell)」を参照してください。
 
@@ -92,13 +92,13 @@ OME をセットアップすると、web 上の Outlook の [**保護**] ボタ�
    Set-IRMConfiguration -SimplifiedClientAccessEnabled <$true|$false>
    ```
 
-   たとえば、[**保護**] ボタンを無効にするには、次のようにします。
+   たとえば、[**暗号化**] ボタンを無効にするには、次のようにします。
 
    ```powershell
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
    ```
 
-   [**保護**] ボタンを有効にするには:
+   [**暗号化**] ボタンを有効にするには:
 
    ```powershell
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $true
@@ -226,7 +226,7 @@ Office 365 の高度なメッセージ暗号化を使用している場合は、
   
 1. Office 365 組織のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online に接続します。 手順については、「 [Exchange Online PowerShell への接続](https://aka.ms/exopowershell)」を参照してください。
 
-2. Web 上の Outlook で [**保護**] ボタンを有効にした場合は、SimplifiedClientAccessEnabled パラメーターを指定して、Set-IRMConfiguration コマンドレットを実行することによって、これを無効にします。 それ以外の場合は、この手順をスキップします。
+2. Web 上の Outlook で [**暗号化**] ボタンを有効にした場合は、SimplifiedClientAccessEnabled パラメーターを指定して、Set-IRMConfiguration コマンドレットを実行することによって、そのボタンを無効にします。 それ以外の場合は、この手順をスキップします。
 
    ```powershell
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $false

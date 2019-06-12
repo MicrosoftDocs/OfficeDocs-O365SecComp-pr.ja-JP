@@ -9,19 +9,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理者は、ネイティブコネクタをセットアップして、Facebook ビジネスページ、LinkedIn 会社のページ、インスタント Bloomberg などのデータソースからサードパーティのデータをインポートできます。 これにより、Office 365 でサードパーティのデータソースのデータをアーカイブできるため、組織のサードパーティデータのガバナンスを管理するために、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用できます。
-ms.openlocfilehash: 7a71eac07d3d3260809f90cd2e470c32c44e9dda
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 管理者は、ネイティブコネクタをセットアップして、Facebook のビジネスページ、Twitter、LinkedIn 会社のページ、インスタント Bloomberg などのデータソースからサードパーティのデータをインポートできます。 これにより、Office 365 でサードパーティのデータソースのデータをアーカイブできるため、組織のサードパーティデータのガバナンスを管理するために、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用できます。
+ms.openlocfilehash: 33972d6d3124841a4cd2636c3d7756ec55f5cfa9
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152189"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852611"
 ---
 # <a name="use-a-sample-connector-to-archive-facebook-data-in-office-365-preview"></a>サンプルコネクタを使用して Office 365 で Facebook データをアーカイブする (プレビュー)
 
-Office 365 で Facebook データをアーカイブするためのサンプルコネクタ機能はプレビュー段階です。
+Office 365 で Facebook データをアーカイブするためのサンプルコネクタ機能は、プレビュー段階にあります。
 
-Office 365 のセキュリティ & コンプライアンスセンターのサンプルコネクタを使用して、Facebook のビジネスページ、LinkedIn、Twitter、Bloomberg などのサードパーティのデータソースからデータをインポートおよびアーカイブします。 サンプルコネクタをセットアップして構成すると、そのコネクタはサードパーティのデータソースに接続し (スケジュールに従って)、アイテムのコンテンツを電子メールメッセージの形式に変換してから、それらのアイテムを Office 365 のメールボックスにインポートします。
+Office 365 のセキュリティ & コンプライアンスセンターのサンプルコネクタを使用して、Facebook のビジネスページ、LinkedIn、Twitter、Instant Bloomberg などのサードパーティのデータソースのデータをインポートおよびアーカイブします。 サンプルコネクタをセットアップして構成すると、そのコネクタはサードパーティのデータソースに接続し (スケジュールに従って)、アイテムのコンテンツを電子メールメッセージの形式に変換してから、それらのアイテムを Office 365 のメールボックスにインポートします。
 
 サードパーティのデータがインポートされた後、訴訟ホールド、コンテンツ検索、インプレースアーカイブ、監査、監督、Office 365 アイテム保持ポリシーなどの Office 365 コンプライアンス機能をサードパーティのデータに適用することができます。 たとえば、メールボックスが訴訟ホールドの対象となっている場合、またはアイテム保持ポリシーに割り当てられている場合、サードパーティのデータは保持されます。 高度な電子情報開示ケースでは、コンテンツ検索を使用してサードパーティのデータを検索したり、保管担当者に関連付けることができます。 サンプルコネクタを使用して Office 365 でサードパーティのデータをインポートおよびアーカイブすることにより、組織は政府ポリシーおよび規制ポリシーに準拠し続けることができます。
 
@@ -37,12 +37,12 @@ Office 365 のセキュリティ & コンプライアンスセンターのサン
 
 - 組織が有効な Azure サブスクリプションを持っている必要があります。 既存の Azure サブスクリプションがない場合は、次のオプションのいずれかにサインアップできます。
 
-    - [1年間の無料の Azure サブスクリプションにサインアップする](https://azure.microsoft.com/free) 
+    – [1 年間の無料の Azure サブスクリプションにサインアップする](https://azure.microsoft.com/free) 
 
-    - [Azure へのご購入のサブスクリプションへのサインアップ](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
+    –[お客いただく Azure サブスクリプションへのサインアップ](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > Office 365 サブスクリプションに含まれている[無料の Azure Active Directory サブスクリプション](use-your-free-azure-ad-subscription-in-office-365.md)は、Security _AMP_ コンプライアンスセンターのサンプルコネクタをサポートしていません。
+    > Office 365 サブスクリプションに含まれている[無料の Azure Active Directory サブスクリプション](use-your-free-azure-ad-subscription-in-office-365.md)は、セキュリティ & コンプライアンスセンターのサンプルコネクタをサポートしていません。
 
 - 組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 この要求に同意するには、[このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Office 365 グローバル管理者の資格情報でサインインし、要求を承諾します。
 
@@ -58,11 +58,11 @@ Office 365 のセキュリティ & コンプライアンスセンターのサン
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>手順 2: Azure Active Directory でアプリを作成する
 
-次の手順では、Azure Active Directory (AAD) に新しいアプリを登録します。 このアプリは、手順4で Facebook コネクタ用に実装する web app リソースに対応しています。 
+次の手順では、Azure Active Directory (AAD) に新しいアプリを登録します。 このアプリは、手順4で Facebook コネクタ用に実装した web app リソースに対応しています。 
 
 詳細な手順については、「 [Azure Active Directory でアプリを作成](deploy-facebook-connector.md#step-2-create-an-app-in-azure-active-directory)する」を参照してください。
 
-この手順が完了すると (手順に従って)、次の情報がテキストファイルに保存されます。 これらの値は、展開プロセスの後の手順で使用されます。
+この手順が完了すると (手順に従って)、次の情報がテキストファイルに保存されます。 これらの値は、展開プロセスの後の手順で使用します。
 
 - AAD アプリケーション ID
 - AAD アプリケーションシークレット
@@ -85,13 +85,13 @@ Office 365 のセキュリティ & コンプライアンスセンターのサン
 
 この手順が完了すると (手順に従って)、次の情報が提供されます (前の手順を完了した後、テキストファイルにコピーしたもの) web app リソースを作成します。
 
-- APISecretKey –この手順の完了時にこのシークレットを作成します。手順7で使用されます。
+- APISecretKey —この手順の完了時にこのシークレットを作成します。手順7で使用されます。
 - StorageAccountConnectionString –手順3で Azure storage アカウントを作成した後にコピーした接続文字列 Uri。
 - tenantId –手順2で Azure Active Directory で Facebook connector アプリを作成した後にコピーした Office 365 組織のテナント ID。
 
-また、この手順でダウンロードした SampleConnector ファイルをアップロードして、Facebook connector アプリのソースコードを展開することもできます。
+さらに、この手順の手順1でダウンロードした SampleConnector ファイルをアップロードして、Facebook connector アプリのソースコードを展開します。
 
-この手順を完了したら、app Service の URL (例:) https://fbconnector.azurewebsites.net)をコピーしてください。 手順5、手順6、手順7を完了するには、このを使用する必要があります。
+この手順を完了したら、app Service の URL (例:) https://fbconnector.azurewebsites.net)をコピーしてください。 手順5、手順6、手順7を完了するには、これを使用する必要があります。
 
 ## <a name="step-5-register-the-web-app-on-facebook"></a>手順 5: Facebook で web アプリを登録する
 
@@ -99,7 +99,7 @@ Office 365 のセキュリティ & コンプライアンスセンターのサン
 
 詳細な手順については、「 [Facebook アプリを登録する](deploy-facebook-connector.md#step-5-register-the-facebook-app)」を参照してください。
 
-この手順が完了すると (手順に従って)、次の情報がテキストファイルに保存されます。 これらの値は、手順6で Facebook connector アプリを構成するために使用されます。
+この手順が完了したら (手順に従って)、次の情報をテキストファイルに保存します。 この値は、手順6で Facebook connector アプリを構成するために使用されます。
 
 - Facebook アプリケーション ID
 - Facebook アプリケーションシークレット
@@ -122,11 +122,11 @@ Office 365 のセキュリティ & コンプライアンスセンターのサン
 
 ## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>手順 7: セキュリティ & コンプライアンスセンターでカスタムコネクタをセットアップする
 
-最後の手順として、セキュリティ & コンプライアンスセンターでカスタムコネクタを設定します。これにより、Facebook ビジネスページから Office 365 の指定したメールボックスにデータがインポートされます。 この手順を正常に完了すると、Office 365 インポートサービスは、Facebook のビジネスページから Office 365 にデータをインポートするプロセスを開始します。 
+最後の手順として、セキュリティ & コンプライアンスセンターでカスタムコネクタを設定して、Facebook ビジネスページから Office 365 の指定したメールボックスにデータをインポートします。 この手順を完了すると、Office 365 インポートサービスは、Facebook のビジネスページから Office 365 にデータをインポートするプロセスを開始します。 
 
-詳細な手順については、「 [Security _AMP_ コンプライアンスセンターでカスタムコネクタを設定する](deploy-facebook-connector.md#step-7-set-up-a-custom-connector-in-the-security--compliance-center)」を参照してください。 
+詳細な手順については、「[セキュリティ & コンプライアンスセンターでカスタムコネクタを設定する](deploy-facebook-connector.md#step-7-set-up-a-custom-connector-in-the-security--compliance-center)」を参照してください。 
 
-この手順が完了すると (手順に従って)、次の情報が提供されます (手順を完了したら、テキストファイルにコピーしたことになります)。
+この手順が完了すると (手順に従って)、次の情報が提供されます (手順を完了した後、テキストファイルにコピーしたことになります)。
 
-- Azure app service の URL (手順4で取得)。例:https://fbconnector.azurewebsites.net)
+- Azure app service の URL (手順4で取得)。たとえば、https://fbconnector.azurewebsites.net)
 - APISecretKey (手順4で作成したもの)

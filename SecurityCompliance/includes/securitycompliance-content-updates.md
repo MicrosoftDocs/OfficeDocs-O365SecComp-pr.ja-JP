@@ -3,34 +3,6 @@
 
 
 
-## <a name="week-of-april-22-2019"></a>2019 年 4 月 22 日の週
-
-
-| 公開日 |トピックのタイトル | 変更 |
-|------|------------|--------|
-| 4/22/2019 | [新しい Microsoft 365 セキュリティセンターと Microsoft 365 コンプライアンスセンターが一般公開されるようになりました。](/Office365/SecurityCompliance/microsoft-security-and-compliance) | 更新日時 |
-| 4/22/2019 | [ユーザーとデバイス アクセスの保護](/Office365/SecurityCompliance/protect-access-to-data-and-services) | 更新日時 |
-| 4/22/2019 | [Office 365 で脅威から保護する](/Office365/SecurityCompliance/protect-against-threats) | 更新日時 |
-| 2019/4/23 | [Overview of importing your organization PST files to Office 365](/Office365/SecurityCompliance/importing-pst-files-to-office-365) | 更新日時 |
-| 2019/4/23 | [Office 365 の監督ポリシー](/Office365/SecurityCompliance/supervision-policies) | 更新日時 |
-| 2019/4/23 | [Microsoft Office 365 での不正な同意付与の検出と修復](/Office365/SecurityCompliance/detect-and-remediate-illicit-consent-grants) | 更新日時 |
-| 2019/4/23 | [セキュリティ & コンプライアンスセンターでアーカイブメールボックスを有効にする](/Office365/SecurityCompliance/enable-archive-mailboxes) | 更新日時 |
-| 2019/4/23 | [Office 365 Security & コンプライアンスセンターのアクセス許可](/Office365/SecurityCompliance/permissions-in-the-security-and-compliance-center) | 更新日時 |
-| 4/24/2019 | [Office 365 監査ログの詳細なプロパティ](/Office365/SecurityCompliance/detailed-properties-in-the-office-365-audit-log) | 更新日時 |
-| 4/24/2019 | [Office 365 で脅威から保護する](/Office365/SecurityCompliance/protect-against-threats) | 更新日時 |
-| 4/24/2019 | Threat management in the Office 365 Security &amp; Compliance Center | 削除 |
-| 4/24/2019 | [Office 365 のコンテンツを検索する](/Office365/SecurityCompliance/search-for-content) | 更新日時 |
-| 4/25/2019 | [Microsoft 365 セキュリティ センターでのデバイスの監視](/Office365/SecurityCompliance/monitor-devices) | 更新日時 |
-| 4/25/2019 | [Office 365 でサードパーティのデータをアーカイブする](/Office365/SecurityCompliance/archiving-third-party-data) | 更新日時 |
-| 4/25/2019 | [コンテンツ検索を使用して Office 365 にインポートされたサードパーティデータを検索する](/Office365/SecurityCompliance/use-content-search-to-search-third-party-data-that-was-imported) | 更新日時 |
-| 4/25/2019 | [Office 365 アプリ用のアプリの条件付きアクセス制御を展開する](/Office365/SecurityCompliance/ocas-deploy-conditional-access-app-control) | 更新日時 |
-| 4/25/2019 | [Office 365 Cloud App Security のセッション ポリシー](/Office365/SecurityCompliance/ocas-session-policies) | 更新日時 |
-| 4/25/2019 | [Exchange Online Protection の概要](/Office365/SecurityCompliance/eop/exchange-online-protection-overview) | 更新日時 |
-| 4/26/2019 | [Office 365 の分離とアクセス制御 (Office 365)](/Office365/SecurityCompliance/office-365-isolation-in-office-365) | 更新日時 |
-| 4/26/2019 | [データ損失防止ポリシーの概要](/Office365/SecurityCompliance/data-loss-prevention-policies) | 更新日時 |
-| 4/26/2019 | [セキュリティ/コンプライアンス センターと Exchange 管理センターでの DLP の動作](/Office365/SecurityCompliance/how-dlp-works-between-admin-centers) | 更新日時 |
-
-
 ## <a name="week-of-april-29-2019"></a>2019年4月29日の週
 
 
@@ -182,7 +154,7 @@
 | 5/10/2019 | [高度な電子情報開示でサポートされているファイルの種類](/Office365/SecurityCompliance/compliance20/supported-filetypes-ediscovery20) | 更新日時 |
 | 5/10/2019 | [Exchange Online メールボックスに格納されているコンテンツ](/Office365/SecurityCompliance/what-is-stored-in-exo-mailbox) | 更新日時 |
 | 5/10/2019 | [Microsoft 365 でデータ流出インシデントを管理する](/Office365/SecurityCompliance/datainvestigations/manage-data-spillage-incidents) | 更新日時 |
-| 5/10/2019 | [Office 365 Security & コンプライアンスセンターのアクセス許可](/Office365/SecurityCompliance/permissions-in-the-security-and-compliance-center) | 更新日時 |
+| 5/10/2019 | [Office 365 セキュリティ & コンプライアンスセンターのアクセス許可](/Office365/SecurityCompliance/permissions-in-the-security-and-compliance-center) | 更新日時 |
 
 
 ## <a name="week-of-may-13-2019"></a>2019年5月13日の週
@@ -252,7 +224,7 @@
 | 5/15/2019 | [DLP の既定ポリシーの概要](/Office365/SecurityCompliance/get-started-with-the-default-dlp-policy) | 更新日時 |
 | 5/15/2019 | [Office 365 の脅威の調査と対応についての作業を開始する](/Office365/SecurityCompliance/get-started-with-ti) | 更新日時 |
 | 5/15/2019 | [セキュリティ/コンプライアンス センターと Exchange 管理センターでの DLP の動作](/Office365/SecurityCompliance/how-dlp-works-between-admin-centers) | 更新日時 |
-| 5/15/2019 | [Windows Defender Advanced Threat Protection を使用して Office 365 Advanced Threat Protection を統合する](/Office365/SecurityCompliance/integrate-office-365-ti-with-wdatp) | 更新日時 |
+| 5/15/2019 | [Microsoft Defender ATP を使用した Office 365 ATP の統合](/Office365/SecurityCompliance/integrate-office-365-ti-with-wdatp) | 更新日時 |
 | 5/15/2019 | [配信された悪意のある電子メールを検索して調査する (Office 365 の脅威の調査と応答](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | 更新日時 |
 | 5/15/2019 | [Office 365 のユーザーに Office 365 の脅威の調査と応答機能を安全に保つ](/Office365/SecurityCompliance/keep-users-safe-with-office-365-ti) | 更新日時 |
 | 5/15/2019 | [SharePoint、OneDrive、Microsoft Teams で検出された悪意のあるファイルに関する情報を表示する](/Office365/SecurityCompliance/malicious-files-detected-in-spo-odb-or-teams) | 更新日時 |
@@ -613,7 +585,7 @@
 | 5/17/2019 | [Office 365 で送信スパムを制御する](/Office365/SecurityCompliance/outbound-spam-controls) | 更新日時 |
 | 5/17/2019 | [Office 365 のコンテンツ検索で部分的にインデックスが作成されたアイテム](/Office365/SecurityCompliance/partially-indexed-items-in-content-search) | 更新日時 |
 | 5/17/2019 | [コンテンツ検索用にアクセス許可フィルターを構成する](/Office365/SecurityCompliance/permissions-filtering-for-content-search) | 更新日時 |
-| 5/17/2019 | [Office 365 Security & コンプライアンスセンターのアクセス許可](/Office365/SecurityCompliance/permissions-in-the-security-and-compliance-center) | 更新日時 |
+| 5/17/2019 | [Office 365 セキュリティ & コンプライアンスセンターのアクセス許可](/Office365/SecurityCompliance/permissions-in-the-security-and-compliance-center) | 更新日時 |
 | 5/17/2019 | [Office 365 の&amp;セキュリティコンプライアンスを計画する](/Office365/SecurityCompliance/plan-for-security-and-compliance) | 更新日時 |
 | 5/17/2019 | [Office 用データを準備する 365 Advanced eDiscovery](/Office365/SecurityCompliance/prepare-data-for-advanced-ediscovery) | 更新日時 |
 | 5/17/2019 | [Office 365 アドバンスト eDiscovery 用に検索結果を準備する](/Office365/SecurityCompliance/prepare-search-results-for-advanced-ediscovery) | 更新日時 |
@@ -671,7 +643,7 @@
 | 5/22/2019 | [Office 365 ATP for SharePoint、OneDrive、Microsoft Teams](/Office365/SecurityCompliance/atp-for-spo-odb-and-teams) | 更新日時 |
 | 5/22/2019 | [チュートリアル - インサイトから詳細レポートへの移動](/Office365/SecurityCompliance/from-an-insight-to-a-detailed-report) | 更新日時 |
 | 5/22/2019 | [Office 365 の脅威の調査と対応についての作業を開始する](/Office365/SecurityCompliance/get-started-with-ti) | 更新日時 |
-| 5/22/2019 | [Windows Defender Advanced Threat Protection を使用して Office 365 Advanced Threat Protection を統合する](/Office365/SecurityCompliance/integrate-office-365-ti-with-wdatp) | 更新日時 |
+| 5/22/2019 | [Microsoft Defender ATP を使用した Office 365 ATP の統合](/Office365/SecurityCompliance/integrate-office-365-ti-with-wdatp) | 更新日時 |
 | 5/22/2019 | [配信された悪意のある電子メールを検索して調査する (Office 365 の脅威の調査と応答](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | 更新日時 |
 | 5/22/2019 | [Office 365 のユーザーに Office 365 の脅威の調査と応答機能を安全に保つ](/Office365/SecurityCompliance/keep-users-safe-with-office-365-ti) | 更新日時 |
 | 5/22/2019 | [Office 365 Advanced Threat Protection](/Office365/SecurityCompliance/office-365-atp) | 更新日時 |
@@ -685,3 +657,46 @@
 | 5/22/2019 | [セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する](/Office365/SecurityCompliance/view-email-security-reports) | 更新日時 |
 | 5/22/2019 | [Office 365 Advanced Threat Protection のレポートを表示する](/Office365/SecurityCompliance/view-reports-for-atp) | 更新日時 |
 | 5/22/2019 | [ゼロアワー自動消去 - スパムやマルウェアからの保護](/Office365/SecurityCompliance/zero-hour-auto-purge) | 更新日時 |
+
+
+## <a name="week-of-may-27-2019"></a>2019年5月27日の週
+
+
+| 公開日 |トピックのタイトル | 変更 |
+|------|------------|--------|
+| 5/28/2019 | [サンプルコネクタを使用して Office 365 で Twitter データをアーカイブする (プレビュー)](/Office365/SecurityCompliance/archive-twitter-data-with-sample-connector) | 更新日時 |
+| 5/28/2019 | [スパム フィルター ポリシーの構成](/Office365/SecurityCompliance/configure-your-spam-filter-policies) | 更新日時 |
+| 5/28/2019 | [Office 365 でアーカイブ Twitter データにコネクタを展開する](/Office365/SecurityCompliance/deploy-twitter-connector) | 更新日時 |
+| 5/28/2019 | [セキュリティ & コンプライアンスセンターで監査ログを検索する](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | 更新日時 |
+| 5/28/2019 | [脅威エクスプローラー (およびリアルタイム検出)](/Office365/SecurityCompliance/threat-explorer) | 更新日時 |
+| 5/29/2019 | [セキュリティ/コンプライアンスセンターのアラートポリシー](/Office365/SecurityCompliance/alert-policies) | 更新日時 |
+| 5/29/2019 | [セキュリティ & コンプライアンスセンターで監査ログを検索する](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | 更新日時 |
+| 5/29/2019 | [データ処理中のエラー修復](/Office365/SecurityCompliance/compliance20/error-remediation) | 更新日時 |
+| 5/29/2019 | [調査のためにデータを処理するときのエラー修復](/Office365/SecurityCompliance/datainvestigations/error-remediation) | 更新日時 |
+| 5/29/2019 | [Microsoft 365 のデータ調査 (プレビュー) の概要](/Office365/SecurityCompliance/datainvestigations/overview-data-investigations) | 更新日時 |
+| 5/29/2019 | [ファイル計画マネージャーの概要](/Office365/SecurityCompliance/file-plan-manager) | 更新日時 |
+| 5/29/2019 | [新しい Microsoft 365 コンプライアンスセンターの概要](/Office365/SecurityCompliance/microsoft-365-compliance-center) | 更新日時 |
+| 5/29/2019 | [新しい Microsoft 365 セキュリティセンターと Microsoft 365 コンプライアンスセンターが一般公開されるようになりました。](/Office365/SecurityCompliance/microsoft-security-and-compliance) | 更新日時 |
+| 5/29/2019 | [Microsoft 365 でのレコード管理](/Office365/SecurityCompliance/records-management) | 更新日時 |
+| 5/29/2019 | [保持ラベルの概要](/Office365/SecurityCompliance/labels) | 更新日時 |
+| 5/30/2019 | [Office 365 ATP の安全な添付ファイル](/Office365/SecurityCompliance/atp-safe-attachments) | 更新日時 |
+| 5/30/2019 | [Office 365 ATP の安全なリンク](/Office365/SecurityCompliance/atp-safe-links) | 更新日時 |
+| 5/30/2019 | 
+  [PowerShell を使用して保持ラベルを一括で作成および発行する](/Office365/SecurityCompliance/bulk-create-publish-labels-using-powershell) | 更新日時 |
+| 5/30/2019 | [Office 365 で脅威から保護する](/Office365/SecurityCompliance/protect-against-threats) | 更新日時 |
+| 5/31/2019 | [データ調査のアクセス許可を割り当てる (プレビュー)](/Office365/SecurityCompliance/datainvestigations/permissions) | 更新日時 |
+| 5/31/2019 | [セキュリティ & コンプライアンスセンターで監査ログを検索する](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | 更新日時 |
+| 5/31/2019 | [Office 365 ATP の安全な添付ファイル](/Office365/SecurityCompliance/atp-safe-attachments) | 更新日時 |
+| 5/31/2019 | [Office 365 ATP の安全なリンクの警告ページ](/Office365/SecurityCompliance/atp-safe-links-warning-pages) | 更新日時 |
+| 5/31/2019 | [Office 365 ATP の安全なリンク](/Office365/SecurityCompliance/atp-safe-links) | 更新日時 |
+| 5/31/2019 | [Microsoft Defender ATP を使用した Office 365 ATP の統合](/Office365/SecurityCompliance/integrate-office-365-ti-with-wdatp) | 更新日時 |
+| 5/31/2019 | [新しい Microsoft 365 セキュリティセンターと Microsoft 365 コンプライアンスセンターが一般公開されるようになりました。](/Office365/SecurityCompliance/microsoft-security-and-compliance) | 更新日時 |
+| 5/31/2019 | [Office 365 Advanced Threat Protection](/Office365/SecurityCompliance/office-365-atp) | 更新日時 |
+| 5/31/2019 | [Office 365 脅威の調査および対応](/Office365/SecurityCompliance/office-365-ti) | 更新日時 |
+| 5/31/2019 | [セキュリティ ダッシュボードの概要](/Office365/SecurityCompliance/security-dashboard) | 更新日時 |
+| 5/31/2019 | [Office 365 ATP の安全なリンク機能を使用して、ユーザー設定のブロック URL リストを設定する](/Office365/SecurityCompliance/set-up-a-custom-blocked-urls-list-wtih-atp) | 更新日時 |
+| 5/31/2019 | [Office 365 の ATP の安全なリンクを使用して、リライトしないカスタムの Url リストを設定する](/Office365/SecurityCompliance/set-up-a-custom-do-not-rewrite-urls-list-with-atp) | 更新日時 |
+| 5/31/2019 | [Office 365 の ATP の安全な添付ファイルのポリシーを設定する](/Office365/SecurityCompliance/set-up-atp-safe-attachments-policies) | 更新日時 |
+| 5/31/2019 | [Office 365 の ATP の安全なリンクポリシーを設定する](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | 更新日時 |
+| 5/31/2019 | [SIEM server と Microsoft 365 の統合](/Office365/SecurityCompliance/siem-server-integration) | 更新日時 |
+| 5/31/2019 | [SharePoint、OneDrive、Microsoft Teams の Office 365 ATP を有効にする](/Office365/SecurityCompliance/turn-on-atp-for-spo-odb-and-teams) | 更新日時 |
