@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Office 365 で非アクティブなメールボックスを作成するには、ホールドまたは Office 365 アイテム保持ポリシーをメールボックスに適用してから、対応する Office 365 ユーザーアカウントを削除します。 非アクティブなメールボックス内のアイテムは、非アクティブになる前に適用されていた保留またはアイテム保持ポリシーの期間中保持されます。 非アクティブなメールボックスを完全に削除するには、保持ポリシーまたはアイテム保持ポリシーを削除するだけです。
-ms.openlocfilehash: e07b062f6b77f18589334b141e38edddc5ea18c5
-ms.sourcegitcommit: f88f14999aeb70ecf265cd98eb09a3304b150be8
+ms.openlocfilehash: ca6fc5b579b6974ce89db14d318a6dc5a50f3f5c
+ms.sourcegitcommit: eed9fb363c939168e4bc49698bb34038a54433db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34768952"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34913078"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Office 365 で非アクティブなメールボックスを作成および管理する
 
@@ -32,9 +32,9 @@ Office 365 により、削除済みメールボックスの内容を保持する
   
 ## <a name="before-you-begin"></a>始める前に
 
-- メールボックスを非アクティブにするには、メールボックスを削除する前に、訴訟ホールドまたは Office 365 のアイテム保持ポリシーをメールボックスに適用できるように、Exchange Online プラン2のライセンスを割り当てる必要があります。 Exchange Online プラン2のライセンスは、Office 365 Enterprise E3 および E5 サブスクリプションの一部です。 メールボックスに Exchange Online プラン1ライセンス (Office 365 Enterprise E1 サブスクリプションの一部) が割り当てられている場合は、削除する前にメールボックスに保留リストを適用できるように、メールボックスに別の Exchange Online アーカイブライセンスを割り当てる必要があります。 詳細については、「[Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153)」をご覧ください。
+- メールボックスを非アクティブにするには、メールボックスを削除する前に、訴訟ホールドまたは Office 365 のアイテム保持ポリシーをメールボックスに適用できるように、Exchange Online プラン2のライセンスを割り当てる必要があります。 Exchange Online プラン2のライセンスは、Office 365 Enterprise E3 および E5 サブスクリプションの一部です。 メールボックスに Exchange online プラン1または Exchange Online キオスクライセンス (それぞれ、Office 365 E1 および F1 サブスクリプションの一部) が割り当てられている場合は、メールボックス b に保留を適用できるように、別の Exchange Online アーカイブライセンスを割り当てる必要があります。efore を削除します。 詳細については、「[Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153)」をご覧ください。
     
-- 削除された Exchange Online メールボックスに関連付けられたライセンスは、対応する Office 365 ユーザー アカウントを削除した後に使用可能になります。 その後、 [Office 365 for business のユーザーにライセンス](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)を別のユーザーに割り当てることができます。 
+- 削除された Exchange Online メールボックスに関連付けられたライセンスは、対応する Office 365 ユーザーアカウントを削除した後に使用できるようになります。 その後、[これらのライセンスを別のユーザーに割り当てる](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)ことができます。 
     
 - 訴訟ホールドまたは Office 365 アイテム保持ポリシー (コンテンツを保持または保持してから削除するように構成されている) が削除される前に、メールボックスに適用されていない場合、メールボックスのコンテンツは保持または検出可能になりません。 なお、削除されたメールボックスは、削除後 30 日以内であれば回復できますが、回復されない場合、メールボックスとその内容は 30 日後に完全に削除されます。
     
