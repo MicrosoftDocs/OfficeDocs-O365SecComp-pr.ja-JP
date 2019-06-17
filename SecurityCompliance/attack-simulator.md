@@ -3,7 +3,7 @@ title: Office 365 の攻撃シミュレータ
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/05/2019
+ms.date: 06/13/2019
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,19 +15,19 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Office 365 のグローバル管理者として、攻撃シミュレータを使用して、組織内で現実的な攻撃シナリオを実行できます。 これは、実際の攻撃によってビジネスに遭遇する前に、脆弱性のあるユーザーを特定して見つけるのに役立ちます。
-ms.openlocfilehash: a39259cdcc47e2c881b3977aa570b1f221f0b2bd
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 938a8f944fee22fb16b87923d7608b3bfcfee0fb
+ms.sourcegitcommit: 62447503300376aa95dd05fb5276f93a9f6a20b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077623"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34927570"
 ---
 # <a name="attack-simulator-in-office-365"></a>Office 365 の攻撃シミュレータ
 
-**概要**Office 365 のグローバル管理者であり、組織に[office 365 の脅威の調査および応答機能](office-365-ti.md)がある場合は、攻撃シミュレータを使用して、組織内で現実的な攻撃シナリオを実行できます。 これは、実際の攻撃が下の回線に影響を与える前に、脆弱性のあるユーザーを特定して見つけるのに役立ちます。 詳細については、この記事をお読みください。
+**概要**Office 365 の全体管理者またはセキュリティ管理者が[office 365 の脅威の調査および応答機能](office-365-ti.md)を使用している場合は、攻撃シミュレータを使用して、組織内で現実的な攻撃シナリオを実行できます。 これは、実際の攻撃が下の回線に影響を与える前に、脆弱性のあるユーザーを特定して見つけるのに役立ちます。 詳細については、この記事をお読みください。
 
 > [!IMPORTANT]
-> Office 365 Advanced Threat Protection および脅威の調査と応答 (以前は脅威インテリジェンス) が Office 365 Advanced Threat Protection プラン2の一部になっており、追加の脅威保護機能を備えています。 詳細については、「 [office 365 Advanced Threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [Office 365 Advanced threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
+> Office 365 Advanced Threat Protection および脅威の調査と応答 (以前の脅威インテリジェンス) は、Office 365 Advanced Threat Protection プラン2の一部であり、追加の脅威保護機能も含まれています。 詳細については、「 [office 365 Advanced Threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [Office 365 Advanced threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
   
 ## <a name="the-attacks"></a>攻撃
 
@@ -37,11 +37,8 @@ ms.locfileid: "34077623"
 - [パスワード-スプレー攻撃](#password-spray-attack)
 - [ブルートフォースパスワード攻撃](#brute-force-password-attack)
     
-攻撃が正常に開始されるようにするには、シミュレートされた攻撃を実行するために使用しているアカウントで多要素認証を使用します。 さらに、Office 365 の全体管理者である必要があります。
-  
-> [!NOTE]
-> 条件付きアクセスのサポートは近日に予定されています。 
-  
+攻撃が正常に開始されるようにするには、シミュレートされた攻撃の実行に使用しているアカウントが多要素認証を使用していることを確認してください。 さらに、Office 365 の全体管理者またはセキュリティ管理者である必要があります。 役割とアクセス許可の詳細については、「 [Office 365 セキュリティ & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+    
 アタックシミュレータにアクセスするには、 &amp;セキュリティ/コンプライアンスセンターで、[ **Threat management** \> **アタックシミュレータ**] を選択します。
   
 ## <a name="before-you-begin"></a>開始する前に
@@ -50,13 +47,12 @@ ms.locfileid: "34077623"
       
 - **組織の電子メールは Exchange Online でホストされて**います。 (アタックシミュレータは、オンプレミスの電子メールサーバーでは使用できません)。
     
-- **Office 365 の全体管理者である**
+- **Office 365 の全体管理者またはセキュリティ管理者**
     
-- **少なくとも Office 365 のグローバル管理者アカウントでは、[多要素認証](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)(MFA) が有効になっ**ています。 (組織内のすべてのユーザーに対して MFA が有効になっていることが理想的です)。
+- **少なくとも Office 365 のグローバル管理者アカウントとセキュリティ管理者に対して、[多要素認証/条件付きアクセス](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)が有効になっ**ています。 (理想的には、組織内のすべてのユーザーに対して多要素認証/条件付きアクセスが有効になっています)。
  
 - **組織に[Office 365 Advanced Threat Protection プラン 2](office-365-ti.md)があり**、セキュリティ&amp;コンプライアンスセンターでアタックシミュレータが表示されている (**脅威管理** \>の**アタックシミュレータ**に移動)<br/>![脅威管理-アタックシミュレータ](media/ThreatMgmt-AttackSimulator.png)
 
-    
 ## <a name="display-name-spear-phishing-attack"></a>表示名スピアー-フィッシング攻撃
 
 フィッシングとは、ソーシャルエンジニアリングスタイルの攻撃として分類された広範な攻撃の一般的な用語です。 この攻撃は、スピアーフィッシングに重点を置いており、特定の個人または組織のグループを対象とした、より標的とされた攻撃に重点を置いています。 通常、一部の偵察を実行し、組織内の役員からのメールメッセージなど、受信者の信頼を生成する表示名を使用して、カスタマイズされた攻撃を行います。
@@ -127,11 +123,17 @@ ms.locfileid: "34077623"
     
 ## <a name="new-features-in-attack-simulator"></a>アタックシミュレータの新機能
 
-アタックシミュレータに新機能が追加されています。 これらには以下が含まれます。
+新しい機能が最近、アタックシミュレータに追加されました。 これらには以下が含まれます。
 
-- **高度なレポート機能**。 高速 (または最も低速) のデータを表示して、攻撃のシミュレーションの電子メールメッセージを開くことができます。また、メッセージ内のリンクをクリックすると、最も速く、または遅くなります。
+- **高度なレポート機能**。 アタックシミュレーションの電子メールメッセージを開くための最も高速 (または最も遅く) 時間などのデータを表示する機能。メッセージのリンクをクリックすると、その時間が短縮され、視覚エフェクトが向上します。
 
-- **電子メールテンプレートエディター**。 今後の攻撃のシミュレーションに使用できる、再利用可能なカスタム電子メールテンプレートを作成することができます。
+- **電子メールテンプレートエディター**。 再利用可能なカスタム電子メールテンプレートを作成する機能。これは、今後の攻撃シミュレーションに使用できます。
+
+- **CSV 受信者のインポート**。 CSV ファイルを使用して、アドレス帳の選択を使用する代わりに、対象となる受信者リストをインポートする機能。
+
+**より多くの新機能が、今後のアタックシミュレータに公開されてい**ます。 これらには以下が含まれます。
+
+- **添付ファイルのペイロードのフィッシングシミュレーション**。 URL の代わりに、添付ファイルをフィッシングシミュレーションのペイロードとして使用する機能。
 
 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)を参照して、開発中のもの、ロールアウトされているもの、および既に起動しているものを確認してください。
 

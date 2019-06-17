@@ -3,7 +3,7 @@ title: 情報バリアポリシーの定義
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/31/2019
+ms.date: 06/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,33 +11,35 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Microsoft Teams の情報障壁に関するポリシーを定義する方法について説明します。
-ms.openlocfilehash: 3ec9d89f22456f00104135013ee6009e8e4824df
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: 8d575d0cde4bfec7109cc302f68beaf1040cd894
+ms.sourcegitcommit: eeb51470d8996e93fac28d7f12c6117e2aeb0cf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34668318"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34935949"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>情報バリアのポリシーを定義する (プレビュー)
 
+## <a name="overview"></a>概要
+
 情報の障壁を使用すると、特定のユーザーセグメントが相互に通信するのを防ぐように設計されたポリシーを定義したり、特定のセグメントのみが特定のセグメントと通信できるようにすることができます。 情報バリアポリシーは、組織が関連する業界標準および規制に準拠し、潜在的な競合を回避するのに役立ちます。 詳細については、「[情報の障壁 (プレビュー)](information-barriers.md)」を参照してください。 
 
-> [!IMPORTANT]
-> この記事では、情報バリアポリシーを計画、定義、実装、および管理する方法について説明します。 いくつかの手順が関係しており、作業フローはいくつかの部分に分かれています。 情報バリアポリシーの定義 (または編集) を開始する前に、必ず[前提条件](#prerequisites)とプロセス全体に目を通してください。
+この記事では、情報バリアポリシーを計画、定義、実装、および管理する方法について説明します。 いくつかの手順が関係しており、作業フローはいくつかの部分に分かれています。 情報バリアポリシーの定義 (または編集) を開始する前に、必ず[前提条件](#prerequisites)とプロセス全体に目を通してください。
+
+> [!TIP]
+> この記事には、情報バリアポリシーを計画して定義するのに役立つ、[シナリオの例](#example-contosos-departments-segments-and-policies)とダウンロード可能な[Excel ブック](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)が含まれています。
 
 ## <a name="concepts-of-information-barrier-policies"></a>情報バリアポリシーの概念
 
-情報バリアポリシーを計画、定義、および実装する前に、基になる概念を理解しておく必要があります。 情報の障壁を使用して、この記事で説明されているユーザーアカウントの属性、セグメント、情報バリアポリシー、およびポリシーアプリケーションプロセスを操作できます。 
+情報バリアポリシーの基礎概念を理解しておくと役に立ちます。
 
-- **ユーザーアカウントの属性**は、Azure Active Directory (または Exchange Online) で定義されます。 これらの属性には、部署、役職、場所、チーム名などを含めることができます。 
+- **ユーザーアカウントの属性**は、Azure Active Directory (または Exchange Online) で定義されます。 これらの属性には、部署、役職、場所、チーム名、その他のジョブプロファイルの詳細を含めることができます。 
 
-- **セグメント**は、Office 365 セキュリティ & コンプライアンスセンターで、部署、役職、場所、チーム名、[サポートさ](information-barriers-attributes.md)れている任意の属性など、選択された**ユーザーアカウント属性**を使用して定義されます。 セグメントを定義しても、ユーザーに影響はありません。情報バリアポリシーが定義され、適用される段階を設定するだけです。
+- **セグメント**とは、Office 365 セキュリティ & コンプライアンスセンターで、選択した**ユーザーアカウント属性**を使用して定義された一連のユーザーのことです。 ([サポートされている属性の一覧](information-barriers-attributes.md)を参照してください)。 
 
-- **情報バリアポリシー**は、個々の**セグメント**に定義され、割り当てられます。 すべてのセグメントにポリシーが割り当てられるわけではありません。 また、1つのセグメントに複数のポリシーを割り当てることはできません。 ポリシーを定義するときは、次の2種類のポリシーから選択します。
-    - 1つのセグメントが別のセグメントと通信できないようにするポリシー
-    - 1つのセグメントのみが特定の他のセグメントと通信できるようにするポリシー
-
-    組織が法律上および業界の要件を満たしていることを確認するために、最小限のポリシーを使用することが理想的です。
+- **情報バリアポリシー**では、通信制限または制限を決定します。 情報バリアポリシーを定義するときは、次の2種類のポリシーから選択します。
+    - あるセグメントが別のセグメントと通信できないようにする "ブロック" ポリシー
+    - 1つのセグメントのみが特定の他のセグメントと通信できるようにする "許可" ポリシー
 
 - **ポリシーアプリケーション**は、すべての情報バリアポリシーが定義された後に実行され、組織に適用する準備が整っています。
 
@@ -45,102 +47,73 @@ ms.locfileid: "34668318"
 
 |フェーズ    |関係するもの  |
 |---------|---------|
-|[前提条件が満たされていることを確認する](#prerequisites)     |-サブスクリプションに情報の障壁が含まれていることを確認する<br/>-セグメントとポリシーの定義/編集に必要なアクセス許可を持っていることを確認する<br/>-ディレクトリデータが組織の構造を反映していることを確認します。<br/>-スコープ付きディレクトリ検索が Microsoft Teams で有効になっていることを確認します。<br/>-監査ログが有効になっていることを確認します。<br/>-PowerShell を使用してこの記事のタスクを実行します (コマンドレットの例を示します)。<br/>-Microsoft Teams の情報障壁に対する管理者の同意を提供します (手順は含まれています)。          |
+|[前提条件が満たされていることを確認する](#prerequisites)     |-[必要なライセンスとアクセス許可](information-barriers.md#required-licenses-and-permissions)を持っていることを確認する<br/>-組織のディレクトリに、組織の構造を反映したデータが含まれていることを確認します。<br/>-Microsoft Teams のスコープ付きディレクトリ検索を有効にする<br/>-監査ログが有効になっていることを確認します。<br/>-PowerShell の使用 (例は提供されています)<br/>-Microsoft Teams に対する管理者の同意を提供する (手順は含まれています)          |
 |[パート 1: 組織内のすべてのユーザーのセグメント化](#part-1-segment-users)     |-必要なポリシーを決定する<br/>-定義するセグメントの一覧を作成する<br/>-使用する属性を識別する<br/>-ポリシーフィルターの観点からセグメントを定義する        |
 |[パート 2: 情報バリアポリシーを定義する](#part-2-define-information-barrier-policies)     |-ポリシーを定義します (まだ適用しない)<br/>-2 つの種類 (ブロックまたは許可) から選択します。 |
-|[パート 3: 情報バリアポリシーを適用する](#part-3-apply-information-barrier-policies)     |-ポリシーをアクティブな状態に設定します。<br/>-ポリシーアプリケーションを実行する<br/>-ポリシーの状態を確認する         |
-|(必要な場合)[セグメントまたはポリシーを編集する](#edit-a-segment-or-a-policy)     |-セグメントを編集する<br/>-ポリシーを編集または削除する<br/>-ポリシーアプリケーションを実行する<br/>-ポリシーの状態を確認する         |
-|(必要な場合)[トラブルシューティング](information-barriers-troubleshooting.md)|-ポリシーが期待どおりに機能していない場合に処理を実行する|
+|[パート 3: 情報バリアポリシーを適用する](#part-3-apply-information-barrier-policies)     |-ポリシーをアクティブな状態に設定します。<br/>-ポリシーアプリケーションを実行する<br/>-ポリシーの状態を表示する         |
+|(必要な場合)[セグメントまたはポリシーを編集する](#edit-a-segment-or-a-policy)     |-セグメントを編集する<br/>-ポリシーを編集または削除する<br/>-ポリシーアプリケーションを実行する<br/>-ポリシーの状態を表示する         |
+|(必要な場合)[トラブルシューティング](information-barriers-troubleshooting.md)|-期待どおりに動作しない場合に処理を実行する|
 
 ## <a name="prerequisites"></a>前提条件
 
-**現時点では、情報バリア機能はプライベートプレビューに**あります。 これらの機能が一般公開されると、次のようなサブスクリプションに含まれます。
+[必要なライセンスとアクセス許可](information-barriers.md#required-licenses-and-permissions)に加えて、次の要件が満たされていることを確認してください。 
+     
+- **ディレクトリデータ**。 組織の構造がディレクトリデータに反映されていることを確認します。 これを行うには、Azure Active Directory (または Exchange Online) に、グループメンバーシップ、部署名などのユーザーアカウント属性が正しく設定されていることを確認してください。 詳細については、以下のリソースを参照してください。
+  - [情報バリアポリシーの属性 (プレビュー)](information-barriers-attributes.md)
+  - [Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新する](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+  - [Office 365 PowerShell でユーザー アカウント プロパティを構成する](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
 
-- Microsoft 365 E5
-- Office 365 E5
-- Office 365 Advanced Compliance
-- Microsoft 365 E5 情報の保護とコンプライアンス
+- **スコープ付きディレクトリ検索**。 組織の最初の情報バリアポリシーを定義する前に、 [Microsoft Teams でスコープ付きディレクトリ検索を有効](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search)にする必要があります。 情報バリアポリシーを設定または定義する前に、スコープ付きディレクトリ検索を有効にした後、少なくとも24時間待機します。
 
-詳細については、「[コンプライアンスソリューション](https://products.office.com/business/security-and-compliance/compliance-solutions)」を参照してください。
+- **監査ログ**。 ポリシーアプリケーションの状態を参照するには、監査ログを有効にする必要があります。 セグメントまたはポリシーの定義を開始する前に、この手順を実行することをお勧めします。 詳細については、「 [Office 365 監査ログ検索をオンまたはオフに](turn-audit-log-search-on-or-off.md)する」を参照してください。
 
-### <a name="permissions"></a>アクセス許可
+- **PowerShell**。 現時点で、情報バリアポリシーは、PowerShell コマンドレットを使用して Office 365 セキュリティ & コンプライアンスセンターで定義および管理されます。 この記事ではいくつかの例が示されていますが、PowerShell のコマンドレットとパラメーターについて理解しておく必要があります。 [Office 365 セキュリティ & コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)します。
 
-情報バリアポリシーを定義または編集するには、次のいずれかのような**適切な役割が割り当てられている必要があり**ます。
-- Microsoft 365 エンタープライズグローバル管理者
-- Office 365 グローバル管理者
-- コンプライアンス管理者
-- IB コンプライアンス管理 (新しい役割)
+- **Microsoft Teams の情報障壁に対する管理者の同意**。 ポリシーが適切に設定されている場合、情報バリアはチャットセッションからユーザーを削除することはできません。 これにより、組織はポリシーと規制に準拠したままになります。 次の手順を使用して、Microsoft Teams で情報バリアポリシーが期待どおりに動作するようにします。 
 
-役割とアクセス許可の詳細については、「 [Office 365 セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
-       
-### <a name="directory-data"></a>ディレクトリデータ
+   1. 次の PowerShell コマンドレットを実行します。
 
-**組織の構造がディレクトリデータに反映されていることを確認し**ます。 これを行うには、Azure Active Directory (または Exchange Online) に、グループメンバーシップ、部署名などのユーザーアカウント属性が正しく設定されていることを確認してください。 詳細については、以下のリソースを参照してください。
-- [情報バリアポリシーの属性 (プレビュー)](information-barriers-attributes.md)
-- [Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新する](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
-- [Office 365 PowerShell でユーザー アカウント プロパティを構成する](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
+      ```
+      Login-AzureRmAccount 
+      $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
+      $sp=Get-AzureRmADServicePrincipal -ServicePrincipalName $appId
+      if ($sp -eq $null) { New-AzureRmADServicePrincipal -ApplicationId $appId }
+      Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
+      ```
 
-### <a name="scoped-directory-search"></a>スコープ付きディレクトリ検索
+   2. メッセージが表示されたら、Office 365 の職場または学校アカウントを使用してサインインします。
 
-**組織の最初の情報バリアポリシーを定義する前に、 [Microsoft Teams でスコープ付きディレクトリ検索を有効](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search)にする必要があり**ます。 情報バリアポリシーを設定または定義する前に、スコープ付きディレクトリ検索を有効にした後、少なくとも24時間待機します。
+   3. [**要求されたアクセス許可**] ダイアログボックスで情報を確認し、[**同意**する] を選択します。
 
-### <a name="audit-logging"></a>監査ログ
+すべての前提条件が満たされたら、次のセクションに進みます。
 
-ポリシーアプリケーションの状態を参照するには、監査ログを有効にする必要があります。 セグメントまたはポリシーの定義を開始する前に、この手順を実行することをお勧めします。 詳細については、「 [Office 365 監査ログ検索をオンまたはオフに](turn-audit-log-search-on-or-off.md)する」を参照してください。
-
-### <a name="powershell"></a>PowerShell
-
-**現時点で、情報バリアポリシーは、PowerShell コマンドレットを使用して Office 365 セキュリティ & コンプライアンスセンターで定義および管理され**ます。 この記事では、いくつかのシナリオと例が提供されていますが、PowerShell のコマンドレットとパラメーターについて理解しておく必要があります。 
-
-[Office 365 セキュリティ & コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)します。
-
-### <a name="provide-admin-consent-for-information-barriers-in-microsoft-teams"></a>Microsoft Teams の情報障壁に対する管理者の同意を提供する
-
-次の手順を使用して、Microsoft Teams で情報バリアポリシーが期待どおりに動作するようにします。 
-
-たとえば、ポリシーが適切に設定されている場合、情報障壁によって、チャットセッションからユーザーを削除することはできません。 これにより、組織はポリシーと規制に準拠したままになります。 
-
-1. 次の PowerShell コマンドレットを実行します。
-
-    ```
-    Login-AzureRmAccount 
-    $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
-    $sp=Get-AzureRmADServicePrincipal -ServicePrincipalName $appId
-    if ($sp -eq $null) { New-AzureRmADServicePrincipal -ApplicationId $appId }
-    Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
-    ```
-
-2. メッセージが表示されたら、Office 365 の職場または学校アカウントを使用してサインインします。
-
-3. [**要求されたアクセス許可**] ダイアログボックスで情報を確認し、[**同意**する] を選択します。
+> [!TIP]
+> プランの準備に役立てるため、この記事にはシナリオの例が含まれています。 [「Contoso 社の部門、セグメント、ポリシー」を参照してください](#example-contosos-departments-segments-and-policies)。<p>また、セグメントとポリシーを計画して定義したり、PowerShell コマンドレットを作成したりするのに役立つダウンロード可能な Excel ブックが用意されています。 [ブックを取得](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)します。 
 
 ## <a name="part-1-segment-users"></a>パート 1: セグメントユーザー
 
-このフェーズでは、必要なポリシーを決定し、定義するセグメントの一覧を作成して、セグメントを定義します。
+このフェーズでは、必要な情報バリアポリシーを決定し、定義するセグメントの一覧を作成して、セグメントを定義します。
 
 ### <a name="determine-what-policies-are-needed"></a>必要なポリシーを決定する
 
 法的および業界の規制を考慮しています。組織内で情報の障壁ポリシーを必要とするグループは誰ですか。 リストを作成します。 他のグループとの通信を禁止する必要があるグループはありますか。 1つまたは2つの他のグループとのみ通信できるようにする必要があるグループはありますか。 次の2つのグループのいずれかに属している必要があるポリシーについて考えます。
-- あるグループが別のグループと通信できないようにする**ポリシーをブロック**する
-- 特定のグループだけが特定の他のグループと通信できるようにする**ポリシーを許可**します。
+- "Block" ポリシーは、あるグループが別のグループと通信できないようにします。
+- [許可] ポリシーにより、グループは特定の他の特定のグループのみと通信できるようになります。
 
-最初にグループとポリシーの一覧を作成したら、次の手順を実行して、必要なセグメントを特定します。
-
-(この記事の「 [Example: Contoso 社の部署と計画](#contosos-departments-and-plan)」を参照してください)。
+最初にグループとポリシーの一覧を作成したら、次の手順を実行して、必要なセグメントを特定します。 
 
 ### <a name="identify-segments"></a>セグメントを識別する
 
 ポリシーの初期リストに加えて、組織のセグメントの一覧を作成します。 組織内のすべてのユーザーはセグメントに属している必要があり、ユーザーは2つ以上のセグメントに所属している必要はありません。 各セグメントには、1つの情報バリアポリシーのみを適用できます。 
 
-セグメントを定義するために使用する組織のディレクトリデータの属性を決定します。 *Department*、 *MemberOf*、またはサポートされている属性のいずれかを使用できます。 すべてのユーザーに対して選択する属性に値が設定されていることを確認してください。 サポートされている属性の一覧を表示するには、「[情報バリアポリシーの属性 (プレビュー)](information-barriers-attributes.md)」を参照してください。
+セグメントを定義するために使用する組織のディレクトリデータの属性を決定します。 *Department*、 *MemberOf*、またはサポートされている属性のいずれかを使用できます。 すべてのユーザーに対して選択する属性に値が設定されていることを確認してください。 [情報バリア (プレビュー) でサポートされている属性の一覧を参照してください](information-barriers-attributes.md)。
 
 > [!IMPORTANT]
 > **次のセクションに進む前に、セグメントを定義するために使用できる属性の値がディレクトリデータにあることを確認して**ください。 ディレクトリデータに使用する属性の値が含まれていない場合は、情報の障壁を処理する前に、すべてのユーザーアカウントにその情報を含めるように更新する必要があります。 これに関するヘルプを表示するには、次のリソースを参照してください。<br/>- [Office 365 PowerShell を使用してユーザーアカウントのプロパティを構成する](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新する](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>PowerShell を使用してセグメントを定義する
 
-> [!IMPORTANT]
-> **セグメントが重ならないようにして**ください。 組織内の各ユーザーは、1つ (1 つの) セグメントに所属している必要があります。 ユーザーは、2つ以上のセグメントに属することはできません。 セグメントは、組織内のすべてのユーザーに対して定義する必要があります。 (この記事の「 [Example: Contoso の定義済みセグメント](#contosos-defined-segments)」を参照してください)。
+セグメントを定義しても、ユーザーに影響はありません。情報バリアポリシーが定義され、適用される段階を設定するだけです。
 
 1. 組織セグメントを定義するには、使用する[属性](information-barriers-attributes.md)に対応する**usergroupfilter**パラメーターを指定して、**新しい-組織**セグメントコマンドレットを使用します。 
 
@@ -154,22 +127,22 @@ ms.locfileid: "34668318"
 
     各コマンドレットを実行すると、新しいセグメントに関する詳細情報の一覧が表示されます。 詳細には、セグメントの種類、作成者または最終更新日時などが含まれます。 
 
+> [!IMPORTANT]
+> **セグメントが重ならないようにして**ください。 組織内の各ユーザーは、1つ (1 つの) セグメントに所属している必要があります。 ユーザーは、2つ以上のセグメントに属することはできません。 セグメントは、組織内のすべてのユーザーに対して定義する必要があります。 (この記事の「 [Example: Contoso の定義済みセグメント](#contosos-defined-segments)」を参照してください)。
+
 セグメントを定義した後、「情報バリアポリシーを定義する」に進みます。
 
 ## <a name="part-2-define-information-barrier-policies"></a>パート 2: 情報バリアポリシーを定義する
 
+特定のセグメント間の通信を禁止する必要があるか、または特定のセグメントへの通信を制限する必要があるかを決定します。 組織が法律上および業界の要件を満たしていることを確認するために、最小限のポリシーを使用することが理想的です。
+
 定義するユーザーセグメントと情報バリアポリシーの一覧を使用して、シナリオを選択し、手順を実行します。 
-
-> [!IMPORTANT]
-> **ポリシーを定義するときは、1つのセグメントに複数のポリシーを割り当てない**ようにしてください。 たとえば、 *sales*というセグメントに対して1つのポリシーを定義する場合は、 *sales*に対して追加のポリシーを定義しないでください。 
-
-特定のセグメント間の通信を禁止する必要があるか、または特定のセグメントへの通信を制限する必要があるかを決定します。 次のシナリオのいずれかを選択してポリシーを定義します。
 
 - [シナリオ 1: セグメント間の通信をブロックする](#scenario-1-block-communications-between-segments)
 - [シナリオ 2: セグメントが他の1つのセグメントとのみ通信できるようにする](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
 
-> [!NOTE]
-> 情報バリアポリシーを定義するときには、それらのポリシーを適用する準備ができるまで、非アクティブ状態に設定してください。 ポリシーを定義 (または編集) すると、それらのポリシーがアクティブな状態に設定された後、ユーザーに影響を与えることはありません。
+> [!IMPORTANT]
+> **ポリシーを定義するときは、1つのセグメントに複数のポリシーを割り当てない**ようにしてください。 たとえば、 *sales*というセグメントに対して1つのポリシーを定義する場合は、 *sales*に対して追加のポリシーを定義しないでください。<p>また、情報バリアポリシーを定義するときには、これらのポリシーを適用する準備ができるまで、非アクティブ状態に設定してください。 ポリシーを定義 (または編集) すると、それらのポリシーがアクティブな状態に設定された後、ユーザーに影響を与えることはありません。
 
 (この記事の「 [Example: Contoso の情報バリアポリシー](#contosos-information-barrier-policies) 」を参照してください)。
 
@@ -255,11 +228,11 @@ ms.locfileid: "34668318"
 
     約30時間後に、組織のポリシーがユーザーごとに適用されます。 組織の規模が大きい場合、このプロセスが完了するまでに24時間以上かかることがあります。 (一般的なガイドラインとして、5000のユーザーアカウントを処理するのには1時間かかります)。
 
-## <a name="verify-status-of-user-accounts-segments-policies-or-policy-application"></a>ユーザーアカウント、セグメント、ポリシー、またはポリシーアプリケーションの状態を確認する
+## <a name="view-status-of-user-accounts-segments-policies-or-policy-application"></a>ユーザーアカウント、セグメント、ポリシー、またはポリシーアプリケーションの状態を表示する
 
-PowerShell を使用すると、次の表に示すように、ユーザーアカウント、セグメント、ポリシー、およびポリシーアプリケーションの状態を確認できます。
+PowerShell を使用すると、次の表に示すように、ユーザーアカウント、セグメント、ポリシー、およびポリシーアプリケーションの状態を表示できます。
 
-|これを確認するには  |説明  |
+|これを表示するには  |説明  |
 |---------|---------|
 |ユーザー アカウント     |Identity パラメーターを使用して**InformationBarrierRecipientStatus**コマンドレットを使用します。 <p>文`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>名前、エイリアス、識別名、標準ドメイン名、電子メールアドレス、GUID など、各ユーザーを一意に識別する任意の値を使用できます。 <p>例: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>この例では、Office 365 の2つのユーザーアカウント ( *Megan*の場合は*Meガント b* 、 *Alex*の場合は*alexw* ) を参照しています。 <p>(1 人のユーザーに対してこのコマンドレットを`Get-InformationBarrierRecipientStatus -Identity <value>`使用することもできます。) <p>このコマンドレットは、属性値、適用されている情報バリアポリシーなど、ユーザーに関する情報を返します。|
 |多角形     |コマンドレット**** を使用します。<p>文`Get-OrganizationSegment` <p>これにより、組織に定義されているすべてのセグメントの一覧が表示されます。         |

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 問題が発生したときに Microsoft サポートエンジニアがデータにアクセスする方法を制御するための、カスタマーロックボックス要求について説明します。
-ms.openlocfilehash: 2f15201cb4c49a22d7789ffafcdd94b5266bcdd4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f3cfdec6521cd5fe0bcb7007b27ce128ae3b2a1d
+ms.sourcegitcommit: 62447503300376aa95dd05fb5276f93a9f6a20b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153839"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34927580"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Office 365 のカスタマーロックボックス
 
@@ -78,7 +78,7 @@ Office 365 管理者は、Microsoft 365 管理センターでカスタマーロ�
 
 1. [https://admin.microsoft.com](https://admin.microsoft.com) に移動し、職場または学校のアカウントでサインインします。
 
-2. [**設定 _GT_ Security & privacy**] をクリックします。
+2. [設定] をクリックして **> セキュリティ & プライバシー**] をクリックします。
 
     ![管理センターでカスタマーロックボックスの設定を編集する](media/CustomerLockbox2.png)
 
@@ -93,7 +93,7 @@ Office 365 管理者は、Microsoft 365 管理センターでカスタマーロ�
 
 1. [https://admin.microsoft.com](https://admin.microsoft.com) に移動し、職場または学校のアカウントでサインインします。
 
-2. [ **Support _GT_ Customer のロックボックス要求**] をクリックします。
+2. [**カスタマーロックボックス要求のサポート >**] をクリックします。
 
     ![[サポート] をクリックし、[カスタマーロックボックス要求] をクリックします。](media/CustomerLockbox5.png)
 
@@ -111,7 +111,7 @@ Office 365 管理者は、Microsoft 365 管理センターでカスタマーロ�
 
 ## <a name="auditing-customer-lockbox-requests"></a>顧客ロックボックス要求の監査 
 
-カスタマーロックボックス要求に対応する監査レコードは、Office 365 監査ログに記録され、Office 365 Security & コンプライアンスセンターの[監査ログ検索ツール](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance)を使用してアクセスできます。 顧客に関連するアクション (アクセス要求が承認された場合に、Microsoft のエンジニアによって実行された操作) を承諾または拒否すると、Office 365 監査ログに記録されます。 これらの監査レコードを検索して確認することができます。
+カスタマーロックボックス要求に対応する監査レコードは、Office 365 監査ログに記録され、Office 365 セキュリティ & コンプライアンスセンターの[監査ログ検索ツール](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance)を使用してアクセスできます。 顧客に関連するアクション (アクセス要求が承認された場合に、Microsoft のエンジニアによって実行された操作) を承諾または拒否すると、Office 365 監査ログに記録されます。 これらの監査レコードを検索して確認することができます。
 
 > [!NOTE]
 > Office 365 監査ログを検索するには、Exchange Online で [表示のみの監査ログまたは監査ログの役割が割り当てられている必要があります。 詳細については、「[Office 365 セキュリティ/コンプライアンス センターで監査ログを検索する](https://docs.microsoft.com/en-us/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin)」を参照してください。
@@ -232,7 +232,7 @@ Office 365 の顧客コンテンツの詳細については、「 [office 365 �
 
 #### <a name="if-i-approve-a-customer-lockbox-request-what-can-the-engineer-do-and-how-will-i-know-what-the-microsoft-engineer-did"></a>カスタマーロックボックス要求を承認した場合、エンジニアは何をすることができますか。また、Microsoft のエンジニアが何をしたかを知る方法を教えてください。
 
-カスタマーロックボックス要求を承認した後、Microsoft のエンジニアは、事前承認済みコマンドレットを使用して、お客様のコンテンツにアクセスするためにこれらの必要な権限を付与しました。 カスタマーロックボックスの要求に対応して Microsoft のエンジニアが実行するアクションは、Office 365 Security & コンプライアンスセンターの監査ログに記録され、アクセスできます。
+カスタマーロックボックス要求を承認した後、Microsoft のエンジニアは、事前承認済みコマンドレットを使用して、お客様のコンテンツにアクセスするためにこれらの必要な権限を付与しました。 カスタマーロックボックスの要求に対応して Microsoft のエンジニアが実行するアクションは、Office 365 セキュリティ & コンプライアンスセンターの監査ログに記録され、アクセスできます。
 
 #### <a name="how-do-i-know-that-microsoft-follows-the-approval-process"></a>Microsoft が承認プロセスに従うことをどのように確認できますか?
 
@@ -264,7 +264,7 @@ Office 365 の顧客コンテンツの詳細については、「 [office 365 �
 
 顧客のロックボックス要求の既定の期間は12時間です。 12時間以内に要求に応答しない場合、要求は有効期限が切れます。
 
-#### <a name="what-does-microsoft-when-a-customer-rejects-a-customer-lockbox-request"></a>お客様が顧客のロックボックス要求を拒否した場合、Microsoft は何ができますか?
+#### <a name="what-does-microsoft-do-when-a-customer-rejects-a-customer-lockbox-request"></a>顧客が顧客のロックボックス要求を拒否した場合、Microsoft は何を行いますか?
 
 顧客が顧客のロックボックス要求を拒否した場合、顧客コンテンツへのアクセスは行われません。 この問題を解決するために Microsoft がお客様のコンテンツにアクセスする必要があるというサービスの問題が組織内のユーザーから引き続き発生する場合、サービスの問題が持続する可能性があり、Microsoft はそのことをユーザーに通知します。
 

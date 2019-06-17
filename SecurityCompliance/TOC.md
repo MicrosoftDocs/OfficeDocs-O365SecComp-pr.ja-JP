@@ -100,8 +100,8 @@
 ### [ネットワーク アップロードを使用して、RMS で暗号化された PST ファイルをインポートする](use-network-upload-to-import-rms-encrypted-pst-files.md)
 ### [PST ファイルのインポートに関する FAQ](faqimporting-pst-files-to-office-365.md)
 ### [Office 365 でサードパーティのデータをアーカイブする](archiving-third-party-data.md)
-#### [Office 365 でサンプル コネクタを使用して Facebook のデータをアーカイブする (プレビュー)](archive-facebook-data-with-sample-connector.md)
-#### [サンプル コネクタを使用して Twitter のデータをアーカイブする](archive-twitter-data-with-sample-connector.md)
+#### [サンプルコネクタを使用して Facebook のデータをアーカイブする](archive-facebook-data-with-sample-connector.md)
+#### [サンプルコネクタを使用して Twitter のデータをアーカイブする](archive-twitter-data-with-sample-connector.md)
 #### [パートナーと共同作業でサードパーティーのデータをアーカイブする](work-with-partner-to-archive-third-party-data.md)
 ## データを格納する
 ### [アーカイブ メールボックスの有効化](enable-archive-mailboxes.md)
@@ -153,6 +153,7 @@
 ### [送信スパム ポリシーを構成する](configure-the-outbound-spam-policy.md)
 ### [迷惑メールを送信した後で制限付きユーザー ポータルからユーザーを削除する](removing-user-from-restricted-users-portal-after-spam.md)
 ### [Spam Confidence Level](spam-confidence-levels.md)
+### [Exchange Online のエラー コード 5.7.7xx を修正する](fix-error-code-5-7-7xx-in-exchange-online.md)
 #### [メール フロー ルールを使用して、メッセージの Spam Confidence Level (SCL) を設定する](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 #### [スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)
 #### [マルウェアおよびマルウェアでないファイルを分析のために Microsoft に提出する](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
@@ -204,7 +205,7 @@
 #### [SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)
 ## セキュリティの管理 - ATP のセットアップ後
 ## [脅威の分析によって最新の攻撃行動を理解する](latest-attack-campaigns.md)
-## [Microsoft 365 ATP で探す](hunting.md)
+## [Microsoft 365 で探す](hunting.md)
 ## [ATP レポートを表示して閲覧する](view-reports-for-atp.md)
 ## [ATP の安全なリンク機能の警告ページとは?](atp-safe-links-warning-pages.md)
 ## [脅威トラッカーを使用する](threat-trackers.md)
@@ -214,8 +215,8 @@
 ## [脅威エクスプローラー (およびリアルタイムの検出)](threat-explorer.md)
 ### [脅威エクスプローラーのビュー](threat-explorer-views.md)
 ## セキュリティを強化する統合
-### [Integrate Office 365 ATP と Windows Defender Advanced Threat Protection の統合](integrate-office-365-ti-with-wdatp.md)
-### [SIEM と Office 365 との統合](siem-integration-with-office-365-ti.md)
+### [Office 365 の ATP と Microsoft Defender ATP の統合](integrate-office-365-ti-with-wdatp.md)
+### [SIEM と Office 365 の ATP の統合](siem-integration-with-office-365-ti.md)
 ## ATP のしくみ
 ### [ATP の安全なリンク機能のしくみ](how-atp-safe-links-works.md)
 ### [ATP の安全な添付ファイル機能のしくみ](how-atp-safe-attachments-works.md)
@@ -484,12 +485,13 @@
 ## [監査ログで電子情報開示アクティビティを検索する](search-for-ediscovery-activities-in-the-audit-log.md)
 
 # セキュリティとコンプライアンスを監視する
-## [Microsoft 365 セキュリティ センターの監視と報告](monitoring-and-reporting.md)
-### [Microsoft 365 セキュリティ センターでの ID の監視と報告](monitor-and-report-identities.md)
-### [Microsoft 365 セキュリティ センターでのデータの監視](monitor-data.md)
-### [Microsoft 365 セキュリティ センターでのデバイスの監視](monitor-devices.md)
-### [Microsoft 365 セキュリティ センターでのアプリの監視](monitor-apps.md)
-## [通知ポリシー](alert-policies.md)
+## Microsoft 365 セキュリティ センター
+### [レポートを監視し、表示する](monitoring-and-reporting.md)
+### [IDの監視とレポート](monitor-and-report-identities.md)
+### [データの監視とレポート](monitor-data.md)
+### [デバイスの監視とレポート](monitor-devices.md)
+### [アプリの監視とレポート](monitor-apps.md)
+## [警告ポリシー](alert-policies.md)
 
 # メール フロー
 ## [レポート メッセージ アドインを有効にする](enable-the-report-message-add-in.md)

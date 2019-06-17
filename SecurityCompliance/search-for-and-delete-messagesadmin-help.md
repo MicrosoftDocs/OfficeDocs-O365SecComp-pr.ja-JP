@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: 管理者は Search-Mailbox コマンドレットを使って、ユーザーのメールボックスを検索し、メールボックスからメッセージを削除できます。
-ms.openlocfilehash: a097b39aa179ed18c3d5426eeeacff204d48ee9b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1288679c7abb643c020d5b1a2a08ae64b7cb403f
+ms.sourcegitcommit: d20defdcf2ac643f0c8c1f2761b0b7f4f4090e5c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158489"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34957419"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>メッセージを検索して削除する - 管理者向けヘルプ
   
@@ -48,7 +48,7 @@ ms.locfileid: "34158489"
     
 - ( *SearchQuery*  パラメーターを使用していて) 検索クエリが含まれている場合、 **Search-Mailbox** コマンドレットは、検索結果で最大 10,000 個のアイテムを返します。したがって、検索クエリを含める場合は、 **Search-Mailbox** コマンドを複数回実行して 10,000 を超えるアイテムを削除する必要があるかもしれません。 
     
-- **Search-Mailbox** コマンドレットを実行すると、ユーザーのアーカイブ メールボックスも検索されます。 同様に、  **DeleteContent** スイッチと併せて _Search-Mailbox_ コマンドレットを使用すると、プライマリ アーカイブ メールボックス内のアイテムは削除されます。 これを防ぐために、  *DoNotIncludeArchive*  スイッチを含めることができます。 また、予期しないデータ損失が発生する可能性があるため、自動拡張アーカイブが有効になっている Exchange Online メールボックス内のメッセージを削除する場合は、 _DeleteContent_スイッチを使用しないことをお勧めします。 
+- **Search-Mailbox** コマンドレットを実行すると、ユーザーのアーカイブ メールボックスも検索されます。 同様に、  **DeleteContent** スイッチと併せて _Search-Mailbox_ コマンドレットを使用すると、プライマリ アーカイブ メールボックス内のアイテムは削除されます。 これを防ぐために、  *DoNotIncludeArchive*  スイッチを含めることができます。
     
 ## <a name="search-messages-and-log-the-search-results"></a>メッセージを検索し、検索結果をログに記録する
 
