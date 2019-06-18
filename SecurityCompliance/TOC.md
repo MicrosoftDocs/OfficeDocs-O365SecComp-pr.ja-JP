@@ -101,7 +101,8 @@
 ### [PST ファイルのインポートに関する FAQ](faqimporting-pst-files-to-office-365.md)
 ### [Office 365 でサードパーティのデータをアーカイブする](archiving-third-party-data.md)
 #### [サンプルコネクタを使用して Facebook のデータをアーカイブする](archive-facebook-data-with-sample-connector.md)
-#### [サンプルコネクタを使用して Twitter のデータをアーカイブする](archive-twitter-data-with-sample-connector.md)
+#### [サンプル コネクタを使用して Twitter のデータをアーカイブする](archive-twitter-data-with-sample-connector.md)
+#### [コネクタをセットアップして LinkedIn データをアーカイブする](archive-linkedin-data.md)
 #### [パートナーと共同作業でサードパーティーのデータをアーカイブする](work-with-partner-to-archive-third-party-data.md)
 ## データを格納する
 ### [アーカイブ メールボックスの有効化](enable-archive-mailboxes.md)
@@ -242,7 +243,8 @@
 ### [PST ファイルのインポートに関する FAQ](faqimporting-pst-files-to-office-365.md)
 ### [Office 365 でサードパーティのデータをアーカイブする](archiving-third-party-data.md)
 #### [サンプルコネクタを使用して Facebook のデータをアーカイブする](archive-facebook-data-with-sample-connector.md)
-#### [サンプルコネクタを使用して Twitter のデータをアーカイブする](archive-twitter-data-with-sample-connector.md)
+#### [サンプル コネクタを使用して Twitter のデータをアーカイブする](archive-twitter-data-with-sample-connector.md)
+#### [コネクタをセットアップして LinkedIn データをアーカイブする](archive-linkedin-data.md)
 #### [パートナーと共同作業でサードパーティーのデータをアーカイブする](work-with-partner-to-archive-third-party-data.md)
 ## データを格納する
 ### [アーカイブ メールボックスの有効化](enable-archive-mailboxes.md)
