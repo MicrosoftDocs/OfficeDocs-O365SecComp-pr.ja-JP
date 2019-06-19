@@ -3,20 +3,20 @@ title: 情報バリアポリシーの定義
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/13/2019
-ms.audience: ITPro
+ms.date: 06/18/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Microsoft Teams の情報障壁に関するポリシーを定義する方法について説明します。
-ms.openlocfilehash: 8d575d0cde4bfec7109cc302f68beaf1040cd894
-ms.sourcegitcommit: eeb51470d8996e93fac28d7f12c6117e2aeb0cf0
+ms.openlocfilehash: 89faf404233f5862df6c95660b38f2886d84462a
+ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34935949"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "35059535"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>情報バリアのポリシーを定義する (プレビュー)
 
@@ -48,7 +48,7 @@ ms.locfileid: "34935949"
 |フェーズ    |関係するもの  |
 |---------|---------|
 |[前提条件が満たされていることを確認する](#prerequisites)     |-[必要なライセンスとアクセス許可](information-barriers.md#required-licenses-and-permissions)を持っていることを確認する<br/>-組織のディレクトリに、組織の構造を反映したデータが含まれていることを確認します。<br/>-Microsoft Teams のスコープ付きディレクトリ検索を有効にする<br/>-監査ログが有効になっていることを確認します。<br/>-PowerShell の使用 (例は提供されています)<br/>-Microsoft Teams に対する管理者の同意を提供する (手順は含まれています)          |
-|[パート 1: 組織内のすべてのユーザーのセグメント化](#part-1-segment-users)     |-必要なポリシーを決定する<br/>-定義するセグメントの一覧を作成する<br/>-使用する属性を識別する<br/>-ポリシーフィルターの観点からセグメントを定義する        |
+|[パート 1: 組織内のユーザーのセグメント化](#part-1-segment-users)     |-必要なポリシーを決定する<br/>-定義するセグメントの一覧を作成する<br/>-使用する属性を識別する<br/>-ポリシーフィルターの観点からセグメントを定義する        |
 |[パート 2: 情報バリアポリシーを定義する](#part-2-define-information-barrier-policies)     |-ポリシーを定義します (まだ適用しない)<br/>-2 つの種類 (ブロックまたは許可) から選択します。 |
 |[パート 3: 情報バリアポリシーを適用する](#part-3-apply-information-barrier-policies)     |-ポリシーをアクティブな状態に設定します。<br/>-ポリシーアプリケーションを実行する<br/>-ポリシーの状態を表示する         |
 |(必要な場合)[セグメントまたはポリシーを編集する](#edit-a-segment-or-a-policy)     |-セグメントを編集する<br/>-ポリシーを編集または削除する<br/>-ポリシーアプリケーションを実行する<br/>-ポリシーの状態を表示する         |
@@ -104,12 +104,12 @@ ms.locfileid: "34935949"
 
 ### <a name="identify-segments"></a>セグメントを識別する
 
-ポリシーの初期リストに加えて、組織のセグメントの一覧を作成します。 組織内のすべてのユーザーはセグメントに属している必要があり、ユーザーは2つ以上のセグメントに所属している必要はありません。 各セグメントには、1つの情報バリアポリシーのみを適用できます。 
+ポリシーの初期リストに加えて、組織のセグメントの一覧を作成します。 情報バリアポリシーに含まれるユーザーは、セグメントに属する必要があり、ユーザーは2つ以上のセグメントに属することはできません。 各セグメントには、1つの情報バリアポリシーのみを適用できます。 
 
-セグメントを定義するために使用する組織のディレクトリデータの属性を決定します。 *Department*、 *MemberOf*、またはサポートされている属性のいずれかを使用できます。 すべてのユーザーに対して選択する属性に値が設定されていることを確認してください。 [情報バリア (プレビュー) でサポートされている属性の一覧を参照してください](information-barriers-attributes.md)。
+セグメントを定義するために使用する組織のディレクトリデータの属性を決定します。 *Department*、 *MemberOf*、またはサポートされている属性のいずれかを使用できます。 ユーザー用に選択した属性の値があることを確認してください。 [情報バリア (プレビュー) でサポートされている属性の一覧を参照してください](information-barriers-attributes.md)。
 
 > [!IMPORTANT]
-> **次のセクションに進む前に、セグメントを定義するために使用できる属性の値がディレクトリデータにあることを確認して**ください。 ディレクトリデータに使用する属性の値が含まれていない場合は、情報の障壁を処理する前に、すべてのユーザーアカウントにその情報を含めるように更新する必要があります。 これに関するヘルプを表示するには、次のリソースを参照してください。<br/>- [Office 365 PowerShell を使用してユーザーアカウントのプロパティを構成する](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新する](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **次のセクションに進む前に、セグメントを定義するために使用できる属性の値がディレクトリデータにあることを確認して**ください。 ディレクトリデータに使用する属性の値が含まれていない場合は、情報の障壁を処理する前に、その情報を含めるようにユーザーアカウントを更新する必要があります。 これに関するヘルプを表示するには、次のリソースを参照してください。<br/>- [Office 365 PowerShell を使用してユーザーアカウントのプロパティを構成する](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新する](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>PowerShell を使用してセグメントを定義する
 
@@ -128,7 +128,7 @@ ms.locfileid: "34935949"
     各コマンドレットを実行すると、新しいセグメントに関する詳細情報の一覧が表示されます。 詳細には、セグメントの種類、作成者または最終更新日時などが含まれます。 
 
 > [!IMPORTANT]
-> **セグメントが重ならないようにして**ください。 組織内の各ユーザーは、1つ (1 つの) セグメントに所属している必要があります。 ユーザーは、2つ以上のセグメントに属することはできません。 セグメントは、組織内のすべてのユーザーに対して定義する必要があります。 (この記事の「 [Example: Contoso の定義済みセグメント](#contosos-defined-segments)」を参照してください)。
+> **セグメントが重ならないようにして**ください。 情報バリアによって影響を受ける各ユーザーは、1つ (1 つの) セグメントに属している必要があります。 ユーザーは、2つ以上のセグメントに属することはできません。 (この記事の「 [Example: Contoso の定義済みセグメント](#contosos-defined-segments)」を参照してください)。
 
 セグメントを定義した後、「情報バリアポリシーを定義する」に進みます。
 

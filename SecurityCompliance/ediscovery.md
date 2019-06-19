@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Office 365 には、Exchange メールボックス、SharePoint、OneDrive for business サイト、Office 365 グループ、Skype for Business の会話など、さまざまな場所にあるコンテンツを検索して保持するために使用できる、さまざまな種類の電子情報開示ツールが用意されています。
-ms.openlocfilehash: 300de1a767e9ab3f6be81974a704506d367d68b4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 80d22cf45412727c32a3557ac6b04ca68c9d17ce
+ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153319"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "35059525"
 ---
 # <a name="ediscovery-in-office-365"></a>Office 365 の電子情報開示
 
@@ -35,7 +35,7 @@ Office 365 には、次の電子情報開示ツールが用意されています
 ## <a name="content-search-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターでのコンテンツ検索
 <a name="contentsearch"> </a>
 
-次の表には、Security & コンプライアンスセンターでコンテンツ検索ツールを使用するのに役立つトピックへのリンクが含まれています。
+次の表には、セキュリティ & コンプライアンスセンターでコンテンツ検索ツールを使用するのに役立つトピックへのリンクが含まれています。
   
 |**トピック**|**説明**|
 |:-----|:-----|
@@ -43,7 +43,7 @@ Office 365 には、次の電子情報開示ツールが用意されています
 |[コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md) <br/> |Office 365 組織のメールボックスとサイトのコンテンツを検索するために使用できる電子メールおよびファイルのプロパティと検索条件について説明します。  <br/> |
 |[コンテンツ検索の結果のキーワード統計を表示する](view-keyword-statistics-for-content-search.md) <br/> |検索統計を使用して、1つまたは複数のコンテンツ検索の統計を表示および比較し、検索クエリ内の各キーワードの統計情報を返す新規および既存の検索を構成する方法について説明します。  <br/> |
 |[セキュリティ & コンプライアンスセンターでコンテンツ検索を一括編集する](bulk-edit-content-searches.md) <br/> |1つまたは複数のコンテンツ検索の検索クエリとコンテンツの場所を一括編集する方法について説明します。  <br/> |
-|[セキュリティ & コンプライアンスセンターから検索結果をエクスポートする](export-search-results.md) <br/> |コンテンツ検索の結果をエクスポートする方法について説明します。  <br/> |
+|[セキュリティ & コンプライアンスセンターからの検索結果のエクスポート](export-search-results.md) <br/> |コンテンツ検索の結果をエクスポートする方法について説明します。  <br/> |
 |[Office 365 から電子情報開示検索の結果をエクスポートするときにダウンロード速度を上げる](increase-download-speeds-when-exporting-ediscovery-results.md) <br/> |コンテンツ検索の結果をエクスポートすることで、ダウンロード速度を向上させるようにコンピューター上の Windows レジストリを構成する方法について説明します。  <br/> |
 |[コンテンツ検索のレポートをエクスポートする](export-a-content-search-report.md) <br/> |実際の検索結果をエクスポートせずにエクスポートレポートをダウンロードする方法について説明します。  <br/> |
 |[セキュリティ & コンプライアンスセンターでのコンテンツ検索の制限](limits-for-content-search.md) <br/> |コンテンツ検索ツールの制限 (一度に実行できる検索の最大数など) について説明します。  <br/> |
@@ -69,9 +69,9 @@ Office 365 には、次の電子情報開示ツールが用意されています
 |**トピック**|**説明**|
 |:-----|:-----|
 |[セキュリティ & コンプライアンスセンターで電子情報開示ケースを管理する](manage-ediscovery-cases.md) <br/> |セキュリティ & コンプライアンスセンターで電子情報開示ケースを作成および管理する方法について説明します。  <br/> |
-|[Office?? で電子情報開示のアクセス許可を割り当てる365セキュリティ & コンプライアンスセンター](assign-ediscovery-permissions.md) <br/> |セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる方法について説明します。 アクセス許可を割り当てることにより、ユーザーが電子情報開示ケースを作成したり、電子情報開示ケースに関連付けられた保留リストを作成したり、コンテンツ検索を実行したり、検索結果をプレビューしたり、検索結果をエクスポートしたりできる  <br/> |
+|[Office 365 セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md) <br/> |セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てる方法について説明します。 アクセス許可を割り当てることにより、ユーザーが電子情報開示ケースを作成したり、電子情報開示ケースに関連付けられた保留リストを作成したり、コンテンツ検索を実行したり、検索結果をプレビューしたり、検索結果をエクスポートしたりできる  <br/> |
 |[Office 365 で電子情報開示ケースの保留リストのレポートを作成する](create-a-report-on-holds-in-ediscovery-cases.md) <br/> |この記事の Windows PowerShell スクリプトを使用して、セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられているすべての保留リストに関する情報を含むレポートを生成する方法について説明します。  <br/> |
-|[スクリプトを使用してセキュリティ & コンプライアンスセンターの電子情報開示ケースの保留リストにユーザーを追加する](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) <br/> |この記事に記載されている Windows PowerShell スクリプトを使用して、セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられている新しいホールドに、ユーザーの一覧のメールボックスと OneDrive for Business サイトをすばやく追加する方法について説明します。  <br/> |
+|[セキュリティ & コンプライアンスセンターの電子情報開示ケースで、スクリプトを使用してユーザーを保留リストに追加する](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) <br/> |この記事に記載されている Windows PowerShell スクリプトを使用して、セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられた新しい保留リストに、メールボックスと OneDrive for Business サイトをすばやく追加する方法について説明します。  <br/> |
 |[Office 365 監査ログで電子情報開示アクティビティを検索する](search-for-ediscovery-activities-in-the-audit-log.md) <br/> |電子情報開示ケースおよびコンテンツ検索の作成と管理に関連するアクティビティの Office 365 監査ログを検索する方法について説明します。  <br/> |
    
 [Return to top](ediscovery.md#top)
