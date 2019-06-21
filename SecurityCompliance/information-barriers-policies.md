@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Microsoft Teams の情報障壁に関するポリシーを定義する方法について説明します。
-ms.openlocfilehash: fb162e380fa467cf3e832bd7bbdafcde136b1db6
-ms.sourcegitcommit: 087cf1a022b13c46e207270d6837f09a9752c972
+ms.openlocfilehash: fd091ce213159363a11d9dce378e38f55e132c89
+ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/20/2019
-ms.locfileid: "35083865"
+ms.locfileid: "35113251"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>情報バリアのポリシーを定義する (プレビュー)
 
@@ -134,7 +134,7 @@ ms.locfileid: "35083865"
 
 ### <a name="using-equals-and-not-equals-in-segment-definitions"></a>セグメント定義での "等しい" と "not equals" の使用
 
-上記の最初の例では、ロジックを含むセグメント ( *Department は HR*) を定義しています。 また、次の例に示すように、セグメントを定義するには、"not equals" パラメーターを使用します。
+上記の最初の例では、"Department が HR に等しい" というセグメントを定義しています。 そのセグメントには "equals" パラメーターが含まれています。 また、次の例に示すように、セグメントを定義するには、"not equals" パラメーターを使用します。
 
 文`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
 
