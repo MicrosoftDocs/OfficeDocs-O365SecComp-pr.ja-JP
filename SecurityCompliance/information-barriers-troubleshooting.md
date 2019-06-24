@@ -3,26 +3,27 @@ title: 情報の障壁をトラブルシューティングする
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/31/2019
-ms.audience: ITPro
+ms.date: 06/21/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: この記事は、情報の障壁をトラブルシューティングするためのガイドとして使用してください。
-ms.openlocfilehash: b37585469ec8bb299b7976f8a330f4c6b29e3f95
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: b88f97cd872d4ea3b95bfac049f47cd71dfb2cb2
+ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34668317"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "35131351"
 ---
 # <a name="troubleshooting-information-barriers-preview"></a>情報障壁のトラブルシューティング (プレビュー)
 
-情報バリアは、組織が法的な要件や業界の規制に準拠していることを支援します。 たとえば、情報バリアを使用すると、特定のユーザーグループ間の通信を制限して、利息やその他の問題の競合を回避できます。 詳細については、「[情報の障壁 (プレビュー)](information-barriers.md)」を参照してください。
+[情報障壁 (プレビュー)](information-barriers.md)は、組織が法律上の要件や業界の規制に準拠していることを維持するのに役立ちます。 たとえば、情報バリアを使用すると、特定のユーザーグループ間の通信を制限して、利息やその他の問題の競合を回避できます。 (情報の障壁を設定する方法の詳細については、「 [Define policies for information バリア (Preview)](information-barriers-policies.md)」を参照してください)。
 
-この記事では、情報の障壁に関する質問に回答したり、発生する可能性のある問題を解決したりするために使用できるガイダンスを提供します。  
+情報の障壁が設定された後に予期しない問題が発生した場合は、それらの問題を解決するために実行できるいくつかの手順があります。 この記事をガイドとして使用します。
+
 
 ## <a name="before-you-begin"></a>開始する前に
 
@@ -32,18 +33,42 @@ ms.locfileid: "34668317"
 - コンプライアンス管理者
 - IB コンプライアンス管理 (新しい役割)
 
-役割とアクセス許可の詳細については、「 [Office 365 セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
-
 情報障壁の前提条件の詳細については、「[必須コンポーネント (情報バリアポリシー)](information-barriers-policies.md#prerequisites)」を参照してください。
 
-また、 [Office 365 セキュリティ & コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)するようにしてください。
+[Office 365 セキュリティ & コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)するようにしてください。
+
+## <a name="issue-communications-are-still-allowed-between-users-who-should-be-blocked-in-microsoft-teams"></a>問題: Microsoft Teams でブロックする必要があるユーザー間でも、コミュニケーションが可能
+
+この場合、情報バリアは定義、アクティブ、および適用されますが、相互に通信できないようにする必要があるユーザーは、Microsoft Teams でも利用できます。
+
+### <a name="what-to-do"></a>行うこと
+
+該当するユーザーが情報バリアポリシーに含まれていることを確認します。 Identity パラメーターを使用して**InformationBarrierRecipientStatus**コマンドレットを使用します。
+
+文`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` 
+
+名前、エイリアス、識別名、標準ドメイン名、電子メールアドレス、GUID など、各ユーザーを一意に識別する任意の値を使用できます。 
+
+例: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` 
+
+この例では、Office 365 の2つのユーザーアカウント ( *Megan*の場合は*Meガント b* 、 *Alex*の場合は*alexw* ) を参照しています。 
+
+(1 人のユーザーに対してこのコマンドレットを`Get-InformationBarrierRecipientStatus -Identity <value>`使用することもできます)。このコマンドレットは、属性値、適用されている情報バリアポリシーなど、ユーザーに関する情報を返します。
+
+
+|結果  |次のステップ  |
+|---------|---------|
+|選択したユーザーのセグメントが表示されません     |次のいずれかを実行します。<br/>-Azure Active Directory でユーザープロファイルを編集して、ユーザーを既存のセグメントに割り当てる<br/>-[情報の障壁に対してサポートされている属性](information-barriers-attributes.md)を使用してセグメントを定義する         |
+|セグメントは表示されますが、これらのセグメントに情報バリアポリシーが割り当てられていません     |次のいずれかを実行します。<br/>- 対象のセグメントごとに[情報バリアポリシーを定義する](information-barriers-policies.md#part-2-define-information-barrier-policies)<br/>- [情報バリアポリシーを編集](information-barriers-policies.md#edit-a-policy)して、適切なセグメントに割り当てる         |
+|セグメントがリストされ、それぞれが情報バリアポリシーに含まれています。     |-コマンドレット`Get-InformationBarrierPolicy`を実行して、情報バリアポリシーがアクティブであることを確認します。<br/>- `Get-InformationBarrierPoliciesApplicationStatus`コマンドレットを実行してポリシーが適用されていることを確認する<br/>-すべての`Start-InformationBarrierPoliciesApplication`アクティブ情報バリアポリシーを適用するには、コマンドレットを実行します。          |
+
 
 ## <a name="issue-people-are-unexpectedly-blocked-from-communicating-in-microsoft-teams"></a>問題: ユーザーが予期せず Microsoft Teams での通信をブロックされている 
 
 この場合、ユーザーは Microsoft Teams での予期しない問題を報告しています。 例:
 - ユーザーが Microsoft Teams 内の他のユーザーとの間で検索や通信を行うことができません。
 - ユーザーが Microsoft Teams で別のユーザーを表示または選択できません。
-- ユーザーは、Microsoft Teams の他のユーザーにメッセージを表示することはできますが、メッセージを送信することはできません。
+- ユーザーは別のユーザーを表示できますが、Microsoft Teams 内の他のユーザーに対してメッセージを選択したり、送信したりすることはできません。
 
 ### <a name="what-to-do"></a>行うこと
 
@@ -94,23 +119,24 @@ ms.locfileid: "34668317"
 
 ### <a name="what-to-do"></a>行うこと
 
-1. Policy application コマンドレットを実行すると、組織内のすべてのアカウントについて、情報バリアポリシーがユーザーごとに適用 (または削除) されることに注意してください。 ユーザー数が多い場合は、処理に時間がかかります。 (一般的なガイドラインとして、5000のユーザーアカウントを処理するのには1時間かかります)。 
+Policy application コマンドレットを実行すると、組織内のすべてのアカウントについて、情報バリアポリシーがユーザーごとに適用 (または削除) されることに注意してください。 ユーザー数が多い場合は、処理に時間がかかります。 (一般的なガイドラインとして、5000のユーザーアカウントを処理するのには1時間かかります)。
 
-2. 状態を確認するには、 **InformationBarrierPoliciesApplicationStatus**コマンドレットを使用します。
+1. 最新のポリシーアプリケーションの状態を確認するには、 **InformationBarrierPoliciesApplicationStatus**コマンドレットを使用します。
 
     文`Get-InformationBarrierPoliciesApplicationStatus`
 
-    すべての情報バリアポリシーアプリケーションの状態を表示するには、を使用します。`Get-InformationBarrierPoliciesApplicationStatus -All $true`
+    (*すべて*の情報バリアポリシーアプリケーションの状態を表示するには、次のコマンドレットを使用します。<br/>
+    `Get-InformationBarrierPoliciesApplicationStatus -All $true`)
 
     これにより、ポリシーアプリケーションの完了、失敗、進行中のいずれかに関する情報が表示されます。
 
-3. 手順2の結果に応じて、次のいずれかの手順を実行します。
-
-    - アプリケーションが開始されておらず、 **InformationBarrierPoliciesApplication**コマンドレットが実行されてから45分以上経過している場合は、監査ログを確認してポリシー定義にエラーがないかどうか、またはその他の理由でアプリケーションが開始されていません。
-
-    - アプリケーションに障害が発生した場合は、セグメントとポリシーを確認してください。 必要に応じて、[セグメントを編集](information-barriers-policies.md#edit-a-segment)するか、または[ポリシーを編集](information-barriers-policies.md#edit-a-policy)してから、 **InformationBarrierPoliciesApplication**コマンドレットを再度実行します。
-
-    - アプリケーションがまだ進行中の場合は、完了するのに時間を確保します。 数日かかる場合は、サポートにお問い合わせください。
+2. 前の手順の結果に応じて、次のいずれかの手順を実行します。
+  
+    |状態  |次の手順  |
+    |---------|---------|
+    |**未開始**     |**InformationBarrierPoliciesApplication**コマンドレットが実行されてから45分以上経過している場合は、監査ログを調べて、ポリシー定義にエラーがないかどうか、またはアプリケーションが開始されていない理由を確認してください。 |
+    |**失敗**     |アプリケーションに障害が発生した場合は、監査ログを確認します。 また、セグメントとポリシーも確認してください。 複数のセグメントに割り当てられているユーザーはいますか? セグメントに複数の poliicy が割り当てられているかどうか。 必要に応じて、[セグメントを編集](information-barriers-policies.md#edit-a-segment)するか、または[ポリシーを編集](information-barriers-policies.md#edit-a-policy)してから、 **InformationBarrierPoliciesApplication**コマンドレットを再度実行します。  |
+    |**処理中**     |アプリケーションがまだ進行中の場合は、完了するのに時間を確保します。 数日経過した場合は、監査ログを収集し、サポートに連絡してください。 |
 
 ## <a name="related-topics"></a>関連項目
 
