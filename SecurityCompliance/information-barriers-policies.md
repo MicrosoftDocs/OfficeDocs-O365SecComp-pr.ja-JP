@@ -3,7 +3,7 @@ title: 情報バリアポリシーの定義
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/21/2019
+ms.date: 06/24/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Microsoft Teams の情報障壁に関するポリシーを定義する方法について説明します。
-ms.openlocfilehash: 4f63d79f59741f74d2ac8167a8cd86717c6f9ec4
-ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
+ms.openlocfilehash: f6a570675130410acc702ef9f8ca99bf87b7501b
+ms.sourcegitcommit: 7c48ce016fa9f45a3813467f7c5a2fd72f9b8f49
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "35131381"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203736"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>情報バリアのポリシーを定義する (プレビュー)
 
@@ -29,20 +29,6 @@ ms.locfileid: "35131381"
 > [!TIP]
 > この記事には、情報バリアポリシーを計画して定義するのに役立つ、[シナリオの例](#example-contosos-departments-segments-and-policies)とダウンロード可能な[Excel ブック](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)が含まれています。
 
-## <a name="concepts-of-information-barrier-policies"></a>情報バリアポリシーの概念
-
-情報バリアポリシーの基礎概念を理解しておくと役に立ちます。
-
-- **ユーザーアカウントの属性**は、Azure Active Directory (または Exchange Online) で定義されます。 これらの属性には、部署、役職、場所、チーム名、その他のジョブプロファイルの詳細を含めることができます。 
-
-- **セグメント**とは、Office 365 セキュリティ & コンプライアンスセンターで、選択した**ユーザーアカウント属性**を使用して定義された一連のユーザーのことです。 ([サポートされている属性の一覧](information-barriers-attributes.md)を参照してください)。 
-
-- **情報バリアポリシー**では、通信制限または制限を決定します。 情報バリアポリシーを定義するときは、次の2種類のポリシーから選択します。
-    - "Block" ポリシーは、あるセグメントが別のセグメントと通信できないようにします。
-    - [許可] ポリシーでは、1つのセグメントが特定の他のセグメントのみと通信できるようにします。
-
-- **ポリシーアプリケーション**は、すべての情報バリアポリシーが定義された後に実行され、組織に適用する準備が整っています。
-
 ## <a name="the-work-flow-at-a-glance"></a>作業フローの概要
 
 |フェーズ    |関係するもの  |
@@ -51,7 +37,7 @@ ms.locfileid: "35131381"
 |[パート 1: 組織内のユーザーのセグメント化](#part-1-segment-users)     |-必要なポリシーを決定する<br/>-定義するセグメントの一覧を作成する<br/>-使用する属性を識別する<br/>-ポリシーフィルターの観点からセグメントを定義する        |
 |[パート 2: 情報バリアポリシーを定義する](#part-2-define-information-barrier-policies)     |-ポリシーを定義します (まだ適用しない)<br/>-2 つの種類 (ブロックまたは許可) から選択します。 |
 |[パート 3: 情報バリアポリシーを適用する](#part-3-apply-information-barrier-policies)     |-ポリシーをアクティブな状態に設定します。<br/>-ポリシーアプリケーションを実行する<br/>-ポリシーの状態を表示する         |
-|(必要な場合)[セグメントまたはポリシーを編集する](#edit-a-segment-or-a-policy)     |-セグメントを編集する<br/>-ポリシーを編集または削除する<br/>-ポリシーアプリケーションを実行する<br/>-ポリシーの状態を表示する         |
+|(必要な場合)[セグメントまたはポリシーを編集する](information-barriers-edit-segments-policies.md.md)    |-セグメントを編集する<br/>-ポリシーを編集または削除する<br/>-ポリシーアプリケーションを再実行します。<br/>-ポリシーの状態を表示する         |
 |(必要な場合)[トラブルシューティング](information-barriers-troubleshooting.md)|-期待どおりに動作しない場合に処理を実行する|
 
 ## <a name="prerequisites"></a>前提条件
@@ -113,38 +99,44 @@ ms.locfileid: "35131381"
 
 ### <a name="define-segments-using-powershell"></a>PowerShell を使用してセグメントを定義する
 
-セグメントを定義しても、ユーザーに影響はありません。情報バリアポリシーが定義され、適用される段階を設定するだけです。
-
-組織セグメントを定義するには、使用する[属性](information-barriers-attributes.md)に対応する**usergroupfilter**パラメーターを指定して、**新しい-組織**セグメントコマンドレットを使用します。
-
-文`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`
-
-例: `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
-
-この例では、hr と** いう名前のセグメント** が、 *Department*属性の値を使用して定義されています。 コマンドレットの "-eq" 部分は、"equals" を参照しています。
-
-定義するセグメントごとに、このプロセスを繰り返します。
-
-各コマンドレットを実行すると、新しいセグメントに関する詳細情報の一覧が表示されます。 詳細には、セグメントの種類、作成者または最終更新日時などが含まれます。 
-
 > [!IMPORTANT]
 > **セグメントが重ならないようにして**ください。 情報バリアによって影響を受ける各ユーザーは、1つ (1 つの) セグメントに属している必要があります。 ユーザーは、2つ以上のセグメントに属することはできません。 (この記事の「 [Example: Contoso の定義済みセグメント](#contosos-defined-segments)」を参照してください)。
 
-セグメントを定義した後、「情報バリアポリシーを定義する」に進みます。
+セグメントを定義しても、ユーザーに影響はありません。情報バリアポリシーが定義され、適用される段階を設定するだけです。
+
+1. 使用する[属性](information-barriers-attributes.md)に対応する**usergroupfilter**パラメーターを指定して、**新しい-組織セグメント**コマンドレットを使用します。
+    
+    文`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`
+    
+    例: `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
+    
+    この例では、hr と** いう名前のセグメント** が、 *Department*属性の値を使用して定義されています。 コマンドレットの **-eq**部分は、"equals" を参照します。 (または、 **-ne**を使用して "not equals" を意味することもできます。 「[セグメント定義」の「equals」と「not equals」](#using-equals-and-not-equals-in-segment-definitions)を参照してください。
+
+    各コマンドレットを実行すると、新しいセグメントに関する詳細情報の一覧が表示されます。 詳細には、セグメントの種類、作成者または最終更新日時などが含まれます。 
+
+2. 定義するセグメントごとに、このプロセスを繰り返します。
+
+セグメントを定義した後、「[情報バリアポリシーを定義](#part-2-define-information-barrier-policies)する」に進みます。
 
 ### <a name="using-equals-and-not-equals-in-segment-definitions"></a>セグメント定義での "等しい" と "not equals" の使用
 
-上記の最初の例では、"Department が HR に等しい" というセグメントを定義しています。 そのセグメントには "equals" パラメーターが含まれています。 また、次の例に示すように、セグメントを定義するには、"not equals" パラメーターを使用します。
+次の例では、"Department が HR に等しい" というセグメントを定義しています。 
 
-文`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
+**例**: `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
 
-例: `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`
+セグメント定義には、 **-eq**と示される "equals" パラメーターが含まれていることに注意してください。 
 
-この例では、Sales ではないすべてのユーザーを含む NotSales というセグメントを定義しました。 コマンドレットの "-ne" 部分は "not equals" を参照しています。
+また、次の例に示すように、"not equals" パラメーター **** を使用してセグメントを定義することもできます。
 
-また、"equals" パラメーターと "not equals" パラメーターの両方を使用してセグメントを定義することもできます。
+構文
 
-例: `New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"`
+**例**: `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`
+
+この例では、 *sales*ではないすべてのユーザーを含む*notsales*というセグメントを定義しました。 コマンドレットの **-ne**部分は、"not equals" を参照しています。
+
+"Equals" または "not equals" を使用してセグメントを定義するだけでなく、"equals" パラメーターと "not equals" パラメーターの両方を使用してセグメントを定義することもできます。
+
+**例**: `New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"`
 
 この例では、ローカルに配置されていて、その位置が*一時的*としてリストされていないユーザーを含む、 *localfte*というセグメントを定義しました。
 
@@ -250,117 +242,6 @@ PowerShell を使用すると、次の表に示すように、ユーザーアカ
 |最新情報バリアポリシーアプリケーション     | **InformationBarrierPoliciesApplicationStatus**コマンドレットを使用します。 <p>文`Get-InformationBarrierPoliciesApplicationStatus`<p>    これにより、ポリシーの適用が完了したか、失敗したか、または進行中であるかに関する情報が表示されます。       |
 |すべての情報バリアポリシーアプリケーション|使え`Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>これにより、ポリシーの適用が完了したか、失敗したか、または進行中であるかに関する情報が表示されます。|
 
-## <a name="stop-a-policy-application"></a>ポリシーアプリケーションを停止する
-
-情報バリアポリシーの適用を開始した後で、これらのポリシーの適用を停止するには、次の手順を使用します。 プロセスが開始されるまで約30-35 分かかることに注意してください。
-
-1. 最新の情報バリアポリシーアプリケーションの状態を表示するには、 **InformationBarrierPoliciesApplicationStatus**コマンドレットを使用します。
-
-    文`Get-InformationBarrierPoliciesApplicationStatus`
-
-    アプリケーションの GUID をメモします。
-
-2. Identity パラメーターを指定して**InformationBarrierPoliciesApplication**コマンドレットを使用します。
-
-    文`Stop-InformationBarrierPoliciesApplication -Identity GUID`
-
-    例: `Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1`
-
-    この例では、情報バリアポリシーの適用を停止しています。
-
-## <a name="edit-a-segment-or-a-policy"></a>セグメントまたはポリシーを編集する
-
-### <a name="edit-a-segment"></a>セグメントを編集する
-
-1. 既存のすべてのセグメントを表示するには、コマンドレットの**取得**を使用します。
-    
-    文`Get-OrganizationSegment`
-
-    セグメントの種類、UserGroupFilter 値、作成者または最終更新日時、GUID など、セグメントと詳細の一覧が表示されます。
-
-    > [!TIP]
-    > 後で参照するために、セグメントのリストを印刷または保存します。 たとえば、セグメントを編集する場合は、その名前を知っているか、値を識別する必要があります (これは Identity パラメーターと共に使用されます)。
-
-2. セグメントを編集するには、 **Identity**パラメーターと関連する詳細情報を使用して、**グループ**化コマンドレットを使用します。 
-
-    文`Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"`
-
-    例: `Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"`
-
-    この例では、GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*を持つセグメントに対して、部署名を "hrdept" に更新しました。
-
-組織のセグメントの編集が終了したら、「情報バリアポリシーの[定義](#part-2-define-information-barrier-policies)または[編集](#edit-a-policy)」に進むことができます。
-
-### <a name="edit-a-policy"></a>ポリシーを編集する
-
-1. 現在の情報バリアポリシーの一覧を表示するには、 **InformationBarrierPolicy**コマンドレットを使用します。
-
-    文`Get-InformationBarrierPolicy`
-
-    結果の一覧で、変更するポリシーを特定します。 ポリシーの GUID と名前をメモします。
-
-2. **InformationBarrierPolicy**コマンドレットを**Identity**パラメーターと共に使用して、必要な変更を指定します。
-
-    例: ポリシーが定義されていて、*リサーチ*セグメントが*販売*および*マーケティング*セグメントとの通信をブロックするとします。 このポリシーは、このコマンドレットを使用して定義されています。`New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
-    
-    *研究*セグメント内のユーザーが*HR*セグメント内のユーザーとのみ通信できるように変更するとします。 この変更を行うには、次のコマンドレットを使用します。`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
-
-    この例では、"SegmentsBlocked" を "SegmentsAllowed" に変更し、 *HR*セグメントを指定しました。
-
-3. ポリシーの編集が終了したら、変更内容を適用してください。 ([情報バリアポリシーの適用](#part-3-apply-information-barrier-policies)を参照してください)。
-
-### <a name="remove-a-policy"></a>ポリシーを削除する
-
-1. 現在の情報バリアポリシーの一覧を表示するには、 **InformationBarrierPolicy**コマンドレットを使用します。
-
-    文`Get-InformationBarrierPolicy`
-
-    結果の一覧で、削除するポリシーを特定します。 ポリシーの GUID と名前をメモします。 ポリシーが非アクティブの状態に設定されていることを確認します。
-
-2. Identity パラメーターを指定して**InformationBarrierPolicy**コマンドレットを使用します。
-
-    文`Remove-InformationBarrierPolicy -Identity GUID`
-
-    例: GUID が*43c37853-ea10-4b90-a23d-ab8c93772471*のポリシーを削除するとします。 これを行うには、次のコマンドレットを使用します。
-    
-    `Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471`
-
-    メッセージが表示されたら、変更を確認します。
-
-3. 削除するポリシーごとに、手順1-2 を繰り返します。
-
-4. ポリシーの削除が終了したら、変更内容を適用します。 これを行うには、 **InformationBarrierPoliciesApplication**コマンドレットを使用します。
-
-    文`Start-InformationBarrierPoliciesApplication`
-
-    組織の変更がユーザーごとに適用されます。 組織の規模が大きい場合、このプロセスが完了するまでに24時間以上かかることがあります。
-
-### <a name="set-a-policy-to-inactive-status"></a>ポリシーを非アクティブな状態に設定する
-
-1. 現在の情報バリアポリシーの一覧を表示するには、 **InformationBarrierPolicy**コマンドレットを使用します。
-
-    文`Get-InformationBarrierPolicy`
-
-    結果の一覧で、変更する (または削除する) ポリシーを特定します。 ポリシーの GUID と名前をメモします。
-
-2. ポリシーの状態を非アクティブに設定するには、Identity パラメーターを指定して**InformationBarrierPolicy**コマンドレットを使用し、State パラメーターを inactive に設定します。
-
-    文`Set-InformationBarrierPolicy -Identity GUID -State Inactive`
-
-    `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive`
-
-    この例では、GUID *43c37853-ea10-4b90-a23d-ab8c9377247*を非アクティブな状態に設定する情報バリアポリシーを設定します。
-
-3. 変更を適用するには、 **InformationBarrierPoliciesApplication**コマンドレットを使用します。
-
-    文`Start-InformationBarrierPoliciesApplication`
-
-    組織の変更がユーザーごとに適用されます。 組織の規模が大きい場合、このプロセスが完了するまでに24時間以上かかることがあります。 (一般的なガイドラインとして、5000のユーザーアカウントを処理するのには1時間かかります)。
-
-この時点で、1つまたは複数の情報バリアポリシーが非アクティブ状態に設定されます。 ここから、次のいずれかの操作を実行できます。
-- そのまま保持する (非アクティブな状態に設定されたポリシーはユーザーに影響しません)
-- [ポリシーを編集する](#edit-a-policy) 
-- [ポリシーを削除する](#remove-a-policy)
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>例: Contoso 社の部署、セグメント、ポリシー
 
@@ -414,6 +295,8 @@ Contoso 社では、次の表に示す3つのポリシーを定義していま�
 この処理が完了すると、Contoso は法律および業界の要件に準拠します。
 
 ## <a name="related-articles"></a>関連記事
+
+[情報バリアポリシーの編集または削除 (プレビュー)](information-barriers-edit-segments-policies.md.md)
 
 [情報障壁の概要を理解する](information-barriers.md)
 
