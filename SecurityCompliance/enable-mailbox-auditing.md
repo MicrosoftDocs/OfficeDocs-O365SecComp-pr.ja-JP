@@ -3,7 +3,7 @@ title: メールボックスの監査を管理する
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: メールボックス監査ログは、Microsoft 365 で既定で有効化されています (既定メールボックス監査または既定によるメールボックス監査の有効化とも呼ばれます)。 これは、メールボックスの所有者、代理人、および管理者が実行する特定の操作は自動的にログに記録され、このログではメールボックスに対して実行されたアクティビティを検索できることを意味します。
-ms.openlocfilehash: 7e017075cbca03e05dd63565c1bf75658f9c0b8b
-ms.sourcegitcommit: 32068e24779017a3c623e0d8918880f51d616982
+ms.openlocfilehash: f100fa1eb8244aeaea463440025ee489ec019406
+ms.sourcegitcommit: ef2657e4221296be7032191f2d91e8ff727523c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "33828401"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "35117692"
 ---
 # <a name="manage-mailbox-auditing"></a>メールボックスの監査を管理する
 
@@ -109,7 +109,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**FolderBind**|メールボックス フォルダーがアクセスされました。この操作は、管理者または委任されたユーザーがメールボックスを開いたときにも記録されます。 <br/><br/> **注**: 代理人により実行されたフォルダー バインド操作の監査レコードは統合されます。 24 時間の間に行われたフォルダーへの個別のアクセスについて、監査レコードが 1 つ生成されます。|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|メッセージが [回復可能なアイテム] フォルダーから削除されました。|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MailboxLogin**|ユーザーが自分のメールボックスにサインインしました。 |||![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**MessageBind**|**注**: この操作は Exchange Online で非推奨となったため、管理者のメールボックス操作のリストに追加できません。<br/><br/> メッセージがプレビュー ウィンドウに表示されたか、開かれました。|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|**MessageBind**|メッセージがプレビュー ウィンドウに表示されたか、開かれました。|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**ModifyFolderPermissions**|**注**: この値はメールボックス操作として認識されていますが、この値はすでに **UpdateFolderPermissions** 操作に含まれているため、別途監査されることはありません。 このため、この値は使用しないでください。||||
 |**Move**|メッセージが別のフォルダーに移動されました。|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**MoveToDeletedItems**|メッセージが削除され、削除済みアイテム フォルダーに移動されました。|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
