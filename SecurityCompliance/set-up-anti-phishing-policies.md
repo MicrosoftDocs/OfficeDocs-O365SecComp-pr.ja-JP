@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Office 365 の一部としての包括的な保護を備えたフィッシング対策保護 (office 365 の高度な脅威保護と基本的な保護機能) Exchange Online Protection では、悪意のある偽造ベースのフィッシング攻撃から組織を保護するのに役立ちます。その他のフィッシング攻撃。
-ms.openlocfilehash: ebe1d4322151c1828f662ca0bf1bd495e808093d
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: f73c4404c2ff2f347bc770176e5b6b25e03af88c
+ms.sourcegitcommit: 1c254108c522d0cb44023565268b5041d07748aa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408372"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35279455"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Office 365 の ATP フィッシング対策とフィッシング対策ポリシーをセットアップする
 
@@ -37,6 +37,9 @@ ms.locfileid: "34408372"
 2. フィッシング対策と ATP のフィッシング対策ポリシーのオプションについて説明します。
 
 3. フィッシング対策ポリシーまたは ATP のフィッシング対策ポリシーを設定します。
+
+>[!IMPORTANT]
+> 複数のテクノロジがどのように適用されるかについては、「[ポリシーと保護の組み合わせ](https://docs.microsoft.com/office365/securitycompliance/how-policies-and-protections-are-combined)について」を参照してください。
 
 ## <a name="review-the-prerequisites"></a>前提条件を確認する
 
@@ -138,7 +141,7 @@ Contoso 社のセキュリティ管理者は、これらの要件を満たすフ
 
 5. 表示されるページで、[**ポリシーの削除**] を選択します。 変更がすべての Office 365 データセンターに蔓延するまで最大30分かかります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 フィッシング対策ポリシーを設定すると、レポートを表示して、組織の脅威保護機能がどのように機能しているかを確認できます。 詳細については、以下のリソースを参照してください。
 

@@ -3,20 +3,20 @@ title: 情報障壁の概要
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/13/2019
-ms.audience: ITPro
+ms.date: 06/26/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 情報バリアを使用して、組織内の Microsoft Teams を使用して通信のコンプライアンスを確保します。
-ms.openlocfilehash: a2c202d08f1de60f92f13b2ac4c2b9d3c7f900e8
-ms.sourcegitcommit: eeb51470d8996e93fac28d7f12c6117e2aeb0cf0
+ms.openlocfilehash: 6565fc28d70ac6ff9a6f4df6edc75b89d19ae29a
+ms.sourcegitcommit: 1c254108c522d0cb44023565268b5041d07748aa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34935939"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35279475"
 ---
 # <a name="information-barriers-preview"></a>情報バリア (プレビュー)
 
@@ -34,7 +34,7 @@ Microsoft クラウドサービスには、強力なコミュニケーション�
 これらのすべてのシナリオ例 (およびその他) については、Microsoft Teams での通信を禁止または許可するように情報バリアポリシーを定義できます。 このようなポリシーを使用すると、ユーザーが不要な通話やチャットを行うことができなくなり、Microsoft Teams 内の特定のグループとのみ通信できるようになります。 情報バリアポリシーが有効になっていると、そのポリシーの対象となっているユーザーが Microsoft Teams 内の他のユーザーと通信しようとするたびに、チェックが行われて、通信 (情報バリアポリシーによって定義されている) を回避 (または許可) します。 情報の障壁に関するユーザーの作業の詳細については、「 [Microsoft Teams の情報障壁](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)」を参照してください。
 
 > [!NOTE]
-> 情報バリアは、SharePoint Online または OneDrive を使用した電子メール通信やファイル共有には適用されません。
+> 情報バリアは、SharePoint Online または OneDrive を使用した電子メール通信やファイル共有には適用されません。 さらに、情報バリアは、[コンプライアンスの境界](set-up-compliance-boundaries.md)から独立しています。
 
 ## <a name="required-licenses-and-permissions"></a>必要なライセンスとアクセス許可
 
@@ -55,6 +55,20 @@ Microsoft クラウドサービスには、強力なコミュニケーション�
 - 情報障壁管理者
 
 情報バリアポリシーを定義、検証、または編集するには、PowerShell コマンドレットを熟知している必要があります。 [How to 情報](information-barriers-policies.md)には PowerShell コマンドレットの例がいくつか用意されていますが、パラメーターなどの追加の詳細については、組織のために知っておく必要があります。
+
+## <a name="concepts-of-information-barrier-policies"></a>情報バリアポリシーの概念
+
+情報バリアポリシーの基礎概念を理解しておくと役に立ちます。
+
+- **ユーザーアカウントの属性**は、Azure Active Directory (または Exchange Online) で定義されます。 これらの属性には、部署、役職、場所、チーム名、その他のジョブプロファイルの詳細を含めることができます。 
+
+- **セグメント**とは、Office 365 セキュリティ & コンプライアンスセンターで、選択した**ユーザーアカウント属性**を使用して定義された一連のユーザーのことです。 ([サポートされている属性の一覧](information-barriers-attributes.md)を参照してください)。 
+
+- **情報バリアポリシー**では、通信制限または制限を決定します。 情報バリアポリシーを定義するときは、次の2種類のポリシーから選択します。
+    - "Block" ポリシーは、あるセグメントが別のセグメントと通信できないようにします。
+    - [許可] ポリシーでは、1つのセグメントが特定の他のセグメントのみと通信できるようにします。
+
+- **ポリシーアプリケーション**は、すべての情報バリアポリシーが定義された後に実行され、組織に適用する準備が整っています。
 
 ## <a name="next-steps"></a>次のステップ
 
