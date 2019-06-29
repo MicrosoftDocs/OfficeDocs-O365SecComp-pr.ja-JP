@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 02/26/2019
+ms.date: 06/26/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 安全なリンクポリシーを設定して、Word、Excel、PowerPoint、および Visio ファイル内の悪意のあるリンクや、電子メールメッセージだけで組織を保護します。
-ms.openlocfilehash: 505508771ae1e630d7d34fde9ee1525d19bd5039
-ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
+ms.openlocfilehash: 8fd49eddc402400acafe0f9d702d19c7a3f63949
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35113261"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394342"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Office 365 の ATP の安全なリンクポリシーを設定する
 
@@ -132,7 +132,8 @@ ATP の安全なリンクポリシーを設定または編集すると、いく�
 |---------|---------|
 |**オフ** <br/> |電子メールメッセージ内の Url はスキャンされません。  <br/> 特定の受信者グループの電子メールメッセージ内の Url をスキャンしないルールなどの例外ルールを定義できます。  <br/> |
 |**On** <br/> |ユーザーが電子メールメッセージ内の Url をクリックしたときに、ユーザーが ATP の安全なリンク保護を介してユーザーをルーティングするように Url を書き換えます。  <br/> 禁止または悪意のある Url の一覧に対してクリックしたときに URL をチェックします。  <br/> |
-|**安全な添付ファイルを使用してダウンロード可能なコンテンツをスキャンする** <br/> |このオプションを選択すると、ダウンロード可能なコンテンツをポイントする Url がスキャンされます。  <br/> |
+|**疑わしいリンクおよびファイルを指すリンクのリアルタイム URL スキャンを適用する** <br/> |このオプションを選択すると、ダウンロード可能なコンテンツを参照する疑わしい Url とリンクがスキャンされます。  <br/> |
+|**メッセージを配信する前に URL スキャンが完了するまで待機する** <br/> |このオプションが選択されている場合、スキャンする Url が含まれているメッセージは、Url がスキャンを終了し、メッセージが配信される前に安全であることが確認されるまで保持されます。  <br/> |
 |**組織内で送信されるメッセージに安全なリンクを適用する** <br/> | このオプションを選択して選択すると、電子メールアカウントが Office 365 でホストされている場合に、組織内のユーザー間で送信される電子メールメッセージに対して ATP の安全なリンク保護が適用されます。  <br/> |
 |**ユーザーのクリックを追跡しない** <br/> |このオプションが選択されている場合は、[外部送信者からの電子メール] の [データ] をクリックします。 URL [組織内で送信された電子メールメッセージ内のリンクの追跡] [現在サポートされていません]。  <br/> |
 |**ユーザーが元の URL にクリックできないようにする** <br/> |このオプションが選択されている場合、ユーザーは、悪意があると判断された URL に[警告ページ](atp-safe-links-warning-pages.md)をスキップすることはできません。  <br/> |
@@ -146,4 +147,4 @@ ATP の安全なリンクポリシーを設定すると、レポートを表示�
 
 - [セキュリティ&amp; /コンプライアンスセンターのエクスプローラーを使用する](use-explorer-in-security-and-compliance.md)
 
-ATP に関する新機能を常に活用してください。 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)にアクセスし、 [ATP に追加](office-365-atp.md#new-features-in-office-365-atp)されている新機能について説明します。
+ATP に関する新機能を常に活用してください。 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)を参照してください。
