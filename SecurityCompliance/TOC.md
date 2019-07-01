@@ -27,7 +27,7 @@
 # [情報を保護する](protect-information.md)
 ## [機密ラベル](sensitivity-labels.md)
 ### [機密ラベルでの暗号化を使用してコンテンツへのアクセスを制限する](encryption-sensitivity-labels.md)
-### [機密ラベルをコンテンツに自動的に適用する](apply_sensitivity_label_automatically.md)
+### [機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)
 ### [ラベル分析によるラベル使用状況の表示](label-analytics.md)
 
 ## [データ損失の防止 (DLP)](data-loss-prevention-policies.md)
@@ -331,7 +331,7 @@
 #### [データ処理中のエラー修復](compliance20/error-remediation.md)
 
 ### [ケースのデータの収集](compliance20/collecting-data-for-ediscovery.md)
-#### [検索を作成してデータを収集する](compliance20/create-search-to-collect-data.md)
+#### [検索を作成する](compliance20/create-search-to-collect-data.md)
 #### [検索クエリのビルド](compliance20/building-search-queries.md)
 #### [検索の統計](compliance20/search-statistics.md)
 #### [検索結果をレビュー セットに追加する](compliance20/add-data-to-review-set.md)
@@ -538,6 +538,8 @@
 ### [情報障壁ポリシーの定義 (プレビュー)](information-barriers-policies.md)
 ### [情報障壁ポリシーの属性 (プレビュー)](information-barriers-attributes.md)
 ### [情報障壁のトラブルシューティング (プレビュー)](information-barriers-troubleshooting.md)
+### [情報障壁ポリシーの編集 (プレビュー)](information-barriers-edit-segments-policies.md.md)
+
 
 ## カスタマー キー
 ### [顧客キーを使用して Office 365 でデータを制御する](controlling-your-data-using-customer-key.md)
