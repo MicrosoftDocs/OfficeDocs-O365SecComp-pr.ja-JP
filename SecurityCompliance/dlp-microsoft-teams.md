@@ -3,8 +3,8 @@ title: データ損失防止と Microsoft Teams
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/26/2019
-ms.audience: ITPro
+ms.date: 07/01/2019
+audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,14 +13,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: これで、DLP ポリシーを Microsoft Teams のチャットおよびチャネルに適用できるようになります。 機能の詳細については、この記事を参照してください。
-ms.openlocfilehash: 712729972942d98afb5b3898ad357114ce1a6bae
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 3792fd6919749510ea20d4ff84b0249b16165a9f
+ms.sourcegitcommit: cc1b0281fa594cbb7c09f3e419df21aec9557831
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33367270"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417399"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>データ損失防止と Microsoft Teams
+
+> [!NOTE]
+> データ損失防止機能は、最近、Office 365 E5 および Office 365 Advanced コンプライアンスの Microsoft Teams に追加されました。 機能の可用性の詳細については、「 [office 365 Service の説明: office 365 Security & コンプライアンスセンター](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)」を参照してください。
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Microsoft Teams の DLP の概要
 
@@ -28,11 +31,14 @@ ms.locfileid: "33367270"
 
 - **例 1: メッセージ内の機密情報を保護**します。 チームのチャットまたはチャネル内の機密情報をゲスト (外部ユーザー) と共有しようとするユーザーがいるとします。 これを防止するように定義された DLP ポリシーがある場合、外部ユーザーに送信される機密情報を含むメッセージは削除されます。 これは、DLP ポリシーがどのように構成されているかに応じて、数秒で自動的に発生します。
 
-- **例 2: ドキュメント内の機密情報を保護**します。 Microsoft Teams チャネルまたはチャットのゲストでドキュメントを共有しようとした場合に、ドキュメントに機密情報が含まれているとします。 これを防止するように定義された DLP ポリシーがある場合、ドキュメントはそれらのユーザーに対して開くことができません。 この場合、DLP ポリシーには、保護を設定するために SharePoint と OneDrive を含める必要があることに注意してください。
+    > [!NOTE]
+    > Microsoft Teams の DLP は、チームとチャネルで[ゲストアクセス](https://docs.microsoft.com/MicrosoftTeams/guest-access)権を持ち、会議やチャットセッションで[外部アクセス](https://docs.microsoft.com/MicrosoftTeams/manage-external-access)権を持つユーザーと共有している場合に機密コンテンツをブロックします。 [Skype For business と共に Microsoft teams](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype)を使用している場合は、TEAMS の DLP が相互運用またはフェデレーションチャットセッションでのメッセージをブロックしないことに注意してください。
+
+- **例 2: ドキュメント内の機密情報を保護**します。 Microsoft Teams チャネルまたはチャットのゲストでドキュメントを共有しようとした場合に、ドキュメントに機密情報が含まれているとします。 これを防止するように定義された DLP ポリシーがある場合、ドキュメントはそれらのユーザーに対して開くことができません。 この場合、DLP ポリシーには、保護を設定するために SharePoint と OneDrive を含める必要があることに注意してください。 (これは、Microsoft Teams に表示される SharePoint の DLP の例です。)
 
 ## <a name="policy-tips-help-educate-users"></a>ユーザーを教育するためのポリシーヒント
 
-[Exchange、outlook、および outlook on the web](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web)、 [SharePoint および OneDrive for business サイト](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)、および[Office デスクトップクライアント](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)での dlp の動作と同様に、アクションが dlp ポリシーと競合すると、ポリシーヒントが表示されます。 ポリシーヒントの例を次に示します。
+[Exchange、outlook、および outlook on the web](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web)、 [SharePoint および OneDrive for business サイト](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)、および[OFFICE デスクトップクライアント](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)での dlp の動作と同様に、アクションが dlp ポリシーと競合すると、ポリシーヒントが表示されます。 ポリシーヒントの例を次に示します。
 
 ![Teams でブロックされたメッセージ通知](media/dlp-teams-blockedmessage-notification.png)
 
@@ -50,9 +56,9 @@ ms.locfileid: "33367270"
 
 ### <a name="to-customize-policy-tips"></a>ポリシーヒントをカスタマイズするには
 
-このタスクを実行するには、DLP ポリシーを編集する権限を持つ役割が割り当てられている必要があります。 詳細については、「 [Permissions](data-loss-prevention-policies.md#permissions)」を参照してください。
+このタスクを実行するには、DLP ポリシーを編集する権限を持つ役割が割り当てられている必要があります。 詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
 
-1. Office 365 Security & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。
+1. Office 365 セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。
 
 2. [**データ損失防止** > **ポリシー**] を選択します。 
 
@@ -70,9 +76,9 @@ ms.locfileid: "33367270"
  
 ## <a name="add-microsoft-teams-as-a-location-to-existing-dlp-policies"></a>既存の DLP ポリシーに Microsoft Teams を場所として追加する
 
-このタスクを実行するには、DLP ポリシーを編集する権限を持つ役割が割り当てられている必要があります。 詳細については、「 [Permissions](data-loss-prevention-policies.md#permissions)」を参照してください。
+このタスクを実行するには、DLP ポリシーを編集する権限を持つ役割が割り当てられている必要があります。 詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
 
-1. Office 365 Security & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。
+1. Office 365 セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。
 
 2. [**データ損失防止** > **ポリシー**] を選択します。 
 
@@ -88,9 +94,9 @@ ms.locfileid: "33367270"
 
 ## <a name="define-a-new-dlp-policy-for-microsoft-teams"></a>Microsoft Teams の新しい DLP ポリシーを定義する
 
-このタスクを実行するには、DLP ポリシーを編集する権限を持つ役割が割り当てられている必要があります。 詳細については、「 [Permissions](data-loss-prevention-policies.md#permissions)」を参照してください。
+このタスクを実行するには、DLP ポリシーを編集する権限を持つ役割が割り当てられている必要があります。 詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
 
-1. Office 365 Security & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。
+1. Office 365 セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。
 
 2. [**データ損失防止** > **ポリシー** > ] を選択して **、ポリシーを作成**します。 
 
