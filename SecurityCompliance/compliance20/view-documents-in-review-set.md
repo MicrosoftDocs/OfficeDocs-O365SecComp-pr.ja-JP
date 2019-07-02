@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: 0e986510ca49cfbfd77ab6f4d43220df1ebf35c5
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d1a51e2496bd57d83e1baf78d82611c406a10e26
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151549"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767368"
 ---
 # <a name="view-documents-in-a-review-set"></a>レビュー セット内のドキュメントを表示する
 
@@ -38,14 +38,14 @@ ms.locfileid: "34151549"
 
 ## <a name="native-view"></a>ネイティブビュー
 
-ネイティブビューアーは、ドキュメントの最も豊富なビューを表示します。 数百のファイルの種類をサポートしており、できる限りの、ネイティブの環境を表示することを目的としています。 たとえば、Microsoft Office ファイルの場合、viewer は Office Online を利用して、ドキュメントコメント、Excel の数式、非表示の行/列、PowerPoint メモなどのコンテンツを表示します。Office Online 閲覧者の詳細については、 \[「必要な情報」リンクを参照してください。\]
+ネイティブビューアーは、ドキュメントの最も豊富なビューを表示します。 数百のファイルの種類をサポートしており、できる限りの、ネイティブの環境を表示することを目的としています。 Microsoft Office ファイルの場合、viewer は Office アプリの web 版を使用して、ドキュメントコメント、Excel の数式、非表示の行/列、PowerPoint メモなどのコンテンツを表示します。
 
 ![ネイティブビュー
 ](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>テキストビュー
 
-テキストビューアーは、ファイルの抽出されたテキストのビューを提供します。 埋め込まれた画像と書式設定は無視されますが、ユーザーがすぐにコンテンツを理解しようとしている場合は、非常にパフォーマンスの高い表示になります。 テキストビューには、その他の機能もあります。
+テキストビューアーは、ファイルの抽出されたテキストのビューを提供します。 埋め込まれた画像と書式設定は無視されますが、コンテンツをすばやく理解しようとする場合は、非常に効果的です。 テキストビューには、次の機能も含まれます。
 
   - 行カウンターを使用すると、文書の特定の部分を簡単に参照できるようになります。
 

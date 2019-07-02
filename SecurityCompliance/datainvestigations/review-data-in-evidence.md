@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 781b0b749390b36ecdf391bff1089d6180e7c3d2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a5c1c578f8d45cf7b95629e8053911d93b5b8583
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150669"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767338"
 ---
 # <a name="review-the-data-in-evidence"></a>エビデンスのデータを確認する
 
@@ -50,7 +50,7 @@ ms.locfileid: "34150669"
 
 ## <a name="native-view"></a>ネイティブビュー
 
-ネイティブビューアーは、ドキュメントをネイティブ形式で最も正確に表示します。 ネイティブビューは、数百種類のファイルタイプでサポートされており、ドキュメントを表示することを目的としています。 Microsoft Office ファイルの場合、ネイティブビューアーは Office Online を使用します。 これにより、さまざまな Office ドキュメント、数式、Excel の非表示の行/列、PowerPoint のメモビューなどのコンテンツを表示できます。
+ネイティブビューアーは、ドキュメントをネイティブ形式で最も正確に表示します。 ネイティブビューは、数百種類のファイルタイプでサポートされており、ドキュメントを表示することを目的としています。 Microsoft Office ファイルの場合、ネイティブビューアーは Office アプリの web 版を使用します。 これにより、さまざまな Office ドキュメント、数式、Excel の非表示の行/列、PowerPoint のメモビューなどのコンテンツを表示できます。
 
 ![ネイティブビュー
 ](../media/Reviewimage3.png)

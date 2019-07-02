@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 セキュリティ センター でのデバイスの監視
+title: Microsoft 365 セキュリティセンターのデバイスの監視とレポート
 description: 組織において、デバイスのセキュリティを確保し、最新の状態を維持し、潜在的な脅威を特定する方法について説明します。
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティセンター、モニター、レポート、デバイス
 ms.prod: w10
@@ -12,42 +12,42 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 2984231caba574b8fa47b725ab77227f6ab5ae56
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 44fd28a0ba2ec72d999c89d183d85ccb496903ec
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402935"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852871"
 ---
-# <a name="monitor-devices-in-microsoft-365-security"></a>Microsoft 365 セキュリティ センター でのデバイスの監視
+# <a name="device-monitoring-and-reporting-in-microsoft-365-security-center"></a>Microsoft 365 セキュリティセンターのデバイスの監視とレポート
 
 モバイルデバイスのセキュリティを確保し、最新の状態に保つことができます。また、潜在的な脅威については、Microsoft 365 セキュリティセンターを使用してください。
 
 ## <a name="view-device-alerts"></a>デバイスの通知を表示する
 
-Windows Defender ATP (E5 ライセンス付き) から、デバイスに対する違反アクティビティやその他の脅威に関する最新の通知を入手できます。 Microsoft 365 セキュリティセンターは、優先ワークフローを使用して、これらのアラートを高レベルで効果的に監視します。
+Microsoft Defender ATP (E5 ライセンス付き) から、デバイスに対する違反アクティビティやその他の脅威に関する最新の通知を入手できます。 Microsoft 365 セキュリティセンターは、優先ワークフローを使用して、これらのアラートを高レベルで効果的に監視します。
 
 ### <a name="monitor-high-impact-alerts"></a>影響度の高いアラートを監視する
 
-各 Windows Defender ATP アラートには、対応する重要度 (高、中、低、または情報) があり、それが無人のままである場合にネットワークへの潜在的な影響を示します。  
+Microsoft Defender ATP の各アラートには、対応する重要度 (高、中、低、または情報) があります。これは、無人のままでネットワークに影響を与える可能性があることを示します。  
 
-**デバイスアラートの重要度**カードを使用して、より深刻で、即時応答を必要とする可能性があるアラートに特に注目します。 このカードから、Windows Defender セキュリティセンターポータルの詳細情報を表示することができます。
+**デバイスアラートの重要度**カードを使用して、より深刻で、即時応答を必要とする可能性があるアラートに特に注目します。 このカードから、Microsoft Defender セキュリティセンターポータルの詳細情報を表示できます。
 
 ![デバイス通知の重要度カード](./media/security-docs/device-alerts-severity.png)
 
 ### <a name="understand-sources-of-alerts"></a>通知のソースを理解する
 
-Windows Defender ATP は、さまざまなセキュリティセンサーおよびインテリジェンスソースからのデータを利用して、アラートを生成します。 たとえば、web サービス API によって提供される独自のカスタム脅威インテリジェンスに加えて、Windows Defender ウイルス対策およびサードパーティのマルウェア対策の検出情報を使用することができます。
+Microsoft Defender ATP は、さまざまなセキュリティセンサーおよびインテリジェンスソースからのデータを利用して、アラートを生成します。 たとえば、web サービス API によって提供される独自のカスタム脅威インテリジェンスに加えて、Windows Defender ウイルス対策およびサードパーティのマルウェア対策の検出情報を使用することができます。
 
 **デバイスアラート検出**ソースカードは、通知のソース別の配布を示しています。 このカードは、特定のソース (特にカスタムソース) に関連するアクティビティを追跡するのに役立ちます。 また、これを使用して、悪意のあるアクティビティやコンポーネントを自動的にブロックするように構成されていないセンサーからのアラートに焦点を当てることもできます。
 
 ![デバイスアラート検出ソースカード](./media/security-docs/device-alert-detection-sources.png)
 
-このカードから、Windows Defender セキュリティセンターポータルの詳細情報を表示することができます。
+このカードから、Microsoft Defender セキュリティセンターポータルの詳細情報を表示できます。
 
 ### <a name="understand-the-types-of-threats-that-trigger-alerts"></a>アラートを発生させる脅威の種類を理解する
 
-Windows Defender ATP は、各アラートを、アタックチェーンまたは脅威コンポーネントの特定の段階を表すカテゴリに分類します。 たとえば、検出された脅威アクティビティは、ネットワーク上の他のデバイスに接続しようとしたときに、攻撃者が初期 foothold を取得した後に発生した可能性があることを示すために、"左右の移動" に分類されます。 検出された場合、脅威コンポーネントは、「マルウェア」、または特に「ランサムウェア」、「資格情報の盗用」、またはその他の悪意のあるソフトウェアまたは望ましくないソフトウェアとして分類されます。
+Microsoft Defender ATP は、各アラートを、アタックチェーンまたは脅威コンポーネントの特定の段階を表すカテゴリに分類します。 たとえば、検出された脅威アクティビティは、ネットワーク上の他のデバイスに接続しようとしたときに、攻撃者が初期 foothold を取得した後に発生した可能性があることを示すために、"左右の移動" に分類されます。 検出された場合、脅威コンポーネントは、「マルウェア」、または特に「ランサムウェア」、「資格情報の盗用」、またはその他の悪意のあるソフトウェアまたは望ましくないソフトウェアとして分類されます。
 
 **デバイスの脅威カテゴリ**カードには、これらのカテゴリへのアラートの配布が表示されます。 この情報を使用して、資格情報の盗難などの脅威のアクティビティを識別できます。たとえば、ソーシャルエンジニアリングの試行と比較して、より重大な影響を与える可能性があります。 これを使用して、ランサムウェアなどの潜在的な破壊的脅威を監視することもできます。
 
@@ -55,18 +55,18 @@ Windows Defender ATP は、各アラートを、アタックチェーンまた�
 
 ### <a name="monitor-active-alerts"></a>アクティブなアラートを監視する
 
-**デバイス通知ステータス**カードは、解決されておらず、注意が必要なアラートの数を示しています。 このカードから、Windows Defender セキュリティセンターポータルの詳細情報を表示することができます。
+**デバイス通知ステータス**カードは、解決されておらず、注意が必要なアラートの数を示しています。 このカードから、Microsoft Defender セキュリティセンターポータルの詳細情報を表示できます。
 
 ![デバイスアラートステータスカード](./media/security-docs/device-alert-status.png)
 
 ### <a name="monitor-classification-of-resolved-alerts"></a>解決されたアラートの分類を監視する
 
-ウィンドウ Defender ATP の警告を解決するとき、セキュリティ担当者は通知を次のように確認するかどうかを指定できます。
+Microsoft Defender ATP 通知を解決するとき、セキュリティ担当者は通知を次のように確認するかどうかを指定できます。
 
 * 実際の違反アクティビティまたは脅威コンポーネントを識別する真の通知
 * 通常のアクティビティを誤って検出した false アラート
 
-**デバイス通知分類**カードは、解決済みのアラートが true または誤通知として分類されているかどうかを示します。 このカードから、Windows Defender セキュリティセンターポータルの詳細情報を表示することができます。
+**デバイス通知分類**カードは、解決済みのアラートが true または誤通知として分類されているかどうかを示します。 このカードから、Microsoft Defender セキュリティセンターポータルの詳細情報を表示できます。
 
 注: 状況によっては、特定の通知に対して分類情報を使用できない場合があります。
 
@@ -85,7 +85,7 @@ Windows Defender ATP は、各アラートを、アタックチェーンまた�
 * **不要なソフトウェア**–悪意のあるアプリやその他のソフトウェア。それ以外の場合は、ポリシーや使用規約に違反する
 * **** その他: 指定された種類の下にない他の決定
 
-このカードから、Windows Defender セキュリティセンターで詳細情報を表示できます。
+このカードから、Microsoft Defender セキュリティセンターの詳細情報を表示することができます。
 
 ![デバイスのアラート判別カード](./media/security-docs/device-alert-determination.png)
 
@@ -97,7 +97,7 @@ Windows Defender ATP は、各アラートを、アタックチェーンまた�
 
 ## <a name="monitor-and-report-status-of-intune-managed-devices"></a>Intune で管理されているデバイスの状態を監視および報告する
 
-次の監視およびレポートには、Intune に登録されたデバイスからのデータが含まれています。 未登録のデバイスからのデータは含まれません。 これらのカードを表示できるのは、全体管理者のみです。
+次のレポートには、Intune に登録されたデバイスからのデータが含まれています。 未登録のデバイスからのデータは含まれません。 これらのカードを表示できるのは、全体管理者のみです。
 
 Intune 登録デバイスデータには次のものが含まれます。
 
@@ -146,7 +146,7 @@ Intune 登録デバイスデータには次のものが含まれます。
 
 ## <a name="monitor-and-manage-asr-rule-deployment-and-detections"></a>ASR ルールの展開と検出を監視および管理する
 
-[Attack Surface Reduction (ASR) ルール](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)は、一般的に悪用される行為やアプリを阻止するのに役立ちます。マルウェアに感染したコンピューターに感染します。 これらのルールは、実行可能ファイルをいつどのように実行するかを制御します。 たとえば、JavaScript または VBScript がダウンロードされた実行可能ファイルを起動したり、Office マクロからの Win32 API 呼び出しをブロックしたり、USB ドライブから実行するブロックプロセスを禁止したりすることができます。
+[Attack Surface Reduction (ASR) ルール](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)は、一般的に悪用される行為やアプリを阻止するのに役立ちます。マルウェアに感染したコンピューターに感染します。 これらのルールは、実行可能ファイルをいつどのように実行するかを制御します。 たとえば、JavaScript または VBScript がダウンロードされた実行可能ファイルを起動したり、Office マクロからの Win32 API 呼び出しをブロックしたり、USB ドライブから実行するブロックプロセスを禁止したりすることができます。
 
 ![アタック表面減少カード](./media/security-docs/attack-surface-reduction-rules.png)
 
@@ -185,7 +185,7 @@ Microsoft Intune は、ASR ルールの管理機能を提供します。 設定�
 
 Microsoft 365 セキュリティセンターでは、攻撃対象から[除外する可能性のあるファイル](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr#add-exclusions-for-a-false-positive)の名前を検出します。 ファイルを除外することで、誤検知を減らすことができます。ブロックモードでは、攻撃対象領域の削減ルールをより確実に展開することができます。
 
-除外は microsoft Intune で管理されますが、microsoft 365 セキュリティセンターには、ファイルを理解するのに役立つ分析ツールが用意されています。 除外するファイルの収集を開始するには、[ **Attack surface reduction ルール**レポート] ページの [**除外の追加**] タブに移動します。
+除外は Microsoft Intune で管理されますが、Microsoft 365 セキュリティセンターには、ファイルを理解するのに役立つ分析ツールが用意されています。 除外するファイルの収集を開始するには、[ **Attack surface reduction ルール**レポート] ページの [**除外の追加**] タブに移動します。
 
 >[!NOTE]  
 >このツールでは、すべての攻撃対象領域の削減ルールによって検出が分析されますが、[一部のルールのみが除外をサポート](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules)します。
@@ -199,9 +199,9 @@ Microsoft 365 セキュリティセンターでは、攻撃対象から[除外�
 
 選択したファイルの完全パスを除外するには、[除外する**パスを取得**する] を選択します。
 
-**Windows ローカルセキュリティ機関サブシステム (lsass.exe) から**の ASR ルールブロックの資格情報のログは、ソースアプリ**lsass.exe**(通常のシステムファイル) を検出されたファイルとしてキャプチャします。 そのため、生成された除外パスの一覧には、このファイルが含まれます。 **lsass.exe**ではなく、このルールをトリガーしたファイルを除外するには、検出されたファイルの代わりにソースアプリへのパスを使用します。
+**Windows ローカルセキュリティ機関サブシステム (lsass.exe) から**の ASR ルールブロックの資格情報のログは、ソースアプリ**lsass.exe**(通常のシステムファイル) を検出されたファイルとしてキャプチャします。 そのため、生成された除外パスの一覧には、このファイルが含まれます。 **Lsass.exe**ではなく、このルールをトリガーしたファイルを除外するには、検出されたファイルの代わりにソースアプリへのパスを使用します。
 
-ソースアプリを見つけるには、この特定のルールに対して次の[高度な検索クエリ](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection)を実行します (ルール ID 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 によって識別されます)。 
+ソースアプリを見つけるには、この特定のルールに対して次の[高度な検索クエリ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting)を実行します (ルール ID 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 によって識別されます)。
 
 ```MiscEvents
 | where EventTime > ago(7d)
@@ -213,9 +213,9 @@ Microsoft 365 セキュリティセンターでは、攻撃対象から[除外�
 #### <a name="check-files-for-exclusion"></a>ファイルの除外を確認する
 ASR からファイルを除外する前に、ファイルを検査して、悪意がないかどうかを確認することをお勧めします。
 
-ファイルを確認するには、Windows Defender セキュリティセンターの [[ファイル情報] ページ](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/investigate-files-windows-defender-advanced-threat-protection)を使用します。 このページには、流行の情報と、VirusTotal のウイルス検出率が表示されます。 ページを使用して、詳細な分析のためにファイルを送信することもできます。
+ファイルを確認するには、Microsoft Defender セキュリティセンターの [[ファイル情報] ページ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-files)を使用します。 このページには、流行の情報と、VirusTotal のウイルス検出率が表示されます。 ページを使用して、詳細な分析のためにファイルを送信することもできます。
 
-Windows Defender セキュリティセンターで検出されたファイルを特定するには、次の高度な検索クエリを使用して、すべての ASR 検出を検索します。
+Microsoft Defender セキュリティセンターで検出されたファイルを特定するには、次の高度な検索クエリを使用して、すべての ASR 検出を検索します。
 
 ```MiscEvents
 | where EventTime > ago(7d)
@@ -223,4 +223,4 @@ Windows Defender セキュリティセンターで検出されたファイルを
 | project FolderPath, FileName, SHA1, InitiatingProcessFolderPath, InitiatingProcessFileName, InitiatingProcessSHA1
 ```
 
-結果で**SHA1**または**InitiatingProcessSHA1**を使用して、Windows Defender セキュリティセンターのユニバーサル検索バーを使用してファイルを検索します。
+結果で**SHA1**または**InitiatingProcessSHA1**を使用して、Microsoft Defender セキュリティセンターのユニバーサル検索バーを使用してファイルを検索します。

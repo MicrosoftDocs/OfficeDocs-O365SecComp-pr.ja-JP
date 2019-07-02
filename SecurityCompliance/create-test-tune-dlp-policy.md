@@ -3,7 +3,7 @@ title: DLP ポリシーの作成、テスト、調整
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'DLP ポリシーの使用を開始する最も簡単で最も一般的な方法は、Office 365 に含まれるいずれかのテンプレートを使用することです。 '
-ms.openlocfilehash: 0c6b3bce7b336b08595a432c29601ecb63155589
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 32b0b4baa058fda031a58681e107b01bf207da55
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259398"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077963"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>DLP ポリシーの作成、テスト、調整
 
@@ -30,7 +30,7 @@ Paul Cunningham、Microsoft MVP <br/>
 [@Practical365](https://twitter.com/practical365)<br/>
 __________________________________________________
 
-データ損失防止とは、Office 365 のコンプライアンス機能で、組織が不要な機密情報を意図的または偶発的に危険にさらすことを防ぐために設計されています。 DLP は、exchange Server と exchange Online ではルートがあり、SharePoint Online と OneDrive for business にも適用されます。
+データ損失防止とは、Office 365 のコンプライアンス機能で、組織が不要な機密情報を意図的または偶発的に危険にさらすことを防ぐために設計されています。 DLP は、Exchange Server と Exchange Online ではルートがあり、SharePoint Online と OneDrive for business にも適用されます。
 
 DLP では、コンテンツ分析エンジンを使用して、電子メールメッセージとファイルの内容を調べ、クレジットカード番号や個人を特定できる情報 (PII) などの機密情報を検索します。 機密情報は、電子メールメッセージやファイルの暗号化などの追加の手順を行わずに、電子メールで送信したり、ドキュメントに含めたりする必要はありません。 DLP を使用すると、機密情報を検出し、次のような処理を実行できます。
 
@@ -59,13 +59,13 @@ DLP では、コンテンツ分析エンジンを使用して、電子メール�
 
 データ漏洩のリスクがまったくわからない場合は、DLP を実装することから始めなければならないことを十分に理解することは困難です。 さいわい、DLP ポリシーを "テストモード" で実行して、有効にする前に、その実効性と正確性を測定できます。
 
-exchange Online の DLP ポリシーは、exchange 管理センターを使用して管理できます。 しかし、セキュリティ & コンプライアンスセンターを使用して、すべてのワークロードに対して DLP ポリシーを構成することができます。このため、この記事のデモで使用していることがわかります。 Security & コンプライアンスセンターでは、**データ損失防止** > **ポリシー**の下に DLP ポリシーが見つかります。 [**ポリシーの作成**] をクリックして開始します。
+Exchange Online の DLP ポリシーは、Exchange 管理センターを使用して管理できます。 ただし、セキュリティ & コンプライアンスセンターを使用して、すべてのワークロードの DLP ポリシーを構成することができます。したがって、この記事のデモに使用することになります。 セキュリティ & コンプライアンスセンターでは、**データ損失防止** > **ポリシー**の下に DLP ポリシーが見つかります。 [**ポリシーの作成**] をクリックして開始します。
 
-Office 365 には、dlp ポリシーの作成に使用できる一連の[dlp ポリシーテンプレート](what-the-dlp-policy-templates-include.md)が用意されています。 オーストラリアのビジネスであるとします。 ポリシーテンプレートをフィルター処理して、オーストラリアに関連するものだけを表示することができます。これは、財務、医療、健康、およびプライバシーの一般的なカテゴリに分類されます。
+Office 365 には、DLP ポリシーの作成に使用できる一連の[dlp ポリシーテンプレート](what-the-dlp-policy-templates-include.md)が用意されています。 オーストラリアのビジネスであるとします。 ポリシーテンプレートをフィルター処理して、オーストラリアに関連するものだけを表示することができます。これは、財務、医療、健康、およびプライバシーの一般的なカテゴリに分類されます。
 
 ![国または地域を選択するためのオプション](media/DLP-create-test-tune-choose-country.png)
 
-このデモでは、オーストラリアの納税者情報 (PII) データを選択します。このデータには、オーストラリアの税ファイル番号 (tfn) と運転免許証番号の情報の種類が含まれます。
+このデモでは、オーストラリアの納税者情報 (PII) データを選択します。このデータには、オーストラリアの税ファイル番号 (TFN) と運転免許証番号の情報の種類が含まれます。
 
 ![ポリシーテンプレートを選択するオプション](media/DLP-create-test-tune-choose-policy-template.png)
 
@@ -73,7 +73,7 @@ Office 365 には、dlp ポリシーの作成に使用できる一連の[dlp ポ
 
 ![ポリシーに名前をつけるオプション](media/DLP-create-test-tune-name-policy.png)
 
-ポリシーが適用される場所を選択します。 DLP ポリシーは、Exchange online、SharePoint Online、OneDrive for business に適用できます。 このポリシーは、すべての場所に適用するように構成したままにします。
+ポリシーが適用される場所を選択します。 DLP ポリシーは、Exchange Online、SharePoint Online、OneDrive for business に適用できます。 このポリシーは、すべての場所に適用するように構成したままにします。
 
 ![すべての場所を選択するオプション](media/DLP-create-test-tune-choose-locations.png)
 
@@ -99,15 +99,15 @@ Office 365 には、dlp ポリシーの作成に使用できる一連の[dlp ポ
 
 新しい DLP ポリシーが約1時間以内に有効になります。 通常のユーザーアクティビティでトリガーされるようになるか、自分でトリガーしてみることができます。 以前は、[機密情報の種類に](what-the-sensitive-information-types-look-for.md)ついてこのトピックにリンクしていました。これにより、DLP 一致をトリガーする方法についての情報が提供されます。
 
-例として、この記事に対して作成した DLP ポリシーはオーストラリアの税ファイル番号 (tfn) を検出します。 ドキュメントによれば、一致は次の条件に基づいています。
+例として、この記事に対して作成した DLP ポリシーはオーストラリアの税ファイル番号 (TFN) を検出します。 ドキュメントによれば、一致は次の条件に基づいています。
 
 ![オーストラリアの税ファイル番号に関するドキュメント](media/DLP-create-test-tune-Australia-Tax-File-Number-doc.png)
  
-blunt のように、tfn の検出をデモンストレーションするために、"税ファイル番号" という単語を持つ電子メールと、近接している9桁の文字列は、問題を発生させることなく sail ます。 DLP ポリシーをトリガーしない理由は、この9桁の文字列が、無害な番号の文字列だけでなく、有効な tfn であることを示すチェックサムを渡す必要があるためです。
+Blunt のように、TFN の検出をデモンストレーションするために、"税ファイル番号" という単語を持つ電子メールと、近接している9桁の文字列は、問題を発生させることなく sail ます。 DLP ポリシーをトリガーしない理由は、この9桁の文字列が、無害な番号の文字列だけでなく、有効な TFN であることを示すチェックサムを渡す必要があるためです。
 
 ![チェックサムを渡さないオーストラリアの税ファイル番号](media/DLP-create-test-tune-email-test1.png)
 
-これに対して、"税ファイル番号" という語句を持つ電子メールと、チェックサムを渡す有効な tfn がポリシーをトリガーします。 ここでは、を使用している tfn I を使用しているのは、有効な (正規の) tfns を生成する web サイトから取得されたものです。 [有効だが、偽装されたクレジットカード番号](http://www.fakecreditcardgenerator.net/)を生成する類似のサイトがあります。 DLP ポリシーをテストする際の最も一般的な間違いの1つは、無効で、チェックサムを渡さない (したがってポリシーをトリガーしない) ため、このようなサイトが非常に役立ちます。
+これに対して、"税ファイル番号" という語句を持つ電子メールと、チェックサムを渡す有効な TFN がポリシーをトリガーします。 ここでは、を使用している TFN I を使用しているのは、有効な (正規の) TFNs を生成する web サイトから取得されたものです。 [有効だが、偽装されたクレジットカード番号](http://www.fakecreditcardgenerator.net/)を生成する類似のサイトがあります。 DLP ポリシーをテストする際の最も一般的な間違いの1つは、無効で、チェックサムを渡さない (したがってポリシーをトリガーしない) ため、このようなサイトが非常に役立ちます。
 
 ![チェックサムに合格するオーストラリアの税ファイル番号](media/DLP-create-test-tune-email-test2.png)
 
@@ -115,11 +115,11 @@ blunt のように、tfn の検出をデモンストレーションするため�
 
 ![検出された税ファイル番号を示すインシデントレポート](media/DLP-create-test-tune-email-incident-report.png)
 
-dlp ポリシーをテストモードのままにして、インシデントレポートの電子メールを分析する場合は、dlp ポリシーの精度と、それが実施されたときにどの程度有効になるかについての感じを始めることができます。 インシデントレポートに加えて、 [DLP レポートを使用](view-the-dlp-reports.md)して、テナント全体のポリシー一致の集約されたビューを表示できます。
+DLP ポリシーをテストモードのままにして、インシデントレポートの電子メールを分析する場合は、DLP ポリシーの精度と、それが実施されたときにどの程度有効になるかについての感じを始めることができます。 インシデントレポートに加えて、 [DLP レポートを使用](view-the-dlp-reports.md)して、テナント全体のポリシー一致の集約されたビューを表示できます。
 
 ## <a name="tune-a-dlp-policy"></a>DLP ポリシーを調整する
 
-ポリシーヒットを分析する際に、ポリシーの動作についていくらか調整する必要があるかもしれません。 簡単な例として、電子メール内の1つの tfn が問題ではないと判断する場合があります (デモのためにそのままにしておきましょう)。ただし、2つ以上のインスタンスが問題であると考えられます。 複数のインスタンスは、たとえば外部の会計サービスなど、従業員が HR データベースから外部の関係者に対して CSV エクスポートを送信するなど、危険なシナリオになる可能性があります。 間違いなく、検出してブロックすることをお勧めします。
+ポリシーヒットを分析する際に、ポリシーの動作についていくらか調整する必要があるかもしれません。 簡単な例として、電子メール内の1つの TFN が問題ではないと判断する場合があります (デモのためにそのままにしておきましょう)。ただし、2つ以上のインスタンスが問題であると考えられます。 複数のインスタンスは、たとえば外部の会計サービスなど、従業員が HR データベースから外部の関係者に対して CSV エクスポートを送信するなど、危険なシナリオになる可能性があります。 間違いなく、検出してブロックすることをお勧めします。
 
 セキュリティ & コンプライアンスセンターでは、既存のポリシーを編集して動作を調整することができます。
 
@@ -203,7 +203,7 @@ DLP ポリシーが正確かつ効果的に機密情報の種類を検出して�
 
 ![ポリシーを有効にするオプション](media/DLP-create-test-tune-turn-on-policy.png)
  
-ポリシーが有効になるまで待機している場合は、 [Security & コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)し、 [DlpCompliancePolicy コマンドレット](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps)を実行して、再配置の状態を確認します。
+ポリシーが有効になるかどうかを確認するには、「 [Security & コンプライアンスセンターの PowerShell に接続](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)し、 [DlpCompliancePolicy コマンドレット](https://docs.microsoft.com/en-us/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps)を実行して、ランの状態を確認します。
 
 ![PowerShell でのコマンドレットの実行](media/DLP-create-test-tune-PowerShell.png)
 
@@ -219,4 +219,4 @@ DLP ポリシーを有効にした後、独自の最終的なテストを実行�
 
 ## <a name="summary"></a>Summary
 
-データ損失防止ポリシーは、すべての種類の組織に適しています。 一部の DLP ポリシーのテストは、ポリシーヒント、エンドユーザーによる上書き、インシデントレポートなどの制御によって、リスクの低い課題となります。 一部の DLP ポリシーを自動的にテストして、組織内で既に発生している違反の種類を確認してから、誤検知率の低いポリシーを作成し、許可されたものと許可されていないものについてユーザーを教育し、dlp ポリシーをに展開することができます。機関.
+データ損失防止ポリシーは、すべての種類の組織に適しています。 一部の DLP ポリシーのテストは、ポリシーヒント、エンドユーザーによる上書き、インシデントレポートなどの制御によって、リスクの低い課題となります。 一部の DLP ポリシーを自動的にテストして、組織内で既に発生している違反の種類を確認してから、誤検知率の低いポリシーを作成し、許可されたものと許可されていないものについてユーザーを教育し、DLP ポリシーをに展開することができます。機関.

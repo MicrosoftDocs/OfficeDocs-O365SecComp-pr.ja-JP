@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: メールボックスを非アクティブなメールボックスに変換することにより、元従業員のメールボックスの内容を保持する方法について説明します。 メールボックスを訴訟ホールドの対象にするか、Office 365 アイテム保持ポリシーをメールボックスに適用してから、対応する Office 365 アカウントを削除することによって、これを行うことができます。
-ms.openlocfilehash: 58bcc888af0d1ae92cf9d86e116fe287e7c2316c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: acfe0a3d8f3865cf0e30a938970235bf31dfbce4
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152719"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767348"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>Office 365 の非アクティブなメールボックスの概要
 
@@ -31,7 +31,7 @@ ms.locfileid: "34152719"
 
 従業員が組織を退職した場合 (または、延長された休暇が発生した場合)、自分の Office 365 アカウントを削除することができます。 従業員のメールボックスデータは、アカウントが削除された後、30日間保持されます。 この期間中は、アカウントを復元することによってメールボックスのデータを回復することができます。 30日後、データは完全に削除されます。
   
-ただし、組織で元従業員のメールボックスの内容を保持する必要がある場合は、メールボックスを訴訟ホールドの対象にするか、Office 365 アイテム保持ポリシーをセキュリティ & コンプライアンスセンターでメールボックスに適用することによって、メールボックスを非アクティブなメールボックスに変更することができます。次に、対応する Office 365 アカウントを削除します。 The contents of an inactive mailbox are retained for the duration of the Litigation Hold placed on the mailbox or the retention period of the Office 365 retention policy applied to it before the mailbox was deleted. You can still recover the corresponding user account for a 30-day period. ただし、30日が経過すると、非アクティブなメールボックスは、保持ポリシーまたはアイテム保持ポリシーが削除されるまで、Office 365 に保持されます。 
+ただし、組織で元従業員のメールボックスの内容を保持する必要がある場合は、メールボックスを訴訟ホールドの対象にするか、セキュリティ & コンプライアンスセンターのメールボックスに Office 365 アイテム保持ポリシーを適用することによって、メールボックスを非アクティブなメールボックスに変更できます。次に、対応する Office 365 アカウントを削除します。 The contents of an inactive mailbox are retained for the duration of the Litigation Hold placed on the mailbox or the retention period of the Office 365 retention policy applied to it before the mailbox was deleted. You can still recover the corresponding user account for a 30-day period. ただし、30日が経過すると、非アクティブなメールボックスは、保持ポリシーまたはアイテム保持ポリシーが削除されるまで、Office 365 に保持されます。 
   
 > [!NOTE]
 > 2017 年 7 月 1 日に終了する予定だった、メールボックスを非アクティブにするために新しいインプレース ホールドを作成できる期間を延長しました。しかし、今年の終わりごろまたは来年の初めごろには、新しいインプレース ホールドを Exchange Online 内で作成することはできなくなります。その時点で、非アクティブのメールボックスを作成するために使用できるのは、訴訟ホールドと Office 365 アイテム保持ポリシーだけになります。ただし、インプレース ホールドにある既存の非アクティブなメールボックスは引き続きサポートされます。また、引き続き非アクティブなメールボックスのインプレース ホールドを管理することができます。これには、インプレース ホールドの期間を変更すること、およびそのインプレース ホールドを削除することによって非アクティブなメールボックスを完全に削除することが含まれます。 
@@ -41,9 +41,9 @@ ms.locfileid: "34152719"
 
 訴訟ホールドに加えて、セキュリティ & コンプライアンスセンターで新しい Office 365 アイテム保持ポリシー機能を使用することで、メールボックスを非アクティブにすることもできます。 To use a retention policy to make an inactive mailbox: 
   
-- (Skype 関連のコンテンツがユーザーのメールボックスに保管されるため) アイテム保持ポリシーを Exchange メールボックスまたは Skype for Business の場所に適用する必要があります。 
-    
 - コンテンツを保持するか、コンテンツを保持してから削除するように構成する必要があります。 単にコンテンツを削除するようにアイテム保持ポリシーが構成されている場合、ポリシーが適用されるメールボックスは、メールボックスの削除の際に非アクティブになりません。
+
+- (Skype 関連のコンテンツがユーザーのメールボックスに保管されるため) アイテム保持ポリシーを Exchange メールボックスまたは Skype for Business の場所に適用する必要があります。 
     
 - 検索クエリに合致するアイテムだけを保持するように、クエリ ベースにすることができます。 
     
@@ -57,7 +57,7 @@ Office 365 アイテム保持ポリシーの構成の詳細については、[�
     
 - 非アクティブなメールボックスを特定するには、アイテム保持ポリシーが非アクティブなメールボックスにのみ適用されるため、この方法を使用することをお勧めします。
     
-- 組織内の非アクティブなメールボックスに割り当てられているアイテム保持ポリシーをすばやく識別することができます。 This will make it easier to change the retention (or deletion) settings if necessary. また、セキュリティ & コンプライアンスセンターを使用してポリシーから削除するだけで済むため、非アクティブなメールボックスを完全に削除することも容易になります。 それ以外の場合は、Exchange Online PowerShell を使用して、非アクティブなメールボックスから訴訟ホールドを削除するか、Security & コンプライアンスセンター PowerShell を使用して、組織全体の Office 365 保持ポリシーから非アクティブなメールボックスを除外する必要があります。
+- 組織内の非アクティブなメールボックスに割り当てられているアイテム保持ポリシーをすばやく識別することができます。 This will make it easier to change the retention (or deletion) settings if necessary. また、セキュリティ & コンプライアンスセンターを使用してポリシーから削除するだけで済むため、非アクティブなメールボックスを完全に削除することも容易になります。 それ以外の場合は、Exchange Online PowerShell を使用して、非アクティブなメールボックスから訴訟ホールドを削除するか、セキュリティ & コンプライアンスセンターの PowerShell を使用して、組織全体の Office 365 アイテム保持ポリシーから非アクティブなメールボックスを除外する必要があります。
     
 - Office 365 アイテム保持ポリシーを専ら非アクティブなメールボックスのために作成する場合、最大 1,000 個のメールボックスをポリシーに追加できます。非常に大規模な組織の場合には、非アクティブなメールボックスのために使用する Office 365 アイテム保持ポリシーを複数作成する必要があるかもしれません。
 
@@ -66,13 +66,13 @@ Office 365 アイテム保持ポリシーの構成の詳細については、[�
   
 ## <a name="inactive-mailboxes-and-ediscovery-case-holds"></a>非アクティブなメールボックスと電子情報開示のケース保持
 
-セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられているホールドがメールボックスに配置され、メールボックスまたはユーザーの Office 365 アカウントが削除されると、そのメールボックスは非アクティブなメールボックスになります。 However, we don't recommend using eDiscovery case holds to make a mailbox inactive. That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. At some point, a legal case will probably end and the holds associated with the case will be removed and the eDiscovery case will be closed. In fact, if a hold that's placed on an inactive mailbox is associated with an eDiscovery case, and then the hold is released or the eDiscovery case is closed (or deleted), the inactive mailbox will be permanently deleted. Additionally, you can't create a time-based eDiscovery hold. That's means content in an inactive mailbox will be retained forever or until the hold is removed and the inactive mailbox is deleted. Therefore, we recommend using a Litigation Hold or an Office 365 retention policy for inactive mailboxes.
+セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられたホールドがメールボックスに配置されている場合、メールボックスまたはユーザーの Office 365 アカウントが削除されると、メールボックスは非アクティブなメールボックスになります。 However, we don't recommend using eDiscovery case holds to make a mailbox inactive. That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. At some point, a legal case will probably end and the holds associated with the case will be removed and the eDiscovery case will be closed. In fact, if a hold that's placed on an inactive mailbox is associated with an eDiscovery case, and then the hold is released or the eDiscovery case is closed (or deleted), the inactive mailbox will be permanently deleted. Additionally, you can't create a time-based eDiscovery hold. That's means content in an inactive mailbox will be retained forever or until the hold is removed and the inactive mailbox is deleted. Therefore, we recommend using a Litigation Hold or an Office 365 retention policy for inactive mailboxes.
   
 電子情報開示ケースと保留リストの詳細については、「[電子情報開示ケース](ediscovery-cases.md)」を参照してください。
   
 ## <a name="inactive-mailboxes-and-office-365-labels"></a>非アクティブなメールボックスと Office 365 のラベル
 
-Office 365 のラベルは、ガバナンスのために組織内の電子メール データを分類し、その分類に基づいて保持ルールを実施するのに役立ちます。ユーザーが手動で、または管理者が自動的に、電子メール アイテムにラベルを適用することができ、電子メール アイテムはそれに割り当てられている 1 つのラベルだけを保持できます。ユーザーのメールボックス内の 1 つの電子メール アイテムにラベルが割り当てられている場合に、メールボックスまたはユーザーの Office 365 アカウントが削除されると、メールボックスは非アクティブなメールボックスになります。電子情報開示ケース保持の場合と同様に、ラベルを使用してメールボックスを非アクティブにすることは推奨されません。代わりに、訴訟ホールド、または Office 365 アイテム保持ポリシーを使用することが推奨されています。ラベルのケースでは、ラベルが電子メール アイテムに適用されていることに気づかずに、ユーザーのアカウントを削除すると、誤ってメールボックスを非アクティブにしてしまう可能性があるので注意してください。 
+Office 365 のラベルは、ガバナンスのために組織内の電子メール データを分類し、その分類に基づいて保持ルールを実施するのに役立ちます。 ユーザーが手動で、または管理者が自動的に、電子メール アイテムにラベルを適用することができ、電子メール アイテムはそれに割り当てられている 1 つのラベルだけを保持できます。 ユーザーのメールボックス内の1つの電子メールアイテムにラベルが割り当てられている場合 (アイテムを保持または保持してから削除するように構成されている場合)、メールボックスまたはユーザーの Office 365 アカウントが削除されると、メールボックスは非アクティブなメールボックスになります。 電子情報開示ケース保持の場合と同様に、ラベルを使用してメールボックスを非アクティブにすることは推奨されません。 代わりに、訴訟ホールド、または Office 365 アイテム保持ポリシーを使用することが推奨されています。 ラベルのケースでは、ラベルが電子メール アイテムに適用されていることに気づかずに、ユーザーのアカウントを削除すると、誤ってメールボックスを非アクティブにしてしまう可能性があるので注意してください。 
   
 ラベルの詳細については、[ラベルの概要](labels.md)を参照してください。
   
@@ -90,10 +90,10 @@ Office 365 のラベルは、ガバナンスのために組織内の電子メー
   
 |**目的**|**操作**|**結果**|
 |:-----|:-----|:-----|
-|従業員の退職後にメールボックスの内容を無期限に保持する  <br/> | メールボックスを訴訟ホールドの対象にするか、Office 365 アイテム保持ポリシーをメールボックスに適用します。  <br/>  訴訟ホールドには保持期間を指定しません。また、アイテムを削除するために Office 365 アイテム保持ポリシーを構成することはありません。代わりに、アイテムを永久に保持するアイテム保持ポリシーを使用することができます。  <br/>  ユーザーの Office 365 アカウントを削除する。  <br/> |非アクティブなメールボックス内のすべてのコンテンツ (回復可能なアイテムフォルダー内のアイテムを含む) は、無期限に保持されます。  <br/> |
+|従業員の退職後にメールボックスの内容を無期限に保持する  <br/> | メールボックスを訴訟ホールドの対象にするか、Office 365 アイテム保持ポリシー (コンテンツを保持するように構成されている) をメールボックスに適用します。  <br/>  訴訟ホールドには保持期間を指定しません。また、アイテムを削除するために Office 365 アイテム保持ポリシーを構成することはありません。代わりに、アイテムを永久に保持するアイテム保持ポリシーを使用することができます。  <br/>  ユーザーの Office 365 アカウントを削除する。  <br/> |非アクティブなメールボックス内のすべてのコンテンツ (回復可能なアイテムフォルダー内のアイテムを含む) は、無期限に保持されます。  <br/> |
 |従業員が退職した後の特定の期間、メールボックスの内容を保持し、その後それを削除する  <br/> | Office 365 アイテム保持ポリシーをメールボックスに適用します。  <br/>  保持期間の期限が切れたときにアイテムを保持し、削除するには、アイテム保持ポリシーを構成します。  <br/>  ユーザーの Office 365 アカウントを削除する。  <br/> |メールボックスアイテムの保持期間が経過すると、アイテムは [回復可能なアイテム] フォルダーに移動され、削除済みアイテムの保存期間 (Exchange メールボックスの場合) の有効期限が切れたときに非アクティブなメールボックスから完全に削除 (パージ) されます。 Office 365 アイテム保持ポリシーの保存期間は、メールボックスアイテムが受信または作成された元の日付、または最後に変更された日付に基づいて構成できます。  <br/> |
    
-**注:** メールボックスに訴訟ホールドが既に設定されている場合、または Office 365 アイテム保持ポリシーが既に適用されている場合は、対応する Office 365 ユーザーアカウントを削除して非アクティブなメールボックスを作成するだけです。 
+**注:** メールボックスに既に訴訟ホールドが設定されている場合、または Office 365 アイテム保持ポリシー (コンテンツを保持または保存してから削除するように設定されている) がメールボックスに既に適用されている場合は、対応する Office 365 ユーザーアカウントを削除するだけで済みます。非アクティブなメールボックスを作成します。 
   
 ## <a name="managing-inactive-mailboxes"></a>非アクティブなメールボックスを管理する
 

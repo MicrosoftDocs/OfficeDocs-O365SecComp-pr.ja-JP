@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint Online でデータ損失防止 (DLP) を使用すると、テナント全体の機密データを含むドキュメントを検出できます。 そのドキュメントが見つかったら、ドキュメントの所有者と連携してデータを保護できます。 このトピックは、機密データを検索するクエリを形成するために役立ちます。
-ms.openlocfilehash: 8ecce920810d52fadb311c6c4925c9fa4b6fb2b1
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2e76be22ce97a90b86a2ea089464f9b526ae4b70
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255542"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34078013"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>サイトに保存された機密データを検索するクエリの形成
 
-ユーザーのサイトには、クレジット カード番号、社会保障番号、個人の機密データが保存されることが多く、これが長期にわたると、組織が重大なデータ損失リスクにさらされる可能性があります。 サイト (OneDrive for business サイトを含む) に保存されているドキュメントは、その情報へのアクセスを必要としない組織外のユーザーと共有できます。 SharePoint Online でデータ損失防止 (DLP) を使用すると、テナント全体の機密データを含むドキュメントを検出できます。 そのドキュメントが見つかったら、ドキュメントの所有者と連携してデータを保護できます。 このトピックは、機密データを検索するクエリを形成するために役立ちます。
+ユーザーのサイトには、クレジット カード番号、社会保障番号、個人の機密データが保存されることが多く、これが長期にわたると、組織が重大なデータ損失リスクにさらされる可能性があります。 サイト (OneDrive for Business サイトを含む) に保存されているドキュメントは、その情報へのアクセスを必要としない組織外のユーザーと共有できます。 SharePoint Online でデータ損失防止 (DLP) を使用すると、テナント全体の機密データを含むドキュメントを検出できます。 そのドキュメントが見つかったら、ドキュメントの所有者と連携してデータを保護できます。 このトピックは、機密データを検索するクエリを形成するために役立ちます。
   
 > [!NOTE]
 > 電子情報開示、電子情報開示、DLP は、 [SharePoint Online プラン 2](https://go.microsoft.com/fwlink/?LinkId=510080)を必要とするプレミアム機能です。 
@@ -42,7 +42,7 @@ ms.locfileid: "32255542"
 
 次の2つの部分はどちらも範囲が指定されているので、どのように表示されるかをすばやく確認できます。 SharePoint DLP クエリでは、基本的な範囲は2つの数値で区切られ、次`[number]..[number]`のようになります。 たとえば、が使用`10..20`されている場合、その範囲は 10 ~ 20 の数値をキャプチャします。 さまざまな範囲の組み合わせがありますが、このトピックではいくつかの内容について説明します。 
   
-クエリにカウント範囲を追加してみましょう。 count の範囲を使用すると、クエリ結果に含める前に、ドキュメントに含める必要がある機密情報の出現回数を定義できます。 たとえば、クエリで、5つのクレジットカード番号が含まれるドキュメントのみを返す場合は、次の`SensitiveType:"Credit Card Number|5"`ように使用します。 また、カウントの範囲は、高い程度のリスクを持つドキュメントを特定するのに役立ちます。 たとえば、組織では、5つ以上のクレジットカード番号を持つドキュメントに高いリスクがあると考えている場合があります。 この条件を調整するドキュメントを検索するには、次`SensitiveType:"Credit Card Number|5.."`のクエリを使用します。 または、次のクエリを使用して、5つ以下のクレジットカード番号`SensitiveType:"Credit Card Number|..5"`を持つドキュメントを検索できます。 
+クエリにカウント範囲を追加してみましょう。 Count の範囲を使用すると、クエリ結果に含める前に、ドキュメントに含める必要がある機密情報の出現回数を定義できます。 たとえば、クエリで、5つのクレジットカード番号が含まれるドキュメントのみを返す場合は、次の`SensitiveType:"Credit Card Number|5"`ように使用します。 また、カウントの範囲は、高い程度のリスクを持つドキュメントを特定するのに役立ちます。 たとえば、組織では、5つ以上のクレジットカード番号を持つドキュメントに高いリスクがあると考えている場合があります。 この条件を調整するドキュメントを検索するには、次`SensitiveType:"Credit Card Number|5.."`のクエリを使用します。 または、次のクエリを使用して、5つ以下のクレジットカード番号`SensitiveType:"Credit Card Number|..5"`を持つドキュメントを検索できます。 
   
 #### <a name="confidence-range"></a>信頼範囲
 
@@ -66,7 +66,7 @@ SharePoint の DLP には、LastSensitiveContentScan プロパティも導入さ
 | `SensitiveType:"International Banking Account Number (IBAN)"` <br/> |この名前は長いため、奇妙に見えるかもしれませんが、その機密の種類の正しい名前です。 [機密情報の種類のインベントリ](https://go.microsoft.com/fwlink/?LinkID=509999)から正確な名前を使用していることを確認してください。 組織に対して作成した[カスタムの機密情報の種類](create-a-custom-sensitive-information-type.md)の名前を使用することもできます。  <br/> |
 | `SensitiveType:"Credit Card Number|1..4294967295|1..100"` <br/> |これにより、機密の種類 "クレジットカード番号" に少なくとも1つ一致するドキュメントが返されます。 各範囲の値は、それぞれの最小値と最大値です。 このクエリはより簡単に記述する`SensitiveType:"Credit Card Number"`ことができますが、おもしろいのはどこにありますか。  <br/> |
 | `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018"` <br/> |これにより、2018年8月11日から2018にスキャンされた5-25 クレジットカード番号を持つドキュメントが返されます。  <br/> |
-| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018" NOT FileExtension:XLSX` <br/> |これにより、2018年8月11日から2018にスキャンされた5-25 クレジットカード番号を持つドキュメントが返されます。 .xlsx 拡張子を持つファイルは、クエリの結果に含まれていません。  `FileExtension`は、クエリに含めることができる、多くのプロパティの1つです。 詳細については、「[電子情報開示で検索プロパティと演算子を使用する](https://go.microsoft.com/fwlink/?LinkId=510093)」を参照してください。  <br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018" NOT FileExtension:XLSX` <br/> |これにより、2018年8月11日から2018にスキャンされた5-25 クレジットカード番号を持つドキュメントが返されます。 .XLSX 拡張子を持つファイルは、クエリの結果に含まれていません。  `FileExtension`は、クエリに含めることができる、多くのプロパティの1つです。 詳細については、「[電子情報開示で検索プロパティと演算子を使用する](https://go.microsoft.com/fwlink/?LinkId=510093)」を参照してください。  <br/> |
 | `SensitiveType:"Credit Card Number" OR SensitiveType:"U.S. Social Security Number (SSN)"` <br/> |クレジット カード番号または社会保障番号が含まれているドキュメントを返します。  <br/> |
    
 ## <a name="examples-of-queries-to-avoid"></a>例
@@ -76,7 +76,7 @@ SharePoint の DLP には、LastSensitiveContentScan プロパティも導入さ
 |**サポートされていないクエリ**|**理由**|
 |:-----|:-----|
 | `SensitiveType:"Credit Card Number|.."` <br/> |少なくとも 1 つの値を追加する必要があります。  <br/> |
-| `SensitiveType:"NotARule"` <br/> |"notarule" は、有効な機密型名ではありません。 DLP クエリでは、[機密情報の種類が一覧](https://go.microsoft.com/fwlink/?LinkID=509999)に含まれる名前のみが機能します。  <br/> |
+| `SensitiveType:"NotARule"` <br/> |"NotARule" は、有効な機密型名ではありません。 DLP クエリでは、[機密情報の種類が一覧](https://go.microsoft.com/fwlink/?LinkID=509999)に含まれる名前のみが機能します。  <br/> |
 | `SensitiveType:"Credit Card Number|0"` <br/> |0は、範囲内の最小値または最大値のいずれかとしては有効ではありません。  <br/> |
 | `SensitiveType:"Credit Card Number"` <br/> |"クレジット" と "カード" の間に空白のスペースがあると、クエリが無効になる可能性があります。 [機密情報の種類のインベントリ](https://go.microsoft.com/fwlink/?LinkID=509999)から、厳密に機密性の高い種類名を使用します。  <br/> |
 | `SensitiveType:"Credit Card Number|1. .3"` <br/> |2つのピリオドの部分は、スペースで区切る必要があります。  <br/> |

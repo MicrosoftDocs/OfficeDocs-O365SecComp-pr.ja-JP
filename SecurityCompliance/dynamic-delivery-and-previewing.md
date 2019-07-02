@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 04/19/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: ATP の安全な添付ファイルのポリシーを設定する場合は、[動的配信] を選択してメッセージの遅延を回避し、スキャンされた添付ファイルをプレビューできるようにします。
-ms.openlocfilehash: 567b5f0c5bc75123169073bf5dc33de191187846
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5d04593dd0884b21deefc202485aee27f60d1a5f
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257225"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077833"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Office 365 での動的配信とプレビュー、ATP の安全な添付ファイル
 
@@ -36,12 +36,12 @@ ms.locfileid: "32257225"
 
 - 各添付ファイルが削除されると、その添付ファイルを開いたりダウンロードしたりできます。 
 
-- 添付ファイルが悪意のあるものと判断された場合は、検疫に送信されます。これにより、組織のセキュリティチーム (office 365 のグローバル管理者やセキュリティ管理者など) が[office 365 の検疫済みメッセージを管理](manage-quarantined-messages-and-files.md)できるようになります。
+- 添付ファイルが悪意のあるものと判断された場合は、検疫に送信されます。これにより、組織のセキュリティチーム (Office 365 のグローバル管理者やセキュリティ管理者など) が[office 365 の検疫済みメッセージを管理](manage-quarantined-messages-and-files.md)できるようになります。
 
-ほとんどの pdf および Office ドキュメントは、ATP のスキャンが進行している間、セーフモードでプレビューできます。 添付ファイルが動的配信プレビューアーに対応していない場合、電子メールの受信者には、ATP の安全な添付ファイルのスキャンが完了するまで、添付ファイルプレースホルダーが表示されます。
+ほとんどの Pdf および Office ドキュメントは、ATP のスキャンが進行している間、セーフモードでプレビューできます。 添付ファイルが動的配信プレビューアーに対応していない場合、電子メールの受信者には、ATP の安全な添付ファイルのスキャンが完了するまで、添付ファイルプレースホルダーが表示されます。
 
 > [!TIP]
-> モバイルデバイスを使用していて、初めて動的配信プレビューで pdf が表示されない場合は、モバイルブラウザーを使用して Office 365 にサインインしてください。
+> モバイルデバイスを使用していて、初めて動的配信プレビューで Pdf が表示されない場合は、モバイルブラウザーを使用して Office 365 にサインインしてください。
 
 動的配信を使用すると、ユーザーはすぐに電子メールメッセージの読み取りと応答を行うことができますが、添付ファイルは分析されます。 
 
@@ -53,13 +53,13 @@ ATP の安全な添付ファイルのスキャンは、Office 365 データが�
   
 - [動的配信] オプションを使用して、受信者が ATP の安全な添付ファイルポリシーでカバーされている場合、受信者には、互換性のあるファイルをプレビューできるプレースホルダーが表示されます。
     
-- 受信者が atp の安全な添付ファイルポリシーでカバーされていない場合、電子メールと添付ファイルは、atp の安全な添付ファイルのスキャンまたは添付ファイルのプレースホルダーを使用せずに実行されます。
+- 受信者が ATP の安全な添付ファイルポリシーでカバーされていない場合、電子メールと添付ファイルは、ATP の安全な添付ファイルのスキャンまたは添付ファイルのプレースホルダーを使用せずに実行されます。
     
 ## <a name="whats-required-for-dynamic-delivery-to-work"></a>動的配信が機能するために必要なこと
 
 - 組織が[Office 365 Advanced Threat Protection](office-365-atp.md)を持っている必要がある
     
-- [動的配信] オプションを使用して、atp の安全な添付ファイルに関するポリシーを定義する必要があります (「 [Office 365 の atp の安全な添付ファイルポリシーの設定](set-up-atp-safe-attachments-policies.md)」を参照)。
+- [動的配信] オプションを使用して、ATP の安全な添付ファイルに関するポリシーを定義する必要があります (「 [Office 365 の atp の安全な添付ファイルポリシーの設定](set-up-atp-safe-attachments-policies.md)」を参照)。
     
 - 組織の電子メールは、Office 365 でホストされている必要があります。 [どの SMTP メール転送エージェント (Exchange Server など) でも Office 365 Advanced Threat Protection を使用でき](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#requirements-for-office-365-advanced-threat-protection-atp)ますが、ATP の安全な添付ファイルの動的配信オプションでは、組織の電子メールが Office 365 でホストされている必要があります。 メールが Office 365 でホストされていない場合は、[**ブロック**] などの別の[ATP の安全な添付ファイルポリシーオプション](set-up-atp-safe-attachments-policies.md#step-3-learn-about-atp-safe-attachments-policy-options)を選択します。
     
@@ -77,8 +77,8 @@ ATP の安全な添付ファイルのスキャンは、Office 365 データが�
     
 - エラー状態にあるユーザーのメールボックス検索フォルダー
     
-- Exchange Online 管理者が exclaimer を有効にしている環境。 この解決方法については、「 [ATP Dynamic Delivery and exclaimer の使用時に添付ファイル付きメッセージが配信されない](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)」を参照してください。
+- Exchange Online 管理者が Exclaimer を有効にしている環境。 この解決方法については、「 [ATP Dynamic Delivery And Exclaimer の使用時に添付ファイル付きメッセージが配信されない](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)」を参照してください。
 
 - [セキュリティで保護された、または汎用インターネットメール内線 (S/MIME)](s-mime-for-message-signing-and-encryption.md)で暗号化されたメッセージ
 
-- 動的配信がサポートされていない場合、ATP の安全な添付ファイルは電子メールメッセージをスキャンしません。 ただし、 [ATP の安全なリンクポリシー](set-up-atp-safe-links-policies.md)がどのように構成されているかに応じて、url を含む添付ファイル付きの電子メールメッセージを配信することが確認されます。 このような場合、電子メールメッセージと Office ファイルの url がチェックされます。
+- 動的配信がサポートされていない場合、ATP の安全な添付ファイルは電子メールメッセージをスキャンしません。 ただし、 [ATP の安全なリンクポリシー](set-up-atp-safe-links-policies.md)がどのように構成されているかに応じて、url を含む添付ファイル付きの電子メールメッセージを配信することが確認されます。 このような場合、電子メールメッセージと Office ファイルの Url がチェックされます。

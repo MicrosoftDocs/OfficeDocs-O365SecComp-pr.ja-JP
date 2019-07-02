@@ -3,7 +3,7 @@ title: Office 365 ATP の安全なリンクの警告ページ
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: IT Pro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,19 +14,19 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection が機能している場合に表示される可能性がある警告ページの概要を取得します。
-ms.openlocfilehash: e90951a010ff5de4d3b292259e9c4596b6cc8e89
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 70bd93aead82a867936031f754d172fdeb22f421
+ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251297"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017629"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Office 365 ATP の安全なリンクの警告ページ
 
 > [!IMPORTANT]
-> この記事は、Office 365 Enterprise のお客様を対象としています。 Outlook.com、office 365 Home、または office 365 Personal を使用していて、Outlook での安全なリンクに関する情報をお探しの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
+> この記事は、 [Office 365 Advanced Threat Protection](office-365-atp.md)を使用しているビジネスのお客様を対象としています。 Outlook.com、Office 365 Home、または Office 365 Personal を使用していて、Outlook での安全なリンクに関する情報をお探しの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
-[Office 365 Advanced Threat Protection](office-365-atp.md)(atp) は、 [atp の安全なリンク](atp-safe-links.md)、atp の安全な[添付ファイル](atp-safe-attachments.md)、[フィッシング対策保護](anti-phishing-protection.md)などの機能を介して組織をフィッシングやマルウェアから保護するのに役に立ちます。 保護が設定されている場合、電子メールメッセージと Office ドキュメント内のリンク (url) はチェックされます。 url が疑わしいまたは悪意のあるものとして識別された場合、その url をクリックしても url を開くことがブロックされることがあります。 直接サイトに移行するのではなく、警告ページが表示されることがあります。 
+[Office 365 Advanced Threat Protection](office-365-atp.md)(ATP) は、 [atp の安全なリンク](atp-safe-links.md)、Atp の安全な[添付ファイル](atp-safe-attachments.md)、[フィッシング対策保護](anti-phishing-protection.md)などの機能を介して組織をフィッシングやマルウェアから保護するのに役に立ちます。 保護が設定されている場合、電子メールメッセージと Office ドキュメント内のリンク (Url) はチェックされます。 URL が疑わしいまたは悪意のあるものとして識別された場合、その url をクリックしても URL を開くことがブロックされることがあります。 直接サイトに移行するのではなく、警告ページが表示されることがあります。 
   
 この記事では、表示される可能性がある警告ページの例と、警告ページに対する最新の更新プログラムを確認しています。
   
@@ -46,7 +46,7 @@ ATP の安全なリンクによって、URL がスキャンされています。
 
 ### <a name="a-url-is-in-a-message-identified-as-a-phishing-attempt"></a>フィッシングの試行として識別されたメッセージ内の URL
 
-この URL は、フィッシング攻撃として識別された電子メールメッセージに含まれています。 その結果、電子メールメッセージ内のすべての url がブロックされます。 サイトに進まないことをお勧めします。
+この URL は、フィッシング攻撃として識別された電子メールメッセージに含まれています。 その結果、電子メールメッセージ内のすべての Url がブロックされます。 サイトに進まないことをお勧めします。
 
 ![この URL は、フィッシングとして識別されたメッセージ内にあります。](media/6e544a28-0604-4821-aba6-d5a57bb917e5.png)
 

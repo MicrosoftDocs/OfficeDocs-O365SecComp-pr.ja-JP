@@ -15,12 +15,12 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 description: '[安全な添付ファイル] 機能を使用すると、電子メールの添付ファイルの確認時間を確認できます。 安全な添付ファイルを使用して、ユーザーが電子メールで送受信する悪意のあるファイルから組織を保護します。'
-ms.openlocfilehash: d2e83b602df6195d2b0e5a2762b8076d0b2bef75
-ms.sourcegitcommit: 424a614141c1f19a1c84a67ec2d71dd3d7ef6694
+ms.openlocfilehash: 2980349eaec22f1e67206f96b8ed22df539cdba7
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590570"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34652620"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP の安全な添付ファイル
 
@@ -32,7 +32,7 @@ ATP の保護は、SharePoint Online、OneDrive for Business、Microsoft Teams �
   
 ## <a name="how-to-get-atp-safe-attachments"></a>ATP の安全な添付ファイルを取得する方法
 
-最初に、サブスクリプションに[Advanced Threat Protection](office-365-atp.md)が含まれていることを確認します。 ATP は、 [microsoft 365 enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)、 [microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)、office 365 Enterprise E5、office 365 エデュケーション A5 などのサブスクリプションに含まれています。Office 365 ATP を含まない Office 365 サブスクリプションが組織にある場合は、ATP をアドオンとして購入する可能性があります。 詳細については、「 [office 365 Advanced Threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [Office 365 Advanced threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。 
+最初に、サブスクリプションに[Advanced Threat Protection](office-365-atp.md)が含まれていることを確認します。 ATP は、 [microsoft 365 e5](https://www.microsoft.com/microsoft-365/enterprise/home)、 [microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)、Office 365 E5、office 365 A5 などのサブスクリプションに含まれています。Office 365 ATP を含まない Office 365 サブスクリプションが組織にある場合は、ATP をアドオンとして購入する可能性があります。 詳細については、「 [office 365 Advanced Threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [Office 365 Advanced threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。 
 
 次に、ATP の安全な添付ファイルポリシーが定義されていることを確認します。 (「 [Office 365 ATP の安全な添付ファイルのポリシーを](set-up-atp-safe-attachments-policies.md)セットアップする」を参照してください)ATP の安全な添付ファイル機能は、次の場合にアクティブになります。
   
@@ -56,10 +56,10 @@ ATP ポリシーを定義 (または編集) するには、適切な役割が割
   
 |**シナリオ例**|**この場合、ATP の安全な添付ファイルの保護が適用されますか。**|
 |:-----|:-----|
-|Pat の組織には Office 365 Enterprise E5 がありますが、ATP の安全な添付ファイルのポリシーが定義されていないものがまだあります。  <br/> |いいえ。 この機能は使用できますが、ATP の安全な添付ファイルの保護を有効にするためには、少なくとも1つの ATP の安全な添付ファイルポリシーを定義する必要があります。  <br/> |
+|Pat の組織には Office 365 E5 がありますが、ATP の安全な添付ファイルに関するポリシーが定義されている人はいません。  <br/> |いいえ。 この機能は使用できますが、ATP の安全な添付ファイルの保護を有効にするためには、少なくとも1つの ATP の安全な添付ファイルポリシーを定義する必要があります。  <br/> |
 |Lee は、Contoso 社の販売部門の従業員です。 Lee の組織には、財務部門の従業員にのみ適用される ATP の安全な添付ファイルポリシーがあります。  <br/> |いいえ。 この場合、財務の従業員は ATP の安全な添付ファイルの保護を行いますが、販売部門を含むその他の従業員は、これらのグループを含むポリシーが定義されるまではありません。  <br/> |
 |昨日、田中の組織の Office 365 管理者は、すべての従業員に適用される ATP の安全な添付ファイルポリシーを設定します。 今日以前は、田中は添付ファイルを含む電子メールメッセージを受信しました。  <br/> |はい。 この例では、田中に Advanced Threat Protection のライセンスがあり、田中を含む ATP の安全な添付ファイルポリシーが定義されています。 通常、新しいポリシーがデータセンター間で有効になるまでには約30分かかります。このケースでは、1日以上経過しているため、ポリシーが有効になっている必要があります。  <br/> |
-|Chris の組織は、組織内のすべてのユーザーに対して、ATP の安全な添付ファイルポリシーが設定された Office 365 Enterprise E5 を持っています。 Chris は添付ファイルを持つ電子メールを受信し、組織外の他のユーザーにメッセージを転送します。  <br/> |ATP の安全な添付ファイルの保護は、Chris が受信するメッセージに対して行われます。 受信者の組織が ATP の安全な添付ファイルポリシーを適切に設定している場合は、転送されたメッセージが到着したときに、小川が転送するメッセージはそのポリシーの対象となります。  <br/> |
+|Chris の組織は、組織内のすべてのユーザーに対して、ATP の安全な添付ファイルポリシーが設定された Office 365 E5 を持っています。 Chris は添付ファイルを持つ電子メールを受信し、組織外の他のユーザーにメッセージを転送します。  <br/> |ATP の安全な添付ファイルの保護は、Chris が受信するメッセージに対して行われます。 受信者の組織が ATP の安全な添付ファイルポリシーを適切に設定している場合は、転送されたメッセージが到着したときに、小川が転送するメッセージはそのポリシーの対象となります。  <br/> |
 |森さんの組織には、ATP の安全な添付ファイルポリシーが設定されており、 [SharePoint、OneDrive、Microsoft Teams の atp](atp-for-spo-odb-and-teams.md)が有効になっています。 久保田さんは、SharePoint Online のすべてのファイルがスキャンされており、開いているか、または安全であることを前提としています。  <br/> |ATP の安全な添付ファイルの保護は、定義されているポリシーに従って行われます。ただし、これは、SharePoint Online、OneDrive for Business、または Microsoft Teams のすべてのファイルがスキャンされるという意味ではありません。 (詳細については、「 [SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)」を参照してください)。  <br/> |
 
 ## <a name="submitting-files-for-malware-analysis"></a>マルウェア分析のためのファイルの送信

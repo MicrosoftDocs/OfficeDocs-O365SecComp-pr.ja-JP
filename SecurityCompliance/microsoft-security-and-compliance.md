@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: すべての新しい Microsoft 365 セキュリティセンターとコンプライアンスセンターの準備をする
-ms.openlocfilehash: 0bb30ef3cd6f7d35e0f5a86842a8638e87e89773
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: 435030c9ab5d9b62c54483dd2ca072999d539712
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34652490"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852771"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>新しい Microsoft 365 セキュリティセンターと Microsoft 365 コンプライアンスセンターが一般公開されるようになりました。
 
@@ -54,7 +54,7 @@ Microsoft 365 コンプライアンスセンターにアクセスする必要が
 
 ### <a name="available-now"></a>利用可能になりました!
 
-新しい microsoft 365 セキュリティセンターと新しい microsoft 365 コンプライアンスセンターは、一般に、microsoft 365 2019 のお客様が一般公開されるようになりました。 
+新しい Microsoft 365 セキュリティセンターと新しい Microsoft 365 コンプライアンスセンターは、一般に、Microsoft 365 2019 のお客様が一般公開されるようになりました。 
 
 Office 365 セキュリティ & コンプライアンスセンターを含むスタンドアロンプランなどの別のサブスクリプションを所有している場合は、近日中に新しい Microsoft 365 セキュリティセンターと Microsoft 365 コンプライアンスセンターにアクセスできます。 詳細については、 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)を参照してください。
 
@@ -102,7 +102,7 @@ Office 365 セキュリティ & コンプライアンスセンターにアクセ
 |[Azure Information Protection](https://docs.microsoft.com/azure/information-protection) |はい |はい |いいえ |
 |[Azure Security Center](https://docs.microsoft.com/azure/security-center/)  |はい |はい |いいえ |
 |[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |はい |はい |いいえ |
-|[Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp) |はい |はい |いいえ |
+|[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) |はい |はい |いいえ |
 |[Id 保護](https://docs.microsoft.com/azure/active-directory/identity-protection)     |はい |はい |いいえ |
 |[Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |はい |はい |いいえ |
 |[Intune](https://docs.microsoft.com/intune)     |はい |はい |はい |

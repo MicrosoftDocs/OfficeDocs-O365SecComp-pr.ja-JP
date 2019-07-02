@@ -3,7 +3,6 @@ title: 機密ラベルの暗号化を使用してコンテンツへのアクセ�
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを作成するときに、そのラベルが適用されるコンテンツへのアクセスを制限できます。機密ラベルでは、コンテンツの保護のために暗号化を使用できます。
-ms.openlocfilehash: 20d547a66309382c3ae3229540a23cd47e18460c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: c550b9d0a3ffb9e41f36b4630a80e1a1584a257f
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153269"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199782"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>機密ラベルの暗号化を使用してコンテンツへのアクセスを制限する
 
@@ -50,7 +49,7 @@ ms.locfileid: "34153269"
 2. **ラベル付けされたコンテンツへのアクセスに有効期限を設定します。** 指定の日付または指定の日数 (ラベル適用後の経過日数) で有効期限が切れます。この期限が切れると、ユーザーはラベル付きのアイテムを開けなくなります。日付を指定すると、現在のタイム ゾーンでその日付の午前 0 時まで有効になります (一部のメール クライアントでは、キャッシュ メカニズムがあるため、有効期限が適用されず、有効期限を過ぎたメールが表示されることがある点に注意してください)。
 3. **オフライン アクセス**を禁止、常に許可、または指定の日数 (ラベル適用後の経過日数) で許可します。オフライン アクセスを禁止または日数で制限すると、そのしきい値に達したときに、ユーザーは再認証される必要があり、ユーザーのアクセスがログに記録されます。詳細については、Rights Management 使用ライセンスに関する次のセクションを参照してください。
 
-![機密ラベルに対する暗号化の設定](media/Sensitivity_Encryption_settings_for_sensitivity_label.png)
+![機密ラベルに対する暗号化の設定](media/Sensitivity-Encryption-settings-for-sensitivity-label.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>オフライン アクセスのための Rights Management 使用ライセンス
 
@@ -71,7 +70,7 @@ ms.locfileid: "34153269"
 1. まず、ラベル付きコンテンツへのアクセス許可を割り当てるユーザーまたはグループを追加します。
 2. 次に、該当するユーザーに付与するラベル付きコンテンツへのアクセス許可を選択します。
 
-![ユーザーにアクセス許可を割り当てる際のオプション](media/Sensitivity_Assign_permissions_settings.png)
+![ユーザーにアクセス許可を割り当てる際のオプション](media/Sensitivity-Assign-permissions-settings.png)
 
 ### <a name="add-users-or-groups"></a>ユーザーまたはグループの追加
 
@@ -94,13 +93,13 @@ ms.locfileid: "34153269"
 
 それぞれの具体的なアクセス許可に関する詳細については、「[使用権限と説明](https://docs.microsoft.com/ja-JP/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)」を参照してください。  
 
-![既定またはカスタムのアクセス許可を選択する際のオプション](media/Sensitivity_Choose_permissions_settings.png)
+![既定またはカスタムのアクセス許可を選択する際のオプション](media/Sensitivity-Choose-permissions-settings.png)
 
 同じラベルで異なるユーザーに異なるアクセス許可を付与できます。たとえば、次に示すように、単一のラベルで一部のユーザーを「レビュー担当者」として割り当てて、別のユーザーを「共同作成者」として割り当てることができます。
 
 このようにするには、ユーザーまたはグループを追加し、それらにアクセス許可を割り当てて、その設定を保存します。その後で、この手順 (ユーザーの追加とアクセス許可の割り当て) を繰り返して、そのたびに保存します。この手順は、異なるユーザーに異なるアクセス許可を定義することが必要になるたびに実行できます。
 
-![異なるアクセス許可を持つ異なるユーザー](media/Sensitivity_Multiple_users_permissions.png)
+![異なるアクセス許可を持つ異なるユーザー](media/Sensitivity-Multiple-users-permissions.png)
 
 ### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>常にフル コントロールを持つ Rights Management 発行者 (機密ラベルを適用するユーザー)
 

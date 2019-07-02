@@ -30,7 +30,7 @@
 ### [機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)
 ### [ラベル分析によるラベル使用状況の表示](label-analytics.md)
 
-## [データ損失の防止 (DLP)](data-loss-prevention-policies.md)
+## [データ損失防止 (DLP)](data-loss-prevention-policies.md)
 ### [DLP と Microsoft Teams](dlp-microsoft-teams.md)
 ### [DLP の概要の詳しい説明を見る](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ### DLP を設定する

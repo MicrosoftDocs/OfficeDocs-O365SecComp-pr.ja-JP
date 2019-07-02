@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4bf85fb8294ce7d95f31574112b9719b2b633c3e
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9e8e85d92543c4d49ad7841f8b2592a539a13977
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154039"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703752"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>高度な電子情報開示でのレビューセットの管理
 
@@ -41,7 +41,7 @@ Review sets は、データの分析、クエリ、表示、タグ付け、お�
 
 ![レビューセットを追加する](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-[**レビュー設定の追加**] ページで、レビューセットの名前を入力し、[**保存**] をクリックします。  新しいレビューセットが [**確認セット**] タブの一覧に表示されます。
+[**レビュー設定の追加**] ページで、レビューセットの名前を入力し、[**保存**] をクリックします。 新しいレビューセットが [**確認セット**] タブの一覧に表示されます。
 
 ![[レビューセット] タブに新しいレビューセットが表示されている](../media/AeDnewreviewset.png)
 

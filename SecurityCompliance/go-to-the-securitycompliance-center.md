@@ -1,5 +1,5 @@
 ---
-title: Go to the Office 365 Security &amp; Compliance Center
+title: 「Office 365 のセキュリティ センターとコンプライアンス センター」に移動
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -13,28 +13,29 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
-description: Before you can use the Security &amp; Compliance Center, you need the right permissions. 職場または学校のアカウントには、Office 365 のグローバル管理者の役割が割り当てられているか&amp; 、グローバル管理者によって1つまたは複数のセキュリティコンプライアンスセンターの役割グループに割り当てられている必要があります。
-ms.openlocfilehash: 9d85fbc9a32a56d41fd05c674ee9f91934a7d6c5
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: セキュリティ & コンプライアンスセンターを使用するには、適切なアクセス許可が必要です。 職場または学校のアカウントには、Office 365 のグローバル管理者の役割が割り当てられているか、グローバル管理者によって1つ以上のセキュリティ & コンプライアンスセンターの役割グループに割り当てられている必要があります。
+ms.openlocfilehash: ad908999fce6a5b3e72af0a61b05f3d017846567
+ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152769"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35014696"
 ---
-# <a name="go-to-the-office-365-security-amp-compliance-center"></a>Go to the Office 365 Security &amp; Compliance Center
+# <a name="go-to-the-office-365-security--compliance-center"></a>「Office 365 のセキュリティ センターとコンプライアンス センター」に移動
 
-Before you can use the Security &amp; Compliance Center, you need the right permissions. 職場または学校のアカウントには、Office 365 のグローバル管理者の役割が割り当てられているか&amp; 、グローバル管理者によって1つ以上のセキュリティコンプライアンスセンターの役割グループに割り当てられている必要があります。
+セキュリティ & コンプライアンスセンターを使用するには、適切なアクセス許可が必要です。 職場または学校のアカウントには、Office 365 のグローバル管理者の役割が割り当てられているか、グローバル管理者によって1つ以上のセキュリティ & コンプライアンスセンターの役割グループに割り当てられている必要があります。
   
 - Office 365 のグローバル管理者の役割の詳細については、「 [office 365 管理者の役割につい](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d)て」を参照してください。 
-    
-- 他のユーザーへの&amp;セキュリティコンプライアンスセンターの役割の割り当ての詳細については、「[ユーザーにセキュリティ&amp;コンプライアンスセンターへのアクセス権を付与する](grant-access-to-the-security-and-compliance-center.md)」を参照してください。
-    
-セキュリティ&amp; /コンプライアンスセンターにアクセスする最も直接的な方法は次のとおりです。
+
+- セキュリティ & コンプライアンスセンターの役割を他のユーザーに割り当てる方法については、「[ユーザーにセキュリティ & コンプライアンスセンターへのアクセス権を付与する](grant-access-to-the-security-and-compliance-center.md)」を参照してください。
+
+> [!NOTE]
+> (AOBO) 権限を持つ代理アクセス許可 (DAP) パートナーは、セキュリティ & コンプライアンスセンターにアクセスできません。
+
+セキュリティ & コンプライアンスセンターにアクセスする最も直接的な方法は次のとおりです。
   
 1. [https://protection.office.com](https://protection.office.com) に移動します。
-    
-2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
-    
-![Office 365 セキュリティ&amp;コンプライアンスセンターのホームページ](media/f1d35324-ac44-4f59-96a7-b11767b43201.png)
-  
 
+2. 職場または学校のアカウントを使用して、Office 365 にサインインします。
+
+![Office 365 セキュリティ & コンプライアンスセンターのホームページ](media/f1d35324-ac44-4f59-96a7-b11767b43201.png)

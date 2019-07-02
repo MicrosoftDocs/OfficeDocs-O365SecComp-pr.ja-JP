@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: メールフロールール (トランスポートルール) を使用して、Office 365 組織を通過するメッセージを識別し、処理を行うことができます。
-ms.openlocfilehash: 73f5668be76a20af7474f6de06d50e278057fd06
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a08d3ff0d976def1d104c99a9532fe5c826f0523
+ms.sourcegitcommit: 90e514177a1ee6b7485334b15c588b0ac906aa26
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153149"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34726058"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection のメール フロー ルール (トランスポート ルール)
 
@@ -37,7 +37,7 @@ ms.locfileid: "34153149"
     
 - [メール フロー ルールを使用して、メッセージの Spam Confidence Level (SCL) を設定する](../use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
     
-- [Office 365 で組織全体の信頼できる差出人またはブロックする差出人の一覧を作成する](../create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md)
+- [Office 365 で受信拒否リストを作成する](../create-block-sender-lists-in-office-365.md)
     
 - [Exchange Online Protection でファイルの添付のブロックを通じてマルウェアの脅威を削減する](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
     

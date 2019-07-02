@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 4/29/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 特定の送信者からのメールを確実に受信できるようにする場合は、Exchange 管理センターでスパムフィルターポリシーの許可リストを調整できます。このようなメッセージを受信します。
-ms.openlocfilehash: b97767a3ee4882b1a9b052bc845e8758a6402534
-ms.sourcegitcommit: e834d4168f584f2efb22479aec108497eea267f6
+ms.openlocfilehash: 4526441c68d187e644a06228c5b1be820968524a
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34709115"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199576"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Office 365 で差出人セーフリストを作成する
 
@@ -61,12 +61,12 @@ ms.locfileid: "34709115"
 
 2. ルールの動作を言うために、X ヘッダーを追加します。 次の例では、簡単なヘッダー「X-ETR: 認証された送信者`contoso.com`のスパムフィルタリングをバイパスする」を追加できます。 このルールに複数のドメインがある場合は、ヘッダーテキストを必要に応じて変更できます。**メッセージが ETR によりフィルタリングをスキップすると、スパム対策ヘッダーの [fv: SKN] がスタンプされます。**(**IP 許可一覧にある場合は、IPV: CAL もスタンプ**します)。 これはトラブルシューティングに役立ちます。
 
-![スパムフィルターをバイパスするための GUI。](media/1_AllowList_SkipFilteringFromContoso.png)
+![スパムフィルターをバイパスするための GUI。](media/1-AllowList-SkipFilteringFromContoso.png)
 
 > [!CAUTION]
 > スパムフィルターをスキップする条件として *、送信者ドメイン*のみのメールフロールールを構成しないでください。 この方法によって、スパム送信者は、送信ドメインのスプーフィング (または完全な電子メールアドレスの偽装) がすべてのスパムフィルタリングをスキップし、送信者の認証チェックが行われ、メッセージがユーザーの受信トレイに届くようになります。
 
-![SCL をマイナス-1 に設定する方法について説明します。](media/2_AllowList_SetsSCLMinus1.png)
+![SCL をマイナス-1 に設定する方法について説明します。](media/2-AllowList-SetsSCLMinus1.png)
 
 自分が所有しているドメイン、またはよく使用さ`microsoft.com`れるドメイン (例:) を条件としてメールフロールールに追加しないでください。 これは、誤った俳優がフィルター処理されないようなメールを送信するための機会を生み出すため、リスクが高いと考えられます。
 

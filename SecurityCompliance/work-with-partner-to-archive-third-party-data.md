@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 組織は Microsoft パートナーと協力して、Salesforce チャター、Yahoo Messenger、Yammer などのデータソースからサードパーティのデータをインポートするカスタムコネクタを設定できます。 これにより、Office 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどの Office 365 コンプライアンス機能を使用して、組織のサードパーティデータのガバナンスを管理できます。
-ms.openlocfilehash: 9bc8dddfed4b9721237f06ecf03c1ca41df091d6
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 94714154477ebcc82e0bd3545c0c9d6a74767c4a
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155999"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199811"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>パートナーと連携して、Office 365 でサードパーティのデータをアーカイブする
 
@@ -531,7 +531,7 @@ Office 365 にデータをインポートするためにサードパーティ製
 
 コネクタを登録するための要求をアクセスして受け入れる手順を次に示します。
 
-1. [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Office 365 グローバル管理者の資格情報を使用してサインインします。<br/><br/>次のダイアログボックスが表示されます。 Carets を展開して、コネクタに割り当てられているアクセス許可を確認できます。<br/><br/>![[アクセス許可の要求] ダイアログが表示されます。](media/O365_ThirdPartyDataConnector_OptIn1.png)
+1. [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Office 365 グローバル管理者の資格情報を使用してサインインします。<br/><br/>次のダイアログボックスが表示されます。 Carets を展開して、コネクタに割り当てられているアクセス許可を確認できます。<br/><br/>![[アクセス許可の要求] ダイアログが表示されます。](media/O365-ThirdPartyDataConnector-OptIn1.png)
 2. [**Accept**] をクリックします。
 
 要求を受け入れると、 [Azure portal](https://portal.azure.com)が表示されます。 組織のアプリケーションの一覧を表示するには、[ **Azure Active Directory** > **エンタープライズアプリケーション**] をクリックします。 Office 365 サードパーティデータコネクタは、**エンタープライズアプリケーション**ブレードに一覧表示されています。

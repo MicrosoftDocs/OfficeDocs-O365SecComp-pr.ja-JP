@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8e67c3c8a693e627bade9e581f0f1e246bf6802a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 091d6f8835ae1aae2f075f0b510954255c3a6a5c
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151889"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703840"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>高度な電子情報開示でケースのデータを収集する
 
@@ -34,6 +34,7 @@ ms.locfileid: "34151889"
 検索が作成されると、詳細情報を含むフライアウトページが表示されます。 検索がまだ完了していないため、[**統計**] ボタンと [**プレビュー** ] ボタンは淡色で表示されます。 検索の進行状況を追跡するには、[**検索**] タブを使用します。
 
 ## <a name="view-search-results-and-statistics"></a>検索結果と統計情報を表示する
+
 コンテンツ検索には、統計 (見積り) とプレビューという2つのコンポーネントがあります。 これらの各コンポーネントが完了すると、[**検索**] タブの対応する列に状態が [**送信****済み**] から [**進行中**] に変わります。
 
 検索の推定が完了したら、検索をクリックしてフライアウトページを表示します。これにより、検索結果に関する大まかな統計情報が表示されます。 この時点で、[**統計**] ボタンがアクティブになります。 これをクリックすると、次のような検索統計情報を表示できます。

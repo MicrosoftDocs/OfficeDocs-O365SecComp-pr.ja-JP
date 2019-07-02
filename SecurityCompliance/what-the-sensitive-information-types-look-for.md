@@ -3,7 +3,7 @@ title: 機密情報の種類の検索基準：
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 05/20/2019
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) には、dlp ポリシーで使用できる状態で、80の機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
-ms.openlocfilehash: dc2958af5b64f9e9318faab5d55ed340404f1857
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 1e1aeea164c15bb64c6040f7821bf006ee8ff42f
+ms.sourcegitcommit: b8737e52724a343d99082961bc113bba819d5681
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077553"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34247300"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>機密情報の種類の検索基準
 
@@ -508,17 +508,16 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - チェックサムが渡される。
 
 ```
-    <!-- Australia Tax File Number -->
-<Entity id="e29bc95f-ff70-4a37-aa01-04d17360a4c5" patternsProximity="300" recommendedConfidence="85">
-    
-  <Pattern confidenceLevel="85">
+   <!-- Australia Tax File Number -->
+    <Entity id="e29bc95f-ff70-4a37-aa01-04d17360a4c5" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_australian_tax_file_number" />
+        <Match idRef="Keyword_Australia_Tax_File_Number" />
         <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_Australia_Tax_File_Number" />
           <Match idRef="Keyword_number_exclusions" />
         </Any>
-  </Pattern>
-</Entity>
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -577,7 +576,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 - 文字列 "DocumentDb"
 - 3-200 の小文字または大文字、数字、記号、特殊文字、スペースのいずれかの組み合わせ
-- より大きい記号 (>)、等号 (=)、二重引用符 (")、またはアポストロフィ (')
+- より大きい記号 (>)、等号 (=)、引用符 (")、またはアポストロフィ (')
 - 86の小文字または小文字、数字、スラッシュ (/)、またはプラス記号 (+) の任意の組み合わせ
 - 2つの等号 (=)
 
@@ -1013,7 +1012,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="pattern"></a>パターン
 
-- 0-1 より大きい記号 (>)、アポストロフィ (')、等号 (=)、二重引用符 (")、または番号記号 (#) を指定します。
+- 0-1 より大きい記号 (>)、アポストロフィ (')、等号 (=)、引用符 (")、または番号記号 (#) を指定します。
 - 86文字の任意の組み合わせ (小文字または大文字の文字、数字、スラッシュ (/)、プラス記号 (+))
 - 2つの等号 (=)
 
@@ -2420,7 +2419,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-なし
+None
 
    
 ## <a name="eu-debit-card-number"></a>欧州連合のデビット カード番号
@@ -2923,7 +2922,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-なし
+None
    
 ## <a name="france-passport-number"></a>フランスのパスポート番号
 
@@ -3106,13 +3105,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 - Führerschein
 - Futex
-- Futex の Ehのリリース
+- Futex の ehのリリース
 - Führerscheinnummer
 - Fuhrerscheinnummer
 - Fuehrerscheinnummer
 - Führerschein- 
 - Futex (中) 
-- Futex の Ehのリリース 
+- Futex の ehのリリース 
 - FührerscheinnummerNr
 - Futex がある Hていません Einnumnr
 - Futex の Ehの再リリース/Einnumnr
@@ -3631,7 +3630,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-なし
+None
 
    
 ## <a name="ip-address"></a>IP アドレス
@@ -4692,7 +4691,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
 - 特定の引数
-- Nr. 大き Zportu
+- Nr. 大き zportu
 - があります
 
    
@@ -4966,7 +4965,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-なし
+None
 
 ## <a name="sql-server-connection-string"></a>SQL Server の接続文字列
 
@@ -4980,7 +4979,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 1-200 の小文字または大文字、数字、記号、特殊文字、スペースのいずれかの組み合わせ
 - 文字列 "Password" または "pwd" ("pwd" の前に小文字が含まれていません)
 - 等号 (=)
-- ドル記号 ($)、パーセント記号 (%)、不等号 (>)、記号 (@)、二重引用符 (")、セミコロン (;)、左中かっこ ([)、左大かっこ ({) のいずれでもない文字
+- ドル記号 ($)、パーセント記号 (%)、不等号 (>)、記号 (@)、二重引用符 (")、セミコロン (;)、左中かっこ ([)、左かっこ ({) のいずれでもない文字
 - セミコロンではない7-128 文字の任意の組み合わせ (;)、スラッシュ (/)、または引用符 (")
 - セミコロン (;)または二重引用符 (")
 
@@ -5026,9 +5025,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Password または pwd の後に、0-2 スペース、等号 (=)、0-2 スペース、アスタリスク (*)、または--
 - Password または pwd の後に、次のように入力します。
     - 等号 (=)
-    - 小なり記号 (<)
+    - 不等号 (<)
     - 1-200 文字の大文字と小文字、数字、アスタリスク (*)、ハイフン (-)、下線 (_)、または空白文字の任意の組み合わせ。
-    - より大きい記号 (>)
+    - 不等号 (>)
 
 #### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
 

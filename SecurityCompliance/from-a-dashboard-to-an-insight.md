@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/4/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターの推奨されるアクションを使用して、ダッシュボードから洞察に移動する方法について説明します。
-ms.openlocfilehash: 732c78b35a60c1686bc382931688dec08080f8c2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 40f927ff394bc5a79e62eea7048bf2a48617cd90
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255600"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34078023"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>ウォークスルー - ダッシュボードからインサイトへの移動
 
@@ -44,7 +44,7 @@ ms.locfileid: "32255600"
   
 この方法では、ダッシュボードから洞察および推奨されるアクションに移行できます。
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [チュートリアル: 洞察から詳細レポートへ](from-an-insight-to-a-detailed-report.md)
   

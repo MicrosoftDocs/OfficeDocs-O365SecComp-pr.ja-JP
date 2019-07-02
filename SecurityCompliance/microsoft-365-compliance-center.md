@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: 新しい Microsoft 365 コンプライアンスセンター (含まれるもの、その入手方法、および次の手順) について説明します。
-ms.openlocfilehash: 149058d6204b7ad9d33fe656a8176609cfda5991
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: fc6ab6893e142b3beb5289c8430477727b3844ac
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547928"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852791"
 ---
 # <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>すべての新しい Microsoft 365 コンプライアンスセンターの概要
 
@@ -68,7 +68,7 @@ Microsoft コンプライアンススコアカードに移動すると、[コン
 
 |  |  |
 |---------|---------|
-|![Microsoft 365 コンプライアンスセンターのナビゲーション](media/m365-compliance-center-leftnav.png)  |<br/><br/> 通知に**** 移動して[通知](alerts.md)を表示して解決する<br/><br/>「 **Monitoring & reports** 」を参照して、[ラベルの使用状況と保持期間](sensitivity-labels.md)、 [DLP ポリシーの一致とオーバーライド](view-the-dlp-reports.md)、[共有ファイル](https://docs.microsoft.com/cloud-app-security/file-filters)、[使用中のサードパーティ製アプリ](https://docs.microsoft.com/cloud-app-security/discovered-apps)などに関するデータを表示します。<br/><br/>[**分類**] セクションを展開して、[ラベル](labels.md)、[ラベルポリシー](sensitivity-labels.md#what-label-policies-can-do)、[機密情報の種類](what-the-sensitive-information-types-look-for.md)、[ラベル分析](view-label-activity-for-documents.md)にアクセスします。<br/><br/>[**ポリシー** ] に移動して、[警告](alerts.md)を表示し、 [DLP](data-loss-prevention-policies.md)および[アイテム保持](retention-policies.md)ポリシーにアクセスします。<br/><br/> 「 **Solutions** 」セクションのリンクを使用して、組織のコンプライアンスソリューションにアクセスします。 これらには以下が含まれます。 <br/>[データガバナンス > の廃棄](disposition-reviews.md)<br/>[電子情報開示 (プレビュー)](compliance20/overview-ediscovery-20.md)<br/>[マネージ](supervision-policies.md)<br/>[データ調査](datainvestigations/overview-data-investigations.md)<br/>[データ サブジェクト要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
+|![Microsoft 365 コンプライアンスセンターのナビゲーション](media/m365-compliance-center-leftnav.png)  |<br/><br/> 通知に**** 移動して[通知](alerts.md)を表示して解決する<br/><br/>**レポート**にアクセスして、[ラベルの使用状況と保持期間](sensitivity-labels.md)、 [DLP ポリシーの一致とオーバーライド](view-the-dlp-reports.md)、[共有ファイル](https://docs.microsoft.com/cloud-app-security/file-filters)、[使用中のサードパーティ製アプリ](https://docs.microsoft.com/cloud-app-security/discovered-apps)などに関するデータを表示します。<br/><br/>[**分類**] セクションを展開して、[ラベル](labels.md)、[ラベルポリシー](sensitivity-labels.md#what-label-policies-can-do)、[機密情報の種類](what-the-sensitive-information-types-look-for.md)、[ラベル分析](view-label-activity-for-documents.md)にアクセスします。<br/><br/>[**ポリシー** ] に移動して、[警告](alerts.md)を表示し、 [DLP](data-loss-prevention-policies.md)および[アイテム保持](retention-policies.md)ポリシーにアクセスします。<br/><br/> 「 **Solutions** 」セクションのリンクを使用して、組織のコンプライアンスソリューションにアクセスします。 これらには以下が含まれます。 <br/>[データガバナンス > の廃棄](disposition-reviews.md)<br/>[電子情報開示 (プレビュー)](compliance20/overview-ediscovery-20.md)<br/>[マネージ](supervision-policies.md)<br/>[データ調査](datainvestigations/overview-data-investigations.md)<br/>[データ サブジェクト要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
 
 
 ## <a name="how-do-i-get-this"></a>どのようにして入手できますか?
@@ -81,9 +81,9 @@ Microsoft コンプライアンススコアカードに移動すると、[コン
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>特定のポリシーの定義などのいくつかのタスクを実行するために、Office 365 Security & コンプライアンスセンターに移動する理由は何ですか。
+### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>特定のポリシーの定義などのいくつかのタスクを実行するために、Office 365 セキュリティ & コンプライアンスセンターに移動する理由は何ですか。
 
-引き続き Microsoft 365 コンプライアンスセンターを開発しており、今後数か月の間により多くの機能とソリューションを追加していく予定です。 その間に、Office 365 Security & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) で実行する必要があるタスクがいくつかあります。 そのような場合は、監督ポリシーの作成や編集など、手動でタスクを実行できる場所に自動的に転送されます。
+引き続き Microsoft 365 コンプライアンスセンターを開発しており、今後数か月の間により多くの機能とソリューションを追加していく予定です。 その間に、Office 365 セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) で実行する必要があるタスクがいくつかあります。 そのような場合は、監督ポリシーの作成や編集など、手動でタスクを実行できる場所に自動的に転送されます。
 
 ### <a name="why-dont-i-see-the-new-microsoft-365-compliance-center-yet"></a>新しい Microsoft 365 コンプライアンスセンターがまだ表示されないのはなぜですか?
 
@@ -91,14 +91,14 @@ Microsoft コンプライアンススコアカードに移動すると、[コン
 
 ### <a name="some-of-my-compliance-features-are-not-available-in-the-microsoft-365-compliance-center-what-do-i-do"></a>コンプライアンス機能の一部は、Microsoft 365 コンプライアンスセンターでは使用できません。 What do I do?
 
-引き続き、Microsoft 365 コンプライアンスセンターに機能を追加しています。 監査ログの検索など、何かが見つからない場合は、Office 365 Security & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) を使用します。 構成は、既存の Office 365 セキュリティ & コンプライアンスセンターと新しい Microsoft 365 コンプライアンスセンターの両方に自動的に保存されます。
+引き続き、Microsoft 365 コンプライアンスセンターに機能を追加しています。 監査ログの検索など、何かが見つからない場合は、Office 365 セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) を使用します。 構成は、既存の Office 365 セキュリティ & コンプライアンスセンターと、新しい Microsoft 365 コンプライアンスセンターの両方に自動的に保存されます。
 
-そのためには、Microsoft 365 コンプライアンスセンターで、画面の左側のナビゲーションウィンドウで [**その他のリソース**] を選択し、[ **Office 365 security & コンプライアンスセンター**] で [**開く**] を選択します。
+そのためには、Microsoft 365 コンプライアンスセンターで、画面の左側のナビゲーションウィンドウで [**その他のリソース**] を選択し、[ **Office 365 セキュリティ & コンプライアンスセンター**] で [**開く**] を選択します。
 
 ![その他のリソース](media/MoreResourcesShowAll.png)
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - **Microsoft コンプライアンススコアを確認**し、コンプライアンスマネージャーを使用してスコアを向上させます。 詳細については、「[コンプライアンスマネージャーを使用して、Microsoft クラウドサービスを使用する際のデータ保護と規制要件を満たす](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)」を参照してください。
 

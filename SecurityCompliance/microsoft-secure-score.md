@@ -1,6 +1,6 @@
 ---
 title: Microsoft セキュア スコア
-description: Microsoft 365 のセキュリティスコア、詳細の計算方法、およびセキュリティ管理者がどのように使用することを期待できるかについて説明します。
+description: Microsoft 365 セキュリティセンターの Microsoft セキュリティスコア、詳細の計算方法、およびセキュリティ管理者がどのようなものを使用できるかについて説明します。
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティで保護されたスコア、セキュリティセンター、改善アクション
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -15,14 +15,17 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1c47ec8e75fb712900fd1e459b7cfd73bb071ac4
-ms.sourcegitcommit: 1021ab534b3bc3c8684e42f67d11711f6765567e
+ms.openlocfilehash: 27a9d137bde0dd23be8824d94a25364f89706563
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "34334545"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852781"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
+
+>[!IMPORTANT]
+>一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 Microsoft 365 セキュリティ センターの Microsoft セキュア スコアを使用すると、組織のセキュリティ体制に対する可視性と管理性を高めることができます。 集中型のダッシュボードから、Microsoft 365 の ID、データ、アプリ、デバイス、およびインフラストラクチャのセキュリティを監視および改善できます。
 
@@ -40,15 +43,15 @@ Microsoft セキュア スコアは、強力な可視化、他の Microsoft 製�
 * セキュリティ管理者
 * セキュリティリーダ
 
-## <a name="rich-experiences--additional-security-recommendations"></a>豊富なエクスペリエンス & その他のセキュリティに関する推奨事項
+## <a name="rich-experiences--additional-security-recommendations"></a>その他のセキュリティに関する推奨事項 & 豊富なエクスペリエンス
 
-Microsoft のセキュリティで保護されたスコアでは、azure の AD、Intune、および Cloud App Security から推奨事項が追加されており、Azure セキュリティセンターと Windows Defender ATP の推奨事項が近日中に提供されています。 また、Office 365 のセキュリティに関する推奨事項をさらに追加しました。 より広範な Microsoft 製品およびサービスのセットについて、さらに洞察を得られるようになるため、組織のセキュリティの状態についての管理者による報告を自信を持って考えることができます。 [Microsoft GRAPH API](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta)を使用してスコアを取得することもできます。
+Microsoft のセキュリティで保護されたスコアでは、azure の AD、Intune、および Cloud App Security から推奨事項が追加され、Azure セキュリティセンターからの推奨事項と、近日中に Microsoft Defender ATP が提供されました。 また、Office 365 のセキュリティに関する推奨事項をさらに追加しました。 より広範な Microsoft 製品およびサービスのセットについて、さらに洞察を得られるようになるため、組織のセキュリティの状態についての管理者による報告を自信を持って考えることができます。 [Microsoft GRAPH API](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta)を使用してスコアを取得することもできます。
 
 より迅速に必要な情報を提供するために、Microsoft の推奨事項がグループに分類されています。
 
 * Identity (Azure AD アカウントとロールの保護状態)
 * データ (Office 365 ドキュメントの保護状態)
-* デバイス (デバイスの保護状態。Windows Defender ATP の改善アクションが近日中に予定される)
+* デバイス (デバイスの保護状態。Microsoft Defender ATP の改善アクションが近日中に予定される)
 * アプリ (電子メールとクラウドアプリの保護状態)
 * インフラストラクチャ (Azure リソースの保護状態、近日予定)
 
@@ -75,17 +78,17 @@ Microsoft のセキュリティで保護されたスコアでは、azure の AD�
 
 ![M365 ホームページ](./media/secure-score/secure-score1x450.png) ![M365 ホームページ](./media/secure-score/secure-score2x450.png)
 
-*図 2 & 3: 改善アクションの flyouts*
+*図 2 & 3: 改善アクション flyouts*
 
 ## <a name="monitor-improvements-over-time"></a>時間の経過に伴う向上を監視する
 
 時間の経過とともに組織のスコアをグラフで確認するには、[**履歴**] タブを使用します。このビューには、選択した時間範囲内で行われたすべてのアクションと共に、グローバルな平均、業界の平均、および同様の座席数が含まれます。 日付範囲をカスタマイズしたり、カテゴリ別にフィルター処理したりすることもできます。
 
-スコアは1日に1回 (約 1:00 AM PST) 計算されます。 測定されたアクションに変更を加えると、スコアは翌日を自動的に更新します。 また、他のいくつかのポータルは Microsoft のセキュリティで保護されたスコア (Windows Defender セキュリティセンターなど) の一部を示していることにも注意する必要があります。 改善アクションを完了し、これらのポータルでスコアが増加した場合は、更新されたスコアが Microsoft 365 セキュリティセンターに表示されるまでに最大24時間かかる場合があります。  
+スコアは1日に1回 (約 1:00 AM PST) 計算されます。 測定されたアクションに変更を加えると、スコアは翌日を自動的に更新します。 他のポータルでは、Microsoft のセキュリティで保護されたスコア (Microsoft Defender セキュリティセンターなど) の一部を示していることにも注意する必要があります。 改善アクションを完了し、これらのポータルでスコアが増加した場合は、更新されたスコアが Microsoft 365 セキュリティセンターに表示されるまでに最大24時間かかる場合があります。  
 
-## <a name="how-controls-are-scored"></a>コントロールのスコア
+## <a name="how-improvement-actions-are-scored"></a>改善アクションのスコア
 
-コントロールは、2つの方法でスコアすることができます。 いくつかのスコアはバイナリ形式で評価されます。推奨事項に基づいて機能または設定を構成している場合は、スコアの 100% を取得できます。 その他のスコアは、全体の構成に対する割合として計算されます。 たとえば、改善のための推奨事項が30ポイントの場合は、すべてのユーザーを MFA で保護している場合、保護されたユーザーの合計数が100の場合は、2ポイント (5 つの保護/100 合計 * 30 最大 pts = 2 pts パーシャルスコア) の部分的なスコアが与えられます。. 
+多くの場合、2進数でスコアが獲得されます。新しいポリシーを作成したり、特定の設定をオンにしたりするなど、改善アクションを実装した場合は、そのポイントの 100% を取得できます。 その他の改善アクションについては、構成全体のパーセンテージとしてポイントが指定されています。 たとえば、[改善] アクションによって、多要素認証を使用してすべてのユーザーを保護していて、保護さ100れているユーザーの合計数が100の場合は、そのすべてのユーザーを保護することができます。 pts 部分スコア)。
 
 ## <a name="risk-awareness"></a>リスクの認識
 
@@ -93,4 +96,4 @@ Microsoft Secure Score は、システム構成、ユーザーの行動、およ
 
 ## <a name="we-want-to-hear-from-you"></a>ご意見をお聞かせください
 
-問題がある場合は、「 [Security, Privacy _AMP_ コンプライアンス](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy)コミュニティ」に投稿してお知らせください。 コミュニティを監視しており、ヘルプを提供しています。
+問題がある場合は、「 [Security, Privacy & コンプライアンス](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy)コミュニティ」に投稿してお知らせください。 コミュニティを監視しており、ヘルプを提供しています。

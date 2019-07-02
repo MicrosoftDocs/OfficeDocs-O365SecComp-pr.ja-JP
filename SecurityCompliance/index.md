@@ -11,12 +11,12 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 12/27/2018
 ms.author: robmazz
-ms.openlocfilehash: 737d3a1b979b420e7f9bd24f056a4d5abf7a9906
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1d5f3ef4c21a8771479f232f7347889b31b5fce2
+ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256505"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33622227"
 ---
 # <a name="office-365-security-and-compliance"></a>Office 365 のセキュリティとコンプライアンス
 
@@ -34,7 +34,7 @@ ms.locfileid: "32256505"
                     </div>
                     <div class="cardText">
                         <h3>最初の30日間を開始する</h3>
-                <p>これらの基本的なセキュリティおよびコンプライアンスタスクを迅速に実行して、ユーザーに与える影響を小さくすることができます。 <br> - <a href="office-365-secure-score.md" target="_blank">セキュリティで保護されたスコアの確認</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">監査ログを有効にする</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">テナントのセキュリティを構成する</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">Cloud App Security の接続</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">Azure AD id 保護を有効にする</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">SharePoint サイトとファイルをセキュリティで保護する</a> <br> - <a href="configure-supervision-policies.md">データガバナンスポリシーを有効にする</a> </p>
+                <p>これらの基本的なセキュリティおよびコンプライアンスタスクを迅速に実行して、ユーザーに与える影響を小さくすることができます。 <br> - <a href="microsoft-secure-score.md" target="_blank">セキュリティで保護されたスコアの確認</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">監査ログを有効にする</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">テナントのセキュリティを構成する</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">Cloud App Security の接続</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">Azure AD Id 保護を有効にする</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">SharePoint サイトとファイルをセキュリティで保護する</a> <br> - <a href="configure-supervision-policies.md">データガバナンスポリシーを有効にする</a> </p>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ ms.locfileid: "32256505"
                     </div>
                     <div class="cardText">
                         <h3>90日以内の次のステップ</h3>
-                        <p>これらのタスクは、計画と実装に少し時間がかかりますが、セキュリティに関する姿勢が大幅に向上します。 <br> - <a href="attack-simulator.md">攻撃のシミュレーションを行う</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">コンプライアンスマネージャーのレビュー</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Azure の特権 id 管理を構成する</a> <br> - <a href="privileged-access-management-configuration.md">特権アクセス管理を構成する</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">多要素認証を有効にする</a> <br> - <a href="protect-against-threats.md">& の更新保護ポリシーを確認する</a> </p>
+                        <p>これらのタスクは、計画と実装に少し時間がかかりますが、セキュリティに関する姿勢が大幅に向上します。 <br> - <a href="attack-simulator.md">攻撃のシミュレーションを行う</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">コンプライアンスマネージャーのレビュー</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Azure の特権 Id 管理を構成する</a> <br> - <a href="privileged-access-management-configuration.md">特権アクセス管理を構成する</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">多要素認証を有効にする</a> <br> - <a href="protect-against-threats.md">& 更新保護ポリシーを確認する</a> </p>
                     </div>
                 </div>
             </div>
@@ -69,9 +69,9 @@ ms.locfileid: "32256505"
                     <div class="cardText">
                         <h3>90 日以降</h3>
                         <p>これらは、前の作業で構築された重要なセキュリティ対策です。<br>
-                        - <a href="office-365-secure-score.md" target="_blank">セキュリティで保護されたスコアを確認する</a><br>
+                        - <a href="microsoft-secure-score.md" target="_blank">セキュリティで保護されたスコアを確認する</a><br>
                         - <a href="https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access">安全な特権アクセスを実装する</a><br>
-                        - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection">Azure AD id 保護を使用する</a><br>
+                        - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection">Azure AD Id 保護を使用する</a><br>
                         - <a href="protect-against-threats.md">保護ポリシーを調整する</a><br></p>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ ms.locfileid: "32256505"
                     <div class="cardText">
                         <h3>安全維持</h3>
                         <p><a href="security-roadmap.md">Office 365 のセキュリティロードマップ</a></p>
-                        <p><a href="office-365-secure-score.md" target="_blank">Microsoft セキュア スコア</a></p>
+                        <p><a href="microsoft-secure-score.md" target="_blank">Microsoft セキュア スコア</a></p>
                         <p><a href="https://protection.office.com" target="_blank">セキュリティ & コンプライアンスセンター</a></p>
                     </div>
                 </div>

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、標準コネクタをセットアップして、LinkedIn Company ページから Office 365 にデータをインポートすることができます。 これにより、Office 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、およびアイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータのコンプライアンスを管理することができます。
-ms.openlocfilehash: 2b89f990f18ae13ad15015f240ea4c4b0ec434b0
-ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
+ms.openlocfilehash: 618cef7c0208378179d41a94f4a274a0bddadee9
+ms.sourcegitcommit: ecc823c2a4f1465114cf1d3a4630e31c47779ddc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017948"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35079381"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data-in-office-365-preview"></a>Office 365 で LinkedIn データをアーカイブするためのコネクタの設定 (プレビュー)
 
@@ -27,9 +27,11 @@ LinkedIn 会社のページデータがメールボックスに保存された�
 
 ## <a name="before-you--begin"></a>はじめに
 
-- アーカイブする LinkedIn の会社のページの管理者である LinkedIn ユーザーアカウントのサインイン資格情報 (電子メールアドレスまたは電話番号とパスワード) を持っている必要があります。 これらの資格情報を使用して、コネクタを設定するときに LinkedIn にサインインします。
+- 組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 この要求に同意するには、[このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Office 365 グローバル管理者の資格情報でサインインし、要求を承諾します。
 
 - LinkedIn Company Page コネクタを作成したユーザーには、Exchange Online のメールボックスのインポートのエクスポート役割が割り当てられている必要があります。 これは、セキュリティ & コンプライアンスセンターの [**サードパーティのデータをアーカイブ**する] ページにアクセスするために必要です。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 Exchange Online の組織の管理役割グループに、メールボックスのインポートの役割を追加することができます。 または、役割グループを作成し、メールボックスインポートエクスポート役割を割り当ててから、適切なユーザーをメンバーとして追加することもできます。 詳細については、記事「Manage role groups in Exchange Online」の「[役割グループの作成](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)」または「[役割グループの変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)」のセクションを参照してください。
+
+- アーカイブする LinkedIn の会社のページの管理者である LinkedIn ユーザーアカウントのサインイン資格情報 (電子メールアドレスまたは電話番号とパスワード) を持っている必要があります。 これらの資格情報を使用して、コネクタを設定するときに LinkedIn にサインインします。
 
 ## <a name="create-a-linkedin-connector"></a>LinkedIn コネクタを作成する
 
@@ -50,7 +52,6 @@ LinkedIn 会社のページデータがメールボックスに保存された�
    ウィザードページが、サインインしたアカウントに関連付けられているすべての LinkedIn 会社のページの一覧と共に表示されます。 コネクタは、1つの会社のページに対してのみ構成できます。 組織に複数の LinkedIn Company ページがある場合は、それぞれに対してコネクタを作成する必要があります。
 
    ![LinkedIn 会社のページの一覧を含むページが表示されます。](media/LinkedInSelectCompanyPage.png)
-
 
 6. アイテムをアーカイブする会社のページを選択し、[**次へ**] をクリックします。
 
@@ -80,4 +81,4 @@ LinkedIn 会社のページデータがメールボックスに保存された�
    subject:"Contoso Company Page"
    ```
 
-- Office 365 にインポートされた LinkedIn アイテムを簡単に検索または管理できるようにするために、ストレージメールボックスの所有者 (または FullAccess アクセス許可を割り当てられているユーザー) は、特定の LinkedIn Company ページから特定のフォルダーにアイテムを移動する受信トレイルールを設定することができます。 これは、ストレージメールボックスを使用して、さまざまなサードパーティのデータソースからインポートされたアイテムをアーカイブする場合に役立ちます。 たとえば、[件名] フィールドに特定の LinkedIn Company ページの名前を含むすべてのアイテムを特定のフォルダーに移動する受信トレイルールを作成できます。
+- Office 365 にインポートされた LinkedIn アイテムを簡単に検索または管理できるようにするために、ストレージメールボックスの所有者 (または FullAccess アクセス許可を割り当てられているユーザー) は、LinkedIn Company ページから特定のフォルダーにアイテムを移動する受信トレイルールを設定することができます。 これは、ストレージメールボックスを使用して、さまざまなサードパーティのデータソースからインポートされたアイテムをアーカイブする場合に役立ちます。 たとえば、[件名] フィールドに特定の LinkedIn Company ページの名前を含むすべてのアイテムを特定のフォルダーに移動する受信トレイルールを作成できます。

@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Facebook のビジネスページをインポートおよびアーカイブするためのネイティブコネクタを Office 365 にセットアップすることができます。 このデータを Office 365 にインポートした後、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織の Facebook データのガバナンスを管理できます。
-ms.openlocfilehash: b0ec46cea2dd5722633e7fc302cdd0d03cd5d56d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1f5b0f241616cc95e79e80d054a8782f97c5887b
+ms.sourcegitcommit: 3699da2cad6e6a2002083e2884e32393dacab0ca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150559"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34694739"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-data-in-office-365"></a>Office 365 で Facebook データをアーカイブするためのコネクタの展開
 
@@ -24,7 +24,7 @@ ms.locfileid: "34150559"
 
 ## <a name="step-1-download-the-package"></a>手順 1: パッケージをダウンロードする
 
-にある GitHub リポジトリのリリースセクションから、あらかじめ構築された<https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases>パッケージをダウンロードします。 最新リリースの下で、 **SampleConnector**という名前の zip ファイルをダウンロードします。 この zip ファイルは、手順4で Azure にアップロードします。
+の GitHub リポジトリのリリースセクションから、構築済みパッケージをダウンロード<https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases>します。 最新リリースの下で、 **SampleConnector**という名前の zip ファイルをダウンロードします。 この zip ファイルを手順4で Azure にアップロードします。
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>手順 2: Azure Active Directory でアプリを作成する
 
@@ -48,7 +48,7 @@ ms.locfileid: "34150559"
 
    ![](media/FBCimage5.png)
 
-6. **新しいアプリの [証明書 & シークレット] に移動します。**
+6. [証明書] に移動して **、新しいアプリのシークレット & します。**
 
    ![](media/FBCimage6.png)
 
@@ -112,17 +112,17 @@ ms.locfileid: "34150559"
 
    ![](media/FBCimage20.png)
 
-2. 詳細を入力し (次の図を参照)、Web アプリを作成します。 [**アプリ名**] ボックスに入力した名前が Azure APP service URL の作成に使用されることに注意してください。たとえば、fbconnector.azurewebsites.net のようになります。
+2. 詳細を入力し (次の図を参照)、Web アプリを作成します。 [**アプリケーション名**] ボックスに入力した名前が Azure App SERVICE の URL を作成するために使用されることに注意してください。たとえば、fbconnector.azurewebsites.net のようになります。
 
    ![](media/FBCimage21.png)
 
-3. 新しく作成した web app リソースに移動し、左側のナビゲーションウィンドウで [**アプリケーション設定**] をクリックします。 [アプリケーションの設定] で、[新しい設定の追加] をクリックし、次の3つの設定を追加します。 前の手順で入力したテキストファイルにコピーした値を使用します。 
+3. 新しく作成した web app リソースに移動し、左側のナビゲーションウィンドウで [**アプリケーション設定**] をクリックします。 [アプリケーションの設定] で、[新しい設定の追加] をクリックし、次の3つの設定を追加します。値 (前の手順で入力したテキストファイルにコピーした値) を使用します。 
 
-    - **APISecretKey** –任意の値をシークレットとして入力できます。 これは、手順7でコネクタ web アプリにアクセスするために使用されます。
+    – **APISecretKey** –任意の値をシークレットとして入力できます。 これは、手順7でコネクタ web アプリにアクセスするために使用されます。
 
-    - **Storageaccountconnectionstring** –手順3で Azure storage アカウントを作成した後にコピーした接続文字列 Uri。
+    – * * StorageAccountConnectionString —手順3で Azure storage アカウントを作成した後にコピーした接続文字列 Uri。
 
-    - **tenantId** –手順2で Azure Active Directory で Facebook connector アプリを作成した後にコピーした Office 365 組織のテナント ID。
+    – **tenantId** –手順2で Azure Active Directory で Facebook connector アプリを作成した後にコピーした Office 365 組織のテナント ID。
 
     ![](media/FBCimage22.png)
 
@@ -132,7 +132,7 @@ ms.locfileid: "34150559"
 
 5. 最後の手順では、手順1でダウンロードしたコネクタアプリソースコードを Azure にアップロードします。 Web ブラウザーで、https://<AzureAppResourceName>に移動します。 たとえば、Azure app リソース (このセクションの手順2で名前を付けた) の名前が**fbconnector**の場合は、にhttps://fbconnector.scm.azurewebsites.net/ZipDeployUi移動します。 
 
-6. 手順1でダウンロードした SampleConnector をドラッグアンドドロップして、このページに移動します。 ファイルがアップロードされ、展開が正常に完了すると、次のスクリーンショットのようなページが表示されます。
+6. 手順1でダウンロードした SampleConnector をドラッグアンドドロップして、このページに移動します。 ファイルがアップロードされ、展開が正常に完了すると、ページは次のスクリーンショットのようになります。
 
    ![](media/FBCimage24.png)
 
@@ -162,7 +162,7 @@ ms.locfileid: "34150559"
 
    ![](media/FBCimage30.png)
 
-7. [ **Facebook ログイン**] の左側のナビゲーションウィンドウで、[**設定**] をクリックし、[**有効な oauth リダイレクト**URI] ボックスに oauth リダイレクト uri を追加します。** \<connectorserviceuri>/Views/FacebookOAuth**の形式を使用します。ここで、コネクタの値は組織の Azure app service の URL です。例https://fbconnector.azurewebsites.netを示します。
+7. [ **Facebook ログイン**] の左側のナビゲーションウィンドウで、[**設定**] をクリックし、[**有効な oauth リダイレクト**URI] ボックスに oauth リダイレクト uri を追加します。 ** \</Views/facebookoauth の>** 形式を使用します。この場合は、を使用します。この場合、コネクタサービス uri の値は組織の Azure app service URL になります。たとえば、 https://fbconnector.azurewebsites.netのようになります。
 
    ![](media/FBCimage31.png)
 
@@ -206,7 +206,7 @@ ms.locfileid: "34150559"
 
 ## <a name="step-6-configure-the-connector-web-app"></a>手順 6: コネクタ web アプリを構成する
 
-1. Https://\<AzureAppResourceName> (AzureAppResourceName は、手順4で名前を付けた Azure app リソースの名前) に移動します。たとえば、名前が**fbconnector**の場合は、にhttps://fbconnector.azurewebsites.net移動します。 アプリのホームページは、次のスクリーンショットのようになります。
+1. Https://\<AzureAppResourceName> に移動します (ここで、AzureAppResourceName は、手順4で名前を付けた Azure app リソースの名前です)。たとえば、名前が**fbconnector**の場合https://fbconnector.azurewebsites.netは、に移動します。 アプリのホームページは、次のスクリーンショットのようになります。
 
 
    ![](media/FBCimage41.png)
@@ -222,13 +222,13 @@ ms.locfileid: "34150559"
 
 4. [**構成の詳細**] で、次の構成設定を入力します。 
 
-   - **Facebook アプリケーション id** -手順5で取得した facebook アプリケーションのアプリ id。
-   - **Facebook アプリケーションシークレット**-手順5で取得した facebook アプリケーションのアプリシークレット。
-   - **Facebook webhook 検証トークン**-手順5で作成した検証トークン。
-   - **AAD アプリケーション id** -手順2で作成した Azure Active Directory アプリのアプリケーション id。
-   - **AAD アプリケーションシークレット**-手順4で作成した APISecretKey シークレットの値。
-   - **Aad アプリケーション uri** -手順2で取得した Aad アプリケーション uri。たとえば、 https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213のようになります。
-   - **App insights インストルメンテーションキー** -このボックスは空白のままにします。
+   – **Facebook アプリケーション id** –手順5で取得した facebook アプリケーションのアプリ id。
+   – **Facebook アプリケーションシークレット**–手順5で取得した facebook アプリケーションのアプリシークレット。
+   – **Facebook webhook verify token** –手順5で作成した verify トークン。
+   – **AAD APPLICATION id** –手順2で作成した Azure Active Directory アプリのアプリケーション id。
+   – **AAD application secret** –手順4で作成した APISecretKey シークレットの値。
+   – **Aad アプリケーション uri** –手順2で取得した Aad アプリケーション uri。たとえば、 https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213のようになります。
+   – **App insights instrumentation キー** –このボックスは空白のままにします。
 
 5. [**保存**] をクリックしてコネクタの設定を保存します。
 
@@ -244,9 +244,9 @@ ms.locfileid: "34150559"
 
 3.  [**コネクタアプリの追加**] ページで、次の情報を入力し、[**コネクタの検証**] をクリックします。
 
-    - 最初のボックスに、 **Facebook**などのコネクタの名前を入力します。
-    - 2番目のボックスに、手順4で追加した APISecretKey の値を入力するか貼り付けます。
-    - 3番目のボックスに、Azure app service の URL を入力するか、貼り付けます。例**https://fbconnector.azurewebsites.net**を示します。
+    -最初のボックスに、 **Facebook**などのコネクタの名前を入力します。
+    -2 番目のボックスに、手順4で追加した APISecretKey の値を入力するか貼り付けます。
+    –3番目のボックスに、Azure app service の URL を入力するか、貼り付けます。例**https://fbconnector.azurewebsites.net**を示します。
  
     コネクタの検証が正常に完了したら、[**次へ**] をクリックします。
     
@@ -277,7 +277,7 @@ ms.locfileid: "34150559"
 
     ![](media/FBCimage52.png)
 
-10. [**完了**] をクリックして、connector service アプリのセットアップを終了します。
+10. [**準備**] をクリックして、connector service アプリのセットアップを終了します。
 
     ![](media/FBCimage53.png)
 
@@ -289,7 +289,7 @@ ms.locfileid: "34150559"
 
     ![](media/FBCimage55.png)
 
-13. 設定を確認し、[**完了**] をクリックして、セキュリティ _AMP_ コンプライアンスセンターでコネクタの設定を完了します。
+13. 設定を確認し、[**完了**] をクリックして、セキュリティ & コンプライアンスセンターでコネクタの設定を完了します。
 
     ![](media/FBCimage56.png)
 

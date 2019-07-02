@@ -3,7 +3,7 @@ title: Office 365 の ATP の安全な添付ファイルのポリシーを設定
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.date: 02/06/2019
 ms.service: O365-seccomp
@@ -15,14 +15,17 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: 安全な添付ファイルのポリシーを定義して、電子メール内の悪意のあるファイルから組織を保護します。
-ms.openlocfilehash: 47587d9e189a6fcda2cac964130d0b257b4f4166
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 532a4b6ab2d26506f10adb621a29718a32d52ff6
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266862"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34652700"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Office 365 の ATP の安全な添付ファイルのポリシーを設定する
+
+> [!IMPORTANT]
+> この記事は、 [Office 365 Advanced Threat Protection](office-365-atp.md)を使用しているビジネスのお客様を対象としています。 Outlook での安全な添付ファイルに関する情報をお探しのホームユーザーの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
 ユーザーは、ドキュメント、プレゼンテーション、スプレッドシートなどの添付ファイルを日常的に送信、受信、共有します。 電子メールメッセージを見るだけで、添付ファイルが安全か悪意かを知ることは常に容易ではありません。 最後に必要なのは、組織にとって wreaking 危害を受ける、悪意のある添付ファイルです。 さいわい、 [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) は役立ちます。 組織が安全でない電子メールの添付ファイルによる攻撃から保護されるようにするために、 [ATP の安全な添付ファイル](atp-safe-attachments.md)ポリシーを設定できます。 
   
@@ -58,7 +61,7 @@ ms.locfileid: "32266862"
     
 2. Office 365 &amp;セキュリティ/コンプライアンスセンターの左側のナビゲーションウィンドウで、[**脅威の管理**] の下にある [**ポリシー** \>の**安全な添付ファイル**] を選択します。
     
-3. **[SharePoint、OneDrive、Microsoft Teams に対して ATP を有効**にする] が表示されている場合は、このオプションを選択することをお勧めします。 これにより、office [365 Advanced Threat Protection for SharePoint、OneDrive、Microsoft Teams](atp-for-spo-odb-and-teams.md) for office 365 環境が有効になります。 
+3. **[SharePoint、OneDrive、Microsoft Teams に対して ATP を有効**にする] が表示されている場合は、このオプションを選択することをお勧めします。 これにより、office [365 Advanced Threat Protection For SharePoint、OneDrive、Microsoft Teams](atp-for-spo-odb-and-teams.md) for office 365 環境が有効になります。 
     
 4. [**新規**] を選択します (新しいボタンは**+** プラス記号 () に似ています)。ポリシーの作成を開始します。
     
@@ -88,12 +91,12 @@ ATP の安全な添付ファイルのポリシーを設定するときは、Moni
 |**モニター** <br/> |添付ファイル付きのメッセージを配信し、検出されたマルウェアの発生を追跡します。  <br/> |検出されたマルウェアが組織内で通過する場所を確認する  <br/> |
 |**Block** <br/> |検出されたマルウェア添付ファイルのメッセージを処理できないようにする  <br/> 検出されたマルウェアを持つメッセージを[Office 365 で検疫](manage-quarantined-messages-and-files.md)に送信します。これにより、セキュリティ管理者またはアナリストは、これらのメッセージを確認および解放 (または削除) できます。  <br/> 今後のメッセージと添付ファイルを自動的にブロックする  <br/> |同じマルウェアの添付ファイルを使用して、組織を繰り返しの攻撃から保護する  <br/> |
 |**Replace** <br/> |検出されたマルウェアの添付ファイルを削除する  <br/> 添付ファイルが削除されたことを受信者に通知します  <br/> 検出されたマルウェアを持つメッセージを[Office 365 で検疫](manage-quarantined-messages-and-files.md)に送信します。これにより、セキュリティ管理者またはアナリストは、これらのメッセージを確認および解放 (または削除) できます。  <br/> |検出されたマルウェアが原因で添付ファイルが削除された受信者に表示を昇格させる  <br/> |
-|**動的配信** <br/> |メッセージを即時配信  <br/> スキャンが完了するまで添付ファイルをプレースホルダーファイルに置き換え、マルウェアが検出されない場合は添付ファイルを再び添付します。  <br/> スキャン時に、ほとんどの pdf および Office ファイルの添付ファイルのプレビュー機能が含まれます。  <br/> 検出されたマルウェアを含むメッセージを、セキュリティ管理者またはアナリストが確認および解放 (または削除) できる検疫に送信します。  <br/> [ATP の安全な添付ファイルを使用した動的配信とプレビューについて](dynamic-delivery-and-previewing.md) <br/> |悪意のあるファイルから受信者を保護するときにメッセージの遅延を回避する  <br/> 受信者がスキャンの実行中にセーフモードで添付ファイルをプレビューできるようにする  <br/> |
+|**動的配信** <br/> |メッセージを即時配信  <br/> スキャンが完了するまで添付ファイルをプレースホルダーファイルに置き換え、マルウェアが検出されない場合は添付ファイルを再び添付します。  <br/> スキャン時に、ほとんどの Pdf および Office ファイルの添付ファイルのプレビュー機能が含まれます。  <br/> 検出されたマルウェアを含むメッセージを、セキュリティ管理者またはアナリストが確認および解放 (または削除) できる検疫に送信します。  <br/> [ATP の安全な添付ファイルを使用した動的配信とプレビューについて](dynamic-delivery-and-previewing.md) <br/> |悪意のあるファイルから受信者を保護するときにメッセージの遅延を回避する  <br/> 受信者がスキャンの実行中にセーフモードで添付ファイルをプレビューできるようにする  <br/> |
 |**リダイレクトを有効にする** <br/> |[モニター、ブロック、または置換] オプションを選択したときに適用されます。  <br/> セキュリティ管理者またはアナリストが調査できる指定された電子メールアドレスに添付ファイルを送信します。  <br/> |セキュリティ管理者とアナリストが疑わしい添付ファイルを調査できるようにする  <br/> |
    
 ## <a name="next-steps"></a>次のステップ
 
-atp の安全な添付ファイルのポリシーを設定すると、レポートを表示することによって、atp が組織でどのように機能しているかを確認できます。 詳細については、以下のリソースを参照してください。
+ATP の安全な添付ファイルのポリシーを設定すると、レポートを表示することによって、ATP が組織でどのように機能しているかを確認できます。 詳細については、以下のリソースを参照してください。
 - [Office 365 Advanced Threat Protection のレポートを表示する](view-reports-for-atp.md)
 - [セキュリティ&amp; /コンプライアンスセンターのエクスプローラーを使用する](use-explorer-in-security-and-compliance.md)
 

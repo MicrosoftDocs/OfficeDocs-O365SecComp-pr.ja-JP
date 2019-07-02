@@ -12,20 +12,20 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: コンテンツ検索とこの記事のスクリプトを使用して、ユーザーのグループのメールボックスと OneDrive for Business サイトを検索します。
-ms.openlocfilehash: 7be1494f7a69c5865974a6c4ee0be65a6acb49d4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a9ee2db0bc0fc7a4b53c58f02bcb9d16f96fc403
+ms.sourcegitcommit: a6968df6e47ab5733a995f1efdc6e3676c5b5d7b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158769"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35253926"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>コンテンツ検索を使用してメールボックスと OneDrive for Business サイトでユーザーのリストを探す
 
-Security & コンプライアンスセンターでは、時間がかかる電子情報開示関連のタスクを自動化するための Windows PowerShell コマンドレットが多数提供されています。 現時点では、セキュリティ & コンプライアンスセンターでコンテンツ検索を作成して多数の保管担当者コンテンツの場所を検索すると、時間と準備がかかります。 検索を作成する前に、各 OneDrive for Business サイトの URL を収集し、ビジネスサイト用の各メールボックスと O neDrive を検索に追加する必要があります。 今後のリリースでは、セキュリティ & コンプライアンスセンターでの作業が容易になります。 その後、この記事のスクリプトを使用してこのプロセスを自動化できます。 このスクリプトは、組織の個人用サイトのドメイン名 (たとえば、URL https://contoso-my.sharepoint.com)内の**contoso** 、ユーザーの電子メールアドレスのリスト、新しいコンテンツ検索の名前、使用する検索クエリ) の入力を求めます。 このスクリプトは、リスト内の各ユーザーの OneDrive for Business URL を取得し、ユーザーが指定した検索クエリを使用して、リスト内の各ユーザーのメールボックスと OneDrive for Business サイトを検索するコンテンツ検索を作成して開始します。 
+セキュリティ & コンプライアンスセンターでは、時間がかかる電子情報開示関連のタスクを自動化するための Windows PowerShell コマンドレットが多数提供されています。 現在、セキュリティ & コンプライアンスセンターでコンテンツ検索を作成して、大量の保管担当者コンテンツの場所を検索するには時間と準備がかかります。 検索を作成する前に、各 OneDrive for Business サイトの URL を収集し、各メールボックスと OneDrive for Business サイトを検索に追加する必要があります。 今後のリリースでは、これはセキュリティ & コンプライアンスセンターで行うのが容易になります。 その後、この記事のスクリプトを使用してこのプロセスを自動化できます。 このスクリプトは、組織の個人用サイトのドメイン名 (たとえば、URL https://contoso-my.sharepoint.com)内の**contoso** 、ユーザーの電子メールアドレスのリスト、新しいコンテンツ検索の名前、使用する検索クエリ) の入力を求めます。 このスクリプトは、リスト内の各ユーザーの OneDrive for Business URL を取得し、ユーザーが指定した検索クエリを使用して、リスト内の各ユーザーのメールボックスと OneDrive for Business サイトを検索するコンテンツ検索を作成して開始します。 
   
 ## <a name="before-you-begin"></a>始める前に
 
-- 手順3でスクリプトを実行するには、Security & コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。また、SharePoint Online のグローバル管理者である必要があります。
+- 手順3でスクリプトを実行するには、セキュリティ & コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。また、SharePoint Online のグローバル管理者である必要があります。
     
 - 手順2で作成したユーザーの一覧と、手順3のスクリプトを同じフォルダーに保存するようにしてください。 これにより、スクリプトをより簡単に実行できるようになります。
     
@@ -57,7 +57,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 この手順でスクリプトを実行すると、次の情報を入力するように求めるメッセージが表示されます。 スクリプトを実行する前に、この情報を用意しておいてください。
   
-- **ユーザーの資格情報**-スクリプトは、自分の資格情報を使用して SharePoint Online にアクセスして、OneDrive for Business の url を取得し、リモート PowerShell を使用して Security _AMP_ コンプライアンスセンターに接続します。 
+- **ユーザーの資格情報**-スクリプトは、自分の資格情報を使用して SharePoint Online にアクセスして、OneDrive for Business の url を取得し、リモート PowerShell を使用してセキュリティ & コンプライアンスセンターに接続します。 
     
 - **個人用サイトのドメインの名前**-個人用サイトのドメインは、組織内のすべての OneDrive for business サイトを含むドメインです。 たとえば、個人用サイトのドメインの URL がの場合**https://contoso-my.sharepoint.com**は、スクリプトによっ`contoso`て、個人用サイトのドメインの名前を入力するように求めるメッセージが表示されます。 
     
@@ -182,4 +182,4 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
     
     - 検索クエリ (空白のままにすると、コンテンツの場所にあるすべてのアイテムが返されます)。
     
-    このスクリプトは、各 OneDrive for Business サイトの Url を取得し、検索を作成して開始します。 Security & コンプライアンスセンターの PowerShell で**new-compliancesearch**コマンドレットを実行して、検索の統計情報と結果を表示するか、セキュリティ _AMP_ コンプライアンスセンターの**コンテンツ検索**ページに移動して情報を表示することができます。検索について。 
+    このスクリプトは、各 OneDrive for Business サイトの Url を取得し、検索を作成して開始します。 セキュリティ & コンプライアンスセンターの PowerShell で**new-compliancesearch**コマンドレットを実行して、検索の統計と結果を表示するか、セキュリティ & コンプライアンスセンターの**コンテンツ検索**ページに移動して情報を表示することができます。検索について。 

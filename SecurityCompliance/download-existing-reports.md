@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/1/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
 description: セキュリティ&amp; /コンプライアンスセンターで、既存のレポートをダウンロードする方法について説明します。
-ms.openlocfilehash: 0ea48eca0744dbcf663d15f52342546a54a85af2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 19bae24fd72cb6414f015218db1e2737d1fcd0d6
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256925"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077843"
 ---
 # <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターで既存のレポートをダウンロードする
 
@@ -35,7 +35,7 @@ ms.locfileid: "32256925"
     
 3. [**レポートのダウンロード**] をクリックし、[**閉じる**] をクリックします。
     
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Office 365 セキュリティ&amp; /コンプライアンスセンターのレポートと分析情報](reports-and-insights-in-security-and-compliance.md)
   

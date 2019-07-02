@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティに関する原則と推奨事項の詳細については、「組織のモダン化セキュリティ」を参照してください。
-ms.openlocfilehash: 35f3feca7597eb3e80076eccc36e00debd754d01
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 90844018e12a165e57b41153cb2042967ffee641
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152159"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767318"
 ---
 # <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>CISO ワークショップモジュール 1: Microsoft Cybersecurity ブリーフィング
 
@@ -40,17 +40,17 @@ ms.locfileid: "34152159"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtVXF]
 
-## <a name="part-5-microsoft-cybersecurity-reference-architecture-2430"></a>パート 5: Microsoft Cybersecurity Reference Architecture (24:30)
+## <a name="part-5-microsoft-cybersecurity-reference-architecture-2114"></a>パート 5: Microsoft Cybersecurity Reference Architecture (21:14)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQL2]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36ldf]
 
 ## <a name="part-6-reference-architecture-for-identity-and-access-725"></a>パート 6: Id とアクセスの参照アーキテクチャ (7:25)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtITd]
 
-## <a name="part-7-reference-architecture-for-security-operations-center-739"></a>パート 7: セキュリティ運用センターの参照アーキテクチャ (7:39)
+## <a name="part-7-reference-architecture-for-security-operations-center-937"></a>パート 7: セキュリティ運用センターの参照アーキテクチャ (9:37)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYM6]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36dlc]
 
 ## <a name="part-8-reference-architecture-for-pc-and-mobile-devices-452"></a>パート 8: PC およびモバイルデバイスのリファレンスアーキテクチャ (4:52)
 

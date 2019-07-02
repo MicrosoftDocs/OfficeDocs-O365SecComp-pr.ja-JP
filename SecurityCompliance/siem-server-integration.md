@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.date: 10/29/2018
+ms.date: 06/17/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: '概要: この記事では、SIEM server と Microsoft 365 の統合の概要について説明します。'
-ms.openlocfilehash: cfa9c6c3ae501515f61799fdd480fc569918935f
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 9138cbc395b90f50fa60bf545066c17cf26d7edf
+ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852691"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35014766"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM server と Microsoft 365 のサービスおよびアプリケーションの統合
 
@@ -33,13 +33,13 @@ SIEM サーバーは、さまざまな Microsoft 365 サービスおよびアプ
 
 | Microsoft 365 サービスまたはアプリケーション | SIEM サーバーの入力 | 詳細については、リソースを参照してください |
 | --- | --- | --- |
-| [Office 365 Advanced Threat Protection](office-365-atp.md) <br/>   または   <br/>[Office 365 脅威インテリジェンス](office-365-ti.md) | 監査ログ | [Office 365 Advanced Threat Protection との SIEM の統合](siem-integration-with-office-365-ti.md) |
+| [Office 365 Advanced Threat Protection](office-365-atp.md) <br/>または<br/>[Office 365 脅威インテリジェンス](office-365-ti.md) | 監査ログ | [Office 365 Advanced Threat Protection との SIEM の統合](siem-integration-with-office-365-ti.md) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | ログの統合 | [SIEM と Microsoft Cloud App Security との統合](https://docs.microsoft.com/cloud-app-security/siem) |
-| [Office 365 Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | ログの統合 | [SIEM サーバーを Cloud App Security と統合する](https://docs.microsoft.com/cloud-app-security/siem) |
 | [Microsoft Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/) | ログの統合 | [SIEM ツールに通知を取得する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem) |
 | [Azure セキュリティセンター](https://docs.microsoft.com/azure/security-center/security-center-intro)(脅威の保護と脅威の検出) | アラート | [SIEM への Azure セキュリティデータのエクスポート-パイプライン構成-プレビュー](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
-| [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) | 監査ログ | [Azure Active Directory 監査ログを統合する](https://docs.microsoft.com/azure/security/security-azure-log-integration-ad) |
-| [Azure Advanced Threat Analytics](https://docs.microsoft.com/azure/security/azure-threat-detection) | ログの統合 | [ATA SIEM ログリファレンス](https://docs.microsoft.com/advanced-threat-analytics/cef-format-sa) |
+|[Azure Advanced Threat Analytics](https://docs.microsoft.com/azure/security/azure-threat-detection) | Azure モニター | [発行Azure Monitor を使用して SIEM ツールと統合する](https://azure.microsoft.com/blog/use-azure-monitor-to-integrate-with-siem-tools) |
+|[Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) |ログの統合 |[Microsoft Graph Security API の警告と SIEM の統合](https://docs.microsoft.com/graph/security-siemintegration) |
+
 
 ## <a name="audit-logging-must-be-turned-on"></a>監査ログを有効にする必要がある
 

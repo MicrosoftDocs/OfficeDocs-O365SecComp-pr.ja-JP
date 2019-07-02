@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/4/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターの推奨されるアクションを使用して、詳細レポートから洞察に移動する方法について説明します。
-ms.openlocfilehash: 062ae0931e78b01e26fc0d723e6d6d2ad1c04095
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f97501ddfa749e8d05ea8cb663f455a357df667c
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255316"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077983"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>ウォークスルー - 詳細レポートからインサイトへの移動
 
@@ -36,13 +36,13 @@ ms.locfileid: "32255316"
   
 2. レポートを選択して、より詳細なビューを取得します。 (**脅威保護の状態**レポートなどのレポートを選択します。)<br/>![分析情報を示す脅威保護状態レポート](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   
-3. レポートの下と同様に、グラフにはインサイトインジケーターが表示されます。 insights マーカーにマウスポインターを置くと、追加の詳細が表示されます。 (詳細については、insights マーカーの上にカーソルを移動してください)。
+3. レポートの下と同様に、グラフにはインサイトインジケーターが表示されます。 Insights マーカーにマウスポインターを置くと、追加の詳細が表示されます。 (詳細については、insights マーカーの上にカーソルを移動してください)。
     
 4. グラフの下にある、グラフまたは insights ウィジェットの [insights] マーカーのいずれかをクリックすると、グラフの下に詳細ウィンドウが表示されます。 (グラフの下で、insights ウィジェットを選択します)。<br/>![マルウェアに関する洞察の詳細](media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>詳細ウィンドウには、ポリシーの確認、詳細な探索の実施、状態の編集など、考慮すべき情報と推奨事項が表示されます。 ([Office 365 でのスパム対策とマルウェア対策の保護の詳細について説明](anti-spam-and-anti-malware-protection.md)します)。
     
 このようにして、詳細レポートから洞察や推奨されるアクションに移動することができます。 
   
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [チュートリアル: 洞察から詳細レポートへ](from-an-insight-to-a-detailed-report.md)
   

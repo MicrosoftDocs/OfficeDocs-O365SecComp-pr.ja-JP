@@ -9,19 +9,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
-description: 'PowerShell スクリプトを使用して、セキュリティ & コンプライアンスセンターで作成された検索に基づいて、Exchange Online でインプレース電子情報開示検索を作成します。 '
-ms.openlocfilehash: d021836a735d5c5dd12124e16e348729d88e6022
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 'セキュリティ & コンプライアンスセンターで作成された検索に基づいて、Exchange Online でインプレース電子情報開示検索を作成するには、PowerShell スクリプトを使用します。 '
+ms.openlocfilehash: f3d5eb76dfa91334bccae42e0ddb66a71f739a6f
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157979"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199824"
 ---
 # <a name="use-content-search-in-your-ediscovery-workflow"></a>電子情報開示ワークフローでコンテンツ検索を使用する
 
 セキュリティ & コンプライアンスセンターのコンテンツ検索機能を使用すると、組織内のすべてのメールボックスを検索できます。 Exchange Online のインプレース電子情報開示とは異なり (1万メールボックスを検索することができます)、単一の検索の対象メールボックスの数に制限はありません。 組織全体の検索を実行する必要があるシナリオでは、コンテンツ検索を使用してすべてのメールボックスを検索できます。 その後、インプレース電子情報開示のワークフロー機能を使用して、メールボックスを保持に配置したり、検索結果をエクスポートしたりするなど、電子情報開示関連のその他のタスクを実行できます。 たとえば、すべてのメールボックスを検索して、訴訟に応答する特定の保管担当者を識別する必要があるとします。 セキュリティ & コンプライアンスセンターでコンテンツ検索を使用して、組織内のすべてのメールボックスを検索し、そのケースに応答するものを特定することができます。 その後、保管担当者メールボックスのリストを、Exchange Online のインプレース電子情報開示検索用のソースメールボックスとして使用できます。 インプレース電子情報開示を使用すると、これらのソースメールボックスを保持でき、検索結果を証拠開示用メールボックスにコピーして、検索結果をエクスポートすることもできます。
   
-このトピックには、Exchange Online でインプレース電子情報開示検索を作成するために実行できるスクリプトが含まれています。これには、セキュリティ & コンプライアンスセンターで作成された検索からソースメールボックスと検索クエリの一覧を使用します。 プロセスの概要は次のとおりです。
+このトピックには、セキュリティ & コンプライアンスセンターで作成された検索からソースメールボックスと検索クエリの一覧を使用して、Exchange Online でインプレース電子情報開示検索を作成するために実行できるスクリプトが含まれています。 プロセスの概要は次のとおりです。
   
 [手順 1: 組織内のすべてのメールボックスを検索するためのコンテンツ検索を作成する](#step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization)
 
@@ -33,14 +33,14 @@ ms.locfileid: "34157979"
 
 ## <a name="step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization"></a>手順 1: 組織内のすべてのメールボックスを検索するためのコンテンツ検索を作成する
 
-最初の手順として、Security & コンプライアンスセンター (または Security & コンプライアンスセンター PowerShell) を使用して、組織内のすべてのメールボックスを検索するコンテンツ検索を作成します。 単一のコンテンツ検索のメールボックス数に制限はありません。 適切なキーワード クエリ (または機密情報の種類に関するクエリ) を指定し、検索によって対象に関連する検索メールボックスだけが返されるようにします。 必要に応じて、検索クエリを調整し、返される検索結果とソース メールボックスの範囲を絞り込みます。
+最初の手順として、セキュリティ & コンプライアンスセンター (またはセキュリティ & コンプライアンスセンター PowerShell) を使用して、組織内のすべてのメールボックスを検索するコンテンツ検索を作成します。 単一のコンテンツ検索のメールボックス数に制限はありません。 適切なキーワード クエリ (または機密情報の種類に関するクエリ) を指定し、検索によって対象に関連する検索メールボックスだけが返されるようにします。 必要に応じて、検索クエリを調整し、返される検索結果とソース メールボックスの範囲を絞り込みます。
   
 > [!NOTE]
 > ソースコンテンツ検索で結果が返されない場合は、手順3でスクリプトを実行しても、インプレース電子情報開示は作成されません。 検索クエリを変更してから、検索結果を返すためにコンテンツ検索を再実行する必要がある場合があります。 
   
 ### <a name="use-the-security--compliance-center-to-search-all-mailboxes"></a>セキュリティ & コンプライアンスセンターを使用してすべてのメールボックスを検索する
 
-1. [セキュリティ _AMP_ コンプライアンスセンターに移動](go-to-the-securitycompliance-center.md)します。 
+1. [セキュリティ & コンプライアンスセンターに移動](go-to-the-securitycompliance-center.md)します。 
     
 2. [**検索** > **コンテンツ検索**] をクリックし、[**新しい検索** ![の追加] アイコン](media/O365-MDM-CreatePolicy-AddIcon.gif)をクリックします。
     
@@ -56,9 +56,9 @@ ms.locfileid: "34157979"
     
 7.  必要に応じて、検索結果の範囲を絞り込むために検索クエリを調整し、検索を再開します。 
     
-### <a name="use-security--compliance-center-powershell-to-search-all-mailboxes"></a>Security & コンプライアンスセンターの PowerShell を使用してすべてのメールボックスを検索する
+### <a name="use-security--compliance-center-powershell-to-search-all-mailboxes"></a>セキュリティ & コンプライアンスセンターの PowerShell を使用してすべてのメールボックスを検索する
 
-**New-compliancesearch**コマンドレットを使用して、組織内のすべてのメールボックスを検索することもできます。 最初の手順として、 [Security _AMP_ コンプライアンスセンター PowerShell に接続](https://go.microsoft.com/fwlink/p/?LinkID=627084)します。
+**New-compliancesearch**コマンドレットを使用して、組織内のすべてのメールボックスを検索することもできます。 最初の手順として、[セキュリティ & コンプライアンスセンター PowerShell に接続](https://go.microsoft.com/fwlink/p/?LinkID=627084)します。
   
 ここでは、PowerShell を使用して組織内のすべてのメールボックスを検索する例を示します。 検索クエリは、2015年1月1日から2015年6月30日までの間に送信されたすべてのメッセージを返します。これには件名行に「財務報告」という語句が含まれています。 1 番目のコマンドは検索を作成し、2 番目のコマンドは検索を実行します。 
   
@@ -110,7 +110,7 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
   "Number of mailboxes that have search hits: " + $mailboxes.Count
   ```
 
-2. Security & コンプライアンスセンター PowerShell で、前の手順で作成したスクリプトが置かれているフォルダーに移動し、スクリプトを実行します。例えば：
+2. [セキュリティ & コンプライアンスセンター] PowerShell で、前の手順で作成したスクリプトが置かれているフォルダーに移動し、スクリプトを実行します。例えば：
     
     ```
     .\SourceMailboxes.ps1
@@ -124,7 +124,7 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
   
 ## <a name="step-2-connect-to-the-security--compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>手順 2: 1 つのリモート\& PowerShell セッションでセキュリティコンプライアンスセンターと Exchange Online に接続する
 
-次の手順では、Windows PowerShell をセキュリティ & コンプライアンスセンターと Exchange Online 組織の両方に接続します。 この手順が必要になるのは、手順3で実行するスクリプトで、セキュリティ & コンプライアンスセンターのコンテンツ検索コマンドレットと Exchange Online のインプレース電子情報開示のコマンドレットにアクセスする必要があるためです。
+次の手順では、Windows PowerShell をセキュリティ & コンプライアンスセンターおよび Exchange Online 組織に接続します。 この手順が必要になるのは、手順3で実行するスクリプトで、セキュリティ & コンプライアンスセンターおよび Exchange Online のインプレース電子情報開示のコマンドレットにあるコンテンツ検索コマンドレットにアクセスする必要があるためです。
   
 1. ファイル名のサフィックスに .ps1 を使って、次のテキストを Windows PowerShell スクリプト ファイルに保存します。 たとえば、という名前`ConnectEXO-CC.ps1`のファイルに保存することができます。
     
@@ -143,7 +143,7 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
     .\ConnectEXO-CC.ps1
     ```
 
-これが機能したかどうかを知る方法 スクリプトを実行すると、Security & コンプライアンスセンターおよび Exchange Online のコマンドレットがローカルの PowerShell セッションにインポートされます。 何もエラーが表示されなければ、正常に接続されています。 簡単に確かめるには、セキュリティ/コンプライアンス センターのコマンドレット (**Install-UnifiedCompliancePrerequisite** など) および Exchange Online のコマンドレット (**Get-Mailbox** など) を実行して結果を確認します。 
+これが機能したかどうかを知る方法 スクリプトを実行すると、セキュリティ & コンプライアンスセンターおよび Exchange Online のコマンドレットがローカルの PowerShell セッションにインポートされます。 何もエラーが表示されなければ、正常に接続されています。 簡単に確かめるには、セキュリティ/コンプライアンス センターのコマンドレット (**Install-UnifiedCompliancePrerequisite** など) および Exchange Online のコマンドレット (**Get-Mailbox** など) を実行して結果を確認します。 
   
 ## <a name="step-3-run-the-script-to-create-an-in-place-ediscovery-search-from-the-content-search"></a>手順 3: コンテンツ検索からインプレースの電子情報開示検索を作成するスクリプトを実行する
 
@@ -266,7 +266,7 @@ Start-ComplianceSearch -Identity "Search All-Financial Report"
 
 1. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
-2. リストビューで、手順3で作成したインプレースの電子情報開示検索を選択し、[編集**** ![] 編集アイコン](media/O365_MDM_CreatePolicy_EditIcon.gif)をクリックします。
+2. リストビューで、手順3で作成したインプレースの電子情報開示検索を選択し、[編集**** ![] 編集アイコン](media/O365-MDM-CreatePolicy-EditIcon.gif)をクリックします。
     
 3. [ **インプレース保持**] ページで、[ **選択したメールボックス内の検索クエリに一致したコンテンツを保持する**] チェック ボックスをオンにして、次のいずれかのオプションを選択します。 
     

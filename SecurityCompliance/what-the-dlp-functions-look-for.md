@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/18/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密情報の種類では、特定のパターンが検索され、適切な書式設定とチェックサムの適用を確認し、関連するキーワードやその他の情報を検索することによって、corroborate を行います。 この機能の一部は、内部機能によって実行されます。 このトピックでは、定義済みの機密情報の種類がどのように機能するかを理解するために、これらの関数がどのようなものかを説明します。
-ms.openlocfilehash: d0aeb38001f42d9db2b124466b02746ee106b078
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 044920a7ff28ffc1c4338a642bc130ee07ef7264
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266919"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34078003"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 関数の検索対象
 
-データ損失防止 (dlp) には、クレジットカード番号、EU デビットカード番号などの機密情報の種類が含まれています。これは、dlp ポリシーで使用する準備ができています。 これらの機密情報の種類では、特定のパターンが検索され、適切な書式設定とチェックサムを適用し、関連するキーワードまたはその他の情報を検索することによって、corroborate します。 この機能の一部は、内部機能によって実行されます。 たとえば、クレジットカード番号の機密情報の種類では、有効期限として書式設定された日付を検索するために関数を使用しています。これは、corroborate がクレジットカード番号であることを示すために役立ちます。
+データ損失防止 (DLP) には、クレジットカード番号、EU デビットカード番号などの機密情報の種類が含まれています。これは、DLP ポリシーで使用する準備ができています。 これらの機密情報の種類では、特定のパターンが検索され、適切な書式設定とチェックサムを適用し、関連するキーワードまたはその他の情報を検索することによって、corroborate します。 この機能の一部は、内部機能によって実行されます。 たとえば、クレジットカード番号の機密情報の種類では、有効期限として書式設定された日付を検索するために関数を使用しています。これは、corroborate がクレジットカード番号であることを示すために役立ちます。
   
 このトピックでは、定義済みの機密情報の種類がどのように機能するかを理解するために、これらの関数がどのようなものかを説明します。 詳細については、「[機密情報の種類](what-the-sensitive-information-types-look-for.md)を調べる」を参照してください。
   
@@ -93,13 +93,13 @@ ms.locfileid: "32266919"
     
   - janvier、février、mars、avril、mai、juin juillet、août、septembre、octobre、novembre、décembre
     
-  - janv。 févr。 mars avril mai juin juil。 août 9 月 oct. 年11月. déc。
+  - janv. févr. mars avril mai juin juil。 août 9 月 oct. 年11月. déc.
     
 - ドイツ語
     
   - jänuar、februar、märz、エイプリル、mai、juni juli、8月、9月、oktober、11月、dezember
     
-  - Jan./Jän。 März Mai Juni Juli 年8月9日。 11月. dez。
+  - Jan./Jän。 März Mai Juni Juli 年8月9日。 11月. Dez。
     
 - イタリア語
     
@@ -197,13 +197,13 @@ ms.locfileid: "32266919"
     
 次の形式では、YY または YYYY がサポートされています。
   
-- 月-YYYY--たとえば、のようになります。2010またはまたは1月10日または1月10日
+- 月-YYYY--たとえば、のようになります。2010または2010または1月10日または1月10日
     
-- 月 YYYY--たとえば、' january 2010 ' または ' jan 2010 ' または ' jan 10 ' または ' jan 10 ' のようになります。
+- 月 YYYY--たとえば、' january 2010 ' または ' Jan 2010 ' または ' Jan 10 ' または ' Jan 10 ' のようになります。
     
-- 月 yyyy--たとえば、' january2010 ' または ' Jan2010 ' または ' january10 ' または ' Jan10 '
+- 月 Yyyy--たとえば、' january2010 ' または ' Jan2010 ' または ' january10 ' または ' Jan10 '
     
-- Month/YYYY--たとえば、' january/2010 '、' jan/2010 '、' jan/10 '、または ' jan/10 '
+- Month/YYYY--たとえば、' january/2010 '、' Jan/2010 '、' jan/10 '、または ' Jan/10 '
     
 受諾された月の名前:
   

@@ -3,7 +3,7 @@ title: '脅威トラッカー - 新機能とNoteworthy 機能 '
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,19 +14,19 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: 新しい注目すべきトラッカーを含む脅威のトラッカーについて説明します。これにより、組織はセキュリティ上の問題に常に役立てることができます。
-ms.openlocfilehash: 4a12a1cfe68f8ebcfae640a65d0eca68e36fb04c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d86eb53c1dc407fc109b39fc0f9f1809b43b8d7a
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260044"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077803"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>脅威トラッカー - 新機能とNoteworthy 機能 
 
 [Office 365 の脅威調査と応答](office-365-ti.md)機能を使用すると、組織のセキュリティチームが cybersecurity の脅威を検出し、行動を取ることができます。 Office 365 の脅威の調査と応答の機能には、注目すべきトラッカーを含む脅威の追跡機能が含まれています。 これらの新機能と次の手順の概要を確認するには、この記事をお読みください。 
 
 > [!IMPORTANT]
-> office 365 脅威インテリジェンスは office 365 Advanced threat protection プラン2に加えて、追加の脅威保護機能と共に提供されるようになりました。 詳細については、「 [office 365 advanced threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [office 365 advanced threat protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
+> Office 365 脅威インテリジェンスは Office 365 Advanced Threat Protection プラン2に加えて、追加の脅威保護機能と共に提供されるようになりました。 詳細については、「 [office 365 Advanced Threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [Office 365 Advanced threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
   
 ## <a name="what-are-threat-trackers"></a>脅威のトラッカーとは
 
@@ -47,7 +47,7 @@ ms.locfileid: "32260044"
   
 ### <a name="noteworthy-trackers"></a>注目すべきトラッカー
 
-注目すべき脅威とリスクについて理解していると考えられていますが、注目すべきトラッカーがあります。 注目すべきトラッカーは、office 365 環境にこれらの問題があるかどうかを確認するのに役立ちます。また、そのような記事へのリンクにより、何が起こっているか、またそれらがどのように office 365 を使用しているかにどのように影響するかについての情報が得られます。 大きな新しい脅威 (winaugural acoffice、petya など)、または既存の脅威 (他のの重要なアイテム-Nemucod など) であるかどうかにかかわらず、この記事では、お客様とセキュリティチームが検討して検討する必要のある重要な新しいアイテムを紹介します。ときどき.
+注目すべき脅威とリスクについて理解していると考えられていますが、注目すべきトラッカーがあります。 注目すべきトラッカーは、Office 365 環境にこれらの問題があるかどうかを確認するのに役立ちます。また、そのような記事へのリンクにより、何が起こっているか、またそれらがどのように Office 365 を使用しているかにどのように影響するかについての情報が得られます。 大きな新しい脅威 (Winaugural Acoffice、Petya など)、または既存の脅威 (他のの重要なアイテム-Nemucod など) であるかどうかにかかわらず、この記事では、お客様とセキュリティチームが検討して検討する必要のある重要な新しいアイテムを紹介します。ときどき.
   
 通常、注目すべきトラッカーは、新しい脅威を特定し、この機能が提供する追加の可視性が必要になる可能性があると考えると、わずか数週間だけ投稿されます。 脅威に対する最大のリスクが経過したら、その注目すべき項目を削除します。 これにより、他の関連する新しいアイテムの一覧を最新の状態にし、最新の状態に保つことができます。
   
@@ -83,7 +83,7 @@ ms.locfileid: "32260044"
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>トラッカーおよび Office 365 Advanced Threat Protection
 
-inaugural 注目すべき脅威により、 [Office 365 の ATP の安全な添付ファイル](atp-safe-attachments.md)によって検出された高度なマルウェアの脅威が強調されています。 office 365 Enterprise E5 のお客様で、 [office 365 Advanced Threat Protection](office-365-atp.md) (ATP) を使用していない場合は、サブスクリプションに含まれています。 ATP は、Office 365 サービスでメールフローをフィルタリングする他のセキュリティツールを使用している場合でも、価値を提供します。 ただし、スパム対策と[office 365 の ATP の安全なリンク](atp-safe-links.md)機能は、メインの電子メールのセキュリティソリューションが Office 365 を経由している場合に最適に機能します。 
+Inaugural 注目すべき脅威により、 [Office 365 の ATP の安全な添付ファイル](atp-safe-attachments.md)によって検出された高度なマルウェアの脅威が強調されています。 Office 365 Enterprise E5 のお客様で、 [office 365 Advanced Threat Protection](office-365-atp.md) (ATP) を使用していない場合は、サブスクリプションに含まれています。 ATP は、Office 365 サービスでメールフローをフィルタリングする他のセキュリティツールを使用している場合でも、価値を提供します。 ただし、スパム対策と[office 365 の ATP の安全なリンク](atp-safe-links.md)機能は、メインの電子メールのセキュリティソリューションが Office 365 を経由している場合に最適に機能します。 
   
 ![セキュリティ&amp; /コンプライアンスセンターの ATP](media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
@@ -93,7 +93,7 @@ inaugural 注目すべき脅威により、 [Office 365 の ATP の安全な添�
   
 ## <a name="next-steps"></a>次のステップ
 
-- 組織にこれらの office 365 脅威の調査および応答機能がまだない場合は、「 [office 365 の脅威の調査および応答機能を入手する方法](get-started-with-ti.md)」を参照してください。
+- 組織にこれらの Office 365 脅威の調査および応答機能がまだない場合は、「 [office 365 の脅威の調査および応答機能を入手する方法](get-started-with-ti.md)」を参照してください。
     
 - セキュリティチームに適切な役割とアクセス許可が割り当てられていることを確認してください。 セキュリティ&amp; /コンプライアンスセンターでは、Office 365 のグローバル管理者であるか、セキュリティ管理者または検索および削除の役割が割り当てられている必要があります。 「 [Office 365 セキュリティ&amp;コンプライアンスセンターのアクセス許可」を](permissions-in-the-security-and-compliance-center.md)参照してください。
     
