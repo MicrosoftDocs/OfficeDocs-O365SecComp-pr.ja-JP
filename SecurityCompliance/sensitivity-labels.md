@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを使用すると、機密コンテンツの分類が可能になり、機密コンテンツの保護に役立ちます。このラベルを使用することで、共同作業の生産性や機能性が低下することはありません。機密ラベルは、ラベル付けされたコンテンツに暗号化や透かしなどの保護設定を強制適用するために使用できます。
-ms.openlocfilehash: 63470a4375c1a3cc1420b64725d6741aa8e95af4
-ms.sourcegitcommit: 28d5972adef5bbe1377d89ff9962c531f5f08dbf
+ms.openlocfilehash: df8caa3708a07859f0bfd058a1bd09ee38dc65ea
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2019
-ms.locfileid: "34166929"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199946"
 ---
 # <a name="overview-of-sensitivity-labels"></a>機密ラベルの概要
 
@@ -26,7 +26,7 @@ ms.locfileid: "34166929"
 
 機密ラベルを使用すると、機密コンテンツの分類が可能になり、機密コンテンツの保護に役立ちます。このラベルを使用することで、共同作業の生産性や機能性が低下することはありません。
 
-![Excel のリボンおよびステータス バーに示された機密ラベル](media/Sensitivity_label_in_Excel.png)
+![Excel のリボンおよびステータス バーに示された機密ラベル](media/Sensitivity-label-in-Excel.png)
 
 機密ラベルは、次の目的に使用できます。
   
@@ -62,7 +62,7 @@ Office アプリでは、機密ラベルは単に電子メールやドキュメ�
 
 コンテンツの各アイテムには、単一の機密ラベルを適用できます。ただし、1 つのアイテムに 1 つの機密ラベルと 1 つの[保持ラベル](labels.md)の両方が適用可能である点に注意してください。
 
-![電子メールに適用された機密ラベル](media/Sensitivity_label_on_email.png)
+![電子メールに適用された機密ラベル](media/Sensitivity-label-on-email.png)
 
 ## <a name="what-sensitivity-labels-can-do"></a>機密ラベルでできること
 
@@ -72,18 +72,18 @@ Office アプリでは、機密ラベルは単に電子メールやドキュメ�
 
 - ラベルが適用された電子メールまたはドキュメントに、ユーザー設定の透かし、ヘッダー、またはフッターを追加して、**コンテンツにマークを付けます**。透かしを適用できるのはドキュメントのみで、電子メールには使用できません。透かしで使用できる文字数は、255 文字までです。また、ヘッダーとフッターに使用できる文字数は 1024 文字までとなります (Excel で使用できるのは 255 文字までとなり、ドキュメントにヘッダーやフッター、あるいは他の要因が含まれているかによって、使用できる文字数が異なります)。
 
-    ![ドキュメントに適用されたヘッダーと透かし](media/Sensitivity_label_watermark_header.png)
+    ![ドキュメントに適用されたヘッダーと透かし](media/Sensitivity-label-watermark-header.png)
 
-- Intune の Endpoint Protection を有効にすることで、**データ損失を防止します**。機密コンテンツがダウンロードされたときに、Windows デバイスからのデータ損失防止に利用できます。たとえば、ラベルが付けられたコンテンツは Dropbox、Gmail、または USB ドライブにコピーできなくなります。機密ラベルで Windows 情報保護 (WIP) が使用できるようになるまでは、最初に Azure portal でアプリ保護ポリシーを作成する必要があります。詳細については、「[Windows 情報保護で機密ラベル付きのファイルを保護する方法](https://docs.microsoft.com/ja-JP/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)」を参照してください。
+- Intune の Endpoint Protection を有効にすることで、**データ損失を防止します**。機密コンテンツがダウンロードされたときに、Windows デバイスからのデータ損失防止に利用できます。たとえば、ラベルが付けられたコンテンツは Dropbox、Gmail、または USB ドライブにコピーできなくなります。機密ラベルで Windows 情報保護 (WIP) が使用できるようになるまでは、最初に Azure portal でアプリ保護ポリシーを作成する必要があります。詳細については、「[Windows 情報保護で機密ラベル付きのファイルを保護する方法](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)」を参照してください。
 
-- **機密情報を含むコンテンツに自動的にラベルを適用します。** どのような種類の機密情報にラベルをつけるか、また、ラベルを自動でつけるか、あるいは推奨するラベルを適用するようにユーザーに確認メッセージを表示するか選択することができます。ラベルを推奨する場合、ダイアログに任意に選択したテキストを表示することができます。詳細については、「[機密ラベルを自動的にコンテンツに適用する](apply_sensitivity_label_automatically.md)」を参照してください。
+- **機密情報を含むコンテンツに自動的にラベルを適用します。** どのような種類の機密情報にラベルをつけるか、また、ラベルを自動でつけるか、あるいは推奨するラベルを適用するようにユーザーに確認メッセージを表示するか選択することができます。ラベルを推奨する場合、ダイアログに任意に選択したテキストを表示することができます。詳細については、「[機密ラベルを自動的にコンテンツに適用する](apply-sensitivity-label-automatically.md)」を参照してください。
 
-    ![必要なラベルを割り当てるかを確認するダイアログ](media/Sensitivity_label_Prompt_for_required_label.png)
+    ![必要なラベルを割り当てるかを確認するダイアログ](media/Sensitivity-label-Prompt-for-required-label.png)
 
 
 これらすべてのオプションは、機密ラベルを作成したときに使用できるようになります。
 
-![機密ラベルの作成時のオプション](media/Sensitivity_label_create_options.png)
+![機密ラベルの作成時のオプション](media/Sensitivity-label-create-options.png)
 
 ### <a name="label-priority-order-matters"></a>ラベルの優先度 (順序の問題)
 
@@ -91,9 +91,9 @@ Office アプリでは、機密ラベルは単に電子メールやドキュメ�
 
 ドキュメントや電子メールには、1 つの機密ラベルのみを適用できます。ラベルの分類を低く変更する場合の正当性を示すようにユーザーに要求す必要がある場合は、この一覧の順序によって、より低い分類を判断します。
 
-![サブラベルを作成するためのオプション](media/Sensitivity_label_sublabel_options.png)
+![サブラベルを作成するためのオプション](media/Sensitivity-label-sublabel-options.png)
 
-ラベルの優先度に加えて、ラベル ポリシーの順序も重要です。[下記のこのセクション](#sensitivity-label-priority-order-matters)を参照してください。
+ラベルの優先度に加えて、ラベル ポリシーの順序も重要です。[ラベル ポリシーの優先度 (順序の重要性)](#label-policy-priority-order-matters)を参照してください。
 
 ### <a name="sublabels-grouping-labels"></a>サブラベル (ラベルのグループ化)
 
@@ -103,7 +103,7 @@ Office アプリでは、機密ラベルは単に電子メールやドキュメ�
 
 (また、親ラベルは Azure Information Protection 統合ラベル付けクライアントを使用する Office アプリのコンテンツには適用されないため、親ラベルを既定のラベルとして選択したり (次のセクションを参照)、親ラベルを自動適用または推奨するように構成したりしないでください。)
 
-![リボンでグループ化されたサブラベル](media/Sensitivity_label_grouped_labels.png)
+![リボンでグループ化されたサブラベル](media/Sensitivity-label-grouped-labels.png)
 
 ### <a name="editing-or-deleting-a-sensitivity-label"></a>機密ラベルの編集または削除
 
@@ -123,24 +123,24 @@ Office アプリでは、機密ラベルは単に電子メールやドキュメ�
 
 - **ラベルの変更に対する正当性を要求します。** コンテンツに「社外秘」のマークが付けられているときに、そのラベルをユーザーが削除しようとした場合や低い分類 (ラベル名「公開」など) に置き換えようとした場合は、そのアクションの実行時に、ユーザーに正当性を提示するように要求できます。こうした正当性は、管理者が確認するために利用できます。Microsoft では、現在、管理者がユーザーの正当性を確認できるレポートの開発を進めています。
 
-    ![ユーザーに正当性を入力するように求めるダイアログ](media/Sensitivity_label_justification_required.png)
+    ![ユーザーに正当性を入力するように求めるダイアログ](media/Sensitivity-label-justification-required.png)
 
 - **メールとドキュメントにラベルを適用するようユーザーに要求します。** ユーザーのすべてのコンテンツにラベル付けする場合は、ユーザーのすべての保存ドキュメントと送信メールに必ずラベルを適用するよう要求することができます。ラベルはユーザーが手動で割り当てるか、条件の結果として自動的に割り当てるか、既存で割り当てることができます (既存のラベル オプションについては前述のとおりです)。これは、Outlook で表示されるユーザーにラベルを割り当てるように要求するダイアログです。
 
     > [!NOTE]
-    > ラベル付けが必須な場合、Azure Information Protection サブスクリプションが必要になります。この機能を使用するには、[Azure Information Protection クライアント](https://www.microsoft.com/en-us/download/details.aspx?id=53018)または [Azure Information Protection 統合ラベル付けクライアント](https://docs.microsoft.com/ja-JP/azure/information-protection/rms-client/install-unifiedlabelingclient-app)のどちらかをダウンロードしてインストールする必要があります。Azure Information Protection クライアントが不要になるように、Office アプリのこの機能のネイティブ サポートに取り組んでいます。また、このクライアントは、Windows 上でのみ実行されるため、この機能は、Mac、iOS、Android ではまだサポートされていません。
+    > ラベル付けが必須な場合、Azure Information Protection サブスクリプションが必要になります。この機能を使用するには、[Azure Information Protection クライアント](https://www.microsoft.com/download/details.aspx?id=53018)または [Azure Information Protection 統合ラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app)のどちらかをダウンロードしてインストールする必要があります。Azure Information Protection クライアントが不要になるように、Office アプリのこの機能のネイティブ サポートに取り組んでいます。また、このクライアントは、Windows 上でのみ実行されるため、この機能は、Mac、iOS、Android ではまだサポートされていません。
 
-    ![必要なラベルを適用するかユーザーに確認する Outlook のダイアログ](media/sensitivity_labels_mandatory_prompt_aipv2_outlook.PNG)
+    ![必要なラベルを適用するかユーザーに確認する Outlook のダイアログ](media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
 
 - **カスタムのヘルプ ページへのヘルプ リンクを提示します。** ユーザーが機密ラベルの意味や使用方法について明確に理解できない場合に、Office アプリの機密ラベル メニューの末尾に表示される詳細な説明の URL を提供できます。
 
-    ![リボンの [機密] ボタンに示された詳細な説明のリンク](media/Sensitivity_label_learn_more.png)
+    ![リボンの [機密] ボタンに示された詳細な説明のリンク](media/Sensitivity-label-learn-more.png)
 
 ラベル ポリシーを作成して、ユーザーおよびグループに機密ラベルを割り当てると、そのユーザーおよびグループは、1 時間以内に Office アプリで使用できるラベルを確認できるようになります。
 
 ### <a name="label-policy-priority-order-matters"></a>ラベルのポリシー 優先度 (順序の問題)
 
-[**ラベル ポリシー**] ページの [**機密ポリシー**] タブのリストに表示される機密ラベル ポリシーで機密ラベルを発行し、ユーザーが利用できるようにします。 機密ラベルと同じように ([上記のセクション](#sensitivity-label-priority-order-matters)参照)、機密ラベル ポリシーの順序は、優先度を反映しているため重要です。 優先度が最も低いラベル ポリシーが**一番上**に表示され、優先度が最も高いラベル ポリシーが**一番下**に表示されます。
+[**ラベル ポリシー**] ページの [**機密ポリシー**] タブのリストに表示される機密ラベル ポリシーで機密ラベルを発行して、ユーザーが利用できるようにします。 機密ラベルと同じように (上記のセクションの[ラベルの優先度 (順序の重要性)](#label-priority-order-matters)参照)、機密ラベル ポリシーの順序は、優先度を反映しているため重要です。 優先度が最も低いラベル ポリシーが**一番上**に表示され、優先度が最も高いラベル ポリシーが**一番下**に表示されます。
 
 ラベル ポリシーは次のように構成されます。
 
@@ -148,7 +148,7 @@ Office アプリでは、機密ラベルは単に電子メールやドキュメ�
 - ラベル ポリシーの範囲 (ポリシーに含まれるユーザーとグループ)。
 - 上記のラベル ポリシーの設定 (既定のラベル、妥当性、必須ラベル、ヘルプのリンク)。
 
-ユーザーを複数のラベル ポリシーに含めることができます。また、これらのポリシーのすべての機密ラベルが表示されます。 ただし、ユーザーに表示されるのは、最も優先度の高いラベル ポリシーのポリシー設定のみです。
+ユーザーを複数のラベル ポリシーに含めることができます。また、ユーザーには、これらのポリシーのすべての機密ラベルが表示されます。 ただし、ユーザーには、最も優先度の高いラベル ポリシーのみのポリシー設定が表示されます。
 
 既定のラベルや必須のラベルなど、組織内のユーザーまたはグループに意図したラベル ポリシーのオプションが表示されない場合、機密ラベル ポリシーの順序を確認してください。 ラベル ポリシーを並べ替えるには、機密ラベル ポリシーを選択し、右側にある省略記号を選択して**下へ移動**または**上へ移動**します。
 
@@ -168,11 +168,11 @@ Office アプリでは、機密ラベルは単に電子メールやドキュメ�
 
 機密ラベルが機能するために、管理者、ユーザー、Office アプリが実行する内容の基本的なフローを次に示します。
 
-![機密ラベルのワークフローを示す図](media/Sensitivity_label_flow.png)
+![機密ラベルのワークフローを示す図](media/Sensitivity-label-flow.png)
 
 ## <a name="where-sensitivity-labels-can-appear"></a>機密ラベルを表示できる場所
 
-機密ラベルは、Office アプリの UI に表示されます。現時点で利用可能な具体的なアプリとプラットフォームを確認するには、「**[現在、機能はどこで入手できますか?](https://support.office.com/ja-JP/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable)**」を参照してください。
+機密ラベルは、Office アプリの UI に表示されます。現時点で利用可能な具体的なアプリとプラットフォームを確認するには、「**[現在、機能はどこで入手できますか?](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable)**」を参照してください。
 
 ### <a name="office-apps-on-windows"></a>Windows 上の Office アプリ
 
@@ -180,34 +180,32 @@ Windows を実行するデバイス上の Office アプリでは、機密ラベ�
 
 Windows 上の Office アプリの機密ラベルは、近日中にネイティブ サポートされます。
 
-既に Azure Information Protection を使用しているお客様は、機密ラベルをサポートしている Azure Information Protection 統合ラベル付けクライアントを近日中に展開できるようになります。クライアントのダウンロードの詳細については「[Azure Information Protection 統合ラベル付けクライアント: バージョン リリース情報](https://docs.microsoft.com/ja-JP/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)」を参照してください。現在、Windows 上の Office アプリの機密ラベルに対するネイティブ サポートが開発中であり、今後は Azure Information Protection 統合ラベル付けクライアントは不要になります。
+既に Azure Information Protection を使用しているお客様は、機密ラベルをサポートしている Azure Information Protection 統合ラベル付けクライアントを近日中に展開できるようになります。クライアントのダウンロードの詳細については「[Azure Information Protection 統合ラベル付けクライアント: バージョン リリース情報](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)」を参照してください。現在、Windows 上の Office アプリの機密ラベルに対するネイティブ サポートが開発中であり、今後は Azure Information Protection 統合ラベル付けクライアントは不要になります。
 
-![Windows の Excel のリボンに示された [機密] ボタン](media/Sensitivity_label_Sensitivity_button.png)
+![Windows の Excel のリボンに示された [機密] ボタン](media/Sensitivity-label-Sensitivity-button.png)
 
 ### <a name="office-apps-on-mac"></a>Mac 上の Office アプリ
 
 Mac デバイス上の Office アプリでは、機密ラベルはリボンの **[ホーム]** タブにある **[機密]** タブに表示されます。適用されているラベルは、ウィンドウの下側にあるステータス バーにも表示されます。
 
-![Mac 上の Office のリボンに示された [機密] ボタン](media/Sensitivity_label_on_Mac.png)
+![Mac 上の Office のリボンに示された [機密] ボタン](media/Sensitivity-label-on-Mac.png)
 
 ### <a name="office-apps-on-ios"></a>iOS 上の Office アプリ
 
 iOS デバイス上の Office アプリでは、機密ラベルはリボンの **[ホーム]** タブにある **[機密]** ボタンに表示されます。適用されているラベルは、ウィンドウの下側にあるステータス バーにも表示されます。
 
-![iOS 上の Office のリボンに示された [機密] ボタン](media/Sensitivity_label_on_iOS.png)
+![iOS 上の Office のリボンに示された [機密] ボタン](media/Sensitivity-label-on-iOS.png)
 
 ### <a name="office-apps-on-android"></a>Android 上の Office アプリ
 
 Android デバイス上の Office アプリでは、機密ラベルはリボンの **[ホーム]** タブにある **[機密]** タブに表示されます。適用されているラベルは、ウィンドウの下側にあるステータス バーにも表示されます。
 
-![Android 上の Office のリボンに示された [機密] ボタン](media/Sensitivity_label_on_Android.png)
+![Android 上の Office のリボンに示された [機密] ボタン](media/Sensitivity-label-on-Android.png)
 
 ### <a name="more-information-on-sensitivity-labels-in-office-apps"></a>Office アプリの機密ラベルに関する詳細情報
 
-- 
-  [Office 内の文書やメールに機密ラベルを適用する](https://support.office.com/ja-JP/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-- 
-  [Office ファイルに機密ラベルを適用した場合の既知の問題](https://support.office.com/ja-JP/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- [Office 内の文書やメールに機密ラベルを適用する](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+- [Office ファイルに機密ラベルを適用した場合の既知の問題](https://support.office.com/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
 ## <a name="how-sensitivity-labels-work-with-existing-azure-information-protection-labels"></a>機密ラベルが既存の Azure Information Protection ラベルと連動する方法
 
@@ -216,8 +214,7 @@ Azure Information Protection のユーザーは、現在、Azure Information Pro
 - 既存の Azure Information Protection ラベルをドキュメントと電子メールに保持する。
 - 既存の Azure Information Protection ラベル構成を保持する。
 
-Azure Information Protection のラベルを使用している場合、現時点では、移行が完了するまで別の管理センターで新しいラベルを作成することは避けてください。 
-  [Azure Information Protection の移行に関するトピック](https://docs.microsoft.com/ja-JP/azure/information-protection/configure-policy-migrate-labels)には、重要な情報と、いくつかの注意事項が記載されています。 実稼働テナントを機密ラベルに移行する準備がまだ整っていないとしても、心配する必要はありません。今のところは、これまでどおりに、ユーザーが Azure Information Protection クライアントを使用することも、管理者が管理のために Azure portal ポータルを使用することもできます。
+Azure Information Protection のラベルを使用している場合、現時点では、移行が完了するまで別の管理センターで新しいラベルを作成することは避けてください。 [Azure Information Protection の移行に関するトピック](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)には、重要な情報と、いくつかの注意事項が記載されています。 実稼働テナントを機密ラベルに移行する準備がまだ整っていないとしても、心配する必要はありません。今のところは、これまでどおりに、ユーザーが Azure Information Protection クライアントを使用することも、管理者が管理のために Azure portal ポータルを使用することもできます。
 
 ## <a name="protect-content-on-windows-devices-by-using-endpoint-protection-in-microsoft-intune"></a>Microsoft Intune の Endpoint Protection を使用して Windows デバイス上のコンテンツを保護する
 
@@ -229,44 +226,40 @@ Azure Information Protection のラベルを使用している場合、現時点
 
 ユーザーがラベル付きのコンテンツを個人用の Gmail アカウントにアップロードしようとすると、次のメッセージが表示されます。
 
-![ラベル付きのコンテンツは Gmail にコピーできないことを示すメッセージ](media/Sensitivity_label_WIP_Gmail.png)
+![ラベル付きのコンテンツは Gmail にコピーできないことを示すメッセージ](media/Sensitivity-label-WIP-Gmail.png)
 
 また、ユーザーがラベル付きのコンテンツを USB ドライブに保存しようとすると、次のメッセージが表示されます。
 
-![ラベル付きのコンテンツは USB ドライブにコピーできないことを示すメッセージ](media/Sensitivity_label_WIP_USB_drive.png)
+![ラベル付きのコンテンツは USB ドライブにコピーできないことを示すメッセージ](media/Sensitivity-label-WIP-USB-drive.png)
 
 ### <a name="important-prerequisites"></a>重要な前提条件
 
-機密ラベルで WIP が使用できるようにするには、まず、「[Windows 情報保護で機密ラベル付きのファイルを保護する方法](https://docs.microsoft.com/ja-JP/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)」で説明する前提条件を満たしておく必要があります。このトピックには、次の前提条件についての説明があります。
+機密ラベルで WIP が使用できるようにするには、まず、「[Windows 情報保護で機密ラベル付きのファイルを保護する方法](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)」で説明する前提条件を満たしておく必要があります。このトピックには、次の前提条件についての説明があります。
 
 - Windows 10 バージョン 1809 以降を実行していることを確認する。
-- 
-  [Windows Defender Advanced Threat Protection (WDATP) をセットアップする。](https://docs.microsoft.com/ja-JP/windows/security/threat-protection/windows-defender-atp/get-started)これにより、ラベルについてコンテンツがスキャンされ、それに対応する WIP 保護が適用されます。ATP は、いくつかのアクション (異常の報告など) を WIP とは無関係に実行します。
+- 「[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) のセットアップ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-started)」では、ラベルのコンテンツをスキャンして、対応する WIP 保護を適用します。 ATP では、異常の報告など、WIP と独立した複数の操作が実行されます。
 - エンドポイント デバイスに適用する Windows 情報保護 (WIP) ポリシーを作成する。次のいずれかの方法で作成することができます。
-    - 
-  [Microsoft Intune の Azure portal を使用して MDM で Windows 情報保護 (WIP) ポリシーを作成する](https://docs.microsoft.com/ja-JP/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
-    - 
-  [System Center Configuration Manager を使用した Windows 情報保護 (WIP) ポリシーの作成と展開](https://docs.microsoft.com/ja-JP/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
+    - [Microsoft Intune の Azure portal を使用して MDM で Windows 情報保護 (WIP) ポリシーを作成する](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
+    - [System Center Configuration Manager を使用した Windows 情報保護 (WIP) ポリシーの作成と展開](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
 
 ## <a name="protect-content-in-third-party-apps-and-services-by-using-microsoft-cloud-app-security"></a>Microsoft Cloud App Security を使用してサード パーティ製アプリおよびサービスのコンテンツを保護する
 
 Cloud App Security (CAS) を使用してサード パーティ製アプリおよびサービスのコンテンツを保護します。 Cloud App Security を使用すると、サード パーティ製サービスおよびアプリ (SalesForce、Box、Dropbox など) のコンテンツを検出、分類、ラベル適用、および保護できます。 たとえば、Dropbox で機密ラベルを認識できい場合でも、CAS はその場所にあるラベル付きコンテンツにアクセスして保護することができます。
 
-詳細については、「[Azure Information Protection 分類ラベルを自動的に適用する](https://docs.microsoft.com/ja-JP/cloud-app-security/use-case-information-protection)」を参照してください。
+詳細については、「[Azure Information Protection 分類ラベルを自動的に適用する](https://docs.microsoft.com/cloud-app-security/use-case-information-protection)」を参照してください。
 
 ### <a name="important-prerequisites"></a>重要な前提条件
 
-機密ラベルで CAS を使用できるようにするには、まず、「[Azure Information Protection 分類ラベルを自動的に適用する](https://docs.microsoft.com/ja-JP/cloud-app-security/use-case-information-protection)」で説明する前提条件を満たしておく必要があります。 このトピックには、次の前提条件についての説明があります。
+機密ラベルで CAS を使用できるようにするには、まず、「[Azure Information Protection 分類ラベルを自動的に適用する](https://docs.microsoft.com/cloud-app-security/use-case-information-protection)」で説明する前提条件を満たしておく必要があります。 このトピックには、次の前提条件についての説明があります。
 
-- テナントに対する [Cloud App Security と Azure Information Protection を有効にする](https://docs.microsoft.com/ja-JP/cloud-app-security/azip-integration)。
-- Cloud App Security に[アプリを接続する](https://docs.microsoft.com/ja-JP/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps)。
+- テナントに対する [Cloud App Security と Azure Information Protection を有効にする](https://docs.microsoft.com/cloud-app-security/azip-integration)。
+- Cloud App Security に[アプリを接続する](https://docs.microsoft.com/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps)。
 
 ## <a name="extend-sensitivity-labels-to-third-party-apps-and-services-by-using-the-microsoft-information-protection-sdk"></a>Microsoft Information Protection SDK を使用して機密ラベルをサード パーティ製アプリおよびサービスに拡張する
 
 機密ラベルはクリア テキストとしてドキュメントのメタデータ内に存在するため、そうしたラベルを含むコンテンツの識別と保護をサード パーティ製アプリとサービスでサポートすることもできます。その他のアプリとサービスでのサポートは常に拡張中です。
 
-
-  [Microsoft Information Protection SDK](https://docs.microsoft.com/ja-JP/information-protection/develop/) を使用すると、サード パーティ製アプリおよびサービスで機密ラベルの読み取りおよび適用が可能になり、ドキュメントを保護できるようになります。近日中には、iOS および Android もサポートされます。
+[Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/) を使用すると、サード パーティ製アプリおよびサービスで機密ラベルの読み取りおよび適用が可能になり、ドキュメントを保護できるようになります。近日中には、iOS および Android もサポートされます。
 
 この SDK を使用することで、その他の Microsoft 情報保護アプリおよびサービス (Office アプリ、Office 365 サービス、Azure Information Protection スキャナー、Microsoft Cloud App Security などと、その他いくつかのパートナーのソリューション) での操作方法でコンテンツのラベル付けと保護が可能になります。その例として、[Adobe Acrobat での機密ラベルのサポート](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Starting-October-use-Adobe-Acrobat-Reader-for-PDFs-protected-by/ba-p/262738)について調べてください。
 
