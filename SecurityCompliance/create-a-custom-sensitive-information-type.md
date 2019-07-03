@@ -1,11 +1,12 @@
 ---
-title: カスタムの機密情報の種類を作成する
+title: セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.date: 04/17/2019
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -13,54 +14,26 @@ search.appverid:
 - MOE150
 - MET150
 description: セキュリティ/コンプライアンス センターのグラフィカル ユーザー インターフェイスで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする方法について説明します。
-ms.openlocfilehash: de7bbc8ee624fe9468dc64a9811db31d529984bf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 55e54bf8b49ec21bb5ed4f161efc4e5924ee52fb
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258309"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077743"
 ---
-# <a name="create-a-custom-sensitive-information-type"></a>カスタムの機密情報の種類を作成する
+# <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する
 
-Office 365 のデータ損失防止 (DLP) には、DLP ポリシーですぐに使用できる組み込みの[機密情報の種類](what-the-sensitive-information-types-look-for.md)が多数含まれています。これらの組み込みの種類は、クレジット カード番号、銀行口座番号、パスポート番号などの特定と保護に役立ちます。 
+## <a name="summary"></a>概要
 
-ただし、組織に固有の形式を使用する従業員 ID やプロジェクト番号など、さまざまな種類の機密情報を特定して保護する必要がある場合は、カスタムの機密情報の種類を作成することができます。
+セキュリティ/コンプライアンス センターで[カスタムの機密情報の種類](custom-sensitive-info-types.md)を作成するために、この記事をお読みください(「[https://protection.office.com](https://protection.office.com)」)。 この方法を使用して作成されるカスタムの機密情報の種類は、`Microsoft.SCCManaged.CustomRulePack`という名前のルール パッケージに追加されます。
 
-カスタムの機密情報の種類の基本的な部分は次のとおりです。
+PowerShell および Exact Data Match の機能を使用して、カスタムの機密情報の種類を作成することもできます。 これらの方法の詳細については、次を参照してください。
+- [セキュリティ/コンプライアンス センター PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Exact Data Match (EMD) を使用して、DPL 向けのカスタムの機密情報の種類を作成する](create-custom-sensitive-info-type-edm.md)
 
-- **プライマリ パターン**: 従業員 ID 番号、プロジェクト番号など。これは通常、正規表現 (RegEx) によって識別されますが、キーワード リストにもできます。
+## <a name="before-you-begin"></a>開始する前に
 
-- **追加の証拠**: 9 桁の従業員 ID 番号を探していると仮定します。9 桁の数字がすべて従業員 ID 番号ではないので、「従業員」、「社員証」、「ID」などのキーワードや追加の正規表現を基にして、別のテキスト パターンを検索できます。この補強証拠 (_補強_または_裏付け_証拠とも呼ばれる) は、コンテンツに含まれる 9 桁の数字が実際に従業員 ID 番号である可能性を高めます。
-
-- **文字の近接**: プライマリ パターンと補強証拠が互いに近いほど、検出されたコンテンツが探しているものになる可能性が高くなります。次の図に示すように、プライマリ パターンと補強証拠との文字の距離 (_近接ウィンドウ_とも呼ばれる) を指定できます。
-
-    ![補強証拠と近接ウィンドウの図](media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
-
-- **信頼レベル**: 持っている補強証拠が多ければ多いほど、探している機密情報と一致する可能性が高くなります。より多くの証拠を使用して検出された一致には、より高いレベルの信頼を割り当てることができます。
-
-  パターンを満たす場合は、数と信頼度が返され、DLP ポリシーの条件に使用できます。機密情報の種類を検出する条件を DLP ポリシーに追加する場合、次の図に示すように、数と信頼度を編集できます。
-
-    ![インスタンス数と一致精度オプション](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
-
-次のオプションを使用して、セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成できます。
-
-- **UI を使用**: この方法は簡単で高速ですが、PowerShell よりも構成オプションが少なくなります。このトピックの残りの部分では、これらの手順について説明します。
-
-- **PowerShell を使用**: この方法では、まず機密情報の種類を 1 つ以上含む XML ファイル (_ルール パッケージ_と呼ばれる) を作成し、次に、PowerShell を使用してルール パッケージをインポートします (ルール パッケージのインポートは、ルール パッケージの作成と比べて簡単です)。この方法は UI より格段複雑ですが、より多くの構成オプションを使用できます。手順については、「[セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)」を参照してください。
-
-次の表で主な違いについて説明します。
-
-|**UI でのカスタムの機密情報の種類**|**PowerShell でのカスタムの機密情報の種類**|
-|:-----|:-----|
-|名前と説明は 1 つの言語。|名前と説明は複数の言語をサポート。|
-|1 つのパターンをサポート。|複数のパターンをサポート。|
-|補強証拠は次のものにできます。 <br/>• 正規表現 <br/>• キーワード <br/>• キーワード辞書|補強証拠は次のものにできます。 <br/>• 正規表現 <br/>• キーワード <br/>• キーワード辞書 <br/>• [組み込み DLP 関数](what-the-dlp-functions-look-for.md)|
-|カスタムの機密情報の種類が Microsoft.SCCManaged.CustomRulePack という名前のルール パッケージに追加されます。|カスタムの機密情報の種類を含む最大 10 個のルール パッケージを作成することができます。|
-|パターンの一致には、プライマリ パターンとすべての補強証拠 (暗黙の AND 演算子を使用) の検出が必要です。|パターンの一致には、プライマリ パターンと構成可能な補強証拠の量 (暗黙の AND および OR 演算子が使用可能) の検出が必要です。|
-
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
-
-- セキュリティ/コンプライアンス センターを開くには、「[セキュリティ/コンプライアンス センターに移動する](go-to-the-securitycompliance-center.md)」を参照してください。
+- 組織には、データ損失防止 (DLP) を含む Office 365 Enterprise などのサブスクリプションが必要です。 [メッセージング ポリシーとコンプライアンス サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc)を参照してください。 
 
 - カスタムの機密情報の種類では、正規表現 (RegEx) に精通している必要があります。テキストの処理に使用される Boost.RegEx (旧称 RegEx++) エンジンの詳細については、「[Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)」を参照してください。
 

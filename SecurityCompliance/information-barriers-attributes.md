@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: この記事は、情報バリアポリシーで使用できるさまざまな属性の参照として使用します。
-ms.openlocfilehash: 896b87a3ccc696d3a8193e37237fe555d326ca52
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 1537dae2c99555a9257bbe5c3f9754a1f975fbbe
+ms.sourcegitcommit: 8f399f260687d17a497a15bcc644187c277ea8fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394312"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "35462408"
 ---
 # <a name="attributes-for-information-barrier-policies-preview"></a>情報バリアポリシーの属性 (プレビュー)
 
@@ -35,9 +35,9 @@ Azure Active Directory の特定の属性を使用して、ユーザーをセグ
 
 2. 手順1で選択した属性に対して、ユーザーアカウントに値が入力されていることを確認します。 ユーザーアカウントの詳細を表示し、必要に応じて、属性値を含めるようにユーザーアカウントを編集します。 
 
-    PowerShell を使用してこれを行うには、「 [Configure user account properties With Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)」を参照してください。
+    - 複数のアカウントを編集する (または PowerShell を使用して1つのアカウントを編集する) には、「 [Office 365 powershell でユーザーアカウントのプロパティを構成](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)する」を参照してください。
 
-    Azure Active Directory でこれを行うには、「 [Azure Active directory を使用してユーザーのプロファイル情報を追加または更新](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)する」を参照してください。
+    - 単一のアカウントを編集するには、「 [Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)する」を参照してください。
 
 3. 次の例に示すように、 [PowerShell を使用してセグメントを定義](information-barriers-policies.md#define-segments-using-powershell)します。
 
@@ -54,7 +54,7 @@ Azure Active Directory の特定の属性を使用して、ユーザーをセグ
 
 次の表に、情報バリアで使用できる属性を示します。
 
-|Azure Active Directory のプロパティ名 (LDAP 表示名)  |Exchange のプロパティ名  |
+|Azure Active Directory のプロパティ名<br/>(LDAP 表示名)  |Exchange のプロパティ名  |
 |---------|---------|
 |産品       | 産品        |
 |Company     |Company         |
