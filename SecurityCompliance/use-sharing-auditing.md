@@ -3,7 +3,7 @@ title: 共有を監査して外部ユーザーと共有されているリソー�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 2/13/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: '共有は、SharePoint Online と OneDrive for business の主要なアクティビティです。 管理者は、Office 365 監査ログで共有監査を使用して、組織での共有の使用状況を確認できるようになりました。 '
-ms.openlocfilehash: a363ebe2e8b1697521ab5f84df0b3fc221a2abcd
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e2865d35e988d8c0e42a6c51f78507db8b170d4c
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157899"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435243"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>共有を監査して外部ユーザーと共有されているリソースを見つける
 
@@ -32,9 +32,9 @@ ms.locfileid: "34157899"
   
 共有スキーマは、イベントの共有に関連する2つの追加フィールドを監査ログに提供します。 
   
-- **Targetuserorgroupname** -リソースが共有されていたターゲットユーザーまたはグループの UPN または名前を格納します (前の例では user B)。 
+- **Targetuserorgroupname** –リソースが共有されていた対象ユーザーまたはグループの UPN または名前を格納します (前の例では、ユーザー B)。 
     
-- **TargetUserOrGroupType** -対象のユーザーまたはグループが、メンバー、ゲスト、グループ、またはパートナーであるかどうかを識別します。 
+- **TargetUserOrGroupType** –対象のユーザーまたはグループが、メンバー、ゲスト、グループ、またはパートナーであるかどうかを識別します。 
     
 これら2つのフィールドは、ユーザー、操作、日付などの Office 365 監査ログスキーマの他のプロパティに加えて、*どの*ユーザーがどのリソースを*どのよう*な** *とき*に共有したかについての完全なストーリーを伝えることができます。 
   
@@ -42,7 +42,7 @@ ms.locfileid: "34157899"
 
 ## <a name="the-sharepoint-sharing-model-and-sharing-events"></a>SharePoint 共有モデルと共有イベント
 
-共有は、実際には、 **Sharingset**、 **SharingInvitationCreated**、および**SharingInvitaitonAccepted**の3つの個別のイベントによって定義されます。 Office 365 監査ログに共有イベントを記録する方法については、次のワークフローを参照してください。 
+共有は、 **Sharingset**、 **SharingInvitationCreated**、および**SharingInvitaitonAccepted**の3つの個別のイベントによって定義されます。 Office 365 監査ログに共有イベントを記録する方法については、次のワークフローを参照してください。 
   
 ![共有の監査のしくみを示すフローチャート](media/d83dd40f-919b-484f-bfd6-5dc8de31bff6.png)
   
@@ -73,7 +73,7 @@ ms.locfileid: "34157899"
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>手順 1: 共有イベントを検索し、結果を CSV ファイルにエクスポートする
 
-最初の手順として、Office 365 監査ログで共有イベントを検索します。 監査ログの検索に関する詳細 (必要なアクセス許可を含む) については、「 [Security _AMP_ コンプライアンスセンターでの監査ログの検索](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
+最初の手順として、Office 365 監査ログで共有イベントを検索します。 監査ログの検索に関する詳細 (必要なアクセス許可を含む) については、「[セキュリティ & のコンプライアンスセンターでの監査ログの検索](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
   
 1. [https://protection.office.com](https://protection.office.com) に移動します。
     
@@ -83,9 +83,9 @@ ms.locfileid: "34157899"
     
     [**監査ログの検索**] ページが表示されます。 
     
-4. [**アクティビティ**] の [**共有アクティビティ**] をクリックして、共有イベントのみを検索します。 
+4. [**アクティビティ**] の下の [**共有とアクセス要求アクティビティ**] をクリックして、共有関連イベントを検索します。 
     
-    ![[アクティビティ] で、[共有アクティビティ] を選択します。](media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
+    ![[アクティビティ] の下で、[共有とアクセスの要求のアクティビティ] を選択します。](media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
 5.  日付と時刻の範囲を選択して、その期間内に発生した共有イベントを検索します。 
     
@@ -96,54 +96,24 @@ ms.locfileid: "34157899"
     [エクスポート] オプションを選択すると、CSV ファイルを開いたり保存したりするように求めるメッセージがウィンドウの下部に表示されます。
     
 8. [名前を付け**て**保存] をクリックし、CSV ファイルをローカルコンピューター上のフォルダーに保存します。 **** \> 
-    
 
-  
 ### <a name="step-2-filter-the-csv-file-for-resources-shared-with-external-users"></a>手順 2: 外部ユーザーと共有しているリソースの CSV ファイルをフィルター処理する
 
-次の手順では、 **Sharingset**イベントと**SharingInvitationCreated**イベントに対して CSV をフィルター処理し、 **TargetUserOrGroupType**プロパティが**Guest**であるイベントを表示します。 これを行うには、Excel の Power Query 機能を使用します。 Excel 2016 では、次の手順が実行されます。 
-  
-1. Excel 2016 で、空のブックを開きます。
+次の手順では、 **Sharingset**イベントと**SharingInvitationCreated**イベントに対して CSV をフィルター処理し、 **TargetUserOrGroupType**プロパティが**Guest**であるイベントを表示します。 これを行うには、Excel の Power Query Editor ツールを使用します。 詳細な手順については、「 [Export, configure, and view audit log records](export-view-audit-log-records.md)」を参照してください。 
+
+前のトピックの手順に従って CSV ファイルを準備した後、次の操作を行います。
     
-2. [**データ**] タブをクリックします。 
+1. Power Query Editor で準備した CSV ファイルを開きます。 
+
+2. [**ホーム**] タブで、[**並べ替え & フィルター**] をクリックし、[**フィルター**] をクリックします。
     
-3. [ \> **ファイルからの****新しいクエリ** \> ]**を [CSV から] を**クリックします。
-    
-    ![[データ] タブで、[新しいクエリ] を選択し、[ファイルから] を選択してから、[CSV から] を選択します。](media/5170ab34-b449-40ea-bd3f-f1432c1c5973.png)
-  
-4. 手順1でダウンロードした CSV ファイルを開きます。
-    
-    CSV ファイルがクエリエディターで開かれます。 **Time**、 **User**、 **Action**、 **Detail**という4つの列があることに注意してください。 **詳細**列は複数のプロパティフィールドです。 次の手順では、**詳細**列の各プロパティに対して新しい列を作成します。 
-    
-5. **詳細**列を選択し、[**ホーム**] タブの [**区切り記号で****列** \>を分割] をクリックします。
-    
-    ![[ホーム] タブの [分割列] をクリックし、[区切り記号] をクリックします。](media/aeb503e8-565b-42ea-91e2-9f127a74c00c.png)
-  
-6. [**区切り記号で分割**した列] ウィンドウで、次の操作を行います。 
-    
-      - [ **Select or enter delimiter**] で、[**コンマ**] を選択します。
-    
-      - [**分割**] で、**区切り記号が出現するたびに**[] を選択します。
-    
-7. **[OK]** をクリックします。
-    
-    **詳細**列は複数の列に分割されます。 各新しい列には、詳細について説明します。 **1**、 **2**、 **3**というように指定します。 詳細については、各セルの値を確認**してください。 n**列の先頭には、プロパティの名前が付きます。たとえば、 **operation: SharingSet**、 **operation: SharingInvitationAccepted**、 **operation: SharingInvitationCreated**。
-    
-    ![詳細列は、プロパティごとに1つずつ、複数の列に分割されます。](media/4b104ead-0313-4bd4-b2a9-f143ccb378ac.png)
-  
-8. [**ファイル**] タブの [**読み込み&amp;を閉じる**] をクリックして、クエリエディターを閉じ、Excel ブックでファイルを開きます。 
-    
-    次の手順では、 **Sharingset**および**SharingInvitationCreated**イベントのみを表示するようにファイルをフィルター処理します。 
-    
-9. [**ホーム**] タブに移動して、[**アクション**] 列を選択します。 
-    
-10. [**並べ替え&amp;フィルター** ] ドロップダウンリストで、すべての選択を解除し、[ **Sharingset** ] と [ **SharingInvitationCreated**] を選択して、[ **OK]** をクリックします。
+3. [**操作**] 列の [ **& フィルターの並べ替え**] ドロップダウンリストで、すべての選択を解除し、[ **Sharingset** ] と [ **SharingInvitationCreated**] を選択して、[ **OK**] をクリックします。
     
     **Sharingset**および**SharingInvitationCreated**イベントの行が Excel に表示されます。 
     
-11. [ **Detail** ] (または [ **TargetUserOrGroupType** ] プロパティを含む列) という名前の列に移動し、それを選択します。 
+4. **TargetUserOrGroupType**という名前の列に移動し、それを選択します。 
     
-12. [**並べ替え&amp;フィルター** ] ドロップダウンリストで、すべての選択を解除し、[ **TargetUserOrGroupType: Guest**] を選択して、[ **OK**] をクリックします。
+5. [**並べ替え & フィルター** ] ドロップダウンリストで、すべての選択をオフにし、[ **TargetUserOrGroupType: Guest**] を選択して、[ **OK**] をクリックします。
     
     ここでは、外部ユーザーが**TargetUserOrGroupType: Guest**という値で識別されるため、 **SharingInvitationCreated**および**SHARINGSET**イベントの行と、ターゲットユーザーが組織外にある場所に表示されます。 
     
@@ -151,7 +121,7 @@ ms.locfileid: "34157899"
   
 ![Office での共有イベント365監査ログ](media/0e0ecbe3-c794-4ca6-a2ca-63478fb3bb34.png)
   
-上記の表には含まれていませんが、 **10**列 (または**ObjectId**プロパティを含む列) は、ターゲットユーザーと共有していたリソースを識別します。例`ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`を示します。
+**ObjectId**プロパティは、前の表には含まれていませんが、ターゲットユーザーと共有されたリソースを識別します。例`ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`を示します。
   
 > [!TIP]
-> ゲストユーザーが実際にリソースにアクセスするためのアクセス許可が割り当てられているかどうかを確認するには (リソースと共有しているリソースだけでなく)、手順10、11、12を繰り返し、 **SharingInvitationAccepted**と sharingset でフィルター処理します。 **** 手順10のイベント 
+> ゲストユーザーが実際にリソースにアクセスするためのアクセス許可が割り当てられているかどうかを確認するには (リソースと共有しているリソースだけでなく)、手順2、3、4を繰り返し、 **SharingInvitationAccepted**と**sharingset**でフィルター処理します。手順5のイベント 

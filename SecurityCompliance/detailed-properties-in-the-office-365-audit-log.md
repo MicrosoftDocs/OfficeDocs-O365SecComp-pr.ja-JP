@@ -15,13 +15,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
-description: Office 365 監査ログ レコードに含まれている追加のプロパティについて説明します。
-ms.openlocfilehash: 8ce85ea452389b0d8239de88730acd6039cc02be
-ms.sourcegitcommit: a6968df6e47ab5733a995f1efdc6e3676c5b5d7b
+description: Office 365 監査ログレコードに含まれるその他のプロパティについて説明します。
+ms.openlocfilehash: 00f2eb2a9259247085973642b317ffbca8ba064a
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35253936"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435157"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Office 365 監査ログの詳細なプロパティ
 
@@ -29,7 +29,7 @@ ms.locfileid: "35253936"
   
  監査ログ検索のすべての結果をエクスポートすると、Office 365 統合監査ログの生データは、ローカルコンピューターにダウンロードされるコンマ区切り値 (CSV) ファイルにコピーされます。 このファイルには、 **Auditdata**という列の各監査レコードからの追加情報が含まれています。 この列には、監査ログレコードからの複数のプロパティの複数値プロパティが含まれています。 この複数値のプロパティの**プロパティ: 値**のペアは、コンマで区切られています。 
   
-次の表では、イベントが発生する Office 365 サービスに応じて、マルチプロパティの**Auditdata**列に含まれるプロパティについて説明します。 **このプロパティ列を持つ Office 365 サービス**は、プロパティを含むアクティビティ (ユーザーまたは管理者) のサービスと種類を示します。 これらのプロパティまたはこのトピックに記載されていない可能性のあるプロパティの詳細については、「 [Office 365 Management ACTIVITY API Schema](https://go.microsoft.com/fwlink/p/?LinkId=717993)」を参照してください。
+次の表では、マルチプロパティの**Auditdata**列に含まれる Office 365 サービスに応じて、イベントが発生するプロパティについて説明します。 **このプロパティ列を持つ Office 365 サービス**は、プロパティを含むアクティビティ (ユーザーまたは管理者) のサービスと種類を示します。 これらのプロパティまたはこのトピックに記載されていない可能性のあるプロパティの詳細については、「 [Office 365 Management ACTIVITY API Schema](https://go.microsoft.com/fwlink/p/?LinkId=717993)」を参照してください。
   
 > [!TIP]
 > Excel で Power Query を使用すると、この列を複数の列に分割して、それぞれのプロパティを個別の列に表示できます。このように分割すると、1 つまたは複数のプロパティに基づく並び替えやフィルター処理が可能になります。分割方法については、「[テキストの列を分割する (Power Query)](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662)」のセクション「列を区切り記号で分割する」をご覧ください。 
@@ -37,7 +37,7 @@ ms.locfileid: "35253936"
 |**プロパティ**|**説明**|**このプロパティを使用する Office 365 サービス**|
 |:-----|:-----|:-----|
 |Actor|アクションを実行したユーザーまたはサービス アカウント。|Azure Active Directory|
-|AddOnName|チームで追加、削除、または更新されたアドオンの名前。Microsoft Teams でのアドオンの種類は、ボット、コネクタ、またはタブです。|Microsoft Teams|
+|AddOnName|チーム内で追加、削除、または更新されたアドオンの名前。 Microsoft Teams のアドオンの種類は、ボット、コネクタ、またはタブです。|Microsoft Teams|
 |AddOnType|チームで追加、削除、または更新されたアドオンの種類。次の値によって、アドオンの種類が示されます。<br/> **1** -ボットを意味します。<br/> **2** -コネクタを意味します。<br/> **3** -タブを意味します。|Microsoft Teams|
 |AzureActiveDirectoryEventType|Azure Active Directory のイベントの種類。次の値によって、イベントの種類が示されます。<br/> **0** - アカウント ログイン イベントを意味します。<br/> **1** - Azure アプリケーション セキュリティ イベントを意味します。|Azure Active Directory|
 |ChannelGuid|Microsoft Teams のチャネルの ID。チャネルが置かれているチームは、**TeamName** プロパティと **TeamGuid** プロパティによって識別されます。|Microsoft Teams|
@@ -49,7 +49,7 @@ ms.locfileid: "35253936"
 |CreationTime|ユーザーがアクティビティを実行した、世界協定時刻 (UTC) での日時。|すべて|
 |DestinationFileExtension|コピーまたは移動されたファイルのファイル拡張子。このプロパティは、FileCopied および FileMoved ユーザー アクティビティに対してのみ表示されます。|SharePoint|
 |DestinationFileName|コピーまたは移動されたファイルの名前。このプロパティは、FileCopied および FileMoved アクションに対してのみ表示されます。|SharePoint|
-|DestinationRelativeUrl|ファイルのコピー先または移動先フォルダーの URL。**SiteURL**、**DestinationRelativeURL**、および **DestinationFileName** プロパティの値の組み合わせは、**ObjectID** プロパティの値と同じであり、コピーされたファイルの完全パス名です。このプロパティは、FileCopied および FileMoved ユーザー アクティビティに対してのみ表示されます。|SharePoint|
+|DestinationRelativeUrl|ファイルをコピーまたは移動する先のフォルダーの URL。 **SiteURL**、 **DestinationRelativeURL**、および**destinationfilename**の各プロパティの値の組み合わせは、コピーされたファイルの完全なパス名である**ObjectID**プロパティの値と同じです。 このプロパティは、FileCopied と FileMoved のユーザーアクティビティに対してのみ表示されます。|SharePoint|
 |EventSource|SharePoint でイベントが発生したことを示します。有効な値は、**SharePoint** と **ObjectModel** です。|SharePoint|
 |ExternalAccess|Exchange 管理者のアクティビティの場合は、組織内のユーザー、Microsoft データセンター担当者またはデータセンター サービス アカウント、あるいは代理管理者によってコマンドレットが実行されたことを示します。値 **False** は、コマンドレットが組織内のユーザーによって実行されたことを意味します。値 **True** は、コマンドレットがデータセンター担当者、データセンター サービス アカウント、または代理管理者によって実行されたことを意味します。<br/> Exchange メールボックス アクティビティの場合は、メールボックスにアクセスしたのが組織外のユーザーであるかどうかを示します。|Exchange|
 |ExtendedProperties|Azure Active Directory イベントの拡張プロパティ。|Azure Active Directory|
@@ -75,9 +75,9 @@ ms.locfileid: "35253936"
 |SiteUrl|ユーザーがアクセスしたファイルまたはフォルダーが置かれているサイトの URL。|SharePoint|
 |SourceFileExtension|ユーザーがアクセスしたファイルのファイル拡張子。このプロパティは、アクセスされたオブジェクトがフォルダーの場合には、空白になります。|SharePoint|
 |SourceFileName|ユーザーがアクセスしたファイルまたはフォルダーの名前。|SharePoint|
-|SourceRelativeUrl|ユーザーがアクセスしたファイルが格納されているフォルダーの URL。**SiteURL**、**SourceRelativeURL**、および **SourceFileName** のプロパティの値の組み合わせは、**ObjectID** プロパティの値と同じであり、ユーザーがアクセスしたファイルの完全パス名です。|SharePoint|
+|SourceRelativeUrl|ユーザーによってアクセスされるファイルを含むフォルダーの URL。 **SiteURL**、 **SourceRelativeURL**、および**sourcefilename**プロパティの値の組み合わせは、ユーザーによってアクセスされるファイルの完全なパス名である**ObjectID**プロパティの値と同じです。|SharePoint|
 |Subject|アクセスされたメッセージの件名。|Exchange (メールボックス アクティビティ)|
-|TabType| チームで追加、削除、または更新されたタブの種類。このプロパティの有効な値は次のとおりです。<br/><br/> **Excelpin** - Excel のタブ。  <br/> **Extension** - すべてのファースト パーティおよびサード パーティのアプリ (Planner、VSTS、Forms など)。  <br/> **Notes** - OneNote のタブ。  <br/> **Pdfpin** - PDF のタブ。  <br/> **Powerbi** - PowerBI のタブ。  <br/> **Powerpointpin** - PowerPoint のタブ。  <br/> **Sharepointfiles** - SharePoint のタブ。  <br/> **Webpage** - ピン留めされた Web サイトのタブ。  <br/> **Wiki-tab** - Wiki のタブ。  <br/> **Wordpin** - Word のタブ。|Microsoft Teams|
+|TabType| チームで追加、削除、または更新されたタブの種類。このプロパティの有効な値は次のとおりです。<br/><br/> **Excel の pin** -excel のタブ。  <br/> **拡張機能**-すべてのファーストパーティアプリとサードパーティアプリ。クラススケジュール、VSTS、フォームなど。  <br/> **Notes** - OneNote のタブ。  <br/> **Pdfpin** - PDF のタブ。  <br/> **Powerbi** - PowerBI のタブ。  <br/> **Powerpointpin** - PowerPoint のタブ。  <br/> **Sharepointfiles** - SharePoint のタブ。  <br/> **Webpage** - ピン留めされた Web サイトのタブ。  <br/> **Wiki-tab** - Wiki のタブ。  <br/> **Wordpin** - Word のタブ。|Microsoft Teams|
 |Target|(**Operation** プロパティで識別された) アクションの実行対象となったユーザー。たとえば、SharePoint または Microsoft Team にゲスト ユーザーが追加されると、このプロパティにそのユーザーが一覧表示されます。|Azure Active Directory|
 |TeamGuid|Microsoft Teams のチームの ID。|Microsoft Teams|
 |TeamName|Microsoft Teams のチームの名前。|Microsoft Teams|

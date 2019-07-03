@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: Office 365 または Microsoft 365 のセキュリティ/コンプライアンスセンターで一括検索エディターを使用して、1つまたは複数のコンテンツ検索のクエリとコンテンツの場所をすばやく変更できます。
-ms.openlocfilehash: d4f79cc323b752d020606e22ff72a47bc03e9ae9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 69d2a40a28fd435873eae9b19ad2c8ad1e25d27c
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152219"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435117"
 ---
 # <a name="bulk-edit-content-searches"></a>コンテンツ検索を一括編集する
 
@@ -92,7 +92,7 @@ ms.locfileid: "34152219"
 - テキストファイルまたは Excel ファイルから複数の行をコピーし、[**場所**] ページのセクションに貼り付けると、複数のコンテンツの場所を1つ以上の検索に追加できます。 新しい場所を追加した後、場所を追加する検索のチェックボックスを必ずオンにします。 
     
     > [!TIP]
-    > 組織内のすべてのユーザーの電子メールアドレスの一覧を生成するには、「コンテンツ検索を使用する」の手順2で PowerShell コマンドを実行し、[メールボックスと OneDrive For business サイトでユーザーの一覧を検索](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step2)します。 または、「[組織内のすべての onedrive の場所の一覧を作成](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a)する」のスクリプトを使用して、組織内のすべての Onedrive for business サイトの一覧を生成します。 自分の組織の個人用サイトドメイン (たとえば、スクリプトで作成された OneDrive for Business サイトhttps://contoso-my.sharepoint.com) ) の URL を追加する必要があることに注意してください。 電子メールアドレスまたは OneDrive for Business サイトの一覧を作成した後、それらを一括検索エディターの [**場所**] ページにコピーして貼り付けることができます。 
+    > 組織内のすべてのユーザーの電子メールアドレスの一覧を生成するには、「[手順 2: ユーザーのリストを生成](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step-2-generate-a-list-of-users)する」の手順2で PowerShell コマンドを実行します。 または、組織内のすべての OneDrive for business サイトの一覧を生成するには、「[組織内のすべてのユーザーの onedrive の url の一覧を取得](https://docs.microsoft.com/onedrive/list-onedrive-urls)する」の手順を実行します。 組織の個人用サイトドメインの URL (たとえば、スクリプトによって作成された OneDrive https://contoso-my.sharepoint.com) for business サイト) を追加する必要があることに注意してください。 電子メールアドレスまたは OneDrive for Business サイトの一覧を作成した後、それらを一括検索エディターの [**場所**] ページにコピーして貼り付けることができます。 
   
 - [**保存**] をクリックして変更を一括検索エディターに保存すると、検索に追加したメールボックスの電子メールアドレスが検証されます。 メールアドレスが存在しない場合は、メールボックスが見つからないというエラーメッセージが表示されます。 サイトの Url は検証されていないことに注意してください。 
   
