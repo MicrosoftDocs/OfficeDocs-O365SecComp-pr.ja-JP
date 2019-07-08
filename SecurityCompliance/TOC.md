@@ -103,6 +103,7 @@
 #### [サンプルコネクタを使用して Facebook のデータをアーカイブする](archive-facebook-data-with-sample-connector.md)
 #### [サンプル コネクタを使用して Twitter のデータをアーカイブする](archive-twitter-data-with-sample-connector.md)
 #### [コネクタをセットアップして LinkedIn データをアーカイブする](archive-linkedin-data.md)
+#### [コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする](archive-instant-bloomberg-data.md)
 #### [パートナーと共同作業でサードパーティーのデータをアーカイブする](work-with-partner-to-archive-third-party-data.md)
 ## データを格納する
 ### [アーカイブ メールボックスの有効化](enable-archive-mailboxes.md)
@@ -245,6 +246,7 @@
 #### [サンプルコネクタを使用して Facebook のデータをアーカイブする](archive-facebook-data-with-sample-connector.md)
 #### [サンプル コネクタを使用して Twitter のデータをアーカイブする](archive-twitter-data-with-sample-connector.md)
 #### [コネクタをセットアップして LinkedIn データをアーカイブする](archive-linkedin-data.md)
+#### [コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする](archive-instant-bloomberg-data.md)
 #### [パートナーと共同作業でサードパーティーのデータをアーカイブする](work-with-partner-to-archive-third-party-data.md)
 ## データを格納する
 ### [アーカイブ メールボックスの有効化](enable-archive-mailboxes.md)
@@ -482,6 +484,7 @@
 ## [監査ログ検索を有効または無効にする](turn-audit-log-search-on-or-off.md)
 ## [メールボックスの監査を管理する](enable-mailbox-auditing.md)
 ## [監査ログの詳細なプロパティ](detailed-properties-in-the-office-365-audit-log.md)
+## [監査ログ レコードをエクスポート、構成、表示する](export-view-audit-log-records.md)
 ## [監査ログを使用して一般的なシナリオのトラブルシューティングを行う](auditing-troubleshooting-scenarios.md)
 ## [監査ログで共有監査を使用する](use-sharing-auditing.md)
 ## [監査ログで電子情報開示アクティビティを検索する](search-for-ediscovery-activities-in-the-audit-log.md)
