@@ -3,7 +3,7 @@ title: 情報バリアポリシーの属性
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,21 +11,21 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: この記事は、情報バリアポリシーで使用できるさまざまな属性の参照として使用します。
-ms.openlocfilehash: 1537dae2c99555a9257bbe5c3f9754a1f975fbbe
-ms.sourcegitcommit: 8f399f260687d17a497a15bcc644187c277ea8fe
+ms.openlocfilehash: 1e2e183da350308a57fa5d627b4867b9b3d30cee
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "35462408"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587066"
 ---
-# <a name="attributes-for-information-barrier-policies-preview"></a>情報バリアポリシーの属性 (プレビュー)
+# <a name="attributes-for-information-barrier-policies"></a>情報バリアポリシーの属性
 
 Azure Active Directory の特定の属性を使用して、ユーザーをセグメントにすることができます。 セグメントが定義されると、それらのセグメントは情報バリアポリシーのフィルターとして使用できます。 たとえば、部署を使用し**** て、組織内の部署別のユーザーのセグメントを定義することができます (2 つの部署に対して1人の従業員が同時に働くことは想定されていません)。 
 
 この記事では、情報バリアで属性を使用する方法について説明し、使用できる属性の一覧を示します。 情報バリアの詳細については、以下のリソースを参照してください。
-- [情報バリア (プレビュー)](information-barriers.md)
-- [Microsoft Teams の情報障壁に関するポリシーを定義する (プレビュー)](information-barriers-policies.md)
-- [情報バリアポリシーを編集 (または削除) する (プレビュー)](information-barriers-edit-segments-policies.md.md)
+- [情報の障壁](information-barriers.md)
+- [Microsoft Teams の情報障壁に関するポリシーを定義する](information-barriers-policies.md)
+- [情報バリアポリシーの編集 (または削除)](information-barriers-edit-segments-policies.md.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>情報バリアポリシーで属性を使用する方法
 
@@ -93,11 +93,11 @@ Azure Active Directory の特定の属性を使用して、ユーザーをセグ
 
 ## <a name="related-topics"></a>関連項目
 
-[Microsoft Teams の情報障壁に関するポリシーを定義する (プレビュー)](information-barriers-policies.md)
+[Microsoft Teams の情報障壁に関するポリシーを定義する](information-barriers-policies.md)
 
-[情報障壁のトラブルシューティング (プレビュー)](information-barriers-troubleshooting.md)
+[情報の障壁をトラブルシューティングする](information-barriers-troubleshooting.md)
 
-[情報バリア (プレビュー)](information-barriers.md)
+[情報の障壁](information-barriers.md)
 
 
 

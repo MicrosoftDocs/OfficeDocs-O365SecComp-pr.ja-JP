@@ -3,7 +3,7 @@ title: 情報の障壁をトラブルシューティングする
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,16 +11,16 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: この記事は、情報の障壁をトラブルシューティングするためのガイドとして使用してください。
-ms.openlocfilehash: 20937fa4ee050dfa1e3bb4fcfcd582b1c78ccead
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 251fc1775318e2ed7cbda9a56e2c82db527082f6
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394302"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587056"
 ---
-# <a name="troubleshooting-information-barriers-preview"></a>情報障壁のトラブルシューティング (プレビュー)
+# <a name="troubleshooting-information-barriers"></a>情報の障壁をトラブルシューティングする
 
-[情報障壁 (プレビュー)](information-barriers.md)は、組織が法律上の要件や業界の規制に準拠していることを維持するのに役立ちます。 たとえば、情報バリアを使用すると、特定のユーザーグループ間の通信を制限して、利息やその他の問題の競合を回避できます。 (情報の障壁を設定する方法の詳細については、「 [Define policies for information バリア (Preview)](information-barriers-policies.md)」を参照してください)。
+[情報バリア](information-barriers.md)は、組織が法的な要件や業界の規制に準拠していることを支援します。 たとえば、情報バリアを使用すると、特定のユーザーグループ間の通信を制限して、利息やその他の問題の競合を回避できます。 (情報障壁の設定方法の詳細については、「 [Define policies for information バリア](information-barriers-policies.md)」を参照してください)。
 
 情報の障壁が設定された後に予期しない問題が発生した場合は、それらの問題を解決するために実行できるいくつかの手順があります。 この記事をガイドとして使用します。
 
@@ -171,9 +171,9 @@ Policy application コマンドレットを実行すると、組織内のすべ�
 
 ## <a name="related-topics"></a>関連項目
 
-[Microsoft Teams の情報障壁に関するポリシーを定義する (プレビュー)](information-barriers-policies.md)
+[Microsoft Teams の情報障壁に関するポリシーを定義する](information-barriers-policies.md)
 
-[情報バリア (プレビュー)](information-barriers.md)
+[情報の障壁](information-barriers.md)
 
 
 

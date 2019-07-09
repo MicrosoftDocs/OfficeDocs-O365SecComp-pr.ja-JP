@@ -3,7 +3,7 @@ title: 情報バリアポリシーの編集
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 情報バリアのポリシーを編集または削除する方法について説明します。
-ms.openlocfilehash: c3dca18ad217b89d9f9ae78b590cfb07f4631f37
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: c55ffac0984fe83fec1ef7b995d1589ea770bfef
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394332"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587076"
 ---
-# <a name="edit-or-remove-information-barrier-policies-preview"></a>情報バリアポリシーを編集 (または削除) する (プレビュー)
+# <a name="edit-or-remove-information-barrier-policies"></a>情報バリアポリシーの編集 (または削除)
 
 [情報バリアポリシーを定義](information-barriers-policies.md)した後、[トラブルシューティング](information-barriers-troubleshooting.md)の一環として、または定期的な保守の一環として、これらのポリシーまたはユーザーセグメントに変更を加える必要がある場合があります。 この記事をガイドとして使用します。
 
@@ -32,8 +32,8 @@ ms.locfileid: "35394332"
 |[ポリシーを非アクティブな状態に設定する](#set-a-policy-to-inactive-status)     |ポリシーを変更する場合、またはポリシーを有効にしない場合は、ポリシーを非アクティブ状態に設定します。         |
 |[ポリシーを削除する](#remove-a-policy)     |特定のポリシーが不要になった場合に、情報バリアポリシーを削除します。         |
 |[ポリシーアプリケーションを停止する](#stop-a-policy-application)     |情報バリアポリシーの適用プロセスを停止する場合は、この手順を実行します。<br/>ポリシーアプリケーションを停止しても、ユーザーに既に適用されているポリシーは元に戻すことができないことに注意してください。         |
-|[情報バリアのポリシーを定義する (プレビュー)](information-barriers-policies.md)     |このようなポリシーがまだ適用されていない場合に情報バリアポリシーを定義します。また、特定のユーザーグループ間の通信を制限または制限する必要があります。         |
-|[情報障壁のトラブルシューティング (プレビュー)](information-barriers-troubleshooting.md)     |情報バリアを使用して予期しない問題が発生した場合は、この記事を参照してください。         |
+|[情報バリアのポリシーを定義する](information-barriers-policies.md)     |このようなポリシーがまだ適用されていない場合に情報バリアポリシーを定義します。また、特定のユーザーグループ間の通信を制限または制限する必要があります。         |
+|[情報の障壁をトラブルシューティングする](information-barriers-troubleshooting.md)     |情報バリアを使用して予期しない問題が発生した場合は、この記事を参照してください。         |
 
 > [!IMPORTANT]
 > この記事で説明されているタスクを実行するには、次のいずれかのような適切な役割が割り当てられている必要があります。<br/>-Microsoft 365 エンタープライズグローバル管理者<br/>-Office 365 グローバル管理者<br/>-コンプライアンス管理者<br/>-IB コンプライアンス管理 (新しい役割)<p>情報障壁の前提条件の詳細については、「[必須コンポーネント (情報バリアポリシー)](information-barriers-policies.md#prerequisites)」を参照してください。<p>[Office 365 セキュリティ & コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)するようにしてください。
@@ -52,7 +52,7 @@ ms.locfileid: "35394332"
     |---------|---------|
     |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>   名前、エイリアス、識別名、標準ドメイン名、電子メールアドレス、GUID など、各ユーザーを一意に識別する任意の値を使用できます。 <p>   (1 人のユーザーに対してこのコマンドレットを`Get-InformationBarrierRecipientStatus -Identity <value>`使用することもできます。)      |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw`  <p>   この例では、Office 365 の2つのユーザーアカウント ( *Megan*の場合は*Meガント b* 、 *Alex*の場合は*alexw* ) を参照しています。         |
 
-2. ユーザーアカウントプロファイルに対してどの属性を編集するかを決定します。 詳細については、 [「情報バリアポリシーの属性 (プレビュー)](information-barriers-attributes.md) 」を参照してください。 
+2. ユーザーアカウントプロファイルに対してどの属性を編集するかを決定します。 詳細については、「[情報バリアポリシーの属性](information-barriers-attributes.md)」を参照してください。 
 
 3. 1つ以上のユーザーアカウントを編集して、前の手順で選択した属性の値を含めます。 これを行うには、次のいずれかの手順を使用します。
 
@@ -168,10 +168,10 @@ ms.locfileid: "35394332"
 
 [情報障壁の概要を理解する](information-barriers.md)
 
-[情報バリアのポリシーを定義する (プレビュー)](information-barriers-policies.md)
+[情報バリアのポリシーを定義する](information-barriers-policies.md)
 
 [Microsoft Teams の情報障壁の詳細を知る](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
 
-[情報バリアポリシーの属性 (プレビュー)](information-barriers-attributes.md)
+[情報バリアポリシーの属性](information-barriers-attributes.md)
 
-[情報障壁のトラブルシューティング (プレビュー)](information-barriers-troubleshooting.md)
+[情報の障壁をトラブルシューティングする](information-barriers-troubleshooting.md)
