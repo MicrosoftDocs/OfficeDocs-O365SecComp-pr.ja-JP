@@ -3,7 +3,6 @@ title: 個人データの分類スキーマを設計する
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: ''
 audience: ITPro
 ms.topic: overview
 ms.collection:
@@ -16,12 +15,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 組織が GDPR 計画の一環としてラベルを実装するかどうかを決定します。
-ms.openlocfilehash: 2987fbda1f1590bf41981447bfe850c5c331483d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: c0886ac68cd2d7a6ca7514f39636e74c5b2043ad
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155501"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598683"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>個人データの分類スキーマを設計する
 

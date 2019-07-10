@@ -2,8 +2,8 @@
 title: Office 365 で迷惑メールを減らす方法
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 6/7/2018
+manager: dansimp
+ms.date: 06/07/2018
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Office 365 でスパム メールや迷惑メールを減らすための最も一般的な方法について説明します。
-ms.openlocfilehash: 6603b5a3efdfb6ffde0743d3b674ca69ca39eaa0
-ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
+ms.openlocfilehash: 3dca1aeb404bd121cec3a363eb9413f3fe79b36b
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857597"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601234"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Office 365 で迷惑メールを減らす方法
 

@@ -3,7 +3,6 @@ title: Office 365 の個人データにラベルを適用する
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: ''
 audience: ITPro
 ms.topic: overview
 ms.collection:
@@ -16,12 +15,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Office のラベルを GDPR 保護計画の一部として使用する方法について説明します。
-ms.openlocfilehash: fe54ebe88ea3474df2c2c94cda2c3023a788af31
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 518e5352861242bfbf9220f876edcb4b616493df
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155589"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598253"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Office 365 の個人データにラベルを適用する
 
