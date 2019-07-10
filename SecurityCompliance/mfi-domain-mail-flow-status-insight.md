@@ -2,19 +2,19 @@
 title: トップドメインのメール フローの状態洞察　
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードにある上位のドメインメールフローの状態について理解できます。
-ms.openlocfilehash: c339769c65b2b1cec3d187873e71e5f1e283ccc7
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードにある上位ドメインのメールフローの状態に関する洞察を得ることができます。
+ms.openlocfilehash: d6a3345a614bcde42193eb9c78d93c56637ccac7
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158649"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600840"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>トップドメインのメール フローの状態洞察　
 
@@ -32,4 +32,4 @@ ms.locfileid: "34158649"
 
 ## <a name="see-also"></a>関連項目
 
-メールフローダッシュボードの他のメールフローインサイトの詳細については、「 [Security &/コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。
+メールフローダッシュボードのその他のメールフローインサイトの詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。

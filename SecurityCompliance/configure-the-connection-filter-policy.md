@@ -2,7 +2,7 @@
 title: 接続フィルター ポリシーを構成する
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 10/24/2018
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: 信頼できるユーザーからの電子メールがブロックされないようにするには、接続フィルターポリシーを使用して、信頼する IP アドレスの許可リスト (安全な差出人のリストとも呼ばれます) を作成します。 受信拒否リストを作成することもできます。
-ms.openlocfilehash: 5d19898b6baf01c7348b434f3caced202507c4d8
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8589f7d714199414e7c5177ff227859da50e3e06
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151299"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600093"
 ---
 # <a name="configure-the-connection-filter-policy"></a>接続フィルター ポリシーを設定する
  

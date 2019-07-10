@@ -2,7 +2,7 @@
 title: 情報管理ポリシーを作成して適用する
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 5/16/2017
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
 - M365-security-compliance
 description: 情報管理ポリシーを使用すると、コンテンツの保持期間を制御したり、コンテンツについてユーザーの作業を監査したり、バーコードやラベルをドキュメントに追加したりできます。 ポリシーを使用すると、法律上および行政上の規制や内部のビジネスプロセスに準拠することができます。 管理者は、ドキュメントの追跡方法やドキュメントを保持する期間を制御するポリシーをセットアップできます。
-ms.openlocfilehash: 43a39b316f5c1e77ef9576324518dfe228ff35a6
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 85113393f534a6b17f75962d02518a5a8c65dd8b
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151239"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600023"
 ---
 # <a name="create-and-apply-information-management-policies"></a>情報管理ポリシーを作成して適用する
 

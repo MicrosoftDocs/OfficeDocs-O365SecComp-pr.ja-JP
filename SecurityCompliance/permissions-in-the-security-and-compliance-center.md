@@ -2,7 +2,7 @@
 title: Office 365 セキュリティ センターとコンプライアンス センターのアクセス許可
 ms.author: chrisda
 author: chrisda
-manager: chrisda
+manager: dansimp
 ms.date: 07/01/2019
 audience: Admin
 ms.topic: conceptual
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、Office 365 セキュリティ & コンプライアンスセンターで利用可能なアクセス許可について学習できます。
-ms.openlocfilehash: 8d6835ea82be8f00d998ce7a6c11b3450a530bc4
-ms.sourcegitcommit: d3b2bffa8af5f19d97fe9771068c80705b890e85
+ms.openlocfilehash: 285fb17a33326126ead3640790f44f4dd6ff5756
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "35414817"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600563"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Office 365 セキュリティ センターとコンプライアンス センターのアクセス許可
 

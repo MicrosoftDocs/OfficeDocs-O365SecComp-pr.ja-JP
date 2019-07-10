@@ -2,8 +2,8 @@
 title: メッセージがスパムとしてマークされないようにする方法
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 12/9/2016
+manager: dansimp
+ms.date: 12/09/2016
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: ceeda109-6c24-4270-bd09-a36959417276
 ms.collection:
 - M365-security-compliance
 description: Exchange Online または Exchange Online Protection (EOP) の管理者は、サービスを通過する電子メール メッセージがスパムとしてマークされないようにできます。 そのためのヒントおよび手順に関する更新されたバージョンの情報については、「セーフリストまたはその他の手法を使って、正しいメールが誤って迷惑メールとしてマークされるのを防ぐ」を参照してください。
-ms.openlocfilehash: fc441242a9c90be8733cebf49bc5d6f5ccae1aaa
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9069c36abb347ad6469b1b066f24ec074328034f
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154249"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599093"
 ---
 # <a name="how-to-help-ensure-that-a-message-isnt-marked-as-spam"></a>メッセージがスパムとしてマークされないようにする方法
 

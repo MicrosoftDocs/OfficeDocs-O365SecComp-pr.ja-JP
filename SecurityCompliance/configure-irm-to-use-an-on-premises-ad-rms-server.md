@@ -1,7 +1,7 @@
 ---
 title: オンプレミスの AD RMS サーバーを使用するように IRM を構成する
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: krowley
+author: kccross
 manager: laurawi
 ms.date: 12/13/2017
 audience: End User
@@ -14,12 +14,12 @@ ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
 description: このトピックでは、AD RMS サーバーを使用するように IRM を構成する方法を示します。
-ms.openlocfilehash: 44a313425a68a6de2e37e3fea34dbe53525723b1
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 6f764ddf3604dcf0d6b28a37b56a498489c0769f
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153869"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600173"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>IRM を設定して、オンプレミスの AD RMS サーバーを使用する
   

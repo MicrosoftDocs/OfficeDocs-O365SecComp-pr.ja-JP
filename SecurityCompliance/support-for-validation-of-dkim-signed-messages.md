@@ -2,7 +2,7 @@
 title: DKIM 署名付きメッセージの検証をサポートする
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection と Exchange Online での DKIM 署名付きメッセージの検証について
-ms.openlocfilehash: 0538158d052afb632dc0adbb14a88aa9766e6322
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 88a01944dd215ff3b6f22a266a12145927f89e0a
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156449"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600710"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>DKIM 署名付きメッセージの検証をサポートする
 

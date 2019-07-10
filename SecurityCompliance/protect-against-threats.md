@@ -2,7 +2,7 @@
 title: Office 365 で脅威から保護する
 ms.author: tracyp
 author: msfttracyp
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: この記事をガイドとして使用して、今すぐ脅威保護機能を構成します。
-ms.openlocfilehash: 6700e2714ea607f675b487204404d53c1d51db93
-ms.sourcegitcommit: 424a614141c1f19a1c84a67ec2d71dd3d7ef6694
+ms.openlocfilehash: 950259bb11446c3b7f27606b69a44f07ad478e79
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590580"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600523"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Office 365 で脅威から保護する
 
@@ -47,7 +47,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 ### <a name="roles-and-permissions"></a>ロールと権限
 
-[セキュリティ _AMP_ コンプライアンスセンター](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)でポリシーを構成するには、適切な役割が割り当てられている必要があります。 次の表は、いくつかの例を示しています。 
+[セキュリティ & コンプライアンスセンター](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)でポリシーを構成するには、適切な役割が割り当てられている必要があります。 次の表は、いくつかの例を示しています。 
 
 |役割または役割グループ  |詳細情報  |
 |---------|---------|
@@ -61,7 +61,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)を含むサブスクリプションでは[、マルウェア対策保護](anti-malware-protection.md)を利用できます。 
 
-1. [セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**脅威管理** > **ポリシー** > の**マルウェア対策**] を選択します。
+1. [[セキュリティ & コンプライアンスセンター](https://protection.office.com)] で、[**脅威管理** > **ポリシー** > の**マルウェア対策**] を選択します。
 
 2. [**既定**のポリシー] をダブルクリックし、[**設定**] を選択します。
 
@@ -83,7 +83,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 [Atp の安全な添付ファイル](atp-safe-attachments.md)を設定するには、少なくとも1つの Atp の安全な添付ファイルポリシーを定義する必要があります。 
 
-1. [セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**脅威管理** > **ポリシー** > **ATP 安全添付ファイル**] を選択します。
+1. [[セキュリティ & コンプライアンスセンター](https://protection.office.com)] で、[**脅威管理** > **ポリシー** > **ATP 安全添付ファイル**] を選択します。
 
 2. [ **SharePoint、OneDrive、Microsoft Teams の ATP を有効にする**] オプションを選択します。
 
@@ -109,7 +109,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 [ATP の安全なリンク](atp-safe-links.md)を設定するには、既定のポリシーを確認して編集し、特定のユーザーのポリシーを追加します。
 
-1. [セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**脅威管理** > **ポリシー** > **ATP セーフリンク**] を選択します。
+1. [[セキュリティ & コンプライアンスセンター](https://protection.office.com)] で、[**脅威管理** > **ポリシー** > **ATP セーフリンク**] を選択します。
 
 2. [**既定**のポリシー] をダブルクリックします。
 
@@ -141,7 +141,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)を含むサブスクリプションでは、[フィッシング対策保護](anti-phishing-protection.md)を利用できます。 高度なフィッシング対策を[ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)で利用できます。 次の手順では、ATP のフィッシング対策ポリシーを構成する方法について説明します。 この手順は、(ATP を使用しない) フィッシング対策ポリシーの構成に似ています。
 
-1. [セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**脅威管理** > **ポリシー** > **ATP のフィッシング対策**] を選択します。
+1. [[セキュリティ & コンプライアンスセンター](https://protection.office.com)] で、[**脅威管理** > **ポリシー** > **ATP のフィッシング対策**] を選択します。
 
 2. [**既定のポリシー**] をクリックします。
 
@@ -173,7 +173,7 @@ Office 365 には、さまざまな脅威保護機能が含まれています。
 
 [スパム対策保護](anti-spam-protection.md)は、 [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)を含むサブスクリプションで使用できます。
 
-1. [セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**脅威管理** > **ポリシー** > のスパム**対策**] を選択します。
+1. [[セキュリティ & コンプライアンスセンター](https://protection.office.com)] で、 **[脅威管理** > **ポリシー** > のスパム**対策**] を選択します。
 
 2. [**カスタム**] タブで、[**カスタム設定**] をオンにします。
 

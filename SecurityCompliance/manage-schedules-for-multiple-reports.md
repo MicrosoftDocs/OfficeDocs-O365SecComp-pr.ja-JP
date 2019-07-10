@@ -2,8 +2,7 @@
 title: セキュリティ&amp; /コンプライアンスセンターで複数のレポートのスケジュールを管理する
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
-ms.date: 6/1/2018
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: セキュリティ&amp;コンプライアンスセンターでレポートのスケジュールを表示、編集、および管理する方法について説明します。
-ms.openlocfilehash: a8f230ddf9442ba0a29d5fdaeba40bc8524405b5
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 7ea5815d058e4e8d9b0cecb5d06888e695bb526d
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077593"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598813"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターで複数のレポートのスケジュールを管理する
 
@@ -31,7 +30,7 @@ ms.locfileid: "34077593"
   
 ![セキュリティ&amp; /コンプライアンスセンターで、[レポート\>の管理] を選択します。](media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
 
-1. に[https://protection.office.com](https://protection.office.com)移動し、サインインします。 これにより、セキュリティ & コンプライアンスセンターに移動します。
+1. に[https://protection.office.com](https://protection.office.com)移動し、サインインします。 これにより、セキュリティ & コンプライアンスセンターに移動できます。
 
 2. セキュリティ&amp; /コンプライアンスセンターで、[**レポート** \>の**管理**] に移動します。
     

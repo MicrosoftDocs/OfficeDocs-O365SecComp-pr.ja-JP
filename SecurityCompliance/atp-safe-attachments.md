@@ -2,7 +2,7 @@
 title: Office 365 ATP の安全な添付ファイル
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.date: 05/17/2019
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 description: '[安全な添付ファイル] 機能を使用すると、電子メールの添付ファイルの確認時間を確認できます。 安全な添付ファイルを使用して、ユーザーが電子メールで送受信する悪意のあるファイルから組織を保護します。'
-ms.openlocfilehash: 2980349eaec22f1e67206f96b8ed22df539cdba7
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: 9077a555ca7f753448b866ce26f6ff4af5a165bd
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34652620"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598573"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 ATP の安全な添付ファイル
 

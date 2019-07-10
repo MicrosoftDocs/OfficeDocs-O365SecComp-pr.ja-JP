@@ -2,7 +2,7 @@
 title: Office 365 で電子メール接続をセキュリティで保護するために、Exchange Online が TLS を使用する方法
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 8/2/2018
 audience: ITPro
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Exchange Online および Office 365 で、トランスポート層セキュリティ (TLS) とフォワード機密性 (FS) を使用して電子メール通信をセキュリティで保護する方法について説明します。 また、Microsoft によって発行された Exchange Online 用の証明書に関する情報も取得します。
-ms.openlocfilehash: f23b71984302639835537beb757e9089f44ee0c9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e165be9a3407abfcc165054f7f147eeb2d2c0a82
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152879"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599403"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections-in-office-365"></a>Office 365 で電子メール接続をセキュリティで保護するために、Exchange Online が TLS を使用する方法
 

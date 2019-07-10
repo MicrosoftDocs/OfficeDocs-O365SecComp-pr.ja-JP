@@ -1,8 +1,8 @@
 ---
 title: Exchange Online エンドユーザースパム通知の構成
 ms.author: tracyp
-author: MSFTTracyP
-manager: laurawi
+author: MSFTTracyp
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: 既定の企業全体のスパムフィルターポリシーまたはドメインに適用されるカスタムスパムフィルターポリシーに対して、エンドユーザーのスパム通知を構成できます。
-ms.openlocfilehash: c56aa3d5bbc771641f9082095c930c66dc8cee96
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: ce63fae7749f716b7fdd00c72b207ba5b57a8d65
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153889"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600193"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Exchange Online エンドユーザースパム通知の構成
 
@@ -37,9 +37,9 @@ ms.locfileid: "34153889"
 
 メッセージがスパムではなく、Office 365 がメールボックスにメッセージを送信する場合は、**リリースを解放**します。
 
-**Release &** メッセージがスパムではない場合に、[送信者を許可する] をクリックして、今後の電子メールに対応するように、Office 365 に送信者を信頼できる差出人と受信者の一覧に追加します。 管理者には、[信頼できる差出人のリスト] を上書きする、組織全体にわたる許可/ブロック構成が存在する可能性があることに注意してください。
+**Release &** メッセージがスパムではない場合に送信者に送信を許可し、今後の電子メールに対応するように Office 365 で [差出人セーフリスト] と [受信者] 一覧に送信者を追加します。 管理者には、[信頼できる差出人のリスト] を上書きする、組織全体にわたる許可/ブロック構成が存在する可能性があることに注意してください。
 
-メッセージがスパムではなく、メールボックスにメッセージを送信して分析のために Microsoft に報告する場合は、 **_AMP_ レポートをリリース**します。
+メッセージがスパムではなく、メールボックスにメッセージを送信して分析のために Microsoft に報告する場合は **& レポートをリリース**します。
 
 Office 365 で、受信拒否リストに送信者を追加する場合は、[**ブロック**] を選択します。
   

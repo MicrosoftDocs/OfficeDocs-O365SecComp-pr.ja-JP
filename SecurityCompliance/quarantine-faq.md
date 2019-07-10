@@ -2,8 +2,8 @@
 title: 検疫に関する FAQ
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 6/16/2017
+manager: dansimp
+ms.date: 06/16/2017
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: このトピックでは、ホストされた検疫についてのよく寄せられる質問 (FAQ) とその回答を紹介します。
-ms.openlocfilehash: a8e4c8ba67e94c5c61da6c88f8086d780081d1a6
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 907bb7eaee9c7aef490c74677b4f277b89ba3115
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157219"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601274"
 ---
 # <a name="quarantine-faq"></a>検疫に関する FAQ
 

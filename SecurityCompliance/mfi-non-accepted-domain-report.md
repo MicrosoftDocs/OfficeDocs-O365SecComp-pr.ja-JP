@@ -2,19 +2,19 @@
 title: 承認されていないドメインのレポート
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードで、承認されていないドメインレポートについて学習できます。
-ms.openlocfilehash: ce9ffc28fddca6eb27d3d7394c0aea2ac4be9beb
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードの承認されていないドメインレポートについて学習できます。
+ms.openlocfilehash: 764329cdc7f595590c846a7e21cbe457378180ac
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158579"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598103"
 ---
 # <a name="non-accepted-domain-report"></a>承認されていないドメインのレポート
 
@@ -34,4 +34,4 @@ ms.locfileid: "34158579"
 
 ## <a name="see-also"></a>関連項目
 
-メールフローダッシュボードの他のメールフローインサイトの詳細については、「 [Security &/コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。
+メールフローダッシュボードのその他のメールフローインサイトの詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。

@@ -2,7 +2,7 @@
 title: Office 365 で送信スパムを制御する
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,19 +14,19 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: 組織がスパムとしてマークされている大量のバルクメールを送信すると、Office 365 での電子メールの送信がブロックされることがあります。 このような状況についての詳細と、その理由については、この記事を参照してください。
-ms.openlocfilehash: 742006374b76156ffc2ffe6b158ef5e0ac890ebe
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 09aa71cd8b273a3235bc2673d3d17c3decf71da5
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157599"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601134"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>Office 365 で送信スパムを制御する
 
 私たちは共有サービスであるため、送信スパムを真剣に管理しています。  共有されたリソースプールの背後に多くのお客様がいる場合、あるユーザーが送信スパムを送信すると、そのサービスの発信 IP の評価が低下し、他のユーザーの電子メールの成功 deliverability に影響を与える可能性があります。
 
 > [!IMPORTANT]
-> 送信者が制限されている場合の通知は、Security & コンプライアンスセンター (SCC) の警告プラットフォームの一部になっています。 次に示すメソッドを使用して通知を送信する代わりに、警告対象のユーザーの一覧については、「ユーザーが電子メールの送信から制限される」という通知を参照してください。 以前の方法が今後削除されるため、「Security & コンプライアンスセンター」の [ [alert policies] ページ](https://sip.protection.office.com/alertpolicies)を使用してアラートを構成してください。 新しい[制限付きユーザーの環境](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam)についてお読みください。
+> 送信者が制限されている場合の通知は、セキュリティ & コンプライアンスセンター (SCC) の警告プラットフォームの一部になっています。 次に示すメソッドを使用して通知を送信する代わりに、警告対象のユーザーの一覧については、「ユーザーが電子メールの送信から制限される」という通知を参照してください。 以前の方法が今後削除されるので、[セキュリティ & コンプライアンスセンター] の [[通知ポリシー] ページ](https://sip.protection.office.com/alertpolicies)を使用して、アラートを構成してください。 新しい[制限付きユーザーの環境](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam)についてお読みください。
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>管理者が送信スパムを制御する方法
 

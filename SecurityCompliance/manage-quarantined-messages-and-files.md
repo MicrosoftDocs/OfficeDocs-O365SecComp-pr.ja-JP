@@ -2,7 +2,7 @@
 title: Office 365 の管理者として検疫済みメッセージおよびファイルを管理する
 ms.author: tracyp
 author: MSFTTracyp
-manager: laurawi
+manager: dansimp
 ms.date: 09/05/2018
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: '管理者は、Office 365 で誤検知済みの肯定メッセージを表示、リリース、および報告することができます。 Office 365 がメッセージをフィルター処理して、複数の理由で検疫にメッセージを送信するようにポリシーを設定できます。これは、スパム、バルク、フィッシング、マルウェア、またはメールフロールールと一致したためです。 '
-ms.openlocfilehash: abe9aa1a8c7d78af4d82d9a06284e12745d24dee
-ms.sourcegitcommit: dde3dc1dd419b97daa1da9827787c27935a2c757
+ms.openlocfilehash: 245068b7d3ec51cbca887883f791b19ea116731a
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35115928"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598803"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Office 365 の管理者として検疫済みメッセージおよびファイルを管理する
 

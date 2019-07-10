@@ -1,8 +1,8 @@
 ---
 title: EOP の一般的な FAQ
-ms.author: krowley
-author: kccross
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyP
+manager: dansimp
 ms.date: 1/2/2018
 audience: ITPro
 ms.topic: reference
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: ここでは、Microsoft Exchange Online Protection (EOP) のクラウド ホスト型電子メール フィルター サービスについてよく寄せられる質問を紹介します。その他のよく寄せられる質問 (FAQ) については、以下のリンクを参照してください。
-ms.openlocfilehash: 9960f21e13be7eee059f68a40282ed73ff934d02
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e8f10cfea19cf27fcb6c676c1eff301a87486679
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153159"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599763"
 ---
 # <a name="eop-general-faq"></a>EOP の一般的な FAQ
 
@@ -33,9 +33,7 @@ ms.locfileid: "34153159"
     
 - [マルウェア対策保護に関する FAQ](../anti-malware-protection-faq-eop.md)
     
-- [Message Trace FAQ](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx)
-    
-- [FOPE から EOP への移行の FAQ](http://technet.microsoft.com/library/e0e76b89-b0d3-4c0a-bfc8-137b579e983b.aspx)
+- [メッセージ追跡の FAQ](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx)
     
  **Q. EOP とは何ですか?**
   

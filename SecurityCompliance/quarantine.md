@@ -2,8 +2,8 @@
 title: 検疫
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 6/16/2017
+manager: dansimp
+ms.date: 06/16/2017
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f
 ms.collection:
 - M365-security-compliance
 description: Exchange Online および Exchange Online Protection のホストされた検疫について説明します。
-ms.openlocfilehash: b27cf5a6ef6e9dc7140763e1970804e501e720e6
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a2a2f5095c76fcff1b26cf0f68689ac5581587f2
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156819"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601244"
 ---
 # <a name="quarantine"></a>検疫
 

@@ -2,8 +2,8 @@
 title: 迷惑メール メッセージを Microsoft に報告する
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 12/9/2016
+manager: dansimp
+ms.date: 12/09/2016
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: Microsoft Office Outlook 用迷惑メール報告アドインでは、次のような複数の方法で迷惑メール メッセージを報告できます。
-ms.openlocfilehash: 46dec07830218022dcc9a44a41b93a87fdcc70bf
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 6064e60096ccad22fcb44ae35725640880b8468e
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157339"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601204"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>迷惑メール メッセージを Microsoft に報告する
 

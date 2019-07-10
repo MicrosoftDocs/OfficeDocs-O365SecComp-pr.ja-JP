@@ -2,8 +2,8 @@
 title: 管理者として検疫済みメッセージを検索して解放する
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 6/16/2017
+manager: dansimp
+ms.date: 06/16/2017
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: このトピックでは、Exchange Online and Exchange Online Protection (EOP) の管理者が、Exchange 管理センター (EAC) の検疫済みメッセージに入っているメッセージの検索、解放、報告を行う方法について説明します。
-ms.openlocfilehash: 7ac65ae5b4225e56861dacacdd61bf5a237f7ca8
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1f2b3733cbba3c09e1ec7ca25377ac96d5c89147
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154569"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599383"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>管理者として検疫済みメッセージを検索して解放する
 

@@ -2,7 +2,7 @@
 title: Microsoft Outlook 用迷惑メール報告アドインのインストール
 ms.author: MSFTTracyP
 author: tracyp
-manager: laurawi
+manager: dansimp
 ms.date: 12/9/2016
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
 ms.collection:
 - M365-security-compliance
 description: この articleSupported LanguagesInstall the 迷惑メール報告アドインをアンインストールします。迷惑メール報告アドインをアンインストールする inFor 詳細情報
-ms.openlocfilehash: c9211cd71fd82af2b9fc0533435ff27a82cd47be
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 7f294ed78affba6e55f2372b81b517bbd25d3f08
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152559"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599063"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Microsoft Outlook 用迷惑メール報告アドインのインストール
   

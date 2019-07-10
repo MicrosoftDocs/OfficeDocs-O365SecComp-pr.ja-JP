@@ -2,7 +2,7 @@
 title: SIEM server と Microsoft 365 の統合
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.date: 06/17/2019
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: '概要: この記事では、SIEM server と Microsoft 365 の統合の概要について説明します。'
-ms.openlocfilehash: 9138cbc395b90f50fa60bf545066c17cf26d7edf
-ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
+ms.openlocfilehash: 97f1c1d1f1862d140e014b4460ac9f40cb1934bb
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35014766"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600894"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>SIEM server と Microsoft 365 のサービスおよびアプリケーションの統合
 

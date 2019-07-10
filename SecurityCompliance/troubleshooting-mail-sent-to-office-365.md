@@ -2,8 +2,8 @@
 title: Office 365 に送信されるメールのトラブルシューティング
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 5/2/2016
+manager: dansimp
+ms.date: 05/02/2016
 audience: ITPro
 ms.topic: troubleshooting
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: この資料では、Office 365 の受信トレイに電子メールを送信するときに生じる問題に関して送信者が参照できるトラブルシューティング情報と、Office 365 顧客に対するバルク メールのベスト プラクティスについて取り上げます。
-ms.openlocfilehash: ecb5c407c793fa93bf6f64589531bb3cff3c3494
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9f4b5e8073c173da6638c30ccc5f123dc3b7a2a6
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158219"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600333"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Office 365 に送信されるメールのトラブルシューティング
 

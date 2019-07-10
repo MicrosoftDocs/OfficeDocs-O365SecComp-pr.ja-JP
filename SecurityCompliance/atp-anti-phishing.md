@@ -2,7 +2,7 @@
 title: Office 365 の ATP フィッシング対策機能
 ms.author: tracyp
 author: MSFTTracyp
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ ms.assetid: 5076d0f6-7a59-4d6c-bd07-ba95033f0682
 ms.collection:
 - M365-security-compliance
 description: ATP のフィッシング対策は、Office 365 Advanced Threat Protection の一部です。 ATP のフィッシング対策は、一連の機械学習モデルを受信メッセージに適用して、市販およびスピアーフィッシング攻撃に対する保護を提供します。 すべてのメッセージは、フィッシングメッセージを検出するために訓練された広範な一連の機械学習モデルと共に、さまざまなユーザーおよびドメイン偽装攻撃から保護するための一連の高度なアルゴリズムと共に適用されます。
-ms.openlocfilehash: 0c17273d935dbdaec6d78a62a4edfa015b6b8efa
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: b2ce20d64952ecf489c2ccdbd5b4cafd16b8f64f
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155549"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598623"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Office 365 の ATP フィッシング対策機能
 

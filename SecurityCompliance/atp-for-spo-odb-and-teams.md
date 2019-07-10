@@ -2,7 +2,7 @@
 title: Office 365 ATP for SharePoint、OneDrive、Microsoft Teams
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.date: 03/19/2019
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection を SharePoint Online、OneDrive for Business、Microsoft Teams のファイルに拡張して、組織にとってより安全なコラボレーションを可能にします。
-ms.openlocfilehash: a73f978ca40571e33864061cfe9538033579b3c7
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 1a9fbf54b1393f250bc259ecb2e8bb9fd36f2ae0
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408262"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598643"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP for SharePoint、OneDrive、Microsoft Teams
 
@@ -70,7 +70,7 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
     
 - **ファイルをダウンロード**すると、誤検知のためにファイルをダウンロードして分析することができます。 
     
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 1. [SharePoint、OneDrive、Microsoft Teams の Office 365 ATP を有効にする](turn-on-atp-for-spo-odb-and-teams.md)
     

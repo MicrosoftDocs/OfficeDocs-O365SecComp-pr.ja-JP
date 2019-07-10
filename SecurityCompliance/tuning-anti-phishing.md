@@ -2,8 +2,7 @@
 title: Office 365 でフィッシング対策保護を調整する
 ms.author: chrisda
 author: chrisda
-manager: serdars
-ms.date: ''
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 管理者は、フィッシングメッセージがどのように使用されたのかや、今後のフィッシング対策メッセージを回避するために何を行う必要があるかを特定する方法について説明します。
-ms.openlocfilehash: b17cdc6ec6cfc07642a6a40657009b46b83f1559
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 2f58cea6dee7681322ecfe392801d4ad2d9af2eb
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156349"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600343"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Office 365 でフィッシング対策保護を調整する
 
@@ -60,7 +59,7 @@ Office 365 には、既定で有効になっているさまざまなフィッシ
 
 - ユーザーによっては、スパム対策ポリシーの [送信者を許可する] または [ドメインを許可する] の一覧に独自のドメインを設定することで、フィッシングメッセージを誤って許可することがあります。 これを行う場合は、細心の注意を払う必要があります。 この構成では、一部の正当なメッセージが許可されますが、通常は Office 365 スパムまたはフィッシングフィルターによってブロックされる悪意のあるメッセージも許可されます。
 
-  ドメイン内の送信者によっ365て禁止されている正当なメッセージ (誤検知) を処理する最善の方法は、office 365 のすべての電子メールドメインについて、DNS の SPF、dkim、および DMARC レコードを完全に完全に構成することです。
+  ドメイン内の送信者によっ365て禁止されている正当なメッセージ (誤検知) を処理する最善の方法は、Office 365 の_すべて_の電子メールドメインについて、DNS の SPF、dkim、および DMARC レコードを完全に完全に構成することです。
 
   - SPF レコードが、ドメイン内の送信者の電子メールの_すべて_のソースを識別していることを確認します (サードパーティのサービスを忘れないでください)。
 

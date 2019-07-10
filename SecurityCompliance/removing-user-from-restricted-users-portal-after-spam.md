@@ -2,7 +2,7 @@
 title: 迷惑メールを送信した後で制限付きユーザー ポータルからユーザーを削除する
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 03/12/2019
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: ユーザーが、スパムとして分類された Office 365 から電子メールを継続的に送信した場合、それ以上メッセージを送信することはできません。
-ms.openlocfilehash: 3e05b250d5a3cdca79c7cf494b84be02ce3ecdc9
-ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
+ms.openlocfilehash: 80eb03ccb96f2178f168139234de8700b9b97e29
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857627"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601154"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>迷惑メールを送信した後で制限付きユーザー ポータルからユーザーを削除する
 

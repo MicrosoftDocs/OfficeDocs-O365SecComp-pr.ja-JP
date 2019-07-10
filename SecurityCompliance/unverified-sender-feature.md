@@ -2,7 +2,7 @@
 title: 未確認の送信者
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 04/25/2019
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: フィッシングメッセージがメールボックスに到達しないようにするため、Outlook.com および web 上の Outlook では、送信者が本人であることを確認し、疑わしいメッセージを迷惑メールとしてマークします。
-ms.openlocfilehash: 92458a93a4da3e449061e4d2a4ba312d635c42cc
-ms.sourcegitcommit: 7f00f765e8fa674ce1c8c66f5b89b6bea45e13ac
+ms.openlocfilehash: a69af1efb634e1805f055d49ec5515f4b4252c3b
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34341625"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600263"
 ---
 # <a name="unverified-sender"></a>未確認の送信者
 
@@ -35,7 +35,7 @@ Web 上の Outlook.com および Outlook on the メッセージの送信者が�
 
 Office 365 をご利用のお客様の場合は、セキュリティ & コンプライアンスセンターを使用してこの機能を管理できます。 
 
-- Office 365 Security & コンプライアンスセンターでは、テナント管理者は、フィッシングポリシーの下にあるスプーフィング対策保護を使用して、この機能をオンまたはオフにすることができます。 また、' Get-antiphishpolicy ' コマンドレットを使用して管理することもできます。 詳細については、「Office 365 のフィッシング対策保護」および「Get-antiphishpolicy」を参照してください。
+- Office 365 セキュリティ & コンプライアンスセンターでは、テナント管理者はフィッシングポリシーの下にあるスプーフィング対策保護を使用して、この機能をオンまたはオフにすることができます。 また、' Get-antiphishpolicy ' コマンドレットを使用して管理することもできます。 詳細については、「Office 365 のフィッシング対策保護」および「Get-antiphishpolicy」を参照してください。
 
     ![グラフィックインターフェイスで認証されていない送信者を編集する。](media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 

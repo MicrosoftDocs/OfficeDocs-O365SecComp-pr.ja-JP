@@ -2,8 +2,8 @@
 title: Office 365 のユーザーとして検疫済みメッセージを検索して解放する
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 5/19/2018
+manager: dansimp
+ms.date: 05/19/2018
 audience: Consumer/IW
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: Office 365 ユーザーは、次の2つの方法のいずれかを使用して、自分に直接送信されたスパム通知に応答するか (管理者がこの機能を設定している場合)、またはセキュリティ&amp;のコンプライアンスでスパム検疫機能を使用することによって、スパム検疫メッセージを管理できます。拠点.
-ms.openlocfilehash: ec4ebff4de0d1de44d7838bbf5baee46227ffe4d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 47c17e59f6f54d973eeaf761ecee6a1ac5a3dbba
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152819"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599353"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Office 365 のユーザーとして検疫済みメッセージを検索して解放する
 
@@ -73,7 +73,7 @@ Office 365 ユーザーとして、次の2つの方法のいずれかで送信�
     
   - **日付範囲**メッセージが検疫に送信された日付によってフィルター処理することを選択できます。 時刻を含む日付または日付の範囲を指定できます。 
     
-  - **有効期限**有効期限を指定してフィルターを適用するには、[**高度なフィルター**] を選択します。 今後24時間以内 (今日 48)、次の週 (次の7日) 以内に検疫から削除するメッセージを選択できます。または、カスタムの時間間隔を選択することもできます。
+  - **有効期限**有効期限を指定してフィルターを適用するには、[**高度なフィルター**] を選択します。 今後24時間以内 (**今日**48)、次の週 (次の**7**日) 以内に検疫から削除するメッセージ**** を選択できます。または、カスタムの時間間隔を選択することもできます。
     
     > [!IMPORTANT]
     > 既定では、スパムメッセージと一括メッセージは、30日間検疫に保持されます。 ただし、この期間は構成が可能であり、管理者が別の検疫の保存期間を設定している可能性があります。 Office 365 では、検疫からメッセージを削除しても、それを取得することはできません。 

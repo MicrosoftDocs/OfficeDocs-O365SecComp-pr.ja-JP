@@ -2,7 +2,7 @@
 title: Office 365 でユーザーのスパム通知を使って検疫済みメッセージを解放して報告する
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 03/14/2019
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: 管理者がユーザーの通知を有効にした場合、スパム、大量、またはフィッシングメッセージとして識別されたメールボックスに送信されたメッセージを一覧表示する通知メッセージを受け取ります。 通知された後にメッセージを解放または報告することができます。
-ms.openlocfilehash: eb16e6a24bb4a2f30b7bcb33051b62afdeb9e250
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 887dab0df489e6f71266a6fdabfdd04f26a14ded
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156039"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598443"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Office 365 でユーザーのスパム通知を使って検疫済みメッセージを解放して報告する
 
@@ -48,9 +48,9 @@ ms.locfileid: "34156039"
 
 - メッセージがスパムではなく、Office 365 がメールボックスにメッセージを送信する場合は、**リリースを解放**します。
 
-- **Release &** メッセージがスパムではない場合に、[送信者を許可する] をクリックして、今後の電子メールに対応するように、Office 365 に送信者を信頼できる差出人と受信者の一覧に追加します。 管理者には、[信頼できる差出人のリスト] を上書きする、組織全体にわたる許可/ブロック構成が存在する可能性があることに注意してください。
+- **Release &** メッセージがスパムではない場合に送信者に送信を許可し、今後の電子メールに対応するように Office 365 で [差出人セーフリスト] と [受信者] 一覧に送信者を追加します。 管理者には、[信頼できる差出人のリスト] を上書きする、組織全体にわたる許可/ブロック構成が存在する可能性があることに注意してください。
 
-- メッセージがスパムではなく、メールボックスにメッセージを送信して分析のために Microsoft に報告する場合は、 **_AMP_ レポートをリリース**します。
+- メッセージがスパムではなく、メールボックスにメッセージを送信して分析のために Microsoft に報告する場合は **& レポートをリリース**します。
 
 - Office 365 で、受信拒否リストに送信者を追加する場合は、[**ブロック**] を選択します。
 

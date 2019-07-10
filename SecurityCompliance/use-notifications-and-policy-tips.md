@@ -2,7 +2,7 @@
 title: メール通知を送信して、DLP ポリシーのポリシーのヒントを表示する
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 06/14/2019
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'ポリシー ヒントは、誰かがコンテンツを使用していて、それが DLP ポリシーと競合している場合に表示される通知または警告です。メール通知とポリシー ヒントを使用して、組織のポリシーに関する認識を高め、ユーザーの教育に役立てることができます。また、業務上の正当な理由がある場合や、ポリシーが誤検知した場合にブロックされないように、ユーザーにポリシーを上書きするオプションを提供することもできます。 '
-ms.openlocfilehash: 4de22c8ad8a45cf1489e72516d30f078889774e3
-ms.sourcegitcommit: 9df5bf99c1860ace0c5cc90647733d075be412ad
+ms.openlocfilehash: 524499c7d530115ad5938d0ec60616afe1d174ff
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34948905"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600603"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>メール通知を送信して、DLP ポリシーのポリシーのヒントを表示する
 

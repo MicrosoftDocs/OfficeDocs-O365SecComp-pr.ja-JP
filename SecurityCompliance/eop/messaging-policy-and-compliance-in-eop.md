@@ -1,8 +1,8 @@
 ---
 title: EOP のメッセージングのポリシーとコンプライアンス
-ms.author: krowley
-author: kccross
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyP
+manager: dansimp
 ms.date: 3/9/2015
 audience: ITPro
 ms.topic: article
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 206e6311-f96d-4c81-8ef2-171bcad4caa5
 description: Microsoft Exchange Online Protection は、電子メール データの管理に役立つメッセージング ポリシーとコンプライアンス機能を提供します。
-ms.openlocfilehash: fd3221117cb3113f975b4ad512cee72a36c4a307
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f94403ae9b4f76cf1d314ce2415786bcf3b6f8e2
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153079"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599533"
 ---
 # <a name="messaging-policy-and-compliance-in-eop"></a>EOP のメッセージングのポリシーとコンプライアンス
 

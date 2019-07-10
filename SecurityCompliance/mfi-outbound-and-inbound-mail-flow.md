@@ -2,26 +2,26 @@
 title: 送信と受信のメール フロー
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 ms.date: 8/7/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
-description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードの送信メールフローウィジェットと受信メールフローウィジェットについて学習できます。
-ms.openlocfilehash: 629599f6a71c1b871abb819ae4cdd339ffa5e56b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードの送信および受信メールフローウィジェットについて学習できます。
+ms.openlocfilehash: 349fdcba3bd8dc2e8be55cf94f9c1e526a78c37c
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158729"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598043"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>送信と受信のメール フロー
 
 **送信メールフロー**ウィジェットは、**コネクタレポート**と以前の**TLS 概要レポート**の情報を1つの場所で結合します。
 
-![セキュリティ & コンプライアンスセンターのメールフローダッシュボードの送信および受信メールフローレポート](media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
+![セキュリティ & コンプライアンスセンターのメールフローダッシュボードの [送信および受信メールフロー] レポート](media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
 
 ウィジェットの情報は、Office 365 のコネクタと TLS メッセージ保護に関連しています。 詳細については、以下のトピックを参照してください。
 
@@ -51,4 +51,4 @@ Insights コネクタの潜在的な TLS 暗号化の問題に注意を向ける
 
 ## <a name="see-also"></a>関連項目
 
-メールフローダッシュボードの他のメールフローインサイトの詳細については、「 [Security &/コンプライアンスセンター」の「mail flow insights](mail-flow-insights.md)」を参照してください。
+メールフローダッシュボードのその他のメールフローインサイトの詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights.md)」を参照してください。

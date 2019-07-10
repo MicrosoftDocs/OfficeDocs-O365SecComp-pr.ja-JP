@@ -1,8 +1,8 @@
 ---
 title: EOP でのエンドユーザー スパム通知の構成
-ms.author: krowley
-author: kccross
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyp
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: エンド ユーザー向けスパム通知は、既定の会社全体のコンテンツ フィルター ポリシーに対して、またはドメインに適用されるカスタム コンテンツ フィルター ポリシーに対して構成できます。
-ms.openlocfilehash: 66d5cd5fe9456c57c62a3c15710ce84d2e2d6631
-ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
+ms.openlocfilehash: 761f8660dc19f2626ecb5331370f87e0f4c3963a
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857647"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600203"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>EOP でのエンドユーザー スパム通知の構成
   

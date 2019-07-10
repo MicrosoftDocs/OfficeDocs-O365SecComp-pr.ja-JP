@@ -2,19 +2,19 @@
 title: メール ループのインサイト
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
-description: 管理者は、Security & コンプライアンスセンターのメールフローダッシュボードにあるメールループについて理解できます。
-ms.openlocfilehash: eddd65bb02fb0ca0d64b0cf9e35a7e40c29e47c5
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードにあるメールループについて理解できます。
+ms.openlocfilehash: 00dfdcb87bce8ced58195ead88954c90c32c54a2
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158669"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598123"
 ---
 # <a name="mail-loop-insight"></a>メール ループのインサイト
 
@@ -28,4 +28,4 @@ ms.locfileid: "34158669"
 
 ## <a name="see-also"></a>関連項目
 
-メールフローダッシュボードの他のメールフローインサイトの詳細については、「 [Security &/コンプライアンスセンター」の「mail flow insights](mail-flow-insights.md)」を参照してください。
+メールフローダッシュボードのその他のメールフローインサイトの詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights.md)」を参照してください。

@@ -2,19 +2,19 @@
 title: SMTP Auth クライアントのレポート
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: 管理者は、Security & コンプライアンスセンターのメールフローダッシュボードの SMTP Auth クライアントレポートについて学習できます。
-ms.openlocfilehash: fde5be59e2b8a86b2bac6fc793293d8887670746
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードの SMTP 認証クライアントレポートについて学習できます。
+ms.openlocfilehash: 21d2446bd7441f17c2371186d098118c6403de0c
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158599"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598133"
 ---
 # <a name="smtp-auth-clients-report"></a>SMTP Auth クライアントのレポート
 
@@ -22,7 +22,7 @@ ms.locfileid: "34158599"
 
 メールフローダッシュボードに表示されるウィジェットは、過去7日間に SMTP 認証プロトコルを使用したユーザーまたはサービスアカウントの数を示します。
 
-![セキュリティ & コンプライアンスセンターのメールフローダッシュボードにある SMTP 認証クライアントのレポート](media/smtp-auth-clients-report-selected.png)
+![セキュリティ & コンプライアンスセンターのメールフローダッシュボードの SMTP 認証クライアントのレポート](media/smtp-auth-clients-report-selected.png)
 
 ウィジェットをクリックすると、過去1週間の TLS 使用量とボリュームの集計ビューを表示するポップアップが表示されます。
 
@@ -50,4 +50,4 @@ Tls**使用率**ピボットは、Office 365 の tls 1.0 と tls 1.1 の今後�
 
 ## <a name="see-also"></a>関連項目
 
-メールフローダッシュボードの他のメールフローインサイトの詳細については、「 [Security &/コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。
+メールフローダッシュボードのその他のメールフローインサイトの詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。

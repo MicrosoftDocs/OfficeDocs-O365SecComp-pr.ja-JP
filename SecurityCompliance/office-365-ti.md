@@ -2,7 +2,7 @@
 title: Office 365 脅威の調査および対応
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 03/18/2019
 audience: Admin
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection の脅威インテリジェンス機能が、組織に対する脅威を調査し、マルウェア、フィッシング、および Office 365 がユーザーに代わって検出したその他の攻撃に対応し、脅威を検索する方法について説明します。切り替える.
-ms.openlocfilehash: c8b0815368e80151f8ee55161b9bcbaa98065228
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 7e0ce37b33ea2c019005585fd70107145fbfc8aa
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852811"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598083"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 脅威の調査および対応
 
@@ -34,9 +34,7 @@ Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-
 
 4. メールベースの重要な脅威に対する自動調査と応答
     
-> [!IMPORTANT]
-> **Office 365 Advanced Threat protection And threat の調査と応答 (旧称 office 365 Threat 知能) は、office 365 Advanced Threat Protection プラン 2**と、に含まれている追加の脅威保護機能とともに提供されています。[microsoft 365 e5](https://www.microsoft.com/microsoft-365/enterprise/home)、 [microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)、Office 365 E5、office 365 A5 などの特定のサブスクリプション。Office 365 ATP を含まないサブスクリプションが組織にある場合は、ATP をアドオンとして購入する可能性があります。 詳細については、「 [office 365 Advanced Threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [Office 365 Advanced threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)」を参照してください。 
-  
+ 
 ## <a name="whats-changing"></a>変更点
 
 以前は、office 365 脅威インテリジェンスは Office 365 E5 などのサブスクリプションに含まれていました。 これは、脅威の調査と応答機能が Office 365 Advanced Threat Protection プラン 2 (およびこれは Office 365 E5 に含まれています) の一部であるためです。 

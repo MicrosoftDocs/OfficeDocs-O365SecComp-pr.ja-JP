@@ -2,7 +2,7 @@
 title: 迷惑メールとバルク メールの違い
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 1/7/2015
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: お客様が迷惑メールとバルクメールメッセージの違いを askwhat ことがありますか。このトピックの目的は、Exchange Online と Exchange Online Protection (EOP) の両方で使用可能なさまざまなオプションについて説明し、その違いを説明することです。
-ms.openlocfilehash: f0e80b460af2ff5b51f5380063780ee653e00b3d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: ee684fb079b11fd345eae6e2c8f5980fcbca5cb0
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155989"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598293"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>迷惑メールとバルク メールの違い
 

@@ -1,8 +1,8 @@
 ---
 title: EOP で受信者と管理役割グループを管理する
-ms.author: krowley
-author: kccross
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyP
+manager: dansimp
 ms.date: 3/9/2015
 audience: ITPro
 ms.topic: article
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2041a048-8d78-4b76-a91f-43ea43a858bd
 description: Microsoft Exchange Online Protection (EOP) には、メールの受信者を管理するためのいくつかの方法が備わっています。以下のトピックと関連するサブトピックでは、受信者の管理と管理役割グループ アクセス許可の割り当てに関する情報と構成手順を提供します。
-ms.openlocfilehash: 3abc23190a4ad8fdacf0ce8a67afd6dba2c2b197
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 3b16f35b88e6ab46022f52877e591dcf6580db77
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153099"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599573"
 ---
 # <a name="manage-recipients-and-admin-role-groups-in-eop"></a>EOP で受信者と管理役割グループを管理する
 

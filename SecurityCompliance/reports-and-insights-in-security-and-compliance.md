@@ -2,8 +2,8 @@
 title: セキュリティ/コンプライアンス センターのスマート レポートとインサイト
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
-ms.date: 7/19/2018
+manager: dansimp
+ms.date: 07/19/2018
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターのレポートと分析情報の概要について説明します。
-ms.openlocfilehash: e84aebe117735e50e205e3f79124f50d9dc71d75
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: ccdfd9e8a61a4cde64522a1cd2a3f17b063f6410
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408242"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601164"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Office 365 セキュリティ&amp; /コンプライアンスセンターのスマートレポートと洞察
 
@@ -59,7 +59,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターで利用�
 |**監査ログ** <br/> Office 365 のアクティビティ、ユーザー、ファイルまたはフォルダーなどに関する情報  <br/> |セキュリティ&amp; /コンプライアンスセンターで、[**検索&amp;調査** \> ] [**監査ログの検索**] に移動します。 <br/> |&amp; <br/> |
 |**コンプライアンスレポート** <br/> FedRAMP のレポート、ガバナンス、リスクとコンプライアンス レポート、ISO 情報セキュリティ管理レポート、Service Organization Controls の監査レポートと評価レポート  <br/> |セキュリティ&amp; /コンプライアンスセンターで、[**サービスアシュアランス** \> **コンプライアンスレポート**] に移動します。 <br/> |[Office 365 の&amp;セキュリティコンプライアンスを計画する](plan-for-security-and-compliance.md) <br/> |
   
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 レポートと分析の概要を理解できたので、次の手順では、レポートをカスタマイズ、管理、およびダウンロードする方法について説明します。 次の記事をご覧ください。
   

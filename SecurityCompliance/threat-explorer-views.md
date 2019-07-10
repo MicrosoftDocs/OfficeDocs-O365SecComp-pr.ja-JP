@@ -2,7 +2,7 @@
 title: 脅威エクスプローラーのビューとリアルタイムの検出
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 03/18/2019
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: 脅威エクスプローラーとリアルタイム検出で使用できるさまざまな種類のビューについて説明します。
-ms.openlocfilehash: 14cdbbd602e53615abec12bedbac2f16be40111f
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 71ec20daae45bee8385f24091850ea6223399eae
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408322"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600820"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーのビューとリアルタイムの検出
 
@@ -72,7 +72,7 @@ ms.locfileid: "34408322"
 
 ![検出された URL に関する詳細](media/ThreatExplorerEmailPhishURLDetails.png)
 
-## <a name="email--user-reported"></a>電子メール > ユーザーによる報告
+## <a name="email--user-reported"></a>電子メール > ユーザーによって報告される
 
 このレポートを表示するには、エクスプローラー (またはリアルタイムの検出) で、[**表示** > **メール** > **ユーザー-レポート**] を選択します。 このビューには、ユーザーが迷惑メール、迷惑メールではないメールとして報告した電子メールが表示されます。 
 
@@ -90,7 +90,7 @@ ms.locfileid: "34408322"
 
 一覧から項目を選択すると、追加の詳細が表示されます。
 
-## <a name="email--all-email"></a>電子メール > すべての電子メール
+## <a name="email--all-email"></a>すべてのメール > メール
 
 このレポートを表示するには、エクスプローラーで [**** > **すべてのメール**を**表示** > する] を選択します。 このビューには、フィッシングまたはマルウェアによって悪意があると識別された電子メールや、悪意のあるメール (通常の電子メール、スパム、およびバルクメール) など、すべての電子メールアクティビティが表示されます。 
 

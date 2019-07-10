@@ -2,7 +2,7 @@
 title: Office 365 メールのスパム対策保護
 ms.author: krowley
 author: kccross
-manager: laurawi
+manager: dansimp
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Exchange Online および Office 365 でスパムを防止するのに役立つスパム対策設定とフィルターについて説明します。 Office 365 で迷惑メールを過剰に取得する スパムフィルターとスパム対策ポリシー設定をカスタマイズできます。
-ms.openlocfilehash: 64048e2621082edae21285df8b8fd1bcbd2e7c4a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: c82fc343d37c44352638cef71c5b34d28e091fb1
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152329"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598273"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Office 365 メールのスパム対策保護
 

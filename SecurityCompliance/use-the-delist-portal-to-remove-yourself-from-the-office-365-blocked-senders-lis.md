@@ -2,8 +2,8 @@
 title: リストから除外のポータルを使って、Office 365 の受信拒否リストから自分自身を削除する
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 4/18/2016
+manager: dansimp
+ms.date: 04/18/2016
 audience: ITPro
 ms.topic: troubleshooting
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: Office 365 にメール アドレスがある受信者にメールを送信しようとするときに、エラー メッセージが返される場合があります。エラー メッセージを受信しないようにするには、リストから除外のポータルを使って、Office 365 の受信拒否リストから自分自身を削除します。
-ms.openlocfilehash: d63d8ffcd72789d8b8a7b7b825248ee8d0cc64a7
-ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
+ms.openlocfilehash: 18ec4956b8d37308e7ec35c8fc28f24d36cd2763
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857637"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598433"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>無効化ポータルを使って、Office 365 の受信拒否リストから自分自身を削除する
 

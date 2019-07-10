@@ -2,8 +2,8 @@
 title: Exchange Online でエラーコード 5.7.7 xx のメール配信の問題を修正する
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 6/11/2019
+manager: dansimp
+ms.date: 06/11/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Exchange Online でエラーコード 5.7.7 xx の電子メールの問題を解決する方法について説明します (テナントがメールの送信をブロックされた場合)。
-ms.openlocfilehash: dbdfdeb351125442018e520d72f953e116d8e1a8
-ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
+ms.openlocfilehash: d55bc1f8a051a7f9932528a75aac8f1efa18911c
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34865512"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599333"
 ---
 # <a name="fix-email-delivery-issues-for-error-code-577xx-in-exchange-online"></a>Exchange Online でエラーコード 5.7.7 xx のメール配信の問題を修正する
 

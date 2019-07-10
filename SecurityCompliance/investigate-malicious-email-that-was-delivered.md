@@ -2,7 +2,7 @@
 title: 配信された悪意のある電子メールを検索して調査する (Office 365 の脅威の調査と応答
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 03/19/2019
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 脅威の調査と応答機能を使用して、悪意のある電子メールを検索して調査する方法について説明します。
-ms.openlocfilehash: febcf6704b1ba9dc23bf4e698715fb4b929b998b
-ms.sourcegitcommit: d3b2bffa8af5f19d97fe9771068c80705b890e85
+ms.openlocfilehash: d96083f0f48136b1c789fa83f9e9069d0dfccf4d
+ms.sourcegitcommit: 5abe4c11bf3c0659180c7812dd26be9689ab01ca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "35414807"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35605452"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>配信された悪意のある電子メールを検索して調査する (Office 365 Advanced Threat Protection プラン 2)
 
@@ -78,10 +78,21 @@ ms.locfileid: "35414807"
 1. に[https://protection.office.com](https://protection.office.com)移動して、Office 365 の職場または学校のアカウントを使用してサインインします。 これにより、セキュリティ&amp;コンプライアンスセンターに移動します。 
     
 2. 左側のナビゲーションで、[**脅威管理** \> **エクスプローラー**] を選択します。
-<!--Comment>
-![Threat Explorer with Delivery Action and Delivery Location fields.](media/ThreatExFields.PNG)
 
-    
+
+![配信アクションと配信場所フィールドを含む脅威エクスプローラー。](media/ThreatExFields.PNG)
+
+この図の新しい [特別な操作] 列が表示されることがあります。 この機能は、管理者に電子メールの処理の結果を伝えることを目的としています。 脅威エクスプローラの*電子メールのタイムライン*の最後に特別なアクションが更新されることがあります。これは、管理者にとって、探しやすさを向上させるための新機能です。
+
+メールが到着した後に発生したイベントを理解するために、さまざまな場所をチェックするのにかかる時間が短くなるため、電子メールのタイムラインはランダム化されています。 複数のイベントが電子メールで同時に発生するか、または同じ時刻に終了すると、これらのイベントがタイムラインビューに表示されます。 メールへの配信後に発生する一部のイベントは、[特別な操作] 列に記録されます。 メールの*電子メールタイムライン*からの情報とメールの送信後の*特別なアクション*を組み合わせることにより、管理者は、ポリシーの動作、メールが最後にルーティングされた場所、そして場合によっては最後の評価はでした。 [特殊なアクション] 列には、配信アクションと配信場所と同じ場所でアクセスできますが、電子メールのタイムラインを表示するには、次のようにします。
+
+1. 電子メールの件名をクリックします。
+2. 表示されたパネルで、[*電子メールタイムライン*] をクリックします。 (「概要」、「詳細」、「et cetera」のように、パネル上の他の見出しの中に表示されます)。
+
+電子メールのタイムラインを開くと、そのメールの配信後イベントを示す表が表示されます。また、電子メールについてさらにイベントが発生しない場合は、元の配信に対して1つのイベントが表示され、*ブロック*される結果を示すことができます。*フィッシング*のような verdict を使用します。 このタブには、電子メールのタイムライン全体をエクスポートするオプションもあります。これにより、タブ上のすべての詳細がエクスポートされ、電子メール (件名、送信者、受信者、ネットワーク、およびメッセージ ID など) の詳細がエクスポートされます。
+
+
+<!--Comment>    
 3. In the View menu, choose **All email**.<br/>![Use the View menu to choose between Email and Content reports](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
 4. Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.<br/>![Threat Explorer showing data for all email](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Depending on the actions that were taken on email messages for your organization, you might see additional labels, such as **Blocked** or **Replaced**.)

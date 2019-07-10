@@ -2,7 +2,7 @@
 title: Office 365 で受信拒否リストを作成する
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 5/6/2019
 audience: ITPro
 ms.topic: article
@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: 受信拒否リストのオプションには、Outlook のブロックされた送信者、スパム対策送信者/ドメイン禁止リスト、IP 禁止一覧、および Exchange トランスポートルール (Etr) がメールフロールールとも呼ばれます。
-ms.openlocfilehash: 9933cb79b7dce949384815a7b2ed8a9ac8a7824b
-ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
+ms.openlocfilehash: 861fa0e47980a6bc295672cf1e8e35954c6f1dfb
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017689"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599993"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>Office 365 で受信拒否リストを作成する
 
@@ -48,6 +48,8 @@ ms.locfileid: "35017689"
 ## <a name="use-anti-spam-policy-senderdomain-block-lists"></a>スパム対策ポリシーの送信者/ドメインブロックリストを使用する
 
 複数のユーザーが影響を受けている場合、範囲は広くなり、会社全体の送信者/ドメインブロックリストのスパム対策ポリシーを使用する必要があります。 詳細な手順については、「[スパムフィルターポリシーの構成](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-your-spam-filter-policies)」のドキュメントを参照してください。 このメソッドによってブロックされるメッセージはすべて、ポリシーに構成されたスパムアクションに従います。
+
+これらのリストの最大数は、約1000エントリです。
 
 ## <a name="use-exchange-transport-rules-etrs-to-block-specific-senders"></a>Exchange トランスポートルール (Etr) を使用して特定の送信者をブロックする
 

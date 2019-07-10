@@ -2,19 +2,19 @@
 title: 送信者ドメインの洞察を修正する
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: 管理者は、「Security & コンプライアンスセンターのメールフローダッシュボードでの送信者ドメインの洞察を修正する」を参照してください。
-ms.openlocfilehash: 181f224064b5f31fd17c348cc4547826fbcd29a9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードでの送信者ドメインの洞察を修正する方法について説明します。
+ms.openlocfilehash: 89c94616d612fa02c067e0bc2a89f5a3be704ed5
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158709"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598063"
 ---
 # <a name="fix-sender-domain-insight"></a>送信者ドメインの洞察を修正する
 
@@ -46,4 +46,4 @@ Office 365 にメッセージを配信するために使用された受信コネ
 
 ## <a name="see-also"></a>関連項目
 
-メールフローダッシュボードの他のメールフローインサイトの詳細については、「 [Security &/コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。
+メールフローダッシュボードのその他のメールフローインサイトの詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。

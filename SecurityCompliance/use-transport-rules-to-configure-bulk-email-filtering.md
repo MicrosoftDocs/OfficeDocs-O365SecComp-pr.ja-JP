@@ -2,7 +2,7 @@
 title: メールフロールールを使用して Exchange Online Protection で一括メールフィルターを構成する
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection でのメールフロールールをバルクメールフィルターに使用する方法について説明します。
-ms.openlocfilehash: 8ec0f8385393cfd573191b75dd56944f3a6123df
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 185a1174ba3e0d400926b03c073feb100f8e812d
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157879"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600790"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>メールフロールールを使用して Exchange Online Protection で一括メールフィルターを構成する
 

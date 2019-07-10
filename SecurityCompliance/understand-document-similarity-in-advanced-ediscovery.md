@@ -3,7 +3,7 @@ title: Office 365 の詳細な電子情報開示のドキュメントの類似�
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: 09/14/2017
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: 'ドキュメントの類似性の値を確認します。2つのファイルの resemblance の最小レベルは、重複していると見なされ、Office 365 の高度な電子情報開示で機能します。 '
-ms.openlocfilehash: ce9c2e6ea1d40c82b7a124c9d4d64ce915d266b0
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 78e4ab7d39600522370cd91f3d6561ff2fbdcf60
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156379"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600273"
 ---
 # <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>Office 365 の詳細な電子情報開示のドキュメントの類似性を理解する
 

@@ -2,7 +2,7 @@
 title: Exchange Online Protection を使用して社内メールボックスを保護する
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 6/1/2017
 audience: ITPro
 ms.topic: article
@@ -16,20 +16,20 @@ search.appverid:
 ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
 ms.collection:
 - M365-security-compliance
-description: 一部またはすべてのメールボックスを社内でホストすることを計画している場合でも、Exchange Online Protection (EOP) を使用してメールボックスを保護することができます。 コネクタを構成するには、アカウントが Office 365 グローバル管理者または Exchange 会社の管理者 (Organization Management 役割グループ) である必要があります。 Office 365 のアクセス許可と Exchange のアクセス許可との関係の詳細については、「365 office 2013 で運用されている管理者ロールの割り当て」を参照してください。 すべての Exchange メールボックスがオンプレミスである場合は、次の手順に従って EOP サービスを設定します。
-ms.openlocfilehash: 20fa94a356823e624fcb42dc493d555cec3fe523
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 一部またはすべてのメールボックスを社内でホストすることを計画している場合でも、Exchange Online Protection (EOP) を使用してメールボックスを保護することができます。 コネクタを構成するには、アカウントが Office 365 グローバル管理者または Exchange 会社の管理者 (Organization Management 役割グループ) である必要があります。 Office 365 のアクセス許可と Exchange のアクセス許可との関係の詳細については、「365 Office 2013 で運用されている管理者ロールの割り当て」を参照してください。 すべての Exchange メールボックスがオンプレミスである場合は、次の手順に従って EOP サービスを設定します。
+ms.openlocfilehash: 787c01ff7d06943b51916675b9e30dc3f020d5e1
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156939"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600493"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>Exchange Online Protection を使用して社内メールボックスを保護する
 
 > [!NOTE]
 > この記事は、中国で21Vianet が運営する Office 365 にのみ適用されます。 
   
-一部またはすべてのメールボックスを社内でホストすることを計画している場合でも、Exchange Online Protection (EOP) を使用してメールボックスを保護することができます。 コネクタを構成するには、アカウントが Office 365 グローバル管理者または Exchange 会社の管理者 (Organization Management 役割グループ) である必要があります。 Office 365 のアクセス許可と Exchange のアクセス許可との関係の詳細については、「365 office 2013 で運用されている管理者ロールの割り当て」を参照してください。 すべての Exchange メールボックスがオンプレミスである場合は、次の手順に従って EOP サービスを設定します。 
+一部またはすべてのメールボックスを社内でホストすることを計画している場合でも、Exchange Online Protection (EOP) を使用してメールボックスを保護することができます。 コネクタを構成するには、アカウントが Office 365 グローバル管理者または Exchange 会社の管理者 (Organization Management 役割グループ) である必要があります。 Office 365 のアクセス許可と Exchange のアクセス許可との関係の詳細については、「 [365 office 2013 で運用されている管理者ロールの割り当て](https://support.office.com/article/d58b8089-cbfd-41ec-b64c-9cfcbef495ac)」を参照してください。 すべての Exchange メールボックスがオンプレミスである場合は、次の手順に従って EOP サービスを設定します。 
   
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>手順 1: Microsoft 365 管理センターを使用してドメインを追加して確認する
 
@@ -38,7 +38,7 @@ ms.locfileid: "34156939"
 2.  ポータルの手順に従って、ドメインの所有権を確認するために、該当する dns レコードを DNS ホストプロバイダーに追加します。 
     
 > [!TIP]
-> 「21vianet が運用する office 365 にドメインとユーザーを追加する」と「365 office の dns レコードを作成する」を参照してください。 dns レコードを管理するときは、ドメインをサービスに追加して dns を構成する際に参照するのに役立つリソースです。 
+> 「 [21vianet が運用する office 365 にドメインとユーザーを追加](https://support.office.com/article/1cd4839b-d051-46b8-ab9b-bc7752024e78)する」と「 [365 office の Dns レコードを作成](https://support.office.com/article/0669bf14-414d-4f51-8231-6b710ce7980b)する」を参照してください。 dns レコードを管理するときは、ドメインをサービスに追加して dns を構成する際に参照するのに役立つリソースです。 
   
 ### <a name="step-2-add-recipients-and-configure-the-domain-type"></a>手順 2: 受信者を追加してドメインの種類を構成する
 

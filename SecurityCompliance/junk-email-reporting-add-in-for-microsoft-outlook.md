@@ -2,8 +2,8 @@
 title: Microsoft Outlook 用迷惑メール報告アドイン
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 1/14/2016
+manager: dansimp
+ms.date: 01/14/2016
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +12,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Microsoft Outlook 用迷惑メール報告アドインにより、Exchange Online と Exchange Online Protection のユーザーは分析用として迷惑 (スパム) メールを Microsoft に簡単に報告できます。これは、今後、サービスによってフィルター処理される迷惑メール メッセージの数と影響を削減するうえで役立ちます。この報告アドインは、Windows 7、Windows 8、Windows 10 で稼働する Microsoft Outlook 2013、Outlook 2010、Outlook 2007 との互換性を備え、次のようなメリットがあります。
-ms.openlocfilehash: 2304aa96d90629b95348ad59e8a6b45ad5ab1eae
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f92f4308b14d8512eeef534124e4d5dde518c603
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152549"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598943"
 ---
 # <a name="junk-email-reporting-add-in-for-microsoft-outlook"></a>Microsoft Outlook 用迷惑メール報告アドイン
 

@@ -2,7 +2,7 @@
 title: Office 365 に送信される迷惑メールへの対処
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 12/9/2016
 audience: ITPro
 ms.topic: reference
@@ -14,12 +14,12 @@ ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
 ms.collection:
 - M365-security-compliance
 description: Microsoft のメールの安全性ロードマップには、他に例を見ない製品間のアプローチが含まれます。Exchange Online Protection (EOP) のスパム対策とフィッシング対策のフィルタリング テクノロジは、Microsoft のメール プラットフォーム全体に適用され、最新のスパム対策とフィッシング策のツール、およびネットワーク全体にわたる技術革新をユーザーに提供しています。 EOP の目標は、包括的で使用可能なメール サービスを提供し、迷惑メール、詐欺目的のメールの脅威 (フィッシング)、マルウェアを検出し、それらからユーザーを保護することです。
-ms.openlocfilehash: 9ef8433279137a91a52f6a149844eff9c567150c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0a73d428e952c0c0cb340d91a52768a42ae204a1
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154519"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599393"
 ---
 # <a name="fighting-junk-email-sent-to-office-365"></a>Office 365 に送信される迷惑メールへの対処
 

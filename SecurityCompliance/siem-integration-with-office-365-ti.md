@@ -2,7 +2,7 @@
 title: Office 365 Advanced Threat Protection との SIEM の統合
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.date: 03/11/2019
 ms.collection:
 - M365-security-compliance
 description: 組織の SIEM サーバーと Office 365 Advanced Threat Protection および関連する脅威イベントを Office 365 アクティビティ管理 API に統合します。
-ms.openlocfilehash: da34073669d50cadcc01b5dd885d209a329c645f
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 4bfc82be273bb4581aa49bbbbdab613bd87b1b89
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077193"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600904"
 ---
 # <a name="siem-integration-with-office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection との SIEM の統合
 
@@ -41,7 +41,7 @@ SIEM サーバーまたはその他の同様のシステムが監査をポーリ
 |47|ThreatIntelligenceAtpContent|SharePoint Online、OneDrive for Business、および Microsoft Teams for Office 365 Advanced Threat Protection のファイルのフィッシングとマルウェアイベント。|
 
 > [!IMPORTANT]
-> Office 365 のグローバル管理者であるか、セキュリティ & コンプライアンスセンターに対してセキュリティ管理者の役割が割り当てられている必要があります。これは、SIEM と Office 365 Advanced Threat Protection を統合するための設定です。<br/>Office 365 環境の監査ログを有効にする必要があります。 この問題に関するヘルプを表示するには、「 [Office 365 監査ログ検索をオンまたはオフに](turn-audit-log-search-on-or-off.md)する」を参照してください。
+> Office 365 のグローバル管理者であるか、セキュリティ & コンプライアンスセンターに対してセキュリティ管理者の役割が割り当てられている必要があります。 Office 365 Advanced Threat Protection との SIEM の統合をセットアップする必要があります。<br/>Office 365 環境の監査ログを有効にする必要があります。 この問題に関するヘルプを表示するには、「 [Office 365 監査ログ検索をオンまたはオフに](turn-audit-log-search-on-or-off.md)する」を参照してください。
 
 ## <a name="related-topics"></a>関連項目
 

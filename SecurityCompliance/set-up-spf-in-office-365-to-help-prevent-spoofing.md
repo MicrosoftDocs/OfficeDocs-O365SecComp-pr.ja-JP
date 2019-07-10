@@ -2,7 +2,7 @@
 title: スプーフィングを防止するために Office 365 で SPF を設定する
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 2/19/2018
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: '概要: この記事では、Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。 SPF を使うと、カスタム ドメインから送信される送信電子メールを検証できます。'
-ms.openlocfilehash: 5194a9a8a8b694bc2dbac0eaf9b50517e46a9064
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8023f481ac998a04b6864f84c457a3f4c9608c1b
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158199"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600393"
 ---
 # <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>Office 365 で SPF を設定して、スプーフィングを防止する
 

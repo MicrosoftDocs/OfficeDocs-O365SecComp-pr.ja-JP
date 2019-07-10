@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、Microsoft 365 の高度な電子情報開示の新バージョンについて説明します。
-ms.openlocfilehash: 44bbc871295cb6b621ed6ee286c8dcd2c1cc1716
-ms.sourcegitcommit: ecc823c2a4f1465114cf1d3a4630e31c47779ddc
+ms.openlocfilehash: 45c7a35a27fea3891270ee72b1fd528a357ad825
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35079391"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598733"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 の高度な電子情報開示ソリューションの概要
 
@@ -81,7 +81,8 @@ Microsoft 365 の高度な電子情報開示ソリューションは、Office 36
 
 [**チェックセット**] タブを使用して、ライブシステムから収集したコンテンツを確認して分析セットに追加します。 *レビューセット*は、電子情報開示ワークフローの前のフェーズで収集した custodial データ (該当する場合は、非 wi-fi ダイヤルデータ) のデータ (つまり、データのオフラインコピー) の静的コレクションです。 検索結果をレビューセットに追加すると、コンテナーからファイルを抽出し、メタデータを抽出して、テキストを抽出するプロセスがトリガーされます。 この処理が完了すると、保管担当者から収集されたすべてのデータの新しいインデックスが作成され、レビューセットに追加されます。 データをレビューセットに追加した後で、さらに多くのクエリを実行して、ケースデータを絞り込んだり、データをテキストまたはネイティブファイル形式で表示したり、校閲セットのドキュメントに注釈を付け、墨したり、タグ付けしたりすることができます。 ドキュメントの重複、電子メールスレッド、テーマの識別など、高度な分析を実行することもできます。 データを、ケースに関連するものだけにカリングした後で、ドキュメントを直接ダウンロードするか、またはファイルのメタデータ、注釈、およびタグと共にエクスポートすることができます。 詳細については、以下を参照してください。
 
- –[高度な電子情報開示でケースデータを確認](reviewing-data-in-review-set.md)[し、高度な電子情報開示のレビューセットのデータを分析し](analyzing-data-in-review-set.md)ます。
+- [高度な電子情報開示でケースデータを確認する](reviewing-data-in-review-set.md)
+- [高度な電子情報開示のレビューセットのデータを分析する](analyzing-data-in-review-set.md)
 
 ## <a name="exporting-data-for-review-and-presentation"></a>レビューおよびプレゼンテーション用のデータのエクスポート
 

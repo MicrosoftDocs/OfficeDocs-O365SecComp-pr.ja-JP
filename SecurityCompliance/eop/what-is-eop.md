@@ -3,8 +3,8 @@ title: EOP とは
 ms.author: tracyp
 author: msfttracyp
 ms.reviewer: andypunt
-manager: laurawi
-ms.date: 2/25/2019
+manager: dansimp
+ms.date: 02/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,13 +13,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
-description: この入門ドキュメントは、Exchange Online Protection (EOP) といくつかの重要な用語を理解するのに役立ちます。 これは、exchange Online のクラウドホスト型メールボックスを保護している、または exchange Server 2016 などの社内メールボックスを保護している EOP スタンドアロン365のお客様に対して適用されます。
-ms.openlocfilehash: cbd286321301cecc8084040dc7538fce12d84466
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: この入門ドキュメントは、Exchange Online Protection (EOP) といくつかの重要な用語を理解するのに役立ちます。 これは、exchange Online のクラウドホスト型メールボックスを保護している、または Exchange Server 2016 などの社内メールボックスを保護している EOP スタンドアロン365のお客様に対して適用されます。
+ms.openlocfilehash: b0d3aac6e2c7e70ce298309d2053a7d6bb5920c1
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154476"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599463"
 ---
 ## <a name="what-is-exchange-online-protection-eop"></a>Exchange Online Protection (EOP) とは
 

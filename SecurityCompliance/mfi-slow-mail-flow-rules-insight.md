@@ -2,20 +2,20 @@
 title: 低速メール フローのルールのインサイト
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 ms.date: 5/3/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
-description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードに表示される低速メールフロールールについて理解できます。
-ms.openlocfilehash: 1adbae56bfcf022250b66bac2f3bfd01a7f13234
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードに記載されている低速メールフロールールについて理解できます。
+ms.openlocfilehash: 4477b388df321ee774ec7916a695cbfc69fc8e87
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158589"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598073"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>低速メール フローのルールのインサイト
 
@@ -29,7 +29,7 @@ ms.locfileid: "34158589"
 
 この洞察は、メールフローの遅延を減らすために、メールフロールールを特定し、微調整するのに役立ちます。
 
-![セキュリティ & コンプライアンスセンターのメールフローダッシュボードに記載されている低速メールフロールールについての理解](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+![セキュリティ & コンプライアンスセンターのメールフローダッシュボードに記載されている低速メールフロールールについての考察](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
 
 [詳細の**表示**] をクリックすると、フライアウトウィンドウが表示され、ルールを確認できます。 また、フライアウトウィンドウで [**サンプルメッセージの表示**] をクリックして、ルールによって影響を受けたメッセージの種類を確認することもできます。
 
@@ -37,4 +37,4 @@ ms.locfileid: "34158589"
 
 ## <a name="see-also"></a>関連項目
 
-メールフローダッシュボードの他のメールフローインサイトの詳細については、「 [Security &/コンプライアンスセンター」の「mail flow insights](mail-flow-insights.md)」を参照してください。
+メールフローダッシュボードのその他のメールフローインサイトの詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights.md)」を参照してください。

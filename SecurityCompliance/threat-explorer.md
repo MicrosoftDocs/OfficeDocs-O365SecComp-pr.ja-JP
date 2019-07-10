@@ -2,7 +2,7 @@
 title: 脅威エクスプローラー (およびリアルタイム検出)
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 06/20/2019
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターのエクスプローラー (およびリアルタイム検出) について説明します。
-ms.openlocfilehash: 3d2eab30b97655b692ed1bfe089b6a79834fd110
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 127652ccb1c32ce84d8c80213d737b095913db40
+ms.sourcegitcommit: 5abe4c11bf3c0659180c7812dd26be9689ab01ca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394352"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35605476"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラー (およびリアルタイム検出)
 
@@ -71,6 +71,9 @@ ms.locfileid: "35394352"
 5. 検疫–検疫内の電子メール。ユーザーのメールボックスには含まれません。
 6. Failed –メールがメールボックスに到達できませんでした。
 7. 削除-電子メールはメールフローのどこかに失われます。
+
+電子メールのタイムラインは、管理者にとって、探しやすさを向上させるための別の新しいエクスプローラー機能です。 イベントを理解するためにさまざまな場所をチェックするのにかかる時間が短くなるため、ランダム化が減少します。 複数のイベントが電子メールで同時に発生するか、または同じ時刻に終了すると、これらのイベントがタイムラインビューに表示されます。 実際、メールへの配信の後に発生する一部のイベントは、[特殊な操作] 列に記録されます。 メールのタイムラインからの情報をメールの送信後の特別なアクションと組み合わせることにより、管理者は、ポリシーがどのように機能するか、メールが最後にルーティングされたか、場合によっては最終的な評価がどのようなものかを把握できるようになります。
+
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>テクノロジによる電子メールで検出されたマルウェアを参照
 

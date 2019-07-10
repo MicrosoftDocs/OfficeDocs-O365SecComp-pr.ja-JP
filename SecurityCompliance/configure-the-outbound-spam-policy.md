@@ -2,7 +2,7 @@
 title: 送信スパム ポリシーを構成する
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 11/10/2016
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: 送信電子メールの送信にサービスを使用すると、送信スパムフィルターは常に有効になり、それによって、そのサービスと目的の受信者を使用して組織が保護されます。
-ms.openlocfilehash: 517a78338f9a9e1c3611f78daf6f57e37c67f165
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: c3eb663d569e717597ff926896ed3daefb48186e
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153829"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600063"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>送信スパム ポリシーを設定する
 
