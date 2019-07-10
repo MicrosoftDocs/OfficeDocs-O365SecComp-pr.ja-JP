@@ -2,74 +2,74 @@
 title: キューのアラートとキュー
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
-description: 管理者は、Security & コンプライアンスセンターのメールフローダッシュボードのキューのアラートとキューについて説明しています。
-ms.openlocfilehash: 149a1d82b3627037db2ab5c6e1427c79a49535bd
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードのキューのアラートとキューについて説明しています。
+ms.openlocfilehash: 9ab84c3c1840b3212e67f3a276784284c64e8d2e
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158759"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598143"
 ---
-# <a name="queue-alerts-and-queues"></a><span data-ttu-id="4d24a-103">キューのアラートとキュー</span><span class="sxs-lookup"><span data-stu-id="4d24a-103">Queue alerts and Queues</span></span>
+# <a name="queue-alerts-and-queues"></a><span data-ttu-id="548b6-103">キューのアラートとキュー</span><span class="sxs-lookup"><span data-stu-id="548b6-103">Queue alerts and Queues</span></span>
 
-## <a name="queue-alerts"></a><span data-ttu-id="4d24a-104">キューのアラート</span><span class="sxs-lookup"><span data-stu-id="4d24a-104">Queue alerts</span></span>
+## <a name="queue-alerts"></a><span data-ttu-id="548b6-104">キューのアラート</span><span class="sxs-lookup"><span data-stu-id="548b6-104">Queue alerts</span></span>
 
-<span data-ttu-id="4d24a-105">コネクタを使用して Office 365 組織からオンプレミスまたはパートナーの電子メールサーバーにメッセージを送信できない場合、メッセージは Office 365 でキューに入れられます。</span><span class="sxs-lookup"><span data-stu-id="4d24a-105">When messages can't be sent from your Office 365 organization to your on-premises or partner email servers using connectors, the messages are queued in Office 365.</span></span> <span data-ttu-id="4d24a-106">このような状態になる一般的な例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4d24a-106">Common examples that cause this condition are:</span></span>
+<span data-ttu-id="548b6-105">コネクタを使用して Office 365 組織からオンプレミスまたはパートナーの電子メールサーバーにメッセージを送信できない場合、メッセージは Office 365 でキューに入れられます。</span><span class="sxs-lookup"><span data-stu-id="548b6-105">When messages can't be sent from your Office 365 organization to your on-premises or partner email servers using connectors, the messages are queued in Office 365.</span></span> <span data-ttu-id="548b6-106">このような状態になる一般的な例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="548b6-106">Common examples that cause this condition are:</span></span>
 
-- <span data-ttu-id="4d24a-107">コネクタが正しく構成されていません。</span><span class="sxs-lookup"><span data-stu-id="4d24a-107">The connector is incorrectly configured.</span></span>
+- <span data-ttu-id="548b6-107">コネクタが正しく構成されていません。</span><span class="sxs-lookup"><span data-stu-id="548b6-107">The connector is incorrectly configured.</span></span>
 
-- <span data-ttu-id="4d24a-108">オンプレミス環境でネットワークまたはファイアウォールの変更が行われています。</span><span class="sxs-lookup"><span data-stu-id="4d24a-108">There have been networking or firewall changes in your on-premises environment.</span></span>
+- <span data-ttu-id="548b6-108">オンプレミス環境でネットワークまたはファイアウォールの変更が行われています。</span><span class="sxs-lookup"><span data-stu-id="548b6-108">There have been networking or firewall changes in your on-premises environment.</span></span>
 
-<span data-ttu-id="4d24a-109">Office 365 は、引き続き48時間、配信を再試行します。</span><span class="sxs-lookup"><span data-stu-id="4d24a-109">Office 365 will continue to retry to delivery for 48 hours.</span></span> <span data-ttu-id="4d24a-110">48時間後に、メッセージは有効期限が切れて、配信不能レポート (Ndr またはバウンスメッセージとも呼ばれる) で送信者に返されます。</span><span class="sxs-lookup"><span data-stu-id="4d24a-110">After 48 hours, the messages will expire and will be returned to the senders in non-delivery reports (also known as a NDRs or bounce messages).</span></span>
+<span data-ttu-id="548b6-109">Office 365 は、引き続き48時間、配信を再試行します。</span><span class="sxs-lookup"><span data-stu-id="548b6-109">Office 365 will continue to retry to delivery for 48 hours.</span></span> <span data-ttu-id="548b6-110">48時間後に、メッセージは有効期限が切れて、配信不能レポート (Ndr またはバウンスメッセージとも呼ばれる) で送信者に返されます。</span><span class="sxs-lookup"><span data-stu-id="548b6-110">After 48 hours, the messages will expire and will be returned to the senders in non-delivery reports (also known as a NDRs or bounce messages).</span></span>
 
-<span data-ttu-id="4d24a-111">キューに登録された電子メールのボリュームが事前に定義されたしきい値 (既定値は2000メッセージ) を超えた場合、**最近の通知**のメールフローダッシュボードで通知が使用可能になり、管理者はメール通知を受信します (ユーザーの代替メールアドレス)。.</span><span class="sxs-lookup"><span data-stu-id="4d24a-111">If the queued email volume exceeds the pre-defined threshold (the default value is 2000 messages), the alerts will be available in the mail flow dashboard at **Recent alerts**, and admins will receive an email notification (to their alternative email address).</span></span> <span data-ttu-id="4d24a-112">警告のしきい値、毎日の通知の制限、または通知の受信者を構成するには、以下の「**キューの警告をカスタマイズ**する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4d24a-112">To configure the alert threshold, daily notification limit, and/or recipients of the alert, see the **Customize queue alerts** section below.</span></span>
+<span data-ttu-id="548b6-111">キューに登録された電子メールのボリュームが事前に定義されたしきい値 (既定値は2000メッセージ) を超えた場合、**最近の通知**のメールフローダッシュボードで通知が使用可能になり、管理者はメール通知を受信します (ユーザーの代替メールアドレス)。.</span><span class="sxs-lookup"><span data-stu-id="548b6-111">If the queued email volume exceeds the pre-defined threshold (the default value is 2000 messages), the alerts will be available in the mail flow dashboard at **Recent alerts**, and admins will receive an email notification (to their alternative email address).</span></span> <span data-ttu-id="548b6-112">警告のしきい値、毎日の通知の制限、または通知の受信者を構成するには、以下の「**キューの警告をカスタマイズ**する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="548b6-112">To configure the alert threshold, daily notification limit, and/or recipients of the alert, see the **Customize queue alerts** section below.</span></span>
 
 ![セキュリティ & コンプライアンスセンターのメールフローダッシュボードの [最近の通知] 領域でのキューのアラート](media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
 
-## <a name="customize-queue-alerts"></a><span data-ttu-id="4d24a-114">キューの通知をカスタマイズする</span><span class="sxs-lookup"><span data-stu-id="4d24a-114">Customize queue alerts</span></span>
+## <a name="customize-queue-alerts"></a><span data-ttu-id="548b6-114">キューの通知をカスタマイズする</span><span class="sxs-lookup"><span data-stu-id="548b6-114">Customize queue alerts</span></span>
 
-<span data-ttu-id="4d24a-115">メールフローの insights メッセージという名前のアラートポリシー**が遅延して**います (以下の例のスクリーンショットの例では\*\*\*\* \> \*\*\*\*、[**電子メール通知の送信**] チェックボックスをオンにしています)。</span><span class="sxs-lookup"><span data-stu-id="4d24a-115">Mail flow insights create an alert policy named **Messages have been delayed** (the **Send email notifications** check box in the example screen shot below) found in **Alerts** \> **Alert Policies**.</span></span> <span data-ttu-id="4d24a-116">ポリシーをクリックして、しきい値と警告の受信者を変更することができます。</span><span class="sxs-lookup"><span data-stu-id="4d24a-116">You can modify the threshold and alert recipients by clicking on the policy.</span></span>
+<span data-ttu-id="548b6-115">メールフローの insights メッセージという名前のアラートポリシー**が遅延して**います (以下の例のスクリーンショットの例では\*\*\*\* \> \*\*\*\*、[**電子メール通知の送信**] チェックボックスをオンにしています)。</span><span class="sxs-lookup"><span data-stu-id="548b6-115">Mail flow insights create an alert policy named **Messages have been delayed** (the **Send email notifications** check box in the example screen shot below) found in **Alerts** \> **Alert Policies**.</span></span> <span data-ttu-id="548b6-116">ポリシーをクリックして、しきい値と警告の受信者を変更することができます。</span><span class="sxs-lookup"><span data-stu-id="548b6-116">You can modify the threshold and alert recipients by clicking on the policy.</span></span>
 
 ![通知ナビゲーション](media/efb95976-9e0b-484e-a2fd-093c5bc7a40f.png)
 
-<span data-ttu-id="4d24a-118">新しいポリシー情報ブレードが表示されるので、[**ポリシーの編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4d24a-118">You'll see a new policy information blade, you can now click **Edit Policy**.</span></span>
+<span data-ttu-id="548b6-118">新しいポリシー情報ブレードが表示されるので、[**ポリシーの編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="548b6-118">You'll see a new policy information blade, you can now click **Edit Policy**.</span></span>
 
 ![ポリシーの編集](media/ed2aceae-3ee2-4849-a17e-87915987a7dd.png)
 
-<span data-ttu-id="4d24a-120">情報ブレードが**編集ポリシー**に変更されます。</span><span class="sxs-lookup"><span data-stu-id="4d24a-120">The information blade will change to the **Edit Policy**.</span></span> <span data-ttu-id="4d24a-121">通知メールの受信者、1日に送信される通知の数の制限、および警告をトリガーする最小しきい値 (200 以上) を変更できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="4d24a-121">You can now change the recipients for the alert email, the limit on the number of notifications sent per day, and the minimum threshold to trigger the alert (200 or more).</span></span>
+<span data-ttu-id="548b6-120">情報ブレードが**編集ポリシー**に変更されます。</span><span class="sxs-lookup"><span data-stu-id="548b6-120">The information blade will change to the **Edit Policy**.</span></span> <span data-ttu-id="548b6-121">通知メールの受信者、1日に送信される通知の数の制限、および警告をトリガーする最小しきい値 (200 以上) を変更できるようになりました。</span><span class="sxs-lookup"><span data-stu-id="548b6-121">You can now change the recipients for the alert email, the limit on the number of notifications sent per day, and the minimum threshold to trigger the alert (200 or more).</span></span>
 
 ![ポリシーブレードを編集する](media/c657cc74-7867-474c-b2c9-dc478449f990.png)
 
-## <a name="queue-alert-details"></a><span data-ttu-id="4d24a-123">キュー警告の詳細</span><span class="sxs-lookup"><span data-stu-id="4d24a-123">Queue alert details</span></span>
+## <a name="queue-alert-details"></a><span data-ttu-id="548b6-123">キュー警告の詳細</span><span class="sxs-lookup"><span data-stu-id="548b6-123">Queue alert details</span></span>
 
-<span data-ttu-id="4d24a-124">アラートをクリックすると、アラートの詳細がフライアウトウィンドウに表示されます。</span><span class="sxs-lookup"><span data-stu-id="4d24a-124">When you click the alert, the alert details appear in a flyout pane.</span></span>
+<span data-ttu-id="548b6-124">アラートをクリックすると、アラートの詳細がフライアウトウィンドウに表示されます。</span><span class="sxs-lookup"><span data-stu-id="548b6-124">When you click the alert, the alert details appear in a flyout pane.</span></span>
 
 ![セキュリティ & コンプライアンスセンターのメールフローダッシュボードの [最近の通知] 領域でキューのアラートを選択する](media/1f6b0e96-5b2c-41ef-9684-9d813b3fabe6.png)
 
 ![セキュリティ & コンプライアンスセンターのキュー警告詳細ポップアップ](media/105c8fff-912f-4763-8806-2740ebdecd4b.png)
 
-<span data-ttu-id="4d24a-127">アラート詳細の [**キューの表示**] をクリックすると、キューの詳細、問題、および新しいフライアウトウィンドウで利用可能な修正へのリンクが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4d24a-127">You can click **View queue** in the alert details to see the queue details, problems, and links to the available fixes in a new flyout pane.</span></span>
+<span data-ttu-id="548b6-127">アラート詳細の [**キューの表示**] をクリックすると、キューの詳細、問題、および新しいフライアウトウィンドウで利用可能な修正へのリンクが表示されます。</span><span class="sxs-lookup"><span data-stu-id="548b6-127">You can click **View queue** in the alert details to see the queue details, problems, and links to the available fixes in a new flyout pane.</span></span>
 
 ![セキュリティ & コンプライアンスセンターのキュー警告詳細ポップアップ](media/8ff60955-55ef-4f32-a966-85e02cb608d1.png)
 
 ![アラートの詳細のキューを表示する](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
 
-## <a name="queues"></a><span data-ttu-id="4d24a-130">キュー</span><span class="sxs-lookup"><span data-stu-id="4d24a-130">Queues</span></span>
+## <a name="queues"></a><span data-ttu-id="548b6-130">キュー</span><span class="sxs-lookup"><span data-stu-id="548b6-130">Queues</span></span>
 
-<span data-ttu-id="4d24a-131">キュー内のメッセージボリュームがしきい値を超えていない場合でも、メールフローダッシュボードの [**キュー** ] 領域を使用して、キューに入れられたメッセージを1時間以上表示することができます。</span><span class="sxs-lookup"><span data-stu-id="4d24a-131">Even if the queued message volume hasn't exceeded the threshold, you can still use the **Queues** area of the mail flow dashboard to see messages that have been queued for more than one hour.</span></span> <span data-ttu-id="4d24a-132">キューの領域を\*\*\*\* 使用して、キューに入れられたメッセージ数 (0 はメールフローが OK であることを示します) を監視し、キューに入れられたメッセージの数が多すぎる前に処理を実行することができます。</span><span class="sxs-lookup"><span data-stu-id="4d24a-132">You can use the **Queues** area to monitor the number of queued messages (the value 0 indicates mail flow is OK) and take action before the number of queued messages becomes too large.</span></span>
+<span data-ttu-id="548b6-131">キュー内のメッセージボリュームがしきい値を超えていない場合でも、メールフローダッシュボードの [**キュー** ] 領域を使用して、キューに入れられたメッセージを1時間以上表示することができます。</span><span class="sxs-lookup"><span data-stu-id="548b6-131">Even if the queued message volume hasn't exceeded the threshold, you can still use the **Queues** area of the mail flow dashboard to see messages that have been queued for more than one hour.</span></span> <span data-ttu-id="548b6-132">キューの領域を\*\*\*\* 使用して、キューに入れられたメッセージ数 (0 はメールフローが OK であることを示します) を監視し、キューに入れられたメッセージの数が多すぎる前に処理を実行することができます。</span><span class="sxs-lookup"><span data-stu-id="548b6-132">You can use the **Queues** area to monitor the number of queued messages (the value 0 indicates mail flow is OK) and take action before the number of queued messages becomes too large.</span></span>
 
 ![セキュリティ & コンプライアンスセンターのメールフローダッシュボードのキュー](media/0ef6e2ef-dd22-4363-9d4a-b20a00babc9f.png)
 
-<span data-ttu-id="4d24a-134">キュー内のキューに入れられた\*\*\*\* メッセージの数をクリックすると、問題の解決方法に関するキューの詳細とガイダンスが、フライアウトのウィンドウに表示されます (キューの通知の詳細については、[**キューの表示**] をクリックした後に表示されるポップアップと同じポップアップ)。</span><span class="sxs-lookup"><span data-stu-id="4d24a-134">When you click the number of queued messages in **Queues**, the queue details and guidance for how to fix the issue will appear in a flyout pane (the same flyout that appears after you click **View queue** in the details of a queue alert).</span></span>
+<span data-ttu-id="548b6-134">キュー内のキューに入れられた\*\*\*\* メッセージの数をクリックすると、問題の解決方法に関するキューの詳細とガイダンスが、フライアウトのウィンドウに表示されます (キューの通知の詳細については、[**キューの表示**] をクリックした後に表示されるポップアップと同じポップアップ)。</span><span class="sxs-lookup"><span data-stu-id="548b6-134">When you click the number of queued messages in **Queues**, the queue details and guidance for how to fix the issue will appear in a flyout pane (the same flyout that appears after you click **View queue** in the details of a queue alert).</span></span>
 
 ![キューの詳細](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
 
-## <a name="see-also"></a><span data-ttu-id="4d24a-136">関連項目</span><span class="sxs-lookup"><span data-stu-id="4d24a-136">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="548b6-136">関連項目</span><span class="sxs-lookup"><span data-stu-id="548b6-136">See also</span></span>
 
-<span data-ttu-id="4d24a-137">メールフローダッシュボードの他のメールフローインサイトの詳細については、「 [Security &/コンプライアンスセンター」の「mail flow insights](mail-flow-insights.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4d24a-137">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights.md).</span></span>
+<span data-ttu-id="548b6-137">メールフローダッシュボードのその他のメールフローインサイトの詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="548b6-137">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights.md).</span></span>
