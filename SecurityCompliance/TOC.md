@@ -537,11 +537,11 @@
 ### [コンプライアンス マネージャー (プレビュー) の新機能](compliance-manager-release-notes.md)
 ### [コンプライアンス マネージャー (プレビュー) と共同作業する](working-with-compliance-manager.md)
 ### [コンプライアンス スコアの手法 (プレビュー)](compliance-score-methodology.md)
-## [情報障壁 (プレビュー)](information-barriers.md)
-### [情報障壁ポリシーの定義 (プレビュー)](information-barriers-policies.md)
-### [情報障壁ポリシーの属性 (プレビュー)](information-barriers-attributes.md)
-### [情報障壁のトラブルシューティング (プレビュー)](information-barriers-troubleshooting.md)
-### [情報障壁ポリシーの編集 (プレビュー)](information-barriers-edit-segments-policies.md.md)
+## [情報障壁](information-barriers.md)
+### [情報障壁ポリシーの定義](information-barriers-policies.md)
+### [情報障壁ポリシーの属性](information-barriers-attributes.md)
+### [情報障壁のトラブルシューティング](information-barriers-troubleshooting.md)
+### [情報障壁ポリシーの編集](information-barriers-edit-segments-policies.md.md)
 
 
 ## カスタマー キー
