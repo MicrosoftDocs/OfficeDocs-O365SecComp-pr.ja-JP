@@ -3,7 +3,7 @@ title: 迷惑メールを送信した後で制限付きユーザー ポータル
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 03/12/2019
+ms.date: 07/10/2019
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: ユーザーが、スパムとして分類された Office 365 から電子メールを継続的に送信した場合、それ以上メッセージを送信することはできません。
-ms.openlocfilehash: 80eb03ccb96f2178f168139234de8700b9b97e29
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 40d63bb452392041401fd1af6d0d6d4af67e5d2b
+ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601154"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35613655"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>迷惑メールを送信した後で制限付きユーザー ポータルからユーザーを削除する
 
@@ -71,6 +71,11 @@ ms.locfileid: "35601154"
 - メール通知をオン/オフにする
 - 必要な受信者を電子メールで送信する
 - 1日に受信する通知を制限する
+
+## <a name="checking-for-and-removing-restrictions-using-powershell"></a>PowerShell を使用した制限の確認と削除
+制限されたユーザーのための PowerShell コマンドは次のとおりです。
+- `Get-BlockedSenderAddress`: を実行して、電子メールの送信を制限するユーザーの一覧を取得します。
+- `Remove-BlockedSenderAddress`: を実行して、制限されていないユーザーを削除します。
 
 ## <a name="for-more-information"></a>関連情報
 
