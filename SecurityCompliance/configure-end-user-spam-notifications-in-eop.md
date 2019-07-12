@@ -13,12 +13,12 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: エンド ユーザー向けスパム通知は、既定の会社全体のコンテンツ フィルター ポリシーに対して、またはドメインに適用されるカスタム コンテンツ フィルター ポリシーに対して構成できます。
-ms.openlocfilehash: 761f8660dc19f2626ecb5331370f87e0f4c3963a
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 8e2c2bd6b3e5a29beccaccea032f650936584a06
+ms.sourcegitcommit: 9e2df36b05a2c93ce2629a7a5eda8f44159d114d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600203"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35628460"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>EOP でのエンドユーザー スパム通知の構成
   
@@ -41,7 +41,7 @@ ms.locfileid: "35600203"
 
 メッセージがスパムではなく、メールボックスにメッセージを送信して分析のために Microsoft に報告する場合は **& レポートをリリース**します。
 
-Office 365 で、受信拒否リストに送信者を追加する場合は、[**ブロック**] を選択します。
+[**送信者をブロック**する] Office 365 で、受信拒否リストに送信者を追加する場合。
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>事前に必要な知識
 <a name="sectionSection0"> </a>
