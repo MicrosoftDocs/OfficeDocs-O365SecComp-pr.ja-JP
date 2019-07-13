@@ -155,7 +155,7 @@ Starter pack は、特定の業界向けの Microsoft クラウドサービス�
 
 - **Audit Starter pack** -ユーザーこのスターターパックでは、監査コントロールとその他のツールを使用して、組織のリスクを軽減するように Microsoft クラウドサービスの実装を支援するためのガイダンスを提供します。
 
-これらのスターターパックにアクセスするには、「 **Service Trust Portal > 工業 & Regions > 工業ソリューション > 金融サービス**」にアクセスしてください。 スターターパックからドキュメントを開いたり、ダウンロードしたり、自分のライブラリに保存したりすることができます。
+これらのスターターパックにアクセスするには、「 **Service Trust Portal > Industries & Regions > Industry Solutions > Financial Services**」にアクセスしてください。 スターターパックからドキュメントを開いたり、ダウンロードしたり、自分のライブラリに保存したりすることができます。
 
 ## <a name="localization-support"></a>ローカライズのサポート
 
