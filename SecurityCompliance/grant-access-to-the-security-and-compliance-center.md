@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: ユーザーがセキュリティまたはコンプライアンス機能を管理する前に、Office 365 セキュリティ & コンプライアンスセンターでアクセス許可を割り当てる必要があります。
-ms.openlocfilehash: f11114ede37269f9b89c4d2b34c69f2d6db8a3f7
-ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
+ms.openlocfilehash: 7963a8c3db64e83566960abe9298b9a2d636ae53
+ms.sourcegitcommit: 6302a43d947a908dd10a8e40550b806f491692fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "35199741"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645122"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>ユーザーに Office 365 セキュリティ センターとコンプライアンス センターへのアクセス権を付与する
 
@@ -70,7 +70,7 @@ ms.locfileid: "35199741"
 2. 次の例で示すように、**Add-RoleGroupMember** コマンドを使用して、ユーザーを Organization Management の役割に追加できます。
 
    ```
-   Add-RoleGroupMember -Identity "OrganizationManagement" -Member MatildaS
+   Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
    **パラメーター**:
@@ -86,7 +86,7 @@ ms.locfileid: "35199741"
 ユーザーにセキュリティ & コンプライアンスセンターへのアクセス権が与えられたことを確認するには、次の例に示すように、 **add-rolegroupmember**コマンドレットを使用して組織の管理役割グループのメンバーを表示します。
   
 ```
-Get-RoleGroupMember -Identity "OrganizationManagement"
+Get-RoleGroupMember -Identity "Organization Management"
 ```
 
 構文とパラメーターの詳細については、「 [add-rolegroupmember](https://go.microsoft.com/fwlink/p/?LinkId=510860)」を参照してください。
