@@ -3,7 +3,7 @@ title: データ損失防止の概要
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/03/2019
+ms.date: 07/12/2019
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -15,17 +15,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: セキュリティ&amp; /コンプライアンスセンターのデータ損失防止 (DLP) ポリシーを使用すると、Office 365 全体の機密情報を特定、監視、および自動保護することができます。
-ms.openlocfilehash: 0199d43a7232b41dbbf1a5c67ab77ebe69d47a84
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 2f20b3e3ec7ec3178156ca76c82ec323022f1979
+ms.sourcegitcommit: ea630cf1cbaa98ede5ee320c71a0fad7d7def6fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077853"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35672926"
 ---
 # <a name="overview-of-data-loss-prevention"></a>データ損失防止の概要
 
 > [!NOTE]
-> データ損失防止機能は、最近、Office 365 E5 および Office 365 Advanced コンプライアンスの Microsoft Teams に追加されました。 機能の可用性の詳細については、「 [office 365 Service の説明: office 365 Security & コンプライアンスセンター](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)」を参照してください。
+> データ損失防止機能は、最近、Office 365 Advanced コンプライアンス用にライセンスされたユーザーのために Microsoft Teams のチャットおよびチャネルメッセージに追加されました。これはスタンドアロンオプションとして提供されており、Office 365 E5 および Microsoft 365 E5 コンプライアンスに含まれています。 ライセンス要件の詳細については、「 [Microsoft 365 テナントレベルサービスライセンスガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)」を参照してください。
 
 企業の標準や業界の規制に準拠するには、機密情報を保護し、不注意による開示を防止する必要があります。 機密情報には、クレジットカード番号、社会保障番号、医療記録などの財務データまたは個人を特定できる情報 (PII) を含めることができます。 Office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) ポリシーを使用すると、office 365 全体で機密情報を識別、監視、および自動保護することができます。
   
@@ -59,7 +59,7 @@ Office 365 セキュリティ&amp;コンプライアンスセンターの [デ�
 
 DLP ポリシーにはいくつかの基本的な内容が含まれます。
   
-- コンテンツを保護する場所: Exchange Online、SharePoint Online、OneDrive for business サイトなどの**場所**、および Microsoft Teams のチャットとチャネル。 
+- コンテンツを保護する場所: Exchange Online、SharePoint Online、OneDrive for Business サイトなどの**場所**、および Microsoft Teams のチャットおよびチャネルメッセージ。 
     
 - **ルール**を適用してコンテンツを保護するタイミングと方法。ルールは次の要素で構成されます。 
     
@@ -75,7 +75,7 @@ DLP ポリシーにはいくつかの基本的な内容が含まれます。
   
 ### <a name="locations"></a>位置
 
-DLP ポリシーは、Exchange Online、SharePoint Online、OneDrive for business、または Microsoft Teams に情報があるかどうかにかかわらず、Office 365 全体の機密情報を検索して保護することができます。 Exchange 電子メール、Microsoft Teams のチャットおよびチャネル、すべての SharePoint または OneDrive ライブラリのコンテンツを保護するか、ポリシーの特定の場所を選択するかを選択できます。
+DLP ポリシーは、Exchange Online、SharePoint Online、OneDrive for business、または Microsoft Teams に情報があるかどうかにかかわらず、Office 365 全体の機密情報を検索して保護することができます。 Exchange 電子メール、Microsoft Teams のチャットおよびチャネルメッセージ、およびすべての SharePoint または OneDrive ライブラリのコンテンツを保護するか、ポリシーの特定の場所を選択するかを選択できます。
   
 ![DLP ポリシーを適用できる場所のオプション](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
@@ -447,7 +447,7 @@ DLP は、(単純なテキスト スキャンだけでなく) 詳細なコンテ
     
 - Office デスクトッププログラム (Excel、PowerPoint、および Word)
 
-- Microsoft Teams チャンネルおよびチャット
+- Microsoft Teams チャネルおよびチャットメッセージ
     
 ポリシーが正しい場所に同期されると、コンテンツの評価とアクションの適用が開始されます。
   
@@ -481,7 +481,7 @@ Office での DLP ポリシーの評価は、プログラムのパフォーマ�
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Microsoft Teams でのポリシー評価
  
-場所として Microsoft Teams を含む DLP ポリシーを作成すると、Office 365 セキュリティ&amp;コンプライアンスセンターからユーザーアカウントおよび Microsoft teams のチャネルとチャットにポリシーが同期されます。 DLP ポリシーの構成方法によっては、Microsoft Teams のチャットやチャネルで機密情報を共有しようとすると、メッセージをブロックまたは取り消すことができます。 また、機密情報が含まれていて、ゲスト (外部ユーザー) と共有されているドキュメントは、それらのユーザーに対しては開きません。 詳細については、「[データ損失防止と Microsoft Teams](dlp-microsoft-teams.md)」を参照してください。
+場所として Microsoft Teams を含む DLP ポリシーを作成すると、Office 365 セキュリティ&amp;コンプライアンスセンターからユーザーアカウントと Microsoft teams のチャネルおよびチャットメッセージにポリシーが同期されます。 DLP ポリシーの構成方法によっては、Microsoft Teams のチャットまたはチャネルメッセージで機密情報を共有しようとすると、メッセージをブロックまたは取り消すことができます。 また、機密情報が含まれていて、ゲスト (外部ユーザー) と共有されているドキュメントは、それらのユーザーに対しては開きません。 詳細については、「[データ損失防止と Microsoft Teams](dlp-microsoft-teams.md)」を参照してください。
  
 ## <a name="permissions"></a>アクセス許可
 

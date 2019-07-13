@@ -3,7 +3,7 @@ title: データ損失防止と Microsoft Teams
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 07/01/2019
+ms.date: 07/12/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -13,28 +13,28 @@ ms.collection:
 search.appverid:
 - MET150
 description: これで、DLP ポリシーを Microsoft Teams のチャットおよびチャネルに適用できるようになります。 機能の詳細については、この記事を参照してください。
-ms.openlocfilehash: 3792fd6919749510ea20d4ff84b0249b16165a9f
-ms.sourcegitcommit: cc1b0281fa594cbb7c09f3e419df21aec9557831
+ms.openlocfilehash: 96ba26a4e155a976c2123cc44c3a8632092740ac
+ms.sourcegitcommit: ea630cf1cbaa98ede5ee320c71a0fad7d7def6fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35417399"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35672916"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>データ損失防止と Microsoft Teams
 
 > [!NOTE]
-> データ損失防止機能は、最近、Office 365 E5 および Office 365 Advanced コンプライアンスの Microsoft Teams に追加されました。 機能の可用性の詳細については、「 [office 365 Service の説明: office 365 Security & コンプライアンスセンター](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)」を参照してください。
+> データ損失防止機能は、最近、Office 365 Advanced コンプライアンス用にライセンスされたユーザーのために Microsoft Teams のチャットおよびチャネルメッセージに追加されました。これはスタンドアロンオプションとして提供されており、Office 365 E5 および Microsoft 365 E5 コンプライアンスに含まれています。 ライセンス要件の詳細については、「 [Microsoft 365 テナントレベルサービスライセンスガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)」を参照してください。
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Microsoft Teams の DLP の概要
 
-最近では、Microsoft Teams を含むように[データ損失防止](data-loss-prevention-policies.md)(DLP) 機能が拡張されています。 組織に DLP がある場合は、Microsoft Teams チャネルまたはチャットセッションで機密情報を共有できないようにするポリシーを定義できるようになりました。 この保護がどのように機能するかについて、いくつかの例を示します。
+最近では、Microsoft Teams のチャットおよびチャネルメッセージを含むように[データ損失防止](data-loss-prevention-policies.md)(DLP) 機能が拡張されています。 組織に DLP がある場合は、Microsoft Teams チャネルまたはチャットセッションで機密情報を共有できないようにするポリシーを定義できるようになりました。 この保護がどのように機能するかについて、いくつかの例を示します。
 
 - **例 1: メッセージ内の機密情報を保護**します。 チームのチャットまたはチャネル内の機密情報をゲスト (外部ユーザー) と共有しようとするユーザーがいるとします。 これを防止するように定義された DLP ポリシーがある場合、外部ユーザーに送信される機密情報を含むメッセージは削除されます。 これは、DLP ポリシーがどのように構成されているかに応じて、数秒で自動的に発生します。
 
     > [!NOTE]
-    > Microsoft Teams の DLP は、チームとチャネルで[ゲストアクセス](https://docs.microsoft.com/MicrosoftTeams/guest-access)権を持ち、会議やチャットセッションで[外部アクセス](https://docs.microsoft.com/MicrosoftTeams/manage-external-access)権を持つユーザーと共有している場合に機密コンテンツをブロックします。 [Skype For business と共に Microsoft teams](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype)を使用している場合は、TEAMS の DLP が相互運用またはフェデレーションチャットセッションでのメッセージをブロックしないことに注意してください。
+    > Microsoft Teams の DLP では、次のものを持つ Microsoft Teams ユーザーとの共有時に機密コンテンツがブロックされます。<br/>- teams およびチャネルでの[ゲストアクセス](https://docs.microsoft.com/MicrosoftTeams/guest-access)。や<br/>- 会議およびチャットセッションでの[外部アクセス](https://docs.microsoft.com/MicrosoftTeams/manage-external-access)。 <p>外部チャットセッションの DLP は、送信者と受信者の両方が Teams のみのモードで、 [Microsoft teams のネイティブフェデレーション](https://docs.microsoft.com/microsoftteams/manage-external-access)を使用している場合にのみ機能します。 Teams の DLP では、Skype for Business または非ネイティブのフェデレーションチャットセッションによる[相互運用](https://docs.microsoft.com/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business)のメッセージはブロックされません。
 
-- **例 2: ドキュメント内の機密情報を保護**します。 Microsoft Teams チャネルまたはチャットのゲストでドキュメントを共有しようとした場合に、ドキュメントに機密情報が含まれているとします。 これを防止するように定義された DLP ポリシーがある場合、ドキュメントはそれらのユーザーに対して開くことができません。 この場合、DLP ポリシーには、保護を設定するために SharePoint と OneDrive を含める必要があることに注意してください。 (これは、Microsoft Teams に表示される SharePoint の DLP の例です。)
+- **例 2: ドキュメント内の機密情報を保護**します。 Microsoft Teams チャネルまたはチャットのゲストでドキュメントを共有しようとした場合に、ドキュメントに機密情報が含まれているとします。 これを防止するように定義された DLP ポリシーがある場合、ドキュメントはそれらのユーザーに対して開くことができません。 この場合、DLP ポリシーには、保護を設定するために SharePoint と OneDrive を含める必要があることに注意してください。 (これは Microsoft Teams に表示される SharePoint の DLP の例であり、ユーザーは office 365 DLP (Office 365 E3 に含まれています) のライセンスが必要ですが、ユーザーに Office 365 Advanced コンプライアンスのライセンスを付与する必要はありません。)
 
 ## <a name="policy-tips-help-educate-users"></a>ユーザーを教育するためのポリシーヒント
 
