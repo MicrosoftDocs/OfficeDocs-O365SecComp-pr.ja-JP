@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Microsoft Azure Active Directory Rights Management Services (RMS) を使用して SharePoint Online IRM を使用して SharePoint リストとドキュメントライブラリを保護する方法について説明します。
-ms.openlocfilehash: 0df2639a12472ab6452afb7d9b66bc48beb9ba1f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 16a76ecda37bd5480285dd70670843a88198bdb7
+ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156559"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35756849"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -38,7 +38,7 @@ Rights Management サービスをアクティブ化した後、SharePoint 管理
     
 3. 左側のウィンドウで、**[管理センター]** \> **[SharePoint]** の順に選択します。
     
-4. 左側のウィンドウで、[**設定**] を選択します。
+4. 左側のウィンドウで、[**設定**] を選択し、[**クラシック設定] ページ**を選択します。
     
 5. [ **Information Rights Management (irm)** ] セクションで、[**構成で指定された Irm サービスを使用する**] を選択し、[ **irm 設定の更新**] を選択します。 IRM 設定を更新した後、組織内のユーザーは、SharePoint リストとドキュメントライブラリで IRM を使用することができます。 ただし、[ライブラリの設定] および [リストの設定] に表示されるまでに最大1時間かかる場合があります。
     
