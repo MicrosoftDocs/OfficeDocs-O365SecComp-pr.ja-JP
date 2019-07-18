@@ -587,7 +587,6 @@
 ### [Exchange Online データの回復性](office-365-exchange-data-resiliency.md)
 ### [マルウェアと ランサムウェアからの保護](office-365-malware-and-ransomware-protection.md)
 ### [監視と自動修復](office-365-monitoring-and-self-healing.md)
-### [SharePoint Online データの回復性](office-365-sharepoint-data-resiliency.md)
 ## [Office 365 でのデータの保持、削除、および破棄](office-365-data-retention-deletion-and-destruction-overview.md)
 ### [データの破棄](office-365-data-destruction.md)
 ### [Office 365 での不変性](office-365-data-immutability.md)
