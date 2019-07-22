@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーでは、コンテンツを保持するか、コンテンツを削除するか、またはコンテンツを保持した後で削除するかを事前に決定できます。さらに、1 つのポリシーを組織全体に適用するか、特定の場所やユーザーにのみ適用するか、すべてのコンテンツにポリシーを適用するか、特定の条件を満たしているコンテンツにのみポリシーを適用するかも事前に決定できます。
-ms.openlocfilehash: 87abb5bde49204a465e820afd522d6757a10e97c
-ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
+ms.openlocfilehash: e4690c9c68bd2ead17daa2f717dd751e14338131
+ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35587116"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "35772174"
 ---
 # <a name="overview-of-retention-policies"></a>アイテム保持ポリシーの概要
 
@@ -62,7 +62,7 @@ SharePoint サイト コレクションの場合、ユーザーがコンテン�
   
 注: 
   
-- Skype のコンテンツは Exchange に格納されます。ここでは、メッセージの種類 (メールまたは会話) に応じてポリシーが適用されます。
+- Teams (チャット) のコンテンツは Exchange に格納されます。ここでは、メッセージの種類 (メールまたは会話) に応じてポリシーが適用されます。
     
 - Office 365 のグループに適用されるアイテム保持ポリシーには、グループのメールボックスとサイトが両方とも含まれます。
     

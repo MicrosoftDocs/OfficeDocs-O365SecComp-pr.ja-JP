@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 の保持ラベルは、適切なコンテンツで適切な操作を実行するために役立ちます。保持ラベルを使用すると、ガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制できます。保持ラベルは、Office 365 全体のレコード管理の実装に使用することもできます。
-ms.openlocfilehash: 9f9f1ead57d7082e227e229f2204e5af627a7b9c
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: b3637470e0de1413589fc8e1ba35dc48e6823c4b
+ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547982"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "35772164"
 ---
 # <a name="overview-of-retention-labels"></a>保持ラベルの概要
 
@@ -72,7 +72,8 @@ Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリ
   
 ![ラベル、ラベル ポリシー、および場所の図](media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. 保持ラベルを発行すると、保持ラベルは保持ラベル ポリシーに含まれるようになります。 
+1. 保持ラベルを発行すると、保持ラベルは保持ラベル ポリシーに含まれるようになります。 保持ラベル名は変更できないため、作成後に編集することはできません。
+
 
 2. 1 つの保持ラベルは、複数の保持ラベル ポリシーに含めることができます。
 
