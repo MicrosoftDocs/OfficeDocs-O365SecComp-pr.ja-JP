@@ -3,53 +3,6 @@
 
 
 
-## <a name="week-of-june-10-2019"></a>2019年6月10日の週
-
-
-| 公開日 |トピックのタイトル | 変更 |
-|------|------------|--------|
-| 6/11/2019 | [サンプルコネクタを使用して Office 365 で Facebook データをアーカイブする (プレビュー)](/Office365/SecurityCompliance/archive-facebook-data-with-sample-connector) | 更新日時 |
-| 6/11/2019 | [Office 365 を使用した自動調査と応答 (AIR)](/Office365/SecurityCompliance/automated-investigation-response-office) | 更新日時 |
-| 6/11/2019 | [Office 365 の脅威の調査と対応についての作業を開始する](/Office365/SecurityCompliance/get-started-with-ti) | 更新日時 |
-| 6/11/2019 | [メールが赤のフラグが設定されている場合のポリシーと保護の組み合わせ](/Office365/SecurityCompliance/how-policies-and-protections-are-combined) | 更新日時 |
-| 6/11/2019 | [Microsoft 365 でマルウェアやその他の脅威を探します。](/Office365/SecurityCompliance/hunting) | 更新日時 |
-| 6/11/2019 | [Microsoft Defender Advanced Threat Protection を使用して Office 365 Advanced Threat Protection を統合する](/Office365/SecurityCompliance/integrate-office-365-ti-with-wdatp) | 更新日時 |
-| 6/11/2019 | [脅威分析に関する最新の攻撃キャンペーンおよび手法を理解する](/Office365/SecurityCompliance/latest-attack-campaigns) | 更新日時 |
-| 6/11/2019 | [新しい Microsoft 365 コンプライアンスセンターの概要](/Office365/SecurityCompliance/microsoft-365-compliance-center) | 更新日時 |
-| 6/11/2019 | [Microsoft セキュア スコア](/Office365/SecurityCompliance/microsoft-secure-score) | 更新日時 |
-| 6/11/2019 | [新しい Microsoft 365 セキュリティセンターと Microsoft 365 コンプライアンスセンターが一般公開されるようになりました。](/Office365/SecurityCompliance/microsoft-security-and-compliance) | 更新日時 |
-| 6/11/2019 | [Microsoft 365 セキュリティセンターでの id の監視とレポート](/Office365/SecurityCompliance/monitor-and-report-identities) | 更新日時 |
-| 6/11/2019 | [Microsoft 365 セキュリティセンターのアプリの監視とレポート](/Office365/SecurityCompliance/monitor-apps) | 更新日時 |
-| 6/11/2019 | [Microsoft 365 セキュリティセンターでのデータの監視とレポート](/Office365/SecurityCompliance/monitor-data) | 更新日時 |
-| 6/11/2019 | [Microsoft 365 セキュリティセンターのデバイスの監視とレポート](/Office365/SecurityCompliance/monitor-devices) | 更新日時 |
-| 6/11/2019 | [Microsoft 365 セキュリティセンターのレポートを監視および表示する](/Office365/SecurityCompliance/monitoring-and-reporting) | 更新日時 |
-| 6/11/2019 | [Office 365 脅威の調査および対応](/Office365/SecurityCompliance/office-365-ti) | 更新日時 |
-| 6/11/2019 | [Microsoft 365 セキュリティセンターの概要](/Office365/SecurityCompliance/overview-security-center) | 更新日時 |
-| 6/11/2019 | [ユーザーとデバイス アクセスの保護](/Office365/SecurityCompliance/protect-access-to-data-and-services) | 更新日時 |
-| 6/11/2019 | [機密ラベルの概要](/Office365/SecurityCompliance/sensitivity-labels) | 更新日時 |
-| 6/11/2019 | [SIEM server と Microsoft 365 の統合](/Office365/SecurityCompliance/siem-server-integration) | 更新日時 |
-| 6/11/2019 | [Office 365 Message Encryption を管理する](/Office365/SecurityCompliance/manage-office-365-message-encryption) | 更新日時 |
-| 6/11/2019 | [Office 365 Advanced Message Encryption 機能を使って暗号化されたメールの有効期限を設定する](/Office365/SecurityCompliance/ome-advanced-expiration) | 更新日時 |
-| 6/11/2019 | [Office 365 Message Encryption](/Office365/SecurityCompliance/ome) | 更新日時 |
-| 6/11/2019 | [セキュリティ/コンプライアンスセンターのアラートポリシー](/Office365/SecurityCompliance/alert-policies) | 更新日時 |
-| 6/11/2019 | [コンテンツ検索のキーワード クエリと検索条件](/Office365/SecurityCompliance/keyword-queries-and-search-conditions) | 更新日時 |
-| 6/11/2019 | [セキュリティ & コンプライアンスセンターで監査ログを検索する](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | 更新日時 |
-| 6/11/2019 | [EOP でエンドユーザーのスパム通知を構成する](/Office365/SecurityCompliance/configure-end-user-spam-notifications-in-eop) | 更新日時 |
-| 6/11/2019 | [スパム フィルター ポリシーの構成](/Office365/SecurityCompliance/configure-your-spam-filter-policies) | 更新日時 |
-| 6/11/2019 | [Office 365 で迷惑メールを減らす方法](/Office365/SecurityCompliance/reduce-spam-email) | 更新日時 |
-| 6/11/2019 | [迷惑メールを送信した後で制限付きユーザー ポータルからユーザーを削除する](/Office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam) | 更新日時 |
-| 6/11/2019 | [Office 365 Advanced Message Encryption 機能を使って暗号化されたメールを無効にする](/Office365/SecurityCompliance/revoke-ome-encrypted-mail) | 更新日時 |
-| 6/11/2019 | [セキュリティ ダッシュボードの概要](/Office365/SecurityCompliance/security-dashboard) | 更新日時 |
-| 6/11/2019 | [リストから除外のポータルを使って Office 365 の受信拒否リストから自分自身を削除する](/Office365/SecurityCompliance/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis) | 更新日時 |
-| 6/12/2019 | [Office 365 で非アクティブなメールボックスを作成および管理する](/Office365/SecurityCompliance/create-and-manage-inactive-mailboxes) | 更新日時 |
-| 6/13/2019 | [Office 365 の顧客ロックボックス要求](/Office365/SecurityCompliance/customer-lockbox-requests) | 更新日時 |
-| 6/13/2019 | [Office 365 の攻撃シミュレータ](/Office365/SecurityCompliance/attack-simulator) | 更新日時 |
-| 6/13/2019 | [情報バリアポリシーの定義](/Office365/SecurityCompliance/information-barriers-policies) | 更新日時 |
-| 6/13/2019 | [情報障壁の概要](/Office365/SecurityCompliance/information-barriers) | 更新日時 |
-| 6/14/2019 | [メール通知を送信して、DLP ポリシーのヒントを表示する](/Office365/SecurityCompliance/use-notifications-and-policy-tips) | 更新日時 |
-| 6/14/2019 | [メッセージを検索して削除する - 管理者向けヘルプ](/Office365/SecurityCompliance/search-for-and-delete-messagesadmin-help) | 更新日時 |
-
-
 ## <a name="week-of-june-17-2019"></a>2019年6月17日の週
 
 
@@ -367,3 +320,43 @@
 | 7/12/2019 | [ユーザーに Office 365 セキュリティ & コンプライアンスセンターへのアクセス権を付与する](/Office365/SecurityCompliance/grant-access-to-the-security-and-compliance-center) | 更新日時 |
 | 7/12/2019 | [データ損失防止の概要](/Office365/SecurityCompliance/data-loss-prevention-policies) | 更新日時 |
 | 7/12/2019 | [データ損失防止と Microsoft Teams](/Office365/SecurityCompliance/dlp-microsoft-teams) | 更新日時 |
+
+
+## <a name="week-of-july-15-2019"></a>2019年7月15日の週
+
+
+| 公開日 |トピックのタイトル | 変更 |
+|------|------------|--------|
+| 7/16/2019 | [Office 365 でオンプレミスのユーザーのクラウドベースのメールボックスを検索する](/Office365/SecurityCompliance/search-cloud-based-mailboxes-for-on-premises-users) | 更新日時 |
+| 7/16/2019 | [セキュリティ & コンプライアンスセンターで監査ログを検索する](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | 更新日時 |
+| 7/16/2019 | [Set up Information Rights Management (IRM) in SharePoint admin center](/Office365/SecurityCompliance/set-up-irm-in-sp-admin-center) | 更新日時 |
+| 7/16/2019 | [Office 365 のコンテンツ検索を使用した対象コレクション](/Office365/SecurityCompliance/use-content-search-for-targeted-collections) | 更新日時 |
+| 7/17/2019 | [保持ラベルの概要](/Office365/SecurityCompliance/labels) | 更新日時 |
+| 7/17/2019 | [Office 365 SharePoint データの復元](/Office365/SecurityCompliance/office-365-sharepoint-data-resiliency) | 更新日時 |
+| 7/17/2019 | [アイテム保持ポリシーの概要](/Office365/SecurityCompliance/retention-policies) | 更新日時 |
+| 7/17/2019 | Office 365 SharePoint データの復元 | 削除 |
+| 7/18/2019 | [チーフ情報セキュリティ責任者 (CISO) ワークショップ、モジュール 3: Id、およびアクセス管理](/Office365/SecurityCompliance/ciso-workshop-module-3) | 更新日時 |
+| 7/18/2019 | [チーフ情報セキュリティ責任者 (CISO) ワークショップ、モジュール 4a: 脅威保護戦略](/Office365/SecurityCompliance/ciso-workshop-module-4a) | 更新日時 |
+| 7/18/2019 | [チーフ情報セキュリティ責任者 (CISO) ワークショップ、モジュール 4b: 脅威保護戦略](/Office365/SecurityCompliance/ciso-workshop-module-4b) | 更新日時 |
+| 7/18/2019 | [チーフ情報セキュリティ責任者 (CISO) ワークショップ、モジュール 5: 情報保護](/Office365/SecurityCompliance/ciso-workshop-module-5) | 更新日時 |
+| 7/18/2019 | [Microsoft コンプライアンスマネージャーと GDPR](/Office365/SecurityCompliance/compliance-manager-and-the-gdpr) | 更新日時 |
+| 7/18/2019 | [Microsoft コンプライアンスマネージャーの概要](/Office365/SecurityCompliance/compliance-manager-overview) | 更新日時 |
+| 7/18/2019 | [コンプライアンススコアの方法論](/Office365/SecurityCompliance/compliance-score-methodology) | 更新日時 |
+| 7/18/2019 | [Office 365 の顧客ロックボックス要求](/Office365/SecurityCompliance/customer-lockbox-requests) | 更新日時 |
+| 7/18/2019 | [Microsoft クラウド サービスの利用時に、コンプライアンス マネージャーを使用してデータ保護と規制の要件を満たす](/Office365/SecurityCompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud) | 更新日時 |
+| 7/18/2019 | [Office 365 でのデータの回復性](/Office365/SecurityCompliance/office-365-data-resiliency-overview) | 更新日時 |
+| 7/18/2019 | [Office 365 データ破損を処理する](/Office365/SecurityCompliance/office-365-dealing-with-data-corruption) | 更新日時 |
+| 7/18/2019 | [Office 365 がサービス拒否攻撃に対してクラウドサービスを防御する](/Office365/SecurityCompliance/office-365-defending-cloud-services-against-dos-attacks) | 更新日時 |
+| 7/18/2019 | [Office 365 Exchange データの復元](/Office365/SecurityCompliance/office-365-exchange-data-resiliency) | 更新日時 |
+| 7/18/2019 | [Office 365 Exchange Online データの削除](/Office365/SecurityCompliance/office-365-exchange-online-data-deletion) | 更新日時 |
+| 7/18/2019 | [暗号化されたメッセージに組織ブランドを追加する](/Office365/SecurityCompliance/add-your-organization-brand-to-encrypted-messages) | 更新日時 |
+| 7/18/2019 | [詳細な電子情報開示で保留リストを管理する](/Office365/SecurityCompliance/compliance20/managing-holds) | 更新日時 |
+| 7/18/2019 | [Office 365 でメールを暗号化するためにメール フロー ルールを定義する](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | 更新日時 |
+| 7/18/2019 | [Office 365 での暗号化](/Office365/SecurityCompliance/encryption) | 更新日時 |
+| 7/18/2019 | [Office Online Server および Office Web Apps Server の GDPR](/Office365/SecurityCompliance/gdpr-for-office-online-server) | 更新日時 |
+| 7/18/2019 | [ユーザーに Office 365 セキュリティ & コンプライアンスセンターへのアクセス権を付与する](/Office365/SecurityCompliance/grant-access-to-the-security-and-compliance-center) | 更新日時 |
+| 7/18/2019 | [Office 365 の ATP の安全なリンクのしくみ](/Office365/SecurityCompliance/how-atp-safe-links-works) | 更新日時 |
+| 7/18/2019 | [開発/テスト環境での分離した SharePoint Online チーム サイト](/Office365/SecurityCompliance/isolated-sharepoint-online-team-site-dev-test-environment) | 更新日時 |
+| 7/18/2019 | [Set up Information Rights Management (IRM) in SharePoint admin center](/Office365/SecurityCompliance/set-up-irm-in-sp-admin-center) | 更新日時 |
+| 7/18/2019 | [新しい Office 365 Message Encryption 機能を設定する](/Office365/SecurityCompliance/set-up-new-message-encryption-capabilities) | 更新日時 |
+| 7/18/2019 | [高度な電子情報開示で会話を確認する](/Office365/SecurityCompliance/compliance20/conversation-review-sets) | 更新日時 |

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Exchange ハイブリッド展開の社内ユーザーのために、Microsoft Teams のチャットデータ (1xN チャット) を検索してエクスポートするには、セキュリティ & コンプライアンスセンターのコンテンツ検索ツールを使用します。
-ms.openlocfilehash: 4bc63c4a908aba61b0f289d347d1434222ec2ed8
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: 38aff6116bd3cd8e4ba9f0f46d6fd81f790803f3
+ms.sourcegitcommit: eda5fdbefdd1d9188375f83868c07bc075841c41
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756859"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820490"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Office 365 でオンプレミスのユーザーのクラウドベースのメールボックスを検索する
 
@@ -163,6 +163,6 @@ Microsoft サポートに要求を送信するときに、次の情報を含め�
   
 Microsoft は、2018年1月31日に社内ユーザーの Teams チャットデータの保存を開始しました。 そのため、この日付以降、オンプレミスの Teams ユーザーの id が Active Directory と Azure Active Directory との間で同期されている場合、Teams のチャットデータはクラウドベースのメールボックスに格納され、コンテンツ検索を使用して検索可能になります。 Microsoft は、社内ユーザーのクラウドベースのメールボックスで2018年1月31日より前の Teams のチャットデータを保存することにも取り組んでいます。 詳細については、近日中にご利用いただけます。
 
- * * オンプレミスのユーザーには、クラウドベースのメールボックスに Teams のチャットデータを格納するためのライセンスが必要ですか。 
+ **オンプレミスのユーザーは、クラウドベースのメールボックスに Teams のチャットデータを格納するためのライセンスが必要ですか。**
   
 はい。 社内ユーザーのチームチャットデータをクラウドベースのメールボックスに格納するには、Office 365 (または Microsoft 365) で Microsoft Teams ライセンスと Exchange Online プランライセンスが割り当てられている必要があります。
