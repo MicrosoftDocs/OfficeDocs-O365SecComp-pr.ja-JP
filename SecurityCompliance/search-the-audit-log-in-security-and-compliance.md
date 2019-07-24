@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: 62fdd26ec4da38610324347e189878f2fb4ad584
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: f2ac7e39f4bb94b516ff64323179e8107a179906
+ms.sourcegitcommit: eda5fdbefdd1d9188375f83868c07bc075841c41
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756879"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820500"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -329,6 +329,7 @@ Office 365 監査ログを検索する前に、次の注意事項を必ずお読
 |ファイルの変更  <br/> |FileModified  <br/> |ユーザーまたはシステム アカウントがサイトにあるドキュメントのコンテンツまたはプロパティを変更します。  <br/> |
 |(なし)  <br/> |FileModifiedExtended  <br/> |これは、"ファイルの変更" (FileModified) アクティビティに関連しています。 同じユーザーが長時間 (最大 3 時間) にわたって、ファイルの変更を継続的に行うと、FileModifiedExtended イベントがログに記録されます。 FileModifiedExtended イベントをログに記録する目的は、ファイルの変更が継続的に行われたときにログに記録される FileModified イベントの数を減らすことにあります。 これにより、本質的に同じユーザーのアクティビティであるファイル変更に対する無意味な複数の FileModified レコードを減り、初期 (のより重要な) FileModified イベントに注目できます。  <br/> |
 |ファイルの移動  <br/> |FileMoved  <br/> |ユーザーがドキュメントをサイトの現在の場所から新しい場所に移動しました。  <br/> |
+|(なし)  <br/> |FilePreviewed  <br/> |ユーザーが SharePoint または OneDrive for Business サイトにあるファイルをプレビューします。 通常、これらのイベントは、イメージ ギャラリーの表示などの 1 つのアクティビティに基づいて、大きいボリュームで発生します。  <br/> |
 |ファイルのすべてのマイナー バージョンのリサイクル  <br/> |FileVersionsAllMinorsRecycled  <br/> |ユーザーが、ファイルのバージョン履歴からすべてのマイナー バージョンを削除しました。削除されたバージョンは、サイトのごみ箱に移動されます。  <br/> |
 |ファイルのすべてのバージョンのリサイクル  <br/> |FileVersionsAllRecycled  <br/> |ユーザーが、ファイルのバージョン履歴からすべてのバージョンを削除しました。削除されたバージョンは、サイトのごみ箱に移動されます。  <br/> |
 |ファイルのバージョンのリサイクル  <br/> |FileVersionRecycled  <br/> |ユーザーが、ファイルのバージョン履歴から 1 つのバージョンを削除しました。削除されたバージョンは、サイトのごみ箱に移動されます。  <br/> |
