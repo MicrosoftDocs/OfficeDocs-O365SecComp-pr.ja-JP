@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーでは、コンテンツを保持するか、コンテンツを削除するか、またはコンテンツを保持した後で削除するかを事前に決定できます。さらに、1 つのポリシーを組織全体に適用するか、特定の場所やユーザーにのみ適用するか、すべてのコンテンツにポリシーを適用するか、特定の条件を満たしているコンテンツにのみポリシーを適用するかも事前に決定できます。
-ms.openlocfilehash: e4690c9c68bd2ead17daa2f717dd751e14338131
-ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
+ms.openlocfilehash: ca68d2ecb7757435b8af6b63505b5acb2688daf6
+ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "35772174"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840906"
 ---
 # <a name="overview-of-retention-policies"></a>アイテム保持ポリシーの概要
 
@@ -78,7 +78,7 @@ SharePoint サイト コレクションの場合、ユーザーがコンテン�
   
 ユーザーがライブラリ、リスト、フォルダー、またはアイテム保持ポリシーの対象になっているサイトを削除しようとするとエラーが発生することに注意してください。ユーザーはフォルダーを削除できますが、最初にポリシーの対象になっているファイルをすべてフォルダーから移動または削除する必要があります。[アイテム保管ライブラリ] が作成されるのは、アイテム保持ポリシーが作成されたときではなく、このライブラリにコピーする必要がある最初のアイテムが出現したときであることに注意してください。そのため、ポリシーをテストするには、最初にポリシーの対象になっているサイトでドキュメントを編集または削除し、それから [アイテム保管ライブラリ] を参照して保持されたコピーの確認を行うようにします。
   
-![SharePoint および OneDrive のコンテンツのライフサイクルの図](Retention_Diagram_of_retention_flow_in_sites.png)
+![SharePoint および OneDrive のコンテンツのライフサイクルの図](media/Retention_Diagram_of_retention_flow_in_sites.png)
   
 OneDrive アカウントまたは SharePoint サイトにアイテム保持ポリシーが割り当てられていると、コンテンツは次の 2 つの経路のどちらかで処理されます。
   
