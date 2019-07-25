@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Office 365 または Microsoft 365 のコンプライアンスセンターでコンテンツ検索ツールを使用して、メールボックス、SharePoint Online サイト、OneDrive アカウント、Microsoft Teams、Office 365 グループ、Skype for Business の会話のコンテンツを検索します。 キーワード検索クエリと検索条件を使用して、検索結果を絞り込むことができます。 その後、検索結果をプレビューしてエクスポートできます。 コンテンツ検索は、GDPR データ主体要求に関連するコンテンツを検索するための効果的なツールでもあります。
-ms.openlocfilehash: 76c3ddbbd6cd7432a06506be62c63fbfa0291b46
-ms.sourcegitcommit: 6b2ca6bd153d24a717d6c537efd2d41d35c20a0b
+ms.openlocfilehash: 12065a744b287bea5e2b9fc07e7fe8023d40bb5f
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35587821"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854731"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 のコンテンツ検索
 

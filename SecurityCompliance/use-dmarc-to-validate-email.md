@@ -6,19 +6,19 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Office 365 組織から送信されたメッセージを検証するための、ドメインベースのメッセージ認証、レポート、および準拠 (DMARC) を構成する方法について説明します。
-ms.openlocfilehash: 997e90c7620b4b3ca14903da843475f4d724222a
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 95d1220f065633d899d415800e7ad9c5e91e759f
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600383"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854751"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>DMARC を使用して Office 365 でメールを検証する
 

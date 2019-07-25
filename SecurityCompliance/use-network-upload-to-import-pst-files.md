@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '管理者向け: Office 365 で、ネットワークアップロードを使用して複数の PST ファイルをユーザーのメールボックスに一括インポートする方法について説明します。'
-ms.openlocfilehash: fb64eecdbeac40aa597d17459f06525b8859fb1f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: bd15216df69e003a5aaddb2ec21ede4da5c5c312
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156169"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854821"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>ネットワークアップロードを使用して組織の PST ファイルを Office 365 にインポートする
 
@@ -48,7 +48,7 @@ Office 365 メールボックスに PST ファイルをインポートするに�
   
 - PST ファイルを Office 365 メールボックスにインポートするには、Exchange Online でメールボックスのインポートのエクスポートの役割を割り当てられている必要があります。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself as a member. 詳細については、「 [Manage role groups](https://go.microsoft.com/fwlink/p/?LinkId=730688)」の「役割グループに役割を追加する」または「役割グループを作成する」のセクションを参照してください。
     
-    さらに、Security & コンプライアンスセンターでインポートジョブを作成するには、次のいずれかの条件を満たしている必要があります。
+    また、セキュリティ & コンプライアンスセンターでインポートジョブを作成するには、次のいずれかの条件を満たしている必要があります。
     
   - Exchange Online では、メール受信者の役割が割り当てられている必要があります。 By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
@@ -94,7 +94,7 @@ Office 365 メールボックスに PST ファイルをインポートするに�
 2. セキュリティ & コンプライアンスセンターの左側のウィンドウで、[**データガバナンス** \>の**インポート**] をクリックします。
     
     > [!NOTE]
-    > セキュリティ & コンプライアンスセンターの [**インポート**] ページにアクセスするには、適切なアクセス許可が割り当てられている必要があります。 詳細については、「**はじめに**」セクションを参照してください。 
+    > セキュリティ & コンプライアンスセンターの**インポート**ページにアクセスするには、適切なアクセス許可が割り当てられている必要があります。 詳細については、「**はじめに**」セクションを参照してください。 
     
 3. [**インポート**] ページで、 ![[追加](media/ITPro-EAC-AddIcon.gif) ] アイコン [**新しいインポートジョブ**] をクリックします。
     
@@ -322,7 +322,7 @@ Office 365 のメールボックスに PST ファイルをインポートする�
     
 3. **Pst インポートのマッピングファイルを作成**する-pst ファイルが Azure ストレージの場所にアップロードされた後、次の手順では、pst ファイルがインポートされるユーザーメールボックスを指定するコンマ区切り値 (CSV) ファイルを作成します。 ユーザーのプライマリメールボックスまたはアーカイブメールボックスにインポートされます。 Office 365 インポートサービスは、CSV ファイルの情報を使用して PST ファイルをインポートします。
     
-4. **Pst インポートジョブを作成**する-次の手順では、セキュリティ _AMP_ コンプライアンスセンターの [**インポート**] ページで pst インポートジョブを作成し、前の手順で作成した pst インポートマッピングファイルを送信します。 インポートジョブを作成した後、Office 365 は PST ファイルのデータを分析し、PST インポートマッピングファイルで指定されたメールボックスに実際にインポートするデータを制御するフィルターを設定する機会を提供します。 
+4. **Pst インポートジョブを作成**する-次の手順では、セキュリティ & コンプライアンスセンターの [**インポート**] ページで pst インポートジョブを作成し、前の手順で作成した pst インポートマッピングファイルを送信します。 インポートジョブを作成した後、Office 365 は PST ファイルのデータを分析し、PST インポートマッピングファイルで指定されたメールボックスに実際にインポートするデータを制御するフィルターを設定する機会を提供します。 
     
 5. **メールボックスにインポートする pst データをフィルター処理する**-インポートジョブが作成されて開始されると、Office 365 は pst ファイル内のデータ (安全かつ安全) を分析して、アイテムの保存期間と pst ファイルに含まれるさまざまなメッセージの種類を特定します。. 分析が完了し、データをインポートする準備ができたら、PST ファイルに含まれるすべてのデータをインポートするか、インポートするデータを制御するフィルターを設定してインポートしたデータをトリミングすることができます。
     

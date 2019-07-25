@@ -7,7 +7,7 @@ ms.date: 4/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 新しい Office 365 メッセージの暗号化機能が Azure Information Protection の上に構築されており、組織は、組織の内外の人々との間で保護された電子メール通信を使用できます。 新しい OME 機能は、他の Office 365 組織、Outlook.com、Gmail、その他の電子メールサービスと連携して動作します。
-ms.openlocfilehash: 415e598a28033271b115aff639fb1ddd7a6345af
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 835b1d6f40868684536dbea8f75dab0665950210
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156509"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854801"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>新しい Office 365 Message Encryption 機能を設定する
 
@@ -53,7 +53,7 @@ Azure RMS は、ほとんどの対象となるプランに対して自動的に�
 
 Azure RMS を無効にした場合、または何らかの理由で自動的にアクティブ化されなかった場合は、次の方法で手動でアクティブ化できます。
 
-- **Office 365 管理センター**: 手順については[、「office 365 管理センターから Azure Rights Management をアクティブ化する方法](https://docs.microsoft.com/en-us/azure/information-protection/activate-office365)」を参照してください。
+- **Microsoft 365 管理センター**: 手順については[、「管理センターから Azure Rights Management をアクティブ化する方法](https://docs.microsoft.com/en-us/azure/information-protection/activate-office365)」を参照してください。
 - **Azure portal**: 手順については、「azure [Portal から azure Rights Management をアクティブ化する方法](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure)」を参照してください。
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Azure Information Protection のテナントキーの管理を構成する
@@ -70,7 +70,7 @@ Office 365 テナントが、 [Exchange Online PowerShell](https://docs.microsof
 
 2. Get-IRMConfiguration コマンドレットを実行します。
 
-     AzureRMSLicensingEnabled パラメーターに $True の値が表示されます。これは、テナントで OME が構成されていることを示します。 指定されていない場合は、AzureRMSLicensingEnabled $True を有効にするために OME を有効にするために、の値を設定するには、set-irmconfiguration を使用します。
+     AzureRMSLicensingEnabled パラメーターに $True の値が表示されます。これは、テナントで OME が構成されていることを示します。 指定されていない場合は、AzureRMSLicensingEnabled $True を有効にするために OME を有効にするために、の値を設定するには、Set-IRMConfiguration を使用します。
 
 3. 次の構文を使用して、テスト用の IRMConfiguration コマンドレットを実行します。
 
@@ -125,8 +125,8 @@ OME のメールフロールールを作成する手順については、「 [Of
 
 既存のルールを更新して、新しい OME 機能を使用するには、次のようにします。
 
-1. Office 365 管理センターで、[**管理センター _GT_ Exchange**] に移動します。
-2. Exchange 管理センターで、[**メールフロー _GT_ ルール**] に移動します。
+1. Microsoft 365 管理センターで、 **Exchange > 管理センター**に移動します。
+2. Exchange 管理センターで、[**メールフロー > ルール**] に移動します。
 3. ルールごとに、**次の操作を行い**ます。
     - [**メッセージのセキュリティを変更する**] を選択します。
     - [ **Office 365 メッセージの暗号化と権限保護を適用**する] を選択します。

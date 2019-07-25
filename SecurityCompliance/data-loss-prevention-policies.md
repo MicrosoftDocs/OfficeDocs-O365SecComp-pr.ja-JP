@@ -9,18 +9,18 @@ ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
 description: セキュリティ&amp; /コンプライアンスセンターのデータ損失防止 (DLP) ポリシーを使用すると、Office 365 全体の機密情報を特定、監視、および自動保護することができます。
-ms.openlocfilehash: 2f20b3e3ec7ec3178156ca76c82ec323022f1979
-ms.sourcegitcommit: ea630cf1cbaa98ede5ee320c71a0fad7d7def6fb
+ms.openlocfilehash: 35dbaf11685298f2db07c5c516f8d20237eaaf20
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35672926"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854771"
 ---
 # <a name="overview-of-data-loss-prevention"></a>データ損失防止の概要
 
