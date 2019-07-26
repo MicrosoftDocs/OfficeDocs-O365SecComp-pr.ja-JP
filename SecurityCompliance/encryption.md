@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Office 365 では、使用可能な最強の暗号化、プロトコル、およびテクノロジを使用して、コンテンツが保存中で転送中に暗号化されます。 Office 365 の暗号化の概要について説明します。
-ms.openlocfilehash: 4e41528aed3461cc15fef1bc2ab970d1823129fb
-ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
+ms.openlocfilehash: 66b428abd67d86ba257e4f4336c6b12ee1c3d97b
+ms.sourcegitcommit: a550519ca8f2a54712bf0a43be7f954e55675dac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35613645"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35902479"
 ---
 # <a name="encryption-in-office-365"></a>Office 365 の暗号化
 
@@ -61,7 +61,7 @@ Office 365 でのボリューム暗号化、ファイル暗号化、メールボ
   
 - [Azure Rights Management とは](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
-- [Office 365 管理センターで Rights Management をアクティブにする](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
+- [管理センターで Rights Management をアクティブ化する](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
@@ -72,7 +72,7 @@ Office 365 でのボリューム暗号化、ファイル暗号化、メールボ
 |組織の暗号化の設定  <br/> |[Office 365 Enterprise で暗号化を設定する](set-up-encryption.md) <br/> |
 |Office 365 の証明書、テクノロジ、TLS 暗号スイートに関する詳細を表示する  <br/> |[Office 365 での暗号化に関する技術的な詳細](technical-reference-details-about-encryption.md) <br/> |
 |モバイルデバイスで暗号化されたメッセージを操作する  <br/> |[Android デバイスで暗号化されたメッセージを表示する](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [IPhone または iPad で暗号化されたメッセージを表示する](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
-|パスワード保護を使用してドキュメントを暗号化する  <br/><br/>  現時点では、Office Online ではパスワード保護はサポートされていません。 デスクトップ版の Word、Excel、および PowerPoint をパスワード保護に使用します。           |[文書、ブック、またはプレゼンテーションの保護を追加または削除する](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826)([**保護の追加**] セクションを選択し、[**パスワードで暗号化**する] をクリックします)。  <br/> |
+|パスワード保護を使用してドキュメントを暗号化する  <br/><br/>  現在、Office ではパスワード保護はブラウザーではサポートされていません。 デスクトップ版の Word、Excel、および PowerPoint をパスワード保護に使用します。           |[文書、ブック、またはプレゼンテーションの保護を追加または削除する](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826)([**保護の追加**] セクションを選択し、[**パスワードで暗号化**する] をクリックします)。  <br/> |
 |文書から暗号化を削除する  <br/> |[文書、ブック、またはプレゼンテーションの保護を追加または削除する](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826)([**保護の解除**] セクションを選択し、[**パスワード暗号化の解除**] をクリックします)。  <br/> |
 
 ## <a name="related-topics"></a>関連項目
