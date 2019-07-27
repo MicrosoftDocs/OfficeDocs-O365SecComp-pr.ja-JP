@@ -14,62 +14,77 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: '共有は、SharePoint Online と OneDrive for business の主要なアクティビティです。 管理者は、Office 365 監査ログで共有監査を使用して、組織での共有の使用状況を確認できるようになりました。 '
-ms.openlocfilehash: e2865d35e988d8c0e42a6c51f78507db8b170d4c
-ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
+description: '共有は、SharePoint Online と OneDrive for business の主要なアクティビティです。 管理者は、Office 365 監査ログで共有監査を使用して、組織外のユーザーと共有しているリソースを識別できるようになりました。 '
+ms.openlocfilehash: 8996d404e2dbeaba01952c33a8699ca2f151ad5d
+ms.sourcegitcommit: a8049055a48375bee7e6ed81fafcb27a7b2fcdff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35435243"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "35911777"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>共有を監査して外部ユーザーと共有されているリソースを見つける
 
-共有は、SharePoint Online と OneDrive for business の主要なアクティビティであり、Office 365 組織で広く使用されています。 管理者は、Office 365 監査ログで共有監査を使用して、組織での共有の使用状況を確認できるようになりました。 
+共有は、SharePoint Online と OneDrive for business の主要なアクティビティであり、Office 365 組織で広く使用されています。 管理者は、Office 365 監査ログで共有監査を使用して、組織での共有の使用方法を決定できます。 
   
 ## <a name="the-sharepoint-sharing-schema"></a>SharePoint 共有スキーマ
 
-共有イベント (共有ポリシーと共有リンクイベントを除く) は、1つのユーザーが別のユーザーに対して何らかの影響を与えるアクションを実行しているという主な方法で、ファイルとフォルダーに関連するイベントとは異なります。 たとえば、User A はユーザー B にファイルへのアクセス権を与えます。 この例では、ユーザー A は、動作している*ユーザー*で、ユーザー B は*対象ユーザー*です。 SharePoint ファイルスキーマでは、動作しているユーザーの操作だけがファイル自体に影響します。 ユーザーがファイルを開くと、 **Fileaccessed**イベントに必要な情報は、動作しているユーザーのみになります。 この違いに対処するために、共有イベントに関する詳細情報を収集する、 *SharePoint 共有スキーマ*と呼ばれる別のスキーマがあります。 これにより、管理者はリソースを共有しているユーザーとリソースを共有していたユーザーについて、より洞察を得ることができます。 
+共有イベント (共有ポリシーと共有リンクに関連するイベントは含まれません) は、1人のユーザーが別のユーザーに影響を与えるアクションを実行しているという主な方法で、ファイルとフォルダーに関連するイベントとは異なります。 たとえば、リソースユーザー A がファイルへのアクセス権をユーザー B に付与したとします。 この例では、ユーザー A は、動作している*ユーザー*で、ユーザー B は*対象ユーザー*です。 SharePoint ファイルスキーマでは、動作しているユーザーの操作だけがファイル自体に影響します。 ユーザーがファイルを開くと、 **Fileaccessed**イベントに必要な情報は、動作しているユーザーのみになります。 この違いに対処するために、共有イベントに関する詳細情報を収集する、 *SharePoint 共有スキーマ*と呼ばれる別のスキーマがあります。 これにより、管理者がリソースを共有しているユーザーや、リソースが共有されていたユーザーを表示できるようになります。 
   
-共有スキーマは、イベントの共有に関連する2つの追加フィールドを監査ログに提供します。 
+共有スキーマは、イベントの共有に関連する監査レコードに2つの追加フィールドを提供します。 
   
-- **Targetuserorgroupname** –リソースが共有されていた対象ユーザーまたはグループの UPN または名前を格納します (前の例では、ユーザー B)。 
-    
-- **TargetUserOrGroupType** –対象のユーザーまたはグループが、メンバー、ゲスト、グループ、またはパートナーであるかどうかを識別します。 
-    
+- **TargetUserOrGroupType:** 対象のユーザーまたはグループが、Member、Guest、SharePointGroup、Microsoft.rtc.management.writableconfig.settings.centralizedlogging.securitygroup、または Partner であるかどうかを識別します。
+
+- **Targetuserorgroupname:** リソースが共有されていたターゲットユーザーまたはグループの UPN または名前を格納します (前の例では User B)。 
+
 これら2つのフィールドは、ユーザー、操作、日付などの Office 365 監査ログスキーマの他のプロパティに加えて、*どの*ユーザーがどのリソースを*どのよう*な** *とき*に共有したかについての完全なストーリーを伝えることができます。 
   
-共有ストーリーにとって重要なスキーマプロパティは他にもあります。 **EventData**プロパティは、共有イベントに関する追加情報を格納します。 たとえば、ユーザーが別のユーザーとサイトを共有する場合は、ターゲットユーザーを SharePoint グループに追加することによって実現します。 **EventData**プロパティは、管理者にコンテキストを提供するために、この追加情報をキャプチャします。 
+共有ストーリーにとって重要なスキーマプロパティは他にもあります。 監査ログの検索結果をエクスポートすると、エクスポートされた CSV ファイルの**Auditdata**列に、共有イベントに関する情報が保存されます。 たとえば、ユーザーが別のユーザーとサイトを共有する場合は、ターゲットユーザーを SharePoint グループに追加することによって実現します。 **Auditdata**列は、管理者向けにコンテキストを提供するために、この情報を取り込みます。 **Auditdata**列の情報を解析する手順については、[手順 2](#step-2-use-the-powerquery-editor-to-format-the-exported-audit-log)を参照してください。
 
-## <a name="the-sharepoint-sharing-model-and-sharing-events"></a>SharePoint 共有モデルと共有イベント
+## <a name="sharepoint-sharing-events"></a>SharePoint 共有イベント
 
-共有は、 **Sharingset**、 **SharingInvitationCreated**、および**SharingInvitaitonAccepted**の3つの個別のイベントによって定義されます。 Office 365 監査ログに共有イベントを記録する方法については、次のワークフローを参照してください。 
+共有は、ユーザー (*動作*しているユーザー) が別のユーザー (*ターゲット*ユーザー) とリソースを共有しようとしたときに定義されます。 外部ユーザーとのリソースの共有に関連する監査レコード (組織外のユーザーが組織の Azure Active Directory にゲストアカウントを持っていない場合) は、Office 365 に記録されている次のイベントによって識別されます。監査ログ:
+
+- **SharingInvitationCreated:** 組織内のユーザーが外部ユーザーとリソース (通常はサイト) を共有しようとしました。 この結果、外部共有への招待がターゲットユーザーに送信されます。 この時点では、リソースへのアクセスは許可されません。
+
+- **SharingInvitationAccepted:** 外部ユーザーが、動作しているユーザーによって送信された共有の招待を承諾し、リソースにアクセスできるようになりました。
+
+- **AnonymousLinkCreated:** 匿名リンク ([すべてのユーザー] リンクとも呼ばれます) は、リソースに対して作成されます。 匿名リンクを作成してコピーすることができるので、匿名リンクが設定されているドキュメントは、ターゲットユーザーと共有していることを前提としては十分です。
+
+- **AnonymousLinkUsed:** その名前が示すように、このイベントは、匿名リンクを使用してリソースにアクセスしたときに記録されます。 
+
+- **Securelinkcreated:** ユーザーが、特定のユーザーとリソースを共有するための "特定のユーザーリンク" を作成しました。 このターゲットユーザーには、組織の外部にいる人がいる可能性があります。
+
+- **Addedtosecurelink:** ユーザーが特定の人物リンクに追加されました。 このターゲットユーザーには、組織の外部にいる人がいる可能性があります。
+
+## <a name="sharing-auditing-work-flow"></a>共有監査ワークフロー
   
-![共有の監査のしくみを示すフローチャート](media/d83dd40f-919b-484f-bfd6-5dc8de31bff6.png)
+ユーザー (動作しているユーザー) が別のユーザー (ターゲットユーザー) とリソースを共有しようとしている場合、SharePoint (または OneDrive for Business) は最初に、対象ユーザーの電子メールアドレスが組織のディレクトリ内のユーザーアカウントに関連付けられているかどうかを確認します。 ターゲットユーザーがディレクトリ内にあり、対応するゲストユーザーアカウントを持っている場合、SharePoint は次のことを行います。
   
-ユーザー (動作しているユーザー) が別のユーザー (ターゲットユーザー) とリソースを共有しようとしている場合、SharePoint (または OneDrive for Business) は最初に、対象ユーザーの電子メールアドレスが組織のディレクトリ内のユーザーアカウントに関連付けられているかどうかを確認します。 ターゲットユーザーが組織のディレクトリにある場合、SharePoint は次の処理を行います。
-  
--  リソースにアクセスするためのターゲットユーザーのアクセス許可を即時に割り当てます。 
+-  ターゲットユーザーを適切な SharePoint グループに追加して、リソースにアクセスするためのターゲットユーザーのアクセス許可を即時に割り当て、 **Addedtogroup**イベントをログに記録します。 
     
 - ターゲットユーザーの電子メールアドレスに共有通知を送信します。
     
-- **Sharingset**イベントをログに記録します。 
+- **Sharingset**イベントをログに記録します。 このイベントには、監査ログ検索ツールの [アクティビティの選択] の [**共有とアクセスの要求のアクティビティ**] の [共有ファイル、フォルダー、またはサイト] のフレンドリ名が表示されます。 [手順 1](#step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file)のスクリーンショットを参照してください。 
     
- ターゲットユーザーのユーザーアカウントが組織のディレクトリにない場合、SharePoint は次の処理を行います。 
-  
-- 共有への招待を作成し、対象ユーザーの電子メールアドレスに送信します。
+ターゲットユーザーのユーザーアカウントがディレクトリにない場合、SharePoint は次の処理を行います。 
     
-- **SharingInvitationCreated**イベントをログに記録します。 
-    
-    > [!NOTE]
-    > **SharingInvitationCreated**イベントは、ターゲットユーザーが共有されているリソースにアクセスできない場合、常に外部またはゲストの共有に関連付けられます。 
-  
-ターゲットユーザーが (招待のリンクをクリックすることによって) 送信された共有の招待を承諾すると、SharePoint は**SharingInvitationAccepted**イベントをログに記録し、リソースにアクセスするためのアクセス許可をターゲットユーザーに割り当てます。 対象ユーザーに関する追加情報も記録されます。たとえば、招待状が送信されたユーザーの id や、招待を実際に受諾したユーザーなどが記録されます。 場合によっては、これらのユーザー (またはメールアドレス) が異なる場合があります。 
-  
+   - リソースがどのように共有されているかに基づいて、次のいずれかのイベントを記録します。
+   
+      - **AnonymousLinkCreated**
+   
+      - **SecureLinkCreated**
+   
+      - **AddedToSecureLink** 
 
-  
+      - **SharingInvitationCreated**(このイベントは、共有リソースがサイトである場合にのみ記録されます)
+    
+   - ターゲットユーザーが (招待のリンクをクリックすることによって) 送信された共有の招待を承諾すると、SharePoint は**SharingInvitationAccepted**イベントをログに記録し、リソースにアクセスするためのアクセス許可をターゲットユーザーに割り当てます。 ターゲットユーザーが匿名リンクを送信している場合、ターゲットユーザーがリンクを使用してリソースにアクセスした後、 **AnonymousLinkUsed**イベントがログに記録されます。 セキュリティで保護され**** たリンクの場合、外部ユーザーがリンクを使用してリソースにアクセスするときに、fileaccessed イベントが記録されます。
+
+対象ユーザーに関する追加情報もログに記録されます。たとえば、招待が行われるユーザーの id や、実際に招待を承諾したユーザーなどが記録されます。 場合によっては、これらのユーザー (またはメールアドレス) が異なる場合があります。 
+
 ## <a name="how-to-identify-resources-shared-with-external-users"></a>外部ユーザーと共有されるリソースを特定する方法
 
-管理者にとって一般的な要件は、組織外のユーザーと共有されているすべてのリソースの一覧を作成することです。 Office 365 で共有監査を使用すると、管理者がこのリストを生成できるようになります。 ここでは、使用方法について説明します。
+管理者にとって一般的な要件は、組織外のユーザーと共有されているすべてのリソースの一覧を作成することです。 Office 365 で共有監査を使用すると、管理者はこの一覧を生成できます。 ここでは、使用方法について説明します。
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>手順 1: 共有イベントを検索し、結果を CSV ファイルにエクスポートする
 
@@ -97,31 +112,39 @@ ms.locfileid: "35435243"
     
 8. [名前を付け**て**保存] をクリックし、CSV ファイルをローカルコンピューター上のフォルダーに保存します。 **** \> 
 
-### <a name="step-2-filter-the-csv-file-for-resources-shared-with-external-users"></a>手順 2: 外部ユーザーと共有しているリソースの CSV ファイルをフィルター処理する
+### <a name="step-2-use-the-powerquery-editor-to-format-the-exported-audit-log"></a>手順 2: PowerQuery Editor を使用して、エクスポートされた監査ログを書式設定する
 
-次の手順では、 **Sharingset**イベントと**SharingInvitationCreated**イベントに対して CSV をフィルター処理し、 **TargetUserOrGroupType**プロパティが**Guest**であるイベントを表示します。 これを行うには、Excel の Power Query Editor ツールを使用します。 詳細な手順については、「 [Export, configure, and view audit log records](export-view-audit-log-records.md)」を参照してください。 
+次の手順では、Excel の Power Query エディターで JSON 変換機能を使用して、 **Auditdata**列 (複数のプロパティを持つ JSON オブジェクトから構成される) の各プロパティをそれぞれの列に分割します。 これにより、共有に関連するレコードを表示するための列をフィルター処理できます。
 
-前のトピックの手順に従って CSV ファイルを準備した後、次の操作を行います。
+詳細な手順については、「[エクスポート、構成、および監査ログレコードの表示](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor)」の「手順 2: エクスポートされた監査ログを Power Query エディターを使用して書式設定する」を参照してください。
+
+### <a name="step-3-filter-the-csv-file-for-resources-shared-with-external-users"></a>手順 3: 外部ユーザーと共有しているリソースの CSV ファイルをフィルター処理する
+
+次の手順では、 [SharePoint 共有イベント](#sharepoint-sharing-events)セクションに記載されている、さまざまな共有関連イベントに対して CSV をフィルター処理します。 または、 **TargetUserOrGroupType**列をフィルター処理して、このプロパティの値が**Guest**になっているすべてのレコードを表示することもできます。 
+
+前の手順の手順に従って、PowerQuery エディターを使用して CSV ファイルを準備した後、次の操作を行います。
     
-1. Power Query Editor で準備した CSV ファイルを開きます。 
+1. 手順2で作成した Excel ファイルを開きます。 
 
 2. [**ホーム**] タブで、[**並べ替え & フィルター**] をクリックし、[**フィルター**] をクリックします。
     
-3. [**操作**] 列の [ **& フィルターの並べ替え**] ドロップダウンリストで、すべての選択を解除し、[ **Sharingset** ] と [ **SharingInvitationCreated**] を選択して、[ **OK**] をクリックします。
+3. [**操作**] 列の [**並べ替え & フィルター** ] ボックスの一覧で、すべての選択をオフにし、次に共有関連のイベントを1つ以上選択して、[ **Ok]** をクリックします。
+ 
+   - **SharingInvitationCreated**
+   
+   - **AnonymousLinkCreated**
+   
+   - **SecureLinkCreated**
+   
+   - **AddedToSecureLink** 
     
-    **Sharingset**および**SharingInvitationCreated**イベントの行が Excel に表示されます。 
+    Excel には、選択したイベントの行が表示されます。
     
 4. **TargetUserOrGroupType**という名前の列に移動し、それを選択します。 
     
-5. [**並べ替え & フィルター** ] ドロップダウンリストで、すべての選択をオフにし、[ **TargetUserOrGroupType: Guest**] を選択して、[ **OK**] をクリックします。
+5. [**並べ替え & フィルター** ] ドロップダウンリストで、すべての選択をオフにし、[ **TargetUserOrGroupType: Guest**] を選択して、[ **Ok**] をクリックします。
     
-    ここでは、外部ユーザーが**TargetUserOrGroupType: Guest**という値で識別されるため、 **SharingInvitationCreated**および**SHARINGSET**イベントの行と、ターゲットユーザーが組織外にある場所に表示されます。 
-    
-次の表に、指定された日付範囲内のゲストユーザーとリソースを共有している、組織内のすべてのユーザーを示します。
-  
-![Office での共有イベント365監査ログ](media/0e0ecbe3-c794-4ca6-a2ca-63478fb3bb34.png)
-  
-**ObjectId**プロパティは、前の表には含まれていませんが、ターゲットユーザーと共有されたリソースを識別します。例`ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`を示します。
+    ここでは、外部ユーザーは**TargetUserOrGroupType: GUEST**という値で識別されるため、共有イベントの行と、対象ユーザーが組織外にある場所が表示されます。 
   
 > [!TIP]
-> ゲストユーザーが実際にリソースにアクセスするためのアクセス許可が割り当てられているかどうかを確認するには (リソースと共有しているリソースだけでなく)、手順2、3、4を繰り返し、 **SharingInvitationAccepted**と**sharingset**でフィルター処理します。手順5のイベント 
+> 表示されている監査レコードについては、 **ObjectId**列に、ターゲットユーザーと共有されているリソースが示されます。例`ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`を示します。
