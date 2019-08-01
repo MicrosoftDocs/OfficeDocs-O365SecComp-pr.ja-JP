@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 高度な電子情報開示ケースのレビューセットに Office 365 以外のデータをインポートします。
-ms.openlocfilehash: 37f8c2a5c97452845152e2a12578b9d243ab6711
-ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
+ms.openlocfilehash: d7609c774e7c8a42e24b22a87fbed271a12a97f5
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840864"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048109"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>レビュー セットに Office 365 以外のデータを読み込む
 
@@ -40,7 +40,7 @@ ms.locfileid: "35840864"
 
 - Office 以外の365データは、Advanced eDiscovery でサポートされているファイルの種類である必要があります。 詳細については、「 [Advanced eDiscovery でサポートされるファイルの種類](supported-filetypes-ediscovery20.md)」を参照してください。
 
-- レビューセットにアップロードされたすべてのファイルは、フォルダーに配置されている必要があります。各フォルダーは特定の保管担当者に関連付けられています。 これらのフォルダーの名前には、*エイリアス @ domainname*のような名前を付ける必要があります。 *エイリアス @ domainname*は、ユーザーの Office 365 エイリアスおよびドメインである必要があります。 ルートフォルダー内のすべての*エイリアス @ domainname*フォルダーを収集できます。 ルートフォルダーには、*別名 @ domainname* folders のみを含めることができます。 ルートフォルダー内のルースファイルはサポートされていません。
+- レビューセットにアップロードされたすべてのファイルは、フォルダーに配置されている必要があります。各フォルダーは特定の保管担当者に関連付けられています。 これらのフォルダーの名前には、*エイリアス @ domainname*のような名前を付ける必要があります。 エイリアス @ domainname は、ユーザーの Office 365 エイリアスおよびドメインである必要があります。 ルートフォルダー内のすべてのエイリアス @ domainname フォルダーを収集できます。 ルートフォルダーには、別名 @ domainname folders のみを含めることができます。 ルートフォルダー内のルースファイルはサポートされていません。
 
    アップロードする Office 365 以外のデータのフォルダー構造は、次の例のようになります。
 
@@ -54,7 +54,7 @@ ms.locfileid: "35840864"
 
 - 電子情報開示マネージャーの役割グループに割り当てられているアカウント (および電子情報開示管理者として追加されたもの)。
 
-- Office 365 以外のコンテンツフォルダー構造にアクセスできるコンピューターにインストールされた Microsoft Azure Storage Tools。 AzCopy をインストールするには、「 [azcopy の使用を開始](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy)する」を参照してください。 AzCopy は、既定の場所である **% ProgramFiles (x86)% \ Microsoft SDKs\Azure\AzCopy**にインストールしてください。
+- Office 365 以外のコンテンツフォルダー構造にアクセスできるコンピューターにインストールされている AzCopy v2.0 ツール。 AzCopy をインストールするには、「 [Windows で AzCopy](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)v2.0 を使用してデータを転送する」を参照してください。 AzCopy は、既定の場所である **% ProgramFiles (x86)% \ Microsoft SDKs\Azure\AzCopy**にインストールしてください。 AzCopy v1.1 を使用する必要があります。 その他のバージョンの AzCopy は、高度な電子情報開示で Office 以外の365データを読み込む場合には機能しない可能性があります。
 
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Office 以外の365コンテンツを上級電子情報開示にアップロードする
@@ -81,14 +81,14 @@ ms.locfileid: "35840864"
 
    a. [**ファイルの場所のパス**] ボックスで、アップロードする Office 365 以外のデータを格納したルートフォルダーの場所を確認するか、または入力します。 たとえば、[**開始する前に] セクション**に表示されるサンプルファイルの場所については、「 **%USERPROFILE\Downloads\nonO365**」と入力します。 正しい場所を指定すると、パスの下のボックスに表示される AzCopy コマンドが適切に更新されるようになります。
 
-   b. [**クリップボードにコピー** ] をクリックして、ボックスに表示されているコマンドをコピーします。 Windows コマンドプロンプトを起動し、コマンドを貼り付けて、enter キーを押します。  ファイルは、次の手順のために secure Azure blob ストレージにアップロードされます。
+   b. [**クリップボードにコピー** ] をクリックして、ボックスに表示されているコマンドをコピーします。
 
 7. Windows コマンドプロンプトを起動し、前の手順でコピーしたコマンドを貼り付け、 **enter**キーを押して、azcopy コマンドを開始します。  コマンドを開始すると、Office 以外の365ファイルは、手順4で準備した Azure ストレージの場所にアップロードされます。
 
    ![Office 以外の365インポート: AzCopy](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
-   > 指定した AzCopy コマンドが失敗した場合は、 [「Advanced eDiscovery での AzCopy のトラブルシューティング」](troubleshooting-azcopy.md)を参照してください。
+   > 前述したように、[**ファイルのアップロード**] ページで提供されているコマンドを正常に使用するには、azcopy v1.1 を使用する必要があります。 指定した AzCopy コマンドが失敗した場合は、「 [Advanced eDiscovery での AzCopy のトラブルシューティング](troubleshooting-azcopy.md)」を参照してください。
 
 8. セキュリティ & コンプライアンスセンターに戻り、[**次へ:** ウィザードでファイルを処理します] をクリックします。  これにより、Azure ストレージの場所にアップロードされた非 Office 365 ファイルの処理、テキスト抽出、およびインデックス作成が開始されます。  
 

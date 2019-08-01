@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: 新しい Microsoft 365 コンプライアンスセンター (含まれるもの、その入手方法、および次の手順) について説明します。
-ms.openlocfilehash: fc6ab6893e142b3beb5289c8430477727b3844ac
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: ec7dff8d230bc3b9e7ab1fd4a9348a1b8eb0ca9b
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852791"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048229"
 ---
 # <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>すべての新しい Microsoft 365 コンプライアンスセンターの概要
 
@@ -68,7 +68,7 @@ Microsoft コンプライアンススコアカードに移動すると、[コン
 
 |  |  |
 |---------|---------|
-|![Microsoft 365 コンプライアンスセンターのナビゲーション](media/m365-compliance-center-leftnav.png)  |<br/><br/> 通知に**** 移動して[通知](alerts.md)を表示して解決する<br/><br/>**レポート**にアクセスして、[ラベルの使用状況と保持期間](sensitivity-labels.md)、 [DLP ポリシーの一致とオーバーライド](view-the-dlp-reports.md)、[共有ファイル](https://docs.microsoft.com/cloud-app-security/file-filters)、[使用中のサードパーティ製アプリ](https://docs.microsoft.com/cloud-app-security/discovered-apps)などに関するデータを表示します。<br/><br/>[**分類**] セクションを展開して、[ラベル](labels.md)、[ラベルポリシー](sensitivity-labels.md#what-label-policies-can-do)、[機密情報の種類](what-the-sensitive-information-types-look-for.md)、[ラベル分析](view-label-activity-for-documents.md)にアクセスします。<br/><br/>[**ポリシー** ] に移動して、[警告](alerts.md)を表示し、 [DLP](data-loss-prevention-policies.md)および[アイテム保持](retention-policies.md)ポリシーにアクセスします。<br/><br/> 「 **Solutions** 」セクションのリンクを使用して、組織のコンプライアンスソリューションにアクセスします。 これらには以下が含まれます。 <br/>[データガバナンス > の廃棄](disposition-reviews.md)<br/>[電子情報開示 (プレビュー)](compliance20/overview-ediscovery-20.md)<br/>[マネージ](supervision-policies.md)<br/>[データ調査](datainvestigations/overview-data-investigations.md)<br/>[データ サブジェクト要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
+|![Microsoft 365 コンプライアンスセンターのナビゲーション](media/m365-compliance-center-leftnav.png)  |<br/><br/> 通知に**** 移動して[通知](alerts.md)を表示して解決する<br/><br/>**レポート**にアクセスして、[ラベルの使用状況と保持期間](sensitivity-labels.md)、 [DLP ポリシーの一致とオーバーライド](view-the-dlp-reports.md)、[共有ファイル](https://docs.microsoft.com/cloud-app-security/file-filters)、[使用中のサードパーティ製アプリ](https://docs.microsoft.com/cloud-app-security/discovered-apps)などに関するデータを表示します。<br/><br/>[**分類**] セクションを展開して、[ラベル](labels.md)、[ラベルポリシー](sensitivity-labels.md#what-label-policies-can-do)、[機密情報の種類](what-the-sensitive-information-types-look-for.md)、[ラベル分析](view-label-activity-for-documents.md)にアクセスします。<br/><br/>[**ポリシー** ] に移動して、[警告](alerts.md)を表示し、 [DLP](data-loss-prevention-policies.md)および[アイテム保持](retention-policies.md)ポリシーにアクセスします。<br/><br/> 「 **Solutions** 」セクションのリンクを使用して、組織のコンプライアンスソリューションにアクセスします。 これらには以下が含まれます。 <br/>[データガバナンス > の廃棄](disposition-reviews.md)<br/>[電子情報開示](compliance20/overview-ediscovery-20.md)<br/>[マネージ](supervision-policies.md)<br/>[データ調査](datainvestigations/overview-data-investigations.md)<br/>[データ サブジェクト要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
 
 
 ## <a name="how-do-i-get-this"></a>どのようにして入手できますか?

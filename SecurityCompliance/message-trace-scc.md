@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理者は、セキュリティ & コンプライアンスセンターのメッセージ追跡を使用して、メッセージに何が起こったかを確認できます。
-ms.openlocfilehash: fb173dd09adf02c1b2eb7d0dbf9d5736483f231b
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: af3739174203d7c8d81086a5bf7d036bc2bdd76f
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601014"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048219"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメッセージ追跡
 
@@ -23,6 +23,9 @@ ms.locfileid: "35601014"
 セキュリティ & コンプライアンスセンターのメッセージ追跡は、Exchange Online 組織を通過する電子メールメッセージに従います。 メッセージがサービスによって受信、拒否、延期、または配信されたかどうかを判断できます。 メッセージが最終的な状態になる前に、メッセージに行われた処理も表示します。
 
 セキュリティ & コンプライアンスセンターのメッセージ追跡は、Exchange 管理センター (EAC) で使用可能だったメッセージ追跡によって改善されています。 メッセージ追跡からの情報を使用して、メッセージに何が起こったか、メールフローの問題のトラブルシューティング、およびポリシーの変更の検証について、ユーザーからの質問に効率よく回答することができます。
+
+> [!NOTE]
+> 返されるメッセージの量の制限は5万です。 コンソールで非常に大きなクエリを実行している場合、Start-historicalsearch コマンドレットレポートメッセージ数が24万を超えています。
 
 ## <a name="open-message-trace"></a>メッセージ追跡を開く
 
