@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: '管理者は、Office 365 で誤検知済みの肯定メッセージを表示、リリース、および報告することができます。 Office 365 がメッセージをフィルター処理して、複数の理由で検疫にメッセージを送信するようにポリシーを設定できます。これは、スパム、バルク、フィッシング、マルウェア、またはメールフロールールと一致したためです。 '
-ms.openlocfilehash: 245068b7d3ec51cbca887883f791b19ea116731a
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: dda6766ec5fa7858abef0037f0a67ec8869abd59
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598803"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054719"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Office 365 の管理者として検疫済みメッセージおよびファイルを管理する
 
@@ -29,14 +29,14 @@ ms.locfileid: "35598803"
   
 既定では、Office 365 は、フィッシング詐欺メッセージとマルウェアを含むメッセージを検疫に直接送信します。 その他のフィルター処理されたメッセージは、検疫に送信するポリシーを設定しない限り、ユーザーの迷惑メールフォルダーに送信されます。
   
-他のユーザーに送信された検疫済みメッセージを操作したり、検疫済みファイルを操作したりするには、Office 365 のグローバル管理者 (GA) のアクセス許可、またはセキュリティとコンプライアンスセンターのセキュリティ管理者である必要があります。
+検疫済みメッセージや検疫されたファイルを操作するには、Office 365 でグローバル管理者 (GA) のアクセス許可を持っているか、または1つ以上のセキュリティ & コンプライアンスセンターの役割グループのメンバーである必要があります。 詳細について[は、「Office 365 セキュリティ & コンプライアンスセンター](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center) 」の「アクセス許可」を参照してください。
   
 > [!IMPORTANT]
 >既定では、スパム、バルクメッセージ、およびフィッシングメッセージは、30日間検疫に保持されます。 メールフロールールに一致したために検疫されたメッセージは、7日間検疫に保持されます。 マルウェアメッセージは、15日間検疫に保持されます。 セキュリティ&amp; /コンプライアンスセンターのスパム対策設定でスパム検疫時間をカスタマイズできます。 Office 365 では、検疫からメッセージを削除しても、それを取得することはできません。 必要に応じて、スパム対策フィルターポリシーの検疫済みメッセージの保持期間を変更することができます。 詳細については、この記事の「[検疫の保存期間の設定](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime)」を参照してください。 
   
 ## <a name="view-your-organizations-quarantined-messages"></a>組織の検疫済みメッセージを表示する
 
-1. Office 365 組織の全体管理者特権を持つ職場または学校のアカウントを使用して、Office 365 にサインインして[、セキュリティ/コンプライアンスセンターに移動](go-to-the-securitycompliance-center.md)します。
+1. Office 365 組織のグローバル管理者特権 (または適切なセキュリティ & コンプライアンスセンターの役割) を持つ職場または学校のアカウントを使用して、Office 365 にサインインし、[セキュリティ/コンプライアンスセンターに移動](go-to-the-securitycompliance-center.md)します。
     
 2. 左側のリストで、[脅威の**管理**] を展開し、[**確認**] を選択してから、[**検疫**] を選択します。
     
@@ -189,7 +189,7 @@ ms.locfileid: "35598803"
   
 ### <a name="to-modify-the-quarantine-retention-period-for-the-default-spam-filter-policy-in-the-security-and-compliance-center"></a>セキュリティ/コンプライアンスセンターで既定のスパムフィルターポリシーの検疫保持期間を変更するには
 
-1. Office 365 組織のグローバル管理者特権を持つ職場または学校のアカウントを使用して、Office 365 にサインインし、[セキュリティ/コンプライアンスセンターに移動](go-to-the-securitycompliance-center.md)します。
+1. Office 365 組織のグローバル管理者特権 (または適切なセキュリティ & コンプライアンスセンターの役割) を持つ職場または学校のアカウントを使用して、Office 365 にサインインし、[セキュリティ/コンプライアンスセンターに移動](go-to-the-securitycompliance-center.md)します。
     
 2. 左側の [脅威の**管理**] を展開し、[**ポリシー**] を選択してから、[**スパム対策**] を選択します。 <br/>
     > [!TIP]

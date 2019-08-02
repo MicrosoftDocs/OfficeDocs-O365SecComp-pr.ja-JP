@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターのエクスプローラー (およびリアルタイム検出) について説明します。
-ms.openlocfilehash: 127652ccb1c32ce84d8c80213d737b095913db40
-ms.sourcegitcommit: 5abe4c11bf3c0659180c7812dd26be9689ab01ca
+ms.openlocfilehash: dff1fae01aa525135226d88b305de7c7c3aefb7c
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35605476"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054759"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラー (およびリアルタイム検出)
 
@@ -170,3 +170,8 @@ Office 365 テクノロジを使用して、電子メールで検出されたマ
 - [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Exchange Online の機能アクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
   
+## <a name="some-differences-between-real-time-detection-and-threat-exporter"></a>リアルタイムの検出と脅威のエクスポーターにはいくつかの違いがあります。
+
+ - **リアルタイム検出レポート**は、**脅威エクスプローラ**が atp P2 を使用している間、atp P1 サブスクリプションと共に出荷されます。
+ - **リアルタイムの検出**レポートを使用すると、検出された内容をリアルタイムで表示することができます。脅威エクスプローラーのレポートでは、特定の攻撃に関する詳細を表示できます。
+ - **脅威エクスプローラー**のレポートには、**リアルタイムの検出**レポートに対する利便性を向上させるさまざまなレポートセットが用意されています。
