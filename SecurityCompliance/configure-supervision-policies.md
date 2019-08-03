@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 監督レビューポリシーを設定して、レビューのために従業員のコミュニケーションをキャプチャします。
-ms.openlocfilehash: 4cf8c47f761f13165898cbc719f94e9bf9fd66f2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9cc13cb953d8166ceac04856fa8b54d0a4629bd6
+ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151539"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36168175"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>組織の監督ポリシーを設定する
 
@@ -53,7 +53,7 @@ Office 365 組織の監督をセットアップして使用するには、次の
 
     監督ポリシーをテストし、必要に応じて機能していることを確認します。 コンプライアンス戦略によって標準が達成されていることを確認することが重要です。
 
-- **手順 6 (オプション)**: [Office 365 監督ダッシュボードまたは outlook on the Web (旧称 outlook web App) を使用しないで、監視された通信を確認するように outlook を構成](#step-6-configure-outlook-for-reviewers-optional)する
+- **手順 6 (オプション)**: [Office 365 監督ダッシュボードを使用して、監視対象の通信を確認しないように Outlook を構成](#step-6-configure-outlook-for-reviewers-optional)する
 
     Outlook を構成して、レビューアーが Outlook クライアント内の監督機能にアクセスできるようにして、各アイテムを評価および分類できるようにします。
 
@@ -68,6 +68,8 @@ Office 365 組織の監督をセットアップして使用するには、次の
 |ユーザーの監視 <br> 非監視ユーザー | 配布グループ <br> [Office 365 グループ] | 動的配布グループ |
 | Reviewers | メールが有効なセキュリティ グループ  | 配布グループ <br> 動的配布グループ |
   
+管理対象ユーザー用に Office 365 グループを選択すると、そのグループに関連付けられている共有 Office 365 メールボックスおよび Microsoft Teams チャネルのコンテンツが監視されます。 配布リストを選択すると、ポリシーによって個々のユーザーメールボックスが監視されます。
+
 大規模なエンタープライズ組織での管理対象ユーザーを管理するには、大規模なグループのすべてのユーザーを監視する必要がある場合があります。 PowerShell を使用して、割り当てられたグループのグローバル監督ポリシーの配布グループを構成できます。 これにより、数千人のユーザーを1つのポリシーで監視し、新しい従業員が組織に参加したときに、監督ポリシーを更新したままにすることができます。
 
 1. 次のプロパティを使用して、グローバル監督ポリシー用の専用の[配布グループ](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps)を作成します。この配布グループは、他の目的や他の Office 365 サービスで使用されていないことを確認してください。
@@ -189,7 +191,7 @@ Office 365 の監督ダッシュボードではなく Outlook を使用して通
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>手順 1: 監督メールボックスのアドレスをコピーする
 
-Outlook デスクトップまたは web 用の Outlook の確認を構成するには、監督ポリシーのセットアップの一部として作成された監督メールボックスのアドレスが必要です。
+Outlook デスクトップのレビューを構成するには、監督ポリシーのセットアップの一部として作成された監督メールボックスのアドレスが必要です。
   
 > [!NOTE]
 > 他のユーザーがポリシーを作成した場合は、そのポリシーからこのアドレスを取得してアドインをインストールする必要があります。

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'セキュリティ & コンプライアンスセンターのコンテンツ検索ツールを使用して、Exchange Online メールボックスおよび SharePoint または OneDrive for Business サイトで検索できる電子メールとファイルプロパティについて説明します。  '
-ms.openlocfilehash: 2d9cc41b4e0f8139db385a9614d3022230cda50d
-ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
+ms.openlocfilehash: 70f005d6875735dfe95e10bf4487c8e1373431ea
+ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017649"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36168185"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>コンテンツ検索のキーワード クエリと検索条件
 
@@ -70,7 +70,7 @@ ms.locfileid: "35017649"
 |||||
    
 > [!NOTE]
-> <sup>1</sup>受信者プロパティの値には、電子メールアドレス (*ユーザープリンシパル名*または UPN とも呼ばれる)、表示名、またはエイリアスを使用して、ユーザーを指定できます。 たとえば、ユーザー Ann Beebe を指定するために、annb@contoso.com、annb、または "Ann Beebe" を使用できます。<br/><br/>受信者のプロパティ (From、To、Cc、Bcc、参加者、および受信者) を検索する場合、Office 365 は Azure Active Directory で検索して各ユーザーの id を拡張しようとします。  ユーザーが Azure Active Directory で見つかった場合、そのユーザーの電子メールアドレス (または UPN)、エイリアス、表示名、および LegacyExchangeDN を含むようにクエリが拡張されます。<br/><br/>たとえば、のようなクエリが`participants:ronnie@contoso.com`に`participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`展開されます。
+> <sup>1</sup>受信者プロパティの値には、電子メールアドレス (*ユーザープリンシパル名*または UPN とも呼ばれる)、表示名、またはエイリアスを使用して、ユーザーを指定できます。 たとえば、ユーザー Ann Beebe を指定するために、annb@contoso.com、annb、または "Ann Beebe" を使用できます。<br/><br/>受信者のプロパティ (From、To、Cc、Bcc、参加者、および受信者) を検索する場合、Office 365 は Azure Active Directory で検索して各ユーザーの id を拡張しようとします。  ユーザーが Azure Active Directory で見つかった場合、そのユーザーの電子メールアドレス (または UPN)、エイリアス、表示名、および LegacyExchangeDN を含むようにクエリが拡張されます。<br/><br/>たとえば、のようなクエリが`participants:ronnie@contoso.com`に`participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`展開されます。<br/><br/>受信者を拡張しないようにするには、検索クエリの電子メールアドレスの末尾にワイルドカード文字 (アスタリスク) を追加します。たとえば、 `participants:ronnie@contoso.com*`のようになります。
 
 ## <a name="searchable-site-properties"></a>検索可能なサイトのプロパティ
 
