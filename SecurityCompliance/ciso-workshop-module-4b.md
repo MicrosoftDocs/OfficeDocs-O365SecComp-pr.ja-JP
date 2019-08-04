@@ -10,16 +10,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティに関する原則と推奨事項の詳細については、「組織のモダン化セキュリティ」を参照してください。
-ms.openlocfilehash: 640fb15a6e28ee00bc383f6502c06d80db287135
-ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
+ms.openlocfilehash: f4f2eb8c98575a03635ec69274396cdf8769e498
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34767298"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786592"
 ---
 # <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>CISO ワークショップモジュール 4b: 脅威保護戦略 
 
-このモジュールでは、microsoft のセキュリティ運用センター (SOC) の進化と軌道について説明します。この機能は、Microsoft のインテリジェントセキュリティグラフの trillions の信号を利用しています。
+このモジュールでは、microsoft のセキュリティ運用センター (SOC) の進化と軌道について説明します。この機能は、Microsoft のインテリジェントセキュリティグラフの trillions によって提供されています。
 
 - PDF の概要をダウンロードする:[モジュール 4b: 脅威保護戦略](media/ciso-workshop-4b-threat-protection-strategy.pdf)
 - PowerPoint の概要:[モジュール 4b: 脅威保護戦略](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4b-threat-protection-strategy.pptx)
@@ -36,7 +36,7 @@ ms.locfileid: "34767298"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtDxA]
 
-## <a name="part-3-learnings-from-microsofts-corporate-it-soc-2207"></a>パート 3: な学習事項 from Microsoft の企業 IT SOC (22:07)
+## <a name="part-3-learnings-from-microsoft-corporate-it-soc-2207"></a>パート 3: な学習事項 from Microsoft Corporate IT SOC (22:07)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE368fZ]
 

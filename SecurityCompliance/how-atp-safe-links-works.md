@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '[安全なリンク] 機能を使用すると、Office ドキュメントや電子メールメッセージ内のハイパーリンクの時間を確認できます。 ATP の安全なリンクのしくみについては、この記事をお読みください。'
-ms.openlocfilehash: 7570fd65a9831a6436eec8c402a2bc0c2ae09b40
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 67779560e279028c158179c265196199b5d37d1c
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599183"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792043"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Office 365 の ATP の安全なリンクのしくみ
          
@@ -49,9 +49,9 @@ ms.locfileid: "35599183"
     
 ## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Office ドキュメントの Url で ATP の安全なリンクが機能するしくみ
 
-詳細については、「Office 365 ProPlus アプリケーション (Windows または Mac 上の現在のバージョンの Word、Excel、および PowerPoint)、iOS または Android デバイス上の Office アプリ、Visio on Windows、OneNote Online、および Office の各 Url で、 [ATP の安全なリンク](atp-safe-links.md)保護がどのように機能するかについて説明します。オンライン):
+詳細については、「Office [](atp-safe-links.md) 365 ProPlus アプリケーション (windows または Mac 上の現在のバージョンの Word、Excel、PowerPoint)、iOS または Android デバイス上の Office アプリ、ブラウザーの OneNote、Visio on windows、およびブラウザー内の Office):
   
-1. ユーザーは、コンピューター、スマートフォン、またはタブレットに Office 365 ProPlus をインストールしています。 (または、ブラウザーで Office Online を使用している場合)。
+1. ユーザーは、コンピューター、スマートフォン、またはタブレットに Office 365 ProPlus をインストールしています。 (または、ユーザーがブラウザーで Office を使用している場合)。
     
 2. ユーザーが Word、Excel、PowerPoint、または Visio を開き、職場または学校のアカウントを使用して Office 365 Enterprise にサインインします。 ドキュメントに Url が含まれている。
     

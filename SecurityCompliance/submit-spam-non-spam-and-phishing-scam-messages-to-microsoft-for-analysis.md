@@ -2,7 +2,7 @@
 title: スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 04/19/2019
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'ユーザーは、誤検出および誤検知のスパムメッセージを分析のために Microsoft に送信することができます。 '
-ms.openlocfilehash: 8949e3422b62a5bca0b72be8168054d8c1b96a70
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4ca0cf08a2c24ce077756a4c481afd7af59b20a7
+ms.sourcegitcommit: 73d4cbcf7389935a04d2e451903ef14ebb38e096
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156459"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35638476"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>スパム、非スパム、フィッシング詐欺メッセージを分析のために Microsoft に送信する
 
@@ -27,6 +27,8 @@ ms.locfileid: "34156459"
   
 > [!NOTE]
 > 大量の送信が送信されるため、分析のすべての要求に応答できない場合があります。 
+
+管理者は、電子メール、url、添付ファイルをレビュー用に Microsoft に送信できます。 「 [Office 365 ATP」の「管理者の提出」を](admin-submission.md)参照してください。
   
 ## <a name="submit-junk-or-phishing-messages-that-passed-through-the-spam-filters"></a>スパム フィルターを通過した迷惑メールまたはフィッシング詐欺メッセージを送信する
 <a name="sectionSection0"> </a>

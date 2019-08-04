@@ -10,16 +10,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティに関する原則と推奨事項の詳細については、「組織のモダン化セキュリティ」を参照してください。
-ms.openlocfilehash: dccd34a6bed27ec3dbbca6c2affdc56234b1a21a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 94602055ca42e0af154b5e33d3140baa8af0c446
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155509"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786602"
 ---
 # <a name="ciso-workshop-module-5-information-protection"></a>CISO ワークショップモジュール 5: 情報保護
 
-自動分類、デバイス間での永続的な暗号化、モバイルデバイス、クラウドサービス、およびその他の企業資産間でのデータの継続的な監視を使用して、機密情報を保護する方法について説明します。
+デバイス間での自動分類および永続的な暗号化によって機密情報を保護する方法について説明します。 モバイルデバイス、クラウドサービス、およびその他の企業資産間でのデータの継続的な監視に関する情報が含まれています。
 
 - PDF の概要をダウンロードする:[モジュール 5: 情報保護](media/ciso-workshop-5-information-protection-strategy.pdf)
 - PowerPoint の概要:[モジュール 5: 情報保護](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-5-information-protection-strategy.pptx)をダウンロードする

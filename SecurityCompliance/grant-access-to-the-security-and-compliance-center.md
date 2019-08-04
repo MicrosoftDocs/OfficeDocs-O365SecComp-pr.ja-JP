@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: ユーザーがセキュリティまたはコンプライアンス機能を管理する前に、Office 365 セキュリティ & コンプライアンスセンターでアクセス許可を割り当てる必要があります。
-ms.openlocfilehash: 7963a8c3db64e83566960abe9298b9a2d636ae53
-ms.sourcegitcommit: 6302a43d947a908dd10a8e40550b806f491692fc
+ms.openlocfilehash: ea774648efcfe80461eae937f80856acaf1db224
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35645122"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792013"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>ユーザーに Office 365 セキュリティ センターとコンプライアンス センターへのアクセス権を付与する
 
@@ -39,11 +39,11 @@ ms.locfileid: "35645122"
 
 - (AOBO) 権限を持つ代理アクセス許可 (DAP) パートナーは、セキュリティ & コンプライアンスセンターにアクセスできません。
 
-## <a name="use-the-office-365-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>Office 365 管理センターを使用して、別のユーザーにセキュリティ & コンプライアンスセンターへのアクセス権を付与する
+## <a name="use-the-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>管理センターを使用して、別のユーザーにセキュリティ & コンプライアンスセンターへのアクセス権を付与する
 
 1. [Office 365 にサインインし、管理センターに移動し](https://go.microsoft.com/fwlink/p/?LinkId=525275)ます。
 
-2. Office 365 管理センターで、**管理センター**を開き、[**セキュリティ & コンプライアンス**] をクリックします。
+2. Microsoft 365 管理センターで、**管理センター**を開き、[**セキュリティ & コンプライアンス**] をクリックします。
 
 3. [セキュリティ & コンプライアンスセンター] で、[**アクセス許可**] に移動します。
 

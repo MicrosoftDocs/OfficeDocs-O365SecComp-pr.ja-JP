@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e8ec5114983d64e7d717d4b7ab866bfee9d8d488
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4e46eba010cd51ab0722fb43196230ba44f4e9a4
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154899"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35791993"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>詳細な電子情報開示で保留リストを管理する
 
@@ -31,7 +31,7 @@ ms.locfileid: "34154899"
 
 保管担当者ホールドポリシーを表示するには、次のようにします。
 
-1. **セキュリティ _AMP_ コンプライアンスセンター**で、[**電子情報開示 > Advanced ediscovery** ] をクリックして、組織内のケースの一覧を表示します。
+1. [**セキュリティ & コンプライアンスセンター**] で、[**電子情報開示 > Advanced ediscovery** ] をクリックして、組織内のケースの一覧を表示します。
    
 2. ケース内に保管担当者を追加するには、[**保管担当者**] タブに移動します。 高度な電子情報開示ケース内に保管担当者を追加して保存する方法については、「 [Add 保管担当者 to a Advanced Ediscovery case」を](add-custodians-to-case.md)参照してください。 保管担当者を既に追加していて、保留リストに配置している場合は、手順3に進みます。
    
@@ -48,7 +48,7 @@ ms.locfileid: "34154899"
 
 高度な電子情報開示ケースの保留リストを作成するには、次のようにします。
 
-1. **セキュリティ _AMP_ コンプライアンスセンター**で、[**電子情報開示 > Advanced ediscovery** ] をクリックして、組織内のケースの一覧を表示します。
+1. [**セキュリティ & コンプライアンスセンター**] で、[**電子情報開示 > Advanced ediscovery** ] をクリックして、組織内のケースの一覧を表示します。
   
 2. 保留リストを作成するケースの横の [**開く**] をクリックします。
   
@@ -132,7 +132,7 @@ ms.locfileid: "34154899"
 
  - ユーザーのメールボックスを検索すると、そのユーザーがメンバーになっているすべての Office 365 グループまたは Microsoft チームは検索されません。 同様に、Office 365 グループまたは Microsoft teams ホールドを配置すると、グループメールボックスとグループサイトのみが保持されます。グループメンバーのメールボックスと OneDrive for Business サイトは、保管担当者として明示的に追加したり、データソースを保持したりしない限り、保留リストには置かれません。 そのため、特定の保管担当者に対して Office 365 グループまたは Microsoft teams を保持する必要がある場合は、グループメールボックスとグループメールボックスを保管担当者にマッピングすることを検討してください (「Advanced eDiscovery での保管担当者の管理」を参照してください)。 Office 365 グループまたは Microsoft teams が1つの保管担当者に属さない場合は、そのソースを非 custodial ホールドに追加することを検討してください。 
  
- - Office 365 グループまたは Microsoft チームのメンバーの一覧を取得するには、Office 365 管理センターの [ホーム > グループ] ページでプロパティを表示します。 または、Exchange Online PowerShell で次のコマンドを実行することもできます。
+ - Office 365 グループまたは Microsoft teams のメンバーの一覧を取得するには、Microsoft 365 管理センターの [ホーム > グループ] ページでプロパティを表示します。 または、Exchange Online PowerShell で次のコマンドを実行することもできます。
 
    ``` 
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

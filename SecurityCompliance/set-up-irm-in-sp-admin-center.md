@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Microsoft Azure Active Directory Rights Management Services (RMS) を使用して SharePoint Online IRM を使用して SharePoint リストとドキュメントライブラリを保護する方法について説明します。
-ms.openlocfilehash: 16a76ecda37bd5480285dd70670843a88198bdb7
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: 6fc51eaaf7f5d5d22167d10ab70d45dbf03cc6d2
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756849"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792073"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -34,7 +34,7 @@ Rights Management サービスをアクティブ化した後、SharePoint 管理
   
 1. グローバル管理者または SharePoint 管理者として Office 365 にサインインします。
     
-2. 左上隅にある Office ![365](media/e5aee650-c566-4100-aaad-4cc2355d909f.png)のアプリ起動ツールのアイコンをクリックし、[**管理者**] を選択して office 365 管理センターを開きます。 (If you don't see the Admin tile, you don't have Office 365 administrator permissions in your organization.) 
+2. 左上のアプリ起動ツール アイコン ![Office 365 のアプリ起動ツール アイコン](media/e5aee650-c566-4100-aaad-4cc2355d909f.png)を選択し、**[管理者]** を選択して、Microsoft 365 管理センターを開きます ([管理] タイルが表示されない場合は、組織内で Office 365 管理者権限を持っていません)。 
     
 3. 左側のウィンドウで、**[管理センター]** \> **[SharePoint]** の順に選択します。
     
@@ -51,7 +51,7 @@ IRM 設定を更新すると、サイト所有者は SharePoint リストとド�
   
 ユーザーが IRM 対応リストまたはライブラリにファイルをダウンロードすると、承認されたユーザーのみがファイルを表示できるように、ファイルが暗号化されます。 また、各権限管理ファイルには、ファイルを表示するユーザーに制限を課す発行ライセンスが含まれています。 一般的な制限としては、ファイルを読み取り専用にし、テキストのコピーを無効にして、ユーザーがローカルコピーを保存しないようにしたり、ファイルを印刷できないようにしたりすることがあります。 IRM がサポートするファイルの種類を読み取ることができるクライアントプログラムは、権限が管理されたファイル内の発行ライセンスを使用して、これらの制限を適用します。 これは、権限が管理されたファイルがダウンロードされた後も保護を保持する方法です。 リストまたはライブラリで IRM を有効にするには、「[リストまたはライブラリへの Information Rights Management の適用](apply-irm-to-a-list-or-library.md)」を参照してください。
   
-Office Online を使用して IRM 対応ライブラリでドキュメントを作成または編集することはできません。 代わりに、一度に1人のユーザーが IRM で暗号化されたファイルをダウンロードして編集することができます。 チェックインとチェックアウトを使用して、複数のユーザーにまたがる*共同編集*または作成を管理します。 
+ブラウザーで Office を使用して、IRM が有効なライブラリ内のドキュメントを作成または編集することはできません。 代わりに、一度に1人のユーザーが IRM で暗号化されたファイルをダウンロードして編集することができます。 チェックインとチェックアウトを使用して、複数のユーザーにまたがる*共同編集*または作成を管理します。 
   
 IRM で保護されたライブラリから PDF ファイルをダウンロードすると、Office 365 は保護された PDF ファイルを作成します。 ファイルの拡張子は変わりませんが、ファイルは保護されます。 このファイルを表示するには、Azure Information Protection viewer、完全な Azure Information Protection クライアント、または保護された PDF ファイルの表示をサポートする別のアプリケーションが必要です。 
   
