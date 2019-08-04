@@ -14,20 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 で誤検知が発生しないようにして、正しいメールが迷惑メールにならないようにする方法について説明します。
-ms.openlocfilehash: c49bd519adf6c66f7f8c6c97fb7a24a0c7f85a99
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: baf3fa52f34107ad82c392b52295d35a7e0002c4
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157479"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054675"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Office 365 でメールが迷惑メールとしてマークされるのを防ぐ方法
 
  **Office 365 でメールが迷惑メールとしてマークされていますか? 以下のようにしてください。**
   
-誤検知が発生する場合は、「[迷惑メール報告アドインを使用する](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)」ことにより Microsoft にそのメールを報告してください。または、メッセージを*添付ファイルとして* not_junk@office365.microsoft.com に転送することもできます。
-
-**重要**: メッセージを添付ファイルとして転送しなければ、ヘッダーがないために Office 365 の迷惑メール フィルターの改善ができなくなります。
+誤検知が報告された場合は、「[迷惑メール報告アドインを使用する](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)」を使用して Microsoft にメッセージを報告します。さらに、 [報告エクスプローラー](admin-submission.md)を使用して提出することもできます。
     
 ## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>メッセージが迷惑メールとしてマークされた理由を判断する
 
@@ -62,7 +60,9 @@ Exchange Online Protection (EOP) が効率的に機能するためには、い�
 
 - **DNS レコードが Office 365 を指すようにする** EOP が保護を提供するためには、すべてのドメインのメール エクスチェンジャー (MX) DNS レコードが Office 365 だけを指すようにする必要があります。お使いの MX が Office 365 を指していない場合、EOP はユーザーに迷惑メール フィルター機能を提供しません。別のサービスまたはアプライアンスを使用してドメインのための迷惑メールをフィルタリングする場合、EOP の迷惑メール保護を無効にすることを検討する必要があります。これを行うには、SCL 値を -1 に設定するメール フロー ルールを作成します。EOP を使用することを後で決定する場合は、このメール フロー ルールを必ず削除してください。 
     
-- **ユーザーのメッセージ報告アドインをオンにする** [ユーザーのメッセージ報告アドインを有効にする](enable-the-report-message-add-in.md)ことを強くお勧めします。管理者は、ユーザーが送信しているフィードバックを調べ、あらゆるパターンを使用して、問題の原因と思われる設定を調整することもできます。
+- **ユーザーの迷惑メール報告アドインを有効にする**ことで、[ユーザーのレポート メッセージ アドインを有効にする](enable-the-report-message-add-in.md)ことを強くお勧めします。
+
+- **[報告エクスプローラー](admin-submission.md)を使用して**、管理者は、Office 365 の Microsoft でスキャンするファイルまたはネットワークのメッセージ ID、URL、ファイルを使用してメールを送信できるようになりました。 管理者は、ユーザーが送信したフィードバックを表示し、問題の原因である可能性のある設定を任意のパターンで調整することができる場合もあります。
 
 - 
   **ユーザーが電子メールの送受信に関する制限の許容範囲内にあることを確認する** (制限の詳細については、[ここ](https://docs.microsoft.com/ja-JP/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)を参照)。
@@ -80,7 +80,6 @@ EOP では、ユーザーの信頼できる差出人と宛先のリストは適�
 - **Outlook の SmartScreen フィルターを無効にする** ユーザーが古い Outlook デスクトップ クライアントを使用している場合、廃止されている SmartScreen フィルター機能を無効にする必要があります。有効にしておくと、誤検知の原因になることがあります。これは、更新されたデスクトップ Outlook クライアントを実行している場合は必要ありません。
 
 ## <a name="troubleshooting-a-message-ends-up-in-the-junk-folder-even-though-eop-marked-the-message-as-non-spam"></a>トラブルシューティング: EOP がメッセージを迷惑メールではないとマークしてもメッセージが迷惑メール フォルダーに送られる
-
 
 ユーザーが Outlook のオプションで、[セーフ リストのみ: 差出人セーフ リストまたは宛先セーフ リストに登録されたユーザーやドメインからのメールのみを受信トレイに配信する] を有効にしている場合、受信者が信頼できる差出人のリストに登録していない差出人からのすべてのメールは、迷惑メールに送られます。EOP がメッセージを迷惑メールではないと判断したかどうか、または管理者がメッセージを迷惑メールではないと判断するルールを EOP に設定したかどうかにかかわらず、この処理は実行されます。
   
