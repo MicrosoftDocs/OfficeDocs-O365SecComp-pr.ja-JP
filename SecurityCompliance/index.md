@@ -12,10 +12,10 @@ ms.topic: landing-page
 ms.date: 12/27/2018
 ms.author: robmazz
 ms.openlocfilehash: 1d5f3ef4c21a8771479f232f7347889b31b5fce2
-ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
+ms.lasthandoff: 08/06/2019
 ms.locfileid: "33622227"
 ---
 # <a name="office-365-security-and-compliance"></a>Office 365 のセキュリティとコンプライアンス
