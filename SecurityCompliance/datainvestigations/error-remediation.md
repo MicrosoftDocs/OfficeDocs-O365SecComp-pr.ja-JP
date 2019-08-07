@@ -15,10 +15,10 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: f8e253a3d38f0f4846485e3b88ea09914d9978ce
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 08/06/2019
 ms.locfileid: "34547952"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>調査のためにデータを処理するときのエラー修復

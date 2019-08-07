@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: '概要: Office 365 開発/テスト環境で、組織の他の部分とは分離した SharePoint Online チーム サイトを構成します。'
-ms.openlocfilehash: 23b734e55e8c68cdc42f41b4e61bdfe152fb01e0
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e4d4d4462efa91247954501c51a71120a7d341e0
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152589"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053092"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Office 365 開発/テスト環境での分離した SharePoint Online チーム サイト
 
@@ -59,7 +59,7 @@ Office 365 開発/テスト環境での分離した SharePoint Online チーム 
 シミュレーションのエンタープライズ構成で分離した SharePoint Online チーム サイトを作成する場合は、[Office 365 開発/テスト環境の DirSync](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment) の手順に従ってください。
   
 > [!NOTE]
-> 分離した SharePoint Online サイトの作成には、シミュレーションのエンタープライズ開発/テスト環境は必要ありません。その環境には、インターネットに接続されたシミュレーションのイントラネット、Windows サーバー AD フォレスト用のディレクトリ同期が含まれています。この機能は、一般的な組織と類似した環境で分離した SharePoint Online サイトをテストしてお試しいただけるようオプションとしてここで提供されています。 
+> 分離した SharePoint Online サイトを作成する場合は、シミュレートされたエンタープライズ開発/テスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この記事は、分離した SharePoint Online サイトをテストして、一般的な組織を表す環境で試してみることができるオプションとして提供されています。 
   
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>フェーズ 2: ユーザー アカウントとアクセス グループを作成する
 
@@ -235,7 +235,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
     
 11. ブラウザーの **[ProjectX-Documents]** タブで、 **[新規] > [Word 文書]** の順にクリックします。
     
-12. **[Word Online]** ページでテキストを入力し、状態が **[保存済み]** になるのを待ちます。その後、ブラウザーの戻るボタンをクリックして、ページを最新の情報に更新します。 **[ドキュメント]** フォルダーで新しい **[Document.docx]** が表示されます。
+12. ページに何らかのテキストを入力し、状態が [**保存済み**] になっていることを待ってから、ブラウザーの [戻る] ボタンをクリックし、ページを更新します。 **ドキュメント**フォルダーに新しい **.docx**が表示されます。
     
 13. **[Document.docx]** ドキュメントの省略記号をクリックし、 **[リンクの取得]** をクリックします。
     

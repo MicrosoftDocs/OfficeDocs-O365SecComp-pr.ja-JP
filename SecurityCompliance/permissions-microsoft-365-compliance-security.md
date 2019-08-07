@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 セキュリティ センターまたは Microsoft 365 コンプライアンス センターを使用すると、セキュリティまたはコンプライアンスに関連するすべてのタスクについて、アクセス許可を一元的に管理できます。
-ms.openlocfilehash: e08c082513a0ed382ca6b208082d38f1813636ce
-ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
+ms.openlocfilehash: 99a50d625fb503fd12514dde39e0ffe01ea97a5e
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36168292"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36222777"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのアクセス許可
 
@@ -66,7 +66,7 @@ Microsoft 365 コンプライアンス センターと Microsoft 365 セキュ�
 
 この役割を持つユーザーは、Microsoft 365 コンプライアンス センター、Microsoft 365 管理センター、Azure のデータを保護し、追跡するアクセス許可を持ちます。 また、ユーザーは、Exchange 管理センター、コンプライアンス マネージャー、Teams および Skype for Business の管理センター内のすべての機能を管理したり、Azure および Microsoft 365 のサポート チケットを作成したりすることもできます。
 
-|**サービス**|**コンプライアンス管理者ができること**|
+|**このサービスで…**|**コンプライアンス データ管理者は…**|
 |:-----|:-----|
 |[**Microsoft 365 コンプライアンス センター**](https://compliance.microsoft.com/)|Microsoft 365 サービス全体での組織のデータの保護および管理。 <br/><br/> コンプライアンス アラートの管理。 <br/><br/> 機密ラベルの管理。|
 |[**コンプライアンス マネージャー**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|組織の法令遵守活動の追跡、割り当て、確認。|
@@ -78,7 +78,7 @@ Microsoft 365 コンプライアンス センターと Microsoft 365 セキュ�
 
 このロールが割り当てられたユーザーは、Microsoft 365 セキュリティ センター、Azure Active Directory Identity Protection、Azure Information Protection、Office 365 セキュリティ/コンプライアンス センターのセキュリティ関連機能を管理するアクセス許可を持ちます。
 
-|**サービス**|**コンプライアンス管理者ができること**|
+|**このサービスで…**|**セキュリティ管理者は…**|
 |:-----|:-----|
 |[**Microsoft 365 セキュリティ センター**](https://security.microsoft.com/)|Microsoft 365 サービス全体のセキュリティ関連ポリシーの監視。 <br/><br/>  セキュリティの脅威とアラートの管理。 <br/><br/> レポートの表示。 <br/><br/> 機密ラベルの管理。|
 |**Identity Protection Center**|セキュリティ閲覧者ロールができるすべてのことに加え、パスワードの再設定以外のすべての Identity Protection Center の操作の実行。|
@@ -95,7 +95,7 @@ Microsoft 365 コンプライアンス センターと Microsoft 365 セキュ�
 
 このロールのユーザーはアラートを管理することができ、Microsoft 365 セキュリティ センター、Azure Active Directory、Identity Protection、Privileged Identity Management におけるすべての情報を含むセキュリティ関連機能への読み取り専用グローバル アクセス権に加えて、Azure Active Directory サインイン レポートと監査ログ、および Office 365 セキュリティ/コンプライアンス センターで閲覧する権限があります。
 
-|**サービス**|**コンプライアンス管理者ができること**|
+|**このサービスで…**|**セキュリティ オペレーターは…**|
 |:-----|:-----|
 |[**Microsoft 365 セキュリティ センター**](https://security.microsoft.com/)|セキュリティ閲覧者ロールができるすべてのこと。 <br/><br/> セキュリティの警告の表示、調査、対応。|
 |**Identity Protection Center** (近日対応予定)|セキュリティ閲覧者ロールができるすべてのこと。|
@@ -110,7 +110,7 @@ Microsoft 365 コンプライアンス センターと Microsoft 365 セキュ�
 
 このロールのユーザーには、Microsoft 365 セキュリティ センター、Azure Active Directory、Identity Protection、Privileged Identity Management におけるすべての情報を含むセキュリティ関連機能への読み取り専用グローバル アクセス権に加えて、Azure Active Directory サインイン レポートと監査ログ、および Office 365 セキュリティ/コンプライアンス センターで閲覧する権限があります。
 
-|**サービス**|**コンプライアンス管理者ができること**|
+|**このサービスで…**|**セキュリティ閲覧者は…**|
 |:-----|:-----|
 |[**Microsoft 365 セキュリティ センター**](https://security.microsoft.com/)|Microsoft 365 サービス全体のセキュリティ関連ポリシーの表示。 <br/><br/> セキュリティの脅威とアラートの表示。 <br/><br/> レポートの表示。|
 |**Identity Protection Center**|各セキュリティ機能の全セキュリティ レポートと設定情報の閲覧: スパム対策、暗号化、データ損失防止 (DLP)、マルウェア対策、Advanced Threat Protection (ATP)、フィッシング詐欺対策、メール フロー ルール (トランスポート ルールとも呼ばれる)。|

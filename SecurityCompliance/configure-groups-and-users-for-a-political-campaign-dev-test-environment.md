@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: '要約: 選挙運動の開発/テスト環境向けのユーザーとグループで Office 365 と Enterprise Mobility + Security (EMS) の試用版サブスクリプションを作成します。'
-ms.openlocfilehash: b81674723f1da5b4282a331207caad2fc6d3d0a0
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 53d6bc8a4cdba6dab33b963344a3bfabdb1e6a26
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151483"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053144"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>選挙運動の開発/テスト環境用にグループとユーザーを構成する
 
@@ -40,7 +40,7 @@ ms.locfileid: "34151483"
     
 2. **[管理者]** タイルをクリックします。
     
-3. ブラウザーの **[Office 管理センター]** タブの左側のナビゲーションで **[請求] > [サービスを購入する]** の順にクリックします。
+3. ブラウザーの **[Microsoft 365 管理センター]** タブの、左側のナビゲーションで **[請求] > [サービスを購入する]** の順にクリックします。
     
 4. **[サービスを購入]** ページで、 **[Enterprise Mobility + Security E5]** 項目を探します。その項目の上にマウス ポインターを移動させ、 **[無料試用版を起動する]** をクリックします。
     
@@ -168,9 +168,9 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
   
 動的グループのメンバーシップとグループ ベースのライセンスが正常に機能していることを確認するには、次の手順を使用します。
   
-1. ブラウザーの **[Microsoft Office Home]** タブで、**[管理者]** タイルをクリックします。
+1. ブラウザーの **[Microsoft Office Home]** タブで、 **[管理者]** タイルをクリックします。
     
-2. ブラウザーの新しい **Office 管理センター**のタブで、**[ユーザー]** をクリックします。
+2. ブラウザーの新しい **Microsoft 365 管理センター**のタブで、**[ユーザー]** をクリックします。
     
 3. ユーザーの一覧で **[候補]** をクリックします。
     

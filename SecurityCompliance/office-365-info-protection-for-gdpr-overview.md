@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: GDPR のための Office 365 の情報保護の概要を確認します。個人データを検出、分類、保護、監視する方法について説明します。
-ms.openlocfilehash: 0231951aa4fde3075dc525707fc7cac98e8f7a45
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0c1c43bdbe16b82a1fe85222b2faf9c76dfc6fe0
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152489"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165663"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>GDPR のための Office 365 の情報保護の概要
 
@@ -35,7 +35,7 @@ GDPR は個人データの収集、保存、処理、共有を規制します。
 
 このソリューションは組織が GDPR の対象となる Office 365 での個人データを検出し、保護するためのものです。これは GDPR のコンプライアンス構成証明としては提供されません。組織は独自に GDPR コンプライアンスを確認する責任を負うため、法務チームまたはコンプライアンス チームに問い合わせるか、コンプライアンスに特化したサード パーティに指導とアドバイスを求めることを推奨します。
 
-[GDPR 評価](https://assessment.microsoft.com/gdpr-compliance)は迅速なオンライン自己評価ツールであり、組織はコストをかけずに、それ自体の GDPR への遵守状況の全体的なレベルを確認することができます (<http://aka.ms/gdprassessment>)。
+[GDPR 評価](https://www.microsoft.com/cyberassessment/en/gdpr/uso365?ls=Email&mkt_tok=eyJpIjoiTTJFeE5USXlOR1EwTWpJMiIsInQiOiJQTmdCYWR5NTlOd3JLWHZlb2NzNldKclQ4ZVBzVmhGeUhoUlFcL1pvSDIyXC9Ka05iTUR1aGpxT0YxQ0FUeGNDOUlkbWZLM1U4SUZWZmEyaGF6XC9ueUxkTHJzZnB3VDRMZlhPdkR4MzRLWkF5ckRNdWwxUkgzXC9yRU8yNkttSHhTb3VpZjNyVlJrNm9TTVZRYU5HR240a0FRPT0ifQ%3D%3D)は迅速なオンライン自己評価ツールであり、組織はコストをかけずに、それ自体の GDPR への遵守状況の全体的なレベルを確認することができます。
 
 ## <a name="assess-and-manage-your-compliance-risk"></a>コンプライアンスのリスクを評価および管理する
 
@@ -47,7 +47,7 @@ GDPR 遵守に向けた最初の手順は、GDPR が組織に適用されるか�
 
 ![コンプライアンス マネージャーを使用して要件を表示して進捗状況を追跡する](Media/Overview-image1.png)
 
-詳細については、「[Service Trust Portal でコンプライアンス マネージャーを使用する](https://support.office.com/ja-JP/article/Use-Compliance-Manager-in-the-Service-Trust-Portal-Preview-5756d342-5af9-4496-82e8-4dd50fa39942)」を参照してください。 
+詳細については、「[Service Trust Portal でコンプライアンス マネージャーを使用する](https://servicetrust.microsoft.com/ComplianceManager)」を参照してください。 
 
 ### <a name="step-2--use-content-search-and-sensitive-information-types-to-find-personal-data"></a>手順 2: コンテンツ検索と機密情報の種類を使用して個人データを検索する 
 

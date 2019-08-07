@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: このトピックでは、代理で Office 365 の管理タスクを実行する (他のテナント (企業) のために Exchange Online Protection (EOP) を管理する機能を含む) Microsoft パートナーとリセラーを対象に、よく寄せられる質問とその答えを取り上げます。
-ms.openlocfilehash: 8d28c8b6e0e85e9cfbe71e5b4b787159cc88ce08
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 0121c0a50e7f3ef7e5ab918a69efbd9ed609413e
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599803"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165643"
 ---
 # <a name="delegated-administration-faq"></a>代理管理の FAQ
 
@@ -29,7 +29,7 @@ A. Microsoft のパートナーまたは販売店で、Microsoft advisor にサ�
     
 2. Office 365 の代理管理を行うためにサインアップします。カスタマーのアカウント管理を開始する前に、カスタマーから代理管理者としての承認を得る必要があります。承認を得るには、最初に[代理管理の提供をカスタマーに送ります](https://go.microsoft.com/fwlink/?LinkId=396829)。(後でカスタマーに代理管理を提供することもできます。) 
     
-3. 「[代理管理者を追加または削除する](https://go.microsoft.com/fwlink/?LinkId=396831)」に記されている手順により、代理管理者アカウントを作成します。
+3. 委任された管理者アカウントを作成します。
     
 Office 365 代理管理のセットアップ方法について詳しくは、「[パートナー: ビジネスを構築して Office 365 パートナー アカウントを管理する](https://go.microsoft.com/fwlink/?LinkId=301485)」を参照してください。 
   

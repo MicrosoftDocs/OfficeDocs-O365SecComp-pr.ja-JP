@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection には、安全な添付ファイル、安全なリンク、高度なフィッシング対策ツール、レポートツール、および脅威インテリジェンス機能が含まれています。
-ms.openlocfilehash: 96e79a8aabe0788388473da9fcd514b9285e1c00
-ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
+ms.openlocfilehash: 7fe5abb65679a33b7895263137d43b0621fb04e6
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35854781"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36168155"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -41,7 +41,7 @@ Office 365 Advanced Threat Protection (ATP) は、電子メールメッセージ
 
 ## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP プラン1およびプラン2
 
-ATP は Office 365 E5 に含まれています。ただし、ATP プランと ATP プラン2は、それぞれ特定のサブスクリプションのアドオンとして使用できます。 詳細については、「 [ATP プランで利用できる機能](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。
+ATP は Office 365 E5 に含まれています。ただし、ATP プラン1と ATP Plan 2 は、それぞれ特定のサブスクリプションのアドオンとして利用できます。 詳細については、「 [ATP プランで利用できる機能](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。
 
 ## <a name="configure-atp-policies"></a>ATP ポリシーを構成する
 

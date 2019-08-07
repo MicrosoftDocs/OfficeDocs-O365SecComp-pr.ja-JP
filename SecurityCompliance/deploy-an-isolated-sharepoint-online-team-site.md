@@ -3,7 +3,7 @@ title: 分離した SharePoint Online チーム サイトの展開
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/14/2018
+ms.date: 07/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: '概要: ステップごとの手順を使用して、分離した新しい SharePoint Online チーム サイトを展開します。'
-ms.openlocfilehash: 488f834f568e65d35a7186b85cc393f5a66b2900
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 06b7fdbc0e387ee2181a850e950537f3fed5ae50
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153399"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053104"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの展開
 
@@ -68,9 +68,9 @@ Azure AD で次のアクセス グループを作成する必要があります�
     
 3. **[グループ] - [すべてのグループ]** ブレードで、**[+ 新しいグループ]** をクリックします。
     
-4. **[グループ]** ブレードでの手順:
+4. [**新しいグループ]** ブレードで、次のようにします。
     
-  - **[グループの種類]** で **[Office 365]** を選択します。
+  - [グループの**種類**] で [**セキュリティ**] を選択します。
     
   - **[名前]** にグループ名を入力します。
     
@@ -99,11 +99,11 @@ Azure AD で次のアクセス グループを作成する必要があります�
     
 3. 手順 3 のユーザーの一覧をサイト ビューアーのアクセス グループに追加する
     
-Windows Server AD を使用してユーザー アカウントとグループを管理している場合は、Windows Server AD ユーザーとグループの標準的な管理手順を使用してユーザーを適切なアクセス グループに追加し、Office 365 サブスクリプションと同期されるまで待機します。
+Active Directory ドメインサービス (AD DS) を介してユーザーアカウントとグループを管理している場合は、通常の AD DS のユーザーおよびグループ管理手順を使用してユーザーを適切なアクセスグループに追加し、Office 365 サブスクリプションとの同期を待機します。
   
-Office 365 を使用してユーザー アカウントとグループを管理する場合は、Office 管理者センターまたは PowerShell を使用できます。アクセス グループのいずれかでグループ名が重複している場合、Office 管理者センターをご使用ください。
+Office 365 を介してユーザーアカウントとグループを管理している場合は、Microsoft 365 管理センターまたは PowerShell を使用できます。 いずれかのアクセスグループに重複したグループ名がある場合は、Microsoft 365 管理センターを使用する必要があります。
   
-Office 管理者センターでは、ユーザー アカウント管理者または会社管理者の役割が割り当てられているユーザー アカウントでサインインし、グループを使用して適切なユーザー アカウントおよびグループを適切なアクセス グループに追加します。
+Microsoft 365 管理センターの場合は、ユーザーアカウント管理者または会社の管理者の役割が割り当てられているユーザーアカウントでサインインし、グループを使用して適切なユーザーアカウントとグループを適切なアクセスグループに追加します。
   
 PowerShell の場合、まず、 [Azure Active Directory PowerShell For Graph モジュールに接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
   
@@ -144,7 +144,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -
     
 - サイト ビューアーの Azure AD グループには、サイトのコンテンツを表示できるユーザー アカウントまたはグループのみが含まれる
     
-Office 管理者センターまたは次の PowerShell コマンド ブロックを使用して、各アクセス グループのグループ メンバーの一覧を検証します。
+Microsoft 365 管理センターまたは次の PowerShell コマンドブロックを使用して、各アクセスグループのグループメンバーの一覧を検証します。
   
 ```
 $grpName="<display name of the access group>"
