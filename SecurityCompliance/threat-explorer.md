@@ -1,9 +1,9 @@
 ---
-title: 脅威エクスプローラー (およびリアルタイム検出)
+title: 脅威エクスプローラーとリアルタイム検出
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 06/20/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: セキュリティ&amp; /コンプライアンスセンターのエクスプローラー (およびリアルタイム検出) について説明します。
-ms.openlocfilehash: dff1fae01aa525135226d88b305de7c7c3aefb7c
-ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
+description: セキュリティ&amp; /コンプライアンスセンターのエクスプローラーとリアルタイム検出について説明します。
+ms.openlocfilehash: 2e3e60c2b197c30f01efcfcba5e118091b29a22b
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054759"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230411"
 ---
-# <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラー (およびリアルタイム検出)
+# <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
 組織で[office 365 Advanced Threat Protection](office-365-atp.md) (OFFICE 365 ATP) を使用していて、[必要なアクセス許可](#required-licenses-and-permissions)がある場合は、 **Explorer**または**リアルタイムの検出**(以前の*リアルタイムのレポート*) を使用します。 [新機能](#new-features-in-real-time-detections))。 [セキュリティ & コンプライアンスセンター] で、[**脅威の管理**] に移動してから、[**エクスプローラー** ] または [**リアルタイムの検出**] を選択します。 
 
@@ -42,7 +42,7 @@ ms.locfileid: "36054759"
 
 ## <a name="new-features-in-real-time-detections"></a>リアルタイム検出の新機能
 
-エクスプローラー/リアルタイム検出を使用すると、新しい新しいフィールドが追加され、電子メールの土地をより正確に把握できるようになります。 この変更の目的の一環として、セキュリティを確保したユーザーを探しやすくしていますが、最終的に問題のあるメールの場所がひとめでわかることになります。
+エクスプローラー (およびリアルタイム検出) によって新しい新しいフィールドが追加され、電子メールが保存されている場所をより完全に把握できるようになりました。 この変更の目的の一環として、セキュリティを確保したユーザーを探しやすくしていますが、最終的に問題のあるメールの場所がひとめでわかることになります。
 
 実行方法 配信状態は、次の2つの列に分けられました。
 
@@ -105,9 +105,9 @@ Office 365 テクノロジを使用して、電子メールで検出されたマ
 
     レポートが更新され、[URL] タブにレポートの下に2つの異なる URL テーブルが表示されます。
 
-   1. **トップ url**は、フィルター処理されたメッセージに含まれる url と、各 url の電子メール配信アクション数を示します。 [フィッシング email] ビューには、通常、正当な Url が含まれています。 攻撃者は、適切な Url と正しくない Url をメッセージに混在させて配信を試みることができますが、ユーザーがクリックすると、悪意のあるリンクがより興味深いものになります。 Url の表は、電子メールの合計数によって並べ替えられます (注: この列はビューを簡略化するために表示されていません)。
+   - **トップ url**は、フィルター処理されたメッセージに含まれる url と、各 url の電子メール配信アクション数を示します。 [フィッシング email] ビューには、通常、正当な Url が含まれています。 攻撃者は、適切な Url と正しくない Url をメッセージに混在させて配信を試みることができますが、ユーザーがクリックすると、悪意のあるリンクがより興味深いものになります。 Url の表は、電子メールの合計数によって並べ替えられます (注: この列はビューを簡略化するために表示されていません)。
 
-   2. **トップクリック**は、クリックされた url をラップした安全なリンクです。 [合計] をクリックします (この列はビューを簡略化するためにも表示されません)。 列別の合計カウント [セーフリンク] は、クリックされた各 URL の [verdict count] を示します。 フィッシングの電子メール表示では、多くの場合、疑わしいまたは悪意のある Url ですが、フィッシングメッセージ内にあるクリーンな Url を含めることができます。 ラップされていないリンクの URL クリックは表示されません。
+   - **トップクリック**は、クリックされた url をラップした安全なリンクです。 [合計] をクリックします (この列はビューを簡略化するためにも表示されません)。 列別の合計カウント [セーフリンク] は、クリックされた各 URL の [verdict count] を示します。 フィッシングの電子メール表示では、多くの場合、疑わしいまたは悪意のある Url ですが、フィッシングメッセージ内にあるクリーンな Url を含めることができます。 ラップされていないリンクの URL クリックは表示されません。
    
    2つの Url 表は、配信アクションと場所によって、フィッシングメールの上位の Url を示しています。また、ブロックされた (または警告によってアクセスされた) URL クリックが表示されるので、ユーザーが無効にしたり、ユーザーによって操作された潜在的なリンクを知ることができます。 ここから、さらに分析を行うことができます。 たとえば、グラフの下に、組織の環境でブロックされたメールの上位の Url が表示されます。
    
@@ -117,11 +117,11 @@ Office 365 テクノロジを使用して、電子メールで検出されたマ
 
 ## <a name="review-email-messages-reported-by-users"></a>ユーザーが報告した電子メールメッセージを確認する
 
-組織内のユーザーが、 [outlook 用のレポートメッセージアドインと web 上の outlook](enable-the-report-message-add-in.md)を使用して、迷惑メールではなく迷惑メールとして報告した電子メールメッセージを表示したいとします。 これを行うには、[電子メール > ユーザーがレポート](threat-explorer-views.md#email--user-reported)したエクスプローラーのビュー (またはリアルタイムの検出) を使用します。
+組織内のユーザーが、 [outlook 用のレポートメッセージアドインと web 上の outlook](enable-the-report-message-add-in.md)を使用して、迷惑メールではなく迷惑メールとして報告した電子メールメッセージを表示したいとします。 これを行うには、エクスプローラー (またはリアルタイムの検出) の[電子メール > 提出](threat-explorer-views.md#email--submissions)の表示] を使用します。
 
 1. セキュリティ & コンプライアンス[https://protection.office.com](https://protection.office.com)センター () で、[**脅威管理** > **エクスプローラー** (または**リアルタイムの検出**)] を選択します。 (この例ではエクスプローラーを使用しています)。
 
-2. [**表示**] メニューで、[**電子メール** > **ユーザー-レポート**] を選択します。<br/>![エクスプローラーの [表示] メニュー](media/ExplorerViewMenuEmailUserReported.png)<br/>
+2. [**表示**] メニューの [**電子メール** > の**送信**] を選択します。<br/>![エクスプローラーの [表示] メニュー](media/ExplorerViewMenuEmailUserReported.png)<br/>
 
 3. [**送信者**] をクリックし、[**基本** > **レポートの種類**] を選択します。
 
@@ -170,8 +170,7 @@ Office 365 テクノロジを使用して、電子メールで検出されたマ
 - [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Exchange Online の機能アクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
   
-## <a name="some-differences-between-real-time-detection-and-threat-exporter"></a>リアルタイムの検出と脅威のエクスポーターにはいくつかの違いがあります。
+## <a name="some-differences-between-threat-exporter-and-real-time-detections"></a>脅威エクスポーターとリアルタイム検出の相違点
 
- - **リアルタイム検出レポート**は、**脅威エクスプローラ**が atp P2 を使用している間、atp P1 サブスクリプションと共に出荷されます。
- - **リアルタイムの検出**レポートを使用すると、検出された内容をリアルタイムで表示することができます。脅威エクスプローラーのレポートでは、特定の攻撃に関する詳細を表示できます。
- - **脅威エクスプローラー**のレポートには、**リアルタイムの検出**レポートに対する利便性を向上させるさまざまなレポートセットが用意されています。
+ - **リアルタイムの検出**レポートは OFFICE 365 atp plan 1 で利用できますが、**脅威エクスプローラー**は office 365 atp plan 2 で利用できます。
+ - **リアルタイムの検出**レポートを使用すると、検出がリアルタイムで表示されます。 **脅威エクスプローラー**も同様ですが、特定の攻撃に関する追加の詳細を表示することもできます。

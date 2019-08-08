@@ -1,7 +1,7 @@
 ---
 title: DLP のポリシー勧告を見る
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 8/7/2017
 audience: Admin
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: この洞察を重視する推奨事項は、組織が DLP ポリシーの範囲内に潜在的なギャップがある場合に通知することによって、Office 365 で機密コンテンツを保存および共有する際に、機密コンテンツを安全に保持するのに役に立ちます。 ドキュメントに上位5つの最も一般的な種類の機密&amp;情報が含まれていても、DLP ポリシーによって保護されていない場合は、セキュリティコンプライアンスセンターのホームページにこの推奨事項が表示されます。
-ms.openlocfilehash: 326efb7591ba75ada9eec6a5e61e39e2a1fc09f9
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 37292d1496fb9217b2c3d77fadff18ae002e14d7
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077973"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230661"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>DLP のポリシー勧告を見る
 

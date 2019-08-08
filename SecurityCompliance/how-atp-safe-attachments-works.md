@@ -1,7 +1,7 @@
 ---
 title: Office 365 の ATP の安全な添付ファイルの動作
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.date: 05/17/2019
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: '[安全な添付ファイル] 機能を使用すると、電子メールの添付ファイルの確認時間を確認できます。 安全な添付ファイルを使用して、ユーザーが電子メールで送受信する悪意のあるファイルから組織を保護します。'
-ms.openlocfilehash: f0f117388957a14e3765b963a0e390ffb8fd7943
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 14db6bc51f2017388639eb4270d7c5fc67b4ff7d
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599173"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230611"
 ---
 # <a name="how-ffice-365-atp-safe-attachments-works"></a>Ffice> office 365 の ATP の安全な添付ファイルの動作方法
 

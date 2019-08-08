@@ -1,7 +1,7 @@
 ---
 title: Office 365 での動的配信とプレビュー、ATP の安全な添付ファイル
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 ms.date: 04/19/2019
 audience: Admin
@@ -15,12 +15,12 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: ATP の安全な添付ファイルのポリシーを設定する場合は、[動的配信] を選択してメッセージの遅延を回避し、スキャンされた添付ファイルをプレビューできるようにします。
-ms.openlocfilehash: 2f965c119e9c4fca15e43d281dfc2d00d2c79c23
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 203f5082701f1f3eeea36b385918328cb85deb81
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599903"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230651"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Office 365 での動的配信とプレビュー、ATP の安全な添付ファイル
 

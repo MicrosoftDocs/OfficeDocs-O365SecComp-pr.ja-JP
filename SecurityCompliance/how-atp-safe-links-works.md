@@ -1,7 +1,7 @@
 ---
 title: Office 365 の ATP の安全なリンクのしくみ
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.date: 05/19/2019
@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '[安全なリンク] 機能を使用すると、Office ドキュメントや電子メールメッセージ内のハイパーリンクの時間を確認できます。 ATP の安全なリンクのしくみについては、この記事をお読みください。'
-ms.openlocfilehash: 67779560e279028c158179c265196199b5d37d1c
-ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
+ms.openlocfilehash: 45053b51bb5a91698d90f61567aa7f5577518587
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35792043"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230491"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Office 365 の ATP の安全なリンクのしくみ
          

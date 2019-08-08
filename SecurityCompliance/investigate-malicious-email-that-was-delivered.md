@@ -1,9 +1,9 @@
 ---
-title: 配信された悪意のある電子メールを検索して調査する (Office 365 の脅威の調査と応答
+title: Office 365 で配信された悪意のある電子メールを検索して調査する
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 08/02/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,14 +15,14 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 脅威の調査と応答機能を使用して、悪意のある電子メールを検索して調査する方法について説明します。
-ms.openlocfilehash: 9a1e5e1bb571b3b5c517ae628c29c10b44987adb
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: 1f558614d77577408a824b3c6181aae22753ab0f
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36165673"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230561"
 ---
-# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>配信された悪意のある電子メールを検索して調査する (Office 365 Advanced Threat Protection プラン 2)
+# <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Office 365 で配信された悪意のある電子メールを検索して調査する
 
 [Office 365 Advanced Threat Protection](office-365-atp.md)を使用すると、ユーザーが危険にさらされ、組織を保護するアクションを実行するアクティビティを調査できます。 たとえば、組織のセキュリティチームに属している場合は、ユーザーに配信された不審な電子メールメッセージを見つけて調査することができます。 これを行うには、[脅威エクスプローラー (またはリアルタイムの検出)](threat-explorer.md)を使用します。
   
@@ -30,7 +30,7 @@ ms.locfileid: "36165673"
 
 次の要件が満たされていることを確認してください。
   
-- 組織では、 [Office 365 Advanced Threat Protection](office-365-atp.md) (Plan 2) と[ライセンスがユーザーに割り当てら](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users)れています。
+- 組織では、 [Office 365 Advanced Threat Protection](office-365-atp.md)と[ライセンスがユーザーに割り当てら](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users)れています。
     
 - [Office 365 監査ログ](turn-audit-log-search-on-or-off.md)は、組織に対して有効になっています。 
     

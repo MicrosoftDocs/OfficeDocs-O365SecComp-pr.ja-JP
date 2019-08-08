@@ -1,7 +1,7 @@
 ---
 title: Office 365 ATP の安全なリンク機能を使用して、ユーザー設定のブロック URL リストを設定する
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection を使用して、組織のブロック URL リストを設定する方法について説明します。ブロックされた URL は、ATP の安全なリンクに関するポリシーに従って、メール メッセージと Office ドキュメントに適用されます。
-ms.openlocfilehash: e032d19c519b797936b90a94729534c73606a1a8
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 8d2b93fca599359ec1c6f4b4b3794ee2ccb466fe
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598763"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230331"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Office 365 ATP の安全なリンク機能を使用して、ユーザー設定のブロック URL リストを設定する
 

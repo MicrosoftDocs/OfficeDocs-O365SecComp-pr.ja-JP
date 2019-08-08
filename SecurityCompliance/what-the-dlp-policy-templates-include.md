@@ -1,7 +1,7 @@
 ---
 title: DLP ポリシー テンプレートに含まれるもの
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) には、米国の医療保険法に従って機密情報を保護するのに役立つ、一般的なコンプライアンス要件に対応するための使用可能なポリシーテンプレートが用意されています (HIPAA)、米国グラムリーチブライ-対象-なる Act (GLBA)、または米国 Patriot 法。このトピックでは、すべてのポリシーテンプレート、検索する機密情報の種類、および既定の条件とアクションについて説明します。
-ms.openlocfilehash: 505d544d68002bc82eafd85c51b4db4328ba9853
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: aff9f5179d9bad3d8c1c97d17473a14995137c32
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077153"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36231061"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>DLP ポリシー テンプレートに含まれるもの
 

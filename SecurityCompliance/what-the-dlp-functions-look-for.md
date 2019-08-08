@@ -1,7 +1,7 @@
 ---
 title: DLP 関数の検索対象
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 6/18/2016
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密情報の種類では、特定のパターンが検索され、適切な書式設定とチェックサムの適用を確認し、関連するキーワードやその他の情報を検索することによって、corroborate を行います。 この機能の一部は、内部機能によって実行されます。 このトピックでは、定義済みの機密情報の種類がどのように機能するかを理解するために、これらの関数がどのようなものかを説明します。
-ms.openlocfilehash: 044920a7ff28ffc1c4338a642bc130ee07ef7264
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: c192a17c488e5a7252a3599204d2bdeda4d0637c
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34078003"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230321"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 関数の検索対象
 
@@ -27,7 +27,7 @@ ms.locfileid: "34078003"
   
 このトピックでは、定義済みの機密情報の種類がどのように機能するかを理解するために、これらの関数がどのようなものかを説明します。 詳細については、「[機密情報の種類](what-the-sensitive-information-types-look-for.md)を調べる」を参照してください。
   
-## <a name="funcusdate"></a>Func_us_date
+## <a name="func_us_date"></a>Func_us_date
 
 この関数は、米国でよく使用される形式の日付を検索します。これには、"月/日/年"、"月-日-年"、"月間年月日" の形式が含まれます。 月の名前または省略形は、大文字と小文字を区別しません。 
   
@@ -55,7 +55,7 @@ ms.locfileid: "34078003"
     
   - Jan 7 月2日5月5日5月5日5月5日。
     
-## <a name="funceudate"></a>Func_eu_date
+## <a name="func_eu_date"></a>Func_eu_date
 
 この関数は、E.U. でよく使用される形式で日付を検索します。 (米国以外の場所)。 これには、"日/月/年"、"年月日"、"day month" の形式が含まれます。 月の名前または省略形は、大文字と小文字を区別しません。
   
@@ -119,7 +119,7 @@ ms.locfileid: "34078003"
     
   - enero feb marzo abr。 6月 o 日 年. /set. 年9月. oct. 年11月. .dic.
     
-## <a name="funceudate1-deprecated"></a>Func_eu_date1 (非推奨)
+## <a name="func_eu_date1-deprecated"></a>Func_eu_date1 (非推奨)
 
 > [!NOTE]
 > この関数は、上記の`Func_eu_date`関数に含まれているポルトガル語の月の名前のみをサポートしているため、廃止されました。 
@@ -150,7 +150,7 @@ ms.locfileid: "34078003"
     
   - jan fev 3 月 abr mai 6 月5日前にセットアップする
     
-## <a name="funceudate2-deprecated"></a>Func_eu_date2 (非推奨)
+## <a name="func_eu_date2-deprecated"></a>Func_eu_date2 (非推奨)
 
 > [!NOTE]
 > この関数は、上の`Func_eu_date`関数に含まれるオランダ語の月の名前のみをサポートしているため、廃止されました。 
@@ -181,7 +181,7 @@ ms.locfileid: "34078003"
     
   - 1月1日6月 (2001 年11月) (oct) 7 月7日9月 | 8 月7日 (oct)
     
-## <a name="funcexpirationdate"></a>Func_expiration_date
+## <a name="func_expiration_date"></a>Func_expiration_date
 
 この関数は、クレジットカードとデビットカードでよく使用される形式の日付を検索します。これにより、月の代わりに日付が除外されます。 この関数は、日付を "月/年"、"月-年"、"[月名] 年"、"月の省略名] 年" の形式で照合します。 月の名前または省略形は、大文字と小文字を区別しません。
   
@@ -213,7 +213,7 @@ ms.locfileid: "34078003"
     
   - 1月2日から4月5日 (年7月)
     
-## <a name="funcusaddress"></a>Func_us_address
+## <a name="func_us_address"></a>Func_us_address
 
 この関数は、米国の都道府県名または郵便省略形の後に、郵便番号で使用されるのと同様に、有効な郵便番号を検索します。 郵便番号は、米国の州名または略語に関連付けられている正しい zip コードのいずれかである必要があります。 米国の都道府県名と郵便番号は、句読点または文字で区切ることはできません。
   

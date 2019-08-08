@@ -3,7 +3,7 @@ title: 脅威エクスプローラーのビューとリアルタイムの検出
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 03/18/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: 脅威エクスプローラーとリアルタイム検出で使用できるさまざまな種類のビューについて説明します。
-ms.openlocfilehash: 71ec20daae45bee8385f24091850ea6223399eae
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 82476f9af3b703904fff40c8347f2848cf919dfc
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600820"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230391"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーのビューとリアルタイムの検出
 
@@ -72,9 +72,9 @@ ms.locfileid: "35600820"
 
 ![検出された URL に関する詳細](media/ThreatExplorerEmailPhishURLDetails.png)
 
-## <a name="email--user-reported"></a>電子メール > ユーザーによって報告される
+## <a name="email--submissions"></a>電子メール > の提出
 
-このレポートを表示するには、エクスプローラー (またはリアルタイムの検出) で、[**表示** > **メール** > **ユーザー-レポート**] を選択します。 このビューには、ユーザーが迷惑メール、迷惑メールではないメールとして報告した電子メールが表示されます。 
+このレポートを表示するには、エクスプローラー (またはリアルタイムの検出) で、[**電子メール** > の**送信**を**表示** > する] を選択します。 このビューには、ユーザーが迷惑メール、迷惑メールではないメールとして報告した電子メールが表示されます。 
 
 ![ユーザーによって報告される電子メールメッセージ](media/ThreatExplorerEmailUserReportedViewOptions.png) 
 
@@ -135,7 +135,7 @@ ms.locfileid: "35600820"
 
 ## <a name="queries-and-filters"></a>クエリとフィルター
 
-エクスプローラー (およびリアルタイムの検出レポート) には、上位の対象ユーザー、トップのマルウェアファミリ、検出テクノロジなどの詳細を掘り下げられる、いくつかの強力なフィルターとクエリ機能があります。 各種類のレポートには、データの表示と探索にさまざまな方法が用意されています。
+エクスプローラー (およびリアルタイムの検出レポート) には、上位の対象ユーザー、上位マルウェアファミリ、検出テクノロジなどの詳細を掘り下げて表示できる、さまざまなフィルターとクエリ機能があります。 各種類のレポートには、データの表示と探索にさまざまな方法が用意されています。
 
 > [!IMPORTANT]
-> エクスプローラーのクエリバー (またはリアルタイムの検出) では、アスタリスク (*) や疑問符 (?) などのワイルドカード文字を使用しないでください。 電子メールメッセージの [件名] フィールドを検索すると、エクスプローラー (またはリアルタイムの検出) によって部分一致が実行され、ワイルドカード検索と同様の結果が得られます。
+> エクスプローラーのクエリバー (またはリアルタイムの検出) では、アスタリスクや疑問符などのワイルドカード文字を使用しないでください。 電子メールメッセージの [**件名] フィールド**を検索すると、エクスプローラー (またはリアルタイムの検出) によって部分一致が実行され、ワイルドカード検索と同様の結果が得られます。
