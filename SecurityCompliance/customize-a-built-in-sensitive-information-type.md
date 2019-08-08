@@ -1,7 +1,7 @@
 ---
 title: 組み込みの機密情報の種類をカスタマイズする
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 07/08/2019
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツから機密情報を探すときには、ルールと呼ばれるものの中にその情報を記述する必要があります。データ損失防止 (DLP) には、すぐに利用できる最も一般的な機密情報の種類を表すルールが含まれています。これらのルールを使用するには、それらをポリシーの中に組み込む必要があります。これらの組み込みのルールを組織の特定のニーズに合わせて調整する必要がある場合は、カスタムの機密情報の種類を作成することができます。このトピックでは、クレジット カード情報である可能性のある情報をより幅広い範囲で検出できるように、既存のルール コレクションが入っている XML ファイルをカスタマイズする方法について説明します。
-ms.openlocfilehash: 8a621e3f1b24a8cea9cd263e44dc2def8a8b95b7
-ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
+ms.openlocfilehash: 2944202bf0f44c1a46834dce580abaf4f04aa40b
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35587106"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230731"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>組み込みの機密情報の種類をカスタマイズする
 

@@ -1,7 +1,7 @@
 ---
 title: セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: セキュリティ/コンプライアンス センターのグラフィカル ユーザー インターフェイスで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする方法について説明します。
-ms.openlocfilehash: 55e54bf8b49ec21bb5ed4f161efc4e5924ee52fb
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 62a08b4978e7e962f46a1de43c3d3160a44dd46e
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077743"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230901"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する
 
