@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、Microsoft 365 の高度な電子情報開示の新バージョンについて説明します。
-ms.openlocfilehash: 45c7a35a27fea3891270ee72b1fd528a357ad825
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: d3abd49d3ba336f5896887732ea0c37b59265bc9
+ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598733"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36258560"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 の高度な電子情報開示ソリューションの概要
 
@@ -94,4 +94,4 @@ Microsoft 365 の高度な電子情報開示ソリューションは、Office 36
 
 ## <a name="configuring-case-settings"></a>ケース設定の構成
 
-大文字と小文字を区別して設定を構成するには、[**設定**] タブを使用します。 これには、ケースへのメンバーの追加、ケースのクローズまたは削除、および検索と分析の設定の構成が含まれます。 詳細については、「 [Advanced eDiscovery でケースの設定を構成する](configuring-case-settings-ediscovery20.md)」を参照してください。
+大文字と小文字を区別して設定を構成するには、[**設定**] タブを使用します。 これには、ケースへのメンバーの追加、ケースのクローズまたは削除、および検索と分析の設定の構成が含まれます。
