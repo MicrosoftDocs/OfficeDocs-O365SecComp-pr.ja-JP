@@ -284,6 +284,11 @@
         "source_path": "SecurityCompliance/office-365-sharepoint-data-resiliency.md",
         "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/office-365-data-resiliency-overview",
         "redirect_document_id": false
+    },
+    {
+        "source_path": "SecurityCompliance/create-custom-sensitive-info-type-edm.md",
+        "redirect_url": "SecurityCompliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md",
+        "redirect_document_id": false
     }                              
   ] 
 }
