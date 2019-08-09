@@ -6,6 +6,7 @@
 ## [新しい Microsoft 365 セキュリティ センターと Microsoft 365 コンプライアンス センター](microsoft-security-and-compliance.md)
 ### [Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)
 ### [Microsoft 365 セキュリティ センター](overview-security-center.md)
+### [Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのアクセス許可](permissions-microsoft-365-compliance-security.md)
 ### [Microsoft セキュア スコア](microsoft-secure-score.md)
 ## [セキュリティ/コンプライアンス センターに移動する](go-to-the-securitycompliance-center.md)
 ### [セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)
@@ -344,7 +345,7 @@
 #### [データを別のレビュー セットに追加する](compliance20/add-data-to-review-set-from-another-review-set.md)
 #### [読み込みセットの管理](compliance20/manage-load-sets.md)
 
-### [ケース データを確認する](compliance20/reviewing-data-in-review-set.md)
+### ケース データを確認する
 #### [レビュー セット内のドキュメントを表示する](compliance20/view-documents-in-review-set.md)
 #### [レビュー セット内のデータをクエリする](compliance20/review-set-search.md)
 #### [レビュー セット内のドキュメントをタグ付けする](compliance20/tagging-documents.md)
@@ -362,7 +363,7 @@
 
 ### [ジョブを管理する](compliance20/managing-jobs-ediscovery20.md)
 
-### [ケース設定の構成](compliance20/configuring-case-settings-ediscovery20.md)
+### ケースの設定を構成する
 #### [ケースを閉じるか、削除する](compliance20/close-or-delete-case.md)
 #### [ケースでメンバーを追加または削除する](compliance20/add-remove-members.md)
 #### [検索と分析の設定を構成する](compliance20/configure-search-analytics-settings.md)
