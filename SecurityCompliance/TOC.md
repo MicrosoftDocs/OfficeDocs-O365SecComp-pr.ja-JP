@@ -52,7 +52,7 @@
 ### [DLP のカスタマイズの概要の詳しい説明を見る](https://go.microsoft.com/fwlink/?linkid=852306)
 ### [組み込みの機密情報の種類をカスタマイズする](customize-a-built-in-sensitive-information-type.md)
 ### [カスタムの機密情報の種類:](custom-sensitive-info-types.md)
-### [データ一致 (プレビュー) で、カスタムの機密情報の種類を作成する](create-custom-sensitive-info-type-edm.md)
+### [完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 ### [セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)
 ### [PowerShell を使用してカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [キーワード辞書を作成する](create-a-keyword-dictionary.md)
