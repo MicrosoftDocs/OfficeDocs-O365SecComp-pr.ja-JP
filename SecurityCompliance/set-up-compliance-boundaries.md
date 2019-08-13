@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: コンプライアンスの境界を使用して、電子情報開示マネージャーが検索できるユーザーコンテンツの場所を制御する、Office 365 組織内の論理的な境界を作成します。 コンプライアンス境界では、検索アクセス許可フィルター (コンプライアンスセキュリティフィルターとも呼ばれます) を使用して、特定のユーザーが検索できるメールボックス、SharePoint サイト、および OneDrive アカウントを制御します。
-ms.openlocfilehash: d94835c457884b98e84f68db6536e8f3774af669
-ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
+ms.openlocfilehash: 44c157b8f155755c6a48830231074643a830f498
+ms.sourcegitcommit: 226adb6d05015da16138b315dd2f5b937bf4354d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36258600"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302426"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Office 365 での電子情報開示調査のためにコンプライアンスの境界を設定する
 
@@ -107,7 +107,7 @@ Contoso 社のコンプライアンス境界シナリオを使用して、4つ�
 以下は、コンプライアンスの境界に使用される検索アクセス許可フィルターを作成するために使用される構文です。
 
 ```
-New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<Compliance attribute from Step 1>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL> *'" -Action <Action >
+New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_<ComplianceAttribute>  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'" -Action <Action >
 ```
   
 コマンドの各パラメーターの説明を次に示します。
@@ -116,19 +116,22 @@ New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -
     
 -  `Users`: 実行するコンテンツ検索アクションにこのフィルターを適用するユーザーまたはグループを指定します。 このパラメーターは、コンプライアンスの境界に対して、フィルターを作成しているエージェンシーの役割グループ (手順3で作成したもの) を指定します。 メモこれは複数値パラメーターであるため、1つまたは複数の役割グループをコンマで区切って含めることができます。 
     
--  `Filters`: フィルターの検索条件を指定します。 コンプライアンス境界に対しては、次のフィルターを定義します。各フィルターは、コンテンツの場所に適用されます。 
+-  `Filters`: フィルターの検索条件を指定します。 コンプライアンスの境界に対して、次のフィルターを定義します。 それぞれは、コンテンツの場所に適用されます。 
     
-  -  `Mailbox`: `Users`パラメーターで定義されている役割グループが検索できるメールボックスを指定します。 コンプライアンスの境界の場合、 *ComplianceAttribute*は、手順1と属性*値*で指定したものと同じであり、エージェンシーを指定します。 このフィルターを使用すると、役割グループのメンバーは特定のエージェンシーにあるメールボックスのみを検索できます。たとえば、 `"Mailbox_Department -eq 'FourthCoffee'"`のようになります。 
+    -  `Mailbox`: `Users`パラメーターで定義されている役割グループが検索できるメールボックスを指定します。 コンプライアンスの境界の場合、 *ComplianceAttribute*は、手順1と属性*値*で指定したものと同じであり、エージェンシーを指定します。 このフィルターを使用すると、役割グループのメンバーは特定のエージェンシーにあるメールボックスのみを検索できます。たとえば、 `"Mailbox_Department -eq 'FourthCoffee'"`のようになります。 
     
-  -  `Site`: `Users`パラメーターで定義されている役割グループが検索できる OneDrive アカウントを指定します。 OneDrive フィルターの場合は、実際の文字列`ComplianceAttribute`を使用します。 これは、手順2で送信したサポート要求の結果として、手順1で識別した属性にマッピングされ、OneDrive アカウントに同期されます。 *Attributevalue*はエージェンシーを指定します。 このフィルターを使用すると、役割グループのメンバーは特定のエージェンシーの OneDrive アカウントのみを検索できます。たとえば、 `"Site_ComplianceAttribute -eq 'FourthCoffee'"`のようになります。
+    -  `Site`: `Users`パラメーターで定義されている役割グループが検索できる OneDrive アカウントを指定します。 OneDrive フィルターの場合は、実際の文字列`ComplianceAttribute`を使用します。 これは、手順2で送信したサポート要求の結果として、手順1で識別した属性にマッピングされ、OneDrive アカウントに同期されます。 *Attributevalue*はエージェンシーを指定します。 このフィルターを使用すると、役割グループのメンバーは特定のエージェンシーの OneDrive アカウントのみを検索できます。たとえば、 `"Site_ComplianceAttribute -eq 'FourthCoffee'"`のようになります。
     
-  -  `Site_Path`: `Users`パラメーターで定義されている役割グループが検索できる SharePoint サイトを指定します。 *SharePointURL*は、役割グループのメンバーが検索できる機関内のサイトを指定します。例えば`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
+    -  `Site_Path`: `Users`パラメーターで定義されている役割グループが検索できる SharePoint サイトを指定します。 *SharePointURL*は、役割グループのメンバーが検索できる機関内のサイトを指定します。`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`たとえば、 `Site`と`Site_Path`フィルターは、 **-または**演算子で接続されていることに注意してください。
     
+     > [!NOTE]
+     > `Filters`パラメーターの構文には、*フィルターリスト*が含まれています。 フィルターリストは、メールボックスフィルターと、コンマで区切られたサイトフィルターを含むフィルターです。 前の例では、 **Mailbox_ComplianceAttribute**と**Site_ComplianceAttribute**を区切るコンマを使用`-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"`していることに注意してください。 コンテンツ検索の実行中にこのフィルターが処理されると、フィルターリストから1つのメールボックスフィルターと1つのサイトフィルターという2つの検索アクセス許可のフィルターが作成されます。 フィルターリストを使用する代わりに、各エージェンシーに対して2つの異なる検索アクセス許可フィルターを作成することもできます。1つは、メールボックス属性に対する検索アクセス許可フィルターと、サイト属性用の1つのフィルターです。 どちらの場合も、結果は同じになります。 フィルターリストを使用するか、別の検索アクセス許可のフィルターを作成することは、優先度の高いものです。
+
 -  `Action`: フィルターが適用されるコンプライアンス検索アクションの種類を指定します。 たとえば、は`-Action Search` 、 `Users`パラメーターで定義された役割グループのメンバーがコンテンツ検索を実行するときにのみフィルターを適用します。 この場合、検索結果をエクスポートするときに、フィルターは適用されません。 コンプライアンスの境界の場合`-Action All`は、を使用して、すべての検索操作にフィルターが適用されるようにします。 
     
     コンテンツ検索アクションの一覧については、「 [Configure permissions filtering For Content search](permissions-filtering-for-content-search.md#new-compliancesecurityfilter)」の「new-compliancesecurityfilter」セクションを参照してください。
-    
-Contoso 社のコンプライアンス境界シナリオをサポートするために作成される2つの検索アクセス許可フィルターの例を次に示します。
+
+Contoso 社のコンプライアンス境界シナリオをサポートするために作成される2つの検索アクセス許可フィルターの例を次に示します。 どちらの例にも、コンマで区切られたフィルターリストが含まれています。このリストでは、メールボックスフィルターとサイトフィルターは同じ検索アクセス許可フィルターに含まれており、コンマで区切られています。
   
  **4番目のコーヒー**
 

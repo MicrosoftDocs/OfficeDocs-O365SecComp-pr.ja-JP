@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Exact Data Match に基づく分類を使って、カスタムの機密情報の種類を作成します。
-ms.openlocfilehash: 2e353eb078df335d80f669a8cef64a19bd7d9584
-ms.sourcegitcommit: 0a0d9c1325b4b0581018c31037dcc707d3d679b4
+ms.openlocfilehash: 77a30f7db24e903e7d6859d10edb0cc186441494
+ms.sourcegitcommit: 28c104fb6a72d624fab5ac6178b5b0df9fa81484
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36279235"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297765"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -123,13 +123,13 @@ New-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
 > [!NOTE]
 > 追加機能を使用して EDMSchema を更新するには、10 から 60 分かかることがあります。 追加機能を使用する手順を実行する前に、更新プログラムを完了する必要があります。
 
-機密情報のデータベースのスキーマが定義されたので、次はルール パッケージをセットアップします。 セクション「 [ルール パッケージのセットアップ](https://review.docs.microsoft.com/ja-JP/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#set-up-a-rule-package)」に進みます。
+機密情報のデータベースのスキーマが定義されたので、次はルール パッケージをセットアップします。 セクション「 [ルール パッケージのセットアップ](#set-up-a-rule-package)」に進みます。
 
 #### <a name="editing-the-schema-for-edm-based-classification"></a>EDM ベースの分類のスキーマを編集する
 
 EDM ベースの分類に使用するフィールドの変更など、edm.xml ファイルを変更する場合は、次の手順に従います:
 
-1. edm.mxl ファイルを編集します (これは、この記事の「 [スキーマを定義する](https://review.docs.microsoft.com/ja-JP/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#define-the-schema-for-your-database-of-sensitive-information) 」セクションで説明したファイルです)。
+1. edm.mxl ファイルを編集します (これは、この記事の「 [スキーマを定義する](#define-the-schema-for-your-database-of-sensitive-information) 」セクションで説明したファイルです)。
 
 2. [Office 365 セキュリティ/コンプライアンス センター PowerShell へ接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
 
@@ -300,7 +300,7 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 >[!NOTE]
 > この手順を開始する前に、自分が  *EDM\_DataUploaders*  セキュリティ グループのメンバーであり、コンピューターのローカル管理者であることを確認します。
 
-1.  [https://go.microsoft.com/fwlink/?linkid=2088639](https://go.microsoft.com/fwlink/?linkid=2088639) から EDM アップロード エージェントをダウンロードしてインストールします。 既定では、インストール場所は、[C:\\Program Files\\Microsoft\\EdmUploadAgent] になります。
+1. [EDM アップロード エージェント](https://go.microsoft.com/fwlink/?linkid=2088639)をダウンロードしてインストールします。 既定では、インストール場所は、[C:\\Program Files\\Microsoft\\EdmUploadAgent] になります。
 
 2. EDM アップロード エージェントを承認するには、管理者として Windows コマンド プロンプトを開き、次のコマンドを実行します。
 
@@ -340,10 +340,9 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 データストアのリストが表示されます。最終更新時には、次のようになります。
 
+ [機密情報データベースを更新する](#refreshing-your-sensitive-information-database)ためのプロセスとスケジュールのセットアップを進めます。
 
-   [機密情報データベースを更新する](https://review.docs.microsoft.com/ja-JP/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#refreshing-your-sensitive-information-database)ためのプロセスとスケジュールのセットアップを進めます。
-
-この時点で、Microsoft クラウド サービスで EDM ベースの分類を使用する準備が整いました。 たとえば、 [EDM ベースの分類を使用して DLP ポリシーを設定](https://review.docs.microsoft.com/ja-JP/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#to-create-a-dlp-policy-with-edm)できます。
+この時点で、Microsoft クラウド サービスで EDM ベースの分類を使用する準備が整いました。 たとえば、 [EDM ベースの分類を使用して DLP ポリシーを設定](#to-create-a-dlp-policy-with-edm)できます。
 
 #### <a name="refreshing-your-sensitive-information-database"></a>機密情報データベースを更新する
 
@@ -351,18 +350,16 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 1. 機密情報のデータベースを更新するためのプロセスと頻度 (毎日または毎週) を決定します。
 
-2. 機密情報データを Microsoft Excel などのアプリに再度エクスポートし、ファイルを .csv 形式で保存します。 「 [機密データのインデックスを作成しアップロードする](https://review.docs.microsoft.com/ja-JP/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#index-and-upload-the-sensitive-data)」で説明した手順の実行時に使用したファイル名と場所と同じものを使用してください。
+2. 機密情報データを Microsoft Excel などのアプリに再度エクスポートし、ファイルを .csv 形式で保存します。 「 [機密データのインデックスを作成しアップロードする](#index-and-upload-the-sensitive-data)」で説明した手順の実行時に使用したファイル名と場所と同じものを使用してください。
 
 > [!NOTE]
 > .csv ファイルの構造 (フィールド名) に変更がない場合は、データを更新する際に、データベース スキーマ ファイルを変更する必要はありません。 ただし、変更が必要な場合は、必要に応じてデータベース スキーマとルール パッケージを編集してください。
 
-3. 
-   [タスク スケジューラ](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page) を使用して、 [機密データのインデックスを作成しアップロードする](https://review.docs.microsoft.com/ja-JP/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#index-and-upload-the-sensitive-data)  手順の、手順 2 と 3 を自動化します。 タスクのスケジュールを設定するにはいくつかの方法があります。
+3.  [タスク スケジューラ](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page) を使用して、 [機密データのインデックスを作成しアップロードする](#index-and-upload-the-sensitive-data)  手順の、手順 2 と 3 を自動化します。 タスクのスケジュールを設定するにはいくつかの方法があります。
 
 | **方法**             | **操作**                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Windows PowerShell     | 
-   [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) のドキュメントと、この記事の  [PowerShell スクリプトの例](https://review.docs.microsoft.com/ja-JP/office365/securitycompliance/create-custom-sensitive-info-type-edm?branch=chrfox-o365seccomp-pr-working#example-powershell-script-for-task-scheduler) を参照してください。 |
+| Windows PowerShell     |  [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) のドキュメントと、この記事の  [PowerShell スクリプトの例](#example-powershell-script-for-task-scheduler) を参照してください。 |
 | タスク スケジューラ API     |  [タスク スケジューラ](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler) ドキュメントを参照してください                                                                                                                                                                                                                                                                                |
 | Windows のユーザー インターフェイス | Windows の場合、 **[スタート]** をクリックし、「タスクスケジューラ」と入力します。 次に、結果のリストで  **[タスク スケジューラ]** を右クリックし、 **[管理者として実行]** を選択します。                                                                                                                                                                                                                                                                           |
 
@@ -497,7 +494,7 @@ Office 365 DLP for Exchange Online (メール)、OneDrive for Business (ファ�
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
 
-  [New-DlpEdmSchema](https://docs.microsoft.com/ja-JP/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmsschema?view=exchange-ps)
+  [New-DlpEdmSchema](https://docs.microsoft.com/ja-JP/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
 
 ## <a name="feedback"></a>フィードバック
 GitHub フィードバックは有効になっていますが、懸案事項の追加は、公開サイトでのみ行うことができます。

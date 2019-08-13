@@ -16,12 +16,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: '概要: 選挙運動用の開発/テスト環境で、パブリック、プライベート、機密、および高機密の SharePoint Online チーム サイトを作成します。'
-ms.openlocfilehash: 3e0a79a0e521ab193685511cef59bcfa3fa68896
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: bade24bbe0ebcf56007a7b5650ee5a55fc3697b6
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151159"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053114"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>選挙運動用の開発/テスト環境でチーム サイトを作成する
 
@@ -41,7 +41,7 @@ ms.locfileid: "34151159"
     
 2. **[Microsoft Office Home]** タブで、**[管理者]** タイルをクリックします。
     
-3. ブラウザーの新しい **[Office 管理者センター]** タブで、**[管理センター] > [セキュリティとコンプライアンス]** をクリックします。
+3. ブラウザーの新しい **[Microsoft 365 管理センター]** タブで、**[管理センター] > [セキュリティとコンプライアンス]** をクリックします。
     
 4. ブラウザーの新しい **[ホーム – セキュリティとコンプライアンス]** タブをクリックして、**[分類] > [ラベル]** をクリックします。
     
