@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Exact Data Match に基づく分類を使って、カスタムの機密情報の種類を作成します。
-ms.openlocfilehash: 77a30f7db24e903e7d6859d10edb0cc186441494
-ms.sourcegitcommit: 28c104fb6a72d624fab5ac6178b5b0df9fa81484
+ms.openlocfilehash: a937d5ccc947ee9322c5796cf49e9a8ff3eead16
+ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297765"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36407909"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
 ## <a name="overview"></a>概要
 
 
-  [カスタムの機密情報の種類](https://review.docs.microsoft.com/ja-JP/office365/securitycompliance/custom-sensitive-info-types) は、機密情報の不注意または不適切な共有を防ぐために使用されます。 管理者は  [セキュリティー/コンプライアンス センター](https://review.docs.microsoft.com/ja-JP/office365/securitycompliance/create-a-custom-sensitive-information-type) または [PowerShell](https://review.docs.microsoft.com/ja-JP/office365/securitycompliance/create-a-custom-sensitive-information-type-in-scc-powershell)  を使用して、パターン、証拠 ( *従業員*、 *バッジ*、 *ID*などのキーワード)、文字の近接性 (特定のパターンの文字に証拠がどれほど近接しているか)、および信頼レベルに基づいてカスタムの機密情報の種類を定義できます。 このようなカスタムの機密情報の種類は、多くの組織のビジネス ニーズを満たします。
+  [カスタムの機密情報の種類](https://docs.microsoft.com/ja-JP/office365/securitycompliance/custom-sensitive-info-types) は、機密情報の不注意または不適切な共有を防ぐために使用されます。 管理者は  [セキュリティー/コンプライアンス センター](https://docs.microsoft.com/ja-JP/office365/securitycompliance/create-a-custom-sensitive-information-type) または [PowerShell](https://docs.microsoft.com/ja-JP/office365/securitycompliance/create-a-custom-sensitive-information-type-in-scc-powershell)  を使用して、パターン、証拠 ( *従業員*、 *バッジ*、 *ID*などのキーワード)、文字の近接性 (特定のパターンの文字に証拠がどれほど近接しているか)、および信頼レベルに基づいてカスタムの機密情報の種類を定義できます。 このようなカスタムの機密情報の種類は、多くの組織のビジネス ニーズを満たします。
 
 しかし、汎用的なパターンのみを使用するのではなく、正確なデータ値を使用するカスタムの機密情報の種類が必要な場合はどうでしょう。 Exact Data Match (EDM) ベースの分類では、次の目的で設計されたカスタムの機密情報の種類を作成できます。
 
@@ -39,11 +39,11 @@ ms.locfileid: "36297765"
 
 ![EDM ベースの分類](media/EDMClassification.png)
 
-EDM ベースの分類を使用すると、機密情報のデータベース内の正確な値を参照する、カスタムの機密情報の種類を作成できます。 データベースは毎日、または毎週更新できます。また、最大 1000 万行のデータを格納できます。 そのため、従業員、患者、または顧客の出入りに合わせて記録が変更されても、カスタムの機密情報の種類は最新の状態が維持されます。 また、EDM ベースの分類は、 [データ損失防止ポリシー](https://review.docs.microsoft.com/ja-JP/office365/securitycompliance/data-loss-prevention-policies) (DLP) や [Microsoft Cloud App Security ファイル ポリシー](https://docs.microsoft.com/cloud-app-security/data-protection-policies) などのポリシーと共に使用できます。
+EDM ベースの分類を使用すると、機密情報のデータベース内の正確な値を参照する、カスタムの機密情報の種類を作成できます。 データベースは毎日、または毎週更新できます。また、最大 1000 万行のデータを格納できます。 そのため、従業員、患者、または顧客の出入りに合わせて記録が変更されても、カスタムの機密情報の種類は最新の状態が維持されます。 また、EDM ベースの分類は、 [データ損失防止ポリシー](https://docs.microsoft.com/ja-JP/office365/securitycompliance/data-loss-prevention-policies) (DLP) や [Microsoft Cloud App Security ファイル ポリシー](https://docs.microsoft.com/cloud-app-security/data-protection-policies) などのポリシーと共に使用できます。
 
 ## <a name="required-licenses-and-permissions"></a>必要なライセンスとアクセス許可
 
-この記事で説明されているタスクを実行するには、全体管理者、コンプライアンス管理者、または Exchange Online の管理者である必要があります。 DLP アクセス許可の詳細については、「 [アクセス許可](https://review.docs.microsoft.com/ja-JP/office365/securitycompliance/data-loss-prevention-policies#permissions)」を参照してください。
+この記事で説明されているタスクを実行するには、全体管理者、コンプライアンス管理者、または Exchange Online の管理者である必要があります。 DLP アクセス許可の詳細については、「 [アクセス許可](https://docs.microsoft.com/ja-JP/office365/securitycompliance/data-loss-prevention-policies#permissions)」を参照してください。
 
 一般公開されると、EDM ベースの分類は次のサブスクリプションに含まれます。
 
@@ -58,7 +58,7 @@ EDM ベースの分類を使用すると、機密情報のデータベース内�
 |---------|---------|
 |[パート 1: EDM ベースの分類をセットアップする](#part-1-set-up-edm-based-classification)<br/><br/>(適宜)<br/>- [データベーススキーマを編集する](#editing-the-schema-for-edm-based-classification) <br/>- [スキーマを削除する](#removing-the-schema-for-edm-based-classification) |- 機密データへの読み取りアクセス<br/>- .xml 形式のデータベース スキーマ (例を提供)<br/>- .xml 形式のルールパッケージ (例を提供)<br/>- セキュリティ/コンプライアンス センターへの管理者権限 (PowerShell を使用) |
 |[パート 2: 機密データのインデックスを作成しアップロードする](#part-2-index-and-upload-the-sensitive-data)<br/><br/>(適宜)<br/>[データを更新する](#refreshing-your-sensitive-information-database) |- カスタムのセキュリティ グループとユーザー アカウント<br/>- EDM アップロード エージェントを使用するコンピューターへのローカル管理者アクセス<br/>- 機密データへの読み取りアクセス<br/>- データ更新のプロセスとスケジュール|
-|[パート 3: Microsoft クラウド サービスで EDM ベースの分類を使用する](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |- DLP を使用する Office 365 サブスクリプション<br/>- 有効化された EDM ベースの分類機能 (プレビュー) |
+|[パート 3: Microsoft クラウド サービスで EDM ベースの分類を使用する](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |- DLP を使用する Office 365 サブスクリプション<br/>- 有効化された EDM ベースの分類機能 |
 
 ### <a name="part-1-set-up-edm-based-classification"></a>パート 1: EDM ベースの分類をセットアップする
 
@@ -483,13 +483,13 @@ Office 365 DLP for Exchange Online (メール)、OneDrive for Business (ファ�
 ## <a name="related-articles"></a>関連記事
 
 
-  [組み込みの機密情報の種類とその検索対象](https://review.docs.microsoft.com/ja-JP/office365/securitycompliance/what-the-sensitive-information-types-look-for)
+  [組み込みの機密情報の種類とその検索対象](https://docs.microsoft.com/ja-JP/office365/securitycompliance/what-the-sensitive-information-types-look-for)
 
 
-  [カスタムの機密情報の種類](https://review.docs.microsoft.com/ja-JP/office365/securitycompliance/custom-sensitive-info-types)
+  [カスタムの機密情報の種類](https://docs.microsoft.com/ja-JP/office365/securitycompliance/custom-sensitive-info-types)
 
 
-  [DLP ポリシーの概要](https://review.docs.microsoft.com/ja-JP/office365/securitycompliance/data-loss-prevention-policies)
+  [DLP ポリシーの概要](https://docs.microsoft.com/ja-JP/office365/securitycompliance/data-loss-prevention-policies)
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 

@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: セキュリティ &amp; コンプライアンス センターのデータ損失防止 (DLP) ポリシーでは、Office 365 全体の機密情報を識別、監視、または自動的に保護できます。
-ms.openlocfilehash: 1f82af2c61138fd33f849a5cb13fcee1259cafd7
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 9209adfa913b753ccbb665959cd165d3f2362d0a
+ms.sourcegitcommit: 19939bc577937ff5e423500e9bedc0c29f729e20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230771"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36393917"
 ---
 # <a name="overview-of-data-loss-prevention"></a>データ損失防止の概要
 
