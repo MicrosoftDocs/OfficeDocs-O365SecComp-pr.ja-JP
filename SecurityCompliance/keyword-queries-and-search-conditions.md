@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'セキュリティ & コンプライアンスセンターのコンテンツ検索ツールを使用して、Exchange Online メールボックスおよび SharePoint または OneDrive for Business サイトで検索できる電子メールとファイルプロパティについて説明します。  '
-ms.openlocfilehash: 70f005d6875735dfe95e10bf4487c8e1373431ea
-ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
+ms.openlocfilehash: 3836e5e23c23d7f771264dea8610116f30087c57
+ms.sourcegitcommit: 60c701e9808d505cf96990d0643be10b8fbc0180
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36168185"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36447374"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>コンテンツ検索のキーワード クエリと検索条件
 
@@ -50,9 +50,9 @@ ms.locfileid: "36168185"
 |**プロパティ**|**プロパティの説明**|**例**|**例で返される検索結果**|
 |:-----|:-----|:-----|:-----|
 |AttachmentNames|電子メール メッセージに添付されているファイルの名前。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*`|annualreport.ppt という名前の添付ファイルのあるメッセージ。2 番目の例では、ワイルドカードを使用して、添付ファイルのファイル名に「annual」の語が含まれるメッセージを返します。|
-|Bcc|メール メッセージの BCC フィールド。<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|どの例も Bcc フィールドに「Pilar Pinilla」が含まれているメッセージを返します。|
+|BCC|電子メールメッセージの Bcc フィールド。<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|どの例も Bcc フィールドに「Pilar Pinilla」が含まれているメッセージを返します。|
 |Category| 検索するカテゴリ。 カテゴリは、Outlook または web 上の Outlook (旧称 Outlook Web App) を使用してユーザーが定義できます。 値は次のいずれかです。  <br/><br/>  blue  <br/>  green  <br/>  orange  <br/>  purple  <br/>  red  <br/>  yellow|`category:"Red Category"`|元のメールボックスで「red」のカテゴリが割り当てられているメッセージ。|
-|CC|メール メッセージの CC フィールド。<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|どちらの例も、CC フィールドに Pilar Pinilla が指定されたメッセージ。|
+|CC|電子メールメッセージの Cc フィールド。<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|両方の例で、Cc フィールドに Pilar Pinilla が指定されているメッセージ。|
 |Folderid|特定のメールボックスフォルダーのフォルダー ID (GUID)。 このプロパティを使用する場合は、指定したフォルダーが配置されているメールボックスを検索してください。 指定したフォルダーのみが検索されることに注意してください。 フォルダー内のサブフォルダーは検索されません。 サブフォルダーを検索するには、検索するサブフォルダーの Folderid プロパティを使用する必要があります。  <br/> Folderid プロパティを検索する方法と、スクリプトを使用して特定のメールボックスのフォルダー Id を取得する方法の詳細については、「[対象化コレクションの Office 365 でコンテンツ検索を使用](use-content-search-for-targeted-collections.md)する」を参照してください。|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|最初の例では、指定されたメールボックスフォルダー内のすべてのアイテムを返します。 2番目の例では、garthf@contoso.com によって送受信された、指定されたメールボックスフォルダー内のすべてのアイテムを返します。|
 |From|メール メッセージの送信者。<sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|指定されたユーザーによって送信された、または指定されたドメインから送信されたメッセージ。|
 |HasAttachment|メッセージに添付ファイルがあるかどうかを示します。 **True**または**false**の値を使用します。|`from:pilar@contoso.com AND hasattachment:true`|添付ファイルを持つ、指定されたユーザーによって送信されたメッセージ。|
@@ -60,9 +60,9 @@ ms.locfileid: "36168185"
 |IsRead|メッセージが開封されたかどうかを示します。 **True**または**false**の値を使用します。|`isread:true`  <br/> `isread:false`|最初の例では、IsRead プロパティが**True**に設定されたメッセージを返します。 2番目の例では、IsRead プロパティが**False**に設定されたメッセージを返します。|
 |ItemClass|このプロパティを使用して、組織が Office 365 にインポートした特定のサードパーティのデータ型を検索します。 このプロパティには、次の構文を使用します。`itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|最初の例では、Subject プロパティに "contoso" という単語が含まれる Facebook のアイテムを返します。 2番目の例では、彩 Beebe によって投稿され、キーワード "Northwind Traders" が含まれている Twitter アイテムを返します。  <br/> ItemClass プロパティのサードパーティデータ型に使用する値の完全な一覧については、「[コンテンツ検索を使用して、Office 365 にインポートされたサードパーティのデータを検索する](use-content-search-to-search-third-party-data-that-was-imported.md)」を参照してください。|
 |Kind| 検索する電子メールメッセージの種類。 可能な値:  <br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  Microsoft teams (Microsoft Teams でチャット、会議、通話のアイテムを返す)  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|最初の例では、検索条件に一致する電子メールメッセージを返します。 2番目の例では、電子メールメッセージ、インスタントメッセージの会話 (Microsoft Teams での Skype for Business の会話やチャットを含む)、および検索条件に一致する音声メッセージを返します。 3番目の例では、検索条件を満たす Twitter、Facebook、Cisco Jabber などのサードパーティのデータソースから、Office 365 のメールボックスにインポートされたアイテムを返します。 詳細については、「 [Office 365 でサードパーティのデータをアーカイブ](https://go.microsoft.com/fwlink/p/?linkid=716918)する」を参照してください。|
-|Participants|メール メッセージ内のすべての送受信者フィールド。すなわち、From、To、CC、BCC の各フィールドです。<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|garthf@contoso.com が送信元または送信先のメッセージ。2 番目の例は、contoso.com ドメイン内のユーザーが送信元または送信先のすべてのメッセージを返します。|
+|参加者|電子メールメッセージ内のすべての人物フィールド。 これらのフィールドは、From、To、Cc、および Bcc です。<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|garthf@contoso.com が送信元または送信先のメッセージ。2 番目の例は、contoso.com ドメイン内のユーザーが送信元または送信先のすべてのメッセージを返します。|
 |Received|電子メール メッセージが受信者によって受信された日付。|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|2016年4月15日に受信したメッセージ。 2番目の例では、2016年1月1日から2016年3月31日までの間に受信したすべてのメッセージを返します。|
-|Recipients|メール メッセージ内のすべての受信者フィールド。すなわち、To、CC、BCC の各フィールドです。<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|garthf@contoso.com に送信されたメッセージ。2 番目の例では、contoso.com ドメイン内のすべての受信者に送信されたメッセージを返します。|
+|受信者|電子メールメッセージ内のすべての受信者フィールド。 これらのフィールドは、To、Cc、および Bcc です。<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|garthf@contoso.com に送信されたメッセージ。2 番目の例では、contoso.com ドメイン内のすべての受信者に送信されたメッセージを返します。|
 |Sent|送信者によって電子メール メッセージが送信された日付。|`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`|指定された日付に送信された、または指定された日付範囲内に送信されたメッセージ。|
 |Size|アイテムのサイズ (バイト数)。|`size>26214400`  <br/> `size:1..1048567`|25より大きいメッセージ8mb. 2 番目の例は 1 ～ 1,048,567 バイト (1 MB) のサイズのメッセージを返します。|
 |Subject|電子メール メッセージの件名行に含まれるテキスト。  <br/> **注:** クエリで Subject プロパティを使用する場合、???検索では、検索しているテキストが件名に含まれているすべてのメッセージが返されます。 つまり、クエリは、完全に一致するメッセージのみを返しません。 たとえば、を検索`subject:"Quarterly Financials"`すると、件名が "四半期財務 2018" のメッセージが結果に含まれます。|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|件名行のテキスト内の任意の場所に "四半期財務" という語句が含まれるメッセージ。 2 番目の例では、件名行に「northwind」の語が含まれているすべてのメッセージを返します。|
@@ -201,14 +201,14 @@ ms.locfileid: "36168185"
 |**条件**|**説明**|
 |:-----|:-----|
 |メッセージの種類| 検索するメッセージの種類。 これは、Kind メール プロパティと同じプロパティです。 可能な値:  <br/><br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|
-|参加者|メール メッセージ内のすべての送受信者フィールド。すなわち、From、To、CC、BCC の各フィールドです。|
+|参加者|電子メールメッセージ内のすべての人物フィールド。 これらのフィールドは、From、To、Cc、および Bcc です。|
 |型|電子メールアイテムのメッセージクラスプロパティ。 このプロパティは、ItemClass email プロパティと同じです。 複数値の条件でもあります。 そのため、複数のメッセージクラスを選択するには、 **CTRL**キーを押したまま、条件に追加するドロップダウンリストで2つ以上のメッセージクラスをクリックします。 リストで選択した各メッセージクラスは、対応する検索クエリの**or**演算子によって論理的に接続されます。  <br/> Exchange によって使用されるメッセージクラス (および対応するメッセージクラス ID) の一覧については、「アイテムの**** [種類とメッセージクラス](https://go.microsoft.com/fwlink/?linkid=848143)」を参照してください。|
 |Received|電子メール メッセージが受信者によって受信された日付。 これは、Received メール プロパティと同じプロパティです。|
-|受信者|電子メールメッセージが送信されたユーザー。 これは、To メール プロパティと同じプロパティです。|
+|受信者|電子メールメッセージ内のすべての recepient フィールド。 これらのフィールドは、[宛先]、[Cc]、および [Bcc] になります。|
 |Sender|電子メール メッセージの差出人。|
 |Sent|送信者によって電子メール メッセージが送信された日付。 これは、Sent メール プロパティと同じプロパティです。|
 |Subject|電子メール メッセージの件名行に含まれるテキスト。|
-|宛先|電子メールメッセージの受信者。|
+|宛先|宛先フィールドの電子メールメッセージの受信者。|
 |||
   
 ### <a name="conditions-for-document-properties"></a>ドキュメント プロパティの条件
