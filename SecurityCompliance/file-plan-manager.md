@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイル計画マネージャーは、保持ラベルおよび保持ラベル ポリシーのための高度な管理機能を提供します。作成に始まり、コラボレーション、レコード宣言、保持、そして廃棄に至るまでのコンテンツのライフ サイクル全体におけるラベルとコンテンツのラベリングを網羅する統合的な機能を提供します。
-ms.openlocfilehash: b7d80ff6a7f78e592462fe2723a87383e046015f
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: 38bfb1e6a6cde931804e518660ddf6c2b45205b0
+ms.sourcegitcommit: f443de08971da2fe200a159b8efbed40effba125
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547972"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36430014"
 ---
 # <a name="overview-of-file-plan-manager"></a>ファイル計画マネージャーの概要
 
@@ -123,7 +123,28 @@ ms.locfileid: "34547972"
 
 ![Excel で開かれた空白のファイル計画テンプレート](media/file-plan-blank-template.png)
 
-テンプレートに情報を入力します (近日公開: 1 つの保有ラベルの有効な値の組み合わせに関する参照情報)。
+テンプレートに入力します。 このテーブルは、有効な値を提供します。
+
+|**Property**|**種類**|**有効な値**|
+|:-----|:-----|:-----|
+|LabelName|文字列|値にスペースが含まれている場合は、値を二重引用符 (") で囲んでください。|
+|コメント|String|値にスペースが含まれている場合は、値を二重引用符 (") で囲んでください。 |
+|メモ|文字列|カスタム|
+|IsRecordLabel|文字列|$true: ラベルはレコード ラベルです。</br>$false: ラベルはレコード ラベルではありません。 これは既定の値です。|
+|RetentionAction|文字列|削除</br>保持</br>KeepAndDelete |
+|RetentionDuration|文字列|プロパティは、コンテンツを保持する日数を指定します。 有効な値は次のとおりです。</br>正の整数。</br>値は無制限です。|
+|RetentionType|文字列|プロパティは、コンテンツ作成日、ラベルが付けられた (タグが付けされた) 日、または最終変更日のいずれから保持期間を計算するかを指定します。 有効な値は次のとおりです。</br>CreationAgeInDays</br>EventAgeInDays</br>ModificationAgeInDays</br>TaggedAgeInDays |
+|ReviewerEmail|SmtpAddress[]|プロパティは、Delete および KeepAndDelete の保存期間用アクションのレビュー担当者の電子メール アドレスを指定します。 複数のメール アドレスをコンマで区切って指定できます。|
+|ReferenceId|文字列|カスタム|
+|Departmentname|文字列|カスタム|
+|カテゴリ|String|カスタム|
+|下位カテゴリ|文字列|カスタム|
+|AuthorityType|文字列|カスタム|
+|CitationName|文字列|カスタム|
+|CitationUrl|文字列|カスタム|
+|CitationJurisdiction|文字列|カスタム|
+|Regulatory|文字列|カスタム|
+|EventType|文字列|このプロパティは、ラベルに関連付けられている保持規則を指定します。 ルールを一意に識別する任意の値を使用できます。 次に例を示します。</br>名前</br>識別名 (DN)</br>GUID </br>使用可能な保持規則を確認するには、[Get-RetentionComplianceRule](https://docs.microsoft.com/ja-JP/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) コマンドレットを使用します。|
 
 ![情報が入力されたファイル計画テンプレート](media/file-plan-filled-out-template.png)
 
