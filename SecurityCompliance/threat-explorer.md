@@ -1,5 +1,5 @@
 ---
-title: 脅威エクスプローラーとリアルタイム検出、脅威エクスプローラへの新しい変更、脅威エクスプローラへの変更、Office 365 への新、セキュリティ、クラウドセキュリティ、ATP の新セキュリティ
+title: 脅威エクスプローラーとリアルタイム検出、脅威エクスプローラへの新しい変更、脅威エクスプローラへの変更、Office 365 の新機能、セキュリティ、クラウドセキュリティ、ATP の新機能、ATP の新機能
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターのエクスプローラーとリアルタイム検出について説明します。
-ms.openlocfilehash: 4e2a11162d3b67dd92cdcc1a7c0342ec861543ab
-ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
+ms.openlocfilehash: 049d26a328074be5e209ddecd959cd888a34b650
+ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36407956"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36444887"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
