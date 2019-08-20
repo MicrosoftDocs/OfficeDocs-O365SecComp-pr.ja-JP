@@ -287,8 +287,13 @@
     },
     {
         "source_path": "SecurityCompliance/create-custom-sensitive-info-type-edm.md",
-        "redirect_url": "SecurityCompliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md",
+        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification",
         "redirect_document_id": false
-    }                              
+    },
+    {
+        "source_path": "SecurityCompliance/get-started-with-ti.md",
+        "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/office-365-ti",
+        "redirect_document_id": true
+    }                                              
   ] 
 }
