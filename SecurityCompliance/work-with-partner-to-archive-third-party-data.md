@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 組織は Microsoft パートナーと協力して、Salesforce チャター、Yahoo Messenger、Yammer などのデータソースからサードパーティのデータをインポートするカスタムコネクタを設定できます。 これにより、Office 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどの Office 365 コンプライアンス機能を使用して、組織のサードパーティデータのガバナンスを管理できます。
-ms.openlocfilehash: 99596953ce0f18c0cd7220f0955d251dbccb0e37
-ms.sourcegitcommit: 372691a3a886e5cc299961032ee334aef26fb904
+ms.openlocfilehash: a22b4226efb582969072bbd92149080cca9b749c
+ms.sourcegitcommit: 59039d3bf479c4b2c1d2e2556a0adc755f431a1f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36464700"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36473427"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>パートナーと連携して、Office 365 でサードパーティのデータをアーカイブする
 
@@ -71,7 +71,7 @@ Office 365 でサードパーティのデータをアーカイブするための
   
 ### <a name="17a-4-llc"></a>17a-4 LLC
 
-17a-4 LLC は、次のサードパーティ データ ソースをサポートしています。
+[17a-4 で](https://www.17a-4.com)は、次のサードパーティデータソースをサポートしています。
   
 - BlackBerry
     
