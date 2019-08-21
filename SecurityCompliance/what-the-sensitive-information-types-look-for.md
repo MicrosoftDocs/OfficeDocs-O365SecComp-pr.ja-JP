@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Office 365 セキュリティ&amp;コンプライアンスセンターのデータ損失防止 (DLP) には、dlp ポリシーで使用できる状態で、80の機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
-ms.openlocfilehash: 7f5c879b35f77ef142b8c45965357715f577832e
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: d486510c35aaf147e6d63e28d1df36ef689e3975
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230381"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478256"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>機密情報の種類の検索基準
 
@@ -52,7 +52,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_aba_routing がパターンに一致するコンテンツを検出した。
 - Keyword_ABA_Routing のキーワードを検出した。
 
-```
+```xml
 <!-- ABA Routing Number -->
 <Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="75">
@@ -110,7 +110,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_argentina_national_id は、このパターンに一致するコンテンツを検出します。
 - Keyword_argentina_national_id からのキーワードが見つかりました。
 
-```
+```xml
 <!-- Argentina National Identity (DNI) Number -->
 <Entity id="eefbb00e-8282-433c-8620-8f1da3bffdb2" recommendedConfidence="75" patternsProximity="300">
    <Pattern confidenceLevel="75">
@@ -163,7 +163,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_australia_bank_account_number がパターンに一致するコンテンツを検出した。
 - Keyword_australia_bank_account_number のキーワードを検出した。
 
-```
+```xml
 <!-- Australia Bank Account Number -->
 <Entity id="74a54de9-2a30-4aa0-a8aa-3d9327fc07c7" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="85">
@@ -231,7 +231,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_australia_drivers_license_number のキーワードを検出した。
 - Keyword_australia_drivers_license_number_exclusions のキーワードを検出しなかった。
 
-```
+```xml
 <!-- Australia Drivers License Number -->
 <Entity id="1cbbc8f5-9216-4392-9eb5-5ac2298d1356" patternsProximity="300" recommendedConfidence="75">
    <Pattern confidenceLevel="75">
@@ -377,7 +377,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_australian_medical_account_number がパターンに一致するコンテンツを検出した。
 - チェックサムが渡される。
 
-```
+```xml
   <!-- Australia Medical Account Number -->
 <Entity id="104a99a0-3d3b-4542-a40d-ab0b9e1efe63" recommendedConfidence="85" patternsProximity="300">
     <Pattern confidenceLevel="95">
@@ -430,7 +430,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_australia_passport_number がパターンに一致するコンテンツを検出した。
 - Keyword_passport または Keyword_australia_passport_number からのキーワードが見つかりました。
 
-```
+```xml
 <!-- Australia Passport Number -->
 <Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -507,7 +507,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_Australia_Tax_File_Number または Keyword_number_exclusions のキーワードを検出しなかった。
 - チェックサムが渡される。
 
-```
+```xml
    <!-- Australia Tax File Number -->
     <Entity id="e29bc95f-ff70-4a37-aa01-04d17360a4c5" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -590,7 +590,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 CEP_Regex_AzureDocumentDBAuthKey は、このパターンに一致するコンテンツを検出します。
 - 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
 
-```
+```xml
 <!-- Azure Document DB Auth Key -->
 <Entity id="0f587d92-eb28-44a9-bd1c-90f2892b47aa" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -650,7 +650,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 CEP_Regex_AzureConnectionString は、このパターンに一致するコンテンツを検出します。
 - 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
 
-```
+```xml
 <!--Azure IAAS Database Connection String and Azure SQL Connection String-->
 <Entity id="ce1a126d-186f-4700-8c0c-486157b953fd" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -710,7 +710,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 CEP_Regex_AzureIoTConnectionString は、このパターンに一致するコンテンツを検出します。
 - 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
 
-```
+```xml
 <!--Azure IoT Connection String-->
 <Entity id="0b34bec3-d5d6-4974-b7b0-dcdb5c90c29d" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -761,7 +761,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
 
 
-```
+```xml
 <!--Azure Publish Setting Password-->
 <Entity id="75f4cc8a-a68e-49e5-89ce-fa8f03d286a5" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -816,7 +816,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 CEP_Regex_AzureRedisCacheConnectionString は、このパターンに一致するコンテンツを検出します。
 - 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
 
-```
+```xml
 <!--Azure Redis Cache Connection String-->
 <Entity id="095a7e6c-efd8-46d5-af7b-5298d53a49fc" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -869,7 +869,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現 CEP_Regex_AzureSAS は、このパターンに一致するコンテンツを検出します。
 
-```
+```xml
 <!--Azure SAS-->
 <Entity id="4d235014-e564-47f4-a6fb-6ebb4a826834" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -910,7 +910,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 CEP_Regex_AzureServiceBusConnectionString は、このパターンに一致するコンテンツを検出します。
 - 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
 
-```
+```xml
 <!--Azure Service Bus Connection String-->
 <Entity id="b9a6578f-a83f-4fcd-bf44-2130bae49a6f" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -969,7 +969,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 CEP_AzureEmulatorStorageAccountFilter は、このパターンに一致するコンテンツを検出し**ません**。
 - 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
 
-```
+```xml
 <!--Azure Storage Account Key-->
 <Entity id="c7bc98e8-551a-4c35-a92d-d2c8cda714a7" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -1026,7 +1026,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現 CEP_Regex_AzureStorageAccountKeyGeneric は、このパターンに一致するコンテンツを検出します。
 
-```
+```xml
 <!--Azure Storage Account Key (Generic)-->
 <Entity id="7ff41bd0-5419-4523-91d6-383b3a37f084" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -1061,7 +1061,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_belgium_national_number からのキーワードが見つかりました。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- Belgium National Number -->
   <Entity id="fb969c9e-0fd1-4b18-8091-a2123c5e6a54" recommendedConfidence="75" patternsProximity="300">
    <Pattern confidenceLevel="75">
@@ -1133,7 +1133,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_brazil_cpf は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- Brazil CPF Number -->
 <Entity id="78e09124-f2c3-4656-b32a-c1a132cd2711" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -1193,7 +1193,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_brazil_cnpj は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- Brazil Legal Entity Number (CNPJ) -->
 <Entity id="9b58b5cd-5e90-4df6-b34f-1ebcc88ceae4" recommendedConfidence="85" patternsProximity="300">
    <Pattern confidenceLevel="85">
@@ -1269,7 +1269,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_brazil_rg は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- Brazil National ID Card (RG) -->
 <Entity id="486de900-db70-41b3-a886-abdf25af119c" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -1320,7 +1320,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_canada_bank_account_number がパターンに一致するコンテンツを検出した。
 - Keyword_canada_bank_account_number のキーワードを検出した。
 
-```
+```xml
 <!-- Canada Bank Account Number -->
 <Entity id="552e814c-cb50-4d94-bbaa-bb1d1ffb34de" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="85">
@@ -1382,7 +1382,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_[province_name]_drivers_license_name のキーワードを検出した。
 - Keyword_canada_drivers_license のキーワードを検出した。
 
-```
+```xml
 <!-- Canada Driver's License Number -->
     <Entity id="37186abb-8e48-4800-ad3c-e3d1610b3db0" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="75">
@@ -1598,7 +1598,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_canada_health_service_number がパターンに一致するコンテンツを検出した。
 - Keyword_canada_health_service_number のキーワードを検出した。
 
-```
+```xml
 <!-- Canada Health Service Number -->
 <Entity id="59c0bf39-7fab-482c-af25-00faa4384c94" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -1644,7 +1644,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_canada_passport_number がパターンに一致するコンテンツを検出した。
 - Keyword_canada_passport_number または Keyword_passport からのキーワードが見つかりました。
 
-``` 
+```xml 
 <!-- Canada Passport Number -->
 <Entity id="14d0db8b-498a-43ed-9fca-f6097ae687eb" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -1710,7 +1710,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 DLP ポリシーは 75% です。この種類の機密情報は、近接する300文字の中で検出されます。正規表現 Regex_canada_phin は、このパターンに一致するコンテンツを検出します。
 Keyword_canada_phin または Keyword_canada_provinces から、少なくとも2つのキーワードが見つかります。
 
-```
+```xml
 <!-- Canada PHIN -->
 <Entity id="722e12ac-c89a-4ec8-a1b7-fea3469f89db" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -1796,7 +1796,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_sin のキーワードを検出した。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- Canada Social Insurance Number -->
 <Entity id="a2f29c85-ecb8-4514-a610-364790c0773e" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="85">
@@ -1875,7 +1875,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_chile_id_card は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- Chile Identity Card Number -->
 <Entity id="4e979794-49a0-407e-a0b9-2c536937b925" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -1934,7 +1934,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_china_resident_id は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- China Resident Identity Card (PRC) Number -->
 <Entity id="c92daa86-2d16-4871-901f-816b3f554fc1" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -1990,7 +1990,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_credit_card がパターンに一致するコンテンツを検出した。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- Credit Card Number -->
 <Entity id="50842eb7-edc8-4019-85dd-5a5c1f2bb085" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -2226,7 +2226,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_croatia_id_card は、このパターンに一致するコンテンツを検索します。
 - Keyword_croatia_id_card からのキーワードが見つかりました。
 
-```
+```xml
 <!--Croatia Identity Card Number-->
 <Entity id="ff12f884-c20a-4189-b185-34c8e7258d47" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
@@ -2271,7 +2271,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_croatia_oib_number は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- Croatia Personal Identification (OIB) Number -->
 <Entity id="31983b6d-db95-4eb2-a630-b44bd091968d" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -2329,7 +2329,7 @@ DLP ポリシーは 85% です。この種類の機密情報は、近接する30
 Keyword_czech_id_card からのキーワードが見つかりました。
 チェックサムが渡される。
 
-```
+```xml
 <!-- Czech Personal Identity Number -->
 <Entity id="60c0725a-4eb6-455b-9dda-05d8a7396497"      patternsProximity="300" recommendedConfidence="85">
    <Pattern confidenceLevel="85">
@@ -2366,7 +2366,7 @@ DLP ポリシーは 75% です。この種類の機密情報は、近接する30
 Keyword_denmark_id からのキーワードが見つかりました。
 チェックサムが渡される。
 
-```
+```xml
 <!-- Denmark Personal Identification Number -->
 <Entity id="6c4f2fef-56e1-4c00-8093-88d7a01cf460" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
@@ -2408,7 +2408,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_dea_number がパターンに一致するコンテンツを検出した。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- DEA Number -->
 <Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -2448,7 +2448,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     - 関数 Func_expiration_date が適切な日付形式の日付を検出した。
 - チェックサムが渡される。
 
-```
+```xml
     <!-- EU Debit Card Number -->
     <Entity id="0e9b3178-9678-47dd-a509-37222ca96b42" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -2816,7 +2816,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_finnish_national_id のキーワードを検出した。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- Finnish National ID-->
 <Entity id="338FD995-4CB5-4F87-AD35-79BD1DD926C1" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -2865,7 +2865,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_french_drivers_license のキーワードを検出した。
 - 関数 Func_eu_date が適切な日付形式の日付を検出した。
 
-```
+```xml
 <!-- France Driver's License Number -->
 <Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -2911,7 +2911,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、65% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現 Regex_france_cni がパターンに一致するコンテンツを検出した。
 
-```
+```xml
 <!-- France CNI -->
 <Entity id="f741ac74-1bc0-4665-b69b-f0c7f927c0c4" patternsProximity="300" recommendedConfidence="65">
   <Pattern confidenceLevel="65">
@@ -2947,7 +2947,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_fr_passport がパターンに一致するコンテンツを検出した。
 - Keyword_passport のキーワードを検出した。
 
-```
+```xml
 <!-- France Passport Number -->
 <Entity id="3008b884-8c8c-4cd8-a289-99f34fc7ff5d" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -3010,7 +3010,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_fr_insee のキーワードを検出しなかった。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- France INSEE -->
 <Entity id="71f62b97-efe0-4aa1-aa49-e14de253619d" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="95">
@@ -3085,7 +3085,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     - Keyword_german_drivers_license のキーワードを検出した。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- German Driver's License Number -->
 <Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="75">
@@ -3228,7 +3228,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 5 つのキーワード リストのうちいずれかのキーワードを検索した。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- German Passport Number -->
 <Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
   <Pattern confidenceLevel="85">
@@ -3309,7 +3309,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_germany_id_card は、このパターンに一致するコンテンツを検出します。
 - Keyword_germany_id_card からのキーワードが見つかりました。
 
-```
+```xml
 <!-- Germany Identity Card Number -->
 <Entity id="e577372f-c42e-47a0-9d85-bebed1c237d4" recommendedConfidence="65" patternsProximity="300">
   <Pattern confidenceLevel="65">
@@ -3359,7 +3359,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_greece_id_card は、このパターンに一致するコンテンツを検出します。
 - Keyword_greece_id_card からのキーワードが見つかりました。
 
-```
+```xml
 <!-- Greece National ID Card -->
 <Entity id="82568215-1da1-46d3-874a-d2294d81b5ac" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -3406,7 +3406,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_hong_kong_id_card は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- Hong Kong Identity Card (HKID) number -->
 <Entity id="e63c28a7-ad29-4c17-a41a-3d2a0b70fd9c" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
@@ -3484,7 +3484,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_india_permanent_account_number からのキーワードが見つかりました。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- India Permanent Account Number -->
 <Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -3527,100 +3527,101 @@ Keyword_india_aadhar からのキーワードが見つかりました。
 チェックサムが渡される。
 DLP ポリシーは 75% です。この種類の機密情報は、近接する300文字の中で検出されます。関数 Func_india_aadhaar は、このパターンに一致するコンテンツを検出します。
 チェックサムが渡される。
+```xml
 <!-- India Unique Identification (Aadhaar) number -->
-<Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300"> <Pattern confidenceLevel="85"> <IdMatch idRef="Func_india_aadhaar"/> <Match idRef="Keyword_india_aadhar"/> </Pattern> <Pattern confidenceLevel="75"> <IdMatch idRef="Func_india_aadhaar"/> </Pattern>
+<Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300">
+  <Pattern confidenceLevel="85">
+     <IdMatch idRef="Func_india_aadhaar"/>
+     <Match idRef="Keyword_india_aadhar"/>
+  </Pattern>
+  <Pattern confidenceLevel="75">
+     <IdMatch idRef="Func_india_aadhaar"/>
+  </Pattern>
 </Entity>
 
-### <a name="keywords"></a>キーワード
+### Keywords
    
-#### <a name="keyword_india_aadhar"></a>Keyword_india_aadhar
+#### Keyword_india_aadhar
 - Aadhar
 - Aadhaar
 - UID
 - आधार
    
-## <a name="indonesia-identity-card-ktp-number"></a>インドネシアの身分証明書 (KTP) 番号
+## Indonesia Identity Card (KTP) Number
 
-### <a name="format"></a>Format
+### Format
 
-省略可能なピリオドを含む 16 桁の数字
+16 digits containing optional periods
 
-### <a name="pattern"></a>パターン
+### Pattern
 
-16 桁の数字:
-- 2 桁の行政区コード  
-- ピリオド 1 つ (省略可能)  
-- 2 桁の行政区または市コード  
-- 2 桁の分区コード  
-- ピリオド 1 つ (省略可能)  
-- DDMMYY の形式の生年月日を表す 6 桁の数字  
-- ピリオド 1 つ (省略可能)  
-- 4 桁の数字
+16 digits:
+- Two-digit province code 
+- A period (optional) 
+- Two-digit regency or city code 
+- Two-digit subdistrict code 
+- A period (optional) 
+- Six digits in the format DDMMYY which are the date of birth 
+- A period (optional) 
+- Four digits
 
-### <a name="checksum"></a>チェックサム
+### Checksum
 
-いいえ
+No
 
-### <a name="definition"></a>定義
+### Definition
 
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_indonesia_id_card は、このパターンに一致するコンテンツを検出します。
-- Keyword_indonesia_id_card からのキーワードが見つかりました。
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_indonesia_id_card finds content that matches the pattern.
+- A keyword from Keyword_indonesia_id_card is found.
 
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_indonesia_id_card は、このパターンに一致するコンテンツを検出します。
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_indonesia_id_card finds content that matches the pattern.
 
 ```
 <!-- Indonesia Identity Card (KTP) Number -->
-<Entity id="da68fdb0-f383-4981-8c86-82689d3b7d55" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Regex_indonesia_id_card"/>
-     <Match idRef="Keyword_indonesia_id_card"/>
-  </Pattern>
-  <Pattern confidenceLevel="75">
-     <IdMatch idRef="Regex_indonesia_id_card"/>
-  </Pattern>
+<Entity id="da68fdb0-f383-4981-8c86-82689d3b7d55" recommendedConfidence="85" patternsProximity="300"> <Pattern confidenceLevel="85"> <IdMatch idRef="Regex_indonesia_id_card"/> <Match idRef="Keyword_indonesia_id_card"/> </Pattern> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_indonesia_id_card"/> </Pattern>
 </Entity>
 ```
 
-### <a name="keywords"></a>キーワード
+### Keywords
    
-#### <a name="keyword_indonesia_id_card"></a>Keyword_indonesia_id_card
+#### Keyword_indonesia_id_card
 
 - KTP
 - Kartu Tanda Penduduk 
 - Nomor Induk Kependudukan 
    
-## <a name="international-banking-account-number-iban"></a>国際銀行口座番号 (IBAN)
+## International Banking Account Number (IBAN)
 
-### <a name="format"></a>Format
+### Format
 
-国コード (2 文字)、チェックディジット (2 桁)、および番号を bban 最大30文字)
+Country code (two letters) plus check digits (two digits) plus bban number (up to 30 characters)
 
-### <a name="pattern"></a>パターン
+### Pattern
 
-パターンには、以下のすべてが含まれる必要があります。
+Pattern must include all of the following:
 
-- 2文字の国コード
-- 2つのチェックディジット (オプションのスペースが続く) 
-- 1-7 4 つの文字または数字のグループ (スペースで区切ることができます)
-- 1 ～ 3 個の文字または数字
+- Two-letter country code
+- Two check digits (followed by an optional space) 
+- 1-7 groups of four letters or digits (can be separated by spaces)
+- 1-3 letters or digits
 
-各国の形式は少し異なります。 IBAN 機密情報の種類には、次の60国が含まれています。
+The format for each country is slightly different. The IBAN sensitive information type covers these 60 countries:
 
-ad、ae、al、at、az、ba、be、bg、bh、ch、cr、cy、cz、de、dk、do、ee、es、fi、fo、fr、gb、ge、hu、gl、gr、hr、、ie、il、、it、kw、kz、lb、li、lt、lu、lv、mc、md、me、mk、mr、mt、mu、nl、no、pl、pt、ro、rs、sa、se、si、sk、sm、tn、tr、vg
+ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, sk, sm, tn, tr, vg
 
-### <a name="checksum"></a>チェックサム
+### Checksum
 
-はい
+Yes
 
-### <a name="definition"></a>定義
+### Definition
 
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_iban がパターンに一致するコンテンツを検出した。
-- チェックサムが渡される。
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_iban finds content that matches the pattern.
+- The checksum passes.
 
-```
+```xml
 <Entity id="e7dc4711-11b7-4cb0-b88b-2c394a771f0e" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_iban" />
@@ -3663,7 +3664,7 @@ IPv6 の場合、DLP ポリシーは、抽出した約 300 文字が次の条件
 - 正規表現 Regex_ipv6_address がパターンに一致するコンテンツを検出した。
 - Keyword_ipaddress のキーワードを検出しなかった。
 
-```
+```xml
     <!-- IP Address -->
     <Entity id="1daa4ad5-e2dd-4ca4-a788-54722c09efb2" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -3716,7 +3717,7 @@ Dictionary
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - Dictionary_icd_10_cm からのキーワードが見つかりました。
 
-```
+```xml
       <!-- ICD-10 CM -->
       <Entity id="3356946c-6bb7-449b-b253-6ffa419c0ce7" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
@@ -3749,7 +3750,7 @@ Dictionary
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - Dictionary_icd_9_cm からのキーワードが見つかりました。
 
-```
+```xml
       <Entity id="fa3f9c74-ee07-4c52-b5f2-085d6b2c0ec4" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Dictionary_icd_9_cm" />
@@ -3799,7 +3800,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_ireland_pps は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- Ireland Personal Public Service (PPS) Number -->
 <Entity id="1cdb674d-c19a-4fcf-9f4b-7f56cc87345a" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -3859,7 +3860,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_israel_bank_account_number がパターンに一致するコンテンツを検出した。
 - Keyword_israel_bank_account_number のキーワードを検出した。
 
-```
+```xml
 <!-- Israel Bank Account Number -->
 <Entity id="7d08b2ff-a0b9-437f-957c-aeddbf9b2b25" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -3901,7 +3902,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_Israel_National_ID のキーワードを検出した。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- Israel National ID Number -->
 <Entity id="e05881f5-1db1-418c-89aa-a3ac5c5277ee" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -3944,7 +3945,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_italy_drivers_license_number がパターンに一致するコンテンツを検出した。
 - Keyword_italy_drivers_license_number のキーワードを検出した。
 
-```
+```xml
 <!-- Italy Driver's license Number -->
 <Entity id="97d6244f-9157-41bd-8e0c-9d669a5c4d71" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -3995,7 +3996,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_jp_bank_account がパターンに一致するコンテンツを検出した。
 - Keyword_jp_bank_account のキーワードを検出した。
 
-```
+```xml
 <!-- Japan Bank Account Number -->
 <Entity id="d354f95b-96ee-4b80-80bc-4377312b55bc" patternsProximity="300" recommendedConfidence="75">
   <Version minEngineVersion="15.01.0131.000">
@@ -4098,7 +4099,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_jp_drivers_license_number がパターンに一致するコンテンツを検出した。
 - Keyword_jp_drivers_license_number のキーワードを検出した。
 
-```
+```xml
 <!-- Japan Driver's License Number -->
 <Entity id="c6011143-d087-451c-8313-7f6d4aed2270" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -4158,7 +4159,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_jp_passport がパターンに一致するコンテンツを検出した。
 - Keyword_jp_passport のキーワードを検出した。
 
-```
+```xml
 <!-- Japan Passport Number -->
 <Entity id="75177310-1a09-4613-bf6d-833aae3743f8" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -4197,7 +4198,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_jp_resident_registration_number がパターンに一致するコンテンツを検出した。
 - Keyword_jp_resident_registration_number のキーワードを検出した。
 
-```
+```xml
 <!-- Japan Resident Registration Number -->
 <Entity id="01c1209b-6389-4faf-a5f8-3f7e13899652" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -4252,7 +4253,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_jp_sin_pre_1997 がパターンに一致するコンテンツを検出した。
 - Keyword_jp_sin のキーワードを検出した。
 
-```
+```xml
 <!-- Japan Social Insurance Number -->
 <Entity id="c840e719-0896-45bb-84fd-1ed5c95e45ff" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="85">
@@ -4299,7 +4300,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_jp_residence_card_number は、このパターンに一致するコンテンツを検出します。
 - Keyword_jp_residence_card_number からのキーワードが見つかりました。
 
-```
+```xml
 <!--Japan Residence Card Number-->
 -<Entity id="ac36fef2-a289-4e2c-bb48-b02366e89fc0" recommendedConfidence="75" patternsProximity="300">
    -<Pattern confidenceLevel="75">
@@ -4344,7 +4345,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_malaysia_id_card_number は、このパターンに一致するコンテンツを検出します。
 - Keyword_malaysia_id_card_number からのキーワードが見つかりました。
 
-```
+```xml
 <!-- Malaysia ID Card Number -->
 </Entity>
       <Entity id="7f0e921c-9677-435b-aba2-bb8f1013c749" patternsProximity="300" recommendedConfidence="85">
@@ -4411,7 +4412,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_eu_date2 は、日付を正しい日付形式で検索します。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- Netherlands Citizen's Service (BSN) Number -->
 <Entity id="c5f54253-ef7e-44f6-a578-440ed67e946d" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -4455,7 +4456,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_nz_terms のキーワードを検出した。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- New Zealand Health Number -->
 <Entity id="2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7" patternsProximity="300" recommendedConfidence="85">
     <Pattern confidenceLevel="85">
@@ -4503,7 +4504,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_norway_id_numbe は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- Norway Identification Number -->
 <Entity id="d4c8a798-e9f2-4bd3-9652-500d24080fc3" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -4553,7 +4554,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_philippines_unified_id は、このパターンに一致するコンテンツを検出します。
 - Keyword_philippines_id からのキーワードが見つかりました。
 
-```
+```xml
 <!-- Philippines Unified Multi-Purpose ID number -->
 <Entity id="019b39dd-8c25-4765-91a3-d9c6baf3c3b3" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
@@ -4592,7 +4593,7 @@ DLP ポリシーは 75% です。この種類の機密情報は、近接する30
 Keyword_polish_national_id_passport_number のキーワードを検出した。
 チェックサムが渡される。
 
-```
+```xml
 <!-- Poland Identity Card-->
 <Entity id="25E64989-ED5D-40CA-A939-6C14183BB7BF" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -4636,7 +4637,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_pesel_identification_number のキーワードを検出した。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- Poland National ID (PESEL) -->      
 <Entity id="E3AAF206-4297-412F-9E06-BA8487E22456" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -4675,7 +4676,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_polish_national_id_passport_number のキーワードを検出した。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- Poland Passport Number -->
 <Entity id="03937FB5-D2B6-4487-B61F-0F8BFF7C3517" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -4715,7 +4716,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_portugal_citizen_card は、このパターンに一致するコンテンツを検出します。
 - Keyword_portugal_citizen_card からのキーワードが見つかりました。
 
-```
+```xml
 <!-- Portugal Citizen Card Number -->
 <Entity id="91a7ece2-add4-4986-9a15-c84544d81ecd" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -4755,7 +4756,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_saudi_arabia_national_id がパターンに一致するコンテンツを検出した。
 - Keyword_saudi_arabia_national_id のキーワードを検出した。
 
-```
+```xml
 <!-- Saudi Arabia National ID -->
 <Entity id="8c5a0ba8-404a-41a3-8871-746aa21ee6c0" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -4805,7 +4806,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_singapore_nric は、このパターンに一致するコンテンツを検出します。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- Singapore National Registration Identity Card (NRIC) Number -->
 <Entity id="cead390a-dd83-4856-9751-fb6dc98c34da" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -4857,7 +4858,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_south_africa_identification_number からのキーワードが見つかりました。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- South Africa Identification Number -->
 <Entity id="e2adf7cb-8ea6-4048-a2ed-d89eb65f2780" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -4906,7 +4907,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_south_korea_resident_number は、このパターンに一致するコンテンツを検索します。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- South Korea Resident Registration Number -->
 <Entity id="5b802e18-ba80-44c4-bc83-bf2ad36ae36a" recommendedConfidence="85" patternsProximity="300">
   <Pattern confidenceLevel="85">
@@ -4954,7 +4955,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_spanish_social_security_number がパターンに一致するコンテンツを検出した。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- Spain SSN -->
 <Entity id="5df987c0-8eae-4bce-ace7-b316347f3070" patternsProximity="300" recommendedConfidence="85">
     <Pattern confidenceLevel="85">
@@ -4995,7 +4996,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 CEP_PasswordPlaceHolder は、このパターンに一致するコンテンツを検出し**ません**。
 - 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
 
-```
+```sql
 <!---SQL Server Connection String>
 <Entity id="e76b6205-d3cb-46f2-bd63-c90153f2f97d" patternsProximity="300" recommendedConfidence="85">
   <Pattern confidenceLevel="85">
@@ -5067,7 +5068,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_swedish_national_identifier がパターンに一致するコンテンツを検出した。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- Sweden National ID -->
 <Entity id="f69aaf40-79be-4fac-8f05-fd1910d272c8" patternsProximity="300" recommendedConfidence="85">
     <Pattern confidenceLevel="85">
@@ -5102,7 +5103,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     - Keyword_passport のキーワードを検出した。
     - Keyword_sweden_passport のキーワードを検出した。
 
-```
+```xml
 <!-- Sweden Passport Number -->
 <Entity id="ba4e7456-55a9-4d89-9140-c33673553526" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -5175,7 +5176,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_swift がパターンに一致するコンテンツを検出した。
 - Keyword_swift のキーワードを検出した。
 
-```
+```xml
 <Entity id="cb2ab58c-9cb8-4c81-baf8-a4e106791df4" patternsProximity="300" recommendedConfidence="75">
 <Pattern confidenceLevel="75">
         <IdMatch idRef="Regex_swift" />
@@ -5244,7 +5245,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_taiwanese_national_id のキーワードを検出した。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- Taiwanese National ID -->
 <Entity id="4C7BFC34-8DD1-421D-8FB7-6C6182C2AF03" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
@@ -5298,7 +5299,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_taiwan_passport は、このパターンに一致するコンテンツを検出します。
 - Keyword_taiwan_passport からのキーワードが見つかりました。
 
-```
+```xml
 <!-- Taiwan Passport Number -->
 <Entity id="e7251cb4-4c2c-41df-963e-924eb3dae04a" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
@@ -5343,7 +5344,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_taiwan_resident_certificate は、このパターンに一致するコンテンツを検出します。
 - Keyword_taiwan_resident_certificate からのキーワードが見つかりました。
 
-```
+```xml
 <!-- Taiwan Resident Certificate (ARC/TARC) -->
 <Entity id="48269fec-05ea-46ea-b326-f5623a58c6e9" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
@@ -5394,7 +5395,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_Thai_Citizen_Id は、このパターンに一致するコンテンツを検索します。
 
-```
+```xml
 <!-- Thai Citizen ID -->
 -<Entity id="44ca9e86-ead7-4c5d-884a-e2eaa401515e" recommendedConfidence="75" patternsProximity="300">
    -<Pattern confidenceLevel="85">
@@ -5441,7 +5442,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_Turkish_National_Id は、このパターンに一致するコンテンツを検索します。
 
-```
+```xml
 <!-- Turkish National Identity -->
 -<Entity id="fb621f20-3876-4cfc-acec-8c8e73ca32c7" recommendedConfidence="75" patternsProximity="300">
    -<Pattern confidenceLevel="85">
@@ -5489,7 +5490,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_uk_drivers_license のキーワードを検出した。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- U.K. Driver's License Number -->
 <Entity id="f93de4be-d94c-40df-a8be-461738047551" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -5539,7 +5540,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_uk_electoral がパターンに一致するコンテンツを検出した。
 - Keyword_uk_electoral のキーワードを検出した。
 
-```
+```xml
 <!-- U.K. Electoral Number -->
 <Entity id="a3eea206-dc0c-4f06-9e22-aa1be3059963" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -5590,7 +5591,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     - Keyword_uk_nhs_number_dob のキーワードを検出した。
 - チェックサムが渡される。
 
-```
+```xml
 <!-- U.K. NHS Number -->
 <Entity id="3192014e-2a16-44e9-aa69-4b20375c9a78" patternsProximity="300" recommendedConfidence="85">
     <Pattern confidenceLevel="85">
@@ -5668,7 +5669,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_uk_nino がパターンに一致するコンテンツを検出した。
 - Keyword_uk_nino のキーワードを検出しなかった。
 
-```
+```xml
 <!-- U.K. NINO -->
 <Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="85">
@@ -5723,7 +5724,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数 Func_usa_uk_passport がパターンに一致するコンテンツを検出した。
 - Keyword_passport のキーワードを検出した。
 
-```
+```xml
 <Entity id="178ec42a-18b4-47cc-85c7-d62c92fd67f8" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_usa_uk_passport" />
@@ -5775,7 +5776,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現 Regex_usa_bank_account_number は、このパターンに一致するコンテンツを検出します。
 - Keyword_usa_Bank_Account のキーワードを検出した。
 
-```
+```xml
 <!-- U.S. Bank Account Number -->
 <Entity id="a2ce32a8-f935-4bb6-8e96-2a5157672e2c" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="75">
@@ -5846,7 +5847,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_us_drivers_license_abbreviations のキーワードを検出した。
 - Keyword_us_drivers_license のキーワードを検出しなかった。
 
-```
+```xml
     <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_new_york_drivers_license_number" />
         <Match idRef="Keyword_new_york_drivers_license_name" />
@@ -6011,7 +6012,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     - 関数 Func_us_address が適切な形式の住所を検出した。
     - 関数 Func_us_date が適切な日付形式の日付を検出した。
 
-```
+```xml
 <!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
 <Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
     <Pattern confidenceLevel="85">
@@ -6087,44 +6088,89 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_ssn がパターンに一致するコンテンツを検出した。
 - Keyword_ssn のキーワードを検出した。
+- 関数 Func_us_date が適切な日付形式の日付を検出した。
+- 関数 Func_us_address は、アドレスを正しい形式で検索します。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_unformatted_ssn は、このパターンに一致するコンテンツを検索します。
 - Keyword_ssn のキーワードを検出した。
+- 関数 Func_us_date が適切な日付形式の日付を検出した。
+- 関数 Func_us_address は、アドレスを正しい形式で検索します。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、65% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_randomized_formatted_ssn がパターンに一致するコンテンツを検出した。
 - Keyword_ssn のキーワードを検出した。
-- 関数 Func_ssn がパターンに一致するコンテンツを検出しなかった。
+- 関数 Func_us_date が適切な日付形式の日付を検出した。
+- 関数 Func_us_address は、アドレスを正しい形式で検索します。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に 55% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_randomized_unformatted_ssn がパターンに一致するコンテンツを検出した。
 - Keyword_ssn のキーワードを検出した。
-- 関数 Func_unformatted_ssn がパターンに一致するコンテンツを検出しなかった。
+- 関数 Func_us_date が適切な日付形式の日付を検出した。
+- 関数 Func_us_address は、アドレスを正しい形式で検索します。
 
-```
+DLP ポリシーの信頼度は 40% で、この種類の機密情報は、近接する300文字内で検出されます。
+- 関数 Func_ssn がパターンに一致するコンテンツを検出した。
+- 関数 Func_unformatted_ssn がパターンに一致するコンテンツを検出しなかった。
+- 関数 Func_randomized_unformatted_ssn は、このパターンに一致するコンテンツを検出しません。
+- Keyword_ssn からのキーワードが見つかりません。
+ 
+または
+
+- 関数 Func_randomized_formatted_ssn がパターンに一致するコンテンツを検出した。
+- 関数 Func_unformatted_ssn がパターンに一致するコンテンツを検出しなかった。
+- 関数 Func_randomized_unformatted_ssn は、このパターンに一致するコンテンツを検出しません。
+- Keyword_ssn からのキーワードが見つかりません。
+
+```xml
 <!-- U.S. Social Security Number (SSN) -->
-    <Entity id="a44669fe-0d48-453d-a9b1-2cc83f2cba77" patternsProximity="300" recommendedConfidence="75">
+  <Entity id="a44669fe-0d48-453d-a9b1-2cc83f2cba77" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_ssn" />
-        <Match idRef="Keyword_ssn" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_ssn" />
+          <Match idRef="Func_us_date" />
+          <Match idRef="Func_us_address" />
+        </Any>
       </Pattern>
       <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_unformatted_ssn" />
         <Match idRef="Keyword_ssn" />
+        <Any minMatches="1">
+          <Match idRef="Func_us_date" />
+          <Match idRef="Func_us_address" />
+        </Any>
       </Pattern>
       <Pattern confidenceLevel="65">
         <IdMatch idRef="Func_randomized_formatted_ssn" />
-        <Match idRef="Keyword_ssn" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Func_ssn" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_ssn" />
+          <Match idRef="Func_us_date" />
+          <Match idRef="Func_us_address" />
         </Any>
       </Pattern>
       <Pattern confidenceLevel="55">
         <IdMatch idRef="Func_randomized_unformatted_ssn" />
         <Match idRef="Keyword_ssn" />
+        <Any minMatches="1">
+          <Match idRef="Func_us_date" />
+          <Match idRef="Func_us_address" />
+        </Any>
+      </Pattern>
+      <Pattern confidenceLevel="40">
+        <IdMatch idRef="Func_ssn" />
         <Any minMatches="0" maxMatches="0">
           <Match idRef="Func_unformatted_ssn" />
+          <Match idRef="Func_randomized_unformatted_ssn" />
+          <Match idRef="Keyword_ssn" />
+        </Any>
+      </Pattern>
+      <Pattern confidenceLevel="40">
+        <IdMatch idRef="Func_randomized_formatted_ssn" />
+        <Any minMatches="0" maxMatches="0">
+          <Match idRef="Func_unformatted_ssn" />
+          <Match idRef="Func_randomized_unformatted_ssn" />
+          <Match idRef="Keyword_ssn" />
         </Any>
       </Pattern>
     </Entity>

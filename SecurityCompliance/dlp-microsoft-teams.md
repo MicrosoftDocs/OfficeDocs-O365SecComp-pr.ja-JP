@@ -13,17 +13,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: これで、DLP ポリシーを Microsoft Teams のチャットおよびチャネルに適用できるようになります。 機能の詳細については、この記事を参照してください。
-ms.openlocfilehash: 8ac8f4e2a4189ca83772775a96067d0b5fc3a24b
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 4edc05a2e0759884570239a038d0869e15240d17
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230741"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478226"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>データ損失防止と Microsoft Teams
+<!-- the note duplicates the first sentence of the overview, delete one or the other- -->
 
 > [!NOTE]
-> データ損失防止機能は、最近、Office 365 Advanced コンプライアンス用にライセンスされたユーザーのために Microsoft Teams のチャットおよびチャネルメッセージに追加されました。これはスタンドアロンオプションとして提供されており、Office 365 E5 および Microsoft 365 E5 コンプライアンスに含まれています。 ライセンス要件の詳細については、「 [Microsoft 365 テナントレベルサービスライセンスガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)」を参照してください。
+> データ損失防止機能は、最近、Office 365 Advanced コンプライアンスのライセンスが付与されたユーザーのために Microsoft Teams のチャットおよびチャネルメッセージに追加されました。これは、スタンドアロンオプションとして利用でき、Office 365 E5 および Microsoft 365 E5 コンプライアンスに含まれています。 ライセンス要件の詳細については、「 [Microsoft 365 テナントレベルサービスライセンスガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)」を参照してください。
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Microsoft Teams の DLP の概要
 
@@ -38,7 +39,7 @@ ms.locfileid: "36230741"
 
 ## <a name="policy-tips-help-educate-users"></a>ユーザーを教育するためのポリシーヒント
 
-[Exchange、outlook、および outlook on the web](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web)、 [SharePoint および OneDrive for business サイト](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)、および[OFFICE デスクトップクライアント](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)での dlp の動作と同様に、アクションが dlp ポリシーと競合すると、ポリシーヒントが表示されます。 ポリシーヒントの例を次に示します。
+[Exchange、outlook、outlook on the web](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web)、 [SharePoint Online、OneDrive for business サイト](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)、および[OFFICE デスクトップクライアント](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)での dlp の動作と同様に、操作が dlp ポリシーと競合すると、ポリシーヒントが表示されます。 ポリシーヒントの例を次に示します。
 
 ![Teams でブロックされたメッセージ通知](media/dlp-teams-blockedmessage-notification.png)
 
@@ -73,7 +74,7 @@ ms.locfileid: "36230741"
 7. [**ポリシー設定**] タブで、[**保存**] を選択します。
 
 変更がデータセンターを経由して、ユーザーアカウントに同期されるまで約1時間の時間を確保します。
- 
+ <!-- why are these syncing to user accounts? -->
 ## <a name="add-microsoft-teams-as-a-location-to-existing-dlp-policies"></a>既存の DLP ポリシーに Microsoft Teams を場所として追加する
 
 このタスクを実行するには、DLP ポリシーを編集する権限を持つ役割が割り当てられている必要があります。 詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
@@ -91,7 +92,7 @@ ms.locfileid: "36230741"
 6. **[保存]** をクリックします。
 
 変更がデータセンターを経由して、ユーザーアカウントに同期されるまで約1時間の時間を確保します。
-
+<!-- again, why user accounts? -->
 ## <a name="define-a-new-dlp-policy-for-microsoft-teams"></a>Microsoft Teams の新しい DLP ポリシーを定義する
 
 このタスクを実行するには、DLP ポリシーを編集する権限を持つ役割が割り当てられている必要があります。 詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
@@ -104,7 +105,7 @@ ms.locfileid: "36230741"
 
 4. [**ポリシーに名前**をつける] タブで、ポリシーの名前と説明を指定し、[**次へ**] を選択します。 
 
-5. [**場所の選択**] タブで、すべての場所の既定の設定をそのまま使用するか、[特定の**場所を選択**する] を選択して、[**次へ**] を選択します。<br/>特定の場所を選択する場合は、DLP ポリシーの場所を選択し、[**次へ**] を選択します。<br/>![DLP ポリシーの場所](media/dlp-teams-selectlocationsnewpolicy.png)<br/>
+5. [**場所の選択**] タブで、すべての場所の既定の設定をそのまま使用するか、[特定の**場所を選択**する] を選択して、[**次へ**] を選択します。<br/>特定の場所を選択した場合は、DLP ポリシーに対してそれらの場所を選択し、[**次へ**] を選択します。<br/>![DLP ポリシーの場所](media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
     > 機密情報が含まれるドキュメントが不適切に共有されないようにするには、 **SharePoint サイト**と**OneDrive アカウント**が、 **Teams のチャットおよびチャネルメッセージ**と共にオンになっていることを確認してください。
 <br/>

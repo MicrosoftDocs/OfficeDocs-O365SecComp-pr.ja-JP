@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: DLP 用のカスタムの機密情報の種類の概要です。
-ms.openlocfilehash: 3c3acceb23fe74d22b9e952bf5dc76d9ed6eefd9
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: b73f0d51e57106cbcc6f0986261faabb26cc5b4a
+ms.sourcegitcommit: 0a0d9c1325b4b0581018c31037dcc707d3d679b4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230781"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36279149"
 ---
 # <a name="custom-sensitive-information-types"></a>カスタムの機密情報の種類
 
@@ -49,7 +49,7 @@ Office 365 には機密情報の種類が多数組み込まれており、[デ�
 
 次のオプションを使用して、セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成できます。
 
-- **EDM を使用する** (新規) データ一致 (EDM) に基づく分類によって、カスタム機密情報の種類を設定します。 この方法では、定期的に更新できる安全なデータベースを使用して、動的な機密情報の種類を作成することができます。 詳細については、「[データ一致に基づく分類 (プレビュー) で、カスタムの機密情報の種類を作成する](create-custom-sensitive-info-type-edm.md)」を参照してください。
+- **EDM を使用する** (新規) データ一致 (EDM) に基づく分類によって、カスタム機密情報の種類を設定します。 この方法では、定期的に更新できる安全なデータベースを使用して、動的な機密情報の種類を作成することができます。 詳細については、「[Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)」を参照してください。
 
 - **PowerShell を使用する** PowerShell を使用して、カスタムの機密情報の種類を設定します。 この方法は、UI を使用する場合よりも複雑ですが、より多くの構成オプションがあります。 詳細については、「[セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)」を参照してください。
 
