@@ -1,5 +1,5 @@
 ---
-title: Office 365 のユーザーに Office 365 の脅威の調査と応答機能を安全に保つ
+title: Office 365 の脅威の調査および応答機能を使用して組織を安全に保つ
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,14 +15,14 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Office 365 の脅威調査および応答機能を使用して、組織が侵入や脅威を検出し、脅威から迅速に脅威を軽減および回復する方法について説明します。
-ms.openlocfilehash: 2170bf53247412ecf0ae1b9ca13286a6df8a6336
-ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
+ms.openlocfilehash: baedfb1ff74117bd2ed36cdf4551f898d377a971
+ms.sourcegitcommit: 4fd64e1811ae96633035cbc9cab1dbef3cbba34d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "36478176"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36484400"
 ---
-# <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Office 365 のユーザーに Office 365 の脅威の調査と応答機能を安全に保つ
+# <a name="keep-your-organization-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Office 365 の脅威の調査および応答機能を使用して組織を安全に保つ
 
 ## <a name="overview"></a>概要
 
