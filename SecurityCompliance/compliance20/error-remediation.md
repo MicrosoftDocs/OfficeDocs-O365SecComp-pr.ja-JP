@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: efcee812b6082a7f7ee36e6aea0ecb7ed0243077
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: c9c2660929037430535c9b612218563c51b1f056
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36168137"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490794"
 ---
 # <a name="error-remediation-when-processing-data"></a>データ処理中のエラー修復
 
@@ -61,7 +61,7 @@ ms.locfileid: "36168137"
 
 7. ファイルをダウンロードした後、適切なツールを使用して修復できます。 パスワードで保護されたファイルでは、いくつかのパスワードクラッキングツールを使用できます。 ファイルのパスワードがわかっている場合は、それらを開いてパスワード保護を解除することができます。
     > [!NOTE]
-    > Tact で修復されたファイルのディレクトリ構造とファイル名を保持することが重要です。  ダウンロードしたファイルとフォルダーで使用されているすべての命名規則によって、remdiated ファイルを元のファイルに戻すことができます。
+    > 修復されたファイルのディレクトリ構造とファイル名を保持することが重要です。 ダウンロードしたファイルとフォルダーのパス名によって、修復済みのファイルを元のファイルに関連付けることができます。  ディレクトリ構造またはファイル名が変更されると、次のエラーが表示`Cannot apply Error Remediation to the current Workingset`されます。
 
 8. [Advanced eDiscovery] に戻り、[**次へ: ファイルのアップロード**] をクリックします。  これにより、次の手順に進み、ファイルをアップロードできるようになります。
 

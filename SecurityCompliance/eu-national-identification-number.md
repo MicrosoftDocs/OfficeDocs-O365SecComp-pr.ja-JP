@@ -3,19 +3,19 @@ title: EU 国家識別番号
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 8/17/2018
+ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 国内の識別番号の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: 205019d040648f0600f3dbf4403063edf9f31c41
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: cbcacb3f85877f5a84238468fb52d612d90f5f0b
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154461"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490774"
 ---
 # <a name="eu-national-identification-number"></a>EU 国家識別番号
 
@@ -59,7 +59,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywordsaustriaeunationalidcard"></a>Keywords_austria_eu_national_id_card
+#### <a name="keywords_austria_eu_national_id_card"></a>Keywords_austria_eu_national_id_card
 
 オーストリアの id 番号
   
@@ -123,11 +123,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywordsbulgarianationalnumber"></a>Keywords_bulgaria_national_number
+#### <a name="keywords_bulgaria_national_number"></a>Keywords_bulgaria_national_number
 
 「//入力 n」
   
-"/入力 id"
+「//入力 n」#
   
 ブルガリアの国番号
   
@@ -137,13 +137,13 @@ social security number
   
 nationalnumber#
   
-ssn
+ssn#
   
 ssn
   
 nationalnumber
   
-bnn #
+bnn#
   
 bnn
   
@@ -197,7 +197,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywordscypruseunationalidcard"></a>Keywords_cyprus_eu_national_id_card
+#### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
 id カード番号
   
@@ -266,7 +266,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywordsestoniaeunationalidcard"></a>Keywords_estonia_eu_national_id_card
+#### <a name="keywords_estonia_eu_national_id_card"></a>Keywords_estonia_eu_national_id_card
 
 個人識別コード
   
@@ -350,7 +350,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywordshungaryeunationalidcard"></a>Keywords_hungary_eu_national_id_card
+#### <a name="keywords_hungary_eu_national_id_card"></a>Keywords_hungary_eu_national_id_card
 
 個人識別番号
   
@@ -417,7 +417,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywordsirelandeunationalidcard"></a>Keywords_ireland_eu_national_id_card
+#### <a name="keywords_ireland_eu_national_id_card"></a>Keywords_ireland_eu_national_id_card
 
 個人用パブリックサービス番号
   
@@ -491,7 +491,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywordsitalyeunationalidcard"></a>Keywords_italy_eu_national_id_card
+#### <a name="keywords_italy_eu_national_id_card"></a>Keywords_italy_eu_national_id_card
 
 個人コード
   
@@ -519,7 +519,7 @@ codice id 個人 ale
   
 codice fiscale
   
-## <a name="italy"></a>イタリア
+## <a name="latvia"></a>ラトビア
 
 ### <a name="format"></a>Format
 
@@ -567,7 +567,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywordslatviaeunationalidcard"></a>Keywords_latvia_eu_national_id_card
+#### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
 個人コード
   
@@ -632,7 +632,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywordslithuaniaeunationalidcard"></a>Keywords_lithuania_eu_national_id_card
+#### <a name="keywords_lithuania_eu_national_id_card"></a>Keywords_lithuania_eu_national_id_card
 
 個人の数値コード
   
@@ -697,13 +697,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywordsluxemburgeunationalidcard"></a>Keywords_luxemburg_eu_national_id_card
+#### <a name="keywords_luxemburg_eu_national_id_card"></a>Keywords_luxemburg_eu_national_id_card
 
 個人 id
   
 個人 id 番号
   
-パーソナル id no #
+パーソナル id no#
   
 一意の id 番号
   
@@ -778,7 +778,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywordsmaltaeunationalidcard"></a>Keywords_malta_eu_national_id_card
+#### <a name="keywords_malta_eu_national_id_card"></a>Keywords_malta_eu_national_id_card
 
 個人の数値コード
   
@@ -839,7 +839,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywordsnetherlandseunationalidcard"></a>Keywords_netherlands_eu_national_id_card
+#### <a name="keywords_netherlands_eu_national_id_card"></a>Keywords_netherlands_eu_national_id_card
 
 個人の数値コード
   
@@ -853,7 +853,7 @@ uniqueidentityno#
   
 bsn
   
-bsn
+bsn#
   
 persoonlijke numerieke コード
   
@@ -912,7 +912,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywordsromaniaeunationalidcard"></a>Keywords_romania_eu_national_id_card
+#### <a name="keywords_romania_eu_national_id_card"></a>Keywords_romania_eu_national_id_card
 
 個人の数値コード
   
@@ -920,11 +920,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 cnp
   
-cnp #
+cnp#
   
 pin
   
-pin
+pin#
   
 保険番号
   
@@ -993,7 +993,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywordsslovakiaeunationalidcard"></a>Keywords_slovakia_eu_national_id_card
+#### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
 出生地番号
   
@@ -1005,7 +1005,7 @@ social security number
   
 nationalnumber#
   
-ssn
+ssn#
   
 ssn
   
@@ -1070,7 +1070,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywordssloveniaeunationalidcard"></a>Keywords_slovenia_eu_national_id_card
+#### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
 個人の数値コード
   
@@ -1086,7 +1086,7 @@ uniqueidentityno#
   
 edinstベンダー a identifikacijska številka
   
-uniqueidentityno #
+uniqueidentityno#
   
 edinstベンダー a številka glavnega državljana
   
@@ -1130,7 +1130,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywordsspaineunationalidcard"></a>Keywords_spain_eu_national_id_card
+#### <a name="keywords_spain_eu_national_id_card"></a>Keywords_spain_eu_national_id_card
 
 dni
   
@@ -1150,9 +1150,9 @@ national identification number
   
 nationalidno#
   
-見つから
+見つから#
   
-dni
+dni#
   
 nationalid#
   

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Office 365 メールボックスに配置できるさまざまな種類の保留リストを識別する方法について説明します。 これらの種類には、訴訟ホールド、電子情報開示の保持、および Office 365 アイテム保持ポリシーが含まれます。 ユーザーが組織全体のアイテム保持ポリシーから除外されているかどうかを確認することもできます。
-ms.openlocfilehash: c1eacf1a15a3d1e8f0e5f9e0673556de218cd1e1
-ms.sourcegitcommit: f88f14999aeb70ecf265cd98eb09a3304b150be8
+ms.openlocfilehash: 47e7ffff1703c0de94f014dc18e249cc9775e3e2
+ms.sourcegitcommit: 873c5bc0e6cd1ca3dfdb3a99a5371353b419311f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34768942"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493158"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Exchange Online メールボックスに保存されている保留の種類を特定する方法
 
@@ -26,32 +26,32 @@ ms.locfileid: "34768942"
 
 Office 365 には、組織がメールボックスの内容が完全に削除されないようにする方法がいくつか用意されています。 これにより、組織は、コンプライアンス規制や、法的およびその他の調査時に、コンテンツを保持することができます。 Office 365 の保持機能 (*保留*とも呼ばれます) の一覧を以下に示します。
 
-- **訴訟ホールド**– Exchange Online のユーザーメールボックスに適用されるホールド。
+- **[訴訟ホールド](create-a-litigation-hold.md):** Exchange Online のユーザーメールボックスに適用されるホールド。
 
-- **電子情報開示の保持**-セキュリティ/コンプライアンスセンターの電子情報開示ケースに関連付けられた保持。 電子情報開示の保持は、ユーザーのメールボックスと、Office 365 グループおよび Microsoft Teams の対応するメールボックスに適用できます。
+- **[電子情報開示の保留リスト](ediscovery-cases.md#step-4-place-content-locations-on-hold):** セキュリティ/コンプライアンスセンターの電子情報開示ケースに関連付けられているホールド。 電子情報開示の保持は、ユーザーのメールボックスと、Office 365 グループおよび Microsoft Teams の対応するメールボックスに適用できます。
 
-- **インプレースホールド**– exchange Online の exchange 管理センターでインプレース電子情報開示 & 保持ツールを使用して、ユーザーメールボックスに適用される保持。
+- **[インプレース保持](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Exchange Online の Exchange 管理センターでインプレース電子情報開示 & 保持ツールを使用して、ユーザーメールボックスに適用されるホールド。
 
-- **Office 365 アイテム保持ポリシー** – Exchange Online のユーザーメールボックスおよび Office 365 グループおよび Microsoft Teams の対応するメールボックスでコンテンツを保持 (またはその後、削除) するように構成できます。 また、ユーザーのメールボックスに格納されている Skype for Business の会話を保持するアイテム保持ポリシーを作成することもできます。
+- ** [Office 365 のアイテム保持ポリシー](retention-policies.md):** Exchange Online のユーザーメールボックスおよび Office 365 グループおよび Microsoft Teams の対応するメールボックス内のコンテンツを保持 (またはその後、削除) するように構成できます。 また、ユーザーのメールボックスに格納されている Skype for Business の会話を保持するアイテム保持ポリシーを作成することもできます。
 
   メールボックスに割り当てることができる Office 365 のアイテム保持ポリシーには、2種類あります。
 
-    - **特定の場所の保持ポリシー** : これらは、特定のユーザーのコンテンツの場所に割り当てられるポリシーです。 Exchange Online の PowerShell で、**メールボックスの取得**コマンドレットを使用して、特定のメールボックスに割り当てられているアイテム保持ポリシーに関する情報を取得します。
+    - **特定の場所保持ポリシー:** これらは、特定のユーザーのコンテンツの場所に割り当てられるポリシーです。 Exchange Online の PowerShell で、**メールボックスの取得**コマンドレットを使用して、特定のメールボックスに割り当てられているアイテム保持ポリシーに関する情報を取得します。
 
-    - **組織全体のアイテム保持ポリシー** –これらは、組織内のすべてのコンテンツの場所に割り当てられるポリシーです。 組織全体のアイテム保持ポリシーについての情報を取得するには、Exchange Online の PowerShell で、" **get-help/** 組織全体の構成" コマンドレットを使用します。
+    - **組織全体のアイテム保持ポリシー:** これらは、組織内のすべてのコンテンツの場所に割り当てられるポリシーです。 組織全体のアイテム保持ポリシーについての情報を取得するには、Exchange Online の PowerShell で、" **get-help/** 組織全体の構成" コマンドレットを使用します。
   詳細については、「 [Office 365 アイテム保持ポリシーの概要](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)」の「組織全体または特定の場所にアイテム保持ポリシーを適用する」セクションを参照してください。
 
-- **Office 365 の保持ラベル**–ユーザーが自分のメールボックス内の*任意*のフォルダーまたはアイテムに office 365 の保持ラベル (コンテンツを保持するように構成されている、またはコンテンツを保持してから削除するように構成されている) を適用すると、メールボックスがメールボックスの場合と同じように保持されます。訴訟ホールドの対象にするか、Office 365 アイテム保持ポリシーに割り当てられます。 詳細については、この記事の「[フォルダーまたはアイテムに保持ラベルが適用されているため、保留中のメールボックスを識別](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item)する」を参照してください。
+- **[Office 365 の保持ラベル](labels.md):** ユーザーが自分のメールボックス内の*任意*のフォルダーまたはアイテムに office 365 の保持ラベル (コンテンツを保持するように構成されているか、コンテンツを保持してから削除するように構成されている) を適用すると、メールボックスが次の場合と同じように保持されます。訴訟ホールドの対象にするか、Office 365 アイテム保持ポリシーに割り当てられます。 詳細については、この記事の「[フォルダーまたはアイテムに保持ラベルが適用されているため、保留中のメールボックスを識別](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item)する」を参照してください。
 
 保留中のメールボックスを管理するには、保持期間の変更、一時的または完全に保持を削除する、または Office 365 アイテム保持ポリシーからメールボックスを除外するなどのタスクを実行できるように、メールボックスに設定されているホールドの種類を特定する必要がある場合があります。 このような場合は、最初の手順として、メールボックスに設定されている保留の種類を特定します。 また、複数のホールド (および異なる種類の保留リスト) を1つのメールボックスに配置することができるため、保留リストを削除または変更する場合は、メールボックスに設定されているすべての保留リストを特定する必要があります。
 
 ## <a name="step-1-obtain-the-guid-for-holds-placed-on-a-mailbox"></a>手順 1: メールボックスに配置された保留リストの GUID を取得する
 
-Exchange Online PowerShell で次の2つのコマンドレットを実行して、メールボックスに配置されている保留リストの GUID を取得できます。 GUID を取得した後、それを使用して、手順2で特定のホールドを識別します。 訴訟ホールドは GUID によって識別されないことに注意してください。 訴訟ホールドは、メールボックスに対して有効または無効のどちらかになります。
+Exchange Online PowerShell で次の2つのコマンドレットを実行して、メールボックスに配置されている保留リストの GUID を取得できます。 GUID を取得した後、それを使用して、手順2で特定のホールドを識別します。 訴訟ホールドは GUID で識別されません。 訴訟ホールドは、メールボックスに対して有効または無効のどちらかになります。
 
-- **Get-mailbox** -このコマンドレットを使用して、メールボックスで訴訟ホールドが有効になっているかどうかを確認し、メールボックスに割り当てられている電子情報開示の保持ポリシー、インプレースホールド、および Office 365 アイテム保持ポリシーの guid を取得します。 このコマンドレットの出力は、メールボックスが組織全体のアイテム保持ポリシーから明示的に除外されているかどうかも示します。
+- **取得-メールボックス:** このコマンドレットを使用して、メールボックスの訴訟ホールドが有効になっているかどうかを確認し、メールボックスに割り当てられている電子情報開示の保持ポリシー、インプレースホールド、および Office 365 アイテム保持ポリシーの Guid を取得します。 このコマンドレットの出力は、メールボックスが組織全体のアイテム保持ポリシーから明示的に除外されているかどうかも示します。
 
-- **Get-help config** -組織全体のアイテム保持ポリシーの guid を取得するには、このコマンドレットを使用します。
+- **取得-組織の構成:** このコマンドレットを使用して、組織全体のアイテム保持ポリシーの Guid を取得します。
 
 Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)」を参照してください。
 
@@ -146,7 +146,7 @@ Exchange Online PowerShell で次のコマンドを実行して、メールボ�
 ```
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name,SourceMailboxes
 ```
-インプレース保持の GUID が`cld`プレフィックスで始まる場合は、前のコマンドを実行するときに必ずプレフィックスを含めるようにしてください。
+インプレース保持の GUID が`cld`プレフィックスで始まる場合は、前のコマンドを実行するときに必ずプレフィックスを指定してください。
 
 ### <a name="office-365-retention-policies"></a>Office 365 のアイテム保持ポリシー
 
@@ -174,7 +174,7 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>遅延保持時のメールボックスの管理
 
-メールボックスから何らかの種類の保留が解除されると、 *DelayHoldApplied* mailbox プロパティの値は**True**に設定されます。 これは、管理フォルダーアシスタントが次回メールボックスを処理し、ホールドが削除されたことを検出したときに発生します。 これは*遅延ホールド*と呼ばれ、保留を実際に削除すると、メールボックスからデータが完全に削除 (パージ) されないようにするために30日間は遅延することになります。 これにより、管理者は、保留が実際に削除された後に削除されるメールボックスアイテムを検索したり、回復したりする機会を得ることができます。 メールボックスに遅延保持が設定されている場合でも、メールボックスが訴訟ホールドの対象であったかのように、無期限に保持されていると見なされます。 30日後、遅延保持が有効期限切れになり、Office 365 は遅延保持を自動的に削除します ( *DelayHoldApplied*プロパティを**False**に設定する)。これにより、ホールドが削除されます。 *DelayHoldApplied*プロパティの値を**False**に設定すると、削除がマークされているアイテムは、次回メールボックスが管理フォルダーアシスタントによって処理されたときに削除されます。
+メールボックスから何らかの種類の保留が解除されると、 *DelayHoldApplied* mailbox プロパティの値は**True**に設定されます。 これは、管理フォルダーアシスタントが次回メールボックスを処理し、ホールドが削除されたことを検出したときに発生します。 これは*遅延ホールド*と呼ばれ、保留を実際に削除すると、メールボックスからデータが完全に削除 (パージ) されないようにするために30日間は遅延することになります。 これにより、管理者は、保留が解除された後に削除されるメールボックスアイテムを検索したり、回復したりすることができます。 メールボックスに遅延保持が設定されている場合でも、メールボックスが訴訟ホールドの対象であったかのように、無期限に保持されていると見なされます。 30日後、遅延保持が有効期限切れになり、Office 365 は遅延保持を自動的に削除します ( *DelayHoldApplied*プロパティを**False**に設定する)。これにより、ホールドが解除されます。 *DelayHoldApplied*プロパティの値を**False**に設定すると、削除がマークされているアイテムは、次回メールボックスが管理フォルダーアシスタントによって処理されたときに削除されます。
 
 メールボックスの*DelayHoldApplied*プロパティの値を表示するには、Exchange Online PowerShell で次のコマンドを実行します。
 
@@ -187,7 +187,7 @@ Get-Mailbox <username> | FL DelayHoldApplied
 ```
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
-*RemoveDelayHoldApplied*パラメーターを使用するには、Exchange Online で法的情報保留の役割が割り当てられている必要があることに注意してください。 
+*RemoveDelayHoldApplied*パラメーターを使用するには、Exchange Online で法的情報保留の役割を割り当てられている必要があります。 
 
 非アクティブなメールボックスの遅延ホールドを削除するには、Exchange Online PowerShell で次のコマンドを実行します。
 
@@ -200,9 +200,9 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 
 ## <a name="next-steps"></a>次のステップ
 
-メールボックスに適用されている保留リストを特定した後は、保留中の期間の変更、一時停止または完全に保持の削除、または Office 365 アイテム保持ポリシーから非アクティブなメールボックスを除外するなどのタスクを実行できます。 保留に関連するタスクの実行の詳細については、以下のいずれかのトピックを参照してください。
+メールボックスに適用されている保留リストを特定した後は、保留の期間の変更、一時的または完全に保持の削除、または Office 365 のアイテム保持ポリシーから非アクティブなメールボックスを除外するなどのタスクを実行できます。 保留に関連するタスクの実行の詳細については、以下のいずれかのトピックを参照してください。
 
-- セキュリティ & コンプライアンスセンターの PowerShell で[>new-retentioncompliancepolicy \<](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/Set-RetentionCompliancePolicy?view=exchange-ps)コマンドレットを実行して、組織全体の Office 365 保持ポリシーからメールボックスを除外します。 このコマンドは、 *Exchangelocation*プロパティの値がと等しい`All`アイテム保持ポリシーにのみ使用できることに注意してください。
+- セキュリティ & コンプライアンスセンターの PowerShell で[>new-retentioncompliancepolicy \<](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/Set-RetentionCompliancePolicy?view=exchange-ps)コマンドレットを実行して、組織全体の Office 365 保持ポリシーからメールボックスを除外します。 このコマンドは、 *Exchangelocation*プロパティの値がと等しい`All`アイテム保持ポリシーにのみ使用できます。
 
 - Exchange Online PowerShell で、[プレフィックスまた\<はサフィックス>コマンドを指定せずに ExcludeFromOrgHolds hold GUID](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps)を実行して、組織全体の Office 365 アイテム保持ポリシーから非アクティブなメールボックスを除外します。
 

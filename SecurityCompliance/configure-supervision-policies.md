@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 監督レビューポリシーを設定して、レビューのために従業員のコミュニケーションをキャプチャします。
-ms.openlocfilehash: 9cc13cb953d8166ceac04856fa8b54d0a4629bd6
-ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
+ms.openlocfilehash: c4735226235d557dc138d6eebaf9c7a84c39020c
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36168175"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490784"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>組織の監督ポリシーを設定する
 
@@ -29,7 +29,7 @@ ms.locfileid: "36168175"
 
 > [!NOTE]
 > 監督ポリシーによって監視されるユーザーは、Microsoft 365 E5 コンプライアンスライセンス、Advanced コンプライアンスアドオンを備えた Office 365 Enterprise E3 ライセンス、または Office 365 Enterprise E5 サブスクリプションに含まれている必要があります。
-既存の Enterprise E5 プランを所有しておらず、監督を試みる場合は、 [Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)することができます。
+> 既存の Enterprise E5 プランを所有しておらず、監督を試みる場合は、 [Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)することができます。
   
 Office 365 組織の監督をセットアップして使用するには、次の手順を実行します。
   
@@ -99,6 +99,7 @@ Office 365 組織の監督をセットアップして使用するには、次の
     ```
 
 グループのセットアップの詳細については、以下を参照してください。
+
 - [配布グループを作成および管理する](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [メールが有効なセキュリティ グループの管理](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Office 365 グループの概要](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
@@ -166,7 +167,7 @@ Office 365 組織の監督をセットアップして使用するには、次の
 
     - ポリシーに名前と説明を指定します。
     - 監督するユーザーまたはグループを選択します。これには、除外するユーザーまたはグループを選択することも含まれます。
-    - 監督ポリシー条件を定義します。
+    - 監督ポリシー[条件](supervision-policies.md#ConditionalSettings)を定義します。 [メッセージアドレス]、[キーワード]、[ファイルの種類]、および [サイズの一致] の条件を選択できます。
     - 機密情報の種類を含めるかどうかを選択します。 ここでは、既定およびカスタムの機密情報の種類を選択できます。
     - 攻撃的な言語モデルを有効にする場合に選択します。 これにより、電子メールメッセージの本文での適切でない言語が検出されます。
     - レビューする通信の割合を定義します。
@@ -196,7 +197,7 @@ Outlook デスクトップのレビューを構成するには、監督ポリシ
 > [!NOTE]
 > 他のユーザーがポリシーを作成した場合は、そのポリシーからこのアドレスを取得してアドインをインストールする必要があります。
 
- **監督メールボックスのアドレスを検索するには**
+**監督メールボックスのアドレスを検索するには**
   
 1. 組織内の管理者アカウントの資格情報を使用して、[コンプライアンスセンター](https://compliance.microsoft.com)にサインインします。
 

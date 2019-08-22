@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーでは、コンテンツを保持するか、コンテンツを削除するか、またはコンテンツを保持した後で削除するかを事前に決定できます。さらに、1 つのポリシーを組織全体に適用するか、特定の場所やユーザーにのみ適用するか、すべてのコンテンツにポリシーを適用するか、特定の条件を満たしているコンテンツにのみポリシーを適用するかも事前に決定できます。
-ms.openlocfilehash: 1d9ad24a8322bec471a2725e16c0cd49ffa71202
-ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
+ms.openlocfilehash: 71c7fbf06709dd9d7e6ba3f084e0377f821ca171
+ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054769"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36444897"
 ---
 # <a name="overview-of-retention-policies"></a>アイテム保持ポリシーの概要
 
@@ -300,7 +300,7 @@ PowerShell を使用すると、アイテム保持ポリシーから特定の種
   
 ## <a name="releasing-a-retention-policy"></a>アイテム保持ポリシーを解除する
 
-アイテム保持ポリシーはいつでもオフまたは削除できます。 この操作を行うと、保持されている SharePoint や OneDrive のコンテンツは、すぐには完全に削除されません。 代わりに、不注意によるデータの損失を防ぐために、30日間の猶予期間があります。そのポリシーのコンテンツの有効期限は、[アイテム保管ライブラリ] には表示されず、必要に応じてコンテンツを復元できます。 猶予期間中にアイテム保持ポリシーをもう一度有効にすることもできます。そのポリシーのコンテンツは削除されません。 PowerShell を用いて、この猶予期間を構成できます。間もなく、ユーザーが使用できるサンプル スクリプトが提供されます。
+アイテム保持ポリシーはいつでもオフまたは削除できます。 この操作を行うと、[アイテム保管ライブラリ] で保持されている SharePoint や OneDrive のコンテンツは、すぐには完全に削除されません。 代わりに、不注意によるデータの損失を防ぐために、30 日間の猶予期間があります。そのポリシーのコンテンツの有効期限は、[アイテム保管ライブラリ] には表示されず、必要に応じてコンテンツを復元できます。 猶予期間中にアイテム保持ポリシーをもう一度有効にすることもできます。そのポリシーのコンテンツは削除されません。
 
 この SharePoint と OneDrive の 30 日の猶予期間は、Exchange の 30 日の保留期間に対応しています。 詳しくは、[メールボックスの管理についての詳細](https://docs.microsoft.com/ja-JP/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox#managing-mailboxes-on-delay-hold) をご覧ください。。
 

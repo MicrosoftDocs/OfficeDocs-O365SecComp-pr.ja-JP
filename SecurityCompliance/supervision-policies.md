@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Office 365 の監督ポリシーについて
-ms.openlocfilehash: 6480c3ccb069e5e16618739303d71df115074baf
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: 3259620e16b626c81c9c0f71f7be1f627e9c6bc9
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36165653"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490764"
 ---
 # <a name="supervision-policies-in-office-365"></a>Office 365 の監督ポリシー
 
@@ -144,6 +144,7 @@ Office 365 の監督ポリシーでは、指定されたレビュー担当者に
 | **偽装式** | 意味または発音が別のより不快な用語と同じ式。 |
 
 #### <a name="conditional-settings"></a>条件付き設定
+<a name="ConditionalSettings"> </a>
 
 ポリシーに対して選択した条件は、組織内の電子メールおよびサードパーティのソース (Facebook または DropBox など) からの通信に適用されます。
 
