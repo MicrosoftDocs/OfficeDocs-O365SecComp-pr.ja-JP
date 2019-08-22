@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Exact Data Match に基づく分類を使って、カスタムの機密情報の種類を作成します。
-ms.openlocfilehash: a937d5ccc947ee9322c5796cf49e9a8ff3eead16
-ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
+ms.openlocfilehash: 3c2b7cbabc77328f7d907927008e93606d40eded
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36407909"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478196"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -338,7 +338,7 @@ New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
 
 `EdmUploadAgent.exe /GetDataStore`
 
-データストアのリストが表示されます。最終更新時には、次のようになります。
+データ ストアのリストと、それらが最後に更新された日時が表示されます。
 
  [機密情報データベースを更新する](#refreshing-your-sensitive-information-database)ためのプロセスとスケジュールのセットアップを進めます。
 

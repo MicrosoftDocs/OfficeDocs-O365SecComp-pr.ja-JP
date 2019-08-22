@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: セキュリティ/コンプライアンス センターの DLP について、カスタムの機密情報の種類を作成してインポートする方法について説明します。
-ms.openlocfilehash: f038a37d2f049b49710c7f50e030bfe189be82b6
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: baf715b6bb3a09495d6b5efa47eee6ea0ec3160a
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230931"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478236"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する
 
@@ -34,8 +34,7 @@ Office 365 のデータ損失防止 (DLP) には、DLP ポリシーですぐに�
 > より単純なカスタムの機密情報の種類をセキュリティ/コンプライアンス センターの UI で作成することもできます。詳細については、「[カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)」を参照してください。
 
 ## <a name="important-disclaimer"></a>重要な免責事項
-
-お客様の環境やコンテンツ マッチの要件はさまざまに異なるため、Microsoft サポートは、カスタム分類や正規表現 (別名: RegEx) パターンを定義するなど、カスタムのコンテンツ マッチング定義を提供することの支援は行えません。カスタムのコンテンツ マッチングの開発、テスト、デバッグについては、Office 365 のお客様は、内部の IT リソースを利用するか、Microsoft コンサルティング サービス (MCS) などの外部のコンサルティング リソースを利用する必要があります。サポート エンジニアは、機能の制限付きサポートを提供することはできますが、カスタムのコンテンツ マッチング開発がお客様の要件や義務を満たすことの保証はできません。提供できるサポートの種類の例として、テスト目的の正規表現パターンのサンプルが挙げられます。また、サポートは、特定の単一コンテンツにおいて期待通りに動作していない既存の RegEx パターンのトラブルシューティングを支援できます。
+<!-- this is worded much better than the previous one is --> お客様の環境やコンテンツ マッチの要件はさまざまに異なるため、Microsoft サポートは、カスタム分類や正規表現 (別名: RegEx) パターンを定義するなど、カスタムのコンテンツ マッチング定義を提供することの支援は行えません。カスタムのコンテンツ マッチングの開発、テスト、デバッグについては、Office 365 のお客様は、内部の IT リソースを利用するか、Microsoft コンサルティング サービス (MCS) などの外部のコンサルティング リソースを利用する必要があります。サポート エンジニアは、機能の制限付きサポートを提供することはできますが、カスタムのコンテンツ マッチング開発がお客様の要件や義務を満たすことの保証はできません。提供できるサポートの種類の例として、テスト目的の正規表現パターンのサンプルが挙げられます。また、サポートは、特定の単一コンテンツにおいて期待通りに動作していない既存の RegEx パターンのトラブルシューティングを支援できます。
 
  テキストを処理するために使用されている Boost.RegEx (以前の RegEx++) エンジンの詳細については、「[Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)」を参照してください。
     
@@ -43,7 +42,7 @@ Office 365 のデータ損失防止 (DLP) には、DLP ポリシーですぐに�
 
 このトピックで作成するルール パッケージのサンプル XML を示します。要素と属性については、以降のセクションで説明します。
   
-```
+```xml
 <?xml version="1.0" encoding="UTF-16"?>
 <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
 <RulePack id="DAD86A92-AB18-43BB-AB35-96F7C594ADAA">
@@ -129,9 +128,7 @@ Office 365 のデータ損失防止 (DLP) には、DLP ポリシーですぐに�
 
 作業を開始する前に、ルールの XML スキーマの基本構造と、その構造を使用してカスタムの機密情報の種類を定義し、適切なコンテンツを特定できるようにする方法を理解しておくことをお勧めします。
   
-1 つのルールによって 1 つまたは複数のエンティティ (機密情報の種類) が定義され、各エンティティによって 1 つまたは複数のパターンが定義されています。パターンとは、メールやドキュメントなどのコンテンツを評価するときに DLP が検索する内容です。
-  
-(用語に関する注意: DLP ポリシーを使い慣れている方は、複数の条件とアクションから構成される 1 つまたは複数のルールが 1 つのポリシーに含まれていることをご存知でしょう。しかしながら、このトピックでは、XML マークアップが、エンティティ (機密情報の種類とも呼びます) を定義するパターンとして、ルールを使用しています。そのため、このトピックに出てくる "ルール" は、条件やアクションではなく、エンティティまたは機密情報の種類と考えてください)。
+1 つのルールによって 1 つまたは複数のエンティティ (機密情報の種類) が定義され、各エンティティによって 1 つまたは複数のパターンが定義されています。パターンとは、メールやドキュメントなどのコンテンツを評価するときに DLP が検索する内容です。  <!-- ok then this is going to be really confusing since the terminology changes.... --> (用語に関する注意: DLP ポリシーを使い慣れている方は、複数の条件とアクションから構成される 1 つまたは複数のルールが 1 つのポリシーに含まれていることをご存知でしょう。しかしながら、このトピックでは、XML マークアップが、エンティティ (機密情報の種類とも呼びます) を定義するパターンとして、ルールを使用しています。そのため、このトピックに出てくる "ルール" は、条件やアクションではなく、エンティティまたは機密情報の種類と考えてください)。
   
 ### <a name="simplest-scenario-entity-with-one-pattern"></a>最もシンプルなシナリオ: パターンが 1 つのエンティティ
 
@@ -160,8 +157,7 @@ Office 365 のデータ損失防止 (DLP) には、DLP ポリシーですぐに�
 エンティティは、明確に定義されたパターンを持つ、クレジットカード番号などの機密情報の種類です。各エンティティは、ID として一意の GUID を持っています。
   
 ### <a name="name-the-entity-and-generate-its-guid"></a>エンティティに名前を付けて GUID を生成する
-
-Rules および Entity 要素を追加します。次に、カスタムのエンティティ名 (この例では Employee ID) を含むコメントを追加します。後で、ローカライズされた文字列セクションにこのエンティティ名を追加します。この名前は、DLP ポリシーを作成するときに UI に表示されます。
+<!-- why isn't the following in procedure format? --> Rules および Entity 要素を追加します。次に、カスタムのエンティティ名 (この例では Employee ID) を含むコメントを追加します。後で、ローカライズされた文字列セクションにこのエンティティ名を追加します。この名前は、DLP ポリシーを作成するときに UI に表示されます。
   
 次に、エンティティの GUID を生成します。GUID を生成するにはいくつかの方法がありますが、PowerShell で [guid]::NewGuid() と入力することで簡単に生成できます。このエンティティ GUID も、ローカライズされた文字列セクションに後で追加します。
   
@@ -321,7 +317,7 @@ Rules 要素には、LocalizedStrings 要素を含める必要があります。
   
 Version 要素も重要です。ルール パッケージを初めてアップロードすると、Office 365 はバージョン番号を記録します。後でルール パッケージを更新して新しいバージョンをアップロードする場合は、バージョン番号を必ず更新してください。更新しないと、Office 365 で新しいルール パッケージが展開されません。
   
-```
+```xml
 <?xml version="1.0" encoding="utf-16"?>
 <RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
   <RulePack id=". . .">
@@ -363,13 +359,13 @@ Version 要素も重要です。ルール パッケージを初めてアップ�
     
 3. 次の構文を使用してください。
 
-    ```
+    ```powershell
     New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "PathToUnicodeXMLFile" -Encoding Byte)
     ```
 
     この例では、MyNewRulePack.xml という名前の Unicode XML ファイルを C:\My Documents からアップロードします。
 
-    ```
+    ```powershell
     New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\My Documents\MyNewRulePack.xml" -Encoding Byte)
     ```
 
@@ -393,7 +389,7 @@ Version 要素も重要です。ルール パッケージを初めてアップ�
 
   - \<Name\> を機密情報の種類の名前値 (たとえば、従業員 ID) に置き換えて、[Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) コマンドレットを実行します。
 
-    ```
+    ```powershell
     Get-DlpSensitiveInformationType -Identity "<Name>"
     ```
     
@@ -557,7 +553,7 @@ Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Pat
 
 このマークアップをコピーし、XSD ファイルとして保存して、ルール パッケージの XML ファイルの検証に使用できます。
   
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:mce="http://schemas.microsoft.com/office/2011/mce"
            targetNamespace="http://schemas.microsoft.com/office/2011/mce" 

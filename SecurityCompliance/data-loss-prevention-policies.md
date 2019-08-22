@@ -15,15 +15,15 @@ ms.collection:
 search.appverid:
 - MET150
 description: セキュリティ &amp; コンプライアンス センターのデータ損失防止 (DLP) ポリシーでは、Office 365 全体の機密情報を識別、監視、または自動的に保護できます。
-ms.openlocfilehash: 9209adfa913b753ccbb665959cd165d3f2362d0a
-ms.sourcegitcommit: 19939bc577937ff5e423500e9bedc0c29f729e20
+ms.openlocfilehash: 3b108e292e7c7942e471d345b11124beac52f369
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36393917"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478246"
 ---
 # <a name="overview-of-data-loss-prevention"></a>データ損失防止の概要
-
+<!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 > [!NOTE]
 > 最近、Office 365 Advanced Compliance のライセンスを取得しているユーザー向けに、データ損失防止機能が Microsoft Teams のチャットとチャネルのメッセージに追加されました。これはスタンドアロンのオプションとして提供されており、Office 365 E5 および Microsoft 365 E5 コンプライアンスに含まれています。 ライセンス要件の詳細については、「[Microsoft 365 テナントレベル サービスのライセンスに関するガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)」を参照してください。
 
@@ -314,6 +314,7 @@ DLP ポリシーを作成して有効にすると、次の問題が発生する�
 ## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>DLP ポリシーでラベルを条件として使用する
 
 ラベルを作成すると、次のことを実行できます。
+<!-- what kind of label? -->
   
 - エンド ユーザーがラベルを確認したりコンテンツに手動で適用したりできるように、ラベルを**発行**します。 
     
@@ -450,12 +451,14 @@ DLP は、(単純なテキスト スキャンだけでなく) 詳細なコンテ
 - Microsoft Teams チャネルおよびチャット メッセージ
     
 ポリシーが適切な場所に同期されると、コンテンツの評価とアクションの適用が開始されます。
+<!-- what is the time delay for first deployment of a policy and what is the sync schedule? -->
   
 ### <a name="policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites"></a>OneDrive for Business サイトと SharePoint Online サイトのポリシー評価
 
 すべての SharePoint Online サイトと OneDrive for Business サイトで、ドキュメントは常に変化し、作成、編集、共有などが継続的に行われています。 つまり、ドキュメントはいつでも競合したり、DLP ポリシーに準拠するようになる可能性があります。 たとえば、あるユーザーがチーム サイトに機密情報を含まないドキュメントをアップロードし、後で別のユーザーが同じドキュメントを編集して機密情報を追加する、といったことが発生します。
   
 このため、DLP ポリシーはバックグラウンドで頻繁にポリシーとの一致がドキュメントにあるかどうかを調べています。 これは非同期的なポリシーの評価と考えることができます。
+<!-- what is the frequency? looks like it is tied to the search crawl schedule -->
   
 #### <a name="how-it-works"></a>メカニズム
  
@@ -463,7 +466,7 @@ DLP は、(単純なテキスト スキャンだけでなく) 詳細なコンテ
   
 ![DLP ポリシーが非同期にコンテンツを評価する方法を示す図](media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
   
-最後に、ドキュメントが DLP ポリシーに矛盾し、その後 DLP ポリシーに準拠するようになることがあります。たとえば、ユーザーがドキュメントにクレジット カード番号を追加する場合、DLP ポリシーによってドキュメントへのアクセスが自動的にブロックされる可能性があります。しかしユーザーが後で機密情報を削除すると、次にドキュメントが対象ポリシーに対して再び評価されるときに、アクション (この例ではブロック) が自動的に取り消されます。
+<!-- conflict with a DLP policy is bad wording --> 最後に、ドキュメントが DLP ポリシーに矛盾し、その後 DLP ポリシーに準拠するようになることがあります。たとえば、ユーザーがドキュメントにクレジット カード番号を追加する場合、DLP ポリシーによってドキュメントへのアクセスが自動的にブロックされる可能性があります。しかしユーザーが後で機密情報を削除すると、次にドキュメントが対象ポリシーに対して再び評価されるときに、アクション (この例ではブロック) が自動的に取り消されます。
   
 DLP は、インデックスを作成できるすべてのコンテンツを評価します。 既定でクロールされるファイルの種類の詳細については、「[SharePoint Server での既定のクロール対象ファイルのファイル名拡張子および解析対象ファイルの種類](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)」を参照してください。
   
@@ -475,12 +478,14 @@ Exchange online を場所として含む DLP ポリシーを作成すると、�
   
 ### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Office デスクトップ プログラムにおけるポリシー評価
 
+<!-- same capability to identify sensitive information line conflates sensitive information types and such -->
 Excel、PowerPoint、Word には、機密情報を識別して DLP ポリシーを適用するための、SharePoint Online と OneDrive for Business と同じ機能が含まれています。 これらの Office プログラムは、集中管理ポリシー ストアから直接 DLP ポリシーを同期し、DLP ポリシーに含まれるサイトから開かれたドキュメントをユーザーが扱うときに、DLP ポリシーに対してコンテンツを継続的に評価します。
   
 Office における DLP ポリシーの評価は、プログラムのパフォーマンス、またはコンテンツを扱っているユーザーの生産性に影響を与えることがないように設計されています。 大規模なドキュメントを扱う場合、またはユーザーのコンピューターがビジー状態にある場合、ポリシー ヒントが表示されるまでに数秒かかることがあります。
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Microsoft Teams でのポリシーの評価
- 
+ <!--what do you mean that it's synched to user accounts?  I thought DLP policies were applied to locations not users like sensitivity labels are  -->
+
 Microsoft teams を場所として含む DLP ポリシーを作成すると、Office 365 セキュリティ &amp; コンプライアンス センターからユーザー アカウントと Microsoft Teams のチャネルおよびチャット メッセージにポリシーが同期されます。 DLP ポリシーの構成方法によっては、ユーザーが Microsoft Teams のチャットやチャネル メッセージで機密情報を共有しようとしたときに、そのメッセージをブロックまたは取り消すことができます。 また、機密情報が含まれていて、ゲスト (外部ユーザー) と共有されているドキュメントは、このユーザー対しては開きません。 詳細については、「[データ損失防止と Microsoft Teams](dlp-microsoft-teams.md)」を参照してください。
  
 ## <a name="permissions"></a>アクセス許可
