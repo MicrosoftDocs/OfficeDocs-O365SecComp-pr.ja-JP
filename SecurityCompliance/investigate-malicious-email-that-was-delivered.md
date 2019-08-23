@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 脅威の調査と応答機能を使用して、悪意のある電子メールを検索して調査する方法について説明します。
-ms.openlocfilehash: 2049b3b8e0d7b9173639af3c48f75a072744fb7f
-ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
+ms.openlocfilehash: 25eb1f4a13ad698d7b6817ea7917ccabea7210ae
+ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36444873"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36566225"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Office 365 で配信された悪意のある電子メールを検索して調査する
 
@@ -88,6 +88,9 @@ ms.locfileid: "36444873"
 > ' Preview ' は役割であり、set-rolegroup ではなく、その役割が後で Set-rolegroup に追加される必要があることに注意してください。
 
 ![ページ上のダウンロードおよびプレビューリンクを含む脅威エクスプローラのポップアップ。](media/ThreatExplorerDownloadandPreview.PNG)
+
+> [!IMPORTANT]
+> この機能は、ユーザーのメールボックスに存在しないメールには表示されません。これは、電子メールがドロップされた場合や配信が失敗した場合に発生する可能性があります。 電子メールがユーザーのメールボックスから削除された場合、管理者には「メールが見つかりません」という言及のエラーが表示されます。
 
 ### <a name="check-the-delivery-action-and-location"></a>配信アクションと場所を確認する
 

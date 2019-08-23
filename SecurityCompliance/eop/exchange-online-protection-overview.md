@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: マイクロソフト Exchange Online Protection (EOP) は、クラウドベースの電子メール フィルタリング サービスであり、スパムやマルウェアから組織を保護するのに役立ち、メッセージング ポリシー違反から組織を保護する機能が含まれています。
-ms.openlocfilehash: 652932403a4a63b280437a609e4bec46da39387e
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 4035a676bf815642735699a106e6430cf8245a05
+ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599703"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36566201"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection の概要
 
@@ -34,8 +34,8 @@ ms.locfileid: "35599703"
 ## <a name="how-eop-works"></a>EOP の仕組み
 
 EOP の仕組みを理解すると、受信メールの処理方法がわかりやすくなります。
-  
-![EOP-電子メール処理](../media/EOP-email-processing.png)
+
+![EOP の電子メールプロセス。](../media/GitHubBugs/emailprocessingineop.png)
   
 受信メッセージは、最初は、送信者の評価をチェックし、マルウェアのメッセージを検査することによって、接続フィルターによって渡されます。 スパムの大部分は、この時点で停止し、EOP によって削除されます。 メッセージはポリシーのフィルター処理によって続行されます。これにより、テンプレートから作成または適用するカスタムメールフロールール (トランスポートルールとも呼ばれる) に対してメッセージが評価されます。 たとえば、特定の送信者からのメールが到着すると、管理者に通知を送信するルールを作成できます。 (この機能を使用している場合は、この時点でデータ損失防止チェックも行われます。機能の可用性の詳細については、「 [Exchange Online Protection サービスの説明](https://go.microsoft.com/fwlink/p/?LinkId=320619)」を参照してください)。次に、メッセージはコンテンツフィルターを通過し、スパムに共通の用語やプロパティがないかどうかが確認されます。 コンテンツフィルターによってスパムと判断されたメッセージは、設定に基づいて、ユーザーの迷惑メールフォルダーまたは検疫に送信できます。 このような保護層をすべて正常に通過すると、メッセージは受信者に配信されます。
   
