@@ -294,6 +294,11 @@
         "source_path": "SecurityCompliance/get-started-with-ti.md",
         "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/office-365-ti",
         "redirect_document_id": true
-    }                                              
+    },
+    {
+        "source_path": "securitycompliance/compliance20/created-tag-group-placeholder.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/created-tag-group-placeholder",
+        "redirect_document_id": false
+    }                                             
   ] 
 }
