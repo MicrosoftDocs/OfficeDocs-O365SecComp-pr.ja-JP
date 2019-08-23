@@ -206,8 +206,6 @@
 #### [ブロックする URL のカスタム リストを設定する](set-up-a-custom-blocked-urls-list-wtih-atp.md)
 ### 役割管理者のセットアップ タスク
 #### [SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする](turn-on-atp-for-spo-odb-and-teams.md)
-#### [SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)
-## セキュリティの管理 - ATP のセットアップ後
 ## [脅威の分析によって最新の攻撃行動を理解する](latest-attack-campaigns.md)
 ## [Microsoft 365 で探す](hunting.md)
 ## [ATP レポートを表示して閲覧する](view-reports-for-atp.md)
@@ -218,17 +216,18 @@
 ## [配信された悪意のあるメールの検索と調査](investigate-malicious-email-that-was-delivered.md)
 ## [脅威エクスプローラー (およびリアルタイムの検出)](threat-explorer.md)
 ### [脅威エクスプローラーのビュー](threat-explorer-views.md)
+### [Outlook.com および Outlook on the web での不審なメッセージを特定する](unverified-sender-feature.md)
 ## セキュリティを強化する統合
 ### [Office 365 の ATP と Microsoft Defender ATP の統合](integrate-office-365-ti-with-wdatp.md)
 ### [SIEM と Office 365 の ATP の統合](siem-integration-with-office-365-ti.md)
 ## ATP のしくみ
 ### [ATP の安全なリンク機能のしくみ](how-atp-safe-links-works.md)
 ### [ATP の安全な添付ファイル機能のしくみ](how-atp-safe-attachments-works.md)
-#### [動的配信と詳細のプレビュー](dynamic-delivery-and-previewing.md)
-### [脅威の調査および対応のしくみ](get-started-with-ti.md)
-#### [脅威の調査および対応について](office-365-ti.md)
+### [動的配信と詳細のプレビュー](dynamic-delivery-and-previewing.md)
+### [SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)
+### [脅威の調査および対応のしくみ](office-365-ti.md)
 ### [自動調査および対応のしくみ](automated-investigation-response-office.md)
-### [Outlook.com および Outlook on the web での不審なメッセージを特定する](unverified-sender-feature.md)
+
 
 # セキュリティ インシデントの管理
 ## [Office 365 セキュリティ インシデント対応](office365-security-incident-response-overview.md)
