@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: メール ユーザーの定義は、Exchange Online Protection (EOP) サービスを管理する上で重要な部分です。
-ms.openlocfilehash: 6d982b635513050d931397bbc517ae3d76ee3752
-ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
+ms.openlocfilehash: 69ed6460966a399ac5b1e3cf71bd985917bec82c
+ms.sourcegitcommit: f57d411e06c955d648dfa1a2a473aa45416e1377
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054729"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "36620491"
 ---
 # <a name="manage-mail-users-in-eop"></a>EOP でメール ユーザーを管理する
 
@@ -53,20 +53,20 @@ ms.locfileid: "36054729"
   
 「[ディレクトリ同期を準備する](https://go.microsoft.com/fwlink/p/?LinkId=308908)」で説明されている手順に従って、必要な許可を取得し、ディレクトリ同期を準備します。
   
-### <a name="to-synchronize-user-directories"></a>ユーザー ディレクトリを同期するには
+### <a name="to-synchronize-user-directories-with-azure-active-directory-connect-aad-connect"></a>ユーザーディレクトリを Azure Active Directory Connect (AAD Connect) と同期するには
 
-1. 「[ディレクトリ同期をアクティブにする](https://go.microsoft.com/fwlink/p/?LinkId=308909)」で説明されている手順に従って、ディレクトリ同期をアクティブにします。
-    
-2. 「[ディレクトリ同期用コンピューターをセットアップする](http://go.microsoft.com/fwlink/p/?LinkId=308911)」で説明されている手順に従って、ディレクトリ同期コンピュータをセットアップします。
-    
-3. 「[構成ウィザードを使ってディレクトリを同期する](http://go.microsoft.com/fwlink/?LinkId=308912)」で説明されている手順に従って、ディレクトリを同期します。
-    
-    > [!IMPORTANT]
-    > Azure Active Directory 同期ツール構成ウィザードを終了すると、Active Directory フォレストに **MSOL_AD_SYNC** アカウントが作成されます。このアカウントは、社内 Active Directory 情報の読み取りと同期に使われます。ディレクトリ同期が正しく行われるように、ローカル ディレクトリ同期サーバー上の TCP 443 が開いていることを確認してください。 
-  
-  4. 「[ディレクトリ同期を管理する](http://go.microsoft.com/fwlink/p/?LinkId=308915)」で説明されている手順に従って、ディレクトリ同期を管理します。
-    
-  5. EOP が正しく同期されていることを確認します。EAC で、 **[受信者]** \> **[連絡先]** に移動し、ユーザーの一覧が社内環境から同期されていることを確認します。 
+Azure Active Directory (AAD) にユーザーを同期するには、「 [active directory 同期をアクティブ](https://go.microsoft.com/fwlink/p/?LinkId=308909)化する」の説明に従って、**ディレクトリ同期をアクティブ化**する必要があります。
+
+次に、AAD Connect を実行するためのオンプレミスのコンピューターのインストールと構成を行います (時間の前に確認する必要があるものがまだない場合)。 以下の記事では、ad を使用して、オンプレミスのアカウントを AAD Connect を使用して Azure AD に同期する方法について説明します。
+
+[AAD Connect を設定する (エクスプレス方式)](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-express)
+
+この作業を行う前に、[前提条件を満たしている]https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-prerequisites() を確認し、[インストールの種類を選択して](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-select-installation)ください。 上記のリンクは、高速インストールの簡単な記事に記載されています。 [カスタムインストール](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-custom)の記事や、必要に応じ[て認証をパススルー](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta-quick-start)することもできます。
+
+> [!IMPORTANT]
+> Azure Active Directory 同期ツール構成ウィザードを終了すると、Active Directory フォレストに **MSOL_AD_SYNC** アカウントが作成されます。 このアカウントは、社内 Active Directory 情報の読み取りと同期に使われます。 ディレクトリ同期が正しく動作するためには、ローカルディレクトリ同期サーバー上の TCP 443 が開いていることを確認してください。 
+
+同期を構成した後、EOP が正しく同期されていることを確認してください。 EAC で、 **[受信者]** \> **[連絡先]** に移動し、ユーザーの一覧が社内環境から同期されていることを確認します。
     
 ## <a name="use-the-eac-to-manage-mail-users"></a>EAC を使用してメール ユーザーを管理する
 

@@ -16,12 +16,12 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: 管理者がユーザーの通知を有効にした場合、スパム、大量、またはフィッシングメッセージとして識別されたメールボックスに送信されたメッセージを一覧表示する通知メッセージを受け取ります。 通知された後にメッセージを解放または報告することができます。
-ms.openlocfilehash: 887dab0df489e6f71266a6fdabfdd04f26a14ded
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 499af3ae2934eed19e421918af07a45b72fe2518
+ms.sourcegitcommit: f57d411e06c955d648dfa1a2a473aa45416e1377
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598443"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "36620481"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Office 365 でユーザーのスパム通知を使って検疫済みメッセージを解放して報告する
 
@@ -52,7 +52,7 @@ ms.locfileid: "35598443"
 
 - メッセージがスパムではなく、メールボックスにメッセージを送信して分析のために Microsoft に報告する場合は **& レポートをリリース**します。
 
-- Office 365 で、受信拒否リストに送信者を追加する場合は、[**ブロック**] を選択します。
+- [**送信者をブロック**する] Office 365 で、受信拒否リストに送信者を追加する場合。
 
 以下の点にご注意ください。
   
