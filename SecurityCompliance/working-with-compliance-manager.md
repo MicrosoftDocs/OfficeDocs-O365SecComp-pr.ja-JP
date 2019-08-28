@@ -1,7 +1,7 @@
 ---
 title: Microsoft コンプライアンスマネージャー (プレビュー) を使用する
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーは、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用すると、Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証することができます。
-ms.openlocfilehash: 6a6cc7cc51b911feddf21cfc107bc5c85bb959ba
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 07aee08c8929443b8b4f4805d22a94b0ad9db27a
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157869"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643309"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Microsoft コンプライアンスマネージャー (プレビュー) を使用する
 

@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理者は、セキュリティ & コンプライアンスセンターのメッセージ追跡を使用して、メッセージに何が起こったかを確認できます。
-ms.openlocfilehash: af3739174203d7c8d81086a5bf7d036bc2bdd76f
-ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
+ms.openlocfilehash: 3c5efb1d832a52c6b6b5eb9cfb81ece216c64513
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36048219"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643259"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメッセージ追跡
 
@@ -25,7 +25,7 @@ ms.locfileid: "36048219"
 セキュリティ & コンプライアンスセンターのメッセージ追跡は、Exchange 管理センター (EAC) で使用可能だったメッセージ追跡によって改善されています。 メッセージ追跡からの情報を使用して、メッセージに何が起こったか、メールフローの問題のトラブルシューティング、およびポリシーの変更の検証について、ユーザーからの質問に効率よく回答することができます。
 
 > [!NOTE]
-> 返されるメッセージの量の制限は5万です。 コンソールで非常に大きなクエリを実行している場合、Start-historicalsearch コマンドレットレポートメッセージ数が24万を超えています。
+>  メッセージ数は 50 000 で停止し、レポートはコンソールではこの値までしか反映されません。 PowerShell コマンドレット Start-historicalsearch コマンドレットは、true メッセージ数を表示します。
 
 ## <a name="open-message-trace"></a>メッセージ追跡を開く
 
@@ -320,7 +320,7 @@ ms.locfileid: "36048219"
 
 - **custom_data**: 特定のイベントの種類に関連するデータが含まれています。 詳細については、以下のセクションを参照してください。
 
-#### <a name="customdata-values"></a>custom_data の値
+#### <a name="custom_data-values"></a>custom_data の値
 
 イベントの custom_data フィールドは、メッセージ処理の詳細をログに記録するために、Exchange Online のさまざまなエージェントによって使用されます。 **** `AGENTINFO` 次のセクションでは、いくつかの興味深いエージェントについて説明します。
 

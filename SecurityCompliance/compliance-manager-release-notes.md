@@ -1,7 +1,7 @@
 ---
 title: Microsoft コンプライアンスマネージャーリリースノート
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーは、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用すると、Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証することができます。
-ms.openlocfilehash: f01e70b7852e6421c7c77dbe5ed4b6ca2aa395b2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 196118972079f83ba2f6a59ce1ae1514d9616599
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152069"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643239"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>コンプライアンスマネージャーのリリースノート (プレビュー)
 

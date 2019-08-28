@@ -1,9 +1,9 @@
 ---
-title: 接続フィルター ポリシーを構成する
+title: 接続フィルターポリシー、許可一覧、禁止一覧を構成する
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 10/24/2018
+ms.date: 8/27/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,18 +14,25 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: 信頼できるユーザーからの電子メールがブロックされないようにするには、接続フィルターポリシーを使用して、信頼する IP アドレスの許可リスト (安全な差出人のリストとも呼ばれます) を作成します。 受信拒否リストを作成することもできます。
-ms.openlocfilehash: 8589f7d714199414e7c5177ff227859da50e3e06
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: a3d9703bc90c0bc1000c2aa755451ffc2cb7d060
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600093"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643219"
 ---
 # <a name="configure-the-connection-filter-policy"></a>接続フィルター ポリシーを設定する
  
 ほとんどの人は友人やビジネス パートナーを信頼しています。信頼する人からの電子メールが迷惑メール フォルダーに入っていたり、スパム フィルターによって完全にブロックされたりすると、もどかしさを感じます。そのようなメールがブロックされないようにするには、接続フィルター ポリシーを利用して許可リスト (「差出人セーフ リスト」ともいう) を作成し、信頼する IP アドレスを登録することができます。また、受信拒否リストを作成して既知のスパム メール送信者の IP アドレスを登録し、そのような送信者からの電子メール メッセージを受信しないようにすることもできます。
   
+- *[許可リスト](create-safe-sender-lists-in-office-365.md)* について検討する場合、接続フィルターポリシーは、フィルターによって許可されている*信頼さ*れたアカウントに特に注意してください。 これは、必要な情報を保持しながら、信頼できるまたは信頼されていないメールをより正確にフィルター処理することが重要になります。 接続フィルターポリシーの許可リストは、アカウントおよび Ip の大規模なプールから少数の信頼された Ip にフィルターを適用し、信頼できるメールボックスへのアクセスを容易にすることを目的としています。
+
+- 接続フィルターポリシーブロックリストを作成する場合は、代わりに、フィルターでの信頼できないアカウントをキャッチすることを考えることができます。
+
  組織全体に適用されるスパム設定の詳細については、「 [EOP と Office 365 でメールが迷惑メールとして検出されないようにする](https://go.microsoft.com/fwlink/p/?LinkId=534224)」または「[Office 365 のスパム フィルターでスパムや迷惑メールをブロックして、検出漏れ問題を防止する](https://go.microsoft.com/fwlink/p/?LinkId=534225)」を参照してください。これらは、管理者レベルの制御権限を持っている場合にスパムの誤検知や検出漏れを防ぐ上で役立ちます。
+
+> [!TIP]
+> [許可-(または安全な送信者)](create-safe-sender-lists-in-office-365.md)と[ブロックリスト](create-block-sender-lists-in-office-365.md)を作成する方法については、一時停止および読み取りを行う必要があります。
   
 次のビデオでは、接続フィルター ポリシーの構成手順を示します。
   

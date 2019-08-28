@@ -1,5 +1,5 @@
 ---
-title: Office 365、TIMailData-Inline、Security インシデント、インシデント、ATP Powershell、電子メールマルウェア、侵害されたユーザー、電子メールのマルウェア、電子メールのヘッダー、読み取りヘッダー、開封済みメールのヘッダーを検索して調査します。
+title: Office 365 で配信された悪意のある電子メールを検索して調査する
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: 脅威の調査と応答機能を使用して、悪意のある電子メールを検索して調査する方法について説明します。
-ms.openlocfilehash: 25eb1f4a13ad698d7b6817ea7917ccabea7210ae
-ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
+ms.openlocfilehash: fba73e49192b4880ec2990ec17c81f646b51264b
+ms.sourcegitcommit: 43c609653ac6ade486a2c5c2650cac02aa7d3b4a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36566225"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36645333"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Office 365 で配信された悪意のある電子メールを検索して調査する
 
