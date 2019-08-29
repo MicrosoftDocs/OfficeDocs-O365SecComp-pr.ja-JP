@@ -235,50 +235,6 @@
 ## [Office 365 で Outlook のルールとカスタム フォーム インジェクション攻撃の検出と修復を行う](detect-and-remediate-outlook-rules-forms-attack.md)
 ## [侵害された Office 365 電子メール アカウントへの対応](responding-to-a-compromised-email-account.md)
 
-# データ ガバナンスを管理する
-## [データをインポートする](importing-pst-files-to-office-365.md)
-### [ネットワーク アップロードを使用して PST ファイルをインポートする](use-network-upload-to-import-pst-files.md)
-### [ドライブ送付を使用して PST ファイルをインポートする](use-drive-shipping-to-import-pst-files-to-office-365.md)
-### [PST コレクション ツールを使用して、PST ファイルの検索、コピー、および を削除をする](find-copy-and-delete-pst-files-in-your-organization.md)
-### [PST ファイルをインポートするときに、データをフィルター処理する](filter-data-when-importing-pst-files.md)
-### [ネットワーク アップロードを使用して、RMS で暗号化された PST ファイルをインポートする](use-network-upload-to-import-rms-encrypted-pst-files.md)
-### [PST ファイルのインポートに関する FAQ](faqimporting-pst-files-to-office-365.md)
-### [Office 365 でサードパーティのデータをアーカイブする](archiving-third-party-data.md)
-#### [サンプルコネクタを使用して Facebook のデータをアーカイブする](archive-facebook-data-with-sample-connector.md)
-#### [サンプル コネクタを使用して Twitter のデータをアーカイブする](archive-twitter-data-with-sample-connector.md)
-#### [コネクタをセットアップして LinkedIn データをアーカイブする](archive-linkedin-data.md)
-#### [コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする](archive-instant-bloomberg-data.md)
-#### [パートナーと共同作業でサードパーティーのデータをアーカイブする](work-with-partner-to-archive-third-party-data.md)
-## データを格納する
-### [アーカイブ メールボックスの有効化](enable-archive-mailboxes.md)
-### [無制限アーカイブの概要](unlimited-archiving.md)
-### [無制限アーカイブを有効化する](enable-unlimited-archiving.md)
-### [メールボックスのアーカイブと削除ポリシーを設定する](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
-## データを保持する
-### [保持ポリシー](retention-policies.md)
-### [ファイル計画マネージャー](file-plan-manager.md)
-### [保持ラベル](labels.md)
-### [SEC Rule 17a-4 に準拠する ](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [PowerShell を使用して保持ラベルを作成および発行する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-### [イベント ベースの保持](event-driven-retention.md)
-### [イベント ベースの保持を自動化する](automate-event-driven-retention.md)
-## [データを破棄する](disposition-reviews.md)
-## 通信を監督する
-### [監督ポリシー](supervision-policies.md)
-### [組織用に監督ポリシーを構成する](configure-supervision-policies.md)
-## [非アクティブなメールボックスを管理する](inactive-mailboxes-in-office-365.md)
-### [非アクティブなメールボックスを作成および管理する](create-and-manage-inactive-mailboxes.md)
-### [非アクティブなメールボックスの保持期間を変更する](change-the-hold-duration-for-an-inactive-mailbox.md)
-### [非アクティブなメールボックスを回復する](recover-an-inactive-mailbox.md)
-### [非アクティブなメールボックスを復元する](restore-an-inactive-mailbox.md)
-### [非アクティブなメールボックスを削除する](delete-an-inactive-mailbox.md)
-## データ ガバナンスをモニターする
-### [ドキュメントのラベルのアクティビティを表示する](view-label-activity-for-documents.md)
-### [ラベル分析によるラベル使用状況の表示](label-analytics.md)
-### [データ ガバナンスのレポートを表示する](view-the-data-governance-reports.md)
-## データ ガバナンスの詳細情報
-### [Microsoft Data Governance チームによるビデオを見る](https://go.microsoft.com/fwlink/?linkid=867039)
-
 # [コンテンツを検索する](search-for-content.md)
 ## [コンテンツ検索を使う](content-search.md)
 ### [コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)
@@ -441,7 +397,6 @@
 ### [Bccと拡張配布グループの受信者を保持する](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 
 # [データ調査を管理します](datainvestigations/overview-data-investigations.md)
-## [リリース ノート](datainvestigations/data-investigations-release-notes.md)
 ## [データ流出インシデントを管理します](datainvestigations/manage-data-spillage-incidents.md)
 ## [新しい調査を作成します](datainvestigations/create-new-investigation.md)
 ## [データ調査のアクセス許可を割り当てる](datainvestigations/permissions.md)
@@ -456,6 +411,7 @@
 ### [ドキュメントに注釈づけや墨消しをおこないます](datainvestigations/annotate-and-redact-documents.md)
 ### [Office 365由来でないデータをロードします](datainvestigations/load-non-office365-data.md)
 ### [データ処理中のエラー修復](datainvestigations/error-remediation.md)
+### [アイテムを元の場所から削除する](datainvestigations/delete-items-from-original-locations.md)
 
 ## [アナリティクスを使って、調査をより速く行います](datainvestigations/run-analytics-to-investigate-faster.md)
 ### [電子メールのスレッド化](datainvestigations/email-threading.md)
@@ -477,6 +433,7 @@
 ### [調査を完了するか削除します](datainvestigations/close-or-delete-investigation.md)
 
 ## データ調査の参考資料
+### [リリース ノート](datainvestigations/data-investigations-release-notes.md)
 ### [データ調査のリミット](datainvestigations/limits-datainvestigations.md)
 ### [サポートされているファイルの種類](datainvestigations/supported-filetypes-datainvestigations.md)
 ### [ドキュメントのメタデータ フィールド](datainvestigations/document-metadata-fields.md)
