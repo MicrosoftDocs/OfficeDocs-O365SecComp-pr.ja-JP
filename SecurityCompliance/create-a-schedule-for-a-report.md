@@ -3,7 +3,7 @@ title: セキュリティ&amp; /コンプライアンスセンターでレポー
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/1/2018
+ms.date: 08/28/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを設定する方法について説明します。
-ms.openlocfilehash: cd7856a55f6d3442d96941012d5d06bf93c3d9d7
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 41831116d98ef7ea430387f1402f572ab6b35443
+ms.sourcegitcommit: 73f1db241c0686020167d43442e7b07a2199ea3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077603"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36658089"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを作成する
 
@@ -33,11 +33,29 @@ ms.locfileid: "34077603"
   
 1. [セキュリティ&amp; /コンプライアンスセンター](https://protection.office.com)で、[**レポート** \> **ダッシュボード**] に移動します。
     
-2. レポートを選択します。 この例では、[脅威保護の状態レポート] を選択します。
+2. 次のいずれかのレポートを選択します。 
+
+    - DLP ポリシーの一致
+    - Exchange トランスポートルール
+    - DLP 誤検知とオーバーライド
+    - Office 365 ATP ファイルの種類
+    - Office 365 ATP メッセージディスポジション
+    - 電子メールで検出されたマルウェア
+    - 上位マルウェア
+    - 上位送信者および受信者
+    - スプーフィングの検出
+    - スパム検出
+    - 送信および受信した電子メール
+    - DLP インシデント
+    - 暗号化レポート
+
+    この例では、高度な脅威保護のファイルの種類のレポートを選択します。
     
-3. レポートの左上隅で、[ **+ スケジュールの作成**] を選択します。
+3. レポートの左上隅で、[ **+ スケジュールの作成**] を選択します。 
     
-    ![セキュリティ&amp; /コンプライアンスセンターでレポートのスケジュールを作成できます。](media/2311327c-14f6-4a17-b604-0c9ff2d485d1.png)
+    ![スケジュールを作成する](media/atpfiletypes-createschedule.png)
+
+    (メモ: [**スケジュールの作成**] ボタンがすべてのレポートに含まれているわけではありません)。
   
     [**スケジュールの作成**] ダイアログボックスが表示されます。 
     

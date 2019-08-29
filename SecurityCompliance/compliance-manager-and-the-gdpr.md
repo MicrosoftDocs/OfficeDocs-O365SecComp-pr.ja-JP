@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーは、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールです。 コンプライアンスマネージャーを使用すると、Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを追跡、割り当て、検証することができます。
-ms.openlocfilehash: af0efa2711215946930c091fc7c38cc1b9f575fd
-ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
+ms.openlocfilehash: e41b28972dc2ada5c0591de0e73c04ea3306e039
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35786652"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649962"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Microsoft コンプライアンスマネージャーと GDPR
 
@@ -40,7 +40,7 @@ ms.locfileid: "35786652"
 
 2. ユーザー名が正しく入力されたら、[**検索**] を選択します。
 
-3. ユーザーアカウントが返されない場合は、[ユーザーが見つかりません] がページに表示されます。 ユーザーの電子メールアドレス情報を確認し、必要に応じて修正してください。 再試行するには、[**検索**] を選択します。
+3. ユーザーアカウントが返されない場合は、ページに "**ユーザーが見つかりません**" と表示されます。 ユーザーの電子メールアドレス情報を確認し、必要に応じて修正してください。 再試行するには、[**検索**] を選択します。
 
 4. ユーザーアカウントが返されると、ボタンのテキストは [**検索**] から [**クリア**] に変わります。 これは、返されるユーザーアカウントが追加機能の操作コンテキストであり、これらの関数がこのユーザーアカウントに適用されることを示します。
 

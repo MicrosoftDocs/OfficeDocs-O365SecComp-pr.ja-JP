@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
-description: メールボックス監査ログは、Microsoft 365 では既定で有効になっています (既定では、既定のメールボックスの監査またはメールボックスの監査とも呼ばれます)。 これは、メールボックスの所有者、代理人、および管理者によって実行される特定のアクションがメールボックス監査ログに自動的に記録されることを意味します。このログでは、メールボックスに対して実行されたアクティビティを検索できます。
-ms.openlocfilehash: 7b50885379b7843ea1c602f08dc2976d5007d8ca
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+description: メールボックス監査ログは、既定では Office 365 で有効になっています (既定では、既定のメールボックスの監査またはメールボックスの監査とも呼ばれます)。 これは、メールボックスの所有者、代理人、および管理者によって実行される特定のアクションがメールボックス監査ログに自動的に記録されることを意味します。このログでは、メールボックスに対して実行されたアクティビティを検索できます。
+ms.openlocfilehash: 049b9fe79ae3389e09fb07017fd2deb810640f35
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599923"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649912"
 ---
 # <a name="manage-mailbox-auditing"></a>メールボックスの監査を管理する
 
-2019年1月以降、microsoft は、すべての Microsoft 365 組織に対してメールボックス監査ログを既定で有効にしています。 これは、メールボックスの所有者、代理人、および管理者によって実行される特定のアクションが自動的にログに記録されることを意味します。メールボックス監査ログで検索すると、対応するメールボックス監査レコードが使用できるようになります。 既定でメールボックス監査を有効にする前に、組織内のすべてのユーザーメールボックスに対して手動で有効にする必要がありました。
+2019年1月以降、Microsoft は、すべての Office 365 組織に対してメールボックス監査ログを既定で有効にしています。 これは、メールボックスの所有者、代理人、および管理者によって実行される特定のアクションが自動的にログに記録されることを意味します。メールボックス監査ログで検索すると、対応するメールボックス監査レコードが使用できるようになります。 既定でメールボックス監査を有効にする前に、組織内のすべてのユーザーメールボックスに対して手動で有効にする必要がありました。
 
 既定では、メールボックスの監査の利点は次のとおりです。
 
@@ -36,8 +36,8 @@ ms.locfileid: "35599923"
 
 - 組織全体で一貫したメールボックスの監査ポリシーを使用している (すべてのメールボックスに対して同じアクションを監査しているため)。
 
-> [!TIP]
-> 既定では、メールボックス監査のリリースに関して次の重要な点を覚えておく必要があります。メールボックスの監査を管理するために何もする必要はありません。 ただし、詳細については、このトピックで説明されているように、既定の設定からメールボックスの監査をカスタマイズするか、または完全に無効にすることをお勧めします。
+> [!NOTE]
+>•既定でのメールボックス監査のリリースに関する重要な点は、次のとおりです。メールボックスの監査を管理するために何もする必要はありません。 ただし、詳細については、このトピックで説明されているように、既定の設定からメールボックスの監査をカスタマイズするか、または完全に無効にすることをお勧めします。 <br><br>•既定でメールボックスの監査が有効になっている場合でも、一部のユーザーのメールボックス監査イベントが、セキュリティ & コンプライアンスセンターまたは Office 365 Management Activity API を介して監査ログの検索に含まれていないことがあります。 詳細については、このトピックの「[詳細情報](#more-information)」を参照してください。
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>既定で [メールボックスの監査を有効にする] がオンになっていることを確認する
 
@@ -334,7 +334,23 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 ## <a name="more-information"></a>詳細情報
 
-- 既定では、メールボックス監査ログレコードは、削除されるまでは90日間保持されます。 監査ログレコードの有効期限を変更するには、Exchange Online PowerShell の**メールボックスの設定**コマンドレットで、 *auditlogagelimit*パラメーターを使用します。 ただし、この値を大きくしても、Microsoft 365 監査ログでは90日より前のイベントを検索することはできません。
+- E5 ライセンスまたはメールボックスを管理者によって手動で有効にしたメールボックスを持つユーザーのみが、セキュリティ & コンプライアンスセンターまたは Office 365 Management Activity API を介して監査ログの検索でメールボックス監査ログイベントを返します。
+
+  E5 ライセンスを持たないユーザーのメールボックス監査ログエントリを取得するには、次のことを行います。
+
+  - Exchange Online PowerShell で次のコマンドレットを使用します。
+
+    - [「Search-mailboxauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog)を使用して、特定のユーザーのメールボックス監査ログを検索します。
+
+    - [「New-mailboxauditlogsearch」](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-mailboxauditlogsearch)を使用して、特定のユーザーのメールボックス監査ログを検索し、結果を指定された受信者に電子メール経由で送信します。
+
+  - Exchange Online の Exchange 管理センター (EAC) を使用して、次の操作を行います。
+
+    - [メールボックス監査ログのエクスポート](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
+
+    - [所有者以外のメールボックス アクセスのレポートの実行](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
+
+- 既定では、メールボックス監査ログレコードは、削除されるまでは90日間保持されます。 監査ログレコードの有効期限を変更するには、Exchange Online PowerShell の**メールボックスの設定**コマンドレットで、 *auditlogagelimit*パラメーターを使用します。 ただし、この値を大きくしても、Office 365 監査ログで90日より前のイベントを検索することはできません。
 
   保存期間を延長した場合は、Exchange Online PowerShell で[「search-mailboxauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog)コマンドレットを使用して、ユーザーのメールボックス監査ログで90日より前のレコードを検索する必要があります。
 
@@ -361,6 +377,6 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
       Get-MailboxFolderStatistics -Identity <MailboxIdentity> -FolderScope RecoverableItems | Where-Object {$_.Name -eq 'Audits'} | Format-List FolderPath,FolderSize,ItemsInFolder
       ```
 
-    - [回復可能なアイテム] フォルダー内の監査ログレコードに直接アクセスすることはできません。代わりに、 **「search-mailboxauditlog**コマンドレットを使用するか、Microsoft 365 監査ログを検索して、メールボックス監査レコードを検索して表示します。
+    - [回復可能なアイテム] フォルダー内の監査ログレコードに直接アクセスすることはできません。代わりに、 **「search-mailboxauditlog**コマンドレットを使用するか、Office 365 監査ログを検索して、メールボックス監査レコードを検索して表示します。
 
 - メールボックスが保留になっている場合、またはコンプライアンスセンターでアイテム保持ポリシーに割り当てられている場合、メールボックスの*Auditlogagelimit*プロパティによって定義されている期間 (既定では90日間) の監査ログレコードが引き続き保持されます。 保留中のメールボックスの監査ログレコードを長期間保持するには、メールボックスの*Auditlogagelimit*の値を増やす必要があります。
