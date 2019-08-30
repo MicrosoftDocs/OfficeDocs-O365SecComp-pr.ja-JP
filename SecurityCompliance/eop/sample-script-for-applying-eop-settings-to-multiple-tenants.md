@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 description: 以下のサンプル スクリプトにより、複数のテナント (会社) を管理する Microsoft Exchange Online Protection (EOP) 管理者は、Windows PowerShell を使用して構成設定をテナントに適用できます。
-ms.openlocfilehash: f064a44722d165711543e5a15ec6a19d70af4b25
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 7ef2ea5b93835a37683f73fa43549af4bab5d47e
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154559"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676637"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>EOP 設定を複数のテナントに適用するスクリプトのサンプル
 
@@ -24,34 +24,34 @@ ms.locfileid: "34154559"
 ### <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>複数のテナントでスクリプトまたはコマンドレットを実行するには
 
 1. Excel などのアプリケーションを使用して, .csv ファイル (c:\scripts\inputfile.csv など) を作成します。
-    
-1. .csv ファイルで、次の 2 つの列名を指定します。「UserName」および「Cmdlet」。
-    
-2. .csv ファイルの各行で、テナントの管理者名を UserName 列に追加し、そのテナントのために実行するコマンドレットを Cmdlet 列に追加します。例えば、admin@contoso.com と Get-AcceptedDomain を使用します。
-    
-2. [RunCmdletOnMultipleTenants.ps1](sample-script-for-applying-eop-settings-to-multiple-tenants.md#RunCmdletOnMultipleTenants.ps1) スクリプトをメモ帳などのエディターにコピーしてから, .psl ファイルを容易に見つけられる場所 (c:\scripts など) にファイルを保存します。 
-    
-3. 次の構文を使用して、スクリプトを実行します。
-    ```Powershell
-     & "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"
-    ```
-    
-    次に例を示します。 
-    
-    ```Powershell
-    & "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
-    ```
 
-4. 各テナントへのログオンが行われて、コマンドレットが実行されます。
-    
+2. .csv ファイルで、次の 2 つの列名を指定します。「UserName」および「Cmdlet」。
+
+3. .csv ファイルの各行で、テナントの管理者名を UserName 列に追加し、そのテナントのために実行するコマンドレットを Cmdlet 列に追加します。例えば、admin@contoso.com と Get-AcceptedDomain を使用します。
+
+4. [RunCmdletOnMultipleTenants.ps1](sample-script-for-applying-eop-settings-to-multiple-tenants.md#RunCmdletOnMultipleTenants.ps1) スクリプトをメモ帳などのエディターにコピーしてから, .psl ファイルを容易に見つけられる場所 (c:\scripts など) にファイルを保存します。
+
+5. 次の構文を使用して、スクリプトを実行します。
+
+   ```Powershell
+   & "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"
+   ```
+
+   次に例を示します。
+
+   ```Powershell
+   & "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
+   ```
+
+6. 各テナントへのログオンが行われて、コマンドレットが実行されます。
+
 ## <a name="runcmdletonmultipletenantsps1"></a>Runコマンドレット。 ps1
-<a name="RunCmdletOnMultipleTenants.ps1"> </a>
 
 ```Powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.
 # Usage: RunCmdletOnMultipleTenants.ps1 inputfile.csv
 #  
-# .csv input file sample: 
+# .csv input file sample:
 # UserName,Cmdlet
 # admin@contoso.com,Get-AcceptedDomain | ft Name
 # URI for connecting to remote Windows PowerShell
@@ -75,9 +75,6 @@ Import-PSSession $Session
 # In this example, the cmdlet in the .csv file runs.
 Invoke-Expression $Cmdlet
 # End the current PowerShell session.
-remove-pssession -session $Session
+Remove-PsSession -Session $Session
 }
-
 ```
-
-

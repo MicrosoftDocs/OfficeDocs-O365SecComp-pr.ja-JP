@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Exchange Online Protection (EOP) のベスト プラクティス推奨に従って正しく設定し、一般的な構成エラーを防止してください。
-ms.openlocfilehash: 991059b6823059b0e5eae784e21bfc0128cbd2d1
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 95eb1848b3004c2a19084f1dba1b26eaaa39da58
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599813"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676837"
 ---
 # <a name="best-practices-for-configuring-eop"></a>EOP を設定するための最良の実施
   
@@ -35,12 +35,12 @@ EOP をセットアップすると、DNS レコードに EOP 用の SPF (Sender 
   
 ## <a name="set-anti-spam-options"></a>スパム対策オプションを設定する
 
-Ip 許可一覧と ip 禁止一覧に IP アドレスを追加し、[**セーフリストを有効に**する] オプションを選択することによって、接続フィルター設定を整理します。受信する誤検知 (良好なメールとして分類されるメール) の数を減らす必要があります。 詳細につい[ては、「Configure the connection filter policy」を](../configure-the-connection-filter-policy.md)参照してください。 組織全体に適用されるスパム設定の詳細については、「 [EOP と Office 365 でメールが迷惑メールとして検出されないようにする](https://go.microsoft.com/fwlink/p/?LinkId=534224)」または「[Office 365 のスパム フィルターでスパムや迷惑メールをブロックして、検出漏れ問題を防止する](https://go.microsoft.com/fwlink/p/?LinkId=534225)」を参照してください。 これらは、管理者レベルの制御権限を持っている場合にスパムの誤検知や検出漏れを防ぐ上で役立ちます。
+Ip 許可一覧と ip 禁止一覧に IP アドレスを追加し、[**セーフリストを有効に**する] オプションを選択することによって、接続フィルター設定を整理します。受信する誤検知 (良好なメールとして分類されるメール) の数を減らす必要があります。 詳細につい[ては、「Configure the connection filter policy」を](../configure-the-connection-filter-policy.md)参照してください。 組織全体に適用されるスパム設定については、「 [office 365 で実際の電子メールがスパムとしてマークされないようにする方法](../prevent-email-from-being-marked-as-spam.md)」または「 [office 365 でスパムメールを減らす方法](../reduce-spam-email.md)」を参照してください。 これらのトピックは、管理者レベルの制御があり、誤検知や誤検知が行われないようにする場合に役立ちます。
   
 コンテンツフィルターを管理するには、既定の設定を確認し、必要に応じて変更します。 たとえば、スパム検出メッセージに対して行われる処理を変更することができます。 スパムフィルター処理に積極的なアプローチを使用する場合は、高度なスパムフィルターオプションを構成できます。 これらのオプションは、運用環境に実装する前にまずテストすることをお勧めします (オンにすることにより)。フィッシングを懸念している組織では、 **SPF レコード: hard fail**オプションをオンにすることをお勧めします。 詳細につい[ては、「スパムフィルターポリシーの構成](../configure-your-spam-filter-policies.md)」および[「Advanced spam filtering options](../advanced-spam-filtering-asf-options.md)」を参照してください。
   
 > [!IMPORTANT]
-> 既定のコンテンツフィルター操作を使用している場合は、[**迷惑メール] フォルダーにメッセージを移動**して、このアクションがオンプレミスのメールボックスで機能するようにするには、オンプレミスの Exchange メールフロールール (トランスポートルールとも呼ばれます) を構成する必要があります。EOP によって追加されたスパムヘッダーを検出するサーバー。 詳細については、「[スパムが各ユーザーの [迷惑メール] フォルダーにルーティングされるようにする](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。 
+> 既定のコンテンツフィルター操作を使用している場合は、[**迷惑メール] フォルダーにメッセージを移動**して、このアクションがオンプレミスのメールボックスで機能するようにするには、オンプレミスの Exchange 上でメールフロールール (トランスポートルールとも呼ばれる) を構成する必要があります。EOP によって追加されたスパムヘッダーを検出するサーバー。 詳細については、「[スパムが各ユーザーの [迷惑メール] フォルダーにルーティングされるようにする](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。
   
 送信メールが配信されるようにするために、「送信のベストプラクティス」セクションを含む[スパム対策保護](../anti-spam-protection-faq.md)に関する FAQ を確認することをお勧めします。
   
@@ -52,36 +52,36 @@ Exchange 管理センター(EAC) でマルウェアのフィルター設定を�
   
 マルウェアを含む実行可能ファイルを懸念している場合は、実行可能なコンテンツを含むすべての電子メール添付ファイルをブロックする Exchange メール フロー ルールを作成できます。 「[メールフロールールを使用して Exchange online のメッセージの添付ファイルを検査する](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)」に記載されているファイルの種類をブロックするには、「 [exchange online Protection でのファイル添付ブロックを介してマルウェアの脅威を軽減する](https://support.microsoft.com/kb/2959596)」の手順に従います。
   
-EAC の一般的な添付ファイルの種類フィルターを使用できます。 **[保護]** \> **[マルウェア フィルター]** と選択します。 実行可能なコンテンツを含むすべての電子メール添付ファイルをブロックするメールフロールールを作成できます。 
+EAC の一般的な添付ファイルの種類フィルターを使用できます。 [**保護** \> **マルウェアフィルター**] を選択します。 実行可能なコンテンツを含むすべての電子メール添付ファイルをブロックするメールフロールールを作成できます。
   
-保護を強化するために、メール フロー ルールを使用して、以下の拡張子のすべてまたは一部をブロックすることもお勧めします。ade、adp、ani、bas、bat、chm、cmd、com、cpl、crt、hlp、ht、hta、inf、ins、isp、job、js、jse、lnk、mda、mdb、mde、mdz、msc、msi、msp、mst、pcd、reg、scr、sct、shs、url、vb、vbe、vbs、wsc、wsf、wsh。これは、 **[任意の添付ファイルの拡張子に次の単語が含まれる場合]** の条件を使用して行うことができます。 
+保護を強化するために、メール フロー ルールを使用して、以下の拡張子のすべてまたは一部をブロックすることもお勧めします。ade、adp、ani、bas、bat、chm、cmd、com、cpl、crt、hlp、ht、hta、inf、ins、isp、job、js、jse、lnk、mda、mdb、mde、mdz、msc、msi、msp、mst、pcd、reg、scr、sct、shs、url、vb、vbe、vbs、wsc、wsf、wsh。これは、 **[任意の添付ファイルの拡張子に次の単語が含まれる場合]** の条件を使用して行うことができます。
   
 管理者およびエンド ユーザーは、分析のためにそのファイルを Microsoft に送信することによって、フィルターを通過したマルウェアやマルウェアとして誤判定されたと思われるファイルを報告できます。詳細については、「[Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md)」を参照してください。
   
 ## <a name="create-mail-flow-rules"></a>メール フロー ルールを作成する
 
-ビジネスニーズを満たすように、メールフロールール (トランスポートルールとも呼ばれる) またはカスタムフィルターを作成します。
+ビジネスニーズに合わせてメールフロールールまたはカスタムフィルターを作成します。
   
 新しいルールを運用環境に展開するときは、最初にテスト モードの 1 つを選択してルールの効果を確認します。ルールが意図したとおりに機能したら、ルールのモードを **[強制]** に変更します。
   
-新しいルールを展開した場合は、適用中のルールを監視するために **[インシデント レポートの生成]** の追加を検討してください。 
+新しいルールを展開した場合は、適用中のルールを監視するために **[インシデント レポートの生成]** の追加を検討してください。
   
-ハイブリッド展開構成で、組織の構成がオンプレミスと Office 365 の場合は、組織全体に適用するルールを作成できます。 これを行うには、オンプレミスと Office 365 の両方で使用できる条件を使用します。 ほとんどの条件は両方の展開で使用可能ですが、特定の展開シナリオに固有の条件もいくつかあります。 詳細について[は、「メールフロールール (トランスポートルール) (Exchange Online)」を](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)参照してください。
+ハイブリッド展開構成で、組織の構成がオンプレミスと Office 365 の場合は、組織全体に適用するルールを作成できます。 これを行うには、オンプレミスと Office 365 の両方で使用できる条件を使用します。 ほとんどの条件は両方の展開で使用可能ですが、特定の展開シナリオに固有の条件もいくつかあります。 詳細について[は、「メールフロールール (トランスポートルール) (Exchange Online)」を](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)参照してください。
   
-組織内で送信中のメッセージのメール添付ファイルを検査する場合には、メール フロー ルールを設定します。その後、添付ファイルの内容や特性に基づいて検査されたメッセージに対してアクションを実行できます。詳細については、「[Use mail flow rules to inspect message attachments](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)」を参照してください。
+組織内で送信中のメッセージのメール添付ファイルを検査する場合には、メール フロー ルールを設定します。 その後、添付ファイルの内容や特性に基づいて検査されたメッセージに対してアクションを実行できます。 詳細について[は、「メールフロールールを使用して Exchange Online でメッセージの添付ファイルを検査する」を](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)参照してください。
   
 ### <a name="phishing-and-spoofing-prevention"></a>フィッシングとスプーフィングの防止
 
 電子メールで個人情報が組織から外部に出ていくときに、それを検出することで、フィッシング詐欺対策保護を強化できます。たとえば、次の正規表現をメール フロー ルールで使用すると、個人の金融データやプライバシーを侵害する可能性のある情報の伝送を検出できます。
   
-- \d\d\d\d\s\d\d\d\d\s\d\d\d\d\s\d\d\d\d (MasterCard Visa)
-    
-- \d\d\d\d\s\d\d\d\d\d\d\s\d\d\d\d\d (American Express)
-    
-- \d\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d (任意の 16 桁の数字)
-    
-- \d\d\d\-\d\d\-\d\d\d\d (社会保障番号)
-    
+- `\d\d\d\d\s\d\d\d\d\s\d\d\d\d\s\d\d\d\d`(MasterCard または Visa)
+
+- `\d\d\d\d\s\d\d\d\d\d\d\s\d\d\d\d\d`(アメリカンエクスプレス)
+
+- `\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d\d`(任意の16桁の数字)
+
+- `\d\d\d\-\d\d\-\d\d\d\d`(ソーシャルセキュリティ番号)
+
 組織的なスパムやフィッシング詐欺行為による被害は、ユーザー自身のドメインから送信されたように見せかけた悪意のある電子メールの受信をブロックすることによっても減らせます。たとえば、ユーザーの会社のドメインから同じ会社のドメインに送信されたメッセージを拒否するメール フロー ルールを作成して、この種の送信者偽装をブロックできます。
   
 > [!CAUTION]
@@ -95,7 +95,7 @@ EAC の一般的な添付ファイルの種類フィルターを使用できま�
   
 ## <a name="reporting-and-troubleshooting"></a>レポートとトラブルシューティング
 
-管理センターのレポートを使用して、一般的な問題と傾向をトラブルシューティングします。 メッセージについて単一の固有なデータを探すには、メッセージ トレース ツールを使用します。 レポートの詳細については、「[Exchange Online Protection でのレポート作成とメッセージ追跡](reporting-and-message-trace-in-exchange-online-protection.md)」を参照してください。 メッセージ トレース ツールの詳細については、「[Trace an Email Message](http://technet.microsoft.com/library/0c83cde6-5b09-4106-8587-c200cdc59094.aspx)」を参照してください。
+管理センターのレポートを使用して、一般的な問題と傾向をトラブルシューティングします。 メッセージについて単一の固有なデータを探すには、メッセージ トレース ツールを使用します。 レポートの詳細については、「[Exchange Online Protection でのレポート作成とメッセージ追跡](reporting-and-message-trace-in-exchange-online-protection.md)」を参照してください。 メッセージ トレース ツールの詳細については、「[Trace an Email Message](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/trace-an-email-message)」を参照してください。
   
 ## <a name="for-more-information"></a>関連情報
 
@@ -103,8 +103,6 @@ EAC の一般的な添付ファイルの種類フィルターを使用できま�
   
 [EOP のヘルプとサポート](help-and-support-for-eop.md)
   
-[メッセージがスパムとしてマークされないようにする方法](https://go.microsoft.com/fwlink/p/?LinkId=534224)
+[Office 365 で、メールが迷惑メールとしてマークされるのを防ぐ方法](../prevent-email-from-being-marked-as-spam.md)
   
-[検出漏れの問題を防止するために Office 365 スパム フィルターを使用して迷惑メールをブロックする](https://go.microsoft.com/fwlink/p/?LinkId=534225)
-  
-
+[Office 365 で迷惑メールを減らす方法](../reduce-spam-email.md)
