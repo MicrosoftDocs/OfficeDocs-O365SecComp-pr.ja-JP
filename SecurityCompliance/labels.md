@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Office 365 の保持ラベルは、適切なコンテンツで適切な操作を実行するために役立ちます。保持ラベルを使用すると、ガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制できます。保持ラベルは、Office 365 全体のレコード管理の実装に使用することもできます。
-ms.openlocfilehash: b3637470e0de1413589fc8e1ba35dc48e6823c4b
-ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
+ms.openlocfilehash: e4028fa9526afbb33cb184adb7b3cd301feae837
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "35772164"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676657"
 ---
 # <a name="overview-of-retention-labels"></a>保持ラベルの概要
 
@@ -163,7 +163,7 @@ Exchange パブリック フォルダーと Skype ではラベルはサポート
   
 - 保持期間の終了時に廃棄レビューをトリガーし、SharePoint と OneDrive のドキュメントを確認してから削除するようにできます。詳細については、「[廃棄レビューの概要](disposition-reviews.md)」をご参照ください。
     
-- コンテンツの作成日または最終変更日時ではなく、コンテンツがラベル付けされた時点から保持期間を開始できます。
+- コンテンツの作成日または最終変更日時ではなく、コンテンツがラベル付けされた時点から保持期間を開始できます。 このオプションは、SharePoint サイトおよび OneDrive アカウントのコンテンツにのみ適用されますのでご注意ください。 Exchange メールの場合、オプションのどれを選んだかを問わず、保持期間は常にメッセージが送受信された日付に基づきます。
     
 ![ラベル固有のオプションによる保持設定](media/c49118c9-6279-4661-94db-deffa76e27ac.png)
   

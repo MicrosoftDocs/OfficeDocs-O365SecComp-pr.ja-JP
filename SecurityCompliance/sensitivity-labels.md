@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを使用すると、機密コンテンツの分類が可能になり、機密コンテンツの保護に役立ちます。このラベルを使用することで、共同作業の生産性や機能性が低下することはありません。機密ラベルは、ラベル付けされたコンテンツに暗号化や透かしなどの保護設定を強制適用するために使用できます。
-ms.openlocfilehash: 5e6ece4358362a3b32ad3b8b0b30f923e6d872cb
-ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
+ms.openlocfilehash: 7ec9b2d171e4ddbe8a923161e503bb813dfc6813
+ms.sourcegitcommit: d55dab629ce1f8431b8370afde4131498dfc7471
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840889"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36675458"
 ---
 # <a name="overview-of-sensitivity-labels"></a>機密ラベルの概要
 
@@ -237,7 +237,7 @@ Azure Information Protection のラベルを使用している場合、現時点
 機密ラベルで WIP が使用できるようにするには、まず、「[Windows 情報保護で機密ラベル付きのファイルを保護する方法](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)」で説明する前提条件を満たしておく必要があります。このトピックには、次の前提条件についての説明があります。
 
 - Windows 10 バージョン 1809 以降を実行していることを確認する。
-- 「[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) のセットアップ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-started)」では、ラベルのコンテンツをスキャンして、対応する WIP 保護を適用します。 ATP では、異常の報告など、WIP と独立した複数の操作が実行されます。
+- 「[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) のセットアップ](https://docs.microsoft.com/windows/security/threat-protection/)」では、ラベルのコンテンツをスキャンして、対応する WIP 保護を適用します。 ATP では、異常の報告など、WIP と独立した複数の操作が実行されます。
 - エンドポイント デバイスに適用する Windows 情報保護 (WIP) ポリシーを作成する。次のいずれかの方法で作成することができます。
     - [Microsoft Intune の Azure portal を使用して MDM で Windows 情報保護 (WIP) ポリシーを作成する](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
     - [System Center Configuration Manager を使用した Windows 情報保護 (WIP) ポリシーの作成と展開](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
