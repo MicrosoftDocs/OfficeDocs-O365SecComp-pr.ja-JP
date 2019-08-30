@@ -9,26 +9,22 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
-description: Microsoft Exchange Online Protection (EOP) の監査レポートは、組織の規制、コンプライアンス、および訴訟に関する要件を満たすために役立ちます。いつでも監査レポートを取得して、EOP 構成に加えられた変更を確認できます。これらのレポートの構成に関する問題のトラブルシューティングを行うか、セキュリティ関連やコンプライアンス関連の問題の原因を見つけることができます。
-ms.openlocfilehash: 59b5bea248772caf1f72f2b03ae4f25c03187bab
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 管理者は、Exchange Online Protection (EOP) で使用可能な管理者監査レポートについて学ぶことができます。
+ms.openlocfilehash: fd103b89bc7a0d7f1d90ec605952c9d74a7c18bb
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153216"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676847"
 ---
-# <a name="auditing-reports-in-eop"></a><span data-ttu-id="0248a-105">EOP の監査レポート</span><span class="sxs-lookup"><span data-stu-id="0248a-105">Auditing reports in EOP</span></span>
+# <a name="auditing-reports-in-eop"></a><span data-ttu-id="04d2e-103">EOP の監査レポート</span><span class="sxs-lookup"><span data-stu-id="04d2e-103">Auditing reports in EOP</span></span>
 
-<span data-ttu-id="0248a-p102">Microsoft Exchange Online Protection (EOP) の監査レポートは、組織の規制、コンプライアンス、および訴訟に関する要件を満たすために役立ちます。いつでも監査レポートを取得して、EOP 構成に加えられた変更を確認できます。これらのレポートの構成に関する問題のトラブルシューティングを行うか、セキュリティ関連やコンプライアンス関連の問題の原因を見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="0248a-p102">Auditing reports in Microsoft Exchange Online Protection (EOP) can help you meet regulatory, compliance, and litigation requirements for your organization. You can obtain auditing reports at any time to determine the changes that have been made to your EOP configuration. These reports can help you troubleshoot configuration issues or find the cause of security-related or compliance-related problems.</span></span>
+<span data-ttu-id="04d2e-104">Exchange Online Protection (EOP) の監査レポートは、組織の規制、コンプライアンス、および訴訟の要件を満たすのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="04d2e-104">Auditing reports in Exchange Online Protection (EOP) can help you meet regulatory, compliance, and litigation requirements for your organization.</span></span> <span data-ttu-id="04d2e-105">いつでも監査レポートを取得して、EOP 構成に加えられた変更を確認できます。</span><span class="sxs-lookup"><span data-stu-id="04d2e-105">You can obtain auditing reports at any time to determine the changes that have been made to your EOP configuration.</span></span> <span data-ttu-id="04d2e-106">これらのレポートの構成に関する問題のトラブルシューティングを行うか、セキュリティ関連やコンプライアンス関連の問題の原因を見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="04d2e-106">These reports can help you troubleshoot configuration issues or find the cause of security-related or compliance-related problems.</span></span>
   
-<span data-ttu-id="0248a-p103">このトピックの Exchange Online または Exchange Server 2013 バージョンを探している場合は、「[Auditing Reports](http://technet.microsoft.com/library/2b3e1529-1677-4564-be0b-ce22757ddc0d.aspx)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0248a-p103">Looking for the Exchange Online or Exchange Server 2013 version of this topic? See [Auditing Reports](http://technet.microsoft.com/library/2b3e1529-1677-4564-be0b-ce22757ddc0d.aspx).</span></span>
-  
-## <a name="auditing-reports-in-eop"></a><span data-ttu-id="0248a-111">EOP の監査レポート</span><span class="sxs-lookup"><span data-stu-id="0248a-111">Auditing reports in EOP</span></span>
+## <a name="auditing-reports-in-eop"></a><span data-ttu-id="04d2e-107">EOP の監査レポート</span><span class="sxs-lookup"><span data-stu-id="04d2e-107">Auditing reports in EOP</span></span>
 
-<span data-ttu-id="0248a-112">EOP には、使用可能な 2 つの監査レポートがあります。</span><span class="sxs-lookup"><span data-stu-id="0248a-112">There are two auditing reports available in EOP:</span></span>
+<span data-ttu-id="04d2e-108">EOP には、使用可能な 2 つの監査レポートがあります。</span><span class="sxs-lookup"><span data-stu-id="04d2e-108">There are two auditing reports available in EOP:</span></span>
   
-1. <span data-ttu-id="0248a-113">**管理者役割グループ レポート** 管理者役割グループ レポートにより、いつユーザーが管理者役割グループのメンバーシップに追加または削除されたかを調べることができます。</span><span class="sxs-lookup"><span data-stu-id="0248a-113">**Administrator role group report** The administrator role group report lets you view when a user is added to or removed from membership in an administrator role group.</span></span> <span data-ttu-id="0248a-114">このレポートを使用して、組織内のユーザーに割り当てられた管理アクセス許可の変更を監視できます。</span><span class="sxs-lookup"><span data-stu-id="0248a-114">You can use this report to monitor changes to the administrative permissions assigned to users in your organization.</span></span> <span data-ttu-id="0248a-115">詳細については、「 [EOP で管理者の役割グループレポートを実行する](run-an-administrator-role-group-report-in-eop-eop.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0248a-115">For more information, see [Run an administrator role group report in EOP ](run-an-administrator-role-group-report-in-eop-eop.md).</span></span>
-    
-2. <span data-ttu-id="0248a-p105">**管理者監査ログ** 管理者監査ログは、Exchange 管理シェル コマンドレットに基づいて、管理者または管理者特権が割り当てられているユーザーによって実行されたすべての操作を記録します。詳細については、「 [View the Administrator Audit Log](http://technet.microsoft.com/library/5c62072a-556d-4fea-9973-d668c6b9fd57.aspx)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0248a-p105">**Administrator audit log** The administrator audit log records any action, based on an Exchange Management Shell cmdlet, performed by administrators or users who have been assigned administrative privileges. For more information, see [View the Administrator Audit Log](http://technet.microsoft.com/library/5c62072a-556d-4fea-9973-d668c6b9fd57.aspx).</span></span>
-    
+1. <span data-ttu-id="04d2e-109">**管理者の役割グループレポート**: 管理者の役割グループレポートでは、管理者の役割グループのメンバーシップに対してユーザーが追加または削除されたときに表示することができます。</span><span class="sxs-lookup"><span data-stu-id="04d2e-109">**Administrator role group report**: The administrator role group report lets you view when a user is added to or removed from membership in an administrator role group.</span></span> <span data-ttu-id="04d2e-110">このレポートを使用して、組織内のユーザーに割り当てられた管理アクセス許可の変更を監視できます。</span><span class="sxs-lookup"><span data-stu-id="04d2e-110">You can use this report to monitor changes to the administrative permissions assigned to users in your organization.</span></span> <span data-ttu-id="04d2e-111">詳細については、「 [EOP で管理者の役割グループレポートを実行する](run-an-administrator-role-group-report-in-eop-eop.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="04d2e-111">For more information, see [Run an administrator role group report in EOP](run-an-administrator-role-group-report-in-eop-eop.md).</span></span>
 
+2. <span data-ttu-id="04d2e-112">**管理者監査ログ**: 管理者監査ログは、管理者または管理者特権を持つユーザーによって、(Exchange Online PowerShell コマンドレットに基づく) すべてのアクションを記録します。</span><span class="sxs-lookup"><span data-stu-id="04d2e-112">**Administrator audit log**: The administrator audit log records any action (based on Exchange Online PowerShell cmdlets) by an admin or a user with administrative privileges.</span></span> <span data-ttu-id="04d2e-113">詳細については、「 [View the Administrator Audit Log](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="04d2e-113">For more information, see [View the Administrator Audit Log](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).</span></span>
