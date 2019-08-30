@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: コンプライアンスの境界を使用して、電子情報開示マネージャーが検索できるユーザーコンテンツの場所を制御する、Office 365 組織内の論理的な境界を作成します。 コンプライアンス境界では、検索アクセス許可フィルター (コンプライアンスセキュリティフィルターとも呼ばれます) を使用して、特定のユーザーが検索できるメールボックス、SharePoint サイト、および OneDrive アカウントを制御します。
-ms.openlocfilehash: 44c157b8f155755c6a48830231074643a830f498
-ms.sourcegitcommit: 226adb6d05015da16138b315dd2f5b937bf4354d
+ms.openlocfilehash: abca7624cb5aa97c85686fc570a653c88b6b8b6b
+ms.sourcegitcommit: d55dab629ce1f8431b8370afde4131498dfc7471
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36302426"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36675448"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Office 365 での電子情報開示調査のためにコンプライアンスの境界を設定する
 
@@ -233,7 +233,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
 - **Region**パラメーターは、Exchange メールボックスの検索を制御しません。 メールボックスを検索すると、すべてのデータセンターが検索されます。 検索アクセス許可フィルターを作成または変更するときに、検索できる Exchange メールボックスの範囲を制限するには、 **Filters**パラメーターを使用します。 
     
-- 電子情報開示管理者が複数の SharePoint 地域を検索する必要がある場合は、その電子情報開示マネージャーに対して別のユーザーアカウントを作成する必要があります。これを検索権限フィルターで使用して、SharePoint の代替地域を指定する必要があります。サイトまたは OneDrive アカウントが配置されている。
+- 電子情報開示マネージャーが複数の SharePoint 地域を検索する必要がある場合は、SharePoint サイトの場所を指定するために、検索アクセス許可フィルターで使用できる別のユーザーアカウントを作成する必要があります。OneDrive アカウントが配置されています。 この設定の詳細については、「 [Office 365 のコンテンツ検索](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment)」の「SharePoint の複数地域環境でコンテンツを検索する」を参照してください。
     
 - SharePoint および OneDrive でコンテンツを検索する場合、 **Region**パラメーターは、電子情報開示マネージャーが電子情報開示の調査を行うメインまたはサテライトの場所を検索します。 電子情報開示マネージャーが、検索アクセス許可フィルターで指定されている地域外の SharePoint および OneDrive サイトを検索すると、検索結果は返されません。 
     
