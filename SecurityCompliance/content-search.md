@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Office 365 または Microsoft 365 のコンプライアンス センターのコンテンツ検索ツールを使用すると、メールボックス、SharePoint Online サイト、OneDrive アカウント、Microsoft Teams、Office 365 グループ、および Skype for Business の会話内のコンテンツを検索できます。キーワード検索クエリと検索条件を使用して検索結果を絞り込むことができます。さらに検索結果をプレビューしたり、エクスポートしたりすることができます。コンテンツ検索は、GDPR データ主体の要求に関連するコンテンツを検索するための効果的なツールでもあります。
-ms.openlocfilehash: 2fff94899dabca85338ba1ca924ec37afa1dccf3
-ms.sourcegitcommit: 873c5bc0e6cd1ca3dfdb3a99a5371353b419311f
+ms.openlocfilehash: cc6a385ec639f6df787c2de23fece8cb53a4d25e
+ms.sourcegitcommit: d55dab629ce1f8431b8370afde4131498dfc7471
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493168"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36675468"
 ---
 # <a name="content-search-in-office-365"></a>Office 365 のコンテンツ検索
 
@@ -184,6 +184,8 @@ Office 365 または Microsoft 365 のコンプライアンス センターの�
 [検索結果のプレビュー](#previewing-search-results)
   
 [部分的にインデックスが作成されたアイテム](#partially-indexed-items)
+
+[SharePoint Multi-Geo 環境のコンテンツを検索する](#searching-for-content-in-a-sharepoint-multi-geo-environment)
   
 ### <a name="content-search-limits"></a>コンテンツ検索の制限
 
@@ -368,3 +370,40 @@ Exchange Online ライセンス (または Office 365 ライセンス全体) が
 - 前述のとおり、予想される検索結果には、メールボックス内の部分的にインデックスが作成されたアイテムが含まれます。 SharePoint と OneDrive からの部分的にインデックスが作成されたアイテムは、予想される検索結果に含まれません。 
     
 - (メッセージまたはドキュメントの他のプロパティが検索条件と一致するため) 部分的にインデックスが作成されたアイテムが検索クエリと一致する場合、そのアイテムはインデックスなしアイテムの推定数には含まれません。 部分的にインデックスが作成されたアイテムが検索条件によって除外された場合は、そのアイテムはインデックスなしアイテムの推定数には含まれません。 詳細については、「[Office 365 のコンテンツ検索で部分的にインデックスが作成されたアイテム](partially-indexed-items-in-content-search.md)」を参照してください。
+
+### <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>SharePoint Multi-Geo 環境のコンテンツを検索する
+
+電子情報開示マネージャーが、[SharePoint Multi-Geo 環境](https://go.microsoft.com/fwlink/?linkid=860840)内の複数の地域の SharePoint および OneDrive でコンテンツを検索する必要がある場合、これを実行できるようにするには次の操作を実行する必要があります。
+   
+1. 電子情報開示マネージャーが検索する必要があるサテライト地域の場所ごとに、個別のユーザー アカウントを作成します。 その地域の場所にあるサイトのコンテンツを検索するには、電子情報開示マネージャーは、その場所用に作成されたアカウントにサインインしてからコンテンツ検索を実行する必要があります。
+
+2. 電子情報開示マネージャーが検索する必要がある各サテライトの地理的位置 (および対応するユーザー アカウント) 用に、検索のアクセス許可フィルターを作成します。 それぞれの検索のアクセス許可フィルターにより、特定の場所と関連付けられているユーザー アカウントに電子情報開示マネージャーがサインインした際に、コンテンツ検索の対象がその地理的位置に限定されます。
+ 
+> [!TIP]
+> [Advanced eDiscovery](compliance20/overview-ediscovery-20.md) の検索ツールを使用する場合はこの方法を使用する必要はありません。 これは、Advanced eDiscovery で SharePoint サイトと OneDrive アカウントを検索すると、すべてのデータセンターが検索されるためです。 地域限定のユーザー アカウントと検索のアクセス許可フィルターを使用するこの方法を使用する必要があるのは、コンテンツ検索ツールを使用して[電子情報開示のケース](ediscovery-cases.md)と関連付けられている検索を実行する場合のみです。 
+
+
+たとえば、電子情報開示マネージャーが、シカゴ、ロンドン、東京のサテライトの場所で SharePoint と OneDrive のコンテンツを検索する必要があるとします。 最初の手順では、1 つの場所で 1 つずつ、ユーザー アカウントを 3 つ作成します。 次の手順では、1 つの場所で 1 つずつ、それぞれの場所のユーザー アカウント用に、検索のアクセス許可フィルターを 3 つ作成します。 このシナリオでの 3 つの検索のアクセス許可フィルターの例を示します。 それぞれの例では、**Region** によりその地域の SharePoint データセンターの場所が指定され、**Users** パラメーターにより対応するユーザー アカウントが指定されています。 
+
+**北アメリカ**
+```
+New-ComplianceSecurityFilter -FilterName "SPMultiGeo-Chicago" -Users ediscovery-chicago@contoso.com -Region NAM -Action ALL
+```
+
+**ヨーロッパ**
+```
+New-ComplianceSecurityFilter -FilterName "SPMultiGeo-London" -Users ediscovery-london@contoso.com -Region GBR -Action ALL
+```
+
+**アジア太平洋**
+```
+New-ComplianceSecurityFilter -FilterName "SPMultiGeo-Toyko" -Users ediscovery-tokyo@contoso.com -Region JPN -Action ALL
+```
+
+検索のアクセス許可フィルターを使用して複数地域環境のコンテンツを検索する場合は、次の点にご注意ください。
+
+- **Region** パラメーターにより、指定されたサテライトの場所が検索されます。 電子情報開示マネージャーが、検索のアクセス許可フィルターで指定された対象以外の SharePoint サイトと OneDrive サイトのみを検索すると、検索結果は何も返されません。 
+
+- Exchange メールボックスの検索は、**Region** パラメーターにより制御されません。 メールボックスを検索すると、すべてのデータセンターが検索されます。 
+    
+複数地域環境での検索のアクセス許可フィルターの使用に関する詳細については、「Office 365 での電子情報開示調査のためにコンプライアンスの境界を設定する」の「[複数地域環境でのコンテンツの検索とエクスポート](set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments)」セクションを参照してください。
