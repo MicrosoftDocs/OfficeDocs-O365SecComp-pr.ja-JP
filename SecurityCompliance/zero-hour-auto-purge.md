@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: ゼロ時間自動削除 (ZAP) は、ユーザーの受信トレイに既に配信されているスパムまたはマルウェアを含むメッセージを検出し、その悪意のあるコンテンツを無害にする電子メール保護機能です。 これは、検出された悪意のあるコンテンツの種類によってどのような違いがありますか。
-ms.openlocfilehash: ceb5a973a65406527de3361a354247908b4cab63
-ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
+ms.openlocfilehash: 91bb167c988e49a40895f851a518ee255abdbf08
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35613665"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36698969"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>ゼロアワー自動消去 - スパムまたはマルウェアからの保護
 
@@ -36,7 +36,7 @@ ZAP は既定で有効になっていますが、次の条件を満たしてい�
   
 - **迷惑メールフォルダーにメッセージを移動**するように**スパムアクション**が設定されています。 すべてのメールボックスを ZAP でスクリーニングしないようにする場合は、ユーザーのセットにのみ適用される新しいスパムフィルターポリシーを作成することもできます。
 
-- ユーザーが既定の迷惑メール設定を保持しており、迷惑メールの保護がオフになっていない。 (Outlook のユーザーオプションの詳細については[、「迷惑メールフィルターの保護レベルを変更](https://support.office.com/article/change-the-level-of-protection-in-the-junk-email-filter-e89c12d8-9d61-4320-8c57-d982c8d52f6b)する」を参照してください)。 
+- ユーザーが既定の迷惑メール設定を保持しており、迷惑メールの保護がオフになっていない。 (Outlook のユーザーオプションの詳細については[、「迷惑メールフィルターの保護レベルを変更](https://support.office.com/article/e89c12d8-9d61-4320-8c57-d982c8d52f6b)する」を参照してください)。
   
 ## <a name="how-zap-works"></a>ZAP のしくみ
 
@@ -44,41 +44,56 @@ Office 365 は、毎日スパム対策エンジンとマルウェア署名をリ
 
 ZAP アクションは、メールボックスユーザーにとってシームレスです。電子メールメッセージが移動された場合は通知されません。 メッセージを2日より前にすることはできません。
   
-許可リスト、[メールフロールール](https://go.microsoft.com/fwlink/p/?LinkId=722755)、およびエンドユーザールールまたは追加フィルターは、ZAP より優先されます。
+許可リスト、[メールフロールール](https://go.microsoft.com/fwlink/p/?LinkId=722755)(トランスポートルールとも呼ばれます)、およびエンドユーザールールまたは追加フィルターは、ZAP より優先されます。
 
-**マルウェアの ZAP**新たに検出されたマルウェアの場合、ZAP は電子メールメッセージから添付ファイルを削除し、ユーザーのメールボックスにメッセージの本文を残します。 添付ファイルは、メールの開封状況に関係なく削除されます。
+### <a name="malware-zap"></a>マルウェアの ZAP
 
-マルウェアの ZAP は、マルウェアポリシーで既定で有効になっています。 [New-malwarefilterpolicy](https://docs.microsoft.com/en-us/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy?view=exchange-ps)の**zapenabled**パラメーターを使用して、EOP コマンドレットを使用して、マルウェアの ZAP を無効にすることができます。
+新たに検出されたマルウェアの場合、ZAP は電子メールメッセージから添付ファイルを削除し、ユーザーのメールボックスにメッセージの本文を残します。 添付ファイルは、メールの開封状況に関係なく削除されます。
 
-**フィッシング ZAP**配信後にフィッシングとして識別されるメールの場合、ZAP はユーザーが対象とするスパムポリシーに従って処理を行います。 [Policy フィッシング] アクションがメールに対してアクションを実行するように設定されている場合 (リダイレクト、削除、検疫、迷惑メールへの移動)、ZAP により、メールの開封状況に関係なく、ユーザーの受信トレイの迷惑メールフォルダーにメッセージが移動されます。 [ポリシーのフィッシング] アクションが [アクションを実行する] に設定されていない ([X-ヘッダーの追加]、[件名の変更]、[アクションなし]) 場合、ZAP はメールに対してアクションを実行しません。 ここでは[、スパムフィルターポリシーを構成](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-your-spam-filter-policies)する方法について説明します。
+マルウェアの ZAP は、マルウェアポリシーで既定で有効になっています。 Exchange Online PowerShell または Exchange Online Protection PowerShell で[new-malwarefilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy)コマンドレットの*zapenabled*パラメーターを使用して、マルウェアの ZAP を無効にすることができます。
 
-スパムポリシーでは、フィッシング ZAP が既定で有効になっています。 フィッシング ZAP は、EOP コマンドレットである[set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)の**zapenabled**パラメーターを使用して無効にすることができます。
-注:-ZapEnabled を無効にすると、フィッシング ZAP とスパム ZAP の両方が無効になります。
+### <a name="phish-zap"></a>フィッシング ZAP
 
-**スパム ZAP**配信後にスパムとして識別されるメールの場合、ZAP はユーザーが対象とするスパムポリシーに従って処理を行います。 メールに対してアクションを実行するようにポリシーのスパムアクションが設定されている場合 (リダイレクト、削除、検疫、迷惑メールへの移動)、ZAP により、メッセージが未読の場合は、ユーザーの受信トレイの迷惑メールフォルダーにメッセージが移動されます。 [Policy Spam] アクションがアクションを実行するように設定されていない ([X-ヘッダーの追加]、[件名の変更]、[アクションなし]) 場合、ZAP はメールに対してアクションを実行しません。 ここでは[、スパムフィルターポリシーを構成](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-your-spam-filter-policies)する方法について説明します。
+配信後にフィッシングとして識別されるメールの場合、ZAP はユーザーが対象とするスパムポリシーに従って処理を行います。 [Policy フィッシング] アクションがメールに対してアクションを実行するように設定されている場合 (リダイレクト、削除、検疫、迷惑メールへの移動)、ZAP により、メールの開封状況に関係なく、ユーザーの受信トレイの迷惑メールフォルダーにメッセージが移動されます。 [ポリシーのフィッシング] アクションが [アクションを実行する] に設定されていない ([X-ヘッダーの追加]、[件名の変更]、[アクションなし]) 場合、ZAP はメールに対してアクションを実行しません。 ここでは[、スパムフィルターポリシーを構成](https://docs.microsoft.com//office365/securitycompliance/configure-your-spam-filter-policies)する方法について説明します。
 
-スパム ZAP は、スパムポリシーでは既定で有効になっています。 スパム ZAP は、EOP コマンドレットの**Zapenabled**パラメーター [](https://go.microsoft.com/fwlink/p/?LinkId=722758)を使用して無効にすることができます。
-注:-ZapEnabled を無効にすると、フィッシング ZAP とスパム ZAP の両方が無効になります。
+スパムポリシーでは、フィッシング ZAP が既定で有効になっています。 フィッシング ZAP を無効にするには、Exchange Online PowerShell または Exchange Online Protection PowerShell の[set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)コマンドレットで*zapenabled*パラメーターを使用します。
 
-## <a name="to-see-if-zap-moved-your-message"></a>ZAP がメッセージを移動したかどうかを確認するには
+### <a name="spam-zap"></a>スパム ZAP
+
+配信後にスパムとして識別されるメールの場合、ZAP はユーザーが対象とするスパムポリシーに従って処理を行います。 メールに対してアクションを実行するようにポリシーのスパムアクションが設定されている場合 (リダイレクト、削除、検疫、迷惑メールへの移動)、ZAP により、メッセージが未読の場合は、ユーザーの受信トレイの迷惑メールフォルダーにメッセージが移動されます。 [Policy Spam] アクションがアクションを実行するように設定されていない ([X-ヘッダーの追加]、[件名の変更]、[アクションなし]) 場合、ZAP はメールに対してアクションを実行しません。 ここでは[、スパムフィルターポリシーを構成](configure-your-spam-filter-policies.md)する方法について説明します。
+
+スパム ZAP は、スパムポリシーでは既定で有効になっています。 Exchange Online PowerShell または Exchange Online Protection PowerShell で[set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)コマンドレットの*zapenabled*パラメーターを使用して、スパム ZAP を無効にすることができます。
+
+> [!NOTE]
+> **Set-hostedcontentfilterpolicy**コマンドレットの*zapenabled*パラメーターは、ポリシーに対してフィッシング ZAP とスパム zap の両方を無効または有効にします。 同じポリシー内でフィッシング ZAP とスパム ZAP を独立して有効または無効にすることはできません。
+
+## <a name="how-to-see-if-zap-moved-your-message"></a>ZAP がメッセージを移動したかどうかを確認する方法
 
 ZAP がメッセージを移動したかどうかを確認するには、[脅威保護状態レポート](view-email-security-reports.md#threat-protection-status-report)または[脅威エクスプローラー (およびリアルタイム検出)](threat-explorer.md)のいずれかを使用できます。
 
-## <a name="to-disable-zap"></a>ZAP を無効にするには
-**マルウェアの無効化**O365 テナントまたはユーザーのセットのためのマルウェア ZAP を無効にするには、EOP コマンドレットの[new-malwarefilterpolicy](https://docs.microsoft.com/en-us/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy?view=exchange-ps)の**zapenabled**パラメーターを使用します。
+## <a name="disable-zap"></a>ZAP を無効にする
 
-次の例では、"Test" という名前のコンテンツフィルターポリシーで ZAP が無効になっています。
+Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://go.microsoft.com/fwlink/p/?linkid=396554)」を参照してください。 Exchange Online Protection PowerShell に接続するには、「 [Exchange Online protection の powershell への接続](https://go.microsoft.com/fwlink/p/?linkid=627290)」を参照してください。
 
-```Powershell
-  Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
-```
-**フィッシングおよびスパム ZAP の無効化**O365 テナントまたはユーザーのセットに対してフィッシングとスパムの両方の ZAP を無効にするには、EOP [](https://go.microsoft.com/fwlink/p/?LinkId=722758)コマンドレットの**zapenabled**パラメーターを使用します。
+### <a name="disable-malware-zap"></a>マルウェアの無効化 * *
 
-次の例では、"Test" という名前のコンテンツフィルターポリシーで ZAP が無効になっています。
+この例では、"Test" という名前のマルウェアフィルターポリシーの ZAP を無効にします。
 
 ```Powershell
-  Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
+Set-MalwareFilterPolicy -Identity Test -ZapEnabled $false
 ```
+
+構文とパラメーターの詳細については、「[Set-MalwareFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-malwarefilterpolicy)」を参照してください。
+
+### <a name="disable-phish-zap-and-spam-zap"></a>フィッシング ZAP とスパム ZAP を無効にする
+
+この例では、"Test" という名前のコンテンツフィルターポリシーでフィッシング ZAP とスパム ZAP を無効にします。
+
+```Powershell
+Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
+```
+
+構文およびパラメーターの詳細については、「 [set-hostedcontentfilterpolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758)」を参照してください。
 
 ## <a name="faq"></a>FAQ
 
@@ -95,6 +110,7 @@ ZAP がメッセージを移動したかどうかを確認するには、[脅威
 管理者によって作成されたルール (メールフロールール) またはブロックと許可ルールが優先されます。 このようなメッセージは、機能の条件から除外されるので、メールフローはルールの処理 (ブロック/許可ルール) に従います。
 
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rule"></a>メッセージが別のフォルダー (たとえば、受信トレイルールなど) に移動した場合はどうなりますか。
+
 この場合、ZAP は、メッセージが削除されているか、迷惑メールにある場合を除き、この場合でも動作します。
 
 ## <a name="related-topics"></a>関連項目

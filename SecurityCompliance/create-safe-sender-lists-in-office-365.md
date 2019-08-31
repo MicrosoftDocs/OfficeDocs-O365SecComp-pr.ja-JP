@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: 特定の送信者からのメールを確実に受信できるようにする場合は、Exchange 管理センターでスパムフィルターポリシーの許可リストを調整できます。このようなメッセージを受信します。
-ms.openlocfilehash: f0397ce3d26f6c539b3d7d663298c468e1155161
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 49803dee186a0f89e3caa42f8c7559bb6ce0c7c9
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599983"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699215"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Office 365 で差出人セーフリストを作成する
 

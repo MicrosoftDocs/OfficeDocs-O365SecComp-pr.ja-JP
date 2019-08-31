@@ -13,12 +13,12 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: エンド ユーザー向けスパム通知は、既定の会社全体のコンテンツ フィルター ポリシーに対して、またはドメインに適用されるカスタム コンテンツ フィルター ポリシーに対して構成できます。
-ms.openlocfilehash: 8e2c2bd6b3e5a29beccaccea032f650936584a06
-ms.sourcegitcommit: 9e2df36b05a2c93ce2629a7a5eda8f44159d114d
+ms.openlocfilehash: c1345ffdfec734d28d5c0e461602716e1fd6a0f2
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35628460"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699272"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>EOP でのエンドユーザー スパム通知の構成
   
@@ -50,7 +50,7 @@ ms.locfileid: "35628460"
   
 この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。必要なアクセス許可の一覧については、以下を参照してください。「[EOP の機能アクセス許可](eop/feature-permissions-in-eop.md)」トピックの「スパム対策」。 
   
-このトピックの手順で使用可能なキーボード ショートカットについては、「 **Keyboard shortcuts in Exchange 2013**」を参照してください。
+このトピックの手順に適用されるキーボードショートカットについては、「exchange [Online の exchange 管理センターのキーボードショートカット](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)」を参照してください。
   
 ## <a name="use-the-eac-to-configure-end-user-spam-notifications"></a>EAC を使って、エンド ユーザー向けスパム通知を構成する
 

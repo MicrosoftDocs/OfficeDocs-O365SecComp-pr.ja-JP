@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
 description: この入門ドキュメントは、Exchange Online Protection (EOP) といくつかの重要な用語を理解するのに役立ちます。 これは、exchange Online のクラウドホスト型メールボックスを保護している、または Exchange Server 2016 などの社内メールボックスを保護している EOP スタンドアロン365のお客様に対して適用されます。
-ms.openlocfilehash: 87dba47a7a942dcb8eb103cee1a171dca6e53805
-ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
+ms.openlocfilehash: c2dba2cbb16126e2169e0fb3907ceabe8185e82a
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "36676647"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699195"
 ---
 ## <a name="what-is-exchange-online-protection-eop"></a>Exchange Online Protection (EOP) とは
 
@@ -36,7 +36,7 @@ EOP は迷惑メールのフィルターを試行し、ユーザーが表示し�
 
 **送信**: Office 365 から出てくるメッセージ。
 
-**Internal**: 組織内のユーザーから組織内のユーザーに送信されるメッセージ。 これには、ハイブリッドシナリオと1つのメールボックスがオンプレミスにあり、他のメールボックスがクラウド内に存在する可能性があるユーザーが含まれます。
+**Internal**: 組織内のユーザーから組織内のユーザーに送信されるメッセージ。 これには、ハイブリッドシナリオを使用していて、1つのメールボックスがオンプレミスになっていて、他のメールボックスがクラウド内に存在する可能性があるユーザーが含まれます。
 
 **誤負 (FN)**: スパムやその他の迷惑メールが、受信トレイに正しく送信されません。
 

@@ -13,12 +13,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: 既定の企業全体のスパムフィルターポリシーまたはドメインに適用されるカスタムスパムフィルターポリシーに対して、エンドユーザーのスパム通知を構成できます。
-ms.openlocfilehash: ce63fae7749f716b7fdd00c72b207ba5b57a8d65
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 00ce151ab355efb419d483a17aaeeb26dfc71c0d
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600193"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699282"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Exchange Online エンドユーザースパム通知の構成
 
@@ -49,7 +49,7 @@ Office 365 で、受信拒否リストに送信者を追加する場合は、[**
   
 「この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 必要なアクセス許可を確認するには、「 [Exchange Online の機能のアクセス許可](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx)」トピックの「スパム対策」のエントリを参照してください。 
   
-このトピックの手順で使用可能なキーボード ショートカットについては、「**Exchange 管理センターのキーボード ショートカット**」を参照してください。
+このトピックの手順に適用されるキーボードショートカットについては、「exchange [Online の exchange 管理センターのキーボードショートカット](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)」を参照してください。
   
 ## <a name="use-the-eac-to-configure-end-user-spam-notifications"></a>EAC を使って、エンド ユーザー向けスパム通知を構成する
 
