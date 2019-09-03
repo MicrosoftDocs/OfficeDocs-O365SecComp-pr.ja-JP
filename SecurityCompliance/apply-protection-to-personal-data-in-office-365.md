@@ -248,11 +248,9 @@ SharePoint のアクセス許可を使用して、サイトまたはそのコン
 
 詳しくは、以下の資料を参照してください。
 
--   
-  [SharePoint でのアクセス許可レベルについて](https://support.office.com/ja-JP/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
+-   [SharePoint でのアクセス許可レベルについて](https://support.office.com/ja-JP/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
 
--   
-  [SharePoint グループについて](https://support.office.com/ja-JP/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
+-   [SharePoint グループについて](https://support.office.com/ja-JP/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
 
 ### <a name="external-sharing-policies-for-sharepoint-and-onedrive-for-business-libraries"></a>SharePoint と OneDrive for Business ライブラリに関する外部共有ポリシー
 
@@ -302,11 +300,9 @@ SharePoint のアクセス許可を使用して、サイトまたはそのコン
 
 詳しくは、以下の資料を参照してください。
 
--   
-  [SharePoint Online 環境の外部共有を管理する](https://support.office.com/ja-JP/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+-   [SharePoint Online 環境の外部共有を管理する](https://support.office.com/ja-JP/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
--   
-  [組織外部のユーザーとのサイトまたはドキュメントの共有](https://support.office.com/ja-JP/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
+-   [組織外部のユーザーとのサイトまたはドキュメントの共有](https://support.office.com/ja-JP/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
 ### <a name="site-level-device-access-policies"></a>サイトレベルのデバイス アクセス ポリシー
 

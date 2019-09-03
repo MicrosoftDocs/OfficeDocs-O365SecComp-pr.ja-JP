@@ -81,12 +81,10 @@ ms.locfileid: "35854721"
 
 [侵害された電子メール アカウントへの対応](responding-to-a-compromised-email-account.md)
 
-
-  [メールアラートの送信が制限されているユーザーを把握する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/alert-policies)
+[メールアラートの送信が制限されているユーザーを把握する](https://docs.microsoft.com/ja-JP/office365/securitycompliance/alert-policies)
 
 [送信メッセージにおける危険度の高い配信プール](high-risk-delivery-pool-for-outbound-messages.md)
 
 [セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)
 
-
-  [セキュリティ/コンプライアンス センターのアラート ポリシー](https://docs.microsoft.com/ja-JP/office365/securitycompliance/alert-policies)
+[セキュリティ/コンプライアンス センターのアラート ポリシー](https://docs.microsoft.com/ja-JP/office365/securitycompliance/alert-policies)

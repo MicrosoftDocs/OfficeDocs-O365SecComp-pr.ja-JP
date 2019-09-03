@@ -25,8 +25,7 @@ ms.locfileid: "36478196"
 
 ## <a name="overview"></a>概要
 
-
-  [カスタムの機密情報の種類](https://docs.microsoft.com/ja-JP/office365/securitycompliance/custom-sensitive-info-types) は、機密情報の不注意または不適切な共有を防ぐために使用されます。 管理者は  [セキュリティー/コンプライアンス センター](https://docs.microsoft.com/ja-JP/office365/securitycompliance/create-a-custom-sensitive-information-type) または [PowerShell](https://docs.microsoft.com/ja-JP/office365/securitycompliance/create-a-custom-sensitive-information-type-in-scc-powershell)  を使用して、パターン、証拠 ( *従業員*、 *バッジ*、 *ID*などのキーワード)、文字の近接性 (特定のパターンの文字に証拠がどれほど近接しているか)、および信頼レベルに基づいてカスタムの機密情報の種類を定義できます。 このようなカスタムの機密情報の種類は、多くの組織のビジネス ニーズを満たします。
+[カスタムの機密情報の種類](https://docs.microsoft.com/ja-JP/office365/securitycompliance/custom-sensitive-info-types) は、機密情報の不注意または不適切な共有を防ぐために使用されます。 管理者は  [セキュリティー/コンプライアンス センター](https://docs.microsoft.com/ja-JP/office365/securitycompliance/create-a-custom-sensitive-information-type) または [PowerShell](https://docs.microsoft.com/ja-JP/office365/securitycompliance/create-a-custom-sensitive-information-type-in-scc-powershell)  を使用して、パターン、証拠 ( *従業員*、 *バッジ*、 *ID*などのキーワード)、文字の近接性 (特定のパターンの文字に証拠がどれほど近接しているか)、および信頼レベルに基づいてカスタムの機密情報の種類を定義できます。 このようなカスタムの機密情報の種類は、多くの組織のビジネス ニーズを満たします。
 
 しかし、汎用的なパターンのみを使用するのではなく、正確なデータ値を使用するカスタムの機密情報の種類が必要な場合はどうでしょう。 Exact Data Match (EDM) ベースの分類では、次の目的で設計されたカスタムの機密情報の種類を作成できます。
 
@@ -187,8 +186,7 @@ Remove-DlpEdmSchema -Identity patientrecords
 
 ルール パッケージをセットアップするときに、.csv ファイルと edm .xml ファイルを正しく参照してください。 この例は、コピー、変更、使用が可能です。 このサンプル xml では、EDM の機密情報の種類を作成するために、次のフィールドをカスタマイズする必要があります。
 
-- 
-  **RulePack id & ExactMatch id**:  [New-GUID](https://docs.microsoft.com/ja-JP/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)  を使用して GUID を作成します。
+- **RulePack id & ExactMatch id**:  [New-GUID](https://docs.microsoft.com/ja-JP/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)  を使用して GUID を作成します。
 
 - **Datastore**: このフィールドは、使用する EDM ルックアップデータストアを指定します。 設定済みの EDM スキーマのデータソース名を指定します。
 
@@ -482,19 +480,15 @@ Office 365 DLP for Exchange Online (メール)、OneDrive for Business (ファ�
 
 ## <a name="related-articles"></a>関連記事
 
+[組み込みの機密情報の種類とその検索対象](https://docs.microsoft.com/ja-JP/office365/securitycompliance/what-the-sensitive-information-types-look-for)
 
-  [組み込みの機密情報の種類とその検索対象](https://docs.microsoft.com/ja-JP/office365/securitycompliance/what-the-sensitive-information-types-look-for)
+[カスタムの機密情報の種類](https://docs.microsoft.com/ja-JP/office365/securitycompliance/custom-sensitive-info-types)
 
-
-  [カスタムの機密情報の種類](https://docs.microsoft.com/ja-JP/office365/securitycompliance/custom-sensitive-info-types)
-
-
-  [DLP ポリシーの概要](https://docs.microsoft.com/ja-JP/office365/securitycompliance/data-loss-prevention-policies)
+[DLP ポリシーの概要](https://docs.microsoft.com/ja-JP/office365/securitycompliance/data-loss-prevention-policies)
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
-
-  [New-DlpEdmSchema](https://docs.microsoft.com/ja-JP/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
+[New-DlpEdmSchema](https://docs.microsoft.com/ja-JP/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
 
 ## <a name="feedback"></a>フィードバック
 GitHub フィードバックは有効になっていますが、懸案事項の追加は、公開サイトでのみ行うことができます。

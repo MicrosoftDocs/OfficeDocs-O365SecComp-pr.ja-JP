@@ -98,10 +98,8 @@ AIR には、アラートがトリガーされたときなどには自動的に�
 |役割または役割グループ  |追加情報  |
 |---------|---------|
 |Office 365 グローバル管理者 |[Office 365 の管理者の役割について](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|セキュリティ管理者 |
-  [Azure Active Directory での管理者役割のアクセス許可](https://docs.microsoft.com/ja-JP/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Exchange Online 組織の管理 |
-  [Exchange Online のアクセス許可](https://docs.microsoft.com/ja-JP/exchange/permissions-exo/permissions-exo) <br>および<br> [Exchange Online の PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|セキュリティ管理者 |[Azure Active Directory での管理者役割のアクセス許可](https://docs.microsoft.com/ja-JP/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
+|Exchange Online 組織の管理 |[Exchange Online のアクセス許可](https://docs.microsoft.com/ja-JP/exchange/permissions-exo/permissions-exo) <br>および<br> [Exchange Online の PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
 
 詳しくは、次のトピックを参照してください。
 
@@ -125,5 +123,4 @@ Office 365 ATP プラン 2 は、Office 365 Enterprise E5、Office 365 Education
 
 - [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)は、開発およびロール アウトの新機能の一覧を提供します。
 
-- 
-  [Office 365 Advanced Threat Protection サービスの説明](https://docs.microsoft.com/ja-JP/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)では、ATP プラン全体の機能と可用性について説明します。
+- [Office 365 Advanced Threat Protection サービスの説明](https://docs.microsoft.com/ja-JP/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)では、ATP プラン全体の機能と可用性について説明します。

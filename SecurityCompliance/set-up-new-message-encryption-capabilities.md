@@ -47,14 +47,13 @@ Office 365 組織で新しい OME 機能が使用できるようにするには�
 詳しくは、次のトピックを参照してください。
 
 - [新しい OME 機能を使用するには、どのサブスクリプションが必要か](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities)については、サブスクリプションプランに Azure Information Protection (Azure RMS 機能を含む) が含まれているかどうかを確認します。
-- 対象となるサブスクリプションの購入に関する情報については、「[Azure Information Protection](https://azure.microsoft.com/en-us/services/information-protection/)」を参照してください。  
+- 対象となるサブスクリプションの購入に関する情報については、「[Azure Information Protection](https://azure.microsoft.com/ja-JP/services/information-protection/)」を参照してください。  
 
 ### <a name="manually-activating-azure-rights-management"></a>Azure Rights Management を手動で有効化する
 
 Azure RMS を無効にした場合、または何らかの理由で自動的に有効化されなかった場合は、次のように手動で有効化できます:
 
-- 
-  **Microsoft 365 管理センター**: 手順については、「[管理センターから Azure Rights Management を有効化する方法](https://docs.microsoft.com/ja-JP/azure/information-protection/activate-office365)」を参照してください。
+- **Microsoft 365 管理センター**: 手順については、「[管理センターから Azure Rights Management を有効化する方法](https://docs.microsoft.com/ja-JP/azure/information-protection/activate-office365)」を参照してください。
 - **Azure Portal**: 手順については、「[Azure Portal から Azure Rights Management を有効化する方法](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure)」を参照してください。
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Azure Information Protection テナント キーの管理を構成する
@@ -65,8 +64,7 @@ Azure RMS を無効にした場合、または何らかの理由で自動的に�
 
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>Exchange Online PowerShell で新しい OME 構成を確認する
 
-
-  [Exchange Online PowerShell](https://docs.microsoft.com/ja-JP/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) の新しい OME 機能を使用するように Office 365 テナントが適切に構成されていることを確認できます。
+[Exchange Online PowerShell](https://docs.microsoft.com/ja-JP/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) の新しい OME 機能を使用するように Office 365 テナントが適切に構成されていることを確認できます。
   
 1. Office 365 テナントのグローバル管理者権限を持つアカウントを使用して、[Exchange Online PowerShell に接続](https://docs.microsoft.com/ja-JP/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)します。
 

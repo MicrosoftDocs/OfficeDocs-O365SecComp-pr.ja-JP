@@ -283,14 +283,12 @@ Office 365 グループのコンテンツを保持するには、Office 365 グ�
 
 クエリ構文の詳細については、次を参照してください。
 
-- 
-  [キーワード クエリ言語 (KQL) 構文のリファレンス](https://docs.microsoft.com/ja-JP/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [キーワード クエリ言語 (KQL) 構文のリファレンス](https://docs.microsoft.com/ja-JP/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 クエリ ベースのラベルは検索インデックスを使用してコンテンツを特定します。有効な検索可能なプロパティの詳細については、以下を参照してください。
 
 - [コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)
-- 
-  [クロールされたプロパティと管理プロパティの概要 (SharePoint Server)](https://docs.microsoft.com/ja-JP/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+- [クロールされたプロパティと管理プロパティの概要 (SharePoint Server)](https://docs.microsoft.com/ja-JP/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
 クエリの例:
 
