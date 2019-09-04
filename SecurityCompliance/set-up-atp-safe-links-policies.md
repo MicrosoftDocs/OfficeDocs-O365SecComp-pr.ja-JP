@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 安全なリンクポリシーを設定して、Word、Excel、PowerPoint、および Visio ファイル内の悪意のあるリンクや、電子メールメッセージだけで組織を保護します。
-ms.openlocfilehash: d84c57d1f21ea835d5a29e59a4efe4a11ff876c0
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: f33f351d9a4875a52854a239cf9f875be8e076d6
+ms.sourcegitcommit: fd3db13cd4fc71cd2cb164fd702007acba3e7399
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230341"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36717637"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Office 365 の ATP の安全なリンクポリシーを設定する
 
@@ -101,7 +101,7 @@ ms.locfileid: "36230341"
     
   - 組織内のユーザー間で送信されるメッセージの安全なリンクを有効にする場合は **、[組織内で送信されるメッセージに対して安全なリンクを適用**する] を選択します (推奨)。
     
-  - [**ユーザーが元の URL に**移動できないようにする] を選択します。
+  - 個々のユーザーによる*スキャンの進行*または*url ブロック*された通知ページを上書きしたくない場合は、[**ユーザーが元の url に**移動できないようにする] を選択します。
     
   - (オプション)[**次の url を書き換えない**] セクションで、組織に対して安全と見なされる1つ以上の url を指定します。 (「 [ATP Safe Links を使用して、ユーザー設定の "書き込み不可" url リストを設定する](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)」を参照してください)
     
