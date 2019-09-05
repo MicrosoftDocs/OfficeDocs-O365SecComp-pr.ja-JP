@@ -3,7 +3,7 @@ title: Office 365 脅威の調査および対応
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 08/22/2019
+ms.date: 08/23/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,34 +15,30 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection の脅威インテリジェンス機能が、組織に対する脅威を調査し、マルウェア、フィッシング、および Office 365 がユーザーに代わって検出したその他の攻撃に対応し、脅威を検索する方法について説明します。切り替える.
-ms.openlocfilehash: 774d3d5c6a1ff71c105c3778458cf2a0d0cbed94
-ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
+ms.openlocfilehash: 1d31f3a464060f5b72730e15895d918e61aa09a1
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36566215"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761653"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Office 365 脅威の調査および対応
 
 Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-365-atp.md)は、セキュリティアナリストおよび管理者が組織の office 365 ユーザーを保護するのに役立ちます。
   
-- 攻撃を特定し、監視し、理解するための簡単な方法
+- Cyberattacks の識別、監視、理解を容易にする
     
 - Exchange Online、SharePoint Online、OneDrive for Business、および Microsoft Teams での脅威への迅速な対応
     
-- 組織に対する攻撃を防止するために、洞察と知識を提供する
+- 組織に対する cyberattacks を防止するためにセキュリティ操作を支援するための洞察と知識の提供
 
-- メールベースの重要な脅威に対する自動化された[調査と対応](automated-investigation-response-office.md)
+- 重要な電子メールベースの脅威に対する自動化された[調査と対応](automated-investigation-response-office.md)
     
-脅威の調査と応答の詳細と、開始する方法については、この記事を参照してください。
-  
-## <a name="threat-investigation-and-response-in-office-365"></a>Office 365 での脅威の調査と応答
+脅威の調査と応答の機能は、Office 365 セキュリティ&amp;コンプライアンスセンターで利用可能な脅威と関連する応答アクションについての洞察を提供します。 これらの洞察は、組織のセキュリティチームが、電子メールまたはファイルベースの攻撃から Office 365 ユーザーを保護するのに役立ちます。 機能は、ユーザーアクティビティ、認証、電子メール、侵害された Pc、セキュリティインシデントなど、複数のソースからの信号を監視し、データを収集するのに役立ちます。 ビジネス意思決定者および Office 365 の全体管理者、セキュリティ管理者、およびセキュリティアナリストは、この情報を使用して Office 365 ユーザーに対する脅威を理解し、それに対処し、知的財産権を保護することができます。
 
-脅威の調査と応答の機能は、Office 365 セキュリティ&amp;コンプライアンスセンターで利用可能な脅威と、関連する応答アクションに関する洞察を促進します。 これらの洞察は、組織のセキュリティチームが、電子メールまたはファイルベースの攻撃から Office 365 ユーザーを保護するのに役立ちます。 機能は、ユーザーアクティビティ、認証、電子メール、侵害された Pc、セキュリティインシデントなど、複数のソースからの信号を監視し、データを収集するのに役立ちます。 ビジネス意思決定者および Office 365 の全体管理者、セキュリティ管理者、およびセキュリティアナリストは、この情報を使用して、Office 365 ユーザーに対する脅威を理解し、それに対応し、知的財産を保護することができます。
+## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>脅威の調査と応答のツールについて理解する
 
-## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>脅威ダッシュボード、エクスプローラー、インシデントについて理解する
-
-脅威の調査と応答の機能は、 &amp;セキュリティコンプライアンスセンターにおいて、[脅威ダッシュボード](#threat-dashboard)、[エクスプローラー](#threat-explorer)、[インシデント](#incidents)、[アタックシミュレータ](attack-simulator.md)を含む、一連のツールと応答のワークフローとして表示されます。[応答の自動調査 &](automated-investigation-response-office.md)。
+脅威の調査と応答の機能は、 &amp;セキュリティコンプライアンスセンターにおいて、[脅威ダッシュボード](#threat-dashboard)、[エクスプローラー](#threat-explorer)、[インシデント](#incidents)、[アタックシミュレータ](#attack-simulator)を含む、一連のツールと応答のワークフローとして表示されます。[応答の自動調査 &](automated-investigation-response-office.md)。
   
 ### <a name="threat-dashboard"></a>脅威ダッシュボード
 
@@ -51,6 +47,8 @@ Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-
 ![脅威ダッシュボード](media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
 このダッシュボードを表示して使用するには&amp; 、セキュリティ/コンプライアンスセンターで、[**脅威管理** \> ]**ダッシュボード**に移動します。
+
+詳細情報 
   
 ### <a name="threat-explorer"></a>脅威エクスプローラー
 
@@ -69,8 +67,16 @@ Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-
 組織の現在のインシデントの一覧を表示するには、セキュリティ&amp; /コンプライアンスセンターで、[**脅威管理** \>の**レビュー** \> **インシデント**] に移動します。
   
 ![セキュリティ&amp; /コンプライアンスセンターで、[脅威管理\>のレビュー] を選択します。](media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
+
+### <a name="attack-simulator"></a>アタックシミュレータ
+
+アタックシミュレータを使用して、組織内で現実的な cyberattacks を設定して実行し、実際の cyberattack がビジネスに影響を与える前に、脆弱性のある人物を特定します。 詳細については、「 [Office 365 のアタックシミュレータ](attack-simulator.md)」を参照してください。
+
+### <a name="automated-investigation-and-response"></a>自動調査および対応
+
+自動化された調査と応答 (AIR) 機能を使用して、コンテンツ、デバイス、およびユーザーを組織内の脅威から危険に関連付ける時間と労力を節約します。 AIR プロセスは、特定の警告がトリガーされたとき、またはセキュリティ操作チームによって開始されたときに開始できます。 詳細については、「 [Office 365 での自動調査と応答 (AIR)](automated-investigation-response-office.md)」を参照してください。 
   
-## <a name="learn-more-about-malware-and-threats"></a>マルウェアと脅威の詳細情報
+## <a name="threat-intelligence-widgets"></a>脅威インテリジェンスウィジェット
 
 Office 365 Advanced Threat Protection プラン2のサービスの一部として、セキュリティアナリストは既知の脅威に関する詳細を確認できます。 これは、ユーザーを安全に保つために実行できる追加の予防策/手順があるかどうかを判断するのに役立ちます。
   

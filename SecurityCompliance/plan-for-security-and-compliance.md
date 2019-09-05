@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: セキュリティとコンプライアンスを計画するためのランディングページ
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c125bd36494e26d9603b565dc5154b975604f2b3
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 80e6215f1f4f5c04202f15e05622dfddae65d59b
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157509"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761623"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>Office 365 の&amp;セキュリティコンプライアンスを計画する
 
@@ -39,7 +39,7 @@ Office 365 のサブスクリプションを設定した後、開始スコアを
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>手順 3: id とデバイスのアクセス保護を計画する
 
-Office 365 のデータおよびサービスへのアクセスを保護することは、サイバー攻撃を防御し、データ損失を防ぐために不可欠です。
+Office 365 データおよびサービスへのアクセスを保護することは、cyberattacks を防御し、データ損失を防ぐために不可欠です。
   
 - [Office 365 でデータやサービスへのアクセスを保護する](protect-access-to-data-and-services.md)
     

@@ -1,9 +1,9 @@
 ---
 title: セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する
-ms.author: chrfox
-author: chrfox
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
-ms.date: 05/21/2019
+ms.date: 08/29/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ&amp;コンプライアンスセンターで利用できます。
-ms.openlocfilehash: 1e9d51c76b6df02c9d70626392a58c307ee214db
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 90b4ab2c9fafc5c882791a5471e7e5a24f5ae4bd
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230421"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761713"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターで電子メールのセキュリティレポートを表示する
 
@@ -142,7 +142,7 @@ ms.locfileid: "36230421"
   
 ## <a name="spam-detections-report"></a>スパム検出レポート
 
-**スパム検出**レポートには、Exchange Online によってブロックされているすべてのスパムコンテンツが表示されます。 
+**スパム検出**レポートには、Exchange Online によってブロックされているすべてのスパムコンテンツが表示されます。 メッセージは、受信者ごとではなく、メッセージごとにカウントされます。 たとえば、電子メールメッセージが組織内の100の受信者に送信された場合は、1つのメッセージとして数えられます。
   
 このレポートを表示するには[、 &amp;セキュリティ/コンプライアンスセンター](https://protection.office.com)で、[**レポート** \> **ダッシュボード** \> **スパム検出**] に移動します。
   

@@ -13,20 +13,20 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: このソリューションでは、最も一般的なサイバーセキュリティ攻撃が Office 365 とどのように対応しているか、またそれらに対処する方法について説明します。
-ms.openlocfilehash: 900022d97c974bdf84d3077c1127e715c06fa5de
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: このソリューションでは、最も一般的な cybersecurity 攻撃が Office 365 でどのように表示されるか、またそれらに応答する方法を示します。
+ms.openlocfilehash: f756141b9edfdef2769f18979dcab5ba731ee3fe
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157679"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761673"
 ---
 # <a name="office-365-security-incident-response"></a>Office 365 セキュリティ インシデント対応
 
- **概要:** このソリューションでは、Office 365 の一般的なサイバーセキュリティ攻撃に対するインジケーター、特定の攻撃を確実に確認する方法、およびそれに対処する方法について説明します。
+ **概要:** このソリューションは、Office 365 の最も一般的な cybersecurity 攻撃に対するインジケーター、特定の攻撃を確実に確認する方法、およびそれに対応する方法を示します。
   
 ## <a name="overview"></a>概要
-すべてのサイバー攻撃を thwarted することはできません。 攻撃者は、絶えず防御戦略の新しい弱点を模索しているか、古い弱点を悪用しています。 攻撃を認識する方法を理解することで、迅速に応答することができます。これにより、セキュリティインシデントの期間が短縮されます。
+すべての cyberattacks を thwarted にすることはできません。 攻撃者は、絶えず防御戦略の新しい弱点を模索しているか、古い弱点を悪用しています。 攻撃を認識する方法を理解することで、迅速に応答することができます。これにより、セキュリティインシデントの期間が短縮されます。
 
 この記事の一連の記事では、Office 365 で発生する可能性のある特定の種類の攻撃を理解し、対処するための手順を示します。 次のことを理解するための簡単なエントリポイントです。
  

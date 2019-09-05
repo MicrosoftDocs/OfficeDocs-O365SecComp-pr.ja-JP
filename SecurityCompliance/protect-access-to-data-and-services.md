@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: O365 データおよびサービスへのアクセスを保護するためのランディングページ
-ms.openlocfilehash: 7cddedfbb5b0b7789f370f0445be167b6d4e187d
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 9fc1691e7e36f994b5d0b8a6a9735fe8ccd8735a
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852741"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761613"
 ---
 # <a name="protect-user-and-device-access"></a>ユーザーとデバイス アクセスの保護
 
-Office 365 のデータおよびサービスへのアクセスを保護することは、サイバー攻撃を防御し、データ損失を防ぐために不可欠です。 同じ保護を、環境内の他の SaaS アプリケーション、および Azure Active Directory アプリケーションプロキシで公開されているオンプレミスアプリケーションにも適用できます。
+Office 365 データおよびサービスへのアクセスを保護することは、cyberattacks を防御し、データ損失を防ぐために不可欠です。 同じ保護を、環境内の他の SaaS アプリケーション、および Azure Active Directory アプリケーションプロキシで公開されているオンプレミスアプリケーションにも適用できます。
   
 ## <a name="step-1-review-recommendations"></a>手順 1: 推奨事項を確認する
 
@@ -31,7 +31,7 @@ Office 365、他の SaaS サービス、および Azure AD アプリケーショ
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [その他の言語](https://www.microsoft.com/download/details.aspx?id=55032)
   
 ## <a name="step-2-protect-administrator-accounts-and-access"></a>手順 2: 管理者アカウントとアクセスを保護する
-Office 365 環境を管理するために使用する管理アカウントには、昇格された特権が含まれています。 これらは、ハッカーおよびサイバー犯罪者にとって重要な目標です。 
+Office 365 環境を管理するために使用する管理アカウントには、昇格された特権が含まれています。 これらはハッカーおよび cyberattackers の重要な目標です。 
 
 管理者アカウントのみを使用して開始します。 管理者は、管理者ではない通常の使用に対して個別のユーザーアカウントを持っている必要があります。ジョブ機能に関連付けられたタスクを完了するために必要な場合にのみ、管理アカウントを使用してください。
 
@@ -56,7 +56,7 @@ Office 365 環境を管理するために使用する管理アカウントには
 - Intune デバイスのコンプライアンス
 - Azure AD Identity Protection
 
-Implemetning Intune デバイスコンプライアンスには、デバイスの登録が必要です。 デバイスを管理することにより、環境内のリソースへのアクセスを許可する前に、それらを正常かつ準拠していることを確認できます。 「 [Intune で管理用のデバイスを登録する](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)」を参照してください。
+Intune デバイスコンプライアンスを実装するには、デバイスの登録が必要です。 デバイスを管理することにより、環境内のリソースへのアクセスを許可する前に、それらを正常かつ準拠していることを確認できます。 「 [Intune で管理用のデバイスを登録する](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)」を参照してください。
 
 ## <a name="step-4-configure-sharepoint-device-access-policies"></a>手順 4: SharePoint デバイスアクセスポリシーを構成する
 

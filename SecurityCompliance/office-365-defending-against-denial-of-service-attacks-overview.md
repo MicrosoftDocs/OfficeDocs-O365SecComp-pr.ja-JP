@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: サービス拒否 (DoS) 攻撃の概要。
-ms.openlocfilehash: df3ab233271f02b91f16f8954972a61000bf4d3b
-ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
+ms.openlocfilehash: 94f87a11f396cb8ef09fd6d670d73ba8d1e88eda
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33622477"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761663"
 ---
 # <a name="defend-against-denial-of-service-attacks-in-office-365"></a>Office 365 でのサービス拒否攻撃に対する防御
 
@@ -34,7 +34,7 @@ Microsoft は、100を超えるデータセンターのグローバルクラウ�
 - Skype
 - Xbox Live
 
-大規模なインターネットプレゼンスがあり、クラウドサービスを提供する多くの主要なインターネットプロパティを持つグローバル組織の場合、Microsoft はハッカーやその他の悪意のある個人にとって大きな共通の標的となります。 クライアントと Microsoft クラウドとの間のネットワーク通信層は、悪意のある攻撃の最大目標の1つです。 実際、Microsoft は何らかのネットワークベースのサイバー攻撃の下で継続的かつ永続的に実行されています。 これを使用すると、Microsoft は多層防御セキュリティ原則を使用して、クラウドサービスとネットワークを保護します。 このような攻撃から防御する信頼性の高い永続的なリスク軽減システムがない場合は、Microsoft のクラウドサービスがオフラインになり、お客様が利用できなくなります。
+大規模なインターネットプレゼンスがあり、クラウドサービスを提供する多くの主要なインターネットプロパティを持つグローバル組織の場合、Microsoft はハッカーやその他の悪意のある個人にとって大きな共通の標的となります。 クライアントと Microsoft クラウドとの間のネットワーク通信層は、悪意のある攻撃の最大目標の1つです。 実際、Microsoft は何らかの形式のネットワークベースの cyberattack で継続的かつ永続的に実行されています。 これを使用すると、Microsoft は多層防御セキュリティ原則を使用して、クラウドサービスとネットワークを保護します。 このような攻撃から防御する信頼性の高い永続的なリスク軽減システムがない場合は、Microsoft のクラウドサービスがオフラインになり、お客様が利用できなくなります。
 
 ## <a name="definition-and-symptoms-of-denial-of-service-attacks"></a>サービス拒否攻撃の定義と現象
 
