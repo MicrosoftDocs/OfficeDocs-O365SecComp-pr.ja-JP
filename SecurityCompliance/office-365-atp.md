@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
-ms.openlocfilehash: ca948fdd99ca04830ecb7685ed8930a71345299f
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: d9dda9b19f601e26d01a18f7602f4fae3e0a0cb4
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36231091"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761723"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -85,9 +85,9 @@ Office 365 ATP プラン 2 には、組織のセキュリティ チームが悪�
 
 - [攻撃シミュレータ](attack-simulator.md)を使用すると、組織の現実的な攻撃シナリオを実行して、脆弱性を特定することができます。 [表示名のスピア フィッシング攻撃](attack-simulator.md#display-name-spear-phishing-attack)、[パスワード スプレー攻撃](attack-simulator.md#password-spray-attack)、[ブルート フォース パスワード攻撃](attack-simulator.md#brute-force-password-attack)など、現在の種類の攻撃のシミュレーションを利用できます。
     
-## <a name="save-time-with-automated-investigation-and-response"></a>自動調査と対応による時間の節約
+## <a name="save-time-with-automated-investigation-and-response"></a>自動化された調査と対応で時間を節約する
 
-(**新規!**) サイバー攻撃の可能性を調査している場合、時間は重要なものです。 脅威をより早く特定して軽減できれば、組織はより良くなります。 Office 365 ATP プラン 2 には、 [自動調査および対応 (AIR)](automated-investigation-response-office.md) 機能が含まれます。 (これらの機能をまだ持っていない場合は、ATP プラン 2 ですぐに使用できるようになります。)
+(**新機能!**) 潜在的なサイバー攻撃を調査している場合は、期限厳守です。 より早く脅威を特定して軽減するほど、組織はより良くなります。 Office 365 ATP プラン 2 には、 [自動調査および対応 (AIR)](automated-investigation-response-office.md) 機能が含まれます。 (これらの機能をまだ持っていない場合は、ATP プラン 2 ですぐに使用できるようになります。)
 
 AIR には、アラートがトリガーされたときなどには自動的に、またはエクスプローラーのビューから手動で起動できるセキュリティ プレイブックのセットが含まれています。 AIR は、セキュリティ運用チームの脅威を軽減するための時間と労力を効果的かつ効率的に節約できます。 詳細については、「[Office 365 による自動調査と応答 (AIR)](automated-investigation-response-office.md)」を参照してください。
 
