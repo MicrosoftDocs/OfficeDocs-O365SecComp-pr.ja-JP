@@ -4,7 +4,7 @@ keywords: AIR、自動赤外線、ATP、自動化、調査、応答、修復、�
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/04/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection プラン2の自動調査および応答機能の使用を開始します。
-ms.openlocfilehash: 2c64ea936170524811839db7c593d67bfe11a928
-ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
+ms.openlocfilehash: c2c2b9a0409c472c99b07293a002f9bdbf6c5090
+ms.sourcegitcommit: e6c0d9aea3172a5ccc6c7943625d69144ba20aca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36762027"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36790931"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Office 365 で脅威に自動的に調査して応答する
 
@@ -89,6 +89,12 @@ Office 365 では、通常、自動調査は1つまたは複数の推奨され�
 5. リストからアイテムを選択します。 ポップアップが開き、通知に関する詳細と追加情報およびアクションへのリンクが表示されます。
 
 6. ポップアップの情報を確認し、特定の通知に応じて、ユーザーの**解決**、**抑制**、または**通知**などのアクションを実行します。 
+
+    - **解決**は通知を閉じることと同じです。
+    
+    - **抑制**すると、指定した期間、ポリシーがアラートをトリガーしなくなります。
+    
+    - **通知**ユーザーに既に入力されたユーザーのメールアドレスを使用してメールを開始し、セキュリティ運用チームがそれらのユーザーにメッセージを入力できるようにします。 (これは、[脅威エクスプローラー](threat-explorer.md)を使用してメッセージを受信者に送信するのと似ています。)  
 
 ## <a name="use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>カスタムまたはサードパーティのレポートソリューションに Office 365 Management Activity API を使用する
 
