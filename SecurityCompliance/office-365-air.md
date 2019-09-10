@@ -4,7 +4,7 @@ keywords: AIR、自動赤外線、ATP、自動化、調査、応答、修復、�
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/06/2019
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection プラン2の自動調査および応答機能の使用を開始します。
-ms.openlocfilehash: c2c2b9a0409c472c99b07293a002f9bdbf6c5090
-ms.sourcegitcommit: e6c0d9aea3172a5ccc6c7943625d69144ba20aca
+ms.openlocfilehash: 45fea46a591aac88a8d92c7a67d024d1446e9124
+ms.sourcegitcommit: 81b3bff27bc60235a38004c5b0297ac454331b25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36790931"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822497"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Office 365 で脅威に自動的に調査して応答する
 
 ## <a name="overview"></a>概要
 
-[Office 365 Advanced Threat Protection](office-365-atp.md)プラン2には自動調査と応答 (AIR) 機能が含まれており、セキュリティ運用チームの時間と、アラートと脅威を処理するための労力を節約できます。 Office 365 の機能の使用を開始するには、この記事をお読みください。 空気のしくみの詳細については、「 [Office 365 での自動調査と応答 (AIR)](automated-investigation-response-office.md)」を参照してください。
+[Office 365 Advanced Threat Protection](office-365-atp.md)Plan 2 には、警告や脅威に対処するためのセキュリティ運用チームの時間と労力を節約できる自動インシデント対応 (エア) 機能が含まれています。 Office 365 の機能の使用を開始するには、この記事をお読みください。 空気のしくみの詳細については、「 [Office 365 の自動インシデント対応 (AIR)](automated-investigation-response-office.md)」を参照してください。
 
 AIR を使用すると、特定のアラートがトリガーされ、1つ以上のセキュリティプレイブックが開始され、自動調査が開始します。 自動化された調査プロセスの最中および実行後に、管理者およびセキュリティ運用チームは次のことを行うことができます。
 
@@ -98,7 +98,7 @@ Office 365 では、通常、自動調査は1つまたは複数の推奨され�
 
 ## <a name="use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>カスタムまたはサードパーティのレポートソリューションに Office 365 Management Activity API を使用する
 
-組織でカスタムレポートソリューションを使用している場合、またはサードパーティのレポートソリューションを使用している場合は、Office 365 Management Activity API を使用して、そのソリューションの自動化された調査に関する情報を表示することができます。
+組織でカスタムまたはサードパーティのレポートソリューションを使用している場合は、Office 365 Management Activity API を使用して、そのソリューションの自動化された調査に関する情報を表示できます。
 
 これを設定するには、次のリソースを使用します。
 
