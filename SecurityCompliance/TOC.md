@@ -227,7 +227,7 @@
 ### [動的配信と詳細のプレビュー](dynamic-delivery-and-previewing.md)
 ### [SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)
 ### [脅威の調査および対応のしくみ](office-365-ti.md)
-### [自動調査および対応のしくみ](automated-investigation-response-office.md)
+### [インシデント応答の自動化のしくみ](automated-investigation-response-office.md)
 
 
 # セキュリティ インシデントの管理
