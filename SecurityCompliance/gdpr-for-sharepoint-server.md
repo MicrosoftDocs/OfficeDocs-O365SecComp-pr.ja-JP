@@ -35,9 +35,7 @@ SharePoint Server のサイトとライブラリに含まれているユーザ�
 
 ファイル共有、SharePoint のサイトおよびライブラリについて推奨される作業の手順を次に示します。
 
-1.  
-  **
-  [Azure Information Protection スキャナーをインストールし、構成します。](https://docs.microsoft.com/ja-JP/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
+1.  **[Azure Information Protection スキャナーをインストールし、構成します。](https://docs.microsoft.com/ja-JP/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
 
     -   使用する機密データの種類を決定します。
 

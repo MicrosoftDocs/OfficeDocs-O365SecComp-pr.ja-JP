@@ -141,11 +141,9 @@ ms.locfileid: "34153739"
 
 KQL を使ったクエリの生成と最適化を行うために使うリソース:
 
--   
-  [キーワード クエリ言語 (KQL) 構文のリファレンス (DMC)](https://docs.microsoft.com/ja-JP/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+-   [キーワード クエリ言語 (KQL) 構文のリファレンス (DMC)](https://docs.microsoft.com/ja-JP/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   
-  [コンテンツ検索を実行する](https://support.office.com/ja-JP/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   [コンテンツ検索を実行する](https://support.office.com/ja-JP/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
 コンテンツ検索では、KQL クエリと機密情報の種類を開発するのに役立つ他のリソースとしてキーワードを使用できます。キーワードのリストを使用する理由は、各キーワードに一致する項目の数を示す統計を得ることができるからです。これにより、最も効果的 (および不適切) なキーワードをすばやく識別することができます。検索統計の詳細については、「[コンテンツ検索結果のキーワード統計の表示](https://support.office.com/ja-JP/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04)」を参照してください。
 
