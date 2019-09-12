@@ -1,7 +1,7 @@
 ---
 title: Office 365 の脅威の調査および応答機能を使用して組織を安全に保つ
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Office 365 の脅威調査および応答機能を使用して、組織が侵入や脅威を検出し、脅威から迅速に脅威を軽減および回復する方法について説明します。
-ms.openlocfilehash: 217203c0bfa29352bc7e1b2b3976f11966034fb0
-ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
+ms.openlocfilehash: 22d2b7e0aa1495c0eca0cc7db8eea58b59a73654
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36761693"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852819"
 ---
 # <a name="keep-your-organization-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Office 365 の脅威の調査および応答機能を使用して組織を安全に保つ
 
@@ -47,7 +47,7 @@ Office [365 の脅威の調査と応答](office-365-ti.md)機能が Office 365 E
 
 Office 365 の脅威の調査と応答機能には、 [Microsoft インテリジェントセキュリティグラフ](https://go.microsoft.com/fwlink/?linkid=2036223)からのデータが使用されています。 グラフは、10億の Windows デバイス、4500億月の Azure ログイン、および Office 365 の4000億の電子メールメッセージから最新の脅威信号を取得します。 この unrivaled threat signal は、組織に影響を与える脅威をより完全に表示するために、セキュリティ運用チームが持つ広範な可視性を提供します。 
   
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - 詳細については、 [「Office 365 Advanced Threat Protection](office-365-atp.md)」を参照してください。
 

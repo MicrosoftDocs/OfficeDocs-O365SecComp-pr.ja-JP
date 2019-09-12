@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: このトピックでは、データ損失防止 (DLP) ポリシーが EU 国内の識別番号の機密情報の種類を検出したときにどのように検索されるかを示します。 この機密情報の種類には、国ごとに異なるパターン、キーワード、およびその他の証拠が定義されています。
-ms.openlocfilehash: cbcacb3f85877f5a84238468fb52d612d90f5f0b
-ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
+ms.openlocfilehash: b784b7509eed899f9f03db96ee5e827b9bf70d2e
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36490774"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852749"
 ---
 # <a name="eu-national-identification-number"></a>EU 国家識別番号
 
@@ -1096,13 +1096,13 @@ emšo
 
 ### <a name="format"></a>Format
 
-7桁の数字の後に1文字
+8桁の数字の後に1つの文字
   
 ### <a name="pattern"></a>パターン
 
-7桁の数字の後に1文字
+8桁の数字の後に1つの文字
   
-- 7 桁の数字 
+- 8 桁の数字
     
 - 1桁の数字または文字 (大文字小文字を区別しない)
     

@@ -13,13 +13,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Office 365 Advanced Threat Protection プラン2の自動調査および応答機能の使用を開始します。
-ms.openlocfilehash: 45fea46a591aac88a8d92c7a67d024d1446e9124
-ms.sourcegitcommit: 81b3bff27bc60235a38004c5b0297ac454331b25
+description: Office 365 Advanced Threat Protection プラン2の自動インシデント対応機能の使用を開始します。
+ms.openlocfilehash: a7cec69fc7f739e065503121e456cc9bb3a34b31
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "36822497"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852759"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Office 365 で脅威に自動的に調査して応答する
 
@@ -109,7 +109,7 @@ Office 365 では、通常、自動調査は1つまたは複数の推奨され�
 |[Office 365 管理アクティビティ API リファレンス](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)     |Office 365 Management Activity API を使用して、Office 365 および Azure AD のアクティビティログから、ユーザー、管理者、システム、およびポリシーのアクションとイベントに関する情報を取得することができます。 この機能の詳細については、この記事を参照してください。        |
 |[Office 365 管理アクティビティ API のスキーマ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema)     |Office 365 Management Activity API を通じて使用できる特定の種類のデータについて理解するために、[共通スキーマ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)と[OFFICE 365 の ATP および脅威の調査および応答スキーマ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)の概要を説明します。         |
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [通知の詳細情報](alert-policies.md)
 
