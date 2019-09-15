@@ -1,6 +1,7 @@
 # [セキュリティ / コンプライアンス](index.md)
 
 # はじめに
+## [コンプライアンス センターの新機能](whats-new.md)
 ## [Office 365 のセキュリティ ロードマップ](security-roadmap.md)
 ## [セキュリティ強化のために、Office 365 テナントを構成する](tenant-wide-setup-for-increased-security.md)
 ## [新しい Microsoft 365 セキュリティ センターと Microsoft 365 コンプライアンス センター](microsoft-security-and-compliance.md)
