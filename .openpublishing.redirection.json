@@ -1,50 +1,5 @@
 { 
     "redirections": [ 
-      {
-         "source_path": "securitycompliance/recover-deleted-items-from-retention.md",
-         "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/retention-policies",
-         "redirect_document_id": false
-      }, 
-      { 
-          "source_path": "securitycompliance/office-365-certificate-chains.md",
-          "redirect_url": "https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb", 
-          "redirect_document_id": false
-      }, 
-      { 
-          "source_path": "securitycompliance/siem-integration-with-office-365-atp.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/siem-integration-with-office-365-ti", 
-          "redirect_document_id": false
-      }, 
-      { 
-          "source_path": "securitycompliance/manage-data-governance.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/index", 
-          "redirect_document_id": false
-      }, 
-      { 
-          "source_path": "securitycompliance/monitor-security-and-compliance.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/index", 
-          "redirect_document_id": false
-      }, 
-      { 
-          "source_path": "securitycompliance/preservation-policies.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/retention-policies", 
-          "redirect_document_id": false
-      }, 
-      { 
-          "source_path": "securitycompliance/prevent-data-loss.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/data-loss-prevention-policies", 
-          "redirect_document_id": false
-      }, 
-      { 
-          "source_path": "securitycompliance/security-and-compliance.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/index", 
-          "redirect_document_id": false
-      },                    
-      { 
-          "source_path": "securitycompliance/set-up-atp-anti-phishing-policies.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/set-up-anti-phishing-policies", 
-          "redirect_document_id": false
-      },                    
       { 
           "source_path": "securitycompliance/turn-off-mdm.md",
           "redirect_url": "https://support.office.com/article/2709cafb-0a8b-44bc-8494-7e2fccfa2b19", 
@@ -76,11 +31,6 @@
           "redirect_document_id": false
       },
       { 
-          "source_path": "securitycompliance/new-ome-encryption-policy.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/ome-sensitive-info-types", 
-          "redirect_document_id": false
-      },                     
-      { 
           "source_path": "securitycompliance/frequently-asked-questions-about-mdm.md",
           "redirect_url": "https://support.office.com/article/3871f99c-c9db-4a23-86f9-902c1b02f58d", 
           "redirect_document_id": false
@@ -90,74 +40,14 @@
           "redirect_url": "https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22", 
           "redirect_document_id": false
       },                     
-      { 
-          "source_path": "securitycompliance/office-365-cas-help.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/office-365-cas-overview", 
-          "redirect_document_id": false
-      },
-      {
-          "source_path": "securitycompliance/prevent-email-from-being-marked-as-spam-0.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/prevent-email-from-being-marked-as-spam", 
-          "redirect_document_id": false
-      },
-      {
-          "source_path": "securitycompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/removing-user-from-restricted-users-portal-after-spam", 
-          "redirect_document_id": false
-      },
       {
           "source_path": "securitycompliance/eop/exchange-online-protection-ip-addresses.md",
           "redirect_url": "https://docs.microsoft.com/office-365-security/enterprise/urls-and-ip-address-ranges", 
           "redirect_document_id": false
       },
       {
-          "source_path": "securitycompliance/supervision-reports.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/supervision-policies", 
-          "redirect_document_id": false
-      },
-      {
-          "source_path": "securitycompliance/install-the-supervision-add-in-for-outlook-desktop.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/configure-supervision-policies", 
-          "redirect_document_id": false
-      },
-      {
-          "source_path": "securitycompliance/videos-for-getting-started-with-protecting-your-email.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/eop/what-is-eop", 
-          "redirect_document_id": false
-      },
-      {
-          "source_path": "securitycompliance/checklist-atp-setup.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/protect-against-threats", 
-          "redirect_document_id": false
-      },
-      {
-          "source_path": "securitycompliance/threat-management.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/protect-against-threats", 
-          "redirect_document_id": false
-      },
-      {
           "source_path": "securitycompliance/protected-message-viewer-portal-privacy-statement.md",
           "redirect_url": "https://privacy.microsoft.com/privacystatement", 
-          "redirect_document_id": false
-      },
-      {
-          "source_path": "securitycompliance/use-explorer-in-security-and-compliance.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/threat-explorer", 
-          "redirect_document_id": false
-      },
-      {                                                                                                                                                 
-          "source_path": "securitycompliance/office-365-secure-score.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/microsoft-secure-score", 
-          "redirect_document_id": false
-      },
-      {
-          "source_path": "securitycompliance/mail-flow-insights.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/mail-flow-insights-v2", 
-          "redirect_document_id": false
-      },
-      {
-          "source_path": "securitycompliance/security-best-practices.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/security-roadmap", 
           "redirect_document_id": false
       },
       {
@@ -273,26 +163,6 @@
       {
           "source_path": "securitycompliance/security-policy-reference-information-for-ocas.md",
           "redirect_url": "https://docs.microsoft.com/cloud-app-security/control",
-          "redirect_document_id": false
-      },
-      {
-          "source_path": "create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/create-safe-sender-lists-in-office-365",
-          "redirect_document_id": false
-      },
-      {
-          "source_path": "SecurityCompliance/office-365-sharepoint-data-resiliency.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/office-365-data-resiliency-overview",
-          "redirect_document_id": false
-      },
-      {
-          "source_path": "SecurityCompliance/create-custom-sensitive-info-type-edm.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification",
-          "redirect_document_id": false
-      },
-      {
-          "source_path": "SecurityCompliance/get-started-with-ti.md",
-          "redirect_url": "https://docs.microsoft.com/office-365-security/securitycompliance/office-365-ti",
           "redirect_document_id": false
       },
       {
