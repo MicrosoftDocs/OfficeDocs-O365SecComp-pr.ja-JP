@@ -25,7 +25,11 @@
           "**/*.jpg",
           "**/*.gif",
           "**/*.svg",
-          "**/*.pdf"
+          "**/*.pdf",
+          "**/*.ppt",
+          "**/*.pptx",
+          "**/*.xls",
+          "**/*.xlsx"
         ],
         "exclude": [
           "**/obj/**",
@@ -38,12 +42,12 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "ocv-translation-feedback": true,
       "breadcrumb_path": "/Office365/SecurityCompliance/breadcrumb/toc.json",
       "searchScope": ["O365 Security Compliance"],
       "extendBreadcrumb": true,
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/OfficeDocs-O365SecComp",
-      "feedback_product_url": "https://office365.uservoice.com/forums/289138-office-365-security-compliance"
+      "feedback_system": "None",
+      "hideEdit": true
     },
     "fileMetadata": {},
     "template": [],
